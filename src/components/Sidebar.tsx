@@ -26,7 +26,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
   const [subjectsOpen, setSubjectsOpen] = React.useState(true);
 
   const tools = [
-    { id: 'dashboard', label: 'Library', icon: LayoutDashboard },
+    { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { id: 'upload', label: 'AI Upload Hub', icon: UploadCloud },
     { id: 'planner', label: 'Study Planner', icon: Calendar },
     { id: 'socratic', label: 'Socratic Solver', icon: MessageSquare },
@@ -41,14 +41,14 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
     <aside className="sidebar">
       {/* Logo */}
       <div className="sidebar-header">
-        <button 
-          className="logo-mark" 
+        <button
+          className="logo-mark"
           onClick={() => setActiveTab('dashboard')}
           style={{ background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0, width: '100%' }}
         >
-          <span className="logo-icon">✦</span>
+          <div className="logo-icon-wrap">✦</div>
           <div>
-            <h1 className="logo text-gold-gradient">LUMEN</h1>
+            <h1 className="logo">LUMEN</h1>
             <p className="logo-sub">Academic Platform</p>
           </div>
         </button>
@@ -99,7 +99,6 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
       </nav>
 
       <div className="sidebar-footer">
-        {/* Dark Mode Toggle */}
         <button className="dark-mode-row" onClick={toggleDarkMode}>
           <div className="dm-label">
             {darkMode ? <Moon size={15} /> : <Sun size={15} />}
@@ -127,42 +126,53 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
         .sidebar {
           width: var(--sidebar-width);
           min-height: 100vh;
-          border-right: var(--border-soft);
+          border-right: 1px solid var(--color-border);
           background: var(--color-base);
           display: flex;
           flex-direction: column;
-          padding: 28px 16px;
+          padding: 24px 12px;
           position: sticky;
           top: 0;
           overflow-y: auto;
-          transition: background var(--transition-normal), border-color var(--transition-normal);
+          transition: background var(--transition-normal);
           z-index: 100;
           flex-shrink: 0;
         }
 
-        .sidebar-header { margin-bottom: 36px; padding: 0 8px; }
+        [data-theme="dark"] .sidebar {
+          background: #0e0c08;
+          border-right-color: rgba(212,175,55,0.08);
+        }
 
-        .logo-mark { display: flex; align-items: center; gap: 10px; }
+        .sidebar-header { margin-bottom: 32px; padding: 4px 8px 20px; border-bottom: 1px solid var(--color-border); }
 
-        .logo-icon {
-          font-size: 24px;
-          background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          line-height: 1;
+        .logo-mark { display: flex; align-items: center; gap: 12px; }
+
+        .logo-icon-wrap {
+          width: 38px; height: 38px;
+          border-radius: 12px;
+          background: linear-gradient(135deg, var(--color-accent-dark), var(--color-accent-light));
+          display: flex; align-items: center; justify-content: center;
+          font-size: 18px;
+          color: white;
+          box-shadow: 0 4px 12px rgba(201,168,76,0.35);
+          flex-shrink: 0;
         }
 
         .logo {
           font-family: var(--font-display);
-          font-size: 20px;
-          font-weight: 700;
+          font-size: 18px;
+          font-weight: 800;
           letter-spacing: 3px;
           margin-bottom: 1px;
+          background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
         }
 
         .logo-sub {
-          font-size: 10px;
+          font-size: 9px;
           letter-spacing: 1.5px;
           text-transform: uppercase;
           color: var(--color-text-muted);
@@ -180,14 +190,17 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
           display: flex;
           align-items: center;
           justify-content: space-between;
-          font-size: 10px;
+          font-size: 9.5px;
           font-weight: 700;
-          letter-spacing: 1.5px;
+          letter-spacing: 1.8px;
           text-transform: uppercase;
           color: var(--color-text-muted);
-          padding: 14px 10px 6px;
+          padding: 16px 10px 5px;
           font-family: var(--font-display);
           cursor: default;
+          background: none;
+          border: none;
+          width: 100%;
         }
 
         .nav-section-label.collapsible { cursor: pointer; }
@@ -197,27 +210,35 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
           display: flex;
           align-items: center;
           gap: 10px;
-          padding: 10px 12px;
-          border-radius: var(--border-radius-sm);
-          color: var(--color-text-secondary);
-          font-size: 14px;
-          font-weight: 400;
+          padding: 9px 12px;
+          border-radius: 10px;
+          color: var(--color-text-muted);
+          font-size: 13.5px;
+          font-weight: 500;
           transition: all var(--transition-fast);
           width: 100%;
           text-align: left;
           position: relative;
-          font-family: var(--font-primary);
+          font-family: var(--font-display);
+          border: 1px solid transparent;
         }
 
         .nav-item:hover {
           background: var(--color-base-alt);
           color: var(--color-text-primary);
+          border-color: var(--color-border);
         }
 
         .nav-item.active {
-          background: var(--color-base-alt);
-          color: var(--color-text-primary);
-          font-weight: 600;
+          background: rgba(212,175,55,0.1);
+          color: var(--color-accent);
+          font-weight: 700;
+          border-color: rgba(212,175,55,0.2);
+        }
+
+        [data-theme="dark"] .nav-item.active {
+          background: rgba(212,175,55,0.08);
+          border-color: rgba(212,175,55,0.15);
         }
 
         .nav-icon {
@@ -225,7 +246,6 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
           align-items: center;
           width: 20px;
           flex-shrink: 0;
-          color: inherit;
           transition: color var(--transition-fast);
         }
 
@@ -235,23 +255,25 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
           height: 6px;
           border-radius: 50%;
           background: var(--color-accent);
+          box-shadow: 0 0 6px var(--color-accent);
         }
 
         .nav-active-bar {
           position: absolute;
           right: 0;
-          top: 6px;
-          bottom: 6px;
+          top: 8px;
+          bottom: 8px;
           width: 3px;
           border-radius: 3px 0 0 3px;
         }
 
         .sidebar-footer {
-          margin-top: 20px;
+          margin-top: 16px;
           display: flex;
           flex-direction: column;
-          gap: 10px;
-          padding: 0 0 4px;
+          gap: 8px;
+          padding: 12px 0 4px;
+          border-top: 1px solid var(--color-border);
         }
 
         .dark-mode-row {
@@ -259,8 +281,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
           align-items: center;
           justify-content: space-between;
           padding: 10px 12px;
-          border-radius: var(--border-radius-sm);
-          border: var(--border-soft);
+          border-radius: 10px;
+          border: 1px solid var(--color-border);
           background: var(--color-base-alt);
           font-size: 13px;
           color: var(--color-text-secondary);
@@ -268,13 +290,12 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
           transition: all var(--transition-fast);
           width: 100%;
         }
-        .dark-mode-row:hover { border-color: var(--color-accent); color: var(--color-text-primary); }
+        .dark-mode-row:hover { border-color: var(--color-accent); color: var(--color-accent); }
 
         .dm-label { display: flex; align-items: center; gap: 8px; font-family: var(--font-display); font-size: 13px; font-weight: 500; }
 
         .dm-toggle {
-          width: 36px;
-          height: 20px;
+          width: 36px; height: 20px;
           border-radius: 10px;
           background: var(--color-border-strong);
           position: relative;
@@ -285,10 +306,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
 
         .dm-knob {
           position: absolute;
-          top: 3px;
-          left: 3px;
-          width: 14px;
-          height: 14px;
+          top: 3px; left: 3px;
+          width: 14px; height: 14px;
           border-radius: 50%;
           background: white;
           transition: transform var(--transition-fast);
@@ -301,11 +320,11 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
           align-items: center;
           justify-content: center;
           gap: 8px;
-          padding: 11px 16px;
-          border-radius: var(--border-radius-sm);
-          border: var(--border-soft);
+          padding: 9px 14px;
+          border-radius: 10px;
+          border: 1px solid var(--color-border);
           background: transparent;
-          color: var(--color-text-secondary);
+          color: var(--color-text-muted);
           font-size: 13px;
           font-weight: 500;
           transition: all var(--transition-fast);
@@ -316,7 +335,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
         .calc-sidebar-btn:hover {
           background: var(--color-base-alt);
           color: var(--color-accent);
-          border-color: var(--color-accent);
+          border-color: rgba(212,175,55,0.3);
         }
 
         .focus-btn {
@@ -324,23 +343,22 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
           align-items: center;
           justify-content: center;
           gap: 8px;
-          padding: 11px 16px;
-          border-radius: var(--border-radius-sm);
-          border: var(--border-soft);
-          background: transparent;
-          color: var(--color-text-secondary);
+          padding: 10px 14px;
+          border-radius: 10px;
+          background: linear-gradient(135deg, var(--color-accent-dark), var(--color-accent));
+          color: white;
           font-size: 13px;
-          font-weight: 500;
+          font-weight: 600;
+          border: none;
           transition: all var(--transition-fast);
           font-family: var(--font-display);
           cursor: pointer;
           width: 100%;
+          box-shadow: 0 4px 16px rgba(201,168,76,0.25);
         }
         .focus-btn:hover {
-          background: linear-gradient(135deg, var(--color-accent-dark), var(--color-accent));
-          color: white;
-          border-color: transparent;
-          box-shadow: 0 4px 16px rgba(201,168,76,0.3);
+          transform: translateY(-1px);
+          box-shadow: 0 8px 24px rgba(201,168,76,0.4);
         }
       `}</style>
     </aside>
