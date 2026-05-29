@@ -1,0 +1,401 @@
+import React, { useEffect, useRef, useState } from 'react';
+import katex from 'katex';
+import { Play, RotateCcw, CheckCircle2, Search } from 'lucide-react';
+import nerdamer from 'nerdamer';
+import 'nerdamer/Algebra.js';
+import 'nerdamer/Calculus.js';
+import 'nerdamer/Solve.js';
+import TheoryLayout from './TheoryLayout';
+
+const mathTheory = `
+# Advanced Calculus & Analysis
+
+Calculus is the mathematical study of continuous change. It has two major branches, differential calculus and integral calculus; the former concerns instantaneous rates of change, and the slopes of curves, while the latter concerns accumulation of quantities, and areas under or between curves.
+
+## 1. Differential Calculus
+The derivative of a function of a real variable measures the sensitivity to change of the function value (output value) with respect to a change in its argument (input value).
+
+The derivative of a function $f$ at $x$ is defined as the limit of the difference quotient as $h$ approaches zero:
+$f'(x) = \\lim_{h \\to 0} \\frac{f(x + h) - f(x)}{h}$
+
+*In the Interactive Solver, you can compute derivatives using the syntax: \`diff(f(x), x)\`*
+
+## 2. Integral Calculus
+Integration is the process of finding the anti-derivative. The definite integral of a function $f(x)$ from $a$ to $b$ gives the net signed area bounded by the graph of the function, the $x$-axis, and the vertical lines $x = a$ and $x = b$.
+
+$\\int_{a}^{b} f(x) \\, dx = F(b) - F(a)$
+
+Where $F$ is an antiderivative of $f$ ($F' = f$). This is the Fundamental Theorem of Calculus.
+
+*Try evaluating an integral in the solver using the syntax: \`integrate(x*sin(x), x)\`*
+
+## 3. Function Graphing
+On the right side of the module, the Interactive Solver is equipped with a 2D Cartesian graphing canvas. As you type algebraic expressions like \`sin(x)*x\`, the engine will parse the symbolic string into a native javascript function and plot it from $x=-10$ to $x=10$.
+`;
+
+const MathModule: React.FC = () => {
+  const [inputExpression, setInputExpression] = useState('x * sin(x)');
+  const [steps, setSteps] = useState<string[]>([]);
+  const [currentStep, setCurrentStep] = useState(-1);
+  const [isSolving, setIsSolving] = useState(false);
+  const containerRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  const generateSteps = (expression: string) => {
+    try {
+      const inputTex = nerdamer(expression).toTeX();
+      const outputTex = nerdamer(expression).evaluate().toTeX();
+      
+      let newSteps = [
+        "\\text{Problem: Evaluate }",
+        inputTex
+      ];
+
+      if (expression.includes('integrate')) {
+        newSteps.push("\\text{Applying analytical integration techniques...}");
+        newSteps.push("\\text{Simplifying the anti-derivative...}");
+      } else if (expression.includes('diff')) {
+        newSteps.push("\\text{Applying differentiation rules...}");
+      } else if (expression.includes('solve')) {
+        newSteps.push("\\text{Isolating variables...}");
+      } else {
+        newSteps.push("\\text{Evaluating expression algebraically...}");
+      }
+      
+      newSteps.push(`= ${outputTex}`);
+      return newSteps;
+    } catch (err) {
+      return [
+        "\\text{Error: Could not parse expression.}",
+        "\\text{Use syntax: } integrate(x^2, x) \\text{ or } sin(x)"
+      ];
+    }
+  };
+
+  useEffect(() => {
+    steps.forEach((step, index) => {
+      const el = containerRefs.current[index];
+      if (el) {
+        katex.render(step, el, {
+          displayMode: true,
+          throwOnError: false,
+        });
+      }
+    });
+  }, [steps, currentStep]);
+
+  useEffect(() => {
+    let timer: ReturnType<typeof setTimeout>;
+    if (isSolving && currentStep < steps.length - 1) {
+      timer = setTimeout(() => {
+        setCurrentStep((prev) => prev + 1);
+      }, 1000); // Speed up for better UX
+    } else if (currentStep >= steps.length - 1) {
+      setIsSolving(false);
+    }
+    return () => clearTimeout(timer);
+  }, [isSolving, currentStep, steps]);
+
+  // Real 2D Graphing Logic
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    const width = canvas.width = 600;
+    const height = canvas.height = 300;
+    ctx.clearRect(0, 0, width, height);
+
+    const margin = 20;
+    const graphWidth = width - margin * 2;
+    const graphHeight = height - margin * 2;
+    
+    // Graph bounds
+    const xMin = -10;
+    const xMax = 10;
+    const yMin = -5;
+    const yMax = 5;
+
+    const mapX = (x: number) => margin + ((x - xMin) / (xMax - xMin)) * graphWidth;
+    const mapY = (y: number) => height - margin - ((y - yMin) / (yMax - yMin)) * graphHeight;
+
+    // Draw Axes & Grid
+    ctx.beginPath();
+    ctx.strokeStyle = 'rgba(90, 77, 65, 0.1)';
+    ctx.lineWidth = 1;
+    // vertical grid lines
+    for(let x = Math.ceil(xMin); x <= Math.floor(xMax); x++) {
+      ctx.moveTo(mapX(x), margin); ctx.lineTo(mapX(x), height - margin);
+    }
+    // horizontal grid lines
+    for(let y = Math.ceil(yMin); y <= Math.floor(yMax); y++) {
+      ctx.moveTo(margin, mapY(y)); ctx.lineTo(width - margin, mapY(y));
+    }
+    ctx.stroke();
+
+    // Main Axes
+    ctx.beginPath();
+    ctx.strokeStyle = 'rgba(90, 77, 65, 0.4)';
+    ctx.lineWidth = 2;
+    ctx.moveTo(mapX(0), margin); ctx.lineTo(mapX(0), height - margin);
+    ctx.moveTo(margin, mapY(0)); ctx.lineTo(width - margin, mapY(0));
+    ctx.stroke();
+
+    try {
+      // Extract inner function if it's wrapped in integrate or diff
+      let plotExp = inputExpression;
+      if (plotExp.startsWith('integrate(')) {
+        plotExp = plotExp.substring(10, plotExp.lastIndexOf(','));
+      } else if (plotExp.startsWith('diff(')) {
+        plotExp = plotExp.substring(5, plotExp.lastIndexOf(','));
+      }
+
+      // Build native JS function using Nerdamer
+      const f = nerdamer(plotExp).buildFunction(['x']);
+
+      ctx.beginPath();
+      ctx.strokeStyle = '#D4AF37';
+      ctx.lineWidth = 2;
+
+      let first = true;
+      const points = 200;
+      for (let i = 0; i <= points; i++) {
+        const x = xMin + (i / points) * (xMax - xMin);
+        try {
+          const y = Number(f(x));
+          if (isNaN(y) || !isFinite(y)) {
+            first = true;
+            continue;
+          }
+          
+          const px = mapX(x);
+          const py = mapY(y);
+
+          // Prevent drawing huge lines across asymptotes
+          if (py < -1000 || py > height + 1000) {
+             first = true;
+             continue;
+          }
+
+          if (first) {
+            ctx.moveTo(px, py);
+            first = false;
+          } else {
+            ctx.lineTo(px, py);
+          }
+        } catch(e) {
+          first = true;
+        }
+      }
+      ctx.stroke();
+    } catch(e) {
+      // Invalid syntax for plotting, just draw axes
+    }
+  }, [inputExpression]);
+
+  const handleStartSolving = () => {
+    if (currentStep === -1) {
+      const generated = generateSteps(inputExpression);
+      setSteps(generated);
+      setCurrentStep(0);
+    }
+    setIsSolving(true);
+  };
+
+  const handleReset = () => {
+    setIsSolving(false);
+    setCurrentStep(-1);
+    setSteps([]);
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setInputExpression(e.target.value);
+    handleReset();
+  };
+
+  return (
+    <TheoryLayout title="Calculus & Analysis" theoryContent={mathTheory}>
+      <div className="math-module">
+        <div className="header-input-container luxury-card">
+          <div className="search-bar">
+            <Search size={18} color="var(--color-text-secondary)" />
+            <input 
+              type="text" 
+              value={inputExpression}
+              onChange={handleInputChange}
+              placeholder="e.g. integrate(x*sin(x), x)"
+            />
+          </div>
+        </div>
+
+        <div className="solver-container luxury-card">
+          <div className="paper-texture">
+            {currentStep === -1 && !isSolving && (
+              <div className="empty-state">
+                <span className="equation-preview">Ready for Synthesis</span>
+                <p>Type a mathematical expression above to graph it and derive steps.</p>
+              </div>
+            )}
+
+            <div className="steps-area">
+              {steps.map((_, index) => (
+                <div 
+                  key={index} 
+                  className={`step-wrapper ${index <= currentStep ? 'visible' : 'hidden'}`}
+                >
+                  <div className="step-indicator">Step {index + 1}</div>
+                  <div 
+                    ref={(el) => { containerRefs.current[index] = el; }} 
+                    className={`katex-container ${index === currentStep && isSolving ? 'writing-animation' : ''}`}
+                  ></div>
+                </div>
+              ))}
+            </div>
+
+            {currentStep >= steps.length - 1 && steps.length > 0 && !steps[0].includes('Error') && (
+              <div className="completion-message">
+                <CheckCircle2 size={20} className="text-gold-gradient" />
+                <span>Derivation Complete</span>
+              </div>
+            )}
+          </div>
+
+          <div className="simulation-panel">
+            <h4 className="panel-title">Interactive 2D Graph</h4>
+            <p className="panel-subtitle">Cartesian plot of f(x) over [-10, 10]</p>
+            <div className="canvas-wrapper">
+              <canvas ref={canvasRef} className="math-graph-canvas"></canvas>
+            </div>
+          </div>
+          
+          <div className="controls">
+            <button 
+              className="gold-btn" 
+              onClick={handleStartSolving}
+              disabled={isSolving || (currentStep >= steps.length - 1 && steps.length > 0)}
+            >
+              <Play size={16} />
+              <span>{currentStep === -1 ? 'Synthesize Solution' : 'Continue Derivation'}</span>
+            </button>
+            
+            {(currentStep > -1) && (
+              <button className="reset-btn" onClick={handleReset} title="Reset">
+                <RotateCcw size={16} />
+              </button>
+            )}
+          </div>
+        </div>
+      </div>
+
+      <style>{`
+        .math-module {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          height: 100%;
+        }
+
+        .header-input-container {
+          padding: 24px;
+          display: flex;
+          justify-content: center;
+        }
+
+        .header-input-container .search-bar {
+          width: 100%;
+          max-width: 600px;
+          margin-bottom: 0;
+          background: rgba(90, 77, 65, 0.03);
+          border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+        
+        .header-input-container .search-bar input {
+          font-family: monospace;
+          font-size: 16px;
+        }
+
+        .solver-container {
+          padding: 32px;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          flex: 1;
+        }
+
+        .paper-texture {
+          background: var(--color-white);
+          border-radius: var(--border-radius-sm);
+          border: 1px solid rgba(90, 77, 65, 0.05);
+          padding: 32px;
+          box-shadow: inset 0 0 40px rgba(90, 77, 65, 0.02);
+          position: relative;
+          min-height: 200px;
+        }
+
+        .simulation-panel {
+          background: var(--color-base-alt);
+          border-radius: var(--border-radius-sm);
+          padding: 24px;
+          border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .panel-title { font-family: var(--font-serif); font-size: 18px; margin-bottom: 4px; }
+        .panel-subtitle { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 16px; }
+
+        .canvas-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--color-white);
+          border-radius: 8px;
+          padding: 16px;
+          box-shadow: var(--shadow-sm);
+        }
+
+        .math-graph-canvas { width: 100%; height: auto; max-height: 250px; }
+
+        .empty-state {
+          display: flex; flex-direction: column; align-items: center; justify-content: center;
+          color: var(--color-text-secondary); opacity: 0.6;
+        }
+
+        .equation-preview { font-family: 'Times New Roman', serif; font-size: 24px; font-style: italic; margin-bottom: 16px; }
+
+        .steps-area { display: flex; flex-direction: column; gap: 24px; }
+
+        .step-wrapper {
+          position: relative; display: flex; flex-direction: column; align-items: center; opacity: 0;
+        }
+        .step-wrapper.visible { opacity: 1; }
+        .step-wrapper.hidden { display: none; }
+
+        .step-indicator { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--color-accent); margin-bottom: 8px; }
+
+        .katex-container {
+          padding: 16px 32px; background: rgba(250, 249, 246, 0.5); border-radius: var(--border-radius-sm); width: 100%; display: flex; justify-content: center; overflow-x: auto;
+        }
+
+        .writing-animation { position: relative; }
+        .writing-animation::after {
+          content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: var(--color-white);
+          animation: inkReveal 1.0s cubic-bezier(0.25, 1, 0.5, 1) forwards; z-index: 10;
+        }
+
+        @keyframes inkReveal { 0% { left: 0; } 100% { left: 100%; } }
+
+        .completion-message { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(212, 175, 55, 0.2); animation: fadeIn var(--transition-slow); }
+        .completion-message span { font-family: var(--font-serif); font-size: 18px; color: var(--color-text-secondary); }
+
+        .controls { display: flex; justify-content: center; align-items: center; gap: 16px; margin-top: 16px; }
+        .reset-btn { padding: 12px; border-radius: 50%; background: var(--color-base); color: var(--color-text-secondary); display: flex; align-items: center; justify-content: center; transition: var(--transition-fast); border: 1px solid rgba(90, 77, 65, 0.1); }
+        .reset-btn:hover { background: var(--color-white); color: var(--color-text-primary); box-shadow: var(--shadow-sm); }
+        .gold-btn { display: flex; align-items: center; gap: 8px; padding: 12px 32px; background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%); color: white; border-radius: var(--border-radius-full); font-size: 14px; font-weight: 500; letter-spacing: 0.5px; box-shadow: var(--shadow-sm); transition: var(--transition-fast); }
+        .gold-btn:hover:not(:disabled) { box-shadow: var(--shadow-glow); transform: translateY(-1px); }
+        .gold-btn:disabled { opacity: 0.6; cursor: not-allowed; background: var(--color-text-secondary); }
+      `}</style>
+    </TheoryLayout>
+  );
+};
+
+export default MathModule;
