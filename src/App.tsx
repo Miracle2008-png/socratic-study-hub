@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import FocusMode from './components/FocusMode';
@@ -13,10 +13,12 @@ import SocraticSolver from './components/SocraticSolver';
 import UploadHub from './components/UploadHub';
 import MindMap from './components/MindMap';
 import AiHub from './components/AiHub';
+import Grapher2D from './components/Grapher2D';
 import { GlobalSearch } from './components/GlobalSearch';
 import AiTutorSidebar from './components/AiTutorSidebar';
 import { AdvancedCalculator } from './components/AdvancedCalculator';
 import { useGamification } from './context/GamificationContext';
+import { useStudyProgress } from './context/StudyProgressContext';
 import { Search, Bell, Settings, User, X, Check, Activity, Clock, Sparkles, Flame, Trophy, Calculator } from 'lucide-react';
 import './index.css';
 import './gamification.css';
@@ -34,13 +36,33 @@ function App() {
   const [studyGoal, setStudyGoal] = useState(25);
   const [activeMenu, setActiveMenu] = useState<'notifications' | 'settings' | 'profile' | null>(null);
   
-  const { level, xp, streak, dailyGoalProgress, dailyGoalTarget } = useGamification();
+  const { level, xp, streak, dailyGoalProgress, dailyGoalTarget, addXP } = useGamification();
+  const { recordTopicOpen, recordTopicClose } = useStudyProgress();
+
+  // Track how long the user has a topic open
+  const activeTopicRef = useRef<{ id: string; subject: string } | null>(null);
+
+  const openTopic = (topicId: string, subject: string, label?: string) => {
+    // Close previous if open
+    if (activeTopicRef.current) recordTopicClose();
+    activeTopicRef.current = { id: topicId, subject };
+    recordTopicOpen(topicId, subject, label);
+    addXP(10, `Opened topic: ${topicId}`);
+  };
+
+  const closeTopic = () => {
+    if (activeTopicRef.current) {
+      recordTopicClose();
+      activeTopicRef.current = null;
+    }
+  };
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
   }, [darkMode]);
 
   const handleTabChange = (tabId: string) => {
+    closeTopic();
     setActiveTab(tabId);
     setActiveTopic(null);
   };
@@ -48,13 +70,14 @@ function App() {
   const renderContent = () => {
     if (activeTab === 'dashboard') {
       return (
-        <Dashboard 
-          userName={userName} 
-          studyGoal={studyGoal} 
+        <Dashboard
+          userName={userName}
+          studyGoal={studyGoal}
           onTopicSelect={(topicId, subject) => {
             setActiveTab(subject);
             setActiveTopic(topicId);
-          }} 
+            openTopic(topicId, subject);
+          }}
         />
       );
     }
@@ -70,18 +93,19 @@ function App() {
     if (activeTab === 'flashcards') return <SpacedRepetition />;
     if (activeTab === 'visualizer') return <Visualizer3D />;
     if (activeTab === 'ai_hub') return <AiHub />;
+    if (activeTab === 'grapher') return <Grapher2D />;
 
     if (activeTab === 'math') {
       if (activeTopic) return <TopicModule topicId={activeTopic} />;
-      return <SubjectHub subject="mathematics" onTopicSelect={setActiveTopic} />;
+      return <SubjectHub subject="mathematics" onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'math'); }} />;
     }
     if (activeTab === 'physics') {
       if (activeTopic) return <TopicModule topicId={activeTopic} />;
-      return <SubjectHub subject="physics" onTopicSelect={setActiveTopic} />;
+      return <SubjectHub subject="physics" onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'physics'); }} />;
     }
     if (activeTab === 'chemistry') {
       if (activeTopic) return <TopicModule topicId={activeTopic} />;
-      return <SubjectHub subject="chemistry" onTopicSelect={setActiveTopic} />;
+      return <SubjectHub subject="chemistry" onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'chemistry'); }} />;
     }
 
     return (

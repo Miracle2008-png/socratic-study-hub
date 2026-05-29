@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Network, Brain, Moon, Sun, ChevronDown, ChevronRight, Sparkles,
   Calculator, Atom, FlaskConical, Dna, LayoutDashboard, Calendar, BookOpen, PenTool,
-  BrainCircuit, Box, MessageSquare, UploadCloud, Map, FunctionSquare
+  BrainCircuit, Box, MessageSquare, UploadCloud, Map, FunctionSquare, TrendingUp
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -31,6 +31,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
     { id: 'planner', label: 'Study Planner', icon: Calendar },
     { id: 'socratic', label: 'Socratic Solver', icon: MessageSquare },
     { id: 'mindmap', label: 'Knowledge Map', icon: Map },
+    { id: 'grapher', label: '2D Grapher', icon: TrendingUp },
     { id: 'formula_blog', label: 'Formula Bank', icon: BookOpen },
     { id: 'derivations', label: 'Derivations', icon: FunctionSquare },
     { id: 'flashcards', label: 'Flashcards (SRS)', icon: BrainCircuit },

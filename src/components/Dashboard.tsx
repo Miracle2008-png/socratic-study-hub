@@ -1,51 +1,38 @@
 import React, { useState } from 'react';
 import {
-  BookOpen, TrendingUp, Clock, Flame, Target, Award,
-  Calculator, Atom, FlaskConical, Network, Dna,
-  BarChart2, Calendar, Star, ChevronRight, Zap, Brain, ArrowUpRight, Sparkles
+  BookOpen, Clock, Flame, Target, Award,
+  Calculator, Atom, FlaskConical, Dna,
+  BarChart2, Calendar, ChevronRight, Zap, Brain, ArrowUpRight, Sparkles
 } from 'lucide-react';
 import { useGamification } from '../context/GamificationContext';
+import { useStudyProgress } from '../context/StudyProgressContext';
 
 const subjectColors: Record<string, string> = {
-  Physics: '#0ea5e9',
-  Math: '#8b5cf6',
-  Chemistry: '#10b981',
-  Biology: '#ec4899',
+  physics: '#0ea5e9', math: '#8b5cf6', chemistry: '#10b981', biology: '#ec4899',
 };
-
+const subjectGlows: Record<string, string> = {
+  physics: 'rgba(14,165,233,0.3)', math: 'rgba(139,92,246,0.3)',
+  chemistry: 'rgba(16,185,129,0.3)', biology: 'rgba(236,72,153,0.3)',
+};
 const subjectIcons: Record<string, React.ElementType> = {
-  Physics: Atom, Math: Calculator, Chemistry: FlaskConical,
-  Biology: Dna,
+  physics: Atom, math: Calculator, chemistry: FlaskConical, biology: Dna,
+};
+const subjectLabels: Record<string, string> = {
+  physics: 'Physics', math: 'Mathematics', chemistry: 'Chemistry', biology: 'Biology',
 };
 
-interface Activity {
-  subject: string;
-  topic: string;
-  duration: string;
-  timestamp: string;
-}
-
-const recentActivity: Activity[] = [
-  { subject: 'Physics', topic: 'Quantum Mechanics', duration: '45 min', timestamp: '2 hours ago' },
-  { subject: 'Math', topic: 'Differential Calculus', duration: '30 min', timestamp: '5 hours ago' },
-  { subject: 'Chemistry', topic: 'Organic Chemistry', duration: '60 min', timestamp: 'Yesterday' },
-  { subject: 'Biology', topic: 'Molecular Genetics', duration: '40 min', timestamp: '2 days ago' },
-];
-
-const subjectProgress = [
-  { subject: 'Mathematics', progress: 62, topics: 12, color: '#8b5cf6', glow: 'rgba(139,92,246,0.3)' },
-  { subject: 'Physics', progress: 54, topics: 12, color: '#0ea5e9', glow: 'rgba(14,165,233,0.3)' },
-  { subject: 'Chemistry', progress: 48, topics: 15, color: '#10b981', glow: 'rgba(16,185,129,0.3)' },
-  { subject: 'Biology', progress: 36, topics: 12, color: '#ec4899', glow: 'rgba(236,72,153,0.3)' },
-];
+// Approximate total topics per subject — used for % calculation
+const SUBJECT_TOTAL_TOPICS: Record<string, number> = {
+  math: 14, physics: 13, chemistry: 10, biology: 8,
+};
 
 const quickTopics = [
-  { label: 'Quantum Mechanics', topicId: 'quantum_mechanics', subject: 'Physics', tabId: 'physics', color: '#0ea5e9', icon: Atom },
-  { label: 'Differential Calculus', topicId: 'differential_calculus', subject: 'Math', tabId: 'math', color: '#8b5cf6', icon: Calculator },
-  { label: 'Linear Algebra', topicId: 'linear_algebra', subject: 'Math', tabId: 'math', color: '#8b5cf6', icon: Brain },
-  { label: 'Thermodynamics', topicId: 'advanced_thermodynamics', subject: 'Physics', tabId: 'physics', color: '#0ea5e9', icon: Zap },
-  { label: 'Organic Chemistry', topicId: 'organic_chemistry', subject: 'Chemistry', tabId: 'chemistry', color: '#10b981', icon: FlaskConical },
-  { label: 'Molecular Genetics', topicId: 'molecular_genetics', subject: 'Biology', tabId: 'biology', color: '#ec4899', icon: Dna },
+  { label: 'Quantum Mechanics', topicId: 'quantum_mechanics', subject: 'physics', tabId: 'physics', color: '#0ea5e9', icon: Atom },
+  { label: 'Differential Calculus', topicId: 'differential_calculus', subject: 'math', tabId: 'math', color: '#8b5cf6', icon: Calculator },
+  { label: 'Linear Algebra', topicId: 'linear_algebra', subject: 'math', tabId: 'math', color: '#8b5cf6', icon: Brain },
+  { label: 'Thermodynamics', topicId: 'advanced_thermodynamics', subject: 'physics', tabId: 'physics', color: '#0ea5e9', icon: Zap },
+  { label: 'Organic Chemistry', topicId: 'organic_chemistry', subject: 'chemistry', tabId: 'chemistry', color: '#10b981', icon: FlaskConical },
+  { label: 'Molecular Genetics', topicId: 'molecular_genetics', subject: 'biology', tabId: 'biology', color: '#ec4899', icon: Dna },
 ];
 
 interface DashboardProps {
@@ -56,6 +43,7 @@ interface DashboardProps {
 
 const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelect }) => {
   const { xp, level, streak, dailyGoalProgress, dailyGoalTarget } = useGamification();
+  const { recentActivity, hoursThisWeek, topicsMasteredCount, topicVisits } = useStudyProgress();
 
   const [greeting] = useState(() => {
     const h = new Date().getHours();
@@ -67,6 +55,36 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
   const dailyPct = Math.min(100, Math.round((dailyGoalProgress / dailyGoalTarget) * 100));
   const circumference = 2 * Math.PI * 36;
   const dashOffset = circumference - (circumference * dailyPct) / 100;
+  const weeklyGoalPct = Math.min(100, Math.round((hoursThisWeek / studyGoal) * 100));
+
+  // Build subject progress from actual visited topics
+  const subjectProgressData = Object.entries(SUBJECT_TOTAL_TOPICS).map(([subj, total]) => {
+    // Count unique topics visited for this subject
+    const visited = new Set(
+      topicVisits.filter(v => v.subject === subj).map(v => v.topicId)
+    ).size;
+    const pct = Math.min(100, Math.round((visited / total) * 100));
+    return { subject: subj, label: subjectLabels[subj], progress: pct, visited, total, color: subjectColors[subj], glow: subjectGlows[subj] };
+  });
+
+  // Format duration nicely
+  const fmtDuration = (ms: number): string => {
+    if (!ms) return '< 1 min';
+    const m = Math.round(ms / 60000);
+    if (m < 60) return `${m} min`;
+    return `${(m / 60).toFixed(1)} hr`;
+  };
+
+  // Relative time
+  const fmtTime = (iso: string): string => {
+    const diff = Date.now() - new Date(iso).getTime();
+    const m = Math.floor(diff / 60000);
+    if (m < 1) return 'just now';
+    if (m < 60) return `${m}m ago`;
+    const h = Math.floor(m / 60);
+    if (h < 24) return `${h}h ago`;
+    return `${Math.floor(h / 24)}d ago`;
+  };
 
   return (
     <div className="dashboard anim-fade">
@@ -84,19 +102,26 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
           </div>
           <h1 className="dash-headline">Your Academic<br /><span className="dash-headline-accent">Command Centre</span></h1>
           <p className="dash-subline">
-            You have <strong>3 study sessions</strong> planned today and <strong>2 topics</strong> due for review.
+            {topicsMasteredCount === 0
+              ? 'Pick a subject below to start your learning journey.'
+              : `You've explored ${topicsMasteredCount} topic${topicsMasteredCount !== 1 ? 's' : ''} — keep the momentum going!`}
           </p>
           <div className="dash-hero-ctas">
-            <button className="gold-btn" style={{ fontSize: '13px', padding: '10px 22px' }}>
-              <Zap size={14} /> Continue Learning
+            <button
+              className="gold-btn"
+              style={{ fontSize: '13px', padding: '10px 22px' }}
+              onClick={() => onTopicSelect?.('quantum_mechanics', 'physics')}
+            >
+              <Zap size={14} /> Start Studying
             </button>
-            <button className="dash-ghost-btn">
-              <Calendar size={14} /> View Schedule
+            <button className="dash-ghost-btn" onClick={() => onTopicSelect?.('differential_calculus', 'math')}>
+              <Calculator size={14} /> Try Calculus
             </button>
           </div>
         </div>
 
         <div className="dash-hero-right">
+          {/* Daily XP ring */}
           <div className="dash-xp-ring-card">
             <svg width="100" height="100" viewBox="0 0 100 100" className="dash-ring-svg">
               <circle cx="50" cy="50" r="36" fill="none" stroke="rgba(212,175,55,0.1)" strokeWidth="8" />
@@ -145,10 +170,27 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
       {/* ── Stats Row ─────────────────────────────── */}
       <div className="dash-stats-grid">
         {[
-          { label: 'Study Streak', value: `${streak}`, sub: 'days in a row', icon: Flame, color: '#f97316', glow: 'rgba(249,115,22,0.2)', trend: '+2 this week' },
-          { label: 'Hours This Week', value: '0', sub: 'hours studied', icon: Clock, color: '#0ea5e9', glow: 'rgba(14,165,233,0.2)', trend: 'Track sessions' },
-          { label: 'Topics Mastered', value: '0', sub: 'across all subjects', icon: Award, color: '#10b981', glow: 'rgba(16,185,129,0.2)', trend: 'Keep going!' },
-          { label: 'Daily Goal', value: `${dailyPct}%`, sub: `${dailyGoalProgress}/${dailyGoalTarget} XP`, icon: Target, color: '#8b5cf6', glow: 'rgba(139,92,246,0.2)', trend: `${Math.max(0, dailyGoalTarget - dailyGoalProgress)} XP left` },
+          {
+            label: 'Study Streak', value: `${streak}`, sub: streak === 0 ? 'study today to start!' : `day${streak !== 1 ? 's' : ''} in a row`,
+            icon: Flame, color: '#f97316', glow: 'rgba(249,115,22,0.2)',
+            trend: streak === 0 ? 'Start today!' : streak === 1 ? 'Day 1 🔥' : `+${streak} days 🔥`
+          },
+          {
+            label: 'Hours This Week', value: hoursThisWeek < 1 ? `${Math.round(hoursThisWeek * 60)}m` : `${hoursThisWeek.toFixed(1)}h`,
+            sub: `of ${studyGoal}h weekly goal`,
+            icon: Clock, color: '#0ea5e9', glow: 'rgba(14,165,233,0.2)',
+            trend: weeklyGoalPct === 0 ? 'Not started' : `${weeklyGoalPct}% of goal`
+          },
+          {
+            label: 'Topics Explored', value: `${topicsMasteredCount}`, sub: 'topics opened',
+            icon: Award, color: '#10b981', glow: 'rgba(16,185,129,0.2)',
+            trend: topicsMasteredCount === 0 ? 'Start exploring!' : `${topicsMasteredCount} unique topic${topicsMasteredCount !== 1 ? 's' : ''}`
+          },
+          {
+            label: 'Daily XP Goal', value: `${dailyPct}%`, sub: `${dailyGoalProgress}/${dailyGoalTarget} XP`,
+            icon: Target, color: '#8b5cf6', glow: 'rgba(139,92,246,0.2)',
+            trend: dailyGoalProgress === 0 ? 'Earn XP today!' : `${Math.max(0, dailyGoalTarget - dailyGoalProgress)} XP to go`
+          },
         ].map((s, i) => (
           <div key={i} className="dash-stat-card" style={{ '--glow': s.glow } as React.CSSProperties}>
             <div className="dash-stat-top">
@@ -168,20 +210,20 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
       {/* ── Main 2-col ─────────────────────────────── */}
       <div className="dash-main-grid">
 
-        {/* Subject Progress */}
+        {/* Subject Progress — all real */}
         <div className="dash-glass-panel">
           <div className="panel-header">
             <div className="panel-title-row">
               <BarChart2 size={16} style={{ color: 'var(--color-accent)' }} />
               <h3 className="panel-title">Subject Mastery</h3>
             </div>
-            <span className="panel-link">All subjects →</span>
+            <span className="panel-sub">based on topics you've studied</span>
           </div>
           <div className="subject-progress-list">
-            {subjectProgress.map(sp => (
+            {subjectProgressData.map(sp => (
               <div key={sp.subject} className="sp-row">
                 <div className="sp-info">
-                  <span className="sp-name">{sp.subject}</span>
+                  <span className="sp-name">{sp.label}</span>
                   <span className="sp-pct" style={{ color: sp.color }}>{sp.progress}%</span>
                 </div>
                 <div className="sp-bar-track">
@@ -189,31 +231,37 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
                     className="sp-bar-fill"
                     style={{
                       width: `${sp.progress}%`,
-                      background: `linear-gradient(90deg, ${sp.color}, ${sp.color}aa)`,
-                      boxShadow: `0 0 8px ${sp.glow}`
+                      background: `linear-gradient(90deg, ${sp.color}, ${sp.color}99)`,
+                      boxShadow: sp.progress > 0 ? `0 0 8px ${sp.glow}` : 'none'
                     }}
                   />
                 </div>
                 <div className="sp-topics-row">
-                  <span className="sp-topics">{sp.topics} topics available</span>
-                  <span className="sp-done" style={{ color: sp.color }}>{Math.round(sp.topics * sp.progress / 100)} completed</span>
+                  <span className="sp-topics">{sp.total} topics available</span>
+                  <span className="sp-done" style={{ color: sp.visited > 0 ? sp.color : 'var(--color-text-muted)' }}>
+                    {sp.visited === 0 ? 'Not started' : `${sp.visited} explored`}
+                  </span>
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Recent Activity */}
+        {/* Recent Activity — real */}
         <div className="dash-glass-panel">
           <div className="panel-header">
             <div className="panel-title-row">
               <Clock size={16} style={{ color: 'var(--color-accent)' }} />
               <h3 className="panel-title">Recent Activity</h3>
             </div>
-            <span className="panel-link">History →</span>
           </div>
           <div className="activity-list">
-            {recentActivity.map((a, i) => {
+            {recentActivity.length === 0 ? (
+              <div className="dash-empty-activity">
+                <BookOpen size={28} style={{ color: 'var(--color-text-muted)', opacity: 0.4 }} />
+                <p>No activity yet — open a topic to get started!</p>
+              </div>
+            ) : recentActivity.map((a, i) => {
               const Icon = subjectIcons[a.subject] || BookOpen;
               const color = subjectColors[a.subject] || 'var(--color-accent)';
               return (
@@ -222,10 +270,12 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
                     {React.createElement(Icon as any, { size: 16, strokeWidth: 1.8 })}
                   </div>
                   <div className="act-info">
-                    <div className="act-topic">{a.topic}</div>
-                    <div className="act-subject" style={{ color }}>{a.subject} • {a.duration}</div>
+                    <div className="act-topic">{a.topicLabel}</div>
+                    <div className="act-subject" style={{ color }}>
+                      {subjectLabels[a.subject] || a.subject} • {fmtDuration(a.durationMs)}
+                    </div>
                   </div>
-                  <div className="act-time">{a.timestamp}</div>
+                  <div className="act-time">{fmtTime(a.visitedAt)}</div>
                 </div>
               );
             })}
@@ -238,9 +288,9 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
         <div className="panel-header">
           <div className="panel-title-row">
             <Zap size={16} style={{ color: 'var(--color-accent)' }} />
-            <h3 className="panel-title">Quick Access</h3>
+            <h3 className="panel-title">Jump Into a Topic</h3>
           </div>
-          <span className="panel-sub">Jump into any topic instantly</span>
+          <span className="panel-sub">Your progress is tracked automatically</span>
         </div>
         <div className="quick-grid">
           {quickTopics.map((qt) => (
@@ -255,7 +305,7 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
               </div>
               <div className="quick-text">
                 <div className="quick-topic">{qt.label}</div>
-                <div className="quick-subject" style={{ color: qt.color }}>{qt.subject}</div>
+                <div className="quick-subject" style={{ color: qt.color }}>{subjectLabels[qt.subject]}</div>
               </div>
               <ArrowUpRight size={14} className="quick-arrow" />
             </button>
@@ -263,37 +313,31 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
         </div>
       </div>
 
-      {/* ── Today's Timeline ─────────────────────── */}
+      {/* ── Weekly Progress Bar ─────────────────── */}
       <div className="dash-glass-panel">
         <div className="panel-header">
           <div className="panel-title-row">
             <Calendar size={16} style={{ color: 'var(--color-accent)' }} />
-            <h3 className="panel-title">Today's Study Timeline</h3>
+            <h3 className="panel-title">Weekly Study Goal</h3>
           </div>
-          <span className="panel-link">Edit Plan →</span>
+          <span className="panel-link">{studyGoal}h target</span>
         </div>
-        <div className="plan-timeline">
-          {[
-            { time: '09:00 – 10:30', subject: 'Physics', topic: 'Statistical Mechanics', color: '#0ea5e9', done: true },
-            { time: '11:00 – 12:00', subject: 'Mathematics', topic: 'Complex Analysis', color: '#8b5cf6', done: true },
-            { time: '14:00 – 15:30', subject: 'Chemistry', topic: 'Spectroscopy Methods', color: '#10b981', done: false },
-          ].map((item, i, arr) => (
-            <div key={i} className={`plan-item ${item.done ? 'done' : 'upcoming'}`}>
-              <div className="plan-time">{item.time}</div>
-              <div className="plan-dot-col">
-                <div className="plan-dot" style={{ background: item.done ? '#10b981' : item.color, boxShadow: item.done ? 'none' : `0 0 12px ${item.color}80` }} />
-                {i < arr.length - 1 && <div className="plan-line" />}
-              </div>
-              <div className="plan-content">
-                <div className="plan-topic">{item.topic}</div>
-                <div className="plan-subject" style={{ color: item.color }}>{item.subject}</div>
-              </div>
-              {item.done
-                ? <span className="plan-badge done-badge">✓ Done</span>
-                : <span className="plan-badge upcoming-badge">Upcoming</span>
-              }
-            </div>
-          ))}
+        <div className="weekly-progress-wrap">
+          <div className="weekly-bar-track">
+            <div
+              className="weekly-bar-fill"
+              style={{ width: `${weeklyGoalPct}%` }}
+            />
+          </div>
+          <div className="weekly-stats">
+            <span className="weekly-done">
+              {hoursThisWeek < 1 ? `${Math.round(hoursThisWeek * 60)} min` : `${hoursThisWeek.toFixed(1)} hr`} studied
+            </span>
+            <span className="weekly-pct">{weeklyGoalPct}% of {studyGoal}h goal</span>
+          </div>
+          {weeklyGoalPct === 0 && (
+            <p className="weekly-nudge">📚 Study a topic to start tracking your weekly progress!</p>
+          )}
         </div>
       </div>
 
@@ -319,183 +363,82 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
           border: 1px solid var(--color-border-strong);
           box-shadow: var(--shadow-lg);
         }
-
         [data-theme="dark"] .dash-hero {
           background: linear-gradient(135deg, #1e1b14 0%, #15120d 100%);
           border-color: rgba(212,175,55,0.15);
         }
-
-        .dash-hero-orb {
-          position: absolute;
-          border-radius: 50%;
-          pointer-events: none;
-          filter: blur(60px);
-        }
+        .dash-hero-orb { position: absolute; border-radius: 50%; pointer-events: none; filter: blur(60px); }
         .dash-hero-orb-1 { width: 300px; height: 300px; top: -100px; right: -60px; background: rgba(212,175,55,0.08); }
         .dash-hero-orb-2 { width: 200px; height: 200px; bottom: -80px; left: 100px; background: rgba(139,92,246,0.07); }
         .dash-hero-orb-3 { width: 150px; height: 150px; top: 20px; left: -40px; background: rgba(14,165,233,0.06); }
 
         .dash-hero-left { position: relative; z-index: 2; flex: 1; }
-
         .dash-greeting-pill {
-          display: inline-flex;
-          align-items: center;
-          gap: 6px;
-          background: rgba(212,175,55,0.12);
-          border: 1px solid rgba(212,175,55,0.25);
-          color: var(--color-accent);
-          padding: 5px 14px;
-          border-radius: 99px;
-          font-size: 12px;
-          font-weight: 600;
-          font-family: var(--font-display);
-          letter-spacing: 0.5px;
-          margin-bottom: 20px;
+          display: inline-flex; align-items: center; gap: 6px;
+          background: rgba(212,175,55,0.12); border: 1px solid rgba(212,175,55,0.25);
+          color: var(--color-accent); padding: 5px 14px; border-radius: 99px;
+          font-size: 12px; font-weight: 600; font-family: var(--font-display);
+          letter-spacing: 0.5px; margin-bottom: 20px;
         }
-
         .dash-headline {
-          font-family: var(--font-serif);
-          font-size: 36px;
-          font-weight: 600;
-          line-height: 1.2;
-          color: var(--color-text-primary);
-          margin-bottom: 12px;
-          letter-spacing: -0.5px;
+          font-family: var(--font-serif); font-size: 36px; font-weight: 600;
+          line-height: 1.2; color: var(--color-text-primary);
+          margin-bottom: 12px; letter-spacing: -0.5px;
         }
-
         .dash-headline-accent {
           background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
+          -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
         }
-
-        .dash-subline {
-          font-size: 15px;
-          color: var(--color-text-secondary);
-          line-height: 1.6;
-          margin-bottom: 28px;
-          max-width: 420px;
-        }
-
-        .dash-hero-ctas { display: flex; gap: 12px; align-items: center; }
-
+        .dash-subline { font-size: 15px; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 28px; max-width: 420px; }
+        .dash-hero-ctas { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
         .dash-ghost-btn {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          padding: 10px 20px;
-          background: transparent;
-          border: 1px solid var(--color-border-strong);
-          border-radius: 99px;
-          color: var(--color-text-secondary);
-          font-size: 13px;
-          font-weight: 500;
-          font-family: var(--font-display);
-          cursor: pointer;
-          transition: all var(--transition-fast);
+          display: inline-flex; align-items: center; gap: 8px;
+          padding: 10px 20px; background: transparent;
+          border: 1px solid var(--color-border-strong); border-radius: 99px;
+          color: var(--color-text-secondary); font-size: 13px; font-weight: 500;
+          font-family: var(--font-display); cursor: pointer; transition: all var(--transition-fast);
         }
         .dash-ghost-btn:hover { border-color: var(--color-accent); color: var(--color-accent); }
 
-        .dash-hero-right {
-          position: relative;
-          z-index: 2;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 20px;
-          flex-shrink: 0;
-        }
-
-        .dash-xp-ring-card {
-          position: relative;
-          width: 100px;
-          height: 100px;
-        }
+        .dash-hero-right { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 20px; flex-shrink: 0; }
+        .dash-xp-ring-card { position: relative; width: 100px; height: 100px; }
         .dash-ring-svg { width: 100%; height: 100%; }
-        .dash-ring-inner {
-          position: absolute;
-          top: 50%; left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-        }
-        .dash-ring-pct {
-          font-family: var(--font-display);
-          font-size: 20px;
-          font-weight: 700;
-          color: var(--color-accent);
-          line-height: 1;
-        }
-        .dash-ring-label {
-          font-size: 9px;
-          color: var(--color-text-muted);
-          font-family: var(--font-display);
-          letter-spacing: 0.5px;
-          margin-top: 2px;
-        }
+        .dash-ring-inner { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+        .dash-ring-pct { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--color-accent); line-height: 1; }
+        .dash-ring-label { font-size: 9px; color: var(--color-text-muted); font-family: var(--font-display); letter-spacing: 0.5px; margin-top: 2px; }
 
         .dash-hero-badges {
-          display: flex;
-          align-items: center;
-          gap: 16px;
-          background: var(--color-surface);
-          border: 1px solid var(--color-border);
-          border-radius: 16px;
-          padding: 14px 20px;
-          box-shadow: var(--shadow-sm);
+          display: flex; align-items: center; gap: 16px;
+          background: var(--color-surface); border: 1px solid var(--color-border);
+          border-radius: 16px; padding: 14px 20px; box-shadow: var(--shadow-sm);
         }
         .dash-badge-item { display: flex; align-items: center; gap: 10px; }
         .dash-badge-num { font-family: var(--font-display); font-size: 20px; font-weight: 700; line-height: 1; }
         .dash-badge-lbl { font-size: 11px; color: var(--color-text-muted); font-family: var(--font-display); }
         .dash-badge-divider { width: 1px; height: 32px; background: var(--color-border); }
 
-        /* ── Stats Grid ── */
-        .dash-stats-grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 16px;
-        }
-
+        /* ── Stats ── */
+        .dash-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
         @media (max-width: 1000px) { .dash-stats-grid { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 600px) { .dash-stats-grid { grid-template-columns: 1fr; } }
 
         .dash-stat-card {
-          position: relative;
-          overflow: hidden;
-          padding: 24px;
-          border-radius: 16px;
-          background: var(--color-surface);
-          border: 1px solid var(--color-border);
-          box-shadow: var(--shadow-sm);
-          transition: all var(--transition-fast);
-          cursor: default;
+          position: relative; overflow: hidden; padding: 24px;
+          border-radius: 16px; background: var(--color-surface);
+          border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);
+          transition: all var(--transition-fast); cursor: default;
         }
-
         [data-theme="dark"] .dash-stat-card {
           background: linear-gradient(135deg, rgba(30,27,20,0.8), rgba(20,18,14,0.9));
         }
-
         .dash-stat-card:hover {
           transform: translateY(-3px);
           box-shadow: var(--shadow-md), 0 0 24px var(--glow, transparent);
           border-color: var(--color-border-strong);
         }
-
-        .dash-stat-glow-bar {
-          position: absolute;
-          bottom: 0; left: 0; right: 0;
-          height: 3px;
-          border-radius: 0 0 16px 16px;
-          opacity: 0.6;
-        }
-
+        .dash-stat-glow-bar { position: absolute; bottom: 0; left: 0; right: 0; height: 3px; border-radius: 0 0 16px 16px; opacity: 0.6; }
         .dash-stat-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 16px; }
-        .dash-stat-icon {
-          width: 44px; height: 44px;
-          border-radius: 12px;
-          display: flex; align-items: center; justify-content: center;
-          flex-shrink: 0;
-        }
+        .dash-stat-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
         .dash-stat-trend { font-size: 11px; color: var(--color-text-muted); text-align: right; line-height: 1.4; max-width: 90px; font-family: var(--font-display); }
         .dash-stat-val { font-family: var(--font-display); font-size: 36px; font-weight: 800; line-height: 1; margin-bottom: 6px; }
         .dash-stat-label { font-size: 14px; font-weight: 600; color: var(--color-text-primary); font-family: var(--font-display); }
@@ -503,30 +446,23 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
 
         /* ── Glass Panel ── */
         .dash-glass-panel {
-          padding: 28px;
-          border-radius: 20px;
-          background: var(--color-surface);
-          border: 1px solid var(--color-border);
-          box-shadow: var(--shadow-sm);
-          transition: box-shadow var(--transition-fast);
+          padding: 28px; border-radius: 20px;
+          background: var(--color-surface); border: 1px solid var(--color-border);
+          box-shadow: var(--shadow-sm); transition: box-shadow var(--transition-fast);
         }
-
         [data-theme="dark"] .dash-glass-panel {
           background: linear-gradient(135deg, rgba(28,25,18,0.85), rgba(18,16,10,0.9));
           border-color: rgba(212,175,55,0.1);
         }
-
         .dash-glass-panel:hover { box-shadow: var(--shadow-md); }
 
-        /* ── Main 2-col ── */
         .dash-main-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
         @media (max-width: 768px) { .dash-main-grid { grid-template-columns: 1fr; } }
 
         .panel-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--color-border); }
         .panel-title-row { display: flex; align-items: center; gap: 10px; }
         .panel-title { font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--color-text-primary); letter-spacing: 0.3px; }
-        .panel-link { font-size: 12px; color: var(--color-accent); font-weight: 600; cursor: pointer; font-family: var(--font-display); transition: opacity var(--transition-fast); }
-        .panel-link:hover { opacity: 0.7; }
+        .panel-link { font-size: 12px; color: var(--color-accent); font-weight: 600; cursor: pointer; font-family: var(--font-display); }
         .panel-sub { font-size: 12px; color: var(--color-text-muted); }
 
         /* ── Subject Progress ── */
@@ -535,17 +471,8 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
         .sp-info { display: flex; align-items: center; justify-content: space-between; }
         .sp-name { font-size: 14px; font-weight: 600; color: var(--color-text-primary); font-family: var(--font-display); }
         .sp-pct { font-size: 14px; font-weight: 700; font-family: var(--font-display); }
-        .sp-bar-track {
-          height: 8px;
-          background: var(--color-base-alt);
-          border-radius: 99px;
-          overflow: hidden;
-        }
-        .sp-bar-fill {
-          height: 100%;
-          border-radius: 99px;
-          transition: width 1s cubic-bezier(0.25,1,0.5,1);
-        }
+        .sp-bar-track { height: 8px; background: var(--color-base-alt); border-radius: 99px; overflow: hidden; }
+        .sp-bar-fill { height: 100%; border-radius: 99px; transition: width 1s cubic-bezier(0.25,1,0.5,1); min-width: 0; }
         .sp-topics-row { display: flex; justify-content: space-between; }
         .sp-topics { font-size: 11px; color: var(--color-text-muted); }
         .sp-done { font-size: 11px; font-weight: 600; }
@@ -554,109 +481,58 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
         .activity-list { display: flex; flex-direction: column; gap: 4px; }
         .activity-item {
           display: flex; align-items: center; gap: 14px;
-          padding: 12px 10px;
-          border-radius: 12px;
-          transition: background var(--transition-fast);
-          cursor: default;
+          padding: 12px 10px; border-radius: 12px; transition: background var(--transition-fast); cursor: default;
         }
         .activity-item:hover { background: var(--color-base-alt); }
         .act-icon { width: 40px; height: 40px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
         .act-info { flex: 1; min-width: 0; }
-        .act-topic { font-size: 14px; font-weight: 600; color: var(--color-text-primary); font-family: var(--font-display); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .act-topic { font-size: 14px; font-weight: 600; color: var(--color-text-primary); font-family: var(--font-display); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-transform: capitalize; }
         .act-subject { font-size: 12px; font-weight: 600; font-family: var(--font-display); margin-top: 2px; }
         .act-time { font-size: 11px; color: var(--color-text-muted); flex-shrink: 0; }
 
+        .dash-empty-activity {
+          display: flex; flex-direction: column; align-items: center; justify-content: center;
+          gap: 12px; padding: 32px 0; text-align: center;
+        }
+        .dash-empty-activity p { font-size: 13px; color: var(--color-text-muted); font-family: var(--font-display); max-width: 200px; line-height: 1.5; }
+
         /* ── Quick Grid ── */
-        .quick-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-          gap: 12px;
-        }
-
+        .quick-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
         .quick-card {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          padding: 16px;
-          border-radius: 14px;
-          border: 1px solid var(--color-border);
-          background: var(--color-base-alt);
-          cursor: pointer;
-          transition: all var(--transition-fast);
-          text-align: left;
-          width: 100%;
-          position: relative;
-          overflow: hidden;
+          display: flex; align-items: center; gap: 12px;
+          padding: 16px; border-radius: 14px;
+          border: 1px solid var(--color-border); background: var(--color-base-alt);
+          cursor: pointer; transition: all var(--transition-fast); text-align: left; width: 100%;
+          position: relative; overflow: hidden;
         }
-
         .quick-card::before {
-          content: '';
-          position: absolute;
-          inset: 0;
+          content: ''; position: absolute; inset: 0;
           background: linear-gradient(135deg, var(--card-color, transparent), transparent 70%);
-          opacity: 0;
-          transition: opacity var(--transition-fast);
+          opacity: 0; transition: opacity var(--transition-fast);
         }
-
-        .quick-card:hover {
-          transform: translateY(-3px);
-          border-color: var(--card-color, var(--color-border-strong));
-          box-shadow: 0 8px 24px rgba(0,0,0,0.12), 0 0 0 1px var(--card-color, transparent);
-        }
-
+        .quick-card:hover { transform: translateY(-3px); border-color: var(--card-color, var(--color-border-strong)); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
         .quick-card:hover::before { opacity: 0.04; }
-
-        .quick-icon {
-          width: 40px; height: 40px;
-          border-radius: 12px;
-          display: flex; align-items: center; justify-content: center;
-          flex-shrink: 0;
-          position: relative; z-index: 1;
-        }
-
+        .quick-icon { width: 40px; height: 40px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; position: relative; z-index: 1; }
         .quick-text { flex: 1; position: relative; z-index: 1; }
         .quick-topic { font-size: 13px; font-weight: 600; color: var(--color-text-primary); font-family: var(--font-display); }
         .quick-subject { font-size: 11px; font-weight: 600; margin-top: 2px; font-family: var(--font-display); }
-
-        .quick-arrow {
-          color: var(--color-text-muted);
-          flex-shrink: 0;
-          position: relative; z-index: 1;
-          transition: transform var(--transition-fast), color var(--transition-fast);
-        }
+        .quick-arrow { color: var(--color-text-muted); flex-shrink: 0; position: relative; z-index: 1; transition: transform var(--transition-fast), color var(--transition-fast); }
         .quick-card:hover .quick-arrow { transform: translate(2px, -2px); color: var(--card-color, var(--color-accent)); }
 
-        /* ── Timeline ── */
-        .plan-timeline { display: flex; flex-direction: column; }
-        .plan-item {
-          display: flex; align-items: flex-start; gap: 16px;
-          padding: 14px 0;
-          transition: all var(--transition-fast);
+        /* ── Weekly ── */
+        .weekly-progress-wrap { display: flex; flex-direction: column; gap: 12px; }
+        .weekly-bar-track { height: 12px; background: var(--color-base-alt); border-radius: 99px; overflow: hidden; }
+        .weekly-bar-fill {
+          height: 100%; border-radius: 99px;
+          background: linear-gradient(90deg, var(--color-accent-dark), var(--color-accent-light));
+          transition: width 1.2s cubic-bezier(0.25,1,0.5,1);
+          box-shadow: 0 0 12px rgba(212,175,55,0.4);
+          min-width: 0;
         }
-        .plan-item.done { opacity: 0.55; }
-        .plan-item.upcoming .plan-content { }
-
-        .plan-time {
-          font-size: 12px; color: var(--color-text-muted);
-          font-family: var(--font-display); font-weight: 500;
-          width: 120px; flex-shrink: 0; padding-top: 2px;
-        }
-
-        .plan-dot-col { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
-        .plan-dot { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; transition: box-shadow 0.3s; }
-        .plan-line { width: 2px; flex: 1; min-height: 32px; background: var(--color-border); margin-top: 5px; }
-
-        .plan-content { flex: 1; }
-        .plan-topic { font-size: 15px; font-weight: 600; color: var(--color-text-primary); font-family: var(--font-display); }
-        .plan-subject { font-size: 12px; font-weight: 600; font-family: var(--font-display); margin-top: 3px; }
-
-        .plan-badge {
-          font-size: 11px; font-weight: 700;
-          padding: 3px 12px; border-radius: 99px;
-          font-family: var(--font-display); flex-shrink: 0; margin-top: 2px;
-        }
-        .done-badge { color: #10b981; background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.2); }
-        .upcoming-badge { color: var(--color-accent); background: rgba(212,175,55,0.1); border: 1px solid rgba(212,175,55,0.2); }
+        .weekly-stats { display: flex; justify-content: space-between; align-items: center; }
+        .weekly-done { font-size: 13px; font-weight: 600; color: var(--color-text-primary); font-family: var(--font-display); }
+        .weekly-pct { font-size: 13px; color: var(--color-accent); font-weight: 700; font-family: var(--font-display); }
+        .weekly-nudge { font-size: 12px; color: var(--color-text-muted); font-family: var(--font-display); text-align: center; padding: 8px; background: var(--color-base-alt); border-radius: 10px; }
 
         @media (max-width: 900px) {
           .dash-hero { flex-direction: column; padding: 36px 28px; }
