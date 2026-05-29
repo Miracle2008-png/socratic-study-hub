@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import remarkGfm from 'remark-gfm';
 import rehypeKatex from 'rehype-katex';
+import katex from 'katex';
 import 'katex/dist/katex.min.css';
 import {
   BookOpen, Clock, ChevronDown, ChevronRight, Copy, Check,
@@ -593,9 +594,18 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId }) => {
                           {copiedFormula === f.latex ? <Check size={12} style={{ color: '#10b981' }} /> : <Copy size={12} />}
                         </button>
                       </div>
-                      <div className="tm-formula-render">
-                        <ReactMarkdown remarkPlugins={[remarkMath, remarkGfm]} rehypePlugins={[rehypeKatex]}>{`$${f.latex}$`}</ReactMarkdown>
-                      </div>
+                      <div
+                        className="tm-formula-render"
+                        dangerouslySetInnerHTML={{
+                          __html: (() => {
+                            try {
+                              return katex.renderToString(f.latex, { throwOnError: false, displayMode: true });
+                            } catch {
+                              return `<code style="font-size:13px;opacity:0.7">${f.latex}</code>`;
+                            }
+                          })()
+                        }}
+                      />
                     </div>
                   ))}
                 </div>
@@ -806,9 +816,49 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId }) => {
 
         /* ─── Sidebar ─────────────────────────────────────────── */
         .tm-sidebar { display: flex; flex-direction: column; gap: 20px; position: sticky; top: 24px; }
-        .tm-widget { padding: 24px; }
-        .tm-widget-header { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; padding-bottom: 14px; border-bottom: var(--border-soft); }
-        .tm-widget-header h3 { font-family: var(--font-display); font-size: 14px; font-weight: 700; }
+        .tm-widget { padding: 20px; }
+        .tm-widget-header { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid var(--color-border); }
+        .tm-widget-header h3 { font-family: var(--font-display); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--color-text-primary); }
+
+        /* ─── Key Formulas ── */
+        .tm-formulas-list { display: flex; flex-direction: column; gap: 10px; }
+        .tm-formula-item {
+          border-radius: 12px;
+          border: 1px solid var(--color-border);
+          background: var(--color-base-alt);
+          overflow: hidden;
+          transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+        }
+        .tm-formula-item:hover {
+          border-color: rgba(212,175,55,0.35);
+          box-shadow: 0 4px 16px rgba(212,175,55,0.08);
+        }
+        .tm-formula-top {
+          display: flex; align-items: center; justify-content: space-between;
+          padding: 10px 14px 8px;
+          border-bottom: 1px solid var(--color-border);
+        }
+        .tm-formula-name {
+          font-family: var(--font-display); font-size: 11px; font-weight: 700;
+          letter-spacing: 0.8px; text-transform: uppercase;
+          color: var(--color-accent);
+        }
+        .tm-copy-btn {
+          display: flex; align-items: center; justify-content: center;
+          width: 26px; height: 26px; border-radius: 7px;
+          border: 1px solid var(--color-border); background: transparent;
+          color: var(--color-text-muted); cursor: pointer;
+          transition: all var(--transition-fast); flex-shrink: 0;
+        }
+        .tm-copy-btn:hover { background: var(--color-surface); color: var(--color-accent); border-color: rgba(212,175,55,0.35); }
+        .tm-formula-render {
+          padding: 14px 16px;
+          display: flex; align-items: center; justify-content: center;
+          overflow-x: auto;
+          min-height: 52px;
+        }
+        .tm-formula-render .katex-display { margin: 0 !important; }
+        .tm-formula-render .katex { font-size: 1.1em !important; }
         
         .sidebar-toc-entry {
           display: block; width: 100%; text-align: left; padding: 8px 12px;
