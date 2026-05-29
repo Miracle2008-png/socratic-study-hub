@@ -152,11 +152,13 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId }) => {
     );
   }
 
+  const topicFullContent = topic.sections.map(s => `${'#'.repeat(s.level)} ${s.heading}\n\n${s.content}`).join('\n\n');
+
   if (isFocusMode) {
     return (
       <FocusMode 
         title={topic.title}
-        content={topic.content}
+        content={topicFullContent}
         onExit={() => setIsFocusMode(false)}
       />
     );

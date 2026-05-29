@@ -46,7 +46,6 @@ function App() {
   };
 
   const renderContent = () => {
-    if (isFocusMode) return <FocusMode onExit={() => setIsFocusMode(false)} />;
     if (activeTab === 'dashboard') {
       return (
         <Dashboard 
