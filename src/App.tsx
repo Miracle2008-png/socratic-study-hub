@@ -21,7 +21,7 @@ import { GamificationProvider, useGamification } from './context/GamificationCon
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { LoginScreen } from './components/LoginScreen';
 import { supabase } from './utils/supabase';
-import { useStudyProgress } from './context/StudyProgressContext';
+import { StudyProgressProvider, useStudyProgress } from './context/StudyProgressContext';
 import { Search, Bell, Settings, User, X, Check, Activity, Clock, Sparkles, Flame, Trophy, Calculator, Menu, ChevronDown } from 'lucide-react';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import './index.css';
