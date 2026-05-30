@@ -23,6 +23,7 @@ import { LoginScreen } from './components/LoginScreen';
 import { supabase } from './utils/supabase';
 import { useStudyProgress } from './context/StudyProgressContext';
 import { Search, Bell, Settings, User, X, Check, Activity, Clock, Sparkles, Flame, Trophy, Calculator, Menu, ChevronDown } from 'lucide-react';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import './index.css';
 import './gamification.css';
 
@@ -478,13 +479,17 @@ const AppContent: React.FC = () => {
   );
 };
 
-const App: React.FC = () => {
+function App() {
   return (
-    <AuthProvider>
-      <GamificationProvider>
-        <AppContent />
-      </GamificationProvider>
-    </AuthProvider>
+    <ErrorBoundary>
+      <AuthProvider>
+        <GamificationProvider>
+          <StudyProgressProvider>
+            <AppContent />
+          </StudyProgressProvider>
+        </GamificationProvider>
+      </AuthProvider>
+    </ErrorBoundary>
   );
 };
 
