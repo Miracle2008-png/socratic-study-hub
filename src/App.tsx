@@ -61,6 +61,16 @@ function App() {
     document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
   }, [darkMode]);
 
+  // Save study time if user closes/hides the tab
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden) closeTopic();
+    };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    return () => document.removeEventListener('visibilitychange', handleVisibilityChange);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const handleTabChange = (tabId: string) => {
     closeTopic();
     setActiveTab(tabId);
@@ -87,6 +97,7 @@ function App() {
     if (activeTab === 'mindmap') return <MindMap onTopicSelect={(topicId, subject) => {
       setActiveTab(subject);
       setActiveTopic(topicId);
+      openTopic(topicId, subject);
     }} />;
     if (activeTab === 'formula_blog') return <FormulaBank />;
     if (activeTab === 'derivations') return <DerivationsHub />;
@@ -107,6 +118,10 @@ function App() {
       if (activeTopic) return <TopicModule topicId={activeTopic} />;
       return <SubjectHub subject="chemistry" onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'chemistry'); }} />;
     }
+    if (activeTab === 'biology') {
+      if (activeTopic) return <TopicModule topicId={activeTopic} />;
+      return <SubjectHub subject="biology" onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'biology'); }} />;
+    }
 
     return (
       <div className="empty-state luxury-card">
@@ -124,7 +139,11 @@ function App() {
   const tabLabel = (id: string) => {
     const map: Record<string, string> = {
       math: 'Mathematics', physics: 'Physics', chemistry: 'Chemistry',
-      biology: 'Biology', ai_hub: 'AI Hub',
+      biology: 'Biology', ai_hub: 'AI Hub', grapher: '2D Grapher',
+      mindmap: 'Knowledge Map', formula_blog: 'Formula Bank',
+      derivations: 'Derivations', flashcards: 'Flashcards',
+      visualizer: '3D Visualizer', planner: 'Study Planner',
+      socratic: 'Socratic Solver', upload: 'AI Upload Hub',
     };
     return map[id] || id;
   };
