@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, Bot, User, HelpCircle, CheckCircle, XCircle, Lightbulb, RefreshCw, Variable, Sigma, Activity, Maximize2, X, Camera, Trash2 } from 'lucide-react';
+import { usePremium } from '../context/PremiumContext';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -94,6 +95,7 @@ interface ChatMessage {
 }
 
 const SocraticSolver: React.FC = () => {
+  const { useCredit } = usePremium();
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState('');
   const [currentStep, setCurrentStep] = useState(0);
@@ -228,6 +230,8 @@ const SocraticSolver: React.FC = () => {
   const handleSend = (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim()) return;
+
+    if (!useCredit()) return;
 
     const newMsg: ChatMessage = {
       id: `msg-stu-${Date.now()}`,

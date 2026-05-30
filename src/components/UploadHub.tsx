@@ -13,11 +13,13 @@ import * as pdfjsLib from 'pdfjs-dist';
 import mammoth from 'mammoth';
 import * as XLSX from 'xlsx';
 import JSZip from 'jszip';
+import { usePremium } from '../context/PremiumContext';
 
 // Initialize PDF.js worker
 pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.js`;
 
 const UploadHub: React.FC = () => {
+  const { useCredit } = usePremium();
   const [dragActive, setDragActive] = useState(false);
   const [uploadState, setUploadState] = useState<'idle' | 'uploading' | 'parsing' | 'analyzing' | 'done'>('idle');
   const [urlInput, setUrlInput] = useState('');
@@ -179,6 +181,9 @@ const UploadHub: React.FC = () => {
 
   const processUpload = async (text: string) => {
     if (!text.trim()) return;
+
+    if (!useCredit()) return;
+
     setUploadState('uploading');
     
     setTimeout(() => setUploadState('parsing'), 800);

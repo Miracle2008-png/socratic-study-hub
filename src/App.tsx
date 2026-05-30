@@ -25,6 +25,8 @@ import { StudyProgressProvider, useStudyProgress } from './context/StudyProgress
 import { Search, Bell, Settings, User, X, Check, Activity, Clock, Sparkles, Flame, Trophy, Calculator, Menu, ChevronDown, ShieldAlert } from 'lucide-react';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { AdminDashboard } from './components/AdminDashboard';
+import { PremiumProvider, usePremium } from './context/PremiumContext';
+import { ProUpgradeScreen } from './components/ProUpgradeScreen';
 import './index.css';
 import './gamification.css';
 
@@ -51,6 +53,7 @@ const AppContent: React.FC = () => {
   const { level, xp, streak, dailyGoalProgress, dailyGoalTarget, addXP } = useGamification();
   const { currentUser } = useAuth();
   const { recordTopicOpen, recordTopicClose } = useStudyProgress();
+  const { freeCredits, isPro } = usePremium();
   
   const [showLoginModal, setShowLoginModal] = useState(false);
   const isAdmin = currentUser?.email === 'miraclechimdindu2008@gmail.com' || currentUser?.email === 'miraclechimdindu2025@gmail.com';
@@ -111,10 +114,29 @@ const AppContent: React.FC = () => {
   };
 
   const renderContent = () => {
+    const isPremiumFeature = ['upload', 'socratic', 'mindmap', 'visualizer', 'ai_hub'].includes(activeTab);
+    
+    if (isPremiumFeature && freeCredits === 0 && !isPro) {
+      const featureNames: Record<string, string> = {
+        'upload': 'Upload Hub',
+        'socratic': 'Socratic Solver',
+        'mindmap': 'AI Knowledge Map',
+        'visualizer': '3D Visualizer',
+        'ai_hub': 'AI Study Hub'
+      };
+      
+      return (
+        <ProUpgradeScreen 
+          featureName={featureNames[activeTab] || 'Premium Feature'}
+          onUpgradeClick={() => setShowLoginModal(true)} 
+        />
+      );
+    }
+
     if (activeTab === 'dashboard') {
       return (
         <Dashboard
-          userName={currentUser.user_metadata?.full_name || currentUser.email?.split('@')[0] || 'Scholar'}
+          userName={currentUser?.user_metadata?.full_name || currentUser?.email?.split('@')[0] || 'Scholar'}
           studyGoal={studyGoal}
           onTopicSelect={(topicId, subject) => {
             setActiveTab(subject);
@@ -545,7 +567,9 @@ function App() {
       <AuthProvider>
         <GamificationProvider>
           <StudyProgressProvider>
-            <AppContent />
+            <PremiumProvider>
+              <AppContent />
+            </PremiumProvider>
           </StudyProgressProvider>
         </GamificationProvider>
       </AuthProvider>

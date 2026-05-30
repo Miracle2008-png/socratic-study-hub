@@ -13,6 +13,7 @@ import {
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import { useGamification } from '../context/GamificationContext';
+import { usePremium } from '../context/PremiumContext';
 
 const initialNodes = [
   // Math Branch
@@ -81,13 +82,15 @@ const MindMap: React.FC<MindMapProps> = ({ onTopicSelect }) => {
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   const { addXP } = useGamification();
+  const { useCredit } = usePremium();
 
   const onConnect = useCallback(
     (params: Connection | Edge) => {
+      if (!useCredit()) return;
       setEdges((eds) => addEdge({ ...params, ...defaultEdgeOptions }, eds));
       addXP(1500, 'Created Knowledge Link');
     },
-    [setEdges, addXP],
+    [setEdges, addXP, useCredit],
   );
 
   const onNodeClick = useCallback((_: React.MouseEvent, node: any) => {
