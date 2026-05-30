@@ -10,6 +10,8 @@ import { useGamification } from '../context/GamificationContext';
 import Tesseract from 'tesseract.js';
 import * as pdfjsLib from 'pdfjs-dist';
 import mammoth from 'mammoth';
+import * as XLSX from 'xlsx';
+import JSZip from 'jszip';
 
 // Initialize PDF.js worker
 pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
@@ -98,6 +100,51 @@ const UploadHub: React.FC = () => {
         return result.value;
       } catch (err) {
         console.error('DOCX Parse Error:', err);
+        setBinaryWarning(true);
+        setUploadState('idle');
+        return '';
+      }
+    } else if (file.name.toLowerCase().endsWith('.xlsx') || file.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet') {
+      setBinaryWarning(false);
+      setUploadState('parsing');
+      try {
+        const arrayBuffer = await file.arrayBuffer();
+        const workbook = XLSX.read(arrayBuffer, { type: 'array' });
+        let text = '';
+        workbook.SheetNames.forEach(sheetName => {
+          const worksheet = workbook.Sheets[sheetName];
+          text += `--- Sheet: ${sheetName} ---\n`;
+          text += XLSX.utils.sheet_to_csv(worksheet) + '\n\n';
+        });
+        setUploadState('idle');
+        return text;
+      } catch (err) {
+        console.error('XLSX Parse Error:', err);
+        setBinaryWarning(true);
+        setUploadState('idle');
+        return '';
+      }
+    } else if (file.name.toLowerCase().endsWith('.pptx') || file.type === 'application/vnd.openxmlformats-officedocument.presentationml.presentation') {
+      setBinaryWarning(false);
+      setUploadState('parsing');
+      try {
+        const arrayBuffer = await file.arrayBuffer();
+        const zip = new JSZip();
+        const loadedZip = await zip.loadAsync(arrayBuffer);
+        let text = '';
+        for (const [filename, fileData] of Object.entries(loadedZip.files)) {
+          if (filename.startsWith('ppt/slides/slide') && filename.endsWith('.xml')) {
+            const xmlStr = await fileData.async('text');
+            const matches = xmlStr.match(/<a:t[^>]*>([^<]*)<\/a:t>/g);
+            if (matches) {
+              text += matches.map(m => m.replace(/<[^>]+>/g, '')).join(' ') + '\n';
+            }
+          }
+        }
+        setUploadState('idle');
+        return text;
+      } catch (err) {
+        console.error('PPTX Parse Error:', err);
         setBinaryWarning(true);
         setUploadState('idle');
         return '';
@@ -469,14 +516,14 @@ const UploadHub: React.FC = () => {
 
               <div className="supported-formats">
                 <div className="fmt"><FileText size={16} /> TXT / MD / PDF</div>
-                <div className="fmt"><MonitorPlay size={16} /> DOCX</div>
-                <div className="fmt"><ImageIcon size={16} /> Images</div>
+                <div className="fmt"><MonitorPlay size={16} /> DOCX / PPTX</div>
+                <div className="fmt"><ImageIcon size={16} /> Excel / Imgs</div>
               </div>
 
               <input
                 ref={fileInputRef}
                 type="file"
-                accept=".txt,.md,.csv,.json,.html,.tex,.py,.js,.ts,image/*,.pdf,.docx"
+                accept=".txt,.md,.csv,.json,.html,.tex,.py,.js,.ts,image/*,.pdf,.docx,.pptx,.xlsx"
                 style={{ display: 'none' }}
                 onChange={handleFileChange}
               />
