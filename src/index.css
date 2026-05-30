@@ -469,7 +469,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 /* ===== MOBILE RESPONSIVENESS ===== */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .app-container {
     grid-template-columns: 1fr;
   }
@@ -553,7 +553,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 769px) {
   .mobile-menu-btn {
     display: none;
   }
