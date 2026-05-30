@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { supabase } from '../utils/supabase';
 import { BookOpen, GraduationCap, Mail, Lock, BrainCircuit } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
 
 export const LoginScreen: React.FC = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -9,49 +10,31 @@ export const LoginScreen: React.FC = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
+  const { mockLogin } = useAuth();
+
   const handleGoogleLogin = async () => {
     setLoading(true);
-    try {
-      const { error } = await supabase.auth.signInWithOAuth({
-        provider: 'google',
-        options: {
-          redirectTo: window.location.origin,
-        }
-      });
-      if (error) throw error;
-    } catch (err: any) {
-      setError(err.message);
+    // Simulate OAuth Delay
+    setTimeout(() => {
+      mockLogin('scholar@gmail.com');
       setLoading(false);
-    }
+    }, 1000);
   };
 
   const handleEmailAuth = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!email) {
+      setError('Please enter an email.');
+      return;
+    }
     setLoading(true);
     setError('');
 
-    try {
-      if (isLogin) {
-        const { error } = await supabase.auth.signInWithPassword({
-          email,
-          password,
-        });
-        if (error) throw error;
-      } else {
-        const { error } = await supabase.auth.signUp({
-          email,
-          password,
-        });
-        if (error) throw error;
-        else {
-            alert('Signup successful! Please check your email for verification.');
-        }
-      }
-    } catch (err: any) {
-      setError(err.message);
-    } finally {
+    // Simulate Network Delay
+    setTimeout(() => {
+      mockLogin(email);
       setLoading(false);
-    }
+    }, 800);
   };
 
   return (
