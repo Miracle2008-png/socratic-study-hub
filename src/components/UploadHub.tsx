@@ -14,7 +14,7 @@ import * as XLSX from 'xlsx';
 import JSZip from 'jszip';
 
 // Initialize PDF.js worker
-pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
+pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.mjs`;
 
 const UploadHub: React.FC = () => {
   const [dragActive, setDragActive] = useState(false);
@@ -27,6 +27,7 @@ const UploadHub: React.FC = () => {
   const [pastedText, setPastedText] = useState('');
   const [fileName, setFileName] = useState('');
   const [binaryWarning, setBinaryWarning] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
   const [fileText, setFileText] = useState('');
   const [ocrProgress, setOcrProgress] = useState<{status: string, progress: number} | null>(null);
   const { addXP } = useGamification();
@@ -63,10 +64,10 @@ const UploadHub: React.FC = () => {
         setOcrProgress(null);
         setUploadState('idle');
         return result.data.text;
-      } catch (err) {
+      } catch (err: any) {
         console.error('OCR Error:', err);
         setOcrProgress(null);
-        setBinaryWarning(true);
+        setErrorMessage(`OCR Error: ${err.message || 'Could not parse image'}`);
         setUploadState('idle');
         return '';
       }
@@ -84,9 +85,9 @@ const UploadHub: React.FC = () => {
         }
         setUploadState('idle');
         return text;
-      } catch (err) {
+      } catch (err: any) {
         console.error('PDF Parse Error:', err);
-        setBinaryWarning(true);
+        setErrorMessage(`PDF Error: ${err.message || 'Could not read PDF'}`);
         setUploadState('idle');
         return '';
       }
@@ -98,9 +99,9 @@ const UploadHub: React.FC = () => {
         const result = await mammoth.extractRawText({ arrayBuffer });
         setUploadState('idle');
         return result.value;
-      } catch (err) {
+      } catch (err: any) {
         console.error('DOCX Parse Error:', err);
-        setBinaryWarning(true);
+        setErrorMessage(`Word Doc Error: ${err.message || 'Could not read DOCX'}`);
         setUploadState('idle');
         return '';
       }
@@ -118,9 +119,9 @@ const UploadHub: React.FC = () => {
         });
         setUploadState('idle');
         return text;
-      } catch (err) {
+      } catch (err: any) {
         console.error('XLSX Parse Error:', err);
-        setBinaryWarning(true);
+        setErrorMessage(`Excel Error: ${err.message || 'Could not read XLSX'}`);
         setUploadState('idle');
         return '';
       }
@@ -143,9 +144,9 @@ const UploadHub: React.FC = () => {
         }
         setUploadState('idle');
         return text;
-      } catch (err) {
+      } catch (err: any) {
         console.error('PPTX Parse Error:', err);
-        setBinaryWarning(true);
+        setErrorMessage(`PowerPoint Error: ${err.message || 'Could not read PPTX'}`);
         setUploadState('idle');
         return '';
       }
@@ -208,6 +209,7 @@ const UploadHub: React.FC = () => {
     setPastedText('');
     setFileName('');
     setBinaryWarning(false);
+    setErrorMessage('');
     setOcrProgress(null);
     setQuizAnswers({});
     setQuizRevealed({});
@@ -503,7 +505,12 @@ const UploadHub: React.FC = () => {
                 </>
               )}
 
-              {binaryWarning && (
+              {errorMessage && (
+              <div className="binary-warning">
+                <strong>Error:</strong> {errorMessage}
+              </div>
+            )}
+            {binaryWarning && !errorMessage && (
                 <div style={{
                   marginTop: 12, padding: '10px 16px', borderRadius: 10,
                   background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.25)',
