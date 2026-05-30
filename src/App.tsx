@@ -19,7 +19,7 @@ import AiTutorSidebar from './components/AiTutorSidebar';
 import { AdvancedCalculator } from './components/AdvancedCalculator';
 import { useGamification } from './context/GamificationContext';
 import { useStudyProgress } from './context/StudyProgressContext';
-import { Search, Bell, Settings, User, X, Check, Activity, Clock, Sparkles, Flame, Trophy, Calculator } from 'lucide-react';
+import { Search, Bell, Settings, User, X, Check, Activity, Clock, Sparkles, Flame, Trophy, Calculator, Menu } from 'lucide-react';
 import './index.css';
 import './gamification.css';
 
@@ -30,6 +30,7 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [isAiTutorOpen, setIsAiTutorOpen] = useState(false);
   const [isCalculatorOpen, setIsCalculatorOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Settings State
   const [userName, setUserName] = useState('Scholar');
@@ -75,6 +76,7 @@ function App() {
     closeTopic();
     setActiveTab(tabId);
     setActiveTopic(null);
+    setIsMobileMenuOpen(false); // Close mobile menu when changing tabs
   };
 
   const renderContent = () => {
@@ -149,7 +151,7 @@ function App() {
   };
 
   return (
-    <div className={`app-container ${isFocusMode ? 'focus-mode-active' : ''}`}>
+    <div className={`app-container ${isFocusMode ? 'focus-mode-active' : ''} ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
       {!isFocusMode && (
         <Sidebar
           activeTab={activeTab}
@@ -162,9 +164,12 @@ function App() {
         />
       )}
 
-      <main className="main-content">
+      <main className="main-content" onClick={() => isMobileMenuOpen && setIsMobileMenuOpen(false)}>
         {!isFocusMode && (
           <header className="topbar">
+            <button className="mobile-menu-btn" onClick={(e) => { e.stopPropagation(); setIsMobileMenuOpen(!isMobileMenuOpen); }}>
+              <Menu size={20} />
+            </button>
             <GlobalSearch onSelect={(subject, topicId) => {
               setActiveTab(subject);
               setActiveTopic(topicId);
