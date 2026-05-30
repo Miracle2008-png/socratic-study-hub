@@ -22,8 +22,9 @@ import { AuthProvider, useAuth } from './context/AuthContext';
 import { LoginScreen } from './components/LoginScreen';
 import { supabase } from './utils/supabase';
 import { StudyProgressProvider, useStudyProgress } from './context/StudyProgressContext';
-import { Search, Bell, Settings, User, X, Check, Activity, Clock, Sparkles, Flame, Trophy, Calculator, Menu, ChevronDown } from 'lucide-react';
+import { Search, Bell, Settings, User, X, Check, Activity, Clock, Sparkles, Flame, Trophy, Calculator, Menu, ChevronDown, ShieldAlert } from 'lucide-react';
 import { ErrorBoundary } from './components/ErrorBoundary';
+import { AdminDashboard } from './components/AdminDashboard';
 import './index.css';
 import './gamification.css';
 
@@ -50,6 +51,15 @@ const AppContent: React.FC = () => {
   const { level, xp, streak, dailyGoalProgress, dailyGoalTarget, addXP } = useGamification();
   const { currentUser } = useAuth();
   const { recordTopicOpen, recordTopicClose } = useStudyProgress();
+  
+  const [showLoginModal, setShowLoginModal] = useState(false);
+  const isAdmin = currentUser?.email === 'miraclechimdindu2008@gmail.com' || currentUser?.email === 'miraclechimdindu2025@gmail.com';
+
+  useEffect(() => {
+    if (currentUser) {
+      setShowLoginModal(false);
+    }
+  }, [currentUser]);
 
   // Track how long the user has a topic open
   const activeTopicRef = useRef<{ id: string; subject: string } | null>(null);
@@ -98,9 +108,7 @@ const AppContent: React.FC = () => {
     setIsMobileMenuOpen(false); // Close mobile menu when changing tabs
   };
 
-  if (!currentUser) {
-    return <LoginScreen />;
-  }
+  };
 
   const renderContent = () => {
     if (activeTab === 'dashboard') {
@@ -117,6 +125,7 @@ const AppContent: React.FC = () => {
       );
     }
     if (activeTab === 'upload') return <UploadHub />;
+    if (activeTab === 'admin' && isAdmin) return <AdminDashboard />;
     if (activeTab === 'planner') return <StudyPlanner />;
     if (activeTab === 'socratic') return <SocraticSolver />;
     if (activeTab === 'mindmap') return <MindMap onTopicSelect={(topicId, subject) => {
@@ -184,6 +193,7 @@ const AppContent: React.FC = () => {
           darkMode={darkMode}
           toggleDarkMode={() => setDarkMode(d => !d)}
           onCalculatorToggle={() => setIsCalculatorOpen(c => !c)}
+          isAdmin={isAdmin}
         />
       )}
 
@@ -254,28 +264,36 @@ const AppContent: React.FC = () => {
               </button>
 
               <div className="topbar-dropdown-wrap">
-                <button 
-                  className={`avatar ${activeMenu === 'profile' ? 'active' : ''}`}
-                  onClick={() => setActiveMenu(activeMenu === 'profile' ? null : 'profile')}
-                >
-                  <div className="profile-details">
-                    <span className="profile-name" style={{ fontWeight: 600 }}>{currentUser.user_metadata?.full_name || currentUser.email || 'Scholar'}</span>
-                    <span className="profile-level" style={{ fontSize: 11, color: 'var(--color-accent)' }}>Lvl {level} ✦ {xp} XP</span>
-                  </div>
-                  <ChevronDown size={14} style={{ marginLeft: 4 }} />
-                </button>
-                {activeMenu === 'profile' && (
-                  <div className="topbar-dropdown profile-dropdown">
-                    <div className="dropdown-header">
-                      <h4>{currentUser.user_metadata?.full_name || currentUser.email?.split('@')[0] || 'Scholar'}</h4>
-                      <p className="dd-subtitle">Lumen Academic</p>
-                    </div>
-                    <button className="dropdown-item" onClick={() => setActiveTab('dashboard')}>My Profile</button>
-                    <button className="dropdown-item">Progress Stats</button>
-                    <button className="dropdown-item" onClick={() => setActiveMenu('settings')}>Settings</button>
-                    <div style={{ height: 1, background: 'var(--color-border)', margin: '4px 0' }} />
-                    <button className="dropdown-item" style={{ color: '#ef4444' }} onClick={() => supabase.auth.signOut()}>Sign Out</button>
-                  </div>
+                {!currentUser ? (
+                  <button className="gold-btn" style={{ padding: '8px 16px', fontSize: 13 }} onClick={() => setShowLoginModal(true)}>
+                    Sign In
+                  </button>
+                ) : (
+                  <>
+                    <button 
+                      className={`avatar ${activeMenu === 'profile' ? 'active' : ''}`}
+                      onClick={() => setActiveMenu(activeMenu === 'profile' ? null : 'profile')}
+                    >
+                      <div className="profile-details">
+                        <span className="profile-name" style={{ fontWeight: 600 }}>{currentUser.user_metadata?.full_name || currentUser.email || 'Scholar'}</span>
+                        <span className="profile-level" style={{ fontSize: 11, color: 'var(--color-accent)' }}>Lvl {level} ✦ {xp} XP</span>
+                      </div>
+                      <ChevronDown size={14} style={{ marginLeft: 4 }} />
+                    </button>
+                    {activeMenu === 'profile' && (
+                      <div className="topbar-dropdown profile-dropdown">
+                        <div className="dropdown-header">
+                          <h4>{currentUser.user_metadata?.full_name || currentUser.email?.split('@')[0] || 'Scholar'}</h4>
+                          <p className="dd-subtitle">Lumen Academic</p>
+                        </div>
+                        <button className="dropdown-item" onClick={() => setActiveTab('dashboard')}>My Profile</button>
+                        <button className="dropdown-item">Progress Stats</button>
+                        <button className="dropdown-item" onClick={() => setActiveMenu('settings')}>Settings</button>
+                        <div style={{ height: 1, background: 'var(--color-border)', margin: '4px 0' }} />
+                        <button className="dropdown-item" style={{ color: '#ef4444' }} onClick={() => supabase.auth.signOut()}>Sign Out</button>
+                      </div>
+                    )}
+                  </>
                 )}
               </div>
             </div>
@@ -386,7 +404,49 @@ const AppContent: React.FC = () => {
         </button>
       )}
 
+      {showLoginModal && (
+        <div className="login-modal-overlay">
+          <div className="login-modal-close" onClick={() => setShowLoginModal(false)}>
+            <X size={24} />
+          </div>
+          <LoginScreen />
+        </div>
+      )}
+
       <style>{`
+        .login-modal-overlay {
+          position: fixed;
+          top: 0; left: 0; right: 0; bottom: 0;
+          background: rgba(0, 0, 0, 0.85);
+          z-index: 9999;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          backdrop-filter: blur(10px);
+        }
+        
+        .login-modal-close {
+          position: absolute;
+          top: 32px;
+          right: 32px;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.1);
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.2s;
+          z-index: 10000;
+        }
+        
+        .login-modal-close:hover {
+          background: rgba(255, 255, 255, 0.2);
+          transform: scale(1.1);
+        }
+        
         .user-controls-interactive {
           display: flex; align-items: center; gap: 12px; position: relative; z-index: 100;
         }

@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Network, Brain, Moon, Sun, ChevronDown, ChevronRight, Sparkles,
   Calculator, Atom, FlaskConical, Dna, LayoutDashboard, Calendar, BookOpen, PenTool,
-  BrainCircuit, Box, MessageSquare, UploadCloud, Map, FunctionSquare, TrendingUp
+  BrainCircuit, Box, MessageSquare, UploadCloud, Map, FunctionSquare, TrendingUp, ShieldAlert
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -13,6 +13,7 @@ interface SidebarProps {
   darkMode: boolean;
   toggleDarkMode: () => void;
   onCalculatorToggle?: () => void;
+  isAdmin?: boolean;
 }
 
 const subjects = [
@@ -22,7 +23,7 @@ const subjects = [
   { id: 'ai_hub', label: 'AI Study Hub', icon: Sparkles, color: 'var(--color-accent)' },
 ];
 
-const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeToggle, darkMode, toggleDarkMode, onCalculatorToggle }) => {
+const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeToggle, darkMode, toggleDarkMode, onCalculatorToggle, isAdmin }) => {
   const [subjectsOpen, setSubjectsOpen] = React.useState(true);
 
   const tools = [
@@ -37,6 +38,10 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
     { id: 'flashcards', label: 'Flashcards (SRS)', icon: BrainCircuit },
     { id: 'visualizer', label: '3D Visualizer', icon: Box },
   ];
+
+  if (isAdmin) {
+    tools.push({ id: 'admin', label: 'Admin Panel', icon: ShieldAlert });
+  }
 
   return (
     <aside className="sidebar">
