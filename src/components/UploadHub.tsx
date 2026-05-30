@@ -8,6 +8,11 @@ import remarkGfm from 'remark-gfm';
 import ReactMarkdown from 'react-markdown';
 import { useGamification } from '../context/GamificationContext';
 import Tesseract from 'tesseract.js';
+import * as pdfjsLib from 'pdfjs-dist';
+import mammoth from 'mammoth';
+
+// Initialize PDF.js worker
+pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
 
 const UploadHub: React.FC = () => {
   const [dragActive, setDragActive] = useState(false);
@@ -59,6 +64,40 @@ const UploadHub: React.FC = () => {
       } catch (err) {
         console.error('OCR Error:', err);
         setOcrProgress(null);
+        setBinaryWarning(true);
+        setUploadState('idle');
+        return '';
+      }
+    } else if (file.type === 'application/pdf' || file.name.toLowerCase().endsWith('.pdf')) {
+      setBinaryWarning(false);
+      setUploadState('parsing');
+      try {
+        const arrayBuffer = await file.arrayBuffer();
+        const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+        let text = '';
+        for (let i = 1; i <= pdf.numPages; i++) {
+          const page = await pdf.getPage(i);
+          const content = await page.getTextContent();
+          text += content.items.map((item: any) => item.str).join(' ') + '\n';
+        }
+        setUploadState('idle');
+        return text;
+      } catch (err) {
+        console.error('PDF Parse Error:', err);
+        setBinaryWarning(true);
+        setUploadState('idle');
+        return '';
+      }
+    } else if (file.name.toLowerCase().endsWith('.docx') || file.type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') {
+      setBinaryWarning(false);
+      setUploadState('parsing');
+      try {
+        const arrayBuffer = await file.arrayBuffer();
+        const result = await mammoth.extractRawText({ arrayBuffer });
+        setUploadState('idle');
+        return result.value;
+      } catch (err) {
+        console.error('DOCX Parse Error:', err);
         setBinaryWarning(true);
         setUploadState('idle');
         return '';
@@ -423,21 +462,21 @@ const UploadHub: React.FC = () => {
                   background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.25)',
                   color: '#f87171', fontSize: 13, textAlign: 'center', maxWidth: 420
                 }}>
-                  📄 PDFs, images and DOCX files can't be read in the browser.<br />
+                  📄 This file format is not supported yet.<br />
                   <strong>Paste your text below instead.</strong>
                 </div>
               )}
 
               <div className="supported-formats">
-                <div className="fmt"><FileText size={16} /> TXT / MD</div>
-                <div className="fmt"><MonitorPlay size={16} /> Paste Text</div>
-                <div className="fmt"><ImageIcon size={16} /> Notes</div>
+                <div className="fmt"><FileText size={16} /> TXT / MD / PDF</div>
+                <div className="fmt"><MonitorPlay size={16} /> DOCX</div>
+                <div className="fmt"><ImageIcon size={16} /> Images</div>
               </div>
 
               <input
                 ref={fileInputRef}
                 type="file"
-                accept=".txt,.md,.csv,.json,.html,.tex,.py,.js,.ts,image/*"
+                accept=".txt,.md,.csv,.json,.html,.tex,.py,.js,.ts,image/*,.pdf,.docx"
                 style={{ display: 'none' }}
                 onChange={handleFileChange}
               />
