@@ -114,18 +114,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   width: 100%; 
 }
 
+
 @media (min-width: 1600px) {
-  body {
-    display: flex;
-    justify-content: center;
-    background-color: var(--color-base-deep);
-  }
-  .app-container {
+  .app-container[data-layout="constrained"] {
     max-width: 1600px;
+    margin: 0 auto;
     box-shadow: 0 0 50px rgba(0,0,0,0.1);
-    background-color: var(--color-base);
   }
-  [data-theme="dark"] .app-container {
+  [data-theme="dark"] .app-container[data-layout="constrained"] {
     box-shadow: 0 0 50px rgba(0,0,0,0.5);
   }
 }
@@ -141,7 +137,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .page-wrapper {
-  max-width: var(--max-content-width);
+  max-width: 100%;
   margin: 0 auto;
   padding: 40px 48px;
   width: 100%;

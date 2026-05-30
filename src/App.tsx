@@ -20,7 +20,7 @@ import { AdvancedCalculator } from './components/AdvancedCalculator';
 import { GamificationProvider, useGamification } from './context/GamificationContext';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { LoginScreen } from './components/LoginScreen';
-import { signOut, auth } from './utils/firebase';
+import { supabase } from './utils/supabase';
 import { useStudyProgress } from './context/StudyProgressContext';
 import { Search, Bell, Settings, User, X, Check, Activity, Clock, Sparkles, Flame, Trophy, Calculator, Menu, ChevronDown } from 'lucide-react';
 import './index.css';
@@ -38,6 +38,12 @@ const AppContent: React.FC = () => {
   // Settings State
   const [studyGoal, setStudyGoal] = useState(25);
   const [geminiApiKey, setGeminiApiKey] = useState(() => localStorage.getItem('lumen_gemini_key') || '');
+  const [fullWidth, setFullWidth] = useState(() => localStorage.getItem('lumen_full_width') !== 'false');
+
+  useEffect(() => {
+    localStorage.setItem('lumen_full_width', String(fullWidth));
+  }, [fullWidth]);
+
   const [activeMenu, setActiveMenu] = useState<'notifications' | 'settings' | 'profile' | null>(null);
   
   const { level, xp, streak, dailyGoalProgress, dailyGoalTarget, addXP } = useGamification();
@@ -99,7 +105,7 @@ const AppContent: React.FC = () => {
     if (activeTab === 'dashboard') {
       return (
         <Dashboard
-          userName={currentUser.displayName || 'Scholar'}
+          userName={currentUser.user_metadata?.full_name || currentUser.email?.split('@')[0] || 'Scholar'}
           studyGoal={studyGoal}
           onTopicSelect={(topicId, subject) => {
             setActiveTab(subject);
@@ -167,7 +173,7 @@ const AppContent: React.FC = () => {
   };
 
   return (
-    <div className={`app-container ${isFocusMode ? 'focus-mode-active' : ''} ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
+    <div className={`app-container ${isFocusMode ? 'focus-mode-active' : ''} ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`} data-layout={fullWidth ? 'full' : 'constrained'}>
       {!isFocusMode && (
         <Sidebar
           activeTab={activeTab}
@@ -252,7 +258,7 @@ const AppContent: React.FC = () => {
                   onClick={() => setActiveMenu(activeMenu === 'profile' ? null : 'profile')}
                 >
                   <div className="profile-details">
-                    <span className="profile-name" style={{ fontWeight: 600 }}>{currentUser.displayName || currentUser.email || 'Scholar'}</span>
+                    <span className="profile-name" style={{ fontWeight: 600 }}>{currentUser.user_metadata?.full_name || currentUser.email || 'Scholar'}</span>
                     <span className="profile-level" style={{ fontSize: 11, color: 'var(--color-accent)' }}>Lvl {level} ✦ {xp} XP</span>
                   </div>
                   <ChevronDown size={14} style={{ marginLeft: 4 }} />
@@ -260,14 +266,14 @@ const AppContent: React.FC = () => {
                 {activeMenu === 'profile' && (
                   <div className="topbar-dropdown profile-dropdown">
                     <div className="dropdown-header">
-                      <h4>{currentUser.displayName || 'Scholar'}</h4>
+                      <h4>{currentUser.user_metadata?.full_name || currentUser.email?.split('@')[0] || 'Scholar'}</h4>
                       <p className="dd-subtitle">Lumen Academic</p>
                     </div>
                     <button className="dropdown-item" onClick={() => setActiveTab('dashboard')}>My Profile</button>
                     <button className="dropdown-item">Progress Stats</button>
                     <button className="dropdown-item" onClick={() => setActiveMenu('settings')}>Settings</button>
                     <div style={{ height: 1, background: 'var(--color-border)', margin: '4px 0' }} />
-                    <button className="dropdown-item" style={{ color: '#ef4444' }} onClick={() => signOut(auth)}>Sign Out</button>
+                    <button className="dropdown-item" style={{ color: '#ef4444' }} onClick={() => supabase.auth.signOut()}>Sign Out</button>
                   </div>
                 )}
               </div>
@@ -311,7 +317,18 @@ const AppContent: React.FC = () => {
                 />
               </div>
 
-              <div className="form-group">
+              <div className="form-group" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid var(--color-border)' }}>
+                <label style={{ margin: 0 }}>Full-Width Layout</label>
+                <button 
+                  className={`gold-btn ${fullWidth ? 'active' : ''}`} 
+                  onClick={() => setFullWidth(!fullWidth)}
+                  style={{ padding: '6px 12px', minWidth: 60, background: fullWidth ? 'var(--color-accent)' : 'var(--color-base-alt)', color: fullWidth ? '#000' : 'var(--color-text)' }}
+                >
+                  {fullWidth ? 'ON' : 'OFF'}
+                </button>
+              </div>
+
+              <div className="form-group" style={{ marginTop: 16 }}>
                 <label>Weekly Study Goal (Hours)</label>
                 <input 
                   type="number" 

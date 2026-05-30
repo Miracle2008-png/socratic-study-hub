@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
-import { 
-  signInWithPopup, 
-  googleProvider, 
-  auth, 
-  signInWithEmailAndPassword, 
-  createUserWithEmailAndPassword 
-} from '../utils/firebase';
-import { BrainCircuit, Mail, Lock } from 'lucide-react';
+import { supabase } from '../utils/supabase';
+import { BookOpen, GraduationCap, Mail, Lock, BrainCircuit } from 'lucide-react';
 
 export const LoginScreen: React.FC = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -15,14 +9,16 @@ export const LoginScreen: React.FC = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const handleGoogleSignIn = async () => {
-    if (!auth) {
-      setError('Firebase configuration is missing.');
-      return;
-    }
+  const handleGoogleLogin = async () => {
+    setLoading(true);
     try {
-      setLoading(true);
-      await signInWithPopup(auth, googleProvider);
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: 'google',
+        options: {
+          redirectTo: window.location.origin,
+        }
+      });
+      if (error) throw error;
     } catch (err: any) {
       setError(err.message);
       setLoading(false);
@@ -31,19 +27,29 @@ export const LoginScreen: React.FC = () => {
 
   const handleEmailAuth = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!auth) {
-      setError('Firebase configuration is missing.');
-      return;
-    }
+    setLoading(true);
+    setError('');
+
     try {
-      setLoading(true);
       if (isLogin) {
-        await signInWithEmailAndPassword(auth, email, password);
+        const { error } = await supabase.auth.signInWithPassword({
+          email,
+          password,
+        });
+        if (error) throw error;
       } else {
-        await createUserWithEmailAndPassword(auth, email, password);
+        const { error } = await supabase.auth.signUp({
+          email,
+          password,
+        });
+        if (error) throw error;
+        else {
+            alert('Signup successful! Please check your email for verification.');
+        }
       }
     } catch (err: any) {
       setError(err.message);
+    } finally {
       setLoading(false);
     }
   };
@@ -75,7 +81,7 @@ export const LoginScreen: React.FC = () => {
         )}
 
         <button 
-          onClick={handleGoogleSignIn}
+          onClick={handleGoogleLogin}
           disabled={loading}
           style={{
             width: '100%',

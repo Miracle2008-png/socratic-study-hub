@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
 import { useAuth } from './AuthContext';
-import { db, doc, getDoc, setDoc } from '../utils/firebase';
+import { supabase } from '../utils/supabase';
 
 interface GamificationState {
   xp: number;
@@ -33,15 +33,21 @@ export const GamificationProvider: React.FC<{ children: ReactNode }> = ({ childr
   const [state, setState] = useState<GamificationState>(defaultState);
   const [loaded, setLoaded] = useState(false);
 
-  // Fetch from Firestore
+  // Fetch from Supabase
   useEffect(() => {
     const fetchProgress = async () => {
-      if (!currentUser || !db) return;
+      if (!currentUser) return;
       try {
-        const userRef = doc(db, 'users', currentUser.uid);
-        const userSnap = await getDoc(userRef);
-        if (userSnap.exists()) {
-          setState(userSnap.data() as GamificationState);
+        const { data, error } = await supabase
+          .from('users')
+          .select('*')
+          .eq('id', currentUser.id)
+          .single();
+          
+        if (data && !error) {
+          // Exclude the id from the state to match GamificationState exactly
+          const { id, ...cloudState } = data;
+          setState(cloudState as GamificationState);
         }
       } catch (err) {
         console.error("Failed to load cloud save", err);
@@ -52,13 +58,14 @@ export const GamificationProvider: React.FC<{ children: ReactNode }> = ({ childr
     fetchProgress();
   }, [currentUser]);
 
-  // Save to Firestore
+  // Save to Supabase
   useEffect(() => {
-    if (loaded && currentUser && db) {
+    if (loaded && currentUser) {
       const saveProgress = async () => {
         try {
-          const userRef = doc(db, 'users', currentUser.uid);
-          await setDoc(userRef, state, { merge: true });
+          await supabase
+            .from('users')
+            .upsert({ id: currentUser.id, ...state });
         } catch (err) {
           console.error("Failed to cloud save", err);
         }
