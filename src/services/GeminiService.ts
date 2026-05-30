@@ -101,26 +101,29 @@ export class GeminiService {
   }
 
   static async generateMockExam(topic: string, isSatMode: boolean): Promise<any> {
-    let prompt = '';
-    if (isSatMode) {
-      prompt = `Generate a 5-question SAT mock exam for the topic: "${topic}". 
-      Ensure the difficulty matches real SAT questions (evidence-based reading/writing or math).
-      Return a JSON array where each object has:
-      - "question": string
-      - "options": array of exactly 4 strings
-      - "correctIndex": integer (0 to 3)
-      - "explanation": string (why the answer is correct and why the others are wrong)
-      Return ONLY the JSON array.`;
-    } else {
-      prompt = `Generate a 5-question university-level mock exam for the topic: "${topic}".
-      Return a JSON array where each object has:
-      - "question": string
-      - "options": array of exactly 4 strings
-      - "correctIndex": integer (0 to 3)
-      - "explanation": string (why the answer is correct)
-      Return ONLY the JSON array.`;
-    }
+    const prompt = `Generate a 5-question university-level mock exam for the topic: "${topic}".
+    Return a JSON array where each object has:
+    - "question": string
+    - "options": array of exactly 4 strings
+    - "correctIndex": integer (0 to 3)
+    - "explanation": string (why the answer is correct)
+    Return ONLY the JSON array.`;
     return this.generateJSON(prompt);
+  }
+
+  static async generateSatModule(domain: 'Reading & Writing' | 'Math'): Promise<any> {
+    const prompt = `Generate a 10-question full-length SAT ${domain} module. 
+    It MUST perfectly mimic the official Digital SAT Bluebook format and difficulty.
+    If Reading & Writing: Include short passages (25-150 words) for each question. Test "Information & Ideas", "Craft & Structure", "Expression of Ideas", and "Standard English Conventions".
+    If Math: Test "Heart of Algebra", "Problem Solving", "Passport to Advanced Math". Some questions should be solvable with Desmos.
+    
+    Return a JSON array where each object has:
+    - "question": string (Include the passage text here if Reading, followed by the question prompt)
+    - "options": array of exactly 4 strings
+    - "correctIndex": integer (0 to 3)
+    - "explanation": string (A very detailed SAT-style explanation)
+    Return ONLY the JSON array.`;
+    return this.generateJSON(prompt, "You are an elite SAT test constructor hired by the College Board to write official exam questions.");
   }
 
   static async predictUniversityAndCareer(profile: any): Promise<any> {

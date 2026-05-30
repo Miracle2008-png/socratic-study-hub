@@ -16,6 +16,8 @@ import AiHub from './components/AiHub';
 import { EssayGrader } from './components/EssayGrader';
 import { MockExam } from './components/MockExam';
 import { PredictorHub } from './components/PredictorHub';
+import { SatDashboard } from './components/SatDashboard';
+import { SatMockExam } from './components/SatMockExam';
 import Grapher2D from './components/Grapher2D';
 import { GlobalSearch } from './components/GlobalSearch';
 import AiTutorSidebar from './components/AiTutorSidebar';
@@ -36,6 +38,7 @@ import './gamification.css';
 const AppContent: React.FC = () => {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [activeTopic, setActiveTopic] = useState<string | null>(null);
+  const [activeSatModule, setActiveSatModule] = useState<'Reading & Writing' | 'Math' | null>(null);
   const [isFocusMode, setIsFocusMode] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
   const [isAiTutorOpen, setIsAiTutorOpen] = useState(false);
@@ -55,7 +58,7 @@ const AppContent: React.FC = () => {
   
   const { level, xp, streak, dailyGoalProgress, dailyGoalTarget, addXP } = useGamification();
   const { currentUser } = useAuth();
-  const { recordTopicOpen, recordTopicClose } = useStudyProgress();
+  const { recordTopicOpen, recordTopicClose, isSatMode } = useStudyProgress();
   const { freeInsights, isPro } = usePremium();
   
   const [showLoginModal, setShowLoginModal] = useState(false);
@@ -114,8 +117,6 @@ const AppContent: React.FC = () => {
     setIsMobileMenuOpen(false); // Close mobile menu when changing tabs
   };
 
-  };
-
   const renderContent = () => {
     const isPremiumFeature = ['upload', 'socratic', 'mindmap', 'visualizer', 'ai_hub', 'essay_grader', 'mock_exam', 'predictor_hub'].includes(activeTab);
     
@@ -140,7 +141,14 @@ const AppContent: React.FC = () => {
       );
     }
 
+    if (activeSatModule) {
+      return <SatMockExam domain={activeSatModule} onExit={() => setActiveSatModule(null)} />;
+    }
+
     if (activeTab === 'dashboard') {
+      if (isSatMode) {
+        return <SatDashboard onStartModule={(domain) => setActiveSatModule(domain)} />;
+      }
       return (
         <Dashboard
           userName={currentUser?.user_metadata?.full_name || currentUser?.email?.split('@')[0] || 'Scholar'}
@@ -221,7 +229,10 @@ const AppContent: React.FC = () => {
       {!isFocusMode && (
         <Sidebar
           activeTab={activeTab}
-          setActiveTab={handleTabChange}
+          setActiveTab={(tab) => {
+            handleTabChange(tab);
+            setActiveSatModule(null);
+          }}
           onFocusModeToggle={() => setIsFocusMode(!isFocusMode)}
           isFocusMode={isFocusMode}
           darkMode={darkMode}
