@@ -21,6 +21,7 @@ export interface StudyProgressState {
   weeklyMinutes: number;              // total minutes studied this calendar week
   weekStartDate: string;              // ISO date (Mon) of the current week
   topicsCompletedIds: string[];       // all topic IDs ever opened (unique)
+  isSatMode: boolean;                 // global SAT prep mode toggle
 }
 
 interface StudyProgressContextType extends StudyProgressState {
@@ -30,6 +31,7 @@ interface StudyProgressContextType extends StudyProgressState {
   recentActivity: TopicVisit[];
   hoursThisWeek: number;
   topicsMasteredCount: number;
+  toggleSatMode: () => void;
 }
 
 // ── Defaults ─────────────────────────────────────────────────────────────────
@@ -45,6 +47,7 @@ const DEFAULT: StudyProgressState = {
   weeklyMinutes: 0,
   weekStartDate: todayWeekStart(),
   topicsCompletedIds: [],
+  isSatMode: false,
 };
 
 const STORAGE_KEY = 'study_progress_v1';
@@ -134,6 +137,10 @@ export const StudyProgressProvider: React.FC<{ children: ReactNode }> = ({ child
     [state.topicsCompletedIds, state.topicVisits]
   );
 
+  const toggleSatMode = useCallback(() => {
+    setState(prev => ({ ...prev, isSatMode: !prev.isSatMode }));
+  }, []);
+
   const recentActivity = state.topicVisits.slice(0, 8);
   const hoursThisWeek = state.weeklyMinutes / 60;
   const topicsMasteredCount = state.topicsCompletedIds.length;
@@ -148,6 +155,7 @@ export const StudyProgressProvider: React.FC<{ children: ReactNode }> = ({ child
         recentActivity,
         hoursThisWeek,
         topicsMasteredCount,
+        toggleSatMode,
       }}
     >
       {children}

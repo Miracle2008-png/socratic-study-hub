@@ -2,8 +2,10 @@ import React from 'react';
 import {
   Network, Brain, Moon, Sun, ChevronDown, ChevronRight, Sparkles,
   Calculator, Atom, FlaskConical, Dna, LayoutDashboard, Calendar, BookOpen, PenTool,
-  BrainCircuit, Box, MessageSquare, UploadCloud, Map, FunctionSquare, TrendingUp, ShieldAlert
+  BrainCircuit, Box, MessageSquare, UploadCloud, Map, FunctionSquare, TrendingUp, ShieldAlert,
+  Target
 } from 'lucide-react';
+import { useStudyProgress } from '../context/StudyProgressContext';
 
 interface SidebarProps {
   activeTab: string;
@@ -25,6 +27,7 @@ const subjects = [
 
 const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeToggle, darkMode, toggleDarkMode, onCalculatorToggle, isAdmin }) => {
   const [subjectsOpen, setSubjectsOpen] = React.useState(true);
+  const { isSatMode, toggleSatMode } = useStudyProgress();
 
     const tools = [
       { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
@@ -33,6 +36,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
       { id: 'socratic', label: 'Socratic Solver', icon: MessageSquare },
       { id: 'mock_exam', label: 'Mock Exam', icon: Brain },
       { id: 'essay_grader', label: 'Essay Grader', icon: PenTool },
+      { id: 'predictor_hub', label: 'Future Predictor', icon: Globe },
       { id: 'mindmap', label: 'Knowledge Map', icon: Map },
       { id: 'grapher', label: '2D Grapher', icon: TrendingUp },
       { id: 'formula_blog', label: 'Formula Bank', icon: BookOpen },
@@ -59,6 +63,25 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
             <h1 className="logo">LUMEN</h1>
             <p className="logo-sub">Academic Platform</p>
           </div>
+        </button>
+      </div>
+
+      {/* Global SAT Toggle */}
+      <div style={{ padding: '0 12px 20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <button 
+          onClick={toggleSatMode}
+          className={`nav-item ${isSatMode ? 'active' : ''}`}
+          style={{ 
+            background: isSatMode ? 'linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%)' : 'var(--color-base-alt)',
+            color: isSatMode ? '#000' : 'var(--color-text-primary)',
+            justifyContent: 'center',
+            fontWeight: 800,
+            border: isSatMode ? 'none' : '1px solid var(--color-border)',
+            boxShadow: isSatMode ? '0 4px 12px rgba(212,175,55,0.3)' : 'none'
+          }}
+        >
+          <Target size={16} /> 
+          <span>{isSatMode ? "SAT MODE: ON" : "ENABLE SAT MODE"}</span>
         </button>
       </div>
 

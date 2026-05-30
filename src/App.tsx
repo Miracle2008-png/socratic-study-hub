@@ -15,6 +15,7 @@ import MindMap from './components/MindMap';
 import AiHub from './components/AiHub';
 import { EssayGrader } from './components/EssayGrader';
 import { MockExam } from './components/MockExam';
+import { PredictorHub } from './components/PredictorHub';
 import Grapher2D from './components/Grapher2D';
 import { GlobalSearch } from './components/GlobalSearch';
 import AiTutorSidebar from './components/AiTutorSidebar';
@@ -116,7 +117,7 @@ const AppContent: React.FC = () => {
   };
 
   const renderContent = () => {
-    const isPremiumFeature = ['upload', 'socratic', 'mindmap', 'visualizer', 'ai_hub', 'essay_grader', 'mock_exam'].includes(activeTab);
+    const isPremiumFeature = ['upload', 'socratic', 'mindmap', 'visualizer', 'ai_hub', 'essay_grader', 'mock_exam', 'predictor_hub'].includes(activeTab);
     
     if (isPremiumFeature && freeInsights === 0 && !isPro) {
       const featureNames: Record<string, string> = {
@@ -126,7 +127,8 @@ const AppContent: React.FC = () => {
         'visualizer': '3D Visualizer',
         'ai_hub': 'AI Study Hub',
         'essay_grader': 'Essay Grader',
-        'mock_exam': 'Mock Exam Generator'
+        'mock_exam': 'Mock Exam Generator',
+        'predictor_hub': 'Future Predictor'
       };
       
       return (
@@ -167,6 +169,7 @@ const AppContent: React.FC = () => {
     if (activeTab === 'ai_hub') return <AiHub />;
     if (activeTab === 'essay_grader') return <EssayGrader />;
     if (activeTab === 'mock_exam') return <MockExam />;
+    if (activeTab === 'predictor_hub') return <PredictorHub />;
     if (activeTab === 'grapher') return <Grapher2D />;
 
     if (activeTab === 'math') {
@@ -204,7 +207,7 @@ const AppContent: React.FC = () => {
       math: 'Mathematics', physics: 'Physics', chemistry: 'Chemistry',
       biology: 'Biology', ai_hub: 'AI Hub', grapher: '2D Grapher',
       mindmap: 'Knowledge Map', formula_blog: 'Formula Bank',
-      essay_grader: 'Essay Grader', mock_exam: 'Mock Exam',
+      essay_grader: 'Essay Grader', mock_exam: 'Mock Exam', predictor_hub: 'Predictor Hub',
       derivations: 'Derivations', socratic: 'Socratic Solver',
       planner: 'Study Planner', upload: 'AI Upload Hub',
       flashcards: 'Flashcards', visualizer: '3D Visualizer',

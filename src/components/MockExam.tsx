@@ -2,49 +2,24 @@ import React, { useState, useEffect } from 'react';
 import { Target, Clock, AlertTriangle, CheckCircle, ChevronRight, List, BrainCircuit, RefreshCw } from 'lucide-react';
 import { usePremium } from '../context/PremiumContext';
 import { useGamification } from '../context/GamificationContext';
+import { GeminiService } from '../services/GeminiService';
 
-const mockQuestions = [
-  {
-    question: 'In quantum mechanics, what does the Schrödinger equation describe?',
-    options: [
-      'The trajectory of a particle over time.',
-      'The evolution of a wave function over time.',
-      'The exact position and momentum of an electron.',
-      'The energy loss of a photon during scattering.'
-    ],
-    correctIndex: 1,
-    explanation: 'The Schrödinger equation is a linear partial differential equation that governs the wave function of a quantum-mechanical system.'
-  },
-  {
-    question: 'Which of the following is true regarding the Heisenberg Uncertainty Principle?',
-    options: [
-      'ΔxΔp ≥ ℏ/2',
-      'It only applies to macroscopic objects.',
-      'It states that measuring position exactly is impossible, but momentum can be exact.',
-      'It was disproven by Einstein.'
-    ],
-    correctIndex: 0,
-    explanation: 'The principle states that the product of the uncertainties in position and momentum must be greater than or equal to ℏ/2.'
-  },
-  {
-    question: 'What is a fermion?',
-    options: [
-      'A particle with integer spin.',
-      'A particle that mediates the strong force.',
-      'A particle with half-integer spin.',
-      'A massless particle.'
-    ],
-    correctIndex: 2,
-    explanation: 'Fermions (like electrons, protons, and neutrons) have half-integer spin and obey the Pauli exclusion principle.'
-  }
-];
+interface MockQuestion {
+  question: string;
+  options: string[];
+  correctIndex: number;
+  explanation: string;
+}
 
 export const MockExam: React.FC = () => {
   const { useInsight } = usePremium();
   const { addXP } = useGamification();
   
   const [examTopic, setExamTopic] = useState('');
-  const [examState, setExamState] = useState<'setup' | 'generating' | 'taking' | 'results'>('setup');
+  const [isSatMode, setIsSatMode] = useState(false);
+  const [examState, setExamState] = useState<'setup' | 'generating' | 'taking' | 'results' | 'error'>('setup');
+  const [errorMessage, setErrorMessage] = useState('');
+  const [questions, setQuestions] = useState<MockQuestion[]>([]);
   const [currentQIndex, setCurrentQIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [timeLeft, setTimeLeft] = useState(600); // 10 mins
@@ -59,19 +34,33 @@ export const MockExam: React.FC = () => {
     return () => clearInterval(timer);
   }, [examState, timeLeft]);
 
-  const generateExam = () => {
+  const generateExam = async () => {
     if (!examTopic.trim()) return;
+    
+    if (!GeminiService.getApiKey()) {
+      alert("Please add your Gemini API Key in the Settings panel first.");
+      return;
+    }
+
     if (!useInsight()) return;
 
     setExamState('generating');
     
-    // Simulate generation
-    setTimeout(() => {
-      setExamState('taking');
-      setTimeLeft(600);
-      setCurrentQIndex(0);
-      setAnswers({});
-    }, 2000);
+    try {
+      const generatedQuestions = await GeminiService.generateMockExam(examTopic, isSatMode);
+      if (Array.isArray(generatedQuestions) && generatedQuestions.length > 0) {
+        setQuestions(generatedQuestions);
+        setExamState('taking');
+        setTimeLeft(isSatMode ? 1200 : 600); // More time for SAT
+        setCurrentQIndex(0);
+        setAnswers({});
+      } else {
+        throw new Error("Invalid format returned by AI.");
+      }
+    } catch (err: any) {
+      setErrorMessage(err.message || 'Failed to generate exam.');
+      setExamState('error');
+    }
   };
 
   const selectAnswer = (optIndex: number) => {
@@ -79,7 +68,7 @@ export const MockExam: React.FC = () => {
   };
 
   const nextQ = () => {
-    if (currentQIndex < mockQuestions.length - 1) {
+    if (currentQIndex < questions.length - 1) {
       setCurrentQIndex(prev => prev + 1);
     } else {
       submitExam();
@@ -89,9 +78,9 @@ export const MockExam: React.FC = () => {
   const submitExam = () => {
     setExamState('results');
     const score = Object.entries(answers).reduce((acc, [qIdx, aIdx]) => {
-      return aIdx === mockQuestions[parseInt(qIdx)].correctIndex ? acc + 1 : acc;
+      return aIdx === questions[parseInt(qIdx)].correctIndex ? acc + 1 : acc;
     }, 0);
-    addXP(score * 200, 'Mock Exam Completed');
+    addXP(score * (isSatMode ? 300 : 200), 'Mock Exam Completed');
   };
 
   const formatTime = (secs: number) => {
@@ -115,9 +104,22 @@ export const MockExam: React.FC = () => {
               type="text" 
               value={examTopic}
               onChange={(e) => setExamTopic(e.target.value)}
-              placeholder="e.g. Quantum Mechanics Chapter 3"
+              placeholder={isSatMode ? "e.g. SAT Math: Heart of Algebra" : "e.g. Quantum Mechanics Chapter 3"}
               style={{ width: '100%', padding: '16px', background: 'var(--color-base)', border: '1px solid var(--color-border)', borderRadius: '12px', color: 'white', fontSize: '16px', marginBottom: '20px', outline: 'none', textAlign: 'center' }}
             />
+            
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '24px' }}>
+              <input 
+                type="checkbox" 
+                id="satMode" 
+                checked={isSatMode}
+                onChange={(e) => setIsSatMode(e.target.checked)}
+                style={{ cursor: 'pointer', width: '18px', height: '18px', accentColor: 'var(--color-accent)' }}
+              />
+              <label htmlFor="satMode" style={{ color: 'var(--color-text-secondary)', cursor: 'pointer', fontWeight: 600 }}>
+                Enable SAT Test Mode (Official Format)
+              </label>
+            </div>
             
             <button 
               className="gold-btn pulse-glow" 
@@ -139,11 +141,22 @@ export const MockExam: React.FC = () => {
         </div>
       )}
 
-      {examState === 'taking' && (
+      {examState === 'error' && (
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '60vh', gap: '20px', textAlign: 'center' }}>
+          <AlertTriangle size={48} style={{ color: '#ef4444' }} />
+          <h2 style={{ fontFamily: 'var(--font-display)', color: '#ef4444' }}>Generation Failed</h2>
+          <p style={{ color: 'var(--color-text-muted)' }}>{errorMessage}</p>
+          <button className="gold-btn" onClick={() => setExamState('setup')}>Try Again</button>
+        </div>
+      )}
+
+      {examState === 'taking' && questions.length > 0 && (
         <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '24px' }}>
           <div className="dash-glass-panel" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 24px' }}>
             <div>
-              <span style={{ fontSize: '12px', color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '1px' }}>Topic</span>
+              <span style={{ fontSize: '12px', color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                {isSatMode ? 'SAT Mode' : 'Topic'}
+              </span>
               <div style={{ fontSize: '16px', fontWeight: 600, color: 'var(--color-text-primary)' }}>{examTopic}</div>
             </div>
             
@@ -154,15 +167,15 @@ export const MockExam: React.FC = () => {
           
           <div className="dash-glass-panel">
             <div style={{ fontSize: '12px', color: 'var(--color-accent)', fontWeight: 600, marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>
-              Question {currentQIndex + 1} of {mockQuestions.length}
+              Question {currentQIndex + 1} of {questions.length}
             </div>
             
             <h3 style={{ fontSize: '20px', color: 'var(--color-text-primary)', lineHeight: 1.5, marginBottom: '24px', fontFamily: 'var(--font-primary)' }}>
-              {mockQuestions[currentQIndex].question}
+              {questions[currentQIndex]?.question}
             </h3>
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              {mockQuestions[currentQIndex].options.map((opt, i) => (
+              {questions[currentQIndex]?.options.map((opt, i) => (
                 <button
                   key={i}
                   onClick={() => selectAnswer(i)}
@@ -194,17 +207,17 @@ export const MockExam: React.FC = () => {
               disabled={answers[currentQIndex] === undefined}
               style={{ display: 'flex', alignItems: 'center', gap: '8px', opacity: answers[currentQIndex] === undefined ? 0.5 : 1 }}
             >
-              {currentQIndex === mockQuestions.length - 1 ? 'Submit Exam' : 'Next Question'} <ChevronRight size={18} />
+              {currentQIndex === questions.length - 1 ? 'Submit Exam' : 'Next Question'} <ChevronRight size={18} />
             </button>
           </div>
         </div>
       )}
 
-      {examState === 'results' && (() => {
+      {examState === 'results' && questions.length > 0 && (() => {
         const score = Object.entries(answers).reduce((acc, [qIdx, aIdx]) => {
-          return aIdx === mockQuestions[parseInt(qIdx)].correctIndex ? acc + 1 : acc;
+          return aIdx === questions[parseInt(qIdx)].correctIndex ? acc + 1 : acc;
         }, 0);
-        const pct = Math.round((score / mockQuestions.length) * 100);
+        const pct = Math.round((score / questions.length) * 100);
         
         return (
           <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '24px' }}>
@@ -215,7 +228,7 @@ export const MockExam: React.FC = () => {
               <h2 style={{ fontSize: '24px', color: 'var(--color-text-primary)', marginTop: '8px', marginBottom: '16px' }}>
                 {pct >= 80 ? 'Excellent Work!' : pct >= 60 ? 'Good Effort.' : 'Needs Review.'}
               </h2>
-              <p style={{ color: 'var(--color-text-secondary)' }}>You scored {score} out of {mockQuestions.length} on {examTopic}.</p>
+              <p style={{ color: 'var(--color-text-secondary)' }}>You scored {score} out of {questions.length} on {examTopic}.</p>
               
               <button className="dash-ghost-btn" onClick={() => setExamState('setup')} style={{ marginTop: '24px' }}>
                 Take Another Exam
@@ -225,7 +238,7 @@ export const MockExam: React.FC = () => {
             <h3 style={{ fontSize: '18px', color: 'var(--color-text-primary)', borderBottom: '1px solid var(--color-border)', paddingBottom: '12px' }}>Detailed Review</h3>
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              {mockQuestions.map((q, i) => {
+              {questions.map((q, i) => {
                 const isCorrect = answers[i] === q.correctIndex;
                 return (
                   <div key={i} className="dash-glass-panel" style={{ borderLeft: `4px solid ${isCorrect ? '#10b981' : '#ef4444'}` }}>

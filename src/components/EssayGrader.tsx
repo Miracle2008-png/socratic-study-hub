@@ -3,6 +3,7 @@ import { PenTool, Target, UploadCloud, ChevronRight, Activity, FileText, CheckCi
 import { usePremium } from '../context/PremiumContext';
 import { useGamification } from '../context/GamificationContext';
 import ReactMarkdown from 'react-markdown';
+import { GeminiService } from '../services/GeminiService';
 
 export const EssayGrader: React.FC = () => {
   const { useInsight } = usePremium();
@@ -12,38 +13,29 @@ export const EssayGrader: React.FC = () => {
   const [isGrading, setIsGrading] = useState(false);
   const [feedback, setFeedback] = useState<string | null>(null);
 
-  const handleGrade = () => {
+  const handleGrade = async () => {
     if (!essayText.trim()) return;
     
+    // Check for API key first
+    if (!GeminiService.getApiKey()) {
+      alert("Please add your Gemini API Key in the Settings panel first.");
+      return;
+    }
+
     // Deduct insight
     if (!useInsight()) return;
 
     setIsGrading(true);
     
-    // Simulate AI Grading processing
-    setTimeout(() => {
-      setIsGrading(false);
-      
-      const mockFeedback = `
-## Grade Prediction: **B+ (84%)**
-
-### 🎯 Core Argument & Thesis
-Your thesis is relatively strong, but it lacks specific actionable claims in the second paragraph. You mention "societal changes", but you should explicitly state *which* societal changes drive the conclusion.
-
-### ✍️ Structure & Flow
-- **Introduction**: Great hook! The transition to the thesis is smooth.
-- **Body Paragraphs**: Paragraph 3 feels disconnected. Consider using a transition sentence relating back to the core thesis.
-- **Conclusion**: A bit weak. Don't just summarize; leave the reader with a profound final thought.
-
-### 📚 Grammar & Vocabulary
-- Watch out for passive voice in paragraph 2 ("The decision was made by..."). Change to active voice.
-- Excellent use of academic vocabulary (*ubiquitous, ephemeral*).
-
-**Suggested Action:** Rewrite the conclusion to synthesize rather than summarize, and tighten up the passive voice.
-      `;
-      setFeedback(mockFeedback);
+    try {
+      const realFeedback = await GeminiService.gradeEssay(essayText, rubric);
+      setFeedback(realFeedback);
       addXP(500, 'Essay Evaluated');
-    }, 2500);
+    } catch (error: any) {
+      setFeedback(`## ❌ Error Grading Essay\n\n${error.message}\n\nPlease check your API key and internet connection.`);
+    } finally {
+      setIsGrading(false);
+    }
   };
 
   return (
