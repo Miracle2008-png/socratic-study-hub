@@ -8,17 +8,6 @@ import remarkGfm from 'remark-gfm';
 import ReactMarkdown from 'react-markdown';
 import { useGamification } from '../context/GamificationContext';
 
-// Simulated raw text extracted from a mock PDF or YouTube transcript
-const MOCK_EXTRACTED_TEXT = `
-Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that, through cellular respiration, can later be released to fuel the organism's activities. Some of this chemical energy is stored in carbohydrate molecules, such as sugars and starches, which are synthesized from carbon dioxide and water – hence the name photosynthesis. Most plants, algae, and cyanobacteria perform photosynthesis; such organisms are called photoautotrophs. Photosynthesis is largely responsible for producing and maintaining the oxygen content of the Earth's atmosphere, and supplies most of the energy necessary for life on Earth.
-
-Although photosynthesis is performed differently by different species, the process always begins when energy from light is absorbed by proteins called reaction centers that contain green chlorophyll pigments. In plants, these proteins are held inside organelles called chloroplasts, which are most abundant in leaf cells, while in bacteria they are embedded in the plasma membrane. In these light-dependent reactions, some energy is used to strip electrons from suitable substances, such as water, producing oxygen gas. The hydrogen freed by the splitting of water is used in the creation of two further compounds that serve as short-term stores of energy: reduced nicotinamide adenine dinucleotide phosphate (NADPH) and adenosine triphosphate (ATP).
-
-In plants, algae and cyanobacteria, sugars are synthesized by a subsequent sequence of light-independent reactions called the Calvin cycle. In the Calvin cycle, atmospheric carbon dioxide is incorporated into already existing organic carbon compounds, such as ribulose bisphosphate (RuBP). Using the ATP and NADPH produced by the light-dependent reactions, the resulting compounds are then reduced and removed to form further carbohydrates, such as glucose.
-
-When applying these biological concepts to mathematical modeling, we often use specific equations to track energy states. For instance, the general mass-energy equivalence can be expressed using Einstein's famous equation $E = mc^2$. In chemical kinetics, the rate of a reaction might be modeled similarly to Newton's second law $F = ma$ or Hooke's law $F = -kx$ for physical springs. In calculus, we can integrate the rate of photosynthesis over time: $\int_{0}^{t} R(t) dt$.
-`;
-
 const UploadHub: React.FC = () => {
   const [dragActive, setDragActive] = useState(false);
   const [uploadState, setUploadState] = useState<'idle' | 'uploading' | 'parsing' | 'analyzing' | 'done'>('idle');
@@ -27,7 +16,12 @@ const UploadHub: React.FC = () => {
   const [activeResultTab, setActiveResultTab] = useState<'summary' | 'flashcards' | 'quiz' | 'exam' | 'formulas'>('summary');
   const [quizAnswers, setQuizAnswers] = useState<Record<number, number>>({});
   const [quizRevealed, setQuizRevealed] = useState<Record<number, boolean>>({});
+  const [pastedText, setPastedText] = useState('');
+  const [fileName, setFileName] = useState('');
+  const [binaryWarning, setBinaryWarning] = useState(false);
+  const [fileText, setFileText] = useState('');
   const { addXP } = useGamification();
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleDrag = (e: React.DragEvent) => {
     e.preventDefault(); e.stopPropagation();
@@ -35,42 +29,105 @@ const UploadHub: React.FC = () => {
     else if (e.type === 'dragleave') setDragActive(false);
   };
 
-  const handleDrop = (e: React.DragEvent) => {
-    e.preventDefault(); e.stopPropagation();
-    setDragActive(false);
-    if (e.dataTransfer.files && e.dataTransfer.files[0]) processUpload();
+  const readFileAsText = (file: File): Promise<string> => {
+    return new Promise((resolve) => {
+      const textTypes = ['text/plain', 'text/markdown', 'text/csv', 'application/json', 'text/html'];
+      const isText = textTypes.includes(file.type) || /\.(txt|md|csv|json|html|tex|py|js|ts)$/i.test(file.name);
+      if (isText) {
+        const reader = new FileReader();
+        reader.onload = (e) => resolve((e.target?.result as string) || '');
+        reader.onerror = () => resolve('');
+        reader.readAsText(file);
+      } else {
+        // PDF / image / docx etc — can't parse in browser
+        setBinaryWarning(true);
+        resolve('');
+      }
+    });
   };
 
-  const processUpload = () => {
+  const handleDrop = async (e: React.DragEvent) => {
+    e.preventDefault(); e.stopPropagation();
+    setDragActive(false);
+    const file = e.dataTransfer.files?.[0];
+    if (!file) return;
+    setFileName(file.name);
+    setBinaryWarning(false);
+    const text = await readFileAsText(file);
+    setFileText(text);
+  };
+
+  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setFileName(file.name);
+    setBinaryWarning(false);
+    const text = await readFileAsText(file);
+    setFileText(text);
+  };
+
+  const processUpload = (text: string) => {
+    if (!text.trim()) return;
     setUploadState('uploading');
-    
-    // Simulate complex pipeline
-    setTimeout(() => setUploadState('parsing'), 1500);
-    
+    setTimeout(() => setUploadState('parsing'), 1200);
     setTimeout(() => {
       setUploadState('analyzing');
-      // Run the local NLP engine to prove it works
-      const summary = TextRank.summarize(MOCK_EXTRACTED_TEXT, 0.3, 3);
-      const flashcards = ContentGenerator.generateFlashcards(MOCK_EXTRACTED_TEXT);
-      const quiz = ContentGenerator.generateQuiz(MOCK_EXTRACTED_TEXT);
-      const exam = ContentGenerator.generateExamQuestions(MOCK_EXTRACTED_TEXT);
-      const formulas = ContentGenerator.extractFormulas(MOCK_EXTRACTED_TEXT);
-      
+      const summary = TextRank.summarize(text, 0.3, 5);
+      const flashcards = ContentGenerator.generateFlashcards(text);
+      const quiz = ContentGenerator.generateQuiz(text);
+      const exam = ContentGenerator.generateExamQuestions(text);
+      const formulas = ContentGenerator.extractFormulas(text);
       setResults({ summary, flashcards, quiz, exam, formulas });
-    }, 3500);
-
+    }, 3000);
     setTimeout(() => {
       setUploadState('done');
-      addXP(5000, 'Document Processed by AI');
-    }, 5000);
+      addXP(500, 'Document Processed');
+    }, 4500);
+  };
+
+  const handleAnalyze = () => {
+    const text = fileText || pastedText;
+    if (text.trim()) {
+      processUpload(text);
+    }
+  };
+
+  const handleReset = () => {
+    setUploadState('idle');
+    setResults(null);
+    setFileText('');
+    setPastedText('');
+    setFileName('');
+    setBinaryWarning(false);
+    setQuizAnswers({});
+    setQuizRevealed({});
   };
 
   if (uploadState === 'done' && results) {
     return (
       <div className="upload-results anim-fade">
         <div className="results-header luxury-card">
-          <h1>AI Analysis Complete</h1>
-          <p>We've processed your document and generated instant study materials.</p>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
+            <div>
+              <h1>AI Analysis Complete</h1>
+              <p>{fileName ? `Processed: ${fileName}` : 'Your text has been processed into study materials.'}</p>
+            </div>
+            <button
+              onClick={handleReset}
+              style={{
+                display: 'flex', alignItems: 'center', gap: 8,
+                padding: '10px 18px', borderRadius: 10,
+                border: '1px solid var(--color-border)',
+                background: 'var(--color-base-alt)',
+                color: 'var(--color-text-secondary)',
+                fontSize: 13, fontWeight: 600,
+                cursor: 'pointer', fontFamily: 'var(--font-display)',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              ← Analyze Another
+            </button>
+          </div>
           <div className="result-tabs">
             <button className={`tab-btn ${activeResultTab === 'summary' ? 'active' : ''}`} onClick={() => setActiveResultTab('summary')}>
               <List size={16} /> Summary
@@ -304,7 +361,7 @@ const UploadHub: React.FC = () => {
             onChange={e => setUrlInput(e.target.value)}
             disabled={uploadState !== 'idle'}
           />
-          <button className="url-submit" onClick={processUpload} disabled={!urlInput || uploadState !== 'idle'}>
+          <button className="url-submit" onClick={() => processUpload(urlInput)} disabled={!urlInput || uploadState !== 'idle'}>
             Analyze
           </button>
         </div>
@@ -324,21 +381,43 @@ const UploadHub: React.FC = () => {
               <div className="upload-icon-ring">
                 <UploadCloud size={32} />
               </div>
-              <h3>Drag & Drop your materials here</h3>
-              <p>Supports PDF, DOCX, PPTX, and Images (Handwritten Notes)</p>
-              
+              {fileName ? (
+                <div style={{ textAlign: 'center' }}>
+                  <p style={{ color: 'var(--color-accent)', fontWeight: 700, marginBottom: 4 }}>✓ {fileName}</p>
+                  <p style={{ fontSize: 13, color: 'var(--color-text-muted)' }}>File loaded — click Analyze below</p>
+                </div>
+              ) : (
+                <>
+                  <h3>Drag &amp; Drop your notes here</h3>
+                  <p>Supports .txt, .md, .csv, .json and plain text files</p>
+                </>
+              )}
+
+              {binaryWarning && (
+                <div style={{
+                  marginTop: 12, padding: '10px 16px', borderRadius: 10,
+                  background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.25)',
+                  color: '#f87171', fontSize: 13, textAlign: 'center', maxWidth: 420
+                }}>
+                  📄 PDFs, images and DOCX files can't be read in the browser.<br />
+                  <strong>Paste your text below instead.</strong>
+                </div>
+              )}
+
               <div className="supported-formats">
-                <div className="fmt"><FileText size={16} /> PDF/DOCX</div>
-                <div className="fmt"><MonitorPlay size={16} /> YouTube</div>
-                <div className="fmt"><ImageIcon size={16} /> Images</div>
+                <div className="fmt"><FileText size={16} /> TXT / MD</div>
+                <div className="fmt"><MonitorPlay size={16} /> Paste Text</div>
+                <div className="fmt"><ImageIcon size={16} /> Notes</div>
               </div>
 
-              <button className="browse-btn" onClick={() => {
-                const input = document.createElement('input');
-                input.type = 'file';
-                input.onchange = () => processUpload();
-                input.click();
-              }}>
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept=".txt,.md,.csv,.json,.html,.tex,.py,.js,.ts"
+                style={{ display: 'none' }}
+                onChange={handleFileChange}
+              />
+              <button className="browse-btn" onClick={() => fileInputRef.current?.click()}>
                 Browse Files
               </button>
             </div>
@@ -359,6 +438,42 @@ const UploadHub: React.FC = () => {
             </div>
           )}
         </div>
+
+        {/* Paste text area + Analyze button */}
+        {uploadState === 'idle' && (
+          <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: 12 }}>
+            <label style={{ fontSize: 13, fontWeight: 700, color: 'var(--color-text-muted)', letterSpacing: '0.5px', textTransform: 'uppercase' }}>
+              Or paste your text / notes here
+            </label>
+            <textarea
+              value={pastedText}
+              onChange={e => setPastedText(e.target.value)}
+              placeholder="Paste lecture notes, textbook paragraphs, article text, or any content you want to study..."
+              style={{
+                width: '100%', minHeight: 140, padding: '14px 16px',
+                borderRadius: 12, border: '1px solid var(--color-border)',
+                background: 'var(--color-base-alt)', color: 'var(--color-text-primary)',
+                fontSize: 14, lineHeight: 1.6, resize: 'vertical',
+                fontFamily: 'var(--font-body)', outline: 'none', boxSizing: 'border-box',
+              }}
+            />
+            <button
+              onClick={handleAnalyze}
+              disabled={!fileText && !pastedText.trim()}
+              style={{
+                alignSelf: 'flex-end', padding: '12px 32px',
+                borderRadius: 50, border: 'none',
+                background: (fileText || pastedText.trim()) ? 'var(--color-accent)' : 'var(--color-base-alt)',
+                color: (fileText || pastedText.trim()) ? 'var(--color-base-deep)' : 'var(--color-text-muted)',
+                fontSize: 15, fontWeight: 700, cursor: (fileText || pastedText.trim()) ? 'pointer' : 'not-allowed',
+                fontFamily: 'var(--font-display)', transition: 'all 0.2s',
+                display: 'flex', alignItems: 'center', gap: 8,
+              }}
+            >
+              <PlayCircle size={18} /> Analyze Content
+            </button>
+          </div>
+        )}
       </div>
 
       <style>{`

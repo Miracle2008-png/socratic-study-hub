@@ -3,6 +3,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Environment, ContactShadows, Float } from '@react-three/drei';
 import { FunctionSquare, Atom, Zap, Layers, Triangle, Wind } from 'lucide-react';
 import * as THREE from 'three';
+import { Loader2, Wand2 } from 'lucide-react';
 
 /* ─── debounce ─── */
 function useDebounce<T>(value: T, delay: number): T {
@@ -433,6 +434,35 @@ const Visualizer3D: React.FC = () => {
   const [rawV0, setRawV0] = useState('10');
   const [rawAngle, setRawAngle] = useState('45');
 
+  // AI Prompt
+  const [aiPrompt, setAiPrompt] = useState('');
+  const [isGenerating, setIsGenerating] = useState(false);
+
+  const handleAiGenerate = () => {
+    if (!aiPrompt.trim()) return;
+    setIsGenerating(true);
+    setTimeout(() => {
+      const p = aiPrompt.toLowerCase();
+      if (p.includes('methane') || p.includes('ch4')) { setMode('chemistry'); setChemSub('methane'); }
+      else if (p.includes('benzene') || p.includes('c6h6')) { setMode('chemistry'); setChemSub('benzene'); }
+      else if (p.includes('water') || p.includes('h2o')) { setMode('chemistry'); setChemSub('water'); }
+      else if (p.includes('co2') || p.includes('carbon dioxide')) { setMode('chemistry'); setChemSub('co2'); }
+      else if (p.includes('magnetic') || p.includes('magnet')) { setMode('physics'); setPhysSub('magnetic'); }
+      else if (p.includes('wave')) { setMode('physics'); setPhysSub('wave'); }
+      else if (p.includes('projectile') || p.includes('throw')) { setMode('physics'); setPhysSub('projectile'); }
+      else if (p.includes('shm') || p.includes('harmonic') || p.includes('spring')) { setMode('physics'); setPhysSub('shm'); }
+      else if (p.includes('vector') || p.includes('field')) { setMode('math'); setMathSub('vector'); }
+      else if (p.includes('conic') || p.includes('circle') || p.includes('ellipse')) { setMode('math'); setMathSub('conic'); }
+      else { 
+        setMode('math'); setMathSub('surface'); 
+        const match = p.match(/(?:graph|plot)\s+([^a-zA-Z]*[a-zA-Z].*)/);
+        if (match) setRawEq(match[1].trim());
+      }
+      setIsGenerating(false);
+      setAiPrompt('');
+    }, 800);
+  };
+
   const eq = useDebounce(rawEq, 400);
   const vecFn = useDebounce(rawVec, 500);
   const v0 = useDebounce(rawV0, 300);
@@ -459,6 +489,22 @@ const Visualizer3D: React.FC = () => {
             </button>
           ))}
         </div>
+      </div>
+
+      {/* AI Generation Bar */}
+      <div className="vis-ai-bar luxury-card">
+        <Wand2 size={16} className="text-gold-gradient" />
+        <input 
+          type="text" 
+          value={aiPrompt}
+          onChange={e => setAiPrompt(e.target.value)}
+          placeholder="Describe what you want to visualize (e.g. 'show me a methane molecule' or 'graph x*x-z*z')"
+          onKeyDown={e => { if (e.key === 'Enter') handleAiGenerate(); }}
+          disabled={isGenerating}
+        />
+        <button onClick={handleAiGenerate} disabled={!aiPrompt.trim() || isGenerating}>
+          {isGenerating ? <Loader2 size={14} className="spinner" /> : 'Generate'}
+        </button>
       </div>
 
       {/* Sub-mode chips */}
@@ -569,6 +615,13 @@ const Visualizer3D: React.FC = () => {
         .vis-tab{display:flex;align-items:center;gap:6px;padding:7px 14px;border-radius:20px;background:transparent;color:var(--color-text-secondary);font-size:13px;font-weight:600;cursor:pointer;transition:all 0.15s;border:none;}
         .vis-tab:hover{color:var(--color-text-primary);}
         .vis-tab.active{background:var(--color-surface);color:var(--color-accent);box-shadow:var(--shadow-sm);}
+        
+        .vis-ai-bar{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:12px;margin-bottom:4px;}
+        .vis-ai-bar input{flex:1;background:transparent;border:none;color:var(--color-text-primary);font-size:14px;outline:none;}
+        .vis-ai-bar button{padding:6px 16px;border-radius:20px;background:rgba(201,168,76,0.1);color:var(--color-accent);font-weight:700;font-size:13px;border:none;cursor:pointer;display:flex;align-items:center;gap:6px;}
+        .vis-ai-bar button:hover:not(:disabled){background:rgba(201,168,76,0.2);}
+        .vis-ai-bar button:disabled{opacity:0.5;cursor:not-allowed;}
+        
         .vis-sub-bar{display:flex;gap:7px;flex-wrap:wrap;}
         .vis-chip{padding:6px 13px;border-radius:20px;background:var(--color-base-alt);border:var(--border-soft);color:var(--color-text-secondary);font-size:13px;font-weight:600;cursor:pointer;transition:all 0.15s;}
         .vis-chip.small{padding:4px 10px;font-size:12px;}

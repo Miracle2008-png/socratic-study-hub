@@ -266,6 +266,11 @@ const StudyPlanner: React.FC = () => {
           grid-template-columns: 2fr 1fr;
           gap: 24px;
         }
+        @media (max-width: 900px) {
+          .planner-layout {
+            grid-template-columns: 1fr;
+          }
+        }
 
         .schedule-column {
           padding: 32px;
