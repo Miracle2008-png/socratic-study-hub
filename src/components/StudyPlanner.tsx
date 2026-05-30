@@ -3,9 +3,9 @@ import { Calendar as CalendarIcon, Clock, CheckCircle, Circle, Plus, Target, Wan
 
 const StudyPlanner: React.FC = () => {
   const [tasks, setTasks] = useState([
-    { id: 1, title: 'Complete Calculus III Problem Set', subject: 'Math', time: '2:00 PM', completed: false },
-    { id: 2, title: 'Review Thermodynamics Lecture Notes', subject: 'Physics', time: '4:30 PM', completed: true },
-    { id: 3, title: 'Draft Organic Chemistry Lab Report', subject: 'Chemistry', time: '7:00 PM', completed: false },
+    { id: 1, title: 'Upload my first document', subject: 'Getting Started', time: '2:00 PM', completed: false },
+    { id: 2, title: 'Review automatically generated summary', subject: 'Review', time: '4:30 PM', completed: true },
+    { id: 3, title: 'Create a custom study schedule', subject: 'Planning', time: '7:00 PM', completed: false },
   ]);
 
   const [isGenerating, setIsGenerating] = useState(false);
@@ -32,10 +32,10 @@ const StudyPlanner: React.FC = () => {
     setIsGenerating(true);
     setTimeout(() => {
       setTasks([
-        { id: 1, title: 'Quantum Mechanics: Chapter 1-2 Review', subject: 'Physics', time: '1:00 PM', completed: false },
-        { id: 2, title: 'Practice 10 Eigenvector Problems', subject: 'Math', time: '3:30 PM', completed: false },
-        { id: 3, title: 'Linear Algebra Flashcards', subject: 'Math', time: '6:00 PM', completed: false },
-        { id: 4, title: 'Review Weak Topic: Thermodynamics', subject: 'Physics', time: '8:00 PM', completed: false },
+        { id: 1, title: 'Review Uploaded Document Notes', subject: 'Study', time: '1:00 PM', completed: false },
+        { id: 2, title: 'Generate & Practice Flashcards', subject: 'Study', time: '3:30 PM', completed: false },
+        { id: 3, title: 'Test Knowledge in 3D Visualizer', subject: 'Practice', time: '6:00 PM', completed: false },
+        { id: 4, title: 'Summarize Key Concepts', subject: 'Review', time: '8:00 PM', completed: false },
       ]);
       setIsGenerating(false);
     }, 1500);
@@ -144,7 +144,7 @@ const StudyPlanner: React.FC = () => {
           </div>
 
           <div className="premium-glass-card upcoming-card">
-            <h4>Upcoming Exams</h4>
+            <h4>Upcoming Events</h4>
             <ul className="exam-list">
               <li>
                 <div className="exam-date">
@@ -152,7 +152,7 @@ const StudyPlanner: React.FC = () => {
                   <span className="day">12</span>
                 </div>
                 <div className="exam-info">
-                  <h5>Quantum Mechanics Midterm</h5>
+                  <h5>Midterm Exam</h5>
                   <p>Comprehensive coverage of chapters 1-4.</p>
                 </div>
               </li>
@@ -162,8 +162,8 @@ const StudyPlanner: React.FC = () => {
                   <span className="day">18</span>
                 </div>
                 <div className="exam-info">
-                  <h5>Linear Algebra Final</h5>
-                  <p>Focus on eigenvectors and spectral theorem.</p>
+                  <h5>Final Presentation</h5>
+                  <p>Present findings from uploaded documents.</p>
                 </div>
               </li>
             </ul>
@@ -263,10 +263,10 @@ const StudyPlanner: React.FC = () => {
 
         .planner-layout {
           display: grid;
-          grid-template-columns: 2fr 1fr;
+          grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
           gap: 24px;
         }
-        @media (max-width: 900px) {
+        @media (max-width: 1200px) {
           .planner-layout {
             grid-template-columns: 1fr;
           }
