@@ -380,20 +380,42 @@ export class ContentGenerator {
      const formulas: Array<{formula: string, context: string}> = [];
      const sentences = Tokenizer.getSentences(text);
      
-     // Match basic equations A = B or LaTeX blocks
-     const eqPattern = /([a-zA-Z_]\s*=\s*[a-zA-Z0-9_+\-/*^() ]+)|(\$[^$]+\$)/g;
-     
+     const mathSymbols = ['+', '-', '=', '/', '*', '^', '∫', '∑', '√', '∂', '∆', 'π', 'θ', 'α', 'β', 'γ', 'λ', 'μ', 'σ', 'ϕ', 'ω'];
+
      for (const sent of sentences) {
+        // Method 1: Search for common equation structures (e.g. y = mx + c, F = ma)
+        const eqPattern = /([A-Za-z_α-ωΑ-Ω0-9()]+[ \t]*=[ \t]*[^.\n]+)/g;
         const matches = sent.match(eqPattern);
         if (matches) {
            for (let match of matches) {
               match = match.trim();
-              if (match.length > 4 && match.length < 50 && !formulas.find(f => f.formula === match)) {
+              if (match.length >= 3 && match.length < 80 && !formulas.find(f => f.formula === match)) {
                  formulas.push({ formula: match, context: sent.slice(0, 90) + '...' });
               }
            }
         }
+        
+        // Method 2: High density of math symbols in a short sentence
+        if (sent.length > 3 && sent.length < 60) {
+           const symbolCount = mathSymbols.filter(s => sent.includes(s)).length;
+           if ((symbolCount >= 2 && sent.includes('=')) || sent.includes('∫') || sent.includes('∑')) {
+              if (!formulas.find(f => f.formula === sent.trim())) {
+                 formulas.push({ formula: sent.trim(), context: 'Extracted equation' });
+              }
+           }
+        }
      }
+     
+     // Fallback: If no formulas found but document has equations, scan raw lines
+     if (formulas.length === 0) {
+        const lines = text.split('\\n');
+        for (const line of lines) {
+           if (line.includes('=') && line.trim().length > 3 && line.trim().length < 50) {
+              formulas.push({ formula: line.trim(), context: 'Extracted from text line' });
+           }
+        }
+     }
+
      return formulas.slice(0, 15);
   }
 
