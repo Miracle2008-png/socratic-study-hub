@@ -17,13 +17,16 @@ import Grapher2D from './components/Grapher2D';
 import { GlobalSearch } from './components/GlobalSearch';
 import AiTutorSidebar from './components/AiTutorSidebar';
 import { AdvancedCalculator } from './components/AdvancedCalculator';
-import { useGamification } from './context/GamificationContext';
+import { GamificationProvider, useGamification } from './context/GamificationContext';
+import { AuthProvider, useAuth } from './context/AuthContext';
+import { LoginScreen } from './components/LoginScreen';
+import { signOut, auth } from './utils/firebase';
 import { useStudyProgress } from './context/StudyProgressContext';
-import { Search, Bell, Settings, User, X, Check, Activity, Clock, Sparkles, Flame, Trophy, Calculator, Menu } from 'lucide-react';
+import { Search, Bell, Settings, User, X, Check, Activity, Clock, Sparkles, Flame, Trophy, Calculator, Menu, ChevronDown } from 'lucide-react';
 import './index.css';
 import './gamification.css';
 
-function App() {
+const AppContent: React.FC = () => {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [activeTopic, setActiveTopic] = useState<string | null>(null);
   const [isFocusMode, setIsFocusMode] = useState(false);
@@ -33,12 +36,12 @@ function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Settings State
-  const [userName, setUserName] = useState('Scholar');
   const [studyGoal, setStudyGoal] = useState(25);
   const [geminiApiKey, setGeminiApiKey] = useState(() => localStorage.getItem('lumen_gemini_key') || '');
   const [activeMenu, setActiveMenu] = useState<'notifications' | 'settings' | 'profile' | null>(null);
   
   const { level, xp, streak, dailyGoalProgress, dailyGoalTarget, addXP } = useGamification();
+  const { currentUser } = useAuth();
   const { recordTopicOpen, recordTopicClose } = useStudyProgress();
 
   // Track how long the user has a topic open
@@ -88,11 +91,15 @@ function App() {
     setIsMobileMenuOpen(false); // Close mobile menu when changing tabs
   };
 
+  if (!currentUser) {
+    return <LoginScreen />;
+  }
+
   const renderContent = () => {
     if (activeTab === 'dashboard') {
       return (
         <Dashboard
-          userName={userName}
+          userName={currentUser.displayName || 'Scholar'}
           studyGoal={studyGoal}
           onTopicSelect={(topicId, subject) => {
             setActiveTab(subject);
@@ -239,30 +246,28 @@ function App() {
                 <Calculator size={18} />
               </button>
 
-              <button 
-                className={`icon-btn ${activeMenu === 'settings' ? 'active' : ''}`}
-                onClick={() => setActiveMenu('settings')}
-              >
-                <Settings size={18} />
-              </button>
-
               <div className="topbar-dropdown-wrap">
                 <button 
                   className={`avatar ${activeMenu === 'profile' ? 'active' : ''}`}
                   onClick={() => setActiveMenu(activeMenu === 'profile' ? null : 'profile')}
                 >
-                  <User size={18} />
+                  <div className="profile-details">
+                    <span className="profile-name" style={{ fontWeight: 600 }}>{currentUser.displayName || currentUser.email || 'Scholar'}</span>
+                    <span className="profile-level" style={{ fontSize: 11, color: 'var(--color-accent)' }}>Lvl {level} ✦ {xp} XP</span>
+                  </div>
+                  <ChevronDown size={14} style={{ marginLeft: 4 }} />
                 </button>
                 {activeMenu === 'profile' && (
                   <div className="topbar-dropdown profile-dropdown">
                     <div className="dropdown-header">
-                      <h4>{userName}</h4>
+                      <h4>{currentUser.displayName || 'Scholar'}</h4>
                       <p className="dd-subtitle">Lumen Academic</p>
                     </div>
-                    <button className="dropdown-item-link" onClick={() => setActiveTab('dashboard')}>View Dashboard</button>
-                    <button className="dropdown-item-link">Achievements</button>
-                    <div className="dropdown-divider" />
-                    <button className="dropdown-item-link danger">Sign Out</button>
+                    <button className="dropdown-item" onClick={() => setActiveTab('dashboard')}>My Profile</button>
+                    <button className="dropdown-item">Progress Stats</button>
+                    <button className="dropdown-item" onClick={() => setActiveMenu('settings')}>Settings</button>
+                    <div style={{ height: 1, background: 'var(--color-border)', margin: '4px 0' }} />
+                    <button className="dropdown-item" style={{ color: '#ef4444' }} onClick={() => signOut(auth)}>Sign Out</button>
                   </div>
                 )}
               </div>
@@ -296,12 +301,13 @@ function App() {
             
             <div className="modal-body">
               <div className="form-group">
-                <label>Display Name</label>
+                <label>Account Email</label>
                 <input 
                   type="text" 
-                  value={userName} 
-                  onChange={(e) => setUserName(e.target.value)}
+                  value={currentUser.email || ''} 
+                  disabled
                   className="settings-input"
+                  style={{ opacity: 0.7 }}
                 />
               </div>
 
@@ -391,20 +397,15 @@ function App() {
         .dropdown-item {
           display: flex; align-items: flex-start; gap: 12px;
           padding: 12px 16px; border-bottom: var(--border-soft);
-          background: transparent;
+          background: transparent; width: 100%; border: none; text-align: left;
         }
         .dropdown-item:last-child { border-bottom: none; }
         .dd-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
         .dd-title { font-size: 13px; font-weight: 600; color: var(--color-text-primary); font-family: var(--font-display); }
         .dd-desc { font-size: 11.5px; color: var(--color-text-secondary); margin-top: 2px; line-height: 1.4; }
-        .dropdown-item-link {
-          width: 100%; text-align: left; padding: 12px 16px;
-          font-size: 13px; color: var(--color-text-secondary); font-family: var(--font-primary);
-          background: none; border: none; cursor: pointer; transition: background 0.1s;
-        }
-        .dropdown-item-link:hover { background: var(--color-base-alt); color: var(--color-text-primary); }
-        .dropdown-item-link.danger { color: #ef4444; }
-        .dropdown-item-link.danger:hover { background: rgba(239,68,68,0.05); }
+        .dropdown-item:hover { background: var(--color-base-alt); color: var(--color-text-primary); }
+        .dropdown-item.danger { color: #ef4444; }
+        .dropdown-item.danger:hover { background: rgba(239,68,68,0.05); }
         .dropdown-divider { height: 1px; background: var(--color-border); }
         .modal-overlay {
           position: fixed; inset: 0; background: rgba(0,0,0,0.4); backdrop-filter: blur(4px);
@@ -458,6 +459,16 @@ function App() {
       `}</style>
     </div>
   );
-}
+};
+
+const App: React.FC = () => {
+  return (
+    <AuthProvider>
+      <GamificationProvider>
+        <AppContent />
+      </GamificationProvider>
+    </AuthProvider>
+  );
+};
 
 export default App;

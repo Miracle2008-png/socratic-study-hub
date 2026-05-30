@@ -1,4 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
+import { useAuth } from './AuthContext';
+import { db, doc, getDoc, setDoc } from '../utils/firebase';
 
 interface GamificationState {
   xp: number;
@@ -27,14 +29,43 @@ const defaultState: GamificationState = {
 const GamificationContext = createContext<GamificationContextType | undefined>(undefined);
 
 export const GamificationProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [state, setState] = useState<GamificationState>(() => {
-    const saved = localStorage.getItem('study_gamification_v2');
-    return saved ? JSON.parse(saved) : defaultState;
-  });
+  const { currentUser } = useAuth();
+  const [state, setState] = useState<GamificationState>(defaultState);
+  const [loaded, setLoaded] = useState(false);
 
+  // Fetch from Firestore
   useEffect(() => {
-    localStorage.setItem('study_gamification_v2', JSON.stringify(state));
-  }, [state]);
+    const fetchProgress = async () => {
+      if (!currentUser || !db) return;
+      try {
+        const userRef = doc(db, 'users', currentUser.uid);
+        const userSnap = await getDoc(userRef);
+        if (userSnap.exists()) {
+          setState(userSnap.data() as GamificationState);
+        }
+      } catch (err) {
+        console.error("Failed to load cloud save", err);
+      } finally {
+        setLoaded(true);
+      }
+    };
+    fetchProgress();
+  }, [currentUser]);
+
+  // Save to Firestore
+  useEffect(() => {
+    if (loaded && currentUser && db) {
+      const saveProgress = async () => {
+        try {
+          const userRef = doc(db, 'users', currentUser.uid);
+          await setDoc(userRef, state, { merge: true });
+        } catch (err) {
+          console.error("Failed to cloud save", err);
+        }
+      };
+      saveProgress();
+    }
+  }, [state, loaded, currentUser]);
 
   const checkStreak = () => {
     const today = new Date().toISOString().split('T')[0];

@@ -183,26 +183,22 @@ const UploadHub: React.FC = () => {
     
     setTimeout(() => setUploadState('parsing'), 800);
     
-    const apiKey = localStorage.getItem('lumen_gemini_key');
+    const overrideApiKey = localStorage.getItem('lumen_gemini_key') || undefined;
     
-    if (apiKey) {
-      setTimeout(async () => {
-        setUploadState('analyzing');
-        try {
-          const premiumResults = await LLMService.processDocument(text, apiKey);
-          setResults(premiumResults);
-          setUploadState('done');
-          addXP(1000, 'Premium AI Document Processed');
-        } catch (err: any) {
-          console.error("Premium AI Error:", err);
-          setErrorMessage(`Premium AI Failed: ${err.message}. Falling back to local engine...`);
-          // Fallback to local engine
-          runLocalEngine(text);
-        }
-      }, 1600);
-    } else {
-      setTimeout(() => runLocalEngine(text), 1600);
-    }
+    setTimeout(async () => {
+      setUploadState('analyzing');
+      try {
+        const premiumResults = await LLMService.processDocument(text, overrideApiKey);
+        setResults(premiumResults);
+        setUploadState('done');
+        addXP(1000, 'Premium AI Document Processed');
+      } catch (err: any) {
+        console.error("Premium AI Error:", err);
+        setErrorMessage(`Backend AI Failed: ${err.message}. Falling back to local engine...`);
+        // Fallback to local engine
+        runLocalEngine(text);
+      }
+    }, 1600);
   };
 
   const runLocalEngine = (text: string) => {
@@ -247,11 +243,9 @@ const UploadHub: React.FC = () => {
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                 <h1>AI Analysis Complete</h1>
-                {localStorage.getItem('lumen_gemini_key') && (
-                  <span style={{ background: 'var(--color-accent)', color: 'var(--color-base)', padding: '2px 8px', borderRadius: 6, fontSize: 11, fontWeight: 700, letterSpacing: 0.5 }}>
-                    ✨ PREMIUM AI
-                  </span>
-                )}
+                <span style={{ background: 'var(--color-accent)', color: 'var(--color-base)', padding: '2px 8px', borderRadius: 6, fontSize: 11, fontWeight: 700, letterSpacing: 0.5 }}>
+                  ✨ PREMIUM AI
+                </span>
               </div>
               <p>{fileName ? `Processed: ${fileName}` : 'Your text has been processed into study materials.'}</p>
             </div>
