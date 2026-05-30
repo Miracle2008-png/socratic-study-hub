@@ -39,14 +39,14 @@ export const LoginScreen: React.FC = () => {
 
   return (
     <div className="login-container" style={{
-      minHeight: '100vh',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
       padding: '20px',
-      background: 'var(--color-bg)'
+      width: '100%',
+      maxWidth: '400px'
     }}>
-      <div className="luxury-card" style={{ maxWidth: 400, width: '100%', padding: '40px' }}>
+      <div className="luxury-card" style={{ width: '100%', padding: '40px', position: 'relative', zIndex: 100 }}>
         <div style={{ textAlign: 'center', marginBottom: 30 }}>
           <div style={{ display: 'inline-flex', padding: 12, background: 'var(--color-base-alt)', borderRadius: '50%', marginBottom: 16 }}>
             <BrainCircuit size={32} color="var(--color-accent)" />
@@ -146,6 +146,14 @@ export const LoginScreen: React.FC = () => {
             {isLogin ? 'Sign up' : 'Log in'}
           </button>
         </p>
+
+        <button 
+          type="button"
+          onClick={() => mockLogin('miraclechimdindu2008@gmail.com')}
+          style={{ width: '100%', padding: '12px', marginTop: '16px', background: 'transparent', border: '1px dashed var(--color-border)', borderRadius: '8px', color: 'var(--color-text-secondary)', cursor: 'pointer', fontSize: '13px' }}
+        >
+          [Admin Bypass] Force Login
+        </button>
       </div>
     </div>
   );
