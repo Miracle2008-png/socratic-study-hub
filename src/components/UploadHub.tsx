@@ -7,6 +7,7 @@ import rehypeKatex from 'rehype-katex';
 import remarkGfm from 'remark-gfm';
 import ReactMarkdown from 'react-markdown';
 import { useGamification } from '../context/GamificationContext';
+import Tesseract from 'tesseract.js';
 
 const UploadHub: React.FC = () => {
   const [dragActive, setDragActive] = useState(false);
@@ -20,6 +21,7 @@ const UploadHub: React.FC = () => {
   const [fileName, setFileName] = useState('');
   const [binaryWarning, setBinaryWarning] = useState(false);
   const [fileText, setFileText] = useState('');
+  const [ocrProgress, setOcrProgress] = useState<{status: string, progress: number} | null>(null);
   const { addXP } = useGamification();
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -29,21 +31,42 @@ const UploadHub: React.FC = () => {
     else if (e.type === 'dragleave') setDragActive(false);
   };
 
-  const readFileAsText = (file: File): Promise<string> => {
-    return new Promise((resolve) => {
-      const textTypes = ['text/plain', 'text/markdown', 'text/csv', 'application/json', 'text/html'];
-      const isText = textTypes.includes(file.type) || /\.(txt|md|csv|json|html|tex|py|js|ts)$/i.test(file.name);
-      if (isText) {
+  const readFileAsText = async (file: File): Promise<string> => {
+    const textTypes = ['text/plain', 'text/markdown', 'text/csv', 'application/json', 'text/html'];
+    const isText = textTypes.includes(file.type) || /\.(txt|md|csv|json|html|tex|py|js|ts)$/i.test(file.name);
+    
+    if (isText) {
+      return new Promise((resolve) => {
         const reader = new FileReader();
         reader.onload = (e) => resolve((e.target?.result as string) || '');
         reader.onerror = () => resolve('');
         reader.readAsText(file);
-      } else {
-        // PDF / image / docx etc — can't parse in browser
+      });
+    } else if (file.type.startsWith('image/')) {
+      setBinaryWarning(false);
+      setUploadState('parsing');
+      try {
+        const result = await Tesseract.recognize(file, 'eng', {
+          logger: m => {
+            if (m.status === 'recognizing text') {
+              setOcrProgress({ status: m.status, progress: m.progress });
+            }
+          }
+        });
+        setOcrProgress(null);
+        setUploadState('idle');
+        return result.data.text;
+      } catch (err) {
+        console.error('OCR Error:', err);
+        setOcrProgress(null);
         setBinaryWarning(true);
-        resolve('');
+        setUploadState('idle');
+        return '';
       }
-    });
+    } else {
+      setBinaryWarning(true);
+      return '';
+    }
   };
 
   const handleDrop = async (e: React.DragEvent) => {
@@ -99,6 +122,7 @@ const UploadHub: React.FC = () => {
     setPastedText('');
     setFileName('');
     setBinaryWarning(false);
+    setOcrProgress(null);
     setQuizAnswers({});
     setQuizRevealed({});
   };
@@ -413,7 +437,7 @@ const UploadHub: React.FC = () => {
               <input
                 ref={fileInputRef}
                 type="file"
-                accept=".txt,.md,.csv,.json,.html,.tex,.py,.js,.ts"
+                accept=".txt,.md,.csv,.json,.html,.tex,.py,.js,.ts,image/*"
                 style={{ display: 'none' }}
                 onChange={handleFileChange}
               />
@@ -427,13 +451,14 @@ const UploadHub: React.FC = () => {
                 <Loader2 size={40} className="spinner" />
               </div>
               <h3 className="pulse-text">
-                {uploadState === 'uploading' && 'Uploading document...'}
-                {uploadState === 'parsing' && 'Extracting text and equations...'}
-                {uploadState === 'analyzing' && 'AI generating flashcards & summaries...'}
+                {ocrProgress ? `OCR Extracting Text... ${Math.round(ocrProgress.progress * 100)}%` : 
+                 uploadState === 'uploading' ? 'Uploading document...' :
+                 uploadState === 'parsing' ? 'Extracting text and equations...' :
+                 uploadState === 'analyzing' ? 'AI generating flashcards & summaries...' : ''}
               </h3>
               
               <div className="progress-container">
-                <div className={`progress-bar ${uploadState}`}></div>
+                <div className={`progress-bar ${uploadState}`} style={ocrProgress ? { width: `${ocrProgress.progress * 100}%` } : {}}></div>
               </div>
             </div>
           )}
