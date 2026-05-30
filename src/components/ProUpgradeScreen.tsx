@@ -3,10 +3,11 @@ import { Sparkles, Check, Zap, Brain, Shield, ChevronRight } from 'lucide-react'
 
 interface ProUpgradeScreenProps {
   featureName: string;
+  isGuest?: boolean;
   onUpgradeClick: () => void;
 }
 
-export const ProUpgradeScreen: React.FC<ProUpgradeScreenProps> = ({ featureName, onUpgradeClick }) => {
+export const ProUpgradeScreen: React.FC<ProUpgradeScreenProps> = ({ featureName, isGuest, onUpgradeClick }) => {
   return (
     <div className="pro-upgrade-container fade-in">
       <div className="pro-upgrade-content">
@@ -52,11 +53,22 @@ export const ProUpgradeScreen: React.FC<ProUpgradeScreenProps> = ({ featureName,
               <span>Priority Elite Support</span>
             </div>
           </div>
-          
-          <button className="pro-upgrade-btn pulse-glow" onClick={onUpgradeClick}>
-            Unlock Lifetime Access
-            <ChevronRight size={18} />
-          </button>
+          {!isGuest ? (
+            <button className="pro-upgrade-btn pulse-glow" onClick={onUpgradeClick}>
+              Unlock Lifetime Access
+              <ChevronRight size={18} />
+            </button>
+          ) : (
+            <div style={{ textAlign: 'center' }}>
+              <button className="pro-upgrade-btn pulse-glow" onClick={onUpgradeClick} style={{ background: 'var(--color-surface)', color: 'var(--color-accent)', border: '1px solid var(--color-accent)' }}>
+                Create Free Account for 10 Insights
+                <ChevronRight size={18} />
+              </button>
+              <p style={{ fontSize: '13px', color: 'var(--color-text-muted)', marginTop: '12px' }}>
+                You have used your 3 guest insights. Sign up to get 10 more for free!
+              </p>
+            </div>
+          )}
         </div>
       </div>
 

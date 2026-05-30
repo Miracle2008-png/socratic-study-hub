@@ -82,15 +82,15 @@ const MindMap: React.FC<MindMapProps> = ({ onTopicSelect }) => {
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   const { addXP } = useGamification();
-  const { useCredit } = usePremium();
+  const { useInsight } = usePremium();
 
   const onConnect = useCallback(
     (params: Connection | Edge) => {
-      if (!useCredit()) return;
+      if (!useInsight()) return;
       setEdges((eds) => addEdge({ ...params, ...defaultEdgeOptions }, eds));
       addXP(1500, 'Created Knowledge Link');
     },
-    [setEdges, addXP, useCredit],
+    [setEdges, addXP, useInsight],
   );
 
   const onNodeClick = useCallback((_: React.MouseEvent, node: any) => {

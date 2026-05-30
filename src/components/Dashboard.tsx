@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import { useGamification } from '../context/GamificationContext';
 import { useStudyProgress } from '../context/StudyProgressContext';
+import { GPACalculatorWidget } from './GPACalculatorWidget';
 
 const subjectColors: Record<string, string> = {
   physics: '#0ea5e9', math: '#8b5cf6', chemistry: '#10b981', biology: '#ec4899',
@@ -313,32 +314,38 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
         </div>
       </div>
 
-      {/* ── Weekly Progress Bar ─────────────────── */}
-      <div className="dash-glass-panel">
-        <div className="panel-header">
-          <div className="panel-title-row">
-            <Calendar size={16} style={{ color: 'var(--color-accent)' }} />
-            <h3 className="panel-title">Weekly Study Goal</h3>
+      {/* ── Bottom Grid (Weekly & GPA) ─────────────────────────── */}
+      <div className="dash-main-grid">
+        {/* Weekly Progress Bar */}
+        <div className="dash-glass-panel" style={{ display: 'flex', flexDirection: 'column' }}>
+          <div className="panel-header">
+            <div className="panel-title-row">
+              <Calendar size={16} style={{ color: 'var(--color-accent)' }} />
+              <h3 className="panel-title">Weekly Study Goal</h3>
+            </div>
+            <span className="panel-link">{studyGoal}h target</span>
           </div>
-          <span className="panel-link">{studyGoal}h target</span>
+          <div className="weekly-progress-wrap" style={{ flex: 1, justifyContent: 'center' }}>
+            <div className="weekly-bar-track">
+              <div
+                className="weekly-bar-fill"
+                style={{ width: `${weeklyGoalPct}%` }}
+              />
+            </div>
+            <div className="weekly-stats">
+              <span className="weekly-done">
+                {hoursThisWeek < 1 ? `${Math.round(hoursThisWeek * 60)} min` : `${hoursThisWeek.toFixed(1)} hr`} studied
+              </span>
+              <span className="weekly-pct">{weeklyGoalPct}% of {studyGoal}h goal</span>
+            </div>
+            {weeklyGoalPct === 0 && (
+              <p className="weekly-nudge">📚 Study a topic to start tracking your weekly progress!</p>
+            )}
+          </div>
         </div>
-        <div className="weekly-progress-wrap">
-          <div className="weekly-bar-track">
-            <div
-              className="weekly-bar-fill"
-              style={{ width: `${weeklyGoalPct}%` }}
-            />
-          </div>
-          <div className="weekly-stats">
-            <span className="weekly-done">
-              {hoursThisWeek < 1 ? `${Math.round(hoursThisWeek * 60)} min` : `${hoursThisWeek.toFixed(1)} hr`} studied
-            </span>
-            <span className="weekly-pct">{weeklyGoalPct}% of {studyGoal}h goal</span>
-          </div>
-          {weeklyGoalPct === 0 && (
-            <p className="weekly-nudge">📚 Study a topic to start tracking your weekly progress!</p>
-          )}
-        </div>
+
+        {/* GPA Calculator Widget */}
+        <GPACalculatorWidget />
       </div>
 
       <style>{`

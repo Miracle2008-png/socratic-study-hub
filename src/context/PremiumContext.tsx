@@ -2,42 +2,44 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useAuth } from './AuthContext';
 
 interface PremiumContextType {
-  freeCredits: number;
+  freeInsights: number;
   isPro: boolean;
-  useCredit: () => boolean; // Returns true if a credit was successfully used, false if out of credits
+  useInsight: () => boolean; // Returns true if an Insight was successfully used, false if out of Insights
 }
 
 const PremiumContext = createContext<PremiumContextType | undefined>(undefined);
 
-const MAX_FREE_CREDITS = 3;
-
 export const PremiumProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { currentUser } = useAuth();
-  const [freeCredits, setFreeCredits] = useState<number>(MAX_FREE_CREDITS);
+  const [freeInsights, setFreeInsights] = useState<number>(3);
   const [showToast, setShowToast] = useState(false);
 
   // For this MVP, users with specific emails are admins (and thus Pro). 
-  // Normally this would be checked against a Supabase table like 'user_subscriptions'.
   const isPro = currentUser?.email === 'miraclechimdindu2008@gmail.com' || currentUser?.email === 'miraclechimdindu2025@gmail.com';
 
   useEffect(() => {
-    // Load credits from local storage
-    const savedCredits = localStorage.getItem('lumen_free_credits');
-    if (savedCredits !== null) {
-      setFreeCredits(parseInt(savedCredits, 10));
-    } else {
-      setFreeCredits(MAX_FREE_CREDITS);
-      localStorage.setItem('lumen_free_credits', MAX_FREE_CREDITS.toString());
-    }
-  }, []);
-
-  const useCredit = () => {
-    if (isPro) return true; // Pro users never use up credits
+    // Determine which storage key to use based on authentication status
+    const storageKey = currentUser ? 'lumen_user_insights' : 'lumen_guest_insights';
+    const maxInsights = currentUser ? 10 : 3;
     
-    if (freeCredits > 0) {
-      const newCredits = freeCredits - 1;
-      setFreeCredits(newCredits);
-      localStorage.setItem('lumen_free_credits', newCredits.toString());
+    const savedInsights = localStorage.getItem(storageKey);
+    if (savedInsights !== null) {
+      setFreeInsights(parseInt(savedInsights, 10));
+    } else {
+      setFreeInsights(maxInsights);
+      localStorage.setItem(storageKey, maxInsights.toString());
+    }
+  }, [currentUser]);
+
+  const useInsight = () => {
+    if (isPro) return true; // Pro users never use up Insights
+    
+    if (freeInsights > 0) {
+      const newInsights = freeInsights - 1;
+      setFreeInsights(newInsights);
+      
+      const storageKey = currentUser ? 'lumen_user_insights' : 'lumen_guest_insights';
+      localStorage.setItem(storageKey, newInsights.toString());
       
       // Show toast
       setShowToast(true);
@@ -45,15 +47,15 @@ export const PremiumProvider: React.FC<{ children: React.ReactNode }> = ({ child
       
       return true;
     }
-    return false; // Out of credits
+    return false; // Out of Insights
   };
 
   return (
-    <PremiumContext.Provider value={{ freeCredits, isPro, useCredit }}>
+    <PremiumContext.Provider value={{ freeInsights, isPro, useInsight }}>
       {children}
-      {showToast && !isPro && freeCredits > 0 && (
+      {showToast && !isPro && freeInsights > 0 && (
         <div className="premium-toast fade-in">
-          <span>{freeCredits} Free Premium Use{freeCredits !== 1 ? 's' : ''} Remaining</span>
+          <span>{freeInsights} Free Insight{freeInsights !== 1 ? 's' : ''} Remaining</span>
         </div>
       )}
       <style>{`

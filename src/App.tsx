@@ -13,6 +13,8 @@ import SocraticSolver from './components/SocraticSolver';
 import UploadHub from './components/UploadHub';
 import MindMap from './components/MindMap';
 import AiHub from './components/AiHub';
+import { EssayGrader } from './components/EssayGrader';
+import { MockExam } from './components/MockExam';
 import Grapher2D from './components/Grapher2D';
 import { GlobalSearch } from './components/GlobalSearch';
 import AiTutorSidebar from './components/AiTutorSidebar';
@@ -53,7 +55,7 @@ const AppContent: React.FC = () => {
   const { level, xp, streak, dailyGoalProgress, dailyGoalTarget, addXP } = useGamification();
   const { currentUser } = useAuth();
   const { recordTopicOpen, recordTopicClose } = useStudyProgress();
-  const { freeCredits, isPro } = usePremium();
+  const { freeInsights, isPro } = usePremium();
   
   const [showLoginModal, setShowLoginModal] = useState(false);
   const isAdmin = currentUser?.email === 'miraclechimdindu2008@gmail.com' || currentUser?.email === 'miraclechimdindu2025@gmail.com';
@@ -114,20 +116,23 @@ const AppContent: React.FC = () => {
   };
 
   const renderContent = () => {
-    const isPremiumFeature = ['upload', 'socratic', 'mindmap', 'visualizer', 'ai_hub'].includes(activeTab);
+    const isPremiumFeature = ['upload', 'socratic', 'mindmap', 'visualizer', 'ai_hub', 'essay_grader', 'mock_exam'].includes(activeTab);
     
-    if (isPremiumFeature && freeCredits === 0 && !isPro) {
+    if (isPremiumFeature && freeInsights === 0 && !isPro) {
       const featureNames: Record<string, string> = {
         'upload': 'Upload Hub',
         'socratic': 'Socratic Solver',
         'mindmap': 'AI Knowledge Map',
         'visualizer': '3D Visualizer',
-        'ai_hub': 'AI Study Hub'
+        'ai_hub': 'AI Study Hub',
+        'essay_grader': 'Essay Grader',
+        'mock_exam': 'Mock Exam Generator'
       };
       
       return (
         <ProUpgradeScreen 
           featureName={featureNames[activeTab] || 'Premium Feature'}
+          isGuest={!currentUser}
           onUpgradeClick={() => setShowLoginModal(true)} 
         />
       );
@@ -160,6 +165,8 @@ const AppContent: React.FC = () => {
     if (activeTab === 'flashcards') return <SpacedRepetition />;
     if (activeTab === 'visualizer') return <Visualizer3D />;
     if (activeTab === 'ai_hub') return <AiHub />;
+    if (activeTab === 'essay_grader') return <EssayGrader />;
+    if (activeTab === 'mock_exam') return <MockExam />;
     if (activeTab === 'grapher') return <Grapher2D />;
 
     if (activeTab === 'math') {
@@ -197,9 +204,11 @@ const AppContent: React.FC = () => {
       math: 'Mathematics', physics: 'Physics', chemistry: 'Chemistry',
       biology: 'Biology', ai_hub: 'AI Hub', grapher: '2D Grapher',
       mindmap: 'Knowledge Map', formula_blog: 'Formula Bank',
-      derivations: 'Derivations', flashcards: 'Flashcards',
-      visualizer: '3D Visualizer', planner: 'Study Planner',
-      socratic: 'Socratic Solver', upload: 'AI Upload Hub',
+      essay_grader: 'Essay Grader', mock_exam: 'Mock Exam',
+      derivations: 'Derivations', socratic: 'Socratic Solver',
+      planner: 'Study Planner', upload: 'AI Upload Hub',
+      flashcards: 'Flashcards', visualizer: '3D Visualizer',
+      dashboard: 'Dashboard', admin: 'Admin Panel'
     };
     return map[id] || id;
   };

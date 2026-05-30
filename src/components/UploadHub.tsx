@@ -19,7 +19,7 @@ import { usePremium } from '../context/PremiumContext';
 pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.js`;
 
 const UploadHub: React.FC = () => {
-  const { useCredit } = usePremium();
+  const { useInsight } = usePremium();
   const [dragActive, setDragActive] = useState(false);
   const [uploadState, setUploadState] = useState<'idle' | 'uploading' | 'parsing' | 'analyzing' | 'done'>('idle');
   const [urlInput, setUrlInput] = useState('');
@@ -182,7 +182,7 @@ const UploadHub: React.FC = () => {
   const processUpload = async (text: string) => {
     if (!text.trim()) return;
 
-    if (!useCredit()) return;
+    if (!useInsight()) return;
 
     setUploadState('uploading');
     

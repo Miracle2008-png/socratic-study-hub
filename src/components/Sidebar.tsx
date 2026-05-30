@@ -26,18 +26,20 @@ const subjects = [
 const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeToggle, darkMode, toggleDarkMode, onCalculatorToggle, isAdmin }) => {
   const [subjectsOpen, setSubjectsOpen] = React.useState(true);
 
-  const tools = [
-    { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { id: 'upload', label: 'AI Upload Hub', icon: UploadCloud },
-    { id: 'planner', label: 'Study Planner', icon: Calendar },
-    { id: 'socratic', label: 'Socratic Solver', icon: MessageSquare },
-    { id: 'mindmap', label: 'Knowledge Map', icon: Map },
-    { id: 'grapher', label: '2D Grapher', icon: TrendingUp },
-    { id: 'formula_blog', label: 'Formula Bank', icon: BookOpen },
-    { id: 'derivations', label: 'Derivations', icon: FunctionSquare },
-    { id: 'flashcards', label: 'Flashcards (SRS)', icon: BrainCircuit },
-    { id: 'visualizer', label: '3D Visualizer', icon: Box },
-  ];
+    const tools = [
+      { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
+      { id: 'upload', label: 'AI Upload Hub', icon: UploadCloud },
+      { id: 'planner', label: 'Study Planner', icon: Calendar },
+      { id: 'socratic', label: 'Socratic Solver', icon: MessageSquare },
+      { id: 'mock_exam', label: 'Mock Exam', icon: Brain },
+      { id: 'essay_grader', label: 'Essay Grader', icon: PenTool },
+      { id: 'mindmap', label: 'Knowledge Map', icon: Map },
+      { id: 'grapher', label: '2D Grapher', icon: TrendingUp },
+      { id: 'formula_blog', label: 'Formula Bank', icon: BookOpen },
+      { id: 'derivations', label: 'Derivations', icon: FunctionSquare },
+      { id: 'flashcards', label: 'Flashcards (SRS)', icon: BrainCircuit },
+      { id: 'visualizer', label: '3D Visualizer', icon: Box },
+    ];
 
   if (isAdmin) {
     tools.push({ id: 'admin', label: 'Admin Panel', icon: ShieldAlert });

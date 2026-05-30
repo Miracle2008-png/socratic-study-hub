@@ -95,12 +95,13 @@ interface ChatMessage {
 }
 
 const SocraticSolver: React.FC = () => {
-  const { useCredit } = usePremium();
+  const { useInsight } = usePremium();
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState('');
   const [currentStep, setCurrentStep] = useState(0);
   const [hintIndex, setHintIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(false);
+  const [complexity, setComplexity] = useState(3);
   const [showScanner, setShowScanner] = useState(false);
   const [scannedSteps, setScannedSteps] = useState<string[] | null>(null);
   const [wbMode, setWbMode] = useState<'view' | 'draw' | 'equation'>('view');
@@ -231,7 +232,7 @@ const SocraticSolver: React.FC = () => {
     e.preventDefault();
     if (!input.trim()) return;
 
-    if (!useCredit()) return;
+    if (!useInsight()) return;
 
     const newMsg: ChatMessage = {
       id: `msg-stu-${Date.now()}`,
@@ -418,9 +419,32 @@ const SocraticSolver: React.FC = () => {
 
         {/* Right Panel: Socratic AI Chat */}
         <div className="sm-chat luxury-card">
-          <div className="sm-header">
-            <Bot size={20} style={{ color: 'var(--color-accent)' }} />
-            <h2>Socratic AI Tutor</h2>
+          <div className="sm-header" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '16px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <Bot size={20} style={{ color: 'var(--color-accent)' }} />
+              <h2>Socratic AI Tutor</h2>
+            </div>
+            
+            <div className="complexity-slider-container" style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', fontWeight: 600, color: 'var(--color-text-secondary)', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                <span>ELI5</span>
+                <span>Genius</span>
+              </div>
+              <input 
+                type="range" 
+                min="1" max="5" 
+                value={complexity} 
+                onChange={(e) => setComplexity(parseInt(e.target.value))}
+                className="complexity-slider"
+              />
+              <div style={{ textAlign: 'center', fontSize: '12px', color: 'var(--color-accent)', fontWeight: 600 }}>
+                {complexity === 1 && "Level: Explain Like I'm 5"}
+                {complexity === 2 && "Level: High School"}
+                {complexity === 3 && "Level: College (Default)"}
+                {complexity === 4 && "Level: Post-Graduate"}
+                {complexity === 5 && "Level: Genius Level"}
+              </div>
+            </div>
           </div>
 
           <div className="sm-messages">
@@ -689,6 +713,27 @@ const SocraticSolver: React.FC = () => {
         }
         .sm-send-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: var(--shadow-glow); }
         .sm-send-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        /* Slider Styling */
+        .complexity-slider {
+          -webkit-appearance: none;
+          width: 100%;
+          height: 6px;
+          background: var(--color-base-alt);
+          border-radius: 99px;
+          outline: none;
+          margin-bottom: 10px;
+        }
+        .complexity-slider::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background: var(--color-accent);
+          cursor: pointer;
+          box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+        }
 
       `}</style>
     </div>
