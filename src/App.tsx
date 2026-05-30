@@ -35,6 +35,7 @@ function App() {
   // Settings State
   const [userName, setUserName] = useState('Scholar');
   const [studyGoal, setStudyGoal] = useState(25);
+  const [geminiApiKey, setGeminiApiKey] = useState(() => localStorage.getItem('lumen_gemini_key') || '');
   const [activeMenu, setActiveMenu] = useState<'notifications' | 'settings' | 'profile' | null>(null);
   
   const { level, xp, streak, dailyGoalProgress, dailyGoalTarget, addXP } = useGamification();
@@ -61,6 +62,14 @@ function App() {
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
   }, [darkMode]);
+
+  useEffect(() => {
+    if (geminiApiKey) {
+      localStorage.setItem('lumen_gemini_key', geminiApiKey);
+    } else {
+      localStorage.removeItem('lumen_gemini_key');
+    }
+  }, [geminiApiKey]);
 
   // Save study time if user closes/hides the tab
   useEffect(() => {
@@ -306,6 +315,20 @@ function App() {
                   max="100"
                   className="settings-input"
                 />
+              </div>
+
+              <div className="form-group">
+                <label>Premium AI: Gemini API Key (Optional)</label>
+                <input 
+                  type="password" 
+                  value={geminiApiKey} 
+                  onChange={(e) => setGeminiApiKey(e.target.value)}
+                  placeholder="AIzaSy..."
+                  className="settings-input"
+                />
+                <p style={{ fontSize: 12, color: 'var(--color-text-muted)', marginTop: 4 }}>
+                  Add a free Google Gemini key to unlock flawless AI summarization, flashcards, and math extraction from your PDFs.
+                </p>
               </div>
             </div>
 

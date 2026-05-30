@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { UploadCloud, Link as LinkIcon, FileText, MonitorPlay, Image as ImageIcon, CheckCircle, BrainCircuit, List, PlayCircle, Loader2 } from 'lucide-react';
 import { TextRank, ContentGenerator } from '../utils/nlpEngine';
+import { LLMService } from '../utils/llmService';
 import { TypewriterMarkdown } from './TypewriterMarkdown';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
@@ -176,23 +177,46 @@ const UploadHub: React.FC = () => {
     setFileText(text);
   };
 
-  const processUpload = (text: string) => {
+  const processUpload = async (text: string) => {
     if (!text.trim()) return;
     setUploadState('uploading');
-    setTimeout(() => setUploadState('parsing'), 1200);
+    
+    setTimeout(() => setUploadState('parsing'), 800);
+    
+    const apiKey = localStorage.getItem('lumen_gemini_key');
+    
+    if (apiKey) {
+      setTimeout(async () => {
+        setUploadState('analyzing');
+        try {
+          const premiumResults = await LLMService.processDocument(text, apiKey);
+          setResults(premiumResults);
+          setUploadState('done');
+          addXP(1000, 'Premium AI Document Processed');
+        } catch (err: any) {
+          console.error("Premium AI Error:", err);
+          setErrorMessage(`Premium AI Failed: ${err.message}. Falling back to local engine...`);
+          // Fallback to local engine
+          runLocalEngine(text);
+        }
+      }, 1600);
+    } else {
+      setTimeout(() => runLocalEngine(text), 1600);
+    }
+  };
+
+  const runLocalEngine = (text: string) => {
+    setUploadState('analyzing');
     setTimeout(() => {
-      setUploadState('analyzing');
       const summary = TextRank.summarize(text, 0.3, 5);
       const flashcards = ContentGenerator.generateFlashcards(text);
       const quiz = ContentGenerator.generateQuiz(text);
       const exam = ContentGenerator.generateExamQuestions(text);
       const formulas = ContentGenerator.extractFormulas(text);
       setResults({ summary, flashcards, quiz, exam, formulas });
-    }, 3000);
-    setTimeout(() => {
       setUploadState('done');
       addXP(500, 'Document Processed');
-    }, 4500);
+    }, 1500);
   };
 
   const handleAnalyze = () => {
@@ -221,7 +245,14 @@ const UploadHub: React.FC = () => {
         <div className="results-header luxury-card">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
             <div>
-              <h1>AI Analysis Complete</h1>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                <h1>AI Analysis Complete</h1>
+                {localStorage.getItem('lumen_gemini_key') && (
+                  <span style={{ background: 'var(--color-accent)', color: 'var(--color-base)', padding: '2px 8px', borderRadius: 6, fontSize: 11, fontWeight: 700, letterSpacing: 0.5 }}>
+                    ✨ PREMIUM AI
+                  </span>
+                )}
+              </div>
               <p>{fileName ? `Processed: ${fileName}` : 'Your text has been processed into study materials.'}</p>
             </div>
             <button
