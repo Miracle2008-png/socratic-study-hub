@@ -28,7 +28,7 @@ export const ProUpgradeScreen: React.FC<ProUpgradeScreenProps> = ({ featureName,
             <h3>Lumen Pro</h3>
             <div className="price">
               <span className="currency">$</span>
-              <span className="amount">49</span>
+              <span className="amount">24</span>
               <span className="period">.99</span>
             </div>
             <p className="billing-info">One-Time Payment • Lifetime Access</p>
