@@ -32,6 +32,7 @@ import { ErrorBoundary } from './components/ErrorBoundary';
 import { AdminDashboard } from './components/AdminDashboard';
 import { PremiumProvider, usePremium } from './context/PremiumContext';
 import { ProUpgradeScreen } from './components/ProUpgradeScreen';
+import { initializeFlutterwavePayment } from './utils/flutterwave';
 import './index.css';
 import './gamification.css';
 
@@ -59,7 +60,7 @@ const AppContent: React.FC = () => {
   const { level, xp, streak, dailyGoalProgress, dailyGoalTarget, addXP } = useGamification();
   const { currentUser } = useAuth();
   const { recordTopicOpen, recordTopicClose, isSatMode } = useStudyProgress();
-  const { freeInsights, isPro } = usePremium();
+  const { freeInsights, isPro, upgradeToPro } = usePremium();
   
   const [showLoginModal, setShowLoginModal] = useState(false);
   const isAdmin = currentUser?.email === 'miraclechimdindu2008@gmail.com' || currentUser?.email === 'miraclechimdindu2025@gmail.com';
@@ -131,12 +132,30 @@ const AppContent: React.FC = () => {
         'mock_exam': 'Mock Exam Generator',
         'predictor_hub': 'Future Predictor'
       };
-      
+      const handleUpgradeClick = () => {
+        if (!currentUser) {
+          setShowLoginModal(true);
+        } else {
+          initializeFlutterwavePayment({
+            email: currentUser.email || '',
+            name: currentUser.user_metadata?.full_name || currentUser.email?.split('@')[0] || 'Lumen User',
+            amount: 24.99,
+            onSuccess: () => {
+              upgradeToPro();
+              alert("Payment successful! Welcome to Lumen Pro.");
+            },
+            onClose: () => {
+              console.log("Payment modal closed");
+            }
+          });
+        }
+      };
+
       return (
         <ProUpgradeScreen 
           featureName={featureNames[activeTab] || 'Premium Feature'}
           isGuest={!currentUser}
-          onUpgradeClick={() => setShowLoginModal(true)} 
+          onUpgradeClick={handleUpgradeClick} 
         />
       );
     }

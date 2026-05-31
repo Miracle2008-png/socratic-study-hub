@@ -5,6 +5,7 @@ interface PremiumContextType {
   freeInsights: number;
   isPro: boolean;
   useInsight: () => boolean; // Returns true if an Insight was successfully used, false if out of Insights
+  upgradeToPro: () => void;
 }
 
 const PremiumContext = createContext<PremiumContextType | undefined>(undefined);
@@ -13,14 +14,23 @@ export const PremiumProvider: React.FC<{ children: React.ReactNode }> = ({ child
   const { currentUser } = useAuth();
   const [freeInsights, setFreeInsights] = useState<number>(3);
   const [showToast, setShowToast] = useState(false);
+  const [purchasedPro, setPurchasedPro] = useState(false);
 
   // For this MVP, users with specific emails are admins (and thus Pro). 
-  const isPro = currentUser?.email === 'miraclechimdindu2008@gmail.com' || currentUser?.email === 'miraclechimdindu2025@gmail.com';
+  const isProAdmin = currentUser?.email === 'miraclechimdindu2008@gmail.com' || currentUser?.email === 'miraclechimdindu2025@gmail.com';
+  const isPro = isProAdmin || purchasedPro;
 
   useEffect(() => {
     // Determine which storage key to use based on authentication status
     const storageKey = currentUser?.email ? `lumen_user_insights_${currentUser.email}` : 'lumen_guest_insights';
+    const proStorageKey = currentUser?.email ? `lumen_pro_status_${currentUser.email}` : null;
     const maxInsights = currentUser ? 10 : 3;
+    
+    if (proStorageKey && localStorage.getItem(proStorageKey) === 'true') {
+      setPurchasedPro(true);
+    } else {
+      setPurchasedPro(false);
+    }
     
     const savedInsights = localStorage.getItem(storageKey);
     if (savedInsights !== null) {
@@ -50,8 +60,14 @@ export const PremiumProvider: React.FC<{ children: React.ReactNode }> = ({ child
     return false; // Out of Insights
   };
 
+  const upgradeToPro = () => {
+    if (!currentUser?.email) return;
+    setPurchasedPro(true);
+    localStorage.setItem(`lumen_pro_status_${currentUser.email}`, 'true');
+  };
+
   return (
-    <PremiumContext.Provider value={{ freeInsights, isPro, useInsight }}>
+    <PremiumContext.Provider value={{ freeInsights, isPro, useInsight, upgradeToPro }}>
       {children}
       {showToast && !isPro && freeInsights > 0 && (
         <div className="premium-toast fade-in">
