@@ -44,6 +44,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const signOut = async () => {
     await supabase.auth.signOut();
     setCurrentUser(null);
+    window.location.reload();
   };
 
   const clearRecoveryMode = () => setRecoveryMode(false);
