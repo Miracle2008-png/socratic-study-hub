@@ -69,7 +69,7 @@ const AppContent: React.FC = () => {
   }, [activeMenu]);
   
   const { level, xp, streak, dailyGoalProgress, dailyGoalTarget, addXP } = useGamification();
-  const { currentUser, mockLogout } = useAuth();
+  const { currentUser, signOut } = useAuth();
   const { recordTopicOpen, recordTopicClose, isSatMode } = useStudyProgress();
   const { freeInsights, isPro, upgradeToPro } = usePremium();
   
@@ -254,30 +254,6 @@ const AppContent: React.FC = () => {
     return map[id] || id;
   };
 
-  // ── Full-screen login gate ──────────────────────────────────────────────────
-  if (!currentUser) {
-    return (
-      <div className="login-bg">
-        {/* Floating orb particles */}
-        {[...Array(6)].map((_, i) => (
-          <div
-            key={i}
-            className="login-orb"
-            style={{
-              width: `${8 + i * 4}px`,
-              height: `${8 + i * 4}px`,
-              left: `${10 + i * 15}%`,
-              bottom: `-${20 + i * 5}px`,
-              background: i % 2 === 0 ? 'var(--color-accent)' : '#6366f1',
-              animationDuration: `${10 + i * 3}s`,
-              animationDelay: `${i * 1.5}s`,
-            }}
-          />
-        ))}
-        <LoginScreen />
-      </div>
-    );
-  }
 
   return (
     <div className={`app-container ${isFocusMode ? 'focus-mode-active' : ''} ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`} data-layout={fullWidth ? 'full' : 'constrained'}>
@@ -394,7 +370,7 @@ const AppContent: React.FC = () => {
                         <button className="dropdown-item" onClick={() => setActiveMenu('stats_modal')}>Progress Stats</button>
                         <button className="dropdown-item" onClick={() => setActiveMenu('settings')}>Settings</button>
                         <div style={{ height: 1, background: 'var(--color-border)', margin: '4px 0' }} />
-                        <button className="dropdown-item" style={{ color: '#ef4444' }} onClick={() => { mockLogout(); setActiveMenu(null); }}>Sign Out</button>
+                        <button className="dropdown-item" style={{ color: '#ef4444' }} onClick={() => { signOut(); setActiveMenu(null); }}>Sign Out</button>
                       </div>
                     )}
                   </>
@@ -433,7 +409,7 @@ const AppContent: React.FC = () => {
                 <label>Account Email</label>
                 <input 
                   type="text" 
-                  value={currentUser.email || ''} 
+                  value={currentUser?.email || ''} 
                   disabled
                   className="settings-input"
                   style={{ opacity: 0.7 }}
@@ -498,12 +474,12 @@ const AppContent: React.FC = () => {
             </div>
             <div className="modal-body" style={{ alignItems: 'center', textAlign: 'center' }}>
               <div className="avatar" style={{ width: 80, height: 80, fontSize: 32, marginBottom: 16 }}>
-                {(currentUser.user_metadata?.full_name?.[0] || currentUser.email?.[0] || 'S').toUpperCase()}
+                {(currentUser?.user_metadata?.full_name?.[0] || currentUser?.email?.[0] || 'S').toUpperCase()}
               </div>
               <h3 style={{ fontSize: 20, fontWeight: 600, color: 'var(--color-text-primary)' }}>
-                {currentUser.user_metadata?.full_name || currentUser.email?.split('@')[0] || 'Scholar'}
+                {currentUser?.user_metadata?.full_name || currentUser?.email?.split('@')[0] || 'Scholar'}
               </h3>
-              <p style={{ color: 'var(--color-text-secondary)', fontSize: 14 }}>{currentUser.email}</p>
+              <p style={{ color: 'var(--color-text-secondary)', fontSize: 14 }}>{currentUser?.email}</p>
               
               <div style={{ display: 'flex', gap: 24, marginTop: 24, width: '100%', justifyContent: 'center' }}>
                 <div style={{ textAlign: 'center' }}>
@@ -574,10 +550,7 @@ const AppContent: React.FC = () => {
 
       {showLoginModal && (
         <div className="login-modal-overlay">
-          <div className="login-modal-close" onClick={() => setShowLoginModal(false)}>
-            <X size={24} />
-          </div>
-          <LoginScreen />
+          <LoginScreen onClose={() => setShowLoginModal(false)} />
         </div>
       )}
 
