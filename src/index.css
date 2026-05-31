@@ -324,9 +324,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border: var(--border-soft);
   border-radius: var(--border-radius-md);
   box-shadow: var(--shadow-sm);
-  transition: all var(--transition-normal);
+  transition: box-shadow var(--transition-normal), border-color var(--transition-normal);
 }
-.luxury-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.luxury-card:hover { box-shadow: var(--shadow-md); border-color: var(--color-border-strong); }
 
 /* ===== GOLD GRADIENT TEXT ===== */
 .text-gold-gradient {
@@ -490,7 +490,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     justify-content: center;
     background: transparent;
     border: none;
-    color: var(--color-text);
+    color: var(--color-text-secondary);
     cursor: pointer;
     padding: 8px;
     border-radius: 8px;
@@ -729,13 +729,18 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border-radius: 50%;
   background: radial-gradient(circle, rgba(99,102,241,0.05) 0%, transparent 65%);
   bottom: -150px; right: -100px;
-  animation: bgPulse 8s 2s ease-in-out infinite;
+  animation: bgPulseRight 8s 2s ease-in-out infinite;
   pointer-events: none;
 }
 
 @keyframes bgPulse {
-  0%, 100% { transform: translateX(-50%) scale(1); opacity: 1; }
-  50%       { transform: translateX(-50%) scale(1.1); opacity: 0.7; }
+  0%, 100% { opacity: 1; transform: translateX(-50%) scale(1); }
+  50%       { opacity: 0.7; transform: translateX(-50%) scale(1.1); }
+}
+
+@keyframes bgPulseRight {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(1.08); }
 }
 
 /* Floating orbs decoration */
@@ -890,3 +895,16 @@ input, textarea, select {
 
 /* ===== SPIN ANIMATION (global) ===== */
 .spin-slow { animation: spin 2s linear infinite; }
+
+/* ===== FONT MONO ===== */
+:root {
+  --font-mono: 'Courier New', Courier, monospace;
+}
+
+/* ===== SAFE AREA (mobile notch support) ===== */
+@supports (padding: max(0px)) {
+  .topbar { padding-left: max(48px, env(safe-area-inset-left)); padding-right: max(48px, env(safe-area-inset-right)); }
+  @media (max-width: 768px) {
+    .topbar { padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
+  }
+}
