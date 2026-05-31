@@ -579,3 +579,125 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     width: 100%;
   }
 }
+
+/* ===== SAT DASHBOARD OVERHAUL CSS ===== */
+.exam-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  background: linear-gradient(135deg, rgba(30,30,30,0.5) 0%, rgba(20,20,20,0.8) 100%);
+  border: 1px solid rgba(255,255,255,0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.exam-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+.exam-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: var(--color-accent);
+  opacity: 0.3;
+  transition: opacity var(--transition-normal);
+}
+
+.exam-card:hover::before {
+  opacity: 1;
+}
+
+.reading-card::before { background: #3b82f6; }
+.math-card::before { background: #ef4444; }
+
+.exam-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.exam-icon-wrapper {
+  padding: 14px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reading-icon { background: rgba(59, 130, 246, 0.1); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.2); }
+.math-icon { background: rgba(239, 68, 68, 0.1); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.2); }
+
+.exam-status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.reading-status { color: #60a5fa; background: rgba(59, 130, 246, 0.1); }
+.math-status { color: #f87171; background: rgba(239, 68, 68, 0.1); }
+
+.exam-card-body h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.exam-card-body p {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.exam-stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.exam-stats span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.exam-card-footer {
+  margin-top: auto;
+}
+
+.exam-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+  color: #fff;
+}
+
+.reading-btn { background: #3b82f6; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3); }
+.reading-card:hover .reading-btn { background: #2563eb; box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4); }
+
+.math-btn { background: #ef4444; box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3); }
+.math-card:hover .math-btn { background: #dc2626; box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4); }
+
+/* Prevent clipping of progress bar glow */
+.domain-bar-container {
+  padding-bottom: 8px;
+}
