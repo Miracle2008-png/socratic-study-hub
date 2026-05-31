@@ -58,7 +58,7 @@ const AppContent: React.FC = () => {
   const [activeMenu, setActiveMenu] = useState<'notifications' | 'settings' | 'profile' | null>(null);
   
   const { level, xp, streak, dailyGoalProgress, dailyGoalTarget, addXP } = useGamification();
-  const { currentUser } = useAuth();
+  const { currentUser, mockLogout } = useAuth();
   const { recordTopicOpen, recordTopicClose, isSatMode } = useStudyProgress();
   const { freeInsights, isPro, upgradeToPro } = usePremium();
   
@@ -353,7 +353,7 @@ const AppContent: React.FC = () => {
                 <Calculator size={18} />
               </button>
 
-              <div className="topbar-dropdown-wrap">
+              <div className="topbar-dropdown-wrap" style={{ zIndex: activeMenu ? 101 : 1 }}>
                 {!currentUser ? (
                   <button className="gold-btn" style={{ padding: '8px 16px', fontSize: 13 }} onClick={() => setShowLoginModal(true)}>
                     Sign In
@@ -379,17 +379,24 @@ const AppContent: React.FC = () => {
                           <h4>{currentUser.user_metadata?.full_name || currentUser.email?.split('@')[0] || 'Scholar'}</h4>
                           <p className="dd-subtitle">Lumen Academic</p>
                         </div>
-                        <button className="dropdown-item" onClick={() => setActiveTab('dashboard')}>My Profile</button>
-                        <button className="dropdown-item">Progress Stats</button>
+                        <button className="dropdown-item" onClick={() => { setActiveTab('dashboard'); setActiveMenu(null); }}>My Profile</button>
+                        <button className="dropdown-item" onClick={() => { setActiveTab('dashboard'); setActiveMenu(null); }}>Progress Stats</button>
                         <button className="dropdown-item" onClick={() => setActiveMenu('settings')}>Settings</button>
                         <div style={{ height: 1, background: 'var(--color-border)', margin: '4px 0' }} />
-                        <button className="dropdown-item" style={{ color: '#ef4444' }} onClick={() => supabase.auth.signOut()}>Sign Out</button>
+                        <button className="dropdown-item" style={{ color: '#ef4444' }} onClick={() => { mockLogout(); setActiveMenu(null); }}>Sign Out</button>
                       </div>
                     )}
                   </>
                 )}
               </div>
             </div>
+            
+            {activeMenu && (
+              <div 
+                style={{ position: 'fixed', inset: 0, zIndex: 100 }} 
+                onClick={() => setActiveMenu(null)}
+              />
+            )}
           </header>
         )}
 
