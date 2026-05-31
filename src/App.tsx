@@ -563,7 +563,7 @@ const AppContent: React.FC = () => {
         .dropdown-header {
           padding: 14px 16px; border-bottom: var(--border-soft);
         }
-        .dropdown-header h4 { font-family: var(--font-display); font-size: 13px; font-weight: 600; color: var(--color-text-primary); }
+        .dropdown-header h4 { font-family: var(--font-display); font-size: 13px; font-weight: 600; color: var(--color-text-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .dd-subtitle { font-size: 11px; color: var(--color-text-muted); margin-top: 2px; }
         .dropdown-item {
           display: flex; align-items: flex-start; gap: 12px;
