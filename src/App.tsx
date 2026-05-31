@@ -361,14 +361,17 @@ const AppContent: React.FC = () => {
                 ) : (
                   <>
                     <button 
-                      className={`avatar ${activeMenu === 'profile' ? 'active' : ''}`}
+                      className={`profile-btn ${activeMenu === 'profile' ? 'active' : ''}`}
                       onClick={() => setActiveMenu(activeMenu === 'profile' ? null : 'profile')}
                     >
+                      <div className="avatar">
+                        {(currentUser.user_metadata?.full_name?.[0] || currentUser.email?.[0] || 'S').toUpperCase()}
+                      </div>
                       <div className="profile-details">
                         <span className="profile-name" style={{ fontWeight: 600 }}>{currentUser.user_metadata?.full_name || currentUser.email || 'Scholar'}</span>
                         <span className="profile-level" style={{ fontSize: 11, color: 'var(--color-accent)' }}>Lvl {level} ✦ {xp} XP</span>
                       </div>
-                      <ChevronDown size={14} style={{ marginLeft: 4 }} />
+                      <ChevronDown size={14} style={{ marginLeft: 4, flexShrink: 0, color: 'var(--color-text-muted)' }} />
                     </button>
                     {activeMenu === 'profile' && (
                       <div className="topbar-dropdown profile-dropdown">
