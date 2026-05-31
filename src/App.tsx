@@ -381,7 +381,7 @@ const AppContent: React.FC = () => {
           </header>
         )}
 
-        <div className="content-area page-wrapper">
+        <div className="content-area page-wrapper anim-fade" key={`${activeTab}-${activeTopic || 'none'}`}>
           {!isFocusMode && activeTopic && (
             <div className="breadcrumbs">
               <button onClick={() => setActiveTopic(null)} className="breadcrumb-link">
@@ -550,7 +550,7 @@ const AppContent: React.FC = () => {
       )}
 
       {(showLoginModal || recoveryMode) && (
-        <div className="login-modal-overlay">
+        <div className="login-modal-overlay anim-fade">
           {/* Animated floating orbs */}
           {[...Array(8)].map((_, i) => (
             <div

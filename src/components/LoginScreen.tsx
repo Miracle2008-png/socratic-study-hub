@@ -122,9 +122,20 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onClose }) => {
     if (password.length < 6) { setError('Password must be at least 6 characters.'); return; }
     if (password !== confirmPassword) { setError('Passwords do not match.'); return; }
     setLoading(true); clearMessages();
-    const { error: err } = await supabase.auth.signUp({ email, password });
+    const { data, error: err } = await supabase.auth.signUp({ email, password });
     setLoading(false);
-    if (err) { setError(err.message || 'Failed to create account. Please try again.'); return; }
+    
+    if (err) { 
+      setError(err.message || 'Failed to create account. Please try again.'); 
+      return; 
+    }
+    
+    // If identities is empty, the user already exists in Supabase
+    if (data?.user && data.user.identities && data.user.identities.length === 0) {
+      setError('An account with this email already exists. Please sign in instead.');
+      return;
+    }
+
     setSuccess(`Confirmation link sent to ${email}. Please check your inbox!`);
     switchView('check_email');
   };
