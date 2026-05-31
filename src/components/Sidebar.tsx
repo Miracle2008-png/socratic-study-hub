@@ -3,7 +3,7 @@ import {
   Network, Brain, Moon, Sun, ChevronDown, ChevronRight, Sparkles,
   Calculator, Atom, FlaskConical, Dna, LayoutDashboard, Calendar, BookOpen, PenTool,
   BrainCircuit, Box, MessageSquare, UploadCloud, Map, FunctionSquare, TrendingUp, ShieldAlert,
-  Target
+  Target, Globe
 } from 'lucide-react';
 import { useStudyProgress } from '../context/StudyProgressContext';
 
