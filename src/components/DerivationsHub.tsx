@@ -69,7 +69,7 @@ export const DerivationsHub: React.FC = () => {
 
   return (
     <div className="module-container">
-      <div className="module-header glass-panel" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 24, padding: '24px 32px', borderRadius: 16 }}>
+      <div className="module-header glass-panel" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 24, marginBottom: 24, padding: '24px 32px', borderRadius: 16 }}>
         <div>
           <h1 className="text-gold-gradient" style={{ fontSize: '2.5rem', marginBottom: 8 }}>Derivations & Proofs</h1>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem' }}>
@@ -77,8 +77,8 @@ export const DerivationsHub: React.FC = () => {
           </p>
         </div>
         
-        <div style={{ display: 'flex', gap: 16 }}>
-          <div className="search-bar" style={{ width: '250px' }}>
+        <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
+          <div className="search-bar" style={{ width: '250px', flex: '1 1 200px' }}>
             <Search size={18} color="var(--color-text-secondary)" />
             <input 
               type="text" 

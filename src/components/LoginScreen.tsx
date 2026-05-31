@@ -265,7 +265,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onClose }) => {
                   <input type="password" placeholder="Confirm password" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} onFocus={() => setFocusedField('confirm')} onBlur={() => setFocusedField(null)} required />
                 </div>
                 <button type="submit" className="login-submit" disabled={loading} style={{ marginTop: 6 }}>
-                  {loading ? <><Loader2 size={16} style={{ animation: 'spin 0.9s linear infinite' }} /> Creating Account…</> : <>Create Account <ArrowRight size={16} /></>}
+                  {loading ? <><Loader2 size={16} style={{ animation: 'spin 0.9s linear infinite' }} /> <span>Creating Account…</span></> : <><span>Create Account</span> <ArrowRight size={16} /></>}
                 </button>
               </form>
               <p style={{ textAlign: 'center', marginTop: 20, fontSize: 14, color: 'var(--color-text-muted)' }}>
@@ -315,7 +315,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onClose }) => {
                   </button>
                 </div>
                 <button type="submit" className="login-submit" disabled={loading}>
-                  {loading ? <><Loader2 size={16} style={{ animation: 'spin 0.9s linear infinite' }} /> Signing in…</> : <>Sign In <ArrowRight size={16} /></>}
+                  {loading ? <><Loader2 size={16} style={{ animation: 'spin 0.9s linear infinite' }} /> <span>Signing in…</span></> : <><span>Sign In</span> <ArrowRight size={16} /></>}
                 </button>
               </form>
               <p style={{ textAlign: 'center', marginTop: 20, fontSize: 14, color: 'var(--color-text-muted)' }}>

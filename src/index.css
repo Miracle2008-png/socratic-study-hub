@@ -169,7 +169,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background: var(--color-surface);
   border-radius: var(--border-radius-full);
   border: var(--border-soft);
-  width: 380px;
+  flex: 1;
+  max-width: 380px;
   transition: all var(--transition-fast);
   box-shadow: var(--shadow-xs);
 }
@@ -177,7 +178,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .search-bar:focus-within {
   border-color: var(--color-accent);
   box-shadow: var(--shadow-glow-sm);
-  width: 420px;
+  max-width: 420px;
 }
 
 .search-bar input {
