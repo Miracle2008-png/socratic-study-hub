@@ -33,19 +33,47 @@ export const GamificationProvider: React.FC<{ children: ReactNode }> = ({ childr
   const [state, setState] = useState<GamificationState>(defaultState);
   const [loaded, setLoaded] = useState(false);
 
-  // Fetch from localStorage
+  // Fetch from Supabase DB
   useEffect(() => {
-    const fetchProgress = () => {
-      const storageKey = currentUser?.email ? `gamification_v1_${currentUser.email}` : 'gamification_v1_guest';
+    const fetchProgress = async () => {
+      if (!currentUser) {
+        setState(defaultState);
+        setLoaded(true);
+        return;
+      }
+
       try {
-        const raw = localStorage.getItem(storageKey);
-        if (raw) {
-          setState(JSON.parse(raw));
+        const { data, error } = await supabase
+          .from('gamification_stats')
+          .select('*')
+          .eq('user_id', currentUser.id)
+          .single();
+
+        if (error && error.code !== 'PGRST116') {
+          console.error("Failed to load gamification stats from DB", error);
+          setState(defaultState);
+        } else if (data) {
+          setState({
+            xp: data.xp || 0,
+            level: data.level || 1,
+            streak: data.current_streak || 0,
+            lastActiveDate: data.last_active_date || new Date().toISOString().split('T')[0],
+            dailyGoalProgress: 0, // Reset daily goal progress on new session
+            dailyGoalTarget: 100,
+          });
         } else {
+          // If no row exists (PGRST116), insert default state
+          await supabase.from('gamification_stats').insert({
+            user_id: currentUser.id,
+            xp: 0,
+            level: 1,
+            current_streak: 0,
+            last_active_date: new Date().toISOString().split('T')[0]
+          });
           setState(defaultState);
         }
       } catch (err) {
-        console.error("Failed to load local save", err);
+        console.error("Failed to load gamification stats", err);
       } finally {
         setLoaded(true);
       }
@@ -53,15 +81,28 @@ export const GamificationProvider: React.FC<{ children: ReactNode }> = ({ childr
     fetchProgress();
   }, [currentUser]);
 
-  // Save to localStorage
+  // Save to Supabase DB
   useEffect(() => {
-    if (loaded) {
-      const storageKey = currentUser?.email ? `gamification_v1_${currentUser.email}` : 'gamification_v1_guest';
-      try {
-        localStorage.setItem(storageKey, JSON.stringify(state));
-      } catch (err) {
-        console.error("Failed to local save", err);
-      }
+    if (loaded && currentUser) {
+      const saveToDb = async () => {
+        try {
+          const { error } = await supabase.from('gamification_stats').upsert({
+            user_id: currentUser.id,
+            xp: state.xp,
+            level: state.level,
+            current_streak: state.streak,
+            last_active_date: state.lastActiveDate,
+            updated_at: new Date().toISOString()
+          }, { onConflict: 'user_id' });
+          
+          if (error) console.error("Failed to save gamification to DB", error);
+        } catch (err) {
+          console.error("Gamification DB save error:", err);
+        }
+      };
+
+      const timeoutId = setTimeout(saveToDb, 1500); // Debounce DB writes
+      return () => clearTimeout(timeoutId);
     }
   }, [state, loaded, currentUser]);
 
