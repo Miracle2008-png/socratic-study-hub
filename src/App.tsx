@@ -25,6 +25,7 @@ import { AdvancedCalculator } from './components/AdvancedCalculator';
 import { GamificationProvider, useGamification } from './context/GamificationContext';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { LoginScreen } from './components/LoginScreen';
+import { UpdatePasswordScreen } from './components/UpdatePasswordScreen';
 import { supabase } from './utils/supabase';
 import { StudyProgressProvider, useStudyProgress } from './context/StudyProgressContext';
 import { Search, Bell, Settings, User, X, Check, Activity, Clock, Sparkles, Flame, Trophy, Calculator, Menu, ChevronDown, ShieldAlert } from 'lucide-react';
@@ -548,7 +549,7 @@ const AppContent: React.FC = () => {
         </button>
       )}
 
-      {showLoginModal && (
+      {(showLoginModal || recoveryMode) && (
         <div className="login-modal-overlay">
           {/* Animated floating orbs */}
           {[...Array(8)].map((_, i) => (
@@ -567,7 +568,14 @@ const AppContent: React.FC = () => {
               }}
             />
           ))}
-          <LoginScreen onClose={() => setShowLoginModal(false)} />
+          {recoveryMode ? (
+            <UpdatePasswordScreen 
+              onSuccess={() => { clearRecoveryMode(); setShowLoginModal(false); }} 
+              onClose={() => { clearRecoveryMode(); setShowLoginModal(false); }} 
+            />
+          ) : (
+            <LoginScreen onClose={() => setShowLoginModal(false)} />
+          )}
         </div>
       )}
 
