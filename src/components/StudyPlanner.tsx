@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Calendar as CalendarIcon, Clock, CheckCircle, Circle, Plus, Target, Wand2, Loader2, BookOpen, FlaskConical, Calculator, Trash2 } from 'lucide-react';
+import { supabase } from '../utils/supabase';
+import { useAuth } from '../context/AuthContext';
 
 interface Task {
-  id: number;
+  id: string;
   title: string;
   subject: string;
   time: string;
@@ -10,7 +12,7 @@ interface Task {
 }
 
 interface Event {
-  id: number;
+  id: string;
   title: string;
   desc: string;
   month: string;
@@ -18,25 +20,45 @@ interface Event {
 }
 
 const StudyPlanner: React.FC = () => {
+  const { currentUser } = useAuth();
   const [tasks, setTasks] = useState<Task[]>([]);
   const [events, setEvents] = useState<Event[]>([]);
 
   useEffect(() => {
-    const savedTasks = localStorage.getItem('lumen_study_tasks');
-    const savedEvents = localStorage.getItem('lumen_study_events');
-    if (savedTasks) setTasks(JSON.parse(savedTasks));
-    if (savedEvents) setEvents(JSON.parse(savedEvents));
-  }, []);
+    if (!currentUser) return;
+    
+    const fetchData = async () => {
+      // Fetch Tasks
+      const { data: tasksData } = await supabase.from('study_tasks').select('*').eq('user_id', currentUser.id);
+      if (tasksData) {
+        setTasks(tasksData.map(t => ({
+          id: t.id,
+          title: t.title,
+          subject: t.subject,
+          time: t.priority, // We mapped time to priority in DB
+          completed: t.is_completed
+        })));
+      }
 
-  const saveTasks = (newTasks: Task[]) => {
-    setTasks(newTasks);
-    localStorage.setItem('lumen_study_tasks', JSON.stringify(newTasks));
-  };
-
-  const saveEvents = (newEvents: Event[]) => {
-    setEvents(newEvents);
-    localStorage.setItem('lumen_study_events', JSON.stringify(newEvents));
-  };
+      // Fetch Events
+      const { data: eventsData } = await supabase.from('study_events').select('*').eq('user_id', currentUser.id);
+      if (eventsData) {
+        setEvents(eventsData.map(e => {
+          const dateObj = new Date(e.date);
+          const month = dateObj.toLocaleString('en-US', { month: 'short' }).toUpperCase();
+          const day = dateObj.getDate().toString();
+          return {
+            id: e.id,
+            title: e.title,
+            desc: e.type, // We mapped desc to type in DB
+            month,
+            day
+          };
+        }));
+      }
+    };
+    fetchData();
+  }, [currentUser]);
 
   const [isGenerating, setIsGenerating] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -44,29 +66,70 @@ const StudyPlanner: React.FC = () => {
   const [newTask, setNewTask] = useState({ title: '', subject: 'Math', time: '12:00 PM' });
   const [newEvent, setNewEvent] = useState({ title: '', desc: '', month: 'NOV', day: '15' });
 
-  const toggleTask = (id: number) => {
-    saveTasks(tasks.map(t => t.id === id ? { ...t, completed: !t.completed } : t));
+  const toggleTask = async (id: string) => {
+    const task = tasks.find(t => t.id === id);
+    if (!task) return;
+    
+    const newCompletedState = !task.completed;
+    setTasks(tasks.map(t => t.id === id ? { ...t, completed: newCompletedState } : t));
+    
+    if (currentUser) {
+      await supabase.from('study_tasks').update({ is_completed: newCompletedState }).eq('id', id);
+    }
   };
 
-  const deleteTask = (id: number) => {
-    saveTasks(tasks.filter(t => t.id !== id));
+  const deleteTask = async (id: string) => {
+    setTasks(tasks.filter(t => t.id !== id));
+    if (currentUser) {
+      await supabase.from('study_tasks').delete().eq('id', id);
+    }
   };
 
-  const deleteEvent = (id: number) => {
-    saveEvents(events.filter(e => e.id !== id));
+  const deleteEvent = async (id: string) => {
+    setEvents(events.filter(e => e.id !== id));
+    if (currentUser) {
+      await supabase.from('study_events').delete().eq('id', id);
+    }
   };
 
-  const addTask = () => {
-    if (newTask.title.trim()) {
-      saveTasks([...tasks, { id: Date.now(), ...newTask, completed: false }]);
+  const addTask = async () => {
+    if (newTask.title.trim() && currentUser) {
+      const { data } = await supabase.from('study_tasks').insert({
+        user_id: currentUser.id,
+        title: newTask.title,
+        subject: newTask.subject,
+        priority: newTask.time, // Map time to priority
+        duration_minutes: 60,
+        is_completed: false
+      }).select().single();
+
+      if (data) {
+        setTasks([...tasks, { id: data.id, ...newTask, completed: false }]);
+      }
       setShowModal(false);
       setNewTask({ title: '', subject: 'Math', time: '12:00 PM' });
     }
   };
 
-  const addEvent = () => {
-    if (newEvent.title.trim() && newEvent.month.trim() && newEvent.day.trim()) {
-      saveEvents([...events, { id: Date.now(), ...newEvent }]);
+  const addEvent = async () => {
+    if (newEvent.title.trim() && newEvent.month.trim() && newEvent.day.trim() && currentUser) {
+      // Create a dummy date for current year
+      const year = new Date().getFullYear();
+      const monthMap: Record<string, string> = { 'JAN': '01', 'FEB': '02', 'MAR': '03', 'APR': '04', 'MAY': '05', 'JUN': '06', 'JUL': '07', 'AUG': '08', 'SEP': '09', 'OCT': '10', 'NOV': '11', 'DEC': '12' };
+      const mm = monthMap[newEvent.month.toUpperCase()] || '01';
+      const dd = newEvent.day.padStart(2, '0');
+      const dateStr = `${year}-${mm}-${dd}`;
+
+      const { data } = await supabase.from('study_events').insert({
+        user_id: currentUser.id,
+        title: newEvent.title,
+        type: newEvent.desc || 'Event',
+        date: dateStr
+      }).select().single();
+
+      if (data) {
+        setEvents([...events, { id: data.id, ...newEvent }]);
+      }
       setShowEventModal(false);
       setNewEvent({ title: '', desc: '', month: 'NOV', day: '15' });
     }

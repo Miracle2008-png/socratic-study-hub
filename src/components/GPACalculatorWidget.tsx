@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Calculator, Plus, Trash2, GraduationCap, Target } from 'lucide-react';
+import { supabase } from '../utils/supabase';
+import { useAuth } from '../context/AuthContext';
 
 interface Course {
   id: string;
@@ -16,21 +18,34 @@ const gradeScale: Record<string, number> = {
 };
 
 export const GPACalculatorWidget: React.FC = () => {
+  const { currentUser } = useAuth();
   const [courses, setCourses] = useState<Course[]>([]);
   const [targetGPA, setTargetGPA] = useState<number | ''>('');
   
   useEffect(() => {
-    const saved = localStorage.getItem('lumen_gpa_courses');
-    const savedTarget = localStorage.getItem('lumen_gpa_target');
-    if (saved) setCourses(JSON.parse(saved));
-    else setCourses([{ id: Date.now().toString(), name: 'Calculus 101', credits: 3, grade: 'A' }]);
-    
-    if (savedTarget) setTargetGPA(parseFloat(savedTarget));
-  }, []);
+    if (!currentUser) return;
+    const fetchData = async () => {
+      const { data } = await supabase.from('gpa_data').select('*').eq('user_id', currentUser.id).single();
+      if (data) {
+        setCourses(data.courses && data.courses.length > 0 ? data.courses : [{ id: Date.now().toString(), name: 'Calculus 101', credits: 3, grade: 'A' }]);
+        setTargetGPA(data.target_gpa || '');
+      } else {
+        setCourses([{ id: Date.now().toString(), name: 'Calculus 101', credits: 3, grade: 'A' }]);
+      }
+    };
+    fetchData();
+  }, [currentUser]);
 
-  const saveCourses = (newCourses: Course[]) => {
+  const saveCourses = async (newCourses: Course[]) => {
     setCourses(newCourses);
-    localStorage.setItem('lumen_gpa_courses', JSON.stringify(newCourses));
+    if (currentUser) {
+      await supabase.from('gpa_data').upsert({
+        user_id: currentUser.id,
+        courses: newCourses as any,
+        target_gpa: targetGPA === '' ? null : targetGPA,
+        updated_at: new Date().toISOString()
+      }, { onConflict: 'user_id' });
+    }
   };
 
   const addCourse = () => {
@@ -45,11 +60,17 @@ export const GPACalculatorWidget: React.FC = () => {
     saveCourses(courses.map(c => c.id === id ? { ...c, [field]: value } : c));
   };
 
-  const handleTargetChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleTargetChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value === '' ? '' : parseFloat(e.target.value);
     setTargetGPA(val);
-    if (val !== '') localStorage.setItem('lumen_gpa_target', val.toString());
-    else localStorage.removeItem('lumen_gpa_target');
+    if (currentUser) {
+      await supabase.from('gpa_data').upsert({
+        user_id: currentUser.id,
+        courses: courses as any,
+        target_gpa: val === '' ? null : val,
+        updated_at: new Date().toISOString()
+      }, { onConflict: 'user_id' });
+    }
   };
 
   const totalCredits = courses.reduce((sum, c) => sum + (c.credits || 0), 0);

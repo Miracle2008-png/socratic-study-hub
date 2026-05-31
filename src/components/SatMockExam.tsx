@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Clock, Calculator, Flag, ChevronLeft, ChevronRight, X, Maximize, AlertTriangle, RefreshCw } from 'lucide-react';
 import { GeminiService } from '../services/GeminiService';
 import { useGamification } from '../context/GamificationContext';
-
+import { useAuth } from '../context/AuthContext';
+import { supabase } from '../utils/supabase';
 interface SatQuestion {
   question: string;
   options: string[];
@@ -17,6 +18,7 @@ interface SatMockExamProps {
 
 export const SatMockExam: React.FC<SatMockExamProps> = ({ domain, onExit }) => {
   const { addXP } = useGamification();
+  const { currentUser } = useAuth();
   
   const [questions, setQuestions] = useState<SatQuestion[]>([]);
   const [examState, setExamState] = useState<'generating' | 'taking' | 'results' | 'error'>('generating');
@@ -87,7 +89,7 @@ export const SatMockExam: React.FC<SatMockExamProps> = ({ domain, onExit }) => {
     });
   };
 
-  const submitExam = () => {
+  const submitExam = async () => {
     setExamState('results');
     const correctCount = Object.entries(answers).reduce((acc, [qIdx, aIdx]) => {
       return aIdx === questions[parseInt(qIdx)].correctIndex ? acc + 1 : acc;
@@ -100,10 +102,23 @@ export const SatMockExam: React.FC<SatMockExamProps> = ({ domain, onExit }) => {
     // Round to nearest 10
     const finalScore = Math.round(scaledScore / 10) * 10;
     
-    if (domain === 'Math') {
-      localStorage.setItem('sat_score_math', finalScore.toString());
-    } else {
-      localStorage.setItem('sat_score_reading', finalScore.toString());
+    if (currentUser) {
+      // First, get the existing scores
+      const { data } = await supabase.from('sat_scores').select('*').eq('user_id', currentUser.id).single();
+      
+      let updatePayload: any = { user_id: currentUser.id, updated_at: new Date().toISOString() };
+      
+      if (domain === 'Math') {
+        updatePayload.math_score = finalScore;
+        // preserve reading
+        if (data) updatePayload.reading_score = data.reading_score;
+      } else {
+        updatePayload.reading_score = finalScore;
+        // preserve math
+        if (data) updatePayload.math_score = data.math_score;
+      }
+
+      await supabase.from('sat_scores').upsert(updatePayload, { onConflict: 'user_id' });
     }
     
     addXP(correctCount * 400, `SAT ${domain} Module Completed`);

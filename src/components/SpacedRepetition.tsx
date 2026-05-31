@@ -7,6 +7,9 @@ import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
+import { useAuth } from '../context/AuthContext';
+import { supabase } from '../utils/supabase';
+
 const initialDeck: Flashcard[] = [
   SRSEngine.createCard('1', 'math', 'Derivative of $x^n$', '$n x^{n-1}$'),
   SRSEngine.createCard('2', 'physics', "Newton's Second Law", '$F = ma$'),
@@ -18,6 +21,7 @@ const initialDeck: Flashcard[] = [
 const SUBJECTS = ['math', 'physics', 'chemistry', 'biology', 'other'];
 
 const SpacedRepetition: React.FC = () => {
+  const { currentUser } = useAuth();
   const [deck, setDeck] = useState<Flashcard[]>([]);
   const [dueCards, setDueCards] = useState<Flashcard[]>([]);
   const [currentCardIdx, setCurrentCardIdx] = useState(0);
@@ -36,22 +40,30 @@ const SpacedRepetition: React.FC = () => {
   const [generatedCount, setGeneratedCount] = useState<number | null>(null);
 
   useEffect(() => {
-    const saved = localStorage.getItem('srs_deck');
-    if (saved) {
-      const parsed = JSON.parse(saved);
-      setDeck(parsed);
-      setDueCards(parsed.filter((c: Flashcard) => c.nextReviewDate <= Date.now()));
-    } else {
-      setDeck(initialDeck);
-      setDueCards(initialDeck);
-      localStorage.setItem('srs_deck', JSON.stringify(initialDeck));
-    }
-  }, []);
+    if (!currentUser) return;
+    const fetchDeck = async () => {
+      const { data, error } = await supabase.from('flashcards_decks').select('cards').eq('user_id', currentUser.id).single();
+      if (data && data.cards && data.cards.length > 0) {
+        setDeck(data.cards as Flashcard[]);
+        setDueCards((data.cards as Flashcard[]).filter((c) => c.nextReviewDate <= Date.now()));
+      } else {
+        setDeck(initialDeck);
+        setDueCards(initialDeck);
+      }
+    };
+    fetchDeck();
+  }, [currentUser]);
 
-  const saveDeck = (newDeck: Flashcard[]) => {
+  const saveDeck = async (newDeck: Flashcard[]) => {
     setDeck(newDeck);
     setDueCards(newDeck.filter(c => c.nextReviewDate <= Date.now()));
-    localStorage.setItem('srs_deck', JSON.stringify(newDeck));
+    if (currentUser) {
+      await supabase.from('flashcards_decks').upsert({
+        user_id: currentUser.id,
+        cards: newDeck as any,
+        updated_at: new Date().toISOString()
+      }, { onConflict: 'user_id' });
+    }
   };
 
   const handleGrade = (grade: Grade) => {

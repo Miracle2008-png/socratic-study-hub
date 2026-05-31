@@ -2,9 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Target, TrendingUp, BookOpen, Calculator, Brain, ArrowRight, Loader2, Sparkles, AlertCircle, Clock } from 'lucide-react';
 import { usePremium } from '../context/PremiumContext';
 import { useStudyProgress } from '../context/StudyProgressContext';
+import { useAuth } from '../context/AuthContext';
+import { supabase } from '../utils/supabase';
 
 export const SatDashboard: React.FC<{ onStartModule: (domain: 'Reading & Writing' | 'Math') => void }> = ({ onStartModule }) => {
   const { toggleSatMode } = useStudyProgress();
+  const { currentUser } = useAuth();
   
   const [isAnalyzing, setIsAnalyzing] = useState(true);
   const [displayScore, setDisplayScore] = useState(0);
@@ -55,13 +58,16 @@ export const SatDashboard: React.FC<{ onStartModule: (domain: 'Reading & Writing
   }, [targetMath, targetReading, targetScore]);
 
   useEffect(() => {
-    // Fetch real scores from localStorage
-    const savedMath = localStorage.getItem('sat_score_math');
-    const savedReading = localStorage.getItem('sat_score_reading');
-    
-    if (savedMath) setTargetMath(parseInt(savedMath));
-    if (savedReading) setTargetReading(parseInt(savedReading));
-  }, []);
+    if (!currentUser) return;
+    const fetchScores = async () => {
+      const { data } = await supabase.from('sat_scores').select('*').eq('user_id', currentUser.id).single();
+      if (data) {
+        setTargetMath(data.math_score || 0);
+        setTargetReading(data.reading_score || 0);
+      }
+    };
+    fetchScores();
+  }, [currentUser]);
 
   // Domain weaknesses are hidden for now as we need granular data from mocks
   const domainWeaknesses: any[] = [];

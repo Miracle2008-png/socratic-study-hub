@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from 'react';
 import { useAuth } from './AuthContext';
+import { supabase } from '../utils/supabase';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 export interface TopicVisit {
@@ -66,30 +67,56 @@ export const StudyProgressProvider: React.FC<{ children: ReactNode }> = ({ child
 
   // Load when currentUser changes
   useEffect(() => {
-    const storageKey = currentUser?.email ? `study_progress_v1_${currentUser.email}` : 'study_progress_v1_guest';
-    try {
-      const raw = localStorage.getItem(storageKey);
-      if (!raw) {
+    const fetchProgress = async () => {
+      if (!currentUser) {
         setState(DEFAULT);
         return;
       }
-      const parsed = JSON.parse(raw) as StudyProgressState;
-      const currentWeekStart = todayWeekStart();
-      if (parsed.weekStartDate !== currentWeekStart) {
-        setState({ ...parsed, weeklyMinutes: 0, weekStartDate: currentWeekStart, studySessionStart: null });
-      } else {
-        setState({ ...parsed, studySessionStart: null });
+      try {
+        const { data, error } = await supabase
+          .from('study_progress')
+          .select('topic_scores')
+          .eq('user_id', currentUser.id)
+          .single();
+
+        if (error && error.code !== 'PGRST116') {
+          console.error("Failed to fetch study progress", error);
+          setState(DEFAULT);
+        } else if (data && data.topic_scores && Object.keys(data.topic_scores).length > 0) {
+          const parsed = data.topic_scores as unknown as StudyProgressState;
+          const currentWeekStart = todayWeekStart();
+          if (parsed.weekStartDate !== currentWeekStart) {
+            setState({ ...parsed, weeklyMinutes: 0, weekStartDate: currentWeekStart, studySessionStart: null });
+          } else {
+            setState({ ...parsed, studySessionStart: null });
+          }
+        } else {
+          setState(DEFAULT);
+        }
+      } catch (err) {
+        console.error("Study progress load error", err);
+        setState(DEFAULT);
       }
-    } catch {
-      setState(DEFAULT);
-    }
+    };
+    fetchProgress();
   }, [currentUser]);
 
   // Persist on every change
   useEffect(() => {
-    const storageKey = currentUser?.email ? `study_progress_v1_${currentUser.email}` : 'study_progress_v1_guest';
-    const toSave = { ...state };
-    localStorage.setItem(storageKey, JSON.stringify(toSave));
+    if (currentUser) {
+      const saveToDb = async () => {
+        const toSave = { ...state };
+        const { error } = await supabase.from('study_progress').upsert({
+          user_id: currentUser.id,
+          topic_scores: toSave as any,
+          updated_at: new Date().toISOString()
+        }, { onConflict: 'user_id' });
+        if (error) console.error("Failed to save study progress", error);
+      };
+      
+      const timeoutId = setTimeout(saveToDb, 1500); // Debounce
+      return () => clearTimeout(timeoutId);
+    }
   }, [state, currentUser]);
 
   // ── Record topic open ────────────────────────────────────────────────────

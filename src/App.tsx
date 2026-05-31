@@ -70,7 +70,7 @@ const AppContent: React.FC = () => {
   }, [activeMenu]);
   
   const { level, xp, streak, dailyGoalProgress, dailyGoalTarget, addXP } = useGamification();
-  const { currentUser, signOut } = useAuth();
+  const { currentUser, signOut, recoveryMode, clearRecoveryMode } = useAuth();
   const { recordTopicOpen, recordTopicClose, isSatMode } = useStudyProgress();
   const { freeInsights, isPro, upgradeToPro } = usePremium();
   
