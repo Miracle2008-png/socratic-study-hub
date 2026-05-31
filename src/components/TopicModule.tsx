@@ -104,7 +104,7 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId }) => {
         const textToProcess = topic.sections.map(s => s.content).join(' ');
         
         // Generate NLP data
-        const summary = TextRank.summarize(textToProcess, 0.15, 4);
+        const summary = TextRank.summarize(textToProcess, 0.5, 12);
         const flashcards = ContentGenerator.generateFlashcards(textToProcess);
         const quiz = ContentGenerator.generateQuiz(textToProcess);
         const exam = ContentGenerator.generateExamQuestions(textToProcess);

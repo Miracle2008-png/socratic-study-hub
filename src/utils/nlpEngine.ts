@@ -35,8 +35,9 @@ const STOP_WORDS = new Set([
 // --- 2. TOKENIZATION & STEMMING ---
 export class Tokenizer {
   static getSentences(text: string): string[] {
-    // Regex for sentence boundary detection handling abbreviations like "e.g.", "Dr."
-    const sentences = text.match(/[^.!?]+(?:[.!?](?!['"]?\s|$)[^.!?]*)*[.!?]?['"]?(?=\s|$)/g);
+    // Regex for sentence boundary detection, handling abbreviations and explicitly splitting on newlines
+    const textWithNewlinesProcessed = text.replace(/\n+/g, '. ');
+    const sentences = textWithNewlinesProcessed.match(/[^.!?]+(?:[.!?](?!['"]?\s|$)[^.!?]*)*[.!?]?['"]?(?=\s|$)/g);
     return sentences ? sentences.map(s => s.trim()).filter(s => s.length > 5) : [];
   }
 
@@ -189,6 +190,16 @@ export class TextRank {
         newScores[i] += d * sum;
       }
       scores = newScores;
+    }
+
+    // Boost scores of sentences that contain formulas or important mathematical symbols
+    const mathSymbols = ['+', '=', '/', '*', '^', '∫', '∑', '√', '∂', '∆', 'π', 'θ', 'α', 'β'];
+    for (let i = 0; i < sentences.length; i++) {
+       const sent = sentences[i];
+       const hasMath = mathSymbols.filter(s => sent.includes(s)).length >= 2 || (sent.includes('=') && sent.match(/\d/));
+       if (hasMath) {
+           scores[i] *= 2.0; // Heavily boost math sentences to ensure they are summarized
+       }
     }
 
     // Sort and extract top sentences
@@ -384,7 +395,7 @@ export class ContentGenerator {
 
      for (const sent of sentences) {
         // Method 1: Search for common equation structures (e.g. y = mx + c, F = ma)
-        const eqPattern = /([A-Za-z_α-ωΑ-Ω0-9()]+[ \t]*=[ \t]*[^.\n]+)/g;
+        const eqPattern = /([A-Za-z_α-ωΑ-Ω0-9()[\]{}^+\-*/\\]+[ \t]*=[ \t]*[^.\n]+)/g;
         const matches = sent.match(eqPattern);
         if (matches) {
            for (let match of matches) {

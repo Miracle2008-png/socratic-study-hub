@@ -209,7 +209,7 @@ const UploadHub: React.FC = () => {
   const runLocalEngine = (text: string) => {
     setUploadState('analyzing');
     setTimeout(() => {
-      const summary = TextRank.summarize(text, 0.3, 5);
+      const summary = TextRank.summarize(text, 0.5, 12);
       const flashcards = ContentGenerator.generateFlashcards(text);
       const quiz = ContentGenerator.generateQuiz(text);
       const exam = ContentGenerator.generateExamQuestions(text);
