@@ -54,9 +54,40 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
   });
 
   const dailyPct = Math.min(100, Math.round((dailyGoalProgress / dailyGoalTarget) * 100));
-  const circumference = 2 * Math.PI * 36;
-  const dashOffset = circumference - (circumference * dailyPct) / 100;
   const weeklyGoalPct = Math.min(100, Math.round((hoursThisWeek / studyGoal) * 100));
+
+  // Animations
+  const [animDailyPct, setAnimDailyPct] = React.useState(0);
+  const [animStreak, setAnimStreak] = React.useState(0);
+  const [animXp, setAnimXp] = React.useState(0);
+
+  React.useEffect(() => {
+    let startTime: number | null = null;
+    const duration = 1500; // 1.5s
+    let animationFrameId: number;
+
+    const animate = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      
+      // easeOutQuart
+      const ease = 1 - Math.pow(1 - progress, 4);
+      
+      setAnimDailyPct(Math.round(dailyPct * ease));
+      setAnimStreak(Math.round(streak * ease));
+      setAnimXp(Math.round(xp * ease));
+      
+      if (progress < 1) {
+        animationFrameId = requestAnimationFrame(animate);
+      }
+    };
+    
+    animationFrameId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animationFrameId);
+  }, [dailyPct, streak, xp]);
+
+  const circumference = 2 * Math.PI * 36;
+  const dashOffset = circumference - (circumference * animDailyPct) / 100;
 
   // Build subject progress from actual visited topics
   const subjectProgressData = Object.entries(SUBJECT_TOTAL_TOPICS).map(([subj, total]) => {
@@ -143,7 +174,7 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
               </defs>
             </svg>
             <div className="dash-ring-inner">
-              <div className="dash-ring-pct">{dailyPct}%</div>
+              <div className="dash-ring-pct">{animDailyPct}%</div>
               <div className="dash-ring-label">Daily Goal</div>
             </div>
           </div>
@@ -152,7 +183,7 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
             <div className="dash-badge-item">
               <Flame size={20} style={{ color: '#f97316' }} />
               <div>
-                <div className="dash-badge-num" style={{ color: '#f97316' }}>{streak}</div>
+                <div className="dash-badge-num" style={{ color: '#f97316' }}>{animStreak}</div>
                 <div className="dash-badge-lbl">Streak</div>
               </div>
             </div>
@@ -161,7 +192,7 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
               <Award size={20} style={{ color: '#8b5cf6' }} />
               <div>
                 <div className="dash-badge-num" style={{ color: '#8b5cf6' }}>Lv {level}</div>
-                <div className="dash-badge-lbl">{xp.toLocaleString()} XP</div>
+                <div className="dash-badge-lbl">{animXp.toLocaleString()} XP</div>
               </div>
             </div>
           </div>

@@ -33,24 +33,19 @@ export const GamificationProvider: React.FC<{ children: ReactNode }> = ({ childr
   const [state, setState] = useState<GamificationState>(defaultState);
   const [loaded, setLoaded] = useState(false);
 
-  // Fetch from Supabase
+  // Fetch from localStorage
   useEffect(() => {
-    const fetchProgress = async () => {
-      if (!currentUser) return;
+    const fetchProgress = () => {
+      const storageKey = currentUser?.email ? `gamification_v1_${currentUser.email}` : 'gamification_v1_guest';
       try {
-        const { data, error } = await supabase
-          .from('users')
-          .select('*')
-          .eq('id', currentUser.id)
-          .single();
-          
-        if (data && !error) {
-          // Exclude the id from the state to match GamificationState exactly
-          const { id, ...cloudState } = data;
-          setState(cloudState as GamificationState);
+        const raw = localStorage.getItem(storageKey);
+        if (raw) {
+          setState(JSON.parse(raw));
+        } else {
+          setState(defaultState);
         }
       } catch (err) {
-        console.error("Failed to load cloud save", err);
+        console.error("Failed to load local save", err);
       } finally {
         setLoaded(true);
       }
@@ -58,19 +53,15 @@ export const GamificationProvider: React.FC<{ children: ReactNode }> = ({ childr
     fetchProgress();
   }, [currentUser]);
 
-  // Save to Supabase
+  // Save to localStorage
   useEffect(() => {
-    if (loaded && currentUser) {
-      const saveProgress = async () => {
-        try {
-          await supabase
-            .from('users')
-            .upsert({ id: currentUser.id, ...state });
-        } catch (err) {
-          console.error("Failed to cloud save", err);
-        }
-      };
-      saveProgress();
+    if (loaded) {
+      const storageKey = currentUser?.email ? `gamification_v1_${currentUser.email}` : 'gamification_v1_guest';
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(state));
+      } catch (err) {
+        console.error("Failed to local save", err);
+      }
     }
   }, [state, loaded, currentUser]);
 

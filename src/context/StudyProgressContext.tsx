@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from 'react';
+import { useAuth } from './AuthContext';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 export interface TopicVisit {
@@ -56,27 +57,40 @@ const StudyProgressContext = createContext<StudyProgressContextType | undefined>
 
 // ── Provider ─────────────────────────────────────────────────────────────────
 export const StudyProgressProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+  const { currentUser } = useAuth();
+  
   const [state, setState] = useState<StudyProgressState>(() => {
+    // We defer loading to a useEffect so we can use currentUser
+    return DEFAULT;
+  });
+
+  // Load when currentUser changes
+  useEffect(() => {
+    const storageKey = currentUser?.email ? `study_progress_v1_${currentUser.email}` : 'study_progress_v1_guest';
     try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (!raw) return DEFAULT;
+      const raw = localStorage.getItem(storageKey);
+      if (!raw) {
+        setState(DEFAULT);
+        return;
+      }
       const parsed = JSON.parse(raw) as StudyProgressState;
-      // Reset weekly minutes if we're in a new week
       const currentWeekStart = todayWeekStart();
       if (parsed.weekStartDate !== currentWeekStart) {
-        return { ...parsed, weeklyMinutes: 0, weekStartDate: currentWeekStart, studySessionStart: null };
+        setState({ ...parsed, weeklyMinutes: 0, weekStartDate: currentWeekStart, studySessionStart: null });
+      } else {
+        setState({ ...parsed, studySessionStart: null });
       }
-      return { ...parsed, studySessionStart: null }; // always clear in-progress session on reload
     } catch {
-      return DEFAULT;
+      setState(DEFAULT);
     }
-  });
+  }, [currentUser]);
 
   // Persist on every change
   useEffect(() => {
+    const storageKey = currentUser?.email ? `study_progress_v1_${currentUser.email}` : 'study_progress_v1_guest';
     const toSave = { ...state };
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(toSave));
-  }, [state]);
+    localStorage.setItem(storageKey, JSON.stringify(toSave));
+  }, [state, currentUser]);
 
   // ── Record topic open ────────────────────────────────────────────────────
   const recordTopicOpen = useCallback((topicId: string, subject: string, label?: string) => {

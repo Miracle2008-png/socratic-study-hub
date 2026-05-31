@@ -19,7 +19,7 @@ export const PremiumProvider: React.FC<{ children: React.ReactNode }> = ({ child
 
   useEffect(() => {
     // Determine which storage key to use based on authentication status
-    const storageKey = currentUser ? 'lumen_user_insights' : 'lumen_guest_insights';
+    const storageKey = currentUser?.email ? `lumen_user_insights_${currentUser.email}` : 'lumen_guest_insights';
     const maxInsights = currentUser ? 10 : 3;
     
     const savedInsights = localStorage.getItem(storageKey);
@@ -38,7 +38,7 @@ export const PremiumProvider: React.FC<{ children: React.ReactNode }> = ({ child
       const newInsights = freeInsights - 1;
       setFreeInsights(newInsights);
       
-      const storageKey = currentUser ? 'lumen_user_insights' : 'lumen_guest_insights';
+      const storageKey = currentUser?.email ? `lumen_user_insights_${currentUser.email}` : 'lumen_guest_insights';
       localStorage.setItem(storageKey, newInsights.toString());
       
       // Show toast
