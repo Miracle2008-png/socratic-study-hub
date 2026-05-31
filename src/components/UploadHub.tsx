@@ -292,12 +292,21 @@ const UploadHub: React.FC = () => {
         <div className="results-content luxury-card">
           {activeResultTab === 'summary' && (
             <div className="summary-view">
-              <h3>Extractive Summary (TextRank Algorithm)</h3>
-              <ul>
-                {results.summary.map((sent, i) => (
-                  <li key={i}><p>{sent}</p></li>
-                ))}
-              </ul>
+              <h3>📄 AI Document Summary</h3>
+              <div className="summary-sentences">
+                {results.summary.length > 0 ? results.summary.map((sent, i) => (
+                  <div key={i} className="summary-sentence-card">
+                    <span className="sentence-num">{i + 1}</span>
+                    <div className="sentence-text">
+                      <ReactMarkdown remarkPlugins={[remarkMath, remarkGfm]} rehypePlugins={[rehypeKatex]}>{sent}</ReactMarkdown>
+                    </div>
+                  </div>
+                )) : (
+                  <div style={{ padding: '40px', textAlign: 'center', color: 'var(--color-text-muted)' }}>
+                    No summary could be extracted. Try uploading a longer document.
+                  </div>
+                )}
+              </div>
             </div>
           )}
 
@@ -432,8 +441,12 @@ const UploadHub: React.FC = () => {
           .results-content { padding: 40px; min-height: 400px; }
           .results-content h3 { display: flex; align-items: center; font-family: var(--font-display); color: var(--color-text-primary); border-bottom: 2px solid var(--color-accent); padding-bottom: 12px; margin-bottom: 24px; }
           
-          .summary-view ul { padding-left: 20px; color: var(--color-text-primary); line-height: 1.6; }
-          .summary-view li { margin-bottom: 16px; }
+          .summary-sentences { display: flex; flex-direction: column; gap: 14px; }
+          .summary-sentence-card { display: flex; gap: 16px; align-items: flex-start; padding: 16px 20px; background: var(--color-base-alt); border: 1px solid var(--color-border); border-radius: 12px; transition: border-color 0.2s, box-shadow 0.2s; }
+          .summary-sentence-card:hover { border-color: rgba(212,175,55,0.35); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+          .sentence-num { flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: rgba(212,175,55,0.12); border: 1px solid rgba(212,175,55,0.25); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: var(--color-accent); }
+          .sentence-text { flex: 1; font-size: 14.5px; line-height: 1.7; color: var(--color-text-primary); }
+          .sentence-text p { margin: 0; }
 
           .fc-summary-panel { margin-bottom: 32px; }
           .fc-stats { display: flex; gap: 12px; margin-bottom: 16px; }

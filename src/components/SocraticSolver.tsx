@@ -117,7 +117,7 @@ const SocraticSolver: React.FC = () => {
   // Initialize chat
   useEffect(() => {
     setMessages([
-      { id: 'msg-0', sender: 'system', text: `**Problem:** ${MOCK_PROBLEM.context} \\n\\n**Goal:** ${MOCK_PROBLEM.goal}`, timestamp: Date.now() },
+      { id: 'msg-0', sender: 'system', text: `**Problem:** ${MOCK_PROBLEM.context}\n\n**Goal:** ${MOCK_PROBLEM.goal}`, timestamp: Date.now() },
       { id: 'msg-1', sender: 'tutor', text: MOCK_PROBLEM.initialMessage, timestamp: Date.now() + 100 }
     ]);
   }, []);

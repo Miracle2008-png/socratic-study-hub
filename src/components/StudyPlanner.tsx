@@ -1,44 +1,75 @@
-import React, { useState } from 'react';
-import { Calendar as CalendarIcon, Clock, CheckCircle, Circle, Plus, Target, Wand2, Loader2, BookOpen, FlaskConical, Calculator } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Calendar as CalendarIcon, Clock, CheckCircle, Circle, Plus, Target, Wand2, Loader2, BookOpen, FlaskConical, Calculator, Trash2 } from 'lucide-react';
+
+interface Task {
+  id: number;
+  title: string;
+  subject: string;
+  time: string;
+  completed: boolean;
+}
+
+interface Event {
+  id: number;
+  title: string;
+  desc: string;
+  month: string;
+  day: string;
+}
 
 const StudyPlanner: React.FC = () => {
-  const [tasks, setTasks] = useState([
-    { id: 1, title: 'Upload my first document', subject: 'Getting Started', time: '2:00 PM', completed: false },
-    { id: 2, title: 'Review automatically generated summary', subject: 'Review', time: '4:30 PM', completed: true },
-    { id: 3, title: 'Create a custom study schedule', subject: 'Planning', time: '7:00 PM', completed: false },
-  ]);
+  const [tasks, setTasks] = useState<Task[]>([]);
+  const [events, setEvents] = useState<Event[]>([]);
+
+  useEffect(() => {
+    const savedTasks = localStorage.getItem('lumen_study_tasks');
+    const savedEvents = localStorage.getItem('lumen_study_events');
+    if (savedTasks) setTasks(JSON.parse(savedTasks));
+    if (savedEvents) setEvents(JSON.parse(savedEvents));
+  }, []);
+
+  const saveTasks = (newTasks: Task[]) => {
+    setTasks(newTasks);
+    localStorage.setItem('lumen_study_tasks', JSON.stringify(newTasks));
+  };
+
+  const saveEvents = (newEvents: Event[]) => {
+    setEvents(newEvents);
+    localStorage.setItem('lumen_study_events', JSON.stringify(newEvents));
+  };
 
   const [isGenerating, setIsGenerating] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [showEventModal, setShowEventModal] = useState(false);
   const [newTask, setNewTask] = useState({ title: '', subject: 'Math', time: '12:00 PM' });
+  const [newEvent, setNewEvent] = useState({ title: '', desc: '', month: 'NOV', day: '15' });
 
   const toggleTask = (id: number) => {
-    setTasks(tasks.map(t => t.id === id ? { ...t, completed: !t.completed } : t));
+    saveTasks(tasks.map(t => t.id === id ? { ...t, completed: !t.completed } : t));
   };
 
   const deleteTask = (id: number) => {
-    setTasks(tasks.filter(t => t.id !== id));
+    saveTasks(tasks.filter(t => t.id !== id));
+  };
+
+  const deleteEvent = (id: number) => {
+    saveEvents(events.filter(e => e.id !== id));
   };
 
   const addTask = () => {
     if (newTask.title.trim()) {
-      setTasks([...tasks, { id: Date.now(), ...newTask, completed: false }]);
+      saveTasks([...tasks, { id: Date.now(), ...newTask, completed: false }]);
       setShowModal(false);
       setNewTask({ title: '', subject: 'Math', time: '12:00 PM' });
     }
   };
 
-  const autoGeneratePlan = () => {
-    setIsGenerating(true);
-    setTimeout(() => {
-      setTasks([
-        { id: 1, title: 'Review Uploaded Document Notes', subject: 'Study', time: '1:00 PM', completed: false },
-        { id: 2, title: 'Generate & Practice Flashcards', subject: 'Study', time: '3:30 PM', completed: false },
-        { id: 3, title: 'Test Knowledge in 3D Visualizer', subject: 'Practice', time: '6:00 PM', completed: false },
-        { id: 4, title: 'Summarize Key Concepts', subject: 'Review', time: '8:00 PM', completed: false },
-      ]);
-      setIsGenerating(false);
-    }, 1500);
+  const addEvent = () => {
+    if (newEvent.title.trim() && newEvent.month.trim() && newEvent.day.trim()) {
+      saveEvents([...events, { id: Date.now(), ...newEvent }]);
+      setShowEventModal(false);
+      setNewEvent({ title: '', desc: '', month: 'NOV', day: '15' });
+    }
   };
 
   const completedTasksCount = tasks.filter(t => t.completed).length;
@@ -69,14 +100,6 @@ const StudyPlanner: React.FC = () => {
           <div className="column-header">
             <h4>Today's Agenda</h4>
             <div style={{ display: 'flex', gap: '12px' }}>
-              <button 
-                className="gold-btn glass-btn" 
-                onClick={autoGeneratePlan}
-                disabled={isGenerating}
-              >
-                {isGenerating ? <Loader2 size={16} className="spin" /> : <Wand2 size={16} />}
-                {isGenerating ? 'Synthesizing...' : 'Auto-Generate'}
-              </button>
               <button className="gold-btn icon-only glass-btn" onClick={() => setShowModal(true)}>
                 <Plus size={18} />
               </button>
@@ -144,28 +167,38 @@ const StudyPlanner: React.FC = () => {
           </div>
 
           <div className="premium-glass-card upcoming-card">
-            <h4>Upcoming Events</h4>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px', borderBottom: '1px solid rgba(212, 175, 55, 0.1)', paddingBottom: '16px' }}>
+              <h4 style={{ margin: 0, padding: 0, border: 'none' }}>Upcoming Events</h4>
+              <button className="gold-btn icon-only glass-btn" onClick={() => setShowEventModal(true)} style={{ padding: '6px' }}>
+                <Plus size={14} />
+              </button>
+            </div>
             <ul className="exam-list">
-              <li>
-                <div className="exam-date">
-                  <span className="month">NOV</span>
-                  <span className="day">12</span>
+              {events.map((ev) => (
+                <li key={ev.id} style={{ position: 'relative' }}>
+                  <div className="exam-date">
+                    <span className="month">{ev.month}</span>
+                    <span className="day">{ev.day}</span>
+                  </div>
+                  <div className="exam-info">
+                    <h5>{ev.title}</h5>
+                    <p>{ev.desc}</p>
+                  </div>
+                  <button 
+                    className="task-delete-btn" 
+                    onClick={() => deleteEvent(ev.id)}
+                    style={{ position: 'absolute', top: '10px', right: '10px', opacity: 0.5 }}
+                    title="Delete Event"
+                  >
+                    <Trash2 size={14} />
+                  </button>
+                </li>
+              ))}
+              {events.length === 0 && (
+                <div style={{ textAlign: 'center', color: 'var(--color-text-muted)', fontSize: '13px', marginTop: '20px' }}>
+                  No upcoming events scheduled.
                 </div>
-                <div className="exam-info">
-                  <h5>Midterm Exam</h5>
-                  <p>Comprehensive coverage of chapters 1-4.</p>
-                </div>
-              </li>
-              <li>
-                <div className="exam-date">
-                  <span className="month">NOV</span>
-                  <span className="day">18</span>
-                </div>
-                <div className="exam-info">
-                  <h5>Final Presentation</h5>
-                  <p>Present findings from uploaded documents.</p>
-                </div>
-              </li>
+              )}
             </ul>
           </div>
         </div>
@@ -204,6 +237,54 @@ const StudyPlanner: React.FC = () => {
             <div className="modal-actions">
               <button className="cancel-btn" onClick={() => setShowModal(false)}>Cancel</button>
               <button className="gold-btn glass-btn" onClick={addTask}>Add Task</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showEventModal && (
+        <div className="modal-overlay" onClick={() => setShowEventModal(false)}>
+          <div className="modal-content premium-glass-card" onClick={e => e.stopPropagation()}>
+            <h4>Add Upcoming Event</h4>
+            <div className="modal-form">
+              <input 
+                type="text" 
+                placeholder="Event Title (e.g., Final Exam)" 
+                value={newEvent.title} 
+                onChange={e => setNewEvent({...newEvent, title: e.target.value})} 
+                className="glass-input"
+                autoFocus
+              />
+              <input 
+                type="text" 
+                placeholder="Description" 
+                value={newEvent.desc} 
+                onChange={e => setNewEvent({...newEvent, desc: e.target.value})} 
+                className="glass-input"
+              />
+              <div className="modal-form-row">
+                <input 
+                  type="text" 
+                  placeholder="Month (e.g. NOV)" 
+                  value={newEvent.month} 
+                  onChange={e => setNewEvent({...newEvent, month: e.target.value})} 
+                  className="glass-input"
+                  style={{ textTransform: 'uppercase' }}
+                  maxLength={3}
+                />
+                <input 
+                  type="text" 
+                  placeholder="Day (e.g. 15)" 
+                  value={newEvent.day} 
+                  onChange={e => setNewEvent({...newEvent, day: e.target.value})} 
+                  className="glass-input"
+                  maxLength={2}
+                />
+              </div>
+            </div>
+            <div className="modal-actions">
+              <button className="cancel-btn" onClick={() => setShowEventModal(false)}>Cancel</button>
+              <button className="gold-btn glass-btn" onClick={addEvent}>Add Event</button>
             </div>
           </div>
         </div>

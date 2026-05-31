@@ -12,10 +12,10 @@ export const SatDashboard: React.FC<{ onStartModule: (domain: 'Reading & Writing
   const [displayReading, setDisplayReading] = useState(0);
   const [showBars, setShowBars] = useState(false);
 
-  // Target Scores
-  const targetScore = 1320; 
-  const targetMath = 680;
-  const targetReading = 640;
+  // Target Scores (Real Data)
+  const [targetMath, setTargetMath] = useState(0);
+  const [targetReading, setTargetReading] = useState(0);
+  const targetScore = targetMath + targetReading;
 
   useEffect(() => {
     // Simulate analyzing past mock data
@@ -52,14 +52,19 @@ export const SatDashboard: React.FC<{ onStartModule: (domain: 'Reading & Writing
     }, 2000);
 
     return () => clearTimeout(analyzeTimer);
+  }, [targetMath, targetReading, targetScore]);
+
+  useEffect(() => {
+    // Fetch real scores from localStorage
+    const savedMath = localStorage.getItem('sat_score_math');
+    const savedReading = localStorage.getItem('sat_score_reading');
+    
+    if (savedMath) setTargetMath(parseInt(savedMath));
+    if (savedReading) setTargetReading(parseInt(savedReading));
   }, []);
 
-  const domainWeaknesses = [
-    { title: "Heart of Algebra", pct: 85, color: "#10b981" },
-    { title: "Information & Ideas", pct: 60, color: "#f59e0b" },
-    { title: "Advanced Math", pct: 45, color: "#ef4444" },
-    { title: "Craft & Structure", pct: 75, color: "#3b82f6" }
-  ];
+  // Domain weaknesses are hidden for now as we need granular data from mocks
+  const domainWeaknesses: any[] = [];
 
   if (isAnalyzing) {
     return (
@@ -195,9 +200,19 @@ export const SatDashboard: React.FC<{ onStartModule: (domain: 'Reading & Writing
             </div>
             
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '28px 48px' }}>
-              {domainWeaknesses.map((domain, i) => (
-                <DomainBar key={i} title={domain.title} pct={domain.pct} color={domain.color} show={showBars} index={i} />
-              ))}
+              {targetScore === 0 ? (
+                <div style={{ gridColumn: '1 / -1', padding: '20px', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', color: 'var(--color-text-muted)', fontSize: '14px', textAlign: 'center' }}>
+                  Take a mock exam to reveal your domain weaknesses.
+                </div>
+              ) : domainWeaknesses.length > 0 ? (
+                domainWeaknesses.map((domain, i) => (
+                  <DomainBar key={i} title={domain.title} pct={domain.pct} color={domain.color} show={showBars} index={i} />
+                ))
+              ) : (
+                <div style={{ gridColumn: '1 / -1', padding: '20px', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', color: 'var(--color-text-muted)', fontSize: '14px', textAlign: 'center' }}>
+                  Detailed domain analysis requires taking more mock exams to generate sufficient data.
+                </div>
+              )}
             </div>
           </div>
 

@@ -89,10 +89,24 @@ export const SatMockExam: React.FC<SatMockExamProps> = ({ domain, onExit }) => {
 
   const submitExam = () => {
     setExamState('results');
-    const score = Object.entries(answers).reduce((acc, [qIdx, aIdx]) => {
+    const correctCount = Object.entries(answers).reduce((acc, [qIdx, aIdx]) => {
       return aIdx === questions[parseInt(qIdx)].correctIndex ? acc + 1 : acc;
     }, 0);
-    addXP(score * 400, `SAT ${domain} Module Completed`);
+    
+    // Calculate SAT score out of 800 (rough approximation: 200 base + 600 * (correct/total))
+    const totalQuestions = questions.length;
+    const scaledScore = totalQuestions > 0 ? 200 + Math.round((correctCount / totalQuestions) * 600) : 200;
+    
+    // Round to nearest 10
+    const finalScore = Math.round(scaledScore / 10) * 10;
+    
+    if (domain === 'Math') {
+      localStorage.setItem('sat_score_math', finalScore.toString());
+    } else {
+      localStorage.setItem('sat_score_reading', finalScore.toString());
+    }
+    
+    addXP(correctCount * 400, `SAT ${domain} Module Completed`);
   };
 
   const formatTime = (secs: number) => {

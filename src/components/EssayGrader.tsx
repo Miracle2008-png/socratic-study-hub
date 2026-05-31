@@ -3,6 +3,7 @@ import { PenTool, Target, UploadCloud, ChevronRight, Activity, FileText, CheckCi
 import { usePremium } from '../context/PremiumContext';
 import { useGamification } from '../context/GamificationContext';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { GeminiService } from '../services/GeminiService';
 
 export const EssayGrader: React.FC = () => {
@@ -112,7 +113,7 @@ export const EssayGrader: React.FC = () => {
           <div className="feedback-content" style={{ flex: 1, background: 'var(--color-base-alt)', borderRadius: '12px', border: '1px solid var(--color-border)', padding: '24px', overflowY: 'auto' }}>
             {feedback ? (
               <div className="markdown-body">
-                <ReactMarkdown>{feedback}</ReactMarkdown>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>{feedback}</ReactMarkdown>
               </div>
             ) : isGrading ? (
               <div style={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '16px', color: 'var(--color-text-muted)' }}>

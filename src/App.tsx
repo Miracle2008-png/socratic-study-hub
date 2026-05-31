@@ -243,9 +243,35 @@ const AppContent: React.FC = () => {
     return map[id] || id;
   };
 
+  // ── Full-screen login gate ──────────────────────────────────────────────────
+  if (!currentUser) {
+    return (
+      <div className="login-bg">
+        {/* Floating orb particles */}
+        {[...Array(6)].map((_, i) => (
+          <div
+            key={i}
+            className="login-orb"
+            style={{
+              width: `${8 + i * 4}px`,
+              height: `${8 + i * 4}px`,
+              left: `${10 + i * 15}%`,
+              bottom: `-${20 + i * 5}px`,
+              background: i % 2 === 0 ? 'var(--color-accent)' : '#6366f1',
+              animationDuration: `${10 + i * 3}s`,
+              animationDelay: `${i * 1.5}s`,
+            }}
+          />
+        ))}
+        <LoginScreen />
+      </div>
+    );
+  }
+
   return (
     <div className={`app-container ${isFocusMode ? 'focus-mode-active' : ''} ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`} data-layout={fullWidth ? 'full' : 'constrained'}>
       {!isFocusMode && (
+
         <Sidebar
           activeTab={activeTab}
           setActiveTab={(tab) => {

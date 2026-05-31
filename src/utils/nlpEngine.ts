@@ -408,7 +408,7 @@ export class ContentGenerator {
      
      // Fallback: If no formulas found but document has equations, scan raw lines
      if (formulas.length === 0) {
-        const lines = text.split('\\n');
+        const lines = text.split('\n');
         for (const line of lines) {
            if (line.includes('=') && line.trim().length > 3 && line.trim().length < 50) {
               formulas.push({ formula: line.trim(), context: 'Extracted from text line' });
