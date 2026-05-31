@@ -55,7 +55,7 @@ const AppContent: React.FC = () => {
     localStorage.setItem('lumen_full_width', String(fullWidth));
   }, [fullWidth]);
 
-  const [activeMenu, setActiveMenu] = useState<'notifications' | 'settings' | 'profile' | null>(null);
+  const [activeMenu, setActiveMenu] = useState<'notifications' | 'settings' | 'profile' | 'profile_modal' | 'stats_modal' | null>(null);
   const profileDropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -390,8 +390,8 @@ const AppContent: React.FC = () => {
                           <h4>{currentUser.user_metadata?.full_name || currentUser.email?.split('@')[0] || 'Scholar'}</h4>
                           <p className="dd-subtitle">Lumen Academic</p>
                         </div>
-                        <button className="dropdown-item" onClick={() => { setActiveTab('dashboard'); setActiveMenu(null); }}>My Profile</button>
-                        <button className="dropdown-item" onClick={() => { setActiveTab('dashboard'); setActiveMenu(null); }}>Progress Stats</button>
+                        <button className="dropdown-item" onClick={() => setActiveMenu('profile_modal')}>My Profile</button>
+                        <button className="dropdown-item" onClick={() => setActiveMenu('stats_modal')}>Progress Stats</button>
                         <button className="dropdown-item" onClick={() => setActiveMenu('settings')}>Settings</button>
                         <div style={{ height: 1, background: 'var(--color-border)', margin: '4px 0' }} />
                         <button className="dropdown-item" style={{ color: '#ef4444' }} onClick={() => { mockLogout(); setActiveMenu(null); }}>Sign Out</button>
@@ -487,7 +487,71 @@ const AppContent: React.FC = () => {
         </div>
       )}
 
-      {(activeMenu === 'notifications' || activeMenu === 'profile') && (
+      {activeMenu === 'profile_modal' && (
+        <div className="modal-overlay" onClick={() => setActiveMenu(null)}>
+          <div className="settings-modal luxury-card anim-fade" onClick={e => e.stopPropagation()}>
+            <div className="modal-header">
+              <h2>My Profile</h2>
+              <button className="icon-btn" onClick={() => setActiveMenu(null)}>
+                <X size={20} />
+              </button>
+            </div>
+            <div className="modal-body" style={{ alignItems: 'center', textAlign: 'center' }}>
+              <div className="avatar" style={{ width: 80, height: 80, fontSize: 32, marginBottom: 16 }}>
+                {(currentUser.user_metadata?.full_name?.[0] || currentUser.email?.[0] || 'S').toUpperCase()}
+              </div>
+              <h3 style={{ fontSize: 20, fontWeight: 600, color: 'var(--color-text-primary)' }}>
+                {currentUser.user_metadata?.full_name || currentUser.email?.split('@')[0] || 'Scholar'}
+              </h3>
+              <p style={{ color: 'var(--color-text-secondary)', fontSize: 14 }}>{currentUser.email}</p>
+              
+              <div style={{ display: 'flex', gap: 24, marginTop: 24, width: '100%', justifyContent: 'center' }}>
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontSize: 24, fontWeight: 700, color: 'var(--color-accent)' }}>{level}</div>
+                  <div style={{ fontSize: 12, color: 'var(--color-text-muted)' }}>Level</div>
+                </div>
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontSize: 24, fontWeight: 700, color: '#ef4444' }}>{streak}</div>
+                  <div style={{ fontSize: 12, color: 'var(--color-text-muted)' }}>Day Streak</div>
+                </div>
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontSize: 24, fontWeight: 700, color: '#3b82f6' }}>{xp}</div>
+                  <div style={{ fontSize: 12, color: 'var(--color-text-muted)' }}>Total XP</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {activeMenu === 'stats_modal' && (
+        <div className="modal-overlay" onClick={() => setActiveMenu(null)}>
+          <div className="settings-modal luxury-card anim-fade" onClick={e => e.stopPropagation()}>
+            <div className="modal-header">
+              <h2>Progress Stats</h2>
+              <button className="icon-btn" onClick={() => setActiveMenu(null)}>
+                <X size={20} />
+              </button>
+            </div>
+            <div className="modal-body">
+              <div style={{ padding: 16, background: 'var(--color-base)', borderRadius: 12 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
+                  <span style={{ fontSize: 13, color: 'var(--color-text-secondary)' }}>Daily Goal</span>
+                  <span style={{ fontSize: 13, fontWeight: 600, color: 'var(--color-accent)' }}>{dailyGoalProgress} / {dailyGoalTarget} XP</span>
+                </div>
+                <div style={{ height: 8, background: 'var(--color-base-alt)', borderRadius: 4, overflow: 'hidden' }}>
+                  <div style={{ height: '100%', width: `${Math.min(100, (dailyGoalProgress / dailyGoalTarget) * 100)}%`, background: 'var(--color-accent)', borderRadius: 4 }} />
+                </div>
+                <p style={{ fontSize: 12, color: 'var(--color-text-muted)', marginTop: 12, textAlign: 'center' }}>
+                  Keep learning to reach your daily goal!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {activeMenu === 'notifications' && (
         <div 
           className="click-outside-overlay" 
           onClick={() => setActiveMenu(null)}
