@@ -79,7 +79,7 @@ interface LoginScreenProps {
 
 // ── Main component ─────────────────────────────────────────────────────────────
 export const LoginScreen: React.FC<LoginScreenProps> = ({ onClose }) => {
-  const [view, setView] = useState<View>('login');
+  const [view, setView] = useState<View>('signup');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
