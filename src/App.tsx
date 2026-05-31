@@ -56,6 +56,17 @@ const AppContent: React.FC = () => {
   }, [fullWidth]);
 
   const [activeMenu, setActiveMenu] = useState<'notifications' | 'settings' | 'profile' | null>(null);
+  const profileDropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (activeMenu === 'profile' && profileDropdownRef.current && !profileDropdownRef.current.contains(event.target as Node)) {
+        setActiveMenu(null);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [activeMenu]);
   
   const { level, xp, streak, dailyGoalProgress, dailyGoalTarget, addXP } = useGamification();
   const { currentUser, mockLogout } = useAuth();
@@ -353,7 +364,7 @@ const AppContent: React.FC = () => {
                 <Calculator size={18} />
               </button>
 
-              <div className="topbar-dropdown-wrap" style={{ zIndex: activeMenu ? 101 : 1 }}>
+              <div className="topbar-dropdown-wrap" ref={profileDropdownRef}>
                 {!currentUser ? (
                   <button className="gold-btn" style={{ padding: '8px 16px', fontSize: 13 }} onClick={() => setShowLoginModal(true)}>
                     Sign In
@@ -390,13 +401,6 @@ const AppContent: React.FC = () => {
                 )}
               </div>
             </div>
-            
-            {activeMenu && (
-              <div 
-                style={{ position: 'fixed', inset: 0, zIndex: 100 }} 
-                onClick={() => setActiveMenu(null)}
-              />
-            )}
           </header>
         )}
 
