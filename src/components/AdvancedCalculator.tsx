@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
   X, Calculator, History, Sparkles, Copy, Trash2, 
-  Settings, HelpCircle, Delete, CornerDownLeft, ChevronLeft, ChevronRight 
+  Settings, HelpCircle, Delete, CornerDownLeft, ChevronLeft, ChevronRight,
+  ZoomIn, ZoomOut
 } from 'lucide-react';
 import * as math from 'mathjs';
 
@@ -40,6 +41,7 @@ export const AdvancedCalculator: React.FC<AdvancedCalculatorProps> = ({ isOpen, 
   
   // Compute position lazily on first render so it's never off-screen
   const [position, setPosition] = useState<{ x: number; y: number } | null>(null);
+  const [scale, setScale] = useState(1);
   const [dragging, setDragging] = useState(false);
   const dragStart = useRef({ x: 0, y: 0 });
   const calculatorRef = useRef<HTMLDivElement>(null);
@@ -353,22 +355,32 @@ export const AdvancedCalculator: React.FC<AdvancedCalculatorProps> = ({ isOpen, 
   };
 
   // Dragging event handlers
-  const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
+  const handleMouseDown = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
     // Only drag from title bar, not buttons
     if ((e.target as HTMLElement).closest('button')) return;
     setDragging(true);
+    
+    const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
+    const clientY = 'touches' in e ? e.touches[0].clientY : e.clientY;
+
     dragStart.current = {
-      x: e.clientX - safePos.x,
-      y: e.clientY - safePos.y
+      x: clientX - safePos.x,
+      y: clientY - safePos.y
     };
   };
 
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
+    const handleMouseMove = (e: MouseEvent | TouchEvent) => {
       if (!dragging) return;
+      const clientX = 'touches' in e ? e.touches[0].clientX : (e as MouseEvent).clientX;
+      const clientY = 'touches' in e ? e.touches[0].clientY : (e as MouseEvent).clientY;
+      
+      const currentWidth = (showPanel ? 740 : 380) * scale;
+      const currentHeight = 520 * scale;
+      
       // Clamp to window boundaries
-      const newX = Math.max(10, Math.min(window.innerWidth - (showPanel ? 760 : 380), e.clientX - dragStart.current.x));
-      const newY = Math.max(10, Math.min(window.innerHeight - 500, e.clientY - dragStart.current.y));
+      const newX = Math.max(10, Math.min(window.innerWidth - currentWidth - 10, clientX - dragStart.current.x));
+      const newY = Math.max(10, Math.min(window.innerHeight - currentHeight - 10, clientY - dragStart.current.y));
       setPosition({ x: newX, y: newY });
     };
 
@@ -379,13 +391,17 @@ export const AdvancedCalculator: React.FC<AdvancedCalculatorProps> = ({ isOpen, 
     if (dragging) {
       document.addEventListener('mousemove', handleMouseMove);
       document.addEventListener('mouseup', handleMouseUp);
+      document.addEventListener('touchmove', handleMouseMove, { passive: false });
+      document.addEventListener('touchend', handleMouseUp);
     }
 
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener('mouseup', handleMouseUp);
+      document.removeEventListener('touchmove', handleMouseMove);
+      document.removeEventListener('touchend', handleMouseUp);
     };
-  }, [dragging, showPanel]);
+  }, [dragging, showPanel, scale]);
 
   if (!isOpen) return null;
 
@@ -403,7 +419,9 @@ export const AdvancedCalculator: React.FC<AdvancedCalculatorProps> = ({ isOpen, 
         background: 'var(--color-glass)',
         border: '1px solid var(--color-border-strong)',
         boxShadow: 'var(--shadow-lg), var(--shadow-glow-sm)',
-        color: 'var(--color-text-primary)'
+        color: 'var(--color-text-primary)',
+        transform: `scale(${scale})`,
+        transformOrigin: 'top left',
       } as React.CSSProperties}
     >
       {/* Sidebar Panel inside Calculator */}
@@ -531,6 +549,7 @@ export const AdvancedCalculator: React.FC<AdvancedCalculatorProps> = ({ isOpen, 
         <div 
           className="calc-titlebar"
           onMouseDown={handleMouseDown}
+          onTouchStart={handleMouseDown}
           style={{ cursor: dragging ? 'grabbing' : 'grab' }}
         >
           <div className="calc-title">
@@ -538,6 +557,20 @@ export const AdvancedCalculator: React.FC<AdvancedCalculatorProps> = ({ isOpen, 
             <span className="font-bold letter-spacing-1">LUMEN-X ENGINE</span>
           </div>
           <div className="calc-actions">
+            <button 
+              className="icon-btn-calc-toggle" 
+              onClick={() => setScale(s => Math.max(0.5, s - 0.1))}
+              title="Decrease Size"
+            >
+              <ZoomOut size={16} />
+            </button>
+            <button 
+              className="icon-btn-calc-toggle" 
+              onClick={() => setScale(s => Math.min(1.5, s + 0.1))}
+              title="Increase Size"
+            >
+              <ZoomIn size={16} />
+            </button>
             <button 
               className="icon-btn-calc-toggle" 
               onClick={() => setShowPanel(p => !p)}
