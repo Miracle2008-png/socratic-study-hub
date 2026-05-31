@@ -550,6 +550,23 @@ const AppContent: React.FC = () => {
 
       {showLoginModal && (
         <div className="login-modal-overlay">
+          {/* Animated floating orbs */}
+          {[...Array(8)].map((_, i) => (
+            <div
+              key={i}
+              className="login-orb"
+              style={{
+                width: `${8 + i * 5}px`,
+                height: `${8 + i * 5}px`,
+                left: `${8 + i * 12}%`,
+                bottom: `-${20 + i * 5}px`,
+                background: i % 3 === 0 ? 'var(--color-accent)' : i % 3 === 1 ? '#6366f1' : '#ec4899',
+                animationDuration: `${8 + i * 2.5}s`,
+                animationDelay: `${i * 1.2}s`,
+                opacity: 0.7,
+              }}
+            />
+          ))}
           <LoginScreen onClose={() => setShowLoginModal(false)} />
         </div>
       )}
@@ -558,12 +575,20 @@ const AppContent: React.FC = () => {
         .login-modal-overlay {
           position: fixed;
           top: 0; left: 0; right: 0; bottom: 0;
-          background: rgba(0, 0, 0, 0.85);
+          background: radial-gradient(ellipse at 20% 50%, rgba(212,175,55,0.08) 0%, transparent 60%),
+                      radial-gradient(ellipse at 80% 20%, rgba(99,102,241,0.08) 0%, transparent 60%),
+                      linear-gradient(135deg, #0a0a0f 0%, #0d0d18 40%, #0a0f1a 100%);
           z-index: 9999;
           display: flex;
           align-items: center;
           justify-content: center;
-          backdrop-filter: blur(10px);
+          backdrop-filter: blur(0px);
+          overflow: hidden;
+          animation: loginOverlayIn 0.4s cubic-bezier(0.4,0,0.2,1);
+        }
+        @keyframes loginOverlayIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
         }
         
         .login-modal-close {
