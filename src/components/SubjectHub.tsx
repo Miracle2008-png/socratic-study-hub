@@ -89,7 +89,15 @@ const subjects: Record<string, SubjectData> = {
     color: 'var(--color-biology)',
     bgGradient: 'linear-gradient(135deg, rgba(236,72,153,0.08) 0%, rgba(236,72,153,0.02) 100%)',
     icon: Dna,
-    topics: generateDynamicTopics('biology') // Note: We haven't generated extended biology yet, but this works
+    topics: generateDynamicTopics('biology')
+  },
+  engineering: {
+    title: 'Engineering',
+    subtitle: 'Applying math and science to design, build, and optimize.',
+    color: '#f59e0b',
+    bgGradient: 'linear-gradient(135deg, rgba(245,158,11,0.08) 0%, rgba(245,158,11,0.02) 100%)',
+    icon: Network,
+    topics: generateDynamicTopics('engineering')
   }
 };
 
