@@ -233,7 +233,7 @@ export const formulaTree: CategoryNode[] = [
       { id:'b3', name:'Recombination Frequency',    latex:'$RF=\\dfrac{\\text{Recombinants}}{\\text{Total Offspring}}\\times 100\\%$',     description:'Genetic linkage mapping (1% RF = 1 cM).',                             tags:['genetics','linkage'] },
       { id:'b4', name:'Heritability (Broad-Sense)', latex:'$H^2=\\dfrac{V_G}{V_P}=\\dfrac{V_G}{V_G+V_E}$',                                 description:'Proportion of phenotypic variance due to genetic variance.',          tags:['genetics','quantitative'] },
       { id:'b5', name:'Heritability (Narrow)',      latex:'$h^2=\\dfrac{V_A}{V_P}$',                                                       description:'Proportion of phenotypic variance due to additive genetic variance.', tags:['genetics','quantitative'] },
-      { id:'b6', name:'Breeder\\'s Equation',       latex:'$R=h^2 S$',                                                                     description:'Response to selection (R) based on selection differential (S).',      tags:['genetics','evolution'] },
+      { id:'b6', name: "Breeder's Equation",       latex:'$R=h^2 S$',                                                                     description:'Response to selection (R) based on selection differential (S).',      tags:['genetics','evolution'] },
       { id:'b7', name:'Fitness (w)',                latex:'$w = \\dfrac{\\text{Survival of genotype}}{\\text{Survival of most fit genotype}}$', description:'Relative fitness in population genetics.', tags:['genetics','evolution'] },
       { id:'b8', name:'Mutation Rate ($\\mu$)',      latex:'$\\Delta p = \\nu q - \\mu p$',                                                 description:'Change in allele frequency due to forward and reverse mutations.',    tags:['genetics','population'] },
 
@@ -258,7 +258,7 @@ export const formulaTree: CategoryNode[] = [
       { id:'b22',name:'Lotka-Volterra Predator-Prey',latex:'$\\dfrac{dx}{dt}=\\alpha x-\\beta xy,\\quad\\dfrac{dy}{dt}=\\delta xy-\\gamma y$',description:'ODE model for interacting predator-prey populations.',                tags:['ecology','ODE'] },
       { id:'b23',name:'Lotka-Volterra Competition', latex:'$\\dfrac{dN_1}{dt} = r_1 N_1 \\left(1 - \\dfrac{N_1 + \\alpha_{12} N_2}{K_1}\\right)$', description:'Interspecific competition model.', tags:['ecology','competition'] },
       { id:'b24',name:'Shannon-Wiener Index',       latex:'$H\\prime = -\\sum_{i=1}^s p_i \\ln p_i$',                                      description:'Measure of species diversity in an ecosystem.',                       tags:['ecology','diversity'] },
-      { id:'b25',name:'Simpson\\'s Index',          latex:'$D = \\sum \\left( \\dfrac{n}{N} \\right)^2$',                                  description:'Measure of dominance/diversity in an ecosystem.',                     tags:['ecology','diversity'] },
+      { id:'b25',name: "Simpson's Index",          latex:'$D = \\sum \\left( \\dfrac{n}{N} \\right)^2$',                                  description:'Measure of dominance/diversity in an ecosystem.',                     tags:['ecology','diversity'] },
 
       // Physiology & Biomechanics
       { id:'b26',name:'Poiseuille (Blood Flow)',    latex:'$Q=\\dfrac{\\pi r^4\\Delta P}{8\\eta L}$',                                      description:'Volume flow rate of blood in vessels.',                               tags:['physiology','biomechanics'] },
@@ -267,7 +267,7 @@ export const formulaTree: CategoryNode[] = [
       { id:'b29',name:'Renal Clearance',            latex:'$C_x=\\dfrac{U_x\\cdot V}{P_x}$',                                               description:'Clearance rate of a substance by kidneys.',                           tags:['physiology','renal'] },
       { id:'b30',name:'Glomerular Filtration Rate', latex:'$GFR = K_f (P_{GC} - P_{BS} - \\pi_{GC} + \\pi_{BS})$',                         description:'Starling forces governing filtration in the kidney.',                 tags:['physiology','renal'] },
       { id:'b31',name:'Alveolar Gas Equation',      latex:'$P_A O_2 = F_I O_2 (P_{atm} - P_{H_2O}) - \\dfrac{P_a CO_2}{RQ}$',              description:'Calculates partial pressure of oxygen in the alveoli.',               tags:['physiology','respiratory'] },
-      { id:'b32',name:'Laplace\\'s Law (Alveoli)',  latex:'$P = \\dfrac{2T}{r}$',                                                          description:'Pressure required to keep alveoli open (T = surface tension).',       tags:['physiology','respiratory'] },
+      { id:'b32',name: "Laplace's Law (Alveoli)",  latex:'$P = \\dfrac{2T}{r}$',                                                          description:'Pressure required to keep alveoli open (T = surface tension).',       tags:['physiology','respiratory'] },
       { id:'b33',name:'Compliance (Lungs)',         latex:'$C = \\dfrac{\\Delta V}{\\Delta P}$',                                           description:'Distensibility of the lungs.',                                        tags:['physiology','respiratory'] },
     ]
   }
@@ -543,14 +543,14 @@ export const formulaTree: CategoryNode[] = [
             formulas: [
               { id:'mc_1', name:'Normal Stress',             latex:'$\\sigma = \\dfrac{F}{A}$',                                                       description:'Axial force per unit area.', tags:['mechanics','stress'] },
               { id:'mc_2', name:'Normal Strain',             latex:'$\\varepsilon = \\dfrac{\\Delta L}{L_0}$',                                        description:'Deformation per unit length.', tags:['mechanics','strain'] },
-              { id:'mc_3', name:"Hooke's Law (1D)",          latex:'$\\sigma = E \\varepsilon$',                                                      description:'Stress proportional to strain via Young\\'s modulus.', tags:['mechanics','elasticity'] },
+              { id:'mc_3', name:"Hooke's Law (1D)",          latex:'$\\sigma = E \\varepsilon$',                                                      description:"Stress proportional to strain via Young's modulus.", tags:['mechanics','elasticity'] },
               { id:'mc_4', name:'Shear Stress',              latex:'$\\tau = \\dfrac{V}{A}$',                                                         description:'Shear force per unit area.', tags:['mechanics','stress'] },
-              { id:'mc_5', name:'Shear Strain',              latex:'$\\gamma = \\dfrac{\\tau}{G}$',                                                   description:'Hooke\\'s law for shear (G = shear modulus).', tags:['mechanics','strain'] },
+              { id:'mc_5', name:'Shear Strain',              latex:'$\\gamma = \\dfrac{\\tau}{G}$',                                                   description:"Hooke's law for shear (G = shear modulus).", tags:['mechanics','strain'] },
               { id:'mc_6', name:"Poisson's Ratio",           latex:'$\\nu = -\\dfrac{\\varepsilon_{\\text{lateral}}}{\\varepsilon_{\\text{longitudinal}}}$', description:'Ratio of lateral to longitudinal strain.', tags:['mechanics','elasticity'] },
               { id:'mc_7', name:'Bending Stress',            latex:'$\\sigma_x = -\\dfrac{M y}{I}$',                                                  description:'Flexure formula for beams.', tags:['mechanics','bending'] },
               { id:'mc_8', name:'Torsional Shear Stress',    latex:'$\\tau = \\dfrac{T \\rho}{J}$',                                                   description:'Shear stress in a circular shaft.', tags:['mechanics','torsion'] },
               { id:'mc_9', name:'Angle of Twist',            latex:'$\\phi = \\dfrac{T L}{J G}$',                                                     description:'Torsional deformation.', tags:['mechanics','torsion'] },
-              { id:'mc_10', name:"Mohr's Circle Center",     latex:'$C = \\dfrac{\\sigma_x + \\sigma_y}{2}$',                                        description:'Center of Mohr\\'s circle for plane stress.', tags:['mechanics','stress'] },
+              { id:'mc_10', name:"Mohr's Circle Center",     latex:'$C = \\dfrac{\\sigma_x + \\sigma_y}{2}$',                                        description:"Center of Mohr's circle for plane stress.", tags:['mechanics','stress'] },
               { id:'mc_11', name:"Mohr's Circle Radius",     latex:'$R = \\sqrt{\\left(\\dfrac{\\sigma_x - \\sigma_y}{2}\\right)^2 + \\tau_{xy}^2}$', description:'Maximum in-plane shear stress.', tags:['mechanics','stress'] },
               { id:'mc_12', name:'Principal Stresses',       latex:'$\\sigma_{1,2} = C \\pm R$',                                                      description:'Maximum and minimum normal stresses.', tags:['mechanics','stress'] },
             ]
