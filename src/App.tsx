@@ -225,7 +225,7 @@ const AppContent: React.FC = () => {
       if (activeTopic) return <TopicModule topicId={activeTopic} />;
       return <SubjectHub subject="chemistry" onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'chemistry'); }} />;
     }
-    if (activeTab === 'biology') {
+    if (activeTab === 'engineering') { if (activeTopic) return <TopicModule topicId={activeTopic} />; return <SubjectHub subject=" engineering\ onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'engineering'); }} />; } if (activeTab === 'biology') {
       if (activeTopic) return <TopicModule topicId={activeTopic} />;
       return <SubjectHub subject="biology" onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'biology'); }} />;
     }
