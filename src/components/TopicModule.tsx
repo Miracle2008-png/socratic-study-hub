@@ -328,7 +328,11 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId }) => {
                   return (
                     <div key={i} className="summary-point">
                       <span className="summary-num">{i + 1}</span>
-                      <p className="summary-text">{clean}</p>
+                      <div className="summary-text" style={{ fontSize: '15px', lineHeight: '1.6' }}>
+                        <ReactMarkdown remarkPlugins={[remarkMath, remarkGfm]} rehypePlugins={[rehypeKatex]}>
+                          {clean}
+                        </ReactMarkdown>
+                      </div>
                     </div>
                   );
                 })}
@@ -954,7 +958,11 @@ const ExamQuestionCard: React.FC<{ index: number; question: string; type: string
         <div className="exam-q-num">{index + 1}</div>
         <div className="exam-q-body">
           <span className={`exam-q-type ${typeClass}`}>{typeLabel}</span>
-          <p className="exam-q-text">{question}</p>
+          <div className="exam-q-text" style={{ margin: 0, fontSize: '15.5px', lineHeight: '1.6' }}>
+            <ReactMarkdown remarkPlugins={[remarkMath, remarkGfm]} rehypePlugins={[rehypeKatex]}>
+              {question}
+            </ReactMarkdown>
+          </div>
         </div>
       </div>
       <div className="exam-q-answer-area">
