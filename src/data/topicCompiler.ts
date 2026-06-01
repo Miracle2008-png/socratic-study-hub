@@ -2,6 +2,8 @@ import { TOPICS, TopicContent, Section } from './topicContent';
 import { mathContentExt } from './mathContentExt';
 import { physicsContentExt } from './physicsContentExt';
 import { chemistryContentExt } from './chemistryContentExt';
+import { biologyContentExt } from './biologyContentExt';
+import { engineeringContentExt } from './engineeringContentExt';
 
 // Helper to convert raw markdown from the massive database into the TopicContent schema
 function compileMarkdownToTopic(id: string, title: string, subject: string, difficulty: 'Foundational' | 'Intermediate' | 'Advanced' | 'University', markdown: string): TopicContent {
@@ -80,9 +82,23 @@ const compiledChemistry = Object.entries(chemistryContentExt).reduce((acc, [titl
   return acc;
 }, {} as Record<string, TopicContent>);
 
+const compiledBiology = Object.entries(biologyContentExt).reduce((acc, [title, md]) => {
+  const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '_');
+  acc[id] = compileMarkdownToTopic(id, title, 'biology', 'Intermediate' as any, md);
+  return acc;
+}, {} as Record<string, TopicContent>);
+
+const compiledEngineering = Object.entries(engineeringContentExt).reduce((acc, [title, md]) => {
+  const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '_');
+  acc[id] = compileMarkdownToTopic(id, title, 'engineering', 'University' as any, md);
+  return acc;
+}, {} as Record<string, TopicContent>);
+
 export const ALL_TOPICS: Record<string, TopicContent> = {
   ...TOPICS,
   ...compiledMath,
   ...compiledPhysics,
-  ...compiledChemistry
+  ...compiledChemistry,
+  ...compiledBiology,
+  ...compiledEngineering
 };
