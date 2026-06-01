@@ -22,6 +22,7 @@ import Grapher2D from './components/Grapher2D';
 import { GlobalSearch } from './components/GlobalSearch';
 import AiTutorSidebar from './components/AiTutorSidebar';
 import { AdvancedCalculator } from './components/AdvancedCalculator';
+import { CalculusSolver } from './components/CalculusSolver';
 import { GamificationProvider, useGamification } from './context/GamificationContext';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { LoginScreen } from './components/LoginScreen';
@@ -202,6 +203,7 @@ const AppContent: React.FC = () => {
       openTopic(topicId, subject);
     }} />;
     if (activeTab === 'formula_blog') return <FormulaBank />;
+    if (activeTab === 'calculus_solver') return <CalculusSolver />;
     if (activeTab === 'derivations') return <DerivationsHub />;
     if (activeTab === 'flashcards') return <SpacedRepetition />;
     if (activeTab === 'visualizer') return <Visualizer3D />;
@@ -246,6 +248,7 @@ const AppContent: React.FC = () => {
       math: 'Mathematics', physics: 'Physics', chemistry: 'Chemistry',
       biology: 'Biology', ai_hub: 'AI Hub', grapher: '2D Grapher',
       mindmap: 'Knowledge Map', formula_blog: 'Formula Bank',
+      calculus_solver: 'Calculus Solver',
       essay_grader: 'Essay Grader', mock_exam: 'Mock Exam', predictor_hub: 'Predictor Hub',
       derivations: 'Derivations', socratic: 'Socratic Solver',
       planner: 'Study Planner', upload: 'AI Upload Hub',

@@ -40,6 +40,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
       { id: 'mindmap', label: 'Knowledge Map', icon: Map },
       { id: 'grapher', label: '2D Grapher', icon: TrendingUp },
       { id: 'formula_blog', label: 'Formula Bank', icon: BookOpen },
+      { id: 'calculus_solver', label: 'Calculus Solver', icon: Calculator },
       { id: 'derivations', label: 'Derivations', icon: FunctionSquare },
       { id: 'flashcards', label: 'Flashcards (SRS)', icon: BrainCircuit },
       { id: 'visualizer', label: '3D Visualizer', icon: Box },

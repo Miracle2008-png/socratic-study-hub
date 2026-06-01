@@ -159,4 +159,26 @@ export class GeminiService {
     
     return this.generateJSON(prompt, "You are an elite, highly accurate global university admissions counselor and career advisor.");
   }
+
+  static async solveCalculus(problem: string): Promise<any> {
+    const prompt = `You are a brilliant mathematics professor. Solve the following calculus problem step-by-step.
+    
+    Problem: ${problem}
+    
+    Return a JSON object with this exact structure:
+    {
+      "problem": "The original problem formatted in LaTeX, e.g., $\\int x^2 dx$",
+      "steps": [
+        "Step 1 explanation with LaTeX inline ($...$) or block ($$...$$)",
+        "Step 2 explanation with LaTeX...",
+        "..."
+      ],
+      "finalAnswer": "The final answer formatted in LaTeX",
+      "concept": "A brief 1-2 sentence explanation of the core calculus concept used to solve this."
+    }
+    
+    Ensure all mathematical notation is properly formatted using LaTeX. Use standard single backslash for LaTeX commands (e.g. \\int, \\frac, \\lim) but remember to escape them properly if writing raw JSON strings, though typically generating JSON you just write the normal LaTeX and the parser handles it. To be safe, just output standard LaTeX.`;
+    
+    return this.generateJSON(prompt, "You are a world-class calculus solver and teacher. Always use LaTeX for math formatting.");
+  }
 }
