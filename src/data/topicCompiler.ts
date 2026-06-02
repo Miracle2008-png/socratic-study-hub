@@ -133,10 +133,14 @@ export async function fetchTopicContent(topicId: string): Promise<TopicContent> 
 
   const sections: Section[] = [];
   
+  // Fetch all massive chunks concurrently instead of sequentially to drastically reduce loading time!
+  const markdownContents = await Promise.all(
+    matchingPaths.map(path => markdownModules[path]() as Promise<string>)
+  );
+
   for (let i = 0; i < matchingPaths.length; i++) {
     const path = matchingPaths[i];
-    // Lazily fetch the massive chunk!
-    const markdown = await markdownModules[path]() as string;
+    const markdown = markdownContents[i];
     
     // Extract heading from markdown (assuming it starts with # Title)
     let heading = path.split('/').pop()?.replace('.md', '').replace(/^\d+_/, '').replace(/_/g, ' ') || 'Section';
