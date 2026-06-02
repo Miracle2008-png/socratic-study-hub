@@ -382,5 +382,554 @@ The pinnacle of modern chemical plant control. An MPC controller utilizes a dyna
 3.  It calculates a sequence of optimal future valve moves over a "control horizon" to minimize errors while respecting strict safety constraints (e.g., keeping reactor pressure below max limits).
 4.  It implements only the first calculated move, waits for the next time step, and recalculates the entire optimization problem (Receding Horizon approach).
 MPC is standard in oil refineries for maximizing throughput and profitability.
+`,
+  'Heat and Mass Transfer': `
+# Heat and Mass Transfer: Analytical Transport Phenomena
+
+Transport phenomena form the backbone of chemical and mechanical engineering. They encompass the transfer of momentum, thermal energy (heat), and chemical species (mass).
+
+## 1. Conduction Heat Transfer
+
+Conduction is the transfer of heat through a stationary medium. It is a microscale process driven by molecular collisions and lattice vibrations.
+
+### Fourier's Law of Heat Conduction
+The rate of heat transfer ($q_x$) in the x-direction is proportional to the temperature gradient.
+$$ q_x = -k A \\frac{dT}{dx} $$
+Where $k$ is the thermal conductivity of the material ($W/m\\cdot K$) and $A$ is the cross-sectional area.
+For 3D analysis, Fourier's law is written in vector form as $\\vec{q} = -k \\nabla T$.
+
+### The Heat Diffusion Equation
+Applying an energy balance to a differential control volume yields the 3D heat diffusion equation:
+$$ \\frac{\\partial}{\\partial x}\\left( k \\frac{\\partial T}{\\partial x} \\right) + \\frac{\\partial}{\\partial y}\\left( k \\frac{\\partial T}{\\partial y} \\right) + \\frac{\\partial}{\\partial z}\\left( k \\frac{\\partial T}{\\partial z} \\right) + \\dot{q}_{gen} = \\rho C_p \\frac{\\partial T}{\\partial t} $$
+Where $\\dot{q}_{gen}$ is volumetric heat generation (e.g., electrical or nuclear).
+If the material is isotropic (constant $k$) and at steady-state without generation, it reduces to the Laplace equation: $\\nabla^2 T = 0$.
+
+### Thermal Resistance Networks
+For 1D, steady-state conduction through composite layers (like an insulated wall), heat transfer can be modeled using an electrical analogy:
+$$ q = \\frac{\\Delta T}{R_{total}} $$
+Where thermal resistance $R = \\frac{L}{k A}$ for a plane wall, and $R = \\frac{\\ln(r_2/r_1)}{2\\pi k L}$ for a cylinder. Resistances in series are summed directly.
+
+## 2. Convective Heat Transfer
+
+Convection involves heat transfer between a solid surface and a moving fluid. It couples conduction with bulk fluid motion.
+
+### Newton's Law of Cooling
+$$ q = h A (T_s - T_\\infty) $$
+Where $h$ is the convective heat transfer coefficient ($W/m^2\\cdot K$), $T_s$ is the surface temperature, and $T_\\infty$ is the bulk fluid temperature.
+
+### Boundary Layers and Dimensionless Numbers
+Calculating $h$ analytically is extremely difficult as it depends on fluid mechanics (the thermal boundary layer). Engineers rely on empirical correlations linking dimensionless numbers:
+*   **Nusselt Number ($Nu$):** Represents dimensionless temperature gradient at the surface. $Nu = \\frac{h L}{k_{fluid}}$. It is the primary target variable to find $h$.
+*   **Reynolds Number ($Re$):** Ratio of inertial to viscous forces. Dictates laminar vs. turbulent flow.
+*   **Prandtl Number ($Pr$):** Ratio of momentum diffusivity to thermal diffusivity ($Pr = \\frac{\\nu}{\\alpha} = \\frac{C_p \\mu}{k}$). It links the velocity and thermal boundary layers.
+
+For forced convection in pipes (Dittus-Boelter equation):
+$$ Nu_D = 0.023 Re_D^{0.8} Pr^n $$
+(Where $n = 0.4$ for heating and $0.3$ for cooling).
+
+### Natural (Free) Convection
+Occurs when fluid motion is driven entirely by buoyancy forces due to density gradients, rather than a pump or fan. It is characterized by the **Grashof Number ($Gr$)**, which replaces the Reynolds number.
+$$ Gr = \\frac{g \\beta (T_s - T_\\infty) L^3}{\\nu^2} $$
+Where $\\beta$ is the volumetric thermal expansion coefficient.
+
+## 3. Radiation Heat Transfer
+
+Radiation requires no medium and is driven by the emission of electromagnetic waves from all matter above absolute zero.
+
+### Blackbody Radiation
+A blackbody is an idealized surface that absorbs all incident radiation and emits the maximum possible energy for a given temperature.
+**Stefan-Boltzmann Law:** The total emissive power ($E_b$) of a blackbody is:
+$$ E_b = \\sigma T^4 $$
+Where $\\sigma = 5.67 \\times 10^{-8} \\text{ W}/(m^2\\cdot K^4)$.
+
+**Planck's Law:** Describes the spectral distribution of blackbody radiation across different wavelengths ($\\lambda$). Peak emission wavelength is given by Wien's Displacement Law:
+$$ \\lambda_{max} T = 2898 \\text{ } \\mu m \\cdot K $$
+
+### Real Surfaces and Emissivity
+Real surfaces emit less than a blackbody. The ratio is the **emissivity ($\\epsilon$)**:
+$$ E = \\epsilon \\sigma T^4 $$
+When exchanging heat between two real surfaces, geometry must be considered using **View Factors ($F_{12}$)**, which represents the fraction of radiation leaving surface 1 that directly strikes surface 2.
+$$ q_{12} = \\frac{\\sigma (T_1^4 - T_2^4)}{\\frac{1-\\epsilon_1}{\\epsilon_1 A_1} + \\frac{1}{A_1 F_{12}} + \\frac{1-\\epsilon_2}{\\epsilon_2 A_2}} $$
+
+## 4. Mass Transfer and Diffusion
+
+Mass transfer is analogous to heat transfer, replacing temperature gradients with concentration gradients.
+
+### Fick's First Law of Diffusion
+The steady-state molar flux of species A ($J_A^*$) relative to the mixture's molar average velocity is proportional to its concentration gradient:
+$$ J_A^* = -c D_{AB} \\nabla y_A $$
+Where $c$ is total molar concentration, $D_{AB}$ is the binary diffusion coefficient, and $y_A$ is the mole fraction of A.
+
+### Equimolar Counterdiffusion and Unimolecular Diffusion
+*   **Equimolar Counterdiffusion:** Two gases diffuse in opposite directions at equal rates ($N_A = -N_B$). Occurs in distillation.
+*   **Unimolecular Diffusion (Diffusion through a stagnant gas):** Species A diffuses, but species B is stationary ($N_B = 0$). Occurs when water evaporates into air.
+The flux equations differ significantly because the bulk motion of the mixture must be accounted for in unimolecular diffusion.
+
+### Convective Mass Transfer
+Analogous to Newton's law of cooling, convective mass transfer is described by a mass transfer coefficient ($k_c$):
+$$ N_A = k_c (C_{A,surface} - C_{A,\\infty}) $$
+Engineers use the **Sherwood Number ($Sh$)** and the **Schmidt Number ($Sc$)** (the mass transfer analogs to Nusselt and Prandtl numbers) to find $k_c$ using empirical correlations.
+`,
+  'Separation Processes': `
+# Separation Processes: Unit Operations
+
+In chemical manufacturing, raw materials are converted into products via reactors, but they must be purified. Separation processes account for up to 70% of the capital costs of a chemical plant.
+
+## 1. Distillation Theory
+
+Distillation separates liquid mixtures based on differences in volatility (boiling points). It is the most dominant separation technique globally.
+
+### Vapor-Liquid Equilibrium (VLE)
+The heart of distillation is VLE. For a binary mixture, the relative volatility ($\\alpha$) defines the ease of separation:
+$$ \\alpha_{12} = \\frac{y_1 / x_1}{y_2 / x_2} $$
+If $\\alpha = 1$, the mixture forms an azeotrope and cannot be separated by simple distillation. As $\\alpha$ increases, separation becomes easier.
+
+### Continuous Fractional Distillation
+A continuous column consists of:
+1.  **Rectifying (Enriching) Section:** Above the feed. Vapor is enriched in the lighter component.
+2.  **Stripping Section:** Below the feed. Liquid is stripped of the lighter component.
+3.  **Condenser:** Cools overhead vapor into liquid. A portion is returned as **Reflux ($R$)**, and the rest is drawn as Top Product ($D$).
+4.  **Reboiler:** Heats bottoms liquid into vapor. A portion is boiled up, and the rest is drawn as Bottom Product ($B$).
+
+## 2. The McCabe-Thiele Method
+
+The McCabe-Thiele method is an elegant graphical technique to determine the number of theoretical stages (equilibrium trays) required for a binary distillation.
+
+### Operating Lines
+By performing mass balances around the top and bottom sections, we derive operating lines.
+**Rectifying Operating Line (ROL):**
+$$ y_{n+1} = \\frac{R}{R+1} x_n + \\frac{x_D}{R+1} $$
+**Stripping Operating Line (SOL):**
+Derived similarly based on the boil-up ratio ($V_B$).
+
+### The q-Line (Feed Line)
+The intersection of the ROL and SOL depends on the thermal condition of the feed, represented by $q$ (the fraction of feed that is liquid).
+*   **Subcooled Liquid:** $q > 1$
+*   **Saturated Liquid (Bubble Point):** $q = 1$ (Vertical q-line)
+*   **Two-Phase Mixture:** $0 < q < 1$
+*   **Saturated Vapor (Dew Point):** $q = 0$ (Horizontal q-line)
+*   **Superheated Vapor:** $q < 0$
+
+### Stepping Off Stages
+To find the required number of trays, engineers plot the VLE equilibrium curve and the operating lines on an x-y diagram. Starting from the distillate composition ($x_D$), horizontal and vertical steps are drawn between the ROL/SOL and the equilibrium curve down to the bottoms composition ($x_B$). Each step represents one theoretical tray.
+
+### Limiting Conditions
+*   **Total Reflux ($R = \\infty$):** The operating lines merge with the $y=x$ diagonal line. This requires the **minimum number of stages ($N_{min}$)**, calculated via the Fenske equation.
+*   **Minimum Reflux ($R_{min}$):** The operating lines intersect exactly on the equilibrium curve, creating a "pinch point." This requires an infinite number of stages to achieve the separation.
+Actual columns operate at $R_{actual} \\approx 1.2 \\text{ to } 1.5 \\times R_{min}$ to optimize capital vs. operating costs.
+
+## 3. Absorption and Stripping
+
+When distillation is impossible (e.g., separating a trace gas from a massive air stream), absorption is used.
+
+### Gas Absorption
+A gas mixture is contacted with a liquid solvent that selectively dissolves one or more components. 
+*   **Example:** Using monoethanolamine (MEA) to absorb $CO_2$ from flue gas.
+*   **Design:** Often carried out in packed columns rather than trayed columns to maximize liquid-gas interfacial area.
+
+### The Kremser Equation
+For dilute systems where the operating line and equilibrium line (Henry's Law) are both straight, the number of theoretical stages ($N$) can be calculated analytically using the Kremser equation, which depends on the **Absorption Factor ($A$)**:
+$$ A = \\frac{L}{m V} $$
+Where $L$ is liquid flow, $V$ is vapor flow, and $m$ is the Henry's law slope.
+
+## 4. Liquid-Liquid Extraction (LLE)
+
+LLE involves transferring a solute from one liquid solvent to another immiscible liquid solvent. It is used when:
+1.  Components have identical boiling points.
+2.  The solute is heat-sensitive (e.g., antibiotics, vitamins).
+3.  The mixture forms a massive azeotrope (e.g., acetic acid and water).
+
+### Ternary Phase Diagrams
+LLE is analyzed using equilateral triangle diagrams mapping the carrier, solute, and extraction solvent. 
+*   The **Binodal Curve** separates the single-phase miscible region from the two-phase immiscible region.
+*   **Tie Lines** connect the compositions of the extract (solvent-rich) and raffinate (carrier-rich) phases in equilibrium.
+*   **Plait Point:** The point where the tie lines shrink to zero length and the two phases merge into one.
+
+## 5. Advanced Separations: Membranes and Chromatography
+
+### Membrane Separation
+Uses a semi-permeable barrier. 
+*   **Reverse Osmosis (RO):** Applies pressure to overcome osmotic pressure, forcing pure water through a membrane while leaving salts behind.
+*   **Gas Separation:** Polymers separate gases based on differences in permeability (e.g., extracting $N_2$ from air).
+
+### Chromatography
+Separates mixtures based on differential affinities between a stationary phase (solid beads) and a mobile phase (liquid or gas eluent). Components that bond strongly to the stationary phase travel slower, separating them spatially or temporally.
+`,
+  'Chemical Reaction Engineering': `
+# Chemical Reaction Engineering: Reactor Design
+
+Chemical Reaction Engineering (CRE) brings together thermodynamics, mass transfer, and chemical kinetics to design the reactors that form the heart of any chemical plant.
+
+## 1. Fundamentals of Reaction Kinetics
+
+Kinetics determines *how fast* a reaction occurs, dictating the required size (volume) of a reactor.
+
+### The Rate of Reaction ($-r_A$)
+The rate of disappearance of reactant A ($-r_A$) is defined as the number of moles of A reacting per unit volume per unit time ($mol/m^3 \\cdot s$).
+For a generic reaction $aA + bB \\rightarrow cC$:
+The rate law is typically experimentally determined and expressed as:
+$$ -r_A = k(T) f(C_A, C_B) = k C_A^m C_B^n $$
+Where $k$ is the reaction rate constant, and $m$ and $n$ are the reaction orders (which do *not* necessarily match the stoichiometric coefficients $a$ and $b$).
+
+### Temperature Dependence: The Arrhenius Law
+The rate constant $k$ is heavily dependent on temperature:
+$$ k(T) = A e^{-E_a / RT} $$
+Where $A$ is the frequency factor and $E_a$ is the activation energy. Because of the exponential term, a small increase in temperature can cause a massive increase in reaction rate.
+
+### Conversion ($X$)
+Instead of dealing with concentrations directly, engineers often use conversion ($X$), defined as the fraction of the limiting reactant that has been consumed.
+$$ X = \\frac{N_{A0} - N_A}{N_{A0}} $$
+Concentrations ($C_A$) can then be expressed in terms of conversion and initial conditions.
+
+## 2. Ideal Reactor Models
+
+CRE relies on three idealized reactor models. Real-world reactors are often combinations or approximations of these.
+
+### 1. The Batch Reactor (BR)
+A closed vessel. Reactants are charged, the reaction proceeds over time $t$, and the products are discharged. There is no flow in or out.
+**Mass Balance:** Accumulation = In - Out + Generation
+$$ \\frac{dN_A}{dt} = r_A V $$
+**Design Equation:** To find the time $t$ required to reach a specific conversion $X$:
+$$ t = N_{A0} \\int_{0}^{X} \\frac{dX}{-r_A V} $$
+Batch reactors are used for small-scale, high-value products (pharmaceuticals) because they require high labor costs for charging and cleaning.
+
+### 2. The Continuous Stirred-Tank Reactor (CSTR)
+An open vessel with continuous flow in and out. The contents are perfectly mixed, meaning the concentration and temperature inside the reactor are completely uniform and *identical* to the exit stream.
+**Mass Balance:** In - Out + Generation = 0 (Steady State)
+$$ F_{A0} - F_A + r_A V = 0 $$
+**Design Equation:** Since the rate $-r_A$ is evaluated at the exit conditions, no integration is needed. To find the required volume $V$:
+$$ V = \\frac{F_{A0} X}{-r_A} $$
+CSTRs are excellent for liquid-phase reactions and provide excellent temperature control due to the massive thermal inertia of the mixed fluid.
+
+### 3. The Plug Flow Reactor (PFR)
+A long tube. Fluid flows continuously in a "plug," with perfect radial mixing but zero axial mixing. The concentration of reactants decreases, and products increase, continuously down the length of the tube. The reaction rate $-r_A$ drops as you move down the pipe.
+**Mass Balance:** Evaluated over a differential volume element $dV$.
+$$ dF_A = r_A dV $$
+**Design Equation:**
+$$ V = F_{A0} \\int_{0}^{X} \\frac{dX}{-r_A} $$
+For standard positive-order kinetics, a PFR will always require *less volume* than a CSTR to achieve the same conversion, because the PFR operates at a higher average reactant concentration along its length.
+
+## 3. Multiple Reactors in Series and Parallel
+
+To optimize volume and costs, reactors are often networked.
+*   **CSTRs in Series:** A sequence of CSTRs approaches the performance (volume efficiency) of a PFR. The more CSTRs you link in series, the closer the total volume approaches the PFR volume.
+*   **Levenspiel Plots:** Engineers plot $\\frac{F_{A0}}{-r_A}$ versus $X$. The area under the curve represents the volume of a PFR, while the area of a rectangle represents the volume of a CSTR. This graphical method instantly shows which reactor type is superior for unusual kinetic profiles.
+
+## 4. Complex Reactions: Selectivity and Yield
+
+Industrial chemistry rarely involves a single reaction. Usually, there are parallel (competing) or series (consecutive) reactions.
+*   **Parallel:** $A \\rightarrow \\text{Desired (D)}$; $A \\rightarrow \\text{Undesired (U)}$
+*   **Series:** $A \\rightarrow \\text{Desired (D)} \\rightarrow \\text{Undesired (U)}$
+
+**Selectivity ($S$)** is the ratio of desired product formed to undesired product formed.
+**Yield ($Y$)** is the ratio of desired product formed to total reactant A consumed.
+To maximize selectivity in parallel reactions, engineers analyze the rate laws. If the desired reaction has a higher order than the undesired one, the reactor should be operated at high concentrations (e.g., use a PFR). If the undesired reaction has a higher activation energy, the reactor should be operated at low temperatures.
+
+## 5. Non-Ideal Reactors and Residence Time Distribution (RTD)
+
+Real reactors never achieve perfect CSTR mixing or perfect PFR plug flow due to channeling, dead zones, and bypasses.
+Engineers inject a pulse of inert tracer dye into the reactor inlet and measure its concentration at the exit over time. This generates the **Residence Time Distribution (RTD) function, $E(t)$**.
+The RTD mathematically characterizes exactly how much fluid spends how much time in the reactor, allowing engineers to diagnose physical flaws and predict actual conversions for non-ideal reactors.
+`,
+  'Materials Science and Engineering': `
+# Materials Science and Engineering: The Solid Paradigm
+
+Materials science is the interdisciplinary field investigating the relationship between the atomic/molecular structure of materials and their macroscopic properties. 
+
+## 1. Atomic Bonding and Crystal Structures
+
+The macroscopic properties of a solid (melting point, stiffness, electrical conductivity) are dictated primarily by atomic bonding and geometric arrangement.
+
+### Types of Bonds
+*   **Ionic:** Transfer of electrons between electropositive and electronegative elements (e.g., $NaCl$, Ceramics). Hard, brittle, electrically insulating.
+*   **Covalent:** Sharing of electrons (e.g., Diamond, Silicon, Polymers). Very strong, highly directional.
+*   **Metallic:** A lattice of positive ion cores in a "sea" of delocalized valence electrons (e.g., Fe, Al, Cu). Ductile, thermally and electrically conductive.
+
+### Crystal Lattices
+Metals and most ceramics form crystalline structures, where atoms are arranged in a repeating 3D grid. The smallest repeating unit is the unit cell.
+*   **Simple Cubic (SC):** Atoms at 8 corners. Rare (Polonium). Atomic Packing Factor (APF) = 0.52.
+*   **Body-Centered Cubic (BCC):** Atoms at 8 corners + 1 center atom (e.g., Fe at room temp, W, Cr). High strength, lower ductility. APF = 0.68.
+*   **Face-Centered Cubic (FCC):** Atoms at 8 corners + 1 center of each face (e.g., Al, Cu, Au). Highly ductile due to many slip systems. APF = 0.74 (maximum possible packing).
+*   **Hexagonal Close-Packed (HCP):** Hexagonal prism structure (e.g., Ti, Mg, Zn). Often brittle. APF = 0.74.
+
+### Miller Indices
+A notation system $(hkl)$ used to denote specific crystallographic planes and directions within a lattice, critical for understanding X-ray diffraction and plastic deformation (slip).
+
+## 2. Defects and Imperfections
+
+No real crystal is perfect. Imperfections are actually what make metallurgy possible; without them, metals would be infinitely brittle and impossible to forge.
+
+### Point Defects (0D)
+*   **Vacancies:** Missing atoms in the lattice. Essential for solid-state diffusion.
+*   **Interstitials:** Extra atoms squeezed into the empty spaces between lattice points (e.g., Carbon in Iron to make Steel).
+*   **Substitutional:** A foreign atom replacing a host atom.
+
+### Line Defects: Dislocations (1D)
+Dislocations are one-dimensional defects where a plane of atoms is misaligned. 
+**Plastic deformation (bending a paperclip) occurs by the motion of dislocations.** If dislocations cannot move, the metal is brittle.
+
+### Strengthening Mechanisms
+To make a metal stronger, you must impede the motion of dislocations:
+1.  **Work Hardening (Strain Hardening):** Plastically deforming the metal generates millions of new dislocations. They tangle up and block each other from moving further.
+2.  **Solid Solution Strengthening:** Adding alloy elements (like Zinc to Copper to make Brass). The different-sized impurity atoms strain the lattice, acting as speed bumps for dislocations.
+3.  **Precipitation Hardening:** Heat treatments that form microscopic clusters of a secondary phase (precipitates) that pin dislocations in place (used in aerospace Aluminum).
+4.  **Grain Boundary Strengthening:** Decreasing the grain size. Grain boundaries are walls of disorganized atoms; dislocations cannot easily cross them.
+
+## 3. Mechanical Properties and Testing
+
+Engineers evaluate materials using standard mechanical tests.
+
+### The Tensile Test
+A sample is pulled slowly to failure while measuring load and elongation.
+*   **Engineering Stress ($\\sigma$):** $\\sigma = \\frac{F}{A_0}$
+*   **Engineering Strain ($\\epsilon$):** $\\epsilon = \\frac{\\Delta L}{L_0}$
+
+**The Stress-Strain Curve:**
+1.  **Linear Elastic Region:** Deformation is temporary. Governed by Hooke's Law: $\\sigma = E \\epsilon$. $E$ is Young's Modulus (stiffness).
+2.  **Yield Strength ($S_y$):** The stress at which permanent (plastic) deformation begins.
+3.  **Ultimate Tensile Strength (UTS):** The maximum stress on the curve. Beyond this, the sample "necks" (thins out rapidly).
+4.  **Fracture:** The point of catastrophic failure.
+
+### Toughness and Fatigue
+*   **Toughness:** The total energy a material can absorb before breaking (the area under the entire stress-strain curve).
+*   **Fatigue:** Failure under repeated, cyclic loading (like a spinning axle) at stress levels *well below* the yield strength. This accounts for ~90% of all mechanical failures in engineering.
+
+## 4. Phase Diagrams and Thermodynamics of Solids
+
+Phase diagrams act as maps showing the equilibrium phases present for a given alloy composition and temperature.
+
+### The Binary Isomorphous System (Cu-Ni)
+Complete solid solubility. The diagram looks like a lens, featuring a Liquid region, a Solid region ($\\alpha$), and a two-phase $(L + \\alpha)$ mushy zone.
+
+### The Eutectic System (Pb-Sn Solder)
+Limited solid solubility. Features a "V" shape.
+**The Eutectic Point:** The specific temperature and composition where a liquid transforms instantly into two distinct solid phases upon cooling: $L \\rightarrow \\alpha + \\beta$. This yields a microscopic lamellar (striped) structure.
+
+### The Iron-Carbon Phase Diagram (Steel)
+The most important phase diagram in human history.
+*   **Ferrite ($\\alpha$):** BCC iron. Can hold almost zero carbon. Soft and ductile.
+*   **Austenite ($\\gamma$):** FCC iron. Stable only at high temperatures. Can dissolve up to 2.14% carbon.
+*   **Cementite ($Fe_3C$):** Iron carbide. Extremely hard and brittle compound.
+*   **Pearlite:** The eutectoid mixture of ferrite and cementite, forming alternating layers. Gives steel its excellent balance of strength and ductility.
+
+### Phase Transformations and Kinetics (TTT Diagrams)
+If austenite is cooled *very rapidly* (quenching), carbon atoms are trapped, and the FCC lattice shears into a distorted Body-Centered Tetragonal (BCT) structure called **Martensite**. Martensite is the hardest and most brittle form of steel. It must be "tempered" (reheated slightly) to restore some toughness, creating Tempered Martensite (used in knives, tools, and gears).
+`,
+  'Electrical Engineering Fundamentals': `
+# Electrical Engineering Fundamentals: Circuits and Systems
+
+Electrical engineering underpins the modern world, focusing on the generation, transmission, and processing of electrical energy and information.
+
+## 1. DC Circuit Analysis
+
+Direct Current (DC) involves a constant, unidirectional flow of electric charge.
+
+### The Fundamental Variables
+*   **Voltage ($V$):** Electromotive force or potential difference (Volts, $J/C$). The "pressure" pushing the electrons.
+*   **Current ($I$):** The rate of flow of electric charge (Amperes, $C/s$).
+*   **Resistance ($R$):** Opposition to current flow (Ohms, $\\Omega$).
+*   **Power ($P$):** The rate of energy transfer (Watts, $J/s$). $P = VI = I^2 R = \\frac{V^2}{R}$.
+
+### Ohm's Law and Kirchhoff's Laws
+*   **Ohm's Law:** $V = IR$
+*   **Kirchhoff's Current Law (KCL):** Based on the conservation of charge. The algebraic sum of currents entering a node is zero. $\\sum I = 0$.
+*   **Kirchhoff's Voltage Law (KVL):** Based on the conservation of energy. The algebraic sum of voltage drops around any closed loop is zero. $\\sum V = 0$.
+
+### Circuit Analysis Techniques
+When circuits have multiple voltage sources and complex topologies, simple series/parallel rules fail.
+1.  **Nodal Analysis:** Uses KCL to find the unknown voltages at every node in the circuit.
+2.  **Mesh Analysis:** Uses KVL to find the unknown circulating currents in every "mesh" (loop) of the circuit.
+3.  **Thevenin's Theorem:** Any complex linear circuit consisting of sources and resistors can be mathematically reduced to a single equivalent voltage source ($V_{th}$) in series with a single equivalent resistor ($R_{th}$). This simplifies the analysis of circuits connected to varying loads.
+
+## 2. Capacitors and Inductors
+
+These are energy storage elements that introduce time-dependent (transient) behavior into circuits.
+
+*   **Capacitor ($C$):** Stores energy in an electric field. Resists abrupt changes in *voltage*.
+    $$ I = C \\frac{dV}{dt} $$
+    Energy stored: $E = \\frac{1}{2}CV^2$
+*   **Inductor ($L$):** Stores energy in a magnetic field. Resists abrupt changes in *current*.
+    $$ V = L \\frac{dI}{dt} $$
+    Energy stored: $E = \\frac{1}{2}LI^2$
+
+### RC and RL Transient Circuits
+When a switch is flipped, the voltage and current in circuits with capacitors or inductors do not change instantly. They follow exponential decay/growth curves dictated by the **Time Constant ($\\tau$)**.
+*   For an RC circuit: $\\tau = RC$
+*   For an RL circuit: $\\tau = L/R$
+The general step response is: $x(t) = x_{final} + (x_{initial} - x_{final}) e^{-t/\\tau}$.
+
+## 3. AC Circuit Analysis
+
+Alternating Current (AC) involves voltages and currents that vary sinusoidally with time. The power grid operates on AC because it allows the use of transformers to step voltages up and down efficiently.
+
+### Phasors and Impedance
+Solving AC circuits using trigonometric sine and cosine functions is mathematically grueling. Engineers use **Phasors** (complex numbers representing amplitude and phase angle) to transform AC calculus problems into simple DC algebra problems.
+*   $V(t) = V_m \\cos(\\omega t + \\phi) \\implies \\mathbf{V} = V_m \\angle \\phi$
+
+**Impedance ($Z$)** is the AC equivalent of resistance, accounting for both magnitude and phase shift.
+$$ \\mathbf{V} = \\mathbf{I} \\mathbf{Z} $$
+*   **Resistor:** $\\mathbf{Z_R} = R$ (Voltage and current are in phase).
+*   **Inductor:** $\\mathbf{Z_L} = j\\omega L$ (Current lags voltage by $90^{\\circ}$).
+*   **Capacitor:** $\\mathbf{Z_C} = \\frac{1}{j\\omega C} = -j\\frac{1}{\\omega C}$ (Current leads voltage by $90^{\\circ}$).
+
+### AC Power
+Power in AC circuits is divided into three components, often visualized using the Power Triangle:
+1.  **Real Power ($P$):** The actual work done by resistors (Watts). $P = V_{rms} I_{rms} \\cos \\theta$.
+2.  **Reactive Power ($Q$):** Power that simply sloshes back and forth between the source and the inductors/capacitors (Volt-Amperes Reactive, VAR). $Q = V_{rms} I_{rms} \\sin \\theta$.
+3.  **Apparent Power ($S$):** The total power the grid must supply (Volt-Amperes, VA). $\\mathbf{S} = \\mathbf{V}_{rms} \\mathbf{I}_{rms}^* = P + jQ$.
+
+**Power Factor ($PF$):** The ratio of Real to Apparent power ($PF = \\cos \\theta$). A low PF is highly inefficient for the power grid. Engineers use **Power Factor Correction** (adding large capacitor banks) to cancel out the inductive reactive power of large industrial motors, bringing the PF closer to 1.0.
+
+## 4. Electronics and Semiconductors
+
+Semiconductors (like Silicon) have electrical conductivities between conductors and insulators.
+
+### Diodes
+Formed by joining P-type and N-type semiconductors (a PN junction). A diode acts as a one-way valve for electricity. It allows current to flow when forward-biased, but blocks it when reverse-biased. They are primarily used in **Rectifiers** to convert AC power into DC power.
+
+### Transistors (MOSFETs and BJTs)
+The foundation of the digital age. A transistor is a three-terminal device where the voltage or current applied to one terminal controls the massive flow of current between the other two terminals.
+*   **Amplifier:** Small input signal produces a massive output signal (used in audio and radio).
+*   **Switch:** The transistor is either fully ON or fully OFF (the basis of binary logic, 1s and 0s, in microprocessors).
+`,
+  'Civil and Structural Engineering': `
+# Civil and Structural Engineering: Design and Mechanics
+
+Civil engineering involves the design and analysis of infrastructure, ensuring that structures like bridges, skyscrapers, and dams can safely withstand gravitational and environmental loads without failing.
+
+## 1. Engineering Statics
+
+Statics is the analysis of bodies at rest. For a structure to be stable, it must be in a state of static equilibrium, meaning the sum of all forces and moments (torques) acting upon it must equal exactly zero.
+
+### The Equations of Equilibrium
+For a 2D rigid body:
+$$ \\sum F_x = 0 \\quad \\sum F_y = 0 \\quad \\sum M_A = 0 $$
+Where $M_A$ is the moment about any arbitrary point A. Moment is defined as Force $\\times$ Perpendicular Distance.
+
+### Truss Analysis
+A truss is a framework of slender, straight members connected at joints (nodes). Trusses carry loads exclusively in pure tension or pure compression; they do not bend.
+*   **Method of Joints:** Isolate each pin joint as a free-body diagram and apply $\\sum F_x = 0$ and $\\sum F_y = 0$ to solve for the internal forces in the connecting members.
+*   **Method of Sections:** Slicing the entire truss in half and applying the three equations of equilibrium to the resulting free-body diagram. This is much faster if you only need the force in a single specific member.
+
+## 2. Mechanics of Materials (Solid Mechanics)
+
+Once statics provides the internal forces, Mechanics of Materials is used to determine the resulting stresses, strains, and deformations to ensure the material will not fracture or warp.
+
+### Normal and Shear Stress
+*   **Normal Stress ($\\sigma$):** Force acting perpendicular to a cross-section (tension or compression). $\\sigma = P/A$.
+*   **Shear Stress ($\\tau$):** Force acting parallel to a cross-section (sliding force). $\\tau = V/A$.
+
+### Torsion of Circular Shafts
+When a torque ($T$) twists a cylindrical shaft, it creates shear stresses. The maximum shear stress occurs at the outer surface:
+$$ \\tau_{max} = \\frac{T c}{J} $$
+Where $c$ is the outer radius, and $J$ is the polar moment of inertia ($J = \\frac{\\pi c^4}{2}$ for a solid cylinder).
+The angle of twist ($\\phi$) is:
+$$ \\phi = \\frac{T L}{J G} $$
+Where $G$ is the shear modulus of the material.
+
+### Bending of Beams
+When a beam supports a transverse load, it bends. The top surface typically goes into compression, while the bottom goes into tension. The plane in the middle that experiences zero stress is the **Neutral Axis**.
+The normal bending stress at a distance $y$ from the neutral axis is calculated using the **Flexure Formula**:
+$$ \\sigma = \\frac{M y}{I} $$
+Where $M$ is the internal bending moment, and $I$ is the area moment of inertia. To minimize stress and save weight, engineers maximize $I$ by placing material as far from the neutral axis as possible (this is why I-beams are shaped like an "I").
+
+## 3. Structural Design and Failure Modes
+
+Engineers must check multiple failure criteria.
+
+### Yielding and Fracture
+The calculated stresses must not exceed the allowable stress of the material.
+$$ \\sigma_{allow} = \\frac{\\text{Yield Strength}}{\\text{Factor of Safety (FS)}} $$
+The Factor of Safety accounts for uncertainties in loading, material defects, and mathematical assumptions.
+
+### Column Buckling (Euler's Theory)
+Long, slender columns under compression rarely fail by material crushing; they fail by sudden, catastrophic sideways deflection called buckling.
+The critical buckling load ($P_{cr}$) is the maximum axial load a column can support:
+$$ P_{cr} = \\frac{\\pi^2 E I}{(K L)^2} $$
+Where $E$ is Young's Modulus, $I$ is the moment of inertia, $L$ is the length, and $K$ is the effective length factor (which depends on how the ends are supported: pinned, fixed, or free).
+
+## 4. Geotechnical Engineering
+
+A structure is only as stable as the ground beneath it. Geotechnical engineering involves the mechanics of soils and rock.
+
+### Soil Mechanics and Effective Stress
+Soil consists of solid particles, water, and air voids. The most critical concept is Karl Terzaghi's **Principle of Effective Stress**:
+$$ \\sigma' = \\sigma - u $$
+Where $\\sigma'$ is the effective stress (the stress carried entirely by the solid soil skeleton), $\\sigma$ is the total applied stress (from the building weight), and $u$ is the pore water pressure.
+*   Soil shear strength and settlement are governed *exclusively* by effective stress.
+*   If pore water pressure $u$ increases rapidly (e.g., during an earthquake), $\\sigma'$ drops to zero, and the soil loses all strength, behaving like a liquid. This catastrophic failure is called **Soil Liquefaction**.
+
+### Consolidation Settlement
+When a heavy building is placed on saturated clay, the water is slowly squeezed out of the microscopic pores over years or decades. This causes the soil volume to shrink, leading to gradual, long-term sinking of the building, known as consolidation settlement (famously observed in the Leaning Tower of Pisa).
+`,
+  'Software Engineering Principles': `
+# Software Engineering Principles: Architecture and Algorithms
+
+Software engineering is the application of rigorous, systematic engineering principles to the design, development, maintenance, and testing of software systems. It scales coding from solo projects to enterprise systems built by thousands of developers.
+
+## 1. Software Development Life Cycles (SDLC)
+
+SDLC models define the methodology used to structure, plan, and control the process of developing an information system.
+
+### The Waterfall Model
+A linear, sequential approach consisting of distinct phases: Requirements $\\rightarrow$ Design $\\rightarrow$ Implementation $\\rightarrow$ Verification $\\rightarrow$ Maintenance.
+*   **Pros:** Highly structured, rigid documentation, easy to manage.
+*   **Cons:** Inflexible. If a design flaw is found during Verification, going back to the Design phase is catastrophically expensive. Poorly suited for modern software where user requirements change constantly.
+
+### Agile Methodology
+An iterative, incremental approach. Development is broken into small chunks called "Sprints" (typically 1-4 weeks). At the end of each sprint, a working, tested piece of software is delivered.
+*   **Scrum:** A specific Agile framework featuring Daily Standups, Sprint Planning, and Retrospectives, managed by a Scrum Master and a Product Owner.
+*   **Pros:** Highly adaptable to changing requirements, continuous feedback from clients, rapid delivery of business value.
+
+## 2. System Architecture
+
+Software architecture is the high-level structure of a system, defining its components, their properties, and how they interact.
+
+### Monolithic vs. Microservices Architecture
+*   **Monolithic:** The entire application (UI, business logic, database access) is compiled into a single, massive codebase and deployed as one unit. Easy to develop initially, but scales poorly. A bug in one module can crash the entire application.
+*   **Microservices:** The application is broken down into dozens or hundreds of small, independent services loosely coupled via APIs (often HTTP/REST). 
+    *   *Pros:* Services can be written in different languages, deployed independently, and scaled independently (e.g., scaling up the payment service during Black Friday without touching the user-profile service).
+    *   *Cons:* Massively increased operational complexity, network latency, and difficulty in distributed debugging.
+
+### Model-View-Controller (MVC)
+A classic architectural pattern for User Interfaces:
+1.  **Model:** Manages the data, logic, and rules of the application.
+2.  **View:** The UI components that display the data to the user.
+3.  **Controller:** Accepts input from the user and converts it into commands for the Model or View.
+
+## 3. Object-Oriented Design (OOD) and SOLID Principles
+
+OOD organizes software design around "objects" (data fields and methods) rather than just functions and logic.
+
+### The Four Pillars of OOP
+1.  **Encapsulation:** Bundling data and the methods that operate on that data into a single unit (class), and restricting direct access to some of the object's components (using private/public access modifiers).
+2.  **Abstraction:** Hiding complex implementation details and showing only the essential features of the object.
+3.  **Inheritance:** A mechanism where a new class derives properties and characteristics from an existing class, promoting code reusability.
+4.  **Polymorphism:** The ability of different classes to be treated as instances of the same class through a common interface, allowing one function name to be used for different types.
+
+### The SOLID Principles
+A set of five design principles introduced by Robert C. Martin to make software more understandable, flexible, and maintainable.
+1.  **S - Single Responsibility Principle (SRP):** A class should have one, and only one, reason to change. It should do exactly one job.
+2.  **O - Open/Closed Principle (OCP):** Software entities should be open for extension (you can add new functionality) but closed for modification (you shouldn't have to rewrite existing, tested code to do it).
+3.  **L - Liskov Substitution Principle (LSP):** Objects of a superclass shall be replaceable with objects of its subclasses without breaking the application.
+4.  **I - Interface Segregation Principle (ISP):** No client should be forced to depend on methods it does not use. Break massive, "fat" interfaces into smaller, highly specific ones.
+5.  **D - Dependency Inversion Principle (DIP):** High-level modules should not depend on low-level modules. Both should depend on abstractions (interfaces).
+
+## 4. Algorithms and Big-O Notation
+
+Big-O notation is the mathematical framework used to evaluate the efficiency of algorithms. It describes the worst-case scenario for Time Complexity (how execution time grows) and Space Complexity (how memory usage grows) as the input size ($N$) approaches infinity.
+
+### Common Time Complexities
+*   **$O(1)$ - Constant Time:** The algorithm takes the exact same amount of time regardless of input size. (e.g., Looking up an element in an array by its index, or checking a Hash Map).
+*   **$O(\\log N)$ - Logarithmic Time:** The execution time grows very slowly. Typical of algorithms that divide the problem in half every step. (e.g., Binary Search). Extremely efficient for massive datasets.
+*   **$O(N)$ - Linear Time:** Execution time grows directly in proportion to the input size. (e.g., A simple 'for' loop iterating through an array to find a maximum value).
+*   **$O(N \\log N)$ - Linearithmic Time:** Typical of the most efficient comparison-based sorting algorithms (e.g., Merge Sort, Quick Sort, Heap Sort).
+*   **$O(N^2)$ - Quadratic Time:** Execution time grows exponentially. Extremely slow for large datasets. Usually involves nested loops (e.g., Bubble Sort, Insertion Sort).
+
+### Data Structures Trade-offs
+Choosing the right data structure is critical for performance.
+*   **Arrays:** Fast $O(1)$ access, but slow $O(N)$ insertion/deletion in the middle.
+*   **Linked Lists:** Fast $O(1)$ insertion/deletion (if you have the pointer), but slow $O(N)$ access because you must traverse sequentially.
+*   **Hash Tables (Dictionaries):** Offer incredibly fast $O(1)$ average time complexity for both lookups and insertions, relying on a hash function to map keys to memory addresses.
 `
 };
