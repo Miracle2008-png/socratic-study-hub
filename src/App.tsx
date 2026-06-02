@@ -95,7 +95,6 @@ const AppContent: React.FC = () => {
     if (activeTopicRef.current) recordTopicClose();
     activeTopicRef.current = { id: topicId, subject };
     recordTopicOpen(topicId, subject, label);
-    addXP(10, `Opened topic: ${topicId}`);
   };
 
   const closeTopic = () => {
