@@ -4,11 +4,6 @@ The Maillard reaction ( MY-ar; French: [majaʁ]) is a chemical reaction between 
 The reactive carbonyl group of the sugar reacts with the nucleophilic amino group of the amino acid and forms a complex mixture of poorly characterized molecules responsible for a range of aromas and flavors. This process is accelerated in an alkaline environment (e.g., lye applied to darken pretzels; see lye roll), as the amino groups (RNH+3 → RNH2) are deprotonated, and hence have an increased nucleophilicity. This reaction is the basis for many of the flavoring industry's recipes. At high temperatures, a probable carcinogen called acrylamide can form. This can be discouraged by heating at a lower temperature, adding asparaginase, or injecting carbon dioxide.
 In the cooking process, Maillard reactions can produce hundreds of different flavor compounds depending on the chemical constituents in the food, the temperature, the cooking time, and the presence of air. These compounds, in turn, often break down to form yet more flavor compounds. Flavorists have used the Maillard reaction over the years to make artificial flavors, the majority of patents being related to the production of meat-like flavors. According to chemistry Nobel Prize winner Jean-Marie Lehn "The Maillard is, by far, the most widely practiced chemical reaction in the world".
 
-
-## History
-In 1912, Louis Camille Maillard published a paper describing the reaction between amino acids and sugars at elevated temperatures. In 1953, chemist John E. Hodge with the U.S. Department of Agriculture established a mechanism for the Maillard reaction.
-
-
 ## Foods and products
 
 The Maillard reaction is responsible for many colors and flavors in foods, such as the browning of various meats when seared or grilled, the browning and umami taste in fried onions and coffee roasting. It contributes to the darkened crust of baked goods, the golden-brown color of French fries and other crisps, browning of malted barley as found in malt whiskey and beer, and the color and taste of dried and condensed milk, dulce de leche, black garlic, chocolate, toasted marshmallows, and roasted peanuts.
@@ -19,13 +14,13 @@ Caramelization is an entirely different process from Maillard browning, though t
 In making silage, excess heat causes the Maillard reaction to occur, which reduces the amount of energy and protein available to the animals that feed on it.
 In the production of animal feed the Maillard reaction can reduce feed quality by reducing the digestibility of amino acids. 
 
-
 ## Archaeology and paleontology
+
 In archaeology, the Maillard process occurs when bodies are preserved in peat bogs. The acidic peat environment causes a tanning or browning of skin tones and can turn hair to a red or ginger tone. The chemical mechanism is the same as in the browning of food, but it develops slowly over time due to the acidic action on the bog body. It is typically seen on Iron Age bodies and is the result of the interaction of anaerobic, acidic, and cold (typically 4 °C (39 °F)) sphagnum acid on the polysaccharides.
 The Maillard reaction also contributes to the preservation of paleofeces.
 
-
 ## Chemical mechanism
+
 The carbonyl group of the sugar reacts with the amino group of the amino acid, producing N-substituted glycosylamine and water
 The unstable glycosylamine undergoes Amadori rearrangement, forming ketosamines
 Several ways are known  for the ketosamines to react further:
@@ -38,17 +33,3 @@ This is a crucial intermediate.
 
 Dicarbonyls react with amines to produce Strecker aldehydes through Strecker degradation.
 Acrylamide, a possible human carcinogen, can be generated as a byproduct of Maillard reaction between reducing sugars and amino acids, especially asparagine, both of which are present in most food products.
-
-
-## See also
-
-
-## References
-
-
-## Further reading
-Van Soest, Peter J. (1982). Nutritional Ecology of the Ruminant (2nd ed.). Ithaca, NY: Cornell University Press. ISBN 9780801427725. OCLC 29909839.
-
-
-## External links
- Media related to Maillard reaction at Wikimedia Commons

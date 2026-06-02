@@ -2,8 +2,8 @@
 
 The notion of orbit of a control system used in mathematical control theory is a particular case of the notion of orbit in group theory.
 
-
 ## Definition
+
 Let 
 
   
@@ -29,7 +29,10 @@ Let
         )
       
     
-    {\displaystyle {\ }{\dot {q}}=f(q,u)}
+    
+
+$$ {\ }{\dot {q}}=f(q,u) $$
+
   
  
 be a 
@@ -49,7 +52,10 @@ be a
         
       
     
-    {\displaystyle \ {\mathcal {C}}^{\infty }}
+    
+
+$$ \ {\mathcal {C}}^{\infty } $$
+
   
  control system, where 
 
@@ -62,7 +68,10 @@ be a
         
       
     
-    {\displaystyle {\ q}}
+    
+
+$$ {\ q} $$
+
   
  
 belongs to a finite-dimensional manifold 
@@ -73,7 +82,10 @@ belongs to a finite-dimensional manifold
         M
       
     
-    {\displaystyle \ M}
+    
+
+$$ \ M $$
+
   
  and 
   
@@ -83,7 +95,10 @@ belongs to a finite-dimensional manifold
         u
       
     
-    {\displaystyle \ u}
+    
+
+$$ \ u $$
+
   
  belongs to a control set 
   
@@ -93,7 +108,10 @@ belongs to a finite-dimensional manifold
         U
       
     
-    {\displaystyle \ U}
+    
+
+$$ \ U $$
+
   
 . Consider the family 
   
@@ -119,7 +137,10 @@ belongs to a finite-dimensional manifold
         }
       
     
-    {\displaystyle {\mathcal {F}}=\{f(\cdot ,u)\mid u\in U\}}
+    
+
+$$ {\mathcal {F}}=\{f(\cdot ,u)\mid u\in U\} $$
+
   
 
 and assume that every vector field in 
@@ -133,7 +154,10 @@ and assume that every vector field in
         
       
     
-    {\displaystyle {\mathcal {F}}}
+    
+
+$$ {\mathcal {F}} $$
+
   
  is complete.
 For every 
@@ -149,7 +173,10 @@ For every
         
       
     
-    {\displaystyle f\in {\mathcal {F}}}
+    
+
+$$ f\in {\mathcal {F}} $$
+
   
  and every real 
   
@@ -159,7 +186,10 @@ For every
         t
       
     
-    {\displaystyle \ t}
+    
+
+$$ \ t $$
+
   
 , denote by 
   
@@ -175,7 +205,10 @@ For every
         
       
     
-    {\displaystyle \ e^{tf}}
+    
+
+$$ \ e^{tf} $$
+
   
  the flow of 
   
@@ -185,7 +218,10 @@ For every
         f
       
     
-    {\displaystyle \ f}
+    
+
+$$ \ f $$
+
   
  at time 
   
@@ -195,7 +231,10 @@ For every
         t
       
     
-    {\displaystyle \ t}
+    
+
+$$ \ t $$
+
   
 .
 The orbit of the control system 
@@ -222,7 +261,10 @@ The orbit of the control system
         )
       
     
-    {\displaystyle {\ }{\dot {q}}=f(q,u)}
+    
+
+$$ {\ }{\dot {q}}=f(q,u) $$
+
   
  through a point 
   
@@ -238,7 +280,10 @@ The orbit of the control system
         M
       
     
-    {\displaystyle q_{0}\in M}
+    
+
+$$ q_{0}\in M $$
+
   
  is the subset 
   
@@ -261,7 +306,10 @@ The orbit of the control system
         
       
     
-    {\displaystyle {\mathcal {O}}_{q_{0}}}
+    
+
+$$ {\mathcal {O}}_{q_{0}} $$
+
   
  of 
   
@@ -271,7 +319,10 @@ The orbit of the control system
         M
       
     
-    {\displaystyle \ M}
+    
+
+$$ \ M $$
+
   
  defined by
 
@@ -416,7 +467,10 @@ The orbit of the control system
         .
       
     
-    {\displaystyle {\mathcal {O}}_{q_{0}}=\{e^{t_{k}f_{k}}\circ e^{t_{k-1}f_{k-1}}\circ \cdots \circ e^{t_{1}f_{1}}(q_{0})\mid k\in \mathbb {N} ,\ t_{1},\dots ,t_{k}\in \mathbb {R} ,\ f_{1},\dots ,f_{k}\in {\mathcal {F}}\}.}
+    
+
+$$ {\mathcal {O}}_{q_{0}}=\{e^{t_{k}f_{k}}\circ e^{t_{k-1}f_{k-1}}\circ \cdots \circ e^{t_{1}f_{1}}(q_{0})\mid k\in \mathbb {N} ,\ t_{1},\dots ,t_{k}\in \mathbb {R} ,\ f_{1},\dots ,f_{k}\in {\mathcal {F}}\}. $$
+
   
 
 Remarks
@@ -432,7 +486,10 @@ In particular, if the family
         
       
     
-    {\displaystyle {\mathcal {F}}}
+    
+
+$$ {\mathcal {F}} $$
+
   
  is symmetric (i.e., 
   
@@ -447,7 +504,10 @@ In particular, if the family
         
       
     
-    {\displaystyle f\in {\mathcal {F}}}
+    
+
+$$ f\in {\mathcal {F}} $$
+
   
  if and only if 
   
@@ -463,7 +523,10 @@ In particular, if the family
         
       
     
-    {\displaystyle -f\in {\mathcal {F}}}
+    
+
+$$ -f\in {\mathcal {F}} $$
+
   
 ), then orbits and attainable sets coincide.
 The hypothesis that every vector field of 
@@ -477,12 +540,15 @@ The hypothesis that every vector field of
         
       
     
-    {\displaystyle {\mathcal {F}}}
+    
+
+$$ {\mathcal {F}} $$
+
   
  is complete simplifies the notations but can be dropped. In this case one has to replace flows of vector fields by local versions of them.
 
-
 ## Orbit theorem (Nagano–Sussmann)
+
 Each orbit 
   
     
@@ -504,7 +570,10 @@ Each orbit
         
       
     
-    {\displaystyle {\mathcal {O}}_{q_{0}}}
+    
+
+$$ {\mathcal {O}}_{q_{0}} $$
+
   
  is an immersed submanifold of 
   
@@ -514,7 +583,10 @@ Each orbit
         M
       
     
-    {\displaystyle \ M}
+    
+
+$$ \ M $$
+
   
 .
 The tangent space to the orbit
@@ -539,7 +611,10 @@ The tangent space to the orbit
         
       
     
-    {\displaystyle {\mathcal {O}}_{q_{0}}}
+    
+
+$$ {\mathcal {O}}_{q_{0}} $$
+
   
  at a point 
   
@@ -549,7 +624,10 @@ The tangent space to the orbit
         q
       
     
-    {\displaystyle \ q}
+    
+
+$$ \ q $$
+
   
  is the linear subspace of 
   
@@ -565,7 +643,10 @@ The tangent space to the orbit
         M
       
     
-    {\displaystyle \ T_{q}M}
+    
+
+$$ \ T_{q}M $$
+
   
  spanned by 
 the vectors 
@@ -585,7 +666,10 @@ the vectors
         )
       
     
-    {\displaystyle \ P_{*}f(q)}
+    
+
+$$ \ P_{*}f(q) $$
+
   
  where 
   
@@ -601,7 +685,10 @@ the vectors
         f
       
     
-    {\displaystyle \ P_{*}f}
+    
+
+$$ \ P_{*}f $$
+
   
  denotes the pushforward of 
   
@@ -611,7 +698,10 @@ the vectors
         f
       
     
-    {\displaystyle \ f}
+    
+
+$$ \ f $$
+
   
  by  
   
@@ -621,7 +711,10 @@ the vectors
         P
       
     
-    {\displaystyle \ P}
+    
+
+$$ \ P $$
+
   
 , 
   
@@ -631,7 +724,10 @@ the vectors
         f
       
     
-    {\displaystyle \ f}
+    
+
+$$ \ f $$
+
   
  belongs to  
   
@@ -644,7 +740,10 @@ the vectors
         
       
     
-    {\displaystyle {\mathcal {F}}}
+    
+
+$$ {\mathcal {F}} $$
+
   
  and 
   
@@ -654,7 +753,10 @@ the vectors
         P
       
     
-    {\displaystyle \ P}
+    
+
+$$ \ P $$
+
   
  is a diffeomorphism of 
   
@@ -664,7 +766,10 @@ the vectors
         M
       
     
-    {\displaystyle \ M}
+    
+
+$$ \ M $$
+
   
  of the form  
   
@@ -709,7 +814,10 @@ the vectors
         
       
     
-    {\displaystyle e^{t_{k}f_{k}}\circ \cdots \circ e^{t_{1}f_{1}}}
+    
+
+$$ e^{t_{k}f_{k}}\circ \cdots \circ e^{t_{1}f_{1}} $$
+
   
  with 
   
@@ -743,7 +851,10 @@ the vectors
         
       
     
-    {\displaystyle k\in \mathbb {N} ,\ t_{1},\dots ,t_{k}\in \mathbb {R} }
+    
+
+$$ k\in \mathbb {N} ,\ t_{1},\dots ,t_{k}\in \mathbb {R} $$
+
   
  and 
   
@@ -772,7 +883,10 @@ the vectors
         
       
     
-    {\displaystyle f_{1},\dots ,f_{k}\in {\mathcal {F}}}
+    
+
+$$ f_{1},\dots ,f_{k}\in {\mathcal {F}} $$
+
   
 .
 If all the vector fields of the family 
@@ -786,7 +900,10 @@ If all the vector fields of the family
         
       
     
-    {\displaystyle {\mathcal {F}}}
+    
+
+$$ {\mathcal {F}} $$
+
   
  are analytic, then 
   
@@ -833,7 +950,10 @@ If all the vector fields of the family
         
       
     
-    {\displaystyle \ T_{q}{\mathcal {O}}_{q_{0}}=\mathrm {Lie} _{q}\,{\mathcal {F}}}
+    
+
+$$ \ T_{q}{\mathcal {O}}_{q_{0}}=\mathrm {Lie} _{q}\,{\mathcal {F}} $$
+
   
  where 
   
@@ -857,7 +977,10 @@ If all the vector fields of the family
         
       
     
-    {\displaystyle \mathrm {Lie} _{q}\,{\mathcal {F}}}
+    
+
+$$ \mathrm {Lie} _{q}\,{\mathcal {F}} $$
+
   
  is the evaluation at 
   
@@ -867,7 +990,10 @@ If all the vector fields of the family
         q
       
     
-    {\displaystyle \ q}
+    
+
+$$ \ q $$
+
   
  of the Lie algebra generated by 
   
@@ -880,7 +1006,10 @@ If all the vector fields of the family
         
       
     
-    {\displaystyle {\mathcal {F}}}
+    
+
+$$ {\mathcal {F}} $$
+
   
  with respect to the Lie bracket of vector fields.
 Otherwise, the inclusion 
@@ -927,10 +1056,12 @@ Otherwise, the inclusion
         
       
     
-    {\displaystyle \mathrm {Lie} _{q}\,{\mathcal {F}}\subset T_{q}{\mathcal {O}}_{q_{0}}}
+    
+
+$$ \mathrm {Lie} _{q}\,{\mathcal {F}}\subset T_{q}{\mathcal {O}}_{q_{0}} $$
+
   
  holds true.
-
 
 ## Corollary (Rashevsky–Chow theorem)
 
@@ -964,7 +1095,10 @@ If
         M
       
     
-    {\displaystyle \mathrm {Lie} _{q}\,{\mathcal {F}}=T_{q}M}
+    
+
+$$ \mathrm {Lie} _{q}\,{\mathcal {F}}=T_{q}M $$
+
   
  for every 
   
@@ -976,7 +1110,10 @@ If
         M
       
     
-    {\displaystyle \ q\in M}
+    
+
+$$ \ q\in M $$
+
   
  and if 
   
@@ -986,7 +1123,10 @@ If
         M
       
     
-    {\displaystyle \ M}
+    
+
+$$ \ M $$
+
   
  is connected, then each orbit is equal to the whole manifold 
   
@@ -996,17 +1136,9 @@ If
         M
       
     
-    {\displaystyle \ M}
+    
+
+$$ \ M $$
+
   
 .
-
-
-## See also
-Frobenius theorem (differential topology)
-
-
-## References
-
-
-## Further reading
-Agrachev, Andrei; Sachkov, Yuri (2004). "The Orbit Theorem and its Applications". Control Theory from the Geometric Viewpoint. Berlin: Springer. pp. 63–80. ISBN 3-540-21019-9.

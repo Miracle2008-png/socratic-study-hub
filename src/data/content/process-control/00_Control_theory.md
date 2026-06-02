@@ -6,56 +6,44 @@ Extensive use is usually made of a diagrammatic style known as the block diagram
 Control theory dates from the 19th century, when the theoretical basis for the operation of governors was first described by James Clerk Maxwell.  Control theory was further advanced by Edward Routh in 1874, Charles Sturm and in 1895, Adolf Hurwitz, who all contributed to the establishment of control stability criteria; and from 1922 onwards, the development of PID control theory by Nicolas Minorsky.
 Although the most direct application of mathematical control theory is its use in control systems engineering (dealing with process control systems for robotics and industry), control theory is routinely applied to problems both the natural and behavioral sciences. As the general theory of feedback systems, control theory is useful wherever feedback occurs, making it important to fields like economics, operations research, and the life sciences.
 
-
-## History
-
-Although control systems of various types date back to antiquity, a more formal analysis of the field began with a dynamics analysis of the centrifugal governor, conducted by the physicist James Clerk Maxwell in 1868, entitled On Governors. A centrifugal governor was already used to regulate the velocity of windmills. Maxwell described and analyzed the phenomenon of self-oscillation, in which lags in the system may lead to overcompensation and unstable behavior. This generated a flurry of interest in the topic, during which Maxwell's classmate, Edward John Routh, abstracted Maxwell's results for the general class of linear systems. Independently, Adolf Hurwitz analyzed system stability using differential equations in 1877, resulting in what is now known as the Routh–Hurwitz theorem.
-A notable application of dynamic control was in the area of crewed flight. The Wright brothers made their first successful test flights on December 17, 1903, and were distinguished by their ability to control their flights for substantial periods (more so than the ability to produce lift from an airfoil, which was known). Continuous, reliable control of the airplane was necessary for flights lasting longer than a few seconds.
-By World War II, control theory was becoming an important area of research. Irmgard Flügge-Lotz developed the theory of discontinuous automatic control systems, and applied the bang-bang principle to the development of automatic flight control equipment for aircraft. Other areas of application for discontinuous controls included fire-control systems, guidance systems and electronics.
-Sometimes, mechanical methods are used to improve the stability of systems. For example, ship stabilizers are fins mounted beneath the waterline and emerging laterally.  In contemporary vessels, they may be gyroscopically controlled active fins, which have the capacity to change their angle of attack to counteract roll caused by wind or waves acting on the ship.
-The Space Race also depended on accurate spacecraft control, and control theory has also seen an increasing use in fields such as economics and artificial intelligence. Here, one might say that the goal is to find an internal model that obeys the good regulator theorem. So, for example, in economics, the more accurately a (stock or commodities) trading model represents the actions of the market, the more easily it can control that market (and extract "useful work" (profits) from it). In AI, an example might be a chatbot modelling the discourse state of humans: the more accurately it can model the human state (e.g. on a telephone voice-support hotline), the better it can manipulate the human (e.g. into performing the corrective actions to resolve the problem that caused the phone call to the help-line).  These last two examples take the narrow historical interpretation of control theory as a set of differential equations modeling and regulating kinetic motion, and broaden it into a vast generalization of a regulator interacting with a plant.
-
-
 ## Open-loop and closed-loop (feedback) control
-
 
 ## Classical control theory
 
-
 ## Linear and nonlinear control theory
+
 The field of control theory can be divided into two branches:
 
 Linear control theory – This applies to systems made of devices which obey the superposition principle, which means roughly that the output is proportional to the input.  They are governed by linear differential equations.  A major subclass is systems which in addition have parameters which do not change with time, called linear time invariant (LTI) systems.   These systems are amenable to powerful frequency domain mathematical techniques of great generality, such as the Laplace transform, Fourier transform, Z transform, Bode plot, root locus, and Nyquist stability criterion.  These lead to a description of the system using terms like bandwidth, frequency response, eigenvalues, gain, resonant frequencies, zeros and poles, which give solutions for system response and design techniques for most systems of interest.
 Nonlinear control theory – This covers a wider class of systems that do not obey the superposition principle, and applies to more real-world systems because all real control systems are nonlinear.  These systems are often governed by nonlinear differential equations.  The few mathematical techniques which have been developed to handle them are more difficult and much less general, often applying only to narrow categories of systems.  These include limit cycle theory, Poincaré maps, Lyapunov stability theorem, and describing functions.  Nonlinear systems are often analyzed using numerical methods on computers, for example by simulating their operation using a simulation language.  If only solutions near a stable point are of interest, nonlinear systems can often be linearized by approximating them by a linear system using perturbation theory, and linear techniques can be used.
 
-
 ## Analysis techniques – frequency domain and time domain
+
 Mathematical techniques for analyzing and designing control systems fall into two different categories:
 
 Frequency domain – In this type the values of the state variables, the mathematical variables representing the system's input, output and feedback are represented as functions of frequency.  The input signal and the system's transfer function are converted from time functions to functions of frequency by a transform such as the Fourier transform, Laplace transform, or Z transform.  The advantage of this technique is that it results in a simplification of the mathematics; the differential equations that represent the system are replaced by algebraic equations in the frequency domain which is much simpler to solve.  However, frequency domain techniques can only be used with linear systems, as mentioned above.
 Time-domain state space representation – In this type the values of the state variables are represented as functions of time.  With this model, the system being analyzed is represented by one or more differential equations.  Since frequency domain techniques are limited to linear systems, time domain is widely used to analyze real-world nonlinear systems.   Although these are more difficult to solve, modern computer simulation techniques such as simulation languages have made their analysis routine.
 In contrast to the frequency-domain analysis of the classical control theory, modern control theory utilizes the time-domain state space representation, a mathematical model of a physical system as a set of input, output and state variables related by first-order differential equations. To abstract from the number of inputs, outputs, and states, the variables are expressed as vectors and the differential and algebraic equations are written in matrix form (the latter only being possible when the dynamical system is linear). The state space representation (also known as the "time-domain approach") provides a convenient and compact way to model and analyze systems with multiple inputs and outputs. With inputs and outputs, we would otherwise have to write down Laplace transforms to encode all the information about a system. Unlike the frequency domain approach, the use of the state-space representation is not limited to systems with linear components and zero initial conditions. "State space" refers to the space whose axes are the state variables. The state of the system can be represented as a point within that space.
 
-
 ## System interfacing
+
 Control systems can be divided into different categories depending on the number of inputs and outputs.
 
 Single-input single-output (SISO) – This is the simplest and most common type, in which one output is controlled by one control signal.  Examples are the cruise control example above, or an audio power amplifier, in which the control input is the input audio signal and the output drives the loudspeaker.
 Multiple-input multiple-output (MIMO) – These are found in more complicated systems.  For example, modern large telescopes such as the Keck and MMT have mirrors composed of many separate segments each controlled by an actuator.  The shape of the entire mirror is constantly adjusted by a MIMO active optics control system using input from multiple sensors at the focal plane, to compensate for changes in the mirror shape due to thermal expansion, contraction, stresses as it is rotated and distortion of the wavefront due to turbulence in the atmosphere.  Complicated systems such as nuclear reactors and human cells are simulated by a computer as large MIMO control systems.
 
-
 ### Classical SISO system design
+
 The scope of classical control theory is limited to single-input and single-output (SISO) system design, except when analyzing for disturbance rejection using a second input. The system analysis is carried out in the time domain using differential equations, in the complex-s domain with the Laplace transform, or in the frequency domain by transforming from the complex-s domain. Many systems may be assumed to have a second order and single variable system response in the time domain. A controller designed using classical theory often requires on-site tuning due to incorrect design approximations. Yet, due to the easier physical implementation of classical controller designs as compared to systems designed using modern control theory, these controllers are preferred in most industrial applications. The most common controllers designed using classical control theory are PID controllers. A less common implementation may include either or both a Lead or Lag filter. The ultimate end goal is to meet requirements typically provided in the time-domain called the step response, or at times in the frequency domain called the open-loop response. The step response characteristics applied in a specification are typically percent overshoot, settling time, etc. The open-loop response characteristics applied in a specification are typically Gain and Phase margin and bandwidth. These characteristics may be evaluated through simulation including a dynamic model of the system under control coupled with the compensation model.
 
-
 ### Modern MIMO system design
-Modern control theory is carried out in the state space, and can deal with multiple-input and multiple-output (MIMO) systems. This overcomes the limitations of classical control theory in more sophisticated design problems, such as fighter aircraft control, with the limitation that no frequency domain analysis is possible. In modern design, a system is represented to the greatest advantage as a set of decoupled first order differential equations defined using state variables. Nonlinear, multivariable, adaptive and robust control theories come under this division.  Being fairly new, modern control theory has many areas yet to be explored. Scholars like Rudolf E. Kálmán and Aleksandr Lyapunov are well known among the people who have shaped modern control theory.
 
+Modern control theory is carried out in the state space, and can deal with multiple-input and multiple-output (MIMO) systems. This overcomes the limitations of classical control theory in more sophisticated design problems, such as fighter aircraft control, with the limitation that no frequency domain analysis is possible. In modern design, a system is represented to the greatest advantage as a set of decoupled first order differential equations defined using state variables. Nonlinear, multivariable, adaptive and robust control theories come under this division.  Being fairly new, modern control theory has many areas yet to be explored. Scholars like Rudolf E. Kálmán and Aleksandr Lyapunov are well known among the people who have shaped modern control theory.
 
 ## Topics in control theory
 
-
 ### Stability
+
 The stability of a general dynamical system with no input can be described with Lyapunov stability criteria.
 
 A linear system is called bounded-input bounded-output (BIBO) stable if its output will stay bounded for any bounded input.
@@ -72,7 +60,10 @@ The difference between the two cases is simply due to the traditional method of 
         x
       
     
-    {\displaystyle x}
+    
+
+$$ x $$
+
   
  axis is the real axis and the discrete Z-transform is in circular coordinates where the 
   
@@ -81,7 +72,10 @@ The difference between the two cases is simply due to the traditional method of 
         ρ
       
     
-    {\displaystyle \rho }
+    
+
+$$ \rho $$
+
   
  axis is the real axis.
 When the appropriate conditions above are satisfied a system is said to be asymptotically stable; the variables of an asymptotically stable control system always decrease from their initial value and do not show permanent oscillations. Permanent oscillations occur when a pole has a real part exactly equal to zero (in the continuous time case) or a modulus equal to one (in the discrete time case). If a simply stable system response neither decays nor grows over time, and has no oscillations, it is marginally stable; in this case the system transfer function has non-repeated poles at the complex plane origin (i.e. their real and complex component is zero in the continuous time case). Oscillations are present when poles with real part equal to zero have an imaginary part not equal to zero.
@@ -108,7 +102,10 @@ If a system in question has an impulse response of
         ]
       
     
-    {\displaystyle \ x[n]=0.5^{n}u[n]}
+    
+
+$$ \ x[n]=0.5^{n}u[n] $$
+
   
 
 then the Z-transform (see this example), is given by
@@ -141,7 +138,10 @@ then the Z-transform (see this example), is given by
         
       
     
-    {\displaystyle \ X(z)={\frac {1}{1-0.5z^{-1}}}}
+    
+
+$$ \ X(z)={\frac {1}{1-0.5z^{-1}}} $$
+
   
 
 which has a pole in 
@@ -153,7 +153,10 @@ which has a pole in
         0.5
       
     
-    {\displaystyle z=0.5}
+    
+
+$$ z=0.5 $$
+
   
  (zero imaginary part). This system is BIBO (asymptotically) stable since the pole is inside the unit circle.
 However, if the impulse response was
@@ -179,7 +182,10 @@ However, if the impulse response was
         ]
       
     
-    {\displaystyle \ x[n]=1.5^{n}u[n]}
+    
+
+$$ \ x[n]=1.5^{n}u[n] $$
+
   
 
 then the Z-transform is
@@ -212,7 +218,10 @@ then the Z-transform is
         
       
     
-    {\displaystyle \ X(z)={\frac {1}{1-1.5z^{-1}}}}
+    
+
+$$ \ X(z)={\frac {1}{1-1.5z^{-1}}} $$
+
   
 
 which has a pole at 
@@ -224,12 +233,14 @@ which has a pole at
         1.5
       
     
-    {\displaystyle z=1.5}
+    
+
+$$ z=1.5 $$
+
   
  and is not BIBO stable since the pole has a modulus strictly greater than one.
 Numerous tools exist for the analysis of the poles of a system. These include graphical systems like the root locus, Bode plots or the Nyquist plots.
 Mechanical changes can make equipment (and control systems) more stable. Sailors add ballast to improve the stability of ships. Cruise ships use antiroll fins that extend transversely from the side of the ship for perhaps 30 feet (10 m) and are continuously rotated about their axes to develop forces that oppose the roll.
-
 
 ### Controllability and observability
 
@@ -237,8 +248,8 @@ Controllability and observability are main issues in the analysis of a system be
 From a geometrical point of view, looking at the states of each variable of the system to be controlled, every "bad" state of these variables must be controllable and observable to ensure a good behavior in the closed-loop system. That is, if one of the eigenvalues of the system is not both controllable and observable, this part of the dynamics will remain untouched in the closed-loop system. If such an eigenvalue is not stable, the dynamics of this eigenvalue will be present in the closed-loop system which therefore will be unstable. Unobservable poles are not present in the transfer function realization of a state-space representation, which is why sometimes the latter is preferred in dynamical systems analysis.
 Solutions to problems of an uncontrollable or unobservable system include adding actuators and sensors.
 
-
 ### Control specification
+
 Several different control strategies have been devised in the past years. These vary from extremely general ones (PID controller), to others devoted to very particular classes of systems (especially robotics or aircraft cruise control).
 A control problem can have several specifications. Stability, of course, is always present. The controller must ensure that the closed-loop system is stable, regardless of the open-loop stability. A poor choice of controller can even worsen the stability of the open-loop system, which must normally be avoided. Sometimes it would be desired to obtain particular dynamics in the closed loop: i.e. that the poles have 
   
@@ -259,7 +270,10 @@ A control problem can have several specifications. Stability, of course, is alwa
         
       
     
-    {\displaystyle Re[\lambda ]<-{\overline {\lambda }}}
+    
+
+$$ Re[\lambda ]<-{\overline {\lambda }} $$
+
   
 , where 
   
@@ -273,7 +287,10 @@ A control problem can have several specifications. Stability, of course, is alwa
         
       
     
-    {\displaystyle {\overline {\lambda }}}
+    
+
+$$ {\overline {\lambda }} $$
+
   
  is a fixed value strictly greater than zero, instead of simply asking that 
   
@@ -288,15 +305,18 @@ A control problem can have several specifications. Stability, of course, is alwa
         0
       
     
-    {\displaystyle Re[\lambda ]<0}
+    
+
+$$ Re[\lambda ]<0 $$
+
   
 .
 Another typical specification is the rejection of a step disturbance; including an integrator in the open-loop chain (i.e. directly before the system under control) easily achieves this. Other classes of disturbances need different types of sub-systems to be included.
 Other "classical" control theory specifications regard the time-response of the closed-loop system. These include the rise time (the time needed by the control system to reach the desired value after a perturbation), peak overshoot (the highest value reached by the response before reaching the desired value) and others (settling time, quarter-decay). Frequency domain specifications are usually related to robustness (see after).
 Modern performance assessments use some variation of integrated tracking error (IAE, ISA, CQI).
 
-
 ### Model identification and robustness
+
 A control system must always have some robustness property. A robust controller is such that its properties do not change much if applied to a system slightly different from the mathematical one used for its synthesis. This requirement is important, as no real physical system truly behaves like the series of differential equations used to represent it mathematically. Typically a simpler mathematical model is chosen in order to simplify calculations, otherwise, the true system dynamics can be so complicated that a complete model is impossible.
 
 System identification
@@ -341,7 +361,10 @@ The process of determining the equations that govern the model's dynamics is cal
         )
       
     
-    {\displaystyle m{\ddot {x}}(t)=-Kx(t)-\mathrm {B} {\dot {x}}(t)}
+    
+
+$$ m{\ddot {x}}(t)=-Kx(t)-\mathrm {B} {\dot {x}}(t) $$
+
   
 . Even assuming that a "complete" model is used in designing the controller, all the parameters included in these equations (called "nominal parameters") are never known with absolute precision; the control system will have to behave correctly even when connected to a physical system with true parameter values away from nominal.
 Some advanced control techniques include an "on-line" identification process (see later). The parameters of the model are calculated ("identified") while the controller itself is running. In this way, if a drastic variation of the parameters ensues, for example, if the robot's arm releases a weight, the controller will adjust itself consequently in order to ensure the correct performance.
@@ -352,31 +375,26 @@ Analysis of the robustness of a SISO (single input single output) control system
 Constraints
 A particular robustness issue is the requirement for a control system to perform properly in the presence of input and state constraints. In the physical world every signal is limited. It could happen that a controller will send control signals that cannot be followed by the physical system, for example, trying to rotate a valve at excessive speed. This can produce undesired behavior of the closed-loop system, or even damage or break actuators or other subsystems. Specific control techniques are available to solve the problem: model predictive control (see later), and anti-wind up systems. The latter consists of an additional control block that ensures that the control signal never exceeds a given threshold.
 
-
 ## System classifications
-
 
 ### Linear systems control
 
 For MIMO systems, pole placement can be performed mathematically using a state space representation of the open-loop system and calculating a feedback matrix assigning poles in the desired positions. In complicated systems this can require computer-assisted calculation capabilities, and cannot always ensure robustness. Furthermore, all system states are not in general measured and so observers must be included and incorporated in pole placement design.
 
-
 ### Nonlinear systems control
 
 Processes in industries like robotics and the aerospace industry typically have strong nonlinear dynamics. In control theory it is sometimes possible to linearize such classes of systems and apply linear techniques, but in many cases it can be necessary to devise from scratch theories permitting control of nonlinear systems. These, e.g., feedback linearization, backstepping, sliding mode control, trajectory linearization control normally take advantage of results based on Lyapunov's theory. Differential geometry has been widely used as a tool for generalizing well-known linear control concepts to the nonlinear case, as well as showing the subtleties that make it a more challenging problem.  Control theory has also been used to decipher the neural mechanism that directs cognitive states.
-
 
 ### Decentralized systems control
 
 When the system is controlled by multiple controllers, the problem is one of decentralized control. Decentralization is helpful in many ways, for instance, it helps control systems to operate over a larger geographical area. The agents in decentralized control systems can interact using communication channels and coordinate their actions.
 
-
 ### Deterministic and stochastic systems control
 
 A stochastic control problem is one in which the evolution of the state variables is subjected to random shocks from outside the system. A deterministic control problem is not subject to external random shocks.
 
-
 ## Main control strategies
+
 Every control system must guarantee first the stability of the closed-loop behavior. For linear systems, this can be obtained by directly placing the poles. Nonlinear control systems use specific theories (normally based on Aleksandr Lyapunov's Theory) to ensure stability without regard to the inner dynamics of the system. The possibility to fulfill different specifications varies from the model considered and the control strategy chosen.
 
 List of the main control techniques
@@ -387,7 +405,6 @@ Adaptive control uses on-line identification of the process parameters, or modif
 A hierarchical control system is a type of control system in which a set of devices and governing software is arranged in a hierarchical tree.  When the links in the tree are implemented by a computer network, then that hierarchical control system is also a form of networked control system.
 Intelligent control uses various AI computing approaches like artificial neural networks, Bayesian probability, fuzzy logic, machine learning, evolutionary computation and genetic algorithms or a combination of these methods, such as neuro-fuzzy algorithms, to control a dynamic system.
 Self-organized criticality control may be defined as attempts to interfere in the processes by which the self-organized system dissipates energy.
-
 
 ## People in systems and control
 
@@ -408,39 +425,3 @@ Pierre-Louis Lions  developed viscosity solutions into stochastic control and op
 Rudolf E. Kálmán  pioneered the state-space approach to systems and control. Introduced the notions of controllability and observability. Developed the Kalman filter for linear estimation.
 Ali H. Nayfeh  who was one of the main contributors to nonlinear control theory and published many books on perturbation methods
 Jan C. Willems Introduced the concept of dissipativity, as a generalization of Lyapunov function to input/state/output systems. The construction of the storage function, as the analogue of a Lyapunov function is called, led to the study of the linear matrix inequality (LMI) in control theory.  He pioneered the behavioral approach to mathematical systems theory.
-
-
-## See also
-
-Examples of control systems
-
-Topics in control theory
-
-Other related topics
-
-
-## References
-
-
-## Further reading
-Levine, William S., ed. (1996). The Control Handbook. New York: CRC Press. ISBN 978-0-8493-8570-4.
-Karl J. Åström; Richard M. Murray (2008). Feedback Systems: An Introduction for Scientists and Engineers (PDF). Princeton University Press. ISBN 978-0-691-13576-2.
-Christopher Kilian (2005). Modern Control Technology. Thompson Delmar Learning. ISBN 978-1-4018-5806-3.
-Vannevar Bush (1929). Operational Circuit Analysis. John Wiley and Sons, Inc.
-Robert F. Stengel (1994). Optimal Control and Estimation. Dover Publications. ISBN 978-0-486-68200-6.
-Franklin; et al. (2002). Feedback Control of Dynamic Systems (4 ed.). New Jersey: Prentice Hall. ISBN 978-0-13-032393-4.
-Joseph L. Hellerstein; Dawn M. Tilbury; Sujay Parekh (2004). Feedback Control of Computing Systems. John Wiley and Sons. ISBN 978-0-471-26637-2.
-Diederich Hinrichsen and Anthony J. Pritchard (2005). Mathematical Systems Theory I – Modelling, State Space Analysis, Stability and Robustness. Springer. ISBN 978-3-540-44125-0.
-Sontag, Eduardo (1998). Mathematical Control Theory: Deterministic Finite Dimensional Systems. Second Edition (PDF). Springer. ISBN 978-0-387-98489-6.
-Goodwin, Graham (2001). Control System Design. Prentice Hall. ISBN 978-0-13-958653-8.
-Christophe Basso (2012). Designing Control Loops for Linear and Switching Power Supplies: A Tutorial Guide. Artech House. ISBN 978-1608075577.
-Boris J. Lurie; Paul J. Enright (2019). Classical Feedback Control with Nonlinear Multi-loop Systems (3 ed.). CRC Press. ISBN 978-1-1385-4114-6.
-For Chemical Engineering
-Luyben, William (1989). Process Modeling, Simulation, and Control for Chemical Engineers. McGraw Hill. ISBN 978-0-07-039159-8.
-
-
-## External links
-
-Control Tutorials for Matlab, a set of worked-through control examples solved by several different methods.
-Control Tuning and Best Practices
-Advanced control structures, free on-line simulators explaining the control theory

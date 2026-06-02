@@ -6,21 +6,3 @@ Containment theory, as developed by Walter Reckless in 1973, states that behavio
 Control theory stresses how weak bonds between the individuals and society free people to deviate or go against the norms, or the people who have weak ties would engage in crimes so they could benefit, or gain something that is to their own interest. This is where strong bonds make deviance more costly. Deviant acts appear attractive to individuals but social bonds stop most people from committing the acts. Deviance is a result of extensive exposure to certain social situations where individuals develop behaviors that attract them to avoid conforming to social norms. Social bonds are used in control theory to help individuals from pursuing these attractive deviations.
 According to Travis Hirschi, humans are selfish beings, who make decisions based on which choice will give the greatest benefit.  A good example of control theory would be that people go to work. Most people do not want to go to work, but they do, because they get paid, to obtain food, water, shelter, and clothing.
 Hirschi (1969) identifies four elements of social bonds: attachment, commitment, involvement, and belief.
-
-
-## See also
-Social control theory
-
-
-## Notes
-
-
-## References
-Giddens, Anthony, Mitchell Duneier, Richard Appelbaum, and Deborah Carr. Introduction To Sociology. Seventh . New York City: W.W. Norton & Company, 2009. 182. Print.
-Hamlin, John. "A Non-Causal Explanation: Containment Theory Walter C. Reckless." 2001. University of Minnesota, Web. 5 Mar 2010. <https://web.archive.org/web/20110604223724/http://www.d.umn.edu/cla/faculty/jhamlin/2311/Reckless.html>.
-O'Grady, William. Crime in a Canadian Context. 2011. Toronto: Oxford University press. Print.
-Henslin, James M. Sociology: A Down-To-Earth Approach. Nine ed. Boston: Allyn and Bacon, 2008. Print.
-
-
-## External links
-Control Theory

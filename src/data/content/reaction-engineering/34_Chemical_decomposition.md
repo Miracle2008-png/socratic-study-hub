@@ -6,15 +6,14 @@ The stability of a chemical compound is eventually limited when exposed to  envi
 For example, this method is employed for several analytical techniques, notably mass spectrometry, traditional gravimetric analysis, and thermogravimetric analysis.  Additionally decomposition reactions are used today for a number of other reasons in the production of a wide variety of products. One of these is the explosive breakdown reaction of sodium azide (NaN3) into nitrogen gas (N2) and sodium (Na). It is this process which powers the life-saving airbags present in virtually all of today's automobiles.
 Decomposition reactions can be generally classed into three categories; thermal, electrolytic, and photolytic decomposition reactions.
 
-
 ## Reaction formula
+
 In the breakdown of a compound into its constituent parts, the generalized reaction for chemical decomposition is:
 
 AB  →  A + B (AB represents the reactant that begins the reaction, and A and B represent the products of the reaction)
 An example is the electrolysis of water to the gases hydrogen and oxygen:
 
 2 H2O  →  2 H2 + O2
-
 
 ### Additional examples
 
@@ -38,14 +37,3 @@ Metal chlorates also decompose when heated. In this type of decomposition reacti
 A common decomposition of a chlorate is in the reaction of potassium chlorate where oxygen is the product. This can be written as:
 
 2 KClO3  →  2 KCl + 3 O2
-
-
-## See also
-Analytical chemistry
-Thermal decomposition
-
-
-## References
-
-
-## External links

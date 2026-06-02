@@ -12,10 +12,9 @@ Describing the quantitative relationships among substances as they participate i
 Because of the well-known relationship of moles to atomic weights, the ratios that are arrived at by stoichiometry can be used to determine quantities by weight in a reaction described by a balanced equation.  This is called composition stoichiometry.
 Gas stoichiometry deals with reactions solely involving gases, where the gases are at a known temperature, pressure, and volume and can be assumed to be ideal gases. For gases, the volume ratio is ideally the same by the ideal gas law, but the mass ratio of a single reaction has to be calculated from the molecular masses of the reactants and products. In practice, because of the existence of isotopes, molar masses are used instead in calculating the mass ratio.
 
-
 ## Etymology
-The term stoichiometry was first used by Jeremias Benjamin Richter in 1792 when the first volume of Richter's Anfangsgründe der Stöchyometrie oder Meßkunst chymischer Elemente (German for 'Fundamentals of Stoichiometry, or the Art of Measuring the Chemical Elements') was published. The term is derived from the Ancient Greek words στοιχεῖον (stoikheîon), meaning 'element', and μέτρον (métron), meaning 'measure'. Ludwig Darmstaedter and Ralph E. Oesper have written a useful account on this.
 
+The term stoichiometry was first used by Jeremias Benjamin Richter in 1792 when the first volume of Richter's Anfangsgründe der Stöchyometrie oder Meßkunst chymischer Elemente (German for 'Fundamentals of Stoichiometry, or the Art of Measuring the Chemical Elements') was published. The term is derived from the Ancient Greek words στοιχεῖον (stoikheîon), meaning 'element', and μέτρον (métron), meaning 'measure'. Ludwig Darmstaedter and Ralph E. Oesper have written a useful account on this.
 
 ## Definitions
 
@@ -30,8 +29,8 @@ Each element has an atomic mass (usually given as an average in the form of the 
 Elements in their natural state are mixtures of isotopes of differing mass; thus, atomic masses and thus molar masses are not exactly integers. For instance, instead of an exact 14:3 proportion, 17.031 g of ammonia consists of 14.007 g of nitrogen and 3 × 1.008 g of hydrogen, because natural nitrogen includes a small amount of nitrogen-15, and natural hydrogen includes hydrogen-2 (deuterium).
 A stoichiometric reactant is a reactant that is consumed in a reaction, as opposed to a catalytic reactant, which is not consumed in the overall reaction because it reacts in one step and is regenerated in another step.
 
-
 ## Converting grams to moles
+
 Stoichiometry is not only used to balance chemical equations but also used in "conversions" between quantities of a substance by dimensional analysis, e.g., converting from grams to moles using molar mass as the "conversion factor", or from grams to milliliters using density. For example, to express 2.00 g of NaCl (sodium chloride) as an amount (in moles), one would do the following:
 
   
@@ -65,7 +64,10 @@ Stoichiometry is not only used to balance chemical equations but also used in "c
         
       
     
-    {\displaystyle {\frac {2.00{\mbox{ g NaCl}}}{58.44{\mbox{ g/mol}}}}=0.0342\ {\text{mol NaCl}}}
+    
+
+$$ {\frac {2.00{\mbox{ g NaCl}}}{58.44{\mbox{ g/mol}}}}=0.0342\ {\text{mol NaCl}} $$
+
   
 
 In the above example, when written out in fraction form, the units of grams form a multiplicative identity, which is equivalent to one (g/g = 1), with the resulting amount in moles (the unit that was needed), as shown in the following equation,
@@ -122,11 +124,14 @@ In the above example, when written out in fraction form, the units of grams form
         
       
     
-    {\displaystyle \left({\frac {2.00{\mbox{ g NaCl}}}{1}}\right)\left({\frac {1{\mbox{ mol NaCl}}}{58.44{\mbox{ g NaCl}}}}\right)=0.0342\ {\text{mol NaCl}}}
+    
+
+$$ \left({\frac {2.00{\mbox{ g NaCl}}}{1}}\right)\left({\frac {1{\mbox{ mol NaCl}}}{58.44{\mbox{ g NaCl}}}}\right)=0.0342\ {\text{mol NaCl}} $$
+
   
 
-
 ## Molar proportion
+
 Stoichiometry is often used to balance chemical equations (reaction stoichiometry). For example, the two diatomic gases, hydrogen and oxygen, can combine to form a liquid, water, in an exothermic reaction, as described by the following equation:
 
 2 H2 + O2  →  2 H2O
@@ -228,13 +233,16 @@ the amount of water that will be produced by the combustion of 0.27 moles of CH3
         
       
     
-    {\displaystyle \left({\frac {0.27{\mbox{ mol }}\mathrm {CH_{3}OH} }{1}}\right)\left({\frac {4{\mbox{ mol }}\mathrm {H_{2}O} }{2{\mbox{ mol }}\mathrm {CH_{3}OH} }}\right)=0.54\ {\text{mol }}\mathrm {H_{2}O} }
+    
+
+$$ \left({\frac {0.27{\mbox{ mol }}\mathrm {CH_{3}OH} }{1}}\right)\left({\frac {4{\mbox{ mol }}\mathrm {H_{2}O} }{2{\mbox{ mol }}\mathrm {CH_{3}OH} }}\right)=0.54\ {\text{mol }}\mathrm {H_{2}O} $$
+
   
 
 The term stoichiometry is also often used for the molar proportions of elements in stoichiometric compounds (composition stoichiometry). For example, the stoichiometry of hydrogen and oxygen in H2O is 2:1. In stoichiometric compounds, the molar proportions are whole numbers.
 
-
 ## Determining amount of product
+
 Stoichiometry can also be used to find the quantity of a product yielded by a reaction. If a piece of solid copper (Cu) were added to an aqueous solution of silver nitrate (AgNO3), the silver (Ag) would be replaced in a single displacement reaction forming aqueous copper(II) nitrate (Cu(NO3)2) and solid silver.  How much silver is produced if 16.00 grams of Cu is added to the solution of excess silver nitrate?
 The following steps would be used:
 
@@ -299,7 +307,10 @@ For the mass to mole step, the mass of copper (16.00 g) would be converted to mo
         
       
     
-    {\displaystyle \left({\frac {16.00{\mbox{ g Cu}}}{1}}\right)\left({\frac {1{\mbox{ mol Cu}}}{63.55{\mbox{ g Cu}}}}\right)=0.2518\ {\text{mol Cu}}}
+    
+
+$$ \left({\frac {16.00{\mbox{ g Cu}}}{1}}\right)\left({\frac {1{\mbox{ mol Cu}}}{63.55{\mbox{ g Cu}}}}\right)=0.2518\ {\text{mol Cu}} $$
+
   
 
 Now that the amount of Cu in moles (0.2518) is found, we can set up the mole ratio. This is found by looking at the coefficients in the balanced equation: Cu and Ag are in a 1:2 ratio.
@@ -356,7 +367,10 @@ Now that the amount of Cu in moles (0.2518) is found, we can set up the mole rat
         
       
     
-    {\displaystyle \left({\frac {0.2518{\mbox{ mol Cu}}}{1}}\right)\left({\frac {2{\mbox{ mol Ag}}}{1{\mbox{ mol Cu}}}}\right)=0.5036\ {\text{mol Ag}}}
+    
+
+$$ \left({\frac {0.2518{\mbox{ mol Cu}}}{1}}\right)\left({\frac {2{\mbox{ mol Ag}}}{1{\mbox{ mol Cu}}}}\right)=0.5036\ {\text{mol Ag}} $$
+
   
 
 Now that the moles of Ag produced is known to be 0.5036 mol, we convert this amount to grams of Ag produced to come to the final answer:
@@ -413,7 +427,10 @@ Now that the moles of Ag produced is known to be 0.5036 mol, we convert this amo
         
       
     
-    {\displaystyle \left({\frac {0.5036{\mbox{ mol Ag}}}{1}}\right)\left({\frac {107.87{\mbox{ g Ag}}}{1{\mbox{ mol Ag}}}}\right)=54.32\ {\text{g Ag}}}
+    
+
+$$ \left({\frac {0.5036{\mbox{ mol Ag}}}{1}}\right)\left({\frac {107.87{\mbox{ g Ag}}}{1{\mbox{ mol Ag}}}}\right)=54.32\ {\text{g Ag}} $$
+
   
 
 This set of calculations can be further condensed into a single step:
@@ -553,11 +570,14 @@ This set of calculations can be further condensed into a single step:
         
       
     
-    {\displaystyle m_{\mathrm {Ag} }=\left({\frac {16.00{\mbox{ g }}\mathrm {Cu} }{1}}\right)\left({\frac {1{\mbox{ mol }}\mathrm {Cu} }{63.55{\mbox{ g }}\mathrm {Cu} }}\right)\left({\frac {2{\mbox{ mol }}\mathrm {Ag} }{1{\mbox{ mol }}\mathrm {Cu} }}\right)\left({\frac {107.87{\mbox{ g }}\mathrm {Ag} }{1{\mbox{ mol Ag}}}}\right)=54.32{\mbox{ g}}}
+    
+
+$$ m_{\mathrm {Ag} }=\left({\frac {16.00{\mbox{ g }}\mathrm {Cu} }{1}}\right)\left({\frac {1{\mbox{ mol }}\mathrm {Cu} }{63.55{\mbox{ g }}\mathrm {Cu} }}\right)\left({\frac {2{\mbox{ mol }}\mathrm {Ag} }{1{\mbox{ mol }}\mathrm {Cu} }}\right)\left({\frac {107.87{\mbox{ g }}\mathrm {Ag} }{1{\mbox{ mol Ag}}}}\right)=54.32{\mbox{ g}} $$
+
   
 
-
 ### Further examples
+
 For propane (C3H8) reacting with oxygen gas (O2), the balanced chemical equation is:
 
 C3H8 + 5 O2  →  3 CO2 + 4 H2O
@@ -762,11 +782,14 @@ The mass of water formed if 120 g of propane (C3H8) is burned in excess oxygen i
         
       
     
-    {\displaystyle m_{\mathrm {H_{2}O} }=\left({\frac {120.{\mbox{ g }}\mathrm {C_{3}H_{8}} }{1}}\right)\left({\frac {1{\mbox{ mol }}\mathrm {C_{3}H_{8}} }{44.09{\mbox{ g }}\mathrm {C_{3}H_{8}} }}\right)\left({\frac {4{\mbox{ mol }}\mathrm {H_{2}O} }{1{\mbox{ mol }}\mathrm {C_{3}H_{8}} }}\right)\left({\frac {18.02{\mbox{ g }}\mathrm {H_{2}O} }{1{\mbox{ mol }}\mathrm {H_{2}O} }}\right)=196{\mbox{ g}}}
+    
+
+$$ m_{\mathrm {H_{2}O} }=\left({\frac {120.{\mbox{ g }}\mathrm {C_{3}H_{8}} }{1}}\right)\left({\frac {1{\mbox{ mol }}\mathrm {C_{3}H_{8}} }{44.09{\mbox{ g }}\mathrm {C_{3}H_{8}} }}\right)\left({\frac {4{\mbox{ mol }}\mathrm {H_{2}O} }{1{\mbox{ mol }}\mathrm {C_{3}H_{8}} }}\right)\left({\frac {18.02{\mbox{ g }}\mathrm {H_{2}O} }{1{\mbox{ mol }}\mathrm {H_{2}O} }}\right)=196{\mbox{ g}} $$
+
   
 
-
 ## Stoichiometric ratio
+
 Stoichiometry is also used to find the right amount of one reactant to "completely" react with the other reactant in a chemical reaction – that is, the stoichiometric amounts that would result in no leftover reactants when the reaction takes place. An example is shown below using the thermite reaction,
 
 Fe2O3 + 2 Al  →  Al2O3 + 2 Fe
@@ -943,9 +966,11 @@ This equation shows that 1 mole of iron(III) oxide and 2 moles of aluminium will
         
       
     
-    {\displaystyle m_{\mathrm {Al} }=\left({\frac {85.0{\mbox{ g }}\mathrm {Fe_{2}O_{3}} }{1}}\right)\left({\frac {1{\mbox{ mol }}\mathrm {Fe_{2}O_{3}} }{159.7{\mbox{ g }}\mathrm {Fe_{2}O_{3}} }}\right)\left({\frac {2{\mbox{ mol Al}}}{1{\mbox{ mol }}\mathrm {Fe_{2}O_{3}} }}\right)\left({\frac {26.98{\mbox{ g Al}}}{1{\mbox{ mol Al}}}}\right)=28.7{\mbox{ g}}}
-  
+    
 
+$$ m_{\mathrm {Al} }=\left({\frac {85.0{\mbox{ g }}\mathrm {Fe_{2}O_{3}} }{1}}\right)\left({\frac {1{\mbox{ mol }}\mathrm {Fe_{2}O_{3}} }{159.7{\mbox{ g }}\mathrm {Fe_{2}O_{3}} }}\right)\left({\frac {2{\mbox{ mol Al}}}{1{\mbox{ mol }}\mathrm {Fe_{2}O_{3}} }}\right)\left({\frac {26.98{\mbox{ g Al}}}{1{\mbox{ mol Al}}}}\right)=28.7{\mbox{ g}} $$
+
+  
 
 ## Limiting reagent and percent yield
 
@@ -1102,7 +1127,10 @@ To determine the theoretical yield of lead(II) oxide if 200.0 g of lead(II) sulf
         
       
     
-    {\displaystyle m_{\mathrm {PbO} }=\left({\frac {200.0{\mbox{ g }}\mathrm {PbS} }{1}}\right)\left({\frac {1{\mbox{ mol }}\mathrm {PbS} }{239.27{\mbox{ g }}\mathrm {PbS} }}\right)\left({\frac {2{\mbox{ mol }}\mathrm {PbO} }{2{\mbox{ mol }}\mathrm {PbS} }}\right)\left({\frac {223.2{\mbox{ g }}\mathrm {PbO} }{1{\mbox{ mol }}\mathrm {PbO} }}\right)=186.6{\mbox{ g}}}
+    
+
+$$ m_{\mathrm {PbO} }=\left({\frac {200.0{\mbox{ g }}\mathrm {PbS} }{1}}\right)\left({\frac {1{\mbox{ mol }}\mathrm {PbS} }{239.27{\mbox{ g }}\mathrm {PbS} }}\right)\left({\frac {2{\mbox{ mol }}\mathrm {PbO} }{2{\mbox{ mol }}\mathrm {PbS} }}\right)\left({\frac {223.2{\mbox{ g }}\mathrm {PbO} }{1{\mbox{ mol }}\mathrm {PbO} }}\right)=186.6{\mbox{ g}} $$
+
   
 
   
@@ -1264,7 +1292,10 @@ To determine the theoretical yield of lead(II) oxide if 200.0 g of lead(II) sulf
         
       
     
-    {\displaystyle m_{\mathrm {PbO} }=\left({\frac {200.0{\mbox{ g }}\mathrm {O_{2}} }{1}}\right)\left({\frac {1{\mbox{ mol }}\mathrm {O_{2}} }{32.00{\mbox{ g }}\mathrm {O_{2}} }}\right)\left({\frac {2{\mbox{ mol }}\mathrm {PbO} }{3{\mbox{ mol }}\mathrm {O_{2}} }}\right)\left({\frac {223.2{\mbox{ g }}\mathrm {PbO} }{1{\mbox{ mol }}\mathrm {PbO} }}\right)=930.0{\mbox{ g}}}
+    
+
+$$ m_{\mathrm {PbO} }=\left({\frac {200.0{\mbox{ g }}\mathrm {O_{2}} }{1}}\right)\left({\frac {1{\mbox{ mol }}\mathrm {O_{2}} }{32.00{\mbox{ g }}\mathrm {O_{2}} }}\right)\left({\frac {2{\mbox{ mol }}\mathrm {PbO} }{3{\mbox{ mol }}\mathrm {O_{2}} }}\right)\left({\frac {223.2{\mbox{ g }}\mathrm {PbO} }{1{\mbox{ mol }}\mathrm {PbO} }}\right)=930.0{\mbox{ g}} $$
+
   
 
 Because a lesser amount of PbO is produced for the 200.0 g of PbS, it is clear that PbS is the limiting reagent.
@@ -1291,7 +1322,10 @@ In reality, the actual yield is not the same as the stoichiometrically-calculate
         
       
     
-    {\displaystyle {\mbox{percent yield}}={\frac {\mbox{actual yield}}{\mbox{theoretical yield}}}}
+    
+
+$$ {\mbox{percent yield}}={\frac {\mbox{actual yield}}{\mbox{theoretical yield}}} $$
+
   
 
 If 170.0 g of lead(II) oxide is obtained, then the percent yield would be calculated as follows:
@@ -1320,11 +1354,14 @@ If 170.0 g of lead(II) oxide is obtained, then the percent yield would be calcul
         %
       
     
-    {\displaystyle {\mbox{percent yield}}={\frac {\mbox{170.0 g PbO}}{\mbox{186.6 g PbO}}}=91.12\%}
+    
+
+$$ {\mbox{percent yield}}={\frac {\mbox{170.0 g PbO}}{\mbox{186.6 g PbO}}}=91.12\% $$
+
   
 
-
 ### Example
+
 Consider the following reaction, in which iron(III) chloride reacts with hydrogen sulfide to produce iron(III) sulfide and hydrogen chloride:
 
 2 FeCl3 + 3 H2S  →  Fe2S3 + 6 HCl
@@ -1337,8 +1374,8 @@ Suppose 90.0 g of FeCl3 reacts with 52.0 g of H2S. To find the limiting reagent 
 The limiting reactant (or reagent) is FeCl3, since all 90.00 g of it is used up while only 28.37 g H2S are consumed. Thus, 52.0 − 28.4 = 23.6 g H2S left in excess. The mass of HCl produced is 60.7 g.
 By looking at the stoichiometry of the reaction, one might have guessed FeCl3 being the limiting reactant; three times more FeCl3 is used compared to H2S (324 g vs 102 g).
 
-
 ## Different stoichiometries in competing reactions
+
 Often, more than one reaction is possible given the same starting materials.  The reactions may differ in their stoichiometry.  For example, the methylation of benzene (C6H6), through a Friedel–Crafts reaction using AlCl3 as a catalyst, may produce singly methylated (C6H5CH3), doubly methylated (C6H4(CH3)2), or still more highly methylated (C6H6−n(CH3)n) products, as shown in the following example,
 
 C6H6 + CH3Cl → C6H5CH3 + HCl
@@ -1346,8 +1383,8 @@ C6H6 + 2 CH3Cl → C6H4(CH3)2 + 2 HCl
 C6H6 + n CH3Cl → C6H6−n(CH3)n + n HCl
 In this example, which reaction takes place is controlled in part by the relative concentrations of the reactants.
 
-
 ## Stoichiometric coefficient and stoichiometric number
+
 In lay terms, the stoichiometric coefficient of any given component is the number of molecules and/or formula units that participate in the reaction as written. A related concept is the stoichiometric number (using IUPAC nomenclature), wherein the stoichiometric coefficient is multiplied by +1 for all products and by −1 for all reactants.
 For example, in the reaction CH4 + 2 O2 → CO2 + 2 H2O, the stoichiometric number of CH4 is −1, the stoichiometric number of O2 is −2, for CO2 it would be +1 and for H2O it is +2.
 In more technically precise terms, the stoichiometric number in a chemical reaction system of the i-th component is defined as
@@ -1382,7 +1419,10 @@ In more technically precise terms, the stoichiometric number in a chemical react
         
       
     
-    {\displaystyle \nu _{i}={\frac {\Delta N_{i}}{\Delta \xi }}\,}
+    
+
+$$ \nu _{i}={\frac {\Delta N_{i}}{\Delta \xi }}\, $$
+
   
 
 or
@@ -1410,7 +1450,10 @@ or
         
       
     
-    {\displaystyle \Delta N_{i}=\nu _{i}\,\Delta \xi \,}
+    
+
+$$ \Delta N_{i}=\nu _{i}\,\Delta \xi \, $$
+
   
 
 where 
@@ -1425,7 +1468,10 @@ where
         
       
     
-    {\displaystyle N_{i}}
+    
+
+$$ N_{i} $$
+
   
  is the number of molecules of i, and 
   
@@ -1434,7 +1480,10 @@ where
         ξ
       
     
-    {\displaystyle \xi }
+    
+
+$$ \xi $$
+
   
  is the progress variable or extent of reaction.
 The stoichiometric number 
@@ -1449,7 +1498,10 @@ The stoichiometric number
         
       
     
-    {\displaystyle \nu _{i}}
+    
+
+$$ \nu _{i} $$
+
   
  represents the degree to which a chemical species participates in a reaction. The convention is to assign negative numbers to reactants (which are consumed) and positive ones to products, consistent with the convention that increasing the extent of reaction will correspond to shifting the composition from reactants towards products. However, any reaction may be viewed as going in the reverse direction, and in that point of view, would change in the negative direction in order to lower the system's Gibbs free energy. Whether a reaction actually will go in the arbitrarily selected forward direction or not depends on the amounts of the substances present at any given time, which determines the kinetics and thermodynamics, i.e., whether equilibrium lies to the right or the left of the initial state,
 In reaction mechanisms, stoichiometric coefficients for each step are always integers, since elementary reactions always involve whole molecules. If one uses a composite representation of an overall reaction, some may be rational fractions. There are often chemical species present that do not participate in a reaction; their stoichiometric coefficients are therefore zero. Any chemical species that is regenerated, such as a catalyst, also has a stoichiometric coefficient of zero.
@@ -1495,7 +1547,10 @@ There are usually multiple reactions proceeding simultaneously in any natural re
         
       
     
-    {\displaystyle \nu _{ik}={\frac {\partial N_{i}}{\partial \xi _{k}}}\,}
+    
+
+$$ \nu _{ik}={\frac {\partial N_{i}}{\partial \xi _{k}}}\, $$
+
   
 
 so that the total (differential) change in the amount of the i-th component is
@@ -1536,7 +1591,10 @@ so that the total (differential) change in the amount of the i-th component is
         
       
     
-    {\displaystyle dN_{i}=\sum _{k}\nu _{ik}\,d\xi _{k}.\,}
+    
+
+$$ dN_{i}=\sum _{k}\nu _{ik}\,d\xi _{k}.\, $$
+
   
 
 Extents of reaction provide the clearest and most explicit way of representing compositional change, although they are not yet widely used.
@@ -1545,7 +1603,6 @@ The maximum and minimum for any ξk occur whenever the first of the reactants is
 In accord with the principles of chemical kinetics and thermodynamic equilibrium, every chemical reaction is reversible, at least to some degree, so that each equilibrium point must be an interior point of the simplex. As a consequence, extrema for the ξs will not occur unless an experimental system is prepared with zero initial amounts of some products.
 The number of physically-independent reactions can be even greater than the number of chemical components, and depends on the various reaction mechanisms. For example, there may be two (or more) reaction paths for the isomerism above. The reaction may occur by itself, but faster and with different intermediates, in the presence of a catalyst.
 The (dimensionless) "units" may be taken to be molecules or moles. Moles are most commonly used, but it is more suggestive to picture incremental chemical reactions in terms of molecules. The Ns and ξs are reduced to molar units by dividing by the Avogadro constant. While dimensional mass units may be used, the comments about integers are then no longer applicable.
-
 
 ## Stoichiometry matrix
 
@@ -1650,7 +1707,10 @@ This system comprises four reactions and five different molecular species. The s
         
       
     
-    {\displaystyle \mathbf {N} ={\begin{bmatrix}-1&0&0&0\\1&1&0&0\\0&-1&-1&0\\0&0&1&-1\\0&0&0&1\\\end{bmatrix}}}
+    
+
+$$ \mathbf {N} ={\begin{bmatrix}-1&0&0&0\\1&1&0&0\\0&-1&-1&0\\0&0&1&-1\\0&0&0&1\\\end{bmatrix}} $$
+
   
 
 where the rows correspond to S1, S2, S3, S4 and S5, respectively. The process of converting a reaction scheme into a stoichiometry matrix can be a lossy transformation: for example, the stoichiometries in the second reaction simplify when included in the matrix. This means that it is not always possible to recover the original reaction scheme from a stoichiometry matrix.
@@ -1684,11 +1744,14 @@ Often the stoichiometry matrix is combined with the rate vector, v, and the spec
         .
       
     
-    {\displaystyle {\frac {d\mathbf {x} }{dt}}=\mathbf {N} \cdot \mathbf {v} .}
+    
+
+$$ {\frac {d\mathbf {x} }{dt}}=\mathbf {N} \cdot \mathbf {v} . $$
+
   
 
-
 ## Gas stoichiometry
+
 Gas stoichiometry is the quantitative relationship (ratio) between reactants and products in a chemical reaction with reactions that produce gases. Gas stoichiometry applies when the gases produced are assumed to be ideal, and the temperature, pressure, and volume of the gases are all known. The ideal gas law is used for these calculations. Often, but not always, the standard temperature and pressure (STP) are taken as 0 °C and 1 bar and used as the conditions for gas stoichiometric calculations.
 Gas stoichiometry calculations solve for the unknown volume or mass of a gaseous product or reactant. For example, if we wanted to calculate the volume of gaseous NO2 produced from the combustion of 100 g of NH3, by the reaction:
 
@@ -1766,7 +1829,10 @@ we would carry out the following calculations:
         
       
     
-    {\displaystyle 100\,\mathrm {g\,NH_{3}} \cdot {\frac {1\,\mathrm {mol\,NH_{3}} }{17.034\,\mathrm {g\,NH_{3}} }}=5.871\,\mathrm {mol\,NH_{3}} }
+    
+
+$$ 100\,\mathrm {g\,NH_{3}} \cdot {\frac {1\,\mathrm {mol\,NH_{3}} }{17.034\,\mathrm {g\,NH_{3}} }}=5.871\,\mathrm {mol\,NH_{3}} $$
+
   
 
 There is a 1:1 molar ratio of NH3 to NO2 in the above balanced combustion reaction, so 5.871 mol of NO2 will be formed. We will employ the ideal gas law to solve for the volume at 0 °C (273.15 K) and 1 atmosphere using the gas law constant of R = 0.08206 L·atm·K−1·mol−1:
@@ -1881,7 +1947,10 @@ There is a 1:1 molar ratio of NH3 to NO2 in the above balanced combustion reacti
         
       
     
-    {\displaystyle {\begin{aligned}PV&=nRT\\V&={\frac {nRT}{P}}\\&={\frac {5.871{\text{ mol}}\cdot 0.08206\,{\frac {\mathrm {L\cdot atm} }{\mathrm {mol\cdot K} }}\cdot 273.15{\text{ K}}}{1{\text{ atm}}}}\\&=131.597\,\mathrm {L\,NO_{2}} \end{aligned}}}
+    
+
+$$ {\begin{aligned}PV&=nRT\\V&={\frac {nRT}{P}}\\&={\frac {5.871{\text{ mol}}\cdot 0.08206\,{\frac {\mathrm {L\cdot atm} }{\mathrm {mol\cdot K} }}\cdot 273.15{\text{ K}}}{1{\text{ atm}}}}\\&=131.597\,\mathrm {L\,NO_{2}} \end{aligned}} $$
+
   
 
 Gas stoichiometry often involves having to know the molar mass of a gas, given the density of that gas. The ideal gas law can be re-arranged to obtain a relation between the density and the molar mass of an ideal gas:
@@ -1899,7 +1968,10 @@ Gas stoichiometry often involves having to know the molar mass of a gas, given t
         
       
     
-    {\displaystyle \rho ={\frac {m}{V}}}
+    
+
+$$ \rho ={\frac {m}{V}} $$
+
   
     and    
   
@@ -1915,7 +1987,10 @@ Gas stoichiometry often involves having to know the molar mass of a gas, given t
         
       
     
-    {\displaystyle n={\frac {m}{M}}}
+    
+
+$$ n={\frac {m}{M}} $$
+
   
 
 and thus:
@@ -1940,7 +2015,10 @@ and thus:
         
       
     
-    {\displaystyle \rho ={\frac {MP}{R\,T}}}
+    
+
+$$ \rho ={\frac {MP}{R\,T}} $$
+
   
 
 where:
@@ -1954,7 +2032,6 @@ T = absolute gas temperature
 m = mass of gas
 M = molar mass of gas
 
-
 ## Stoichiometric air-to-fuel ratios of common fuels
 
 In the combustion reaction, oxygen reacts with the fuel, and the point where exactly all oxygen is consumed and all fuel burned is defined as the stoichiometric point. With more oxygen (overstoichiometric combustion), some of it stays unreacted. Likewise, if the combustion is incomplete due to lack of sufficient oxygen, fuel remains unreacted. (Unreacted fuel may also remain due to physical rather than chemical factors, such as slow combustion or insufficient mixing of fuel and oxygen – this is not due to stoichiometry.) Different hydrocarbon fuels have different contents of carbon, hydrogen and other elements, thus their stoichiometry varies.
@@ -1962,27 +2039,3 @@ Oxygen makes up only 20.95% of the volume of air, and only 23.20% of its mass. T
 (The ratio of 14.7 as listed for gasoline only applies for combustion in combination with a catalytic converter.)
 
 Gasoline engines can run at stoichiometric air-to-fuel ratio, because gasoline is quite volatile and is mixed (sprayed or carburetted) with the air prior to ignition. Diesel engines, in contrast, run lean, with more air available than simple stoichiometry would require. Diesel fuel is less volatile and is effectively burned as it is injected.
-
-
-## See also
-Non-stoichiometric compound
-Biochemical systems equation
-Chemical reaction
-Chemical equation
-Molecule
-Molar mass
-Ideal gas law
-
-
-## References
-
-Zumdahl, Steven S. Chemical Principles. Houghton Mifflin, New York, 2005, pp 148–150.
-Internal Combustion Engine Fundamentals, John B. Heywood
-
-
-## External links
-
-Engine Combustion primer from the University of Plymouth
-Free Stoichiometry Tutorials from Carnegie Mellon's ChemCollective
-Stoichiometry Add-In for Microsoft Excel Archived 2011-05-11 at the Wayback Machine for calculation of molecular weights, reaction coëfficients and stoichiometry.
-Reaction Stoichiometry Calculator a comprehensive free online reaction stoichiometry calculator.

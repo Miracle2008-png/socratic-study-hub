@@ -2,11 +2,10 @@
 
 Substrate is a term used in materials science and engineering to describe the base material on which processing is conducted. Surfaces have different uses, including producing new film or layers of material and being a base to which another substance is bonded.
 
-
 ## Description
+
 In materials science and engineering, a substrate refers to a base material on which processing is conducted. This surface could be used to produce new film or layers of material such as deposited coatings.  It could be the base to which paint, adhesives, or adhesive tape is bonded.
 A typical substrate might be rigid such as metal, concrete, or glass, onto which a coating might be deposited. Flexible substrates are also used. Some substrates are anisotropic with surface properties being different depending on the direction: examples include wood and paper products.
-
 
 ## Coatings
 
@@ -42,12 +41,3 @@ Corrosion
 Biofouling
 Heterogeneous catalysis
 Adsorption
-
-
-## See also
-List of coating techniques
-Thin film
-Wetting
-
-
-## References

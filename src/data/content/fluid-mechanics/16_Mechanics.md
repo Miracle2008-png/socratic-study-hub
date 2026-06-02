@@ -4,45 +4,17 @@ Mechanics (from Ancient Greek  μηχανική (mēkhanikḗ) 'of machines') is
 Theoretical expositions of this branch of physics have their origins in Ancient Greece, for instance, in the writings of Aristotle and Archimedes (see History of classical mechanics and Timeline of classical mechanics). During the early modern period, scientists such as Galileo Galilei, Johannes Kepler, Christiaan Huygens, and Isaac Newton laid the foundation for what is now known as classical mechanics.
 In the 20th century the concepts of classical mechanics were challenged by new discoveries, leading to fundamentally new approaches including relativistic mechanics and quantum mechanics.
 
-
-## History
-
-
-### Antiquity
-
-The ancient Greek philosophers were among the first to propose that abstract principles govern nature. The main theory of mechanics in antiquity was Aristotelian mechanics, though an alternative theory is exposed in the pseudo-Aristotelian Mechanical Problems, often attributed to one of his successors.
-There is another tradition that goes back to the ancient Greeks where mathematics is used more extensively to analyze bodies statically or dynamically, an approach that may have been stimulated by prior work of the Pythagorean Archytas. Examples of this tradition include pseudo-Euclid (On the Balance), Archimedes (On the Equilibrium of Planes, On Floating Bodies), Hero (Mechanica), and Pappus (Collection, Book VIII).
-
-
-### Medieval age
-
-In the Middle Ages, Aristotle's theories were criticized and modified by a number of figures, beginning with John Philoponus in the 6th century. A central problem was that of projectile motion, which was discussed by Hipparchus and Philoponus.
-Persian Islamic polymath Ibn Sīnā published his theory of motion in The Book of Healing (1020). He said that an impetus is imparted to a projectile by the thrower, and viewed it as persistent, requiring external forces such as air resistance to dissipate it. Ibn Sina made a distinction between 'force' and 'inclination' (called "mayl"), and argued that an object gained mayl when the object is in opposition to its natural motion. So he concluded that continuation of motion is attributed to the inclination that is transferred to the object, and that object will be in motion until the mayl is spent. He also claimed that a projectile in a vacuum would not stop unless it is acted upon, consistent with Newton's first law of motion.
-On the question of a body subject to a constant (uniform) force, the 12th-century Jewish scholar Hibat Allah Abu'l-Barakat al-Baghdaadi says that acceleration of a falling body was a consequence of continuous action of the bodies natural inclination. According to Shlomo Pines, al-Baghdaadi's theory of motion was "the oldest negation of Aristotle's fundamental dynamic law [namely, that a constant force produces a uniform motion], [and is thus an] anticipation in a vague fashion of the fundamental law of classical mechanics [namely, that a force applied continuously produces acceleration]."
-Influenced by earlier writers such as Ibn Sina and al-Baghdaadi, the 14th-century French priest Jean Buridan developed the theory of impetus, which later developed into the modern theories of inertia, velocity, acceleration and momentum. This work and others were developed in 14th-century England by the Oxford Calculators such as Thomas Bradwardine, who studied and formulated various laws regarding falling bodies. The concept that the main properties of a body are uniformly accelerated motion (as of falling bodies) was worked out by the 14th-century Oxford Calculators.
-
-
-### Early modern age
-
-Two central figures in the early modern age are Galileo Galilei and Isaac Newton. Galileo's final statement of his mechanics, particularly of falling bodies, is his Two New Sciences (1638). Newton's 1687 Philosophiæ Naturalis Principia Mathematica provided a detailed mathematical account of mechanics, using the newly developed mathematics of calculus and providing the basis of Newtonian mechanics.
-There is some dispute over the priority of various ideas: Newton's Principia is certainly the seminal work and has been tremendously influential, and many of the mathematical results therein could not have been stated earlier without the development of the calculus. However, many of the ideas, particularly as they pertain to inertia and falling bodies, had been developed by prior scholars such as Christiaan Huygens and the less-known medieval predecessors. Assigning precise credit is difficult, since scientific language and standards of proof have changed; the ideas of medieval scholars may be regarded either as equivalent to modern statements or merely as preliminary hypotheses similar to them.
-
-
-### Modern age
-Two main modern developments in mechanics are general relativity of Einstein, and quantum mechanics, both developed in the 20th century based in part on earlier 19th-century ideas. The development in the modern continuum mechanics, particularly in the areas of elasticity, plasticity, fluid dynamics, electrodynamics, and thermodynamics of deformable media, started in the second half of the 20th century.
-
-
 ## Types of mechanical bodies
+
 The often-used term body needs to stand for a wide assortment of objects, including particles, projectiles, spacecraft, stars, parts of machinery, parts of solids, parts of fluids (gases and liquids), etc.
 Other distinctions between the various sub-disciplines of mechanics concern the nature of the bodies being described. Particles are bodies with little (known) internal structure, treated as mathematical points in classical mechanics. Rigid bodies have size and shape, but retain a simplicity close to that of the particle, adding just a few so-called degrees of freedom, such as orientation in space.
 Otherwise, bodies may be semi-rigid, i.e. elastic, or non-rigid, i.e. fluid. These subjects have both classical and quantum divisions of study.
 For instance, the motion of a spacecraft, regarding its orbit and attitude (rotation), is described by the relativistic theory of classical mechanics, while the analogous movements of an atomic nucleus are described by quantum mechanics.
 
-
 ## Sub-disciplines
+
 The following are the three main designations consisting of various subjects that are studied in mechanics.
 Note that there is also the "theory of fields" which constitutes a separate discipline in physics, formally treated as distinct from mechanics, whether it be classical fields or quantum fields. But in actual practice, subjects belonging to mechanics and fields are closely interwoven. Thus, for instance, forces that act on particles are frequently derived from fields (electromagnetic or gravitational), and particles generate fields by acting as sources. In fact, in quantum mechanics, particles themselves are fields, as described theoretically by the wave function.
-
 
 ### Classical
 
@@ -69,7 +41,6 @@ Biomechanics: solids, fluids, etc. in biology
 Biophysics: physical processes in living organisms
 Relativistic or Einsteinian mechanics
 
-
 ### Quantum
 
 The following are categorized as being part of quantum mechanics:
@@ -86,45 +57,14 @@ Quantum mechanics is of a bigger scope, as it encompasses classical mechanics as
 Modern descriptions of such behavior begin with a careful definition of such quantities as displacement (distance moved), time, velocity, acceleration, mass, and force. Until about 400 years ago, however, motion was explained from a very different point of view. For example, following the ideas of Greek philosopher and scientist Aristotle, scientists reasoned that a cannonball falls down because its natural position is in the Earth; the Sun, the Moon, and the stars travel in circles around the Earth because it is the nature of heavenly objects to travel in perfect circles.
 Often cited as father to modern science, Galileo brought together the ideas of other great thinkers of his time and began to calculate motion in terms of distance travelled from some starting position and the time that it took. He showed that the speed of falling objects increases steadily during the time of their fall. This acceleration is the same for heavy objects as for light ones, provided air friction (air resistance) is discounted. The English mathematician and physicist Isaac Newton improved this analysis by defining force and mass and relating these to acceleration. For objects traveling at speeds close to the speed of light, Newton's laws were superseded by Albert Einstein's theory of relativity. [A sentence illustrating the computational complication of Einstein's theory of relativity.] For atomic and subatomic particles, Newton's laws were superseded by quantum theory. For everyday phenomena, however, Newton's three laws of motion remain the cornerstone of dynamics, which is the study of what causes motion.
 
-
 ### Relativistic
 
 Akin to the distinction between quantum and classical mechanics, Albert Einstein's general and special theories of relativity have expanded the scope of Newton and Galileo's formulation of mechanics. The differences between relativistic and Newtonian mechanics become significant and even dominant as the velocity of a body approaches the speed of light. For instance, in Newtonian mechanics, the kinetic energy of a free particle is E = ⁠1/2⁠mv2, whereas in relativistic mechanics, it is E = (γ − 1)mc2 (where γ is the Lorentz factor; this formula reduces to the Newtonian expression in the low energy limit).
 For high-energy processes, quantum mechanics must be adjusted to account for special relativity; this has led to the development of quantum field theory.
 
-
 ## Professional organizations
+
 Applied Mechanics Division, American Society of Mechanical Engineers
 Fluid Dynamics Division, American Physical Society
 Society for Experimental Mechanics
 International Union of Theoretical and Applied Mechanics
-
-
-## See also
-Action principles
-Applied mechanics
-Computational mechanics
-Dynamics
-Engineering
-Mechanical engineering
-Index of engineering science and mechanics articles
-Kinematics
-Kinetics
-Non-autonomous mechanics
-Statics
-Wiesen Test of Mechanical Aptitude (WTMA)
-
-
-## References
-
-
-## Further reading
-Salma Alrasheed (2019). Principles of Mechanics. Advances in Science, Technology & Innovation. Springer Nature. doi:10.1007/978-3-030-15195-9. ISBN 978-3-030-15195-9.
-Landau, L. D.; Lifshitz, E. M. (1972). Mechanics and Electrodynamics, Vol. 1. Franklin Book Company, Inc. ISBN 978-0-08-016739-8.
-Practical Mechanics for Boys (1914) by James Slough Zerbe.
-
-
-## External links
-
-Physclips: Mechanics with animations and video clips from the University of New South Wales
-The Archimedes Project

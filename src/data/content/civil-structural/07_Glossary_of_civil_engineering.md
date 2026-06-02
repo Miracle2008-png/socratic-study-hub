@@ -2,7 +2,6 @@
 
 This glossary of civil engineering terms is a list of definitions of terms and concepts pertaining specifically to civil engineering, its sub-disciplines, and related fields. For a more general overview of concepts within engineering as a whole, see Glossary of engineering.
 
-
 ## A
 
 Abney level
@@ -125,7 +124,6 @@ automaton
 Any self-operating machine, or a machine or control mechanism designed to automatically follow a predetermined sequence of operations, or respond to predetermined instructions.
 autonomous vehicle
 
-
 ## B
 
 balance sheet
@@ -185,7 +183,6 @@ Brownian motion
 bulk modulus
 A measure of how resistant to compression a substance is, defined as the ratio of the infinitesimal pressure increase to the resulting relative decrease in volume. It is one of three standard moduli used to describe a material's response to stress, along with the shear modulus and Young's modulus.
 buoyancy
-
 
 ## C
 
@@ -260,7 +257,6 @@ crystallography
 
 curvilinear motion
 
-
 ## D
 
 Dalton's law
@@ -311,7 +307,6 @@ ductility
 dynamics
 
 dyne
-
 
 ## E
 
@@ -386,7 +381,6 @@ Euler–Bernoulli beam equation
 
 exothermic
 
-
 ## F
 
 falling bodies
@@ -437,7 +431,6 @@ fundamental theorem of calculus
 
 fusion
 
-
 ## G
 
 galvanic cell
@@ -469,7 +462,6 @@ gravitational potential
 gravity
 
 ground state
-
 
 ## H
 
@@ -507,7 +499,6 @@ Huygens–Fresnel principle
 hydraulic engineering
 
 hydraulics
-
 
 ## I
 
@@ -553,12 +544,10 @@ invert level
 
 isotope
 
-
 ## J
 
 joule (J)
 The derived unit of energy in the International System of Units. It is equal to the energy transferred to (or work done on) an object when a force of one newton acts on that object in the direction of its motion through a distance of one metre (1 newton metre or N⋅m). It is also the energy dissipated as heat when an electric current of one ampere passes through a resistance of one ohm for one second. It is named after the English physicist James Prescott Joule (1818–1889).
-
 
 ## K
 
@@ -571,7 +560,6 @@ kinematics
 Kirchhoff's circuit laws
 
 Kirchhoff's equations
-
 
 ## L
 
@@ -588,7 +576,6 @@ L'Hôpital's rule
 linear actuator
 
 linear elasticity
-
 
 ## M
 
@@ -662,7 +649,6 @@ multibody system
 
 multidisciplinary design optimization
 
-
 ## N
 
 nanoengineering
@@ -679,7 +665,6 @@ nuclear engineering
 
 nuclear power
 
-
 ## O
 
 obvert
@@ -689,7 +674,6 @@ ohm
 Ohm's law
 
 optics
-
 
 ## P
 
@@ -747,7 +731,6 @@ probability theory
 
 pulley
 
-
 ## R
 
 raised floor
@@ -775,7 +758,6 @@ root-mean-square speed
 rotational energy
 
 rotational speed
-
 
 ## S
 
@@ -879,7 +861,6 @@ superhard material
 
 surveying
 
-
 ## T
 
 technical standard
@@ -937,7 +918,6 @@ turbomachinery
 
 turbulence
 
-
 ## U
 
 ultimate tensile strength (UTS)
@@ -955,7 +935,6 @@ urban engineering
 
 utility frequency
 The nominal frequency of the oscillations of alternating current (AC) in a wide area synchronous grid transmitted from a power station to an end-user. In much of the world the utility frequency is standardized at 50 Hz, although in the Americas and parts of Asia it is typically 60 Hz.
-
 
 ## V
 
@@ -991,7 +970,6 @@ volumetric flow rate
 
 von Mises yield criterion
 
-
 ## W
 
 wastewater engineering
@@ -1012,11 +990,9 @@ wheel and axle
 
 winsorized mean
 
-
 ## X
 
 X-coordinate
-
 
 ## Y
 
@@ -1026,26 +1002,9 @@ yield
 
 Young's modulus
 
-
 ## Z
 
 Zero Defects (ZD)
 A management-led program to eliminate defects in industrial production that enjoyed brief popularity in American industry from 1964 to the early 1970s. Quality expert Philip Crosby later incorporated it into his "Absolutes of Quality Management" and it enjoyed a renaissance in the American automobile industry—as a performance goal more than as a program—in the 1990s. Although applicable to any type of enterprise, it has been primarily adopted within supply chains wherever large volumes of components are being purchased (common items such as nuts and bolts are good examples).
 zeroth law of thermodynamics
 States that if two thermodynamic systems are each in thermal equilibrium with a third one, then they are in thermal equilibrium with each other. Accordingly, thermal equilibrium between systems is a transitive relation. Two systems are said to be in the relation of thermal equilibrium if they are linked by a wall permeable only to heat and they do not change over time. As a convenience of language, systems are sometimes also said to be in a relation of thermal equilibrium if they are not linked so as to be able to transfer heat to each other, but would still not do so (even) if they were connected by a wall permeable only to heat.
-
-
-## See also
-Glossary of engineering
-Glossary of mechanical engineering
-Glossary of structural engineering
-Glossary of prestressed concrete terms
-Glossary of architecture
-Glossary of physics
-National Council of Examiners for Engineering and Surveying
-Fundamentals of Engineering Examination
-Principles and Practice of Engineering Examination
-Graduate Aptitude Test in Engineering
-
-
-## References

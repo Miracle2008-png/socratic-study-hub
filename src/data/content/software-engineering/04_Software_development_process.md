@@ -4,14 +4,14 @@ A software development process prescribes a process for developing software. It 
 Although not strictly limited to it, software development process often refers to the high-level process that governs the development of a software system from its beginning to its end of life – known as a methodology, model or framework. The system development life cycle (SDLC) describes the typical phases that a development effort goes through from the beginning to the end of life for a system – including a software system. A methodology prescribes how engineers go about their work in order to move the system through its life cycle. A methodology is a classification of processes or a blueprint for a process that is devised for the SDLC. For example, many processes can be classified as a spiral model.
 Software process and software quality are closely interrelated; some unexpected facets and effects have been observed in practice.
 
-
 ## Methodology
+
 The SDLC drives the definition of a methodology in that a methodology must address the phases of the SDLC. Generally, a methodology is designed to result in a high-quality system that meets or exceeds expectations (requirements) and is delivered on time and within budget even though computer systems can be complex and integrate disparate components. Various methodologies have been devised, including waterfall, spiral, agile, rapid prototyping, incremental, and synchronize and stabilize.
 A major difference between methodologies is the degree to which the phases are sequential vs. iterative. Agile methodologies, such as XP and scrum, focus on lightweight processes that allow for rapid changes. Iterative methodologies, such as Rational Unified Process and dynamic systems development method, focus on stabilizing project scope and iteratively expanding or improving products. Sequential or big-design-up-front (BDUF) models, such as waterfall, focus on complete and correct planning to guide larger projects and limit risks to successful and predictable results. Anamorphic development is guided by project scope and adaptive iterations. In scrum, for example, one could say a single user story goes through all the phases of the SDLC within a two-week sprint. By contrast the waterfall methodology, where every business requirement is translated into feature/functional descriptions which are then all implemented typically over a period of months or longer.
 A project can include both a project life cycle (PLC) and an SDLC, which describe different activities. According to Taylor (2004), "the project life cycle encompasses all the activities of the project, while the systems development life cycle focuses on realizing the product requirements".
 
-
 ### History
+
 The term SDLC is often used as an abbreviated version of SDLC methodology. Further, some use SDLC and traditional SDLC to mean the waterfall methodology.
 According to Elliott (2004), SDLC "originated in the 1960s, to develop large scale functional business systems in an age of large scale business conglomerates. Information systems activities revolved around heavy data processing and number crunching routines". The structured systems analysis and design method (SSADM) was produced for the UK government Office of Government Commerce in the 1980s. Ever since, according to Elliott (2004), "the traditional life cycle approaches to systems development have been increasingly replaced with alternative approaches and frameworks, which attempted to overcome some of the inherent deficiencies of the traditional SDLC". The main idea of the SDLC has been "to pursue the development of information systems in a very deliberate, structured and methodical way, requiring each stage of the life cycle––from the inception of the idea to delivery of the final system––to be carried out rigidly and sequentially" within the context of the framework being applied.
 Other methodologies were devised later:
@@ -39,8 +39,8 @@ Large-Scale Scrum (LeSS)
 DevOps
 Since DSDM in 1994, all of the methodologies on the above list except RUP have been agile methodologies - yet many organizations, especially governments, still use pre-agile processes (often waterfall or similar). 
 
-
 ### Examples
+
 The following are notable methodologies somewhat ordered by popularity.
 
 Agile
@@ -85,11 +85,9 @@ V-Model (software development) - an extension of the waterfall model.
 Unified Process
 Unified Process (UP) is an iterative software development methodology framework, based on Unified Modeling Language (UML). UP organizes the development of software into four phases, each consisting of one or more executable iterations of the software at that stage of development: inception, elaboration, construction, and guidelines.
 
-
 ### Comparison
 
 The waterfall model describes the SDLC phases such that each builds on the result of the previous one. Not every project requires that the phases be sequential. For relatively simple projects, phases may be combined or overlapping. Alternative methodologies to waterfall are described and compared below.
-
 
 ## Process meta-models
 
@@ -115,15 +113,3 @@ Soft systems methodology is a general method for improving management processes.
 
 Method engineering
 Method engineering is a general method for improving information system processes.
-
-
-## See also
-
-
-## References
-
-
-## External links
-
-Selecting a development approach Archived January 2, 2019, at the Wayback Machine at cms.hhs.gov.
-Gerhard Fischer, "The Software Technology of the 21st Century: From Software Reuse to Collaborative Software Design" Archived September 15, 2009, at the Wayback Machine, 2001

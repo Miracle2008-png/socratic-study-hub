@@ -4,8 +4,8 @@ The following outline is provided as an overview of and topical guide to fluid d
 In physics, physical chemistry, and engineering, fluid dynamics is a subdiscipline of fluid mechanics that describes the flow of fluids – liquids and gases. It has several subdisciplines, including aerodynamics (the study of air and other gases in motion) and hydrodynamics (the study of water and other liquids in motion). Fluid dynamics has a wide range of applications, including calculating forces and moments on aircraft, determining the mass flow rate of petroleum through pipelines, predicting weather patterns, understanding nebulae in interstellar space, understanding large scale geophysical flows involving oceans/atmosphere and modelling fission weapon detonation.
 Below is a structured list of topics in fluid dynamics.
 
-
 ## What is fluid dynamics?
+
 Fluid dynamics can be described as all of the following:
 
 An academic discipline – one with academic departments, curricula and degrees; national and international societies; and specialized journals.
@@ -19,8 +19,8 @@ A subdiscipline of fluid mechanics – branch of physics concerned with the mech
 A subdiscipline of fluid mechanics – branch of physics concerned with the mechanics of fluids (liquids, gases, and plasmas) and the forces on them.
 A branch of dynamics (mechanics) – subject that studies forces and motion.
 
-
 ## Branches of fluid dynamics
+
 Acoustic theory – Theory of sound waves
 Aerodynamics – Branch of dynamics concerned with studying the motion of air
 Aeroelasticity – Interactions among inertial, elastic, and aerodynamic forces
@@ -31,13 +31,8 @@ Magnetohydrodynamics – Model of electrically conducting fluids
 Topological fluid dynamics
 Quantum hydrodynamics – Topic in condensed matter physics
 
-
-## History of fluid dynamics
-
-History of fluid dynamics
-
-
 ## Mathematical equations and concepts
+
 Airy wave theory – Fluid dynamics theory on gravity waves
 Benjamin–Bona–Mahony equation
 Boussinesq approximation (water waves) – Approximation valid for weakly non-linear and fairly long waves
@@ -62,8 +57,8 @@ Stream function – Function for incompressible divergence-free flows in two dim
 Streamlines, streaklines and pathlines – Field lines in a fluid flowPages displaying short descriptions of redirect targets
 Torricelli's Law – Theorem in fluid mechanicsPages displaying short descriptions of redirect targets
 
-
 ## Types of fluid flow
+
 Aerodynamic force – Force exerted on a body as it moves through air or gas
 Convection – Fluid flow that occurs due to heterogeneous fluid properties and body forces
 Cavitation – Low-pressure voids formed in liquids
@@ -83,16 +78,16 @@ Superfluidity – Fluid which flows without losing kinetic energy
 Transient flow – Aspects of fluid mechanics involving fluid flowPages displaying short descriptions of redirect targets
 Two-phase flow – Flow of gas and liquid in the same conduit
 
-
 ## Fluid properties
+
 List of hydrodynamic instabilities
 Newtonian fluid – Type of fluid
 Non-Newtonian fluid – Type of fluid
 Surface tension – Tendency of a liquid surface to shrink to reduce surface area
 Vapour pressure – Pressure exerted by a vapor in thermodynamic equilibriumPages displaying short descriptions of redirect targets
 
-
 ## Fluid phenomena
+
 Balanced flow – Model of atmospheric motion
 Boundary layer – Layer of fluid in the immediate vicinity of a bounding surface
 Coanda effect – Tendency of a fluid jet to stay attached to a surface of any formPages displaying short descriptions of redirect targets
@@ -121,8 +116,8 @@ Water hammer – Pressure surge when a fluid is forced to stop or change directi
 Wave drag – Component of aerodynamic drag
 Wind – Natural movement of air or other gases relative to a planet's surface
 
-
 ## Concepts in aerodynamics
+
 Aileron – Aircraft control surface used to induce roll
 Airplane – Powered aircraft with wings
 Angle of attack – Angle between the chord of a wing and the undisturbed airflow
@@ -170,25 +165,25 @@ Trim tab – Boat or aircraft component
 Wing – Appendage used for flight
 Wingtip vortices – Turbulence caused by difference in air pressure on either side of wing
 
-
 ## Fluid dynamics research
+
 Fluid dynamics journals
 
-
 ### Methods used in fluid dynamics research
+
 Finite volume method for unsteady flow – Numerical analysis of fluid dynamics
 Flow visualization – Visualization technique in fluid dynamics
 Immersed boundary method – Method in computational fluid dynamics
 Projection method (fluid dynamics) – Method for numerically solving time-dependent incompressible fluid-flow problems
 Seeding (fluid dynamics)
 
-
 ### Tools used in fluid dynamics research
+
 Peniche (fluid dynamics)
 Rotating tank – Fluid dynamics
 
-
 ## Applications of fluid dynamics
+
 Acoustics – Branch of physics involving mechanical waves
 Aeronautics – Science of air flight-capable machines
 Astrophysical fluid dynamics – Branch of modern astronomy
@@ -208,22 +203,20 @@ Plasma physics – State of matterPages displaying short descriptions of redirec
 Pneumatics – Use of pressurised gas in mechanical systems
 Ice-sheet dynamics – Large mass of glacial icePages displaying short descriptions of redirect targets
 
-
 ## Fluid dynamics organizations
 
 Von Karman Institute for Fluid Dynamics
 Max Planck Institute for Dynamics and Self-Organization
 
-
 ## Fluid dynamics publications
 
-
 ### Books on fluid dynamics
+
 Publications in fluid dynamics throughout history
 An Album of Fluid Motion (1982)
 
-
 ### Journals pertaining to fluid dynamics
+
 Annual Review of Fluid Mechanics
 Journal of Fluid Mechanics
 Physics of Fluids
@@ -235,8 +228,8 @@ Computers and Fluids
 International Journal for Numerical Methods in Fluids
 Flow, Turbulence and Combustion
 
-
 ## People in fluid dynamics
+
 Contributors to the field of fluid dynamics in turn come from a wide array of fields, and in addition to their other titles, each is also a fluid dynamicist. Following is a list of notable fluid dynamicists:
 
 Snezhana Abarzhi – Applied mathematician and mathematical physicist
@@ -596,8 +589,8 @@ Yakov Zeldovich – Soviet physicist, physical chemist and cosmologist (1914–1
 Yuwen Zhang – Chinese-American academic
 Nikolay Zhukovsky (scientist) – Russian scientist (1847–1921)
 
-
 ## Miscellaneous concepts
+
 These topics need placement in the sections above, or in new sections.
 Beta plane – Approximation whereby the Coriolis parameter, f, is set to vary linearly in space
 Bridge scour – Erosion of sediment near bridge foundations by water
@@ -610,9 +603,3 @@ Eddy (fluid dynamics) – Swirling and reverse current in a turbulent flow regim
 Non ideal compressible fluid dynamics
 Plume (fluid dynamics) – Column of one fluid moving through another
 Stall (fluid dynamics) – Abrupt reduction in lift due to flow separation
-
-
-## References
-
-
-## External links

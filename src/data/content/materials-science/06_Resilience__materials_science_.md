@@ -51,13 +51,16 @@ In material science, resilience is the ability of a material to absorb energy wh
         
       
     
-    {\displaystyle U_{r}={\frac {\sigma _{y}^{2}}{2E}}={\frac {\sigma _{y}\varepsilon _{y}}{2}}}
+    
+
+$$ U_{r}={\frac {\sigma _{y}^{2}}{2E}}={\frac {\sigma _{y}\varepsilon _{y}}{2}} $$
+
   
 
 where Ur is the modulus of resilience, σy is the yield strength, εy is the yield strain, and E is the Young's modulus. This analysis is not valid for non-linear elastic materials like rubber, for which the approach of area under the curve until elastic limit must be used.
 
-
 ## Unit of resilience
+
 Modulus of resilience (Ur) is measured in a unit of joule per cubic meter (J·m−3) in the SI system, i.e. elastical deformation energy per surface of test specimen (merely for gauge-length part).
 Like the unit of tensile toughness (UT), the unit of resilience can be easily calculated by using area underneath the stress–strain (σ–ε) curve, which gives resilience value, as given below:
 
@@ -65,15 +68,3 @@ Ur = Area underneath the stress–strain (σ–ε) curve up to yield = σ × ε
 Ur [=] Pa × % = (N·m−2)·(unitless)
 Ur [=] N·m·m−3
 Ur [=] J·m−3
-
-
-## See also
-Toughness
-
-
-## References
-
-
-## Further reading
-Guha S. Quantification of inherent energy resilience of process systems for optimization of energy usage. Environ Prog Sustainable Energy. 2019;e13308. https://doi.org/10.1002/ep.13308
-Guha S. Quantification of inherent energy resilience of process systems pertaining to a gas sweetening unit. International Journal of Industrial Chemistry (2020) 11:71–90. https://doi.org/10.1007/s40090-020-00203-3

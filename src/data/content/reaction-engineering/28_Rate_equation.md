@@ -37,7 +37,10 @@ In chemistry, the rate equation (also known as the rate law or empirical differe
         
       
     
-    {\displaystyle v_{0}\;=\;k[\mathrm {A} ]^{x}[\mathrm {B} ]^{y}}
+    
+
+$$ v_{0}\;=\;k[\mathrm {A} ]^{x}[\mathrm {B} ]^{y} $$
+
   
 
 where ⁠
@@ -51,7 +54,10 @@ where ⁠
         ]
       
     
-    {\displaystyle [\mathrm {A} ]}
+    
+
+$$ [\mathrm {A} ] $$
+
   
 ⁠ and ⁠
   
@@ -64,7 +70,10 @@ where ⁠
         ]
       
     
-    {\displaystyle [\mathrm {B} ]}
+    
+
+$$ [\mathrm {B} ] $$
+
   
 ⁠ are the molar concentrations of the species ⁠
   
@@ -75,7 +84,10 @@ where ⁠
         
       
     
-    {\displaystyle \mathrm {A} }
+    
+
+$$ \mathrm {A} $$
+
   
 ⁠ and ⁠
   
@@ -87,7 +99,10 @@ where ⁠
         ,
       
     
-    {\displaystyle \mathrm {B} ,}
+    
+
+$$ \mathrm {B} , $$
+
   
 ⁠ usually in moles per liter (molarity, ⁠
   
@@ -96,7 +111,10 @@ where ⁠
         M
       
     
-    {\displaystyle M}
+    
+
+$$ M $$
+
   
 ⁠). The exponents ⁠
   
@@ -105,7 +123,10 @@ where ⁠
         x
       
     
-    {\displaystyle x}
+    
+
+$$ x $$
+
   
 ⁠ and ⁠
   
@@ -114,7 +135,10 @@ where ⁠
         y
       
     
-    {\displaystyle y}
+    
+
+$$ y $$
+
   
 ⁠ are the partial orders of reaction for ⁠
   
@@ -125,7 +149,10 @@ where ⁠
         
       
     
-    {\displaystyle \mathrm {A} }
+    
+
+$$ \mathrm {A} $$
+
   
 ⁠ and ⁠
   
@@ -136,7 +163,10 @@ where ⁠
         
       
     
-    {\displaystyle \mathrm {B} }
+    
+
+$$ \mathrm {B} $$
+
   
 ⁠, respectively, and the overall reaction order is the sum of the exponents. These are often positive integers, but they may also be zero, fractional, or negative. The order of reaction is a number which quantifies the degree to which the rate of a chemical reaction depends on concentrations of the reactants. In other words, the order of reaction is the exponent to which the concentration of a particular reactant is raised. The constant ⁠
   
@@ -145,7 +175,10 @@ where ⁠
         k
       
     
-    {\displaystyle k}
+    
+
+$$ k $$
+
   
 ⁠ is the reaction rate constant or rate coefficient and at very few places velocity constant or specific rate of reaction. Its value may depend on conditions such as temperature, ionic strength, surface area of an adsorbent, or light irradiation. If the reaction goes to completion, the rate equation for the reaction rate 
   
@@ -178,7 +211,10 @@ where ⁠
         
       
     
-    {\displaystyle v\;=\;k[{\ce {A}}]^{x}[{\ce {B}}]^{y}}
+    
+
+$$ v\;=\;k[{\ce {A}}]^{x}[{\ce {B}}]^{y} $$
+
   
  applies throughout the course of the reaction.
 Elementary (single-step) reactions and reaction steps have reaction orders equal to the stoichiometric coefficients for each reactant. The overall reaction order, i.e. the sum of stoichiometric coefficients of reactants, is always equal to the molecularity of the elementary reaction. However, complex (multi-step) reactions may or may not have reaction orders equal to their stoichiometric coefficients. This implies that the order and the rate equation of a given reaction cannot be reliably deduced from the stoichiometry and must be determined experimentally, since an unknown reaction mechanism could be either elementary or complex. When the experimental rate equation has been determined, it is often of use for deduction of the reaction mechanism.
@@ -266,9 +302,11 @@ A reaction can also have an undefined reaction order with respect to a reactant 
         .
       
     
-    {\displaystyle v_{0}=k{\frac {K_{1}K_{2}C_{A}C_{B}}{(1+K_{1}C_{A}+K_{2}C_{B})^{2}}}.}
-  
+    
 
+$$ v_{0}=k{\frac {K_{1}K_{2}C_{A}C_{B}}{(1+K_{1}C_{A}+K_{2}C_{B})^{2}}}. $$
+
+  
 
 ## Definition
 
@@ -297,7 +335,10 @@ Consider a typical chemical reaction in which two reactants A and B combine to f
         .
       
     
-    {\displaystyle {\ce {{A}+ {2B}-> {3C}}}.}
+    
+
+$$ {\ce {{A}+ {2B}-> {3C}}}. $$
+
   
 
 This can also be written
@@ -323,7 +364,10 @@ This can also be written
         0.
       
     
-    {\displaystyle -\mathrm {A} -2\mathrm {B} +3\mathrm {C} =0.}
+    
+
+$$ -\mathrm {A} -2\mathrm {B} +3\mathrm {C} =0. $$
+
   
 
 The prefactors −1, −2 and 3 (with negative signs for reactants because they are consumed) are known as stoichiometric coefficients. One molecule of A combines with two of B to form 3 of C, so if we use the symbol [X] for the molar concentration of chemical X,
@@ -398,7 +442,10 @@ The prefactors −1, −2 and 3 (with negative signs for reactants because they 
         .
       
     
-    {\displaystyle -{\frac {d[\mathrm {A} ]}{dt}}=-{\frac {1}{2}}{\frac {d[\mathrm {B} ]}{dt}}={\frac {1}{3}}{\frac {d[\mathrm {C} ]}{dt}}.}
+    
+
+$$ -{\frac {d[\mathrm {A} ]}{dt}}=-{\frac {1}{2}}{\frac {d[\mathrm {B} ]}{dt}}={\frac {1}{3}}{\frac {d[\mathrm {C} ]}{dt}}. $$
+
   
 
 If the reaction takes place in a closed system at constant temperature and volume, without a build-up of reaction intermediates, the reaction rate 
@@ -408,7 +455,10 @@ If the reaction takes place in a closed system at constant temperature and volum
         v
       
     
-    {\displaystyle v}
+    
+
+$$ v $$
+
   
  is defined as
 
@@ -452,7 +502,10 @@ If the reaction takes place in a closed system at constant temperature and volum
         ,
       
     
-    {\displaystyle v={\frac {1}{\nu _{i}}}{\frac {d[\mathrm {X} _{i}]}{dt}},}
+    
+
+$$ v={\frac {1}{\nu _{i}}}{\frac {d[\mathrm {X} _{i}]}{dt}}, $$
+
   
 
 where νi is the stoichiometric coefficient for chemical Xi, with a negative sign for a reactant.
@@ -477,7 +530,10 @@ The initial reaction rate
         
       
     
-    {\displaystyle v_{0}=v_{t=0}}
+    
+
+$$ v_{0}=v_{t=0} $$
+
   
  has some functional dependence on the concentrations of the reactants,
 
@@ -514,13 +570,16 @@ The initial reaction rate
         ,
       
     
-    {\displaystyle v_{0}=f\left([\mathrm {A} ],[\mathrm {B} ],\ldots \right),}
+    
+
+$$ v_{0}=f\left([\mathrm {A} ],[\mathrm {B} ],\ldots \right), $$
+
   
 
 and this dependence is known as the rate equation or rate law. This law generally cannot be deduced from the chemical equation and must be determined by experiment.
 
-
 ## Power laws
+
 A common form for the rate equation is a power law:
 
   
@@ -557,7 +616,10 @@ A common form for the rate equation is a power law:
         ⋯
       
     
-    {\displaystyle v_{0}=k[{\ce {A}}]^{x}[{\ce {B}}]^{y}\cdots }
+    
+
+$$ v_{0}=k[{\ce {A}}]^{x}[{\ce {B}}]^{y}\cdots $$
+
   
 
 The constant ⁠
@@ -567,7 +629,10 @@ The constant ⁠
         k
       
     
-    {\displaystyle k}
+    
+
+$$ k $$
+
   
 ⁠ is called the rate constant. The exponents, which can be fractional, are called partial orders of reaction and their sum is the overall order of reaction.
 In a dilute solution, an elementary reaction (one having a single step with a single transition state) is empirically found to obey the law of mass action. This predicts that the rate depends only on the concentrations of the reactants, raised to the powers of their stoichiometric coefficients.
@@ -611,7 +676,10 @@ The differential rate equation for an elementary reaction using mathematical pro
         ]
       
     
-    {\displaystyle -{d \over dt}[{\text{Reactants}}]=k\prod _{i}[{\text{Reactants}}_{i}]}
+    
+
+$$ -{d \over dt}[{\text{Reactants}}]=k\prod _{i}[{\text{Reactants}}_{i}] $$
+
   
 
 Where:
@@ -666,11 +734,10 @@ k is the rate constant of the reaction.
   
  represents the concentrations of the reactants, raised to the powers of their stoichiometric coefficients and multiplied together.
 
-
 ### Determination of reaction order
 
-
 #### Method of initial rates
+
 The natural logarithm of the power-law rate equation is
 
   
@@ -710,7 +777,10 @@ The natural logarithm of the power-law rate equation is
         ⋯
       
     
-    {\displaystyle \ln v_{0}=\ln k+x\ln[{\ce {A}}]+y\ln[{\ce {B}}]+\cdots }
+    
+
+$$ \ln v_{0}=\ln k+x\ln[{\ce {A}}]+y\ln[{\ce {B}}]+\cdots $$
+
   
 
 This can be used to estimate the order of reaction of each reactant. For example, the initial rate can be measured in a series of experiments at different initial concentrations of reactant ⁠
@@ -724,7 +794,10 @@ This can be used to estimate the order of reaction of each reactant. For example
         
       
     
-    {\displaystyle {\rm {A}}}
+    
+
+$$ {\rm {A}} $$
+
   
 ⁠ with all other concentrations ⁠
   
@@ -749,7 +822,10 @@ This can be used to estimate the order of reaction of each reactant. For example
         
       
     
-    {\displaystyle [{\rm {B],[{\rm {C],\dots }}}}}
+    
+
+$$ [{\rm {B],[{\rm {C],\dots }}}} $$
+
   
 ⁠ kept constant, so that 
 
@@ -782,7 +858,10 @@ This can be used to estimate the order of reaction of each reactant. For example
         .
       
     
-    {\displaystyle \ln v_{0}=x\ln[{\ce {A}}]+{\textrm {constant}}.}
+    
+
+$$ \ln v_{0}=x\ln[{\ce {A}}]+{\textrm {constant}}. $$
+
   
 
 The slope of a graph of ⁠
@@ -794,7 +873,10 @@ The slope of a graph of ⁠
         v
       
     
-    {\displaystyle \ln v}
+    
+
+$$ \ln v $$
+
   
 ⁠ as a function of 
   
@@ -809,7 +891,10 @@ The slope of a graph of ⁠
         ]
       
     
-    {\displaystyle \ln[{\ce {A}}]}
+    
+
+$$ \ln[{\ce {A}}] $$
+
   
  then corresponds to the order ⁠
   
@@ -818,7 +903,10 @@ The slope of a graph of ⁠
         x
       
     
-    {\displaystyle x}
+    
+
+$$ x $$
+
   
 ⁠ with respect to reactant ⁠
   
@@ -831,7 +919,10 @@ The slope of a graph of ⁠
         
       
     
-    {\displaystyle {\rm {A}}}
+    
+
+$$ {\rm {A}} $$
+
   
 ⁠.
 However, this method is not always reliable because
@@ -839,8 +930,8 @@ However, this method is not always reliable because
 measurement of the initial rate requires accurate determination of small changes in concentration in short times (compared to the reaction half-life) and is sensitive to errors, and
 the rate equation will not be completely determined if the rate also depends on substances not present at the beginning of the reaction, such as intermediates or products.
 
-
 #### Integral method
+
 The tentative rate equation determined by the method of initial rates is therefore normally verified by comparing the concentrations measured over a longer time (several half-lives) with the integrated form of the rate equation; this assumes that the reaction goes to completion.
 For example, the integrated rate law for a first-order reaction is
 
@@ -878,7 +969,10 @@ For example, the integrated rate law for a first-order reaction is
         ,
       
     
-    {\displaystyle \ln {[{\ce {A}}]}=-kt+\ln {[{\ce {A}}]_{0}},}
+    
+
+$$ \ln {[{\ce {A}}]}=-kt+\ln {[{\ce {A}}]_{0}}, $$
+
   
 
 where ⁠
@@ -894,7 +988,10 @@ where ⁠
         
       
     
-    {\displaystyle [{\rm {A]}}}
+    
+
+$$ [{\rm {A]}} $$
+
   
 ⁠ is the concentration at time ⁠
   
@@ -903,7 +1000,10 @@ where ⁠
         t
       
     
-    {\displaystyle t}
+    
+
+$$ t $$
+
   
 ⁠ and ⁠
   
@@ -923,7 +1023,10 @@ where ⁠
         
       
     
-    {\displaystyle [{\rm {A]_{0}}}}
+    
+
+$$ [{\rm {A]_{0}}} $$
+
   
 ⁠ is the initial concentration at zero time. The first-order rate law is confirmed if 
   
@@ -940,7 +1043,10 @@ where ⁠
         
       
     
-    {\displaystyle \ln {[{\ce {A}}]}}
+    
+
+$$ \ln {[{\ce {A}}]} $$
+
   
  is in fact a linear function of time. In this case the rate constant ⁠
   
@@ -949,12 +1055,15 @@ where ⁠
         k
       
     
-    {\displaystyle k}
+    
+
+$$ k $$
+
   
 ⁠ is equal to the slope with sign reversed.
 
-
 #### Method of flooding
+
 The partial order with respect to a given reactant can be evaluated by the method of flooding (or of isolation) of Ostwald. In this method, the concentration of one reactant is measured with all other reactants in large excess so that their concentration remains essentially constant. For a reaction a·A + b·B  →  c·C with rate law 
   
     
@@ -996,7 +1105,10 @@ The partial order with respect to a given reactant can be evaluated by the metho
         ,
       
     
-    {\displaystyle v_{0}=k\cdot [{\rm {A}}]^{x}\cdot [{\rm {B}}]^{y},}
+    
+
+$$ v_{0}=k\cdot [{\rm {A}}]^{x}\cdot [{\rm {B}}]^{y}, $$
+
   
  the partial order ⁠
   
@@ -1005,7 +1117,10 @@ The partial order with respect to a given reactant can be evaluated by the metho
         x
       
     
-    {\displaystyle x}
+    
+
+$$ x $$
+
   
 ⁠ with respect to ⁠
   
@@ -1018,7 +1133,10 @@ The partial order with respect to a given reactant can be evaluated by the metho
         
       
     
-    {\displaystyle {\rm {A}}}
+    
+
+$$ {\rm {A}} $$
+
   
 ⁠ is determined using a large excess of ⁠
   
@@ -1031,7 +1149,10 @@ The partial order with respect to a given reactant can be evaluated by the metho
         
       
     
-    {\displaystyle {\rm {B}}}
+    
+
+$$ {\rm {B}} $$
+
   
 ⁠. In this case
 
@@ -1064,7 +1185,10 @@ The partial order with respect to a given reactant can be evaluated by the metho
         
       
     
-    {\displaystyle v_{0}=k'\cdot [{\rm {A}}]^{x}}
+    
+
+$$ v_{0}=k'\cdot [{\rm {A}}]^{x} $$
+
   
  with 
   
@@ -1092,7 +1216,10 @@ The partial order with respect to a given reactant can be evaluated by the metho
         ,
       
     
-    {\displaystyle k'=k\cdot [{\rm {B}}]^{y},}
+    
+
+$$ k'=k\cdot [{\rm {B}}]^{y}, $$
+
   
 
 and ⁠
@@ -1102,7 +1229,10 @@ and ⁠
         x
       
     
-    {\displaystyle x}
+    
+
+$$ x $$
+
   
 ⁠ may be determined by the integral method. The order ⁠
   
@@ -1111,7 +1241,10 @@ and ⁠
         y
       
     
-    {\displaystyle y}
+    
+
+$$ y $$
+
   
 ⁠ with respect to ⁠
   
@@ -1124,7 +1257,10 @@ and ⁠
         
       
     
-    {\displaystyle {\rm {B}}}
+    
+
+$$ {\rm {B}} $$
+
   
 ⁠ under the same conditions (with ⁠
   
@@ -1137,7 +1273,10 @@ and ⁠
         
       
     
-    {\displaystyle {\rm {B}}}
+    
+
+$$ {\rm {B}} $$
+
   
 ⁠ in excess) is determined by a series of similar experiments with a range of initial concentration ⁠
   
@@ -1157,7 +1296,10 @@ and ⁠
         
       
     
-    {\displaystyle [{\rm {B]_{0}}}}
+    
+
+$$ [{\rm {B]_{0}}} $$
+
   
 ⁠ so that the variation of ⁠
   
@@ -1169,12 +1311,15 @@ and ⁠
         
       
     
-    {\displaystyle k'}
+    
+
+$$ k' $$
+
   
 ⁠ can be measured.
 
-
 ### Zero order
+
 For zero-order reactions, the reaction rate is independent of the concentration of a reactant, so that changing its concentration has no effect on the rate of the reaction. Thus, the concentration changes linearly with time. The rate law for zero order reaction is
 
   
@@ -1210,7 +1355,10 @@ For zero-order reactions, the reaction rate is independent of the concentration 
         ,
       
     
-    {\displaystyle -{d[A] \over dt}=k[A]^{0}=k,}
+    
+
+$$ -{d[A] \over dt}=k[A]^{0}=k, $$
+
   
 
 The unit of k is mol dm−3 s−1. This may occur when there is a bottleneck which limits the number of reactant molecules that can react at the same time, for example if the reaction requires contact with an enzyme or a catalytic surface.
@@ -1218,8 +1366,8 @@ Many enzyme-catalyzed reactions are zero order, provided that the reactant conce
 Similarly, reactions with heterogeneous catalysis can be zero order if the catalytic surface is saturated. For example, the decomposition of phosphine (PH3) on a hot tungsten surface at high pressure is zero order in phosphine, which decomposes at a constant rate.
 In homogeneous catalysis zero order behavior can come about from reversible inhibition. For example, ring-opening metathesis polymerization using third-generation Grubbs catalyst exhibits zero order behavior in catalyst due to the reversible inhibition that occurs between pyridine and the ruthenium center.
 
-
 ### First order
+
 A first order reaction depends on the concentration of only one reactant (a unimolecular reaction). Other reactants can be present, but their concentration has no effect on the rate. The rate law for a first order reaction is
 
   
@@ -1252,7 +1400,10 @@ A first order reaction depends on the concentration of only one reactant (a unim
         ,
       
     
-    {\displaystyle -{\frac {d[{\ce {A}}]}{dt}}=k[{\ce {A}}],}
+    
+
+$$ -{\frac {d[{\ce {A}}]}{dt}}=k[{\ce {A}}], $$
+
   
 
 The unit of k  is s−1. Although not affecting the above math, the majority of first order reactions proceed via intermolecular collisions. Such collisions, which contribute the energy to the reactant, are necessarily second order. However according to the Lindemann mechanism the reaction consists of two steps: the bimolecular collision which is second order and the reaction of the energized molecule which is unimolecular and first order. The rate of the overall reaction depends on the slowest step, so the overall reaction will be first order when the reaction of the energized reactant is slower than the collision step.
@@ -1341,7 +1492,10 @@ Examples of such reactions are:
         
       
     
-    {\displaystyle {\ce {2N2O5 -> 4NO2 + O2}}}
+    
+
+$$ {\ce {2N2O5 -> 4NO2 + O2}} $$
+
   
  
 
@@ -1449,7 +1603,10 @@ Examples of such reactions are:
         
       
     
-    {\displaystyle {\ce {[CoCl(NH3)5]^2+ + H2O -> [Co(H2O)(NH3)5]^3+ + Cl-}}}
+    
+
+$$ {\ce {[CoCl(NH3)5]^2+ + H2O -> [Co(H2O)(NH3)5]^3+ + Cl-}} $$
+
   
 
   
@@ -1504,7 +1661,10 @@ Examples of such reactions are:
         
       
     
-    {\displaystyle {\ce {H2O2 -> H2O + 1/2O2}}}
+    
+
+$$ {\ce {H2O2 -> H2O + 1/2O2}} $$
+
   
   
 In organic chemistry, the class of SN1 (nucleophilic substitution unimolecular) reactions consists of first-order reactions. For example, in the reaction of aryldiazonium ions with nucleophiles in aqueous solution, ArN+2 + X− → ArX + N2, the rate equation is 
@@ -1535,12 +1695,15 @@ In organic chemistry, the class of SN1 (nucleophilic substitution unimolecular) 
         ,
       
     
-    {\displaystyle v_{0}=k[{\ce {ArN2+}}],}
+    
+
+$$ v_{0}=k[{\ce {ArN2+}}], $$
+
   
  where Ar indicates an aryl group.
 
-
 ### Second order
+
 A reaction is said to be second order when the overall order is two. The rate of a second-order reaction may be proportional to one concentration squared, 
   
     
@@ -1566,7 +1729,10 @@ A reaction is said to be second order when the overall order is two. The rate of
         ,
       
     
-    {\displaystyle v_{0}=k[{\ce {A}}]^{2},}
+    
+
+$$ v_{0}=k[{\ce {A}}]^{2}, $$
+
   
  or (more commonly) to the product of two concentrations, 
   
@@ -1593,7 +1759,10 @@ A reaction is said to be second order when the overall order is two. The rate of
         .
       
     
-    {\displaystyle v_{0}=k[{\ce {A}}][{\ce {B}}].}
+    
+
+$$ v_{0}=k[{\ce {A}}][{\ce {B}}]. $$
+
   
  As an example of the first type, the reaction NO2 + CO  →  NO + CO2 is second-order in the reactant NO2 and zero order in the reactant CO. The observed rate is given by 
   
@@ -1628,7 +1797,10 @@ A reaction is said to be second order when the overall order is two. The rate of
         ,
       
     
-    {\displaystyle v_{0}=k[{\ce {NO2}}]^{2},}
+    
+
+$$ v_{0}=k[{\ce {NO2}}]^{2}, $$
+
   
  and is independent of the concentration of CO.
 For the rate proportional to a single concentration squared, the time dependence of the concentration is given by
@@ -1675,7 +1847,10 @@ For the rate proportional to a single concentration squared, the time dependence
         .
       
     
-    {\displaystyle {\frac {1}{{\ce {[A]}}}}={\frac {1}{{\ce {[A]0}}}}+kt.}
+    
+
+$$ {\frac {1}{{\ce {[A]}}}}={\frac {1}{{\ce {[A]0}}}}+kt. $$
+
   
 
 The unit of k is mol−1 dm3 s−1.
@@ -1784,7 +1959,10 @@ The time dependence for a rate proportional to two unequal concentrations is
         ;
       
     
-    {\displaystyle {\frac {{\ce {[A]}}}{{\ce {[B]}}}}={\frac {{\ce {[A]0}}}{{\ce {[B]0}}}}e^{\left({\ce {[A]0}}-{\ce {[B]0}}\right)kt};}
+    
+
+$$ {\frac {{\ce {[A]}}}{{\ce {[B]}}}}={\frac {{\ce {[A]0}}}{{\ce {[B]0}}}}e^{\left({\ce {[A]0}}-{\ce {[B]0}}\right)kt}; $$
+
   
 
 if the concentrations are equal, they satisfy the previous equation.
@@ -1867,7 +2045,10 @@ The second type includes nucleophilic addition-elimination reactions, such as th
         
       
     
-    {\displaystyle {\ce {CH3COOC2H5 + OH- -> CH3COO- + C2H5OH}}}
+    
+
+$$ {\ce {CH3COOC2H5 + OH- -> CH3COO- + C2H5OH}} $$
+
   
 
 This reaction is first-order in each reactant and second-order overall: 
@@ -1926,7 +2107,10 @@ This reaction is first-order in each reactant and second-order overall:
         ]
       
     
-    {\displaystyle v_{0}=k[{\ce {CH3COOC2H5}}][{\ce {OH-}}]}
+    
+
+$$ v_{0}=k[{\ce {CH3COOC2H5}}][{\ce {OH-}}] $$
+
   
 
 If the same hydrolysis reaction is catalyzed by imidazole, the rate equation becomes
@@ -1981,7 +2165,10 @@ If the same hydrolysis reaction is catalyzed by imidazole, the rate equation bec
         .
       
     
-    {\displaystyle v_{0}=k[{\text{imidazole}}][{\ce {CH3COOC2H5}}].}
+    
+
+$$ v_{0}=k[{\text{imidazole}}][{\ce {CH3COOC2H5}}]. $$
+
   
 
 The rate is first-order in one reactant (ethyl acetate), and also first-order in imidazole, which as a catalyst does not appear in the overall chemical equation.
@@ -2076,7 +2263,10 @@ Another well-known class of second-order reactions are the SN2 (bimolecular nucl
         
       
     
-    {\displaystyle {\ce {CH3CH2CH2CH2Br + NaI -> CH3CH2CH2CH2I + NaBr(v)}}}
+    
+
+$$ {\ce {CH3CH2CH2CH2Br + NaI -> CH3CH2CH2CH2I + NaBr(v)}} $$
+
   
 
 This same compound can be made to undergo a bimolecular (E2) elimination reaction, another common type of second-order reaction, if the sodium iodide and acetone are replaced with sodium tert-butoxide as the salt and tert-butanol as the solvent:
@@ -2187,11 +2377,14 @@ This same compound can be made to undergo a bimolecular (E2) elimination reactio
         
       
     
-    {\displaystyle {\ce {{CH3CH2CH2CH2Br}+NaO{\mathit {t}}-Bu->{CH3CH2CH=CH2}+{NaBr}+HO{\mathit {t}}-Bu}}}
+    
+
+$$ {\ce {{CH3CH2CH2CH2Br}+NaO{\mathit {t}}-Bu->{CH3CH2CH=CH2}+{NaBr}+HO{\mathit {t}}-Bu}} $$
+
   
 
-
 ### Pseudo-first order
+
 If the concentration of a reactant remains constant (because it is a catalyst, or because it is in great excess with respect to the other reactants), its concentration can be included in the rate constant, leading to a pseudo–first-order (or occasionally pseudo–second-order) rate equation. For a typical second-order reaction with rate equation 
   
     
@@ -2217,7 +2410,10 @@ If the concentration of a reactant remains constant (because it is a catalyst, o
         ,
       
     
-    {\displaystyle v_{0}=k[{\ce {A}}][{\ce {B}}],}
+    
+
+$$ v_{0}=k[{\ce {A}}][{\ce {B}}], $$
+
   
  if the concentration of reactant B is constant then 
   
@@ -2254,7 +2450,10 @@ If the concentration of a reactant remains constant (because it is a catalyst, o
         ,
       
     
-    {\displaystyle v_{0}=k[{\ce {A}}][{\ce {B}}]=k'[{\ce {A}}],}
+    
+
+$$ v_{0}=k[{\ce {A}}][{\ce {B}}]=k'[{\ce {A}}], $$
+
   
  where the pseudo–first-order rate constant 
   
@@ -2274,7 +2473,10 @@ If the concentration of a reactant remains constant (because it is a catalyst, o
         .
       
     
-    {\displaystyle k'=k[{\ce {B}}].}
+    
+
+$$ k'=k[{\ce {B}}]. $$
+
   
  The second-order rate equation has been reduced to a pseudo–first-order rate equation, which makes the treatment to obtain an integrated rate equation much easier.
 One way to obtain a pseudo-first order reaction is to use a large excess of one reactant (say, [B]≫[A]) so that, as the reaction progresses, only a small fraction of the reactant in excess (B) is consumed, and its concentration can be considered to stay constant. For example, the hydrolysis of esters by dilute mineral acids follows pseudo-first order kinetics, where the concentration of water is constant because it is present in large excess:
@@ -2337,7 +2539,10 @@ One way to obtain a pseudo-first order reaction is to use a large excess of one 
         
       
     
-    {\displaystyle {\ce {CH3COOCH3 + H2O -> CH3COOH + CH3OH}}}
+    
+
+$$ {\ce {CH3COOCH3 + H2O -> CH3COOH + CH3OH}} $$
+
   
 
 The hydrolysis of sucrose (C12H22O11) in acid solution is often cited as a first-order reaction with rate 
@@ -2386,7 +2591,10 @@ The hydrolysis of sucrose (C12H22O11) in acid solution is often cited as a first
         .
       
     
-    {\displaystyle v_{0}=k[{\ce {C12H22O11}}].}
+    
+
+$$ v_{0}=k[{\ce {C12H22O11}}]. $$
+
   
  The true rate equation is third-order, 
   
@@ -2458,12 +2666,15 @@ The hydrolysis of sucrose (C12H22O11) in acid solution is often cited as a first
         ;
       
     
-    {\displaystyle v_{0}=k[{\ce {C12H22O11}}][{\ce {H+}}][{\ce {H2O}}];}
+    
+
+$$ v_{0}=k[{\ce {C12H22O11}}][{\ce {H+}}][{\ce {H2O}}]; $$
+
   
  however, the concentrations of both the catalyst H+ and the solvent H2O are normally constant, so that the reaction is pseudo–first-order.
 
-
 ### Summary for reaction orders 0, 1, 2, and n
+
 Elementary reaction steps with order 3 (called ternary reactions) are rare and unlikely to occur. However, overall reactions composed of several elementary steps can, of course, be of any (including non-integer) order.
 
 Here ⁠
@@ -2477,7 +2688,10 @@ Here ⁠
         
       
     
-    {\displaystyle {\rm {M}}}
+    
+
+$$ {\rm {M}} $$
+
   
 ⁠ stands for concentration in molarity (mol · L−1), ⁠
   
@@ -2486,7 +2700,10 @@ Here ⁠
         t
       
     
-    {\displaystyle t}
+    
+
+$$ t $$
+
   
 ⁠ for time, and ⁠
   
@@ -2495,12 +2712,15 @@ Here ⁠
         k
       
     
-    {\displaystyle k}
+    
+
+$$ k $$
+
   
 ⁠ for the reaction rate constant. The half-life of a first-order reaction is often expressed as t1/2 = 0.693/k (as ln(2)≈0.693).
 
-
 ### Fractional order
+
 In fractional order reactions, the order is a non-integer, which often indicates a  chemical chain reaction or other complex reaction mechanism. For example, the pyrolysis of acetaldehyde (CH3CHO) into methane and carbon monoxide proceeds with an order of 1.5 with respect to acetaldehyde: 
   
     
@@ -2539,7 +2759,10 @@ In fractional order reactions, the order is a non-integer, which often indicates
         .
       
     
-    {\displaystyle v_{0}=k[{\ce {CH3CHO}}]^{3/2}.}
+    
+
+$$ v_{0}=k[{\ce {CH3CHO}}]^{3/2}. $$
+
   
  The decomposition of phosgene (COCl2) to carbon monoxide and chlorine has order 1 with respect to phosgene itself and order 0.5 with respect to chlorine: 
   
@@ -2593,7 +2816,10 @@ In fractional order reactions, the order is a non-integer, which often indicates
         .
       
     
-    {\displaystyle v_{0}=k{\ce {[COCl2] [Cl2]}}^{1/2}.}
+    
+
+$$ v_{0}=k{\ce {[COCl2] [Cl2]}}^{1/2}. $$
+
   
 
 The order of a chain reaction can be rationalized using the steady state approximation for the concentration of reactive intermediates such as free radicals. For the pyrolysis of acetaldehyde, the Rice-Herzfeld mechanism  is
@@ -2631,7 +2857,10 @@ Initiation
         
       
     
-    {\displaystyle {\ce {CH3CHO -> .CH3 + .CHO}}}
+    
+
+$$ {\ce {CH3CHO -> .CH3 + .CHO}} $$
+
   
 
 Propagation
@@ -2686,7 +2915,10 @@ Propagation
         
       
     
-    {\displaystyle {\ce {.CH3 + CH3CHO -> CH3CO. + CH4}}}
+    
+
+$$ {\ce {.CH3 + CH3CHO -> CH3CO. + CH4}} $$
+
   
 
   
@@ -2720,7 +2952,10 @@ Propagation
         
       
     
-    {\displaystyle {\ce {CH3CO. -> .CH3 + CO}}}
+    
+
+$$ {\ce {CH3CO. -> .CH3 + CO}} $$
+
   
 
 Termination
@@ -2763,7 +2998,10 @@ Termination
         
       
     
-    {\displaystyle {\ce {2 .CH3 -> C2H6}}}
+    
+
+$$ {\ce {2 .CH3 -> C2H6}} $$
+
   
 
 where • denotes a free radical. To simplify the theory, the reactions of the *CHO to form a second *CH3 are ignored.
@@ -2849,7 +3087,10 @@ In the steady state, the rates of formation and destruction of methyl radicals a
         ,
       
     
-    {\displaystyle {\frac {d[{\ce {.CH3}}]}{dt}}=k_{i}[{\ce {CH3CHO}}]-k_{t}[{\ce {.CH3}}]^{2}=0,}
+    
+
+$$ {\frac {d[{\ce {.CH3}}]}{dt}}=k_{i}[{\ce {CH3CHO}}]-k_{t}[{\ce {.CH3}}]^{2}=0, $$
+
   
 
 so that the concentration of methyl radical satisfies
@@ -2901,7 +3142,10 @@ so that the concentration of methyl radical satisfies
         
       
     
-    {\displaystyle {\ce {[.CH3]\quad \propto \quad [CH3CHO]^{1/2}.}}}
+    
+
+$$ {\ce {[.CH3]\quad \propto \quad [CH3CHO]^{1/2}.}} $$
+
   
 
 The reaction rate equals the rate of the propagation steps which form the main reaction products CH4 and CO:
@@ -3014,17 +3258,19 @@ The reaction rate equals the rate of the propagation steps which form the main r
         
       
     
-    {\displaystyle v_{0}={\frac {d[{\ce {CH4}}]}{dt}}|_{0}=k_{p}{\ce {[.CH3][CH3CHO]}}\quad \propto \quad {\ce {[CH3CHO]^{3/2}}}}
+    
+
+$$ v_{0}={\frac {d[{\ce {CH4}}]}{dt}}|_{0}=k_{p}{\ce {[.CH3][CH3CHO]}}\quad \propto \quad {\ce {[CH3CHO]^{3/2}}} $$
+
   
 
 in agreement with the experimental order of 3/2.
 In highly diluted solutions, such as at concentrations below the micromolar level, molecular collisions are primarily governed by diffusion. Under these conditions, the apparent reaction order deviates from the stoichiometric expectation because reactant molecules require additional time to traverse longer distances before encountering one another. This behavior can be described by Fick's laws of diffusion and is consistent with fractal reaction kinetics, which yield fractional reaction orders.
 
-
 ## Complex laws
 
-
 ### Mixed order
+
 More complex rate laws have been described as being mixed order if they approximate to the laws for more than one order at different concentrations of the chemical species involved. For example, a rate law of the form 
   
     
@@ -3062,7 +3308,10 @@ More complex rate laws have been described as being mixed order if they approxim
         
       
     
-    {\displaystyle v_{0}=k_{1}[A]+k_{2}[A]^{2}}
+    
+
+$$ v_{0}=k_{1}[A]+k_{2}[A]^{2} $$
+
   
  represents concurrent first order and second order reactions (or more often concurrent pseudo-first order and second order) reactions, and can be described as mixed first and second order. For sufficiently large values of [A] such a reaction will approximate second order kinetics, but for smaller [A] the kinetics will approximate first  order (or pseudo-first order). As the reaction progresses, the reaction can change from second order to first order as reactant is consumed.
 Another type of mixed-order rate law has a denominator of two or more terms, often because the identity of the rate-determining step depends on the values of the concentrations. An example is the oxidation of an alcohol to a ketone by hexacyanoferrate (III) ion [Fe(CN)63−] with ruthenate (VI) ion (RuO42−) as catalyst. For this reaction, the rate of disappearance of hexacyanoferrate (III) is  
@@ -3149,7 +3398,10 @@ Another type of mixed-order rate law has a denominator of two or more terms, oft
         
       
     
-    {\displaystyle v_{0}={\frac {{\ce {[Fe(CN)6]^2-}}}{k_{\alpha }+k_{\beta }{\ce {[Fe(CN)6]^2-}}}}}
+    
+
+$$ v_{0}={\frac {{\ce {[Fe(CN)6]^2-}}}{k_{\alpha }+k_{\beta }{\ce {[Fe(CN)6]^2-}}}} $$
+
   
 
 This is zero-order with respect to hexacyanoferrate (III) at the onset of the reaction (when its concentration is high and the ruthenium catalyst is quickly regenerated), but changes to first-order when its concentration decreases and the regeneration of catalyst becomes rate-determining.
@@ -3158,8 +3410,8 @@ Notable mechanisms with mixed-order rate laws with two-term denominators include
 Michaelis–Menten kinetics for enzyme-catalysis: first-order in substrate (second-order overall) at low substrate concentrations, zero order in substrate (first-order overall) at higher substrate concentrations; and
 the Lindemann mechanism for unimolecular reactions: second-order at low pressures, first-order at high pressures.
 
-
 ### Negative order
+
 A reaction rate can have a negative partial order with respect to a substance. For example, the conversion of ozone (O3) to oxygen follows the rate equation 
   
     
@@ -3215,7 +3467,10 @@ A reaction rate can have a negative partial order with respect to a substance. F
         
       
     
-    {\displaystyle v_{0}=k{\ce {[O_3]^2}}{\ce {[O_2]^{-1}}}}
+    
+
+$$ v_{0}=k{\ce {[O_3]^2}}{\ce {[O_2]^{-1}}} $$
+
   
  in an excess of oxygen. This corresponds to second order in ozone and order (−1) with respect to oxygen.
 When a partial order is negative, the overall order is usually considered as undefined. In the above example, for instance, the reaction is not described as first order even though the sum of the partial orders is 
@@ -3232,12 +3487,15 @@ When a partial order is negative, the overall order is usually considered as und
         1
       
     
-    {\displaystyle 2+(-1)=1}
+    
+
+$$ 2+(-1)=1 $$
+
   
 , because the rate equation is more complex than that of a simple first-order reaction.
 
-
 ## Opposed reactions
+
 A pair of forward and reverse reactions may occur simultaneously with comparable speeds. For example, A and B react into products P and Q and vice versa (a, b, p, and q are the stoichiometric coefficients):
 
   
@@ -3313,7 +3571,10 @@ A pair of forward and reverse reactions may occur simultaneously with comparable
         
       
     
-    {\displaystyle {\ce {{{\mathit {a}}A}+{{\mathit {b}}B}<=>{{\mathit {p}}P}+{{\mathit {q}}Q}}}}
+    
+
+$$ {\ce {{{\mathit {a}}A}+{{\mathit {b}}B}<=>{{\mathit {p}}P}+{{\mathit {q}}Q}}} $$
+
   
 
 The reaction rate expression for the above reactions (assuming each one is elementary) can be written as:
@@ -3379,7 +3640,10 @@ The reaction rate expression for the above reactions (assuming each one is eleme
         
       
     
-    {\displaystyle v=k_{1}[{\ce {A}}]^{a}[{\ce {B}}]^{b}-k_{-1}[{\ce {P}}]^{p}[{\ce {Q}}]^{q}}
+    
+
+$$ v=k_{1}[{\ce {A}}]^{a}[{\ce {B}}]^{b}-k_{-1}[{\ce {P}}]^{p}[{\ce {Q}}]^{q} $$
+
   
 
 where: k1 is the rate coefficient for the reaction that consumes A and B; k−1 is the rate coefficient for the backwards reaction, which consumes P and Q and produces A and B.
@@ -3526,11 +3790,14 @@ The constants k1 and k−1 are related to the equilibrium coefficient for the re
         
       
     
-    {\displaystyle {\begin{aligned}&k_{1}[{\ce {A}}]^{a}[{\ce {B}}]^{b}=k_{-1}[{\ce {P}}]^{p}[{\ce {Q}}]^{q}\\[8pt]&K={\frac {[{\ce {P}}]^{p}[{\ce {Q}}]^{q}}{[{\ce {A}}]^{a}[{\ce {B}}]^{b}}}={\frac {k_{1}}{k_{-1}}}\end{aligned}}}
+    
+
+$$ {\begin{aligned}&k_{1}[{\ce {A}}]^{a}[{\ce {B}}]^{b}=k_{-1}[{\ce {P}}]^{p}[{\ce {Q}}]^{q}\\[8pt]&K={\frac {[{\ce {P}}]^{p}[{\ce {Q}}]^{q}}{[{\ce {A}}]^{a}[{\ce {B}}]^{b}}}={\frac {k_{1}}{k_{-1}}}\end{aligned}} $$
+
   
 
-
 ### Simple example
+
 In a simple equilibrium between two species:
 
   
@@ -3574,7 +3841,10 @@ In a simple equilibrium between two species:
         
       
     
-    {\displaystyle {\ce {A <=> P}}}
+    
+
+$$ {\ce {A <=> P}} $$
+
   
 
 where the reaction starts with an initial concentration of reactant A, 
@@ -3598,7 +3868,10 @@ where the reaction starts with an initial concentration of reactant A,
         
       
     
-    {\displaystyle {\ce {[A]0}}}
+    
+
+$$ {\ce {[A]0}} $$
+
   
 , and an initial concentration of 0 for product P at time t=0.
 Then the equilibrium constant K is expressed as:
@@ -3673,7 +3946,10 @@ Then the equilibrium constant K is expressed as:
         
       
     
-    {\displaystyle K\ {\stackrel {\mathrm {def} }{=}}\ {\frac {k_{1}}{k_{-1}}}={\frac {\left[{\ce {P}}\right]_{e}}{\left[{\ce {A}}\right]_{e}}}}
+    
+
+$$ K\ {\stackrel {\mathrm {def} }{=}}\ {\frac {k_{1}}{k_{-1}}}={\frac {\left[{\ce {P}}\right]_{e}}{\left[{\ce {A}}\right]_{e}}} $$
+
   
 
 where 
@@ -3692,7 +3968,10 @@ where
         
       
     
-    {\displaystyle [{\ce {A}}]_{e}}
+    
+
+$$ [{\ce {A}}]_{e} $$
+
   
  and 
   
@@ -3710,7 +3989,10 @@ where
         
       
     
-    {\displaystyle [{\ce {P}}]_{e}}
+    
+
+$$ [{\ce {P}}]_{e} $$
+
   
  are the concentrations of A and P at equilibrium, respectively.
 The concentration of A at time t, 
@@ -3729,7 +4011,10 @@ The concentration of A at time t,
         
       
     
-    {\displaystyle [{\ce {A}}]_{t}}
+    
+
+$$ [{\ce {A}}]_{t} $$
+
   
 , is related to the concentration of P at time t, 
   
@@ -3747,7 +4032,10 @@ The concentration of A at time t,
         
       
     
-    {\displaystyle [{\ce {P}}]_{t}}
+    
+
+$$ [{\ce {P}}]_{t} $$
+
   
 , by the equilibrium reaction equation:
 
@@ -3807,7 +4095,10 @@ The concentration of A at time t,
         
       
     
-    {\displaystyle {\ce {[A]_{\mathit {t}}=[A]0-[P]_{\mathit {t}}}}}
+    
+
+$$ {\ce {[A]_{\mathit {t}}=[A]0-[P]_{\mathit {t}}}} $$
+
   
 
 The term 
@@ -3831,7 +4122,10 @@ The term
         
       
     
-    {\displaystyle {\ce {[P]0}}}
+    
+
+$$ {\ce {[P]0}} $$
+
   
  is not present because, in this simple example, the initial concentration of P is 0.
 This applies even when time t is at infinity; i.e., equilibrium has been reached:
@@ -3892,7 +4186,10 @@ This applies even when time t is at infinity; i.e., equilibrium has been reached
         
       
     
-    {\displaystyle {\ce {[A]_{\mathit {e}}=[A]0-[P]_{\mathit {e}}}}}
+    
+
+$$ {\ce {[A]_{\mathit {e}}=[A]0-[P]_{\mathit {e}}}} $$
+
   
 
 then it follows, by the definition of K, that
@@ -3954,7 +4251,10 @@ then it follows, by the definition of K, that
         
       
     
-    {\displaystyle [{\ce {P}}]_{e}={\frac {k_{1}}{k_{1}+k_{-1}}}{\ce {[A]0}}}
+    
+
+$$ [{\ce {P}}]_{e}={\frac {k_{1}}{k_{1}+k_{-1}}}{\ce {[A]0}} $$
+
   
 
 and, therefore,
@@ -4045,7 +4345,10 @@ and, therefore,
         
       
     
-    {\displaystyle \ [{\ce {A}}]_{e}={\ce {[A]0}}-[{\ce {P}}]_{e}={\frac {k_{-1}}{k_{1}+k_{-1}}}{\ce {[A]0}}}
+    
+
+$$ \ [{\ce {A}}]_{e}={\ce {[A]0}}-[{\ce {P}}]_{e}={\frac {k_{-1}}{k_{1}+k_{-1}}}{\ce {[A]0}} $$
+
   
 
 These equations allow us to uncouple the system of differential equations, and allow us to solve for the concentration of A alone.
@@ -4112,7 +4415,10 @@ The reaction equation was given previously as:
         
       
     
-    {\displaystyle v=k_{1}[{\ce {A}}]^{a}[{\ce {B}}]^{b}-k_{-1}[{\ce {P}}]^{p}[{\ce {Q}}]^{q}}
+    
+
+$$ v=k_{1}[{\ce {A}}]^{a}[{\ce {B}}]^{b}-k_{-1}[{\ce {P}}]^{p}[{\ce {Q}}]^{q} $$
+
   
 
 For 
@@ -4157,7 +4463,10 @@ For
         
       
     
-    {\displaystyle {\ce {A <=> P}}}
+    
+
+$$ {\ce {A <=> P}} $$
+
   
  this is simply
 
@@ -4218,7 +4527,10 @@ For
         
       
     
-    {\displaystyle -{\frac {d[{\ce {A}}]}{dt}}=k_{1}[{\ce {A}}]_{t}-k_{-1}[{\ce {P}}]_{t}}
+    
+
+$$ -{\frac {d[{\ce {A}}]}{dt}}=k_{1}[{\ce {A}}]_{t}-k_{-1}[{\ce {P}}]_{t} $$
+
   
 
 The derivative is negative because this is the rate of the reaction going from A to P, and therefore the concentration of A is decreasing. To simplify notation, let x be 
@@ -4237,7 +4549,10 @@ The derivative is negative because this is the rate of the reaction going from A
         
       
     
-    {\displaystyle [{\ce {A}}]_{t}}
+    
+
+$$ [{\ce {A}}]_{t} $$
+
   
 , the concentration of A at time t. Let 
   
@@ -4251,7 +4566,10 @@ The derivative is negative because this is the rate of the reaction going from A
         
       
     
-    {\displaystyle x_{e}}
+    
+
+$$ x_{e} $$
+
   
  be the concentration of A at equilibrium. Then:
 
@@ -4473,7 +4791,10 @@ The derivative is negative because this is the rate of the reaction going from A
         
       
     
-    {\displaystyle {\begin{aligned}-{\frac {d[{\ce {A}}]}{dt}}&={k_{1}[{\ce {A}}]_{t}}-{k_{-1}[{\ce {P}}]_{t}}\\[8pt]-{\frac {dx}{dt}}&={k_{1}x}-{k_{-1}[{\ce {P}}]_{t}}\\[8pt]&={k_{1}x}-{k_{-1}({\ce {[A]0}}-x)}\\[8pt]&={(k_{1}+k_{-1})x}-{k_{-1}{\ce {[A]0}}}\end{aligned}}}
+    
+
+$$ {\begin{aligned}-{\frac {d[{\ce {A}}]}{dt}}&={k_{1}[{\ce {A}}]_{t}}-{k_{-1}[{\ce {P}}]_{t}}\\[8pt]-{\frac {dx}{dt}}&={k_{1}x}-{k_{-1}[{\ce {P}}]_{t}}\\[8pt]&={k_{1}x}-{k_{-1}({\ce {[A]0}}-x)}\\[8pt]&={(k_{1}+k_{-1})x}-{k_{-1}{\ce {[A]0}}}\end{aligned}} $$
+
   
 
 Since:
@@ -4530,7 +4851,10 @@ Since:
         
       
     
-    {\displaystyle k_{1}+k_{-1}=k_{-1}{\frac {{\ce {[A]0}}}{x_{e}}}}
+    
+
+$$ k_{1}+k_{-1}=k_{-1}{\frac {{\ce {[A]0}}}{x_{e}}} $$
+
   
 
 the reaction rate becomes:
@@ -4597,7 +4921,10 @@ the reaction rate becomes:
         )
       
     
-    {\displaystyle {\frac {dx}{dt}}={\frac {k_{-1}{\ce {[A]0}}}{x_{e}}}(x_{e}-x)}
+    
+
+$$ {\frac {dx}{dt}}={\frac {k_{-1}{\ce {[A]0}}}{x_{e}}}(x_{e}-x) $$
+
   
 
 which results in:
@@ -4686,13 +5013,16 @@ which results in:
         t
       
     
-    {\displaystyle \ln \left({\frac {{\ce {[A]0}}-[{\ce {A}}]_{e}}{[{\ce {A}}]_{t}-[{\ce {A}}]_{e}}}\right)=(k_{1}+k_{-1})t}
+    
+
+$$ \ln \left({\frac {{\ce {[A]0}}-[{\ce {A}}]_{e}}{[{\ce {A}}]_{t}-[{\ce {A}}]_{e}}}\right)=(k_{1}+k_{-1})t $$
+
   
 .
 A plot of the negative natural logarithm of the concentration of A in time minus the concentration at equilibrium versus time t gives a straight line with slope k1 + k−1. By measurement of [A]e and [P]e the values of K and the two reaction rate constants will be known.
 
-
 ### Generalization of simple example
+
 If the concentration at the time t = 0 is different from above, the simplifications above are invalid, and a system of differential equations must be solved. However, this system can also be solved exactly to yield the following generalized expressions:
 
   
@@ -5051,13 +5381,16 @@ If the concentration at the time t = 0 is different from above, the simplificati
         
       
     
-    {\displaystyle {\begin{aligned}&\left[{\ce {A}}\right]={\ce {[A]0}}{\frac {1}{k_{1}+k_{-1}}}\left(k_{-1}+k_{1}e^{-\left(k_{1}+k_{-1}\right)t}\right)+{\ce {[P]0}}{\frac {k_{-1}}{k_{1}+k_{-1}}}\left(1-e^{-\left(k_{1}+k_{-1}\right)t}\right)\\[8pt]&\left[{\ce {P}}\right]={\ce {[A]0}}{\frac {k_{1}}{k_{1}+k_{-1}}}\left(1-e^{-\left(k_{1}+k_{-1}\right)t}\right)+{\ce {[P]0}}{\frac {1}{k_{1}+k_{-1}}}\left(k_{1}+k_{-1}e^{-\left(k_{1}+k_{-1}\right)t}\right)\end{aligned}}}
+    
+
+$$ {\begin{aligned}&\left[{\ce {A}}\right]={\ce {[A]0}}{\frac {1}{k_{1}+k_{-1}}}\left(k_{-1}+k_{1}e^{-\left(k_{1}+k_{-1}\right)t}\right)+{\ce {[P]0}}{\frac {k_{-1}}{k_{1}+k_{-1}}}\left(1-e^{-\left(k_{1}+k_{-1}\right)t}\right)\\[8pt]&\left[{\ce {P}}\right]={\ce {[A]0}}{\frac {k_{1}}{k_{1}+k_{-1}}}\left(1-e^{-\left(k_{1}+k_{-1}\right)t}\right)+{\ce {[P]0}}{\frac {1}{k_{1}+k_{-1}}}\left(k_{1}+k_{-1}e^{-\left(k_{1}+k_{-1}\right)t}\right)\end{aligned}} $$
+
   
 
 When the equilibrium constant is close to unity and the reaction rates very fast for instance in conformational analysis of molecules, other methods are required for the determination of rate constants for instance by complete lineshape analysis in NMR spectroscopy.
 
-
 ## Consecutive reactions
+
 If the rate constants for the following reaction are 
   
     
@@ -5070,7 +5403,10 @@ If the rate constants for the following reaction are
         
       
     
-    {\displaystyle k_{1}}
+    
+
+$$ k_{1} $$
+
   
  and 
   
@@ -5084,7 +5420,10 @@ If the rate constants for the following reaction are
         
       
     
-    {\displaystyle k_{2}}
+    
+
+$$ k_{2} $$
+
   
 ; 
   
@@ -5099,7 +5438,10 @@ If the rate constants for the following reaction are
         
       
     
-    {\displaystyle {\ce {A -> B -> C}}}
+    
+
+$$ {\ce {A -> B -> C}} $$
+
   
 , then the rate equation is:
 
@@ -5138,7 +5480,10 @@ For reactant A:
         ]
       
     
-    {\displaystyle {\frac {d[{\ce {A}}]}{dt}}=-k_{1}[{\ce {A}}]}
+    
+
+$$ {\frac {d[{\ce {A}}]}{dt}}=-k_{1}[{\ce {A}}] $$
+
   
 
 For reactant B: 
@@ -5187,7 +5532,10 @@ For reactant B:
         ]
       
     
-    {\displaystyle {\frac {d[{\ce {B}}]}{dt}}=k_{1}[{\ce {A}}]-k_{2}[{\ce {B}}]}
+    
+
+$$ {\frac {d[{\ce {B}}]}{dt}}=k_{1}[{\ce {A}}]-k_{2}[{\ce {B}}] $$
+
   
 
 For product C: 
@@ -5224,7 +5572,10 @@ For product C:
         ]
       
     
-    {\displaystyle {\frac {d[{\ce {C}}]}{dt}}=k_{2}[{\ce {B}}]}
+    
+
+$$ {\frac {d[{\ce {C}}]}{dt}}=k_{2}[{\ce {B}}] $$
+
   
 
 With the individual concentrations scaled by the total population of reactants to become probabilities, linear systems of differential equations such as these can be formulated as a master equation. The differential equations can be solved analytically and the integrated rate equations are
@@ -5268,7 +5619,10 @@ With the individual concentrations scaled by the total population of reactants t
         
       
     
-    {\displaystyle [{\ce {A}}]={\ce {[A]0}}e^{-k_{1}t}}
+    
+
+$$ [{\ce {A}}]={\ce {[A]0}}e^{-k_{1}t} $$
+
   
 
   
@@ -5486,7 +5840,10 @@ With the individual concentrations scaled by the total population of reactants t
         
       
     
-    {\displaystyle \left[{\ce {B}}\right]={\begin{cases}{\ce {[A]0}}{\frac {k_{1}}{k_{2}-k_{1}}}\left(e^{-k_{1}t}-e^{-k_{2}t}\right)+{\ce {[B]0}}e^{-k_{2}t}&k_{1}\neq k_{2}\\{\ce {[A]0}}k_{1}te^{-k_{1}t}+{\ce {[B]0}}e^{-k_{1}t}&{\text{otherwise}}\\\end{cases}}}
+    
+
+$$ \left[{\ce {B}}\right]={\begin{cases}{\ce {[A]0}}{\frac {k_{1}}{k_{2}-k_{1}}}\left(e^{-k_{1}t}-e^{-k_{2}t}\right)+{\ce {[B]0}}e^{-k_{2}t}&k_{1}\neq k_{2}\\{\ce {[A]0}}k_{1}te^{-k_{1}t}+{\ce {[B]0}}e^{-k_{1}t}&{\text{otherwise}}\\\end{cases}} $$
+
   
 
   
@@ -5784,16 +6141,17 @@ With the individual concentrations scaled by the total population of reactants t
         
       
     
-    {\displaystyle \left[{\ce {C}}\right]={\begin{cases}{\ce {[A]0}}\left(1+{\frac {k_{1}e^{-k_{2}t}-k_{2}e^{-k_{1}t}}{k_{2}-k_{1}}}\right)+{\ce {[B]0}}\left(1-e^{-k_{2}t}\right)+{\ce {[C]0}}&k_{1}\neq k_{2}\\{\ce {[A]0}}\left(1-e^{-k_{1}t}-k_{1}te^{-k_{1}t}\right)+{\ce {[B]0}}\left(1-e^{-k_{1}t}\right)+{\ce {[C]0}}&{\text{otherwise}}\\\end{cases}}}
+    
+
+$$ \left[{\ce {C}}\right]={\begin{cases}{\ce {[A]0}}\left(1+{\frac {k_{1}e^{-k_{2}t}-k_{2}e^{-k_{1}t}}{k_{2}-k_{1}}}\right)+{\ce {[B]0}}\left(1-e^{-k_{2}t}\right)+{\ce {[C]0}}&k_{1}\neq k_{2}\\{\ce {[A]0}}\left(1-e^{-k_{1}t}-k_{1}te^{-k_{1}t}\right)+{\ce {[B]0}}\left(1-e^{-k_{1}t}\right)+{\ce {[C]0}}&{\text{otherwise}}\\\end{cases}} $$
+
   
 
 The steady state approximation leads to very similar results in an easier way.
 
-
 ## Parallel or competitive reactions
 
 When a substance reacts simultaneously to give two different products, a parallel or competitive reaction is said to take place.
-
 
 ### Two first order reactions
 
@@ -5807,7 +6165,10 @@ When a substance reacts simultaneously to give two different products, a paralle
         
       
     
-    {\displaystyle {\ce {A -> B}}}
+    
+
+$$ {\ce {A -> B}} $$
+
   
  and 
   
@@ -5820,7 +6181,10 @@ When a substance reacts simultaneously to give two different products, a paralle
         
       
     
-    {\displaystyle {\ce {A -> C}}}
+    
+
+$$ {\ce {A -> C}} $$
+
   
 , with constants 
   
@@ -5834,7 +6198,10 @@ When a substance reacts simultaneously to give two different products, a paralle
         
       
     
-    {\displaystyle k_{1}}
+    
+
+$$ k_{1} $$
+
   
  and 
   
@@ -5848,7 +6215,10 @@ When a substance reacts simultaneously to give two different products, a paralle
         
       
     
-    {\displaystyle k_{2}}
+    
+
+$$ k_{2} $$
+
   
  and rate equations 
   
@@ -5894,7 +6264,10 @@ When a substance reacts simultaneously to give two different products, a paralle
         ]
       
     
-    {\displaystyle -{\frac {d[{\ce {A}}]}{dt}}=(k_{1}+k_{2})[{\ce {A}}]}
+    
+
+$$ -{\frac {d[{\ce {A}}]}{dt}}=(k_{1}+k_{2})[{\ce {A}}] $$
+
   
 ;   
   
@@ -5930,7 +6303,10 @@ When a substance reacts simultaneously to give two different products, a paralle
         ]
       
     
-    {\displaystyle {\frac {d[{\ce {B}}]}{dt}}=k_{1}[{\ce {A}}]}
+    
+
+$$ {\frac {d[{\ce {B}}]}{dt}}=k_{1}[{\ce {A}}] $$
+
   
    and   
   
@@ -5966,7 +6342,10 @@ When a substance reacts simultaneously to give two different products, a paralle
         ]
       
     
-    {\displaystyle {\frac {d[{\ce {C}}]}{dt}}=k_{2}[{\ce {A}}]}
+    
+
+$$ {\frac {d[{\ce {C}}]}{dt}}=k_{2}[{\ce {A}}] $$
+
   
 
 The integrated rate equations are then 
@@ -6018,7 +6397,10 @@ The integrated rate equations are then
         
       
     
-    {\displaystyle [{\ce {A}}]={\ce {[A]0}}e^{-(k_{1}+k_{2})t}}
+    
+
+$$ [{\ce {A}}]={\ce {[A]0}}e^{-(k_{1}+k_{2})t} $$
+
   
 ; 
   
@@ -6102,7 +6484,10 @@ The integrated rate equations are then
         
       
     
-    {\displaystyle [{\ce {B}}]={\frac {k_{1}}{k_{1}+k_{2}}}{\ce {[A]0}}\left(1-e^{-(k_{1}+k_{2})t}\right)}
+    
+
+$$ [{\ce {B}}]={\frac {k_{1}}{k_{1}+k_{2}}}{\ce {[A]0}}\left(1-e^{-(k_{1}+k_{2})t}\right) $$
+
   
  and
 
@@ -6187,7 +6572,10 @@ The integrated rate equations are then
         
       
     
-    {\displaystyle [{\ce {C}}]={\frac {k_{2}}{k_{1}+k_{2}}}{\ce {[A]0}}\left(1-e^{-(k_{1}+k_{2})t}\right)}
+    
+
+$$ [{\ce {C}}]={\frac {k_{2}}{k_{1}+k_{2}}}{\ce {[A]0}}\left(1-e^{-(k_{1}+k_{2})t}\right) $$
+
   
 .
 One important relationship in this case is 
@@ -6231,11 +6619,14 @@ One important relationship in this case is
         
       
     
-    {\displaystyle {\frac {{\ce {[B]}}}{{\ce {[C]}}}}={\frac {k_{1}}{k_{2}}}}
+    
+
+$$ {\frac {{\ce {[B]}}}{{\ce {[C]}}}}={\frac {k_{1}}{k_{2}}} $$
+
   
 
-
 ### One first order and one second order reaction
+
 This can be the case when studying a bimolecular reaction and a simultaneous hydrolysis (which can be treated as pseudo order one) takes place: the hydrolysis complicates the study of the reaction kinetics, because some reactant is being "spent" in a parallel reaction. For example, A reacts with R to give our product C, but meanwhile the hydrolysis reaction takes away an amount of A to give B, a byproduct: 
   
     
@@ -6258,7 +6649,10 @@ This can be the case when studying a bimolecular reaction and a simultaneous hyd
         
       
     
-    {\displaystyle {\ce {A + H2O -> B}}}
+    
+
+$$ {\ce {A + H2O -> B}} $$
+
   
  and 
   
@@ -6273,7 +6667,10 @@ This can be the case when studying a bimolecular reaction and a simultaneous hyd
         
       
     
-    {\displaystyle {\ce {A + R -> C}}}
+    
+
+$$ {\ce {A + R -> C}} $$
+
   
 . The rate equations are: 
   
@@ -6338,7 +6735,10 @@ This can be the case when studying a bimolecular reaction and a simultaneous hyd
         ]
       
     
-    {\displaystyle {\frac {d[{\ce {B}}]}{dt}}=k_{1}{\ce {[A][H2O]}}=k_{1}'[{\ce {A}}]}
+    
+
+$$ {\frac {d[{\ce {B}}]}{dt}}=k_{1}{\ce {[A][H2O]}}=k_{1}'[{\ce {A}}] $$
+
   
  and 
   
@@ -6381,7 +6781,10 @@ This can be the case when studying a bimolecular reaction and a simultaneous hyd
         
       
     
-    {\displaystyle {\frac {d[{\ce {C}}]}{dt}}=k_{2}{\ce {[A][R]}}}
+    
+
+$$ {\frac {d[{\ce {C}}]}{dt}}=k_{2}{\ce {[A][R]}} $$
+
   
 , where 
   
@@ -6396,7 +6799,10 @@ This can be the case when studying a bimolecular reaction and a simultaneous hyd
         
       
     
-    {\displaystyle k_{1}'}
+    
+
+$$ k_{1}' $$
+
   
  is the pseudo first order constant.
 The integrated rate equation for the main product [C] is 
@@ -6496,7 +6902,10 @@ The integrated rate equation for the main product [C] is
         
       
     
-    {\displaystyle {\ce {[C]=[R]0}}\left[1-e^{-{\frac {k_{2}}{k_{1}'}}{\ce {[A]0}}\left(1-e^{-k_{1}'t}\right)}\right]}
+    
+
+$$ {\ce {[C]=[R]0}}\left[1-e^{-{\frac {k_{2}}{k_{1}'}}{\ce {[A]0}}\left(1-e^{-k_{1}'t}\right)}\right] $$
+
   
 , which is equivalent to 
   
@@ -6605,7 +7014,10 @@ The integrated rate equation for the main product [C] is
         
       
     
-    {\displaystyle \ln {\frac {{\ce {[R]0}}}{{\ce {[R]0-[C]}}}}={\frac {k_{2}{\ce {[A]0}}}{k_{1}'}}\left(1-e^{-k_{1}'t}\right)}
+    
+
+$$ \ln {\frac {{\ce {[R]0}}}{{\ce {[R]0-[C]}}}}={\frac {k_{2}{\ce {[A]0}}}{k_{1}'}}\left(1-e^{-k_{1}'t}\right) $$
+
   
 . Concentration of B is related to that of C through 
   
@@ -6669,7 +7081,10 @@ The integrated rate equation for the main product [C] is
         
       
     
-    {\displaystyle [{\ce {B}}]=-{\frac {k_{1}'}{k_{2}}}\ln \left(1-{\frac {\ce {[C]}}{\ce {[R]0}}}\right)}
+    
+
+$$ [{\ce {B}}]=-{\frac {k_{1}'}{k_{2}}}\ln \left(1-{\frac {\ce {[C]}}{\ce {[R]0}}}\right) $$
+
   
 
 The integrated equations were analytically obtained but during the process it was assumed that 
@@ -6717,12 +7132,15 @@ The integrated equations were analytically obtained but during the process it wa
         
       
     
-    {\displaystyle {\ce {[A]0}}-{\ce {[C]}}\approx {\ce {[A]0}}}
+    
+
+$$ {\ce {[A]0}}-{\ce {[C]}}\approx {\ce {[A]0}} $$
+
   
 . Therefore, previous equation for [C] can only be used for low concentrations of [C] compared to [A]0
 
-
 ## Stoichiometric reaction networks
+
 The most general description of a chemical reaction network considers a number 
   
     
@@ -6730,7 +7148,10 @@ The most general description of a chemical reaction network considers a number
         N
       
     
-    {\displaystyle N}
+    
+
+$$ N $$
+
   
  of distinct chemical species reacting via 
   
@@ -6739,7 +7160,10 @@ The most general description of a chemical reaction network considers a number
         R
       
     
-    {\displaystyle R}
+    
+
+$$ R $$
+
   
  reactions.
  The chemical equation of the 
@@ -6749,7 +7173,10 @@ The most general description of a chemical reaction network considers a number
         j
       
     
-    {\displaystyle j}
+    
+
+$$ j $$
+
   
 -th reaction can then be written in the generic form
 
@@ -6874,7 +7301,10 @@ The most general description of a chemical reaction network considers a number
         ,
       
     
-    {\displaystyle r_{1j}{\ce {X}}_{1}+r_{2j}{\ce {X}}_{2}+\cdots +r_{Nj}{\ce {X}}_{N}{\ce {->[k_{j}]}}\ p_{1j}{\ce {X}}_{1}+\ p_{2j}{\ce {X}}_{2}+\cdots +p_{Nj}{\ce {X}}_{N},}
+    
+
+$$ r_{1j}{\ce {X}}_{1}+r_{2j}{\ce {X}}_{2}+\cdots +r_{Nj}{\ce {X}}_{N}{\ce {->[k_{j}]}}\ p_{1j}{\ce {X}}_{1}+\ p_{2j}{\ce {X}}_{2}+\cdots +p_{Nj}{\ce {X}}_{N}, $$
+
   
 
 which is often written in the equivalent form
@@ -6953,7 +7383,10 @@ which is often written in the equivalent form
         .
       
     
-    {\displaystyle \sum _{i=1}^{N}r_{ij}{\ce {X}}_{i}{\ce {->[k_{j}]}}\sum _{i=1}^{N}\ p_{ij}{\ce {X}}_{i}.}
+    
+
+$$ \sum _{i=1}^{N}r_{ij}{\ce {X}}_{i}{\ce {->[k_{j}]}}\sum _{i=1}^{N}\ p_{ij}{\ce {X}}_{i}. $$
+
   
 
 Here
@@ -6964,7 +7397,10 @@ Here
         j
       
     
-    {\displaystyle j}
+    
+
+$$ j $$
+
   
  is the reaction index running from 1 to 
   
@@ -6973,7 +7409,10 @@ Here
         R
       
     
-    {\displaystyle R}
+    
+
+$$ R $$
+
   
 ,
 
@@ -6990,7 +7429,10 @@ Here
         
       
     
-    {\displaystyle {\ce {X}}_{i}}
+    
+
+$$ {\ce {X}}_{i} $$
+
   
  denotes the 
   
@@ -6999,7 +7441,10 @@ Here
         i
       
     
-    {\displaystyle i}
+    
+
+$$ i $$
+
   
 -th chemical species,
 
@@ -7014,7 +7459,10 @@ Here
         
       
     
-    {\displaystyle k_{j}}
+    
+
+$$ k_{j} $$
+
   
  is the rate constant of the 
   
@@ -7023,7 +7471,10 @@ Here
         j
       
     
-    {\displaystyle j}
+    
+
+$$ j $$
+
   
 -th reaction and
 
@@ -7039,7 +7490,10 @@ Here
         
       
     
-    {\displaystyle r_{ij}}
+    
+
+$$ r_{ij} $$
+
   
  and 
   
@@ -7054,7 +7508,10 @@ Here
         
       
     
-    {\displaystyle p_{ij}}
+    
+
+$$ p_{ij} $$
+
   
  are the stoichiometric coefficients of reactants and products, respectively.
 The rate of such a reaction can be inferred by the law of mass action
@@ -7116,7 +7573,10 @@ The rate of such a reaction can be inferred by the law of mass action
         
       
     
-    {\displaystyle f_{j}([\mathbf {X} ])=k_{j}\prod _{z=1}^{N}[{\ce {X}}_{z}]^{r_{zj}}}
+    
+
+$$ f_{j}([\mathbf {X} ])=k_{j}\prod _{z=1}^{N}[{\ce {X}}_{z}]^{r_{zj}} $$
+
   
 
 which denotes the flux of molecules per unit time and unit volume. Here 
@@ -7190,7 +7650,10 @@ which denotes the flux of molecules per unit time and unit volume. Here
         
       
     
-    {\displaystyle {\ce {([\mathbf {X} ])=([X1],[X2],\ldots ,[X_{\mathit {N}}])}}}
+    
+
+$$ {\ce {([\mathbf {X} ])=([X1],[X2],\ldots ,[X_{\mathit {N}}])}} $$
+
   
  is the vector of concentrations. This definition includes the elementary reactions:
 
@@ -7210,7 +7673,10 @@ for which
         0
       
     
-    {\displaystyle r_{zj}=0}
+    
+
+$$ r_{zj}=0 $$
+
   
  for all 
   
@@ -7219,7 +7685,10 @@ for which
         z
       
     
-    {\displaystyle z}
+    
+
+$$ z $$
+
   
 ,
 first order reactions
@@ -7238,7 +7707,10 @@ for which
         1
       
     
-    {\displaystyle r_{zj}=1}
+    
+
+$$ r_{zj}=1 $$
+
   
  for a single 
   
@@ -7247,7 +7719,10 @@ for which
         z
       
     
-    {\displaystyle z}
+    
+
+$$ z $$
+
   
 ,
 second order reactions
@@ -7266,7 +7741,10 @@ for which
         1
       
     
-    {\displaystyle r_{zj}=1}
+    
+
+$$ r_{zj}=1 $$
+
   
  for exactly two 
   
@@ -7275,7 +7753,10 @@ for which
         z
       
     
-    {\displaystyle z}
+    
+
+$$ z $$
+
   
 ; that is, a bimolecular reaction, or 
   
@@ -7292,7 +7773,10 @@ for which
         2
       
     
-    {\displaystyle r_{zj}=2}
+    
+
+$$ r_{zj}=2 $$
+
   
  for a single 
   
@@ -7301,7 +7785,10 @@ for which
         z
       
     
-    {\displaystyle z}
+    
+
+$$ z $$
+
   
 ; that is, a dimerization reaction.
 Each of these is discussed in detail below. One can define the stoichiometric matrix
@@ -7335,7 +7822,10 @@ Each of these is discussed in detail below. One can define the stoichiometric ma
         ,
       
     
-    {\displaystyle N_{ij}=p_{ij}-r_{ij},}
+    
+
+$$ N_{ij}=p_{ij}-r_{ij}, $$
+
   
 
 denoting the net extent of molecules of 
@@ -7345,7 +7835,10 @@ denoting the net extent of molecules of
         i
       
     
-    {\displaystyle i}
+    
+
+$$ i $$
+
   
  in reaction 
   
@@ -7354,7 +7847,10 @@ denoting the net extent of molecules of
         j
       
     
-    {\displaystyle j}
+    
+
+$$ j $$
+
   
 . The reaction rate equations can then be written in the general form
 
@@ -7417,7 +7913,10 @@ denoting the net extent of molecules of
         .
       
     
-    {\displaystyle {\frac {d[{\ce {X}}_{i}]}{dt}}=\sum _{j=1}^{R}N_{ij}f_{j}([\mathbf {X} ]).}
+    
+
+$$ {\frac {d[{\ce {X}}_{i}]}{dt}}=\sum _{j=1}^{R}N_{ij}f_{j}([\mathbf {X} ]). $$
+
   
 
 This is the product of the stoichiometric matrix and the vector of reaction rate functions.
@@ -7450,7 +7949,10 @@ Particular simple solutions exist in equilibrium,
         0
       
     
-    {\displaystyle {\frac {d[{\ce {X}}_{i}]}{dt}}=0}
+    
+
+$$ {\frac {d[{\ce {X}}_{i}]}{dt}}=0 $$
+
   
 , for systems composed of merely reversible reactions. In this case, the rate of the forward and backward reactions are equal, a principle called detailed balance. Detailed balance is a property of the stoichiometric matrix 
   
@@ -7465,7 +7967,10 @@ Particular simple solutions exist in equilibrium,
         
       
     
-    {\displaystyle N_{ij}}
+    
+
+$$ N_{ij} $$
+
   
  alone and does not depend on the particular form of the rate functions 
   
@@ -7479,12 +7984,15 @@ Particular simple solutions exist in equilibrium,
         
       
     
-    {\displaystyle f_{j}}
+    
+
+$$ f_{j} $$
+
   
 . All other cases where detailed balance is violated are commonly studied by flux balance analysis, which has been developed to understand metabolic pathways.
 
-
 ## General dynamics of unimolecular conversion
+
 For a general unimolecular reaction involving interconversion of 
   
     
@@ -7492,7 +8000,10 @@ For a general unimolecular reaction involving interconversion of
         N
       
     
-    {\displaystyle N}
+    
+
+$$ N $$
+
   
  different species, whose concentrations at time 
   
@@ -7501,7 +8012,10 @@ For a general unimolecular reaction involving interconversion of
         t
       
     
-    {\displaystyle t}
+    
+
+$$ t $$
+
   
  are denoted by 
   
@@ -7518,7 +8032,10 @@ For a general unimolecular reaction involving interconversion of
         )
       
     
-    {\displaystyle X_{1}(t)}
+    
+
+$$ X_{1}(t) $$
+
   
  through 
   
@@ -7535,7 +8052,10 @@ For a general unimolecular reaction involving interconversion of
         )
       
     
-    {\displaystyle X_{N}(t)}
+    
+
+$$ X_{N}(t) $$
+
   
 , an analytic form for the time-evolution of the species can be found. Let the rate constant of conversion from species 
   
@@ -7549,7 +8069,10 @@ For a general unimolecular reaction involving interconversion of
         
       
     
-    {\displaystyle X_{i}}
+    
+
+$$ X_{i} $$
+
   
  to species 
   
@@ -7563,7 +8086,10 @@ For a general unimolecular reaction involving interconversion of
         
       
     
-    {\displaystyle X_{j}}
+    
+
+$$ X_{j} $$
+
   
  be denoted as 
   
@@ -7578,7 +8104,10 @@ For a general unimolecular reaction involving interconversion of
         
       
     
-    {\displaystyle k_{ij}}
+    
+
+$$ k_{ij} $$
+
   
 , and construct a rate-constant matrix 
   
@@ -7587,7 +8116,10 @@ For a general unimolecular reaction involving interconversion of
         K
       
     
-    {\displaystyle K}
+    
+
+$$ K $$
+
   
  whose entries are the 
   
@@ -7602,7 +8134,10 @@ For a general unimolecular reaction involving interconversion of
         
       
     
-    {\displaystyle k_{ij}}
+    
+
+$$ k_{ij} $$
+
   
 .
 Also, let 
@@ -7654,7 +8189,10 @@ Also, let
         
       
     
-    {\displaystyle X(t)=(X_{1}(t),X_{2}(t),\ldots ,X_{N}(t))^{T}}
+    
+
+$$ X(t)=(X_{1}(t),X_{2}(t),\ldots ,X_{N}(t))^{T} $$
+
   
  be the vector of concentrations as a function of time.
 Let 
@@ -7681,7 +8219,10 @@ Let
         
       
     
-    {\displaystyle J=(1,1,1,\ldots ,1)^{T}}
+    
+
+$$ J=(1,1,1,\ldots ,1)^{T} $$
+
   
  be the vector of ones.
 Let 
@@ -7691,7 +8232,10 @@ Let
         I
       
     
-    {\displaystyle I}
+    
+
+$$ I $$
+
   
  be the 
   
@@ -7702,7 +8246,10 @@ Let
         N
       
     
-    {\displaystyle N\times N}
+    
+
+$$ N\times N $$
+
   
  identity matrix.
 Let 
@@ -7712,7 +8259,10 @@ Let
         diag
       
     
-    {\displaystyle \operatorname {diag} }
+    
+
+$$ \operatorname {diag} $$
+
   
  be the function that takes a vector and constructs a diagonal matrix whose on-diagonal entries are those of the vector.
 Let 
@@ -7732,7 +8282,10 @@ Let
         
       
     
-    {\displaystyle {\mathcal {L}}^{-1}}
+    
+
+$$ {\mathcal {L}}^{-1} $$
+
   
  be the inverse Laplace transform from 
   
@@ -7741,7 +8294,10 @@ Let
         s
       
     
-    {\displaystyle s}
+    
+
+$$ s $$
+
   
  to 
   
@@ -7750,7 +8306,10 @@ Let
         t
       
     
-    {\displaystyle t}
+    
+
+$$ t $$
+
   
 .
 Then the time-evolved state 
@@ -7763,7 +8322,10 @@ Then the time-evolved state
         )
       
     
-    {\displaystyle X(t)}
+    
+
+$$ X(t) $$
+
   
  is given by
 
@@ -7819,7 +8381,10 @@ Then the time-evolved state
         ,
       
     
-    {\displaystyle X(t)={\mathcal {L}}^{-1}[(sI+\operatorname {diag} (KJ)-K^{T})^{-1}X(0)],}
+    
+
+$$ X(t)={\mathcal {L}}^{-1}[(sI+\operatorname {diag} (KJ)-K^{T})^{-1}X(0)], $$
+
   
 
 thus providing the relation between the initial conditions of the system and its state at time 
@@ -7829,35 +8394,9 @@ thus providing the relation between the initial conditions of the system and its
         t
       
     
-    {\displaystyle t}
+    
+
+$$ t $$
+
   
 .
-
-
-## See also
-Michaelis–Menten kinetics
-Molecularity
-Petersen matrix
-Reaction–diffusion system
-Reactions on surfaces: rate equations for reactions where at least one of the reactants adsorbs onto a surface
-Reaction progress kinetic analysis
-Reaction rate
-Reaction rate constant
-Steady state approximation
-Gillespie algorithm
-Balance equation
-Belousov–Zhabotinsky reaction
-Lotka–Volterra equations
-Chemical kinetics
-
-
-## References
-
-
-### Books cited
-
-
-## External links
-Chemical kinetics, reaction rate, and order (needs flash player)
-Reaction kinetics, examples of important rate laws (lecture with audio).
-Rates of Reaction

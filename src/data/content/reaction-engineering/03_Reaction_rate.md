@@ -3,8 +3,8 @@
 The reaction rate or rate of reaction is the speed at which a chemical reaction takes place, defined as proportional to the increase in the concentration of a product per unit time and to the decrease in the concentration of a reactant per unit time. Reaction rates can vary dramatically. For example, the oxidative rusting of iron under Earth's atmosphere is a slow reaction that can take many years, but the combustion of cellulose in a fire is a reaction that takes place in fractions of a second. For most reactions, the rate decreases as the reaction proceeds. A reaction's rate can be determined by measuring the changes in concentration over time.
 Chemical kinetics is the part of physical chemistry that concerns how rates of chemical reactions are measured and predicted, and how reaction-rate data can be used to deduce probable reaction mechanisms. The concepts of chemical kinetics are applied in many disciplines, such as chemical engineering, enzymology and environmental engineering.
 
-
 ## Formal definition
+
 Consider a typical balanced chemical reaction:
 
   
@@ -51,7 +51,10 @@ Consider a typical balanced chemical reaction:
         
       
     
-    {\displaystyle {\ce {{\mathit {a}}\,A{}+{\mathit {b}}\,B->{\mathit {p}}\,P{}+{\mathit {q}}\,Q}}}
+    
+
+$$ {\ce {{\mathit {a}}\,A{}+{\mathit {b}}\,B->{\mathit {p}}\,P{}+{\mathit {q}}\,Q}} $$
+
   
 
 The lowercase letters (a, b, p, and q) represent stoichiometric coefficients, while the capital letters represent the reactants (A and B) and the products (P and Q).
@@ -63,7 +66,10 @@ the reaction rate
         ν
       
     
-    {\displaystyle \nu }
+    
+
+$$ \nu $$
+
   
  for a chemical reaction occurring in a closed system at constant volume, without a build-up of reaction intermediates, is defined as
 
@@ -168,7 +174,10 @@ the reaction rate
         ,
       
     
-    {\displaystyle \nu =-{\frac {1}{a}}{\frac {d[\mathrm {A} ]}{dt}}=-{\frac {1}{b}}{\frac {d[\mathrm {B} ]}{dt}}={\frac {1}{p}}{\frac {d[\mathrm {P} ]}{dt}}={\frac {1}{q}}{\frac {d[\mathrm {Q} ]}{dt}},}
+    
+
+$$ \nu =-{\frac {1}{a}}{\frac {d[\mathrm {A} ]}{dt}}=-{\frac {1}{b}}{\frac {d[\mathrm {B} ]}{dt}}={\frac {1}{p}}{\frac {d[\mathrm {P} ]}{dt}}={\frac {1}{q}}{\frac {d[\mathrm {Q} ]}{dt}}, $$
+
   
 
 where [X] denotes the concentration of the substance X= {A, B, P, Q}. The reaction rate thus defined has the units of mol/(L⋅s).
@@ -227,7 +236,10 @@ The rate of a reaction is always positive. A negative sign is present to indicat
         
       
     
-    {\displaystyle \nu =-{\tfrac {d[\mathrm {A} ]}{dt}}=-{\tfrac {1}{3}}{\tfrac {d[\mathrm {B} ]}{dt}}}
+    
+
+$$ \nu =-{\tfrac {d[\mathrm {A} ]}{dt}}=-{\tfrac {1}{3}}{\tfrac {d[\mathrm {B} ]}{dt}} $$
+
   
  is uniquely defined. An additional advantage of this definition is that for an elementary and irreversible reaction, 
   
@@ -236,7 +248,10 @@ The rate of a reaction is always positive. A negative sign is present to indicat
         ν
       
     
-    {\displaystyle \nu }
+    
+
+$$ \nu $$
+
   
  is equal to the product of the probability of overcoming the transition state activation energy and the number of times per second the transition state is approached by reactant molecules. When so defined, for an elementary and irreversible reaction, 
   
@@ -245,7 +260,10 @@ The rate of a reaction is always positive. A negative sign is present to indicat
         ν
       
     
-    {\displaystyle \nu }
+    
+
+$$ \nu $$
+
   
  is the rate of successful chemical reaction events leading to the product.
 The above definition is only valid for a single reaction, in a closed system of constant volume. If water is added to a pot containing salty water, the concentration of salt decreases, although there is no chemical reaction.
@@ -383,7 +401,10 @@ For an open system, the full mass balance must be taken into account:
         
       
     
-    {\displaystyle {\begin{alignedat}{3}F_{\mathrm {A} _{0}}&-F_{\mathrm {A} }&&+\displaystyle \int _{0}^{V}\nu \,dV&&=\displaystyle {\frac {dN_{\mathrm {A} }}{dt}},\\{\text{in}}&-{\text{out}}&&+\left(\textstyle {{\text{generation }}- \atop {\text{consumption}}}\right)&&={\text{accumulation}},\end{alignedat}}}
+    
+
+$$ {\begin{alignedat}{3}F_{\mathrm {A} _{0}}&-F_{\mathrm {A} }&&+\displaystyle \int _{0}^{V}\nu \,dV&&=\displaystyle {\frac {dN_{\mathrm {A} }}{dt}},\\{\text{in}}&-{\text{out}}&&+\left(\textstyle {{\text{generation }}- \atop {\text{consumption}}}\right)&&={\text{accumulation}},\end{alignedat}} $$
+
   
 
 where 
@@ -397,7 +418,10 @@ FA the outflow;
         ν
       
     
-    {\displaystyle \nu }
+    
+
+$$ \nu $$
+
   
  is the instantaneous reaction rate of A (in number concentration rather than molar) in a given differential volume, integrated over the entire system volume V at a given moment.
 When applied to the closed system at constant volume considered previously, this equation reduces to
@@ -424,7 +448,10 @@ When applied to the closed system at constant volume considered previously, this
         ,
       
     
-    {\displaystyle \nu ={\frac {d[A]}{dt}},}
+    
+
+$$ \nu ={\frac {d[A]}{dt}}, $$
+
   
 
 where the concentration [A] is related to the number of molecules NA by 
@@ -463,7 +490,10 @@ where the concentration [A] is related to the number of molecules NA by
         ,
       
     
-    {\displaystyle [\mathrm {A} ]={\tfrac {N_{\mathrm {A} }}{N_{0}V}},}
+    
+
+$$ [\mathrm {A} ]={\tfrac {N_{\mathrm {A} }}{N_{0}V}}, $$
+
   
  with N0 denoting the Avogadro constant.
 For a single reaction in a closed system of varying volume, the so-called rate of conversion can be used, in order to avoid handling concentrations. It is defined as the derivative of the extent of reaction with respect to time:
@@ -604,13 +634,15 @@ For a single reaction in a closed system of varying volume, the so-called rate o
         ,
       
     
-    {\displaystyle \nu ={\frac {d\xi }{dt}}={\frac {1}{\nu _{i}}}{\frac {dn_{i}}{dt}}={\frac {1}{\nu _{i}}}{\frac {d(C_{i}V)}{dt}}={\frac {1}{\nu _{i}}}\left(V{\frac {dC_{i}}{dt}}+C_{i}{\frac {dV}{dt}}\right),}
+    
+
+$$ \nu ={\frac {d\xi }{dt}}={\frac {1}{\nu _{i}}}{\frac {dn_{i}}{dt}}={\frac {1}{\nu _{i}}}{\frac {d(C_{i}V)}{dt}}={\frac {1}{\nu _{i}}}\left(V{\frac {dC_{i}}{dt}}+C_{i}{\frac {dV}{dt}}\right), $$
+
   
 
 where νi is the stoichiometric coefficient for substance i (equal to a, b, p, and q in the typical reaction above), V is the volume of reaction, and Ci is the concentration of substance i.
 When side products or reaction intermediates are formed, the IUPAC recommends the use of the terms the rate of increase of concentration and rate of the decrease of concentration for products and reactants respectively.
 Reaction rates may also be defined on a basis that is not the volume of the reactor. When a catalyst is used, the reaction rate may be stated on a catalyst mass [mol/(g⋅s)] or surface area [mol/(m2⋅s)] basis. If the basis is a specific catalyst site that may be rigorously counted by a specified method, the rate is given in units of s−1 and is called a "turnover frequency".
-
 
 ## Influencing factors
 
@@ -626,7 +658,6 @@ The kinetic isotope effect consists of a different reaction rate for the same mo
 In reactions on surfaces, which take place, for example, during heterogeneous catalysis, the rate of reaction increases as the surface area does. That is because more particles of the solid are exposed and can be hit by reactant molecules.
 Stirring can have a strong effect on the rate of reaction for heterogeneous reactions.
 Some reactions are limited by diffusion. All the factors that affect a reaction rate, except for concentration and reaction order, are taken into account in the reaction rate coefficient (the coefficient in the rate equation of the reaction).
-
 
 ## Rate equation
 
@@ -688,7 +719,10 @@ For a chemical reaction aA + bB → pP + qQ, the rate equation or rate law is a 
         .
       
     
-    {\displaystyle v=k[\mathrm {A} ]^{n}[\mathrm {B} ]^{m}-k_{r}[\mathrm {P} ]^{i}[\mathrm {Q} ]^{j}.}
+    
+
+$$ v=k[\mathrm {A} ]^{n}[\mathrm {B} ]^{m}-k_{r}[\mathrm {P} ]^{i}[\mathrm {Q} ]^{j}. $$
+
   
 
 For reactions that go to completion (which implies very small kr), or if only the initial rate is analyzed (with initial vanishing product concentrations), this simplifies to the commonly quoted form
@@ -725,7 +759,10 @@ For reactions that go to completion (which implies very small kr), or if only th
         .
       
     
-    {\displaystyle v=k(T)[\mathrm {A} ]^{n}[\mathrm {B} ]^{m}.}
+    
+
+$$ v=k(T)[\mathrm {A} ]^{n}[\mathrm {B} ]^{m}. $$
+
   
 
 For gas phase reaction the rate equation is often alternatively expressed in terms of partial pressures.
@@ -781,11 +818,14 @@ By using the mass balance for the system in which the reaction occurs, an expres
         .
       
     
-    {\displaystyle {\frac {d[\mathrm {P} ]}{dt}}=k(T)[\mathrm {A} ]^{n}[\mathrm {B} ]^{m}.}
+    
+
+$$ {\frac {d[\mathrm {P} ]}{dt}}=k(T)[\mathrm {A} ]^{n}[\mathrm {B} ]^{m}. $$
+
   
 
-
 ### Example of a complex reaction: hydrogen and nitric oxide
+
 For the reaction
 
   
@@ -872,7 +912,10 @@ For the reaction
         ,
       
     
-    {\displaystyle {\ce {2H2_{(g)}}}+{\ce {2NO_{(g)}-> N2_{(g)}}}+{\ce {2H2O_{(g)}}},}
+    
+
+$$ {\ce {2H2_{(g)}}}+{\ce {2NO_{(g)}-> N2_{(g)}}}+{\ce {2H2O_{(g)}}}, $$
+
   
 
 the observed rate equation (or rate expression) is
@@ -909,7 +952,10 @@ the observed rate equation (or rate expression) is
         .
       
     
-    {\displaystyle v=k[{\ce {H2}}][{\ce {NO}}]^{2}.}
+    
+
+$$ v=k[{\ce {H2}}][{\ce {NO}}]^{2}. $$
+
   
 
 As for many reactions, the experimental rate equation does not simply reflect the stoichiometric coefficients in the overall reaction: It is third order overall: first order in H2 and second order in NO, even though the stoichiometric coefficients of both reactants are equal to 2.
@@ -1140,7 +1186,10 @@ In chemical kinetics, the overall reaction rate is often explained using a mecha
         
       
     
-    {\displaystyle {\begin{array}{rll}1)&\quad {\ce {2NO_{(g)}<=> N2O2_{(g)}}}&({\text{fast equilibrium}})\\2)&\quad {\ce {N2O2 + H2 -> N2O + H2O}}&({\text{slow}})\\3)&\quad {\ce {N2O + H2 -> N2 + H2O}}&({\text{fast}}).\end{array}}}
+    
+
+$$ {\begin{array}{rll}1)&\quad {\ce {2NO_{(g)}<=> N2O2_{(g)}}}&({\text{fast equilibrium}})\\2)&\quad {\ce {N2O2 + H2 -> N2O + H2O}}&({\text{slow}})\\3)&\quad {\ce {N2O + H2 -> N2 + H2O}}&({\text{fast}}).\end{array}} $$
+
   
 
 Reactions 1 and 3 are very rapid compared to the second, so the slow reaction 2 is the rate-determining step. This is a bimolecular elementary reaction whose rate is given by the second-order equation
@@ -1194,7 +1243,10 @@ Reactions 1 and 3 are very rapid compared to the second, so the slow reaction 2 
         ,
       
     
-    {\displaystyle v=k_{2}[{\ce {H2}}][{\ce {N2O2}}],}
+    
+
+$$ v=k_{2}[{\ce {H2}}][{\ce {N2O2}}], $$
+
   
 
 where k2 is the rate constant for the second step.
@@ -1255,7 +1307,10 @@ However N2O2 is an unstable intermediate whose concentration is determined by th
         ,
       
     
-    {\displaystyle {\ce {[N2O2]={\mathit {K}}_{1}[NO]^{2}}},}
+    
+
+$$ {\ce {[N2O2]={\mathit {K}}_{1}[NO]^{2}}}, $$
+
   
  where K1 is the equilibrium constant of the first step. Substitution of this equation in the previous equation leads to a rate equation expressed in terms of the original reactants
 
@@ -1303,12 +1358,14 @@ However N2O2 is an unstable intermediate whose concentration is determined by th
         .
       
     
-    {\displaystyle v=k_{2}K_{1}[{\ce {H2}}][{\ce {NO}}]^{2}\,.}
+    
+
+$$ v=k_{2}K_{1}[{\ce {H2}}][{\ce {NO}}]^{2}\,. $$
+
   
 
 This agrees with the form of the observed rate equation if it is assumed that k = k2K1. In practice the rate equation is used to suggest possible mechanisms which predict a rate equation in agreement with experiment.
 The second molecule of H2 does not appear in the rate equation because it reacts in the third step, which is a rapid step after the rate-determining step, so that it does not affect the overall reaction rate.
-
 
 ## Temperature dependence
 
@@ -1346,7 +1403,10 @@ Each reaction rate coefficient k has a temperature dependency, which is usually 
         ,
       
     
-    {\displaystyle k=A\exp \left(-{\frac {E_{\text{a}}}{RT}}\right),}
+    
+
+$$ k=A\exp \left(-{\frac {E_{\text{a}}}{RT}}\right), $$
+
   
 
 where 
@@ -1386,7 +1446,10 @@ Since at temperature T the molecules have energies given by a Boltzmann distribu
         
       
     
-    {\displaystyle \exp \left({\tfrac {-E_{\text{a}}}{RT}}\right)}
+    
+
+$$ \exp \left({\tfrac {-E_{\text{a}}}{RT}}\right) $$
+
   
 .
 The values for A and Ea are dependent on the reaction. There are also more complex equations possible, which describe the temperature dependence of other rate constants that do not follow this pattern.
@@ -1396,8 +1459,8 @@ The minimum kinetic energy required for a reaction to occur is called the activa
 For a successful collision to take place, the collision geometry must be right, meaning the reactant molecules must face the right way, so the activated complex can be formed.
 A chemical reaction takes place only when the reacting particles collide. However, not all collisions are effective in causing the reaction. Products are formed only when the colliding particles possess a certain minimum energy called threshold energy. For a given reaction, the ratio of its rate constant at a higher temperature to its rate constant at a lower temperature is known as its temperature coefficient (Q). Q10 is commonly used as the ratio of rate constants that are 10 °C apart and is usually on the order of 2.
 
-
 ## Pressure dependence
+
 The pressure dependence of the rate constant for condensed-phase reactions (that is, when reactants and products are solids or liquid) is usually sufficiently weak in the range of pressures normally encountered in industry that it is neglected in practice.
 The pressure dependence of the rate constant is associated with the activation volume. For the reaction proceeding through an activation-state complex,
 
@@ -1468,7 +1531,10 @@ The pressure dependence of the rate constant is associated with the activation v
         ,
       
     
-    {\displaystyle {\ce {A + B <=>}}\ |{\ce {A}}\cdots {\ce {B}}|^{\ddagger }\ {\ce {-> P}},}
+    
+
+$$ {\ce {A + B <=>}}\ |{\ce {A}}\cdots {\ce {B}}|^{\ddagger }\ {\ce {-> P}}, $$
+
   
 
 the activation volume ΔV ‡ is
@@ -1532,7 +1598,10 @@ the activation volume ΔV ‡ is
         ,
       
     
-    {\displaystyle \Delta V^{\ddagger }={\bar {V}}_{\ddagger }-{\bar {V}}_{\mathrm {A} }-{\bar {V}}_{\mathrm {B} },}
+    
+
+$$ \Delta V^{\ddagger }={\bar {V}}_{\ddagger }-{\bar {V}}_{\mathrm {A} }-{\bar {V}}_{\mathrm {B} }, $$
+
   
 
 where V denotes the partial molar volume of a species, and ‡ (a double dagger) indicates the activation-state complex.
@@ -1591,27 +1660,11 @@ For the above reaction, one can expect the change of the reaction rate constant 
         .
       
     
-    {\displaystyle \left({\frac {\partial \ln k_{x}}{\partial P}}\right)_{T}=-{\frac {\Delta V^{\ddagger }}{RT}}.}
+    
+
+$$ \left({\frac {\partial \ln k_{x}}{\partial P}}\right)_{T}=-{\frac {\Delta V^{\ddagger }}{RT}}. $$
+
   
 
 In practice, the matter can be complicated because the partial molar volumes and the activation volume can themselves depend on pressure.
 Reactions can increase or decrease their rates with pressure, depending on the value of ΔV ‡. As an example of the possible magnitude of the pressure effect, some organic reactions were shown to double the reaction rate when the pressure was increased from atmospheric (0.1 MPa) to 50 MPa (which gives ΔV ‡ = −0.025 L/mol).
-
-
-## See also
-Diffusion-controlled reaction
-Dilution (equation)
-Isothermal microcalorimetry
-Rate of solution
-Steady state approximation
-
-
-## Notes
-
-
-## External links
-Chemical kinetics, reaction rate, and order (needs flash player)
-Reaction kinetics, examples of important rate laws (lecture with audio).
-Rates of reaction
-Overview of Bimolecular Reactions (Reactions involving two reactants)
-pressure dependence Can. J. Chem.

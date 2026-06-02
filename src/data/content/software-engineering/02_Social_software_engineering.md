@@ -13,6 +13,3 @@ Social inclusion: Software should enable social inclusion enforcing links and tr
 Thus, SSE can be defined as "the application of processes, methods, and tools to enable community-driven creation, management, deployment, and use of software in online environments".
 One of the main observations in the field of SSE is that the concepts, principles, and technologies made for social software applications are applicable to software development itself as software engineering is inherently a social activity. SSE is not limited to specific activities of software development. Accordingly, tools have been proposed supporting different parts of SSE, for instance, social system design or social requirements engineering. 
 Consequently vertical market software, such as software development tools, engineering tools, marketing tools or software that helps users in a decision-making process can profit from social components. Such vertical social software differentiates strongly in its user-base from traditional social software such as Yammer.
-
-
-## References

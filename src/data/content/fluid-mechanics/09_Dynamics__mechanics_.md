@@ -4,15 +4,11 @@ In physics, dynamics or classical dynamics is the study of forces and their effe
 It is a branch of classical mechanics, along with statics and kinematics.
 The fundamental principle of dynamics is linked to Newton's second law.
 
-
 ## Subdivisions
-
 
 ### Rigid bodies
 
-
 ### Fluids
-
 
 ## Applications
 
@@ -28,8 +24,8 @@ Orbital dynamics, the study of the motion of rockets and spacecraft
 Stellar dynamics, a description of the collective motion of stars
 Vehicle dynamics, the study of vehicles in motion
 
-
 ## Generalizations
+
 Non-classical dynamics include:
 
 System dynamics, the study of the behavior of complex systems
@@ -38,18 +34,3 @@ Quantum chromodynamics, a theory of the strong interaction (color force)
 Quantum electrodynamics, a description of how matter and light interact
 Relativistic dynamics, a combination of relativistic and quantum concepts
 Thermodynamics, the study of the relationships between heat and mechanical energy
-
-
-## See also
-
-Analytical dynamics
-Ballistics
-Contact dynamics
-Dynamical simulation
-Kinetics (physics)
-Multibody dynamics
-n-body problem
-Newtonian dynamics
-
-
-## References

@@ -7,13 +7,12 @@ A material property may also be a function of one or more independent variables,
 Equations describing relevant materials properties are often used to predict the attributes of a system.
 The properties are measured by standardized test methods. Many such methods have been documented by their respective user communities and published through the Internet; see ASTM International.
 
-
 ## Atomic properties
+
 Atomic mass: (applies to each element) the average mass of the atoms of an element, in daltons (Da), a.k.a. atomic mass units (amu).
 Atomic number: (applies to individual atoms or pure elements) the number of protons in each nucleus
 Relative atomic mass, a.k.a. atomic weight: (applies to individual isotopes or specific mixtures of isotopes of a given element) (no units)
 Standard atomic weight: the average relative atomic mass of a typical sample of the element (no units)
-
 
 ## Chemical properties
 
@@ -25,8 +24,8 @@ Specific internal surface area
 Surface energy
 Surface tension
 
-
 ## Electrical properties
+
 Capacitance
 Dielectric constant
 Dielectric strength
@@ -41,8 +40,8 @@ Piezoelectric constants
 Pyroelectricity
 Seebeck coefficient
 
-
 ## Magnetic properties
+
 Curie temperature
 Diamagnetism
 Hall coefficient
@@ -57,14 +56,14 @@ Piezomagnetism
 Pyromagnetic coefficient
 Spin Hall effect
 
-
 ## Manufacturing properties
+
 Castability: How easily a high-quality casting can be obtained from the material
 Machinability rating
 Machining speeds and feeds
 
-
 ## Mechanical properties
+
 Acoustical absorption
 Bulk modulus: Ratio of pressure to volumetric compression (GPa) or ratio of the infinitesimal pressure increase to the resulting relative decrease of the volume
 Coefficient of restitution: The ratio of the final to initial relative velocity between two objects after they collide. Range: 0–1, 1 for perfectly elastic collision.
@@ -102,7 +101,6 @@ Viscosity: A fluid's resistance to gradual deformation by tensile or shear stres
 Yield strength: The stress at which a material starts to yield plastically (MPa)
 Young's modulus: Ratio of linear stress to linear strain (MPa) (influences the stiffness and flexibility of an object)
 
-
 ## Optical properties
 
 Absorbance: How strongly a chemical attenuates light
@@ -118,15 +116,15 @@ Refractive index
 Scattering
 Transmittance
 
-
 ## Radiological properties
+
 Attenuation coefficients
 Half-life
 Neutron cross section
 Specific activity
 
-
 ## Thermal properties
+
 Phase diagram
 Boiling point
 Coefficient of thermal expansion
@@ -147,12 +145,3 @@ Thermal expansion
 Triple point
 Vapor pressure
 Specific heat capacity
-
-
-## See also
-Physical property
-Strength of materials
-List of thermodynamic properties
-
-
-## References

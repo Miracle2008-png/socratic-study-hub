@@ -2,19 +2,19 @@
 
 This article details the history of electrical engineering. 
 
-
 ## Ancient developments
+
 Long before any knowledge of electricity existed, people were aware of shocks from electric fish. Ancient Egyptian texts dating from 2750 BCE referred to these fish as the "Thunderer of the Nile", and described them as the "protectors" of all other fish. Electric fish were again reported millennia later by ancient Greek, Roman and Arabic naturalists and physicians. Several ancient writers, such as Pliny the Elder and Scribonius Largus, attested to the numbing effect of electric shocks delivered by electric catfish and electric rays, and knew that such shocks could travel along conducting objects. Patients with ailments such as gout or headache were directed to touch electric fish in the hope that the powerful jolt might cure them. Possibly the earliest and nearest approach to the discovery of the identity of lightning, and electricity from any other source, is to be attributed to the Arabs, who before the 15th century had the Arabic word for lightning ra‘ad (رعد‎) applied to the electric ray.
 Ancient cultures around the Mediterranean knew that certain objects, such as rods of amber, could be rubbed with cat's fur to attract light objects like feathers. Thales of Miletus, an ancient Greek philosopher, writing at around 600 BCE, described a form of static electricity, noting that rubbing fur on various substances, such as amber, would cause a particular attraction between the two. He noted that the amber buttons could attract light objects such as hair and that if they rubbed the amber for long enough they could even get a spark to jump.
 An object found in Iraq in 1938, dated to about 250 BCE and called the Baghdad Battery, resembles a galvanic cell and is claimed by some to have been used for electroplating in Mesopotamia, although there is no evidence for this.
 
-
 ## 17th-century developments
+
 Electricity would remain little more than an intellectual curiosity for millennia. In 1600, the English scientist, William Gilbert extended the study of Cardano on electricity and magnetism, distinguishing the lodestone effect from static electricity produced by rubbing amber. He coined the Neo-Latin word electricus ("of amber" or "like amber", from ήλεκτρον [elektron], the Greek word for "amber") to refer to the property of attracting small objects after being rubbed. This association gave rise to the English words "electric" and "electricity", which made their first appearance in print in Thomas Browne's Pseudodoxia Epidemica of 1646.
 Further work was conducted by Otto von Guericke who showed electrostatic repulsion. Robert Boyle also published work.
 
-
 ## 18th-century developments
+
 Though electrical phenomena had been known for centuries, in the 18th century, the systematic study of electricity became known as "the youngest of the sciences", and the public became electrified by the newest discoveries in the field.
 By 1705, Francis Hauksbee had discovered that if he placed a small amount of mercury in the glass of his modified version of Otto von Guericke's generator, evacuated the air from it to create a mild vacuum and rubbed the ball to build up a charge, a glow was visible if he placed his hand on the outside of the ball. This glow was bright enough to read by. It seemed to be similar to St. Elmo's Fire. This effect later became the basis of the gas-discharge lamp, which led to neon lighting and mercury vapor lamps. In 1706 he produced an 'Influence machine' to generate this effect. He was elected a Fellow of the Royal Society the same year.
 
@@ -23,7 +23,6 @@ Stephen Gray discovered the importance of insulators and conductors. C. F. du Fa
 
 In the 18th century, Benjamin Franklin conducted extensive research in electricity, selling his possessions to fund his work. In June 1752 he is reputed to have attached a metal key to the bottom of a dampened kite string and flown the kite in a storm-threatened sky. A succession of sparks jumping from the key to the back of his hand showed that lightning was indeed electrical in nature. He also explained the apparently paradoxical behavior of the Leyden jar as a device for storing large amounts of electrical charge, by coming up with the single fluid, two states theory of electricity.
 In 1791, Italian Luigi Galvani published his discovery of bioelectricity, demonstrating that electricity was the medium by which nerve cells passed signals to the muscles. Alessandro Volta's battery, or voltaic pile, of 1800, made from alternating layers of zinc and copper, provided scientists with a more reliable source of electrical energy than the electrostatic machines previously used.
-
 
 ## 19th-century developments
 
@@ -42,32 +41,30 @@ During this period commercial use of electricity increased dramatically. Startin
 "By the mid-1890s the four "Maxwell equations" were recognized as the foundation of one of the strongest and most successful theories in all of physics; they had taken their place as companions, even rivals, to Newton's laws of mechanics. The equations were by then also being put to practical use, most dramatically in the emerging new technology of radio communications, but also in the telegraph, telephone, and electric power industries." By the end of the 19th century, figures in the progress of electrical engineering were beginning to emerge.
 Charles Proteus Steinmetz helped foster the development of alternating current that made possible the expansion of the electric power industry in the United States, formulating mathematical theories for engineers.
 
-
 ### Emergence of radio and electronics
 
 During the development of radio, many scientists and inventors contributed to radio technology and electronics. In his classic UHF experiments of 1888, Heinrich Hertz demonstrated the existence of electromagnetic waves (radio waves) leading many inventors and scientists to try to adapt them to commercial applications, such as Guglielmo Marconi (1895) and Alexander Popov (1896).
 Millimetre wave communication was first investigated by Jagadish Chandra Bose during 1894–1896, when he reached an extremely high frequency of up to 60 GHz in his experiments. He also introduced the use of semiconductor junctions to detect radio waves, when he patented the radio crystal detector in 1901.
 
-
 ## 20th-century developments
+
 John Fleming invented the first radio tube, the diode, in 1904.
 Reginald Fessenden recognized that a continuous wave needed to be generated to make speech transmission possible, and by the end of 1906 he sent the first radio broadcast of voice. Also in 1906, Robert von Lieben and Lee De Forest independently developed the amplifier tube, called the triode. Edwin Howard Armstrong enabling technology for electronic television, in 1931.
 In the early 1920s, there was a growing interest in the development of domestic applications for electricity. Public interest led to exhibitions such featuring "homes of the future" and in the UK, the Electrical Association for Women was established with Caroline Haslett as its director in 1924 to encourage women to become involved in electrical engineering.
 
-
 ### World War II years
+
 The second world war saw tremendous advances in the field of electronics; especially in radar and with the invention of the magnetron by Randall and Boot at the University of Birmingham in 1940. Radio location, radio communication and radio guidance of aircraft were all developed at this time. An early electronic computing device, Colossus was built by Tommy Flowers of the GPO to decipher the coded messages of the German Lorenz cipher machine. Also developed at this time were advanced clandestine radio transmitters and receivers for use by secret agents.
 An American invention at the time was a device to scramble the telephone calls between Winston Churchill and Franklin D. Roosevelt. This was called the Green Hornet system and worked by inserting noise into the signal. The noise was then extracted at the receiving end. This system was never broken by the Germans.
 A great amount of work was undertaken in the United States as part of the War Training Program in the areas of radio direction finding, pulsed linear networks, frequency modulation, vacuum tube circuits, transmission line theory and fundamentals of electromagnetic engineering. These studies were published shortly after the war in what became known as the 'Radio Communication Series' published by McGraw-Hill in 1946.
 In 1941 Konrad Zuse presented the Z3, the world's first fully functional and programmable computer.
 
-
 ### Post-war years
+
 Prior to the Second World War, the subject was commonly known as 'radio engineering' and was primarily restricted to aspects of communications and radar, commercial radio and early television. At this time, the study of radio engineering at universities could only be undertaken as part of a physics degree.
 Later, in post war years, as consumer devices began to be developed, the field broadened to include modern TV, audio systems, Hi-Fi and latterly computers and microprocessors. 
 In 1946 the ENIAC (Electronic Numerical Integrator and Computer) of John Presper Eckert and John Mauchly followed, beginning the computing era. The arithmetic performance of these machines allowed engineers to develop completely new technologies and achieve new objectives, including the Apollo missions and the NASA Moon landing.
 In the mid-to-late 1950s, the term radio engineering gradually gave way to the name electronics engineering, which then became a stand-alone university degree subject, usually taught alongside electrical engineering with which it had become associated due to some similarities.
-
 
 ### Solid-state electronics
 
@@ -80,24 +77,3 @@ The MOSFET was the first truly compact transistor that could be miniaturised and
 The MOSFET made it possible to build high-density integrated circuit chips. The earliest experimental MOS IC chip to be fabricated was built by Fred Heiman and Steven Hofstein at RCA Laboratories in 1962. MOS technology enabled Moore's law, the doubling of transistors on an IC chip every two years, predicted by Gordon Moore in 1965. Silicon-gate MOS technology was developed by Federico Faggin at Fairchild in 1968. Since then, the MOSFET has been the basic building block of modern electronics. The mass-production of silicon MOSFETs and MOS integrated circuit chips, along with continuous MOSFET scaling miniaturization at an exponential pace (as predicted by Moore's law), has since led to revolutionary changes in technology, economy, culture and thinking.
 The Apollo program which culminated in landing astronauts on the Moon with Apollo 11 in 1969 was enabled by NASA's adoption of advances in semiconductor electronic technology, including MOSFETs in the Interplanetary Monitoring Platform (IMP) and silicon integrated circuit chips in the Apollo Guidance Computer (AGC).
 The development of MOS integrated circuit technology in the 1960s led to the invention of the microprocessor in the early 1970s. The first single-chip microprocessor was the Intel 4004, released in 1971. The Intel 4004 was designed and realized by Federico Faggin at Intel with his silicon-gate MOS technology, along with Intel's Marcian Hoff and Stanley Mazor and Busicom's Masatoshi Shima. This ignited the development of the personal computer. The 4004, a 4-bit processor, was followed in 1973 by the Intel 8080, an 8-bit processor, which made possible the building of the first personal computer, the Altair 8800.
-
-
-## See also
-History of electronic engineering
-History of electromagnetic theory
-History of radio
-
-
-## References
-
-
-## Sources
- This article incorporates text from a publication now in the public domain: Burnley, James (1887). "Cooke, William Fothergill". In Stephen, Leslie (ed.). Dictionary of National Biography. Vol. 12. London: Smith, Elder & Co. pp. 102–103.
-
-
-## External links
-
-Nobel Prize Awards Related to Electrical Engineering (relevant patents included)
-Shock and Awe: The Story of Electricity – Jim Al-Khalili BBC Horizon
-Electrickery, BBC Radio 4 discussion with Simon Schaffer, Patricia Fara & Iwan Morus (In Our Time, November 4, 2004)
-Electricity for Boys (1914) by James Slough Zerbe

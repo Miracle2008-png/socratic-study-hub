@@ -4,14 +4,8 @@ In materials science, segregation is the enrichment of atoms, ions, or molecules
 Segregation can occur in various materials classes. In polycrystalline solids, segregation occurs at defects, such as dislocations, grain boundaries, stacking faults, or the interface between two phases. In liquid solutions, chemical gradients exist near second phases and surfaces due to combinations of chemical and electrical effects.
 Segregation, which occurs in well-equilibrated systems due to the intrinsic chemical properties of the system, is termed equilibrium segregation. Segregation that occurs due to the processing history of the sample (but that would disappear at long times) is termed non-equilibrium segregation.
 
-
-## History
-Equilibrium segregation is associated with the lattice disorder at interfaces, where there are sites of energy different from those within the lattice at which the solute atoms can deposit themselves. The equilibrium segregation is so termed because the solute atoms segregate themselves to the interface or surface in accordance with the statistics of thermodynamics in order to minimize the overall free energy of the system. This sort of partitioning of solute atoms between the grain boundary and the lattice was predicted by McLean in 1957.
-Non-equilibrium segregation, first theorized by Westbrook in 1964, occurs as a result of solutes coupling to vacancies which are moving to grain boundary sources or sinks during quenching or application of stress. It can also occur as a result of solute pile-up at a moving interface.
-There are two main features of non-equilibrium segregation, by which it is most easily distinguished from equilibrium segregation. In the non-equilibrium effect, the magnitude of the segregation increases with increasing temperature, and the alloy can be homogenized without further quenching because its lowest energy state corresponds to a uniform solute distribution. In contrast, the equilibrium segregated state, by definition, is the lowest energy state in a system that exhibits equilibrium segregation, and the extent of the segregation effect decreases with increasing temperature. The details of non-equilibrium segregation are not going to be discussed here, but can be found in the review by Harries and Marwick.
-
-
 ## Importance
+
 Segregation of a solute to surfaces and grain boundaries in a solid produces a section of material with a discrete composition and its own set of properties that can have important (and often deleterious) effects on the overall properties of the material. These 'zones' with an increased concentration of solute can be thought of as the cement between the bricks of a building. The structural integrity of the building depends not only on the material properties of the brick, but also greatly on the properties of the long lines of mortar in between.
 
 Segregation to grain boundaries, for example, can lead to grain boundary fracture as a result of temper brittleness, creep embrittlement, stress relief cracking of weldments, hydrogen embrittlement, environmentally assisted fatigue, grain boundary corrosion, and some kinds of intergranular stress corrosion cracking. A very interesting and important field of study of impurity segregation processes involves AES of grain boundaries of materials. This technique includes tensile fracturing of special specimens directly inside the UHV chamber of the Auger Electron Spectrometer that was developed by Ilyin.
@@ -20,12 +14,12 @@ Segregation to free surfaces also has important consequences involving the purit
 
 While the intergranular failure problems noted above are sometimes severe, they are rarely the cause of major service failures (in structural steels, for example), as suitable safety margins are included in the designs. Perhaps the greater concern is that with the development of new technologies and materials with new and more extensive mechanical property requirements, and with the increasing impurity contents as a result of the increased recycling of materials, we may see intergranular failure in materials and situations not seen currently. Thus, a greater understanding of all of the mechanisms surrounding segregation might lead to being able to control these effects in the future. Modeling potentials, experimental work, and related theories are still being developed to explain these segregation mechanisms for increasingly complex systems.
 
-
 ## Theories of Segregation
+
 Several theories describe the equilibrium segregation activity in materials. The adsorption theories for the solid-solid interface and the solid-vacuum surface are direct analogues of theories well known in the field of gas adsorption on the free surfaces of solids.
 
-
 ### Langmuir–McLean theory for surface and grain boundary segregation in binary systems
+
 This is the earliest theory specifically for grain boundaries, in which McLean uses a model of P solute atoms distributed at random amongst N lattice sites and p solute atoms distributed at random amongst n independent grain boundary sites. The total free energy due to the solute atoms is then:
 
   
@@ -72,7 +66,10 @@ This is the earliest theory specifically for grain boundaries, in which McLean u
         ]
       
     
-    {\displaystyle G=pe+PE-kT[\ln(n!N!)-\ln(n-p)!p!(N-P)!P!]}
+    
+
+$$ G=pe+PE-kT[\ln(n!N!)-\ln(n-p)!p!(N-P)!P!] $$
+
   
 
 where E and e are energies of the solute atom in the lattice and in the grain boundary, respectively and the kln term represents the configurational entropy of the arrangement of the solute atoms in the bulk and grain boundary. McLean used basic statistical mechanics to find the fractional monolayer of segregant, 
@@ -87,7 +84,10 @@ where E and e are energies of the solute atom in the lattice and in the grain bo
         
       
     
-    {\displaystyle X_{b}}
+    
+
+$$ X_{b} $$
+
   
 , at which the system energy was minimized (at the equilibrium state), differentiating G with respect to p, noting that the sum of p and P is constant. Here the grain boundary analogue of Langmuir adsorption at free surfaces becomes:
 
@@ -164,7 +164,10 @@ where E and e are energies of the solute atom in the lattice and in the grain bo
         
       
     
-    {\displaystyle {\frac {X_{b}}{X_{b}^{0}-X_{b}}}={\frac {X_{c}}{1-X_{c}}}\exp \left({\frac {-\Delta G}{RT}}\right)}
+    
+
+$$ {\frac {X_{b}}{X_{b}^{0}-X_{b}}}={\frac {X_{c}}{1-X_{c}}}\exp \left({\frac {-\Delta G}{RT}}\right) $$
+
   
 
 Here, 
@@ -182,7 +185,10 @@ Here,
         
       
     
-    {\displaystyle X_{b}^{0}}
+    
+
+$$ X_{b}^{0} $$
+
   
  is the fraction of the grain boundary monolayer available for segregated atoms at saturation, 
   
@@ -196,7 +202,10 @@ Here,
         
       
     
-    {\displaystyle X_{b}}
+    
+
+$$ X_{b} $$
+
   
  is the actual fraction covered with segregant, 
   
@@ -210,7 +219,10 @@ Here,
         
       
     
-    {\displaystyle X_{c}}
+    
+
+$$ X_{c} $$
+
   
  is the bulk solute molar fraction, and 
   
@@ -220,7 +232,10 @@ Here,
         G
       
     
-    {\displaystyle \Delta G}
+    
+
+$$ \Delta G $$
+
   
  is the free energy of segregation per mole of solute.
 Values of 
@@ -231,7 +246,10 @@ Values of
         G
       
     
-    {\displaystyle \Delta G}
+    
+
+$$ \Delta G $$
+
   
  were estimated by McLean using the elastic strain energy, 
   
@@ -245,7 +263,10 @@ Values of
         
       
     
-    {\displaystyle E_{\text{el}}}
+    
+
+$$ E_{\text{el}} $$
+
   
 , released by the segregation of solute atoms. The solute atom is represented by an elastic sphere fitted into a spherical hole in an elastic matrix continuum. The elastic energy associated with the solute atom is given by:
 
@@ -318,7 +339,10 @@ Values of
         
       
     
-    {\displaystyle E_{\text{el}}={\frac {24\pi \mathrm {K} \mu _{0}r_{0}(r_{1}-r_{0})^{2}}{3\mathrm {K} +4\mu _{0}}}}
+    
+
+$$ E_{\text{el}}={\frac {24\pi \mathrm {K} \mu _{0}r_{0}(r_{1}-r_{0})^{2}}{3\mathrm {K} +4\mu _{0}}} $$
+
   
 
 where 
@@ -330,7 +354,10 @@ where
         
       
     
-    {\displaystyle \mathrm {K} }
+    
+
+$$ \mathrm {K} $$
+
   
  is the solute bulk modulus, 
   
@@ -345,7 +372,10 @@ where
         ,
       
     
-    {\displaystyle \mu _{0},}
+    
+
+$$ \mu _{0}, $$
+
   
  is the matrix shear modulus, and 
   
@@ -360,7 +390,10 @@ where
         ,
       
     
-    {\displaystyle r_{0},}
+    
+
+$$ r_{0}, $$
+
   
  and 
   
@@ -375,12 +408,15 @@ where
         ,
       
     
-    {\displaystyle r_{1},}
+    
+
+$$ r_{1}, $$
+
   
  are the atomic radii of the matrix and impurity atoms, respectively. This method gives values correct to within a factor of two (as compared with experimental data for grain boundary segregation), but a greater accuracy is obtained using the method of Seah and Hondros, described in the following section.
 
-
 ### Free energy of grain boundary segregation in binary systems
+
 Using truncated BET theory (the gas adsorption theory developed by Brunauer, Emmett, and Teller), Seah and Hondros write the solid-state analogue as:
 
   
@@ -437,7 +473,10 @@ Using truncated BET theory (the gas adsorption theory developed by Brunauer, Emm
         exp
       
     
-    {\displaystyle {\frac {X_{b}}{X_{b}^{0}-X_{b}}}={\frac {X_{c}}{X_{c}^{0}}}\exp }
+    
+
+$$ {\frac {X_{b}}{X_{b}^{0}-X_{b}}}={\frac {X_{c}}{X_{c}^{0}}}\exp $$
+
   
  
   
@@ -465,7 +504,10 @@ Using truncated BET theory (the gas adsorption theory developed by Brunauer, Emm
         
       
     
-    {\displaystyle \left({\frac {-\Delta G'}{RT}}\right)}
+    
+
+$$ \left({\frac {-\Delta G'}{RT}}\right) $$
+
   
 
 where 
@@ -490,7 +532,10 @@ where
         
       
     
-    {\displaystyle \Delta G=\Delta G'+\Delta G_{\text{sol}}}
+    
+
+$$ \Delta G=\Delta G'+\Delta G_{\text{sol}} $$
+
   
 
   
@@ -507,7 +552,10 @@ where
         
       
     
-    {\displaystyle X_{c}^{0}}
+    
+
+$$ X_{c}^{0} $$
+
   
  is the solid solubility, which is known for many elements (and can be found in metallurgical handbooks). In the dilute limit, a slightly soluble substance has 
   
@@ -548,7 +596,10 @@ where
         
       
     
-    {\displaystyle X_{c}^{0}=\exp \left({\frac {\Delta G_{\text{sol}}}{RT}}\right)}
+    
+
+$$ X_{c}^{0}=\exp \left({\frac {\Delta G_{\text{sol}}}{RT}}\right) $$
+
   
 , so the above equation reduces to that found with the Langmuir-McLean theory. This equation is only valid for 
   
@@ -572,7 +623,10 @@ where
         
       
     
-    {\displaystyle X_{c}\leq X_{c}^{0}}
+    
+
+$$ X_{c}\leq X_{c}^{0} $$
+
   
 . If there is an excess of solute such that a second phase appears, the solute content is limited to 
   
@@ -589,7 +643,10 @@ where
         
       
     
-    {\displaystyle X_{c}^{0}}
+    
+
+$$ X_{c}^{0} $$
+
   
  and the equation becomes
 
@@ -649,13 +706,16 @@ where
         
       
     
-    {\displaystyle {\frac {X_{b}}{X_{b}^{0}-X_{b}}}=\exp \left({\frac {-\Delta G'}{RT}}\right)}
+    
+
+$$ {\frac {X_{b}}{X_{b}^{0}-X_{b}}}=\exp \left({\frac {-\Delta G'}{RT}}\right) $$
+
   
 
 This theory for grain boundary segregation, derived from truncated BET theory, provides excellent agreement with experimental data obtained by Auger electron spectroscopy and other techniques.
 
-
 ### More complex systems
+
 Other models exist to model more complex binary systems. The above theories operate on the assumption that the segregated atoms are non-interacting. If, in a binary system, adjacent adsorbate atoms are allowed an interaction energy 
   
     
@@ -664,7 +724,10 @@ Other models exist to model more complex binary systems. The above theories oper
         
       
     
-    {\displaystyle \omega \,}
+    
+
+$$ \omega \, $$
+
   
 , such that they can attract (when 
   
@@ -674,7 +737,10 @@ Other models exist to model more complex binary systems. The above theories oper
         
       
     
-    {\displaystyle \omega \,}
+    
+
+$$ \omega \, $$
+
   
  is negative) or repel (when 
   
@@ -684,7 +750,10 @@ Other models exist to model more complex binary systems. The above theories oper
         
       
     
-    {\displaystyle \omega \,}
+    
+
+$$ \omega \, $$
+
   
  is positive) each other, the solid-state analogue of the Fowler adsorption theory is developed as
 
@@ -790,7 +859,10 @@ Other models exist to model more complex binary systems. The above theories oper
         .
       
     
-    {\displaystyle {\frac {X_{b}}{X_{b}^{0}-X_{b}}}={\frac {X_{c}}{1-X_{c}}}\exp \left[{\frac {-\Delta G-Z_{1}\omega \,{\frac {X_{b}}{X_{b}^{0}}}}{RT}}\right].}
+    
+
+$$ {\frac {X_{b}}{X_{b}^{0}-X_{b}}}={\frac {X_{c}}{1-X_{c}}}\exp \left[{\frac {-\Delta G-Z_{1}\omega \,{\frac {X_{b}}{X_{b}^{0}}}}{RT}}\right]. $$
+
   
 
 When 
@@ -801,7 +873,10 @@ When
         
       
     
-    {\displaystyle \omega \,}
+    
+
+$$ \omega \, $$
+
   
  is zero, this theory reduces to that of Langmuir and McLean. However, as 
   
@@ -811,14 +886,17 @@ When
         
       
     
-    {\displaystyle \omega \,}
+    
+
+$$ \omega \, $$
+
   
  becomes more negative, the segregation shows progressively sharper rises as the temperature falls until eventually the rise in segregation is discontinuous at a certain temperature, as shown in the following figure.
 
 Guttman, in 1975, extended the Fowler theory to allow for interactions between two co-segregating species in multicomponent systems. This modification is vital to explaining the segregation behavior that results in the intergranular failures of engineering materials. More complex theories are detailed in the work by Guttmann and McLean and Guttmann.
 
-
 ### The free energy of surface segregation in binary systems
+
 The Langmuir–McLean equation for segregation, when using the regular solution model for a binary system, is valid for surface segregation (although sometimes the equation will be written replacing 
   
     
@@ -831,7 +909,10 @@ The Langmuir–McLean equation for segregation, when using the regular solution 
         
       
     
-    {\displaystyle X_{b}}
+    
+
+$$ X_{b} $$
+
   
  with 
   
@@ -845,7 +926,10 @@ The Langmuir–McLean equation for segregation, when using the regular solution 
         
       
     
-    {\displaystyle X_{s}}
+    
+
+$$ X_{s} $$
+
   
 ). The free energy of surface segregation is 
   
@@ -873,7 +957,10 @@ The Langmuir–McLean equation for segregation, when using the regular solution 
         S
       
     
-    {\displaystyle \Delta G_{s}=\Delta H_{s}-T\,\Delta S}
+    
+
+$$ \Delta G_{s}=\Delta H_{s}-T\,\Delta S $$
+
   
 . The enthalpy is given by
 
@@ -1054,7 +1141,10 @@ The Langmuir–McLean equation for segregation, when using the regular solution 
         
       
     
-    {\displaystyle -\Delta H_{s}=\gamma _{0}^{s}-\gamma _{1}^{s}-{\frac {2H_{m}}{ZX_{c}(1-X_{c})}}\left[Z_{1}(X_{c}-X_{s})+Z_{v}\left(X_{c}-{\frac {1}{2}}\right)\right]+{\frac {24\pi \mathrm {K} \mu _{0}r_{0}(r_{1}-r_{0})^{2}}{3\mathrm {K} +4\mu _{0}}}}
+    
+
+$$ -\Delta H_{s}=\gamma _{0}^{s}-\gamma _{1}^{s}-{\frac {2H_{m}}{ZX_{c}(1-X_{c})}}\left[Z_{1}(X_{c}-X_{s})+Z_{v}\left(X_{c}-{\frac {1}{2}}\right)\right]+{\frac {24\pi \mathrm {K} \mu _{0}r_{0}(r_{1}-r_{0})^{2}}{3\mathrm {K} +4\mu _{0}}} $$
+
   
 
 where 
@@ -1069,7 +1159,10 @@ where
         
       
     
-    {\displaystyle \gamma _{0}}
+    
+
+$$ \gamma _{0} $$
+
   
  and 
   
@@ -1083,7 +1176,10 @@ where
         
       
     
-    {\displaystyle \gamma _{1}}
+    
+
+$$ \gamma _{1} $$
+
   
  are matrix surface energies without and with solute, 
   
@@ -1097,7 +1193,10 @@ where
         
       
     
-    {\displaystyle H_{1}}
+    
+
+$$ H_{1} $$
+
   
  is their heat of mixing, Z and 
   
@@ -1111,7 +1210,10 @@ where
         
       
     
-    {\displaystyle Z_{1}}
+    
+
+$$ Z_{1} $$
+
   
  are the coordination numbers in the matrix and at the surface, and 
   
@@ -1125,7 +1227,10 @@ where
         
       
     
-    {\displaystyle Z_{v}}
+    
+
+$$ Z_{v} $$
+
   
  is the coordination number for surface atoms to the layer below. The last term in this equation is the elastic strain energy 
   
@@ -1139,7 +1244,10 @@ where
         
       
     
-    {\displaystyle E_{\text{el}}}
+    
+
+$$ E_{\text{el}} $$
+
   
 , given above, and is governed by the mismatch between the solute and the matrix atoms. For solid metals, the surface energies scale with the melting points. The surface segregation enrichment ratio increases when the solute atom size is larger than the matrix atom size and when the melting point of the solute is lower than that of the matrix.
 A chemisorbed gaseous species on the surface can also have an effect on the surface composition of a binary alloy. In the presence of a coverage of a chemisorbed species theta, it is proposed that the Langmuir-McLean model is valid with the free energy of surface segregation given by 
@@ -1155,7 +1263,10 @@ A chemisorbed gaseous species on the surface can also have an effect on the surf
         
       
     
-    {\displaystyle \Delta G_{\text{chem}}}
+    
+
+$$ \Delta G_{\text{chem}} $$
+
   
 , where
 
@@ -1197,7 +1308,10 @@ A chemisorbed gaseous species on the surface can also have an effect on the surf
         
       
     
-    {\displaystyle \Delta G_{\text{chem}}=\Delta G_{s}+(E_{B}-E_{A})\Theta \,}
+    
+
+$$ \Delta G_{\text{chem}}=\Delta G_{s}+(E_{B}-E_{A})\Theta \, $$
+
   
 
   
@@ -1211,7 +1325,10 @@ A chemisorbed gaseous species on the surface can also have an effect on the surf
         
       
     
-    {\displaystyle E_{A}}
+    
+
+$$ E_{A} $$
+
   
  and 
   
@@ -1225,7 +1342,10 @@ A chemisorbed gaseous species on the surface can also have an effect on the surf
         
       
     
-    {\displaystyle E_{B}}
+    
+
+$$ E_{B} $$
+
   
  are the chemisorption energies of the gas on solute A and matrix B and 
   
@@ -1234,12 +1354,15 @@ A chemisorbed gaseous species on the surface can also have an effect on the surf
         Θ
       
     
-    {\displaystyle \Theta }
+    
+
+$$ \Theta $$
+
   
  is the fractional coverage. At high temperatures, evaporation from the surface can take place, causing a deviation from the McLean equation. At lower temperatures, both grain boundary and surface segregation can be limited by the diffusion of atoms from the bulk to the surface or interface.
 
-
 ## Kinetics of segregation
+
 In some situations where segregation is important, the segregant atoms do not have sufficient time to reach their equilibrium level as defined by the above adsorption theories. The kinetics of segregation become a limiting factor and must be analyzed as well. Most existing models of segregation kinetics follow the McLean approach. In the model for equilibrium monolayer segregation, the solute atoms are assumed to segregate to a grain boundary from two infinite half-crystals or to a surface from one infinite half-crystal. The diffusion in the crystals is described by Fick's laws. The ratio of the solute concentration in the grain boundary to that in the adjacent atomic layer of the bulk is given by an enrichment ratio, 
   
     
@@ -1247,7 +1370,10 @@ In some situations where segregation is important, the segregant atoms do not ha
         β
       
     
-    {\displaystyle \beta }
+    
+
+$$ \beta $$
+
   
 . Most models assume 
   
@@ -1256,7 +1382,10 @@ In some situations where segregation is important, the segregant atoms do not ha
         β
       
     
-    {\displaystyle \beta }
+    
+
+$$ \beta $$
+
   
  to be a constant, but in practice this is only true for dilute systems with low segregation levels. In this dilute limit, if 
   
@@ -1273,7 +1402,10 @@ In some situations where segregation is important, the segregant atoms do not ha
         
       
     
-    {\displaystyle X_{b}^{0}}
+    
+
+$$ X_{b}^{0} $$
+
   
  is one monolayer, 
   
@@ -1282,7 +1414,10 @@ In some situations where segregation is important, the segregant atoms do not ha
         β
       
     
-    {\displaystyle \beta }
+    
+
+$$ \beta $$
+
   
  is given as 
   
@@ -1346,7 +1481,10 @@ In some situations where segregation is important, the segregant atoms do not ha
         
       
     
-    {\displaystyle \beta ={\frac {X_{b}}{X_{c}}}={\frac {\exp \left({\frac {-\Delta G'}{RT}}\right)}{X_{c}^{0}}}}
+    
+
+$$ \beta ={\frac {X_{b}}{X_{c}}}={\frac {\exp \left({\frac {-\Delta G'}{RT}}\right)}{X_{c}^{0}}} $$
+
   
 .
 The kinetics of segregation can be described by the following equation:
@@ -1434,7 +1572,10 @@ The kinetics of segregation can be described by the following equation:
         
       
     
-    {\displaystyle {\frac {X_{b}(t)-X_{b}(0)}{X_{b}(\infty )-X_{b}(0)}}=1-\exp \left({\frac {FDt}{\beta ^{2}f^{2}}}\right)}
+    
+
+$$ {\frac {X_{b}(t)-X_{b}(0)}{X_{b}(\infty )-X_{b}(0)}}=1-\exp \left({\frac {FDt}{\beta ^{2}f^{2}}}\right) $$
+
   
 
   
@@ -1480,7 +1621,10 @@ The kinetics of segregation can be described by the following equation:
         
       
     
-    {\displaystyle \operatorname {erfc} \left({\frac {FDt}{\beta ^{2}f^{2}}}\right)^{1/2}}
+    
+
+$$ \operatorname {erfc} \left({\frac {FDt}{\beta ^{2}f^{2}}}\right)^{1/2} $$
+
   
 
 where 
@@ -1492,7 +1636,10 @@ where
         4
       
     
-    {\displaystyle F=4}
+    
+
+$$ F=4 $$
+
   
  for grain boundaries and 1 for the free surface, 
   
@@ -1509,7 +1656,10 @@ where
         )
       
     
-    {\displaystyle X_{b}(t)}
+    
+
+$$ X_{b}(t) $$
+
   
  is the boundary content at time 
   
@@ -1518,7 +1668,10 @@ where
         t
       
     
-    {\displaystyle t}
+    
+
+$$ t $$
+
   
 , 
   
@@ -1527,7 +1680,10 @@ where
         D
       
     
-    {\displaystyle D}
+    
+
+$$ D $$
+
   
  is the solute bulk diffusivity, 
   
@@ -1536,7 +1692,10 @@ where
         f
       
     
-    {\displaystyle f}
+    
+
+$$ f $$
+
   
  is related to the atomic sizes of the solute and the matrix, 
   
@@ -1545,7 +1704,10 @@ where
         b
       
     
-    {\displaystyle b}
+    
+
+$$ b $$
+
   
  and 
   
@@ -1554,7 +1716,10 @@ where
         a
       
     
-    {\displaystyle a}
+    
+
+$$ a $$
+
   
 , respectively, by 
   
@@ -1577,7 +1742,10 @@ where
         
       
     
-    {\displaystyle f=a^{3}b^{-2}}
+    
+
+$$ f=a^{3}b^{-2} $$
+
   
 . For short times, this equation is approximated by:
 
@@ -1689,7 +1857,10 @@ where
         
       
     
-    {\displaystyle {\frac {X_{b}(t)-X_{b}(0)}{X_{b}(\infty )-X_{b}(0)}}={\frac {2}{\beta f}}{\sqrt {\frac {FDt}{\pi }}}={\frac {2}{\beta }}{\frac {b^{2}}{a^{3}}}{\sqrt {\frac {FDt}{\pi }}}}
+    
+
+$$ {\frac {X_{b}(t)-X_{b}(0)}{X_{b}(\infty )-X_{b}(0)}}={\frac {2}{\beta f}}{\sqrt {\frac {FDt}{\pi }}}={\frac {2}{\beta }}{\frac {b^{2}}{a^{3}}}{\sqrt {\frac {FDt}{\pi }}} $$
+
   
 
 In practice, 
@@ -1699,7 +1870,10 @@ In practice,
         β
       
     
-    {\displaystyle \beta }
+    
+
+$$ \beta $$
+
   
  is not a constant but generally falls as segregation proceeds due to saturation. If 
   
@@ -1708,19 +1882,13 @@ In practice,
         β
       
     
-    {\displaystyle \beta }
+    
+
+$$ \beta $$
+
   
  starts high and falls rapidly as the segregation saturates, the above equation is valid until the point of saturation.
 
-
 ## In metal castings
+
 All metal castings experience segregation to some extent, and a distinction is made between macrosegregation and microsegregation. Microsegregation refers to localized differences in composition between dendrite arms, and can be significantly reduced by a homogenizing heat treatment. This is possible because the distances involved (typically on the order of 10 to 100 μm) are sufficiently small for diffusion to be a significant mechanism. This is not the case in macrosegregation. Therefore, macrosegregation in metal castings cannot be remedied or removed using heat treatment.
-
-
-## Further reading
-
-
-## See also
-
-
-## References

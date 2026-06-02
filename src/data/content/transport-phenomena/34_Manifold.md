@@ -1,0 +1,2403 @@
+# Manifold
+
+In mathematics, a manifold is a topological space that locally resembles Euclidean space near each point. More precisely, an 
+  
+    
+      
+        n
+      
+    
+    
+
+$$ n $$
+
+  
+-dimensional manifold, or 
+  
+    
+      
+        n
+      
+    
+    
+
+$$ n $$
+
+  
+-manifold for short, is a topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 
+  
+    
+      
+        n
+      
+    
+    
+
+$$ n $$
+
+  
+-dimensional Euclidean space.
+One-dimensional manifolds include lines and circles, but not self-crossing curves such as a figure-eight. Two-dimensional manifolds are also called surfaces. Examples include the plane, the sphere, and the torus, and also the Klein bottle and real projective plane.
+The concept of a manifold is central to many parts of geometry and modern mathematical physics because it allows complicated structures to be described in terms of well-understood topological properties of simpler spaces. Manifolds naturally arise as solution sets of systems of equations and as graphs of functions. The concept has applications in computer-graphics given the need to associate pictures with coordinates (e.g. CT scans).
+Manifolds can be equipped with additional structure. One important class of manifolds are differentiable manifolds; their differentiable structure allows calculus to be done. A Riemannian metric on a manifold allows distances and angles to be measured. Symplectic manifolds serve as the phase spaces in the Hamiltonian formalism of classical mechanics, while four-dimensional Lorentzian manifolds model spacetime in general relativity.
+The study of manifolds requires working knowledge of calculus and topology.
+
+## Motivating examples
+
+### Circle
+
+After a line, a circle is the simplest example of a topological manifold. Topology ignores bending, so a small piece of a circle is treated the same as a small piece of a line. Considering, for instance, the top part of the unit circle, x2 + y2 = 1, where the y-coordinate is positive (indicated by the yellow arc in Figure 1). Any point of this arc can be uniquely described by its x-coordinate. So, projection onto the first coordinate is a continuous and invertible mapping from the upper arc to the open interval (−1, 1):
+
+  
+    
+      
+        
+          χ
+          
+            
+              t
+              o
+              p
+            
+          
+        
+        (
+        x
+        ,
+        y
+        )
+        =
+        x
+        .
+        
+      
+    
+    
+
+$$ \chi _{\mathrm {top} }(x,y)=x.\, $$
+
+  
+
+Such functions along with the open regions they map are called charts. Similarly, there are charts for the bottom (red), left (blue), and right (green) parts of the circle:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  χ
+                  
+                    
+                      b
+                      o
+                      t
+                      t
+                      o
+                      m
+                    
+                  
+                
+                (
+                x
+                ,
+                y
+                )
+              
+              
+                
+                =
+                x
+              
+            
+            
+              
+                
+                  χ
+                  
+                    
+                      l
+                      e
+                      f
+                      t
+                    
+                  
+                
+                (
+                x
+                ,
+                y
+                )
+              
+              
+                
+                =
+                y
+              
+            
+            
+              
+                
+                  χ
+                  
+                    
+                      r
+                      i
+                      g
+                      h
+                      t
+                    
+                  
+                
+                (
+                x
+                ,
+                y
+                )
+              
+              
+                
+                =
+                y
+                .
+              
+            
+          
+        
+      
+    
+    
+
+$$ {\begin{aligned}\chi _{\mathrm {bottom} }(x,y)&=x\\\chi _{\mathrm {left} }(x,y)&=y\\\chi _{\mathrm {right} }(x,y)&=y.\end{aligned}} $$
+
+  
+
+Together, these parts cover the whole circle, and the four charts form an atlas for the circle.
+The top and right charts, 
+  
+    
+      
+        
+          χ
+          
+            
+              t
+              o
+              p
+            
+          
+        
+      
+    
+    
+
+$$ \chi _{\mathrm {top} } $$
+
+  
+ and 
+  
+    
+      
+        
+          χ
+          
+            
+              r
+              i
+              g
+              h
+              t
+            
+          
+        
+      
+    
+    
+
+$$ \chi _{\mathrm {right} } $$
+
+  
+ respectively, overlap in their domain: their intersection lies in the quarter of the circle where both 
+  
+    
+      
+        x
+      
+    
+    
+
+$$ x $$
+
+  
+ and 
+  
+    
+      
+        y
+      
+    
+    
+
+$$ y $$
+
+  
+-coordinates are positive. Both map this part into the interval 
+  
+    
+      
+        (
+        0
+        ,
+        1
+        )
+      
+    
+    
+
+$$ (0,1) $$
+
+  
+, though differently. Thus a function 
+  
+    
+      
+        T
+        :
+        (
+        0
+        ,
+        1
+        )
+        →
+        (
+        0
+        ,
+        1
+        )
+        =
+        
+          χ
+          
+            
+              r
+              i
+              g
+              h
+              t
+            
+          
+        
+        ∘
+        
+          χ
+          
+            
+              t
+              o
+              p
+            
+          
+          
+            −
+            1
+          
+        
+      
+    
+    
+
+$$ T:(0,1)\rightarrow (0,1)=\chi _{\mathrm {right} }\circ \chi _{\mathrm {top} }^{-1} $$
+
+  
+ can be constructed, which takes values from the co-domain of 
+  
+    
+      
+        
+          χ
+          
+            
+              t
+              o
+              p
+            
+          
+        
+      
+    
+    
+
+$$ \chi _{\mathrm {top} } $$
+
+  
+ back to the circle using the inverse, followed by 
+  
+    
+      
+        
+          χ
+          
+            
+              r
+              i
+              g
+              h
+              t
+            
+          
+        
+      
+    
+    
+
+$$ \chi _{\mathrm {right} } $$
+
+  
+ back to the interval. If a is any number in 
+  
+    
+      
+        (
+        0
+        ,
+        1
+        )
+      
+    
+    
+
+$$ (0,1) $$
+
+  
+, then:
+
+  
+    
+      
+        
+          
+            
+              
+                T
+                (
+                a
+                )
+              
+              
+                
+                =
+                
+                  χ
+                  
+                    
+                      r
+                      i
+                      g
+                      h
+                      t
+                    
+                  
+                
+                
+                  (
+                  
+                    
+                      χ
+                      
+                        
+                          t
+                          o
+                          p
+                        
+                      
+                      
+                        −
+                        1
+                      
+                    
+                    
+                      [
+                      a
+                      ]
+                    
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  χ
+                  
+                    
+                      r
+                      i
+                      g
+                      h
+                      t
+                    
+                  
+                
+                
+                  (
+                  
+                    a
+                    ,
+                    
+                      
+                        1
+                        −
+                        
+                          a
+                          
+                            2
+                          
+                        
+                      
+                    
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    −
+                    
+                      a
+                      
+                        2
+                      
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    
+
+$$ {\begin{aligned}T(a)&=\chi _{\mathrm {right} }\left(\chi _{\mathrm {top} }^{-1}\left[a\right]\right)\\&=\chi _{\mathrm {right} }\left(a,{\sqrt {1-a^{2}}}\right)\\&={\sqrt {1-a^{2}}}\end{aligned}} $$
+
+  
+
+Such a function is called a transition map.
+
+The top, bottom, left, and right charts do not form the only possible atlas. Charts need not be geometric projections, and the number of charts is a matter of choice. Consider the charts
+
+  
+    
+      
+        
+          χ
+          
+            
+              m
+              i
+              n
+              u
+              s
+            
+          
+        
+        (
+        x
+        ,
+        y
+        )
+        =
+        s
+        =
+        
+          
+            y
+            
+              1
+              +
+              x
+            
+          
+        
+      
+    
+    
+
+$$ \chi _{\mathrm {minus} }(x,y)=s={\frac {y}{1+x}} $$
+
+  
+
+and
+
+  
+    
+      
+        
+          χ
+          
+            
+              p
+              l
+              u
+              s
+            
+          
+        
+        (
+        x
+        ,
+        y
+        )
+        =
+        t
+        =
+        
+          
+            y
+            
+              1
+              −
+              x
+            
+          
+        
+      
+    
+    
+
+$$ \chi _{\mathrm {plus} }(x,y)=t={\frac {y}{1-x}} $$
+
+  
+
+Here s is the slope of the line through the point at coordinates (x, y) and the fixed pivot point (−1, 0); similarly, t is the opposite of the slope of the line through the points at coordinates (x, y) and (+1, 0). The inverse mapping from s to (x, y) is given by
+
+  
+    
+      
+        
+          
+            
+              
+                x
+              
+              
+                
+                =
+                
+                  
+                    
+                      1
+                      −
+                      
+                        s
+                        
+                          2
+                        
+                      
+                    
+                    
+                      1
+                      +
+                      
+                        s
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+              
+            
+            
+              
+                y
+              
+              
+                
+                =
+                
+                  
+                    
+                      2
+                      s
+                    
+                    
+                      1
+                      +
+                      
+                        s
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    
+
+$$ {\begin{aligned}x&={\frac {1-s^{2}}{1+s^{2}}}\\[5pt]y&={\frac {2s}{1+s^{2}}}\end{aligned}} $$
+
+  
+
+It can be confirmed that x2 + y2 = 1 for all values of s and t. These two charts provide a second atlas for the circle, with the transition map
+
+  
+    
+      
+        t
+        =
+        
+          
+            1
+            s
+          
+        
+      
+    
+    
+
+$$ t={\frac {1}{s}} $$
+
+  
+
+(that is, one has this relation between s and t for every point where s and t are both nonzero).
+Each chart omits a single point, either (−1, 0) for s or (+1, 0) for t, so neither chart alone is sufficient to cover the whole circle. It can be proved that it is not possible to cover the full circle with a single chart. For example, although it is possible to construct a circle from a single line interval by overlapping and "gluing" the ends, this does not produce a chart; a portion of the circle will be mapped to both ends at once, losing invertibility.
+
+### Sphere
+
+The sphere is an example of a surface. The unit sphere of implicit equation
+
+x2 + y2 + z2 – 1 = 0
+may be covered by an atlas of six charts: the plane z = 0 divides the sphere into two half spheres (z > 0 and z < 0), which may both be mapped on the disc x2 + y2 < 1 by the projection on the xy plane of coordinates. This provides two charts; the four other charts are provided by a similar construction with the two other coordinate planes.
+As with the circle, one may define one chart that covers the whole sphere excluding one point. Thus two charts are sufficient, but the sphere cannot be covered by a single chart.
+This example is historically significant, as it has motivated the terminology; it became apparent that the whole surface of the Earth cannot have a plane representation consisting of a single map (also called "chart", see nautical chart), and therefore one needs atlases for covering the whole Earth surface.
+
+### Other curves
+
+Manifolds do not need to be connected (all in "one piece"); an example is a pair of separate circles.
+Manifolds need not be closed; thus a line segment without its end points is a manifold. They are never countable, unless the dimension of the manifold is 0. Putting these freedoms together, other examples of manifolds are a parabola, a hyperbola, and the locus of points on a cubic curve y2 = x3 − x (a closed loop piece and an open, infinite piece).
+However, excluded are examples like two touching circles that share a point to form a figure-8; at the shared point, a satisfactory chart cannot be created. Even with the bending allowed by topology, the vicinity of the shared point looks like a "+", not a line. A "+" is not homeomorphic to a line segment, since deleting the center point from the "+" gives a space with four components (i.e. pieces), whereas deleting a point from a line segment gives a space with at most two pieces; topological operations always preserve the number of pieces.
+
+## Definition
+
+Informally, a manifold is a space that is "modeled on" Euclidean space.
+A manifold can be constructed by giving a collection of coordinate charts, that is, a covering by open sets with homeomorphisms to a Euclidean space, and transition maps: homeomorphisms from one region of Euclidean space to another region if they correspond to the same part of the manifold in two different coordinate charts. A manifold can be given additional structure if the patching functions satisfy axioms beyond continuity. For instance, differentiable manifolds have homeomorphisms on overlapping neighborhoods diffeomorphic with each other, so that the manifold has a well-defined set of functions which are differentiable in each neighborhood, thus differentiable on the manifold as a whole.
+Formally, a (topological) manifold is a second countable Hausdorff space that is locally homeomorphic to a Euclidean space.
+Second countable and Hausdorff are point-set conditions; second countable excludes spaces which are in some sense 'too large' such as the long line, while Hausdorff excludes spaces such as the line with two origins.
+Locally homeomorphic to a Euclidean space means that every point has a neighborhood homeomorphic to an open subset of the Euclidean space 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+        ,
+      
+    
+    
+
+$$ \mathbb {R} ^{n}, $$
+
+  
+ for some nonnegative integer n.
+This implies that either the point is an isolated point (if 
+  
+    
+      
+        n
+        =
+        0
+      
+    
+    
+
+$$ n=0 $$
+
+  
+), or it has a neighborhood homeomorphic to the open ball
+
+  
+    
+      
+        
+          
+            B
+          
+          
+            n
+          
+        
+        =
+        
+          {
+          
+            (
+            
+              x
+              
+                1
+              
+            
+            ,
+            
+              x
+              
+                2
+              
+            
+            ,
+            …
+            ,
+            
+              x
+              
+                n
+              
+            
+            )
+            ∈
+            
+              
+                R
+              
+              
+                n
+              
+            
+            :
+            
+              x
+              
+                1
+              
+              
+                2
+              
+            
+            +
+            
+              x
+              
+                2
+              
+              
+                2
+              
+            
+            +
+            ⋯
+            +
+            
+              x
+              
+                n
+              
+              
+                2
+              
+            
+            <
+            1
+          
+          }
+        
+        .
+      
+    
+    
+
+$$ \mathbf {B} ^{n}=\left\{(x_{1},x_{2},\dots ,x_{n})\in \mathbb {R} ^{n}:x_{1}^{2}+x_{2}^{2}+\cdots +x_{n}^{2}<1\right\}. $$
+
+  
+ This implies also that every point has a neighborhood homeomorphic to 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} ^{n} $$
+
+  
+
+since 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} ^{n} $$
+
+  
+ is homeomorphic, and even diffeomorphic to any open ball in it (for 
+  
+    
+      
+        n
+        >
+        0
+      
+    
+    
+
+$$ n>0 $$
+
+  
+).
+The n that appears in the preceding definition is called the local dimension of the manifold. Generally manifolds are taken to have a constant local dimension, and the local dimension is then called the dimension  of the manifold. This is, in particular, the case when manifolds are connected. However, some authors admit manifolds that are not connected, and where different points can have different dimensions. If a manifold has a fixed dimension, this can be emphasized by calling it  a pure manifold. For example, the (surface of a) sphere has a constant dimension of 2 and is therefore a pure manifold whereas the disjoint union of a sphere and a line in three-dimensional space is not a pure manifold. Since dimension is a local invariant (i.e. the map sending each point to the dimension of its neighbourhood over which a chart is defined, is locally constant), each connected component has a fixed dimension.
+Sheaf-theoretically, a manifold is a locally ringed space, whose structure sheaf is locally isomorphic to the sheaf of continuous (or differentiable, or complex-analytic, etc.) functions on Euclidean space. This definition is mostly used when discussing analytic manifolds in algebraic geometry.
+
+## Charts, atlases, and transition maps
+
+The spherical Earth is navigated using flat maps or charts, collected in an atlas. Similarly, a manifold can be described using mathematical maps, called coordinate charts, collected in a mathematical atlas. It is not generally possible to describe a manifold with just one chart, because the global structure of the manifold is different from the simple structure of the charts. For example, no single flat map can represent the entire Earth without separation of adjacent features across the map's boundaries or duplication of coverage. When a manifold is constructed from multiple overlapping charts, the regions where they overlap carry information essential to understanding the global structure.
+
+### Charts
+
+A coordinate map, a coordinate chart, or simply a chart, of a manifold is an invertible map between a subset of the manifold and a simple space such that both the map and its inverse preserve the desired structure. For a topological manifold, the simple space is a subset of some Euclidean space 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} ^{n} $$
+
+  
+ and interest focuses on the topological structure. This structure is preserved by homeomorphisms, invertible maps that are continuous in both directions.
+In the case of a differentiable manifold, a set of charts called an atlas, whose transition functions (see below) are all differentiable, allows us to do calculus on it. Polar coordinates, for example, form a chart for the plane 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} ^{2} $$
+
+  
+ minus the positive x-axis and the origin. Another example of a chart is the map χtop mentioned above, a chart for the circle.
+
+### Atlases
+
+The description of most manifolds requires more than one chart. A specific collection of charts which covers a manifold is called an atlas. An atlas is not unique as all manifolds can be covered in multiple ways using different combinations of charts. Two atlases are said to be equivalent if their union is also an atlas.
+The atlas containing all possible charts consistent with a given atlas is called the maximal atlas (i.e. an equivalence class containing that given atlas). Unlike an ordinary atlas, the maximal atlas of a given manifold is unique. Though useful for definitions, it is an abstract object and not used directly (e.g. in calculations).
+A manifold can be defined as a topological space equipped with an atlas (and in some definitions, a maximal atlas).
+
+### Transition maps
+
+Charts in an atlas may overlap and a single point of a manifold may be represented in several charts. If two charts overlap, parts of them represent the same region of the manifold, just as a map of Europe and a map of Russia may both contain Moscow. Given two overlapping charts, a transition function can be defined which goes from an open ball in 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} ^{n} $$
+
+  
+ to the manifold and then back to another (or perhaps the same) open ball in 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} ^{n} $$
+
+  
+. The resultant map, like the map T in the circle example above, is called a change of coordinates, a coordinate transformation, a transition function, or a transition map.
+
+### Additional structure
+
+An atlas can also be used to define additional structure on the manifold. The structure is first defined on each chart separately. If all transition maps are compatible with this structure, the structure transfers to the manifold.
+This is the standard way differentiable manifolds are defined. If the transition functions of an atlas for a topological manifold preserve the natural differential structure of 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} ^{n} $$
+
+  
+ (that is, if they are diffeomorphisms), the differential structure transfers to the manifold and turns it into a differentiable manifold. Complex manifolds are introduced in an analogous way by requiring that the transition functions of an atlas are holomorphic functions. For symplectic manifolds, the transition functions must be symplectomorphisms.
+The structure on the manifold depends on the atlas, but sometimes different atlases can be said to give rise to the same structure. Such atlases are called compatible.
+These notions are made precise in general through the use of pseudogroups.
+
+## Manifold with boundary
+
+A manifold with boundary is a manifold with an edge. For example, a disk (circle plus interior) is a 2-manifold with as boundary the circle, a 1-manifold. The boundary of an 
+  
+    
+      
+        n
+      
+    
+    
+
+$$ n $$
+
+  
+-manifold with boundary is an 
+  
+    
+      
+        (
+        n
+        −
+        1
+        )
+      
+    
+    
+
+$$ (n-1) $$
+
+  
+-manifold. In three dimensions, a ball (sphere plus interior) is a 3-manifold with boundary. Its boundary is a sphere, a 2-manifold.
+In technical language, a manifold with boundary is a space containing both interior points and boundary points. Every interior point has a neighborhood homeomorphic to the open 
+  
+    
+      
+        n
+      
+    
+    
+
+$$ n $$
+
+  
+-ball 
+  
+    
+      
+        
+          {
+          (
+          
+            x
+            
+              1
+            
+          
+          ,
+          
+            x
+            
+              2
+            
+          
+          ,
+          …
+          ,
+          
+            x
+            
+              n
+            
+          
+          )
+          ∣
+          ∑
+          
+            x
+            
+              i
+            
+            
+              2
+            
+          
+          <
+          1
+          }
+        
+      
+    
+    
+
+$$ \textstyle \{(x_{1},x_{2},\dots ,x_{n})\mid \sum x_{i}^{2}<1\} $$
+
+  
+. Every boundary point has a neighborhood homeomorphic to the "half" 
+  
+    
+      
+        n
+      
+    
+    
+
+$$ n $$
+
+  
+-ball 
+  
+    
+      
+        
+          {
+          (
+          
+            x
+            
+              1
+            
+          
+          ,
+          
+            x
+            
+              2
+            
+          
+          ,
+          …
+          ,
+          
+            x
+            
+              n
+            
+          
+          )
+          ∣
+          ∑
+          
+            x
+            
+              i
+            
+            
+              2
+            
+          
+          <
+          1
+          
+             and 
+          
+          
+            x
+            
+              1
+            
+          
+          ≥
+          0
+          }
+        
+      
+    
+    
+
+$$ \textstyle \{(x_{1},x_{2},\dots ,x_{n})\mid \sum x_{i}^{2}<1{\text{ and }}x_{1}\geq 0\} $$
+
+  
+. Any homeomorphism between half-balls must send points with 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+        =
+        0
+      
+    
+    
+
+$$ x_{1}=0 $$
+
+  
+ to points with 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+        =
+        0
+      
+    
+    
+
+$$ x_{1}=0 $$
+
+  
+. This invariance allows to "define" boundary points; see next paragraph.
+If in addition we are considering differentiable manifolds, then a square with interior is not a manifold with boundary. The four vertices are neither locally diffeomorphic to Euclidean space nor to Euclidean half-space. This is an example of a differentiable manifold with corners. Similarly, products of differentiable manifolds with boundaries are not generally differentiable manifolds with boundaries, but instead are differentiable manifolds with corners.
+
+### Boundary and interior
+
+Let 
+  
+    
+      
+        M
+      
+    
+    
+
+$$ M $$
+
+  
+ be a manifold with boundary. The interior of 
+  
+    
+      
+        M
+      
+    
+    
+
+$$ M $$
+
+  
+, denoted 
+  
+    
+      
+        Int
+        ⁡
+        M
+      
+    
+    
+
+$$ \operatorname {Int} M $$
+
+  
+, is the set of points in 
+  
+    
+      
+        M
+      
+    
+    
+
+$$ M $$
+
+  
+ which have neighborhoods homeomorphic to an open subset of 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} ^{n} $$
+
+  
+. The boundary of 
+  
+    
+      
+        M
+      
+    
+    
+
+$$ M $$
+
+  
+, denoted 
+  
+    
+      
+        ∂
+        M
+      
+    
+    
+
+$$ \partial M $$
+
+  
+, is the complement of 
+  
+    
+      
+        Int
+        ⁡
+        M
+      
+    
+    
+
+$$ \operatorname {Int} M $$
+
+  
+ in 
+  
+    
+      
+        M
+      
+    
+    
+
+$$ M $$
+
+  
+. The boundary points can be characterized as those points which land on the boundary hyperplane 
+  
+    
+      
+        (
+        
+          x
+          
+            n
+          
+        
+        =
+        0
+        )
+      
+    
+    
+
+$$ (x_{n}=0) $$
+
+  
+ of 
+  
+    
+      
+        
+          
+            R
+          
+          
+            +
+          
+          
+            n
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} _{+}^{n} $$
+
+  
+ under some coordinate chart.
+If 
+  
+    
+      
+        M
+      
+    
+    
+
+$$ M $$
+
+  
+ is a manifold with boundary of dimension 
+  
+    
+      
+        n
+      
+    
+    
+
+$$ n $$
+
+  
+, then 
+  
+    
+      
+        Int
+        ⁡
+        M
+      
+    
+    
+
+$$ \operatorname {Int} M $$
+
+  
+ is a manifold (without boundary) of dimension 
+  
+    
+      
+        n
+      
+    
+    
+
+$$ n $$
+
+  
+ and 
+  
+    
+      
+        ∂
+        M
+      
+    
+    
+
+$$ \partial M $$
+
+  
+ is a manifold (without boundary) of dimension 
+  
+    
+      
+        n
+        −
+        1
+      
+    
+    
+
+$$ n-1 $$
+
+  
+.
+
+## Construction
+
+A single manifold can be constructed in different ways, each stressing a different aspect of the manifold, thereby  leading to a slightly different viewpoint.
+
+### Charts
+
+Perhaps the simplest way to construct a manifold is the one used in the example above of the circle. First, a subset of 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} ^{2} $$
+
+  
+ is identified, and then an atlas covering this subset is constructed. The concept of manifold grew historically from constructions like this. Here is another example, applying this method to the construction of a sphere:
+
+#### Sphere with charts
+
+A sphere can be treated in almost the same way as the circle. In mathematics a sphere is just the surface (not the solid interior), which can be defined as a subset of 
+  
+    
+      
+        
+          
+            R
+          
+          
+            3
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} ^{3} $$
+
+  
+:
+
+  
+    
+      
+        S
+        =
+        
+          {
+          
+            (
+            x
+            ,
+            y
+            ,
+            z
+            )
+            ∈
+            
+              
+                R
+              
+              
+                3
+              
+            
+            ∣
+            
+              x
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+            +
+            
+              z
+              
+                2
+              
+            
+            =
+            1
+          
+          }
+        
+        .
+      
+    
+    
+
+$$ S=\left\{(x,y,z)\in \mathbb {R} ^{3}\mid x^{2}+y^{2}+z^{2}=1\right\}. $$
+
+  
+
+The sphere is two-dimensional, so each chart will map part of the sphere to an open subset of 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} ^{2} $$
+
+  
+. Consider the northern hemisphere, which is the part with positive z coordinate (coloured red in the picture on the right). The function χ defined by 
+
+  
+    
+      
+        χ
+        (
+        x
+        ,
+        y
+        ,
+        z
+        )
+        =
+        (
+        x
+        ,
+        y
+        )
+        ,
+         
+      
+    
+    
+
+$$ \chi (x,y,z)=(x,y),\ $$
+
+  
+
+maps the northern hemisphere to the open unit disc by projecting it on the (x, y) plane. A similar chart exists for the southern hemisphere. Together with two charts projecting on the (x, z) plane and two charts projecting on the (y, z) plane, an atlas of six charts is obtained which covers the entire sphere.
+This can be easily generalized to higher-dimensional spheres.
+
+### Patchwork
+
+A manifold can be constructed by gluing together pieces in a consistent manner, making them into overlapping charts. This construction is possible for any manifold and hence it is often used as a characterisation, especially for differentiable and Riemannian manifolds. It focuses on an atlas, as the patches naturally provide charts, and since there is no exterior space involved it leads to an intrinsic view of the manifold.
+The manifold is constructed by specifying an atlas, which is itself defined by transition maps. A point of the manifold is therefore an equivalence class of points which are mapped to each other by transition maps. Charts map equivalence classes to points of a single patch. There are usually strong demands on the consistency of the transition maps. For topological manifolds they are required to be homeomorphisms; if they are also diffeomorphisms, the resulting manifold is a differentiable manifold.
+This can be illustrated with the transition map t = 1⁄s from the second half of the circle example. Start with two copies of the line. Use the coordinate s for the first copy, and t for the second copy. Now, glue both copies together by identifying the point t on the second copy with the point s = 1⁄t on the first copy (the points t = 0 and s = 0 are not identified with any point on the first and second copy, respectively). This gives a circle.
+
+#### Intrinsic and extrinsic view
+
+The first construction and this construction are very similar, but represent rather different points of view. In the first construction, the manifold is seen as embedded in some Euclidean space. This is the extrinsic view. When a manifold is viewed in this way, it is easy to use intuition from Euclidean spaces to define additional structure. For example, in a Euclidean space, it is always clear whether a vector at some point is tangential or normal to some surface through that point.
+The patchwork construction does not use any embedding, but simply views the manifold as a topological space by itself. This abstract point of view is called the intrinsic view. It can make it harder to imagine what a tangent vector might be, and there is no intrinsic notion of a normal bundle, but instead there is an intrinsic stable normal bundle.
+
+#### n-Sphere as a patchwork
+
+The n-sphere Sn is a generalisation of the idea of a circle (1-sphere) and sphere (2-sphere) to higher dimensions. An n-sphere Sn can be constructed by gluing together two copies of 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} ^{n} $$
+
+  
+. The transition map between them is inversion in a sphere, defined as
+
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+        ∖
+        {
+        0
+        }
+        →
+        
+          
+            R
+          
+          
+            n
+          
+        
+        ∖
+        {
+        0
+        }
+        :
+        x
+        ↦
+        x
+        
+          /
+        
+        ‖
+        x
+        
+          ‖
+          
+            2
+          
+        
+        .
+      
+    
+    
+
+$$ \mathbb {R} ^{n}\setminus \{0\}\to \mathbb {R} ^{n}\setminus \{0\}:x\mapsto x/\|x\|^{2}. $$
+
+  
+
+This function is its own inverse and thus can be used in both directions. As the transition map is a smooth function, this atlas defines a smooth manifold.
+In the case n = 1, the example simplifies to the circle example given earlier.
+
+### Identifying points of a manifold
+
+It is possible to define different points of a manifold to be the same point. This can be visualized as gluing these points together in a single point, forming a quotient space. There is, however, no reason to expect such quotient spaces to be manifolds. Among the possible quotient spaces that are not necessarily manifolds, orbifolds and CW complexes are considered to be relatively well-behaved. An example of a quotient space of a manifold that is also a manifold is the real projective space, identified as a quotient space of the corresponding sphere.
+One method of identifying points (gluing them together) is through a right (or left) action of a group, which acts on the manifold. Two points are identified if one is moved onto the other by some group element. If M is the manifold and G is the group, the resulting quotient space is denoted by M / G (or G \ M).
+Manifolds which can be constructed by identifying points include tori and real projective spaces (starting with a plane and a sphere, respectively).
+
+### Gluing along boundaries
+
+Two manifolds with boundaries can be glued together along a boundary. If this is done the right way, the result is also a manifold. Similarly, two boundaries of a single manifold can be glued together.
+Formally, the gluing is defined by a bijection between the two boundaries. Two points are identified when they are mapped onto each other. For a topological manifold, this bijection should be a homeomorphism, otherwise the result will not be a topological manifold. Similarly, for a differentiable manifold, it has to be a diffeomorphism. For other manifolds, other structures should be preserved.
+A finite cylinder may be constructed as a manifold by starting with a strip [0,1] × [0,1] and gluing a pair of opposite edges on the boundary by a suitable diffeomorphism. A projective plane may be obtained by gluing a sphere with a hole in it to a Möbius strip along their respective circular boundaries.
+
+### Cartesian products
+
+The Cartesian product of manifolds is also a manifold.
+The dimension of the product manifold is the sum of the dimensions of its factors. Its topology is the product topology, and a Cartesian product of charts is a chart for the product manifold. Thus, an atlas for the product manifold can be constructed using atlases for its factors. If these atlases define a differential structure on the factors, the corresponding atlas defines a differential structure on the product manifold. The same is true for any other structure defined on the factors. If one of the factors has a boundary, the product manifold also has a boundary. Cartesian products may be used to construct tori and finite cylinders, for example, as S1 × S1 and S1 × [0,1], respectively.
+
+## Additional structure
+
+### Topological manifolds
+
+The simplest kind of manifold to define is the topological manifold, which looks locally like some "ordinary" Euclidean space 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} ^{n} $$
+
+  
+. By definition, all manifolds are topological manifolds, so the phrase "topological manifold" is usually used to emphasize that a manifold lacks additional structure, or that only its topological properties are being considered. Formally, a topological manifold is a topological space locally homeomorphic to a Euclidean space. This means that every point has a neighbourhood for which there exists a homeomorphism (a bijective continuous function whose inverse is also continuous) mapping that neighbourhood to 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} ^{n} $$
+
+  
+. These homeomorphisms are the charts of the manifold.
+A topological manifold looks locally like a Euclidean space in a rather weak manner: while for each individual chart it is possible to distinguish differentiable functions or measure distances and angles, merely by virtue of being a topological manifold a space does not have any particular and consistent choice of such concepts. In order to discuss such properties for a manifold, one needs to specify further structure and consider differentiable manifolds and Riemannian manifolds discussed below. In particular, the same underlying topological manifold can have several mutually incompatible classes of differentiable functions and an infinite number of ways to specify distances and angles.
+Usually additional technical assumptions on the topological space are made to exclude pathological cases. It is customary to require that the space be Hausdorff and second countable.
+The dimension of the manifold at a certain point is the dimension of the Euclidean space that the charts at that point map to (number n in the definition). All points in a connected manifold have the same dimension. Some authors require that all charts of a topological manifold map to Euclidean spaces of same dimension. In that case every topological manifold has a topological invariant, its dimension.
+
+### Differentiable manifolds
+
+For most applications, a special kind of topological manifold, namely, a differentiable manifold, is used. If the local charts on a manifold are compatible in a certain sense, one can define directions, tangent spaces, and differentiable functions on that manifold. In particular it is possible to use calculus on a differentiable manifold. Each point of an n-dimensional differentiable manifold has a tangent space. This is an n-dimensional Euclidean space consisting of the tangent vectors of the curves through the point.
+Two important classes of differentiable manifolds are smooth and analytic manifolds. For smooth manifolds the transition maps are smooth, that is, infinitely differentiable. Analytic manifolds are smooth manifolds with the additional condition that the transition maps are analytic (they can be expressed as power series). The sphere can be given analytic structure, as can most familiar curves and surfaces.
+A rectifiable set generalizes the idea of a piecewise smooth or rectifiable curve to higher dimensions; however, rectifiable sets are not in general manifolds.
+
+### Riemannian manifolds
+
+To measure distances and angles on manifolds, the manifold must be Riemannian. A Riemannian manifold is a differentiable manifold in which each tangent space is equipped with an inner product 
+  
+    
+      
+        ⟨
+        ⋅
+        ,
+        ⋅
+        ⟩
+      
+    
+    
+
+$$ \langle \cdot ,\cdot \rangle $$
+
+  
+ in a manner which varies smoothly from point to point. Given two tangent vectors 
+  
+    
+      
+        u
+      
+    
+    
+
+$$ u $$
+
+  
+ and 
+  
+    
+      
+        v
+      
+    
+    
+
+$$ v $$
+
+  
+, the inner product 
+  
+    
+      
+        ⟨
+        u
+        ,
+        v
+        ⟩
+      
+    
+    
+
+$$ \langle u,v\rangle $$
+
+  
+ gives a real number. The dot (or scalar) product is a typical example of an inner product. This allows one to define various notions such as length, angles, areas (or volumes), curvature and divergence of vector fields.
+All differentiable manifolds (of constant dimension) can be given the structure of a Riemannian manifold. The Euclidean space itself carries a natural structure of Riemannian manifold (the tangent spaces are naturally identified with the Euclidean space itself and carry the standard scalar product of the space). Many familiar curves and surfaces, including for example all n-spheres, are specified as subspaces of a Euclidean space and inherit a metric from their embedding in it.
+
+### Finsler manifolds
+
+A Finsler manifold allows the definition of distance but does not require the concept of angle; it is an analytic manifold in which each tangent space is equipped with a norm, 
+  
+    
+      
+        ‖
+        ⋅
+        ‖
+      
+    
+    
+
+$$ \|\cdot \| $$
+
+  
+, in a manner which varies smoothly from point to point. This norm can be extended to a metric, defining the length of a curve; but it cannot in general be used to define an inner product.
+Any Riemannian manifold is a Finsler manifold.
+
+### Lie groups
+
+Lie groups, named after Sophus Lie, are differentiable manifolds that carry also the structure of a group which is such that the group operations are defined by smooth maps.
+A Euclidean vector space with the group operation of vector addition is an example of a non-compact Lie group. A simple example of a compact Lie group is the circle: the group operation is simply rotation. This group, known as 
+  
+    
+      
+        U
+        ⁡
+        (
+        1
+        )
+      
+    
+    
+
+$$ \operatorname {U} (1) $$
+
+  
+, can be also characterised as the group of complex numbers of modulus 1 with multiplication as the group operation.
+Other examples of Lie groups include special groups of matrices, which are all subgroups of the general linear group, the group of 
+  
+    
+      
+        n
+        ×
+        n
+      
+    
+    
+
+$$ n\times n $$
+
+  
+ matrices with non-zero determinant. If the matrix entries are real numbers, this will be an 
+  
+    
+      
+        
+          n
+          
+            2
+          
+        
+      
+    
+    
+
+$$ n^{2} $$
+
+  
+-dimensional disconnected manifold. The orthogonal groups, the symmetry groups of the sphere and hyperspheres, are 
+  
+    
+      
+        n
+        (
+        n
+        −
+        1
+        )
+        
+          /
+        
+        2
+      
+    
+    
+
+$$ n(n-1)/2 $$
+
+  
+ dimensional manifolds, where 
+  
+    
+      
+        n
+        −
+        1
+      
+    
+    
+
+$$ n-1 $$
+
+  
+ is the dimension of the sphere. Further examples can be found in the table of Lie groups.
+
+### Other types of manifolds
+
+A complex manifold is a manifold whose charts take values in 
+  
+    
+      
+        
+          
+            C
+          
+          
+            n
+          
+        
+      
+    
+    
+
+$$ \mathbb {C} ^{n} $$
+
+  
+ and whose transition functions are holomorphic on the overlaps. These manifolds are the basic objects of study in complex geometry. A one-complex-dimensional manifold is called a Riemann surface. An 
+  
+    
+      
+        n
+      
+    
+    
+
+$$ n $$
+
+  
+-dimensional complex manifold has dimension 
+  
+    
+      
+        2
+        n
+      
+    
+    
+
+$$ 2n $$
+
+  
+ as a real differentiable manifold.
+A CR manifold is a manifold modeled on boundaries of domains in 
+  
+    
+      
+        
+          
+            C
+          
+          
+            n
+          
+        
+      
+    
+    
+
+$$ \mathbb {C} ^{n} $$
+
+  
+.
+'Infinite dimensional manifolds':  to allow for infinite dimensions, one may consider Banach manifolds which are locally homeomorphic to Banach spaces. Similarly, Fréchet manifolds are locally homeomorphic to Fréchet spaces.
+A symplectic manifold is a kind of manifold which is used to represent the phase spaces in classical mechanics. They are endowed with a 2-form that defines the Poisson bracket. A closely related type of manifold is a contact manifold.
+A combinatorial manifold is a kind of manifold which is discretization of a manifold. It usually means a piecewise linear manifold made by simplicial complexes.
+A digital manifold is a special kind of combinatorial manifold which is defined in digital space. See digital topology.
+
+## Classification and invariants
+
+Different notions of manifolds have different notions of classification and invariant; in this section we focus on smooth closed manifolds.
+The classification of smooth closed manifolds is well understood in principle, except in dimension 4: in low dimensions (2 and 3) it is geometric, via the uniformization theorem and the solution of the Poincaré conjecture, and in high dimension (5 and above) it is algebraic, via surgery theory. This is a classification in principle: the general question of whether two smooth manifolds are diffeomorphic is not computable in general. Further, specific computations remain difficult, and there are many open questions.
+Orientable surfaces can be visualized, and their diffeomorphism classes enumerated, by genus. Given two orientable surfaces, one can determine if they are diffeomorphic by computing their respective genera and comparing: they are diffeomorphic if and only if the genera are equal, so the genus forms a complete set of invariants.
+This is much harder in higher dimensions: higher-dimensional manifolds cannot be directly visualized (though visual intuition is useful in understanding them), nor can their diffeomorphism classes be enumerated, nor can one in general determine if two different descriptions of a higher-dimensional manifold refer to the same object.
+However, one can determine if two manifolds are different if there is some intrinsic characteristic that differentiates them. Such criteria are commonly referred to as invariants, because, while they may be defined in terms of some presentation (such as the genus in terms of a triangulation), they are the same relative to all possible descriptions of a particular manifold: they are invariant under different descriptions.
+One could hope to develop an arsenal of invariant criteria that would definitively classify all manifolds up to isomorphism. It is known that for manifolds of dimension 4 and higher, no program exists that can decide whether two manifolds are diffeomorphic.
+Smooth manifolds have a rich set of invariants, coming from point-set topology, classic algebraic topology, and geometric topology. The most familiar invariants, which are visible for surfaces, are orientability (a normal invariant, also detected by homology) and genus (a homological invariant).
+Smooth closed manifolds have no local invariants (other than dimension), though geometric manifolds have local invariants, notably the curvature of a Riemannian manifold and the torsion of a manifold equipped with an affine connection. This distinction between local invariants and no local invariants is a common way to distinguish between geometry and topology. All invariants of a smooth closed manifold are thus global.
+Algebraic topology is a source of a number of important global invariant properties.  Some key criteria include the simply connected property and orientability (see below).  Indeed, several branches of mathematics, such as homology and homotopy theory, and the theory of characteristic classes were founded in order to study invariant properties of manifolds.
+
+## Surfaces
+
+### Orientability
+
+In dimensions two and higher, a simple but important invariant criterion is the question of whether a manifold admits a meaningful orientation. Consider a topological manifold with charts mapping to 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} ^{n} $$
+
+  
+. Given an ordered basis for 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    
+
+$$ \mathbb {R} ^{n} $$
+
+  
+, a chart causes its piece of the manifold to itself acquire a sense of ordering, which in 3-dimensions can be viewed as either right-handed or left-handed. Overlapping charts are not required to agree in their sense of ordering, which gives manifolds an important freedom. For some manifolds, like the sphere, charts can be chosen so that overlapping regions agree on their "handedness"; these are orientable manifolds. For others, this is impossible. The latter possibility is easy to overlook, because any closed surface embedded (without self-intersection) in three-dimensional space is orientable.
+Some illustrative examples of non-orientable manifolds include: (1) the Möbius strip, which is a manifold with boundary, (2) the Klein bottle, which must intersect itself in its 3-space representation, and (3) the real projective plane, which arises naturally in geometry.
+
+#### Möbius strip
+
+Begin with an infinite circular cylinder standing vertically, a manifold without boundary. Slice across it high and low to produce two circular boundaries, and the cylindrical strip between them. This is an orientable manifold with boundary, upon which "surgery" will be performed. Slice the strip open, so that it could unroll to become a rectangle, but keep a grasp on the cut ends. Twist one end 180°, making the inner surface face out, and glue the ends back together seamlessly. This results in a strip with a permanent half-twist: the Möbius strip. Its boundary is no longer a pair of circles, but (topologically) a single circle; and what was once its "inside" has merged with its "outside", so that it now has only a single side.  Similarly to the Klein Bottle below, this two dimensional surface would need to intersect itself in two dimensions, but can easily be constructed in three or more dimensions.
+
+#### Klein bottle
+
+Take two Möbius strips; each has a single loop as a boundary. Straighten out those loops into circles, and let the strips distort into cross-caps.  Gluing the circles together will produce a new, closed manifold without boundary, the Klein bottle. Closing the surface does nothing to improve the lack of orientability, it merely removes the boundary. Thus, the Klein bottle is a closed surface with no distinction between inside and outside. In three-dimensional space, a Klein bottle's surface must pass through itself. Building a Klein bottle which is not self-intersecting requires four or more dimensions of space.
+
+#### Real projective plane
+
+Begin with a sphere centered on the origin. Every line through the origin pierces the sphere in two opposite points called antipodes. Although there is no way to do so physically, it is possible (by considering a quotient space) to mathematically merge each antipode pair into a single point. The closed surface so produced is the real projective plane, yet another non-orientable surface. It has a number of equivalent descriptions and constructions, but this route explains its name: all the points on any given line through the origin project to the same "point" on this "plane".
+
+### Genus and the Euler characteristic
+
+For two dimensional manifolds a key invariant property is the genus, or "number of handles" present in a surface. A torus is a sphere with one handle, a double torus is a sphere with two handles, and so on. Indeed, it is possible to fully characterize compact, two-dimensional manifolds on the basis of genus and orientability. In higher-dimensional manifolds genus is replaced by the notion of Euler characteristic, and more generally Betti numbers and homology and cohomology.
+
+## Maps of manifolds
+
+Just as there are various types of manifolds, there are various types of maps of manifolds. In addition to continuous functions and smooth functions generally, there are maps with special properties. In geometric topology a basic type are embeddings, of which knot theory is a central example, and generalizations such as immersions, submersions, covering spaces, and ramified covering spaces.
+Basic results include the Whitney embedding theorem and Whitney immersion theorem.
+In Riemannian geometry, one may ask for maps to preserve the Riemannian metric, leading to notions of isometric embeddings, isometric immersions, and Riemannian submersions; a basic result is the Nash embedding theorem.
+
+### Scalar-valued functions
+
+A basic example of maps between manifolds are scalar-valued functions on a manifold,
+
+  
+    
+      
+        f
+        :
+        M
+        →
+        
+          R
+        
+      
+    
+    
+
+$$ f\colon M\to \mathbb {R} $$
+
+  
+
+or
+
+  
+    
+      
+        f
+        :
+        M
+        →
+        
+          C
+        
+        ,
+      
+    
+    
+
+$$ f\colon M\to \mathbb {C} , $$
+
+  
+
+sometimes called regular functions or functionals, by analogy with algebraic geometry or linear algebra. These are of interest both in their own right, and to study the underlying manifold.
+In geometric topology, most commonly studied are Morse functions, which yield handlebody decompositions, while in mathematical analysis, one often studies solution to partial differential equations, an important example of which is harmonic analysis, where one studies harmonic functions: the kernel of the Laplace operator. This leads to such functions as the spherical harmonics, and to heat kernel methods of studying manifolds, such as hearing the shape of a drum and some proofs of the Atiyah–Singer index theorem.
+
+## Generalizations of manifolds
+
+Infinite dimensional manifolds
+The definition of a manifold can be generalized by dropping the requirement of finite dimensionality.  Thus an infinite dimensional manifold is a topological space locally homeomorphic to a topological vector space over the reals. This omits the point-set axioms, allowing higher cardinalities and non-Hausdorff manifolds; and it omits finite dimension, allowing structures such as Hilbert manifolds to be modeled on Hilbert spaces, Banach manifolds to be modeled on Banach spaces, and Fréchet manifolds to be modeled on Fréchet spaces. Usually one relaxes one or the other condition: manifolds with the point-set axioms are studied in general topology, while infinite-dimensional manifolds are studied in functional analysis.
+Orbifolds
+An orbifold is a generalization of manifold allowing for certain kinds of "singularities" in the topology. Roughly speaking, it is a space which locally looks like the quotients of some simple space (e.g. Euclidean space) by the actions of various finite groups. The singularities correspond to fixed points of the group actions, and the actions must be compatible in a certain sense.
+Algebraic varieties and schemes
+Non-singular algebraic varieties over the real or complex numbers are manifolds. One generalizes this first by allowing singularities, secondly by allowing different fields, and thirdly by emulating the patching construction of manifolds: just as a manifold is glued together from open subsets of Euclidean space, an algebraic variety is glued together from affine algebraic varieties, which are zero sets of polynomials over algebraically closed fields. Schemes are likewise glued together from affine schemes, which are a generalization of algebraic varieties. Both are related to manifolds, but are constructed algebraically using sheaves instead of atlases.
+Because of singular points, a variety is in general not a manifold, though linguistically the French variété, German Mannigfaltigkeit and English manifold are largely synonymous. In French an algebraic variety is called une variété algébrique (an algebraic variety), while a smooth manifold is called une variété différentielle (a differential variety).
+Stratified space
+A "stratified space" is a space that can be divided into pieces ("strata"), with each stratum a manifold, with the strata fitting together in prescribed ways (formally, a filtration by closed subsets). There are various technical definitions, notably a Whitney stratified space (see Whitney conditions) for smooth manifolds and a topologically stratified space for topological manifolds. Basic examples include manifold with boundary (top dimensional manifold and codimension 1 boundary) and manifolds with corners (top dimensional manifold, codimension 1 boundary, codimension 2 corners). Whitney stratified spaces are a broad class of spaces, including algebraic varieties, analytic varieties, semialgebraic sets, and subanalytic sets.
+CW-complexes
+A CW complex is a topological space formed by gluing disks of different dimensionality together. In general the resulting space is singular, hence not a manifold. However, they are of central interest in algebraic topology, especially in homotopy theory.
+Homology manifolds
+A homology manifold is a space that behaves like a manifold from the point of view of homology theory. These are not all manifolds, but (in high dimension) can be analyzed by surgery theory similarly to manifolds, and failure to be a manifold is a local obstruction, as in surgery theory.
+Differential spaces
+Let 
+  
+    
+      
+        M
+      
+    
+    
+
+$$ M $$
+
+  
+ be a nonempty set. Suppose that some family of real functions on 
+  
+    
+      
+        M
+      
+    
+    
+
+$$ M $$
+
+  
+ was chosen. Denote it by 
+  
+    
+      
+        C
+        ⊆
+        
+          
+            R
+          
+          
+            M
+          
+        
+      
+    
+    
+
+$$ C\subseteq \mathbb {R} ^{M} $$
+
+  
+. It is an algebra with respect to the pointwise addition and multiplication. Let 
+  
+    
+      
+        M
+      
+    
+    
+
+$$ M $$
+
+  
+ be equipped with the topology induced by 
+  
+    
+      
+        C
+      
+    
+    
+
+$$ C $$
+
+  
+. Suppose also that the following conditions hold. First: for every 
+  
+    
+      
+        H
+        ∈
+        
+          C
+          
+            ∞
+          
+        
+        
+          (
+          
+            
+              R
+            
+            
+              n
+            
+          
+          )
+        
+      
+    
+    
+
+$$ H\in C^{\infty }\left(\mathbb {R} ^{n}\right) $$
+
+  
+, where 
+  
+    
+      
+        n
+        ∈
+        
+          N
+        
+      
+    
+    
+
+$$ n\in \mathbb {N} $$
+
+  
+, and arbitrary 
+  
+    
+      
+        
+          f
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          f
+          
+            n
+          
+        
+        ∈
+        C
+      
+    
+    
+
+$$ f_{1},\dots ,f_{n}\in C $$
+
+  
+, the composition 
+  
+    
+      
+        H
+        ∘
+        
+          (
+          
+            
+              f
+              
+                1
+              
+            
+            ,
+            …
+            ,
+            
+              f
+              
+                n
+              
+            
+          
+          )
+        
+        ∈
+        C
+      
+    
+    
+
+$$ H\circ \left(f_{1},\dots ,f_{n}\right)\in C $$
+
+  
+. Second: every function, which in every point of 
+  
+    
+      
+        M
+      
+    
+    
+
+$$ M $$
+
+  
+ locally coincides with some function from 
+  
+    
+      
+        C
+      
+    
+    
+
+$$ C $$
+
+  
+, also belongs to 
+  
+    
+      
+        C
+      
+    
+    
+
+$$ C $$
+
+  
+. A pair 
+  
+    
+      
+        (
+        M
+        ,
+        C
+        )
+      
+    
+    
+
+$$ (M,C) $$
+
+  
+ for which the above conditions hold, is called a Sikorski differential space.

@@ -3,15 +3,15 @@
 The following outline is provided as an overview of and topical guide to electrical engineering.
 Electrical engineering – field of engineering that generally deals with the study and application of electricity, electronics and electromagnetism. The field first became an identifiable occupation in the late nineteenth century after commercialization of the electric telegraph and electrical power supply. It now covers a range of subtopics including power, electronics, control systems, signal processing and telecommunications.
 
-
 ## Classification
+
 Electrical engineering can be described as all of the following:
 
 Academic discipline – branch of knowledge that is taught and researched at the college or university level. Disciplines are defined (in part), and recognized by the academic journals in which research is published, and the learned societies and academic departments or faculties to which their practitioners belong.
 Branch of engineering – discipline, skill, and profession of acquiring and applying scientific, economic, social, and practical knowledge, in order to design and build structures, machines, devices, systems, materials and processes.
 
-
 ## Branches of electrical engineering
+
 Power engineering
 Control engineering
 Electronic engineering
@@ -24,25 +24,18 @@ Electro-Optical Engineering and Optoelectronics
 Electronics and Computer Engineering
 Computer engineering
 
-
 ## Related disciplines
+
 Biomedical engineering
 Electronics and Computer Engineering
 Engineering physics
 Mechanical engineering
 Mechatronics
 
-
-## History of electrical engineering
-History of electrical engineering
-
-Timeline of electrical and electronic engineering
-
-
 ## General electrical engineering concepts
 
-
 ### Electromagnetism
+
 Electromagnetism
 
 Electricity
@@ -79,8 +72,8 @@ Resonant cavity
 Transmission line
 Waveguide
 
-
 ### Physical laws
+
 Physical laws
 
 Ampère's law
@@ -95,7 +88,6 @@ Gauss's law
 Faraday's law of induction
 Ampère's law
 Ohm's law
-
 
 ### Control engineering
 
@@ -148,8 +140,8 @@ Mechatronics
 Motion control
 Supervisory control (SCADA)
 
-
 ### Electronics
+
 Electronics
 
 Electrical network/Circuit
@@ -187,8 +179,8 @@ TRIAC
 MOSFET
 Electronic design automation
 
-
 ### Power engineering
+
 Power engineering
 
 Generation
@@ -212,8 +204,8 @@ Static VAR compensator
 Variable-frequency drive
 Ward Leonard control
 
-
 ### Electric vehicles
+
 Electric vehicles
 
 Electric motor
@@ -223,8 +215,8 @@ Rechargeable battery
 Vehicle-to-grid
 Smart Grid
 
-
 ### Signal processing
+
 Signal processing
 
 Analog signal processing
@@ -287,16 +279,16 @@ Hilbert transform
 Laplace transform, Two-sided Laplace transform
 Z-transform
 
-
 ### Instrumentation
+
 Actuator
 Sensors
 Electric motor
 Oscilloscope
 Signal conditioning
 
-
 ### Telecommunication
+
 Telecommunication
 
 Telephone
@@ -316,38 +308,23 @@ Digital audio broadcasting
 Satellite radio
 Satellite
 
-
 ## Electrical engineering occupations
+
 Occupations in electrical/electronics engineering
 Electrical Technologist
 
-
 ## Electrical engineering organizations
+
 International Electrotechnical Commission (IEC)
 
-
 ## Electrical engineering publications
+
 IEEE Spectrum
 IEEE series of journals  Hawkins Electrical Guide
 Iterative Receiver Design
 List of electrical engineering journals
 
-
 ## Persons influential in electrical engineering
+
 List of electrical engineers and their contributions
 List of Russian electrical engineers
-
-
-## See also
-Index of electrical engineering articles
-Outline of engineering
-
-
-## References
-
-
-## External links
-
-International Electrotechnical Commission (IEC)
-MIT OpenCourseWare in-depth look at Electrical Engineering - online courses with video lectures.
-IEEE Global History Network A wiki-based site with many resources about the history of IEEE, its members, their professions and electrical and informational technologies and sciences.

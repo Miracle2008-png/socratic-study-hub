@@ -3,7 +3,6 @@
 An air separation plant separates atmospheric air into its primary components, typically nitrogen and oxygen, and sometimes also argon and other rare inert gases.
 The most common method for air separation is fractional distillation. Cryogenic air separation units (ASUs) are built to provide nitrogen or oxygen and often co-produce argon. Other methods such as membrane, pressure swing adsorption (PSA) and vacuum pressure swing adsorption (VPSA) are commercially used to separate a single component from ordinary air. High purity oxygen, nitrogen, and argon, used for semiconductor device fabrication, require cryogenic distillation. Similarly, the only viable source of the rare gases neon, krypton,  xenon is the distillation of air using at least two distillation columns. Helium is also recovered in advanced air separation processes. 
 
-
 ## Cryogenic distillation process
 
 Pure gases can be separated from air by first cooling it until it liquefies, then selectively distilling the components at their various boiling temperatures. The process can produce high purity gases but is energy-intensive. This process was pioneered by Carl von Linde in the early 20th century and is still used today to produce high purity gases. He developed it in the year 1895; the process remained purely academic for seven years before it was used in industrial applications for the first time (1902).
@@ -21,7 +20,6 @@ Because the boiling point of argon (87.3 K at standard conditions) lies between 
 Finally the products produced in gas form are warmed against the incoming air to ambient temperatures. This requires a carefully crafted heat integration that must allow for robustness against disturbances (due to switch over of the molecular sieve beds). It may also require additional external refrigeration during start-up.
 The separated products are sometimes supplied by pipeline to large industrial users near the production plant. Long distance transportation of products is by shipping liquid product for large quantities or as dewar flasks or gas cylinders for small quantities.
 
-
 ## Non-cryogenic processes
 
 Pressure swing adsorption provides separation of oxygen or nitrogen from air without liquefaction. The process operates around ambient temperature; a zeolite (molecular sponge) is exposed to high pressure air, then the air is released and an adsorbed film of the desired gas is released. The size of compressor is much reduced over a liquefaction plant, and portable oxygen concentrators are made in this manner to provide oxygen-enriched air for medical purposes. Vacuum swing adsorption is a similar process; the product gas is evolved from the zeolite at sub-atmospheric pressure.
@@ -30,46 +28,24 @@ Membrane technologies can provide alternate, lower-energy approaches to air sepa
 Membrane gas separation is used to provide oxygen-poor and nitrogen-rich gases instead of air to fill the fuel tanks of jet liners, thus greatly reducing the chances of accidental fires and explosions. Conversely, membrane gas separation is currently used to provide oxygen-enriched air to pilots flying at great altitudes in aircraft without pressurized cabins.
 Oxygen-enriched air can be obtained exploiting the different solubility of oxygen and nitrogen. Oxygen is more soluble than nitrogen in water, so if air is degassed from water, a stream of 35% oxygen can be obtained.
 
-
 ## Applications
 
-
 ### Rocketry
+
 Liquid oxygen and nitrogen for companies such as SpaceX.
 
-
 ### Medical
+
 Pure oxygen is delivered to large hospitals for use with patients.
 
-
 ### Steel
+
 In steelmaking, oxygen is required for the basic oxygen steelmaking process. Modern basic oxygen steelmaking uses almost two tons of oxygen per ton of steel.
 
-
 ### Ammonia
+
 Nitrogen used in the Haber process to make ammonia.
 
-
 ### Coal gas
+
 Large amounts of oxygen are required for coal gasification projects; cryogenic plants producing 3000 tons/day are found in some projects.
-
-
-## See also
-Louis Paul Cailletet
-Cryogenic gas plant
-Gas separation
-Gas to liquids
-Hampson–Linde cycle
-Industrial gases
-Liquefaction of gases
-Liquid air
-Oxygen concentrator
-Siemens cycle
-
-
-## References
-
-
-## External links
-
-Simulation of air separation plants

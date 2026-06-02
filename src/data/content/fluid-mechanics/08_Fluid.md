@@ -2,12 +2,12 @@
 
 In physics, a fluid is a liquid, gas, or other material that may continuously move and deform (flow) under an applied shear stress, or external force. They have zero shear modulus, or, in simpler terms, are substances which cannot resist any shear force applied to them.
 
-
 ## Introduction
+
 Although the term fluid generally includes both the liquid and gas phases, its definition varies among branches of science. Definitions of solid vary as well, and depending on field, some substances can have both fluid and solid properties. Non-Newtonian fluids like Silly Putty appear to behave similar to a solid when a sudden force is applied. Substances with a very high viscosity such as pitch appear to behave like a solid (see pitch drop experiment) as well. In particle physics, the concept is extended to include fluidic matters other than liquids or gases. A fluid in medicine or biology refers to any liquid constituent of the body (body fluid), whereas "liquid" is not used in this sense. Sometimes liquids given for fluid replacement, either by drinking or by injection, are also called fluids (e.g. "drink plenty of fluids"). In hydraulics, fluid is a term which refers to liquids with certain properties, and is broader than (hydraulic) oils.
 
-
 ## Physics
+
 Fluids display properties such as:
 
 lack of resistance to permanent deformation, resisting only relative rates of deformation in a dissipative, frictional manner, and
@@ -15,7 +15,6 @@ the ability to flow (also described as the ability to take on the shape of the c
 These properties are typically a function of their inability to support a shear stress in static equilibrium. By contrast, solids respond to shear either with a spring-like restoring force—meaning that deformations are reversible—or they require a certain initial stress before they deform (see plasticity).
 Solids respond with restoring forces to both shear stresses and to normal stresses, both compressive and tensile.  By contrast, ideal fluids only respond with restoring forces to normal stresses, called pressure: fluids can be subjected both to compressive stress—corresponding to positive pressure—and to tensile stress, corresponding to negative pressure. Solids and liquids both have tensile strengths, which when exceeded in solids creates irreversible deformation and fracture, and in liquids cause the onset of cavitation. 
 Both solids and liquids have free surfaces, which cost some amount of free energy to form. In the case of solids, the amount of free energy to form a given unit of surface area is called surface energy, whereas for liquids the same quantity is called surface tension. In response to surface tension, the ability of liquids to flow results in behaviour differing from that of solids, though at equilibrium both tend to minimise their surface energy: liquids tend to form rounded droplets, whereas pure solids tend to form crystals. Gases, lacking free surfaces, freely diffuse.
-
 
 ## Modelling
 
@@ -28,8 +27,8 @@ conservation of angular momentum,
 conservation of energy.
 The study of fluids is fluid mechanics, which is subdivided into fluid dynamics and fluid statics depending on whether the fluid is in motion.
 
-
 ### Classification
+
 Depending on the relationship between shear stress and the rate of strain and its derivatives, fluids can be characterized as one of the following:
 
 Newtonian fluids: where stress is directly proportional to rate of strain
@@ -40,15 +39,3 @@ Fluids may be classified by their compressibility:
 Compressible fluid: A fluid that causes volume reduction or density change when pressure is applied to the fluid or when the fluid becomes supersonic.
 Incompressible fluid: A fluid that does not vary in volume with changes in pressure or flow velocity (i.e., ρ=constant) such as water or oil.
 Newtonian and incompressible fluids do not actually exist, but are assumed to be for theoretical settlement. Virtual fluids that completely ignore the effects of viscosity and compressibility are called perfect fluids.
-
-
-## See also
-Matter
-Liquid
-Gas
-Supercritical fluid
-
-
-## References
-
-Bird, Robert Byron; Stewart, Warren E.; Lightfoot, Edward N. (2007). Transport Phenomena. New York: Wiley, Revised Second Edition. p. 912. ISBN 978-0-471-41077-5.

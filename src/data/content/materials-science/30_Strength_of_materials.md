@@ -3,19 +3,18 @@
 The strength of materials is determined using various methods of calculating the stresses and strains in structural members, such as beams, columns, and shafts. The methods employed to predict the response of a structure under loading and its susceptibility to various failure modes takes into account the properties of the materials, such as yield strength, ultimate strength, Young's modulus, and Poisson's ratio. In addition, the mechanical element's macroscopic (geometric) properties, such as its length, width, thickness, boundary constraints, and abrupt changes in geometry, such as holes, are considered.
 The theory began with the consideration of the behavior of one and two dimensional members of structures, whose states of stress can be approximated as two dimensional, and was then generalized to three dimensions to develop a more complete theory of the elastic and plastic behavior of materials. An important founding pioneer in mechanics of materials was Stephen Timoshenko.
 
-
 ## Definition
+
 In the mechanics of materials, the strength of a material is its ability to withstand an applied load without failure or plastic deformation. The field of strength of materials deals with forces and deformations that result from their acting on a material. A load applied to a mechanical member will induce internal forces within the member called stresses when those forces are expressed on a unit basis. The stresses acting on the material cause deformation of the material in various manners including breaking them completely. Deformation of the material is called strain when those deformations too are placed on a unit basis.
 The stresses and strains that develop within a mechanical member must be calculated in order to assess the load capacity of that member. This requires a complete description of the geometry of the member, its constraints, the loads applied to the member and the properties of the material of which the member is composed. The applied loads may be axial (tensile or compressive), or rotational (strength shear). With a complete description of the loading and the geometry of the member, the state of stress and state of strain at any point within the member can be calculated. Once the state of stress and strain within the member is known, the strength (load carrying capacity) of that member, its deformations (stiffness qualities), and its stability (ability to maintain its original configuration) can be calculated.
 The calculated stresses may then be compared to some measure of the strength of the member, such as its material yield or ultimate strength. The calculated deflection of the member may be compared to deflection criteria that are based on the member's use. The calculated buckling load of the member may be compared to the applied load. The calculated stiffness and mass distribution of the member may be used to calculate the member's dynamic response and then compared to the acoustic environment in which it will be used.
 Material strength refers to the point on the engineering stress–strain curve (yield stress) beyond which the material experiences deformations that will not be completely reversed upon removal of the loading and as a result, the member will have a permanent deflection. The ultimate strength of the material refers to the maximum value of stress reached. The fracture strength is the stress value at fracture (the last stress value recorded).
 
-
 ### Types of loading
+
 Transverse loading – Forces applied perpendicular to the longitudinal axis of a member. Transverse loading causes the member to bend and deflect from its original position, with internal tensile and compressive strains accompanying the change in curvature of the member. Transverse loading also induces shear forces that cause shear deformation of the material and increase the transverse deflection of the member.
 Axial loading – The applied forces are collinear with the longitudinal axis of the member. The forces cause the member to either stretch or shorten.
 Torsional loading – Twisting action caused by a pair of externally applied equal and oppositely directed force couples acting on parallel planes or by a single external couple applied to a member that has one end fixed against rotation.
-
 
 ### Stress terms
 
@@ -35,7 +34,10 @@ Uniaxial stress is expressed by
         ,
       
     
-    {\displaystyle \sigma ={\frac {F}{A}},}
+    
+
+$$ \sigma ={\frac {F}{A}}, $$
+
   
 
 where F is the force acting on an area A. The area can be the undeformed area or the deformed area, depending on whether engineering stress or true stress is of interest.
@@ -44,8 +46,8 @@ Compressive stress (or compression) is the stress state caused by an applied loa
 Tensile stress is the stress state caused by an applied load that tends to elongate the material along the axis of the applied load, in other words, the stress caused by pulling the material. The strength of structures of equal cross-sectional area loaded in tension is independent of shape of the cross-section. Materials loaded in tension are susceptible to stress concentrations such as material defects or abrupt changes in geometry. However, materials exhibiting ductile behaviour (many metals for example) can tolerate some defects while brittle materials (such as ceramics and some steels) can fail well below their ultimate material strength.
 Shear stress is the stress state caused by the combined energy of a pair of opposing forces acting along parallel lines of action through the material, in other words, the stress caused by faces of the material sliding relative to one another. An example is cutting paper with scissors or stresses due to torsional loading.
 
-
 ### Stress parameters for resistance
+
 Material resistance can be expressed in several mechanical stress parameters. The term material strength is used when referring to mechanical stress parameters. These are physical quantities with dimension homogeneous to pressure and force per unit surface. The traditional measure unit for strength are therefore MPa in the International System of Units, and the psi between the United States customary units. Strength parameters include: yield strength, tensile strength, fatigue strength, crack resistance, and other parameters.
 
 Yield strength is the lowest stress that produces a permanent deformation in a material. In some materials, like aluminium alloys, the point of yielding is difficult to identify, so it is usually defined as the stress required to cause 0.2% plastic strain. This is called a 0.2% proof stress.
@@ -81,17 +83,19 @@ Fatigue strength is a more complex measure of the strength of a material that co
         
       
     
-    {\displaystyle \Delta \sigma =\sigma _{\mathrm {max} }-\sigma _{\mathrm {min} }}
+    
+
+$$ \Delta \sigma =\sigma _{\mathrm {max} }-\sigma _{\mathrm {min} } $$
+
   
 ). In the case of cyclic loading it can be appropriately expressed as an amplitude usually at zero mean stress, along with the number of cycles to failure under that condition of stress.
 Impact strength is the capability of the material to withstand a suddenly applied load and is expressed in terms of energy. Often measured with the Izod impact strength test or Charpy impact test, both of which measure the impact energy required to fracture a sample. Volume, modulus of elasticity, distribution of forces, and yield strength affect the impact strength of a material. In order for a material or object to have a high impact strength, the stresses must be distributed evenly throughout the object. It also must have a large volume with a low modulus of elasticity and a high material yield strength.
 
-
 ### Strain parameters for resistance
+
 Deformation of the material is the change in geometry created when stress is applied (as a result of applied forces, gravitational fields, accelerations, thermal expansion, etc.). Deformation is expressed by the displacement field of the material.
 Strain, or reduced deformation, is a mathematical term that expresses the trend of the deformation change among the material field. Strain is the deformation per unit length. In the case of uniaxial loading the displacement of a specimen (for example, a bar element) lead to a calculation of strain expressed as the quotient of the displacement and the original length of the specimen. For 3D displacement fields it is expressed as derivatives of displacement functions in terms of a second-order tensor (with 6 independent elements).
 Deflection is a term to describe the magnitude to which a structural element is displaced when subject to an applied load.
-
 
 ### Stress–strain relations
 
@@ -99,8 +103,8 @@ Elasticity is the ability of a material to return to its previous shape after st
 Plasticity or plastic deformation is the opposite of elastic deformation and is defined as unrecoverable strain. Plastic deformation is retained after the release of the applied stress. Most materials in the linear-elastic category are usually capable of plastic deformation. Brittle materials, like ceramics, do not experience any plastic deformation and will fracture under relatively low strain, while ductile materials such as metallics, lead, or polymers will plastically deform much more before a fracture initiation.
 Consider the difference between a carrot and chewed bubble gum. The carrot will stretch very little before breaking. The chewed bubble gum, on the other hand, will plastically deform enormously before finally breaking.
 
-
 ## Design terms
+
 Ultimate strength is an attribute related to a material, rather than just a specific specimen made of the material, and as such it is quoted as the force per unit of cross section area (N/m2). The ultimate strength is the maximum stress that a material can withstand before it breaks or weakens. For example, the ultimate tensile strength (UTS) of AISI 1018 Steel is 440 MPa. In Imperial units, the unit of stress is given as lbf/in2 or pounds-force per square inch. This unit is often abbreviated as psi. One thousand psi is abbreviated ksi.
 A factor of safety is a design criteria that an engineered component or structure must achieve. 
   
@@ -116,7 +120,10 @@ A factor of safety is a design criteria that an engineered component or structur
         f
       
     
-    {\displaystyle FS=F/f}
+    
+
+$$ FS=F/f $$
+
   
 , where FS: the factor of safety, Rf The applied stress, and F: ultimate allowable stress (psi or MPa)
 Margin of Safety is the common method for design criteria. It is defined MS = Pu/P − 1.
@@ -136,7 +143,10 @@ For example, to achieve a factor of safety of 4, the allowable stress in an AISI
         S
       
     
-    {\displaystyle F=UTS/FS}
+    
+
+$$ F=UTS/FS $$
+
   
  = 440/4 = 110 MPa, or 
   
@@ -145,11 +155,13 @@ For example, to achieve a factor of safety of 4, the allowable stress in an AISI
         F
       
     
-    {\displaystyle F}
+    
+
+$$ F $$
+
   
  = 110×106 N/m2. Such allowable stresses are also known as "design stresses" or "working stresses".
 Design stresses that have been determined from the ultimate or yield point values of the materials give safe and reliable results only for the case of static loading. Many machine parts fail when subjected to a non-steady and continuously varying loads even though the developed stresses are below the yield point. Such failures are called fatigue failure. The failure is by a fracture that appears to be brittle with little or no visible evidence of yielding. However, when the stress is kept below "fatigue stress" or "endurance limit stress", the part will endure indefinitely. A purely reversing or cyclic stress is one that alternates between equal positive and negative peak stresses during each cycle of operation. In a purely cyclic stress, the average stress is zero. When a part is subjected to a cyclic stress, also known as stress range (Sr), it has been observed that the failure of the part occurs after a number of stress reversals (N) even if the magnitude of the stress range is below the material's yield strength. Generally, higher the range stress, the fewer the number of reversals needed for failure.
-
 
 ### Failure theories
 
@@ -163,17 +175,3 @@ Maximum distortion energy theory, also known as maximum distortion energy theory
 Fracture mechanics was established by Alan Arnold Griffith and George Rankine Irwin. This important theory is also known as numeric conversion of toughness of material in the case of crack existence.
 A material's strength depends on its microstructure. The engineering processes to which a material is subjected can alter its microstructure. Strengthening mechanisms that alter the strength of a material include work hardening, solid solution strengthening, precipitation hardening, and grain boundary strengthening.
 Strengthening mechanisms are accompanied by the caveat that some other mechanical properties of the material may degenerate in an attempt to make a material stronger. For example, in grain boundary strengthening, although yield strength is maximized with decreasing grain size, ultimately, very small grain sizes make the material brittle. In general, the yield strength of a material is an adequate indicator of the material's mechanical strength. Considered in tandem with the fact that the yield strength is the parameter that predicts plastic deformation in the material, one can make informed decisions on how to increase the strength of a material depending on its microstructural properties and the desired end effect. Strength is expressed in terms of the limiting values of the compressive stress, tensile stress, and shear stresses that would cause failure. The effects of dynamic loading are probably the most important practical consideration of the theory of elasticity, especially the problem of fatigue. Repeated loading often initiates cracks, which grow until failure occurs at the corresponding residual strength of the structure. Cracks always start at a stress concentrations especially changes in cross-section of the product or defects in manufacturing, near holes and corners at nominal stress levels far lower than those quoted for the strength of the material.
-
-
-## See also
-
-
-## References
-
-
-## Further reading
-
-
-## External links
-Failure theories
-Case studies in structural failure

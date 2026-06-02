@@ -7,13 +7,12 @@ The electron or arrow pushing method is often used in illustrating a reaction me
 
 Mechanisms also are of interest in inorganic chemistry.  An often quoted mechanistic experiment involved the reaction of the labile hexaaquo chromous reductant with the exchange inert pentammine cobalt(III) chloride.
 
-
 ## Reaction intermediates
 
 Reaction intermediates are chemical species, often unstable and short-lived.  They can, however, sometimes be isolated. They are neither reactants nor products of the overall chemical reaction, but temporary products and/or reactants in the mechanism's reaction steps.  Reaction intermediates are often confused with the transition state. The transition states are, in contrast,  fleeting, high-energy species that cannot be isolated.  The kinetics (relative rates of the reaction steps and the rate equation for the overall reaction) are discussed in terms of the energy required for the conversion of the reactants to the proposed transition states (molecular states that correspond to maxima on the reaction coordinates, and to saddle points on the  potential energy surface for the reaction).
 
-
 ## Chemical kinetics
+
 Information about the mechanism of a reaction is often provided by analyzing chemical kinetics to determine the reaction order in each reactant.
 Illustrative is the oxidation of carbon monoxide by nitrogen dioxide:
 
@@ -42,7 +41,10 @@ The rate law for this reaction is:
         
       
     
-    {\displaystyle r=k[NO_{2}]^{2}}
+    
+
+$$ r=k[NO_{2}]^{2} $$
+
   
 
 This form shows that the rate-determining step does not involve CO.  Instead, the slow step involves two molecules of NO2. A possible mechanism for the overall reaction that explains the rate law is:
@@ -57,7 +59,10 @@ When determining the overall rate law for a reaction, the slowest step is the st
         r
       
     
-    {\displaystyle r}
+    
+
+$$ r $$
+
   
  which obeys the rate law 
   
@@ -85,7 +90,10 @@ When determining the overall rate law for a reaction, the slowest step is the st
         
       
     
-    {\displaystyle r=k[NO_{2}(t)]^{2}}
+    
+
+$$ r=k[NO_{2}(t)]^{2} $$
+
   
 .
 Other reactions may have mechanisms of several consecutive steps. In organic chemistry, the reaction mechanism for the benzoin condensation, put forward in 1903 by A. J. Lapworth, was one of the first proposed reaction mechanisms.
@@ -116,8 +124,8 @@ The sum of these two equations is  k1[CH3CHO] – 2 k4[•CH3]2 = 0. This may be
 It follows that the rate of formation of CH4 is d[CH4]/dt = k2[•CH3][CH3CHO] = k2 (k1 / 2k4)1/2 [CH3CHO]3/2
 Thus the mechanism explains the observed rate expression, for the principal products CH4 and CO. The exact rate law may be even more complicated,  there are also minor products such as acetone (CH3COCH3) and propanal (CH3CH2CHO).
 
-
 ## Other experimental methods to determine mechanism
+
 Many experiments that suggest the possible sequence of steps in a reaction mechanism have been designed, including:
 
 measurement of the effect of temperature (Arrhenius equation) to determine the activation energy
@@ -131,12 +139,11 @@ infrared chemiluminescence to detect vibrational excitation in the products
 electrospray ionization mass spectrometry.
 crossover experiments.
 
-
 ## Theoretical modeling
+
 A correct reaction mechanism is an important part of accurate predictive modeling. For many combustion and plasma systems, detailed mechanisms are not available or require development.
 Even when information is available, identifying and assembling the relevant data from a variety of sources, reconciling discrepant values and extrapolating to different conditions can be a difficult process without expert help. Rate constants or thermochemical data are often not available in the literature, so computational chemistry techniques or group additivity methods must be used to obtain the required parameters.
 Computational chemistry methods can also be used to calculate potential energy surfaces for reactions and determine probable mechanisms.
-
 
 ## Molecularity
 
@@ -146,22 +153,3 @@ A reaction step involving one molecular entity is called unimolecular.
 A reaction step involving two molecular entities is called bimolecular.
 A reaction step involving three molecular entities is called trimolecular or termolecular.
 In general, reaction steps involving more than three molecular entities do not occur, because is statistically improbable in terms of Maxwell distribution to find such a transition state.
-
-
-## See also
-Organic reactions by mechanism
-Nucleophilic acyl substitution
-Neighbouring group participation
-Finkelstein reaction
-Lindemann mechanism
-Electrochemical reaction mechanism
-Nucleophilic abstraction
-
-
-## References
-
-L.G.WADE, ORGANIC CHEMISTRY 7TH ED, 2010
-
-
-## External links
-Reaction mechanisms for combustion of hydrocarbons Archived 2015-05-14 at the Wayback Machine

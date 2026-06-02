@@ -9,14 +9,13 @@ analytical: to identify the size of each fraction of a mixture is attributable t
 preparative: to "prepare" fractions for input into processes that benefit when components are separated.
 Separations may be performed on a small scale, as in a laboratory for analytical purposes, or on a large scale, as in a chemical plant.
 
-
 ## Complete and incomplete separation
 
 Some types of separation require complete purification of a certain component. An example is the production of aluminum metal from bauxite ore through electrolysis refining. In contrast, an incomplete separation process may specify an output to consist of a mixture instead of a single pure component. A good example of an incomplete separation technique is oil refining. Crude oil occurs naturally as a mixture of various hydrocarbons and impurities. The refining process splits this mixture into other, more valuable mixtures such as natural gas, gasoline and chemical feedstocks, none of which are pure substances, but each of which must be separated from the raw crude.
 In both complete separation and incomplete separation, a series or cascade of separations may be necessary to obtain the desired end products. In the case of oil refining, crude is subjected to a long series of individual distillation steps, each of which produces a different product or intermediate.
 
-
 ## List of separation techniques
+
 Centrifugation and cyclonic separation, separates based on density differences
 Chelation
 Chromatography separates dissolved substances by different interaction with (i.e., travel through) a material.
@@ -65,23 +64,3 @@ Sublimation
 Vapor–liquid separation, separates by gravity, based on the Souders–Brown equation
 Winnowing
 Zone refining
-
-
-## See also
-Analytical chemistry – Study of the separation, identification, and quantification of matter
-Chemical process – A method or means of somehow changing one or more chemicals or chemical compounds.
-High-performance liquid chromatography – Technique in analytical chemistry
-Unit operation – Basic step in a process
-Filtration – Process that separates solids from fluids
-
-
-## References
-
-
-## Further reading
-National Academies of Sciences, Engineering, and Medicine (2019). A Research Agenda for Transforming Separation Science (Report). Washington, DC: The National Academies Press. doi:10.17226/25421. ISBN 978-0-309-49170-9.{{cite report}}:  CS1 maint: multiple names: authors list (link)
-
-
-## External links
-Separation of Mixtures Using Different Techniques Archived 2013-06-05 at the Wayback Machine, instructions for performing classroom experiments
-Separation of Components of a Mixture Archived 2013-06-05 at the Wayback Machine, instructions for performing classroom experiments

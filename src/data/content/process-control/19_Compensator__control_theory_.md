@@ -1,0 +1,4 @@
+# Compensator (control theory)
+
+A compensator is a component in the control system that is used to regulate another system. Usually, it is done by conditioning the input or the output to that system. There are three types of compensators: lag, lead and lag-lead compensators.
+Adjusting a control system in order to improve its performance might lead to unexpected behaviour (e.g., poor stability or even instability by increasing the gain value). In order to make the system behave as desired, it is necessary to redesign the system and add a compensator, a device which compensates for the deficient performance of the original system.

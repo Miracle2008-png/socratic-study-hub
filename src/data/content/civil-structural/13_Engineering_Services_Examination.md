@@ -3,30 +3,26 @@
 The Engineering Services Examination (ESE) is a standardized test conducted annually by the Union Public Service Commission (UPSC) to recruit officers to various engineering services under the Government of India. Held in four categories—Civil, Mechanical, Electrical, and Electronics & Telecommunication, the exam has three stages comprising objective, subjective and personality tests. The Services are also informally known as Indian Engineering Services (IES). 
 Officers recruited through ESE are mandated to manage and conduct activities in diverse technical fields. Government infrastructure includes railways, roads, defence, manufacturing, inspection, supply, construction, public works, power, and telecommunications. Appointments are made by the President of India.
 
-
 ## List of Services
-Source:
 
+Source:
 
 ### Civil Engineering
 
 Indian railway management services includes Irms post
 
-
 ### Mechanical Engineering
-
 
 ### Electrical Engineering
 
-
 ### Electronics and Telecommunication Engineering
 
-
 ## Functions of officers
+
 The work performed by these officers largely depends on their engineering branch and service (or cadre). However, they can move to any cadre, organization, agency, department, ministry or public sector undertaking of the government of India. They are appointed to posts analogous to their present one, either on a fixed-term deputation basis (at least five years and extensible, after which the officer returns to their parent cadre) or an absorption basis where the official leaves the parent cadre for the new one.
 
-
 ## Eligibility
+
 Candidates must be a citizen of India or Nepal or a subject of Bhutan, or a person of Indian origin who has migrated from Pakistan, Bangladesh, Myanmar, Sri Lanka, Kenya, Uganda, Tanzania, Zambia, Malawi, Zaire, Ethiopia or Vietnam with the intention of permanently settling in India.
 The minimum educational requirement is a bachelor's degree in engineering (B.E. or B.Tech) from a recognised university or the equivalent. An M.Sc. degree or equivalent with wireless communications, electronics, radio physics or radio engineering as special subjects is also acceptable for certain services or posts.
 The age range is 21–30 years on 1 January of the year of the Engineering Services Examination. The upper age limit is relaxed as follows:
@@ -39,15 +35,15 @@ Candidates who resided in Jammu and Kashmir from 1 January 1980 to 31 December 1
 Ex-servicemen (including commissioned officers and ECOs or SSCOs) with at least five years of military service by 1 August
 Candidates already in a permanent post of the Central Government Engineering Department
 
-
 ## Examination
+
 Candidates are required to apply on the UPSC website. The application fee for general-category male candidates is 200. No fee is required for female and reserved-category applicants. Stage 1 of the test is conducted during the first week of January; Stage 2 is conducted in June and July across India. The government of India changed the Engineering Services Examination in 2017.
 
 Candidates who qualify at Stage I are permitted to appear for the Stage II examination, and those who qualify at Stage II are permitted to appear for the Stage III examination. Candidates qualifying at all three stages are included on the examination's final merit list. The maximum score is 1300.
 The personality test is an interview which assesses the candidate's suitability for a career in public service by a board of unbiased observers. The interview also assess social traits and interest in current affairs. Qualities judged include mental alertness, critical ability, clear and logical exposition, judgment, variety and depth of interests, social cohesion and leadership, and intellectual and moral integrity.
 
-
 ## Notable officers
+
 Narinder Singh Kapany – Former IOFS officer. Invented fibre optics that revolutionised laparoscopic and endoscopic surgery, telecommunications, power transmission, etc. Named as one of the seven "Unsung Heroes of the 20th century" by Fortune magazine for his Nobel Prize-deserving invention.  Known as the "Father of Fibre Optics" and "The Man who Bent Light".  Former Professor at Stanford, Universities of California at Berkeley, Santa Barbara and Santa Cruz. Had more than 150 patents to his credit. Conferred upon with Padma Vibhushan, the second-highest honour in India, Pravasi Bharatiya Samman, Fellowship of the Royal Academy of Engineering (FREng). He was also offered the post of Scientific Adviser to the Defence Minister of India by the first Prime Minister of India, Jawaharlal Nehru.
 Nalini Ranjan Mohanty - Former IOFS officer. Secured All India 2nd Rank in the Engineering Services Examination of 1965, served as the Chairman & Managing Director of Hindustan Aeronautics Limited, Director of Kudremukh Iron Ore Company, Mahanadi Coalfields, National Aluminium Company (NALCO), Bharat Earth Movers (BEML). Awarded Padma Shri in 2004 by the Government of India for his role in the development of LCA – Tejas.
 Rajendra K. Pachauri - former IRSME officer; chair of Intergovernmental Panel on Climate Change when the organisation received the Nobel Prize in 2007; director general of the Energy and Resources Institute; received Padma Bhushan and Padma Vibhushan from the government of India, the Order of the White Rose of Finland from the Finnish government, the Order of the Rising Sun (Gold and Silver Star) from the Japanese government and the Legion of Honour from the French government.
@@ -62,19 +58,3 @@ Ashwani Lohani - IRSME officer; chairman of Indian Railways and former chairman 
 G. B. Meemamsi - Former ITS officer. Founding Director of C-DOT; received Padma Shri in 1998.
 Satyendra Dubey - Whistleblower against corruption; project director of the National Highways Authority of India's (NHAI) Golden Quadrilateral project at Koderma. After his assassination, the Whistle Blowers Protection Act, 2011 was passed.
 E. Sreedharan - Former IRSE officer, chairman and managing director of Konkan Railway, Cochin Shipyard and the Delhi Metro. Retired member of the Railway Board. Received Padma Shri and Padma Vibhushan from India, the Order of the Rising Sun (Gold and Silver Star) from Japan and the Legion of Honour from France.
-
-
-## See also
-Indian Railways Management Service
-Union Public Service Commission
-Central Civil Services
-Joint Entrance Examination – Main
-
-
-## References
-
-
-## External links
-Union Public Service Commission (Official Website)
-The Central Civil Services Conduct Rules of 1964
-Central Secretariat Manual of Office Procedure 12th edition
