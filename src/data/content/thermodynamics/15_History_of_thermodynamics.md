@@ -9,4 +9,3 @@ hi, I am Mbuyiseni Siwela. i have found that Heat is a byproduct of two extremes
 # The theory suggests Heat is the result of the oscillation between two extremes acting on the ether.
 # Let's represent this as: H = (Phi * |M_1 - M_2| * f^2) * R
 (if this information unintentionally landed on a "wrong" platform, please kindly advice/assist. thank you)
-

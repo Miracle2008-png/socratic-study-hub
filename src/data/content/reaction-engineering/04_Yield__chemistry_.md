@@ -3,7 +3,6 @@
 In chemistry, yield, also known as reaction yield or chemical yield, refers to the amount of product obtained in a chemical reaction. Yield is one of the primary factors that scientists must consider in organic and inorganic chemical synthesis processes. In chemical reaction engineering, "yield",  "conversion" and "selectivity" are terms used to describe ratios of how much of a reactant was consumed (conversion), how much desired product was formed (yield) in relation to the undesired product (selectivity), represented as X, Y, and S.
 The term yield also plays an important role in analytical chemistry, as individual compounds are recovered in purification processes in a range from quantitative yield (100 %) to low yield (< 50 %).
 
-
 ## Definitions
 
 In chemical reaction engineering, "yield", "conversion" and "selectivity" are terms used to describe ratios of how much of a reactant has reacted—conversion, how much of a desired product was formed—yield,  and how much desired product was formed in ratio to the undesired product—selectivity, represented as X, S, and Y.
@@ -14,7 +13,6 @@ In the section "Calculations of yields in the monitoring of reactions" in the 19
 According to the 1996 edition of Vogel's Textbook, yields close to 100% are called quantitative, yields above 90% are called excellent, yields above 80% are very good,  yields above 70% are good, yields above 50% are fair, and yields below 40% are called poor. In their 2002 publication, Petrucci, Harwood, and Herring wrote that Vogel's Textbook names were arbitrary, and not universally accepted, and depending on the nature of the reaction in question, these expectations may be unrealistically high. Yields may appear to be 100% or above when products are impure, as the measured weight of the product will include the weight of any impurities.
 In their 2016 laboratory manual, Experimental Organic Chemistry, the authors described the "reaction yield" or "absolute yield" of a chemical reaction as the "amount of pure and dry product yielded in a reaction". They wrote that knowing the stoichiometry of a chemical reaction—the numbers and types of atoms in the reactants and products, in a balanced equation "make it possible to compare different elements through stoichiometric factors." Ratios obtained by these quantitative relationships are useful in data analysis.
 
-
 ## Theoretical, actual, and percent yields
 The percent yield is a comparison between the actual yield—which is the weight of the intended product of a chemical reaction in a laboratory setting—and the theoretical yield—the measurement of pure intended isolated product, based on the chemical equation of a flawless chemical reaction, and is defined as,
 
@@ -22,7 +20,6 @@ The  ideal relationship between products and reactants in a chemical reaction ca
 When more than one reactant participates in a reaction, the yield is usually calculated based on the amount of the limiting reactant, whose amount is less than stoichiometrically equivalent (or just equivalent) to the amounts of all other reactants present. Other reagents present in amounts greater than required to react with all the limiting reagent present are considered excess. As a result, the yield should not be automatically taken as a measure for reaction efficiency.
 In their 1992 publication General Chemistry, Whitten, Gailey, and Davis described the theoretical yield as the amount predicted by a stoichiometric calculation based on the number of moles of all reactants present. This calculation assumes that only one reaction occurs and that the limiting reactant reacts completely.
 According to Whitten, the actual yield is always smaller (the percent yield is less than 100%), often very much so, for several reasons. As a result, many reactions are incomplete and the reactants are not completely converted to products. If a reverse reaction occurs, the final state contains both reactants and products in a state of chemical equilibrium. Two or more reactions may occur simultaneously, so that some reactant is converted to undesired side products. Losses occur in the separation and purification of the desired product from the reaction mixture. Impurities are present in the starting material which do not react to give desired product.
-
 
 ## Example
 This is an example of an esterification reaction where one molecule acetic acid (also called ethanoic acid) reacts with one molecule ethanol, yielding one molecule ethyl acetate (a bimolecular second-order reaction of the type A + B → C):
@@ -34,16 +31,12 @@ The theoretical molar yield is 2.0 mol (the molar amount of the limiting compoun
 The molar yield of the product is calculated from its weight (132 g ÷ 88 g/mol = 1.5 mol).
 The % yield is calculated from the actual molar yield and the theoretical molar yield (1.5 mol ÷ 2.0 mol × 100% = 75%).
 
-
 ## Purification of products
 In his 2016 Handbook of Synthetic Organic Chemistry, Michael Pirrung wrote that yield is one of the primary factors synthetic chemists must consider in evaluating a synthetic method or a particular transformation in "multistep syntheses." He wrote that a yield based on recovered starting material (BRSM) or (BORSM) does not provide the theoretical yield or the "100% of the amount of product calculated", that is necessary in order to take the next step in the multistep systhesis.
 Purification steps always lower the yield, through losses incurred during the transfer of material between reaction vessels and purification apparatus or imperfect separation of the product from impurities, which may necessitate the discarding of fractions deemed insufficiently pure.  The yield of the product measured after purification (typically to >95% spectroscopic purity, or to sufficient purity to pass combustion analysis) is called the isolated yield of the reaction.
 
-
 ## Internal standard yield
 Yields can also be calculated by measuring the amount of product formed (typically in the crude, unpurified reaction mixture) relative to a known amount of an added internal standard, using techniques like Gas chromatography (GC),  High-performance liquid chromatography, or Nuclear magnetic resonance spectroscopy (NMR spectroscopy) or magnetic resonance spectroscopy (MRS).  A yield determined using this approach is known as an internal standard yield.  Yields are typically obtained in this manner to accurately determine the quantity of product produced by a reaction, irrespective of potential isolation problems.  Additionally, they can be useful when isolation of the product is challenging or tedious, or when the rapid determination of an approximate yield is desired.  Unless otherwise indicated, yields reported in the synthetic organic and inorganic chemistry literature refer to isolated yields, which better reflect the amount of pure product one is likely to obtain under the reported conditions, upon repeating the experimental procedure.
 
-
 ## Reporting of yields
 In their 2010 Synlett article, Martina Wernerova and organic chemist, Tomáš Hudlický, raised concerns about inaccurate reporting of yields, and offered solutions—including the proper characterization of compounds. After performing careful control experiments, Wernerova and Hudlický said that each physical manipulation (including extraction/washing, drying over desiccant, filtration, and column chromatography) results in a loss of yield of about 2%.  Thus, isolated yields measured after standard aqueous workup and chromatographic purification should seldom exceed 94%. They called this  phenomenon  "yield inflation" and said that yield inflation had gradually crept upward in recent decades in chemistry literature.  They attributed yield inflation to careless measurement of yield on reactions conducted on small scale, wishful thinking and a desire to report higher numbers for publication purposes.
-

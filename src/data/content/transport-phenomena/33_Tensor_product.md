@@ -4,334 +4,195 @@ In mathematics, the tensor product
   
     
       
-        V
-        ⊗
-        W
       
     
     
 
-$$ V\otimes W $$
-
   
- of two vector spaces 
   
     
       
-        V
       
     
     
 
-$$ V $$
-
   
- and 
   
     
       
-        W
       
     
     
 
-$$ W $$
-
   
- (over the same field) is a vector space to which is associated a bilinear map 
   
     
       
-        V
-        ×
-        W
-        →
-        V
-        ⊗
-        W
       
     
     
 
-$$ V\times W\rightarrow V\otimes W $$
-
   
- that maps a pair 
   
     
       
-        (
-        v
-        ,
-        w
-        )
       
     
     
 
-$$ (v,w) $$
-
   
-, where 
   
     
       
-        v
-        ∈
-        V
-        ,
-        w
-        ∈
-        W
       
     
     
 
-$$ v\in V,w\in W $$
-
   
-, to an element of 
   
     
       
-        V
-        ⊗
-        W
       
     
     
 
-$$ V\otimes W $$
-
   
- denoted ⁠
   
     
       
-        v
-        ⊗
-        w
       
     
     
 
-$$ v\otimes w $$
-
   
-⁠.
-An element of the form 
   
     
       
-        v
-        ⊗
-        w
       
     
     
 
-$$ v\otimes w $$
-
   
- is called the tensor product of 
   
     
       
-        v
       
     
     
 
-$$ v $$
-
   
- and 
   
     
       
-        w
       
     
     
 
-$$ w $$
-
   
-. An element of 
   
     
       
-        V
-        ⊗
-        W
       
     
     
 
-$$ V\otimes W $$
-
   
- is a tensor, and the tensor product of two vectors is sometimes called an elementary tensor or a decomposable tensor. The elementary tensors span 
   
     
       
-        V
-        ⊗
-        W
       
     
     
 
-$$ V\otimes W $$
-
   
- in the sense that every element of 
   
     
       
-        V
-        ⊗
-        W
       
     
     
 
-$$ V\otimes W $$
-
   
- is a sum of elementary tensors. If bases are given for 
   
     
       
-        V
       
     
     
 
-$$ V $$
-
   
- and 
   
     
       
-        W
       
     
     
 
-$$ W $$
-
   
-, a basis of 
   
     
       
-        V
-        ⊗
-        W
       
     
     
 
-$$ V\otimes W $$
-
   
- is formed by all tensor products of a basis element of 
   
     
       
-        V
       
     
     
 
-$$ V $$
-
   
- and a basis element of 
   
     
       
-        W
       
     
     
 
-$$ W $$
-
   
-.
-The tensor product of two vector spaces captures the properties of all bilinear maps in the sense that a bilinear map from 
   
     
       
-        V
-        ×
-        W
       
     
     
 
-$$ V\times W $$
-
   
- into another vector space 
   
     
       
-        Z
       
     
     
 
-$$ Z $$
-
   
- factors uniquely through a linear map 
   
     
       
-        V
-        ⊗
-        W
-        →
-        Z
       
     
     
 
-$$ V\otimes W\to Z $$
-
   
- (see § Universal property), i.e. the bilinear map is associated to a unique linear map from the tensor product 
   
     
       
-        V
-        ⊗
-        W
       
     
     
 
-$$ V\otimes W $$
-
   
- to 
   
     
       
-        Z
       
     
     
 
-$$ Z $$
-
   
-.
-Tensor products are used in many application areas, including physics and engineering. For example, in general relativity, the gravitational field is described through the metric tensor, which is a tensor field with one tensor at each point of the space-time manifold, and each belonging to the tensor product of the cotangent space at the point with itself.
 
 ## Definitions and constructions
 

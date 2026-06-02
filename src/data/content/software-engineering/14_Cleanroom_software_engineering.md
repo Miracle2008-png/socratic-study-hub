@@ -2,10 +2,8 @@
 
 The cleanroom software engineering  process is a software development process intended to produce software with a certifiable level of reliability. The central principles are software development based on formal methods, incremental implementation under statistical quality control, and statistically sound testing.
 
-
 ## Philosophy
 The focus of the cleanroom process is on defect prevention rather than defect removal. The name "cleanroom" was chosen to evoke the cleanrooms used in the electronics industry to prevent the introduction of defects during the fabrication of semiconductors.
-
 
 ## Central principles
 The basic principles of the cleanroom process are
@@ -16,4 +14,3 @@ Incremental implementation under statistical quality control
 Cleanroom development uses an iterative approach, in which the product is developed in increments that gradually increase the implemented functionality. The quality of each increment is measured against pre-established standards to verify that the development process is proceeding acceptably. A failure to meet quality standards results in the cessation of testing for the current increment and a return to the design phase.
 Statistically sound testing
 Software testing in the cleanroom process is carried out as a statistical experiment. Based on the formal specification, a representative subset of software input/output trajectories is selected and tested. This sample is then statistically analyzed to produce an estimate of the reliability of the software and a level of confidence in that estimate.
-

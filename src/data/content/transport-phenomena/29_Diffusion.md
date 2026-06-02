@@ -10,63 +10,42 @@ When talking about the extent of diffusion, two length scales are used in two di
   
     
       
-        D
       
     
-    {\displaystyle D}
   
- is the diffusion coefficient, having dimensions area / time):
 
-Brownian motion of an impulsive point source (for example, one single spray of perfume)—the square root of the mean squared displacement from this point. In Fickian diffusion, this is 
   
     
       
         
           
-            2
-            n
-            D
-            t
           
         
       
     
-    {\displaystyle {\sqrt {2nDt}}}
   
-, where 
   
     
       
-        n
       
     
-    {\displaystyle n}
   
- is the dimension of this Brownian motion;
-Constant concentration source in one dimension—the diffusion length. In Fickian diffusion, this is 
   
     
       
-        2
         
           
-            D
-            t
           
         
       
     
-    {\displaystyle 2{\sqrt {Dt}}}
   
-.
-
 
 ## Diffusion vs. bulk flow
 "Bulk flow" is the movement/flow of an entire body due to a pressure gradient (for example, water coming out of a tap). "Diffusion" is the gradual movement/dispersion of concentration within a body with no net movement of matter. An example of a process where both bulk motion and diffusion occur is human breathing.
 First, there is a "bulk flow" process. The lungs are located in the thoracic cavity, which expands as the first step in external respiration. This expansion leads to an increase in volume of the alveoli in the lungs, which causes a decrease in pressure in the alveoli. This creates a pressure gradient between the air outside the body at relatively high pressure and the alveoli at relatively low pressure. The air moves down the pressure gradient through the airways of the lungs and into the alveoli until the pressure of the air and that in the alveoli are equal, that is, the movement of air by bulk flow stops once there is no longer a pressure gradient.
 Second, there is a "diffusion" process. The air arriving in the alveoli has a higher concentration of oxygen than the "stale" air in the alveoli. The increase in oxygen concentration creates a concentration gradient for oxygen between the air in the alveoli and the blood in the capillaries that surround the alveoli. Oxygen then moves by diffusion, down the concentration gradient, into the blood. The other consequence of the air arriving in alveoli is that the concentration of carbon dioxide in the alveoli decreases. This creates a concentration gradient for carbon dioxide to diffuse from the blood into the alveoli, as fresh air has a very low concentration of carbon dioxide compared to the blood in the body.
 Third, there is another "bulk flow" process. The pumping action of the heart then transports the blood around the body. As the left ventricle of the heart contracts, the volume decreases, which increases the pressure in the ventricle. This creates a pressure gradient between the heart and the capillaries, and blood moves through blood vessels by bulk flow down the pressure gradient.
-
 
 ## Diffusion in the context of different disciplines
 
@@ -79,9 +58,7 @@ Biologists often use the terms "net movement"  or "net diffusion" to describe th
 In astronomy, atomic diffusion is used to model the stellar atmospheres of chemically peculiar stars. Diffusion of the elements is critical in understanding the surface composition of degenerate white dwarf stars and their evolution over time.
 In machine learning and artificial intelligence, diffusion models, also known as diffusion-based generative models or score-based generative models, are a class of latent variable generative models. The goal of diffusion models is to learn a diffusion process for a given dataset, such that the process can generate new elements that are distributed similarly as the original dataset. Diffusion models were introduced in 2015 as a method to train a model that can sample from a highly complex probability distribution. They used techniques from non-equilibrium thermodynamics, especially diffusion.
 
-
 ## Models
-
 
 ### Definition of diffusion flux
 Each model of diffusion expresses the diffusion flux with the use of concentrations, densities and their derivatives. Flux is a vector 
@@ -379,7 +356,6 @@ For the diffusion equation, the no-flux boundary conditions can be formulated as
   
 .
 
-
 ### Normal single component concentration gradient
 
 Fick's first law: The diffusion flux, 
@@ -593,7 +569,6 @@ where
     
     {\displaystyle \Delta n(x,t)=\sum _{i}{\frac {\partial ^{2}n(x,t)}{\partial x_{i}^{2}}}\ .}
   
-
 
 ### Multicomponent diffusion and thermodiffusion
 
@@ -1382,7 +1357,6 @@ There is intrinsic arbitrariness in the definition of the thermodynamic forces a
   
  can be measured. For example, in the original work of Onsager the thermodynamic forces include additional multiplier T, whereas in the Course of Theoretical Physics this multiplier is omitted but the sign of the thermodynamic forces is opposite. All these changes are supplemented by the corresponding changes in the coefficients and do not affect the measurable quantities.
 
-
 #### Nondiagonal diffusion must be nonlinear
 The formalism of linear irreversible thermodynamics (Onsager) generates the systems of linear diffusion equations in the form
 
@@ -1556,7 +1530,6 @@ If the matrix of diffusion coefficients is diagonal, then this system of equatio
   
  becomes negative at these points in a short time. Therefore, linear non-diagonal diffusion does not preserve positivity of concentrations. Non-diagonal equations of multicomponent diffusion must be non-linear.
 
-
 ### Applied forces
 The Einstein relation (kinetic theory) connects the diffusion coefficient and the mobility (the ratio of the particle's terminal drift velocity to an applied force). For charged particles:
 
@@ -1602,7 +1575,6 @@ Below, to combine in the same formula the chemical potential μ and the mobility
     {\displaystyle {\mathfrak {m}}}
   
 .
-
 
 ### Diffusion across a membrane
 The mobility-based approach was further applied by T. Teorell. In 1935, he studied the diffusion of ions through a membrane. He formulated the essence of his approach in the formula:
@@ -1912,7 +1884,6 @@ The standard derivation of the activity includes a normalization factor and for 
     {\displaystyle {\frac {\partial (n/n^{\ominus })}{\partial t}}=\nabla \cdot [{\mathfrak {m}}a(\nabla \mu -({\text{external force per mole}}))].}
   
 
-
 ### Ballistic time scale
 The Einstein model neglects the inertia of the diffusing partial. The alternative
 Langevin equation starts with Newton's second law of motion:
@@ -2032,7 +2003,6 @@ T is the absolute temperature.
 m is the mass of the particle.
 t is time.
 At long time scales, Einstein's result is recovered, but short time scales, the ballistic regime are also explained. Moreover, unlike the Einstein approach, a velocity can be defined, leading to the Fluctuation-dissipation theorem, connecting the competition between friction and random forces in defining the temperature.
-
 
 ### Jumps on the surface and in solids
 
@@ -2500,7 +2470,6 @@ where
 .
 Various versions of these jump models are also suitable for simple diffusion mechanisms in solids.
 
-
 ### Porous media
 For diffusion in porous media the basic equations are (if Φ is constant):
 
@@ -2667,9 +2636,7 @@ Combining the advective molar flux with the diffusive flux gives the advection d
 For underground water infiltration, the Boussinesq approximation gives the same equation with m = 2.
 For plasma with the high level of radiation, the Zeldovich–Raizer equation gives m > 4 for the heat transfer.
 
-
 ## Diffusion in physics
-
 
 ### Diffusion coefficient in kinetic theory of gases
 
@@ -3005,7 +2972,6 @@ For two different gases, A and B, with molecular masses mA, mB and molecular dia
     
     {\displaystyle D_{\rm {AB}}={\frac {2}{3}}{\sqrt {\frac {k_{\rm {B}}^{3}}{\pi ^{3}}}}{\sqrt {{\frac {1}{2m_{\rm {A}}}}+{\frac {1}{2m_{\rm {B}}}}}}{\frac {4T^{3/2}}{P(d_{\rm {A}}+d_{\rm {B}})^{2}}}\,,}
   
-
 
 ### The theory of diffusion in gases based on Boltzmann's equation
 In Boltzmann's kinetics of the mixture of gases, each gas has its own distribution function, 
@@ -4826,7 +4792,6 @@ Here,
     {\textstyle \sum _{i}X_{i}=\sum _{i}Y_{i}=1.}
   
 
-
 ### Diffusion of electrons in solids
 
 When the density of electrons in solids is not in equilibrium, diffusion of electrons occurs. For example, when a bias is applied to two ends of a chunk of semiconductor, or a light shines on one end (see right figure), electrons diffuse from high density regions (center) to low density regions (two ends), forming a gradient of electron density. This process generates current, referred to as diffusion current.
@@ -4856,25 +4821,20 @@ Diffusion current can also be described by Fick's first law
 
 where J is the diffusion current density (amount of substance) per unit area per unit time, n (for ideal mixtures) is the electron density, x is the position [length].
 
-
 ### Diffusion in geophysics
 Analytical and numerical models that solve the diffusion equation for different initial and boundary conditions have been popular for studying a wide variety of changes to the Earth's surface. Diffusion has been used extensively in erosion studies of hillslope retreat, bluff erosion, fault scarp degradation, wave-cut terrace/shoreline retreat, alluvial channel incision, coastal shelf retreat, and delta progradation. Although the Earth's surface is not literally diffusing in many of these cases, the process of diffusion effectively mimics the holistic changes that occur over decades to millennia. Diffusion models may also be used to solve inverse boundary value problems in which some information about the depositional environment is known from paleoenvironmental reconstruction and the diffusion equation is used to figure out the sediment influx and time series of landform changes.
-
 
 ### Dialysis
 
 Dialysis works on the principles of the diffusion of solutes and ultrafiltration of fluid across a semi-permeable membrane. Diffusion is a property of substances in water; substances in water tend to move from an area of high concentration to an area of low concentration. Blood flows by one side of a semi-permeable membrane, and a dialysate, or special dialysis fluid, flows by the opposite side. A semipermeable membrane is a thin layer of material that contains holes of various sizes, or pores. Smaller solutes and fluid pass through the membrane, but the membrane blocks the passage of larger substances (for example, red blood cells and large proteins). This replicates the filtering process that takes place in the kidneys when the blood enters the kidneys and the larger substances are separated from the smaller ones in the glomerulus.
 
-
 ## Random walk (random motion)
  One common misconception is that individual atoms, ions or molecules move randomly, which they do not. In the animation on the right, the ion in the left panel appears to have "random" motion in the absence of other ions. As the right panel shows, however, this motion is not random but is the result of "collisions" with other ions. As such, the movement of a single atom, ion, or molecule within a mixture just appears random when viewed in isolation. The movement of a substance within a mixture by "random walk" is governed by the kinetic energy within the system that can be affected by changes in concentration, pressure or temperature. (This is a classical description. At smaller scales, quantum effects will be non-negligible, in general. Thus, the study of the movement of a single atom becomes more subtle since particles at such small scales are described by probability amplitudes rather than deterministic measures of position and velocity.)
-
 
 ### Separation of diffusion from convection in gases
 While Brownian motion of multi-molecular mesoscopic particles (like pollen grains studied by Brown) is observable under an optical microscope, molecular diffusion can only be probed in carefully controlled experimental conditions. Since Graham experiments, it is well known that avoiding of convection is necessary and this may be a non-trivial task.
 Under normal conditions, molecular diffusion dominates only at lengths in the nanometre-to-millimetre range. On larger length scales, transport in liquids and gases is normally due to another transport phenomenon, convection. To separate diffusion in these cases, special efforts are needed.
 In contrast, heat conduction through solid media is an everyday occurrence (for example, a metal spoon partly immersed in a hot liquid). This explains why the diffusion of heat was explained mathematically before the diffusion of mass.
-
 
 ### Other types of diffusion
 Anisotropic diffusion, also known as the Perona–Malik equation, enhances high gradients
@@ -4902,4 +4862,3 @@ Taxis is an animal's directional movement activity in response to a stimulus
 Kinesis is an animal's non-directional movement activity in response to a stimulus
 Trans-cultural diffusion, diffusion of cultural traits across geographical area
 Turbulent diffusion, transport of mass, heat, or momentum within a turbulent fluid
-

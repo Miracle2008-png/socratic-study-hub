@@ -2,27 +2,11 @@
 
 Computer engineering (CE, CoE, CpE, or CompE) is a branch of engineering specialized in developing computer hardware and software. 
 
-It integrates several fields of electrical engineering, electronics engineering and computer science. Computer engineering may be referred to as Electrical and Computer Engineering or Computer Science and Engineering at some universities.
-
-Computer engineers require training in hardware-software integration, software design, and software engineering. It can encompass areas such as electromagnetism, artificial intelligence (AI), robotics, computer networks, computer architecture and operating systems. Computer engineers are involved in many hardware and software aspects of computing, from the design of individual microcontrollers, microprocessors, personal computers, and supercomputers, to circuit design. This field of engineering not only focuses on how computer systems themselves work, but also on how to integrate them into the larger picture. 
-
 ## Education
 
 Computer engineering is referred to as computer science and engineering at some universities. Most entry-level computer engineering jobs require at least a bachelor's degree in computer engineering, electrical engineering or computer science. Typically one must learn an array of mathematics such as calculus, linear algebra, and differential equations, along with computer science. Degrees in electronic or electric engineering also suffice due to the similarity of the two fields. Because hardware engineers commonly work with computer software systems, a strong background in computer programming is necessary. According to BLS, "a computer engineering major is similar to electrical engineering but with some computer science courses added to the curriculum". Some large firms or specialized jobs require a master's degree.
 In many institutions of higher learning, computer engineering students are allowed to choose areas of in-depth study in their junior and senior years because the full breadth of knowledge used in the design and application of computers is beyond the scope of an undergraduate degree. Other institutions may require engineering students to complete one or two years of general engineering before declaring computer engineering as their primary focus.
 It is also important for computer engineers to keep up with rapid advances in technology. Therefore, many continue learning throughout their careers. This can be helpful, especially when it comes to learning new skills or improving existing ones. For example, as the relative cost of fixing a bug increases the further along it is in the software development cycle, there can be greater cost savings attributed to developing and testing for quality code as soon as possible in the process, particularly before release.
-
-## Applications and practice
-
-There are two major focuses in computer engineering: hardware and software.
-
-### Computer hardware engineering
-
-According to the United States BLS, the current job outlook employment for computer hardware engineers, the expected ten-year growth from 2024 to 2034 is 7% mostly to replace existing engineers that retire or leave the occupation for other fields. However, 2019 to 2029 for computer hardware engineering was an estimated 2% and a total of 71,100 jobs. ("Slower than average" in their own words when compared to other occupations)". This is a decrease from the 2014 to 2024 BLS computer hardware engineering estimate of 3% and a total of 77,700 jobs; "and is down from 7% for the 2012 to 2022 BLS estimate and is further down from 9% in the BLS 2010 to 2020 estimate." Today, computer hardware is somewhat equal to electronic and computer engineering (ECE) and has been divided into many subcategories, the most significant being embedded system design.
-
-### Computer software engineering
-
-According to the U.S. Bureau of Labor Statistics (BLS), "computer applications software engineers and computer systems software engineers are projected to be among the faster than average growing occupations" due mostly to replenish the retiring and those who leave the field. The expected ten-year growth as of 2025 for computer software engineering was an estimated 17% and there was a total of 1,114,000 jobs that same year. This is down from the 2012 to 2022 BLS estimate of 22% for software developers. And, further down from the 30% 2010 to 2020 BLS estimate. In addition, growing concerns over cybersecurity add up to put computer software engineering high above the average rate of increase for all fields. However, some of the work will be outsourced in foreign countries. Due to this, job growth will not be as fast as during the last decade, as jobs that would have gone to computer software engineers in the United States would instead go to computer software engineers in countries such as India. In addition, the BLS job outlook for Computer Programmers, 2014–24 has an −8% (a decline, in their words), then a job outlook, 2019-29 of -9% (Decline), then a 10% decline for 2021-2031 and now an 11% decline for 2022-2032 for those who program computers (i.e. embedded systems) who are not computer application developers. Furthermore, women in software fields has been declining over the years even faster than other engineering fields.
 
 ## Specialty areas
 

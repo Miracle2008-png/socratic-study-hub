@@ -7,7 +7,6 @@ A reaction may be classified as redox in which oxidation and reduction occur or 
 Different chemical reactions are used during chemical synthesis in order to obtain the desired product. In biochemistry, a consecutive series of chemical reactions (where the product of one reaction is the reactant of the next reaction) form metabolic pathways. These reactions are often catalyzed by protein enzymes. Enzymes increase the rates of biochemical reactions, so that metabolic syntheses and decompositions impossible under ordinary conditions can occur at the temperature and concentrations present within a cell.
 The general concept of a chemical reaction has been extended to reactions between entities smaller than atoms, including nuclear reactions, radioactive decays and reactions between elementary particles, as described by quantum field theory.
 
-
 ## Characteristics
 Some chemical reactions have characteristics such as:
 
@@ -15,7 +14,6 @@ Evolution of a gas
 Formation of a precipitate
 Change in temperature
 Change in state
-
 
 ## Equations
 
@@ -25,7 +23,6 @@ a A + b B  →  c C + d D
 More elaborate reactions are represented by reaction schemes, which in addition to starting materials and products show important intermediates or transition states. Also, some relatively minor additions to the reaction can be indicated above the reaction arrow; examples of such additions are water, heat, illumination, a catalyst, etc. Similarly, some minor products can be placed below the arrow, often with a minus sign.
 
 Retrosynthetic analysis can be applied to design a complex synthesis reaction. Here the analysis starts from the products, for example by splitting selected chemical bonds, to arrive at plausible initial reagents. A special arrow (⇒) is used in retro reactions.
-
 
 ## Elementary reactions
 The elementary reaction is the smallest division into which a chemical reaction can be decomposed, it has no intermediate products. Most experimentally observed reactions are built up from many elementary reactions that occur in parallel or sequentially. The actual sequence of the individual elementary reactions is known as reaction mechanism. An elementary reaction involves a few molecules, usually one or two, because of the low probability for several molecules to meet at a certain time.
@@ -123,12 +120,10 @@ for example:
     {\displaystyle {\ce {NaCl + AgNO3 -> NaNO3 + AgCl(v)}}}
   
 
-
 ## Chemical equilibrium
 
 Most chemical reactions are reversible; that is, they can and do run in both directions. The forward and reverse reactions are competing with each other and differ in reaction rates. These rates depend on the concentration and therefore change with the time of the reaction: the reverse rate gradually increases and becomes equal to the rate of the forward reaction, establishing the so-called chemical equilibrium. The time to reach equilibrium depends on parameters such as temperature, pressure, and the materials involved, and is determined by the minimum free energy. In equilibrium, the Gibbs free energy of reaction must be zero. The pressure dependence can be explained with the Le Chatelier's principle. For example, an increase in pressure due to decreasing volume causes the reaction to shift to the side with fewer moles of gas.
 The reaction yield stabilizes at equilibrium but can be increased by removing the product from the reaction mixture or changed by increasing the temperature or pressure. A change in the concentrations of the reactants does not affect the equilibrium constant but does affect the equilibrium position.
-
 
 ## Thermodynamics
 Chemical reactions are determined by the laws of thermodynamics. Reactions can proceed by themselves if they are exergonic, that is if they release free energy. The associated free energy change of the reaction is composed of the changes of two different thermodynamic quantities, enthalpy and entropy:
@@ -369,7 +364,6 @@ Reactions can also be characterized by their internal energy change, which takes
 
  U: internal energy, S: entropy, p: pressure, μ: chemical potential, n: number of molecules, d: small change sign 
 
-
 ## Kinetics
 The speed at which reactions take place is studied by reaction kinetics. The rate depends on various parameters, such as:
 
@@ -508,12 +502,9 @@ Here k is the first-order rate constant, having dimension 1/time, [A](t) is the 
 
 where Ea is the activation energy and kB is the Boltzmann constant. One of the simplest models of reaction rate is the collision theory. More realistic models are tailored to a specific problem and include the transition state theory, the calculation of the potential energy surface, the Marcus theory and the Rice–Ramsperger–Kassel–Marcus (RRKM) theory.
 
-
 ## Reaction types
 
-
 ### Four basic types
-
 
 #### Synthesis
 
@@ -564,7 +555,6 @@ Two or more reactants yielding one product is another way to identify a synthesi
   
 
 Another example is simple hydrogen gas combined with simple oxygen gas to produce water.
-
 
 #### Decomposition
 
@@ -630,7 +620,6 @@ One example of a decomposition reaction is the electrolysis of water to make oxy
     
     {\displaystyle {\ce {2H2O->2H2 + O2}}}
   
-
 
 #### Single displacement
 In a single displacement reaction, a single uncombined element replaces another in a compound; in other words, one element trades places with another element in a compound. These reactions come in the general form of:
@@ -708,7 +697,6 @@ One example of a single displacement reaction is when magnesium replaces hydroge
     
     {\displaystyle {\ce {Mg + 2H2O->Mg(OH)2 (v) + H2 (^)}}}
   
-
 
 #### Double displacement
 In a double displacement reaction, the anions and cations of two compounds switch places and form two entirely different compounds. These reactions are in the general form:
@@ -794,10 +782,8 @@ Another example of a double displacement reaction is the reaction of lead(II) ni
     {\displaystyle {\ce {Pb(NO3)2 + 2KI->PbI2(v) + 2KNO3}}}
   
 
-
 ### Forward and backward reactions
 According to Le Chatelier's Principle, reactions may proceed in the forward or reverse direction until they end or reach equilibrium.
-
 
 #### Forward reactions
 Reactions that proceed in the forward direction (from left to right) to approach equilibrium are often called spontaneous reactions, that is, 
@@ -817,7 +803,6 @@ Reaction of hydrogen and oxygen to form water.
 Dissociation of acetic acid in water into acetate ions and hydronium ions.
 CH3COOH + H2O ⇌ CH3COO− + H3O+
 
-
 #### Backward reactions
 Reactions that proceed in the backward direction to approach equilibrium are often called non-spontaneous reactions, that is, 
   
@@ -834,7 +819,6 @@ Reactions that proceed in the backward direction to approach equilibrium are oft
 Charging a normal DC battery (consisting of electrolytic cells) from an external electrical power source
 Photosynthesis driven by absorption of electromagnetic radiation usually in the form of sunlight:
 CO2carbondioxide + H2O water  + photonslight energy → [CH2O]carbohydrate + O2 oxygen 
-
 
 ### Oxidation and reduction
 
@@ -888,7 +872,6 @@ Which of the involved reactants would be a reducing or oxidizing agent can be pr
 For some main-group elements the number of electrons donated or accepted in a redox reaction can be predicted from the electron configuration of the reactant element. Elements try to reach the low-energy noble gas configuration, and therefore alkali metals and halogens will donate and accept one electron, respectively. Noble gases themselves are chemically inactive.
 The overall redox reaction can be balanced by combining the oxidation and reduction half-reactions multiplied by coefficients such that the number of electrons lost in the oxidation equals the number of electrons gained in the reduction.
 An important class of redox reactions are the electrolytic electrochemical reactions, where electrons from the power supply at the negative electrode are used as the reducing agent and electron withdrawal at the positive electrode as the oxidizing agent. These reactions are particularly important for the production of chemical elements, such as chlorine or aluminium. The reverse process, in which electrons are released in redox reactions and chemical energy is converted to electrical energy, is possible and used in batteries.
-
 
 ### Combustion
 In a combustion reaction, an element or compound reacts with an oxidant, usually oxygen, often producing energy in the form of heat or light. Combustion reactions frequently involve a hydrocarbon. For instance, the combustion of 1 mole (114 g) of octane in oxygen:
@@ -1072,11 +1055,9 @@ releases 5500 kJ. A combustion reaction can also result from carbon, magnesium o
     {\displaystyle {\ce {S(s) + O2(g)->SO2(g)}}}
   
 
-
 ### Complexation
 
 In complexation reactions, several ligands react with a metal atom to form a coordination complex. This is achieved by providing lone pairs of the ligand into empty orbitals of the metal atom and forming dipolar bonds. The ligands are Lewis bases, they can be both ions and neutral molecules, such as carbon monoxide, ammonia or water. The number of ligands that react with a central metal atom can be found using the 18-electron rule, saying that the valence shells of a transition metal will collectively accommodate 18 electrons, whereas the symmetry of the resulting complex can be predicted with the crystal field theory and ligand field theory. Complexation reactions also include ligand exchange, in which one or more ligands are replaced by another, and redox processes which change the oxidation state of the central metal atom.
-
 
 ### Acid–base reactions
 In the Brønsted–Lowry acid–base theory, an acid–base reaction involves a transfer of protons (H+) from one species (the acid) to another (the base). When a proton is removed from an acid, the resulting species is termed that acid's conjugate base. When the proton is accepted by a base, the resulting species is termed that base's conjugate acid. In other words, acids act as proton donors and bases act as proton acceptors according to the following equation:
@@ -1174,37 +1155,30 @@ Arrhenius definition: Acids dissociate in water releasing H3O+ ions; bases disso
 Brønsted–Lowry definition: Acids are proton (H+) donors, bases are proton acceptors; this includes the Arrhenius definition.
 Lewis definition: Acids are electron-pair acceptors, and bases are electron-pair donors; this includes the Brønsted-Lowry definition.
 
-
 ### Precipitation
 
 Precipitation is the formation of a solid in a solution or inside another solid during a chemical reaction. It usually takes place when the concentration of dissolved ions exceeds the solubility limit and forms an insoluble salt. This process can be assisted by adding a precipitating agent or by the removal of the solvent. Rapid precipitation results in an amorphous or microcrystalline residue and a slow process can yield single crystals. The latter can also be obtained by recrystallization from microcrystalline salts.
 
-
 ### Solid-state reactions
 Reactions can take place between two solids. However, because of the relatively small diffusion rates in solids, the corresponding chemical reactions are very slow in comparison to liquid and gas phase reactions. They are accelerated by increasing the reaction temperature and finely dividing the reactant to increase the contacting surface area.
 
-
 ### Reactions at the solid/gas interface
 The reaction can take place at the solid|gas interface, surfaces at very low pressure such as ultra-high vacuum. Via scanning tunneling microscopy, it is possible to observe reactions at the solid|gas interface in real space, if the time scale of the reaction is in the correct range. Reactions at the solid|gas interface are in some cases related to catalysis.
-
 
 ### Photochemical reactions
 
 In photochemical reactions, atoms and molecules absorb energy (photons) of the illumination light and convert it into an excited state. They can then release this energy by breaking chemical bonds, thereby producing radicals. Photochemical reactions include hydrogen–oxygen reactions, radical polymerization, chain reactions and rearrangement reactions.
 Many important processes involve photochemistry. The premier example is photosynthesis, in which most plants use solar energy to convert carbon dioxide and water into glucose, disposing of oxygen as a side-product. Humans rely on photochemistry for the formation of vitamin D, and vision is initiated by a photochemical reaction of rhodopsin. In fireflies, an enzyme in the abdomen catalyzes a reaction that results in bioluminescence. Many significant photochemical reactions, such as ozone formation, occur in the Earth atmosphere and constitute atmospheric chemistry.
 
-
 ## Catalysis
 
 In catalysis, the reaction does not proceed directly, but through a reaction with a third substance known as catalyst. Although the catalyst takes part in the reaction, forming weak bonds with reactants or intermediates, it is returned to its original state by the end of the reaction and so is not consumed. However, it can be inhibited, deactivated or destroyed by secondary processes. Catalysts can be used in a different phase (heterogeneous) or in the same phase (homogeneous) as the reactants. In heterogeneous catalysis, typical secondary processes include coking where the catalyst becomes covered by polymeric side products. Additionally, heterogeneous catalysts can dissolve into the solution in a solid-liquid system or evaporate in a solid–gas system. Catalysts can only speed up the reaction – chemicals that slow down the reaction are called inhibitors. Substances that increase the activity of catalysts are called promoters, and substances that deactivate catalysts are called catalytic poisons. With a catalyst, a reaction that is kinetically inhibited by high activation energy can take place in the circumvention of this activation energy.
 Heterogeneous catalysts are usually solids, powdered in order to maximize their surface area. Of particular importance in heterogeneous catalysis are the platinum group metals and other transition metals, which are used in hydrogenations, catalytic reforming and in the synthesis of commodity chemicals such as nitric acid and ammonia. Acids are an example of a homogeneous catalyst, they increase the nucleophilicity of carbonyls, allowing a reaction that would not otherwise proceed with electrophiles. The advantage of homogeneous catalysts is the ease of mixing them with the reactants, but they may also be difficult to separate from the products. Therefore, heterogeneous catalysts are preferred in many industrial processes.
 
-
 ## Reactions in organic chemistry
 
 In organic chemistry, in addition to oxidation, reduction or acid-base reactions, a number of other reactions can take place which involves covalent bonds between carbon atoms or carbon and heteroatoms (such as oxygen, nitrogen, halogens, etc.). Many specific reactions in organic chemistry are name reactions designated after their discoverers.
 One of the most industrially important reactions is the cracking of heavy hydrocarbons at oil refineries to create smaller, simpler molecules. This process is used to manufacture gasoline. Specific types of organic reactions may be grouped by their reaction mechanisms (particularly substitution, addition and elimination) or by the types of products they produce (for example, methylation, polymerisation and halogenation).
-
 
 ### Substitution
 In a substitution reaction, a functional group in a particular chemical compound is replaced by another group. These reactions can be distinguished by the type of substituting species into a nucleophilic, electrophilic or radical substitution.
@@ -1277,7 +1251,6 @@ In the third type of substitution reaction, radical substitution, the attacking 
 
  Reactions during the chain reaction of radical substitution 
 
-
 ### Addition and elimination
 The addition and its counterpart, the elimination, are reactions that change the number of substituents on the carbon atom, and form or cleave multiple bonds. Double and triple bonds can be produced by eliminating a suitable leaving group. Similar to the nucleophilic substitution, there are several possible reaction mechanisms that are named after the respective reaction order. In the E1 mechanism, the leaving group is ejected first, forming a carbocation. The next step, the formation of the double bond, takes place with the elimination of a proton (deprotonation). The leaving order is reversed in the E1cb mechanism, that is the proton is split off first. This mechanism requires the participation of a base. Because of the similar conditions, both reactions in the E1 or E1cb elimination always compete with the SN1 substitution.
 
@@ -1290,26 +1263,16 @@ While the addition to the electron-rich alkenes and alkynes is mainly electrophi
 Nucleophilic addition of a carbanion or another nucleophile to the double bond of an alpha, beta-unsaturated carbonyl compound can proceed via the Michael reaction, which belongs to the larger class of conjugate additions. This is one of the most useful methods for the mild formation of C–C bonds.
 Some additions which can not be executed with nucleophiles and electrophiles can be succeeded with free radicals. As with the free-radical substitution, the radical addition proceeds as a chain reaction, and such reactions are the basis of the free-radical polymerization.
 
-
 ### Other organic reaction mechanisms
 
 In a rearrangement reaction, the carbon skeleton of a molecule is rearranged to give a structural isomer of the original molecule. These include hydride shift reactions such as the Wagner-Meerwein rearrangement, where a hydrogen, alkyl or aryl group migrates from one carbon to a neighboring carbon. Most rearrangements are associated with the breaking and formation of new carbon-carbon bonds. Other examples are sigmatropic reaction such as the Cope rearrangement.
 Cyclic rearrangements include cycloadditions and, more generally, pericyclic reactions, wherein two or more double bond-containing molecules form a cyclic molecule. An important example of cycloaddition reaction is the Diels–Alder reaction (the so-called [4+2] cycloaddition) between a conjugated diene and a substituted alkene to form a substituted cyclohexene system.
 Whether a certain cycloaddition would proceed depends on the electronic orbitals of the participating species, as only orbitals with the same sign of wave function will overlap and interact constructively to form new bonds. Cycloaddition is usually assisted by light or heat. These perturbations result in a different arrangement of electrons in the excited state of the involved molecules and therefore in different effects. For example, the [4+2] Diels-Alder reactions can be assisted by heat whereas the [2+2] cycloaddition is selectively induced by light. Because of the orbital character, the potential for developing stereoisomeric products upon cycloaddition is limited, as described by the Woodward–Hoffmann rules.
 
-
 ## Biochemical reactions
 
 Biochemical reactions are mainly controlled by complex proteins called enzymes, which are usually specialized to catalyze only a single, specific reaction. The reaction takes place in the active site, a small part of the enzyme which is usually found in a cleft or pocket lined by amino acid residues, and the rest of the enzyme is used mainly for stabilization. The catalytic action of enzymes relies on several mechanisms including the molecular shape ("induced fit"), bond strain, proximity and orientation of molecules relative to the enzyme, proton donation or withdrawal (acid/base catalysis), electrostatic interactions and many others.
 The biochemical reactions that occur in living organisms are collectively known as metabolism. Among the most important of its mechanisms is the anabolism, in which different DNA and enzyme-controlled processes result in the production of large molecules such as proteins and carbohydrates from smaller units. Bioenergetics studies the sources of energy for such reactions. Important energy sources are glucose and oxygen, which can be produced by plants via photosynthesis or assimilated from food and air, respectively. All organisms use this energy to produce adenosine triphosphate (ATP), which can then be used to energize other reactions. Decomposition of organic material by fungi, bacteria and other micro-organisms is also within the scope of biochemistry.
 
-
-## Applications
-
-Chemical reactions are central to chemical engineering, where they are used for the synthesis of new compounds from natural raw materials such as petroleum, mineral ores, and oxygen in air. It is essential to make the reaction as efficient as possible, maximizing the yield and minimizing the number of reagents, energy inputs and waste. Catalysts are especially helpful for reducing the energy required for the reaction and increasing its reaction rate.
-Some specific reactions have their niche applications. For example, the thermite reaction is used to generate light and heat in pyrotechnics and welding. Although it is less controllable than the more conventional oxy-fuel welding, arc welding and flash welding, it requires much less equipment and is still used to mend rails, especially in remote areas.
-
-
 ## Monitoring
 Mechanisms of monitoring chemical reactions depend strongly on the reaction rate. Relatively slow processes can be analyzed in situ for the concentrations and identities of the individual ingredients. Important tools of real-time analysis are the measurement of pH and analysis of optical absorption (color) and emission spectra. A less accessible but rather efficient method is the introduction of a radioactive isotope into the reaction and monitoring how it changes over time and where it moves to; this method is often used to analyze the redistribution of substances in the human body. Faster reactions are usually studied with ultrafast laser spectroscopy where utilization of femtosecond lasers allows short-lived transition states to be monitored at a time scaled down to a few femtoseconds.
-

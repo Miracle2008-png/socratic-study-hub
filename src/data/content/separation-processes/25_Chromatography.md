@@ -179,7 +179,3 @@ Conventional chromatography are incapable of separating racemic mixtures of enan
 ### Aqueous normal-phase chromatography
 
 Aqueous normal-phase (ANP) chromatography is characterized by the elution behavior of classical normal phase mode (i.e. where the mobile phase is significantly less polar than the stationary phase) in which water is one of the mobile phase solvent system components. It is distinguished from hydrophilic interaction liquid chromatography (HILIC) in that the retention mechanism is due to adsorption rather than partitioning.
-
-## Applications
-
-Chromatography is used in many fields including the pharmaceutical industry, the food and beverage industry, the chemical industry, forensic science, environment analysis, and hospitals.

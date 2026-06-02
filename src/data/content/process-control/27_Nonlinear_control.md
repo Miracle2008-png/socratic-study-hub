@@ -5,7 +5,6 @@ Control theory is divided into two branches.  Linear control theory applies to s
 Nonlinear control theory applies to a wider class of real-world systems that do not obey the superposition principle. These systems are often governed by nonlinear differential equations.  The mathematical techniques which have been developed to handle them are less general, often applying only to narrow categories of systems. These include limit cycle theory, Poincaré maps, Lyapunov stability theory, and describing functions. In some circumstances, near a stable point of interest, these systems can be approximated as linear systems through linearization allowing linear techniques to be used.  Nonlinear systems are often analyzed using numerical methods on computers, for example by simulating their operation using a simulation language.  Even if the plant is linear, a nonlinear controller can often have attractive features such as simpler implementation, faster speed, more accuracy, or reduced control energy, which justify the more difficult design procedure.
 An example of a nonlinear control system is a thermostat-controlled heating system.    A building heating system such as a furnace has a nonlinear response to changes in temperature; it is either "on" or "off", it does not have the fine control in response to temperature differences that a proportional (linear) device would have.    Therefore, the furnace is off until the temperature falls below the "turn on" setpoint of the thermostat, when it turns on.  Due to the heat added by the furnace, the temperature increases until it reaches the "turn off" setpoint of the thermostat, which turns the furnace off, and the cycle repeats.  This cycling of the temperature about the desired temperature is called a limit cycle, and is characteristic of nonlinear control systems.
 
-
 ## Properties of nonlinear systems
 
 Some properties of nonlinear dynamic systems are
@@ -14,7 +13,6 @@ They do not follow the principle of superposition (linearity and homogeneity).
 They may have multiple isolated equilibrium points.
 They may exhibit properties such as limit cycle, bifurcation, chaos.
 Finite escape time: Solutions of nonlinear systems may not exist for all times.
-
 
 ## Analysis and control of nonlinear systems
 
@@ -41,7 +39,6 @@ Control-Lyapunov function
 Nonlinear damping
 Backstepping
 Sliding mode control
-
 
 ## Nonlinear feedback analysis – The Lur'e problem
 
@@ -82,7 +79,6 @@ The linear part can be characterized by four matrices (A,B,C,D), while the nonli
   
  (a sector nonlinearity).
 
-
 ### Absolute stability problem
 Consider:
 
@@ -99,9 +95,7 @@ There are two main theorems concerning the Lur'e problem which give sufficient c
 The circle criterion (an extension of the Nyquist stability criterion for linear systems)
 The Popov criterion.
 
-
 ## Theoretical results in nonlinear control
-
 
 ### Frobenius theorem
 The Frobenius theorem is a deep result in differential geometry. When applied to nonlinear control, it says the following: Given a system of the form
@@ -261,4 +255,3 @@ where
     {\displaystyle \Delta }
   
  is an involutive distribution.
-

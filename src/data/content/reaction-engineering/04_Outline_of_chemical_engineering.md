@@ -26,40 +26,6 @@ Process Design
 Chemical Process Modeling and Simulation
 Engineering Economics
 
-## Branches of chemical engineering
-
-Biochemical engineering
-Biomedical engineering
-Biotechnology
-Ceramics
-Chemical process modeling
-Chemical Technologist
-Chemical reactor
-Chemical reaction engineering
-Distillation Design
-Electrochemistry
-Fluid dynamics
-Food engineering
-Heat transfer
-Mass transfer
-Materials science
-Microfluidics
-Nanotechnology
-Natural environment
-Plastics engineering
-Polymer engineering
-Process control
-Process design (chemical engineering)
-Separation processes (see also: separation of mixture)
-Crystallization processes
-Distillation processes
-Membrane processes
-Semiconductors
-Thermodynamics
-Transport phenomena
-Unit operations
-Unit Operations of Chemical Engineering
-
 ## General chemical engineering concepts
 
 Chemical engineer

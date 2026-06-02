@@ -2,7 +2,6 @@
 
 Reactions on surfaces are reactions in which at least one of the steps of the reaction mechanism is the adsorption of one or more reactants. The mechanisms for these reactions, and the rate equations are of extreme importance for heterogeneous catalysis. Via scanning tunneling microscopy, it is possible to observe reactions at the solid gas interface in real space, if the time scale of the reaction is in the correct range. Reactions at the solid–gas interface are in some cases related to catalysis.
 
-
 ## Simple decomposition
 If a reaction occurs through these steps:
 
@@ -820,9 +819,7 @@ High concentration, then
   
 . It is a zeroth order reaction in component A.
 
-
 ## Bimolecular reaction
-
 
 ### Langmuir–Hinshelwood mechanism
 In this mechanism, suggested by Irving Langmuir in 1921 and further developed by Cyril Hinshelwood in 1926, two molecules adsorb on neighboring sites and the adsorbed molecules undergo a bimolecular reaction:
@@ -1732,7 +1729,6 @@ N2O + H2 → N2 + H2O on a platinum catalyst.
 C2H4 + ⁠1/2⁠ O2 → CH3CHO on a palladium catalyst.
 CO + OH → CO2 + H+ + e− on a platinum catalyst.
 
-
 ### Langmuir–Rideal mechanism
 In this mechanism, proposed in 1922 by Irving Langmuir and later expanded upon by Eric Rideal, only one of the molecules adsorbs and the other one reacts with it directly from the gas phase, without adsorbing ("nonthermal surface reaction"):
 
@@ -1948,4 +1944,3 @@ CO2 + H2 (ads.) → H2O + CO
 2 NH3 + ⁠1+1/2⁠ O2 (ads.) → N2 + 3H2O on a platinum catalyst
 C2H2 + H2 (ads.) → C2H4 on nickel or iron catalysts
 The Langmuir-Rideal mechanism is often, incorrectly, attributed to Dan Eley as the Eley-Rideal mechanism. The actual Eley-Rideal mechanism, studied in the thesis of Dan Eley and proposed by Eric Rideal in 1939, was the reaction between a chemisorbed and a physisorbed molecule. As opposed to the Langmuir-Rideal mechanism, in this mechanism the physisorbed molecule is in thermal equilibrium with the surface.
-

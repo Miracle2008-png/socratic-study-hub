@@ -10,11 +10,6 @@ The American Engineers' Council for Professional Development (the predecessor of
 
 The creative application of scientific principles to design or develop structures, machines, apparatus, or manufacturing processes, or works utilizing them singly or in combination; or to construct or operate the same with full cognizance of their design; or to forecast their behavior under specific operating conditions; all as respects an intended function, economics of operation and safety to life and property.
 
-## Branches of engineering
-
-Engineering is a broad discipline that is often broken down into several sub-disciplines. Although most engineers will usually be trained in a specific discipline, some engineers become multi-disciplined through experience. The traditional disciplines of engineering are civil, mechanical, electrical, and chemical. (Sometimes structural, industrial, or mining and materials is added.)
-Below is a list of recognized branches of engineering. Note that there are additional sub-disciplines.
-
 ## Interdisciplinary engineering
 
 Interdisciplinary engineering draws from more than one of the principle branches of the practice. Historically, naval engineering and mining engineering were major branches. Other engineering fields are manufacturing engineering, acoustical engineering, corrosion engineering, instrumentation and control, automotive, information engineering, petroleum, systems, audio, software, architectural, biosystems, and textile engineering. These and other branches of engineering are represented in the 40 licensed member institutions of the UK Engineering Council, as of 2025.

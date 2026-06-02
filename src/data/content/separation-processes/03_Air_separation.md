@@ -27,25 +27,3 @@ Pressure swing adsorption provides separation of oxygen or nitrogen from air wit
 Membrane technologies can provide alternate, lower-energy approaches to air separation. For example, a number of approaches are being explored for oxygen generation. Polymeric membranes operating at ambient or warm temperatures, for example, may be able to produce oxygen-enriched air (25-50% oxygen). Ceramic membranes can provide high-purity oxygen (90% or more) but require higher temperatures (800-900 deg C) to operate. These ceramic membranes include ion transport membranes (ITM) and oxygen transport membranes (OTM). Air Products and Chemicals Inc and Praxair are developing flat ITM and tubular OTM systems.
 Membrane gas separation is used to provide oxygen-poor and nitrogen-rich gases instead of air to fill the fuel tanks of jet liners, thus greatly reducing the chances of accidental fires and explosions. Conversely, membrane gas separation is currently used to provide oxygen-enriched air to pilots flying at great altitudes in aircraft without pressurized cabins.
 Oxygen-enriched air can be obtained exploiting the different solubility of oxygen and nitrogen. Oxygen is more soluble than nitrogen in water, so if air is degassed from water, a stream of 35% oxygen can be obtained.
-
-## Applications
-
-### Rocketry
-
-Liquid oxygen and nitrogen for companies such as SpaceX.
-
-### Medical
-
-Pure oxygen is delivered to large hospitals for use with patients.
-
-### Steel
-
-In steelmaking, oxygen is required for the basic oxygen steelmaking process. Modern basic oxygen steelmaking uses almost two tons of oxygen per ton of steel.
-
-### Ammonia
-
-Nitrogen used in the Haber process to make ammonia.
-
-### Coal gas
-
-Large amounts of oxygen are required for coal gasification projects; cryogenic plants producing 3000 tons/day are found in some projects.

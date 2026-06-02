@@ -1,14 +1,3 @@
-# Thermodynamics and an Introduction to Thermostatistics
-
-Thermodynamics and an Introduction to Thermostatistics is a textbook written by Herbert Callen that presents classical thermodynamics in an abstract and axiomatic approach. The textbook contains three parts, each building upon the previous. The first edition was published in 1960 and a second followed in 1985.
-
-## Overview
-
-The first part of the book starts by presenting the problem thermodynamics is trying to solve, and provides the postulates on which the field is founded. It then develops upon this foundation to discuss reversible processes, heat engines, thermodynamics potentials, Maxwell's relations, stability of thermodynamics systems, and first-order phase transitions. As the author lays down the basics of thermodynamics, he then goes to discuss more advanced topics such as critical phenomena and irreversible processes.
-The second part of the text presents the foundations of classical statistical mechanics. Boltzmann's entropy formula  is introduced and used to describe the Einstein model, the two-state system, and the polymer model. Afterwards, the different statistical ensembles are discussed from which the thermodynamics potentials are derived. Quantum fluids and fluctuations are also discussed.
-The last part of the text is a brief discussion on symmetry and the conceptual foundations of thermostatistics. In the final chapter, Callen advances his thesis that the symmetries of the fundamental laws of physics underlie the very foundations of thermodynamics and seeks to illuminate the crucial role thermodynamics plays in science.
-Callen advises that a one-semester course for advanced undergraduates should cover the first seven chapters plus chapters 15 and 16 if time permits.
-
 ## Second edition
 
 ## Reception

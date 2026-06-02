@@ -3,7 +3,6 @@
 The following outline is provided as an overview of and topical guide to chemical engineering:
 Chemical engineering – deals with the application of physical science (e.g., chemistry and physics), and life sciences (e.g., biology, microbiology and biochemistry) with mathematics and economics, to the process of converting raw materials or chemicals into more useful or valuable forms. In addition to producing useful materials, modern chemical engineering is also concerned with pioneering valuable new materials and techniques – such as nanotechnology, fuel cells and biomedical engineering.
 
-
 ## Essence of chemical engineering
 Math
 Chemistry
@@ -26,41 +25,6 @@ Process Design
 Chemical Process Modeling and Simulation
 Engineering Economics
 
-
-## Branches of chemical engineering
-Biochemical engineering
-Biomedical engineering
-Biotechnology
-Ceramics
-Chemical process modeling
-Chemical Technologist
-Chemical reactor
-Chemical reaction engineering
-Distillation Design
-Electrochemistry
-Fluid dynamics
-Food engineering
-Heat transfer
-Mass transfer
-Materials science
-Microfluidics
-Nanotechnology
-Natural environment
-Plastics engineering
-Polymer engineering
-Process control
-Process design (chemical engineering)
-Separation processes (see also: separation of mixture)
-Crystallization processes
-Distillation processes
-Membrane processes
-Semiconductors
-Thermodynamics
-Transport phenomena
-Unit operations
-Unit Operations of Chemical Engineering
-
-
 ## General chemical engineering concepts
 Chemical engineer
 Chemical reaction
@@ -76,7 +40,5 @@ Polymerization
 3D Plant Design
 FEED
 
-
 ## Leaders in chemical engineering
 List of chemical engineers
-

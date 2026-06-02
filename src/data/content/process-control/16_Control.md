@@ -2,9 +2,7 @@
 
 Control may refer to:
 
-
 ## Basic meanings
-
 
 ### Economics and business
 Control (management), an element of management
@@ -13,7 +11,6 @@ Comptroller (or controller), a senior financial officer in an organization
 Controlling interest, a percentage of voting stock shares sufficient to prevent opposition
 Foreign exchange controls, regulations on trade
 Internal control, a process to help achieve specific goals typically related to managing risk
-
 
 ### Mathematics and science
 Control (optimal control theory), a variable for steering a controllable system of state variables toward a desired goal
@@ -26,12 +23,10 @@ Control room, a room where a physical facility can be monitored
 Process control in continuous production processes
 Security controls, safeguards against security risks
 
-
 ### Medicine
 Control, according to the ICD-10-PCS, in the Medical and Surgical Section (0), is the root operation (# 3) that means stopping, or attempting to stop, post-procedural bleeding
 Chlordiazepoxide, also sold under the trade name Control
 Lorazepam, sold under the trade name Control
-
 
 ### Systems engineering, computing and technology
 Automatic control, the application of control theory for regulation of processes without direct intervention
@@ -46,7 +41,6 @@ Control key, on a computer keyboard
 GUI widget (control or widget), a component of a graphical user interface
 Input device (control), a physical user interface to a computer system
 
-
 ### Society, psychology and sociology
 Control (psychology)
 Control freak, a person who attempts to dictate
@@ -58,26 +52,20 @@ Self-control, the ability to control one's emotions and desires
 Social control, mechanisms that regulate social behavior
 Civilian control of the military
 
-
 ### Other basic uses
 Control point (orienteering), a marked waypoint in orienteering and related sports
 Control (linguistics), a relation between elements of two clauses
 
-
 ## Geography
 Control, Alberta
 
-
 ## Media
-
 
 ### Books
 Control (novel), a 1982 novel by William Goldman
 Control (fictional character), in the 1974 British spy novel Tinker, Tailor, Soldier, Spy
 
-
 ### Film and TV
-
 
 #### Films
 Control (1987 film) or Il Giorno prima, a 1987 made-for-television film starring Burt Lancaster
@@ -89,7 +77,6 @@ Control (upcoming film), directed by Robert Schwentke and starring James McAvoy
 Kontroll, a 2003 Hungarian film, released as Control internationally
 Control, a UK comedy short by Frank Miller
 
-
 #### TV
 Control (House), a 2005 episode of the television series House
 Control, a Spanish-language series aired on Univision
@@ -99,16 +86,13 @@ Control, a character on the science fiction crime drama Person of Interest
 Ctrl (web series), an American comedy web series
 CONTROL (Get Smart), a fictional counter-espionage agency
 
-
 ### Games
 Control and control-bid, features of the game contract bridge
 Control (video game), a 2019 video game by Remedy Entertainment
 
-
 ### Music
 Kontrol - a Bulgarian punk band
 Control (Starlight Express), a character from the rock musical
-
 
 #### Albums
 Control (GoodBooks album), 2007
@@ -124,7 +108,6 @@ Control, a 1971 album by John St Field
 Control, a 2012 album by Uppermost
 Control, a 2003 album by Where Fear and Weapons Meet
 Ctrl (SZA album), 2017
-
 
 #### Songs
 "Control" (Big Sean song), 2013
@@ -156,4 +139,3 @@ Ctrl (SZA album), 2017
 "Control", by Stabbing Westward from Ungod, 1994
 "Control", by Wisin from El Regreso del Sobreviviente, 2014
 "Control (Somehow You Want Me)", by Tenth Avenue North from Followers, 2016
-

@@ -3,18 +3,6 @@
 Membrane technology encompasses the scientific processes used in the construction and application of membranes. Membranes are used to facilitate the transport or rejection of substances between mediums, and the mechanical separation of gas and liquid streams. In the simplest case, filtration is achieved when the pores of the membrane are smaller than the diameter of the undesired substance, such as a harmful microorganism. Membrane technology is commonly used in industries such as water treatment, chemical and metal processing, pharmaceuticals, biotechnology, the food industry, as well as the removal of environmental pollutants.
 After membrane construction, there is a need to characterize the prepared membrane to know more about its parameters, like pore size, function group, material properties, etc., which are difficult to determine in advance. In this process, instruments such as the Scanning Electron Microscope, the Transmission electron Microscope, the Fourier Transform Infrared Spectroscopy, X-ray Diffraction, and Liquid–Liquid Displacement Porosimetry are utilized.
 
-## Introduction
-
-Membrane technology covers all engineering approaches for the transport of substances between two fractions with the help of semi-permeable membranes. In general, mechanical separation processes for separating gaseous or liquid streams use membrane technology. In recent years, different methods have been used to remove environmental pollutants, like adsorption, oxidation, and membrane separation. Different pollution occurs in the environment like air pollution, waste water pollution etc. As per industry requirement to prevent industrial pollution because more than 70% of environmental pollution occurs due to industries. It is their responsibility to follow government rules of the Air Pollution Control & Prevention Act 1981 to maintain and prevent the harmful chemical release into the environment. Make sure to do prevention & safety processes after that industries are able to release their waste in the environment.
-Biomass-based Membrane technology is one of the most promising technologies for use as a pollutants removal weapon because it has low cost, more efficiency, & lack of secondary pollutants.
-Typically polysulfone, polyvinylidene fluoride, and polypropylene are used in the membrane preparation process. These membrane materials are non-renewable and non-biodegradable which create harmful environmental pollution. Researchers are trying to find a solution to synthesize an eco-friendly membrane which avoids environmental pollution. Synthesis of biodegradable material with the help of naturally available material such as biomass-based membrane synthesis can be used to remove pollutants.
-
-### Membrane Overview
-
-Membrane separation processes operate without heating and therefore use less energy than conventional thermal separation processes such as distillation, sublimation, or crystallization. The separation process is purely physical and both fractions (permeate and retentate) can be obtained as useful products. Cold separation using membrane technology is widely used in the food technology, biotechnology and pharmaceutical industries. Furthermore, using membranes enables separations to take place that would be impossible using thermal separation methods. For example, it is impossible to separate the constituents of azeotropic liquids or solutes which form isomorphic crystals by distillation or recrystallization, but such separations can be achieved using membrane technology. Depending on the type of membrane, selective separation of certain individual substances or substance mixtures is possible. Important technical applications include the production of drinking water by reverse osmosis. In waste water treatment, membrane technology is becoming increasingly important. Ultra/microfiltration can be very effective in removing colloids and macromolecules from wastewater. This is needed if wastewater is discharged into sensitive waters especially those designated for contact water sports and recreation.
-About half of the market is in medical applications such as artificial kidneys to remove toxic substances by hemodialysis and as artificial lung for bubble-free supply of oxygen in the blood.
-The importance of membrane technology is growing in the field of environmental protection (Nano-Mem-Pro IPPC Database). Even in modern energy recovery techniques, membranes are increasingly used, for example in fuel cells and in osmotic power plants.
-
 ## Mass transfer
 
 Two basic models can be distinguished for mass transfer through the membrane:
@@ -244,17 +232,3 @@ Contact angle meter
 Zeta potential (streaming potential)
 X-ray Diffraction (XRD)
 Liquid–Liquid Displacement Porosimetry (LLDP)
-
-## Biomass Membrane Applications
-
-### Water treatment
-
-Water treatment is any process that improves the quality of water to make it more acceptable for a specific end-use.  Membranes can be used to remove particulates from water by either size exclusion or charge separation. In size exclusion, the pores in the membrane are sized such that only particles smaller than the pores can pass through. The pores in the membrane are sized such that only water molecules can pass through, leaving dissolved contaminants behind.
-
-### Gas separation
-
-Utilization of membranes in gas separation, like carbon dioxide (CO2), Nitrogen oxides (NOx),  Sulphur oxides (SOx), harmful gasses can be removed to protect the environment. Biomass Membrane gas separation more effective than commercial membrane.
-
-### Hemodialysis
-
-Membrane application in hemodialysis is a process of using a semipermeable membrane to remove waste products and excess fluids from the blood.

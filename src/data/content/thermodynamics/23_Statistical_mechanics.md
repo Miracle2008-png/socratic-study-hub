@@ -121,22 +121,6 @@ GENERIC formalism
 
 An advanced approach uses a combination of stochastic methods and linear response theory. As an example, one approach to compute quantum coherence effects (weak localization, conductance fluctuations) in the conductance of an electronic system is the use of the Green–Kubo relations, with the inclusion of stochastic dephasing by interactions between various electrons by use of the Keldysh method.
 
-## Applications
-
-The ensemble formalism can be used to analyze general mechanical systems with uncertainty in knowledge about the state of a system. Ensembles are also used in:
-
-propagation of uncertainty over time,
-regression analysis of gravitational orbits,
-ensemble forecasting of weather,
-dynamics of neural networks,
-bounded-rational potential games in game theory and non-equilibrium economics.
-Statistical physics explains and quantitatively describes superconductivity, superfluidity, turbulence, collective phenomena in solids and plasma, and the structural features of liquid. It underlies modern astrophysics and the virial theorem. In solid state physics, statistical physics aids the study of liquid crystals, phase transitions, and critical phenomena. Many experimental studies of matter are entirely based on the statistical description of a system. These include the scattering of cold neutrons, X-ray, visible light, and more. Statistical physics also plays a role in materials science, nuclear physics, astrophysics, chemistry, biology and medicine (e.g. study of the spread of infectious diseases).
-Analytical and computational techniques derived from statistical physics of disordered systems, can be extended to large-scale problems, including machine learning, e.g. to analyze the weight space of deep neural networks. Statistical physics is thus finding applications in the area of medical diagnostics.
-
-### Quantum statistical mechanics
-
-Quantum statistical mechanics is statistical mechanics applied to quantum mechanical systems. In quantum mechanics, a statistical ensemble (probability distribution over possible quantum states) is described by a density operator S, which is a non-negative, self-adjoint, trace-class operator of trace 1 on the Hilbert space H describing the quantum system.  This can be shown under various mathematical formalisms for quantum mechanics.  One such formalism is provided by quantum logic.
-
 ## Index of statistical mechanics topics
 
 ### Physics

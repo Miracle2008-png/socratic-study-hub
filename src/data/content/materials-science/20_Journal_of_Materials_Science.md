@@ -4,9 +4,7 @@ The Journal of Materials Science is a weekly peer-reviewed scientific journal co
 In 2012, the journal announced an annual "Cahn Prize" for best paper published in the journal, in honor of its founding editor.
 In 2021, the journal announced a similar annual "Bonfield Prize" for best review paper published in the journal, in honor of a former Editor-in-Chief, William Bonfield. There are two more specialized sister journals, Journal of Materials Science: Materials in Medicine and Journal of Materials Science: Materials in Electronics.
 
-
 ## Abstracting and indexing
 The journal is abstracted and indexed in:
 
 According to the Journal Citation Reports, the journal has a 2020 impact factor of 4.220, ranking it 82nd out of 293 journals in the category "Materials Science, Multidisciplinary".
-

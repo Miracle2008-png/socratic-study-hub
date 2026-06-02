@@ -4,130 +4,7 @@ The following outline is provided as an overview of and topical guide to softwar
 Software engineering – application of a systematic, disciplined, quantifiable approach to the development, operation, and maintenance of software; that is the application of engineering to software.
 The ACM Computing Classification system is a poly-hierarchical ontology that organizes the topics of the field and can be used in semantic web applications and as a de facto standard classification system for the field.   The major section "Software and its Engineering" provides an outline and ontology for software engineering.
 
-
-## Software applications
-Software engineers build software (applications, operating systems, system software) that people use.
-Applications influence software engineering by pressuring developers to solve problems in new ways. For example, consumer software emphasizes low cost, medical software emphasizes high quality, and Internet commerce software emphasizes rapid development.
-
-Business software
-Accounting software
-Analytics
-Data mining closely related to database
-Decision support systems
-Airline reservations
-Banking
-Automated teller machines
-Cheque processing
-Credit cards
-Commerce
-Trade
-Auctions (e.g. eBay)
-Reverse auctions (procurement)
-Bar code scanners
-Compilers
-Parsers
-Compiler optimization
-Interpreters
-Linkers
-Loaders
-Communication
-E-mail
-Instant messengers
-VOIP
-Calendars — scheduling and coordinating
-Contact managers
-Computer graphics
-Animation
-Special effects for video and film
-Editing
-Post-processing
-Cryptography
-Databases, support almost every field
-Embedded systems Both software engineers and traditional engineers write software control systems for embedded products.
-Automotive software
-Avionics software
-Heating ventilating and air conditioning (HVAC) software
-Medical device software
-Telephony
-Telemetry
-Engineering All traditional engineering branches use software extensively. Engineers use spreadsheets, more than they ever used calculators. Engineers use custom software tools to design, analyze, and simulate their own projects, like bridges and power lines. These projects resemble software in many respects, because the work exists as electronic documents and goes through analysis, design, implementation, and testing phases. Software tools for engineers use the tenets of computer science; as well as the tenets of calculus, physics, and chemistry.
-Computer Aided Design (CAD)
-Electronic Design Automation (EDA)
-Numerical Analysis
-Simulation
-File
-FTP
-File sharing
-File synchronization
-Finance
-Bond market
-Futures market
-Stock market
-Games
-Poker
-Multiuser Dungeons
-Video games
-Information systems, support almost every field
-LIS Management of laboratory data
-MIS Management of financial and personnel data
-Logistics
-Supply chain management
-Manufacturing
-Computer Aided Manufacturing (CAM)
-Distributed Control Systems (DCS)
-Music
-Music sequencers
-Sound effects
-Music synthesis
-Network Management
-Network management system
-Element Management System
-Operations Support System
-Business Support Systems
-Networks and Internet
-Domain Name System
-Protocols
-Routers
-Office suites
-Word processors
-Spreadsheets
-Presentations
-Operating systems
-Embedded
-Graphical
-Multitasking
-Real-time
-Robotics
-Signal processing, encoding and interpreting signals
-Image processing, encoding and interpreting visual information
-Speech processing
-Text recognition
-Handwriting recognition
-Simulation, supports almost every field.
-Engineering, A software simulation can be cheaper to build and more flexible to change than a physical engineering model.
-Sciences
-Sciences
-Genomics
-Traffic Control
-Air traffic control
-Ship traffic control
-Road traffic control
-Training
-Drill
-Simulation
-Testing
-Visualization, supports almost every field
-Architecture
-Engineering
-Sciences
-Voting
-World Wide Web
-Browsers
-Servers
-
-
 ## Software engineering topics
-
 
 ### Programming paradigm, based on a programming language technology
 Object-oriented programming
@@ -135,7 +12,6 @@ Aspect-oriented programming
 Functional decomposition
 Structured programming
 Rule-based programming
-
 
 ### Databases
 Hierarchical
@@ -145,14 +21,12 @@ SQL/XML
 SQL
 NoSQL
 
-
 ### Graphical user interfaces
 GTK+ GIMP Toolkit
 wxWidgets
 Ultimate++
 Qt toolkit
 FLTK
-
 
 ### Programming tools
 Configuration management and source code management
@@ -186,19 +60,15 @@ Parser creation tools
 Yacc/Bison
 Static code analysis tools
 
-
 ### Libraries
 Component-based software engineering
-
 
 ### Design languages
 Unified Modeling Language (UML)
 
-
 ### Patterns, document many common programming and project management techniques
 Anti-patterns
 Patterns
-
 
 ### Processes and methodologies
 Agile
@@ -219,7 +89,6 @@ Metamodels
 ISO/IEC 24744
 SPEM
 
-
 ### Platforms
 A platform combines computer hardware and an operating system. As platforms grow more powerful and less costly, applications and tools grow more widely available.
 
@@ -235,7 +104,6 @@ Sun Microsystems Solaris
 Windows PCs (Wintel)
 Symbian OS
 
-
 ### Other Practices
 Communication
 Method engineering
@@ -248,13 +116,11 @@ Software reuse
 Systems integration
 Teamwork
 
-
 ### Other tools
 Decision tables
 Feature
 User stories
 Use cases
-
 
 ### Computer science topics
 Algorithms, well-defined methods for solving specific problems.
@@ -281,7 +147,6 @@ Adaptive Systems
 Neural Networks
 Evolutionary Algorithms
 
-
 ### Mathematics topics
 Discrete mathematics is a key foundation of software engineering.
 
@@ -305,7 +170,6 @@ Domain knowledge
 Statistics
 Decision theory
 Type theory
-
 
 ### Life cycle phases
 Development life cycle phase
@@ -338,7 +202,6 @@ Agile software development
 DSDM
 Chaos model — Chaos strategy
 
-
 ### Deliverables
 Deliverables must be developed for many SE projects. Software engineers rarely make all of these deliverables themselves. They usually cooperate with the writers, trainers, installers, marketers, technical support people, and others who make many of these deliverables.
 
@@ -362,7 +225,6 @@ Buyer
 Support info for computer support groups.
 Marketing and sales materials
 White papers, explain the technologies used in the applications
-
 
 ### Business roles
 Operations
@@ -388,7 +250,6 @@ Academia
 Educators
 Researchers
 
-
 ### Management topics
 Leadership
 Coaching
@@ -411,13 +272,11 @@ Process management
 Software development processes
 Metrics
 
-
 ### Business topics
 Quality programs
 Malcolm Baldrige National Quality Award
 Six Sigma
 Total Quality Management (TQM)
-
 
 ## Software engineering profession
 Software engineering demographics
@@ -430,7 +289,6 @@ Licensing
 Legal
 Intellectual property
 Consumer protection
-
 
 ## Notable publications
 About Face: The Essentials of User Interface Design by Alan Cooper, about user interface design. ISBN 0-7645-2641-3
@@ -450,7 +308,6 @@ The Psychology of Computer Programming by Gerald Weinberg. Written as an indepen
 Refactoring: Improving the Design of Existing Code by Martin Fowler, Kent Beck, John Brant, William Opdyke, and Don Roberts. ISBN 0-201-48567-2
 The Pragmatic Programmer: from journeyman to master by Andrew Hunt, and David Thomas. ISBN 0-201-61622-X
 Software Engineering Body of Knowledge (SWEBOK) ISO/IEC TR 19759
-
 
 ## Related fields
 Computer science
@@ -473,4 +330,3 @@ Application software
 Information systems
 Programming
 Systems engineering
-

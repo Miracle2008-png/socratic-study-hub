@@ -7,7 +7,6 @@ The phrase H∞ control comes from the name of the mathematical space over which
 H∞ techniques can be used to minimize the closed loop impact of a perturbation: depending on the problem formulation, the impact will either be measured in terms of stabilization or performance.  Simultaneously optimizing robust performance and robust stabilization is difficult.  One method that comes close to achieving this is H∞ loop-shaping, which allows the control designer to apply classical loop-shaping concepts to the multivariable frequency response to get good robust performance, and then optimizes the response near the system bandwidth to achieve good robust stabilization.
 Commercial software is available to support H∞ controller synthesis.
 
-
 ## Problem formulation
 First, the process has to be represented according to the following standard configuration:
 
@@ -512,4 +511,3 @@ The achievable H∞ norm of the closed loop system is mainly given through the m
 A Youla-Kucera parametrization of the closed loop often leads to very high-order controller.
 Riccati-based approaches solve two Riccati equations to find the controller, but require several simplifying assumptions.
 An optimization-based reformulation of the Riccati equation uses linear matrix inequalities and requires fewer assumptions.
-

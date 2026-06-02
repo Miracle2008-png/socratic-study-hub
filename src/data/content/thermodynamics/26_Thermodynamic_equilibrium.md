@@ -8,60 +8,6 @@ In systems that are at a state of non-equilibrium there are, by contrast, net fl
 Though not a widely named "law," it is an axiom of thermodynamics that there exist states of thermodynamic equilibrium. 
 The second law of thermodynamics states that, in an isolated system, when partitions are removed between equilibrated subsystems in different states, the system spontaneously equilibrates (achieves thermodynamic equilibrium), accompanied by an increase in the system's entropy.
 
-
-## Overview
-
-Classical thermodynamics deals with states of dynamic equilibrium. The state of a system at thermodynamic equilibrium is the one for which some thermodynamic potential is minimized (in the absence of an applied voltage), or for which the entropy (S) is maximized, for specified conditions. One such potential is the Helmholtz free energy (A), for a closed system at constant volume and temperature (controlled by a heat bath):
-
-  
-    
-      
-        A
-        =
-        U
-        −
-        T
-        S
-      
-    
-    {\displaystyle A=U-TS}
-  
-
-Another potential, the Gibbs free energy (G), is minimized at thermodynamic equilibrium in a closed system at constant temperature and pressure, both controlled by the surroundings:
-
-  
-    
-      
-        G
-        =
-        U
-        −
-        T
-        S
-        +
-        P
-        V
-      
-    
-    {\displaystyle G=U-TS+PV}
-  
-
-where T denotes the absolute thermodynamic temperature, P the pressure, S the entropy, V the volume, and U the internal energy of the system. In other words, 
-  
-    
-      
-        Δ
-        G
-        =
-        0
-      
-    
-    {\displaystyle \Delta G=0}
-  
- is a necessary condition for chemical equilibrium under these conditions (in the absence of an applied voltage).
-Thermodynamic equilibrium is the unique stable stationary state that is approached or eventually reached as the system interacts with its surroundings over a long time. The above-mentioned potentials are mathematically constructed to be the thermodynamic quantities that are minimized under the particular conditions in the specified surroundings.
-
-
 ## Conditions
 For a completely isolated system, S is maximum at thermodynamic equilibrium.
 For a closed system at controlled constant temperature and volume, A is minimum at thermodynamic equilibrium.
@@ -73,17 +19,14 @@ Two systems are in mechanical equilibrium when their pressures are the same.
 Two systems are in diffusive equilibrium when their chemical potentials are the same.
 All forces are balanced and there is no significant external driving force.
 
-
 ## Relation of exchange equilibrium between systems
 Often the surroundings of a thermodynamic system may also be regarded as another thermodynamic system. In this view, one may consider the system and its surroundings as two systems in mutual contact, with long-range forces also linking them. The enclosure of the system is the surface of contiguity or boundary between the two systems. In the thermodynamic formalism, that surface is regarded as having specific properties of permeability. For example, the surface of contiguity may be supposed to be permeable only to heat, allowing energy to transfer only as heat. Then the two systems are said to be in thermal equilibrium when the long-range forces are unchanging in time and the transfer of energy as heat between them has slowed and eventually stopped permanently; this is an example of a contact equilibrium. Other kinds of contact equilibrium are defined by other kinds of specific permeability. When two systems are in contact equilibrium with respect to a particular kind of permeability, they have common values of the intensive variable that belongs to that particular kind of permeability. Examples of such intensive variables are temperature, pressure, chemical potential.
 A contact equilibrium may be regarded also as an exchange equilibrium. There is a zero balance of rate of transfer of some quantity between the two systems in contact equilibrium. For example, for a wall permeable only to heat, the rates of diffusion of internal energy as heat between the two systems are equal and opposite. An adiabatic wall between the two systems is 'permeable' only to energy transferred as work; at mechanical equilibrium the rates of transfer of energy as work between them are equal and opposite. If the wall is a simple wall, then the rates of transfer of volume across it are also equal and opposite; and the pressures on either side of it are equal. If the adiabatic wall is more complicated, with a sort of leverage, having an area-ratio, then the pressures of the two systems in exchange equilibrium are in the inverse ratio of the volume exchange ratio; this keeps the zero balance of rates of transfer as work.
 A radiative exchange can occur between two otherwise separate systems. Radiative exchange equilibrium prevails when the two systems have the same temperature.
 
-
 ## Thermodynamic state of internal equilibrium of a system
 A collection of matter may be entirely isolated from its surroundings. If it has been left undisturbed for an indefinitely long time, classical thermodynamics postulates that it is in a state in which no changes occur within it, and there are no flows within it. This is a thermodynamic state of internal equilibrium. (This postulate is sometimes, but not often, called the "minus first" law of thermodynamics. One textbook calls it the "zeroth law", remarking that the authors think this more befitting that title than its more customary definition, which apparently was suggested by Fowler.)
 Such states are a principal concern in what is known as classical or equilibrium thermodynamics, for they are the only states of the system that are regarded as well defined in that subject. A system in contact equilibrium with another system can by a thermodynamic operation be isolated, and upon the event of isolation, no change occurs in it. A system in a relation of contact equilibrium with another system may thus also be regarded as being in its own state of internal thermodynamic equilibrium.
-
 
 ## Multiple contact equilibrium
 The thermodynamic formalism allows that a system may have contact with several other systems at once, which may or may not also have mutual contact, the contacts having respectively different permeabilities. If these systems are all jointly isolated from the rest of the world those of them that are in contact then reach respective contact equilibria with one another.
@@ -92,14 +35,12 @@ A thermodynamic operation may occur as an event restricted to the walls that are
 Otherwise, a thermodynamic operation may directly affect a wall of the system.
 It is often convenient to suppose that some of the surrounding subsystems are so much larger than the system that the process can affect the intensive variables only of the surrounding subsystems, and they are then called reservoirs for relevant intensive variables.
 
-
 ## Local and global equilibrium
 It can be useful to distinguish between global and local thermodynamic equilibrium. In thermodynamics, exchanges within a system and between the system and the outside are controlled by intensive parameters. As an example, temperature controls heat exchanges. Global thermodynamic equilibrium (GTE) means that those intensive parameters are homogeneous throughout the whole system, while local thermodynamic equilibrium (LTE) means that those intensive parameters are varying in space and time, but are varying so slowly that, for any point, one can assume thermodynamic equilibrium in some neighborhood about that point.
 If the description of the system requires variations in the intensive parameters that are too large, the very assumptions upon which the definitions of these intensive parameters are based will break down, and the system will be in neither global nor local equilibrium. For example, it takes a certain number of collisions for a particle to equilibrate to its surroundings. If the average distance it has moved during these collisions removes it from the neighborhood it is equilibrating to, it will never equilibrate, and there will be no LTE. Temperature is, by definition, proportional to the average internal energy of an equilibrated neighborhood. Since there is no equilibrated neighborhood, the concept of temperature doesn't hold, and the temperature becomes undefined.
 This local equilibrium may apply only to a certain subset of particles in the system. For example, LTE is usually applied only to massive particles. In a radiating gas, the photons being emitted and absorbed by the gas do not need to be in a thermodynamic equilibrium with each other or with the massive particles of the gas for LTE to exist. In some cases, it is not considered necessary for free electrons to be in equilibrium with the much more massive atoms or molecules for LTE to exist.
 As an example, LTE will exist in a glass of water that contains a melting ice cube. The temperature inside the glass can be defined at any point, but it is colder near the ice cube than far away from it. If energies of the molecules located near a given point are observed, they will be distributed according to the Maxwell–Boltzmann distribution for a certain temperature. If the energies of the molecules located near another point are observed, they will be distributed according to the Maxwell–Boltzmann distribution for another temperature.
 Local thermodynamic equilibrium does not require either local or global stationarity. In other words, each small locality need not have a constant temperature. However, it does require that each small locality change slowly enough to practically sustain its local Maxwell–Boltzmann distribution of molecular velocities. A global non-equilibrium state can be stably stationary only if it is maintained by exchanges between the system and the outside. For example, a globally-stable stationary state could be maintained inside the glass of water by continuously adding finely powdered ice into it to compensate for the melting, and continuously draining off the meltwater. Natural transport phenomena may lead a system from local to global thermodynamic equilibrium. Going back to our example, the diffusion of heat will lead our glass of water toward global thermodynamic equilibrium, a state in which the temperature of the glass is completely homogeneous.
-
 
 ## Reservations
 Some accounts of thermodynamic equilibrium often enough make provisos or reservations to their statements. Some writers leave such reservations merely implied or more or less unstated.
@@ -108,7 +49,6 @@ J.A. Beattie and I. Oppenheim write: "Insistence on a strict interpretation of t
 A.B. Pippard writes in The Elements of Classical Thermodynamics: "Given long enough a supercooled vapour will eventually condense, ... . The time involved may be so enormous, however, perhaps 10100 years or more, ... . For most purposes, provided the rapid change is not artificially stimulated, the systems may be regarded as being in equilibrium."
 Another author, A. Münster, writes in this context. He observes that thermonuclear processes often occur so slowly that they can be ignored in thermodynamics. He comments: "The concept 'absolute equilibrium' or 'equilibrium with respect to all imaginable processes', has therefore, no physical significance." He therefore states that: "... we can consider an equilibrium only with respect to specified processes and defined experimental conditions."
 According to L. Tisza: "... in the discussion of phenomena near absolute zero. The absolute predictions of the classical theory become particularly vague because the occurrence of frozen-in nonequilibrium states is very common."
-
 
 ## Definitions
 The most general kind of thermodynamic equilibrium of a system is through contact with the surroundings that allows simultaneous passages of all chemical substances and all kinds of energy. A system in thermodynamic equilibrium may move with uniform acceleration through space but must not change its shape or size while doing so; thus it is defined by a rigid volume in space. It may lie within external fields of force, determined by external factors of far greater extent than the system itself, so that events within the system cannot in an appreciable amount affect the external fields of force. The system can be in thermodynamic equilibrium only if the external force fields are uniform, and are determining its uniform acceleration, or if it lies in a non-uniform force field but is held stationary there by local forces, such as mechanical pressures, on its surface.
@@ -128,13 +68,10 @@ J.R. Waldram writes of "a definite thermodynamic state". He defines the term "th
 Considering equilibrium states, M. Bailyn writes: "Each intensive variable has its own type of equilibrium." He then defines thermal equilibrium, mechanical equilibrium, and material equilibrium. Accordingly, he writes: "If all the intensive variables become uniform, thermodynamic equilibrium is said to exist." He is not here considering the presence of an external force field.
 J.G. Kirkwood and I. Oppenheim define thermodynamic equilibrium as follows: "A system is in a state of thermodynamic equilibrium if, during the time period allotted for experimentation, (a) its intensive properties are independent of time and (b) no current of matter or energy exists in its interior or at its boundaries with the surroundings." It is evident that they are not restricting the definition to isolated or to closed systems. They do not discuss the possibility of changes that occur with "glacial slowness", and proceed beyond the time period allotted for experimentation. They note that for two systems in contact, there exists a small subclass of intensive properties such that if all those of that small subclass are respectively equal, then all respective intensive properties are equal. States of thermodynamic equilibrium may be defined by this subclass, provided some other conditions are satisfied.
 
-
 ## Characteristics of a state of internal thermodynamic equilibrium
-
 
 ### Homogeneity in the absence of external forces
 A thermodynamic system consisting of a single phase in the absence of external forces, in its own internal thermodynamic equilibrium, is homogeneous. This means that the material in any small volume element of the system can be interchanged with the material of any other geometrically congruent volume element of the system, and the effect is to leave the system thermodynamically unchanged. In general, a strong external force field makes a system of a single phase in its own internal thermodynamic equilibrium inhomogeneous with respect to some intensive variables. For example, a relatively dense component of a mixture can be concentrated by centrifugation.
-
 
 ### Uniform temperature
 Such equilibrium inhomogeneity, induced by external forces, does not occur for the intensive variable temperature. According to E.A. Guggenheim, "The most important conception of thermodynamics is temperature." Planck introduces his treatise with a brief account of heat and temperature and thermal equilibrium, and then announces: "In the following we shall deal chiefly with homogeneous, isotropic bodies of any form, possessing throughout their substance the same temperature and density, and subject to a uniform pressure acting everywhere perpendicular to the surface." As did Carathéodory, Planck was setting aside surface effects and external fields and anisotropic crystals. Though referring to temperature, Planck did not there explicitly refer to the concept of thermodynamic equilibrium. In contrast, Carathéodory's scheme of presentation of classical thermodynamics for closed systems postulates the concept of an "equilibrium state" following Gibbs (Gibbs speaks routinely of a "thermodynamic state"), though not explicitly using the phrase 'thermodynamic equilibrium', nor explicitly postulating the existence of a temperature to define it.
@@ -142,19 +79,15 @@ Although thermodynamic laws are immutable, systems can be created that delay the
 The temperature within a system in thermodynamic equilibrium is uniform in space as well as in time. In a system in its own state of internal thermodynamic equilibrium, there are no net internal macroscopic flows. In particular, this means that all local parts of the system are in mutual radiative exchange equilibrium. This means that the temperature of the system is spatially uniform. This is so in all cases, including those of non-uniform external force fields. For an externally imposed gravitational field, this may be proved in macroscopic thermodynamic terms, by the calculus of variations, using the method of Langrangian multipliers. Considerations of kinetic theory or statistical mechanics also support this statement.
 In order that a system may be in its own internal state of thermodynamic equilibrium, it is of course necessary, but not sufficient, that it be in its own internal state of thermal equilibrium; it is possible for a system to reach internal mechanical equilibrium before it reaches internal thermal equilibrium.
 
-
 ### Number of real variables needed for specification
 In his exposition of his scheme of closed system equilibrium thermodynamics, C. Carathéodory initially postulates that experiment reveals that a definite number of real variables define the states that are the points of the manifold of equilibria. In the words of Prigogine and Defay (1945): "It is a matter of experience that when we have specified a certain number of macroscopic properties of a system, then all the other properties are fixed." As noted above, according to A. Münster, the number of variables needed to define a thermodynamic equilibrium is the least for any state of a given isolated system. As noted above, J.G. Kirkwood and I. Oppenheim point out that a state of thermodynamic equilibrium may be defined by a special subclass of intensive variables, with a definite number of members in that subclass.
 If the thermodynamic equilibrium lies in an external force field, it is only the temperature that can in general be expected to be spatially uniform. Intensive variables other than temperature will in general be non-uniform if the external force field is non-zero. In such a case, in general, additional variables are needed to describe the spatial non-uniformity.
 
-
 ### Stability against small perturbations
 As noted above, J.R. Partington points out that a state of thermodynamic equilibrium is stable against small transient perturbations. Without this condition, in general, experiments intended to study systems in thermodynamic equilibrium are in severe difficulties.
 
-
 ### Approach to thermodynamic equilibrium within an isolated system
 When a body of material starts from a non-equilibrium state of inhomogeneity or chemical non-equilibrium, and is then isolated, it spontaneously evolves towards its own internal state of thermodynamic equilibrium. It is not necessary that all aspects of internal thermodynamic equilibrium be reached simultaneously; some can be established before others. For example, in many cases of such evolution, internal mechanical equilibrium is established much more rapidly than the other aspects of the eventual thermodynamic equilibrium. Another example is that, in many cases of such evolution, thermal equilibrium is reached much more rapidly than chemical equilibrium.
-
 
 ### Fluctuations within an isolated system in its own internal thermodynamic equilibrium
 In an isolated system, thermodynamic equilibrium by definition persists over an indefinitely long time. In classical physics it is often convenient to ignore the effects of measurement and this is assumed in the present account.
@@ -165,17 +98,14 @@ If the system is repeatedly subdivided, eventually a system is produced that is 
 If the mesoscopic system is further repeatedly divided, eventually a  microscopic system is produced. Then the molecular character of matter and the quantal nature of momentum transfer become important in the processes of fluctuation. One has left the realm of classical or macroscopic thermodynamics, and one needs quantum statistical mechanics. The fluctuations can become relatively dominant, and questions of measurement become important.
 The statement that 'the system is its own internal thermodynamic equilibrium' may be taken to mean that 'indefinitely many such measurements have been taken from time to time, with no trend in time in the various measured values'. Thus the statement, that 'a system is in its own internal thermodynamic equilibrium, with stated nominal values of its functions of state conjugate to its specifying state variables', is far far more informative than a statement that 'a set of single simultaneous measurements of those functions of state have those same values'. This is because the single measurements might have been made during a slight fluctuation, away from another set of nominal values of those conjugate intensive functions of state, that is due to unknown and different constitutive properties. A single measurement cannot tell whether that might be so, unless there is also knowledge of the nominal values that belong to the equilibrium state.
 
-
 ### Thermal equilibrium
 
 Thermal equilibrium is achieved when two systems in thermal contact with each other cease to have a net exchange of energy. It follows that if two systems are in thermal equilibrium, then their temperatures are the same.
 Thermal equilibrium occurs when a system's macroscopic thermal observables have ceased to change with time.  For example, an ideal gas whose distribution function has stabilised to a specific Maxwell–Boltzmann distribution would be in thermal equilibrium.  This outcome allows a single temperature and pressure to be attributed to the whole system. For an isolated body, it is quite possible for mechanical equilibrium to be reached before thermal equilibrium is reached, but eventually, all aspects of equilibrium, including thermal equilibrium, are necessary for thermodynamic equilibrium.
 An explicit distinction between 'thermal equilibrium' and 'thermodynamic equilibrium' is made by B. C. Eu. He considers two systems in thermal contact, one a thermometer, the other a system in which there are several occurring irreversible processes, entailing non-zero fluxes; the two systems are separated by a wall permeable only to heat. He considers the case in which, over the time scale of interest, it happens that both the thermometer reading and the irreversible processes are steady. Then there is thermal equilibrium without thermodynamic equilibrium. Eu proposes consequently that the zeroth law of thermodynamics can be considered to apply even when thermodynamic equilibrium is not present; also he proposes that if changes are occurring so fast that a steady temperature cannot be defined, then "it is no longer possible to describe the process by means of a thermodynamic formalism. In other words, thermodynamics has no meaning for such a process." This illustrates the importance for thermodynamics of the concept of temperature.
 
-
 ## Non-equilibrium
 
 A system's internal state of thermodynamic equilibrium should be distinguished from a "stationary state" in which thermodynamic parameters are unchanging in time but the system is not isolated, so that there are, into and out of the system, non-zero macroscopic fluxes which are constant in time.
 Non-equilibrium thermodynamics is a branch of thermodynamics that deals with systems that are not in thermodynamic equilibrium. Most systems found in nature are not in thermodynamic equilibrium because they are changing or can be triggered to change over time, and are continuously and discontinuously subject to flux of matter and energy to and from other systems. The thermodynamic study of non-equilibrium systems requires more general concepts than are dealt with by equilibrium thermodynamics. Many natural systems still today remain beyond the scope of currently known macroscopic thermodynamic methods.
 Laws governing systems which are far from equilibrium are also debatable. One of the guiding principles for these systems is the maximum entropy production principle. It states that a non-equilibrium system evolves such as to maximize its entropy production.
-

@@ -4,37 +4,6 @@ Thermodynamics is a branch of physics that deals with heat, work, and temperatur
 Historically, thermodynamics developed out of a desire to increase the efficiency of early steam engines, particularly through the work of French physicist Sadi Carnot (1824). Scots-Irish physicist Lord Kelvin was the first to formulate a concise definition of thermodynamics in 1854 which stated, "Thermo-dynamics is the subject of the relation of heat to forces acting between contiguous parts of bodies, and the relation of heat to electrical agency."  German physicist and mathematician Rudolf Clausius restated Carnot's principle known as the Carnot cycle and gave the theory of heat a more accurate and sounder basis. His most important paper, "On the Moving Force of Heat", published in 1850, first stated the second law of thermodynamics. In 1865 he named the concept of entropy. In 1870 he introduced the virial theorem, which applied to heat.
 The initial application of thermodynamics to mechanical heat engines was quickly extended to the study of chemical compounds and chemical reactions. Chemical thermodynamics studies the nature of the role of entropy in the process of chemical reactions and has provided the bulk of expansion and knowledge of the field. Other formulations of thermodynamics emerged. Statistical thermodynamics, or statistical mechanics, concerns itself with statistical predictions of the collective motion of particles from their microscopic behavior. In 1909, Constantin Carathéodory presented a purely mathematical approach in an axiomatic formulation, a description often referred to as geometrical thermodynamics.
 
-## Introduction
-
-A description of any thermodynamic system employs the four laws of thermodynamics that form an axiomatic basis. The first law specifies that energy can be transferred between physical systems as heat, as work, and with the transfer of matter. The second law defines the existence of a quantity called entropy, which describes the direction, thermodynamically, that a system can evolve and quantifies the state of order of a system and which can be used to quantify the useful work that can be extracted from the system.
-In thermodynamics, interactions between large ensembles of objects are studied and categorized. Central to this are the concepts of the thermodynamic system and its surroundings. A system is composed of particles, whose average motions define its properties, and those properties are in turn related to one another through equations of state. Properties can be combined to express internal energy and thermodynamic potentials, which are useful for determining conditions for equilibrium and spontaneous processes.
-With these tools, thermodynamics can be used to describe how systems respond to changes in their environment. This can be applied to a wide variety of topics in science and engineering, such as engines, phase transitions, chemical reactions, transport phenomena, and even black holes. The results of thermodynamics are essential for other fields of physics and for chemistry, chemical engineering, corrosion engineering, aerospace engineering, mechanical engineering, cell biology, biomedical engineering, materials science, and economics, to name a few.
-This article is focused mainly on classical thermodynamics which primarily studies systems in thermodynamic equilibrium. Non-equilibrium thermodynamics is often treated as an extension of the classical treatment, but statistical mechanics has brought many advances to that field.
-
-## Branches of thermodynamics
-
-The study of thermodynamic systems has developed into several related branches, each using a different fundamental model as a theoretical or experimental basis, or applying the principles to varying types of systems.
-
-### Classical thermodynamics
-
-Classical thermodynamics is the description of the states of thermodynamic systems at near-equilibrium, that uses macroscopic, measurable properties. It is used to model exchanges of energy, work and heat based on the laws of thermodynamics. The qualifier classical reflects the fact that it represents the first level of understanding of the subject as it developed in the 19th century and describes the changes of a system in terms of macroscopic empirical (large scale, and measurable) parameters. A microscopic interpretation of these concepts was later provided by the development of statistical mechanics.
-
-### Statistical mechanics
-
-Statistical mechanics, also known as statistical thermodynamics, emerged with the development of atomic and molecular theories in the late 19th century and early 20th century, and supplemented classical thermodynamics with an interpretation of the microscopic interactions between individual particles or quantum-mechanical states. This field relates the microscopic properties of individual atoms and molecules to the macroscopic, bulk properties of materials that can be observed on the human scale, thereby explaining classical thermodynamics as a natural result of statistics, classical mechanics, and quantum theory at the microscopic level.
-
-### Chemical thermodynamics
-
-Chemical thermodynamics is the study of the interrelation of energy with chemical reactions or with a physical change of state within the confines of the laws of thermodynamics. The primary objective of chemical thermodynamics is to determine the spontaneity of a given transformation.
-
-### Equilibrium thermodynamics
-
-Equilibrium thermodynamics is the study of transfers of matter and energy in systems or bodies that, by agencies in their surroundings, can be driven from one state of thermodynamic equilibrium to another. The term 'thermodynamic equilibrium' indicates a state of balance, in which all macroscopic flows are zero; in the case of the simplest systems or bodies, their intensive properties are homogeneous, and their pressures are perpendicular to their boundaries. In an equilibrium state there are no unbalanced potentials, or driving forces, between macroscopically distinct parts of the system. A central aim in equilibrium thermodynamics is: given a system in a well-defined initial equilibrium state, and given its surroundings, and given its constitutive walls, to calculate what will be the final equilibrium state of the system after a specified thermodynamic operation has changed its walls or surroundings.
-
-### Non-equilibrium thermodynamics
-
-Non-equilibrium thermodynamics is a branch of thermodynamics that deals with systems that are not in thermodynamic equilibrium. Most systems found in nature are not in thermodynamic equilibrium because they are not in stationary states, and are continuously and discontinuously subject to flux of matter and energy to and from other systems. The thermodynamic study of non-equilibrium systems requires more general concepts than are dealt with by equilibrium thermodynamics. Many natural systems still today remain beyond the scope of currently known macroscopic thermodynamic methods.
-
 ## Laws of thermodynamics
 
 Thermodynamics is principally based on a set of four laws which are universally valid when applied to systems that fall within the constraints implied by each. In the various theoretical descriptions of thermodynamics these laws may be expressed in seemingly differing forms, but the most prominent formulations are the following.
@@ -367,10 +336,3 @@ $$ i $$
   
  is the count of particles types in the system.
 Thermodynamic potentials can be derived from the energy balance equation applied to a thermodynamic system. Other thermodynamic potentials can also be obtained through Legendre transformation.
-
-## Axiomatic thermodynamics
-
-Axiomatic thermodynamics is a mathematical discipline that aims to describe thermodynamics in terms of rigorous axioms, for example by finding a mathematically rigorous way to express the familiar laws of thermodynamics.
-The first attempt at an axiomatic theory of thermodynamics was Constantin Carathéodory's 1909 work Investigations on the Foundations of Thermodynamics, which made use of Pfaffian systems and the concept of adiabatic accessibility, a notion that was introduced by Carathéodory himself. In this formulation, thermodynamic concepts such as heat, entropy, and temperature are derived from quantities that are more directly measurable. Theories that came after, differed in the sense that they made assumptions regarding thermodynamic processes with arbitrary initial and final states, as opposed to considering only neighboring states.
-
-## Applied fields

@@ -1560,10 +1560,6 @@ $$ \Delta U $$
   
  between two states is a function only of the two states.
 
-### Overview of the weight of evidence for the law
-
-The first law of thermodynamics is so general that its predictions cannot all be directly tested. In many properly conducted experiments it has been precisely supported, and never violated. Indeed, within its scope of applicability, the law is so reliably established, that, nowadays, rather than experiment being considered as testing the accuracy of the law, it is more practical and realistic to think of the law as testing the accuracy of experiment. An experimental result that seems to violate the law may be assumed to be inaccurate or wrongly conceived, for example due to failure to account for an important physical factor. Thus, some may regard it as a principle more abstract than a law.
-
 ## State functional formulation for infinitesimal processes
 
 When the heat and work transfers in the equations above are infinitesimal in magnitude, they are often denoted by δ, rather than exact differentials denoted by d, as a reminder that heat and work do not describe the state of any system. The integral of an inexact differential depends upon the particular path taken through the space of thermodynamic parameters while the integral of an exact differential depends only upon the initial and final states. If the initial and final states are the same, then the integral of an inexact differential may or may not be zero, but the integral of an exact differential is always zero. The path taken by a thermodynamic system through a chemical or physical change is known as a thermodynamic process.

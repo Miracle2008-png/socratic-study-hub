@@ -5,11 +5,6 @@ Pure mechanics describes the response of bodies (solids and fluids) or systems o
 Applied mechanics can be split into particle mechanics (mechanics of macroscopic objects modeled as point particles), rigid body mechanics (mechanics of non-deformable macroscopic bodies with a definite shape), solid mechanics (mechanics of deformable macroscopic solids, including both elastic and plastic deformation), and fluid mechanics (mechanics of macroscopic fluids). Each branch of applied mechanics is further divided into statics (the study of bodies that have zero resultant force and torque acted upon them), and dynamics (the study of bodies that have non-zero resultant force and torque acted upon them).
 Within the practical sciences, applied mechanics is useful in formulating new ideas and theories, discovering and interpreting phenomena, and developing experimental and computational tools. In the application of the natural sciences, mechanics was said to be complemented by thermodynamics, the study of heat and more generally energy, and electromechanics, the study of electricity and magnetism.
 
-## Overview
-
-Engineering problems are generally tackled with applied mechanics through the application of theories of classical mechanics and fluid mechanics. Because applied mechanics can be applied in engineering disciplines like civil engineering, mechanical engineering, aerospace engineering, materials engineering, and biomedical engineering, it is sometimes referred to as engineering mechanics.
-Science and engineering are interconnected with respect to applied mechanics, as researches in science are linked to research processes in civil, mechanical, aerospace, materials and biomedical engineering disciplines. In civil engineering, applied mechanics’ concepts can be applied to structural design and a variety of engineering sub-topics like structural, coastal, geotechnical, construction, and earthquake engineering. In mechanical engineering, it can be applied in mechatronics and robotics, design and drafting, nanotechnology, machine elements, structural analysis, friction stir welding, and acoustical engineering. In aerospace engineering, applied mechanics is used in aerodynamics, aerospace structural mechanics and propulsion, aircraft design and flight mechanics. In materials engineering, applied mechanics’ concepts are used in thermoelasticity, elasticity theory, fracture and failure mechanisms, structural design optimisation, fracture and fatigue, active materials and composites, and computational mechanics. Research in applied mechanics can be directly linked to biomedical engineering areas of interest like orthopaedics; biomechanics;  human body motion analysis; soft tissue modelling of muscles, tendons, ligaments, and cartilage; biofluid mechanics; and dynamic systems, performance enhancement, and optimal control.
-
 ## Branches
 
 ### Dynamics
@@ -158,16 +153,6 @@ Biomechanics
 Human factor engineering
 Rehabilitation engineering
 Sports mechanics
-
-## Applications
-
-Electrical Engineering
-Civil engineering
-Mechanical Engineering
-Nuclear engineering
-Architectural engineering
-Chemical engineering
-Petroleum engineering
 
 ## Publications
 

@@ -3,9 +3,7 @@
 Sediment transport is the movement of solid particles (sediment), typically due to a combination of gravity acting on the sediment, and the movement of the fluid in which the sediment is entrained. Sediment transport occurs in natural systems where the particles are clastic rocks (sand, gravel, boulders, etc.), mud, or clay; the fluid is air, water, or ice; and the force of gravity acts to move the particles along the sloping surface on which they are resting. Sediment transport due to fluid motion occurs in rivers, oceans, lakes, seas, and other bodies of water due to currents and tides. Transport is also caused by glaciers as they flow, and on terrestrial surfaces under the influence of wind. Sediment transport due only to gravity can occur on sloping surfaces in general, including hillslopes, scarps, cliffs, and the continental shelf—continental slope boundary.
 Sediment transport is important in the fields of sedimentary geology, geomorphology, civil engineering, hydraulic engineering and environmental engineering (see applications, below). Knowledge of sediment transport is most often used to determine whether erosion or deposition will occur, the magnitude of this erosion or deposition, and the time and distance over which it will occur.
 
-
 ## Environments
-
 
 ### Aeolian
 
@@ -15,19 +13,15 @@ Aeolian sediment transport is common on beaches and in the arid regions of the w
 Wind-blown very fine-grained dust is capable of entering the upper atmosphere and moving across the globe. Dust from the Sahara deposits on the Canary Islands and islands in the Caribbean, and dust from the Gobi Desert has deposited on the western United States. This sediment is important to the soil budget and ecology of several islands.
 Deposits of fine-grained wind-blown glacial sediment are called loess.
 
-
 ### Fluvial
-
 
 ### Coastal
 
 Coastal sediment transport takes place in near-shore environments due to the motions of waves and currents. At the mouths of rivers, coastal sediment and fluvial sediment transport processes mesh to create river deltas.
 Coastal sediment transport results in the formation of characteristic coastal landforms such as beaches, barrier islands, and capes.
 
-
 ### Glacial
 As glaciers move over their beds, they entrain and move material of all sizes. Glaciers can carry the largest sediment, and areas of glacial deposition often contain a large number of glacial erratics, many of which are several metres in diameter. Glaciers also pulverize rock into "glacial flour", which is so fine that it is often carried away by winds to create loess deposits thousands of kilometres afield. Sediment entrained in glaciers often moves approximately along the glacial flowlines, causing it to appear at the surface in the ablation zone.
-
 
 ### Hillslope
 In hillslope sediment transport, a variety of processes move regolith downslope. These include:
@@ -39,23 +33,10 @@ Slumping and landsliding of the hillslope
 These processes generally combine to give the hillslope a profile that looks like a solution to the diffusion equation, where the diffusivity is a parameter that relates to the ease of sediment transport on the particular hillslope. For this reason, the tops of hills generally have a parabolic concave-up profile, which grades into a convex-up profile around valleys.
 As hillslopes steepen, however, they become more prone to episodic landslides and other mass wasting events. Therefore, hillslope processes are better described by a nonlinear diffusion equation in which classic diffusion dominates for shallow slopes and erosion rates go to infinity as the hillslope reaches a critical angle of repose.
 
-
 ### Debris flow
 Large masses of material are moved in debris flows, hyperconcentrated mixtures of mud, clasts that range up to boulder-size, and water. Debris flows move as granular flows down steep mountain valleys and washes. Because they transport sediment as a granular mixture, their transport mechanisms and capacities scale differently from those of fluvial systems.
 
-
-## Applications
-
-Sediment transport is applied to solve many environmental, geotechnical, and geological problems. Measuring or quantifying sediment transport or erosion is therefore important for coastal engineering. Several sediment erosion devices have been designed in order to quantify sediment erosion (e.g., Particle Erosion Simulator (PES)). One such device, also referred to as the BEAST (Benthic Environmental Assessment Sediment Tool) has been calibrated in order to quantify rates of sediment erosion.
-Movement of sediment is important in providing habitat for fish and other organisms in rivers. Therefore, managers of highly regulated rivers, which are often sediment-starved due to dams, are often advised to stage short floods to refresh the bed material and rebuild bars. This is also important, for example, in the Grand Canyon of the Colorado River, to rebuild shoreline habitats also used as campsites.
-Sediment discharge into a reservoir formed by a dam forms a reservoir delta. This delta will fill the basin, and eventually, either the reservoir will need to be dredged or the dam will need to be removed. Knowledge of sediment transport can be used to properly plan to extend the life of a dam.
-Geologists can use inverse solutions of transport relationships to understand flow depth, velocity, and direction, from sedimentary rocks and young deposits of alluvial materials.
-Flow in culverts, over dams, and around bridge piers can cause erosion of the bed. This erosion can damage the environment and expose or unsettle the foundations of the structure. Therefore, good knowledge of the mechanics of sediment transport in a built environment are important for civil and hydraulic engineers.
-When suspended sediment transport is increased due to human activities, causing environmental problems including the filling of channels, it is called siltation after the grain-size fraction dominating the process.
-
-
 ## Initiation of motion
-
 
 ### Stress balance
 For a fluid to begin transporting sediment that is currently at rest on a surface, the boundary (or bed) shear stress 
@@ -218,7 +199,6 @@ And the new equation to solve becomes:
 The equations included here describe sediment transport for clastic, or granular sediment. They do not work for clays and muds because these types of floccular sediments do not fit the geometric simplifications in these equations, and also interact thorough electrostatic forces. The equations were also designed for fluvial sediment transport of particles carried along in a liquid flow, such as that in a river, canal, or other open channel.
 Only one size of particle is considered in this equation. However, river beds are often formed by a mixture of sediment of various sizes. In case of partial motion where only a part of the sediment mixture moves, the river bed becomes enriched in large gravel as the smaller sediments are washed away. The smaller sediments present under this layer of large gravel have a lower possibility of movement and total sediment transport decreases. This is called armouring effect. Other forms of armouring of sediment or decreasing rates of sediment erosion can be caused by carpets of microbial mats, under conditions of high organic loading.
 
-
 ### Critical shear stress
 
 The Shields diagram empirically shows how the dimensionless critical shear stress (i.e. the dimensionless shear stress required for the initiation of motion) is a function of a particular form of the particle Reynolds number, 
@@ -307,7 +287,6 @@ This can then be solved by using the empirically derived Shields curve to find
     {\displaystyle \tau _{c}*}
   
  as a function of a specific form of the particle Reynolds number called the boundary Reynolds number. The mathematical solution of the equation was given by Dey.
-
 
 ### Particle Reynolds number
 In general, a particle Reynolds number has the form:
@@ -561,7 +540,6 @@ The particle Reynolds number is therefore given by:
     {\displaystyle \mathrm {Re} _{p}*={\frac {u_{*}D}{\nu }}}
   
 
-
 ### Bed shear stress
 The boundary Reynolds number can be used with the Shields diagram to empirically solve the equation
 
@@ -692,7 +670,6 @@ the bed shear stress needs to be found,
   
 . There are several ways to solve for the bed shear stress. The simplest approach is to assume the flow is steady and uniform, using the reach-averaged depth and slope. because it is difficult to measure shear stress in situ, this method is also one of the most-commonly used. The method is known as the depth-slope product.
 
-
 #### Depth-slope product
 
 For a river undergoing approximately steady, uniform equilibrium flow, of approximately constant depth h and slope angle θ over the reach of interest, and whose width is much greater than its depth, the bed shear stress is given by some momentum considerations stating that the gravity force component in the flow direction equals exactly the friction force. For a wide channel, it yields:
@@ -775,7 +752,6 @@ For shallow slope angles, which are found in almost all natural lowland streams,
     
     {\displaystyle \tau _{b}=\rho ghS}
   
-
 
 #### Shear velocity, velocity, and friction factor
 For the steady case, by extrapolating the depth-slope product and the equation for shear velocity:
@@ -942,13 +918,10 @@ The depth-slope product can be rewritten as:
   
 .
 
-
 #### Unsteady flow
 For all flows that cannot be simplified as a single-slope infinite channel (as in the depth-slope product, above), the bed shear stress can be locally found by applying the Saint-Venant equations for continuity, which consider accelerations within the flow.
 
-
 ### Example
-
 
 #### Set-up
 The criterion for the initiation of motion, established earlier, states that
@@ -1200,7 +1173,6 @@ Therefore, the final equation to solve is:
     {\displaystyle {\frac {\tau _{b}}{(\rho _{s}-\rho )(g)(D)}}=f\left(\mathrm {Re} _{p}*\right)}
   
 .
-
 
 #### Solution
 Some assumptions allow the solution of the above equation.
@@ -1650,10 +1622,8 @@ The mixed-grain-size bed value is
 
 Which means that the depth times the slope should be about 5% of the median grain diameter in the case of a mixed-grain-size bed.
 
-
 ## Modes of entrainment
 The sediments entrained in a flow can be transported along the bed as bed load in the form of sliding and rolling grains, or in suspension as suspended load advected by the main flow. Some sediment materials may also come from the upstream reaches and be carried downstream in the form of wash load.
-
 
 ### Rouse number
 The location in the flow in which a particle is entrained is determined by the Rouse number, which is determined by the density ρs and diameter d of the sediment particle, and the density ρ and kinematic viscosity ν of the fluid, determine in which part of the flow the sediment particle will be carried.
@@ -1689,7 +1659,6 @@ The location in the flow in which a particle is entrained is determined by the R
 
 Here, the Rouse number is given by P. The term in the numerator is the (downwards) sediment the sediment settling velocity ws, which is discussed below. The upwards velocity on the grain is given as a product of the von Kármán constant, κ = 0.4, and the shear velocity, u∗.
 The following table gives the approximate required Rouse numbers for transport as bed load, suspended load, and wash load.
-
 
 ### Settling velocity
 
@@ -2021,18 +1990,15 @@ where
   
  is the molecular viscosity of water. The Stokes settling velocity can be thought of as the terminal velocity resulting from balancing a particle's buoyant force (proportional to the cross-sectional area) with the gravitational force (proportional to the mass). Small particles will have a slower settling velocity than heavier particles, as seen in the figure. This has implications for many aspects of sediment transport, for example, how far downstream a particle might be advected in a river.
 
-
 ## Hjulström–Sundborg diagram
 
 In 1935, Filip Hjulström created the Hjulström curve, a graph which shows the relationship between the size of sediment and the velocity required to erode (lift it), transport it, or deposit it. The graph is logarithmic.
 Åke Sundborg later modified the Hjulström curve to show separate curves for the movement threshold corresponding to several water depths, as is necessary if the flow velocity rather than the boundary shear stress (as in the Shields diagram) is used for the flow strength.
 This curve has no more than a historical value nowadays, although its simplicity is still attractive. Among the drawbacks of this curve are that it does not take the water depth into account and more importantly, that it does not show that sedimentation is caused by flow velocity deceleration and erosion is caused by flow acceleration. The dimensionless Shields diagram is now unanimously accepted for initiation of sediment motion in rivers.
 
-
 ## Transport rate
 
 Formulas to calculate sediment transport rate exist for sediment moving in several different parts of the flow. These formulas are often segregated into bed load, suspended load, and wash load. They may sometimes also be segregated into bed material load and wash load.
-
 
 ### Bed load
 Bed load moves by rolling, sliding, and hopping (or saltating) over the bed, and moves at a small fraction of the fluid flow velocity. Bed load is generally thought to constitute 5–10% of the total sediment load in a stream, making it less important in terms of mass balance. However, the bed material load (the bed load plus the portion of the suspended load which comprises material derived from the bed) is often dominated by bed load, especially in gravel-bed rivers. This bed material load is the only part of the sediment load that actively interacts with the bed. As the bed load is an important component of that, it plays a major role in controlling the morphology of the channel.
@@ -2162,9 +2128,7 @@ The majority of the published relations for bedload transport are given in dry s
 .
 Due to the difficulty of estimating bed load transport rates, these equations are typically only suitable for the situations for which they were designed.
 
-
 #### Notable bed load transport formulae
-
 
 ===== Meyer-Peter Müller and derivatives =====
 The transport formula of Meyer-Peter and Müller, originally developed in 1948, was designed for well-sorted fine gravel at a transport stage of about 8. The formula uses the above nondimensionalization for shear stress,
@@ -2530,7 +2494,6 @@ The variations in the coefficient were later generalized as a function of dimens
     {\displaystyle {\begin{cases}q_{s}*=\alpha _{s}\left(\tau *-\tau _{c}*\right)^{n}\\n={\frac {3}{2}}\\\alpha _{s}=1.6\ln \left(\tau *\right)+9.8\approx 9.64\tau *^{0.166}\end{cases}}}
   
 
-
 ===== Wilcock and Crowe =====
 In 2003, Peter Wilcock and Joanna Crowe (now Joanna Curran) published a sediment transport formula that works with multiple grain sizes across the sand and gravel range. Their formula works with surface grain size distributions, as opposed to older models which use subsurface grain size distributions (and thereby implicitly infer a surface grain sorting).
 Their expression is more complicated than the basic sediment transport rules (such as that of Meyer-Peter and Müller) because it takes into account multiple grain sizes: this requires consideration of reference shear stresses for each grain size, the fraction of the total sediment supply that falls into each grain size class, and a "hiding function".
@@ -2848,7 +2811,6 @@ This equation asymptotically reaches a constant value of
     {\displaystyle \phi }
   
  becomes large.
-
 
 ===== Wilcock and Kenworthy =====
 In 2002, Peter Wilcock and T. A. Kenworthy, following Peter Wilcock (1998), published a sediment bed-load transport formula that works with only  two sediments fractions, i.e. sand and gravel fractions. A mixed-sized sediment bed-load transport model using only two fractions offers practical advantages in terms of both computational and conceptual modeling by taking into account the nonlinear effects of sand presence in gravel beds on bed-load transport rate of both fractions. In fact, in the two-fraction bed load formula appears a new ingredient with respect to that of Meyer-Peter and Müller that is the proportion 
@@ -3433,7 +3395,6 @@ In order to apply the above formulation, it is necessary to specify the characte
   
  .
 
-
 ===== Kuhnle et al. =====
 For the case in which sand fraction is transported by the current over and through an immobile gravel bed, Kuhnle et al.(2013), following the theoretical analysis done by Pellachini (2011), provides a new relationship for the bed load transport of the sand fraction when gravel particles remain at rest. It is worth mentioning that Kuhnle et al. (2013) applied the Wilcock and Kenworthy (2002) formula to their experimental data and found out that predicted bed load rates of sand fraction were about 10 times greater than measured and approached 1 as the sand elevation became near the top of the gravel layer. They, also, hypothesized that the mismatch between predicted and measured sand bed load rates is due to the fact that the bed shear stress used for the Wilcock and Kenworthy (2002) formula was larger than that available for transport within the gravel bed because of the sheltering effect of the gravel particles.
 To overcome this mismatch, following Pellachini (2011), they assumed that the variability of the bed shear stress available for the sand to be transported by the current would be some function of the so-called "Roughness Geometry Function" (RGF), which represents the gravel bed elevations distribution. Therefore, the sand bed load formula follows as:
@@ -3688,7 +3649,6 @@ the subscript
   
 .
 
-
 ### Suspended load
 
 Suspended load is carried in the lower to middle parts of the flow, and moves at a large fraction of the mean flow velocity in the stream.
@@ -3905,11 +3865,9 @@ Experimental work has shown that
  ranges from 0.93 to 1.10 for sands and silts.
 The Rouse profile characterizes sediment concentrations because the Rouse number includes both turbulent mixing and settling under the weight of the particles. Turbulent mixing results in the net motion of particles from regions of high concentrations to low concentrations. Because particles settle downward, for all cases where the particles are not neutrally buoyant or sufficiently light that this settling velocity is negligible, there is a net negative concentration gradient as one goes upward in the flow. The Rouse Profile therefore gives the concentration profile that provides a balance between turbulent mixing (net upwards) of sediment and the downwards settling velocity of each particle.
 
-
 ### Bed material load
 Bed material load comprises the bed load and the portion of the suspended load that is sourced from the bed.
 Three common bed material transport relations are the "Ackers-White", "Engelund-Hansen", "Yang" formulae. The first is for sand to granule-size gravel, and the second and third are for sand though Yang later expanded his formula to include fine gravel. That all of these formulae cover the sand-size range and two of them are exclusively for sand is that the sediment in sand-bed rivers is commonly moved simultaneously as bed and suspended load.
-
 
 #### Engelund–Hansen
 The bed material load formula of Engelund and Hansen is the only one to not include some kind of critical value for the initiation of sediment transport. It reads:
@@ -3989,15 +3947,11 @@ where
   
  is the Shields stress. The Engelund–Hansen formula is one of the few sediment transport formulae in which a threshold "critical shear stress" is absent.
 
-
 ### Wash load
 Wash load is carried within the water column as part of the flow, and therefore moves with the mean velocity of main stream. Wash load concentrations are approximately uniform in the water column. This is described by the endmember case in which the Rouse number is equal to 0 (i.e. the settling velocity is far less than the turbulent mixing velocity), which leads to a prediction of a perfectly uniform vertical concentration profile of material.
-
 
 ### Total load
 Some authors have attempted formulations for the total sediment load carried in water. These formulas are designed largely for sand, as (depending on flow conditions) sand often can be carried as both bed load and suspended load in the same stream or shoreface.
 
-
 ## Bed load sediment mitigation at intake structures
 Riverside intake structures used in water supply, canal diversions, and water cooling can experience entrainment of bed load (sand-size) sediments.  These entrained sediments produce multiple deleterious effects such as reduction or blockage of intake capacity, feedwater pump impeller damage or vibration, and result in sediment deposition in downstream pipelines and canals.  Structures that modify local near-field secondary currents are useful to mitigate these effects and limit or prevent bed load sediment entry.
-

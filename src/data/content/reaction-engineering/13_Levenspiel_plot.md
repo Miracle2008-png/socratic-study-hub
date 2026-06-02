@@ -2,7 +2,6 @@
 
 A Levenspiel plot is a plot used in chemical reaction engineering to determine the required volume of a chemical reactor given experimental data on the chemical reaction taking place in it. It is named after the late chemical engineering professor Octave Levenspiel.
 
-
 ## Derivation
 For a continuous stirred-tank reactor (CSTR), the following relationship applies:
 
@@ -247,4 +246,3 @@ The volume of a PFR necessary to achieve a certain conversion at a given flow ra
     {\displaystyle X}
   
 .
-

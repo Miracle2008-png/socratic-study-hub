@@ -5,243 +5,8 @@ The second law of thermodynamics establishes the concept of entropy as a physica
 Historically, the second law was an empirical finding that was accepted as an axiom of thermodynamic theory. Statistical mechanics provides a microscopic explanation of the law in terms of probability distributions of the states of large assemblies of atoms or molecules. The second law has been expressed in many ways. Its first formulation, which preceded the proper definition of entropy and was based on caloric theory, is Carnot's theorem, formulated by the French scientist Sadi Carnot, who in 1824 showed that the efficiency of conversion of heat to work in a heat engine has an upper limit. The first rigorous definition of the second law based on the concept of entropy came from German scientist Rudolf Clausius in the 1850s and included his statement that heat can never pass from a colder to a warmer body without some other change, connected therewith, occurring at the same time.
 The second law of thermodynamics allows the definition of the concept of thermodynamic temperature, but this has been formally delegated to the zeroth law of thermodynamics.
 
-
-## Introduction
-
-The first law of thermodynamics provides the definition of the internal energy of a thermodynamic system, and expresses its change for a closed system in terms of work and heat. It can be linked to the law of conservation of energy. Conceptually, the first law describes the fundamental principle that systems do not consume or 'use up' energy, that energy is neither created nor destroyed, but is simply converted from one form to another.
-The second law is concerned with the direction of natural processes. It asserts that a natural process runs only in one sense, and is not reversible. That is, the state of a natural system itself can be reversed, but not without increasing the entropy of the system's surroundings, that is, both the state of the system plus the state of its surroundings cannot be together, fully reversed, without implying the destruction of entropy.
-For example, when a path for conduction or radiation is made available, heat always flows spontaneously from a hotter to a colder body. Such phenomena are accounted for in terms of entropy change. A heat pump can reverse this heat flow, but the reversal process and the original process, both cause entropy production, thereby increasing the entropy of the system's surroundings. If an isolated system containing distinct subsystems is held initially in internal thermodynamic equilibrium by internal partitioning by impermeable walls between the subsystems, and then some operation makes the walls more permeable, then the system spontaneously evolves to reach a final new internal thermodynamic equilibrium, and its total entropy, 
-  
-    
-      
-        S
-      
-    
-    {\displaystyle S}
-  
-, increases.
-In a reversible or quasi-static, idealized process of transfer of energy as heat to a closed thermodynamic system of interest, (which allows the entry or exit of energy – but not transfer of matter), from an auxiliary thermodynamic system, an infinitesimal increment (
-  
-    
-      
-        
-          d
-        
-        S
-      
-    
-    {\displaystyle \mathrm {d} S}
-  
-) in the entropy of the system of interest is defined to result from an infinitesimal transfer of heat (
-  
-    
-      
-        δ
-        Q
-      
-    
-    {\displaystyle \delta Q}
-  
-) to the system of interest, divided by the common thermodynamic temperature 
-  
-    
-      
-        (
-        T
-        )
-      
-    
-    {\displaystyle (T)}
-  
- of the system of interest and the auxiliary thermodynamic system:
-
-  
-    
-      
-        
-          d
-        
-        S
-        =
-        
-          
-            
-              δ
-              Q
-            
-            T
-          
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-          (closed system; idealized, reversible process)
-        
-        .
-      
-    
-    {\displaystyle \mathrm {d} S={\frac {\delta Q}{T}}\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,{\text{(closed system; idealized, reversible process)}}.}
-  
-
-Different notations are used for an infinitesimal amount of heat 
-  
-    
-      
-        (
-        δ
-        )
-      
-    
-    {\displaystyle (\delta )}
-  
- and infinitesimal change of entropy 
-  
-    
-      
-        (
-        
-          d
-        
-        )
-      
-    
-    {\displaystyle (\mathrm {d} )}
-  
- because entropy is a function of state, while heat, like work, is not.
-For an actually possible infinitesimal process without exchange of mass with the surroundings, the second law requires that the increment in system entropy fulfills the inequality
-
-  
-    
-      
-        
-          d
-        
-        S
-        >
-        
-          
-            
-              δ
-              Q
-            
-            
-              T
-              
-                surr
-              
-            
-          
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-          (closed system; actually possible, irreversible process).
-        
-      
-    
-    {\displaystyle \mathrm {d} S>{\frac {\delta Q}{T_{\text{surr}}}}\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,{\text{(closed system; actually possible, irreversible process).}}}
-  
-
-This is because a general process for this case (no mass exchange between the system and its surroundings) may include work being done on the system by its surroundings, which can have frictional or viscous effects inside the system, because a chemical reaction may be in progress, or because heat transfer actually occurs only irreversibly, driven by a finite difference between the system temperature (T) and the temperature of the surroundings (Tsurr).
-The equality still applies for pure heat flow (only heat flow, no change in chemical composition and mass),
-
-  
-    
-      
-        
-          d
-        
-        S
-        =
-        
-          
-            
-              δ
-              Q
-            
-            T
-          
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-          (actually possible quasistatic irreversible process without composition change).
-        
-      
-    
-    {\displaystyle \mathrm {d} S={\frac {\delta Q}{T}}\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,{\text{(actually possible quasistatic irreversible process without composition change).}}}
-  
-
-which is the basis of the accurate determination of the absolute entropy of pure substances from measured heat capacity curves and entropy changes at phase transitions, i.e. by calorimetry.
-The zeroth law of thermodynamics in its usual short statement allows recognition that two bodies in a relation of thermal equilibrium have the same temperature, especially that a test body has the same temperature as a reference thermometric body. For a body in thermal equilibrium with another, there are indefinitely many empirical temperature scales, in general respectively depending on the properties of a particular reference thermometric body. The second law allows a distinguished temperature scale, which defines an absolute, thermodynamic temperature, independent of the properties of any particular reference thermometric body.
-
-
 ## Various statements of the law
 The second law of thermodynamics may be expressed in many specific ways, the most prominent classical statements being the statement by Rudolf Clausius (1854), the statement by Lord Kelvin (1851), and the statement in axiomatic thermodynamics by Constantin Carathéodory (1909). These statements cast the law in general physical terms citing the impossibility of certain processes. The Clausius and the Kelvin statements have been shown to be equivalent.
-
 
 ### Carnot's principle
 The historical origin of the second law of thermodynamics was in Sadi Carnot's theoretical analysis of the flow of heat in steam engines (1824). The centerpiece of that analysis, now known as a Carnot engine, is an ideal heat engine fictively operated in the limiting mode of extreme slowness known as quasi-static, so that the heat and work transfers are between subsystems that are always in their own internal states of thermodynamic equilibrium. It represents the theoretical maximum efficiency of a heat engine operating between any two given thermal or heat reservoirs at different temperatures. Carnot's principle was recognized by Carnot at a time when the caloric theory represented the dominant understanding of the nature of heat, before the recognition of the first law of thermodynamics, and before the mathematical expression of the concept of entropy. Interpreted in the light of the first law, Carnot's analysis is physically equivalent to the second law of thermodynamics, and remains valid today. Some samples from his book are:
@@ -253,7 +18,6 @@ In modern terms, Carnot's principle may be stated more precisely:
 
 The efficiency of a quasi-static or reversible Carnot cycle depends only on the temperatures of the two heat reservoirs, and is the same, whatever the working substance. A Carnot engine operated in this way is the most efficient possible heat engine using those two temperatures.
 
-
 ### Clausius statement
 In 1850, the German scientist Rudolf Clausius laid the foundation for the second law of thermodynamics by examining the relation between heat transfer and work. His formulation of the second law, which was published in German in 1854, is known as the Clausius statement:
 
@@ -262,12 +26,10 @@ The statement by Clausius uses the concept of 'passage of heat'. As is usual in 
 Heat cannot spontaneously flow from cold regions to hot regions without external work being performed on the system, which is evident from ordinary experience of refrigeration, for example. In a refrigerator, heat is transferred from cold to hot, but only when forced by an external agent, the refrigeration system.
 Understanding the Clausius statement requires prior definition of the concepts of 'hot versus cold' (temperature) and 'heat' (heat interaction).  Within the Gyftopoulos-Beretta  formulation of the general principles of thermodynamics,  where temperature and heat are defined after the definitions of energy and entropy, the Clausius statement emerges as a rigorous consequence (theorem) of the first law and the  Hatsopoulos-Keenan statement of the second law (see below).
 
-
 ### Kelvin statements
 Lord Kelvin expressed the second law in several wordings.
 
 It is impossible for any system to operate in a thermodynamic cycle and deliver a net amount of energy by work to its surroundings while receiving energy by heat transfer from a single thermal reservoir.The Kelvin–Planck statement does not rule out the possibility of a system developing a net amount of work from a heat transfer drawn from a single reservoir. It only denies this possibility if the system undergoes a thermodynamic cycle.
-
 
 ### Equivalence of the Clausius and the Kelvin statements
 
@@ -382,18 +144,15 @@ Suppose there is an engine violating the Kelvin statement: i.e., one that drains
   
  is obtained by the definition of efficiency of the engine when the engine operation is not reversed. Thus a violation of the Kelvin statement implies a violation of the Clausius statement, i.e. the Clausius statement implies the Kelvin statement. We can prove in a similar manner that the Kelvin statement implies the Clausius statement, and hence the two are equivalent.
 
-
 ### Planck's proposition
 Planck offered the following proposition as derived directly from experience. This is sometimes regarded as his statement of the second law, but he regarded it as a starting point for the derivation of the second law.
 
 It is impossible to construct an engine which will work in a complete cycle, and produce no effect except the production of work and cooling of a heat reservoir.
 
-
 ### Relation between Kelvin's statement and Planck's proposition
 It is almost customary in textbooks to speak of the "Kelvin–Planck statement" of the law, as for example in the text by ter Haar and Wergeland. This version, also known as the heat engine statement, of the second law states that 
 
 It is impossible to devise a cyclically operating device, the sole effect of which is to absorb energy in the form of heat from a single thermal reservoir and to deliver an equivalent amount of work.
-
 
 ### Planck's statement
 Max Planck stated the second law as follows.
@@ -402,7 +161,6 @@ Every process occurring in nature proceeds in the sense in which the sum of the 
 Rather like Planck's statement is that of George Uhlenbeck and G. W. Ford for irreversible phenomena.
 
 ... in an irreversible or spontaneous change from one equilibrium state to another (as for example the equalization of temperature of two bodies A and B, when brought in contact) the entropy always increases.
-
 
 ### Principle of Carathéodory
 Constantin Carathéodory formulated thermodynamics on a purely mathematical axiomatic foundation. His statement of the second law is known as the Principle of Carathéodory, which may be formulated as follows:
@@ -425,7 +183,6 @@ With this formulation, he described the concept of adiabatic accessibility for t
 .
 Though it is almost customary in textbooks to say that Carathéodory's principle expresses the second law and to treat it as equivalent to the Clausius or to the Kelvin-Planck statements, such is not the case. To get all the content of the second law, Carathéodory's principle needs to be supplemented by Planck's principle, that isochoric work always increases the internal energy of a closed system that was initially in its own internal thermodynamic equilibrium.
 
-
 ### Planck's principle
 In 1926, Max Planck wrote an important paper on the basics of thermodynamics. He indicated the principle
 
@@ -437,14 +194,12 @@ A statement that in a sense is complementary to Planck's principle is made by Cl
 ... there is only one way in which the entropy of a [closed] system can be decreased, and that is to transfer heat from the system.
 Differing from Planck's just foregoing principle, this one is explicitly in terms of entropy change. Removal of matter from a system can also decrease its entropy.
 
-
 ### Hatsopoulos-Keenan statement
 In 1965, G. N. Hatsopoulos and Joseph Keenan published their textbook Principles of General Thermodynamics, which restates the second law of thermodynamics in terms of the existence of stable equilibrium states.  Their formulation of the second law of thermodynamics states that:
 
 When an isolated system performs a process after the removal of a series of internal constraints, it will reach a unique state of stable equilibrium: this state of equilibrium is independent of the order in which the constraints are removed.
 This shows that the second law of thermodynamics can be stated in terms of the existence of stable equilibrium states. The Hatsopoulos-Keenan statement of the Second Law entails the Clausius, Kelvin-Planck, and Carathéodory statements of the Second Law, and has provided a basis to extend the traditional definition of entropy to the non-equilibrium domain. Hatsopoulus and Keenan maintained that it is unlikely to identify a satisfactory definition of heat without a prior statement of the second law.
 The Hatsopoulos–Keenan statement of the second law has been developed into a rigorous formulation of the general axiomatic foundations of equilibrium and nonequilibrium, classical, statistical, and quantum thermodynamics by G. N. Hatsopoulos, E. P. Gyftopoulos, E. Zanchini, and G. P. Beretta.
-
 
 ### Relating the second law to the definition of temperature
 The second law has been shown to be equivalent to the internal energy U defined as a convex function of the other extensive properties of the system. That is, when a system is described by stating its internal energy U, an extensive variable, as a function of its entropy S, volume V, and mol number N, i.e. U = U (S, V, N), then the temperature is equal to the partial derivative of the internal energy with respect to the entropy (essentially equivalent to the first TdS equation for V and N  held constant):
@@ -481,7 +236,6 @@ The second law has been shown to be equivalent to the internal energy U defined 
     
     {\displaystyle T=\left({\frac {\partial U}{\partial S}}\right)_{V,N}}
   
-
 
 ### Second law statements, such as the Clausius inequality, involving radiative fluxes
 The Clausius inequality, as well as some other statements of the second law, must be re-stated to have general applicability for all forms of heat transfer, i.e. scenarios involving radiative fluxes. For example, the integrand (đQ/T) of the Clausius expression applies to heat conduction and convection, and the case of ideal infinitesimal blackbody radiation (BR) transfer, but does not apply to most radiative transfer scenarios and in some cases has no physical meaning whatsoever. Consequently, the Clausius inequality was re-stated so that it is applicable to cycles with processes involving any form of heat transfer. The entropy transfer with radiative fluxes (
@@ -812,7 +566,6 @@ Due to the inherent emission of radiation from all matter, most entropy flux cal
 where c is the speed of light, k is the Boltzmann constant, h is the Planck constant, ν is frequency, and the quantities Kv and Lv are the energy and entropy fluxes per unit frequency, area, and solid angle. In deriving this blackbody spectral entropy radiance, with the goal of deriving the blackbody energy formula, Planck postulated that the energy of a photon was quantized (partly to simplify the mathematics), thereby starting quantum theory.
 A non-equilibrium statistical mechanics approach has also been used to obtain the same result as Planck, indicating it has wider significance and represents a non-equilibrium entropy. A plot of Kv versus frequency (v) for various values of temperature (T) gives a family of blackbody radiation energy spectra, and likewise for the entropy spectra. For non-blackbody radiation (NBR) emission fluxes, the spectral entropy radiance Lv is found by substituting Kv spectral energy radiance data into the Lv expression (noting that emitted and reflected entropy fluxes are, in general, not independent). For the emission of NBR, including graybody radiation (GR), the resultant emitted entropy flux, or radiance L, has a higher ratio of entropy-to-energy (L/K), than that of BR. That is, the entropy flux of NBR emission is farther removed from the conduction and convection q/T result, than that for BR emission. This observation is consistent with Max Planck's blackbody radiation energy and entropy formulas and is consistent with the fact that blackbody radiation emission represents the maximum emission of entropy for all materials with the same temperature, as well as the maximum entropy emission for all radiation with the same energy radiance.
 
-
 ### Generalized conceptual statement of the second law principle
 Second law analysis is valuable in scientific and engineering analysis in that it provides a number of benefits over energy analysis alone, including the basis for determining energy quality (exergy content), understanding fundamental physical phenomena, and improving performance evaluation and optimization. As a result, a conceptual statement of the principle is very useful in engineering analysis. Thermodynamic systems can be categorized by the four combinations of either entropy (S) up or down, and uniformity (Y) – between system and its environment – up or down. This 'special' category of processes, category IV, is characterized by movement in the direction of low disorder and low uniformity, counteracting the second law tendency towards uniformity and disorder.
 
@@ -821,14 +574,11 @@ Consider a category IV example of robotic manufacturing and assembly of vehicles
 There are also situations where the entropy spontaneously decreases by means of energy and entropy transfer. When thermodynamic constraints are not present, spontaneously energy or mass, as well as accompanying entropy, may be transferred out of a system in a progress to reach external equilibrium or uniformity in intensive properties of the system with its surroundings. This occurs spontaneously because the energy or mass transferred from the system to its surroundings results in a higher entropy in the surroundings, that is, it results in higher overall entropy of the system plus its surroundings. Note that this transfer of entropy requires dis-equilibrium in properties, such as a temperature difference. One example of this is the cooling crystallization of water that can occur when the system's surroundings are below freezing temperatures. Unconstrained heat transfer can spontaneously occur, leading to water molecules freezing into a crystallized structure of reduced disorder (sticking together in a certain order due to molecular attraction). The entropy of the system decreases, but the system approaches uniformity with its surroundings (category III).
 On the other hand, consider the refrigeration of water in a warm environment. Due to refrigeration, as heat is extracted from the water, the temperature and entropy of the water decreases, as the system moves further away from uniformity with its warm surroundings or environment (category IV). The main point, take-away, is that refrigeration not only requires a source of work, it requires designed equipment, as well as pre-coded or direct operational intelligence or instructions to achieve the desired refrigeration effect.
 
-
 ## Corollaries
-
 
 ### Perpetual motion of the second kind
 
 Before the establishment of the second law, many people who were interested in inventing a perpetual motion machine had tried to circumvent the restrictions of first law of thermodynamics by extracting the massive internal energy of the environment as the power of the machine. Such a machine is called a "perpetual motion machine of the second kind". The second law declared the impossibility of such machines.
-
 
 ### Carnot's theorem
 Carnot's theorem (1824) is a principle that limits the maximum efficiency for any possible engine. The efficiency solely depends on the temperature difference between the hot and cold thermal reservoirs. Carnot's theorem states:
@@ -837,7 +587,6 @@ All irreversible heat engines between two heat reservoirs are less efficient tha
 All reversible heat engines between two heat reservoirs are equally efficient with a Carnot engine operating between the same reservoirs.
 In his ideal model, the heat of caloric converted into work could be reinstated by reversing the motion of the cycle, a concept subsequently known as thermodynamic reversibility. Carnot, however, further postulated that some caloric is lost, not being converted to mechanical work. Hence, no real heat engine could realize the Carnot cycle's reversibility and was condemned to be less efficient.
 Though formulated in terms of caloric (see the obsolete caloric theory), rather than entropy, this was an early insight into the second law.
-
 
 ### Clausius inequality
 The Clausius theorem (1854) states that in a cyclic process
@@ -868,7 +617,6 @@ The Clausius theorem (1854) states that in a cyclic process
   
 
 The equality holds in the reversible case and the strict inequality holds in the irreversible case, with Tsurr as the temperature of the heat bath (surroundings) here. The reversible case is used to introduce the state function entropy. This is because in cyclic processes the variation of a state function is zero from state functionality.
-
 
 ### Thermodynamic temperature
 
@@ -2182,7 +1930,6 @@ then the function f, viewed as a function of thermodynamic temperatures, is simp
 
 and the reference temperature T1* = 273.16 K × f(T1,T1) = 273.16 K. (Any reference temperature and any positive numerical value could be used – the choice here corresponds to the Kelvin scale.)
 
-
 ### Entropy
 
 According to the Clausius equality, for a reversible process
@@ -2355,7 +2102,6 @@ where the equality holds if the transformation is reversible. If the process is 
     {\displaystyle \Delta S\geq 0}
   
 .
-
 
 ### Energy, available useful work
 
@@ -2682,7 +2428,6 @@ In sum, if a proper infinite-reservoir-like reference state is chosen as the sys
 This expression together with the associated reference state permits a design engineer working at the macroscopic scale (above the thermodynamic limit) to utilize the second law without directly measuring or considering entropy change in a total isolated system (see also Process engineer). Those changes have already been considered by the assumption that the system under consideration can reach equilibrium with the reference state without altering the reference state. An efficiency for a process or collection of processes that compares it to the reversible ideal may also be found (see Exergy efficiency).
 This approach to the second law is widely utilized in engineering practice, environmental accounting, systems ecology, and other disciplines.
 
-
 ## Direction of spontaneous processes
 The second law determines whether a proposed physical or chemical process is forbidden or may occur spontaneously. For isolated systems, no energy is provided by the surroundings and the second law requires that the entropy of the system alone cannot decrease: ΔS ≥ 0. Examples of spontaneous physical processes in isolated systems include the following: 
 
@@ -2694,7 +2439,6 @@ However, for some non-isolated systems which can exchange energy with their surr
 Heat can be transferred from a region of lower temperature to a higher temperature by a refrigerator or heat pump, provided that the device delivers sufficient mechanical work to the system and converts it to thermal energy inside the system.
 Thermal energy can be converted by a heat engine to mechanical work within a system at a single temperature, provided that the heat engine transfers a sufficient amount of heat from the system to a lower-temperature region in the surroundings.
 A solute can travel from a region of lower concentration to a region of higher concentration in the biochemical process of active transport, if sufficient work is provided by a concentration gradient of a chemical such as ATP or by an electrochemical gradient.
-
 
 ### Second law in chemical thermodynamics
 For a spontaneous chemical process in a closed system at constant temperature and pressure without non-PV work, the Clausius inequality ΔS > Q/Tsurr transforms into a condition for the change in Gibbs free energy
@@ -2725,7 +2469,6 @@ or dG < 0. For a similar process at constant temperature and volume, the change 
   
 . Thus, a negative value of the change in free energy (G or A) is a necessary condition for a process to be spontaneous. This is the most useful form of the second law of thermodynamics in chemistry, where free-energy changes can be calculated from tabulated enthalpies of formation and standard molar entropies of reactants and products. The chemical equilibrium condition at constant T and p without electrical work is dG = 0.
 
-
 ## Statistical mechanics
 Statistical mechanics gives an explanation for the second law by postulating that a material is composed of atoms and molecules which are in constant motion. A particular set of positions and velocities for each particle in the system is called a microstate of the system and because of the constant motion, the system is constantly changing its microstate. Statistical mechanics postulates that, in equilibrium, each microstate that the system might be in is equally likely to occur, and when this assumption is made, it leads directly to the conclusion that the second law must hold in a statistical sense. That is, the second law will hold on average, with a statistical variation on the order of 
   
@@ -2754,7 +2497,6 @@ Statistical mechanics gives an explanation for the second law by postulating tha
     {\displaystyle N}
   
  is the number of particles in the system. For everyday (macroscopic) situations, the probability that the second law will be violated is practically zero. However, for systems with a small number of particles, thermodynamic parameters, including the entropy, may show significant statistical deviations from that predicted by the second law. Classical thermodynamic theory does not deal with these statistical variations.
-
 
 ## Derivation from statistical mechanics
 
@@ -2921,7 +2663,6 @@ Suppose we start from an equilibrium situation and we suddenly remove a constrai
     {\displaystyle 1/\Omega }
   
 . We have already seen that in the final equilibrium state, the entropy will have increased or have stayed the same relative to the previous equilibrium state. Boltzmann's H-theorem, however, proves that the quantity H increases monotonically as a function of time during the intermediate out of equilibrium state.
-
 
 ### Derivation of the entropy change for reversible processes
 The second part of the second law states that the entropy change of a system undergoing a reversible process is given by:
@@ -3930,7 +3671,6 @@ gives:
     {\displaystyle dS=\left({\frac {\partial S}{\partial E}}\right)_{x}dE+\left({\frac {\partial S}{\partial x}}\right)_{E}dx={\frac {dE}{T}}+{\frac {X}{T}}dx={\frac {\delta Q}{T}}\,}
   
 
-
 ### Derivation for systems described by the canonical ensemble
 If a system is in thermal contact with a heat bath at some temperature T then, in equilibrium, the probability distribution over the energy eigenvalues are given by the canonical ensemble:
 
@@ -4211,13 +3951,11 @@ Inserting the formula for
     {\displaystyle dS={\frac {1}{T}}\sum _{j}E_{j}dP_{j}={\frac {1}{T}}\sum _{j}d\left(E_{j}P_{j}\right)-{\frac {1}{T}}\sum _{j}P_{j}dE_{j}={\frac {dE+\delta W}{T}}={\frac {\delta Q}{T}}}
   
 
-
 ### Initial conditions at the Big Bang
 
 As elaborated above, it is thought that the second law of thermodynamics is a result of the very low-entropy initial conditions at the Big Bang. From a statistical point of view, these were very special conditions. On the other hand, they were quite simple, as the universe – or at least the part thereof from which the observable universe developed – seems to have been extremely uniform.
 This may seem somewhat paradoxical, since in many physical systems uniform conditions (e.g. mixed rather than separated gases) have high entropy. The paradox is solved once realizing that gravitational systems have negative heat capacity, so that when gravity is important, uniform conditions (e.g. gas of uniform density) in fact have lower entropy compared to non-uniform ones (e.g. black holes in empty space). Yet another approach is that the universe had high (or even maximal) entropy given its size, but as the universe grew it rapidly came out of thermodynamic equilibrium, its entropy only slightly increased compared to the increase in maximal possible entropy, and thus it has arrived at a very low entropy when compared to the much larger possible maximum given its later size.
 As for the reason why initial conditions were such, one suggestion is that cosmological inflation was enough to wipe off non-smoothness, while another is that the universe was created spontaneously where the mechanism of creation implies low-entropy initial conditions.
-
 
 ## Living organisms
 There are two principal ways of formulating thermodynamics, (a) through passages from one state of thermodynamic equilibrium to another, and (b) through cyclic processes, by which the system is left unchanged, while the total entropy of the surroundings is increased. These two ways help to understand the processes of life. The thermodynamics of living organisms has been considered by many authors, including Erwin Schrödinger (in his book What is Life?) and Léon Brillouin.
@@ -4225,11 +3963,9 @@ To a fair approximation, living organisms may be considered as examples of (b). 
 Furthermore, the ability of living organisms to grow and increase in complexity, as well as to form correlations with their environment in the form of adaption and memory, is not opposed to the second law – rather, it is akin to general results following from it: Under some definitions, an increase in entropy also results in an increase in complexity, and for a finite system interacting with finite reservoirs, an increase in entropy is equivalent to an increase in correlations between the system and the reservoirs.
 Living organisms may be considered as open systems, because matter passes into and out from them. Thermodynamics of open systems is currently often considered in terms of passages from one state of thermodynamic equilibrium to another, or in terms of flows in the approximation of local thermodynamic equilibrium. The problem for living organisms may be further simplified by the approximation of assuming a steady state with unchanging flows. General principles of entropy production for such approximations are a subject of ongoing research.
 
-
 ## Gravitational systems
 Commonly, systems for which gravity is not important have a positive heat capacity, meaning that their temperature rises with their internal energy. Therefore, when energy flows from a high-temperature object to a low-temperature object, the source temperature decreases while the sink temperature is increased; hence temperature differences tend to diminish over time.
 This is not always the case for systems in which the gravitational force is important: systems that are bound by their own gravity, such as stars, can have negative heat capacities. As they contract, both their total energy and their entropy decrease but their internal temperature may increase. This can be significant for protostars and even gas giant planets such as Jupiter. When the entropy of the black-body radiation emitted by the bodies is included, however, the total entropy of the system can be shown to increase even as the entropy of the planet or star decreases.
-
 
 ## Non-equilibrium states
 
@@ -4241,26 +3977,21 @@ There are intermediate cases, in which the assumption of local thermodynamic equ
 For non-equilibrium situations in general, it may be useful to consider statistical mechanical definitions of other quantities that may be conveniently called 'entropy', but they should not be confused or conflated with thermodynamic entropy properly defined for the second law. These other quantities indeed belong to statistical mechanics, not to thermodynamics, the primary realm of the second law.
 The physics of macroscopically observable fluctuations is beyond the scope of this article.
 
-
 ## Arrow of time
 
 The second law of thermodynamics is a physical law that is not symmetric to reversal of the time direction. This does not conflict with symmetries observed in the fundamental laws of physics (particularly CPT symmetry) since the second law applies statistically on time-asymmetric boundary conditions. The second law has been related to the difference between moving forwards and backwards in time, or to the principle that cause precedes effect (the causal arrow of time, or causality).
 
-
 ## Irreversibility
 Irreversibility in thermodynamic processes is a consequence of the asymmetric character of thermodynamic operations, and not of any internally irreversible microscopic properties of the bodies. Thermodynamic operations are macroscopic external interventions imposed on the participating bodies, not derived from their internal properties. There are reputed "paradoxes" that arise from failure to recognize this.
-
 
 ### Loschmidt's paradox
 
 Loschmidt's paradox, also known as the reversibility paradox, is the objection that it should not be possible to deduce an irreversible process from the time-symmetric dynamics that describe the microscopic evolution of a macroscopic system.
 In the opinion of Schrödinger, "It is now quite obvious in what manner you have to reformulate the law of entropy – or for that matter, all other irreversible statements – so that they be capable of being derived from reversible models. You must not speak of one isolated system but at least of two, which you may for the moment consider isolated from the rest of the world, but not always from each other." The two systems are isolated from each other by the wall, until it is removed by the thermodynamic operation, as envisaged by the law. The thermodynamic operation is externally imposed, not subject to the reversible microscopic dynamical laws that govern the constituents of the systems. It is the cause of the irreversibility. The statement of the law in this present article complies with Schrödinger's advice. The cause–effect relation is logically prior to the second law, not derived from it. This reaffirms Albert Einstein's postulates that cornerstone Special and General Relativity - that the flow of time is irreversible, however it is relative. Cause must precede effect, but only within the constraints as defined explicitly within General Relativity (or Special Relativity, depending on the local spacetime conditions). Good examples of this are the Ladder Paradox, time dilation and length contraction exhibited by objects approaching the velocity of light or within proximity of a super-dense region of mass/energy - e.g. black holes, neutron stars, magnetars and quasars.
 
-
 ### Poincaré recurrence theorem
 
 The Poincaré recurrence theorem considers a theoretical microscopic description of an isolated physical system. This may be considered as a model of a thermodynamic system after a thermodynamic operation has removed an internal wall. The system will, after a sufficiently long time, return to a microscopically defined state very close to the initial one. The Poincaré recurrence time is the length of time elapsed until the return. It is exceedingly long, likely longer than the life of the universe, and depends sensitively on the geometry of the wall that was removed by the thermodynamic operation. The recurrence theorem may be perceived as apparently contradicting the second law of thermodynamics. More obviously, however, it is simply a microscopic model of thermodynamic equilibrium in an isolated system formed by removal of a wall between two systems. For a typical thermodynamical system, the recurrence time is so large (many many times longer than the lifetime of the universe) that, for all practical purposes, one cannot observe the recurrence. One might wish, nevertheless, to imagine that one could wait for the Poincaré recurrence, and then re-insert the wall that was removed by the thermodynamic operation. It is then evident that the appearance of irreversibility is due to the utter unpredictability of the Poincaré recurrence given only that the initial state was one of thermodynamic equilibrium, as is the case in macroscopic thermodynamics. Even if one could wait for it, one has no practical possibility of picking the right instant at which to re-insert the wall. The Poincaré recurrence theorem provides a solution to Loschmidt's paradox. If an isolated thermodynamic system could be monitored over increasingly many multiples of the average Poincaré recurrence time, the thermodynamic behavior of the system would become invariant under time reversal.
-
 
 ### Maxwell's demon
 
@@ -4268,11 +3999,9 @@ James Clerk Maxwell imagined one container divided into two parts, A and B. Both
 One response to this question was suggested in 1929 by Leó Szilárd and later by Léon Brillouin. Szilárd pointed out that a real-life Maxwell's demon would need to have some means of measuring molecular speed, and that the act of acquiring information would require an expenditure of energy. Likewise, Brillouin demonstrated that the decrease in entropy caused by the demon would be less than the entropy produced by choosing molecules based on their speed.
 Maxwell's 'demon' repeatedly alters the permeability of the wall between A and B. It is therefore performing thermodynamic operations on a microscopic scale, not just observing ordinary spontaneous or natural macroscopic thermodynamic processes.
 
-
 ## Quotations
 
 The law that entropy always increases holds, I think, the supreme position among the laws of Nature. If someone points out to you that your pet theory of the universe is in disagreement with Maxwell's equations – then so much the worse for Maxwell's equations. If it is found to be contradicted by observation – well, these experimentalists do bungle things sometimes. But if your theory is found to be against the second law of thermodynamics I can give you no hope; there is nothing for it but to collapse in deepest humiliation.
 There have been nearly as many formulations of the second law as there have been discussions of it.
 Clausius is the author of the sibyllic utterance, "The energy of the universe is constant; the entropy of the universe tends to a maximum." The objectives of continuum thermomechanics stop far short of explaining the "universe", but within that theory we may easily derive an explicit statement in some ways reminiscent of Clausius, but referring only to a modest object: an isolated body of finite size.
 Nothing in life is certain except death, taxes and the second law of thermodynamics.  All three are processes in which useful or accessible forms of some quantity, such as energy or money, are transformed into useless, inaccessible forms of the same quantity.  That is not to say that these three processes don't have fringe benefits: taxes pay for roads and schools; the second law of thermodynamics drives cars, computers and metabolism; and death, at the very least, opens up tenured faculty positions.
-

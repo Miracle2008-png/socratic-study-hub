@@ -5,7 +5,6 @@ The parallel transport for a connection thus supplies a way of, in some sense, m
 As parallel transport supplies a local realization of the connection, it also supplies a local realization of the curvature known as holonomy. The Ambrose–Singer theorem makes explicit this relationship between the curvature and holonomy.
 Other notions of connection come equipped with their own parallel transportation systems as well. For instance, a Koszul connection in a vector bundle also allows for the parallel transport of vectors in much the same way as with a covariant derivative. An Ehresmann or Cartan connection supplies a lifting of curves from the manifold to the total space of a principal bundle. Such curve lifting may sometimes be thought of as the parallel transport of reference frames.
 
-
 ## Motivation
 In Euclidean geometry, straight lines, on the one hand, minimize arc length among all curves connecting two given points. On the other hand, their direction remains constant along them; equivalently, their tangent vectors are parallel transported along them.
 In the theory of differentiable manifolds, additional structure is required to make sense of arc length and parallel transport. The former is provided by a Riemannian structure, leading to the notion of a metric geodesic, while the latter is provided by a connection, leading to the notions of parallel transport and affine geodesics.
@@ -389,7 +388,6 @@ Generally, the parallel transport of tangent vectors along a curve requires addi
   
 , and thus defines parallel transport.
 
-
 ## Parallel transport of tangent vectors
 Let 
   
@@ -700,7 +698,6 @@ Euclidean space is the Riemannian manifold
 .
 In Euclidean space, all tangent spaces are canonically identified with each other via translation, so it is easy to move vectors from one tangent space to another. Parallel transport of tangent vectors is a way of moving vectors from one tangent space to another along a curve in the setting of a general Riemannian manifold. Note that while the vectors are in the tangent space of the manifold, they might not be in the tangent space of the curve they are being transported along.
 An affine connection on a Riemannian manifold is a way of differentiating vector fields with respect to other vector fields. A Riemannian manifold has a natural choice of affine connection called the Levi-Civita connection. Given a fixed affine connection on a Riemannian manifold, there is a unique way to do parallel transport of tangent vectors. Different choices of affine connections will lead to different systems of parallel transport.
-
 
 ### Precise definition
 Let 
@@ -1198,7 +1195,6 @@ is linear. In fact, it is an isomorphism. Let
 To summarize, parallel transport provides a way of moving tangent vectors along a curve using the affine connection to keep them "pointing in the same direction" in an intuitive sense, and this provides a linear isomorphism between the tangent spaces at the two ends of the curve. The isomorphism obtained in this way will in general depend on the choice of the curve. If it does not, then parallel transport along every curve can be used to define parallel vector fields on M, which can only happen if the curvature of ∇ is zero.
 A linear isomorphism is determined by its action on an ordered basis or frame. Hence parallel transport can also be characterized as a way of transporting elements of the (tangent) frame bundle GL(M) along a curve. In other words, the affine connection provides a lift of any curve γ in M to a curve γ̃ in GL(M).
 
-
 ### Examples
 The images below show parallel transport induced by the Levi-Civita connection associated to two different Riemannian metrics on the punctured plane ⁠
   
@@ -1294,7 +1290,6 @@ The images below show parallel transport induced by the Levi-Civita connection a
 ⁠. This second metric has a singularity at the origin, so it does not extend past the puncture, but the first metric extends to the entire plane.
 
 Warning: This is parallel transport on the punctured plane along the unit circle, not parallel transport on the unit circle. Indeed, in the first image, the vectors fall outside of the tangent space to the unit circle. Since the first metric has zero curvature, the transport between two points along the circle could be accomplished along any other curve as well. However, the second metric has non-zero curvature, and the circle is a geodesic, so that its field of tangent vectors is parallel.
-
 
 ### Metric connection
 A metric connection is any connection whose parallel transport mappings preserve the Riemannian metric, that is, for any curve 
@@ -1430,7 +1425,6 @@ Taking the derivative at t = 0, the operator ∇ satisfies a product rule with r
     
     {\displaystyle Z\langle X,Y\rangle =\langle \nabla _{Z}X,Y\rangle +\langle X,\nabla _{Z}Y\rangle .}
   
-
 
 #### Relationship to geodesics
 An affine connection distinguishes a class of curves called (affine) geodesics. A curve 
@@ -1837,7 +1831,6 @@ It follows from an application of Gauss's lemma that if
 
 The formula above might not be true for points which are not close enough since the geodesic might for example wrap around the manifold (e.g. on a sphere).
 
-
 ## Parallel transport on a vector bundle
 Parallel transport of tangent vectors is a special case of a more general construction involving an arbitrary vector bundle 
   
@@ -2085,7 +2078,6 @@ Thus the connection ∇ defines a way of moving elements of the fibers along a c
 
 from the vector space lying over γ(s) to that over γ(t). This isomorphism is known as the parallel transport map associated to the curve. The isomorphisms between fibers obtained in this way will, in general, depend on the choice of the curve: if they do not, then parallel transport along every curve can be used to define parallel sections of E over all of M. This is only possible if the curvature of ∇ is zero.
 In particular, parallel transport around a closed curve starting at a point x defines an automorphism of the tangent space at x which is not necessarily trivial. The parallel transport automorphisms defined by all closed curves based at x form a transformation group called the holonomy group of ∇ at x. There is a close relation between this group and the value of the curvature of ∇ at x; this is the content of the Ambrose–Singer holonomy theorem.
-
 
 ### Recovering the connection from the parallel transport
 Given a covariant derivative ∇, the parallel transport along a curve γ is obtained by integrating the condition ⁠
@@ -2342,7 +2334,6 @@ Nevertheless, given such a rule for parallel transport, it is possible to recove
 
 This defines the associated infinitesimal connection ∇ on E. One recovers the same parallel transport Γ from this infinitesimal connection.
 
-
 ## Generalizations
 The parallel transport can be defined in greater generality for other types of connections, not just those defined in a vector bundle. One generalization is for principal connections (Kobayashi & Nomizu 1996, Volume 1, Chapter II). Let P → M be a principal bundle over a manifold M with structure Lie group G and a principal connection ω. As in the case of vector bundles, a principal connection ω on P defines, for each curve γ in M, a mapping
 
@@ -2418,10 +2409,8 @@ from the fibre over γ(s) to that over γ(t), which is an isomorphism of homogen
  for each g ∈ G.
 Further generalizations of parallel transport are also possible. In the context of Ehresmann connections, where the connection depends on a special notion of "horizontal lifting" of tangent spaces, one can define parallel transport via horizontal lifts. Cartan connections are Ehresmann connections with additional structure which allows the parallel transport to be thought of as a map "rolling" a certain model space along a curve in the manifold. This rolling is called development.
 
-
 ## Approximation: Schild's ladder
 
 Parallel transport can be discretely approximated by Schild's ladder,
 which takes finite steps along a curve, and approximates
 Levi-Civita parallelogramoids by approximate parallelograms.
-

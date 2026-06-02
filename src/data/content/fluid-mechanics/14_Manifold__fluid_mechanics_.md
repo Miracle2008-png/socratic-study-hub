@@ -2,9 +2,7 @@
 
 A manifold is a wider and/or larger pipe or channel, into which smaller pipes or channels lead, or a pipe fitting or similar device that connects multiple inputs or outputs for fluids.
 
-
 ## Manifolds
-
 
 ### Engineering
 Types of manifolds in engineering include:
@@ -21,7 +19,6 @@ Vacuum gas manifold
 An apparatus used in chemistry to manipulate gases
 Also, many dredge pipe pieces.
 
-
 ### Biology
 In biology manifolds are found in:
 
@@ -29,11 +26,9 @@ Cardiovascular system (blood vessel manifolds, etc.)
 Lymphatic system
 Respiratory system
 
-
 ### Other fields
 Manifolds are used in:
 
 HVAC
 Pipe organ
 Plumbing
-

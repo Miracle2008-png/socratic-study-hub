@@ -9,7 +9,6 @@ When applied pressure is released, solids will (very) rapidly re-expand and rele
 Solids' properties on a macroscopic scale can also depend on whether it is contiguous or not. Contiguous (non-aggregate) solids are characterized by structural rigidity (as in rigid bodies) and strong resistance to applied forces. For solids aggregates (e.g. gravel, sand, dust on lunar surface), solid particles can easily slip past one another, though changes of individual particles (quartz particles for sand) will still be greatly hindered. This leads to a perceived softness and ease of compression by operators. An illustrating example is the non-firmness of coastal sandand of the lunar regolith.
 The branch of physics that deals with solids is called solid-state physics, and is a major branch of condensed matter physics (which includes liquids). Materials science, also one of its numerous branches, is primarily concerned with the way in which a solid's composition and its properties are intertwined.
 
-
 ## Microscopic description
 
 The atoms, molecules or ions that make up solids may be arranged in an orderly repeating pattern, or irregularly. Materials whose constituents are arranged in a regular pattern are known as crystals. In some cases, the regular ordering can continue unbroken over a large scale, for example diamonds, where each diamond is a single crystal. Solid objects that are large enough to see and handle are rarely composed of a single crystal, but instead are made of a large number of single crystals, known as crystallites, whose size can vary from a few nanometers to several meters. Such materials are called polycrystalline. Almost all common metals, and many ceramics, are polycrystalline.
@@ -18,11 +17,9 @@ In other materials, there is no long-range order in the position of the atoms. T
 Whether a solid is crystalline or amorphous depends on the material involved, and the conditions in which it was formed. Solids that are formed by slow cooling will tend to be crystalline, while solids that are frozen rapidly are more likely to be amorphous. Likewise, the specific crystal structure adopted by a crystalline solid depends on the material involved and on how it was formed.
 While many common objects, such as an ice cube or a coin, are chemically identical throughout, many other common materials comprise a number of different substances packed together. For example, a typical rock is an aggregate of several different minerals and mineraloids, with no specific chemical composition. Wood is a natural organic material consisting primarily of cellulose fibers embedded in a matrix of organic lignin. In materials science, composites of more than one constituent material can be designed to have desired properties.
 
-
 ## Classes of solids
 
 The forces between the atoms in a solid can take a variety of forms. For example, a crystal of sodium chloride (common salt) is made up of ionic sodium and chlorine, which are held together by ionic bonds. In diamond or silicon, the atoms share electrons and form covalent bonds. In metals, electrons are shared in metallic bonding. Some solids, particularly most organic compounds, are held together with van der Waals forces resulting from the polarization of the electronic charge cloud on each molecule. The dissimilarities between the types of solid result from the differences between their bonding.
-
 
 ### Metals
 
@@ -36,11 +33,9 @@ The study of metallic elements and their alloys makes up a significant portion o
 Metallic solids are held together by a high density of shared, delocalized electrons, known as "metallic bonding". In a metal, atoms readily lose their outermost ("valence") electrons, forming positive ions. The free electrons are spread over the entire solid, which is held together firmly by electrostatic interactions between the ions and the electron cloud. The large number of free electrons gives metals their high values of electrical and thermal conductivity. The free electrons also prevent transmission of visible light, making metals opaque, shiny and lustrous.
 More advanced models of metal properties consider the effect of the positive ions cores on the delocalised electrons. As most metals have crystalline structure, those ions are usually arranged into a periodic lattice. Mathematically, the potential of the ion cores can be treated by various models, the simplest being the nearly free electron model.
 
-
 ### Minerals
 
 Minerals are naturally occurring solids formed through various geological processes under high pressures. To be classified as a true mineral, a substance must have a crystal structure with uniform physical properties throughout. Minerals range in composition from pure elements and simple salts to very complex silicates with thousands of known forms. In contrast, a rock sample is a random aggregate of minerals and/or mineraloids, and has no specific chemical composition. The vast majority of the rocks of the Earth's crust consist of quartz (crystalline SiO2), feldspar, mica, chlorite, kaolin, calcite, epidote, olivine, augite, hornblende, magnetite, hematite, limonite and a few other minerals. Some minerals, like quartz, mica or feldspar are common, while others have been found in only a few locations worldwide. The largest group of minerals by far is the silicates (most rocks are ≥95% silicates), which are composed largely of silicon and oxygen, with the addition of ions of aluminium, magnesium, iron, calcium and other metals.
-
 
 ### Ceramics
 
@@ -52,24 +47,20 @@ Mechanically speaking, ceramic materials are brittle, hard, strong in compressio
 For an example of applications of ceramics, the extreme hardness of zirconia is utilized in the manufacture of knife blades, as well as other industrial cutting tools. Ceramics such as alumina, boron carbide and silicon carbide have been used in bulletproof vests to repel large-caliber rifle fire. Silicon nitride parts are used in ceramic ball bearings, where their high hardness makes them wear resistant. In general, ceramics are also chemically resistant and can be used in wet environments where steel bearings would be susceptible to oxidation (or rust).
 As another example of ceramic applications, in the early 1980s, Toyota researched production of an adiabatic ceramic engine with an operating temperature of over 6,000 °F (3,320 °C). Ceramic engines do not require a cooling system and hence allow a major weight reduction and therefore greater fuel efficiency. In a conventional metallic engine, much of the energy released from the fuel must be dissipated as waste heat in order to prevent a meltdown of the metallic parts. Work is also being done in developing ceramic parts for gas turbine engines. Turbine engines made with ceramics could operate more efficiently, giving aircraft greater range and payload for a set amount of fuel. Such engines are not in production, however, because the manufacturing of ceramic parts in the sufficient precision and durability is difficult and costly. Processing methods often result in a wide distribution of microscopic flaws that frequently play a detrimental role in the sintering process, resulting in the proliferation of cracks, and ultimate mechanical failure.
 
-
 ### Glass ceramics
 
 Glass-ceramic materials share many properties with both non-crystalline glasses and crystalline ceramics. They are formed as a glass, and then partially crystallized by heat treatment, producing both amorphous and crystalline phases so that crystalline grains are embedded within a non-crystalline intergranular phase.
 Glass-ceramics are used to make cookware (originally known by the brand name CorningWare) and stovetops that have high resistance to thermal shock and extremely low permeability to liquids. The negative coefficient of thermal expansion of the crystalline ceramic phase can be balanced with the positive coefficient of the glassy phase. At a certain point (~70% crystalline) the glass-ceramic has a net coefficient of thermal expansion close to zero. This type of glass-ceramic exhibits excellent mechanical properties and can sustain repeated and quick temperature changes up to 1000 °C.
 Glass ceramics may also occur naturally when lightning strikes the crystalline (e.g. quartz) grains found in most beach sand. In this case, the extreme and immediate heat of the lightning (~2500 °C) creates hollow, branching rootlike structures called fulgurite via fusion.
 
-
 ### Organic solids
 
 Organic chemistry studies the structure, properties, composition, reactions, and preparation by synthesis (or other means) of chemical compounds of carbon and hydrogen, which may contain any number of other elements such as nitrogen, oxygen and the halogens: fluorine, chlorine, bromine and iodine. Some organic compounds may also contain the elements phosphorus or sulfur. Examples of organic solids include wood, paraffin wax, naphthalene and a wide variety of polymers and plastics.
-
 
 #### Wood
 
 Wood is a natural organic material consisting primarily of cellulose fibers embedded in a matrix of lignin. Regarding mechanical properties, the fibers are strong in tension, and the lignin matrix resists compression. Thus wood has been an important construction material since humans began building shelters and using boats. Wood to be used for construction work is commonly known as lumber or timber. In construction, wood is not only a structural material, but is also used to form the mould for concrete.
 Wood-based materials are also extensively used for packaging (e.g. cardboard) and paper, which are both created from the refined pulp. The chemical pulping processes use a combination of high temperature and alkaline (kraft) or acidic (sulfite) chemicals to break the chemical bonds of the lignin before burning it out.
-
 
 #### Polymers
 
@@ -78,7 +69,6 @@ Monomers can have various chemical substituents, or functional groups, which can
 
 People have been using natural organic polymers for centuries in the form of waxes and shellac, which is classified as a thermoplastic polymer. A plant polymer named cellulose provided the tensile strength for natural fibers and ropes, and by the early 19th century natural rubber was in widespread use. Polymers are the raw materials (the resins) used to make what are commonly called plastics. Plastics are the final product, created after one or more polymers or additives have been added to a resin during processing, which is then shaped into a final form. Polymers that have been around, and that are in current widespread use, include carbon-based polyethylene, polypropylene, polyvinyl chloride, polystyrene, nylons, polyesters, acrylics, polyurethane, and polycarbonates, and silicon-based silicones. Plastics are generally classified as "commodity", "specialty" and "engineering" plastics.
 
-
 ### Composite materials
 
 Composite materials contain two or more macroscopic phases, one of which is often ceramic. For example, a continuous matrix, and a dispersed phase of ceramic particles or fibers.
@@ -86,27 +76,22 @@ Applications of composite materials range from structural elements such as steel
 Domestic examples of composites can be seen in the "plastic" casings of television sets, cell-phones and so on. These plastic casings are usually a composite made up of a thermoplastic matrix such as acrylonitrile butadiene styrene (ABS) in which calcium carbonate chalk, talc, glass fibers or carbon fibers have been added for strength, bulk, or electro-static dispersion. These additions may be referred to as reinforcing fibers, or dispersants, depending on their purpose.
 Thus, the matrix material surrounds and supports the reinforcement materials by maintaining their relative positions. The reinforcements impart their special mechanical and physical properties to enhance the matrix properties. A synergism produces material properties unavailable from the individual constituent materials, while the wide variety of matrix and strengthening materials provides the designer with the choice of an optimum combination.
 
-
 ### Semiconductors
 
 Semiconductors are materials that have an electrical resistivity (and conductivity) between that of metallic conductors and non-metallic insulators. They can be found in the periodic table moving diagonally downward right from boron. They separate the electrical conductors (or metals, to the left) from the insulators (to the right).
 Devices made from semiconductor materials are the foundation of modern electronics, including radio, computers, telephones, etc. Semiconductor devices include the transistor, solar cells, diodes and integrated circuits. Solar photovoltaic panels are large semiconductor devices that directly convert light into electrical energy.
 In a metallic conductor, current is carried by the flow of electrons, but in semiconductors, current can be carried either by electrons or by the positively charged "holes" in the electronic band structure of the material. Common semiconductor materials include silicon, germanium and gallium arsenide.
 
-
 ### Nanomaterials
 
 Many traditional solids exhibit different properties when they shrink to nanometer sizes. For example, nanoparticles of usually yellow gold and gray silicon are red in color; gold nanoparticles melt at much lower temperatures (~300 °C for 2.5 nm size) than the gold slabs (1064 °C); and metallic nanowires are much stronger than the corresponding bulk metals. The high surface area of nanoparticles makes them extremely attractive for certain applications in the field of energy. For example, platinum metals may provide improvements as automotive fuel catalysts, as well as proton exchange membrane (PEM) fuel cells. Also, ceramic oxides (or cermets) of lanthanum, cerium, manganese and nickel are now being developed as solid oxide fuel cells (SOFC). Lithium, lithium-titanate and tantalum nanoparticles are being applied in lithium-ion batteries. Silicon nanoparticles have been shown to dramatically expand the storage capacity of lithium-ion batteries during the expansion/contraction cycle. Silicon nanowires cycle without significant degradation and present the potential for use in batteries with greatly expanded storage times. Silicon nanoparticles are also being used in new forms of solar energy cells. Thin film deposition of silicon quantum dots on the polycrystalline silicon substrate of a photovoltaic (solar) cell increases voltage output as much as 60% by fluorescing the incoming light prior to capture. Here again, surface area of the nanoparticles (and thin films) plays a critical role in maximizing the amount of absorbed radiation.
-
 
 ### Biomaterials
 
 Many natural (or biological) materials are complex composites with remarkable mechanical properties. These complex structures, which have risen from hundreds of million years of evolution, are inspiring materials scientists in the design of novel materials. Their defining characteristics include structural hierarchy, multifunctionality and self-healing capability. Self-organization is also a fundamental feature of many biological materials and the manner by which the structures are assembled from the molecular level up. Thus, self-assembly is emerging as a new strategy in the chemical synthesis of high performance biomaterials.
 
-
 ## Physical properties
 Physical properties of elements and compounds that provide conclusive evidence of chemical composition include odor, color, volume, density (mass per unit volume), melting point, boiling point, heat capacity, physical form and shape at room temperature (solid, liquid or gas; cubic, trigonal crystals, etc.), hardness, porosity, index of refraction and many others. This section discusses some physical properties of materials in the solid state.
-
 
 ### Mechanical
 
@@ -120,12 +105,10 @@ Plasticity – Materials that behave elastically generally do so when the applie
 Many materials become weaker at high temperatures. Materials that retain their strength at high temperatures, called refractory materials, are useful for many purposes. For example, glass-ceramics have become extremely useful for countertop cooking, as they exhibit excellent mechanical properties and can sustain repeated and quick temperature changes up to 1000 °C.
 In the aerospace industry, high performance materials used in the design of aircraft and/or spacecraft exteriors must have a high resistance to thermal shock. Thus, synthetic fibers spun out of organic polymers and polymer/ceramic/metal composite materials and fiber-reinforced polymers are now being designed with this purpose in mind.
 
-
 ### Thermal
 
 Because solids have thermal energy, their atoms vibrate about fixed mean positions within the ordered (or disordered) lattice. The spectrum of lattice vibrations in a crystalline or glassy network provides the foundation for the kinetic theory of solids. This motion occurs at the atomic level, and thus cannot be observed or detected without highly specialized equipment, such as that used in spectroscopy.
 Thermal properties of solids include thermal conductivity, which is the property of a material that indicates its ability to conduct heat. Solids also have a specific heat capacity, which is the capacity of a material to store energy in the form of heat (or thermal lattice vibrations).
-
 
 ### Electrical
 
@@ -133,10 +116,8 @@ Electrical properties include both electrical resistivity and conductivity, diel
 Many materials also exhibit superconductivity at low temperatures; they include metallic elements such as tin and aluminium, various metallic alloys, some heavily doped semiconductors, and certain ceramics. The electrical resistivity of most electrical (metallic) conductors generally decreases gradually as the temperature is lowered, but remains finite. In a superconductor, however, the resistance drops abruptly to zero when the material is cooled below its critical temperature. An electric current flowing in a loop of superconducting wire can persist indefinitely with no power source.
 A dielectric, or electrical insulator, is a substance that is highly resistant to the flow of electric current. A dielectric, such as plastic, tends to concentrate an applied electric field within itself, which property is used in capacitors. A capacitor is an electrical device that can store energy in the electric field between a pair of closely spaced conductors (called 'plates'). When voltage is applied to the capacitor, electric charges of equal magnitude, but opposite polarity, build up on each plate. Capacitors are used in electrical circuits as energy-storage devices, as well as in electronic filters to differentiate between high-frequency and low-frequency signals.
 
-
 #### Electro-mechanical
 Piezoelectricity is the ability of crystals to generate a voltage in response to an applied mechanical stress. The piezoelectric effect is reversible in that piezoelectric crystals, when subjected to an externally applied voltage, can change shape by a small amount. Polymer materials like rubber, wool, hair, wood fiber, and silk often behave as electrets. For example, the polymer polyvinylidene fluoride (PVDF) exhibits a piezoelectric response several times larger than the traditional piezoelectric material quartz (crystalline SiO2). The deformation (~0.1%) lends itself to useful technical applications such as high-voltage sources, loudspeakers, lasers, as well as chemical, biological, and acousto-optic sensors and/or transducers.
-
 
 ### Optical
 Materials can transmit (e.g. glass) or reflect (e.g. metals) visible light.
@@ -144,22 +125,16 @@ Many materials will transmit some wavelengths while blocking others. For example
 For some purposes, both the optical and mechanical properties of a material can be of interest. For example, the sensors on an infrared homing ("heat-seeking") missile must be protected by a cover that is transparent to infrared radiation. The current material of choice for high-speed infrared-guided missile domes is single-crystal sapphire. The optical transmission of sapphire does not actually extend to cover the entire mid-infrared range (3–5 μm), but starts to drop off at wavelengths greater than approximately 4.5 μm at room temperature. While the strength of sapphire is better than that of other available mid-range infrared dome materials at room temperature, it weakens above 600 °C. A long-standing trade-off exists between optical bandpass and mechanical durability; new materials such as transparent ceramics or optical nanocomposites may provide improved performance.
 Guided lightwave transmission involves the field of fiber optics and the ability of certain glasses to transmit, simultaneously and with low loss of intensity, a range of frequencies (multi-mode optical waveguides) with little interference between them. Optical waveguides are used as components in integrated optical circuits or as the transmission medium in optical communication systems.
 
-
 #### Opto-electronic
 
 A solar cell or photovoltaic cell is a device that converts light energy into electrical energy. Fundamentally, the device needs to fulfill only two functions: photo-generation of charge carriers (electrons and holes) in a light-absorbing material, and separation of the charge carriers to a conductive contact that will transmit the electricity (simply put, carrying electrons off through a metal contact into an external circuit). This conversion is called the photoelectric effect, and the field of research related to solar cells is known as photovoltaics.
 Solar cells have many applications. They have long been used in situations where electrical power from the grid is unavailable, such as in remote area power systems, Earth-orbiting satellites and space probes, handheld calculators, wrist watches, remote radiotelephones and water pumping applications. More recently, they are starting to be used in assemblies of solar modules (photovoltaic arrays) connected to the electricity grid through an inverter, that is not to act as a sole supply but as an additional electricity source.
 All solar cells require a light absorbing material contained within the cell structure to absorb photons and generate electrons via the photovoltaic effect. The materials used in solar cells tend to have the property of preferentially absorbing the wavelengths of solar light that reach the earth surface. Some solar cells are optimized for light absorption beyond Earth's atmosphere, as well.
 
-
 ## Fields of study
-
 
 ### Solid-state physics
 
-
 ### Solid-state chemistry
 
-
 ### Materials science
-

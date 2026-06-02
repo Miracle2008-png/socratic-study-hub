@@ -2,9 +2,7 @@
 
 Computer-aided software engineering (CASE) is a domain of software tools used to design and implement applications. CASE tools are similar to and are partly inspired by computer-aided design (CAD) tools used for designing hardware products.  CASE tools are intended to help develop high-quality, defect-free, and maintainable software. CASE software was often associated with methods for the development of information systems together with automated tools that could be used in the software development process.
 
-
 ## CASE software
-
 
 ### Tools
 CASE tools support specific tasks in the software development life-cycle. They can be divided into the following categories:
@@ -17,14 +15,12 @@ Metrics and measurement: Analyze code for complexity, modularity (e.g., no "go t
 Project management: Manage project plans, task assignments, scheduling.
 Another common way to distinguish CASE tools is the distinction between Upper CASE and Lower CASE. Upper CASE Tools support business and analysis modeling. They support traditional diagrammatic languages such as ER diagrams, Data flow diagram, Structure charts, Decision Trees, Decision tables, etc. Lower CASE Tools support development activities, such as physical design, debugging, construction, testing, component integration, maintenance, and reverse engineering. All other activities span the entire life-cycle and apply equally to upper and lower CASE.
 
-
 ### Workbenches
 Workbenches integrate two or more CASE tools and support specific software-process activities. Hence they achieve:
 
 A homogeneous and consistent interface (presentation integration)
 Seamless integration of tools and toolchains (control and data integration)
 An example workbench is Microsoft's Visual Basic programming environment. It incorporates several development tools: a GUI builder, a smart code editor, debugger, etc. Most commercial CASE products tended to be such workbenches that seamlessly integrated two or more tools. Workbenches also can be classified in the same manner as tools; as focusing on Analysis, Development, Verification, etc. as well as being focused on the upper case, lower case, or processes such as configuration management that span the complete life-cycle.
-
 
 ### Environments
 An environment is a collection of CASE tools or workbenches that attempts to support the complete software process. This contrasts with tools that focus on one specific task or a specific part of the life-cycle. CASE environments are classified by Fuggetta as follows:
@@ -36,7 +32,6 @@ Integrated: These environments are an example of what most IT people tend to thi
 Process-centered: This is the most ambitious type of integration. These environments attempt to not just formally specify the analysis and design objects of the software process but the actual process itself and to use that formal process to control and guide software projects. Examples are East, Enterprise II, Process Wise, Process Weaver, and Arcadia. These environments were by definition tied to some methodology since the software process itself is part of the environment and can control many aspects of tool invocation.
 In practice, the distinction between workbenches and environments was flexible. Visual Basic for example was a programming workbench but was also considered a 4GL environment by many. The features that distinguished workbenches from environments were deep integration via a shared repository or common language and some kind of methodology (integrated and process-centered environments) or domain (4GL) specificity.
 
-
 ## Major CASE risk factors
 Some of the most significant risk factors for organizations adopting CASE technology include: 
 
@@ -44,4 +39,3 @@ Inadequate standardization: Organizations usually have to tailor and adopt metho
 Unrealistic expectations: The proponents of CASE technology—especially vendors marketing expensive tool sets—often hype expectations that the new approach will be a silver bullet that solves all problems. In reality no such technology can do that and if organizations approach CASE with unrealistic expectations they will inevitably be disappointed.
 Inadequate training: As with any new technology, CASE requires time to train people in how to use the tools and to get up to speed with them. CASE projects can fail if practitioners are not given adequate time for training or if the first project attempted with the new technology is itself highly mission critical and fraught with risk.
 Inadequate process control: CASE provides significant new capabilities to utilize new types of tools in innovative ways. Without the proper process guidance and controls these new capabilities can cause significant new problems as well.
-

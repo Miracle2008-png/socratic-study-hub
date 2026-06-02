@@ -4,21 +4,11 @@ A proportional–integral–derivative (PID) controller, or three-term controlle
   
     
       
-        e
-        (
-        t
-        )
       
     
     
 
-$$ e(t) $$
-
   
-.
-It then applies corrective actions automatically to bring the PV to the same value as the SP using three methods: The proportional (P) component responds to the current error value by producing an output that is directly proportional to the magnitude of the error. This provides immediate correction based on how far the system is from the desired setpoint. The integral (I) component, in turn, considers the cumulative sum of past errors to address any residual steady-state errors that persist over time, eliminating lingering discrepancies. Lastly, the derivative (D) component predicts future error by assessing the rate of change of the error, which helps to mitigate overshoot and enhance system stability, particularly when the system undergoes rapid changes. The PID output signal can directly control actuators through voltage, current, or other modulation methods, depending on the application. The PID controller reduces the likelihood of human error and improves automation.
-A common example is a vehicle’s cruise control system. For instance, when a vehicle encounters a hill, its speed will decrease if the engine power output is kept constant. The PID controller adjusts the engine's power output to restore the vehicle to its desired speed, doing so efficiently with minimal delay and overshoot.
-The theoretical foundation of PID controllers dates back to the early 1920s with the development of automatic steering systems for ships. This concept was later adopted for automatic process control in manufacturing, first appearing in pneumatic actuators and evolving into electronic controllers. PID controllers are widely used in numerous applications requiring accurate, stable, and optimized automatic control, such as temperature regulation, motor speed control, and industrial process management.
 
 ## Fundamental operation
 
@@ -644,10 +634,6 @@ In the interest of achieving a controlled arrival at the desired position (SP) i
 ### Response to disturbances
 
 If a controller starts from a stable state with zero error (PV = SP), then further changes by the controller will be in response to changes in other measured or unmeasured inputs to the process that affect the process, and hence the PV. Variables that affect the process other than the MV are known as disturbances. Generally, controllers are used to reject disturbances and to implement setpoint changes. A change in load on the arm constitutes a disturbance to the robot arm control process.
-
-### Applications
-
-In theory, a controller can be used to control any process that has a measurable output (PV), a known ideal value for that output (SP), and an input to the process (MV) that will affect the relevant PV. Controllers are used in industry to regulate temperature, pressure, force, feed rate, flow rate, chemical composition (component concentrations), weight, position, speed, and practically every other variable for which a measurement exists.
 
 ## Controller theory
 
@@ -1284,11 +1270,6 @@ $$ K(s)G(s)<1 $$
 
 The optimal behavior on a process change or setpoint change varies depending on the application.
 Two basic requirements are regulation (disturbance rejection – staying at a given setpoint) and command tracking (implementing setpoint changes). These terms refer to how well the controlled variable tracks the desired value. Specific criteria for command tracking include rise time and settling time. Some processes must not allow an overshoot of the process variable beyond the setpoint if, for example, this would be unsafe. Other processes must minimize the energy expended in reaching a new setpoint.
-
-### Overview of tuning methods
-
-There are several methods for tuning a PID loop. The most effective methods generally involve developing some form of process model and then choosing P, I, and D based on the dynamic model parameters. Manual tuning methods can be relatively time-consuming, particularly for systems with long loop times.
-The choice of method depends largely on whether the loop can be taken offline for tuning, and on the response time of the system. If the system can be taken offline, the best tuning method often involves subjecting the system to a step change in input, measuring the output as a function of time, and using this response to determine the control parameters.
 
 ### Manual tuning
 

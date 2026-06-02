@@ -5,10 +5,6 @@ Processes are often classified according to the particular properties they explo
 Elements and compounds in nature are impure to some degree.  Often these raw materials must go through a separation before they can be put to productive use, making separation techniques essential for the modern industrial economy. 
 The purpose of separation may be:
 
-analytical: to identify the size of each fraction of a mixture is attributable to each component without attempting to harvest the fractions.
-preparative: to "prepare" fractions for input into processes that benefit when components are separated.
-Separations may be performed on a small scale, as in a laboratory for analytical purposes, or on a large scale, as in a chemical plant.
-
 ## Complete and incomplete separation
 
 Some types of separation require complete purification of a certain component. An example is the production of aluminum metal from bauxite ore through electrolysis refining. In contrast, an incomplete separation process may specify an output to consist of a mixture instead of a single pure component. A good example of an incomplete separation technique is oil refining. Crude oil occurs naturally as a mixture of various hydrocarbons and impurities. The refining process splits this mixture into other, more valuable mixtures such as natural gas, gasoline and chemical feedstocks, none of which are pure substances, but each of which must be separated from the raw crude.

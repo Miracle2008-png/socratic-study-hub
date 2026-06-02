@@ -4,7 +4,6 @@ A Bachelor of Engineering (BEng or BE) or a Bachelor of Science in Engineering (
 In the United Kingdom, a Bachelor of Engineering degree program is accredited by one of the Engineering Council's professional engineering institutions as suitable for registration as an incorporated engineer or chartered engineer with further study to masters level. In Canada, a degree from a Canadian university can be accredited by the Canadian Engineering Accreditation Board (CEAB). Alternatively, it might be accredited directly by another professional engineering institution, such as the US-based Institute of Electrical and Electronics Engineers (IEEE). The Bachelor of Engineering contributes to the route to chartered engineer (UK), registered engineer or licensed professional engineer and has been approved by representatives of the profession. Similarly Bachelor of Engineering (BE) and Bachelor of Technology (B.Tech) in India is accredited by All India Council for Technical Education. Most universities in the United States and Europe award bachelor's degrees in engineering through various names.
 A less common and possibly the oldest variety of the degree in the English-speaking world is Baccalaureus in Arte Ingeniaria (B.A.I.), a Latin name meaning Bachelor in the Art of Engineering. Here Baccalaureus in Arte Ingeniaria implies excellence in carrying out the 'art' or 'function' of an engineer. Some South African universities refer to their engineering degrees as B.Ing. (Baccalaureus Ingenieurswese, in Afrikaans).
 
-
 ## Engineering fields
 A Bachelor of Engineering degree will usually be undertaken in one field of engineering, which is sometimes noted in the degree postnominals, as in B.E., B.AE. (Aero), or B.Eng (Elec). Common fields for the Bachelor of Engineering degree include the following fields:
 
@@ -48,14 +47,11 @@ Structural Engineering — analyze, design, plan and research structural compone
 Systems Engineering — focuses on the analysis, design, development and organization of complex systems
 Textile Engineering — based on the conversion of three types of fiber into yarn, then fabric, then textiles
 
-
 ## International variations
-
 
 ### Australia
 In Australia, the Bachelor of Engineering (BE(Hons) or BEng(Hons) - depending on the institution) is a four-year undergraduate professional degree course with an embedded Honours year, at Level 8 in the Australian Qualifications Framework (AQF). It is described by the Australian Council of Engineering Deans (ACED) as delivering "more advanced, professional and research-based outcomes than any Bachelor Degree." Some institutions in Australia also provide three-year Bachelor of Engineering Technology degrees at Level 7 of the AQF that qualify their graduates to start practice as Engineering Technologists.
 The title of “engineer” is not protected in Australia, therefore anyone can claim to be an engineer and practice without the necessary competencies, understanding of standards or in compliance with a code of ethics. The industry has attempted to overcome the lack of title protection through chartership (CPEng), national registration (NER) and various state registration (RPEQ) programs which are usually obtained after a few years of professional practice.
-
 
 ### Canada
 In Canada, degrees awarded for undergraduate engineering studies include the Bachelor of Engineering (B.Eng. or B.E., depending on the institution); the Baccalauréat en génie (B.Ing., the French equivalent of a B.Eng.; sometimes referred to as a Baccalauréat en ingénierie); the Bachelor of Applied Science (B.A.Sc.); and the Bachelor of Science in Engineering (B.Sc.Eng.).
@@ -63,10 +59,8 @@ The Canadian Engineering Accreditation Board (CEAB), a division of the Engineers
 A CEAB-accredited degree is the minimum academic requirement for registration as a professional engineer anywhere in the country and the standard against which all other engineering academic qualifications are measured. Graduation from an accredited program, which normally involves four years of study, is a required first step to becoming a professional engineer. Regulation and accreditation are accomplished through a self-governing body (the name of which varies from province to province), which is given the power by statute to register and discipline engineers, as well as regulate the field of engineering in the individual provinces.
 Graduates of non-CEAB-accredited programs must demonstrate that their education is at least equivalent to that of a graduate of a CEAB-accredited program.
 
-
 ### Nigeria
 In Nigeria, the Bachelor of Engineering (B.Eng) is a five year undergraduate professional degree course.
 In Nigeria, Engineer or Engr is protected: only a certified engineer may use the title.
 Certification comes with registration and accreditation by Council for the Regulation of Engineering in Nigeria (COREN). It is the regulatory body that governs the practice of engineering in Nigeria.
 The membership is required to practice engineering independently. It is a requirement for some engineering firms and is mandatory for government contracts.
-

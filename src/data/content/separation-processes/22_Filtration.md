@@ -4,7 +4,6 @@ Filtration is a physical separation process that separates solid matter and flui
 Oil filtration refers to the method of purifying oil by removing impurities that can degrade its quality. Contaminants can enter the oil through various means, including wear and tear of machinery components, environmental factors, and improper handling during oil changes. The primary goal of oil filtration is to enhance the oil’s performance, thereby protecting the machinery and extending its service life.
 Filtration is also used to describe biological and physical systems that not only separate solids from a fluid stream but also remove chemical species and biological organisms by entrainment, phagocytosis, adsorption and absorption. Examples include slow sand filters and trickling filters. It is also used as a general term for macrophage in which organisms use a variety of means to filter small food particles from their environment. Examples range from the microscopic Vorticella up to the basking shark, one of the largest fishes, and the baleen whales, all of which are described as filter feeders.
 
-
 ## Physical processes
 Filtration is used to separate particles and fluid in a suspension, where the fluid can be a liquid, a gas or a supercritical fluid. Depending on the application, either one or both of the components may be isolated.
 Filtration, as a physical operation enables materials of different chemical compositions to be separated. A solvent is chosen which dissolves one component, while not dissolving the other. By dissolving the mixture in the chosen solvent, one component will go into the solution and pass through the filter, while the other will be retained.
@@ -13,7 +12,6 @@ Filtration differs from sieving, where separation occurs at a single perforated 
 Filtration differs from adsorption, where separation relies on surface charge. Some adsorption devices containing activated charcoal and ion-exchange resin are commercially called filters, although filtration is not their principal mechanical function.
 Filtration differs from removal of magnetic contaminants from fluids with magnets (typically lubrication oil, coolants and fuel oils) because there is no filter medium. Commercial devices called "magnetic filters" are sold, but the name reflects their use, not their mode of operation.
 In biological filters, oversize particulates are trapped and ingested and the resulting metabolites may be released. For example, in animals (including humans), renal filtration removes waste from the blood, and in water treatment and sewage treatment, undesirable constituents are removed by adsorption into a biological film grown on or in the filter medium, as in slow sand filtration.
-
 
 ### Methods
 Filters may be used for the purpose of removing unwanted liquid from a solid residue, cleaning unwanted solids from a liquid, or simply to separate the solid from the liquid.
@@ -28,10 +26,8 @@ Vacuum filtration technique is mostly preferred for small batches of solution to
 Centrifugal filtration is carried out by rapidly rotating the substance to be filtered. The more dense material is separated from the less dense matter by the horizontal rotation.
 Gravity filtration is the process of pouring the mixture from a higher location to a lower one. It is frequently accomplished via simple filtration, which involves placing filter paper in a glass funnel with the liquid passing through by gravity while the insoluble solid particles are caught by the filter paper. Filter cones, fluted filters, or filtering pipets can all be employed, depending on the amount of the substance at hand. Gravity filtration is in widespread everyday use, for example for straining cooking water from food, or removing contaminants from a liquid.
 
-
 ### Filtering force
 Only when a driving force is supplied will the fluid to be filtered be able to flow through the filter media. Gravity, centrifugation, applying pressure to the fluid above the filter, applying a vacuum below the filter, or a combination of these factors may all contribute to this force. In both straightforward laboratory filtrations and massive sand-bed filters, gravitational force alone may be utilized. Centrifuges with a bowl holding a porous filter media can be thought of as filters in which a centrifugal force several times stronger than gravity replaces gravitational force. A partial vacuum is typically provided to the container below the filter media when laboratory filtration is challenging to speed up the filtering process. Depending on the type of filter being used, the majority of industrial filtration operations employ pressure or vacuum to speed up filtering and reduce the amount of equipment needed.
-
 
 ### Filter media
 
@@ -43,30 +39,24 @@ Depth filters,  beds of granular material which retain the solid particles as th
 Surface filters allow the solid particles, i.e. the residue, to be collected intact; depth filters do not. However, the depth filter is less prone to clogging due to the greater surface area where the particles can be trapped. Also, when the solid particles are very fine, it is often cheaper and easier to discard the contaminated granules than to clean the solid sieve.
 Filter media can be cleaned by rinsing with solvents or detergents or backwashing. Alternatively, in engineering applications, such as swimming pool water treatment plants, they may be cleaned by backwashing. Self-cleaning screen filters utilize point-of-suction backwashing to clean the screen without interrupting system flow.
 
-
 #### Achieving flow through the filter
 Fluids flow through a filter due to a pressure difference—fluid flows from the high-pressure side to the low-pressure side of the filter. The simplest method to achieve this is by gravity which can be seen in the coffeemaker example. In the laboratory, pressure in the form of compressed air on the feed side (or vacuum on the filtrate side) may be applied to make the filtration process faster, though this may lead to clogging or the passage of fine particles. Alternatively, the liquid may flow through the filter by the force exerted by a pump, a method commonly used in industry when a reduced filtration time is important. In this case, the filter need not be mounted vertically.
-
 
 ### Filter aid
 Certain filter aids may be used to aid filtration. These are often incompressible diatomaceous earth, or kieselguhr, which is composed primarily of silica. Also used are wood cellulose and other inert porous solids such as the cheaper and safer perlite. Activated carbon is often used in industrial applications that require changes in the filtrate's properties, such as altering colour or odour.
 These filter aids can be used in two different ways. They can be used as a precoat before the slurry is filtered. This will prevent gelatinous-type solids from plugging the filter medium and also give a clearer filtrate. They can also be added to the slurry before filtration. This increases the porosity of the cake and reduces the resistance of the cake during filtration. In a rotary filter, the filter aid may be applied as a precoat; subsequently, thin slices of this layer are sliced off with the cake.
 The use of filter aids is usually limited to cases where the cake is discarded or where the precipitate can be chemically separated from the filter.
 
-
 ### Alternatives
 Filtration is a more efficient method for the separation of mixtures than decantation but is much more time-consuming. If very small amounts of solution are involved, most of the solution may be soaked up by the filter medium.
 An alternative to filtration is centrifugation. Instead of filtering the mixture of solid and liquid particles, the mixture is centrifuged to force the (usually) denser solid to the bottom, where it often forms a firm cake. The liquid above can then be decanted. This method is especially useful for separating solids that do not filter well, such as gelatinous or fine particles. These solids can clog or pass through the filter, respectively.
 
-
 ## Biological filtration
 Biological filtration may take place inside an organism, or the biological component may be grown on a medium in the material being filtered. Removal of solids, emulsified components, organic chemicals and ions may be achieved by ingestion and digestion, adsorption or absorption. Because of the complexity of biological interactions, especially in multi-organism communities, it is often not possible to determine which processes are achieving the filtration result. At the molecular level, it may often be by individual catalytic enzyme actions within an individual organism. The waste products of some organisms may subsequently broken down by other organisms to extract as much energy as possible and in so doing reduce complex organic molecules to very simple inorganic species such as water, carbon dioxide and nitrogen.
-
 
 ### Excretion
 
 In mammals, reptiles, and birds, the kidneys  function by renal filtration whereby the glomerulus selectively removes undesirable constituents such as urea, followed by selective reabsorption of many substances essential for the body to maintain homeostasis. The complete process is termed excretion by urination. Similar but often less complex solutions are deployed in all animals, even the protozoa, where the contractile vacuole provides a similar function.
-
 
 ### Biofilms
 
@@ -74,11 +64,9 @@ Biofilms are often complex communities of bacteria, phages, yeasts and often mor
 An example of a biofilm is a biological slime, which may be found in lakes, rivers, rocks, etc. The utilization of single- or dual-species biofilms is a novel technology since natural biofilms are sluggishly developing. The use of biofilms in the biofiltration process allows for the attachment of desirable biomass and critical nutrients to immobilized support. So that water may be reused for various processes, advances in biofiltration methods assist in removing significant volumes of effluents from wastewater.
 Systems for biologically treating wastewater are crucial for enhancing both human health and water quality. Biofilm technology, the formation of biofilms on various filter media, and other factors have an impact on the growth structure and function of these biofilms. To conduct a thorough investigation of the composition, diversity, and dynamics of biofilms, it also takes on a variety of traditional and contemporary molecular approaches.
 
-
 ### Filter feeders
 
 Filter feeders are organisms that obtain their food by filtering their, generally aquatic, environment. Many of the protozoa are filter feeders using a range of adaptations including rigid spikes of protoplasm held in the water flow as in the suctoria to various arrangements of beating cilia to direct particles to the mouth including organisms such as Vorticella which have a complex ring of cilia which create a vortex in the flow drafting particles into the oral cavity. Similar feeding techniques are used by the Rotifera and the Ectoprocta. Many aquatic arthropods are filter feeders. Some use rhythmical beating of abdominal limbs to create a water current to the mouth whilst the hairs on the legs trap any particle. Others such as some caddis flies spin fine webs in the water flow to trap particles.
-
 
 ## Examples
 
@@ -106,4 +94,3 @@ Combined applications include:
 Compressed breathing air production, where the air passes through a particulate filter before entering the compressor, which removes particles likely to damage the compressor, followed by droplet separation after post-compression cooling and final product adsorption filtration to remove gaseous hydrocarbons contaminants and excessive water vapour. In some cases prefilters using adsorption media are used to control carbon dioxide levels, pressure swing adsorption may be used to increase oxygen fraction, and where the risk of carbon monoxide contamination exists, hopcalite catalytic converters may be included in the filtration media of the product. All these processes are broadly referred to as aspects of the filtration of the product.
 Potable water treatment using biofilm filtration in slow sand filters.
 Wastewater treatment using biofilm filtration using trickling filters.
-

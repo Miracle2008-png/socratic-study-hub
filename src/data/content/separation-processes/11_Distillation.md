@@ -5,19 +5,6 @@ Distillation can operate over a wide range of pressures from 0.14 bar (e.g., eth
 Dry distillation (thermolysis and pyrolysis) is the heating of solid materials to produce gases that condense either into fluid products or into solid products. The term dry distillation includes the separation processes of destructive distillation and of chemical cracking, breaking down large hydrocarbon molecules into smaller hydrocarbon molecules. Moreover, a partial distillation results in partial separations of the mixture's components, which process yields nearly pure components; partial distillation also realizes partial separations of the mixture to increase the concentrations of selected components. In either method, the separation process of distillation exploits the differences in the relative volatility of the component substances of the heated mixture.
 In the industrial applications of classical distillation, the term distillation is used as a unit of operation that identifies and denotes a process of physical separation, not a chemical reaction; thus an industrial installation that produces distilled beverages, is a distillery of alcohol. These are some applications of the distillation process:
 
-Distilling fermented products to yield alcoholic beverages with a high content by volume of ethyl alcohol.
-Desalination to produce potable water and for medico-industrial applications.
-Crude oil stabilisation, a partial distillation to reduce the vapor pressure of crude oil, which thus is safe to store and to transport, and thereby reduces the volume of atmospheric emissions of volatile hydrocarbons.
-Fractional distillation is used in the midstream operations of an oil refinery for producing fuels and chemical raw materials for livestock feed.
-Cryogenic Air separation into the component gases — oxygen, nitrogen, and argon — for use as industrial gases.
-Chemical synthesis to separate impurities and unreacted materials.
-
-## Applications
-
-The application of distillation can roughly be divided into four groups: laboratory scale, industrial distillation, distillation of herbs for perfumery and medicinals (herbal distillate), and food processing. The latter two are distinctively different from the former two in that distillation is not used as a true purification method but more to transfer all volatiles from the source materials to the distillate in the processing of beverages and herbs.
-The main difference between laboratory scale distillation and industrial distillation are that laboratory scale distillation is often performed on a batch basis, whereas industrial distillation often occurs continuously. In batch distillation, the composition of the source material, the vapors of the distilling compounds, and the distillate change during the distillation. In batch distillation, a still is charged (supplied) with a batch of feed mixture, which is then separated into its component fractions, which are collected sequentially from most volatile to less volatile, with the bottoms – remaining least or non-volatile fraction – removed at the end. The still can then be recharged and the process repeated.
-In continuous distillation, the source materials, vapors, and distillate are kept at a constant composition by carefully replenishing the source material and removing fractions from both vapor and liquid in the system. This results in a more detailed control of the separation process.
-
 ## Idealized model
 
 The boiling point of a liquid is the temperature at which the vapor pressure of the liquid equals the pressure around the liquid, enabling bubbles to form without being crushed. A special case is the normal boiling point, where the vapor pressure of the liquid equals the ambient atmospheric pressure.

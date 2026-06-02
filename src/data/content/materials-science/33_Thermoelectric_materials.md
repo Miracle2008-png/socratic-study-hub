@@ -1437,21 +1437,3 @@ $$ {\ce {Ag_2S}} $$
 #### Creep Deformation
 
 Creep deformation is a time-dependent mechanism where strain accumulates as amaterial is subjected to external or internal stressesat a high homologous temperature in excess ofT/Tm= 0.5(whereTmis the melting point in K).  This phenomenon can emerge in thermoelectric devices after operating for a long time (i.e. months to years). A coarse-grained or monocrystalline structures have been shown to be desirable as creep-resistant materials.
-
-## Applications
-
-### Refrigeration
-
-Thermoelectric materials can be used as refrigerators, called "thermoelectric coolers", or "Peltier coolers" after the Peltier effect that controls their operation. As a refrigeration technology, Peltier cooling is far less common than vapor-compression refrigeration. The main advantages of a Peltier cooler (compared to a vapor-compression refrigerator) are its lack of moving parts or refrigerant, and its small size and flexible shape (form factor).
-The main disadvantage of Peltier coolers is low efficiency. It is estimated that materials with ZT>3 (about 20–30% Carnot efficiency) would be required to replace traditional coolers in most applications. Today, Peltier coolers are only used in niche applications, especially small scale, where efficiency is not important.
-
-### Power generation
-
-Thermoelectric efficiency depends on the figure of merit, ZT. There is no theoretical upper limit to ZT, and as ZT approaches infinity, the thermoelectric efficiency approaches the Carnot limit. However, until recently no known thermoelectrics had a ZT>3. 
-In 2019, researchers reported a material with approximated ZT between 5 and 6.
-As of 2010, thermoelectric generators serve application niches where efficiency and cost are less important than reliability, light weight, and small size.
-
-Internal combustion engines capture 20–25% of the energy released during fuel combustion.
- Increasing the conversion rate can increase mileage and provide more electricity for on-board controls and creature comforts (stability controls, telematics, navigation systems, electronic braking, etc.) It may be possible to shift energy draw from the engine (in certain cases) to the electrical load in the car, e.g., electrical power steering or electrical coolant pump operation.
-Cogeneration power plants use the heat produced during electricity generation for alternative purposes; being this more profitable in industries with high amounts of waste energy.
-Thermoelectrics may find applications in such systems or in solar thermal energy generation.

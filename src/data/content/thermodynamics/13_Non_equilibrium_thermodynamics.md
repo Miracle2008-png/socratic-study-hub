@@ -17,66 +17,6 @@ Thus, non-equilibrium thermodynamics provides a consistent framework for modelli
 The suitable relationship that defines non-equilibrium thermodynamic state variables is as follows. When the system is in local equilibrium, non-equilibrium state variables are such that they can be measured locally with sufficient accuracy by the same techniques as are used to measure thermodynamic state variables, or by corresponding time and space derivatives, including fluxes of matter and energy. In general, non-equilibrium thermodynamic systems are spatially and temporally non-uniform, but their non-uniformity still has a sufficient degree of smoothness to support the existence of suitable time and space derivatives of non-equilibrium state variables.
 Because of the spatial non-uniformity, non-equilibrium state variables that correspond to extensive thermodynamic state variables have to be defined as spatial densities of the corresponding extensive equilibrium state variables. When the system is in local equilibrium, intensive non-equilibrium state variables, for example temperature and pressure, correspond closely with equilibrium state variables. It is necessary that measuring probes be small enough, and rapidly enough responding, to capture relevant non-uniformity. Further, the non-equilibrium state variables are required to be mathematically functionally related to one another in ways that suitably resemble corresponding relations between equilibrium thermodynamic state variables. In reality, these requirements, although strict, have been shown to be fulfilled even under extreme conditions, such as during phase transitions, at reacting interfaces, and in plasma droplets surrounded by ambient air. There are, however, situations where there are appreciable non-linear effects even at the local scale.
 
-## Overview
-
-Some concepts of particular importance for non-equilibrium thermodynamics include time rate of dissipation of energy (Rayleigh 1873, Onsager 1931, also), time rate of entropy production (Onsager 1931), thermodynamic fields, dissipative structure, and non-linear dynamical structure.
-One problem of interest is the thermodynamic study of non-equilibrium steady states, in which entropy production and some flows are non-zero, but there is no time variation of physical variables.
-One initial approach to non-equilibrium thermodynamics is sometimes called 'classical irreversible thermodynamics'. There are other approaches to non-equilibrium thermodynamics, for example extended irreversible thermodynamics, generalized thermodynamics, and generalized hydrodynamics but they are hardly touched on in the present article.
-
-### Quasi-radiationless non-equilibrium thermodynamics of matter in laboratory conditions
-
-According to Wildt (see also Essex), current versions of non-equilibrium thermodynamics ignore radiant heat; they can do so because they refer to laboratory quantities of matter under laboratory conditions with temperatures well below those of stars. At laboratory temperatures, in laboratory quantities of matter, thermal radiation is weak and can be practically nearly ignored. But, for example, atmospheric physics is concerned with large amounts of matter, occupying cubic kilometers, that, taken as a whole, are not within the range of laboratory quantities; then thermal radiation cannot be ignored.
-
-### Local equilibrium thermodynamics
-
-The terms 'classical irreversible thermodynamics' and 'local equilibrium thermodynamics' are sometimes used to refer to a version of non-equilibrium thermodynamics that demands certain simplifying assumptions, as follows. The assumptions have the effect of making each very small volume element of the system effectively homogeneous, or well-mixed, or without an effective spatial structure. Even within the thought-frame of classical irreversible thermodynamics, care is needed in choosing the independent variables for systems. In some writings, it is assumed that the intensive variables of equilibrium thermodynamics are sufficient as the independent variables for the task (such variables are considered to have no 'memory', and do not show hysteresis); in particular, local flow intensive variables are not admitted as independent variables; local flows are considered as dependent on quasi-static local intensive variables.
-Also it is assumed that the local entropy density is the same function of the other local intensive variables as in equilibrium; this is called the local thermodynamic equilibrium assumption (see also Keizer (1987)). Radiation is ignored because it is transfer of energy between regions, which can be remote from one another. In the classical irreversible thermodynamic approach, there is allowed spatial variation from infinitesimal volume element to adjacent infinitesimal volume element, but it is assumed that the global entropy of the system can be found by simple spatial integration of the local entropy density. This approach assumes spatial and temporal continuity and even differentiability of locally defined intensive variables such as temperature and internal energy density. While these demands may appear severely constrictive, it has been found that the assumptions of local equilibrium hold for a wide variety of systems, including reacting interfaces, on the surfaces of catalysts, in confined systems such as zeolites, under temperature gradients as large as 
-  
-    
-      
-        
-          10
-          
-            12
-          
-        
-      
-    
-    
-
-$$ 10^{12} $$
-
-  
- K m
-  
-    
-      
-        
-          
-          
-            −
-            1
-          
-        
-      
-    
-    
-
-$$ ^{-1} $$
-
-  
-, and even in shock fronts moving at up to six times the speed of sound.
-In other writings, local flow variables are considered; these might be considered as classical by analogy with the time-invariant long-term time-averages of flows produced by endlessly repeated cyclic processes; examples with flows are in the thermoelectric phenomena known as the Seebeck and the Peltier effects, considered by Kelvin in the nineteenth century and by Lars Onsager in the twentieth. These effects occur at metal junctions, which were originally effectively treated as two-dimensional surfaces, with no spatial volume, and no spatial variation.
-
-#### Local equilibrium thermodynamics with materials with "memory"
-
-A further extension of local equilibrium thermodynamics is to allow that materials may have "memory", so that their constitutive equations depend not only on present values but also on past values of local equilibrium variables. Thus time comes into the picture more deeply than for time-dependent local equilibrium thermodynamics with memoryless materials, but fluxes are not independent variables of state.
-
-### Extended irreversible thermodynamics
-
-Extended irreversible thermodynamics is a branch of non-equilibrium thermodynamics that goes outside the restriction to the local equilibrium hypothesis. The space of state variables is enlarged by including the fluxes of mass, momentum and energy and eventually higher order fluxes.
-The formalism is well-suited for describing high-frequency processes and small-length scales materials.
-
 ## Basic concepts
 
 There are many examples of stationary non-equilibrium systems, some very simple, like a system confined between two thermostats at different temperatures or the ordinary Couette flow, a fluid enclosed between two flat walls moving in opposite directions and defining non-equilibrium conditions at the walls. Laser action is also a non-equilibrium process, but it depends on departure from local thermodynamic equilibrium and is thus beyond the scope of classical irreversible thermodynamics; here a strong temperature difference is maintained between two molecular degrees of freedom (with molecular laser, vibrational and rotational molecular motion), the requirement for two component 'temperatures' in the one small region of space, precluding local thermodynamic equilibrium, which demands that only one temperature be needed. Damping of acoustic perturbations or shock waves are non-stationary non-equilibrium processes. Driven complex fluids, turbulent systems and glasses are other examples of non-equilibrium systems.
@@ -1171,9 +1111,3 @@ The generalization of the above equations for the rate of creation of entropy wa
 
 Until recently, prospects for useful extremal principles in this area have seemed clouded. Nicolis (1999) concludes that one model of atmospheric dynamics has an attractor which is not a regime of maximum or minimum dissipation; she says this seems to rule out the existence of a global organizing principle, and comments that this is to some extent disappointing; she also points to the difficulty of finding a thermodynamically consistent form of entropy production. Another top expert offers an extensive discussion of the possibilities for principles of extrema of entropy production and of dissipation of energy: Chapter 12 of Grandy (2008) is very cautious, and finds difficulty in defining the 'rate of internal entropy production' in many cases, and finds that sometimes for the prediction of the course of a process, an extremum of the quantity called the rate of dissipation of energy may be more useful than that of the rate of entropy production; this quantity appeared in Onsager's 1931 origination of this subject. Other writers have also felt that prospects for general global extremal principles are clouded. Such writers include Glansdorff and Prigogine (1971), Lebon, Jou and Casas-Vásquez (2008), and Šilhavý (1997).
 There is good experimental evidence that heat convection does not obey extremal principles for time rate of entropy production. Theoretical analysis shows that chemical reactions do not obey extremal principles for the second differential of time rate of entropy production. The development of a general extremal principle seems infeasible in the current state of knowledge.
-
-## Applications
-
-Non-equilibrium thermodynamics has been successfully applied to describe biological processes such as protein folding/unfolding and transport through membranes.
-It is also used to give a description of the dynamics of nanoparticles, which can be out of equilibrium in systems where catalysis and electrochemical conversion is involved. 
-Also, ideas from non-equilibrium thermodynamics and the informatic theory of entropy have been adapted to describe general economic systems.

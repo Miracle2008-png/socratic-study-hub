@@ -268,12 +268,6 @@ $$ \alpha ={\frac {k}{\rho c_{p}}}, $$
 
 where k is the thermal conductivity, ρ the density, and cp the specific heat capacity.
 
-## Engineering applications
-
-In engineering applications, the Péclet number is often very large. In such situations, the dependency of the flow upon downstream locations is diminished, and variables in the flow tend to become "one-way" properties. Thus, when modelling certain situations with high Péclet numbers, simpler computational models can be adopted.
-A flow will often have different Péclet numbers for heat and mass. This can lead to the phenomenon of double diffusive convection.
-In the context of particulate motion, the Péclet number has also been called Brenner number, with symbol Br, in honour of Howard Brenner.
-
 ## Other usages
 
 The Péclet number also finds applications beyond transport phenomena, as a general measure for the relative importance of the random fluctuations and of the systematic average behavior in mesoscopic systems.

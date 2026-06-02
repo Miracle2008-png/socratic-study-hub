@@ -3,7 +3,6 @@
 The third law of thermodynamics states that the entropy of a closed system at thermodynamic equilibrium approaches a constant value when its temperature approaches absolute zero. This constant value cannot depend on any other parameters characterizing the system, such as pressure or applied magnetic field. At absolute zero (zero kelvin) the system must be in a state with the minimum possible energy.
 Entropy is related to the number of accessible microstates, and there is typically one unique state (called the ground state) with minimum energy. In such a case, the entropy at absolute zero will be exactly zero. If the system does not have a well-defined order (if its order is glassy, for example), then there may remain some finite entropy as the system is brought to very low temperatures, either because the system becomes locked into a configuration with non-minimal energy or because the minimum energy state is non-unique. The constant value is called the residual entropy of the system.
 
-
 ## Formulations
 The third law has many formulations, some more general than others, some equivalent, and some neither more general nor equivalent.
 The Planck statement applies only to perfect crystalline substances:
@@ -324,7 +323,6 @@ This implies that the heat capacity
   
  would diverge.
 
-
 ## Explanation
 In simple terms, the third law states that the entropy of a perfect crystal of a pure substance approaches zero as the temperature approaches zero. The alignment of a perfect crystal leaves no ambiguity as to the location and orientation of each part of the crystal. As the energy of the crystal is reduced, the vibrations of the individual atoms are reduced to nothing, and the crystal becomes the same everywhere.
 
@@ -405,7 +403,6 @@ The difference is zero; hence the initial entropy S0 can be any selected value s
     
     {\displaystyle S=0}
   
-
 
 ### Example: Entropy change of a crystal lattice heated by an incoming photon
 Suppose a system consisting of a crystal lattice with volume V of N identical atoms at T = 0 K, and an incoming photon of wavelength λ and energy ε.
@@ -825,22 +822,18 @@ This can be interpreted as the average temperature of the system over the range 
   
 . A single atom is assumed to absorb the photon, but the temperature and entropy change characterizes the entire system.
 
-
 ### Systems with non-zero entropy at absolute zero
 An example of a system that does not have a unique ground state is one whose net spin is a half-integer, for which time-reversal symmetry gives two degenerate ground states. For such systems, the entropy at zero temperature is at least kB ln(2) (which is negligible on a macroscopic scale). Some crystalline systems exhibit geometrical frustration, where the structure of the crystal lattice prevents the emergence of a unique ground state. Ground-state helium (unless under pressure) remains liquid.
 Glasses and solid solutions retain significant entropy at 0 K, because they are large collections of nearly degenerate states, in which they become trapped out of equilibrium. Another example of a solid with many nearly-degenerate ground states, trapped out of equilibrium, is ice Ih, which has "proton disorder".
 For the entropy at absolute zero to be zero, the magnetic moments of a perfectly ordered crystal must themselves be perfectly ordered; from an entropic perspective, this can be considered to be part of the definition of a "perfect crystal". Only ferromagnetic, antiferromagnetic, and diamagnetic materials can satisfy this condition. However, ferromagnetic materials do not, in fact, have zero entropy at zero temperature, because the spins of the unpaired electrons are all aligned and this gives a ground-state spin degeneracy. Materials that remain paramagnetic at 0 K, by contrast, may have many nearly degenerate ground states (for example, in a spin glass), or may retain dynamic disorder (a quantum spin liquid).
 
-
 ## Consequences
-
 
 ### Absolute zero
 The third law is equivalent to the statement that
 
 It is impossible by any procedure, no matter how idealized, to reduce the temperature of any closed system to zero temperature in a finite number of finite operations.
 The reason that T = 0 cannot be reached according to the third law is explained as follows: Suppose that the temperature of a substance can be reduced in an isentropic process by changing the parameter X from X2 to X1. One can think of a multistage nuclear demagnetization setup where a magnetic field is switched on and off in a controlled way. If there were an entropy difference at absolute zero, T = 0 could be reached in a finite number of steps. However, at T = 0 there is no entropy difference, so an infinite number of steps would be needed. The process is illustrated in Fig. 1.
-
 
 #### Example: magnetic refrigeration
 
@@ -975,7 +968,6 @@ At every two-step of the process, the mass of the system decreases, as we discar
   
 .
 
-
 ### Specific heat
 A non-quantitative description of his third law that Nernst gave at the very beginning was simply that the specific heat of a material can always be made zero by cooling it down far enough. A modern, quantitative analysis follows.
 Suppose that the heat capacity of a sample in the low temperature region has the form of a power law C(T,X) = C0Tα asymptotically as T → 0, and we wish to find which values of α are compatible with the third law. We have
@@ -998,7 +990,6 @@ with TB given by
 The specific heats given by Eq. (14) and (16) both satisfy Eq. (12). Indeed, they are power laws with α = 1 and α = ⁠3/2⁠ respectively.
 Even within a purely classical setting, the density of a classical ideal gas at fixed particle number becomes arbitrarily high as T goes to zero, so the interparticle spacing goes to zero. The assumption of non-interacting particles presumably breaks down when they are sufficiently close together, so the value of CV gets modified away from its ideal constant value.
 
-
 ### Vapor pressure
 The only liquids near absolute zero are 3He and 4He. Their heat of evaporation has a limiting value given by
 
@@ -1006,11 +997,9 @@ with L0 and Cp constant. If we consider a container partly filled with liquid an
 
 where Sl(T) is the entropy of the liquid and x is the gas fraction. Clearly the entropy change during the liquid–gas transition (x from 0 to 1) diverges in the limit of T → 0. This violates Eq. (8). Nature solves this paradox as follows: at temperatures below about 100 mK, the vapor pressure 10×10−31 mmHg is so low that the gas density is lower than the best vacuum in the universe. In other words, below 100 mK there is simply no gas above the liquid.
 
-
 ### Miscibility
 If liquid helium with mixed 3He and 4He were cooled to absolute zero, the liquid must have zero entropy. This either means they are ordered perfectly as a mixed liquid, which is impossible for a liquid, or that they fully separate out into two layers of pure liquid. This is precisely what happens.
 For example, if a solution with 3 3He to 2 4He atoms were cooled, it would start the separation at 0.9 K, purifying more and more, until at absolute zero, when the upper layer becomes purely 3He, and the lower layer becomes purely 4He.
-
 
 ### Surface tension
 Let 
@@ -1080,10 +1069,8 @@ Let
   
 .
 
-
 ### Latent heat of melting
 The melting curves of 3He and 4He both extend down to absolute zero at finite pressure. At the melting pressure, liquid and solid are in equilibrium. The third law demands that the entropies of the solid and liquid are equal at T = 0. As a result, the latent heat of melting is zero, and the slope of the melting curve extrapolates to zero as a result of the Clausius–Clapeyron equation.
-
 
 ### Thermal expansion coefficient
 The thermal expansion coefficient is defined as
@@ -1093,4 +1080,3 @@ With the Maxwell relation
 and Eq. (8) with X = p it is shown that
 
 So the thermal expansion coefficient of all materials must go to zero at 0 K.
-

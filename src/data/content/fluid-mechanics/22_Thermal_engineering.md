@@ -23,30 +23,6 @@ Fluid mechanics can be divided into fluid statics, the study of various fluids a
 
 Heat transfer is one of the two forms of energy interactions in a closed system. Heat transfer refers to interactions where the driving force is the temperature difference within the system. Heat transfer occurs through one of the three following methods: conduction, convection, and radiation. Conduction occurs when heat transfers between two parts of the substance through physical contact, without the significant displacement of molecules making up the substance. Convection occurs when heat is transferred due to the mixing of fluids, which, in contrast to conduction, depends on the displacement of the molecules in the fluid. Lastly, radiation is heat transfer through space or matter not by conduction or convection.
 
-## Applications
-
-Engineers may utilize thermodynamic modelling to evaluate the thermodynamic properties and performance of a system they are designing.
-
-### Heat engines
-
-Heat engines are systems that convert some portion of thermal energy into mechanical or electrical energy with the help of a working fluid. Their design relies on the fundamental concept of thermodynamic power cycles. Heat engines have theoretical and physical limitations on their energy conversion efficiency, known as thermal energy efficiency. While examples of heat engines exist in nature, in the context of thermal engineering they are man-made devices used to produce useful work. Depending on where fuel combustion takes place and where combustion products go, these man-made heat engines are divided into two categories: internal and external combustion engines.
-The development of internal combustion engines is one of the specialized fields in which thermal engineers are involved. These have a variety of applications, but feature most prominently in the transportation industry as they are used everywhere from automobiles to jet engines.
-One example of an external combustion engine is the steam turbine, a core component in power plants and also historically used in marine propulsion and locomotion.
-
-### Heat exchangers
-
-A heat exchanger is a device that transfers heat between fluids that are at different temperatures, without the two fluids mixing. It is used for both heating and cooling applications. Some examples of heat exchangers include condensers and heat sinks.
-Heat exchangers are often used for the purpose of heat regeneration or recovery, in which useful heating or cooling energy is collected and repurposed to improve the overall thermal efficiency of the entire heating or cooling process. Regenerative heat exchangers can be classified into recuperators and regenerators.
-Heat exchangers are used in a variety of important everyday applications, such as HVAC and refrigeration, and are integral to cooling of computer infrastructure because effective heat dissipation is required to reduce thermal throttling in computers. Particularly within data centers, this helps maintain optimal performance and ensures that online systems can remain available and reliable.
-
-### Other applications
-
-Compressed-air systems
-Solar heating
-Thermal insulation
-Process fired heaters
-Thermal energy storage
-
 ## Research
 
 Top academic journals in the field by h5-index as of April 2026 include Applied Thermal Engineering, International Journal of Heat and Mass Transfer, Case Studies in Thermal Engineering, Journal of Thermal Analysis and Calorimetry, and International Communications in Heat and Mass Transfer.

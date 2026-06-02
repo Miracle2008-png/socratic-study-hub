@@ -6,4 +6,3 @@ Splashes are characterized by transient ballistic flow, and are governed by the 
 Sand is said to splash if hit sufficiently hard (see dry quicksand) and sometimes the impact of a meteorite is referred to as splashing, if small bits of ejecta are formed.
 Physicist Lei Xu and coworkers at the University of Chicago discovered that the splash due to the impact of a small drop of ethanol onto a dry solid surface could be suppressed by reducing the pressure below a specific threshold.  For drops of diameter 3.4 mm falling through air, this pressure was about 20 kilopascals, or 0.2 atmosphere.
 A plate made of a hard material on which a stream of liquid is designed to fall is called a "splash plate". It may serve to protect the ground from erosion by falling water, such as beneath an artificial waterfall or water outlet in soft ground. Splash plates are also part of spray nozzles, such as in irrigation sprinkler systems.
-

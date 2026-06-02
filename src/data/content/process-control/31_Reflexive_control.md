@@ -3,27 +3,7 @@
 Reflexive control is control someone has over their opponent's decisions by imposing on them assumptions that change the way they act.
 Methods of reflexive control are widely used in a variety of fields: advertising, public relations, military art, etc. An example of such a strategy could be a card shark deliberately losing the first hands in the game, systematic diversionary attacks on an unimportant area of combat, etc..
 
-
-## Introduction
-As defined by Soviet scholar Vladimir Lefebvre reflexive control is a process in which one adversary hands over to the other the basis for decision-making. In other words, there is a substitution of motivation factors of the enemy in order to encourage him to take disadvantageous decisions.
-Professor G. Smolyan believes that the key point of reflexive control is implicitly forcing a subject to choose a desired result. As an aphoristic example of reflexive manipulation we can recall an episode from "Uncle Remus's Tales" in which Brother Rabbit eludes Brother Fox by asking:
-
-Whatever you do don't throw me into the briar patch
-The oldest of those literary villains who specialized in reflexive control is considered to be the biblical serpent who provoked Eve to taste the forbidden fruit. The category of typical provocateurs can also include one of the famous characters of the Swedish writer Astrid Lindgren, who terrorized the housewife Fröken Bock with a simple question:
-
-Have you stopped drinking cognac in the morning? Yes or no?
-Individual techniques of reflexive control called "stratagems" have occupied an important place in the history of military art since ancient times. For example, Sun Tzu put in the title of the first chapter of one of his treatises the statement "War is the way of deception," thus defining the craft of warfare as the art of deception.
-The preconditions for the actual emergence of the theory of reflexive control can be found in the Soviet military literature of the mid-20th century; four main stages are distinguished in the process of its improvement:
-
-from the early 1960s to the late 1970s: research,
-late 1970s to early 1990s: practice-oriented,
-from the beginning to the middle of the 1990s: psychological and pedagogical,
-since the late 1990s: psychosocial.
-Among the most authoritative scientists who dealt with the tasks of reflexive control, in addition to V. Lefebvre, the works of D. Pospelov, V. Burkov, V. Lepsky, G. Shchedrovitsky and others are noted. In addition to them, the artistic aspects of the subject of reflexive control were reflected in the works of some major writers, for example, V. Pelevin.
-
-
 ## Military application
-
 
 ### General provisions
 
@@ -56,4 +36,3 @@ One well-known example of the effective use of the theory of reflexive control w
 Similarly, British intelligence conducted disinformation support for the Allied landings in Sicily, codenamed Operation Mincemeat. For this purpose, a dead body dressed as a British serviceman was planted in the sight of the Reich's special services with a set of skilfully fabricated documents describing an alleged British landing operation in the Peloponnese and Sardinia. Judging by these plans, the informational screen for this landing was to be demonstrative preparations for a fake attack on Sicily. The German leadership carried out a set of works to strengthen the Greek coast, redeployed there a tank division, but quite unexpectedly for them the main blow was struck in Sicily.
 Many Russian writers believe that another textbook example of reflexive control is the American Strategic Defense Initiative program, which forced the Soviet Union to spend significant resources to develop a similar space system.
 According to a number of non-Russian researchers, manipulative methods from the field of reflexive control form the basis of Russia's new concept of military action in the 21st century, which in the West has been called "New Generation Warfare". At the same time, some publications have been critical of the applied aspects of this theory, and it has even been called pseudoscientific.
-

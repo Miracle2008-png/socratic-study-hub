@@ -5,17 +5,6 @@ The fundamental analysis in all three subfields of mass, heat, and momentum tran
 Transport phenomena are ubiquitous throughout the engineering disciplines. Some of the most common examples of transport analysis in engineering are seen in the fields of process, chemical, biological, and mechanical engineering, but the subject is a fundamental component of the curriculum in all disciplines involved in any way with fluid mechanics, heat transfer, and mass transfer. It is now considered to be a part of the engineering discipline as much as thermodynamics, mechanics, and electromagnetism.
 Transport phenomena encompass all agents of physical change in the universe. Moreover, they are considered to be fundamental building blocks which developed the universe, and which are responsible for the success of all life on Earth. However, the scope here is limited to the relationship of transport phenomena to artificial engineered systems.
 
-## Overview
-
-In physics, transport phenomena are all irreversible processes of statistical nature stemming from the random continuous motion of molecules, mostly observed in fluids. Every aspect of transport phenomena is grounded in two primary concepts : the conservation laws, and the constitutive equations. The conservation laws, which in the context of transport phenomena are formulated as continuity equations, describe how the quantity being studied must be conserved. The constitutive equations describe how the quantity in question responds to various stimuli via transport. Prominent examples include Fourier's law of heat conduction and the Navier–Stokes equations, which describe, respectively, the response of heat flux to temperature gradients and the relationship between fluid flux and the forces applied to the fluid. These equations also demonstrate the deep connection between transport phenomena and thermodynamics, a connection that explains why transport phenomena are irreversible. Almost all of these physical phenomena ultimately involve systems seeking their lowest energy state in keeping with the principle of minimum energy. As they approach this state, they tend to achieve true thermodynamic equilibrium, at which point there are no longer any driving forces in the system and transport ceases. The various aspects of such equilibrium are directly connected to a specific transport: heat transfer is the system's attempt to achieve thermal equilibrium with its environment, just as mass and momentum transport move the system towards chemical and mechanical equilibrium.
-Examples of transport processes include heat conduction (energy transfer), fluid flow (momentum transfer), molecular diffusion (mass transfer), radiation and electric charge transfer in semiconductors.
-Transport phenomena have wide application. For example, in solid state physics, the motion and interaction of electrons, holes and phonons are studied under "transport phenomena". Another example is in biomedical engineering, where some transport phenomena of interest are thermoregulation, perfusion, and microfluidics. In chemical engineering, transport phenomena are studied in reactor design, analysis of molecular or diffusive transport mechanisms, and metallurgy.
-The transport of mass, energy, and momentum can be affected by the presence of external sources:
-
-An odor dissipates more slowly (and may intensify) when the source of the odor remains present.
-The rate of cooling of a solid that is conducting heat depends on whether a heat source is applied.
-The gravitational force acting on a rain drop counteracts the resistance or drag imparted by the surrounding air.
-
 ## Commonalities among phenomena
 
 An important principle in the study of transport phenomena is analogy between phenomena.
@@ -1221,13 +1210,3 @@ For fully developed turbulent flow, with n=1/3, this becomes the Chilton–Colbu
 
 The analogy between heat transfer and mass transfer is strictly limited to binary diffusion in dilute (ideal) solutions for which the mass transfer rates are low enough that mass transfer has no effect on the velocity field. The concentration of the diffusing species must be low enough that the chemical potential gradient is accurately represented by the concentration gradient (thus, the analogy has limited application to concentrated liquid solutions). When the rate of mass transfer is high or the concentration of the diffusing species is not low, corrections to the low-rate heat transfer coefficient can sometimes help. Further, in multicomponent mixtures, the transport of one species is affected by the chemical potential gradients of other species.
 The heat and mass analogy may also break down in cases where the governing equations differ substantially. For instance, situations with substantial contributions from generation terms in the flow, such as bulk heat generation or bulk chemical reactions, may cause solutions to diverge.
-
-### Applications of the Heat-Mass Analogy
-
-The analogy is useful for both using heat and mass transport to predict one another, or for understanding systems which experience simultaneous heat and mass transfer. For example, predicting heat transfer coefficients around turbine blades is challenging and is often done through measuring evaporating of a volatile compound and using the analogy. Many systems also experience simultaneous mass and heat transfer, and particularly common examples occur in processes with phase change, as the enthalpy of phase change often substantially influences heat transfer. Such examples include: evaporation at a water surface, transport of vapor in the air gap above a membrane distillation desalination membrane, and HVAC dehumidification equipment that combine heat transfer and selective membranes.
-
-## Applications
-
-### Pollution
-
-The study of transport processes is relevant for understanding the release and distribution of pollutants into the environment. In particular, accurate modeling can inform mitigation strategies. Examples include the control of surface water pollution from urban runoff, and policies intended to reduce the copper content of vehicle brake pads in the U.S.

@@ -3,11 +3,9 @@
 Structural engineering is a sub-discipline of civil engineering in which structural engineers are trained to design the 'bones and joints' that create the form and shape of human-made structures. Structural engineers also must understand and calculate the stability, strength, rigidity and earthquake-susceptibility of built structures for buildings and nonbuilding structures. The structural designs are integrated with those of other designers such as architects and building services engineer and often supervise the construction of projects by contractors on site. They can also be involved in the design of machinery, medical equipment, and vehicles where structural integrity affects functioning and safety. See glossary of structural engineering.
 Structural engineering theory is based upon applied physical laws and empirical knowledge of the structural performance of different materials and geometries. Structural engineering design uses a number of relatively simple structural concepts to build complex structural systems. Structural engineers are responsible for making creative and efficient use of funds, structural elements and materials to achieve these goals.
 
-
 ## Theory
 
 Structural engineering depends upon a detailed knowledge of applied mechanics, materials science, and applied mathematics to understand and predict how structures support and resist self-weight and imposed loads. To apply the knowledge successfully a structural engineer generally requires detailed knowledge of relevant empirical and theoretical design codes, the techniques of structural analysis, as well as some knowledge of the corrosion resistance of the materials and structures, especially when those structures are exposed to the external environment. Since the 1990s, specialist software has become available to aid in the design of structures, with the functionality to assist in the drawing, analyzing and designing of structures with maximum precision; examples include AutoCAD, StaadPro, ETABS, Prokon, Revit Structure, Inducta RCB, etc. Such software may also take into consideration environmental loads, such as earthquakes and winds.
-
 
 ## Profession
 
@@ -18,9 +16,7 @@ The role of a structural engineer today involves a significant understanding of 
 Structural engineers are licensed or accredited by different learned societies and regulatory bodies around the world (for example, the Institution of Structural Engineers in the UK). Depending on the degree course they have studied and/or the jurisdiction they are seeking licensure in, they may be accredited (or licensed) as just structural engineers, or as civil engineers, or as both civil and structural engineers.
 Another international organisation is IABSE(International Association for Bridge and Structural Engineering). The aim of that association is to exchange knowledge and to advance the practice of structural engineering worldwide in the service of the profession and society.
 
-
 ## Specializations
-
 
 ### Building structures
 
@@ -35,7 +31,6 @@ Roof engineering
 Tower engineering
 Wind engineering
 
-
 ### Earthquake engineering structures
 
 Earthquake engineering structures are those engineered to withstand earthquakes.
@@ -43,13 +38,11 @@ The main objectives of earthquake engineering are to understand the interaction 
 Earthquake-proof structures are not necessarily extremely strong like the El Castillo pyramid at Chichen Itza shown above.
 One important tool of earthquake engineering is base isolation, which allows the base of a structure to move freely with the ground.
 
-
 ### Civil engineering structures
 Civil structural engineering includes all structural engineering related to the built environment. It includes:
 
 The structural engineer is the lead designer on these structures, and often the sole designer. In the design of structures such as these, structural safety is of paramount importance (in the UK, designs for dams, nuclear power stations and bridges must be signed off by a chartered engineer).
 Civil engineering structures are often subjected to very extreme forces, such as large variations in temperature, dynamic loads such as waves or traffic, or high pressures from water or compressed gases. They are also often constructed in corrosive environments, such as at sea, in industrial facilities, or below ground.
-
 
 ### Mechanical engineering structures
 The forces which parts of a machine are subjected to can vary significantly and can do so at a great rate. The forces which a boat or aircraft are subjected to vary enormously and will do so thousands of times over the structure's lifetime. The structural design must ensure that such structures can endure such loading for their entire design life without failing.
@@ -62,20 +55,16 @@ Elevators
 Escalators
 Marine vessels and hulls
 
-
 ### Aerospace structures
 
 Aerospace structure types include launch vehicles, (Atlas, Delta, Titan), missiles (ALCM, Harpoon), Hypersonic vehicles (Space Shuttle), military aircraft (F-16, F-18) and commercial aircraft (Boeing 777, MD-11). Aerospace structures typically consist of thin plates with stiffeners for the external surfaces, bulkheads, and frames to support the shape and fasteners such as welds, rivets, screws, and bolts to hold the components together.
 
-
 ### Nanoscale structures
 A nanostructure is an object of intermediate size between molecular and microscopic (micrometer-sized) structures. In describing nanostructures it is necessary to differentiate between the number of dimensions on the nanoscale. Nanotextured surfaces have one dimension on the nanoscale, i.e., only the thickness of the surface of an object is between 0.1 and 100 nm. Nanotubes have two dimensions on the nanoscale, i.e., the diameter of the tube is between 0.1 and 100 nm; its length could be much greater. Finally, spherical nanoparticles have three dimensions on the nanoscale, i.e., the particle is between 0.1 and 100 nm in each spatial dimension. The terms nanoparticles and ultrafine particles (UFP) often are used synonymously although UFP can reach into the micrometer range. The term 'nanostructure' is often used when referring to magnetic technology.
-
 
 ### Structural engineering for medical science
 
 Medical equipment (also known as armamentarium) is designed to aid in the diagnosis, monitoring or treatment of medical conditions. There are several basic types: diagnostic equipment includes medical imaging machines, used to aid in diagnosis; equipment includes infusion pumps, medical lasers, and LASIK surgical machines; medical monitors allow medical staff to measure a patient's medical state. Monitors may measure patient vital signs and other parameters including ECG, EEG, blood pressure, and dissolved gases in the blood; diagnostic medical equipment may also be used in the home for certain purposes, e.g. for the control of diabetes mellitus. A biomedical equipment technician (BMET) is a vital component of the healthcare delivery system. Employed primarily by hospitals, BMETs are the people responsible for maintaining a facility's medical equipment.
-
 
 ## Structural elements
 
@@ -88,7 +77,6 @@ Arches
 Shells
 Catenaries
 Many of these elements can be classified according to form (straight, plane / curve) and dimensionality (one-dimensional / two-dimensional):
-
 
 ### Columns
 
@@ -116,7 +104,6 @@ The buckling capacity is the capacity of the element to withstand the propensity
  is the real length of the column and K is the factor dependent on the restraint conditions.
 The capacity of a column to carry axial load depends on the degree of bending it is subjected to, and vice versa. This is represented on an interaction chart and is a complex non-linear relationship.
 
-
 ### Beams
 
 A beam may be defined as an element in which one dimension is much greater than the other two and the applied loads are usually normal to the main axis of the element. Beams and columns are called line elements and are often represented by simple lines in structural modeling.
@@ -128,33 +115,27 @@ continuous (supported by three or more supports)
 a combination of the above (ex. supported at one end and in the middle)
 Beams are elements that carry pure bending only. Bending causes one part of the section of a beam (divided along its length) to go into compression and the other part into tension. The compression part must be designed to resist buckling and crushing, while the tension part must be able to adequately resist the tension.
 
-
 ### Trusses
 
 A truss is a structure comprising members and connection points or nodes. When members are connected at nodes and forces are applied at nodes members can act in tension or compression. Members acting in compression are referred to as compression members or struts while members acting in tension are referred to as tension members or ties. Most trusses use gusset plates to connect intersecting elements.  Gusset plates are relatively flexible and unable to transfer bending moments. The connection is usually arranged so that the lines of force in the members are coincident at the joint thus allowing the truss members to act in pure tension or compression.
 Trusses are usually used in large-span structures, where it would be uneconomical to use solid beams.
-
 
 ### Plates
 
 Plates carry bending in two directions. A concrete flat slab is an example of a plate. Plate behavior is based on continuum mechanics. Due to the complexity involved they are most often analyzed using a finite element analysis.
 They can also be designed with yield line theory, where an assumed collapse mechanism is analyzed to give an upper bound on the collapse load. This technique is used in practice but because the method provides an upper-bound (i.e. an unsafe prediction of the collapse load) for poorly conceived collapse mechanisms, great care is needed to ensure that the assumed collapse mechanism is realistic.
 
-
 ### Shells
 
 Shells derive their strength from their form and carry forces in compression in two directions. A dome is an example of a shell. They can be designed by making a hanging-chain model, which will act as a catenary in pure tension and inverting the form to achieve pure compression.
-
 
 ### Arches
 
 Arches carry forces in compression in one direction only, which is why it is appropriate to build arches out of masonry. They are designed by ensuring that the line of thrust of the force remains within the depth of the arch. It is mainly used to increase the bountifulness of any structure.
 
-
 ### Catenaries
 
 Catenaries derive their strength from their form and carry transverse forces in pure tension by deflecting (just as a tightrope will sag when someone walks on it). They are almost always cable or fabric structures. A fabric structure acts as a catenary in two directions.
-
 
 ## Materials
 
@@ -169,4 +150,3 @@ Timber: hardwood, softwood
 Aluminium
 Composite materials: plywood
 Other structural materials: adobe, bamboo, carbon fibre, fiber reinforced plastic, mudbrick, roofing materials
-

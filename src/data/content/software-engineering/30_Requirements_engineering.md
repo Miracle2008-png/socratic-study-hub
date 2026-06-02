@@ -3,7 +3,6 @@
 In the waterfall model, requirements engineering is presented as the first phase of the software development process. Later development methods, including the Rational Unified Process (RUP) for software, assume that requirements engineering continues through a system's lifetime.
 Requirements management, which is a sub-function of Systems Engineering practices, is also indexed in the International Council on Systems Engineering (INCOSE) manuals.
 
-
 ## Activities
 The activities involved in requirements engineering vary widely, depending on the type of system being developed and the organization's specific practice(s) involved. These may include:
 
@@ -16,11 +15,8 @@ Requirements management – Managing all the activities related to the requireme
 These are sometimes presented as chronological stages although, in practice, there is considerable interleaving of these activities.
 Requirements engineering has been shown to clearly contribute to software project successes.
 
-
 ## Problems
 One limited study in Germany presented possible problems in implementing requirements engineering and asked respondents whether they agreed that they were actual problems. The results were not presented as being generalizable but suggested that the principal perceived problems were incomplete requirements, moving targets, and time boxing, with lesser problems being communications flaws, lack of traceability, terminological problems, and unclear responsibilities.
 
-
 ## Criticism
-Problem structuring, a key aspect of requirements engineering, has been speculated to reduce design performance. Some research suggests that it is possible if there are deficiencies in the requirements engineering process resulting in a situation where requirements do not exist, software requirements may be created regardless as an illusion misrepresenting design decisions as requirements 
-
+Problem structuring, a key aspect of requirements engineering, has been speculated to reduce design performance. Some research suggests that it is possible if there are deficiencies in the requirements engineering process resulting in a situation where requirements do not exist, software requirements may be created regardless as an illusion misrepresenting design decisions as requirements

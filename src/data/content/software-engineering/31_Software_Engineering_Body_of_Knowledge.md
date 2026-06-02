@@ -5,7 +5,6 @@ The SWEBOK Guide has been created through cooperation among several professional
 In late 2013, SWEBOK V3 was approved for publication and released. 
 In 2016, the IEEE Computer Society began the SWEBOK Evolution effort to develop future iterations of the body of knowledge. The SWEBOK Evolution project resulted in the publication of SWEBOK Guide version 4 in October 2024.
 
-
 ## SWEBOK Version 4
 The published version of SWEBOK V4 (Guide to the Software Engineering Body of Knowledge) has the following 18 knowledge areas (KAs) within the field of software engineering:
 
@@ -41,7 +40,6 @@ Project management
 Quality management
 Systems engineering
 
-
 ## SWEBOK Version 3
 The published version of SWEBOK V3 has the following 15 knowledge areas (KAs) within the field of software engineering:
 
@@ -70,7 +68,6 @@ General management
 Computer science
 Mathematics
 
-
 ## 2004 edition of the SWEBOK
 The 2004 edition of the SWEBOK Guide, known as SWEBOK 2004, defined ten knowledge areas (KAs) within the field of software engineering:
 
@@ -95,7 +92,5 @@ Quality management
 Software ergonomics (cognitive ergonomics)
 Systems engineering
 
-
 ## Similar efforts
 A similar effort to define a body of knowledge for software engineering is the "Computing Curriculum Software Engineering (CCSE)," officially named Software Engineering 2004 (SE2004). The curriculum largely overlaps with SWEBOK 2004 since the latter has been used as one of its sources, although it is more directed towards academia. Whereas the SWEBOK Guide defines the software engineering knowledge that practitioners should have after four years of practice, SE2004 defines the knowledge that an undergraduate software engineering student should possess upon graduation (including knowledge of mathematics, general engineering principles, and other related areas). SWEBOK V3 aims to address these intersections.
-

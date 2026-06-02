@@ -6,58 +6,40 @@ In material science, resilience is the ability of a material to absorb energy wh
     
       
         
-          U
           
-            r
           
         
-        =
-        
-          
-            
-              σ
-              
-                y
-              
-              
-                2
-              
-            
-            
-              2
-              E
-            
-          
-        
-        =
         
           
             
               
-                σ
+              
+              
+              
+            
+            
+            
+          
+        
+        
+          
+            
+              
                 
-                  y
                 
               
               
-                ε
                 
-                  y
                 
               
             
-            2
           
         
       
     
     
 
-$$ U_{r}={\frac {\sigma _{y}^{2}}{2E}}={\frac {\sigma _{y}\varepsilon _{y}}{2}} $$
-
   
-
-where Ur is the modulus of resilience, σy is the yield strength, εy is the yield strain, and E is the Young's modulus. This analysis is not valid for non-linear elastic materials like rubber, for which the approach of area under the curve until elastic limit must be used.
 
 ## Unit of resilience
 

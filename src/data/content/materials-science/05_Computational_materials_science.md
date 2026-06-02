@@ -2,12 +2,6 @@
 
 Computational materials science and engineering uses modeling, simulation, theory, and informatics to understand materials. The main goals include discovering new materials, determining material behavior and mechanisms, explaining experiments, and exploring materials theories. It is analogous to computational chemistry and computational biology as an increasingly important subfield of materials science.
 
-## Introduction
-
-Just as materials science spans all length scales, from electrons to components, so do its computational sub-disciplines. While many methods and variations have been and continue to be developed, seven main simulation techniques, or motifs, have emerged.
-These computer simulation methods use underlying models and approximations to understand material behavior in more complex scenarios than pure theory generally allows and with more detail and precision than is often possible from experiments. Each method can be used independently to predict materials properties and mechanisms, to feed information to other simulation methods run separately or concurrently, or to directly compare or contrast with experimental results.
-One notable sub-field of computational materials science is integrated computational materials engineering (ICME), which seeks to use computational results and methods in conjunction with experiments, with a focus on industrial and commercial application. Major current themes in the field include uncertainty quantification and propagation throughout simulations for eventual decision making, data infrastructure for sharing simulation inputs and results, high-throughput materials design and discovery, and new approaches given significant increases in computing power and the continuing history of supercomputing.
-
 ## Materials simulation methods
 
 ### Electronic structure

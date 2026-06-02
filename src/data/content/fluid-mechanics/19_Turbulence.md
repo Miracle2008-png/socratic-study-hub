@@ -5,7 +5,6 @@ Turbulence is commonly observed in everyday phenomena such as surf, fast flowing
 The onset of turbulence can be predicted by the dimensionless Reynolds number, the ratio of kinetic energy to viscous damping in a fluid flow. However, turbulence has long resisted detailed physical analysis, and the interactions within turbulence create a very complex phenomenon. Physicist Richard Feynman described turbulence as the most important unsolved problem in classical physics.
 The turbulence intensity affects many fields, for examples fish ecology, air pollution, precipitation, and climate change.
 
-
 ## Examples of turbulence
 
 Smoke rising from a cigarette. For the first few centimeters, the smoke is laminar. The smoke plume becomes turbulent as its Reynolds number increases with increases in flow velocity and characteristic length scale.
@@ -26,7 +25,6 @@ In the medical field of cardiology, a stethoscope is used to detect heart sounds
 Recently, turbulence in porous media became a highly debated subject.
 Strategies used by animals for olfactory navigation, and their success, are heavily influenced by turbulence affecting the odor plume.
 Pyroclastic flow, one of the deadliest and most destructive volcanic eruption hazards consisting of hot, fast-moving gas and volcanic matter, experiences turbulence. Made up of chemically diverse components, pyroclastic flows have heterogeneous distributions in physical features such as temperature, density, and flow velocity. These differences promote turbulent mixing within the flows themselves as well as with the external environment as they move down volcanic slopes. Turbulent mixing eventually allows for greater homogeneity within pyroclastic flows.
-
 
 ## Features
 
@@ -165,7 +163,6 @@ The intermediate scales between the largest and the smallest scales which make t
 Although it is possible to find some particular solutions of the Navier–Stokes equations governing fluid motion, all such solutions are unstable to finite perturbations at large Reynolds numbers. Sensitive dependence on the initial and boundary conditions makes fluid flow irregular both in time and in space so that a statistical description is needed. The Russian mathematician Andrey Kolmogorov proposed the first statistical theory of turbulence, based on the aforementioned notion of the energy cascade (an idea originally introduced by Richardson) and the concept of self-similarity.  As a result, the Kolmogorov microscales were named after him. It is now known that the self-similarity is broken so the statistical description is presently modified.
 A complete description of turbulence is one of the unsolved problems in physics. According to an apocryphal story, Werner Heisenberg was asked what he would ask God, given the opportunity. His reply was: "When I meet God, I am going to ask him two questions: Why relativity? And why turbulence? I really believe he will have an answer for the first." A similar witticism has been attributed to Horace Lamb in a speech to the British Association for the Advancement of Science: "I am an old man now, and when I die and go to heaven there are two matters on which I hope for enlightenment. One is quantum electrodynamics, and the other is the turbulent motion of fluids. And about the former I am rather more optimistic."
 
-
 ## Onset of turbulence
 
 The onset of turbulence can be, to some extent, predicted by the Reynolds number, which is the ratio of inertial forces to viscous forces within a fluid which is subject to relative internal movement due to different fluid velocities, in what is known as a boundary layer in the case of a bounding surface such as the interior of a pipe. A similar effect is created by the introduction of a stream of higher velocity fluid, such as the hot gases from a flame in air. This relative movement generates fluid friction, which is a factor in developing turbulent flow. Counteracting this effect is the viscosity of the fluid, which as it increases, progressively inhibits turbulence, as more kinetic energy is absorbed by a more viscous fluid. The Reynolds number quantifies the relative importance of these two types of forces for given flow conditions, and is a guide to when turbulent flow will occur in a particular situation.
@@ -210,7 +207,6 @@ L is a characteristic linear dimension  (m)
 μ is the dynamic viscosity of the fluid (Pa·s or N·s/m2 or kg/(m·s)).
 While there is no theorem directly relating the non-dimensional Reynolds number to turbulence, flows at Reynolds numbers larger than 5000 are typically (but not necessarily) turbulent, while those at low Reynolds numbers usually remain laminar. In Poiseuille flow, for example, turbulence can first be sustained if the Reynolds number is larger than a critical value of about 2040; moreover, the turbulence is generally interspersed with laminar flow until a larger Reynolds number of about 4000.
 The transition occurs if the size of the object is gradually increased, or the viscosity of the fluid is decreased, or if the density of the fluid is increased.
-
 
 ## Heat and momentum transfer
 When flow is turbulent, particles exhibit additional transverse motion which enhances the rate of energy and momentum exchange between them, thus increasing the heat transfer and the friction coefficient.
@@ -460,7 +456,6 @@ The heat flux and momentum transfer (represented by the shear stress τ) in the 
   
 
 where cP is the heat capacity at constant pressure, ρ is the density of the fluid, μturb is the coefficient of turbulent viscosity and kturb is the turbulent thermal conductivity.
-
 
 ## Kolmogorov's theory of 1941
 Richardson's notion of turbulence was that a turbulent flow is composed by "eddies" of different sizes. The sizes define a characteristic length scale for the eddies, which are also characterized by flow velocity scales and time scales (turnover time) dependent on the length scale. The large eddies are unstable and eventually break up originating smaller eddies, and the kinetic energy of the initial large eddy is divided into the smaller eddies that stemmed from it. These smaller eddies undergo the same process, giving rise to even smaller eddies which inherit the energy of their predecessor eddy,  and so on. In this way, the energy is passed down from the large scales of the motion to smaller scales until reaching a sufficiently small length scale such that the viscosity of the fluid can effectively dissipate the kinetic energy into internal energy.
@@ -1022,4 +1017,3 @@ with 1 < p < 3, the second order structure function has also a power law, with t
   
 
 Since the experimental values obtained for the second order structure function only deviate slightly from the ⁠2/3⁠ value predicted by Kolmogorov theory, the value for p is very near to ⁠5/3⁠ (differences are about 2%). Thus the "Kolmogorov −⁠5/3⁠ spectrum" is generally observed in turbulence. However, for high order structure functions, the difference with the Kolmogorov scaling is significant, and the breakdown of the statistical self-similarity is clear. This behavior, and the lack of universality of the Cn constants, are related with the phenomenon of intermittency in turbulence and can be related to the non-trivial scaling behavior of the dissipation rate averaged over scale r. This is an important area of research in this field, and a major goal of the modern theory of turbulence is to understand what is universal in the inertial range, and how to deduce intermittency properties from the Navier-Stokes equations, i.e. from first principles.
-

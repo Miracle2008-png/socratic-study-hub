@@ -5,73 +5,46 @@ In physics, the first law of thermodynamics is an expression of the conservation
   
     
       
-        d
         
-          E
           
-            t
-          
-        
-        =
-        d
-        Q
-        +
-        d
-        W
-      
-    
-    
-
-$$ dE_{t}=dQ+dW $$
-
-  
-
-where
-
-  
-    
-      
-        
-          E
-          
-            t
           
         
       
     
     
 
-$$ E_{t} $$
-
   
- is the total energy of a system.
 
   
     
       
-        W
+        
+          
+          
+        
       
     
     
 
-$$ W $$
-
   
- is the work done on it.
 
   
     
       
-        Q
       
     
     
 
-$$ Q $$
+  
 
   
- is the heat added to that system.
-In fluid mechanics, the first law of thermodynamics takes the following form:
+    
+      
+      
+    
+    
+
+  
 
   
     
@@ -79,139 +52,88 @@ In fluid mechanics, the first law of thermodynamics takes the following form:
         
           
             
-              D
               
-                E
                 
-                  t
                 
               
             
             
-              D
-              t
             
           
         
-        =
         
           
             
-              D
-              W
             
             
-              D
-              t
             
           
         
-        +
         
           
             
-              D
-              Q
             
             
-              D
-              t
             
           
         
-        →
         
           
             
-              D
               
-                E
                 
-                  t
                 
               
             
             
-              D
-              t
             
           
         
-        =
-        ∇
-        ⋅
-        (
         
           
-            σ
           
-          ⋅
-          v
         
-        )
-        −
-        ∇
-        ⋅
         
           
-            q
           
         
       
     
     
 
-$$ {\frac {DE_{t}}{Dt}}={\frac {DW}{Dt}}+{\frac {DQ}{Dt}}\to {\frac {DE_{t}}{Dt}}=\nabla \cdot ({\mathbf {\sigma } \cdot v})-\nabla \cdot {\mathbf {q} } $$
-
   
-
-where
 
   
     
       
         
-          σ
         
       
     
     
 
-$$ \mathbf {\sigma } $$
-
   
- is the  Cauchy stress tensor.
 
   
     
       
         
-          v
         
       
     
     
 
-$$ \mathbf {v} $$
-
   
- is the flow velocity.
-and 
   
     
       
         
-          q
         
       
     
     
 
-$$ \mathbf {q} $$
-
   
- is the heat flux vector.
-Because it expresses conservation of total energy, this is sometimes referred to as the energy balance equation of continuous media. The first law is used to derive the non-conservation form of the Navier–Stokes equations.
 
 ## Note
 

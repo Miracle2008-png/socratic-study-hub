@@ -10,20 +10,6 @@ Electrical engineering can be described as all of the following:
 Academic discipline – branch of knowledge that is taught and researched at the college or university level. Disciplines are defined (in part), and recognized by the academic journals in which research is published, and the learned societies and academic departments or faculties to which their practitioners belong.
 Branch of engineering – discipline, skill, and profession of acquiring and applying scientific, economic, social, and practical knowledge, in order to design and build structures, machines, devices, systems, materials and processes.
 
-## Branches of electrical engineering
-
-Power engineering
-Control engineering
-Electronic engineering
-Microelectronics
-Signal processing
-Radio-frequency engineering and Radar
-Telecommunications engineering
-Instrumentation engineering
-Electro-Optical Engineering and Optoelectronics
-Electronics and Computer Engineering
-Computer engineering
-
 ## Related disciplines
 
 Biomedical engineering

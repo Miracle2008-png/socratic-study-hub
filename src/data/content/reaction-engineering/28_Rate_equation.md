@@ -6,305 +6,198 @@ In chemistry, the rate equation (also known as the rate law or empirical differe
     
       
         
-          v
           
-            0
           
         
         
-        =
-        
-        k
-        [
-        
-          A
         
         
-          ]
+        
+        
           
-            x
           
         
-        [
-        
-          B
         
         
-          ]
+        
           
-            y
           
         
       
     
     
 
-$$ v_{0}\;=\;k[\mathrm {A} ]^{x}[\mathrm {B} ]^{y} $$
-
   
 
-where ⁠
-  
-    
-      
-        [
-        
-          A
-        
-        ]
-      
-    
-    
-
-$$ [\mathrm {A} ] $$
-
-  
-⁠ and ⁠
-  
-    
-      
-        [
-        
-          B
-        
-        ]
-      
-    
-    
-
-$$ [\mathrm {B} ] $$
-
-  
-⁠ are the molar concentrations of the species ⁠
   
     
       
         
-          A
         
       
     
     
 
-$$ \mathrm {A} $$
-
   
-⁠ and ⁠
   
     
       
         
-          B
-        
-        ,
-      
-    
-    
-
-$$ \mathrm {B} , $$
-
-  
-⁠ usually in moles per liter (molarity, ⁠
-  
-    
-      
-        M
-      
-    
-    
-
-$$ M $$
-
-  
-⁠). The exponents ⁠
-  
-    
-      
-        x
-      
-    
-    
-
-$$ x $$
-
-  
-⁠ and ⁠
-  
-    
-      
-        y
-      
-    
-    
-
-$$ y $$
-
-  
-⁠ are the partial orders of reaction for ⁠
-  
-    
-      
-        
-          A
         
       
     
     
 
-$$ \mathrm {A} $$
-
   
-⁠ and ⁠
   
     
       
         
-          B
         
       
     
     
 
-$$ \mathrm {B} $$
-
   
-⁠, respectively, and the overall reaction order is the sum of the exponents. These are often positive integers, but they may also be zero, fractional, or negative. The order of reaction is a number which quantifies the degree to which the rate of a chemical reaction depends on concentrations of the reactants. In other words, the order of reaction is the exponent to which the concentration of a particular reactant is raised. The constant ⁠
   
     
       
-        k
+        
+        
       
     
     
 
-$$ k $$
-
   
-⁠ is the reaction rate constant or rate coefficient and at very few places velocity constant or specific rate of reaction. Its value may depend on conditions such as temperature, ionic strength, surface area of an adsorbent, or light irradiation. If the reaction goes to completion, the rate equation for the reaction rate 
   
     
       
-        v
+      
+    
+    
+
+  
+  
+    
+      
+      
+    
+    
+
+  
+  
+    
+      
+      
+    
+    
+
+  
+  
+    
+      
         
-        =
         
-        k
-        [
+      
+    
+    
+
+  
+  
+    
+      
         
-          A
+        
+      
+    
+    
+
+  
+  
+    
+      
+      
+    
+    
+
+  
+  
+    
+      
         
         
-          ]
+        
+        
+        
           
-            x
           
         
-        [
-        
-          B
         
         
-          ]
+        
           
-            y
           
         
       
     
     
 
-$$ v\;=\;k[{\ce {A}}]^{x}[{\ce {B}}]^{y} $$
-
   
- applies throughout the course of the reaction.
-Elementary (single-step) reactions and reaction steps have reaction orders equal to the stoichiometric coefficients for each reactant. The overall reaction order, i.e. the sum of stoichiometric coefficients of reactants, is always equal to the molecularity of the elementary reaction. However, complex (multi-step) reactions may or may not have reaction orders equal to their stoichiometric coefficients. This implies that the order and the rate equation of a given reaction cannot be reliably deduced from the stoichiometry and must be determined experimentally, since an unknown reaction mechanism could be either elementary or complex. When the experimental rate equation has been determined, it is often of use for deduction of the reaction mechanism.
-In highly dilute solutions, such as at concentrations below the micromolar level, molecular collisions are primarily governed by diffusion. Under these conditions, the apparent reaction order deviates from the stoichiometric expectation because reactant molecules require additional time to traverse longer distances before encountering one another. This behavior can be described by Fick's laws of diffusion and is consistent with fractal reaction kinetics, which yield fractional reaction orders.
-The rate equation of a reaction with an assumed multi-step mechanism can often be derived theoretically using quasi-steady state assumptions from the underlying elementary reactions, and compared with the experimental rate equation as a test of the assumed mechanism. The equation may involve a fractional order, and may depend on the concentration of an intermediate species.
-A reaction can also have an undefined reaction order with respect to a reactant if the rate is not simply proportional to some power of the concentration of that reactant; for example, one cannot talk about reaction order in the rate equation for a bimolecular reaction between adsorbed molecules:
 
   
     
       
         
-          v
           
-            0
           
         
-        =
-        k
         
           
             
               
-                K
                 
-                  1
                 
               
               
-                K
                 
-                  2
                 
               
               
-                C
                 
-                  A
                 
               
               
-                C
                 
-                  B
                 
               
             
             
-              (
-              1
-              +
               
-                K
                 
-                  1
                 
               
               
-                C
                 
-                  A
-                
-              
-              +
-              
-                K
-                
-                  2
                 
               
               
-                C
                 
-                  B
                 
               
               
-                )
                 
-                  2
+                
+              
+              
+                
                 
               
             
           
         
-        .
       
     
     
-
-$$ v_{0}=k{\frac {K_{1}K_{2}C_{A}C_{B}}{(1+K_{1}C_{A}+K_{2}C_{B})^{2}}}. $$
 
   
 

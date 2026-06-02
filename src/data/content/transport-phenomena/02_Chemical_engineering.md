@@ -20,11 +20,6 @@ Education for chemical engineers in the first college degree 3 or 4 years of stu
 
 Modeling and analysis of transport phenomena is essential for many industrial applications. Transport phenomena involve fluid dynamics, heat transfer and mass transfer, which are governed mainly by momentum transfer, energy transfer and transport of chemical species, respectively. Models often involve separate considerations for macroscopic, microscopic and molecular level phenomena. Modeling of transport phenomena, therefore, requires an understanding of applied mathematics.
 
-## Applications and practice
-
-Chemical engineers develop economic ways of using materials and energy. Chemical engineers use chemistry and engineering to turn raw materials into usable products, such as medicine, petrochemicals, and plastics on a large-scale, industrial setting. They are also involved in waste management and research. Both applied and research facets could make extensive use of computers.
-Chemical engineers may be involved in industry or university research where they are tasked with designing and performing experiments, by scaling up theoretical chemical reactions, to create better and safer methods for production, pollution control, and resource conservation. They may be involved in designing and constructing plants as a project engineer. Chemical engineers serving as project engineers use their knowledge in selecting optimal production methods and plant equipment to minimize costs and maximize safety and profitability. After plant construction, chemical engineering project managers may be involved in equipment upgrades, troubleshooting, and daily operations in either full-time or consulting roles.
-
 ## Occupational outlook
 
 According to the U.S. Bureau of Labor Statistics, the occupational outlook for chemical engineers between 2024 and 2034 was 3% growth.

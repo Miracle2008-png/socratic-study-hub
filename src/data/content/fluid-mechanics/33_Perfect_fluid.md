@@ -5,33 +5,22 @@ In physics, a perfect fluid or ideal fluid  is a fluid that can be completely ch
     
       
         
-          ρ
           
-            m
           
         
       
     
     
 
-$$ \rho _{m} $$
-
   
- and isotropic pressure ⁠
   
     
       
-        p
       
     
     
 
-$$ p $$
-
   
-⁠. Real fluids are viscous ("sticky") and contain (and conduct) heat. Perfect fluids are idealized models in which these possibilities are ignored. Specifically, perfect fluids have no shear stresses, viscosity, or heat conduction. 
-A quark–gluon plasma
-and graphene are examples of nearly perfect fluids that could be studied in a laboratory.
 
 ## Non-relativistic fluid mechanics
 

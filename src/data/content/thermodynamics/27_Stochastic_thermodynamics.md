@@ -2,26 +2,6 @@
 
 Stochastic thermodynamics is an emergent field of research in statistical mechanics that uses stochastic variables to better understand the non-equilibrium dynamics present in many microscopic systems such as colloidal particles, biopolymers (e.g. DNA, RNA, and proteins), enzymes, and molecular motors.
 
-## Overview
-
-When a microscopic machine (e.g. a MEM) performs useful work it generates heat and entropy as a byproduct of the process, however it is also predicted that this machine will operate in "reverse" or "backwards" over appreciable short periods. That is, heat energy from the surroundings will be converted into useful work. For larger engines, this would be described as a violation of the second law of thermodynamics, as entropy is consumed rather than generated. Loschmidt's paradox states that in a time reversible system, for every trajectory there exists a time-reversed anti-trajectory. As the entropy production of a trajectory and its equal anti-trajectory are of identical magnitude but opposite sign, then, so the argument goes, one cannot prove that entropy production is positive.
-For a long time, exact results in thermodynamics were only possible in linear systems capable of reaching equilibrium, leaving other questions like the Loschmidt paradox unsolved. During the last few decades fresh approaches have revealed general laws applicable to non-equilibrium system which are described by nonlinear equations, pushing the range of exact thermodynamic statements beyond the realm of traditional linear solutions. These exact results are particularly relevant for small systems where appreciable (typically non-Gaussian) fluctuations occur. Thanks to stochastic thermodynamics it is now possible to accurately predict distribution functions of thermodynamic quantities relating to exchanged heat, applied work or entropy production for these systems.
-
-### Fluctuation theorem
-
-The mathematical resolution to Loschmidt's paradox is called the (steady state) fluctuation theorem (FT), which is a generalisation of the second law of thermodynamics. The FT shows that as a system gets larger or the trajectory duration becomes longer, entropy-consuming trajectories become more unlikely, and the expected second law behaviour is recovered.
-The FT was first put forward by Evans et al. (1993) and much of the work done in developing and extending the theorem was accomplished by theoreticians and mathematicians interested in nonequilibrium statistical mechanics.
-The first observation and experimental proof of Evan's fluctuation theorem (FT) was performed by Wang et al. (2002)
-
-### Jarzynski equality
-
-Seifert writes:
-
-Jarzynski (1997a, 1997b) proved a remarkable relation which allows to express the free energy difference between two equilibrium systems by a nonlinear average over the work required to drive the system in a non-equilibrium process from one state to the other. By comparing probability distributions for the work spent in the original process with the time-reversed one, Crooks found a "refinement" of the Jarzynski relation (JR), now called the Crooks fluctuation theorem. Both, this relation and another refinement of the JR, the Hummer-Szabo relation became particularly useful for determining free energy differences and landscapes of biomolecules. These relations are the most prominent ones within a class of exact results (some of which found even earlier and then rediscovered) valid for non-equilibrium systems driven by time-dependent forces. A close analogy to the JR, which relates different equilibrium states, is the Hatano-Sasa relation that applies to transitions between two different non-equilibrium steady states.
-This is shown to be a special case of a more general relation.
-
-### Stochastic energetics
-
 ## Open research
 
 ### Quantum stochastic thermodynamics

@@ -2,7 +2,6 @@
 
 This article summarizes equations in the theory of fluid mechanics.
 
-
 ## Definitions
 
 Here 
@@ -25,9 +24,7 @@ Here
   
  is a unit vector in the direction of the flow/current/flux.
 
-
 ## Equations
-
 
 ## Sources
 P.M. Whelan, M.J. Hodgeson (1978). Essential Principles of Physics (2nd ed.). John Murray. ISBN 0-7195-3382-1.
@@ -39,4 +36,3 @@ P.A. Tipler, G. Mosca (2008). Physics for Scientists and Engineers: With Modern 
 L.N. Hand, J.D. Finch (2008). Analytical Mechanics. Cambridge University Press. ISBN 978-0-521-57572-0.
 T.B. Arkill, C.J. Millar (1974). Mechanics, Vibrations and Waves. John Murray. ISBN 0-7195-2882-8.
 H.J. Pain (1983). The Physics of Vibrations and Waves (3rd ed.). John Wiley & Sons. ISBN 0-471-90182-2.
-

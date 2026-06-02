@@ -2,7 +2,6 @@
 
 Hydrostatic pressure is the static pressure exerted at a point of interest by the weight of a fluid column above the point.
 
-
 ## Formulation
 In a fluid at rest, all frictional and inertial stresses vanish and the state of stress of the system is called hydrostatic. When this condition of V = 0 is applied to the Navier–Stokes equations for viscous fluids or Euler equations (fluid dynamics) for ideal inviscid fluid, the gradient of pressure becomes a function of body forces only. 
 The Navier-Stokes momentum equations are:
@@ -328,7 +327,6 @@ where:
   
  is the hydrostatic pressure field (Pa) along x and y at the zero reference point
 
-
 ### Simplification for liquids
 For water and other liquids, this integral can be simplified significantly for many practical applications, based on the following two assumptions. Since many liquids can be considered incompressible, a reasonable good estimation can be made from assuming a constant density throughout the liquid. The same assumption cannot be made within a gaseous environment. Also, since the height 
   
@@ -505,66 +503,6 @@ where
   
  is the total height of the liquid column above the test area to the surface, and p0 is the atmospheric pressure, i.e., the pressure calculated from the remaining integral over the air column from the liquid surface to infinity. This can easily be visualized using a pressure prism.
 
-
-## Applications
-Hydrostatic pressure has been used in the preservation of foods in a process called pascalization.
-
-
-### Medicine
-In medicine, hydrostatic pressure in blood vessels is the pressure of the blood against the wall. It is the opposing force to oncotic pressure. In capillaries, hydrostatic pressure (also known as capillary blood pressure) is higher than the opposing “colloid osmotic pressure” in blood—a “constant” pressure primarily produced by circulating albumin—at the arteriolar end of the capillary. This pressure forces plasma and nutrients out of the capillaries and into surrounding tissues. Fluid and the cellular wastes in the tissues enter the capillaries at the venule end, where the hydrostatic pressure is less than the osmotic pressure in the vessel.
-
-
-### Atmospheric pressure
-Statistical mechanics shows that, for a pure ideal gas of constant temperature T in the earth gravitational field, its pressure, p will vary with height, h, as
-
-  
-    
-      
-        p
-        (
-        h
-        )
-        =
-        p
-        (
-        0
-        )
-        
-          e
-          
-            −
-            
-              
-                
-                  M
-                  g
-                  h
-                
-                
-                  k
-                  T
-                
-              
-            
-          
-        
-      
-    
-    {\displaystyle p(h)=p(0)e^{-{\frac {Mgh}{kT}}}}
-  
-
-where
-
-g is the acceleration due to gravity
-T is the  absolute temperature
-k is Boltzmann constant
-M is the molecular mass of the gas
-p is the pressure
-h is the height
-This is known as the barometric formula, and may be derived from assuming the pressure is hydrostatic.
-If there are multiple types of molecules in the gas, the partial pressure of each type will be given by this equation. Under most conditions, the distribution of each species of gas is independent of the other species.
-
-
 ## Buoyancy
 
 Any body of arbitrary shape which is immersed, partly or fully, in a fluid will experience the action of a net force in the opposite direction of the local pressure gradient. If this pressure gradient arises from gravity, the net force is in the vertical direction opposite that of the gravitational force.  This vertical force is termed buoyancy or buoyant force and is equal in magnitude, but opposite in direction, to the weight of the displaced fluid.  Mathematically,
@@ -584,7 +522,6 @@ Any body of arbitrary shape which is immersed, partly or fully, in a fluid will 
 
 where ρ is the density of the fluid, g is the acceleration due to gravity, and V is the volume of fluid directly above the curved surface.  In the case of a ship, for instance, its weight is balanced by pressure forces from the surrounding water, allowing it to float.  If more cargo is loaded onto the ship, it would sink more into the water – displacing more water and thus receive a higher buoyant force to balance the increased weight.
 Discovery of the principle of buoyancy is attributed to Archimedes.
-
 
 ### Hydrostatic force on submerged surfaces
 The horizontal and vertical components of the hydrostatic force acting on a submerged surface are given by the following formula:
@@ -652,4 +589,3 @@ A is the area of the same vertical projection of the surface
 ρ is the density of the fluid
 g is the acceleration due to gravity
 V is the volume of fluid directly above the curved surface
-

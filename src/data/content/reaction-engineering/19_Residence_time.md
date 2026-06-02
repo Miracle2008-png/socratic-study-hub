@@ -3,7 +3,6 @@
 The residence time of a fluid parcel is the total time that the parcel has spent inside a control volume (e.g.: a chemical reactor, a lake, a human body). The residence time of a set of parcels is quantified in terms of the frequency distribution of the residence time in the set, which is known as residence time distribution (RTD), or in terms of its average, known as mean residence time.
 Residence time plays an important role in chemistry and especially in environmental science and pharmacology. Under the name lead time or waiting time it plays a central role respectively in supply chain management and queueing theory, where the material that flows is usually discrete instead of continuous.
 
-
 ## Distributions
 
 The time that a particle of fluid has been in a control volume (e.g. a reservoir) is known as its age. In general, each particle has a different age. The frequency of occurrence of the age 
@@ -315,9 +314,7 @@ Distributions other than
     {\displaystyle W(\tau ,t)=1-\int _{0}^{\tau }E(s,t)\,ds}
   
 
-
 ## Averages
-
 
 ### Mean age and mean residence time
 The mean age of all the particles inside the control volume at time t is the first moment of the age distribution:
@@ -467,7 +464,6 @@ The mean age and the mean transit time generally have different values, even in 
   
 : most of the particles entering the control volume pass through quickly, but most of the particles contained in the control volume pass through slowly. Examples include water in a lake with the inlet and outlet that are close together and water vapor rising from the ocean surface, which for the most part returns quickly to the ocean, while for the rest is retained in the atmosphere and returns much later in the form of rain.
 
-
 ### Turnover time
 If the flow is steady and conservative, the mean residence time equals the ratio between the amount of fluid contained in the control volume and the flow rate through it:
 
@@ -575,10 +571,8 @@ Although the equivalence between the residence time and the ratio
   
  does not hold if the flow is not stationary or it is not conservative, it does hold on average if the flow is steady and conservative on average, and not necessarily at any instant. Under such conditions, which are common in queueing theory and supply chain management, the relation is known as Little's Law.
 
-
 ## Simple flow models
 Design equations are equations relating the space time to the fractional conversion and other properties of the reactor. Different design equations have been derived for different types of the reactor and depending on the reactor the equation more or less resemble that describing the average residence time. Often design equations are used to minimize the reactor volume or volumetric flow rate required to operate a reactor.
-
 
 ### Plug flow reactor
 In an ideal plug flow reactor (PFR) the fluid particles leave in the same order they arrived, not mixing with those in front and behind. Therefore, the particles entering at time t will exit at time t + T, all spending a time T inside the reactor. The residence time distribution will be then a Dirac delta function delayed by T:
@@ -649,7 +643,6 @@ In PFRs, reactants enter the reactor at one end and react as they move down the 
     {\displaystyle \tau =C_{AO}\int {\frac {1}{(-r_{A})}}\,df_{A}}
   
 
-
 ### Batch reactor
 Batch reactors are reactors in which the reactants are put in the reactor at time 0 and react until the reaction is stopped. Consequently, the space time is the same as the average residence time in a batch reactor.
 
@@ -700,7 +693,6 @@ Batch reactors are reactors in which the reactants are put in the reactor at tim
     
     {\displaystyle \tau =N_{AO}\int {\frac {1}{(-r_{A})V_{R}}}\,df_{A}}
   
-
 
 ### Continuous stirred-tank reactor
 In an ideal continuous stirred-tank reactor (CSTR), the flow at the inlet is completely and instantly mixed into the bulk of the reactor. The reactor and the outlet fluid have identical, homogeneous compositions at all times. The residence time distribution is exponential:
@@ -789,7 +781,6 @@ Reactants continuously enter and leave a tank where they are mixed. Consequently
     {\displaystyle \tau ={\frac {C_{A{\text{ in}}}-C_{A{\text{ out}}}}{-r_{A}}}\ }
   
 
-
 ### Laminar flow reactor
 In a laminar flow reactor, the fluid flows through a long tube or parallel plate reactor and the flow is in layers parallel to the walls of the tube. The velocity of the flow is a parabolic function of radius. In the absence of molecular diffusion, the RTD is 
 
@@ -864,7 +855,6 @@ In a laminar flow reactor, the fluid flows through a long tube or parallel plate
 
 The variance is infinite. In a real reactor, diffusion will eventually mix the layers so that the tail of the RTD becomes exponential and the variance finite; but laminar flow reactors can have variance greater than 1, the maximum for CTSD reactors.
 
-
 ### Recycle reactors
 Recycle reactors are PFRs with a recycle loop. Consequently, they behave like a hybrid between PFRs and CSTRs.
 
@@ -932,7 +922,6 @@ In all of these equations :
   
  is the consumption rate of A, a reactant. This is equal to the rate expression A is involved in. The rate expression is often related to the fractional conversion both through the consumption of A and through any k changes through temperature changes that are dependent on conversion.
 
-
 ### Variable volume reactions
 In some reactions the reactants and the products have significantly different densities. Consequently, as the reaction proceeds the volume of the reaction changes. This variable volume adds terms to the design equations. Taking this volume change into consideration the volume of the reaction becomes:
 
@@ -977,7 +966,6 @@ In some reactions the reactants and the products have significantly different de
   
 
 Plugging this into the design equations results in the following equations:
-
 
 #### Batch
 
@@ -1045,7 +1033,6 @@ Plugging this into the design equations results in the following equations:
     {\displaystyle \tau =N_{AO}\int {\frac {1}{(-r_{A})V_{R}(1-\delta _{A}f_{A})}}\,df_{A}}
   
 
-
 #### Plug flow reactors
 
   
@@ -1105,7 +1092,6 @@ Plugging this into the design equations results in the following equations:
     
     {\displaystyle \tau =C_{AO}\int {\frac {1}{(-r_{A})(1-\delta _{A}f_{A})}}\,df_{A}}
   
-
 
 #### Continuous stirred-tank reactors
 
@@ -1173,11 +1159,9 @@ Plugging this into the design equations results in the following equations:
 
 Generally, when reactions take place in the liquid and solid phases the change in volume due to reaction is not significant enough that it needs to be taken into account. Reactions in the gas phase often have significant changes in volume and in these cases one should use these modified equations.
 
-
 ## Determining the RTD experimentally
 Residence time distributions are measured by introducing a non-reactive tracer into the system at the inlet. Its input concentration is changed according to a known function and the output concentration measured. The tracer should not modify the physical characteristics of the fluid (equal density, equal viscosity) or the hydrodynamic conditions and it should be easily detectable.
 In general, the change in tracer concentration will either be a pulse or a step. Other functions are possible, but they require more calculations to deconvolute the RTD curve.
-
 
 ### Pulse experiments
 This method required the introduction of a very small volume of concentrated tracer at the inlet of the reactor, such that it approaches the Dirac delta function. Although an infinitely short injection cannot be produced, it can be made much smaller than the mean residence time of the vessel. If a mass of tracer, 
@@ -1262,7 +1246,6 @@ time of
     
     {\displaystyle E(t)={\frac {C(t)}{\int _{0}^{\infty }C(t)\,dt}}}
   
-
 
 ### Step experiments
 The concentration of tracer in a step experiment at the reactor inlet changes abruptly from 0 to 
@@ -1396,327 +1379,3 @@ The step- and pulse-responses of a reactor are related by the following:
   
 
 A step experiment is often easier to perform than a pulse experiment, but it tends to smooth over some of the details that a pulse response could show. It is easy to numerically integrate an experimental pulse response to obtain a very high-quality estimate of the step response, but the reverse is not the case because any noise in the concentration measurement will be amplified by numeric differentiation.
-
-
-## Applications
-
-
-### Chemical reactors
-
-In chemical reactors, the goal is to make components react with a high yield. In a homogeneous, first-order reaction, the probability that an atom or molecule will react depends only on its residence time:
-
-  
-    
-      
-        
-          P
-          
-            
-              R
-            
-          
-        
-        =
-        exp
-        ⁡
-        
-          (
-          
-            −
-            k
-            t
-          
-          )
-        
-      
-    
-    {\displaystyle P_{\mathrm {R} }=\exp \left(-kt\right)}
-  
-
-for a rate constant 
-  
-    
-      
-        k
-      
-    
-    {\displaystyle k}
-  
-. Given a RTD, the average probability is equal to the ratio of the concentration 
-  
-    
-      
-        a
-      
-    
-    {\displaystyle a}
-  
- of the component before and after:
-
-  
-    
-      
-        
-          
-            
-              P
-              
-                
-                  R
-                
-              
-            
-            ¯
-          
-        
-        =
-        
-          a
-          
-            
-              o
-              u
-              t
-            
-          
-        
-        
-          /
-        
-        
-          a
-          
-            
-              i
-              n
-            
-          
-        
-        =
-        
-          ∫
-          
-            0
-          
-          
-            ∞
-          
-        
-        exp
-        ⁡
-        
-          (
-          
-            −
-            k
-            t
-          
-          )
-        
-        E
-        (
-        t
-        )
-        
-        d
-        t
-        .
-      
-    
-    {\displaystyle {\overline {P_{\mathrm {R} }}}=a_{\mathrm {out} }/a_{\mathrm {in} }=\int _{0}^{\infty }\exp \left(-kt\right)E(t)\,dt.}
-  
-
-If the reaction is more complicated, then the output is not uniquely determined by the RTD. It also depends on the degree of micromixing, the mixing between molecules that entered at different times. If there is no mixing, the system is said to be completely segregated, and the output can be given in the form
-
-  
-    
-      
-        
-          a
-          
-            
-              o
-              u
-              t
-            
-          
-        
-        =
-        
-          ∫
-          
-            0
-          
-          
-            ∞
-          
-        
-        
-          a
-          
-            
-              b
-              a
-              t
-              c
-              h
-            
-          
-        
-        (
-        t
-        )
-        E
-        (
-        t
-        )
-        
-        d
-        t
-        .
-      
-    
-    {\displaystyle a_{\mathrm {out} }=\int _{0}^{\infty }a_{\mathrm {batch} }(t)E(t)\,dt.}
-  
-
-For given RTD, there is an upper limit on the amount of mixing that can occur, called the maximum mixedness, and this determines the achievable yield. A continuous stirred-tank reactor can be anywhere in the spectrum between completely segregated and perfect mixing.
-The RTD of chemical reactors can be obtained by CFD simulations. The very same procedure that is performed in experiments can be followed. A pulse of inert tracer particles (during a very short time) is injected into the reactor. The linear motion of tracer particles is governed by Newton's second law of motion and a one-way coupling is stablished between fluid and tracers. In one-way coupling, fluid affects tracer motion by drag force while tracer does not affect fluid. The size and density of tracers are chosen so small that the time constant of tracers becomes very small. In this way, tracer particles exactly follow the same path as the fluid does.
-
-
-### Groundwater flow
-Hydraulic residence time (HRT) is an important factor in the transport of environmental toxins or other chemicals through groundwater. The amount of time that a pollutant spends traveling through a delineated subsurface space is related to the saturation and the hydraulic conductivity of the soil or rock. Porosity is another significant contributing factor to the mobility of water through the ground (e.g. toward the water table). The intersection between pore density and size determines the degree or magnitude of the flow rate through the media. This idea can be illustrated by a comparison of the ways water moves through clay versus gravel. The retention time through a specified vertical distance in clay will be longer than through the same distance in gravel, even though they are both characterized as high porosity materials. This is because the pore sizes are much larger in gravel media than in clay, and so there is less hydrostatic tension working against the subsurface pressure gradient and gravity.
-Groundwater flow is important parameter for consideration in the design of waste rock basins for mining operations. Waste rock is heterogeneous material with particles varying from boulders to clay-sized particles, and it contains sulfidic pollutants which must be controlled such that they do not compromise the quality of the water table and also so the runoff does not create environmental problems in the surrounding areas. Aquitards are clay zones that can have such a degree of impermeability that they partially or completely retard water flow. These clay lenses can slow or stop seepage into the water table, although if an aquitard is fractured and contaminated then it can become a long-term source of groundwater contamination due to its low permeability and high HRT.
-
-
-### Water treatment
-
-Primary treatment for wastewater or drinking water includes settling in a sedimentation chamber to remove as much of the solid matter as possible before applying additional treatments. The amount removed is controlled by the hydraulic residence time (HRT). When water flows through a volume at a slower rate, less energy is available to keep solid particles entrained in the stream and there is more time for them to settle to the bottom. Typical HRTs for sedimentation basins are around two hours, although some groups recommend longer times to remove micropollutants such as pharmaceuticals and hormones.
-Disinfection is the last step in the tertiary treatment of wastewater or drinking water. The types of pathogens that occur in untreated water include those that are easily killed like bacteria and viruses, and those that are more robust such as protozoa and cysts. The disinfection chamber must have a long enough HRT to kill or deactivate all of them.
-
-
-### Surface science
-
-Atoms and molecules of gas or liquid can be trapped on a solid surface in a process called adsorption. This is an exothermic process involving a release of heat, and heating the surface increases the probability that an atom will escape within a given time. At a given temperature 
-  
-    
-      
-        T
-      
-    
-    {\displaystyle T}
-  
-, the residence time of an adsorbed atom is given by  
-
-  
-    
-      
-        τ
-        =
-        
-          τ
-          
-            0
-          
-        
-        exp
-        ⁡
-        
-          (
-          
-            
-              
-                E
-                
-                  
-                    a
-                  
-                
-              
-              
-                R
-                T
-              
-            
-          
-          )
-        
-        ,
-      
-    
-    {\displaystyle \tau =\tau _{0}\exp \left({\frac {E_{\mathrm {a} }}{RT}}\right),}
-  
-
-where 
-  
-    
-      
-        R
-      
-    
-    {\displaystyle R}
-  
- is the gas constant, 
-  
-    
-      
-        
-          E
-          
-            
-              a
-            
-          
-        
-      
-    
-    {\displaystyle E_{\mathrm {a} }}
-  
- is an activation energy, and 
-  
-    
-      
-        
-          τ
-          
-            0
-          
-        
-      
-    
-    {\displaystyle \tau _{0}}
-  
- is a prefactor that is correlated with the vibration times of the surface atoms (generally of the order of 
-  
-    
-      
-        
-          10
-          
-            −
-            12
-          
-        
-      
-    
-    {\displaystyle 10^{-12}}
-  
- seconds).
-In vacuum technology, the residence time of gases on the surfaces of a vacuum chamber can determine the pressure due to outgassing. If the chamber can be heated, the above equation shows that the gases can be "baked out"; but if not, then surfaces with a low residence time are needed to achieve ultra-high vacuums.
-
-
-### Environmental
-
-In environmental terms, the residence time definition is adapted to fit with ground water, the atmosphere, glaciers, lakes, streams, and oceans. More specifically it is the time during which water remains within an aquifer, lake, river, or other water body before continuing around the hydrological cycle. The time involved may vary from days for shallow gravel aquifers to millions of years for deep aquifers with very low values for hydraulic conductivity. Residence times of water in rivers are a few days, while in large lakes residence time ranges up to several decades. Residence times of continental ice sheets is hundreds of thousands of years, of small glaciers a few decades.
-Ground water residence time applications are useful for determining the amount of time it will take for a pollutant to reach and contaminate a ground water drinking water source and at what concentration it will arrive. This can also work to the opposite effect to determine how long until a ground water source becomes uncontaminated via inflow, outflow, and volume. The residence time of lakes and streams is important as well to determine the concentration of pollutants in a lake and how this may affect the local population and marine life.
-Hydrology, the study of water, discusses the water budget in terms of residence time. The amount of time that water spends in each different stage of life (glacier, atmosphere, ocean, lake, stream, river), is used to show the relation of all of the water on the earth and how it relates in its different forms.
-
-
-### Pharmacology
-A large class of drugs are enzyme inhibitors that bind to enzymes in the body and inhibit their activity. In this case it is the drug-target residence time (the length of time the drug stays bound to the target) that is of interest. The residence time is defined as the reciprocal value of the koff rate constant (residence time = 1/koff). Drugs with long residence times are desirable because they remain effective for longer and therefore can be used in lower doses. This residence time is determined by the kinetics of the interaction, such as how complementary the shape and charges of the target and drug are and whether outside solvent molecules are kept out of the binding site (thereby preventing them from breaking any bonds formed), and is proportional to the half-life of the chemical dissociation. One way to measure the residence time is in a preincubation-dilution experiment where a target enzyme is incubated with the inhibitor, allowed to approach equilibrium, then rapidly diluted. The amount of product is measured and compared to a control in which no inhibitor is added.
-Residence time can also refer to the amount of time that a drug spends in the part of the body where it needs to be absorbed. The longer the residence time, the more of it can be absorbed. If the drug is delivered in an oral form and destined for the upper intestines, it usually moves with food and its residence time is roughly that of the food. This generally allows 3 to 8 hours for absorption. If the drug is delivered through a mucous membrane in the mouth, the residence time is short because saliva washes it away. Strategies to increase this residence time include bioadhesive polymers, gums, lozenges and dry powders.
-
-
-### Biochemical
-In size-exclusion chromatography, the residence time of a molecule is related to its volume, which is roughly proportional to its molecular weight. Residence times also affect the performance of continuous fermentors.
-Biofuel cells utilize the metabolic processes of anodophiles (electronegative bacteria) to convert chemical energy from organic matter into electricity. A biofuel cell mechanism consists of an anode and a cathode that are separated by an internal proton exchange membrane (PEM) and connected in an external circuit with an external load. Anodophiles grow on the anode and consume biodegradable organic molecules to produce electrons, protons, and carbon dioxide gas, and as the electrons travel through the circuit they feed the external load. The HRT for this application is the rate at which the feed molecules are passed through the anodic chamber. This can be quantified by dividing the volume of the anodic chamber by the rate at which the feed solution is passed into the chamber. The hydraulic residence time (HRT) affects the substrate loading rate of the microorganisms that the anodophiles consume, which affects the electrical output. Longer HRTs reduce substrate loading in the anodic chamber which can lead to reduced anodophile population and performance when there is a deficiency of nutrients. Shorter HRTs support the development of non-exoelectrogenous bacteria which can reduce the Coulombic efficiency electrochemical performance of the fuel cell if the anodophiles must compete for resources or if they do not have ample time to effectively degrade nutrients.
-

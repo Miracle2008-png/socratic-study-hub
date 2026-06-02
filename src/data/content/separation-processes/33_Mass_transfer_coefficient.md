@@ -6,34 +6,24 @@ In engineering, the mass transfer coefficient is a diffusion rate constant that 
     
       
         
-          k
           
-            c
           
         
-        =
         
           
             
               
                 
                   
-                    n
-                    ˙
                   
                 
               
               
-                A
               
             
             
-              A
-              Δ
               
-                c
                 
-                  A
                 
               
             
@@ -43,29 +33,20 @@ In engineering, the mass transfer coefficient is a diffusion rate constant that 
     
     
 
-$$ k_{c}={\frac {{\dot {n}}_{A}}{A\Delta c_{A}}} $$
-
   
-
-Where:
 
   
     
       
         
-          k
           
-            c
           
         
       
     
     
 
-$$ k_{c} $$
-
   
- is the mass transfer coefficient [mol/(s·m2)/(mol/m3)], or m/s
 
   
     
@@ -74,57 +55,39 @@ $$ k_{c} $$
           
             
               
-                n
-                ˙
               
             
           
           
-            A
           
         
       
     
     
 
-$$ {\dot {n}}_{A} $$
-
   
- is the mass transfer rate [mol/s]
 
   
     
       
-        A
       
     
     
 
-$$ A $$
-
   
- is the effective mass transfer area [m2]
 
   
     
       
-        Δ
         
-          c
           
-            A
           
         
       
     
     
 
-$$ \Delta c_{A} $$
-
   
- is the driving force concentration difference [mol/m3].
-This can be used to quantify the mass transfer between phases, immiscible and partially miscible fluid mixtures (or between a fluid and a porous solid). Quantifying mass transfer allows for design and manufacture of separation process equipment that can meet specified requirements, estimate what will happen in real life situations (chemical spill), etc.
-Mass transfer coefficients can be estimated from many different theoretical equations, correlations, and analogies that are functions of material properties, intensive properties and flow regime (laminar or turbulent flow).  Selection of the most applicable model is dependent on the materials and the system, or environment, being studied.
 
 ## Mass transfer coefficient units
 

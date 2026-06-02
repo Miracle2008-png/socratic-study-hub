@@ -34,10 +34,6 @@ There is a differential speed between the decanter bowl and the scroll, which is
 Pond depth / weir discs
 The clarified liquid flows to the cylindrical end of the bowl in the decanter centrifuge, from where it runs out through openings in the bowl cover. These openings contain precisely adjustable weir discs/weir plates by means of which the pond depth in the bowl can be set. The weir discs determine the filling volume of the bowl.
 
-## Range of applications
-
-The main application of decanter centrifuges is to separate large amounts of solids from liquids on a continuous basis. They are also used to wash and dry various solids in industry, such as polystyrene beads, clarify liquids and concentrate solids.
-
 ## Advantages and limitations over competitive processes
 
 Generally the decanter centrifuge has more advantages than disadvantages; however, there are some limitations when compared to other processes.

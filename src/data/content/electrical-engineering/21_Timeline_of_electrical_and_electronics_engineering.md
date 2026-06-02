@@ -2,9 +2,7 @@
 
 The following timeline tables list the discoveries and inventions in the history of electrical and electronics engineering.
 
-
 ## Innovations in consumer electronics
-
 
 ### 1843–1923: From electromechanics to electronics
 
@@ -67,7 +65,6 @@ The Hungarian engineer Dénes Mihály patented an image scanning with line defle
 August Karolus (1893–1972) invents the Kerr cell, an almost inertia-free conversion of electrical pulses into light signals. He was granted a patent for his method of transmitting slides.
 Vladimir Kosma developed the first television camera tube, the Ikonoskop, using the Braun tube.
 The German State Secretary Karl August Bredow founds the first German broadcasting organization. By lifting the ban on broadcast reception and the opening of the first private radio station, the development of radio as a mass medium begins.
-
 
 ### 1924–1959: From cathode ray tube to stereo audio and TV
 1924: the first radio receivers are exhibited at the Berlin Radio Show
@@ -191,4 +188,3 @@ The company Ampex introduces the "VR 1000" the first video recorder. That same y
 1958
 By merging the Edison patents and the Berliner, the Blumlein stereo recording method becomes commercially viable. The company Mercury Records launches the first stereo record on the market.
 The company Ampex expands the video recorder with the Model "VR 1000 B" to give it color capability.
-

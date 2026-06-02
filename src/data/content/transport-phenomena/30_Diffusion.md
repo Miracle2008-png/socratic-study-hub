@@ -10,67 +10,44 @@ When talking about the extent of diffusion, two length scales are used in two di
   
     
       
-        D
       
     
     
 
-$$ D $$
-
   
- is the diffusion coefficient, having dimensions area / time):
 
-Brownian motion of an impulsive point source (for example, one single spray of perfume)—the square root of the mean squared displacement from this point. In Fickian diffusion, this is 
   
     
       
         
           
-            2
-            n
-            D
-            t
           
         
       
     
     
 
-$$ {\sqrt {2nDt}} $$
-
   
-, where 
   
     
       
-        n
       
     
     
 
-$$ n $$
-
   
- is the dimension of this Brownian motion;
-Constant concentration source in one dimension—the diffusion length. In Fickian diffusion, this is 
   
     
       
-        2
         
           
-            D
-            t
           
         
       
     
     
 
-$$ 2{\sqrt {Dt}} $$
-
   
-.
 
 ## Diffusion vs. bulk flow
 

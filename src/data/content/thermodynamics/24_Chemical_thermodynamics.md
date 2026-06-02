@@ -3,26 +3,6 @@
 Chemical thermodynamics is the study of the interrelation of heat and work with chemical reactions or with physical changes of state within the confines of the laws of thermodynamics. Chemical thermodynamics involves not only laboratory measurements of various thermodynamic properties, but also the application of mathematical methods to the study of chemical questions and the spontaneity of processes.
 The structure of chemical thermodynamics is based on the first two laws of thermodynamics.  Starting from the first and second laws of thermodynamics, four equations called the "fundamental equations of Gibbs" can be derived.  From these four, a multitude of equations, relating the thermodynamic properties of the thermodynamic system can be derived using relatively simple mathematics.  This outlines the mathematical framework of chemical thermodynamics.
 
-## Overview
-
-The primary objective of chemical thermodynamics is the establishment of a criterion for determination of the feasibility or spontaneity of a given transformation. In this manner, chemical thermodynamics is typically used to predict the energy exchanges that occur in the following processes:
-
-Chemical reactions
-Phase changes
-The formation of solutions
-The following state functions are of primary concern in chemical thermodynamics:
-
-Internal energy (U)
-Enthalpy (H)
-Entropy (S)
-Gibbs free energy (G)
-Most identities in chemical thermodynamics arise from application of the first and second laws of thermodynamics, particularly the law of conservation of energy, to these state functions.
-The three laws of thermodynamics (global, unspecific forms):
-
-The energy of the universe is constant.
-In any spontaneous process, there is always an increase in entropy of the universe.
-The entropy of a perfect crystal (well ordered) at 0 Kelvin is zero.
-
 ## Chemical energy
 
 Chemical energy is the energy that can be released when chemical substances undergo a transformation through a chemical reaction. Breaking and making chemical bonds involves energy release or uptake, often as heat that may be either absorbed by or evolved from the chemical system.

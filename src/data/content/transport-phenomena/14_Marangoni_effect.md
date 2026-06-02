@@ -2,7 +2,6 @@
 
 The Marangoni effect (also called the Gibbs–Marangoni effect) is the mass transfer along an interface between two phases due to a gradient of the surface tension. In the case of temperature dependence, this phenomenon may be called thermo-capillary convection or Bénard–Marangoni convection.
 
-
 ## Mechanism
 Since a liquid with a high surface tension pulls more strongly on the surrounding liquid than one with a low surface tension, the presence of a gradient in surface tension will naturally cause the liquid to flow away from regions of low surface tension. The surface tension gradient can be caused by concentration gradient or by a temperature gradient (surface tension is an inversely proportional function of temperature).
 In simple cases, the speed of the flow 
@@ -474,17 +473,14 @@ where we approximated the gradient
 . Taking the 2/3 power of both sides gives the expression above.
 The Marangoni number, a dimensionless value, can be used to characterize the relative effects of surface tension and viscous forces.
 
-
 ## Tears of wine
 
 As an example, wine may exhibit a visible effect called "tears of wine". The effect is a consequence of the fact that alcohol has a lower surface tension and higher volatility than water. The water/alcohol solution rises up the surface of the glass lowering the surface energy of the glass. Alcohol evaporates from the film leaving behind liquid with a higher surface tension (more water, less alcohol). This region with a lower concentration of alcohol (greater surface tension) pulls on the surrounding fluid more strongly than the regions with a higher alcohol concentration (lower in the glass). The result is the liquid is pulled up until its own weight exceeds the force of the effect, and the liquid drips back down the vessel's walls. This can also be easily demonstrated by spreading a thin film of water on a smooth surface and then allowing a drop of alcohol to fall on the center of the film. The liquid will rush out of the region where the drop of alcohol fell.
-
 
 ## Significance to transport phenomena
 
 Under earth conditions, the effect of gravity causing natural convection in a system with a temperature gradient along a fluid/fluid interface is usually much stronger than the Marangoni effect. Many experiments (ESA MASER 1-3) have been conducted under microgravity conditions aboard sounding rockets to observe the Marangoni effect without the influence of gravity. Research on heat pipes performed on the International Space Station revealed that whilst heat pipes exposed to a temperature gradient on Earth cause the inner fluid to evaporate at one end and migrate along the pipe, thus drying the hot end, in space (where the effects of gravity can be ignored) the opposite happens and the hot end of the pipe is flooded with liquid. This is due to the Marangoni effect, together with capillary action. The fluid is drawn to the hot end of the tube by capillary action. But the bulk of the liquid still ends up as a droplet a short distance away from the hottest part of the tube, explained by Marangoni flow. The temperature gradients in axial and radial directions makes the fluid flow away from the hot end and the walls of the tube, towards the center axis. The liquid forms a droplet with a small contact area with the tube walls, a thin film circulating liquid between the cooler droplet and the liquid at the hot end.
 The effect of the Marangoni effect on heat transfer in the presence of gas bubbles on the heating surface (e.g., in subcooled nucleate boiling) has long been ignored, but it is currently a topic of ongoing research interest because of its potential fundamental importance to the understanding of heat transfer in boiling.
-
 
 ## Examples and application
 
@@ -493,4 +489,3 @@ One important application of the Marangoni effect is the use for drying silicon 
 A similar phenomenon has been creatively utilized to self-assemble nanoparticles into ordered arrays and to grow ordered nanotubes. An alcohol containing nanoparticles is spread on the substrate, followed by blowing humid air over the substrate. The alcohol is evaporated under the flow. Simultaneously, water condenses and forms microdroplets on the substrate. Meanwhile, the nanoparticles in alcohol are transferred into the microdroplets and finally form numerous coffee rings on the substrate after drying.
 Another application is the manipulation of particles taking advantage of the relevance of the surface tension effects at small scales. A controlled thermo-capillary convection is created by locally heating the air–water interface using an infrared laser. Then, this flow is used to control floating objects in both position and orientation and can prompt the self-assembly of floating objects, profiting from the Cheerios effect.
 The Marangoni effect is also important to the fields of welding, crystal growth and electron beam melting of metals.
-

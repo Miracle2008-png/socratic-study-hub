@@ -19,18 +19,6 @@ A subdiscipline of fluid mechanics – branch of physics concerned with the mech
 A subdiscipline of fluid mechanics – branch of physics concerned with the mechanics of fluids (liquids, gases, and plasmas) and the forces on them.
 A branch of dynamics (mechanics) – subject that studies forces and motion.
 
-## Branches of fluid dynamics
-
-Acoustic theory – Theory of sound waves
-Aerodynamics – Branch of dynamics concerned with studying the motion of air
-Aeroelasticity – Interactions among inertial, elastic, and aerodynamic forces
-Computational fluid dynamics – Analysis and solving of problems that involve fluid flows
-Flow measurement – Quantification of bulk fluid movement
-Electrohydrodynamics – Study of electrically conducting fluids in the presence of electric fields
-Magnetohydrodynamics – Model of electrically conducting fluids
-Topological fluid dynamics
-Quantum hydrodynamics – Topic in condensed matter physics
-
 ## Mathematical equations and concepts
 
 Airy wave theory – Fluid dynamics theory on gravity waves
@@ -181,27 +169,6 @@ Seeding (fluid dynamics)
 
 Peniche (fluid dynamics)
 Rotating tank – Fluid dynamics
-
-## Applications of fluid dynamics
-
-Acoustics – Branch of physics involving mechanical waves
-Aeronautics – Science of air flight-capable machines
-Astrophysical fluid dynamics – Branch of modern astronomy
-Cryosphere science – Earth's surface where water is frozenPages displaying short descriptions of redirect targets
-Geophysical fluid dynamics – Dynamics of naturally occurring flows
-Hemodynamics – Dynamics of blood flowPages displaying short descriptions of redirect targets
-Hydraulics – Applied engineering involving liquids
-Hydrology – Science of the movement, distribution, and quality of water on Earth
-Fluidics – Use of a fluid to perform analog or digital operations
-Fluid power – Use of fluids under pressure to generate, control, and transmit power
-Geodynamics – Study of dynamics of the Earth
-Hydraulic machinery – Type of machine that uses liquid fluid power to perform work
-Meteorology – Interdisciplinary scientific study of the atmosphere focusing on weather forecasting
-Naval architecture – Engineering discipline of marine vessels
-Oceanography – Scientific study of the ocean
-Plasma physics – State of matterPages displaying short descriptions of redirect targets
-Pneumatics – Use of pressurised gas in mechanical systems
-Ice-sheet dynamics – Large mass of glacial icePages displaying short descriptions of redirect targets
 
 ## Fluid dynamics organizations
 

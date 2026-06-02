@@ -3,7 +3,6 @@
 The University of Split (Croatian: Sveučilište u Splitu, Latin: Universitas Studiorum Spalatensis) is a university located in Split, Croatia. It was founded in 1974. and is organized in 13 faculties and 124 faculty programmes. As of 2009, a total of approximately 40,000 students have graduated, and a total of 337 doctoral degrees have been awarded.
 University of Split is a member of EUA - European University Association.
 
-
 ## Organization
 
 These are the faculties into which the university is divided:
@@ -22,7 +21,6 @@ Academy of Fine Arts (Umjetnička akademija)
 University Department of Professional Studies (Sveučilišni odjel za stručne studije)
 The Pharmacy course is run jointly by the Faculty of Medicine and the Faculty of Chemical Engineering.
 
-
 ### Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture, University of Split
 The Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture (Croatian: Fakultet elektrotehnike, strojarstva i brodogradnje, abbr: FESB) is a faculty of the University of Split. The fundamental activities of the Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture in Split (FESB) are higher education teaching, research, developmental and professional work in the fields of Technical Sciences – in the scientific areas of Electrical Engineering, Mechanical Engineering, Naval Architecture, Computing and Fundamental Technical Sciences, and in the field of Natural Sciences, particularly in the subject areas of Mathematics and Physics. FESB is one of the largest constituents of the University of Split and largest technical faculty outside of Zagreb, capital of Republic of Croatia.
 The faculty was established in 1960 as a fully autonomous and independent organization within the University of Zagreb. In 1971 the faculty was renamed as the Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture in Split (FESB). Since 1974 the faculty has been a constituent part of the University of Split. The faculty, as one of the founders of the university, significantly contributed to its establishment. The four-year Mechanical Engineering programme of study with its own curriculum was finally completed in 1976.
@@ -37,19 +35,14 @@ Department of Mechanical Engineering Technology,
 Department of General Courses.
 Researchers from FESB collaborated or were leaders of various either international or bilateral projects such as the Croatian-Slovenian, Croatian-French, FP6 Marie Curie, FP7 as well as: COST, ALIS STATES, CEEPUS, COGITO; CMS and ALICE at CERN, Code development for integrated modelling within EuroFusion Consortium, EGEE II, MAGIC and several TEMPUS projects.
 
-
 ## Medical Studies in English
 A Medicine program in English language started in the school year 2011/12. Upon completion of the 6-year program the students are awarded the degree of M.D. (Physician). Each year 60 students from Croatia and abroad are being enrolled. Half of the students are enrolled by RegioMed Kliniken  in Germany and completes the initial 3 years with USSM before transferring. The curriculum is governed by the Bologna Process and is generally approved within the EU/EEA. In addition students have the possibility to write the U.S. (USMLE) and Canadian (LMCC) medical licensing exams.
-
 
 ## International rankings
 
 The university ranked 751–800 by QS, ranking 532 by USN, and 762 by CWUR, and 601–800 by THE.
 
-
 ## Gallery
-
 
 ## Events
 University is the host of the Erasmus Generation Meeting students' conference organized by Erasmus Students Network Split.
-

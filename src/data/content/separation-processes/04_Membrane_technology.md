@@ -3,20 +3,6 @@
 Membrane technology encompasses the scientific processes used in the construction and application of membranes. Membranes are used to facilitate the transport or rejection of substances between mediums, and the mechanical separation of gas and liquid streams. In the simplest case, filtration is achieved when the pores of the membrane are smaller than the diameter of the undesired substance, such as a harmful microorganism. Membrane technology is commonly used in industries such as water treatment, chemical and metal processing, pharmaceuticals, biotechnology, the food industry, as well as the removal of environmental pollutants.
 After membrane construction, there is a need to characterize the prepared membrane to know more about its parameters, like pore size, function group, material properties, etc., which are difficult to determine in advance. In this process, instruments such as the Scanning Electron Microscope, the Transmission electron Microscope, the Fourier Transform Infrared Spectroscopy, X-ray Diffraction, and Liquid–Liquid Displacement Porosimetry are utilized.
 
-
-## Introduction
-Membrane technology covers all engineering approaches for the transport of substances between two fractions with the help of semi-permeable membranes. In general, mechanical separation processes for separating gaseous or liquid streams use membrane technology. In recent years, different methods have been used to remove environmental pollutants, like adsorption, oxidation, and membrane separation. Different pollution occurs in the environment like air pollution, waste water pollution etc. As per industry requirement to prevent industrial pollution because more than 70% of environmental pollution occurs due to industries. It is their responsibility to follow government rules of the Air Pollution Control & Prevention Act 1981 to maintain and prevent the harmful chemical release into the environment. Make sure to do prevention & safety processes after that industries are able to release their waste in the environment.
-Biomass-based Membrane technology is one of the most promising technologies for use as a pollutants removal weapon because it has low cost, more efficiency, & lack of secondary pollutants.
-Typically polysulfone, polyvinylidene fluoride, and polypropylene are used in the membrane preparation process. These membrane materials are non-renewable and non-biodegradable which create harmful environmental pollution. Researchers are trying to find a solution to synthesize an eco-friendly membrane which avoids environmental pollution. Synthesis of biodegradable material with the help of naturally available material such as biomass-based membrane synthesis can be used to remove pollutants.
-
-
-### Membrane Overview
-
-Membrane separation processes operate without heating and therefore use less energy than conventional thermal separation processes such as distillation, sublimation, or crystallization. The separation process is purely physical and both fractions (permeate and retentate) can be obtained as useful products. Cold separation using membrane technology is widely used in the food technology, biotechnology and pharmaceutical industries. Furthermore, using membranes enables separations to take place that would be impossible using thermal separation methods. For example, it is impossible to separate the constituents of azeotropic liquids or solutes which form isomorphic crystals by distillation or recrystallization, but such separations can be achieved using membrane technology. Depending on the type of membrane, selective separation of certain individual substances or substance mixtures is possible. Important technical applications include the production of drinking water by reverse osmosis. In waste water treatment, membrane technology is becoming increasingly important. Ultra/microfiltration can be very effective in removing colloids and macromolecules from wastewater. This is needed if wastewater is discharged into sensitive waters especially those designated for contact water sports and recreation.
-About half of the market is in medical applications such as artificial kidneys to remove toxic substances by hemodialysis and as artificial lung for bubble-free supply of oxygen in the blood.
-The importance of membrane technology is growing in the field of environmental protection (Nano-Mem-Pro IPPC Database). Even in modern energy recovery techniques, membranes are increasingly used, for example in fuel cells and in osmotic power plants.
-
-
 ## Mass transfer
 Two basic models can be distinguished for mass transfer through the membrane:
 
@@ -24,14 +10,11 @@ the solution-diffusion model and
 the hydrodynamic model.
 In real membranes, these two transport mechanisms certainly occur side by side, especially during ultra-filtration.
 
-
 ### Solution-diffusion model
 In the solution-diffusion model, transport occurs only by diffusion. The component that needs to be transported must first be dissolved in the membrane. The general approach of the solution-diffusion model is to assume that the chemical potential of the feed and permeate fluids are in equilibrium with the adjacent membrane surfaces such that appropriate expressions for the chemical potential in the fluid and membrane phases can be equated at the solution-membrane interface. This principle is more important for dense membranes without natural pores such as those used for reverse osmosis and in fuel cells. During the filtration process a boundary layer forms on the membrane. This concentration gradient is created by molecules which cannot pass through the membrane. The effect is referred to as concentration polarization and, occurring during the filtration, leads to a reduced trans-membrane flow (flux). Concentration polarization is, in principle, reversible by cleaning the membrane which results in the initial flux being almost totally restored. Using a tangential flow to the membrane (cross-flow filtration) can also minimize concentration polarization.
 
-
 ### Hydrodynamic model
 Transport through pores – in the simplest case – is done convectively. This requires the size of the pores to be smaller than the diameter of the two separate components. Membranes that function according to this principle are used mainly in micro- and ultrafiltration. They are used to separate macromolecules from solutions, colloids from a dispersion, or remove bacteria. During this process, the retained particles or molecules form a pulpy mass (filter cake) on the membrane, and this blockage of the membrane hampers the filtration. This blockage can be reduced by the use of the cross-flow method (cross-flow filtration). Here, the liquid to be filtered flows along the front of the membrane and is separated by the pressure difference between the front and back of the membrane into retentate (the flowing concentrate) on the front and permeate (filtrate) on the back. The tangential flow on the front creates a shear stress that cracks the filter cake and reduces the fouling.
-
 
 ## Membrane operations
 According to the driving force of the operation, it is possible to distinguish:
@@ -56,14 +39,12 @@ fuel cell
 Operations in a temperature gradient
 membrane distillation
 
-
 ## Membrane shapes and flow geometries
 
 There are two main flow configurations of membrane processes: cross-flow (or tangential flow) and dead-end filtrations. In cross-flow filtration the feed flow is tangential to the surface of the membrane, retentate is removed from the same side further downstream, whereas the permeate flow is tracked on the other side. In dead-end filtration, the direction of the fluid flow is normal to the membrane surface. Both flow geometries offer some advantages and disadvantages. Generally, dead-end filtration is used for feasibility studies on a laboratory scale. The dead-end membranes are relatively easy to fabricate which reduces the cost of the separation process. The dead-end membrane separation process is easy to implement and the process is usually cheaper than cross-flow membrane filtration.  The dead-end filtration process is usually a batch-type process, where the filtering solution is loaded (or slowly fed) into the membrane device, which then allows passage of some particles subject to the driving force. The main disadvantage of dead-end filtration is the extensive membrane fouling and concentration polarization. The fouling is usually induced faster at higher driving forces. Membrane fouling and particle retention in a feed solution also builds up a concentration gradients and particle backflow (concentration polarization). The tangential flow devices are more cost and labor-intensive, but they are less susceptible to fouling due to the sweeping effects and high shear rates of the passing flow. The most commonly used synthetic membrane devices (modules) are flat sheets/plates, spiral wounds, and hollow fibers. Flat membranes used in filtration and separation processes can be enhanced with surface patterning, where microscopic structures are introduced to improve performance. These patterns increase surface area, optimize water flow, and reduce fouling, leading to higher permeability and longer membrane lifespan. Research has shown that such modifications can significantly enhance efficiency in water purification, energy applications, and industrial separations.
 Flat plates are usually constructed as circular thin flat membrane surfaces to be used in dead-end geometry modules. Spiral wounds are constructed from similar flat membranes but in the form of a "pocket" containing two membrane sheets separated by a highly porous support plate. Several such pockets are then wound around a tube to create a tangential flow geometry and to reduce membrane fouling. Hollow fiber modules consist of an assembly of self-supporting fibers with dense skin separation layers, and a more open matrix helping to withstand pressure gradients and maintain structural integrity. The hollow fiber modules can contain up to 10,000 fibers ranging from 200 to 2500 μm in diameter; The main advantage of hollow fiber modules is the very large surface area within an enclosed volume, increasing the efficiency of the separation process.
 
  The Disc tube module uses a cross-flow geometry and consists of a pressure tube and hydraulic discs, which are held by a central tension rod, and membrane cushions that lie between two discs.
-
 
 ## Membrane performance and governing equations
 The selection of synthetic membranes for a targeted separation process is usually based on few requirements. Membranes have to provide enough mass transfer area to process large amounts of feed stream. The selected membrane has to have high selectivity (rejection) properties for certain particles; it has to resist fouling and to have high mechanical stability. It also needs to be reproducible and to have low manufacturing costs. The main modeling equation for the dead-end filtration at constant pressure drop is represented by Darcy's law:
@@ -182,10 +163,8 @@ where Cf and Cp are the solute concentrations in feed and permeate respectively.
 
 where J is the permeate flux which is the volumetric flow rate per unit of membrane area. The solute sieving coefficient and hydraulic permeability allow the quick assessment of the synthetic membrane performance.
 
-
 ## Membrane separation processes
 Membrane separation processes have a very important role in the separation industry. Nevertheless, they were not considered technically important until the mid-1970s. Membrane separation processes differ based on separation mechanisms and size of the separated particles. The widely used membrane processes include microfiltration, ultrafiltration, nanofiltration, reverse osmosis, electrolysis, dialysis, electrodialysis, gas separation, vapor permeation, pervaporation, membrane distillation, and membrane contactors. All processes except for pervaporation involve no phase change. All processes except electrodialysis are pressure driven. Microfiltration and ultrafiltration is widely used in food and beverage processing (beer microfiltration, apple juice ultrafiltration), biotechnological applications and pharmaceutical industry (antibiotic production, protein purification), water purification and wastewater treatment, the microelectronics industry, and others. Nanofiltration and reverse osmosis membranes are mainly used for water purification purposes. Dense membranes are utilized for gas separations (removal of CO2 from natural gas, separating N2 from air, organic vapor removal from air or a nitrogen stream) and sometimes in membrane distillation. The later process helps in the separation of azeotropic compositions reducing the costs of distillation processes.
-
 
 ## Pore size and selectivity
 
@@ -200,21 +179,16 @@ To determine the pore diameter, physical methods such as porosimeter (mercury, l
 The selectivity is highly dependent on the separation process, the composition of the membrane and its electrochemical properties in addition to the pore size. With high selectivity, isotopes can be enriched (uranium enrichment) in nuclear engineering or industrial gases like nitrogen can be recovered (gas separation). Ideally, even racemics can be enriched with a suitable membrane.
 When choosing membranes selectivity has priority over a high permeability, as low flows can easily be offset by increasing the filter surface with a modular structure. In gas phase filtration different deposition mechanisms are operative, so that particles having sizes below the pore size of the membrane can be retained as well.
 
-
 ## Membrane Classification
 Bio-Membrane is classified in two categories, synthetic membrane and natural membrane. synthetic membranes further classified in organic and inorganic membranes. Organic membrane sub classified polymeric membranes and inorganic membrane sub classified ceramic polymers.
 
-
 ## Synthesis of Biomass Membrane
-
 
 ### The composite biomass membrane
 Green membrane or Bio-membrane synthesis is the solution to protected environments which have largely comprehensive performance. Biomass is used in the form of activated carbon nanoparticles, like using cellulose based biomass coconut shell, hazelnut shell, walnut shell, agricultural wastes of corn stalks etc. which improve  surface hydrophilicity, larger pore size, more and lower surface roughness therefore, the separation and anti-fouling performance of membranes are also improved simultaneously.
 
-
 ### Fabrication of pure biomass based membrane
 A biomass-based membrane is a membrane made from organic materials such as plant fibers. These membranes are often used in water filtration and wastewater treatment applications. The fabrication of a pure biomass-based membrane is a complex process that involves a number of steps. The first step is to create a slurry of the organic materials. This slurry is then cast onto a substrate, such as a glass or metal plate. The cast is then dried, and the resulting membrane is then subjected to a number of treatments, such as chemical or heat treatments, to improve its properties. One of the challenges in the fabrication of biomass-based membranes is to create a membrane with the desired properties.
-
 
 ## Equipment and instruments used in the process
 List of instruments used in membrane synthesis procedures:
@@ -227,7 +201,6 @@ Glass ware: Beakers, measuring cylinders, flask etc.
 Oven
 Mortar and pestle
 
-
 ## Membrane Characterization
 After casting and synthesis of membrane there is need to characterize the prepared membrane to know more details about membrane parameters, like pore size, functional groups, wettability, surface charge, etc. It is important to know membrane properties so we are able to remove and treat a particulate pollutant, which causes pollution in the environment. For characterization following different instruments are used:
 
@@ -239,19 +212,3 @@ Contact angle meter
 Zeta potential (streaming potential)
 X-ray Diffraction (XRD)
 Liquid–Liquid Displacement Porosimetry (LLDP)
-
-
-## Biomass Membrane Applications
-
-
-### Water treatment
-Water treatment is any process that improves the quality of water to make it more acceptable for a specific end-use.  Membranes can be used to remove particulates from water by either size exclusion or charge separation. In size exclusion, the pores in the membrane are sized such that only particles smaller than the pores can pass through. The pores in the membrane are sized such that only water molecules can pass through, leaving dissolved contaminants behind.
-
-
-### Gas separation
-Utilization of membranes in gas separation, like carbon dioxide (CO2), Nitrogen oxides (NOx),  Sulphur oxides (SOx), harmful gasses can be removed to protect the environment. Biomass Membrane gas separation more effective than commercial membrane.
-
-
-### Hemodialysis
-Membrane application in hemodialysis is a process of using a semipermeable membrane to remove waste products and excess fluids from the blood.
-

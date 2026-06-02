@@ -4,11 +4,9 @@ Cybernetics is the transdisciplinary study of circular causal processes such as 
 The field is named after an example of circular causal feedback—that of steering a ship (the ancient Greek κυβερνήτης (kybernḗtēs) refers to the person who steers a ship). In steering a ship, the position of the rudder is adjusted in continual response to the effect it is observed as having, forming a feedback loop through which a steady course can be maintained in a changing environment, responding to disturbances from cross winds and tide.
 Cybernetics has its origins in exchanges between numerous disciplines during the 1940s. Initial developments were consolidated through meetings such as the Macy conferences and the Ratio Club. Early focuses included purposeful behaviour, neural networks, heterarchy, information theory, and self-organising systems. As cybernetics developed, it became broader in scope to include work in design, family therapy, management and organisation, pedagogy, sociology, the creative arts and the counterculture.
 
-
 ## Definitions
 Cybernetics has been defined in a variety of ways, reflecting "the richness of its conceptual base". One of the best known definitions is that of the American scientist Norbert Wiener, who characterised cybernetics as concerned with "control and communication in the animal and the machine". Another early definition is that of the Macy cybernetics conferences, where cybernetics was understood as the study of "circular causal and feedback mechanisms in biological and social systems". Margaret Mead emphasised the role of cybernetics as "a form of cross-disciplinary thought which made it possible for members of many disciplines to communicate with each other easily in a language which all could understand".
 Other definitions include: "the art of governing or the science of government" (André-Marie Ampère); "the art of steersmanship" (Ross Ashby); "the study of systems of any nature which are capable of receiving, storing, and processing information so as to use it for control" (Andrey Kolmogorov); and "a branch of mathematics dealing with problems of control, recursiveness, and information, focuses on forms and the patterns that connect" (Gregory Bateson).
-
 
 ## Key concepts and theories
 The central theme in cybernetics is feedback. Feedback is a process where the observed outcomes of actions are taken as inputs for further action in ways that support the pursuit, maintenance, or disruption of particular conditions, forming a circular causal relationship. In steering a ship, the helmsperson maintains a steady course in a changing environment by adjusting their steering in continual response to the effect it is observed as having.
@@ -34,14 +32,6 @@ Syntegrity
 Variety and requisite variety
 Viable system model
 
-
-## Related fields and applications
-Cybernetics' central concept of circular causality is of wide applicability, leading to diverse applications and relations with other fields. Many of the initial applications of cybernetics focused on engineering, biology, and exchanges between the two, such as medical cybernetics and robotics and topics such as neural networks, heterarchy. In the social and behavioral sciences, cybernetics has included and influenced work in anthropology, sociology, economics, family therapy, cognitive science, and psychology.
-As cybernetics has developed, it broadened in scope to include work in management, design, pedagogy, and the creative arts, while also developing exchanges with constructivist philosophies, counter-cultural movements, and media studies. The development of management cybernetics has led to a variety of applications, notably to the national economy of Chile under the Allende government in Project Cybersyn, as well as other lesser known projects by Stafford Beer in Latin America. In design, cybernetics has been influential on interactive architecture, human-computer interaction, design research, and the development of systemic design and metadesign practices.
-Cybernetics is often understood within the context of systems science, systems theory, and systems thinking. Systems approaches influenced by cybernetics include critical systems thinking, which incorporates the viable system model; systemic design; and system dynamics, which is based on the concept of causal feedback loops.
-Many fields trace their origins in whole or part to work carried out in cybernetics, or were partially absorbed into cybernetics when it was developed. These include artificial intelligence, bionics, cognitive science, control theory, complexity science, computer science, information theory and robotics. Some aspects of modern artificial intelligence, particularly the social machine, are often described in cybernetic terms.
-
-
 ## Journals and societies
 
 Academic journals with focuses in cybernetics include:
@@ -64,4 +54,3 @@ Metaphorum: The Metaphorum group was set up in 2003 to develop Stafford Beer's l
 IEEE Systems, Man, and Cybernetics Society
 RC51 Sociocybernetics: RC51 is a research committee of the International Sociological Association promoting the development of (socio)cybernetic theory and research within the social sciences.
 SCiO (Systems and Complexity in Organisation) is a community of systems practitioners who believe that traditional approaches to running organisations are no longer capable of dealing with the complexity and turbulence faced by organisations today and are responsible for many of the problems we see today. SCiO delivers an apprenticeship on masters level and a certification in systems practice.
-

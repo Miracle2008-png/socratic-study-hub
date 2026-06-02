@@ -2,7 +2,6 @@
 
 These are lists of engineering software tools used for design, analysis, simulation, and management across different engineering disciplines.
 
-
 ## Lists of engineering software
 Comparison of EDA software and list of electrical engineering software
 Comparison of electromagnetic simulation software
@@ -47,4 +46,3 @@ List of sequence alignment software
 List of software for nanostructures modeling
 List of software for nuclear engineering
 List of structural engineering software
-

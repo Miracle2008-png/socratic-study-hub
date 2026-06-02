@@ -81,28 +81,6 @@ Dialysis is generally performed in clipped bags of dialysis tubing or in a varie
 Dialysis tubing is the oldest and generally the least expensive format used for dialysis in the lab. Tubing is cut and sealed with a clip at one end, then filled and sealed with a clip on the other end. Tubing provides flexibility but has increased concerns regarding handling, sealing and sample recovery. Dialysis tubing is typically supplied either wet or dry in rolls or pleated telescoped tubes.
 A wide variety of dialysis devices (or dialyzers) are available from several vendors. Dialyzers are designed for specific sample volume ranges and provide greater sample security and improved ease of use and performance for dialysis experiments over tubing. The most common preformatted dialyzers are Slide-A-Lyzer, Float-A-Lyzer, and the Pur-A-lyzer/D-Tube/GeBAflex Dialyzers product lines.
 
-## Applications
-
-Dialysis has a wide range of applications. These can be divided into two categories depending on the type of dialysis used.
-
-### Diffusion dialysis
-
-Some applications of the diffusion dialysis are explained below.
-
-Strong aqueous caustic soda solutions can be purified of hemicellulose by diffusion dialysis. This is specific to the largely-obsolete viscose process. The first step in that process is to treat almost-pure cellulose (cotton linters or dissolving pulp) with strong (17-20% w/w) solutions of sodium hydroxide (caustic soda) in water. One effect of that step is to dissolve the hemicelluloses (low-MW polymers). In some circumstances, it is desirable to remove as much hemicellulose as possible out of the process, and that can be done using dialysis.
-Acids can be recovered from aqueous solutions using anion-exchange membranes. That process is an alternative treatment of industrial wastewater. It is used for the recovery of mixed acid (HF+ HNO3), the recovery and concentration of Zn2+ and Cu2+, in H2SO4+ CuSO4 and H2SO4+ ZnSO4 and the recovery of H2SO4 from waste sulphuric acid solutions containing Fe and Ni ions, which are produced at the diamond manufacturing process.
-Alkali waste can be recovered using diffusion dialysis because of its low energy cost. The NaOH base can be recovered from the aluminium etching solution applying a technique develop by Astom Corporation of Japan.
-De-alcoholisation of beer is another application of the diffusion dialysis. Taking into account that a concentration gradient is applied for this technique, the alcohol and other small molecule compounds transfer across the membrane from higher concentrations to lower, which is water. It is used for this application for the low operation conditions and the possibility to remove alcohol to 0.5%.
-
-### Electrodialysis
-
-Some applications of the electrodialysis are explained below.
-
-The desalination of whey is the largest area of use for this type of dialysis in the food industry. It is necessary to remove crude cheese whey containing calcium, phosphorus and other inorganic salts to produce different foods such as cake, bread, ice cream and baby foods. The limit of whey demineralisation is almost 90%.
-De-acidification of fruit juice such as grape, orange, apple and lemon are processes in which electrodialysis is applied. An anion-exchange membrane is employed in this technique implying that citrate ions from the juice are extracted and replaced by hydroxide ions.
-Desalting of soy sauce can be done by electrodialysis. The conventional values of salt in brewed soy sauce are about 16-18 %, which is a quite high content. Electrodialysis is used to reduce the amount of salt present in the soy sauce. Nowadays diets of low salt content are very present in the society.
-Electrodialysis allows the separation of amino acids into acidic, basic and neutral groups. Specifically, cytoplasmic leaf proteins are extracted from alfalfa leaves applying electrodialysis. When proteins are denatured, the solutions can be desalted (of K+ ions) and acidified with H+ ions.
-
 ## Advantages and disadvantages
 
 Dialysis has both advantages and disadvantages. Following the structure of the previous section, the pros and cons are discussed based on the type of dialysis used. Advantages and drawbacks of both, diffusion dialysis and electrodialysis, are outlined below.

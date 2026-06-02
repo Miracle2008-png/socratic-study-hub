@@ -4,7 +4,6 @@ Electronics engineering is a sub-discipline of electrical engineering that emerg
 It covers fields such as analog electronics, digital electronics, consumer electronics, embedded systems and power electronics. It is also involved in many related fields, for example solid-state physics, radio engineering, telecommunications, control systems, signal processing, systems engineering, computer engineering, instrumentation engineering, electric power control, photonics and robotics.
 The Institute of Electrical and Electronics Engineers (IEEE) is one of the most important professional bodies for electronics engineers in the US; the equivalent body in the UK is the Institution of Engineering and Technology (IET). The International Electrotechnical Commission (IEC) publishes electrical standards including those for electronics engineering.
 
-
 ## Specialist areas
 
 Electronics engineering has many subfields. This section describes some of the most popular.
@@ -20,7 +19,6 @@ Computer engineering deals with the design of computers and computer systems. Th
 Computer engineers may also work on a system's software. However, the design of complex software systems is often the domain of software engineering which falls under computer science, which is usually considered a separate discipline.
 VLSI design engineering VLSI stands for very large-scale integration. It deals with fabrication of ICs and various electronic components. In designing an integrated circuit, electronics engineers first construct circuit schematics that specify the electrical components and describe the interconnections between them. When completed, VLSI engineers convert the schematics into actual layouts, which map the layers of various conductor and semiconductor materials needed to construct the circuit.
 
-
 ## Education and training
 
 Electronics is a subfield within the wider electrical engineering academic subject. In electronics engineering ceramics are materials used to create electronic components. Ceramics are used for the creation of connectors, elements for encapsulation, multilayer capacitors, resistors, and sensors. Electronics engineers typically possess an academic degree with a major in electronics engineering. The length of study for such a degree is usually three or four years and the completed degree may be designated as a Bachelor of Engineering, Bachelor of Science, Bachelor of Applied Science, or Bachelor of Technology depending upon the university. During a bachelor’s degree, students usually complete a capstone course at the end of their degree. The capstone project involves designing and completing a real world project using knowledge from previous courses. Many UK universities also offer Master of Engineering (MEng) degrees at the graduate level.
@@ -30,7 +28,6 @@ A degree in electronics generally includes units covering physics, chemistry, ma
 Fundamental to the discipline are the sciences of physics and mathematics as these help to obtain both a qualitative and quantitative description of how such systems will work. Today, most engineering work involves the use of computers and it is commonplace to use computer-aided design and simulation software programs when designing electronic systems. Although most Electronics engineers will understand basic circuit theory, the theories employed by engineers generally depend upon the work they do. For example, quantum mechanics and solid-state physics might be relevant to an engineer working on VLSI but are largely irrelevant to engineers working with embedded systems.
 Apart from electromagnetics and network theory, other items in the syllabus are particular to electronic engineering courses. Electrical engineering courses have other specialisms such as machines, power generation, and distribution. This list does not include the extensive engineering mathematics curriculum that is a prerequisite to a degree.
 Various universities have updated their electrical and electronics programs to include renewable energy courses. The courses are being created because the world is shifting towards becoming more energy efficient.
-
 
 ### Labs
 Labs are essential for electronics engineering providing students with hands on experience to understand their other electronics classes. Lab activities may involve:
@@ -43,7 +40,6 @@ Wind Power: Applying aerodynamics, rotor dynamics, and power generation characte
 Water Energy: Simulating water flow using turbines for better understanding of using water for energy.
 Smart Grids: Utilizing smart technologies for advancement of electrical power systems. Involving simulation and hardware of grids from renewable energy sources like solar photovoltaic and wind turbines.
 
-
 ### Supporting knowledge areas
 The huge breadth of electronics engineering has led to the use of a large number of specialists supporting knowledge areas.
 Elements of vector calculus: divergence and curl; Gauss' and Stokes' theorems, Maxwell's equations: differential and integral forms. Wave equation, Poynting vector. Plane waves: propagation through various media; reflection and refraction; phase and group velocity; skin depth. Transmission lines: characteristic impedance; impedance transformation; Smith chart; impedance matching; pulse excitation. Waveguides: modes in rectangular waveguides; boundary conditions; cut-off frequencies; dispersion relations. Antennas: Dipole antennas; antenna arrays; radiation pattern; reciprocity theorem, antenna gain.
@@ -53,27 +49,21 @@ Analog circuits: Equivalent circuits (large and small-signal) of diodes, BJT, JF
 Digital circuits: Boolean functions (NOT, AND, OR, XOR,...).  Logic gates digital IC families (DTL, TTL, ECL, MOS, CMOS). Combinational circuits: arithmetic circuits, code converters, multiplexers, and decoders. Sequential circuits: latches and flip-flops, counters, and shift-registers. Sample and hold circuits, ADCs, DACs. Semiconductor memories. Microprocessor 8086: architecture, programming, memory, and I/O interfacing.
 Signals and systems: Definitions and properties of Laplace transform, continuous-time and discrete-time Fourier series, continuous-time and discrete-time Fourier Transform, z-transform. Sampling theorems. Linear Time-Invariant (LTI) Systems: definitions and properties; causality, stability, impulse response, convolution, poles and zeros frequency response, group delay and phase delay. Signal transmission through LTI systems. Random signals and noise: probability, random variables, probability density function, autocorrelation, power spectral density, and function analogy between vectors & functions.
 
-
 #### Electronic Control systems
 Basic control system components; block diagrammatic description, reduction of block diagrams — Mason's rule. Open loop and closed loop (negative unity feedback) systems and stability analysis of these systems. Signal flow graphs and their use in determining transfer functions of systems; transient and steady-state analysis of LTI control systems and frequency response. Analysis of steady-state disturbance rejection and noise sensitivity.
 Tools and techniques for LTI control system analysis and design: root loci, Routh–Hurwitz stability criterion, Bode and Nyquist plots. Control system compensators: elements of lead and lag compensation, elements of proportional–integral–derivative (PID) control. Discretization of continuous-time systems using zero-order hold and ADCs for digital controller implementation. Limitations of digital controllers: aliasing. State variable representation and solution of state equation of LTI control systems. Linearization of Nonlinear dynamical systems with state-space realizations in both frequency and time domains. Fundamental concepts of controllability and observability for MIMO LTI systems. State space realizations: observable and controllable canonical form. Ackermann's formula for state-feedback pole placement. Design of full order and reduced order estimators.
-
 
 #### Communications
 Analog communication systems: amplitude and angle modulation and demodulation systems, spectral analysis of these operations, superheterodyne noise conditions.
 Digital communication systems: pulse-code modulation (PCM), differential pulse-code modulation (DPCM), delta modulation (DM), digital modulation – amplitude, phase- and frequency-shift keying schemes (ASK, PSK, FSK), matched-filter receivers, bandwidth consideration and probability of error calculations for these schemes, GSM, TDMA.
 
-
 ## Professional bodies
 Professional bodies of note for electrical engineers USA's Institute of Electrical and Electronics Engineers (IEEE) and the UK's Institution of Engineering and Technology (IET). Members of the Institution of Engineering and Technology (MIET) are recognized professionally in Europe, as electrical and computer engineers. The IEEE claims to produce 30 percent of the world's literature in electrical and electronics engineering, has over 430,000 members, and holds more than 450 IEEE sponsored or cosponsored conferences worldwide each year. Senior membership of the IEEE is a recognised professional designation in the United States.
-
 
 ## Project engineering
 For most engineers not involved at the cutting edge of system design and development, technical work accounts for only a fraction of the work they do. A lot of time is also spent on tasks such as discussing proposals with clients, preparing budgets and determining project schedules. Many senior engineers manage a team of technicians or other engineers and for this reason, project management skills are important. Most engineering projects involve some form of documentation and strong written communication skills are therefore very important.
 The workplaces of electronics engineers are just as varied as the types of work they do. Electronics engineers may be found in the pristine laboratory environment of a fabrication plant, the offices of a consulting firm or in a research laboratory. During their working life, electronics engineers may find themselves supervising a wide range of individuals including scientists, electricians, programmers, and other engineers.
 Obsolescence of technical skills is a serious concern for electronics engineers. Membership and participation in technical societies, regular reviews of periodicals in the field, and a habit of continued learning are therefore essential to maintaining proficiency, which is even more crucial in the field of consumer electronics products.
 
-
 ## Technical Skills
 Technical skills such as knowledge of circuit design and testing circuits are incorporated in software such as LTSpice and Eagle. LTSpice is used for simulating and examining electronic circuits. Eagle is used to view and design printed circuit boards.
-

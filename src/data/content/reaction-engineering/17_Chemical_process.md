@@ -6,7 +6,6 @@ Although this type of chemical process may sometimes involve only one step, ofte
 Such chemical processes can be illustrated generally as block flow diagrams, or in more detail as process flow diagrams. Block flow diagrams show the units as blocks and the streams flowing between them as connecting lines with arrowheads to show direction of flow.
 In addition to chemical plants for producing chemicals, chemical processes with similar technology and equipment are also used in oil refining and other refineries, natural gas processing, polymer and pharmaceutical manufacturing, food processing, and water and wastewater treatment.
 
-
 ## Unit processing in chemical process
 Unit processing is the basic processing in chemical engineering. Together with unit operations it forms the main principle of the varied chemical industries. Each genre of unit processing follows the same chemical law much as each genre of unit operations follows the same physical law.
 Chemical engineering unit processing consists of the following important processes:
@@ -35,7 +34,5 @@ Polycondensation
 Purification
 Catalysis
 
-
 ## Academic research institutes in process chemistry
 Institute of Process Research & Development, University of Leeds
-

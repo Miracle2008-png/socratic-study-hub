@@ -43,19 +43,3 @@ In the case of lipids, the chromatogram may be transferred to a polyvinylidene f
 ## Plate production
 
 TLC plates are usually commercially available, with standard particle size ranges to improve reproducibility. They are prepared by mixing the adsorbent, such as silica gel, with a small amount of inert binder like calcium sulfate (gypsum) and water. This mixture is spread as a thick slurry on an unreactive carrier sheet, usually glass, thick aluminum foil, or plastic. The resultant plate is dried and activated by heating in an oven for thirty minutes at 110 °C. The thickness of the absorbent layer is typically around 0.1–0.25 mm for analytical purposes and around 0.5–2.0 mm for preparative TLC. Other adsorbent coatings include aluminium oxide (alumina), or cellulose.
-
-## Applications
-
-### Reaction monitoring and characterization
-
-TLC is a valuable tool for reaction monitoring. For this, the plate normally contains a spot of starting material, a spot from the reaction mixture, and a co-spot (or cross-spot) containing both. The analysis will show if the starting material disappeared and if any new products appeared. This provides a quick and easy way to estimate how far a reaction has proceeded.  In one study, TLC has been applied to screen organic reactions. The researchers react an alcohol and a catalyst directly in the co-spot of a TLC plate before developing it. This provides quick and easy small-scale testing of different reagents. 
-
-Compound characterization with TLC is also possible and is similar to reaction monitoring. However, rather than spotting with starting material and reaction mixture, it is with an unknown and a known compound. They may be the same compound if both spots have the same RF and look the same under the chosen visualization method. However, co-elution complicates both reaction monitoring and characterization. This is because different compounds will move to the same spot on the plate. In such cases, different solvent mixtures may provide better separation.
-
-### Purity and purification
-
-TLC helps show the purity of a sample. A pure sample should only contain one spot by TLC. TLC is also useful for small-scale purification. Because the separated compounds will be on different areas of the plate, a scientist can scrape off the stationary phase particles containing the desired compound and dissolve them into an appropriate solvent. Once all the compound dissolves in the solvent, they filter out the silica particles, then evaporate the solvent to isolate the product. Big preparative TLC plates with thick silica gel coatings can separate more than 100 mg of material.
-TLC is useful for larger-scale purification and isolation to quickly test solvent mixtures before running flash column chromatography on a large batch of impure material. A compound elutes from a column when the amount of solvent collected is equal to 1/RF. The eluent from flash column chromatography gets collected across several containers (for example, test tubes) called fractions. TLC helps show which fractions contain impurities and which contain pure compound.
-Furthermore, two-dimensional TLC can help check if a compound is stable on a particular stationary phase. This test requires two runs on a square-shaped TLC plate. The plate is rotated by 90º before the second run. If the target compound appears on the diagonal of the square, it is stable on the chosen stationary phase. Otherwise, it is decomposing on the plate. If this is the case, an alternative stationary phase may prevent this decomposition.
-
-TLC is also an analytical method for the direct separation of enantiomers and the control of enantiomeric purity, e.g. active pharmaceutical ingredients (APIs) that are chiral.

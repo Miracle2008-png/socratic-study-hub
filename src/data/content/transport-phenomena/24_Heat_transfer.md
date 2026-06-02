@@ -5,15 +5,6 @@ Heat conduction, also called diffusion, is the direct microscopic exchanges of k
 Heat convection occurs when the bulk flow of a fluid (gas or liquid) carries its heat through the fluid. All convective processes also move heat partly by diffusion, as well. The flow of fluid may be forced by external processes, or sometimes (in gravitational fields) by buoyancy forces caused when thermal energy expands the fluid (for example in a fire plume), thus influencing its own transfer. The latter process is often called "natural convection". The former process is often called "forced convection." In this case, the fluid is forced to flow by use of a pump, fan, or other mechanical means.
 Thermal radiation occurs through a vacuum or any transparent medium (solid or fluid or gas). It is the transfer of energy by means of photons or electromagnetic waves governed by the same laws.
 
-## Overview
-
-Heat transfer is the energy exchanged between materials (solid/liquid/gas) as a result of a temperature difference. The thermodynamic free energy is the amount of work that a thermodynamic system can perform. Enthalpy is a thermodynamic potential, designated by the letter "H", that is the sum of the internal energy of the system (U) plus the product of pressure (P) and volume (V). Joule is a unit to quantify energy, work, or the amount of heat.
-Heat transfer is a process function (or path function), as opposed to functions of state; therefore, the amount of heat transferred in a thermodynamic process that changes the state of a system depends on how that process occurs, not only the net difference between the initial and final states of the process.
-Thermodynamic and mechanical heat transfer is calculated with the heat transfer coefficient, the proportionality between the heat flux and the thermodynamic driving force for the flow of heat. Heat flux is a quantitative, vectorial representation of heat flow through a surface.
-In engineering contexts, the term heat is taken as synonymous with thermal energy. This usage has its origin in the historical interpretation of heat as a fluid (caloric) that can be transferred by various causes, and that is also common in the language of laymen and everyday life.
-The transport equations for thermal energy (Fourier's law), mechanical momentum (Newton's law for fluids), and mass transfer (Fick's laws of diffusion) are similar, and analogies among these three transport processes have been developed to facilitate the prediction of conversion from any one to the others.
-Thermal engineering concerns the generation, use, conversion, storage, and exchange of heat transfer. As such, heat transfer is involved in almost every sector of the economy. Heat transfer is classified into various mechanisms, such as thermal conduction, thermal convection, thermal radiation, and transfer of energy by phase changes.
-
 ## Mechanisms
 
 The fundamental modes of heat transfer are:
@@ -648,54 +639,3 @@ A heat engine is a system that performs the conversion of a flow of thermal ener
 A heat exchanger is used for more efficient heat transfer or to dissipate heat. Heat exchangers are widely used in refrigeration, air conditioning, space heating, power generation, and chemical processing. One common example of a heat exchanger is a car's radiator, in which the hot coolant fluid is cooled by the flow of air over the radiator's surface.
 Common types of heat exchanger flows include parallel flow, counter flow, and cross flow. In parallel flow, both fluids move in the same direction while transferring heat; in counter flow, the fluids move in opposite directions; and in cross flow, the fluids move at right angles to each other. Common types of heat exchangers include shell and tube, double pipe, extruded finned pipe, spiral fin pipe, u-tube, and stacked plate. Each type has certain advantages and disadvantages over other types.
 A heat sink is a component that transfers heat generated within a solid material to a fluid medium, such as air or a liquid. Examples of heat sinks are the heat exchangers used in refrigeration and air conditioning systems or the radiator in a car. A heat pipe is another heat-transfer device that combines thermal conductivity and phase transition to efficiently transfer heat between two solid interfaces.
-
-## Applications
-
-### Architecture
-
-Efficient energy use is the goal to reduce the amount of energy required in heating or cooling. In architecture, condensation and air currents can cause cosmetic or structural damage. An energy audit can help to assess the implementation of recommended corrective procedures. For instance, insulation improvements, air sealing of structural leaks, or the addition of energy-efficient windows and doors.
-
-Smart meter is a device that records electric energy consumption in intervals.
-Thermal transmittance is the rate of transfer of heat through a structure divided by the difference in temperature across the structure. It is expressed in watts per square meter per kelvin, or W/(m2K). Well-insulated parts of a building have a low thermal transmittance, whereas poorly-insulated parts of a building have a high thermal transmittance.
-Thermostat is a device to monitor and control temperature.
-
-### Climate engineering
-
-Climate engineering consists of carbon dioxide removal and solar radiation management. Since the amount of carbon dioxide determines the radiative balance of Earth's atmosphere, carbon dioxide removal techniques can be applied to reduce the radiative forcing. Solar radiation management is the attempt to absorb less solar radiation to offset the effects of greenhouse gases.
-An alternative method is passive daytime radiative cooling, which enhances terrestrial heat flow to outer space through the infrared window (8–13 μm). Rather than merely blocking solar radiation, this method increases outgoing longwave infrared (LWIR) thermal radiation heat transfer with the extremely cold temperature of outer space (~2.7 K) to lower ambient temperatures while requiring zero energy input.
-
-### Greenhouse effect
-
-The greenhouse effect is a process by which thermal radiation from a planetary surface is absorbed by atmospheric greenhouse gases and clouds, and is re-radiated in all directions, resulting in a reduction in the amount of thermal radiation reaching space relative to what would reach space in the absence of absorbing materials. This reduction in outgoing radiation leads to a rise in the temperature of the surface and troposphere until the rate of outgoing radiation again equals the rate at which heat arrives from the Sun.
-
-### In the human body
-
-The principles of heat transfer in engineering systems can be applied to the human body to determine how the body transfers heat. Heat is produced in the body by the continuous metabolism of nutrients which provides energy for the systems of the body. The human body must maintain a consistent internal temperature to maintain healthy bodily functions. Therefore, excess heat must be dissipated from the body to keep it from overheating. When a person engages in elevated levels of physical activity, the body requires additional fuel which increases the metabolic rate and the rate of heat production. The body must then use additional methods to remove the additional heat produced to keep the internal temperature at a healthy level.
-Heat transfer by convection is driven by the movement of fluids over the surface of the body. This convective fluid can be either a liquid or a gas. For heat transfer from the outer surface of the body, the convection mechanism is dependent on the surface area of the body, the velocity of the air, and the temperature gradient between the surface of the skin and the ambient air. The normal temperature of the body is approximately 37 °C. Heat transfer occurs more readily when the temperature of the surroundings is significantly less than the normal body temperature. This concept explains why a person feels cold when not enough covering is worn when exposed to a cold environment. Clothing can be considered an insulator which provides thermal resistance to heat flow over the covered portion of the body. This thermal resistance causes the temperature on the surface of the clothing to be less than the temperature on the surface of the skin. This smaller temperature gradient between the surface temperature and the ambient temperature will cause a lower rate of heat transfer than if the skin were not covered.
-To ensure that one portion of the body is not significantly hotter than another portion, heat must be distributed evenly through the bodily tissues. Blood flowing through blood vessels acts as a convective fluid and helps to prevent any buildup of excess heat inside the tissues of the body. This flow of blood through the vessels can be modeled as pipe flow in an engineering system. The heat carried by the blood is determined by the temperature of the surrounding tissue, the diameter of the blood vessel, the thickness of the fluid, the velocity of the flow, and the heat transfer coefficient of the blood. The velocity, blood vessel diameter, and fluid thickness can all be related to the Reynolds Number, a dimensionless number used in fluid mechanics to characterize the flow of fluids.
-Latent heat loss, also known as evaporative heat loss, accounts for a large fraction of heat loss from the body. When the core temperature of the body increases, the body triggers sweat glands in the skin to bring additional moisture to the surface of the skin. The liquid is then transformed into vapor which removes heat from the surface of the body. The rate of evaporation heat loss is directly related to the vapor pressure at the skin surface and the amount of moisture present on the skin. Therefore, the maximum of heat transfer will occur when the skin is completely wet. The body continuously loses water by evaporation but the most significant amount of heat loss occurs during periods of increased physical activity.
-
-### Cooling techniques
-
-#### Evaporative cooling
-
-Evaporative cooling happens when water vapor is added to the surrounding air. The energy needed to evaporate the water is taken from the air in the form of sensible heat and converted into latent heat, while the air remains at a constant enthalpy. Latent heat describes the amount of heat that is needed to evaporate the liquid; this heat comes from the liquid itself and the surrounding gas and surfaces. The greater the difference between the two temperatures, the greater the evaporative cooling effect. When the temperatures are the same, no net evaporation of water in the air occurs; thus, there is no cooling effect.
-
-#### Laser cooling
-
-In quantum physics, laser cooling is used to achieve temperatures of near absolute zero (−273.15 °C, −459.67 °F) of atomic and molecular samples to observe unique quantum effects that can only occur at this heat level.
-
-Doppler cooling is the most common method of laser cooling.
-Sympathetic cooling is a process in which particles of one type cool particles of another type. Typically, atomic ions that can be directly laser-cooled are used to cool nearby ions or atoms. This technique allows the cooling of ions and atoms that cannot be laser-cooled directly.
-
-#### Magnetic cooling
-
-Magnetic evaporative cooling is a process for lowering the temperature of a group of atoms, after pre-cooled by methods such as laser cooling. Magnetic refrigeration cools below 0.3K, by making use of the magnetocaloric effect.
-
-#### Radiative cooling
-
-Radiative cooling is the process by which a body loses heat by radiation. Outgoing energy is an important effect in the Earth's energy budget. In the case of the Earth-atmosphere system, it refers to the process by which long-wave (infrared) radiation is emitted to balance the absorption of short-wave (visible) energy from the Sun. The thermosphere (top of atmosphere) cools to space primarily by infrared energy radiated by carbon dioxide (CO2) at 15 μm and by nitric oxide (NO) at 5.3 μm. Convective transport of heat and evaporative transport of latent heat both remove heat from the surface and redistribute it in the atmosphere.
-
-### Thermal energy storage
-
-Thermal energy storage includes technologies for collecting and storing energy for later use. It may be employed to balance energy demand between day and nighttime. The thermal reservoir may be maintained at a temperature above or below that of the ambient environment. Applications include space heating, domestic or process hot water systems, or generating electricity.

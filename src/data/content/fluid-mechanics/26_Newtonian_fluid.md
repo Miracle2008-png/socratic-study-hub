@@ -5,7 +5,6 @@ A fluid is Newtonian only if the tensors that describe the viscous stress and th
 Newtonian fluids are the easiest mathematical models of fluids that account for viscosity. While no real fluid fits the definition perfectly, many common liquids and gases, such as water and air, can be assumed to be Newtonian for practical calculations under ordinary conditions. However, non-Newtonian fluids are relatively common and include oobleck (which becomes stiffer when vigorously sheared) and non-drip paint (which becomes thinner when sheared). Other examples include many polymer solutions (which exhibit the Weissenberg effect), molten polymers, many solid suspensions, blood, and most highly viscous fluids.
 Newtonian fluids are named after Isaac Newton, who first used the differential equation to postulate the relation between the shear strain rate and shear stress for such fluids.
 
-
 ## Definition
 An element of a flowing liquid or gas will endure forces from the surrounding fluid, including viscous stress forces that cause it to gradually deform over time. These forces can be mathematically first order approximated by a viscous stress tensor, usually denoted by 
   
@@ -87,7 +86,6 @@ where
     {\displaystyle \mu }
   
  is a fixed 3×3×3×3 fourth order tensor that does not depend on the velocity or stress state of the fluid.
-
 
 ### Incompressible isotropic case
 For an incompressible and isotropic Newtonian fluid in laminar flow only in the direction x (i.e. where viscosity is isotropic in the fluid), the shear stress is related to the strain rate by the simple constitutive equation
@@ -876,7 +874,6 @@ or written in more compact tensor notation
     
     {\displaystyle {\boldsymbol {\sigma }}=-p\ \mathbf {I} +\mu \left(\ \nabla \mathbf {u} +\left(\nabla \mathbf {u} \right)^{\top }\right)~.}
   
-
 
 ### General compressible case
 The Newton's constitutive law for a compressible flow results from the following assumptions on the Cauchy stress tensor:
@@ -1669,7 +1666,6 @@ However, this difference is usually neglected most of the time (that is whenever
  is called as the Stokes hypothesis. The validity of Stokes hypothesis can be demonstrated for monoatomic gas both experimentally and from the kinetic theory; for other gases and liquids, Stokes hypothesis is generally incorrect.
 Finally, note that Stokes hypothesis is less restrictive that the one of incompressible flow. In fact, in the incompressible flow both the bulk viscosity term, and the shear viscosity term in the divergence of the flow velocity term disappears, while in the Stokes hypothesis the first term also disappears but the second one still remains.
 
-
 ### For anisotropic fluids
 More generally, in a non-isotropic Newtonian fluid, the coefficient 
   
@@ -1746,7 +1742,6 @@ where
     {\displaystyle \mu _{ij}}
   
  is the viscosity tensor. The diagonal components of viscosity tensor is molecular viscosity of a liquid, and not diagonal components – turbulence eddy viscosity.
-
 
 ## Newton's law of viscosity
 
@@ -1873,7 +1868,6 @@ If viscosity
   
  does not vary with rate of deformation the fluid is Newtonian.
 
-
 ### Power law model
 
 The power law model is used to display the behavior of Newtonian and non-Newtonian fluids and measures shear stress as a function of strain rate.
@@ -1996,7 +1990,6 @@ n < 1 then the fluid is a pseudoplastic.
 n = 1 then the fluid is a Newtonian fluid.
 n > 1 then the fluid is a dilatant.
 
-
 ### Fluid model
 The relationship between the shear stress and shear rate in a casson fluid model is defined as follows:
 
@@ -2074,7 +2067,5 @@ where τ0 is the yield stress and
 
 where α depends on protein composition and H is the Hematocrit number.
 
-
 ## Examples
 Water, air, alcohol, glycerol, and thin motor oil are all examples of Newtonian fluids over the range of shear stresses and shear rates encountered in everyday life. Single-phase fluids made up of small molecules are generally (although not exclusively) Newtonian.
-

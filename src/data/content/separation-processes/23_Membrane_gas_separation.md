@@ -2,13 +2,9 @@
 
 Gas mixtures can be effectively separated by synthetic membranes made from polymers such as polyamide or cellulose acetate, or from ceramic materials.
 
-While polymeric membranes are economical and technologically useful, they are bounded by their performance, known as the Robeson limit (permeability must be sacrificed for selectivity and vice versa). This limit affects polymeric membrane use for CO2 separation from flue gas streams, since mass transport becomes limiting and CO2 separation becomes very expensive due to low permeabilities. Membrane materials have expanded into the realm of silica, zeolites, metal-organic frameworks, and perovskites due to their strong thermal and chemical resistance as well as high tunability (ability to be modified and functionalized), leading to increased permeability and selectivity. Membranes can be used for separating gas mixtures where they act as a permeable barrier through which different compounds move across at different rates or not move at all. The membranes can be nanoporous, polymer, etc. and the gas molecules penetrate according to their size, diffusivity, or solubility.
-
-
 ## Basic process
 Gas separation across a membrane is a pressure-driven process, where the driving force is the difference in pressure between inlet of raw material and outlet of product. The membrane used in the process is a generally non-porous layer, so there will not be a severe leakage of gas through the membrane. The performance of the membrane depends on permeability and selectivity. Permeability is affected by the penetrant size. Larger gas molecules have a lower diffusion coefficient. The polymer chain flexibility and free volume in the polymer of the membrane material influence the diffusion coefficient, as the space within the permeable membrane must be large enough for the gas molecules to diffuse across. The solubility is expressed as the ratio of the concentration of the gas in the polymer to the pressure of the gas in contact with it. Permeability is the ability of the membrane to allow the permeating gas to diffuse through the material of the membrane as a consequence of the pressure difference over the membrane, and can be measured in terms of the permeate flow rate, membrane thickness and area and the pressure difference across the membrane. The selectivity of a membrane is a measure of the ratio of permeability of the relevant gases for the membrane. It can be calculated as the ratio of permeability of two gases in binary separation.
 The membrane gas separation equipment typically pumps gas into the membrane module and the targeted gases are separated based on difference in diffusivity and solubility. For example, oxygen will be separated from the ambient air and collected at the upstream side, and nitrogen at the downstream side. As of 2016, membrane technology was reported as capable of producing 10 to 25 tonnes of 25 to 40% oxygen per day.
-
 
 ## Membrane governing methodology
 
@@ -404,7 +400,6 @@ Another important coefficient when choosing the optimum membrane for a separatio
 
 This coefficient is used to indicate the level to which the membrane is able to separates species i from j. It is obvious from the expression above, that a membrane selectivity of 1 indicates the membrane has no potential to separate the two gases, the reason being, both gases will diffuse equally through the membrane.
 In the design of a separation process, normally the pressure ratio and the membrane selectivity are prescribed by the pressures of the system and the permeability of the membrane . The level of separation achieved by the membrane (concentration of the species to be separated) needs to be evaluated based on the aforementioned design parameters in order to evaluate the cost-effectiveness of the system.
-
 
 ## Membrane performance
 The concentration of species i and j across the membrane can be evaluated based on their respective diffusion flows across it.
@@ -1809,16 +1804,13 @@ Lastly, the area required per unit membrane length can be obtained by the follow
     {\displaystyle A={\frac {\delta q''}{J_{i}+J_{j}}}}
   
 
-
 ## Membrane materials for carbon capture in flue gas streams
 The material of the membrane plays an important role in its ability to provide the desired performance characteristics. It is optimal to have a membrane with a high permeability and sufficient selectivity and it is also important to match the membrane properties to that of the system operating conditions (for example pressures and gas composition).
 Synthetic membranes are made from a variety of polymers including polyethylene, polyamides, polyimides, cellulose acetate, polysulphone and polydimethylsiloxane.
 
-
 ### Polymer membranes
 Polymeric membranes are a common option for use in the capture of CO2 from flue gas because of the maturity of the technology in a variety of industries, namely petrochemicals. The ideal polymer membrane has both a high selectivity and permeability. Polymer membranes are examples of systems that are dominated by the solution-diffusion mechanism. The membrane is considered to have holes which the gas can dissolve (solubility) and the molecules can move from one cavity to the other (diffusion).
 It was discovered by Robeson in the early 1990s that polymers with a high selectivity have a low permeability and opposite is true; materials with a low selectivity have a high permeability. This is best illustrated in a Robeson plot where the selectivity is plotted as a function of the CO2 permeation. In this plot, the upper bound of selectivity is approximately a linear function of the permeability. It was found that the solubility in polymers is mostly constant but the diffusion coefficients vary significantly and this is where the engineering of the material occurs. Somewhat intuitively, the materials with the highest diffusion coefficients have a more open pore structure, thus losing selectivity. There are two methods that researchers are using to break the Robeson limit, one of these is the use of glassy polymers whose phase transition and changes in mechanical properties make it appear that the material is absorbing molecules and thus surpasses the upper limit. The second method of pushing the boundaries of the Robeson limit is by the facilitated transport method. As previously stated, the solubility of polymers is typically fairly constant but the facilitated transport method uses a chemical reaction to enhance the permeability of one component without changing the selectivity.
-
 
 ### Nanoporous membranes
 
@@ -1826,10 +1818,8 @@ Nanoporous membranes are fundamentally different from polymer-based membranes in
 If the assumption is made that the energy of a particle does not change when moving through this structure, only the entropy of the molecules changes based on the size of the openings. If we first consider changes the cavity geometry, the larger the cavity, the larger the entropy of the absorbed molecules which thus makes the Henry coefficient larger. For diffusion, an increase in entropy will lead to a decrease in free energy which in turn leads to a decrease in the diffusion coefficient. Conversely, changing the window geometry will primarily effect the diffusion of the molecules and not the Henry coefficient.
 In summary, by using the above simplified analysis, it is possible to understand why the upper limit of the Robeson line does not hold for nanostructures. In the analysis, both the diffusion and Henry coefficients can be modified without affecting the permeability of the material which thus can exceed the upper limit for polymer membranes.
 
-
 #### Silica membranes
 Silica membranes are mesoporous and can be made with high uniformity (the same structure throughout the membrane). The high porosity of these membranes gives them very high permeabilities. Synthesized membranes have smooth surfaces and can be modified on the surface to drastically improve selectivity. Functionalizing silica membrane surfaces with amine containing molecules (on the surface silanol groups) allows the membranes to separate CO2 from flue gas streams more effectively. Surface functionalization (and thus chemistry) can be tuned to be more efficient for wet flue gas streams as compared to dry flue gas streams. While previously, silica membranes were impractical due to their technical scalability and cost (they are very difficult to produce in an economical manner on a large scale), there have been demonstrations of a simple method of producing silica membranes on hollow polymeric supports. These demonstrations indicate that economical materials and methods can effectively separate CO2 and N2. Ordered mesoporous silica membranes have shown considerable potential for surface modification that allows for ease of CO2 separation. Surface functionalization with amines leads to the reversible formation of carbamates (during CO2 flow), increasing CO2 selectivity significantly.
-
 
 #### Zeolite membranes
 
@@ -1838,19 +1828,15 @@ Scientists have found that the gas-phase enthalpy (heat) of adsorption on zeolit
 Researchers have synthesized Y-type (Si:Al>3) zeolite membranes which achieve room-temperature separation factors of 100 and 21 for CO2/N2 and CO2/CH4 mixtures respectively. DDR-type and SAPO-34 membranes have also shown promise in separating CO2 and CH4 at a variety of pressures and feed compositions. The SAPO-34 membranes, being nitrogen selective, are also strong contender for natural gas sweetening process.
 Researchers have also made an effort to utilize zeolite membranes for the separation of H2 from hydrocarbons. Hydrogen can be separated from larger hydrocarbons such as C4H10 with high selectivity. This is due to the molecular sieving effect since zeolites have pores much larger than H2, but smaller than these large hydrocarbons. Smaller hydrocarbons such as  CH4, C2H6, and C3H8 are small enough to not be separated by molecular sieving. Researchers achieved a higher selectivity of hydrogen when performing the separation at high temperatures, likely as a result of a decrease in the competitive adsorption effect.
 
-
 #### Metal-organic framework (MOF) membranes
 There have been advances in zeolitic-imidazolate frameworks (ZIFs), a subclass of metal-organic frameworks (MOFs), that have allowed them to be useful for carbon dioxide separation from flue gas streams. Extensive modeling has been performed to demonstrate the value of using MOFs as membranes. MOF materials are adsorption-based, and thus can be tuned to achieve selectivity. The drawback to MOF systems is stability in water and other compounds present in flue gas streams. Select materials, such as ZIF-8, have demonstrated stability in water and benzene, contents often present in flue gas mixtures. ZIF-8 can be synthesized as a membrane on a porous alumina support and has proven to be effective at separating CO2 from flue gas streams. At similar CO2/CH4 selectivity to Y-type zeolite membranes, ZIF-8 membranes achieve unprecedented CO2 permeance, two orders of magnitude above the previous standard.
-
 
 #### Perovskite membranes
 Perovskite are mixed metal oxide with a well-defined cubic structure and a general formula of ABO3, where A is an alkaline earth or lanthanide element and B is a transition metal. These materials are attractive for CO2 separation because of the tunability of the metal sites as well as their stabilities at elevated temperatures.
 The separation of CO2 from N2 was investigated with an α-alumina membrane impregnated with BaTiO3. It was found that adsorption of CO2 was favorable at high temperatures due to an endothermic interaction between CO2 and the material, promoting mobile CO2 that enhanced CO2 adsorption-desorption rate and surface diffusion. The experimental separation factor of CO2 to N2 was found to be 1.1-1.2 at 100 °C to 500 °C, which is higher than the separation factor limit of 0.8 predicted by Knudsen diffusion. Though the separation factor was low due to pinholes observed in the membrane, this demonstrates the potential of perovskite materials in their selective surface chemistry for CO2 separation.
 
-
 ## Other membrane technologies
 In special cases other materials can be utilized; for example, palladium membranes permit transport solely of hydrogen. In addition to palladium membranes (which are typically palladium silver alloys to stop embrittlement of the alloy at lower temperature) there is also a significant research effort looking into finding non-precious metal alternatives. Although slow kinetics of exchange on the surface of the membrane and tendency for the membranes to crack or disintegrate after a number of duty cycles or during cooling are problems yet to be fully solved.
-
 
 ## Construction
 Membranes are typically contained in one of three modules:
@@ -1858,7 +1844,6 @@ Membranes are typically contained in one of three modules:
 Hollow fibre bundles in a metal module
 Spiral wound bundles in a metal module
 Plate and frame module constructed like a plate and frame heat exchanger
-
 
 ## Uses
 Membranes are employed in:
@@ -1874,25 +1859,19 @@ Removal of water vapor from natural gas and other gases
 Removal of SO2, CO2 and H2S from natural gas (polyamide membranes)
 Removal of volatile organic liquids (VOL) from air of exhaust streams
 
-
 ### Air separation
 Oxygen-enriched air is in high demanded for a range of medical and industrial applications including chemical and combustion processes. Cryogenic distillation is the mature technology for commercial air separation for the production of large quantities of high purity oxygen and nitrogen. However, it is a complex process, is energy-intensive, and is generally not suitable for small-scale production. Pressure swing adsorption is also commonly used for air separation and can also produce high purity oxygen at medium production rates, but it still requires considerable space, high investment and high energy consumption. The membrane gas separation method is a relatively low environmental impact and sustainable process providing continuous production, simple operation, lower pressure/temperature requirements, and compact space requirements.
-
 
 ## Current status of CO2 capture with membranes
 A great deal of research has been undertaken to utilize membranes instead of absorption or adsorption for carbon capture from flue gas streams, however, no current projects exist that utilize membranes. Process engineering along with new developments in materials have shown that membranes have the greatest potential for low energy penalty and cost compared to competing technologies.
 
-
 ### Need for multi-stage process
 Single-stage membranes devices are not feasible for obtaining a high concentration of separated material in the permeate stream. This is due to the pressure ratio limit that is economically unrealistic to exceed. Therefore, the use of multi-stage membranes is required to concentrate the permeate stream. The use of a second stage allows for less membrane area and power to be used. This is because of the higher concentration that passes the second stage, as well as the lower volume of gas for the pump to process. Other factors, such as adding another stage that uses air to concentrate the stream further reduces cost by increasing concentration within the feed stream. Additional methods such as combining multiple types of separation methods allow for variation in creating economical process designs.
-
 
 ### Membrane use in hybrid processes
 Hybrid processes have long-standing history with gas separation.  Typically, membranes are integrated into already existing processes such that they can be retrofitted into already existing carbon capture systems.
 MTR, Membrane Technology and Research Inc., and UT Austin have worked to create hybrid processes, utilizing both absorption and membranes, for CO2 capture.  First, an absorption column using piperazine as a solvent absorbs about half the carbon dioxide in the flue gas, then the use of a membrane results in 90% capture.  A parallel setup is also, with the membrane and absorption processes occurring simultaneously.  Generally, these processes are most effective when the highest content of carbon dioxide enters the amine absorption column. Incorporating hybrid design processes allows for retrofitting into fossil fuel power plants.
 Hybrid processes can also use cryogenic distillation and membranes.  For example, hydrogen and carbon dioxide can be separated, first using cryogenic gas separation, whereby most of the carbon dioxide exits first, then using a membrane process to separate the remaining carbon dioxide, after which it is recycled for further attempts at cryogenic separation.
 
-
 ### Cost analysis
 Cost limits the pressure ratio in a membrane CO2 separation stage to a value of 5; higher pressure ratios eliminate any economic viability for CO2 capture using membrane processes.  Recent studies have demonstrated that multi-stage CO2 capture/separation processes using membranes can be economically competitive with older and more common technologies such as amine-based absorption. Currently, both membrane and amine-based absorption processes can be designed to yield a 90% CO2 capture rate. For carbon capture at an average 600 MW coal-fired power plant, the cost of CO2 capture using amine-based absorption is in the $40–100 per ton of CO2 range, while the cost of CO2 capture using current membrane technology (including current process design schemes) is about $23 per ton of CO2. Additionally, running an amine-based absorption process at an average 600 MW coal-fired power plant consumes about 30% of the energy generated by the power plant, while running a membrane process requires about 16% of the energy generated. CO2 transport (e.g. to geologic sequestration sites, or to be used for EOR) costs about $2–5 per ton of CO2. This cost is the same for all types of CO2 capture/separation processes such as membrane separation and absorption. In terms of dollars per ton of  captured CO2, the least expensive membrane processes being studied at this time are multi-step counter-current flow/sweep processes.
-

@@ -4,29 +4,14 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
 const contentDir = path.join(__dirname, '../src/data/content');
 
 const FLUFF_SECTIONS = [
-  'Etymology',
-  'History',
-  'Background',
-  'Early history',
-  'Society and culture',
-  'In popular culture',
-  'Notable people',
-  'External links',
-  'References',
-  'Notes',
-  'Further reading',
-  'Bibliography',
-  'See also',
-  'Citations',
-  'Pronunciation',
-  'Nomenclature',
-  'Historical overview',
-  'Origin of the term',
-  'Etymology and usage',
+  'Etymology', 'History', 'Background', 'Early history', 'Society and culture', 
+  'In popular culture', 'Notable people', 'External links', 'References', 'Notes', 
+  'Further reading', 'Bibliography', 'See also', 'Citations', 'Pronunciation', 
+  'Nomenclature', 'Historical overview', 'Origin of the term', 'Etymology and usage',
+  'Introduction', 'Overview', 'Applications', 'Applied fields', 'Axiomatic', 'Branches of'
 ];
 
 function cleanMarkdown(md) {
@@ -34,15 +19,31 @@ function cleanMarkdown(md) {
   const newLines = [];
   let skipping = false;
   let currentHeaderLevel = 0;
+  
+  let foundFirstH1 = false;
+  let inIntroParagraph = false;
+  let introParagraphDone = false;
+  let foundFirstH2 = false;
 
-  for (const line of lines) {
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    
+    // Check for headers
     const headerMatch = line.match(/^(#{1,6})\s+(.*)$/);
     if (headerMatch) {
       const level = headerMatch[1].length;
       const title = headerMatch[2].trim();
       
+      if (level === 1) {
+        foundFirstH1 = true;
+      }
+      
+      if (level === 2) {
+        foundFirstH2 = true;
+      }
+
       // If we find a fluff section, start skipping
-      const isFluff = FLUFF_SECTIONS.some(f => title.toLowerCase() === f.toLowerCase() || title.toLowerCase().includes(f.toLowerCase()));
+      const isFluff = FLUFF_SECTIONS.some(f => title.toLowerCase().includes(f.toLowerCase()));
       
       if (isFluff) {
         skipping = true;
@@ -53,12 +54,28 @@ function cleanMarkdown(md) {
       }
     }
 
+    // Logic to only keep the FIRST paragraph after the H1
+    if (!foundFirstH2 && foundFirstH1) {
+      if (!headerMatch && line.trim() !== '') {
+        if (!introParagraphDone) {
+          inIntroParagraph = true;
+        } else {
+          // This is a subsequent paragraph in the intro section. Skip it.
+          continue;
+        }
+      } else if (line.trim() === '' && inIntroParagraph) {
+        // We finished the first intro paragraph
+        introParagraphDone = true;
+      }
+    }
+
     if (!skipping) {
       newLines.push(line);
     }
   }
 
-  return newLines.join('\n');
+  // Final cleanup: remove multiple consecutive empty lines
+  return newLines.join('\n').replace(/\n{3,}/g, '\n\n').trim() + '\n';
 }
 
 function processDirectory(directory) {
@@ -82,4 +99,4 @@ function processDirectory(directory) {
 }
 
 const cleanedCount = processDirectory(contentDir);
-console.log(`Successfully cleaned fluff sections from ${cleanedCount} files.`);
+console.log(`Successfully cleaned aggressive fluff sections from ${cleanedCount} files.`);

@@ -3,11 +3,6 @@
 A biomaterial is a substance that has been engineered to interact with biological systems for a medical purpose – either a therapeutic (treat, augment, repair, or replace a tissue function of the body) or a diagnostic one. The corresponding field of study is called biomaterials science or biomaterials engineering. It has experienced steady growth over its history, with many companies investing large amounts of money into the development of new products. Biomaterials science encompasses elements of medicine, biology, chemistry, tissue engineering and materials science.
 A biomaterial is different from a biological material, such as bone, that is produced by a biological system. However, "biomaterial" and "biological material" are often used interchangeably. Further, the word "bioterial" has been proposed as a potential alternate word for biologically produced materials such as bone, or fungal biocomposites. Additionally, care should be exercised in defining a biomaterial as biocompatible, since it is application-specific. A biomaterial that is biocompatible or suitable for one application may not be biocompatible in another.
 
-## Introduction
-
-Biomaterials can be derived either from nature or synthesized in the laboratory using a variety of chemical approaches utilizing metallic components, polymers, ceramics or composite materials. They are often used and/or adapted for a medical application, and thus comprise the whole or part of a living structure or biomedical device which performs, augments, or replaces a natural function. Such functions may be relatively passive, like being used for a heart valve, or may be bioactive with a more interactive functionality, such as hydroxy-apatite coated hip implants. Biomaterials are also commonly used in dental applications, surgery, and drug delivery. For example, a construct with impregnated pharmaceutical products can be placed into the body, which permits the prolonged release of a drug over an extended period of time. A biomaterial may also be an autograft, allograft or xenograft used as a transplant material.
-The Biomaterials science has become one of the most multi-disciplinary fields of all sciences as it involves different stakeholders from engineers, chemists, physicians, biochemists, clinicians and other more. This field is still expanding along with the discoveries made in the field. The term biomaterial is still relatively new as it did not exist 60 years ago. Biomaterials are crucially needed as they are getting more and more important as they are employed in different clinical applications such as skeletal systems, tissue engineering, dentistry and orthopedics.
-
 ## Bioactivity
 
 The ability of an engineered biomaterial to induce a physiological response that is supportive of the biomaterial's function and performance is known as bioactivity. Most commonly, in bioactive glasses and bioactive ceramics this term refers to the ability of implanted materials to bond well with surrounding tissue in either osteo conductive or osseo productive roles. Bone implant materials are often designed to promote bone growth while dissolving into surrounding body fluid. Thus for many biomaterials good biocompatibility along with good strength and dissolution rates are desirable. Commonly, bioactivity of biomaterials is gauged by the surface biomineralization in which a native layer of hydroxyapatite is formed at the surface. These days, the development of clinically useful biomaterials is greatly enhanced by the advent of computational routines that can predict the molecular effects of biomaterials in a therapeutic setting based on limited in vitro experimentation.
@@ -23,44 +18,6 @@ Nearly all materials could be seen as hierarchically structured, since the chang
 In another level of complexity, the hydroxyapatite crystals are mineral platelets that have a diameter of approximately 70 to 100 nm and thickness of 1 nm. They originally nucleate at the gaps between collagen fibrils.
 Similarly, the hierarchy of abalone shell begins at the nanolevel, with an organic layer having a thickness of 20 to 30 nm. This layer proceeds with single crystals of aragonite (a polymorph of CaCO3) consisting of "bricks" with dimensions of 0.5 and finishing with layers approximately 0.3 mm (mesostructure).
 Crabs are arthropods, whose carapace is made of a mineralized hard component (exhibits brittle fracture) and a softer organic component composed primarily of chitin. The brittle component is arranged in a helical pattern. Each of these mineral "rods" (1 μm diameter) contains chitin–protein fibrils with approximately 60 nm diameter. These fibrils are made of 3 nm diameter canals that link the interior and exterior of the shell.
-
-## Applications
-
-Biomaterials are used in:
-
-Joint replacements
-Bone plates 
-Intraocular lenses (IOLs) for eye surgery
-Bone cement
-Artificial ligaments and tendons
-Dental implants for tooth fixation
-Blood vessel prostheses
-Heart valves
-Skin repair devices (artificial tissue)
-Cochlear replacements
-Contact lenses
-Breast implants
-Drug delivery mechanisms
-Sustainable materials
-Vascular grafts
-Stents
-Nerve conduits
-Surgical sutures, clips, and staples for wound closure
-Pins and screws for fracture stabilisation
-Surgical mesh
-Biomaterials must be compatible with the body, and there are often issues of biocompatibility, which must be resolved before a product can be placed on the market and used in a clinical setting. Because of this, biomaterials are usually subjected to the same requirements as those undergone by new drug therapies. All manufacturing companies are also required to ensure traceability of all of their products, so that if a defective product is discovered, others in the same batch may be traced.
-
-### Bone grafts
-
-Calcium sulfate (its α- and β-hemihydrates) is a well known biocompatible material that is widely used as a bone graft substitute in dentistry or as its binder, in orthopedic applications such as fractures, osteomyelitis and congenital diseases, in tissue engineering  and spinal applications.
-
-### Heart valves
-
-In the United States, 49% of the 250,000 valve replacement procedures performed annually involve a mechanical valve implant. The most widely used valve is a bileaflet disc heart valve or St. Jude valve. The mechanics involve two semicircular discs moving back and forth, with both allowing the flow of blood as well as the ability to form a seal against backflow. The valve is coated with pyrolytic carbon and secured to the surrounding tissue with a mesh of woven fabric called Dacron (du Pont's trade name for polyethylene terephthalate). The mesh allows for the body's tissue to grow, while incorporating the valve.
-
-### Skin repair
-
-Most of the time, artificial tissue is grown from the patient's own cells. However, when the damage is so extreme that it is impossible to use the patient's own cells, artificial tissue cells are grown. The difficulty is in finding a scaffold that the cells can grow and organize on. The characteristics of the scaffold must be that it is biocompatible, cells can adhere to the scaffold, mechanically strong and biodegradable. One successful scaffold is a copolymer of lactic acid and glycolic acid.
 
 ## Properties
 

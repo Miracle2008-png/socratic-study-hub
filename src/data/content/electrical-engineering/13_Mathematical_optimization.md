@@ -581,48 +581,4 @@ Mirror descent
 
 Besides (finitely terminating) algorithms and (convergent) iterative methods, there are heuristics. A heuristic is any algorithm which is not guaranteed (mathematically) to find the solution, but which is nevertheless useful in certain practical situations. List of some well-known heuristics:
 
-## Applications
-
-### Mechanics
-
-Problems in rigid body dynamics (in particular articulated rigid body dynamics) often require mathematical programming techniques, since you can view rigid body dynamics as attempting to solve an ordinary differential equation on a constraint manifold; the constraints are various nonlinear geometric constraints such as "these two points must always coincide", "this surface must not penetrate any other", or "this point must always lie somewhere on this curve". Also, the problem of computing contact forces can be done by solving a linear complementarity problem, which can also be viewed as a QP (quadratic programming) problem.
-Many design problems can also be expressed as optimization programs. This application is called design optimization. One subset is the engineering optimization, and another recent and growing subset of this field is multidisciplinary design optimization, which, while useful in many problems, has in particular been applied to aerospace engineering problems.
-This approach may be applied in cosmology and astrophysics.
-
-### Economics and finance
-
-Economics is closely enough linked to optimization of agents that an influential definition relatedly describes economics qua science as the "study of human behavior as a relationship between ends and scarce means" with alternative uses. Modern optimization theory includes traditional optimization theory but also overlaps with game theory and the study of economic equilibria. The Journal of Economic Literature codes classify mathematical programming, optimization techniques, and related topics under JEL:C61-C63.
-In microeconomics, the utility maximization problem and its dual problem, the expenditure minimization problem, are economic optimization problems. Insofar as they behave consistently, consumers are assumed to maximize their utility, while firms are usually assumed to maximize their profit. Also, agents are often modeled as being risk-averse, thereby preferring to avoid risk. Asset prices are also modeled using optimization theory, though the underlying mathematics relies on optimizing stochastic processes rather than on static optimization. International trade theory also uses optimization to explain trade patterns between nations. The optimization of portfolios is an example of multi-objective optimization in economics.
-Since the 1970s, economists have modeled dynamic decisions over time using control theory. For example, dynamic search models are used to study labor-market behavior. A crucial distinction is between deterministic and stochastic models. Macroeconomists build dynamic stochastic general equilibrium (DSGE) models that describe the dynamics of the whole economy as the result of the interdependent optimizing decisions of workers, consumers, investors, and governments.
-
-### Electrical engineering
-
-Some common applications of optimization techniques in electrical engineering include active filter design, stray field reduction in superconducting magnetic energy storage systems, space mapping design of microwave structures, handset antennas, electromagnetics-based design. Electromagnetically validated design optimization of microwave components and antennas has made extensive use of an appropriate physics-based or empirical surrogate model and space mapping methodologies since the discovery of space mapping in 1993. Optimization techniques are also used in power-flow analysis.
-
-### Civil engineering
-
-Optimization has been widely used in civil engineering. Construction management and transportation engineering are among the main branches of civil engineering that heavily rely on optimization. The most common civil engineering problems that are solved by optimization are cut and fill of roads, life-cycle analysis of structures and infrastructures, resource leveling, water resource allocation, traffic management and schedule optimization.
-
-### Operations research
-
-Another field that uses optimization techniques extensively is operations research. Operations research also uses stochastic modeling and simulation to support improved decision-making. Increasingly, operations research uses stochastic programming to model dynamic decisions that adapt to events; such problems can be solved with large-scale optimization and stochastic optimization methods.
-
-### Control engineering
-
-Mathematical optimization is used in much modern controller design. High-level controllers such as model predictive control (MPC) or real-time optimization (RTO) employ mathematical optimization. These algorithms run online and repeatedly determine values for decision variables, such as choke openings in a process plant, by iteratively solving a mathematical optimization problem including constraints and a model of the system to be controlled.
-
-### Geophysics
-
-Optimization techniques are regularly used in geophysical parameter estimation problems. Given a set of geophysical measurements, e.g. seismic recordings, it is common to solve for the physical properties and geometrical shapes of the underlying rocks and fluids. The majority of problems in geophysics are nonlinear with both deterministic and stochastic methods being widely used.
-
-### Molecular modeling
-
-Nonlinear optimization methods are widely used in conformational analysis.
-
-### Computational systems biology
-
-Optimization techniques are used in many facets of computational systems biology such as model building, optimal experimental design, metabolic engineering, and synthetic biology. Linear programming has been applied to calculate the maximal possible yields of fermentation products, and to infer gene regulatory networks from multiple microarray datasets as well as transcriptional regulatory networks from high-throughput data. Nonlinear programming has been used to analyze energy metabolism and has been applied to metabolic engineering and parameter estimation in biochemical pathways.
-
-### Machine learning
-
 ## Solvers

@@ -50,16 +50,3 @@ Adaptive control of multivariable processes
 Adaptive control of nonlinear processes
 Concurrent learning adaptive control, which relaxes the condition on persistent excitation for parameter convergence for a class of systems
 In recent times, adaptive control has been merged with intelligent techniques such as fuzzy and neural networks to bring forth new concepts such as fuzzy adaptive control.
-
-## Applications
-
-When designing adaptive control systems, special consideration is necessary of convergence and robustness issues. Lyapunov stability is typically used to derive control adaptation laws and show .
-
-Self-tuning of subsequently fixed linear controllers during the implementation phase for one operating point;
-Self-tuning of subsequently fixed robust controllers during the implementation phase for whole range of operating points;
-Self-tuning of fixed controllers on request if the process behaviour changes due to ageing, drift, wear, etc.;
-Adaptive control of linear controllers for nonlinear or time-varying processes;
-Adaptive control or self-tuning control of nonlinear controllers for nonlinear processes;
-Adaptive control or self-tuning control of multivariable controllers for multivariable processes (MIMO systems);
-Usually these methods adapt the controllers to both the process statics and dynamics. In special cases the adaptation can be limited to the static behavior alone, leading to adaptive control based on characteristic curves for the steady-states or to extremum value control, optimizing the steady state. Hence, there are several ways to apply adaptive control algorithms.
-A particularly successful application of adaptive control has been adaptive flight control. This body of work has focused on guaranteeing stability of a model reference adaptive control scheme using Lyapunov arguments. Several successful flight-test demonstrations have been conducted, including fault tolerant adaptive control.

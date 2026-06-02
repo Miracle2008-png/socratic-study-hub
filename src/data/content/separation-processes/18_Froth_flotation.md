@@ -64,24 +64,6 @@ pH modifiers include lime (used as quicklime CaO, or more commonly as slaked lim
 Anionic modifiers include phosphates, silicates, and carbonates.
 Organic modifiers include the thickeners dextrin, starch, glue, and carboxymethyl cellulose (CMC).
 
-## Specific applications
-
-### Sulfide ores
-
-Prior to 1907, nearly all the copper mined in the US came from underground vein deposits, averaging 2.5 percent copper. By 1991, the average grade of copper ore mined in the US had fallen to only 0.6 percent.
-
-### Nonsulfide ores
-
-Flotation is used for the purification of potassium chloride from sodium chloride and clay minerals. The crushed mineral is suspended in brine in the presence of fatty ammonium salts. Because the ammonium head group and K+ have very similar ionic radii (ca. 0.135, 0.143 nm respectively), the ammonium centers exchange for the surface potassium sites on the particles of KCl, but not on the NaCl particles. The long alkyl chains then confer hydrophobicity to the particles, which enable them to form foams.
-
-### Chemical compounds for deinking of recycled paper
-
-Froth flotation is one of the processes used to recover recycled paper. In the paper industry this step is called deinking or just flotation. The target is to release and remove the hydrophobic contaminants from the recycled paper. The contaminants are mostly printing ink and stickies. Normally the setup is a two-stage system with 3,4 or 5 flotation cells in series.
-
-pH control: sodium silicate and sodium hydroxide
-Calcium ion source: hard water, lime or calcium chloride
-Collector: fatty acid, fatty acid emulsion, fatty acid soap and/or organo-modified siloxane
-
 ## Environmental considerations
 
 As in any technology that has long been conducted on the multi-million ton per year scale, flotation technologies have the potential to threaten the environment beyond the disruption caused by mining. Froth flotation employs a host of organic chemicals and relies upon elaborate machinery. Some of the chemicals (cyanide) are acutely toxic but hydrolyze to innocuous products. Naturally occurring fatty acids are widely used. Tailings and effluents are contained in lined ponds. Froth flotation is "poised for increased activity due to their potential usefulness in environmental site cleanup operations" including recycling of plastics and metals, not to mention water treatment.

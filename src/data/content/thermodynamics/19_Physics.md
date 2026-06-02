@@ -4,24 +4,20 @@ Physics is the scientific study of matter, its fundamental constituents, its mot
 Physics is one of the oldest academic disciplines. Over much of the past two millennia, physics, chemistry, biology, and certain branches of mathematics were part of natural philosophy, but during the Scientific Revolution in the 17th century, these natural sciences branched into separate research endeavors. Physics intersects with many interdisciplinary areas of research, such as biophysics and quantum chemistry, and the boundaries of physics are not rigidly defined. New ideas in physics often explain the fundamental mechanisms studied by other sciences and suggest new avenues of research in these and other academic disciplines, such as mathematics and philosophy.
 Advances in physics often enable new technologies. For example, advances in the understanding of electromagnetism, solid-state physics, and nuclear physics led directly to the development of technologies that have transformed modern society, such as television, computers, domestic appliances, and nuclear weapons; advances in thermodynamics led to the development of industrialization; and advances in mechanics inspired the development of calculus.
 
-
 ## Core theories
 
 Physics deals with a wide variety of systems, although certain theories are used by all physicists. Each of these theories was experimentally tested numerous times and found to be an adequate approximation of nature.
 These central theories are important tools for research into more specialized topics, and any physicist, regardless of their specialization, is expected to be literate in them. These include classical mechanics, quantum mechanics, thermodynamics and statistical mechanics, electromagnetism, and special relativity.
-
 
 ### Distinction between classical and modern physics
 
 In the first decades of the 20th century physics was revolutionized by the discoveries of quantum mechanics and relativity. The changes were so fundamental that these new concepts became the foundation of "modern physics", with other topics becoming "classical physics". The majority of applications of physics are essentially classical. 
 The laws of classical physics accurately describe systems whose important length scales are greater than the atomic scale and whose motions are much slower than the speed of light. Outside of this domain, observations do not match predictions provided by classical mechanics.
 
-
 ### Classical theory
 
 Classical physics includes the traditional branches and topics that were recognized and well-developed before the beginning of the 20th century—classical mechanics, thermodynamics, and electromagnetism. Classical mechanics is concerned with bodies acted on by forces and bodies in motion and may be divided into statics (study of the forces on a body or bodies not subject to an acceleration), kinematics (study of motion without regard to its causes), and dynamics (study of motion and the forces that affect it); mechanics may also be divided into solid mechanics and fluid mechanics (known together as continuum mechanics), the latter include such branches as hydrostatics, hydrodynamics and pneumatics. Acoustics is the study of how sound is produced, controlled, transmitted and received. Important modern branches of acoustics include ultrasonics, the study of sound waves of very high frequency beyond the range of human hearing; bioacoustics, the physics of animal calls and hearing; and electroacoustics, the manipulation of audible sound waves using electronics.
 Optics, the study of light, is concerned not only with visible light but also with infrared and ultraviolet radiation, which exhibit all of the phenomena of visible light except visibility, e.g., reflection, refraction, interference, diffraction, dispersion, and polarization of light. Heat is a form of energy, the internal energy possessed by the particles of which a substance is composed; thermodynamics deals with the relationships between heat and other forms of energy. Electricity and magnetism have been studied as a single branch of physics since the intimate connection between them was discovered in the early 19th century; an electric current gives rise to a magnetic field, and a changing magnetic field induces an electric current. Electrostatics deals with electric charges at rest, electrodynamics with moving charges, and magnetostatics with magnetic poles at rest.
-
 
 ### Modern theory
 
@@ -41,14 +37,11 @@ Statistical ensemble
 Symmetry
 Wave
 
-
 ## Research
-
 
 ### Scientific method
 Physicists use the scientific method to test the validity of a physical theory. By using a methodical approach to compare the implications of a theory with the conclusions drawn from its related experiments and observations, physicists are better able to test the validity of a theory in a logical, unbiased, and repeatable way. To that end, experiments are performed and observations are made in order to determine the validity or invalidity of a theory.
 A scientific law is a concise verbal or mathematical statement of a relation that expresses a fundamental principle of some theory, such as Newton's law of universal gravitation.
-
 
 ### Theory and experiment
 
@@ -57,12 +50,10 @@ Physicists who work at the interplay of theory and experiment are called phenome
 Theoretical physics has historically taken inspiration from philosophy; electromagnetism was unified this way. Beyond the known universe, the field of theoretical physics also deals with hypothetical issues, such as parallel universes, a multiverse, and higher dimensions. Theorists invoke these ideas in hopes of solving particular problems with existing theories; they then explore the consequences of these ideas and work toward making testable predictions.
 Experimental physics expands, and is expanded by, engineering and technology. Experimental physicists who are involved in basic research design and perform experiments with equipment such as particle accelerators and lasers, whereas those involved in applied research often work in industry, developing technologies such as magnetic resonance imaging (MRI) and transistors. Feynman has noted that experimentalists may seek areas that have not been explored well by theorists.
 
-
 ### Scope and aims
 
 Physics covers a wide range of phenomena, from elementary particles (such as quarks, neutrinos, and electrons) to the largest superclusters of galaxies. Included in these phenomena are the most basic objects composing all other things. Therefore, physics is sometimes called the "fundamental science". Physics aims to describe the various phenomena that occur in nature in terms of simpler phenomena. Thus, physics aims to both connect the things observable to humans to root causes, and then connect these causes together.
 For example, the ancient Chinese observed that certain rocks (lodestone and magnetite) were attracted to one another by an invisible force. This effect was later called magnetism, which was first rigorously studied in the 17th century. But even before the Chinese discovered magnetism, the ancient Greeks knew of other objects such as amber, that when rubbed with fur would cause a similar invisible attraction between the two. This was also first studied rigorously in the 17th century and came to be called electricity. Thus, physics had come to understand two observations of nature in terms of some root cause (electricity and magnetism). However, further work in the 19th century revealed that these two forces were just two different aspects of one force—electromagnetism. This process of "unifying" forces continues today, and electromagnetism and the weak nuclear force are now considered to be two aspects of the electroweak interaction. Physics hopes to find an ultimate reason (theory of everything) for why nature is as it is (see section Current research below for more information).
-
 
 ### Current research
 
@@ -74,9 +65,7 @@ These complex phenomena have received growing attention since the 1970s for seve
 
 I am an old man now, and when I die and go to heaven there are two matters on which I hope for enlightenment. One is quantum electrodynamics, and the other is the turbulent motion of fluids. And about the former I am rather optimistic.
 
-
 ## Branches and fields
-
 
 ### Fields
 The major fields of physics, along with their subfields and the theories and concepts they employ, are shown in the following table.
@@ -84,13 +73,11 @@ The major fields of physics, along with their subfields and the theories and con
 Since the 20th century, the individual fields of physics have become increasingly specialized, and today most physicists work in a single field for their entire careers. "Universalists" such as Einstein (1879–1955) and Lev Landau (1908–1968), who worked in multiple fields of physics, are now very rare.
 Contemporary research in physics can be broadly divided into nuclear and particle physics; condensed matter physics; atomic, molecular, and optical physics; astrophysics; and applied physics. Some physics departments also support physics education research and physics outreach.
 
-
 #### Nuclear and particle
 
 Particle physics is the study of the elementary constituents of matter and energy and the interactions between them. In addition, particle physicists design and develop the high-energy accelerators, detectors, and computer programs necessary for this research. The field is also called "high-energy physics" because many elementary particles do not occur naturally but are created only during high-energy collisions of other particles.
 Currently, the interactions of elementary particles and fields are described by the Standard Model. The model accounts for the 12 known particles of matter (quarks and leptons) that interact via the strong, weak, and electromagnetic fundamental forces. Dynamics are described in terms of matter particles exchanging gauge bosons (gluons, W and Z bosons, and photons, respectively). The Standard Model also predicts a particle known as the Higgs boson. In July 2012 CERN, the European laboratory for particle physics, announced the detection of a particle consistent with the Higgs boson, an integral part of the Higgs mechanism.
 Nuclear physics is the field of physics that studies the constituents and interactions of atomic nuclei. The most commonly known applications of nuclear physics are nuclear power generation and nuclear weapons technology, but the research has provided application in many fields, including those in nuclear medicine and magnetic resonance imaging, ion implantation in materials engineering, and radiocarbon dating in geology and archaeology.
-
 
 #### Atomic, molecular, and optical
 
@@ -98,13 +85,11 @@ Atomic, molecular, and optical physics (AMO) is the study of matter—matter and
 Atomic physics studies the electron shells of atoms. Current research focuses on activities in quantum control, cooling and trapping of atoms and ions, low-temperature collision dynamics and the effects of electron correlation on structure and dynamics. Atomic physics is influenced by the nucleus (see hyperfine splitting), but intra-nuclear phenomena such as fission and fusion are considered part of nuclear physics.
 Molecular physics focuses on multi-atomic structures and their internal and external interactions with matter and light. Optical physics is distinct from optics in that it tends to focus not on the control of classical light fields by macroscopic objects but on the fundamental properties of optical fields and their interactions with matter in the microscopic realm.
 
-
 #### Condensed matter
 
 Condensed matter physics is the field of physics that deals with the macroscopic physical properties of matter. In particular, it is concerned with the "condensed" phases that appear whenever the number of particles in a system is extremely large and the interactions between them are strong.
 The most familiar examples of condensed phases are solids and liquids, which arise from the bonding by way of the electromagnetic force between atoms. More exotic condensed phases include the superfluid and the Bose–Einstein condensate found in certain atomic systems at very low temperature, the superconducting phase exhibited by conduction electrons in certain materials, and the ferromagnetic and antiferromagnetic phases of spins on atomic lattices.
 Condensed matter physics is the largest field of contemporary physics. Historically, condensed matter physics grew out of solid-state physics, which is now considered one of its main subfields. The term condensed matter physics was apparently coined by Philip Anderson when he renamed his research group—previously solid-state theory—in 1967. In 1978, the Division of Solid State Physics of the American Physical Society was renamed as the Division of Condensed Matter Physics. Condensed matter physics has a large overlap with chemistry, materials science, nanotechnology and engineering.
-
 
 #### Astrophysics
 
@@ -113,15 +98,11 @@ The discovery by Karl Jansky in 1931 that radio signals were emitted by celestia
 Physical cosmology is the study of the formation and evolution of the universe on its largest scales. Albert Einstein's theory of relativity plays a central role in all modern cosmological theories. In the early 20th century, Hubble's discovery that the universe is expanding, as shown by the Hubble diagram, prompted rival explanations known as the steady state universe and the Big Bang.
 The Big Bang was confirmed by the success of Big Bang nucleosynthesis and the discovery of the cosmic microwave background in 1964. The Big Bang model rests on two theoretical pillars: Albert Einstein's general relativity and the cosmological principle. Cosmologists have recently established the ΛCDM model of the evolution of the universe, which includes cosmic inflation, dark energy, and dark matter.
 
-
 ## Other aspects
-
 
 ### Education
 
-
 ### Careers
-
 
 ### Philosophy
 
@@ -135,7 +116,6 @@ Physics uses mathematics to organize and formulate experimental results. From th
 Ontology is a prerequisite for physics, but not for mathematics. It means physics is ultimately concerned with descriptions of the real world, while mathematics is concerned with abstract patterns, even beyond the real world. Thus physics statements are synthetic, while mathematical statements are analytic. Mathematics contains hypotheses, while physics contains theories. Mathematics statements have to be only logically true, while predictions of physics statements must match observed and experimental data.
 The distinction is clear-cut, but not always obvious. For example, mathematical physics is the application of mathematics in physics. Its methods are mathematical, but its subject is physical. The problems in this field start with a "mathematical model of a physical situation" (system) and a "mathematical description of a physical law" that will be applied to that system. Every mathematical statement used for solving has a hard-to-find physical meaning. The final mathematical solution has an easier-to-find meaning, because it is what the solver is looking for.
 
-
 ### Fundamental vs. applied physics
 
 Physics is a branch of fundamental science (also called basic science). Physics is also called "the fundamental science" because all branches of natural science including chemistry, astronomy, geology, and biology are constrained by laws of physics. Similarly, chemistry is often called the central science because of its role in linking the physical sciences. For example, chemistry studies properties, structures, and reactions of matter (chemistry's focus on the molecular and atomic scale distinguishes it from physics). Structures are formed because particles exert electrical forces on each other, properties include physical characteristics of given substances, and reactions are bound by laws of physics, like conservation of energy, mass, and charge. Fundamental physics seeks to better explain and understand phenomena in all spheres, without a specific practical application as a goal, other than the deeper insight into the phenomema themselves.
@@ -147,6 +127,4 @@ Physics is used heavily in engineering. For example, statics, a subfield of mech
 With the standard consensus that the laws of physics are universal and do not change with time, physics can be used to study things that would ordinarily be mired in uncertainty. For example, in the study of the origin of the Earth, a physicist can reasonably model Earth's mass, temperature, and rate of rotation, as a function of time allowing the extrapolation forward or backward in time and so predict future or prior events. It also allows for simulations in engineering that speed up the development of a new technology.
 There is also considerable interdisciplinarity, so many other important fields are influenced by physics (e.g., the fields of econophysics and sociophysics).
 
-
 ## Sources
-

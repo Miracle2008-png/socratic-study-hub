@@ -5,25 +5,20 @@ Enriched uranium is used in both civil nuclear power generation and military nuc
 Large-scale enrichment was first developed during the Manhattan Project, which used gaseous diffusion and electromagnetic isotope separation to produce enriched uranium. Historically, gaseous diffusion and the gas centrifuge are the two enrichment methods that have operated on a commercial scale, but gaseous diffusion is now obsolete and has been replaced by centrifuge technology in commercial use. Laser isotope separation has also been developed as a possible third-generation enrichment technology; Global Laser Enrichment has applied to license a laser-based uranium enrichment facility in the United States, but centrifugation remains the enrichment process used commercially.
 The 238U remaining after enrichment is known as depleted uranium (DU), and is considerably less radioactive than natural uranium, though still very dense. Depleted uranium is used as a radiation shielding material and in armor-penetrating weapons.
 
-
 ## Grades
 Uranium as it is taken directly from the Earth is not suitable as fuel for most nuclear reactors and requires additional processes to make it usable (the CANDU design is a notable exception). Uranium is mined either underground or in an open pit depending on the depth at which it is found. After the uranium ore is mined, it must go through a milling process to extract the uranium from the ore. 
 This is accomplished by a combination of chemical processes with the end product being concentrated uranium oxide, which is known as "yellowcake", contains roughly 80% uranium whereas the original ore typically contains as little as 0.1% uranium.
 This yellowcake is further processed to obtain the desired form of uranium suitable for nuclear fuel production. After the milling process is complete, the uranium must next undergo a process of conversion, "to either uranium dioxide, which can be used as the fuel for those types of reactors that do not require enriched uranium, or into uranium hexafluoride, which can be enriched to produce fuel for the majority of types of reactors". Naturally occurring uranium is made of a mixture of 235U and 238U. The 235U is fissile, meaning it is easily split with neutrons while the remainder is 238U, but in nature, more than 99% of the extracted ore is 238U. Most nuclear reactors require enriched uranium, which is uranium with higher concentrations of 235U ranging between 3.5% and 4.5% (although a few reactor designs using a graphite or heavy water moderator, such as the RBMK and CANDU, are capable of operating with natural uranium as fuel). There are two commercial enrichment processes: gaseous diffusion and gas centrifugation. Both enrichment processes involve the use of uranium hexafluoride and produce enriched uranium oxide.
 
-
 ### Reprocessed uranium (RepU)
 
 Reprocessed uranium (RepU) undergoes a series of chemical and physical treatments to extract usable uranium from spent nuclear fuel. RepU is a product of nuclear fuel cycles involving nuclear reprocessing of spent fuel. RepU recovered from light water reactor (LWR) spent fuel typically contains slightly more 235U than natural uranium, and therefore could be used to fuel reactors that customarily use natural uranium as fuel, such as CANDU reactors. It also contains the undesirable isotope uranium-236, which undergoes neutron capture, wasting neutrons (and requiring higher 235U enrichment) and creating neptunium-237, which would be one of the more mobile and troublesome radionuclides in deep geological repository disposal of nuclear waste. Reprocessed uranium often carries traces of other transuranic elements and fission products, necessitating careful monitoring and management during fuel fabrication and reactor operation.
 
-
 ### Low-enriched uranium (LEU)
 Low-enriched uranium (LEU) has a lower than 20% concentration of 235U; for instance, in commercial LWR, the most prevalent power reactors in the world, uranium is enriched to 3 to 5% 235U. Slightly enriched uranium (SEU) has a concentration of under 2% 235U.
 
-
 ### High-assay LEU (HALEU)
 High-assay LEU (HALEU) is enriched between 5% and 20% and is called for in many small modular reactor (SMR) designs. Fresh LEU used in research reactors is usually enriched between 12% and 19.75% 235U; the latter concentration is used to replace HEU fuels when converting to LEU.
-
 
 ### Highly enriched uranium (HEU)
 
@@ -33,7 +28,6 @@ The first uranium bomb, Little Boy, dropped by the United States on Hiroshima in
 Later U.S. nuclear weapons usually use plutonium-239 in the primary stage, but the jacket or tamper secondary stage, which is compressed by the primary nuclear explosion, often uses HEU with enrichment between 40% and 80% along with the fusion fuel lithium deuteride. This multi-stage design enhances the efficiency and effectiveness of nuclear weapons, allowing for greater control over the release of energy during detonation. For the secondary of a large nuclear weapon, the higher critical mass of less-enriched uranium can be an advantage as it allows the core at explosion time to contain a larger amount of fuel. This design strategy optimizes the explosive yield and performance of advanced nuclear weapons systems. The 238U is not said to be fissile but still is fissionable by fast neutrons (>2 MeV) such as the ones produced during D–T fusion.
 HEU is also used in fast neutron reactors, whose cores require about 20% or more of fissile material, as well as in naval reactors, where it often contains at least 50% 235U, but typically does not exceed 90%. These specialized reactor systems rely on highly enriched uranium for their unique operational requirements, including high neutron flux and precise control over reactor dynamics. The Fermi-1 commercial fast reactor prototype used HEU with 26.5% 235U. Significant quantities of HEU are used in the production of medical isotopes, for example molybdenum-99 for technetium-99m generators. The medical industry benefits from the unique properties of highly enriched uranium, which enable the efficient production of critical isotopes essential for diagnostic imaging and therapeutic applications.
 
-
 ## Enrichment methods
 Isotope separation is difficult because isotopes of the same element have nearly identical chemical properties and differ only slightly in mass. In the case of uranium, 235U is about 1.26% lighter than 238U. Commercial enrichment normally uses uranium hexafluoride (UF6) rather than atomic uranium, which further reduces the relative mass difference between the molecules containing the two isotopes. UF6 is used because fluorine has only one naturally occurring isotope and because UF6 can be handled as a gas at suitable operating temperatures.
 Because each separation step produces only a small change in isotope concentration, enrichment plants use a cascade of many stages. Each stage passes a slightly enriched product stream to the next stage and returns a slightly depleted stream to the previous stage.
@@ -41,69 +35,53 @@ Historically, the two uranium enrichment methods that have operated on a commerc
 In the mid-2020s, commercial uranium enrichment is performed by gas centrifuge plants. Centrifuge enrichment uses UF6 gas and separates isotopes by exploiting the small mass difference between molecules containing 235U and 238U. Modern centrifuge plants require far less electricity than gaseous diffusion plants; the World Nuclear Association estimates roughly 40–50 kWh per separative work unit for modern centrifuge plants, compared with about 2,400–2,500 kWh per SWU for gaseous diffusion.
 Laser isotope separation has also been investigated as a possible third-generation enrichment technology. One such process, SILEX, is being commercialized by Global Laser Enrichment (GLE). In 2025, GLE submitted a license application for the proposed Paducah Laser Enrichment Facility, and the Nuclear Regulatory Commission accepted the application for detailed review. Laser enrichment has not yet displaced centrifuge enrichment in commercial operation.
 
-
 ### Diffusion techniques
-
 
 #### Gaseous diffusion
 
 Gaseous diffusion is a technology used to produce enriched uranium by forcing gaseous uranium hexafluoride ('hex') through semi-permeable membranes. This produces a slight separation between the molecules containing 235U and 238U. Throughout the Cold War, gaseous diffusion played a major role as a uranium enrichment technique, and as of 2008 accounted for about 33% of enriched uranium production, but in 2011 was deemed an obsolete technology that is steadily being replaced by the later generations of technology as the diffusion plants reach their ends of life. In 2013, the Paducah facility in the U.S. ceased operating; it was the last commercial 235U gaseous diffusion plant in the world.
 
-
 #### Thermal diffusion
 Thermal diffusion uses the transfer of heat across a thin liquid or gas to accomplish isotope separation.  The process exploits the fact that the lighter 235U gas molecules will diffuse toward a hot surface, and the heavier 238U gas molecules will diffuse toward a cold surface. At the S-50 plant in Oak Ridge, Tennessee, during World War II, liquid uranium hexafluoride was placed between two concentric vertical pipes, with the inner pipe heated and the outer pipe cooled. This caused lighter 235U molecules to migrate toward the hot inner wall and heavier 238U molecules toward the cold outer wall, with convection currents carrying the enriched uranium upward for collection, and the height of the columns directly influenced the degree of separation. The facility was used to prepare feed material for the Electromagnetic Isotope Separation (EMIS) process but was later abandoned in favor of gaseous diffusion.
 
-
 ### Centrifuge techniques
-
 
 #### Gas centrifuge
 
 The gas centrifuge process uses a large number of rotating cylinders in series and parallel formations. Each cylinder's rotation creates a strong centripetal force so that the heavier gas molecules containing 238U move tangentially toward the outside of the cylinder and the lighter gas molecules rich in 235U collect closer to the center. It requires much less energy to achieve the same separation than the older gaseous diffusion process, which it has largely replaced and so is the current method of choice and is termed second generation. It has a separation factor per stage of 1.3 relative to gaseous diffusion of 1.005, which translates to about one-fiftieth of the energy requirements. Gas centrifuge techniques produce close to 100% of the world's enriched uranium. The cost per separative work unit is approximately 100 dollars per Separative Work Units (SWU), making it about 40% cheaper than standard gaseous diffusion techniques.
 
-
 #### Zippe centrifuge
 
 The Zippe-type centrifuge is an improvement on the standard gas centrifuge, the primary difference being the use of heat. The bottom of the rotating cylinder is heated, producing convection currents that move the 235U up the cylinder, where it can be collected by scoops. This improved centrifuge design is used commercially by Urenco to produce nuclear fuel and was used by Pakistan in its nuclear weapons program.
 
-
 ### Laser techniques
 Laser processes promise lower energy inputs, lower capital costs and lower tails assays, hence significant economic advantages. Several laser processes have been investigated or are under development. Separation of isotopes by laser excitation (SILEX) is well developed and is licensed for commercial operation as of 2012. Separation of isotopes by laser excitation is a very effective and cheap method of uranium separation, able to be done in small facilities requiring much less energy and space than previous separation techniques. The cost of uranium enrichment using laser enrichment technologies is approximately $30 per SWU which is less than a third of the price of gas centrifuges, the current standard of enrichment. Separation of isotopes by laser excitation could be done in facilities virtually undetectable by satellites. More than 20 countries worked with laser separation during the 1990s and 2000s, though all achieved very limited success.
-
 
 #### Atomic vapor laser isotope separation (AVLIS)
 Atomic vapor laser isotope separation employs specially tuned lasers to separate isotopes of uranium using selective ionization of hyperfine transitions. The technique uses lasers tuned to frequencies that ionize 235U atoms and no others. The positively charged 235U ions are then attracted to a negatively charged plate and collected.
 
-
 #### Molecular laser isotope separation (MLIS)
 Molecular laser isotope separation uses an infrared laser directed at UF6, exciting molecules that contain a 235U atom. A second laser frees a fluorine atom, leaving uranium pentafluoride, which then precipitates out of the gas.
-
 
 #### Separation of isotopes by laser excitation (SILEX)
 Separation of isotopes by laser excitation is an Australian development that also uses UF6. After a protracted development process involving U.S. enrichment company USEC acquiring and then relinquishing commercialization rights to the technology, GE Hitachi Nuclear Energy (GEH) signed a commercialization agreement with Silex Systems in 2006. GEH has since built a demonstration test loop and announced plans to build an initial commercial facility. Details of the process are classified and restricted by intergovernmental agreements between United States, Australia, and the commercial entities. SILEX has been projected to be an order of magnitude more efficient than existing production techniques but again, the exact figure is classified. In August 2011 Global Laser Enrichment, a subsidiary of GEH, applied to the U.S. Nuclear Regulatory Commission (NRC) for a permit to build a commercial plant. In September 2012, the NRC issued a license for GEH to build and operate a commercial SILEX enrichment plant, although the company had not yet decided whether the project would be profitable enough to begin construction, and despite concerns that the technology could contribute to nuclear proliferation. The fear of nuclear proliferation arose in part due to laser separation technology requiring less than 25% of the space of typical separation techniques, as well as requiring only the energy that would power 12 typical houses, putting a laser separation plant that works by means of laser excitation well below the detection threshold of existing surveillance technologies. Due to these concerns the American Physical Society filed a petition with the NRC, asking that before any laser excitation plants are built that they undergo a formal review of proliferation risks. The APS even went as far as calling the technology a "game changer" due to the ability for it to be hidden from any type of detection.
 The foundational proliferation assessment of this technology was provided by Princeton physicist Ryan Snyder. It includes a detailed analysis of how the technology works and the challenges it presents for detecting clandestine uranium enrichment facilities.
 
-
 ### Other techniques
-
 
 #### Aerodynamic processes
 
 Aerodynamic enrichment processes include the Becker jet nozzle techniques developed by E. W. Becker and associates using the LIGA process and the vortex tube separation process. These aerodynamic separation processes depend upon diffusion driven by pressure gradients, as does the gas centrifuge. They in general have the disadvantage of requiring complex systems of cascading of individual separating elements to minimize energy consumption. In effect, aerodynamic processes can be considered as non-rotating centrifuges. Enhancement of the centrifugal forces is achieved by dilution of UF6 with hydrogen or helium as a carrier gas achieving a much higher flow velocity for the gas than could be obtained using pure uranium hexafluoride. The Uranium Enrichment Corporation of South Africa (UCOR) developed and deployed the continuous Helikon vortex separation cascade for high production rate low-enrichment and the substantially different semi-batch Pelsakon low production rate high enrichment cascade both using a particular vortex tube separator design, and both embodied in industrial plant. A demonstration plant was built in Brazil by NUCLEI, a consortium led by Industrias Nucleares do Brasil that used the separation nozzle process. All methods have high energy consumption and substantial requirements for removal of waste heat; none is currently still in use.
 
-
 #### Electromagnetic isotope separation
 
 In the electromagnetic isotope separation process (EMIS), metallic uranium is first vaporized, and then ionized to positively charged ions. The cations are then accelerated and subsequently deflected by magnetic fields onto their respective collection targets. A production-scale mass spectrometer named the calutron was developed during World War II that provided some of the 235U used for the Little Boy nuclear bomb, which was dropped over Hiroshima in 1945. Properly the term 'calutron' applies to a multistage device arranged in a large oval around a powerful electromagnet. Electromagnetic isotope separation has been largely abandoned in favour of more effective methods.
 
-
 #### Chemical methods
 One chemical process has been demonstrated to pilot plant stage but not used for production. The French CHEMEX process exploited a very slight difference in the two isotopes' propensity to change valency in oxidation/reduction, using immiscible aqueous and organic phases. An ion-exchange process was developed by the Asahi Chemical Company in Japan that applies similar chemistry but effects separation on a proprietary resin ion-exchange column.
 
-
 #### Plasma separation
 Plasma separation process (PSP) describes a technique that makes use of superconducting magnets and plasma physics. In this process, the principle of ion cyclotron resonance is used to selectively energize the 235U isotope in a plasma containing a mix of ions. France developed its own version of PSP, which it called RCI. Funding for RCI was drastically reduced in 1986, and the program was suspended around 1990, although RCI is still used for stable isotope separation.
-
 
 ## Separative work unit
 "Separative work"—the amount of separation done by an enrichment process—is a function of the concentrations of the feedstock, the enriched output, and the depleted tailings; and is expressed in units that are so calculated as to be proportional to the total input (energy / machine operation time) and to the mass processed. Separative work is not energy. The same amount of separative work will require different amounts of energy depending on the efficiency of the separation technology. Separative work is measured in Separative work units SWU, kg SW, or kg UTA (from the German Urantrennarbeit – literally uranium separation work). Efficient utilization of separative work is crucial for optimizing the economic and operational performance of uranium enrichment facilities. 
@@ -111,12 +89,10 @@ Plasma separation process (PSP) describes a technique that makes use of supercon
 1 kSWU = 1 tSW = 1 t UTA
 1 MSWU = 1 ktSW = 1 kt UTA
 
-
 ## Cost issues
 In addition to the separative work units provided by an enrichment facility, the other important parameter to be considered is the mass of natural uranium (NU) that is needed to yield a desired mass of enriched uranium. As with the number of SWUs, the amount of feed material required will also depend on the level of enrichment desired and upon the amount of 235U that ends up in the depleted uranium. However, unlike the number of SWUs required during enrichment, which increases with decreasing levels of 235U in the depleted stream, the amount of NU needed will decrease with decreasing levels of 235U that end up in the DU.
 For example, in the enrichment of LEU for use in a light water reactor it is typical for the enriched stream to contain 3.6% 235U (as compared to 0.7% in NU) while the depleted stream contains 0.2% to 0.3% 235U. In order to produce one kilogram of this LEU it would require approximately 8 kilograms of NU and 4.5 SWU if the DU stream was allowed to have 0.3% 235U. On the other hand, if the depleted stream had only 0.2% 235U, then it would require just 6.7 kilograms of NU, but nearly 5.7 SWU of enrichment. Because the amount of NU required and the number of SWUs required during enrichment change in opposite directions, if NU is cheap and enrichment services are more expensive, then the operators will typically choose to allow more 235U to be left in the DU stream whereas if NU is more expensive and enrichment is less so, then they would choose the opposite.
 When converting uranium (hexafluoride, hex for short) to metal, 0.3% is lost during manufacturing.
-
 
 ## Downblending
 The opposite of enriching is downblending; surplus HEU can be downblended to LEU to make it suitable for use in commercial nuclear fuel. Downblending is a key process in nuclear non-proliferation efforts, as it reduces the amount of highly enriched uranium available for potential weaponization while repurposing it for peaceful purposes.
@@ -126,11 +102,8 @@ The blendstock can be NU or DU; however, depending on feedstock quality, SEU at 
 A major downblending undertaking called the Megatons to Megawatts Program converts ex-Soviet weapons-grade HEU to fuel for U.S. commercial power reactors. From 1995 through mid-2005, 250 tonnes of high-enriched uranium (enough for 10,000 warheads) was recycled into low-enriched uranium. The goal is to recycle 500 tonnes by 2013. The decommissioning programme of Russian nuclear warheads accounted for about 13% of total world requirement for enriched uranium leading up to 2008.  This ambitious initiative not only addresses nuclear disarmament goals but also serves as a significant contributor to global energy security and environmental sustainability, effectively repurposing material once intended for destructive purposes into a resource for peaceful energy production.
 The United States Enrichment Corporation has been involved in the disposition of a portion of the 174.3 tonnes of highly enriched uranium (HEU) that the U.S. government declared as surplus military material in 1996. Through the U.S. HEU Downblending Program, this HEU material, taken primarily from dismantled U.S. nuclear warheads, was recycled into low-enriched uranium (LEU) fuel, used by nuclear power plants to generate electricity. This innovative program not only facilitated the safe and secure elimination of excess weapons-grade uranium but also contributed to the sustainable operation of civilian nuclear power plants, reducing reliance on newly enriched uranium and promoting non-proliferation efforts globally
 
-
 ## Global enrichment facilities
 The following countries are known to operate enrichment facilities: Argentina, Brazil, China, France, Germany, India, Iran, Japan, the Netherlands, North Korea, Pakistan, Russia, the United Kingdom, and the United States. Belgium, Iran, Italy, and Spain hold an investment interest in the French Eurodif enrichment plant, with Iran's holding entitling it to 10% of the enriched uranium output. Countries that had enrichment programs in the past include Libya and South Africa, although Libya's facility was never operational. The Australian company Silex Systems has developed a laser enrichment process known as SILEX (separation of isotopes by laser excitation), which it intends to pursue through financial investment in a U.S. commercial venture by General Electric, Although SILEX has been granted a license to build a plant, the development is still in its early stages as laser enrichment has yet to be proven to be economically viable, and there is a petition being filed to review the license given to SILEX over nuclear proliferation concerns. It has also been claimed that Israel has a uranium enrichment program housed at the Negev Nuclear Research Center site near Dimona.
 
-
 ## Codename
 During the Manhattan Project, weapons-grade highly enriched uranium was given the codename oralloy, a shortened version of Oak Ridge alloy, after the location of the plants where the uranium was enriched. The term oralloy is still occasionally used to refer to enriched uranium.
-

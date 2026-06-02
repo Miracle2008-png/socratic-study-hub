@@ -2,12 +2,10 @@
 
 This is an alphabetical list of articles pertaining specifically to chemical engineering.
 
-
 ## A
 Absorption -- 
 Adsorption -- 
 Analytical chemistry --
-
 
 ## B
 Bioaccumulate  -- 
@@ -24,7 +22,6 @@ Bioseparation --
 Biotechnology -- 
 Bioreactor --  
 Biotite  --
-
 
 ## C
 Catalysis --
@@ -50,7 +47,6 @@ Conservation of mass --
 Conservation of momentum -- 
 Crystallization processes --
 
-
 ## D
 Deal-Grove model --
 Dehumidification --
@@ -63,7 +59,6 @@ Diffusion --
 Distillation --
 Drag coefficient --
 Drying --
-
 
 ## E
 Electrochemical engineering --
@@ -81,7 +76,6 @@ Engineering --
 Engineering economics --
 Enzymatic reaction --
 
-
 ## F
 Filtration --
 Fluid dynamics --
@@ -89,34 +83,27 @@ Flow battery --
 Fuel cell --
 Fuel technology --
 
-
 ## G
 Gasification --
-
 
 ## H
 Heat transfer -- 
 History of chemical engineering --
 Hydrometallurgy --
 
-
 ## I
 Immobilization --
 Inorganic chemistry --
 Ion exchange --
 
-
 ## J
-
 
 ## K
 Kinetics (physics) --
 
-
 ## L
 Laboratory --
 Leaching --
-
 
 ## M
 Mass balance -- 
@@ -130,15 +117,12 @@ Mineral processing --
 Mixing --
 Momentum transfer --
 
-
 ## N
 Nanoengineering --
 Nanotechnology --
 
-
 ## O
 Organic chemistry --
-
 
 ## P
 Periodic table -- 
@@ -151,18 +135,15 @@ Process design --
 Process modeling --
 Process safety --
 
-
 ## Q
 Qualitative inorganic analysis -- 
 Quantitative analysis --
 Quantum chemistry --  
 Quartz --
 
-
 ## R
 Rate equation -- 
 Reverse osmosis --
-
 
 ## S
 Science --
@@ -171,32 +152,25 @@ Solid-state chemistry --
 Solvent extraction --
 Supercritical fluids --
 
-
 ## T
 Thermodynamics --
 Timeline of chemical element discovery --
 Transport phenomena
 
-
 ## U
 Ultrafiltration --
 Unit operation --
 
-
 ## V
 Volatility --
-
 
 ## W
 Water and waste water treatment --
 Waste minimization --
 
-
 ## X
 
-
 ## Y
-
 
 ## Z
 Zeolite --  

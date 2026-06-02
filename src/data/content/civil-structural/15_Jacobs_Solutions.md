@@ -2,13 +2,6 @@
 
 Jacobs Solutions Inc. is an American international technical professional services firm based in Dallas. The company provides engineering, technical, professional, and construction services as well as scientific and specialty consulting for a broad range of clients globally, including companies, organizations, and government agencies. Jacobs has consistently ranked No. 1 on both Engineering News-Record (ENR)'s 2018, 2019, 2020, 2021, 2022, and 2023 Top 500 Design Firms and Trenchless Technology’s 2018, 2019, 2020, and 2021 Top 50 Trenchless Engineering Firms. Its worldwide annual revenue were over $12 billion in the 2025 fiscal year, and earnings dropped to $289 million.
 
-## Overview
-
-Jacobs Engineering was founded in 1947, by Joseph J. Jacobs. The company's chief executive officer is Bob Pragada. He has been the CEO since January 2023. Steve Demetriou, the CEO from 2015 to 2023, now serves as the executive chair. The previous president and CEO was Craig L. Martin from 2006 until 2014.
-The company is publicly traded as a Fortune 500 company. As of September 2018, Jacobs had more than 80,800 employees globally, and more than 400 offices in North America, South America, Europe, the Middle East, Australia, Africa, and Asia. In October 2016, the company moved its headquarters from Pasadena, California, to Dallas.
-On August 9, 2017, the Pentagon awarded a $4.6 billion Integrated Research & Development for Enterprise Solutions (IRES) follow-on contract to Jacobs Technology Inc, a unit of Jacobs Engineering Group Inc. to provide products and services for the Missile Defense Agency and its Missile Defense Integration and Operations Center. In October 2018, Jacobs agreed to sell its Energy, Chemicals and Resources (ECR) segment to WorleyParsons, a company in North Sydney, Australia. In April 2021, the Institute on Taxation and Economic Policy listed the top 55 corporations which paid $0 in taxes for the year 2020. Jacobs' federal income taxes for that year were negative $37 million for an effective tax rate of −17.4%.
-As of 2023, the company forms part of the Dow Jones Sustainability Indices. In 2024, Jacobs spun-off its Critical Mission Solutions and Cyber and Intelligence Government Services businesses which merged with privately held Amentum Government Services Holding LLC to create a new, publicly traded company, Amentum.
-
 ## Acquisitions
 
 On December 10, 1998, it was announced that Jacobs would acquire closely held engineering firm, Sverdrup Corporation for $200 million. In 2001, Jacobs acquired the international operations, including the international consultancy Sir Alexander Gibb & Partners (Gibb Ltd) based in the UK, from Law Engineering and Environmental Services in Atlanta.

@@ -2,7 +2,6 @@
 
 The concept entropy was first developed by German physicist Rudolf Clausius in the mid-nineteenth century as a thermodynamic property that predicts that certain spontaneous processes are irreversible or impossible. In statistical mechanics, entropy is formulated as a statistical property using probability theory. The statistical entropy perspective was introduced in 1870 by Austrian physicist Ludwig Boltzmann, who established a new field of physics that provided the descriptive linkage between the macroscopic observation of nature and the microscopic view based on the rigorous treatment of large ensembles of microscopic states that constitute thermodynamic systems.
 
-
 ## Boltzmann's principle
 
 Ludwig Boltzmann defined entropy as a measure of the number of possible microscopic states (microstates) of a system in thermodynamic equilibrium, consistent with its macroscopic thermodynamic properties, which constitute the macrostate of the system. A useful illustration is the example of a sample of gas contained in a container. The easily measurable parameters volume, pressure, and temperature of the gas describe its macroscopic condition (state). At a microscopic level, the gas consists of a vast number of freely moving atoms or molecules, which randomly collide with one another and with the walls of the container. The collisions with the walls produce the macroscopic pressure of the gas, which illustrates the connection between microscopic and macroscopic phenomena.
@@ -33,7 +32,6 @@ The proportionality constant kB is one of the fundamental constants of physics a
 Boltzmann's entropy describes the system when all the accessible microstates are equally likely. It is the configuration corresponding to the maximum of entropy at equilibrium. The randomness or disorder is maximal, and so is the lack of distinction (or information) of each microstate.
 Entropy is a thermodynamic property just like pressure, volume, or temperature. Therefore, it connects the microscopic and the macroscopic world view.
 Boltzmann's principle is regarded as the foundation of statistical mechanics.
-
 
 ## Gibbs entropy formula
 The macroscopic state of a system is characterized by a distribution on the microstates. The entropy of this distribution is given by the Gibbs entropy formula, named after J. Willard Gibbs. For a classical system (i.e., a collection of classical particles) with a discrete set of microstates, if Ei is the energy of microstate i, and pi is the probability that it occurs during the system's fluctuations, then the entropy of the system is
@@ -160,7 +158,6 @@ It has been shown that the Gibbs entropy is equal to the classical "heat engine"
     {\displaystyle dS={\delta Q}/{T}}
   
 , and the generalized Boltzmann distribution is a sufficient and necessary condition for this equivalence. Furthermore, the Gibbs entropy is the only entropy measure that is equivalent to the classical "heat engine" entropy under the following postulates:
-
 
 ### Ensembles
 The various ensembles used in statistical thermodynamics are linked to the entropy by the following relations:
@@ -308,7 +305,6 @@ The various ensembles used in statistical thermodynamics are linked to the entro
   
  is the grand canonical partition function
 
-
 ## Order through chaos and the second law of thermodynamics
 We can think of Ω as a measure of our lack of knowledge about a system. To illustrate this idea, consider a set of 100 coins, each of which is either heads up or tails up. In this example, let us suppose that the macrostates are specified by the total number of heads and tails, while the microstates are specified by the facings of each individual coin (i.e., the exact order in which heads and tails occur). For the macrostates of 100 heads or 100 tails, there is exactly one possible configuration, so our knowledge of the system is complete. At the opposite extreme, the macrostate which gives us the least knowledge about the system consists of 50 heads and 50 tails in any order, for which there are 100891344545564193334812497256 (100 choose 50) ≈ 1029 possible microstates.
 Even when a system is entirely isolated from external influences, its microstate is constantly changing. For instance, the particles in a gas are constantly moving, and thus occupy a different position at each moment of time; their momenta are also constantly changing as they collide with each other or with the container walls. Suppose we prepare the system in an artificially highly ordered equilibrium state. For instance, imagine dividing a container with a partition and placing a gas on one side of the partition, with a vacuum on the other side. If we remove the partition and watch the subsequent behavior of the gas, we will find that its microstate evolves according to some chaotic and unpredictable pattern, and that on average these microstates will correspond to a more disordered macrostate than before. It is possible, but extremely unlikely, for the gas molecules to bounce off one another in such a way that they remain in one half of the container. It is overwhelmingly probable for the gas to spread out to fill the container evenly, which is the new equilibrium macrostate of the system.
@@ -316,7 +312,6 @@ This is an example illustrating the second law of thermodynamics:
 
 the total entropy of any isolated thermodynamic system tends to increase over time, approaching a maximum value.
 Since its discovery, this idea has been the focus of a great deal of thought, some of it confused. A chief point of confusion is the fact that the Second Law applies only to isolated systems. For example, the Earth is not an isolated system because it is constantly receiving energy in the form of sunlight. In contrast, the universe may be considered an isolated system, so that its total entropy is constantly increasing. (Needs clarification. See: Second law of thermodynamics#cite note-Grandy 151-21)
-
 
 ## Counting of microstates
 In classical statistical mechanics, the number of microstates is actually uncountably infinite, since the properties of classical systems are continuous. For example, a microstate of a classical ideal gas is specified by the positions and momenta of all the atoms, which range continuously over the real numbers. If we want to define Ω, we have to come up with a method of grouping the microstates together to obtain a countable set. This procedure is known as coarse graining. In the case of the ideal gas, we count two states of an atom as the "same" state if their positions and momenta are within δx and δp of each other. Since the values of δx and δp can be chosen arbitrarily, the entropy is not uniquely defined. It is defined only up to an additive constant. (As we will see, the thermodynamic definition of entropy is also defined only up to a constant.)
@@ -521,4 +516,3 @@ where
     {\displaystyle E_{n}}
   
  does not equal 0, in adherence to the Heisenberg uncertainty principle.
-

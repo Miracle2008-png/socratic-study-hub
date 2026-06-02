@@ -2,10 +2,8 @@
 
 Adaptive control is the control method used by a controller which must adapt to a controlled system with parameters which vary, or are initially uncertain. For example, as an aircraft flies, its mass will slowly decrease as a result of fuel consumption; a control law is needed that adapts itself to such changing conditions. Adaptive control is different from robust control in that it does not need a priori information about the bounds on these uncertain or time-varying parameters; robust control guarantees that if the changes are within given bounds the control law need not be changed, while adaptive control is concerned with control law changing itself.
 
-
 ## Parameter estimation
 The foundation of adaptive control is parameter estimation, which is a branch of system identification. Common methods of estimation include recursive least squares and gradient descent. Both of these methods provide update laws that are used to modify estimates in real-time (i.e., as the system operates). Lyapunov stability is used to derive these update laws and show convergence criteria (typically persistent excitation; relaxation of this condition are studied in Concurrent Learning adaptive control). Projection and normalization are commonly used to improve the robustness of estimation algorithms.
-
 
 ## Classification of adaptive control techniques
 In general, one should distinguish between:
@@ -50,17 +48,3 @@ Adaptive control of multivariable processes
 Adaptive control of nonlinear processes
 Concurrent learning adaptive control, which relaxes the condition on persistent excitation for parameter convergence for a class of systems
 In recent times, adaptive control has been merged with intelligent techniques such as fuzzy and neural networks to bring forth new concepts such as fuzzy adaptive control.
-
-
-## Applications
-When designing adaptive control systems, special consideration is necessary of convergence and robustness issues. Lyapunov stability is typically used to derive control adaptation laws and show .
-
-Self-tuning of subsequently fixed linear controllers during the implementation phase for one operating point;
-Self-tuning of subsequently fixed robust controllers during the implementation phase for whole range of operating points;
-Self-tuning of fixed controllers on request if the process behaviour changes due to ageing, drift, wear, etc.;
-Adaptive control of linear controllers for nonlinear or time-varying processes;
-Adaptive control or self-tuning control of nonlinear controllers for nonlinear processes;
-Adaptive control or self-tuning control of multivariable controllers for multivariable processes (MIMO systems);
-Usually these methods adapt the controllers to both the process statics and dynamics. In special cases the adaptation can be limited to the static behavior alone, leading to adaptive control based on characteristic curves for the steady-states or to extremum value control, optimizing the steady state. Hence, there are several ways to apply adaptive control algorithms.
-A particularly successful application of adaptive control has been adaptive flight control. This body of work has focused on guaranteeing stability of a model reference adaptive control scheme using Lyapunov arguments. Several successful flight-test demonstrations have been conducted, including fault tolerant adaptive control.
-

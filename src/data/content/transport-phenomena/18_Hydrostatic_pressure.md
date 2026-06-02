@@ -580,68 +580,6 @@ $$ \Delta z $$
   
  is the total height of the liquid column above the test area to the surface, and p0 is the atmospheric pressure, i.e., the pressure calculated from the remaining integral over the air column from the liquid surface to infinity. This can easily be visualized using a pressure prism.
 
-## Applications
-
-Hydrostatic pressure has been used in the preservation of foods in a process called pascalization.
-
-### Medicine
-
-In medicine, hydrostatic pressure in blood vessels is the pressure of the blood against the wall. It is the opposing force to oncotic pressure. In capillaries, hydrostatic pressure (also known as capillary blood pressure) is higher than the opposing “colloid osmotic pressure” in blood—a “constant” pressure primarily produced by circulating albumin—at the arteriolar end of the capillary. This pressure forces plasma and nutrients out of the capillaries and into surrounding tissues. Fluid and the cellular wastes in the tissues enter the capillaries at the venule end, where the hydrostatic pressure is less than the osmotic pressure in the vessel.
-
-### Atmospheric pressure
-
-Statistical mechanics shows that, for a pure ideal gas of constant temperature T in the earth gravitational field, its pressure, p will vary with height, h, as
-
-  
-    
-      
-        p
-        (
-        h
-        )
-        =
-        p
-        (
-        0
-        )
-        
-          e
-          
-            −
-            
-              
-                
-                  M
-                  g
-                  h
-                
-                
-                  k
-                  T
-                
-              
-            
-          
-        
-      
-    
-    
-
-$$ p(h)=p(0)e^{-{\frac {Mgh}{kT}}} $$
-
-  
-
-where
-
-g is the acceleration due to gravity
-T is the  absolute temperature
-k is Boltzmann constant
-M is the molecular mass of the gas
-p is the pressure
-h is the height
-This is known as the barometric formula, and may be derived from assuming the pressure is hydrostatic.
-If there are multiple types of molecules in the gas, the partial pressure of each type will be given by this equation. Under most conditions, the distribution of each species of gas is independent of the other species.
-
 ## Buoyancy
 
 Any body of arbitrary shape which is immersed, partly or fully, in a fluid will experience the action of a net force in the opposite direction of the local pressure gradient. If this pressure gradient arises from gravity, the net force is in the vertical direction opposite that of the gravitational force.  This vertical force is termed buoyancy or buoyant force and is equal in magnitude, but opposite in direction, to the weight of the displaced fluid.  Mathematically,

@@ -2,24 +2,20 @@
 
 Ekman transport is part of Ekman motion theory, first investigated in 1902 by Vagn Walfrid Ekman. Winds are the main source of energy for ocean circulation, and Ekman transport is a component of wind-driven ocean current. Ekman transport occurs when ocean surface waters are influenced by the friction force acting on them via the wind. As the wind blows it casts a friction force on the ocean surface that drags the upper 10-100m of the water column with it. However, due to the influence of the Coriolis effect, as the ocean water moves it is subject to a force at a 90° angle from the direction of motion causing the water to move at an angle to the wind direction. The direction of transport is dependent on the hemisphere: in the Northern Hemisphere, transport veers clockwise from wind direction, while in the Southern Hemisphere it veers anticlockwise. This phenomenon was first noted by Fridtjof Nansen, who recorded that ice transport appeared to occur at an angle to the wind direction during his Arctic expedition of the 1890s. Ekman transport has significant impacts on the biogeochemical properties of the world's oceans. This is because it leads to upwelling (Ekman suction) and downwelling (Ekman pumping) in order to obey mass conservation laws. Mass conservation, in reference to Ekman transfer, requires that any water displaced within an area must be replenished. This can be done by either Ekman suction or Ekman pumping depending on wind patterns.
 
-
 ## Mechanisms
 There are three major wind patterns that lead to Ekman suction or pumping. The first are wind patterns that are parallel to the coastline. Due to the Coriolis effect, surface water moves at a 90° angle to the wind current. If the wind moves in a direction causing the water to be pulled away from the coast then Ekman suction will occur. On the other hand, if the wind is moving in such a way that surface waters move towards the shoreline then Ekman pumping will take place.
 The second mechanism of wind currents resulting in Ekman transfer is the Trade Winds both north and south of the equator pulling surface waters towards the poles. There is a great deal of upwelling Ekman suction at the equator because water is being pulled northward north of the equator and southward south of the equator. This leads to a divergence in the water, resulting in Ekman suction, and therefore, upwelling.
 The third wind pattern influencing Ekman transfer is large-scale wind patterns in the open ocean. Open ocean wind circulation can lead to gyre-like structures of piled up sea surface water resulting in horizontal gradients of sea surface height. This pile up of water causes the water to have a downward flow and suction, due to gravity and mass balance. Ekman pumping downward in the central ocean is a consequence of this convergence of water.
-
 
 ## Ekman suction
 Ekman suction is the component of Ekman transport that results in areas of upwelling due to the divergence of water. Returning to the concept of mass conservation, any water displaced by Ekman transport must be replenished. As the water diverges it creates space and acts as a suction in order to fill in the space by pulling up, or upwelling, deep sea water to the euphotic zone.
 Ekman suction has major consequences for the biogeochemical processes in the area because it leads to upwelling. Upwelling carries nutrient rich, and cold deep-sea water to the euphotic zone, promoting phytoplankton blooms and kickstarting an extremely productive environment. Areas of upwelling lead to the promotion of fisheries with nearly half of the world's fish catch coming from areas of upwelling.
 Ekman suction occurs both along coastlines and in the open ocean, but also occurs along the equator. Along the Pacific coastline of California, Central America, and Peru, as well as along the Atlantic coastline of Africa there are areas of upwelling due to Ekman suction, as the currents move equatorwards. Due to the Coriolis effect the surface water moves 90° to the left (in the Southern Hemisphere, as it travels toward the equator) of the wind current, therefore causing the water to diverge from the coast boundary, leading to Ekman suction. Additionally, there are areas of upwelling as a consequence of Ekman suction where the Polar Easterlies winds meet the Westerlies in the subpolar regions north of the subtropics, as well as where the Northeast Trade Winds meet the Southeast Trade Winds along the Equator.
 
-
 ## Ekman pumping
 Ekman pumping is the component of Ekman transport that results in areas of downwelling due to the convergence of water. As discussed above, the concept of mass conservation requires that a pile up of surface water must be pushed downward. This pile up of warm, nutrient-poor surface water gets pumped vertically down the water column, resulting in areas of downwelling.
 Ekman pumping has dramatic impacts on the surrounding environments. Downwelling, due to Ekman pumping, leads to nutrient poor waters, therefore reducing the biological productivity of the area. Additionally, it transports heat and dissolved oxygen vertically down the water column as warm oxygen rich surface water is being pumped towards the deep ocean water.
 Ekman pumping can be found along the coasts as well as in the open ocean. Along the Pacific Coast in the Southern Hemisphere northerly winds move parallel to the coastline. Due to the Coriolis effect the surface water gets pulled 90° to the left of the wind current, therefore causing the water to converge along the coast boundary, leading to Ekman pumping. In the open ocean Ekman pumping occurs with gyres. Specifically, in the subtropics, between 20°N and 50°N, there is Ekman pumping as the tradewinds shift to westerlies causing a pile up of surface water.
-
 
 ## Mathematical derivation
 Some assumptions of the fluid dynamics involved in the process must be made in order to simplify the process to a point where it is solvable. The assumptions made by Ekman were:
@@ -909,26 +905,15 @@ in equation 3 the plus sign applies to the Northern Hemisphere and the minus sig
  is the Ekman depth (depth of Ekman layer).
 By solving this at z=0, the surface current is found to be (as expected) 45 degrees to the right (left) of the wind in the Northern (Southern) Hemisphere. This also gives the expected shape of the Ekman spiral, both in magnitude and direction. Integrating these equations over the Ekman layer shows that the net Ekman transport term is 90 degrees to the right (left) of the wind in the Northern (Southern) Hemisphere.
 
-
-## Applications
-Ekman transport leads to coastal upwelling, which provides the nutrient supply for some of the largest fishing markets on the planet and can impact the stability of the Antarctic Ice Sheet by pulling warm deep water onto the continental shelf. Wind in these regimes blows parallel to the coast (such as along the coast of Peru, where the wind blows out of the southeast, and also in California, where it blows out of the northwest). From Ekman transport, surface water has a net movement of 90° to right of wind direction in the Northern Hemisphere (left in the Southern Hemisphere). Because the surface water flows away from the coast, the water must be replaced with water from below. In shallow coastal waters, the Ekman spiral is normally not fully formed and the wind events that cause upwelling episodes are typically rather short. This leads to many variations in the extent of upwelling, but the ideas are still generally applicable.
-Ekman transport is similarly at work in equatorial upwelling, where, in both hemispheres, a trade wind component towards the west causes a net transport of water towards the pole, and a trade wind component towards the east causes a net transport of water away from the pole.
-On smaller scales, cyclonic winds induce Ekman transport which causes net divergence and upwelling, or Ekman suction, while anti-cyclonic winds cause net convergence and downwelling, or Ekman pumping
-Ekman transport is also a factor in the circulation of the ocean gyres and garbage patches. Ekman transport causes water to flow toward the center of the gyre in all locations, creating a sloped sea-surface, and initiating geostrophic flow (Colling p 65). Harald Sverdrup applied Ekman transport while including pressure gradient forces to develop a theory for this (see Sverdrup balance).
-
-
 ## Exceptions
 The Ekman theory describing wind-induced current on a rotating planet explains why surface currents in the Northern Hemisphere are generally deflected to the right of wind direction, and in the Southern Hemisphere to the left in most cases. There are also solutions for opposite deflections at periods shorter than the local inertial period, which were not mentioned by Ekman, and are seldom observed. A major example of this effect occurs in the Bay of Bengal, where surface flow is offset to the left of wind direction in the Northern Hemisphere. Ekman's theory can be refined to include this case.
-
 
 ## Theory
 Ekman theory explains the theoretical state of circulation if water currents were driven only by the transfer of momentum from the wind. In the physical world, this is difficult to observe because of the influences of many simultaneous current driving forces (for example, pressure and density gradients). Though the following theory technically applies to the idealized situation involving only wind forces, Ekman motion describes the wind-driven portion of circulation seen in the surface layer.
 Surface currents flow at a 45° angle to the wind due to a balance between the Coriolis force and the drags generated by the wind and the water. If the ocean is divided vertically into thin layers, the magnitude of the velocity (the speed) decreases from a maximum at the surface until it dissipates. The direction also shifts slightly across each subsequent layer (right in the Northern Hemisphere and left in the Southern Hemisphere). This is called an Ekman spiral. The layer of water from the surface to the point of dissipation of this spiral is known as the Ekman layer. If all flow over the Ekman layer is integrated, the net transportation is at 90° to the right (left) of the surface wind in the Northern (Southern) Hemisphere.
 
-
 ### Ekman spiral
  The Ekman spiral is an arrangement of ocean currents: the directions of horizontal current appear to twist as the depth changes. The oceanic wind driven Ekman spiral is the result of a force balance created by a shear stress force, Coriolis force and the water drag. This force balance gives a resulting current of the water different from the winds. In the ocean, there are two places where the Ekman spiral can be observed. At the surface of the ocean, the shear stress force corresponds with the wind stress force. At the bottom of the ocean, the shear stress force is created by friction with the ocean floor. This phenomenon was first observed at the surface by the Norwegian oceanographer Fridtjof Nansen during his Fram expedition. He noticed that icebergs did not drift in the same direction as the wind. His student, the Swedish oceanographer Vagn Walfrid Ekman, was the first person to physically explain this process.
-
 
 #### Bottom Ekman spiral
 
@@ -2023,7 +2008,6 @@ For higher values of
   
 . Because of these properties, the velocity vector of the flow as a function of depth will look like a spiral.
 
-
 #### Surface Ekman spiral
 
 The solution for the flow forming the bottom Ekman spiral was a result of the shear stress exerted on the flow by the bottom. Logically, wherever shear stress can be exerted on a flow, Ekman spirals will form. This is the case at the air–water interface, because of wind. A situation is considered where a wind stress 
@@ -2587,15 +2571,12 @@ Some differences with respect to the bottom Ekman spiral emerge. The deviation f
   
 . So if the layer thickness is small, because of a small viscosity of the fluid for example, this component could be very large. At last, the flow at the surface is 45 degrees to the right on the Northern Hemisphere and 45 degrees to the left on the Southern Hemisphere with respect to the wind-direction. In case of the bottom Ekman spiral, this is the other way around.
 
-
 #### Observations
 The equations and assumptions above are not representative for the actual observations of the Ekman spiral. The differences between the theory and the observations are that the angle is between 5–20 degrees instead of the 45 degrees as expected and that the Ekman layer depth and thus the Ekman spiral is less deep than expected. There are three main factors which contribute to the reason why this is, stratification, turbulence and horizontal gradients. Other less important factors which play a role in this are the Stokes drift, waves and the Stokes-Coriolis force.
-
 
 ### Ekman layer
 The Ekman layer is the layer in a fluid where there is a force balance between pressure gradient force, Coriolis force and turbulent drag. It was first described by Vagn Walfrid Ekman. Ekman layers occur both in the atmosphere and in the ocean.
 There are two types of Ekman layers. The first type occurs at the surface of the ocean and is forced by surface winds, which act as a drag on the surface of the ocean. The second type occurs at the bottom of the atmosphere and ocean, where frictional forces are associated with flow over rough surfaces.
-
 
 #### Mathematical formulation
 The mathematical formulation of the Ekman layer begins by assuming a neutrally stratified fluid, a balance between the forces of pressure gradient, Coriolis and turbulent drag.
@@ -2852,7 +2833,6 @@ where
  is a modified pressure: we have incorporated the hydrostatic of the pressure, to take account of gravity.
 There are many regions where an Ekman layer is theoretically plausible; they include the bottom of the atmosphere, near the surface of the earth and ocean, the bottom of the ocean, near the sea floor and at the top of the ocean, near the air-water interface. Different boundary conditions are appropriate for each of these different situations. Each of these situations can be accounted for through the boundary conditions applied to the resulting system of ordinary differential equations. The separate cases of top and bottom boundary layers are shown below.
 
-
 #### Ekman layer at the ocean (or free) surface
 We will consider boundary conditions of the Ekman layer in the upper ocean:
 
@@ -3059,7 +3039,6 @@ For the boundary condition on the other side, as
     {\displaystyle \ y}
   
  directions.
-
 
 #### Solution
 
@@ -3570,7 +3549,6 @@ By applying the continuity equation we can have the vertical velocity as followi
 
 Note that when vertically-integrated, the volume transport associated with the Ekman spiral is to the right of the wind direction in the Northern Hemisphere.
 
-
 #### Ekman layer at the bottom of the ocean and atmosphere
 The traditional development of Ekman layers bounded below by a surface utilizes two boundary conditions:
 
@@ -3585,7 +3563,6 @@ The Ekman velocities approaching the geostrophic velocities as
     {\displaystyle z}
   
  goes to infinity.
-
 
 #### Experimental observations of the Ekman layer
 There is much difficulty associated with observing the Ekman layer for two main reasons: the theory is too simplistic as it assumes a constant eddy viscosity, which Ekman himself anticipated, saying
@@ -3607,23 +3584,18 @@ It is obvious that
  cannot generally be regarded as a constant when the density of water is not uniform within the region considered
 and because it is difficult to design instruments with great enough sensitivity to observe the velocity profile in the ocean.
 
-
 #### Laboratory demonstrations
 The bottom Ekman layer can readily be observed in a rotating cylindrical tank of water by dropping in dye and changing the rotation rate slightly. Surface Ekman layers can also be observed in rotating tanks.
-
 
 #### In the atmosphere
 In the atmosphere, the Ekman solution generally overstates the magnitude of the horizontal wind field because it does not account for the velocity shear in the surface layer. Splitting the planetary boundary layer into the surface layer and the Ekman layer generally yields more accurate results.
 
-
 #### In the ocean
 The Ekman layer, with its distinguishing feature the Ekman spiral, is rarely observed in the ocean. The Ekman layer near the surface of the ocean extends only about 10 – 20 meters deep, and instrumentation sensitive enough to observe a velocity profile in such a shallow depth has only been available since around 1980. Also, wind waves modify the flow near the surface, and make observations close to the surface rather difficult.
-
 
 #### Instrumentation
 Observations of the Ekman layer have only been possible since the development of robust surface moorings and sensitive current meters. Ekman himself developed a current meter to observe the spiral that bears his name, but was not successful.
 The Vector Measuring Current Meter  and the Acoustic Doppler Current Profiler are both used to measure current.
-
 
 #### Observations
 The first documented observations of an Ekman-like spiral in the ocean were made in the Arctic Ocean from a drifting ice floe in 1958. More recent observations include (not an exhaustive list):
@@ -3635,4 +3607,3 @@ Within the Drake Passage region of the Southern Ocean
 In the eastern tropical Pacific, at 2°N, 140°W, using 5 current meters between 5 and 25 meters depth. This study noted that the geostrophic shear associated with tropical stability waves modified the Ekman spiral relative to what is expected with horizontally uniform density.
 North of the Kerguelen Plateau during the 2008 SOFINE experiment 
 Common to several of these observations spirals were found to be "compressed", displaying larger estimates of eddy viscosity when considering the rate of rotation with depth than the eddy viscosity derived from considering the rate of decay of speed.
-

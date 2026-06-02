@@ -2,10 +2,6 @@
 
 In criminology, social control theory proposes that exploiting the process of socialization and social learning builds self-control and reduces the inclination to indulge in behavior recognized as antisocial. It derived from functionalist theories of crime and was developed by Ivan Nye (1958), who proposed that there were three types of control:
 
-Direct: by which punishment is threatened or applied for wrongful behavior, and compliance is rewarded by parents, family, and authority figures.
-Indirect: by identification with those who influence behavior, say because their delinquent act might cause pain and disappointment to parents and others with whom they have close relationships.
-Internal: by which a youth refrains from delinquency through the conscience or superego.
-
 ## Definition
 
 Social control theory proposes that people's relationships, commitments, values, norms, and beliefs encourage them not to break the law. Thus, if moral codes are internalized and individuals are tied into and have a stake in their wider community, they will voluntarily limit their propensity to commit deviant acts. The theory seeks to understand the ways in which it is possible to reduce the likelihood of criminality developing in individuals. It does not consider motivational issues, simply stating that human beings may choose to engage in a wide range of activities, unless the range is limited by the processes of socialization and social learning. The theory derives from a Hobbesian view of human nature as represented in Leviathan, i.e. that all choices are constrained by implicit social contracts, agreements and arrangements among people. Thus, morality is created in the construction of social order, assigning costs and consequences to certain choices and defining some as evil, immoral and/or illegal.

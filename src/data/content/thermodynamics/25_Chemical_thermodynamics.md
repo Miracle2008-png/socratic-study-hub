@@ -3,27 +3,6 @@
 Chemical thermodynamics is the study of the interrelation of heat and work with chemical reactions or with physical changes of state within the confines of the laws of thermodynamics. Chemical thermodynamics involves not only laboratory measurements of various thermodynamic properties, but also the application of mathematical methods to the study of chemical questions and the spontaneity of processes.
 The structure of chemical thermodynamics is based on the first two laws of thermodynamics.  Starting from the first and second laws of thermodynamics, four equations called the "fundamental equations of Gibbs" can be derived.  From these four, a multitude of equations, relating the thermodynamic properties of the thermodynamic system can be derived using relatively simple mathematics.  This outlines the mathematical framework of chemical thermodynamics.
 
-
-## Overview
-The primary objective of chemical thermodynamics is the establishment of a criterion for determination of the feasibility or spontaneity of a given transformation. In this manner, chemical thermodynamics is typically used to predict the energy exchanges that occur in the following processes:
-
-Chemical reactions
-Phase changes
-The formation of solutions
-The following state functions are of primary concern in chemical thermodynamics:
-
-Internal energy (U)
-Enthalpy (H)
-Entropy (S)
-Gibbs free energy (G)
-Most identities in chemical thermodynamics arise from application of the first and second laws of thermodynamics, particularly the law of conservation of energy, to these state functions.
-The three laws of thermodynamics (global, unspecific forms):
-
-The energy of the universe is constant.
-In any spontaneous process, there is always an increase in entropy of the universe.
-The entropy of a perfect crystal (well ordered) at 0 Kelvin is zero.
-
-
 ## Chemical energy
 
 Chemical energy is the energy that can be released when chemical substances undergo a transformation through a chemical reaction. Breaking and making chemical bonds involves energy release or uptake, often as heat that may be either absorbed by or evolved from the chemical system.
@@ -104,11 +83,9 @@ Energy released (or absorbed) because of a reaction between chemical substances 
 A related term is the heat of combustion, which is the chemical energy released due to a combustion reaction and of interest in the study of fuels. Food is similar to hydrocarbon and carbohydrate fuels, and when it is oxidized, its energy release is similar (though assessed differently than for a hydrocarbon fuel — see food energy).
 In chemical thermodynamics, the term used for the chemical potential energy is chemical potential, and sometimes the Gibbs-Duhem equation is used.
 
-
 ## Chemical reactions
 
 In most cases of interest in chemical thermodynamics there are internal degrees of freedom and processes, such as chemical reactions and phase transitions, which create entropy in the universe unless they are at equilibrium or are maintained at a "running equilibrium" through "quasi-static" changes by being coupled to constraining devices, such as pistons or electrodes, to deliver and receive external work. Even for homogeneous "bulk" systems, the free-energy functions depend on the composition, as do all the extensive thermodynamic potentials, including the internal energy. If the quantities { Ni }, the number of chemical species, are omitted from the formulae, it is impossible to describe compositional changes.
-
 
 ### Gibbs function or Gibbs Energy
 For an unstructured, homogeneous "bulk" system, there are still various extensive compositional variables { Ni } that G depends on, which specify the composition (the amounts of each chemical substance, expressed as the numbers of molecules present or the numbers of moles). Explicitly,
@@ -301,7 +278,6 @@ The expression for dG is especially useful at constant T and P, conditions, whic
     
     {\displaystyle (\mathrm {d} G)_{T,P}=\sum _{i}\mu _{i}\,\mathrm {d} N_{i}\,.}
   
-
 
 ### Chemical affinity
 
@@ -679,10 +655,8 @@ or
 
 Any decrease in the Gibbs function of a system is the upper limit for any isothermal, isobaric work that can be captured in the surroundings, or it may simply be dissipated, appearing as T times a corresponding increase in the entropy of the system and its surrounding. Or it may go partly toward doing external work and partly toward creating entropy. The important point is that the extent of reaction for a chemical reaction may be coupled to the displacement of some external mechanical or electrical quantity in such a way that one can advance only if the other also does. The coupling may occasionally be rigid, but it is often flexible and variable.
 
-
 ### Solutions
 In solution chemistry and biochemistry, the Gibbs free energy decrease (∂G/∂ξ, in molar units, denoted cryptically by ΔG) is commonly used as a surrogate for (−T times) the global entropy produced by spontaneous chemical reactions in situations where no work is being done; or at least no "useful" work; i.e., other than perhaps ± P dV. The assertion that all spontaneous reactions have a negative ΔG is merely a restatement of the second law of thermodynamics, giving it the physical dimensions of energy and somewhat obscuring its significance in terms of entropy. When no useful work is being done, it would be less misleading to use the Legendre transforms of the entropy appropriate for constant T, or for constant T and P, the Massieu functions  −F/T and −G/T, respectively.
-
 
 ## Non-equilibrium
 
@@ -691,10 +665,8 @@ The non-equilibrium thermodynamics has been applied for explaining how ordered s
 Prigogine called these systems dissipative systems, because they are formed and maintained by the dissipative processes which take place because of the exchange of energy between the system and its environment and because they disappear if that exchange ceases. They may be said to live in symbiosis with their environment.
 The method which Prigogine used to study the stability of the dissipative structures to perturbations is of very great general interest. It makes it possible to study the most varied problems, such as city traffic problems, the stability of insect communities, the development of ordered biological structures and the growth of cancer cells to mention but a few examples.
 
-
 ### System constraints
 In this regard, it is crucial to understand the role of walls and other constraints, and the distinction between independent processes and coupling. Contrary to the clear implications of many reference sources, the previous analysis is not restricted to homogeneous, isotropic bulk systems which can deliver only PdV work to the outside world, but applies even to the most structured systems. There are complex systems with many chemical "reactions" going on at the same time, some of which are really only parts of the same, overall process. An independent process is one that could proceed even if all others were unaccountably stopped in their tracks. Understanding this is perhaps a "thought experiment" in chemical kinetics, but actual examples exist.
 A gas-phase reaction at constant temperature and pressure which results in an increase in the number of molecules will lead to an increase in volume. Inside a cylinder closed with a piston, it can proceed only by doing work on the piston. The extent variable for the reaction can increase only if the piston moves out, and conversely if the piston is pushed inward, the reaction is driven backwards.
 Similarly, a redox reaction might occur in an electrochemical cell with the passage of current through a wire connecting the electrodes. The half-cell reactions at the electrodes are constrained if no current is allowed to flow. The current might be dissipated as Joule heating, or it might in turn run an electrical device like a motor doing mechanical work. An automobile lead-acid battery can be recharged, driving the chemical reaction backwards. In this case as well, the reaction is not an independent process. Some, perhaps most, of the Gibbs free energy of reaction may be delivered as external work.
 The hydrolysis of ATP to ADP and phosphate can drive the force-times-distance work delivered by living muscles, and synthesis of ATP is in turn driven by a redox chain in mitochondria and chloroplasts, which involves the transport of ions across the membranes of these cellular organelles. The coupling of processes here, and in the previous examples, is often not complete. Gas can leak slowly past a piston, just as it can slowly leak out of a rubber balloon. Some reaction may occur in a battery even if no external current is flowing. There is usually a coupling coefficient, which may depend on relative rates, which determines what percentage of the driving free energy is turned into external work, or captured as "chemical work", a misnomer for the free energy of another chemical process.
-

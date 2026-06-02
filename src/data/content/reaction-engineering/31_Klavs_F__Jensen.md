@@ -24,13 +24,6 @@ Cell Squeeze is the commercial name for a method for deforming a cell as it pass
 The cell-disrupting change in pressure is achieved by passing cells through a narrow opening in a microfluidic device. The device is made up of channels etched into a wafer through which cells initially flow freely. As they move through the device, the channel width gradually narrows. The cell's flexible membrane allows it to change shape and become thinner and longer, allowing it to squeeze through. As the cell becomes more and more narrow, it shrinks in width by about 30 to 80 percent its original size and the forced rapid change in cell shape temporarily creates holes in the membrane, without damaging or killing the cell.
 While the cell membrane is disrupted, target molecules that pass by can enter the cell through the holes in the membrane. As the cell returns to its normal shape, the holes in the membrane close. Virtually any type of molecule can be delivered into any type of cell. The throughput is approximately one million per second. Mechanical disruption methods can cause fewer gene expression changes than electrical or chemical methods. This can be preferable in studies that require the gene expression to be controlled at all times.
 
-#### Applications
-
-Like other cell permeablisation techniques, it enables intracellular delivery materials, such as proteins, siRNA, or carbon nanotubes. The technique has been used for over 20 cell types, including embryonic stem cells and naïve immune cells. Initial applications focused on immune cells, for example delivering:
-
-Anti-HIV siRNAs for blocking HIV infection in CD4+ T cells.
-Whole protein antigen and enabling MHC class I processing/presentation in polyclonal B cells, facilitating B cell-based vaccine approaches.
-
 #### Commercialization
 
 The process was originally developed in 2013 by Armon Sharei and Andrea Adamo, in the lab of Langer and Jensen at Massachusetts Institute of Technology. In 2014 Sharei founded SQZBiotech to demonstrate the technology. That year, SQZBiotech won the $100,000 grand prize in the annual startup competition sponsored by Boston-based accelerator MassChallenge.

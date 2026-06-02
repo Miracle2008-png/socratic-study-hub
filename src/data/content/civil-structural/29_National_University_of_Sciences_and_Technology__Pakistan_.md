@@ -3,20 +3,16 @@
 The National University of Sciences and Technology (NUST) is a Pakistani multi-campus public research university with its main campus in Islamabad and six other campuses in four cities (Rawalpindi, Risalpur, Quetta, and Karachi), covering all provinces, as well as 18 constituent institutions in total. The university offers degrees in multiple disciplines e.g., engineering, computer sciences, natural sciences, business studies, humanities, architecture, law, and health sciences.
 The university offers undergraduate and postgraduate degrees, including doctoral and professional degrees. NUST was established in March 1991 to promote higher education in the country, especially in the fields of science and technology, and its charter was granted in 1993. All of its engineering programmes are accredited under the Washington Accord, as well as by the Pakistan Engineering Council (PEC). The main campus in Islamabad also contains Pakistan's first National Science and Technology Park, certified by International Association of Science Parks (IASP). As of 2025, NUST has over 12,000 full-time students enrolled and over 20 departments with over 1,637 academic faculty staff.
 
-
 ## Campuses
 NUST is a multi-campus university with the main campuses located in Islamabad. Campuses of NUST are located in the following cities:
-
 
 ### Islamabad
 Sector H-12 Campus
 The campus in Sector H-12 Islamabad was initiated in 2008. Besides NUST Headquarters, the schools and institutes that were relocated to this campus include School of Civil and Environmental Engineering, School of Mechanical and Manufacturing Engineering, School of Electrical Engineering and Computer Science, School of Chemical and Materials Engineering, Research Center for Modeling and Simulation, School of Natural Sciences (formerly known as Center for Advanced Mathematics and Physics), Atta-ur-Rehman School of Applied Biosciences, School of Art Design and Architecture, NUST Business School, School of Social Sciences and Humanities, Professional Development Center, Technology Incubation Center, Marketing and Industrial Relations Organization, NUST Publishing and NUST Outreach and Talent Hunt Initiative. It also has a department for career counselling named Centre for Counselling and Career Advisory (C3A) that helps provide primary mental health facilities.
 The campus is spread over 800 acres (3.2 km2) of land. Sports facilities such as cricket, volleyball courts, basketball, soccer and squash courts are present while hockey stadium and tennis courts are under construction. Hostels for both male and female students are present inside the campus. Facilities in the hostels include badminton courts, basketball and gymnasiums. Some hostel rooms have attached baths while others have community baths. The campus recently inaugurated a central library next to the Headquarters, along with a race course track and a horse riding club. In 2017, a small hiking trail was also opened up for students in order to promote physical well-being. Various cafeterias are constructed on the campus to facilitate the students, along with a tailor shop, a barber shop and various bakeries and shopping marts. A Separate housing facility for the university staff is also present in the campus. Moreover, the campus also houses the NUST Science and Technology Park (NSTP). It also has a central gymnasium (along with several others in hostels) and a lake.
 
-
 #### National Science and Technology Park
 The National Science and Technology Park (NSTP) is located in SINES department. It was inaugurated in December 2019.
-
 
 ### Rawalpindi
 College of Electrical and Mechanical Engineering (CEME):
@@ -24,7 +20,6 @@ Located on Grand Trunk Road in Rawalpindi, College of Electrical and Mechanical 
 The campus includes all on-campus facilities, auditorium and conference hall, accommodation and mess facilities. The library is fully computerized, with a collection of 70,000 volumes. Sports facilities at EME includes three tennis courts, a basketball court, a squash court, a badminton court, football ground, cricket pitch, a swimming pool and two gymnasiums.
 Military College of Signals (MCS):
 Located on Hamayun Road in Rawalpindi Cantt, it is the oldest constituent college of NUST, founded in 1947 after the independence of Pakistan to train the members of Pakistan Armed Forces. It has three departments, namely Electrical, Computer Software and Information Security departments. The MCS library is computerized, with over 55,000 volumes. It spreads over 50 acres of area and is located in the heart of Rawalpindi Cantt.
-
 
 ### Risalpur
 College of Aeronautical Engineering (CAE):
@@ -34,11 +29,9 @@ The campus is equipped with a library, auditorium, conference hall, dining facil
 Military College of Engineering (Pakistan) (MCE):
 College of Civil Engineering and National Institute of Transportation are located on this campus. MCE is one of the oldest constituent colleges of NUST, founded in 1948. The campus houses laboratories, a computer centre, library with 41,000 books, sports facilities and hostels.
 
-
 ### Karachi
 Pakistan Navy Engineering College (PNEC)
 The college campus is spread over an area of about 75 acres (300,000 m2) comprising the administration block, four academic blocks, postgraduate studies center, labs and workshops, professional development center, an auditorium, a mosque, a dispensary, hostel and dining facilities. The campus is home to the Computer Aided Designing and Manufacturing Center and the Professional Development Center. While majority of the students are active-duty naval officers from all branches of the Pakistan Military, civilian students can also attend the school on merit-based admission.
-
 
 ### Quetta
 NUST Balochistan Campus (NBC)
@@ -46,25 +39,19 @@ NBC is located on Kuch Road, Quetta and was  Inaugurated by Chief of the Army St
 The concept of establishing NBC is to help the Government and people of Balochistan in the development of human resources by producing a quality workforce in the fields of Civil engineering, computer sciences, mining and mineral resources and, artificial intelligence.
 The campus currently has 315 undergraduate students, 30 postgraduate students and 33 faculty members.
 
-
 ## Academics
-
 
 ### Research
 A Research and Development (R&D) Directorate is established at the NUST headquarters which encourages the growth of research in the university. All efforts of R&D Directorate are coordinated through an organizational structure consisting of NUST headquarters, R&D Cells at each constituent college and NUST's commercial arms. The mission of Research Directorate is to facilitate and co-ordinate research activities of NUST constituent institutions and to liaise with other national as well as international academics, research and industrial organizations to facilitate research at NUST. It has collaboration with various International agencies such as, USAID, British Council, UKAID, QNRF, TWAS, BP, NRG Bio-fuel Canada, German Academic Exchange Service (DAAD) and many others.
 
-
 #### R&D cells
 Each college, institute and center has an R&D Cell headed by a PhD qualified faculty member who co-ordinates, monitors and records all the R&D activities of the college. The head coordinates all the activities among departments, faculty members, researchers, students and industries identifying potential projects and sources of funds. Many innovations from NUST students are finding practical use in Pakistan.
-
 
 #### NUST Consulting
 NUST Consulting helps researchers undertake consultancy services with external agencies. In this regard, all centers are involved with NC to improve efficiency, reduce of wastage, increase productivity and improve quality.
 
-
 #### Technology Incubation Centre
 NUST has established a Technology Incubation Centre with an aim to combine industrial development and technological research together and establish the linkages between institutes and the industry. The Incubation Centre has been mentoring and hosting startups since 2005. TIC will also help faculty members in identifying the end users apart from commercializing of R&D output.
-
 
 #### University research journals
 The university publishes the following journals:
@@ -75,11 +62,9 @@ NUST Journal of Natural Sciences, ISSN 2072-4659
 Pakistan Armed Forces Medical Journal, ISSN 0030-9648
 TECHNOCRAT - Journal of Science and Technology, ISSN 1728-5690
 
-
 #### University-industry linkages
 The new campus established in Islamabad is co-located with Tech Town in Sector I-12 where IT and electronics related industries and technology parks are planned to be set up, so as to promote university and industry linkages. Apart from this, NUST is providing training and consultancy services to the industry and other business organizations.
 NUST has also bought lab equipment needed for doctoral and postdoctoral research work, with financing through Islamic Development Bank (IDB). IDB has provided 26 Million US$ as grant for buying the services of researchers from abroad, over and above the programs of Ministry of Science and Technology, Pakistan.
-
 
 ### Rankings and awards
 
@@ -88,7 +73,6 @@ According to a survey, NUST is the most popular choice for engineering students 
 In 2013, SCImago ranked NUST as 1568 in the world, 480 in the region and 6th in the country for the reporting period of 2007–11. In 2014, Webometric world university rankings ranked it at 150 in the world, 3rd in the country and 22nd in South Asia.
 Higher Education Commission of Pakistan ranked NUST as the number one university in the category of 'General University: Large' in 2013 and in the category 'Engineering and Technology' in 2014 and 2015.
 It was ranked by QS World Ranking's as among the 'Top 50 under 50' in 2021, and is ranked by QS as #353 in World University Rankings 2025, and #2 in Pakistan. It is also ranked by QS as #127 in the world in Engineering & Technology (#143 in Electrical, #164 in Computer Science, top 200 in Chemical, top 250 in Mechanical & Aeronautical, top 375 in Civil) and top 350 in Business Studies and Mathematics. In comparison to Pakistani universities, it is #1 in all Engineering subject rankings, #2 in Natural Sciences behind QAU, and #2 in Social Sciences & Management behind LUMS.
-
 
 ### Foreign collaborations
 International universities
@@ -108,7 +92,6 @@ NCR Corporation has established their Data warehouse and Data mining lab at SEEC
 IBM has registered NUST on worldwide offering for higher education to selected universities.
 Artificial Intelligence R&D Lab has been set up in NUST School of Electrical Engineering and Computer Science (SEECS) in collaboration with German Research Centre for Artificial Intelligence (German DFKI) and University of Kaiserslautern (TUKL), Germany.
 
-
 ## Student life
 The institute offers opportunities for students to participate in technical and professional societies. Study trips to industries and organizations are arranged, guest speakers from institutes and industry are invited and seminars and workshops are held. Sports facilities are available in all campuses.
 Student Bodies
@@ -120,9 +103,7 @@ Separate hostels for boys and girls are available in most colleges and is at var
 Cafeterias
 There are four main cafeterias on the main campus built to accommodate the student's need to refuel themselves namely C-1, C-2, C-3 and C-4. C-1 (Concordia-1) & C-2 (Concordia-2) are properly built round structures that have everything from a cafeteria to a juice shop, a stationery shop, a bakery, a print shop etc. C-3 provides scenic views of the sports complex at NUST. C-4 is mostly limited to students of SNS and SMME who are farthest away from all other cafeterias. Other cafes include 'Margalla Cafe', which is an outdoor space just besides SADA, 'Coffee Lounge', famous for its Chinese food and Arabic-style shawarma, 'Retro Cafe', situated next to the boys' hostels, among various others.
 
-
 ## People
-
 
 ### Faculty
 Notable faculty of NUST is as follows:
@@ -136,11 +117,9 @@ Dr. Yasar Ayaz, a recipient of Pride of Performance award which is the highest l
 Dr. Faisal Shafait, a recipient of Pride of Performance award.
 Dr. Umar Shahbaz, a recipient of Pride of Performance award.
 
-
 ### Notable alumni
 NUST has a strong alumni network of more than 41,000 graduates (31,000+ undergraduate, 10,000+ master's and 400+ PhD graduates). Notable alumni are as follows:
 
 Dr. Sarah Qureshi (Graduate of CEME. 2000), recipient of Tamgha-i-Imtiaz and CEO of Aero Engine Craft.
 Abdullah Qureshi (Graduate of S3H), Pakistani singer.
 Yashal Shahid (Graduate of SCME, 2019), Pakistani singer.
-

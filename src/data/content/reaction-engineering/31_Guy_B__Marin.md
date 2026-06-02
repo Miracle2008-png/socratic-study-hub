@@ -3,11 +3,9 @@
 Guy B. Marin is professor emeritus of chemical engineering at the Ghent University, Belgium. He is founding member of the Laboratory for Chemical Technology (LCT) and the Center of Sustainable Chemistry (CSC) at Ghent University. Prior to that, he has been teaching at the Department of Chemical Engineering and Chemistry of Eindhoven University of Technology. His research on chemical kinetics and chemical reaction engineering led in 2015 to a spinoff company. He co-authored two books, Kinetics of Chemical Reactions: Decoding Complexity and Advanced Data Analysis and Modelling in Chemical Engineering.
 He is co-editor of the Chemical Engineering Journal and co-editor-in-chief of “Current Opinion in Chemical Engineering”.
 
-
 ## Research
 The development of multi-scale models of the relevant reactions and reactors with emphasis on the interaction between complex chemical kinetics and complex transport phenomena have been a common theme of his research as well as combining a first principles approach with experimental validation whenever possible.
 His kinetic studies have been based on the involved elementary steps with, as much as possible, an ab initio  calculation of the rate coefficients. When combined with Computational Fluid Dynamics (CFD) to account for transport of mass, energy and momentum they aim at the development of novel reactor technologies  and at the scale up and optimization of established ones.
-
 
 ## Awards and honors
 Dieter Behrens Medal (2021)
@@ -15,7 +13,6 @@ Professor Mikhail Slin’ko Honorary Lecture (ChemReactor-24, 2021)
 Honorary Professor of Tianjin University (2017-)
 Member of the Royal Flemish Academy of Belgium for Science and the Arts (2015)
 P.V. Danckwerts Memorial Lecture Chemical Engineering and Kinetics (AIChE, 2012)
-
 
 ## Selected publications
 The reaction mechanism of the partial oxidation of methane to synthesis gas: a transient kinetic study over rhodium and a comparison with platinum. E.P.J. Mallens, J.H.B.J. Hoebink, G.B. Marin (Journal of Catalysis, 167, 43–56, 1997)
@@ -30,4 +27,3 @@ New Trends in Olefin Production. Amghizar, I.; Vandewalle, L.A.; Van Geem, K.M.;
 Upgrading the value of anaerobic digestion via chemical production from grid injected biomethane. Verbeeck, K.; Buelens, L.C.; Galvita, V.V.; Marin, G.B.; Van Geem, K.M.; Rabaey, K. (Energy & Environmental Science, 11 (7), 1788–1802, 2018)
 Making chemicals with electricity. Van Geem, K.M.; Galvita, V.V.; Marin, G.B. (Science, 364 (6442), 734–735, 2019 Perspective paper)
 Electrified temperature-modulated synthesis. Marin, G.B.; Van Geem, K.M. (Nature Synthesis, 1, 512–513, 2022 News & Views article)
-

@@ -35,10 +35,3 @@ Inorganic synthesis and organometallic synthesis are used to prepare compounds w
 ## Green chemistry
 
 Chemical synthesis using green chemistry promotes the design of new synthetic methods and apparatus that simplify operations and seeks environmentally benign solvents. Key principles include atom economy, which aims to incorporate all reactant atoms into the final product, and the reduction of waste and inefficiencies in chemical processes. Innovations in green chemistry, contribute to more sustainable and efficient chemical synthesis, reducing the environmental and health impacts of traditional methods.
-
-## Applications
-
-Chemical synthesis plays a crucial role across various industries, enabling the development of materials, medicines, and technologies with significant real-world impacts.
-Catalysis: The development of catalysts is vital for numerous industrial processes, including petroleum refining, petrochemical production, and pollution control. Catalysts synthesized through chemical processes enhance the efficiency and sustainability of these operations.
-Medicine: Organic synthesis plays a vital role in drug discovery, allowing chemists to develop and optimize new drugs by modifying organic molecules. Additionally, the synthesis of metal complexes for medical imaging and cancer treatments is a key application of chemical synthesis, enabling advanced diagnostic and therapeutic techniques.
-Biopharmaceuticals: Chemical synthesis is critical in the production of biopharmaceuticals, including monoclonal antibodies and other biologics. Chemical synthesis enables the creation and modification of organic and biologically sourced compounds used in these treatments. Advanced techniques, such as DNA recombinant technology and cell fusion, rely on chemical synthesis to produce biologics tailored for specific diseases, ensuring they work effectively and target diseases precisely.

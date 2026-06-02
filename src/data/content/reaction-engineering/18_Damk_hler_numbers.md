@@ -8,183 +8,118 @@ In its most commonly used form, the first Damköhler number (DaI) relates partic
     
       
         
-          D
           
-            a
             
               
-                I
               
             
           
         
-        =
         
           
-            reaction rate
-            convective mass transport rate
           
         
       
     
     
 
-$$ \mathrm {Da_{\mathrm {I} }} ={\frac {\text{reaction rate}}{\text{convective mass transport rate}}} $$
-
   
-
-In reacting systems that include interphase mass transport, the first Damköhler number can be written as the ratio of the chemical reaction rate to the mass transfer rate
 
   
     
       
         
           
-            D
-            a
           
           
             
-              I
             
           
         
-        =
         
           
-            reaction rate
-            diffusive mass transfer rate
           
         
       
     
     
 
-$$ \mathrm {Da} _{\mathrm {I} }={\frac {\text{reaction rate}}{\text{diffusive mass transfer rate}}} $$
-
   
-
-It is also defined as the ratio of the characteristic fluidic and chemical time scales:
 
   
     
       
         
-          D
           
-            a
             
               
-                I
               
             
           
         
-        =
         
           
-            flow timescale
-            chemical timescale
           
         
       
     
     
 
-$$ \mathrm {Da_{\mathrm {I} }} ={\frac {\text{flow timescale}}{\text{chemical timescale}}} $$
-
   
-
-Since the reaction rate determines the reaction timescale, the exact formula for the Damköhler number varies according to the rate law equation. For a general chemical reaction A → B following the Power law kinetics of n-th order, the Damköhler number for a convective flow system is defined as:
 
   
     
       
         
-          D
           
-            a
             
               
-                I
               
             
           
         
-        =
-        k
         
-          C
           
-            0
           
           
              
-            n
-            −
-            1
           
         
-        τ
       
     
     
 
-$$ \mathrm {Da_{\mathrm {I} }} =kC_{0}^{\ n-1}\tau $$
-
   
-
-where:
-
-k = kinetics reaction rate constant
-C0 = initial concentration
-n = reaction order
 
   
     
       
-        τ
       
     
     
 
-$$ \tau $$
-
   
- = mean residence time or space-time
-On the other hand, the second Damköhler number (DaII) is defined in general as:
 
   
     
       
         
           
-            D
-            a
           
           
             
-              I
-              I
             
           
         
-        =
         
           
             
-              k
-              Q
             
             
               
-                c
                 
-                  p
                 
               
-              Δ
-              T
             
           
         
@@ -192,53 +127,34 @@ On the other hand, the second Damköhler number (DaII) is defined in general as:
     
     
 
-$$ \mathrm {Da} _{\mathrm {II} }={\frac {kQ}{c_{p}\Delta T}} $$
-
   
-
-It compares the process energy of a thermochemical reaction (such as the energy involved in a nonequilibrium gas process) with a related enthalpy difference (driving force).
-In terms of reaction rates:
 
   
     
       
         
           
-            D
-            a
           
           
             
-              I
-              I
             
           
         
-        =
         
           
             
-              k
               
-                C
-                
-                  0
                 
                 
-                  n
-                  −
-                  1
+                
                 
               
             
             
               
-                k
                 
-                  g
                 
               
-              a
             
           
         
@@ -246,16 +162,7 @@ In terms of reaction rates:
     
     
 
-$$ \mathrm {Da} _{\mathrm {II} }={\frac {kC_{0}^{n-1}}{k_{g}a}} $$
-
   
-
-where
-
-kg is the global mass transport coefficient
-a is the interfacial area
-The value of Da provides a quick estimate of the degree of conversion that can be achieved. If DaI goes to infinity, the residence time greatly exceeds the reaction time, such that nearly all chemical reactions have taken place during the period of residency, this is the transport limited case, where the reaction is much faster than the diffusion. Otherwise if DaI goes to 0, the residence time is much shorter than the reaction time, so that no chemical reaction has taken place during the brief period when the fluid particles occupy the reaction location, this is the reaction limited case, where diffusion happens much faster than the reaction. Similarly, DaII goes to 0 implies that the energy of the chemical reaction is negligible compared to the energy of the flow. The limit of the Damköhler number going to infinity is called the Burke–Schumann limit.
-As a rule of thumb, when Da is less than 0.1 a conversion of less than 10% is achieved, and when Da is greater than 10 a conversion of more than 90% is expected.
 
 ## Derivation for decomposition of a single species
 
@@ -712,8 +619,3 @@ $$ 0={\frac {(1-X)^{n}}{X}}-{\frac {1}{\rm {Da_{n}}}} $$
   
 
 As can be seen, as the Damköhler number increases, the other term must decrease. The ensuing polynomial can be solved and the conversion for the rule of thumb Damköhler numbers found. Alternatively, one can graph the expressions and see where they intersect with the line given by the inverse Damköhler number to see the solution for conversion. In the plot below, the y-axis is the inverse Damköhler number and the x-axis the conversion. The rule-of-thumb inverse Damköhler numbers have been placed as dashed horizontal lines.
-
-## Applications
-
-Thermochemical nonequilibrium in hypersonic flow
-Combustion

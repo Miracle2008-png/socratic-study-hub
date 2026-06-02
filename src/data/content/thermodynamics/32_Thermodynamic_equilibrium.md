@@ -8,67 +8,6 @@ In systems that are at a state of non-equilibrium there are, by contrast, net fl
 Though not a widely named "law," it is an axiom of thermodynamics that there exist states of thermodynamic equilibrium. 
 The second law of thermodynamics states that, in an isolated system, when partitions are removed between equilibrated subsystems in different states, the system spontaneously equilibrates (achieves thermodynamic equilibrium), accompanied by an increase in the system's entropy.
 
-## Overview
-
-Classical thermodynamics deals with states of dynamic equilibrium. The state of a system at thermodynamic equilibrium is the one for which some thermodynamic potential is minimized (in the absence of an applied voltage), or for which the entropy (S) is maximized, for specified conditions. One such potential is the Helmholtz free energy (A), for a closed system at constant volume and temperature (controlled by a heat bath):
-
-  
-    
-      
-        A
-        =
-        U
-        −
-        T
-        S
-      
-    
-    
-
-$$ A=U-TS $$
-
-  
-
-Another potential, the Gibbs free energy (G), is minimized at thermodynamic equilibrium in a closed system at constant temperature and pressure, both controlled by the surroundings:
-
-  
-    
-      
-        G
-        =
-        U
-        −
-        T
-        S
-        +
-        P
-        V
-      
-    
-    
-
-$$ G=U-TS+PV $$
-
-  
-
-where T denotes the absolute thermodynamic temperature, P the pressure, S the entropy, V the volume, and U the internal energy of the system. In other words, 
-  
-    
-      
-        Δ
-        G
-        =
-        0
-      
-    
-    
-
-$$ \Delta G=0 $$
-
-  
- is a necessary condition for chemical equilibrium under these conditions (in the absence of an applied voltage).
-Thermodynamic equilibrium is the unique stable stationary state that is approached or eventually reached as the system interacts with its surroundings over a long time. The above-mentioned potentials are mathematically constructed to be the thermodynamic quantities that are minimized under the particular conditions in the specified surroundings.
-
 ## Conditions
 
 For a completely isolated system, S is maximum at thermodynamic equilibrium.

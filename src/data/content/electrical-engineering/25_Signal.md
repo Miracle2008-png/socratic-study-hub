@@ -6,7 +6,6 @@ In nature, signals can be actions done by an organism to alert other organisms, 
 Another important property of a signal is its entropy or information content. Information theory serves as the formal study of signals and their content. The information of a signal is often accompanied by noise, which primarily refers to unwanted modifications of signals, but is often extended to include unwanted signals conflicting with desired signals (crosstalk). The reduction of noise is covered in part under the heading of signal integrity. The separation of desired signals from background noise is the field of signal recovery, one branch of which is estimation theory, a probabilistic approach to suppressing random disturbances.
 Engineering disciplines such as electrical engineering have advanced the design, study, and implementation of systems involving transmission, storage, and manipulation of information. In the latter half of the 20th century, electrical engineering itself separated into several disciplines: electronic engineering and computer engineering developed to specialize in the design and analysis of systems that manipulate physical signals, while design engineering developed to address the functional design of signals in user–machine interfaces.
 
-
 ## Definitions
 Definitions specific to sub-fields are common: 
 
@@ -16,7 +15,6 @@ In information theory, a signal is a codified message, that is, the sequence of 
 In a communication system, a transmitter encodes a message to create a signal, which is carried to a receiver by the communication channel.  For example, the words "Mary had a little lamb" might be the message spoken into a telephone. The telephone transmitter converts the sounds into an electrical signal. The signal is transmitted to the receiving telephone by wires; at the receiver, it is reconverted into sounds.
 In telephone networks, signaling, for example common-channel signaling, refers to phone number and other digital control information rather than the actual voice signal.
 
-
 ## Classification
 Signals can be categorized in various ways.  The most common distinction is between discrete and continuous spaces that the functions are defined over, for example, discrete and continuous-time domains.  Discrete-time signals are often referred to as time series in other fields.  Continuous-time signals are often referred to as continuous signals.
 A second important distinction is between discrete-valued and continuous-valued.  Particularly in digital signal processing, a digital signal may be defined as a sequence of discrete values, typically associated with an underlying continuous-valued physical process. In digital electronics, digital signals are the continuous-time waveform signals in a digital system, representing a bit-stream.
@@ -24,11 +22,9 @@ Signals may also be categorized by their spatial distributions as either point s
 
 In Signals and Systems, signals can be classified according to many criteria, mainly: according to the different feature of values, classified into analog signals and digital signals; according to the determinacy of signals, classified into deterministic signals and random signals; according to the strength of signals, classified into energy signals and power signals.
 
-
 ### Analog and digital signals
 
 Two main types of signals encountered in practice are analog and digital. The figure shows a digital signal that results from approximating an analog signal by its values at particular time instants.  Digital signals are quantized, while analog signals are continuous.
-
 
 #### Analog signal
 
@@ -36,14 +32,12 @@ An analog signal is any continuous signal for which the time-varying feature of 
 The term analog signal usually refers to electrical signals; however, analog signals may use other mediums such as mechanical, pneumatic or hydraulic. An analog signal uses some property of the medium to convey the signal's information. For example, an aneroid barometer uses rotary position as the signal to convey pressure information.  In an electrical signal, the voltage, current, or frequency of the signal may be varied to represent the information.
 Any information may be conveyed by an analog signal; often, such a signal is a measured response to changes in physical phenomena, such as sound, light, temperature, position, or pressure.  The physical variable is converted to an analog signal by a transducer.   For example, in sound recording, fluctuations in air pressure (that is to say, sound) strike the diaphragm of a microphone, which induces corresponding electrical fluctuations.  The voltage or the current is said to be an analog of the sound.
 
-
 #### Digital signal
 
 A digital signal is a signal that is constructed from a discrete set of waveforms of a physical quantity so as to represent a sequence of discrete values. A logic signal is a digital signal with only two possible values, and describes an arbitrary bit stream. Other types of digital signals can represent three-valued logic or higher-valued logics.
 Alternatively, a digital signal may be considered to be the sequence of codes represented by such a physical quantity. The physical quantity may be a variable electric current or voltage, the intensity, phase or polarization of an optical or other electromagnetic field, acoustic pressure, the magnetization of a magnetic storage media, etc. Digital signals are present in all digital electronics, notably computing equipment and data transmission.
 With digital signals, system noise, provided it is not too great, will not affect system operation, whereas noise always degrades the operation of analog signals to some degree.
 Digital signals often arise via sampling of analog signals, for example, a continually fluctuating voltage on a line that can be digitized by an analog-to-digital converter circuit, wherein the circuit will read the voltage level on the line, say, every 50 microseconds and represent each reading with a fixed number of bits. The resulting stream of numbers is stored as digital data on a discrete-time and quantized-amplitude signal.  Computers and other digital devices are restricted to discrete time.
-
 
 ### Energy and power
 According to the strengths of signals, practical signals can be classified into two categories: energy signals and power signals.
@@ -139,11 +133,9 @@ Power signals: Those signals' average power are equal to a finite positive value
     {\displaystyle P=\lim _{T\rightarrow \infty }{\frac {1}{T}}\int _{-T/2}^{T/2}s^{2}(t)dt}
   
 
-
 ### Deterministic and random
 Deterministic signals are those whose values at any time are predictable and can be calculated by a mathematical equation.
 Random signals are signals that take on random values at any given time instant and must be modeled stochastically.
-
 
 ### Even and odd
 
@@ -286,7 +278,6 @@ or equivalently if the following equation holds for all
     {\displaystyle x(t)+x(-t)=0.}
   
 
-
 ### Periodic
 A signal is said to be periodic if it satisfies the condition:
 
@@ -408,16 +399,13 @@ The same can be applied to
   
 . A periodic signal will repeat for every period.
 
-
 #### Time discretization
 
 Signals can be classified as continuous or discrete time.  In the mathematical abstraction, the domain of a continuous-time signal is the set of real numbers (or some interval thereof), whereas the domain of a discrete-time (DT) signal is the set of integers (or other subsets of real numbers).  What these integers represent depends on the nature of the signal; most often, it is time.
 A continuous-time signal is any function which is defined at every time t in an interval, most commonly an infinite interval. A simple source for a discrete-time signal is the sampling of a continuous signal, approximating the signal by a sequence of its values at particular time instants.
 
-
 ### Amplitude quantization
 If a signal is to be represented as a sequence of digital data, it is impossible to maintain exact precision – each number in the sequence must have a finite number of digits.  As a result, the values of such a signal must be quantized into a finite set for practical representation. Quantization is the process of converting a continuous analog audio signal to a digital signal with discrete numerical values of integers.
-
 
 ## Examples
 Naturally occurring signals can be converted to electronic signals by various sensors. Examples include:
@@ -431,11 +419,9 @@ pH or acidity, provided by a pH meter.
 Biosignals. A biosignal is any signal in a living organism that can be continually measured. The term biosignal is often used to refer to bioelectrical signals, but it may refer to both electrical and non-electrical signals. The usual understanding is to refer only to time-varying signals, although spatial parameter variations (e.g., the nucleotide sequence determining the genetic code) are sometimes subsumed as well.
 Membrane potential.  This biosignal is the voltage across a biological membrane.  The domain is more difficult to establish.  Some cells or organelles have the same membrane potential throughout; neurons generally have different potentials at different points.  These signals have very low energies, but are enough to make nervous systems work; they can be measured in aggregate by electrophysiology techniques.
 
-
 ## Signal processing
 
 Signal processing is the analysis and manipulation of signals. A common example is signal transmission between different locations. The embodiment of a signal in electrical form is made by a transducer that converts the signal from its original form to a waveform expressed as a current or a voltage, or electromagnetic radiation, for example, an optical signal or radio transmission. Once expressed as an electronic signal, the signal is available for further processing by electrical devices such as electronic amplifiers and filters, and can be transmitted to a remote location by a transmitter and received using radio receivers.
-
 
 ## Signals and systems
 In electrical engineering (EE) programs, signals are covered in a class and field of study known as signals and systems. Depending on the school, undergraduate EE students generally take the class as juniors or seniors, normally depending on the number and level of previous linear algebra and differential equation classes they have taken.
@@ -444,6 +430,4 @@ Signals and systems is a subset of the field of mathematical modeling. It involv
 Because mechanical engineering (ME) topics like friction, dampening etc. have very close analogies in signal science (inductance, resistance, voltage, etc.), many of the tools originally used in ME transformations (Laplace and Fourier transforms, Lagrangians, sampling theory, probability, difference equations, etc.) have now been applied to signals, circuits, systems and their components, analysis and design in EE. Dynamical systems that involve noise, filtering and other random or chaotic attractors and repellers have now placed stochastic sciences and statistics between the more deterministic discrete and continuous functions in the field. (Deterministic, as used here, means signals that are completely determined as functions of time).
 EE taxonomists are still not decided where signals and systems falls within the whole field of signal processing vs. circuit analysis and mathematical modeling, but the common link of the topics that are covered in the course of study has brightened boundaries with dozens of books, journals, etc. called "Signals and Systems", and used as text and test prep for the EE, as well as, recently, computer engineering exams.
 
-
 ## Gallery
-

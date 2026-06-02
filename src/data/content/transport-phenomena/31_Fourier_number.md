@@ -4,154 +4,101 @@ In the study of heat conduction, the Fourier number is the ratio of time,
   
     
       
-        t
       
     
     
 
-$$ t $$
-
   
-, to a characteristic time scale for heat diffusion, 
   
     
       
         
-          t
           
-            d
           
         
       
     
     
 
-$$ t_{d} $$
-
   
-. This dimensionless group is named in honor of J.B.J. Fourier, who formulated the modern understanding of heat conduction. The time scale for diffusion characterizes the time needed for heat to diffuse over a distance, 
   
     
       
-        L
       
     
     
 
-$$ L $$
-
   
-. For a medium with thermal diffusivity, 
   
     
       
-        α
       
     
     
 
-$$ \alpha $$
-
   
-, this time scale is 
   
     
       
         
-          t
           
-            d
-          
-        
-        =
-        
-          L
-          
-            2
           
         
         
-          /
+          
+          
         
-        α
+        
+        
       
     
     
 
-$$ t_{d}=L^{2}/\alpha $$
-
   
-, so that the Fourier number is 
   
     
       
-        t
-        
-          /
         
         
-          t
+        
           
-            d
           
         
-        =
-        α
-        t
-        
-          /
         
         
-          L
+        
           
-            2
           
         
       
     
     
 
-$$ t/t_{d}=\alpha t/L^{2} $$
-
   
-. The Fourier number is often denoted as 
   
     
       
         
-          F
-          o
         
       
     
     
 
-$$ \mathrm {Fo} $$
-
   
- or 
   
     
       
         
           
-            F
-            o
           
           
-            L
           
         
       
     
     
 
-$$ \mathrm {Fo} _{L} $$
-
   
-.
-The Fourier number can also be used in the study of mass diffusion, in which the thermal diffusivity is replaced by the mass diffusivity.
-The Fourier number is used in analysis of time-dependent transport phenomena, generally in conjunction with the Biot number if convection is present. The Fourier number arises naturally in nondimensionalization of the heat equation. 
 
 ## Definition
 

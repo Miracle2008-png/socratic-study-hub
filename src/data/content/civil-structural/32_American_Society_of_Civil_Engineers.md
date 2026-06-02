@@ -3,39 +3,6 @@
 The American Society of Civil Engineers (ASCE) is a tax-exempt professional body founded in 1852 to represent members of the civil engineering profession worldwide. Headquartered in Reston, Virginia, it is the oldest national engineering society in the United States. Its constitution was based on the older Boston Society of Civil Engineers from 1848.
 ASCE is dedicated to the advancement of the science and profession of civil engineering and the enhancement of human welfare through the activities of society members. It has more than 143,000 members in 177 countries. Its mission is to provide essential value to members, their careers, partners, and the public; facilitate the advancement of technology; encourage and provide the tools for lifelong learning; promote professionalism and the profession; develop and support civil engineers.
 
-## Overview
-
-ASCE's mission is to deliver essential value to "its members, their careers, our partners, and the public" as well as enable "the advancement of technology, encourage and provide the tools for lifelong learning, promote professionalism and the profession." The society also seeks to "develop and support civil engineer leaders, and advocate infrastructure and environmental stewardship." The society as an exempt organization in the United States (Section 501(c)(3)) was required to reported its program service accomplishments and related expenses and revenues.
-
-### Publications
-
-ASCE stated that dissemination of technical and professional information to the civil engineering profession was a major goal of the society. This is accomplished through a variety of publications and information products, including 35 technical and professional journals amongst them:
-
-ASCE Journal of Structural Engineering
-Journal of Environmental Engineering
-Journal of Hydraulic Engineering
-Journal of Hydrologic Engineering
-Journal of Transportation Engineering, Part A: Systems
-Journal of Transportation Engineering, Part B: Pavements
-Journal of Water Resources Planning and Management
-Civil Engineering, the society's monthly magazine
-They also publish an online bibliographic database, conference proceedings, standards, manuals of practice, and technical reports. 
-The ASCE Library contains 470+ e-books and standards, some with chapter-level access and no restrictive DRM, and 600+ online proceedings.
-
-### Conferences, meetings, and education
-
-Each year, more than 55,000 engineers earn continuing education units (CEUs) and/or professional development hours (PDHs) by participating in ASCE's continuing education programs. ASCE hosts more than 15 annual and specialty conferences, over 200 continuing education seminars and more than 300 live web seminars. Meetings include "...committees, task forces, focus groups, workshops and seminars designed to bring together civil engineering experts either from specific fields or those with a broad range of experience and skills. These meetings deal with specific topics and issues facing civil engineers such as America's failing infrastructure, sustainability, earthquakes, and bridge collapses."
-
-### Engineering programs
-
-The engineering programs division directly advances the science of engineering by delivering technical content for ASCE's publications, conferences and continuing education programs. It consists of eight discipline-specific institutes, four technical divisions, and six technical councils. The work is accomplished by over 600 technical committees with editorial responsibility for 28 of ASCE's 33 journals. On an annual basis, the division conducts more than twelve congresses and specialty conferences. As a founding society of ANSI and accredited standards development organization, ASCE committees use an established and audited process to produce consensus standards under a program supervised by the society's Codes and Standards Committee.
-Civil Engineering Certification Inc. (CEC), affiliated with ASCE, has been established to support specialty certification academies for civil engineering specialties and is accredited by the Council of Engineering and Scientific Specialty Boards (CESB). CEC also handles safety certification for state, municipal, and federal buildings, formerly the province of the now-defunct Building Security Council. The Committee on Critical Infrastructure (CCI) provides vision and guidance on ASCE activities related to critical infrastructure resilience, including planning, design, construction, O&M, and event mitigation, response and recovery.
-Certification is the recognition of attaining advanced knowledge and skills in a specialty area of civil engineering. ASCE offers certifications for engineers who demonstrate advanced knowledge and skills in their area of engineering.
-
-American Academy of Water Resources Engineers (AAWRE)
-Academy of Geo-Professionals (AGP)
-Academy of Coastal, Ocean, Port & Navigation Engineers (ACOPNE)
-
 ## Awards and designations
 
 ASCE honors civil engineers through many Society Awards including the Norman medal (1874), Wellington prize (1921), Huber Civil Engineering Research Prize, the Outstanding Projects and Leaders (OPAL) awards in the categories of construction, design, education, government and management, the Outstanding Civil Engineering Achievement (OCEA) for projects, the Henry L. Michel Award for Industry Advancement of Research and the Charles Pankow Award for innovation, 12 scholarships and fellowships for student members. 

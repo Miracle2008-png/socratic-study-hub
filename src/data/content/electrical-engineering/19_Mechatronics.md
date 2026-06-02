@@ -5,22 +5,18 @@ As technology advances over time, various subfields of engineering have succeede
 Many people treat mechatronics as a modern buzzword synonymous with automation, robotics and electromechanical engineering.
 French standard NF E 01-010 gives the following definition: "approach aiming at the synergistic integration of mechanics, electronics, control theory, and computer science within product design and manufacturing, in order to improve and/or optimize its functionality".
 
-
 ## Description
 
 A mechatronics engineer unites the principles of mechanics, electrical, electronics, and computing to generate a simpler, more economical and reliable system.
 Engineering cybernetics deals with the question of control engineering of mechatronic systems. It is used to control or regulate such a system (see control theory). Through collaboration, the mechatronic modules perform the production goals and inherit flexible and agile manufacturing properties in the production scheme. Modern production equipment consists of mechatronic modules that are integrated according to a control architecture. The most known architectures involve hierarchy, polyarchy, heterarchy, and hybrid. The methods for achieving a technical effect are described by control algorithms, which might or might not utilize formal methods in their design. Hybrid systems important to mechatronics include production systems, synergy drives,
 exploration rovers, automotive subsystems such as anti-lock braking systems and spin-assist, and everyday equipment such as autofocus cameras, video, hard disks, CD players and phones.
 
-
 ## Subdisciplines
-
 
 ### Mechanical
 
 Mechanical engineering is an important part of mechatronics engineering. It includes the study of mechanical nature of how an object works. Mechanical elements refer to mechanical structure, mechanism, thermo-fluid, and hydraulic aspects of a mechatronics system. The study of thermodynamics, dynamics, fluid mechanics, pneumatics and hydraulics. Mechatronics engineer who works as a mechanical engineer can specialize in hydraulics and pneumatics systems, where they can be found working in automobile industries. A mechatronics engineer can also design a vehicle since they have strong mechanical and electronical background. Knowledge of software applications such as computer-aided design and computer-aided manufacturing is essential for designing products. Mechatronics covers a part of mechanical syllabus which is widely applied in automobile industry.
 Mechatronic systems represent a large part of the functions of an automobile. The control loop formed by sensor—information processing—actuator—mechanical (physical) change is found in many systems. The system size can be very different. The anti-lock braking system (ABS) is a mechatronic system. The brake itself is also one. And the control loop formed by driving control (for example cruise control), engine, vehicle driving speed in the real world and speed measurement is a mechatronic system, too. The great importance of mechatronics for automotive engineering is also evident from the fact that vehicle manufacturers often have development departments with "Mechatronics" in their names.
-
 
 ### Electronics and electricals
 
@@ -28,31 +24,25 @@ Electronics and telecommunication engineering specializes in electronics devices
 Electronics engineering is related to computer engineering and electrical engineering. Control engineering has a wide range of electronic applications from the flight and propulsion systems of commercial airplanes to the cruise control present in many modern cars (automobiles). VLSI designing is important for creating integrated circuits. Mechatronics engineers have deep knowledge of microprocessors, microcontrollers, microchips and semiconductors. The application of mechatronics in electronics manufacturing industry can conduct research and development on consumer electronic devices such as mobile phones, computers, cameras etc. For mechatronics engineers it is necessary to learn operating computer applications such as MATLAB and Simulink for designing and developing electronic products.
 Mechatronics engineering is an interdisciplinary course, it includes concepts of both electrical and mechanical systems. A mechatronics engineer engages in designing high power transformers or radio-frequency module transmitters.
 
-
 ### Avionics
 
 Avionics is also considered a variant of mechatronics as it combines several fields such as electronics and telecom with aerospace engineering. It is the subdiscipline of mechatronics engineering and aerospace engineering which is engineering branch focusing on electronics systems of aircraft. The word avionics is a blend of aviation and electronics. The electronics system of aircraft includes aircraft communication addressing and reporting system, air navigation, aircraft flight control system, aircraft collision avoidance systems, flight recorder, weather radar and lightning detector. These can be as simple as a searchlight for a police helicopter or as complicated as the tactical system for an airborne early warning platform.
-
 
 ### Industrial
 
 The branch of industrial engineer includes the design of machinery, assembly and process lines of various manufacturing industries. This branch can be said somewhat similar to automation and robotics. Mechatronics engineers who works as industrial engineers design and develop infrastructure of a manufacturing plant. Also it can be said that they are architect of machines. One can work as an industrial designer to design the industrial layout and plan for setting up of a manufacturing industry or as an industrial technician to lookover the technical requirements and repairing of the particular factory.
 
-
 ### Robotics
 
 Robotics is one of the newest emerging subfields of mechatronics. It is the study of robots and how they are manufactured and operated. Since 2000, this branch of mechatronics is attracting a number of aspirants. Robotics is interrelated with automation because here also not much human intervention is required. In a large number of factories, especially in automobile factories, robots are found in assembly lines, where they perform the job of drilling, installation and fitting. Programming skills are necessary for specialization in robotics. Knowledge of programming language—ROBOTC—is important for functioning robots. An industrial robot is a prime example of a mechatronics system; it includes aspects of electronics, mechanics and computing to do its day-to-day jobs.
-
 
 ### Computer
 
 The Internet of things (IoT) is the inter-networking of physical devices, embedded with electronics, software, sensors, actuators, and network connectivity which enable these objects to collect and exchange data. IoT and mechatronics are complementary. Many of the smart components associated with the Internet of Things will be essentially mechatronic. The development of the IoT is forcing mechatronics engineers, designers, practitioners and educators to research the ways in which mechatronic systems and components are perceived, designed and manufactured. This allows them to face up to new issues such as data security, machine ethics and the human-machine interface.
 Knowledge of programming is important. A mechatronics engineer has to do programming in different levels – for example, PLC programming, drone programming, hardware programming, CNC programming, etc. Some important programming languages for mechatronics engineers to learn are Java, Python, C++ and C.
 
-
 ## Occupational outlook
 According to the U.S. Bureau of Labor Statistics, the occupational outlook for mechatronics between 2016 and 2026 was 4% growth then declined to -4% for 2021 to 2031 then recovered to a -1% decline for 2023 to 2033. Currently their prediction for 2024 to 2034 is 1%.
-
 
 ## Sources
 Bradley, Dawson et al., Mechatronics, Electronics in products and processes, Chapman and Hall Verlag, London, 1991.
@@ -60,4 +50,3 @@ Karnopp, Dean C., Donald L. Margolis, Ronald C. Rosenberg, System Dynamics: Mode
 Cetinkunt, Sabri, Mechatronics, John Wiley & Sons, Inc, 2007 ISBN 978-0-471-47987-1
 James J. Nutaro (2010). Building software for simulation: theory and algorithms, with applications in C++. Wiley.
 Zhang, Jianhua . Mechatronics and Automation Engineering. Proceedings of the International Conference on Mechatronics and Automation Engineering (ICMAE2016). Xiamen, China, 2016.
-

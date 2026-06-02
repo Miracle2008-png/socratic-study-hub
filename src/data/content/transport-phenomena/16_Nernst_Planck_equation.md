@@ -2,7 +2,6 @@
 
 The Nernst–Planck equation is a conservation of mass equation used to describe the motion of a charged chemical species in a fluid medium. It extends Fick's law of diffusion for the case where the diffusing particles are also moved with respect to the fluid by electrostatic forces. It is named after Walther Nernst and Max Planck.
 
-
 ## Equation
 The Nernst–Planck equation is a continuity equation for the time-dependent concentration 
   
@@ -301,7 +300,6 @@ where
   
  is the magnetic vector potential. Therefore, the Nernst–Planck equation is given by:
 
-
 ### Simplifications
 Assuming that the concentration is at equilibrium 
   
@@ -524,8 +522,3 @@ where
     {\displaystyle N_{\text{A}}e}
   
 ; the product of Avogadro constant and the elementary charge.
-
-
-## Applications
-Modelling the transport of charged chemical species, such as ions, in porous media is of great interest for many applications such as for electrochemical devices and nanoparticle movement in the subsurface. This can be achieved by solving the of the Nernst–Planck, Flow, and charge conservation equations. In fact, the Nernst–Planck equation is applied in describing the ion-exchange kinetics in soils. It has also been applied to membrane electrochemistry.
-

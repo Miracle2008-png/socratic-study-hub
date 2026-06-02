@@ -4,10 +4,8 @@ In mathematics, a tensor is an algebraic object that describes a multilinear rel
 Tensors have become important in physics, because they provide a concise mathematical framework for formulating and solving physics problems in areas such as mechanics (stress, elasticity, quantum mechanics, fluid mechanics, moment of inertia, etc.), electrodynamics (electromagnetic tensor, Maxwell tensor, permittivity, magnetic susceptibility, etc.), and general relativity (stress–energy tensor, curvature tensor, etc.). In applications, it is common to study situations in which a different tensor can occur at each point of an object. For example, the stress within an object may vary from one location to another. A family of tensors, that vary across space in this way, is a tensor field. In some areas, tensor fields are so ubiquitous that they are often simply called "tensors".
 Tullio Levi-Civita and Gregorio Ricci-Curbastro popularised tensors in 1900 – continuing the earlier work of Bernhard Riemann, Elwin Bruno Christoffel, and others – as part of the absolute differential calculus. The concept enabled an alternative formulation of the intrinsic differential geometry of a manifold in the form of the Riemann curvature tensor.
 
-
 ## Definition
 Although seemingly different, the various approaches to defining tensors describe the same geometric concept using different language and at different levels of abstraction.
-
 
 ### As multidimensional arrays
 
@@ -1608,7 +1606,6 @@ When
   
  is a tensor representation of the general linear group, this gives the usual definition of tensors as multidimensional arrays.  This definition is often used to describe tensors on manifolds, and readily generalizes to other groups.
 
-
 ### As multilinear maps
 
 A downside to the definition of a tensor using the multidimensional array approach is that it is not apparent from the definition that the defined object is indeed basis independent, as is expected from an intrinsically geometric object.  Although it is possible to show that transformation laws indeed ensure independence from the basis, sometimes a more intrinsic definition is preferred.  One approach that is common in differential geometry is to define tensors relative to a fixed (finite-dimensional) vector space V, which is usually taken to be a particular vector space of some geometrical significance like the tangent space to a manifold.  In this approach, a type (p, q) tensor T is defined as a multilinear map,
@@ -1815,7 +1812,6 @@ By applying a multilinear map T of type (p, q) to a basis {ej} for V and a canon
 
 a (p + q)-dimensional array of components can be obtained.  A different choice of basis will yield different components.  But, because T is linear in all of its arguments, the components satisfy the tensor transformation law used in the multilinear array definition.  The multidimensional array of components of T thus form a tensor according to that definition.  Moreover, such an array can be realized as the components of some multilinear map T.  This motivates viewing multilinear maps as the intrinsic objects underlying tensors.
 In viewing a tensor as a multilinear map, it is conventional to identify the double dual V∗∗ of the vector space V, i.e., the space of linear functionals on the dual  vector space V∗, with the vector space V.  There is always a natural linear map from V to its double dual, given by evaluating a linear form in V∗ against a vector in V.  This linear mapping is an isomorphism in finite dimensions, and it is often then expedient to identify V with its double dual.
-
 
 ### Using tensor products
 
@@ -2158,10 +2154,8 @@ The last line is using the universal property of the tensor product, that there 
 .
 Tensor products can be defined in great generality – for example, involving arbitrary modules over a ring.  In principle, one could define a "tensor" simply to be an element of any tensor product.  However, the mathematics literature usually reserves the term tensor for an element of a tensor product of any number of copies of a single vector space V and its dual, as above.
 
-
 ### Tensors in infinite dimensions
 This discussion of tensors so far assumes finite dimensionality of the spaces involved, where the spaces of tensors obtained by each of these constructions are naturally isomorphic.  Constructions of spaces of tensors based on the tensor product and multilinear mappings can be generalized, essentially without modification, to vector bundles or coherent sheaves.  For infinite-dimensional vector spaces, inequivalent topologies lead to inequivalent notions of tensor, and these various isomorphisms may or may not hold depending on what exactly is meant by a tensor (see topological tensor product).  In some applications, it is the tensor product of Hilbert spaces that is intended, whose properties are the most similar to the finite-dimensional case. A more modern view is that it is the tensors' structure as a symmetric monoidal category that encodes their most important properties, rather than the specific models of those categories.
-
 
 ### Tensor fields
 
@@ -2518,7 +2512,6 @@ defining a coordinate transformation,
     {\displaystyle {\hat {T}}_{j'_{1}\dots j'_{q}}^{i'_{1}\dots i'_{p}}\left({\bar {x}}^{1},\ldots ,{\bar {x}}^{n}\right)={\frac {\partial {\bar {x}}^{i'_{1}}}{\partial x^{i_{1}}}}\cdots {\frac {\partial {\bar {x}}^{i'_{p}}}{\partial x^{i_{p}}}}{\frac {\partial x^{j_{1}}}{\partial {\bar {x}}^{j'_{1}}}}\cdots {\frac {\partial x^{j_{q}}}{\partial {\bar {x}}^{j'_{q}}}}T_{j_{1}\dots j_{q}}^{i_{1}\dots i_{p}}\left(x^{1},\ldots ,x^{n}\right).}
   
 
-
 ## Examples
 
 An elementary example of a mapping describable as a tensor is the dot product, which maps two vectors to a scalar. A more complex example is the Cauchy stress tensor T, which takes a directional unit vector v as input and maps it to the stress vector T(v), which is the force (per unit area) exerted by material on the negative side of the plane orthogonal to v against the material on the positive side of the plane, thus expressing a relationship between these two vectors, shown in the figure (right). The cross product, where two vectors are mapped to a third one, is strictly speaking not a tensor because it changes its sign under those transformations that change the orientation of the coordinate system. The totally anti-symmetric symbol 
@@ -2541,7 +2534,6 @@ An elementary example of a mapping describable as a tensor is the dot product, w
 This table shows important examples of tensors on vector spaces and tensor fields on manifolds.  The tensors are classified according to their type (n, m), where n is the number of contravariant indices, m is the number of covariant indices, and n + m gives the total order of the tensor.  For example, a bilinear form is the same thing as a (0, 2)-tensor; an inner product is an example of a (0, 2)-tensor, but not all (0, 2)-tensors are inner products.  In the (0, M)-entry of the table, M denotes the dimensionality of the underlying vector space or manifold because for each dimension of the space, a separate index is needed to select that dimension to get a maximally covariant antisymmetric tensor.
 
 Raising an index on an (n, m)-tensor produces an (n + 1, m − 1)-tensor; this corresponds to moving diagonally down and to the left on the table.  Symmetrically, lowering an index corresponds to moving diagonally up and to the right on the table.  Contraction of an upper with a lower index of an (n, m)-tensor produces an (n − 1, m − 1)-tensor; this corresponds to moving diagonally up and to the left on the table.
-
 
 ## Properties
 Assuming a basis of a real vector space, e.g., a coordinate frame in the ambient space, a tensor can be represented as an organized multidimensional array of numerical values with respect to this specific basis. Changing the basis transforms the values in the array in a characteristic way that allows to define tensors as objects adhering to this transformational behavior. For example, there are invariants of tensors that must be preserved under any change of the basis, thereby making only certain multidimensional arrays of numbers a tensor. Compare this to the array representing 
@@ -2581,34 +2573,26 @@ The order (also degree or rank) of a tensor is thus the sum of the orders of its
 -symbol, mapping two vectors to one vector, would have order 2 + 1 = 3.
 The collection of tensors on a vector space and its dual forms a tensor algebra, which allows products of arbitrary tensors. Simple applications of tensors of order 2, which can be represented as a square matrix, can be solved by clever arrangement of transposed vectors and by applying the rules of matrix multiplication, but the tensor product should not be confused with this.
 
-
 ## Notation
 There are several notational systems that are used to describe tensors and perform calculations involving them.
-
 
 ### Ricci calculus
 Ricci calculus is the modern formalism and notation for tensor indices: indicating inner and outer products, covariance and contravariance, summations of tensor components, symmetry and antisymmetry, and partial and covariant derivatives.
 
-
 ### Einstein summation convention
 The Einstein summation convention dispenses with writing summation signs, leaving the summation implicit.  Any repeated index symbol is summed over: if the index i is used twice in a given term of a tensor expression, it means that the term is to be summed for all i.  Several distinct pairs of indices may be summed this way.
-
 
 ### Penrose graphical notation
 Penrose graphical notation is a diagrammatic notation which replaces the symbols for tensors with shapes, and their indices by lines and curves.  It is independent of basis elements, and requires no symbols for the indices.
 
-
 ### Abstract index notation
 The abstract index notation is a way to write tensors such that the indices are no longer thought of as numerical, but rather are indeterminates.  This notation captures the expressiveness of indices and the basis-independence of index-free notation.
-
 
 ### Component-free notation
 A component-free treatment of tensors uses notation that emphasises that tensors do not rely on any basis, and is defined in terms of the tensor product of vector spaces.
 
-
 ## Operations
 There are several operations on tensors that again produce a tensor.  The linear nature of tensors implies that two tensors of the same type may be added together, and that tensors may be multiplied by a scalar with results analogous to the scaling of a vector.  On components, these operations are simply performed component-wise.  These operations do not change the type of the tensor; but there are also operations that produce a tensor of different type.
-
 
 ### Tensor product
 
@@ -2865,7 +2849,6 @@ which again produces a map that is linear in all its arguments.  On components, 
 
 If S is of type (l, k) and T is of type (n, m), then the tensor product S ⊗ T has type (l + n, k + m).
 
-
 ### Contraction
 
 Tensor contraction is an operation that reduces a type (n, m) tensor to a type (n − 1, m − 1) tensor, of which the trace is a special case. It thereby reduces the total order of a tensor by two. The operation is achieved by summing components for which one specified contravariant index is the same as one specified covariant index to produce a new component. Components for which those two indices are different are discarded. For example, a (1, 1)-tensor 
@@ -3115,230 +3098,18 @@ In a vector space with an inner product (also known as a metric) g, the term con
   
  (yet again assuming the summation convention).
 
-
 ### Raising or lowering an index
 
 When a vector space is equipped with a nondegenerate bilinear form (or metric tensor as it is often called in this context), operations can be defined that convert a contravariant (upper) index into a covariant (lower) index and vice versa.  A metric tensor is a (symmetric) (0, 2)-tensor; it is thus possible to contract an upper index of a tensor with one of the lower indices of the metric tensor in the product.  This produces a new tensor with the same index structure as the previous tensor, but with lower index generally shown in the same position of the contracted upper index.  This operation is quite graphically known as lowering an index.
 Conversely, the inverse operation can be defined, and is called raising an index.  This is equivalent to a similar contraction on the product with a (2, 0)-tensor.  This inverse metric tensor has components that are the matrix inverse of those of the metric tensor.
 
-
-## Applications
-
-
-### Continuum mechanics
-Important examples are provided by continuum mechanics.  The stresses inside a solid body or fluid are described by a tensor field.  The stress tensor and strain tensor are both second-order tensor fields, and are related in a general linear elastic material by a fourth-order elasticity tensor field.  In detail, the tensor quantifying stress in a 3-dimensional solid object has components that can be conveniently represented as a 3 × 3 array.  The three faces of a cube-shaped infinitesimal volume segment of the solid are each subject to some given force.  The force's vector components are also three in number.  Thus, 3 × 3, or 9 components are required to describe the stress at this cube-shaped infinitesimal segment.  Within the bounds of this solid is a whole mass of varying stress quantities, each requiring 9 quantities to describe.  Thus, a second-order tensor is needed.
-If a particular surface element inside the material is singled out, the material on one side of the surface will apply a force on the other side.  In general, this force will not be orthogonal to the surface, but it will depend on the orientation of the surface in a linear manner.  This is described by a tensor of type (2, 0), in linear elasticity, or more precisely by a tensor field of type (2, 0), since the stresses may vary from point to point.
-
-
-### Other examples from physics
-Common applications include:
-
-Electromagnetic tensor (or Faraday tensor) in electromagnetism
-Finite deformation tensors for describing deformations and strain tensor for strain in continuum mechanics
-Permittivity and electric susceptibility are tensors in anisotropic media
-Four-tensors in general relativity (e.g. stress–energy tensor), used to represent momentum fluxes
-Spherical tensor operators are the eigenfunctions of the quantum angular momentum operator in spherical coordinates
-Diffusion tensors, the basis of diffusion tensor imaging, represent rates of diffusion in biological environments
-Quantum mechanics and quantum computing utilize tensor products for combination of quantum states
-
-
-### Computer vision and optics
-The concept of a tensor of order two is often conflated with that of a matrix.  Tensors of higher order do however capture ideas important in science and engineering, as has been shown successively in numerous areas as they develop.  This happens, for instance, in the field of computer vision, with the trifocal tensor generalizing the fundamental matrix.
-The field of nonlinear optics studies the changes to material polarization density under extreme electric fields.  The polarization waves generated are related to the generating electric fields through the nonlinear susceptibility tensor.  If the polarization P is not linearly proportional to the electric field E, the medium is termed nonlinear.  To a good approximation (for sufficiently weak fields, assuming no permanent dipole moments are present), P is given by a Taylor series in E whose coefficients are the nonlinear susceptibilities:
-
-  
-    
-      
-        
-          
-            
-              P
-              
-                i
-              
-            
-            
-              ε
-              
-                0
-              
-            
-          
-        
-        =
-        
-          ∑
-          
-            j
-          
-        
-        
-          χ
-          
-            i
-            j
-          
-          
-            (
-            1
-            )
-          
-        
-        
-          E
-          
-            j
-          
-        
-        +
-        
-          ∑
-          
-            j
-            k
-          
-        
-        
-          χ
-          
-            i
-            j
-            k
-          
-          
-            (
-            2
-            )
-          
-        
-        
-          E
-          
-            j
-          
-        
-        
-          E
-          
-            k
-          
-        
-        +
-        
-          ∑
-          
-            j
-            k
-            ℓ
-          
-        
-        
-          χ
-          
-            i
-            j
-            k
-            ℓ
-          
-          
-            (
-            3
-            )
-          
-        
-        
-          E
-          
-            j
-          
-        
-        
-          E
-          
-            k
-          
-        
-        
-          E
-          
-            ℓ
-          
-        
-        +
-        ⋯
-        .
-        
-      
-    
-    {\displaystyle {\frac {P_{i}}{\varepsilon _{0}}}=\sum _{j}\chi _{ij}^{(1)}E_{j}+\sum _{jk}\chi _{ijk}^{(2)}E_{j}E_{k}+\sum _{jk\ell }\chi _{ijk\ell }^{(3)}E_{j}E_{k}E_{\ell }+\cdots .\!}
-  
-
-Here 
-  
-    
-      
-        
-          χ
-          
-            (
-            1
-            )
-          
-        
-      
-    
-    {\displaystyle \chi ^{(1)}}
-  
- is the linear susceptibility, 
-  
-    
-      
-        
-          χ
-          
-            (
-            2
-            )
-          
-        
-      
-    
-    {\displaystyle \chi ^{(2)}}
-  
- gives the Pockels effect and  second harmonic generation, and 
-  
-    
-      
-        
-          χ
-          
-            (
-            3
-            )
-          
-        
-      
-    
-    {\displaystyle \chi ^{(3)}}
-  
- gives the Kerr effect.  This expansion shows the way higher-order tensors arise naturally in the subject matter.
-
-
-### Machine learning
-
-The properties of tensors, especially tensor decomposition, have enabled their use in machine learning to embed higher dimensional data in artificial neural networks.  This notion of tensor differs significantly from that in other areas of mathematics and physics, in the sense that a tensor is the same thing as a multidimensional array. Abstractly, a tensor belongs to tensor product of spaces, each of which has a fixed basis, and the dimensions of the factor spaces can be different. Thus, an example of a tensor in this context is a rectangular matrix. Just as a rectangular matrix has two axes, a horizontal and vertical axis to indicate the position of each entry, a more general tensor has as many axes as there are factors in the tensor product to which it belongs, and an entry of the tensor is referred to be a tuple of integers. The various axes have different dimensions in general.
-
-
 ## Generalizations
-
 
 ### Tensor products of vector spaces
 The vector spaces of a tensor product need not be the same, and sometimes the elements of such a more general tensor product are called "tensors".  For example, an element of the tensor product space V ⊗ W is a second-order "tensor" in this more general sense, and an order-d tensor may likewise be defined as an element of a tensor product of d different vector spaces.  A type (n, m) tensor, in the sense defined previously, is also a tensor of order n + m in this more general sense.  The concept of tensor product can be extended to arbitrary modules over a ring.
 
-
 ### Tensors in infinite dimensions
 The notion of a tensor can be generalized in a variety of ways to infinite dimensions.  One, for instance, is via the tensor product of Hilbert spaces.  Another way of generalizing the idea of tensor, common in nonlinear analysis, is via the multilinear maps definition where instead of using finite-dimensional vector spaces and their algebraic duals, one uses infinite-dimensional Banach spaces and their continuous dual.  Tensors thus live naturally on Banach manifolds and Fréchet manifolds.
-
 
 ### Tensor densities
 
@@ -3697,13 +3468,10 @@ Under an affine transformation of the coordinates, a tensor transforms by the li
     {\displaystyle (x,y)\mapsto (x+y\log \left|\det R\right|,y).}
   
 
-
 ### Geometric objects
 The transformation law for a tensor behaves as a functor on the category of admissible coordinate systems, under general linear transformations (or, other transformations within some class, such as local diffeomorphisms).  This makes a tensor a special case of a geometrical object, in the technical sense that it is a function of the coordinate system transforming functorially under coordinate changes.  Examples of objects obeying more general kinds of transformation laws are jets and, more generally still, natural bundles.
-
 
 ### Spinors
 
 When changing from one orthonormal basis (called a frame) to another by a rotation, the components of a tensor transform by that same rotation.  This transformation does not depend on the path taken through the space of frames.  However, the space of frames is not simply connected (see orientation entanglement and plate trick): there are continuous paths in the space of frames with the same beginning and ending configurations that are not deformable one into the other.  It is possible to attach an additional discrete invariant to each frame that incorporates this path dependence, and which turns out (locally) to have values of ±1.  A spinor is an object that transforms like a tensor under rotations in the frame, apart from a possible sign that is determined by the value of this discrete invariant.
 Spinors are elements of the spin representation of the rotation group, while tensors are elements of its tensor representations. Other classical groups have tensor representations, and so also tensors that are compatible with the group, but all non-compact classical groups have infinite-dimensional unitary representations as well.
-

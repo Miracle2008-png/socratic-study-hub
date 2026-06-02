@@ -5,43 +5,29 @@ Pure mechanics describes the response of bodies (solids and fluids) or systems o
 Applied mechanics can be split into particle mechanics (mechanics of macroscopic objects modeled as point particles), rigid body mechanics (mechanics of non-deformable macroscopic bodies with a definite shape), solid mechanics (mechanics of deformable macroscopic solids, including both elastic and plastic deformation), and fluid mechanics (mechanics of macroscopic fluids). Each branch of applied mechanics is further divided into statics (the study of bodies that have zero resultant force and torque acted upon them), and dynamics (the study of bodies that have non-zero resultant force and torque acted upon them).
 Within the practical sciences, applied mechanics is useful in formulating new ideas and theories, discovering and interpreting phenomena, and developing experimental and computational tools. In the application of the natural sciences, mechanics was said to be complemented by thermodynamics, the study of heat and more generally energy, and electromechanics, the study of electricity and magnetism.
 
-
-## Overview
-Engineering problems are generally tackled with applied mechanics through the application of theories of classical mechanics and fluid mechanics. Because applied mechanics can be applied in engineering disciplines like civil engineering, mechanical engineering, aerospace engineering, materials engineering, and biomedical engineering, it is sometimes referred to as engineering mechanics.
-Science and engineering are interconnected with respect to applied mechanics, as researches in science are linked to research processes in civil, mechanical, aerospace, materials and biomedical engineering disciplines. In civil engineering, applied mechanics’ concepts can be applied to structural design and a variety of engineering sub-topics like structural, coastal, geotechnical, construction, and earthquake engineering. In mechanical engineering, it can be applied in mechatronics and robotics, design and drafting, nanotechnology, machine elements, structural analysis, friction stir welding, and acoustical engineering. In aerospace engineering, applied mechanics is used in aerodynamics, aerospace structural mechanics and propulsion, aircraft design and flight mechanics. In materials engineering, applied mechanics’ concepts are used in thermoelasticity, elasticity theory, fracture and failure mechanisms, structural design optimisation, fracture and fatigue, active materials and composites, and computational mechanics. Research in applied mechanics can be directly linked to biomedical engineering areas of interest like orthopaedics; biomechanics;  human body motion analysis; soft tissue modelling of muscles, tendons, ligaments, and cartilage; biofluid mechanics; and dynamic systems, performance enhancement, and optimal control.
-
-
 ## Branches
-
 
 ### Dynamics
 
 Dynamics, the study of the motion and movement of various objects, can be further divided into two branches, kinematics and kinetics. For classical mechanics, kinematics would be the analysis of moving bodies using time, velocities, displacement, and acceleration. Kinetics would be the study of moving bodies through the lens of the effects of forces and masses. In the context of fluid mechanics, fluid dynamics pertains to the flow and describing of the motion of various fluids.
 
-
 ### Statics
 
 The study of statics is the study and describing of bodies at rest. Static analysis in classical mechanics can be broken down into two categories, non-deformable bodies and deformable bodies. When studying non-deformable bodies, considerations relating to the forces acting on the rigid structures are analyzed. When studying deformable bodies, the examination of the structure and material strength is observed. In the context of fluid mechanics, the resting state of the pressure unaffected fluid is taken into account.
 
-
 ## Relationship to classical mechanics
 Applied Mechanics is a result of the practical applications of various engineering/mechanical disciplines; as illustrated in the table below.
 
-
 ## Examples
-
 
 ### Newtonian foundation
 Being one of the first sciences for which a systematic theoretical framework was developed, mechanics was spearheaded by Sir Isaac Newton's Principia (published in 1687). It is the "divide and rule" strategy developed by Newton that helped to govern motion and split it into dynamics or statics. Depending on the type of force, type of matter, and the external forces, acting on said matter, will dictate the "Divide and Rule" strategy within dynamic and static studies.
 
-
 ### Archimedes' principle
 Archimedes' principle is a major one that contains many defining propositions pertaining to fluid mechanics. As stated by proposition 7 of Archimedes' principle, a solid that is heavier than the fluid its placed in, will descend to the bottom of the fluid. If the solid is to be weighed within the fluid, the fluid will be measured as lighter than the weight of the amount of fluid that was displaced by said solid. Further developed upon by proposition 5, if the solid is lighter than the fluid it is placed in, the solid will have to be forcibly immersed to be fully covered by the liquid. The weight of the amount of displaced fluids will then be equal to the weight of the solid.
 
-
 ## Major topics
 This section based on the "AMR Subject Classification Scheme" from the journal Applied Mechanics Reviews.
-
 
 ### Foundations and basic methods
 Continuum mechanics
@@ -49,7 +35,6 @@ Finite element method
 Finite difference method
 Other computational methods
 Experimental system analysis
-
 
 ### Dynamics and vibration
 Dynamics (mechanics)
@@ -66,14 +51,12 @@ Astronautics (celestial and orbital mechanics)
 Explosions and ballistics
 Acoustics
 
-
 ### Automatic control
 System theory and design
 Optimal control system
 System and control applications
 Robotics
 Manufacturing
-
 
 ### Mechanics of solids
 Elasticity
@@ -102,7 +85,6 @@ Machine elements
 Machine design
 Fastening and joining
 
-
 ### Mechanics of fluids
 Rheology
 Hydraulics
@@ -123,7 +105,6 @@ Machinery fluid dynamics
 Lubrication
 Flow measurements and visualization
 
-
 ### Thermal sciences
 Thermodynamics
 Heat transfer (one phase convection)
@@ -136,14 +117,12 @@ Mass transfer (with and without heat transfer)
 Combustion
 Prime movers and propulsion systems
 
-
 ### Earth sciences
 Micromeritics
 Porous media
 Geomechanics
 Earthquake mechanics
 Hydrology, oceanology, and meteorology
-
 
 ### Energy systems and environment
 Fossil fuel systems
@@ -156,23 +135,11 @@ Energy distribution and storage
 Environmental fluid mechanics
 Hazardous waste containment and disposal
 
-
 ### Biosciences
 Biomechanics
 Human factor engineering
 Rehabilitation engineering
 Sports mechanics
-
-
-## Applications
-Electrical Engineering
-Civil engineering
-Mechanical Engineering
-Nuclear engineering
-Architectural engineering
-Chemical engineering
-Petroleum engineering
-
 
 ## Publications
 Journal of Applied Mathematics and Mechanics
@@ -184,4 +151,3 @@ Quarterly Journal of Mechanics and Applied Mathematics
 Journal of Applied Mathematics and Mechanics (PMM)
 Gesellschaft für Angewandte Mathematik und Mechanik
 Acta Mechanica Sinica
-

@@ -2,7 +2,6 @@
 
 Brush Traction was a manufacturer and maintainer of railway locomotives in Loughborough, England whose operations have now been merged into the Wabtec company's Doncaster UK operations.
 
-
 ## Locomotives
 
 Brush manufactured various diesel and electric locomotives for the British railway network:
@@ -30,7 +29,6 @@ They were also a major supplier of traction equipment to rapid transit systems, 
 Traction equipment was supplied to British Rail for various Electric Multiple Unit trains, the Class 43 HST diesel locomotive, with similar equipment being supplied to Comeng in Australia in 1979, and used in the Class 56 and 58 freight locomotives.
 Brush repowered most Class 43 HST power cars with MTU engines between 2005 and 2010.
 
-
 ## Surviving steam locomotives
 
 No. 3 ‘Sir Haydn’, the third Hughes/Falcon locomotive supplied to the Corris Railway, works number 323 (although incorporating parts from 324 and probably 322 as well) now runs on the neighbouring Talyllyn Railway
@@ -43,10 +41,8 @@ Metre gauge Ex. F.C. Reus – Salou No.5 'SALOU' 0-4-0T Falcon 118/1886. Preserv
 Metre gauge Ex. F.C. Olot - Gerona No.4 0-6-2T Builder: Falcon 281/1899. Preserved at Reus.
 Elfkarleö Bruk No. 1, built in 1873 by Henry Hughes & Co., bought second-hand by Älvkarleö Mill in 1876 and was used as shunter between the mill and Älvkarleö station on the Uppsala Gefle Railway which was then newly opened. The locomotive was in use until 1945 when it was acquired by the museum.
 
-
 ## Surviving diesel locomotives
 Over 75 examples of Brush Traction built engines have been preserved and can be seen at heritage railways across the United Kingdom. Many more examples can still be seen in action today on the mainlines.
-
 
 ## Preserved light rail/tramway vehicles
 
@@ -80,7 +76,6 @@ Nos 5, 6, 7 & 9 (1894)
 No 16 (1898)
 No 34 (1995) Works Car
 
-
 ## Battery-electric vehicles
 
 In 1940, Brush required some small battery-electric tractor units, but as none were commercially available, they asked AC Morrison of AE Morrison and Sons (later Morrison-Electricar) to produce a design for one. Morrisons produced a 3-wheeled design, which Brush then used to manufacture a number of units for internal use. Subsequently, they began selling them on the open market and shipped a large order to Russia in 1941. They added battery electric road vehicles to their product list in 1945, buying the designs and manufacturing rights from Metropolitan-Vickers, so that early Brush vehicles are almost indistinguishable from late Metro-Vicks. 3-wheeled vehicles were marketed as the Brush Pony, and they also produced 4-wheeled vehicles. In 1948 they added a 2-ton chassis to their range, which could be supplied with a large van, standard van, flat truck or milk float body. The welded box-section chassis was fitted with semi-elliptic springs and a Lockheed hydraulic braking system. The 36-cell 290 Ahr battery was mounted on both sides of the central spine. The electric motor was connected to a banjo-type rear axle by a Layrub propeller shaft. In common with other Brush vehicles, control was by a double-depression foot pedal, where the first depression gave two stages of control with the two-halves of the battery connected in parallel, and the second depression gave a further two stages with the batteries in series.
@@ -88,18 +83,14 @@ In early 1949, they reduced the prices of their electric vehicles by around 25 p
 In 1949, they offered 25 standard bodies for their chassis, including a mobile canteen or ice cream parlour, which they exhibited at the Dairy Show that year. The vehicle had a top speed of 16 mph, and a range of 28 miles, based on eight stops per mile. Production of 4-wheeled battery electrics ceased in 1950, although the company continued to manufacture the 3-wheeled Brush Pony milk float and their range of industrial trucks. They maintained enough spare parts to allow them to service 4-wheeled vehicles for a further 10 years and sold the remainder to Hindle, Smart and Co of Manchester, who made Helecs milk floats.
 In 1972, Hawker Siddeley bought a 50 per cent share in Crompton Leyland Electricars Ltd (CLE), from British Leyland. CLE was the manufacturer of Morrison-Electricar milk floats, and at this point Hawker Siddeley owned Brush, RA Lister & Company, based in Dursley and Brook Victor Electric Vehicles based in Huddersfield, all of which were producing electric vehicles. In order to rationalise their operations, construction of Brush industrial trucks was transferred to the Morrison-Electricar factory in Tredegar. Although most of the vehicles involved were industrial trucks, the 3-wheeled Brush Pony milk float was also included, and a number of these were subsequently manufactured at Tredegar. Also included was the SD tractor, which was still selling well, and included a drive unit which had originally been designed for Brush by Morrisons in 1940.
 
-
 ### Preservation
 An early Brush Pony 3-wheeled milk float, formerly operated by United Dairies and dating from 1947, is on display at the National Motor Museum, Beaulieu. A Brush 10/14 cwt Mark II bread van, also dating from 1947, and formerly owned by the Co-operative Wholesale Society, can be seen at The Transport Museum, Wythall. It was displayed at the East Anglia Transport Museum from around 1973, and then moved to a collection of battery-electric vehicles at Blandford, Dorset in 1983. When that collection was sold in 1987, it was given to Wythall, and has yet to be restored. The Ipswich Transport Museum has a Brush Pony electric laundry van dating from 1967 in their collection.
 The National Transport Museum of Ireland at Howth has a Brush 2-ton electric lorry in its collection. It was supplied to Dartry Limited, a laundry company based in Dublin, in 1947 as a chassis with bodbywork built locally by Dublin Vehicle Builders of Summerhill. It was used to transfer laundry between Dartry's branches, and to service a number of large hotels in Dublin city centre until their decline in the 1970s. It carried the registration number ZH 2511, and was finally withdrawn from service in 1981, around one year before Dartry ceased trading.
-
 
 ## Preserved aircraft
 
 A de Havilland Dominie DH.89 that Brush built in 1946 for the RAF is preserved at Tangmere Military Aviation Museum on the West Sussex coast.
 
-
 ## Other relics
 
 The large statue of a falcon from Brush's Loughborough works is now displayed in the exhibition hall at the National Tramway Museum in Crich, Derbyshire.
-

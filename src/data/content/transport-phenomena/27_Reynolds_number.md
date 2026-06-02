@@ -4,7 +4,6 @@ In fluid dynamics, the Reynolds number (Re) is a dimensionless quantity that hel
 The Reynolds number has wide applications, ranging from liquid flow in a pipe to the passage of air over an aircraft wing. It is used to predict the transition from laminar to turbulent flow and is used in the scaling of similar but different-sized flow situations, such as between an aircraft model in a wind tunnel and the full-size version. The predictions of the onset of turbulence and the ability to calculate scaling effects can be used to help predict fluid behavior on a larger scale, such as in local or global air or water movement, and thereby the associated meteorological and climatological effects.
 The concept was introduced by George Stokes in 1851, but the Reynolds number was named by Arnold Sommerfeld in 1908 after Osborne Reynolds who popularized its use in 1883 (an example of Stigler's law of eponymy).
 
-
 ## Definition
 The Reynolds number is the ratio of inertial forces to viscous forces within a fluid that is subjected to relative internal movement due to different fluid velocities. A region where these forces change behavior is known as a boundary layer, such as the bounding surface in the interior of a pipe. A similar effect is created by the introduction of a stream of high-velocity fluid into a low-velocity fluid, such as the hot gases emitted from a flame in air. This relative movement generates fluid friction, which is a factor in developing turbulent flow. Counteracting this effect is the viscosity of the fluid, which tends to inhibit turbulence. The Reynolds number quantifies the relative importance of these two types of forces for given flow conditions and is a guide to when turbulent flow will occur in a particular situation.
 This ability to predict the onset of turbulent flow is an important design tool for equipment such as piping systems or aircraft wings, but the Reynolds number is also used in scaling of fluid dynamics problems and is used to determine dynamic similitude between two different cases of fluid flow, such as between a model aircraft, and its full-size version. Such scaling is not linear and the application of Reynolds numbers to both situations allows scaling factors to be developed.
@@ -31,7 +30,6 @@ These are generally not independent numbers: liquids generally get less viscous 
 
 The Reynolds number can be defined for several different situations where a fluid is in relative motion to a surface. These definitions generally include the fluid properties of density and viscosity, plus a velocity and a characteristic length or characteristic dimension (L in the above equation). This dimension is a matter of convention—for example radius and diameter are equally valid to describe spheres or circles, but one is chosen by convention. For aircraft or ships, the length or width can be used. For flow in a pipe, or for a sphere moving in a fluid, the internal diameter is generally used today. Other shapes such as rectangular pipes or non-spherical objects have an equivalent diameter defined. For fluids of variable density such as compressible gases or fluids of variable viscosity such as non-Newtonian fluids, special rules apply. The velocity may also be a matter of convention in some circumstances, notably stirred vessels.
 In practice, matching the Reynolds number is not on its own sufficient to guarantee similitude. Fluid flow is generally chaotic, and very small changes to shape and surface roughness of bounding surfaces can result in very different flows. Nevertheless, Reynolds numbers are a very important guide and are widely used.
-
 
 ## Derivation
 If we know that the relevant physical quantities in a physical system are only 
@@ -450,7 +448,6 @@ Remove the gravity term
   
 , the Reynolds number. This argument is written out in detail on the Scallop theorem page.
 
-
 ### Alternative derivation
 The Reynolds number can be obtained when one uses the nondimensional form of the incompressible Navier–Stokes equations for a newtonian fluid expressed in terms of the Lagrangian derivative:
 
@@ -794,7 +791,6 @@ Finally, dropping the primes for ease of reading:
 
 This is why mathematically all Newtonian, incompressible flows with the same Reynolds number are comparable. Notice also that in the above equation, the viscous terms vanish for Re → ∞. Thus flows with high Reynolds numbers are approximately inviscid in the free stream.
 
-
 ## Flow in a pipe
 For flow in a pipe or tube, the Reynolds number is generally defined as
 
@@ -973,30 +969,24 @@ Do is the inside diameter of the outer pipe,
 Di is the outside diameter of the inner pipe.
 For calculation involving flow in non-circular ducts, the hydraulic diameter can be substituted for the diameter of a circular duct, with reasonable accuracy, if the aspect ratio AR of the duct cross-section remains in the range ⁠1/4⁠ < AR < 4.
 
-
 ## Laminar–turbulent transition
 
 In boundary layer flow over a flat plate, experiments confirm that, after a certain length of flow, a laminar boundary layer will become unstable and turbulent. This instability occurs across different scales and with different fluids, usually when Rex ≈ 5×105, where x is the distance from the leading edge of the flat plate, and the flow velocity is the freestream velocity of the fluid outside the boundary layer.
 For flow in a pipe of diameter D, experimental observations show that for "fully developed" flow, laminar flow occurs when ReD < 2300 and turbulent flow occurs when ReD > 2900. At the lower end of this range, a continuous turbulent-flow will form, but only at a very long distance from the inlet of the pipe. The flow in between will begin to transition from laminar to turbulent and then back to laminar at irregular intervals, called intermittent flow. This is due to the different speeds and conditions of the fluid in different areas of the pipe's cross-section, depending on other factors such as pipe roughness and flow uniformity. Laminar flow tends to dominate in the fast-moving center of the pipe while slower-moving turbulent flow dominates near the wall. As the Reynolds number increases, the continuous turbulent-flow moves closer to the inlet and the intermittency in between increases, until the flow becomes fully turbulent at ReD > 2900. This result is generalized to non-circular channels using the hydraulic diameter, allowing a transition Reynolds number to be calculated for other shapes of channel.
 These transition Reynolds numbers are also called critical Reynolds numbers, and were studied by Osborne Reynolds around 1895. The critical Reynolds number is different for every geometry.
 
-
 ## Flow in a wide duct
 For a fluid moving between two plane parallel surfaces—where the width is much greater than the space between the plates—then the characteristic dimension is equal to the distance between the plates. This is consistent with the annular duct and rectangular duct cases above, taken to a limiting aspect ratio.
-
 
 ## Flow in an open channel
 For calculating the flow of liquid with a free surface, the hydraulic radius must be determined. This is the cross-sectional area of the channel divided by the wetted perimeter. For a semi-circular channel, it is a quarter of the diameter (in case of full pipe flow). For a rectangular channel, the hydraulic radius is the cross-sectional area divided by the wetted perimeter. Some texts then use a characteristic dimension that is four times the hydraulic radius, chosen because it gives the same value of Re for the onset of turbulence as in pipe flow, while others use the hydraulic radius as the characteristic length-scale with consequently different values of Re for transition and turbulent flow.
 
-
 ## Flow around airfoils
 Reynolds numbers are used in airfoil design to (among other things) manage "scale effect" when computing/comparing characteristics (a tiny wing, scaled to be huge, will perform differently). Fluid dynamicists define the chord Reynolds number R = Vc/ν, where V is the flight speed, c is the chord length, and ν is the kinematic viscosity of the fluid in which the airfoil operates, which is 1.460×10−5 m2/s for the atmosphere at sea level. In some special studies a characteristic length other than chord may be used; rare is the "span Reynolds number", which is not to be confused with span-wise stations on a wing, where chord is still used.
-
 
 ## Object in a fluid
 
 The Reynolds number for an object moving in a fluid, called the particle Reynolds number and often denoted Rep, characterizes the nature of the surrounding flow and its fall velocity.
-
 
 ### In viscous fluids
 
@@ -1004,21 +994,17 @@ Where the viscosity is naturally high, such as polymer solutions and polymer mel
 The laminar flow of polymer solutions is exploited by animals such as fish and dolphins, who exude viscous solutions from their skin to aid flow over their bodies while swimming. It has been used in yacht racing by owners who want to gain a speed advantage by pumping a polymer solution such as low molecular weight polyoxyethylene in water, over the wetted surface of the hull.
 It is, however, a problem for mixing polymers, because turbulence is needed to distribute fine filler (for example) through the material. Inventions such as the "cavity transfer mixer" have been developed to produce multiple folds into a moving melt so as to improve mixing efficiency. The device can be fitted onto extruders to aid mixing.
 
-
 ### Sphere in a fluid
 
 For a sphere in a fluid, the characteristic length-scale is the diameter of the sphere and the characteristic velocity is that of the sphere relative to the fluid some distance away from the sphere, such that the motion of the sphere does not disturb that reference parcel of fluid. The density and viscosity are those belonging to the fluid. Note that purely laminar flow only exists up to Re = 10 under this definition.
 Under the condition of low Re, the relationship between force and speed of motion is given by Stokes' law.
 At higher Reynolds numbers the drag on a sphere depends on surface roughness. Thus, for example, adding dimples on the surface of a golf ball causes the boundary layer on the upstream side of the ball to transition from laminar to turbulent. The turbulent boundary layer is able to remain attached to the surface of the ball much longer than a laminar boundary and so creates a narrower low-pressure wake and hence less pressure drag. The reduction in pressure drag causes the ball to travel farther.
 
-
 ### Rectangular object in a fluid
 The equation for a rectangular object is identical to that of a sphere, with the object being approximated as an ellipsoid and the axis of length being chosen as the characteristic length scale. Such considerations are important in natural streams, for example, where there are few perfectly spherical grains. For grains in which measurement of each axis is impractical, sieve diameters are used instead as the characteristic particle length-scale. Both approximations alter the values of the critical Reynolds number.
 
-
 ### Fall or terminal velocity
 The particle Reynolds number is important in determining the terminal velocity of a particle. When the particle Reynolds number indicates laminar flow, Stokes' law can be used to calculate its fall velocity or settling velocity. When the particle Reynolds number indicates turbulent flow, a turbulent drag law must be constructed to model the appropriate settling velocity.
-
 
 ### Packed bed
 For fluid flow through a bed, of approximately spherical particles of diameter D in contact, if the voidage is ε and the superficial velocity is vs, the Reynolds number can be defined as
@@ -1127,7 +1113,6 @@ or
 The choice of equation depends on the system involved: the first is successful in correlating the data for various types of packed and fluidized beds, the second Reynolds number suits for the liquid-phase data, while the third was found successful in correlating the fluidized bed data, being first introduced for liquid fluidized bed system.
 Laminar conditions apply up to Re = 10, fully turbulent from Re = 2000.
 
-
 ### Stirred vessel
 In a cylindrical vessel stirred by a central rotating paddle, turbine or propeller, the characteristic dimension is the diameter of the agitator D. The velocity V is ND where N is the rotational speed in rad per second. Then the Reynolds number is:
 
@@ -1173,11 +1158,9 @@ In a cylindrical vessel stirred by a central rotating paddle, turbine or propell
 
 The system is fully turbulent for values of Re above 10000.
 
-
 ## Pipe friction
 
 Pressure drops seen for fully developed flow of fluids through pipes can be predicted using the Moody diagram which plots the Darcy–Weisbach friction factor f against Reynolds number Re and relative roughness ⁠ε/D⁠. The diagram clearly shows the laminar, transition, and turbulent flow regimes as Reynolds number increases. The nature of pipe flow is strongly dependent on whether the flow is laminar or turbulent.
-
 
 ## Similarity of flows
 
@@ -1340,24 +1323,18 @@ Blue whale ~ 4 × 108
 A large ship (Queen Elizabeth 2) ~ 5 × 109
 Atmospheric tropical cyclone ~ 1 × 1012
 
-
 ## Smallest scales of turbulent motion
 In a turbulent flow, there is a range of scales of the time-varying fluid motion. The size of the largest scales of fluid motion (sometimes called eddies) are set by the overall geometry of the flow. For instance, in an industrial smoke stack, the largest scales of fluid motion are as big as the diameter of the stack itself. The size of the smallest scales is set by the Reynolds number. As the Reynolds number increases, smaller and smaller scales of the flow are visible. In a smokestack, the smoke may appear to have many very small velocity perturbations or eddies, in addition to large bulky eddies. In this sense, the Reynolds number is an indicator of the range of scales in the flow. The higher the Reynolds number, the greater the range of scales. The largest eddies will always be the same size; the smallest eddies are determined by the Reynolds number.
 What is the explanation for this phenomenon? A large Reynolds number indicates that viscous forces are not important at large scales of the flow. With a strong predominance of inertial forces over viscous forces, the largest scales of fluid motion are undamped—there is not enough viscosity to dissipate their motions. The kinetic energy must "cascade" from these large scales to progressively smaller scales until a level is reached for which the scale is small enough for viscosity to become important (that is, viscous forces become of the order of inertial ones). It is at these small scales where the dissipation of energy by viscous action finally takes place. The Reynolds number indicates at what scale this viscous dissipation occurs.
-
 
 ## In physiology
 Poiseuille's law on blood circulation in the body is dependent on laminar flow. In turbulent flow the flow rate is proportional to the square root of the pressure gradient, as opposed to its direct proportionality to pressure gradient in laminar flow.
 Using the definition of the Reynolds number we can see that a large diameter with rapid flow, where the density of the blood is high, tends towards turbulence. Rapid changes in vessel diameter may lead to turbulent flow, for instance when a narrower vessel widens to a larger one. Furthermore, a bulge of atheroma may be the cause of turbulent flow, where audible turbulence may be detected with a stethoscope.
 
-
 ## Complex systems
 Reynolds number interpretation has been extended into the area of arbitrary complex systems. Such as financial flows, nonlinear networks, etc. In the latter case, an artificial viscosity is reduced to a nonlinear mechanism of energy distribution in complex network media. Reynolds number then represents a basic control parameter that expresses a balance between injected and dissipated energy flows for an open boundary system. It has been shown that Reynolds critical regime separates two types of phase space motion: accelerator (attractor) and decelerator. High Reynolds number leads to a chaotic regime transition only in frame of strange attractor model.
-
 
 ## Relationship to other dimensionless parameters
 There are many dimensionless numbers in fluid mechanics. The Reynolds number measures the ratio of advection and diffusion effects on structures in the velocity field, and is therefore closely related to Péclet numbers, which measure the ratio of these effects on other fields carried by the flow, for example, temperature and magnetic fields. Replacement of the kinematic viscosity ν = ⁠μ/ρ⁠ in Re by the thermal or magnetic diffusivity results in respectively the thermal Péclet number and the magnetic Reynolds number. These are therefore related to Re by-products with ratios of diffusivities, namely the Prandtl number and magnetic Prandtl number.
 
-
 ### Sources
-

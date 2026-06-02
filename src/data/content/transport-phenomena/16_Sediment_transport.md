@@ -39,15 +39,6 @@ As hillslopes steepen, however, they become more prone to episodic landslides an
 
 Large masses of material are moved in debris flows, hyperconcentrated mixtures of mud, clasts that range up to boulder-size, and water. Debris flows move as granular flows down steep mountain valleys and washes. Because they transport sediment as a granular mixture, their transport mechanisms and capacities scale differently from those of fluvial systems.
 
-## Applications
-
-Sediment transport is applied to solve many environmental, geotechnical, and geological problems. Measuring or quantifying sediment transport or erosion is therefore important for coastal engineering. Several sediment erosion devices have been designed in order to quantify sediment erosion (e.g., Particle Erosion Simulator (PES)). One such device, also referred to as the BEAST (Benthic Environmental Assessment Sediment Tool) has been calibrated in order to quantify rates of sediment erosion.
-Movement of sediment is important in providing habitat for fish and other organisms in rivers. Therefore, managers of highly regulated rivers, which are often sediment-starved due to dams, are often advised to stage short floods to refresh the bed material and rebuild bars. This is also important, for example, in the Grand Canyon of the Colorado River, to rebuild shoreline habitats also used as campsites.
-Sediment discharge into a reservoir formed by a dam forms a reservoir delta. This delta will fill the basin, and eventually, either the reservoir will need to be dredged or the dam will need to be removed. Knowledge of sediment transport can be used to properly plan to extend the life of a dam.
-Geologists can use inverse solutions of transport relationships to understand flow depth, velocity, and direction, from sedimentary rocks and young deposits of alluvial materials.
-Flow in culverts, over dams, and around bridge piers can cause erosion of the bed. This erosion can damage the environment and expose or unsettle the foundations of the structure. Therefore, good knowledge of the mechanics of sediment transport in a built environment are important for civil and hydraulic engineers.
-When suspended sediment transport is increased due to human activities, causing environmental problems including the filling of channels, it is called siltation after the grain-size fraction dominating the process.
-
 ## Initiation of motion
 
 ### Stress balance

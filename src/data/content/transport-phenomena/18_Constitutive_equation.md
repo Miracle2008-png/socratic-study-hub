@@ -3,18 +3,14 @@
 In physics and engineering, a constitutive equation or constitutive relation is a relation between two or more physical quantities (especially kinetic quantities as related to kinematic quantities) that is specific to a material or substance or field, and approximates its response to external stimuli, usually as applied fields or forces. They are combined with other equations governing physical laws to solve physical problems; for example in fluid mechanics the flow of a fluid in a pipe, in solid state physics the response of a crystal to an electric field, or in structural analysis, the connection between applied stresses or loads to strains or deformations.
 Some constitutive equations are simply phenomenological; others are derived from first principles. A common approximate constitutive equation frequently is expressed as a simple proportionality using a parameter taken to be a property of the material, such as electrical conductivity or a spring constant. However, it is often necessary to account for the directional dependence of the material, and the scalar parameter is generalized to a tensor. Constitutive relations are also modified to account for the rate of response of materials and their non-linear behavior. See the article Linear response function.
 
-
 ## Mechanical properties of matter
 The first constitutive equation (constitutive law) was developed by Robert Hooke and is known as Hooke's law. It deals with the case of linear elastic materials. Following this discovery, this type of equation, often called a  "stress-strain relation" in this example, but also called a "constitutive assumption" or an "equation of state" was commonly used. Walter Noll advanced the use of constitutive equations, clarifying their classification and the role of invariance requirements, constraints, and definitions of terms
 like "material", "isotropic", "aeolotropic", etc. The class of "constitutive relations" of the form stress rate = f (velocity gradient, stress, density) was the subject of Walter Noll's dissertation in 1954 under Clifford Truesdell.  
 In modern condensed matter physics, the constitutive equation plays a major role. See Linear constitutive equations and Nonlinear correlation functions.
 
-
 ### Definitions
 
-
 ### Deformation of solids
-
 
 #### Friction
 Friction is a complicated phenomenon. Macroscopically, the friction force F at the interface of two materials can be modelled as proportional to the reaction force R at a point of contact between two interfaces through a dimensionless coefficient of friction μf, which depends on the pair of materials:
@@ -38,7 +34,6 @@ Friction is a complicated phenomenon. Macroscopically, the friction force F at t
   
 
 This can be applied to static friction (friction preventing two stationary objects from slipping on their own), kinetic friction (friction between two objects scraping/sliding past each other), or rolling (frictional force which prevents slipping but causes a torque to exert on a round object).
-
 
 #### Stress and strain
 The stress-strain constitutive relation for linear materials is commonly known as Hooke's law. In its simplest form, the law defines the spring constant (or elasticity constant) k in a scalar equation, stating the tensile/compressive force is proportional to the extended (or contracted) displacement x:
@@ -146,7 +141,6 @@ In general, forces which deform solids can be normal to a surface of the materia
 
 where C is the elasticity tensor and S is the compliance tensor.
 
-
 #### Solid-state deformation
 Several classes of deformation in elastic materials are the following:
 
@@ -160,7 +154,6 @@ Anelastic
 If the material is close to elastic, but the applied force induces additional time-dependent resistive forces (i.e. depend on rate of change of extension/compression, in addition to the extension/compression). Metals and ceramics have this characteristic, but it is usually negligible, although not so much when heating due to friction occurs (such as vibrations or shear stresses in machines).
 Hyperelastic
 The applied force induces displacements in the material following a strain energy density function.
-
 
 #### Collisions
 The relative speed of separation vseparation of an object A after a collision with another object B is related to the relative speed of approach vapproach by the coefficient of restitution, defined by Newton's experimental impact law:
@@ -212,7 +205,6 @@ The relative speed of separation vseparation of an object A after a collision wi
   
 
 which depends on the materials A and B are made from, since the collision involves interactions at the surfaces of A and B. Usually 0 ≤ e ≤ 1, in which e = 1 for completely elastic collisions, and e = 0 for completely inelastic collisions. It is possible for e ≥ 1 to occur – for superelastic (or explosive) collisions.
-
 
 ### Deformation of fluids
 The drag equation gives the drag force D on an object of cross-section area A moving through a fluid of density ρ at velocity v (relative to the fluid)
@@ -446,9 +438,7 @@ The ideal gas law is a constitutive relation in the sense the pressure p and vol
 
 where R is the gas constant (J⋅K−1⋅mol−1).
 
-
 ## Electromagnetism
-
 
 ### Constitutive equations in electromagnetism and related areas
 
@@ -568,7 +558,6 @@ Determining the constitutive relationship between the auxiliary fields D and H a
 
 where P is the polarization field and M is the magnetization field which are defined in terms of microscopic bound charges and bound current respectively. Before getting to how to calculate M and P it is useful to examine the following special cases.
 
-
 #### Without magnetic or dielectric materials
 In the absence of magnetic or dielectric materials, the constitutive relations are simple:
 
@@ -612,7 +601,6 @@ In the absence of magnetic or dielectric materials, the constitutive relations a
   
 
 where ε0 and μ0 are two universal constants, called the permittivity of free space and permeability of free space, respectively.
-
 
 #### Isotropic linear materials
 In an (isotropic) linear material, where P is proportional to E, and M is proportional to B, the constitutive relations are also straightforward. In terms of the polarization P and the magnetization M they are:
@@ -756,7 +744,6 @@ where ε and μ are constants (which depend on the material), called the permitt
     {\displaystyle \varepsilon /\varepsilon _{0}=\varepsilon _{r}=\chi _{e}+1,\quad \mu /\mu _{0}=\mu _{r}=\chi _{m}+1}
   
 
-
 #### General case
 For real-world materials, the constitutive relations are not linear, except approximately. Calculating the constitutive relations from first principles involves determining how P and M are created from a given E and B. These relations may be empirical (based directly upon measurements), or theoretical (based upon statistical mechanics, transport theory or other tools of condensed matter physics). The detail employed may be macroscopic or microscopic, depending upon the level necessary to the problem under scrutiny.
 In general, the constitutive relations can usually still be written:
@@ -838,7 +825,6 @@ As a variation of these examples, in general materials are bianisotropic where D
 In practice, some materials properties have a negligible impact in particular circumstances, permitting neglect of small effects. For example: optical nonlinearities can be neglected for low field strengths; material dispersion is unimportant when frequency is limited to a narrow bandwidth; material absorption can be neglected for wavelengths for which a material is transparent; and metals with finite conductivity often are approximated at microwave or longer wavelengths as perfect metals with infinite conductivity (forming hard barriers with zero skin depth of field penetration).
 Some man-made materials such as metamaterials and photonic crystals are designed to have customized permittivity and permeability.
 
-
 #### Calculation of constitutive relations
 
 The theoretical calculation of a material's constitutive equations is a common, important, and sometimes difficult task in theoretical condensed-matter physics and materials science. In general, the constitutive equations are theoretically determined by calculating how a molecule responds to the local fields through the Lorentz force. Other forces may need to be modeled as well such as lattice vibrations in crystals or bond forces. Including all of the forces leads to changes in the molecule which are used to calculate P and M as a function of the local fields.
@@ -847,13 +833,10 @@ These continuum approximations often require some type of quantum mechanical ana
 A different set of homogenization methods (evolving from a tradition in treating materials such as conglomerates and laminates) are based upon approximation of an inhomogeneous material by a homogeneous effective medium (valid for excitations with wavelengths much larger than the scale of the inhomogeneity).
 The theoretical modeling of the continuum-approximation properties of many real materials often rely upon experimental measurement as well. For example, ε of an insulator at low frequencies can be measured by making it into a parallel-plate capacitor, and ε at optical-light frequencies is often measured by ellipsometry.
 
-
 ### Thermoelectric and electromagnetic properties of matter
 These constitutive equations are often used in crystallography, a field of solid-state physics.
 
-
 ## Photonics
-
 
 ### Refractive index
 The (absolute) refractive index of a medium n (dimensionless) is an inherently important property of geometric and physical optics defined as the ratio of the luminal speed in vacuum c0 to that in the medium c:
@@ -956,7 +939,6 @@ The relative refractive index is defined as the ratio of the two refractive indi
     {\displaystyle n_{AB}={\frac {n_{A}}{n_{B}}}}
   
 
-
 ### Speed of light in matter
 As a consequence of the definition, the speed of light in matter is
 
@@ -1015,7 +997,6 @@ for special case of vacuum; ε = ε0 and μ = μ0,
     {\displaystyle c_{0}={\frac {1}{\sqrt {\varepsilon _{0}\mu _{0}}}}}
   
 
-
 ### Piezooptic effect
 The piezooptic effect relates the stresses in solids σ to the dielectric impermeability a, which are coupled by a fourth-rank tensor called the piezooptic coefficient Π (units K−1):
 
@@ -1051,16 +1032,12 @@ The piezooptic effect relates the stresses in solids σ to the dielectric imperm
     {\displaystyle a_{ij}=\Pi _{ijpq}\sigma _{pq}}
   
 
-
 ## Transport phenomena
 
-
 ### Definitions
-
 
 ### Definitive laws
 There are several laws which describe the transport of matter, or properties of it, in an almost identical way. In every case, in words they read:
 
 Flux (density) is proportional to a gradient, the constant of proportionality is the characteristic of the material.
 In general the constant must be replaced by a 2nd rank tensor, to account for directional dependences of the material.
-

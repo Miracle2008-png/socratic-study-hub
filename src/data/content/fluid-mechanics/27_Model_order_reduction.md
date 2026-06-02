@@ -2,17 +2,6 @@
 
 Model order reduction (MOR) is a technique for reducing the computational complexity of mathematical models in numerical simulations. As such it is closely related to the concept of metamodeling, with applications in all areas of mathematical modelling.
 
-
-## Overview
-Many modern mathematical models of real-life processes pose challenges when used in numerical simulations, due to complexity and large size (dimension). Model order reduction aims to lower the computational complexity of such problems, for example, in simulations of large-scale dynamical systems and control systems. By a reduction of the model's associated state space dimension or degrees of freedom, an approximation to the original model is computed which is commonly referred to as a reduced order model.
-Reduced order models are useful in settings where it is often unfeasible to perform numerical simulations using the complete full order model.  This can be due to limitations in computational resources or the requirements of the simulations setting, for instance real-time simulation settings or many-query settings in which a large number of simulations needs to be performed. Examples of Real-time simulation settings include control systems in electronics and visualization of model results while examples for a many-query setting can include optimization problems and design exploration. In order to be applicable to real-world problems, often the requirements of a reduced order model are:
-
-A small approximation error compared to the full order model.
-Conservation of the properties and characteristics of the full order model (E.g. stability and passivity in electronics).
-Computationally efficient and robust reduced order modelling techniques.
-It is interesting to note that in some cases (e.g. constrained lumping of polynomial differential equations) it is possible to have a null approximation error, resulting in an exact model order reduction.
-
-
 ## Methods
 Contemporary model order reduction techniques can be broadly classified into 5 classes:
 
@@ -39,7 +28,6 @@ Dynamic mode decomposition
 Operator inference 
 Loewner framework 
 
-
 ## Implementations
 RBmatlab: A MATLAB library containing all reduced simulation approaches for linear and nonlinear, affine or arbitrarily parameter dependent evolution problems with finite element, finite volume or local discontinuous Galerkin discretizations.
 Model Reduction inside ANSYS: implements a Krylov-based model order reduction for multiphysical finite element models in Ansys. Model simplification via Model Reduction inside Ansys is suitable for optimization strategies in component development as well as for integrating compact models into an overall system simulation in the fields of electronics, automotive or microsystems. Despite reduction, the examination parameters are retained, which means fast results can be achieved with regards to designs and system simulations.
@@ -52,26 +40,3 @@ Dune-RB: A module for the Dune library, which realizes C++ template classes for 
 libROM: Collection of C++ classes that compute model order reduction and hyper-reduction  for systems of partial and ordinary differential equations. libROM includes scalable and parallel, adaptive methods for proper orthogonal decomposition, parallel, non-adaptive methods for hyper-reduction, and randomized singular value decomposition. libROM also includes the dynamic mode decomposition capability. libROM has physics-informed greedy sampling capability.
 Pressio: Pressio is an open-source project aimed at alleviating the intrusive nature of projection-based reduced-order models for large-scale codes. The core of the project is a header-only C++ library that leverages generic programming to interface with shared or distributed memory applications using arbitrary data-types. Pressio provides numerous functionalities and solvers for performing model reduction, such as Galerkin and least-squares Petrov–Galerkin projections. The Pressio ecosystem also offers: (1) pressio4py, a Python binding library for ease of prototyping, (2) pressio-tutorials, a library also offering end-to-end demos that one can easily play with, which can be found at https://pressio.github.io/pressio-tutorials/, (3) pressio-tools, a library for large-scale SVD, QR and sample mesh, and (4) pressio-demoapps, a suite of 1d, 2d and 3d demo applications for testing ROMs and hyper-reduction.
 PyDMD: PyDMD is a Python package that implements data-driven model order reduction based on Dynamic Mode Decomposition (DMD), an algorithm developed by Schmid. DMD is used to analyze the dynamics of nonlinear systems and relies solely on high-fidelity measurements, making it an equation-free algorithm.
-
-
-## Applications
-Model order reduction finds application within all fields involving mathematical modelling and many reviews exist for the topics of electronics, fluid mechanics, hydrodynamics, structural mechanics, MEMS, Boltzmann equation, and design optimization.
-
-
-### Fluid mechanics
-Current problems in fluid mechanics involve large dynamical systems representing many effects on many different scales. Computational fluid dynamics studies often involve models solving the Navier–Stokes equations with a number of degrees of freedom in the order of magnitude upwards of 
-  
-    
-      
-        
-          10
-          
-            6
-          
-        
-      
-    
-    {\displaystyle 10^{6}}
-  
-. The first usage of model order reduction techniques dates back to the work of Lumley in 1967, where it was used to gain insight into the mechanisms and intensity of turbulence and large coherent structures present in fluid flow problems. Model order reduction also finds modern applications in aeronautics to model the flow over the body of aircraft. An example can be found in Lieu et al in which the full order model of an F16 fighter-aircraft with over 2.1 million degrees of freedom, was reduced to a model of just 90 degrees of freedom. Additionally reduced order modeling has been applied to study rheology in hemodynamics and the fluid–structure interaction between the blood flowing through the vascular system and the vascular walls.
-

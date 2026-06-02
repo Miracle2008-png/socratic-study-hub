@@ -5,12 +5,10 @@ Some of the earliest cosmological models of the universe were geocentric, placin
 From studying the effects of gravity on both matter and light, it has been discovered that the universe contains much more matter than is accounted for by visible objects; stars, galaxies, nebulae and interstellar gas. This unseen matter is known as dark matter. In the widely accepted ΛCDM cosmological model, dark matter accounts for about 25.8%±1.1% of the mass and energy in the universe while about 69.2%±1.2% is dark energy, a mysterious form of energy responsible for the acceleration of the expansion of the universe. Ordinary ('baryonic') matter therefore composes only 4.84%±0.1% of the universe. Stars, planets, and visible gas clouds only form about 6% of this ordinary matter.
 There are many competing hypotheses about the ultimate fate of the universe and about what, if anything, preceded the Big Bang.
 
-
 ## Definition
 
 The physical universe has been defined as "The totality of all space and time; all that is, has been, and will be." The universe contains all energy and matter, including therefore planets, moons, stars, galaxies, and the contents of intergalactic space.
 Some philosophers and scientists support the inclusion of ideas and abstract concepts—such as mathematics and logic—in the definition of the universe. The word universe may also refer to concepts such as the cosmos, the world, and nature.
-
 
 ## Chronology and the Big Bang
 
@@ -24,11 +22,9 @@ As the universe expanded, the energy density of electromagnetic radiation decrea
 In the earliest stages of the universe, tiny fluctuations within the universe's density led to concentrations of dark matter gradually forming. Ordinary matter, attracted to these by gravity, formed large gas clouds and eventually, stars and galaxies, where the dark matter was most dense, and voids where it was least dense. After around 100–300 million years, the first stars formed, known as Population III stars. These were probably very massive, luminous, non metallic and short-lived. They were responsible for the gradual reionization of the universe between about 200–500 million years and 1 billion years, and also for seeding the universe with elements heavier than helium, through stellar nucleosynthesis.
 The universe contains a mysterious energy—possibly a scalar field—called dark energy, the density of which does not change over time. After about 9.8 billion years, the universe had expanded sufficiently so that the density of matter was less than the density of dark energy, marking the beginning of the present dark-energy-dominated era. In this era, the expansion of the universe is accelerating due to dark energy.
 
-
 ## Physical properties
 
 Of the four fundamental interactions, gravitation is the dominant at astronomical length scales. Gravity's effects are cumulative; by contrast, the effects of positive and negative charges tend to cancel one another, making electromagnetism relatively insignificant on astronomical length scales. The remaining two interactions, the weak and strong nuclear forces, decline very rapidly with distance; their effects are confined mainly to sub-atomic length scales.
-
 
 ### Size and regions
 
@@ -36,7 +32,6 @@ Due to the finite speed of light, there is a limit (known as the particle horizo
 The spatial region from which we can receive light is called the observable universe. The proper distance (measured at a fixed time) between Earth and the edge of the observable universe is 46 billion light-years (14 billion parsecs), making the diameter of the observable universe about 93 billion light-years (28 billion parsecs). Although the distance traveled by light from the edge of the observable universe is close to the age of the universe times the speed of light, 13.8 billion light-years (4.2×10^9 pc), the proper distance is larger because the edge of the observable universe and the Earth have since moved further apart.
 For comparison, the Milky Way is roughly 87,400 light-years in diameter, and the nearest sister galaxy to the Milky Way, the Andromeda Galaxy, is located roughly 2.5 million light-years away.
 Because humans cannot observe space beyond the edge of the observable universe, it is unknown whether the size of the universe in its totality is finite or infinite.
-
 
 ### Age and expansion
 
@@ -60,7 +55,6 @@ There are dynamical forces acting on the particles in the universe which affect 
     {\displaystyle {\ddot {a}}}
   
  has been positive in the last 5–6 billion years.
-
 
 ### Spacetime
 
@@ -122,17 +116,14 @@ Modern physics regards events as being organized into spacetime. This idea origi
 The special theory of relativity describes a flat spacetime. Its successor, the general theory of relativity, explains gravity as curvature of spacetime arising due to its energy content. A curved path like an orbit is not the result of a force deflecting a body from an ideal straight-line path, but rather the body's attempt to fall freely through a background that is itself curved by the presence of other masses. A remark by John Archibald Wheeler that has become proverbial among physicists summarizes the theory: "Spacetime tells matter how to move; matter tells spacetime how to curve", and therefore there is no point in considering one without the other. The Newtonian theory of gravity is a good approximation to the predictions of general relativity when gravitational effects are weak and objects are moving slowly compared to the speed of light.
 The relation between matter distribution and spacetime curvature is given by the Einstein field equations, which require tensor calculus to express. The universe appears to be a smooth spacetime continuum consisting of three spatial dimensions and one temporal (time) dimension. Therefore, an event in the spacetime of the physical universe can be identified by a set of four coordinates: (x, y, z, t).
 
-
 ### Shape
 
 Cosmologists often work with space-like slices of spacetime that are surfaces of constant time in comoving coordinates. The geometry of these spatial slices is set by the density parameter, Omega (Ω), defined as the average matter density of the universe divided by a critical value. This selects one of three possible geometries depending on whether Ω is equal to, less than, or greater than 1. These are called, respectively, the flat, open and closed universes.
 Observations, including the Cosmic Background Explorer (COBE), Wilkinson Microwave Anisotropy Probe (WMAP), and Planck maps of the CMB, suggest that the universe is infinite in extent with a finite age, as described by the Friedmann–Lemaître–Robertson–Walker (FLRW) models. These FLRW models thus support inflationary models and the standard model of cosmology, describing a flat, homogeneous universe presently dominated by dark matter and dark energy.
 
-
 ### Support of life
 
 The fine-tuned universe hypothesis is the proposition that the conditions that allow the existence of observable life in the universe can only occur when certain universal fundamental physical constants lie within a very narrow range of values. According to this hypothesis, if any of several fundamental constants were only slightly different, the universe would have been unlikely to be conducive to the establishment and development of matter, astronomical structures, elemental diversity, or life as it is understood. Whether this is true, and whether that question is even logically meaningful to ask, are subjects of much debate. The proposition is discussed among philosophers, scientists, theologians, and proponents of creationism.
-
 
 ## Composition
 
@@ -145,17 +136,14 @@ Matter, dark matter, and dark energy are distributed homogeneously throughout th
 
 The observable universe is isotropic on scales significantly larger than superclusters, meaning that the statistical properties of the universe are the same in all directions as observed from Earth. The universe is bathed in highly isotropic microwave radiation that corresponds to a thermal equilibrium blackbody spectrum of roughly 2.72548 kelvins. The hypothesis that the large-scale universe is homogeneous and isotropic is known as the cosmological principle. A universe that is both homogeneous and isotropic looks the same from all vantage points and has no center.
 
-
 ### Dark energy
 
 An explanation for why the expansion of the universe is accelerating remains elusive. It is often attributed to the gravitational influence of "dark energy", an unknown form of energy that is hypothesized to permeate space. On a mass–energy equivalence basis, the density of dark energy (~ 7 × 10−30 g/cm3) is much less than the density of ordinary matter or dark matter within galaxies. However, in the present dark-energy era, it dominates the mass–energy of the universe because it is uniform across space.
 Two proposed forms for dark energy are the cosmological constant, a constant energy density filling space homogeneously, and scalar fields such as quintessence or moduli, dynamic quantities whose energy density can vary in time and space while still permeating them enough to cause the observed rate of expansion. Contributions from scalar fields that are constant in space are usually also included in the cosmological constant. The cosmological constant can be formulated to be equivalent to vacuum energy.
 
-
 ### Dark matter
 
 Dark matter is a hypothetical kind of matter that is invisible to the entire electromagnetic spectrum, but which accounts for most of the matter in the universe. The existence and properties of dark matter are inferred from its gravitational effects on visible matter, radiation, and the large-scale structure of the universe. Other than neutrinos, a form of hot dark matter, dark matter has not been detected directly, making it one of the greatest mysteries in modern astrophysics. Dark matter neither emits nor absorbs light or any other electromagnetic radiation at any significant level. Dark matter is estimated to constitute 26.8% of the total mass–energy and 84.5%  of the total matter in the universe.
-
 
 ### Ordinary matter
 
@@ -163,37 +151,30 @@ The remaining 4.9% of the mass–energy of the universe is ordinary matter, that
 Ordinary matter commonly exists in four states (or phases): solid, liquid, gas, and plasma. However, advances in experimental techniques have revealed other previously theoretical phases, such as Bose–Einstein condensates and fermionic condensates. Ordinary matter is composed of two types of elementary particles: quarks and leptons. For example, the proton is formed of two up quarks and one down quark; the neutron is formed of two down quarks and one up quark; and the electron is a kind of lepton. An atom consists of an atomic nucleus, made up of protons and neutrons (both of which are baryons), and electrons that orbit the nucleus.
 Soon after the Big Bang, primordial protons and neutrons formed from the quark–gluon plasma of the early universe as it cooled below two trillion degrees. A few minutes later, in a process known as Big Bang nucleosynthesis, nuclei formed from the primordial protons and neutrons. This nucleosynthesis formed lighter elements, those with small atomic numbers up to lithium and beryllium, but the abundance of heavier elements dropped off sharply with increasing atomic number. Some boron may have been formed at this time, but the next heavier element, carbon, was not formed in significant amounts. Big Bang nucleosynthesis shut down after about 20 minutes due to the rapid drop in temperature and density of the expanding universe. Subsequent formation of heavier elements resulted from stellar nucleosynthesis and supernova nucleosynthesis.
 
-
 ### Particles
 
 Ordinary matter and the forces that act on matter can be described in terms of elementary particles. These particles are sometimes regarded as fundamental because they have no known substructure. In most contemporary models they are thought of as points in space. All elementary particles are described by quantum mechanics and exhibit wave–particle duality: their behavior has both particle-like and wave-like aspects manifest under different circumstances.
 Of central importance is the Standard Model, a theory that is concerned with electromagnetic interactions and the weak and strong nuclear interactions. The Standard Model is supported by the experimental confirmation of the existence of particles that compose matter: quarks and leptons, and their corresponding "antimatter" duals, as well as the force particles that mediate interactions: the photon, the W and Z bosons, and the gluon. The Standard Model predicted the existence of the recently discovered Higgs boson, a particle that is a manifestation of a field within the universe that can endow particles with mass. Because of its success in explaining a wide variety of experimental results, the Standard Model is sometimes regarded as a "theory of almost everything". The Standard Model does not, however, accommodate gravity. A true force–particle "theory of everything" has not been attained.
-
 
 #### Hadrons
 
 A hadron is a composite particle made of quarks held together by the strong force. Hadrons are categorized into two families: baryons (such as protons and neutrons) made of three quarks, and mesons (such as pions) made of one quark and one antiquark. Of the hadrons, protons are stable, and neutrons bound within atomic nuclei are stable. Other hadrons are unstable under ordinary conditions and are thus insignificant constituents of the modern universe.
 From approximately 10−6 seconds after the Big Bang, during a period known as the hadron epoch, the temperature of the universe had fallen sufficiently to allow quarks to bind together into hadrons, and the mass of the universe was dominated by hadrons. Initially, the temperature was high enough to allow the formation of hadron–anti-hadron pairs, which kept matter and antimatter in thermal equilibrium. However, as the temperature of the universe continued to fall, hadron–anti-hadron pairs were no longer produced. Most of the hadrons and anti-hadrons were then eliminated in particle–antiparticle annihilation reactions, leaving a small residual of hadrons by the time the universe was about one second old.
 
-
 #### Leptons
 
 A lepton is an elementary, half-integer spin particle that does not undergo strong interactions but is subject to the Pauli exclusion principle; no two leptons of the same species can be in exactly the same state at the same time. Two main classes of leptons exist: charged leptons (also known as the electron-like leptons), and neutral leptons (better known as neutrinos). Electrons are stable and the most common charged lepton in the universe, whereas muons and taus are unstable particles that quickly decay after being produced in high energy collisions, such as those involving cosmic rays or carried out in particle accelerators. Charged leptons can combine with other particles to form various composite particles such as atoms and positronium. The electron governs nearly all of chemistry, as it is found in atoms and is directly tied to all chemical properties. Neutrinos rarely interact with anything, and are consequently rarely observed. Neutrinos stream throughout the universe but rarely interact with normal matter.
 The lepton epoch was the period in the evolution of the early universe in which the leptons dominated the mass of the universe. It started roughly 1 second after the Big Bang, after the majority of hadrons and anti-hadrons annihilated each other at the end of the hadron epoch. During the lepton epoch, the temperature of the universe was still high enough to create lepton–anti-lepton pairs, so leptons and anti-leptons were in thermal equilibrium. Approximately 10 seconds after the Big Bang, the temperature of the universe had fallen to the point where lepton–anti-lepton pairs were no longer created. Most leptons and anti-leptons were then eliminated in annihilation reactions, leaving a small residue of leptons. The mass of the universe was then dominated by photons as it entered the following photon epoch.
-
 
 #### Photons
 
 A photon is the quantum of light and all other forms of electromagnetic radiation. It is the carrier for the electromagnetic force. The effects of this force are easily observable at the microscopic and at the macroscopic level because the photon has zero rest mass; this allows long distance interactions.
 The photon epoch started after most leptons and anti-leptons were annihilated at the end of the lepton epoch, about 10 seconds after the Big Bang. Atomic nuclei were created in the process of nucleosynthesis which occurred during the first few minutes of the photon epoch. For the remainder of the photon epoch the universe contained a hot dense plasma of nuclei, electrons and photons. About 380,000 years after the Big Bang, the temperature of the universe fell to the point where nuclei could combine with electrons to create neutral atoms. As a result, photons no longer interacted frequently with matter and the universe became transparent. The highly redshifted photons from this period form the cosmic microwave background. Tiny variations in the temperature of the CMB correspond to variations in the density of the universe that were the early "seeds" from which all subsequent structure formation took place.
 
-
 ## Habitability
 The frequency of life in the universe has been a frequent point of investigation in astronomy and astrobiology, being the issue of the Drake equation and the different views on it, from identifying the Fermi paradox, the situation of not having found any signs of extraterrestrial life, to arguments for a biophysical cosmology, a view of life being inherent to the physical cosmology of the universe.
 
-
 ## Cosmological models
-
 
 ### Model of the universe based on general relativity
 
@@ -204,23 +185,19 @@ The evolution of the scale factor depends on both the spatial curvature and the 
 The curvature determines the global geometry of space. A positively curved universe has a finite volume and can be visualized as a three-dimensional sphere. A flat or negatively curved universe is spatially infinite. Although this may seem counterintuitive, models with flat or negative curvature allow an infinite universe to emerge from an initial state in which the scale factor vanishes, consistent with the cosmological principle. Analogies include an infinite plane (flat) or other geometries such as a torus.
 The ultimate fate of the universe depends on both the curvature and the cosmological constant. A sufficiently dense universe with positive curvature would eventually recollapse in a Big Crunch, possibly followed by a Big Bounce. In contrast, a flat or negatively curved universe would expand indefinitely, approaching a Big Freeze and eventual heat death of the universe. Observations indicate that the expansion of the universe is accelerating, raising the possibility of a Big Rip. Current data suggest that the universe is close to flat, with a density near the critical value separating recollapse from eternal expansion.
 
-
 ### Multiverse hypotheses
 
 Some speculative theories have proposed that our universe is but one of a set of disconnected universes, collectively denoted as the multiverse. An easily visualized metaphor of these concepts is a group of separate soap bubbles, in which observers living on one soap bubble cannot interact with those on other soap bubbles, even in principle. According to one common terminology, each "soap bubble" of spacetime is denoted as a universe, whereas humans' particular spacetime is denoted as the universe, just as humans call Earth's moon the Moon. The entire collection of these separate spacetimes is denoted as the multiverse.
 Max Tegmark and Brian Greene have proposed different classification schemes for multiverse ideas. In Tegmark's scheme multiverses might result from the immense size of the spacetime, from cosmological processes that produce spacetime bubbles, from quantum mechanical unitarity, or because we live in a mathematical construct. If space is infinite, or sufficiently large and uniform, identical instances of the history of Earth's entire Hubble volume occur every so often, simply by chance. Tegmark calculated that our nearest so-called doppelgänger is 1010115 metres away from us (a double exponential function larger than a googolplex). The physical basis of these ideas have been challenged.
 
-
 ## Historical conceptions
 
 Historically, there have been many ideas of the cosmos (cosmologies) and its origin (cosmogonies). Theories of an impersonal universe governed by physical laws were first proposed by the Greeks and Indians. Ancient Chinese philosophy encompassed the notion of the universe including both all of space and all of time. Over the centuries, improvements in astronomical observations and theories of motion and gravitation led to ever more accurate descriptions of the universe. The modern era of cosmology began with Albert Einstein's 1915 general theory of relativity, which made it possible to quantitatively predict the origin, evolution, and conclusion of the universe as a whole. Most modern, accepted theories of cosmology are based on general relativity and, more specifically, the predicted Big Bang.
-
 
 ### Mythologies
 
 Many cultures have stories describing the origin of the world and universe. Cultures generally regard these stories as having some truth. There are however many differing beliefs in how these stories apply amongst those believing in a supernatural origin, ranging from a god directly creating the universe as it is now to a god just setting the "wheels in motion" (for example via mechanisms such as the big bang and evolution).
 Ethnologists and anthropologists who study myths have developed various classification schemes for the various themes that appear in creation stories. For example, in one type of story, the world is born from a world egg; such stories include the Finnish epic poem Kalevala, the Chinese story of Pangu or the Indian Brahmanda Purana. In related stories, the universe is created by a single entity emanating or producing something by him- or herself, as in the Tibetan Buddhism concept of Adi-Buddha, the ancient Greek story of Gaia (Mother Earth), the Aztec goddess Coatlicue myth, the ancient Egyptian god Atum story, and the Judeo-Christian Genesis creation narrative in which the Abrahamic God created the universe. In another type of story, the universe is created from the union of male and female deities, as in the Māori story of Rangi and Papa. In other stories, the universe is created by crafting it from pre-existing materials, such as the corpse of a dead god—as from Tiamat in the Babylonian epic Enuma Elish or from the giant Ymir in Norse mythology—or from chaotic materials, as in Izanagi and Izanami in Japanese mythology. In other stories, the universe emanates from fundamental principles, such as Brahman and Prakrti, and the creation myth of the Serers.
-
 
 ### Philosophical models
 
@@ -229,7 +206,6 @@ Although Heraclitus argued for eternal change, his contemporary Parmenides empha
 The Indian philosopher Kanada, founder of the Vaisheshika school, developed a notion of atomism and proposed that light and heat were varieties of the same substance. In the 5th century AD, the Buddhist atomist philosopher Dignāga proposed atoms to be point-sized, durationless, and made of energy. They denied the existence of substantial matter and proposed that movement consisted of momentary flashes of a stream of energy.
 The notion of temporal finitism was inspired by the doctrine of creation shared by the three Abrahamic religions: Judaism, Christianity and Islam. The Christian philosopher, John Philoponus, presented the philosophical arguments against the ancient Greek notion of an infinite past and future. Philoponus' arguments against an infinite past were used by the early Muslim philosopher, Al-Kindi (Alkindus); the Jewish philosopher, Saadia Gaon (Saadia ben Joseph); and the Muslim theologian, Al-Ghazali (Algazel).
 Pantheism is the philosophical religious belief that the universe itself is identical to divinity and a supreme being or entity. The physical universe is thus understood as an all-encompassing, immanent deity. The term 'pantheist' designates one who holds both that everything constitutes a unity and that this unity is divine, consisting of an all-encompassing, manifested god or goddess.
-
 
 ### Astronomical concepts
 
@@ -249,8 +225,6 @@ In the center rests the Sun. For who would place this lamp of a very beautiful t
 As noted by Copernicus, the notion that the Earth rotates is very old, dating at least to Philolaus (c. 450 BC), Heraclides Ponticus (c. 350 BC) and Ecphantus the Pythagorean. Roughly a century before Copernicus, the Christian scholar Nicholas of Cusa also proposed that the Earth rotates on its axis in his book, On Learned Ignorance (1440). Al-Sijzi also proposed that the Earth rotates on its axis. Empirical evidence for the Earth's rotation on its axis, using the phenomenon of comets, was given by Tusi (1201–1274) and Ali Qushji (1403–1474).
 This cosmology was accepted by Isaac Newton, Christiaan Huygens and later scientists. Newton demonstrated that the same laws of motion and gravity apply to earthly and to celestial matter, making Aristotle's division between the two obsolete. Edmund Halley (1720) and Jean-Philippe de Chéseaux (1744) noted independently that the assumption of an infinite space filled uniformly with stars would lead to the prediction that the nighttime sky would be as bright as the Sun itself; this became known as Olbers' paradox in the 19th century. Newton believed that an infinite space uniformly filled with matter would cause infinite forces and instabilities causing the matter to be crushed inwards under its own gravity. This instability was clarified in 1902 by the Jeans instability criterion. One solution to these paradoxes is the Charlier universe, in which the matter is arranged hierarchically (systems of orbiting bodies that are themselves orbiting in a larger system, ad infinitum) in a fractal way such that the universe has a negligibly small overall density; such a cosmological model had also been proposed earlier in 1761 by Johann Heinrich Lambert.
 
-
 ### Deep space astronomy
 During the 18th century, Immanuel Kant speculated that nebulae could be entire galaxies separate from the Milky Way, and in 1850, Alexander von Humboldt called these separate galaxies Weltinseln, or "world islands", a term that later developed into "island universes". In 1919, when the Hooker Telescope was completed, the prevailing view was that the universe consisted entirely of the Milky Way Galaxy. Using the Hooker Telescope, Edwin Hubble identified Cepheid variables in several spiral nebulae and in 1922–1923 proved conclusively that Andromeda Nebula and Triangulum among others, were entire galaxies outside our own, thus proving that the universe consists of a multitude of galaxies. With this Hubble formulated the Hubble constant, which allowed for the first time a calculation of the age of the universe and size of the Observable Universe, which became increasingly precise with better meassurements, starting at 2 billion years and 280 million light-years, until 2006 when data of the Hubble Space Telescope allowed a very accurate calculation of the age of the universe and size of the Observable Universe.
 The modern era of physical cosmology began in 1917, when Albert Einstein first applied his general theory of relativity to model the structure and dynamics of the universe. The discoveries of this era, and the questions that remain unanswered, are outlined in the sections above.
-

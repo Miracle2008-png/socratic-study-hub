@@ -555,5 +555,3 @@ A point in a fluid flow where the flow has come to rest (that is to say, speed i
 In a compressible fluid, it is convenient to define the total conditions (also called stagnation conditions) for all thermodynamic state properties (such as total temperature, total enthalpy, total speed of sound). These total flow conditions are a function of the fluid velocity and have different values in frames of reference with different motion.
 To avoid potential ambiguity when referring to the properties of the fluid associated with the state of the fluid rather than its motion, the prefix "static" is commonly used (such as static temperature and static enthalpy). Where there is no prefix, the fluid property is the static condition (so "density" and "static density" mean the same thing). The static conditions are independent of the frame of reference.
 Because the total flow conditions are defined by isentropically bringing the fluid to rest, there is no need to distinguish between total entropy and static entropy as they are always equal by definition. As such, entropy is most commonly referred to as simply "entropy".
-
-## Applications

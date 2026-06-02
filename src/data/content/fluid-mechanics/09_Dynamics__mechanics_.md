@@ -10,20 +10,6 @@ The fundamental principle of dynamics is linked to Newton's second law.
 
 ### Fluids
 
-## Applications
-
-Classical dynamics finds many applications:
-
-Aerodynamics, the study of the motion of air
-Brownian dynamics, the occurrence of Langevin dynamics in the motion of particles in solution
-File dynamics, stochastic motion of particles in a channel
-Flight dynamics, the science of aircraft and spacecraft design
-Molecular dynamics, the study of motion on the molecular level
-Langevin dynamics, a mathematical model for stochastic dynamics
-Orbital dynamics, the study of the motion of rockets and spacecraft
-Stellar dynamics, a description of the collective motion of stars
-Vehicle dynamics, the study of vehicles in motion
-
 ## Generalizations
 
 Non-classical dynamics include:

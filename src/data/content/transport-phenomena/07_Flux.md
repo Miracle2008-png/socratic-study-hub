@@ -2,7 +2,6 @@
 
 Flux describes any effect that appears to pass or travel (whether it actually moves or not) through a surface or substance. Flux is a concept in applied mathematics and vector calculus which has many applications in physics.  For transport phenomena, flux is a vector quantity, describing the magnitude and direction of the flow of a substance or property. In vector calculus, flux is a scalar quantity, defined as the surface integral of the perpendicular component of a vector field over a surface.
 
-
 ## Terminology
 The word flux comes from Latin: fluxus means "flow", and fluere is "to flow". As fluxion, this term was introduced into differential calculus by Isaac Newton.
 The concept of heat flux was a key contribution of Joseph Fourier, in the analysis of heat transfer phenomena. His seminal treatise Théorie analytique de la chaleur (The Analytical Theory of Heat), defines fluxion as a central quantity and proceeds to derive the now well-known expressions of flux in terms of temperature differences across a slab, and then more generally in terms of temperature gradients or differentials of temperature, across other geometries. One could argue, based on the work of James Clerk Maxwell, that the transport definition precedes the definition of flux used in electromagnetism. The specific quote from Maxwell is:
@@ -11,10 +10,8 @@ In the case of fluxes, we have to take the integral, over a surface, of the flux
 According to the transport definition, flux may be a single vector, or it may be a vector field / function of position. In the latter case flux can readily be integrated over a surface. By contrast, according to the electromagnetism definition, flux is the integral over a surface; it makes no sense to integrate a second-definition flux for one would be integrating over a surface twice. Thus, Maxwell's quote only makes sense if "flux" is being used according to the transport definition (and furthermore is a vector field rather than single vector). This is ironic because Maxwell was one of the major developers of what we now call "electric flux" and "magnetic flux" according to the electromagnetism definition. Their names in accordance with the quote (and transport definition) would be "surface integral of electric flux" and "surface integral of magnetic flux", in which case "electric flux" would instead be defined as "electric field" and "magnetic flux" defined as "magnetic field". This implies that Maxwell conceived of these fields as  flows/fluxes of some sort.
 Given a flux according to the electromagnetism definition, the corresponding flux density, if that term is used, refers to its derivative along the surface that was integrated. By the Fundamental theorem of calculus, the corresponding flux density is a flux according to the transport definition. Given a current such as electric current—charge per time, current density would also be a flux according to the transport definition—charge per time per area. Due to the conflicting definitions of flux, and the interchangeability of flux, flow, and current in nontechnical English, all of the terms used in this paragraph are sometimes used interchangeably and ambiguously. Concrete fluxes in the rest of this article will be used in accordance to their broad acceptance in the literature, regardless of which definition of flux the term corresponds to.
 
-
 ## Flux as flow rate per unit area
 In transport phenomena (heat transfer, mass transfer and fluid dynamics), flux is defined as the rate of flow of a property per unit area, which has the dimensions [quantity]·[time]−1·[area]−1. The area is of the surface the property is flowing "through" or "across". For example, the amount of water that flows through a cross section of a river each second divided by the area of that cross section, or the amount of sunlight energy that lands on a patch of ground each second divided by the area of the patch, are kinds of flux.
-
 
 ### General mathematical definition (transport)
 
@@ -313,7 +310,6 @@ In this case, there is no fixed surface we are measuring over. q is a function o
   
 ), and measures the flow through the disk of area A perpendicular to that unit vector. I is defined picking the unit vector that maximizes the flow around the point, because the true flow is maximized across the disk that is perpendicular to it. The unit vector thus uniquely maximizes the function when it points in the "true direction" of the flow. (Strictly speaking, this is an abuse of notation because the "arg max" cannot directly compare vectors; we take the vector with the biggest norm instead.)
 
-
 #### Properties
 These direct definitions can be difficult to apply directly in practice. For example, the arg max construction does not correspond straightforwardly to empirical measurements, when with a weathervane or similar one can easily deduce the direction of flux at a point. Rather than defining the vector flux directly, it is often more intuitive to state some properties about it. Furthermore, from these properties the flux can uniquely be determined anyway.
 If the flux j passes through the area at an angle θ to the area normal 
@@ -513,7 +509,6 @@ Finally, we can integrate again over the time duration t1 to t2, getting the tot
     {\displaystyle q=\int _{t_{1}}^{t_{2}}\iint _{S}\mathbf {j} \cdot d\mathbf {A} \,dt.}
   
 
-
 ### Transport fluxes
 Eight of the most common forms of flux from the transport phenomena literature are defined as follows: 
 
@@ -526,7 +521,6 @@ Radiative flux, the amount of energy transferred in the form of photons at a cer
 Energy flux, the rate of transfer of energy through a unit area (J·m−2·s−1). The radiative flux and heat flux are specific cases of energy flux.
 Particle flux, the rate of transfer of particles through a unit area ([number of particles] m−2·s−1)
 These fluxes are vectors at each point in space, and have a definite magnitude and direction. Also, one can take the divergence of any of these fluxes to determine the accumulation rate of the quantity in a control volume around a given point in space.  For incompressible flow, the divergence of the volume flux is zero.
-
 
 #### Chemical diffusion
 As mentioned above, chemical molar flux of a component A in an isothermal, isobaric system is defined in Fick's law of diffusion as:
@@ -612,7 +606,6 @@ For dilute gases, kinetic molecular theory relates the diffusion coefficient D t
 
 where the second factor is the mean free path and the square root (with the Boltzmann constant k) is the mean velocity of the particles.
 In turbulent flows, the transport by eddy motion can be expressed as a grossly increased diffusion coefficient.
-
 
 ### Quantum mechanics
 
@@ -737,9 +730,7 @@ Then the number of particles passing perpendicularly through unit area of a cros
 
 This is sometimes referred to as the probability current or current density, or probability flux density.
 
-
 ## Flux as a surface integral
-
 
 ### General mathematical definition (surface integral)
 
@@ -820,9 +811,7 @@ The divergence theorem states that the net outflux through a closed surface, in 
 If the surface is not closed, it has an oriented curve as boundary. Stokes' theorem states that the flux of the curl of a vector field is the line integral of the vector field over this boundary. This path integral is also called circulation, especially in fluid dynamics. Thus the curl is the circulation density.
 We can apply the flux and these theorems to many disciplines in which we see currents, forces, etc., applied through areas.
 
-
 ### Electromagnetism
-
 
 #### Electric flux
 An electric "charge", such as a single proton in space, has a magnitude defined in coulombs. Such a charge has an electric field surrounding it. In pictorial form, the electric field from a positive point charge can be visualized as a dot radiating electric field lines (sometimes also called "lines of force"). Conceptually, electric flux can be thought of as "the number of field lines" passing through a given area.   Mathematically, electric flux is the integral of the normal component of the electric field over a given area. Hence, units of electric flux are, in the MKS system, newtons per coulomb times meters squared, or N m2/C.  (Electric flux density is the electric flux per unit area, and is a measure of strength of the normal component of the electric field averaged over the area of integration.  Its units are N/C, the same as the electric field in MKS units.)
@@ -983,7 +972,6 @@ where ε0 is the permittivity of free space.
 If one considers the flux of the electric field vector, E, for a tube near a point charge in the field of the charge but not containing it with sides formed by lines tangent to the field, the flux for the sides is zero and there is an equal and opposite flux at both ends of the tube. This is a consequence of Gauss's law applied to an inverse square field. The flux for any cross-sectional surface of the tube will be the same. The total flux for any surface surrounding a charge q is q/ε0.
 In free space the electric displacement is given by the constitutive relation D = ε0 E, so for any bounding surface the D-field flux equals the charge QA within it. Here the expression "flux of" indicates a mathematical operation and, as can be seen, the result is not necessarily a "flow", since nothing actually flows along electric field lines.
 
-
 #### Magnetic flux
 The magnetic flux density (magnetic field) having the unit Wb/m2 (tesla) is denoted by B, and magnetic flux is defined analogously:
 
@@ -1093,7 +1081,6 @@ where dℓ is an infinitesimal vector line element of the closed curve
 , with the sign determined by the integration direction.
 The time-rate of change of the magnetic flux through a loop of wire is minus the electromotive force created in that wire. The direction is such that if current is allowed to pass through the wire, the electromotive force will cause a current which "opposes" the change in magnetic field by itself producing a magnetic field opposite to the change.  This is the basis for inductors and many electric generators.
 
-
 #### Poynting flux
 Using this definition, the flux of the Poynting vector S over a specified surface is the rate at which electromagnetic energy flows through that surface, defined like before:
 
@@ -1148,6 +1135,4 @@ Using this definition, the flux of the Poynting vector S over a specified surfac
 The flux of the Poynting vector through a surface is the electromagnetic power, or energy per unit time, passing through that surface. This is commonly used in analysis of electromagnetic radiation, but has application to other electromagnetic systems as well.
 Confusingly, the Poynting vector is sometimes called the power flux,  which is an example of the first usage of flux, above. It has units of watts per square metre (W/m2).
 
-
 ## SI radiometry units
-

@@ -7,51 +7,29 @@ Since it is a constant-enthalpy process, it can be used to experimentally measur
   
     
       
-        (
-        p
-        ,
-        T
-        )
       
     
     
 
-$$ (p,T) $$
-
   
- diagram of a gas. Combined with the specific heat capacity at constant pressure 
   
     
       
         
-          c
           
-            P
           
         
-        =
-        (
-        ∂
-        h
         
-          /
         
-        ∂
-        T
         
-          )
           
-            P
           
         
       
     
     
 
-$$ c_{P}=(\partial h/\partial T)_{P} $$
-
   
- it allows the complete measurement of the thermodynamic potential for the gas.
 
 ## Description
 
@@ -880,11 +858,6 @@ $$ {\tilde {p}}=(8-{\tilde {T}}_{I})e^{{\frac {5}{2}}-{\frac {4}{8-{\tilde {T}}_
 
   
 . This is plotted on the right. The critical point falls inside the region where the gas cools on expansion. The outside region is where the gas warms on expansion.
-
-## Applications
-
-In practice, the Joule–Thomson effect is achieved by allowing the gas to expand through a throttling device (usually a valve) which must be very well insulated to prevent any heat transfer to or from the gas. No external work is extracted from the gas during the expansion (the gas must not be expanded through a turbine, for example).
-The cooling produced in the Joule–Thomson expansion makes it a valuable tool in refrigeration. The effect is applied in the Linde technique as a standard process in the petrochemical industry, where the cooling effect is used to liquefy gases, and in many cryogenic applications (e.g. for the production of liquid oxygen, nitrogen, and argon). A gas must be below its inversion temperature to be liquefied by the Linde cycle. For this reason, simple Linde cycle liquefiers, starting from ambient temperature, cannot be used to liquefy helium, hydrogen, or neon. They must first be cooled to their inversion temperatures, which are −233 °C (helium), −71 °C (hydrogen), and −42 °C (neon).
 
 ## Proof that the specific enthalpy remains constant
 

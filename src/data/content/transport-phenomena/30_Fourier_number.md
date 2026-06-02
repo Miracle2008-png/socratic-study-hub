@@ -4,131 +4,85 @@ In the study of heat conduction, the Fourier number is the ratio of time,
   
     
       
-        t
       
     
-    {\displaystyle t}
   
-, to a characteristic time scale for heat diffusion, 
-  
-    
-      
-        
-          t
-          
-            d
-          
-        
-      
-    
-    {\displaystyle t_{d}}
-  
-. This dimensionless group is named in honor of J.B.J. Fourier, who formulated the modern understanding of heat conduction. The time scale for diffusion characterizes the time needed for heat to diffuse over a distance, 
-  
-    
-      
-        L
-      
-    
-    {\displaystyle L}
-  
-. For a medium with thermal diffusivity, 
-  
-    
-      
-        α
-      
-    
-    {\displaystyle \alpha }
-  
-, this time scale is 
-  
-    
-      
-        
-          t
-          
-            d
-          
-        
-        =
-        
-          L
-          
-            2
-          
-        
-        
-          /
-        
-        α
-      
-    
-    {\displaystyle t_{d}=L^{2}/\alpha }
-  
-, so that the Fourier number is 
-  
-    
-      
-        t
-        
-          /
-        
-        
-          t
-          
-            d
-          
-        
-        =
-        α
-        t
-        
-          /
-        
-        
-          L
-          
-            2
-          
-        
-      
-    
-    {\displaystyle t/t_{d}=\alpha t/L^{2}}
-  
-. The Fourier number is often denoted as 
-  
-    
-      
-        
-          F
-          o
-        
-      
-    
-    {\displaystyle \mathrm {Fo} }
-  
- or 
   
     
       
         
           
-            F
-            o
-          
-          
-            L
           
         
       
     
-    {\displaystyle \mathrm {Fo} _{L}}
   
-.
-The Fourier number can also be used in the study of mass diffusion, in which the thermal diffusivity is replaced by the mass diffusivity.
-The Fourier number is used in analysis of time-dependent transport phenomena, generally in conjunction with the Biot number if convection is present. The Fourier number arises naturally in nondimensionalization of the heat equation. 
-
+  
+    
+      
+      
+    
+  
+  
+    
+      
+      
+    
+  
+  
+    
+      
+        
+          
+          
+        
+        
+          
+          
+        
+        
+        
+      
+    
+  
+  
+    
+      
+        
+        
+        
+          
+          
+        
+        
+        
+        
+          
+          
+        
+      
+    
+  
+  
+    
+      
+        
+        
+      
+    
+  
+  
+    
+      
+        
+          
+          
+          
+          
+        
+      
+    
+  
 
 ## Definition
 The general definition of the Fourier number, Fo, is:
@@ -268,7 +222,6 @@ where:
     {\displaystyle L}
   
  is the characteristic length through which conduction occurs (m)
-
 
 ### Interpretation of the Fourier number
 Consider transient heat conduction in  a slab of thickness 
@@ -437,7 +390,6 @@ When
     {\displaystyle T_{h}}
   
 .
-
 
 ## Derivation and usage
 The Fourier number can be derived by nondimensionalizing the time-dependent diffusion equation.  As an example, consider a rod of length 
@@ -775,7 +727,6 @@ The resulting dimensionless time variable is the Fourier number,
 , comes directly from this scaling of the heat equation. 
 The Fourier number is frequently used as the nondimensional time in studying transient heat conduction in solids. A second parameter, the Biot number arises in nondimensionalization when convective boundary conditions are applied to the heat equation. Together, the Fourier number and the Biot number determine the temperature response of a solid subjected to convective heating or cooling.
 
-
 ## Application to mass transfer
 An analogous Fourier number can be derived by nondimensionalization of Fick's second law of diffusion. The result is a Fourier number for mass transport, 
   
@@ -876,4 +827,3 @@ where:
   
  is the length scale of interest (m)
 The mass-transfer Fourier number can be applied to the study of certain time-dependent mass diffusion problems.
-

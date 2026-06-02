@@ -2,27 +2,6 @@
 
 A chemical reactor is an enclosed volume in which a chemical reaction takes place. In chemical engineering, it is generally understood to be a process vessel used to carry out a chemical reaction, which is one of the classic unit operations in chemical process analysis. The design of a chemical reactor deals with multiple aspects of chemical engineering. Chemical engineers design reactors to maximize net present value for the given reaction. Designers ensure that the reaction proceeds with the highest efficiency towards the desired output product, producing the highest yield of product while requiring the least amount of money to purchase and operate. Normal operating expenses include energy input, energy removal, raw material costs, labor, etc. Energy changes can come in the form of heating or cooling, pumping to increase pressure, frictional pressure loss or agitation.Chemical reaction engineering is the branch of chemical engineering which deals with chemical reactors and their design, especially by application of chemical kinetics to industrial systems.
 
-## Overview
-
-The most common basic types of chemical reactors are tanks (where the reactants mix in the whole volume) and pipes or tubes (for laminar flow reactors and plug flow reactors)
-Both types can be used as continuous reactors or batch reactors, and either may accommodate one or more solids (reagents, catalysts, or inert materials), but the reagents and products are typically fluids (liquids or gases). Reactors in continuous processes are typically run at steady-state, whereas reactors in batch processes are necessarily operated in a transient state. When a reactor is brought into operation, either for the first time or after a shutdown, it is in a transient state, and key process variables change with time.
-There are three idealised models used to estimate the most important process variables of different chemical reactors:
-
-Batch reactor model,
-Continuous stirred-tank reactor model (CSTR), and
-Plug flow reactor model (PFR).
-Many real-world reactors can be modeled as a combination of these basic types.
-Key process variables include:
-
-Residence time (τ, lower case Greek tau)
-Volume (V)
-Temperature (T)
-Pressure (P)
-Concentrations of chemical species (C1, C2, C3, ... Cn)
-Heat transfer coefficients (h, U)
-A tubular reactor can often be a packed bed. In this case, the tube or channel contains particles or pellets, usually a solid catalyst. The reactants, in liquid or gas phase, are pumped through the catalyst bed. A chemical reactor may also be a fluidized bed; see Fluidized bed reactor.
-Chemical reactions occurring in a reactor may be exothermic, meaning giving off heat, or endothermic, meaning absorbing heat. A tank reactor may have a cooling or heating jacket or cooling or heating coils (tubes) wrapped around the outside of its vessel wall to cool down or heat up the contents, while tubular reactors can be designed like heat exchangers if the reaction is strongly exothermic, or like furnaces if the reaction is strongly endothermic.
-
 ## Types
 
 ### Batch reactor

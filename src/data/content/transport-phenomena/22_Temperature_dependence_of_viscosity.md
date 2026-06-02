@@ -6,27 +6,19 @@ Here dynamic viscosity is denoted by
   
     
       
-        μ
       
     
-    {\displaystyle \mu }
   
- and kinematic viscosity by 
   
     
       
-        ν
       
     
-    {\displaystyle \nu }
   
-. The formulas given are valid only for an absolute temperature scale; therefore, unless stated otherwise temperatures are in kelvins.
-
 
 ## Physical causes
 Viscosity in gases arises from molecules traversing layers of flow and transferring momentum between layers. This transfer of momentum can be thought of as a frictional force between layers of flow. Since the momentum transfer is caused by free motion of gas molecules between collisions, increasing thermal agitation of the molecules results in a larger viscosity. Hence, gaseous viscosity increases with temperature.
 In liquids, viscous forces are caused by molecules exerting attractive forces on each other across layers of flow. Increasing temperature results in a decrease in viscosity because a larger temperature means particles have greater thermal energy and are more easily able to overcome the attractive forces binding them together. An everyday example of this viscosity decrease is cooking oil moving more fluidly in a hot  frying pan than in a cold one.
-
 
 ## Gases
 
@@ -41,7 +33,6 @@ The viscosity predictions for four molecular models are discussed below. The pre
     {\displaystyle T}
   
 -dependence, but is more accurate than the other three models and is widely used in engineering practice.
-
 
 ### Hard-sphere kinetic theory
 If one models gas molecules as elastic hard spheres (with mass 
@@ -171,7 +162,6 @@ where
     {\displaystyle T}
   
  dependence requires more realistic models of molecular interactions, in particular the inclusion of attractive interactions which are present in all real gases.
-
 
 ### Power-law force
 A modest improvement over the hard-sphere model is a repulsive inverse power-law force, where the force between two molecules separated by distance 
@@ -383,7 +373,6 @@ Taking
   
  shown in the table. The model is modestly accurate for these two gases, but inaccurate for other gases.
 
-
 ### Sutherland model
 Another simple model for gaseous viscosity is the Sutherland model, which adds weak intermolecular attractions to the hard-sphere model. If the attractions are small, they can be treated perturbatively, which leads to
 
@@ -558,7 +547,6 @@ Values of
     {\displaystyle S}
   
  obtained from fitting to experimental data are shown in the table below for several gases. The model is modestly accurate for a number of gases (nitrogen, oxygen, argon, air, and others), but inaccurate for other gases like hydrogen and helium. In general, it has been argued that the Sutherland model is actually a poor model of intermolecular interactions and useful only as a simple interpolation formula for a restricted set of gases over a restricted range of temperatures.
-
 
 ### Lennard-Jones
 Under fairly general conditions on the molecular model, the kinetic theory prediction for 
@@ -876,10 +864,8 @@ Values of
   
  estimated from experimental data are shown in the table below for several common gases.
 
-
 ## Liquids
 In contrast with gases, there is no systematic microscopic theory for liquid viscosity. However, there are several empirical models which extrapolate a temperature dependence based on available experimental viscosities.
-
 
 ### Two-parameter exponential
 A simple and widespread empirical correlation for liquid viscosity is a two-parameter exponential:
@@ -925,7 +911,6 @@ The table below gives estimated values of
     {\displaystyle B}
   
  for representative liquids. Comprehensive tables of these parameters for hundreds of liquids can be found in the literature.
-
 
 ### Three- and four-parameter exponentials
 One can also find tabulated exponentials with additional parameters, for example
@@ -1000,7 +985,6 @@ and
   
 
 Representative values are given in the tables below.
-
 
 ### Models for kinematic viscosity
 The effect of temperature on the kinematic viscosity 
@@ -1327,7 +1311,5 @@ For liquid metal viscosity as a function of temperature, Seeton proposed:
     {\displaystyle \ln \left({\ln \left({\nu +0.7+e^{-\nu }K_{0}\left({\nu +1.244067}\right)}\right)}\right)=A-{B \over T}}
   
 
-
 ### Temperature dependence of viscosity for molten salts
 Modern approach for evaluating the temperature dependence of viscosity for molten salts is given by Douglas-Doremus-Ojovan (DDO) model of viscosity of glasses and melts.
-

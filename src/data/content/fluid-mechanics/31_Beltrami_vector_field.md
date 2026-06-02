@@ -6,281 +6,159 @@ In vector calculus, a Beltrami vector field, named after Eugenio Beltrami, is a 
     
       
         
-          F
         
-        ×
-        (
-        ∇
-        ×
         
-          F
         
-        )
-        =
-        0.
       
     
-    {\displaystyle \mathbf {F} \times (\nabla \times \mathbf {F} )=0.}
   
 
-Thus 
   
     
       
         
-          F
         
       
     
-    {\displaystyle \mathbf {F} }
   
- and 
-  
-    
-      
-        ∇
-        ×
-        
-          F
-        
-      
-    
-    {\displaystyle \nabla \times \mathbf {F} }
-  
- are parallel vectors in other words, 
-  
-    
-      
-        ∇
-        ×
-        
-          F
-        
-        =
-        λ
-        
-          F
-        
-      
-    
-    {\displaystyle \nabla \times \mathbf {F} =\lambda \mathbf {F} }
-  
-.
-If 
   
     
       
         
-          F
         
       
     
-    {\displaystyle \mathbf {F} }
   
- is solenoidal - that is, if 
   
     
       
-        ∇
-        ⋅
         
-          F
         
-        =
-        0
+        
+        
       
     
-    {\displaystyle \nabla \cdot \mathbf {F} =0}
   
- such as for an incompressible fluid or a magnetic field, the identity  
   
     
       
-        ∇
-        ×
-        (
-        ∇
-        ×
         
-          F
         
-        )
-        ≡
-        −
+      
+    
+  
+  
+    
+      
         
-          ∇
+        
+      
+    
+  
+  
+    
+      
+        
+        
+        
           
-            2
           
         
         
-          F
         
-        +
-        ∇
-        (
-        ∇
-        ⋅
         
-          F
         
-        )
       
     
-    {\displaystyle \nabla \times (\nabla \times \mathbf {F} )\equiv -\nabla ^{2}\mathbf {F} +\nabla (\nabla \cdot \mathbf {F} )}
   
- becomes 
   
     
       
-        ∇
-        ×
-        (
-        ∇
-        ×
         
-          F
         
-        )
-        ≡
-        −
         
-          ∇
           
-            2
           
         
         
-          F
         
       
     
-    {\displaystyle \nabla \times (\nabla \times \mathbf {F} )\equiv -\nabla ^{2}\mathbf {F} }
   
- and this leads to
-
-  
-    
-      
-        −
-        
-          ∇
-          
-            2
-          
-        
-        
-          F
-        
-        =
-        ∇
-        ×
-        (
-        λ
-        
-          F
-        
-        )
-      
-    
-    {\displaystyle -\nabla ^{2}\mathbf {F} =\nabla \times (\lambda \mathbf {F} )}
-  
-
-and if we further assume that 
-  
-    
-      
-        λ
-      
-    
-    {\displaystyle \lambda }
-  
- is a constant, we arrive at the simple form
 
   
     
       
         
-          ∇
           
-            2
           
         
         
-          F
-        
-        =
-        −
-        
-          λ
-          
-            2
-          
         
         
-          F
         
-        .
       
     
-    {\displaystyle \nabla ^{2}\mathbf {F} =-\lambda ^{2}\mathbf {F} .}
   
 
-Beltrami vector fields with nonzero curl correspond to Euclidean contact forms in three dimensions.
-The vector field
+  
+    
+      
+      
+    
+  
 
   
     
       
         
-          F
+          
+          
         
-        =
-        −
+        
+        
         
           
-            z
+          
+        
+        
+        
+      
+    
+  
+
+  
+    
+      
+        
+        
+        
+          
             
-              1
-              +
               
-                z
                 
-                  2
                 
               
             
           
         
         
-          i
         
-        +
         
           
-            1
             
-              1
-              +
               
-                z
                 
-                  2
                 
               
             
           
         
         
-          j
         
       
     
-    {\displaystyle \mathbf {F} =-{\frac {z}{\sqrt {1+z^{2}}}}\mathbf {i} +{\frac {1}{\sqrt {1+z^{2}}}}\mathbf {j} }
   
-
-is a multiple of the standard contact structure −zi + j, and furnishes an example of a Beltrami vector field.
-
 
 ## Beltrami fields and fluid mechanics
 Beltrami fields with a constant proportionality factor are a distinct category of vector fields that act as eigenfunctions of the curl operator. In essence, they are functions that map points in a three-dimensional space, either in 
@@ -645,10 +523,8 @@ When the Bernoulli function
   
  is constant, Beltrami fields become valid solutions to the simplified Euler equations. Note that we do not need the proportionality factor to be constant for the proof to work.
 
-
 ### Beltrami fields and complexity in fluid mechanics
 Beltrami fields have a close connection to Lagrangian turbulence, as shown by V.I. Arnold's work on stationary Euler flows.
-
 
 #### Arnold's "conjecture"
 Arnold's quote from his aforementioned work highlights the probable complicated topology of the streamlines in Beltrami fields, drawing parallels with celestial mechanics:
@@ -680,7 +556,5 @@ Il est probable que les écoulements tels que rot
   
 , ont des lignes de courant à la topologie compliquée. De telles complications interviennent en mécanique céleste. La topologie des lignes de courant des écoulements stationnaires des fluides visqueux peut être semblable à celle de mécanique céleste.
 
-
 #### Proposed solutions
 A recent paper demonstrates that Beltrami fields exhibit chaotic regions and invariant tori of complex topologies with high probability. The analysis includes asymptotic bounds for the number of horseshoes, zeros, and knotted invariant tori, alongside periodic trajectories in Gaussian random Beltrami fields.
-

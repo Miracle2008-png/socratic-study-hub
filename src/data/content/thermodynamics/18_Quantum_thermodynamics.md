@@ -5,19 +5,11 @@ In 1905, Albert Einstein argued that the requirement of consistency between ther
   
     
       
-        E
-        =
-        h
-        ν
       
     
     
 
-$$ E=h\nu $$
-
   
-. This paper is the dawn of quantum theory. In a few decades quantum theory became established with an independent set of rules. Currently quantum thermodynamics addresses the emergence of thermodynamic laws from quantum mechanics. It differs from quantum statistical mechanics in the emphasis on dynamical processes out of equilibrium. In addition, there is a quest for the theory to be relevant for a single individual quantum system. 
-The first university course titled "Quantum Thermodynamics" was offered at MIT in the spring of 1971 by George Hatsopoulos and Elias Gyftopoulos. The course, numbered 2.47J, was a graduate-level offering.
 
 ## Dynamical view
 

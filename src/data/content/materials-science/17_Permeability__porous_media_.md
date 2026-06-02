@@ -6,13 +6,6 @@ The permeability of a medium is related to the porosity, but also to the shapes 
 Fluid flows can also be influenced in different lithological settings by brittle deformation of rocks in fault zones; the mechanisms by which this occurs are the subject of fault zone hydrogeology. Permeability is also affected by the pressure inside a material.
 The SI unit for permeability is the square metre (m2). A practical unit for permeability is the darcy (d), or more commonly the millidarcy (md) (1 d ≈ 10−12 m2). The name honors the French Engineer Henry Darcy who first described the flow of water through sand filters for potable water supply. Permeability values for most materials commonly range typically from a fraction to several thousand millidarcys. The unit of square centimetre (cm2) is also sometimes used (1 cm2 = 10−4 m2 ≈ 108 d).
 
-## Applications
-
-The concept of permeability is of importance in determining the flow characteristics of hydrocarbons in oil and gas reservoirs, and of groundwater in aquifers.
-For a rock to be considered as an exploitable hydrocarbon reservoir without stimulation, its permeability must be greater than approximately 100 md (depending on the nature of the hydrocarbon – gas reservoirs with lower permeabilities are still exploitable because of the lower viscosity of gas in comparison with oil).  Rocks with permeabilities significantly lower than 100 md can form efficient seals (see petroleum geology).  Unconsolidated sands may have permeabilities of over 5000 md.
-The concept also has many practical applications outside of geology, for example in chemical engineering (e.g., filtration), as well as in Civil Engineering when determining whether the ground conditions of a site are suitable for construction.
-The concept of permeability is also useful in computational fluid dynamics (CFD) for modeling flow through complex geometries such as packed beds, filter papers, or tube banks. When the size of individual components - such as particle diameter in packed beds or tube diameter in tube bundles - are significantly smaller than the overall flow domain, direct modeling becomes computationally intensive due to the fine mesh resolution required. In such cases, the domain can be approximated as a porous medium, with permeability estimated using correlations, experimental data, or separate fluid flow simulations.
-
 ## Description
 
 Permeability is part of the proportionality constant in Darcy's law which relates discharge (flow rate) and fluid physical properties (e.g. dynamic viscosity), to a pressure gradient applied to the porous media:

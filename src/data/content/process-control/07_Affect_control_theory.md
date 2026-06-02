@@ -2,11 +2,9 @@
 
 In control theory, affect control theory proposes that individuals maintain affective meanings through their actions and interpretations of events. The activity of social institutions occurs through maintenance of culturally based affective meanings.
 
-
 ## Affective meaning
 Besides a denotative meaning, every concept has an affective meaning, or connotation, that varies along three dimensions: evaluation – goodness versus badness, potency – powerfulness versus powerlessness, and activity – liveliness versus torpidity. Affective meanings can be measured with semantic differentials yielding a three-number profile indicating how the concept is positioned on evaluation, potency, and activity (EPA). Osgood demonstrated that an elementary concept conveyed by a word or idiom has a normative affective meaning within a particular culture.
 A stable affective meaning derived either from personal experience or from cultural inculcation is called a sentiment, or fundamental affective meaning, in affect control theory. Affect control theory has inspired assembly of dictionaries of EPA sentiments for thousands of concepts involved in social life – identities, behaviours, settings, personal attributes, and emotions. Sentiment dictionaries have been constructed with ratings of respondents from the US, Canada, Northern Ireland, Germany, Japan, China and Taiwan.
-
 
 ## Impression formation
 
@@ -18,11 +16,9 @@ An actor who behaves disagreeably seems less good, especially if the object of t
 A powerful person seems desperate when performing extremely forceful acts on another, and the object person may seem invincible.
 A social action creates impressions of the actor, the object person, the behavior, and the setting.
 
-
 ### Deflections
 Deflections are the distances in the EPA space between transient and fundamental affective meanings. For example, a mother complimented by a stranger feels that the unknown individual is much nicer than a stranger is supposed to be, and a bit too potent and active as well – thus there is a moderate distance between the impression created and the mother's sentiment about strangers. High deflections in a situation produce an aura of unlikeliness or uncanniness. It is theorized that  high deflections maintained over time generate psychological stress.
 The basic cybernetic idea of affect control theory can be stated in terms of deflections. An individual selects a behavior that produces the minimum deflections for concepts involved in the action. Minimization of deflections is described by equations derived with calculus from empirical impression-formation equations.
-
 
 ## Action
 On entering a scene an individual defines the situation by assigning identities to each participant, frequently in accord with an encompassing social institution. While defining the situation, the individual tries to maintain the affective meaning of self through adoption of an identity whose sentiment serves as a surrogate for the individual's self-sentiment. The identities assembled in the definition of the situation determine the sentiments that the individual tries to maintain behaviorally.
@@ -30,23 +26,15 @@ Confirming sentiments associated with institutional identities – like doctor�
 Confirming sentiments associated with negatively evaluated identities – like bully, glutton, loafer, or scatterbrain – generates deviant behavior.
 Affect control theory's sentiment databases and mathematical model are combined in a computer simulation program for analyzing social interaction in various cultures.
 
-
 ## Emotions
 According to affect control theory, an event generates emotions for the individuals involved in the event by changing impressions of the individuals. The emotion is a function of the impression created of the individual and of the difference between that impression and the sentiment attached to the individual's identity Thus, for example, an event that creates a negative impression of an individual generates unpleasant emotion for that person, and the unpleasantness is worse if the individual believes she has a highly valued identity. Similarly, an event creating a positive impression generates a pleasant emotion, all the more pleasant if the individual believes he has a disvalued identity in the situation.
 Non-linear equations describing how transients and fundamentals combine to produce emotions have been derived in empirical studies Affect control theory's computer simulation program uses these equations to predict emotions that arise in social interaction, and displays the predictions via facial expressions that are computer drawn, as well as in terms of emotion words.
 Based on cybernetic studies by Pavloski and Goldstein, that utilise perceptual control theory, Heise hypothesizes that emotion is distinct from stress. For example, a parent enjoying intensely pleasant emotions while interacting with an offspring suffers no stress. A homeowner attending to a sponging house guest may feel no emotion and yet be experiencing substantial stress.
-
 
 ## Interpretations
 Others' behaviors are interpreted so as to minimize the deflections they cause. For example, a man turning away from another and exiting through a doorway could be engaged in several different actions, like departing from, deserting, or escaping from the other. Observers choose among the alternatives so as to minimize deflections associated with their definitions of the situation. Observers who assigned different identities to the observed individuals could have different interpretations of the behavior.
 Redefinition of the situation may follow an event that causes large deflections which cannot be resolved by reinterpreting the behavior. In this case, observers assign new identities that are confirmed by the behavior. For example, seeing a father slap a son, one might redefine the father as an abusive parent, or perhaps as a strict disciplinarian; or one might redefine the son as an arrogant brat. Affect control theory's computer program predicts the plausible reidentifications, thereby providing a formal model for labeling theory.
 The sentiment associated with an identity can change to befit the kinds of events in which that identity is involved, when situations keep arising where the identity is deflected in the same way, especially when identities are informal and non-institutionalized.
 
-
-## Applications
-Affect control theory has been used in research on emotions, gender, social structure, politics, deviance and law, the arts, and business. Affect Control Theory was analyzed through the use of Quantitative Methods in research, using mathematics to look at data and interpret their findings. However, recent applications of this theory have explored the concept of Affect Control Theory through Qualitative Research Methods. This process involves obtaining data through the use of interviews, observations, and questionnaires. Affect Control Theory has been explored through Qualitative measures in interviewing the family, friends, and loved ones of individuals who were murdered, looking at how the idea of forgiveness changes based on their interpretation of the situation. Computer programs have also been an important part of understanding Affect Control Theory, beginning with the use of "Interact," a computer program designed to create social situations with the user to understand how an individual will react based on what is happening within the moment. "Interact" has been an essential tool in research, using it to understand social interaction and the maintenance of affect between individuals. The use of interviews and observations have improved the understanding of Affect Control Theory through Qualitative research methods. A bibliography of research studies in these areas is provided by David R. Heise and at the research program's website.
-
-
 ## Extensions
 A probabilistic and decision theoretic extension of affect control theory generalizes the original theory in order to allow for uncertainty about identities, changing identities, and explicit non-affective goals.
-

@@ -34,13 +34,6 @@ Syntegrity
 Variety and requisite variety
 Viable system model
 
-## Related fields and applications
-
-Cybernetics' central concept of circular causality is of wide applicability, leading to diverse applications and relations with other fields. Many of the initial applications of cybernetics focused on engineering, biology, and exchanges between the two, such as medical cybernetics and robotics and topics such as neural networks, heterarchy. In the social and behavioral sciences, cybernetics has included and influenced work in anthropology, sociology, economics, family therapy, cognitive science, and psychology.
-As cybernetics has developed, it broadened in scope to include work in management, design, pedagogy, and the creative arts, while also developing exchanges with constructivist philosophies, counter-cultural movements, and media studies. The development of management cybernetics has led to a variety of applications, notably to the national economy of Chile under the Allende government in Project Cybersyn, as well as other lesser known projects by Stafford Beer in Latin America. In design, cybernetics has been influential on interactive architecture, human-computer interaction, design research, and the development of systemic design and metadesign practices.
-Cybernetics is often understood within the context of systems science, systems theory, and systems thinking. Systems approaches influenced by cybernetics include critical systems thinking, which incorporates the viable system model; systemic design; and system dynamics, which is based on the concept of causal feedback loops.
-Many fields trace their origins in whole or part to work carried out in cybernetics, or were partially absorbed into cybernetics when it was developed. These include artificial intelligence, bionics, cognitive science, control theory, complexity science, computer science, information theory and robotics. Some aspects of modern artificial intelligence, particularly the social machine, are often described in cybernetic terms.
-
 ## Journals and societies
 
 Academic journals with focuses in cybernetics include:

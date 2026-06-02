@@ -6,27 +6,19 @@ Here dynamic viscosity is denoted by
   
     
       
-        μ
       
     
     
 
-$$ \mu $$
-
   
- and kinematic viscosity by 
   
     
       
-        ν
       
     
     
 
-$$ \nu $$
-
   
-. The formulas given are valid only for an absolute temperature scale; therefore, unless stated otherwise temperatures are in kelvins.
 
 ## Physical causes
 

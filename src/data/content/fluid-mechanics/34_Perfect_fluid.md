@@ -5,43 +5,30 @@ In physics, a perfect fluid or ideal fluid  is a fluid that can be completely ch
     
       
         
-          ρ
           
-            m
           
         
       
     
-    {\displaystyle \rho _{m}}
   
- and isotropic pressure ⁠
   
     
       
-        p
       
     
-    {\displaystyle p}
   
-⁠. Real fluids are viscous ("sticky") and contain (and conduct) heat. Perfect fluids are idealized models in which these possibilities are ignored. Specifically, perfect fluids have no shear stresses, viscosity, or heat conduction. 
-A quark–gluon plasma
-and graphene are examples of nearly perfect fluids that could be studied in a laboratory.
-
 
 ## Non-relativistic fluid mechanics
 
 In classical mechanics, ideal fluids are described by Euler equations. Ideal fluids produce no drag according to d'Alembert's paradox. If a fluid produced drag, then work would be needed to move an object through the fluid and that work would produce heat or fluid motion. However, a perfect fluid can not dissipate energy and it can't transmit energy infinitely far from the object.
 A flock of birds in the medium of air is an example of a perfect fluid; an electron gas is also modeled as a perfect fluid.
 
-
 ### Superfluidity
 Superfluids are fluids with zero viscosity, however in practice superfluids cannot be accurately described as a perfect fluid. In the two-fluid model, superfluids are macroscopically considered as having two-coexisting phases, a mixture between a normal fluid and a perfect fluid.
-
 
 ## Cosmology and astrophysics
 
 Perfect fluids are a fluid solution used in general relativity to model idealized distributions of matter, such as the interior of a star or an isotropic universe. In the latter case, the symmetry of the cosmological principle and the equation of state of the perfect fluid lead to Friedmann equation for the expansion of the universe.
-
 
 ### Formulation
 In space-positive metric signature tensor notation, the stress–energy tensor of a perfect fluid can be written in the form
@@ -415,4 +402,3 @@ Relativistic Euler equations read
   
 
 in the non relativistic limit, these equations reduce to the usual Euler equations.
-

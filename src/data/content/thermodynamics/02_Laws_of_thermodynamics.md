@@ -8,14 +8,12 @@ The second law of thermodynamics states that in a natural thermodynamic process,
 The third law of thermodynamics states that a system's entropy approaches a constant value as the temperature approaches absolute zero. With the exception of non-crystalline solids (glasses), the entropy of a system at absolute zero is typically close to zero.
 The first and second laws prohibit two kinds of perpetual motion machines, respectively: the perpetual motion machine of the first kind which produces work with no energy input, and the perpetual motion machine of the second kind which spontaneously converts thermal energy into mechanical work.
 
-
 ## Zeroth law
 The zeroth law of thermodynamics provides for the foundation of temperature as an empirical parameter in thermodynamic systems and establishes the transitive relation between the temperatures of multiple bodies in thermal equilibrium. The law may be stated in the following form:
 
 If two systems are both in thermal equilibrium with a third system, then they are in thermal equilibrium with each other.
 Though this version of the law is one of the most commonly stated versions, it is only one of a diversity of statements that are labeled as "the zeroth law". Some statements go further, so as to supply the important physical fact that temperature is one-dimensional and that one can conceptually arrange bodies in a real number sequence from colder to hotter.
 These concepts of temperature and of thermal equilibrium are fundamental to thermodynamics and were clearly stated in the nineteenth century. The name 'zeroth law' was invented by Ralph H. Fowler in the 1930s, long after the first, second, and third laws were widely recognized. The law allows the definition of temperature in a non-circular way without reference to entropy, its conjugate variable. Such a temperature definition is said to be 'empirical'.
-
 
 ## First law
 
@@ -227,7 +225,6 @@ The flow of heat is a form of energy transfer. Heat transfer is the natural proc
 
 Combining these principles leads to one traditional statement of the first law of thermodynamics: it is not possible to construct a machine which will perpetually output work without an equal amount of energy input to that machine. Or more briefly, a perpetual motion machine of the first kind is impossible.
 
-
 ## Second law
 The second law of thermodynamics indicates the irreversibility of natural processes, and in many cases, the tendency of natural processes to lead towards spatial homogeneity of matter and energy, especially of temperature. It can be formulated in a variety of interesting and important ways. One of the simplest is the Clausius statement, that heat does not spontaneously pass from a colder to a hotter body.
 It implies the existence of a quantity called the entropy of a thermodynamic system. In terms of this quantity it implies that
@@ -293,7 +290,6 @@ The second law is applicable to a wide variety of processes, both reversible and
 While reversible processes are a useful and convenient theoretical limiting case, all natural processes are irreversible. A prime example of this irreversibility is the transfer of heat by conduction or radiation. It was known long before the discovery of the notion of entropy that when two bodies, initially of different temperatures, come into direct thermal connection, then heat immediately and spontaneously flows from the hotter body to the colder one.
 Entropy may also be viewed as a physical measure concerning the microscopic details of the motion and configuration of a system, when only the macroscopic states are known. Such details are often referred to as disorder on a microscopic or molecular scale, and less often as dispersal of energy. For two given macroscopically specified states of a system, there is a mathematically defined quantity called the 'difference of information entropy between them'. This defines how much additional microscopic physical information is needed to specify one of the macroscopically specified states, given the macroscopic specification of the other – often a conveniently chosen reference state which may be presupposed to exist rather than explicitly stated. A final condition of a natural process always contains microscopically specifiable effects which are not fully and exactly predictable from the macroscopic specification of the initial condition of the process. This is why entropy increases in natural processes – the increase tells how much extra microscopic information is needed to distinguish the initial macroscopically specified state from the final macroscopically specified state. Equivalently, in a thermodynamic process, energy spreads.
 
-
 ## Third law
 The third law of thermodynamics can be stated as:
 
@@ -342,7 +338,6 @@ where S is the entropy of the system, kB is the Boltzmann constant, and Ω the n
     {\displaystyle \ln(1)=0}
   
 .
-
 
 ## Onsager relations
 
@@ -484,4 +479,3 @@ where i, k = 1,2,3,... index every parameter and its related force, and
   
 
 are called the thermodynamic flows.
-

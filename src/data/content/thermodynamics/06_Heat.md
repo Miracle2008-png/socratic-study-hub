@@ -7,7 +7,6 @@ Heat can enter or leave a body of matter by thermal conduction, by electromagnet
 By assuming conservation of heat in a transfer, calorimetry  measures it by its effect on the states of interacting bodies, for example, by the amount of ice melted or by change in temperature of a body. 
 In the International System of Units (SI), the unit of measurement for heat is the joule (J).
 
-
 ## Notation and units
 As a form of energy, heat has the unit joule (J) in the International System of Units (SI). In addition, many applied branches of engineering use other, traditional units, such as the British thermal unit (BTU) and the calorie. The standard unit for the rate of heating is the watt (W), defined as one joule per second.
 The symbol Q for heat was introduced by Rudolf Clausius and Macquorn Rankine in c. 1859.
@@ -29,9 +28,7 @@ Heat released by a system into its surroundings is by convention, as a contribut
   
 , but it is not a time derivative of a function of state (which can also be written with the dot notation) since heat is not a function of state. Heat flux is defined as rate of heat transfer per unit cross-sectional area (watts per square metre).
 
-
 ## Heat transfer
-
 
 ### Heat transfer between two bodies
 Referring to conduction, Partington writes: "If a hot body is brought in conducting contact with a cold body, the temperature of the hot body falls and that of the cold body rises, and it is said that a quantity of heat has passed from the hot body to the cold body."
@@ -40,16 +37,13 @@ Maxwell writes that convection as such "is not a purely thermal phenomenon". In 
 In accordance with the first law for closed systems, energy transferred solely as heat leaves one body and enters another, changing the internal energies of each. Transfer, between bodies, of energy as work is a complementary way of changing internal energies. Though it is not logically rigorous from the viewpoint of strict physical concepts, a common form of words that expresses this is to say that heat and work are interconvertible.
 Cyclically operating engines that use only heat and work transfers have two thermal reservoirs, a hot and a cold one. They may be classified by the range of operating temperatures of the working body, relative to those reservoirs. In a heat engine, the working body is at all times colder than the hot reservoir and hotter than the cold reservoir. In a sense, it uses heat transfer to produce work. In a heat pump, the working body, at stages of the cycle, goes both hotter than the hot reservoir, and colder than the cold reservoir. In a sense, it uses work to produce heat transfer.
 
-
 ### Heat engine
 In classical thermodynamics, a commonly considered model is the heat engine. It consists of four bodies: the working body, the hot reservoir, the cold reservoir, and the work reservoir. A cyclic process leaves the working body in an unchanged state, and is envisaged as being repeated indefinitely often. Work transfers between the working body and the work reservoir are envisaged as reversible, and thus only one work reservoir is needed. But two thermal reservoirs are needed, because transfer of energy as heat is irreversible. A single cycle sees energy taken by the working body from the hot reservoir and sent to the two other reservoirs, the work reservoir and the cold reservoir. The hot reservoir always and only supplies energy, and the cold reservoir always and only receives energy. The second law of thermodynamics requires that no cycle can occur in which no energy is received by the cold reservoir. Heat engines achieve higher efficiency when the ratio of the initial and final temperature is greater.
-
 
 ### Heat pump or refrigerator
 Another commonly considered model is the heat pump or refrigerator. Again there are four bodies: the working body, the hot reservoir, the cold reservoir, and the work reservoir. A single cycle starts with the working body colder than the cold reservoir, and then energy is taken in as heat by the working body from the cold reservoir. Then the work reservoir does work on the working body, adding more to its internal energy, making it hotter than the hot reservoir. The hot working body passes heat to the hot reservoir, but still remains hotter than the cold reservoir. Then, by allowing it to expand without passing heat to another body, the working body is made colder than the cold reservoir. It can now accept heat transfer from the cold reservoir to start another cycle.
 The device has transported energy from a colder to a hotter reservoir, but this is not regarded as by an inanimate agency; rather, it is regarded as by the harnessing of work . This is because work is supplied from the work reservoir, not just by a simple thermodynamic process, but by a cycle of thermodynamic operations and processes, which may be regarded as directed by an animate or harnessing agency. Accordingly, the cycle is still in accord with the second law of thermodynamics. The 'efficiency' of a heat pump (which exceeds unity) is best when the temperature difference between the hot and cold reservoirs is least.
 Functionally, such engines are used in two ways, distinguishing a target reservoir and a resource or surrounding reservoir. A heat pump transfers heat to the hot reservoir as the target from the resource or surrounding reservoir. A refrigerator transfers heat, from the cold reservoir as the target, to the resource or surrounding reservoir. The target reservoir may be regarded as leaking: when the target leaks heat to the surroundings, heat pumping is used; when the target leaks coldness to the surroundings, refrigeration is used. The engines harness work to overcome the leaks.
-
 
 ### Macroscopic view
 
@@ -60,12 +54,10 @@ In this circumstance, it may be expected that there may also be active other dri
 If cross-effects that result in diffusive transfer of internal energy were also labeled as heat transfers, they would sometimes violate the rule that pure heat transfer occurs only down a temperature gradient, never up one. They would also contradict the principle that all heat transfer is of one and the same kind, a principle founded on the idea of heat conduction between closed systems. One might to try to think narrowly of heat flux driven purely by temperature gradient as a conceptual component of diffusive internal energy flux, in the thermodynamic view, the concept resting specifically on careful calculations based on detailed knowledge of the processes and being indirectly assessed. In these circumstances, if perchance it happens that no transfer of matter is actualized, and there are no cross-effects, then the thermodynamic concept and the mechanical concept coincide, as if one were dealing with closed systems. But when there is transfer of matter, the exact laws by which temperature gradient drives diffusive flux of internal energy, rather than being exactly knowable, mostly need to be assumed, and in many cases are practically unverifiable. Consequently, when there is transfer of matter, the calculation of the pure 'heat flux' component of the diffusive flux of internal energy rests on practically unverifiable assumptions. This is a reason to think of heat as a specialized concept that relates primarily and precisely to closed systems, and applicable only in a very restricted way to open systems.
 In many writings in this context, the term "heat flux" is used when what is meant is therefore more accurately called diffusive flux of internal energy; such usage of the term "heat flux" is a residue of older and now obsolete language usage that allowed that a body may have a "heat content".
 
-
 ### Microscopic view
 In the kinetic theory, heat is explained in terms of the microscopic motions and interactions of constituent particles, such as electrons, atoms, and molecules. The immediate meaning of the kinetic energy of the constituent particles is not as heat. It is as a component of internal energy.
 In microscopic terms, heat is a transfer quantity, and is described by a transport theory, not as steadily localized kinetic energy of particles. Heat transfer arises from temperature gradients or differences, through the diffuse exchange of microscopic kinetic and potential particle energy, by particle collisions and other interactions. An early and vague expression of this was made by Francis Bacon. Precise and detailed versions of it were developed in the nineteenth century.
 In statistical mechanics, for a closed system (no transfer of matter), heat is the energy transfer associated with a disordered, microscopic action on the system, associated with jumps in occupation numbers of the energy levels of the system, without change in the values of the energy levels themselves. It is possible for macroscopic thermodynamic work to alter the occupation numbers without change in the values of the system energy levels themselves, but what distinguishes transfer as heat is that the transfer is entirely due to disordered, microscopic action, including radiative transfer. A mathematical definition can be formulated for small increments of quasi-static adiabatic work in terms of the statistical distribution of an ensemble of microstates.
-
 
 ### Calorimetry
 
@@ -73,20 +65,17 @@ Quantity of heat transferred can be measured by calorimetry, or determined throu
 Calorimetry is the empirical basis of the idea of quantity of heat transferred in a process. The transferred heat is measured by changes in a body of known properties, for example, temperature rise, change in volume or length, or phase change, such as melting of ice.
 A calculation of quantity of heat transferred can rely on a hypothetical quantity of energy transferred as adiabatic work and on the first law of thermodynamics. Such calculation is the primary approach of many theoretical studies of quantity of heat transferred.
 
-
 ### Engineering
 
 The discipline of heat transfer, typically considered an aspect of mechanical engineering and chemical engineering, deals with specific applied methods by which thermal energy in a system is generated, or converted, or transferred to another system. Although the definition of heat implicitly means the transfer of energy, the term heat transfer encompasses this traditional usage in many engineering disciplines and laymen language.
 Heat transfer is generally described as including the mechanisms of heat conduction, heat convection, thermal radiation, but may include mass transfer and heat in processes of phase changes.
 Convection may be described as the combined effects of conduction and fluid flow. From the thermodynamic point of view, heat flows into a fluid by diffusion to increase its energy, the fluid then transfers (advects) this increased internal energy (not heat) from one location to another, and this is then followed by a second thermal interaction which transfers heat to a second body or system, again by diffusion. This entire process is often regarded as an additional mechanism of heat transfer, although technically, "heat transfer" and thus heating and cooling occurs only on either end of such a conductive flow, but not as a result of flow. Thus, conduction can be said to "transfer" heat only as a net result of the process, but may not do so at every time within the complicated convective process.
 
-
 ## Latent and sensible heat
 
 In an 1847 lecture entitled On Matter, Living Force, and Heat, James Prescott Joule characterized the terms latent heat and sensible heat as components of heat each affecting distinct physical phenomena, namely the potential and kinetic energy of particles, respectively.
 He described latent energy as the energy possessed via a distancing of particles where attraction was over a greater distance, i.e. a form of potential energy, and the sensible heat as an energy involving the motion of particles, i.e. kinetic energy.
 Latent heat is the heat released or absorbed by a chemical substance or a thermodynamic system during a change of state that occurs without a change in temperature. Such a process may be a phase transition, such as the melting of ice or the boiling of water.
-
 
 ## Heat capacity
 Heat capacity is a measurable physical quantity equal to the ratio of the heat added to an object to the resulting temperature change. The molar heat capacity is the heat capacity per unit amount (SI unit: mole) of a pure substance, and the specific heat capacity, often called simply specific heat, is the heat capacity per unit mass of a material. Heat capacity is a physical property of a substance, which means that it depends on the state and properties of the substance under consideration.
@@ -100,7 +89,6 @@ There are important exceptions. They break the obviously apparent link between h
 In the early days of measurement of high temperatures, another factor was important, and used by Josiah Wedgwood in his pyrometer. The temperature reached in a process was estimated by the shrinkage of a sample of clay. The higher the temperature, the more the shrinkage. This was the only available more or less reliable method of measurement of temperatures above 1000 °C (1,832 °F). But such shrinkage is irreversible. The clay does not expand again on cooling. That is why it could be used for the measurement. But only once. It is not a thermometric material in the usual sense of the word.
 Nevertheless, the thermodynamic definition of absolute temperature does make essential use of the concept of heat, with proper circumspection.
 
-
 ## "Hotness"
 The property of hotness is a concern of thermodynamics that should be defined without reference to the concept of heat. Consideration of hotness leads to the concept of empirical temperature. All physical systems are capable of heating or cooling others. With reference to hotness, the comparative terms hotter and colder are defined by the rule that heat flows from the hotter body to the colder.
 If a physical system is inhomogeneous or very rapidly or irregularly changing, for example by turbulence, it may be impossible to characterize it by a temperature, but still there can be transfer of energy as heat between it and another system. If a system has a physical state that is regular enough, and persists long enough to allow it to reach thermal equilibrium with a specified thermometer, then it has a temperature according to that thermometer. An empirical thermometer registers degree of hotness for such a system. Such a temperature is called empirical. For example, Truesdell writes about classical thermodynamics: "At each time, the body is assigned a real number called the temperature. This number is a measure of how hot the body is."
@@ -108,9 +96,7 @@ Physical systems that are too turbulent to have temperatures may still differ in
 This is also the reason that the zeroth law of thermodynamics is stated explicitly. If three physical systems, A, B, and C are each not in their own states of internal thermodynamic equilibrium, it is possible that, with suitable physical connections being made between them, A can heat B and B can heat C and C can heat A. In non-equilibrium situations, cycles of flow are possible. It is the special and uniquely distinguishing characteristic of internal thermodynamic equilibrium that this possibility is not open to thermodynamic systems (as distinguished amongst physical systems) which are in their own states of internal thermodynamic equilibrium; this is the reason why the zeroth law of thermodynamics needs explicit statement. That is to say, the relation 'is not colder than' between general non-equilibrium physical systems is not transitive, whereas, in contrast, the relation 'has no lower a temperature than' between thermodynamic systems in their own states of internal thermodynamic equilibrium is transitive. It follows from this that the relation 'is in thermal equilibrium with' is transitive, which is one way of stating the zeroth law.
 Just as temperature may be undefined for a sufficiently inhomogeneous system, so also may entropy be undefined for a system not in its own state of internal thermodynamic equilibrium. For example, 'the temperature of the Solar System' is not a defined quantity. Likewise, 'the entropy of the Solar System' is not defined in classical thermodynamics. It has not been possible to define non-equilibrium entropy, as a simple number for a whole system, in a clearly satisfactory way.
 
-
 ## Classical thermodynamics
-
 
 ### Heat and enthalpy
 
@@ -783,7 +769,6 @@ Consequently,
 
 In this case, the integral specifies a quantity of heat transferred at constant pressure.
 
-
 ### Heat and entropy
 
 In 1856, Rudolf Clausius, referring to closed systems, in which transfers of matter do not occur, defined the second fundamental theorem (the second law of thermodynamics) in the mechanical theory of heat (thermodynamics): "if two transformations which, without necessitating any other permanent change, can mutually replace one another, be called equivalent, then the generations of the quantity of heat Q from work at the temperature T, has the equivalence-value:"
@@ -1397,5 +1382,3 @@ The second law for a natural process asserts that
       
     
     {\displaystyle \mathrm {d} S_{\mathrm {i} }>0.}
-  
-

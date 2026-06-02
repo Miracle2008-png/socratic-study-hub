@@ -4,14 +4,6 @@ Software architecture is the set of structures needed to reason about a software
 The architecture of a software system is a metaphor, analogous to the architecture of a building. It functions as the blueprints for the system and the development project, which project management can later use to extrapolate the tasks necessary to be executed by the teams and people involved.
 Software architecture is about making fundamental structural choices that are costly to change once implemented. Software architecture choices include specific structural options from possibilities in the design of the software. There are two fundamental laws in software architecture:
 
-Everything is a trade-off
-"Why is more important than how"
-"Architectural Kata" is a teamwork which can be used to produce an architectural solution that fits the needs.  Each team extracts and prioritizes architectural characteristics (aka non functional requirements) then models the components accordingly. The team can use C4 Model which is a flexible method to model the architecture just enough. Note that synchronous communication between architectural components, entangles them and they must share the same architectural characteristics.
-Documenting software architecture facilitates communication between stakeholders, captures early decisions about the high-level design, and allows the reuse of design components between projects.
-Software architecture design is commonly juxtaposed with software application design. Whilst application design focuses on the design of the processes and data supporting the required functionality (the services offered by the system), software architecture design focuses on designing the infrastructure within which application functionality can be realized and executed such that the functionality is provided in a way which meets the system's non-functional requirements.
-Software architectures can be categorized into two main types: monolith and distributed architecture, each having its own subcategories.
-Software architecture tends to become more complex over time. Software architects should use "fitness functions" to continuously keep the architecture in check.
-
 ## Scope
 
 Opinions vary as to the scope of software architectures:

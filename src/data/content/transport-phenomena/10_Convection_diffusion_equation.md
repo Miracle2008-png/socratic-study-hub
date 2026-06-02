@@ -2,7 +2,6 @@
 
 The convection–diffusion equation is a parabolic partial differential equation that combines the diffusion and convection (advection) equations. It describes physical phenomena where particles, energy, or other physical quantities are transferred inside a physical system due to two processes: diffusion and convection. Depending on context, the same equation can be called the advection–diffusion equation, drift–diffusion equation, or (generic) scalar transport equation.
 
-
 ## Equation
 
 The general equation in conservative form is
@@ -55,7 +54,6 @@ R describes sources or sinks of the quantity c, i.e. the creation or destruction
 ∇ represents gradient and ∇ ⋅ represents divergence. In this equation, ∇c represents concentration gradient.
 In general, D, v, and R may vary with space and time. In cases in which they depend on concentration as well, the equation becomes nonlinear, giving rise to many distinctive mixing phenomena such as Rayleigh–Bénard convection when v depends on temperature in the heat transfer formulation and reaction–diffusion pattern formation when R depends on concentration in the mass transfer formulation.
 Often there are several quantities, each with its own convection–diffusion equation, where the destruction of one quantity entails the creation of another. For example, when methane burns, it involves not only the destruction of methane and oxygen but also the creation of carbon dioxide and water vapor. Therefore, while each of these chemicals has its own convection–diffusion equation, they are coupled together and must be solved as a system of differential equations.
-
 
 ### Derivation
 The convection–diffusion equation can be derived in a straightforward way from the continuity equation, which states that the rate of change for a scalar quantity in a differential control volume is given by flow and diffusion into and out of that part of the system along with any generation or consumption inside the control volume:
@@ -219,7 +217,6 @@ Plugging into the continuity equation:
     
     {\displaystyle {\frac {\partial c}{\partial t}}+\nabla \cdot \left(-D\nabla c+\mathbf {v} c\right)=R.}
   
-
 
 ### Common simplifications
 In a common situation, the diffusion coefficient is constant, there are no sources or sinks, and the velocity field describes an incompressible flow (i.e., it has zero divergence). Then the formula simplifies to:
@@ -435,7 +432,6 @@ where
     {\displaystyle f}
   
  is any differentiable scalar function. This is the basis of temperature measurement for near Bose–Einstein condensate via time of flight method.
-
 
 ### Stationary version
 The stationary convection–diffusion equation describes the steady-state behavior of a convection–diffusion system. In a steady state, ⁠∂c/∂t⁠ = 0, so the equation to solve becomes the second order equation:
@@ -735,7 +731,6 @@ On the other hand, in the positions x where D=0, the first-order diffusion term 
     {\displaystyle c(x)={\frac {1}{v(x)}}\int _{x}R(x')\,dx'}
   
 
-
 ## Velocity in response to a force
 In some cases, the average velocity field v exists because of a force; for example, the equation might describe the flow of ions dissolved in a liquid, with an electric field pulling the ions in some direction (as in gel electrophoresis). In this situation, it is usually called the drift–diffusion equation or the Smoluchowski equation, after Marian Smoluchowski who described it in 1915 (not to be confused with the Einstein–Smoluchowski relation or Smoluchowski coagulation equation).
 Typically, the average velocity is directly proportional to the applied force, giving the equation:
@@ -791,7 +786,6 @@ Typically, the average velocity is directly proportional to the applied force, g
   
 
 where F is the force, and ζ characterizes the friction or viscous drag. (The inverse ζ−1 is called mobility.)
-
 
 ### Derivation of Einstein relation
 
@@ -854,7 +848,6 @@ When the force is associated with a potential energy F = −∇U (see conservati
     {\displaystyle D\zeta =k_{\mathrm {B} }T.}
   
 
-
 ## Similar equations in other contexts
 The convection–diffusion equation is a relatively simple equation describing flows, or alternatively, describing a stochastically-changing system. Therefore, the same or similar equation arises in many contexts unrelated to flows through space.
 
@@ -914,11 +907,9 @@ It is closely related to the Navier–Stokes equations, because the flow of mome
 
 where j is the momentum of the fluid (per unit volume) at each point (equal to the density ρ multiplied by the flow velocity u), μ is viscosity, P is fluid pressure, and f is any other body force such as gravity. In this equation, the term on the left-hand side describes the change in momentum at a given point; the first term on the right describes the diffusion of momentum by viscosity; the second term on the right describes the advective flow of momentum; and the last two terms on the right describes the external and internal forces which can act as sources or sinks of momentum.
 
-
 ### In probability theory
 The convection–diffusion equation (with R = 0) can be viewed as the Fokker–Planck equation, corresponding to random motion with diffusivity D and bias v. For example, the equation can describe the Brownian motion of a single particle, where the variable c describes the probability distribution for the particle to be in a given position at a given time. The reason the equation can be used that way is because there is no mathematical difference between the probability distribution of a single particle, and the concentration profile of a collection of infinitely many particles (as long as the particles do not interact with each other).
 The Langevin equation describes advection, diffusion, and other phenomena in an explicitly stochastic way. One of the simplest forms of the Langevin equation is when its "noise term" is Gaussian; in this case, the Langevin equation is exactly equivalent to the convection–diffusion equation. However, the Langevin equation is more general.
-
 
 ### In semiconductor physics
 
@@ -1390,4 +1381,3 @@ where kB is the Boltzmann constant and T is absolute temperature. The drift curr
 
 This equation can be solved together with Poisson's equation numerically.
 An example of results of solving the drift diffusion equation is shown on the right. When light shines on the center of semiconductor, carriers are generated in the middle and diffuse towards two ends. The drift–diffusion equation is solved in this structure and electron density distribution is displayed in the figure. One can see the gradient of carrier from center towards two ends.
-

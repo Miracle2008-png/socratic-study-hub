@@ -2,9 +2,7 @@
 
 The MIT Department of Electrical Engineering and Computer Science (EECS) is an engineering department of the Massachusetts Institute of Technology in Cambridge, Massachusetts. It offers degrees of Master of Science, Master of Engineering, Doctor of Philosophy, and Doctor of Science.
 
-
 ## Current faculty
-
 
 ### Professors
 Silvio Micali
@@ -31,7 +29,6 @@ Gerald J. Sussman (S.B. 1968, Ph.D. 1973, both in Mathematics)
 Patrick H. Winston
 Regina Barzilay (website)
 
-
 ### Associate professors
 Saman P. Amarasinghe
 Krste Asanovic
@@ -44,7 +41,6 @@ Karl K. Berggren
 Elfar Adalsteinsson
 Tomás Palacios
 
-
 ### Professors emeriti
 Michael Anthans
 Abraham Bers
@@ -53,7 +49,6 @@ James D. Bruce
 Fernando J. Corbató
 Shaoul Ezekiel
 Robert Fano (S.B. 1941, Sc.D. 1947)
-
 
 ## Former faculty
 Leo Beranek
@@ -69,6 +64,4 @@ John McCarthy
 Marvin Minsky
 Julius Stratton (S.B. 1923, S.M. 1926)
 
-
 ## Notable alumni
-

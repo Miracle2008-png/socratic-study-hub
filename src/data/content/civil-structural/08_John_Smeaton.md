@@ -2,13 +2,11 @@
 
 John Smeaton (8 June 1724 – 28 October 1792) was an English civil engineer responsible for the design of bridges, canals, harbours and lighthouses. He was also a capable mechanical engineer and an eminent scholar, who introduced various scientific methodologies into engineering. Smeaton was the first self-proclaimed "civil engineer", and is often regarded as the "father of civil engineering". He pioneered the use of hydraulic lime in concrete, using pebbles and powdered brick as aggregate. Smeaton was associated with the Lunar Society.
 
-
 ## Law and physics
 Smeaton was born in Austhorpe, Leeds, England. After studying at Leeds Grammar School he joined his father's law firm, but left to become a mathematical instrument maker (working with Henry Hindley), developing, among other instruments, a pyrometer to study material expansion.  In 1750, his premises were in the Great Turnstile in Holborn.
 
 He was elected a Fellow of the Royal Society in 1753 and in 1759 won the Copley Medal for his research into the mechanics of waterwheels and windmills. His 1759 paper "An Experimental Enquiry Concerning the Natural Powers of Water and Wind to Turn Mills and Other Machines Depending on Circular Motion" addressed the relationship between pressure and velocity for objects moving in air (Smeaton noted that the table doing so was actually contributed by "my friend Mr Rouse" "an ingenious gentleman of Harborough, Leicestershire" and calculated on the basis of Rouse's experiments), and his concepts were subsequently developed to devise the 'Smeaton Coefficient'. Smeaton's water wheel experiments were conducted on a small scale model with which he tested various configurations over a period of seven years. The resultant increase in efficiency in water power contributed to the Industrial Revolution.
 Over the period 1759–1782 he performed a series of further experiments and measurements on water wheels that led him to support and champion the vis viva theory of German Gottfried Leibniz, an early formulation of conservation of energy. This led him into conflict with members of the academic establishment who rejected Leibniz's theory, believing it inconsistent with Sir Isaac Newton's conservation of momentum.
-
 
 ## Smeaton coefficient
 In his 1759 paper "An Experimental Enquiry Concerning the Natural Powers of Water and Wind to Turn Mills and Other Machines Depending on Circular Motion" Smeaton developed the concepts and data which became the basis for the Smeaton coefficient, the lift equation used by the Wright brothers. It has the form:
@@ -96,7 +94,6 @@ where:
  is the lift coefficient (the lift relative to the drag of a plate of the same area)
 The Wright brothers determined with wind tunnels that the Smeaton coefficient value of 0.005 was incorrect and should have been 0.0033. In modern analysis, the lift coefficient is normalised by the dynamic pressure instead of the Smeaton coefficient.
 
-
 ## Civil engineering
 
 Smeaton is important in the history, rediscovery of, and development of modern cement, identifying the compositional requirements needed to obtain "hydraulicity" in lime; work which led ultimately to the invention of Portland cement. Portland cement led to the re-emergence of concrete as a modern building material, largely due to Smeaton's influence.
@@ -128,11 +125,9 @@ St Austell's Charlestown harbour in Cornwall (1792)
 
 Smeaton is considered to be the first expert witness to appear in an English court. Because of his expertise in engineering, he was called to testify in court for a case related to the silting-up of the harbour at Wells-next-the-Sea in Norfolk in 1782. He also acted as a consultant on the disastrous 63-year-long New Harbour at Rye, designed to combat the silting of the port of Winchelsea. The project is now known informally as "Smeaton's Harbour", but despite the name his involvement was limited and occurred more than 30 years after work on the harbour commenced. It closed in 1839.
 
-
 ## Mechanical engineer
 Employing his skills as a mechanical engineer, he devised a water engine for the Royal Botanic Gardens at Kew in 1761 and a watermill at Alston, Cumbria in 1767 (he is credited by some with inventing the cast-iron axle shaft for water wheels). In 1782 he built the Chimney Mill at Spital Tongues in Newcastle upon Tyne, the first 5-sailed smock mill in Britain. He also improved Thomas Newcomen's atmospheric engine, erecting one at Chacewater mine, Wheal Busy, in Cornwall in 1775 which was both highly efficient and the most powerful at the time.
 In 1789 Smeaton applied an idea by Denis Papin, by using a force pump to maintain the pressure and fresh air inside a diving bell. This bell, built for the Hexham Bridge project, was not intended for underwater work, but in 1790 the design was updated to enable it to be used underwater on the breakwater at Ramsgate Harbour. Smeaton is also credited with explaining the fundamental differences and benefits of overshot versus undershot water wheels. Smeaton experimented with the Newcomen steam engine and made marked improvements around the time James Watt was building his first engines (c. late 1770s).
-
 
 ## Legacy
 
@@ -145,7 +140,6 @@ Smeaton is one of six civil engineers depicted in the Stephenson stained glass w
 
 John Smeaton Academy, a secondary school in the suburbs of Leeds adjacent to the Pendas Fields estate near Austhorpe, is named after Smeaton. He is also commemorated at the University of Plymouth, where the Mathematics and Technology Department is housed in a building named after him. A viaduct in the final stage of the Leeds Inner Ring Road, opened in 2008, was named after him.
 Smeaton is mentioned in the song "I Predict a Riot" (as a symbol of a more dignified and peaceful epoch in Leeds history; and in reference to a Junior School House at Leeds Grammar School, which lead singer Ricky Wilson attended) by the indie rock band Kaiser Chiefs, who are natives of Leeds.
-
 
 ## Works
 Experimental enquiry concerning the natural powers of wind and water to turn mills and other machines depending on a circular motion. Paris: Louis Courcier. 1810.
@@ -168,4 +162,3 @@ New Fundamental Experiments upon the Collision of Bodies. By Mr. John Smeaton, F
 Observations on the Graduation of Astronomical Instruments; With an Explanation of the Method Invented by the Late Mr. Henry Hindley, of York, Clock-Maker, to Divide Circles into any Given Number of Parts. By Mr. John Smeaton, F. R. S.; Communicated by Henry Cavendish, Esq. F. R. S. and S. A., Philosophical Transactions of the Royal Society of London, Series I, vol 76 (1786), p. 1-47
 Account of an Observation of the Right Ascension and Declination of Mercury out of the Meridian, Near His Greatest Elongation, Sept. 1786, Made by Mr. John Smeaton, F. R. S. with an Equatorial Micrometer, of His Own Invention and Workmanship; Accompanied with an Investigation of a Method of Allowing for Refraction in Such Kind of Observations; Communicated to the Rev. Nevil Maskelyne, D. D. F. R. S. and Astronomer Royal, and by Him to the Royal Society, Philosophical Transactions of the Royal Society of London, Series I, vol 77 (1787), p. 318-343
 Description of an Improvement in the Application of the Quadrant of Altitude to a Celestial Globe, for the Resolution of Problems Dependant on Azimuth and Altitude. By Mr. John Smeaton, F. R. S.; Communicated by Mr. William Wales, F. R. S., Philosophical Transactions of the Royal Society of London, Series I, vol 79 (1789), p. 1-6
-

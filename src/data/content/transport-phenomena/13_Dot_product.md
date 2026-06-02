@@ -4,7 +4,6 @@ In mathematics, the dot product is an algebraic operation that takes two equal-l
 Algebraically, the dot product is the sum of the products of the corresponding entries of the two sequences of numbers. Geometrically, the scalar product of two vectors is the product of their lengths and the cosine of the angle between them. These definitions are equivalent when using Cartesian coordinates. In modern geometry, Euclidean spaces are often defined by using vector spaces. In this case, the scalar product is used for defining lengths (the length of a vector is the square root of the scalar product of the vector by itself) and angles (the cosine of the angle between two vectors is the quotient of their scalar product by the product of their lengths).
 The name "dot product" is derived from the dot operator " ⋅ " that is often used to designate this operation; the alternative name "scalar product" emphasizes that the result is a scalar, rather than a vector (as with the vector product in three-dimensional space).
 
-
 ## Definition
 The dot product may be defined algebraically or geometrically. The geometric definition is based on the notions of angle and distance (magnitude) of vectors. The equivalence of these two definitions relies on having a Cartesian coordinate system for Euclidean space.
 In modern presentations of Euclidean geometry, the points of space are defined in terms of their Cartesian coordinates, and Euclidean space itself is commonly identified with the real coordinate space 
@@ -24,7 +23,6 @@ In modern presentations of Euclidean geometry, the points of space are defined i
     {\displaystyle \mathbf {R} ^{n}}
   
 . In such a presentation, the notions of length and angle are defined by means of the dot product. The length of a vector is defined as the square root of the dot product of the vector by itself, and the cosine of the (non oriented) angle between two vectors of length one is defined as their dot product. So the equivalence of the two definitions of the dot product is a part of the equivalence of the classical and the modern formulations of Euclidean geometry.
-
 
 ### Coordinate definition
 The dot product of two vectors 
@@ -523,7 +521,6 @@ Expressing the above example in this way, a 1 × 3 matrix (row vector) is multip
     {\displaystyle {\begin{bmatrix}1&3&-5\end{bmatrix}}{\begin{bmatrix}4\\-2\\-1\end{bmatrix}}=3\,.}
   
 
-
 ### Geometric definition
 
 In Euclidean space, a Euclidean vector is a geometric object that possesses both a magnitude and a direction. A vector can be pictured as an arrow. Its magnitude is its length, and its direction is the direction to which the arrow points. The magnitude of a vector 
@@ -848,7 +845,6 @@ which gives
   
 
 the formula for the Euclidean length of the vector.
-
 
 ### Scalar projection and first properties
 
@@ -1180,7 +1176,6 @@ These properties may be summarized by saying that the dot product is a bilinear 
     {\displaystyle \mathbf {a} =\mathbf {0} }
   
 , the zero vector.
-
 
 ### Equivalence of the definitions
 If 
@@ -1729,7 +1724,6 @@ Now applying the distributivity of the geometric version of the dot product give
   
 
 which is precisely the algebraic definition of the dot product. So the geometric dot product equals the algebraic dot product.
-
 
 ## Properties
 The dot product fulfills the following properties if 
@@ -2451,7 +2445,6 @@ If
     {\displaystyle (\mathbf {a} \cdot \mathbf {b} )'=\mathbf {a} '\cdot \mathbf {b} +\mathbf {a} \cdot \mathbf {b} '.}
   
 
-
 ### Application to the law of cosines
 
 Given two vectors 
@@ -2884,7 +2877,6 @@ Given two vectors
 
 which is the law of cosines.
 
-
 ## Triple product
 
 There are two ternary operations involving dot product and cross product.
@@ -2995,7 +2987,6 @@ The vector triple product is defined by
 
 This identity, also known as Lagrange's formula, may be remembered as "ACB minus ABC", keeping in mind which vectors are dotted together. This formula has applications in simplifying vector calculations in physics.
 
-
 ## Physics
 In physics, the dot product takes two vectors and returns a scalar quantity. It is also known as the "scalar product". The dot product of two vectors can be defined as the product of the magnitudes of the two vectors and the cosine of the angle between the two vectors. Thus, 
   
@@ -3041,9 +3032,7 @@ For example:
 Mechanical work is the dot product of force and displacement vectors,
 Power is the dot product of force and velocity.
 
-
 ## Generalizations
-
 
 ### Complex vectors
 For vectors with complex entries, using the given definition of the dot product would lead to quite different properties. For instance, the dot product of a vector with itself could be zero without the vector being the zero vector (e.g. this would happen with the vector 
@@ -3325,7 +3314,6 @@ The self dot product of a complex vector
   
 , after the Euclidean norm; it is a vector generalization of the absolute square of a complex scalar (see also: Squared Euclidean distance).
 
-
 ### Inner product
 
 The inner product generalizes the dot product to abstract vector spaces over a field of scalars, being either the field of real numbers 
@@ -3374,7 +3362,6 @@ The inner product generalizes the dot product to abstract vector spaces over a f
   
 .
 The inner product of two vectors over the field of complex numbers is, in general, a complex number, and is sesquilinear instead of bilinear. An inner product space is a normed vector space, and the inner product of a vector with itself is real and positive-definite.
-
 
 ### Functions
 The dot product is defined for vectors that have a finite number of entries. Thus these vectors can be regarded as discrete functions: a length-
@@ -3660,7 +3647,6 @@ Generalized further to complex continuous functions
     {\displaystyle \left\langle \psi ,\chi \right\rangle =\int _{K}\psi (z){\overline {\chi (z)}}\,{\text{d}}z.}
   
 
-
 ### Weight function
 Inner products can have a weight function (i.e., a function which weights each term of the inner product with a value). Explicitly, the inner product of functions 
   
@@ -3749,7 +3735,6 @@ Inner products can have a weight function (i.e., a function which weights each t
     
     {\displaystyle \left\langle u,v\right\rangle _{r}=\int _{a}^{b}r(x)u(x)v(x)\,dx.}
   
-
 
 ### Dyadics and matrices
 A double-dot product for matrices is the Frobenius inner product, which is analogous to the dot product on vectors. It is defined as the sum of the products of the corresponding components of two matrices 
@@ -3979,7 +3964,6 @@ And for real matrices,
 
 Writing a matrix as a dyadic, we can define a different double-dot product (see Dyadics § Product of dyadic and dyadic) however it is not an inner product.
 
-
 ### Tensors
 The inner product between a tensor of order 
   
@@ -4014,13 +3998,10 @@ The inner product between a tensor of order
   
 , see Tensor contraction for details.
 
-
 ## Computation
-
 
 ### Algorithms
 The straightforward algorithm for calculating a floating-point dot product of vectors can suffer from catastrophic cancellation. To avoid this, approaches such as the Kahan summation algorithm are used.
-
 
 ### Libraries
 A dot product function is included in:
@@ -4033,4 +4014,3 @@ Matlab as  A' * B  or  conj(transpose(A)) * B  or  sum(conj(A) .* B)  or  dot(A,
 Python (package NumPy) as  np.dot(A, B)  or  np.inner(A, B)
 GNU Octave as  sum(conj(X) .* Y, dim), and similar code as Matlab
 Intel oneAPI Math Kernel Library real p?dot dot  = sub(x)'*sub(y); complex p?dotc dotc  = conjg(sub(x)')*sub(y)
-

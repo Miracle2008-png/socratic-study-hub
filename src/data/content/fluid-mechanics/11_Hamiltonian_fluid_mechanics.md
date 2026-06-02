@@ -2,7 +2,6 @@
 
 Hamiltonian fluid mechanics is the application of Hamiltonian methods to fluid mechanics. Note that this formalism only applies to non-dissipative fluids.
 
-
 ## Irrotational barotropic flow
 Take the simple example of a barotropic, inviscid vorticity-free fluid.
 Then, the conjugate fields are the mass density field ρ and the velocity potential φ. The Poisson bracket is given by
@@ -432,4 +431,3 @@ after exploiting the fact that the vorticity is zero:
   
 
 As fluid dynamics is described by non-canonical dynamics, which possess an infinite amount of Casimir invariants, an alternative formulation of Hamiltonian formulation of fluid dynamics can be introduced through the use of Nambu mechanics
-

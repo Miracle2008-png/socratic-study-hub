@@ -5,42 +5,6 @@ The noun geodesic and the adjective geodetic come from geodesy, the science of m
 In a Riemannian manifold or submanifold, geodesics are characterised by the property of having vanishing geodesic curvature. More generally, in the presence of an affine connection, a geodesic is defined to be a curve whose tangent vectors remain parallel if they are transported along it. Applying this to the Levi-Civita connection of a Riemannian metric recovers the previous notion.
 Geodesics are of particular importance in general relativity.  Timelike geodesics in general relativity describe the motion of free falling test particles.
 
-
-## Introduction
-A locally shortest path between two given points in a curved space, assumed to be a Riemannian manifold, can be defined by using the equation for the length of a curve (a function f from an open interval of R to the space), and then minimizing this length between the points using the calculus of variations. This has some minor technical problems because there is an infinite-dimensional space of different ways to parameterize the shortest path. It is simpler to restrict the set of curves to those that are parameterized "with constant speed" 1, meaning that  the distance from f(s) to f(t) along the curve equals |s−t|. Equivalently, a different quantity may be used, termed the energy of the curve; minimizing the energy leads to the same equations for a geodesic (here "constant velocity" is a consequence of minimization). Intuitively, one can understand this second formulation by noting that an elastic band stretched between two points will contract its width, and in so doing will minimize its energy.  The resulting shape of the band is a geodesic.
-It is possible that several different curves between two points minimize the distance, as is the case for two diametrically opposite points on a sphere. In such a case, any of these curves is a geodesic.
-A contiguous segment of a geodesic is again a geodesic.
-In general, geodesics are not the same as "shortest curves" between two points, though the two concepts are closely related. The difference is that geodesics are only locally the shortest distance between points, and are parameterized with "constant speed". Going the "long way round" on a great circle between two points on a sphere is a geodesic but not the shortest path between the points. The map 
-  
-    
-      
-        t
-        →
-        
-          t
-          
-            2
-          
-        
-      
-    
-    {\displaystyle t\to t^{2}}
-  
- from the unit interval on the real number line to itself gives the shortest path between 0 and 1, but is not a geodesic because the velocity of the corresponding motion of a point is not constant.
-Geodesics are commonly seen in the study of Riemannian geometry and more generally metric geometry. In general relativity, geodesics in spacetime describe the motion of point particles under the influence of gravity alone. In particular, the path taken by a falling rock, an orbiting satellite, or the shape of a planetary orbit are all geodesics in curved spacetime. More generally, the topic of sub-Riemannian geometry deals with the paths that objects may take when they are not free, and their movement is constrained in various ways.
-This article presents the mathematical formalism involved in defining, finding, and proving the existence of geodesics, in the case of Riemannian manifolds. The article Levi-Civita connection discusses the more general case of a pseudo-Riemannian manifold and geodesic (general relativity) discusses the special case of general relativity in greater detail.
-
-
-### Examples
-
-The most familiar examples are the straight lines in Euclidean geometry. On a  sphere, the images of geodesics are the  great circles. The shortest path from point A to point B on a sphere is given by the shorter arc of the great circle passing through A and B. If A and B are antipodal points, then there are infinitely many shortest paths between them.  Geodesics on an ellipsoid behave in a more complicated way than on a sphere; in particular, they are not closed in general (see figure).
-
-
-### Triangles
-
-A geodesic triangle is formed by the geodesics joining each pair out of three points on a given surface. On the sphere, the geodesics are great circle arcs, forming a spherical triangle.
-
-
 ## Metric geometry
 In metric geometry, a geodesic is a curve which is everywhere locally a distance minimizer. More precisely, a curve γ : I → M from an interval I of the reals to the metric space M is a geodesic if there is a constant v ≥ 0 such that for any t ∈ I there is a neighborhood J of t in I such that for any t1, t2 ∈ J we have
 
@@ -152,7 +116,6 @@ This generalizes the notion of geodesic for Riemannian manifolds. However, in me
 If the last equality is satisfied for all t1, t2 ∈ I, the geodesic is called a minimizing geodesic or shortest path.
 In general, a metric space may have no geodesics, except constant curves. At the other extreme, any two points in a length metric space are joined by a minimizing sequence of rectifiable paths, although this minimizing sequence need not converge to a geodesic. The metric Hopf-Rinow theorem provides situations where a length space is automatically a geodesic space.
 Common examples of geodesic metric spaces that are often not manifolds include metric graphs, (locally compact) metric polyhedral complexes, infinite-dimensional pre-Hilbert spaces, and real trees.
-
 
 ## Riemannian geometry
 In a Riemannian manifold 
@@ -727,7 +690,6 @@ where
   
  are the Christoffel symbols of the metric.  This is the geodesic equation, discussed below.
 
-
 ### Calculus of variations
 Techniques of the classical calculus of variations can be applied to examine the energy functional 
   
@@ -863,7 +825,6 @@ In an appropriate sense, zeros of the second variation along a geodesic
   
  arise along Jacobi fields.  Jacobi fields are thus regarded as variations through geodesics.
 By applying variational techniques from classical mechanics, one can also regard geodesics as Hamiltonian flows.  They are solutions of the associated Hamilton equations, with (pseudo-)Riemannian metric taken as Hamiltonian.
-
 
 ## Affine geodesics
 
@@ -1148,7 +1109,6 @@ where
   
  means that the acceleration vector of the curve has no components in the direction of the surface (and therefore it is perpendicular to the tangent plane of the surface at each point of the curve). So, the motion is completely determined by the bending of the surface. This is also the idea of general relativity where particles move on geodesics and the bending is caused by gravity.
 
-
 ### Existence and uniqueness
 The local existence and uniqueness theorem for geodesics states that geodesics on a smooth manifold with an affine connection exist, and are unique.  More precisely:
 
@@ -1205,7 +1165,6 @@ For any point p in M and for any vector V in TpM (the tangent space to M at p) t
 where I is a maximal open interval in R containing 0.
 The proof of this theorem follows from the theory of  ordinary differential equations, by noticing that the geodesic equation is a second-order ODE. Existence and uniqueness then follow from the Picard–Lindelöf theorem for the solutions of ODEs with prescribed initial conditions. γ depends smoothly on both p and V.
 In general, I may not be all of R as for example for an open disc in R2. Any γ extends to all of ℝ if and only if M is geodesically complete.
-
 
 ### Geodesic flow
 Geodesic flow is a local R-action on the tangent bundle TM of a manifold M defined in the following way
@@ -1374,7 +1333,6 @@ In particular, when V is a unit vector,
     {\displaystyle \gamma _{V}}
   
  remains unit speed throughout, so the geodesic flow is tangent to the unit tangent bundle.  Liouville's theorem implies invariance of a kinematic measure on the unit tangent bundle.
-
 
 ### Geodesic spray
 
@@ -2040,7 +1998,6 @@ Equivariance under positive rescalings is necessary to ensure that vector transp
   
  still produces the same vector transport. Without equivariance under positive rescalings, vector transport along a directed path depends on the specific parameterization.
 
-
 ### Affine and projective geodesics
 Equation (1) is invariant under affine reparameterizations; that is, parameterizations of the form
 
@@ -2153,10 +2110,8 @@ is skew-symmetric, then
 , but with vanishing torsion.
 Geodesics without a particular parameterization are described by a projective connection.
 
-
 ## Computational methods
 Efficient solvers for the minimal geodesic problem on surfaces have been proposed by Mitchell, Kimmel, Crane, and others.
-
 
 ## Ribbon test
 
@@ -2327,46 +2282,3 @@ Mathematically the ribbon test can be formulated as finding a mapping
     {\displaystyle S}
   
 .
-
-
-## Examples of applications
-
-While geometric in nature, the idea of a shortest path is so general that it easily finds extensive use in nearly all sciences, and in some other disciplines as well.
-
-
-### Topology and geometric group theory
-In a surface with negative Euler characteristic, any (free) homotopy class determines a unique (closed) geodesic for a hyperbolic metric. These geodesics contribute significantly to the geometric understanding of the action of mapping classes.
-Geodesic metric spaces and length spaces behave particularly well with isometric group actions (Švarc-Milnor lemma, Hopf-Rinow theorem, Morse lemma...). They are often an adequate framework for generalizing results from Riemannian geometry to constructions that reflect the geometry of a group. For instance, Gromov-hyperbolicity can be understood in terms of geodesic triangle thinness, and CAT(0) can be stated in terms of angles between geodesics.
-
-
-### Probability, statistics and machine learning
-Optimal transport can be understood as the problem of finding geodesic paths in spaces of measures.
-In information geometry, divergences such as the Kullback-Leibler divergence play a role analogous to that of a Riemannian metric, allowing analogies for connections and geodesics.
-
-
-### Physics
-In classical mechanics, trajectories minimize an energy according to the Hamilton-Jacobi equation, which can be regarded as a similar idea to geodesics. In some special cases, the two notions actually coincide.
-Relativity theory models spacetime as a Lorentzian manifold, where light follows Lorentzian geodesics.
-
-
-### Chemistry
-In theoretical and computational chemistry, the intrinsic reaction coordinate of a potential energy surface (PES) can be calculated as a geodesic between local minima (intermediates) and saddle points (transition states).
-In molecular dynamics, protein conformations can be treated as points on a curved manifold, wherein geodesics represent the shortest, least-distorting paths between structures and can help approximate observed transitions and intramolecular interactions.
-
-
-### Biology
-The study of how the nervous system optimizes muscular movement may be approached by endowing a configuration space of the body with a Riemannian metric that measures the effort, so that the problem can be stated in terms of geodesy.
-Geodesic distance is often used to measure the length of paths for signal propagation in neurons.
-The structures of geodesics in large molecules plays a role in the study of protein folds.
-The structure of compound eyes, many parts of which are being held together and supported by a geodesic dome grid on the outside surface of the eye.
-
-
-### Engineering
-Geodesics serve as the basis to calculate:
-
-geodesic airframes; see geodesic airframe or geodetic airframe
-horizontal distances on or near Earth; see Earth geodesics
-mapping images on surfaces, for rendering; see UV mapping
-robot motion planning (e.g., when painting car parts); see Shortest path problem
-geodesic shortest path (GSP) correction over Poisson surface reconstruction (e.g. in digital dentistry); without GSP reconstruction often results in self-intersections within the surface
-

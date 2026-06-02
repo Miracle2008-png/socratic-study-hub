@@ -191,62 +191,6 @@ $$ v={\frac {\mu }{\rho }} $$
 
 Rheometers are instruments used to characterize the rheological properties of materials, typically fluids that are melts or solution. These instruments impose a specific stress field or deformation to the fluid, and monitor the resultant deformation or stress. Instruments can be run in steady flow or oscillatory flow, in both shear and extension.
 
-## Applications
-
-Rheology has applications in materials science, engineering, geophysics, physiology, human biology and pharmaceutics. Materials science is utilized in the production of many industrially important substances, such as cement, paint, and chocolate, which have complex flow characteristics. In addition, plasticity theory has been similarly important for the design of metal forming processes. The science of rheology and the characterization of viscoelastic properties in the production and use of polymeric materials has been critical for the production of many products for use in both the industrial and military sectors.
-Study of flow properties of liquids is important for pharmacists working in the manufacture of several dosage forms, such as simple liquids, ointments, creams, pastes etc. The flow behavior of liquids under applied stress is of great relevance in the field of pharmacy. Flow properties are used as important quality control tools to maintain the superiority of the product and reduce batch to batch variations.
-
-### Materials science
-
-#### Polymers
-
-Examples may be given to illustrate the potential applications of these principles to practical problems in the processing and use of rubbers, plastics, and fibers. Polymers constitute the basic materials of the rubber and plastic industries and are of vital importance to the textile, petroleum, automobile, paper, and pharmaceutical industries. Their viscoelastic properties determine the mechanical performance of the final products of these industries, and also the success of processing methods at intermediate stages of production.
-In viscoelastic materials, such as most polymers and plastics, the presence of liquid-like behaviour depends on the properties of  and so varies with rate of applied load, i.e., how quickly a force is applied. The silicone toy 'Silly Putty' behaves quite differently depending on the time rate of applying a force. Pull on it slowly and it exhibits continuous flow, similar to that evidenced in a highly viscous liquid. Alternatively, when hit hard and directly, it shatters like a silicate glass.
-In addition, conventional rubber undergoes a glass transition (often called a rubber-glass transition). E.g. The Space Shuttle Challenger disaster was caused by rubber O-rings that were being used well below their glass transition temperature on an unusually cold Florida morning, and thus could not flex adequately to form proper seals between sections of the two solid-fuel rocket boosters.
-
-#### Biopolymers
-
-#### Sol-gel
-
-With the viscosity of a sol adjusted into a proper range, both optical quality glass fiber and refractory ceramic fiber can be drawn which are used for fiber-optic sensors and thermal insulation, respectively. The mechanisms of hydrolysis and condensation, and the rheological factors that bias the structure toward linear or branched structures are the most critical issues of sol-gel science and technology.
-
-### Geophysics
-
-The scientific discipline of geophysics includes study of the flow of molten lava and study of debris flows (fluid mudslides). This disciplinary branch also deals with solid Earth materials which only exhibit flow over extended time-scales. Those that display viscous behaviour are known as rheids. For example, granite can flow plastically with a negligible yield stress at room temperatures (i.e. a viscous flow). Long-term creep experiments (~10 years) indicate that the viscosity of granite and glass under ambient conditions are on the order of 1020 poises.
-
-### Physiology
-
-Physiology includes the study of many bodily fluids that have complex structure and composition, and thus exhibit a wide range of viscoelastic flow characteristics.  In particular there is a specialist study of blood flow called hemorheology. This is the study of flow properties of blood and its elements (plasma and formed elements, including red blood cells, white blood cells and platelets). Blood viscosity is determined by plasma viscosity, hematocrit (volume fraction of red blood cell, which constitute 99.9% of the cellular elements) and mechanical behaviour of red blood cells. Therefore, red blood cell mechanics is the major determinant of flow properties of blood.(The ocular Vitreous humor is subject to rheologic observations, particularly during studies of age-related vitreous liquefaction, or synaeresis.)
-The leading characteristic for hemorheology has been shear thinning in steady shear flow. Other non-Newtonian rheological characteristics that blood can demonstrate includes pseudoplasticity, viscoelasticity, and thixotropy.
-
-#### Red blood cell aggregation
-
-There are two current major hypotheses to explain blood flow predictions and shear thinning responses. The two models also attempt to demonstrate the drive for reversible red blood cell aggregation, although the mechanism is still being debated. There is a direct effect of red blood cell aggregation on blood viscosity and circulation. The foundation of hemorheology can also provide information for modeling of other biofluids. The bridging or "cross-bridging" hypothesis suggests that macromolecules physically crosslink adjacent red blood cells into rouleaux structures. This occurs through adsorption of macromolecules onto the red blood cell surfaces. The depletion layer hypothesis suggests the opposite mechanism. The surfaces of the red blood cells are bound together by an osmotic pressure gradient that is created by depletion layers overlapping. The effect of rouleaux aggregation tendency can be explained by hematocrit and fibrinogen concentration in whole blood rheology. Some techniques researchers use are optical trapping and microfluidics to measure cell interaction in vitro.
-
-#### Disease and diagnostics
-
-Changes to viscosity has been shown to be linked with diseases like hyperviscosity, hypertension, sickle cell anemia, and diabetes. Hemorheological measurements and genomic testing technologies act as preventative measures and diagnostic tools.
-Hemorheology has also been correlated with aging effects, especially with impaired blood fluidity, and studies have shown that physical activity may improve the thickening of blood rheology.
-
-### Zoology
-
-Many animals make use of rheological phenomena, for example sandfish that exploit the granular rheology of dry sand to "swim" in it or land gastropods that use snail slime for adhesive locomotion. Certain animals produce specialized endogenous complex fluids, such as the sticky slime produced by velvet worms to immobilize prey or the fast-gelling underwater slime secreted by hagfish to deter predators.
-
-### Food rheology
-
-Food rheology is important in the manufacture and processing of food products, such as cheese and gelato. An adequate rheology is important for the indulgence of many common foods, particularly in the case of sauces, dressings, yogurt, or fondue.
-Thickening agents, or thickeners, are substances which, when added to an aqueous mixture, increase its viscosity without substantially modifying its other properties, such as taste. They provide body, increase stability, and improve suspension of added ingredients. Thickening agents are often used as food additives and in cosmetics and personal hygiene products. Some thickening agents are gelling agents, forming a gel. The agents are materials used to thicken and stabilize liquid solutions, emulsions, and suspensions. They dissolve in the liquid phase as a colloid mixture that forms a weakly cohesive internal structure. Food thickeners frequently are based on either polysaccharides (starches, vegetable gums, and pectin), or proteins.
-
-### Concrete rheology
-
-Concrete's and mortar's workability is related to the rheological properties of the fresh cement paste. The mechanical properties of hardened concrete increase if less water is used in the concrete mix design, however reducing the water-to-cement ratio may decrease the ease of mixing and application. To avoid these undesired effects, superplasticizers are typically added to decrease the apparent yield stress and the viscosity of the fresh paste. Their addition highly improves concrete and mortar properties.
-
-### Filled polymer rheology
-
-The incorporation of various types of fillers into polymers is a common means of reducing cost and to impart certain desirable mechanical, thermal, electrical and magnetic properties to the resulting material. The advantages that filled polymer systems have to offer come with an increased complexity in the rheological behavior.
-Usually when the use of fillers is considered, a compromise has to be made between the improved mechanical properties in the solid state on one side and the increased difficulty in melt processing, the problem of achieving uniform dispersion of the filler in the polymer matrix and the economics of the process due to the added step of compounding on the other.  The rheological properties of filled polymers are determined not only by the type and amount of filler, but also by the shape, size and  size distribution of its particles. The viscosity of filled systems generally increases with increasing filler fraction. This can be partially ameliorated via broad particle size distributions via the Farris effect. An additional factor is the stress transfer at the filler-polymer interface.  The interfacial adhesion can be substantially enhanced via a coupling agent that adheres well to both the polymer and the filler particles.  The type and amount of surface treatment on the filler are thus additional parameters affecting the rheological and material properties of filled polymeric systems.
-It is important to take into consideration wall slip when performing the rheological characterization of highly filled materials, as there can be a large difference between the actual strain and the measured strain.
-
 ## Rheologist
 
 A rheologist is an interdisciplinary scientist or engineer who studies the flow of complex liquids or the deformation of soft solids. It is not a primary degree subject; there is no qualification of rheologist as such. Most rheologists have a qualification in mathematics, the physical sciences (e.g. chemistry, physics, geology, biology), engineering (e.g. mechanical, chemical, materials science, plastics engineering and engineering or civil engineering), medicine, or certain technologies, notably materials or food. Typically, a small amount of rheology may be studied when obtaining a degree, but a person working in rheology will extend this knowledge during postgraduate research or by attending short courses and by joining a professional association.

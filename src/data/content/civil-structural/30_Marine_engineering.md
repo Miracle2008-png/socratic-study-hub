@@ -110,64 +110,6 @@ Wave loading is most commonly the application of a pulsed or wavelike load to a 
 Offshore storms and pipes: As large waves pass over shallowly buried pipes, water pressure increases above it.  As the trough approaches, pressure over the pipe drops and this sudden and repeated variation in pressure can break pipes. The difference in pressure for a wave with wave height of about 10 m would be equivalent to one atmosphere (101.3 kPa or 14.7 psi) pressure variation between crest and trough and repeated fluctuations over pipes in relatively shallow environments could set up resonance vibrations within pipes or structures and cause problems.
 Engineering oil platforms: The effects of wave-loading are a serious issue for engineers designing oil platforms, which must contend with the effects of wave loading, and have devised a number of algorithms to do so.
 
-## Applications
-
-The following categories provide a number of focus areas in which marine engineers direct their efforts.
-
-### Arctic Engineering
-
-In designing systems that operate in the arctic (especially scientific equipment such as meteorological instrumentation and oceanographic buoys), marine engineers must overcome an array of design challenges. Equipment must be able to operate at extreme temperatures for prolonged periods of time, often with little to no maintenance. This creates the need for exceptionally temperature-resistant materials and durable precision electronic components.
-
-### Coastal Design and Restoration
-
-Coastal engineering applies a mixture of civil engineering and other disciplines to create coastal solutions for areas along or near the ocean. In protecting coastlines from wave forces, erosion, and sea level rise, marine engineers must consider whether they will use a "gray" infrastructure solution - such as a breakwater, culvert, or sea wall made from rocks and concrete - or a "green" infrastructure solution that incorporates aquatic plants, mangroves, and/or marsh ecosystems. It has been found that gray infrastructure costs more to build and maintain, but it may provide better protection against ocean forces in high-energy wave environments. A green solution is generally less expensive and more well-integrated with local vegetation, but may be susceptible to erosion or damage if executed improperly. In many cases engineers will select a hybrid approach that combines elements of both gray and green solutions.
-
-### Deep Sea Systems
-
-#### Life Support
-
-The design of underwater life-support systems such as underwater habitats presents a set of challenges requiring a detailed knowledge of pressure vessels, diving physiology, and thermodynamics.
-
-#### Unmanned Underwater Vehicles
-
-Marine engineers may design or make frequent use of unmanned underwater vehicles, which operate underwater without a human aboard. UUVs often perform work in locations which would be otherwise impossible or difficult to access by humans due to a number of environmental factors (e.g. depth, remoteness, and/or temperature). UUVs can be remotely operated by humans, like in the case of remotely operated vehicles, semi-autonomous, or autonomous.
-
-#### Sensors and instrumentation
-
-The development of oceanographic sciences, subsea engineering and the ability to detect, track and destroy submarines (anti-submarine warfare) required the parallel development of a host of marine scientific instrumentation and sensors. Visible light is not transferred far underwater, so the medium for transmission of data is primarily acoustic. High-frequency sound is used to measure the depth of the ocean, determine the nature of the seafloor, and detect submerged objects. The higher the frequency, the higher the definition of the data that is returned. Sound Navigation and Ranging or SONAR was developed during the First World War to detect submarines, and has been greatly refined through to the present day. Submarines similarly use sonar equipment to detect and target other submarines and surface ships, and to detect submerged obstacles such as seamounts that pose a navigational obstacle. Simple echo-sounders point straight down and can give an accurate reading of ocean depth (or look up at the underside of sea-ice).
-More advanced echo sounders use a fan-shaped beam or sound, or multiple beams to derive highly detailed images of the ocean floor. High power systems can penetrate the soil and seabed rocks to give information about the geology of the seafloor, and are widely used in geophysics for the discovery of hydrocarbons, or for engineering survey. 
-For close-range underwater communications, optical transmission is possible, mainly using blue lasers. These have a high bandwidth compared with acoustic systems, but the range is usually only a few tens of metres, and ideally at night. 
-As well as acoustic communications and navigation, sensors have been developed to measure ocean parameters such as temperature, salinity, oxygen levels and other properties including nitrate levels, levels of trace chemicals and environmental DNA. The industry trend has been towards smaller, more accurate and more affordable systems so that they can be purchased and used by university departments and small companies as well as large corporations, research organisations and governments. The sensors and instruments are fitted to autonomous and remotely-operated systems as well as ships, and are enabling these systems to take on tasks that hitherto required an expensive human-crewed platform.
-Manufacture of marine sensors and instruments mainly takes place in Asia, Europe and North America. Products are advertised in specialist journals, and through Trade Shows such as Oceanology International and Ocean Business which help raise awareness of the products.
-
-### Environmental Engineering
-
-In every coastal and offshore project, environmental sustainability is an important consideration for the preservation of ocean ecosystems and natural resources. Instances in which marine engineers benefit from knowledge of environmental engineering include creation of fisheries, clean-up of oil spills, and creation of coastal solutions.
-
-### Offshore Systems
-
-A number of systems designed fully or in part by marine engineers are used offshore - far away from coastlines.
-
-#### Offshore oil platforms
-
-The design of offshore oil platforms involves a number of marine engineering challenges. Platforms must be able to withstand ocean currents, wave forces, and saltwater corrosion while remaining structurally integral and fully anchored into the seabed. Additionally, drilling components must be engineered to handle these same challenges with a high factor of safety to prevent oil leaks and spills from contaminating the ocean.
-
-#### Offshore wind farms
-
-Offshore wind farms encounter many similar marine engineering challenges to oil platforms. They provide a source of renewable energy with a higher yield than wind farms on land, while encountering less resistance from the general public (see NIMBY). 
-
-#### Ocean wave energy
-
-Marine engineers continue to investigate the possibility of ocean wave energy as a viable source of power for distributed or grid applications. Many designs have been proposed and numerous prototypes have been built, but the problem of harnessing wave energy in a cost-effective manner remains largely unresolved.
-
-### Port and Harbor Design
-
-A marine engineer may also deal with the planning, creation, expansion, and modification of port and harbor designs. Harbors can be natural or artificial and protect anchored ships from wind, waves, and currents. Ports can be defined as a city, town, or place where ships are moored, loaded, or unloaded. Ports typically reside within a harbor and are made up of one or more individual terminals that handle a particular cargo including passengers, bulk cargo, or containerized cargo. Marine engineers plan and design various types of marine terminals and structures found in ports, and they must understand the loads imposed on these structures over the course of their lifetime.
-
-### Salvage and Recovery
-
-Marine salvage techniques are continuously modified and improved to recover shipwrecks. Marine engineers use their skills to assist at some stages of this process.
-
 ## Career
 
 ### Industry

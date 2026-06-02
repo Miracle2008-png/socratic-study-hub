@@ -5,61 +5,38 @@ In physics, the first law of thermodynamics is an expression of the conservation
   
     
       
-        d
         
-          E
           
-            t
           
         
-        =
-        d
-        Q
-        +
-        d
-        W
       
     
-    {\displaystyle dE_{t}=dQ+dW}
   
-
-where
 
   
     
       
         
-          E
           
-            t
           
         
       
     
-    {\displaystyle E_{t}}
   
- is the total energy of a system.
 
   
     
       
-        W
       
     
-    {\displaystyle W}
   
- is the work done on it.
 
   
     
       
-        Q
       
     
-    {\displaystyle Q}
   
- is the heat added to that system.
-In fluid mechanics, the first law of thermodynamics takes the following form:
 
   
     
@@ -67,128 +44,80 @@ In fluid mechanics, the first law of thermodynamics takes the following form:
         
           
             
-              D
               
-                E
                 
-                  t
                 
               
             
             
-              D
-              t
             
           
         
-        =
         
           
             
-              D
-              W
             
             
-              D
-              t
             
           
         
-        +
         
           
             
-              D
-              Q
             
             
-              D
-              t
             
           
         
-        →
         
           
             
-              D
               
-                E
                 
-                  t
                 
               
             
             
-              D
-              t
             
           
         
-        =
-        ∇
-        ⋅
-        (
         
           
-            σ
           
-          ⋅
-          v
         
-        )
-        −
-        ∇
-        ⋅
         
           
-            q
           
         
       
     
-    {\displaystyle {\frac {DE_{t}}{Dt}}={\frac {DW}{Dt}}+{\frac {DQ}{Dt}}\to {\frac {DE_{t}}{Dt}}=\nabla \cdot ({\mathbf {\sigma } \cdot v})-\nabla \cdot {\mathbf {q} }}
   
-
-where
 
   
     
       
         
-          σ
         
       
     
-    {\displaystyle \mathbf {\sigma } }
   
- is the  Cauchy stress tensor.
 
   
     
       
         
-          v
         
       
     
-    {\displaystyle \mathbf {v} }
   
- is the flow velocity.
-and 
   
     
       
         
-          q
         
       
     
-    {\displaystyle \mathbf {q} }
   
- is the heat flux vector.
-Because it expresses conservation of total energy, this is sometimes referred to as the energy balance equation of continuous media. The first law is used to derive the non-conservation form of the Navier–Stokes equations.
-
 
 ## Note
 
@@ -256,7 +185,6 @@ Where
  is the deviatoric stress tensor
 That is, pulling is positive stress and pushing is negative stress.
 
-
 ## Compressible fluid
 For a compressible fluid the left hand side of equation becomes:
 
@@ -323,7 +251,6 @@ because in general
     
     {\displaystyle \nabla \cdot \mathbf {v} \neq 0.}
   
-
 
 ## Integral form
 
@@ -423,7 +350,6 @@ because in general
   
 
 That is, the change in the internal energy of the substance within a volume is the negative of the amount carried out of the volume by the flow of material across the boundary plus the work done compressing the material on the boundary minus the flow of heat out through the boundary. More generally, it is possible to incorporate source terms.
-
 
 ## Alternative representation
 
@@ -750,7 +676,6 @@ i.e. enthalpy per unit mass equals proper energy per unit mass plus pressure tim
     {\displaystyle -p\,\nabla \cdot {\mathbf {v} }={\frac {Dp}{Dt}}-\rho {\frac {D}{Dt}}\left({\frac {p}{\rho }}\right)}
   
 
-
 ## Alternative form data
 
   
@@ -899,5 +824,3 @@ i.e. enthalpy per unit mass equals proper energy per unit mass plus pressure tim
       
     
     {\displaystyle {\frac {\partial \rho }{\partial t}}+\nabla \cdot {\mathbf {J} }=0}
-  
-

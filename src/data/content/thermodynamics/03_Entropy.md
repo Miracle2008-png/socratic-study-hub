@@ -5,15 +5,12 @@ Entropy is central to the second law of thermodynamics, which states that the en
 The thermodynamic concept was referred to by Scottish scientist and engineer William Rankine in 1850 with the names thermodynamic function and heat-potential. In 1865, German physicist Rudolf Clausius, one of the leading founders of the field of thermodynamics, defined it as the quotient of an infinitesimal amount of heat to the instantaneous temperature. He initially described it as transformation-content, in German Verwandlungsinhalt, and later coined the term entropy from a Greek word for transformation.
 Austrian physicist Ludwig Boltzmann explained entropy as the measure of the number of possible microscopic arrangements or states of individual atoms and molecules of a system that comply with the macroscopic condition of the system. He thereby introduced the concept of statistical disorder and probability distributions into a new field of thermodynamics, called statistical mechanics, and found the link between the microscopic interactions, which fluctuate about an average configuration, to the macroscopically observable behaviour, in the form of a simple logarithmic law, with a proportionality constant, the Boltzmann constant, which has become one of the defining universal constants for the modern International System of Units.
 
-
 ## Definitions and descriptions
 
 The concept of entropy is described by two principal approaches, the macroscopic perspective of classical thermodynamics, and the microscopic description central to statistical mechanics. The classical approach defines entropy in terms of macroscopically measurable physical properties, such as bulk mass, volume, pressure, and temperature. The statistical definition of entropy defines it in terms of the statistics of the motions of the microscopic constituents of a system — modelled at first classically, e.g. Newtonian particles constituting a gas, and later quantum-mechanically (photons, phonons, spins, etc.). The two approaches form a consistent, unified view of the same phenomenon as expressed in the second law of thermodynamics, which has found universal applicability to physical processes.
 
-
 ### State variables and functions of state
 Many thermodynamic properties are defined by physical variables that define a state of thermodynamic equilibrium, which essentially are state variables. State variables depend only on the equilibrium condition, not on the path evolution to that state. State variables can be functions of state, also called state functions, in a sense that one state variable is a mathematical function of other state variables. Often, if some properties of a system are determined, they are sufficient to determine the state of the system and thus other properties' values. For example, temperature and pressure of a given quantity of gas determine its state, and thus also its volume via the ideal gas law. A system composed of a pure substance of a single phase at a particular uniform temperature and pressure is determined, and is thus a particular state, and has a particular volume.  The fact that entropy is a function of state makes it useful. In the Carnot cycle, the working fluid returns to the same state that it had at the start of the cycle, hence the change or line integral of any state function, such as entropy, over this reversible cycle is zero.
-
 
 ### Reversible process
 The entropy change 
@@ -89,7 +86,6 @@ The entropy change
   
 The reversible process is quasistatic (i.e., it occurs without any dissipation, deviating only infinitesimally from the thermodynamic equilibrium), and it may conserve total entropy. For example, in the Carnot cycle, while the heat flow from a hot reservoir to a cold reservoir represents the increase in the entropy in a cold reservoir, the work output, if reversibly and perfectly stored, represents the decrease in the entropy which could be used to operate the heat engine in reverse, returning to the initial state; thus the total entropy change may still be zero at all times if the entire process is reversible.
 In contrast, an irreversible process increases the total entropy of the system and surroundings. Any process that happens quickly enough to deviate from the thermal equilibrium cannot be reversible; the total entropy increases, and the potential for maximum work to be done during the process is lost.
-
 
 ### Carnot cycle
 The concept of entropy arose from Rudolf Clausius's study of the Carnot cycle which is a thermodynamic cycle performed by a Carnot heat engine as a reversible heat engine. In a Carnot cycle, the heat 
@@ -972,7 +968,6 @@ or in terms of the entropy change
 A Carnot cycle and an entropy as shown above prove to be useful in the study of any classical thermodynamic heat engine: other cycles, such as an Otto, Diesel or Brayton cycle, could be analysed from the same standpoint. Notably, any machine or cyclic process converting heat into work (i.e., heat engine) that is claimed to produce an efficiency greater than the one of Carnot is not viable — due to violation of the second law of thermodynamics.
 For further analysis of sufficiently discrete systems, such as an assembly of particles, statistical thermodynamics must be used. Additionally, descriptions of devices operating near the limit of de Broglie waves, e.g. photovoltaic cells, have to be consistent with quantum statistics.
 
-
 ### Classical thermodynamics
  
 
@@ -1134,7 +1129,6 @@ From a macroscopic perspective, in classical thermodynamics the entropy is inter
     {\textstyle T\cdot \Delta S}
   
  of that energy must be given up to the system's surroundings as a heat. Otherwise, this process cannot go forward. In classical thermodynamics, the entropy of a system is defined if and only if it is in a thermodynamic equilibrium (though a chemical equilibrium is not required: for example, the entropy of a mixture of two moles of hydrogen and one mole of oxygen in standard conditions is well-defined).
-
 
 ### Statistical mechanics
 
@@ -1482,7 +1476,6 @@ The interpretative model has a central role in determining entropy. The qualifie
 Entropy can also be defined for any Markov processes with reversible dynamics and the detailed balance property.
 In Boltzmann's 1896 Lectures on Gas Theory, he showed that this expression gives a measure of entropy for systems of atoms and molecules in the gas phase, thus providing a measure for the entropy of classical thermodynamics.
 
-
 ### Entropy of a system
 
 In a thermodynamic system, pressure and temperature tend to become uniform over time because the equilibrium state has higher probability (more possible combinations of microstates) than any other state. As an example, for a glass of ice water in air at room temperature, the difference in temperature between the warm room (the surroundings) and the cold glass of ice and water (the system and not part of the room) decreases as portions of the thermal energy from the warm surroundings spread to the cooler system of ice and water. Over time the temperature of the glass and its contents and the temperature of the room become equal. In other words, the entropy of the room has decreased as some of its energy has been dispersed to the ice and water, of which the entropy has increased.
@@ -1491,7 +1484,6 @@ Thermodynamic entropy is a non-conserved state function that is of great importa
 Unlike many other functions of state, entropy cannot be directly observed but must be calculated. Absolute standard molar entropy of a substance can be calculated from the measured temperature dependence of its heat capacity. The molar entropy of ions is obtained as a difference in entropy from a reference state defined as zero entropy. The second law of thermodynamics states that the entropy of an isolated system must increase or remain constant. Therefore, entropy is not a conserved quantity: for example, in an isolated system with non-uniform temperature, heat might irreversibly flow and the temperature become more uniform such that entropy increases. Chemical reactions cause changes in entropy and system entropy, in conjunction with enthalpy, plays an important role in determining in which direction a chemical reaction spontaneously proceeds.
 Rice University's definition of entropy is that it is "a measurement of a system's disorder and its inability to do work in a system". For instance, a substance at uniform temperature is at maximum entropy and cannot drive a heat engine. A substance at non-uniform temperature is at a lower entropy (than if the heat distribution is allowed to even out) and some of the thermal energy can drive a heat engine.
 A special case of entropy increase, the entropy of mixing, occurs when two or more different substances are mixed. If the substances are at the same temperature and pressure, there is no net exchange of heat or work – the entropy change is entirely due to the mixing of the different substances. At a statistical mechanical level, this results due to the change in available volume per particle with mixing.
-
 
 ### Equivalence of definitions
 Proofs of equivalence between the entropy in statistical mechanics — the Gibbs entropy formula:
@@ -1591,7 +1583,6 @@ together with the fundamental thermodynamic relation are known for the microcano
 . Thermodynamic relations are then employed to derive the well-known Gibbs entropy formula. However, the equivalence between the Gibbs entropy formula and the thermodynamic definition of entropy is not a fundamental thermodynamic relation but rather a consequence of the form of the generalized Boltzmann distribution.
 Furthermore, it has been shown that the definitions of entropy in statistical mechanics is the only entropy that is equivalent to the classical thermodynamics entropy under the following postulates:
 
-
 ## Second law of thermodynamics
 The second law of thermodynamics requires that, in general, the total entropy of any system does not decrease other than by increasing the entropy of some other system. Hence, in a system isolated from its environment, the entropy of that system tends not to decrease. It follows that heat cannot flow from a colder body to a hotter body without the application of work to the colder body. Secondly, it is impossible for any device operating on a cycle to produce net work from a single temperature reservoir; the production of net work requires flow of heat from a hotter reservoir to a colder reservoir, or a single expanding reservoir undergoing adiabatic cooling, which performs adiabatic work. As a result, there is no possibility of a perpetual motion machine. It follows that a reduction in the increase of entropy in a specified process, such as a chemical reaction, means that it is energetically more efficient.
 It follows from the second law of thermodynamics that the entropy of a system that is not isolated may decrease. An air conditioner, for example, may cool the air in a room, thus reducing the entropy of the air of that system. The heat expelled from the room (the system), which the air conditioner transports and discharges to the outside air, always makes a bigger contribution to the entropy of the environment than the decrease of the entropy of the air of that system. Thus, the total of entropy of the room plus the entropy of the environment increases, in agreement with the second law of thermodynamics.
@@ -1661,810 +1652,8 @@ In mechanics, the second law in conjunction with the fundamental thermodynamic r
 Statistical mechanics demonstrates that entropy is governed by probability, thus allowing for a decrease in disorder even in an isolated system. Although this is possible, such an event has a small probability of occurring, making it unlikely.
 The applicability of a second law of thermodynamics is limited to systems in or sufficiently near equilibrium state, so that they have defined entropy. Some inhomogeneous systems out of thermodynamic equilibrium still satisfy the hypothesis of local thermodynamic equilibrium, so that entropy density is locally defined as an intensive quantity. For such systems, there may apply a principle of maximum time rate of entropy production. It states that such a system may evolve to a steady state that maximises its time rate of entropy production. This does not mean that such a system is necessarily always in a condition of maximum time rate of entropy production; it means that it may evolve to such a steady state.
 
-
-## Applications
-
-
-### The fundamental thermodynamic relation
-
-The entropy of a system depends on its internal energy and its external parameters, such as its volume. In the thermodynamic limit, this fact leads to an equation relating the change in the internal energy 
-  
-    
-      
-        U
-      
-    
-    {\textstyle U}
-  
- to changes in the entropy and the external parameters. This relation is known as the fundamental thermodynamic relation. If external pressure 
-  
-    
-      
-        p
-      
-    
-    {\textstyle p}
-  
- bears on the volume 
-  
-    
-      
-        V
-      
-    
-    {\textstyle V}
-  
- as the only external parameter, this relation is:
-  
-    
-      
-        
-          d
-        
-        U
-        =
-        T
-         
-        
-          d
-        
-        S
-        −
-        p
-         
-        
-          d
-        
-        V
-      
-    
-    {\displaystyle \mathrm {d} U=T\ \mathrm {d} S-p\ \mathrm {d} V}
-  
-Since both internal energy and entropy are monotonic functions of temperature 
-  
-    
-      
-        T
-      
-    
-    {\textstyle T}
-  
-, implying that the internal energy is fixed when one specifies the entropy and the volume, this relation is valid even if the change from one state of thermal equilibrium to another with infinitesimally larger entropy and volume happens in a non-quasistatic way (so during this change the system may be very far out of thermal equilibrium and then the whole-system entropy, pressure, and temperature may not exist).
-The fundamental thermodynamic relation implies many thermodynamic identities that are valid in general, independent of the microscopic details of the system. Important examples are the Maxwell relations and the relations between heat capacities.
-
-
-### Entropy in chemical thermodynamics
-Thermodynamic entropy is central in chemical thermodynamics, enabling changes to be quantified and the outcome of reactions predicted. The second law of thermodynamics states that entropy in an isolated system — the combination of a subsystem under study and its surroundings — increases during all spontaneous chemical and physical processes. The Clausius equation introduces the measurement of entropy change which describes the direction and quantifies the magnitude of simple changes such as heat transfer between systems — always from hotter body to cooler one spontaneously.
-Thermodynamic entropy is an extensive property, meaning that it scales with the size or extent of a system. In many processes it is useful to specify the entropy as an intensive property independent of the size, as a specific entropy characteristic of the type of system studied. Specific entropy may be expressed relative to a unit of mass, typically the kilogram (unit: J⋅kg−1⋅K−1). Alternatively, in chemistry, it is also referred to one mole of substance, in which case it is called the molar entropy with a unit of J⋅mol−1⋅K−1.
-Thus, when one mole of substance at about 0 K is warmed by its surroundings to 298 K, the sum of the incremental values of 
-  
-    
-      
-        
-          q
-          
-            
-              r
-              e
-              v
-            
-          
-        
-        
-          /
-        
-        T
-      
-    
-    {\textstyle q_{\mathsf {rev}}/T}
-  
- constitute each element's or compound's standard molar entropy, an indicator of the amount of energy stored by a substance at 298 K. Entropy change also measures the mixing of substances as a summation of their relative quantities in the final mixture.
-Entropy is equally essential in predicting the extent and direction of complex chemical reactions. For such applications, 
-  
-    
-      
-        Δ
-        S
-      
-    
-    {\textstyle \Delta S}
-  
- must be incorporated in an expression that includes both the system and its surroundings: 
-  
-    
-      
-        Δ
-        
-          S
-          
-            
-              u
-              n
-              i
-              v
-              e
-              r
-              s
-              e
-            
-          
-        
-        =
-        Δ
-        
-          S
-          
-            
-              s
-              u
-              r
-              r
-              o
-              u
-              n
-              d
-              i
-              n
-              g
-              s
-            
-          
-        
-        +
-        Δ
-        
-          S
-          
-            
-              s
-              y
-              s
-              t
-              e
-              m
-            
-          
-        
-      
-    
-    {\displaystyle \Delta S_{\mathsf {universe}}=\Delta S_{\mathsf {surroundings}}+\Delta S_{\mathsf {system}}}
-  
-Via additional steps this expression becomes the equation of Gibbs free energy change 
-  
-    
-      
-        Δ
-        G
-      
-    
-    {\textstyle \Delta G}
-  
- for reactants and products in the system at the constant pressure and temperature 
-  
-    
-      
-        T
-      
-    
-    {\textstyle T}
-  
-:
-  
-    
-      
-        Δ
-        G
-        =
-        Δ
-        H
-        −
-        T
-         
-        Δ
-        S
-      
-    
-    {\displaystyle \Delta G=\Delta H-T\ \Delta S}
-  
-where 
-  
-    
-      
-        Δ
-        H
-      
-    
-    {\textstyle \Delta H}
-  
- is the enthalpy change and 
-  
-    
-      
-        Δ
-        S
-      
-    
-    {\textstyle \Delta S}
-  
- is the entropy change.
-
-The spontaneity of a chemical or physical process is governed by the Gibbs free energy change (ΔG), as defined by the equation ΔG = ΔH − TΔS, where ΔH represents the enthalpy change, ΔS the entropy change, and T the temperature in Kelvin. A negative ΔG indicates a thermodynamically favorable (spontaneous) process, while a positive ΔG denotes a non-spontaneous one. When both ΔH and ΔS are positive (endothermic, entropy-increasing), the reaction becomes spontaneous at sufficiently high temperatures, as the TΔS term dominates. Conversely, if both ΔH and ΔS are negative (exothermic, entropy-decreasing), spontaneity occurs only at low temperatures, where the enthalpy term prevails. Reactions with ΔH < 0 and ΔS > 0 (exothermic and entropy-increasing) are spontaneous at all temperatures, while those with ΔH > 0 and ΔS < 0 (endothermic and entropy-decreasing) are non-spontaneous regardless of temperature. These principles underscore the interplay between energy exchange, disorder, and temperature in determining the direction of natural processes, from phase transitions to biochemical reactions.
-
-
-### World's technological capacity to store and communicate entropic information
-
-A 2011 study in Science estimated the world's technological capacity to store and communicate optimally compressed information normalised on the most effective compression algorithms available in the year 2007, therefore estimating the entropy of the technologically available sources. The author's estimate that humankind's technological capacity to store information grew from 2.6 (entropically compressed) exabytes in 1986 to 295 (entropically compressed) exabytes in 2007. The world's technological capacity to receive information through one-way broadcast networks was 432 exabytes of (entropically compressed) information in 1986, to 1.9 zettabytes in 2007. The world's effective capacity to exchange information through two-way telecommunication networks was 281 petabytes of (entropically compressed) information in 1986, to 65 (entropically compressed) exabytes in 2007.
-
-
-### Entropy balance equation for open systems
-
-In chemical engineering, the principles of thermodynamics are commonly applied to "open systems", i.e. those in which heat, work, and mass flow across the system boundary.  In general, flow of heat 
-  
-    
-      
-        
-          
-            
-              Q
-              ˙
-            
-          
-        
-      
-    
-    {\textstyle {\dot {Q}}}
-  
-, flow of shaft work 
-  
-    
-      
-        
-          
-            
-              
-                W
-                ˙
-              
-            
-          
-          
-            
-              S
-            
-          
-        
-      
-    
-    {\textstyle {\dot {W}}_{\mathsf {S}}}
-  
- and pressure-volume work 
-  
-    
-      
-        P
-        
-          
-            
-              V
-              ˙
-            
-          
-        
-      
-    
-    {\textstyle P{\dot {V}}}
-  
- across the system boundaries cause changes in the entropy of the system. Heat transfer entails entropy transfer 
-  
-    
-      
-        
-          
-            
-              Q
-              ˙
-            
-          
-        
-        
-          /
-        
-        T
-      
-    
-    {\textstyle {\dot {Q}}/T}
-  
-, where 
-  
-    
-      
-        T
-      
-    
-    {\textstyle T}
-  
- is the absolute thermodynamic temperature of the system at the point of the heat flow. If there are mass flows across the system boundaries, they also influence the total entropy of the system. This account, in terms of heat and work, is valid only for cases in which the work and heat transfers are by paths physically distinct from the paths of entry and exit of matter from the system.
-To derive a generalised entropy balanced equation, we start with the general balance equation for the change in any extensive quantity 
-  
-    
-      
-        θ
-      
-    
-    {\textstyle \theta }
-  
- in a thermodynamic system, a quantity that may be either conserved, such as energy, or non-conserved, such as entropy. The basic generic balance expression states that 
-  
-    
-      
-        
-          d
-        
-        θ
-        
-          /
-        
-        
-          d
-        
-        t
-      
-    
-    {\textstyle \mathrm {d} \theta /\mathrm {d} t}
-  
-, i.e. the rate of change of 
-  
-    
-      
-        θ
-      
-    
-    {\textstyle \theta }
-  
- in the system, equals the rate at which 
-  
-    
-      
-        θ
-      
-    
-    {\textstyle \theta }
-  
- enters the system at the boundaries, minus the rate at which 
-  
-    
-      
-        θ
-      
-    
-    {\textstyle \theta }
-  
- leaves the system across the system boundaries, plus the rate at which 
-  
-    
-      
-        θ
-      
-    
-    {\textstyle \theta }
-  
- is generated within the system. For an open thermodynamic system in which heat and work are transferred by paths separate from the paths for transfer of matter, using this generic balance equation, with respect to the rate of change with time 
-  
-    
-      
-        t
-      
-    
-    {\textstyle t}
-  
- of the extensive quantity entropy 
-  
-    
-      
-        S
-      
-    
-    {\textstyle S}
-  
-, the entropy balance equation is:
-  
-    
-      
-        
-          
-            
-              
-                d
-              
-              S
-            
-            
-              
-                d
-              
-              t
-            
-          
-        
-        =
-        
-          ∑
-          
-            k
-            =
-            1
-          
-          
-            K
-          
-        
-        
-          
-            
-              
-                
-                  M
-                  ˙
-                
-              
-            
-            
-              k
-            
-          
-          
-            
-              
-                
-                  S
-                  ^
-                
-              
-            
-            
-              k
-            
-          
-          +
-          
-            
-              
-                
-                  Q
-                  ˙
-                
-              
-              T
-            
-          
-          +
-          
-            
-              
-                
-                  S
-                  ˙
-                
-              
-            
-            
-              
-                g
-                e
-                n
-              
-            
-          
-        
-      
-    
-    {\displaystyle {\frac {\mathrm {d} S}{\mathrm {d} t}}=\sum _{k=1}^{K}{{\dot {M}}_{k}{\hat {S}}_{k}+{\frac {\dot {Q}}{T}}+{\dot {S}}_{\mathsf {gen}}}}
-  
-where 
-  
-    
-      
-        
-          ∑
-          
-            k
-            =
-            1
-          
-          
-            K
-          
-        
-        
-          
-            
-              
-                
-                  M
-                  ˙
-                
-              
-            
-            
-              k
-            
-          
-          
-            
-              
-                
-                  S
-                  ^
-                
-              
-            
-            
-              k
-            
-          
-        
-      
-    
-    {\textstyle \sum _{k=1}^{K}{{\dot {M}}_{k}{\hat {S}}_{k}}}
-  
- is the net rate of entropy flow due to the flows of mass 
-  
-    
-      
-        
-          
-            
-              
-                M
-                ˙
-              
-            
-          
-          
-            k
-          
-        
-      
-    
-    {\textstyle {\dot {M}}_{k}}
-  
- into and out of the system with entropy per unit mass 
-  
-    
-      
-        
-          
-            
-              
-                S
-                ^
-              
-            
-          
-          
-            k
-          
-        
-      
-    
-    {\textstyle {\hat {S}}_{k}}
-  
-, 
-  
-    
-      
-        
-          
-            
-              Q
-              ˙
-            
-          
-        
-        
-          /
-        
-        T
-      
-    
-    {\textstyle {\dot {Q}}/T}
-  
- is the rate of entropy flow due to the flow of heat across the system boundary and 
-  
-    
-      
-        
-          
-            
-              
-                S
-                ˙
-              
-            
-          
-          
-            
-              g
-              e
-              n
-            
-          
-        
-      
-    
-    {\textstyle {\dot {S}}_{\mathsf {gen}}}
-  
- is the rate of entropy generation within the system, e.g. by chemical reactions, phase transitions, internal heat transfer or frictional effects such as viscosity.
-In case of multiple heat flows the term 
-  
-    
-      
-        
-          
-            
-              Q
-              ˙
-            
-          
-        
-        
-          /
-        
-        T
-      
-    
-    {\textstyle {\dot {Q}}/T}
-  
- is replaced by 
-  
-    
-      
-        
-          ∑
-          
-            j
-          
-        
-        
-          
-            
-              
-                
-                  Q
-                  ˙
-                
-              
-            
-            
-              j
-            
-          
-          
-            /
-          
-          
-            T
-            
-              j
-            
-          
-        
-      
-    
-    {\textstyle \sum _{j}{{\dot {Q}}_{j}/T_{j}}}
-  
-, where 
-  
-    
-      
-        
-          
-            
-              
-                Q
-                ˙
-              
-            
-          
-          
-            j
-          
-        
-      
-    
-    {\textstyle {\dot {Q}}_{j}}
-  
- is the heat flow through 
-  
-    
-      
-        j
-      
-    
-    {\textstyle j}
-  
--th port into the system and 
-  
-    
-      
-        
-          T
-          
-            j
-          
-        
-      
-    
-    {\textstyle T_{j}}
-  
- is the temperature at the 
-  
-    
-      
-        j
-      
-    
-    {\textstyle j}
-  
--th port.
-The nomenclature "entropy balance" is misleading and often deemed inappropriate because entropy is not a conserved quantity. In other words, the term 
-  
-    
-      
-        
-          
-            
-              
-                S
-                ˙
-              
-            
-          
-          
-            
-              g
-              e
-              n
-            
-          
-        
-      
-    
-    {\textstyle {\dot {S}}_{\mathsf {gen}}}
-  
- is never a known quantity but always a derived one based on the expression above. Therefore, the open system version of the second law is more appropriately described as the "entropy generation equation" since it specifies that:
-  
-    
-      
-        
-          
-            
-              
-                S
-                ˙
-              
-            
-          
-          
-            
-              g
-              e
-              n
-            
-          
-        
-        ≥
-        0
-      
-    
-    {\displaystyle {\dot {S}}_{\mathsf {gen}}\geq 0}
-  
-with zero for reversible process and positive values for irreversible one.
-
-
 ## Entropy change formulas for simple processes
 For certain simple transformations in systems of constant composition, the entropy changes are given by simple formulas.
-
 
 ### Isothermal expansion or compression of an ideal gas
 For the expansion (or compression) of an ideal gas from an initial volume 
@@ -2575,7 +1764,6 @@ Here
     {\textstyle R}
   
  is the ideal gas constant. These equations also apply for expansion into a finite vacuum or a throttling process, where the temperature, internal energy and enthalpy for an ideal gas remain constant.
-
 
 ### Cooling and heating
 For pure heating or cooling of any system (gas, liquid or solid) at constant pressure from an initial temperature 
@@ -2803,7 +1991,6 @@ Similarly if the temperature and pressure of an ideal gas both vary:
     {\displaystyle \Delta S=nC_{\mathrm {P} }\ln {\frac {T}{T_{0}}}-nR\ln {\frac {P}{P_{0}}}}
   
 
-
 ### Phase transitions
 Reversible phase transitions occur at constant temperature and pressure. The reversible heat is the enthalpy change for the transition, and the entropy change is the enthalpy change divided by the thermodynamic temperature. For fusion (i.e., melting) of a solid to a liquid at the melting point 
   
@@ -2929,10 +2116,8 @@ Similarly, for vaporisation of a liquid to a gas at the boiling point
     {\displaystyle \Delta S_{\mathsf {vap}}={\frac {\Delta H_{\mathsf {vap}}}{T_{\mathsf {b}}}}}
   
 
-
 ## Approaches to understanding entropy
 As a fundamental aspect of thermodynamics and physics, several different approaches to entropy beyond that of Clausius and Boltzmann are valid.
-
 
 ### Standard textbook definitions
 The following is a list of additional definitions of entropy from a collection of textbooks:
@@ -2941,7 +2126,6 @@ a measure of energy dispersal at a specific temperature.
 a measure of disorder in the universe or of the availability of the energy in a system to do work.
 a measure of a system's thermal energy per unit temperature that is unavailable for doing useful work.
 In Boltzmann's analysis in terms of constituent particles, entropy is a measure of the number of possible microscopic states (or microstates) of a system in thermodynamic equilibrium.
-
 
 ### Order and disorder
 
@@ -3078,17 +2262,14 @@ Here,
   
  is the "order" capacity of the system.
 
-
 ### Energy dispersal
 
 The concept of entropy can be described qualitatively as a measure of energy dispersal at a specific temperature. Similar terms have been in use from early in the history of classical thermodynamics, and with the development of statistical thermodynamics and quantum theory, entropy changes have been described in terms of the mixing or "spreading" of the total energy of each constituent of a system over its particular quantised energy levels.
 Ambiguities in the terms disorder and chaos, which usually have meanings directly opposed to equilibrium, contribute to widespread confusion and hamper comprehension of entropy for most students. As the second law of thermodynamics shows, in an isolated system internal portions at different temperatures tend to adjust to a single uniform temperature and thus produce equilibrium. A recently developed educational approach avoids ambiguous terms and describes such spreading out of energy as dispersal, which leads to loss of the differentials required for work even though the total energy remains constant in accordance with the first law of thermodynamics (compare discussion in next section). Physical chemist Peter Atkins, in his textbook Physical Chemistry, introduces entropy with the statement that "spontaneous changes are always accompanied by a dispersal of energy or matter and often both".
 
-
 ### Relating entropy to energy usefulness
 It is possible (in a thermal context) to regard lower entropy as a measure of the effectiveness or usefulness of a particular quantity of energy.  Energy supplied at a higher temperature (i.e. with low entropy) tends to be more useful than the same amount of energy available at a lower temperature. Mixing a hot parcel of a fluid with a cold one produces a parcel of intermediate temperature, in which the overall increase in entropy represents a "loss" that can never be replaced.
 As the entropy of the universe is steadily increasing, its total energy is becoming less useful. Eventually, this is theorised to lead to the heat death of the universe.
-
 
 ### Entropy and adiabatic accessibility
 A definition of entropy based entirely on the relation of adiabatic accessibility between equilibrium states was given by E. H. Lieb and J. Yngvason in 1999. This approach has several predecessors, including the pioneering work of Constantin Carathéodory from 1909 and the monograph by R. Giles. An equivalent approach that extends the operational definition of entropy to the entire nonequilibrium domain was derived from a rigorous formulation of the general axiomatic foundations of thermodynamics by J. H. Keenan, G. N. Hatsopoulos, E. P. Gyftopoulos, G. P. Beretta, and E. Zanchini between 1965 and 2014. In the setting of Lieb and Yngvason, one starts by picking, for a unit amount of the substance under consideration, two reference states 
@@ -3197,7 +2378,6 @@ A definition of entropy based entirely on the relation of adiabatic accessibilit
     {\textstyle X_{0}}
   
 . A simple but important result within this setting is that entropy is uniquely determined, apart from a choice of unit and an additive constant for each chemical element, by the following properties: it is monotonic with respect to the relation of adiabatic accessibility, additive on composite systems, and extensive under scaling.
-
 
 ### Entropy in quantum mechanics
 
@@ -3356,7 +2536,6 @@ This upholds the correspondence principle, because in the classical limit, when 
   
 i.e. in such a basis the density matrix is diagonal.
 Von Neumann established a rigorous mathematical framework for quantum mechanics with his work Mathematische Grundlagen der Quantenmechanik. He provided in this work a theory of measurement, where the usual notion of wave function collapse is described as an irreversible process (the so-called von Neumann or projective measurement). Using this concept, in conjunction with the density matrix he extended the classical concept of entropy into the quantum domain.
-
 
 ### Information theory
 
@@ -3540,7 +2719,6 @@ which is the Boltzmann entropy formula, where
   
  function of information theory and using Shannon's other term, "uncertainty", instead.
 
-
 ### Measurement
 The entropy of a substance can be measured, although in an indirect way. The measurement, known as entropymetry, is done on a closed system with constant number of particles 
   
@@ -3670,30 +2848,3 @@ The resulting relation describes how entropy changes
   
 .
 The process of measurement goes as follows. First, a sample of the substance is cooled as close to absolute zero as possible. At such temperatures, the entropy approaches zero – due to the definition of temperature. Then, small amounts of heat are introduced into the sample and the change in temperature is recorded, until the temperature reaches a desired value (usually 25 °C). The obtained data allows the user to integrate the equation above, yielding the absolute value of entropy of the substance at the final temperature. This value of entropy is called calorimetric entropy.
-
-
-## Interdisciplinary applications
-Although the concept of entropy was originally a thermodynamic concept, it has been adapted in other fields of study, including information theory, psychodynamics, thermoeconomics/ecological economics, and evolution.
-
-
-### Philosophy and theoretical physics
-Entropy is the only quantity in the physical sciences that seems to imply a particular direction of progress, sometimes called an arrow of time. As time progresses, the second law of thermodynamics states that the entropy of an isolated system never decreases in large systems over significant periods of time. Hence, from this perspective, entropy measurement is thought of as a clock in these conditions. Since the 19th century, a number of philosophers have drawn upon the concept of entropy to develop novel metaphysical and ethical systems. Examples of this work can be found in the thought of Friedrich Nietzsche and Philipp Mainländer, Claude Lévi-Strauss, Isabelle Stengers, Shannon Mussett, and Drew M. Dalton.
-
-
-### Biology
-Chiavazzo et al. proposed that where cave spiders choose to lay their eggs can be explained through entropy minimisation.
-Entropy has been proven useful in the analysis of base pair sequences in DNA. Many entropy-based measures have been shown to distinguish between different structural regions of the genome, differentiate between coding and non-coding regions of DNA, and can also be applied for the recreation of evolutionary trees by determining the evolutionary distance between different species.
-
-
-### Cosmology
-Assuming that a finite universe is an isolated system, the second law of thermodynamics states that its total entropy is continually increasing. It has been speculated, since the 19th century, that the universe is fated to a heat death in which all the energy ends up as a homogeneous distribution of thermal energy so that no more work can be extracted from any source.
-If the universe can be considered to have generally increasing entropy, then – as Roger Penrose has pointed out – gravity plays an important role in the increase because gravity causes dispersed matter to accumulate into stars, which collapse eventually into black holes. The entropy of a black hole is proportional to the surface area of the black hole's event horizon. Jacob Bekenstein and Stephen Hawking have shown that black holes have the maximum possible entropy of any object of equal size. This makes them likely end points of all entropy-increasing processes, if they are totally effective matter and energy traps. However, the escape of energy from black holes might be possible due to quantum activity (see Hawking radiation).
-The role of entropy in cosmology remains a controversial subject since the time of Ludwig Boltzmann. Recent work has cast some doubt on the heat death hypothesis and the applicability of any simple thermodynamic model to the universe in general. Although entropy does increase in the model of an expanding universe, the maximum possible entropy rises much more rapidly, moving the universe further from the heat death with time, not closer. This results in an "entropy gap" pushing the system further away from the posited heat death equilibrium. Other complicating factors, such as the energy density of the vacuum and macroscopic quantum effects, are difficult to reconcile with thermodynamical models, making any predictions of large-scale thermodynamics extremely difficult.
-Current theories suggest the entropy gap to have been originally opened up by the early rapid exponential expansion of the universe.
-
-
-### Economics
-
-Romanian American economist Nicholas Georgescu-Roegen, a progenitor in economics and a paradigm founder of ecological economics, made extensive use of the entropy concept in his magnum opus on The Entropy Law and the Economic Process. Due to Georgescu-Roegen's work, the laws of thermodynamics form an integral part of the ecological economics school. Although his work was blemished somewhat by mistakes, a full chapter on the economics of Georgescu-Roegen has approvingly been included in one elementary physics textbook on the historical development of thermodynamics.
-In economics, Georgescu-Roegen's work has generated the term 'entropy pessimism'. Since the 1990s, leading ecological economist and steady-state theorist Herman Daly – a student of Georgescu-Roegen – has been the economics profession's most influential proponent of the entropy pessimism position.
-

@@ -5,12 +5,10 @@ A current through any conductor creates a circular magnetic field around the con
 The direction of the magnetic field produced by a coil can be determined by the right hand grip rule.  If the fingers of the right hand are wrapped around the magnetic core of a coil in the direction of conventional current through the wire, the thumb will point in the direction the magnetic field lines pass through the coil.  The end of a magnetic core from which the field lines emerge is defined to be the North pole.
 There are many different types of coils used in electric and electronic equipment.
 
-
 ## Windings and taps
 
 The wire or conductor which constitutes the coil is called the winding.  The hole in the center of the coil is called the core area or magnetic axis. Each loop of wire is called a turn. In windings where the turns touch, the wire must be insulated with a coating of nonconductive insulation to prevent the current from passing between the wire turns. This type of wire is called magnet wire and typically use polymer film insulation. The winding is often wrapped around an insulating form or an iron core.  The ends of the wire are brought out and attached to an external circuit. Windings may have additional electrical connections along their length; these are called taps.  A winding that has a single tap in the center of its length is called center-tapped.
 Coils can have more than one winding, insulated electrically from each other. When there are two or more windings around a common magnetic axis, the windings are said to be inductively coupled or magnetically coupled.  A time-varying current through one winding will create a time-varying magnetic field that passes through the other winding, which will induce a time-varying voltage in the other windings. This is called a transformer.  The winding to which current is applied, which creates the magnetic field, is called the primary winding. The other windings are called secondary windings.
-
 
 ## Magnetic core
 Many electromagnetic coils have a magnetic core, a piece of ferromagnetic material like iron in the center to increase the magnetic field.  The current through the coil magnetizes the iron, and the field of the magnetized material adds to the field produced by the wire. This is called a ferromagnetic-core or iron-core coil.  A ferromagnetic core can increase the magnetic field and inductance of a coil by hundreds or thousands of times over what it would be without the core. A ferrite core coil is a variety of coil with a core made of ferrite, a ferrimagnetic ceramic compound.  Ferrite coils have lower core losses at high frequencies.
@@ -20,7 +18,6 @@ A common form for closed-core coils is a toroidal core coil, in which the core h
 A coil with a core which is a straight bar or other non-loop shape is called an open-core coil.  This has lower magnetic field and inductance than a closed core, but is often used to prevent magnetic saturation of the core.
 A coil without a ferromagnetic core is called an air-core coil. This includes coils wound on plastic or other nonmagnetic forms, as well as coils which actually have empty air space inside their windings.
 
-
 ## Types of coils
 Coils can be classified by the frequency of the current they are designed to operate with:
 
@@ -28,7 +25,6 @@ Direct current or DC coils or electromagnets operate with a steady direct curren
 Audio-frequency or AF coils, inductors or transformers operate with alternating currents in the audio frequency range, less than 20 kHz
 Radio-frequency or RF coils, inductors or transformers operate with alternating currents in the radio frequency range, above 20 kHz
 Coils can be classified by their function:
-
 
 ### Electromagnets
 
@@ -42,7 +38,6 @@ Helmholtz coil, Maxwell coil - air-core coils which serve to cancel an external 
 Degaussing coil - a coil used to demagnetize parts
 Voice coil - a coil used in a moving-coil loudspeaker, suspended between the poles of a magnet. When the audio signal is passed through the coil, it vibrates, moving the attached speaker cone to create sound waves. The reverse is used in a dynamic microphone, where sound vibrations intercepted by something like a diaphragm physically transfer to a voice coil immersed in a magnetic field, and the coil's terminal ends then provide an electric analog of those vibrations.
 
-
 ### Inductors
 
 Inductors or reactors are coils which generate a magnetic field which interacts with the coil itself, to induce a back EMF which opposes changes in current through the coil. Inductors are used as circuit elements in electrical circuits, to temporarily store energy or resist changes in current. A few types:
@@ -54,7 +49,6 @@ Variometer - an adjustable inductor consisting of two coils in series, an outer 
 Flyback transformer - Although called a transformer, this is actually an inductor which serves to store energy in switching power supplies and horizontal deflection circuits for CRT televisions and monitors
 Saturable reactor - an iron-core inductor used to control AC power by varying the saturation of the core using a DC control voltage in an auxiliary winding.
 Inductive ballast - an inductor used in gas-discharge lamp circuits, such as fluorescent lamps, to limit the current through the lamp.
-
 
 ### Transformers
 
@@ -70,10 +64,8 @@ Bifilar coil - a coil wound with two parallel, closely spaced strands. If AC cur
 Audio transformer - A transformer used with audio signals. They are used for impedance matching.
 Hybrid coil - a specialized audio transformer with 3 windings used in telephony circuits to convert between two-wire and four-wire circuits
 
-
 ### Electric machines
 Electric machines such as motors and generators have one or more windings which interact with moving magnetic fields to convert electrical energy to mechanical energy.  Often a machine will have one winding through which passes most of the power of the machine (the "armature"), and a second winding which provides the magnetic field of the rotating element ( the "field winding") which may be connected by brushes or slip rings to an external source of electric current. In an induction motor, the "field" winding of the rotor is energized by the slow relative motion between the rotating winding and the rotating magnetic field produced by the stator winding, which induces the necessary exciting current in the rotor.
-
 
 ### Transducer coils
 
@@ -90,6 +82,4 @@ Flux gate - a sensor coil used in a magnetometer
 Magnetic phonograph cartridge - a sensor in a record player that uses a coil to translate vibration of a needle to an audio signal in playing vinyl phonograph records.
 There are also types of coil which don't fit into these categories.
 
-
 ## Winding technology
-
