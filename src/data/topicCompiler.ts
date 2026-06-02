@@ -114,8 +114,8 @@ export const ALL_TOPICS: Record<string, TopicContent> = {
 const markdownModules = import.meta.glob('/src/data/content/**/*.md', { query: '?raw', import: 'default' });
 
 export async function fetchTopicContent(topicId: string): Promise<TopicContent> {
-  // Check if it's a legacy static topic
-  if (ALL_TOPICS[topicId]) {
+  // Check if it's a legacy static topic (not engineering)
+  if (ALL_TOPICS[topicId] && ALL_TOPICS[topicId].subject !== 'engineering') {
     return ALL_TOPICS[topicId];
   }
 
@@ -123,6 +123,8 @@ export async function fetchTopicContent(topicId: string): Promise<TopicContent> 
   const matchingPaths = Object.keys(markdownModules).filter(path => path.includes(`/content/${topicId}/`));
   
   if (matchingPaths.length === 0) {
+    // Fallback just in case
+    if (ALL_TOPICS[topicId]) return ALL_TOPICS[topicId];
     throw new Error(`Topic not found: ${topicId}`);
   }
 

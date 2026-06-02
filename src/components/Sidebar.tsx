@@ -48,9 +48,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
       { id: 'visualizer', label: '3D Visualizer', icon: Box },
     ];
 
-  if (isAdmin) {
-    tools.push({ id: 'admin', label: 'Admin Panel', icon: ShieldAlert });
-  }
+  // Admin panel removed based on user request
 
   return (
     <aside className="sidebar">
