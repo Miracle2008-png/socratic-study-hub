@@ -135,11 +135,12 @@ export const GamificationProvider: React.FC<{ children: ReactNode }> = ({ childr
       let newLevel = prev.level;
       let newProgress = prev.dailyGoalProgress + amount;
       
-      // Level up logic (every 500 XP = 1 level for simplicity)
-      const requiredXp = newLevel * 500;
-      if (newXp >= requiredXp) {
-        newLevel++;
-        console.log(`Level Up! You are now level ${newLevel}`);
+      // Calculate level based on total XP (every 500 XP = 1 level)
+      const calculatedLevel = Math.floor(newXp / 500) + 1;
+      
+      if (calculatedLevel > newLevel) {
+        console.log(`Level Up! You jumped from level ${newLevel} to ${calculatedLevel}!`);
+        newLevel = calculatedLevel;
       }
 
       return {
