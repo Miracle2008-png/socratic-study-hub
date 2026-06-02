@@ -3,14 +3,6 @@
 Software engineering professionalism is a movement to make software engineering a profession, with aspects such as degree and certification programs, professional associations, professional ethics, and government licensing.  The field is a licensed discipline in Texas in the United States (Texas Board of Professional Engineers, since 2013), Engineers Australia(Course Accreditation since 2001, not Licensing), and many provinces in Canada.
 
 
-## History
-In 1993 the IEEE and ACM began a joint effort called JCESEP, which evolved into SWECC in 1998 to explore making software engineering into a profession. The ACM pulled out of SWECC in May 1999, objecting to its support for the Texas professionalization efforts, of having state licenses for software engineers.  ACM determined that the state of knowledge and practice in software engineering was too immature to warrant licensing,
-and that licensing would give false assurances of competence even if the body of knowledge were mature.
-The IEEE continued to support making software engineering a branch of traditional engineering.
-In Canada the Canadian Information Processing Society established the Information Systems Professional certification process.  Also, by the late 1990s (1999 in British Columbia) the discipline of software engineering as a professional engineering discipline was officially created.  This has caused some disputes between the provincial engineering associations and companies who call their developers software engineers, even though these developers have not been licensed by any engineering association.
-In 1999, the Panel of Software Engineering was formed as part of the settlement between Engineering Canada and the Memorial University of Newfoundland over the school's use of the term "software engineering" in the name of a computer science program. Concerns were raised over the inappropriate use of the name "software engineering" to describe non-engineering programs could lead to student and public confusion, and ultimately threaten public safety. The Panel issued recommendations to create a Software Engineering Accreditation Board, but the task force created to carry out the recommendations was unable to get the various stakeholders to agree to concrete proposals, resulting in separate accreditation boards.
-
-
 ## Ethics
 Software engineering ethics is a large field. In some ways it began as an unrealistic attempt to define bugs as unethical.  More recently it has been defined as the application of both computer science and engineering philosophy, principles, and practices to the design and development of software systems.  Due to this engineering focus and the increased use of software in mission critical and human critical systems, where failure can result in large losses of capital but more importantly lives such as the Therac-25 system, many ethical codes have been developed by a number of societies, associations and organizations. These entities, such as the ACM, IEEE, EGBC and Institute for Certification of Computing Professionals (ICCP) have formal codes of ethics. Adherence to the code of ethics is required as a condition of membership or certification. According to the ICCP, violation of the code can result in revocation of the certificate.  Also, all engineering societies require conformance to their ethical codes; violation of the code results in the revocation of the license to practice engineering in the society's jurisdiction.
 These codes of ethics usually have much in common.  They typically relate the need to act consistently with the client's interest, employer's interest, and most importantly the public's interest.  They also outline the need to act with professionalism and to promote an ethical approach to the profession.
@@ -112,19 +104,3 @@ The use of the title tölvunarfræðingur (computer scientist) is protected by l
 ### New Zealand
 In New Zealand, the Institution of Professional Engineers New Zealand (IPENZ), which licenses and regulates the country's chartered engineers (CPEng), recognizes software engineering as a legitimate branch of professional engineering and accepts application of software engineers to obtain chartered status provided they have a tertiary degree of approved subjects. Software Engineering is included whereas Computer Science is normally not.
 
-
-## See also
-Bachelor of Science in Information Technology
-Bachelor of Software Engineering
-List of software engineering topics
-Software engineering demographics
-Software engineering economics
-
-
-## References
-
-
-## External links
-Professional licensing in Texas
-SE As Code of Ethics
-"A Review of the Professionalization of the Software Industry: Has it Made Software Engineering a Real Profession?", An academic article documenting the progress of SE professionalization

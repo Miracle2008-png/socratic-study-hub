@@ -684,17 +684,3 @@ Il est probable que les écoulements tels que rot
 #### Proposed solutions
 A recent paper demonstrates that Beltrami fields exhibit chaotic regions and invariant tori of complex topologies with high probability. The analysis includes asymptotic bounds for the number of horseshoes, zeros, and knotted invariant tori, alongside periodic trajectories in Gaussian random Beltrami fields.
 
-
-## See also
-Beltrami flow
-Complex lamellar vector field
-Conservative vector field
-
-
-## Bibliography
-Aris, Rutherford (1989), Vectors, tensors, and the basic equations of fluid mechanics, Dover, ISBN 0-486-66110-5
-Lakhtakia, Akhlesh (1994), Beltrami fields in chiral media, World Scientific, ISBN 981-02-1403-0
-Etnyre, J.; Ghrist, R. (2000), "Contact topology and hydrodynamics.  I. Beltrami fields and the Seifert conjecture", Nonlinearity, 13 (2): 441–448, Bibcode:2000Nonli..13..441E, doi:10.1088/0951-7715/13/2/306.
-
-
-## References

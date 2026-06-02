@@ -29,20 +29,3 @@ This is a list of civil engineering software.
 
 ## Urban planning and environmental simulation
 
-
-## See also
-
-Civil engineering
-List of civil engineering branches
-Lists of engineering software
-List of 3D modeling software and list of 3D rendering software
-List of collaborative software
-List of computer-aided engineering software
-Nemetschek
-
-
-## External links
-Delft3D  – Open source hydrodynamic and environmental modeling suite
-
-
-## References

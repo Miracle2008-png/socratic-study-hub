@@ -6,12 +6,6 @@ Many people treat mechatronics as a modern buzzword synonymous with automation, 
 French standard NF E 01-010 gives the following definition: "approach aiming at the synergistic integration of mechanics, electronics, control theory, and computer science within product design and manufacturing, in order to improve and/or optimize its functionality".
 
 
-## History
-No later than in 1951, the word mechatronics was used in an advertisement of the company Servomechanisms, Inc., as can be seen in the journal Nucleonics, vol. 9, issue 3 on page 99.
-The word mechatronics originated in Japanese-English and was created by Tetsuro Mori, an engineer of Yaskawa Electric Corporation. The word mechatronics was registered as trademark by the company in Japan with the registration number of "46-32714" in 1971. The company later released the right to use the word to the public, and the word began being used globally. Currently the word is translated into many languages and is considered an essential term for advanced automated industry.
-With the advent of information technology in the 1980s, microprocessors were introduced into mechanical systems, improving performance significantly. By the 1990s, advances in computational intelligence were applied to mechatronics in ways that revolutionized the field.
-
-
 ## Description
 
 A mechatronics engineer unites the principles of mechanics, electrical, electronics, and computing to generate a simpler, more economical and reliable system.
@@ -60,25 +54,6 @@ Knowledge of programming is important. A mechatronics engineer has to do program
 According to the U.S. Bureau of Labor Statistics, the occupational outlook for mechatronics between 2016 and 2026 was 4% growth then declined to -4% for 2021 to 2031 then recovered to a -1% decline for 2023 to 2033. Currently their prediction for 2024 to 2034 is 1%.
 
 
-## See also
- 
-Automation engineering – Branch of engineering dealing with automated solutions to physical activities
-Computer engineering – Engineering discipline specializing in the design of computer hardware
-Computer science – Study of computation
-Control theory – Branch of engineering and mathematics
-Cybernetics – Study of circular causal processes
-Ecomechatronics – Mechatronical technology reducing the ecological impact of machines
-Electromechanics – Multidisciplinary field of engineering
-Materials engineering – Research of materialsPages displaying short descriptions of redirect targets
-Mechanical engineering technology
-Robotics – Design, construction, use, and application of robots
-Systems engineering – Interdisciplinary field of engineering
-Biomechatronics – Interdisciplinary science integrating biology and mechatronics
-
-
-## References
-
-
 ## Sources
 Bradley, Dawson et al., Mechatronics, Electronics in products and processes, Chapman and Hall Verlag, London, 1991.
 Karnopp, Dean C., Donald L. Margolis, Ronald C. Rosenberg, System Dynamics: Modeling and Simulation of Mechatronic Systems, 4th Edition, Wiley, 2006. ISBN 0-471-70965-4 Bestselling system dynamics book using bond graph approach.
@@ -86,18 +61,3 @@ Cetinkunt, Sabri, Mechatronics, John Wiley & Sons, Inc, 2007 ISBN 978-0-471-4798
 James J. Nutaro (2010). Building software for simulation: theory and algorithms, with applications in C++. Wiley.
 Zhang, Jianhua . Mechatronics and Automation Engineering. Proceedings of the International Conference on Mechatronics and Automation Engineering (ICMAE2016). Xiamen, China, 2016.
 
-
-## Further reading
-Bishop, Robert H., Mechatronics: an introduction. CRC Press, 2006.
-De Silva, Clarence W., Mechatronics: an integrated approach. CRC Press, 2005
-Onwubolu, Godfrey C., Mechatronics: principles and applications. Butterworth-Heinemann, 2005.
-Rankers, Adrian M., Machine Dynamics in Mechatronic Systems. University Twente, 1997
-
-
-## External links
-IEEE/ASME Transactions on Mechatronics.
-Mechatronics Journal – Elsevier
-mechatronic applications and realisation List of publications concerning examples
-Institution of Mechanical Engineers - Mechatronics, Informatics and Control Group (MICG)
-NF E 01-010 2008 – AFNOR (French standard NF E 01-010)
-XP E 01-013 2009 – AFNOR (French standard NF E 01-013)

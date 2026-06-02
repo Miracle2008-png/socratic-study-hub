@@ -72,34 +72,3 @@ The Indo-German Living Lab Initiative has launched at IIEST Shibpur in partnersh
 
 Established in 1932, REBECA (Reunion and Bengal Engineering College Annuals) stands as the crown jewel of IIEST Shibpur’s cultural legacy, distinguished as India's oldest student-led festival. It serves as a rhythmic bridge between the institute’s storied past and its vibrant present, uniting a global alumni network with the current student body.
 Spanning four days, the festival traverses a diverse sonic landscape—from the soul-stirring depth of Classical Night to the high-octane energy of Bollywood and Bangla Rock finales. Beyond the spectacle of "Pro-shows," REBECA is an emotional homecoming, fostering a unique "BEing" spirit through intellectual debates, musical battles, and nostalgic reunions under the iconic Clock Tower.
-
-## Notable people
-
-### Notable faculty
-
-John Samuel Slater, principal
-Sankar Sen, professor of the electrical engineering department.
-Joseph Allen Stein, professor and head of the Department of Architecture
-Asok Kumar Barua, was an Indian condensed matter physicist and the honorary Emeritus Professor.
-Sabyasachi Sarkar, Former Professor, Nano Science and Synthetic Leaf Laboratory of the Institute.
-
-### Notable alumni
-
-Amitabha Bhattacharyya, 4th Director of IIT Kanpur and Shanti Swarup Bhatnagar awardee.
-Bimal Kumar Bose, scholar in Power Electronics, Chondra Chair of Excellence in Power Electronics, professor emeritus at the University of Tennessee, member of National Academy of Engineering
-Chaitanyamoy Ganguly,  Indian nuclear scientist and a former head of the Nuclear Fuel Cycle and Materials Section of the International Atomic Energy Agency (IAEA).
-Gautam Biswas, former Director of IIT Guwahati
-Rajen Mookerjee, industrialist, co-founder of Martin Burn & Co. and founder of Indian Iron & Steel Co. Ltd.
-Satish Chandra Samanta, foremost freedom fighter, revolutionary, established the Tamralipta Jatiya Sarkar during the Quit India Movement.
-Gagan Chandra Biswas, industrialist, engineer, businessman and Zamindar.
-Shankar Nath Rimal, Nepalese civil engineer, designer of the modern Nepalese flag
-Jatindranath Sengupta, poet and writer.
-Krishna Mohan Banerjee,  Indian thinker who attempted to rethink Hindu philosophy, religion and ethics in response to the stimulus of Christian ideas.
-Fazlur Rahman Khan, called the "Father of Structural Engineering" by the American Society of Civil Engineers.
-Renuka Dasgupta, singer
-Nandini Mukherjee is an Indian computer scientist and politician.
-Abhijit Chowdhury, film director and writer
-Narayan Sanyal, Academy Award winner and famous writer of Biswasghatak, "Dandak Shabari", and "Shyatakam"
-Binoy Majumdar, Bengali poet, author, winner of the Sahitya Akademi Award.
-Tathagata Roy,is an Indian politician.
-Srideep Bhattacharya, is an Indian politician.

@@ -64,33 +64,3 @@ Adaptive control or self-tuning control of multivariable controllers for multiva
 Usually these methods adapt the controllers to both the process statics and dynamics. In special cases the adaptation can be limited to the static behavior alone, leading to adaptive control based on characteristic curves for the steady-states or to extremum value control, optimizing the steady state. Hence, there are several ways to apply adaptive control algorithms.
 A particularly successful application of adaptive control has been adaptive flight control. This body of work has focused on guaranteeing stability of a model reference adaptive control scheme using Lyapunov arguments. Several successful flight-test demonstrations have been conducted, including fault tolerant adaptive control.
 
-
-## See also
-Nonlinear control
-Intelligent control
-Lyapunov optimization
-
-
-## References
-
-
-## Further reading
-B. Egardt, Stability of Adaptive Controllers. New York: Springer-Verlag, 1979.
-I. D. Landau, Adaptive Control: The Model Reference Approach. New York: Marcel Dekker, 1979.
-P. A. Ioannou and J. Sun, Robust Adaptive Control. Upper Saddle River, NJ: Prentice-Hall, 1996.
-K. S. Narendra and A. M. Annaswamy, Stable Adaptive Systems. Englewood Cliffs, NJ: Prentice Hall, 1989; Dover Publications, 2004.
-S. Sastry and M. Bodson, Adaptive Control: Stability, Convergence and Robustness. Prentice Hall, 1989.
-K. J. Astrom and B. Wittenmark, Adaptive Control. Reading, MA: Addison-Wesley, 1995.
-I. D. Landau, R. Lozano, and M. M’Saad, Adaptive Control. New York, NY: Springer-Verlag, 1998.
-G. Tao, Adaptive Control Design and Analysis. Hoboken, NJ: Wiley-Interscience, 2003.
-P. A. Ioannou and B. Fidan, Adaptive Control Tutorial. SIAM, 2006.
-G. C. Goodwin and K. S. Sin, Adaptive Filtering Prediction and Control. Englewood Cliffs, NJ: Prentice-Hall, 1984.
-M. Krstic, I. Kanellakopoulos, and P. V. Kokotovic, Nonlinear and Adaptive Control Design. Wiley Interscience, 1995.
-P. A. Ioannou and P. V. Kokotovic, Adaptive Systems with Reduced Models. Springer Verlag, 1983.
-Annaswamy, Anuradha M.; Fradkov, Alexander L. (2021). "A historical perspective of adaptive control and learning". Annual Reviews in Control. 52: 18–41. arXiv:2108.11336. doi:10.1016/j.arcontrol.2021.10.014. S2CID 237290042.
-
-
-## External links
-Shankar Sastry and Marc Bodson, Adaptive Control: Stability, Convergence, and Robustness, Prentice-Hall, 1989-1994 (book)
-K. Sevcik: Tutorial on Model Reference Adaptive Control (Drexel University)
-Tutorial on Concurrent Learning Model Reference Adaptive Control G. Chowdhary (slides, relevant papers, and matlab code)

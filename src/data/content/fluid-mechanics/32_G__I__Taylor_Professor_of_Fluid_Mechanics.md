@@ -10,5 +10,3 @@ Philip Saffman, a student of Batchelor and Taylor, was offered the chair in the 
 2010 – 2017, Paul Linden FRS
 2017 – present, Rich Kerswell FRS
 
-
-## References

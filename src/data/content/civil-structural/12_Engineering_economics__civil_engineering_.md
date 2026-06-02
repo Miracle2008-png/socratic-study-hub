@@ -24,38 +24,3 @@ Historically, coursework and curricula in engineering economics for civil engine
 ## Journals
 The Engineering Economist - published jointly by the Engineering Economy Division of the American Society of Engineering Education (ASEE) and the Institute of Industrial and Systems Engineers (IISE). It publishes "...original research, current practice, and teaching involving problems of capital investment."
 
-
-## See also
-American Society of Civil Engineers
-Cost–benefit analysis
-Social discount rate
-
-
-## Further reading
-On materials specific to civil engineering:
-
-Wellington, A. M. (1877).The Economic Theory of the Location of Railways. Accessed at [3] and revised through six editions with the last published in 1914 by Wellington's wife, Agnes Wellington. Accessed at [4]
-Gotshall, William C. (1903) Notes on electric railway economics and preliminary engineering. McGraw Publishing Company. Accessed at [5]
-Hayford, John F. (1917) The relation of engineering to economics. Journal of Political Economy 25.1 : 59–63. Accessed at [6]
-Waddell, J. A. L. (1917). Engineering economics. Lawrence: University of Kansas. Accessed at [7]
-Waddell, J. A. L.  (1921) Economics of Bridgework: A Sequel to Bridge Engineering. J. Wiley & Sons, Incorporated. Accessed at [8]
-Fish, J. C. L. (1923). Engineering economics: First-principles. New York: McGraw-Hill. Accessed at [9]
-Grant, Eugene L. (1930) Principles of Engineering Economy, Accessed at [10]
-Burnham, T. H., & Hoskins, G. O. (1958). Engineering economics, by T.H. Burnham and G.O. Hoskins. London, Pitman. Accessed at [11].
-Barish, Norman N, (1962) Economic analysis for engineering and managerial decision making, Accessed at [12]
-Anon., (1963) Engineering economy, Engineering Dept, American Telephone and Telegraph Company. Accessed at [13].
-Sepulveda, Jose A. and Souder, William E. (1984) Schaum's Outline of Engineering Economics. McGraw-Hill Companies. Accessed at [14]
-Newnan, Donald G., et al. (1998) Engineering economic analysis. 7th ed. Accessed at [15]
-For more generalized discussion:
-
-Jaffe, William J.  L. P. Alford and the Evolution of Modern Industrial Management.  New York: 1957
-Nelson, Daniel.  Frederick W. Taylor and the Rise of Scientific Management.  Madison: University of Wisconsin Press, 1980.
-Noble, David F.  America by Design: Science, Technology, and the Rise of Corporate Capitalism.  New York: Alfred A. Knopf, 1977.
-
-
-## External links
-Benefit-Cost Analysis Center at the University of Washington's Daniel J. Evans School of Public Affairs
-Benefit-Cost Analysis Archived 18 January 2022 at the Wayback Machine site maintained by the Transportation Economics Committee of the Transportation Research Board(TRB).
-
-
-## References

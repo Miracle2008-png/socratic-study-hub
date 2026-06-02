@@ -4,11 +4,6 @@ Eggshell membrane separation is a recycling process to separate the protein-rich
 Nearly 30% of the eggs consumed each year are broken and processed or powdered into foods such as cakes, mixes, mayonnaise, noodles and fast foods. The US food industry generates 150,000 tons of shell waste a year. The disposal methods for waste eggshells are 26.6% as fertilizer, 21.1% as animal feed ingredients, 26.3% discarded in municipal dumps, and 15.8% used in other ways.
 Many landfills are unwilling to take the waste because the shells and the attached membrane attract vermin. When unseparated, the calcium carbonate eggshell and protein-rich membrane have little or no value or use; however, the invention of an eggshell and membrane separator has allowed for the recycling of these two products.
 
-## Chemical background
-
-Chicken eggshells are made up of 95% calcium carbonate by weight and the remaining material is primarily organic matrix.
-Eggshell membrane is primarily composed of fibrous proteins such as collagen type I.
-
 ## Methods
 
 ### Non-chemical separators

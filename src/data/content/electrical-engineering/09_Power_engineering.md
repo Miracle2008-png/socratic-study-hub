@@ -3,9 +3,6 @@
 Power engineering, also called power systems engineering, is a subfield of electrical engineering that deals with the generation, transmission, distribution, and utilization of electric power, and the electrical apparatus connected to such systems. Although much of the field is concerned with the problems of three-phase AC power – the standard for large-scale power transmission and distribution across the modern world – a significant fraction of the field is concerned with the conversion between AC and DC power and the development of specialized power systems such as those used in aircraft or for electric railway networks. Power engineering draws the majority of its theoretical base from electrical engineering and mechanical engineering.
 
 
-## History
-
-
 ## Pioneering years
 Electricity became a subject of scientific interest in the late 17th century. Over the next two centuries a number of important discoveries were made including the incandescent light bulb and the voltaic pile. Probably the greatest discovery with respect to power engineering came from Michael Faraday who in 1831 discovered that a change in magnetic flux induces an electromotive force in a loop of wire—a principle known as electromagnetic induction that helps explain how generators and transformers work.
 In 1881 two electricians built the world's first power station at Godalming in England. The station employed two waterwheels to produce an alternating current that was used to supply seven Siemens arc lamps at 250 volts and thirty-four incandescent lamps at 40 volts. However supply was intermittent and in 1882 Thomas Edison and his company, The Edison Electric Light Company, developed the first steam-powered electric power station on Pearl Street in New York City. The Pearl Street Station consisted of several generators and initially powered around 3,000 lamps for 59 customers. The power station used direct current and operated at a single voltage. Since the direct current power could not be easily transformed to the higher voltages necessary to minimise power loss during transmission, the possible distance between the generators and load was limited to around half-a-mile (800 m).
@@ -74,24 +71,3 @@ Power System Protection: Modern protection systems employ digital relays, sensor
 ## Rural electrification and microgrids
 Power engineering is important to rural electrification in regions where extending the traditional grid is uneconomical. Over 700 million people lack access to electricity, and most of them are in Sub-Saharan Africa and parts of Asia (IEA, 2017). Microgrids are local networks that can operate on their own. They typically integrate solar panels, small wind turbines, batteries, and diesel backup. Advances in technologies and lowering costs have made microgrids a large part of global energy initiatives (World Bank & ESMAP, 2023)
 
-
-## See also
-Energy economics
-Industrial ecology
-Power electronics
-Power system simulation
-Power engineering software
-
-
-## References
-
-
-## External links
-
-IEEE Power Engineering Society
-Jadavpur University, Department of Power Engineering
-Power Engineering International Magazine Articles
-Power Engineering Magazine Articles
-American Society of Power Engineers, Inc.
-National Institute for the Uniform Licensing of Power Engineer Inc.
-Worcester Polytechnic Institute Power Systems Engineering

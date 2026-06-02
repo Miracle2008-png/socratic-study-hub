@@ -12,10 +12,3 @@ Dual control theory was developed by Alexander Aronovich Fel'dbaum in 1960.  He 
 ## Example
 To use an analogy: if you are driving a new car you want to get to your destination cheaply and smoothly, but you also want to see how well the car accelerates, brakes and steers so as to get a better feel for how to drive it, so you will do some test manoeuvers for this purpose.  Similarly a dual controller will inject a so-called probing (or exploration) signal into the system that may detract from short-term performance but will improve control in the future.
 
-
-## References
-
-Feldbaum, A.A. (April 1961) [September 1960 (in Russian, pp. 1240–1249)]. "Dual control theory, Part I". Automation and Remote Control. 21 (9): 874–880.
-Feldbaum, A.A. (May 1961) [November 1960 (in Russian, pp. 1453–1464)]. "Dual control theory, Part II". Automation and Remote Control. 21 (11): 1033–1039.
-Stengel, R. F., (1994), "Dual Control". Optimal Control and Estimation [https://stengel.mycpanel.princeton.edu/OptConEst.html], Dover Publications, pp. 436-443.
-Wittenmark, B. (June 1995). "Adaptive Dual Control Methods: An Overview". Lund University: 67–72. CiteSeerX 10.1.1.25.7446. {{cite journal}}: Cite journal requires |journal= (help)

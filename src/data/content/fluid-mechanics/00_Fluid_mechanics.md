@@ -6,10 +6,6 @@ It can be divided into fluid statics, the study of various fluids at rest; and f
 It is a branch of continuum mechanics, a subject which models matter without using the information that it is made out of atoms; that is, it models matter from a macroscopic viewpoint rather than from microscopic. 
 Fluid mechanics, especially fluid dynamics, is an active field of research, typically mathematically complex.  Many problems are partly or wholly unsolved and are best addressed by numerical methods, typically using computers.  A modern discipline, called computational fluid dynamics (CFD), is devoted to this approach.  Particle image velocimetry, an experimental method for visualizing and analyzing fluid flow, also takes advantage of the highly visual nature of fluid flow.
 
-## Etymology
-
-The first use of the phrase "fluid mechanics" is attributed to A. H. Jameson in his work, An Introduction to Fluid Mechanics (1937).
-
 ## Main branches
 
 ### Fluid statics

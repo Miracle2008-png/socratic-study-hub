@@ -174,25 +174,3 @@ Myocardial tissue engineering
 
 Biopolymers are polymers produced by living organisms. Cellulose and starch, proteins and peptides, and DNA and RNA are all examples of biopolymers, in which the monomeric units, respectively, are sugars, amino acids, and nucleotides. Cellulose is both the most common biopolymer and the most common organic compound on Earth. About 33% of all plant matter is cellulose. On a similar manner, silk (proteinaceous biopolymer) has garnered tremendous research interest in a myriad of domains including tissue engineering and regenerative medicine, microfluidics, drug delivery.
 
-
-## See also
-Bionics
-Hydrogel
-Polymeric surface
-Surface modification of biomaterials with proteins
-Synthetic biodegradable polymer
-List of biomaterials
-
-
-## Footnotes
-
-
-## References
-
-
-## External links
-
-Journal of Biomaterials Applications
-CREB – Biomedical Engineering Research Centre Archived 2021-05-07 at the Wayback Machine
-Department of Biomaterials at the Max Planck Institute of Colloids and Interfaces in Potsdam-Golm, Germany
-Open Innovation Campus for Biomaterials Archived 2009-04-19 at the Wayback Machine

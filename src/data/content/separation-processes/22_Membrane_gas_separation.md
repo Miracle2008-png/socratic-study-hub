@@ -1957,12 +1957,6 @@ Oxygen-enriched air is in high demanded for a range of medical and industrial ap
 
 A great deal of research has been undertaken to utilize membranes instead of absorption or adsorption for carbon capture from flue gas streams, however, no current projects exist that utilize membranes. Process engineering along with new developments in materials have shown that membranes have the greatest potential for low energy penalty and cost compared to competing technologies.
 
-### Background
-
-Today, membranes are used for commercial separations involving: N2 from air, H2 from ammonia in the Haber-Bosch process, natural gas purification, and tertiary-level enhanced oil recovery supply.
-Single-stage membrane operations involve a single membrane with one selectivity value. Single-stage membranes were first used in natural gas purification, separating CO2 from methane. A disadvantage of single-stage membranes is the loss of product in the permeate due to the constraints imposed by the single selectivity value. Increasing the selectivity reduces the amount of product lost in the permeate, but comes at the cost of requiring a larger pressure difference to process an equivalent amount of a flue stream. In practice, the maximum pressure ratio economically possible is around 5:1.
-To combat the loss of product in the membrane permeate, engineers use "cascade processes" in which the permeate is recompressed and interfaced with additional, higher selectivity membranes. The retentate streams can be recycled, which achieves a better yield of product.
-
 ### Need for multi-stage process
 
 Single-stage membranes devices are not feasible for obtaining a high concentration of separated material in the permeate stream. This is due to the pressure ratio limit that is economically unrealistic to exceed. Therefore, the use of multi-stage membranes is required to concentrate the permeate stream. The use of a second stage allows for less membrane area and power to be used. This is because of the higher concentration that passes the second stage, as well as the lower volume of gas for the pump to process. Other factors, such as adding another stage that uses air to concentrate the stream further reduces cost by increasing concentration within the feed stream. Additional methods such as combining multiple types of separation methods allow for variation in creating economical process designs.

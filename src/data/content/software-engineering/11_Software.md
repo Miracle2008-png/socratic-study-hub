@@ -10,11 +10,6 @@ The rise of cloud computing has introduced the new software delivery model softw
 The process of developing software involves several stages. The stages include software design, programming, testing, release, and maintenance. Software quality assurance and security are critical aspects of software development, as bugs and security vulnerabilities can lead to system failures and security breaches. Additionally, legal issues such as software licenses and intellectual property rights play a significant role in the distribution of software products.
 
 
-## History
-
-The first use of the word software to describe computer programs is credited to mathematician John Wilder Tukey in 1958. The first programmable computers, which appeared at the end of the 1940s, were programmed in machine language. Machine language is difficult to debug and not portable across different computers. Initially, hardware resources were more expensive than human resources. As programs became complex, programmer productivity became the bottleneck. The introduction of high-level programming languages in 1958 hid the details of the hardware and expressed the underlying algorithms into the code. Early languages include Fortran, Lisp, and COBOL.
-
-
 ## Types
 
 There are two main types of software:
@@ -76,12 +71,3 @@ Patents give an inventor an exclusive, time-limited license for a novel product 
 
 Engineer Capers Jones writes that "computers and software are making profound changes to every aspect of human life: education, work, warfare, entertainment, medicine, law, and everything else". It has become ubiquitous in everyday life in developed countries. In many cases, software augments the functionality of existing technologies such as household appliances and elevators. Software also spawned entirely new technologies such as the Internet, video games, mobile phones, and GPS. New methods of communication, including email, forums, blogs, microblogging, wikis, and social media, were enabled by the Internet. Massive amounts of knowledge exceeding any paper-based library are now available with a quick web search. Most creative professionals have switched to software-based tools such as computer-aided design, 3D modeling, digital image editing, and computer animation. Almost every complex device is controlled by software.
 
-
-## See also
-List of AI-assisted software development tools
-
-
-## References
-
-
-### Sources

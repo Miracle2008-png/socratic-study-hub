@@ -31,5 +31,3 @@ Upgrading the value of anaerobic digestion via chemical production from grid inj
 Making chemicals with electricity. Van Geem, K.M.; Galvita, V.V.; Marin, G.B. (Science, 364 (6442), 734–735, 2019 Perspective paper)
 Electrified temperature-modulated synthesis. Marin, G.B.; Van Geem, K.M. (Nature Synthesis, 1, 512–513, 2022 News & Views article)
 
-
-## References

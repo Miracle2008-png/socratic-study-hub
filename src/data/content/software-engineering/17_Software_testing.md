@@ -16,13 +16,6 @@ A study conducted by NIST in 2002 reported that software bugs cost the U.S. econ
 Outsourcing software testing because of costs is very common, with China, the Philippines, India and Pakistan being preferred destinations.
 
 
-## History
-Glenford J. Myers initially introduced the separation of debugging from testing in 1979. Although his attention was on breakage testing ("A successful test case is one that detects an as-yet undiscovered error."), it illustrated the desire of the software engineering community to separate fundamental development activities, such as debugging, from that of verification.
-Software testing typically includes handling software bugs – a defect in the code that causes an undesirable result. Bugs generally slow testing progress and involve programmer assistance to debug and fix.
-Not all defects cause a failure. For example, a defect in dead code will not be considered a failure.
-A defect that does not cause failure at one point in time may lead to failure later due to environmental changes. Examples of environment change include running on new computer hardware, changes in data, and interacting with different software.
-
-
 ## Goals
 Software testing is typically goal driven.
 
@@ -422,18 +415,3 @@ The "smaller projects" curve turns out to be from only two teams of first-year s
 
 Boehm doesn't even cite a paper for the TRW data, except when writing for "Making Software" in 2010, and there he cited the original 1976 article. There exists a large study conducted at TRW at the right time for Boehm to cite it, but that paper doesn't contain the sort of data that would support Boehm's claims.
 
-
-## See also
-
-
-## References
-
-
-## Further reading
-Meyer, Bertrand (August 2008). "Seven Principles of Software Testing" (PDF). Computer. Vol. 41, no. 8. pp. 99–101. doi:10.1109/MC.2008.306. Retrieved November 21, 2017.
-
-
-## External links
-
-"Software that makes Software better" Economist.com
-Software Testing With Large Language Models: Survey, Landscape, and Vision

@@ -4,11 +4,6 @@ Fractional distillation is the separation of a mixture into its component parts,
 A crude oil distillation unit uses fractional distillation in the process of refining crude oil.
 
 
-## History
-
-The fractional distillation of organic substances played an important role in the 9th-century works attributed to the Islamic alchemist Jabir ibn Hayyan, as for example in the Kitāb al-Sabʿīn ('The Book of Seventy'), translated into Latin by Gerard of Cremona (c. 1114–1187) under the title Liber de septuaginta. The Jabirian experiments with fractional distillation of animal and vegetable substances, and to a lesser degree also of mineral substances, formed the main topic of the De anima in arte alkimiae, an originally Arabic work falsely attributed to Avicenna that was translated into Latin and would go on to form the most important alchemical source for Roger Bacon (c. 1220–1292).
-
-
 ## Laboratory setup
 
 Fractional distillation in a laboratory makes use of common laboratory glassware and apparatuses, typically including a heat source such as a heating mantle or hot plate and sand bath (almost never an open flame as shown in the illustration, since a large majority of organic reagents are highly flammable), a round-bottomed flask and a condenser, as well as the single-purpose fractionating column.
@@ -49,13 +44,3 @@ Fractional distillation towers or columns are designed to achieve the required s
 The two major types of distillation columns used are tray and packing columns. Packing columns are normally used for smaller towers and loads that are corrosive or temperature-sensitive or for vacuum service where pressure drop is important. Tray columns, on the other hand, are used for larger columns with high liquid loads. They first appeared on the scene in the 1820s. In most oil refinery operations, tray columns are mainly used for the separation of petroleum fractions at different stages of oil refining.
 In the oil refining industry, the design and operation of fractionation towers is still largely accomplished on an empirical basis. The calculations involved in the design of petroleum fractionation columns require in the usual practice the use of numerable charts, tables, and complex empirical equations. In recent years, however, a considerable amount of work has been done to develop efficient and reliable computer-aided design procedures for fractional distillation.
 
-
-## See also
-Azeotropic distillation
-Batch distillation
-Extractive distillation
-Freeze distillation
-Steam distillation
-
-
-## References

@@ -10,35 +10,6 @@ The SDLC drives the definition of a methodology in that a methodology must addre
 A major difference between methodologies is the degree to which the phases are sequential vs. iterative. Agile methodologies, such as XP and scrum, focus on lightweight processes that allow for rapid changes. Iterative methodologies, such as Rational Unified Process and dynamic systems development method, focus on stabilizing project scope and iteratively expanding or improving products. Sequential or big-design-up-front (BDUF) models, such as waterfall, focus on complete and correct planning to guide larger projects and limit risks to successful and predictable results. Anamorphic development is guided by project scope and adaptive iterations. In scrum, for example, one could say a single user story goes through all the phases of the SDLC within a two-week sprint. By contrast the waterfall methodology, where every business requirement is translated into feature/functional descriptions which are then all implemented typically over a period of months or longer.
 A project can include both a project life cycle (PLC) and an SDLC, which describe different activities. According to Taylor (2004), "the project life cycle encompasses all the activities of the project, while the systems development life cycle focuses on realizing the product requirements".
 
-### History
-
-The term SDLC is often used as an abbreviated version of SDLC methodology. Further, some use SDLC and traditional SDLC to mean the waterfall methodology.
-According to Elliott (2004), SDLC "originated in the 1960s, to develop large scale functional business systems in an age of large scale business conglomerates. Information systems activities revolved around heavy data processing and number crunching routines". The structured systems analysis and design method (SSADM) was produced for the UK government Office of Government Commerce in the 1980s. Ever since, according to Elliott (2004), "the traditional life cycle approaches to systems development have been increasingly replaced with alternative approaches and frameworks, which attempted to overcome some of the inherent deficiencies of the traditional SDLC". The main idea of the SDLC has been "to pursue the development of information systems in a very deliberate, structured and methodical way, requiring each stage of the life cycle––from the inception of the idea to delivery of the final system––to be carried out rigidly and sequentially" within the context of the framework being applied.
-Other methodologies were devised later:
-
-1970s
-Structured programming since 1969
-Cap Gemini SDM, originally from PANDATA, the first English translation was published in 1974. SDM stands for System Development Methodology
-1980s
-Structured systems analysis and design method (SSADM) from 1980 onwards
-Information Requirement Analysis/Soft systems methodology
-1990s
-Object-oriented programming (OOP) developed in the early 1960s and became a dominant programming approach during the mid-1990s
-Rapid application development (RAD), since 1991
-Dynamic systems development method (DSDM), since 1994
-Scrum, since 1995
-Team software process, since 1998
-Rational Unified Process (RUP), maintained by IBM since 1998
-Extreme programming, since 1999
-2000s
-Agile Unified Process (AUP) maintained since 2005 by Scott Ambler
-Disciplined agile delivery (DAD) Supersedes AUP
-2010s
-Scaled Agile Framework (SAFe)
-Large-Scale Scrum (LeSS)
-DevOps
-Since DSDM in 1994, all of the methodologies on the above list except RUP have been agile methodologies - yet many organizations, especially governments, still use pre-agile processes (often waterfall or similar). 
-
 ### Examples
 
 The following are notable methodologies somewhat ordered by popularity.

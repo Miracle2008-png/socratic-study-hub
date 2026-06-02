@@ -877,14 +877,3 @@ where:
  is the length scale of interest (m)
 The mass-transfer Fourier number can be applied to the study of certain time-dependent mass diffusion problems.
 
-
-## See also
-Biot number
-Convection
-Heat conduction
-Heat equation
-Molecular diffusion
-Dimensionless numbers in fluid mechanics
-
-
-## References

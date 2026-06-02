@@ -57,17 +57,3 @@ Similarly, British intelligence conducted disinformation support for the Allied 
 Many Russian writers believe that another textbook example of reflexive control is the American Strategic Defense Initiative program, which forced the Soviet Union to spend significant resources to develop a similar space system.
 According to a number of non-Russian researchers, manipulative methods from the field of reflexive control form the basis of Russia's new concept of military action in the 21st century, which in the West has been called "New Generation Warfare". At the same time, some publications have been critical of the applied aspects of this theory, and it has even been called pseudoscientific.
 
-
-## References
-
-
-## Bibliography
-Thomas, Timothy L. (2004). "Russia's Reflexive Control Theory and the Military". Journal of Slavic Military Studies. 17 (2). Taylor & Francis: 237–256. doi:10.1080/13518040490450529. ISSN 1351-8046. S2CID 15779122.
-Денисов А. А., Денисова Е. В. Краткий очерк основ теории управляемой конфронтации (рус.) // Информационные войны : журнал. — 2014. — Т. 29, No. 1. — С. 24–33. — ISSN 1996-4544
-Лепский В. Е. Технологии управления в информационных войнах (от классики к постнеклассике). — Москва: Когито-Центр, 2016. — С. 160. — ISBN 978-5-89353-499-3
-Нургалеева Л. В. Проблема рефлексивного управления как аспект современной коммуникативной культуры (рус.) // Вестник Томского государственного университета : журнал. — 2013. — Т. 10, No. 2.
-Раскин А. В., Тарасов И. В. Рефлексивное управление как технология информационного воздействия (рус.) // Информационные войны : журнал. — 2014. — Т. 29, No. 2. — С. 15–17. — ISSN 1996-4544
-Чепиницкая П. Р. Технологии социальной регуляции в рефлексивном управлении российской зарубежной диаспорой (рус.) // Теория и практика общественного развития : журнал. — 2011. — No. 3.
-Jainter M., Kantola H. Reflexive Control in Cyber Space (англ.) // Academic Conferences International Limited. — 2016. — Июль. — С. 155–162.
-Kasapoglu C. Russia's Renewed Military Thinking: Non-Linear Warfare and Reflexive Control (англ.) // Research Division, NATO Defence College : Research Paper. — 2015. — Ноябрь (No. 121). — С. 1–12. — ISSN 2076-0949
-Thomas T. Psycho Viruses and Reflexive Control: Russian Theories of Information-Psychological War // Information at War: From China's Three Warfares to NATO's Narratives. — London: Legatum Institute, 2015. — Vol. September. — P. 16–21. — (Beyond Propaganda). — ISBN 978-1-907409-93-6

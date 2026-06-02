@@ -61,12 +61,6 @@ Unit operations
 Unit Operations of Chemical Engineering
 
 
-## History of chemical engineering
-History of chemical engineering
-
-Batch production
-
-
 ## General chemical engineering concepts
 Chemical engineer
 Chemical reaction
@@ -86,26 +80,3 @@ FEED
 ## Leaders in chemical engineering
 List of chemical engineers
 
-
-## See also
-
-Outline of chemistry
-
-
-## References
-
-
-## External links
-
-Computer Aids for Chemical Engineering Education (CACHE)
-Engineering Learning Resources Wiki
-What is a Chemical Engineer?
-Chemical Engineers' Resource Page
-History of Chemical Engineering Timeline
-American Institute of Chemical Engineers (USA)
-Institution of Chemical Engineers (UK)
-Canadian Society for Chemical Engineers
-Brazilian Association of Chemical Engineering (BRA)
-Engineers Australia (AUS)
-Chemical Engineering Information -Turkey (TR)
-Chemical Engineering Information Exchange)

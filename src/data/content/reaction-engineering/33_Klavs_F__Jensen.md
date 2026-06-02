@@ -59,15 +59,3 @@ Axel Gunther, Klavs F Jensen "Multiphase microfluidics: from flow characteristic
 Harry Moffat, Klavs F Jensen "Complex flow phenomena in MOCVD reactors: I. Horizontal reactors", Journal of Crystal Growth 77(1–3), 108–119 (1986).
 Lisi Xie, Qing Zhao, Klavs F. Jensen,  Heather J. Kulik "Direct Observation of Early-Stage Quantum Dot Growth Mechanisms with High-Temperature Ab Initio Molecular Dynamics", The Journal of Physical Chemistry C 120(4), 2472–2483 (2016).
 
-
-## See also
-Transfection
-
-
-## References
-
-
-## External links
-Jensen Research Group – MIT
-Klavs F. Jensen – Faculty Website, MIT
-Klavs F. Jensen publications indexed by Google Scholar

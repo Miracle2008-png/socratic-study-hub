@@ -35,27 +35,3 @@ The contact angle is determined by solving the Young's equation for the interfac
 Synthetic membranes can be also categorized based on their structure (morphology). Three such types of synthetic membranes are commonly used in separation industry: dense membranes, porous membranes, and asymmetric membranes. Dense and porous membranes are distinct from each other based on the size of separated molecules. Dense membrane is usually a thin layer of dense material utilized in the separation processes of small molecules (usually in gas or liquid phase). Dense membranes are widely used in industry for gas separations and reverse osmosis applications.
 Dense membranes can be synthesized as amorphous or heterogeneous structures. Polymeric dense membranes such as polytetrafluoroethylene and cellulose esters are usually fabricated by compression molding, solvent casting, and spraying of a polymer solution. The membrane structure of a dense membrane can be in a rubbery or a glassy state at a given temperature depending on its glass transition temperature . Porous membranes are intended on separation of larger molecules such as solid colloidal particles, large biomolecules (proteins, DNA, RNA) and cells from the filtering media. Porous membranes find use in the microfiltration, ultrafiltration, and dialysis applications. There is some controversy in defining a "membrane pore". The most commonly used theory assumes a cylindrical pore for simplicity. This model assumes that pores have the shape of parallel, nonintersecting cylindrical capillaries. But in reality a typical pore is a random network of the unevenly shaped structures of different sizes. The formation of a pore can be induced by the dissolution of a "better" solvent into a "poorer" solvent in a polymer solution.  Other types of pore structure can be produced by stretching of crystalline structure polymers. The structure of porous membrane is related to the characteristics of the interacting polymer and solvent, components concentration, molecular weight, temperature, and storing time in solution.  The thicker porous membranes sometimes provide support for the thin dense membrane layers, forming the asymmetric membrane structures. The latter are usually produced by a lamination of dense and porous membranes.
 
-
-## See also
-Membrane technology
-
-
-## Notes
-
-
-## References
-Pinnau, I., Freeman, B.D., Membrane Formation and Modification, ACS, 1999.
-Osada, Y., Nakagawa, T., Membrane Science and Technology, New York: Marcel Dekker, Inc,1992.
-Perry, R.H., Green D.H., Perry’s Chemical Engineers’ Handbook,7th edition, McGraw-Hill, 1997.
-Zeman, Leos J., Zydney, Andrew L., Microfiltration and Ultrafitration, Principles and Applications., New York: Marcel Dekker, Inc,1996.
-Mulder M., Basic Principles of Membrane Technology, Kluwer Academic Publishers, Netherlands, 1996.
-Jornitz, Maik W., Sterile Filtration, Springer, Germany, 2006
-Jacob J., Pradanos P., Calvo J.I, Hernandez A., Jonsson G. Fouling kinetics and associated   dynamics of structural modifications. J. Coll and Surf. 138(1997): 173–183.
-Van Reis R., Zydney A. Bioprocess membrane technology.  J Mem Sci. 297(2007): 16–50.
-Madaeni S.S. The effect of large particles on microfiltration of small particles J. Por Mat. 8(2001): 143–148.
-Martinez F., Martin A., Pradanos P., Calvo J.I., Palacio L.., Hernandez A. Protein adsorption and deposition onto microfiltration membranes: the role of solute-solid interactions. J. Coll Interf Sci. 221(2000): 254–261.
-Palacio L., Ho C., Pradanos P.,  Calvo J.I, Kherif G., Larbot A., Hernandez A. Fouling, structure and charges of composite inorganic microfiltration membrane. J. Coll and Surf.  138(1998): 291–299.
-Templin T., Johnston D., Singh V., Tumbleson M.E., Belyea R.L. Rausch K.D. Membrane separation of solids from corn processing streams. Biores  Tech.  97(2006): 1536–1545.
-Zydney A. L., Ho C. Effect of Membrane Morphology on System Capacity During Normal Flow Microfiltration. Biotechnol, Bioeng. 83(2003): 537–543.
-Ripperger S., Schulz G. Microporous membranes in biotechnical applications. Bioprocess Eng. 1(1986): 43–49.
-Ho C., Zydney A. Protein fouling of asymmetric and composite microfiltration membranes. Ind Eng Chem  Res. 40(2001): 1412–1421.

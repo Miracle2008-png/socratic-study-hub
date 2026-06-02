@@ -12,14 +12,6 @@ The physical universe has been defined as "The totality of all space and time; a
 Some philosophers and scientists support the inclusion of ideas and abstract concepts—such as mathematics and logic—in the definition of the universe. The word universe may also refer to concepts such as the cosmos, the world, and nature.
 
 
-## Etymology
-The word universe derives from the Old French word univers, which in turn derives from the Latin word universus, meaning 'combined into one'. The Latin word 'universum' was used by Cicero and later Latin authors in many of the same senses as the modern English word is used.
-
-
-### Synonyms
-A term for universe among the ancient Greek philosophers from Pythagoras onwards was τὸ πᾶν (tò pân) 'the all', defined as all matter and all space, and τὸ ὅλον (tò hólon) 'all things', which did not necessarily include the void. Another synonym was ὁ κόσμος (ho kósmos) meaning 'the world, the cosmos'. Synonyms are also found in Latin authors (totum, mundus, natura) and survive in modern languages, e.g., the German words Das All, Weltall, and Natur for universe. The same synonyms are found in English, such as everything (as in the theory of everything), the cosmos (as in cosmology), the world (as in the many-worlds interpretation), and nature (as in natural laws or natural philosophy).
-
-
 ## Chronology and the Big Bang
 
 The prevailing model for the evolution of the universe is the Big Bang theory. In the Big Bang model, the earliest state of the universe was extremely hot and dense but the universe cooled during subsequent expansion. The model is based on general relativity and on symmetry assumptions such as the homogeneity and isotropy of space. A version of the model with a cosmological constant (Lambda) and cold dark matter, known as the Lambda-CDM model, provides an excellent account of most observations of the universe. 
@@ -262,28 +254,3 @@ This cosmology was accepted by Isaac Newton, Christiaan Huygens and later scient
 During the 18th century, Immanuel Kant speculated that nebulae could be entire galaxies separate from the Milky Way, and in 1850, Alexander von Humboldt called these separate galaxies Weltinseln, or "world islands", a term that later developed into "island universes". In 1919, when the Hooker Telescope was completed, the prevailing view was that the universe consisted entirely of the Milky Way Galaxy. Using the Hooker Telescope, Edwin Hubble identified Cepheid variables in several spiral nebulae and in 1922–1923 proved conclusively that Andromeda Nebula and Triangulum among others, were entire galaxies outside our own, thus proving that the universe consists of a multitude of galaxies. With this Hubble formulated the Hubble constant, which allowed for the first time a calculation of the age of the universe and size of the Observable Universe, which became increasingly precise with better meassurements, starting at 2 billion years and 280 million light-years, until 2006 when data of the Hubble Space Telescope allowed a very accurate calculation of the age of the universe and size of the Observable Universe.
 The modern era of physical cosmology began in 1917, when Albert Einstein first applied his general theory of relativity to model the structure and dynamics of the universe. The discoveries of this era, and the questions that remain unanswered, are outlined in the sections above.
 
-
-## See also
-
-
-## References
-Footnotes
-
-Citations
-
-
-### Bibliography
-Van Der Waerden, B. L. (June 1987). "The Heliocentric System in Greek, Persian and Hindu Astronomy". Annals of the New York Academy of Sciences. 500 (1): 525–545. Bibcode:1987NYASA.500..525V. doi:10.1111/j.1749-6632.1987.tb37224.x. ISSN 0077-8923. S2CID 222087224.
-Landau LD, Lifshitz EM (1975). The classical theory of fields. Course of theoretical physics. Vol. 2 (4th rev. English ed.). Oxford; New York: Pergamon Press. pp. 358–397. ISBN 978-0-08-018176-9.
-Liddell, Henry George & Scott, Robert (1994). A Greek-English lexicon. Oxford: Clarendon Pr. ISBN 978-0-19-864214-5.
-Misner, Charles W.; Thorne, Kip S.; Wheeler, John Archibald; Kip; Wheeler; J.A. (2008). Gravitation (27. printing ed.). New York, NY: Freeman. pp. 703–816. ISBN 978-0-7167-0344-0.
-Raine, Derek; Thomas, Edwin G. (2001). An introduction to the science of cosmology. Series in astronomy and astrophysics. Bristol: Institute of Physics Publ. ISBN 978-0-7503-0405-4.
-Rindler, Wolfgang (1986). Essential relativity: special, general, and cosmological. Texts and monographs in physics. New York Heidelberg: Springer. pp. 193–244. ISBN 978-0-387-10090-6.
-Rees, Martin J.; DK Publishing, Inc; Smithsonian Institution, eds. (2012). Universe (Rev. ed.). New York: DK Pub. ISBN 978-0-7566-9841-6. OCLC 809932784.
-
-
-## External links
-
-NASA/IPAC Extragalactic Database (NED) / (NED-Distances).
-There are about 1082 atoms in the observable universe – LiveScience, July 2021.
-This is why we will never know everything about our universe – Forbes, May 2019.

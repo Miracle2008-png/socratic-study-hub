@@ -529,30 +529,3 @@ Coaxial stacking is technically under the umbrella of tertiary structure, but se
 
 The ViennaRNA software also contains adjustment data for the following bases, to be used as a "patch" on top of canonical-base models: 7DA, hU, I, m5C, m6A, m1Ψ, Ψ, and 9H-purine (nebularine). A description of the patching system is available as Varenyk et al. (2023).
 
-
-## See also
-
-Melting point
-Primer (molecular biology) for calculations of Tm
-Base pair
-Complementary DNA
-Western blot
-
-
-## References
-
-
-## External links
-
-Tm calculations in OligoAnalyzer – Integrated DNA Technologies
-DNA thermodynamics calculations – Tm, melting profile, mismatches, free energy calculations
-Tm calculation – by bioPHP.org.
-https://web.archive.org/web/20080516194508/http://www.promega.com/biomath/calc11.htm#disc
-Invitrogen Tm calculation
-AnnHyb Open Source software for Tm calculation using the Nearest-neighbour method
-Sigma-aldrich technical notes
-Primer3 calculation Archived 18 June 2010 at the Wayback Machine
-"Discovery of the Hybrid Helix and the First DNA-RNA Hybridization" Archived 8 June 2009 at the Wayback Machine by Alexander Rich
-uMelt: Melting Curve Prediction
-Tm Tool
-Nearest Neighbor Database: Provides a description of RNA-RNA interaction nearest neighbor parameters and examples of their use.

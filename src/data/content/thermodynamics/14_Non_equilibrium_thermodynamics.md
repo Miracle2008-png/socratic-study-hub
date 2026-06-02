@@ -1040,22 +1040,3 @@ Non-equilibrium thermodynamics has been successfully applied to describe biologi
 It is also used to give a description of the dynamics of nanoparticles, which can be out of equilibrium in systems where catalysis and electrochemical conversion is involved. 
 Also, ideas from non-equilibrium thermodynamics and the informatic theory of entropy have been adapted to describe general economic systems.
 
-
-## See also
-
-
-## References
-
-
-### Sources
-
-
-## Further reading
-
-
-## External links
-Stephan Herminghaus' Dynamics of Complex Fluids Department at the Max Planck Institute for Dynamics and Self Organization
-Non-equilibrium Statistical Thermodynamics applied to Fluid Dynamics and Laser Physics - 1992- book by Xavier de Hemptinne.
-Nonequilibrium Thermodynamics of Small Systems - PhysicsToday.org
-Into the Cool - 2005 book by Dorion Sagan and Eric D. Schneider, on nonequilibrium thermodynamics and evolutionary theory.
-"Thermodynamics "beyond" local equilibrium"

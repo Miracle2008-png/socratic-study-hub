@@ -17,7 +17,3 @@ Droplet formation mostly depends on momentum, viscosity and surface tension. In 
 ## List
 All numbers are dimensionless quantities.  See other article for extensive list of dimensionless quantities.  Certain dimensionless quantities of some importance to fluid mechanics are given below:
 
-
-## References
-
-Tropea, C.; Yarin, A.L.; Foss, J.F. (2007). Springer Handbook of Experimental Fluid Mechanics. Springer-Verlag. Bibcode:2007hefm.book.....T.

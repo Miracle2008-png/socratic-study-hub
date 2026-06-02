@@ -386,20 +386,3 @@ In the literature, there are two types of MPCs for stochastic systems; Robust mo
 In a continuous time approach in a finance context, the state variable in the stochastic differential equation is usually wealth or net worth, and the controls are the shares placed at each time in the various assets. Given the asset allocation chosen at any time, the determinants of the change in wealth are usually the stochastic returns to assets and the interest rate on the risk-free asset. The field of stochastic control has developed greatly since the 1970s, particularly in its applications to finance. Robert Merton used stochastic control to study optimal portfolios of safe and risky assets. His work and that of Black–Scholes changed the nature of the finance literature. Influential mathematical textbook treatments were by Fleming and Rishel, and by Fleming and Soner. These techniques were applied by Stein to the 2008 financial crisis.
 The maximization, say of the expected logarithm of net worth at a terminal date T, is subject to stochastic processes on the components of wealth. In this case, in continuous time Itô's equation is the main tool of analysis. In the case where the maximization is an integral of a concave function of utility over an horizon (0,T), dynamic programming is used. There is no certainty equivalence as in the older literature, because the coefficients of the control variables—that is, the returns received by the chosen shares of assets—are stochastic.
 
-
-## See also
-Backward stochastic differential equation
-Stochastic process
-Control theory
-Multiplier uncertainty
-Stochastic scheduling
-Separation principle in stochastic control
-
-
-## References
-
-
-## Further reading
-Dixit, Avinash (1991). "A Simplified Treatment of the Theory of Optimal Regulation of Brownian Motion". Journal of Economic Dynamics and Control. 15 (4): 657–673. doi:10.1016/0165-1889(91)90037-2.
-Yong, Jiongmin; Zhou, Xun Yu (1999). Stochastic Controls : Hamiltonian Systems and HJB Equations. New York: Springer. ISBN 0-387-98723-1.
-Rogers, L.C.G. (2013). Optimal Investment. Heidelberg: Springer. doi:10.1007/978-3-642-35202-7. ISBN 978-3-642-35201-0.

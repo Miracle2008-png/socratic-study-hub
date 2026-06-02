@@ -163,8 +163,3 @@ All solar cells require a light absorbing material contained within the cell str
 
 ### Materials science
 
-
-## References
-
-
-## External links

@@ -4,10 +4,6 @@ The self-control theory of crime, often referred to as the general theory of cri
 The theory was originally developed by criminologists Travis Hirschi  and  Michael Gottfredson, but has since been subject to a great deal of theoretical debate and a large and growing empirical literature.
 
 
-## Theory and background
-Springing from interest in bonding theory, Hirschi—in co-operation with Gottfredson—has developed the "General Theory of Crime" or self-control theory from 1990 onward. Based on the empirical observation of the connection between criminal behavior and age, Hirschi and Gottfredson theorized that an important factor behind crime is individual lack of self-control. Individual self-control improves with age as a result of many factors: changing biology through hormonal development, socialization and increasing opportunity costs of losing control. In addition, criminal acts are often markedly non-controlled; they are both opportunistic and short-sighted. It is essentially the extent to which different people are vulnerable to the temptations of the moment.
-
-
 ## Self-control in psychology
 Freud (1911, 1959) established a foundation for the concept of self-control with his "pleasure-principle" and "reality-principle". Respectively, these refer to the desire for immediate gratification and the delay of gratification. The pleasure principle drives an individual to look for pleasure and to avoid pain. However, in the process of growing up, the individual learns the necessity of enduring pain and delaying gratification because of the obstacles created by the realities of life. More recent psychological research has retained a notion of self-control as referring to an individual's decision or ability to delay immediate gratification of desires in order to reach larger alternative goals.
 
@@ -24,13 +20,3 @@ Another criticism of Gottfredson and Hirshi's self control theory is that it dow
 ## Empirical support
 The research community remains divided on whether the General Theory of Crime is sustainable but there is emerging confirmation of some of its predictions (e.g. LaGrange & Silverman: 1999). A number of empirical studies—including meta-analysis—have confirmed that individual self-control is in fact a strong predictors of crime, when compared to a range of factors at various levels of analysis.
 
-
-## See also
-Control theory (sociology)
-Right realism
-Social control theory
-Reality Principle
-Pleasure Principle
-
-
-## References

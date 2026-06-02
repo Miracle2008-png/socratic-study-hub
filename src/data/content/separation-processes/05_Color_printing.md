@@ -4,41 +4,6 @@ Color printing or colour printing is the reproduction of an image or text in col
 or monochrome printing).
 
 
-## History of color printing
-Woodblock printing on textiles preceded printing on paper in both East Asia and Europe, and the use of different blocks to produce patterns in color was common.  The earliest way of adding color to items printed on paper was by hand-coloring, and this was widely used for printed images in both Europe and East Asia. Chinese woodcuts have this from at least the 13th century, and European ones from very shortly after their introduction in the 15th century, where it continued to be practiced, sometimes at a very skilled level, until the 19th century—elements of the official British Ordnance Survey maps were hand-colored by boys until 1875.  Early European printed books often left spaces for initials, rubrics and other elements to be added by hand, just as they had been in manuscripts, and a few early printed books had elaborate borders and miniatures added. However this became much rarer after about 1500.
-
-
-### East Asia
-Traditional East Asian printing of both text and images used woodblock printing, effectively the same technique as woodcut in the West, and printing in a number of colors by using multiple blocks, each inked in a different color,  was known from early on.
-
-
-#### China
-British art historian Michael Sullivan writes that "the earliest color printing known in China, and indeed in the whole world, is a two-color frontispiece to a Buddhist sutra scroll, dated 1346". Color prints were also used later in the Ming Dynasty. In Chinese woodblock printing, early color woodcuts mostly occur in luxury books about art, especially the more prestigious medium of painting. The first known example is a book on ink-cakes printed in 1606, and color technique reached its height in books on painting published in the seventeenth century. Notable examples are Ming-era Chinese painter Hu Zhengyan's Treatise on the Paintings and Writings of the Ten Bamboo Studio of 1633, and the Manual of the Mustard Seed Garden published in 1679 and 1701, and printed in five colors.
-
-
-#### Japan
-
-In Japan, color woodcuts were used for both sheet prints and book illustrations, though these techniques are better known within the history of prints. The "full-color" technique, called nishiki-e in its fully developed form, spread rapidly, and was used widely for sheet prints from the 1760s on. Text was nearly always monochrome, and many books continued to be published with monochrome illustrations sumizuri-e, but the growth of the popularity of ukiyo-e brought with it demand for ever increasing numbers of colors and complexity of techniques. By the nineteenth century most artists designed prints that would be published in color. Major stages of this development were:
-
-Sumizuri-e (墨摺り絵, "ink printed pictures") - monochrome printing using only black ink
-Tan-e (丹絵) - monochrome sumizuri-e prints with handcoloring; distinguished by use of orange highlights using a red pigment called tan
-"Beni-e" (紅絵, "red pictures") - monochrome sumizuri-e prints with handcoloring; distinguished by use of red ink details or highlights. Should not be confused with "benizuri-e", below.
-Urushi-e (漆絵) - a method in which glue was used to thicken the ink, emboldening the image; gold, mica and other substances were often used to enhance the image further. This technique was often used in combination with hand coloring. Urushi-e can also refer to paintings using lacquer instead of paint; lacquer was very rarely if ever used on prints.
-Benizuri-e (紅摺り絵, "crimson printed pictures") - images printed in two or three colors, usually containing red and green pigments, as well as black ink. This printing technique should not be confused with "beni-e", above. Both "beni-e" and "benizuri-e" are so named for the predominant reddish colorants, derived from dyes of the safflower plant (beni 紅).
-Nishiki-e (錦絵, "brocade pictures") - a method in which multiple blocks were used for separate portions of the image, allowing a number of colors to be utilized to achieve incredibly complex and detailed images; a separate block would be carved to apply only to the portion of the image designated for a single color. Registration marks called kentō (見当) were used to ensure correspondence between the application of each block.
-Further developments followed from refinements of technique and trends in taste. For instance:
-
-Aizuri-e (藍摺り絵, "indigo printed pictures"), Murasaki-e (紫絵, "purple pictures"), and other styles in which a single color would be used in addition to, or instead of, black ink. These are specialty techniques that grew in popularity in the nineteenth century, though a few examples can be seen earlier.
-
-
-### Europe
-
-Most early methods of color printing involved several prints, one for each color, although there were various ways of printing two colors together if they were separate. Liturgical and many other kinds of books required rubrics, normally printed in red; these were long done by a separate print run with a red forme for each page.  Other methods were used for single-leaf prints. The chiaroscuro woodcut was a European method developed in the early 16th century, where to a normal woodcut block with a linear image (the "line block"), one or more colored "tone blocks" printed in different colors would be added. This was the method developed in Germany; in Italy only tone blocks were often used, to create an effect more like a wash drawing. Jacob Christoph Le Blon developed a method using three intaglio plates, usually in mezzotint; these were overprinted to achieve a wide range of colors.
-In the 19th century a number of different methods of color printing, using woodcut (technically Chromoxylography) and other methods, were developed in Europe, which for the first time achieved widespread commercial success, so that by the later decades the average home might contain many examples, both hanging as prints and as book illustrations. George Baxter patented in 1835 a method using an intaglio line plate (or occasionally a lithograph), printed in black or a dark color, and then overprinted with up to twenty different colors from woodblocks. Edmund Evans used relief and wood throughout, with up to eleven different colors, and latterly specialized in illustrations for children's books, using fewer blocks but overprinting non-solid areas of color to achieve blended colors. English Artists such as Randolph Caldecott, Walter Crane and Kate Greenaway were influenced by the Japanese prints now available and fashionable in Europe to create a suitable style, with flat areas of color.
-Chromolithography was another process, which by the end of the 19th century had become dominant, although this used multiple prints with a stone for each color. Mechanical color separation, initially using photographs of the image taken with three different color filters, reduced the number of prints needed to three. Zincography, with zinc plates, later replaced lithographic stones, and remained the most common method of color printing until the 1930s.
-Multi-stone chromolithography enabled richly colored commercial prints in the 19th century. With the adoption of photographic halftone screening in the late 19th and early 20th centuries, newspapers and magazines could reproduce tonal images more economically. Typical screen rulings were about 50–85 lines per inch (lpi) for newsprint and 100-120 lpi for magazines, with 120-150 lpi used for higher-quality work; federal digitization guidance notes ~85 lpi as common for newspapers and higher ranges for quality coated papers.
-
-
 ## Modern techniques
 
 
@@ -72,32 +37,3 @@ The glass screens were made obsolete by high-contrast films where the halftone d
 Screens with a "frequency" of 60 to 120 lines per inch (lpi) reproduce color photographs in newspapers. The coarser the screen (lower frequency), the lower the quality of the printed image. Highly absorbent newsprint requires a lower screen frequency than less-absorbent coated paper stock used in magazines and books, where screen frequencies of 133 to 200 lpi and higher are used.
 The measure of how much an ink dot spreads and becomes larger on paper is called dot gain. This phenomenon must be accounted for in photographic or digital preparation of screened images. Dot gain is higher on more absorbent, uncoated paper stock such as newsprint.
 
-
-## See also
-Block printing
-Flexography
-Letterpress printing
-Offset printing
-Rotogravure
-Text color
-Typography
-Warner-Powrie process
-
-
-## References
-
-
-## Notes
-Bruno, Michael H. (Ed.) (1995). Pocket Pal: A Graphic Arts Production Handbook (16th ed.). Memphis: International Paper
-Gascoigne, Bamber. How to Identify Prints: A Complete Guide to Manual and Mechanical Processes from Woodcut to Inkjet, 1986 (2nd Edition, 2004), Thames & Hudson, ISBN 0-500-23454-X
-Hunt, R.W.G., The Reproduction of Color (1957, 1961, 1967, 1975) ISBN 0-85242-356-X
-Yule, John A.C., Principles of Color Reproduction (1967, 2000) ISBN 0-88362-222-X
-Morovic, J., Color Gamut Mapping (2008) ISBN 978-0-470-03032-5
-
-
-## Further reading
-
-Bruno, Michael H. (Ed.)  (October 2000). Pocket Pal: A Graphic Arts Production Handbook Graphic Arts Technical Fndtn; 18th edition, ISBN 0-88362-338-2
-Hardie, Martin, English Coloured Books (1906, reprinted 1990)
-Gascoigne, Bamber, Milestones in Colour Printing 1457-1859 (Cambridge UP, 1997)
-Also various articles in the Journal of the Printing Historical Society - see: http://www.printinghistoricalsociety.org.uk/journal_indices/index.html

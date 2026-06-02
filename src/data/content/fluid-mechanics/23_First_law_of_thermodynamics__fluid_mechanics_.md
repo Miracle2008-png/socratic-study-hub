@@ -901,13 +901,3 @@ i.e. enthalpy per unit mass equals proper energy per unit mass plus pressure tim
     {\displaystyle {\frac {\partial \rho }{\partial t}}+\nabla \cdot {\mathbf {J} }=0}
   
 
-
-## See also
-Clausius–Duhem inequality
-Continuum mechanics
-First law of thermodynamics
-Material derivative
-Incompressible flow
-
-
-## References

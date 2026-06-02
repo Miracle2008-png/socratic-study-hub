@@ -74,21 +74,3 @@ SEI has been an occasional site of anti-war movement and peace movement protests
 
 SEI served as the Blackgate Prison in the 2012 film The Dark Knight Rises.
 
-
-## See also
-
-Software engineer
-Personal software process (PSP)
-Team software process (TSP)
-
-
-## References
-
-
-## Further reading
-Fenton, Edwin (2000). Carnegie Mellon 1900–2000: A Centennial History. Pittsburgh: Carnegie Mellon University Press. ISBN 0-88748-323-2.
-
-
-## External links
-
-Official website

@@ -20,20 +20,3 @@ While thermodynamic equilibrium determines the theoretical extent of a given mas
 There are notable similarities in the commonly used approximate differential equations for momentum, heat, and mass transfer. The molecular transfer equations of Newton's law for fluid momentum at low Reynolds number (Stokes flow), Fourier's law for heat, and Fick's law for mass are very similar, since they are all linear approximations to transport of conserved quantities in a flow field. 
 At higher Reynolds number, the analogy between mass and heat transfer and momentum transfer becomes less useful due to the nonlinearity of the Navier–Stokes equation (or more fundamentally, the general momentum conservation equation), but the analogy between heat and mass transfer remains good. A great deal of effort has been devoted to developing analogies among these three transport processes so as to allow prediction of one from any of the others.
 
-
-## References
-
-
-## See also
-Crystal growth
-Heat transfer
-Fick's laws of diffusion
-Fractionating column
-McCabe–Thiele method
-Vapor–liquid equilibrium
-Liquid–liquid extraction
-Separation process
-Binary star
-Type Ia supernova
-Thermodiffusion
-Accretion (astrophysics)

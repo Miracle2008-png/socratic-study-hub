@@ -3,12 +3,6 @@
 The following timeline tables list the discoveries and inventions in the history of electrical and electronics engineering.
 
 
-## History of discoveries timeline
-
-
-## History of associated inventions timeline
-
-
 ## Innovations in consumer electronics
 
 
@@ -198,22 +192,3 @@ The company Ampex introduces the "VR 1000" the first video recorder. That same y
 By merging the Edison patents and the Berliner, the Blumlein stereo recording method becomes commercially viable. The company Mercury Records launches the first stereo record on the market.
 The company Ampex expands the video recorder with the Model "VR 1000 B" to give it color capability.
 
-
-## See also
-
-Electronics
-History of electronic engineering
-List of electrical engineering journals
-List of electrical engineers
-Timeline of historic inventions
-Timeline of heat engine technology
-Timeline of quantum computing and communication
-Timeline of computing
-Computer History Museum
-
-
-## References
-
-
-## External links
-List of IEEE Milestones

@@ -23,15 +23,3 @@ Milk can also be fractionated to recover the milk protein concentrate or the mil
 
 ## Isotope fractionation
 
-
-## See also
-Copurification
-List of purification methods in chemistry
-Transposition cipher#Fractionation
-
-
-## References
-
-
-## Further reading
-Houghton, Peter J.; Raman, Amala (1998). Laboratory Handbook for the Fractionation of Natural Extracts. doi:10.1007/978-1-4615-5809-5. ISBN 978-1-4613-7662-0.

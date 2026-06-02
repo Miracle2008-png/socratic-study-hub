@@ -26,29 +26,3 @@ Job prospects for construction engineers generally have a strong cyclical variat
 ## Remuneration
 The average salary for a civil engineer in the UK depends on the sector and more specifically the level of experience of the individual. A 2010 survey of the remuneration and benefits of those occupying jobs in construction and the built environment industry showed that the average salary of a civil engineer in the UK is £29,582. In the United States, as of May 2013, the average was $85,640. The average salary varies depending on experience, for example the average annual salary for a civil engineer with between 3 and 6 years' experience is £23,813. For those with between 14 and 20 years' experience the average is £38,214.
 
-
-## See also
-
-Architectural engineering
-Building officials
-Civil engineering
-Constructability
-Construction communication
-Construction estimating software
-Construction law
-Construction management
-Cost engineering
-Cost overrun
-Earthquake engineering
-Engineering, procurement and construction (EPC)
-Engineering, procurement, construction and installation, (EPCI)
-Index of construction articles
-International Building Code
-List of BIM software
-Military engineering
-Quantity surveyor
-Structural engineering
-Work breakdown structure
-
-
-## References

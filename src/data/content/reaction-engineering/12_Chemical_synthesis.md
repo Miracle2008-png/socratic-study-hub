@@ -44,13 +44,3 @@ Catalysis: The development of catalysts is vital for numerous industrial process
 Medicine: Organic synthesis plays a vital role in drug discovery, allowing chemists to develop and optimize new drugs by modifying organic molecules. Additionally, the synthesis of metal complexes for medical imaging and cancer treatments is a key application of chemical synthesis, enabling advanced diagnostic and therapeutic techniques.
 Biopharmaceuticals: Chemical synthesis is critical in the production of biopharmaceuticals, including monoclonal antibodies and other biologics. Chemical synthesis enables the creation and modification of organic and biologically sourced compounds used in these treatments. Advanced techniques, such as DNA recombinant technology and cell fusion, rely on chemical synthesis to produce biologics tailored for specific diseases, ensuring they work effectively and target diseases precisely.
 
-
-## See also
-
-
-## References
-
-
-## External links
-The Organic Synthesis Archive
-Natural product syntheses

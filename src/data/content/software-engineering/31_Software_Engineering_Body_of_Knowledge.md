@@ -99,18 +99,3 @@ Systems engineering
 ## Similar efforts
 A similar effort to define a body of knowledge for software engineering is the "Computing Curriculum Software Engineering (CCSE)," officially named Software Engineering 2004 (SE2004). The curriculum largely overlaps with SWEBOK 2004 since the latter has been used as one of its sources, although it is more directed towards academia. Whereas the SWEBOK Guide defines the software engineering knowledge that practitioners should have after four years of practice, SE2004 defines the knowledge that an undergraduate software engineering student should possess upon graduation (including knowledge of mathematics, general engineering principles, and other related areas). SWEBOK V3 aims to address these intersections.
 
-
-## See also
-Project Management Body of Knowledge (PMBOK)
-Enterprise Architecture Body of Knowledge (EABOK)
-Systems Engineering Body of Knowledge (SEBOK)
-Automation Body of Knowledge (ABOK)
-Data Management Body of Knowledge (DMBOK)
-ISO/IEC JTC 1/SC 7
-
-
-## References
-
-
-## External links
-Official website

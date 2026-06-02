@@ -217,12 +217,3 @@ where N is number of particles, h is that Planck constant, I is moment of inerti
 
 ### Thermal efficiencies
 
-
-## See also
-
-
-## References
-
-
-## External links
-Thermodynamic equation calculator

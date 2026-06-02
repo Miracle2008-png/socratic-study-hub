@@ -3,10 +3,6 @@
 The Marangoni effect (also called the Gibbs–Marangoni effect) is the mass transfer along an interface between two phases due to a gradient of the surface tension. In the case of temperature dependence, this phenomenon may be called thermo-capillary convection or Bénard–Marangoni convection.
 
 
-## History
-This phenomenon was first identified in the so-called "tears of wine" by physicist James Thomson (Lord Kelvin's brother) in 1855. The general effect is named after Italian physicist Carlo Marangoni, who studied it for his doctoral dissertation at the University of Pavia and published his results in 1865. A complete theoretical treatment of the subject was given by J. Willard Gibbs in his work On the Equilibrium of Heterogeneous Substances (1875–1878).
-
-
 ## Mechanism
 Since a liquid with a high surface tension pulls more strongly on the surrounding liquid than one with a low surface tension, the presence of a gradient in surface tension will naturally cause the liquid to flow away from regions of low surface tension. The surface tension gradient can be caused by concentration gradient or by a temperature gradient (surface tension is an inversely proportional function of temperature).
 In simple cases, the speed of the flow 
@@ -498,15 +494,3 @@ A similar phenomenon has been creatively utilized to self-assemble nanoparticles
 Another application is the manipulation of particles taking advantage of the relevance of the surface tension effects at small scales. A controlled thermo-capillary convection is created by locally heating the air–water interface using an infrared laser. Then, this flow is used to control floating objects in both position and orientation and can prompt the self-assembly of floating objects, profiting from the Cheerios effect.
 The Marangoni effect is also important to the fields of welding, crystal growth and electron beam melting of metals.
 
-
-## See also
-Plateau–Rayleigh instability — an instability in a stream of liquid
-Diffusioosmosis - the Marangoni effect is flow at a fluid/fluid interface due to a gradient in the interfacial free energy, the analog at a fluid/solid interface is diffusioosmosis
-
-
-## References
-
-
-## External links
-Motoring Oil Drops Physical Review Focus February 22, 2005
-Thin Film Physics, ISS astronaut Don Pettit demonstrate. YouTube-movie.

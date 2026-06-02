@@ -168,19 +168,3 @@ In capillary column chromatography HETP is given by the Golay equation.
 ### Other applications
 The concept of theoretical plates or trays applies to other processes as well, such as capillary electrophoresis and some types of adsorption.
 
-
-## See also
-Batch distillation
-Continuous distillation
-Extractive distillation
-Fenske equation
-Fractional distillation
-McCabe–Thiele method
-
-
-## References
-
-
-## External links
-Distillation, An Introduction by Ming Tham, Newcastle University, UK
-Distillation Theory by Ivar J. Halvorsen and Sigurd Skogestad, Norwegian University of Science and Technology, Norway

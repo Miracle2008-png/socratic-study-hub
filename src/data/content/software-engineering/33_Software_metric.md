@@ -53,30 +53,3 @@ Additionally metrics vary between static and dynamic program code, as well as fo
 Some software development practitioners point out that simplistic measurements can cause more harm than good. Others have noted that metrics have become an integral part of the software development process.
 Impact of measurement on programmer psychology have raised concerns for harmful effects to performance due to stress, performance anxiety, and attempts to cheat the metrics, while others find it to have positive impact on developers value towards their own work, and prevent them being undervalued. Some argue that the definition of many measurement methodologies are imprecise, and consequently it is often unclear how tools for computing them arrive at a particular result, while others argue that imperfect quantification is better than none (“You can’t control what you can't measure.”). Evidence shows that software metrics are being widely used by government agencies, the US military, NASA, IT consultants, academic institutions, and commercial and academic development estimation software.
 
-
-## Further reading
-J. Smith, Introduction to Linear Programming, Acme Press, 2010. An introductory text.
-Reijo M.Savola, Quality of security metrics and measurements, Computers & Security, Volume 37, September 2013, Pages 78-90.
-
-
-## See also
-Goal Question-Metric
-List of tools for static code analysis
-Orthogonal Defect Classification
-Software engineering
-Software package metrics
-
-
-## References
-
-
-## External links
-Software Metrics (SQA.net)
-Software Engineering Metrics: What do they measure and how do we know
-NASA Standard NASA-STD-8739.8 (Software Assurance and Software Safety Standard)
-HIS Source Code Metrics (outdated but for reference; related see AUTOSAR)
-HIS Source Code Metrics version 1.3.1 01.04.2008 (outdated but for reference; related see AUTOSAR)
-A framework for source code metrics
-NASA.gov
-SonarQube Metric Definitions
-Metrics of Object Oriented Software (2010)

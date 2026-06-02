@@ -216,37 +216,3 @@ A bit further, in Book 3 Section 3. The technical revolutionary, scientists star
 #### O. F. Brusha
 Author of "This Is It!" Our Bountiful America, an alternate history of how the North American Technate would operate, through the perspective of Continental Board Directors and their tour to foreign diplomats.
 
-
-## See also
-Abundance
-Continentalism
-Cybernetics
-Cyberocracy
-Futurism
-Kardashev scale
-Machine Age
-Scientism
-Scientocracy
-Technocracy
-Technocratic Party of Canada
-Technological utopianism
-Thermoeconomics
-The Engineers and the Price System
-The Venus Project
-Positivism
-Post-scarcity
-
-
-## Notes
-
-
-## References
-
-
-## External links
-
-Official site
-David Adair (1970) The Technocrats 1919-1967: A Case Study of Conflict and Change in a Social Movement
-Technocracy Inc. (1933). Introduction to Technocracy. John Day Company – via Internet Archive.
-"Technocracy Incorporated (Magazine and Related) : Free Texts : Free Download". Internet Archive.
-"Administrative History of Technocracy Inc". Internet Archive.

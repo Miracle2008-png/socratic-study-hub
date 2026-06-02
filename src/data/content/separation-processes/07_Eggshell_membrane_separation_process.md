@@ -5,11 +5,6 @@ Nearly 30% of the eggs consumed each year are broken and processed or powdered i
 Many landfills are unwilling to take the waste because the shells and the attached membrane attract vermin. When unseparated, the calcium carbonate eggshell and protein-rich membrane have little or no value or use; however, the invention of an eggshell and membrane separator has allowed for the recycling of these two products.
 
 
-## Chemical background
-Chicken eggshells are made up of 95% calcium carbonate by weight and the remaining material is primarily organic matrix.
-Eggshell membrane is primarily composed of fibrous proteins such as collagen type I.
-
-
 ## Methods
 
 
@@ -41,5 +36,3 @@ The inventor of this method is Vladimir Vlad. The machine uses unseparated eggsh
 Eggshell, as a source of food-safe calcium carbonate, has uses in pharmaceuticals, food, and in general industry.
 Eggshell membrane is generally used as a dietary supplement.
 
-
-## References

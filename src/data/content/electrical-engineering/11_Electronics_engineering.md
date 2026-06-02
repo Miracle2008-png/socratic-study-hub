@@ -5,12 +5,6 @@ It covers fields such as analog electronics, digital electronics, consumer elect
 The Institute of Electrical and Electronics Engineers (IEEE) is one of the most important professional bodies for electronics engineers in the US; the equivalent body in the UK is the Institution of Engineering and Technology (IET). The International Electrotechnical Commission (IEC) publishes electrical standards including those for electronics engineering.
 
 
-## History and development
-
-Electronics engineering as a profession emerged following Karl Ferdinand Braun´s development of the crystal detector, the first semiconductor device, in 1874 and the identification of the electron in 1897 and the subsequent invention of the vacuum tube which could amplify and rectify small electrical signals, that inaugurated the field of electronics. Practical applications started with the invention of the diode by Ambrose Fleming and the triode by Lee De Forest in the early 1900s, which made the detection of small electrical voltages such as radio signals from a radio antenna possible with a non-mechanical device. The growth of electronics was rapid. By the early 1920s, commercial radio broadcasting and communications were becoming widespread and electronic amplifiers were being used in such diverse applications as long-distance telephony and the music recording industry.
-The discipline was further enhanced by the large amount of electronic systems development during World War II in such as radar and sonar, and the subsequent peace-time consumer revolution following the invention of transistor by William Shockley, John Bardeen and Walter Brattain.
-
-
 ## Specialist areas
 
 Electronics engineering has many subfields. This section describes some of the most popular.
@@ -83,19 +77,3 @@ Obsolescence of technical skills is a serious concern for electronics engineers.
 ## Technical Skills
 Technical skills such as knowledge of circuit design and testing circuits are incorporated in software such as LTSpice and Eagle. LTSpice is used for simulating and examining electronic circuits. Eagle is used to view and design printed circuit boards.
 
-
-## See also
-
-Comparison of EDA software
-Electrical engineering technology
-Glossary of electrical and electronics engineering
-Index of electrical engineering articles
-Information engineering
-List of electrical engineers
-Timeline of electrical and electronics engineering
-
-
-## References
-
-
-## External links

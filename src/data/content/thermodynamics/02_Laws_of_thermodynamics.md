@@ -9,11 +9,6 @@ The third law of thermodynamics states that a system's entropy approaches a cons
 The first and second laws prohibit two kinds of perpetual motion machines, respectively: the perpetual motion machine of the first kind which produces work with no energy input, and the perpetual motion machine of the second kind which spontaneously converts thermal energy into mechanical work.
 
 
-## History
-
-The history of thermodynamics is fundamentally interwoven with the history of physics and the history of chemistry, and ultimately dates back to theories of heat in antiquity. The laws of thermodynamics are the result of progress made in this field over the nineteenth and early twentieth centuries. The first established thermodynamic principle, which eventually became the second law of thermodynamics, was formulated by Sadi Carnot in 1824 in his book Reflections on the Motive Power of Fire. By 1860, as formalized in the works of scientists such as Rudolf Clausius and William Thomson, what are now known as the first and second laws were established. Later, Nernst's theorem (or Nernst's postulate), which is now known as the third law, was formulated by Walther Nernst over the period 1906–1912. While the numbering of the laws is universal today, various textbooks throughout the 20th century have numbered the laws differently.  In some fields, the second law was considered to deal with the efficiency of heat engines only, whereas what was called the third law dealt with entropy increases. Gradually, this resolved itself and a zeroth law was later added to allow for a self-consistent definition of temperature. Additional laws have been suggested, but have not achieved the generality of the four accepted laws, and are generally not discussed in standard textbooks.
-
-
 ## Zeroth law
 The zeroth law of thermodynamics provides for the foundation of temperature as an empirical parameter in thermodynamic systems and establishes the transitive relation between the temperatures of multiple bodies in thermal equilibrium. The law may be stated in the following form:
 
@@ -490,27 +485,3 @@ where i, k = 1,2,3,... index every parameter and its related force, and
 
 are called the thermodynamic flows.
 
-
-## See also
-Black hole thermodynamics
-Chemical thermodynamics
-Enthalpy
-Entropy production
-Ginsberg's theorem (Parody of the laws of thermodynamics)
-H-theorem
-Statistical mechanics
-Table of thermodynamic equations
-
-
-## References
-
-
-## Further reading
-Atkins, Peter (2007). Four Laws That Drive the Universe. OUP Oxford. ISBN 978-0199232369
-Goldstein, Martin & Inge F. (1993). The Refrigerator and the Universe. Harvard Univ. Press. ISBN 978-0674753259
-Guggenheim, E.A. (1985). Thermodynamics. An Advanced Treatment for Chemists and Physicists, seventh edition. ISBN 0-444-86951-4
-Adkins, C. J., (1968) Equilibrium Thermodynamics. McGraw-Hill ISBN 0-07-084057-1
-
-
-## External links
- Media related to Laws of thermodynamics at Wikimedia Commons

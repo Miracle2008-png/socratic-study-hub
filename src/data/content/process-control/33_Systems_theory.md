@@ -83,33 +83,6 @@ In systems psychology, characteristics of organizational behaviour (such as indi
 System theory has been applied in the field of neuroinformatics and connectionist cognitive science. Attempts are being made in neurocognition to merge connectionist cognitive neuroarchitectures with the approach of system theory and dynamical systems theory.
 
 
-## History
-
-
-### Precursors
-
-Systems thinking can date back to antiquity, whether considering the first systems of written communication with Sumerian cuneiform to Maya numerals, or the feats of engineering with the Egyptian pyramids. Differentiated from Western rationalist traditions of philosophy, C. West Churchman often identified with the I Ching as a systems approach sharing a frame of reference similar to pre-Socratic philosophy and Heraclitus. Ludwig von Bertalanffy traced systems concepts to the philosophy of Gottfried Leibniz and Nicholas of Cusa's coincidentia oppositorum. While modern systems can seem considerably more complicated, they may embed themselves in history.
-Figures like James Joule and Sadi Carnot represent an important step to introduce the systems approach into the (rationalist) hard sciences of the 19th century, also known as the energy transformation. Then, the thermodynamics of this century, by Rudolf Clausius, Josiah Gibbs and others, established the system reference model as a formal scientific object.
-Similar ideas are found in learning theories that developed from the same fundamental concepts, emphasising how understanding results from knowing concepts both in part and as a whole. In fact, Bertalanffy's organismic psychology paralleled the learning theory of Jean Piaget. Some consider interdisciplinary perspectives critical in breaking away from industrial age models and thinking, wherein history represents history and math represents math, while the arts and sciences specialization remain separate and many treat teaching as behaviorist conditioning.
-The contemporary work of Peter Senge provides detailed discussion of the commonplace critique of educational systems grounded in conventional assumptions about learning, including the problems with fragmented knowledge and lack of holistic learning from the "machine-age thinking" that became a "model of school separated from daily life." In this way, some systems theorists attempt to provide alternatives to, and evolved ideation from orthodox theories which have grounds in classical assumptions, including individuals such as Max Weber and Émile Durkheim in sociology and Frederick Winslow Taylor in scientific management. The theorists sought holistic methods by developing systems concepts that could integrate with different areas.
-Some may view the contradiction of reductionism in conventional theory (which has as its subject a single part) as simply an example of changing assumptions. The emphasis with systems theory shifts from parts to the organization of parts, recognizing interactions of the parts as not static and constant but dynamic processes. Some questioned the conventional closed systems with the development of open systems perspectives. The shift originated from absolute and universal authoritative principles and knowledge to relative and general conceptual and perceptual knowledge and still remains in the tradition of theorists that sought to provide means to organize human life. In other words, theorists rethought the preceding history of ideas; they did not lose them. Mechanistic thinking was particularly critiqued, especially the industrial-age mechanistic metaphor for the mind from interpretations of Newtonian mechanics by Enlightenment philosophers and later psychologists that laid the foundations of modern organizational theory and management by the late 19th century.
-
-
-### Founding and early development
-Where assumptions in Western science from Plato and Aristotle to Isaac Newton's Principia (1687) have historically influenced all areas from the hard to social sciences (see, David Easton's seminal development of the "political system" as an analytical construct), the original systems theorists explored the implications of 20th-century advances in terms of systems.
-Between 1929 and 1951, Robert Maynard Hutchins at the University of Chicago had undertaken efforts to encourage innovation and interdisciplinary research in the social sciences, aided by the Ford Foundation with the university's interdisciplinary Division of the Social Sciences established in 1931.
-Many early systems theorists aimed at finding a general systems theory that could explain all systems in all fields of science.
-"General systems theory" (GST; German: allgemeine Systemlehre) was coined in the 1940s by Ludwig von Bertalanffy, who sought a new approach to the study of living systems. Bertalanffy developed the theory via lectures beginning in 1937 and then via publications beginning in 1946. According to Mike C. Jackson (2000), Bertalanffy promoted an embryonic form of GST as early as the 1920s and 1930s, but it was not until the early 1950s that it became more widely known in scientific circles.
-Jackson also claimed that Bertalanffy's work was informed by Alexander Bogdanov's three-volume Tectology (1912–1917), providing the conceptual base for GST. A similar position is held by Richard Mattessich (1978) and Fritjof Capra (1996). Despite this, Bertalanffy never even mentioned Bogdanov in his works.
-The systems view was based on several fundamental ideas. First, all phenomena can be viewed as a web of relationships among elements, or a system. Second, all systems, whether electrical, biological, or social, have common patterns, behaviors, and properties that the observer can analyze and use to develop greater insight into the behavior of complex phenomena and to move closer toward a unity of the sciences. System philosophy, methodology and application are complementary to this science.
-Cognizant of advances in science that questioned classical assumptions in the organizational sciences, Bertalanffy's idea to develop a theory of systems began as early as the interwar period, publishing "An Outline for General Systems Theory" in the British Journal for the Philosophy of Science by 1950.
-In 1954, von Bertalanffy, along with Anatol Rapoport, Ralph W. Gerard, and Kenneth Boulding, came together at the Center for Advanced Study in the Behavioral Sciences in Palo Alto to discuss the creation of a "society for the advancement of General Systems Theory." In December that year, a meeting of around 70 people was held in Berkeley to form a society for the exploration and development of GST. The Society for General Systems Research (renamed the International Society for Systems Science in 1988) was established in 1956 thereafter as an affiliate of the American Association for the Advancement of Science (AAAS), specifically catalyzing systems theory as an area of study. The field developed from the work of Bertalanffy, Rapoport, Gerard, and Boulding, as well as other theorists in the 1950s like William Ross Ashby, Margaret Mead, Gregory Bateson, and C. West Churchman, among others.
-Bertalanffy's ideas were adopted by others, working in mathematics, psychology, biology, game theory, and social network analysis. Subjects that were studied included those of complexity, self-organization, connectionism and adaptive systems. In fields like cybernetics, researchers such as Ashby, Norbert Wiener, John von Neumann, and Heinz von Foerster examined complex systems mathematically; Von Neumann discovered cellular automata and self-reproducing systems, again with only pencil and paper. Aleksandr Lyapunov and Jules Henri Poincaré worked on the foundations of chaos theory without any computer at all. At the same time, Howard T. Odum, known as a radiation ecologist, recognized that the study of general systems required a language that could depict energetics, thermodynamics and kinetics at any system scale. To fulfill this role, Odum developed a general system, or universal language, based on the circuit language of electronics, known as the Energy Systems Language.
-The Cold War affected the research project for systems theory in ways that sorely disappointed many of the seminal theorists. Some began to recognize that theories defined in association with systems theory had deviated from the initial general systems theory view. Economist Kenneth Boulding, an early researcher in systems theory, had concerns over the manipulation of systems concepts. Boulding concluded from the effects of the Cold War that abuses of power always prove consequential and that systems theory might address such issues. Since the end of the Cold War, a renewed interest in systems theory emerged, combined with efforts to strengthen an ethical view on the subject.
-
-In sociology, systems thinking also began in the 20th century, including Talcott Parsons' action theory and Niklas Luhmann's social systems theory. According to Rudolf Stichweh (2011):Since its beginnings the social sciences were an important part of the establishment of systems theory... [T]he two most influential suggestions were the comprehensive sociological versions of systems theory which were proposed by Talcott Parsons since the 1950s and by Niklas Luhmann since the 1970s.Elements of systems thinking can also be seen in the work of James Clerk Maxwell, particularly control theory.
-
-
 ## General systems research and systems inquiry
 Many early systems theorists aimed at finding a general systems theory that could explain all systems in all fields of science. Ludwig von Bertalanffy began developing his 'general systems theory' via lectures in 1937 and then via publications from 1946. The concept received extensive focus in his 1968 book, General System Theory: Foundations, Development, Applications.
 There are many definitions of a general system, some properties that definitions include are: an overall goal of the system, parts of the system and relationships between these parts, and emergent properties of the interaction between the parts of the system that are not performed by any part on its own. Derek Hitchins defines a system in terms of entropy as a collection of parts and relationships between the parts where the parts of their interrelationships decrease entropy.
@@ -206,28 +179,3 @@ Star
 Complex adaptive systems (CAS), coined by John H. Holland, Murray Gell-Mann, and others at the interdisciplinary Santa Fe Institute, are special cases of complex systems: they are complex in that they are diverse and composed of multiple, interconnected elements; they are adaptive in that they have the capacity to change and learn from experience.
 In contrast to control systems, in which negative feedback dampens and reverses disequilibria, CAS are often subject to positive feedback, which magnifies and perpetuates changes, converting local irregularities into global features.
 
-
-## See also
-
-
-### Organizations
-List of systems sciences organizations
-
-
-## References
-
-
-## Further reading
-
-
-## External links
-
- Data related to Systems theory at Wikidata
-Systems Thinking at Wikiversity
-Systems theory at Principia Cybernetica Web
-Introduction to systems thinking – 55 slides
-Organizations
-
-International Society for the System Sciences
-New England Complex Systems Institute
-System Dynamics Society

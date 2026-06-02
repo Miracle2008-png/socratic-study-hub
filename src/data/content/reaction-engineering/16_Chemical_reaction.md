@@ -8,15 +8,6 @@ Different chemical reactions are used during chemical synthesis in order to obta
 The general concept of a chemical reaction has been extended to reactions between entities smaller than atoms, including nuclear reactions, radioactive decays and reactions between elementary particles, as described by quantum field theory.
 
 
-## History
-
-Chemical reactions such as combustion in fire, fermentation and the reduction of ores to metals were known since antiquity. Initial theories of transformation of materials were developed by Greek philosophers, such as the Four-Element Theory of Empedocles stating that any substance is composed of the four basic elements – fire, water, air and earth. In the Middle Ages, chemical transformations were studied by alchemists. They attempted, in particular, to convert lead into gold, for which purpose they used reactions of lead and lead-copper alloys with sulfur.
-The artificial production of chemical substances already was a central goal for medieval alchemists. Examples include the synthesis of ammonium chloride from organic substances as described in the works (c. 850–950) attributed to Jābir ibn Ḥayyān, or the production of mineral acids such as sulfuric and nitric acids by later alchemists, starting from c. 1300. The production of mineral acids involved the heating of sulfate and nitrate minerals such as copper sulfate, alum and saltpeter. In the 17th century, Johann Rudolph Glauber produced hydrochloric acid and sodium sulfate by reacting sulfuric acid and sodium chloride. With the development of the lead chamber process in 1746 and the Leblanc process, allowing large-scale production of sulfuric acid and sodium carbonate, respectively, chemical reactions became implemented into the industry. Further optimization of sulfuric acid technology resulted in the contact process in the 1880s, and the Haber process was developed in 1909–1910 for ammonia synthesis.
-From the 16th century, researchers including Jan Baptist van Helmont, Robert Boyle, and Isaac Newton tried to establish theories of experimentally observed chemical transformations. The phlogiston theory was proposed in 1667 by Johann Joachim Becher. It postulated the existence of a fire-like element called "phlogiston", which was contained within combustible bodies and released during combustion. This proved to be false in 1785 by Antoine Lavoisier who found the correct explanation of the combustion as a reaction with oxygen from the air.
-Joseph Louis Gay-Lussac recognized in 1808 that gases always react in a certain relationship with each other. Based on this idea and the atomic theory of John Dalton, Joseph Proust had developed the law of definite proportions, which later resulted in the concepts of stoichiometry and chemical equations.
-Regarding the organic chemistry, it was long believed that compounds obtained from living organisms were too complex to be obtained synthetically. According to the concept of vitalism, organic matter was endowed with a "vital force" and distinguished from inorganic materials. This separation was ended however by the synthesis of urea from inorganic precursors by Friedrich Wöhler in 1828. Other chemists who brought major contributions to organic chemistry include Alexander William Williamson with his synthesis of ethers and Christopher Kelk Ingold, who, among many discoveries, established the mechanisms of substitution reactions.
-
-
 ## Characteristics
 Some chemical reactions have characteristics such as:
 
@@ -1322,35 +1313,3 @@ Some specific reactions have their niche applications. For example, the thermite
 ## Monitoring
 Mechanisms of monitoring chemical reactions depend strongly on the reaction rate. Relatively slow processes can be analyzed in situ for the concentrations and identities of the individual ingredients. Important tools of real-time analysis are the measurement of pH and analysis of optical absorption (color) and emission spectra. A less accessible but rather efficient method is the introduction of a radioactive isotope into the reaction and monitoring how it changes over time and where it moves to; this method is often used to analyze the redistribution of substances in the human body. Faster reactions are usually studied with ultrafast laser spectroscopy where utilization of femtosecond lasers allows short-lived transition states to be monitored at a time scaled down to a few femtoseconds.
 
-
-## See also
-
-Chemical equation
-Chemical process
-Chemical reaction
-Substrate
-Reagent
-Catalyst
-Product
-Chemical reaction model
-Chemist
-Chemistry
-Combustion
-Limiting reagent
-List of organic reactions
-Mass balance
-Microscopic reversibility
-Organic reaction
-Reaction progress kinetic analysis
-Reversible reaction
-
-
-## References
-
-
-## Bibliography
-Atkins, Peter W.; Julio de Paula (2006). Physical Chemistry (4th ed.). Weinheim: Wiley-VCH. ISBN 978-3-527-31546-8.
-Brock, William H. (1997). Viewegs Geschichte der Chemie (in German). Braunschweig: Vieweg. ISBN 978-3-540-67033-9.
-Brückner, Reinhard (2004). Reaktionsmechanismen (in German) (3rd ed.). München: Spektrum Akademischer Verlag. ISBN 978-3-8274-1579-0.
-Wiberg, Egon; Wiberg, Nils; Holleman, Arnold Frederick (2001). Inorganic chemistry. Academic Press. ISBN 978-0-12-352651-9.
-"Chemical Action" . Encyclopædia Britannica. Vol. 6 (11th ed.). 1911. pp. 26–33.

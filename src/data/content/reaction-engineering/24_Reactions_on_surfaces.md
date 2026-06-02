@@ -1949,10 +1949,3 @@ CO2 + H2 (ads.) → H2O + CO
 C2H2 + H2 (ads.) → C2H4 on nickel or iron catalysts
 The Langmuir-Rideal mechanism is often, incorrectly, attributed to Dan Eley as the Eley-Rideal mechanism. The actual Eley-Rideal mechanism, studied in the thesis of Dan Eley and proposed by Eric Rideal in 1939, was the reaction between a chemisorbed and a physisorbed molecule. As opposed to the Langmuir-Rideal mechanism, in this mechanism the physisorbed molecule is in thermal equilibrium with the surface.
 
-
-## See also
-Diffusion-controlled reaction
-Hot atom
-
-
-## References

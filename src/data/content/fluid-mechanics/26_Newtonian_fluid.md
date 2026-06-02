@@ -2078,13 +2078,3 @@ where α depends on protein composition and H is the Hematocrit number.
 ## Examples
 Water, air, alcohol, glycerol, and thin motor oil are all examples of Newtonian fluids over the range of shear stresses and shear rates encountered in everyday life. Single-phase fluids made up of small molecules are generally (although not exclusively) Newtonian.
 
-
-## See also
-Fluid mechanics
-Non-Newtonian fluid
-Strain rate tensor
-Viscosity
-Viscous stress tensor
-
-
-## References

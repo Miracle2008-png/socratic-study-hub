@@ -215,13 +215,3 @@ In order to increase the life-cycle of membrane filtration systems, energy effic
 Membrane properties have also been enhanced to reduce fouling tendencies by modifying surface properties. This can be noted in the biotechnology industry where membrane surfaces have been altered in order to reduce the amount of protein binding. Ultrafiltration modules have also been improved to allow for more membrane for a given area without increasing its risk of fouling by designing more efficient module internals.
 The current pre-treatment of seawater desalination uses ultrafiltration modules that have been designed to withstand high temperatures and pressures whilst occupying a smaller footprint. Each module vessel is self supported and resistant to corrosion and accommodates easy removal and replacement of the module without the cost of replacing the vessel itself.
 
-
-## See also
-List of wastewater treatment technologies
-
-
-## References
-
-
-## External links
- Media related to Ultrafiltration at Wikimedia Commons

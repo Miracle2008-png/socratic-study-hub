@@ -449,27 +449,3 @@ Note that this joint entropy is not equivalent to the Von Neumann entropy, −Tr
 Hirschman's entropy is said to account for the full information content of a mixture of quantum states.
 (Dissatisfaction with the Von Neumann entropy from quantum information points of view has been expressed by Stotland, Pomeransky, Bachmat and Cohen, who have introduced a yet different definition of entropy that reflects the inherent uncertainty of quantum mechanical states. This definition allows distinction between the minimum uncertainty entropy of pure states, and the excess statistical entropy of mixtures.)
 
-
-## See also
-
-
-## References
-
-
-## Further reading
-Bennett, C.H. (1973). "Logical reversibility of computation". IBM J. Res. Dev. 17 (6): 525–532. doi:10.1147/rd.176.0525.
-Brillouin, Léon (2004), Science And Information Theory (second ed.), Dover, ISBN 978-0-486-43918-1. [Republication of 1962 original.]
-Frank, Michael P. (May–June 2002). "Physical Limits of Computing". Computing in Science and Engineering. 4 (3): 16–25. Bibcode:2002CSE.....4c..16F. CiteSeerX 10.1.1.429.1618. doi:10.1109/5992.998637. OSTI 1373456. S2CID 499628.
-Greven, Andreas; Keller, Gerhard; Warnecke, Gerald, eds. (2003). Entropy. Princeton University Press. ISBN 978-0-691-11338-8. (A highly technical collection of writings giving an overview of the concept of entropy as it appears in various disciplines.)
-Kalinin, M.I.; Kononogov, S.A. (2005), "Boltzmann's constant, the energy meaning of temperature, and thermodynamic irreversibility", Measurement Techniques, 48 (7): 632–636, Bibcode:2005MeasT..48..632K, doi:10.1007/s11018-005-0195-9, S2CID 118726162.
-Koutsoyiannis, D. (2011), "Hurst–Kolmogorov dynamics as a result of extremal entropy production", Physica A, 390 (8): 1424–1432, Bibcode:2011PhyA..390.1424K, doi:10.1016/j.physa.2010.12.035.
-Landauer, R. (1993). "Information is Physical". Proc. Workshop on Physics and Computation PhysComp'92. Los Alamitos: IEEE Comp. Sci.Press. pp. 1–4. doi:10.1109/PHYCMP.1992.615478. ISBN 978-0-8186-3420-8. S2CID 60640035.
-Landauer, R. (1961). "Irreversibility and Heat Generation in the Computing Process". IBM J. Res. Dev. 5 (3): 183–191. doi:10.1147/rd.53.0183. Archived from the original on 2008-12-06. Retrieved 2006-03-11.
-Leff, H.S.; Rex, A.F., eds. (1990). Maxwell's Demon: Entropy, Information, Computing. Princeton NJ: Princeton University Press. ISBN 978-0-691-08727-6.
-Middleton, D. (1960). An Introduction to Statistical Communication Theory. McGraw-Hill.
-Shannon, Claude E. (July–October 1948). "A Mathematical Theory of Communication". Bell System Technical Journal. 27 (3): 379–423. doi:10.1002/j.1538-7305.1948.tb01338.x. hdl:10338.dmlcz/101429. (as PDF)
-
-
-## External links
-Information Processing and Thermodynamic Entropy Stanford Encyclopedia of Philosophy.
-An Intuitive Guide to the Concept of Entropy Arising in Various Sectors of Science — a wikibook on the interpretation of the concept of entropy.

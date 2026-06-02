@@ -35,13 +35,3 @@ Iron ore can be found in a multitude of forms and sources. The primary forms of 
 ## Conflicts of raw materials
 Places with plentiful raw materials and little economic development often show a phenomenon known as "Dutch disease" or the "resource curse", which occurs when the economy of a country is mainly based upon its exports because of its method of governance. An example of this is the Democratic Republic of the Congo.
 
-
-## See also
-
-
-## References
-
-
-## Further reading
-Elizabeth Kolbert, "Needful Things: The raw materials for the world we've built come at a cost" (largely based on Ed Conway, Material World: The Six Raw Materials That Shape Modern Civilization, Knopf, 2023; Vince Beiser, The World in a Grain; and Chip Colwell, So Much Stuff: How Humans Discovered Tools, Invented Meaning, and Made More of Everything, Chicago), The New Yorker, 30 October 2023, pp. 20–23. Kolbert mainly discusses the importance to modern civilization, and the finite sources, of six raw materials: high-purity quartz (needed to produce silicon chips), sand, iron, copper, petroleum (which Conway lumps together with another fossil fuel, natural gas), and lithium. Kolbert summarizes archeologist Colwell's review of the evolution of technology, which has ended up giving the Global North a superabundance of "stuff", at an unsustainable cost to the world's environment and reserves of raw materials.
-Karl Marx, Capital, Vol. 1, Part III, Chap. 7.

@@ -11,55 +11,6 @@ The American Engineers' Council for Professional Development (the predecessor of
 The creative application of scientific principles to design or develop structures, machines, apparatus, or manufacturing processes, or works utilizing them singly or in combination; or to construct or operate the same with full cognizance of their design; or to forecast their behavior under specific operating conditions; all as respects an intended function, economics of operation and safety to life and property.
 
 
-## History
-
-Engineering has existed since ancient times, when humans devised inventions such as the wedge, lever, wheel and pulley, etc.
-The term engineering is derived from the word engineer, which itself dates back to the 14th century when an engine'er (literally, one who builds or operates a siege engine) referred to "a constructor of military engines". In this context, now obsolete, an "engine" referred to a military machine, i.e., a mechanical contraption used in war (for example, a catapult). Notable examples of the obsolete usage which have survived to the present day are military engineering corps, e.g., the U.S. Army Corps of Engineers.
-The word "engine" itself is of even older origin, ultimately deriving from the Latin ingenium (c. 1250), meaning "innate quality, especially mental power, hence a clever invention."
-Later, as the design of civilian structures, such as bridges and buildings, matured as a technical discipline, the term civil engineering entered the lexicon as a way to distinguish between those specializing in the construction of such non-military projects and those involved in the discipline of military engineering.
-
-
-### Ancient era
-
-The pyramids in ancient Egypt, ziggurats of Mesopotamia, the Acropolis and Parthenon in Greece, the Roman aqueducts, Via Appia and Colosseum, Teotihuacán, and the Brihadeeswarar Temple of Thanjavur, among many others, stand as a testament to the ingenuity and skill of ancient civil and military engineers. Other monuments, no longer standing, such as the Hanging Gardens of Babylon and the Pharos of Alexandria, were important engineering achievements of their time and were considered among the Seven Wonders of the Ancient World.
-The six classic simple machines were known in the ancient Near East. The wedge and the inclined plane (ramp) were known since prehistoric times. The wheel, along with the wheel and axle mechanism, was invented in Mesopotamia (modern Iraq) during the 5th millennium BC. The lever mechanism first appeared around 5,000 years ago in the Near East, where it was used in a simple balance scale, and to move large objects in Egyptian technology. The lever was also used in the shadoof water-lifting device, the first crane machine, which appeared in Mesopotamia c. 3000 BC, and then in Egyptian technology c. 2000 BC. The earliest evidence of pulleys date back to Mesopotamia in the early 2nd millennium BC, and ancient Egypt during the Twelfth Dynasty (1991–1802 BC). The screw, the last of the simple machines to be invented, first appeared in Mesopotamia during the Neo-Assyrian period (911–609) BC. The Egyptian pyramids were built using three of the six simple machines, the inclined plane, the wedge, and the lever, to create structures like the Great Pyramid of Giza.
-The earliest civil engineer known by name is Imhotep. As one of the officials of the Pharaoh, Djosèr, he probably designed and supervised the construction of the Pyramid of Djoser (the Step Pyramid) at Saqqara in Egypt around 2630–2611 BC. The earliest practical water-powered machines, the water wheel and watermill, first appeared in the Persian Empire, in what are now Iraq and Iran, by the early 4th century BC.
-Kush developed the Sakia during the 4th century BC, which relied on animal power instead of human energy. Hafirs were developed as a type of reservoir in Kush to store and contain water as well as boost irrigation. Kushite ancestors built speos during the Bronze Age between 3700 and 3250 BC. Bloomeries and blast furnaces were also created during the 7th centuries BC in Kush. Wooden plank-built seafaring ships were being engineered and built during the Bronze Age, as evidenced by the Uluburun shipwreck, dated from around 1300 BCE.
-Ancient Greece developed machines in both civilian and military domains, as evidenced by the writings of Philo of Byzantium and others. The Antikythera mechanism, an early known mechanical analog computer, and the mechanical inventions of Archimedes, are examples of Greek mechanical engineering. Some of Archimedes' inventions, as well as the Antikythera mechanism, required sophisticated knowledge of differential gearing or epicyclic gearing, two key principles in machine theory that helped design the gear trains of the Industrial Revolution, and are widely used in fields such as robotics and automotive engineering.
-Ancient Chinese, Greek, Roman and Hunnic armies employed military machines and inventions such as artillery which was developed by the Greeks around the 4th century BC, the trireme, the ballista and the catapult, the trebuchet by Chinese circa 6th-5th century BCE.
-
-
-### Middle Ages
-The earliest practical wind-powered machines, the windmill and wind pump, first appeared in the Muslim world during the Islamic Golden Age, in what are now Iran, Afghanistan, and Pakistan, by the 9th century AD. The earliest practical steam-powered machine was a steam jack driven by a steam turbine, described in 1551 by Taqi al-Din Muhammad ibn Ma'ruf in Ottoman Egypt.
-The cotton gin was invented in India by the 6th century AD, and the spinning wheel was invented in the Islamic world by the early 11th century, both of which were fundamental to the growth of the cotton industry. The spinning wheel was also a precursor to the spinning jenny, which was a key development during the early Industrial Revolution in the 18th century.
-The earliest programmable machines were developed in the Muslim world. A music sequencer, a programmable musical instrument, was the earliest type of programmable machine. The first music sequencer was an automated flute player invented by the Banu Musa brothers, described in their Book of Ingenious Devices, in the 9th century. In 1206, Al-Jazari invented programmable automata/robots. He described four automaton musicians, including drummers operated by a programmable drum machine, where they could be made to play different rhythms and different drum patterns.
-
-Before the development of modern engineering, mathematics was used by artisans and craftsmen, such as millwrights, clockmakers, instrument makers and surveyors. Aside from these professions, universities were not believed to have had much practical significance to technology.
-A standard reference for the state of mechanical arts during the Renaissance is given in the mining engineering treatise De re metallica (1556), which also contains sections on geology, mining, and chemistry. De re metallica was the standard chemistry reference for the next 180 years.
-
-
-### Industrial revolution
-
-The science of classical mechanics, sometimes called Newtonian mechanics, formed the scientific basis of much of modern engineering. With the rise of engineering as a profession in the 18th century, the term became more narrowly applied to fields in which mathematics and science were applied to these ends. Similarly, in addition to military and civil engineering, the fields then known as the mechanic arts became incorporated into engineering.
-Canal building was an important engineering work during the early phases of the Industrial Revolution.
-John Smeaton was the first self-proclaimed civil engineer and is often regarded as the "father" of civil engineering. He was an English civil engineer responsible for the design of bridges, canals, harbors, and lighthouses. He was also a capable mechanical engineer and an eminent physicist. Using a model water wheel, Smeaton conducted experiments for seven years, determining ways to increase efficiency.   Smeaton introduced iron axles and gears to water wheels. Smeaton also made mechanical improvements to the Newcomen steam engine. Smeaton designed the third Eddystone Lighthouse (1755–59) where he pioneered the use of 'hydraulic lime' (a form of mortar which will set under water) and developed a technique involving dovetailed blocks of granite in the building of the lighthouse. He is important in the history, rediscovery of, and development of modern cement, because he identified the compositional requirements needed to obtain "hydraulicity" in lime; work which led ultimately to the invention of Portland cement.
-Applied science led to the development of the steam engine. The sequence of events began with the invention of the barometer and the measurement of atmospheric pressure by Evangelista Torricelli in 1643, demonstration of the force of atmospheric pressure by Otto von Guericke using the Magdeburg hemispheres in 1656, laboratory experiments by Denis Papin, who built experimental model steam engines and demonstrated the use of a piston, which he published in 1707. Edward Somerset, 2nd Marquess of Worcester published a book of 100 inventions containing a method for raising waters similar to a coffee percolator. Samuel Morland, a mathematician and inventor who worked on pumps, left notes at the Vauxhall Ordinance Office on a steam pump design that Thomas Savery read. In 1698 Savery built a steam pump called "The Miner's Friend". It employed both vacuum and pressure. Iron merchant Thomas Newcomen, who built the first commercial piston steam engine in 1712, was not known to have any scientific training.
-
-The application of steam-powered cast iron blowing cylinders for providing pressurized air for blast furnaces lead to a large increase in iron production in the late 18th century. The higher furnace temperatures made possible with steam-powered blast allowed for the use of more lime in blast furnaces, which enabled the transition from charcoal to coke. These innovations lowered the cost of iron, making horse railways and iron bridges practical. The puddling process, patented by Henry Cort in 1784 produced large scale quantities of wrought iron. Hot blast, patented by James Beaumont Neilson in 1828, greatly lowered the amount of fuel needed to smelt iron. With the development of the high pressure steam engine, the power to weight ratio of steam engines made practical steamboats and locomotives possible. New steel making processes, such as the Bessemer process and the open hearth furnace, ushered in an area of heavy engineering in the late 19th century.
-One of the most famous engineers of the mid-19th century was Isambard Kingdom Brunel, who built railroads, dockyards and steamships. Other engineering luminaries of this period include Nikola Tesla, prolific inventor of electrical applications; Alexander Graham Bell, inventor of the first practical telephone; George Stephenson, pioneer of railway transportation; and Nicolaus Otto, the designer of the first modern internal combustion engine.
-
-The Industrial Revolution created a demand for machinery with metal parts, which led to the development of several machine tools. Boring cast iron cylinders with precision was not possible until John Wilkinson invented his boring machine, which is considered the first machine tool. Other machine tools included the screw cutting lathe, milling machine, turret lathe and the metal planer. Precision machining techniques were developed in the first half of the 19th century. These included the use of gigs to guide the machining tool over the work and fixtures to hold the work in the proper position. Machine tools and machining techniques capable of producing interchangeable parts lead to large scale factory production by the late 19th century.
-
-
-### Development of new fields
-The United States Census of 1850 listed the occupation of "engineer" for the first time with a count of 2,000. There were fewer than 50 engineering graduates in the U.S. before 1865. The first PhD in engineering (technically, applied science and engineering) awarded in the United States went to Josiah Willard Gibbs at Yale University in 1863; it was also the second PhD awarded in science in the U.S. In 1870 there were a dozen U.S. mechanical engineering graduates, with that number increasing to 43 per year in 1875. In 1890, there were 6,000 engineers in civil, mining, mechanical and electrical. There was no chair of applied mechanism and applied mechanics at Cambridge until 1875, and no chair of engineering at Oxford until 1907. Germany established technical universities earlier.
-The foundations of electrical engineering in the 1800s included the experiments of Alessandro Volta, Michael Faraday, Georg Ohm and others and the invention of the electric telegraph in 1816 and the electric motor in 1872. The theoretical work of James Maxwell (see: Maxwell's equations) and Heinrich Hertz in the late 19th century gave rise to the field of electronics. The later inventions of the vacuum tube and the transistor further accelerated the development of electronics to such an extent that electrical and electronics engineers currently outnumber their colleagues of any other engineering specialty.
-Chemical engineering developed in the late nineteenth century. Industrial scale manufacturing demanded new materials and new processes and by 1880 the need for large scale production of chemicals was such that a new industry was created, dedicated to the development and large scale manufacturing of chemicals in new industrial plants. The role of the chemical engineer was the design of these chemical plants and processes.
-Originally deriving from the manufacture of ceramics and its putative derivative metallurgy, materials science is one of the oldest forms of engineering. Modern materials science evolved directly from metallurgy, which itself evolved from the use of fire. Important elements of modern materials science were products of the Space Race; the understanding and engineering of the metallic alloys, and silica and carbon materials, used in building space vehicles enabling the exploration of space. Materials science has driven, and been driven by, the development of revolutionary technologies such as rubbers, plastics, semiconductors, and biomaterials.
-
-Aeronautical engineering deals with aircraft design process design while aerospace engineering is a more modern term that expands the reach of the discipline by including spacecraft design. Its origins can be traced back to the aviation pioneers around the start of the 20th century although the work of Sir George Cayley has recently been dated as being from the last decade of the 18th century. Early knowledge of aeronautical engineering was largely empirical with some concepts and skills imported from other branches of engineering. Only a decade after the successful flights by the Wright brothers, there was extensive development of aeronautical engineering through development of military aircraft that were used in World War I. Meanwhile, research to provide fundamental background science continued by combining theoretical physics with experiments.
-
-
 ## Branches of engineering
 
 Engineering is a broad discipline that is often broken down into several sub-disciplines. Although most engineers will usually be trained in a specific discipline, some engineers become multi-disciplined through experience. The traditional disciplines of engineering are civil, mechanical, electrical, and chemical. (Sometimes structural, industrial, or mining and materials is added.)
@@ -174,28 +125,3 @@ Professional engineers often train as certified management consultants in the ve
 ### Other fields
 In political science, the term engineering has been borrowed for the study of the subjects of social engineering and political engineering, which deal with forming political and social structures using engineering methodology coupled with political science principles. Marketing engineering and financial engineering have similarly borrowed the term.
 
-
-## See also
-
-Lists
-
-Glossaries
-
-Related subjects
-
-
-### Wikibooks for engineering
-The following Wikibooks provide open educational resources related to engineering and software development:
-
-
-## References
-
-
-## Further reading
-
-
-## External links
- The dictionary definition of engineering at Wiktionary
- Learning materials related to Engineering at Wikiversity
- Quotations related to Engineering at Wikiquote
- Works related to Engineering at Wikisource

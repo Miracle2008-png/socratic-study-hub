@@ -26,12 +26,3 @@ Bird, R.B.; Armstrong, R.C.; Hassager, O. (1987). Dynamics of Polymeric Liquids,
 Dynamics of Polymeric Liquids, Vol. 2, Kinetic Theory, with C. F. Curtiss, R. C. Armstrong, and O. Hassager, Wiley, (1977, 2nd ed. 1987).
 Since the publication of Transport Phenomena, the subject of transport phenomena has become a standard and essential course in chemical engineering curricula in universities in the U.S. and abroad.
 
-
-## References
-
-
-## External links
-Oral history interview transcript for Robert Byron Bird on 22 May 2016, American Institute of Physics, Niels Bohr Library and Archives - Session I, interview conducted by Alan Jeffrey Giacomin in Madison, Wisconsin
-Oral history interview transcript for Robert Byron Bird on 23 May 2016, American Institute of Physics, Niels Bohr Library and Archives - Session II, interview conducted by Alan Jeffrey Giacomin in Devil's Lake, Wisconsin
-Center for Oral History. "R. Byron Bird". Science History Institute.
-Traynham, James G. (1 October 1998). R. Byron Bird, Transcript of an Interview Conducted by James G. Traynham at Madison, Wisconsin on 1 October 1998 (PDF). Philadelphia, PA: Chemical Heritage Foundation. Retrieved 27 March 2018.

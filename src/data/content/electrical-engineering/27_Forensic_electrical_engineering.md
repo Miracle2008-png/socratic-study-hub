@@ -20,13 +20,3 @@ Patent disputes may also require the expert opinion of an electrical engineer to
 ## Liability
 Most states have a statute of ultimate repose (similar to, but not to be confused with, a statute of limitations) that limits the length of time after which a party can legally be held liable for their negligent act or defective product.  Many states have a "useful life" statute of ultimate repose.  Therefore, a determination of the length of time the product would normally be expected to be used before wearing out needs to be made. For example, a refrigerator might have a longer "useful life" than an electric fan; an airplane might have a longer useful life than a car.  Some states pick an arbitrary number of years for the statute of ultimate repose.  It may be short (six or seven years) or longer 15 or 25 years.  If a coffee maker starts on fire after the statute of ultimate repose has expired, the manufacturer can no longer be held liable for manufacturing or design defects.  The statute of ultimate repose is different from the statute of limitations.  In a state with a short statute of ultimate repose, it is common that a person's right to bring a claim in court expires before their injury ever occurs.  Thus, if a defective product (for example a car) caused a collision when the steering failed, but the collision occurred after the expiration of a statute of ultimate repose, no claim could be brought against the manufacturer for selling a defective product.  The right to bring the claim expired before the claim even occurred.
 
-
-## See also
-NFPA 70 (the National Electrical Code)
-NFPA 921 ("Guide for Fire and Explosion Investigations")
-Kirk's Fire Investigation (textbook by John DeHaan)
-Arc mapping
-Fire investigation
-
-
-## References

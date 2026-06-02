@@ -5,13 +5,6 @@ Issues such as requirements engineering, reliability, logistics, coordination of
 The systems engineering process is a discovery process that is quite unlike a manufacturing process. A manufacturing process is focused on repetitive activities that achieve high-quality outputs with minimum cost and time. The systems engineering process must begin by discovering the real problems that need to be resolved and identifying the most probable or highest-impact failures that can occur. Systems engineering involves finding solutions to these problems.
 
 
-## History
-
-The term systems engineering can be traced back to Bell Telephone Laboratories in the 1940s. The need to identify and manipulate the properties of a system as a whole, which in complex engineering projects may greatly differ from the sum of the parts' properties, motivated various industries, especially those developing systems for the U.S. military, to apply the discipline.
-When it was no longer possible to rely on design evolution to improve upon a system and the existing tools were not sufficient to meet growing demands, new methods began to be developed that addressed the complexity directly. The continuing evolution of systems engineering comprises the development and identification of new methods and modeling techniques. These methods aid in a better comprehension of the design and developmental control of engineering systems as they grow more complex. Popular tools that are often used in the systems engineering context were developed during these times, including Universal Systems Language (USL), Unified Modeling Language (UML), Quality function deployment (QFD), and Integration Definition (IDEF).
-In 1990, a professional society for systems engineering, the National Council on Systems Engineering (NCOSE), was founded by representatives from a number of U.S. corporations and organizations. NCOSE was created to address the need for improvements in systems engineering practices and education. As a result of growing involvement from systems engineers outside of the U.S., the name of the organization was changed to the International Council on Systems Engineering (INCOSE) in 1995. Schools in several countries offer graduate programs in systems engineering, and continuing education options are also available for practicing engineers.
-
-
 ## Concept
 
 Systems engineering signifies only an approach and, more recently, a discipline in engineering. The aim of education in systems engineering is to formalize various approaches simply and in doing so, identify new methods and research opportunities similar to that which occurs in other fields of engineering. As an approach, systems engineering is holistic and interdisciplinary in flavor.
@@ -231,48 +224,3 @@ Security engineering can be viewed as an interdisciplinary field that integrates
 
 From its beginnings, software engineering has helped shape modern systems engineering practice. The techniques used in the handling of the complexities of large software-intensive systems have had a major effect on the shaping and reshaping of the tools, methods, and processes of Systems Engineering.
 
-
-## See also
-
-
-## References
-
-
-## Further reading
-Madhavan, Guru (2024). Wicked Problems: How to Engineer a Better World. New York: W.W. Norton & Company. ISBN 978-0-393-65146-1
-Blockley, D. Godfrey, P. Doing it Differently: Systems for Rethinking Infrastructure, Second Edition, ICE Publications, London, 2017.
-Buede, D.M., Miller, W.D. The Engineering Design of Systems: Models and Methods, Third Edition, John Wiley and Sons, 2016.
-Chestnut, H., Systems Engineering Methods. Wiley, 1967.
-Gianni, D. et al. (eds.), Modeling and Simulation-Based Systems Engineering Handbook, CRC Press, 2014 at CRC
-Goode, H.H., Robert E. Machol System Engineering: An Introduction to the Design of Large-scale Systems, McGraw-Hill, 1957.
-Grady, Jeffrey O. (1994). System Integration. Oxford: Elsevier Butterworth-Heinemann. ISBN 978-0-7506-9135-4.
-Hitchins, D. (1997) World Class Systems Engineering at hitchins.net.
-Lienig, J., Bruemmer, H., Fundamentals of Electronic Systems Design, Springer, 2017 ISBN 978-3-319-55839-4.
-Malakooti, B. (2013). Operations and Production Systems with Multiple Objectives. John Wiley & Sons.ISBN 978-1-118-58537-5
-MITRE, The MITRE Systems Engineering Guide(pdf)
-NASA (2007) Systems Engineering Handbook, NASA/SP-2007-6105 Rev1, December 2007.
-NASA (2013) NASA Systems Engineering Processes and Requirements Archived 27 December 2016 at the Wayback Machine NPR 7123.1B, April 2013 NASA Procedural Requirements
-Oliver, D.W., et al. Engineering Complex Systems with Models and Objects. McGraw-Hill, 1997.
-Parnell, G.S., Driscoll, P.J., Henderson, D.L. (eds.), Decision Making in Systems Engineering and Management, 2nd. ed., Hoboken, NJ: Wiley, 2011. This is a textbook for undergraduate students of engineering.
-Ramo, S., St.Clair, R.K. The Systems Approach: Fresh Solutions to Complex Problems Through Combining Science and Practical Common Sense, Anaheim, CA: KNI, Inc, 1998.
-Sage, A.P., Systems Engineering. Wiley IEEE, 1992. ISBN 0-471-53639-3.
-Sage, A.P., Olson, S.R., Modeling and Simulation in Systems Engineering, 2001.
-SEBOK.org, Systems Engineering Body of Knowledge (SEBoK)
-Shermon, D. Systems Cost Engineering, Gower Publishing, 2009
-Shishko, R., et al. (2005) NASA Systems Engineering Handbook. NASA Center for AeroSpace Information, 2005.
-Stevens, R., et al. Systems Engineering: Coping with Complexity. Prentice Hall, 1998.
-US Air Force, SMC Systems Engineering Primer & Handbook, 2004
-US DoD Systems Management College (2001) Systems Engineering Fundamentals. Defense Acquisition University Press, 2001
-US DoD Guide for Integrating Systems Engineering into DoD Acquisition Contracts Archived 29 August 2017 at the Wayback Machine, 2006
-US DoD MIL-STD-499 System Engineering Management
-
-
-## External links
-ICSEng homepage
-INCOSE homepage
-INCOSE UK homepage
-PPI SE Goldmine homepage
-Systems Engineering Body of Knowledge
-Systems Engineering Tools
-AcqNotes DoD Systems Engineering Overview
-NDIA Systems Engineering Division

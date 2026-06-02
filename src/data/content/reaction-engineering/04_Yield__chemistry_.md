@@ -47,20 +47,3 @@ Yields can also be calculated by measuring the amount of product formed (typical
 ## Reporting of yields
 In their 2010 Synlett article, Martina Wernerova and organic chemist, Tomáš Hudlický, raised concerns about inaccurate reporting of yields, and offered solutions—including the proper characterization of compounds. After performing careful control experiments, Wernerova and Hudlický said that each physical manipulation (including extraction/washing, drying over desiccant, filtration, and column chromatography) results in a loss of yield of about 2%.  Thus, isolated yields measured after standard aqueous workup and chromatographic purification should seldom exceed 94%. They called this  phenomenon  "yield inflation" and said that yield inflation had gradually crept upward in recent decades in chemistry literature.  They attributed yield inflation to careless measurement of yield on reactions conducted on small scale, wishful thinking and a desire to report higher numbers for publication purposes.
 
-
-## See also
-Conversion (chemistry)
-Quantum yield
-
-
-## Notes
-
-
-## Further reading
-Whitten, Kenneth W.; Davis, Raymond E; Peck, M. Larry (2002). General chemistry. Fort Worth: Thomson Learning. ISBN 978-0-03-021017-4.
-Whitten, Kenneth W; Gailey, Kenneth D (1981). General chemistry. Philadelphia: Saunders College Pub. ISBN 978-0-03-057866-3.
-Petrucci, Ralph H.; Herring, F. Geoffrey; Madura, Jeffry; Bissonnette, Carey; Pearson (2017). General chemistry: principles and modern applications. Toronto: Pearson. ISBN 978-0-13-293128-1.
-Vogel, Arthur Israel; Furniss, B. S; Tatchell, Austin Robert (1978). Vogel's Textbook of practical organic chemistry. New York: Longman. ISBN 978-0-582-44250-4.
-
-
-## References

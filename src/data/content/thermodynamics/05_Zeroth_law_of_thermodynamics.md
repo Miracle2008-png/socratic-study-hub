@@ -56,26 +56,3 @@ It is possible to develop the whole theory without assuming the existence of hea
 
 It is the opinion of Elliott H. Lieb and Jakob Yngvason (1999) that the derivation from statistical mechanics of the law of entropy increase is a goal that has so far eluded the deepest thinkers. Thus the idea remains open to consideration that the existence of heat and temperature are needed as coherent primitive concepts for thermodynamics, as expressed, for example, by Maxwell and Max Planck. On the other hand, Planck (1926) clarified how the second law can be stated without reference to heat or temperature, by referring to the irreversible and universal nature of friction in natural thermodynamic processes.
 
-
-## History
-Writing long before the term "zeroth law" was coined, in 1871 Maxwell discussed at some length ideas which he summarized by the words "All heat is of the same kind". Modern theorists sometimes express this idea by postulating the existence of a unique one-dimensional hotness manifold, into which every proper temperature scale has a monotonic mapping. This may be expressed by the statement that there is only one kind of temperature, regardless of the variety of scales in which it is expressed. Another modern expression of this idea is that "All diathermal walls are equivalent". This might also be expressed by saying that there is precisely one kind of non-mechanical, non-matter-transferring contact equilibrium between thermodynamic systems.
-According to Sommerfeld, Ralph H. Fowler coined the term zeroth law of thermodynamics while discussing the 1935 text by Meghnad Saha and B.N. Srivastava.
-They write on page 1 that "every physical quantity must be measurable in numerical terms". They presume that temperature is a physical quantity and then deduce the statement "If a body A is in temperature equilibrium with two bodies B and C, then B and C themselves are in temperature equilibrium with each other". Then they italicize a self-standing paragraph, as if to state their basic postulate:
-
-Any of the physical properties of A which change with the application of heat may be observed and utilised for the measurement of temperature.
-They do not themselves here use the phrase "zeroth law of thermodynamics".
-There are very many statements of these same physical ideas in the physics literature long before this text, in very similar language. What was new here was just the label zeroth law of thermodynamics.
-Fowler & Guggenheim (1936/1965) wrote of the zeroth law as follows:
-
-... we introduce the postulate: If two assemblies are each in thermal equilibrium with a third assembly, they are in thermal equilibrium with each other.
-They then proposed that
-
-... it may be shown to follow that the condition for thermal equilibrium between several assemblies is the equality of a certain single-valued function of the thermodynamic states of the assemblies, which may be called the temperature t, any one of the assemblies being used as a "thermometer" reading the temperature t on a suitable scale. This postulate of the "Existence of temperature" could with advantage be known as the zeroth law of thermodynamics.
-The first sentence of this present article is a version of this statement. It is not explicitly evident in the existence statement of Fowler and Edward A. Guggenheim that temperature refers to a unique attribute of a state of a system, such as is expressed in the idea of the hotness manifold. Also their statement refers explicitly to statistical mechanical assemblies, not explicitly to macroscopic thermodynamically defined systems.
-
-
-## References
-
-
-## Further reading
-Atkins, Peter (2007). Four Laws That Drive the Universe. New York: Oxford University Press. ISBN 978-0-19-923236-9.

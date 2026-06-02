@@ -3,31 +3,6 @@
 National Institute for Materials Science (物質・材料研究機構, Busshitsu-zairyō kenkyū kikō) is an Independent Administrative Institution and one of the largest scientific research centers in Japan.
 
 
-## History
-The growth and development of today's scientific research center has passed through several phases in a number of locations:
-In 1956, the National Research Institute for Metals (NRIM) was established in Meguro, Tokyo, Japan. In 1979, NRIM opened an office in Tsukuba. By 1995 the institute had moved most of its functions to that location. The Meguro campus continues to exist; it remains a part of the NRIM successor, the National Institute for Materials Science. 
-In 1966, the National Institute for Research in Inorganic Materials (NIRIM) was established in Toshima, Tokyo, Japan. NIRIM was moved to Tsukuba in 1972, in the very early stages of the Tsukuba Science City. This event was considered as the first transfer of a national research institute in Japan. 
-An independent administrative institute NIMS was established in Tsukuba by merging NRIM and NIRIM in 2001. 
-
-
-### Campuses
-
-NIMS campuses are named Sengen, Namiki, Sakura, and Meguro. In addition, NIMS has a beamline station at the SPring-8 synchrotron located in Hyōgo Prefecture, Japan. While all campuses host scientific research units, most administration is in Sengen. In total, about 1500 researchers, engineers and administrative staff members are employed in all those campuses. Sengen, Namiki and Sakura branches are several kilometers apart in Tsukuba — a Science City within an hour from central Tokyo by Tsukuba Express train. A free shuttle bus facilitates transfer between the Tsukuba campuses. 
-
-
-### Development
-NIMS has developed as a dynamic organization; and new initiatives are launched virtually every month. Among the more noteworthy of these are:
-
-October 2001 Establishment of Biomaterials Center, Superconducting Materials Center, Computational Materials Science Center and Materials Information Technology Station 
-April 2002 Establishment of Steel Research Center, Ecomaterials Center, High Magnetic Fields Center and Materials Analysis Station 
-June 2002 Establishment of the Nanotechnology Researchers Network of Japan  
-September 2003 Establishment of the International Center for Young Scientists (ICYS) 
-April 2004 Establishment of Doctoral Program in Materials Science and Engineering of Graduate School of Pure and Applied Science, University of Tsukuba  
-May 2004 Establishment of High Voltage Electron Microscopy Station  
-April 2006 Start of the Second Mid-Term Program. This event coincided with significant reorganization of NIMS. 
-October 2007 Establishment of the International Center for Materials Nanoarchitectonics (MANA) 
-
-
 ## Research
 NIMS is dedicated to materials research with strong emphasis on the synthesis, characterization and applications of metals, semiconductors, superconductors, ceramics, and organic materials in their bulk and nanoscaled forms. The applications cover a wide range including electronics, optics, coatings, fuel cells, catalysts, and biotechnologies. As to characterization, techniques associated with electron microscopy, high-energy particle beams and high magnetic fields are particularly developed. Most research is experimental though at least one research center is devoted to theoretical modeling. 
 
@@ -67,20 +42,3 @@ In September 2008, an innovative NIMS research unit, the International Center fo
 Academia Sinica, Taiwan 
 ETH Zurich, Switzerland 
 
-
-## See also
-International Center for Materials Nanoarchitectonics (MANA)
-List of Independent Administrative Institutions (Japan)
-List of National Laboratories (Japan)
-Materials database
-Research Institutes in Tsukuba
-Versailles project on advanced materials and standards
-
-
-## References
-
-
-## External links
-
-Official web site of NIMS
-List of research institution by the JSPS Archived 2012-02-11 at the Wayback Machine

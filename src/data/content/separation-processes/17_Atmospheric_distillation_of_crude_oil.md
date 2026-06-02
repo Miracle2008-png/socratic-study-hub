@@ -13,10 +13,3 @@ A few plates below the top plate, the kerosene is obtained as a product at a tem
 A few plates below the kerosene draw plate, the diesel fraction is obtained at a temperature of 280 °C–300 °C. The diesel fraction is then cooled and stored. The top product from the atmospheric distillation column is a mixture of hydrocarbon gases, e.g., methane, ethane, propane, butane, and naphtha vapors. Residual oil present at the bottom of the column is known as reduced crude oil (RCO). The temperature of the stream at the bottom is 340 °C–350 °C, which is below the cracking temperature of the oil.
 Simulation helps in crude oil characterization so that thermodynamic and transport properties can be predicted. Dynamic models help in examining the relationships that could not be found by experimental methods (Ellner & Guckenheimer, 2006). By using modeling and simulation software, 80% of the time can be saved rather than constructing an actual working model. This also saves cost, and models provide more accurate studies of real systems.
 
-
-## See also
-Distillation
-Continuous distillation
-
-
-## References

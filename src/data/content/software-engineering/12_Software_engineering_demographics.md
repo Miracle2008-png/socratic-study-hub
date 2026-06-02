@@ -47,12 +47,3 @@ In May 2024, the Australian government reported that 169,300 Australians are emp
 ### Russia
 According to the Russian government, the number of IT specialists in the country increased by 13% in 2023, reaching approximately 857,000. During the initial phase of the 2022 invasion of Ukraine, an estimated 100,000 IT specialists left Russia.
 
-
-## See also
-Software engineering
-List of software engineering topics
-Software engineering economics
-Software engineering professionalism
-
-
-## References

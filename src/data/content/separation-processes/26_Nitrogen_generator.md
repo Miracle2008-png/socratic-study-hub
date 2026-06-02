@@ -61,11 +61,3 @@ Paint-and-varnish industry: Paint and varnish production uses nitrogen for the c
 Petroleum industry: In the petroleum industry, nitrogen is an indispensable component in a number of processes. Most commonly, nitrogen is used to create an inert environment for preventing explosions and for fire safety and to support transportation and transfer of hydrocarbons. Additionally, nitrogen is used for pipeline testing and purging, cleaning technological vessels and cleaning liquefied gas carriers and hydrocarbon storage facilities.
 Pharmaceutical industry: In the pharmaceutical industry, nitrogen finds application in pharmaceuticals packaging, and ensuring against explosion and fire safety in activities where fine dispersed substances are used.
 
-
-## See also
-Chemical oxygen generator
-Hydrogen production
-Industrial gas
-
-
-## References

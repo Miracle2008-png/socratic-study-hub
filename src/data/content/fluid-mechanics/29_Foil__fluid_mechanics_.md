@@ -27,20 +27,3 @@ just submerged            1,420
 depth  5 m                2,840
      10 km                2,860
 
-
-## See also
-
-
-## References
-
-
-## External links
-Lift from Flow Turning
-What is Lift?
-Bernoulli and Newton
-Effect of Shape on Lift
-Incorrect Lift Theory
-Penguin can fly
-phillipines thresher shark swim towards scuba divers
-Swimming with Wild Dolphins
-Bird Flight II

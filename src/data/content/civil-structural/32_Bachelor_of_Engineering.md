@@ -70,26 +70,3 @@ In Nigeria, Engineer or Engr is protected: only a certified engineer may use the
 Certification comes with registration and accreditation by Council for the Regulation of Engineering in Nigeria (COREN). It is the regulatory body that governs the practice of engineering in Nigeria.
 The membership is required to practice engineering independently. It is a requirement for some engineering firms and is mandatory for government contracts.
 
-
-## See also
-Bachelor's degree
-Bachelor of Technology
-Bachelor of Applied Technology
-Bachelor of Science
-Bachelor of Applied Science
-Bachelor of Science in Information Technology
-Engineer's degree
-Master's degree
-Master of Engineering
-Master of Science in Engineering
-Master of Science
-Master of Applied Science
-Master of Science in Information Technology
-Institute of Technology
-Vocational university
-Polytechnic (Greece)
-Polytechnic (Portugal)
-Polytechnic (United Kingdom)
-
-
-## References

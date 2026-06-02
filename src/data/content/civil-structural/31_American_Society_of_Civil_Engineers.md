@@ -4,64 +4,6 @@ The American Society of Civil Engineers (ASCE) is a tax-exempt professional body
 ASCE is dedicated to the advancement of the science and profession of civil engineering and the enhancement of human welfare through the activities of society members. It has more than 143,000 members in 177 countries. Its mission is to provide essential value to members, their careers, partners, and the public; facilitate the advancement of technology; encourage and provide the tools for lifelong learning; promote professionalism and the profession; develop and support civil engineers.
 
 
-## History
-The first serious and documented attempts to organize civil engineers as a professional society in the newly created United States were in the early 19th century. In 1828, John Kilbourn of Ohio managed a short-lived "Civil Engineering Journal," editorializing about the recent incorporation of the Institution of Civil Engineers in Great Britain that same year, Kilbourn suggested that the American corps of engineers could constitute an American society of civil engineers. Later, in 1834, an American trade periodical, the "American Railroad Journal," advocated for a similar national organization of civil engineers.
-
-
-### Institution of American Civil Engineers
-On December 17, 1838, a petition started circulating asking civil engineers to meet in 1839 in Baltimore, Maryland, to organize a permanent society of civil engineers. Prior to that, thirteen notable civil engineers largely identifiable as being from New York, Pennsylvania, or Maryland met in Philadelphia. This group presented the Franklin Institute of Philadelphia with a formal proposal that an Institution of American Civil Engineers be established as an adjunct of the Franklin..." Some of them were: 
-
-Benjamin Wright. In 1969, the American Society of Civil Engineers declared Wright to be the 'Father of American Civil Engineering'.
-William Strickland
-Pennsylvanians Edward Miller and Solomon. W. Roberts, the latter being Chief Engineer for the Allegheny Portage railroad, the first crossing of the Allegheny mountains (1831–1834)
-Forty engineers actually appeared at the February 1839 meeting in Baltimore, including J. Edgar Thomson (Future Chief Engineer and later President of the Pennsylvania Railroad), Wright, Roberts, Edward Miller, and the Maryland engineers Isaac Trimble and Benjamin Henry Latrobe II and attendees from as far as Massachusetts, Illinois, and Louisiana. Subsequently, a group met again in Philadelphia, led by its Secretary, Edward Miller to take steps to formalize the society, participants now included such other notable engineers as: 
-
-John B. Jervis
-Claudius Crozet
-William Gibbs McNeill
-George Washington Whistler
-Walter Gwynn
-J. Edgar Thompson
-Sylvester Welch, brother of future ASCE president Ashbel Welch
-Jonathan Knight
-Benjamin Henry Latrobe II
-Moncure Robinson.
-Miller drafted a proposed constitution that defined society's purpose as "the collection and diffusion of professional knowledge, the advancement of mechanical philosophy, and the elevation of the character and standing of the Civil Engineers of the United States." Membership in the new society restricted membership to engineers, and "architects and eminent machinists were to be admitted only as Associates."
-The proposed constitution failed, and no further attempts were made to form another society. Miller later ascribed the failure to the difficulties of assembling members due to available means for traveling in the country at the time. One of the other difficulties members would have to contend with was the requirement to produce each year one previously unpublished paper or "...present a scientific book, map, plan or model, not already in the possession of the Society, under the penalty of $10." 
-In that same period, the editor of the American Railroad Journal commented that effort had failed in part due to certain jealousies that arose due to the proposed affiliation with the Franklin Institute. That journal continued discussion on forming an engineers' organization from 1839 thru 1843 serving its own self-interests in advocating its journal as a replacement for a professional society but to no avail.
-
-
-### The American Society of Civil Engineers and Architects
-During the 1840s, professional organizations continued to develop and organize in the United States. The organizers' motives were largely to "improve common standards, foster research, and disseminate knowledge through meetings and publications." Unlike earlier associations such as the American Philosophical Society, these newer associations were not seeking to limit membership as much as pursue "more specialized interests." Examples of this surge in new professional organizations in America were the American Statistical Association (1839), American Ethnological Society (1842), American Medical Association (1847), American Association for the Advancement of Science, (1848) and National Education Association (1852).
-
-During this same period of association incorporations in the 1840s, attempts were again made at organizing an American engineer association. They succeeded at first with the Boston Society of Civil Engineers, organized in 1848, and then in October 1852, with an effort to organize a Society of Civil Engineers and Architects in New York. Led by Alfred W. Craven, Chief Engineer of the Croton Aqueduct and future ASCE president, the meeting resolved to incorporate the society under the name "American Society of Civil Engineers And Architects". The founding meeting was held on November 5, 1852, in the offices of the Croton Aqueduct Department at the Rotunda in City Hall Park, Manhattan. Membership eligibility was restricted to "civil, geological, mining and mechanical Engineers, architects, and other persons who, by profession, are interested in the advancement of science." James Laurie was elected the society's first president. At an early meeting of the Board of Direction in 1852, instructions were given for the incorporation of the "American Society of Civil Engineers and Architects" but this was the proper steps were never taken, and therefore this name never legally belonged to the association. The ASCE held its first meetings at the Croton Aqueduct Department building in City Hall Park. The meetings only went through 1855 and with the advent of the American Civil War, the society suspended its activities.
-
-
-### Late 19th century
-The next meeting was more than twelve years later in 1867. A number of the original founders, such as James Laurie, J.W. Adams, C. W. Copeland, and W. H. Talcott, were at this meeting and were dedicated to the objective of resuscitating the society. They also planned to put the society on a more permanent footing and elect fifty-four new members. With success in that effort, the young engineering society passed a resolution noting that its preservation was mainly due to the persevering efforts of its first president, James Laurie. The address of President James Pugh Kirkwood delivered at that meeting in 1867 was the first publication of the society, appearing in Volume 1 of Transactions, bearing date of 1872.
-On March 4, 1868, by a vote of 17 to 4, the name was changed to "American Society of Civil Engineers", but it was not until April 17, 1877, that the lack of incorporation was discovered and the proper steps taken to remedy the defect. The society was then chartered and incorporated in New York state. 
-The reconvened ASCE met at the Chamber of Commerce of the State of New York until 1875 when the society moved to 4 East 23rd Street. The ASCE moved again in 1877 to 104 East 20th Street and in 1881 to 127 East 23rd Street. The ASCE commissioned a new headquarters at 220 West 57th Street in 1895. The building was completed in 1897 and served as the society's headquarters until 1917 when the ASCE moved to the Engineering Societies' Building. 
-
-
-### 20th century
-Nora Stanton Barney was among the first women in the United States to earn a civil engineering degree, graduating from Cornell University in 1905. In the same year, she was accepted as a junior member of the organization and began work for the New York City Board of Water Supply. She was the first female member of ASCE, where she was allowed to be a junior member, but was denied advancement to associate member in 1916 because of her gender. In 2015, she was posthumously advanced to ASCE Fellow status.
-ASCE's headquarters relocated to the Engineering Societies' Building in 1917; additional floors were added on top of the building to accommodate the society's new offices. The weight of the extra stories could not be supported on the existing pilings, so four new steel columns were constructed through the structure, supported directly on the bedrock. In 1961, ASCE's headquarters moved from the Engineering Societies' Building to the United Engineering Center, a new skyscraper built for twenty different engineering societies across from the headquarters of the United Nations. In 1996, ASCE relocated its headquarters from New York City to Reston, Virginia. The relocation to the Washington metropolitan area was made to bring ASCE's headquarters closer to the legislative branch of the federal government and also reduced operating costs.
-
-In 1999, the ASCE elected the top-ten "civil engineering achievements that had the greatest positive impact on life in the 20th century" in "broad categories". Monuments of the Millennium were a "combination of technical engineering achievement, courage and inspiration, and a dramatic influence on the development of [their] communities".
-The achievements and monuments that best exemplified them included:
-
-Airport design and development –  the Kansai International Airport in Osaka, Japan
-Dams –  the Hoover Dam on the Colorado River in the United States
-Interstate Highway System –  "the system overall"
-Long-span bridges –  like the Golden Gate Bridge in San Francisco, California
-Rail transportation –  as exemplified by the Eurotunnel rail system connecting the UK and France
-Sanitary landfills and solid waste disposal –  "sanitary waste disposal advances overall"
-Skyscrapers –  the Empire State Building in Midtown Manhattan, New York City
-Wastewater treatment –  the Chicago wastewater system
-Water supply and distribution –  the California State Water Project
-Water transportation –  the Panama Canal
-
-
 ## Overview
 ASCE's mission is to deliver essential value to "its members, their careers, our partners, and the public" as well as enable "the advancement of technology, encourage and provide the tools for lifelong learning, promote professionalism and the profession." The society also seeks to "develop and support civil engineer leaders, and advocate infrastructure and environmental stewardship." The society as an exempt organization in the United States (Section 501(c)(3)) was required to reported its program service accomplishments and related expenses and revenues.
 
@@ -155,17 +97,3 @@ On November 5, 2007, New Orleans–based grassroots group Levees.org led by Sand
 #### USACE grant money for disinformation, 2008
 In March 2008, Levees.org announced that records obtained under the Freedom of Information Act revealed that as early October 2005, the Army Corps of Engineers had directed and later paid the ASCE more than $1.1 million for its peer review (Grant Number: W912HZ-06-1-0001). The grant also paid for a series of misleading ASCE presentations attempting to shift blame away from the corps and onto local levee officials. Members of the ASCE are forbidden from making false or exaggerated statements and also from making statements for an interested party unless this is disclosed. Levees.org claimed the records showed how the external peer review would be done in four phases: Phase 1 was research and analysis on the performance of the levees, floodwalls and other important structures. Phase 2 was provision of information on the current system to prevent future flooding. Phase 3 was provision of information to evaluate alternative approaches to flood protection. Phase 4 was transfer information and knowledge gained to a broader audience within Corps and its consultancy community to communicate lessons learned. The group claimed that these records were proof that ASCE's routine powerpoint presentation from 2007 and 2008 were a public relations campaign to repair the corps' reputation. ASCE officials responded that ASCE paid for the powerpoint presentations itself and had not used USACE grant money for that purpose.
 
-
-## See also
-ASCE Library – online database of civil engineering journals, proceedings, e-books, and standards published by the society
-List of Historic Civil Engineering Landmarks – landmarks designated by the ASCE
-
-
-## References
-
-
-## External links
-Official website 
-Works by American Society of Civil Engineers at Project Gutenberg
-Works by or about American Society of Civil Engineers at the Internet Archive
-"Centennial of Engineering" –  A 3¢ commemorative US postage stamp issued in 1952

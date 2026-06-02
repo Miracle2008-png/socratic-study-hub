@@ -26,15 +26,6 @@ This is shown to be a special case of a more general relation.
 ### Stochastic energetics
 
 
-## History
-Seifert writes:
-
-Classical thermodynamics, at its heart, deals with general laws governing the transformations of a system, in particular, those involving the exchange of heat, work and matter with an environment. As a central result, total entropy production is identified that in any such process can never decrease, leading, inter alia, to fundamental limits on the efficiency of heat engines and refrigerators.
-The thermodynamic characterisation of systems in equilibrium got its microscopic justification from equilibrium statistical mechanics which states that for a system in contact with a heat bath the probability to find it in any specific microstate is given by the Boltzmann factor. For small deviations from equilibrium, linear response theory allows to express transport properties caused by small external fields through equilibrium correlation functions. On a more phenomenological level, linear irreversible thermodynamics provides a relation between such transport coefficients and entropy production in terms of forces and fluxes. Beyond this linear response regime, for a long time, no universal exact results were available.
-During the last 20 years fresh approaches have revealed general laws applicable to non-equilibrium system thus pushing the range of validity of exact thermodynamic statements beyond the realm of linear response deep into the genuine non-equilibrium region. These exact results, which become particularly relevant for small systems with appreciable (typically non-Gaussian) fluctuations, generically refer to distribution functions of thermodynamic quantities like exchanged heat, applied work or entropy production.
-Stochastic thermodynamics combines the stochastic energetics introduced by Sekimoto (1998) with the idea that entropy can consistently be assigned to a single fluctuating trajectory.
-
-
 ## Open research
 
 
@@ -50,18 +41,6 @@ Applications of non-equilibrium work relations, like the Jarzynski equality, hav
 Until recently thermodynamics has only considered systems coupled to a thermal bath and, therefore, satisfying Boltzmann statistics. However, some systems do not satisfy these conditions and are far from equilibrium such as living matter, for which fluctuations are expected to be non-Gaussian.
 Active particle systems are able to take energy from their environment and drive themselves far from equilibrium. An important example of active matter is constituted by objects capable of self propulsion. Thanks to this property, they feature a series of novel behaviours that are not attainable by matter at thermal equilibrium, including, for example, swarming and the emergence of other collective properties. A passive particle is considered in an active bath when it is in an environment where a wealth of active particles are present. These particles will exert nonthermal forces on the passive object so that it will experience non-thermal fluctuations and will behave widely different from a passive Brownian particle in a thermal bath. The presence of an active bath can significantly influence the microscopic thermodynamics of a particle. Experiments have suggested that the Jarzynski equality does not hold in some cases due to the presence of non-Boltzmann statistics in active baths. This observation points towards a new direction in the study of non-equilibrium statistical physics and stochastic thermodynamics, where also the environment itself is far from equilibrium.
 Active baths are a question of particular importance in biochemistry. For example, biomolecules within cells are coupled with an active bath due to the presence of molecular motors within the cytoplasm, which leads to striking and largely not yet understood phenomena such as the emergence of anomalous diffusion (Barkai et al., 2012). Also, protein folding might be facilitated by the presence of active fluctuations (Harder et al., 2014b) and active matter dynamics could play a central role in several biological functions (Mallory et al., 2015; Shin et al., 2015; Suzuki et al., 2015). It is an open question to what degree stochastic thermodynamics can be applied to systems coupled to active baths.
-
-
-## References
-
-
-### Notes
-
-
-### Citations
-
-
-### Academic references
 
 
 ### Press

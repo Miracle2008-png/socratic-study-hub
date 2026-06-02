@@ -2576,11 +2576,6 @@ $$ D_{f} $$
   
 , is calculated as the downstream projection of the viscous forces evaluated over the body's surface. The sum of friction drag and pressure (form) drag is called viscous drag. This drag component is due to viscosity.
 
-### History
-
-The idea that a moving body passing through air or another fluid encounters resistance had been known since the time of Aristotle. According to Mervyn O'Gorman, this was named "drag" by Archibald Reith Low. Louis Charles Breguet's paper of 1922 began efforts to reduce drag by streamlining. Breguet went on to put his ideas into practice by designing several record-breaking aircraft in the 1920s and 1930s. Ludwig Prandtl's boundary layer theory in the 1920s provided the impetus to minimise skin friction. A further major call for streamlining was made by Sir Melvill Jones who provided the theoretical concepts to demonstrate emphatically the importance of streamlining in aircraft design. 
-In 1929 his paper 'The Streamline Airplane' presented to the Royal Aeronautical Society was seminal. He proposed an ideal aircraft that would have minimal drag which led to the concepts of a 'clean' monoplane and retractable undercarriage. The aspect of Jones's paper that most shocked the designers of the time was his plot of the horse power required versus velocity, for an actual and an ideal plane. By looking at a data point for a given aircraft and extrapolating it horizontally to the ideal curve, the velocity gain for the same power can be seen. When Jones finished his presentation, a member of the audience described the results as being of the same level of importance as the Carnot cycle in thermodynamics.
-
 ### Power curve in aviation
 
 The interaction of parasitic and induced drag vs. airspeed can be plotted as a characteristic curve, illustrated here. In aviation, this is often referred to as the power curve, and is important to pilots because it shows that, below a certain airspeed, maintaining airspeed counterintuitively requires more thrust as speed decreases, rather than less. The consequences of being "behind the curve" in flight are important and are taught as part of pilot training. At the subsonic airspeeds where the "U" shape of this curve is significant, wave drag has not yet become a factor, and so it is not shown in the curve.

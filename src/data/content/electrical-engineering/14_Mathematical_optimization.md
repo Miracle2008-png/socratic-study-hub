@@ -433,12 +433,6 @@ represents the {x, y} pair (or pairs) that maximizes (or maximize) the value of 
 Operators arg min and arg max are sometimes also written as argmin and argmax, and stand for argument of the minimum and argument of the maximum.
 
 
-## History
-Fermat and Lagrange found calculus-based formulae for identifying optima, while Newton and Gauss proposed iterative methods for moving towards an optimum.
-The term "linear programming" for certain optimization cases was due to George B. Dantzig, although much of the theory had been introduced by Leonid Kantorovich in 1939. (Programming in this context does not refer to computer programming, but comes from the use of program by the United States military to refer to proposed training and logistics schedules, which were the problems Dantzig studied at that time.) Dantzig published the Simplex algorithm in 1947, and also John von Neumann and other researchers worked on the theoretical aspects of linear programming (like the theory of duality) around the same time.
-Other notable researchers in mathematical optimization include the following:
-
-
 ## Major subfields
 Convex programming studies the case when the objective function is convex (minimization) or concave (maximization) and the constraint set is convex. This can be viewed as a particular case of nonlinear programming or as generalization of linear or convex quadratic programming.
 Linear programming (LP), a type of convex programming, studies the case in which the objective function f is linear and the constraints are specified using only linear equalities and inequalities. Such a constraint set is called a polyhedron or a polytope if it is bounded.
@@ -613,35 +607,3 @@ Optimization techniques are used in many facets of computational systems biology
 
 ## Solvers
 
-
-## See also
-
-
-## Notes
-
-
-## Further reading
-Boyd, Stephen P.; Vandenberghe, Lieven (2004). Convex Optimization. Cambridge: Cambridge University Press. ISBN 0-521-83378-7.
-Gill, P. E.; Murray, W.; Wright, M. H. (1982). Practical Optimization. London: Academic Press. ISBN 0-12-283952-8.
-Lee, Jon (2004). A First Course in Combinatorial Optimization. Cambridge University Press. ISBN 0-521-01012-8.
-Nocedal, Jorge; Wright, Stephen J. (2006). Numerical Optimization (2nd ed.). Berlin: Springer. ISBN 0-387-30303-0.
-G.L. Nemhauser, A.H.G. Rinnooy Kan and M.J. Todd (eds.): Optimization, Elsevier, (1989).
-Stanislav Walukiewicz：Integer Programming, Springer，ISBN 978-9048140688, (1990).
-R. Fletcher: Practical Methods of Optimization, 2nd Ed., Wiley, (2000).
-Panos M. Pardalos：Approximation and Complexity in Numerical Optimization: Continuous and Discrete Problems, Springer，ISBN 978-1-44194829-8, (2000).
-Xiaoqi Yang, K. L. Teo, Lou Caccetta (Eds.)：Optimization Methods and Applications，Springer, ISBN 978-0-79236866-3, (2001).
-Panos M. Pardalos, and  Mauricio G. C. Resende(Eds.)：Handbook of Applied Optimization、Oxford Univ Pr on Demand, ISBN 978-0-19512594-8, (2002).
-Wil Michiels, Emile Aarts, and Jan Korst: Theoretical Aspects of Local Search, Springer, ISBN 978-3-64207148-5, (2006).
-Der-San Chen, Robert G. Batson, and Yu Dang： Applied Integer Programming: Modeling and Solution，Wiley，ISBN 978-0-47037306-4, (2010).
-Mykel J. Kochenderfer and Tim A. Wheeler: Algorithms for Optimization, The MIT Press, ISBN 978-0-26203942-0, (2019). 
-Vladislav Bukshtynov: Optimization: Success in Practice, CRC Press (Taylor & Francis), ISBN 978-1-03222947-8, (2023) .
-Rosario Toscano: Solving Optimization Problems with the Heuristic Kalman Algorithm: New Stochastic Methods, Springer, ISBN 978-3-031-52458-5 (2024).
-Immanuel M. Bomze, Tibor Csendes, Reiner Horst and Panos M. Pardalos: Developments in Global Optimization, Kluwer Academic, ISBN 978-1-4419-4768-0 (2010).
-
-
-## External links
-
-"Decision Tree for Optimization Software". Links to optimization source codes
-"Global optimization". Archived from the original on 2022-01-29. Retrieved 2019-05-18.
-"EE364a: Convex Optimization I". Course from Stanford University.
-Varoquaux, Gaël. "Mathematical Optimization: Finding Minima of Functions".

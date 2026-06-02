@@ -6,10 +6,6 @@ The concept of dialysis was introduced in 1861 by the Scottish chemist Thomas Gr
 From this concept dialysis can be defined as a spontaneous separation process of suspended colloidal particles from dissolved ions or molecules of small dimensions through a semi permeable membrane. Most common dialysis membrane are made of cellulose, modified cellulose or synthetic polymer (cellulose acetate or nitrocellulose).
 
 
-## Etymology
-Dialysis derives from the Greek διά, 'through', and λύειν, 'to loosen'.
-
-
 ## Principles
 Dialysis is the process used to change the matrix of molecules in a sample by differentiating molecules by the classification of size. It relies on diffusion, which is the random, thermal movement of molecules in solution (Brownian motion) that leads to the net movement of molecules from an area of higher concentration to a lower concentration until equilibrium is reached. Due to the pore size of the membrane, large molecules in the sample cannot pass through the membrane, thereby restricting their diffusion from the sample chamber. By contrast, small molecules will freely diffuse across the membrane and obtain equilibrium across the entire solution volume, thereby changing the overall concentration of these molecules in the sample and dialysate (see dialysis figure at right). 
 Osmosis is another principle that makes dialysis work. During osmosis, fluid moves from areas of high water concentration to lower water concentration across a semi-permeable membrane until equilibrium. In dialysis, excess fluid moves from sample to the dialysate through a membrane until the fluid level is the same between sample and dialysate.
@@ -123,28 +119,3 @@ A disadvantage is that a diffusion dialyser has a low processing capability and 
 The main benefit of electrodialysis is the high recovery, especially in the water recovery. Another advantage is the fact that not high pressure is applied which implies that the effect fouling is not significant and consequently no chemicals are required to fight against them. Moreover, the fouling layer is not compact which leads to a higher recovery and to a long membrane life. It is also important that the treatments are for concentrations higher than 70,000 ppm eliminating the concentration limit. Finally, the energy required to operate is low due to the non-phase change. In fact, it is lower in comparison with the needed in the multi effect distillation (MED) and mechanical vapour compression (MVC) processes.
 The main drawback of electrodialysis is the current density limit, the process must be operated at a lower current density than the maximum allowed. The fact is that at certain voltage applied the diffusion of ions through the membrane are not linear leading to water dissociation, which would reduce the efficiency of the operation. Another aspect to take into account is that although low energy is required to operate, the higher the salt feed concentration is, the higher the energy needed will be. Finally, in the case of some products, it must be considered that electrodialysis does not remove microorganisms and organic contaminants, therefore a post-treatment is necessary.
 
-
-## See also
-Electrodialysis
-Haemodialysis
-Microdialysis
-Osmosis
-Peritoneal dialysis
-AutoAnalyzer
-
-
-## References
-
-
-## External links
-
-
-### Suppliers
-Thermo Scientific
-Spectrum Laboratories
-Fisher Scientific
-EMD Millipore
-Sigma-Aldrich
-Harvard Apparatus
-Membrane Filtration Products, Inc.
-[1]

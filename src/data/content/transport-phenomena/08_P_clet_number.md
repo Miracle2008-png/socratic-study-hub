@@ -263,9 +263,3 @@ In the context of particulate motion, the Péclet number has also been called Br
 ## Other usages
 The Péclet number also finds applications beyond transport phenomena, as a general measure for the relative importance of the random fluctuations and of the systematic average behavior in mesoscopic systems.
 
-
-## See also
-Nusselt number
-
-
-## References

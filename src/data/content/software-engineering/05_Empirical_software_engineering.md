@@ -18,5 +18,3 @@ Empirical Software Engineering: An International Journal
 International Symposium on Empirical Software Engineering and Measurement
 International Software Engineering Research Network (ISERN)
 
-
-## References

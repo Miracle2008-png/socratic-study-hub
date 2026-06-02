@@ -17,11 +17,6 @@ In other words, systems of different types can be nested, and the overall system
 Feedforward control is distinctly different from open-loop control and teleoperator systems. Feedforward control requires a mathematical model of the plant (process and/or machine being controlled) and the plant's relationship to any inputs or feedback the system might receive. Neither open-loop control nor teleoperator systems require the sophistication of a mathematical model of the physical system or plant being controlled. Control based on operator input without integral processing and interpretation through a mathematical model of the system is a teleoperator system and is not considered feedforward control.
 
 
-## History
-Historically, the use of the term feedforward is found in works by Harold S. Black in US patent 1686792 (invented 17 March 1923) and D. M. MacKay as early as 1956. While MacKay's work is in the field of biological control theory, he speaks only of feedforward systems. MacKay does not mention feedforward control or allude to the discipline of feedforward controls. MacKay and other early writers who use the term feedforward are generally writing about theories of how human or animal brains work. Black also has US patent 2102671 invented 2 August 1927 on the technique of feedback applied to electronic systems.
-The discipline of feedforward controls was largely developed by professors and graduate students at Georgia Tech, MIT, Stanford and Carnegie Mellon. Feedforward is not typically hyphenated in scholarly publications. Meckl and Seering of MIT and Book and Dickerson of Georgia Tech began the development of the concepts of Feedforward Control in the mid-1970s. The discipline of Feedforward Controls was well defined in many scholarly papers, articles and books by the late 1980s.
-
-
 ## Benefits
 The benefits of feedforward control are significant and can often justify the extra cost, time and effort required to implement the technology. Control accuracy can often be improved by as much as an order of magnitude if the mathematical model is of sufficient quality and implementation of the feedforward control law is well thought out. Energy consumption by the feedforward control system and its driver is typically substantially lower than with other controls. Stability is enhanced such that the controlled device can be built of lower cost, lighter weight, springier materials while still being highly accurate and able to operate at high speeds. Other benefits of feedforward control include reduced wear and tear on equipment, lower maintenance costs, higher reliability and a substantial reduction in hysteresis.  Feedforward control is often combined with feedback control to optimize performance.
 
@@ -495,13 +490,3 @@ Feedforward control is a discipline within the field of automatic controls used 
 ### Parallel feed-forward compensation with derivative (PFCD)
 The method is rather a new technique that changes the phase of an open-loop transfer function of a non-minimum phase system into minimum phase.
 
-
-## See also
-Black box, system where only the inputs and outputs can be viewed, and not its implementation
-Smith predictor, type of predictive controller for control systems with a significant feedback time delay
-
-
-## References
-
-
-## Further reading

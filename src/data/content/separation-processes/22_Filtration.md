@@ -107,23 +107,3 @@ Compressed breathing air production, where the air passes through a particulate 
 Potable water treatment using biofilm filtration in slow sand filters.
 Wastewater treatment using biofilm filtration using trickling filters.
 
-
-## See also
-
-Separation process – Method that converts a mixture or solution into two or more distinct products
-Microfiltration – Physical process where a fluid is passed through a special pore-sized membrane
-Ultrafiltration – Filtration by force through a semipermeable membrane
-Nanofiltration – Filtration method that uses nanometer sized pores in biological membranes
-Reverse osmosis – Water purification process
-Cross-flow filtration – Filtration technique
-Sieve – Tool for separation of solid materials by particle size
-Sieve analysis – Procedure to assess particle size distribution
-Wikipedia:Edit filter – Wikipedia project page about the edit filter
-
-
-## References
-
-
-## External links
-
-Filtration modeling (constant rate and pressure)

@@ -526,30 +526,3 @@ Because the total flow conditions are defined by isentropically bringing the flu
 
 ## Applications
 
-
-## See also
-
-List of publications in fluid dynamics
-List of fluid dynamicists
-
-
-## References
-
-
-## Further reading
-Acheson, D. J. (1990). Elementary Fluid Dynamics. Clarendon Press. ISBN 0-19-859679-0.
-Batchelor, G. K. (1967). An Introduction to Fluid Dynamics. Cambridge University Press. ISBN 0-521-66396-2.
-Chanson, H. (2009). Applied Hydrodynamics: An Introduction to Ideal and Real Fluid Flows. CRC Press, Taylor & Francis Group, Leiden, The Netherlands, 478 pages. ISBN 978-0-415-49271-3.
-Clancy, L. J. (1975). Aerodynamics. London: Pitman Publishing Limited. ISBN 0-273-01120-0.
-Lamb, Horace (1994). Hydrodynamics (6th ed.). Cambridge University Press. ISBN 0-521-45868-4. Originally published in 1879, the 6th extended edition appeared first in 1932.
-Milne-Thompson, L. M. (1968). Theoretical Hydrodynamics (5th ed.). Macmillan. Originally published in 1938.
-Shinbrot, M. (1973). Lectures on Fluid Mechanics. Gordon and Breach. ISBN 0-677-01710-3.
-Nazarenko, Sergey (2014), Fluid Dynamics via Examples and Solutions, CRC Press (Taylor & Francis group), ISBN 978-1-43-988882-7
-Encyclopedia: Fluid dynamics Scholarpedia
-
-
-## External links
-
-National Committee for Fluid Mechanics Films (NCFMF), containing films on several subjects in fluid dynamics (in RealMedia format)
-Gallery of fluid motion, "a visual record of the aesthetic and science of contemporary fluid mechanics," from the American Physical Society
-List of Fluid Dynamics books Archived 2024-12-11 at the Wayback Machine

@@ -428,9 +428,3 @@ Fundamentals of Radiation Material Science: Metals and Alloys, 2nd Ed, Gary S. W
 R. S. Averback and T. Diaz de la Rubia (1998). "Displacement damage in irradiated metals and semiconductors". In H. Ehrenfest and F. Spaepen. Solid State Physics 51. Academic Press. pp. 281–402.
 R. Smith, ed. (1997). Atomic & ion collisions in solids and at surfaces: theory, simulation and applications. Cambridge University Press. ISBN 0-521-44022-X.
 
-
-## References
-
-
-## External links
- Media related to Radiation material science at Wikimedia Commons

@@ -4001,21 +4001,3 @@ Some authors have attempted formulations for the total sediment load carried in 
 ## Bed load sediment mitigation at intake structures
 Riverside intake structures used in water supply, canal diversions, and water cooling can experience entrainment of bed load (sand-size) sediments.  These entrained sediments produce multiple deleterious effects such as reduction or blockage of intake capacity, feedwater pump impeller damage or vibration, and result in sediment deposition in downstream pipelines and canals.  Structures that modify local near-field secondary currents are useful to mitigate these effects and limit or prevent bed load sediment entry.
 
-
-## See also
-Sedimentology – Study of natural sediments and their formation processes
-Exner equation – Law of sediment aggradation
-Hydrology – Science of the movement, distribution, and quality of water on Earth
-Sediment gravity flow – Sediment transport mechanism
-Stream capacity – Total amount of sediment a stream can transport
-
-
-## References
-
-
-## External links
-Liu, Z. (2001), Sediment Transport.
-Moore, A. Fluvial sediment transport lecture notes, Kent State.
-Wilcock, P. Sediment Transport Seminar, January 26–28, 2004, University of California at Berkeley
-Southard, J. B. (2007), Sediment Transport and Sedimentary Structures
-Linwood, J. G., Suspended Sediment Concentration and Discharge in a West London River.

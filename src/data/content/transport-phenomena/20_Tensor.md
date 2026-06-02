@@ -2519,17 +2519,6 @@ defining a coordinate transformation,
   
 
 
-## History
-The concepts of later tensor analysis arose from the work of Carl Friedrich Gauss in differential geometry, and the formulation was much influenced by the theory of algebraic forms and invariants developed during the middle of the nineteenth century.  The word "tensor" itself was introduced in 1846 by William Rowan Hamilton to describe something different from what is now meant by a tensor. Gibbs introduced dyadics and polyadic algebra, which are also tensors in the modern sense. The contemporary usage was introduced by Woldemar Voigt in 1898.
-Tensor calculus was developed around 1890 by Gregorio Ricci-Curbastro under the title absolute differential calculus, and originally presented in 1892.  It was made accessible to many mathematicians by the publication of Ricci-Curbastro and Tullio Levi-Civita's 1900 classic text Méthodes de calcul différentiel absolu et leurs applications (Methods of absolute differential calculus and their applications). In Ricci's notation, he refers to "systems" with covariant and contravariant components, which are known as tensor fields in the modern sense.
-In the 20th century, the subject came to be known as tensor analysis. It achieved broader acceptance beginning with Hermann Minkowski's application to special relativity in 1908 and his development of the concept of spacetime.  Albert Einstein learned about them, with great difficulty, from the geometer Marcel Grossmann.  Levi-Civita then initiated a correspondence with Einstein to correct mistakes Einstein had made in his use of tensor analysis.  The correspondence lasted 1915–17, and was characterized by mutual respect:
-
-I admire the elegance of your method of computation; it must be nice to ride through these fields upon the horse of true mathematics while the like of us have to make our way laboriously on foot.
-Einstein's general relativity was formulated in the language of tensors. 
-Tensors and tensor fields were also found to be useful in other fields such as continuum mechanics.  Some well-known examples of tensors in differential geometry are quadratic forms such as metric tensors, and the Riemann curvature tensor.  The exterior algebra of Hermann Grassmann, from the middle of the nineteenth century, is itself a tensor theory, and highly geometric, but it was some time before it was seen, with the theory of differential forms, as naturally unified with tensor calculus.  The work of Élie Cartan made differential forms one of the basic kinds of tensors used in mathematics, and Hassler Whitney popularized the tensor product.
-From about the 1920s onwards, it was realised that tensors play a basic role in algebraic topology (for example in the Künneth theorem). Correspondingly there are types of tensors at work in many branches of abstract algebra, particularly in homological algebra and representation theory.  Multilinear algebra can be developed in greater generality than for scalars coming from a field.  For example, scalars can come from a ring.  But the theory is then less geometric and computations more technical and less algorithmic.  Tensors are generalized within category theory by means of the concept of monoidal category, from the 1960s.
-
-
 ## Examples
 
 An elementary example of a mapping describable as a tensor is the dot product, which maps two vectors to a scalar. A more complex example is the Cauchy stress tensor T, which takes a directional unit vector v as input and maps it to the stress vector T(v), which is the force (per unit area) exerted by material on the negative side of the plane orthogonal to v against the material on the positive side of the plane, thus expressing a relationship between these two vectors, shown in the figure (right). The cross product, where two vectors are mapped to a third one, is strictly speaking not a tensor because it changes its sign under those transformations that change the orientation of the coordinate system. The totally anti-symmetric symbol 
@@ -3718,31 +3707,3 @@ The transformation law for a tensor behaves as a functor on the category of admi
 When changing from one orthonormal basis (called a frame) to another by a rotation, the components of a tensor transform by that same rotation.  This transformation does not depend on the path taken through the space of frames.  However, the space of frames is not simply connected (see orientation entanglement and plate trick): there are continuous paths in the space of frames with the same beginning and ending configurations that are not deformable one into the other.  It is possible to attach an additional discrete invariant to each frame that incorporates this path dependence, and which turns out (locally) to have values of ±1.  A spinor is an object that transforms like a tensor under rotations in the frame, apart from a possible sign that is determined by the value of this discrete invariant.
 Spinors are elements of the spin representation of the rotation group, while tensors are elements of its tensor representations. Other classical groups have tensor representations, and so also tensors that are compatible with the group, but all non-compact classical groups have infinite-dimensional unitary representations as well.
 
-
-## See also
- The dictionary definition of tensor at Wiktionary
-Array data type, for tensor storage and manipulation
-Bitensor
-
-
-### Foundational
-
-
-### Applications
-
-
-## Explanatory notes
-
-
-## References
-
-
-### Specific
-
-
-### General
-
-This article incorporates material from tensor on PlanetMath, which is licensed under the Creative Commons Attribution/Share-Alike License.
-
-
-## External links

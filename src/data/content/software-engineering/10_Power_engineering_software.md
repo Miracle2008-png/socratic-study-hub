@@ -3,10 +3,6 @@
 Power engineering software is a software used to create models, analyze or calculate the design of Power stations, Overhead power lines, Transmission towers, Electrical grids, Grounding and Lightning systems and others. It is a type of application software used for power engineering problems which are transformed into mathematical expressions.
 
 
-## History
-The first software program for power engineering was created by the end of the 1960s for the purpose of monitoring power plants. In the following decades, Power engineering and Computer technologies developed very fast. Software programs were created to collect data for power plants. One of the first computer languages used in Nuclear plants and Thermal plants was C (programming language).  The first power systems analysis program to feature a graphical user interface and IPSA was designed in the mid-1970s. Other platforms for electrical power modelling were created by the end of the 1980s. Currently, the programming language Python, commonly used in French Nuclear plants, is used to write energy-efficient algorithms and software programs.
-
-
 ## Classification
 
 
@@ -36,18 +32,3 @@ Transmission line analysis
 Renewable energy analysis
 Distribution system analysis
 
-
-## See also
-Top ten rules for power plant condition monitoring
-Power plants monitoring
-Wind energy software
-
-
-## References
-Julius Tou Software Engineering
-J.R. McDonald, Stephen McArthur Intelligent knowledge based systems in electrical power engineering
-Stephanie Hay, Anna Ferguson A Review of Power System Modelling Platforms and Capabilities, TNEI Services
-Ana Cavalcanti, Augusto Sampaio, James Woodcock Refinement Techniques in Software Engineering: First Pernambuco Summer
-Bjorklund, P., Pan, J., Yue, C., Srivastava, K., “A New Approach for Modelling Complex Power System Components in Different Simulation Tools”,
-Innovation in Power, Control, and Optimization Emerging Energy Technologies Vasant, Pandian
-Specific

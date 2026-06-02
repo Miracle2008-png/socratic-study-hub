@@ -33,7 +33,3 @@ Computer Science & Engineering
 The campus is designed with the main preference to the Computer Science and Electrical Engineering departments, both of which are close to the main gate of the building. The mechanical department is offset for some distance from the main building.
 It has a basketball court, Indoor sports complex and large ground which acts as a stadium for cricket, football and concerts. Concerts for various college festivals are held in the same ground.
 
-
-## External links
-
-Vidyavardhaka College of Engineering Website

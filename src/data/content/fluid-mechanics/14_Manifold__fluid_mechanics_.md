@@ -37,5 +37,3 @@ HVAC
 Pipe organ
 Plumbing
 
-
-## References

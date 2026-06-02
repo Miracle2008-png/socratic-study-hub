@@ -12,16 +12,3 @@ On the other hand, there is criticism of the unrealistic materials science used 
 ## Examples
 In many cases, the materials science aspect of a fictional work was interesting enough that someone other than the author has remarked on it. Here are some examples, and their relationship to real world materials science usage, if any.
 
-
-## See also
-Science in science fiction
-Hypothetical types of biochemistry. Most of these potential types of biochemistry have been used in science fiction.
-Unobtainium
-List of fictional elements, materials, isotopes and atomic particles
-Category:Fictional materials
-Category:Fiction about physics
-
-
-## References
-
-The Science in Science Fiction by Brian Stableford, David Langford, & Peter Nicholls (1982)

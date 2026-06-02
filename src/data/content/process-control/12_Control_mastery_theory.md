@@ -3,10 +3,6 @@
 Control mastery theory or CMT is an integrative theory of how psychotherapy works, that draws on psychodynamic, relational and cognitive principles. Originally the theory was developed within a psychoanalytical framework, by psychoanalyst and researcher Joseph Weiss, MD (1924-2004). CMT is also a theory of how the mind operates, with an emphasis of the unconscious, and how psychological problems may develop based on traumatic experiences early in life. The name of the theory comes from two central premises; the assumption that people have control over their mental content, and the belief that patients who come to therapy are fundamentally motivated to master their lives.
 
 
-## History
-The one-page article, "Crying at the Happy Ending" (Weiss, 1952), has been considered to mark the point where Weiss began to formulate the ideas underlying CMT. In this short article he described the phenomenon of delay of affect, where an emotion that connects to a particular upsetting situation is warded off until the situation has passed, and it is perceived safe to release the emotion. Following this, Weiss turned to focus on how patients make progress in therapy. Through studying detailed process notes of psychotherapy sessions, he identified segments thought to mark therapeutic progress, and looked at what immediately preceded such instances. Progress within sessions was defined as the emergence of new material or behavior. He concluded that patients make progress in therapy when they feel safe in the therapeutic relationship, and that patients continually make appraisals of conditions of safety in relation to others. Some of the ideas that helped form CMT were mentioned in certain passages of Freud's later writings, but the basic concepts of the theory were developed through Weiss's study of psychotherapy notes. In 1965, Weiss was joined by Harold Sampson, PhD (1925-2015). They met daily to collaborate on researching Weiss' theories. Formal research on the theory began in 1972 when Joseph Weiss together with Harold Sampson founded the Mount Zion Psychotherapy Research Group (now known as the San Francisco Psychotherapy Research Group; SFPRG). This research was based on the assumption that while therapeutic processes will be case-specific, there are also some common and lawful principles that govern how psychotherapy works, or fails to work. In 2017 an additional group was formed called the International Control Mastery Therapy Center (CMTC) whose goal is to help disseminate the theories of CMT worldwide (see CMTCenter.Net).
-
-
 ## Core principles
 
 
@@ -75,15 +71,3 @@ Nancy McWilliams has claimed that some pathogenic beliefs will be too complex to
 In an article published in journal of the Norwegian Psychological Association, Binder and Holgersen (2008) raised the question of whether the semantics in the concept of the patient's "plan" may attribute too much rationality and linearity to the unconscious. Further, as CMT draws on research and theory from different traditions within psychology, they pointed to the challenge in integrating research and theory into a cohesive and easily testable whole.
 Finally, it has been argued that CMT builds on inherently western values, and that there may be a need for more careful consideration of cultural factors when developing plan formulations.
 
-
-## References
-
-
-## Further reading
-Weiss, Joseph (1993). How psychotherapy works: Process and technique. New York: Guilford Press. ISBN 978-0-89862-670-4.
-Silberschatz, George, ed. (2005). Transformative relationships: The control-mastery theory of psychotherapy. New York: Routledge. ISBN 978-0-415-95027-5.
-
-
-## External links
-Introduction to Control Mastery Theory from the official webpage of San Francisco Psychotherapy Research Group
-Founders of Control Mastery Theory from the official webpage of San Francisco Psychotherapy Research Group

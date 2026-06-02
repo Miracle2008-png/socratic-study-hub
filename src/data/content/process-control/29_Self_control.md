@@ -140,17 +140,3 @@ However, there is conflicting evidence about whether ego depletion is a real eff
 Aristotle spoke about self-control as a key value that can guide decision making and support a good life. He contrasted self-control with the vice of akrasia which he described as acting against one's better judgment.. In his Nicomachean Ethics, Aristotle discussed the significance of this value in leading a virtuous life. Similarly, Plato wrote about self-control in relation to both mental and physical pleasures. 
 Examples of self-control as a virtue appear in Aristotle's treatment of temperance, which involves having a well-chosen and well-regulated set of desires. The vices associated with failures of temperance are self-indulgence (excess) and insensibility (deficiency). Deficiency or excess refers to the degree to which temperance is present. For example, a deficiency of temperance leads to overindulgence, while too much restraint can result in insensitivity or unreasonable control. Aristotle used the following analogy: the intemperate person is like a city with bad laws; the person without self-control is like a city with good laws that are not enforced.
 
-
-## See also
-
-
-## References
-
-
-## Further reading
-
-
-## External links
-
-Discipline in our life (religious tract)
-Teaching Children the Art of Self-Control

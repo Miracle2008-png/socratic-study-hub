@@ -2532,12 +2532,3 @@ Z-transform
 A mathematical operation that converts a set of evenly spaced measurements of an analog signal into a series of frequency components.
 HVDC Technology: High Voltage Direct Current. It plays a crucial role in modern renewable energy integration and grid decarbonization.
 
-
-## See also
-Glossary of engineering
-Glossary of civil engineering
-Glossary of mechanical engineering
-Glossary of structural engineering
-
-
-## References

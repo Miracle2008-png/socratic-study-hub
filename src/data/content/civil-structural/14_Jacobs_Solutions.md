@@ -35,15 +35,3 @@ Jacobs Engineering is building the Hinkley Point C nuclear reactor, controversia
 ### Woonsocket Regional Wastewater Treatment Facility
 The Rhode Island Department of Environmental Management is investigating the WRWTF plant, which is run by Jacobs, for spillage of an estimated 10 million gallons of wastewater with incomplete treatment into the Blackstone River in June 2022. Previous investigations resulted in letters of noncompliance given to Jacobs in 2021 and 2020.
 
-
-## See also
-
-Top 100 Contractors of the U.S. federal government
-
-
-## References
-
-
-## External links
-Official website
-Business data for Jacobs Solutions Inc.:

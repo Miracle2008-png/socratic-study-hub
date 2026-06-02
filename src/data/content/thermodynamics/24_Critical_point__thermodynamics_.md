@@ -100,11 +100,6 @@ Above the critical point there exists a state of matter that is continuously con
 Sometimes the critical point does not manifest in most thermodynamic or mechanical properties, but is "hidden" and reveals itself in the onset of inhomogeneities in elastic moduli, marked changes in the appearance and local properties of non-affine droplets, and a sudden enhancement in defect pair concentration.
 
 
-### History
-
-The existence of a critical point was first discovered by Charles Cagniard de la Tour in 1822 and named by Dmitri Mendeleev in 1860 and Thomas Andrews in 1869. Cagniard showed that CO2 could be liquefied at 31 °C at a pressure of 73 atm, but not at a slightly higher temperature, even under pressures as high as 3000 atm.
-
-
 ### Theory
 Solving the above condition 
   
@@ -293,14 +288,3 @@ The liquid–liquid critical point of a solution, which occurs at the critical s
 ### Mathematical definition
 From a theoretical standpoint, the liquid–liquid critical point represents the temperature–concentration extremum of the spinodal curve (as can be seen in the figure to the right). Thus, the liquid–liquid critical point in a two-component system must satisfy two conditions: the condition of the spinodal curve (the second derivative of the free energy with respect to concentration must equal zero), and the extremum condition (the third derivative of the free energy with respect to concentration must also equal zero or the derivative of the spinodal temperature with respect to concentration must equal zero).
 
-
-## See also
-
-
-## References
-
-
-## Further reading
-"Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam" (PDF). International Association for the Properties of Water and Steam. August 2007. Retrieved 2009-06-09.
-"Critical points for some common solvents". ProSciTech. Archived from the original on 2008-01-31.
-"Critical Temperature and Pressure". Department of Chemistry. Purdue University. Retrieved 2006-12-03.

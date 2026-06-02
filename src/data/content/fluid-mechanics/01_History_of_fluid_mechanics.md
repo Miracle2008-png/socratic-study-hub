@@ -1,14 +1,3 @@
-# History of fluid mechanics
-
-The history of fluid mechanics is a fundamental strand of the history of physics and engineering. The study of the movement of fluids (liquids and gases) and the forces that act upon them dates back to pre-history. The field has undergone a continuous evolution, driven by human dependence on water, meteorological conditions, and internal biological processes.
-The success of early civilizations, can be attributed to developments in the understanding of water dynamics, allowing for the construction of canals and aqueducts for water distribution and farm irrigation, as well as maritime transport. Due to its conceptual complexity, most discoveries in this field relied almost entirely on experiments, at least until the development of advanced understanding of differential equations and computational methods. Significant theoretical contributions were made by notables figures like Archimedes, Johann Bernoulli and his son Daniel Bernoulli, Leonhard Euler, Claude-Louis Navier and George Stokes, who developed the fundamental equations to describe fluid mechanics. Advancements in experimentation and computational methods have further propelled the field, leading to practical applications in more specialized industries ranging from aerospace to environmental engineering. Fluid mechanics has also been important for the study of astronomical bodies and the dynamics of galaxies.
-
-## Antiquity
-
-### Pre-history
-
-A pragmatic, if not scientific, knowledge of fluid flow was exhibited by ancient civilizations, such as in the design of arrows, spears, boats, and particularly hydraulic engineering projects for flood protection, irrigation, drainage, and water supply.  The earliest human civilizations began near the shores of rivers, and consequently coincided with the dawn of hydrology, hydraulics, and hydraulic engineering.
-
 ### Buoyancy
 
 Observations of specific gravity and buoyancy were recorded by ancient Chinese philosophers. In the 4th century BCE Mencius describes the weight of the gold is equivalent to the feathers. In 3rd century CE, Cao Chong describes the story of weighing  the elephant by observing displacement of the boats loaded with different weights.

@@ -4,16 +4,6 @@ Vilnius Gediminas Technical University (VILNIUS TECH) is a public university loc
 VILNIUS TECH is among the top 2.1% of universities in the world and scores highest in Lithuania in the subject areas of Architecture / Built Environment (QS Top 101-150), Business & Management (QS Top 201-250) and Economics & Econometrics (QS Top 301–350) according to QS World University Rankings by subject.
 
 
-## History
-
-VILNIUS TECH was founded on 1 September 1956, when the Vilnius Evening Division of the Kaunas Polytechnic Institute (now Kaunas University of Technology) was established, with Jeronimas Kudaba as the first dean. In 1960, the division was reorganized into the KPI Vilnius Evening Faculty. Aleksandras Čyras was named the Dean of the Faculty, with 500 students. In 1962, the first class of graduates completed their studies. In 1964, the Faculty of Construction Economics was added, followed in 1968 by the Faculty of Urban Construction.
-In 1969, the division separated from the Kaunas Polytechnic institute and became the Vilnius Civil Engineering Institute (Vilniaus inžinerinis statybos institutas), or VISI, and Čyras was named the first rector. In 1971, the Faculty of Architecture was added, and in 1987 the Faculty of Municipal Economy was established.
-After the Re-Establishment of the State of Lithuania in 1990, the Supreme Council of Lithuania decided to change the VISI into the Vilnius Technical University (VTU), with Edmundas Kazimieras Zavadskas as rector. After the statute of VTU was adopted in 1991, the Supreme Council approved it on 2 July 1992. VTU moved more toward a Western European university structure and featured faculties of architecture, construction, engineering communications, mechanics, and electronics.
-The following year, in 1993, VTU established the Aviation Institute and two more faculties, one in business management and one in fundamental sciences, along with the Faculty of Transport Engineering the following year.
-On 22 August 1996, the Lithuanian Government awarded the name of Gediminas, a 14th-century Grand Duke of Lithuania, to VTU, and the university became known as Vilnius Gediminas Technical University.
-Romualdas Ginevičius was elected rector by the VILNIUS TECH Senate in 2002. With the 2009 Law on Higher Education and Research, the Seimas of the Lithuanian Republic ordered all state-funded universities to reorganize into nonprofit organizations (Viešosios įstaigos) tasked with working in the public interest by 2011. VILNIUS TECH met this requirement in 2011.
-
-
 ## Campus
 The VILNIUS TECH campus is spread across Vilnius, with the main buildings in the wooded Saulėtekis neighborhood of the Antakalnis eldership, not far from many of Vilnius University's faculties as well as Mykolas Romeris University and the European Humanities University. The future plans of the university involve expanding the Saulėtekis campus.
 
@@ -114,10 +104,3 @@ Several current politicians, for example, are VISI graduates. Algirdas Butkevič
 In the creative arts, composer and rock pioneer Kęstutis Antanėlis and musician Andrius Mamontovas attended the university. In 1971, Antanėlis staged a production of Jesus Christ Superstar at the Vilnius Art Academy, only the second production of the show in the world, and was expelled from VISI in response.
 Mamontovas, on the other hand, felt pressure from his father to study a "serious" subject, like engineering. After his time in the Soviet Army, however, Mamontovas reconsidered and left VISI to study journalism at Vilnius University.
 
-
-## References
-
-
-## External links
-Vilnius Gediminas Technical University (VILNIUS TECH) Homepage
-Study programs at VILNIUS TECH in english

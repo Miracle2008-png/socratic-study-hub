@@ -7,16 +7,6 @@ Development of new or adapted substances for products ranging from foods and bev
 Development of new technologies such as fuel cells, hydrogen power, and nanotechnology, as well as working in fields wholly or partially derived from chemical engineering such as materials science, polymer engineering, and biomedical engineering. This can also include geophysical projects such as rivers, stones, and signs.
 
 
-## History
-
-There is some debate about which historical figure should be considered the first chemical engineer. The president of the Institution of Chemical Engineers said in his presidential address, "I believe most of us would be willing to regard Edward Charles Howard (1774–1816) as the first chemical engineer of any eminence". Others have suggested Johann Rudolf Glauber (1604–1670) for his development of processes for the manufacture of the major industrial acids.
-According to the Oxford English Dictionary, the first evidence of the noun 'chemical engineer' is from 1838.The term appeared in print in 1839, though from the context it suggests a person who has mechanical engineering knowledge but is currently working in the chemical industry. In 1880, George E. Davis wrote in a letter to Chemical News, "A Chemical Engineer is a person who possesses chemical and mechanical knowledge, and who applies that knowledge to the utilisation, on a manufacturing scale, of chemical action." He proposed the name Society of Chemical Engineers, for what was in fact constituted as the Society of Chemical Industry. At the first General Meeting of the Society in 1882, some 15 of the 300 members described themselves as chemical engineers, and the Society's formation of a Chemical Engineering Group in 1918 attracted about 400 members.
-In 1905, a publication called The Chemical Engineer was founded in the US, and in 1908 the American Institute of Chemical Engineers (AIChE) was established.
-In 1924, the Institution of Chemical Engineers adopted the following definition: "A chemical engineer is a professional man experienced in the design, construction and operation of plant and works in which matter undergoes a change of state and composition."
-As can be seen from the later definition, the occupation is not limited to the chemical industry, but more generally the process industries, or other situations in which complex physical and/or chemical processes must be managed.
-The UK journal The Chemical Engineer (began 1956) has a series of biographies available online entitled “Chemical Engineers who Changed the World”.
-
-
 ## Overview
 
 Historically, the chemical engineer has been primarily concerned with process engineering, which can generally be divided into two complementary areas: chemical reaction engineering and separation processes. The modern discipline of chemical engineering, however, encompasses much more than just process engineering. Chemical engineers are now engaged in the development and production of a diverse range of products, as well as in commodity and specialty chemicals. These products include high-performance materials needed for aerospace, automotive, biomedical, electronic, environmental and military applications. Examples include ultra-strong fibers, fabrics, adhesives and composites for vehicles, bio-compatible materials for implants and prosthetics, gels for medical applications, pharmaceuticals, and films with special dielectric, optical, or spectroscopic properties for optoelectronic devices.
@@ -38,25 +28,3 @@ Some groups and individuals have made efforts to improve conditions and represen
 ## Occupational outlook
 According to the U.S. Bureau of Labor Statistics, the occupational outlook for chemical engineers between 2024 and 2034 was 3% growth.
 
-
-## See also
-
-
-### Related topics
-
-
-### Related concepts
-
-
-### Associations
-
-
-## References
-
-
-## External links
-
-American Institute of Chemical Engineers (USA)
-Institution of Chemical Engineers (UK)
-Canadian Society for Chemical Engineers
-Engineers Australia (AUS)

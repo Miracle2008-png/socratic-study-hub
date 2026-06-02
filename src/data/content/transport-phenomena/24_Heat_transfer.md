@@ -699,5 +699,3 @@ Radiative cooling is the process by which a body loses heat by radiation. Outgoi
 ### Thermal energy storage
 
 Thermal energy storage includes technologies for collecting and storing energy for later use. It may be employed to balance energy demand between day and nighttime. The thermal reservoir may be maintained at a temperature above or below that of the ambient environment. Applications include space heating, domestic or process hot water systems, or generating electricity.
-
-## Citations

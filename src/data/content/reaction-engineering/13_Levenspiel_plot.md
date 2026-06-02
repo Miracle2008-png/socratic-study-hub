@@ -248,5 +248,3 @@ The volume of a PFR necessary to achieve a certain conversion at a given flow ra
   
 .
 
-
-## References

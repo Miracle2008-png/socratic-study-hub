@@ -293,9 +293,3 @@ This
   
  dependence can arise in models of edge- or interface-controlled catalytic processes.
 
-
-## See also
-Emulsion dispersion
-
-
-## References

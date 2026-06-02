@@ -19,29 +19,3 @@ The sociology of religion finds both open and closed systems within the field of
 
 ## Systems engineering
 
-
-## See also
-Business process
-Complex system
-Dynamical system
-Glossary of systems theory
-Ludwig von Bertalanffy
-Maximum power principle
-Non-equilibrium thermodynamics
-Open system (computing)
-Open System Environment Reference Model
-Openness
-Phantom loop
-Thermodynamic system
-
-
-## References
-
-
-## Further reading
-Khalil, E.L. (1995). Nonlinear thermodynamics and social science modeling: fad cycles, cultural development and identificational slips.  The American Journal of Economics and Sociology, Vol. 54, Issue 4, pp. 423–438.
-Weber, B.H. (1989).  Ethical Implications Of The Interface Of Natural And Artificial Systems. Delicate Balance: Technics, Culture and Consequences:  Conference Proceedings for the Institute of Electrical and Electronics Engineers.
-
-
-## External links
-OPEN SYSTEM Archived 2018-06-30 at the Wayback Machine, Principia Cybernetica Web, 2007.

@@ -3,51 +3,6 @@
 Brush Traction was a manufacturer and maintainer of railway locomotives in Loughborough, England whose operations have now been merged into the Wabtec company's Doncaster UK operations.
 
 
-## History
-
-
-### Hughes' Locomotive & Tramway Engine Works
-Henry Hughes had been operating at the Falcon Works since the 1850s, producing items such as brass and iron cast parts for portable engines and thrashing machines. In 1860 Henry Hughes announced he had entered into a partnership with William March who had extensive experience in the timber trade, and this would be added to the existing business of "engineers and manufacturers of railway plant", with the business to be called Hughes and March.
-In March 1863, Hughes announced it was making a steam locomotive designed for contractors and mineral railways. This was an 0-4-0ST with a 200 psi boiler pressure and cylinders of 10 inch bore and 15 inch stroke.
-In 1866, Hughes announced a sale of timber and associated equipment from the "Falcon Railway Plant Works" as he had decided to close down the timber side of his business, also sold was a portable steam engine and thrashing engine.
-In 1877, a limited company (Hughes' Locomotive & Tramway Engine Works Ltd) was created with Henry Hughes as managing director, to carry on the business previously under the name of the "Falcon Railway Plant Works". The business included the production of the original small saddle tank locomotives, but was anticipating increased demand for the production of tram engines, lightweight steam engines (usually with condensers) which drew passenger cars, made possible by the Tramways Act 1870 (33 & 34 Vict. c. 78). His original patented tramway engine was reported to have been tested on the Vale of Clyde and other tramways with good results. Tram engines were distinct from those tramcars where the boiler mechanism was an integral part of the passenger car.
-Examples of early engines include the tramway locomotive The Pioneer of 1877 for the Swansea and Mumbles Railway, 0-4-2ST Belmont which ran on the Snailbeach District Railways, and three 2 ft 3 in (686 mm) gauge 0-4-0STs for the Corris Railway supplied in 1878 (converted between 1883 and 1900 to 0-4-2STs).
-In 1881, Hughes' built two 3 ft (914 mm) gauge 0-4-0ST for the Liverpool Corporation Waterworks for use in the construction of the waterworks at Lake Vyrnwy in Wales.
-The adoption of steam tram engines in the UK was very limited, though the company did make some sales abroad, for example in Paris and Lille. In February 1881, a shareholder and creditor asked that the voluntary winding up of the company should proceed under the supervision of the court, and an order was granted. Hughes departed, soon after, for New Zealand, where in collaboration with local engineer E.W Mills, he built small tramway engines.
-
-
-### Falcon Engine & Car Works
-Hughes's Locomotive & Tramway Engine Works was sold as a going concern, and continued production as the Falcon Engine and Car Works Ltd. In July 1882, they provided a tram engine (Falcon works number 43) for testing on the Burnley tramways, which during a late night trial suffered a condenser rupture scalding several people. This was just days after a serious fire at the works had caused considerable losses - fortunately the premises were insured.
-Business continued with the production of locomotives, carriages, wagons and tramcars. This included three more locomotives of the same design as previously for the railways at Vyrnwy. In 1883, the first tramcar on the Alford and Sutton Tramway, was a horse-drawn 16-seater made by Falcon Engine and Carriage Works.
-One of the less conventional products were the carriages and wagons for the Listowel to Ballybunion monorail (using the Lartigue Monorail system), which opened in 1888. The engines for this line were made by Hunslet.
-Other products were tank locomotives for Ireland, Spain and the Azores. Some were subcontracts from other firms, such as Kerr, Stuart and Company, at that time, in Glasgow.
-
-
-### Brush Electrical Engineering Company
-
-In 1889, the Anglo-American Brush Electric Light Corporation Ltd was reconstructed, absorbing the Australasian Electric Light, Power, and Storage Company Ltd, and taking over the Falcon Works in Loughborough, with the new company to be called the Brush Electrical Engineering Company Ltd.
-
-From reports of the annual general meetings, the main activities in the 1890s were associated with municipal and ships lighting, however it is evident they were still involved with rail and tramcars and were anticipating a great increase in the market for electric traction particularly on tramways. They expanded the works by 5 acres in 1897 and added another 250 tramcars per year of production capacity. In 1898, they added capacity to make 1,000 electric traction motors per year, their own motors now claimed to be equal to or superior to the American pattern traction motors previously used.
-Brush introduced its first automobile in March of 1902, along with three more models with more horsepower later that year, all incorporating Abeille engines. Later, in 1904, Brush also manufactured six Brushmobile vehicles similar to those made by Vauxhall Motors; one of these six vehicles featured in the 1966 film Carry On Screaming. In addition, nearly 100 buses, plus some lorries were built using French engines until 1907.
-Brush Electrical Engineering also built some carriages that were used on the Central London Railway and the City and South London Railway in the early 1900s, the respective forerunners of London Underground's Central and Northern lines.
-In all, about 250 steam locomotives were built in addition to their tram engines. Production finished after World War I and the company concentrated on transport-related electrical equipment, including tramcars, trolleybuses and battery-operated vehicles.
-Brush made 2-foot gauge battery electric narrow-gauge locomotives (at the time referred to as Brush Electric Tractors) during the war, three which were listed as surplus in October 1919. Several examples survive, one at the National Slate Museum, Llanberis, three of them went to Hythe Pier, Railway and Ferry, of which two of these remain. These were reported to have originally worked at the Avonmouth mustard gas factory. One from HM's Explosives Factory at Queensferry has been restored using parts from another from the same factory.
-During World War II, Brush Coachworks diversified into aircraft production, building 335 de Havilland Dominies for the Royal Air Force and Fleet Air Arm. Wing sections were built for Lancaster bombers and Hampden fuselages were overhauled.
-The coachworks continued after the war with omnibus bodies mounted on Daimler chassis using Gardner five-cylinder diesel engines and Daimler preselector gearboxes, as well as AEC and BMMO Chassis for Midland Red and 100 Leyland Titans for Birmingham City Transport. They also constructed bodies designed by the British Electric Traction group on Leyland Royal Tigers. In 1952, the coachworks were closed and the goodwill and patents were bought by neighbouring Willowbrook.
-
-
-### Brush Bagnall Traction
-Close to Derby and its railway workshops, it retained its contacts with the railway. Acquired by Heenan & Froude in 1947, it was merged with W. G. Bagnall to produce diesel locomotives. In 1951, the company Brush Bagnall Traction Limited was formed. When British Railways began to replace its fleet of steam engines, Brush entered the market for main line diesel-electric locomotives.
-
-
-### Brush Traction
-In 1957, the Brush group were bought up by Hawker Siddeley. In 1967, the rail tractor business of Crompton Parkinson was purchased. As part of Hawker Siddeley Electric Power Group, it then passed to BTR plc and became Brush Traction. Later it became part of FKI Energy Technologies, itself purchased in 2008 by Melrose Industries.
-In 2007, Brush Traction acquired Hunslet-Barclay with a facility in Kilmarnock. It was rebranded Brush-Barclay.
-In February 2011, Wabtec purchased Brush Traction for US$31 million.
-The locomotive works are still occupied by the Brush Traction Company and are in use for the building, overhaul and repair of locomotives.
-In April 2021, Wabtec announced the Loughborough factory would close with reduced work volumes making the site unsustainable.
-
-
 ## Locomotives
 
 Brush manufactured various diesel and electric locomotives for the British railway network:
@@ -148,31 +103,3 @@ A de Havilland Dominie DH.89 that Brush built in 1946 for the RAF is preserved a
 
 The large statue of a falcon from Brush's Loughborough works is now displayed in the exhibition hall at the National Tramway Museum in Crich, Derbyshire.
 
-
-## See also
-Associated British Oil Engine Company
-Brush-Barclay
-Brush Transformers
-
-
-## References
-
-
-### Sources
-Price, John H. (1976) The Brush Electrical Engineering Company Ltd. & its Tramcars, Produced & printed by Nemo Productions for the Tramway and Light Railway Society
-Georgano, Nick (1996). Electric Vehicles. Shire Publications. ISBN 978-0-7478-0316-4.
-Lowe, J.W., (1989) British Steam Locomotive Builders, Guild Publishing
-C.J. Marsden; B.F. Fenn (1988). British Rail Main Line Diesel Locomotives. OPC. ISBN 978-0-86093-318-2.
-Roberts, Keith (2010). Electric Avenue - The Story of Morrison-Electricar. Bryngold Books. ISBN 978-1-905900-16-9.
-G. Toms (1978). Brush Diesel Locomotives 1940-78. Turntable Publications. ISBN 978-0-902844-48-3.
-G. Toms (1999). Brush Diesel & Electric Locomotive Works List. Industrial Railway Society. ISBN 978-1-901556-13-1.
-Toms, G., (2009) Brush Diesel & Electric Locomotives 1940-2008 Vol 1 -1980, Venture Publications
-
-
-## External links
-
-Brush Traction website
-Brush trams in Saint Petersburg (German)
-To Build an Island's Future, Brush Bagnall promotional film from 1954 about diesel locomotives for Sri Lanka, on BFI Player.
-Construction of BR Type 2 (Class 31) locomotives at Brush A Brush Electrical Engineering Co. Ltd. film.
-Brush Locomotive Overhaul A Wabtec Faiveley UK film.

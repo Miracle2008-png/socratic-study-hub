@@ -16,10 +16,6 @@ Hanford is the site of Washington state's highest recorded temperature of 120 °
 
 ## Manhattan Project
 
-### Background
-
-During World War II, the S-1 Section of the federal Office of Scientific Research and Development (OSRD) sponsored a research project on plutonium. Research was conducted by scientists at the University of Chicago Metallurgical Laboratory. At the time, plutonium was a rare element that had only recently been synthesized in laboratories. It was theorized that plutonium was fissile and could be used in an atomic bomb. The United States government was concerned that Nazi Germany was developing a nuclear weapons program. The Metallurgical Laboratory physicists worked on designing nuclear reactors ("piles") that could irradiate uranium and transmute it into plutonium. Meanwhile, chemists investigated ways to separate plutonium from uranium.
-
 ### DuPont appointment
 
 In September 1942, Brigadier General Leslie R. Groves Jr. became the director of the Manhattan Project, as it came to be known. The project to build industrial-size plants for the manufacture of plutonium was codenamed the X‑10 project. Groves engaged DuPont, a firm he had worked with in the past on the construction of explosives plants, to design, construct, and operate the plutonium manufacturing complex.

@@ -1023,26 +1023,3 @@ with 1 < p < 3, the second order structure function has also a power law, with t
 
 Since the experimental values obtained for the second order structure function only deviate slightly from the ⁠2/3⁠ value predicted by Kolmogorov theory, the value for p is very near to ⁠5/3⁠ (differences are about 2%). Thus the "Kolmogorov −⁠5/3⁠ spectrum" is generally observed in turbulence. However, for high order structure functions, the difference with the Kolmogorov scaling is significant, and the breakdown of the statistical self-similarity is clear. This behavior, and the lack of universality of the Cn constants, are related with the phenomenon of intermittency in turbulence and can be related to the non-trivial scaling behavior of the dissipation rate averaged over scale r. This is an important area of research in this field, and a major goal of the modern theory of turbulence is to understand what is universal in the inertial range, and how to deduce intermittency properties from the Navier-Stokes equations, i.e. from first principles.
 
-
-## See also
-
-
-## Notes
-
-
-## References
-
-
-## Further reading
-
-
-## External links
-Center for Turbulence Research, Scientific papers and books on turbulence
-Center for Turbulence Research, Stanford University
-Scientific American article
-Air Turbulence Forecast
-international CFD database iCFDdatabase
-Turbulent flow in a pipe on YouTube
-Fluid Mechanics website with movies, Q&A, etc
-Johns Hopkins public database with direct numerical simulation data
-TurBase public database with experimental data from European High Performance Infrastructures in Turbulence (EuHIT)

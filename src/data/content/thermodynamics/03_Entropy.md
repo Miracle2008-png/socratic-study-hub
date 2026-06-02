@@ -6,23 +6,6 @@ The thermodynamic concept was referred to by Scottish scientist and engineer Wil
 Austrian physicist Ludwig Boltzmann explained entropy as the measure of the number of possible microscopic arrangements or states of individual atoms and molecules of a system that comply with the macroscopic condition of the system. He thereby introduced the concept of statistical disorder and probability distributions into a new field of thermodynamics, called statistical mechanics, and found the link between the microscopic interactions, which fluctuate about an average configuration, to the macroscopically observable behaviour, in the form of a simple logarithmic law, with a proportionality constant, the Boltzmann constant, which has become one of the defining universal constants for the modern International System of Units.
 
 
-## History
-
-In his 1803 paper Fundamental Principles of Equilibrium and Movement, the French mathematician Lazare Carnot proposed that in any machine, the accelerations and shocks of the moving parts represent losses of moment of activity; in any natural process there exists an inherent tendency towards the dissipation of useful energy. In 1824, building on that work, Lazare's son, Sadi Carnot, published Reflections on the Motive Power of Fire, which posited that in all heat-engines, whenever "caloric" (what is now known as heat) falls through a temperature difference, work or motive power can be produced from the actions of its fall from a hot to cold body. He used an analogy with how water falls in a water wheel. That was an early insight into the second law of thermodynamics. Carnot based his views of heat partially on the early 18th-century "Newtonian hypothesis" that both heat and light were types of indestructible forms of matter, which are attracted and repelled by other matter, and partially on the contemporary views of Count Rumford, who showed in 1789 that heat could be created by friction, as when cannon bores are machined. Carnot reasoned that if the body of the working substance, such as a body of steam, is returned to its original state at the end of a complete engine cycle, "no change occurs in the condition of the working body".
-The first law of thermodynamics, deduced from the heat–friction experiments of James Joule in 1843, expresses the concept of energy and its conservation in all processes; the first law, however, is unsuitable for separately quantifying the effects of friction and dissipation.
-In the 1850s and 1860s, German physicist Rudolf Clausius objected to the supposition that no change occurs in the working body, and gave that change a mathematical interpretation, by questioning the nature of the inherent loss of usable heat when work is done, e.g., heat produced by friction. He described his observations as a dissipative use of energy, resulting in a transformation-content (Verwandlungsinhalt in German), of a thermodynamic system or working body of chemical species during a change of state. That was in contrast to earlier views, based on the theories of Isaac Newton, that heat was an indestructible particle that had mass. Clausius discovered that the non-usable energy increases as steam proceeds from inlet to exhaust in a steam engine. From the prefix en-, as in 'energy', and from the Greek word τροπή [tropē], which is translated in an established lexicon as turning or change and that he rendered in German as Verwandlung, a word often translated into English as transformation, in 1865 Clausius coined the name of that property as entropy. The word was adopted into the English language in 1868.
-Later, scientists such as Ludwig Boltzmann, Josiah Willard Gibbs, and James Clerk Maxwell gave entropy a statistical basis. In 1877, Boltzmann visualized a probabilistic way to measure the entropy of an ensemble of ideal gas particles, in which he defined entropy as proportional to the natural logarithm of the number of microstates such a gas could occupy. The proportionality constant in this definition, called the Boltzmann constant, has become one of the defining universal constants for the modern International System of Units (SI). Henceforth, the essential problem in statistical thermodynamics has been to determine the distribution of a given amount of energy E over N identical systems. Constantin Carathéodory, a Greek mathematician, linked entropy with a mathematical definition of irreversibility, in terms of trajectories and integrability.
-
-
-## Etymology
-In 1865, Clausius named the concept of "the differential of a quantity which depends on the configuration of the system" entropy (Entropie) after the Greek word for 'transformation'. He gave "transformational content" (Verwandlungsinhalt) as a synonym, paralleling his "thermal and ergonal content" (Wärme- und Werkinhalt) as the name of U, but preferring the term entropy as a close parallel of the word energy, as he found the concepts nearly "analogous in their physical significance". This term was formed by replacing the root of ἔργον ('ergon', 'work') by that of τροπή ('tropy', 'transformation').
-In more detail, Clausius explained his choice of "entropy" as a name as follows:
-
-I prefer going to the ancient languages for the names of important scientific quantities, so that they may mean the same thing in all living tongues. I propose, therefore, to call S the entropy of a body, after the Greek word "transformation". I have designedly coined the word entropy to be similar to energy, for these two quantities are so analogous in their physical significance, that an analogy of denominations seems to me helpful.
-
-Leon Cooper added that in this way "he succeeded in coining a word that meant the same thing to everybody: nothing".
-
-
 ## Definitions and descriptions
 
 The concept of entropy is described by two principal approaches, the macroscopic perspective of classical thermodynamics, and the microscopic description central to statistical mechanics. The classical approach defines entropy in terms of macroscopically measurable physical properties, such as bulk mass, volume, pressure, and temperature. The statistical definition of entropy defines it in terms of the statistics of the motions of the microscopic constituents of a system — modelled at first classically, e.g. Newtonian particles constituting a gas, and later quantum-mechanically (photons, phonons, spins, etc.). The two approaches form a consistent, unified view of the same phenomenon as expressed in the second law of thermodynamics, which has found universal applicability to physical processes.
@@ -3714,34 +3697,3 @@ Current theories suggest the entropy gap to have been originally opened up by th
 Romanian American economist Nicholas Georgescu-Roegen, a progenitor in economics and a paradigm founder of ecological economics, made extensive use of the entropy concept in his magnum opus on The Entropy Law and the Economic Process. Due to Georgescu-Roegen's work, the laws of thermodynamics form an integral part of the ecological economics school. Although his work was blemished somewhat by mistakes, a full chapter on the economics of Georgescu-Roegen has approvingly been included in one elementary physics textbook on the historical development of thermodynamics.
 In economics, Georgescu-Roegen's work has generated the term 'entropy pessimism'. Since the 1990s, leading ecological economist and steady-state theorist Herman Daly – a student of Georgescu-Roegen – has been the economics profession's most influential proponent of the entropy pessimism position.
 
-
-## See also
-
-
-## Notes
-
-
-## References
-
-David, Kover (14 August 2018). "Entropia – fyzikálna veličina vesmíru a nášho života". stejfree.sk. Archived from the original on 27 May 2022. Retrieved 13 April 2022.
-
-
-## Further reading
-
-
-## External links
-
-"Entropy" at Scholarpedia
-Entropy and the Clausius inequality MIT OCW lecture, part of 5.60 Thermodynamics & Kinetics, Spring 2008
-Entropy and the Second Law of Thermodynamics – an A-level physics lecture with 'derivation' of entropy based on Carnot cycle
-2.43 Advanced Thermodynamics - an MIT OCW course with emphasis on rigorous and general definitions
-taught by G. P. Beretta, MIT, Spring 2024
-Khan Academy: entropy lectures, part of Chemistry playlist
-Entropy Intuition
-More on Entropy
-Proof: S (or Entropy) is a valid state variable
-Reconciling Thermodynamic and State Definitions of Entropy
-Thermodynamic Entropy Definition Clarification
-Moriarty, Philip; Merrifield, Michael (2009). "S Entropy". Sixty Symbols. Brady Haran for the University of Nottingham.
-The Discovery of Entropy by Adam Shulman. Hour-long video, January 2013.
-The Second Law of Thermodynamics and Entropy – Yale OYC lecture, part of Fundamentals of Physics I (PHYS 200)

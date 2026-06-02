@@ -72,28 +72,3 @@ The ICE (Institution of Civil Engineers) founded in 1818, represents, as of 2008
 
 Founded in 1887, the CSCE (Canadian Society for Civil Engineering) represents members of the Canadian civil engineering profession. Official members of the CSCE must hold a bachelor's degree from an accredited civil engineering program. Most civil engineers join this organization to be updated of current news, projects, and methods (such as sustainability) related to civil engineering; as well as contribute their expertise and knowledge to other civil engineers and students obtaining their civil engineering degree. Local sections frequently host events such as seminars, tours, and courses.
 
-
-## See also
-
-Canal engineer
-Construction engineering
-Critical infrastructure
-Environmental engineering
-Sanitary engineering
-Geotechnical engineering
-Glossary of civil engineering
-Hydraulic engineering
-List of civil engineers
-National Council of Examiners for Engineering and Surveying
-Professional engineer
-Structural engineer
-Structural engineering
-Transport engineering
-Urban planning
-
-
-## References
-
-
-## External links
- Media related to Civil engineers at Wikimedia Commons

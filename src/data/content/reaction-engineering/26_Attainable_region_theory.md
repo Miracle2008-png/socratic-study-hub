@@ -21,15 +21,3 @@ Examples of where AR theory can be applied, include:
 The design of batch reactor networks; and
 Comminution (Milling).
 
-
-## See also
-Chemical reactors
-Chemical reaction engineering
-
-
-## References
-
-
-## External links
-Official web site
-Other official web site

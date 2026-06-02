@@ -1002,11 +1002,3 @@ Time
 
 As mentioned previously, creep is a time-dependent deformation. Fortunately, creep doesn't occur suddenly in brittle materials as it does under tension and other forms of deformation, and it is an advantage for designers. Over time, creep strain develops in a material exposed to stress at the temperature of the application, and it depends on the duration of the exposure. Thus, the creep rate is also a function of time besides temperature and stress. It can be generalized as this function ε = F(t, T, σ) that tells the designer all the three parameters, including time, temperature, and stress acting in concert, and all of them must be considered if a successful creep-resistance component is to be attained.
 
-
-## See also
-
-
-## References
-
-
-## Further reading

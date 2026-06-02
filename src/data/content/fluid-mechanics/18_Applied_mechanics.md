@@ -11,13 +11,6 @@ Engineering problems are generally tackled with applied mechanics through the ap
 Science and engineering are interconnected with respect to applied mechanics, as researches in science are linked to research processes in civil, mechanical, aerospace, materials and biomedical engineering disciplines. In civil engineering, applied mechanics’ concepts can be applied to structural design and a variety of engineering sub-topics like structural, coastal, geotechnical, construction, and earthquake engineering. In mechanical engineering, it can be applied in mechatronics and robotics, design and drafting, nanotechnology, machine elements, structural analysis, friction stir welding, and acoustical engineering. In aerospace engineering, applied mechanics is used in aerodynamics, aerospace structural mechanics and propulsion, aircraft design and flight mechanics. In materials engineering, applied mechanics’ concepts are used in thermoelasticity, elasticity theory, fracture and failure mechanisms, structural design optimisation, fracture and fatigue, active materials and composites, and computational mechanics. Research in applied mechanics can be directly linked to biomedical engineering areas of interest like orthopaedics; biomechanics;  human body motion analysis; soft tissue modelling of muscles, tendons, ligaments, and cartilage; biofluid mechanics; and dynamic systems, performance enhancement, and optimal control.
 
 
-## Brief history
-
-The first science with a theoretical foundation based in mathematics was mechanics; the underlying principles of mechanics were first delineated by Isaac Newton in his 1687 book Philosophiæ Naturalis Principia Mathematica. One of the earliest works to define applied mechanics as its own discipline was the three volume Handbuch der Mechanik written by German physicist and engineer Franz Josef Gerstner. The first seminal work on applied mechanics to be published in English was A Manual of Applied Mechanics in 1858 by English mechanical engineer William Rankine. August Föppl, a German mechanical engineer and professor, published Vorlesungen über technische Mechanik in 1898 in which he introduced calculus to the study of applied mechanics.
-Applied mechanics was established as a discipline separate from classical mechanics in the early 1920s with the publication of Journal of Applied Mathematics and Mechanics, the creation of the Society of Applied Mathematics and Mechanics, and the first meeting of the International Congress of Applied Mechanics.  In 1921 Austrian scientist Richard von Mises started the Journal of Applied Mathematics and Mechanics (Zeitschrift für Angewante Mathematik und Mechanik) and in 1922 with German scientist Ludwig Prandtl founded the Society of Applied Mathematics and Mechanics (Gesellschaft für Angewandte Mathematik und Mechanik). During a 1922 conference on hydrodynamics and aerodynamics in Innsbruck, Austria, Theodore von Kármán, a Hungarian engineer, and Tullio Levi-Civita, an Italian mathematician, met and decided to organize a conference on applied mechanics. In 1924 the first meeting of the International Congress of Applied Mechanics was held in Delft, the Netherlands attended by more than 200 scientist from around the world.  Since this first meeting the congress has been held every four years, except during World War II; the name of the meeting was changed to International Congress of Theoretical and Applied Mechanics in 1960.
-Due to the unpredictable political landscape in Europe after the First World War and upheaval of World War II many European scientist and engineers emigrated to the United States. Ukrainian engineer Stephan Timoshenko fled the Bolsheviks Red Army in 1918 and eventually emigrated to the U.S. in 1922; over the next twenty-two years he taught applied mechanics at the University of Michigan and Stanford University. Timoshenko authored thirteen textbooks in applied mechanics, many considered the gold standard in their fields; he also founded the Applied Mechanics Division of the American Society of Mechanical Engineers in 1927 and is considered “America’s Father of Engineering Mechanics.” In 1930 Theodore von Kármán left Germany and became the first director of the Aeronautical Laboratory at the California Institute of Technology; von Kármán would later co-found the Jet Propulsion Laboratory in 1944. With the leadership of Timoshenko and von Kármán, the influx of talent from Europe, and the rapid growth of the aeronautical and defense industries, applied mechanics became a mature discipline in the U.S. by 1950.
-
-
 ## Branches
 
 
@@ -192,30 +185,3 @@ Journal of Applied Mathematics and Mechanics (PMM)
 Gesellschaft für Angewandte Mathematik und Mechanik
 Acta Mechanica Sinica
 
-
-## See also
-
-
-## References
-
-
-## Further reading
-J.P. Den Hartog, Strength of Materials, Dover, New York, 1949.
-F.P. Beer, E.R. Johnston, J.T. DeWolf, Mechanics of Materials, McGraw-Hill, New York, 1981.
-S.P. Timoshenko, History of Strength of Materials, Dover, New York, 1953.
-J.E. Gordon, The New Science of Strong Materials, Princeton, 1984.
-H. Petroski, To Engineer Is Human, St. Martins, 1985.
-T.A. McMahon and J.T. Bonner, On Size and Life, Scientific American Library, W.H. Freeman, 1983.
-M. F. Ashby, Materials Selection in Design, Pergamon, 1992.
-A.H. Cottrell, Mechanical Properties of Matter, Wiley, New York, 1964.
-S.A. Wainwright, W.D. Biggs, J.D. Organisms, Edward Arnold, 1976.
-S. Vogel, Comparative Biomechanics, Princeton, 2003.
-J. Howard, Mechanics of Motor Proteins and the Cytoskeleton, Sinauer Associates, 2001.
-J.L. Meriam, L.G. Kraige. Engineering Mechanics Volume 2: Dynamics, John Wiley & Sons., New York, 1986.
-J.L. Meriam, L.G. Kraige. Engineering Mechanics Volume 1: Statics, John Wiley & Sons., New York, 1986.
-
-
-## External links
-Video and web lectures
-Engineering Mechanics Video Lectures and Web Notes
-Applied Mechanics Video Lectures By Prof.SK. Gupta, Department of Applied Mechanics, IIT Delhi

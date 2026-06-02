@@ -43,11 +43,3 @@ Ritchie, J T; Richardson, J T; Luss, Dan, "Ceramic membrane reactor for synthesi
 Yang Zheng, Yi Liu, Michael P. Harold, Dan Luss, "LNT–SCR dual-layer catalysts optimized for lean NOx reduction by H2 and CO", Applied Catalysis B: Environmental 148, 311-321 (2014).
 Hoang Nguyen, Michael P. Harold, Dan Luss, "Spatiotemporal behavior of Pt/Rh/CeO2/BaO catalyst during lean–rich cycling", Chemical Engineering Journal 262, 464-477 (2015).
 
-
-## References
-
-
-## External links
-Dan Luss Faculty Page at the University of Houston
-ISCRE Announcement: Dan Luss to Receive Amundson Award
-University of Houston Department of Chemical and Biomolecular Engineering

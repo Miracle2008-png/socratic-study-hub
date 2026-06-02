@@ -100,10 +100,6 @@ $$ {\begin{aligned}\left({\frac {\partial p}{\partial V}}\right)_{T}&=0\\\left({
 Above the critical point there exists a state of matter that is continuously connected with (can be transformed without phase transition into) both the liquid and the gaseous state. It is called supercritical fluid. The common textbook knowledge that all distinction between liquid and vapor disappears beyond the critical point has been challenged by Fisher and Widom, who identified a p–T line that separates states with different asymptotic statistical properties (Fisher–Widom line).  Note that even at temperatures above the critical point temperature, sufficient pressure can still potentially compress the matter into a solid. 
 Sometimes the critical point does not manifest in most thermodynamic or mechanical properties, but is "hidden" and reveals itself in the onset of inhomogeneities in elastic moduli, marked changes in the appearance and local properties of non-affine droplets, and a sudden enhancement in defect pair concentration.
 
-### History
-
-The existence of a critical point was first discovered by Charles Cagniard de la Tour in 1822 and named by Dmitri Mendeleev in 1860 and Thomas Andrews in 1869. Cagniard showed that CO2 could be liquefied at 31 °C at a pressure of 73 atm, but not at a slightly higher temperature, even under pressures as high as 3000 atm.
-
 ### Theory
 
 Solving the above condition 

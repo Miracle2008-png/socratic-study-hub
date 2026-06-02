@@ -5,30 +5,6 @@ By 2023, its battlefield management system was reported to be used by 45 nations
 Systematic's civilian applications extend to patient management, library data management and management of energy generation and delivery.
 
 
-## History
-
-Michael Holm and Allan Schytt, two software engineers at the state-owned technology company, Datacentralen, met in 1985 and discussed a system for tracking the movement of warships on the Baltic Sea for Danish Fleet Command. They decided to incorporate a new company in Aarhus and develop the software. 
-The company was briefly known as Informatik and Oplysing, or Infop ApS, before settling on Systematic Software Engineering. Though later registered as Systematic A/S, it is more commonly known as Systematic.
-
-
-### 1980s-1990s: Message format innovation
-After delivering the force tracking software for the Royal Danish Navy, the group developed a Variable Message Format communications platform, for use between NATO partners, known as IRIS. It is characterised by one defence analyst, Joseph J Molitoris, as a "comprehensive message handling and formatting system" that is "compliant with multiple USMTF and JVMF baselines."
-
-
-### 2000s: Battle management development
-IRIS became the foundation software for more complex systems for battle management. By 2011 Systematic had iterated blue force tracking software, called SitaWare, which the Danish army began using on operations. Originally designed to provide situational awareness to commanders in the land domain, SitaWare generates a common operational picture that can be shared between operators in battle with partner forces. The first military force to use SitaWare was Denmark. It's understood that the first land force to adopt SitaWare, outside of Denmark, was the Slovenian Army.
-
-
-### 2010s: Expansion and combat deployment
-During the War in Afghanistan, several ISAF partners deployed SitaWare as their command and control system, such as the Danish Army, Slovenian Ground Force and Swedish Armed Forces. The Swedish army began training with SitaWare Headquarters and SitaWare WebCOP from 2010, then formed part of Regional Command North in Mazar-e Sharif, with 500 soldiers. Its force tracking capabilities may have prevented fratricide.
-The 2014 Russian invasion of Crimea affected uptake of the system, particularly amongst US commanders, and it was chosen over Raytheon for their requirements. By 2017, the US Army Mission Command Center of Excellence had selected SitaWare Headquarters for its command, control, communications, computers, and intelligence (C4I) system.
-
-
-### 2020s: Diversification and transition
-Systematic moved to be a supplier of software systems for the health sector and large data projects, as well as defence.The first iteration of the software for hospitals, Columna Flow, was used for Electronic Health Record management, in the small central region of Denmark in 2011–13. Its first national project was the deployment of software to manage and track infection and testing during the COVID-19 pandemic. Systematic has built data management platforms for Danish Police, for Danish intelligence services as well as its libraries and educational institutions.
-While the company has attempted to move to a broader product offering, the military side has continued. By 2023, there were 45 nations using the SitaWare platform at some level of command. The company's 2022 annual report states they have a million warfighters using one of their software solutions. In 2023, a change of senior leadership was shared with the business community, with Holm transitioning from being CEO and Chairman, to Chairman alone, in that year.
-
-
 ## Software platforms
 Systematic software products are designed for three sectors, defence, healthcare and digital transformation. The development process for each suite of software follows CMMI5 standards, for which they have received certification. As of 2023, its core products are as follows.  
 
@@ -90,5 +66,3 @@ Wellington, New Zealand
 While remaining in private hands, the company makes its annual reports public, and is known to have a turnover of DKK 965 million in 2021. By late 2023, the company was reported to be on track to record an annual turnover of DKK 1.4 billion.
 Regarding the future ownership of the group, Holm was reported to have said in 2023, "we are not going to sell. The most realistic thing is that we establish a fund that will own Systematic in the future."
 
-
-## References

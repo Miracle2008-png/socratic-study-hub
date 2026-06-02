@@ -32,13 +32,3 @@ Ensuring interoperability among components developed by different vendors.
 Managing dependencies and versioning.
 Guaranteeing performance and security when integrating external components.
 
-
-## See also
-Object-oriented programming
-Service-oriented architecture
-Microservices
-Design system
-Software framework
-
-
-## References

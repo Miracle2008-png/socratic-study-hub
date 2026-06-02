@@ -4,82 +4,6 @@ Geotechnical engineering, also known as geotechnics, is the branch of civil engi
 Geotechnical engineering has applications in military engineering, mining engineering, petroleum engineering, coastal engineering, and offshore construction. The fields of geotechnical engineering and engineering geology have overlapping knowledge areas. However, while geotechnical engineering is a specialty of civil engineering, engineering geology is a specialty of geology.
 
 
-## History
-Humans have historically used soil as a material for flood control, irrigation purposes, burial sites, building foundations, and construction materials for buildings. Dykes, dams, and canals dating back to at least 2000 BCE—found in parts of ancient Egypt, ancient Mesopotamia, the Fertile Crescent, and the early settlements of Mohenjo Daro and Harappa in the Indus valley—provide evidence for early activities linked to irrigation and flood control. As cities expanded, structures were erected and supported by formalized foundations. The ancient Greeks notably constructed pad footings and strip-and-raft foundations. Until the 18th century, however, no theoretical basis for soil design had been developed, and the discipline was more of an art than a science, relying on experience.
-Several foundation-related engineering problems, such as the Leaning Tower of Pisa, prompted scientists to begin taking a more scientific-based approach to examining the subsurface. The earliest advances occurred in the development of earth pressure theories for the construction of retaining walls. Henri Gautier, a French royal engineer, recognized the "natural slope" of different soils in 1717, an idea later known as the soil's angle of repose. Around the same time, a rudimentary soil classification system was also developed based on a material's unit weight, which is no longer considered a good indication of soil type.
-The application of the principles of mechanics to soils was documented as early as 1773 when Charles Coulomb, a physicist and engineer, developed improved methods to determine the earth pressures against military ramparts. Coulomb observed that, at failure, a distinct slip plane would form behind a sliding retaining wall and suggested that the maximum shear stress on the slip plane, for design purposes, was the sum of the soil cohesion, 
-  
-    
-      
-        c
-      
-    
-    {\displaystyle c}
-  
-, and friction 
-  
-    
-      
-        σ
-        
-        
-      
-    
-    {\displaystyle \sigma \,\!}
-  
- 
-  
-    
-      
-        tan
-        ⁡
-        (
-        ϕ
-        
-        
-        )
-      
-    
-    {\displaystyle \tan(\phi \,\!)}
-  
-, where 
-  
-    
-      
-        σ
-        
-        
-      
-    
-    {\displaystyle \sigma \,\!}
-  
- is the normal stress on the slip plane and 
-  
-    
-      
-        ϕ
-        
-        
-      
-    
-    {\displaystyle \phi \,\!}
-  
- is the friction angle of the soil. By combining Coulomb's theory with Christian Otto Mohr's 2D stress state, the theory became known as Mohr-Coulomb theory. Although it is now recognized that precise determination of cohesion is impossible because 
-  
-    
-      
-        c
-      
-    
-    {\displaystyle c}
-  
- is not a fundamental soil property, the Mohr-Coulomb theory is still used in practice today.
-In the 19th century, Henry Darcy developed what is now known as Darcy's law, describing the flow of fluids in a porous media. Joseph Boussinesq, a mathematician and physicist, developed theories of stress distribution in elastic solids that proved useful for estimating stresses at depth in the ground. William Rankine, an engineer and physicist, developed an alternative to Coulomb's earth pressure theory. Albert Atterberg developed the clay consistency indices that are still used today for soil classification. In 1885, Osborne Reynolds recognized that shearing causes volumetric dilation of dense materials and contraction of loose granular materials.
-Modern geotechnical engineering is said to have begun in 1925 with the publication of Erdbaumechanik by Karl von Terzaghi, a mechanical engineer and geologist. Considered by many to be the father of modern soil mechanics and geotechnical engineering, Terzaghi developed the principle of effective stress, and demonstrated that the shear strength of soil is controlled by effective stress. Terzaghi also developed the framework for theories of bearing capacity of foundations, and the theory for prediction of the rate of settlement of clay layers due to consolidation. Afterwards, Maurice Biot fully developed the three-dimensional soil consolidation theory, extending the one-dimensional model previously developed by Terzaghi to more general hypotheses and introducing the set of basic equations of Poroelasticity.
-In his 1948 book, Donald Taylor recognized that the interlocking and dilation of densely packed particles contributed to the peak strength of the soil. Roscoe, Schofield, and Wroth, with the publication of On the Yielding of Soils in 1958, established the interrelationships between the volume change behavior (dilation, contraction, and consolidation) and shearing behavior with the theory of plasticity using critical state soil mechanics. Critical state soil mechanics is the basis for many contemporary advanced constitutive models describing the behavior of soil.
-In 1960, Alec Skempton carried out an extensive review of the available formulations and experimental data in the literature about the effective stress validity in soil, concrete, and rock in order to reject some of these expressions, as well as clarify what expressions were appropriate according to several working hypotheses, such as stress-strain or strength behavior, saturated or non-saturated media, and rock, concrete or soil behavior.
-
-
 ## Roles
 
 
@@ -145,19 +69,3 @@ Measurement of quantities and evaluation of actual conditions.
 Design modification per actual conditions
 The observational method is suitable for construction that has already begun when an unexpected development occurs or when a failure or accident looms or has already happened. It is unsuitable for projects whose design cannot be altered during construction.
 
-
-## See also
-
-
-## Notes
-
-
-## References
-Bates and Jackson, 1980, Glossary of Geology: American Geological Institute.
-Krynine and Judd, 1957, Principles of Engineering Geology and Geotechnics: McGraw-Hill, New York.
-Pierfranco Ventura, Fondazioni, Modellazioni: Verifiche Statiche e Sismiche Strutture-Terreni, vol. I, Milano Hoepli, 2019, pp. 770, ISBN 978-88203-8644-3
-Pierfranco Ventura, Fondazioni, Applicazioni: Verifiche Statiche e Sismiche Strutture-Terreni, vol. II, Milano, Hoepli, 2019, pp. 749, ISBN 978-88-203-8645-0  https://www.hoeplieditore.it/hoepli-catalogo/articolo/fondazioni-modellazioni-pierfrancventura/9788820386443/1451
-
-
-## External links
-Worldwide Geotechnical Literature Database

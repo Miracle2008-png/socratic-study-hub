@@ -24,34 +24,3 @@ One limited study in Germany presented possible problems in implementing require
 ## Criticism
 Problem structuring, a key aspect of requirements engineering, has been speculated to reduce design performance. Some research suggests that it is possible if there are deficiencies in the requirements engineering process resulting in a situation where requirements do not exist, software requirements may be created regardless as an illusion misrepresenting design decisions as requirements 
 
-
-## See also
-List of requirements engineering tools
-Requirements analysis, requirements engineering focused in software engineering.
-Requirements Engineering Specialist Group (RESG)
-International Requirements Engineering Board (IREB)
-International Council on Systems Engineering (INCOSE)
-IEEE 12207 "Systems and software engineering – Software life cycle processes"
-TOGAF (Chapter 17)
-Concept of operations (ConOps)
-Operations management
-Software requirements
-Software requirements specification
-Software Engineering Body of Knowledge (SWEBOK)
-Design specification
-Specification (technical standard)
-Formal specification
-Software Quality
-Quality Management
-Scope Management
-
-
-## References
-
-
-## External links
-Systems and software engineering -- Life cycle processes --Requirements engineering. 2011. pp. 1–94. doi:10.1109/IEEESTD.2011.6146379. ISBN 978-0-7381-6591-2.("This standard replaces IEEE 830–1998, IEEE 1233–1998, IEEE 1362-1998 - https://standards.ieee.org/ieee/29148/5289/")
-Systems Engineering Body of Knowledge
-Requirements Engineering Management Handbook by FAA
-International Requirements Engineering Board (IREB)
-IBM Rational Resource Library by IEEE Spectrum

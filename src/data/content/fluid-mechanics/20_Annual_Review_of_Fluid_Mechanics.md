@@ -4,10 +4,6 @@ Annual Review of Fluid Mechanics is a peer-reviewed scientific journal covering 
 As of 2025,  Journal Citation Reports gives the journal a 2024 impact factor of 30.2, ranking it first out of 41 journals in "Physics, Fluids and Plasmas" and first out of 171 journals in the category "Mechanics".
 
 
-## History
-The Annual Review of Fluid Mechanics was first published in 1969 by the nonprofit publisher Annual Reviews. Its inaugural editor was William R. Sears. Taking after the Annual Review of Biochemistry, each volume typically begins with a prefatory chapter in which a notable scientist in the field reflects on their career and accomplishments. As of 2020, it was published both in print and electronically. Some of its articles are available online in advance of the volume's publication date.
-
-
 ## Scope and indexing
 Annual Review of Fluid Mechanics defines its scope as covering significant developments in the field of fluid mechanics, including its history and foundations, non-newtonian fluids, rheology, incompressible and compressible flow, plasma flow, flow stability, multiphase flow, heat mixture and transport, control of fluid flow, combustion, turbulence, shock waves, and explosions.  It is abstracted and indexed in Scopus, Science Citation Index Expanded, PASCAL, Inspec, GEOBASE, and Academic Search, among others.
 
@@ -35,9 +31,3 @@ As of 2025, the editorial committee consists of the co-editors and the following
 
 As of 2022, the editorial committee's members were:
 
-
-## See also
-List of fluid mechanics journals
-
-
-## References

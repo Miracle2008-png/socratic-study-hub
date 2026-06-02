@@ -2370,32 +2370,3 @@ mapping images on surfaces, for rendering; see UV mapping
 robot motion planning (e.g., when painting car parts); see Shortest path problem
 geodesic shortest path (GSP) correction over Poisson surface reconstruction (e.g. in digital dentistry); without GSP reconstruction often results in self-intersections within the surface
 
-
-## See also
-
-
-## Notes
-
-
-## References
-
-Spivak, Michael (1999), A Comprehensive introduction to differential geometry (Volume 2), Houston, TX: Publish or Perish, ISBN 978-0-914098-71-3
-
-
-## Further reading
-
-Adler, Ronald; Bazin, Maurice; Schiffer, Menahem (1975), Introduction to General Relativity (2nd ed.), New York: McGraw-Hill, ISBN 978-0-07-000423-8. See chapter 2.
-Abraham, Ralph H.; Marsden, Jerrold E. (1978), Foundations of mechanics, London: Benjamin-Cummings, Bibcode:1978fome.book.....A, ISBN 978-0-8053-0102-1. See section 2.7.
-Jost, Jürgen (2002), Riemannian Geometry and Geometric Analysis, Berlin, New York: Springer-Verlag, ISBN 978-3-540-42627-1. See section 1.4.
-Kobayashi, Shoshichi; Nomizu, Katsumi (1996), Foundations of Differential Geometry, vol. 1 (New ed.), Wiley-Interscience, ISBN 0-471-15733-3.
-Landau, L. D.; Lifshitz, E. M. (1975), Classical Theory of Fields, Oxford: Pergamon, Bibcode:1975ctf..book.....L, ISBN 978-0-08-018176-9. See section 87.
-Misner, Charles W.; Thorne, Kip; Wheeler, John Archibald (1973), Gravitation, W. H. Freeman, ISBN 978-0-7167-0344-0
-Ortín, Tomás (2004), Gravity and strings, Cambridge University Press, ISBN 978-0-521-82475-0.  Note especially pages 7 and 10.
-Volkov, Yu.A. (2001) [1994], "Geodesic line", Encyclopedia of Mathematics, EMS Press.
-Weinberg, Steven (1972), Gravitation and Cosmology: Principles and Applications of the General Theory of Relativity, New York: John Wiley & Sons, Bibcode:1972gcpa.book.....W, ISBN 978-0-471-92567-5. See chapter 3.
-
-
-## External links
-
-Geodesics Revisited — Introduction to geodesics including two ways of derivation of the equation of geodesic with applications in geometry (geodesic on a sphere and on a torus), mechanics (brachistochrone) and optics (light beam in inhomogeneous medium).
-Totally geodesic submanifold Archived 2015-08-10 at the Wayback Machine at the Manifold Atlas

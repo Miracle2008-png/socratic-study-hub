@@ -308,23 +308,3 @@ Due to the nature of college admissions in Brazil, most students have to declare
 Towards the end of their undergraduate education, students are required to develop the Course Completion Paper under the guidance of an adviser to be presented to and graded by a number of professors. In some institutions, students are also required to pursue an internship (the amount of time depends on the institution).
 In order to pursue a career in engineering, graduates must first register with and abide by the rules of the Regional Counsel of Engineering and Agronomy of their state, a regional representative of the Federal Counsel of Engineering and Agronomy, a certification board for engineers, agronomists, geologists and other professionals of the applied sciences.
 
-
-## See also
-List of engineering schools
-Education and training of electrical and electronics engineers
-Education for Chemical Engineers
-Engineering education research
-Engineer's degree
-Global Engineering Education
-Institute of technology
-Problem-based learning
-Project-based learning
-
-
-## Notes
-
-
-## References
-Douglas, Josh; Iversen, Eric; Kalyandurg, Chitra (November 2004), Engineering in the K-12 classroom: An analysis of current practices & guidelines for the future (PDF), Washington, D.C.: American Society for Engineering Education, pp. 1–23, archived from the original (PDF) on 2 April 2012, retrieved 18 September 2011
-Dym, C.L.; Agogino, A.M; Eris, O.; Frey, D.D.; Leifer, L.J. (2005), "Engineering Design Thinking, Teaching, and Learning" (PDF), Journal of Engineering Education, 94 (1): 103–120, doi:10.1002/j.2168-9830.2005.tb00832.x, S2CID 1002433, archived from the original (PDF) on 30 March 2012
-Wankat, Phillip C.; Oreovicz, Frank S. (1993), Teaching Engineering, New York: McGraw-Hill, ISBN 978-0-07-068154-5

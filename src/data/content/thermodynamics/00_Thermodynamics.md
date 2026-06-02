@@ -11,14 +11,6 @@ In thermodynamics, interactions between large ensembles of objects are studied a
 With these tools, thermodynamics can be used to describe how systems respond to changes in their environment. This can be applied to a wide variety of topics in science and engineering, such as engines, phase transitions, chemical reactions, transport phenomena, and even black holes. The results of thermodynamics are essential for other fields of physics and for chemistry, chemical engineering, corrosion engineering, aerospace engineering, mechanical engineering, cell biology, biomedical engineering, materials science, and economics, to name a few.
 This article is focused mainly on classical thermodynamics which primarily studies systems in thermodynamic equilibrium. Non-equilibrium thermodynamics is often treated as an extension of the classical treatment, but statistical mechanics has brought many advances to that field.
 
-## Etymology
-
-Thermodynamics has an intricate etymology.
-By a surface-level analysis, the word consists of two parts that can be traced back to Ancient Greek. Firstly, thermo- ("of heat"; used in words such as thermometer) can be traced back to the root θέρμη therme, meaning "heat". Secondly, the word dynamics ("science of force [or power]") can be traced back to the root δύναμις dynamis, meaning "power".
-In 1849, the adjective thermo-dynamic is used by William Thomson.
-In 1854, the noun thermo-dynamics is used by Thomson and William Rankine to represent the science of generalized heat engines.
-Pierre Perrot claims that the term thermodynamics was coined by James Joule in 1858 to designate the science of relations between heat and power, however, Joule never used that term, but used instead the term perfect thermo-dynamic engine in reference to Thomson's 1849 phraseology.
-
 ## Branches of thermodynamics
 
 The study of thermodynamic systems has developed into several related branches, each using a different fundamental model as a theoretical or experimental basis, or applying the principles to varying types of systems.

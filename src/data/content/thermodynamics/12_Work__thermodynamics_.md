@@ -5,55 +5,6 @@ For thermodynamic work, appropriately chosen externally measured quantities are 
 In the International System of Units (SI), work is measured in joules (symbol J). The rate at which work is performed is power, measured in joules per second, and denoted with the unit watt (W).
 
 
-## History
-
-
-### 1824 - Carnot
-Work, i.e. "weight lifted through a height", was originally defined in 1824 by Sadi Carnot in his famous paper Reflections on the Motive Power of Fire, where he used the term motive power for work. Specifically, according to Carnot:
-
-We use here motive power to express the useful effect that a motor is capable of producing.  This effect can always be likened to the elevation of a weight to a certain height.  It has, as we know, as a measure, the product of the weight multiplied by the height to which it is raised.
-
-
-### 1845 - Joule
-
-In 1845, the English physicist James Joule wrote a paper On the mechanical equivalent of heat for the British Association meeting in Cambridge. In this paper, he reported his best-known experiment, in which the mechanical power released through the action of a "weight falling through a height" was used to turn a paddle-wheel in an insulated barrel of water.
-In this experiment, the motion of the paddle wheel, through agitation and friction, heated the body of water, so as to increase its temperature.  Both the temperature change 
-  
-    
-      
-        Δ
-        T
-      
-    
-    {\displaystyle \Delta T}
-  
- of the water and the height of the fall 
-  
-    
-      
-        Δ
-        h
-      
-    
-    {\displaystyle \Delta h}
-  
- of the weight 
-  
-    
-      
-        m
-        g
-      
-    
-    {\displaystyle mg}
-  
- were recorded.  Using these values, Joule was able to determine the mechanical equivalent of heat. Joule estimated a mechanical equivalent of heat to be 819 ft•lbf/Btu (4.41 J/cal).  The modern day definitions of heat, work, temperature, and energy all have connection to this experiment. In this arrangement of apparatus, it never happens that the process runs in reverse, with the water driving the paddles so as to raise the weight, not even slightly. Mechanical work was done by the apparatus of falling weight, pulley, and paddles, which lay in the surroundings of the water. Their motion scarcely affected the volume of the water. A quantity of mechanical work, measured as force × distance in the surroundings, that does not change the volume of the water, is said to be isochoric. Such work reaches the system only as friction, through microscopic modes, and is irreversible. It does not count as thermodynamic work. The energy supplied by the fall of the weight passed into the water as irreversible heat.
-
-
-### 1850-1865 - Clausius
-The idealized notions of reversible work and heat are developed in scientific articles by Rudolf Clausius from 1850 - 1865. The reversible heat, defined by Clausius, is not based on calorimetry, an irreversible technique.
-
-
 ## Overview
 
 
@@ -791,11 +742,3 @@ Magnetic work – where the force is defined by the surroundings' magnetic field
 Gravitational work is defined by the force on a body measured in a gravitational field. It may cause a generalized displacement in the form of change of the spatial distribution of the matter within the system. The system gains internal energy (or other relevant cardinal quantity of energy, such as enthalpy) through internal friction. As seen by the surroundings, such frictional work appears as mechanical work done on the system, but as seen by the system, it appears as transfer of energy as heat. When the system is in its own state of internal thermodynamic equilibrium, its temperature is uniform throughout. If the volume and other extensive state variables, apart from entropy, are held constant over the process, then the transferred heat must appear as increased temperature and entropy; in a uniform gravitational field, the pressure of the system will be greater at the bottom than at the top.
 By definition, the relevant cardinal energy function is distinct from the gravitational potential energy of the system as a whole; the latter may also change as a result of gravitational work done by the surroundings on the system. The gravitational potential energy of the system is a component of its total energy, alongside its other components, namely its cardinal thermodynamic (e.g. internal) energy and its kinetic energy as a whole system in motion.
 
-
-## See also
-Electrochemical hydrogen compressor
-Chemical reactions
-Microstate (statistical mechanics) - includes Microscopic definition of work
-
-
-## References

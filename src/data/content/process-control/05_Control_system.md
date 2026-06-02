@@ -39,18 +39,3 @@ Fuzzy electronics is an electronic technology that uses fuzzy logic instead of t
 The range of control system implementation is from compact controllers often with dedicated software for a particular machine or device, to distributed control systems for industrial process control for a large physical plant.
 Logic systems and feedback controllers are usually implemented with programmable logic controllers. The Broadly Reconfigurable and Expandable Automation Device (BREAD) is a recent framework that provides many open-source hardware devices which can be connected to create more complex data acquisition and control systems.
 
-
-## See also
-
-
-## References
-
-
-## External links
-
-SystemControl Create, simulate or HWIL control loops with Python. Includes Kalman filter, LQG control among others.
-Semiautonomous Flight Direction - Reference unmannedaircraft.org
-Control System Toolbox for design and analysis of control systems.
-Control Systems Manufacturer Design and Manufacture of control systems.
-Mathematica functions for the analysis, design, and simulation of control systems
-Python Control System (PyConSys) Create and simulate control loops with Python. AI for setting PID parameters.

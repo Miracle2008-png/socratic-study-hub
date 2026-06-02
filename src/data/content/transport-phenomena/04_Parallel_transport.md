@@ -2425,29 +2425,3 @@ Parallel transport can be discretely approximated by Schild's ladder,
 which takes finite steps along a curve, and approximates
 Levi-Civita parallelogramoids by approximate parallelograms.
 
-
-## See also
-Basic introduction to the mathematics of curved spacetime
-Connection (mathematics)
-Development (differential geometry)
-Affine connection
-Covariant derivative
-Geodesic (general relativity)
-Geometric phase
-Lie derivative
-Schild's ladder
-Levi-Civita parallelogramoid
-Parallel curve, similarly named, but different notion
-
-
-## Notes
-
-
-## Citations
-
-
-## References
-
-
-## External links
-Spherical Geometry Demo Archived 2007-05-19 at the Wayback Machine. An applet demonstrating parallel transport of tangent vectors on a sphere.

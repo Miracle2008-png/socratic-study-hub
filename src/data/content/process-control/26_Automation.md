@@ -6,16 +6,6 @@ In the simplest type of an automatic control loop, a controller compares a measu
 The World Bank's World Development Report of 2019 shows evidence that the new industries and jobs in the technology sector outweigh the economic effects of workers being displaced by automation. Job losses and downward mobility blamed on automation have been cited as one of many factors in the resurgence of nationalist, protectionist and populist politics in the US, UK and France, among other countries since the 2010s.
 
 
-## History
-
-
-### Early history
-
-It was a preoccupation of the Greeks and Arabs (in the period between about 300 BC and about 1200 AD) to keep an accurate track of time. In Ptolemaic Egypt, about 270 BC, Ctesibius described a float regulator for a water clock, a device not unlike the ball and cock in a modern flush toilet. This was the earliest feedback-controlled mechanism. The appearance of the mechanical clock in the 14th century made the water clock and its feedback control system obsolete.
-The Persian Banū Mūsā brothers, in their Book of Ingenious Devices (850 AD), described a number of automatic controls. Two-step level controls for fluids, a form of discontinuous variable structure controls, were developed by the Banu Musa brothers. They also described a feedback controller. The design of feedback control systems up through the Industrial Revolution was by trial-and-error, together with a great deal of engineering intuition. It was not until the mid-19th century that the stability of feedback control systems was analyzed using mathematics, the formal language of automatic control theory.
-The centrifugal governor was invented by Christiaan Huygens in the seventeenth century, and used to adjust the gap between millstones.
-
-
 ### Industrial Revolution in Western Europe
 
 The introduction of prime movers, or self-driven machines advanced grain mills, furnaces, boilers, and the steam engine created a new requirement for automatic control systems including temperature regulators (invented in 1624; see Cornelius Drebbel), pressure regulators (1681), float regulators (1700) and speed control devices. Another control mechanism was used to tent the sails of windmills. It was patented by Edmund Lee in 1745. Also in 1745, Jacques de Vaucanson invented the first automated loom. Around 1800, Joseph Marie Jacquard created a punch-card system to program looms.
@@ -311,18 +301,7 @@ Computers can perform both sequential control and feedback control, and typicall
 Control of an automated teller machine (ATM) is an example of an interactive process in which a computer will perform a logic-derived response to a user selection based on information retrieved from a networked database. The ATM process has similarities with other online transaction processes. The different logical responses are called scenarios. Such processes are typically designed with the aid of use cases and flowcharts, which guide the writing of the software code. The earliest feedback control mechanism was the water clock invented by Greek engineer Ctesibius (285–222 BC).
 
 
-## See also
-
-
-## References
-
-
-### Citations
-
-
 ### Sources
 
  This article incorporates text from a free content work. Licensed under CC BY-SA 3.0 (license statement/permission). Text taken from In Brief to The State of Food and Agriculture 2022 – Leveraging automation in agriculture for transforming agrifood systems​, FAO, FAO.
 
-
-## Further reading

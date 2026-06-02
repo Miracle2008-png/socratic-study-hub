@@ -4,12 +4,6 @@ Chemical thermodynamics is the study of the interrelation of heat and work with 
 The structure of chemical thermodynamics is based on the first two laws of thermodynamics.  Starting from the first and second laws of thermodynamics, four equations called the "fundamental equations of Gibbs" can be derived.  From these four, a multitude of equations, relating the thermodynamic properties of the thermodynamic system can be derived using relatively simple mathematics.  This outlines the mathematical framework of chemical thermodynamics.
 
 
-## History
-
-In 1865, the German physicist Rudolf Clausius, in his Mechanical Theory of Heat, suggested that the principles of thermochemistry, e.g. the heat evolved in combustion reactions, could be applied to the principles of thermodynamics.  Building on the work of Clausius, between the years 1873-76 the American mathematical physicist Willard Gibbs published a series of three papers, the most famous one being the paper On the Equilibrium of Heterogeneous Substances.  In these papers, Gibbs showed how the first two laws of thermodynamics could be measured graphically and mathematically to determine both the thermodynamic equilibrium of chemical reactions as well as their tendencies to occur or proceed.  Gibbs' collection of papers provided the first unified body of thermodynamic theorems from the principles developed by others, such as Clausius and Sadi Carnot.
-During the early 20th century, two major publications successfully applied the principles developed by Gibbs to chemical processes and thus established the foundation of the science of chemical thermodynamics. The first was the 1923 textbook Thermodynamics and the Free Energy of Chemical Substances by Gilbert N. Lewis and Merle Randall. This book was responsible for supplanting the chemical affinity with the term free energy in the English-speaking world. The second was the 1933 book Modern Thermodynamics by the methods of Willard Gibbs written by E. A. Guggenheim. In this manner, Lewis, Randall, and Guggenheim are considered as the founders of modern chemical thermodynamics because of the major contribution of these two books in unifying the application of thermodynamics to chemistry.
-
-
 ## Overview
 The primary objective of chemical thermodynamics is the establishment of a criterion for determination of the feasibility or spontaneity of a given transformation. In this manner, chemical thermodynamics is typically used to predict the energy exchanges that occur in the following processes:
 
@@ -704,25 +698,3 @@ A gas-phase reaction at constant temperature and pressure which results in an in
 Similarly, a redox reaction might occur in an electrochemical cell with the passage of current through a wire connecting the electrodes. The half-cell reactions at the electrodes are constrained if no current is allowed to flow. The current might be dissipated as Joule heating, or it might in turn run an electrical device like a motor doing mechanical work. An automobile lead-acid battery can be recharged, driving the chemical reaction backwards. In this case as well, the reaction is not an independent process. Some, perhaps most, of the Gibbs free energy of reaction may be delivered as external work.
 The hydrolysis of ATP to ADP and phosphate can drive the force-times-distance work delivered by living muscles, and synthesis of ATP is in turn driven by a redox chain in mitochondria and chloroplasts, which involves the transport of ions across the membranes of these cellular organelles. The coupling of processes here, and in the previous examples, is often not complete. Gas can leak slowly past a piston, just as it can slowly leak out of a rubber balloon. Some reaction may occur in a battery even if no external current is flowing. There is usually a coupling coefficient, which may depend on relative rates, which determines what percentage of the driving free energy is turned into external work, or captured as "chemical work", a misnomer for the free energy of another chemical process.
 
-
-## See also
-Thermodynamic databases for pure substances
-laws of thermodynamics
-
-
-## References
-
-
-## Further reading
-Herbert B. Callen (1960). Thermodynamics. Wiley & Sons. The clearest account of the logical foundations of the subject. ISBN 0-471-13035-4. {{cite book}}: ISBN / Date incompatibility (help) Library of Congress Catalog No. 60-5597
-Ilya Prigogine & R. Defay, translated by D.H. Everett; Chapter IV (1954). Chemical Thermodynamics. Longmans, Green & Co. Exceptionally clear on the logical foundations as applied to chemistry; includes non-equilibrium thermodynamics.{{cite book}}:  CS1 maint: multiple names: authors list (link)
-Ilya Prigogine (1967). Thermodynamics of Irreversible Processes, 3rd ed. Interscience: John Wiley & Sons. A simple, concise monograph explaining all the basic ideas. Library of Congress Catalog No. 67-29540
-E.A. Guggenheim (1967). Thermodynamics: An Advanced Treatment for Chemists and Physicists, 5th ed. North Holland; John Wiley & Sons (Interscience). A remarkably astute treatise. Library of Congress Catalog No. 67-20003
-Th. De Donder (1922). "L'affinite. Applications aux gaz parfaits". Bulletin de la Classe des Sciences, Académie Royale de Belgique. Series 5. 8: 197–205.
-Th. De Donder (1922). "Sur le theoreme de Nernst". Bulletin de la Classe des Sciences, Académie Royale de Belgique. Series 5. 8: 205–210.
-
-
-## External links
-Chemical Thermodynamics - University of North Carolina
-Chemical energetics (Introduction to thermodynamics and the First Law)
-Thermodynamics of chemical equilibrium (Entropy, Second Law and free energy)

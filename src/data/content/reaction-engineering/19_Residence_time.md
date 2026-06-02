@@ -4,10 +4,6 @@ The residence time of a fluid parcel is the total time that the parcel has spent
 Residence time plays an important role in chemistry and especially in environmental science and pharmacology. Under the name lead time or waiting time it plays a central role respectively in supply chain management and queueing theory, where the material that flows is usually discrete instead of continuous.
 
 
-## History
-The concept of residence time originated in models of chemical reactors. The first such model was an axial dispersion model by Irving Langmuir in 1908. This received little attention for 45 years; other models were developed such as the plug flow reactor model and the continuous stirred-tank reactor, and the concept of a washout function (representing the response to a sudden change in the input) was introduced. Then, in 1953, Peter Danckwerts resurrected the axial dispersion model and formulated the modern concept of residence time.
-
-
 ## Distributions
 
 The time that a particle of fluid has been in a control volume (e.g. a reservoir) is known as its age. In general, each particle has a different age. The frequency of occurrence of the age 
@@ -1724,16 +1720,3 @@ Residence time can also refer to the amount of time that a drug spends in the pa
 In size-exclusion chromatography, the residence time of a molecule is related to its volume, which is roughly proportional to its molecular weight. Residence times also affect the performance of continuous fermentors.
 Biofuel cells utilize the metabolic processes of anodophiles (electronegative bacteria) to convert chemical energy from organic matter into electricity. A biofuel cell mechanism consists of an anode and a cathode that are separated by an internal proton exchange membrane (PEM) and connected in an external circuit with an external load. Anodophiles grow on the anode and consume biodegradable organic molecules to produce electrons, protons, and carbon dioxide gas, and as the electrons travel through the circuit they feed the external load. The HRT for this application is the rate at which the feed molecules are passed through the anodic chamber. This can be quantified by dividing the volume of the anodic chamber by the rate at which the feed solution is passed into the chamber. The hydraulic residence time (HRT) affects the substrate loading rate of the microorganisms that the anodophiles consume, which affects the electrical output. Longer HRTs reduce substrate loading in the anodic chamber which can lead to reduced anodophile population and performance when there is a deficiency of nutrients. Shorter HRTs support the development of non-exoelectrogenous bacteria which can reduce the Coulombic efficiency electrochemical performance of the fuel cell if the anodophiles must compete for resources or if they do not have ample time to effectively degrade nutrients.
 
-
-## See also
-
-
-## References
-
-
-## Further reading
-
-
-## External links
-Mean residence time (MRT): Understanding how long drug molecules stay in the body
-Calculate the Hydraulic Retention Time (Lenntech)

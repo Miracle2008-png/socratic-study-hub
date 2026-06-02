@@ -94,22 +94,3 @@ Hamilton, M. H. (September 2018). "What the Errors Tell Us". IEEE Software. 35 (
 Hamilton has a sister, Kathryn Heafield.
 She met her first husband, James Cox Hamilton, in the mid-1950s while attending college. They were married on June 15, 1958, the summer after she graduated from Earlham. She briefly taught high school mathematics and French at a public school in Boston, Indiana. The couple then moved to Boston, Massachusetts, where they had a daughter, Lauren, born on November 10, 1959. They divorced in 1967 and Margaret married Dan Lickly two years later.
 
-
-## See also
-List of pioneers in computer science
-
-
-## References
-
-
-## Further reading
-Steafel, Eleanor (July 20, 2019). "One woman in a room full of men". The Telegraph Magazine. London: Daily Telegraph plc. pp. 56–59, 61. OCLC 69022829.
-
-
-## External links
-
-Hamilton Technologies, Inc.
-MIT News
-NASA’s Apollo moon missions relied on Margaret Hamilton and differential equations, Scientific American, May 12, 2026
-Margaret Hamilton Archived September 5, 2017, at the Wayback Machine Video produced by Makers: Women Who Make America
-Margaret Hamilton ’58 – Presidential Medal of Freedom Recipient Archived July 30, 2019, at the Wayback Machine: Earlham College profile

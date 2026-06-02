@@ -10,13 +10,3 @@ The journal is abstracted and indexed in:
 
 According to the Journal Citation Reports, the journal has a 2020 impact factor of 4.220, ranking it 82nd out of 293 journals in the category "Materials Science, Multidisciplinary".
 
-
-## See also
-Journal of Materials Science Letters
-
-
-## References
-
-
-## External links
-Official website

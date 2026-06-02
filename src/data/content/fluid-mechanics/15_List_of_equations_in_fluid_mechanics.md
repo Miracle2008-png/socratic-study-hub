@@ -29,18 +29,6 @@ Here
 ## Equations
 
 
-## See also
-Defining equation (physical chemistry)
-List of electromagnetism equations
-List of equations in classical mechanics
-List of equations in gravitation
-List of equations in nuclear and particle physics
-List of equations in quantum mechanics
-List of photonics equations
-List of relativistic equations
-Table of thermodynamic equations
-
-
 ## Sources
 P.M. Whelan, M.J. Hodgeson (1978). Essential Principles of Physics (2nd ed.). John Murray. ISBN 0-7195-3382-1.
 G. Woan (2010). The Cambridge Handbook of Physics Formulas. Cambridge University Press. ISBN 978-0-521-57507-2.
@@ -52,9 +40,3 @@ L.N. Hand, J.D. Finch (2008). Analytical Mechanics. Cambridge University Press. 
 T.B. Arkill, C.J. Millar (1974). Mechanics, Vibrations and Waves. John Murray. ISBN 0-7195-2882-8.
 H.J. Pain (1983). The Physics of Vibrations and Waves (3rd ed.). John Wiley & Sons. ISBN 0-471-90182-2.
 
-
-## Further reading
-L.H. Greenberg (1978). Physics with Modern Applications. Holt-Saunders International W.B. Saunders and Co. ISBN 0-7216-4247-0.
-J.B. Marion, W.F. Hornyak (1984). Principles of Physics. Holt-Saunders International Saunders College. ISBN 4-8337-0195-2.
-A. Beiser (1987). Concepts of Modern Physics (4th ed.). McGraw-Hill (International). ISBN 0-07-100144-1.
-H.D. Young, R.A. Freedman (2008). University Physics – With Modern Physics (12th ed.). Addison-Wesley (Pearson International). ISBN 978-0-321-50130-1.

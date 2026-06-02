@@ -2804,5 +2804,3 @@ Further generalizations of parallel transport are also possible. In the context 
 Parallel transport can be discretely approximated by Schild's ladder,
 which takes finite steps along a curve, and approximates
 Levi-Civita parallelogramoids by approximate parallelograms.
-
-## Citations

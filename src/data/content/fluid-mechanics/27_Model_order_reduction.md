@@ -75,31 +75,3 @@ Current problems in fluid mechanics involve large dynamical systems representing
   
 . The first usage of model order reduction techniques dates back to the work of Lumley in 1967, where it was used to gain insight into the mechanisms and intensity of turbulence and large coherent structures present in fluid flow problems. Model order reduction also finds modern applications in aeronautics to model the flow over the body of aircraft. An example can be found in Lieu et al in which the full order model of an F16 fighter-aircraft with over 2.1 million degrees of freedom, was reduced to a model of just 90 degrees of freedom. Additionally reduced order modeling has been applied to study rheology in hemodynamics and the fluid–structure interaction between the blood flowing through the vascular system and the vascular walls.
 
-
-## See also
-Dimension reduction
-Metamodeling
-Principal component analysis
-Singular value decomposition
-Nonlinear dimensionality reduction
-System identification
-Iterative rational Krylov algorithm (IRKA)
-
-
-## References
-
-
-## Further reading
-Antoulas, Athanasios C. (2005). Approximation of Large-Scale Dynamical Systems. SIAM. doi:10.1137/1.9780898718713. ISBN 978-0-89871-529-3. S2CID 117896525.
-Benner, Peter; Fassbender, Heike (2014), "Model Order Reduction: Techniques and Tools" (PDF), Encyclopedia of Systems and Control, Springer, doi:10.1007/978-1-4471-5102-9_142-1, ISBN 978-1-4471-5102-9, S2CID 11873649
-Antoulas, A. C.; Sorensen, D. C.; Gugercin, S. (2001), "A survey of model reduction methods for large-scale systems" (PDF), Structured matrices in mathematics, computer science, and engineering, I (Boulder, CO, 1999), Contemporary Mathematics, vol. 280, Providence, RI: American Mathematical Society, pp. 193–219, CiteSeerX 10.1.1.210.9685, doi:10.1090/conm/280/04630, ISBN 978-0-8218-1921-0, MR 1850408
-Benner, Peter; Gugercin, Serkan; Willcox, Karen (2013), A survey of model reduction methods for parametric systems (PDF)
-Baur, Ulrike; Benner, Peter; Feng, Lihong (2014), "Model order reduction for linear and nonlinear systems: a system-theoretic perspective" (PDF), Archives of Computational Methods in Engineering, 21 (4): 331–358, doi:10.1007/s11831-014-9111-2, S2CID 39068644
-Benner, Peter; Cohen, Albert; Ohlberger, Mario; Willcox, Karen (2017). Model Reduction and Approximation: Theory and Algorithms. SIAM Publications. doi:10.1137/1.9781611974829. ISBN 978-1-611974-81-2.
-Antoulas, Athanasios C.; Beattie, Christopher A.; Gugercin, Serkan (2020). Interpolatory Methods for Model Reduction. SIAM. doi:10.1137/1.9781611976083. ISBN 978-1-61197-607-6.
-
-
-## External links
-Model Order Reduction Wiki
-Model Reduction for Parametrized Systems
-European Model Reduction Network

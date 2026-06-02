@@ -129,9 +129,3 @@ Note that
     {\displaystyle {\frac {e^{t}}{(e^{t}-1)^{2}}}=\sum _{k=0}^{\infty }k\,e^{kt}.}
   
 
-
-## See also
-Incomplete gamma function
-
-
-## References

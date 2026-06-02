@@ -25,5 +25,3 @@ Lightfoot is the co-author of several influential books in transport phenomena, 
 Transport Phenomena
 Transport Phenomena in Living Systems: Biomedical Aspects of Momentum and Mass Transport
 
-
-## References

@@ -157,13 +157,3 @@ Ctrl (SZA album), 2017
 "Control", by Wisin from El Regreso del Sobreviviente, 2014
 "Control (Somehow You Want Me)", by Tenth Avenue North from Followers, 2016
 
-
-## See also
-Action (disambiguation)
-Control point (disambiguation)
-Control unit (disambiguation)
-Controller (disambiguation)
-Damage control (disambiguation)
-Uncontrolled (disambiguation)
-All pages with titles beginning with Control 
-All pages with titles containing Control

@@ -27,25 +27,3 @@ This remaining tension between traditional materials development methodologies a
 ## Analogy from Biology
 The overarching goals of bioinformatics and systems biology may provide a useful analogy. Andrew Murray of Harvard University expresses the hope that such an approach "will save us from the era of "one graduate student, one gene, one PhD". Similarly, the goal of materials informatics is to save us from one graduate student, one alloy, one PhD. Such goals will require more sophisticated strategies and research paradigms than applying data-science methods to the same tasks set currently undertaken by students.
 
-
-## See also
-Material selection
-List of computational materials science software
-Structural bioinformatics
-Data mining
-Cheminformatics
-
-
-## External links
-Primary Journals: Journal of Materials Informatics (Editor-in-Chief: Tong-Yi Zhang), Materials Informatics and Data Science (Editor-in-Chief: Yaroslava G. Yingling)
-ICME community Archived 2008-07-16 at the Wayback Machine on MaterialsTechnology@TMS
-The Material Informatics Workshop: Theory and Application (March 2007 JOM-e issue on M.I.)
-K. Rajan, Materials informatics, Materials Today, Volume 8, Issue 10, October 2005, Pages 38-45, ISSN 1369-7021, doi:10.1016/S1369-7021(05)71123-8.
-May 2016 APL Materials Issues on Materials Genome/Materials Informatics—P. Littlewood and C.L. Phillips, APL Materials, Volume 4, Issue 5, May 2016
-Material Informatics Industry Outlook to 2030
-
-
-## References
-
-Chapter 5: The Importance of Data [1] in Going to Extremes: Meeting the Emerging Demand for Durable Polymer Matrix Composites [2]
-MRS Bulletin: Materials Informatics, Volume 31, No. 12.[3]

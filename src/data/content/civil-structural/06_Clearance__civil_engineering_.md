@@ -46,11 +46,3 @@ In waterways, "bridge span clearance" is a measurement from water surface to the
 On other hand, the "overhead clearance" is a measurement from the top most part of a given vessel to the underside of the bridge. The "underkeel clearance" is the distance between the lowest part of a given vessel to the waterway bed.
 The other type of clearances for the bridges is "clearance above" the bridge floor. This is the vertical clearances for road traffic on the bridge.
 
-
-## See also
-Air draft
-Engineering tolerance
-Ride height
-
-
-## References

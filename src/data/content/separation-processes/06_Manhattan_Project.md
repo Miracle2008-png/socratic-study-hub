@@ -334,59 +334,6 @@ Five years ago, the idea of Atomic Power was only a dream. You have made that dr
 The Manhattan Project National Historical Park was established on 10 November 2015.
 
 
-## See also
-The Bomb (film) – 2015 American documentary film
-Oppenheimer (TV series) - 1980 TV miniseries
-Fat Man and Little Boy (film) - 1989 film starring Paul Newman
-Oppenheimer (film) - 2023 film by Christopher Nolan starring Cillian Murphy
-Polytetrafluoroethylene (PTFE), Teflon
-Timeline of nuclear weapons development
-
-
-## Notes
-
-
-## Citations
-
-
-## References
-
-
-### General references
-Bernstein, Barton J. (June 1976). "The Uneasy Alliance: Roosevelt, Churchill, and the Atomic Bomb, 1940–1945". The Western Political Quarterly. 29 (2). University of Utah: 202–230. doi:10.2307/448105. JSTOR 448105.
-Campbell, Richard H. (2005). The Silverplate Bombers: A History and Registry of the Enola Gay and Other B-29s Configured to Carry Atomic Bombs. Jefferson, North Carolina: McFarland & Company. ISBN 0-7864-2139-8. OCLC 58554961.
-Conant, Jennet (2005). 109 East Palace: Robert Oppenheimer and the Secret City of Los Alamos. New York: Simon & Schuster. ISBN 0-7432-5007-9.
-Farmelo, Graham (2013). Churchill's bomb: How the United States overtook Britain in the first nuclear arms race. Basic Books. ISBN 0465021956.
-Fine, Lenore; Remington, Jesse A. (1972). The Corps of Engineers: Construction in the United States (PDF). Washington, DC: United States Army Center of Military History. OCLC 834187. Archived from the original (PDF) on 27 September 2012. Retrieved 25 August 2013.
-Frisch, David H. (June 1970). "Scientists and the Decision to Bomb Japan". Bulletin of the Atomic Scientists. 26 (6). Educational Foundation for Nuclear Science: 107–115. doi:10.1080/00963402.1970.11457835. ISSN 0096-3402.
-Gilbert, Keith V. (1969). History of the Dayton Project (PDF). Miamisburg, OH: Mound Laboratory, Atomic Energy Commission. OCLC 650540359. Archived from the original (PDF) on 12 April 2019. Retrieved 31 October 2014.
-Gosling, Francis George (1994). The Manhattan Project: Making the Atomic Bomb. Washington, DC: US Department of Energy, History Division. OCLC 637052193.
-Gowing, Margaret (1964). Britain and Atomic Energy, 1935–1945. London: Macmillan Publishing. OCLC 3195209.
-Grodzins, Morton; Rabinowitch, Eugene, eds. (1963). The Atomic Age: Scientists in National and World Affairs. New York: Basic Book Publishing. OCLC 15058256.
-Hewlett, Richard G.; Anderson, Oscar E. (1962). The New World, 1939–1946 (PDF). University Park: Pennsylvania State University Press. OCLC 637004643. Retrieved 26 March 2013.
-Hewlett, Richard G.; Duncan, Francis (1969). Atomic Shield, 1947–1952. A History of the United States Atomic Energy Commission, no. 2. University Park: Pennsylvania State University Press. ISBN 0-520-07187-5. OCLC 3717478.
-Holl, Jack M.; Hewlett, Richard G.; Harris, Ruth R. (1997). Argonne National Laboratory, 1946–96. University of Illinois Press. ISBN 978-0-252-02341-5.
-Holloway, David (1994). Stalin and the Bomb: The Soviet Union and Atomic Energy, 1939–1956. New Haven, Connecticut: Yale University Press. ISBN 0-300-06056-4. OCLC 29911222.
-Howes, Ruth H.; Herzenberg, Caroline L. (1999). Their Day in the Sun: Women of the Manhattan Project. Philadelphia: Temple University Press. ISBN 1-56639-719-7. OCLC 49569088.
-Hunner, Jon (2004). Inventing Los Alamos: The Growth of an Atomic Community. Norman: University of Oklahoma Press. ISBN 978-0-8061-3891-6. OCLC 154690200.
-Johnson, Charles; Jackson, Charles (1981). City Behind a Fence: Oak Ridge, Tennessee, 1942–1946. Knoxville: University of Tennessee Press. ISBN 0-87049-303-5. OCLC 6331350.
-Jones, Vincent (1985). Manhattan: The Army and the Atomic Bomb (PDF). United States Army in World War II. Washington, D.C.: United States Army Center of Military History. OCLC 10913875. Retrieved 30 September 2025.
-Jungk, Robert (1958). Brighter than a Thousand Suns: A Personal History of the Atomic Scientists. New York: Harcourt Brace. OCLC 181321.
-O'Brien, Phillips Payson (2015). How the War Was Won. Cambridge: Cambridge University Press. ISBN 978-1-107-01475-6. OCLC 907550561.
-Phelps, Stephen (2010). The Tizard Mission: the Top-Secret Operation that Changed the Course of World War II. Yardley, PA: Westholme. ISBN 978-1-59416-116-2. OCLC 642846903.
-Rhodes, Richard (1986). The Making of the Atomic Bomb. New York: Simon & Schuster. ISBN 0-671-44133-7. OCLC 13793436.
-Sachs, Robert G. (1984). "Historical Background of the CP-1 Experiment". In Sachs, Robert G. (ed.). The Nuclear Chain Reaction Forty Years Later: Proceeding of the University of Chicago Commemorative Symposium (PDF). Chicago: University of Chicago. pp. 2–9. Retrieved 2 October 2025.
-Sklar, Morty, ed. (1984). Nuke-Rebuke: Writers & Artists Against Nuclear Energy & Weapons. The Contemporary anthology series. Iowa City: The Spirit That Moves Us Press. ISBN 978-0-930370-16-9. OCLC 973585699.
-Stacey, C. P. (1970). Arms, Men and Government: The War Policies of Canada, 1939–1945 (PDF). The Queen's Printer by authority of the Minister of National Defence. OCLC 610317261. Archived from the original (PDF) on 20 June 2019. Retrieved 6 September 2012.
-Sullivan, Neil J. (2016). The Prometheus Bomb: The Manhattan Project and Government in the Dark. Lincoln: University of Nebraska Press. ISBN 978-1-61234-815-5.
-Sweeney, Michael S. (2001). Secrets of Victory: The Office of Censorship and the American Press and Radio in World War II. Chapel Hill: University of North Carolina Press. ISBN 0-8078-2598-0.
-Villa, Brian L. (1981). "Chapter 11: Alliance Politics and Atomic Collaboration, 1941–1943". In Sidney, Aster (ed.). The Second World War as a National Experience: Canada. The Canadian Committee for the History of the Second World War, Department of National Defence. OCLC 11646807. Retrieved 8 December 2014.
-Walker, J. Samuel (2009). The Road to Yucca Mountain: The Development of Radioactive Waste Policy in the United States. Berkeley: University of California Press. ISBN 978-0-520-26045-0. OCLC 276274684.
-Weisgall, Jonathan (1994). Operation Crossroads: The Atomic Tests at Bikini Atoll. Annapolis, Maryland: Naval Institute Press. ISBN 978-1-55750-919-2. OCLC 29477984.
-Wellerstein, Alex (2021). Restricted Data: The History of Nuclear Secrecy in the United States. Chicago: University of Chicago Press. ISBN 978-0-226-02038-9. OCLC 1178870332.
-Williams, Mary H. (1960). Chronology 1941–1945. Washington, DC: Office of the Chief of Military History, Department of the Army. OCLC 1358166.
-
-
 ### Technical histories
 Ahnfeldt, Arnold Lorentz, ed. (1966). Radiology in World War II. Washington, DC: Office of the Surgeon General, Department of the Army. OCLC 630225.
 Baker, Richard D.; Hecker, Siegfried S.; Harbur, Delbert R. (1983). "Plutonium: A Wartime Nightmare but a Metallurgist's Dream" (PDF). Los Alamos Science (Winter/Spring): 142–151. Retrieved 22 November 2010.
@@ -417,13 +364,3 @@ Libby, Leona Marshall (1979). Uranium People. New York: Charles Scribner's Sons.
 Nichols, Kenneth David (1987). The Road to Trinity: A Personal Account of How America's Nuclear Policies Were Made. New York: William Morrow and Co. ISBN 0-688-06910-X. OCLC 15223648.
 Wallace, Henry (1973). The Price of Vision: The Diary of Henry A. Wallace, 1942–1946. Boston: Houghton Mifflin Company. ISBN 978-0-395-17121-9. OCLC 627817.
 
-
-## External links
-
-"The Atomic Bomb and the End of World War II, A Collection of Primary Sources". George Washington University. Retrieved 27 July 2011.
-"Atomic Heritage Foundation". Atomic Heritage Foundation. Retrieved 27 July 2011.
-"Voices of the Manhattan Project". Atomic Heritage Foundation. Retrieved 10 February 2015. — Features hundreds of audio/visual interviews with Manhattan Project veterans.
-"History Center: Los Alamos National Laboratory". Los Alamos National Laboratory. Retrieved 27 July 2011.
-"ORNL: The first 50 Years: History of ORNL". ORNL Review. 25 (3). Archived from the original on 2 June 2016. Retrieved 13 October 2015.
-Manhattan Project and Allied Scientists Collections at the University of Chicago Special Collections Research Center
-Chadwick, Mark B. (3 December 2021). "Nuclear Science for the Manhattan Project and Comparison to Today's ENDF Data". Nuclear Technology. 207 (sup1): S24–S61. arXiv:2103.05727. doi:10.1080/00295450.2021.1901002.

@@ -3,33 +3,6 @@
 Indian Institute of Engineering Science and Technology, Shibpur() (abbr. IIEST Shibpur) is a public technologicalresearch university located at Shibpur, Howrah, West Bengal, India. Founded in 1856, it is one of the Institutes of National Importance funded by the Ministry of Education of the Government of India. It is regulated by the Council of NITSER. It is the fourth oldest engineering institute in India. In October 2010, the Union Cabinet approved the proposal for the conversion of the Bengal Engineering and Science University (BESU) at Shibpur to India's first Indian Institute of Engineering Science and Technology (IIEST). IIEST is a member of the Association of Indian Universities.
 
 
-## History
-
-The university was founded as the Civil Engineering College on 24 November 1856, in the Writers' Building, Calcutta (now Kolkata). The college was established as an independent entity in 1880 as Government College, Howrah, on the premises of Bishop's College in Shibpur, Howrah. In 1921, the name of the college was changed to Bengal Engineering College. B.E. College was previously affiliated to the University of Calcutta. At that time, it contained only civil and mechanical engineering departments. Classes used to be held in the Writers' Building. Later, from 1865 to 1869, the college was affiliated to Presidency College, Calcutta. Several other departments were created subsequently over the years, the last among them being that of Aerospace Engineering and Applied Mechanics in 2010.
-Following an endorsement from a UGC Expert Committee, the Ministry of Human Resource Development designated the institution as a Deemed University in 1992, marking a significant milestone in its academic evolution.
-Established in November 2003, the S.K. Joshi Committee was mandated by the Government of India to evaluate and shortlist premier engineering institutions for potential elevation to the status of an Indian Institute of Technology (IIT). Ultimately, the committee identified seven candidate institutions for this strategic upgradation, most notably including the Bengal Engineering College.
-On October 1, 2004, the institution was accorded the status of a comprehensive state university. It was formally inaugurated as Bengal Engineering and Science University by A. P. J. Abdul Kalam, the President of India, on 13 July 2005.
-On 2009 Chief Minister Buddhadeb Bhattacharjee has requested the Union Human Resource Development Minister, Arjun Singh, to reconsider the proposal to upgrade Bengal Engineering and Science University (BESU) to a central university.
-
-
-### Post 2010
-In October 2010, the Union Cabinet ratified the 2006 M. Anandakrishnan Committee’s proposal to transform the Bengal Engineering and Science University (BESU), Shibpur, into India’s inaugural Indian Institute of Engineering Science and Technology (IIEST).
-This strategic evolution was designed to establish an institution of international prestige, dedicated to cultivating elite human capital for the nation’s strategic sectors. Beyond technical training, the mandate envisioned the development of advanced research laboratories and the nurturing of distinguished educators to elevate the standards of engineering and science education nationwide. An amount of ₹ 592.20 crore was earmarked for the project, and it was to be completed over a period of five years.
-
-In March 2014, the institute was conferred the status of an INI and was renamed Indian Institute of Engineering Science and Technology, Shibpur by the Govt. of India by suitably amending the National Institutes of Technology and Science Education and Research Act, 2007. The conversion process of BESU to IIEST was mentored by IIT Kanpur. The President of India, Pranab Mukherjee, inaugurated it as IIEST on 24 August 2014.
-In June 2014, the Government of West Bengal formally inaugurated the Indian Institute of Information Technology Kalyani. Concurrently, the Indian Institute of Engineering Science and Technology (IIEST), Shibpur, was appointed as its mentor institution to provide foundational academic and administrative guidance during its establishment.
-In December 2014, the institute's founding director Ajoy Kumar Ray, in a sorrowful tone, said, "We have the fund now, but land-space crunch is the biggest problem. We have 121 acres of land with us and we need 100 acres more. Otherwise, the institute's expansion would be pretty critical."
-In 2017, Professor Ajoy Kumar Ray, the founding director of the IIEST Shibpur, was awarded the Padma Shri. This prestigious civilian honor recognized his significant contributions to the field of science and engineering.
-
-
-### Recalibration
-The transition of IIEST Shibpur into an Institute of National Importance (INI) in 2014 was anchored by a bold "Research-Only" campus ambition. The vision was to depart from the traditional undergraduate model and emulate elite global research centers, where every student would be groomed for high-level innovation through a mandatory five-year integrated B.Tech-M.Tech program.
-However, this academic idealism soon triggered a significant policy flip-flop. While the conversion bill passed in Parliament originally intended for the institute to receive approximately ₹ 600 Cr in funding to support this transformation, the MHRD ultimately failed to provide the promised capital. This financial shortfall, combined with rigid academic frameworks, eventually collided with the practicalities of student mobility and industry preferences. 
-Under the subsequent leadership of Professor Parthasarathi Chakrabarti, the administration reconciled these lofty goals with the necessity of academic flexibility. By "restarting" the four-year B.Tech, the institute corrected its course, providing the modularity later championed by the National Education Policy 2020. Today, IIEST operates as a hybrid entity, honoring its research-centric roots while offering standardized pathways that empower students to choose between immediate professional entry or extended academic specialization.
-The executive council of the Institute resolved to adopt the JEE Advanced for its dual-degree programs, seeking to attract premier research-oriented students. This strategy intended to place the institute alongside elite peers like IISc, IIST, RGIPT and IISERs.
-However, then the HRD Ministry declined the request, mandating the Shibpur campus to follow the JEE Main route. Director Ajoy Kumar Ray noted that because the ministry integrated IIEST into the NIT Council, the institute was required to settle for the broader admission framework, diverging from its original preference.
-
-
 ## Campus
 A master plan proposed along with the existing campus layout was presented. Five new infrastructure projects were planned, and some are ongoing, including a 1000-seat girls' hostel, an academic block, a research and innovation park, and an auditorium and convention hall. The total estimated cost is ₹ 787 crore.
 
@@ -104,43 +77,3 @@ The Indo-German Living Lab Initiative has launched at IIEST Shibpur in partnersh
 Established in 1932, REBECA (Reunion and Bengal Engineering College Annuals) stands as the crown jewel of IIEST Shibpur’s cultural legacy, distinguished as India's oldest student-led festival. It serves as a rhythmic bridge between the institute’s storied past and its vibrant present, uniting a global alumni network with the current student body.
 Spanning four days, the festival traverses a diverse sonic landscape—from the soul-stirring depth of Classical Night to the high-octane energy of Bollywood and Bangla Rock finales. Beyond the spectacle of "Pro-shows," REBECA is an emotional homecoming, fostering a unique "BEing" spirit through intellectual debates, musical battles, and nostalgic reunions under the iconic Clock Tower.
 
-
-## Notable people
-
-
-### Notable faculty
-John Samuel Slater, principal
-Sankar Sen, professor of the electrical engineering department.
-Joseph Allen Stein, professor and head of the Department of Architecture
-Asok Kumar Barua, was an Indian condensed matter physicist and the honorary Emeritus Professor.
-Sabyasachi Sarkar, Former Professor, Nano Science and Synthetic Leaf Laboratory of the Institute.
-
-
-### Notable alumni
-
-Amitabha Bhattacharyya, 4th Director of IIT Kanpur and Shanti Swarup Bhatnagar awardee.
-Bimal Kumar Bose, scholar in Power Electronics, Chondra Chair of Excellence in Power Electronics, professor emeritus at the University of Tennessee, member of National Academy of Engineering
-Chaitanyamoy Ganguly,  Indian nuclear scientist and a former head of the Nuclear Fuel Cycle and Materials Section of the International Atomic Energy Agency (IAEA).
-Gautam Biswas, former Director of IIT Guwahati
-Rajen Mookerjee, industrialist, co-founder of Martin Burn & Co. and founder of Indian Iron & Steel Co. Ltd.
-Satish Chandra Samanta, foremost freedom fighter, revolutionary, established the Tamralipta Jatiya Sarkar during the Quit India Movement.
-Gagan Chandra Biswas, industrialist, engineer, businessman and Zamindar.
-Shankar Nath Rimal, Nepalese civil engineer, designer of the modern Nepalese flag
-Jatindranath Sengupta, poet and writer.
-Krishna Mohan Banerjee,  Indian thinker who attempted to rethink Hindu philosophy, religion and ethics in response to the stimulus of Christian ideas.
-Fazlur Rahman Khan, called the "Father of Structural Engineering" by the American Society of Civil Engineers.
-Renuka Dasgupta, singer
-Nandini Mukherjee is an Indian computer scientist and politician.
-Abhijit Chowdhury, film director and writer
-Narayan Sanyal, Academy Award winner and famous writer of Biswasghatak, "Dandak Shabari", and "Shyatakam"
-Binoy Majumdar, Bengali poet, author, winner of the Sahitya Akademi Award.
-Tathagata Roy,is an Indian politician.
-Srideep Bhattacharya, is an Indian politician.
-
-
-## References
-
-
-## External links
-
-Official website

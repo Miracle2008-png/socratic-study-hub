@@ -27,14 +27,3 @@ TCInstCES for Technical Member of the Chartered Institution of Civil Engineering
 GCInstCES for Graduate Member of the Chartered Institution of Civil Engineering Surveyors
 Members and Fellows of CICES are eligible to attain Incorporated Engineer and Chartered Engineer status through the Engineering Council.  Members of CICES are eligible, as engineers, to directly undertake consultation or instruction of Bar Council barristers via the licensed access scheme.
 
-
-## See also
-Remote Sensing and Photogrammetry Society
-Royal Institution of Chartered Surveyors
-
-
-## References
-
-
-## External links
-Official website

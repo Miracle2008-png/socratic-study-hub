@@ -43,11 +43,3 @@ Xu, Jianguo; Froment, G. F. (1989). "Methane steam reforming, methanation and wa
 Marchi, A.J.; Froment, G.F. (1991-04-04). "Catalytic conversion of methanol to light alkenes on SAPO molecular sieves". Applied Catalysis. 71 (1): 139–152. doi:10.1016/0166-9834(91)85011-J.
 Vanden Bussche, G H K M; Froment, G F (1996). "A Steady-State Kinetic Model for Methanol Synthesis and the Water Gas Shift Reaction on a Commercial Cu/ZnO/Al2O3Catalyst". Journal of Catalysis. 161 (1): 1–10. doi:10.1006/jcat.1996.0156.
 
-
-## References
-
-
-## External links
-"Gilbert F. Froment". Industrial & Engineering Chemistry Research. 36 (8): 2877–2881. 1997. doi:10.1021/ie970298a.
-U.S. National Academy of Engineering: Gilbert Froment
-Neal R. Amundson Reaction Engineering Award Winners

@@ -11,16 +11,6 @@ The conjecture that all bodies in the universe cool off, eventually becoming too
 The idea of heat death as a consequence of the laws of thermodynamics, however, was first proposed in loose terms beginning in 1851 by Lord Kelvin (William Thomson), who theorized further on the mechanical energy loss views of Sadi Carnot (1824), James Joule (1843) and Rudolf Clausius (1850). Thomson's views were then elaborated over the next decade by Hermann von Helmholtz and William Rankine.
 
 
-### History
-The idea of the heat death of the universe derives from discussion of the application of the first two laws of thermodynamics to universal processes. Specifically, in 1851, Lord Kelvin outlined the view, as based on recent experiments on the dynamical theory of heat: "heat is not a substance, but a dynamical form of mechanical effect, we perceive that there must be an equivalence between mechanical work and heat, as between cause and effect."
-
-In 1852, Thomson published On a Universal Tendency in Nature to the Dissipation of Mechanical Energy, in which he outlined the rudiments of the second law of thermodynamics summarized by the view that mechanical motion and the energy used to create that motion will naturally tend to dissipate or run down. The ideas in this paper, in relation to their application to the age of the Sun and the dynamics of the universal operation, attracted the likes of William Rankine and Hermann von Helmholtz. The three of them were said to have exchanged ideas on this subject. In 1862, Thomson published "On the age of the Sun's heat", an article in which he reiterated his fundamental beliefs in the indestructibility of energy (the first law) and the universal dissipation of energy (the second law), leading to diffusion of heat, cessation of useful motion (work), and exhaustion of potential energy, "lost irrecoverably" through the material universe, while clarifying his view of the consequences for the universe as a whole. Thomson wrote:
-
-The result would inevitably be a state of universal rest and death, if the universe were finite and left to obey existing laws. But it is impossible to conceive a limit to the extent of matter in the universe; and therefore science points rather to an endless progress, through an endless space, of action involving the transformation of potential energy into palpable motion and hence into heat, than to a single finite mechanism, running down like a clock, and stopping for ever.
-The clock's example shows how Kelvin was unsure whether the universe would eventually achieve thermodynamic equilibrium. Thomson later speculated that restoring the dissipated energy in "vis viva" and then usable work—and therefore revert the clock's direction, resulting in a "rejuvenating universe"—would require "a creative act or an act possessing similar power". Starting from this publication, Kelvin also introduced the heat death paradox (Kelvin's paradox), which challenged the classical concept of an infinitely old universe, since the universe has not achieved its thermodynamic equilibrium, thus further work and entropy production are still possible. The existence of stars and temperature differences can be considered an empirical proof that the universe is not infinitely old.
-In the years to follow both Thomson's 1852 and the 1862 papers, Helmholtz and Rankine both credited Thomson with the idea, along with his paradox, but read further into his papers by publishing views stating that Thomson argued that the universe will end in a "heat death" (Helmholtz), which will be the "end of all physical phenomena" (Rankine).
-
-
 ## Current status
 
 Proposals about the final state of the universe depend on the assumptions made about its ultimate fate, and these assumptions have varied considerably over the late 20th century and early 21st century. In a theorized "open" or "flat" universe that continues expanding indefinitely, either a heat death or a Big Rip is expected to eventually occur. If the cosmological constant is zero, the universe will approach absolute zero temperature over a very long timescale. However, if the cosmological constant is positive, the temperature will asymptote to a non-zero positive value, and the universe will approach a state of maximum entropy in which no further work is possible.
@@ -66,37 +56,3 @@ A 2010 analysis of entropy states, "The entropy of a general gravitational field
 ## Philosophical views
 The discovery of the principle of the heat death of the universe led to philosophical reevaluation of the place of man in the universe. In 1856, Hermann von Helmholtz suggested that it compelled humans to complete a moral destiny. Philipp Mainländer, another philosopher whose 1875 work Die Philosophie der Erlösung has been associated with the philosophy of pandeism, saw the expected heat death of the Universe as "a different, redemptive destiny for humanity: an end of suffering".
 
-
-## In popular culture
-
-In Isaac Asimov's 1956 short story The Last Question, humans through the ages repeatedly wonder how the heat death of the universe can be avoided.
-In the 1981 Doctor Who story "Logopolis", the Doctor realizes that the Logopolitans have created vents in the universe to expel accumulated entropy into other universes—"Charged Vacuum Emboitments" or "CVE"—to delay the demise of our universe. The Doctor unwittingly travels through such a vent in "Full Circle".
-In the 1995 computer game I Have No Mouth, and I Must Scream, based on Harlan Ellison's short story of the same name, it is stated that AM, the malevolent supercomputer, will survive the heat death of the universe and continue torturing its immortal victims to eternity.
-In the 2011 anime series Puella Magi Madoka Magica, the antagonist Kyubey reveals he is a member of an alien race who has been creating magical girls for millennia in order to harvest their energy to combat entropy and stave off the heat death of the universe.
-In the last act of Final Fantasy XIV: Endwalker, the player encounters an alien race known as the Ea who have lost all hope in the future and any desire to live further, all because they have learned of the eventual heat death of the universe and see everything else as pointless due to its probable inevitability.
-The overarching plot of the Xeelee Sequence concerns the Photino Birds' efforts to accelerate the heat death of the universe by accelerating the rate at which stars become white dwarfs.
-The 2019 hit indie video game Outer Wilds has several themes grappling with the idea of the heat death of the universe, and the theory that the universe is a cycle of big bangs once the previous one has experienced a heat death.
-"Singularity Immemorial", the seventh main story event of the mobile game Girls' Frontline: Neural Cloud, concerns a virtual sector made to simulate space exploration and the threat of the heat death of the universe. The simulation uses an imitation of Neural Cloud's virus entities known as the Entropics as a stand in for the effects of a heat death.
-In the 2024 video game expansion Destiny 2 Lightfall, the antagonist called the Witness strives to eliminate the universe's entropy. Its goal is to create a universe that is in an eternal motionless state.
-
-
-## See also
-Arrow of time – Concept in physics of one-way time
-Big Bang – Physical theory of the cosmos
-Big Bounce – Model for the origin of the universe
-Big Crunch – Hypothetical scenario for the ultimate fate of the universe
-Big Rip – Cosmological model
-Chronology of the universe – History and future of the universe
-Cyclic model – Cosmological models involving indefinite, self-sustaining cycles
-Entropy (arrow of time) – Use of the second law of thermodynamics to distinguish past from future
-Fluctuation theorem – Theorem in statistical mathematics
-Heat death paradox – Paradox relating to fate of universe
-The Last Question – 1956 science-fiction short story by Isaac Asimov
-Timeline of the far future – Scientific projections regarding the far future
-Orders of magnitude (time) – Comparison of a wide range of timescales
-Thermodynamic temperature – Measure of temperature relative to absolute zero
-Ultimate fate of the universe – Theories about the end of the universe
-Zero-energy universe – Hypothesis that the total amount of energy in the universe is exactly zero
-
-
-## References

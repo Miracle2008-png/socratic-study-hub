@@ -255,24 +255,3 @@ Utilization of membranes in gas separation, like carbon dioxide (CO2), Nitrogen 
 ### Hemodialysis
 Membrane application in hemodialysis is a process of using a semipermeable membrane to remove waste products and excess fluids from the blood.
 
-
-## See also
-
-Particle deposition
-Synthetic membrane
-
-
-## Notes
-
-
-## References
-Osada, Y., Nakagawa, T., Membrane Science and Technology, New York: Marcel Dekker, Inc,1992.
-Zeman, Leos J., Zydney, Andrew L., Microfiltration and Ultrafitration, Principles and Applications., New York: Marcel Dekker, Inc,1996.
-Mulder M., Basic Principles of Membrane Technology, Kluwer Academic Publishers, Netherlands, 1996.
-Jornitz, Maik W., Sterile Filtration, Springer, Germany, 2006
-Van Reis R., Zydney A. Bioprocess membrane technology.  J Mem Sci. 297(2007): 16-50.
-Templin T., Johnston D., Singh V., Tumbleson M.E., Belyea R.L. Rausch K.D. Membrane separation of solids from corn processing streams. Biores Tech.  97(2006): 1536-1545.
-Ripperger S., Schulz G. Microporous membranes in biotechnical applications. Bioprocess Eng. 1(1986): 43-49.
-Thomas Melin, Robert Rautenbach, Membranverfahren, Springer, Germany, 2007, ISBN 3-540-00071-2.
-Munir Cheryan, Handbuch Ultrafiltration, Behr, 1990, ISBN 3-925673-87-3.
-Eberhard Staude, Membranen und Membranprozesse, VCH, 1992, ISBN 3-527-28041-3.

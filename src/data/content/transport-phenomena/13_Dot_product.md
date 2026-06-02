@@ -4034,18 +4034,3 @@ Python (package NumPy) as  np.dot(A, B)  or  np.inner(A, B)
 GNU Octave as  sum(conj(X) .* Y, dim), and similar code as Matlab
 Intel oneAPI Math Kernel Library real p?dot dot  = sub(x)'*sub(y); complex p?dotc dotc  = conjg(sub(x)')*sub(y)
 
-
-## See also
-
-
-## Notes
-
-
-## References
-
-
-## External links
-
-"Inner product", Encyclopedia of Mathematics, EMS Press, 2001 [1994]
-Explanation of dot product including with complex vectors
-"Dot Product" by Bruce Torrence, Wolfram Demonstrations Project, 2007.

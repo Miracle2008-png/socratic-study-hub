@@ -51,15 +51,3 @@ For a reflex-cambered airfoil, the center of pressure lies a little ahead of the
 The way the center of pressure moves as lift coefficient changes makes it difficult to use the center of pressure in the mathematical analysis of longitudinal static stability of an aircraft.  For this reason, it is much simpler to use the aerodynamic center when carrying out a mathematical analysis.  The aerodynamic center occupies a fixed location on an airfoil, typically close to the quarter-chord point.
 The aerodynamic center is the conceptual starting point for longitudinal stability. The horizontal stabilizer contributes extra stability and this allows the center of gravity to be a small distance aft of the aerodynamic center without the aircraft reaching neutral stability. The position of the center of gravity at which the aircraft has neutral stability is called the neutral point.
 
-
-## See also
-
-
-## Notes
-
-
-## References
-Hurt, Hugh H. Jr. (January 1965). Aerodynamics for Naval Aviators. Washington, D.C.: Naval Air Systems Command, United States Navy. pp. 16–21. NAVWEPS 00-80T-80.
-Smith, Hubert (1992). The Illustrated Guide to Aerodynamics (2nd ed.). New York: TAB Books. pp. 24–27. ISBN 0-8306-3901-2.
-Anderson, John D. (1999), Aircraft Performance and Design, McGraw-Hill.  ISBN 0-07-116010-8
-Clancy, L.J. (1975), Aerodynamics, Pitman Publishing Limited, London.  ISBN 0-273-01120-0

@@ -10,14 +10,6 @@ There are many competing hypotheses about the ultimate fate of the universe and 
 The physical universe has been defined as "The totality of all space and time; all that is, has been, and will be." The universe contains all energy and matter, including therefore planets, moons, stars, galaxies, and the contents of intergalactic space.
 Some philosophers and scientists support the inclusion of ideas and abstract concepts—such as mathematics and logic—in the definition of the universe. The word universe may also refer to concepts such as the cosmos, the world, and nature.
 
-## Etymology
-
-The word universe derives from the Old French word univers, which in turn derives from the Latin word universus, meaning 'combined into one'. The Latin word 'universum' was used by Cicero and later Latin authors in many of the same senses as the modern English word is used.
-
-### Synonyms
-
-A term for universe among the ancient Greek philosophers from Pythagoras onwards was τὸ πᾶν (tò pân) 'the all', defined as all matter and all space, and τὸ ὅλον (tò hólon) 'all things', which did not necessarily include the void. Another synonym was ὁ κόσμος (ho kósmos) meaning 'the world, the cosmos'. Synonyms are also found in Latin authors (totum, mundus, natura) and survive in modern languages, e.g., the German words Das All, Weltall, and Natur for universe. The same synonyms are found in English, such as everything (as in the theory of everything), the cosmos (as in cosmology), the world (as in the many-worlds interpretation), and nature (as in natural laws or natural philosophy).
-
 ## Chronology and the Big Bang
 
 The prevailing model for the evolution of the universe is the Big Bang theory. In the Big Bang model, the earliest state of the universe was extremely hot and dense but the universe cooled during subsequent expansion. The model is based on general relativity and on symmetry assumptions such as the homogeneity and isotropy of space. A version of the model with a cosmological constant (Lambda) and cold dark matter, known as the Lambda-CDM model, provides an excellent account of most observations of the universe. 

@@ -133,11 +133,3 @@ Note, the units will vary based upon which units the driving force is expressed 
   
 ' is expressed in units of moles per unit of volume, but in some cases the driving force is represented by other measures of concentration with different units. For example, the driving force may be partial pressures when dealing with mass transfer in a gas phase and thus use units of pressure.
 
-
-## See also
-Mass transfer
-Separation process
-Sieving coefficient
-
-
-## References

@@ -504,39 +504,3 @@ The results of all of the control-volume analyses described above are consistent
 
 An airfoil produces a pressure field in the surrounding air, as explained under "The wider flow around the airfoil" above. The pressure differences associated with this field die off gradually, becoming very small at large distances, but never disappearing altogether. Below the airplane, the pressure field persists as a positive pressure disturbance that reaches the ground, forming a pattern of slightly-higher-than-ambient pressure on the ground, as shown on the right. Although the pressure differences are very small far below the airplane, they are spread over a wide area and add up to a substantial force. For steady, level flight, the integrated force due to the pressure differences is equal to the total aerodynamic lift of the airplane and to the airplane's weight. According to Newton's third law, this pressure force exerted on the ground by the air is matched by an equal-and-opposite upward force exerted on the air by the ground, which offsets all of the downward force exerted on the air by the airplane. The net force due to the lift, acting on the atmosphere as a whole, is therefore zero, and thus there is no integrated accumulation of vertical momentum in the atmosphere, as was noted by Lanchester early in the development of modern aerodynamics.
 
-
-## See also
-Drag coefficient
-Flow separation
-Fluid dynamics
-Foil (fluid mechanics)
-Küssner effect
-Lift-to-drag ratio
-Lifting-line theory
-Spoiler (automotive)
-
-
-## Footnotes
-
-
-## References
-
-
-## Further reading
-
-
-## External links
-
-Discussion of the apparent "conflict" between the various explanations of lift Archived July 25, 2021, at the Wayback Machine
-NASA tutorial, with animation, describing lift Archived March 9, 2009, at the Wayback Machine
-NASA FoilSim II 1.5 beta. Lift simulator
-Explanation of Lift with animation of fluid flow around an airfoil Archived June 13, 2021, at the Wayback Machine
-A treatment of why and how wings generate lift that focuses on pressure Archived December 19, 2006, at the Wayback Machine
-Physics of Flight – reviewed Archived March 9, 2021, at the Wayback Machine. Online paper by Prof. Dr. Klaus Weltner
-How do Wings Work? Holger Babinsky
-Bernoulli Or Newton: Who's Right About Lift? Archived September 24, 2015, at the Wayback Machine Plane and Pilot magazine
-One Minute Physics How Does a Wing actually work? Archived May 20, 2021, at the Wayback Machine (YouTube video)
-How wings really work, University of Cambridge Archived June 14, 2021, at the Wayback Machine Holger Babinsky (referred by "One Minute Physics How Does a Wing actually work?" YouTube video)
-From Summit to Seafloor – Lifted Weight as a Function of Altitude and Depth by Rolf Steinegger
-Joukowski Transform Interactive WebApp Archived October 19, 2019, at the Wayback Machine
-How Planes Fly Archived June 11, 2021, at the Wayback Machine YouTube video presentation by Krzysztof Fidkowski, associate professor of Aerospace Engineering at the University of Michigan

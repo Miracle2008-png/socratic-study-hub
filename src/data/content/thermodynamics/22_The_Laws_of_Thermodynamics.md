@@ -30,15 +30,3 @@ Distributed by Sony Pictures Entertainment Iberia, it was theatrically released 
 ## Critical reception
 The film has received mixed reviews, and holds a 46% approval rating on Rotten Tomatoes, and a score of 45 on Metacritic. Critics tended to praise its original concept, but criticized the characterization and romantic plotting as shallow, with the LA Times complaining that "Gil’s overly clever notion wears out its welcome" and "Manel and Elena are wispily drawn characters with predictable arcs". Variety was more positive, calling it a "fizzing, restless, wholly singular fusion of physics lecture and romcom" stating also that "The love story and the academic treatise gradually impinge on each other more than they inform each other". The Hollywood Reporter likewise stated "Though it is intermittently witty, visually playful and laudable in its attempt to appeal to both head and heart, Laws abandons its characters to its big concept".
 
-
-## See also
-List of Spanish films of 2018
-
-
-## References
-
-
-## External links
-The Laws of Thermodynamics on Netflix 
-The Laws of Thermodynamics at IMDb
-The Laws of Thermodynamics at Rotten Tomatoes

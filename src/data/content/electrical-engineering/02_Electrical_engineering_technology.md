@@ -39,19 +39,3 @@ Electrical/electronic engineering technicians may have a two-year associate degr
 ### Bachelor degree
 Electrical/electronic engineering technologists are broad specialists, rather than central technicians. EETs have a bachelor's degree and are considered applied electrical or electronic engineers because they have electrical engineering concepts to use in their work. Entry-level jobs in electrical or electronics engineering generally require a bachelor's degree in electrical engineering, electronics engineering, or electrical engineering technology.
 
-
-## See also
-Outline of engineering
-IEEE
-Applied science
-Mechanical engineering technology
-Electronics and Computer Engineering
-Computer engineering
-Manufacturing engineering
-
-
-## References
-
-
-## External links
-IEEE Global History Network A wiki-based site with many resources about the history of IEEE, its members, their professions and electrical and informational technologies and sciences.

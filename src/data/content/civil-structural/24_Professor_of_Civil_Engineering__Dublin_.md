@@ -48,9 +48,3 @@ Following the reorganisation of the School of Engineering into three departments
 3: John Fitzpatrick (1998-2012; vacant 2012-2020)
 4: Stephen Spence (2020-present) 
 
-
-## See also
-School of Engineering (Trinity College Dublin)
-
-
-## References

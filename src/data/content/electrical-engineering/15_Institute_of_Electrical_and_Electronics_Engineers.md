@@ -25,10 +25,6 @@ A region alignment is proposed to happen with effect from January 1, 2028, mergi
 
 ## Other bodies
 
-### IEEE Global History Network
-
-In September 2008, the IEEE History Committee founded the IEEE Global History Network, which now redirects to Engineering and Technology History Wiki.
-
 ### IEEE Foundation
 
 The IEEE Foundation is a charitable foundation established in 1973 to support and promote technology education, innovation, and excellence. It is incorporated separately from the IEEE, although it has a close relationship to it. Members of the Board of Directors of the foundation are required to be active members of IEEE, and one third of them must be current or former members of the IEEE Board of Directors.

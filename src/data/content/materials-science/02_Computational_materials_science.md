@@ -130,13 +130,3 @@ Many materials science journals, as well as those from related disciplines welco
 ## Related fields
 Computational materials science is one sub-discipline of both computational science and computational engineering, containing significant overlap with computational chemistry and computational physics. In addition, many atomistic methods are common between computational chemistry, computational biology, and CMSE; similarly, many continuum methods overlap with many other fields of computational engineering.
 
-
-## See also
-
-
-## References
-
-
-## External links
-TMS World Congress on Integrated Computational Materials Engineering (ICME)
-nanoHUB computational materials resources

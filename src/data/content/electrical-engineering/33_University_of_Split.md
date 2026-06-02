@@ -4,10 +4,6 @@ The University of Split (Croatian: Sveučilište u Splitu, Latin: Universitas St
 University of Split is a member of EUA - European University Association.
 
 
-## History
-The University of Split was officially established on 15 June 1974 when the units having already had an effect in their professional, scientific and teaching areas entered its structure. As a predominant scientific and teaching public institution in the region the University of Split has expanded during the course of the past 30 years to include eleven Faculties, one Academy of Arts and four University Departments. There are about 25,000 students enrolled in the university's undergraduate, graduate and post-graduate programs. Currently a new campus is being built, which was supposed to be finished in 2014 but the economy crisis slowed it down so delays are to be expected. It will house all of the faculties, a large student center with a sports hall, sporting grounds and a University Library. There are new additions to the graduate programs like pharmacy, forensics, geodesy with new programs being added every year. The focus of the research work carried out by the university is on scientific areas with reference to disciplines characterized by natural, bio-medical, cultural, historical, social, economic and other features of the region as a part of the Croatian Adriatic and the Mediterranean region as a whole. The School of Medicine in Split started a Medicine program in English in the school year 2011/12. The program's curriculum is governed by the Bologna Process.
-
-
 ## Organization
 
 These are the faculties into which the university is divided:
@@ -57,16 +53,3 @@ The university ranked 751–800 by QS, ranking 532 by USN, and 762 by CWUR, and 
 ## Events
 University is the host of the Erasmus Generation Meeting students' conference organized by Erasmus Students Network Split.
 
-
-## See also
-List of universities in Croatia
-Split
-Education in Croatia
-
-
-## References
-
-
-## External links
-Official Website (in Croatian)
-Official Website (in English)

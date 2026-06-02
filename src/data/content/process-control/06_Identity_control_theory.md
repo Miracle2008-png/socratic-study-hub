@@ -63,19 +63,3 @@ Looking Glass Self is a sociological term that was introduced by a man named Cha
 ### Mead's mind and self
 A man named George Herbert Mead furthered the ideas of self that were started by Cooley. Mead used two terms to further the understanding of social interaction. The first of these terms is mind. Mind, in this sense of the word, is being able to understand symbols that are used in everyday social interactions. Mead states that as an individual's interaction with others is repeated their mind becomes more developed. In other words, as people repeatedly interact with those around them, their ability to understand the symbols involved in the interactions more clearly. The more developed an individual's mind is, the easier social interaction will be for them. The second term brought about by Mead is self. In this context, self is the understanding a person creates of how others respond to them. Like the concept of mind, self is brought out by social interaction. By looking at how a group reacts to an individual, Mead says that the individual can not only come to understand their own identity but to also see things from the perspective of another individual. This means that one can imagine what things would be like if they were in another's situation. If this occurs over and over again the individual can begin to generalize what others will expect of the individual and how they will react to them. These relate to identity control theory because understanding the symbols involved in social interaction and being able to predict the outcomes of interaction can help and individual prevent the negative feelings that can be associated with identity control theory. If one can predict how people will react to their identity, they can make changes to their identity that will allow their personal view of their identity to match the view others have of their identity. This will draw positive emotions from the person rather than negative ones, which is what individuals strive for in regards to identity control theory.
 
-
-## References
-
-Burke, Peter (4 October 2007). "Identity Control Theory" (PDF). Archived from the original (PDF) on 17 February 2007. Retrieved 19 October 2007.
-Foulton, Susan (1982). "An Approach to the Measurement of Coping". Journal of Occupational Behaviour. 3.
-Jenkins, Richard (1996). Social Identity.
-Stark, Rodney (2007). Sociology. Belmont, California: Thomson Higher Education. ISBN 9780495093503.
-Stets, Jan E.; Tsushima, T.M. (2001). "Negative Emotion and Coping Responses within Identity Control Theory". Social Psychology Quarterly. 64 (3): 283. doi:10.2307/3090117. JSTOR 3090117.
-Stets, Jan E., The Sociology of Emotions (2005). Turner, J.H. New York, New York: Cambridge University Press.
-
-
-## Further reading
-Jonathan H. Turner (2005). "Peter J. Burke's Identity Control Theory". In Jan E. Stets (ed.). The sociology of emotions. Cambridge University Press. pp. 124–133. ISBN 978-0-521-61222-7.
-Timothy J. Owens (2003). "Self and Identity". In John D. DeLamater (ed.). Handbook of social psychology. Springer. pp. 221–224. ISBN 978-0-306-47695-2.
-L. Smith-Lovin (2002). "Roles, Identities, and Emotions: Parallel Processing and the Production of Mixed Emotions". In Yoshihisa Kashima; Margaret Foddy; Michael Platow (eds.). Self and identity: personal, social, and symbolic. Lawrence Erlbaum Associates. pp. 136–137. ISBN 978-0-8058-3684-4.
-Lynn Rew (2004). "Theories of Self: Identities and Self-Care". Adolescent health: a multidisciplinary approach to theory, research, and intervention. SAGE. pp. 119–120. ISBN 978-0-7619-2911-6.

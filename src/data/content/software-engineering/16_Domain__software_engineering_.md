@@ -6,12 +6,3 @@ Domain in the realm of software engineering commonly refers to the subject area 
 
 Domain: A sphere of knowledge, influence, or activity. The subject area to which the user applies a program is the domain of the software. —Eric Evans
 
-
-## See also
-Domain-driven design
-Domain-specific programming language
-Domain model
-Programming domain
-
-
-## References

@@ -35,9 +35,6 @@ Elected into the National Academy of Engineering (2000)
 Amundson award (ISCRE/NASCRE) (2001)
 
 
-## References
-
-
 ## Links
 Octave Levenspiel Home page
 Levenspiel fountain Archived 2021-02-23 at the Wayback Machine

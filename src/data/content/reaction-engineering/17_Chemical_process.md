@@ -39,14 +39,3 @@ Catalysis
 ## Academic research institutes in process chemistry
 Institute of Process Research & Development, University of Leeds
 
-
-## See also
-Chemical plant
-Chemical reaction
-Foam fractionation
-Industrial process
-Process (engineering)
-Separation process
-
-
-## References

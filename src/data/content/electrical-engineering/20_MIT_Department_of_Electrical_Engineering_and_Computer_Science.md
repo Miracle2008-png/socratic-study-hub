@@ -3,10 +3,6 @@
 The MIT Department of Electrical Engineering and Computer Science (EECS) is an engineering department of the Massachusetts Institute of Technology in Cambridge, Massachusetts. It offers degrees of Master of Science, Master of Engineering, Doctor of Philosophy, and Doctor of Science.
 
 
-## History
-The curriculum for the electrical engineering program was created in 1882, and was the first such program in the country. It was initially taught by the physics faculty.  In 1902, the Institute set up a separate Electrical Engineering department. The department was renamed to Electrical Engineering and Computer Science in 1975, to highlight the new addition of computer science to the program.
-
-
 ## Current faculty
 
 
@@ -76,13 +72,3 @@ Julius Stratton (S.B. 1923, S.M. 1926)
 
 ## Notable alumni
 
-
-## See also
-List of electrical engineering journals
-
-
-## References
-
-
-## External links
-MIT Department of Electrical Engineering and Computer Science

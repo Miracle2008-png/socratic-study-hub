@@ -4,11 +4,6 @@ Darcy's law is an equation that describes the flow of a fluid through a porous m
 Darcy's law is analogous to Fourier's law in the field of heat conduction, Ohm's law in the field of electrical networks, and Fick's law in diffusion theory.
 
 
-## History
-
-Since the 1830s, French hydraulic engineer Henry Darcy studied flow rate of water in sand filters in an attempt to improve the municipal water system of the city of Dijon, France. He established his law empirically and published it in a construction report in 1856.
-
-
 ## Description
 
 In the integral form, Darcy's law, in the absence of gravitational forces and in a homogeneously permeable medium, is given by a simple proportionality relationship between the volumetric flow rate 
@@ -1437,15 +1432,3 @@ In 1936, based on experimental results by his colleagues Ralph Dewey Wyckoff and
 Darcy's law is valid for laminar flow through sediments. In fine-grained sediments, the dimensions of interstices are small; thus, the flow is laminar. Coarse-grained sediments also behave similarly, but in very coarse-grained sediments, the flow may be turbulent. Hence Darcy's law is not always valid in such sediments.
 For flow through commercial circular pipes, the flow is laminar when the Reynolds number is less than 2000 and turbulent when it is more than 4000, but in some sediments, it has been found that flow is laminar when the value of the Reynolds number is less than 1.
 
-
-## See also
-The darcy, a unit of fluid permeability
-Hydrogeology
-Groundwater flow equation
-Mathematical model
-Black-oil equations
-Fick's law
-Ergun equation
-
-
-## References

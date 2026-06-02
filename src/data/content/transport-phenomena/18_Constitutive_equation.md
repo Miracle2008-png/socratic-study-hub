@@ -1064,15 +1064,3 @@ There are several laws which describe the transport of matter, or properties of 
 Flux (density) is proportional to a gradient, the constant of proportionality is the characteristic of the material.
 In general the constant must be replaced by a 2nd rank tensor, to account for directional dependences of the material.
 
-
-## See also
-Defining equation (physical chemistry)
-Governing equation
-Principle of material objectivity
-Rheology
-
-
-## Notes
-
-
-## References

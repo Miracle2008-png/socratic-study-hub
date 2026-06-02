@@ -5,19 +5,6 @@ Mechanical engineering requires an understanding of core areas including mechani
 Mechanical engineering emerged as a field during the Industrial Revolution in Europe in the 18th century; however, its development can be traced back several thousand years around the world. In the 19th century, developments in physics led to the development of mechanical engineering science. The field has continually evolved to incorporate advancements; today mechanical engineers are pursuing developments in such areas as composites, mechatronics, and nanotechnology. It also overlaps with aerospace engineering, metallurgical engineering, civil engineering, structural engineering, electrical engineering, manufacturing engineering, chemical engineering, industrial engineering, and other engineering disciplines to varying amounts. Mechanical engineers may also work in the field of biomedical engineering, specifically with biomechanics, transport phenomena, biomechatronics, bionanotechnology, and modelling of biological systems.
 
 
-## History
-
-The application of mechanical engineering can be seen in the archives of various ancient and medieval societies. The six classic simple machines were known in the ancient Near East. The wedge and the inclined plane (ramp) were known since prehistoric times. Mesopotamian civilization is credited with the invention of the wheel by several, mainly old sources. However, some recent sources either suggest that it was invented independently in both Mesopotamia and Eastern Europe or credit prehistoric Eastern Europeans with the invention of the wheel The lever mechanism first appeared around 5,000 years ago in the Near East, where it was used in a simple balance scale, and to move large objects in ancient Egyptian technology. The lever was also used in the shadoof water-lifting device, the first crane machine, which appeared in Mesopotamia circa 3000 BC. The earliest evidence of pulleys date back to Mesopotamia in the early 2nd millennium BC.
-The Saqiyah was developed in the Kingdom of Kush during the 4th century BC. It relied on animal power reducing the tow on the requirement of human energy. Reservoirs in the form of Hafirs were developed in Kush to store water and boost irrigation. Bloomeries and blast furnaces were developed during the seventh century BC in Meroe. Kushite sundials applied mathematics in the form of advanced trigonometry.
-The earliest practical water-powered machines, the water wheel and watermill, first appeared in the Persian Empire, in what are now Iraq and Iran, by the early 4th century BC. In ancient Greece, the works of Archimedes (287–212 BC) influenced mechanics in the Western tradition. The geared Antikythera mechanisms was an Analog computer invented around the 2nd century BC.
-In Roman Egypt, Heron of Alexandria (c. 10–70 AD) created the first steam-powered device (Aeolipile). In China, Zhang Heng (78–139 AD) improved a water clock and invented a seismometer, and Ma Jun (200–265 AD) invented a chariot with differential gears. The medieval Chinese horologist and engineer Su Song (1020–1101 AD) incorporated an escapement mechanism into his astronomical clock tower two centuries before escapement devices were found in medieval European clocks. He also invented the world's first known endless power-transmitting chain drive.
-The cotton gin was invented in India by the 6th century AD, and the spinning wheel was invented in the Islamic world by the early 11th century, Dual-roller gins appeared in India and China between the 12th and 14th centuries. The worm gear roller gin appeared in the Indian subcontinent during the early Delhi Sultanate era of the 13th to 14th centuries.
-During the Islamic Golden Age (7th to 15th century), Muslim inventors made remarkable contributions in the field of mechanical technology. Al-Jazari, who was one of them, wrote his famous Book of Knowledge of Ingenious Mechanical Devices in 1206 and presented many mechanical designs.
-In the 17th century, important breakthroughs in the foundations of mechanical engineering occurred in England and the Continent. The Dutch mathematician and physicist Christiaan Huygens invented the pendulum clock in 1657, which was the first reliable timekeeper for almost 300 years, and published a work dedicated to clock designs and the theory behind them. In England, Isaac Newton formulated his laws of motion and developed calculus, which would become the mathematical basis of physics. Newton was reluctant to publish his works for years, but he was finally persuaded to do so by his colleagues, such as Edmond Halley. Gottfried Wilhelm Leibniz, who earlier designed a mechanical calculator, is also credited with developing the calculus during the same time period.
-During the early 19th century Industrial Revolution, machine tools were developed in England, Germany, and Scotland. This allowed mechanical engineering to develop as a separate field within engineering. They brought with them manufacturing machines and the engines to power them. The first British professional society of mechanical engineers was formed in 1847 Institution of Mechanical Engineers, thirty years after the civil engineers formed the first such professional society Institution of Civil Engineers. On the European continent, Johann von Zimmermann (1820–1901) founded the first factory for grinding machines in Chemnitz, Germany in 1848.
-In the United States, the American Society of Mechanical Engineers (ASME) was formed in 1880, becoming the third such professional engineering society, after the American Society of Civil Engineers (1852) and the American Institute of Mining Engineers (1871). The first schools in the US to offer an engineering education were the United States Military Academy in 1817, an institution now known as Norwich University in 1819, and Rensselaer Polytechnic Institute in 1825. Education in mechanical engineering has historically been based on a strong foundation in mathematics and science.
-
-
 ## Education
 
 Degrees in mechanical engineering are offered at various universities worldwide. Mechanical engineering programs typically take four to five years of study depending on the place and university and result in a Bachelor of Engineering (B.Eng. or B.E.), Bachelor of Science (B.Sc. or B.S.), Bachelor of Science Engineering (B.Sc.Eng.), Bachelor of Technology (B.Tech.), Bachelor of Mechanical Engineering (B.M.E.), or Bachelor of Applied Science (B.A.Sc.) degree, in or with emphasis in mechanical engineering. In Spain, Portugal and most of South America, where neither B.S. nor B.Tech. programs have been adopted, the formal name for the degree is "Mechanical Engineer", and the course work is based on five or six years of training. In Italy the course work is based on five years of education, and training, but in order to qualify as an Engineer one has to pass a state exam at the end of the course. In Greece, the coursework is based on a five-year curriculum.
@@ -194,28 +181,3 @@ Acoustical engineering is one of many other sub-disciplines of mechanical engine
 ## Related fields
 Manufacturing engineering, aerospace engineering, automotive engineering and marine engineering are grouped with mechanical engineering at times. A bachelor's degree in these areas will typically have a difference of a few specialized classes.
 
-
-## See also
-
-Automobile engineering
-Index of mechanical engineering articles
-Lists
-
-Associations
-
-Wikibooks
-
-
-## References
-
-
-## Further reading
-
-Burstall, Aubrey F. (1965). A History of Mechanical Engineering. The MIT Press. ISBN 978-0-262-52001-0.
-Marks' Standard Handbook for Mechanical Engineers (11 ed.). McGraw-Hill. 2007. ISBN 978-0-07-142867-5.
-Oberg, Erik; Franklin D. Jones; Holbrook L. Horton; Henry H. Ryffel; Christopher McCauley (2016). Machinery's Handbook (30th ed.). New York: Industrial Press Inc. ISBN 978-0-8311-3091-6.
-
-
-## External links
-
-Mechanical engineering at MTU.edu

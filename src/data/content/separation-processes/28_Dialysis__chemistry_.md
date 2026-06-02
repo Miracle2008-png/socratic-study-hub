@@ -5,10 +5,6 @@ Dialysis is a common laboratory technique that operates on the same principle as
 The concept of dialysis was introduced in 1861 by the Scottish chemist Thomas Graham. He used this technique to separate sucrose (small molecule) and gum Arabic solutes (large molecule) in aqueous solution. He called the diffusible solutes crystalloids and those that would not pass the membrane colloids.
 From this concept dialysis can be defined as a spontaneous separation process of suspended colloidal particles from dissolved ions or molecules of small dimensions through a semi permeable membrane. Most common dialysis membrane are made of cellulose, modified cellulose or synthetic polymer (cellulose acetate or nitrocellulose).
 
-## Etymology
-
-Dialysis derives from the Greek διά, 'through', and λύειν, 'to loosen'.
-
 ## Principles
 
 Dialysis is the process used to change the matrix of molecules in a sample by differentiating molecules by the classification of size. It relies on diffusion, which is the random, thermal movement of molecules in solution (Brownian motion) that leads to the net movement of molecules from an area of higher concentration to a lower concentration until equilibrium is reached. Due to the pore size of the membrane, large molecules in the sample cannot pass through the membrane, thereby restricting their diffusion from the sample chamber. By contrast, small molecules will freely diffuse across the membrane and obtain equilibrium across the entire solution volume, thereby changing the overall concentration of these molecules in the sample and dialysate (see dialysis figure at right). 

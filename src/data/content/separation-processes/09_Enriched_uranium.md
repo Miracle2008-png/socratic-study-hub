@@ -134,29 +134,3 @@ The following countries are known to operate enrichment facilities: Argentina, B
 ## Codename
 During the Manhattan Project, weapons-grade highly enriched uranium was given the codename oralloy, a shortened version of Oak Ridge alloy, after the location of the plants where the uranium was enriched. The term oralloy is still occasionally used to refer to enriched uranium.
 
-
-## See also
-List of laser articles
-MOX fuel
-Nuclear fuel bank
-Nuclear fuel cycle in France
-Orano
-Uranium market
-Uranium mining
-
-
-## References
-
-
-## External links
-
-Annotated bibliography on enriched uranium from the Alsos Digital Library for Nuclear Issues
-Silex Systems Ltd
-Uranium Enrichment Archived 2 December 2010 at the Wayback Machine, World Nuclear Association
-Overview and history of U.S. HEU production Archived 27 September 2018 at the Wayback Machine
-News Resource on Uranium Enrichment
-Nuclear Chemistry-Uranium Enrichment Archived 15 October 2008 at the Wayback Machine
-A busy year for SWU (a 2008 review of the commercial enrichment marketplace), Nuclear Engineering International, 1 September 2008
-Uranium Enrichment and Nuclear Weapon Proliferation, by Allan S. Krass, Peter Boskma, Boelie Elzen and Wim A. Smit, 296 pp., published for SIPRI by Taylor and Francis Ltd, London, 1983
-Poliakoff, Martyn (2009). "How do you enrich Uranium?". The Periodic Table of Videos. University of Nottingham.
-Gilinsky, V.; Hoehn, W. (December 1969). "The Military Significance of Small Uranium Enrichment Facilities Fed with Low-Enrichment Uranium (Redacted)". Defense Technical Information Center. RAND Corporation. OCLC 913595660. DTIC ADA613260.

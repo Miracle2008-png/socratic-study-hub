@@ -513,17 +513,3 @@ A Youla-Kucera parametrization of the closed loop often leads to very high-order
 Riccati-based approaches solve two Riccati equations to find the controller, but require several simplifying assumptions.
 An optimization-based reformulation of the Riccati equation uses linear matrix inequalities and requires fewer assumptions.
 
-
-## See also
-Blaschke product
-Hardy space
-H square
-H-infinity loop-shaping
-Linear-quadratic-Gaussian control (LQG)
-Rosenbrock system matrix
-
-
-## References
-
-
-## Bibliography

@@ -529,10 +529,3 @@ where
 ## Applications
 Modelling the transport of charged chemical species, such as ions, in porous media is of great interest for many applications such as for electrochemical devices and nanoparticle movement in the subsurface. This can be achieved by solving the of the Nernst–Planck, Flow, and charge conservation equations. In fact, the Nernst–Planck equation is applied in describing the ion-exchange kinetics in soils. It has also been applied to membrane electrochemistry.
 
-
-## See also
-Goldman–Hodgkin–Katz equation
-Bioelectrochemistry
-
-
-## References

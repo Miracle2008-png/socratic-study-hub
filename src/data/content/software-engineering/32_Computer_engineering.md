@@ -7,17 +7,6 @@ It integrates several fields of electrical engineering, electronics engineering 
 Computer engineers require training in hardware-software integration, software design, and software engineering. It can encompass areas such as electromagnetism, artificial intelligence (AI), robotics, computer networks, computer architecture and operating systems. Computer engineers are involved in many hardware and software aspects of computing, from the design of individual microcontrollers, microprocessors, personal computers, and supercomputers, to circuit design. This field of engineering not only focuses on how computer systems themselves work, but also on how to integrate them into the larger picture. 
 
 
-## History
-
-Computer engineering began in 1939 when John Vincent Atanasoff and Clifford Berry began developing the world's first electronic digital computer through physics, mathematics, and electrical engineering. John Vincent Atanasoff was once a physics and mathematics teacher for Iowa State University and Clifford Berry a former graduate under electrical engineering and physics. Together, they created the Atanasoff–Berry computer, also known as the ABC which took five years to complete.
-While the original ABC was dismantled and discarded in the 1940s, a tribute was made to the late inventors; a replica of the ABC was made in 1997, where it took a team of researchers and engineers four years and $350,000 to build.
-The modern personal computer emerged in the 1970s, after several breakthroughs in semiconductor technology. These include the first working transistors by William Shockley, John Bardeen and Walter Brattain at Bell Labs in 1947, in 1955, silicon dioxide surface passivation by Carl Frosch and Lincoln Derick, the first planar silicon dioxide transistors by Frosch and Derick in 1957, planar process by Jean Hoerni, the monolithic integrated circuit chip by Robert Noyce at Fairchild Semiconductor in 1959, the metal–oxide–semiconductor field-effect transistor (MOSFET, or MOS transistor) demonstrated by a team at Bell Labs in 1960 and the single-chip microprocessor (Intel 4004) by Federico Faggin, Marcian Hoff, Masatoshi Shima and Stanley Mazor at Intel in 1971.
-
-
-### History of computer engineering education
-The first computer engineering degree program in the United States was established in 1971 at Case Western Reserve University in Cleveland, Ohio. As of 2015, there were 250 ABET-accredited computer engineering programs in the U.S. In Europe, accreditation of computer engineering schools is done by a variety of agencies as part of the EQANIE network. Due to increasing job requirements for engineers who can concurrently design hardware, software, firmware, and manage all forms of computer systems used in industry, some tertiary institutions around the world offer a bachelor's degree generally called computer engineering. Both computer engineering and electronic engineering programs include analog and digital circuit design in their curriculum. As with most engineering disciplines, having a sound knowledge of mathematics and science is necessary for computer engineers.
-
-
 ## Education
 Computer engineering is referred to as computer science and engineering at some universities. Most entry-level computer engineering jobs require at least a bachelor's degree in computer engineering, electrical engineering or computer science. Typically one must learn an array of mathematics such as calculus, linear algebra, and differential equations, along with computer science. Degrees in electronic or electric engineering also suffice due to the similarity of the two fields. Because hardware engineers commonly work with computer software systems, a strong background in computer programming is necessary. According to BLS, "a computer engineering major is similar to electrical engineering but with some computer science courses added to the curriculum". Some large firms or specialized jobs require a master's degree.
 In many institutions of higher learning, computer engineering students are allowed to choose areas of in-depth study in their junior and senior years because the full breadth of knowledge used in the design and application of computers is beyond the scope of an undergraduate degree. Other institutions may require engineering students to complete one or two years of general engineering before declaring computer engineering as their primary focus.
@@ -97,27 +86,3 @@ Computer engineers in this area develop improvements in human–computer interac
 
 This area integrates the quantum behaviour of small particles such as superposition, interference and entanglement, with classical computers to solve complex problems and formulate algorithms much more efficiently. Individuals focus on fields like Quantum cryptography, physical simulations and quantum algorithms.
 
-
-## See also
-
-
-### Related fields
-
-
-### Associations
-IEEE Computer Society
-Association for Computing Machinery
-British Computer Society
-
-
-## Notes and references
-
-
-### Notes
-
-
-### References
-
-
-## External links
- Media related to Computer engineering at Wikimedia Commons

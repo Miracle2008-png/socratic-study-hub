@@ -350,24 +350,3 @@ These mesoscale eddies have shown to be beneficial in further creating ecosystem
 Within these anticyclonic eddies, the isotherm was displaced 50 meters downward allowing for the warmer water to penetrate deeper in the water column. This warmer water displacement may allow for the white sharks to make longer dives without the added energetic cost from thermal regulation in the cooler cyclones. Even though these anticyclonic eddies resulted in lower levels of chlorophyll in comparison to the cyclonic eddies, the warmer waters at deeper depths may allow for a deeper mixed layer and higher concentration of diatoms which in turn result in higher rates of primary productivity. Furthermore, the prey populations could be distributed more within these eddies attracting these larger female sharks to forage in this mesopelagic zone. This diving pattern may follow a diel vertical migration but without more evidence on the biomass of their prey within this zone, these conclusions cannot be made only using this circumstantial evidence.
 The biomass in the mesopelagic zone is still understudied leading to the biomass of fish within this layer to potentially be underestimated. A more accurate measurement on this biomass may serve to benefit the commercial fishing industry providing them with additional fishing grounds within this region. Moreover, further understanding this region in the open ocean and how the removal of fish in this region may impact this pelagic food web is crucial for the fish populations and apex predators that may rely on this food source in addition to making better ecosystem-based management plans.
 
-
-## See also
-Vortex
-Eddy pumping - component of vertical motion in eddies relevant for biology and biogeochemistry
-Eddy diffusion
-Haida Eddies
-Irminger Rings
-Reynolds number - a dimensionless constant used to predict the onset of turbulent flow
-Reynolds experiment
-Kármán vortex street
-Whirlpool
-Whirlwind
-River eddies in whitewater
-Wake turbulence
-Computational fluid dynamics
-Laminar flow
-Hemodynamics
-Modons, or dipole eddy pairs.
-
-
-## References

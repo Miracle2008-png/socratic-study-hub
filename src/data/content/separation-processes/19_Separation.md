@@ -59,13 +59,3 @@ Six degrees of separation, the idea that everyone is on average approximately si
 Curdling of an emulsion in cookery is called "separation"
 Cow-calf separation, practice of separating calves and mothers in the dairy industry
 
-
-## See also
-All pages with titles beginning with separat
-All pages with titles containing separat
-Divide (disambiguation)
-Fragmentation (disambiguation)
-Part (disambiguation)
-Segregation (disambiguation)
-Separate (disambiguation)
-Split (disambiguation)

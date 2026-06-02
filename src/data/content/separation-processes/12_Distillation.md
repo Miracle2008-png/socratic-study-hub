@@ -13,61 +13,6 @@ Cryogenic Air separation into the component gases — oxygen, nitrogen, and argo
 Chemical synthesis to separate impurities and unreacted materials.
 
 
-## History
-
-
-### Iron Age
-Early evidence of distillation was found on Akkadian tablets dated c. 1200 BCE describing perfumery operations. The tablets provided textual evidence that an early, primitive form of distillation was known to the Babylonians of ancient Mesopotamia.
-
-
-### Classical antiquity
-
-
-#### Greek and Roman terminology
-According to British chemist T. Fairley, neither the Greeks nor the Romans had any term for the modern concept of distillation. Words like "distill" would have referred to something else, in most cases, a part of some process unrelated to what is now known as distillation. In the words of Fairley and German chemical engineer Norbert Kockmann, respectively:
-
-The Latin "distillo," from de-stillo, from stilla, a drop, referred to the dropping of a liquid by human or artificial means, and was applied to any process where a liquid was separated in drops. To distil in the modern sense could only be expressed in a roundabout manner.
-Distillation had a broader meaning in ancient and medieval times because nearly all purification and separation operations were subsumed under the term distillation, such as filtration, crystallization, extraction, sublimation, or mechanical pressing of oil.According to Dutch chemical historian Robert J. Forbes, the word distillare (to drip off) when used by the Romans, e.g. Seneca and Pliny the Elder, was "never used in our sense".
-
-
-#### Aristotle
-Aristotle knew that water condensing from evaporating seawater is fresh:
-
-I have proved by experiment that salt water evaporated forms fresh, and the vapour does not, when it condenses, condense into sea water again.
-Letting seawater evaporate and condense into freshwater cannot be called "distillation" for distillation involves boiling, but the experiment may have been an important step towards distillation.
-
-
-#### Alexandrian chemists
-
-Early evidence of distillation has been found related to alchemists working in Alexandria in Roman Egypt in the 1st century CE.
-Distilled water has been in use since at least c. 200 CE, when Alexander of Aphrodisias described the process. Work on distilling other liquids continued in early Byzantine Egypt under Zosimus of Panopolis in the 3rd century.
-
-
-### Classical India and Ancient China
-Distillation was practiced in the ancient Indian subcontinent, which is evident from baked clay retorts and receivers found at Taxila, Shaikhan Dheri, and Charsadda in Pakistan and Rang Mahal in India dating to the early centuries of the Common Era. Frank Raymond Allchin says these terracotta distillation tubes were "made to imitate bamboo". These "Gandhara stills" were only capable of producing a very weak distillate, as there was no efficient means of collecting the vapors at low heat. Distillation in China may have begun at the earliest during the Eastern Han dynasty (1st–2nd century CE).
-
-
-### Islamic Golden Age
-
-Medieval Muslim chemists such as Abū Bakr al-Rāzī (Latin: Rhazes, c. 865–925) and the anonymous chemists writing under the name of Jābir ibn Ḥayyān (Latin: Geber, ninth century) experimented extensively with the distillation of various substances. The fractional distillation of organic substances plays an important role in the works attributed to Jābir, such as in the Kitāb al-Sabʿīn ('The Book of Seventy'), translated into Latin by Gerard of Cremona (c. 1114–1187) under the title Liber de septuaginta. The Jabirian experiments with fractional distillation of animal and vegetable substances, and to a lesser degree also of mineral substances, is the main topic of the De anima in arte alkimiae, an originally Arabic work falsely attributed to Avicenna that was translated into Latin and would go on to form the most important alchemical source for Roger Bacon (c. 1220–1292).
-The distillation of wine is attested in Arabic works attributed to al-Kindī (c. 801–873 CE) and to al-Fārābī (c. 872–950), and in the 28th book of al-Zahrāwī's (Latin: Abulcasis, 936–1013) Kitāb al-Taṣrīf (later translated into Latin as Liber servatoris). In the twelfth century, recipes for the production of aqua ardens ("burning water", i.e., ethanol) by distilling wine with salt started to appear in a number of Latin works, and by the end of the thirteenth century it had become a widely known substance among Western European chemists. The works of Taddeo Alderotti (1223–1296) describe a method for concentrating alcohol involving repeated distillation through a water-cooled still, by which an alcohol purity of 90% could be obtained.
-
-
-### Medieval China
-The distillation of beverages began in the Southern Song (10th–13th century) and Jin (12th–13th century) dynasties, according to archaeological evidence. A still was found in an archaeological site in Qinglong, Hebei province, China, dating back to the 12th century. Distilled beverages were common during the Yuan dynasty (13th–14th century).
-
-
-### Modern era
-In 1500, German alchemist Hieronymus Brunschwig published Liber de arte distillandi de simplicibus (The Book of the Art of Distillation out of Simple Ingredients), the first book solely dedicated to the subject of distillation, followed in 1512 by a much expanded version. Right after that, in 1518, the oldest surviving distillery in Europe, the Green Tree Distillery, was founded.
-In 1651, John French published The Art of Distillation, the first major English compendium on the practice, but it has been claimed that much of it derives from Brunschwig's work. This includes diagrams with people in them showing the industrial rather than bench scale of the operation.
-
-As alchemy evolved into the science of chemistry, retorts became used for distillations. Both alembics and retorts are glass vessels with long necks pointing to the side at a downward angle to act as air-cooled condensers to condense the distillate and let it drip downward for collection. Later, copper alembics were used. Riveted joints were often kept tight by using various mixtures, for instance, a dough made of rye flour. These alembics often used a cooling system around the beak, using cold water for instance, which made the condensation of alcohol more efficient. These were called pot stills. Today, the retorts and pot stills have been largely supplanted by more efficient distillation methods in most industrial processes. However, the pot still is still widely used for the production of some fine alcoholic beverages including cognac, whisky and whiskey, tequila, rum, cachaça, and some vodkas. Pot stills made of various materials (wood, clay, stainless steel) are also used by bootleggers in various countries. Small pot stills are also sold for use in the domestic production of flower water or essential oils.
-Early forms of distillation involved batch processes using one vaporization and one condensation. Purity was improved by further distillation of the condensate. Greater volumes were processed by simply repeating the distillation. Chemists reportedly carried out as many as 500 to 600 distillations in order to obtain a pure compound.
-In the early 19th century, the basics of modern techniques, including pre-heating and reflux, were developed. In 1822 Anthony Perrier developed one of the first continuous stills, and in 1826 Robert Stein improved that design to make his patent still. In 1830, Aeneas Coffey was granted a patent for improving the design further. Coffey's continuous still may be regarded as the archetype of modern petrochemical units. The French engineer Armand Savalle developed his steam regulator around 1846. In 1877, Ernest Solvay was granted a U.S. patent for a tray column for ammonia distillation; from that year there were further developments on distilling oils and spirits.
-With the emergence of chemical engineering as a discipline at the end of the 19th century, scientific rather than empirical methods could be applied. The developing petroleum industry in the early 20th century provided the impetus for the development of accurate design methods, such as the McCabe–Thiele method by Ernest Thiele, and the Fenske equation. The first industrial plant in the United States to use distillation as a means of desalinating seawater opened in Freeport, Texas in 1961 with the hope of bringing water security to the region.
-The availability of powerful computers enabled distillation columns to be simulated numerically.
-
-
 ## Applications
 The application of distillation can roughly be divided into four groups: laboratory scale, industrial distillation, distillation of herbs for perfumery and medicinals (herbal distillate), and food processing. The latter two are distinctively different from the former two in that distillation is not used as a true purification method but more to transfer all volatiles from the source materials to the distillate in the processing of beverages and herbs.
 The main difference between laboratory scale distillation and industrial distillation are that laboratory scale distillation is often performed on a batch basis, whereas industrial distillation often occurs continuously. In batch distillation, the composition of the source material, the vapors of the distilling compounds, and the distillate change during the distillation. In batch distillation, a still is charged (supplied) with a batch of feed mixture, which is then separated into its component fractions, which are collected sequentially from most volatile to less volatile, with the bottoms – remaining least or non-volatile fraction – removed at the end. The still can then be recharged and the process repeated.
@@ -234,29 +179,3 @@ Carbohydrate-containing plant materials are allowed to ferment, producing a dilu
 
 ## Gallery
 
-
-## See also
-Atmospheric distillation of crude oil
-Clyssus
-Fragrance extraction
-Low-temperature distillation
-Microdistillery
-Sublimation
-Dixon rings
-Random column packing
-
-
-## References
-
-
-## Further reading
-Allchin, F. R. (March 1979). "India: The Ancient Home of Distillation?". Man. 14 (1): 55–63. doi:10.2307/2801640. JSTOR 2801640.
-Geankoplis, Christie John (2003). Transport Processes and Separation Process Principles (4th ed.). Prentice Hall. ISBN 978-0-13-101367-4.
-Needham, Joseph (1980). Science and Civilisation in China. Cambridge University Press. ISBN 0-521-08573-X.
-
-
-## External links
-
-Alcohol distillation
-Case Study: Petroleum Distillation
-"Binary Vapor-Liquid Equilibrium Data" (searchable database). Chemical Engineering Research Information Center. Retrieved 5 May 2007.

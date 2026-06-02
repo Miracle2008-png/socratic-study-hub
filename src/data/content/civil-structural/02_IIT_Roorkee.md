@@ -3,16 +3,6 @@
 Indian Institute of Technology Roorkee (IIT Roorkee or IITR) is a technical university located in Roorkee, Uttarakhand, India. It is the oldest engineering institution in India. It was founded as the College of Civil Engineering in 1847 during East India Company rule in India by James Thomason,  the Lieutenant-Governor of the North-Western Provinces in which Roorkee was located; its purpose was to train officers and surveyors employed in the construction of the Ganges Canal. In 1854, after the completion of the canal and Thomason's death, it was renamed the Thomason College of Civil Engineering by Proby Cautley, the designer and projector of the canal.  It was renamed University of Roorkee in 1949, and again renamed IIT Roorkee in 2001.  The institution has 22 academic departments covering Engineering, Applied Sciences, Humanities & Social Sciences and Management programs with an emphasis on scientific and technological education and research.
 
 
-## History
-
-The institution was founded in 1847 by James Thomason, the Lieutenant-Governor of the North-Western Provinces (in which Roorkee then lay) to aid engineers and surveyors at work in the construction of the Ganges Canal. It offered instruction catered to a variety of students; this included an engineering class for the domiciled British and some Indians; an upper subordinates class for British noncommissioned officers; and a lower subordinates class for Indian surveyors.  By the mid-1880s, "the school has a hundred students, substantial buildings, and a reputation as an important center for the study of hydraulic engineering."
-An Electrical Engineering department was added in 1897.  The architecture department instituted a master's degree course in Architecture (M. Arch.) in 1969–70.
-In 1978, the Institute of Paper Technology, Saharanpur was merged with the then University of Roorkee. The Institute of Paper Technology was established as School of Paper Technology by the Government of India in 1964, with an aid from the Royal Swedish Government. The school was renamed as the Institute of Paper Technology in July 1968 and subsequently Department of Paper Technology in July 1992.
-The first edition of Thomso, the institute's annual cultural festival was held in 1982. In 1997 the government of India released a stamp dedicated to 150th anniversary of university of Roorkee.
-On 21 September 2001, an ordinance issued by the Government of India declared it as the nation's seventh Indian Institute of Technology, renaming it to the current name, Indian Institute of Technology Roorkee. The ordinance was converted into an act by the Parliament to make IIT Roorkee an "Institution of National Importance".
-To mark the institute's 175th anniversary in 2022, the central government issued a Rs 175 coin as a gesture of commemoration.
-
-
 ## Campus
 
 The main campus in Roorkee has an area of 365 acres (1,480,000 m2).
@@ -162,23 +152,3 @@ The IIT Roorkee Alumni Association was established and registered in 1940 as a s
 Every year the association hosts Diamond, Golden and Silver jubilee functions, where alumni graduating 60, 50 and 25 years earlier are invited. Since 2005 the association has also been awarding a Distinguished Alumni Award to alumni who have made immense contributions in the fields of Academic/Research, Social Sciences, Engineering & Public Administration, Corporate Development/Entrepreneurship and Service to the Society.
 The Student Alumni Mentorship Programme has been initiated by the association to help young students in achieving their career aspirations. The alumni visit the institute to interact with the students and staff and share their suggestions.
 
-
-## See also
-Indian Institutes of Technology
-National Institutes of Technology
-Indian Institutes of Information Technology
-
-
-## Notes
-
-
-## References
-
-
-## Further reading
-Account of Roorkee College (Thomson Civil Engineering College). Agra, Secundra Orphan Press. 1851.
-
-
-## External links
-
-Official website

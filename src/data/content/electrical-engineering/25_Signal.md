@@ -447,21 +447,3 @@ EE taxonomists are still not decided where signals and systems falls within the 
 
 ## Gallery
 
-
-## See also
-
-A Mathematical Theory of Communication – 1948 scholarly article by Claude Shannon
-Beacon
-Current loop – a signaling system in widespread use for process control
-Signal-to-noise ratio
-
-
-## Notes
-
-
-## References
-
-
-## Further reading
-Hsu, P. H. (1995). Schaum's Theory and Problems: Signals and Systems. McGraw-Hill. ISBN 0-07-030641-9.
-Lathi, B.P. (1998). Signal Processing & Linear Systems. Berkeley-Cambridge Press. ISBN 0-941413-35-7.

@@ -4,39 +4,6 @@ Structural engineering is a sub-discipline of civil engineering in which structu
 Structural engineering theory is based upon applied physical laws and empirical knowledge of the structural performance of different materials and geometries. Structural engineering design uses a number of relatively simple structural concepts to build complex structural systems. Structural engineers are responsible for making creative and efficient use of funds, structural elements and materials to achieve these goals.
 
 
-## History
-
-Structural engineering dates back to 2700 B.C., when the step pyramid for Pharaoh Djoser was built by Imhotep, the first engineer in history known by name. Pyramids were the most common major structures built by ancient civilizations because the structural form of a pyramid is inherently stable and can be almost infinitely scaled (as opposed to most other structural forms, which cannot be linearly increased in size in proportion to increased loads).
-The structural stability of the pyramid, whilst primarily gained from its shape, relies also on the strength of the stone from which it is constructed, and its ability to support the weight of the stone above it. The limestone blocks were often taken from a quarry near the building site and have a compressive strength from 30 to 250 MPa (MPa = Pa × 106). Therefore, the structural strength of the pyramid stems from the material properties of the stones from which it was built rather than the pyramid's geometry.
-Throughout ancient and medieval history most architectural design and construction were carried out by artisans, such as stonemasons and carpenters, rising to the role of master builder. No theory of structures existed, and understanding of how structures stood up was extremely limited, and based almost entirely on empirical evidence of 'what had worked before' and intuition. Knowledge was retained by guilds and seldom supplanted by advances. Structures were repetitive, and increases in scale were incremental.
-No record exists of the first calculations of the strength of structural members or the behavior of structural material, but the profession of a structural engineer only really took shape with the Industrial Revolution and the re-invention of concrete (see History of Concrete). The physical sciences underlying structural engineering began to be understood in the Renaissance and have since developed into computer-based applications pioneered in the 1970s.
-
-
-### Timeline
-
-1452–1519 Leonardo da Vinci made many contributions.
-1638: Galileo Galilei published the book Two New Sciences in which he examined the failure of simple structures.
-1660: Hooke's law by Robert Hooke.
-1687: Isaac Newton published Philosophiæ Naturalis Principia Mathematica, which contains his laws of motion.
-1750: Euler–Bernoulli beam equation.
-1700–1782: Daniel Bernoulli introduced the principle of virtual work.
-1707–1783: Leonhard Euler developed the theory of buckling of columns.
-1826: Claude-Louis Navier published a treatise on the elastic behaviors of structures.
-1873: Carlo Alberto Castigliano presented his dissertation "Intorno ai sistemi elastici", which contains his theorem for computing displacement as the partial derivative of the strain energy. This theorem includes the method of "least work" as a special case.
-1874: Otto Mohr formalized the idea of a statically indeterminate structure.
-1922: Timoshenko corrects the Euler–Bernoulli beam equation.
-1936: Hardy Cross' publication of the moment distribution method, an important innovation in the design of continuous frames.
-1941: Alexander Hrennikoff solved the discretization of plane elasticity problems using a lattice framework.
-1942: Richard Courant divided a domain into finite subregions.
-1956: J. Turner, R. W. Clough, H. C. Martin, and L. J. Topp's paper on the "Stiffness and Deflection of Complex Structures" introduces the name "finite-element method" and is widely recognized as the first comprehensive treatment of the method as it is known today.
-
-
-### Structural failure
-
-The history of structural engineering contains many collapses and failures. Sometimes this is due to obvious negligence, as in the case of the Pétion-Ville school collapse, in which Rev. Fortin Augustin " constructed the building all by himself, saying he didn't need an engineer as he had good knowledge of construction" following a partial collapse of the three-story schoolhouse that sent neighbors fleeing. The final collapse killed 94 people, mostly children.
-In other cases structural failures require careful study, and the results of these inquiries have resulted in improved practices and a greater understanding of the science of structural engineering. Some such studies are the result of forensic engineering investigations where the original engineer seems to have done everything in accordance with the state of the profession and acceptable practice yet a failure still eventuated. A famous case of structural knowledge and practice being advanced in this manner can be found in a series of failures involving box girders which collapsed in Australia during the 1970s.
-
-
 ## Theory
 
 Structural engineering depends upon a detailed knowledge of applied mechanics, materials science, and applied mathematics to understand and predict how structures support and resist self-weight and imposed loads. To apply the knowledge successfully a structural engineer generally requires detailed knowledge of relevant empirical and theoretical design codes, the techniques of structural analysis, as well as some knowledge of the corrosion resistance of the materials and structures, especially when those structures are exposed to the external environment. Since the 1990s, specialist software has become available to aid in the design of structures, with the functionality to assist in the drawing, analyzing and designing of structures with maximum precision; examples include AutoCAD, StaadPro, ETABS, Prokon, Revit Structure, Inducta RCB, etc. Such software may also take into consideration environmental loads, such as earthquakes and winds.
@@ -203,43 +170,3 @@ Aluminium
 Composite materials: plywood
 Other structural materials: adobe, bamboo, carbon fibre, fiber reinforced plastic, mudbrick, roofing materials
 
-
-## See also
-
-
-## Notes
-
-
-## References
-Hibbeler, R. C. (2010). Structural Analysis. Prentice-Hall.
-Blank, Alan; McEvoy, Michael; Plank, Roger (1993). Architecture and Construction in Steel. Taylor & Francis. ISBN 0-419-17660-8.
-Hewson, Nigel R. (2003). Prestressed Concrete Bridges: Design and Construction. Thomas Telford. ISBN 0-7277-2774-5.
-Heyman, Jacques (1999). The Science of Structural Engineering. Imperial College Press. ISBN 1-86094-189-3.
-Hosford, William F. (2005). Mechanical Behavior of Materials. Cambridge University Press. ISBN 0-521-84670-6.
-
-
-## Further reading
-Blockley, David (2014). A Very Short Introduction to Structural Engineering. Oxford University Press ISBN 978-0-19967193-9.
-Bradley, Robert E.; Sandifer, Charles Edward (2007). Leonhard Euler: Life, Work, and Legacy. Elsevier. ISBN 0-444-52728-1.
-Chapman, Allan. (2005). England's Leornardo: Robert Hooke and the Seventeenth Century's Scientific Revolution. CRC Press. ISBN 0-7503-0987-3.
-Dugas, René (1988). A History of Mechanics. Courier Dover Publications. ISBN 0-486-65632-2.
-Feld, Jacob; Carper, Kenneth L. (1997). Construction Failure. John Wiley & Sons. ISBN 0-471-57477-5.
-Galilei, Galileo. (translators: Crew, Henry; de Salvio, Alfonso) (1954). Dialogues Concerning Two New Sciences. Courier Dover Publications. ISBN 0-486-60099-8
-Kirby, Richard Shelton; Withington, Sidney; Darling, Arthur Burr; Kilgour, Frederick Gridley (1990) [1956]. Engineering in History. New York: Dover Publications. ISBN 0-486-26412-2. OCLC 561620.
-Heyman, Jacques (1998). Structural Analysis: A Historical Approach. Cambridge University Press. ISBN 0-521-62249-2.
-Labrum, E.A. (1994). Civil Engineering Heritage. Thomas Telford. ISBN 0-7277-1970-X.
-Lewis, Peter R. (2004). Beautiful Bridge of the Silvery Tay. Tempus.
-Mir, Ali (2001). Art of the Skyscraper: the Genius of Fazlur Khan. Rizzoli International Publications. ISBN 0-8478-2370-9.
-Rozhanskaya, Mariam; Levinova, I. S. (1996). "Statics" in Morelon, Régis & Rashed, Roshdi (1996). Encyclopedia of the History of Arabic Science, vol. 2–3, Routledge. ISBN 0-415-02063-8
-Whitbeck, Caroline (1998). Ethics in Engineering Practice and Research. Cambridge University Press. ISBN 0-521-47944-4.
-Hoogenboom P.C.J. (1998). "Discrete Elements and Nonlinearity in Design of Structural Concrete Walls", Section 1.3 Historical Overview of Structural Concrete Modelling, ISBN 90-901184-3-8.
-Nedwell, P.J.; Swamy, R.N.(ed) (1994). Ferrocement:Proceedings of the Fifth International Symposium. Taylor & Francis. ISBN 0-419-19700-1.
-
-
-## External links
-Structural Engineering Association – International
-National Council of Structural Engineers Associations
-Structural Engineering Institute, an institute of the American Society of Civil Engineers
-Structurae database of structures
-Structural Engineering Association – International
-The EN Eurocodes are a series of 10 European Standards, EN 1990 – EN 1999, providing a common approach for the design of buildings and other civil engineering works and construction products

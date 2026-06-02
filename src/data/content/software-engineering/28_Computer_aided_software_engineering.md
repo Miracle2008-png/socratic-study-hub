@@ -3,16 +3,6 @@
 Computer-aided software engineering (CASE) is a domain of software tools used to design and implement applications. CASE tools are similar to and are partly inspired by computer-aided design (CAD) tools used for designing hardware products.  CASE tools are intended to help develop high-quality, defect-free, and maintainable software. CASE software was often associated with methods for the development of information systems together with automated tools that could be used in the software development process.
 
 
-## History
-The Information System Design and Optimization System (ISDOS) project, started in 1968 at the University of Michigan, initiated a great deal of interest in the whole concept of using computer systems to help analysts in the very difficult process of analysing requirements and developing systems. Several papers by Daniel Teichroew fired a whole generation of enthusiasts with the potential of automated systems development. His Problem Statement Language / Problem Statement Analyzer (PSL/PSA) tool was a CASE tool although it predated the term.
-Another major thread emerged as a logical extension to the data dictionary of a database. By extending the range of metadata held, the attributes of an application could be held within a dictionary and used at runtime. This "active dictionary" became the precursor to the more modern model-driven engineering capability. However, the active dictionary did not provide a graphical representation of any of the metadata. It was the linking of the concept of a dictionary holding analysts' metadata, as derived from the use of an integrated set of techniques, together with the graphical representation of such data that gave rise to the earlier versions of CASE.
-The next entrant into the market was Excelerator from Index Technology in Cambridge, Mass.  While DesignAid ran on Convergent Technologies and later Burroughs Ngen networked microcomputers, Index launched Excelerator on the IBM PC/AT platform. While, at the time of launch, and for several years, the IBM platform did not support networking or a centralized database as did the Convergent Technologies or Burroughs machines, the allure of IBM was strong, and Excelerator came to prominence. Hot on the heels of Excelerator were a rash of offerings from companies such as Knowledgeware (James Martin, Fran Tarkenton and Don Addington), Texas Instrument's CA Gen and Andersen Consulting's FOUNDATION toolset (DESIGN/1, INSTALL/1, FCP).
-CASE tools were at their peak in the early 1990s.  According to the PC Magazine of January 1990, over 100 companies were offering nearly 200 different CASE tools.  At the time IBM had proposed AD/Cycle, which was an alliance of software vendors centered on IBM's Software repository using IBM DB2 in mainframe and OS/2:
-
-The application development tools can be from several sources: from IBM, from vendors, and from the customers themselves. IBM has entered into relationships with Bachman Information Systems, Index Technology Corporation, and Knowledgeware wherein selected products from these vendors will be marketed through an IBM complementary marketing program to provide offerings that will help to achieve complete life-cycle coverage.
-With the decline of the mainframe, AD/Cycle and the Big CASE tools died off, opening the market for the mainstream CASE tools of today. Many of the leaders of the CASE market of the early 1990s ended up being purchased by Computer Associates, including IEW, IEF, ADW, Cayenne, and Learmonth & Burchett Management Systems (LBMS).  The other trend that led to the evolution of CASE tools was the rise of object-oriented methods and tools. Most of the various tool vendors added some support for object-oriented methods and tools.  In addition new products arose that were designed from the bottom up to support the object-oriented approach. Andersen developed its project Eagle as an alternative to Foundation. Several of the thought leaders in object-oriented development each developed their own methodology and CASE tool set: Jacobson, Rumbaugh, Booch, etc. Eventually, these diverse tool sets and methods were consolidated via standards led by the Object Management Group (OMG). The OMG's Unified Modelling Language (UML) is currently widely accepted as the industry standard for object-oriented modeling.
-
-
 ## CASE software
 
 
@@ -55,27 +45,3 @@ Unrealistic expectations: The proponents of CASE technology—especially vendors
 Inadequate training: As with any new technology, CASE requires time to train people in how to use the tools and to get up to speed with them. CASE projects can fail if practitioners are not given adequate time for training or if the first project attempted with the new technology is itself highly mission critical and fraught with risk.
 Inadequate process control: CASE provides significant new capabilities to utilize new types of tools in innovative ways. Without the proper process guidance and controls these new capabilities can cause significant new problems as well.
 
-
-## See also
-Data modeling
-Domain-specific modeling
-Method engineering
-Model-driven architecture
-Modeling language
-Rapid application development
-Automatic programming
-Test automation
-Build automation
-Integrated Development Environment
-End-user development
-Visual programming language
-
-
-## References
-
-
-## Further reading
-Comprehensive Overview of CASE Tools: Streamlining Software Development
-Characteristics of CASE Tools
-
-Use Cases and Applications of CASE Tools

@@ -114,12 +114,3 @@ Once purified isobarically, the ion beam is then sent to the individual experime
 As the production of radioactive atoms by the ISOL technique depends on the free atom chemistry of the element to be studied, there are certain beams which cannot be produced by simple proton bombardment of thick actinide targets. Refractory metals such as tungsten and rhenium do not emerge from the target even at high temperatures due to their low vapour pressure. In order to produce these types of beams, a thin target is required. The Ion Guide Isotope Separator On Line (IGISOL) technique was developed in 1981 at the University of Jyväskylä cyclotron laboratory in Finland. In this technique, a thin uranium target is bombarded with protons and nuclear reaction products recoil out of the target in a charged state. The recoils are stopped in a gas cell and then exit through a small hole in the side of the cell where they are accelerated electrostatically and injected into a mass separator. This method of production and extraction takes place on a shorter timescale compared to the standard ISOL technique and isotopes with short half-lives (sub millisecond) can be studied using an IGISOL. An IGISOL has also been combined with a laser ion source at the Leuven Isotope Separator On Line (LISOL) in Belgium. Thin target sources generally provide significantly lower quantities of radioactive ions than thick target sources and this is their main drawback.
 As experimental nuclear physics progresses, it is becoming more and more important to study the most exotic of radioactive nuclei. In order to do so, more inventive techniques are required to create nuclei with extreme proton/neutron ratios. An alternative to the ISOL techniques described here is that of fragmentation beams, where the radioactive ions are produced by fragmentation reactions on a fast beam of stable ions impinging on a thin target (usually of beryllium atoms). This technique is used, for example, at the Facility for Rare Isotope Beams (FRIB) at Michigan State University and at the Radioactive Isotope Beam Factory (RIBF) at RIKEN, in Japan.
 
-
-## References
-
-
-## External links
-Utilization of kinetic isotope effects for the concentration of tritium, GM Brown, TJ Meyer et al., 2001.
-Uranium Production
-Uranium Enrichment Archived 2010-12-02 at the Wayback Machine from the World Nuclear Association
-Annotated bibliography on electromagnetic separation of uranium isotopes form the Alsos Digital Library

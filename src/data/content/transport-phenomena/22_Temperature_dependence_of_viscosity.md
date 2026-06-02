@@ -1331,25 +1331,3 @@ For liquid metal viscosity as a function of temperature, Seeton proposed:
 ### Temperature dependence of viscosity for molten salts
 Modern approach for evaluating the temperature dependence of viscosity for molten salts is given by Douglas-Doremus-Ojovan (DDO) model of viscosity of glasses and melts.
 
-
-## See also
-Viscosity index
-Tribology
-Transport phenomena
-Molecular modeling
-Intermolecular force
-Force field (chemistry)
-Joback method
-
-
-## Notes
-
-
-## References
-Bird, R. Byron; Stewart, Warren E.; Lightfoot, Edwin N. (2007), Transport Phenomena (2nd ed.), John Wiley & Sons, Inc., ISBN 978-0-470-11539-8.
-Chapman, Sydney; Cowling, T.G. (1970), The Mathematical Theory of Non-Uniform Gases (3rd ed.), Cambridge University Press
-Hildebrand, Joel Henry (1977), Viscosity and Diffusivity: A Predictive Treatment, John Wiley & Sons, Inc., ISBN 978-0-471-03072-0
-Neufeld, Philip D.; Janzen, A. R.; Aziz, R. A. (1972). "Empirical Equations to Calculate 16 of the Transport Collision Integrals Ω(l, s)* for the Lennard-Jones (12–6) Potential". The Journal of Chemical Physics. 57 (3): 1100–1102. Bibcode:1972JChPh..57.1100N. doi:10.1063/1.1678363. ISSN 0021-9606.
-Reid, Robert C.; Prausnitz, John M.; Poling, Bruce E. (1987), The Properties of Gases and Liquids, McGraw-Hill Book Company, ISBN 0-07-051799-1
-Seeton, Christopher J. (2006), "Viscosity-temperature correlation for liquids", Tribology Letters, 22: 67–78, doi:10.1007/s11249-006-9071-2, S2CID 97897211
-Viswanath, D.S.; Natarajan, G. (1989). Data Book on the Viscosity of Liquids. Hemisphere Publishing Corporation. ISBN 0-89116-778-1.

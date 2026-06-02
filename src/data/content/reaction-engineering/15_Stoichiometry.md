@@ -12,10 +12,6 @@ Describing the quantitative relationships among substances as they participate i
 Because of the well-known relationship of moles to atomic weights, the ratios that are arrived at by stoichiometry can be used to determine quantities by weight in a reaction described by a balanced equation.  This is called composition stoichiometry.
 Gas stoichiometry deals with reactions solely involving gases, where the gases are at a known temperature, pressure, and volume and can be assumed to be ideal gases. For gases, the volume ratio is ideally the same by the ideal gas law, but the mass ratio of a single reaction has to be calculated from the molecular masses of the reactants and products. In practice, because of the existence of isotopes, molar masses are used instead in calculating the mass ratio.
 
-## Etymology
-
-The term stoichiometry was first used by Jeremias Benjamin Richter in 1792 when the first volume of Richter's Anfangsgründe der Stöchyometrie oder Meßkunst chymischer Elemente (German for 'Fundamentals of Stoichiometry, or the Art of Measuring the Chemical Elements') was published. The term is derived from the Ancient Greek words στοιχεῖον (stoikheîon), meaning 'element', and μέτρον (métron), meaning 'measure'. Ludwig Darmstaedter and Ralph E. Oesper have written a useful account on this.
-
 ## Definitions
 
 A stoichiometric amount or stoichiometric ratio of a reagent is the optimum amount or ratio where, assuming that the reaction proceeds to completion:

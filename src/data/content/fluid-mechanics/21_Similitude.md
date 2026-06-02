@@ -541,24 +541,3 @@ Some common applications of similitude and associated dimensionless numbers;
 
 Similitude analysis is a powerful engineering tool to design the scaled-down structures. Although both dimensional analysis and direct use of the governing equations may be used to derive the scaling laws, the latter results in more specific scaling laws. The design of the scaled-down composite structures can be successfully carried out using the complete and partial similarities. In the design of the scaled structures under complete similarity condition, all the derived scaling laws must be satisfied between the model and prototype which yields the perfect similarity between the two scales. However, the design of a scaled-down structure which is perfectly similar to its prototype has the practical limitation, especially for laminated structures. Relaxing some of the scaling laws may eliminate the limitation of the design under complete similarity condition and yields the scaled models that are partially similar to their prototype. However, the design of the scaled structures under the partial similarity condition must follow a deliberate methodology to ensure the accuracy of the scaled structure in predicting the structural response of the prototype. Scaled models can be designed to replicate the dynamic characteristic (e.g. frequencies, mode shapes and damping ratios) of their full-scale counterparts. However, appropriate response scaling laws need to be derived to predict the dynamic response of the full-scale prototype from the experimental data of the scaled model.
 
-
-## See also
-Similitude of ship models
-
-
-## References
-
-
-## Further reading
-
-Binder, Raymond C. (1973). Fluid Mechanics. Prentice-Hall. ISBN 978-0-13-322594-5. OCLC 393400.
-Howarth, L., ed. (1953). Modern Developments in Fluid Mechanics, High Speed Flow. Clarendon Press. OCLC 572735435 – via HathiTrust.
-Kline, Stephen J. (1986). Similitude and Approximation Theory. Springer. ISBN 0-387-16518-5.
-Chanson, Hubert (2009). "Turbulent Air-water Flows in Hydraulic Structures: Dynamic Similarity and Scale Effects". Environmental Fluid Mechanics. 9 (2): 125–142. Bibcode:2009EFM.....9..125C. doi:10.1007/s10652-008-9078-3. S2CID 121960118.
-Heller, V. (2011). "Scale Effects in Physical Hydraulic Engineering Models". Journal of Hydraulic Research. 49 (3): 293–306. Bibcode:2011JHydR..49..293H. doi:10.1080/00221686.2011.578914. S2CID 121563448.
-De Rosa, S.; Franco, F. (2015). "Analytical similitudes applied to thin cylindrical shells". Advances in Aircraft and Spacecraft Science. 2 (4): 403–425. doi:10.12989/aas.2015.2.4.403.
-Emori, Richard I.; Schuring, Dieterich J. (2016). Scale models in engineering : fundamentals and applications (2nd ed.). Elsevier. ISBN 978-0-08-020860-2.
-
-
-## External links
-MIT open courseware lecture notes on Similitude for marine engineering

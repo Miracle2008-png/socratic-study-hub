@@ -15,5 +15,3 @@ A related use of the brownout concept in software engineering is the deliberate 
 The intention is to allow detection of downstream consumers of an API or service who may otherwise have missed deprecation announcements or to uncover hidden side-effects of the deprecation that may have been overlooked. The intention is that developers of dependent systems will notice their own system failures caused by the upstream brownout. Such brownouts are typically pre-announced scheduled outages or probabilistic in nature (such as artificially failing a percentage of requests).
 As a brownout is only a temporary or partial outage, it provides downstream consumers of an API or service time to remove any discovered dependencies on the deprecated API before it is fully retired. For consumers that have already prepared for the deprecation, a brownout provides valuable testing that the final removal of the service won't cause any unexpected problems.
 
-
-## References

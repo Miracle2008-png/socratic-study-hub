@@ -11,10 +11,6 @@ Callen advises that a one-semester course for advanced undergraduates should cov
 
 ## Second edition
 
-### Background
-
-The second edition provides a descriptive account of the thermodynamics of critical phenomena, which progressed dramatically in the 1960s and 1970s. Drawing on feedback from students and instructors, Callen improved many explanations, explicitly solved examples, and added many exercises, many of which have complete or partial answers. He also provided an introduction to statistical mechanics with an emphasis on the core principles rather than the applications. However, he sought to neither separate thermodynamics and statistical mechanics completely nor subsume the former under the latter under the banner of "thermal physics." Indeed, thermal physics courses often emphasizes statistical mechanics at the expense of thermodynamics, despite its importance for industry, as a survey of business leaders conducted by the American Physical Society in 1971 suggested. Callen observed that thermodynamics had subsequently been de-emphasized.
-
 ## Reception
 
 Robert B. Griffiths, a specialist in thermodynamics and statistical mechanics at the Carnegie Mellon University, commented that both editions of this book presents clearly and concisely the core of thermodynamics within the first eight chapters. At the time of writing (1987), Griffiths knew of books that explained the principles of thermodynamics, but Callen's was the best presentation of the material. He believed Callen offered a pedagogical, if abrupt, treatment of the subject. His book begins in an abstract manner, assuming the existence and properties of entropy and derive the consequences for various processes of interest rather than through heat engines and thermodynamic cycles or by statistical mechanics and Boltzmann's entropy formula 

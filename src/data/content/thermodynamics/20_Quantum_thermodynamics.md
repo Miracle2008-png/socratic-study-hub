@@ -1742,21 +1742,3 @@ A central open question remains: evidence suggests that noncommuting charges can
 Nanoscale allows for the preparation of quantum systems in physical states without classical analogs. There, complex out-of-equilibrium scenarios may be produced by the initial preparation of either the working substance or the reservoirs of quantum particles, the latter dubbed as "engineered reservoirs".
 There are different forms of engineered reservoirs. Some of them involve subtle quantum coherence or correlation effects, while others rely solely on nonthermal classical probability distribution functions. Interesting phenomena may emerge from the use of engineered reservoirs such as efficiencies greater than the Otto limit, violations of Clausius inequalities, or simultaneous extraction of heat and work from the reservoirs.
 
-
-## See also
-Quantum statistical mechanics
-Thermal quantum field theory
-
-
-## References
-
-
-## Further reading
-Deffner, Sebastian; Campbell, Steve (2019). Quantum Thermodynamics: An introduction to the thermodynamics of quantum information. Morgan & Claypool Publishers. Bibcode:2019qtit.book.....D. doi:10.1088/2053-2571/ab21c6. ISBN 978-1-64327-658-8. S2CID 195791624.
-F. Binder, L. A. Correa, C. Gogolin, J. Anders, G. Adesso (eds.) (2018). Thermodynamics in the Quantum Regime: Fundamental Aspects and New Directions. Springer, ISBN 978-3-319-99045-3.
-Jochen Gemmer, M. Michel, Günter Mahler (2009). Quantum thermodynamics: Emergence of Thermodynamic Behavior Within Composite Quantum Systems. 2nd edition, Springer, ISBN 978-3-540-70509-3.
-Heinz-Peter Breuer, Francesco Petruccione (2007). The Theory of Open Quantum Systems. Oxford University Press, ISBN 978-0-19-921390-0.
-
-
-## External links
-Go to "Concerning an Heuristic Point of View Toward the Emission and Transformation of Light" to read an English translation of Einstein's 1905 paper. (Retrieved: 2014 Apr 11)

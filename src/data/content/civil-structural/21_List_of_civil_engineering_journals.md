@@ -68,21 +68,3 @@ Journal of Soft Computing in Civil Engineering
 Journal of Energy Engineering
 Journal of Rehabilitation in Civil Engineering
 
-
-## See also
-Lists of academic journals
-List of architecture journals
-List of engineering journals and magazines
-List of environmental journals
-List of scientific journals
-List of American Society of Civil Engineers academic journals
-Civil engineering
-
-
-### Civil engineering conferences
-International Society for Soil Mechanics and Geotechnical Engineering
-International Structural Engineering and Construction Society
-International Geosynthetics Society
-International Conference on Remote Engineering and Virtual Instrumentation
-International Association for Life Cycle Civil Engineering
-International Congress on Fracture

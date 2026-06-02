@@ -17,8 +17,3 @@ The span of a bridge, the portion that directly receives the live load, is refer
 ## Earthquake protection
 In order to improve the response during earthquakes of buildings and bridges, the superstructure may be separated from its foundation by various civil engineering mechanisms or machinery. All together, these implement the system of earthquake protection called base isolation.
 
-
-## References
-
-
-## External links

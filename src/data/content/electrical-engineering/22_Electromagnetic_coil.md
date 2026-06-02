@@ -93,23 +93,3 @@ There are also types of coil which don't fit into these categories.
 
 ## Winding technology
 
-
-## See also
-Hanna curve
-
-
-## References
-
-
-## Further reading
-Querfurth, William, "Coil winding; a description of coil winding procedures, winding machines and associated equipment for the electronic industry" (2d ed.). Chicago, G. Stevens Mfg. Co., 1958.
-Weymouth, F. Marten, "Drum armatures and commutators (theory and practice) : a complete treatise on the theory and construction of drum winding, and of commutators for closed-coil armatures, together with a full résumé of some of the principal points involved in their design; and an exposition of armature reactions and sparking". London, "The Electrician" Printing and Publishing Co., 1893.
-"Coil winding proceedings". International Coil Winding Association.
-Chandler, R. H., "Coil coating review, 1970–76". Braintree, R. H. Chandler Ltd, 1977.
-Laplante, Philip A., ed. (2018). Comprehensive Dictionary of Electrical Engineering. doi:10.1201/9781420037807. ISBN 978-1-315-22046-8.
-
-
-## External links
-
-Coil Inductance Calculator Online calculator for determining the inductance of single-layer and multilayer coils
-R. Clarke, "Producing wound components Archived 2007-07-07 at the Wayback Machine". Surrey.ac.uk, 2005 October 9

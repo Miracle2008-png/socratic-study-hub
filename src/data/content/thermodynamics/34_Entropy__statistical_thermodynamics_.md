@@ -522,8 +522,3 @@ where
   
  does not equal 0, in adherence to the Heisenberg uncertainty principle.
 
-
-## See also
-
-
-## References

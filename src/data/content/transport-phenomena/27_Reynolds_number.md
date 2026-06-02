@@ -795,14 +795,6 @@ Finally, dropping the primes for ease of reading:
 This is why mathematically all Newtonian, incompressible flows with the same Reynolds number are comparable. Notice also that in the above equation, the viscous terms vanish for Re → ∞. Thus flows with high Reynolds numbers are approximately inviscid in the free stream.
 
 
-## History
-
-Osborne Reynolds famously studied the conditions in which the flow of fluid in pipes transitioned from laminar flow to turbulent flow.
-In his 1883 paper, Reynolds described the transition from laminar to turbulent flow in a classic experiment in which he examined the behaviour of water flow under different flow velocities using a small stream of dyed water introduced into the centre of clear water flow in a larger pipe.
-The larger pipe was made of glass so the behaviour of the layer of the dyed stream could be observed. At the end of this pipe, there was a flow control valve used to vary the water velocity inside the tube. When the velocity was low, the dyed layer remained distinct throughout the entire length of the large tube. When the velocity was increased, the layer broke up at a given point and diffused throughout the fluid's cross-section. The point at which this happened was the transition point from laminar to turbulent flow.
-From these experiments came the dimensionless Reynolds number for dynamic similarity –the ratio of inertial forces to viscous forces. Reynolds also proposed what is now known as the Reynolds averaging of turbulent flows, where quantities such as velocity are expressed as the sum of mean and fluctuating components. Such averaging allows for 'bulk' description of turbulent flow, for example using the Reynolds-averaged Navier–Stokes equations.
-
-
 ## Flow in a pipe
 For flow in a pipe or tube, the Reynolds number is generally defined as
 
@@ -1367,31 +1359,5 @@ Reynolds number interpretation has been extended into the area of arbitrary comp
 There are many dimensionless numbers in fluid mechanics. The Reynolds number measures the ratio of advection and diffusion effects on structures in the velocity field, and is therefore closely related to Péclet numbers, which measure the ratio of these effects on other fields carried by the flow, for example, temperature and magnetic fields. Replacement of the kinematic viscosity ν = ⁠μ/ρ⁠ in Re by the thermal or magnetic diffusivity results in respectively the thermal Péclet number and the magnetic Reynolds number. These are therefore related to Re by-products with ratios of diffusivities, namely the Prandtl number and magnetic Prandtl number.
 
 
-## See also
-Reynolds transport theorem – 3D generalization of the Leibniz integral rule
-Drag coefficient – Dimensionless parameter to quantify fluid resistance
-Deposition (geology) – Natural addition of materials to a landmass
-Kelvin–Helmholtz instability
-
-
-## References
-
-
-### Footnotes
-
-
-### Citations
-
-
 ### Sources
 
-
-### Further reading
-
-
-## External links
-
-The Reynolds number - The Feynman Lectures on Physics
-The Reynolds Number at Sixty Symbols
-Reynolds mini-biography and picture of original apparatus at Manchester University.
-Reynolds Number Calculation

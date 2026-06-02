@@ -85,18 +85,3 @@ A pair-instability supernova is believed to result from runaway oxygen fusion in
 ### Comparison to nonrunaway supernovae
 Not all supernovae are triggered by runaway nuclear fusion. Type Ib, Ic and type II supernovae also undergo core collapse, but because they have exhausted their supply of atomic nuclei capable of undergoing exothermic fusion reactions, they collapse all the way into neutron stars, or in the higher-mass cases, into stellar black holes, powering explosions by the release of gravitational potential energy (largely via release of neutrinos). It is the absence of runaway fusion reactions that allows such supernovae to leave behind compact stellar remnants.
 
-
-## See also
-Cascading failure
-Frank-Kamenetskii theory
-Safety of lithium-ion batteries
-Boeing 787 Dreamliner battery problems
-UPS Flight 6 (a 2010 jet crash related to lithium-ion batteries in the cargo)
-Plug-in electric vehicle fire incidents
-
-
-## References
-
-
-## External links
-Safetycenter.navy.mil: Thermal runaway at the Library of Congress Web Archives (archived 2004-02-23)

@@ -416,17 +416,3 @@ Relativistic Euler equations read
 
 in the non relativistic limit, these equations reduce to the usual Euler equations.
 
-
-## See also
-Equation of state
-Ideal gas
-Fluid solutions in general relativity
-Potential flow
-
-
-## References
-
-
-## Further reading
-S.W. Hawking; G.F.R. Ellis (1973), The Large Scale Structure of Space-Time, Cambridge University Press ISBN 0-521-20016-4, ISBN 0-521-09906-4 (pbk.)
-Jackiw, R; Nair, V P; Pi, S-Y; Polychronakos, A P (2004-10-22). "Perfect fluid theory and its extensions". Journal of Physics A: Mathematical and General. 37 (42): R327–R432. arXiv:hep-ph/0407101. doi:10.1088/0305-4470/37/42/R01. ISSN 0305-4470. Topical review.

@@ -3,10 +3,6 @@
 Hydrostatic pressure is the static pressure exerted at a point of interest by the weight of a fluid column above the point.
 
 
-## Background
-Due to the fundamental nature of fluids, a fluid cannot remain at rest under the presence of a shear stress.  However, fluids can exert pressure normal to any contacting surface.  If a point in the fluid is thought of as an infinitesimally small cube, then it follows from the principles of equilibrium that the pressure on every side of this unit of fluid must be equal.  If this were not the case, the fluid would move in the direction of the resulting force.  Thus, the pressure on a fluid at rest is isotropic; i.e., it acts with equal magnitude in all directions.  This characteristic allows fluids to transmit force through the length of pipes or tubes; i.e., a force applied to a fluid in a pipe is transmitted, via the fluid, to the other end of the pipe. This principle was first formulated, in a slightly extended form, by Blaise Pascal, and is now called Pascal's law.
-
-
 ## Formulation
 In a fluid at rest, all frictional and inertial stresses vanish and the state of stress of the system is called hydrostatic. When this condition of V = 0 is applied to the Navier–Stokes equations for viscous fluids or Euler equations (fluid dynamics) for ideal inviscid fluid, the gradient of pressure becomes a function of body forces only. 
 The Navier-Stokes momentum equations are:
@@ -657,10 +653,3 @@ A is the area of the same vertical projection of the surface
 g is the acceleration due to gravity
 V is the volume of fluid directly above the curved surface
 
-
-## See also
-Hydrostatics
-Vertical pressure variation
-
-
-## References

@@ -1391,16 +1391,3 @@ where kB is the Boltzmann constant and T is absolute temperature. The drift curr
 This equation can be solved together with Poisson's equation numerically.
 An example of results of solving the drift diffusion equation is shown on the right. When light shines on the center of semiconductor, carriers are generated in the middle and diffuse towards two ends. The drift–diffusion equation is solved in this structure and electron density distribution is displayed in the figure. One can see the gradient of carrier from center towards two ends.
 
-
-## See also
-
-
-## Notes
-
-
-## References
-Wesseling, Pieter (2001). Principles of Computational Fluid Dynamics. Springer Series in Computational Mathematics. Vol. 29. Berlin, Heidelberg: Springer Berlin Heidelberg. doi:10.1007/978-3-642-05146-3. ISBN 978-3-642-05145-6.
-
-
-## Further reading
-Sewell, Granville (1988). The Numerical Solution of Ordinary and Partial Differential Equations. Academic Press. ISBN 0-12-637475-9.

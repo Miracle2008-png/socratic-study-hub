@@ -4,22 +4,6 @@ The National University of Sciences and Technology (NUST) is a Pakistani multi-c
 The university offers undergraduate and postgraduate degrees, including doctoral and professional degrees. NUST was established in March 1991 to promote higher education in the country, especially in the fields of science and technology, and its charter was granted in 1993. All of its engineering programmes are accredited under the Washington Accord, as well as by the Pakistan Engineering Council (PEC). The main campus in Islamabad also contains Pakistan's first National Science and Technology Park, certified by International Association of Science Parks (IASP). As of 2025, NUST has over 12,000 full-time students enrolled and over 20 departments with over 1,637 academic faculty staff.
 
 
-## History
-
-
-### Pre-Inception
-After the independence of Pakistan in 1947, the training of military corpsmen became one of the top priorities of the new Government. In 1947, Military College of Signals (MCS) was established as the School of Signals. A year later, in 1948, the School of Military Engineering (SME) was established at Sialkot to train the corps in the field of engineering. In 1951, it was given the status of college as Military College of Engineering (MCE) and was shifted to its present location in Risalpur. On 1 April 1957, EME School was established at Quetta and in 1969, it was given the status of College of Electrical & Mechanical Engineering (CEME) and civilians were admitted. In 1962, Pakistan Navy Engineering College (PNEC) was established in Karachi. To train the members of the Pakistan Air Force, the College of Aeronautical Engineering (CAE) was established at Korangi Creek, Karachi in 1965. In the same year, the School of Signals was upgraded to a college. In 1981 an undergraduate program was launched at CEME giving it the status of a university. A few years later in April 1984, CEME moved to its current location in Rawalpindi from Quetta. In May 1986, CAE was shifted to the PAF Academy in Risalpur.
-
-
-### Inception
-In March 1991, the Government of Pakistan established the National University of Sciences & Technology (NUST) for the promotion of higher education in the country, especially in the fields of science and technology. The first college to be affiliated with NUST was MCS in 1992. In 1993, the university was granted a Charter through a Presidential Ordinance, and CEME and MCE became part of the university.  In December 1994 and November 1995, College of Aeronautical Engineering and Pakistan Navy Engineering College became constituents of NUST respectively. In 1997, the charter was converted into the National University of Sciences and Technology Act (Act No. XX of 1997) by the Parliament of Pakistan. In 1999, CEME and CAE attained ISO 9001 Certification, the School of Electrical Engineering and Computer Sciences (SEECS) and NUST Business School (NBS, formerly known as NIMS) were established. In 2003, the Center for Cyber Technology and Spectrum Management was launched in Islamabad. In May 2004, the Center for Advanced Mathematics and Physics was created. The School of Chemical and Materials Engineering (SCME) was established in 2006. In 2007, the Center of Virology and Immunology was developed to increase research in the field of medical sciences in Pakistan.
-
-
-### Establishment of main campus
-
-In 2008, a new campus was developed in Sector H-12, Islamabad. Some old colleges such as SEECS and NBS were shifted to this campus and new schools were established such as School of Civil and Environmental Engineering (SCEE) and the School of Mechanical and Manufacturing Engineering (SMME). In 2012, NUST renamed the Center of Virology and Immunology as Atta-ur-Rahman School of Applied Biosciences to honor Prof. Atta ur Rehman, a highly distinguished scientist from Pakistan who has received several prestigious awards including Hilal-i-Imtiaz (HI), Tamgha-i-Imtiaz (TI), and Fellow of Royal Society (FRS) for his exceptional contributions in the field. In 2013, School of Social Sciences & Humanities (S3H) was established by combining departments of economics, mass communication, behavioral sciences and public policy. In 2020, Bachelor of Laws (LL.B.) degree was offered at S3H department in Islamabad, which was eventually established into a separate school i.e. NUST Law School. In 2024, NUST School of Health Sciences (NSHS) was launched in its main Islamabad campus, with Bachelor of Medicine, Bachelor of Surgery (MBBS) and Bachelor's in Human Nutrition and Dietetics being offered. In the same year, SMME also introduced Bachelor's in Aeronautical Engineering.
-
-
 ## Campuses
 NUST is a multi-campus university with the main campuses located in Islamabad. Campuses of NUST are located in the following cities:
 
@@ -160,8 +144,3 @@ Dr. Sarah Qureshi (Graduate of CEME. 2000), recipient of Tamgha-i-Imtiaz and CEO
 Abdullah Qureshi (Graduate of S3H), Pakistani singer.
 Yashal Shahid (Graduate of SCME, 2019), Pakistani singer.
 
-
-## Notes
-
-
-## References

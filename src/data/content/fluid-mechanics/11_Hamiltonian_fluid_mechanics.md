@@ -433,21 +433,3 @@ after exploiting the fact that the vorticity is zero:
 
 As fluid dynamics is described by non-canonical dynamics, which possess an infinite amount of Casimir invariants, an alternative formulation of Hamiltonian formulation of fluid dynamics can be introduced through the use of Nambu mechanics
 
-
-## See also
-Luke's variational principle
-Hamiltonian field theory
-
-
-## Notes
-
-
-## References
-Badin, Gualtiero; Crisciani, Fulvio (2018). Variational Formulation of Fluid and Geophysical Fluid Dynamics - Mechanics, Symmetries and Conservation Laws -. Springer. p. 218. Bibcode:2018vffg.book.....B. doi:10.1007/978-3-319-59695-2. ISBN 978-3-319-59694-5. S2CID 125902566.
-Morrison, P.J. (2006). "Hamiltonian Fluid Mechanics" (PDF). In Elsevier (ed.). Encyclopedia of Mathematical Physics. Vol. 2. Amsterdam. pp. 593–600.{{cite encyclopedia}}:  CS1 maint: location missing publisher (link)
-Morrison, P. J. (April 1998). "Hamiltonian Description of the Ideal Fluid" (PDF). Reviews of Modern Physics. 70 (2). Austin, Texas: 467–521. Bibcode:1998RvMP...70..467M. doi:10.1103/RevModPhys.70.467. hdl:2152/61087.
-R. Salmon (1988). "Hamiltonian Fluid Mechanics". Annual Review of Fluid Mechanics. 20: 225–256. Bibcode:1988AnRFM..20..225S. doi:10.1146/annurev.fl.20.010188.001301.
-Shepherd, Theodore G (1990). "Symmetries, Conservation Laws, and Hamiltonian Structure in Geophysical Fluid Dynamics". Advances in Geophysics Volume 32. Vol. 32. pp. 287–338. Bibcode:1990AdGeo..32..287S. doi:10.1016/S0065-2687(08)60429-X. ISBN 978-0-12-018832-1.
-Swaters, Gordon E. (2000). Introduction to Hamiltonian Fluid Dynamics and Stability Theory. Boca Raton, Florida: Chapman & Hall/CRC. p. 274. ISBN 1-58488-023-6.
-Nevir, P.; Blender, R. (1993). "A Nambu representation of incompressible hydrodynamics using helicity and enstrophy". J. Phys. A. 26 (22): 1189–1193. Bibcode:1993JPhA...26L1189N. doi:10.1088/0305-4470/26/22/010.
-Blender, R.; Badin, G. (2015). "Hydrodynamic Nambu mechanics derived by geometric constraints". J. Phys. A. 48 (10) 105501. arXiv:1510.04832. Bibcode:2015JPhA...48j5501B. doi:10.1088/1751-8113/48/10/105501. S2CID 119661148.

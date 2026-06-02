@@ -4,11 +4,6 @@ A centrifuge is a device that uses centrifugal force to subject a specimen to a 
 Industrial scale centrifuges are commonly used in manufacturing and waste processing to sediment suspended solids, or to separate immiscible liquids. An example is the cream separator found in dairies. Very high speed centrifuges and ultracentrifuges able to provide very high accelerations can separate fine particles down to the nano-scale, and molecules of different masses. Large centrifuges are used to simulate high gravity or acceleration environments (for example, high-G training for test pilots). Medium-sized centrifuges are used in washing machines and at some swimming pools to draw water out of fabrics. Gas centrifuges are used for isotope separation, such as to enrich nuclear fuel for fissile isotopes.
 
 
-## History
-
-English military engineer Benjamin Robins (1707–1751) invented a whirling arm apparatus to determine drag. In 1864, Antonin Prandtl proposed the idea of a dairy centrifuge to separate cream from milk. The idea was subsequently put into practice by his brother, Alexander Prandtl, who made improvements to his brother's design, and exhibited a working butterfat extraction machine in 1875.
-
-
 ## Types
 A centrifuge machine can be described as a machine with a rapidly rotating container that applies centrifugal force to its contents. There are multiple types of centrifuge, which can be classified by intended use or by rotor design:
 Types by rotor design:
@@ -310,28 +305,3 @@ where
  is rotational speed measured in revolutions per minute (RPM).
 To avoid having to perform a mathematical calculation every time, one can find nomograms for converting RCF to rpm for a rotor of a given radius. A ruler or other straight edge lined up with the radius on one scale, and the desired RCF on another scale, will point at the correct rpm on the third scale. Based on automatic rotor recognition, modern centrifuges have a button for automatic conversion from RCF to rpm and vice versa.
 
-
-## See also
-Centrifugal force
-Centrifugation
-Clearing factor
-Honey extractor
-Hydroextractor
-Lamm equation
-Sedimentation coefficient
-Sedimentation
-Separation process—includes list of techniques
-
-
-## References and notes
-
-
-## Further reading
-Naesgaard et al., Modeling flow liquefaction, its mitigation, and comparison with centrifuge tests
-
-
-## External links
-
-RCF Calculator and Nomograph
-Centrifugation Rotor Calculator
-Selection of historical centrifuges in the Virtual Laboratory of the Max Planck Institute for the History of Science

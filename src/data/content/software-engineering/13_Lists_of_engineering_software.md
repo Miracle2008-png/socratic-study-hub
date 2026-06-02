@@ -48,29 +48,3 @@ List of software for nanostructures modeling
 List of software for nuclear engineering
 List of structural engineering software
 
-
-## See also
-Comparison of 3D computer graphics software
-Comparison of CAD, CAM and CAE file viewers
-Comparison of version-control software
-List of 3D modeling software and comparison of computer-aided design software
-List of CAD file formats
-List of computer simulation software
-List of engineering software for Linux
-List of mathematical software
-List of open-source software for mathematics
-List of computational physics software
-
-
-## See also
-
-Computational engineering
-Computer-aided engineering
-List of CAx companies
-List of engineering branches
-List of engineering journals and magazines
-Lists of engineers
-List of free and open-source software packages for engineering
-List of free electronics circuit simulators
-Lists of programming software development tools
-Outline of engineering

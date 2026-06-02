@@ -3,10 +3,6 @@
 Software Engineering Programme is a centre for advanced education and applied research at the  Department of Computer Science of the University of Oxford. It teaches the principles of modern software engineering, together with the tools, methods, and techniques that support their application. The current Director of Software Engineering Programme is Professor Jim Davies
 
 
-## History
-The Programme has its origins in the industrial courses presented by the Computing Laboratory—the computing science department of the University of Oxford—during the 1980s.
-
-
 ## Courses
 The Programme offer a variety of courses, each addressing a different aspect of software engineering, which are organized into three themes, namely:
 
@@ -22,5 +18,3 @@ The courses offered by the Programme may be used as credit towards a master's de
 ## People
 Most of the courses are taught by University lecturers, with assistance from dedicated teams of researchers and administrators. There are also a number of subject specialists who teach courses in their particular areas of expertise.
 
-
-## References

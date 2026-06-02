@@ -4,16 +4,6 @@ In chemical analysis, chromatography is a laboratory technique for the separatio
 Chromatography may be preparative or analytical. The purpose of preparative chromatography is to separate the components of a mixture for later use, and is thus a form of purification. This process is associated with higher costs due to its mode of production. Analytical chromatography is done normally with smaller amounts of material and is for establishing the presence or measuring the relative proportions of analytes in a mixture. The two types are not mutually exclusive.
 
 
-## Etymology and pronunciation
-Chromatography, pronounced , is derived from Greek χρῶμα chrōma, which means "color", and γράφειν gráphein, which means "to write". The combination of these two terms was directly inherited from the invention of the technique first used to separate biological pigments.
-
-
-## History
-
-The method was developed by botanist Mikhail Tsvet in 1901–1905 in the universities of Kazan and Warsaw. He developed the technique and coined the term chromatography in the first decade of the 20th century, primarily for the separation of plant pigments such as chlorophyll, carotenes, and xanthophylls. Since these components separate in bands of different colors (green, orange, and yellow, respectively) they directly inspired the name of the technique. New types of chromatography developed during the 1930s and 1940s made the technique useful for many separation processes.
-Chromatography technique developed substantially as a result of the work of Archer John Porter Martin and Richard Laurence Millington Synge during the 1940s and 1950s, for which they won the 1952 Nobel Prize in Chemistry. They established the principles and basic techniques of partition chromatography, and their work encouraged the rapid development of several chromatographic methods: paper chromatography, gas chromatography, and what would become known as high-performance liquid chromatography. Since then, the technology has advanced rapidly. Researchers found that the main principles of Tsvet's chromatography could be applied in many different ways, resulting in the different varieties of chromatography described below. Advances are continually improving the technical performance of chromatography, allowing the separation of increasingly similar molecules.
-
-
 ## Terms
 Analyte – the substance to be separated during chromatography. It is also normally what is needed from the mixture.
 Analytical chromatography – the use of chromatography to determine the existence and possibly also the concentration of analyte(s) in a sample.
@@ -211,16 +201,3 @@ Aqueous normal-phase (ANP) chromatography is characterized by the elution behavi
 ## Applications
 Chromatography is used in many fields including the pharmaceutical industry, the food and beverage industry, the chemical industry, forensic science, environment analysis, and hospitals.
 
-
-## See also
-
-
-## References
-
-
-## External links
-
-IUPAC Nomenclature for Chromatography
-Overlapping Peaks Program – Learning by Simulations
-Chromatography Videos – MIT OCW – Digital Lab Techniques Manual
-Chromatography Equations Calculators – MicroSolv Technology Corporation

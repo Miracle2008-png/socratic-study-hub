@@ -169,27 +169,3 @@ Observations on the Graduation of Astronomical Instruments; With an Explanation 
 Account of an Observation of the Right Ascension and Declination of Mercury out of the Meridian, Near His Greatest Elongation, Sept. 1786, Made by Mr. John Smeaton, F. R. S. with an Equatorial Micrometer, of His Own Invention and Workmanship; Accompanied with an Investigation of a Method of Allowing for Refraction in Such Kind of Observations; Communicated to the Rev. Nevil Maskelyne, D. D. F. R. S. and Astronomer Royal, and by Him to the Royal Society, Philosophical Transactions of the Royal Society of London, Series I, vol 77 (1787), p. 318-343
 Description of an Improvement in the Application of the Quadrant of Altitude to a Celestial Globe, for the Resolution of Problems Dependant on Azimuth and Altitude. By Mr. John Smeaton, F. R. S.; Communicated by Mr. William Wales, F. R. S., Philosophical Transactions of the Royal Society of London, Series I, vol 79 (1789), p. 1-6
 
-
-## See also
-
-Canals of the United Kingdom
-History of the British canal system
-
-
-## Further reading
-Skempton, A. W. [Ed.], John Smeaton FRS, ICE Publishing (1991) London ISBN 978-0727700889
-Chakraborty, Alapan (2026). The Machine of the World (1727–1800): Era II: The Age of Precision (1727–1900) – The Rise of Classical Physics (Kindle edition). Five Centuries in the Pursuit of Reality (1490–2025). Vol. 4.
-
-
-## References
-
-
-## External links
- Media related to John Smeaton at Wikimedia Commons
-John Smeaton at Structurae
-Structure Details: Chimney Mill
-Smeaton's profile at the BBC
-John Smeaton: The Aviation History Online Museum
-John Smeaton's model for the foundation of the Eddystone lighthouse (Leeds Museums and Galleries "Secret Life of Objects" blog)
-John Smeaton A narrative of the building and a description of the construction of the Edystone Lighthouse (1791 and 1793 editions) – Linda Hall Library
-Haran, Brady. "The Lighthouse Designer" (video). YouTube. Brady Haran. Archived from the original on 11 December 2021. Retrieved 20 February 2018.

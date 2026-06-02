@@ -262,18 +262,3 @@ where
   
  is an involutive distribution.
 
-
-## See also
-Feedback passivation
-Phase-locked loop
-Small control property
-
-
-## References
-
-
-## Further reading
-
-
-## External links
-Wolfram language functions for nonlinear control systems

@@ -117,9 +117,3 @@ where
 Kink movement is strongly dependent on temperature as well. Higher thermal energy assists in the generation of kinks, as well as increasing atomic vibrations and promoting dislocation motion.
 Kinks may also form under compressive stress due to the buckling of crystal planes into a cavity. At high compressive forces, masses of dislocations move at once. Kinks align with each other, forming walls of kinks that propagate all at once. At sufficient forces, the tensile force produced by the dislocation core exceeds the fracture stress of the material, combining kink boundaries into sharp kinks and de-laminating the basal planes of the crystal.
 
-
-## See also
-Terrace ledge kink model
-
-
-## References

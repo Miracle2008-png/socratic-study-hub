@@ -1151,19 +1151,3 @@ Confusingly, the Poynting vector is sometimes called the power flux,  which is a
 
 ## SI radiometry units
 
-
-## See also
-
-
-## Notes
-
-Browne, Michael (2010). Physics for Engineering and Science, 2nd Edition. Schaum Outlines. New York, Toronto: McGraw-Hill Publishing. ISBN 978-0-0716-1399-6.
-Purcell, Edward (2013). Electricity and Magnetism, 3rd Edition. Cambridge, UK: Cambridge University Press. ISBN 978110-7014022.
-
-
-## Further reading
-Stauffer, P.H. (2006). "Flux Flummoxed: A Proposal for Consistent Usage". Ground Water. 44 (2): 125–128. Bibcode:2006GrWat..44..125S. doi:10.1111/j.1745-6584.2006.00197.x. PMID 16556188. S2CID 21812226.
-
-
-## External links
- The dictionary definition of flux at Wiktionary

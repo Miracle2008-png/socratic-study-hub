@@ -80,24 +80,6 @@ In astronomy, atomic diffusion is used to model the stellar atmospheres of chemi
 In machine learning and artificial intelligence, diffusion models, also known as diffusion-based generative models or score-based generative models, are a class of latent variable generative models. The goal of diffusion models is to learn a diffusion process for a given dataset, such that the process can generate new elements that are distributed similarly as the original dataset. Diffusion models were introduced in 2015 as a method to train a model that can sample from a highly complex probability distribution. They used techniques from non-equilibrium thermodynamics, especially diffusion.
 
 
-## History of diffusion in physics
-In the scope of time, diffusion in solids was used long before the theory of diffusion was created. For example, Pliny the Elder had previously described the cementation process, which produces steel from the element iron (Fe) through carbon diffusion. Another example is well known for many centuries, the diffusion of colors of stained glass or earthenware and Chinese ceramics.
-In modern science, the first systematic experimental study of diffusion was performed by Thomas Graham. He studied diffusion in gases, and the main phenomenon was described by him in 1831–1833:
-
-"...gases of different nature, when brought into contact, do not arrange themselves according to their density, the heaviest undermost, and the lighter uppermost, but they spontaneously diffuse, mutually and equally, through each other, and so remain in the intimate state of mixture for any length of time." 
-The measurements of Graham contributed to James Clerk Maxwell deriving, in 1867, the coefficient of diffusion for CO2 in the air. The error rate is less than 5%.
-In 1855, Adolf Fick, the 26-year-old anatomy demonstrator from Zürich, proposed his law of diffusion. He used Graham's research, stating his goal as "the development of a fundamental law, for the operation of diffusion in a single element of space". He asserted a deep analogy between diffusion and conduction of heat or electricity, creating a formalism similar to Fourier's law for heat conduction (1822) and Ohm's law for electric current (1827).
-Robert Boyle demonstrated diffusion in solids in the 17th century by penetration of zinc into a copper coin. Nevertheless, diffusion in solids was not systematically studied until the second part of the 19th century. William Chandler Roberts-Austen, the well-known British metallurgist and former assistant of Thomas Graham studied systematically solid state diffusion on the example of gold in lead in 1896. :
-
-"... My long connection with Graham's researches made it almost a duty to attempt to extend his work on liquid diffusion to metals."
-
-In 1858, Rudolf Clausius introduced the concept of the mean free path. In the same year, James Clerk Maxwell developed the first atomistic theory of transport processes in gases. The modern atomistic theory of diffusion and Brownian motion was developed by Albert Einstein, Marian Smoluchowski and Jean-Baptiste Perrin. Ludwig Boltzmann, in the development of the atomistic backgrounds of the macroscopic transport processes, introduced the Boltzmann equation, which has served mathematics and physics with a source of transport process ideas and concerns for more than 140 years.
-In 1920–1921, George de Hevesy measured self-diffusion using radioisotopes. He studied self-diffusion of radioactive isotopes of lead in the liquid and solid lead.
-Yakov Frenkel (sometimes, Jakov/Jacob Frenkel) proposed, and elaborated in 1926, the idea of diffusion in crystals through local defects (vacancies and interstitial atoms). He concluded, the diffusion process in condensed matter is an ensemble of elementary jumps and quasichemical interactions of particles and defects. He introduced several mechanisms of diffusion and found rate constants from experimental data.
-Sometime later, Carl Wagner and Walter H. Schottky developed Frenkel's ideas about mechanisms of diffusion further. Presently, it is universally recognized that atomic defects are necessary to mediate diffusion in crystals.
-Henry Eyring, with co-authors, applied his theory of absolute reaction rates to Frenkel's quasichemical model of diffusion. The analogy between reaction kinetics and diffusion leads to various nonlinear versions of Fick's law.
-
-
 ## Models
 
 
@@ -4921,8 +4903,3 @@ Kinesis is an animal's non-directional movement activity in response to a stimul
 Trans-cultural diffusion, diffusion of cultural traits across geographical area
 Turbulent diffusion, transport of mass, heat, or momentum within a turbulent fluid
 
-
-## See also
-
-
-## References
