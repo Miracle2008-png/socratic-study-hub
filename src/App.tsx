@@ -135,7 +135,8 @@ const AppContent: React.FC = () => {
   const renderContent = () => {
     const isPremiumFeature = ['upload', 'socratic', 'mindmap', 'visualizer', 'ai_hub', 'essay_grader', 'mock_exam', 'predictor_hub'].includes(activeTab);
     
-    if (isPremiumFeature && freeInsights === 0 && !isPro) {
+    // TEMPORARILY DISABLED PREMIUM BARRIER AS PER USER REQUEST
+    if (false && isPremiumFeature && freeInsights === 0 && !isPro) {
       const featureNames: Record<string, string> = {
         'upload': 'Upload Hub',
         'socratic': 'Socratic Solver',

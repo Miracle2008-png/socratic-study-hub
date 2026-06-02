@@ -310,5 +310,191 @@ $$ u(t) = u_{bias} + K_c \\left[ e(t) + \\frac{1}{\\tau_I} \\int_{0}^{t} e(t) dt
 *   **Feedforward Control**: Measures a disturbance *before* it affects the process and takes preemptive corrective action. Often combined with feedback control.
 *   **Cascade Control**: Uses two controllers; the output of the primary controller acts as the setpoint for a secondary controller, providing faster rejection of disturbances.
 *   **Model Predictive Control (MPC)**: Uses a mathematical model of the process to predict future behavior and optimize the control moves over a specific time horizon. Very common in oil refineries.
+`,
+  'Materials Science and Engineering': `
+# Materials Science and Engineering
+
+Materials science deals with the discovery and design of new materials, with an emphasis on the solid paradigm: metals, ceramics, polymers, and composites.
+
+## Crystal Structures
+
+Metals and many ceramics possess crystalline structures where atoms are arranged in a repeating 3D lattice.
+
+### Common Unit Cells
+*   **Simple Cubic (SC):** Atoms at the 8 corners of a cube. Atomic Packing Factor (APF) = 0.52.
+*   **Body-Centered Cubic (BCC):** Atoms at the 8 corners and 1 at the center (e.g., Iron at room temp, Tungsten). APF = 0.68.
+*   **Face-Centered Cubic (FCC):** Atoms at the 8 corners and 1 at the center of each of the 6 faces (e.g., Aluminum, Copper, Gold). APF = 0.74.
+
+### Bragg's Law
+X-ray diffraction is used to determine crystal structures. Constructive interference occurs when:
+
+$$ n \\lambda = 2d \\sin \\theta $$
+
+Where $\\lambda$ is the X-ray wavelength, $d$ is the interplanar spacing, and $\\theta$ is the diffraction angle.
+
+## Mechanical Properties
+
+The response of a material to applied forces is described by its mechanical properties.
+
+### Stress and Strain
+*   **Engineering Stress ($\\sigma$):** $\\sigma = \\frac{F}{A_0}$
+*   **Engineering Strain ($\\epsilon$):** $\\epsilon = \\frac{\\Delta L}{L_0}$
+
+### Hooke's Law
+In the linear elastic region, stress is proportional to strain:
+
+$$ \\sigma = E \\epsilon $$
+
+Where $E$ is Young's Modulus (modulus of elasticity), a measure of the material's stiffness.
+
+### Yield Strength and Tensile Strength
+*   **Yield Strength ($S_y$):** The stress at which a material begins to deform plastically (permanently).
+*   **Ultimate Tensile Strength (UTS):** The maximum stress a material can withstand before necking and eventual fracture.
+
+## Phase Diagrams
+
+A phase diagram shows the phases present at equilibrium across different temperatures and compositions. 
+
+*   **Eutectic Point:** The lowest melting point of an alloy system, where a liquid transforms directly into two solid phases upon cooling: $L \\rightarrow \\alpha + \\beta$.
+*   **The Lever Rule:** Used to determine the mass fractions of each phase in a two-phase region.
+`,
+  'Electrical Engineering Fundamentals': `
+# Electrical Engineering Fundamentals
+
+Electrical engineering deals with the study, design, and application of equipment, devices, and systems which use electricity, electronics, and electromagnetism.
+
+## Circuit Theory Basics
+
+The fundamental laws governing the relationship between voltage, current, and resistance in electrical circuits.
+
+### Ohm's Law
+The current through a conductor between two points is directly proportional to the voltage across the two points:
+
+$$ V = I R $$
+
+Where $V$ is voltage (Volts), $I$ is current (Amperes), and $R$ is resistance (Ohms).
+
+### Kirchhoff's Circuit Laws
+1.  **Kirchhoff's Current Law (KCL):** The algebraic sum of currents entering a node (junction) is zero. What goes in must come out.
+    $$ \\sum I_{in} = \\sum I_{out} $$
+2.  **Kirchhoff's Voltage Law (KVL):** The algebraic sum of the voltages around any closed loop in a circuit is zero.
+    $$ \\sum V = 0 $$
+
+## AC Circuits and Impedance
+
+In Alternating Current (AC) circuits, the voltage and current vary sinusoidally over time.
+
+### Impedance ($Z$)
+Impedance generalizes resistance to AC circuits, accounting for the phase shift introduced by capacitors and inductors. It is a complex number:
+
+$$ Z = R + jX $$
+
+Where $R$ is resistance and $X$ is reactance.
+
+*   **Inductive Reactance ($X_L$):** $X_L = j\\omega L$
+*   **Capacitive Reactance ($X_C$):** $X_C = \\frac{1}{j\\omega C} = -j \\frac{1}{\\omega C}$
+
+*(Where $\\omega = 2\\pi f$ is the angular frequency).*
+
+### Electrical Power
+In AC circuits, power is split into three components:
+*   **Real Power ($P$):** Power consumed by resistors (Watts). $P = V_{rms} I_{rms} \\cos \\theta$
+*   **Reactive Power ($Q$):** Power oscillating in the electric and magnetic fields (VAR). $Q = V_{rms} I_{rms} \\sin \\theta$
+*   **Apparent Power ($S$):** The vector sum of real and reactive power (VA). $S = \\sqrt{P^2 + Q^2} = V_{rms} I_{rms}$
+
+The **Power Factor (PF)** is the ratio of real power to apparent power ($PF = \\cos \\theta$).
+`,
+  'Civil and Structural Engineering': `
+# Civil and Structural Engineering
+
+Civil engineering deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, and structural components of buildings.
+
+## Statics and Equilibrium
+
+Statics is the branch of mechanics that is concerned with the analysis of loads (force and torque, or "moment") acting on physical systems that do not experience an acceleration.
+
+For a structure to be in static equilibrium, the sum of all forces and moments must be zero in all directions:
+
+$$ \\sum F_x = 0 \\quad \\sum F_y = 0 \\quad \\sum F_z = 0 $$
+$$ \\sum M_x = 0 \\quad \\sum M_y = 0 \\quad \\sum M_z = 0 $$
+
+### Types of Supports
+*   **Roller Support:** Can resist vertical forces but allows horizontal movement and rotation (1 reaction).
+*   **Pinned Support:** Resists both vertical and horizontal forces but allows rotation (2 reactions).
+*   **Fixed Support:** Resists vertical forces, horizontal forces, and rotation (3 reactions).
+
+## Mechanics of Materials
+
+Once external forces are determined via statics, engineers calculate the internal stresses and strains to ensure the material will not fail.
+
+### Bending of Beams
+When a load is applied perpendicular to a beam's longitudinal axis, it bends, creating compression on one side and tension on the other.
+
+The bending stress ($\\sigma$) at a distance $y$ from the neutral axis is given by the flexure formula:
+
+$$ \\sigma = \\frac{M y}{I} $$
+
+Where $M$ is the internal bending moment and $I$ is the area moment of inertia of the cross-section.
+
+### Column Buckling
+Columns are vertical members subjected to compressive axial loads. If they are long and slender, they may fail by buckling before the material's yield stress is reached. The critical buckling load ($P_{cr}$) is calculated using **Euler's Formula**:
+
+$$ P_{cr} = \\frac{\\pi^2 E I}{(K L)^2} $$
+
+Where $L$ is the unsupported length and $K$ is the column effective length factor.
+
+## Geotechnical Engineering
+
+Deals with the engineering behavior of earth materials (soil and rock). A critical concept is the **Effective Stress Principle** (Terzaghi's Principle):
+
+$$ \\sigma' = \\sigma - u $$
+
+Where $\\sigma'$ is the effective stress (carried by the soil skeleton), $\\sigma$ is the total stress, and $u$ is the pore water pressure. Soil strength and settlement are governed by effective stress, not total stress.
+`,
+  'Software Engineering Principles': `
+# Software Engineering Principles
+
+Software engineering is the systematic application of engineering approaches to the development of software. It goes beyond mere coding to include requirements gathering, architecture, testing, and deployment.
+
+## Software Development Life Cycles (SDLC)
+
+*   **Waterfall Model:** A linear, sequential approach where each phase (Requirements, Design, Implementation, Testing, Deployment) must be completed before the next begins. Good for highly constrained systems, poor for changing requirements.
+*   **Agile Methodology:** An iterative approach that emphasizes flexibility, continuous delivery, and customer collaboration. Development happens in short "sprints" (usually 1-4 weeks).
+
+## Design Patterns
+
+Design patterns are typical solutions to commonly occurring problems in software design. They are templates that can be applied to real-world coding issues.
+
+### Creational Patterns
+Deal with object creation mechanisms (e.g., Singleton, Factory Method, Builder).
+*   *Singleton:* Ensures a class has only one instance and provides a global point of access to it.
+
+### Structural Patterns
+Deal with object composition (e.g., Adapter, Decorator, Facade).
+*   *Adapter:* Allows objects with incompatible interfaces to collaborate.
+
+### Behavioral Patterns
+Deal with communication between objects (e.g., Observer, Strategy, Command).
+*   *Observer:* Defines a one-to-many dependency so that when one object changes state, all its dependents are notified and updated automatically.
+
+## SOLID Principles
+
+A set of five design principles intended to make software designs more understandable, flexible, and maintainable.
+
+1.  **S - Single Responsibility Principle:** A class should have one, and only one, reason to change.
+2.  **O - Open/Closed Principle:** Software entities should be open for extension, but closed for modification.
+3.  **L - Liskov Substitution Principle:** Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.
+4.  **I - Interface Segregation Principle:** Many client-specific interfaces are better than one general-purpose interface.
+5.  **D - Dependency Inversion Principle:** Depend upon abstractions, not concretions. High-level modules should not depend on low-level modules.
+
+## Big-O Notation
+
+A mathematical notation used to describe the limiting behavior of an algorithm, specifically regarding time (execution speed) or space (memory usage) complexity as the input size ($N$) grows.
+
+*   $O(1)$: Constant time (e.g., accessing an array element by index).
+*   $O(\\log N)$: Logarithmic time (e.g., binary search).
+*   $O(N)$: Linear time (e.g., iterating through an array).
+*   $O(N \\log N)$: Linearithmic time (e.g., Merge Sort, Quick Sort).
+*   $O(N^2)$: Quadratic time (e.g., Bubble Sort, nested loops).
 `
 };
