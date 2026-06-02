@@ -164,8 +164,8 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId }) => {
     return (
       <div className="topic-module-placeholder luxury-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '400px' }}>
         <Zap size={48} className="nlp-pulse" style={{ color: 'var(--color-accent)', marginBottom: 16 }} />
-        <h2>Loading Massive Textbook...</h2>
-        <p style={{color: 'var(--color-text-secondary)'}}>Compiling 35+ pages of engineering concepts</p>
+        <h2>Loading Module...</h2>
+        <p style={{color: 'var(--color-text-secondary)'}}>Preparing topic materials and exercises</p>
       </div>
     );
   }
