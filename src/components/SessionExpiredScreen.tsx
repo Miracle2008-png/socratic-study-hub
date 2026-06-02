@@ -19,6 +19,8 @@ export const SessionExpiredScreen: React.FC<SessionExpiredScreenProps> = ({ onLo
         <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 24, marginBottom: 12 }}>Session Expired</h2>
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: 32, lineHeight: 1.5 }}>
           You've been inactive for 30 minutes. For your security, your session has been locked and you have been signed out.
+          <br /><br />
+          <strong style={{ color: 'var(--color-text-primary)' }}>Don't worry — all your study progress, XP, and streaks have been safely automatically saved.</strong>
         </p>
         <button 
           onClick={onLoginClick}
