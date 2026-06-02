@@ -8,7 +8,7 @@ import 'katex/dist/katex.min.css';
 import {
   BookOpen, Clock, ChevronDown, ChevronRight, Copy, Check,
   Lightbulb, HelpCircle, Menu, X, Download, Star,
-  ArrowRight, Bookmark, Eye, List, Zap, LayoutList, FileText, CheckCircle, Plus, Network, Maximize
+  ArrowRight, Bookmark, Eye, List, Zap, LayoutList, FileText, CheckCircle, Plus, Network, Maximize, Lock
 } from 'lucide-react';
 import { fetchTopicContent } from '../data/topicCompiler';
 import { TopicContent } from '../data/topicContent';
@@ -593,7 +593,7 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId }) => {
                       disabled={isLocked}
                     >
                       {s.heading}
-                      {isLocked && <span className="lock-icon">🔒</span>}
+                      {isLocked && <Lock size={14} className="lock-icon" style={{ color: 'var(--color-text-muted)' }} />}
                     </button>
                   );
                 })}
