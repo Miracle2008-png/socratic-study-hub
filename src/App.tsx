@@ -28,6 +28,7 @@ import { GamificationProvider, useGamification } from './context/GamificationCon
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { LoginScreen } from './components/LoginScreen';
 import { UpdatePasswordScreen } from './components/UpdatePasswordScreen';
+import { SessionExpiredScreen } from './components/SessionExpiredScreen';
 import { supabase } from './utils/supabase';
 import { StudyProgressProvider, useStudyProgress } from './context/StudyProgressContext';
 import { Search, Bell, Settings, User, X, Check, Activity, Clock, Sparkles, Flame, Trophy, Calculator, Menu, ChevronDown, ShieldAlert } from 'lucide-react';
@@ -48,6 +49,7 @@ const AppContent: React.FC = () => {
   const [isAiTutorOpen, setIsAiTutorOpen] = useState(false);
   const [isCalculatorOpen, setIsCalculatorOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSessionExpired, setIsSessionExpired] = useState(false);
 
   // Settings State
   const [studyGoal, setStudyGoal] = useState(25);
@@ -125,6 +127,33 @@ const AppContent: React.FC = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Inactivity Tracker
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    const INACTIVITY_LIMIT = 30 * 60 * 1000; // 30 minutes
+
+    const resetTimer = () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      if (!isSessionExpired) {
+        timeoutRef.current = setTimeout(() => {
+          setIsSessionExpired(true);
+          signOut(); // Force sign out as requested (Option B)
+        }, INACTIVITY_LIMIT);
+      }
+    };
+
+    resetTimer();
+    const events = ['mousemove', 'keydown', 'click', 'scroll', 'touchstart'];
+    
+    events.forEach(event => window.addEventListener(event, resetTimer));
+
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      events.forEach(event => window.removeEventListener(event, resetTimer));
+    };
+  }, [isSessionExpired, signOut]);
+
   const handleTabChange = (tabId: string) => {
     closeTopic();
     setActiveTab(tabId);
@@ -133,6 +162,17 @@ const AppContent: React.FC = () => {
   };
 
   const renderContent = () => {
+    if (isSessionExpired) {
+      return (
+        <SessionExpiredScreen 
+          onLoginClick={() => {
+            setIsSessionExpired(false);
+            setShowLoginModal(true);
+          }} 
+        />
+      );
+    }
+
     const isPremiumFeature = ['upload', 'socratic', 'mindmap', 'visualizer', 'ai_hub', 'essay_grader', 'mock_exam', 'predictor_hub'].includes(activeTab);
     
     // TEMPORARILY DISABLED PREMIUM BARRIER AS PER USER REQUEST
