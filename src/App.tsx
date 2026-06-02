@@ -1,28 +1,29 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, Suspense, lazy } from 'react';
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
-import FocusMode from './components/FocusMode';
-import StudyPlanner from './components/StudyPlanner';
 import SubjectHub from './components/SubjectHub';
-import FormulaBank from './components/FormulaBank';
 import TopicModule from './components/TopicModule';
-import { DerivationsHub } from './components/DerivationsHub';
-import SpacedRepetition from './components/SpacedRepetition';
-import Visualizer3D from './components/Visualizer3D';
-import SocraticSolver from './components/SocraticSolver';
-import UploadHub from './components/UploadHub';
-import MindMap from './components/MindMap';
-import AiHub from './components/AiHub';
-import { EssayGrader } from './components/EssayGrader';
-import { MockExam } from './components/MockExam';
-import { PredictorHub } from './components/PredictorHub';
-import { SatDashboard } from './components/SatDashboard';
-import { SatMockExam } from './components/SatMockExam';
-import Grapher2D from './components/Grapher2D';
 import { GlobalSearch } from './components/GlobalSearch';
 import AiTutorSidebar from './components/AiTutorSidebar';
 import { AdvancedCalculator } from './components/AdvancedCalculator';
-import { CalculusSolver } from './components/CalculusSolver';
+
+const FocusMode = lazy(() => import('./components/FocusMode'));
+const StudyPlanner = lazy(() => import('./components/StudyPlanner'));
+const FormulaBank = lazy(() => import('./components/FormulaBank'));
+const DerivationsHub = lazy(() => import('./components/DerivationsHub').then(m => ({ default: m.DerivationsHub })));
+const SpacedRepetition = lazy(() => import('./components/SpacedRepetition'));
+const Visualizer3D = lazy(() => import('./components/Visualizer3D'));
+const SocraticSolver = lazy(() => import('./components/SocraticSolver'));
+const UploadHub = lazy(() => import('./components/UploadHub'));
+const MindMap = lazy(() => import('./components/MindMap'));
+const AiHub = lazy(() => import('./components/AiHub'));
+const EssayGrader = lazy(() => import('./components/EssayGrader').then(m => ({ default: m.EssayGrader })));
+const MockExam = lazy(() => import('./components/MockExam').then(m => ({ default: m.MockExam })));
+const PredictorHub = lazy(() => import('./components/PredictorHub').then(m => ({ default: m.PredictorHub })));
+const SatDashboard = lazy(() => import('./components/SatDashboard').then(m => ({ default: m.SatDashboard })));
+const SatMockExam = lazy(() => import('./components/SatMockExam').then(m => ({ default: m.SatMockExam })));
+const Grapher2D = lazy(() => import('./components/Grapher2D'));
+const CalculusSolver = lazy(() => import('./components/CalculusSolver').then(m => ({ default: m.CalculusSolver })));
 import { GamificationProvider, useGamification } from './context/GamificationContext';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { LoginScreen } from './components/LoginScreen';
@@ -398,7 +399,9 @@ const AppContent: React.FC = () => {
               <span className="breadcrumb-current">{activeTopic.replace(/_/g, ' ')}</span>
             </div>
           )}
-          {renderContent()}
+          <Suspense fallback={<div style={{ display: 'flex', justifyContent: 'center', padding: '100px', color: 'var(--color-text-muted)' }}>Loading...</div>}>
+            {renderContent()}
+          </Suspense>
         </div>
       </main>
 
