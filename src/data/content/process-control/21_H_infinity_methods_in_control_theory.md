@@ -1,0 +1,529 @@
+# H-infinity methods in control theory
+
+H∞ (i.e. "H-infinity") methods are used in control theory to synthesize controllers to achieve stabilization with guaranteed performance.  To use H∞ methods, a control designer expresses the control problem as a mathematical optimization problem and then finds the controller that solves this optimization.  H∞ techniques have the advantage over classical control techniques in that H∞ techniques are readily applicable to problems involving multivariate systems with cross-coupling between channels; disadvantages of H∞ techniques include the level of mathematical understanding needed to apply them successfully and the need for a reasonably good model of the system to be controlled.  It is important to keep in mind that the resulting controller is only optimal with respect to the prescribed cost function and does not necessarily represent the best controller in terms of the usual performance measures used to evaluate controllers such as settling time, energy expended, etc. Also, non-linear constraints such as saturation are generally not well-handled. These methods were introduced into control theory in the late 1970s-early 1980s
+by George Zames (sensitivity minimization), J. William Helton (broadband matching),
+and Allen Tannenbaum (gain margin optimization).
+The phrase H∞ control comes from the name of the mathematical space over which the optimization takes place: H∞ is the Hardy space of matrix-valued functions that are analytic and bounded in the open right-half of the complex plane defined by Re(s) > 0; the H∞ norm is the supremum singular value of the matrix over that space.   In the case of a scalar-valued function, the elements of the Hardy space that extend continuously to the boundary and are continuous at infinity is the disk algebra.  For a matrix-valued function, the norm can be interpreted as a maximum gain in any direction and at any frequency; for SISO systems, this is effectively the maximum magnitude of the frequency response.  
+H∞ techniques can be used to minimize the closed loop impact of a perturbation: depending on the problem formulation, the impact will either be measured in terms of stabilization or performance.  Simultaneously optimizing robust performance and robust stabilization is difficult.  One method that comes close to achieving this is H∞ loop-shaping, which allows the control designer to apply classical loop-shaping concepts to the multivariable frequency response to get good robust performance, and then optimizes the response near the system bandwidth to achieve good robust stabilization.
+Commercial software is available to support H∞ controller synthesis.
+
+
+## Problem formulation
+First, the process has to be represented according to the following standard configuration:
+
+The plant P has two inputs, the exogenous input w, that includes reference signal and disturbances, and the manipulated variables u. There are two outputs, the error signals z that we want to minimize, and the measured variables v, that we use to control the system. v is used in K to calculate the manipulated variables u. Notice that all these are generally vectors, whereas P and K are matrices.
+In formulae, the system is:
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  z
+                
+              
+              
+                
+                  v
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          P
+        
+        (
+        s
+        )
+        
+        
+          
+            [
+            
+              
+                
+                  w
+                
+              
+              
+                
+                  u
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  
+                    P
+                    
+                      11
+                    
+                  
+                  (
+                  s
+                  )
+                
+                
+                  
+                    P
+                    
+                      12
+                    
+                  
+                  (
+                  s
+                  )
+                
+              
+              
+                
+                  
+                    P
+                    
+                      21
+                    
+                  
+                  (
+                  s
+                  )
+                
+                
+                  
+                    P
+                    
+                      22
+                    
+                  
+                  (
+                  s
+                  )
+                
+              
+            
+            ]
+          
+        
+        
+        
+          
+            [
+            
+              
+                
+                  w
+                
+              
+              
+                
+                  u
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\begin{bmatrix}z\\v\end{bmatrix}}=\mathbf {P} (s)\,{\begin{bmatrix}w\\u\end{bmatrix}}={\begin{bmatrix}P_{11}(s)&P_{12}(s)\\P_{21}(s)&P_{22}(s)\end{bmatrix}}\,{\begin{bmatrix}w\\u\end{bmatrix}}}
+  
+
+  
+    
+      
+        u
+        =
+        
+          K
+        
+        (
+        s
+        )
+        
+        v
+      
+    
+    {\displaystyle u=\mathbf {K} (s)\,v}
+  
+
+It is therefore possible to express the dependency of z on w as:
+
+  
+    
+      
+        z
+        =
+        
+          F
+          
+            ℓ
+          
+        
+        (
+        
+          P
+        
+        ,
+        
+          K
+        
+        )
+        
+        w
+      
+    
+    {\displaystyle z=F_{\ell }(\mathbf {P} ,\mathbf {K} )\,w}
+  
+
+Called the lower linear fractional transformation,  
+  
+    
+      
+        
+          F
+          
+            ℓ
+          
+        
+      
+    
+    {\displaystyle F_{\ell }}
+  
+ is defined (the subscript comes from lower):
+
+  
+    
+      
+        
+          F
+          
+            ℓ
+          
+        
+        (
+        
+          P
+        
+        ,
+        
+          K
+        
+        )
+        =
+        
+          P
+          
+            11
+          
+        
+        +
+        
+          P
+          
+            12
+          
+        
+        
+        
+          K
+        
+        
+        (
+        I
+        −
+        
+          P
+          
+            22
+          
+        
+        
+        
+          K
+        
+        
+          )
+          
+            −
+            1
+          
+        
+        
+        
+          P
+          
+            21
+          
+        
+      
+    
+    {\displaystyle F_{\ell }(\mathbf {P} ,\mathbf {K} )=P_{11}+P_{12}\,\mathbf {K} \,(I-P_{22}\,\mathbf {K} )^{-1}\,P_{21}}
+  
+
+Therefore, the objective of 
+  
+    
+      
+        
+          
+            
+              H
+            
+          
+          
+            ∞
+          
+        
+      
+    
+    {\displaystyle {\mathcal {H}}_{\infty }}
+  
+ control design is to find a controller 
+  
+    
+      
+        
+          K
+        
+      
+    
+    {\displaystyle \mathbf {K} }
+  
+ such that 
+  
+    
+      
+        
+          F
+          
+            ℓ
+          
+        
+        (
+        
+          P
+        
+        ,
+        
+          K
+        
+        )
+      
+    
+    {\displaystyle F_{\ell }(\mathbf {P} ,\mathbf {K} )}
+  
+ is minimised according to the 
+  
+    
+      
+        
+          
+            
+              H
+            
+          
+          
+            ∞
+          
+        
+      
+    
+    {\displaystyle {\mathcal {H}}_{\infty }}
+  
+ norm. The same definition applies to 
+  
+    
+      
+        
+          
+            
+              H
+            
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\mathcal {H}}_{2}}
+  
+ control design. The infinity norm of the transfer function matrix 
+  
+    
+      
+        
+          F
+          
+            ℓ
+          
+        
+        (
+        
+          P
+        
+        ,
+        
+          K
+        
+        )
+      
+    
+    {\displaystyle F_{\ell }(\mathbf {P} ,\mathbf {K} )}
+  
+ is defined as:
+
+  
+    
+      
+        
+          |
+        
+        
+          |
+        
+        
+          F
+          
+            ℓ
+          
+        
+        (
+        
+          P
+        
+        ,
+        
+          K
+        
+        )
+        
+          |
+        
+        
+          
+            |
+          
+          
+            ∞
+          
+        
+        =
+        
+          sup
+          
+            ω
+          
+        
+        
+          
+            
+              σ
+              ¯
+            
+          
+        
+        (
+        
+          F
+          
+            ℓ
+          
+        
+        (
+        
+          P
+        
+        ,
+        
+          K
+        
+        )
+        (
+        j
+        ω
+        )
+        )
+      
+    
+    {\displaystyle ||F_{\ell }(\mathbf {P} ,\mathbf {K} )||_{\infty }=\sup _{\omega }{\bar {\sigma }}(F_{\ell }(\mathbf {P} ,\mathbf {K} )(j\omega ))}
+  
+
+where 
+  
+    
+      
+        
+          
+            
+              σ
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {\sigma }}}
+  
+ is the maximum singular value of the matrix 
+  
+    
+      
+        
+          F
+          
+            ℓ
+          
+        
+        (
+        
+          P
+        
+        ,
+        
+          K
+        
+        )
+        (
+        j
+        ω
+        )
+      
+    
+    {\displaystyle F_{\ell }(\mathbf {P} ,\mathbf {K} )(j\omega )}
+  
+.
+The achievable H∞ norm of the closed loop system is mainly given through the matrix D11 (when the system P is given in the form (A, B1, B2, C1, C2, D11, D12, D22, D21)). There are several ways to come to an H∞ controller:
+
+A Youla-Kucera parametrization of the closed loop often leads to very high-order controller.
+Riccati-based approaches solve two Riccati equations to find the controller, but require several simplifying assumptions.
+An optimization-based reformulation of the Riccati equation uses linear matrix inequalities and requires fewer assumptions.
+
+
+## See also
+Blaschke product
+Hardy space
+H square
+H-infinity loop-shaping
+Linear-quadratic-Gaussian control (LQG)
+Rosenbrock system matrix
+
+
+## References
+
+
+## Bibliography

@@ -1,26 +1,8 @@
 const fs = require('fs');
-const path = require('path');
+let c = fs.readFileSync('src/data/formulas.ts', 'utf8');
 
-function fix(dir) {
-  fs.readdirSync(dir).forEach(file => {
-    const fullPath = path.join(dir, file);
-    if (fs.statSync(fullPath).isDirectory()) {
-      fix(fullPath);
-    } else if (fullPath.endsWith('.tsx') || fullPath.endsWith('.ts')) {
-      let content = fs.readFileSync(fullPath, 'utf8');
-      
-      // Fix string escaping that was duplicated
-      let newContent = content
-        .replace(/\\\\`/g, '`')
-        .replace(/\\\\\$/g, '$')
-        .replace(/\\\\'/g, "'");
+c = c.replace(/name:\s*'([^']+)\\'([^']+)'/g, 'name: "$1\'$2"');
+c = c.replace(/name:\s*"([^"]+)\\'([^"]+)"/g, 'name: "$1\'$2"');
 
-      if (content !== newContent) {
-        fs.writeFileSync(fullPath, newContent);
-        console.log('Fixed', fullPath);
-      }
-    }
-  });
-}
-
-fix('./src');
+fs.writeFileSync('src/data/formulas.ts', c);
+console.log('Fixed quotes in formulas.ts');

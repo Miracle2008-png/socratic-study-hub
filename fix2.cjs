@@ -1,10 +1,8 @@
 const fs = require('fs');
-const path = require('path');
-const dir = 'src/components';
-const files = ['FormulaBank.tsx', 'InorganicModule.tsx', 'ThermoModule.tsx', 'CalculusModule.tsx', 'AlgebraModule.tsx'];
-files.forEach(file => {
-  const p = path.join(dir, file);
-  let content = fs.readFileSync(p, 'utf8');
-  content = content.replace(/\\`/g, '`').replace(/\\\$\{/g, '${');
-  fs.writeFileSync(p, content);
-});
+let c = fs.readFileSync('src/data/formulas.ts', 'utf8');
+
+// Replace \\' with just \' or simple apostrophe if inside a description/name
+c = c.replace(/\\\\'/g, "'");
+
+fs.writeFileSync('src/data/formulas.ts', c);
+console.log('Fixed double backslashes in formulas.ts');

@@ -1,0 +1,73 @@
+# Reflexive control
+
+Reflexive control is control someone has over their opponent's decisions by imposing on them assumptions that change the way they act.
+Methods of reflexive control are widely used in a variety of fields: advertising, public relations, military art, etc. An example of such a strategy could be a card shark deliberately losing the first hands in the game, systematic diversionary attacks on an unimportant area of combat, etc..
+
+
+## Introduction
+As defined by Soviet scholar Vladimir Lefebvre reflexive control is a process in which one adversary hands over to the other the basis for decision-making. In other words, there is a substitution of motivation factors of the enemy in order to encourage him to take disadvantageous decisions.
+Professor G. Smolyan believes that the key point of reflexive control is implicitly forcing a subject to choose a desired result. As an aphoristic example of reflexive manipulation we can recall an episode from "Uncle Remus's Tales" in which Brother Rabbit eludes Brother Fox by asking:
+
+Whatever you do don't throw me into the briar patch
+The oldest of those literary villains who specialized in reflexive control is considered to be the biblical serpent who provoked Eve to taste the forbidden fruit. The category of typical provocateurs can also include one of the famous characters of the Swedish writer Astrid Lindgren, who terrorized the housewife Fröken Bock with a simple question:
+
+Have you stopped drinking cognac in the morning? Yes or no?
+Individual techniques of reflexive control called "stratagems" have occupied an important place in the history of military art since ancient times. For example, Sun Tzu put in the title of the first chapter of one of his treatises the statement "War is the way of deception," thus defining the craft of warfare as the art of deception.
+The preconditions for the actual emergence of the theory of reflexive control can be found in the Soviet military literature of the mid-20th century; four main stages are distinguished in the process of its improvement:
+
+from the early 1960s to the late 1970s: research,
+late 1970s to early 1990s: practice-oriented,
+from the beginning to the middle of the 1990s: psychological and pedagogical,
+since the late 1990s: psychosocial.
+Among the most authoritative scientists who dealt with the tasks of reflexive control, in addition to V. Lefebvre, the works of D. Pospelov, V. Burkov, V. Lepsky, G. Shchedrovitsky and others are noted. In addition to them, the artistic aspects of the subject of reflexive control were reflected in the works of some major writers, for example, V. Pelevin.
+
+
+## Military application
+
+
+### General provisions
+
+A formally approved terminology of reflexive control did not exist in the military art in the past; nevertheless, its tools were intuitively recognized and were actively used in attempts to calculate the actions of an adversary or to create an erroneous impression of him/herself.
+According to some Russian military experts, applied aspects of reflexive control, having geopolitical significance, are an effective tool for conducting information warfare and can have significant advantages over traditional methods of using military means. Exploiting moral stereotypes of behavior, psychological factors, personal information about the command personnel (biographical data, habits, etc.) reflexive control makes it possible to increase the chances of achieving victory, but it is noted that this tactic requires information about the enemy with a high degree of detail and quality.
+Among the tools of reflexive control are also listed camouflage (at all levels), disinformation, provocation, blackmail, compromising, etc., whose vector of action is aimed more at the hard to grasp and subjectively perceived elements of "military art" than at the more objective concepts of "military science". Modern computerization can make it difficult to use reflexive control methods because their application is easily revealed by mathematical modeling. Nevertheless, one cannot dismiss the existence of a broad class of exceptions where machine intelligence may lack an intuitive understanding of real reality.
+In reviewing Russian research on the use of the arsenal of reflexive control for military purposes, American scholar T. L. Thomas singled out the work of Colonel S. A. Komov as the most productive military theorist in this area. In his publications, Komov made extensive use of developments from the field of reflexive management under the name of "intellectual methods of information warfare," highlighting the following main elements.:
+
+Distraction through a real or perceived threat to one of the enemy's key positions (on the flanks, in the rear, etc.) during preparations for military action,
+overloading through supplying the enemy with large volumes of self-contradictory information,
+paralysis, creating the illusion of pinpointed threats to vital interests or the most vulnerable locations,
+exhaustion, forcing the adversary to expend resources to perform unproductive activities,
+deception, provoking the enemy to redeploy forces to the threatened area in preparation for military action,
+splitting, forcing the enemy to act against the interests of his allies,
+appeasement, by lowering vigilance and creating the illusion that routine training, rather than preparations for offensive actions, are taking place,
+intimidation, by creating the appearance of invincible superiority,
+provocation, through the imposition of an unfavorable scenario of action,
+suggestion, through the presentation of information material that influences legally, morally, ideologically or in other spheres,
+pressure, through the presentation of information material that discredits the government in the eyes of the population.
+Another domestic researcher who attracted interest abroad was Professor F. Chausov, who formulated the following principles of reflexive management:
+
+principle of purposefulness — the process should be goal-oriented, involving the full range of necessary measures of reflexive management,
+principle of actualization - there should be an "updating" of planning, providing a fairly complete picture of the intellectual potential of the command and staff, especially in situations related to the global information space,
+principle of conformity - mutual consistency of goals, place, time and methods of reflexive management must be observed,
+simulation principle — one should not forget about forecasting and modeling the actions and states of the opposing side during the execution of reflexive control procedures,
+principle of anticipation - current events must be anticipated.
+In addition, when using reflexive management, Chausov gave an assessment of risk, the essence of which boils down to the danger of making a mistake if you misjudge the consequences. With this approach, the maximum risk would be if the adversary unravels the plan himself.
+
+One well-known example of the effective use of the theory of reflexive control was the disinformation work of the Soviet secret services to create an exaggerated impression on the American side of the shock potential of Soviet nuclear weapons. To this end, fake models of intercontinental ballistic missiles were developed for participation in Red Square parades, and their appearance was immediately reflected in the reports of foreign attachés to their superiors. The next stage was to provide indirect evidence of the real existence of these missile systems, which would then divert the resources of foreign developers to unsuccessful attempts to reproduce the allegedly "new" technology.
+Similarly, British intelligence conducted disinformation support for the Allied landings in Sicily, codenamed Operation Mincemeat. For this purpose, a dead body dressed as a British serviceman was planted in the sight of the Reich's special services with a set of skilfully fabricated documents describing an alleged British landing operation in the Peloponnese and Sardinia. Judging by these plans, the informational screen for this landing was to be demonstrative preparations for a fake attack on Sicily. The German leadership carried out a set of works to strengthen the Greek coast, redeployed there a tank division, but quite unexpectedly for them the main blow was struck in Sicily.
+Many Russian writers believe that another textbook example of reflexive control is the American Strategic Defense Initiative program, which forced the Soviet Union to spend significant resources to develop a similar space system.
+According to a number of non-Russian researchers, manipulative methods from the field of reflexive control form the basis of Russia's new concept of military action in the 21st century, which in the West has been called "New Generation Warfare". At the same time, some publications have been critical of the applied aspects of this theory, and it has even been called pseudoscientific.
+
+
+## References
+
+
+## Bibliography
+Thomas, Timothy L. (2004). "Russia's Reflexive Control Theory and the Military". Journal of Slavic Military Studies. 17 (2). Taylor & Francis: 237–256. doi:10.1080/13518040490450529. ISSN 1351-8046. S2CID 15779122.
+Денисов А. А., Денисова Е. В. Краткий очерк основ теории управляемой конфронтации (рус.) // Информационные войны : журнал. — 2014. — Т. 29, No. 1. — С. 24–33. — ISSN 1996-4544
+Лепский В. Е. Технологии управления в информационных войнах (от классики к постнеклассике). — Москва: Когито-Центр, 2016. — С. 160. — ISBN 978-5-89353-499-3
+Нургалеева Л. В. Проблема рефлексивного управления как аспект современной коммуникативной культуры (рус.) // Вестник Томского государственного университета : журнал. — 2013. — Т. 10, No. 2.
+Раскин А. В., Тарасов И. В. Рефлексивное управление как технология информационного воздействия (рус.) // Информационные войны : журнал. — 2014. — Т. 29, No. 2. — С. 15–17. — ISSN 1996-4544
+Чепиницкая П. Р. Технологии социальной регуляции в рефлексивном управлении российской зарубежной диаспорой (рус.) // Теория и практика общественного развития : журнал. — 2011. — No. 3.
+Jainter M., Kantola H. Reflexive Control in Cyber Space (англ.) // Academic Conferences International Limited. — 2016. — Июль. — С. 155–162.
+Kasapoglu C. Russia's Renewed Military Thinking: Non-Linear Warfare and Reflexive Control (англ.) // Research Division, NATO Defence College : Research Paper. — 2015. — Ноябрь (No. 121). — С. 1–12. — ISSN 2076-0949
+Thomas T. Psycho Viruses and Reflexive Control: Russian Theories of Information-Psychological War // Information at War: From China's Three Warfares to NATO's Narratives. — London: Legatum Institute, 2015. — Vol. September. — P. 16–21. — (Beyond Propaganda). — ISBN 978-1-907409-93-6

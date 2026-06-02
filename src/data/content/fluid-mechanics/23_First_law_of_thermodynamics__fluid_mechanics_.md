@@ -1,0 +1,913 @@
+# First law of thermodynamics (fluid mechanics)
+
+In physics, the first law of thermodynamics is an expression of the conservation of total energy of a system. The increase of the energy of a system is equal to the sum of work done on the system and the heat added to that system:
+
+  
+    
+      
+        d
+        
+          E
+          
+            t
+          
+        
+        =
+        d
+        Q
+        +
+        d
+        W
+      
+    
+    {\displaystyle dE_{t}=dQ+dW}
+  
+
+where
+
+  
+    
+      
+        
+          E
+          
+            t
+          
+        
+      
+    
+    {\displaystyle E_{t}}
+  
+ is the total energy of a system.
+
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+ is the work done on it.
+
+  
+    
+      
+        Q
+      
+    
+    {\displaystyle Q}
+  
+ is the heat added to that system.
+In fluid mechanics, the first law of thermodynamics takes the following form:
+
+  
+    
+      
+        
+          
+            
+              D
+              
+                E
+                
+                  t
+                
+              
+            
+            
+              D
+              t
+            
+          
+        
+        =
+        
+          
+            
+              D
+              W
+            
+            
+              D
+              t
+            
+          
+        
+        +
+        
+          
+            
+              D
+              Q
+            
+            
+              D
+              t
+            
+          
+        
+        →
+        
+          
+            
+              D
+              
+                E
+                
+                  t
+                
+              
+            
+            
+              D
+              t
+            
+          
+        
+        =
+        ∇
+        ⋅
+        (
+        
+          
+            σ
+          
+          ⋅
+          v
+        
+        )
+        −
+        ∇
+        ⋅
+        
+          
+            q
+          
+        
+      
+    
+    {\displaystyle {\frac {DE_{t}}{Dt}}={\frac {DW}{Dt}}+{\frac {DQ}{Dt}}\to {\frac {DE_{t}}{Dt}}=\nabla \cdot ({\mathbf {\sigma } \cdot v})-\nabla \cdot {\mathbf {q} }}
+  
+
+where
+
+  
+    
+      
+        
+          σ
+        
+      
+    
+    {\displaystyle \mathbf {\sigma } }
+  
+ is the  Cauchy stress tensor.
+
+  
+    
+      
+        
+          v
+        
+      
+    
+    {\displaystyle \mathbf {v} }
+  
+ is the flow velocity.
+and 
+  
+    
+      
+        
+          q
+        
+      
+    
+    {\displaystyle \mathbf {q} }
+  
+ is the heat flux vector.
+Because it expresses conservation of total energy, this is sometimes referred to as the energy balance equation of continuous media. The first law is used to derive the non-conservation form of the Navier–Stokes equations.
+
+
+## Note
+
+  
+    
+      
+        
+          
+            σ
+          
+        
+        =
+        −
+        p
+        
+          
+            I
+          
+        
+        +
+        
+          
+            T
+          
+        
+      
+    
+    {\displaystyle {\mathbf {\sigma } }=-p{\mathbf {I} }+{\mathbf {T} }}
+  
+
+Where
+
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ is the pressure
+
+  
+    
+      
+        
+          I
+        
+      
+    
+    {\displaystyle \mathbf {I} }
+  
+ is the identity matrix
+
+  
+    
+      
+        
+          T
+        
+      
+    
+    {\displaystyle \mathbf {T} }
+  
+ is the deviatoric stress tensor
+That is, pulling is positive stress and pushing is negative stress.
+
+
+## Compressible fluid
+For a compressible fluid the left hand side of equation becomes:
+
+  
+    
+      
+        
+          
+            
+              D
+              
+                E
+                
+                  t
+                
+              
+            
+            
+              D
+              t
+            
+          
+        
+        =
+        
+          
+            
+              ∂
+              E
+            
+            
+              ∂
+              t
+            
+          
+        
+        +
+        ∇
+        ⋅
+        (
+        E
+        
+          v
+        
+        )
+      
+    
+    {\displaystyle {\frac {DE_{t}}{Dt}}={\frac {\partial E}{\partial t}}+\nabla \cdot (E\mathbf {v} )}
+  
+
+because in general
+
+  
+    
+      
+        ∇
+        ⋅
+        
+          v
+        
+        ≠
+        0.
+      
+    
+    {\displaystyle \nabla \cdot \mathbf {v} \neq 0.}
+  
+
+
+## Integral form
+
+  
+    
+      
+        
+          ∫
+          
+            V
+          
+        
+        
+          
+            
+              ∂
+              E
+            
+            
+              ∂
+              t
+            
+          
+        
+        
+        d
+        V
+        =
+        −
+        
+          ∮
+          
+            ∂
+            V
+          
+        
+        E
+        
+          
+            v
+          
+        
+        ⋅
+        d
+        
+          
+            A
+          
+        
+        +
+        
+          ∮
+          
+            ∂
+            V
+          
+        
+        (
+        
+          
+            σ
+          
+          ⋅
+          v
+        
+        )
+        ⋅
+        d
+        
+          
+            A
+          
+        
+        −
+        
+          ∮
+          
+            ∂
+            V
+          
+        
+        
+          
+            q
+          
+        
+        ⋅
+        d
+        
+          
+            A
+          
+        
+      
+    
+    {\displaystyle \int _{V}{\frac {\partial E}{\partial t}}\,dV=-\oint _{\partial V}E{\mathbf {v} }\cdot d{\mathbf {A} }+\oint _{\partial V}({\mathbf {\sigma } \cdot v})\cdot d{\mathbf {A} }-\oint _{\partial V}{\mathbf {q} }\cdot d{\mathbf {A} }}
+  
+
+That is, the change in the internal energy of the substance within a volume is the negative of the amount carried out of the volume by the flow of material across the boundary plus the work done compressing the material on the boundary minus the flow of heat out through the boundary. More generally, it is possible to incorporate source terms.
+
+
+## Alternative representation
+
+  
+    
+      
+        ρ
+        
+          
+            
+              D
+              h
+            
+            
+              D
+              t
+            
+          
+        
+        =
+        
+          
+            
+              D
+              p
+            
+            
+              D
+              t
+            
+          
+        
+        +
+        ∇
+        ⋅
+        (
+        k
+        
+        ∇
+        T
+        )
+        +
+        Φ
+      
+    
+    {\displaystyle \rho {\frac {Dh}{Dt}}={\frac {Dp}{Dt}}+\nabla \cdot (k\,\nabla T)+\Phi }
+  
+
+where 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ is specific enthalpy, 
+  
+    
+      
+        Φ
+        =
+        
+          
+            τ
+          
+        
+        :
+        ∇
+        
+          
+            v
+          
+        
+      
+    
+    {\displaystyle \Phi ={\mathbf {\tau } }:\nabla {\mathbf {v} }}
+  
+ is dissipation function and 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ is temperature. And where
+
+  
+    
+      
+        
+          E
+          
+            t
+          
+        
+        =
+        ρ
+        (
+        e
+        +
+        
+          
+            1
+            2
+          
+        
+        
+          v
+          
+            2
+          
+        
+        −
+        
+          g
+          ⋅
+          r
+        
+        )
+      
+    
+    {\displaystyle E_{t}=\rho (e+{\frac {1}{2}}v^{2}-\mathbf {g\cdot r} )}
+  
+
+i.e. internal energy per unit volume equals mass density times the sum of: proper energy per unit mass, kinetic energy per unit mass, and gravitational potential energy per unit mass.
+
+  
+    
+      
+        −
+        ∇
+        ⋅
+        
+          
+            q
+          
+        
+        =
+        +
+        ∇
+        ⋅
+        (
+        k
+        
+        ∇
+        T
+        )
+      
+    
+    {\displaystyle -\nabla \cdot {\mathbf {q} }=+\nabla \cdot (k\,\nabla T)}
+  
+
+i.e. change in heat per unit volume (negative divergence of heat flow) equals the divergence of heat conductivity times the gradient of the temperature.
+
+  
+    
+      
+        ∇
+        ⋅
+        (
+        
+          
+            σ
+          
+          ⋅
+          v
+        
+        )
+        =
+        
+          
+            v
+          
+          ⋅
+          ∇
+          ⋅
+          σ
+        
+        +
+        σ
+        :
+        ∇
+        
+          v
+        
+      
+    
+    {\displaystyle \nabla \cdot ({\mathbf {\sigma } \cdot v})={\mathbf {v} \cdot \nabla \cdot \sigma }+\sigma :\nabla \mathbf {v} }
+  
+
+i.e. divergence of work done against stress equals flow of material times divergence of stress plus stress times divergence of material flow.
+
+  
+    
+      
+        σ
+        :
+        ∇
+        
+          
+            v
+          
+        
+        =
+        Φ
+        −
+        p
+        
+        ∇
+        ⋅
+        
+          
+            v
+          
+        
+      
+    
+    {\displaystyle \sigma :\nabla {\mathbf {v} }=\Phi -p\,\nabla \cdot {\mathbf {v} }}
+  
+
+i.e. stress times divergence of material flow equals deviatoric stress tensor times divergence of material flow minus pressure times material flow.
+
+  
+    
+      
+        h
+        =
+        e
+        +
+        
+          
+            p
+            ρ
+          
+        
+      
+    
+    {\displaystyle h=e+{\frac {p}{\rho }}}
+  
+
+i.e. enthalpy per unit mass equals proper energy per unit mass plus pressure times volume per unit mass (reciprocal of mass density).
+
+  
+    
+      
+        ∇
+        ⋅
+        σ
+        =
+        
+          
+            
+              D
+              J
+            
+            
+              D
+              t
+            
+          
+        
+        −
+        
+          f
+        
+      
+    
+    {\displaystyle \nabla \cdot \sigma ={\frac {DJ}{Dt}}-\mathbf {f} }
+  
+
+  
+    
+      
+        −
+        p
+        
+        ∇
+        ⋅
+        
+          
+            v
+          
+        
+        =
+        
+          
+            
+              D
+              p
+            
+            
+              D
+              t
+            
+          
+        
+        −
+        ρ
+        
+          
+            D
+            
+              D
+              t
+            
+          
+        
+        
+          (
+          
+            
+              p
+              ρ
+            
+          
+          )
+        
+      
+    
+    {\displaystyle -p\,\nabla \cdot {\mathbf {v} }={\frac {Dp}{Dt}}-\rho {\frac {D}{Dt}}\left({\frac {p}{\rho }}\right)}
+  
+
+
+## Alternative form data
+
+  
+    
+      
+        ∇
+        ⋅
+        
+          
+            σ
+          
+        
+        =
+        
+          
+            
+              D
+              
+                
+                  J
+                
+              
+            
+            
+              D
+              t
+            
+          
+        
+        −
+        
+          f
+        
+      
+    
+    {\displaystyle \nabla \cdot {\mathbf {\sigma } }={\frac {D{\mathbf {J} }}{Dt}}-\mathbf {f} }
+  
+ left hand side of Navier–Stokes equations minus body force (per unit volume) acting on fluid.
+
+  
+    
+      
+        −
+        p
+        ∇
+        ⋅
+        
+          
+            v
+          
+        
+        =
+        
+          
+            
+              D
+              p
+            
+            
+              D
+              t
+            
+          
+        
+        −
+        ρ
+        
+          
+            D
+            
+              D
+              t
+            
+          
+        
+        
+          (
+          
+            
+              p
+              ρ
+            
+          
+          )
+        
+      
+    
+    {\displaystyle -p\nabla \cdot {\mathbf {v} }={\frac {Dp}{Dt}}-\rho {\frac {D}{Dt}}\left({\frac {p}{\rho }}\right)}
+  
+ this relation is derived using this relationship 
+  
+    
+      
+        ρ
+        ∇
+        ⋅
+        
+          
+            v
+          
+        
+        =
+        −
+        
+          
+            
+              D
+              ρ
+            
+            
+              D
+              t
+            
+          
+        
+      
+    
+    {\displaystyle \rho \nabla \cdot {\mathbf {v} }=-{\frac {D\rho }{Dt}}}
+  
+ which is alternative form of continuity equation 
+  
+    
+      
+        
+          
+            
+              ∂
+              ρ
+            
+            
+              ∂
+              t
+            
+          
+        
+        +
+        ∇
+        ⋅
+        
+          
+            J
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {\frac {\partial \rho }{\partial t}}+\nabla \cdot {\mathbf {J} }=0}
+  
+
+
+## See also
+Clausius–Duhem inequality
+Continuum mechanics
+First law of thermodynamics
+Material derivative
+Incompressible flow
+
+
+## References

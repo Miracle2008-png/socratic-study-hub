@@ -10,7 +10,8 @@ import {
   Lightbulb, HelpCircle, Menu, X, Download, Star,
   ArrowRight, Bookmark, Eye, List, Zap, LayoutList, FileText, CheckCircle, Plus, Network, Maximize
 } from 'lucide-react';
-import { ALL_TOPICS } from '../data/topicCompiler';
+import { fetchTopicContent } from '../data/topicCompiler';
+import { TopicContent } from '../data/topicContent';
 import { TextRank, ContentGenerator } from '../utils/nlpEngine';
 import { useGamification } from '../context/GamificationContext';
 import MindMap from './MindMap';
@@ -30,7 +31,22 @@ const difficultyConfig = {
 type TabType = 'read' | 'summary' | 'flashcards' | 'quiz' | 'mindmap' | 'explain' | 'derivations' | 'exam';
 
 const TopicModule: React.FC<TopicModuleProps> = ({ topicId }) => {
-  const topic = ALL_TOPICS[topicId];
+  const [topic, setTopic] = useState<TopicContent | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setIsLoading(true);
+    fetchTopicContent(topicId)
+      .then(data => {
+        setTopic(data);
+        setIsLoading(false);
+      })
+      .catch(err => {
+        console.error("Failed to load topic:", err);
+        setIsLoading(false);
+      });
+  }, [topicId]);
+
   const { xp, addXP } = useGamification();
 
   const [activeTab, setActiveTab] = useState<TabType>('read');
@@ -143,6 +159,16 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId }) => {
       addXP(correct * 3500, 'Quiz Master Bonus'); // +3500 XP per correct question!
     }
   };
+
+  if (isLoading) {
+    return (
+      <div className="topic-module-placeholder luxury-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '400px' }}>
+        <Zap size={48} className="nlp-pulse" style={{ color: 'var(--color-accent)', marginBottom: 16 }} />
+        <h2>Loading Massive Textbook...</h2>
+        <p style={{color: 'var(--color-text-secondary)'}}>Compiling 35+ pages of engineering concepts</p>
+      </div>
+    );
+  }
 
   if (!topic) {
     return (

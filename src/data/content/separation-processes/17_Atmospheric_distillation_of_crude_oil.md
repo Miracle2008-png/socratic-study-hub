@@ -1,0 +1,22 @@
+# Atmospheric distillation of crude oil
+
+Refining of crude oils essentially consists of primary separation processes and secondary conversion processes. The petroleum refining process is the separation of the different hydrocarbons present in crude oil into useful fractions and the conversion of some of the
+hydrocarbons into products having higher quality performance. 
+Atmospheric and vacuum distillation of crude oils are the main primary separation processes producing various straight run products, e.g., gasoline to lube oils/vacuum gas oils. Distillation of crude oil is typically performed first under atmospheric pressure and then under a vacuum. Low boiling fractions usually vaporize below 400°C at atmospheric pressure without cracking the hydrocarbon compounds. Therefore, all the low boiling fractions of crude oil are separated by atmospheric distillation. A crude oil distillation unit (CDU) consists of the pre-flash distillation column. The petroleum products obtained from the distillation process are light, medium, and heavy naphtha, kerosene, diesel, and oil residue.
+
+
+## Atmospheric crude distillation unit
+
+Crude oil must first be desalted by heating to a temperature of 100-150 °C and mixing with 4-10% fresh water to dissolve the salt into brine. Crude oil exits from the desalter at a temperature of 250 °C–260 °C and is further heated by a tube-still heater to a temperature of 350 °C–360 °C. The hot crude oil is then passed into a distillation column that allows the separation of the crude oil into different fractions depending on the difference in volatility. The pressure at the top is maintained at 1.2–1.5 atm so that the distillation can be carried out at close to atmospheric pressure, and therefore it is known as the atmospheric distillation column.
+The vapors from the top of the column are a mixture of hydrocarbon gases and naphtha, at a temperature of 120 °C–130 °C. The vapor stream associated with steam used at the bottom of the column is condensed by the water cooler and the liquid collected in a vessel is known as a reflux drum which is present at the top of the column. Some part of the liquid is returned to the top plate of the column as overhead reflux, and the remaining liquid is sent to a stabilizer column which separates gases from liquid naphtha. 
+A few plates below the top plate, the kerosene is obtained as a product at a temperature of 190 °C–200 °C. Part of this fraction is returned to the column after it is cooled by a heat exchanger. This cooled liquid is known as circulating reflux, and it is important to control the heat load in the column. The remaining crude oil is passed through a side stripper which uses steam to separate kerosene. The kerosene obtained is cooled and collected in a storage tank as raw kerosene, known as straight run kerosene that boils at a range of 140 °C–270 °C. 
+A few plates below the kerosene draw plate, the diesel fraction is obtained at a temperature of 280 °C–300 °C. The diesel fraction is then cooled and stored. The top product from the atmospheric distillation column is a mixture of hydrocarbon gases, e.g., methane, ethane, propane, butane, and naphtha vapors. Residual oil present at the bottom of the column is known as reduced crude oil (RCO). The temperature of the stream at the bottom is 340 °C–350 °C, which is below the cracking temperature of the oil.
+Simulation helps in crude oil characterization so that thermodynamic and transport properties can be predicted. Dynamic models help in examining the relationships that could not be found by experimental methods (Ellner & Guckenheimer, 2006). By using modeling and simulation software, 80% of the time can be saved rather than constructing an actual working model. This also saves cost, and models provide more accurate studies of real systems.
+
+
+## See also
+Distillation
+Continuous distillation
+
+
+## References
