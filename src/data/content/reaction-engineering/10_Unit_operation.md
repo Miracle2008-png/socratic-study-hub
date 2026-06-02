@@ -7,15 +7,25 @@ In chemical engineering and related fields, a unit operation is a basic step in 
 Chemical engineering unit operations consist of five classes:
 
 Fluid flow processes, including fluids transportation, filtration, and solids fluidization.
+
 Heat transfer processes, including evaporation and heat exchange.
+
 Mass transfer processes, including gas absorption, distillation, extraction, adsorption, and drying.
+
 Thermodynamic processes, including gas liquefaction, and refrigeration.
+
 Mechanical processes, including solids transportation, crushing and pulverization, and screening and sieving.
+
 Chemical engineering unit operations also fall in the following categories which involve elements from more than one class:
 
 Combination (mixing)
+
 Separation (distillation, crystallization)
+
 Reaction (chemical reaction)
+
 Furthermore, there are some unit operations which combine even these categories, such as reactive distillation and stirred tank reactors. A "pure" unit operation is a physical transport process, while a mixed chemical/physical process requires modeling both the physical transport, such as diffusion, and the chemical reaction. This is usually necessary for designing catalytic reactions, and is considered a separate discipline, termed chemical reaction engineering.
+
 Chemical engineering unit operations and chemical engineering unit processing form the main principles of all kinds of chemical industries and are the foundation of designs of chemical plants, factories, and equipment used.
+
 In general, unit operations are designed by writing down the balances for the transported quantity for each elementary component (which may be infinitesimal) in the form of equations, and solving the equations for the design parameters, then selecting an optimal solution out of the several possible and then designing the physical equipment. For instance, distillation in a plate column is analyzed by writing down the mass balances for each plate, wherein the known vapor-liquid equilibrium and efficiency, drip out and drip in comprise the total mass flows, with a sub-flow for each component. Combining a stack of these gives the system of equations for the whole column. There is a range of solutions, because a higher reflux ratio enables fewer plates, and vice versa. The engineer must then find the optimal solution with respect to acceptable volume holdup, column height and cost of construction.

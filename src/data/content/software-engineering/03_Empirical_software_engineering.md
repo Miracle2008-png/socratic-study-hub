@@ -1,7 +1,6 @@
 # Empirical software engineering
 
 Empirical software engineering (ESE) (also known as Evidence-based software engineering) is a subfield of software engineering (SE) research that uses empirical research methods to study and evaluate SE techniques. These techniques include: software development tools/technology, practices, processes, policies, or other human and organizational aspects.
-ESE has roots in experimental software engineering, but as the field has matured, the need and acceptance for both quantitative and qualitative research have grown. Today, common research methods used in ESE for primary and secondary research include the following:
 
 ## Teaching empirical software engineering
 
@@ -12,5 +11,7 @@ ESE has roots in experimental software engineering, but as the field has matured
 Journals, conferences, and communities devoted specifically to ESE:
 
 Empirical Software Engineering: An International Journal
+
 International Symposium on Empirical Software Engineering and Measurement
+
 International Software Engineering Research Network (ISERN)

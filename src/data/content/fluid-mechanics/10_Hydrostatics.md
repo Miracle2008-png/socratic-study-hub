@@ -1,14 +1,13 @@
 # Hydrostatics
 
 Hydrostatics is the branch of fluid mechanics that studies fluids at hydrostatic equilibrium and "the pressure in a fluid or exerted by a fluid on an immersed body". The word "hydrostatics" is sometimes used to refer specifically to water and other liquids, but more often it includes both gases and liquids, whether compressible or incompressible. It encompasses the study of the conditions under which fluids are at rest in stable equilibrium. It is opposed to fluid dynamics, the study of fluids in motion.
-Hydrostatics is fundamental to hydraulics, the engineering of equipment for storing, transporting and using fluids.  It is also relevant to geophysics and astrophysics (for example, in understanding plate tectonics and the anomalies of the Earth's gravitational field), to meteorology, to medicine (in the context of blood pressure), and many other fields.
-Hydrostatics offers physical explanations for many phenomena of everyday life, such as why atmospheric pressure changes with altitude, why wood and oil float on water, and why the surface of still water is always level according to the curvature of the earth.
 
 ## Hydrostatics in ancient Greece and Rome
 
 ### Pythagorean Cup
 
 The "fair cup" or Pythagorean cup, which dates from about the 6th century BC, is a hydraulic technology whose invention is credited to the Greek mathematician and geometer Pythagoras. It was used as a learning tool.
+
 The cup consists of a line carved into the interior of the cup, and a small vertical pipe in the center of the cup that leads to the bottom. The height of this pipe is the same as the line carved into the interior of the cup. The cup may be filled to the line without any fluid passing into the pipe in the center of the cup. However, when the amount of fluid exceeds this fill line, fluid will overflow into the pipe in the center of the cup. Due to the drag that molecules exert on one another, the cup will be emptied.
 
 ### Heron's fountain

@@ -5,7 +5,9 @@ Computer engineering (CE, CoE, CpE, or CompE) is a branch of engineering special
 ## Education
 
 Computer engineering is referred to as computer science and engineering at some universities. Most entry-level computer engineering jobs require at least a bachelor's degree in computer engineering, electrical engineering or computer science. Typically one must learn an array of mathematics such as calculus, linear algebra, and differential equations, along with computer science. Degrees in electronic or electric engineering also suffice due to the similarity of the two fields. Because hardware engineers commonly work with computer software systems, a strong background in computer programming is necessary. According to BLS, "a computer engineering major is similar to electrical engineering but with some computer science courses added to the curriculum". Some large firms or specialized jobs require a master's degree.
+
 In many institutions of higher learning, computer engineering students are allowed to choose areas of in-depth study in their junior and senior years because the full breadth of knowledge used in the design and application of computers is beyond the scope of an undergraduate degree. Other institutions may require engineering students to complete one or two years of general engineering before declaring computer engineering as their primary focus.
+
 It is also important for computer engineers to keep up with rapid advances in technology. Therefore, many continue learning throughout their careers. This can be helpful, especially when it comes to learning new skills or improving existing ones. For example, as the relative cost of fixing a bug increases the further along it is in the software development cycle, there can be greater cost savings attributed to developing and testing for quality code as soon as possible in the process, particularly before release.
 
 ## Specialty areas
@@ -35,6 +37,7 @@ In this specialty, engineers build integrated environments for computing, commun
 ### Computer systems: architecture, parallel processing, and dependability
 
 Engineers working in computer systems work on research projects that allow for reliable, secure, and high-performance computer systems. Projects such as designing processors for multithreading and parallel processing are included in this field. Other examples of work in this field include the development of new theories, algorithms, and other tools that add performance to computer systems.
+
 Computer architecture includes CPU design, cache hierarchy layout, memory organization, and load balancing.
 
 ### Computer vision and robotics

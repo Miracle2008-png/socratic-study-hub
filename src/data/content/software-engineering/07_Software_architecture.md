@@ -1,23 +1,27 @@
 # Software architecture
 
 Software architecture is the set of structures needed to reason about a software system and the discipline of creating such structures and systems. Each structure comprises software elements, relations among them, and properties of both elements and relations.
-The architecture of a software system is a metaphor, analogous to the architecture of a building. It functions as the blueprints for the system and the development project, which project management can later use to extrapolate the tasks necessary to be executed by the teams and people involved.
-Software architecture is about making fundamental structural choices that are costly to change once implemented. Software architecture choices include specific structural options from possibilities in the design of the software. There are two fundamental laws in software architecture:
 
 ## Scope
 
 Opinions vary as to the scope of software architectures:
 
 Macroscopic system structure: this refers to architecture as a higher-level abstraction of a software system that consists of a collection of computational components together with connectors that describe the interaction between these components.
+
 The important stuff—whatever that is: this refers to the fact that software architects should concern themselves with those decisions that have high impact on the system and its stakeholders.
+
 That which is fundamental to understanding a system in its environment
+
 Things that people perceive as hard to change: since designing the architecture takes place at the beginning of a software system's lifecycle, the architect should focus on decisions that "have to" be right the first time. Following this line of thought, architectural design issues may become non-architectural once their irreversibility can be overcome.
+
 A set of architectural design decisions: software architecture should not be considered merely a set of models or structures, but should include the decisions that lead to these particular structures, and the rationale behind them. This insight has led to substantial research into software architecture knowledge management.
+
 There is no sharp distinction between software architecture versus design and requirements engineering (see Related fields below). They are all part of a "chain of intentionality" from high-level intentions to low-level details.
 
 ## Software architecture style vs. software architecture pattern
 
 Software Architecture Pattern refers to a reusable, proven solution to a recurring problem at the system level, addressing concerns related to the overall structure, component interactions, and quality attributes of the system. Software architecture patterns operate at a higher level of abstraction than software design patterns, solving broader system-level challenges. While these patterns typically affect system-level concerns, the distinction between architectural patterns and architectural styles can sometimes be blurry. Examples include Circuit Breaker.
+
 Software Architecture Style refers to a high-level structural organization that defines the overall system organization, specifying how components are organized, how they interact, and the constraints on those interactions. Architecture styles typically include a vocabulary of component and connector types, as well as semantic models for interpreting the system's properties. These styles represent the most coarse-grained level of system organization. Examples include Layered Architecture, Microservices, and Event-Driven Architecture.
 
 ## Anti-patterns
@@ -25,16 +29,23 @@ Software Architecture Style refers to a high-level structural organization that 
 The following architectural anti-patterns can arise when architects make decisions. These anti-patterns often follow a progressive sequence, where resolving one may lead to the emergence of another.
 
 An architect may delay or avoid making architectural decisions due to the fear of choosing incorrectly. To address this, ongoing and close collaboration with the development team is often necessary, with architectural choices being adjusted based on their feedback. Additionally, decisions are typically made at the "last responsible moment," ensuring there is enough information to justify and validate the decision, while avoiding unnecessary delays that could lead to analysis paralysis and hinder the team's progress.
+
 Another anti-pattern can arise when architectural decisions are forgotten, not documented, or not understood, leading to repeated discussions without resolution. This often occurs when email is used to communicate architectural decisions. To address these challenges, architects typically provide both technical and business justifications (often related to cost, user satisfaction, and time to market) in a single record of the architectural decision (usually an Architecture Decision Record). This record can be maintained in an accessible repository, such as a wiki. Communication via email focuses on the nature and context of the change and is directed only to relevant stakeholders, with a link to the centralized record. This ensures there is always a single updated source of truth. Additionally, if an architectural decision does not offer tangible business value, or if the business value is misaligned with business stakeholders, it may need to be reconsidered.
 
 ## Characteristics
 
 Software architecture exhibits the following:
+
 Multitude of stakeholders: software systems have to cater to a variety of stakeholders such as business managers, owners, users, and operators. These stakeholders all have their own concerns with respect to the system. Balancing these concerns and demonstrating that they are addressed is part of designing the system. This implies that architecture involves dealing with a broad variety of concerns and stakeholders, and has a multidisciplinary nature.
+
 Separation of concerns: the established way for architects to reduce complexity is to separate the concerns that drive the design. Architecture documentation shows that all stakeholder concerns are addressed by modeling and describing the architecture from separate points of view associated with the various stakeholder concerns. These separate descriptions are called architectural views (see for example the 4+1 architectural view model).
+
 Quality-driven: classic software design approaches (e.g. Jackson Structured Programming) were driven by required functionality and the flow of data through the system, but the current insight is that the architecture of a software system is more closely related to its quality attributes such as fault-tolerance, backward compatibility, extensibility, reliability, maintainability, availability, security, usability, and other such –ilities. Stakeholder concerns often translate into requirements on these quality attributes, which are variously called non-functional requirements, extra-functional requirements, behavioral requirements, or quality attribute requirements.
+
 Recurring styles: like building architecture, the software architecture discipline has developed standard ways to address recurring concerns. These "standard ways" are called by various names at various levels of abstraction. Common terms for recurring solutions are architectural style, tactic, reference architecture and architectural pattern.
+
 Conceptual integrity: a term introduced by Fred Brooks in his 1975 book The Mythical Man-Month to denote the idea that the architecture of a software system represents an overall vision of what it should do and how it should do it. This vision should be separated from its implementation. The architect assumes the role of "keeper of the vision", making sure that additions to the system are in line with the architecture, hence preserving conceptual integrity.
+
 Cognitive constraints: An observation first made in a 1967 paper by computer programmer Melvin Conway that organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations. Fred Brooks introduced it to a wider audience when he cited the paper and the idea in The Mythical Man-Month, calling it Conway's Law.
 
 ## Motivation
@@ -42,32 +53,51 @@ Cognitive constraints: An observation first made in a 1967 paper by computer pro
 Software architecture is an "intellectually graspable" abstraction of a complex system. This abstraction provides a number of benefits:
 
 It gives a basis for analysis of software systems' behavior before the system has been built. The ability to verify that a future software system fulfills its stakeholders' needs without actually having to build it represents substantial cost-saving and risk-mitigation. A number of techniques have been developed to perform such analyses, such as ATAM or by creating a visual representation of the software system.
+
 It provides a basis for re-use of elements and decisions. A complete software architecture or parts of it, like individual architectural strategies and decisions, can be re-used across multiple systems whose stakeholders require similar quality attributes or functionality, saving design costs and mitigating the risk of design mistakes.
+
 It supports early design decisions that impact a system's development, deployment, and maintenance life. Getting the early, high-impact decisions right is important to prevent schedule and budget overruns.
+
 It facilitates communication with stakeholders, contributing to a system that better fulfills their needs. Communicating about complex systems from the point of view of stakeholders helps them understand the consequences of their stated requirements and the design decisions based on them. Architecture gives the ability to communicate about design decisions before the system is implemented, when they are still relatively easy to adapt.
+
 It helps in risk management. Software architecture helps to reduce risks and chance of failure.
+
 It enables cost reduction. Software architecture is a means to manage risk and costs in complex IT projects.
 
 ## Architecture activities
 
 Making architectural decisions involves collecting sufficient relevant information, providing justification for the decision, documenting the decision and its rationale, and communicating it effectively to the appropriate stakeholders. 
+
 It's software architect's responsibility to match architectural characteristics (aka non-functional requirements) with business requirements. For example: 
 
 Having a high customer satisfactions requires availability, fault tolerance, security, testability, recoverability, agility and performance in the system.
+
 Doing mergers and acquisitions (M&A) requires extensibility, scalability, adaptability, and interoperability
+
 Constrained budget and time requires feasibility and simplicity
+
 Faster time-to-market requires maintainability, testability and deployability.
+
 There are four core activities in software architecture design. These core architecture activities are performed iteratively and at different stages of the initial software development life-cycle, as well as over the evolution of a system.
+
 Architectural analysis is the process of understanding the environment in which a proposed system will operate and determining the requirements for the system. The input or requirements to the analysis activity can come from any number of stakeholders and include items such as:
 
 what the system will do when operational (the functional requirements)
+
 how well the system will perform runtime non-functional requirements such as reliability, operability, performance efficiency, security, compatibility defined in ISO/IEC 25010:2011 standard
+
 development-time of non-functional requirements such as maintainability and transferability defined in ISO 25010:2011 standard
+
 business requirements and environmental contexts of a system that may change over time, such as legal, social, financial, competitive, and technology concerns
+
 The outputs of the analysis activity are those requirements that have a measurable impact on a software system's architecture, called architecturally significant requirements.
+
 Architectural synthesis or design is the process of creating an architecture. Given the architecturally significant requirements determined by the analysis, the current state of the design and the results of any evaluation activities, the design is created and improved.
+
 Architecture evaluation is the process of determining how well the current design or a portion of it satisfies the requirements derived during analysis. An evaluation can occur whenever an architect is considering a design decision, it can occur after some portion of the design has been completed, it can occur after the final design has been completed or it can occur after the system has been constructed. Some of the available software architecture evaluation techniques include Architecture Tradeoff Analysis Method (ATAM) and TARA. Frameworks for comparing the techniques are discussed in frameworks such as SARA Report and Architecture Reviews: Practice and Experience.
+
 Architecture evolution is the process of maintaining and adapting an existing software architecture to meet changes in requirements and environment. As software architecture provides a fundamental structure of a software system, its evolution and maintenance would necessarily impact its fundamental structure. As such, architecture evolution is concerned with adding new functionality as well as maintaining existing functionality and system behavior.
+
 Architecture requires critical supporting activities. These supporting activities take place throughout the core software architecture process. They include knowledge management and communication, design reasoning and decision-making, and documentation.
 
 ### Architecture supporting activities
@@ -75,20 +105,29 @@ Architecture requires critical supporting activities. These supporting activitie
 Software architecture supporting activities are carried out during core software architecture activities. These supporting activities assist a software architect to carry out analysis, synthesis, evaluation, and evolution. For instance, an architect has to gather knowledge, make decisions, and document during the analysis phase.
 
 Knowledge management and communication is the act of exploring and managing knowledge that is essential to designing a software architecture. A software architect does not work in isolation. They get inputs, functional and non-functional requirements, and design contexts, from various stakeholders; and provide outputs to stakeholders. Software architecture knowledge is often tacit and is retained in the heads of stakeholders. Software architecture knowledge management activity is about finding, communicating, and retaining knowledge. As software architecture design issues are intricate and interdependent, a knowledge gap in design reasoning can lead to incorrect software architecture design. Examples of knowledge management and communication activities include searching for design patterns, prototyping, asking experienced developers and architects, evaluating the designs of similar systems, sharing knowledge with other designers and stakeholders, and documenting experience on a wiki page.
+
 Design reasoning and decision making is the activity of evaluating design decisions. This activity is fundamental to all three core software architecture activities. It entails gathering and associating decision contexts, formulating design decision problems, finding solution options and evaluating tradeoffs before making decisions. This process occurs at different levels of decision granularity while evaluating significant architectural requirements and software architecture decisions, and software architecture analysis, synthesis, and evaluation. Examples of reasoning activities include understanding the impacts of a requirement or a design on quality attributes, questioning the issues that a design might cause, assessing possible solution options, and evaluating the tradeoffs between solutions.
+
 Documentation is the act of recording the design generated during the software architecture process. System design is described using several views that frequently include a static view showing the code structure of the system, a dynamic view showing the actions of the system during execution, and a deployment view showing how a system is placed on hardware for execution. Kruchten's 4+1 view suggests a description of commonly used views for documenting software architecture; Documenting Software Architectures: Views and Beyond has descriptions of the kinds of notations that could be used within the view description. Examples of documentation activities are writing a specification, recording a system design model, documenting a design rationale, developing a viewpoint, documenting views.
 
 ## Software Architecture Design Strategies
 
 Software architecture inherently deals with uncertainties, and the size of architectural components can significantly influence a system's outcomes, both positively and negatively. Neal Ford and Mark Richards propose an iterative approach to address the challenge of identifying and right-sizing components. This method emphasizes continuous refinement as teams develop a more nuanced understanding of system behavior and requirements.
+
 The approach typically involves a cycle with several stages: 
 
 A high-level partitioning strategy is established, often categorized as technical or domain-based. Guidelines for the smallest meaningful deployable unit, referred to as "quanta," are defined. While these foundational decisions are made early, they may be revisited later in the cycle if necessary.
+
 Initial components are identified based on the established strategy.
+
 Requirements are assigned to the identified components.
+
 The roles and responsibilities of each component are analyzed to ensure clarity and minimize overlap.
+
 Architectural characteristics, such as scalability, fault tolerance, and maintainability, are evaluated.
+
 Components may be restructured based on feedback from development teams.
+
 This cycle serves as a general framework and can be adapted to different domains.
 
 ## Software architecture topics
@@ -100,13 +139,17 @@ There are also concerns that software architecture leads to too much big design 
 ### Software architecture erosion
 
 Software architecture erosion refers to a gradual gap between the intended and implemented architecture of a software system over time. The phenomenon of software architecture erosion was initially brought to light in 1992 by Perry and Wolf alongside their definition of software architecture.
+
 Software architecture erosion may occur in each stage of the software development life cycle and has varying impacts on the development speed and the cost of maintenance. Software architecture erosion occurs due to various reasons, such as architectural violations, the accumulation of technical debt, and knowledge vaporization. A famous case of architecture erosion is the failure of Mozilla Web browser. Mozilla is an application created by Netscape with a complex codebase that became harder to maintain due to continuous changes.  Due to initial poor design and growing  architecture erosion, Netscape spent two years redeveloping the Mozilla Web browser, demonstrating the importance of proactive architecture management to prevent costly repairs and project delays.
+
 Architecture erosion can decrease software performance, substantially increase evolutionary costs, and degrade software quality. Various approaches and tools have been proposed to detect architecture erosion. These approaches are primarily classified into four categories: consistency-based, evolution-based, defect-based, and decision-based approaches. For instance, automated architecture conformance checks, static code analysis tools, and refactoring techniques help identify and mitigate erosion early.
+
 Besides, the measures used to address architecture erosion contain two main types: preventative and remedial measures. Preventative measures include enforcing architectural rules, regular code reviews, and automated testing, while remedial measures involve refactoring, redesign, and documentation updates.
 
 ### Software architecture recovery
 
 Software architecture recovery (or reconstruction, or reverse engineering) includes the methods, techniques, and processes to uncover a software system's architecture from available information, including its implementation and documentation. Architecture recovery is often necessary to make informed decisions in the face of obsolete or out-of-date documentation and 
+
 architecture erosion: implementation and maintenance decisions diverging from the envisioned architecture. Practices exist to recover software architecture as static program analysis. This is a part of the subjects covered by the software intelligence practice.
 
 ## Related fields
@@ -114,20 +157,29 @@ architecture erosion: implementation and maintenance decisions diverging from th
 ### Design
 
 Architecture is design but not all design is architectural. In practice, the architect is the one who draws the line between software architecture (architectural design) and detailed design (non-architectural design). There are no rules or guidelines that fit all cases, although there have been attempts to formalize the distinction. 
+
 According to the Intension/Locality Hypothesis, the distinction between architectural and detailed design is defined by the Locality Criterion, according to which a statement about software design is non-local (architectural) if and only if a program that satisfies it can be expanded into a program that does not. For example, the client–server style is architectural (strategic) because a program that is built on this principle can be expanded into a program that is not client–server—for example, by adding peer-to-peer nodes.
 
 ### Requirements engineering
 
 Requirements engineering and software architecture can be seen as complementary approaches: while software architecture targets the 'solution space' or the 'how', requirements engineering addresses the 'problem space' or the 'what'. Requirements engineering entails the elicitation, negotiation, specification, validation, documentation, and management of requirements. Both requirements engineering and software architecture revolve around stakeholder concerns, needs, and wishes.
+
 There is considerable overlap between requirements engineering and software architecture, as evidenced for example by a study into five industrial software architecture methods that concludes that "the inputs (goals, constraints, etc.) are usually ill-defined, and only get discovered or better understood as the architecture starts to emerge" and that while "most architectural concerns are expressed as requirements on the system, they can also include mandated design decisions". In short, required behavior impacts solution architecture, which in turn may introduce new requirements. Approaches such as the Twin Peaks model aim to exploit the synergistic relation between requirements and architecture.
 
 ### Other types of 'architecture'
 
 Computer architecture
+
 Computer architecture targets the internal structure of a computer system, in terms of collaborating hardware components such as the CPU – or processor – the bus and the memory.
+
 Serverless architecture
+
 Serverless architecture is a cloud computing paradigm that is often misunderstood as being server-free. It essentially shifts server management responsibilities from developers to cloud service providers. This allows businesses to run their backend code on cloud infrastructure, eliminating the need for physical server management. The event-driven approach of serverless architecture relies on small, task-specific functions that are executed on-demand. These functions are known as Function as a Service (FaaS), and they offer cost-efficiency through a pay-as-you-go billing model and dynamic resource scaling based on application demand.
+
 Systems architecture
+
 The term systems architecture has originally been applied to the architecture of systems that consist of both hardware and software. The main concern addressed by the systems architecture is then the integration of software and hardware in a complete, correctly working device. In another common – much broader – meaning, the term applies to the architecture of any complex system which may be of a technical, sociotechnical or social nature.
+
 Enterprise architecture
+
 The goal of enterprise architecture is to "translate business vision and strategy into effective enterprise". Enterprise architecture frameworks, such as TOGAF and the Zachman Framework, usually distinguish between different enterprise architecture layers. Although terminology differs from framework to framework, many include at least a distinction between a business layer, an application (or information) layer, and a technology layer. Enterprise architecture addresses among others the alignment between these layers, usually in a top-down approach.

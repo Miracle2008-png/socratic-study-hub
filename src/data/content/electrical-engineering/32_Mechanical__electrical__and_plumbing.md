@@ -1,11 +1,11 @@
 # Mechanical, electrical, and plumbing
 
 Mechanical, electrical, and plumbing (MEP) refers to the installation of services which provide a functional and comfortable space for the building occupants. In residential and commercial buildings, these elements are often designed by specialized MEP engineers. MEP's design is important for planning, decision-making, accurate documentation, performance- and cost-estimation, construction, and operating/maintaining the resulting facilities.
-MEP specifically encompasses the in-depth design and selection of these systems, as opposed to a tradesperson simply installing equipment. For example, a plumber may select and install a commercial hot water system based on common practice and regulatory codes. A team of MEP engineers will research the best design according to the principles of engineering, and supply installers with the specifications they develop. As a result, engineers working in the MEP field must understand a broad range of disciplines, including dynamics, mechanics, fluids, thermodynamics, heat transfer, chemistry, electricity, and computers. Because MEP designs directly influence system sizing and component selection, the mechanical estimating process plays a key role in calculating quantities, assessing cost impacts, and ensuring that engineered solutions remain feasible within project budgets.
 
 ## Design and documentation
 
 As with other aspect of buildings, MEP drafting, design and documentation were traditionally done manually. Computer-aided design has some advantages over this, and often incorporates 3D modeling which is otherwise impractical. Building information modeling (BIM) provides holistic design and parametric change management of the MEP design.
+
 Maintaining documentation of MEP services may also require the use of a geographical information system or asset management system.
 
 ## Components of MEP
@@ -13,7 +13,9 @@ Maintaining documentation of MEP services may also require the use of a geograph
 ### Mechanical
 
 The mechanical component of MEP is an important superset of HVAC services. Thus, it incorporates the control of environmental factors (psychrometrics), either for human comfort or for the operation of machines. Heating, cooling, ventilation and exhaustion are all key areas to consider in the mechanical planning of a building. In special cases, water cooling/heating, humidity control or air filtration may also be incorporated. For example, Google's data centres make extensive use of heat exchangers to cool their servers. This system creates an additional overhead of 12% of initial energy consumption. This is a vast improvement from traditional active cooling units which have an overhead of 30-70%. However, this novel and complicated method requires careful and expensive planning from mechanical engineers, who must work closely with the engineers designing the electrical and plumbing systems for a building.
+
 A major concern for people designing HVAC systems is the efficiency, i.e., the consumption of electricity and water. Efficiency is optimised by changing the design of the system on both large and small scales. Heat pumps and evaporative cooling are efficient alternatives to traditional systems, however they may be more expensive or harder to implement. The job of an MEP engineer is to compare these requirements and choose the most suitable design for the task.
+
 Electricians and plumbers usually have little to do with each other, other than keeping services out of each other's way. The introduction of mechanical systems requires the integration of the two so that plumbing may be controlled by electrics and electrics may be serviced by plumbing. Thus, the mechanical component of MEP unites the three fields.
 
 ### Electrical
@@ -27,10 +29,13 @@ Three-phase power is commonly used for industrial machines, particularly motors 
 #### Information technology
 
 Advances in technology and the advent of computer networking have led to the emergence of a new facet of electrical systems incorporating data and telecommunications wiring. As of 2019, several derivative acronyms have been suggested for this area, including MEPIT (mechanical, electrical, plumbing and information technology) and MEPI (an abbreviation of MEPIT). Equivalent names are "low voltage", "data", and "telecommunications" or "comms". A low voltage system used for telecommunications networking is not the same as a low voltage network.
+
 The information technology sector of electrical installations is used for computer networking, telephones, television, security systems, audio distribution, healthcare systems, robotics, and more. These services are typically installed by different tradespeople to the higher-voltage mains wiring and are often contracted out to very specific trades, e.g. security installers or audio integrators.
+
 Regulations on low voltage wiring are often less strict or less important to human safety. As a result, it is more common for this wiring to be installed or serviced by competent amateurs, despite constant attempts from the electrical industry to discourage this.
 
 ### Plumbing
 
 Effective plumbing design helps prevent clashes with other building systems and reduces the risk of costly adjustments or excess materials. In residential settings, plumbing typically includes potable water under mains pressure, hot water systems (often coordinated with mechanical or electrical components), sewerage, stormwater, natural gas, and sometimes rainwater harvesting and storage. In commercial buildings, the range of services is broader, supporting larger user demand and additional functions such as irrigation, hydroponics, fuel supply, oxygen distribution, vacuum or compressed air, and solids handling.
+
 Plumbing systems also service air distribution/control, and therefore contribute to the mechanical part of MEP. Plumbing for HVAC systems involves the transfer of coolant, pressurized air, water, and occasionally other substances. Ducting for air transfer may also be consider plumbing, but is generally installed by different tradespeople.

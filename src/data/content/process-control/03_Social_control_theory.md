@@ -5,6 +5,7 @@ In criminology, social control theory proposes that exploiting the process of so
 ## Definition
 
 Social control theory proposes that people's relationships, commitments, values, norms, and beliefs encourage them not to break the law. Thus, if moral codes are internalized and individuals are tied into and have a stake in their wider community, they will voluntarily limit their propensity to commit deviant acts. The theory seeks to understand the ways in which it is possible to reduce the likelihood of criminality developing in individuals. It does not consider motivational issues, simply stating that human beings may choose to engage in a wide range of activities, unless the range is limited by the processes of socialization and social learning. The theory derives from a Hobbesian view of human nature as represented in Leviathan, i.e. that all choices are constrained by implicit social contracts, agreements and arrangements among people. Thus, morality is created in the construction of social order, assigning costs and consequences to certain choices and defining some as evil, immoral and/or illegal.
+
 Social control plays a crucial role in providing a more productive and harmonious community. It contributes to the growth of an individual, and the progression of the community. For instance, places with higher crime rates are more likely to be the place where poverty, mobility, and racial/ethnic heterogeneity are most susceptible. The presence of these factors determines the level of social control within a community, particularly when it comes to the placement of infrastructure. A higher level of social control in a community can result to an organized community that can lead to better opportunity in the community.
 
 ## Proponents
@@ -22,8 +23,11 @@ Jackson Toby (1957) argued that "the uncommitted adolescent is a candidate for g
 Ivan Nye (1958) not only elaborated a social control theory of delinquency, but specified ways to "operationalize" (measure) control mechanisms and related them to self-reports of delinquent behavior. He formulated the theory after interviewing 780 young people in Washington State. The sample was criticized because it did not represent any urban environments, and those selected might have been more apt to describe their families unfavorably. Some were concerned that criminal activity was only mentioned in two of the questions, so the extrapolations to crime in general were considered unsafe. Like Reiss, he focused on the family as a source of control. Moreover, Nye specified three different types of control:
 
 direct control = punishments and rewards
+
 indirect control = affectionate identification with non-criminals; and
+
 internal control = conscience or sense of guilt.
+
 Youth may be directly controlled through constraints imposed by parents, limiting the opportunity for delinquency, as well as through parental rewards and punishments. However, they may be constrained when free from direct control by their anticipation of parental disapproval (indirect control), or through the development of a conscience, an internal constraint on behavior. The focus on the family as a source of control was in marked contrast to the emphasis on economic circumstances as a source of criminogenic motivation at the time. Although he acknowledged motivational forces by stating that, "...some delinquent behavior results from a combination of positive learning and weak and ineffective social control" (1958: 4), he adopted a control-theory position when he proposed that, "...most delinquent behavior is the result of insufficient social control..."
 
 ### Walter Reckless
@@ -31,15 +35,21 @@ Youth may be directly controlled through constraints imposed by parents, limitin
 Walter Reckless (1961) developed containment theory by focusing on a youth's self-conception or self-image of being a good person as an insulator against peer pressure to engage in delinquency.
 
 inner containment = positive sense of self;
+
 outer containment = supervision and discipline.
+
 This inner containment through self-images is developed within the family and is essentially formed by about the age of twelve. Outer containment was a reflection of strong social relationships with teachers and other sources of conventional socialization within the neighborhood. The basic proposition is there are "pushes" and "pulls" that will produce delinquent behavior unless they are counteracted by containment. The motivations to deviate as pushes are:
 
 discontent with living conditions and family conflicts;
+
 aggressiveness and hostility, perhaps due to biological factors; and
+
 frustration and boredom, say arising from membership of a minority group or through lack of opportunities to advance in school or find employment;
+
 and the pulls are:
 
 delinquent peers, and
+
 delinquent subcultures.
 
 ### David Matza
@@ -47,16 +57,25 @@ delinquent subcultures.
 An analysis of 'neutralization' was developed by Sykes and Matza (1957) who believed that there was little difference between delinquents and non-delinquents, with delinquents engaging in non-delinquent behavior most of the time. They also asserted that most delinquents eventually opt out of the delinquent lifestyle as they grow older, suggesting that there is a basic code of morality in place but that the young are able to deviate by using techniques of neutralization, i.e. they can temporarily suspend the applicability of norms by developing attitudes "favorable to deviant behavior". The five common techniques were:
 
 denial of responsibility (I couldn't help myself)
+
 denial of injury (nobody got hurt)
+
 denial of victim (they had it coming)
+
 condemnation of the condemners (what right do they have to criticize me?)
+
 appeal to higher loyalties (I did it for someone else).
+
 Later Matza (1964) developed his theory of "drift" which proposed that people used neutralization to drift in and out of conventional behaviour, taking a temporary break from moral restraints. Matza based his "drift" theory upon four observations which were:
 
 Delinquents express guilt over their criminal acts
+
 Delinquents often respect law-abiding individuals
+
 A line is drawn between those they can victimize and those they can not
+
 Delinquents are not immune to the demands of conforming
+
 Although this theory of drift has not been widely supported by empirical tests, it remains a key idea in criminology despite not answering why some conform and others don't.
 
 ### Travis Hirschi
@@ -70,6 +89,7 @@ Hirschi has since moved away from his bonding theory, and in co-operation with M
 ### Jack P. Gibbs
 
 Gibbs (1989) has redefined social control and applied it to develop a control theory of homicide. Any attempt to get an individual to do or refrain from doing something can be considered an attempt at control. To qualify as 'social' control, such attempts must involve three parties. One or more individuals intends to manipulate the behavior of another by or through a third party. Gibbs' third party can be an actual person or a reference to "society", "expectations" or "norms". For example, if one party attempts to influence another by threatening to refer the matter to a third party assumed to have authority, this is referential social control. If one party attempts to control another by punishing a third (e.g. general deterrence), it is a form of vicarious social control. The presence of the third party distinguishes social control from mere external behavioral control, simple interpersonal responses, or issuing orders for someone to do something. This definition clearly distinguishes social control from mere "reactions to deviance" and from deviant behavior itself.
+
 Gibbs argues that "Homicide can be described either as control or as resulting from control failure" (1989: 35), and proposes that the homicide rate is a function not just of the sheer volume of disputes, but also of the frequency of recourse to a third party for peaceful dispute settlement (p37). When one person fails to control the actions of another through the third party, murder represents another violent attempt at direct control. People resort to self-help when forms of social control are unavailable or fail. Gibbs is critical of Hirschi's Social Control Theory because it merely assumes that social relationships, personal investments and beliefs that discourage delinquency are social controls (which is one reason why Hirschi's theory is often referred to as a Social Bond Theory).
 
 ## Criticism

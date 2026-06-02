@@ -1,15 +1,19 @@
 # Thermal runaway
 
 Thermal runaway describes a process that is accelerated by increased temperature, in turn releasing energy that further increases temperature. Thermal runaway occurs in situations where an increase in temperature changes the conditions in a way that causes a further increase in temperature, often leading to a destructive result. It is a kind of uncontrolled positive feedback.
-In chemistry (and chemical engineering), thermal runaway is associated with strongly exothermic reactions that are accelerated by a rise in temperature. In electrical engineering, thermal runaway is typically associated with increased current flow and power dissipation. Thermal runaway can occur in civil engineering, notably when the heat released by large amounts of curing concrete is not controlled.  In astrophysics, runaway nuclear fusion reactions in stars can lead to nova and several types of supernova explosions, and also occur as a less dramatic event in the normal evolution of solar-mass stars, known as the "helium flash".
 
 ## Chemical engineering
 
 Chemical reactions involving thermal runaway are also called thermal explosions in chemical engineering, or runaway reactions in organic chemistry. It is a process by which an exothermic reaction goes out of control: the reaction rate increases due to an increase in temperature, causing a further increase in temperature and hence a further rapid increase in the reaction rate. This has contributed to industrial chemical accidents, most notably the 1947 Texas City disaster from overheated ammonium nitrate in a ship's hold, and the 1976 explosion of zoalene, in a drier, at King's Lynn. Frank-Kamenetskii theory provides a simplified analytical model for thermal explosion. Chain branching is an additional positive feedback mechanism which may also cause temperature to skyrocket because of rapidly increasing reaction rate.
+
 Chemical reactions are either endothermic or exothermic, as expressed by their change in enthalpy. Many reactions are highly exothermic, so many industrial-scale and oil refinery processes have some level of risk of thermal runaway. These include hydrocracking, hydrogenation, alkylation (SN2), oxidation, metalation and nucleophilic aromatic substitution. For example, oxidation of cyclohexane into cyclohexanol and cyclohexanone and ortho-xylene into phthalic anhydride have led to catastrophic explosions when reaction control failed.
+
 Thermal runaway may result from unwanted exothermic side reactions that begin at higher temperatures, following an initial accidental overheating of the reaction mixture. This scenario was behind the Seveso disaster, where thermal runaway heated a reaction to temperatures such that in addition to the intended 2,4,5-trichlorophenol, poisonous 2,3,7,8-tetrachlorodibenzo-p-dioxin was also produced, and was vented into the environment after the reactor's rupture disk burst.
+
 Thermal runaway is most often caused by failure of the reactor vessel's cooling system. Failure of the mixer can result in localized heating, which initiates thermal runaway. Similarly, in flow reactors, localized insufficient mixing causes hotspots to form, wherein thermal runaway conditions occur, which causes violent blowouts of reactor contents and catalysts. Incorrect equipment component installation is also a common cause. Many chemical production facilities are designed with high-volume emergency venting, a measure to limit the extent of injury and property damage when such accidents occur.
+
 At large scale, it is unsafe to "charge all reagents and mix", as is done in laboratory scale. This is because the amount of reaction scales with the cube of the size of the vessel (V ∝ r³), but the heat transfer area scales with the square of the size (A ∝ r²), so that the heat production-to-area ratio scales with the size (V/A ∝ r). Consequently, reactions that easily cool fast enough in the laboratory can dangerously self-heat at ton scale. In 2007, this kind of erroneous procedure caused an explosion of a 2,400 U.S. gallons (9,100 L)-reactor used to metalate methylcyclopentadiene with metallic sodium, causing the loss of four lives and parts of the reactor being flung 400 feet (120 m) away. Thus, industrial scale reactions prone to thermal runaway are preferably controlled by the addition of one reagent at a rate corresponding to the available cooling capacity.
+
 Some laboratory reactions must be run under extreme cooling, because they are very prone to hazardous thermal runaway. For example, in Swern oxidation, the formation of  sulfonium chloride must be performed in a cooled system (−30 °C), because at room temperature the reaction undergoes explosive thermal runaway.
 
 ## Microwave heating
@@ -19,8 +23,11 @@ Microwaves are used for heating of various materials in cooking and various indu
 ## Electrical engineering
 
 Some electronic components develop lower resistances or lower triggering voltages (for nonlinear resistances) as their internal temperature increases. If circuit conditions cause markedly increased current flow in these situations, increased power dissipation may raise the temperature further by Joule heating. A vicious circle or positive feedback effect of thermal runaway can cause failure, sometimes in a spectacular fashion (e.g. electrical explosion or fire). To prevent these hazards, well-designed electronic systems typically incorporate current limiting protection, such as thermal fuses, circuit breakers, or PTC current limiters.
+
 To handle larger currents, circuit designers may connect multiple lower-capacity devices (e.g. transistors, diodes, or MOVs) in parallel.  This technique can work well, but it is susceptible to a phenomenon called current hogging, in which the current is not shared equally across all devices.  Typically, one device may have a slightly lower resistance, and thus draws more current, heating it more than its sibling devices, causing its resistance to drop further. The electrical load ends up funnelling into a single device, which then rapidly fails. Thus, an array of devices may end up no more robust than its weakest component.
+
 The current-hogging effect can be reduced by carefully matching the characteristics of each paralleled device, or by using other design techniques to balance the electrical load. However, maintaining load balance under extreme conditions may not be straightforward. Devices with an intrinsic positive temperature coefficient (PTC) of electrical resistance are less prone to current hogging, but thermal runaway can still occur because of poor heat sinking or other problems.
+
 Many electronic circuits contain special provisions to prevent thermal runaway. This is most often seen in transistor biasing arrangements for high-power output stages. However, when equipment is used above its designed ambient temperature, thermal runaway can still occur in some cases. This occasionally causes equipment failures in hot environments, or when air cooling vents are blocked.
 
 ### Semiconductors
@@ -30,9 +37,13 @@ Silicon shows a peculiar profile, in that its electrical resistance increases wi
 ### Bipolar junction transistors (BJTs)
 
 Leakage current increases significantly in bipolar transistors (especially germanium-based bipolar transistors) as they increase in temperature. Depending on the design of the circuit, this increase in leakage current can increase the current flowing through a transistor and thus the power dissipation, causing a further increase in collector-to-emitter leakage current. This is frequently seen in a push–pull stage of a class AB amplifier. If the pull-up and pull-down transistors are biased to have minimal crossover distortion at room temperature, and the biasing is not temperature-compensated, then as the temperature rises both transistors will be increasingly biased on, causing current and power to further increase, and eventually destroying one or both devices.
+
 One rule of thumb to avoid thermal runaway is to keep the operating point of a BJT so that Vce ≤ 1/2 Vcc.
+
 Another practice is to mount a thermal feedback sensing transistor or other device on the heat sink, to control the crossover bias voltage. As the output transistors heat up, so does the thermal feedback transistor. This in turn causes the thermal feedback transistor  to turn on at a slightly lower voltage, reducing the crossover bias voltage, and so reducing the heat dissipated by the output transistors.
+
 If multiple BJT transistors are connected in parallel (which is typical in high current applications), a current hogging problem can occur. Special measures must be taken to control this characteristic vulnerability of BJTs.
+
 In power transistors (which effectively consist of many small transistors in parallel), current hogging can occur between different parts of the transistor itself, with one part of the transistor becoming more hot than the others. This is called second breakdown, and can result in destruction of the transistor even when the average junction temperature seems to be at a safe level.
 
 ### Power MOSFETs
@@ -46,7 +57,9 @@ Metal oxide varistors typically develop lower resistance as they heat up.  If co
 ### Tantalum capacitors
 
 Tantalum capacitors are, under some conditions, prone to self-destruction by thermal runaway. The capacitor typically consists of a sintered tantalum sponge acting as the anode, a manganese dioxide cathode, and a dielectric layer of tantalum pentoxide created on the tantalum sponge surface by anodizing. It may happen that the tantalum oxide layer has weak spots that undergo dielectric breakdown during a voltage spike. The tantalum sponge then comes into direct contact with the manganese dioxide, and increased leakage current causes localized heating; usually, this drives an endothermic chemical reaction that produces manganese(III) oxide and regenerates (self-heals) the tantalum oxide dielectric layer.
+
 However, if the energy dissipated at the failure point is high enough, a self-sustaining exothermic reaction can start, similar to the thermite reaction, with metallic tantalum as fuel and manganese dioxide as oxidizer. This undesirable reaction will destroy the capacitor, producing smoke and possibly flame.
+
 Therefore, tantalum capacitors can be freely deployed in small-signal circuits, but application in high-power circuits must be carefully designed to avoid thermal runaway failures.
 
 ### Digital logic

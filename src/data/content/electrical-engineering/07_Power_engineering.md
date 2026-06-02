@@ -5,9 +5,13 @@ Power engineering, also called power systems engineering, is a subfield of elect
 ## Pioneering years
 
 Electricity became a subject of scientific interest in the late 17th century. Over the next two centuries a number of important discoveries were made including the incandescent light bulb and the voltaic pile. Probably the greatest discovery with respect to power engineering came from Michael Faraday who in 1831 discovered that a change in magnetic flux induces an electromotive force in a loop of wire—a principle known as electromagnetic induction that helps explain how generators and transformers work.
+
 In 1881 two electricians built the world's first power station at Godalming in England. The station employed two waterwheels to produce an alternating current that was used to supply seven Siemens arc lamps at 250 volts and thirty-four incandescent lamps at 40 volts. However supply was intermittent and in 1882 Thomas Edison and his company, The Edison Electric Light Company, developed the first steam-powered electric power station on Pearl Street in New York City. The Pearl Street Station consisted of several generators and initially powered around 3,000 lamps for 59 customers. The power station used direct current and operated at a single voltage. Since the direct current power could not be easily transformed to the higher voltages necessary to minimise power loss during transmission, the possible distance between the generators and load was limited to around half-a-mile (800 m).
+
 That same year in London Lucien Gaulard and John Dixon Gibbs demonstrated the first transformer suitable for use in a real power system. The practical value of Gaulard and Gibbs' transformer was demonstrated in 1884 at Turin where the transformer was used to light up forty kilometres (25 miles) of railway from a single alternating current generator. Despite the success of the system, the pair made some fundamental mistakes. Perhaps the most serious was connecting the primaries of the transformers in series so that switching one lamp on or off would affect other lamps further down the line. Following the demonstration George Westinghouse, an American entrepreneur, imported a number of the transformers along with a Siemens generator and set his engineers to experimenting with them in the hopes of improving them for use in a commercial power system.
+
 One of Westinghouse's engineers, William Stanley, recognised the problem with connecting transformers in series as opposed to parallel and also realised that making the iron core of a transformer a fully enclosed loop would improve the voltage regulation of the secondary winding. Using this knowledge he built the world's first practical transformer based alternating current power system at Great Barrington, Massachusetts in 1886. In 1885 the Italian physicist and electrical engineer Galileo Ferraris demonstrated an induction motor and in 1887 and 1888 the Serbian-American engineer Nikola Tesla filed a range of patents related to power systems including one for a practical two-phase induction motor which Westinghouse licensed for his AC system.
+
 By 1890 the power industry had flourished and power companies had built thousands of power systems (both direct and alternating current) in the United States and Europe – these networks were effectively dedicated to providing electric lighting. During this time a fierce rivalry in the US known as the "war of the currents" emerged between Edison and Westinghouse over which form of transmission (direct or alternating current) was superior. In 1891, Westinghouse installed the first major power system that was designed to drive an electric motor and not just provide electric lighting. The installation powered a 100 horsepower (75 kW) synchronous motor at Telluride, Colorado with the motor being started by a Tesla induction motor. On the other side of the Atlantic, Oskar von Miller built a 20 kV 176 km three-phase transmission line from Lauffen am Neckar to Frankfurt am Main for the Electrical Engineering Exhibition in Frankfurt. In 1895, after a protracted decision-making process, the Adams No. 1 generating station at Niagara Falls began transmitting three-phase alternating current power to Buffalo at 11 kV. Following completion of the Niagara Falls project, new power systems increasingly chose alternating current as opposed to direct current for electrical transmission.
 
 ## Twentieth century
@@ -23,26 +27,35 @@ In 1936 the first commercial high-voltage direct current (HVDC) line using mercu
 ## Power
 
 Power Engineering deals with the generation, transmission, distribution and utilization of electricity as well as the design of a range of related devices. These include transformers, electric generators, electric motors and power electronics.
+
 Power engineers may also work on systems that do not connect to the grid. These systems are called off-grid power systems and may be used in preference to on-grid systems for a variety of reasons. For example, in remote locations it may be cheaper for a mine to generate its own power rather than pay for connection to the grid and in most mobile applications connection to the grid is simply not practical.
 
 ## Fields
 
 Electricity generation covers the selection, design and construction of facilities that convert energy from primary forms to electric power.
+
 Electric power transmission requires the engineering of high voltage transmission lines and substation facilities to interface to generation and distribution systems. High voltage direct current systems are one of the elements of an electric power grid.
+
 Electric power distribution engineering covers those elements of a power system from a substation to the end customer.
+
 Power system protection is the study of the ways an electrical power system can fail, and the methods to detect and mitigate for such failures.
+
 In most projects, a power engineer must coordinate with many other disciplines such as civil and mechanical engineers, environmental experts, and legal and financial personnel. Major power system projects such as a large generating station may require scores of design professionals in addition to the power system engineers. At most levels of professional power system engineering practice, the engineer will require as much in the way of administrative and organizational skills as electrical engineering knowledge.
 
 ## Professional societies and international standards organizations
 
 In both the UK and the US, professional societies had long existed for civil and mechanical engineers. The Institution of Electrical Engineers (IEE) was founded in the UK in 1871, and the AIEE in the United States in 1884. These societies contributed to the exchange of electrical knowledge and the development of electrical engineering education. 
+
 On an international level, the International Electrotechnical Commission (IEC), which was founded in 1906, prepares standards for power engineering, with 20,000 electrotechnical experts from 172 countries developing global specifications based on consensus.
 
 ## 21st century developments
 
 In the 21st century, power engineering has expanded due to global transitions toward cleaner, smarter, and more efficient energy systems. One of the most significant trends is the development of smart grids, which incorporate digital communication technologies, advanced sensors, and distributed control methods. These systems allow for real-time monitoring, response, and integration of changing renewable energies. In the United States, the Department of Energy's Grid Modernization Initiative emphasizes improving reliability, resilience, and efficiency, while addressing challenges such as cybersecurity (U.S. DOE, 2023).
+
 Renewable energy integration has become very important to modern power engineering. The International Energy Agency (IEA) reports that solar panels and wind power are among the fastest-growing energy sources, with record growth expected through the 2030s (IEA, 2023). Power engineers are tasked with handling the variability that comes with renewable power generation through innovations like grid-forming inverters or hybrid plants that combine solar, wind, and large batteries.
+
 Energy storage plays an important role in enabling renewable integration. The International Renewable Energy Agency (IRENA) highlights how falling battery costs are expanding utility-scale storage deployment and making decentralized storage solutions practical for homes and businesses (IRENA, 2017). Pumped hydro, flow batteries, and emerging technologies such as hydrogen-based storage are also receiving renewed attention as long-duration solutions.
+
 Power electronics continues to change the field, providing the backbone for new renewable energy and high-voltage direct current transmission. Advances in semiconductor materials, such as silicon carbide and gallium nitride, have enabled converters that are more efficient and capable of operating at higher voltages. These technologies aid offshore wind, long-distance transmission, and more controllable power flows in complex grids.
 
 ## Climate change and decarbonization
@@ -60,8 +73,11 @@ In Asia, China and India have led large-scale renewable energy projects and inno
 ## Expanded fields of power engineering
 
 Electricity Generation: Modern generation engineering involves thermal, hydroelectric, and nuclear plants, as well as wind, solar, and biomass. Engineers must evaluate resource availability, environmental impacts, and challenges with integrating renewables into existing grids. (UCR, 2025)
+
 Transmission Engineering: Transmission engineers design high-voltage direct current transmission links that reduce line losses and enable the connection of grids. Flexible AC Transmission Systems devices are also used to improve system stability. (UCR, 2025)
+
 Distribution Engineering: Distribution networks now incorporate distributed energy resources such as rooftop solar panels, electric vehicle charging, and local storage. Engineers also design protection systems and automation strategies to increase reliability. (UCR, 2025)
+
 Power System Protection: Modern protection systems employ digital relays, sensors, and wide-area monitoring to find and stop faults quickly. Cybersecurity has also become a growing part of power system protection. (UCR, 2025)
 
 ## Rural electrification and microgrids

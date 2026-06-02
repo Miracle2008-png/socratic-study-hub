@@ -1,17 +1,19 @@
 # Software
 
 Software consists of computer programs that instruct the execution of a computer. Software also includes design documents and specifications.
-The history of software is closely tied to the development of digital computers in the mid-20th century. Early programs were written in the machine language specific to the hardware. The introduction of high-level programming languages in 1958 allowed for more human-readable instructions, making software development easier and more portable across different computer architectures. Software in a programming language is run through a compiler or interpreter to execute on the architecture's hardware. Over time, software has become complex, owing to developments in networking, operating systems, and databases.
-Software can generally be categorized into two main types:
 
 ## Types
 
 There are two main types of software:
 
 Operating systems are "the layer of software that manages a computer's resources for its users and their applications". There are three main purposes that an operating system fulfills:
+
 Allocating resources between different applications, deciding when they will receive central processing unit (CPU) time or space in memory.
+
 Providing an interface that abstracts the details of accessing hardware details (like physical memory) to make things easier for programmers.
+
 Offering common services, such as an interface for accessing network and disk devices. This enables an application to be run on different hardware without needing to be rewritten.
+
 Application software runs on top of the operating system and uses the computer's resources to perform a task. There are many different types of application software because the range of tasks that can be performed with modern computers is so large. Applications account for most software and require the environment provided by an operating system, and often other applications, in order to function.
 
 Software can also be categorized by how it is deployed. Traditional applications are purchased with a perpetual license for a specific version of the software, downloaded, and run on hardware belonging to the purchaser. The rise of the Internet and cloud computing enabled a new model, software as a service (SaaS), in which the provider hosts the software (usually built on top of rented infrastructure or platforms) and provides the use of the software to customers, often in exchange for a subscription fee. By 2023, SaaS products—which are usually delivered via a web application—had become the primary method that companies deliver applications.
@@ -19,12 +21,15 @@ Software can also be categorized by how it is deployed. Traditional applications
 ## Development and maintenance
 
 Software companies aim to deliver a high-quality product on time and under budget. A challenge is that software development effort estimation is often inaccurate. Software development begins by conceiving the project, evaluating its feasibility, analyzing the business requirements, and making a software design. Most software projects speed up their development by reusing or incorporating existing software, either in the form of commercial off-the-shelf (COTS) or open-source software. Software quality assurance is typically a combination of manual code review by other engineers and automated software testing. Due to time constraints, testing cannot cover all aspects of the software's intended functionality, so developers often focus on the most critical functionality. Formal methods are used in some safety-critical systems to prove the correctness of code, while user acceptance testing helps to ensure that the product meets customer expectations. There are a variety of software development methodologies, which vary from completing all steps in order to concurrent and iterative models. Software development is driven by requirements taken from prospective users, as opposed to maintenance, which is driven by events such as a change request.
+
 Frequently, software is released in an incomplete state when the development team runs out of time or funding. Despite testing and quality assurance, virtually all software contains bugs where the system does not work as intended. Post-release software maintenance is necessary to remediate these bugs when they are found and keep the software working as the environment changes over time. New features are often added after the release. Over time, the level of maintenance becomes increasingly restricted before being cut off entirely when the product is withdrawn from the market. As software ages, it becomes known as legacy software and can remain in use for decades, even if there is no one left who knows how to fix it. Over the lifetime of the product, software maintenance is estimated to comprise 75 percent or more of the total development cost.
+
 Completing a software project involves various forms of expertise, not just in software programmers but also testing, documentation writing, project management, graphic design, user experience, user support, marketing, and fundraising.
 
 ## Quality and security
 
 Software quality is defined as meeting the stated requirements as well as customer expectations. Quality is an overarching term that can refer to a code's correct and efficient behavior, its reusability and portability, or the ease of modification. It is usually more cost-effective to build quality into the product from the beginning rather than try to add it later in the development process. Higher quality code will reduce lifetime cost to both suppliers and customers as it is more reliable and easier to maintain. Software failures in safety-critical systems may result in serious harm, including injury or death. By some estimates, the cost of poor quality software can be as high as 20 to 40 percent of sales. Despite developers' goal of delivering a product that works entirely as intended, virtually all software contains bugs.
+
 The rise of the Internet also greatly increased the need for computer security as it enabled malicious actors to conduct cyberattacks remotely. If a bug creates a security risk, it is called a vulnerability. Software patches are often released to fix identified vulnerabilities, but those that remain unknown (zero days) as well as those that have not been patched are still liable for exploitation. Vulnerabilities vary in their ability to be exploited by malicious actors, and the actual risk is dependent on the nature of the vulnerability as well as the value of the surrounding system. Although some vulnerabilities can only be used for denial of service attacks that compromise a system's availability, others allow the attacker to inject and run their own code (called malware), without the user being aware of it. To thwart cyberattacks, all software in the system must be designed to withstand and recover from external attack. Despite efforts to ensure security, a significant fraction of computers are infected with malware.
 
 ## Encoding and execution
@@ -45,6 +50,7 @@ Software is often released with the knowledge that it is incomplete or contains 
 ### Licenses
 
 Since the mid-1970s, software and its source code have been protected by copyright law that vests the owner with the exclusive right to copy the code. The underlying ideas or algorithms are not protected by copyright law, but are sometimes treated as a trade secret and concealed by such methods as non-disclosure agreements. A software copyright is often owned by the person or company that financed or made the software (depending on their contracts with employees or contractors who helped to write it). Some software is in the public domain and has no restrictions on who can use it, copy or share it, or modify it; a notable example is software written by the United States Government. Free and open-source software also allow free use, sharing, and modification, perhaps with a few specified conditions.  The use of some software is governed by an agreement (software license) written by the copyright holder and imposed on the user. Proprietary software is usually sold under a restrictive license that limits its use and sharing. Some free software licenses require that modified versions must be released under the same license, which prevents the software from being sold
+
 or distributed under proprietary restrictions.
 
 ### Patents

@@ -1,7 +1,6 @@
 # Annual Review of Fluid Mechanics
 
 Annual Review of Fluid Mechanics is a peer-reviewed scientific journal covering research on fluid mechanics. It is published once a year by Annual Reviews and the editors are Parviz Moin and Howard Stone.  As of 2023, Annual Review of Fluid Mechanics is being published as open access, under the Subscribe to Open model.
-As of 2025,  Journal Citation Reports gives the journal a 2024 impact factor of 30.2, ranking it first out of 41 journals in "Physics, Fluids and Plasmas" and first out of 171 journals in the category "Mechanics".
 
 ## Scope and indexing
 
@@ -16,13 +15,21 @@ The Annual Review of Fluid Mechanics is helmed by the editor or the co-editors. 
 Dates indicate publication years in which someone was credited as a lead editor or co-editor of a journal volume. The planning process for a volume begins well before the volume appears, so appointment to the position of lead editor generally occurred prior to the first year shown here. An editor who has retired or died may be credited as a lead editor of a volume that they helped to plan, even if it is published after their retirement or death.
 
 William R. Sears (1969)
+
 Milton Van Dyke, Walter G. Vincenti, and John V. Wehausen (1970–1976)
+
 Van Dyke, Wehausen, and John L. Lumley (1977–1986)
+
 Van Dyke, Lumley, and Helen L. Reed (1987–2000)
+
 Lumley, Reed, and Stephen H. Davis (2001)
+
 Lumley, Davis, and Parviz Moin (2002)
+
 Davis and Moin (2003–2021)
+
 Moin and Howard A. Stone (2021-2025)
+
 Stone and Jonathan B. Freund (2025-)
 
 ### Current editorial committee

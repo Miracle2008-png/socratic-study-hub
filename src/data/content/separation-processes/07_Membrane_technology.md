@@ -1,14 +1,15 @@
 # Membrane technology
 
 Membrane technology encompasses the scientific processes used in the construction and application of membranes. Membranes are used to facilitate the transport or rejection of substances between mediums, and the mechanical separation of gas and liquid streams. In the simplest case, filtration is achieved when the pores of the membrane are smaller than the diameter of the undesired substance, such as a harmful microorganism. Membrane technology is commonly used in industries such as water treatment, chemical and metal processing, pharmaceuticals, biotechnology, the food industry, as well as the removal of environmental pollutants.
-After membrane construction, there is a need to characterize the prepared membrane to know more about its parameters, like pore size, function group, material properties, etc., which are difficult to determine in advance. In this process, instruments such as the Scanning Electron Microscope, the Transmission electron Microscope, the Fourier Transform Infrared Spectroscopy, X-ray Diffraction, and Liquid–Liquid Displacement Porosimetry are utilized.
 
 ## Mass transfer
 
 Two basic models can be distinguished for mass transfer through the membrane:
 
 the solution-diffusion model and
+
 the hydrodynamic model.
+
 In real membranes, these two transport mechanisms certainly occur side by side, especially during ultra-filtration.
 
 ### Solution-diffusion model
@@ -24,28 +25,47 @@ Transport through pores – in the simplest case – is done convectively. This 
 According to the driving force of the operation, it is possible to distinguish:
 
 Pressure-driven operations
+
 microfiltration
+
 ultrafiltration
+
 nanofiltration
+
 reverse osmosis
+
 gas separation
+
 Concentration driven operations
+
 dialysis
+
 pervaporation
+
 forward osmosis
+
 artificial lung
+
 Operations in an electric potential gradient
+
 electrodialysis
+
 membrane electrolysis e.g. chloralkaline process
+
 electrode ionization
+
 electro filtration
+
 fuel cell
+
 Operations in a temperature gradient
+
 membrane distillation
 
 ## Membrane shapes and flow geometries
 
 There are two main flow configurations of membrane processes: cross-flow (or tangential flow) and dead-end filtrations. In cross-flow filtration the feed flow is tangential to the surface of the membrane, retentate is removed from the same side further downstream, whereas the permeate flow is tracked on the other side. In dead-end filtration, the direction of the fluid flow is normal to the membrane surface. Both flow geometries offer some advantages and disadvantages. Generally, dead-end filtration is used for feasibility studies on a laboratory scale. The dead-end membranes are relatively easy to fabricate which reduces the cost of the separation process. The dead-end membrane separation process is easy to implement and the process is usually cheaper than cross-flow membrane filtration.  The dead-end filtration process is usually a batch-type process, where the filtering solution is loaded (or slowly fed) into the membrane device, which then allows passage of some particles subject to the driving force. The main disadvantage of dead-end filtration is the extensive membrane fouling and concentration polarization. The fouling is usually induced faster at higher driving forces. Membrane fouling and particle retention in a feed solution also builds up a concentration gradients and particle backflow (concentration polarization). The tangential flow devices are more cost and labor-intensive, but they are less susceptible to fouling due to the sweeping effects and high shear rates of the passing flow. The most commonly used synthetic membrane devices (modules) are flat sheets/plates, spiral wounds, and hollow fibers. Flat membranes used in filtration and separation processes can be enhanced with surface patterning, where microscopic structures are introduced to improve performance. These patterns increase surface area, optimize water flow, and reduce fouling, leading to higher permeability and longer membrane lifespan. Research has shown that such modifications can significantly enhance efficiency in water purification, energy applications, and industrial separations.
+
 Flat plates are usually constructed as circular thin flat membrane surfaces to be used in dead-end geometry modules. Spiral wounds are constructed from similar flat membranes but in the form of a "pocket" containing two membrane sheets separated by a highly porous support plate. Several such pockets are then wound around a tube to create a tangential flow geometry and to reduce membrane fouling. Hollow fiber modules consist of an assembly of self-supporting fibers with dense skin separation layers, and a more open matrix helping to withstand pressure gradients and maintain structural integrity. The hollow fiber modules can contain up to 10,000 fibers ranging from 200 to 2500 μm in diameter; The main advantage of hollow fiber modules is the very large surface area within an enclosed volume, increasing the efficiency of the separation process.
 
  The Disc tube module uses a cross-flow geometry and consists of a pressure tube and hydraulic discs, which are held by a central tension rod, and membrane cushions that lie between two discs.
@@ -54,126 +74,56 @@ Flat plates are usually constructed as circular thin flat membrane surfaces to b
 
 The selection of synthetic membranes for a targeted separation process is usually based on few requirements. Membranes have to provide enough mass transfer area to process large amounts of feed stream. The selected membrane has to have high selectivity (rejection) properties for certain particles; it has to resist fouling and to have high mechanical stability. It also needs to be reproducible and to have low manufacturing costs. The main modeling equation for the dead-end filtration at constant pressure drop is represented by Darcy's law:
 
-  
-    
-      
-        
-          
-            
               d
-              
                 V
-                
                   p
-                
-              
-            
-            
               d
+
               t
-            
-          
-        
         =
+
         Q
+
         =
-        
-          
-            
               Δ
+
               p
-            
             μ
-          
-        
-         
         A
-        
           (
-          
-            
               1
-              
-                
                   R
-                  
                     m
-                  
-                
                 +
+
                 R
-              
-            
-          
           )
-        
-      
-    
-    
 
 $$ {\frac {dV_{p}}{dt}}=Q={\frac {\Delta p}{\mu }}\ A\left({\frac {1}{R_{m}+R}}\right) $$
 
-  
-
 where Vp and Q are the volume of the permeate and its volumetric flow rate respectively (proportional to same characteristics of the feed flow), μ is dynamic viscosity of permeating fluid, A is membrane area, Rm and R are the respective resistances of membrane and growing deposit of the foulants.  Rm can be interpreted as a membrane resistance to the solvent (water) permeation. This resistance is a membrane intrinsic property and is expected to be fairly constant and independent of the driving force, Δp. R is related to the type of membrane foulant, its concentration in the filtering solution, and the nature of foulant-membrane interactions. Darcy's law allows for calculation of the membrane area for a targeted separation at given conditions. The solute sieving coefficient is defined by the equation:
 
-  
-    
-      
         S
+
         =
-        
-          
-            
               C
-              
                 p
-              
-            
-            
               C
-              
                 f
-              
-            
-          
-        
-      
-    
-    
 
 $$ S={\frac {C_{p}}{C_{f}}} $$
 
-  
-
 where Cf and Cp are the solute concentrations in feed and permeate respectively. Hydraulic permeability is defined as the inverse of resistance and is represented by the equation:
 
-  
-    
-      
-        
           L
-          
             p
-          
-        
         =
-        
-          
             J
-            
               Δ
+
               p
-            
-          
-        
-      
-    
-    
 
 $$ L_{p}={\frac {J}{\Delta p}} $$
-
-  
 
 where J is the permeate flux which is the volumetric flow rate per unit of membrane area. The solute sieving coefficient and hydraulic permeability allow the quick assessment of the synthetic membrane performance.
 
@@ -184,14 +134,19 @@ Membrane separation processes have a very important role in the separation indus
 ## Pore size and selectivity
 
 The pore sizes of technical membranes are specified differently depending on the manufacturer. One common distinction is by nominal pore size. It describes the maximum pore size distribution and gives only vague information about the retention capacity of a membrane. The exclusion limit or "cut-off" of the membrane is usually specified in the form of NMWC (nominal molecular weight cut-off, or MWCO, molecular weight cut off, with units in Dalton). It is defined as the minimum molecular weight of a globular molecule that is retained to 90% by the membrane. The cut-off, depending on the method, can by converted to so-called D90, which is then expressed in a metric unit. In practice the MWCO of the membrane should be at least 20% lower than the molecular weight of the molecule that is to be separated.
+
 Using track etched mica membranes Beck and Schultz demonstrated that hindered diffusion of molecules in pores can be described by the Rankin equation.
+
 Filter membranes are divided into four classes according to pore size:
 
 The form and shape of the membrane pores are highly dependent on the manufacturing process and are often difficult to specify. Therefore, for characterization, test filtrations are carried out and the pore diameter refers to the diameter of the smallest particles which could not pass through the membrane.
+
 The rejection can be determined in various ways and provides an indirect measurement of the pore size. One possibility is the filtration of macromolecules (often dextran, polyethylene glycol or albumin), another is measurement of the cut-off by gel permeation chromatography. These methods are used mainly to measure membranes for ultrafiltration applications. Another testing method is the filtration of particles with defined size and their measurement with a particle sizer or by laser induced breakdown spectroscopy (LIBS). A vivid characterization is to measure the rejection of dextran blue or other colored molecules. The retention of bacteriophage and bacteria, the so-called "bacteria challenge test", can also provide information about the pore size.
 
 To determine the pore diameter, physical methods such as porosimeter (mercury, liquid-liquid porosimeter and Bubble Point Test) are also used, but a certain form of the pores (such as cylindrical or concatenated spherical holes) is assumed. Such methods are used for membranes whose pore geometry does not match the ideal, and we get "nominal" pore diameter, which characterizes the membrane, but does not necessarily reflect its actual filtration behavior and selectivity.
+
 The selectivity is highly dependent on the separation process, the composition of the membrane and its electrochemical properties in addition to the pore size. With high selectivity, isotopes can be enriched (uranium enrichment) in nuclear engineering or industrial gases like nitrogen can be recovered (gas separation). Ideally, even racemics can be enriched with a suitable membrane.
+
 When choosing membranes selectivity has priority over a high permeability, as low flows can easily be offset by increasing the filter surface with a modular structure. In gas phase filtration different deposition mechanisms are operative, so that particles having sizes below the pore size of the membrane can be retained as well.
 
 ## Membrane Classification
@@ -213,11 +168,17 @@ A biomass-based membrane is a membrane made from organic materials such as plant
 List of instruments used in membrane synthesis procedures:
 
 Centrifuge
+
 Casting Machine
+
 Plane casting glass
+
 Magnetic Stirrer
+
 Glass ware: Beakers, measuring cylinders, flask etc.
+
 Oven
+
 Mortar and pestle
 
 ## Membrane Characterization
@@ -225,10 +186,17 @@ Mortar and pestle
 After casting and synthesis of membrane there is need to characterize the prepared membrane to know more details about membrane parameters, like pore size, functional groups, wettability, surface charge, etc. It is important to know membrane properties so we are able to remove and treat a particulate pollutant, which causes pollution in the environment. For characterization following different instruments are used:
 
 Scanning Electron Microscope (SEM)
+
 Transmission electron Microscope (TEM)
+
 Fourier Transform Infrared Spectroscopy (FTIR)
+
 Atomic force microscopy
+
 Contact angle meter
+
 Zeta potential (streaming potential)
+
 X-ray Diffraction (XRD)
+
 Liquid–Liquid Displacement Porosimetry (LLDP)

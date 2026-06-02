@@ -12,13 +12,18 @@ EET curricula can vary widely by institution type, degree type, program objectiv
 
 #### Associate degree
 Associate degree programs emphasize the practical field knowledge that is needed to maintain or troubleshoot existing electrical/electronic systems or to build and test new design prototypes.
+
 Discipline-specific program outcomes include the application of circuit analysis and design, analog and digital electronics, computer programming, associated software, and relevant engineering standards
+
 Coursework must be at a minimum algebra and trigonometry based.
 
 #### Bachelor's degree
 Bachelor's degree programs emphasize the analysis, design, and implementation of electrical/electronic systems. Some programs may focus on a specific sub-discipline, such as control systems or communications systems, while others may take a broader approach, introducing the student to several different sub-disciplines.
+
 Math to differential equations is a minimum requirement for ABET accredited bachelor's level EET degrees. In addition, graduates must demonstrate an understanding of basic project management skills.
+
 The United States Department of Commerce classifies the bachelor of science in electrical engineering technology (BSEET) as a STEM undergraduate engineering degree field.
+
 In many states, recent graduates and students who are close to finishing an undergraduate BSEET degree are qualified to sit-in for the Fundamentals of Engineering exam while those BSEETs who have already gained at least four years’ post-college experience are qualified to sit-in for the Professional Engineer exam for their licensure in the United States. The importance of the licensing board requirements depend upon location, level of education, required years of experience, and the BSEETs sub-discipline are the passageways for becoming a licensed engineer. The knowledge obtained by a TAC/ABET accredited program is one pathway that may help students prepare for and pass the FE/PE exam. For example, in the United States and Canada, "only a licensed engineer may seal engineering work for public and private clients".
 
 ## Career

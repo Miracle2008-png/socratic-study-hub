@@ -1,11 +1,11 @@
 # Search-based software engineering
 
 Search-based software engineering (SBSE) applies metaheuristic search techniques such as genetic algorithms, simulated annealing and tabu search to software engineering problems. Many activities in software engineering can be stated as optimization problems. Optimization techniques of operations research such as linear programming or dynamic programming are often impractical for large scale software engineering problems because of their computational complexity or their assumptions on the problem structure. Researchers and practitioners use metaheuristic search techniques, which impose little assumptions on the problem structure, to find near-optimal or "good-enough" solutions.
-SBSE problems can be divided into two types:
 
 ## Definition
 
 SBSE converts a software engineering problem into a computational search problem that can be tackled with a metaheuristic. This involves defining a search space, or the set of possible solutions. This space is typically too large to be explored exhaustively, suggesting a metaheuristic approach. A metric (also called a fitness function, cost function, objective function or quality measure) is then used to measure the quality of potential solutions. Many software engineering problems can be reformulated as a computational search problem.
+
 The term "search-based application", in contrast, refers to using search-engine technology, rather than search techniques, in another industrial application.
 
 ## Application areas
@@ -19,8 +19,11 @@ Requirements engineering is the process by which the needs of a software's users
 ### Debugging and maintenance
 
 Identifying a software bug (or a code smell) and then debugging (or refactoring) the software is largely a manual and labor-intensive endeavor, though the process is tool-supported. One objective of SBSE is to automatically identify and fix bugs (for example via mutation testing).
+
 Genetic programming, a biologically inspired technique that involves evolving programs through the use of crossover and mutation, has been used to search for repairs to programs by altering a few lines of source code. The GenProg Evolutionary Program Repair software repaired 55 out of 105 bugs for approximately $8 each in one test.
+
 Empirical analysis of bug-fix patterns mined from software repositories has been used to mathematically characterize the search space of automated program repair.
+
 Coevolution adopts a "predator and prey" metaphor in which a suite of programs and a suite of unit tests evolve together and influence each other.
 
 ### Testing
@@ -30,6 +33,7 @@ Search-based software engineering has been applied to software testing, includin
 ### Optimizing software
 
 The use of SBSE in program optimization, or modifying a piece of software to make it more efficient in terms of speed and resource use, has been the object of successful research. In one instance, a 50,000 line program was genetically improved, resulting in a program 70 times faster on average.
+
 A recent work by Basios et al. shows that by optimising the data structure, Google Guava found a 9% improvement in execution time, 13% improvement in memory consumption and 4% improvement in CPU usage separately.
 
 ### Project management
@@ -45,14 +49,21 @@ Tools available for SBSE include OpenPAT, EvoSuite, and Coverage, a code coverag
 A number of methods and techniques are available, including:
 
 Profiling via instrumentation in order to monitor certain parts of a program as it is executed.
+
 Obtaining an abstract syntax tree associated with the program, which can be automatically examined to gain insights into its structure.
+
 Applications of program slicing relevant to SBSE include software maintenance, optimization and program analysis.
+
 Code coverage allows measuring how much of the code is executed with a given set of input data.
+
 Static program analysis
 
 ## Industry acceptance
 
 As a relatively new area of research, SBSE does not yet experience broad industry acceptance.
+
 Successful applications of SBSE in the industry can mostly be found within software testing, where the capability to automatically generate random test inputs for uncovering bugs at a big scale is attractive to companies. In 2017, Facebook acquired the software startup Majicke Limited that developed Sapienz, a search-based bug finding app.
+
 In other application scenarios, software engineers may be reluctant to adopt tools over which they have little control or that generate solutions that are unlike those that humans produce. In the context of SBSE use in fixing or improving programs, developers need to be confident that any automatically produced modification does not generate unexpected behavior outside the scope of a system's requirements and testing environment. Considering that fully automated programming has yet to be achieved, a desirable property of such modifications would be that they need to be easily understood by humans to support maintenance activities.
+
 Another concern is that SBSE might make the software engineer redundant. Supporters claim that the motivation for SBSE is to enhance the relationship between the engineer and the program.

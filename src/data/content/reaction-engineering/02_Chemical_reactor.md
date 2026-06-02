@@ -13,10 +13,15 @@ The simplest type of reactor is a batch reactor. Materials are loaded into a bat
 In a CSTR, one or more fluid reagents are introduced into a tank reactor which is typically stirred with an impeller to ensure proper mixing of the reagents while the reactor effluent is removed. Dividing the volume of the tank by the average volumetric flow rate through the tank gives the space time, or the time required to process one reactor volume of fluid. Using chemical kinetics, the reaction's expected percent completion can be calculated. Some important aspects of the CSTR:
 
 At steady-state, the mass flow rate in must equal the mass flow rate out, otherwise the tank will overflow or go empty (transient state). While the reactor is in a transient state the model equation must be derived from the differential mass and energy balances.
+
 The reaction proceeds at the reaction rate associated with the final (output) concentration, since the concentration is assumed to be homogenous throughout the reactor.
+
 Often, it is economically beneficial to operate several CSTRs in series. This allows, for example, the first CSTR to operate at a higher reagent concentration and therefore a higher reaction rate. In these cases, the sizes of the reactors may be varied in order to minimize the total capital investment required to implement the process.
+
 It can be demonstrated that an infinite number of infinitely small CSTRs operating in series would be equivalent to a PFR.
+
 The behavior of a CSTR is often approximated or modeled by that of a Continuous Ideally Stirred-Tank Reactor (CISTR). All calculations performed with CISTRs assume perfect mixing. If the residence time is 5-10 times the mixing time, this approximation is considered valid for engineering purposes. The CISTR model is often used to simplify engineering calculations and can be used to describe research reactors. In practice it can only be approached, particularly in industrial size reactors in which the mixing time may be very large.
+
 A loop reactor is a hybrid type of catalytic reactor that physically resembles a tubular reactor, but operates like a CSTR. The reaction mixture is circulated in a loop of tube, surrounded by a jacket for cooling or heating, and there is a continuous flow of starting material in and product out.
 
 ### PFR (plug flow reactor)
@@ -24,9 +29,13 @@ A loop reactor is a hybrid type of catalytic reactor that physically resembles a
 In a PFR, sometimes called continuous tubular reactor (CTR), one or more fluid reagents are pumped through a pipe or tube. The chemical reaction proceeds as the reagents travel through the PFR. In this type of reactor, the changing reaction rate creates a gradient with respect to distance traversed; at the inlet to the PFR the rate is very high, but as the concentrations of the reagents decrease and the concentration of the product(s) increases the reaction rate slows. Some important aspects of the PFR:
 
 The idealized PFR model assumes no axial mixing: any element of fluid traveling through the reactor doesn't mix with fluid upstream or downstream from it, as implied by the term "plug flow".
+
 Reagents may be introduced into the PFR at locations in the reactor other than the inlet. In this way, a higher efficiency may be obtained, or the size and cost of the PFR may be reduced.
+
 A PFR has a higher theoretical efficiency than a CSTR of the same volume. That is, given the same space-time (or residence time), a reaction will proceed to a higher percentage completion in a PFR than in a CSTR. This is not always true for reversible reactions.
+
 For most chemical reactions of industrial interest, it is impossible for the reaction to proceed to 100% completion. The rate of reaction decreases as the reactants are consumed until the point where the system reaches dynamic equilibrium (no net reaction, or change in chemical species occurs). The equilibrium point for most systems is less than 100% complete. For this reason a separation process, such as distillation, often follows a chemical reactor in order to separate any remaining reagents or byproducts from the desired product. These reagents may sometimes be reused at the beginning of the process, such as in the Haber process. In some cases, very large reactors would be necessary to approach equilibrium, and chemical engineers may choose to separate the partially reacted mixture and recycle the leftover reactants.
+
 Under laminar flow conditions, the assumption of plug flow is highly inaccurate, as the fluid traveling through the center of the tube moves much faster than the fluid at the wall. The continuous oscillatory baffled reactor (COBR) achieves thorough mixing by the combination of fluid oscillation and orifice baffles, allowing plug flow to be approximated under laminar flow conditions.
 
 ### Semibatch reactor
@@ -36,5 +45,7 @@ A semibatch reactor is operated with both continuous and batch inputs and output
 ### Catalytic reactor
 
 Although catalytic reactors are often implemented as plug flow reactors, their analysis requires more complicated treatment. The rate of a catalytic reaction is proportional to the amount of catalyst the reagents contact, as well as the concentration of the reactants. With a solid phase catalyst and fluid phase reagents, this is proportional to the exposed area, efficiency of diffusion of reagents in and products out, and efficacy of mixing. Perfect mixing usually cannot be assumed. Furthermore, a catalytic reaction pathway often occurs in multiple steps with intermediates that are chemically bound to the catalyst; and as the chemical binding to the catalyst is also a chemical reaction, it may affect the kinetics. Catalytic reactions often display so-called falsified kinetics, when the apparent kinetics differ from the actual chemical kinetics due to physical transport effects.
+
 The behavior of the catalyst is also a consideration. Particularly in high-temperature petrochemical processes, catalysts are deactivated by processes such as sintering, coking, and poisoning.
+
 A common example of a catalytic reactor is the catalytic converter that processes toxic components of automobile exhausts. However, most petrochemical reactors are catalytic, and are responsible for most industrial chemical production, with extremely high-volume examples including sulfuric acid, ammonia, reformate/BTEX (benzene, toluene, ethylbenzene and xylene), and fluid catalytic cracking. Various configurations are possible, see Heterogeneous catalytic reactor.

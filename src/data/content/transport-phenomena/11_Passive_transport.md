@@ -1,96 +1,68 @@
 # Passive transport
 
 Passive transport is a type of membrane transport that does not require energy to move substances across cell membranes. Instead of using cellular energy, like active transport, passive transport relies on the second law of thermodynamics to drive the movement of substances across cell membranes. Fundamentally, substances follow Fick's first law, and move from an area of high concentration to an area of low concentration because this movement increases the entropy of the overall system. The rate of passive transport depends on the permeability of the cell membrane, which, in turn, depends on the organization and characteristics of the membrane lipids and proteins. The four main kinds of passive transport are simple diffusion, facilitated diffusion, filtration, and/or osmosis. 
-Passive transport follows Fick's first law.
 
 ## Diffusion
 
 Diffusion is the net movement of material from an area of high concentration to an area with lower concentration. The difference of concentration between the two areas is often termed as the concentration gradient, and diffusion will continue until this gradient has been eliminated. Since diffusion moves materials from an area of higher concentration to an area of lower concentration, it is described as moving solutes "down the concentration gradient" (compared with active transport, which often moves material from area of low concentration to area of higher concentration, and therefore referred to as moving the material "against the concentration gradient"). 
+
 However, in many cases (e.g. passive drug transport) the driving force of passive transport can not be simplified to the concentration gradient. If there are different solutions at the two sides of the membrane with different equilibrium solubility of the drug, the difference in the degree of saturation is the driving force of passive membrane transport. It is also true for supersaturated solutions which are more and more important owing to the spreading of the application of amorphous solid dispersions for drug bioavailability enhancement.
+
 Simple diffusion and osmosis are in some ways similar. Simple diffusion is the passive movement of solute from a high concentration to a lower concentration until the concentration of the solute is uniform throughout and reaches equilibrium. Osmosis is much like simple diffusion but it specifically describes the movement of water (not the solute) across a selectively permeable membrane until there is an equal concentration of water and solute on both sides of the membrane. Simple diffusion and osmosis are both forms of passive transport and require none of the cell's ATP energy.
 
 ### Speed of diffusion
 
 For passive diffusion, the law of diffusion states that the mean squared displacement is 
-  
-    
-      
         ⟨
-        
           r
-          
             2
-          
-        
         ⟩
+
         =
+
         2
+
         d
+
         D
+
         t
-      
-    
-    
 
 $$ \langle r^{2}\rangle =2dDt $$
 
-  
  with d being the number of dimensions and D the diffusion coefficient). So to diffuse a distance of about 
-  
-    
-      
         x
-      
-    
-    
 
 $$ x $$
 
-  
  takes time 
-  
-    
-      
         ∼
-        
           x
-          
             2
-          
-        
-        
           /
-        
         2
+
         d
+
         D
-      
-    
-    
 
 $$ \sim x^{2}/2dD $$
 
-  
 , and the "average speed" is 
-  
-    
-      
         ∼
+
         2
+
         d
+
         D
-        
           /
-        
         x
-      
-    
-    
 
 $$ \sim 2dD/x $$
 
-  
 . This means that in the same physical environment, diffusion is fast when the distance is small, but less when the distance is large.
+
 This can be seen in material transport within the cell. Prokaryotes typically have small bodies, allowing diffusion to suffice for material transport within the cell. Larger cells like eukaryotes would either have very low metabolic rate to accommodate the slowness of diffusion, or invest in complex cellular machinery to allow active transport within the cell, such as kinesin walking along microtubules.
 
 ### Example of diffusion: gas exchange

@@ -1,7 +1,6 @@
 # Civil engineering
 
 Civil engineering is a professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewage systems, pipelines, structural components of buildings, and railways.
-Civil engineering is traditionally broken into a number of sub-disciplines. It is considered the second-oldest engineering discipline after military engineering, and it is defined to distinguish non-military engineering from military engineering. Civil engineering can take place in the public sector from municipal public works departments through to federal government agencies, and in the private sector from locally based firms to Fortune Global 500 companies.
 
 ## Education
 
@@ -10,7 +9,9 @@ Civil engineers typically possess an academic degree in civil engineering. The l
 ## Practicing engineers
 
 In most countries, a bachelor's degree in engineering represents the first step towards professional certification, and a professional body certifies the degree program. After completing a certified degree program, the engineer must satisfy a range of requirements including work experience and exam requirements before being certified. Once certified, the engineer is designated as a professional engineer (in the United States, Canada and South Africa), a chartered engineer (in most Commonwealth countries), a chartered professional engineer (in Australia and New Zealand), or a European engineer (in most countries of the European Union). There are international agreements between relevant professional bodies to allow engineers to practice across national borders.
+
 The benefits of certification vary depending upon location. For example, in the United States and Canada, "only a licensed professional engineer may prepare, sign and seal, and submit engineering plans and drawings to a public authority for approval, or seal engineering work for public and private clients." This requirement is enforced under provincial law such as the Engineers Act in Quebec. No such legislation has been enacted in other countries including the United Kingdom. In Australia, state licensing of engineers is limited to the state of Queensland. Almost all certifying bodies maintain a code of ethics which all members must abide by.
+
 Engineers must obey contract law in their contractual relationships with other parties. In cases where an engineer's work fails, they may be subject to the law of tort of negligence, and in extreme cases, criminal charges. An engineer's work must also comply with numerous other rules and regulations such as building codes and environmental law.
 
 ## Sub-disciplines
@@ -32,6 +33,7 @@ Earthquake engineering involves designing structures to withstand hazardous eart
 ### Environmental engineering
 
 Environmental engineering is the contemporary term for sanitary engineering, though sanitary engineering traditionally had not included much of the hazardous waste management and environmental remediation work covered by environmental engineering. Public health engineering and environmental health engineering are other terms being used.
+
 Environmental engineering deals with treatment of chemical, biological, or thermal wastes, purification of water and air, and remediation of contaminated sites after waste disposal or accidental contamination. Among the topics covered by environmental engineering are pollutant transport, water purification, waste water treatment, air pollution, solid waste treatment, recycling, and hazardous waste management. Environmental engineers administer pollution reduction, green engineering, and industrial ecology. Environmental engineers also compile information on environmental consequences of proposed actions.
 
 ### Forensic engineering
@@ -41,11 +43,13 @@ Forensic engineering is the investigation of materials, products, structures or 
 ### Geotechnical engineering
 
 Geotechnical engineering studies rock and soil supporting civil engineering systems. Knowledge from the field of soil science, materials science, mechanics, and hydraulics is applied to safely and economically design foundations, retaining walls, and other structures. Environmental efforts to protect groundwater and safely maintain landfills have spawned a new area of research called geo-environmental engineering.
+
 Identification of soil properties presents challenges to geotechnical engineers. Boundary conditions are often well defined in other branches of civil engineering, but unlike steel or concrete, the material properties and behavior of soil are difficult to predict due to its variability and limitation on investigation. Furthermore, soil exhibits nonlinear (stress-dependent) strength, stiffness, and dilatancy (volume change associated with application of shear stress), making studying soil mechanics all the more difficult. Geotechnical engineers frequently work with professional geologists,  Geological Engineering professionals and soil scientists.
 
 ### Materials science and engineering
 
 Materials science is closely related to civil engineering. It studies fundamental characteristics of materials, and deals with ceramics such as concrete and mix asphalt concrete, strong metals such as aluminum and steel, and thermosetting polymers including polymethylmethacrylate (PMMA) and carbon fibers.
+
 Materials engineering involves protection and prevention (paints and finishes). Alloying combines two types of metals to produce another metal with desired properties. It incorporates elements of applied physics and chemistry. With recent media attention on nanoscience and nanotechnology, materials engineering has been at the forefront of academic research. It is also an important part of forensic engineering and failure analysis.
 
 ### Site development and planning
@@ -55,6 +59,7 @@ Site development, also known as site planning, is focused on the planning and de
 ### Structural engineering
 
 Structural engineering is concerned with the structural design and structural analysis of buildings, bridges, towers, flyovers (overpasses), tunnels, off shore structures like oil and gas fields in the sea, aerostructure and other structures. This involves identifying the loads which act upon a structure and the forces and stresses which arise within that structure due to those loads, and then designing the structure to successfully support and resist those loads. The loads can be self weight of the structures, other dead load, live loads, moving (wheel) load, wind load, earthquake load, load from temperature change etc. The structural engineer must design structures to be safe for their users and to successfully fulfill the function they are designed for (to be serviceable). Due to the nature of some loading conditions, sub-disciplines within structural engineering have emerged, including wind engineering and earthquake engineering.
+
 Design considerations will include strength, stiffness, and stability of the structure when subjected to loads which may be static, such as furniture or self-weight, or dynamic, such as wind, seismic, crowd or vehicle loads, or transitory, such as temporary construction loads or impact. Other considerations include cost, constructibility, safety, aesthetics and sustainability.
 
 ### Surveying
@@ -66,12 +71,17 @@ Although surveying is a distinct profession with separate qualifications and lic
 Land surveying
 
 In the United States, Canada, the United Kingdom and most Commonwealth countries land surveying is considered to be a separate and distinct profession. Land surveyors are not considered to be engineers, and have their own professional associations and licensing requirements. The services of a licensed land surveyor are generally required for boundary surveys (to establish the boundaries of a parcel using its legal description) and subdivision plans (a plot or map based on a survey of a parcel of land, with boundary lines drawn inside the larger parcel to indicate the creation of new boundary lines and roads), both of which are generally referred to as Cadastral surveying. They collect data on important geological features below and on the land.
+
 Construction surveying
+
 Construction surveying is generally performed by specialized technicians. Unlike land surveyors, the resulting plan does not have legal status. Construction surveyors perform the following tasks:
 
 Surveying existing conditions of the future work site, including topography, existing buildings and infrastructure, and underground infrastructure when possible;
+
 "lay-out" or "setting-out": placing reference points and markers that will guide the construction of new structures such as roads or buildings;
+
 Verifying the location of structures during construction;
+
 As-Built surveying: a survey conducted at the end of the construction project to verify that the work authorized was completed to the specifications set on plans.
 
 ### Transportation engineering

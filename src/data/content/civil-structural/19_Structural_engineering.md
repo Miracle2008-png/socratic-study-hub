@@ -1,7 +1,6 @@
 # Structural engineering
 
 Structural engineering is a sub-discipline of civil engineering in which structural engineers are trained to design the 'bones and joints' that create the form and shape of human-made structures. Structural engineers also must understand and calculate the stability, strength, rigidity and earthquake-susceptibility of built structures for buildings and nonbuilding structures. The structural designs are integrated with those of other designers such as architects and building services engineer and often supervise the construction of projects by contractors on site. They can also be involved in the design of machinery, medical equipment, and vehicles where structural integrity affects functioning and safety. See glossary of structural engineering.
-Structural engineering theory is based upon applied physical laws and empirical knowledge of the structural performance of different materials and geometries. Structural engineering design uses a number of relatively simple structural concepts to build complex structural systems. Structural engineers are responsible for making creative and efficient use of funds, structural elements and materials to achieve these goals.
 
 ## Theory
 
@@ -10,10 +9,15 @@ Structural engineering depends upon a detailed knowledge of applied mechanics, m
 ## Profession
 
 Structural engineers are responsible for engineering design and structural analysis. Entry-level structural engineers may design the individual structural elements of a structure, such as the beams and columns of a building. More experienced engineers may be responsible for the structural design and integrity of an entire system, such as a building.
+
 Structural engineers often specialize in particular types of structures, such as buildings, bridges, pipelines, industrial constructions, tunnels, vehicles, ships, aircraft, and spacecraft. Structural engineers who specialize in buildings may specialize in particular construction materials such as concrete, steel, wood, masonry, alloys and composites.
+
 Structural engineering has existed since humans first started to construct their structures. It became a more defined and formalized profession with the emergence of architecture as a distinct profession from engineering during the industrial revolution in the late 19th century. Until then, the architect and the structural engineer were usually one and the same thing – the master builder. Only with the development of specialized knowledge of structural theories that emerged during the 19th and early 20th centuries, did the professional structural engineers come into existence.
+
 The role of a structural engineer today involves a significant understanding of both static and dynamic loading and the structures that are available to resist them. The complexity of modern structures often requires a great deal of creativity from the engineer in order to ensure the structures support and resist the loads they are subjected to. A structural engineer will typically have a four or five-year undergraduate degree, followed by a minimum of three years of professional practice before being considered fully qualified.
+
 Structural engineers are licensed or accredited by different learned societies and regulatory bodies around the world (for example, the Institution of Structural Engineers in the UK). Depending on the degree course they have studied and/or the jurisdiction they are seeking licensure in, they may be accredited (or licensed) as just structural engineers, or as civil engineers, or as both civil and structural engineers.
+
 Another international organisation is IABSE(International Association for Bridge and Structural Engineering). The aim of that association is to exchange knowledge and to advance the practice of structural engineering worldwide in the service of the profession and society.
 
 ## Specializations
@@ -21,21 +25,31 @@ Another international organisation is IABSE(International Association for Bridge
 ### Building structures
 
 Structural building engineering is primarily driven by the creative manipulation of materials and forms and the underlying mathematical and scientific ideas to achieve an end that fulfills its functional requirements and is structurally safe when subjected to all the loads it could reasonably be expected to experience. This is subtly different from architectural design, which is driven by the creative manipulation of materials and forms, mass, space, volume, texture, and light to achieve an end which is aesthetic, functional, and often artistic.
+
 The structural design for a building must ensure that the building can stand up safely, able to function without excessive deflections or movements which may cause fatigue of structural elements, cracking or failure of fixtures, fittings or partitions, or discomfort for occupants. It must account for movements and forces due to temperature, creep, cracking, and imposed loads. It must also ensure that the design is practically buildable within acceptable manufacturing tolerances of the materials. It must allow the architecture to work, and the building services to fit within the building and function (air conditioning, ventilation, smoke extract, electrics, lighting, etc.). The structural design of a modern building can be extremely complex and often requires a large team to complete.
+
 Structural engineering specialties for buildings include:
 
 Earthquake engineering
+
 Façade engineering
+
 Fire engineering
+
 Roof engineering
+
 Tower engineering
+
 Wind engineering
 
 ### Earthquake engineering structures
 
 Earthquake engineering structures are those engineered to withstand earthquakes.
+
 The main objectives of earthquake engineering are to understand the interaction of structures with the shaking ground, foresee the consequences of possible earthquakes, and design and construct the structures to perform during an earthquake.
+
 Earthquake-proof structures are not necessarily extremely strong like the El Castillo pyramid at Chichen Itza shown above.
+
 One important tool of earthquake engineering is base isolation, which allows the base of a structure to move freely with the ground.
 
 ### Civil engineering structures
@@ -43,18 +57,25 @@ One important tool of earthquake engineering is base isolation, which allows the
 Civil structural engineering includes all structural engineering related to the built environment. It includes:
 
 The structural engineer is the lead designer on these structures, and often the sole designer. In the design of structures such as these, structural safety is of paramount importance (in the UK, designs for dams, nuclear power stations and bridges must be signed off by a chartered engineer).
+
 Civil engineering structures are often subjected to very extreme forces, such as large variations in temperature, dynamic loads such as waves or traffic, or high pressures from water or compressed gases. They are also often constructed in corrosive environments, such as at sea, in industrial facilities, or below ground.
 
 ### Mechanical engineering structures
 
 The forces which parts of a machine are subjected to can vary significantly and can do so at a great rate. The forces which a boat or aircraft are subjected to vary enormously and will do so thousands of times over the structure's lifetime. The structural design must ensure that such structures can endure such loading for their entire design life without failing.
+
 These works can require mechanical structural engineering:
 
 Boilers and pressure vessels
+
 Coachworks and carriages
+
 Cranes
+
 Elevators
+
 Escalators
+
 Marine vessels and hulls
 
 ### Aerospace structures
@@ -74,43 +95,39 @@ Medical equipment (also known as armamentarium) is designed to aid in the diagno
 Any structure is essentially made up of only a small number of different types of elements:
 
 Columns
+
 Beams
+
 Plates
+
 Arches
+
 Shells
+
 Catenaries
+
 Many of these elements can be classified according to form (straight, plane / curve) and dimensionality (one-dimensional / two-dimensional):
 
 ### Columns
 
 Columns are elements that carry only axial force (compression) or both axial force and bending (which is technically called a beam-column but practically, just a column). The design of a column must check the axial capacity of the element and the buckling capacity.
+
 The buckling capacity is the capacity of the element to withstand the propensity to buckle. Its capacity depends upon its geometry, material, and the effective length of the column, which depends upon the restraint conditions at the top and bottom of the column. The effective length is 
-  
-    
-      
         K
+
         ∗
+
         l
-      
-    
-    
 
 $$ K*l $$
 
-  
  where 
-  
-    
-      
         l
-      
-    
-    
 
 $$ l $$
 
-  
  is the real length of the column and K is the factor dependent on the restraint conditions.
+
 The capacity of a column to carry axial load depends on the degree of bending it is subjected to, and vice versa. This is represented on an interaction chart and is a complex non-linear relationship.
 
 ### Beams
@@ -118,20 +135,27 @@ The capacity of a column to carry axial load depends on the degree of bending it
 A beam may be defined as an element in which one dimension is much greater than the other two and the applied loads are usually normal to the main axis of the element. Beams and columns are called line elements and are often represented by simple lines in structural modeling.
 
 cantilevered (supported at one end only with a fixed connection)
+
 simply supported (fixed against vertical translation at each end and horizontal translation at one end only,  and able to rotate at the supports)
+
 fixed (supported in all directions for translation and rotation at each end)
+
 continuous (supported by three or more supports)
+
 a combination of the above (ex. supported at one end and in the middle)
+
 Beams are elements that carry pure bending only. Bending causes one part of the section of a beam (divided along its length) to go into compression and the other part into tension. The compression part must be designed to resist buckling and crushing, while the tension part must be able to adequately resist the tension.
 
 ### Trusses
 
 A truss is a structure comprising members and connection points or nodes. When members are connected at nodes and forces are applied at nodes members can act in tension or compression. Members acting in compression are referred to as compression members or struts while members acting in tension are referred to as tension members or ties. Most trusses use gusset plates to connect intersecting elements.  Gusset plates are relatively flexible and unable to transfer bending moments. The connection is usually arranged so that the lines of force in the members are coincident at the joint thus allowing the truss members to act in pure tension or compression.
+
 Trusses are usually used in large-span structures, where it would be uneconomical to use solid beams.
 
 ### Plates
 
 Plates carry bending in two directions. A concrete flat slab is an example of a plate. Plate behavior is based on continuum mechanics. Due to the complexity involved they are most often analyzed using a finite element analysis.
+
 They can also be designed with yield line theory, where an assumed collapse mechanism is analyzed to give an upper bound on the collapse load. This technique is used in practice but because the method provides an upper-bound (i.e. an unsafe prediction of the collapse load) for poorly conceived collapse mechanisms, great care is needed to ensure that the assumed collapse mechanism is realistic.
 
 ### Shells
@@ -149,13 +173,21 @@ Catenaries derive their strength from their form and carry transverse forces in 
 ## Materials
 
 Structural engineering depends on the knowledge of materials and their properties, in order to understand how different materials support and resist loads. It also involves a knowledge of Corrosion engineering to avoid for example galvanic coupling of dissimilar materials.
+
 Common structural materials are:
 
 Iron: wrought iron, cast iron
+
 Concrete: reinforced concrete, prestressed concrete, ultra-high performance concrete
+
 Alloy: steel, stainless steel
+
 Masonry
+
 Timber: hardwood, softwood
+
 Aluminium
+
 Composite materials: plywood
+
 Other structural materials: adobe, bamboo, carbon fibre, fiber reinforced plastic, mudbrick, roofing materials

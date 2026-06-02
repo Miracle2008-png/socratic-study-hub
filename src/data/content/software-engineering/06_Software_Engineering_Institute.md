@@ -1,13 +1,15 @@
 # Software Engineering Institute
 
 Software Engineering Institute (SEI) is a federally funded research and development center in Pittsburgh, Pennsylvania, United States. Founded in 1984, the institute is now sponsored by the United States Department of Defense and the Office of the Under Secretary of Defense for Research and Engineering, and administrated by Carnegie Mellon University.
-The activities of the institute cover cybersecurity, software assurance, software engineering and acquisition, and component capabilities critical to the United States Department of Defense.
 
 ## Authority
 
 The Carnegie Mellon Software Engineering Institute is a federally funded research and development center headquartered on the campus of Carnegie Mellon University in Pittsburgh, Pennsylvania,  United States. The SEI also has offices in  Washington, DC; Arlington County, Virginia; and Los Angeles, California. The SEI operates with major funding from the U.S. Department of Defense. The SEI also works with industry and academia through research collaborations.
+
 On November 14, 1984, the U.S. Department of Defense elected Carnegie Mellon University as the host site of the Software Engineering Institute.
+
 The institute was founded with an initial allocation of $6 million, with another $97 million to be allocated in the subsequent five years. The SEI's contract with the Department of Defense is subject to review and renewal every five years.
+
 SEI focuses on several technical directions: software engineering, cybersecurity, assurance, and DoD critical component capabilities.
 
 ## Areas of work
@@ -21,6 +23,7 @@ Organizations need to effectively manage the acquisition, development, and evolu
 ### Engineering practices
 
 SEI work in engineering practices increases the ability of software engineers to analyze, predict, and control selected
+
 functional and non-functional properties of software systems. Key SEI tools and methods include the SEI Architecture Tradeoff Analysis Method (ATAM) method, the SEI Framework for Software Product Line Practice, and the SEI Service Migration and Reuse Technique (SMART).
 
 ### Security
@@ -56,6 +59,7 @@ In order to recognize outstanding achievements in improving an organization's ab
 ## Research and publications
 
 The SEI publishes reports that offer new technical information about software engineering topics, whether theoretical or applied. The SEI also publishes books on software engineering for industry, government and military applications and practices.
+
 In addition, the SEI offers public courses, workshops, and conferences in process improvement, software architecture and product lines, and security.
 
 ## Controversies

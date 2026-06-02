@@ -10,49 +10,30 @@ In an alternating current power system, electrical energy is ideally transmitted
 
 The following formula is used to calculate the K-factor of a transformer:
 
-  
-    
-      
         K
+
         =
-        
           ∑
-          
             h
+
             =
+
             1
-          
-          
             ∞
-          
-        
-        
           I
-          
             h
-          
-          
             2
-          
-        
-        
           h
-          
             2
-          
-        
-      
-    
-    
 
 $$ K=\sum _{h=1}^{\infty }I_{h}^{2}h^{2} $$
-
-  
 
 Where:
 
 K is the K-factor
+
 h is the harmonic order
+
 Ih is the per-unit of rated rms load current at the hth harmonic order
 
 ## Typical Values

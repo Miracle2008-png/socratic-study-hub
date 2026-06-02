@@ -9,11 +9,13 @@ B. D. Kulkarni, born on 5 May 1949 into a Deshastha Brahmin family in Nagpur in 
 ## Career
 
 Kulkarni's researches were mainly in the fields of Chemical Reaction Engineering, Applied Mathematics and Transport phenomena and he is known for his work on fluidized bed reactors and chemical reactors. He is credited with introducing an integer-solution approach and novel ideas on noise-induced transitions and his work on Artificial Intelligence-based evolutionary formalisms is reported to have assisted in a better understanding of reacting and reactor systems. His work spanned from conventional chemical reaction engineering in gas-liquid and gas-solid catalytic reactions to reactor stability to stochastic analysis of chemically reacting systems as well as inter-disciplinary fields. A model reaction system termed Encillator, an analytical approach for the solving model equations based on arithmetics, use of initial value formalism for modelling fluidized-bed reactors, introduction of normal form theory, evolutionary algorithms and stochastic approximation in analysing reactor behavior and performance are some of the contributions made by him. He holds US and Indian patents for several processes he has developed which include Method and an Apparatus for the Identification and/or Separation of Complex Composite Signals into its Deterministic and Noisy Components, Process for preparation of pure alkyl esters from alkali metal salt of carboxylic acid, and Enantioselective resolution process for arylpropionic acid drugs from the racemic mixture.
+
 Kulakrni's researches have been documented in several peer-reviewed articles; and the online article repository of Indian Academy of Sciences has listed 250 of them. Besides, he has contributed chapters to books edited by others and has published seven edited or authored texts, including Recent Trends in Chemical Reaction Engineering, Advances in Transport Processes, The Analysis of Chemically Reacting Systems: A Stochastic Approach and Transport processes in fluidized bed reactors. He has guided several master's and doctoral scholars in their studies and has conducted training for students on mathematical modelling. He also serves as one of the directors of Hitech Bio Sciences India Limited, a probiotics and nutraceuticals manufacturer based in Pune and is a member of the advisory committee of the International Conference on Sustainable Development for Energy and Environment (ICSDEE 2017).
 
 ## Awards and honors
 
 The Indian National Science Academy awarded Kulkarni the Young Scientist Medal in 1981, making him the first chemical engineer to receive the honor. He received another award in 1981, the Amar Dye Chem Award of the Indian Institute of Chemical Engineers; IIChE would honor him again in 1988 with the Herdillia Award for Excellence in Basic Research in Chemical Engineering. The Council of Scientific and Industrial Research awarded him the Shanti Swarup Bhatnagar Prize, one of the highest Indian science awards the same year. The National Chemical Laboratory selected him s the Best Scientist of the Year in 1992 and the year 2000 brought him two awards, ChemTech-CEW Award of the ChemTech Foundation and the FICCI Award of the Federation of Indian Chambers of Commerce & Industry.
+
 Kulkarni, a CSIR Distinguished Scientist at NCL, was elected as a fellow by Maharashtra Academy of Sciences in 1988, the same year as he became a fellow of the Indian Academy of Sciences. He received the elected fellowship of the Indian National Academy of Engineering and the Golden Jubilee Fellowship of the Institute of Chemical Technology (then known as the University Department of Chemical Technology-UDCT) in 1989. The Indian National Science Academy elected him as a fellow in 1990 and The World Academy of Sciences chose him as an elected fellow in 2002. When the Science and Engineering Research Board of the Department of Science and Technology selected scientists for the J. C. Bose National Fellowship in 2009, he was also included in the list of recipients. Industrial & Engineering Chemistry Research, the official journal of the American Chemical Society, issued a festschrift on him in 2009 titled Kulkarni Issue with the guest editorial written by his mentor, L. K. Doraiswmy and the issue featured his biosketch jointly written by Ganapati D. Yadav, V. K. Jayaraman and V. Ravikumar, all known chemical engineers.
 
 ## Selective work
@@ -21,8 +23,11 @@ Kulkarni, a CSIR Distinguished Scientist at NCL, was elected as a fellow by Maha
 ### Books
 
 B. D. Kulkarni (1987). Recent Trends in Chemical Reaction Engineering. Wiley Eastern Limited. ISBN 978-0-85226-509-3.
+
 A.S. Mujumdar; Laxmangudi Krishnamurthy Doraiswamy; B. D. Kulkarni (1987). Advances in Transport Processes. Wiley Eastern.
+
 Laxmangudi Krishnamurthy Doraiswamy; B. D. Kulkarni (January 1987). The Analysis of Chemically Reacting Systems: A Stochastic Approach. Taylor & Francis. ISBN 978-0-677-21670-6.
+
 Laxmangudi Krishnamurthy Doraiswamy; B. D. Kulkarni (1 January 1987). Transport processes in fluidized bed reactors. Wiley Eastern. ISBN 978-0-85226-171-2.
 
 ### Chapters
@@ -32,5 +37,7 @@ L. K. Doraisway; B. D, Kulkarni (29 September 1986). "Gas-Solid Non-catalytic Re
 ### Patents
 
 Viruthiamparambath Ravi Kumar; Bhaskar Dattatraya Kulkarni; Narendra Madhukar Dixit; Nitin Vaish (27 March 2001). "Method and an Apparatus for the Identification and/or Separation of Complex Composite Signals into its Deterministic and Noisy Components". US 6208951 B1. Google Patents.
+
 Prashant Purushottam Barve, Bhaskar Dattatraya Kulkarni, Milind Yashwant Gupte, Sanjay Narayan Nene, Ravindra William Shinde (5 May 2011). "Process for preparation of pure alkyl esters from alkali metal salt of carboxylic acid". WO 2011027211 A3. Google Patents.{{cite web}}:  CS1 maint: multiple names: authors list (link)
+
 Nirmal Kishor Yadav, Bhaskar Dattatraya Kulkarni, Ramdas Bhagvan Khomane (15 March 1999). "Enantioselective resolution process for arylpropionic acid drugs from the racemic mixture". US6093830 A. Google Patents.{{cite web}}:  CS1 maint: multiple names: authors list (link)

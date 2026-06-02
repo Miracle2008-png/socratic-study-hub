@@ -1,9 +1,6 @@
 # Creep (deformation)
 
 In materials science, creep (sometimes called cold flow) is the tendency of a solid material to undergo slow deformation while subject to persistent mechanical stresses. It can occur as a result of long-term exposure to high levels of stress that are still below the yield strength of the material. Creep is more severe in materials that are subjected to heat for long periods and generally increases as they near their melting point.
-The rate of deformation is a function of the material's properties, exposure time, exposure temperature and the applied structural load. Depending on the magnitude of the applied stress and its duration, the deformation may become so large that a component can no longer perform its function – for example creep of a turbine blade could cause the blade to contact the casing, resulting in the failure of the blade. Creep is usually of concern to engineers and metallurgists when evaluating components that operate under high stresses or high temperatures. Creep is a deformation mechanism that may or may not constitute a failure mode. For example, moderate creep in concrete is sometimes welcomed because it relieves tensile stresses that might otherwise lead to cracking.
-Unlike brittle fracture, creep deformation does not occur suddenly upon the application of stress. Instead, strain accumulates as a result of long-term stress. Therefore, creep is a "time-dependent" deformation.
-Creep or cold flow is of great concern in plastics.  Blocking agents are chemicals used to prevent or inhibit cold flow.  Otherwise rolled or stacked sheets stick together.
 
 ## Temperature dependence
 
@@ -12,209 +9,119 @@ The temperature range in which creep deformation occurs depends on the material.
 ## Theoretical framework
 
 Creep behavior can be split into three main stages.
+
 In primary or transient creep, the strain rate is a function of time. In Class M materials, which include most pure materials, primary strain rate decreases over time. This can be due to increasing dislocation density, or it can be due to evolving grain size. In class A materials, which have large amounts of solid solution hardening, strain rate increases over time due to a thinning of solute drag atoms as dislocations move.
+
 In the secondary, or steady-state, creep, dislocation structure and grain size have reached equilibrium, and therefore strain rate is constant. Equations that yield a strain rate refer to the steady-state strain rate. Stress dependence of this rate depends on the creep mechanism.
+
 In tertiary creep, the strain rate exponentially increases with stress. This can be due to necking  phenomena, internal cracks, or voids, which all decrease the cross-sectional area and increase the true stress on the region, further accelerating deformation and leading to fracture.
 
 ### Mechanisms of deformation
 
 Depending on the temperature and stress, different deformation mechanisms are activated. Though there are generally many deformation mechanisms active at all times, usually one mechanism is dominant, accounting for almost all deformation.
+
 Various mechanisms are:
 
 Bulk diffusion (Nabarro–Herring creep)
+
 Grain boundary diffusion (Coble creep)
+
 Glide-controlled dislocation creep: dislocations move via glide and climb, and the speed of glide is the dominant factor on strain rate
+
 Climb-controlled dislocation creep: dislocations move via glide and climb, and the speed of climb is the dominant factor on strain rate
+
 Harper–Dorn creep: a low-stress creep mechanism in some pure materials
+
 At low temperatures and low stress, creep is essentially nonexistent and all strain is elastic. At low temperatures and high stress, materials experience plastic deformation rather than creep. At high temperatures and low stress, diffusional creep tends to be dominant, while at high temperatures and high stress, dislocation creep tends to be dominant.
 
 #### Deformation mechanism maps
 
 Deformation mechanism maps provide a visual tool categorizing the dominant deformation mechanism as a function of homologous temperature, shear modulus-normalized stress, and strain rate. Generally, two of these three properties (most commonly temperature and stress) are the axes of the map, while the third is drawn as contours on the map.
+
 To populate the map, constitutive equations are found for each deformation mechanism. These are used to solve for the boundaries between each deformation mechanism, as well as the strain rate contours. 
+
 Deformation mechanism maps can be used to compare different strengthening mechanisms, as well as compare different types of materials.
 
-  
-    
-      
-        
-          
-            
-              
                 d
-              
               ε
-            
-            
-              
                 d
-              
               t
-            
-          
-        
         =
-        
-          
-            
               C
-              
                 σ
-                
                   m
-                
-              
-            
-            
               d
-              
                 b
-              
-            
-          
-        
-        
           e
-          
-            
-              
                 −
+
                 Q
-              
-              
                 k
+
                 T
-              
-            
-          
-        
-      
-    
-    
 
 $$ {\frac {\mathrm {d} \varepsilon }{\mathrm {d} t}}={\frac {C\sigma ^{m}}{d^{b}}}e^{\frac {-Q}{kT}} $$
-
-  
 
 where ε is the creep strain, C is a constant dependent on the material and the particular creep mechanism, m and b are exponents dependent on the creep mechanism, Q is the activation energy of the creep mechanism, σ is the applied stress, d is the grain size of the material, k is the Boltzmann constant, and T is the absolute temperature.
 
 #### Dislocation creep
 
 At high stresses (relative to the shear modulus), creep is controlled by the movement of dislocations. 
+
 For dislocation creep, Q = Q(self diffusion), 4 ≤ m ≤ 6, and b < 1. Therefore, dislocation creep has a strong dependence on the applied stress and the intrinsic activation energy and a weaker dependence on grain size.  As grain size gets smaller, grain boundary area gets larger, so dislocation motion is impeded.
+
 Some alloys exhibit a very large stress exponent (m > 10), and this has typically been explained by introducing a "threshold stress," σth, below which creep can't be measured. The modified power law equation then becomes:
 
-  
-    
-      
-        
-          
-            
-              
                 d
-              
               ε
-            
-            
-              
                 d
-              
               t
-            
-          
-        
         =
+
         A
-        
-          
             (
-            
               σ
+
               −
-              
                 σ
-                
-                  
                     t
+
                     h
-                  
-                
-              
-            
             )
-          
-          
             m
-          
-        
-        
           e
-          
-            
-              
                 −
+
                 Q
-              
-              
-                
-                  
-                    
                       R
+
                       ¯
-                    
-                  
-                
                 T
-              
-            
-          
-        
-      
-    
-    
 
 $$ {\frac {\mathrm {d} \varepsilon }{\mathrm {d} t}}=A\left(\sigma -\sigma _{\rm {th}}\right)^{m}e^{\frac {-Q}{{\bar {R}}T}} $$
-
-  
 
 where A, Q and m can all be explained by conventional mechanisms (so 3 ≤ m ≤ 10), and R is the gas constant. The creep increases with increasing applied stress, since the applied stress tends to drive the dislocation past the barrier, and make the dislocation get into a lower energy state after bypassing the obstacle, which means that the dislocation is inclined to pass the obstacle. In other words, part of the work required to overcome the energy barrier of passing an obstacle is provided by the applied stress and the remainder by thermal energy.
 
 #### Nabarro–Herring creep
 
 Nabarro–Herring (NH) creep is a form of diffusion creep, while dislocation glide creep does not involve atomic diffusion. Nabarro–Herring creep dominates at high temperatures and low stresses. As shown in the figure on the right, the lateral sides of the crystal are subjected to tensile stress and the horizontal sides to compressive stress. The atomic volume is altered by applied stress: it increases in regions under tension and decreases in regions under compression. So the activation energy for vacancy formation is changed by ±σΩ, where Ω is the atomic volume, the positive value is for compressive regions and negative value is for tensile regions. Since the fractional vacancy concentration is proportional to exp(−⁠Qf ± σΩ/RT⁠), where Qf is the vacancy-formation energy, the vacancy concentration is higher in tensile regions than in compressive regions, leading to a net flow of vacancies from the regions under tension to the regions under compression, and this is equivalent to a net atom diffusion in the opposite direction, which causes the creep deformation: the grain elongates in the tensile stress axis and contracts in the compressive stress axis.
+
 In Nabarro–Herring creep, k is related to the diffusion coefficient of atoms through the lattice, Q = Q(self diffusion), m = 1, and b = 2. Therefore, Nabarro–Herring creep has a weak stress dependence and a moderate grain size dependence, with the creep rate decreasing as the grain size is increased.
+
 Nabarro–Herring creep is strongly temperature dependent. For lattice diffusion of atoms to occur in a material, neighboring lattice sites or interstitial sites in the crystal structure must be free. A given atom must also overcome the energy barrier to move from its current site (it lies in an energetically favorable potential well) to the nearby vacant site (another potential well). The general form of the diffusion equation is
 
-  
-    
-      
         D
+
         =
-        
           D
-          
             0
-          
-        
-        
           e
-          
-            
               E
-              
                 K
+
                 T
-              
-            
-          
-        
-      
-    
-    
 
 $$ D=D_{0}e^{\frac {E}{KT}} $$
-
-  
 
 where D0 has a dependence on both the attempted jump frequency and the number of nearest neighbor sites and the probability of the sites being vacant. Thus there is a double dependence upon temperature. At higher temperatures the diffusivity increases due to the direct temperature dependence of the equation, the increase in vacancies through Schottky defect formation, and an increase in the average energy of atoms in the material. Nabarro–Herring creep dominates at very high temperatures relative to a material's melting temperature.
 
@@ -226,673 +133,329 @@ Coble creep is the second form of diffusion-controlled creep. In Coble creep the
 
 Solute drag creep is one of the mechanisms for power-law creep (PLC), involving both dislocation and diffusional flow. Solute drag creep is observed in certain metallic alloys. In these alloys, the creep rate increases during the first stage of creep (Transient creep) before reaching a steady-state value. This phenomenon can be explained by a model associated with solid–solution strengthening. At low temperatures, the solute atoms are immobile and increase the flow stress required to move dislocations. However, at higher temperatures, the solute atoms are more mobile and may form atmospheres and clouds surrounding the dislocations. This is especially likely if the solute atom has a large misfit in the matrix. The solutes are attracted by the dislocation stress fields and are able to relieve the elastic stress fields of existing dislocations. Thus the solutes become bound to the dislocations. The concentration of solute, C, at a distance, r, from a dislocation is given by the Cottrell atmosphere defined as
 
-  
-    
-      
-        
           C
-          
             r
-          
-        
         =
-        
           C
-          
             0
-          
-        
         exp
+
         ⁡
-        
           (
-          
             −
-            
-              
-                
                   β
+
                   sin
+
                   ⁡
+
                   θ
-                
-                
                   r
+
                   K
+
                   T
-                
-              
-            
-          
           )
-        
-      
-    
-    
 
 $$ C_{r}=C_{0}\exp \left(-{\frac {\beta \sin \theta }{rKT}}\right) $$
 
-  
-
 where C0 is the concentration at r = ∞ and β is a constant which defines the extent of segregation of the solute. When surrounded by a solute atmosphere, dislocations that attempt to glide under an applied stress are subjected to a back stress exerted on them by the cloud of solute atoms. If the applied stress is sufficiently high, the dislocation may eventually break away from the atmosphere, allowing the dislocation to continue gliding under the action of the applied stress. The maximum force (per unit length) that the atmosphere of solute atoms can exert on the dislocation is given by Cottrell and Jaswon
 
-  
-    
-      
-        
-          
-            
               F
-              
-                
                   m
+
                   a
+
                   x
-                
-              
-            
             L
-          
-        
         =
-        
-          
-            
-              
                 C
-                
                   0
-                
-              
-              
                 β
-                
                   2
-                
-              
-            
-            
               b
+
               k
+
               T
-            
-          
-        
-      
-    
-    
 
 $$ {\frac {F_{\rm {max}}}{L}}={\frac {C_{0}\beta ^{2}}{bkT}} $$
 
-  
-
 When the diffusion of solute atoms is activated at higher temperatures, the solute atoms which are "bound" to the dislocations by the misfit can move along with edge dislocations as a "drag" on their motion if the dislocation motion or the creep rate is not too high. The amount of "drag" exerted by the solute atoms on the dislocation is related to the diffusivity of the solute atoms in the metal at that temperature, with a higher diffusivity leading to lower drag and vice versa. The velocity at which the dislocations glide can be approximated by a power law of the form
 
-  
-    
-      
         v
+
         =
+
         B
-        
-          
-            
               σ
-              
                 ∗
-              
-            
-          
-          
             m
-          
-        
         B
+
         =
-        
           B
-          
             0
-          
-        
         exp
+
         ⁡
-        
           (
-          
-            
-              
                 −
-                
                   Q
-                  
-                    
                       g
-                    
-                  
-                
-              
-              
                 R
+
                 T
-              
-            
-          
           )
-        
-      
-    
-    
 
 $$ v=B{\sigma ^{*}}^{m}B=B_{0}\exp \left({\frac {-Q_{\rm {g}}}{RT}}\right) $$
 
-  
-
 where m is the effective stress exponent, Q is the apparent activation energy for glide and B0 is a constant. The parameter B in the above equation was derived by Cottrell and Jaswon for interaction between solute atoms and dislocations on the basis of the relative atomic size misfit εa of solutes to be
 
-  
-    
-      
         B
+
         =
-        
-          
-            
               9
+
               k
+
               T
-            
-            
               M
-              
                 G
-                
                   2
-                
-              
-              
                 b
-                
                   4
-                
-              
               ln
+
               ⁡
-              
-                
-                  
                     r
+
                     2
-                  
-                  
                     r
+
                     1
-                  
-                
-              
-            
-          
-        
         ⋅
-        
-          
-            
               D
-              
-                
                   s
+
                   o
+
                   l
-                
-              
-            
-            
-              
                 ε
-                
-                  
                     a
-                  
-                
-                
                   2
-                
-              
-              
                 c
-                
                   0
-                
-              
-            
-          
-        
-      
-    
-    
 
 $$ B={\frac {9kT}{MG^{2}b^{4}\ln {\frac {r2}{r1}}}}\cdot {\frac {D_{\rm {sol}}}{\varepsilon _{\rm {a}}^{2}c_{0}}} $$
 
-  
-
 where k is the Boltzmann constant, and r1 and r2 are the internal and external cut-off radii of dislocation stress field. c0 and Dsol are the atomic concentration of the solute and solute diffusivity respectively. Dsol also has a temperature dependence that makes a determining contribution to Qg.
+
 If the cloud of solutes does not form or the dislocations are able to break away from their clouds, glide occurs in a jerky manner where fixed obstacles, formed by dislocations in combination with solutes, are overcome after a certain waiting time with support by thermal activation. The exponent m is greater than 1 in this case. The equations show that the hardening effect of solutes is strong if the factor B in the power-law equation is low so that the dislocations move slowly and the diffusivity Dsol is low. Also, solute atoms with both high concentration in the matrix and strong interaction with dislocations are strong gardeners. Since misfit strain of solute atoms is one of the ways they interact with dislocations, it follows that solute atoms with large atomic misfit are strong gardeners. A low diffusivity Dsol is an additional condition for strong hardening.
+
 Solute drag creep sometimes shows a special phenomenon, over a limited strain rate, which is called the Portevin–Le Chatelier effect. When the applied stress becomes sufficiently large, the dislocations will break away from the solute atoms since dislocation velocity increases with the stress. After breakaway, the stress decreases and the dislocation velocity also decreases, which allows the solute atoms to approach and reach the previously departed dislocations again, leading to a stress increase. The process repeats itself when the next local stress maximum is obtained. So repetitive local stress maxima and minima could be detected during solute drag creep.
 
 #### Dislocation climb-glide creep
 
 Dislocation climb-glide creep is observed in materials at high temperature. The initial creep rate is larger than the steady-state creep rate. Climb-glide creep could be illustrated as follows: when the applied stress is not enough for a moving dislocation to overcome the obstacle on its way via dislocation glide alone, the dislocation could climb to a parallel slip plane by diffusional processes, and the dislocation can glide on the new plane. This process repeats itself each time when the dislocation encounters an obstacle. The creep rate could be written as:
 
-  
-    
-      
-        
-          
-            
-              
                 d
-              
               ε
-            
-            
-              
                 d
-              
               t
-            
-          
-        
         =
-        
-          
-            
-              
                 A
-                
-                  
                     C
+
                     G
-                  
-                
-              
-              
                 D
-                
-                  
                     L
-                  
-                
-              
-            
-            
               M
-            
-          
-        
-        
-          
             (
-            
-              
-                
                   σ
+
                   Ω
-                
-                
                   k
+
                   T
-                
-              
-            
             )
-          
-          
             4.5
-          
-        
-      
-    
-    
 
 $$ {\frac {\mathrm {d} \varepsilon }{\mathrm {d} t}}={\frac {A_{\rm {CG}}D_{\rm {L}}}{\sqrt {M}}}\left({\frac {\sigma \Omega }{kT}}\right)^{4.5} $$
-
-  
 
 where ACG includes details of the dislocation loop geometry, DL is the lattice diffusivity, M is the number of dislocation sources per unit volume, σ is the applied stress, and Ω is the atomic volume. The exponent m for dislocation climb-glide creep is 4.5 if M is independent of stress and this value of m is consistent with results from considerable experimental studies.
 
 #### Harper–Dorn creep
 
 Harper–Dorn creep is a climb-controlled dislocation mechanism at low stresses that has been observed in aluminum, lead, and tin systems, in addition to nonmetal systems such as ceramics and ice. It was first observed by Harper and Dorn in 1957. It is characterized by two principal phenomena: a power-law relationship between the steady-state strain rate and applied stress at a constant temperature which is weaker than the natural power-law of creep, and an independent relationship between the steady-state strain rate and grain size for a provided temperature and applied stress. The latter observation implies that Harper–Dorn creep is controlled by dislocation movement; namely, since creep can occur by vacancy diffusion (Nabarro–Herring creep, Coble creep), grain boundary sliding, and/or dislocation movement, and since the first two mechanisms are grain-size dependent, Harper–Dorn creep must therefore be dislocation-motion dependent. The same was also confirmed in 1972 by Barrett and co-workers where FeAl3 precipitates lowered the creep rates by 2 orders of magnitude compared to highly pure Al, thus, indicating Harper–Dorn creep to be a dislocation based mechanism.
+
 Harper–Dorn creep is typically overwhelmed by other creep mechanisms in most situations, and is therefore not observed in most systems. The phenomenological equation which describes Harper–Dorn creep is
 
-  
-    
-      
-        
-          
-            
-              
                 d
-              
               ε
-            
-            
-              
                 d
-              
               t
-            
-          
-        
         =
-        
           ρ
-          
             0
-          
-        
-        
-          
-            
-              
                 D
-                
-                  
                     v
-                  
-                
-              
               G
-              
                 b
-                
                   3
-                
-              
-            
-            
               k
+
               T
-            
-          
-        
-        
           (
-          
-            
-              
                 σ
-                
-                  
                     s
-                  
-                
-                
                   n
-                
-              
               G
-            
-          
           )
-        
-      
-    
-    
 
 $$ {\frac {\mathrm {d} \varepsilon }{\mathrm {d} t}}=\rho _{0}{\frac {D_{\rm {v}}Gb^{3}}{kT}}\left({\frac {\sigma _{\rm {s}}^{n}}{G}}\right) $$
-
-  
 
 where ρ0 is dislocation density (constant for Harper–Dorn creep), Dv is the diffusivity through the volume of the material, G is the shear modulus and b is the Burgers vector, σs, and n is the stress exponent which varies between 1 and 3.
 
 ===== Later investigation of the creep region =====
+
 Twenty-five years after Harper and Dorn published their work, Mohamed and Ginter made an important contribution in 1982 by evaluating the potential for achieving Harper–Dorn creep in samples of Al using different processing procedures. The experiments showed that Harper–Dorn creep is achieved with stress exponent n = 1, and only when the internal dislocation density prior to testing is exceptionally low. By contrast, Harper–Dorn creep was not observed in polycrystalline Al and single crystal Al when the initial dislocation density was high.
+
 However, various conflicting reports demonstrate the uncertainties at very low stress levels. One report by Blum and Maier, claimed that the experimental evidence for Harper–Dorn creep is not fully convincing. They argued that the necessary condition for Harper–Dorn creep is not fulfilled in Al with 99.99% purity and the steady-state stress exponent n of the creep rate is always much larger than 1.
+
 The subsequent work conducted by Ginter et al. confirmed that Harper–Dorn creep was attained in Al with 99.9995% purity but not in Al with 99.99% purity and, in addition, the creep curves obtained in the very high purity material exhibited regular and periodic accelerations. They also found that the creep behavior no longer follows a stress exponent of n = 1 when the tests are extended to very high strains of >0.1 but instead there is evidence for a stress exponent of n > 2.
 
 Requirements for the occurrence
 
 Harper–Dorn creep is usually regarded as a Newtonian viscous process with n = 1. Some very recent experimental evidence suggests that the stress exponent may be closer to ~2. Harper–Dorn creep should be observed at a low-stress creep regime where the stress exponent is lower than in the conventional power-law regime where n ≈ 3–5.
+
 Unlike Nabarro–Herring diffusion depending on grain size, the Harper–Dorn flow process is independent of grain size. In the initial experiments of Harper and Dorn, identical creep rates are recorded either over a wide range of grain sizes in polycrystalline samples or in a combination of polycrystalline samples and single crystals.
+
 The measured creep rates should be significantly faster, typically by more than two orders of magnitude, than the creep rates anticipated for Nabarro–Herring diffusion creep. At very high testing temperatures, Coble diffusion creep will be of negligible significance under these conditions.
+
 The volumetric activation energy indicates that the rate of Harper–Dorn creep is controlled by vacancy diffusion to and from dislocations, resulting in climb-controlled dislocation motion. Unlike in other creep mechanisms, the dislocation density here is constant and independent of the applied stress.
+
 The dislocation density must be low for Harper–Dorn creep to dominate. The density has been proposed to increase as dislocations move via cross-slip from one slip-plane to another, thereby increasing the dislocation length per unit volume. Cross-slip can also result in jogs along the length of the dislocation, which, if large enough, can act as single-ended dislocation sources.
 
 #### Sintering
 
 At high temperatures, it is energetically favorable for voids to shrink in a material. The application of tensile stress opposes the reduction in energy gained by void shrinkage. Thus, a certain magnitude of applied tensile stress is required to offset these shrinkage effects and cause void growth and creep fracture in materials at high temperature. This stress occurs at the sintering limit of the system.
+
 The stress tending to shrink voids that must be overcome is related to the surface energy and surface area-volume ratio of the voids. For a general void with surface energy γ and principle radii of curvature of r1 and r2, the sintering limit stress is
 
-  
-    
-      
-        
           σ
-          
-            
               s
+
               i
+
               n
+
               t
-            
-          
-        
         =
-        
-          
             γ
-            
               r
-              
                 1
-              
-            
-          
-        
         +
-        
-          
             γ
-            
               r
-              
                 2
-              
-            
-          
-        
-      
-    
-    
 
 $$ \sigma _{\rm {sint}}={\frac {\gamma }{r_{1}}}+{\frac {\gamma }{r_{2}}} $$
 
-  
-
 Below this critical stress, voids will tend to shrink rather than grow. Additional void shrinkage effects will also result from the application of a compressive stress. For typical descriptions of creep, it is assumed that the applied tensile stress exceeds the sintering limit.
+
 Creep also explains one of several contributions to densification during metal powder sintering by hot pressing. A main aspect of densification is the shape change of the powder particles. Since this change involves permanent deformation of crystalline solids, it can be considered a plastic deformation process and thus sintering can be described as a high temperature creep process. The applied compressive stress during pressing accelerates void shrinkage rates and allows a relation between the steady-state creep power law and densification rate of the material. This phenomenon is observed to be one of the main densification mechanisms in the final stages of sintering, during which the densification rate (assuming gas-free pores) can be explained by:
 
-  
-    
-      
-        
-          
-            
               ρ
+
               ˙
-            
-          
-        
         =
-        
-          
-            
               3
+
               A
-            
             2
-          
-        
-        
-          
-            
               ρ
+
               (
+
               1
+
               −
+
               ρ
+
               )
-            
-            
-              
                 (
-                
                   1
+
                   −
+
                   (
+
                   1
+
                   −
+
                   ρ
-                  
                     )
-                    
-                      
                         1
+
                         n
-                      
-                    
-                  
-                
                 )
-              
-              
                 n
-              
-            
-          
-        
-        
-          
             (
-            
-              
-                
                   3
+
                   2
-                
-              
-              
-                
-                  
                     P
-                    
-                      
                         e
-                      
-                    
-                  
                   n
-                
-              
-            
             )
-          
-          
             n
-          
-        
-      
-    
-    
 
 $$ {\dot {\rho }}={\frac {3A}{2}}{\frac {\rho (1-\rho )}{\left(1-(1-\rho )^{\frac {1}{n}}\right)^{n}}}\left({\frac {3}{2}}{\frac {P_{\rm {e}}}{n}}\right)^{n} $$
 
-  
-
 in which ρ̇ is the densification rate, ρ is the density, Pe is the pressure applied, n describes the exponent of strain rate behavior, and A is a mechanism-dependent constant. A and n are from the following form of the general steady-state creep equation,
 
-  
-    
-      
-        
-          
-            
               ε
+
               ˙
-            
-          
-        
         =
+
         A
-        
           σ
-          
             n
-          
-        
-      
-    
-    
 
 $$ {\dot {\varepsilon }}=A\sigma ^{n} $$
 
-  
-
 where ε̇ is the strain rate, and σ is the tensile stress. For the purposes of this mechanism, the constant A comes from the following expression, where A′ is a dimensionless, experimental constant, μ is the shear modulus, b is the Burgers vector, k is the Boltzmann constant, T is absolute temperature, D0 is the diffusion coefficient, and Q is the diffusion activation energy:
 
-  
-    
-      
         A
+
         =
-        
           A
+
           ′
-        
-        
-          
-            
-              
                 D
-                
                   0
-                
-              
               μ
+
               b
-            
-            
               k
+
               T
-            
-          
-        
         exp
+
         ⁡
-        
           (
-          
             −
-            
-              
                 Q
-                
                   k
+
                   T
-                
-              
-            
-          
           )
-        
-      
-    
-    
 
 $$ A=A'{\frac {D_{0}\mu b}{kT}}\exp \left(-{\frac {Q}{kT}}\right) $$
-
-  
 
 ## Examples
 
@@ -900,79 +463,68 @@ $$ A=A'{\frac {D_{0}\mu b}{kT}}\exp \left(-{\frac {Q}{kT}}\right) $$
 
 Creep can occur in polymers and metals which are considered viscoelastic materials. When a polymeric material is subjected to an abrupt force, the response can be modeled using the Kelvin–Voigt model. In this model, the material is represented by a Hookean spring and a Newtonian dashpot in parallel. The creep strain is given by the following convolution integral:
 
-  
-    
-      
         ε
+
         (
+
         t
+
         )
+
         =
+
         σ
-        
           C
-          
             0
-          
-        
         +
+
         σ
+
         C
-        
           ∫
-          
             0
-          
-          
             ∞
-          
-        
         f
+
         (
+
         τ
+
         )
-        
           (
-          
             1
+
             −
-            
               e
-              
                 −
+
                 t
-                
                   /
-                
                 τ
-              
-            
-          
           )
-        
-        
-        
           d
-        
         τ
-      
-    
-    
 
 $$ \varepsilon (t)=\sigma C_{0}+\sigma C\int _{0}^{\infty }f(\tau )\left(1-e^{-t/\tau }\right)\,\mathrm {d} \tau $$
 
-  
 where σ is applied stress, C0 is instantaneous creep compliance, C is creep compliance coefficient, τ is retardation time, and f(τ) is the distribution of retardation times.
+
 When subjected to a step constant stress, viscoelastic materials experience a time-dependent increase in strain. This phenomenon is known as viscoelastic creep.
+
 At a time t0, a viscoelastic material is loaded with a constant stress that is maintained for a sufficiently long time period. The material responds to the stress with a strain that increases until the material ultimately fails. When the stress is maintained for a shorter time period, the material undergoes an initial strain until a time t1 at which the stress is relieved, at which time the strain immediately decreases (discontinuity) then continues decreasing gradually to a residual strain.
+
 Viscoelastic creep data can be presented in one of two ways. Total strain can be plotted as a function of time for a given temperature or temperatures. Below a critical value of applied stress, a material may exhibit linear viscoelasticity. Above this critical stress, the creep rate grows disproportionately faster. The second way of graphically presenting viscoelastic creep in a material is by plotting the creep modulus (constant applied stress divided by total strain at a particular time) as a function of time. Below its critical stress, the viscoelastic creep modulus is independent of the stress applied. A family of curves describing strain versus time response to various applied stress may be represented by a single viscoelastic creep modulus versus time curve if the applied stresses are below the material's critical stress value.
+
 Additionally, the molecular weight of the polymer of interest is known to affect its creep behavior. The effect of increasing molecular weight tends to promote secondary bonding between polymer chains and thus make the polymer more creep resistant. Similarly, aromatic polymers are even more creep resistant due to the added stiffness from the rings. Both molecular weight and aromatic rings add to polymers' thermal stability, increasing the creep resistance of a polymer.
+
 Both polymers and metals can creep. Polymers experience significant creep at temperatures above around −200 °C (−330 °F); however, there are three main differences between polymeric and metallic creep. In metals, creep is not linearly viscoelastic, it is not recoverable, and it is only present at high temperatures.
+
 Polymers show creep basically in two different ways. At typical work loads (5% up to 50%) ultra-high-molecular-weight polyethylene (Spectra, Dyneema) will show time-linear creep, whereas polyester or aramids (Twaron, Kevlar) will show a time-logarithmic creep.
 
 ### Wood
 
 Wood is considered as an orthotropic material, exhibiting different mechanical properties in three mutually perpendicular directions. Experiments show that the tangential direction in solid wood tend display a slightly higher creep compliance than in the radial direction. In the longitudinal direction, the creep compliance is relatively low and usually do not show any time-dependency in comparison to the other directions.
+
 It has also been shown that there is a substantial difference in viscoelastic properties of wood depending on loading modality (creep in compression or tension). Studies have shown that certain Poisson's ratios gradually go from positive to negative values during the duration of the compression creep test, which does not occur in tension.
 
 ### Concrete
@@ -986,14 +538,23 @@ Creep in metals primarily manifests as movement in their microstructures. While 
 ## Case studies
 
 Although mostly due to the reduced yield strength at higher temperatures, the collapse of the World Trade Center was thought to be due in part to creep from increased temperature, although this has since been disproven.
+
 The creep rate of hot pressure-loaded components in a nuclear reactor at power can be a significant design constraint, since the creep rate is enhanced by the flux of energetic particles.
+
 Creep in epoxy anchor adhesive was blamed for the Big Dig tunnel ceiling collapse in Boston, Massachusetts that occurred in July 2006.
+
 The design of tungsten light bulb filaments attempts to reduce creep deformation. Sagging of the filament coil between its supports increases with time due to the weight of the filament itself. If too much deformation occurs, the adjacent turns of the coil touch one another, causing local overheating, which quickly leads to failure of the filament. The coil geometry and supports are therefore designed to limit the stresses caused by the weight of the filament, and a special tungsten alloy with small amounts of oxygen trapped in the crystallite grain boundaries is used to slow the rate of Coble creep.
+
 Creep can cause gradual cut-through of wire insulation, especially when stress is concentrated by pressing insulated wire against a sharp edge or corner. Special creep-resistant insulations such as Kynar (polyvinylidene fluoride) are used in wire wrap applications to resist cut-through due to the sharp corners of wire wrap terminals. Teflon insulation is resistant to elevated temperatures and has other desirable properties, but is notoriously vulnerable to cold-flow cut-through failures caused by creep.
+
 In steam turbine power plants, pipes carry steam at high temperatures (566 °C, 1,051 °F) and pressures (above 24.1 MPa, 3,500 psi). In jet engines, temperatures can reach up to 1,400 °C (2,550 °F) and initiate creep deformation in even advanced-design coated turbine blades. Hence, it is crucial for correct functionality to understand the creep deformation behavior of materials.
+
 Creep deformation is important not only in systems where high temperatures are endured such as nuclear power plants, jet engines and heat exchangers, but also in the design of many everyday objects. For example, metal paper clips are stronger than plastic ones because plastics creep at room temperatures. Aging glass windows are often erroneously used as an example of this phenomenon: measurable creep would only occur at temperatures above the glass transition temperature around 500 °C (932 °F). While glass does exhibit creep under the right conditions, apparent sagging in old windows may instead be a consequence of obsolete manufacturing processes, such as that used to create crown glass, which resulted in inconsistent thickness.
+
 Fractal geometry, using a deterministic Cantor structure, is used to model the surface topography, where recent advancements in thermoviscoelastic creep contact of rough surfaces are introduced. Various viscoelastic idealizations are used to model the surface materials, including the Maxwell, Kelvin–Voigt, standard linear solid and Jeffrey models.
+
 Nimonic 75 has been certified by the European Union as a standard creep reference material.
+
 The practice of tinning stranded wires to facilitate the process of connecting the wire to a screw terminal, though having been prevalent and considered standard practice for quite a while, has been discouraged by professional electricians, as solder is likely to creep under the pressure exerted on the tinned wire end by the screw of the terminal, causing the joint to lose tension and hence create a loose contact over time. The accepted practice when connecting stranded wire to a screw terminal is to use a wire ferrule on the end of the wire.
 
 ## Prevention
@@ -1001,16 +562,19 @@ The practice of tinning stranded wires to facilitate the process of connecting t
 Generally, materials have better creep resistance if they have higher melting temperatures, lower diffusivity, and higher shear strength. Close-packed structures are usually more creep resistant as they tend to have lower diffusivity than non-close-packed structures. Common methods to reduce creep include:
 
 Solid solution strengthening: adding other elements in solid solution can slow diffusion, as well as slow dislocation motion via the mechanism of solute drag.
+
 Particle dispersion strengthening: adding particles, often incoherent oxide or carbide particles, block dislocation motion.
+
 Precipitation hardening: precipitating a second phase out of the primary lattice blocks dislocation motion.
+
 Grain size: increasing grain size decreases the amount of grain boundaries, which results in slower creep due to the high diffusion rate along grain boundaries. This is opposite low-temperature applications, where increasing grain size decreases strength by blocking dislocation motion. In very high temperature applications such as jet engine turbines, single crystals are often used.
 
 ### Superalloys
 
- 
-
 Materials operating in high-performance systems, such as jet engines, often reach extreme temperatures surpassing 1,000 °C (1,830 °F), necessitating specialized material design. Superalloys based on cobalt, nickel, and iron have been engineered to be highly resistant to creep. The term 'superalloy' generally refers to austenitic nickel-, iron-, or cobalt-based alloys that use either γ′ or γ″ precipitation strengthening to maintain strength at high temperature.
+
 The γ′ phase is a cubic L12-structure Ni3(Al,Ti,Ta,Nb) phase that produces cuboidal precipitates. Superalloys often have a high (60–75%) volume fraction of γ′ precipitates. γ′ precipitates are coherent with the parent γ phase, and are resistant to shearing due to the development of an anti-phase boundary when the precipitate is sheared. The γ″ phase is a tetragonal Ni3Nb or Ni3V structure. The γ″ phase, however, is unstable above 650 °C (1,202 °F), so γ″ is less commonly used as a strengthening phase in high temperature applications. Carbides are also used in polycrystalline superalloys to inhibit grain boundary sliding.
+
 Many other elements can be added to superalloys to tailor their properties. They can be used for solid solution strengthening, to reduce the formation of undesirable brittle precipitates, and to increase oxidation or corrosion resistance. Nickel-based superalloys have found widespread use in high-temperature, low stress applications. Iron-based superalloys are generally not used at high temperatures as the γ′ phase is not stable in the iron matrix, but are sometimes used at moderately high temperatures, as iron is significantly cheaper than nickel. Cobalt-based γ′ structure was found in 2006, allowing the development of cobalt-based superalloys, which are superior to nickel-based superalloys in corrosion resistance. However, in the base (cobalt–tungsten–aluminum) system, γ′ is only stable below 900 °C (1,650 °F), and cobalt-based superalloys tend to be weaker than their Ni counterparts.
 
 ### Contributing factors in creep resistivity

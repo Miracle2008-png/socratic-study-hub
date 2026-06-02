@@ -1,7 +1,6 @@
 # Model-driven engineering
 
 Model-driven engineering (MDE) is a software development methodology that focuses on creating and exploiting domain models, which are conceptual models of all the topics related to a specific problem. Hence, it highlights and aims at abstract representations of the knowledge and activities that govern a particular application domain, rather than the computing (i.e. algorithmic) concepts.
-MDE is a subfield of a software design approach referred as round-trip engineering. The scope of the MDE is much wider than that of the Model-Driven Architecture.
 
 ## Advantages
 

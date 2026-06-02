@@ -1,978 +1,533 @@
 # Reynolds number
 
 In fluid dynamics, the Reynolds number (Re) is a dimensionless quantity that helps predict fluid flow patterns in different situations by measuring the ratio between inertial and viscous forces. At low Reynolds numbers, flows tend to be dominated by laminar (sheet-like) flow, while at high Reynolds numbers, flows tend to be turbulent.  The turbulence results from differences in the fluid's speed and direction, which may sometimes intersect or even move counter to the overall direction of the flow (eddy currents). These eddy currents begin to churn the flow, using up energy in the process, which for liquids increases the chances of cavitation.
-The Reynolds number has wide applications, ranging from liquid flow in a pipe to the passage of air over an aircraft wing. It is used to predict the transition from laminar to turbulent flow and is used in the scaling of similar but different-sized flow situations, such as between an aircraft model in a wind tunnel and the full-size version. The predictions of the onset of turbulence and the ability to calculate scaling effects can be used to help predict fluid behavior on a larger scale, such as in local or global air or water movement, and thereby the associated meteorological and climatological effects.
-The concept was introduced by George Stokes in 1851, but the Reynolds number was named by Arnold Sommerfeld in 1908 after Osborne Reynolds who popularized its use in 1883 (an example of Stigler's law of eponymy).
 
 ## Definition
 The Reynolds number is the ratio of inertial forces to viscous forces within a fluid that is subjected to relative internal movement due to different fluid velocities. A region where these forces change behavior is known as a boundary layer, such as the bounding surface in the interior of a pipe. A similar effect is created by the introduction of a stream of high-velocity fluid into a low-velocity fluid, such as the hot gases emitted from a flame in air. This relative movement generates fluid friction, which is a factor in developing turbulent flow. Counteracting this effect is the viscosity of the fluid, which tends to inhibit turbulence. The Reynolds number quantifies the relative importance of these two types of forces for given flow conditions and is a guide to when turbulent flow will occur in a particular situation.
+
 This ability to predict the onset of turbulent flow is an important design tool for equipment such as piping systems or aircraft wings, but the Reynolds number is also used in scaling of fluid dynamics problems and is used to determine dynamic similitude between two different cases of fluid flow, such as between a model aircraft, and its full-size version. Such scaling is not linear and the application of Reynolds numbers to both situations allows scaling factors to be developed.
+
 With respect to laminar and turbulent flow regimes:
 
 laminar flow occurs at low Reynolds numbers, where viscous forces are dominant, and is characterized by smooth, constant fluid motion;
+
 turbulent flow occurs at high Reynolds numbers and is dominated by inertial forces, which tend to produce chaotic eddies, vortices and other flow instabilities.
+
 The Reynolds number is defined as:where:
+
 ρ is the density of the fluid (SI units: kg/m3)
+
 u is the flow velocity (m/s)
+
 L is a characteristic length (m)
+
 μ is the dynamic viscosity of the fluid (Pa·s or N·s/m2 or kg/(m·s))
 
-  
-    
-      
         ν
-      
-    
     {\displaystyle \nu }
-  
  is the kinematic viscosity of the fluid (m2/s).
+
 These are generally not independent numbers: liquids generally get less viscous as they become hotter, while gases generally become more viscous.  Both will generally become less dense as they become hotter, although the effect is substantially more pronounced in gases.  For a (solid) object in a fluid, the characteristic length will vary with temperature - solids are typically even less temperature sensitive than liquids when it comes to density, but at sufficient flow speeds, the amount of frictional heat from traversing the fluid can be substantial.
 
 The Reynolds number can be defined for several different situations where a fluid is in relative motion to a surface. These definitions generally include the fluid properties of density and viscosity, plus a velocity and a characteristic length or characteristic dimension (L in the above equation). This dimension is a matter of convention—for example radius and diameter are equally valid to describe spheres or circles, but one is chosen by convention. For aircraft or ships, the length or width can be used. For flow in a pipe, or for a sphere moving in a fluid, the internal diameter is generally used today. Other shapes such as rectangular pipes or non-spherical objects have an equivalent diameter defined. For fluids of variable density such as compressible gases or fluids of variable viscosity such as non-Newtonian fluids, special rules apply. The velocity may also be a matter of convention in some circumstances, notably stirred vessels.
+
 In practice, matching the Reynolds number is not on its own sufficient to guarantee similitude. Fluid flow is generally chaotic, and very small changes to shape and surface roughness of bounding surfaces can result in very different flows. Nevertheless, Reynolds numbers are a very important guide and are widely used.
 
 ## Derivation
 If we know that the relevant physical quantities in a physical system are only 
-  
-    
-      
         ρ
+
         ,
+
         u
+
         ,
+
         L
+
         ,
+
         μ
-      
-    
     {\displaystyle \rho ,u,L,\mu }
-  
 , then the Reynolds number is essentially fixed by the Buckingham π theorem.
+
 In detail, since there are 4 quantities 
-  
-    
-      
         ρ
+
         ,
+
         u
+
         ,
+
         L
+
         ,
+
         μ
-      
-    
     {\displaystyle \rho ,u,L,\mu }
-  
 , but they have only 3 dimensions (length, time, mass), we can consider 
-  
-    
-      
-        
           ρ
-          
-            
               x
-              
                 1
-              
-            
-          
-        
-        
           u
-          
-            
               x
-              
                 2
-              
-            
-          
-        
-        
           L
-          
-            
               x
-              
                 3
-              
-            
-          
-        
-        
           μ
-          
-            
               x
-              
                 4
-              
-            
-          
-        
-      
-    
     {\displaystyle \rho ^{x_{1}}u^{x_{2}}L^{x_{3}}\mu ^{x_{4}}}
-  
 , where 
-  
-    
-      
-        
           x
-          
             1
-          
-        
         ,
+
         .
+
         .
+
         .
+
         ,
-        
           x
-          
             4
-          
-        
-      
-    
     {\displaystyle x_{1},...,x_{4}}
-  
  are real numbers. Setting the three dimensions of 
-  
-    
-      
-        
           ρ
-          
-            
               x
-              
                 1
-              
-            
-          
-        
-        
           u
-          
-            
               x
-              
                 2
-              
-            
-          
-        
-        
           L
-          
-            
               x
-              
                 3
-              
-            
-          
-        
-        
           μ
-          
-            
               x
-              
                 4
-              
-            
-          
-        
-      
-    
     {\displaystyle \rho ^{x_{1}}u^{x_{2}}L^{x_{3}}\mu ^{x_{4}}}
-  
  to zero, we obtain 3 independent linear constraints, so the solution space has 1 dimension, and it is spanned by the vector 
-  
-    
-      
         (
+
         1
+
         ,
+
         1
+
         ,
+
         1
+
         ,
+
         −
+
         1
+
         )
-      
-    
     {\displaystyle (1,1,1,-1)}
-  
 .
+
 Thus, any dimensionless quantity constructed out of 
-  
-    
-      
         ρ
+
         ,
+
         u
+
         ,
+
         L
+
         ,
+
         μ
-      
-    
     {\displaystyle \rho ,u,L,\mu }
-  
  is a function of 
-  
-    
-      
         ρ
+
         u
+
         L
-        
           μ
-          
             −
+
             1
-          
-        
-      
-    
     {\displaystyle \rho uL\mu ^{-1}}
-  
 , the Reynolds number.
+
 Alternatively, we can take the incompressible Navier–Stokes equations (convective form):
-  
-    
-      
-        
-          
-            
               ∂
-              
                 u
-              
-            
-            
               ∂
+
               t
-            
-          
-        
         +
+
         (
-        
           u
-        
         ⋅
+
         ∇
+
         )
-        
           u
-        
         −
+
         ν
-        
-        
           ∇
-          
             2
-          
-        
-        
           u
-        
         =
+
         −
-        
-          
             1
+
             ρ
-          
-        
         ∇
+
         p
+
         +
-        
           g
-        
-      
-    
     {\displaystyle {\frac {\partial \mathbf {u} }{\partial t}}+(\mathbf {u} \cdot \nabla )\mathbf {u} -\nu \,\nabla ^{2}\mathbf {u} =-{\frac {1}{\rho }}\nabla p+\mathbf {g} }
-  
 Remove the gravity term 
-  
-    
-      
-        
-          
             g
-          
-        
-      
-    
     {\displaystyle {\mathbf {g}}}
-  
 , then the left side consists of inertial force 
-  
-    
-      
-        
-          
-            
               ∂
-              
                 u
-              
-            
-            
               ∂
+
               t
-            
-          
-        
         +
+
         (
-        
           u
-        
         ⋅
+
         ∇
+
         )
-        
           u
-        
-      
-    
     {\displaystyle {\frac {\partial \mathbf {u} }{\partial t}}+(\mathbf {u} \cdot \nabla )\mathbf {u} }
-  
 , and viscous force 
-  
-    
-      
         ν
-        
-        
           ∇
-          
             2
-          
-        
-        
           u
-        
-      
-    
     {\displaystyle \nu \,\nabla ^{2}\mathbf {u} }
-  
 . Their ratio has the order of 
-  
-    
-      
-        
-          
-            
               (
-              
                 u
-              
               ⋅
+
               ∇
+
               )
-              
                 u
-              
-            
-            
               ν
-              
-              
                 ∇
-                
                   2
-                
-              
-              
                 u
-              
-            
-          
-        
         ∼
-        
-          
-            
-              
                 u
-                
                   2
-                
-              
-              
                 /
-              
               L
-            
-            
               ν
+
               u
-              
                 /
-              
-              
                 L
-                
                   2
-                
-              
-            
-          
-        
         =
-        
-          
-            
               u
+
               L
-            
             ν
-          
-        
-      
-    
     {\displaystyle {\frac {(\mathbf {u} \cdot \nabla )\mathbf {u} }{\nu \,\nabla ^{2}\mathbf {u} }}\sim {\frac {u^{2}/L}{\nu u/L^{2}}}={\frac {uL}{\nu }}}
-  
 , the Reynolds number. This argument is written out in detail on the Scallop theorem page.
 
 ### Alternative derivation
 The Reynolds number can be obtained when one uses the nondimensional form of the incompressible Navier–Stokes equations for a newtonian fluid expressed in terms of the Lagrangian derivative:
 
-  
-    
-      
         ρ
-        
-          
-            
               D
-              
                 v
-              
-            
-            
               D
+
               t
-            
-          
-        
         =
+
         −
+
         ∇
+
         p
+
         +
+
         μ
-        
           ∇
-          
             2
-          
-        
-        
           v
-        
         +
+
         ρ
-        
           f
-        
         .
-      
-    
     {\displaystyle \rho {\frac {D\mathbf {v} }{Dt}}=-\nabla p+\mu \nabla ^{2}\mathbf {v} +\rho \mathbf {f} .}
-  
 
 Each term in the above equation has the units of a "body force" (force per unit volume) with the same dimensions of a density multiplied by an acceleration. Each term is thus dependent on the exact measurements of a flow. When we render the equation nondimensional, that is when we multiply it by a factor with inverse units of the base equation, we obtain a form that does not depend directly on the physical sizes. One possible way to obtain a nondimensional equation is to multiply the whole equation by the factor
 
-  
-    
-      
-        
-          
             L
-            
               ρ
-              
                 V
-                
                   2
-                
-              
-            
-          
-        
         ,
-      
-    
     {\displaystyle {\frac {L}{\rho V^{2}}},}
-  
 
 where
 
 V is the mean velocity, v or v, relative to the fluid (m/s),
+
 L is the characteristic length (m),
+
 ρ is the fluid density (kg/m3).
+
 If we now set
 
-  
-    
-      
-        
-          
-            
-              
-                
-                  
                     v
-                  
                   ′
-                
-              
-              
-                
                 =
-                
-                  
-                    
                       v
-                    
                     V
-                  
-                
                 ,
-              
-              
-                
                   p
+
                   ′
-                
-              
-              
-                
                 =
+
                 p
-                
-                  
                     1
-                    
                       ρ
-                      
                         V
-                        
                           2
-                        
-                      
-                    
-                  
-                
                 ,
-              
-              
-                
-                  
                     f
-                  
                   ′
-                
-              
-              
-                
                 =
-                
                   f
-                
-                
-                  
                     L
-                    
                       V
-                      
                         2
-                      
-                    
-                  
-                
                 ,
-              
-              
-                
-                  
                     ∂
-                    
                       ∂
-                      
                         t
+
                         ′
-                      
-                    
-                  
-                
-              
-              
-                
                 =
-                
-                  
                     L
+
                     V
-                  
-                
-                
-                  
                     ∂
-                    
                       ∂
+
                       t
-                    
-                  
-                
                 ,
-              
-              
-                
                   ∇
+
                   ′
-                
-              
-              
-                
                 =
+
                 L
+
                 ∇
+
                 ,
-              
-            
-          
-        
-      
-    
     {\displaystyle {\begin{aligned}\mathbf {v} '&={\frac {\mathbf {v} }{V}},&p'&=p{\frac {1}{\rho V^{2}}},&\mathbf {f} '&=\mathbf {f} {\frac {L}{V^{2}}},&{\frac {\partial }{\partial t'}}&={\frac {L}{V}}{\frac {\partial }{\partial t}},&\nabla '&=L\nabla ,\end{aligned}}}
-  
 
 we can rewrite the Navier–Stokes equation without dimensions:
 
-  
-    
-      
-        
-          
-            
               D
-              
-                
                   v
-                
                 ′
-              
-            
-            
               D
-              
                 t
+
                 ′
-              
-            
-          
-        
         =
+
         −
-        
           ∇
+
           ′
-        
-        
           p
+
           ′
-        
         +
-        
-          
             μ
-            
               ρ
+
               L
+
               V
-            
-          
-        
-        
           ∇
-          
             ′
-            
               2
-            
-          
-        
-        
-          
             v
-          
           ′
-        
         +
-        
-          
             f
-          
           ′
-        
         ,
-      
-    
     {\displaystyle {\frac {D\mathbf {v} '}{Dt'}}=-\nabla 'p'+{\frac {\mu }{\rho LV}}\nabla '^{2}\mathbf {v} '+\mathbf {f} ',}
-  
 
 where the term ⁠μ/ρLV⁠ = ⁠1/Re⁠.
+
 Finally, dropping the primes for ease of reading:
 
-  
-    
-      
-        
-          
-            
               D
-              
                 v
-              
-            
-            
               D
+
               t
-            
-          
-        
         =
+
         −
+
         ∇
+
         p
+
         +
-        
-          
             1
-            
               R
+
               e
-            
-          
-        
-        
           ∇
-          
             2
-          
-        
-        
           v
-        
         +
-        
           f
-        
         .
-      
-    
     {\displaystyle {\frac {D\mathbf {v} }{Dt}}=-\nabla p+{\frac {1}{\mathrm {Re} }}\nabla ^{2}\mathbf {v} +\mathbf {f} .}
-  
 
 This is why mathematically all Newtonian, incompressible flows with the same Reynolds number are comparable. Notice also that in the above equation, the viscous terms vanish for Re → ∞. Thus flows with high Reynolds numbers are approximately inviscid in the free stream.
 
 ## Flow in a pipe
 For flow in a pipe or tube, the Reynolds number is generally defined as
 
-  
-    
-      
-        
           R
+
           e
-        
         =
-        
-          
-            
               u
-              
                 D
-                
                   H
-                
-              
-            
             ν
-          
-        
         =
-        
-          
-            
               ρ
+
               u
-              
                 D
-                
                   H
-                
-              
-            
             μ
-          
-        
         =
-        
-          
-            
               ρ
+
               Q
-              
                 D
-                
                   H
-                
-              
-            
-            
               μ
+
               A
-            
-          
-        
         =
-        
-          
-            
               W
-              
                 D
-                
                   H
-                
-              
-            
-            
               μ
+
               A
-            
-          
-        
         ,
-      
-    
     {\displaystyle \mathrm {Re} ={\frac {uD_{\text{H}}}{\nu }}={\frac {\rho uD_{\text{H}}}{\mu }}={\frac {\rho QD_{\text{H}}}{\mu A}}={\frac {WD_{\text{H}}}{\mu A}},}
-  
 
 where
 
 DH is the hydraulic diameter of the pipe (the inside diameter if the pipe is circular) (m),
+
 Q is the volumetric flow rate (m3/s),
+
 A is the pipe's cross-sectional area (A = ⁠πDH2/4⁠) (m2),
+
 u is the mean velocity of the fluid (m/s),
+
 μ (mu) is the dynamic viscosity of the fluid (Pa·s = N·s/m2 = kg/(m·s)),
+
 ν (nu) is the kinematic viscosity (ν = ⁠μ/ρ⁠) (m2/s),
+
 ρ (rho) is the density of the fluid (kg/m3),
+
 W is the mass flowrate of the fluid (kg/s).
+
 For shapes such as squares, rectangular or annular ducts where the height and width are comparable, the characteristic dimension for internal-flow situations is taken to be the hydraulic diameter, DH, defined as
 
-  
-    
-      
-        
           D
-          
             H
-          
-        
         =
-        
-          
-            
               4
+
               A
-            
             P
-          
-        
         ,
-      
-    
     {\displaystyle D_{\text{H}}={\frac {4A}{P}},}
-  
 
 where A is the cross-sectional area, and P is the wetted perimeter. The wetted perimeter for a channel is the total perimeter of all channel walls that are in contact with the flow. This means that the length of the channel exposed to air is not included in the wetted perimeter.
+
 For a circular pipe, the hydraulic diameter is exactly equal to the inside pipe diameter:
 
-  
-    
-      
-        
           D
-          
             H
-          
-        
         =
+
         D
+
         .
-      
-    
     {\displaystyle D_{\text{H}}=D.}
-  
 
 For an annular duct, such as the outer channel in a tube-in-tube heat exchanger, the hydraulic diameter can be shown algebraically to reduce to
 
-  
-    
-      
-        
           D
-          
             H,annulus
-          
-        
         =
-        
           D
-          
             o
-          
-        
         −
-        
           D
-          
             i
-          
-        
         ,
-      
-    
     {\displaystyle D_{\text{H,annulus}}=D_{\text{o}}-D_{\text{i}},}
-  
 
 where
 
 Do is the inside diameter of the outer pipe,
+
 Di is the outside diameter of the inner pipe.
+
 For calculation involving flow in non-circular ducts, the hydraulic diameter can be substituted for the diameter of a circular duct, with reasonable accuracy, if the aspect ratio AR of the duct cross-section remains in the range ⁠1/4⁠ < AR < 4.
 
 ## Laminar–turbulent transition
 
 In boundary layer flow over a flat plate, experiments confirm that, after a certain length of flow, a laminar boundary layer will become unstable and turbulent. This instability occurs across different scales and with different fluids, usually when Rex ≈ 5×105, where x is the distance from the leading edge of the flat plate, and the flow velocity is the freestream velocity of the fluid outside the boundary layer.
+
 For flow in a pipe of diameter D, experimental observations show that for "fully developed" flow, laminar flow occurs when ReD < 2300 and turbulent flow occurs when ReD > 2900. At the lower end of this range, a continuous turbulent-flow will form, but only at a very long distance from the inlet of the pipe. The flow in between will begin to transition from laminar to turbulent and then back to laminar at irregular intervals, called intermittent flow. This is due to the different speeds and conditions of the fluid in different areas of the pipe's cross-section, depending on other factors such as pipe roughness and flow uniformity. Laminar flow tends to dominate in the fast-moving center of the pipe while slower-moving turbulent flow dominates near the wall. As the Reynolds number increases, the continuous turbulent-flow moves closer to the inlet and the intermittency in between increases, until the flow becomes fully turbulent at ReD > 2900. This result is generalized to non-circular channels using the hydraulic diameter, allowing a transition Reynolds number to be calculated for other shapes of channel.
+
 These transition Reynolds numbers are also called critical Reynolds numbers, and were studied by Osborne Reynolds around 1895. The critical Reynolds number is different for every geometry.
 
 ## Flow in a wide duct
@@ -991,13 +546,17 @@ The Reynolds number for an object moving in a fluid, called the particle Reynold
 ### In viscous fluids
 
 Where the viscosity is naturally high, such as polymer solutions and polymer melts, flow is normally laminar. The Reynolds number is very small and Stokes' law can be used to measure the viscosity of the fluid. Spheres are allowed to fall through the fluid and they reach the terminal velocity quickly, from which the viscosity can be determined.
+
 The laminar flow of polymer solutions is exploited by animals such as fish and dolphins, who exude viscous solutions from their skin to aid flow over their bodies while swimming. It has been used in yacht racing by owners who want to gain a speed advantage by pumping a polymer solution such as low molecular weight polyoxyethylene in water, over the wetted surface of the hull.
+
 It is, however, a problem for mixing polymers, because turbulence is needed to distribute fine filler (for example) through the material. Inventions such as the "cavity transfer mixer" have been developed to produce multiple folds into a moving melt so as to improve mixing efficiency. The device can be fitted onto extruders to aid mixing.
 
 ### Sphere in a fluid
 
 For a sphere in a fluid, the characteristic length-scale is the diameter of the sphere and the characteristic velocity is that of the sphere relative to the fluid some distance away from the sphere, such that the motion of the sphere does not disturb that reference parcel of fluid. The density and viscosity are those belonging to the fluid. Note that purely laminar flow only exists up to Re = 10 under this definition.
+
 Under the condition of low Re, the relationship between force and speed of motion is given by Stokes' law.
+
 At higher Reynolds numbers the drag on a sphere depends on surface roughness. Thus, for example, adding dimples on the surface of a golf ball causes the boundary layer on the upstream side of the ball to transition from laminar to turbulent. The turbulent boundary layer is able to remain attached to the surface of the ball much longer than a laminar boundary and so creates a narrower low-pressure wake and hence less pressure drag. The reduction in pressure drag causes the ball to travel farther.
 
 ### Rectangular object in a fluid
@@ -1009,152 +568,84 @@ The particle Reynolds number is important in determining the terminal velocity o
 ### Packed bed
 For fluid flow through a bed, of approximately spherical particles of diameter D in contact, if the voidage is ε and the superficial velocity is vs, the Reynolds number can be defined as
 
-  
-    
-      
-        
           R
+
           e
-        
         =
-        
-          
-            
               ρ
-              
                 v
-                
                   s
-                
-              
               D
-            
             μ
-          
-        
         ,
-      
-    
     {\displaystyle \mathrm {Re} ={\frac {\rho v_{\text{s}}D}{\mu }},}
-  
 
 or
 
-  
-    
-      
-        
           R
+
           e
-        
         =
-        
-          
-            
               ρ
-              
                 v
-                
                   s
-                
-              
               D
-            
-            
               μ
+
               ε
-            
-          
-        
         ,
-      
-    
     {\displaystyle \mathrm {Re} ={\frac {\rho v_{\text{s}}D}{\mu \varepsilon }},}
-  
 
 or
 
-  
-    
-      
-        
           R
+
           e
-        
         =
-        
-          
-            
               ρ
-              
                 v
-                
                   s
-                
-              
               D
-            
-            
               μ
+
               (
+
               1
+
               −
+
               ε
+
               )
-            
-          
-        
         .
-      
-    
     {\displaystyle \mathrm {Re} ={\frac {\rho v_{\text{s}}D}{\mu (1-\varepsilon )}}.}
-  
 
 The choice of equation depends on the system involved: the first is successful in correlating the data for various types of packed and fluidized beds, the second Reynolds number suits for the liquid-phase data, while the third was found successful in correlating the fluidized bed data, being first introduced for liquid fluidized bed system.
+
 Laminar conditions apply up to Re = 10, fully turbulent from Re = 2000.
 
 ### Stirred vessel
 In a cylindrical vessel stirred by a central rotating paddle, turbine or propeller, the characteristic dimension is the diameter of the agitator D. The velocity V is ND where N is the rotational speed in rad per second. Then the Reynolds number is:
 
-  
-    
-      
-        
           R
+
           e
-        
         =
-        
-          
-            
               ρ
+
               N
-              
                 D
-                
                   2
-                
-              
-            
             μ
-          
-        
         =
-        
-          
-            
               ρ
+
               V
+
               D
-            
             μ
-          
-        
         .
-      
-    
     {\displaystyle \mathrm {Re} ={\frac {\rho ND^{2}}{\mu }}={\frac {\rho VD}{\mu }}.}
-  
 
 The system is fully turbulent for values of Re above 10000.
 
@@ -1166,169 +657,96 @@ Pressure drops seen for fully developed flow of fluids through pipes can be pred
 
 In order for two flows to be similar, they must have the same geometry and equal Reynolds and Euler numbers. When comparing fluid behavior at corresponding points in a model and a full-scale flow, the following holds:
 
-  
-    
-      
-        
-          
-            
-              
-                
-                  
                     R
+
                     e
-                  
-                  
                     m
-                  
-                
-              
-              
-                
                 =
-                
                   R
+
                   e
-                
                 ,
-              
-            
-            
-              
-                
-                  
                     E
+
                     u
-                  
-                  
                     m
-                  
-                
-              
-              
-                
                 =
-                
                   E
+
                   u
-                
                 ,
-              
-            
-          
-        
-      
-    
     {\displaystyle {\begin{aligned}\mathrm {Re} _{\text{m}}&=\mathrm {Re} ,\\\mathrm {Eu} _{\text{m}}&=\mathrm {Eu} ,\end{aligned}}}
-  
 
 where 
-  
-    
-      
-        
-          
             R
+
             e
-          
-          
             m
-          
-        
-      
-    
     {\displaystyle \mathrm {Re} _{\text{m}}}
-  
  is the Reynolds number for the model, and 
-  
-    
-      
-        
           R
+
           e
-        
-      
-    
     {\displaystyle \mathrm {Re} }
-  
  is full-scale Reynolds number, and similarly for the Euler numbers.
+
 The model numbers and design numbers should be in the same proportion, hence
 
-  
-    
-      
-        
-          
-            
               p
-              
                 m
-              
-            
-            
-              
                 ρ
-                
                   m
-                
-              
-              
                 v
-                
                   m
-                
-                
                   2
-                
-              
-            
-          
-        
         =
-        
-          
             p
-            
               ρ
-              
                 v
-                
                   2
-                
-              
-            
-          
-        
         .
-      
-    
     {\displaystyle {\frac {p_{\text{m}}}{\rho _{\text{m}}v_{\text{m}}^{2}}}={\frac {p}{\rho v^{2}}}.}
-  
 
 This allows engineers to perform experiments with reduced scale models in water channels or wind tunnels and correlate the data to the actual flows, saving on costs during experimentation and on lab time. Note that true dynamic similitude may require matching other dimensionless numbers as well, such as the Mach number used in compressible flows, or the Froude number that governs open-channel flows. Some flows involve more dimensionless parameters than can be practically satisfied with the available apparatus and fluids, so one is forced to decide which parameters are most important. For experimental flow modeling to be useful, it requires a fair amount of experience and judgment of the engineer.
+
 An example where the mere Reynolds number is not sufficient for the similarity of flows (or even the flow regime – laminar or turbulent) are bounded flows, i.e. flows that are restricted by walls or other boundaries. A classical example of this is the Taylor–Couette flow, where the dimensionless ratio of radii of bounding cylinders is also important, and many technical applications where these distinctions play an important role. Principles of these restrictions were developed by Maurice Marie Alfred Couette and Geoffrey Ingram Taylor and developed further by Floris Takens and David Ruelle.
 
 Typical values of Reynolds number
+
 Dictyostelium amoebae: ~ 1 × 10−6
+
 Bacterium ~ 1 × 10−4
+
 Ciliate ~ 1 × 10−1
+
 Smallest fish ~ 1
+
 Blood flow in brain ~ 1 × 102
+
 Blood flow in aorta ~ 1 × 103
+
 Onset of turbulent flow ~ 2.3 × 103 to 5.0 × 104 for pipe flow to 106 for boundary layers
+
 Typical pitch in Major League Baseball ~ 2 × 105
+
 Person swimming ~ 4 × 106
+
 Fastest fish ~ 1 × 108
+
 Blue whale ~ 4 × 108
+
 A large ship (Queen Elizabeth 2) ~ 5 × 109
+
 Atmospheric tropical cyclone ~ 1 × 1012
 
 ## Smallest scales of turbulent motion
 In a turbulent flow, there is a range of scales of the time-varying fluid motion. The size of the largest scales of fluid motion (sometimes called eddies) are set by the overall geometry of the flow. For instance, in an industrial smoke stack, the largest scales of fluid motion are as big as the diameter of the stack itself. The size of the smallest scales is set by the Reynolds number. As the Reynolds number increases, smaller and smaller scales of the flow are visible. In a smokestack, the smoke may appear to have many very small velocity perturbations or eddies, in addition to large bulky eddies. In this sense, the Reynolds number is an indicator of the range of scales in the flow. The higher the Reynolds number, the greater the range of scales. The largest eddies will always be the same size; the smallest eddies are determined by the Reynolds number.
+
 What is the explanation for this phenomenon? A large Reynolds number indicates that viscous forces are not important at large scales of the flow. With a strong predominance of inertial forces over viscous forces, the largest scales of fluid motion are undamped—there is not enough viscosity to dissipate their motions. The kinetic energy must "cascade" from these large scales to progressively smaller scales until a level is reached for which the scale is small enough for viscosity to become important (that is, viscous forces become of the order of inertial ones). It is at these small scales where the dissipation of energy by viscous action finally takes place. The Reynolds number indicates at what scale this viscous dissipation occurs.
 
 ## In physiology
 Poiseuille's law on blood circulation in the body is dependent on laminar flow. In turbulent flow the flow rate is proportional to the square root of the pressure gradient, as opposed to its direct proportionality to pressure gradient in laminar flow.
+
 Using the definition of the Reynolds number we can see that a large diameter with rapid flow, where the density of the blood is high, tends towards turbulence. Rapid changes in vessel diameter may lead to turbulent flow, for instance when a narrower vessel widens to a larger one. Furthermore, a bulge of atheroma may be the cause of turbulent flow, where audible turbulence may be detected with a stethoscope.
 
 ## Complex systems

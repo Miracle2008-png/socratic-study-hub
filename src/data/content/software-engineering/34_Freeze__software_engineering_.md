@@ -1,8 +1,6 @@
 # Freeze (software engineering)
 
 In software engineering, a freeze is a point in time in the development process after which the rules for making changes to the source code or related resources become more strict, or the period during which those rules are applied. A freeze helps move the project forward towards a release or the end of an iteration by reducing the scale or frequency of changes, and may be used to help meet a roadmap.
-The exact rules depend on the type of freeze and the particular development process in use; for example, they may include only allowing changes which fix bugs, or allowing changes only after thorough review by other members of the development team. They may also specify what happens if a change contrary to the rules is required, such as restarting the freeze period.
-Common types of freezes are:
 
 ## Implementations
 

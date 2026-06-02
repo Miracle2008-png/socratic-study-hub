@@ -1,12 +1,13 @@
 # American Society of Civil Engineers
 
 The American Society of Civil Engineers (ASCE) is a tax-exempt professional body founded in 1852 to represent members of the civil engineering profession worldwide. Headquartered in Reston, Virginia, it is the oldest national engineering society in the United States. Its constitution was based on the older Boston Society of Civil Engineers from 1848.
-ASCE is dedicated to the advancement of the science and profession of civil engineering and the enhancement of human welfare through the activities of society members. It has more than 143,000 members in 177 countries. Its mission is to provide essential value to members, their careers, partners, and the public; facilitate the advancement of technology; encourage and provide the tools for lifelong learning; promote professionalism and the profession; develop and support civil engineers.
 
 ## Awards and designations
 
 ASCE honors civil engineers through many Society Awards including the Norman medal (1874), Wellington prize (1921), Huber Civil Engineering Research Prize, the Outstanding Projects and Leaders (OPAL) awards in the categories of construction, design, education, government and management, the Outstanding Civil Engineering Achievement (OCEA) for projects, the Henry L. Michel Award for Industry Advancement of Research and the Charles Pankow Award for innovation, 12 scholarships and fellowships for student members. 
+
 Created in 1968 by ASCE's Sanitary Engineering Division, the Wesley W. Horner award is named after former ASCE President Wesley W. Horner, and given to a recently peer reviewed published paper in the fields of hydrology, urban drainage, or sewerage. Special consideration is given to private practice engineering work that is recognized as a valuable contribution to the field of environmental engineering.
+
 The Lifetime Achievement Award has been presented annually since 1999 and recognizes five different individual leaders. One award is present in each category of design, construction, government, education, and management.
 
 ### Walter L. Huber Civil Engineering Research Prize
@@ -32,8 +33,11 @@ The ASCE Foundation is a charitable foundation established in 1994 to support an
 
 #### Press release of expert review panel 2007
 ASCE provides peer reviews at the request of public agencies and projects as a "means to improve the management and quality of [public agency] services and thus better protect the public health and safety with which they are entrusted". 
+
 After the 2005 levee failures in Greater New Orleans, the commander of the U.S. Army Corps of Engineers (Lt Gen Carl Strock P.E., M.ASCE) requested that ASCE create an expert review panel to peer review the corps-sponsored Interagency Performance Evaluation Task Force, the body commissioned by the corps to assess the performance of the hurricane protection system in metro New Orleans. Lawrence Roth, deputy executive director of the ASCE led the ERP development, served as the panel's chief of staff and facilitated its interaction with IPET. 
+
 The expert panel's role was to provide an independent technical review of the IPET's activities and findings, as stated at a National Research Council meeting in New Orleans: "an independent review panel ensure[s] that the outcome is a robust, credible and defensible performance evaluation". On February 12, 2007, Lt. Gen Strock gave all expert review panel members an Outstanding Civilian Service Medals.
+
 On June 1, 2007, the ASCE issued its expert review panel report, and an accompanying press release. The press release was considered controversial because it contained information not present in the report, conflicting with the report, and minimized the Army Corps' involvement in the catastrophe: "Even without breaching, Hurricane Katrina's rainfall and surge overtopping would have caused extensive and severe flooding—and the worst loss of life and property loss ever experienced in New Orleans." The report stated that had levees and pump stations not failed, "far less property loss would have occurred and nearly two-thirds of deaths could have been avoided."  The ASCE administration was criticized by the Times-Picayune for an attempt to minimize and understate the role of the Army Corps in the flooding.
 
 #### Ethics complaint
@@ -41,7 +45,9 @@ In October 2007, Raymond Seed, a University of California-Berkeley civil enginee
 
 #### Review panels to examine alleged ethics breaches
 On November 14, 2007, ASCE announced that U.S. Congressman Sherwood Boehlert, R‑N.Y. (ret), would lead an independent task force of outside experts to review how ASCE participated in engineering studies of national significance. ASCE President David Mongan said the review was to address criticism of ASCE´s role in assisting the Army Corps of Engineers-sponsored investigation of Katrina failures. Mongan assured citizens of metro New Orleans in a letter to the Times Picayune, that ASCE took "this matter very seriously and that appropriate actions are being taken".
+
 The panel recommended in results released on September 12, 2008, that ASCE should immediately take steps to remove the potential for conflict of interest in its participation in post-disaster engineering studies. The most important recommendations were that peer review funds over $1 million should come from a separate source, like the National Institute of Standards and Technology (NIST), that ASCE should facilitate but not control the assessment teams, and that information to the public and press should be disseminated not under the extremely tight controls that Ray Seed and his team experienced. It concluded that ASCE should draw up an ethics policy to eliminate questions of possible conflicts of interest.
+
 On April 6, 2009, an internal probe with the ASCE issued a report that ordered a retraction of the ASCE's June 1, 2007, press release. The panel determined that the press release had "inadvertently conveyed a misleading impression regarding the role of engineering failures in the devastation of New Orleans", that it incorrectly said that surge levels along Mississippi's coastline were higher than water levels caused by a tsunami in the Indian Ocean in 2004, and that it had incorrectly repeated estimates of deaths and property damage in New Orleans that might have occurred if levees and floodwalls had not been breached.
 
 #### Grassroots group spoof of ASCE–USACE relationship

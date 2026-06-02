@@ -1,21 +1,25 @@
 # Outline of electrical engineering
 
 The following outline is provided as an overview of and topical guide to electrical engineering.
-Electrical engineering – field of engineering that generally deals with the study and application of electricity, electronics and electromagnetism. The field first became an identifiable occupation in the late nineteenth century after commercialization of the electric telegraph and electrical power supply. It now covers a range of subtopics including power, electronics, control systems, signal processing and telecommunications.
 
 ## Classification
 
 Electrical engineering can be described as all of the following:
 
 Academic discipline – branch of knowledge that is taught and researched at the college or university level. Disciplines are defined (in part), and recognized by the academic journals in which research is published, and the learned societies and academic departments or faculties to which their practitioners belong.
+
 Branch of engineering – discipline, skill, and profession of acquiring and applying scientific, economic, social, and practical knowledge, in order to design and build structures, machines, devices, systems, materials and processes.
 
 ## Related disciplines
 
 Biomedical engineering
+
 Electronics and Computer Engineering
+
 Engineering physics
+
 Mechanical engineering
+
 Mechatronics
 
 ## General electrical engineering concepts
@@ -25,37 +29,69 @@ Mechatronics
 Electromagnetism
 
 Electricity
+
 Magnetism
+
 Electromagnetic spectrum
+
 Optical spectrum
+
 Electrostatics
+
 Electric charge
+
 Coulomb's law
+
 Electric field
+
 Gauss's law
+
 Electric potential
+
 Magnetostatics
+
 Electric current
+
 Ampère's law
+
 Magnetic field
+
 Magnetic moment
+
 Electrodynamics
+
 Lorentz force law
+
 Electromotive force
+
 Electromagnetic induction
+
 Faraday-Lenz law
+
 Displacement current
+
 Maxwell's equations
+
 Electromagnetic field
+
 Electromagnetic radiation
+
 Electrical circuits
+
 Antenna
+
 Electrical resistance
+
 Capacitance
+
 Inductance
+
 Impedance
+
 Resonant cavity
+
 Transmission line
+
 Waveguide
 
 ### Physical laws
@@ -63,16 +99,27 @@ Waveguide
 Physical laws
 
 Ampère's law
+
 Coulomb's law
+
 Faraday's law of induction/Faraday-Lenz law
+
 Gauss's law
+
 Kirchhoff's circuit laws
+
 Current law
+
 Voltage law
+
 Maxwell's equations
+
 Gauss's law
+
 Faraday's law of induction
+
 Ampère's law
+
 Ohm's law
 
 ### Control engineering
@@ -80,50 +127,95 @@ Ohm's law
 Control engineering
 
 Control theory
+
 Adaptive control
+
 Control theory
+
 Digital control
+
 Nonlinear control
+
 Optimal control
+
 Intelligent control
+
 Fuzzy control
+
 Model predictive control
+
 System properties:
+
 Exponential stability
+
 Marginal stability
+
 BIBO stability
+
 Lyapunov stability (i.e., asymptotic stability)
+
 Input-to-state (ISS) stability
+
 Controllability
+
 Observability
+
 Negative feedback
+
 Positive feedback
+
 System modeling and analysis:
+
 System identification
+
 State observer
+
 First principles modeling
+
 Least squares
+
 Kalman filter
+
 Root locus
+
 Extended Kalman filter
+
 Signal-flow graph
+
 State space representation
+
 Artificial neural networks
+
 Controllers:
+
 Closed-loop controller
+
 PID controller
+
 Programmable logic controller
+
 Embedded controller
+
 Field oriented controller
+
 Direct torque controller
+
 Digital signal controller
+
 Pulse-width modulation controller
+
 Control applications:
+
 Industrial Control Systems
+
 Process Control
+
 Distributed Control System
+
 Mechatronics
+
 Motion control
+
 Supervisory control (SCADA)
 
 ### Electronics
@@ -131,38 +223,71 @@ Supervisory control (SCADA)
 Electronics
 
 Electrical network/Circuit
+
 Circuit laws
+
 Kirchhoff's circuit laws
+
 Current law
+
 Voltage law
+
 Y-delta transform
+
 Ohm's law
+
 Electrical element/Discretes
+
 Passive elements:
+
 Capacitor
+
 Inductor
+
 Resistor
+
 Hall effect sensor
+
 Active elements:
+
 Microcontroller
+
 Operational amplifier
+
 Semiconductors:
+
 Diode
+
 Zener diode
+
 Light-emitting diode
+
 PIN diode
+
 Schottky diode
+
 Avalanche diode
+
 Laser diode
+
 DIAC
+
 Thyristor
+
 Transistor
+
 Bipolar transistor (BJT)
+
 Field effect transistor (FET)
+
 Darlington transistor
+
 IGBT
+
 TRIAC
+
 MOSFET
+
 Electronic design automation
 
 ### Power engineering
@@ -170,24 +295,43 @@ Electronic design automation
 Power engineering
 
 Generation
+
 Electrical generator
+
 Renewable electricity
+
 Hydropower
+
 Transmission
+
 Electricity pylon
+
 Transformer
+
 Transmission line
+
 Distribution
+
 Processes:
+
 Alternating current
+
 Direct current
+
 Single-phase electric power
+
 Two-phase electric power
+
 Three-phase power
+
 Power electronics / Electro-mechanical
+
 Inverter
+
 Static VAR compensator
+
 Variable-frequency drive
+
 Ward Leonard control
 
 ### Electric vehicles
@@ -195,10 +339,15 @@ Ward Leonard control
 Electric vehicles
 
 Electric motor
+
 Hybrid electric vehicle
+
 Plug-in hybrid
+
 Rechargeable battery
+
 Vehicle-to-grid
+
 Smart Grid
 
 ### Signal processing
@@ -206,71 +355,133 @@ Smart Grid
 Signal processing
 
 Analog signal processing
+
 Digital signal processing
+
 Quantization
+
 Sampling
+
 Analog-to-digital converter, Digital-to-analog converter
+
 Continuous signal, Discrete signal
+
 Down sampling
+
 Nyquist frequency
+
 Nyquist–Shannon sampling theorem
+
 Oversampling
+
 Sample and hold
+
 Sampling frequency
+
 Undersampling
+
 Upsampling
+
 Audio signal processing
+
 Audio noise reduction
+
 Speech processing
+
 Equalization (audio)
+
 Digital image processing
+
 Geometric transformation
+
 Color correction
+
 Computer vision
+
 Image noise reduction
+
 Edge detection
+
 Image editing
+
 Segmentation
+
 Data compression
+
 Lossless data compression
+
 Lossy data compression
+
 Filtering
+
 Analog filter
+
 Audio filter
+
 Digital filter
+
 Finite impulse response
+
 Infinite impulse response
+
 Electronic filter
+
 Analogue filter
+
 Filter (signal processing)
+
 Band-pass filter
+
 Band-stop filter
+
 Butterworth filter
+
 Chebyshev filter
+
 High-pass filter
+
 Kalman filter
+
 Low-pass filter
+
 Notch filter
+
 Sallen Key filter
+
 Wiener filter
+
 Transforms
+
 Advanced Z-transform
+
 Bilinear transform
+
 Continuous Fourier transform
+
 Discrete cosine transform
+
 Discrete Fourier transform, Fast Fourier transform (FFT)
+
 Discrete sine transform
+
 Fourier transform
+
 Hilbert transform
+
 Laplace transform, Two-sided Laplace transform
+
 Z-transform
 
 ### Instrumentation
 
 Actuator
+
 Sensors
+
 Electric motor
+
 Oscilloscope
+
 Signal conditioning
 
 ### Telecommunication
@@ -278,25 +489,41 @@ Signal conditioning
 Telecommunication
 
 Telephone
+
 Pulse-code modulation (PCM)
+
 Main distribution frame (MDF)
+
 Carrier system
+
 Mobile phone
+
 Wireless network
+
 Optical fiber
+
 Modulation
+
 Carrier wave
+
 Communication channel
+
 Information theory
+
 Error correction and detection
+
 Digital television
+
 Digital audio broadcasting
+
 Satellite radio
+
 Satellite
 
 ## Electrical engineering occupations
 
 Occupations in electrical/electronics engineering
+
 Electrical Technologist
 
 ## Electrical engineering organizations
@@ -306,11 +533,15 @@ International Electrotechnical Commission (IEC)
 ## Electrical engineering publications
 
 IEEE Spectrum
+
 IEEE series of journals  Hawkins Electrical Guide
+
 Iterative Receiver Design
+
 List of electrical engineering journals
 
 ## Persons influential in electrical engineering
 
 List of electrical engineers and their contributions
+
 List of Russian electrical engineers

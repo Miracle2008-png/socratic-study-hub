@@ -4,17 +4,29 @@ The Laws of Thermodynamics (Spanish: Las leyes de la termodinámica) is a 2018 S
 
 ## Cast
 Vito Sanz as Manel
+
 Berta Vázquez as Elena
+
 Chino Darín as Pablo
+
 Vicky Luengo as Eva
+
 Irene Escolar as Raquel
+
 Josep Maria Pou as Profesor Amat
+
 Andrea Ros as Alba
+
 Daniel Sánchez Arévalo as Daniel Sánchez Arévalo
+
 Alicia Medina as Modelo Anuncio
+
 Marta Aguilar as Chica Orgullo
+
 José Javier Domínguez as Camarero
+
 Txell Aixendri as Enfermera
+
 Carlos Olalla as Psicólogo
 
 ## Production

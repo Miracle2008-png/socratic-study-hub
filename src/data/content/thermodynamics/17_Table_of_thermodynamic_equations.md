@@ -26,53 +26,33 @@ The equations in this article are classified by subject.
 
 ### Entropy
 
-  
-    
-      
         S
+
         =
-        
           k
-          
-            
               B
-            
-          
-        
         ln
+
         ⁡
+
         Ω
-      
-    
-    
 
 $$ S=k_{\mathrm {B} }\ln \Omega $$
 
-  
 , where kB is the Boltzmann constant, and Ω denotes the volume of macrostate in the phase space or otherwise called thermodynamic probability.
 
-  
-    
-      
         d
+
         S
+
         =
-        
-          
-            
               δ
+
               Q
-            
             T
-          
-        
-      
-    
-    
 
 $$ dS={\frac {\delta Q}{T}} $$
 
-  
 , for reversible processes only
 
 ### Statistical physics
@@ -85,24 +65,23 @@ Corollaries of the non-relativistic Maxwell–Boltzmann distribution are below.
 
 For quasi-static and reversible processes, the first law of thermodynamics is:
 
-  
-    
-      
         d
+
         U
+
         =
+
         δ
+
         Q
+
         −
+
         δ
+
         W
-      
-    
-    
 
 $$ dU=\delta Q-\delta W $$
-
-  
 
 where δQ is the heat supplied to the system and δW is the work done by the system.
 
@@ -122,94 +101,70 @@ Other differential equations are:
 
 ### Quantum properties
 
-  
-    
-      
         U
+
         =
+
         N
-        
           k
-          
             B
-          
-        
-        
           T
-          
             2
-          
-        
-        
-          
             (
-            
-              
-                
                   ∂
+
                   ln
+
                   ⁡
+
                   Z
-                
-                
                   ∂
+
                   T
-                
-              
-            
             )
-          
-          
             V
-          
-        
-      
-    
-    
 
 $$ U=Nk_{\text{B}}T^{2}\left({\frac {\partial \ln Z}{\partial T}}\right)_{V} $$
 
-  
-
-  
-    
-      
         S
+
         =
-        
-          
             U
+
             T
-          
-        
         +
+
         N
-        
           k
-          
             B
-          
-        
         ln
+
         ⁡
+
         Z
+
         −
+
         N
+
         k
+
         ln
+
         ⁡
+
         N
+
         +
+
         N
+
         k
-      
-    
-    
 
 $$ S={\frac {U}{T}}+Nk_{\text{B}}\ln Z-Nk\ln N+Nk $$
 
-  
   Indistinguishable Particles
+
 where N is number of particles, h is that Planck constant, I is moment of inertia, and Z is the partition function, in various forms:
 
 ## Thermal properties of matter

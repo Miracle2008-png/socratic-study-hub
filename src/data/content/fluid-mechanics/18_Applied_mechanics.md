@@ -1,9 +1,6 @@
 # Applied mechanics
 
 Applied mechanics is the branch of science concerned with the motion of any substance that can be experienced or perceived by humans without the help of instruments. In short, when mechanics concepts surpass being theoretical and are applied and executed, general mechanics becomes applied mechanics. It is this stark difference that makes applied mechanics an essential understanding for practical everyday life. It has numerous applications in a wide variety of fields and disciplines, including but not limited to structural engineering, astronomy, oceanography, meteorology, hydraulics, mechanical engineering, aerospace engineering, nanotechnology, structural design, earthquake engineering, fluid dynamics, planetary sciences, and other life sciences. Connecting research between numerous disciplines, applied mechanics plays an important role in both science and engineering.
-Pure mechanics describes the response of bodies (solids and fluids) or systems of bodies to external behavior of a body, in either a beginning state of rest or of motion, subjected to the action of forces. Applied mechanics bridges the gap between physical theory and its application to technology. 
-Applied mechanics can be split into particle mechanics (mechanics of macroscopic objects modeled as point particles), rigid body mechanics (mechanics of non-deformable macroscopic bodies with a definite shape), solid mechanics (mechanics of deformable macroscopic solids, including both elastic and plastic deformation), and fluid mechanics (mechanics of macroscopic fluids). Each branch of applied mechanics is further divided into statics (the study of bodies that have zero resultant force and torque acted upon them), and dynamics (the study of bodies that have non-zero resultant force and torque acted upon them).
-Within the practical sciences, applied mechanics is useful in formulating new ideas and theories, discovering and interpreting phenomena, and developing experimental and computational tools. In the application of the natural sciences, mechanics was said to be complemented by thermodynamics, the study of heat and more generally energy, and electromechanics, the study of electricity and magnetism.
 
 ## Branches
 
@@ -31,123 +28,216 @@ This section based on the "AMR Subject Classification Scheme" from the journal A
 
 ### Foundations and basic methods
 Continuum mechanics
+
 Finite element method
+
 Finite difference method
+
 Other computational methods
+
 Experimental system analysis
 
 ### Dynamics and vibration
 Dynamics (mechanics)
+
 Kinematics
+
 Vibrations of solids (basic)
+
 Vibrations (structural elements)
+
 Vibrations (structures)
+
 Wave motion in solids
+
 Impact on solids
+
 Waves in incompressible fluids
+
 Waves in compressible fluids
+
 Solid fluid interactions
+
 Astronautics (celestial and orbital mechanics)
+
 Explosions and ballistics
+
 Acoustics
 
 ### Automatic control
 System theory and design
+
 Optimal control system
+
 System and control applications
+
 Robotics
+
 Manufacturing
 
 ### Mechanics of solids
 Elasticity
+
 Viscoelasticity
+
 Plasticity and viscoplasticity
+
 Composite material mechanics
+
 Cables, rope, beams, etc
+
 Plates, shells, membranes, etc
+
 Structural stability (buckling, postbuckling)
+
 Electromagneto solid mechanics
+
 Soil mechanics (basic)
+
 Soil mechanics (applied)
+
 Rock mechanics
+
 Material processing
+
 Fracture and damage processes
+
 Fracture and damage mechanics
+
 Experimental stress analysis
+
 Material Testing
+
 Structures (basic)
+
 Structures (ground)
+
 Structures (ocean and coastal)
+
 Structures (mobile)
+
 Structures (containment)
+
 Friction and wear
+
 Machine elements
+
 Machine design
+
 Fastening and joining
 
 ### Mechanics of fluids
 Rheology
+
 Hydraulics
+
 Incompressible flow
+
 Compressible flow
+
 Rarefied flow
+
 Multiphase flow
+
 Wall Layers (incl boundary layers)
+
 Internal flow (pipe, channel, and couette)
+
 Internal flow (inlets, nozzles, diffusers, and cascades)
+
 Free shear layers (mixing layers, jets, wakes, cavities, and plumes)\
+
 Flow stability
+
 Turbulence
+
 Electromagneto fluid and plasma dynamics
+
 Hydromechanics
+
 Aerodynamics
+
 Machinery fluid dynamics
+
 Lubrication
+
 Flow measurements and visualization
 
 ### Thermal sciences
 Thermodynamics
+
 Heat transfer (one phase convection)
+
 Heat transfer (two phase convection)
+
 Heat transfer (conduction)
+
 Heat transfer (radiation and combined modes)
+
 Heat transfer (devices and systems)
+
 Thermodynamics of solids
+
 Mass transfer (with and without heat transfer)
+
 Combustion
+
 Prime movers and propulsion systems
 
 ### Earth sciences
 Micromeritics
+
 Porous media
+
 Geomechanics
+
 Earthquake mechanics
+
 Hydrology, oceanology, and meteorology
 
 ### Energy systems and environment
 Fossil fuel systems
+
 Nuclear systems
+
 Geothermal systems
+
 Solar energy systems
+
 Wind energy systems
+
 Ocean energy system
+
 Energy distribution and storage
+
 Environmental fluid mechanics
+
 Hazardous waste containment and disposal
 
 ### Biosciences
 Biomechanics
+
 Human factor engineering
+
 Rehabilitation engineering
+
 Sports mechanics
 
 ## Publications
 Journal of Applied Mathematics and Mechanics
+
 Newsletters of the Applied Mechanics Division
+
 Journal of Applied Mechanics
+
 Applied Mechanics Reviews
+
 Applied Mechanics
+
 Quarterly Journal of Mechanics and Applied Mathematics
+
 Journal of Applied Mathematics and Mechanics (PMM)
+
 Gesellschaft für Angewandte Mathematik und Mechanik
+
 Acta Mechanica Sinica

@@ -1,11 +1,10 @@
 # Construction engineering
 
 Construction engineering, also known as construction operations, is a professional sub-discipline of civil engineering that deals with the designing, planning, construction, and operations management of infrastructure such as roadways, tunnels, bridges, airports, railroads, facilities, buildings, dams, utilities and other projects. Construction engineers learn design and project management techniques that are similar to those used by civil engineers.
-At the educational level, civil engineering students concentrate primarily on more analytical design, gearing them toward a career as a design professional. This requires them to take engineering science and design courses as part of obtaining a 4-year accredited degree. Education for construction engineers is primarily focused on construction procedures, methods, costs, schedules and personnel management. Their primary concern is to deliver a project on time within budget and of the desired quality.
-Regarding educational requirements, construction engineering students take basic design courses in civil engineering, as well as construction management courses.
 
 ## Work activities
 Being a sub-discipline of civil engineering, construction engineers apply their knowledge of business, technical and management skills to oversee projects including bridges, buildings and housing projects. Construction engineers are heavily involved in the design and management of project funds. They are in charge of risk analysis, costing and planning. A career in design requires a professional engineer license (PE). Individuals who pursue this career path are advised to sit for the Engineer in Training exam (EIT), also referred to as the Fundamentals of Engineering Exam (FE), while in college, as it takes five years' (4 years in USA) post-graduate to obtain the PE license. Some states have recently changed the PE license exam pre-requisite of 4 years work experience after graduation to become a licensed Professional Engineer where an EIT is eligible to take the PE Exam in as little as 6 months after taking the FE exam.
+
 Entry-level construction engineers position is typically project engineers or assistant project engineers. They are responsible for preparing purchasing requisitions, processing change orders, preparing monthly budgeting reports and handling meeting minutes. The construction management position does not necessarily require a PE license; however, possessing one does make the individual more marketable, as the PE license allows the individual to sign off on temporary structure designs.
 
 ## Abilities
@@ -13,6 +12,7 @@ Construction engineers contribute to the creation of infrastructure that meets t
 
 ## Educational requirements
 Individuals looking to obtain a construction engineering degree must first ensure that the program is accredited by the Accreditation Board for Engineering and Technology (ABET). ABET accreditation is assurance that a college or university program meets the quality standards established by the profession for which it prepares its students. There are 4,863 ABET accredited institutions worldwide..
+
 A typical construction engineering curriculum is a mixture of engineering mechanics, engineering design, construction management and general science and mathematics. This usually leads to a Bachelor of Science degree. The B.S. degree along with some design or construction experience is sufficient for most entry-level positions. Graduate schools may be an option for those who want to go further in depth of the construction and engineering subjects taught at the undergraduate level. In most cases construction engineering graduates look to either civil engineering, engineering management or business administration as a possible graduate degree.
 
 ## Job prospects

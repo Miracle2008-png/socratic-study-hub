@@ -1,8 +1,6 @@
 # Systematic Software Engineering
 
 Systematic is a multinational software company based in Aarhus, Denmark. It specialises in systems that support decision-making. Primarily, these have been command and control (C2) systems for commanders in armed forces.
-By 2023, its battlefield management system was reported to be used by 45 nations. It enables interoperability between force elements, notably between allied forces. Other than the military of its home nation, Denmark, its systems have been adopted by the Australian Army, British Army, New Zealand Defence Force, United States Army and many European based NATO forces, such as the Slovenian Armed Forces, Swedish Armed Forces and the Bundeswehr.
-Systematic's civilian applications extend to patient management, library data management and management of energy generation and delivery.
 
 ## Software platforms
 Systematic software products are designed for three sectors, defence, healthcare and digital transformation. The development process for each suite of software follows CMMI5 standards, for which they have received certification. As of 2023, its core products are as follows.  
@@ -38,19 +36,33 @@ This library management software can serve as the system of systems to local lib
 ## Company organisation
 
 Allan Schytt sold his share in the company to the company's co-founder, Michael Holm, in 1992. Holm brought in new equity partners, Alex Holm Jensen and Erik Bank Lauridsen but maintained a controlling stake through his private holding company, Systematic ApS, said to be valued at DKK 600 million, making him the majority stakeholder, chairman of the board, and CEO.
+
 In October 2023, after 38 years with the group, Holm released his plan to retire as CEO. Nicolaj Bramsen, would take up that role on 14 December of that year, having served as the Group Senior Vice President for People & Culture; with Holm remaining as chairman of the board.
+
 By 2010, Systematic employed 500 staff, by 2021 it reached 1,100. Two office openings in Bucharest (a development centre, having purchased a local tech company, Consensia) and Canberra (for its Asia-Pacific operations) took its presence to 11 sites, as follows:
 
 Aarhus, Denmark, the global headquarters.
+
 Abu Dhabi, United Arab Emirates
+
 Bucharest, Romania,
+
 Canberra, ACT, Australia
+
 Centreville, VA, United States
+
 Copenhagen, Denmark, a centre for developers.
+
 Farnborough, United Kingdom
+
 Köln, Germany
+
 Stockholm, Sweden
+
 Tampere, Finland
+
 Wellington, New Zealand
+
 While remaining in private hands, the company makes its annual reports public, and is known to have a turnover of DKK 965 million in 2021. By late 2023, the company was reported to be on track to record an annual turnover of DKK 1.4 billion.
+
 Regarding the future ownership of the group, Holm was reported to have said in 2023, "we are not going to sell. The most realistic thing is that we establish a fund that will own Systematic in the future."

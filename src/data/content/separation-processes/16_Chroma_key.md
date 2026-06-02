@@ -1,7 +1,6 @@
 # Chroma key
 
 Chroma key compositing, or chroma keying, is a visual-effects and post-production technique for compositing (layering) two or more images or video streams together based on colour hues (chroma range). The technique has been used in many fields to remove a background from the subject of a photo or video — particularly the newscasting, motion picture, and video game industries. A colour range in the foreground footage is made transparent, allowing separately filmed background footage or a static image to be inserted into the scene. The chroma keying technique is commonly used in video production and post-production. This technique is also referred to as colour keying, colour separation overlay (CSO; primarily by the BBC), or by various terms for specific colour-related variants such as green screen or blue screen; chroma keying can be done with backgrounds of any colour that are uniform and distinct, but green and blue backgrounds are more commonly used because they differ most distinctly in hue from any human skin colour. No part of the subject being filmed or photographed may duplicate the colour used as the backing, or the part may be erroneously identified as part of the backing.
-It is commonly used for live weather forecast broadcasts in which a news presenter is seen standing in front of a CGI map instead of a large blue or green background. Chroma keying is also common in the entertainment industry for visual effects in filmmaking and video games. Rotoscopy may instead be carried out on subjects that are not in front of a green (or blue) screen. Motion tracking can also be used in conjunction with chroma keying, such as to move the background as the subject moves.
 
 ## Process
 
@@ -18,12 +17,15 @@ Before electronic chroma keying, compositing was done on (chemical) film. The ca
 ### Major factors
 
 The most important factor for a key is the colour separation of the foreground (the subject) and background (the screen) – a blue screen will be used if the subject is predominantly green (for example plants), despite the camera being more sensitive to green light.
+
 In analog television, colour is represented by the phase of the chroma subcarrier relative to a reference oscillator. Chroma key is achieved by comparing the phase of the video to the phase corresponding to the pre-selected colour. In-phase portions of the video are replaced by the alternate background video.
+
 In digital colour TV, colour is represented by three numbers (red, green, blue intensity levels). Chroma key is achieved by a simple numerical comparison between the video and the pre-selected colour. If the colour at a particular point on the screen matches (either exactly, or in a range), then the video at that point is replaced by the alternate background.
 
 #### Lighting
 
 In order to create an illusion that characters and objects filmed are present in the intended background scene, the lighting in the two scenes must be a reasonable match. For outdoor scenes, overcast days create a diffuse, evenly coloured light which can be easier to match in the studio, whereas direct sunlight needs to be matched in both direction and overall colour based on time of day.
+
 A studio shot taken in front of a green screen will naturally have ambient light the same colour as the screen, due to its light scattering. This effect is known as spill. This can look unnatural or cause portions of the characters to disappear, so must be compensated for, or avoided by using a larger screen placed far from the actors.
 
 #### Camera
@@ -33,7 +35,9 @@ The depth of field used to record the scene in front of the coloured screen shou
 ## Clothing
 
 A chroma key subject must avoid wearing clothes which are similar in colour to the chroma key colour(s) (unless intentional e.g., wearing a green top to make it appear that the subject has no body), because the clothing may be replaced with the background image/video. An example of intentional use of this is when an actor wears a blue covering over a part of his body to make it invisible in the final shot. This technique can be used to achieve an effect similar to that used in the Harry Potter films to create the effect of an invisibility cloak. The actor can also be filmed against a chroma-key background and inserted into the background shot with a distortion effect, in order to create a cloak that is marginally detectable.
+
 Difficulties emerge with blue screen when a costume in an effects shot must be blue, such as Superman's traditional blue outfit. In the 2002 film Spider-Man, in scenes where both Spider-Man and the Green Goblin are in the air, Spider-Man had to be shot in front of a green screen and the Green Goblin had to be shot in front of a blue screen. The colour difference is because Spider-Man wears a costume which is red and blue in colour and the Green Goblin wears a costume which is entirely green in colour. If both were shot in front of the same screen, parts of one character would be erased from the shot.
+
 For a clean division of foreground from background, it is also important that clothing and hair in the foreground shot have a fairly simple silhouette, as fine details such as frizzy hair may not resolve properly. Similarly, partially transparent elements of the costume cause problems.
 
 ## Tolerances
@@ -41,6 +45,7 @@ For a clean division of foreground from background, it is also important that cl
 ### Even lighting
 
 The biggest challenge when setting up a blue screen or green screen is even lighting and the avoidance of shadow because it is best to have as narrow a colour range as possible being replaced. A shadow would present itself as a darker colour to the camera and might not register for replacement. This can sometimes be seen in low-budget or live broadcasts where the errors cannot be manually repaired or scenes reshot. The material being used affects the quality and ease of having it evenly lit. Materials which are shiny will be far less successful than those that are not. A shiny surface will have areas that reflect the lights making them appear pale, while other areas may be darkened. A matte surface will diffuse the reflected light and have a more even colour range. In order to get the cleanest key from shooting green screen, it is necessary to create a value difference between the subject and the green screen. In order to differentiate the subject from the screen, a two-stop difference can be used, either by making the green screen two stops higher than the subject, or vice versa.
+
 Sometimes a shadow can be used to create a visual effect. Areas of the blue screen or green screen with a shadow on them can be replaced with a darker version of the desired background video image, making it look like the person is casting a shadow on them. Any spill of the chroma key colour will make the result look unnatural. A difference in the focal length of the lenses used can affect the success of chroma key.
 
 ### Exposure
@@ -50,7 +55,11 @@ Another challenge for blue screen or green screen is proper camera exposure. Und
 ## Programming
 
 There are several different quality- and speed-optimised techniques for implementing colour keying in software.
+
 In most versions, a function f(r, g, b) → α is applied to every pixel in the image. α (alpha) has a meaning similar to that in alpha compositing techniques. α ≤ 0 means the pixel is fully in the green screen, α ≥ 1 means the pixel is fully in the foreground object, and intermediate values indicate the pixel is partially covered by the foreground object (or it is transparent). A further function g(r, g, b) → (r, g, b) is needed to remove green spill on the foreground objects.
+
 A very simple f() function for green screen is A(r+b) − Bg where A and B are user adjustable constants with a default value of 1.0. A very simple g() is (r, min(g,b), b). This is fairly close to the capabilities of analog and film-based screen pulling.
+
 Modern examples of these functions are best described by two closed nested surfaces in 3D RGB space, often quite complex. Colours inside the inner surface are considered green screen. Colours outside the outer surface are opaque foreground. Colours between the surfaces are partially covered, they are more opaque the closer they are to the outer surface. Sometimes more closed surfaces are used to determine how to remove green spill. It is also very common for f() to depend on more than just the current pixel's colour, it may also use the (x, y) position, the values of nearby pixels, the value from reference images or a statistical colour model of the scene, and values from user-drawn masks. These produce closed surfaces in space with more than three dimensions.
+
 A different class of algorithm tries to figure out a 2D path that separates the foreground from the background. This path can be the output, or the image can be drawn by filling the path with α = 1 as a final step. An example of such an algorithm is the use of active contour. Most research in recent years has been into these algorithms.

@@ -17,4 +17,5 @@ Deadband is different from hysteresis. With hysteresis, there is no deadband and
 ### Thermostats
 
 Simple (single mode) thermostats exhibit hysteresis. For example, the furnace in the basement of a house is adjusted automatically by the thermostat to be switched ON as soon as the temperature at the thermostat falls to 18 °C and the furnace is switched OFF by the thermostat as soon as the temperature at the thermostat reaches 22 °C. There is no temperature at which the house is not being heated or allowed to cool (furnace on or off).
+
 A thermostat which sets a single temperature and automatically controls both heating and cooling systems without a mode change exhibits a deadband range around the target temperature. The low end of the deadband is just above the temperature where the heating system turns on. The high end of the deadband is just below the temperature where the air-conditioning system starts.

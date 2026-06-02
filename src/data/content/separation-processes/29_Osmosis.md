@@ -1,7 +1,6 @@
 # Osmosis
 
 Osmosis (, US also ) is the spontaneous net movement of solvent molecules through a selectively permeable membrane from a region of high water potential (region of lower solute concentration) to a region of low water potential (region of higher solute concentration), in the direction that tends to equalize the solute concentrations on the two sides. It may also be used to describe a physical process in which any solvent moves across a selectively permeable membrane (permeable to the solvent, but not the solute) separating two solutions of different concentrations. Osmosis can be made to do work. Osmotic pressure is defined as the external pressure required to prevent net movement of solvent across the membrane.  Osmotic pressure is a colligative property, meaning that the osmotic pressure depends on the molar concentration of the solute but not on its identity. Osmotic transport occurs through viscous flow of the solvent under a pressure gradient.
-Osmosis is a vital process in biological systems, as biological membranes are semipermeable. In general, these membranes are impermeable to large and polar molecules, such as ions, proteins, and polysaccharides, while being permeable to non-polar or hydrophobic molecules like lipids as well as to small molecules like oxygen, carbon dioxide, nitrogen, and nitric oxide. Permeability depends on solubility, charge, or chemistry, as well as solute size. Water molecules travel through the plasma membrane, tonoplast membrane (vacuole) or organelle membranes across the phospholipid bilayer via aquaporins through a selective pore flow mechanism. Osmosis provides the primary means by which water is transported into and out of cells. The turgor pressure of a cell is largely maintained by osmosis across the cell membrane between the cell interior and its relatively hypotonic environment.
 
 ## Description
 
@@ -10,27 +9,39 @@ Osmosis is the movement of a solvent across a semipermeable membrane toward a hi
 When a cell is submerged in water, the water molecules pass through the cell membrane from an area of low solute concentration to high solute concentration. For example, if the cell is submerged in saltwater, water molecules move out of the cell. If a cell is submerged in freshwater, water molecules move into the cell.  When the membrane has a volume of pure water on both sides, water molecules pass in and out in each direction at exactly the same rate. There is no net flow of water through the membrane.
 
 Osmosis can be demonstrated when potato slices are added to a high salt solution. The water from inside the potato moves out to the solution, causing the potato to shrink and to lose its 'turgor pressure'. The more concentrated the salt solution, the bigger the loss in size and weight of the potato slice.
+
 Chemical gardens demonstrate the effect of osmosis in inorganic chemistry.
 
 ## Mechanism
 
 The mechanism responsible for driving osmosis could be misinterpreted as either the dilution of water by solute (resulting in lower concentration of water on the higher solute concentration side of the membrane and therefore a diffusion of water along a concentration gradient) or by a solute's attraction to water (resulting in less free water on the higher solute concentration side of the membrane and therefore net movement of water toward the solute). Both of these notions have been conclusively refuted.
+
 The diffusion model of osmosis is rendered untenable by the fact that osmosis can drive water across a membrane toward a higher concentration of water. The "bound water"  model is refuted by the fact that osmosis is independent of the size of the solute molecules—a colligative property—or how hydrophilic they are.
+
 It is difficult to describe osmosis without a mechanical or thermodynamic explanation, but essentially there is an interaction between the solute and water that counteracts the pressure that otherwise free solute molecules would exert. One fact to take note of is that heat from the surroundings is able to be converted into mechanical energy (water rising). Therefore, osmotic solvent transport is a pressure-driven process, instead of random molecular diffusion.
+
 Many thermodynamic explanations go into the concept of chemical potential and how the function of the water on the solution side differs from that of pure water due to the higher pressure and the presence of the solute counteracting such that the chemical potential remains unchanged. The virial theorem demonstrates that attraction between the molecules (water and solute) reduces the pressure, and thus the pressure exerted by water molecules on each other in solution is less than in pure water, allowing pure water to "force" the solution until the pressure reaches equilibrium.
 
 ## Role in living things
 
 Osmotic pressure is the main agent of support in many plants. The osmotic entry of water raises the turgor pressure exerted against the cell wall, until it equals the osmotic pressure, creating a steady state.
+
 When a plant cell is placed in a solution that is hypertonic relative to the cytoplasm, water moves out of the cell and the cell shrinks. In doing so, the cell becomes flaccid. In extreme cases, the cell becomes plasmolyzed – the cell membrane disengages with the cell wall due to lack of water pressure on it.
+
 When a plant cell is placed in a solution that is hypotonic relative to the cytoplasm, water moves into the cell and the cell swells to become turgid.
+
 Osmosis also plays a vital role in human cells by facilitating the movement of water across cell membranes. This process is crucial for maintaining proper cell hydration, as cells can be sensitive to dehydration or overhydration. In human cells, osmosis is essential for maintaining the balance of water and solutes, ensuring optimal cellular function. Imbalances in osmotic pressure can lead to cellular dysfunction, highlighting the importance of osmosis in sustaining the health and integrity of human cells.
+
 In certain environments, osmosis can be harmful to organisms. Freshwater and saltwater aquarium fish, for example, will quickly die should they be placed in water of a maladaptive salinity. The osmotic effect of table salt to kill leeches and slugs is another example of a way osmosis can cause harm to organisms.
+
 Suppose an animal or plant cell is placed in a solution of sugar or salt in water.
 
 If the medium is hypotonic relative to the cell cytoplasm, the cell will gain water through osmosis.
+
 If the medium is isotonic, there will be no net movement of water across the cell membrane.
+
 If the medium is hypertonic relative to the cell cytoplasm, the cell will lose water by osmosis.
+
 This means that if a cell is put in a solution which has a solute concentration higher than its own, it will shrivel, and if it is put in a solution with a lower solute concentration than its own, the cell will swell and may even burst.
 
 ## Factors
@@ -42,6 +53,7 @@ Osmosis may be opposed by increasing the pressure in the region of high solute c
 ### Osmotic gradient
 
 The osmotic gradient is the difference in concentration between two solutions on either side of a semipermeable membrane, and is used to tell the difference in percentages of the concentration of a specific particle dissolved in a solution.
+
 Usually the osmotic gradient is used while comparing solutions that have a semipermeable membrane between them allowing water to diffuse between the two solutions, toward the hypertonic solution (the solution with the higher concentration). Eventually, the force of the column of water on the hypertonic side of the semipermeable membrane will equal the force of diffusion on the hypotonic (the side with a lesser concentration) side, creating equilibrium. When equilibrium is reached, water continues to flow, but it flows both ways in equal amounts as well as force, therefore stabilizing the solution.
 
 ## Variation

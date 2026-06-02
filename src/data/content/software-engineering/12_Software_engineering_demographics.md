@@ -11,7 +11,9 @@ In 2023, there were an estimated 1.6 million  professional software developers i
 
 #### Software engineers vs. traditional engineers
 The following two tables compare the number of software engineers (611,900 in 2002) versus the number of traditional engineers (1,157,020 in 2002).
+
 There are another 1,500,000 people in system analysis, system administration, and computer support, many of whom might be called software engineers. Many systems analysts manage software development teams, and as analysis is an important software engineering role, many of them may be considered software engineers in the near future. This means that the number of software engineers may actually be much higher.
+
 It is important to note that the number of software engineers declined by 5 to 10 percent from 2000 to 2002.
 
 #### Computer managers vs. construction and engineering managers
@@ -25,6 +27,7 @@ Most people working in the field of computer science, whether making software sy
 
 #### Relation to IT demographics
 Software engineers are part of the much larger software, hardware, application, and operations community. In 2000 in the U.S., there were about 680,000 software engineers and about 10,000,000 IT workers. As of early 2025, there are an estimated 47.2 million software developers worldwide, representing a 50% increase from 31 million in Q1 2022.
+
 There are no numbers on testers in the BLS data.
 
 ### India

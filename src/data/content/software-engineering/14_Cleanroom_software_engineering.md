@@ -9,8 +9,13 @@ The focus of the cleanroom process is on defect prevention rather than defect re
 The basic principles of the cleanroom process are
 
 Software development based on formal methods
+
 Software tool support based on some mathematical formalism includes model checking, process algebras, and Petri nets. The Box Structure Method might be one such means of specifying and designing a software product. Verification that the design correctly implements the specification is performed through team review, often with software tool support.
+
 Incremental implementation under statistical quality control
+
 Cleanroom development uses an iterative approach, in which the product is developed in increments that gradually increase the implemented functionality. The quality of each increment is measured against pre-established standards to verify that the development process is proceeding acceptably. A failure to meet quality standards results in the cessation of testing for the current increment and a return to the design phase.
+
 Statistically sound testing
+
 Software testing in the cleanroom process is carried out as a statistical experiment. Based on the formal specification, a representative subset of software input/output trajectories is selected and tested. This sample is then statistically analyzed to produce an estimate of the reliability of the software and a level of confidence in that estimate.

@@ -1,18 +1,21 @@
 # Raw material
 
 A raw material, also known as a feedstock, unprocessed material, or primary commodity, is a basic material that is used to produce goods, finished goods, energy, or intermediate materials/Intermediate goods that are feedstock for future finished products. As feedstock, the term connotes these materials are bottleneck assets and are required to produce other products.
-The term raw material denotes materials in unprocessed or minimally processed states such as raw latex, crude oil, cotton, coal, raw biomass, iron ore, plastic, air, logs, and water. The term secondary raw material denotes waste material which has been recycled and injected back into use as productive material.
 
 ## Raw materials in supply chains
 
 Supply chains typically begin with the acquisition or extraction of raw materials. For example, the European Commission notes that food supply chains commence in the agricultural phase of food production. 
+
 Bob Heaney reported in 2014 that raw material deliveries in full/on time were among the least-tracked activities within supply chain operations, with only 43% of companies' supply chain senior staff surveyed by the Aberdeen Group reporting that they tracked raw material deliveries, and only 19% having this as an automated process.
+
 A 2022 report on changes affecting international trade noted that improving sourcing of raw materials has become one of the main objectives of companies reconfiguring their supply chains.
+
 In a 2022 survey conducted by SAP, wherein 400 US-based leaders in logistics and supply chain were interviewed, 44% of respondents cited a lack of raw materials as a reason for their supply chain issues. Forecasting for 2023, 50% of respondents expect a reduced availability of raw materials in the US to drive supply chain disruptions.
 
 ### Raw materials markets
 
 Raw materials markets are affected by consumer behavior, supply chain uncertainty, manufacturing disruptions, and regulations, amongst other factors. This results in volatile raw materials markets that are difficult to optimize and manage. Companies can struggle when faced with raw material volatility due to a lack of understanding of market demands, poor or no visibility into the indirect supply chain, and the time lag of raw materials price changes.
+
 Volatility in the raw materials markets can also be driven by natural disasters and geopolitical conflict. The COVID-19 pandemic disrupted the steel industry, and once demand rebounded, prices increased 250% in the U.S. The Russian invasion of Ukraine caused the price of natural gas to increase by 50% in 2022.
 
 ## Raw material processing

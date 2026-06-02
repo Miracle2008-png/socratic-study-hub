@@ -1,7 +1,6 @@
 # Dimensionless numbers in fluid mechanics
 
 Dimensionless numbers (or characteristic numbers) have an important role in analyzing the behavior of fluids and their flow as well as in other transport phenomena. They include the Reynolds and the Mach numbers, which describe as ratios the relative magnitude of fluid and physical system characteristics, such as density, viscosity, speed of sound, and flow speed.
-To compare a real situation (e.g. an aircraft) with a small-scale model it is necessary to keep the important characteristic numbers the same. Names and formulation of these numbers were standardized in ISO 31-12 and in ISO 80000-11.
 
 ## Diffusive numbers in transport phenomena
 

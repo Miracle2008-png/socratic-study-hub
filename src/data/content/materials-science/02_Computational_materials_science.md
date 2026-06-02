@@ -7,12 +7,15 @@ Computational materials science and engineering uses modeling, simulation, theor
 ### Electronic structure
 
 Electronic structure methods solve the Schrödinger equation to calculate the energy of a system of electrons and atoms, the fundamental units of condensed matter. 
+
 Many variations of electronic structure methods exist of varying computational complexity, with a range of trade-offs between speed and accuracy.
 
 #### Density functional theory
 
 Due to its balance of computational cost and predictive capability density functional theory (DFT) has the most significant use in materials science. DFT most often refers to the calculation of the lowest energy state of the system; however, molecular dynamics (atomic motion through time) can be run with DFT computing forces between atoms.
+
 While DFT and many other electronic structures methods are described as ab initio, there are still approximations and inputs. Within DFT there are increasingly complex, accurate, and slow approximations underlying the simulation because the exact exchange-correlation functional is not known. The simplest model is the Local-density approximation (LDA), becoming more complex with the generalized-gradient approximation (GGA) and beyond. 
+
 An additional common approximation is to use a pseudopotential in place of core electrons, significantly speeding up simulations.
 
 ### Atomistic methods
@@ -21,6 +24,7 @@ This section discusses the two major atomic simulation methods in materials scie
 #### Molecular dynamics
 
 The term Molecular dynamics (MD) is the historical name used to classify simulations of classical atomic motion through time. Typically, interactions between atoms are defined and fit to both experimental and electronic structure data with a wide variety of models, called interatomic potentials. With the interactions prescribed (forces), Newtonian motion is numerically integrated. The forces for MD can also be calculated using electronic structure methods based on either the Born-Oppenheimer Approximation or Car-Parrinello approaches.
+
 The simplest models include only van der Waals type attractions and steep repulsion to keep atoms apart, the nature of these models are derived from dispersion forces. Increasingly more complex models include effects due to coulomb interactions (e.g. ionic charges in ceramics),  covalent bonds and angles (e.g. polymers), and electronic charge density (e.g. metals). Some models use fixed bonds, defined at the start of the simulation, while others have dynamic bonding. More recent efforts strive for robust, transferable models with generic functional forms: spherical harmonics, Gaussian kernels, and neural networks. In addition, MD can be used to simulate groupings of atoms within generic particles, called coarse-grained modeling, e.g. creating one particle per monomer within a polymer.
 
 #### Kinetic Monte Carlo
@@ -29,12 +33,16 @@ Monte Carlo in the context of materials science most often refers to atomistic s
 
 ### Mesoscale methods
 The methods listed here are among the most common and the most directly tied to materials science specifically, where atomistic and electronic structure calculations are also widely used in computational chemistry and computational biology and continuum level simulations are common in a wide array of computational science application domains.
+
 Other methods within materials science include cellular automata for solidification and grain growth, Potts model approaches for grain evolution and other Monte Carlo techniques, as well as direct simulation of grain structures analogous to dislocation dynamics.
 
 #### Dislocation dynamics
 Plastic deformation in metals is dominated by the movement of dislocations, which are crystalline defects in materials with line type character. Rather than simulating the movement of tens of billions of atoms to model plastic deformation, which would be prohibitively computationally expensive, discrete dislocation dynamics (DDD) simulates the movement of dislocation lines. The overall goal of dislocation dynamics is to determine the movement of a set of dislocations given their initial positions, and external load and interacting microstructure. From this, macroscale deformation behavior can be extracted from the movement of individual dislocations by theories of plasticity.
+
 A typical DDD simulation goes as follows. A dislocation line can be modelled as a set of nodes connected by segments. This is similar to a mesh used in finite element modelling. Then, the forces on each of the nodes of the dislocation are calculated. These forces include any externally applied forces, forces due to the dislocation interacting with itself or other dislocations, forces from obstacles such as solutes or precipitates, and the drag force on the dislocation due to its motion, which is proportional to its velocity. The general method behind a DDD simulation is to calculate the forces on a dislocation at each of its nodes, from which the velocity of the dislocation at its nodes can be extracted. Then, the dislocation is moved forward according to this velocity and a given timestep. This procedure is then repeated. Over time, the dislocation may encounter enough obstacles such that it can no longer move and its velocity is near zero, at which point the simulation can be stopped and a new experiment can be conducted with this new dislocation arrangement.
+
 Both small-scale and large-scale dislocation simulations exist. For example, 2D dislocation models have been used to model the glide of a dislocation through a single plane as it interacts with various obstacles, such as precipitates. This further captures phenomena such as shearing and bowing of precipitates. The drawback to 2D DDD simulations is that phenomena involving movement out of a glide plane cannot be captured, such as cross slip and climb, although they are easier to run computationally. Small 3D DDD simulations have been used to simulate phenomena such as dislocation multiplication at Frank-Read sources, and larger simulations can capture work hardening in a metal with many dislocations, which interact with each other and can multiply. A number of 3D DDD codes exist, such as ParaDiS, microMegas, and MDDP, among others.
+
 There are other methods for simulating dislocation motion, from full molecular dynamics simulations, continuum dislocation dynamics, and phase field models.
 
 #### Phase field
@@ -70,15 +78,19 @@ Many of the methods described can be combined, either running simultaneously or 
 
 ### Concurrent multi-scale
 Concurrent simulations in this context means methods used directly together, within the same code, with the same time step, and with direct mapping between the respective fundamental units.
+
 One type of concurrent multiscale simulation is quantum mechanics/molecular mechanics (QM/MM). This involves running a small portion (often a molecule or protein of interest) with a more accurate electronic structure calculation and surrounding it with a larger region of fast running, less accurate classical molecular dynamics. Many other methods exist, such as atomistic-continuum simulations, similar to QM/MM except using molecular dynamics and the finite element method as the fine (high-fidelity) and coarse (low-fidelity), respectively.
 
 ### Hierarchical multi-scale
 Hierarchical simulation refers to those which directly exchange information between methods, but are run in separate codes, with differences in length and/or time scales handled through statistical or interpolative techniques.
+
 A common method of accounting for crystal orientation effects together with geometry embeds crystal plasticity within finite element simulations.
 
 ### Model development
 Building a materials model at one scale often requires information from another, lower scale. Some examples are included here.
+
 The most common scenario for classical molecular dynamics simulations is to develop the interatomic model directly using density functional theory, most often electronic structure calculations. Classical MD can therefore be considered a hierarchical multi-scale technique, as well as a coarse-grained method (ignoring electrons). Similarly, coarse grained molecular dynamics are reduced or simplified particle simulations directly trained from all-atom MD simulations. These particles can represent anything from carbon-hydrogen pseudo-atoms, entire polymer monomers, to powder particles.
+
 Density functional theory is also often used to train and develop CALPHAD-based phase diagrams.
 
 ## Software and tools
@@ -86,9 +98,13 @@ Density functional theory is also often used to train and develop CALPHAD-based 
 Each modeling and simulation method has a combination of commercial, open-source, and lab-based codes. Open source software is becoming increasingly common, as are community codes which combine development efforts together. Examples include Quantum ESPRESSO (DFT), LAMMPS (MD), ParaDIS (DD), FiPy (phase field), and MOOSE (Continuum). In addition, open software from other communities is often useful for materials science, e.g. GROMACS developed within computational biology.
 
 Schrödinger - Jaguar DFT, Desmond, and FEP+,
+
 Vienna Ab initio Simulation Package
+
 FHI-aims
+
 WIEN2k
+
 Materials Studio - CASTEP and DMol3
 
 ## Conferences

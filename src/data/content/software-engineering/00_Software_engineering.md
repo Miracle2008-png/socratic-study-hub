@@ -1,7 +1,6 @@
 # Software engineering
 
 Software engineering is a branch of both computer science and engineering focused on designing, developing, testing, and maintaining software applications. It involves applying engineering principles and computer programming expertise to develop software systems that meet user needs.
-A software engineer applies a software development process to define, implement, test, manage, and maintain software systems.
 
 ## Terminology
 
@@ -10,15 +9,23 @@ A software engineer applies a software development process to define, implement,
 Notable definitions of software engineering include:
 
 "The systematic application of scientific and technological knowledge, methods, and experience to the design, implementation, testing, and documentation of software."—The Bureau of Labor Statistics—IEEE Systems and software engineering – Vocabulary
+
 "The application of a systematic, disciplined, quantifiable approach to the development, operation, and maintenance of software."—IEEE Standard Glossary of Software Engineering Terminology
+
 "An engineering discipline concerned with all aspects of software production." — Ian Sommerville
+
 "The establishment and use of sound engineering principles in order to economically obtain software that is reliable and works efficiently on real machines."—Fritz Bauer
+
 "A branch of computer science that deals with the design, implementation, and maintenance of complex computer programs."—Merriam-Webster
+
 "'Software engineering' encompasses not just the act of writing code, but all of the tools and processes an organization uses to build and maintain that code over time. [...] Software engineering can be thought of as 'programming integrated over time.'"—Software Engineering at Google
+
 The term has also been used less formally:
 
 As the informal contemporary term for the broad range of activities that were formerly called computer programming and systems analysis
+
 As the broad term for all aspects of the practice of computer programming, as opposed to the theory of computer programming, which is formally studied as a sub-discipline of computer science
+
 As the term embodying the advocacy of a specific approach to computer programming, one that urges that it be treated as an engineering discipline rather than an art or a craft, and advocates the codification of recommended practices
 
 ### Suitability
@@ -30,6 +37,7 @@ Individual commentators have disagreed sharply on how to define software enginee
 ### Requirements analysis
 
 Requirements engineering is about elicitation, analysis, specification, and validation of requirements for software. Software requirements can be functional, non-functional or domain.
+
 Functional requirements describe expected behaviors (i.e. outputs). Non-functional requirements specify issues like portability, security, maintainability, reliability, scalability, performance, reusability, and flexibility. They are classified into the following types: interface constraints, performance constraints (such as response time, security, storage space, etc.), operating constraints, life cycle constraints (maintainability, portability, etc.), and economic constraints. Knowledge of how the system or software works is needed when it comes to specifying non-functional requirements. Domain requirements have to do with the characteristic of a certain category or domain of projects.
 
 ### Design
@@ -37,7 +45,9 @@ Functional requirements describe expected behaviors (i.e. outputs). Non-function
 Software design is the process of making high-level plans for the software. Design is sometimes divided into levels:
 
 Interface design plans the interaction between a system and its environment as well as the inner workings of the system.
+
 Architectural design plans the major components of a system, including their responsibilities, properties, and interfaces between them.
+
 Detailed design plans internal elements, including their properties, relationships, algorithms and data structures.
 
 ### Construction
@@ -47,6 +57,7 @@ Software construction typically involves programming (a.k.a. coding), unit testi
 ### Testing
 
 Software testing is an empirical, technical investigation conducted to provide stakeholders with information about the quality of the software under test. Software testing can be viewed as a risk based activity.
+
 When described separately from construction, testing typically is performed by test engineers or quality assurance instead of the programmers who wrote it. It is performed at the system level and is considered an aspect of software quality. The testers' goals during the testing process are to minimize the overall number of tests to a manageable set and make well-informed decisions regarding which risks should be prioritized for testing and which can wait.
 
 ### Program analysis
@@ -56,30 +67,39 @@ Program analysis is the process of analyzing computer programs with respect to a
 ### Maintenance
 
 Software maintenance refers to supporting the software after release. It may include but is not limited to: error correction, optimization, deletion of unused and discarded features, and enhancement of existing features.
+
 Usually, maintenance takes up 40% to 80% of project cost.
 
 ## Education
 
 Knowledge of computer programming is a prerequisite for becoming a software engineer. In 2004, the IEEE Computer Society produced the SWEBOK, which has been published as ISO/IEC Technical Report 1979:2005, describing the body of knowledge that they recommend to be mastered by a graduate software engineer with four years of experience.
+
 Many software engineers enter the profession by obtaining a university degree or training at a vocational school. One standard international curriculum for undergraduate software engineering degrees was defined by the Joint Task Force on Computing Curricula of the IEEE Computer Society and the Association for Computing Machinery, and updated in 2014. A number of universities have Software Engineering degree programs; as of 2010, there were 244 Campus Bachelor of Software Engineering programs, 70 Online programs, 230 Masters-level programs, 41 Doctorate-level programs, and 69 Certificate-level programs in the United States.
+
 In addition to university education, many companies sponsor internships for students wishing to pursue careers in information technology. These internships can introduce the student to real-world tasks that typical software engineers encounter every day. Similar experience can be gained through military service in software engineering.
 
 ### Software engineering degree programs
 
 A small but growing number of practitioners have software engineering degrees. In 1987, the Department of Computing at Imperial College London introduced the first three-year software engineering bachelor's degree in the world; in the following year, the University of Sheffield established a similar program. In 1996, the Rochester Institute of Technology established the first software engineering bachelor's degree program in the United States; however, it did not obtain ABET accreditation until 2003, the same year as Rice University, Clarkson University, Milwaukee School of Engineering, and Mississippi State University.
+
 Since then, software engineering undergraduate degrees have been established at many universities. A standard international curriculum for undergraduate software engineering degrees, SE2004, was defined by a steering committee between 2001 and 2004 with funding from the Association for Computing Machinery and the IEEE Computer Society. As of 2004, about 50 universities in the U.S. offer software engineering degrees, which teach both computer science and engineering principles and practices. The first software engineering master's degree was established at Seattle University in 1979. Since then, graduate software engineering degrees have been made available from many more universities. Likewise in Canada, the Canadian Engineering Accreditation Board (CEAB) of the Canadian Council of Professional Engineers has recognized several software engineering programs.
+
 Additionally, many online advanced degrees in Software Engineering have appeared such as the Master of Science in Software Engineering (MSE) degree offered through the Computer Science and Engineering Department at California State University, Fullerton. Steve McConnell opines that because most universities teach computer science rather than software engineering, there is a shortage of true software engineers. ETS (École de technologie supérieure) University and UQAM (Université du Québec à Montréal) were mandated by IEEE to develop the Software Engineering Body of Knowledge (SWEBOK), which has become an ISO standard describing the body of knowledge covered by a software engineer.
 
 ## Profession
 
 Legal requirements for the licensing or certification of professional software engineers vary around the world. In the UK, there is no licensing or legal requirement to assume or use the job title Software Engineer. In some areas of Canada, such as Alberta, British Columbia, Ontario, and Quebec, software engineers can hold the Professional Engineer (P.Eng) designation and/or the Information Systems Professional (I.S.P.) designation. In Europe, Software Engineers can obtain the European Engineer (EUR ING) professional title. Software Engineers can also become professionally qualified as a Chartered Engineer through the British Computer Society.
+
 In the United States, the NCEES began offering a Professional Engineer exam for Software Engineering in 2013, thereby allowing Software Engineers to be licensed and recognized. NCEES ended the exam after April 2019 due to lack of participation. Mandatory licensing is currently still largely debated, and perceived as controversial.
+
 The IEEE Computer Society and the ACM, the two main US-based professional organizations of software engineering, publish guides to the profession of software engineering. The IEEE's Guide to the Software Engineering Body of Knowledge – 2004 Version, or SWEBOK, defines the field and describes the knowledge the IEEE expects a practicing software engineer to have. The most current version is SWEBOK v4. The IEEE also promulgates a "Software Engineering Code of Ethics".
 
 ### Employment
 
 There are an estimated 26.9 million professional software engineers in the world as of 2022, up from 21 million in 2016.
+
 Many software engineers work as employees or contractors. Software engineers work with businesses, government agencies (civilian or military), and non-profit organizations. Some software engineers work for themselves as freelancers. Some organizations have specialists to perform each of the tasks in the software development process. Other organizations require software engineers to do many or all of them. In large projects, people may specialize in only one role. In small projects, people may fill several or all roles at the same time. Many companies hire interns, often university or college students during a summer break, or externships. Specializations include analysts, architects, developers, testers, technical support, middleware analysts, project managers, software product managers, educators, and researchers.
+
 Most software engineers and programmers work 40 hours a week, but about 15 percent of software engineers and 11 percent of programmers worked more than 50 hours a week in 2008. Potential injuries in these occupations are possible because like other workers who spend long periods sitting in front of a computer terminal typing at a keyboard, engineers and programmers are susceptible to eyestrain, back discomfort, Thrombosis, Obesity, and hand and wrist problems such as carpal tunnel syndrome.
 
 #### United States
@@ -89,13 +109,17 @@ The U. S. Bureau of Labor Statistics (BLS) counted 1,365,500 software developers
 ### Certification
 
 The Software Engineering Institute offers certifications on specific topics like security, process improvement and software architecture. IBM, Microsoft and other companies also sponsor their own certification examinations. Many IT certification programs are oriented toward specific technologies, and managed by the vendors of these technologies. These certification programs are tailored to the institutions that would employ people who use these technologies.
+
 Broader certification of general software engineering skills is available through various professional societies. As of 2006, the IEEE had certified over 575 software professionals as a Certified Software Development Professional (CSDP). In 2008 they added an entry-level certification known as the Certified Software Development Associate (CSDA). The ACM and the IEEE Computer Society together examined the possibility of licensing of software engineers as Professional Engineers in the 1990s,
+
 but eventually decided that such licensing was inappropriate for the professional industrial practice of software engineering. John C. Knight and Nancy G. Leveson presented a more balanced analysis of the licensing issue in 2002.
+
 In the U.K. the British Computer Society has developed a legally recognized professional certification called Chartered IT Professional (CITP), available to fully qualified members (MBCS). Software engineers may be eligible for membership of the British Computer Society or Institution of Engineering and Technology and so qualify to be considered for Chartered Engineer status through either of those institutions. In Canada the Canadian Information Processing Society has developed a legally recognized professional certification called Information Systems Professional (ISP). In Ontario, Canada, Software Engineers who graduate from a Canadian Engineering Accreditation Board (CEAB) accredited program, successfully complete PEO's (Professional Engineers Ontario) Professional Practice Examination (PPE) and have at least 48 months of acceptable engineering experience are eligible to be licensed through the Professional Engineers Ontario and can become Professional Engineers P.Eng. The PEO does not recognize any online or distance education however; and does not consider Computer Science programs to be equivalent to software engineering programs despite the tremendous overlap between the two. This has sparked controversy and a certification war. It has also held the number of P.Eng holders for the profession exceptionally low. The vast majority of working professionals in the field hold a degree in CS, not SE. Given the difficult certification path for holders of non-SE degrees, most never bother to pursue the license.
 
 ### Impact of globalization
 
 The initial impact of outsourcing, and the relatively lower cost of international human resources in developing third world countries led to a massive migration of software development activities from corporations in North America and Europe to India and later: China, Russia, and other developing countries. This approach had some flaws, mainly the distance / time zone difference that prevented human interaction between clients and developers and the massive job transfer. This had a negative impact on many aspects of the software engineering profession. For example, some students in the developed world avoid education related to software engineering because of the fear of offshore outsourcing (importing software products or services from other countries) and of being displaced by foreign visa workers. Additionally, the glut of high-tech workers has led to a wider adoption of the 996 working hour system and ‘007’ schedules as the expected work load. Although statistics do not currently show a threat to software engineering itself; a related career, computer programming does appear to have been affected. Nevertheless, the ability to smartly leverage offshore and near-shore resources via the follow-the-sun workflow has improved the overall operational capability of many organizations. When North Americans leave work, Asians are just arriving to work. When Asians are leaving work, Europeans arrive to work. This provides a continuous ability to have human oversight on business-critical processes 24 hours per day, without paying overtime compensation or disrupting a key human resource, sleep patterns.
+
 While global outsourcing has several advantages, global – and generally distributed – development can run into serious difficulties resulting from the distance between developers. This is due to the key elements of this type of distance that have been identified as geographical, temporal, cultural and communication (that includes the use of different languages and dialects of English in different locations). Research has been carried out in the area of global software development over the last 15 years and an extensive body of relevant work published that highlights the benefits and problems associated with the complex activity. As with other aspects of software engineering research is ongoing in this and related areas.
 
 ### Prizes
@@ -103,20 +127,31 @@ While global outsourcing has several advantages, global – and generally distri
 There are various prizes in the field of software engineering:
 
 ACM-AAAI Allen Newell Award- USA. Awarded to career contributions that have breadth within computer science, or that bridge computer science and other disciplines.
+
 BCS Lovelace Medal. Awarded to individuals who have made outstanding contributions to the understanding or advancement of computing.
+
 ACM SIGSOFT Outstanding Research Award, selected for individual(s) who have made "significant and lasting research contributions to the theory or practice of software engineering."
+
 More ACM SIGSOFT Awards.
+
 The Codie award, a yearly award issued by the Software and Information Industry Association for excellence in software development within the software industry.
+
 Harlan Mills Award for "contributions to the theory and practice of the information sciences, focused on software engineering".
+
 ICSE Most Influential Paper Award.
+
 Jolt Award, also for the software industry.
+
 Stevens Award given in memory of Wayne Stevens.
 
 ## Criticism
 
 Some call for licensing, certification and codified bodies of knowledge as mechanisms for spreading the engineering knowledge and maturing the field.
+
 Some claim that the concept of software engineering is so new that it is rarely understood, and it is widely misinterpreted, including in software engineering textbooks, papers, and among the communities of programmers and crafters.
+
 Some claim that a core issue with software engineering is that its approaches are not empirical enough because a real-world validation of approaches is usually absent, or very limited and hence software engineering is often misinterpreted as feasible only in a "theoretical environment."
+
 Edsger Dijkstra, a founder of many of the concepts in software development today, rejected the idea of "software engineering" up until his death in 2002, arguing that those terms were poor analogies for what he called the "radical novelty" of computer science:
 
 A number of these phenomena have been bundled under the name "Software Engineering". As economics is known as "The Miserable Science", software engineering should be known as "The Doomed Discipline", doomed because it cannot even approach its goal since its goal is self-contradictory. Software engineering, of course, presents itself as another worthy cause, but that is eyewash: if you carefully read its literature and analyse what its devotees actually do, you will discover that software engineering has accepted as its charter "How to program if you cannot."

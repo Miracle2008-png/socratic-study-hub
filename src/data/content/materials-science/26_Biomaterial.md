@@ -1,19 +1,22 @@
 # Biomaterial
 
 A biomaterial is a substance that has been engineered to interact with biological systems for a medical purpose – either a therapeutic (treat, augment, repair, or replace a tissue function of the body) or a diagnostic one. The corresponding field of study is called biomaterials science or biomaterials engineering. It has experienced steady growth over its history, with many companies investing large amounts of money into the development of new products. Biomaterials science encompasses elements of medicine, biology, chemistry, tissue engineering and materials science.
-A biomaterial is different from a biological material, such as bone, that is produced by a biological system. However, "biomaterial" and "biological material" are often used interchangeably. Further, the word "bioterial" has been proposed as a potential alternate word for biologically produced materials such as bone, or fungal biocomposites. Additionally, care should be exercised in defining a biomaterial as biocompatible, since it is application-specific. A biomaterial that is biocompatible or suitable for one application may not be biocompatible in another.
 
 ## Bioactivity
 The ability of an engineered biomaterial to induce a physiological response that is supportive of the biomaterial's function and performance is known as bioactivity. Most commonly, in bioactive glasses and bioactive ceramics this term refers to the ability of implanted materials to bond well with surrounding tissue in either osteo conductive or osseo productive roles. Bone implant materials are often designed to promote bone growth while dissolving into surrounding body fluid. Thus for many biomaterials good biocompatibility along with good strength and dissolution rates are desirable. Commonly, bioactivity of biomaterials is gauged by the surface biomineralization in which a native layer of hydroxyapatite is formed at the surface. These days, the development of clinically useful biomaterials is greatly enhanced by the advent of computational routines that can predict the molecular effects of biomaterials in a therapeutic setting based on limited in vitro experimentation.
 
 ## Self-assembly
 Self-assembly is the most common term in use in the modern scientific community to describe the spontaneous aggregation of particles (atoms, molecules, colloids, micelles, etc.) without the influence of any external forces. Large groups of such particles are known to assemble themselves into thermodynamically stable, structurally well-defined arrays, quite reminiscent of one of the seven crystal systems found in metallurgy and mineralogy (e.g., face-centered cubic, body-centered cubic, etc.). The fundamental difference in equilibrium structure is in the spatial scale of the unit cell (lattice parameter) in each particular case.
+
 Molecular self assembly is found widely in biological systems and provides the basis of a wide variety of complex biological structures. This includes an emerging class of mechanically superior biomaterials based on microstructural features and designs found in nature. Thus, self-assembly is also emerging as a new strategy in chemical synthesis and nanotechnology. Molecular crystals, liquid crystals, colloids, micelles, emulsions, phase-separated polymers, thin films and self-assembled monolayers all represent examples of the types of highly ordered structures, which are obtained using these techniques. The distinguishing feature of these methods is self-organization.
 
 ## Structural hierarchy
 Nearly all materials could be seen as hierarchically structured, since the changes in spatial scale bring about different mechanisms of deformation and damage. However, in biological materials, this hierarchical organization is inherent to the microstructure. One of the first examples of this, in the history of structural biology, is the early X-ray scattering work on the hierarchical structure of hair and wool by Astbury and Woods. In bone, for example, collagen is the building block of the organic matrix, a triple helix with diameter of 1.5 nm. These tropocollagen molecules are intercalated with the mineral phase (hydroxyapatite, calcium phosphate) forming fibrils that curl into helicoids of alternating directions. These "osteons" are the basic building blocks of bones, with the volume fraction distribution between organic and mineral phase being about 60/40.
+
 In another level of complexity, the hydroxyapatite crystals are mineral platelets that have a diameter of approximately 70 to 100 nm and thickness of 1 nm. They originally nucleate at the gaps between collagen fibrils.
+
 Similarly, the hierarchy of abalone shell begins at the nanolevel, with an organic layer having a thickness of 20 to 30 nm. This layer proceeds with single crystals of aragonite (a polymorph of CaCO3) consisting of "bricks" with dimensions of 0.5 and finishing with layers approximately 0.3 mm (mesostructure).
+
 Crabs are arthropods, whose carapace is made of a mineralized hard component (exhibits brittle fracture) and a softer organic component composed primarily of chitin. The brittle component is arranged in a helical pattern. Each of these mineral "rods" (1 μm diameter) contains chitin–protein fibrils with approximately 60 nm diameter. These fibrils are made of 3 nm diameter canals that link the interior and exterior of the shell.
 
 ## Properties
@@ -24,6 +27,7 @@ Host response is defined as the "response of the host organism (local and system
 
 #### Biomaterial and tissue interactions
 The in vivo functionality and longevity of any implantable medical device is affected by the body's response to the foreign material. The body undergoes a cascade of processes defined under the foreign body response (FBR) in order to protect the host from the foreign material. The interactions between the device upon the host tissue/blood as well as the host tissue/blood upon the device must be understood in order to prevent complications and device failure.
+
 Tissue injury caused by device implantation causes inflammatory and healing responses during FBR. The inflammatory response occurs within two time periods: the acute phase, and the chronic phase. The acute phase occurs during the initial hours to days of implantation, and is identified by fluid and protein exudation along with a neutrophilic reaction. During the acute phase, the body attempts to clean and heal the wound by delivering excess blood, proteins, and monocytes are called to the site. Continued inflammation leads to the chronic phase, which can be categorized by the presence of monocytes, macrophages, and lymphocytes. In addition, blood vessels and connective tissue form in order to heal the wounded area.
 
 ### Compatibility
@@ -40,31 +44,50 @@ Some of the most commonly used biocompatible materials (or biomaterials) are pol
 
 ### Surface and bulk properties
 Two properties that have a large effect on the functionality of a biomaterial is the surface and bulk properties.
+
 Bulk properties refers to the physical and chemical properties that compose the biomaterial for its entire lifetime. They can be specifically generated to mimic the physiochemical properties of the tissue that the material is replacing. They are mechanical properties that are generated from a material's atomic and molecular construction.
+
 Important bulk properties:
 
 Chemical Composition
+
 Microstructure
+
 Elasticity
+
 Tensile Strength
+
 Density
+
 Hardness
+
 Electrical Conductivity
+
 Thermal Conductivity
+
 Surface properties refers to the chemical and topographical features on the surface of the biomaterial that will have direct interaction with the host blood/tissue. Surface engineering and modification allows clinicians to better control the interactions of a biomaterial with the host living system.
+
 The surface of biomaterials is then considered important as it is involved in many important interactions of the material with, for instance cells surrounding it. This is related to the cellular response that will occur when the material is inserted into the body. There are many surface analysis tools that are used in the field of biomaterials science such as Scanning Electron Microscopy, which is considered important as it can predict the failure or success of a medical device.
+
 Important surface properties:
 
 Wettability (surface energy)
+
 Surface chemistry
+
 Surface textures (smooth/rough)
+
 Topographical factors including: size, shape, alignment, structure determine the roughness of a material.
+
 Surface Tension
+
 Surface Charge
 
 ### Mechanical properties
 In addition to a material being certified as biocompatible, biomaterials must be engineered specifically to their target application within a medical device. This is especially important in terms of mechanical properties which govern the way that a given biomaterial behaves. One of the most relevant material parameters is the Young's Modulus, E, which describes a material's elastic response to stresses. The Young's Moduli of the tissue and the device that is being coupled to it must closely match for optimal compatibility between device and body, whether the device is implanted or mounted externally. Matching the elastic modulus makes it possible to limit movement and delamination at the biointerface between implant and tissue as well as avoiding stress concentration that can lead to mechanical failure. Other important properties are the tensile and compressive strengths which quantify the maximum stresses a material can withstand before breaking and may be used to set stress limits that a device may be subject to within or external to the body. Depending on the application, it may be desirable for a biomaterial to have high strength so that it is resistant to failure when subjected to a load, however in other applications it may be beneficial for the material to be low strength. There is a careful balance between strength and stiffness that determines how robust to failure the biomaterial device is. Typically, as the elasticity of the biomaterial increases, the ultimate tensile strength will decrease and vice versa. One application where a high-strength material is undesired is in neural probes; if a high-strength material is used in these applications the tissue will always fail before the device does (under applied load) because the Young's Modulus of the dura mater and cerebral tissue is on the order of 500 Pa. When this happens, irreversible damage to the brain can occur, thus the biomaterial must have an elastic modulus less than or equal to brain tissue and a low tensile strength if an applied load is expected.
+
 For implanted biomaterials that may experience temperature fluctuations, e.g., dental implants, ductility is important. The material must be ductile for a similar reason that the tensile strength cannot be too high, ductility allows the material to bend without fracture and also prevents the concentration of stresses in the tissue when the temperature changes. The material property of toughness is also important for dental implants as well as any other rigid, load-bearing implant such as a replacement hip joint. Toughness describes the material's ability to deform under applied stress without fracturing and having a high toughness allows biomaterial implants to last longer within the body, especially when subjected to large stress or cyclically loaded stresses, like the stresses applied to a hip joint during running.
+
 For medical devices that are implanted or attached to the skin, another important property requiring consideration is the flexural rigidity, D. Flexural rigidity will determine how well the device surface can maintain conformal contact with the tissue surface, which is especially important for devices that are measuring tissue motion (strain), electrical signals (impedance), or are designed to stick to the skin without delaminating, as in epidermal electronics. Since flexural rigidity depends on the thickness of the material, h, to the third power (h3), it is very important that a biomaterial can be formed into thin layers in the previously mentioned applications where conformality is paramount.
 
 ## Structure
@@ -73,6 +96,7 @@ The molecular composition of a biomaterial determines the physical and chemical 
 ### Atomic structure
 
 The arrangement of atoms and ions within a material is one of the most important structural properties of a biomaterial. The atomic structure of a material can be viewed at different levels, the sub atomic level, atomic or molecular level, as well as the ultra-structure created by the atoms and molecules. Intermolecular forces between the atoms and molecules that compose the material will determine its material and chemical properties.
+
 The sub atomic level observes the electrical structure of an individual atom to define its interactions with other atoms and molecules. The molecular structure observes the arrangement of atoms within the material. Finally the ultra-structure observes the 3-D structure created from the atomic and molecular structures of the material. The solid-state of a material is characterized by the intramolecular bonds between the atoms and molecules that comprise the material. Types of intramolecular bonds include: ionic bonds, covalent bonds, and metallic bonds. These bonds will dictate the physical and chemical properties of the material, as well as determine the type of material (ceramic, metal, or polymer).
 
 ### Microstructure
@@ -91,18 +115,27 @@ Macrostructure refers to the overall geometric properties that will influence th
 
 ## Natural biomaterials
 Biomaterials can be constructed using only materials sourced from plants and animals in order to alter, replace, or repair human tissue/organs. Use of natural biomaterials were used as early as ancient Egypt, where indigenous people used animal skin as sutures. A more modern example is a hip replacement using ivory material which was first recorded in Germany 1891.
+
 Valuable criteria for viable natural biomaterials:
 
 Biodegradable
+
 Biocompatible
+
 Able to promote cell attachment and growth
+
 Non-toxic
+
 Examples of natural biomaterials:
 
 Alginate
+
 Matrigel
+
 Fibrin
+
 Collagen
+
 Myocardial tissue engineering
 
 ### Biopolymers

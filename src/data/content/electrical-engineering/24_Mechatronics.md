@@ -1,14 +1,13 @@
 # Mechatronics
 
 Mechatronics engineering, also called mechatronics, is the synergistic integration of mechanical, electrical, and computer systems employing mechanical engineering, electrical engineering, electronic engineering and computer science and engineering, and includes a combination of robotics, computer science, telecommunications, systems, control, automation and product engineering.
-As technology advances over time, various subfields of engineering have succeeded in both adapting and multiplying. The intention of mechatronics is to produce a design solution that unifies each of these various subfields. Originally, the field of mechatronics was intended to be nothing more than a combination of mechanics, electrical and electronics, hence the name being a portmanteau of the words "mechanics" and "electronics"; however, as the complexity of technical systems continued to evolve, the definition had been broadened to include more technical areas.
-Many people treat mechatronics as a modern buzzword synonymous with automation, robotics and electromechanical engineering.
-French standard NF E 01-010 gives the following definition: "approach aiming at the synergistic integration of mechanics, electronics, control theory, and computer science within product design and manufacturing, in order to improve and/or optimize its functionality".
 
 ## Description
 
 A mechatronics engineer unites the principles of mechanics, electrical, electronics, and computing to generate a simpler, more economical and reliable system.
+
 Engineering cybernetics deals with the question of control engineering of mechatronic systems. It is used to control or regulate such a system (see control theory). Through collaboration, the mechatronic modules perform the production goals and inherit flexible and agile manufacturing properties in the production scheme. Modern production equipment consists of mechatronic modules that are integrated according to a control architecture. The most known architectures involve hierarchy, polyarchy, heterarchy, and hybrid. The methods for achieving a technical effect are described by control algorithms, which might or might not utilize formal methods in their design. Hybrid systems important to mechatronics include production systems, synergy drives,
+
 exploration rovers, automotive subsystems such as anti-lock braking systems and spin-assist, and everyday equipment such as autofocus cameras, video, hard disks, CD players and phones.
 
 ## Subdisciplines
@@ -16,12 +15,15 @@ exploration rovers, automotive subsystems such as anti-lock braking systems and 
 ### Mechanical
 
 Mechanical engineering is an important part of mechatronics engineering. It includes the study of mechanical nature of how an object works. Mechanical elements refer to mechanical structure, mechanism, thermo-fluid, and hydraulic aspects of a mechatronics system. The study of thermodynamics, dynamics, fluid mechanics, pneumatics and hydraulics. Mechatronics engineer who works as a mechanical engineer can specialize in hydraulics and pneumatics systems, where they can be found working in automobile industries. A mechatronics engineer can also design a vehicle since they have strong mechanical and electronical background. Knowledge of software applications such as computer-aided design and computer-aided manufacturing is essential for designing products. Mechatronics covers a part of mechanical syllabus which is widely applied in automobile industry.
+
 Mechatronic systems represent a large part of the functions of an automobile. The control loop formed by sensor—information processing—actuator—mechanical (physical) change is found in many systems. The system size can be very different. The anti-lock braking system (ABS) is a mechatronic system. The brake itself is also one. And the control loop formed by driving control (for example cruise control), engine, vehicle driving speed in the real world and speed measurement is a mechatronic system, too. The great importance of mechatronics for automotive engineering is also evident from the fact that vehicle manufacturers often have development departments with "Mechatronics" in their names.
 
 ### Electronics and electricals
 
 Electronics and telecommunication engineering specializes in electronics devices and telecom devices of a mechatronics system. A mechatronics engineer specialized in electronics and telecommunications have knowledge of computer hardware devices. The transmission of signal is the main application of this subfield of mechatronics. Where digital and analog systems also forms an important part of mechatronics systems. Telecommunications engineering deals with the transmission of information across a medium.
+
 Electronics engineering is related to computer engineering and electrical engineering. Control engineering has a wide range of electronic applications from the flight and propulsion systems of commercial airplanes to the cruise control present in many modern cars (automobiles). VLSI designing is important for creating integrated circuits. Mechatronics engineers have deep knowledge of microprocessors, microcontrollers, microchips and semiconductors. The application of mechatronics in electronics manufacturing industry can conduct research and development on consumer electronic devices such as mobile phones, computers, cameras etc. For mechatronics engineers it is necessary to learn operating computer applications such as MATLAB and Simulink for designing and developing electronic products.
+
 Mechatronics engineering is an interdisciplinary course, it includes concepts of both electrical and mechanical systems. A mechatronics engineer engages in designing high power transformers or radio-frequency module transmitters.
 
 ### Avionics
@@ -39,6 +41,7 @@ Robotics is one of the newest emerging subfields of mechatronics. It is the stud
 ### Computer
 
 The Internet of things (IoT) is the inter-networking of physical devices, embedded with electronics, software, sensors, actuators, and network connectivity which enable these objects to collect and exchange data. IoT and mechatronics are complementary. Many of the smart components associated with the Internet of Things will be essentially mechatronic. The development of the IoT is forcing mechatronics engineers, designers, practitioners and educators to research the ways in which mechatronic systems and components are perceived, designed and manufactured. This allows them to face up to new issues such as data security, machine ethics and the human-machine interface.
+
 Knowledge of programming is important. A mechatronics engineer has to do programming in different levels – for example, PLC programming, drone programming, hardware programming, CNC programming, etc. Some important programming languages for mechatronics engineers to learn are Java, Python, C++ and C.
 
 ## Occupational outlook

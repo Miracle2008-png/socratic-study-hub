@@ -1,16 +1,17 @@
 # Annealing (materials science)
 
 In metallurgy and materials science, annealing is a heat treatment that alters the physical and sometimes chemical properties of a material to increase its ductility and reduce its hardness, making it more workable. It involves heating a material above its recrystallization temperature, maintaining a suitable temperature for an appropriate amount of time, and then cooling.
-In annealing, atoms migrate in the crystal lattice and the number of dislocations decreases, leading to a change in ductility and hardness. As the material cools it recrystallizes. For many alloys, including carbon steel, the crystal grain size and phase composition, which ultimately determine the material properties, are dependent on the heating rate and cooling rate. Hot working or cold working after the annealing process alters the metal structure, so further heat treatments may be used to achieve the properties required. With knowledge of the composition and phase diagram, heat treatment can be used to adjust from harder and more brittle to softer and more ductile.
-In the case of ferrous metals, such as steel, annealing is performed by heating the material (generally until glowing) for a while and then slowly letting it cool to room temperature in still air. Copper, silver and brass can be either cooled slowly in air, or quickly by quenching in water. In this fashion, the metal is softened and prepared for further work such as shaping, stamping, or forming.
-Many other materials, including glass and plastic films, use annealing to improve the finished properties.
 
 ## Thermodynamics
 
 Annealing occurs by the diffusion of atoms within a solid material, so that the material progresses towards its equilibrium state. Heat increases the rate of diffusion by providing the energy needed to break bonds. The movement of atoms has the effect of redistributing and eradicating the dislocations in metals and (to a lesser extent) in ceramics. This alteration to existing dislocations allows a metal object to deform more easily, increasing its ductility. 
+
 The amount of process-initiating Gibbs free energy in a deformed metal is also reduced by the annealing process. In practice and industry, this reduction of Gibbs free energy is termed stress relief. 
+
 The relief of internal stresses is a thermodynamically spontaneous process; however, at room temperatures, it is a very slow process. The high temperatures at which annealing occurs serve to accelerate this process. 
+
 The reaction that facilitates returning the cold-worked metal to its stress-free state has many reaction pathways, mostly involving the elimination of lattice vacancy gradients within the body of the metal. The creation of lattice vacancies is governed by the Arrhenius equation, and the migration/diffusion of lattice vacancies are governed by Fick's laws of diffusion.
+
 In steel, there is a decarburization mechanism that can be described as three distinct events: the reaction at the steel surface, the interstitial diffusion of carbon atoms and the dissolution of carbides within the steel.
 
 ### Stages
@@ -20,6 +21,7 @@ The three stages of the annealing process that proceed as the temperature of the
 ## Controlled atmospheres
 
 The high temperature of annealing may result in oxidation of the metal's surface, resulting in scale. If scale must be avoided, annealing is carried out in a special atmosphere, such as with endothermic gas (a mixture of carbon monoxide, hydrogen gas, and nitrogen gas). Annealing is also done in forming gas, a mixture of hydrogen and nitrogen.
+
 The magnetic properties of mu-metal are introduced by annealing the alloy in a hydrogen atmosphere.
 
 ## Setup and equipment
@@ -39,6 +41,7 @@ Normalization is an annealing process applied to ferrous alloys to give the mate
 ### Process annealing
 
 Process annealing, also called intermediate annealing, subcritical annealing, or in-process annealing, is a heat treatment cycle that restores some of the ductility to a product being cold-worked so it can be cold-worked further without breaking.
+
 The temperature range for process annealing ranges from 260 °C (500 °F) to 760 °C (1400 °F), depending on the alloy in question. This process is mainly suited for low-carbon steel. The material is heated up to a temperature just below the lower critical temperature of steel. Cold-worked steel normally tends to possess increased hardness and decreased ductility, making it difficult to work. Process annealing tends to improve these characteristics. This is mainly carried out on cold-rolled steel like wire-drawn steel, centrifugally cast ductile iron pipe etc.
 
 ### Full annealing
@@ -52,40 +55,24 @@ Short cycle annealing is used for turning normal ferrite into malleable ferrite.
 ## Resistive heating
 
 Resistive heating can be used to efficiently anneal copper wire; the heating system employs a controlled electrical short circuit. It can be advantageous because it does not require a temperature-regulated furnace like other methods of annealing.
+
 The process consists of two conductive pulleys (step pulleys), which the wire passes across after it is drawn. The two pulleys have an electrical potential across them, which causes the wire to form a short circuit. The Joule effect causes the temperature of the wire to rise to approximately 400 °C. This temperature is affected by the rotational speed of the pulleys, the ambient temperature, and the voltage applied. Where t is the temperature of the wire, K is a constant, V is the voltage applied, r is the number of rotations of the pulleys per minute, and ta is the ambient temperature,
 
-  
-    
-      
         t
+
         =
-        
-          
             1
+
             r
-          
-        
         K
-        
           V
-          
             2
-          
-        
         +
-        
           t
-          
             a
-          
-        
-      
-    
-    
 
 $$ t={\frac {1}{r}}KV^{2}+t_{a} $$
 
-  
-
 The constant K depends on the diameter of the pulleys and the resistivity of the copper.
+
 Purely in terms of the temperature of the copper wire, an increase in the speed of the wire through the pulley system has the same effect as a decrease in resistance.

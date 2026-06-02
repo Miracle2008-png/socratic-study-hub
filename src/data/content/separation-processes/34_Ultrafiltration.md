@@ -1,41 +1,24 @@
 # Ultrafiltration
 
 Ultrafiltration (UF) is a variety of membrane filtration in which forces such as pressure or concentration gradients lead to a separation through a semipermeable membrane. Suspended solids and solutes of high molecular weight are retained in the so-called retentate, while water and low molecular weight solutes pass through the membrane in the permeate (filtrate). This separation process is used in industry and research for purifying and concentrating macromolecular (103–106 Da) solutions, especially protein solutions.
-Ultrafiltration is not fundamentally different from microfiltration. Both of these are separate based on size exclusion or particle capture. It is fundamentally different from membrane gas separation, which separate based on different amounts of absorption and different rates of diffusion. Ultrafiltration membranes are defined by the molecular weight cut-off (MWCO) of the membrane used. Ultrafiltration is applied in cross-flow or dead-end mode.
 
 ## Principles
 The basic operating principle of ultrafiltration uses a pressure induced separation of solutes from a solvent through a semi permeable membrane.  The relationship between the applied pressure on the solution to be separated and the flux through the membrane is most commonly described by the Darcy equation: 
 
-  
-    
-      
         J
+
         =
-        
-          
-            
               T
+
               M
+
               P
-            
-            
               μ
-              
                 R
-                
-                  
                     t
-                  
-                
-              
-            
-          
-        
-      
-    
     {\displaystyle J={\mathrm {TMP}  \over \mu R_{\mathrm {t} }}}
-  
 ,
+
 where J is the flux (flow rate per membrane area), TMP is the transmembrane pressure (pressure difference between feed and permeate stream), μ is solvent viscosity and Rt is the total resistance (sum of membrane and fouling resistance).
 
 ## Membrane fouling
@@ -46,20 +29,25 @@ When filtration occurs the local concentration of rejected material at the membr
 #### Types of fouling
 
 #### Types of Foulants
- 
 The following are the four categories by which foulants of UF membranes can be defined in:
 
 biological substances
+
 macromolecules
+
 particulates
+
 ions
 
 #### Particulate deposition
 The following models describe the mechanisms of particulate deposition on the membrane surface and in the pores:
 
 Standard blocking: macromolecules are uniformly deposited on pore walls
+
 Complete blocking: membrane pore is completely sealed by a macromolecule
+
 Cake formation: accumulated particles or macromolecules form a fouling layer on the membrane surface, in UF this is also known as a gel layer
+
 Intermediate blocking:  when macromolecules deposit into pores or onto already blocked pores, contributing to cake formation 
 
 #### Scaling
@@ -104,7 +92,6 @@ Most UF membranes use polymer materials (polysulfone, polypropylene, cellulose a
 A general rule for choice of pore size in a UF system is to use a membrane with a pore size one tenth that of the particle size to be separated. This limits the number of smaller particles entering the pores and adsorbing to the pore surface. Instead they block the entrance to the pores allowing simple adjustments of cross-flow velocity to dislodge them.
 
 ### Operation strategy
- 
 
 #### Flowtype
 UF systems can either operate with cross-flow or dead-end flow. In dead-end filtration the flow of the feed solution is perpendicular to the membrane surface. On the other hand, in cross flow systems the flow passes parallel to the membrane surface. Dead-end configurations are more suited to batch processes with low suspended solids as solids accumulate at the membrane surface therefore requiring frequent backflushes and cleaning to maintain high flux. Cross-flow configurations are preferred in continuous operations as solids are continuously flushed from the membrane surface resulting in a thinner cake layer and lower resistance to permeation.
@@ -126,20 +113,30 @@ Post-treatment of the product streams is dependent on the composition of the per
 
 ### Cleaning
 Cleaning of the membrane is done regularly to prevent the accumulation of foulants and reverse the degrading effects of fouling on permeability and selectivity. 
+
 Regular backwashing is often conducted every 10 min for some processes to remove cake layers formed on the membrane surface. By pressurising the permeate stream and forcing it back through the membrane, accumulated particles can be dislodged, improving the flux of the process. Backwashing is limited in its ability to remove more complex forms of fouling such as biofouling, scaling or adsorption to pore walls.
+
 These types of foulants require chemical cleaning to be removed. The common types of chemicals used for cleaning are:
 
 Acidic solutions for the control of inorganic scale deposits
+
 Alkali solutions for removal of organic compounds
+
 Biocides or disinfection such as chlorine or peroxide when bio-fouling is evident
+
 When designing a cleaning protocol it is essential to consider:
+
 Cleaning time – Adequate time must be allowed for chemicals to interact with foulants and permeate into the membrane pores. However, if the process is extended beyond its optimum duration it can lead to denaturation of the membrane and deposition of removed foulants. The complete cleaning cycle including rinses between stages may take as long as 2 hours to complete.
+
 Aggressiveness of chemical treatment – With a high degree of fouling it may be necessary to employ aggressive cleaning solutions to remove fouling material. However, in some applications this may not be suitable if the membrane material is sensitive, leading to enhanced membrane ageing. 
+
 Disposal of cleaning effluent – The release of some chemicals into wastewater systems may be prohibited or regulated therefore this must be considered. For example, the use of phosphoric acid may result in high levels of phosphates entering water ways and must be monitored and controlled to prevent eutrophication.
 
 Summary of common types of fouling and their respective chemical treatments 
 
 ## New developments
 In order to increase the life-cycle of membrane filtration systems, energy efficient membranes are being developed in membrane bioreactor systems. Technology has been introduced which allows the power required to aerate the membrane for cleaning to be reduced whilst still maintaining a high flux level.  Mechanical cleaning processes have also been adopted using granulates as an alternative to conventional forms of cleaning; this reduces energy consumption and also reduces the area required for filtration tanks.
+
 Membrane properties have also been enhanced to reduce fouling tendencies by modifying surface properties. This can be noted in the biotechnology industry where membrane surfaces have been altered in order to reduce the amount of protein binding. Ultrafiltration modules have also been improved to allow for more membrane for a given area without increasing its risk of fouling by designing more efficient module internals.
+
 The current pre-treatment of seawater desalination uses ultrafiltration modules that have been designed to withstand high temperatures and pressures whilst occupying a smaller footprint. Each module vessel is self supported and resistant to corrosion and accommodates easy removal and replacement of the module without the cost of replacing the vessel itself.

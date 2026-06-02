@@ -13,9 +13,13 @@ Chemical reaction engineering aims at studying and optimizing chemical reactions
 ## Books
 
 The Engineering of Chemical Reactions (2nd Edition), Lanny Schmidt, 2004, Oxford University Press, ISBN 0195169255
+
 Chemical Reaction Engineering (3rd Edition), Octave Levenspiel, 1999, John Wiley & Sons, ISBN 9971512416, ISBN 9789971512415
+
 Elements of Chemical Reaction Engineering (4th Edition), H. Scott Fogler, 2005, Prentice Hall, ISBN 0130473944, ISBN 9780130473943
+
 Chemical Reactor Analysis and Design (2nd Edition), Gilbert F. Froment and Kenneth B. Bischoff, 1990, John Wiley & Sons, ISBN 0471510440, ISBN 9780471510444
+
 Fundamentals of Chemical Reaction Engineering (1st Edition), Mark E. Davis and Robert J. Davis, 2003, The McGraw-Hill Companies, Inc., ISBN 007245007X, ISBN 9780072450071
 
 ## ISCRE Symposia
@@ -31,14 +35,23 @@ The ISCRE Board administers two premiere awards in chemical reaction engineering
 In 1996, the ISCRE Board of Directors established the Neal R. Amundson Award for Excellence in Chemical Reaction Engineering. This award recognizes a pioneer in the field of Chemical Reaction Engineering who has exerted a major influence on the theory or practice of the field, through originality, creativity, and novelty of concept or application. The award is made every three years at an ISCRE meeting, and consists of a Plaque and a check in the amount of $5000. The Amundson Award is generously supported by a grant from the ExxonMobil Corporation.  Winners of the award include:
 
 1996: Neal Amundson, Professor - University of Minnesota, University of Houston
+
 1999: Rutherford Aris, Professor - University of Minnesota
+
 2001: Octave Levenspiel, Professor - Oregon State University
+
 2004: Vern Weekman, Mobil
+
 2007: Gilbert Froment, Professor - Ghent University, Texas A&M University
+
 2010: Dan Luss, Professor - University of Houston
+
 2013: Lanny Schmidt, Professor - University of Minnesota
+
 2016: Milorad P. Dudukovic, Professor - Washington University
+
 2019: W. Harmon Ray, Professor - University of Wisconsin
+
 2023: Klavs F. Jensen, Professor - Massachusetts Institute of Technology
 
 ### Rutherford Aris Young Investigator Award in Chemical Reaction Engineering
@@ -46,5 +59,7 @@ In 1996, the ISCRE Board of Directors established the Neal R. Amundson Award for
 In 2016, the ISCRE, Inc. Board of Directors will bestow the first Rutherford Aris Young Investigator Award for Excellence in Chemical Reaction Engineering. This award will recognize outstanding contributions in experimental and/or theoretical reaction engineering research of investigators in early stages of their career. The recipient must be less than 40 years of age at the end of the calendar year in which the award is presented. The Aris Award is generously supported by a grant from the UOP, L.L.C., a Honeywell Company. The award consists of a plaque, an honorarium of $3000, and up to $2000 in travel funds to present at an ISCRE/NASCRE conference and to present a lecture at UOP. This award complements ISCRE's other major honor, the Neal R. Amundson Award.  Winners of the award include:
 
 2016:   Paul J. Dauenhauer, Professor - University of Minnesota
+
 2019:  Yuriy Roman-Leschkov, Professor - Massachusetts Institute of Technology
+
 2023:  Rajamani Gounder, Professor -  Purdue University

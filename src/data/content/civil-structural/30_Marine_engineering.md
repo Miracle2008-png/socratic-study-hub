@@ -1,23 +1,33 @@
 # Marine engineering
 
 Marine engineering is the engineering of watercrafts, ocean systems, and ocean structures. After completing this degree, one can join a ship as an officer in the engine department and eventually rise to the rank of chief engineer. This rank is one of the top ranks onboard and is equal to the rank of a ship's captain. Marine engineering is the highly preferred course to join the merchant Navy as an officer, as it provides ample opportunities in terms of both afloat and ashore jobs.
-Marine engineering applies a number of engineering sciences, including mechanical engineering, electrical engineering, electronic engineering, and computer Engineering, to the development, design, operation and maintenance of watercraft propulsion and ocean systems. It includes but is not limited to power and propulsion plants, machinery, piping, automation and control systems for marine vehicles of any kind, as well as coastal and offshore structures.
 
 ## Training
 
 There are several educational paths to becoming a marine engineer, all of which includes earning a university or college degree, such as a Bachelor of Engineering (B.Eng. or B.E.), Bachelor of Science (B.Sc. or B.S.), Bachelor of Technology (B.Tech.), Bachelor of Technology Management and Marine Engineering (B.TecMan & MarEng), or a Bachelor of Applied Science (B.A.Sc.) in Marine Engineering. 
+
 Depending on the country and jurisdiction, to be licensed as a Marine engineer, a Master's degree, such as a Master of Engineering (M.Eng.), Master of Science (M.Sc. or M.S.), or  Master of Applied Science (M.A.Sc.) may be required. 
+
 Some marine engineers join the profession laterally, entering from other disciplines, like Mechanical Engineering, Civil Engineering, Electrical Engineering, Geomatics Engineering and Environmental Engineering, or from science-based fields, such as Geology, Geophysics, Physics, Geomatics, Earth Science, and Mathematics. To qualify as a marine engineer, those changing professions are required to earn a graduate Marine Engineering degree, such as an M.Eng, M.S., M.Sc., or M.A.Sc., after graduating from a different quantitative undergraduate program.
+
 The fundamental subjects of marine engineering study usually include:
 
 Mathematics; Calculus, Algebra, Differential Equations, Numerical Analysis
+
 Geoscience; Geochemistry, Geophysics, Mineralogy, Geomatics
+
 Mechanics; Rock mechanics, Soil Mechanics, Geomechanics
+
 Thermodynamics; Heat Transfer, Work (thermodynamics), Mass Transfer
+
 Hydrogeology
+
 Fluid Mechanics; Fluid statics, Fluid Dynamics
+
 Geostatistics; Spatial Analysis, Statistics
+
 Control Engineering; Control Theory, Instrumentation
+
 Surface Mining; Open-pit mining
 
 ## Related Fields
@@ -37,6 +47,7 @@ Oceanography is a scientific field concerned with the acquisition and analysis o
 ### Mechanical engineering
 
 Marine engineering incorporates many aspects of mechanical engineering. One manifestation of this relationship lies in the design of shipboard propulsion systems. Mechanical engineers design the main propulsion plant, the powering and mechanization aspects of the ship functions such as steering, anchoring, cargo handling, heating, ventilation, air conditioning interior and exterior communication, and other related requirements. Electrical power generation and electrical power distribution systems are typically designed by their suppliers; the only design responsibility of the marine engineering is installation.
+
 Furthermore, an understanding of mechanical engineering topics such as fluid dynamics, fluid mechanics, linear wave theory, strength of materials, structural mechanics, and structural dynamics is essential to a marine engineer's repertoire of skills. These and other mechanical engineering subjects serve as an integral component of the marine engineering curriculum.
 
 ### Civil Engineering
@@ -84,7 +95,9 @@ The saltwater environment faced by seagoing vessels makes them highly susceptibl
 Anti-fouling is the process of eliminating obstructive organisms from essential components of seawater systems. Depending on the nature and location of marine growth, this process is performed in a number of different ways:
 
 Marine organisms may grow and attach to the surfaces of the outboard suction inlets used to obtain water for cooling systems. Electro-chlorination involves running high electrical current through sea water, altering the water's chemical composition to create sodium hypochlorite, purging any bio-matter.
+
 An electrolytic method of anti-fouling involves running electrical current through two anodes (Scardino, 2009). These anodes typically consist of copper and aluminum (or alternatively, iron). The first metal, copper anode, releases its ion into the water, creating an environment that is too toxic for bio-matter. The second metal, aluminum, coats the inside of the pipes to prevent corrosion.
+
 Other forms of marine growth such as mussels and algae may attach themselves to the bottom of a ship's hull. This growth interferes with the smoothness and uniformity of the ship's hull, causing the ship to have a less hydrodynamic shape that causes it to be slower and less fuel-efficient. Marine growth on the hull can be remedied by using special paint that prevents the growth of such organisms.
 
 ### Pollution control
@@ -108,6 +121,7 @@ Wave loading is most commonly the application of a pulsed or wavelike load to a 
 #### Examples of wave loading
 
 Offshore storms and pipes: As large waves pass over shallowly buried pipes, water pressure increases above it.  As the trough approaches, pressure over the pipe drops and this sudden and repeated variation in pressure can break pipes. The difference in pressure for a wave with wave height of about 10 m would be equivalent to one atmosphere (101.3 kPa or 14.7 psi) pressure variation between crest and trough and repeated fluctuations over pipes in relatively shallow environments could set up resonance vibrations within pipes or structures and cause problems.
+
 Engineering oil platforms: The effects of wave-loading are a serious issue for engineers designing oil platforms, which must contend with the effects of wave loading, and have devised a number of algorithms to do so.
 
 ## Career
@@ -131,32 +145,47 @@ Maritime universities are dedicated to teaching and training students in maritim
 ### Professional institutions
 
 IMarEST
+
 World Maritime University
+
 Society for Underwater Technology
+
 IEEE Oceanic Engineering Society
+
 Marine Engineering and Research Institute
+
 Indian Maritime University
+
 Royal Institution of Naval Architects (RINA)
+
 Pakistan Marine Academy
+
 Society of Naval Architects and Marine Engineers (SNAME) is a worldwide society that is focused on the advancement of the maritime industry. SNAME was founded in 1893.
+
 American Society of Naval Engineers (ASNE)
+
 SIMAC
+
 Associazione di Ingegneria OffShore e Marina
 
 ### Degrees in ocean engineering
 
 A number of institutions - including MIT, UC Berkeley, the U.S. Naval Academy, and Texas A&M University - offer a four-year Bachelor of Science degree specifically in ocean engineering. Accredited programs consist of basic undergraduate math and science subjects such as calculus, statistics, chemistry, and physics; fundamental engineering subjects such as statics, dynamics, electrical engineering, and thermodynamics; and more specialized subjects such as ocean structural analysis, hydromechanics, and coastal management.
+
 Graduate students in ocean engineering take classes on more advanced, in-depth subjects while conducting research to complete a graduate-level thesis. The Massachusetts Institute of Technology offers master's and PhD degrees specifically in ocean engineering. Additionally, MIT co-hosts a joint program with the Woods Hole Oceanographic Institution for students studying ocean engineering and other ocean-related topics at the graduate level.
 
 ### Journals and Conferences
 
 Journals about ocean engineering include Ocean Engineering, the IEEE Journal of Oceanic Engineering and the Journal of Waterway, Port, Coastal, and Ocean Engineering.
+
 Conferences in the field of marine engineering include the IEEE Oceanic Engineering Society's OCEANS Conference and Exposition and the European Wave and Tidal Energy Conference (EWTEC).
 
 ## Marine Engineering Achievements
 
 The Delta Works is a series of 13 projects designed to protect the Netherlands against flooding from the North Sea. The American Society of Civil Engineers named it one of the "Seven Wonders of the Modern World".
+
 As of April 2021 twenty-two people have descended to Challenger Deep, the lowest point in the Earth's ocean located in the Mariana Trench.
+
 Recovery of Soviet submarine K-219 by a joint team of U.S. Navy and CIA engineers aboard Glomar Explorer.
 
 ## Notable Marine Engineers
@@ -172,4 +201,5 @@ Michael E. McCormick, professor emeritus of the Department of Naval Architecture
 ## In Media and Popular Culture
 
 Marine engineers performed an important role in the clean-up of oil spills such as Exxon Valdez and British Petroleum.
+
 James Cameron's documentary Deepsea Challenge follows the story of the team that built a submersible in which Cameron made the first solo descent to Challenger Deep, the lowest point in the Earth's ocean.

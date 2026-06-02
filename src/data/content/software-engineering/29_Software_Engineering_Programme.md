@@ -7,7 +7,9 @@ Software Engineering Programme is a centre for advanced education and applied re
 The Programme offer a variety of courses, each addressing a different aspect of software engineering, which are organized into three themes, namely:
 
 Software Engineering Methods
+
 Software Engineering Tools
+
 Software and System Security.
 
 ## Awards

@@ -1,17 +1,19 @@
 # Institute of Electrical and Electronics Engineers
 
 The Institute of Electrical and Electronics Engineers (IEEE) is an American 501(c)(3) charitable professional organization for electrical engineering, electronics engineering, and related disciplines. Today, it is a global network of more than 486,000 STEM professionals across a variety of disciplines whose core purpose is to foster technological innovation for the benefit of humanity.
-The IEEE has a corporate office in New York City and an operations center in Piscataway, New Jersey. The IEEE was formed in 1963 as an amalgamation of the American Institute of Electrical Engineers and the Institute of Radio Engineers.
 
 ## Publications
 
 IEEE claims to produce over 30% of the world's literature in the electrical, electronics, and computer engineering fields, publishing approximately 200 peer-reviewed journals and magazines. IEEE publishes more than 1,700 conference proceedings every year.
+
 The published content in these journals as well as the content from several hundred annual conferences sponsored by the IEEE are available in the IEEE Electronic Library (IEL) available through IEEE Xplore platform, for subscription-based access and individual publication purchases.
+
 In addition to journals and conference proceedings, the IEEE also publishes tutorials and standards that are produced by its standardization committees. The organization also has its own IEEE paper format.
 
 ### Publishing standards
 
 The IEEE provides IEEE Editorial Style Manual for Authors style guide for article authors and basic templates in Microsoft Word and LaTeX file formats. It is based on The Chicago Manual of Style and doesn't cover "Grammar" and "Usage" styles which are provided by Chicago style guideline.
+
 In April 2024, the IEEE banned the use of Lenna test images in its journals and stated that they would decline papers containing them.
 
 ## Technical societies
@@ -21,6 +23,7 @@ IEEE has 39 technical societies, each focused on a certain knowledge area, which
 ## Global reach
 
 IEEE consists of 10 global regions, each serving its members and volunteers respectively. Each region consists of sections that directly serve its members and volunteers. 
+
 A region alignment is proposed to happen with effect from January 1, 2028, merging Region 1 and 2 together as just Region 2, while carving out a separate Region 11 from the existing Region 10.
 
 ## Other bodies
@@ -28,6 +31,7 @@ A region alignment is proposed to happen with effect from January 1, 2028, mergi
 ### IEEE Foundation
 
 The IEEE Foundation is a charitable foundation established in 1973 to support and promote technology education, innovation, and excellence. It is incorporated separately from the IEEE, although it has a close relationship to it. Members of the Board of Directors of the foundation are required to be active members of IEEE, and one third of them must be current or former members of the IEEE Board of Directors.
+
 Initially, the role of the IEEE Foundation was to accept and administer donations for the IEEE Awards program, but donations increased beyond what was necessary for this purpose, and the scope was broadened. In addition to soliciting and administering unrestricted funds, the foundation also administers donor-designated funds supporting particular educational, humanitarian, historical preservation, and peer recognition programs of the IEEE. As of the end of 2014, the foundation's total assets were nearly $45 million, split equally between unrestricted and donor-designated funds.
 
 ### Membership Geographic Activities
@@ -39,6 +43,7 @@ IEEE's Membership Geographic Activities (MGA) is focused on supporting and meeti
 ### Huawei ban
 
 In May 2019, IEEE restricted Huawei employees from peer reviewing papers or handling papers as editors due to the "severe legal implications" of U.S. government sanctions against Huawei. As members of its standard-setting body, Huawei employees could continue to exercise their voting rights, attend standards development meetings, submit proposals and comment in public discussions on new standards. The ban sparked outrage among Chinese scientists on social media. Some professors in China decided to cancel their memberships.
+
 On June 3, 2019, IEEE lifted restrictions on Huawei's editorial and peer review activities after receiving clearance from the United States government.
 
 ### Position on the Russian invasion of Ukraine

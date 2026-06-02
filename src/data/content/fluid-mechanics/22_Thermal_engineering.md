@@ -11,8 +11,11 @@ Thermal engineering often concerns itself with three subdisciplines of physics: 
 Thermodynamics deals with the relationship between heat, work, and other properties among systems in equilibrium. It is the science of energy. There are four laws of thermodynamics. 
 
 The zeroth law of thermodynamics states that if two bodies are in thermal equilibrium with a third body, then they are also in thermal equilibrium with each other.
+
 The first law of thermodynamics, also known as the law of conservation of energy, states that energy can neither be created nor destroyed. The only ways that the total energy in a closed system may change is through work or heat transfer.
+
 The second law of thermodynamics, addressing the limitations of the first, accounts for the quality and quantity of energy and dictates the flow of energy between systems. According to Clausius' statement, the second law of thermodynamics states that it is impossible for any system to act in such a way such that the sole result would be an energy transfer by heat from a cooler body to a hotter body. The Kelvin-Planck statement is also commonly cited for the second law. It states that it is impossible for a system that operates on a cycle to receive heat from a single reservoir and produce a net amount of work. Two statements imply the same result, and violating one would be violating the other.
+
 The third law of thermodynamics states that the entropy of a pure crystalline structure at absolute zero is zero. This law provides a reference point to calculate the absolute entropy of substances.
 
 ### Fluid mechanics

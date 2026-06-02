@@ -5,8 +5,11 @@ Jacobs Solutions Inc. is an American international technical professional servic
 ## Acquisitions
 
 On December 10, 1998, it was announced that Jacobs would acquire closely held engineering firm, Sverdrup Corporation for $200 million. In 2001, Jacobs acquired the international operations, including the international consultancy Sir Alexander Gibb & Partners (Gibb Ltd) based in the UK, from Law Engineering and Environmental Services in Atlanta.
+
 In FY 2007, Jacobs acquired the privately held planning, engineering and design firm, Edwards and Kelcey of Morristown, New Jersey, for an undisclosed amount. In FY 2008, Jacobs spent $264 million to acquire Carter and Burgess, Lindsey Engineering and a 60% stake in Zamel and Turbag Consulting Engineers. In FY 2010, Jacobs acquired TechTeam, Tybrin, and Jordan, Jones and Goulding. They paid $259.5 million for the three companies.
+
 In FY 2014, Jacobs announced it completed a merger transaction with Sinclair Knight Merz (SKM), a 6,900-person professional services firm headquartered in Sydney. The purchase price was an enterprise value of AUS$1.2 billion (US$1.1 billion) plus adjustments for cash, debt and other items. On August 2, 2017, Jacobs acquired CH2M based in Englewood, Colorado– an engineering firm in infrastructure and government service sectors, including water, transportation, environmental and nuclear, in a $3.27 billion cash-and-stock deal.
+
 In March 2020, Jacobs acquired Wood Nuclear, the nuclear services arm of John Wood Group of the UK, for £250 million, adding 2000 staff. Jacobs' total UK workforce was now almost 11,000. In December 2020, Jacobs announced it would be investing in PA Consulting based in London, in a deal valued at £1.825 billion. Completion of the deal was expected to take place by the end of Q1 2021. On February 7, 2022, Jacobs announced that it would enter into a joint venture with the Qatar based entity Locus Engineering Management and Services Co. W.L.L, an Asset Management company with interests in building maintenance, infrastructure, oil and gas support services, and engineering. The terms of the venture were not disclosed.
 
 ## Controversies
@@ -14,7 +17,9 @@ In March 2020, Jacobs acquired Wood Nuclear, the nuclear services arm of John Wo
 ### Kingston coal ash cleanup
 
 The Kingston Fossil Plant coal fly ash slurry spill was an environmental and industrial disaster which occurred on Monday December 22, 2008, when a dike ruptured at a coal ash pond at the Tennessee Valley Authority's Kingston Fossil Plant in Harriman, Tennessee releasing 1.1 billion U.S. gallons (4.2 million cubic meters) of coal fly ash slurry. The Tennessee Valley Authority hired Jacobs Engineering to clean up the spill. In the years after the spill at the cleanup site, a number of workers suffered health effects.
+
 As early as 2012, workers began to report illnesses which they believed were caused by the cleanup, and by the ten year anniversary of the event, hundreds of workers had been sickened and more than 30 had died. In May 2023, it was reported that more than 50 workers had died and 150 were sick. In 2013, 50 workers and their families filed a lawsuit against contractor Jacobs Engineering. They were represented by Knoxville lawyer James K. Scott and the lawsuit was dismissed by judge Thomas A. Varlan, chief justice for the U.S. District Court for the Eastern District of Tennessee in 2014. This ruling was reversed by the U.S. Court of Appeals for the Sixth Circuit after evidence was discovered that Jacobs Engineering had misled the workers about the dangers of coal ash.
+
 A federal jury ruled in favor of the workers seeking compensation in November 2018. The ruling held that Jacobs Engineering had failed to keep the workers safe from environmental hazards, and had misled them about the dangers of coal ash, mainly by claiming that extra protective equipment, such as masks and protective clothing, was unnecessary. In a phase two of the trial, the Kingston cleanup workers will be able to seek damages. In April 2020, 52 workers rejected a $10 million settlement offered by Jacobs Engineering.
 
 ### Hinkley Point

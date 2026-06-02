@@ -1,8 +1,6 @@
 # Eggshell membrane separation process
 
 Eggshell membrane separation is a recycling process to separate the protein-rich eggshell membrane from the eggshell.
-Nearly 30% of the eggs consumed each year are broken and processed or powdered into foods such as cakes, mixes, mayonnaise, noodles and fast foods. The US food industry generates 150,000 tons of shell waste a year. The disposal methods for waste eggshells are 26.6% as fertilizer, 21.1% as animal feed ingredients, 26.3% discarded in municipal dumps, and 15.8% used in other ways.
-Many landfills are unwilling to take the waste because the shells and the attached membrane attract vermin. When unseparated, the calcium carbonate eggshell and protein-rich membrane have little or no value or use; however, the invention of an eggshell and membrane separator has allowed for the recycling of these two products.
 
 ## Methods
 
@@ -31,4 +29,5 @@ The inventor of this method is Vladimir Vlad. The machine uses unseparated eggsh
 ## Uses of products
 
 Eggshell, as a source of food-safe calcium carbonate, has uses in pharmaceuticals, food, and in general industry.
+
 Eggshell membrane is generally used as a dietary supplement.

@@ -5,11 +5,13 @@ Dan Luss (born May 5, 1938) is an American chemical engineer, who is the Cullen 
 ## Career
 
 Luss received a Bachelor of Science degree in 1960 and Master of Science in chemical engineering in 1963 from Technion-Israel Institute of Technology in Haifa, Israel. In 1966, he received a Ph.D from  the University of Minnesota in chemical engineering, with a thesis on reaction engineering  supervised by Professor Neal Amundson. In 1966, he served one year as assistant professor of chemical engineering at the University of Minnesota Department of Chemical Engineering and Materials Science.
+
 In 1967,  Luss joined the chemical engineering department at the University of Houston as an assistant professor. Promotion to associate professor (1969-1972) and professor (1972–present) preceded his appointment as Cullen Professor in 1984.  He served as chairmen of its department of chemical engineering first from 1975 to 1995 and again from 1999-2000,  and as associate director of the Texas Center for Superconductivity at the University of Houston in 1988.   He  completely or jointly supervised nearly 75 Ph.D. and master's theses, and published well over 200 journal articles.
 
 ## Research
 
 Luss' research has been primarily in  the causes of steady-state multiplicity and dynamics of chemical reactors. This research led to improvements in the safer operation of industrial reactors and to a more reliable development and operation of novel reactor types. He  also made   contributions to the modeling of multi-reaction systems leading to many follow-up studies.
+
 His group is currently conducting research on several topics. The main emphasis is on problem related to the reduction of environmental emissions from diesel engines. These include enhancement of the efficiency and safety of the regeneration diesel particulate filters, development of novel catalyst architectures which improve the destruction of NOx and organic compounds emitted by diesel engines. We also conduct studies of novel synthesis of solid oxides and the dynamic features of the combustion of solid nano-particles. Specific research projects include:
 
 ### Combustion of soot in diesel particulate filters
@@ -33,12 +35,21 @@ Luss  was awarded the Alan P. Colburn Award by the American Institute of Chemica
 Dan Luss has authored numerous journal articles describing significant advances in chemical reaction engineering which includes but is not limited to:
 
 Dan Luss, Neal R. Amundson, "Uniqueness of the steady state solutions for chemical reactor occurring in a catalyst particle or in a tubular reaction with axial diffusion", Chemical Engineering Science 22(3), 253-266, (1967).
+
 William E. Corbett Jr., Dan Luss, "The influence of non-uniform catalytic activity on the performance of a single spherical pellet", Chemical Engineering Science 29(6), 1473-1483, (1974).
+
 Constantine A. Pikios, Dan Luss, "Isothermal concentration oscillations on catalytic surfaces", Chemical Engineering Science 32(2), 191-194 (1977).
+
 Vemuri Balakotaiah, Dan Luss, "Global analysis of the multiplicity features of multi-reaction lumped-parameter systems", Chemical Engineering Science 39(5), 865-881 (1984).
+
 Karen S Martirosyan, and Dan Luss,"Carbon combustion synthesis of complex oxides: Process demonstration and features", AIChE journal, 51,10, 2801–2810, (2005).
+
 Karen S Martirosyan, K Chen, and Dan Luss, Behavior features of soot combustion in diesel particulate filter, Chemical Engineering Science 65 (1), 42-46, (2010).
+
 Samuel L. Lane and Dan Luss, "Rotating temperature pulse during hydrogen oxidation on a nickel ring", Physical Review Letters 70, 830 (1993).
+
 Ritchie, J T; Richardson, J T; Luss, Dan, "Ceramic membrane reactor for synthesis gas production", AIChE Journal 47(9), 2092 (2001).
+
 Yang Zheng, Yi Liu, Michael P. Harold, Dan Luss, "LNT–SCR dual-layer catalysts optimized for lean NOx reduction by H2 and CO", Applied Catalysis B: Environmental 148, 311-321 (2014).
+
 Hoang Nguyen, Michael P. Harold, Dan Luss, "Spatiotemporal behavior of Pt/Rh/CeO2/BaO catalyst during lean–rich cycling", Chemical Engineering Journal 262, 464-477 (2015).

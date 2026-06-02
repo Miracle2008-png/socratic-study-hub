@@ -7,8 +7,11 @@ Forensic electrical engineering is a branch of forensic engineering, and is conc
 The ultimate goal of these investigations is often to determine the legal liability for a fire or other accident for purposes of insurance subrogation or an injury lawsuit.   Some examples include:
 
 Defective appliances:   If a property fire was caused by an appliance which had a manufacturing or design defect (for example, a coffee maker overheating and igniting), making it unreasonably hazardous, the insurance company might attempt to collect the cost of the fire damage ("subrogate") from the manufacturer; if the fire caused personal injury or death, the injured party might also attempt an injury lawsuit against the manufacturer, in addition to the carrier of health or life insurance attempting subrogation.
+
 Improper workmanship:   If, for example, an electrician made an improper installation in a house, leading to an electrical fault and fire, he or she could likewise be the target of subrogation or an injury lawsuit (for this reason, electricians are required to carry liability insurance).
+
 Electrical injury:   If an electrical fault or unreasonably hazardous electrical system causes an electrical injury ("electrocution" if the injury is fatal), the party responsible for the electrical accident can be the target of insurance subrogation or an injury lawsuit.
+
 Equipment failure: if electrical equipment stops functioning, it can cause a loss of income (such as a factory losing productivity due to inoperative equipment) or additional damage (such as food products spoiling due to loss of refrigeration), and again be the subject of a subrogation or liability case.   Liability in such a case can also include the cost of repairing or replacing the equipment, which can be substantial.
 
 ## Liability

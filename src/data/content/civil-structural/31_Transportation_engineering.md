@@ -5,9 +5,13 @@ Transportation engineering or transport engineering is the application of techno
 ## Theory
 
 The planning aspects of transportation engineering relate to elements of urban planning, and involve technical forecasting decisions and political factors. Technical forecasting of passenger travel usually involves an urban transportation planning model, requiring the estimation of trip generation, trip distribution, mode choice, and route assignment. More sophisticated forecasting can include other aspects of traveler decisions, including auto ownership, trip chaining (the decision to link individual trips together in a tour) and the choice of residential or business location (known as land use forecasting). Passenger trips are the focus of transportation engineering because they often represent the peak of demand on any transportation system.
+
 A review of descriptions of the scope of various committees indicates that while facility planning and design continue to be the core of the transportation engineering field, such areas as operations planning, logistics, network analysis, financing, and policy analysis are also important, particularly to those working in highway and urban transportation. The National Council of Examiners for Engineering and Surveying (NCEES) list online the safety protocols, geometric design requirements, and signal timing.
+
 Transportation engineering, primarily involves planning, design, construction, maintenance, and operation of transportation facilities. The facilities support air, highway, railroad, pipeline, water, and even space transportation. The design aspects of transportation engineering include the sizing of transportation facilities (how many lanes or how much capacity the facility has), determining the materials and thickness used in pavement designing the geometry (vertical and horizontal alignment) of the roadway (or track).
+
 Before any planning occurs an engineer must take what is known as an inventory of the area or, if it is appropriate, the previous system in place. This inventory or database must include information on population, land use, economic activity, transportation facilities and services, travel patterns and volumes, laws and ordinances, regional financial resources, and community values and expectations. These inventories help the engineer create business models to complete accurate forecasts of the future conditions of the system.
+
 Operations and management involve traffic engineering, so that vehicles move smoothly on the road or track.  Older techniques include signs, signals, markings, and tolling.  Newer technologies involve intelligent transportation systems, including advanced traveler information systems (such as variable message signs), advanced traffic control systems (such as ramp meters), and vehicle infrastructure integration. Human factors are an aspect of transportation engineering, particularly concerning driver-vehicle interface and user interface of road signs, signals, and markings.
 
 ## Specialization
@@ -17,21 +21,31 @@ Operations and management involve traffic engineering, so that vehicles move smo
 Engineers in this specialization:
 
 Handle the planning, design, construction, and operation of highways, roads, and other vehicular facilities as well as their related bicycle and pedestrian realms
+
 Estimate the transportation needs of the public and then secure the funding for projects
+
 Analyze locations of high traffic volumes and high collisions for safety and capacity
+
 Use engineering principles to improve the transportation system
+
 Utilize the three design controls, which are the drivers, the vehicles, and the roadways themselves
 
 ### Railroad engineering
 
 Railway engineers handle the design, construction, and operation of railroads and mass transit systems that use a fixed guideway (such as light rail or monorails).
+
 Typical tasks include:
 
 Determine horizontal and vertical alignment of the railways
+
 Determine station location
+
 Design functional segments of stations like lines, platforms, etc.
+
 Estimate construction cost
+
 Railway engineers work to build a cleaner and safer transportation network by reinvesting and revitalizing the rail system to meet future demands. In the United States, railway engineers work with elected officials in Washington, D.C., on rail transportation issues to make sure that the rail system meets the country's transportation needs.
+
 Railroad engineers can also move into the specialized field of train dispatching which focuses on train movement control.
 
 ### Port and harbor engineering

@@ -4,18 +4,23 @@ Materials informatics is a field of study that applies the principles of informa
 
 ## Databases
 Databases are essential for any informatics research and applications. In material informatics many databases exist containing both empirical data obtained experimentally, and theoretical data obtained computationally. Big data that can be used for machine learning is particularly difficult to obtain for experimental data due to the lack of a standard for reporting data and the variability in the experimental environment. This lack of big data has led to growing effort in developing machine learning techniques that utilize data extremely data sets. On the other hand, large uniform database of theoretical density functional theory (DFT) calculations exists. These databases have proven their utility in high-throughput material screening and discovery.
+
 Some common DFT databases and high throughput tools are listed below:
 
 Databases: MaterialsProject.org, MaterialsWeb.org (University of Florida)
+
 HT software: Pymatgen, MPInterfaces, Matminer
 
 ## Beyond computational methods?
 The concept of materials informatics is addressed by the Materials Research Society. For example, materials informatics was the theme of the December 2006 issue of the MRS Bulletin. The issue was guest-edited by John Rodgers of Innovative Materials, Inc., and David Cebon of Cambridge University, who described the "high payoff for developing methodologies that will accelerate the insertion of materials, thereby saving millions of investment dollars."
+
 The editors focused on the limited definition of materials informatics as primarily focused on computational methods to process and interpret data.  They stated that "specialized informatics tools for data capture, management, analysis, and dissemination" and "advances in computing power, coupled with computational modeling and simulation and materials properties databases" will enable such accelerated insertion of materials.
+
 A broader definition of materials informatics goes beyond the use of computational methods to carry out the same experimentation, viewing materials informatics as a framework in which a measurement or computation is one step in an information-based learning process that uses the power of a collective to achieve greater efficiency in exploration. When properly organized, this framework crosses materials boundaries to uncover fundamental knowledge of the basis of physical, mechanical, and engineering properties.
 
 ## Challenges
 While there are many who believe in the future of informatics in the materials development and scaling process, many challenges remain. Hill, et al., write that  "Today, the materials community faces serious challenges to bringing about this data-accelerated research paradigm, including diversity of research areas within materials, lack of data standards, and missing incentives for sharing, among others. Nonetheless, the landscape is rapidly changing in ways that should benefit the entire materials research enterprise."
+
 This remaining tension between traditional materials development methodologies and the use of more computationally, machine learning, and analytics approaches will likely exist for some time as the materials industry overcomes some of the cultural barriers necessary to fully embrace such new ways of thinking.
 
 ## Analogy from Biology

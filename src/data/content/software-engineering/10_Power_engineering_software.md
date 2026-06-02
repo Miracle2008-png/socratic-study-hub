@@ -21,7 +21,11 @@ Another kind of software is one for simulating security systems for power system
 The software products are created to solve different problems and to make different analysis of the power engineering.
 
 Grounding grid analysis
+
 Power generation analysis
+
 Transmission line analysis
+
 Renewable energy analysis
+
 Distribution system analysis

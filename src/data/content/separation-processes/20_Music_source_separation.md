@@ -21,6 +21,7 @@ Disney Music Group used stem separation technologies to enhance their back catal
 ## Stems vs AI stem separations
 
 Stems have been used in the recording industry to mean files bounced during the mixing process, generally a collection of like sounds grouped as a "stem". Stems in the context of the original project files can provide a large number of exported audio files for multiple purposes. These kinds of files generally provide a better quality overall and offer the ability to further isolate project material without introducing artifacts.
+
 AI stem separations have generally produced material that is ideally suited for volume adjustments or further effect processing or production. These kinds of stems generally have come in the basic four groupings of vocal, bass, drum, and other. New approaches and deeper training of models resulted in the capability to isolate additional material beyond the basic four groupings, however these kinds of separations generally have spectral anomalies, blend in additional sounds, or change some quality of the original targeted sound.
 
 ## Sound design with AI stem separation tools
@@ -48,29 +49,45 @@ Native Instruments created a specialized tool called "Stem Creator Tool" for wor
 ### Deep learning
 
 Neural networks
+
 Convolutional neural networks (CNNs)
+
 Recurrent neural networks (RNNs) and transformers
+
 Source separation algorithms
 
 ### Signal processing techniques with AI integration
 
 Computational auditory scene analysis (CASA)
+
 Independent component analysis (ICA)
+
 Non-negative matrix factorization (NMF)
+
 Short-time Fourier transform STFT
+
 End-to-end approaches
+
 Hybrid approaches
+
 Masking-based approaches
+
 Repetition-based methods
 
 ### Supporting developments
 
 Ensemble learning
+
 Conv-TasNet
+
 Leveraging large data sets
+
 Mapping-based methods
+
 SynthSOD
+
 Text-based source separation
+
 Wave-U-Net
 
 ## Known issues

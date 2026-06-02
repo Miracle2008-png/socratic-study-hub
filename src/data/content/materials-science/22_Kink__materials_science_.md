@@ -7,110 +7,54 @@ Pure-edge and screw dislocations are conceptually straight in order to minimize 
 
 ## Kink movement
 Kinks facilitate the movement of dislocations along its glide plane under shear stress, and is directly responsible for plastic deformation of crystals. When a crystal undergoes shear force, e.g. cut with scissors, the applied shear force causes dislocations to move through the material, displacing atoms and deforming the material. The entire dislocation does not move at once – rather, the dislocation produces a pair of kinks, which then propagates in opposite directions down the length of the dislocation, eventually shifting the entire dislocation by a Burgers vector. The velocity of dislocations through kink propagation also clearly limited on the nucleation frequency of kinks, as a lack of kinks compromises the mechanism by which dislocations move.
+
 As shear force approaches infinity, the velocity at which dislocations migrate is limited by the physical properties of the material, maximizing at the material's sound velocity. At lower shear stresses, the velocity of dislocations end up relating exponentially with the applied shear force:
 
-  
-    
-      
-        
           v
-          
             0
-          
-        
         =
+
         C
-        
           τ
-          
             p
-          
-        
         ,
-        
-        
-      
-    
     {\displaystyle v_{0}=C\tau ^{p},\,\!}
-  
 
 where
 
-  
-    
-      
         τ
-      
-    
     {\displaystyle \tau }
-  
  is applied shear force
 
-  
-    
-      
         C
-      
-    
     {\displaystyle C}
-  
  and 
-  
-    
-      
         p
-      
-    
     {\displaystyle p}
-  
  are experimentally found constants
+
 The above equation gives the upper limit on dislocation velocity. The interactions of dislocation movement on its environment, particularly other defects such as jogs and precipitates, results in drag and slows down the dislocation:
 
-  
-    
-      
-        
           v
-          
             D
-          
-        
         =
-        
           v
-          
             0
-          
-        
-        
           e
-          
             −
+
             D
-            
               /
-            
             τ
-          
-        
         ,
-        
-        
-      
-    
     {\displaystyle v_{D}=v_{0}e^{-D/\tau },\,\!}
-  
 
 where
 
-  
-    
-      
         D
-      
-    
     {\displaystyle D}
-  
  is the drag parameter of the crystal
+
 Kink movement is strongly dependent on temperature as well. Higher thermal energy assists in the generation of kinks, as well as increasing atomic vibrations and promoting dislocation motion.
+
 Kinks may also form under compressive stress due to the buckling of crystal planes into a cavity. At high compressive forces, masses of dislocations move at once. Kinks align with each other, forming walls of kinks that propagate all at once. At sufficient forces, the tensile force produced by the dislocation core exceeds the fracture stress of the material, combining kink boundaries into sharp kinks and de-laminating the basal planes of the crystal.

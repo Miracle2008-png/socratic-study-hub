@@ -1,7 +1,6 @@
 # Computer science and engineering
 
 Computer science and engineering (CSE) is an academic subject comprising approaches of computer science and computer engineering. There is no clear division in computing between science and engineering, just like in the field of materials science and engineering. However, some classes are historically more related to computer science (e.g. data structures and algorithms), and other to computer engineering (e.g. computer architecture). Some universities and institutions in India (like IITs) have academic departments named as Department of CSE. CSE is also a term often used  in Europe to translate the name of technical or engineering informatics academic programs. It is offered in both undergraduate as well postgraduate with specializations.
-So, CSE may refer to: academic subject, academic program, academic department.
 
 ## Academic courses
 

@@ -4,6 +4,7 @@ Superstructure is an upward extension of an existing structure above a baseline.
 
 ## Aboard ships and large boats
 On water craft, the superstructure consists of the parts of the ship or a boat, including sailboats, fishing boats, passenger ships, and submarines, that project above her main deck. This does not usually include its masts or any armament turrets. Note that, in modern times, turrets do not always carry naval artillery. They can also carry missile launchers and/or antisubmarine warfare weapons.
+
 The size of a watercraft's superstructure can have many implications in the performance of ships and boats, since these structures can alter their structural rigidity, their displacements, and/or stability. These can be detrimental to any vessel's performance if they are taken into consideration incorrectly.
 
 The height and the weight of superstructure on board a ship or a boat also affects the amount of freeboard that such a vessel requires along her sides, down to her waterline. In broad terms, the more and heavier superstructure that a ship possesses (as a fraction of her length), the less the freeboard that is needed.

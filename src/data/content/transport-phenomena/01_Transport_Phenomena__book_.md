@@ -7,31 +7,53 @@ Transport Phenomena is the first textbook about transport phenomena. It is speci
 The book is divided into three basic sections, named Momentum Transport, Energy Transport and Mass Transport:
 
 Momentum Transport
+
 Viscosity and the Mechanisms of Momentum Transport
+
 Momentum Balances and Velocity Distributions in Laminar Flow
+
 The Equations of Change for Isothermal Systems
+
 Velocity Distributions in Turbulent Flow
+
 Interphase Transport in Isothermal Systems
+
 Macroscopic Balances for Isothermal Flow Systems
+
 Energy Transport
+
 Thermal Conductivity and the Mechanisms of Energy Transport
+
 Energy Balances and Temperature Distributions in Solids and Laminar Flow
+
 The Equations of Change for Nonisothermal Systems
+
 Temperature Distributions in Turbulent Flow
+
 Interphase Transport in Nonisothermal Systems
+
 Macroscopic Balances for Nonisothermal Systems
+
 Mass transport
+
 Diffusivity and the Mechanisms of Mass Transport
+
 Concentration Distributions in Solids and Laminar Flow
+
 Equations of Change for Multicomponent Systems
+
 Concentration Distributions in Turbulent Flow
+
 Interphase Transport in Nonisothermal Mixtures
+
 Macroscopic Balances for Multicomponent Systems
+
 Other Mechanisms for Mass Transport
 
 ## Word play
 
 Transport Phenomena contains many instances of hidden messages and other word play.
+
 For example, the first letters of each sentence of the Preface spell out "This book is dedicated to O. A. Hougen." while in the revised second edition, the first letters of each paragraph spell out "Welcome". The first letters of each paragraph in the Postface spell out "On Wisconsin".  In the first printing, in Fig. 9.L (p. 305) "Bird" is typeset safely outside the furnace wall.
 
 ## Advantages of the first edition over the second edition

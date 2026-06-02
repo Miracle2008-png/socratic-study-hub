@@ -1,1684 +1,869 @@
 # Optimal control
 
 Optimal control theory is a branch of control theory that deals with finding a control for a dynamical system over a period of time such that an objective function is optimized. It has numerous applications in science, engineering and operations research. For example, the dynamical system might be a spacecraft with controls corresponding to rocket thrusters, and the objective might be to reach the Moon with minimum fuel expenditure. Or the dynamical system could be a nation's economy, with the objective to minimize unemployment; the controls in this case could be fiscal and monetary policy. A dynamical system may also be introduced to embed operations research problems within the framework of optimal control theory.
-Optimal control is an extension of the calculus of variations, and is a mathematical optimization method for deriving control policies. The method is largely due to the work of Lev Pontryagin and Richard Bellman in the 1950s, after contributions to calculus of variations by Edward J. McShane. Optimal control can be seen as a control strategy in control theory.
 
 ## General method
 
 Optimal control deals with the problem of finding a control law for a given system such that a certain optimality criterion is achieved. A control problem includes a cost functional that is a function of state and control variables. An optimal control is a set of differential equations describing the paths of the control variables that minimize the cost function. The optimal control can be derived using Pontryagin's maximum principle (a necessary condition also known as Pontryagin's minimum principle or simply Pontryagin's principle), or by solving the Hamilton–Jacobi–Bellman equation (a sufficient condition).
+
 We begin with a simple example. Consider a car traveling in a straight line on a hilly road. The question is, how should the driver press the accelerator pedal in order to minimize the total traveling time? In this example, the term control law refers specifically to the way in which the driver presses the accelerator and shifts the gears. The system consists of both the car and the road, and the optimality criterion is the minimization of the total traveling time. Control problems usually include ancillary constraints. For example, the amount of available fuel might be limited, the accelerator pedal cannot be pushed through the floor of the car, speed limits, etc.
+
 A proper cost function will be a mathematical expression giving the traveling time as a function of the speed, geometrical considerations, and initial conditions of the system. Constraints are often interchangeable with the cost function.
+
 Another related optimal control problem may be to find the way to drive the car so as to minimize its fuel consumption, given that it must complete a given course in a time not exceeding some amount. Yet another related control problem may be to minimize the total monetary cost of completing the trip, given assumed monetary prices for time and fuel.
+
 A more abstract framework goes as follows.  Minimize the continuous-time cost functional
 
-  
-    
-      
         J
+
         [
-        
-          
             x
-          
-        
         (
+
         ⋅
+
         )
+
         ,
-        
-          
             u
-          
-        
         (
+
         ⋅
+
         )
+
         ,
-        
           t
-          
             0
-          
-        
         ,
-        
           t
-          
             f
-          
-        
         ]
+
         :=
+
         E
-        
         [
-        
-          
             x
-          
-        
         (
-        
           t
-          
             0
-          
-        
         )
+
         ,
-        
           t
-          
             0
-          
-        
         ,
-        
-          
             x
-          
-        
         (
-        
           t
-          
             f
-          
-        
         )
+
         ,
-        
           t
-          
             f
-          
-        
         ]
+
         +
-        
           ∫
-          
-            
               t
-              
                 0
-              
-            
-          
-          
-            
               t
-              
                 f
-              
-            
-          
-        
         F
-        
         [
-        
-          
             x
-          
-        
         (
+
         t
+
         )
+
         ,
-        
-          
             u
-          
-        
         (
+
         t
+
         )
+
         ,
+
         t
+
         ]
-        
-        
           d
-        
         t
-      
-    
-    
 
 $$ J[{\textbf {x}}(\cdot ),{\textbf {u}}(\cdot ),t_{0},t_{f}]:=E\,[{\textbf {x}}(t_{0}),t_{0},{\textbf {x}}(t_{f}),t_{f}]+\int _{t_{0}}^{t_{f}}F\,[{\textbf {x}}(t),{\textbf {u}}(t),t]\,\mathrm {d} t $$
 
-  
-
 subject to the first-order dynamic constraints (the state equation)
 
-  
-    
-      
-        
-          
-            
-              
                 x
-              
               ˙
-            
-          
-        
         (
+
         t
+
         )
+
         =
-        
-          
             f
-          
-        
-        
         [
-        
-        
-          
             x
-          
-        
         (
+
         t
+
         )
+
         ,
-        
-          
             u
-          
-        
         (
+
         t
+
         )
+
         ,
+
         t
+
         ]
+
         ,
-      
-    
-    
 
 $$ {\dot {\textbf {x}}}(t)={\textbf {f}}\,[\,{\textbf {x}}(t),{\textbf {u}}(t),t], $$
 
-  
-
 the algebraic path constraints
 
-  
-    
-      
-        
-          
             h
-          
-        
-        
         [
-        
-          
             x
-          
-        
         (
+
         t
+
         )
+
         ,
-        
-          
             u
-          
-        
         (
+
         t
+
         )
+
         ,
+
         t
+
         ]
+
         ≤
-        
-          
             0
-          
-        
         ,
-      
-    
-    
 
 $$ {\textbf {h}}\,[{\textbf {x}}(t),{\textbf {u}}(t),t]\leq {\textbf {0}}, $$
 
-  
-
 and the endpoint conditions
 
-  
-    
-      
-        
-          
             e
-          
-        
         [
-        
-          
             x
-          
-        
         (
-        
           t
-          
             0
-          
-        
         )
+
         ,
-        
           t
-          
             0
-          
-        
         ,
-        
-          
             x
-          
-        
         (
-        
           t
-          
             f
-          
-        
         )
+
         ,
-        
           t
-          
             f
-          
-        
         ]
+
         =
+
         0
-      
-    
-    
 
 $$ {\textbf {e}}[{\textbf {x}}(t_{0}),t_{0},{\textbf {x}}(t_{f}),t_{f}]=0 $$
 
-  
-
 where 
-  
-    
-      
-        
-          
             x
-          
-        
         (
+
         t
+
         )
-      
-    
-    
 
 $$ {\textbf {x}}(t) $$
 
-  
  is the state, 
-  
-    
-      
-        
-          
             u
-          
-        
         (
+
         t
+
         )
-      
-    
-    
 
 $$ {\textbf {u}}(t) $$
 
-  
  is the control, 
-  
-    
-      
         t
-      
-    
-    
 
 $$ t $$
 
-  
  is the independent variable (generally speaking, time), 
-  
-    
-      
-        
           t
-          
             0
-          
-        
-      
-    
-    
 
 $$ t_{0} $$
 
-  
  is the initial time, and 
-  
-    
-      
-        
           t
-          
             f
-          
-        
-      
-    
-    
 
 $$ t_{f} $$
 
-  
  is the terminal time.  The terms 
-  
-    
-      
         E
-      
-    
-    
 
 $$ E $$
 
-  
  and 
-  
-    
-      
         F
-      
-    
-    
 
 $$ F $$
 
-  
  are called the endpoint cost  and the running cost respectively. In the calculus of variations, 
-  
-    
-      
         E
-      
-    
-    
 
 $$ E $$
 
-  
  and 
-  
-    
-      
         F
-      
-    
-    
 
 $$ F $$
 
-  
  are referred to as the Mayer term and the Lagrangian, respectively.  Furthermore, it is noted that the path constraints are in general inequality constraints and thus may not be active (i.e., equal to zero) at the optimal solution.  It is also noted that the optimal control problem as stated above may have multiple solutions (i.e., the solution may not be unique).  Thus, it is most often the case that any solution 
-  
-    
-      
         [
-        
-          
-            
               x
-            
-          
-          
             ∗
-          
-        
         (
+
         t
+
         )
+
         ,
-        
-          
-            
               u
-            
-          
-          
             ∗
-          
-        
         (
+
         t
+
         )
+
         ,
-        
           t
-          
             0
-          
-          
             ∗
-          
-        
         ,
-        
           t
-          
             f
-          
-          
             ∗
-          
-        
         ]
-      
-    
-    
 
 $$ [{\textbf {x}}^{*}(t),{\textbf {u}}^{*}(t),t_{0}^{*},t_{f}^{*}] $$
 
-  
  to the optimal control problem is locally minimizing.
 
 ## Linear quadratic control
 
 A special case of the general nonlinear optimal control problem given in the previous section is the linear quadratic (LQ) optimal control problem.  The LQ problem is stated as follows.  Minimize the quadratic continuous-time cost functional
 
-  
-    
-      
         J
+
         =
-        
-          
-            
               1
+
               2
-            
-          
-        
-        
-          
             x
-          
-          
-            
               T
-            
-          
-        
         (
-        
           t
-          
             f
-          
-        
         )
-        
-          
             S
-          
-          
             f
-          
-        
-        
           x
-        
         (
-        
           t
-          
             f
-          
-        
         )
+
         +
-        
-          
-            
               1
+
               2
-            
-          
-        
-        
           ∫
-          
-            
               t
-              
                 0
-              
-            
-          
-          
-            
               t
-              
                 f
-              
-            
-          
-        
         [
-        
-        
-          
             x
-          
-          
-            
               T
-            
-          
-        
         (
+
         t
+
         )
-        
           Q
-        
         (
+
         t
+
         )
-        
           x
-        
         (
+
         t
+
         )
+
         +
-        
-          
             u
-          
-          
-            
               T
-            
-          
-        
         (
+
         t
+
         )
-        
           R
-        
         (
+
         t
+
         )
-        
           u
-        
         (
+
         t
+
         )
+
         ]
-        
-        
           d
-        
         t
-      
-    
-    
 
 $$ J={\tfrac {1}{2}}\mathbf {x} ^{\mathsf {T}}(t_{f})\mathbf {S} _{f}\mathbf {x} (t_{f})+{\tfrac {1}{2}}\int _{t_{0}}^{t_{f}}[\,\mathbf {x} ^{\mathsf {T}}(t)\mathbf {Q} (t)\mathbf {x} (t)+\mathbf {u} ^{\mathsf {T}}(t)\mathbf {R} (t)\mathbf {u} (t)]\,\mathrm {d} t $$
 
-  
-
 Subject to the linear first-order dynamic constraints
 
-  
-    
-      
-        
-          
-            
-              
                 x
-              
               ˙
-            
-          
-        
         (
+
         t
+
         )
+
         =
-        
           A
-        
         (
+
         t
+
         )
-        
           x
-        
         (
+
         t
+
         )
+
         +
-        
           B
-        
         (
+
         t
+
         )
-        
           u
-        
         (
+
         t
+
         )
+
         ,
-      
-    
-    
 
 $$ {\dot {\mathbf {x} }}(t)=\mathbf {A} (t)\mathbf {x} (t)+\mathbf {B} (t)\mathbf {u} (t), $$
 
-  
-
 and the initial condition
 
-  
-    
-      
-        
           x
-        
         (
-        
           t
-          
             0
-          
-        
         )
+
         =
-        
-          
             x
-          
-          
             0
-          
-        
-      
-    
-    
 
 $$ \mathbf {x} (t_{0})=\mathbf {x} _{0} $$
 
-  
-
 A particular form of the LQ problem that arises in many control system problems is that of the linear quadratic regulator (LQR) where all of the matrices (i.e., 
-  
-    
-      
-        
           A
-        
-      
-    
-    
 
 $$ \mathbf {A} $$
 
-  
 , 
-  
-    
-      
-        
           B
-        
-      
-    
-    
 
 $$ \mathbf {B} $$
 
-  
 , 
-  
-    
-      
-        
           Q
-        
-      
-    
-    
 
 $$ \mathbf {Q} $$
 
-  
 , and 
-  
-    
-      
-        
           R
-        
-      
-    
-    
 
 $$ \mathbf {R} $$
 
-  
 ) are constant, the initial time is arbitrarily set to zero, and the terminal time is taken in the limit 
-  
-    
-      
-        
           t
-          
             f
-          
-        
         →
+
         ∞
-      
-    
-    
 
 $$ t_{f}\rightarrow \infty $$
 
-  
  (this last assumption is what is known as infinite horizon).  The LQR problem is stated as follows.  Minimize the infinite horizon quadratic continuous-time cost functional
 
-  
-    
-      
         J
+
         =
-        
-          
-            
               1
+
               2
-            
-          
-        
-        
           ∫
-          
             0
-          
-          
             ∞
-          
-        
         [
-        
-          
             x
-          
-          
-            
               T
-            
-          
-        
         (
+
         t
+
         )
-        
           Q
-        
-        
           x
-        
         (
+
         t
+
         )
+
         +
-        
-          
             u
-          
-          
-            
               T
-            
-          
-        
         (
+
         t
+
         )
-        
           R
-        
-        
           u
-        
         (
+
         t
+
         )
+
         ]
-        
-        
           d
-        
         t
-      
-    
-    
 
 $$ J={\tfrac {1}{2}}\int _{0}^{\infty }[\mathbf {x} ^{\mathsf {T}}(t)\mathbf {Q} \mathbf {x} (t)+\mathbf {u} ^{\mathsf {T}}(t)\mathbf {R} \mathbf {u} (t)]\,\mathrm {d} t $$
 
-  
-
 Subject to the linear time-invariant first-order dynamic constraints
 
-  
-    
-      
-        
-          
-            
-              
                 x
-              
               ˙
-            
-          
-        
         (
+
         t
+
         )
+
         =
-        
           A
-        
-        
           x
-        
         (
+
         t
+
         )
+
         +
-        
           B
-        
-        
           u
-        
         (
+
         t
+
         )
+
         ,
-      
-    
-    
 
 $$ {\dot {\mathbf {x} }}(t)=\mathbf {A} \mathbf {x} (t)+\mathbf {B} \mathbf {u} (t), $$
 
-  
-
 and the initial condition
 
-  
-    
-      
-        
           x
-        
         (
-        
           t
-          
             0
-          
-        
         )
+
         =
-        
-          
             x
-          
-          
             0
-          
-        
-      
-    
-    
 
 $$ \mathbf {x} (t_{0})=\mathbf {x} _{0} $$
 
-  
-
 In the finite-horizon case the matrices are restricted in that 
-  
-    
-      
-        
           Q
-        
-      
-    
-    
 
 $$ \mathbf {Q} $$
 
-  
  and 
-  
-    
-      
-        
           R
-        
-      
-    
-    
 
 $$ \mathbf {R} $$
 
-  
  are positive semi-definite and positive definite, respectively.  In the infinite-horizon case, however, the matrices 
-  
-    
-      
-        
           Q
-        
-      
-    
-    
 
 $$ \mathbf {Q} $$
 
-  
  and 
-  
-    
-      
-        
           R
-        
-      
-    
-    
 
 $$ \mathbf {R} $$
 
-  
  are not only positive-semidefinite and positive-definite, respectively, but are also constant.  These additional restrictions on
 
-  
-    
-      
-        
           Q
-        
-      
-    
-    
 
 $$ \mathbf {Q} $$
 
-  
  and 
-  
-    
-      
-        
           R
-        
-      
-    
-    
 
 $$ \mathbf {R} $$
 
-  
  in the infinite-horizon case are enforced to ensure that the cost functional remains positive.  Furthermore, in order to ensure that the cost function is bounded, the additional restriction is imposed that the pair 
-  
-    
-      
         (
-        
           A
-        
         ,
-        
           B
-        
         )
-      
-    
-    
 
 $$ (\mathbf {A} ,\mathbf {B} ) $$
 
-  
  is controllable.  Note that the LQ or LQR cost functional can be thought of physically as attempting to minimize the control energy (measured as a quadratic form).
+
 The infinite horizon problem (i.e., LQR) may seem overly restrictive and essentially useless because it assumes that the operator is driving the system to zero-state and hence driving the output of the system to zero. This is indeed correct. However the problem of driving the output to a desired nonzero level can be solved after the zero output one is. In fact, it can be proved that this secondary LQR problem can be solved in a very straightforward manner.  It has been shown in classical optimal control theory that the LQ (or LQR) optimal control has the feedback form
 
-  
-    
-      
-        
           u
-        
         (
+
         t
+
         )
+
         =
+
         −
-        
           K
-        
         (
+
         t
+
         )
-        
           x
-        
         (
+
         t
+
         )
-      
-    
-    
 
 $$ \mathbf {u} (t)=-\mathbf {K} (t)\mathbf {x} (t) $$
 
-  
-
 where 
-  
-    
-      
-        
           K
-        
         (
+
         t
+
         )
-      
-    
-    
 
 $$ \mathbf {K} (t) $$
 
-  
  is a properly dimensioned matrix, given as
 
-  
-    
-      
-        
           K
-        
         (
+
         t
+
         )
+
         =
-        
-          
             R
-          
-          
             −
+
             1
-          
-        
-        
-          
             B
-          
-          
-            
               T
-            
-          
-        
-        
           S
-        
         (
+
         t
+
         )
+
         ,
-      
-    
-    
 
 $$ \mathbf {K} (t)=\mathbf {R} ^{-1}\mathbf {B} ^{\mathsf {T}}\mathbf {S} (t), $$
 
-  
-
 and 
-  
-    
-      
-        
           S
-        
         (
+
         t
+
         )
-      
-    
-    
 
 $$ \mathbf {S} (t) $$
 
-  
  is the solution of the differential Riccati equation.  The differential Riccati equation is given as
 
-  
-    
-      
-        
-          
-            
-              
                 S
-              
               ˙
-            
-          
-        
         (
+
         t
+
         )
+
         =
+
         −
-        
           S
-        
         (
+
         t
+
         )
-        
           A
-        
         −
-        
-          
             A
-          
-          
-            
               T
-            
-          
-        
-        
           S
-        
         (
+
         t
+
         )
+
         +
-        
           S
-        
         (
+
         t
+
         )
-        
           B
-        
-        
-          
             R
-          
-          
             −
+
             1
-          
-        
-        
-          
             B
-          
-          
-            
               T
-            
-          
-        
-        
           S
-        
         (
+
         t
+
         )
+
         −
-        
           Q
-        
-      
-    
-    
 
 $$ {\dot {\mathbf {S} }}(t)=-\mathbf {S} (t)\mathbf {A} -\mathbf {A} ^{\mathsf {T}}\mathbf {S} (t)+\mathbf {S} (t)\mathbf {B} \mathbf {R} ^{-1}\mathbf {B} ^{\mathsf {T}}\mathbf {S} (t)-\mathbf {Q} $$
 
-  
-
 For the finite horizon LQ problem, the Riccati equation is integrated backward in time using the terminal boundary condition
 
-  
-    
-      
-        
           S
-        
         (
-        
           t
-          
             f
-          
-        
         )
+
         =
-        
-          
             S
-          
-          
             f
-          
-        
-      
-    
-    
 
 $$ \mathbf {S} (t_{f})=\mathbf {S} _{f} $$
 
-  
-
 For the infinite horizon LQR problem, the differential Riccati equation is replaced with the algebraic Riccati equation (ARE) given as
 
-  
-    
-      
-        
           0
-        
         =
+
         −
-        
           S
-        
-        
           A
-        
         −
-        
-          
             A
-          
-          
-            
               T
-            
-          
-        
-        
           S
-        
         +
-        
           S
-        
-        
           B
-        
-        
-          
             R
-          
-          
             −
+
             1
-          
-        
-        
-          
             B
-          
-          
-            
               T
-            
-          
-        
-        
           S
-        
         −
-        
           Q
-        
-      
-    
-    
 
 $$ \mathbf {0} =-\mathbf {S} \mathbf {A} -\mathbf {A} ^{\mathsf {T}}\mathbf {S} +\mathbf {S} \mathbf {B} \mathbf {R} ^{-1}\mathbf {B} ^{\mathsf {T}}\mathbf {S} -\mathbf {Q} $$
 
-  
-
 Understanding that the ARE arises from infinite horizon problem, the matrices 
-  
-    
-      
-        
           A
-        
-      
-    
-    
 
 $$ \mathbf {A} $$
 
-  
 , 
-  
-    
-      
-        
           B
-        
-      
-    
-    
 
 $$ \mathbf {B} $$
 
-  
 , 
-  
-    
-      
-        
           Q
-        
-      
-    
-    
 
 $$ \mathbf {Q} $$
 
-  
 , and 
-  
-    
-      
-        
           R
-        
-      
-    
-    
 
 $$ \mathbf {R} $$
 
-  
  are all constant.  It is noted that there are in general multiple solutions to the algebraic Riccati equation and the positive definite (or positive semi-definite) solution is the one that is used to compute the feedback gain.  The LQ (LQR) problem was elegantly solved by Rudolf E. Kálmán.
 
 ## Numerical methods for optimal control
 
 Optimal control problems are generally nonlinear and therefore, generally do not have analytic solutions (e.g., like the linear-quadratic optimal control problem).  As a result, it is necessary to employ numerical methods to solve optimal control problems.  In the early years of optimal control (c. 1950s to 1980s) the favored approach for solving optimal control problems was that of indirect methods.  In an indirect method, the calculus of variations is employed to obtain the first-order optimality conditions.  These conditions result in a two-point (or, in the case of a complex problem, a multi-point) boundary-value problem.  This boundary-value problem actually has a special structure because it arises from taking the derivative of a Hamiltonian.  Thus, the resulting dynamical system is a Hamiltonian system of the form
 
-  
-    
-      
-        
-          
-            
-              
-                
-                  
-                    
-                      
                         x
-                      
                       ˙
-                    
-                  
-                
-              
-              
-                
                 =
-                
-                  
-                    
                       ∂
+
                       H
-                    
-                    
                       ∂
-                      
                         λ
-                      
-                    
-                  
-                
-              
-            
-            
-              
-                
-                  
-                    
                       λ
+
                       ˙
-                    
-                  
-                
-              
-              
-                
                 =
+
                 −
-                
-                  
-                    
                       ∂
+
                       H
-                    
-                    
                       ∂
-                      
-                        
                           x
-                        
-                      
-                    
-                  
-                
-              
-            
-          
-        
-      
-    
-    
 
 $$ {\begin{aligned}{\dot {\textbf {x}}}&={\frac {\partial H}{\partial {\boldsymbol {\lambda }}}}\\[1.2ex]{\dot {\boldsymbol {\lambda }}}&=-{\frac {\partial H}{\partial {\textbf {x}}}}\end{aligned}} $$
 
-  
-
 where
 
-  
-    
-      
         H
+
         =
+
         F
+
         +
-        
-          
             λ
-          
-          
-            
               T
-            
-          
-        
-        
-          
             f
-          
-        
         −
-        
-          
             μ
-          
-          
-            
               T
-            
-          
-        
-        
-          
             h
-          
-        
-      
-    
-    
 
 $$ H=F+{\boldsymbol {\lambda }}^{\mathsf {T}}{\textbf {f}}-{\boldsymbol {\mu }}^{\mathsf {T}}{\textbf {h}} $$
 
-  
-
 is the augmented Hamiltonian and in an indirect method, the boundary-value problem is solved (using the appropriate boundary or transversality conditions).  The beauty of using an indirect method is that the state and adjoint (i.e., 
-  
-    
-      
-        
           λ
-        
-      
-    
-    
 
 $$ {\boldsymbol {\lambda }} $$
 
-  
 ) are solved for and the resulting solution is readily verified to be an extremal trajectory.  The disadvantage of indirect methods is that the boundary-value problem is often extremely difficult to solve (particularly for problems that span large time intervals or problems with interior point constraints).  A well-known software program that implements indirect methods is BNDSCO.
+
 The approach that has risen to prominence in numerical optimal control since the 1980s is that of so-called direct methods.  In a direct method, the state or the control, or both, are approximated using an appropriate function approximation (e.g., polynomial approximation or piecewise constant parameterization).  Simultaneously, the cost functional is approximated as a cost function.  Then, the coefficients of the function approximations are treated as optimization variables and the problem is "transcribed" to a nonlinear optimization problem of the form:
+
 Minimize
 
-  
-    
-      
         F
+
         (
-        
           z
-        
         )
-      
-    
-    
 
 $$ F(\mathbf {z} ) $$
 
-  
-
 subject to the algebraic constraints
 
-  
-    
-      
-        
-          
-            
-              
-                
                   g
-                
                 (
-                
                   z
-                
                 )
-              
-              
-                
                 =
-                
                   0
-                
-              
-            
-            
-              
-                
                   h
-                
                 (
-                
                   z
-                
                 )
-              
-              
-                
                 ≤
-                
                   0
-                
-              
-            
-          
-        
-      
-    
-    
 
 $$ {\begin{aligned}\mathbf {g} (\mathbf {z} )&=\mathbf {0} \\\mathbf {h} (\mathbf {z} )&\leq \mathbf {0} \end{aligned}} $$
-
-  
 
 Depending upon the type of direct method employed, the size of the nonlinear optimization problem can be quite small (e.g., as in a direct shooting or quasilinearization method), moderate (e.g. pseudospectral optimal control) or may be quite large (e.g., a direct collocation method). In the latter case (i.e., a collocation method), the nonlinear optimization problem may be literally thousands to tens of thousands of variables and constraints. Given the size of many NLPs arising from a direct method, it may appear somewhat counter-intuitive that solving the nonlinear optimization problem is easier than solving the boundary-value problem. It is, however, the fact that the NLP is easier to solve than the boundary-value problem. The reason for the relative ease of computation, particularly of a direct collocation method, is that the NLP is sparse and many well-known software programs exist (e.g., SNOPT) to solve large sparse NLPs. As a result, the range of problems that can be solved via direct methods (particularly direct collocation methods which are very popular these days) is significantly larger than the range of problems that can be solved via indirect methods. In fact, direct methods have become so popular these days that many people have written elaborate software programs that employ these methods. In particular, many such programs include DIRCOL, SOCS, OTIS, GESOP/ASTOS, DITAN. and PyGMO/PyKEP. In recent years, due to the advent of the MATLAB programming language, optimal control software in MATLAB has become more common. Examples of academically developed MATLAB software tools implementing direct methods include RIOTS, DIDO, DIRECT, FALCON.m, and GPOPS, while an example of an industry developed MATLAB tool is PROPT. These software tools have increased significantly the opportunity for people to explore complex optimal control problems both for academic research and industrial problems. Finally, it is noted that general-purpose MATLAB optimization environments such as TOMLAB have made coding complex optimal control problems significantly easier than was previously possible in languages such as C and FORTRAN.
 
@@ -1689,217 +874,136 @@ The examples thus far have shown continuous time systems and control solutions. 
 ## Examples
 
 A common solution strategy in many optimal control problems is to solve for the costate (sometimes called the shadow price) 
-  
-    
-      
         λ
+
         (
+
         t
+
         )
-      
-    
-    
 
 $$ \lambda (t) $$
 
-  
 . The costate summarizes in one number the marginal value of expanding or contracting the state variable next turn. The marginal value is not only the gains accruing to it next turn but associated with the duration of the program. It is nice when 
-  
-    
-      
         λ
+
         (
+
         t
+
         )
-      
-    
-    
 
 $$ \lambda (t) $$
 
-  
  can be solved analytically, but usually, the most one can do is describe it sufficiently well that the intuition can grasp the character of the solution and an equation solver can solve numerically for the values.
+
 Having obtained 
-  
-    
-      
         λ
+
         (
+
         t
+
         )
-      
-    
-    
 
 $$ \lambda (t) $$
 
-  
 , the turn-t optimal value for the control can usually be solved as a differential equation conditional on knowledge of 
-  
-    
-      
         λ
+
         (
+
         t
+
         )
-      
-    
-    
 
 $$ \lambda (t) $$
 
-  
 . Again it is infrequent, especially in continuous-time problems, that one obtains the value of the control or the state explicitly. Usually, the strategy is to solve for thresholds and regions that characterize the optimal control and use a numerical solver to isolate the actual choice values in time.
 
 ### Finite time
 
 Consider the problem of a mine owner who must decide at what rate to extract ore from their mine. They own rights to the ore from date 
-  
-    
-      
         0
-      
-    
-    
 
 $$ 0 $$
 
-  
  to date 
-  
-    
-      
         T
-      
-    
-    
 
 $$ T $$
 
-  
 . At date 
-  
-    
-      
         0
-      
-    
-    
 
 $$ 0 $$
 
-  
  there is 
-  
-    
-      
-        
           x
-          
             0
-          
-        
-      
-    
-    
 
 $$ x_{0} $$
 
-  
  ore in the ground, and the time-dependent amount of ore 
-  
-    
-      
         x
+
         (
+
         t
+
         )
-      
-    
-    
 
 $$ x(t) $$
 
-  
  left in the ground declines at the rate of 
-  
-    
-      
         u
+
         (
+
         t
+
         )
-      
-    
-    
 
 $$ u(t) $$
 
-  
  that the mine owner extracts it. The mine owner extracts ore at cost 
-  
-    
-      
         u
+
         (
+
         t
-        
           )
-          
             2
-          
-        
-        
           /
-        
         x
+
         (
+
         t
+
         )
-      
-    
-    
 
 $$ u(t)^{2}/x(t) $$
 
-  
  (the cost of extraction increasing with the square of the extraction speed and the inverse of the amount of ore left) and sells ore at a constant price 
-  
-    
-      
         p
-      
-    
-    
 
 $$ p $$
 
-  
 . Any ore left in the ground at time 
-  
-    
-      
         T
-      
-    
-    
 
 $$ T $$
 
-  
  cannot be sold and has no value (there is no "scrap value"). The owner chooses the rate of extraction varying with time 
-  
-    
-      
         u
+
         (
+
         t
+
         )
-      
-    
-    
 
 $$ u(t) $$
 
-  
  to maximize profits over the period of ownership with no time discounting.

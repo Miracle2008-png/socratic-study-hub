@@ -1,33 +1,43 @@
 # Quasicrystal
 
 A quasiperiodic crystal, or quasicrystal, is a structure that is ordered but not periodic. A quasicrystalline pattern can continuously fill all available space, but it lacks translational symmetry. While crystals, according to the classical crystallographic restriction theorem, can possess only two-, three-, four-, and six-fold rotational symmetries, the Bragg diffraction pattern of quasicrystals shows sharp peaks with other symmetry orders—for instance, five-fold.
-Aperiodic tilings were discovered by mathematicians in the early 1960s, and some twenty years later, they were found to apply to the study of natural quasicrystals. The discovery of these aperiodic forms in nature has produced a paradigm shift in the field of crystallography. In crystallography, the quasicrystals were predicted in 1981 by a five-fold symmetry study of Alan Lindsay Mackay,—that also brought in 1982, with the crystallographic Fourier transform of a Penrose tiling, the possibility of identifying quasiperiodic order in a material through diffraction.
-Quasicrystals had been investigated and observed earlier, but, until the 1980s, they were disregarded in favor of the prevailing views about the atomic structure of matter. In 2009, after a dedicated search, a mineralogical finding, icosahedrite, offered evidence for the existence of natural quasicrystals.
-Roughly, an ordering is non-periodic if it lacks translational symmetry, which means that a shifted copy will never match exactly with its original. The more precise mathematical definition is that there is never translational symmetry in more than n – 1 linearly independent directions, where n is the dimension of the space filled, e.g., the three-dimensional tiling displayed in a quasicrystal may have translational symmetry in two directions. Symmetrical diffraction patterns result from the existence of an indefinitely large number of elements with regular spacing, a property loosely described as long-range order. Experimentally, the aperiodicity is revealed in the unusual symmetry of the diffraction pattern, that is, symmetry of orders other than two, three, four, or six.
-In 1982, materials scientist Dan Shechtman observed that certain aluminium–manganese alloys produced unusual diffractograms, which today are seen as revelatory of quasicrystal structures. Due to fear of the scientific community's reaction, it took him two years to publish the results. Shechtman's discovery challenged the long-held belief that all crystals are periodic. Observed in a rapidly solidified Al-Mn alloy, quasicrystals exhibited icosahedral symmetry, which was previously thought impossible in crystallography. This breakthrough, supported by theoretical models and experimental evidence, led to a paradigm shift in the understanding of solid-state matter. Despite initial skepticism, the discovery gained widespread acceptance, prompting the International Union of Crystallography to redefine the term "crystal." The work ultimately earned Shechtman the 2011 Nobel Prize in Chemistry and inspired significant advancements in materials science and mathematics.
-On 25 October 2018, Luca Bindi and Paul Steinhardt were awarded the Aspen Institute 2018 Prize for collaboration and scientific research between Italy and the United States after discovering icosahedrite, the first quasicrystal known to occur naturally.
 
 ## Mathematics
 
 There are several ways to mathematically define quasicrystalline patterns. One definition, the "cut and project" construction, is based on the work of Harald Bohr (mathematician brother of Niels Bohr). The concept of an almost periodic function (also called a quasiperiodic function) was studied by Bohr, including work of Bohl and Escanglon.
+
 He introduced the notion of a superspace. Bohr showed that quasiperiodic functions arise as restrictions of high-dimensional periodic functions to an irrational slice (an intersection with one or more hyperplanes), and discussed their Fourier point spectrum. These functions are not exactly periodic, but they are arbitrarily close in some sense, as well as being a projection of an exactly periodic function.
+
 In order that the quasicrystal itself be aperiodic, this slice must avoid any lattice plane of the higher-dimensional lattice. De Bruijn showed that Penrose tilings can be viewed as two-dimensional slices of five-dimensional hypercubic structures; similarly, icosahedral quasicrystals in three dimensions are projected from a six-dimensional hypercubic lattice, as first described by Peter Kramer and Roberto Neri in 1984. Equivalently, the Fourier transform of such a quasicrystal is nonzero only at a dense set of points spanned by integer multiples of a finite set of basis vectors, which are the projections of the primitive reciprocal lattice vectors of the higher-dimensional lattice.
+
 The classical theory of crystals reduces crystals to point lattices where each point is the center of mass of one of the identical units of the crystal. The structure of crystals can be analyzed by defining an associated group. Quasicrystals, on the other hand, are composed of more than one type of unit, so, instead of lattices, quasilattices must be used. Instead of groups, groupoids, the mathematical generalization of groups in category theory, is the appropriate tool for studying quasicrystals.
+
 Using mathematics for construction and analysis of quasicrystal structures is a difficult task. Computer modeling, based on the existing theories of quasicrystals, however, greatly facilitated this task. Advanced programs have been developed allowing one to construct, visualize and analyze quasicrystal structures and their diffraction patterns. The aperiodic nature of quasicrystals can also make theoretical studies of physical properties, such as electronic structure, difficult due to the inapplicability of Bloch's theorem. However, spectra of quasicrystals can still be computed with error control.
+
 Study of quasicrystals may shed light on the most basic notions related to the quantum critical point observed in heavy fermion metals. Experimental measurements on an Au–Al–Yb quasicrystal have revealed a quantum critical point defining the divergence of the magnetic susceptibility as temperature tends to zero. It is suggested that the electronic system of some quasicrystals is located at a quantum critical point without tuning, while quasicrystals exhibit the typical scaling behaviour of their thermodynamic properties and belong to the well-known family of heavy fermion metals.
 
 ## Materials science
 
 Since the original discovery by Dan Shechtman, hundreds of quasicrystals have been reported and confirmed. Quasicrystals are found most often in aluminium alloys (Al–Li–Cu, Al–Mn–Si, Al–Ni–Co, Al–Pd–Mn, Al–Cu–Fe, Al–Cu–V, etc.), but numerous other compositions are also known (Cd–Yb, Ti–Zr–Ni, Zn–Mg–Ho, Zn–Mg–Sc, In–Ag–Yb, Pd–U–Si, etc.). The molecular compound ferrocenecarboxylic acid is also known to form a quasicrystal in two dimensions.
+
 Two types of quasicrystals are known. The first type, polygonal (dihedral) quasicrystals, have an axis of 8-, 10-, or 12-fold local symmetry (octagonal, decagonal, or dodecagonal quasicrystals, respectively). They are periodic along this axis or two-dimensional, and quasiperiodic in planes normal to it. The second type, icosahedral quasicrystals, are aperiodic in all directions. Icosahedral quasicrystals have a three dimensional quasiperiodic structure and possess fifteen 2-fold, ten 3-fold and six 5-fold axes in accordance with their icosahedral symmetry.
+
 Quasicrystals fall into three groups of different thermal stability:
 
 Stable quasicrystals grown by slow cooling or casting with subsequent annealing,
+
 Metastable quasicrystals prepared by melt spinning, and
+
 Metastable quasicrystals formed by the crystallization of the amorphous phase.
+
 Except for the Al–Li–Cu system, all the stable quasicrystals are almost free of defects and disorder, as evidenced by X-ray and electron diffraction revealing peak widths as sharp as those of perfect crystals such as Si. Diffraction patterns exhibit fivefold, threefold, and twofold symmetries, and reflections are arranged quasiperiodically in three dimensions.
+
 The origin of the stabilization mechanism is different for the stable and metastable quasicrystals. Nevertheless, there is a common feature observed in most quasicrystal-forming liquid alloys or their undercooled liquids: a local icosahedral order. The icosahedral order is in equilibrium in the liquid state for the stable quasicrystals, whereas the icosahedral order prevails in the undercooled liquid state for the metastable quasicrystals.
+
 A nanoscale icosahedral phase was formed in Zr-, Cu- and Hf-based bulk metallic glasses alloyed with noble metals.
+
 Most quasicrystals have ceramic-like properties including high thermal and electrical resistance, hardness and brittleness, resistance to corrosion, and non-stick
+
 properties. Many metallic quasicrystalline substances are impractical for most applications due to their thermal instability; the Al–Cu–Fe ternary system and the Al–Cu–Fe–Cr and Al–Co–Fe–Cr quaternary systems, thermally stable up to 700 °C, are notable exceptions.
+
 The quasi-ordered droplet crystals could be formed under Dipolar forces in the Bose Einstein condensate. While the softcore Rydberg dressing interaction forms triangular droplet-crystals, adding a Gaussian peak to the plateau type interaction would form multiple roton unstable points in the Bogoliubov spectrum. Therefore, the excitation around the roton instabilities would grow exponentially and form multiple allowed lattice constants leading to quasi-ordered periodic droplet crystals.

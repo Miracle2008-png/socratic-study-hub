@@ -1,8 +1,6 @@
 # Systems engineering
 
 Systems engineering is an interdisciplinary field of engineering and engineering management that focuses on how to design, integrate, and manage complex systems over their life cycles. At its core, systems engineering utilizes systems thinking principles to organize the systems engineering body of knowledge. The individual outcome of such efforts, an engineered system, can be defined as a combination of components that work in synergy to collectively perform a useful function.
-Issues such as requirements engineering, reliability, logistics, coordination of different teams, testing and evaluation, maintainability, and many other disciplines, aka "ilities", necessary for successful system design, development, implementation, and ultimate decommission become more difficult when dealing with large or complex projects. Systems engineering deals with work processes, optimization methods, and risk management tools in such projects. It overlaps technical and human-centered disciplines such as industrial engineering, production systems engineering, process systems engineering, mechanical engineering, manufacturing engineering, production engineering, control engineering, software engineering, electrical engineering, cybernetics, aerospace engineering, organizational studies, civil engineering and project management. Systems engineering ensures that all likely aspects of a project or system are considered and integrated into a whole.
-The systems engineering process is a discovery process that is quite unlike a manufacturing process. A manufacturing process is focused on repetitive activities that achieve high-quality outputs with minimum cost and time. The systems engineering process must begin by discovering the real problems that need to be resolved and identifying the most probable or highest-impact failures that can occur. Systems engineering involves finding solutions to these problems.
 
 ## Concept
 
@@ -15,11 +13,15 @@ The traditional scope of engineering embraces the conception, design, developmen
 ### Evolution to a broader scope
 
 The use of the term "systems engineer" has evolved over time to embrace a wider, more holistic concept of "systems" and of engineering processes. This evolution of the definition has been a subject of ongoing controversy, and the term continues to apply to both the narrower and a broader scope.
+
 Traditional systems engineering was seen as a branch of engineering in the classical sense, that is, as applied only to physical systems, such as spacecraft and aircraft. More recently, systems engineering has evolved to take on a broader meaning especially when humans were seen as an essential component of a system. Peter Checkland, for example, captures the broader meaning of systems engineering by stating that 'engineering' "can be read in its general sense; you can engineer a meeting or a political agreement."
+
 Consistent with the broader scope of systems engineering, the Systems Engineering Body of Knowledge (SEBoK) has defined three types of systems engineering:
 
 Product Systems Engineering (PSE) is the traditional systems engineering focused on the design of physical systems consisting of hardware and software.
+
 Enterprise Systems Engineering (ESE) pertains to the view of enterprises, that is, organizations or combinations of organizations, as systems.
+
 Service Systems Engineering (SSE) has to do with the engineering of service systems. Checkland defines a service system as a system which is conceived as serving another system. Most civil infrastructure systems are service systems.
 
 ### Holistic view
@@ -27,13 +29,17 @@ Service Systems Engineering (SSE) has to do with the engineering of service syst
 Systems engineering focuses on analyzing and eliciting customer needs and required functionality early in the development cycle, documenting requirements, then proceeding with design synthesis and system validation while considering the complete problem, the system lifecycle. This includes fully understanding all of the stakeholders involved. Oliver et al. claim that the systems engineering process can be decomposed into:
 
 A Systems Engineering Technical Process
+
 A Systems Engineering Management Process
+
 Within Oliver's model, the goal of the Management Process is to organize the technical effort in the lifecycle, while the Technical Process includes assessing available information, defining effectiveness measures, to create a behavior model, create a structure model, perform trade-off analysis, and create sequential build & test plan.
+
 Depending on their application, although there are several models that are used in the industry, all of them aim to identify the relation between the various stages mentioned above and incorporate feedback. Examples of such models include the Waterfall model and the VEE model (also called the V model).
 
 ### Interdisciplinary field
 
 System development often requires contribution from diverse technical disciplines. By providing a systems (holistic) view of the development effort, systems engineering helps mold all the technical contributors into a unified team effort, forming a structured development process that proceeds from concept to production to operation and, in some cases, to termination and disposal. In an acquisition, the holistic integrative discipline combines contributions and balances tradeoffs among cost, schedule, and performance while maintaining an acceptable level of risk covering the entire life cycle of the item.
+
 This perspective is often replicated in educational programs, in that systems engineering courses are taught by faculty from other engineering departments, which helps create an interdisciplinary environment.
 
 ### Managing complexity
@@ -43,30 +49,45 @@ The need for systems engineering arose with the increase in complexity of system
 The development of smarter control algorithms, microprocessor design, and analysis of environmental systems also come within the purview of systems engineering. Systems engineering encourages the use of tools and methods to better comprehend and manage complexity in systems. Some examples of these tools can be seen here:
 
 System architecture
+
 System model, modeling, and simulation
+
 Mathematical optimization
+
 System dynamics
+
 Systems analysis
+
 Statistical analysis
+
 Reliability engineering
+
 Decision making
+
 Taking an interdisciplinary approach to engineering systems is inherently complex since the behavior of and interaction among system components is not always immediately well defined or understood. Defining and characterizing such systems and subsystems and the interactions among them is one of the goals of systems engineering. In doing so, the gap that exists between informal requirements from users, operators, marketing organizations, and technical specifications is successfully bridged.
 
 ### Scope
 
 The principles of systems engineering – holism, emergent behavior, boundary, et al. – can be applied to any system, complex or otherwise, provided systems thinking is employed at all levels. Besides defense and aerospace, many information and technology-based companies, software development firms, and industries in the field of electronics & communications require systems engineers as part of their team.
+
 An analysis by the INCOSE Systems Engineering Center of Excellence (SECOE) indicates that optimal effort spent on systems engineering is about 15–20% of the total project effort. At the same time, studies have shown that systems engineering essentially leads to a reduction in costs among other benefits. However, no quantitative survey at a larger scale encompassing a wide variety of industries has been conducted until recently. Such studies are underway to determine the effectiveness and quantify the benefits of systems engineering.
+
 Systems engineering encourages the use of modeling and simulation to validate assumptions or theories on systems and the interactions within them.
+
 Use of methods that allow early detection of possible failures, in safety engineering, are integrated into the design process. At the same time, decisions made at the beginning of a project whose consequences are not clearly understood can have enormous implications later in the life of a system, and it is the task of the modern systems engineer to explore these issues and make critical decisions. No method guarantees today's decisions will still be valid when a system goes into service years or decades after first conceived. However, there are techniques that support the process of systems engineering. Examples include soft systems methodology, Jay Wright Forrester's System dynamics method, and the Unified Modeling Language (UML)—all currently being explored, evaluated, and developed to support the engineering decision process.
 
 ## Education
 
 Education in systems engineering is often seen as an extension to the regular engineering courses, reflecting the industry attitude that engineering students need a foundational background in one of the traditional engineering disciplines (e.g. aerospace engineering, civil engineering, electrical engineering, mechanical engineering, manufacturing engineering, industrial engineering, chemical engineering)—plus practical, real-world experience to be effective as systems engineers. Undergraduate university programs explicitly in systems engineering are growing in number but remain uncommon, the degrees including such material are most often presented as a BS in Industrial Engineering. Typically programs (either by themselves or in combination with interdisciplinary study) are offered beginning at the graduate level in both academic and professional tracks, resulting in the grant of either a MS/MEng or Ph.D./EngD degree.
+
 INCOSE, in collaboration with the Systems Engineering Research Center at Stevens Institute of Technology maintains a regularly updated directory of worldwide academic programs at suitably accredited institutions. As of 2017, it lists over 140 universities in North America offering more than 400 undergraduate and graduate programs in systems engineering. Widespread institutional acknowledgment of the field as a distinct subdiscipline is quite recent; the 2009 edition of the same publication reported the number of such schools and programs at only 80 and 165, respectively.
+
 Education in systems engineering can be taken as systems-centric or domain-centric:
 
 Systems-centric programs treat systems engineering as a separate discipline and most of the courses are taught focusing on systems engineering principles and practice.
+
 Domain-centric programs offer systems engineering as an option that can be exercised with another major field in engineering.
+
 Both of these patterns strive to educate the systems engineer who is able to oversee interdisciplinary projects with the depth required of a core engineer.
 
 ## Systems engineering topics
@@ -78,11 +99,17 @@ Systems engineering tools are strategies, procedures, and techniques that aid in
 There are many definitions of what a system is in the field of systems engineering. Below are a few authoritative definitions:
 
 ANSI/EIA-632-1999: "An aggregation of end products and enabling products to achieve a given purpose."
+
 DAU Systems Engineering Fundamentals: "an integrated composite of people, products, and processes that provide a capability to satisfy a stated need or objective."
+
 IEEE Std 1220-1998: "A set or arrangement of elements and processes that are related and whose behavior satisfies customer/operational needs and provides for life cycle sustainment of the products."
+
 INCOSE Systems Engineering Handbook: "homogeneous entity that exhibits predefined behavior in the real world and is composed of heterogeneous parts that do not individually exhibit that behavior and an integrated configuration of components and/or subsystems."
+
 INCOSE: "A system is a construct or collection of different elements that together produce results not obtainable by the elements alone. The elements, or parts, can include people, hardware, software, facilities, policies, and documents; that is, all things required to produce systems-level results. The results include system-level qualities, properties, characteristics, functions, behavior, and performance. The value added by the system as a whole, beyond that contributed independently by the parts, is primarily created by the relationship among the parts; that is, how they are interconnected."
+
 ISO/IEC 15288:2008: "A combination of interacting elements organized to achieve one or more stated purposes."
+
 NASA Systems Engineering Handbook: "(1) The combination of elements that function together to produce the capability to meet a need. The elements include all hardware, software, equipment, facilities, personnel, processes, and procedures needed for this purpose. (2) The end product (which performs operational functions) and enabling products (which provide life-cycle support services to the operational end products) that make up a system."
 
 ### Systems engineering processes
@@ -90,20 +117,29 @@ NASA Systems Engineering Handbook: "(1) The combination of elements that functio
 Systems engineering processes encompass all creative, manual, and technical activities necessary to define the product and which need to be carried out to convert a system definition to a sufficiently detailed system design specification for product manufacture and deployment. Design and development of a system can be divided into four stages, each with different definitions: 
 
 Task definition (informative definition)
+
 Conceptual stage (cardinal definition)
+
 Design stage (formative definition)
+
 Implementation stage (manufacturing definition)
+
 Depending on their application, tools are used for various stages of the systems engineering process:
 
 ### Using models
 
 Models play important and diverse roles in systems engineering. A model can be defined in several
+
 ways, including:
 
 An abstraction of reality designed to answer specific questions about the real world
+
 An imitation, analog, or representation of a real-world process or structure; or
+
 A conceptual, mathematical, or physical tool to assist a decision-maker.
+
 Together, these definitions are broad enough to encompass physical engineering models used in the verification of a system design, as well as schematic models like a functional flow block diagram and mathematical (i.e. quantitative) models used in the trade study process. This section focuses on the last.
+
 The main reason for using mathematical models and diagrams in trade studies is to provide estimates of system effectiveness, performance or technical attributes, and cost from a set of known or estimable quantities. Typically, a collection of separate models is needed to provide all of these outcome variables. The heart of any mathematical model is a set of meaningful quantitative relationships among its inputs and outputs. These relationships can be as simple as adding up constituent quantities to obtain a total, or as complex as a set of differential equations describing the trajectory of a spacecraft in a gravitational field. Ideally, the relationships express causality, not just correlation. Furthermore, key to successful systems engineering activities are also the methods with which these models are efficiently and effectively managed and used to simulate the systems. However, diverse domains often present recurring problems of modeling and simulation for systems engineering, and new advancements are aiming to cross-fertilize methods among distinct scientific and engineering communities, under the title of 'Modeling & Simulation-based Systems Engineering'.
 
 ### Modeling formalisms and graphical representations
@@ -111,17 +147,29 @@ The main reason for using mathematical models and diagrams in trade studies is t
 Initially, when the primary purpose of a systems engineer is to comprehend a complex problem, graphic representations of a system are used to communicate a system's functional and data requirements. Common graphical representations include:
 
 Functional flow block diagram (FFBD)
+
 Model-based design
+
 Data flow diagram (DFD)
+
 N2 chart
+
 IDEF0 diagram
+
 Use case diagram
+
 Sequence diagram
+
 Block diagram
+
 Signal-flow graph
+
 USL function maps and type maps
+
 Enterprise architecture frameworks
+
 A graphical representation relates the various subsystems or parts of a system through functions, data, or interfaces. Any or each of the above methods is used in an industry based on its requirements. For instance, the N2 chart may be used where interfaces between systems are important. Part of the design phase is to create structural and behavioral models of the system.
+
 Once the requirements are understood, it is now the responsibility of a systems engineer to refine them and to determine, along with other engineers, the best technology for a job. At this point starting with a trade study, systems engineering encourages the use of weighted choices to determine the best option. A decision matrix, or Pugh method, is one way (QFD is another) to make this choice while considering all criteria that are important. The trade study in turn informs the design, which again affects graphic representations of the system (without changing the requirements). In an SE process, this stage represents the iterative step that is carried out until a feasible solution is found. A decision matrix is often populated using techniques such as statistical analysis, reliability analysis, system dynamics (feedback control), and optimization methods.
 
 ### Other tools

@@ -1,7 +1,6 @@
 # Vilnius Gediminas Technical University
 
 Vilnius Gediminas Technical University (VILNIUS TECH) is a public university located in Vilnius, Lithuania. There are 10 faculties including Antanas Gustaitis Aviation Institute, Architecture, Business Management, Civil Engineering, Creative Industries, Electronics, Environmental Engineering, Fundamental Sciences, Mechanics, Transport Engineering. Scientific research and experimental development is performed by 13 institutes, 3 research centres and 23 research laboratories.
-VILNIUS TECH is among the top 2.1% of universities in the world and scores highest in Lithuania in the subject areas of Architecture / Built Environment (QS Top 101-150), Business & Management (QS Top 201-250) and Economics & Econometrics (QS Top 301–350) according to QS World University Rankings by subject.
 
 ## Campus
 
@@ -68,23 +67,29 @@ The Faculty of Transport Engineering was founded in 1994. It is made up of four 
 ### Other Research Bodies
 
 VILNIUS TECH has two research centers, the university-wide, interdisciplinary Civil Engineering Research Center, and the Competence Center of Intermodal Transport and Logistics, attached to the Faculty of Transport Engineering.
+
 The university also boasts 14 research institutes. The interdisciplinary Scientific Institute of Thermal Insulation investigates means of creating building materials that insulate both heat and sound. At the faculty level, the Research Institutes of Smart Building Technologies, the Research Institute of Building Structures, and the Research Institute of Building Materials and Products all belong to the Faculty of Civil Engineering. The Research Institutes of Environmental Protection, the Road Research Institute, the Research Institute of Territorial Planning, and the Research Institute of Geodesy belong to the Faculty of Environmental Engineering. The Transport Research Institute belongs to the Faculty of Transport Engineering. The Institute of Applied Computer Science belongs to the Faculty of Fundamental Sciences. The Institute of Mechanical Science belongs to the Faculty of Mechanics. The Institute of Architecture belongs to the Faculty of Architecture. Finally, the Research Institute for Telecommunications and the Institute of High Magnetic Fields belong to the Faculty of Electronics.
+
 At the university level, VILNIUS TECH has 12 research laboratories. Four are related to the Scientific Institute of Thermal Insulation, and 8 belong to the Civil Engineering Research Center. Scattered throughout the rest of the university are 21 other research laboratories at both the faculty and department levels.
 
 ## Administration
 
 Since 2021, the Rector of VILNIUS TECH is Romualdas Kliukas. He succeeded the third rector of the university, Adolfas Daniūnas, who had been rector since 2011. The first rector of the university was Aleksandras Čyras, who headed the university from its formal establishment in 1969 to 1990. He was succeeded by Edmundas Zavadskas.
+
 The Rectorate is made up of a Vice-Rector for International Relations, a Vice-Rector for Strategic Development, a Vice-Rector for Research, a Vice-Rector for Studies, and a Chancellor. The current chancellor is Vaidotas Trinkūnas.
 
 ## Research Publication
 
 The Vilnius Gediminas Technical University Press (VILNIUS TECH Press) publishes around 100 publications annually. In 2010, VILNISU TECH Press was the first press in Lithuania to launch an e-books site for their publications.
+
 VILNIUS TECH Press also publishes 19 peer-reviewed research journals. Of these journals, eight are indexed on the Web of Science database, while all of the journals are indexed by ProQuest and EBSCO. Taylor and Francis publishes 10 of the academic journals.
+
 Six of VILNIUS TECH Press's journals are published open access with a Creative Commons CC BY-NC 4.0 license: Business: Theory and Practice, Coactivity: Philosophy, Communication, Coactivity: Philology, Educology, Science — Future of Lithuania, Business, Management and Education, and Aviation technologies.
 
 ## Student Activities
 
 VILNIUS TECH offers several extracurricular activities for its students, including the choir Gabija, the theater group Palėpė, and the Lithuanian folk dance group Vingis.
+
 The VILNIUS TECH student representatives organization features 300 volunteers who act as liaisons between the university and the student body. Similarly, the international ERASMUS students are served by the VILNIUS TECH chapter of the Erasmus Student Network.
 
 ## International cooperation
@@ -94,6 +99,9 @@ In 2023, Antanas Gustaitis Aviation Institute of VILNIUS TECH joined the interna
 ## Alumni
 
 The Vilnius Civil Engineering Institute (VISI), as VILNIUS TECH was known until the re-establishment of the Republic of Lithuania, has produced many high-profile alumni in Lithuania.
+
 Several current politicians, for example, are VISI graduates. Algirdas Butkevičius, the 12th Prime Minister of Lithuania, completed the economics engineering program. Rolandas Paksas, a former President of Lithuania and two-time prime minister, also graduated from VISI. Former Speaker of the Seimas Viktoras Muntianas, Member of the European Parliament Valdemar Tomaševski, and former Prime Minister and Signatory of the Act of the Re-Establishment of the State of Lithuania Gediminas Vagnorius are all also VISI alumni.
+
 In the creative arts, composer and rock pioneer Kęstutis Antanėlis and musician Andrius Mamontovas attended the university. In 1971, Antanėlis staged a production of Jesus Christ Superstar at the Vilnius Art Academy, only the second production of the show in the world, and was expelled from VISI in response.
+
 Mamontovas, on the other hand, felt pressure from his father to study a "serious" subject, like engineering. After his time in the Soviet Army, however, Mamontovas reconsidered and left VISI to study journalism at Vilnius University.

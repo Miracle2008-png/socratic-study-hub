@@ -1,19 +1,21 @@
 # Chemical engineering
 
 Chemical engineering is an engineering field which deals with the study of the operation and design of chemical plants as well as methods of improving production. Chemical engineers develop economical commercial processes to convert raw materials into useful products. Chemical engineering uses principles of chemistry, physics, mathematics, biology, and economics to efficiently use, produce, design, transport and transform energy and materials. The work of chemical engineers can range from the utilization of nanotechnology and nanomaterials in the laboratory to large-scale industrial processes that convert chemicals, raw materials, living cells, microorganisms, and energy into useful forms and products. Chemical engineers are involved in many aspects of plant design and operation, including safety and hazard assessments, process design and analysis, modeling, control engineering, chemical reaction engineering, nuclear engineering, biological engineering,  construction specification, and operating instructions.
-Chemical engineers typically hold a degree in Chemical Engineering or Process Engineering. Practicing engineers may have professional certification and be accredited members of a professional body. Such bodies include the Institution of Chemical Engineers (IChemE) or the American Institute of Chemical Engineers (AIChE) and respective states in the U.S., which ultimately confer licensure and title of Professional Engineer. A degree in chemical engineering is directly linked with all of the other engineering disciplines, to various extents.
 
 ## Concepts
 
 ### Plant design and construction
 
 Chemical engineering design concerns the creation of plans, specifications, and economic analyses for pilot plants, new plants, or plant modifications. Design engineers often work in a consulting role, designing plants to meet clients' needs. Design is limited by several factors, including funding, government regulations, and safety standards. These constraints dictate a plant's choice of process, materials, and equipment.
+
 Plant construction is coordinated by project engineers and project managers, depending on the size of the investment. A chemical engineer may do the job of project engineer full-time or part of the time, which requires additional training and job skills or act as a consultant to the project group. In the USA the education of chemical engineering graduates from the Baccalaureate programs accredited by ABET do not usually stress project engineering education, which can be obtained by specialized training, as electives, or from graduate programs. Project engineering jobs are some of the largest employers for chemical engineers.
 
 ### Process design and analysis
 
 A unit operation is a physical step in an individual chemical engineering process. Unit operations (such as crystallization, filtration, drying and evaporation) are used to prepare reactants, purifying and separating its products, recycling unspent reactants, and controlling energy transfer in reactors. On the other hand, a unit process is the chemical equivalent of a unit operation. Along with unit operations, unit processes constitute a process operation. Unit processes (such as nitration, hydrogenation, and oxidation) involve the conversion of materials by biochemical, thermochemical and other means. Chemical engineers responsible for these are called process engineers.
+
 Process design requires the definition of equipment types and sizes as well as how they are connected and the materials of construction. Details are often printed on a Process Flow Diagram which is used to control the capacity and reliability of a new or existing chemical factory.
+
 Education for chemical engineers in the first college degree 3 or 4 years of study stresses the principles and practices of process design. The same skills are used in existing chemical plants to evaluate the efficiency and make recommendations for improvements.
 
 ### Transport phenomena
