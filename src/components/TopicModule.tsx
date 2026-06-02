@@ -221,7 +221,7 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId }) => {
         <div className="tm-hero-actions">
           <button
             className="tm-bookmark-btn"
-            style={{ marginRight: '12px', background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}
+            style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}
             onClick={() => setIsFocusMode(true)}
           >
             <Maximize size={18} />
@@ -672,6 +672,9 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId }) => {
 
         .tm-hero-actions {
           position: absolute; top: 32px; right: 40px;
+          display: flex;
+          gap: 12px;
+          align-items: center;
         }
 
         .tm-bookmark-btn {
