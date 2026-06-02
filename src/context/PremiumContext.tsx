@@ -93,7 +93,7 @@ export const PremiumProvider: React.FC<{ children: React.ReactNode }> = ({ child
           gap: 12px;
         }
         .premium-toast::before {
-          content: '✨';
+          content: '';
           font-size: 20px;
         }
       `}</style>

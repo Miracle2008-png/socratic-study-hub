@@ -128,7 +128,7 @@ export const AdminDashboard: React.FC = () => {
                     <tr key={idx}>
                       <td className="user-id">...{user.id.substring(user.id.length - 6)}</td>
                       <td>Lvl {user.level || 1}</td>
-                      <td>{user.streak || 0} 🔥</td>
+                      <td>{user.streak || 0}</td>
                       <td>{user.lastActiveDate || 'Unknown'}</td>
                     </tr>
                   ))

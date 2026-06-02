@@ -212,7 +212,7 @@ const SocraticSolver: React.FC = () => {
           setMessages(prev => [...prev, {
             id: `msg-sys-${Date.now()}`,
             sender: 'system',
-            text: '🎉 **Problem Mastered!** You successfully guided the logic from start to finish.',
+            text: '**Problem Mastered!** You successfully guided the logic from start to finish.',
             timestamp: Date.now()
           }]);
         }

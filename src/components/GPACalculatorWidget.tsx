@@ -154,7 +154,7 @@ export const GPACalculatorWidget: React.FC = () => {
           {typeof targetGPA === 'number' && targetGPA > 0 && targetGPA <= 4.0 && (
             <div className="target-analysis">
               {currentGPA >= targetGPA ? (
-                <span className="on-track">You are currently hitting your target! 🚀</span>
+                <span className="on-track">You are currently hitting your target!</span>
               ) : (
                 <span className="needs-work">
                   You need to improve by {(targetGPA - currentGPA).toFixed(2)} points. Focus on raising lower grades!

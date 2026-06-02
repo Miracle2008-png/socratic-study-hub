@@ -8,7 +8,7 @@ const LOGIN_STEPS = [
   { id: 'profile',  label: 'Loading your profile...',       duration: 500 },
   { id: 'progress', label: 'Syncing your study progress...', duration: 700 },
   { id: 'ai',       label: 'Initialising AI systems...',    duration: 500 },
-  { id: 'done',     label: 'Welcome back! 🚀',              duration: 400 },
+  { id: 'done',     label: 'Welcome back!',              duration: 400 },
 ];
 
 const SignInProgress: React.FC<{ email: string }> = ({ email }) => {

@@ -385,7 +385,7 @@ const Grapher2D: React.FC = () => {
           {/* Crosshair info */}
           {crosshair && (
             <div className="grapher-pin">
-              📍 ({crosshair.x.toFixed(4)}, {crosshair.y.toFixed(4)})
+              ({crosshair.x.toFixed(4)}, {crosshair.y.toFixed(4)})
             </div>
           )}
 

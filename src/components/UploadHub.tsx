@@ -249,7 +249,7 @@ const UploadHub: React.FC = () => {
               <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                 <h1>AI Analysis Complete</h1>
                 <span style={{ background: 'var(--color-accent)', color: 'var(--color-base)', padding: '2px 8px', borderRadius: 6, fontSize: 11, fontWeight: 700, letterSpacing: 0.5 }}>
-                  ✨ PREMIUM AI
+                  PREMIUM AI
                 </span>
               </div>
               <p>{fileName ? `Processed: ${fileName}` : 'Your text has been processed into study materials.'}</p>
@@ -292,7 +292,7 @@ const UploadHub: React.FC = () => {
         <div className="results-content luxury-card">
           {activeResultTab === 'summary' && (
             <div className="summary-view">
-              <h3>📄 AI Document Summary</h3>
+              <h3>AI Document Summary</h3>
               <div className="summary-sentences">
                 {results.summary.length > 0 ? results.summary.map((sent, i) => (
                   <div key={i} className="summary-sentence-card">
@@ -559,7 +559,7 @@ const UploadHub: React.FC = () => {
                   background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.25)',
                   color: '#f87171', fontSize: 13, textAlign: 'center', maxWidth: 420
                 }}>
-                  📄 This file format is not supported yet.<br />
+                  This file format is not supported yet.<br />
                   <strong>Paste your text below instead.</strong>
                 </div>
               )}

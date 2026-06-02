@@ -55,7 +55,7 @@ const AiHub: React.FC = () => {
       setError(msg);
       // Fallback: smart local responses
       const lower = userMsg.toLowerCase();
-      let fallback = "I need a Gemini API key to give you a full AI response. Add one in **Settings** (⚙️ top bar). In the meantime, try the **Upload Hub** or **Socratic Solver** for guided learning.";
+      let fallback = "I need a Gemini API key to give you a full AI response. Add one in **Settings** (top bar). In the meantime, try the **Upload Hub** or **Socratic Solver** for guided learning.";
       if (lower.includes('quantum')) {
         fallback = "**Quantum Mechanics** describes nature at the atomic/subatomic scale. Key ideas:\n- Wave-particle duality\n- The Schrödinger equation: $i\\hbar \\frac{\\partial}{\\partial t}|\\psi\\rangle = \\hat{H}|\\psi\\rangle$\n- Heisenberg uncertainty: $\\Delta x \\cdot \\Delta p \\geq \\frac{\\hbar}{2}$\n\nWould you like a practice problem?";
       } else if (lower.includes('calculus') || lower.includes('derivative') || lower.includes('integral')) {
@@ -103,7 +103,7 @@ const AiHub: React.FC = () => {
           <Key size={16} color="var(--color-accent)" />
           <span>
             Add a free <strong style={{ color: 'var(--color-accent)' }}>Google Gemini API key</strong> in
-            Settings (⚙️ top bar) to unlock full AI responses. Until then, smart fallback answers are used.
+            Settings (top bar) to unlock full AI responses. Until then, smart fallback answers are used.
           </span>
         </div>
       )}

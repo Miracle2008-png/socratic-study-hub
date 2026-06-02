@@ -149,7 +149,7 @@ const SpacedRepetition: React.FC = () => {
           return (
             <div className="srs-complete luxury-card">
               <BrainCircuit size={48} style={{ color: '#10b981', marginBottom: 16 }} />
-              <h2>All caught up! 🎉</h2>
+              <h2>All caught up!</h2>
               <p>{deck.length === 0
                 ? 'No cards yet — head to "Add Cards" to create some.'
                 : "You've reviewed all due flashcards. Come back tomorrow!"}</p>

@@ -205,7 +205,7 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
           {
             label: 'Study Streak', value: `${streak}`, sub: streak === 0 ? 'study today to start!' : `day${streak !== 1 ? 's' : ''} in a row`,
             icon: Flame, color: '#f97316', glow: 'rgba(249,115,22,0.2)',
-            trend: streak === 0 ? 'Start today!' : streak === 1 ? 'Day 1 🔥' : `+${streak} days 🔥`
+            trend: streak === 0 ? 'Start today!' : streak === 1 ? 'Day 1' : `+${streak} days`
           },
           {
             label: 'Hours This Week', value: hoursThisWeek < 1 ? `${Math.round(hoursThisWeek * 60)}m` : `${hoursThisWeek.toFixed(1)}h`,
@@ -370,7 +370,7 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
               <span className="weekly-pct">{weeklyGoalPct}% of {studyGoal}h goal</span>
             </div>
             {weeklyGoalPct === 0 && (
-              <p className="weekly-nudge">📚 Study a topic to start tracking your weekly progress!</p>
+              <p className="weekly-nudge">Study a topic to start tracking your weekly progress!</p>
             )}
           </div>
         </div>
