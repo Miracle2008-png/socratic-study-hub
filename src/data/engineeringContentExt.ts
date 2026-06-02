@@ -1,500 +1,386 @@
 export const engineeringContentExt: Record<string, string> = {
-  'Chemical Engineering Thermodynamics': `
-# Chemical Engineering Thermodynamics
-
-Thermodynamics is the branch of physics and engineering that deals with heat, work, and temperature, and their relation to energy, entropy, and the physical properties of matter and radiation. In chemical engineering, it forms the basis for designing separation processes, chemical reactors, and energy systems.
-
-## The First Law of Thermodynamics
-
-The First Law states that energy cannot be created or destroyed, only transformed from one form to another. For a closed system, this is expressed as:
-
-$$ \\Delta U = Q - W $$
-
-Where:
-*   $\\Delta U$ is the change in internal energy
-*   $Q$ is the heat added to the system
-*   $W$ is the work done by the system
-
-### Enthalpy and Open Systems
-
-In chemical engineering, we almost always deal with **open systems** (continuous flow processes). For these, we use Enthalpy ($H$), defined as $H = U + PV$. The steady-state energy balance becomes:
-
-$$ \\Delta H + \\Delta E_k + \\Delta E_p = Q - W_s $$
-
-Where $W_s$ is the shaft work (e.g., work done by a compressor or turbine).
-
-## The Second Law and Entropy
-
-The Second Law introduces **Entropy ($S$)**, a measure of molecular disorder. It states that the total entropy of an isolated system can never decrease over time.
-
-$$ \\Delta S_{univ} = \\Delta S_{sys} + \\Delta S_{surr} \\ge 0 $$
-
-### Gibbs Free Energy
-
-Gibbs Free Energy ($G$) combines enthalpy and entropy to predict the spontaneity of a process at constant temperature and pressure:
-
-$$ G = H - TS $$
-$$ \\Delta G = \\Delta H - T\\Delta S $$
-
-*   If $\\Delta G < 0$, the process is spontaneous.
-*   If $\\Delta G > 0$, the process is non-spontaneous.
-*   If $\\Delta G = 0$, the system is at equilibrium.
-
-## Phase Equilibria (VLE)
-
-Vapor-Liquid Equilibrium (VLE) is crucial for designing distillation columns. It describes the distribution of a chemical species between the vapor and liquid phases.
-
-### Raoult's Law
-
-For ideal mixtures, Raoult's Law relates the partial pressure of a component in the vapor phase to its mole fraction in the liquid phase:
-
-$$ P_i = x_i P_i^{sat} $$
-
-Where:
-*   $P_i$ is the partial pressure of component $i$
-*   $x_i$ is the mole fraction of $i$ in the liquid phase
-*   $P_i^{sat}$ is the vapor pressure of pure component $i$ at the system temperature
-
-### Non-Ideal Systems and Fugacity
-
-For real (non-ideal) mixtures, we introduce **fugacity** ($f$) and the **activity coefficient** ($\\gamma$) to correct for deviations from ideality:
-
-$$ y_i P = x_i \\gamma_i P_i^{sat} $$
-
-This extended form is the foundation of complex thermodynamic models like UNIQUAC and NRTL used in modern simulation software (e.g., Aspen Plus).
-`,
   'Fluid Mechanics': `
-# Fluid Mechanics
+# Fluid Mechanics: A Comprehensive Textbook Guide
 
-Fluid mechanics is the study of fluids (liquids, gases, and plasmas) and the forces on them. It is divided into fluid statics (fluids at rest) and fluid dynamics (fluids in motion).
+Fluid mechanics is a fundamental discipline in engineering that studies the behavior of fluids (liquids, gases, and plasmas) at rest and in motion. It forms the basis for aerodynamics, hydrodynamics, meteorology, and chemical engineering.
 
-## Fluid Properties
+## 1. Introduction to Fluid Properties
 
-Understanding fluid behavior begins with its fundamental properties:
+Before analyzing fluid behavior, we must understand the fundamental physical properties that characterize fluids. Unlike solids, which resist shear stress by static deformation, fluids continuously deform under applied shear stress.
 
-*   **Density ($\\rho$)**: Mass per unit volume ($kg/m^3$).
-*   **Viscosity ($\\mu$)**: A measure of a fluid's resistance to gradual deformation by shear stress or tensile stress.
-*   **Kinematic Viscosity ($\\nu$)**: The ratio of absolute viscosity to density ($\\nu = \\mu / \\rho$).
+### Density and Specific Gravity
+Density ($\\rho$) is the mass per unit volume. For liquids, density is generally considered constant (incompressible), while for gases, it depends strongly on pressure and temperature (compressible).
+*   **Water (at $4^{\\circ}C$):** $1000 \\text{ kg/m}^3$
+*   **Air (at standard conditions):** $1.225 \\text{ kg/m}^3$
 
-### Newtonian vs. Non-Newtonian Fluids
+Specific gravity ($SG$) is the ratio of a fluid's density to the density of a reference fluid (usually water for liquids and air for gases).
+$$ SG = \\frac{\\rho}{\\rho_{\\text{water}}} $$
 
-*   **Newtonian Fluids**: Viscosity is constant regardless of the applied shear rate (e.g., water, air).
-*   **Non-Newtonian Fluids**: Viscosity changes with the shear rate (e.g., ketchup, blood, polymer melts).
+### Viscosity: The Resistance to Flow
+Viscosity ($\\mu$) is the internal friction of a fluid, representing its resistance to gradual deformation by shear stress. It is the reason honey pours slower than water.
+Newton's Law of Viscosity relates shear stress ($\\tau$) to the velocity gradient ($\\frac{du}{dy}$):
+$$ \\tau = \\mu \\frac{du}{dy} $$
+Where $\\mu$ is the dynamic (absolute) viscosity.
+Kinematic viscosity ($\\nu$) normalizes dynamic viscosity by density:
+$$ \\nu = \\frac{\\mu}{\\rho} $$
 
-## The Continuity Equation
+### Surface Tension and Capillarity
+Surface tension ($\\sigma$) arises due to unbalanced cohesive forces at a liquid interface. It is responsible for the spherical shape of droplets.
+Capillarity is the rise or fall of a liquid in a narrow tube, given by:
+$$ h = \\frac{2 \\sigma \\cos \\theta}{\\rho g R} $$
+Where $h$ is the capillary height, $\\theta$ is the contact angle, and $R$ is the tube radius.
 
-The continuity equation is a mathematical expression of the principle of conservation of mass. For an incompressible fluid flowing through a pipe:
+## 2. Fluid Statics: Fluids at Rest
 
-$$ A_1 v_1 = A_2 v_2 $$
+Fluid statics deals with fluids in which there is no relative motion between fluid particles. Thus, no shear stresses exist, and all forces are normal to the surfaces (pressure).
 
-Where $A$ is the cross-sectional area and $v$ is the fluid velocity.
+### Pressure in a Static Fluid
+Pressure at a point in a static fluid is equal in all directions (Pascal's Law). The fundamental equation of fluid statics for an incompressible fluid in a gravity field is:
+$$ \\frac{dP}{dz} = -\\rho g $$
+Integrating this yields the hydrostatic pressure equation:
+$$ P = P_0 + \\rho g h $$
+Where $P_0$ is the pressure at the free surface, and $h$ is the depth below the surface.
 
-## Bernoulli's Equation
+### Manometry
+Manometers use columns of static fluids to measure pressure differences. The pressure change across any column of fluid is $\\Delta P = \\rho g \\Delta h$. By traversing a manometer from one end to the other and adding/subtracting $\\rho g h$ terms based on elevation changes, unknown pressures can be calculated.
 
-Bernoulli's principle states that an increase in the speed of a fluid occurs simultaneously with a decrease in pressure or a decrease in the fluid's potential energy.
+### Hydrostatic Forces on Plane Surfaces
+The total force $F$ exerted by a static fluid on a submerged plane surface is:
+$$ F = \\rho g h_c A = P_c A $$
+Where $h_c$ is the depth to the centroid of the area $A$, and $P_c$ is the pressure at the centroid.
+The center of pressure (the point where the resultant force acts) is always located *below* the centroid due to increasing pressure with depth. Its location $y_{cp}$ is found using the moment of inertia:
+$$ y_{cp} = y_c + \\frac{I_{xc}}{y_c A} $$
 
-$$ P + \\frac{1}{2}\\rho v^2 + \\rho g h = \\text{constant} $$
+### Buoyancy and Archimedes' Principle
+Archimedes' Principle states that the buoyant force ($F_B$) on a submerged or floating body is equal to the weight of the fluid displaced by the body:
+$$ F_B = \\rho_{\\text{fluid}} g V_{\\text{displaced}} $$
+For a floating body, the buoyant force equals the total weight of the body.
 
-### Application: The Venturi Meter
+## 3. Kinematics of Fluid Motion
 
-The Venturi effect is the reduction in fluid pressure that results when a fluid flows through a constricted section of a pipe. By measuring the pressure drop, we can calculate the flow rate using Bernoulli's equation.
+Kinematics deals with the spatial and temporal description of fluid motion without considering the forces causing the motion.
 
-## Friction and Pressure Drop
+### Eulerian vs. Lagrangian Descriptions
+*   **Lagrangian:** Follows individual fluid particles as they move through space and time. (Like tracking a specific car in traffic).
+*   **Eulerian:** Focuses on a fixed point or volume in space and observes the fluid passing through it. (Like standing at an intersection and watching cars go by). The Eulerian approach is universally preferred in fluid mechanics.
 
-Real fluids experience friction against pipe walls, resulting in a pressure drop. This is calculated using the **Darcy-Weisbach equation**:
+### Streamlines, Pathlines, and Streaklines
+*   **Streamline:** A curve that is everywhere tangent to the instantaneous velocity vector. Fluid cannot cross a streamline.
+*   **Pathline:** The actual trajectory traced by a single fluid particle over time.
+*   **Streakline:** The locus of all particles that have previously passed through a prescribed spatial point.
+In steady flow, streamlines, pathlines, and streaklines are identical.
 
-$$ \\Delta P = f_D \\frac{L}{D} \\frac{\\rho v^2}{2} $$
+### Acceleration in an Eulerian Field
+The total (material) derivative describes the rate of change of a property following a fluid particle, expressed in an Eulerian field. For velocity $\\vec{V}$:
+$$ \\frac{D\\vec{V}}{Dt} = \\frac{\\partial \\vec{V}}{\\partial t} + (\\vec{V} \\cdot \\nabla)\\vec{V} $$
+This consists of the **local acceleration** ($\\frac{\\partial \\vec{V}}{\\partial t}$) and the **convective acceleration** ($(\\vec{V} \\cdot \\nabla)\\vec{V}$), which occurs due to the particle moving into a region of different velocity.
 
-Where $f_D$ is the Darcy friction factor, which depends on the **Reynolds Number ($Re$)**.
+## 4. Conservation of Mass: The Continuity Equation
 
-### The Reynolds Number
+The principle of conservation of mass states that mass cannot be created or destroyed within a control volume.
 
-The Reynolds number predicts flow patterns in different fluid flow situations:
+### Differential Form
+Using the Eulerian approach and the divergence theorem, the general continuity equation is:
+$$ \\frac{\\partial \\rho}{\\partial t} + \\nabla \\cdot (\\rho \\vec{V}) = 0 $$
+For an **incompressible fluid** ($\\rho = \\text{constant}$), this simplifies drastically to:
+$$ \\nabla \\cdot \\vec{V} = 0 \\implies \\frac{\\partial u}{\\partial x} + \\frac{\\partial v}{\\partial y} + \\frac{\\partial w}{\\partial z} = 0 $$
 
-$$ Re = \\frac{\\rho v D}{\\mu} $$
+### Integral Form (Control Volume)
+For practical engineering systems (pipes, nozzles), we use the integral form. For steady, 1D flow across a control volume:
+$$ \\sum \\dot{m}_{in} = \\sum \\dot{m}_{out} $$
+Where mass flow rate $\\dot{m} = \\rho A V$.
+For an incompressible fluid, volumetric flow rate ($Q$) is conserved:
+$$ Q_{in} = Q_{out} \\implies A_1 V_1 = A_2 V_2 $$
+This explains why water accelerates when flowing from a wide pipe into a narrow nozzle.
 
-*   **$Re < 2100$**: Laminar flow (smooth, orderly).
-*   **$2100 < Re < 4000$**: Transitional flow.
-*   **$Re > 4000$**: Turbulent flow (chaotic, mixing).
+## 5. Conservation of Momentum: Bernoulli and Navier-Stokes
+
+Newton's Second Law applied to fluid flow yields the equations of momentum conservation.
+
+### The Bernoulli Equation
+For steady, incompressible, frictionless (inviscid) flow along a streamline, the mechanical energy is conserved. Integrating Euler's equation yields Bernoulli's equation:
+$$ P + \\frac{1}{2}\\rho V^2 + \\rho g z = \\text{constant} $$
+This equation shows the trade-off between pressure energy ($P$), kinetic energy ($\\frac{1}{2}\\rho V^2$), and potential energy ($\\rho g z$).
+**Restrictions:**
+1.  Incompressible flow (Mach number < 0.3)
+2.  Inviscid flow (no friction/viscous effects)
+3.  Steady flow
+4.  Applicable only along a streamline (unless the flow is irrotational)
+
+### The Navier-Stokes Equations
+When viscosity (friction) cannot be ignored, we must use the Navier-Stokes equations, the foundational equations of fluid dynamics. For an incompressible, Newtonian fluid in vector form:
+$$ \\rho \\left( \\frac{\\partial \\vec{V}}{\\partial t} + (\\vec{V} \\cdot \\nabla)\\vec{V} \\right) = -\\nabla P + \\rho \\vec{g} + \\mu \\nabla^2 \\vec{V} $$
+This is essentially $ma = \\sum F$, where the forces are pressure gradients, gravity, and viscous shear. Due to the nonlinear convective term, there is no general analytical solution to the Navier-Stokes equations.
+
+## 6. Internal Flow and Pipe Friction
+
+Flow enclosed by solid boundaries (pipes, ducts) is highly sensitive to viscous forces, making the Bernoulli equation insufficient without modification.
+
+### Laminar vs. Turbulent Flow
+The flow regime is predicted by the **Reynolds Number ($Re$)**:
+$$ Re = \\frac{\\rho V D}{\\mu} = \\frac{\\text{Inertial Forces}}{\\text{Viscous Forces}} $$
+*   **Laminar ($Re < 2300$):** Fluid particles move in parallel layers. Viscous forces dominate.
+*   **Transitional ($2300 < Re < 4000$):** Flow fluctuates between laminar and turbulent.
+*   **Turbulent ($Re > 4000$):** Highly chaotic motion, rapid mixing, and eddies. Inertial forces dominate.
+
+### Laminar Flow in Pipes (Hagen-Poiseuille Flow)
+For fully developed laminar flow in a circular pipe, the velocity profile is parabolic:
+$$ u(r) = 2 V_{avg} \\left( 1 - \\frac{r^2}{R^2} \\right) $$
+The pressure drop is directly proportional to velocity:
+$$ \\Delta P = \\frac{8 \\mu L V_{avg}}{R^2} = \\frac{32 \\mu L V_{avg}}{D^2} $$
+
+### Turbulent Flow and the Darcy-Weisbach Equation
+In turbulent flow, the velocity profile is much flatter ("plug-like") due to intense mixing. The pressure drop is calculated using the Darcy-Weisbach equation:
+$$ h_f = f \\frac{L}{D} \\frac{V^2}{2g} \\implies \\Delta P = f \\frac{L}{D} \\frac{\\rho V^2}{2} $$
+Where $h_f$ is the head loss and $f$ is the Darcy friction factor.
+
+### The Moody Chart and Colebrook Equation
+For laminar flow, $f = 64/Re$. For turbulent flow, $f$ depends on both $Re$ and the relative pipe roughness ($\\epsilon / D$).
+The Colebrook-White equation implicitly relates these parameters:
+$$ \\frac{1}{\\sqrt{f}} = -2.0 \\log_{10} \\left( \\frac{\\epsilon/D}{3.7} + \\frac{2.51}{Re \\sqrt{f}} \\right) $$
+Engineers graphically solve this using the **Moody Chart**, which plots $f$ versus $Re$ for various roughness values.
+
+### Minor Losses
+In addition to major friction losses in straight pipes, components like valves, bends, and fittings introduce "minor" losses due to flow separation and secondary flows:
+$$ h_L = K_L \\frac{V^2}{2g} $$
+Where $K_L$ is the loss coefficient specific to the fitting.
+
+## 7. External Flow, Boundary Layers, and Aerodynamics
+
+When fluid flows over a solid body (air over a wing, water past a submarine), viscous effects are confined to a thin region near the surface.
+
+### Boundary Layer Theory
+Introduced by Ludwig Prandtl in 1904, a boundary layer is the thin region near a solid surface where the fluid velocity goes from zero (no-slip condition) to the free-stream velocity ($U_\\infty$).
+The thickness of the boundary layer ($\\delta$) grows with distance $x$ from the leading edge. For a flat plate in laminar flow (Blasius solution):
+$$ \\delta \\approx \\frac{5.0 x}{\\sqrt{Re_x}} $$
+Inside the boundary layer, viscous forces are significant. Outside, the flow behaves inviscidly (frictionless).
+
+### Flow Separation
+If the fluid flows into an adverse pressure gradient (pressure increasing in the direction of flow, such as at the rear of a sphere or airfoil), the fluid slows down. If the momentum near the wall becomes insufficient to overcome the pressure gradient, the flow separates from the surface.
+Flow separation creates a wide wake of low-pressure, chaotic eddies behind the object, drastically increasing **form drag**.
+
+### Drag and Lift
+The total force exerted by a fluid on an object is decomposed into:
+1.  **Drag ($F_D$):** The force component parallel to the flow direction.
+2.  **Lift ($F_L$):** The force component perpendicular to the flow direction.
+These are calculated using dimensionless coefficients:
+$$ F_D = C_D \\frac{1}{2} \\rho V^2 A $$
+$$ F_L = C_L \\frac{1}{2} \\rho V^2 A $$
+Drag has two components: **Friction drag** (due to shear stress in the boundary layer) and **Pressure/Form drag** (due to flow separation and wakes). Streamlining an object (like an airplane wing) delays separation, minimizing pressure drag.
+
+## 8. Compressible Flow and Gas Dynamics
+
+When a fluid (usually a gas) moves at high speeds, changes in density become significant, and thermodynamics must be coupled with fluid mechanics.
+
+### The Speed of Sound and Mach Number
+The speed of sound ($c$) is the speed at which an infinitely small pressure wave travels through a medium. For an ideal gas:
+$$ c = \\sqrt{k R T} $$
+Where $k$ is the specific heat ratio ($C_p/C_v$), $R$ is the specific gas constant, and $T$ is absolute temperature.
+The Mach number ($M$) characterizes compressibility:
+$$ M = \\frac{V}{c} $$
+*   **Subsonic ($M < 1$):** Density changes are small.
+*   **Sonic ($M = 1$):** Choked flow condition.
+*   **Supersonic ($M > 1$):** Highly compressible; shock waves form.
+
+### Isentropic Nozzle Flow
+In a converging-diverging nozzle (de Laval nozzle), the behavior depends on the Mach number.
+*   In the subsonic converging section, decreasing area accelerates the flow.
+*   At the throat (minimum area), the flow reaches $M = 1$ (choked).
+*   In the supersonic diverging section, increasing area *accelerates* the flow further (contrary to subsonic intuition).
+
+### Shock Waves
+A shock wave is an extremely thin discontinuity where flow decelerates from supersonic to subsonic abruptly. Across a shock wave, pressure, temperature, and density jump to much higher values, while kinetic energy drops and entropy increases significantly.
 `,
-  'Heat and Mass Transfer': `
-# Heat and Mass Transfer
+  'Chemical Engineering Thermodynamics': `
+# Chemical Engineering Thermodynamics: Deep Dive
 
-Heat and mass transfer are transport phenomena that describe the exchange of thermal energy and chemical species, respectively. They are governed by analogous mathematical principles.
+Thermodynamics provides the absolute physical limits on any chemical process. It governs reaction feasibility, maximum work extraction, and the theoretical limits of separation processes.
 
-## Heat Transfer Mechanisms
+## 1. Thermodynamic Properties and Equations of State
 
-There are three fundamental modes of heat transfer:
+To design processes, engineers must accurately predict the pressure ($P$), volume ($V$), and temperature ($T$) behavior of pure fluids and mixtures.
 
-### 1. Conduction
-Heat transfer through a stationary medium (solid or fluid) due to a temperature gradient. Governed by **Fourier's Law**:
+### The Ideal Gas Law
+The simplest Equation of State (EOS) assumes molecules have zero volume and exert no intermolecular forces.
+$$ PV = nRT $$
+While useful at low pressures and high temperatures, it fails completely for liquids and dense gases.
 
-$$ q = -k A \\frac{dT}{dx} $$
+### Cubic Equations of State
+To model real gases and liquids, cubic equations of state (which mathematically relate $P$, $V$, and $T$ via a cubic polynomial in volume) are used. 
 
-Where $q$ is the heat transfer rate, $k$ is thermal conductivity, and $A$ is the cross-sectional area.
+**The Van der Waals Equation:**
+The earliest cubic EOS, adding parameters for intermolecular attraction ($a$) and excluded molecular volume ($b$):
+$$ P = \\frac{RT}{v - b} - \\frac{a}{v^2} $$
 
-### 2. Convection
-Heat transfer between a surface and a moving fluid. Governed by **Newton's Law of Cooling**:
+**Modern Cubic EOS (Peng-Robinson):**
+The Peng-Robinson (PR) EOS is heavily utilized in the petrochemical industry because it accurately predicts vapor-liquid equilibria (VLE) and liquid densities for hydrocarbons:
+$$ P = \\frac{RT}{v - b} - \\frac{a(T)}{v(v + b) + b(v - b)} $$
+Where $a(T)$ is a temperature-dependent attraction parameter.
 
-$$ q = h A (T_s - T_\\infty) $$
+### Thermodynamic Property Relations
+Enthalpy ($H$) and Entropy ($S$) cannot be measured directly; they must be derived from measurable properties ($P, V, T, C_p$). The fundamental property relations are:
+$$ dU = T dS - P dV $$
+$$ dH = T dS + V dP $$
+Using Maxwell relations, changes in $H$ and $S$ can be calculated from PVT data (Equations of State) and heat capacities ($C_p$).
 
-Where $h$ is the convective heat transfer coefficient.
+## 2. Phase Equilibria and Fugacity
 
-### 3. Radiation
-Heat transfer via electromagnetic waves (does not require a medium). Governed by the **Stefan-Boltzmann Law**:
+Separation processes like distillation rely on chemical species distributing themselves unevenly between a liquid and a vapor phase.
 
-$$ q = \\epsilon \\sigma A (T_s^4 - T_{surr}^4) $$
+### The Criterion for Equilibrium
+For a multicomponent, multiphase system at constant $T$ and $P$, thermodynamic equilibrium is achieved when the total Gibbs Free Energy ($G$) is minimized. This implies that the **chemical potential ($\\mu_i$)** of each component must be equal across all phases:
+$$ \\mu_i^L = \\mu_i^V $$
 
-Where $\\epsilon$ is emissivity and $\\sigma$ is the Stefan-Boltzmann constant.
+### Fugacity
+Chemical potential goes to negative infinity as pressure goes to zero, making it mathematically awkward. Lewis introduced **fugacity ($f$)**, a corrected pressure that acts as the thermodynamic "driving force" for mass transfer.
+At equilibrium, the fugacity of component $i$ is equal in all phases:
+$$ \\hat{f}_i^L = \\hat{f}_i^V $$
 
-## Heat Exchangers
+### Vapor-Liquid Equilibrium (VLE) Formulations
 
-Heat exchangers are devices designed to efficiently transfer heat from one medium to another. The overall heat transfer is governed by:
+**1. The Phi-Phi ($\\Phi-\\Phi$) Approach:**
+Used mostly for high-pressure gas mixtures and light hydrocarbons. Both phases are modeled using an Equation of State to find the fugacity coefficient ($\\hat{\\Phi}_i$):
+$$ y_i \\hat{\\Phi}_i^V P = x_i \\hat{\\Phi}_i^L P $$
 
-$$ Q = U A \\Delta T_{lm} $$
+**2. The Gamma-Phi ($\\gamma-\\Phi$) Approach:**
+Used for low-to-moderate pressures and highly non-ideal liquid mixtures (e.g., ethanol/water). The vapor is modeled with an EOS (usually ideal, $\\hat{\\Phi}_i^V = 1$), and the liquid is modeled using an **Activity Coefficient ($\\gamma_i$)** model:
+$$ y_i P = x_i \\gamma_i P_i^{sat} $$
+(This is the extended Raoult's Law).
 
-Where $U$ is the overall heat transfer coefficient and $\\Delta T_{lm}$ is the Log Mean Temperature Difference (LMTD).
+## 3. Activity Coefficient Models
 
-## Mass Transfer
+When liquid molecules have strong intermolecular interactions (e.g., hydrogen bonding), the liquid solution behaves non-ideally. Activity coefficient models calculate $\\gamma_i$ to capture this deviation.
 
-Mass transfer is the net movement of mass from one location to another, usually driven by a concentration gradient.
+### Margules and van Laar Equations
+Early empirical models that relate the excess Gibbs energy ($G^E$) to mole fractions using curve-fit parameters ($A_{12}, A_{21}$).
+$$ \\ln \\gamma_1 = x_2^2 \\left[ A_{12} + 2(A_{21} - A_{12})x_1 \\right] $$
 
-### Fick's First Law of Diffusion
+### Local Composition Models (Wilson, NRTL, UNIQUAC)
+These modern, semi-empirical models recognize that the local concentration around a molecule is different from the bulk concentration due to energetic preferences.
+*   **Wilson Equation:** Excellent for highly non-ideal systems, but mathematically incapable of predicting liquid-liquid separation (immiscibility).
+*   **NRTL (Non-Random Two-Liquid):** Can predict both VLE and LLE (Liquid-Liquid Equilibrium). Very widely used.
+*   **UNIQUAC:** Uses specific molecular surface areas and volumes to build the model, allowing it to work across diverse chemical families.
 
-Fick's law relates the diffusive flux to the concentration gradient. It is the mass transfer analog to Fourier's law of heat conduction:
+### UNIFAC (Group Contribution Method)
+If experimental VLE data is unavailable, UNIFAC allows engineers to *predict* activity coefficients by breaking molecules down into functional groups (e.g., $CH_3$, $OH$, $COOH$) and summing the interaction energies between these functional groups.
 
-$$ J_A = -D_{AB} \\frac{dC_A}{dx} $$
+## 4. Chemical Reaction Equilibria
 
-Where:
-*   $J_A$ is the diffusion flux of species A
-*   $D_{AB}$ is the diffusion coefficient (diffusivity) of A in B
-*   $C_A$ is the concentration of A
+Thermodynamics dictates the maximum possible conversion a chemical reactor can achieve before the reverse reaction perfectly balances the forward reaction.
 
-### Convective Mass Transfer
+### The Equilibrium Constant ($K$)
+For a gas-phase reaction $aA + bB \\rightleftharpoons cC + dD$, the equilibrium constant is determined entirely by the standard Gibbs free energy of reaction ($\\Delta G^{\\circ}_{rxn}$):
+$$ \\Delta G^{\\circ}_{rxn} = -RT \\ln K $$
+Where $\\Delta G^{\\circ}_{rxn} = \\sum (\\nu_i G^{\\circ}_{f,i})$.
 
-Similar to convective heat transfer, convective mass transfer is described by:
+### Reaction Coordinate and Equilibrium Composition
+The equilibrium constant is related to the fugacities of the reacting species:
+$$ K = \\prod \\left( \\frac{\\hat{f}_i}{f_i^{\\circ}} \\right)^{\\nu_i} $$
+For an ideal gas mixture, this simplifies to the ratio of partial pressures:
+$$ K = \\frac{P_C^c P_D^d}{P_A^a P_B^b} \\times P^{(\\sum \\nu_i)} = \\frac{y_C^c y_D^d}{y_A^a y_B^b} P^{\\Delta \\nu} $$
+By setting up a mass balance using an extent of reaction variable ($\\epsilon$), engineers can solve for the equilibrium mole fractions ($y_i$) at any given pressure and temperature.
 
-$$ N_A = k_c A (C_{A,s} - C_{A,\\infty}) $$
-
-Where $k_c$ is the mass transfer coefficient.
-`,
-  'Separation Processes': `
-# Separation Processes
-
-Separation processes transform a mixture of substances into two or more distinct products. They account for 40-70% of capital and operating costs in chemical plants.
-
-## Distillation
-
-Distillation is the most common separation technique, relying on differences in volatility (boiling points) of the components.
-
-### Relative Volatility ($\\alpha$)
-
-The ease of separation is determined by the relative volatility:
-
-$$ \\alpha_{ij} = \\frac{y_i / x_i}{y_j / x_j} = \\frac{K_i}{K_j} $$
-
-Where $K$ is the vapor-liquid equilibrium ratio. If $\\alpha = 1$, separation by distillation is impossible.
-
-### McCabe-Thiele Method
-
-The McCabe-Thiele method is a graphical technique for determining the number of theoretical stages (trays) required in a distillation column. It involves drawing:
-1.  **Equilibrium Curve**: The VLE relationship.
-2.  **Operating Lines**: Mass balances for the enriching (top) and stripping (bottom) sections.
-3.  **q-line (Feed Line)**: Represents the thermal condition of the feed.
-
-The stages are "stepped off" between the operating lines and the equilibrium curve.
-
-## Absorption and Stripping
-
-*   **Absorption**: A gas mixture is contacted with a liquid solvent to selectively dissolve one or more components. (e.g., removing $CO_2$ from flue gas).
-*   **Stripping**: The reverse of absorption; a dissolved gas is removed from a liquid by contacting it with a stripping gas.
-
-## Liquid-Liquid Extraction
-
-Also known as solvent extraction, this involves separating compounds based on their relative solubilities in two different immiscible liquids (usually water and an organic solvent).
-
-It is used when distillation is impractical (e.g., heat-sensitive materials, very close boiling points).
-
-## Advanced Separations
-
-*   **Membrane Separation**: Uses a semi-permeable barrier to separate species based on size or affinity (e.g., Reverse Osmosis for desalination).
-*   **Chromatography**: Separates components based on their distribution between a stationary phase and a mobile phase (widely used in biopharma).
-*   **Adsorption**: Molecules from a gas or liquid attach to the surface of a solid adsorbent (e.g., activated carbon).
-`,
-  'Chemical Reaction Engineering': `
-# Chemical Reaction Engineering
-
-Chemical reaction engineering (CRE) deals with the design and operation of chemical reactors. It integrates reaction kinetics with mass and energy balances.
-
-## Reaction Kinetics
-
-Kinetics studies the rate at which a chemical reaction occurs. For a generic reaction $aA + bB \\rightarrow cC$:
-
-### Rate Law
-
-The rate law expresses the reaction rate ($-r_A$) as a function of concentrations and temperature:
-
-$$ -r_A = k C_A^m C_B^n $$
-
-Where $k$ is the specific reaction rate constant, and $m$ and $n$ are the reaction orders.
-
-### The Arrhenius Equation
-
-The temperature dependence of the rate constant is given by the Arrhenius equation:
-
-$$ k(T) = A e^{-E_a / RT} $$
-
-Where $A$ is the pre-exponential factor, $E_a$ is the activation energy, and $R$ is the universal gas constant.
-
-## Ideal Reactor Types
-
-There are three primary idealized reactor models used in engineering:
-
-### 1. Batch Reactor (BR)
-
-A closed system where reactants are added, the reaction occurs over time, and products are discharged. There is no continuous inflow or outflow.
-
-**Design Equation:**
-$$ t = N_{A0} \\int_{0}^{X} \\frac{dX}{-r_A V} $$
-
-### 2. Continuous Stirred-Tank Reactor (CSTR)
-
-An open system where reactants continuously flow in and products flow out. The contents are perfectly mixed, so the temperature and concentration are uniform throughout the vessel and identical to the exit stream.
-
-**Design Equation:**
-$$ V = \\frac{F_{A0} X}{-r_A} $$
-
-### 3. Plug Flow Reactor (PFR)
-
-A tubular reactor where reactants flow continuously. It assumes no axial mixing (no mixing along the flow path) but perfect radial mixing. The reaction rate changes as the fluid moves down the tube.
-
-**Design Equation:**
-$$ V = F_{A0} \\int_{0}^{X} \\frac{dX}{-r_A} $$
-
-Where $X$ is the fractional conversion of reactant A, and $F_{A0}$ is the molar flow rate of A.
+### Temperature Dependence (Van 't Hoff Equation)
+The equilibrium constant shifts with temperature depending on the standard enthalpy of reaction ($\\Delta H^{\\circ}_{rxn}$):
+$$ \\frac{d \\ln K}{dT} = \\frac{\\Delta H^{\\circ}_{rxn}}{RT^2} $$
+*   **Exothermic reactions ($\\Delta H < 0$):** $K$ decreases as temperature rises. Yield drops at high $T$.
+*   **Endothermic reactions ($\\Delta H > 0$):** $K$ increases as temperature rises. Yield improves at high $T$.
+This demonstrates Le Chatelier's Principle thermodynamically.
 `,
   'Process Dynamics and Control': `
-# Process Dynamics and Control
+# Process Dynamics and Control: Advanced Engineering
 
-Process control is the active manipulation of process variables to maintain a chemical process at its desired operating conditions safely and efficiently.
+Process control is the architecture of automation in chemical plants, oil refineries, and manufacturing facilities. It ensures processes run safely, profitably, and consistently despite external disturbances.
 
-## Core Concepts
+## 1. Dynamic Process Modeling
 
-*   **Controlled Variable (CV)**: The variable we want to keep at a specific target (e.g., reactor temperature).
-*   **Manipulated Variable (MV)**: The variable we adjust to keep the CV on target (e.g., cooling water flow rate).
-*   **Disturbance (DV)**: An external factor that pushes the CV away from its target (e.g., a drop in ambient temperature).
-*   **Setpoint (SP)**: The desired target value for the CV.
+Before a process can be controlled, its transient (time-dependent) behavior must be mathematically modeled. This is done using unsteady-state mass and energy balances, resulting in ordinary differential equations (ODEs).
 
-## Feedback Control Loop
+### First-Order Systems
+A first-order system is characterized by a single time constant ($\\tau$) and a process gain ($K_p$). A classic example is a stirred tank heater. The transfer function in the Laplace domain is:
+$$ G(s) = \\frac{Y(s)}{U(s)} = \\frac{K_p}{\\tau s + 1} $$
+*   **$K_p$ (Gain):** How much the output ($Y$) eventually changes for a given change in input ($U$).
+*   **$\\tau$ (Time Constant):** How fast the system responds. It is the time required to reach 63.2% of the final steady-state change.
 
-The most common control strategy is feedback control. The system continuously:
-1.  **Measures** the CV using a sensor.
-2.  **Compares** it to the SP to calculate the **Error** ($e(t) = SP - CV$).
-3.  **Computes** a corrective action using a controller.
-4.  **Adjusts** the MV using a final control element (e.g., a valve).
+### Second-Order Systems
+Systems with two capacities in series (e.g., two interacting tanks) exhibit second-order dynamics. They can be overdamped (sluggish), critically damped, or underdamped (oscillatory).
+$$ G(s) = \\frac{K_p}{\\tau^2 s^2 + 2\\zeta\\tau s + 1} $$
+Where $\\zeta$ is the damping ratio. If $\\zeta < 1$, the system will oscillate before settling.
 
-## PID Control
+### Dead Time (Time Delay)
+Real processes often feature transportation lag (e.g., fluid flowing through a long pipe before reaching a sensor). This is called dead time ($\\theta_{dp}$). It is the enemy of control, as the controller is reacting to past data.
+$$ G(s) = e^{-\\theta_{dp} s} $$
 
-The Proportional-Integral-Derivative (PID) controller is the workhorse of the process industry. The controller output $u(t)$ is calculated as:
+## 2. Feedback Control Architecture
 
-$$ u(t) = u_{bias} + K_c \\left[ e(t) + \\frac{1}{\\tau_I} \\int_{0}^{t} e(t) dt + \\tau_D \\frac{de(t)}{dt} \\right] $$
+Feedback control is the standard paradigm. It measures the variable of interest, compares it to the target, and makes a correction.
 
-### The Three Terms:
+### The Control Loop Components
+1.  **Sensor/Transmitter ($G_m$):** Measures the Controlled Variable (CV) and converts it to a signal (e.g., 4-20 mA).
+2.  **Controller ($G_c$):** Receives the error ($e = SP - CV$) and computes a corrective signal.
+3.  **Final Control Element ($G_v$):** Usually a pneumatic control valve. Adjusts the Manipulated Variable (MV).
+4.  **Process ($G_p$):** The physical system responding to the valve change.
 
-1.  **Proportional ($K_c$)**: Reacts to the *current* error. A larger error results in a larger corrective action.
-2.  **Integral ($\\tau_I$)**: Reacts to the *accumulation* of past errors. It eliminates steady-state offset, ensuring the CV eventually reaches the exact SP.
-3.  **Derivative ($\\tau_D$)**: Reacts to the *rate of change* of the error. It anticipates future errors and provides a dampening effect, reducing overshoot.
+### Closed-Loop Transfer Function
+The behavior of the entire closed-loop system in response to a Setpoint ($Y_{sp}$) change is:
+$$ \\frac{Y(s)}{Y_{sp}(s)} = \\frac{G_c G_v G_p G_m}{1 + G_c G_v G_p G_m} $$
+The denominator, $1 + G_{OL}$ (where $G_{OL}$ is the open-loop transfer function), is the characteristic equation. Its roots dictate the stability of the entire plant.
 
-## Advanced Control Strategies
+## 3. The PID Controller
 
-*   **Feedforward Control**: Measures a disturbance *before* it affects the process and takes preemptive corrective action. Often combined with feedback control.
-*   **Cascade Control**: Uses two controllers; the output of the primary controller acts as the setpoint for a secondary controller, providing faster rejection of disturbances.
-*   **Model Predictive Control (MPC)**: Uses a mathematical model of the process to predict future behavior and optimize the control moves over a specific time horizon. Very common in oil refineries.
-`,
-  'Materials Science and Engineering': `
-# Materials Science and Engineering
+The Proportional-Integral-Derivative (PID) controller algorithm is ubiquitous in industry.
 
-Materials science deals with the discovery and design of new materials, with an emphasis on the solid paradigm: metals, ceramics, polymers, and composites.
+### Proportional Action (P)
+Produces an output strictly proportional to the current error.
+$$ u(t) = \\bar{u} + K_c e(t) $$
+*   **Advantage:** Fast response.
+*   **Disadvantage:** Always leaves a steady-state error (offset). It cannot reach the exact setpoint because an error must exist to generate a corrective output.
 
-## Crystal Structures
+### Integral Action (I)
+Produces an output proportional to the integral (accumulation) of the error over time.
+$$ u(t) = \\bar{u} + \\frac{K_c}{\\tau_I} \\int_0^t e(t) dt $$
+*   **Advantage:** Eliminates steady-state offset. The controller will keep moving the valve until the error is exactly zero.
+*   **Disadvantage:** Causes sluggishness and can induce oscillations (instability) if $\\tau_I$ is too small (integral action too strong).
 
-Metals and many ceramics possess crystalline structures where atoms are arranged in a repeating 3D lattice.
+### Derivative Action (D)
+Produces an output proportional to the rate of change of the error.
+$$ u(t) = \\bar{u} + K_c \\tau_D \\frac{de(t)}{dt} $$
+*   **Advantage:** Provides "anticipatory" control. If the error is rapidly increasing, D-action hits the brakes to prevent massive overshoot.
+*   **Disadvantage:** Extremely sensitive to sensor noise. Rarely used in flow or pressure control; mostly used in slow temperature control.
 
-### Common Unit Cells
-*   **Simple Cubic (SC):** Atoms at the 8 corners of a cube. Atomic Packing Factor (APF) = 0.52.
-*   **Body-Centered Cubic (BCC):** Atoms at the 8 corners and 1 at the center (e.g., Iron at room temp, Tungsten). APF = 0.68.
-*   **Face-Centered Cubic (FCC):** Atoms at the 8 corners and 1 at the center of each of the 6 faces (e.g., Aluminum, Copper, Gold). APF = 0.74.
+## 4. Controller Tuning
 
-### Bragg's Law
-X-ray diffraction is used to determine crystal structures. Constructive interference occurs when:
+Tuning is the process of selecting the optimal parameters ($K_c$, $\\tau_I$, $\\tau_D$) for a specific process.
 
-$$ n \\lambda = 2d \\sin \\theta $$
+### Ziegler-Nichols Open-Loop Method (Cohen-Coon)
+1. Put the controller in manual mode.
+2. Introduce a step change to the valve.
+3. Record the process response curve (Process Reaction Curve).
+4. Identify the process gain ($K_p$), apparent dead time ($\\theta$), and time constant ($\\tau$).
+5. Use empirical formulas to calculate $K_c$, $\\tau_I$, and $\\tau_D$.
 
-Where $\\lambda$ is the X-ray wavelength, $d$ is the interplanar spacing, and $\\theta$ is the diffraction angle.
+### Internal Model Control (IMC) Tuning
+A modern, more robust alternative. It relies on a mathematical model of the process and allows the engineer to specify a single tuning parameter ($\\tau_c$, the desired closed-loop time constant), directly balancing aggressiveness vs. robustness.
 
-## Mechanical Properties
+## 5. Advanced Control Strategies
 
-The response of a material to applied forces is described by its mechanical properties.
+When simple single-loop PID feedback is insufficient due to severe disturbances or complex dynamics, advanced strategies are deployed.
 
-### Stress and Strain
-*   **Engineering Stress ($\\sigma$):** $\\sigma = \\frac{F}{A_0}$
-*   **Engineering Strain ($\\epsilon$):** $\\epsilon = \\frac{\\Delta L}{L_0}$
+### Cascade Control
+Used when the Manipulated Variable is subject to heavy disturbances (e.g., steam pressure fluctuating before it reaches a heat exchanger).
+*   **Master (Primary) Controller:** Monitors the main CV (e.g., reactor temperature) and calculates the required MV (e.g., steam flow). However, instead of moving a valve, its output serves as the setpoint for a Slave controller.
+*   **Slave (Secondary) Controller:** Monitors the MV directly (e.g., steam flow meter) and moves the valve to hit the setpoint dictated by the Master. It catches valve/supply disturbances instantly before they ruin the Master's temperature.
 
-### Hooke's Law
-In the linear elastic region, stress is proportional to strain:
+### Feedforward Control
+Feedback control is purely reactive; it waits for an error to occur. Feedforward is proactive.
+If a major disturbance (e.g., feed flow rate) can be measured, a feedforward controller calculates the exact valve change needed to counteract the disturbance *before* the CV deviates. It requires a highly accurate mathematical model of the process to work, and is almost always combined with a feedback loop to trim any model inaccuracies.
 
-$$ \\sigma = E \\epsilon $$
-
-Where $E$ is Young's Modulus (modulus of elasticity), a measure of the material's stiffness.
-
-### Yield Strength and Tensile Strength
-*   **Yield Strength ($S_y$):** The stress at which a material begins to deform plastically (permanently).
-*   **Ultimate Tensile Strength (UTS):** The maximum stress a material can withstand before necking and eventual fracture.
-
-## Phase Diagrams
-
-A phase diagram shows the phases present at equilibrium across different temperatures and compositions. 
-
-*   **Eutectic Point:** The lowest melting point of an alloy system, where a liquid transforms directly into two solid phases upon cooling: $L \\rightarrow \\alpha + \\beta$.
-*   **The Lever Rule:** Used to determine the mass fractions of each phase in a two-phase region.
-`,
-  'Electrical Engineering Fundamentals': `
-# Electrical Engineering Fundamentals
-
-Electrical engineering deals with the study, design, and application of equipment, devices, and systems which use electricity, electronics, and electromagnetism.
-
-## Circuit Theory Basics
-
-The fundamental laws governing the relationship between voltage, current, and resistance in electrical circuits.
-
-### Ohm's Law
-The current through a conductor between two points is directly proportional to the voltage across the two points:
-
-$$ V = I R $$
-
-Where $V$ is voltage (Volts), $I$ is current (Amperes), and $R$ is resistance (Ohms).
-
-### Kirchhoff's Circuit Laws
-1.  **Kirchhoff's Current Law (KCL):** The algebraic sum of currents entering a node (junction) is zero. What goes in must come out.
-    $$ \\sum I_{in} = \\sum I_{out} $$
-2.  **Kirchhoff's Voltage Law (KVL):** The algebraic sum of the voltages around any closed loop in a circuit is zero.
-    $$ \\sum V = 0 $$
-
-## AC Circuits and Impedance
-
-In Alternating Current (AC) circuits, the voltage and current vary sinusoidally over time.
-
-### Impedance ($Z$)
-Impedance generalizes resistance to AC circuits, accounting for the phase shift introduced by capacitors and inductors. It is a complex number:
-
-$$ Z = R + jX $$
-
-Where $R$ is resistance and $X$ is reactance.
-
-*   **Inductive Reactance ($X_L$):** $X_L = j\\omega L$
-*   **Capacitive Reactance ($X_C$):** $X_C = \\frac{1}{j\\omega C} = -j \\frac{1}{\\omega C}$
-
-*(Where $\\omega = 2\\pi f$ is the angular frequency).*
-
-### Electrical Power
-In AC circuits, power is split into three components:
-*   **Real Power ($P$):** Power consumed by resistors (Watts). $P = V_{rms} I_{rms} \\cos \\theta$
-*   **Reactive Power ($Q$):** Power oscillating in the electric and magnetic fields (VAR). $Q = V_{rms} I_{rms} \\sin \\theta$
-*   **Apparent Power ($S$):** The vector sum of real and reactive power (VA). $S = \\sqrt{P^2 + Q^2} = V_{rms} I_{rms}$
-
-The **Power Factor (PF)** is the ratio of real power to apparent power ($PF = \\cos \\theta$).
-`,
-  'Civil and Structural Engineering': `
-# Civil and Structural Engineering
-
-Civil engineering deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, and structural components of buildings.
-
-## Statics and Equilibrium
-
-Statics is the branch of mechanics that is concerned with the analysis of loads (force and torque, or "moment") acting on physical systems that do not experience an acceleration.
-
-For a structure to be in static equilibrium, the sum of all forces and moments must be zero in all directions:
-
-$$ \\sum F_x = 0 \\quad \\sum F_y = 0 \\quad \\sum F_z = 0 $$
-$$ \\sum M_x = 0 \\quad \\sum M_y = 0 \\quad \\sum M_z = 0 $$
-
-### Types of Supports
-*   **Roller Support:** Can resist vertical forces but allows horizontal movement and rotation (1 reaction).
-*   **Pinned Support:** Resists both vertical and horizontal forces but allows rotation (2 reactions).
-*   **Fixed Support:** Resists vertical forces, horizontal forces, and rotation (3 reactions).
-
-## Mechanics of Materials
-
-Once external forces are determined via statics, engineers calculate the internal stresses and strains to ensure the material will not fail.
-
-### Bending of Beams
-When a load is applied perpendicular to a beam's longitudinal axis, it bends, creating compression on one side and tension on the other.
-
-The bending stress ($\\sigma$) at a distance $y$ from the neutral axis is given by the flexure formula:
-
-$$ \\sigma = \\frac{M y}{I} $$
-
-Where $M$ is the internal bending moment and $I$ is the area moment of inertia of the cross-section.
-
-### Column Buckling
-Columns are vertical members subjected to compressive axial loads. If they are long and slender, they may fail by buckling before the material's yield stress is reached. The critical buckling load ($P_{cr}$) is calculated using **Euler's Formula**:
-
-$$ P_{cr} = \\frac{\\pi^2 E I}{(K L)^2} $$
-
-Where $L$ is the unsupported length and $K$ is the column effective length factor.
-
-## Geotechnical Engineering
-
-Deals with the engineering behavior of earth materials (soil and rock). A critical concept is the **Effective Stress Principle** (Terzaghi's Principle):
-
-$$ \\sigma' = \\sigma - u $$
-
-Where $\\sigma'$ is the effective stress (carried by the soil skeleton), $\\sigma$ is the total stress, and $u$ is the pore water pressure. Soil strength and settlement are governed by effective stress, not total stress.
-`,
-  'Software Engineering Principles': `
-# Software Engineering Principles
-
-Software engineering is the systematic application of engineering approaches to the development of software. It goes beyond mere coding to include requirements gathering, architecture, testing, and deployment.
-
-## Software Development Life Cycles (SDLC)
-
-*   **Waterfall Model:** A linear, sequential approach where each phase (Requirements, Design, Implementation, Testing, Deployment) must be completed before the next begins. Good for highly constrained systems, poor for changing requirements.
-*   **Agile Methodology:** An iterative approach that emphasizes flexibility, continuous delivery, and customer collaboration. Development happens in short "sprints" (usually 1-4 weeks).
-
-## Design Patterns
-
-Design patterns are typical solutions to commonly occurring problems in software design. They are templates that can be applied to real-world coding issues.
-
-### Creational Patterns
-Deal with object creation mechanisms (e.g., Singleton, Factory Method, Builder).
-*   *Singleton:* Ensures a class has only one instance and provides a global point of access to it.
-
-### Structural Patterns
-Deal with object composition (e.g., Adapter, Decorator, Facade).
-*   *Adapter:* Allows objects with incompatible interfaces to collaborate.
-
-### Behavioral Patterns
-Deal with communication between objects (e.g., Observer, Strategy, Command).
-*   *Observer:* Defines a one-to-many dependency so that when one object changes state, all its dependents are notified and updated automatically.
-
-## SOLID Principles
-
-A set of five design principles intended to make software designs more understandable, flexible, and maintainable.
-
-1.  **S - Single Responsibility Principle:** A class should have one, and only one, reason to change.
-2.  **O - Open/Closed Principle:** Software entities should be open for extension, but closed for modification.
-3.  **L - Liskov Substitution Principle:** Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.
-4.  **I - Interface Segregation Principle:** Many client-specific interfaces are better than one general-purpose interface.
-5.  **D - Dependency Inversion Principle:** Depend upon abstractions, not concretions. High-level modules should not depend on low-level modules.
-
-## Big-O Notation
-
-A mathematical notation used to describe the limiting behavior of an algorithm, specifically regarding time (execution speed) or space (memory usage) complexity as the input size ($N$) grows.
-
-*   $O(1)$: Constant time (e.g., accessing an array element by index).
-*   $O(\\log N)$: Logarithmic time (e.g., binary search).
-*   $O(N)$: Linear time (e.g., iterating through an array).
-*   $O(N \\log N)$: Linearithmic time (e.g., Merge Sort, Quick Sort).
-*   $O(N^2)$: Quadratic time (e.g., Bubble Sort, nested loops).
+### Model Predictive Control (MPC)
+The pinnacle of modern chemical plant control. An MPC controller utilizes a dynamic matrix model of the entire plant.
+1.  It looks at current measurements.
+2.  It predicts the future trajectory of all CVs over a specified "prediction horizon" (e.g., the next 60 minutes).
+3.  It calculates a sequence of optimal future valve moves over a "control horizon" to minimize errors while respecting strict safety constraints (e.g., keeping reactor pressure below max limits).
+4.  It implements only the first calculated move, waits for the next time step, and recalculates the entire optimization problem (Receding Horizon approach).
+MPC is standard in oil refineries for maximizing throughput and profitability.
 `
 };
