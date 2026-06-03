@@ -34,9 +34,7 @@ Loewner framework
 
 Krylov subspace methods
 
-Nonlinear and manifold model reduction methods derive nonlinear approximations on manifolds and so can achieve higher accuracy with the same number of degrees of freedom than traditional methods that obtain linear approximations in subspaces. Building on nonlinear approximations is essential for efficiently reducing certain problem classes such as wave problems and advection-dominated problems in computational fluid dynamics. The nature and principles underlying nonlinear model reduction methods are broad and include template-based methods,
-
-the use of neural networks and online adaptive spaces.
+Nonlinear and manifold model reduction methods derive nonlinear approximations on manifolds and so can achieve higher accuracy with the same number of degrees of freedom than traditional methods that obtain linear approximations in subspaces. Building on nonlinear approximations is essential for efficiently reducing certain problem classes such as wave problems and advection-dominated problems in computational fluid dynamics. The nature and principles underlying nonlinear model reduction methods are broad and include template-based methods, the use of neural networks and online adaptive spaces.
 
 There are also nonintrusive model reduction methods that learn reduced models from data without requiring knowledge about the governing equations and internals of the full, high-fidelity model. Nonintrusive methods learn a low-dimensional approximation space or manifold and the reduced operators that represent the reduced dynamics from data. Methods that are non-intrusive include:
 

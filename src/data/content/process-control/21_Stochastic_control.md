@@ -16,29 +16,9 @@ In the discrete-time case with uncertainty about the parameter values in the tra
 
 ### Example
 
-A typical specification of the discrete-time stochastic linear quadratic control problem is to minimize
+A typical specification of the discrete-time stochastic linear quadratic control problem is to minimize $\mathrm {E} _{1}\sum _{t=1}^{S}\left[y_{t}^{\mathsf {T}}Qy_{t}+u_{t}^{\mathsf {T}}Ru_{t}\right]$ where E1 is the expected value operator conditional on y0, superscript T indicates a matrix transpose, and S is the time horizon, subject to the state equation $y_{t}=A_{t}y_{t-1}+B_{t}u_{t},$ where y is an n × 1 vector of observable state variables, u is a k × 1 vector of control variables, At is the time t realization of the stochastic n × n state transition matrix, Bt is the time t realization of the stochastic n × k matrix of control multipliers, and Q (n × n) and R (k × k) are known symmetric positive definite cost matrices. We assume that each element of A and B is jointly independently and identically distributed through time, so the expected value operations need not be time-conditional.
 
-$$ \mathrm {E} _{1}\sum _{t=1}^{S}\left[y_{t}^{\mathsf {T}}Qy_{t}+u_{t}^{\mathsf {T}}Ru_{t}\right] $$
-
-where E1 is the expected value operator conditional on y0, superscript T indicates a matrix transpose, and S is the time horizon, subject to the state equation
-
-$$ y_{t}=A_{t}y_{t-1}+B_{t}u_{t}, $$
-
-where y is an n × 1 vector of observable state variables, u is a k × 1 vector of control variables, At is the time t realization of the stochastic n × n state transition matrix, Bt is the time t realization of the stochastic n × k matrix of control multipliers, and Q (n × n) and R (k × k) are known symmetric positive definite cost matrices. We assume that each element of A and B is jointly independently and identically distributed through time, so the expected value operations need not be time-conditional.
-
-Induction backwards in time can be used to obtain the optimal control solution at each time,
-
-$$ u_{t}^{*}=-\left[\mathrm {E} \left(B^{\mathsf {T}}X_{t}B+R\right)\right]^{-1}\mathrm {E} \left(B^{\mathsf {T}}X_{t}A\right)y_{t-1}, $$
-
-with the symmetric positive definite cost-to-go matrix X evolving backwards in time from 
-
-$$ X_{S}=Q $$
-
- according to
-
-$$ X_{t-1}=Q+\mathrm {E} \left[A^{\mathsf {T}}X_{t}A\right]-\mathrm {E} \left[A^{\mathsf {T}}X_{t}B\right]\left[\mathrm {E} (B^{\mathsf {T}}X_{t}B+R)\right]^{-1}\mathrm {E} \left(B^{\mathsf {T}}X_{t}A\right), $$
-
-which is known as the discrete-time dynamic Riccati equation of this problem. The only information needed regarding the unknown parameters in the A and B matrices is the expected value and variance of each element of each matrix and the covariances among elements of the same matrix and among elements across matrices.
+Induction backwards in time can be used to obtain the optimal control solution at each time, $u_{t}^{*}=-\left[\mathrm {E} \left(B^{\mathsf {T}}X_{t}B+R\right)\right]^{-1}\mathrm {E} \left(B^{\mathsf {T}}X_{t}A\right)y_{t-1},$ with the symmetric positive definite cost-to-go matrix X evolving backwards in time from $X_{S}=Q$ according to $X_{t-1}=Q+\mathrm {E} \left[A^{\mathsf {T}}X_{t}A\right]-\mathrm {E} \left[A^{\mathsf {T}}X_{t}B\right]\left[\mathrm {E} (B^{\mathsf {T}}X_{t}B+R)\right]^{-1}\mathrm {E} \left(B^{\mathsf {T}}X_{t}A\right),$ which is known as the discrete-time dynamic Riccati equation of this problem. The only information needed regarding the unknown parameters in the A and B matrices is the expected value and variance of each element of each matrix and the covariances among elements of the same matrix and among elements across matrices.
 
 The optimal control solution is unaffected if zero-mean, i.i.d. additive shocks also appear in the state equation, so long as they are uncorrelated with the parameters in the A and B matrices. But if they are so correlated, then the optimal control solution for each period contains an additional additive constant vector. If an additive constant vector appears in the state equation, then again the optimal control solution for each period contains an additional additive constant vector.
 

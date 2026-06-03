@@ -120,9 +120,7 @@ DH is the hydraulic diameter of the pipe (the inside diameter if the pipe is cir
 
 Q is the volumetric flow rate (m3/s),
 
-A is the pipe's cross-sectional area (A = ⁠πDH2/4⁠) (m2),
-
-u is the mean velocity of the fluid (m/s),
+A is the pipe's cross-sectional area (A = ⁠πDH2/4⁠) (m2), u is the mean velocity of the fluid (m/s),
 
 μ (mu) is the dynamic viscosity of the fluid (Pa·s = N·s/m2 = kg/(m·s)),
 

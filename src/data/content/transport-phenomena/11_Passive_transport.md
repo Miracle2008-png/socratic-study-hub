@@ -12,22 +12,7 @@ Simple diffusion and osmosis are in some ways similar. Simple diffusion is the p
 
 ### Speed of diffusion
 
-For passive diffusion, the law of diffusion states that the mean squared displacement is 
-
-$$ \langle r^{2}\rangle =2dDt $$
-
- with d being the number of dimensions and D the diffusion coefficient). So to diffuse a distance of about 
-
-$$ x $$
-
- takes time 
-
-$$ \sim x^{2}/2dD $$
-
-, and the "average speed" is 
-
-$$ \sim 2dD/x $$
-
+For passive diffusion, the law of diffusion states that the mean squared displacement is $\langle r^{2}\rangle =2dDt$ with d being the number of dimensions and D the diffusion coefficient). So to diffuse a distance of about $x$ takes time $\sim x^{2}/2dD$ , and the "average speed" is $\sim 2dD/x$
 . This means that in the same physical environment, diffusion is fast when the distance is small, but less when the distance is large.
 
 This can be seen in material transport within the cell. Prokaryotes typically have small bodies, allowing diffusion to suffice for material transport within the cell. Larger cells like eukaryotes would either have very low metabolic rate to accommodate the slowness of diffusion, or invest in complex cellular machinery to allow active transport within the cell, such as kinesin walking along microtubules.

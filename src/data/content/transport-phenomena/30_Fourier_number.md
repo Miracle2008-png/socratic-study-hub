@@ -69,8 +69,7 @@ The Fourier number can be derived by nondimensionalizing the time-dependent diff
  and position 
 
  (with 
- along the axis of the rod). The heat equation in one spatial dimension, 
-, can be applied
+along the axis of the rod). The heat equation in one spatial dimension, , can be applied
 
 {\displaystyle {\frac {\partial T}{\partial t}}=\alpha {\frac {\partial ^{2}T}{\partial x^{2}}}}
 where 

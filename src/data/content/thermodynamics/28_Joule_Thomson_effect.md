@@ -12,313 +12,78 @@ In a free expansion, on the other hand, the gas does no work and absorbs no heat
 
 The method of expansion discussed in this article, in which a gas or liquid at pressure P1 flows into a region of lower pressure P2 without significant change in kinetic energy, is called the Joule–Thomson expansion. The expansion is inherently irreversible. During this expansion, enthalpy remains unchanged (see proof below). Unlike a free expansion, work is done, causing a change in internal energy. Whether the internal energy increases or decreases is determined by whether work is done on or by the fluid; that is determined by the initial and final states of the expansion and the properties of the fluid.
 
-The temperature change produced during a Joule–Thomson expansion is quantified by the Joule–Thomson coefficient, 
-
-$$ \mu _{\mathrm {JT} } $$
-
-. This  coefficient may be either positive (corresponding to cooling) or negative (heating); the regions where each occurs for molecular nitrogen, N2, are shown in the figure. Note that most conditions in the figure correspond to N2 being a supercritical fluid, where it has some properties of a gas and some of a liquid, but can not be really described as being either. The coefficient is negative at both very high and very low temperatures; at very high pressure it is negative at all temperatures. The maximum inversion temperature (621 K for N2) occurs as zero pressure is approached. For N2 gas at low pressures, 
-
-$$ \mu _{\mathrm {JT} } $$
-
- is negative at high temperatures and positive at low temperatures. At temperatures below the gas-liquid coexistence curve, N2 condenses to form a liquid and the coefficient again becomes negative. Thus, for N2 gas below 621 K, a Joule–Thomson expansion can be used to cool the gas until liquid N2 forms.
+The temperature change produced during a Joule–Thomson expansion is quantified by the Joule–Thomson coefficient, $\mu _{\mathrm {JT} }$
+. This  coefficient may be either positive (corresponding to cooling) or negative (heating); the regions where each occurs for molecular nitrogen, N2, are shown in the figure. Note that most conditions in the figure correspond to N2 being a supercritical fluid, where it has some properties of a gas and some of a liquid, but can not be really described as being either. The coefficient is negative at both very high and very low temperatures; at very high pressure it is negative at all temperatures. The maximum inversion temperature (621 K for N2) occurs as zero pressure is approached. For N2 gas at low pressures, $\mu _{\mathrm {JT} }$ is negative at high temperatures and positive at low temperatures. At temperatures below the gas-liquid coexistence curve, N2 condenses to form a liquid and the coefficient again becomes negative. Thus, for N2 gas below 621 K, a Joule–Thomson expansion can be used to cool the gas until liquid N2 forms.
 
 ## Physical mechanism
 
 There are two factors that can change the temperature of a fluid during an adiabatic expansion: a change in internal energy or the conversion between potential and kinetic internal energy. Temperature is the measure of thermal kinetic energy (energy associated with molecular motion), so a change in temperature indicates a change in thermal kinetic energy. The internal energy is the sum of thermal kinetic energy and thermal potential energy. Thus, even if the internal energy does not change, the temperature can change due to conversion between kinetic and potential energy; this is what happens in a free expansion and typically produces a decrease in temperature as the fluid expands. If work is done on or by the fluid as it expands, then the total internal energy changes. This is what happens in a Joule–Thomson expansion and can produce larger heating or cooling than observed in a free expansion.
 
-In a Joule–Thomson expansion the enthalpy remains constant. The enthalpy, 
+In a Joule–Thomson expansion the enthalpy remains constant. The enthalpy, $H$ , is defined as $H=U+PV$ where $U$ is internal energy, $P$ is pressure, and $V$ is volume. Under the conditions of a Joule–Thomson expansion, the change in $PV$ represents the work done by the fluid (see the proof below). If $PV$ increases, with $H$ constant, then $U$ must decrease as a result of the fluid doing work on its surroundings. This produces a decrease in temperature and results in a positive Joule–Thomson coefficient. Conversely, a decrease in $PV$ means that work is done on the fluid and the internal energy increases. If the increase in kinetic energy exceeds the increase in potential energy, there will be an increase in the temperature of the fluid and the Joule–Thomson coefficient will be negative.
 
-$$ H $$
+For an ideal gas, $PV$ does not change during a Joule–Thomson expansion. As a result, there is no change in internal energy; since there is also no change in thermal potential energy, there can be no change in thermal kinetic energy and, therefore, no change in temperature. In real gases, $PV$ does change.
 
-, is defined as
+The ratio of the value of $PV$ to that expected for an ideal gas at the same temperature is called the compressibility factor, $Z$
+. For a gas, this is typically less than unity at low temperature and greater than unity at high temperature (see the discussion in compressibility factor). At low pressure, the value of $Z$ always moves towards unity as a gas expands. Thus at low temperature, $Z$ and $PV$ will increase as the gas expands, resulting in a positive Joule–Thomson coefficient. At high temperature, $Z$ and $PV$ decrease as the gas expands; if the decrease is large enough, the Joule–Thomson coefficient will be negative.
 
-$$ H=U+PV $$
-
-where 
-
-$$ U $$
-
- is internal energy, 
-
-$$ P $$
-
- is pressure, and 
-
-$$ V $$
-
- is volume. Under the conditions of a Joule–Thomson expansion, the change in 
-
-$$ PV $$
-
- represents the work done by the fluid (see the proof below). If 
-
-$$ PV $$
-
- increases, with 
-
-$$ H $$
-
- constant, then 
-
-$$ U $$
-
- must decrease as a result of the fluid doing work on its surroundings. This produces a decrease in temperature and results in a positive Joule–Thomson coefficient. Conversely, a decrease in 
-
-$$ PV $$
-
- means that work is done on the fluid and the internal energy increases. If the increase in kinetic energy exceeds the increase in potential energy, there will be an increase in the temperature of the fluid and the Joule–Thomson coefficient will be negative.
-
-For an ideal gas, 
-
-$$ PV $$
-
- does not change during a Joule–Thomson expansion. As a result, there is no change in internal energy; since there is also no change in thermal potential energy, there can be no change in thermal kinetic energy and, therefore, no change in temperature. In real gases, 
-
-$$ PV $$
-
- does change.
-
-The ratio of the value of 
-
-$$ PV $$
-
- to that expected for an ideal gas at the same temperature is called the compressibility factor, 
-
-$$ Z $$
-
-. For a gas, this is typically less than unity at low temperature and greater than unity at high temperature (see the discussion in compressibility factor). At low pressure, the value of 
-
-$$ Z $$
-
- always moves towards unity as a gas expands. Thus at low temperature, 
-
-$$ Z $$
-
- and 
-
-$$ PV $$
-
- will increase as the gas expands, resulting in a positive Joule–Thomson coefficient. At high temperature, 
-
-$$ Z $$
-
- and 
-
-$$ PV $$
-
- decrease as the gas expands; if the decrease is large enough, the Joule–Thomson coefficient will be negative.
-
-For liquids, and for supercritical fluids under high pressure, 
-
-$$ PV $$
-
- increases as pressure increases. This is due to molecules being forced together, so that the volume can barely decrease due to higher pressure. Under such conditions, the Joule–Thomson coefficient is negative, as seen in the figure above.
+For liquids, and for supercritical fluids under high pressure, $PV$ increases as pressure increases. This is due to molecules being forced together, so that the volume can barely decrease due to higher pressure. Under such conditions, the Joule–Thomson coefficient is negative, as seen in the figure above.
 
 The physical mechanism associated with the Joule–Thomson effect is closely related to that of a shock wave, although a shock wave differs in that the change in bulk kinetic energy of the gas flow is not negligible.
 
 ## The Joule–Thomson (Kelvin) coefficient
 
-The rate of change of temperature 
+The rate of change of temperature $T$ with respect to pressure $P$ in a Joule–Thomson process (that is, at constant enthalpy $H$ ) is the Joule–Thomson (Kelvin) coefficient $\mu _{\mathrm {JT} }$
+. This coefficient can be expressed in terms of the gas's specific volume $V$ , its heat capacity at constant pressure $C_{\mathrm {p} }$ , and its coefficient of thermal expansion $\alpha$ as: $\mu _{\mathrm {JT} }=\left({\partial T \over \partial P}\right)_{H}={\frac {V}{C_{\mathrm {p} }}}(\alpha T-1)\,$
+See the § Derivation of the Joule–Thomson coefficient below for the proof of this relation. The value of $\mu _{\mathrm {JT} }$ is typically expressed in °C/bar (SI units: K/Pa) and depends on the type of gas and on the temperature and pressure of the gas before expansion. Its pressure dependence is usually only a few percent for pressures up to 100 bar.
 
-$$ T $$
+All real gases have an inversion point at which the value of $\mu _{\mathrm {JT} }$ changes sign. The temperature of this point, the Joule–Thomson inversion temperature, depends on the pressure of the gas before expansion.
 
- with respect to pressure 
-
-$$ P $$
-
- in a Joule–Thomson process (that is, at constant enthalpy 
-
-$$ H $$
-
-) is the Joule–Thomson (Kelvin) coefficient 
-
-$$ \mu _{\mathrm {JT} } $$
-
-. This coefficient can be expressed in terms of the gas's specific volume 
-
-$$ V $$
-
-, its heat capacity at constant pressure 
-
-$$ C_{\mathrm {p} } $$
-
-, and its coefficient of thermal expansion 
-
-$$ \alpha $$
-
- as:
-
-$$ \mu _{\mathrm {JT} }=\left({\partial T \over \partial P}\right)_{H}={\frac {V}{C_{\mathrm {p} }}}(\alpha T-1)\, $$
-
-See the § Derivation of the Joule–Thomson coefficient below for the proof of this relation. The value of 
-
-$$ \mu _{\mathrm {JT} } $$
-
- is typically expressed in °C/bar (SI units: K/Pa) and depends on the type of gas and on the temperature and pressure of the gas before expansion. Its pressure dependence is usually only a few percent for pressures up to 100 bar.
-
-All real gases have an inversion point at which the value of 
-
-$$ \mu _{\mathrm {JT} } $$
-
- changes sign. The temperature of this point, the Joule–Thomson inversion temperature, depends on the pressure of the gas before expansion.
-
-In a gas expansion the pressure decreases, so the sign of 
-
-$$ \partial P $$
-
- is negative by definition. With that in mind, the following table explains when the Joule–Thomson effect cools or warms a real gas:
+In a gas expansion the pressure decreases, so the sign of $\partial P$ is negative by definition. With that in mind, the following table explains when the Joule–Thomson effect cools or warms a real gas:
 
 Helium and hydrogen are two gases whose Joule–Thomson inversion temperatures at a pressure of one atmosphere are very low (e.g., about 40 K, −233 °C for helium). Thus, helium and hydrogen warm when expanded at constant enthalpy at typical room temperatures. On the other hand, nitrogen and oxygen, the two most abundant gases in air, have inversion temperatures of 621 K (348 °C) and 764 K (491 °C) respectively: these gases can be cooled from room temperature by the Joule–Thomson effect.
 
-For an ideal gas, 
-
-$$ \mu _{\text{JT}} $$
-
- is always equal to zero: ideal gases neither warm nor cool upon being expanded at constant enthalpy.
+For an ideal gas, $\mu _{\text{JT}}$ is always equal to zero: ideal gases neither warm nor cool upon being expanded at constant enthalpy.
 
 ### Theoretical models
 
-For a Van der Waals gas, the coefficient is
-
-$$ \mu _{\text{JT}}=-{\frac {V_{m}}{C_{p}}}{\frac {RTV_{m}^{2}b-2a(V_{m}-b)^{2}}{RTV_{m}^{3}-2a(V_{m}-b)^{2}}}. $$
-
-with inversion temperature 
-
-$$ {\frac {2a}{bR}}\left(1-{\frac {b}{V_{m}}}\right)^{2} $$
-
+For a Van der Waals gas, the coefficient is $\mu _{\text{JT}}=-{\frac {V_{m}}{C_{p}}}{\frac {RTV_{m}^{2}b-2a(V_{m}-b)^{2}}{RTV_{m}^{3}-2a(V_{m}-b)^{2}}}.$ with inversion temperature ${\frac {2a}{bR}}\left(1-{\frac {b}{V_{m}}}\right)^{2}$
 .
 
-For the Dieterici gas, the reduced inversion temperature is 
-
-$$ {\tilde {T}}_{I}=8-4/{\tilde {V}}_{m} $$
-
-, and the relation between reduced pressure and reduced inversion temperature is 
-
-$$ {\tilde {p}}=(8-{\tilde {T}}_{I})e^{{\frac {5}{2}}-{\frac {4}{8-{\tilde {T}}_{I}}}} $$
-
+For the Dieterici gas, the reduced inversion temperature is ${\tilde {T}}_{I}=8-4/{\tilde {V}}_{m}$ , and the relation between reduced pressure and reduced inversion temperature is ${\tilde {p}}=(8-{\tilde {T}}_{I})e^{{\frac {5}{2}}-{\frac {4}{8-{\tilde {T}}_{I}}}}$
 . This is plotted on the right. The critical point falls inside the region where the gas cools on expansion. The outside region is where the gas warms on expansion.
 
 ## Proof that the specific enthalpy remains constant
 
-In thermodynamics so-called "specific" quantities are quantities per unit mass (kg) and are denoted by lower-case characters. So h, u, and v are the specific enthalpy, specific internal energy, and specific volume (volume per unit mass, or reciprocal density), respectively. In a Joule–Thomson process the specific enthalpy h remains constant. To prove this, the first step is to compute the net work done when a mass m of the gas moves through the plug. This amount of gas has a volume of V1 = m v1 in the region at pressure P1 (region 1) and a volume V2 = m v2 when in the region at pressure P2 (region 2). Then in region 1, the "flow work" done on the amount of gas by the rest of the gas is: W1 = m P1v1. In region 2, the work done by the amount of gas on the rest of the gas is: W2 = m P2v2. So, the total work done on the mass m of gas is
-
-$$ W=mP_{1}v_{1}-mP_{2}v_{2}. $$
-
-The change in internal energy minus the total work done on the amount of gas is, by the first law of thermodynamics, the total heat supplied to the amount of gas.
-
-$$ U-W=Q $$
-
-In the Joule–Thomson process, the gas is insulated, so no heat is absorbed. This means that
-
-$$ {\begin{aligned}(mu_{2}-mu_{1})&-(mP_{1}v_{1}-mP_{2}v_{2})=0\\mu_{1}+mP_{1}v_{1}&=mu_{2}+mP_{2}v_{2}\\u_{1}+P_{1}v_{1}&=u_{2}+P_{2}v_{2}\end{aligned}} $$
-
-where u1 and u2 denote the specific internal energies of the gas in regions 1 and 2, respectively. Using the definition of the specific enthalpy h = u + Pv, the above equation implies that
-
-$$ h_{1}=h_{2} $$
-
-where h1 and h2 denote the specific enthalpies of the amount of gas in regions 1 and 2, respectively.
+In thermodynamics so-called "specific" quantities are quantities per unit mass (kg) and are denoted by lower-case characters. So h, u, and v are the specific enthalpy, specific internal energy, and specific volume (volume per unit mass, or reciprocal density), respectively. In a Joule–Thomson process the specific enthalpy h remains constant. To prove this, the first step is to compute the net work done when a mass m of the gas moves through the plug. This amount of gas has a volume of V1 = m v1 in the region at pressure P1 (region 1) and a volume V2 = m v2 when in the region at pressure P2 (region 2). Then in region 1, the "flow work" done on the amount of gas by the rest of the gas is: W1 = m P1v1. In region 2, the work done by the amount of gas on the rest of the gas is: W2 = m P2v2. So, the total work done on the mass m of gas is $W=mP_{1}v_{1}-mP_{2}v_{2}.$
+The change in internal energy minus the total work done on the amount of gas is, by the first law of thermodynamics, the total heat supplied to the amount of gas. $U-W=Q$
+In the Joule–Thomson process, the gas is insulated, so no heat is absorbed. This means that ${\begin{aligned}(mu_{2}-mu_{1})&-(mP_{1}v_{1}-mP_{2}v_{2})=0\\mu_{1}+mP_{1}v_{1}&=mu_{2}+mP_{2}v_{2}\\u_{1}+P_{1}v_{1}&=u_{2}+P_{2}v_{2}\end{aligned}}$ where u1 and u2 denote the specific internal energies of the gas in regions 1 and 2, respectively. Using the definition of the specific enthalpy h = u + Pv, the above equation implies that $h_{1}=h_{2}$ where h1 and h2 denote the specific enthalpies of the amount of gas in regions 1 and 2, respectively.
 
 ## Throttling in the T-s diagram
 
 A convenient way to get a quantitative understanding of the throttling process is by using diagrams such as h-T diagrams, h-P diagrams, and others. Commonly used are the so-called T-s diagrams. Figure 2 shows the T-s diagram of nitrogen as an example. Various points are indicated as follows:
 
-As shown before, throttling keeps h constant. E.g. throttling from 200 bar and 300 K (point a in fig. 2) follows the isenthalpic (line of constant specific enthalpy) of 430 kJ/kg. At 1 bar it results in point b which has a temperature of 270 K. So throttling from 200 bar to 1 bar gives a cooling from room temperature to below the freezing point of water. Throttling from 200 bar and an initial temperature of 133 K (point c in fig. 2) to 1 bar results in point d, which is in the two-phase region of nitrogen at a temperature of 77.2 K. Since the enthalpy is an extensive parameter the enthalpy in d (hd) is equal to the enthalpy in e (he) multiplied with the mass fraction of the liquid in d (xd) plus the enthalpy in f (hf) multiplied with the mass fraction of the gas in d (1 − xd). So
-
-$$ h_{d}=x_{d}h_{e}+(1-x_{d})h_{f}. $$
-
+As shown before, throttling keeps h constant. E.g. throttling from 200 bar and 300 K (point a in fig. 2) follows the isenthalpic (line of constant specific enthalpy) of 430 kJ/kg. At 1 bar it results in point b which has a temperature of 270 K. So throttling from 200 bar to 1 bar gives a cooling from room temperature to below the freezing point of water. Throttling from 200 bar and an initial temperature of 133 K (point c in fig. 2) to 1 bar results in point d, which is in the two-phase region of nitrogen at a temperature of 77.2 K. Since the enthalpy is an extensive parameter the enthalpy in d (hd) is equal to the enthalpy in e (he) multiplied with the mass fraction of the liquid in d (xd) plus the enthalpy in f (hf) multiplied with the mass fraction of the gas in d (1 − xd). So $h_{d}=x_{d}h_{e}+(1-x_{d})h_{f}.$
 With numbers: 150 = xd 28 + (1 − xd) 230 so xd is about 0.40. This means that the mass fraction of the liquid in the liquid–gas mixture leaving the throttling valve is 40%.
 
 ## Derivation of the Joule–Thomson coefficient
 
-It is difficult to think physically about what the Joule–Thomson coefficient, 
-
-$$ \mu _{\mathrm {JT} } $$
-
-, represents. Also, modern determinations of 
-
-$$ \mu _{\mathrm {JT} } $$
-
- do not use the original method used by Joule and Thomson, but instead measure a different, closely related quantity. Thus, it is useful to derive relationships between 
-
-$$ \mu _{\mathrm {JT} } $$
-
- and other, more conveniently measured quantities, as described below.
+It is difficult to think physically about what the Joule–Thomson coefficient, $\mu _{\mathrm {JT} }$ , represents. Also, modern determinations of $\mu _{\mathrm {JT} }$ do not use the original method used by Joule and Thomson, but instead measure a different, closely related quantity. Thus, it is useful to derive relationships between $\mu _{\mathrm {JT} }$ and other, more conveniently measured quantities, as described below.
 
 The first step in obtaining these results is to note that the Joule–Thomson coefficient involves the three variables T, P, and H. A useful result is immediately obtained by applying the cyclic rule; in terms of these three variables that rule may be written
 
-        1.
-
-$$ \left({\frac {\partial T}{\partial P}}\right)_{H}\left({\frac {\partial H}{\partial T}}\right)_{P}\left({\frac {\partial P}{\partial H}}\right)_{T}=-1. $$
-
-Each of the three partial derivatives in this expression has a specific meaning. The first is 
-
-$$ \mu _{\mathrm {JT} } $$
-
-, the second is the constant pressure heat capacity, 
-
-$$ C_{\mathrm {p} } $$
-
-, defined by
-
-$$ C_{\mathrm {p} }=\left({\frac {\partial H}{\partial T}}\right)_{P} $$
-
-and the third is the inverse of the isothermal Joule–Thomson coefficient, 
-
-$$ \mu _{\mathrm {T} } $$
-
-, defined by
-
-$$ \mu _{\mathrm {T} }=\left({\frac {\partial H}{\partial P}}\right)_{T} $$
-
+        1. $\left({\frac {\partial T}{\partial P}}\right)_{H}\left({\frac {\partial H}{\partial T}}\right)_{P}\left({\frac {\partial P}{\partial H}}\right)_{T}=-1.$
+Each of the three partial derivatives in this expression has a specific meaning. The first is $\mu _{\mathrm {JT} }$ , the second is the constant pressure heat capacity, $C_{\mathrm {p} }$ , defined by $C_{\mathrm {p} }=\left({\frac {\partial H}{\partial T}}\right)_{P}$ and the third is the inverse of the isothermal Joule–Thomson coefficient, $\mu _{\mathrm {T} }$ , defined by $\mu _{\mathrm {T} }=\left({\frac {\partial H}{\partial P}}\right)_{T}$
 .
 
-This last quantity is more easily measured than 
-
-$$ \mu _{\mathrm {JT} } $$
-
- . Thus, the expression from the cyclic rule becomes
-
-$$ \mu _{\mathrm {JT} }=-{\frac {\mu _{\mathrm {T} }}{C_{p}}}. $$
-
+This last quantity is more easily measured than $\mu _{\mathrm {JT} }$
+. Thus, the expression from the cyclic rule becomes $\mu _{\mathrm {JT} }=-{\frac {\mu _{\mathrm {T} }}{C_{p}}}.$
 This equation can be used to obtain Joule–Thomson coefficients from the more easily measured isothermal Joule–Thomson coefficient. It is used in the following to obtain a mathematical expression for the Joule–Thomson coefficient in terms of the volumetric properties of a fluid.
 
-To proceed further, the starting point is the fundamental equation of thermodynamics in terms of enthalpy; this is
-
-$$ \mathrm {d} H=T\mathrm {d} S+V\mathrm {d} P. $$
-
-Now "dividing through" by dP, while holding temperature constant, yields
-
-$$ \left({\frac {\partial H}{\partial P}}\right)_{T}=T\left({\frac {\partial S}{\partial P}}\right)_{T}+V $$
-
-The partial derivative on the left is the isothermal Joule–Thomson coefficient, 
-
-$$ \mu _{\mathrm {T} } $$
-
-, and the one on the right can be expressed in terms of the coefficient of thermal expansion via a Maxwell relation. The appropriate relation is
-
-$$ \left({\frac {\partial S}{\partial P}}\right)_{T}=-\left({\frac {\partial V}{\partial T}}\right)_{P}=-V\alpha \, $$
-
-where α is the cubic coefficient of thermal expansion. Replacing these two partial derivatives yields
-
-$$ \mu _{\mathrm {T} }=-TV\alpha \ +V. $$
-
-This expression can now replace 
-
-$$ \mu _{\mathrm {T} } $$
-
- in the earlier equation for 
-
-$$ \mu _{\mathrm {JT} } $$
-
- to obtain:
-
-$$ \mu _{\mathrm {JT} }\equiv \left({\frac {\partial T}{\partial P}}\right)_{H}={\frac {V}{C_{\mathrm {p} }}}(\alpha T-1).\, $$
-
-This provides an expression for the Joule–Thomson coefficient in terms of the commonly available properties heat capacity, molar volume, and thermal expansion coefficient. It shows that the Joule–Thomson inversion temperature, at which 
-
-$$ \mu _{\mathrm {JT} } $$
-
- is zero, occurs when the coefficient of thermal expansion is equal to the inverse of the temperature. Since this is true at all temperatures for ideal gases (see expansion in gases), the Joule–Thomson coefficient of an ideal gas is zero at all temperatures.
+To proceed further, the starting point is the fundamental equation of thermodynamics in terms of enthalpy; this is $\mathrm {d} H=T\mathrm {d} S+V\mathrm {d} P.$
+Now "dividing through" by dP, while holding temperature constant, yields $\left({\frac {\partial H}{\partial P}}\right)_{T}=T\left({\frac {\partial S}{\partial P}}\right)_{T}+V$
+The partial derivative on the left is the isothermal Joule–Thomson coefficient, $\mu _{\mathrm {T} }$ , and the one on the right can be expressed in terms of the coefficient of thermal expansion via a Maxwell relation. The appropriate relation is $\left({\frac {\partial S}{\partial P}}\right)_{T}=-\left({\frac {\partial V}{\partial T}}\right)_{P}=-V\alpha \,$ where α is the cubic coefficient of thermal expansion. Replacing these two partial derivatives yields $\mu _{\mathrm {T} }=-TV\alpha \ +V.$
+This expression can now replace $\mu _{\mathrm {T} }$ in the earlier equation for $\mu _{\mathrm {JT} }$ to obtain: $\mu _{\mathrm {JT} }\equiv \left({\frac {\partial T}{\partial P}}\right)_{H}={\frac {V}{C_{\mathrm {p} }}}(\alpha T-1).\,$
+This provides an expression for the Joule–Thomson coefficient in terms of the commonly available properties heat capacity, molar volume, and thermal expansion coefficient. It shows that the Joule–Thomson inversion temperature, at which $\mu _{\mathrm {JT} }$ is zero, occurs when the coefficient of thermal expansion is equal to the inverse of the temperature. Since this is true at all temperatures for ideal gases (see expansion in gases), the Joule–Thomson coefficient of an ideal gas is zero at all temperatures.
 
 ## Joule's second law
 
@@ -330,48 +95,7 @@ The internal energy of a fixed mass of an ideal gas depends only on its temperat
 
 This rule was originally found experimentally by Joule for real gases and is known as Joule's second law (see Joule expansion). More refined experiments found important deviations from it.
 
-Note, however, that the vanishing of the Joule–Thomson coefficient is not equivalent to Joule's second law. In other words, the conditions 
-
-$$ (\partial U/\partial V)_{T}=0 $$
-
- and 
-
-$$ (\partial H/\partial P)_{T}=0 $$
-
- are not, in general, equivalent. For we have the thermodynamic relation:
-
-$$ \left({\frac {\partial U}{\partial V}}\right)_{T}=T\left({\frac {\partial P}{\partial T}}\right)_{V}-P $$
-
-Thus, if, instead of the ideal gas law, the gas instead obeyed the equation of state 
-
-$$ P^{a}\propto (N/V)T $$
-
- with an exponent 
-
-$$ a\neq 1 $$
-
-, then 
-
-$$ (\partial H/\partial P)_{T}=0 $$
-
- while 
-
-$$ (\partial U/\partial V)_{T}\neq 0 $$
-
-. Similarly, if the gas obeyed 
-
-$$ P\propto (N/V)^{b}T $$
-
- with an exponent 
-
-$$ b\neq 1 $$
-
-, then 
-
-$$ (\partial U/\partial V)_{T}=0 $$
-
- while 
-
-$$ (\partial H/\partial P)_{T}\neq 0 $$
-
+Note, however, that the vanishing of the Joule–Thomson coefficient is not equivalent to Joule's second law. In other words, the conditions $(\partial U/\partial V)_{T}=0$ and $(\partial H/\partial P)_{T}=0$ are not, in general, equivalent. For we have the thermodynamic relation: $\left({\frac {\partial U}{\partial V}}\right)_{T}=T\left({\frac {\partial P}{\partial T}}\right)_{V}-P$
+Thus, if, instead of the ideal gas law, the gas instead obeyed the equation of state $P^{a}\propto (N/V)T$ with an exponent $a\neq 1$ , then $(\partial H/\partial P)_{T}=0$ while $(\partial U/\partial V)_{T}\neq 0$
+. Similarly, if the gas obeyed $P\propto (N/V)^{b}T$ with an exponent $b\neq 1$ , then $(\partial U/\partial V)_{T}=0$ while $(\partial H/\partial P)_{T}\neq 0$
 .

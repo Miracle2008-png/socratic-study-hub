@@ -150,10 +150,7 @@ When a body is not in a steady-state, then the notion of temperature becomes eve
 
 When an energy transfer to or from a body is only as heat, the state of the body changes. Depending on the surroundings and the walls separating them from the body, various changes are possible in the body. They include chemical reactions, increase of pressure, increase of temperature and phase change. For each kind of change under specified conditions, the heat capacity is the ratio of the quantity of heat transferred to the magnitude of the change.
 
-For example, if the change is an increase in temperature at constant volume, with no phase change and no chemical change, then the temperature of the body rises and its pressure increases. The quantity of heat transferred, ΔQ, divided by the observed temperature change, ΔT, is the body's heat capacity at constant volume:
-
-$$ C_{V}={\frac {\Delta Q}{\Delta T}}. $$
-
+For example, if the change is an increase in temperature at constant volume, with no phase change and no chemical change, then the temperature of the body rises and its pressure increases. The quantity of heat transferred, ΔQ, divided by the observed temperature change, ΔT, is the body's heat capacity at constant volume: $C_{V}={\frac {\Delta Q}{\Delta T}}.$
 If heat capacity is measured for a well-defined amount of substance, the specific heat is the measure of the heat required to increase the temperature of such a unit quantity by one unit of temperature. For example, raising the temperature of water by one kelvin (equal to one degree Celsius) requires 4186 joules per kilogram (J/kg).
 
 ## Measurement
@@ -194,10 +191,7 @@ Rømer scale
 
 #### Plasma physics
 
-The field of plasma physics deals with phenomena of electromagnetic nature that involve very high temperatures. It is customary to express temperature as energy in a unit related to the electronvolt or kiloelectronvolt (eV/kB or keV/kB). The corresponding energy, which is dimensionally distinct from temperature, is then calculated as the product of the Boltzmann constant and temperature, 
-
-$$ E=k_{\text{B}}T $$
-
+The field of plasma physics deals with phenomena of electromagnetic nature that involve very high temperatures. It is customary to express temperature as energy in a unit related to the electronvolt or kiloelectronvolt (eV/kB or keV/kB). The corresponding energy, which is dimensionally distinct from temperature, is then calculated as the product of the Boltzmann constant and temperature, $E=k_{\text{B}}T$
 . Then, 1 eV/kB is 11605 K. In the study of QCD matter one routinely encounters temperatures of the order of a few hundred MeV/kB, equivalent to about 1012 K.
 
 ### Continuous or discrete
@@ -222,21 +216,13 @@ Maxwell and Boltzmann developed a kinetic theory that yields a fundamental under
 
 This theory also explains the ideal gas law and the observed heat capacity of monatomic (or 'noble') gases.
 
-The ideal gas law is based on observed empirical relationships between pressure (p), volume (V), and temperature (T), and was recognized long before the kinetic theory of gases was developed (see Boyle's and Charles's laws). The ideal gas law states:
-
-$$ pV=nRT, $$
-
-where n is the number of moles of gas and R = 8.31446261815324 J⋅mol−1⋅K−1‍ is the gas constant.
+The ideal gas law is based on observed empirical relationships between pressure (p), volume (V), and temperature (T), and was recognized long before the kinetic theory of gases was developed (see Boyle's and Charles's laws). The ideal gas law states: $pV=nRT,$ where n is the number of moles of gas and R = 8.31446261815324 J⋅mol−1⋅K−1‍ is the gas constant.
 
 This relationship gives us our first hint that there is an absolute zero on the temperature scale, because it only holds if the temperature is measured on an absolute scale such as Kelvin's. The ideal gas law allows one to measure temperature on this absolute scale using the gas thermometer. The temperature in kelvins can be defined as the pressure in pascals of one mole of gas in a container of one cubic meter, divided by the gas constant.
 
 Although it is not a particularly convenient device, the gas thermometer provides an essential theoretical basis by which all thermometers can be calibrated. As a practical matter, it is not possible to use a gas thermometer to measure absolute zero temperature since the gases condense into a liquid long before the temperature reaches zero. It is possible, however, to extrapolate to absolute zero by using the ideal gas law, as shown in the figure.
 
-The kinetic theory assumes that pressure is caused by the force associated with individual atoms striking the walls, and that all energy is translational kinetic energy. Using a sophisticated symmetry argument, Boltzmann deduced what is now called the Maxwell–Boltzmann probability distribution function for the velocity of particles in an ideal gas. From that probability distribution function, the average kinetic energy (per particle) of a monatomic ideal gas is
-
-$$ E_{\text{k}}={\frac {1}{2}}mv_{\text{rms}}^{2}={\frac {3}{2}}k_{\text{B}}T, $$
-
-where the Boltzmann constant kB is the ideal gas constant divided by the Avogadro number, and 
+The kinetic theory assumes that pressure is caused by the force associated with individual atoms striking the walls, and that all energy is translational kinetic energy. Using a sophisticated symmetry argument, Boltzmann deduced what is now called the Maxwell–Boltzmann probability distribution function for the velocity of particles in an ideal gas. From that probability distribution function, the average kinetic energy (per particle) of a monatomic ideal gas is $E_{\text{k}}={\frac {1}{2}}mv_{\text{rms}}^{2}={\frac {3}{2}}k_{\text{B}}T,$ where the Boltzmann constant kB is the ideal gas constant divided by the Avogadro number, and
 
 {\textstyle v_{\text{rms}}={\sqrt {\langle v^{2}\rangle }}={\sqrt {\langle \mathbf {v\cdot v} \rangle }}}
  is the root-mean-square speed. This direct proportionality between temperature and mean molecular kinetic energy is a special case of the equipartition theorem, and holds only in the classical limit of a perfect gas. It does not hold exactly for most substances.
@@ -261,23 +247,12 @@ The efficiency is the work divided by the heat input:
 
 where wcy is the work done per cycle. The efficiency depends only on |qC|/qH. Because qC and qH correspond to heat transfer at the temperatures TC and TH, respectively, |qC|/qH should be some function of these temperatures:
 
-Carnot's theorem states that all reversible engines operating between the same heat reservoirs are equally efficient.  Thus, a heat engine operating between T1 and T3 must have the same efficiency as one consisting of two cycles, one between T1 and T2, and the second between T2 and T3. This can only be the case if
-
-$$ q_{13}={\frac {q_{1}q_{2}}{q_{2}q_{3}}}, $$
-
-which implies
-
-$$ q_{13}=f\left(T_{1},T_{3}\right)=f\left(T_{1},T_{2}\right)f\left(T_{2},T_{3}\right). $$
-
+Carnot's theorem states that all reversible engines operating between the same heat reservoirs are equally efficient.  Thus, a heat engine operating between T1 and T3 must have the same efficiency as one consisting of two cycles, one between T1 and T2, and the second between T2 and T3. This can only be the case if $q_{13}={\frac {q_{1}q_{2}}{q_{2}q_{3}}},$ which implies $q_{13}=f\left(T_{1},T_{3}\right)=f\left(T_{1},T_{2}\right)f\left(T_{2},T_{3}\right).$
 Since the first function is independent of T2, this temperature must cancel on the right side, meaning f(T1, T3) is of the form g(T1)/g(T3) (i.e. f(T1, T3) = f(T1, T2)f(T2, T3) = g(T1)/g(T2) · g(T2)/g(T3) = g(T1)/g(T3)), where g is a function of a single temperature. A temperature scale can now be chosen with the property that
 
 Substituting (6) back into (4) gives a relationship for the efficiency in terms of temperature:
 
-For TC = 0 K the efficiency is 100% and that efficiency becomes greater than 100% below 0 K. Since an efficiency greater than 100% violates the first law of thermodynamics, this implies that 0 K is the minimum possible temperature. In fact, the lowest temperature ever obtained in a macroscopic system was 20 nK, which was achieved in 1995 at NIST. Subtracting the right hand side of (5) from the middle portion and rearranging gives
-
-$$ {\frac {q_{\text{H}}}{T_{\text{H}}}}+{\frac {q_{\text{C}}}{T_{\text{C}}}}=0, $$
-
-where the negative sign indicates heat ejected from the system. This relationship suggests the existence of a state function, S, whose change characteristically vanishes for a complete cycle if it is defined by
+For TC = 0 K the efficiency is 100% and that efficiency becomes greater than 100% below 0 K. Since an efficiency greater than 100% violates the first law of thermodynamics, this implies that 0 K is the minimum possible temperature. In fact, the lowest temperature ever obtained in a macroscopic system was 20 nK, which was achieved in 1995 at NIST. Subtracting the right hand side of (5) from the middle portion and rearranging gives ${\frac {q_{\text{H}}}{T_{\text{H}}}}+{\frac {q_{\text{C}}}{T_{\text{C}}}}=0,$ where the negative sign indicates heat ejected from the system. This relationship suggests the existence of a state function, S, whose change characteristically vanishes for a complete cycle if it is defined by
 
 where the subscript indicates a reversible process. This function corresponds to the entropy of the system, which was described previously. Rearranging (8) gives a formula for temperature in terms of fictive infinitesimal quasi-reversible elements of entropy and heat:
 
@@ -287,53 +262,14 @@ i.e. the reciprocal of the temperature is the rate of increase of entropy with r
 
 ### Definition from statistical mechanics
 
-Statistical mechanics defines temperature based on a system's fundamental degrees of freedom. Eq.(10) is the defining relation of temperature, where the entropy 
+Statistical mechanics defines temperature based on a system's fundamental degrees of freedom. Eq.(10) is the defining relation of temperature, where the entropy $S$ is defined (up to a constant) by the logarithm of the number of microstates of the system in the given macrostate (as specified in the microcanonical ensemble): $S=k_{\mathrm {B} }\ln(W)$ where $k_{\mathrm {B} }$ is the Boltzmann constant and W is the number of microstates with the energy E of the system (degeneracy).
 
-$$ S $$
-
- is defined (up to a constant) by the logarithm of the number of microstates of the system in the given macrostate (as specified in the microcanonical ensemble): 
-
-$$ S=k_{\mathrm {B} }\ln(W) $$
-
-where 
-
-$$ k_{\mathrm {B} } $$
-
- is the Boltzmann constant and W is the number of microstates with the energy E of the system (degeneracy).
-
-When two systems with different temperatures are put into purely thermal connection, heat will flow from the higher temperature system to the lower temperature one; thermodynamically this is understood by the second law of thermodynamics: The total change in entropy following a transfer of energy 
-
-$$ \Delta E $$
-
- from system 1 to system 2 is:
-
-$$ \Delta S=-(dS/dE)_{1}\cdot \Delta E+(dS/dE)_{2}\cdot \Delta E=\left({\frac {1}{T_{2}}}-{\frac {1}{T_{1}}}\right)\Delta E $$
-
-and is thus positive if 
-
-$$ T_{1}>T_{2} $$
-
-From the point of view of statistical mechanics, the total number of microstates in the combined system 1 + system 2 is 
-
-$$ N_{1}\cdot N_{2} $$
-
-, the logarithm of which (times the Boltzmann constant) is the sum of their entropies; thus a flow of heat from high to low temperature, which brings an increase in total entropy, is more likely than any other scenario (normally it is much more likely), as there are more microstates in the resulting macrostate.
+When two systems with different temperatures are put into purely thermal connection, heat will flow from the higher temperature system to the lower temperature one; thermodynamically this is understood by the second law of thermodynamics: The total change in entropy following a transfer of energy $\Delta E$ from system 1 to system 2 is: $\Delta S=-(dS/dE)_{1}\cdot \Delta E+(dS/dE)_{2}\cdot \Delta E=\left({\frac {1}{T_{2}}}-{\frac {1}{T_{1}}}\right)\Delta E$ and is thus positive if $T_{1}>T_{2}$
+From the point of view of statistical mechanics, the total number of microstates in the combined system 1 + system 2 is $N_{1}\cdot N_{2}$ , the logarithm of which (times the Boltzmann constant) is the sum of their entropies; thus a flow of heat from high to low temperature, which brings an increase in total entropy, is more likely than any other scenario (normally it is much more likely), as there are more microstates in the resulting macrostate.
 
 ### Generalized temperature from single-particle statistics
 
-It is possible to extend the definition of temperature even to systems of few particles, like in a quantum dot. The generalized temperature is obtained by considering time ensembles instead of configuration-space ensembles given in statistical mechanics in the case of thermal and particle exchange between a small system of fermions (N even less than 10) with a single/double-occupancy system. The finite quantum grand canonical ensemble, obtained under the hypothesis of ergodicity and orthodicity, allows expressing the generalized temperature from the ratio of the average time of occupation 
-
-$$ \tau _{1} $$
-
- and 
-
-$$ \tau _{2} $$
-
- of the single/double-occupancy system:
-
-$$ T={\frac {E-E_{\text{F}}\left(1+{\frac {3}{2N}}\right)}{k_{\text{B}}\ln \left(2{\frac {\tau _{2}}{\tau _{1}}}\right)}}, $$
-
-where EF is the Fermi energy. This generalized temperature tends to the ordinary temperature when N goes to infinity.
+It is possible to extend the definition of temperature even to systems of few particles, like in a quantum dot. The generalized temperature is obtained by considering time ensembles instead of configuration-space ensembles given in statistical mechanics in the case of thermal and particle exchange between a small system of fermions (N even less than 10) with a single/double-occupancy system. The finite quantum grand canonical ensemble, obtained under the hypothesis of ergodicity and orthodicity, allows expressing the generalized temperature from the ratio of the average time of occupation $\tau _{1}$ and $\tau _{2}$ of the single/double-occupancy system: $T={\frac {E-E_{\text{F}}\left(1+{\frac {3}{2N}}\right)}{k_{\text{B}}\ln \left(2{\frac {\tau _{2}}{\tau _{1}}}\right)}},$ where EF is the Fermi energy. This generalized temperature tends to the ordinary temperature when N goes to infinity.
 
 ### Negative temperature
 

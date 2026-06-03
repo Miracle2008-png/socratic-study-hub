@@ -22,13 +22,7 @@ In a solid, shear stress is a function of strain, but in a fluid, shear stress i
 
 The behavior of fluids can be described by the Navier–Stokes equations—a set of partial differential equations which are based on:
 
-continuity (conservation of mass),
-
-conservation of linear momentum,
-
-conservation of angular momentum,
-
-conservation of energy.
+continuity (conservation of mass), conservation of linear momentum, conservation of angular momentum, conservation of energy.
 
 The study of fluids is fluid mechanics, which is subdivided into fluid dynamics and fluid statics depending on whether the fluid is in motion.
 

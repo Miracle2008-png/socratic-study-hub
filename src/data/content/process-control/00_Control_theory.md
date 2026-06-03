@@ -58,57 +58,26 @@ in the open left half of the complex plane for continuous time, when the Laplace
 
 inside the unit circle for discrete time, when the Z-transform is used.
 
-The difference between the two cases is simply due to the traditional method of plotting continuous time versus discrete time transfer functions. The continuous Laplace transform is in Cartesian coordinates where the 
-
-$$ x $$
-
- axis is the real axis and the discrete Z-transform is in circular coordinates where the 
-
-$$ \rho $$
-
- axis is the real axis.
+The difference between the two cases is simply due to the traditional method of plotting continuous time versus discrete time transfer functions. The continuous Laplace transform is in Cartesian coordinates where the $x$ axis is the real axis and the discrete Z-transform is in circular coordinates where the $\rho$ axis is the real axis.
 
 When the appropriate conditions above are satisfied a system is said to be asymptotically stable; the variables of an asymptotically stable control system always decrease from their initial value and do not show permanent oscillations. Permanent oscillations occur when a pole has a real part exactly equal to zero (in the continuous time case) or a modulus equal to one (in the discrete time case). If a simply stable system response neither decays nor grows over time, and has no oscillations, it is marginally stable; in this case the system transfer function has non-repeated poles at the complex plane origin (i.e. their real and complex component is zero in the continuous time case). Oscillations are present when poles with real part equal to zero have an imaginary part not equal to zero.
 
 If a system in question has an impulse response of
 
-          0.5
+0.5 $\ x[n]=0.5^{n}u[n]$ then the Z-transform (see this example), is given by
 
-$$ \ x[n]=0.5^{n}u[n] $$
+0.5 $\ X(z)={\frac {1}{1-0.5z^{-1}}}$ which has a pole in
 
-then the Z-transform (see this example), is given by
-
-              0.5
-
-$$ \ X(z)={\frac {1}{1-0.5z^{-1}}} $$
-
-which has a pole in 
-
-        0.5
-
-$$ z=0.5 $$
-
- (zero imaginary part). This system is BIBO (asymptotically) stable since the pole is inside the unit circle.
+        0.5 $z=0.5$
+(zero imaginary part). This system is BIBO (asymptotically) stable since the pole is inside the unit circle.
 
 However, if the impulse response was
 
-          1.5
+1.5 $\ x[n]=1.5^{n}u[n]$ then the Z-transform is
 
-$$ \ x[n]=1.5^{n}u[n] $$
+1.5 $\ X(z)={\frac {1}{1-1.5z^{-1}}}$ which has a pole at
 
-then the Z-transform is
-
-              1.5
-
-$$ \ X(z)={\frac {1}{1-1.5z^{-1}}} $$
-
-which has a pole at 
-
-        1.5
-
-$$ z=1.5 $$
-
- and is not BIBO stable since the pole has a modulus strictly greater than one.
+1.5 $z=1.5$ and is not BIBO stable since the pole has a modulus strictly greater than one.
 
 Numerous tools exist for the analysis of the poles of a system. These include graphical systems like the root locus, Bode plots or the Nyquist plots.
 
@@ -126,18 +95,7 @@ Solutions to problems of an uncontrollable or unobservable system include adding
 
 Several different control strategies have been devised in the past years. These vary from extremely general ones (PID controller), to others devoted to very particular classes of systems (especially robotics or aircraft cruise control).
 
-A control problem can have several specifications. Stability, of course, is always present. The controller must ensure that the closed-loop system is stable, regardless of the open-loop stability. A poor choice of controller can even worsen the stability of the open-loop system, which must normally be avoided. Sometimes it would be desired to obtain particular dynamics in the closed loop: i.e. that the poles have 
-
-$$ Re[\lambda ]<-{\overline {\lambda }} $$
-
-, where 
-
-$$ {\overline {\lambda }} $$
-
- is a fixed value strictly greater than zero, instead of simply asking that 
-
-$$ Re[\lambda ]<0 $$
-
+A control problem can have several specifications. Stability, of course, is always present. The controller must ensure that the closed-loop system is stable, regardless of the open-loop stability. A poor choice of controller can even worsen the stability of the open-loop system, which must normally be avoided. Sometimes it would be desired to obtain particular dynamics in the closed loop: i.e. that the poles have $Re[\lambda ]<-{\overline {\lambda }}$ , where ${\overline {\lambda }}$ is a fixed value strictly greater than zero, instead of simply asking that $Re[\lambda ]<0$
 .
 
 Another typical specification is the rejection of a step disturbance; including an integrator in the open-loop chain (i.e. directly before the system under control) easily achieves this. Other classes of disturbances need different types of sub-systems to be included.
@@ -152,10 +110,7 @@ A control system must always have some robustness property. A robust controller 
 
 System identification
 
-The process of determining the equations that govern the model's dynamics is called system identification. This can be done off-line: for example, executing a series of measures from which to calculate an approximated mathematical model, typically its transfer function or matrix. Such identification from the output, however, cannot take account of unobservable dynamics. Sometimes the model is built directly starting from known physical equations, for example, in the case of a mass-spring-damper system we know that 
-
-$$ m{\ddot {x}}(t)=-Kx(t)-\mathrm {B} {\dot {x}}(t) $$
-
+The process of determining the equations that govern the model's dynamics is called system identification. This can be done off-line: for example, executing a series of measures from which to calculate an approximated mathematical model, typically its transfer function or matrix. Such identification from the output, however, cannot take account of unobservable dynamics. Sometimes the model is built directly starting from known physical equations, for example, in the case of a mass-spring-damper system we know that $m{\ddot {x}}(t)=-Kx(t)-\mathrm {B} {\dot {x}}(t)$
 . Even assuming that a "complete" model is used in designing the controller, all the parameters included in these equations (called "nominal parameters") are never known with absolute precision; the control system will have to behave correctly even when connected to a physical system with true parameter values away from nominal.
 
 Some advanced control techniques include an "on-line" identification process (see later). The parameters of the model are calculated ("identified") while the controller itself is running. In this way, if a drastic variation of the parameters ensues, for example, if the robot's arm releases a weight, the controller will adjust itself consequently in order to ensure the correct performance.

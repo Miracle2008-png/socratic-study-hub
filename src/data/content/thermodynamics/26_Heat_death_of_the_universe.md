@@ -20,13 +20,7 @@ Thermodynamic heat death is a classical-physics concept, but has been extended t
 
 The theory suggests that from the "Big Bang" through the present day, matter and dark matter in the universe are thought to have been concentrated in stars, galaxies, and galaxy clusters, and are presumed to continue to do so well into the future. Therefore, the universe is not in thermodynamic equilibrium, and objects can do physical work.:§VID The decay time for a supermassive black hole of roughly 1 galaxy mass (1011 solar masses) because of Hawking radiation is in the order of 10100 years, so entropy can be produced until at least that time. Some large black holes in the universe are predicted to continue to grow up to perhaps 1014 M☉ during the collapse of superclusters of galaxies. Even these would evaporate over a timescale of up to 10106 years. After that time, the universe enters the so-called Dark Era and is expected to consist chiefly of a dilute gas of photons and leptons.:§VIA With only very diffuse matter remaining, activity in the universe will have tailed off dramatically, with extremely low energy levels and extremely long timescales. Speculatively, it is possible that the universe may enter a second inflationary epoch, or assuming that the current vacuum state is a false vacuum, the vacuum may decay into a lower-energy state.:§VE It is also possible that entropy production will cease and the universe will reach heat death.:§VID
 
-It has been hypothesized that, over vast periods of time, a spontaneous entropy decrease could eventually occur via the Poincaré recurrence theorem,
-
- thermal fluctuations, and fluctuation theorem. Through this, another Big Bang could possibly create a new universe similar to the current one by quantum fluctuations and quantum tunnelling in roughly 
-
-$$ 10^{10^{10^{56}}} $$
-
- years.
+It has been hypothesized that, over vast periods of time, a spontaneous entropy decrease could eventually occur via the Poincaré recurrence theorem, thermal fluctuations, and fluctuation theorem. Through this, another Big Bang could possibly create a new universe similar to the current one by quantum fluctuations and quantum tunnelling in roughly $10^{10^{10^{56}}}$ years.
 
 ## Opposing views
 

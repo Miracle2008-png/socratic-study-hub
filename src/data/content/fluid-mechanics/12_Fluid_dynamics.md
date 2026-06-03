@@ -142,9 +142,7 @@ This branch of fluid dynamics augments the standard hydrodynamic equations with 
 
 thermal fluctuations.
 
-As formulated by Landau and Lifshitz,
-
-a white noise contribution obtained from the fluctuation-dissipation theorem of statistical mechanics
+As formulated by Landau and Lifshitz, a white noise contribution obtained from the fluctuation-dissipation theorem of statistical mechanics
 
 is added to the viscous stress tensor and heat flux.
 

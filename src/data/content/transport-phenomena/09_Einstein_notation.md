@@ -6,77 +6,21 @@ In mathematics, especially the usage of linear algebra in mathematical physics a
 
 ### Superscripts and subscripts versus only subscripts
 
-In terms of covariance and contravariance of vectors,
-
-upper indices represent components of contravariant vectors (vectors),
-
-lower indices represent components of covariant vectors (covectors).
+In terms of covariance and contravariance of vectors, upper indices represent components of contravariant vectors (vectors), lower indices represent components of covariant vectors (covectors).
 
 They transform contravariantly or covariantly, respectively, with respect to change of basis.
 
-In recognition of this fact, the following notation uses the same symbol both for a vector or covector and its components, as in:
+In recognition of this fact, the following notation uses the same symbol both for a vector or covector and its components, as in: ${\begin{aligned}v=e_{i}v^{i}={\begin{bmatrix}e_{1}&e_{2}&\cdots &e_{n}\end{bmatrix}}{\begin{bmatrix}v^{1}\\v^{2}\\\vdots \\v^{n}\end{bmatrix}}\\w=w_{i}e^{i}={\begin{bmatrix}w_{1}&w_{2}&\cdots &w_{n}\end{bmatrix}}{\begin{bmatrix}e^{1}\\e^{2}\\\vdots \\e^{n}\end{bmatrix}}\end{aligned}}$ where $v$ is the vector and $v^{i}$ are its components (not the $i$ th covector $v$ ), $w$ is the covector and $w_{i}$ are its components. The basis vector elements $e_{i}$ are each column vectors, and the covector basis elements $e^{i}$ are each row covectors. (See also § Abstract description; duality, below and the examples)
 
-$$ {\begin{aligned}v=e_{i}v^{i}={\begin{bmatrix}e_{1}&e_{2}&\cdots &e_{n}\end{bmatrix}}{\begin{bmatrix}v^{1}\\v^{2}\\\vdots \\v^{n}\end{bmatrix}}\\w=w_{i}e^{i}={\begin{bmatrix}w_{1}&w_{2}&\cdots &w_{n}\end{bmatrix}}{\begin{bmatrix}e^{1}\\e^{2}\\\vdots \\e^{n}\end{bmatrix}}\end{aligned}} $$
+In the presence of a non-degenerate form (an isomorphism $V\to V^{*}$ , for instance a Riemannian metric or Minkowski metric), one can raise and lower indices.
 
-where 
-
-$$ v $$
-
- is the vector and 
-
-$$ v^{i} $$
-
- are its components (not the 
-
-$$ i $$
-
-th covector 
-
-$$ v $$
-
-), 
-
-$$ w $$
-
- is the covector and 
-
-$$ w_{i} $$
-
- are its components. The basis vector elements 
-
-$$ e_{i} $$
-
- are each column vectors, and the covector basis elements 
-
-$$ e^{i} $$
-
- are each row covectors. (See also § Abstract description; duality, below and the examples)
-
-In the presence of a non-degenerate form (an isomorphism 
-
-$$ V\to V^{*} $$
-
-, for instance a Riemannian metric or Minkowski metric), one can raise and lower indices.
-
-A basis gives such a form (via the dual basis), hence when working on 
-
-$$ \mathbb {R} ^{n} $$
-
- with a Euclidean metric and a fixed orthonormal basis, one has the option to work with only subscripts.
+A basis gives such a form (via the dual basis), hence when working on $\mathbb {R} ^{n}$ with a Euclidean metric and a fixed orthonormal basis, one has the option to work with only subscripts.
 
 However, if one changes coordinates, the way that coefficients change depends on the variance of the object, and one cannot ignore the distinction; see Covariance and contravariance of vectors.
 
 ### Mnemonics
 
-In the above example, vectors are represented as 
-
-$$ n\times 1 $$
-
- matrices (column vectors), while covectors are represented as 
-
-$$ 1\times n $$
-
- matrices (row covectors).
+In the above example, vectors are represented as $n\times 1$ matrices (column vectors), while covectors are represented as $1\times n$ matrices (row covectors).
 
 When using the column vector convention:
 
@@ -84,17 +28,11 @@ When using the column vector convention:
 
 "Covariant tensors are row vectors that have indices that are below (co-row-below)."
 
-Covectors are row vectors: 
+Covectors are row vectors: ${\begin{bmatrix}w_{1}&\cdots &w_{k}\end{bmatrix}}.$
+Hence the lower index indicates which column you are in.
 
-$$ {\begin{bmatrix}w_{1}&\cdots &w_{k}\end{bmatrix}}. $$
-
- Hence the lower index indicates which column you are in.
-
-Contravariant vectors are column vectors: 
-
-$$ {\begin{bmatrix}v^{1}\\\vdots \\v^{k}\end{bmatrix}} $$
-
- Hence the upper index indicates which row you are in.
+Contravariant vectors are column vectors: ${\begin{bmatrix}v^{1}\\\vdots \\v^{k}\end{bmatrix}}$
+Hence the upper index indicates which row you are in.
 
 ### Abstract description
 
@@ -104,218 +42,48 @@ In physics, a scalar is invariant under transformations of basis. In particular,
 
 As for covectors, they change by the inverse matrix. This is designed to guarantee that the linear function associated with the covector, the sum above, is the same no matter what the basis is.
 
-The value of the Einstein convention is that it applies to other vector spaces built from 
-
-$$ V $$
-
- using the tensor product and duality. For example, 
-
-$$ V\otimes V $$
-
-, the tensor product of 
-
-$$ V $$
-
-with itself, has a basis consisting of tensors of the form 
-
-$$ \mathbf {e} _{ij}=\mathbf {e} _{i}\otimes \mathbf {e} _{j} $$
-
-. Any tensor 
-
-$$ \mathbf {T} $$
-
- in 
-
-$$ V\otimes V $$
-
- can be written as:
-
-$$ \mathbf {T} =T^{ij}\mathbf {e} _{ij}. $$
-
-The dual space 
-
-$$ V^{*} $$
-
- of 
-
-$$ V $$
-
- has a basis 
-
-$$ \mathbf {e} ^{1},\mathbf {e} ^{2},\dots ,\mathbf {e} ^{n} $$
-
- which obeys the rule
-
-$$ \mathbf {e} ^{i}(\mathbf {e} _{j})=\delta _{j}^{i}. $$
-
-where 
-
-$$ \delta $$
-
- is the Kronecker delta. As
-
-$$ \operatorname {Hom} (V,W)=V^{*}\otimes W $$
-
-the row/column coordinates on a matrix correspond to the upper/lower indices on the tensor product.
+The value of the Einstein convention is that it applies to other vector spaces built from $V$ using the tensor product and duality. For example, $V\otimes V$ , the tensor product of $V$ with itself, has a basis consisting of tensors of the form $\mathbf {e} _{ij}=\mathbf {e} _{i}\otimes \mathbf {e} _{j}$
+. Any tensor $\mathbf {T}$ in $V\otimes V$ can be written as: $\mathbf {T} =T^{ij}\mathbf {e} _{ij}.$
+The dual space $V^{*}$ of $V$ has a basis $\mathbf {e} ^{1},\mathbf {e} ^{2},\dots ,\mathbf {e} ^{n}$ which obeys the rule $\mathbf {e} ^{i}(\mathbf {e} _{j})=\delta _{j}^{i}.$ where $\delta$ is the Kronecker delta. As $\operatorname {Hom} (V,W)=V^{*}\otimes W$ the row/column coordinates on a matrix correspond to the upper/lower indices on the tensor product.
 
 ## Common operations in this notation
 
-In Einstein notation, the usual element reference 
-
-$$ A_{mn} $$
-
- for the 
-
-$$ m $$
-
--th row and 
-
-$$ n $$
-
--th column of matrix 
-
-$$ A $$
-
- becomes 
-
-$$ {A^{m}}_{n} $$
-
+In Einstein notation, the usual element reference $A_{mn}$ for the $m$
+-th row and $n$
+-th column of matrix $A$
+becomes ${A^{m}}_{n}$
 . We can then write the following operations in Einstein notation as follows.
 
 ### Inner product
 
-The inner product of two vectors is the sum of the products of their corresponding components, with the indices of one vector lowered (see #Raising and lowering indices):
-
-$$ \langle \mathbf {u} ,\mathbf {v} \rangle =\langle \mathbf {e} _{i},\mathbf {e} _{j}\rangle u^{i}v^{j}=u_{j}v^{j} $$
-
-In the case of an orthonormal basis, we have 
-
-$$ u^{j}=u_{j} $$
-
-, and the expression simplifies to:
-
-$$ \langle \mathbf {u} ,\mathbf {v} \rangle =\sum _{j}u^{j}v^{j}=u_{j}v^{j} $$
-
+The inner product of two vectors is the sum of the products of their corresponding components, with the indices of one vector lowered (see #Raising and lowering indices): $\langle \mathbf {u} ,\mathbf {v} \rangle =\langle \mathbf {e} _{i},\mathbf {e} _{j}\rangle u^{i}v^{j}=u_{j}v^{j}$
+In the case of an orthonormal basis, we have $u^{j}=u_{j}$ , and the expression simplifies to: $\langle \mathbf {u} ,\mathbf {v} \rangle =\sum _{j}u^{j}v^{j}=u_{j}v^{j}$
 ### Vector cross product
 
-In three dimensions, the cross product of two vectors with respect to a positively oriented orthonormal basis, meaning that 
-
-$$ \mathbf {e} _{1}\times \mathbf {e} _{2}=\mathbf {e} _{3} $$
-
-, can be expressed as:
-
-$$ \mathbf {u} \times \mathbf {v} =\varepsilon _{\,jk}^{i}u^{j}v^{k}\mathbf {e} _{i} $$
-
-Here, 
-
-$$ \varepsilon _{\,jk}^{i}=\varepsilon _{ijk} $$
-
- is the Levi-Civita symbol. Since the basis is orthonormal, raising the index 
-
-$$ i $$
-
- does not alter the value of 
-
-$$ \varepsilon _{ijk} $$
-
-, when treated as a tensor.
+In three dimensions, the cross product of two vectors with respect to a positively oriented orthonormal basis, meaning that $\mathbf {e} _{1}\times \mathbf {e} _{2}=\mathbf {e} _{3}$ , can be expressed as: $\mathbf {u} \times \mathbf {v} =\varepsilon _{\,jk}^{i}u^{j}v^{k}\mathbf {e} _{i}$
+Here, $\varepsilon _{\,jk}^{i}=\varepsilon _{ijk}$ is the Levi-Civita symbol. Since the basis is orthonormal, raising the index $i$ does not alter the value of $\varepsilon _{ijk}$ , when treated as a tensor.
 
 ### Matrix-vector multiplication
 
-The product of a matrix 
-
-$$ A_{ij} $$
-
- with a column vector 
-
-$$ v_{j} $$
-
- is:
-
-$$ \mathbf {u} _{i}=(\mathbf {A} \mathbf {v} )_{i}=\sum _{j=1}^{N}A_{ij}v_{j} $$
-
-equivalent to
-
-$$ u^{i}={A^{i}}_{j}v^{j} $$
-
+The product of a matrix $A_{ij}$ with a column vector $v_{j}$ is: $\mathbf {u} _{i}=(\mathbf {A} \mathbf {v} )_{i}=\sum _{j=1}^{N}A_{ij}v_{j}$ equivalent to $u^{i}={A^{i}}_{j}v^{j}$
 This is a special case of matrix multiplication.
 
 ### Matrix multiplication
 
-The matrix product of two matrices 
-
-$$ A_{ij} $$
-
- and 
-
-$$ B_{jk} $$
-
- is:
-
-$$ \mathbf {C} _{ik}=(\mathbf {A} \mathbf {B} )_{ik}=\sum _{j=1}^{N}A_{ij}B_{jk} $$
-
-equivalent to
-
-$$ {C^{i}}_{k}={A^{i}}_{j}{B^{j}}_{k} $$
-
+The matrix product of two matrices $A_{ij}$ and $B_{jk}$ is: $\mathbf {C} _{ik}=(\mathbf {A} \mathbf {B} )_{ik}=\sum _{j=1}^{N}A_{ij}B_{jk}$ equivalent to ${C^{i}}_{k}={A^{i}}_{j}{B^{j}}_{k}$
 ### Trace
 
-For a square matrix 
-
-$$ {A^{i}}_{j} $$
-
-, the trace is the sum of the diagonal elements, hence the sum over a common index 
-
-$$ {A^{i}}_{i} $$
-
+For a square matrix ${A^{i}}_{j}$ , the trace is the sum of the diagonal elements, hence the sum over a common index ${A^{i}}_{i}$
 .
 
 ### Outer product
 
-The outer product of the column vector 
-
-$$ u^{i} $$
-
- by the row vector 
-
-$$ v_{j} $$
-
- yields an 
-
-$$ m\times n $$
-
- matrix 
-
-$$ \mathbf {A} $$
-
-:
-
-$$ {A^{i}}_{j}=u^{i}v_{j}={(uv)^{i}}_{j} $$
-
-Since 
-
-$$ i $$
-
- and 
-
-$$ j $$
-
- represent two different indices, there is no summation and the indices are not eliminated by the multiplication.
+The outer product of the column vector $u^{i}$ by the row vector $v_{j}$ yields an $m\times n$ matrix $\mathbf {A}$
+: ${A^{i}}_{j}=u^{i}v_{j}={(uv)^{i}}_{j}$
+Since $i$ and $j$ represent two different indices, there is no summation and the indices are not eliminated by the multiplication.
 
 ### Raising and lowering indices
 
-Given a tensor, one can raise an index or lower an index by contracting the tensor with the metric tensor, 
-
-$$ g_{\mu \nu } $$
-
-. For example, taking the tensor 
-
-$$ {T^{\alpha }}_{\beta } $$
-
-, one can lower an index:
-
-$$ g_{\mu \sigma }{T^{\sigma }}_{\beta }=T_{\mu \beta } $$
-
-Or one can raise an index:
-
-$$ g^{\mu \sigma }{T_{\sigma }}^{\alpha }=T^{\mu \alpha } $$
+Given a tensor, one can raise an index or lower an index by contracting the tensor with the metric tensor, $g_{\mu \nu }$
+. For example, taking the tensor ${T^{\alpha }}_{\beta }$ , one can lower an index: $g_{\mu \sigma }{T^{\sigma }}_{\beta }=T_{\mu \beta }$
+Or one can raise an index: $g^{\mu \sigma }{T_{\sigma }}^{\alpha }=T^{\mu \alpha }$

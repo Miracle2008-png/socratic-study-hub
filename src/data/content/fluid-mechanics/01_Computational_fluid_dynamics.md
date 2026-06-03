@@ -44,97 +44,17 @@ Incompressible Navier-Stokes equations (I-NS):  Start with the C-NS.  Assume tha
 
 Compressible Euler equations (EE):  Start with the C-NS.  Assume a frictionless flow with no diffusive heat flux.
 
-Weakly compressible Navier-Stokes equations (WC-NS):  Start with the C-NS.  Assume that density variations depend only on temperature and not on pressure. For example, for an ideal gas, use 
-
-$$ \rho =p_{0}/(RT) $$
-
-, where 
-
-$$ p_{0} $$
-
- is a conveniently defined reference pressure that is always and everywhere constant, 
-
-$$ \rho $$
-
- is density, 
-
-$$ R $$
-
- is the specific gas constant, and 
-
-$$ T $$
-
- is temperature.  As a result, the WC-NS do not capture acoustic waves.  It is also common in the WC-NS to neglect the pressure-work and viscous-heating terms in the energy-conservation equation.  The WC-NS are also called the C-NS with the low-Mach-number approximation.
+Weakly compressible Navier-Stokes equations (WC-NS):  Start with the C-NS.  Assume that density variations depend only on temperature and not on pressure. For example, for an ideal gas, use $\rho =p_{0}/(RT)$ , where $p_{0}$ is a conveniently defined reference pressure that is always and everywhere constant, $\rho$ is density, $R$ is the specific gas constant, and $T$ is temperature.  As a result, the WC-NS do not capture acoustic waves.  It is also common in the WC-NS to neglect the pressure-work and viscous-heating terms in the energy-conservation equation.  The WC-NS are also called the C-NS with the low-Mach-number approximation.
 
 Boussinesq equations:  Start with the C-NS.  Assume that density variations are always and everywhere negligible except in the gravity term of the momentum-conservation equation (where density multiplies the gravitational acceleration). Also assume that various fluid properties such as viscosity, thermal conductivity, and heat capacity are always and everywhere constant.  The Boussinesq equations are widely used in microscale meteorology.
 
-Compressible Reynolds-averaged Navier–Stokes equations and compressible Favre-averaged Navier-Stokes equations (C-RANS and C-FANS):  Start with the C-NS.  Assume that any flow variable 
-
-$$ f $$
-
-, such as density, velocity and pressure, can be represented as 
-
-$$ f=F+f'' $$
-
-, where 
-
-$$ F $$
-
- is the ensemble-average of any flow variable, and 
-
-$$ f'' $$
-
- is a perturbation or fluctuation from this average. 
-
-$$ f'' $$
-
- is not necessarily small.  If 
-
-$$ F $$
-
- is a classic ensemble-average (see Reynolds decomposition) one obtains the Reynolds-averaged Navier–Stokes equations.  And if 
-
-$$ F $$
-
- is a density-weighted ensemble-average one obtains the Favre-averaged Navier-Stokes equations.  As a result, and depending on the Reynolds number, the range of scales of motion is greatly reduced, something which leads to much faster solutions in comparison to solving the C-NS.  However, information is lost, and the resulting system of equations requires the closure of various unclosed terms, notably the Reynolds stress.
+Compressible Reynolds-averaged Navier–Stokes equations and compressible Favre-averaged Navier-Stokes equations (C-RANS and C-FANS):  Start with the C-NS.  Assume that any flow variable $f$ , such as density, velocity and pressure, can be represented as $f=F+f''$ , where $F$ is the ensemble-average of any flow variable, and $f''$ is a perturbation or fluctuation from this average. $f''$ is not necessarily small.  If $F$ is a classic ensemble-average (see Reynolds decomposition) one obtains the Reynolds-averaged Navier–Stokes equations.  And if $F$ is a density-weighted ensemble-average one obtains the Favre-averaged Navier-Stokes equations.  As a result, and depending on the Reynolds number, the range of scales of motion is greatly reduced, something which leads to much faster solutions in comparison to solving the C-NS.  However, information is lost, and the resulting system of equations requires the closure of various unclosed terms, notably the Reynolds stress.
 
 Ideal flow or potential flow equations:  Start with the EE.  Assume zero fluid-particle rotation (zero vorticity) and zero flow expansion (zero divergence).  The resulting flowfield is entirely determined by the geometrical boundaries.  Ideal flows can be useful in modern CFD to initialize simulations.
 
-Linearized compressible Euler equations (LEE):  Start with the EE.  Assume that any flow variable 
+Linearized compressible Euler equations (LEE):  Start with the EE.  Assume that any flow variable $f$ , such as density, velocity and pressure, can be represented as $f=f_{0}+f'$ , where $f_{0}$ is the value of the flow variable at some reference or base state, and $f'$ is a perturbation or fluctuation from this state.  Furthermore, assume that this perturbation $f'$ is very small in comparison with some reference value.  Finally, assume that $f_{0}$ satisfies "its own" equation, such as the EE. The LEE and its multiple variations are widely used in computational aeroacoustics.
 
-$$ f $$
-
-, such as density, velocity and pressure, can be represented as 
-
-$$ f=f_{0}+f' $$
-
-, where 
-
-$$ f_{0} $$
-
- is the value of the flow variable at some reference or base state, and 
-
-$$ f' $$
-
- is a perturbation or fluctuation from this state.  Furthermore, assume that this perturbation 
-
-$$ f' $$
-
- is very small in comparison with some reference value.  Finally, assume that 
-
-$$ f_{0} $$
-
- satisfies "its own" equation, such as the EE. The LEE and its multiple variations are widely used in computational aeroacoustics.
-
-Sound wave or acoustic wave equation:   Start with the LEE.  Neglect all gradients of 
-
-$$ f_{0} $$
-
- and 
-
-$$ f' $$
-
-, and assume that the Mach number at the reference or base state is very small.  The resulting equations for density, momentum and energy can be manipulated into a pressure equation, giving the well-known sound wave equation.
+Sound wave or acoustic wave equation:   Start with the LEE.  Neglect all gradients of $f_{0}$ and $f'$ , and assume that the Mach number at the reference or base state is very small.  The resulting equations for density, momentum and energy can be manipulated into a pressure equation, giving the well-known sound wave equation.
 
 Shallow water equations (SW):  Consider a flow near a wall where the wall-parallel length-scale of interest is much larger than the wall-normal length-scale of interest.  Start with the EE.  Assume that density is always and everywhere constant, neglect the velocity component perpendicular to the wall, and consider the velocity parallel to the wall to be spatially-constant.
 
@@ -182,100 +102,21 @@ Some of the discretization methods being used are:
 
 The finite volume method (FVM) is a common approach used in CFD codes, as it has an advantage in memory usage and solution speed, especially for large problems, high Reynolds number turbulent flows, and source term dominated flows (like combustion).
 
-In the finite volume method, the governing partial differential equations (typically the Navier-Stokes equations, the mass and energy conservation equations, and the turbulence equations) are recast in a conservative form, and then solved over discrete control volumes. This discretization guarantees the conservation of fluxes through a particular control volume. The finite volume equation yields governing equations in the form,
-
-$$ {\frac {\partial }{\partial t}}\iiint Q\,dV+\iint F\,d\mathbf {A} =0, $$
-
-where 
-
-$$ Q $$
-
- is the vector of conserved variables, 
-
-$$ F $$
-
- is the vector of fluxes (see Euler equations or Navier–Stokes equations), 
-
-$$ V $$
-
- is the volume of the control volume element, and 
-
-$$ \mathbf {A} $$
-
- is the surface area of the control volume element.
+In the finite volume method, the governing partial differential equations (typically the Navier-Stokes equations, the mass and energy conservation equations, and the turbulence equations) are recast in a conservative form, and then solved over discrete control volumes. This discretization guarantees the conservation of fluxes through a particular control volume. The finite volume equation yields governing equations in the form, ${\frac {\partial }{\partial t}}\iiint Q\,dV+\iint F\,d\mathbf {A} =0,$ where $Q$ is the vector of conserved variables, $F$ is the vector of fluxes (see Euler equations or Navier–Stokes equations), $V$ is the volume of the control volume element, and $\mathbf {A}$ is the surface area of the control volume element.
 
 #### Finite element method
 
 The finite element method (FEM) is used in structural analysis of solids, but is also applicable to fluids.  However, the FEM formulation requires special care to ensure a conservative solution. The FEM formulation has been adapted for use with fluid dynamics governing equations. Although FEM must be carefully formulated to be conservative, it is much more stable than the finite volume approach. FEM also provides more accurate solutions for smooth problems comparing to FVM. Another advantage of FEM is that it can handle complex geometries and boundary conditions. However, FEM can require more memory and has slower solution times than the FVM.
 
-In this method, a weighted residual equation is formed:
-
-$$ R_{i}=\iiint W_{i}Q\,dV^{e} $$
-
-where 
-
-$$ R_{i} $$
-
- is the equation residual at an element vertex 
-
-$$ i $$
-
-, 
-
-$$ Q $$
-
- is the conservation equation expressed on an element basis, 
-
-$$ W_{i} $$
-
- is the weight factor, and 
-
-$$ V^{e} $$
-
- is the volume of the element.
+In this method, a weighted residual equation is formed: $R_{i}=\iiint W_{i}Q\,dV^{e}$ where $R_{i}$ is the equation residual at an element vertex $i$ , $Q$ is the conservation equation expressed on an element basis, $W_{i}$ is the weight factor, and $V^{e}$ is the volume of the element.
 
 #### Finite difference method
 
-The finite difference method (FDM) has historical importance and is simple to program.  It is currently only used in few specialized codes, which handle complex geometry with high accuracy and efficiency by using embedded boundaries or overlapping grids (with the solution interpolated across each grid). 
-
-$$ {\frac {\partial Q}{\partial t}}+{\frac {\partial F}{\partial x}}+{\frac {\partial G}{\partial y}}+{\frac {\partial H}{\partial z}}=0 $$
-
-where 
-
-$$ Q $$
-
- is the vector of conserved variables, and 
-
-$$ F $$
-
-, 
-
-$$ G $$
-
-, and 
-
-$$ H $$
-
- are the fluxes in the 
-
-$$ x $$
-
-, 
-
-$$ y $$
-
-, and 
-
-$$ z $$
-
- directions respectively.
+The finite difference method (FDM) has historical importance and is simple to program.  It is currently only used in few specialized codes, which handle complex geometry with high accuracy and efficiency by using embedded boundaries or overlapping grids (with the solution interpolated across each grid). ${\frac {\partial Q}{\partial t}}+{\frac {\partial F}{\partial x}}+{\frac {\partial G}{\partial y}}+{\frac {\partial H}{\partial z}}=0$ where $Q$ is the vector of conserved variables, and $F$ , $G$ , and $H$ are the fluxes in the $x$ , $y$ , and $z$ directions respectively.
 
 #### Spectral element method
 
-Spectral element method is a finite element type method. It requires the mathematical problem (the partial differential equation) to be cast in a weak formulation. This is typically done by multiplying the differential equation by an arbitrary test function and integrating over the whole domain. Purely mathematically, the test functions are completely arbitrary - they belong to an infinite-dimensional function space. Clearly an infinite-dimensional function space cannot be represented on a discrete spectral element mesh; this is where the spectral element discretization begins. The most crucial thing is the choice of interpolating and testing functions. In a standard, low order FEM in 2D, for quadrilateral elements the most typical choice is the bilinear test or interpolating function of the form 
-
-$$ v(x,y)=ax+by+cxy+d $$
-
+Spectral element method is a finite element type method. It requires the mathematical problem (the partial differential equation) to be cast in a weak formulation. This is typically done by multiplying the differential equation by an arbitrary test function and integrating over the whole domain. Purely mathematically, the test functions are completely arbitrary - they belong to an infinite-dimensional function space. Clearly an infinite-dimensional function space cannot be represented on a discrete spectral element mesh; this is where the spectral element discretization begins. The most crucial thing is the choice of interpolating and testing functions. In a standard, low order FEM in 2D, for quadrilateral elements the most typical choice is the bilinear test or interpolating function of the form $v(x,y)=ax+by+cxy+d$
 . In a spectral element method however, the interpolating and test functions are chosen to be polynomials of a very high order (typically e.g. of the 10th order in CFD applications). This guarantees the rapid convergence of the method. Furthermore, very efficient integration procedures must be used, since the number of integrations to be performed in numerical codes is big. Thus, high order Gauss integration quadratures are employed, since they achieve the highest accuracy with the smallest number of computations to be carried out.
 
 At the time there are some academic CFD codes based on the spectral element method and some more are currently under development, since the new time-stepping schemes arise in the scientific world.
@@ -324,19 +165,7 @@ RANS models can be divided into two broad approaches:
 
 Boussinesq hypothesis
 
-This method involves using an algebraic equation for the Reynolds stresses which include determining the turbulent viscosity, and depending on the level of sophistication of the model, solving transport equations for determining the turbulent kinetic energy and dissipation. Models include k-ε (Launder and Spalding), Mixing Length Model (Prandtl), and Zero Equation Model (Cebeci and Smith). The models available in this approach are often referred to by the number of transport equations associated with the method. For example, the Mixing Length model is a "Zero Equation" model because no transport equations are solved; the 
-
-$$ k-\epsilon $$
-
- is a "Two Equation" model because two transport equations (one for 
-
-$$ k $$
-
- and one for 
-
-$$ \epsilon $$
-
-) are solved.
+This method involves using an algebraic equation for the Reynolds stresses which include determining the turbulent viscosity, and depending on the level of sophistication of the model, solving transport equations for determining the turbulent kinetic energy and dissipation. Models include k-ε (Launder and Spalding), Mixing Length Model (Prandtl), and Zero Equation Model (Cebeci and Smith). The models available in this approach are often referred to by the number of transport equations associated with the method. For example, the Mixing Length model is a "Zero Equation" model because no transport equations are solved; the $k-\epsilon$ is a "Two Equation" model because two transport equations (one for $k$ and one for $\epsilon$ ) are solved.
 
 Reynolds stress model (RSM)
 
@@ -352,38 +181,16 @@ Detached eddy simulations (DES) is a modification of a RANS model in which the m
 
 #### Direct numerical simulation
 
-Direct numerical simulation (DNS) resolves the entire range of turbulent length scales.  This marginalizes the effect of models, but is extremely expensive.  The computational cost is proportional to 
-
-$$ Re^{3} $$
-
+Direct numerical simulation (DNS) resolves the entire range of turbulent length scales.  This marginalizes the effect of models, but is extremely expensive.  The computational cost is proportional to $Re^{3}$
 . DNS is intractable for flows with complex geometries or flow configurations.
 
 #### Coherent vortex simulation
 
-The coherent vortex simulation approach decomposes the turbulent flow field into a coherent part, consisting of organized vortical motion, and the incoherent part, which is the random background flow.  This decomposition is done using wavelet filtering.  The approach has much in common with LES, since it uses decomposition and resolves only the filtered portion, but different in that it does not use a linear, low-pass filter.  Instead, the filtering operation is based on wavelets, and the filter can be adapted as the flow field evolves. Farge and Schneider tested the CVS method with two flow configurations and showed that the coherent portion of the flow exhibited the 
-
-$$ -{\frac {40}{39}} $$
-
- energy spectrum exhibited by the total flow, and corresponded to coherent structures (vortex tubes), while the incoherent parts of the flow composed homogeneous background noise, which exhibited no organized structures.  Goldstein and Vasilyev applied the FDV model to large eddy simulation, but did not assume that the wavelet filter eliminated all coherent motions from the subfilter scales.  By employing both LES and CVS filtering, they showed that the SFS dissipation was dominated by the SFS flow field's coherent portion.
+The coherent vortex simulation approach decomposes the turbulent flow field into a coherent part, consisting of organized vortical motion, and the incoherent part, which is the random background flow.  This decomposition is done using wavelet filtering.  The approach has much in common with LES, since it uses decomposition and resolves only the filtered portion, but different in that it does not use a linear, low-pass filter.  Instead, the filtering operation is based on wavelets, and the filter can be adapted as the flow field evolves. Farge and Schneider tested the CVS method with two flow configurations and showed that the coherent portion of the flow exhibited the $-{\frac {40}{39}}$ energy spectrum exhibited by the total flow, and corresponded to coherent structures (vortex tubes), while the incoherent parts of the flow composed homogeneous background noise, which exhibited no organized structures.  Goldstein and Vasilyev applied the FDV model to large eddy simulation, but did not assume that the wavelet filter eliminated all coherent motions from the subfilter scales.  By employing both LES and CVS filtering, they showed that the SFS dissipation was dominated by the SFS flow field's coherent portion.
 
 #### PDF methods
 
-Probability density function (PDF) methods for turbulence, first introduced by Lundgren, are based on tracking the one-point PDF of the velocity, 
-
-$$ f_{V}({\boldsymbol {v}};{\boldsymbol {x}},t)d{\boldsymbol {v}} $$
-
-, which gives the probability of the velocity at point 
-
-$$ {\boldsymbol {x}} $$
-
- being between 
-
-$$ {\boldsymbol {v}} $$
-
- and 
-
-$$ {\boldsymbol {v}}+d{\boldsymbol {v}} $$
-
+Probability density function (PDF) methods for turbulence, first introduced by Lundgren, are based on tracking the one-point PDF of the velocity, $f_{V}({\boldsymbol {v}};{\boldsymbol {x}},t)d{\boldsymbol {v}}$ , which gives the probability of the velocity at point ${\boldsymbol {x}}$ being between ${\boldsymbol {v}}$ and ${\boldsymbol {v}}+d{\boldsymbol {v}}$
 .  This approach is analogous to the kinetic theory of gases, in which the macroscopic properties of a gas are described by a large number of particles.  PDF methods are unique in that they can be applied in the framework of a number of different turbulence models; the main differences occur in the form of the PDF transport equation.  For example, in the context of large eddy simulation, the PDF becomes the filtered PDF.  PDF methods can also be used to describe chemical reactions, and are particularly useful for simulating chemically reacting flows because the chemical source term is closed and does not require a model.  The PDF is commonly tracked by using Lagrangian particle methods; when combined with large eddy simulation, this leads to a Langevin equation for subfilter particle evolution.
 
 #### Vorticity confinement method

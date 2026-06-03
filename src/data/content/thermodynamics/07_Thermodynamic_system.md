@@ -48,87 +48,12 @@ Rigid boundary – not allowing exchange of work: A mechanically isolated system
 
 One example is fluid being compressed by a piston in a cylinder. Another example of a closed system is a bomb calorimeter, a type of constant-volume calorimeter used in measuring the heat of combustion of a particular reaction. Electrical energy travels across the boundary to produce a spark between the electrodes and initiates combustion. Heat transfer occurs across the boundary after combustion but no mass transfer takes place either way.
 
-The first law of thermodynamics for energy transfers for closed system may be stated:
-
-$$ \Delta U=Q-W $$
-
-where 
-
-$$ U $$
-
-denotes the internal energy of the system, 
-
-$$ Q $$
-
- heat added to the system, 
-
-$$ W $$
-
- the work done by the system. For infinitesimal changes the first law for closed systems may stated:
-
-$$ \mathrm {d} U=\delta Q-\delta W. $$
-
-If the work is due to a volume expansion by 
-
-$$ \mathrm {d} V $$
-
- at a pressure 
-
-$$ P $$
-
- then:
-
-$$ \delta W=P\mathrm {d} V. $$
-
-For a quasi-reversible heat transfer, the second law of thermodynamics reads:
-
-$$ \delta Q=T\mathrm {d} S $$
-
-where 
-
-$$ T $$
-
- denotes the thermodynamic temperature and 
-
-$$ S $$
-
- the entropy of the system. With these relations the fundamental thermodynamic relation, used to compute changes in internal energy, is expressed as:
-
-$$ \mathrm {d} U=T\mathrm {d} S-P\mathrm {d} V. $$
-
-For a simple system, with only one type of particle (atom or molecule), a closed system amounts to a constant number of particles. For systems undergoing a chemical reaction, there may be all sorts of molecules being generated and destroyed by the reaction process. In this case, the fact that the system is closed is expressed by stating that the total number of each elemental atom is conserved, no matter what kind of molecule it may be a part of. Mathematically:
-
-$$ \sum _{j=1}^{m}a_{ij}N_{j}=b_{i}^{0} $$
-
-where 
-
-$$ N_{j} $$
-
- denotes the number of 
-
-$$ j $$
-
--type molecules,  
-
-$$ a_{ij} $$
-
- the number of atoms of element 
-
-$$ i $$
-
- in molecule 
-
-$$ j $$
-
-, and  
-
-$$ b_{i}^{0} $$
-
- the total number of atoms of element  
-
-$$ i $$
-
- in the system, which remains constant, since the system is closed. There is one such equation for each element in the system.
+The first law of thermodynamics for energy transfers for closed system may be stated: $\Delta U=Q-W$ where $U$ denotes the internal energy of the system, $Q$ heat added to the system, $W$ the work done by the system. For infinitesimal changes the first law for closed systems may stated: $\mathrm {d} U=\delta Q-\delta W.$
+If the work is due to a volume expansion by $\mathrm {d} V$ at a pressure $P$ then: $\delta W=P\mathrm {d} V.$
+For a quasi-reversible heat transfer, the second law of thermodynamics reads: $\delta Q=T\mathrm {d} S$ where $T$ denotes the thermodynamic temperature and $S$ the entropy of the system. With these relations the fundamental thermodynamic relation, used to compute changes in internal energy, is expressed as: $\mathrm {d} U=T\mathrm {d} S-P\mathrm {d} V.$
+For a simple system, with only one type of particle (atom or molecule), a closed system amounts to a constant number of particles. For systems undergoing a chemical reaction, there may be all sorts of molecules being generated and destroyed by the reaction process. In this case, the fact that the system is closed is expressed by stating that the total number of each elemental atom is conserved, no matter what kind of molecule it may be a part of. Mathematically: $\sum _{j=1}^{m}a_{ij}N_{j}=b_{i}^{0}$ where $N_{j}$ denotes the number of $j$
+-type molecules, $a_{ij}$
+the number of atoms of element $i$ in molecule $j$ , and $b_{i}^{0}$ the total number of atoms of element $i$ in the system, which remains constant, since the system is closed. There is one such equation for each element in the system.
 
 ## Isolated system
 
@@ -158,60 +83,14 @@ For a contact equilibrium across a wall permeable to a substance, the chemical p
 
 ## Open system
 
-In an open system, there is an exchange of energy and matter between the system and the surroundings. The presence of reactants in an open beaker is an example of an open system. Here the boundary is an imaginary surface enclosing the beaker and reactants. It is named closed, if borders are impenetrable for substance, but allow transit of energy in the form of heat, and isolated, if there is no exchange of heat and substances. The open system cannot exist in the equilibrium state. To describe deviation of the thermodynamic system from equilibrium, in addition to constitutive variables that was described above, a set of internal variables 
+In an open system, there is an exchange of energy and matter between the system and the surroundings. The presence of reactants in an open beaker is an example of an open system. Here the boundary is an imaginary surface enclosing the beaker and reactants. It is named closed, if borders are impenetrable for substance, but allow transit of energy in the form of heat, and isolated, if there is no exchange of heat and substances. The open system cannot exist in the equilibrium state. To describe deviation of the thermodynamic system from equilibrium, in addition to constitutive variables that was described above, a set of internal variables $\xi _{1},\xi _{2},\ldots$ have been introduced. The equilibrium state is considered to be stable and the main property of the internal variables, as measures of non-equilibrium of the system, is their trending to disappear; the local law of disappearing can be written as relaxation equation for each internal variable
 
-$$ \xi _{1},\xi _{2},\ldots $$
-
-have been introduced. The equilibrium state is considered to be stable and the main property of the internal variables, as measures of non-equilibrium of the system, is their trending to disappear; the local law of disappearing can be written as relaxation equation for each internal variable
-
-where 
-
-$$ \tau _{i}=\tau _{i}(T,x_{1},x_{2},\ldots ,x_{n}) $$
-
-is a relaxation time of a corresponding variable. It is convenient to consider the initial value
-
-$$ \xi _{i}^{0} $$
-
+where $\tau _{i}=\tau _{i}(T,x_{1},x_{2},\ldots ,x_{n})$ is a relaxation time of a corresponding variable. It is convenient to consider the initial value $\xi _{i}^{0}$
 The specific contribution to the thermodynamics of open non-equilibrium systems was made by Ilya Prigogine, who investigated a system of  chemically reacting substances. In this case the internal variables appear to be measures of incompleteness of chemical reactions, that is measures of how much the considered system with chemical reactions is out of equilibrium. The theory can be generalized, to consider any deviations from the equilibrium state, such as structure of the system, gradients of temperature, difference of concentrations of substances and so on, to say nothing of degrees of completeness of all chemical reactions, to be  internal variables.
 
-The increments  of Gibbs free energy  
+The increments  of Gibbs free energy $G$ $S$ $T={\text{const}}$ and $p={\text{const}}$ are determined as
 
-$$ G $$
-
-$$ S $$
-
-$$ T={\text{const}} $$
-
- and 
-
-$$ p={\text{const}} $$
-
- are determined as 
-
-The stationary states of the system exist due to exchange of both thermal energy (
-
-$$ \Delta Q_{\alpha } $$
-
-) and a stream of particles. The sum of the last terms in the equations presents the total energy coming into the system with the stream of particles of substances  
-
-$$ \Delta N_{\alpha } $$
-
-that can be positive or negative; the quantity
-
-$$ \mu _{\alpha } $$
-
-is chemical potential of substance
-
-$$ \alpha $$
-
-.The middle terms in equations (2) and (3) depict energy dissipation (entropy production) due to the relaxation of internal variables 
-
-$$ \xi _{j} $$
-
-, while 
-
-$$ \Xi _{j} $$
-
- are  thermodynamic forces.
+The stationary states of the system exist due to exchange of both thermal energy ( $\Delta Q_{\alpha }$ ) and a stream of particles. The sum of the last terms in the equations presents the total energy coming into the system with the stream of particles of substances $\Delta N_{\alpha }$ that can be positive or negative; the quantity $\mu _{\alpha }$ is chemical potential of substance $\alpha$
+.The middle terms in equations (2) and (3) depict energy dissipation (entropy production) due to the relaxation of internal variables $\xi _{j}$ , while $\Xi _{j}$ are  thermodynamic forces.
 
 This approach to the open system allows describing the growth and development of living objects in thermodynamic terms.

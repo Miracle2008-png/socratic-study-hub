@@ -63,8 +63,7 @@ where
 {\displaystyle \Delta N=(\mathbf {J} ,\Delta \mathbf {S} )\,\Delta t+o(\Delta \mathbf {S} \,\Delta t)\,.}
 
 The dimension of the diffusion flux is [flux] = [quantity]/([time]·[area]). The diffusing physical quantity 
- may be the number of particles, mass, energy, electric charge, or any other scalar extensive quantity. For its density, 
-, the diffusion equation has the form
+may be the number of particles, mass, energy, electric charge, or any other scalar extensive quantity. For its density, , the diffusion equation has the form
 
 {\displaystyle {\frac {\partial n}{\partial t}}=-\nabla \cdot \mathbf {J} +W\,,}
 
@@ -451,14 +450,10 @@ In the Chapman–Enskog approximation, all the distribution functions are expres
 individual concentrations of particles, 
 
 {\textstyle n_{i}(x,t)=\int _{c}f_{i}(x,c,t)\,dc}
- (particles per volume),
-
-density of momentum 
+(particles per volume), density of momentum
 
 {\textstyle \sum _{i}m_{i}n_{i}C_{i}(x,t)}
- (mi is the ith particle mass),
-
-density of kinetic energy 
+(mi is the ith particle mass), density of kinetic energy
 
 {\displaystyle \sum _{i}\left(n_{i}{\frac {m_{i}C_{i}^{2}(x,t)}{2}}+\int _{c}{\frac {m_{i}(c_{i}-C_{i}(x,t))^{2}}{2}}f_{i}(x,c,t)\,dc\right).}
 

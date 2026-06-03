@@ -4,94 +4,14 @@ The first law of thermodynamics is a formulation of the law of conservation of e
 
 ## Definition
 
-For thermodynamic processes of energy transfer without transfer of matter, the first law of thermodynamics is often expressed by the algebraic sum of contributions to the internal energy, 
-
-$$ U, $$
-
- from all work, 
-
-$$ W, $$
-
- done on or by the system, and the quantity of heat, 
-
-$$ Q, $$
-
- supplied to the system. With the sign convention of Rudolf Clausius, that heat supplied to the system is positive, but work done by the system is subtracted, a change in the internal energy, 
-
-$$ \Delta U, $$
-
- is written
-
-$$ \Delta U=Q-W. $$
-
+For thermodynamic processes of energy transfer without transfer of matter, the first law of thermodynamics is often expressed by the algebraic sum of contributions to the internal energy, $U,$ from all work, $W,$ done on or by the system, and the quantity of heat, $Q,$ supplied to the system. With the sign convention of Rudolf Clausius, that heat supplied to the system is positive, but work done by the system is subtracted, a change in the internal energy, $\Delta U,$ is written $\Delta U=Q-W.$
 Modern formulations, such as by Max Planck, and by IUPAC, often replace the subtraction with addition, and consider all net energy transfers to the system as positive and all net energy transfers from the system as negative, irrespective of the use of the system, for example as an engine.
 
-When a system expands in an isobaric process, the thermodynamic work, 
+When a system expands in an isobaric process, the thermodynamic work, $W,$ done by the system on the surroundings is the product, $P~\Delta V,$ of system pressure, $P,$ and system volume change, $\Delta V,$ whereas $-P~\Delta V$ is said to be the thermodynamic work done on the system by the surroundings.  The change in internal energy of the system is: $\Delta U=Q-P~\Delta V,$ where $Q$ denotes the quantity of heat supplied to the system from its surroundings.
 
-$$ W, $$
+Work and heat express physical processes of supply or removal of energy, while the internal energy $U$ is a mathematical abstraction that keeps account of the changes of energy that befall the system. The term $Q$ is the quantity of energy added or removed as heat in the thermodynamic sense, not referring to a form of energy within the system. Likewise, $W$ denotes the quantity of energy gained or lost through thermodynamic work. Internal energy is a property of the system, while work and heat describe the process, not the system. Thus, a given internal energy change, $\Delta U,$ can be achieved by different combinations of heat and work. Heat and work are said to be path dependent, while change in internal energy depends only on the initial and final states of the system, not on the path between. Thermodynamic work is measured by change in the system, and, because of friction, is not necessarily the same as work measured by forces and distances in the surroundings, though, ideally, such can sometimes be arranged; this distinction is noted in the term 'isochoric work', at constant system volume, with $\Delta V=0,$ which is not a form of thermodynamic work.
 
- done by the system on the surroundings is the product, 
-
-$$ P~\Delta V, $$
-
- of system pressure, 
-
-$$ P, $$
-
- and system volume change, 
-
-$$ \Delta V, $$
-
- whereas 
-
-$$ -P~\Delta V $$
-
- is said to be the thermodynamic work done on the system by the surroundings.  The change in internal energy of the system is:
-
-$$ \Delta U=Q-P~\Delta V, $$
-
-where 
-
-$$ Q $$
-
- denotes the quantity of heat supplied to the system from its surroundings.
-
-Work and heat express physical processes of supply or removal of energy, while the internal energy 
-
-$$ U $$
-
- is a mathematical abstraction that keeps account of the changes of energy that befall the system. The term 
-
-$$ Q $$
-
- is the quantity of energy added or removed as heat in the thermodynamic sense, not referring to a form of energy within the system. Likewise, 
-
-$$ W $$
-
- denotes the quantity of energy gained or lost through thermodynamic work. Internal energy is a property of the system, while work and heat describe the process, not the system. Thus, a given internal energy change, 
-
-$$ \Delta U, $$
-
- can be achieved by different combinations of heat and work. Heat and work are said to be path dependent, while change in internal energy depends only on the initial and final states of the system, not on the path between. Thermodynamic work is measured by change in the system, and, because of friction, is not necessarily the same as work measured by forces and distances in the surroundings, though, ideally, such can sometimes be arranged; this distinction is noted in the term 'isochoric work', at constant system volume, with 
-
-$$ \Delta V=0, $$
-
- which is not a form of thermodynamic work.
-
-For thermodynamic processes of energy transfer with transfer of matter, the extensive character of internal energy can be stated: for the otherwise isolated combination of two thermodynamic systems with internal energies 
-
-$$ U_{1} $$
-
- and 
-
-$$ U_{2} $$
-
- into a single system with internal energy 
-
-$$ U_{0}, $$
-
-$$ U_{0}=U_{1}+U_{2}. $$
-
+For thermodynamic processes of energy transfer with transfer of matter, the extensive character of internal energy can be stated: for the otherwise isolated combination of two thermodynamic systems with internal energies $U_{1}$ and $U_{2}$ into a single system with internal energy $U_{0},$ $U_{0}=U_{1}+U_{2}.$
 ## Conceptually revised statement, according to the mechanical approach
 
 The revised statement of the first law postulates that a change in the internal energy of a system due to any arbitrary process, that takes the system from a given initial thermodynamic state to a given final equilibrium thermodynamic state, can be determined through the physical existence, for those given states, of a reference process that occurs purely through stages of adiabatic work.
@@ -130,18 +50,9 @@ This physical statement is restricted neither to closed systems nor to systems w
 
 An example of a mathematical statement is that of Crawford (1963):
 
-For a given system we let ΔE kin = large-scale mechanical energy, ΔE pot = large-scale potential energy, and ΔE tot = total energy. The first two quantities are specifiable in terms of appropriate mechanical variables, and by definition
-
-$$ E^{\mathrm {tot} }=E^{\mathrm {kin} }+E^{\mathrm {pot} }+U\,\,. $$
-
-For any finite process, whether reversible or irreversible,
-
-$$ \Delta E^{\mathrm {tot} }=\Delta E^{\mathrm {kin} }+\Delta E^{\mathrm {pot} }+\Delta U\,\,. $$
-
-The first law in a form that involves the principle of conservation of energy more generally is
-
-$$ \Delta E^{\mathrm {tot} }=Q+W\,\,. $$
-
+For a given system we let ΔE kin = large-scale mechanical energy, ΔE pot = large-scale potential energy, and ΔE tot = total energy. The first two quantities are specifiable in terms of appropriate mechanical variables, and by definition $E^{\mathrm {tot} }=E^{\mathrm {kin} }+E^{\mathrm {pot} }+U\,\,.$
+For any finite process, whether reversible or irreversible, $\Delta E^{\mathrm {tot} }=\Delta E^{\mathrm {kin} }+\Delta E^{\mathrm {pot} }+\Delta U\,\,.$
+The first law in a form that involves the principle of conservation of energy more generally is $\Delta E^{\mathrm {tot} }=Q+W\,\,.$
 Here Q and W are heat and work added, with no restrictions as to whether the process is reversible, quasistatic, or irreversible.
 
 This statement by Crawford, for W, uses the sign convention of IUPAC, not that of Clausius. Though it does not explicitly say so, this statement refers to closed systems. Internal energy U is evaluated for bodies in states of thermodynamic equilibrium, which possess well-defined temperatures, relative to a reference state.
@@ -182,147 +93,39 @@ A change from one state to another, for example an increase of both temperature 
 
 This kind of evidence, of independence of sequence of stages, combined with the above-mentioned evidence, of independence of qualitative kind of work, would show the existence of an important state variable that corresponds with adiabatic work, but not that such a state variable represented a conserved quantity. For the latter, another step of evidence is needed, which may be related to the concept of reversibility, as mentioned below.
 
-That important state variable was first recognized and denoted 
+That important state variable was first recognized and denoted $U$ by Clausius in 1850, but he did not then name it, and he defined it in terms not only of work but also of heat transfer in the same process. It was also independently recognized in 1850 by Rankine, who also denoted it $U$ ; and in 1851 by Kelvin who then called it "mechanical energy", and later "intrinsic energy". In 1865, after some hesitation, Clausius began calling his state function $U$
+"energy". In 1882 it was named as the internal energy by Helmholtz. If only adiabatic processes were of interest, and heat could be ignored, the concept of internal energy would hardly arise or be needed. The relevant physics would be largely covered by the concept of potential energy, as was intended in the 1847 paper of Helmholtz on the principle of conservation of energy, though that did not deal with forces that cannot be described by a potential, and thus did not fully justify the principle. Moreover, that paper was critical of the early work of Joule that had by then been performed. A great merit of the internal energy concept is that it frees thermodynamics from a restriction to cyclic processes, and allows a treatment in terms of thermodynamic states.
 
-$$ U $$
-
- by Clausius in 1850, but he did not then name it, and he defined it in terms not only of work but also of heat transfer in the same process. It was also independently recognized in 1850 by Rankine, who also denoted it 
-
-$$ U $$
-
- ; and in 1851 by Kelvin who then called it "mechanical energy", and later "intrinsic energy". In 1865, after some hesitation, Clausius began calling his state function 
-
-$$ U $$
-
- "energy". In 1882 it was named as the internal energy by Helmholtz. If only adiabatic processes were of interest, and heat could be ignored, the concept of internal energy would hardly arise or be needed. The relevant physics would be largely covered by the concept of potential energy, as was intended in the 1847 paper of Helmholtz on the principle of conservation of energy, though that did not deal with forces that cannot be described by a potential, and thus did not fully justify the principle. Moreover, that paper was critical of the early work of Joule that had by then been performed. A great merit of the internal energy concept is that it frees thermodynamics from a restriction to cyclic processes, and allows a treatment in terms of thermodynamic states.
-
-In an adiabatic process, adiabatic work takes the system either from a reference state 
-
-$$ O $$
-
- with internal energy 
-
-$$ U(O) $$
-
- to an arbitrary one 
-
-$$ A $$
-
- with internal energy 
-
-$$ U(A) $$
-
-, or from the state 
-
-$$ A $$
-
- to the state 
-
-$$ O $$
-
-:
-
-$$ U(A)=U(O)-W_{O\to A}^{\mathrm {adiabatic} }\,\,\mathrm {or} \,\,U(O)=U(A)-W_{A\to O}^{\mathrm {adiabatic} }\,. $$
-
-Except under the special, and strictly speaking, fictional, condition of reversibility, only one of the processes 
-
-$$ \mathrm {adiabatic} ,\,O\to A $$
-
- or 
-
-$$ \mathrm {adiabatic} ,\,{A\to O}\, $$
-
- is empirically feasible by a simple application of externally supplied work. The reason for this is given as the second law of thermodynamics and is not considered in the present article.
+In an adiabatic process, adiabatic work takes the system either from a reference state $O$ with internal energy $U(O)$ to an arbitrary one $A$ with internal energy $U(A)$ , or from the state $A$ to the state $O$
+: $U(A)=U(O)-W_{O\to A}^{\mathrm {adiabatic} }\,\,\mathrm {or} \,\,U(O)=U(A)-W_{A\to O}^{\mathrm {adiabatic} }\,.$
+Except under the special, and strictly speaking, fictional, condition of reversibility, only one of the processes $\mathrm {adiabatic} ,\,O\to A$ or $\mathrm {adiabatic} ,\,{A\to O}\,$ is empirically feasible by a simple application of externally supplied work. The reason for this is given as the second law of thermodynamics and is not considered in the present article.
 
 The fact of such irreversibility may be dealt with in two main ways, according to different points of view:
 
-The formula (1) above allows that to go by processes of quasi-static adiabatic work from the state 
-
-$$ A $$
-
- to the state 
-
-$$ B $$
-
- we can take a path that goes through the reference state 
-
-$$ O $$
-
-, since the quasi-static adiabatic work is independent of the path
-
-$$ -W_{A\to B}^{\mathrm {adiabatic,\,quasi-static} }=-W_{A\to O}^{\mathrm {adiabatic,\,quasi-static} }-W_{O\to B}^{\mathrm {adiabatic,\,quasi-static} }=W_{O\to A}^{\mathrm {adiabatic,\,quasi-static} }-W_{O\to B}^{\mathrm {adiabatic,\,quasi-static} }=-U(A)+U(B)=\Delta U $$
-
+The formula (1) above allows that to go by processes of quasi-static adiabatic work from the state $A$ to the state $B$ we can take a path that goes through the reference state $O$ , since the quasi-static adiabatic work is independent of the path $-W_{A\to B}^{\mathrm {adiabatic,\,quasi-static} }=-W_{A\to O}^{\mathrm {adiabatic,\,quasi-static} }-W_{O\to B}^{\mathrm {adiabatic,\,quasi-static} }=W_{O\to A}^{\mathrm {adiabatic,\,quasi-static} }-W_{O\to B}^{\mathrm {adiabatic,\,quasi-static} }=-U(A)+U(B)=\Delta U$
 This kind of empirical evidence, coupled with theory of this kind, largely justifies the following statement:
 
 ### Adynamic processes
 
-A complementary observable aspect of the first law is about heat transfer. Adynamic transfer of energy as heat can be measured empirically by changes in the surroundings of the system of interest by calorimetry. This again requires the existence of adiabatic enclosure of the entire process, system and surroundings, though the separating wall between the surroundings and the system is thermally conductive or radiatively permeable, not adiabatic. A calorimeter can rely on measurement of sensible heat, which requires the existence of thermometers and measurement of temperature change in bodies of known sensible heat capacity under specified conditions; or it can rely on the measurement of latent heat, through measurement of masses of material that change phase, at temperatures fixed by the occurrence of phase changes under specified conditions in bodies of known latent heat of phase change. The calorimeter can be calibrated by transferring an externally determined amount of heat into it, for instance from a resistive electrical heater inside the calorimeter through which a precisely known electric current is passed at a precisely known voltage for a precisely measured period of time. The calibration allows comparison of calorimetric measurement of quantity of heat transferred with quantity of energy transferred as (surroundings-based) work. According to one textbook, "The most common device for measuring 
+A complementary observable aspect of the first law is about heat transfer. Adynamic transfer of energy as heat can be measured empirically by changes in the surroundings of the system of interest by calorimetry. This again requires the existence of adiabatic enclosure of the entire process, system and surroundings, though the separating wall between the surroundings and the system is thermally conductive or radiatively permeable, not adiabatic. A calorimeter can rely on measurement of sensible heat, which requires the existence of thermometers and measurement of temperature change in bodies of known sensible heat capacity under specified conditions; or it can rely on the measurement of latent heat, through measurement of masses of material that change phase, at temperatures fixed by the occurrence of phase changes under specified conditions in bodies of known latent heat of phase change. The calorimeter can be calibrated by transferring an externally determined amount of heat into it, for instance from a resistive electrical heater inside the calorimeter through which a precisely known electric current is passed at a precisely known voltage for a precisely measured period of time. The calibration allows comparison of calorimetric measurement of quantity of heat transferred with quantity of energy transferred as (surroundings-based) work. According to one textbook, "The most common device for measuring $\Delta U$ is an adiabatic bomb calorimeter." According to another textbook, "Calorimetry is widely used in present day laboratories." According to one opinion, "Most thermodynamic data come from calorimetry".
 
-$$ \Delta U $$
-
- is an adiabatic bomb calorimeter." According to another textbook, "Calorimetry is widely used in present day laboratories." According to one opinion, "Most thermodynamic data come from calorimetry".
-
-When the system evolves with transfer of energy as heat, without energy being transferred as work, in an adynamic process, the heat transferred to the system is equal to the increase in its internal energy:
-
-$$ Q_{A\to B}^{\mathrm {adynamic} }=\Delta U\,. $$
-
+When the system evolves with transfer of energy as heat, without energy being transferred as work, in an adynamic process, the heat transferred to the system is equal to the increase in its internal energy: $Q_{A\to B}^{\mathrm {adynamic} }=\Delta U\,.$
 ### General case for reversible processes
 
-Heat transfer is practically reversible when it is driven by practically negligibly small temperature gradients. Work transfer is practically reversible when it occurs so slowly that there are no frictional effects within the system; frictional effects outside the system should also be zero if the process is to be reversible in the strict thermodynamic sense. For a particular reversible process in general, the work done reversibly on the system, 
+Heat transfer is practically reversible when it is driven by practically negligibly small temperature gradients. Work transfer is practically reversible when it occurs so slowly that there are no frictional effects within the system; frictional effects outside the system should also be zero if the process is to be reversible in the strict thermodynamic sense. For a particular reversible process in general, the work done reversibly on the system, $W_{A\to B}^{\mathrm {path} \,P_{0},\,\mathrm {reversible} }$ , and the heat transferred reversibly to the system, $Q_{A\to B}^{\mathrm {path} \,P_{0},\,\mathrm {reversible} }$ are not required to occur respectively adiabatically or adynamically, but they must belong to the same particular process defined by its particular reversible path, $P_{0}$ , through the space of thermodynamic states. Then the work and heat transfers can occur and be calculated simultaneously.
 
-$$ W_{A\to B}^{\mathrm {path} \,P_{0},\,\mathrm {reversible} } $$
-
-, and the heat transferred reversibly to the system, 
-
-$$ Q_{A\to B}^{\mathrm {path} \,P_{0},\,\mathrm {reversible} } $$
-
- are not required to occur respectively adiabatically or adynamically, but they must belong to the same particular process defined by its particular reversible path, 
-
-$$ P_{0} $$
-
-, through the space of thermodynamic states. Then the work and heat transfers can occur and be calculated simultaneously.
-
-Putting the two complementary aspects together, the first law for a particular reversible process can be written
-
-$$ -W_{A\to B}^{\mathrm {path} \,P_{0},\,\mathrm {reversible} }+Q_{A\to B}^{\mathrm {path} \,P_{0},\,\mathrm {reversible} }=\Delta U\,. $$
-
+Putting the two complementary aspects together, the first law for a particular reversible process can be written $-W_{A\to B}^{\mathrm {path} \,P_{0},\,\mathrm {reversible} }+Q_{A\to B}^{\mathrm {path} \,P_{0},\,\mathrm {reversible} }=\Delta U\,.$
 This combined statement is the expression the first law of thermodynamics for reversible processes for closed systems.
 
-In particular, if no work is done on a thermally isolated closed system we have
-
-$$ \Delta U=0\, $$
-
+In particular, if no work is done on a thermally isolated closed system we have $\Delta U=0\,$
 .
 
 This is one aspect of the law of conservation of energy and can be stated:
 
 ### General case for irreversible processes
 
-If, in a process of change of state of a closed system, the energy transfer is not under a practically zero temperature gradient, practically frictionless, and with nearly balanced forces, then the process is irreversible. Then the heat and work transfers may be difficult to calculate with high accuracy, although the simple equations for reversible processes still hold to a good approximation in the absence of composition changes. Importantly, the first law still holds and provides a check on the measurements and calculations of the work done irreversibly on the system, 
-
-$$ W_{A\to B}^{\mathrm {path} \,P_{1},\,\mathrm {irreversible} } $$
-
-, and the heat transferred irreversibly to the system, 
-
-$$ Q_{A\to B}^{\mathrm {path} \,P_{1},\,\mathrm {irreversible} } $$
-
-, which belong to the same particular process defined by its particular irreversible path, 
-
-$$ P_{1} $$
-
-, through the space of thermodynamic states.
-
-$$ -W_{A\to B}^{\mathrm {path} \,P_{1},\,\mathrm {irreversible} }+Q_{A\to B}^{\mathrm {path} \,P_{1},\,\mathrm {irreversible} }=\Delta U\,. $$
-
-This means that the internal energy 
-
-$$ U $$
-
- is a function of state and that the internal energy change 
-
-$$ \Delta U $$
-
- between two states is a function only of the two states.
+If, in a process of change of state of a closed system, the energy transfer is not under a practically zero temperature gradient, practically frictionless, and with nearly balanced forces, then the process is irreversible. Then the heat and work transfers may be difficult to calculate with high accuracy, although the simple equations for reversible processes still hold to a good approximation in the absence of composition changes. Importantly, the first law still holds and provides a check on the measurements and calculations of the work done irreversibly on the system, $W_{A\to B}^{\mathrm {path} \,P_{1},\,\mathrm {irreversible} }$ , and the heat transferred irreversibly to the system, $Q_{A\to B}^{\mathrm {path} \,P_{1},\,\mathrm {irreversible} }$ , which belong to the same particular process defined by its particular irreversible path, $P_{1}$ , through the space of thermodynamic states. $-W_{A\to B}^{\mathrm {path} \,P_{1},\,\mathrm {irreversible} }+Q_{A\to B}^{\mathrm {path} \,P_{1},\,\mathrm {irreversible} }=\Delta U\,.$
+This means that the internal energy $U$ is a function of state and that the internal energy change $\Delta U$ between two states is a function only of the two states.
 
 ## State functional formulation for infinitesimal processes
 
@@ -332,28 +135,15 @@ The first law for a closed homogeneous system may be stated in terms that includ
 
 The first law requires that:
 
-(closed system, general process, quasi-static or irreversible).
-
-$$ dU=\delta Q-\delta W\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,{\text{(closed system, general process, quasi-static or irreversible).}} $$
-
+(closed system, general process, quasi-static or irreversible). $dU=\delta Q-\delta W\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,{\text{(closed system, general process, quasi-static or irreversible).}}$
 Then, for the fictive case of a reversible process, dU can be written in terms of exact differentials. One may imagine reversible changes, such that there is at each instant negligible departure from thermodynamic equilibrium within the system and between system and surroundings. Then, mechanical work is given by δW = −P dV and the quantity of heat added can be expressed as δQ = T dS. For these conditions
 
-(closed system, reversible process).
-
-$$ dU=TdS-PdV\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,{\text{(closed system, reversible process).}} $$
-
+(closed system, reversible process). $dU=TdS-PdV\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,{\text{(closed system, reversible process).}}$
 While this has been shown here for reversible changes, it is valid more generally in the absence of chemical reactions or phase transitions, as U can be considered as a thermodynamic state function of the defining state variables S and V:
 
 Equation (2) is known as the fundamental thermodynamic relation for a closed system in the energy representation, for which the defining state variables are S and V, with respect to which T and P are partial derivatives of U. It is only in the reversible case or for a quasistatic process without composition change that the work done and heat transferred are given by −P dV and T dS.
 
-In the case of a closed system in which the particles of the system are of different types and, because chemical reactions may occur, their respective numbers are not necessarily constant, the fundamental thermodynamic relation for dU becomes:
-
-$$ dU=TdS-PdV+\sum _{i}\mu _{i}dN_{i}. $$
-
-where dNi is the (small) increase in number of type-i particles in the reaction, and μi is known as the chemical potential of the type-i particles in the system. If dNi is expressed in mol then μi is expressed in J/mol. If the system has more external mechanical variables than just the volume that can change, the fundamental thermodynamic relation further generalizes to:
-
-$$ dU=TdS-\sum _{i}X_{i}dx_{i}+\sum _{j}\mu _{j}dN_{j}. $$
-
+In the case of a closed system in which the particles of the system are of different types and, because chemical reactions may occur, their respective numbers are not necessarily constant, the fundamental thermodynamic relation for dU becomes: $dU=TdS-PdV+\sum _{i}\mu _{i}dN_{i}.$ where dNi is the (small) increase in number of type-i particles in the reaction, and μi is known as the chemical potential of the type-i particles in the system. If dNi is expressed in mol then μi is expressed in J/mol. If the system has more external mechanical variables than just the volume that can change, the fundamental thermodynamic relation further generalizes to: $dU=TdS-\sum _{i}X_{i}dx_{i}+\sum _{j}\mu _{j}dN_{j}.$
 Here the Xi are the generalized forces corresponding to the external variables xi. The parameters Xi are independent of the size of the system and are called intensive parameters and the xi are proportional to the size and called extensive parameters.
 
 For an open system, there can be transfers of particles as well as energy into or out of the system during a process. For this case, the first law of thermodynamics still holds, in the form that the internal energy is a function of state and the change of internal energy in a process is a function only of its initial and final states, as noted in the section below headed First law of thermodynamics for open systems.
@@ -368,51 +158,17 @@ The two thermodynamic parameters that form a generalized force-displacement pair
 
 ## Fluid dynamics
 
-In fluid dynamics, the first law of thermodynamics reads 
-
-$$ {\frac {DE_{t}}{Dt}}={\frac {DW}{Dt}}+{\frac {DQ}{Dt}}\to {\frac {DE_{t}}{Dt}}=\nabla \cdot ({\mathbf {\sigma } \cdot v})-\nabla \cdot {\mathbf {q} } $$
-
+In fluid dynamics, the first law of thermodynamics reads ${\frac {DE_{t}}{Dt}}={\frac {DW}{Dt}}+{\frac {DQ}{Dt}}\to {\frac {DE_{t}}{Dt}}=\nabla \cdot ({\mathbf {\sigma } \cdot v})-\nabla \cdot {\mathbf {q} }$
 .
 
 ## Spatially inhomogeneous systems
 
-Classical thermodynamics is initially focused on closed homogeneous systems (e.g. Planck 1897/1903), which might be regarded as 'zero-dimensional' in the sense that they have no spatial variation. But it is desired to study also systems with distinct internal motion and spatial inhomogeneity. For such systems, the principle of conservation of energy is expressed in terms not only of internal energy as defined for homogeneous systems, but also in terms of kinetic energy and potential energies of parts of the inhomogeneous system with respect to each other and with respect to long-range external forces. How the total energy of a system is allocated between these three more specific kinds of energy varies according to the purposes of different writers; this is because these components of energy are to some extent mathematical artefacts rather than actually measured physical quantities. For any closed homogeneous component of an inhomogeneous closed system, if 
-
-$$ E $$
-
- denotes the total energy of that component system, one may write
-
-$$ E=E^{\mathrm {kin} }+E^{\mathrm {pot} }+U $$
-
-where 
-
-$$ E^{\mathrm {kin} } $$
-
- and 
-
-$$ E^{\mathrm {pot} } $$
-
- denote respectively the total kinetic energy and the total potential energy of the component closed homogeneous system, and 
-
-$$ U $$
-
- denotes its internal energy.
+Classical thermodynamics is initially focused on closed homogeneous systems (e.g. Planck 1897/1903), which might be regarded as 'zero-dimensional' in the sense that they have no spatial variation. But it is desired to study also systems with distinct internal motion and spatial inhomogeneity. For such systems, the principle of conservation of energy is expressed in terms not only of internal energy as defined for homogeneous systems, but also in terms of kinetic energy and potential energies of parts of the inhomogeneous system with respect to each other and with respect to long-range external forces. How the total energy of a system is allocated between these three more specific kinds of energy varies according to the purposes of different writers; this is because these components of energy are to some extent mathematical artefacts rather than actually measured physical quantities. For any closed homogeneous component of an inhomogeneous closed system, if $E$ denotes the total energy of that component system, one may write $E=E^{\mathrm {kin} }+E^{\mathrm {pot} }+U$ where $E^{\mathrm {kin} }$ and $E^{\mathrm {pot} }$ denote respectively the total kinetic energy and the total potential energy of the component closed homogeneous system, and $U$ denotes its internal energy.
 
 Potential energy can be exchanged with the surroundings of the system when the surroundings impose a force field, such as gravitational or electromagnetic, on the system.
 
-A compound system consisting of two interacting closed homogeneous component subsystems has a potential energy of interaction 
-
-$$ E_{12}^{\mathrm {pot} } $$
-
- between the subsystems. Thus, in an obvious notation, one may write
-
-$$ E=E_{1}^{\mathrm {kin} }+E_{1}^{\mathrm {pot} }+U_{1}+E_{2}^{\mathrm {kin} }+E_{2}^{\mathrm {pot} }+U_{2}+E_{12}^{\mathrm {pot} } $$
-
-The quantity 
-
-$$ E_{12}^{\mathrm {pot} } $$
-
- in general lacks an assignment to either subsystem in a way that is not arbitrary, and this stands in the way of a general non-arbitrary definition of transfer of energy as work. On occasions, authors make their various respective arbitrary assignments.
+A compound system consisting of two interacting closed homogeneous component subsystems has a potential energy of interaction $E_{12}^{\mathrm {pot} }$ between the subsystems. Thus, in an obvious notation, one may write $E=E_{1}^{\mathrm {kin} }+E_{1}^{\mathrm {pot} }+U_{1}+E_{2}^{\mathrm {kin} }+E_{2}^{\mathrm {pot} }+U_{2}+E_{12}^{\mathrm {pot} }$
+The quantity $E_{12}^{\mathrm {pot} }$ in general lacks an assignment to either subsystem in a way that is not arbitrary, and this stands in the way of a general non-arbitrary definition of transfer of energy as work. On occasions, authors make their various respective arbitrary assignments.
 
 The distinction between internal and kinetic energy is hard to make in the presence of turbulent motion within the system, as friction gradually dissipates macroscopic kinetic energy of localised bulk flow into molecular random motion of molecules that is classified as internal energy. The rate of dissipation by friction of kinetic energy of localised bulk flow into internal energy, whether in turbulent or in streamlined flow, is an important quantity in non-equilibrium thermodynamics. This is a serious difficulty for attempts to define entropy for time-varying spatially inhomogeneous systems.
 
@@ -426,21 +182,13 @@ There are some cases in which a process for an open system can, for particular p
 
 Since the revised and more rigorous definition of the internal energy of a closed system rests upon the possibility of processes by which adiabatic work takes the system from one state to another, this leaves a problem for the definition of internal energy for an open system, for which adiabatic work is not in general possible. According to Max Born, the transfer of matter and energy across an open connection "cannot be reduced to mechanics". In contrast to the case of closed systems, for open systems, in the presence of diffusion, there is no unconstrained and unconditional physical distinction between convective transfer of internal energy by bulk flow of matter, the transfer of internal energy without transfer of matter (usually called heat conduction and work transfer), and change of various potential energies. The older traditional way and the conceptually revised (Carathéodory) way agree that there is no physically unique definition of heat and work transfer processes between open systems.
 
-In particular, between two otherwise isolated open systems an adiabatic wall is by definition impossible. This problem is solved by recourse to the principle of conservation of energy. This principle allows a composite isolated system to be derived from two other component non-interacting isolated systems, in such a way that the total energy of the composite isolated system is equal to the sum of the total energies of the two component isolated systems. Two previously isolated systems can be subjected to the thermodynamic operation of placement between them of a wall permeable to matter and energy, followed by a time for establishment of a new thermodynamic state of internal equilibrium in the new single unpartitioned system. The internal energies of the initial two systems and of the final new system, considered respectively as closed systems as above, can be measured. Then the law of conservation of energy requires that
-
-$$ \Delta U_{s}+\Delta U_{o}=0\,, $$
-
-where ΔUs and ΔUo denote the changes in internal energy of the system and of its surroundings respectively. This is a statement of the first law of thermodynamics for a transfer between two otherwise isolated open systems, that fits well with the conceptually revised and rigorous statement of the law stated above.
+In particular, between two otherwise isolated open systems an adiabatic wall is by definition impossible. This problem is solved by recourse to the principle of conservation of energy. This principle allows a composite isolated system to be derived from two other component non-interacting isolated systems, in such a way that the total energy of the composite isolated system is equal to the sum of the total energies of the two component isolated systems. Two previously isolated systems can be subjected to the thermodynamic operation of placement between them of a wall permeable to matter and energy, followed by a time for establishment of a new thermodynamic state of internal equilibrium in the new single unpartitioned system. The internal energies of the initial two systems and of the final new system, considered respectively as closed systems as above, can be measured. Then the law of conservation of energy requires that $\Delta U_{s}+\Delta U_{o}=0\,,$ where ΔUs and ΔUo denote the changes in internal energy of the system and of its surroundings respectively. This is a statement of the first law of thermodynamics for a transfer between two otherwise isolated open systems, that fits well with the conceptually revised and rigorous statement of the law stated above.
 
 For the thermodynamic operation of adding two systems with internal energies U1 and U2, to produce a new system with internal energy U, one may write U = U1 + U2; the reference states for U, U1 and U2 should be specified accordingly, maintaining also that the internal energy of a system be proportional to its mass, so that the internal energies are extensive variables.
 
 There is a sense in which this kind of additivity expresses a fundamental postulate that goes beyond the simplest ideas of classical closed system thermodynamics; the extensivity of some variables is not obvious, and needs explicit expression; indeed one author goes so far as to say that it could be recognized as a fourth law of thermodynamics, though this is not repeated by other authors.
 
-Also of course
-
-$$ \Delta N_{s}+\Delta N_{o}=0\,, $$
-
-where ΔNs and ΔNo denote the changes in mole number of a component substance of the system and of its surroundings respectively. This is a statement of the law of conservation of mass.
+Also of course $\Delta N_{s}+\Delta N_{o}=0\,,$ where ΔNs and ΔNo denote the changes in mole number of a component substance of the system and of its surroundings respectively. This is a statement of the law of conservation of mass.
 
 ### Process of transfer of matter between an open system and its surroundings
 
@@ -472,34 +220,11 @@ Nevertheless, a conditional correspondence exists. There are three relevant kind
 
 For the special fictive case of quasi-static transfers, there is a simple correspondence. For this, it is supposed that the system has multiple areas of contact with its surroundings. There are pistons that allow adiabatic work, purely diathermal walls, and open connections with surrounding subsystems of completely controllable chemical potential (or equivalent controls for charged species). Then, for a suitable fictive quasi-static transfer, one can write
 
-(suitably defined surrounding subsystems, quasi-static transfers of energy)
-
-$$ \delta Q\,=\,T\,\mathrm {d} S-T\textstyle {\sum _{i}}s_{i}\,dN_{i}\,{\text{   and    }}\delta W\,=\,P\,\mathrm {d} V\,\,\,\,\,\,{\text{(suitably defined surrounding subsystems, quasi-static transfers of energy)}}, $$
-
-where 
-
-$$ dN_{i} $$
-
- is the added amount of species 
-
-$$ i $$
-
- and 
-
-$$ s_{i} $$
-
- is the corresponding molar entropy.
+(suitably defined surrounding subsystems, quasi-static transfers of energy) $\delta Q\,=\,T\,\mathrm {d} S-T\textstyle {\sum _{i}}s_{i}\,dN_{i}\,{\text{   and    }}\delta W\,=\,P\,\mathrm {d} V\,\,\,\,\,\,{\text{(suitably defined surrounding subsystems, quasi-static transfers of energy)}},$ where $dN_{i}$ is the added amount of species $i$ and $s_{i}$ is the corresponding molar entropy.
 
 For fictive quasi-static transfers for which the chemical potentials in the connected surrounding subsystems are suitably controlled, these can be put into equation (4) to yield
 
-where 
-
-$$ h_{i} $$
-
- is the molar enthalpy of species 
-
-$$ i $$
-
+where $h_{i}$ is the molar enthalpy of species $i$
 .
 
 ### Non-equilibrium transfers
@@ -508,23 +233,11 @@ The transfer of energy between an open system and a single contiguous subsystem 
 
 The first law of thermodynamics for any process on the specification of equation (3) can be defined as
 
-where ΔU denotes the change of internal energy of the system, Δ Q denotes the internal energy transferred as heat from the heat reservoir of the surroundings to the system, p  Δ V denotes the work of the system and 
-
-$$ h_{i} $$
-
- is the molar enthalpy of species 
-
-$$ i $$
-
-, coming into the system from  the surrounding that is in contact with the system.  
+where ΔU denotes the change of internal energy of the system, Δ Q denotes the internal energy transferred as heat from the heat reservoir of the surroundings to the system, p  Δ V denotes the work of the system and $h_{i}$ is the molar enthalpy of species $i$ , coming into the system from  the surrounding that is in contact with the system.
 
 Formula (6) is valid in general case, both for quasi-static and for irreversible processes. The situation of the quasi-static process is considered in the previous Section, which in our terms defines 
 
-To describe deviation of the thermodynamic system from equilibrium, in addition to fundamental variables that are used to fix the equilibrium state, as was described above, a set of variables 
-
-$$ \xi _{1},\xi _{2},\ldots $$
-
- that are called internal variables have been introduced, which allows to formulate for the general case
+To describe deviation of the thermodynamic system from equilibrium, in addition to fundamental variables that are used to fix the equilibrium state, as was described above, a set of variables $\xi _{1},\xi _{2},\ldots$ that are called internal variables have been introduced, which allows to formulate for the general case
 
 Methods for study of non-equilibrium processes mostly deal with spatially continuous flow systems. In this case, the open connection between system and surroundings is usually taken to fully surround the system, so that there are no separate connections impermeable to matter but permeable to heat. Except for the special case mentioned above when there is no actual transfer of matter, which can be treated as if for a closed system, in strictly defined thermodynamic terms, it follows that transfer of energy as heat is not defined. In this sense, there is no such thing as 'heat flow' for a continuous-flow open system. Properly, for closed systems, one speaks of transfer of internal energy as heat, but in general, for open systems, one can speak safely only of transfer of internal energy. A factor here is that there are often cross-effects between distinct transfers, for example that transfer of one substance may cause transfer of another even when the latter has zero chemical potential gradient.
 

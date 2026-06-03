@@ -12,66 +12,18 @@ This example has five independent variables and three fundamental units. The fun
 
 Invoking the Buckingham π theorem shows that the system can be described with two dimensionless numbers and one independent variable.
 
-Dimensional analysis is used to rearrange the units to form the Reynolds number (
+Dimensional analysis is used to rearrange the units to form the Reynolds number ( $R_{e}$ ) and pressure coefficient ( $C_{p}$ ). These dimensionless numbers account for all the variables listed above except F, which will be the test measurement. Since the dimensionless parameters will stay constant for both the test and the real application, they will be used to formulate scaling laws for the test.
 
-$$ R_{e} $$
+Scaling laws: ${\begin{aligned}&R_{e}=\left({\frac {\rho VL}{\mu }}\right)&\longrightarrow &V_{\text{model}}=V_{\text{application}}\times \left({\frac {\rho _{a}}{\rho _{m}}}\right)\times \left({\frac {L_{a}}{L_{m}}}\right)\times \left({\frac {\mu _{m}}{\mu _{a}}}\right)\\&C_{p}=\left({\frac {2\Delta p}{\rho V^{2}}}\right),F=\Delta pL^{2}&\longrightarrow &F_{\text{application}}=F_{\text{model}}\times \left({\frac {\rho _{a}}{\rho _{m}}}\right)\times \left({\frac {V_{a}}{V_{m}}}\right)^{2}\times \left({\frac {L_{a}}{L_{m}}}\right)^{2}.\end{aligned}}$
+The pressure ( $p$ ) is not one of the five variables, but the force ( $F$ ) is. The pressure difference (Δ $p$ ) has thus been replaced with ( $F/L^{2}$ ) in the pressure coefficient. This gives a required test velocity of:
 
-) and pressure coefficient (
+        21.9 $V_{\text{model}}=V_{\text{application}}\times 21.9$
+.
 
-$$ C_{p} $$
+A model test is then conducted at that velocity and the force that is measured in the model ( $F_{model}$ ) is then scaled to find the force that can be expected for the real application ( $F_{application}$ ):
 
-). These dimensionless numbers account for all the variables listed above except F, which will be the test measurement. Since the dimensionless parameters will stay constant for both the test and the real application, they will be used to formulate scaling laws for the test.
+        3.44 $F_{\text{application}}=F_{\text{model}}\times 3.44$
+The power $P$ in watts required by the submarine is then:
 
-Scaling laws:
-
-$$ {\begin{aligned}&R_{e}=\left({\frac {\rho VL}{\mu }}\right)&\longrightarrow &V_{\text{model}}=V_{\text{application}}\times \left({\frac {\rho _{a}}{\rho _{m}}}\right)\times \left({\frac {L_{a}}{L_{m}}}\right)\times \left({\frac {\mu _{m}}{\mu _{a}}}\right)\\&C_{p}=\left({\frac {2\Delta p}{\rho V^{2}}}\right),F=\Delta pL^{2}&\longrightarrow &F_{\text{application}}=F_{\text{model}}\times \left({\frac {\rho _{a}}{\rho _{m}}}\right)\times \left({\frac {V_{a}}{V_{m}}}\right)^{2}\times \left({\frac {L_{a}}{L_{m}}}\right)^{2}.\end{aligned}} $$
-
-The pressure (
-
-$$ p $$
-
-) is not one of the five variables, but the force (
-
-$$ F $$
-
-) is. The pressure difference (Δ
-
-$$ p $$
-
-) has thus been replaced with (
-
-$$ F/L^{2} $$
-
-) in the pressure coefficient. This gives a required test velocity of:
-
-        21.9
-
-$$ V_{\text{model}}=V_{\text{application}}\times 21.9 $$
-
- .
-
-A model test is then conducted at that velocity and the force that is measured in the model (
-
-$$ F_{model} $$
-
-) is then scaled to find the force that can be expected for the real application (
-
-$$ F_{application} $$
-
-):
-
-        3.44
-
-$$ F_{\text{application}}=F_{\text{model}}\times 3.44 $$
-
-The power 
-
-$$ P $$
-
- in watts required by the submarine is then:
-
-        17.2
-
-$$ P[\mathrm {W} ]=F_{\text{application}}\times V_{\text{application}}=F_{\text{model}}[\mathrm {N} ]\times 17.2\ \mathrm {m/s} $$
-
+        17.2 $P[\mathrm {W} ]=F_{\text{application}}\times V_{\text{application}}=F_{\text{model}}[\mathrm {N} ]\times 17.2\ \mathrm {m/s}$
 Note that even though the model is scaled smaller, the water velocity needs to be increased for testing. This remarkable result shows how similitude in nature is often counterintuitive.

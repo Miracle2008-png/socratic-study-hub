@@ -141,9 +141,7 @@ where
  is the derivative gain, a tuning parameter,
 
 {\displaystyle e(t)=\mathrm {SP} -\mathrm {PV} (t)}
- is the error (SP is the setpoint, and PV(t) is the process variable),
-
- is the time or instantaneous time (the present),
+is the error (SP is the setpoint, and PV(t) is the process variable), is the time or instantaneous time (the present),
 
 {\displaystyle \tau }
  is the variable of integration (takes on values from time 0 to the present 

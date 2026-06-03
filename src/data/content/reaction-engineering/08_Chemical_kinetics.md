@@ -22,23 +22,8 @@ In a solid, only those particles that are at the surface can be involved in a re
 
 The reactions are due to collisions of reactant species. The frequency with which the molecules or ions collide depends upon their concentrations. The more crowded the molecules are, the more likely they are to collide and react with one another. Thus, an increase in the concentrations of the reactants will usually result in the corresponding increase in the reaction rate, while a decrease in the concentrations will usually have a reverse effect. For example, combustion will occur more rapidly in pure oxygen than in air (21% oxygen).
 
-The rate equation shows the detailed dependence of the reaction rate on the concentrations of reactants and other species present. The mathematical forms depend on the reaction mechanism. The actual rate equation for a given reaction is determined experimentally and provides information about the reaction mechanism. The mathematical expression of the rate equation is often given by 
-
-$$ v={\frac {\mathrm {d} c}{\mathrm {d} t}}=k\prod _{i}c_{i}^{m_{i}} $$
-
-Here 
-
-$$ k $$
-
- is the reaction rate constant, 
-
-$$ c_{i} $$
-
- is the molar concentration of reactant i and 
-
-$$ m_{i} $$
-
- is the partial order of reaction for this reactant. The partial order for a reactant can only be determined experimentally and is often not indicated by its stoichiometric coefficient.
+The rate equation shows the detailed dependence of the reaction rate on the concentrations of reactants and other species present. The mathematical forms depend on the reaction mechanism. The actual rate equation for a given reaction is determined experimentally and provides information about the reaction mechanism. The mathematical expression of the rate equation is often given by $v={\frac {\mathrm {d} c}{\mathrm {d} t}}=k\prod _{i}c_{i}^{m_{i}}$
+Here $k$ is the reaction rate constant, $c_{i}$ is the molar concentration of reactant i and $m_{i}$ is the partial order of reaction for this reactant. The partial order for a reactant can only be determined experimentally and is often not indicated by its stoichiometric coefficient.
 
 In highly diluted solutions, such as at concentrations below the micromolar level, molecular collisions are primarily governed by diffusion. Under these conditions, the apparent reaction order deviates from the stoichiometric expectation because reactant molecules require additional time to traverse longer distances before encountering one another. This behavior can be described by Fick's laws of diffusion and is consistent with fractal reaction kinetics, which yield fractional reaction orders.
 
@@ -46,11 +31,7 @@ In highly diluted solutions, such as at concentrations below the micromolar leve
 
 Temperature usually has a major effect on the rate of a chemical reaction. Molecules at a higher temperature have more thermal energy. Although collision frequency is greater at higher temperatures, this alone contributes only a very small proportion to the increase in rate of reaction. Much more important is the fact that the proportion of reactant molecules with sufficient energy to react (energy greater than activation energy: E > Ea) is significantly higher and is explained in detail by the Maxwell–Boltzmann distribution of molecular energies.
 
-The effect of temperature on the reaction rate constant usually obeys the Arrhenius equation 
-
-$$ k=Ae^{-E_{\rm {a}}/(RT)} $$
-
-, where A is the pre-exponential factor or A-factor, Ea is the activation energy, R is the molar gas constant and T is the absolute temperature.
+The effect of temperature on the reaction rate constant usually obeys the Arrhenius equation $k=Ae^{-E_{\rm {a}}/(RT)}$ , where A is the pre-exponential factor or A-factor, Ea is the activation energy, R is the molar gas constant and T is the absolute temperature.
 
 At a given temperature, the chemical rate of a reaction depends on the value of the A-factor, the magnitude of the activation energy, and the concentrations of the reactants. Usually, rapid reactions require relatively small activation energies.
 

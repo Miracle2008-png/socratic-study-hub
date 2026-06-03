@@ -12,39 +12,23 @@ A problem with continuous variables is known as a continuous optimization, in wh
 
 An optimization problem can be represented in the following way:
 
-Given: a function 
-
-$$ f:A\rightarrow \mathbb {R} $$
-
- from some set A to the real numbers
+Given: a function $f:A\rightarrow \mathbb {R}$ from some set A to the real numbers
 
 Sought: an element x0 ∈ A such that f(x0) ≤ f(x) for all x ∈ A ("minimization") or such that f(x0) ≥ f(x) for all x ∈ A ("maximization").
 
 Such a formulation is called an optimization problem or a mathematical programming problem (a term not directly related to computer programming, but still in use for example in linear programming – see History below). Many real-world and theoretical problems may be modeled in this general framework.
 
-Since the following is valid:
-
-$$ f(\mathbf {x} _{0})\geq f(\mathbf {x} )\Leftrightarrow -f(\mathbf {x} _{0})\leq -f(\mathbf {x} ), $$
-
-it suffices to solve only minimization problems. However, the opposite perspective of considering only maximization problems would be valid, too.
+Since the following is valid: $f(\mathbf {x} _{0})\geq f(\mathbf {x} )\Leftrightarrow -f(\mathbf {x} _{0})\leq -f(\mathbf {x} ),$ it suffices to solve only minimization problems. However, the opposite perspective of considering only maximization problems would be valid, too.
 
 Problems formulated using this technique in the fields of physics may refer to the technique as energy minimization, speaking of the value of the function f as representing the energy of the system being modeled. In machine learning, it is always necessary to continuously evaluate the quality of a data model by using a cost function where a minimum implies a set of possibly optimal parameters with an optimal (lowest) error.
 
-Typically, A is some subset of the Euclidean space 
-
-$$ \mathbb {R} ^{n} $$
-
-, often specified by a set of constraints, equalities or inequalities that the members of A have to satisfy. The domain A of f is called the search space or the choice set, while the elements of A are called candidate solutions or feasible solutions.
+Typically, A is some subset of the Euclidean space $\mathbb {R} ^{n}$ , often specified by a set of constraints, equalities or inequalities that the members of A have to satisfy. The domain A of f is called the search space or the choice set, while the elements of A are called candidate solutions or feasible solutions.
 
 The function f is variously called an objective function, criterion function, loss function, cost function (minimization), utility function or fitness function (maximization), or, in certain fields, an energy function or energy functional. A feasible solution that minimizes (or maximizes) the objective function is called an optimal solution.
 
 In mathematics, conventional optimization problems are usually stated in terms of minimization.
 
-A local minimum x* is defined as an element for which there exists some δ > 0 such that
-
-$$ \forall \mathbf {x} \in A\;{\text{where}}\;\left\Vert \mathbf {x} -\mathbf {x} ^{\ast }\right\Vert \leq \delta ,\, $$
-
-the expression f(x*) ≤ f(x) holds;
+A local minimum x* is defined as an element for which there exists some δ > 0 such that $\forall \mathbf {x} \in A\;{\text{where}}\;\left\Vert \mathbf {x} -\mathbf {x} ^{\ast }\right\Vert \leq \delta ,\,$ the expression f(x*) ≤ f(x) holds;
 
 that is to say, on some region around x* all of the function values are greater than or equal to the value at that element. 
 
@@ -64,43 +48,18 @@ Optimization problems are often expressed with special notation. Here are some e
 
 ### Minimum and maximum value of a function
 
-Consider the following notation:
-
-$$ \min _{x\in \mathbb {R} }\;\left(x^{2}+1\right) $$
-
-This denotes the minimum value of the objective function x2 + 1, when choosing x from the set of real numbers 
-
-$$ \mathbb {R} $$
-
+Consider the following notation: $\min _{x\in \mathbb {R} }\;\left(x^{2}+1\right)$
+This denotes the minimum value of the objective function x2 + 1, when choosing x from the set of real numbers $\mathbb {R}$
 . The minimum value in this case is 1, occurring at x = 0.
 
-Similarly, the notation
-
-$$ \max _{x\in \mathbb {R} }\;2x $$
-
-asks for the maximum value of the objective function 2x, where x may be any real number. In this case, there is no such maximum as the objective function is unbounded, so the answer is "infinity" or "undefined".
+Similarly, the notation $\max _{x\in \mathbb {R} }\;2x$ asks for the maximum value of the objective function 2x, where x may be any real number. In this case, there is no such maximum as the objective function is unbounded, so the answer is "infinity" or "undefined".
 
 ### Optimal input arguments
 
-Consider the following notation:
-
-$$ {\underset {x\in (-\infty ,-1]}{\operatorname {arg\,min} }}\;x^{2}+1, $$
-
-or equivalently
-
-$$ {\underset {x}{\operatorname {arg\,min} }}\;x^{2}+1,\;{\text{subject to:}}\;x\in (-\infty ,-1]. $$
-
+Consider the following notation: ${\underset {x\in (-\infty ,-1]}{\operatorname {arg\,min} }}\;x^{2}+1,$ or equivalently ${\underset {x}{\operatorname {arg\,min} }}\;x^{2}+1,\;{\text{subject to:}}\;x\in (-\infty ,-1].$
 This represents the value (or values) of the argument x in the interval (−∞,−1] that minimizes (or minimize) the objective function x2 + 1 (the actual minimum value of that function is not what the problem asks for). In this case, the answer is x = −1, since x = 0 is infeasible, that is, it does not belong to the feasible set.
 
-Similarly,
-
-$$ {\underset {x\in [-5,5],\;y\in \mathbb {R} }{\operatorname {arg\,max} }}\;x\cos y, $$
-
-or equivalently
-
-$$ {\underset {x,\;y}{\operatorname {arg\,max} }}\;x\cos y,\;{\text{subject to:}}\;x\in [-5,5],\;y\in \mathbb {R} , $$
-
-represents the {x, y} pair (or pairs) that maximizes (or maximize) the value of the objective function x cos y, with the added constraint that x lie in the interval [−5,5] (again, the actual maximum value of the expression does not matter). In this case, the solutions are the pairs of the form {5, 2kπ} and {−5, (2k + 1)π}, where k ranges over all integers.
+Similarly, ${\underset {x\in [-5,5],\;y\in \mathbb {R} }{\operatorname {arg\,max} }}\;x\cos y,$ or equivalently ${\underset {x,\;y}{\operatorname {arg\,max} }}\;x\cos y,\;{\text{subject to:}}\;x\in [-5,5],\;y\in \mathbb {R} ,$ represents the {x, y} pair (or pairs) that maximizes (or maximize) the value of the objective function x cos y, with the added constraint that x lie in the interval [−5,5] (again, the actual maximum value of the expression does not matter). In this case, the solutions are the pairs of the form {5, 2kπ} and {−5, (2k + 1)π}, where k ranges over all integers.
 
 Operators arg min and arg max are sometimes also written as argmin and argmax, and stand for argument of the minimum and argument of the maximum.
 

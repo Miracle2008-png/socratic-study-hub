@@ -111,11 +111,7 @@ The corresponding hydraulic conductivity is therefore:
 
 Darcy's law is a simple mathematical statement which neatly summarizes several familiar properties that groundwater flowing in aquifers exhibits, including:
 
-if there is no pressure gradient over a distance, no flow occurs (these are hydrostatic conditions),
-
-if there is a pressure gradient, flow will occur from high pressure towards low pressure (opposite the direction of increasing gradient — hence the negative sign in Darcy's law),
-
-the greater the pressure gradient (through the same formation material), the greater the discharge rate, and
+if there is no pressure gradient over a distance, no flow occurs (these are hydrostatic conditions), if there is a pressure gradient, flow will occur from high pressure towards low pressure (opposite the direction of increasing gradient — hence the negative sign in Darcy's law), the greater the pressure gradient (through the same formation material), the greater the discharge rate, and
 
 the discharge rate of fluid will often be different — through different formation materials (or even through the same material, in a different direction) — even if the same pressure gradient exists in both cases.
 

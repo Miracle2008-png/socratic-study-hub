@@ -14,39 +14,11 @@ Among the tools of reflexive control are also listed camouflage (at all levels),
 
 In reviewing Russian research on the use of the arsenal of reflexive control for military purposes, American scholar T. L. Thomas singled out the work of Colonel S. A. Komov as the most productive military theorist in this area. In his publications, Komov made extensive use of developments from the field of reflexive management under the name of "intellectual methods of information warfare," highlighting the following main elements.:
 
-Distraction through a real or perceived threat to one of the enemy's key positions (on the flanks, in the rear, etc.) during preparations for military action,
-
-overloading through supplying the enemy with large volumes of self-contradictory information,
-
-paralysis, creating the illusion of pinpointed threats to vital interests or the most vulnerable locations,
-
-exhaustion, forcing the adversary to expend resources to perform unproductive activities,
-
-deception, provoking the enemy to redeploy forces to the threatened area in preparation for military action,
-
-splitting, forcing the enemy to act against the interests of his allies,
-
-appeasement, by lowering vigilance and creating the illusion that routine training, rather than preparations for offensive actions, are taking place,
-
-intimidation, by creating the appearance of invincible superiority,
-
-provocation, through the imposition of an unfavorable scenario of action,
-
-suggestion, through the presentation of information material that influences legally, morally, ideologically or in other spheres,
-
-pressure, through the presentation of information material that discredits the government in the eyes of the population.
+Distraction through a real or perceived threat to one of the enemy's key positions (on the flanks, in the rear, etc.) during preparations for military action, overloading through supplying the enemy with large volumes of self-contradictory information, paralysis, creating the illusion of pinpointed threats to vital interests or the most vulnerable locations, exhaustion, forcing the adversary to expend resources to perform unproductive activities, deception, provoking the enemy to redeploy forces to the threatened area in preparation for military action, splitting, forcing the enemy to act against the interests of his allies, appeasement, by lowering vigilance and creating the illusion that routine training, rather than preparations for offensive actions, are taking place, intimidation, by creating the appearance of invincible superiority, provocation, through the imposition of an unfavorable scenario of action, suggestion, through the presentation of information material that influences legally, morally, ideologically or in other spheres, pressure, through the presentation of information material that discredits the government in the eyes of the population.
 
 Another domestic researcher who attracted interest abroad was Professor F. Chausov, who formulated the following principles of reflexive management:
 
-principle of purposefulness — the process should be goal-oriented, involving the full range of necessary measures of reflexive management,
-
-principle of actualization - there should be an "updating" of planning, providing a fairly complete picture of the intellectual potential of the command and staff, especially in situations related to the global information space,
-
-principle of conformity - mutual consistency of goals, place, time and methods of reflexive management must be observed,
-
-simulation principle — one should not forget about forecasting and modeling the actions and states of the opposing side during the execution of reflexive control procedures,
-
-principle of anticipation - current events must be anticipated.
+principle of purposefulness — the process should be goal-oriented, involving the full range of necessary measures of reflexive management, principle of actualization - there should be an "updating" of planning, providing a fairly complete picture of the intellectual potential of the command and staff, especially in situations related to the global information space, principle of conformity - mutual consistency of goals, place, time and methods of reflexive management must be observed, simulation principle — one should not forget about forecasting and modeling the actions and states of the opposing side during the execution of reflexive control procedures, principle of anticipation - current events must be anticipated.
 
 In addition, when using reflexive management, Chausov gave an assessment of risk, the essence of which boils down to the danger of making a mistake if you misjudge the consequences. With this approach, the maximum risk would be if the adversary unravels the plan himself.
 

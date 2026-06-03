@@ -8,10 +8,7 @@ In an alternating current power system, electrical energy is ideally transmitted
 
 ## Calculation
 
-The following formula is used to calculate the K-factor of a transformer:
-
-$$ K=\sum _{h=1}^{\infty }I_{h}^{2}h^{2} $$
-
+The following formula is used to calculate the K-factor of a transformer: $K=\sum _{h=1}^{\infty }I_{h}^{2}h^{2}$
 Where:
 
 K is the K-factor

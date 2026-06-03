@@ -120,17 +120,7 @@ Mixed methods involving non-equilibrium statistical mechanical results (see belo
 
 Many physical phenomena involve quasi-thermodynamic processes out of equilibrium, for example:
 
-heat transport by the internal motions in a material, driven by a temperature imbalance,
-
-electric currents carried by the motion of charges in a conductor, driven by a voltage imbalance,
-
-spontaneous chemical reactions driven by a decrease in free energy,
-
-friction, dissipation, quantum decoherence,
-
-systems being pumped by external forces (optical pumping, etc.),
-
-and irreversible processes in general.
+heat transport by the internal motions in a material, driven by a temperature imbalance, electric currents carried by the motion of charges in a conductor, driven by a voltage imbalance, spontaneous chemical reactions driven by a decrease in free energy, friction, dissipation, quantum decoherence, systems being pumped by external forces (optical pumping, etc.), and irreversible processes in general.
 
 All of these processes occur over time with characteristic rates. These rates are important in engineering. The field of non-equilibrium statistical mechanics is concerned with understanding these non-equilibrium processes at the microscopic level. (Statistical thermodynamics can only be used to calculate the final result, after the external imbalances have been removed and the ensemble has settled back down to equilibrium.)
 

@@ -34,11 +34,7 @@ In momentum transfer, the fluid is treated as a continuous distribution of matte
 
 When a fluid is flowing in the x-direction parallel to a solid surface, the fluid has x-directed momentum, and its concentration is υxρ. By random diffusion of molecules there is an exchange of molecules in the z-direction. Hence the x-directed momentum has been transferred in the z-direction from the faster- to the slower-moving layer.
 
-The equation for momentum transfer is Newton's law of viscosity written as follows:
-
-$$ \tau _{zx}=-\rho \nu {\frac {\partial \upsilon _{x}}{\partial z}} $$
-
-where τzx is the flux of x-directed momentum in the z-direction, ν is μ/ρ, the momentum diffusivity, vx is the velocity of the fluid in the x-direction, z is the distance of transport or diffusion, ρ is the density, and μ is the dynamic viscosity. Newton's law of viscosity is the simplest relationship between the flux of momentum and the velocity gradient. It may be useful to note that this is an unconventional use of the symbol τzx; the indices are reversed as compared with standard usage in solid mechanics, and the sign is reversed.
+The equation for momentum transfer is Newton's law of viscosity written as follows: $\tau _{zx}=-\rho \nu {\frac {\partial \upsilon _{x}}{\partial z}}$ where τzx is the flux of x-directed momentum in the z-direction, ν is μ/ρ, the momentum diffusivity, vx is the velocity of the fluid in the x-direction, z is the distance of transport or diffusion, ρ is the density, and μ is the dynamic viscosity. Newton's law of viscosity is the simplest relationship between the flux of momentum and the velocity gradient. It may be useful to note that this is an unconventional use of the symbol τzx; the indices are reversed as compared with standard usage in solid mechanics, and the sign is reversed.
 
 ## Mass transfer
 
@@ -52,36 +48,18 @@ Diffusion can be caused by temperature gradients (thermal diffusion)
 
 Diffusion can be caused by differences in chemical potential
 
-This can be compared to Fick's law of diffusion, for a species A in a binary mixture consisting of A and B:
-
-$$ J_{Ay}=-D_{AB}{\frac {\partial Ca}{\partial y}} $$
-
-where D is the diffusivity constant.
+This can be compared to Fick's law of diffusion, for a species A in a binary mixture consisting of A and B: $J_{Ay}=-D_{AB}{\frac {\partial Ca}{\partial y}}$ where D is the diffusivity constant.
 
 ## Heat transfer
 
-Many important engineered systems involve heat transfer. Some examples are the heating and cooling of process streams, phase changes, distillation, etc. The basic principle is the Fourier's law which is expressed as follows for a static system:
-
-$$ q''=-k{\frac {dT}{dx}} $$
-
+Many important engineered systems involve heat transfer. Some examples are the heating and cooling of process streams, phase changes, distillation, etc. The basic principle is the Fourier's law which is expressed as follows for a static system: $q''=-k{\frac {dT}{dx}}$
 The net flux of heat through a system equals the conductivity times the rate of change of temperature with respect to position.
 
-For convective transport involving turbulent flow, complex geometries, or difficult boundary conditions, the heat transfer may be represented by a heat transfer coefficient.
-
-$$ Q=h\cdot A\cdot {\Delta T} $$
-
-where A is the surface area, 
-
-$$ {\Delta T} $$
-
- is the temperature driving force, Q is the heat flow per unit time, and h is the heat transfer coefficient.
+For convective transport involving turbulent flow, complex geometries, or difficult boundary conditions, the heat transfer may be represented by a heat transfer coefficient. $Q=h\cdot A\cdot {\Delta T}$ where A is the surface area, ${\Delta T}$ is the temperature driving force, Q is the heat flow per unit time, and h is the heat transfer coefficient.
 
 Within heat transfer, two principal types of convection can occur:
 
-Forced convection can occur in both laminar and turbulent flow. In the situation of laminar flow in circular tubes, several dimensionless numbers are used such as Nusselt number, Reynolds number, and Prandtl number. The commonly used equation is 
-
-$$ Nu_{a}={\frac {h_{a}D}{k}} $$
-
+Forced convection can occur in both laminar and turbulent flow. In the situation of laminar flow in circular tubes, several dimensionless numbers are used such as Nusselt number, Reynolds number, and Prandtl number. The commonly used equation is $Nu_{a}={\frac {h_{a}D}{k}}$
 .
 
 Natural or free convection is a function of Grashof and Prandtl numbers. The complexities of free convection heat transfer make it necessary to mainly use empirical relations from experimental data.
@@ -94,143 +72,21 @@ The heat and mass analogy allows solutions for mass transfer problems to be obta
 
 ### Derivation
 
-The non-dimensional energy equation for fluid flow in a boundary layer can simplify to the following, when heating from viscous dissipation and heat generation can be neglected:
+The non-dimensional energy equation for fluid flow in a boundary layer can simplify to the following, when heating from viscous dissipation and heat generation can be neglected: ${u^{*}{\frac {\partial T^{*}}{\partial x^{*}}}}+{v^{*}{\frac {\partial T^{*}}{\partial y^{*}}}}={\frac {1}{Re_{L}Pr}}{\frac {\partial ^{2}T^{*}}{\partial y^{*2}}}$
+Where ${u^{*}}$ and ${v^{*}}$ are the velocities in the x and y directions respectively normalized by the free stream velocity, ${x^{*}}$ and ${y^{*}}$ are the x and y coordinates non-dimensionalized by a relevant length scale, ${Re_{L}}$ is the Reynolds number, ${Pr}$ is the Prandtl number, and ${T^{*}}$ is the non-dimensional temperature, which is defined by the local, minimum, and maximum temperatures: $T^{*}={\frac {T-T_{min}}{T_{max}-T_{min}}}$
+The non-dimensional species transport equation for fluid flow in a boundary layer can be given as the following, assuming no bulk species generation: ${u^{*}{\frac {\partial C_{A}^{*}}{\partial x^{*}}}}+{v^{*}{\frac {\partial C_{A}^{*}}{\partial y^{*}}}}={\frac {1}{Re_{L}Sc}}{\frac {\partial ^{2}C_{A}^{*}}{\partial y^{*2}}}$
+Where ${C_{A}^{*}}$ is the non-dimensional concentration, and ${Sc}$ is the Schmidt number.
 
-$$ {u^{*}{\frac {\partial T^{*}}{\partial x^{*}}}}+{v^{*}{\frac {\partial T^{*}}{\partial y^{*}}}}={\frac {1}{Re_{L}Pr}}{\frac {\partial ^{2}T^{*}}{\partial y^{*2}}} $$
-
-Where 
-
-$$ {u^{*}} $$
-
- and 
-
-$$ {v^{*}} $$
-
- are the velocities in the x and y directions respectively normalized by the free stream velocity, 
-
-$$ {x^{*}} $$
-
- and 
-
-$$ {y^{*}} $$
-
- are the x and y coordinates non-dimensionalized by a relevant length scale, 
-
-$$ {Re_{L}} $$
-
- is the Reynolds number, 
-
-$$ {Pr} $$
-
- is the Prandtl number, and 
-
-$$ {T^{*}} $$
-
- is the non-dimensional temperature, which is defined by the local, minimum, and maximum temperatures:
-
-$$ T^{*}={\frac {T-T_{min}}{T_{max}-T_{min}}} $$
-
-The non-dimensional species transport equation for fluid flow in a boundary layer can be given as the following, assuming no bulk species generation:
-
-$$ {u^{*}{\frac {\partial C_{A}^{*}}{\partial x^{*}}}}+{v^{*}{\frac {\partial C_{A}^{*}}{\partial y^{*}}}}={\frac {1}{Re_{L}Sc}}{\frac {\partial ^{2}C_{A}^{*}}{\partial y^{*2}}} $$
-
-Where 
-
-$$ {C_{A}^{*}} $$
-
- is the non-dimensional concentration, and 
-
-$$ {Sc} $$
-
- is the Schmidt number.
-
-Transport of heat is driven by temperature differences, while transport of species is due to concentration differences. They differ by the relative diffusion of their transport compared to the diffusion of momentum. For heat, the comparison is between viscous diffusivity (
-
-$$ {\nu } $$
-
-) and thermal diffusion (
-
-$$ {\alpha } $$
-
-), given by the Prandtl number. Meanwhile, for mass transfer, the comparison is between viscous diffusivity (
-
-$$ {\nu } $$
-
-) and mass Diffusivity (
-
-$$ {D} $$
-
-), given by the Schmidt number.
+Transport of heat is driven by temperature differences, while transport of species is due to concentration differences. They differ by the relative diffusion of their transport compared to the diffusion of momentum. For heat, the comparison is between viscous diffusivity ( ${\nu }$ ) and thermal diffusion ( ${\alpha }$ ), given by the Prandtl number. Meanwhile, for mass transfer, the comparison is between viscous diffusivity ( ${\nu }$ ) and mass Diffusivity ( ${D}$ ), given by the Schmidt number.
 
 In some cases direct analytic solutions can be found from these equations for the Nusselt and Sherwood numbers. In cases where experimental results are used, one can assume these equations underlie the observed transport.
 
-At an interface, the boundary conditions for both equations are also similar. For heat transfer at an interface, the no-slip condition allows us to equate conduction with convection, thus equating Fourier's law and Newton's law of cooling:
+At an interface, the boundary conditions for both equations are also similar. For heat transfer at an interface, the no-slip condition allows us to equate conduction with convection, thus equating Fourier's law and Newton's law of cooling: $q''=k{\frac {dT}{dy}}=h(T_{s}-T_{b})$
+Where q" is the heat flux, ${k}$ is the thermal conductivity, ${h}$ is the heat transfer coefficient, and the subscripts ${s}$ and ${b}$ compare the surface and bulk values respectively.
 
-$$ q''=k{\frac {dT}{dy}}=h(T_{s}-T_{b}) $$
-
-Where q" is the heat flux, 
-
-$$ {k} $$
-
- is the thermal conductivity, 
-
-$$ {h} $$
-
- is the heat transfer coefficient, and the subscripts 
-
-$$ {s} $$
-
- and 
-
-$$ {b} $$
-
- compare the surface and bulk values respectively.
-
-For mass transfer at an interface, we can equate Fick's law with Newton's law for convection, yielding:
-
-$$ J=D{\frac {dC}{dy}}=h_{m}(C_{m}-C_{b}) $$
-
-Where 
-
-$$ {J} $$
-
- is the mass flux [kg/s 
-
-$$ {m^{3}} $$
-
-], 
-
-$$ {D} $$
-
- is the diffusivity of species a in fluid b, and 
-
-$$ {h_{m}} $$
-
- is the mass transfer coefficient. As we can see, 
-
-$$ {q''} $$
-
- and 
-
-$$ {J} $$
-
- are analogous, 
-
-$$ {k} $$
-
- and 
-
-$$ {D} $$
-
- are analogous, while 
-
-$$ {T} $$
-
- and 
-
-$$ {C} $$
-
- are analogous.
+For mass transfer at an interface, we can equate Fick's law with Newton's law for convection, yielding: $J=D{\frac {dC}{dy}}=h_{m}(C_{m}-C_{b})$
+Where ${J}$ is the mass flux [kg/s ${m^{3}}$
+], ${D}$ is the diffusivity of species a in fluid b, and ${h_{m}}$ is the mass transfer coefficient. As we can see, ${q''}$ and ${J}$ are analogous, ${k}$ and ${D}$ are analogous, while ${T}$ and ${C}$ are analogous.
 
 ### Implementing the Analogy
 
@@ -238,20 +94,11 @@ Heat-Mass Analogy:
 
 Because the Nu and Sh equations are derived from these analogous governing equations, one can directly swap the Nu and Sh and the Pr and Sc numbers to convert these equations between mass and heat.
 
-In many situations, such as flow over a flat plate, the Nu and Sh numbers are functions of the Pr and Sc numbers to some coefficient 
-
-$$ n $$
-
-. Therefore, one can directly calculate these numbers from one another using:
-
-$$ {\frac {Nu}{Sh}}={\frac {Pr^{n}}{Sc^{n}}} $$
-
+In many situations, such as flow over a flat plate, the Nu and Sh numbers are functions of the Pr and Sc numbers to some coefficient $n$
+. Therefore, one can directly calculate these numbers from one another using: ${\frac {Nu}{Sh}}={\frac {Pr^{n}}{Sc^{n}}}$
 Where can be used in most cases, which comes from the analytical solution for the Nusselt Number for laminar flow over a flat plate. For best accuracy, n should be adjusted where correlations have a different exponent.
 
-We can take this further by substituting into this equation the definitions of the heat transfer coefficient, mass transfer coefficient, and Lewis number, yielding:
-
-$$ {\frac {h}{h_{m}}}={\frac {k}{DLe^{n}}}=\rho C_{p}Le^{1-n} $$
-
+We can take this further by substituting into this equation the definitions of the heat transfer coefficient, mass transfer coefficient, and Lewis number, yielding: ${\frac {h}{h_{m}}}={\frac {k}{DLe^{n}}}=\rho C_{p}Le^{1-n}$
 For fully developed turbulent flow, with n=1/3, this becomes the Chilton–Colburn J-factor analogy. Said analogy also relates viscous forces and heat transfer, like the Reynolds analogy.
 
 ### Limitations

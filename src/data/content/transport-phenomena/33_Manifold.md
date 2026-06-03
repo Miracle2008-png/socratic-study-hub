@@ -214,11 +214,7 @@ If
  and 
 
 {\displaystyle \partial M}
- is a manifold (without boundary) of dimension 
-
-.
-
-## Construction
+ is a manifold (without boundary) of dimension . ## Construction
 A single manifold can be constructed in different ways, each stressing a different aspect of the manifold, thereby  leading to a slightly different viewpoint.
 
 ### Charts

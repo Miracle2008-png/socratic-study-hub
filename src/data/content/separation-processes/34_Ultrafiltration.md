@@ -6,9 +6,7 @@ Ultrafiltration (UF) is a variety of membrane filtration in which forces such as
 The basic operating principle of ultrafiltration uses a pressure induced separation of solutes from a solvent through a semi permeable membrane.  The relationship between the applied pressure on the solution to be separated and the flux through the membrane is most commonly described by the Darcy equation: 
 
 {\displaystyle J={\mathrm {TMP}  \over \mu R_{\mathrm {t} }}}
-,
-
-where J is the flux (flow rate per membrane area), TMP is the transmembrane pressure (pressure difference between feed and permeate stream), μ is solvent viscosity and Rt is the total resistance (sum of membrane and fouling resistance).
+, where J is the flux (flow rate per membrane area), TMP is the transmembrane pressure (pressure difference between feed and permeate stream), μ is solvent viscosity and Rt is the total resistance (sum of membrane and fouling resistance).
 
 ## Membrane fouling
 

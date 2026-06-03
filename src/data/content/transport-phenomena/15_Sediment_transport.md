@@ -101,8 +101,7 @@ In general, a particle Reynolds number has the form:
 
 Where 
 {\displaystyle U_{p}}
- is a characteristic particle velocity, 
- is the grain diameter (a characteristic particle size), and 
+is a characteristic particle velocity, is the grain diameter (a characteristic particle size), and
 {\displaystyle \nu }
  is the kinematic viscosity, which is given by the dynamic viscosity, 
 {\displaystyle \mu }
@@ -136,9 +135,7 @@ The particle Reynolds number is therefore given by:
 The boundary Reynolds number can be used with the Shields diagram to empirically solve the equation
 
 {\displaystyle \tau _{c}*=f\left(\mathrm {Re} _{p}*\right)}
-,
-
-which solves the right-hand side of the equation
+, which solves the right-hand side of the equation
 
 {\displaystyle \tau _{b}*=\tau _{c}*}
 .
@@ -146,9 +143,7 @@ which solves the right-hand side of the equation
 In order to solve the left-hand side, expanded as
 
 {\displaystyle \tau _{b}*={\frac {\tau _{b}}{(\rho _{s}-\rho _{f})(g)(D)}}}
-,
-
-the bed shear stress needs to be found, 
+, the bed shear stress needs to be found,
 {\displaystyle {\tau _{b}}}
 . There are several ways to solve for the bed shear stress. The simplest approach is to assume the flow is steady and uniform, using the reach-averaged depth and slope. because it is difficult to measure shear stress in situ, this method is also one of the most-commonly used. The method is known as the depth-slope product.
 
@@ -418,9 +413,7 @@ Due to the difficulty of estimating bed load transport rates, these equations ar
 The transport formula of Meyer-Peter and Müller, originally developed in 1948, was designed for well-sorted fine gravel at a transport stage of about 8. The formula uses the above nondimensionalization for shear stress,
 
 {\displaystyle \tau *={\frac {\tau }{(\rho _{s}-\rho )(g)(D)}}}
-,
-
-and Hans Einstein's nondimensionalization for sediment volumetric discharge per unit width
+, and Hans Einstein's nondimensionalization for sediment volumetric discharge per unit width
 
 {\displaystyle q_{s}*={\frac {q_{s}}{D{\sqrt {{\frac {\rho _{s}-\rho }{\rho }}gD}}}}={\frac {q_{s}}{Re_{p}\nu }}}
 .
@@ -668,12 +661,9 @@ A common characterization of suspended sediment concentration in a flow is given
 
 {\displaystyle {\frac {c_{s}}{c_{0}}}=\left[{\frac {z\left(h-z_{0}\right)}{z_{0}\left(h-z\right)}}\right]^{-P/\alpha }}
 
-Here, 
- is the elevation above the bed, 
+Here, is the elevation above the bed,
 {\displaystyle c_{s}}
- is the concentration of suspended sediment at that elevation, 
- is the flow depth, 
- is the Rouse number, and 
+is the concentration of suspended sediment at that elevation, is the flow depth, is the Rouse number, and
 {\displaystyle \alpha }
  relates the eddy viscosity for momentum 
 {\displaystyle K_{m}}

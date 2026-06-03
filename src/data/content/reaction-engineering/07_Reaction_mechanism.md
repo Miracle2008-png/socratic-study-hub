@@ -14,10 +14,7 @@ Illustrative is the oxidation of carbon monoxide by nitrogen dioxide:
 
 CO + NO2 → CO2 + NO
 
-The rate law for this reaction is:
-
-$$ r=k[NO_{2}]^{2} $$
-
+The rate law for this reaction is: $r=k[NO_{2}]^{2}$
 This form shows that the rate-determining step does not involve CO.  Instead, the slow step involves two molecules of NO2. A possible mechanism for the overall reaction that explains the rate law is:
 
 2 NO2 → NO3 + NO (slow)
@@ -26,14 +23,7 @@ NO3 + CO → NO2 + CO2 (fast)
 
 Each step is called an elementary step, and each has its own rate law and molecularity. The sum of the elementary steps gives the net reaction.
 
-When determining the overall rate law for a reaction, the slowest step is the step that determines the reaction rate. Because the first step (in the above reaction) is the slowest step, it is the rate-determining step. Because it involves the collision of two NO2 molecules, it is a bimolecular reaction with a rate 
-
-$$ r $$
-
- which obeys the rate law 
-
-$$ r=k[NO_{2}(t)]^{2} $$
-
+When determining the overall rate law for a reaction, the slowest step is the step that determines the reaction rate. Because the first step (in the above reaction) is the slowest step, it is the rate-determining step. Because it involves the collision of two NO2 molecules, it is a bimolecular reaction with a rate $r$ which obeys the rate law $r=k[NO_{2}(t)]^{2}$
 .
 
 Other reactions may have mechanisms of several consecutive steps. In organic chemistry, the reaction mechanism for the benzoin condensation, put forward in 1903 by A. J. Lapworth, was one of the first proposed reaction mechanisms.

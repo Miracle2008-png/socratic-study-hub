@@ -80,11 +80,7 @@ Electric power is the rate at which electric energy is transferred by an electri
 
 Electric power, like mechanical power, is the rate of doing work, measured in watts, and represented by the letter P. The term wattage is used colloquially to mean "electric power in watts." The electric power in watts produced by an electric current I consisting of a charge of Q coulombs every t seconds passing through an electric potential (voltage) difference of V is
 
-work done per unit time
-
-$$ P={\text{work done per unit time}}={\frac {QV}{t}}=IV\, $$
-
-where
+work done per unit time $P={\text{work done per unit time}}={\frac {QV}{t}}=IV\,$ where
 
 Q is electric charge in coulombs
 

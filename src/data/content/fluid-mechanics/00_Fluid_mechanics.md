@@ -38,34 +38,17 @@ The continuum assumption is an idealization of continuum mechanics under which f
 
 ## Navier–Stokes equations
 
-The Navier–Stokes equations (named after Claude-Louis Navier and George Gabriel Stokes) are differential equations that describe the force balance at a given point within a fluid. For an incompressible fluid with vector velocity field 
-
-$$ \mathbf {u} $$
-
-, the Navier–Stokes equations are 
-
-$$ {\frac {\partial \mathbf {u} }{\partial t}}+(\mathbf {u} \cdot \nabla )\mathbf {u} =-{\frac {1}{\rho }}\nabla p+\nu \nabla ^{2}\mathbf {u} $$
-
+The Navier–Stokes equations (named after Claude-Louis Navier and George Gabriel Stokes) are differential equations that describe the force balance at a given point within a fluid. For an incompressible fluid with vector velocity field $\mathbf {u}$ , the Navier–Stokes equations are ${\frac {\partial \mathbf {u} }{\partial t}}+(\mathbf {u} \cdot \nabla )\mathbf {u} =-{\frac {1}{\rho }}\nabla p+\nu \nabla ^{2}\mathbf {u}$
 .
 
-These differential equations are the analogues for deformable materials to Newton's equations of motion for particles – the Navier–Stokes equations describe changes in momentum (force) in response to pressure 
-
-$$ p $$
-
- and viscosity, parameterized by the kinematic viscosity 
-
-$$ \nu $$
-
+These differential equations are the analogues for deformable materials to Newton's equations of motion for particles – the Navier–Stokes equations describe changes in momentum (force) in response to pressure $p$ and viscosity, parameterized by the kinematic viscosity $\nu$
 . Occasionally, body forces, such as the gravitational force or Lorentz force are added to the equations.
 
 Solutions of the Navier–Stokes equations for a given physical problem must be sought with the help of calculus. In practical terms, only the simplest cases can be solved exactly in this way. These cases generally involve non-turbulent, steady flow in which the Reynolds number is small. For more complex cases, especially those involving turbulence, such as global weather systems, aerodynamics, hydrodynamics and many more, solutions of the Navier–Stokes equations can currently only be found with the help of computers. This branch of science is called computational fluid dynamics.
 
 ## Inviscid and viscous fluids
 
-An inviscid fluid has no viscosity, 
-
-$$ \nu =0 $$
-
+An inviscid fluid has no viscosity, $\nu =0$
 . In practice, an inviscid flow is an idealization, one that facilitates mathematical treatment. In fact, purely inviscid flows are only known to be realized in the case of superfluidity. Otherwise, fluids are generally viscous, a property that is often most important within a boundary layer near a solid surface, where the flow must match onto the no-slip condition at the solid. In some cases, the mathematics of a fluid mechanical system can be treated by assuming that the fluid outside of boundary layers is inviscid, and then matching its solution onto that for a thin laminar boundary layer.
 
 For fluid flow over a porous boundary, the fluid velocity can be discontinuous between the free fluid and the fluid in the porous media (this is related to the Beavers and Joseph condition). Further, it is useful at low subsonic speeds to assume that gas is incompressible—that is, the density of the gas does not change even though the speed and static pressure change.
@@ -78,70 +61,10 @@ By contrast, stirring a non-Newtonian fluid can leave a "hole" behind. This will
 
 ### Equations for a Newtonian fluid
 
-The constant of proportionality between the viscous stress tensor and the velocity gradient is known as the viscosity. A simple equation to describe incompressible Newtonian fluid behavior is
+The constant of proportionality between the viscous stress tensor and the velocity gradient is known as the viscosity. A simple equation to describe incompressible Newtonian fluid behavior is $\tau =-\mu {\frac {\mathrm {d} u}{\mathrm {d} n}}$ where $\tau$ is the shear stress exerted by the fluid ("drag"), $\mu$ is the fluid viscosity—a constant of proportionality, and ${\frac {\mathrm {d} u}{\mathrm {d} n}}$ is the velocity gradient perpendicular to the direction of shear.
 
-$$ \tau =-\mu {\frac {\mathrm {d} u}{\mathrm {d} n}} $$
+For a Newtonian fluid, the viscosity, by definition, depends only on temperature, not on the forces acting upon it. If the fluid is incompressible the equation governing the viscous stress (in Cartesian coordinates) is $\tau _{ij}=\mu \left({\frac {\partial v_{i}}{\partial x_{j}}}+{\frac {\partial v_{j}}{\partial x_{i}}}\right)$ where $\tau _{ij}$ is the shear stress on the $i^{th}$ face of a fluid element in the $j^{th}$ direction $v_{i}$ is the velocity in the $i^{th}$ direction $x_{j}$ is the $j^{th}$ direction coordinate.
 
-where
+If the fluid is not incompressible the general form for the viscous stress in a Newtonian fluid is $\tau _{ij}=\mu \left({\frac {\partial v_{i}}{\partial x_{j}}}+{\frac {\partial v_{j}}{\partial x_{i}}}-{\frac {2}{3}}\delta _{ij}\nabla \cdot \mathbf {v} \right)+\kappa \delta _{ij}\nabla \cdot \mathbf {v}$ where $\kappa$ is the second viscosity coefficient (or bulk viscosity). If a fluid does not obey this relation, it is termed a non-Newtonian fluid, of which there are several types. Non-Newtonian fluids can be either plastic, Bingham plastic, pseudoplastic, dilatant, thixotropic, rheopectic, viscoelastic.
 
-$$ \tau $$
-
- is the shear stress exerted by the fluid ("drag"),
-
-$$ \mu $$
-
- is the fluid viscosity—a constant of proportionality, and
-
-$$ {\frac {\mathrm {d} u}{\mathrm {d} n}} $$
-
- is the velocity gradient perpendicular to the direction of shear.
-
-For a Newtonian fluid, the viscosity, by definition, depends only on temperature, not on the forces acting upon it. If the fluid is incompressible the equation governing the viscous stress (in Cartesian coordinates) is
-
-$$ \tau _{ij}=\mu \left({\frac {\partial v_{i}}{\partial x_{j}}}+{\frac {\partial v_{j}}{\partial x_{i}}}\right) $$
-
-where
-
-$$ \tau _{ij} $$
-
- is the shear stress on the 
-
-$$ i^{th} $$
-
- face of a fluid element in the 
-
-$$ j^{th} $$
-
- direction
-
-$$ v_{i} $$
-
- is the velocity in the 
-
-$$ i^{th} $$
-
- direction
-
-$$ x_{j} $$
-
- is the 
-
-$$ j^{th} $$
-
- direction coordinate.
-
-If the fluid is not incompressible the general form for the viscous stress in a Newtonian fluid is
-
-$$ \tau _{ij}=\mu \left({\frac {\partial v_{i}}{\partial x_{j}}}+{\frac {\partial v_{j}}{\partial x_{i}}}-{\frac {2}{3}}\delta _{ij}\nabla \cdot \mathbf {v} \right)+\kappa \delta _{ij}\nabla \cdot \mathbf {v} $$
-
-where 
-
-$$ \kappa $$
-
- is the second viscosity coefficient (or bulk viscosity). If a fluid does not obey this relation, it is termed a non-Newtonian fluid, of which there are several types. Non-Newtonian fluids can be either plastic, Bingham plastic, pseudoplastic, dilatant, thixotropic, rheopectic, viscoelastic.
-
-In some applications, another rough broad division among fluids is made: ideal and non-ideal fluids. An ideal fluid is non-viscous and offers no resistance whatsoever to a shearing force.  An ideal fluid really does not exist, but in some calculations, the assumption is justifiable. One example of this is the flow far from solid surfaces. In many cases, the viscous effects are concentrated near the solid boundaries (such as in boundary layers) while in regions of the flow field far away from the boundaries the viscous effects can be neglected and the fluid there is treated as it were inviscid (ideal flow). When the viscosity is neglected, the term containing the viscous stress tensor 
-
-$$ \mathbf {\tau } $$
-
- in the Navier–Stokes equation vanishes. The equation reduced in this form is called the Euler equation.
+In some applications, another rough broad division among fluids is made: ideal and non-ideal fluids. An ideal fluid is non-viscous and offers no resistance whatsoever to a shearing force.  An ideal fluid really does not exist, but in some calculations, the assumption is justifiable. One example of this is the flow far from solid surfaces. In many cases, the viscous effects are concentrated near the solid boundaries (such as in boundary layers) while in regions of the flow field far away from the boundaries the viscous effects can be neglected and the fluid there is treated as it were inviscid (ideal flow). When the viscosity is neglected, the term containing the viscous stress tensor $\mathbf {\tau }$ in the Navier–Stokes equation vanishes. The equation reduced in this form is called the Euler equation.

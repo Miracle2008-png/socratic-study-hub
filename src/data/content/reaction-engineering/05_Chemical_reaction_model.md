@@ -2,10 +2,7 @@
 
 Chemical reaction models transform physical knowledge into a mathematical formulation that can be utilized in computational simulation of practical problems in chemical engineering. Computer simulation provides the flexibility to study chemical processes under a wide range of conditions. Modeling of a chemical reaction involves solving conservation equations describing convection, diffusion, and reaction source for each component species.
 
-## Species transport equation
-
-$$ {\frac {\partial (\rho Y_{i})}{\partial t}}+\nabla \cdot (\rho {\vec {v}}Y_{i})=-\nabla \cdot {\vec {J}}_{i}+R_{i} $$
-
+## Species transport equation ${\frac {\partial (\rho Y_{i})}{\partial t}}+\nabla \cdot (\rho {\vec {v}}Y_{i})=-\nabla \cdot {\vec {J}}_{i}+R_{i}$
 Ri is the net rate of production of species i by chemical reaction and Si is the rate of creation by addition from the dispersed phase and the user defined source. Ji is the diffusion flux of species i, which arises due to concentration gradients and differs in both laminar and turbulent flows. In turbulent flows, computational fluid dynamics also considers the effects of turbulent diffusivity. The net source of chemical species i due to reaction, Ri which appeared as the source term in the species transport equation is computed as the sum of the reaction sources over the NR reactions among the species.
 
 ## Reaction models

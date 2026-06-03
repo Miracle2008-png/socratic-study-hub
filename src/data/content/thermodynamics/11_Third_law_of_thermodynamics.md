@@ -61,8 +61,7 @@ That is,
  is the entropy, the zero-point entropy 
 
 {\displaystyle S_{0}(x)}
- is finite-valued, 
- is the temperature, and 
+is finite-valued, is the temperature, and
  represents other relevant state variables.
 
 This implies that the heat capacity 
@@ -178,11 +177,7 @@ Isentropic cooling. Here, the system is wrapped in adiathermal covering, and the
 {\displaystyle T'<T}
 .
 
-At every two-step of the process, the mass of the system decreases, as we discard more and more salt as the "environment". However, if the equations of state for this salt is as shown in Fig. 1 (left), then we can start with a large but finite amount of salt, and end up with a small piece of salt that has 
-
-.
-
-### Specific heat
+At every two-step of the process, the mass of the system decreases, as we discard more and more salt as the "environment". However, if the equations of state for this salt is as shown in Fig. 1 (left), then we can start with a large but finite amount of salt, and end up with a small piece of salt that has . ### Specific heat
 A non-quantitative description of his third law that Nernst gave at the very beginning was simply that the specific heat of a material can always be made zero by cooling it down far enough. A modern, quantitative analysis follows.
 
 Suppose that the heat capacity of a sample in the low temperature region has the form of a power law C(T,X) = C0Tα asymptotically as T → 0, and we wish to find which values of α are compatible with the third law. We have

@@ -280,11 +280,7 @@ The formula above might not be true for points which are not close enough since 
 ## Parallel transport on a vector bundle
 Parallel transport of tangent vectors is a special case of a more general construction involving an arbitrary vector bundle 
 . Specifically, parallel transport of tangent vectors is the case where 
- is the tangent bundle 
-
-.
-
-Let M be a smooth manifold. Let E → M be a vector bundle with connection ∇ and γ: I → M a curve parameterized by an open interval I. A section 
+ is the tangent bundle . Let M be a smooth manifold. Let E → M be a vector bundle with connection ∇ and γ: I → M a curve parameterized by an open interval I. A section 
  of 
  along γ is called parallel if
 
@@ -361,8 +357,6 @@ Further generalizations of parallel transport are also possible. In the context 
 
 ## Approximation: Schild's ladder
 
-Parallel transport can be discretely approximated by Schild's ladder,
-
-which takes finite steps along a curve, and approximates
+Parallel transport can be discretely approximated by Schild's ladder, which takes finite steps along a curve, and approximates
 
 Levi-Civita parallelogramoids by approximate parallelograms.

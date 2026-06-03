@@ -113,9 +113,7 @@ The second law has been shown to be equivalent to the internal energy U defined 
 ### Second law statements, such as the Clausius inequality, involving radiative fluxes
 The Clausius inequality, as well as some other statements of the second law, must be re-stated to have general applicability for all forms of heat transfer, i.e. scenarios involving radiative fluxes. For example, the integrand (đQ/T) of the Clausius expression applies to heat conduction and convection, and the case of ideal infinitesimal blackbody radiation (BR) transfer, but does not apply to most radiative transfer scenarios and in some cases has no physical meaning whatsoever. Consequently, the Clausius inequality was re-stated so that it is applicable to cycles with processes involving any form of heat transfer. The entropy transfer with radiative fluxes (
 \delta S_{\text{NetRad}}
-) is taken separately from that due to heat transfer by conduction and convection (
-
-), where the temperature is evaluated at the system boundary where the heat transfer occurs. The modified Clausius inequality, for all heat transfer scenarios, can then be expressed as
+) is taken separately from that due to heat transfer by conduction and convection ( ), where the temperature is evaluated at the system boundary where the heat transfer occurs. The modified Clausius inequality, for all heat transfer scenarios, can then be expressed as
 
 {\displaystyle \int _{\text{cycle}}\left({\frac {\delta Q_{CC}}{T_{b}}}+\delta S_{\text{NetRad}}\right)\leq 0}
 

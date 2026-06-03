@@ -12,106 +12,31 @@ The membrane gas separation equipment typically pumps gas into the membrane modu
 
 There are three main diffusion mechanisms. The first (b), Knudsen diffusion holds at very low pressures where lighter molecules can move across a membrane faster than heavy ones, in a material with reasonably large pores. The second (c), molecular sieving, is the case where the pores of the membrane are too small to let one component pass, a process which is typically not practical in gas applications, as the molecules are too small to design relevant pores. In these cases the movement of molecules is best described by pressure-driven convective flow through capillaries, which is quantified by Darcy's law. However, the more general model in gas applications is the solution-diffusion (d) where particles are first dissolved onto the membrane and then diffuse through it both at different rates. This model is employed when the pores in the polymer membrane appear and disappear faster relative to the movement of the particles.
 
-In a typical membrane system the incoming feed stream is separated into two components: permeant and retentate. Permeant is the gas that travels across the membrane and the retentate is what is left of the feed. On both sides of the membrane, a gradient of chemical potential is maintained by a pressure difference which is the driving force for the gas molecules to pass through. The ease of transport of each species is quantified by the permeability, Pi. With the assumptions of ideal mixing on both sides of the membrane, ideal gas law, constant diffusion coefficient and Henry's law, the flux of a species can be related to the pressure difference by Fick's law:
-
-$$ J_{i}={\frac {D_{i}K_{i}(p_{i}'-p_{i}'')}{l}}={\frac {P_{i}(p_{i}'-p_{i}'')}{l}} $$
-
-where, (Ji) is the molar flux of species i across the membrane, (l) is membrane thickness, (Pi) is permeability of species i, (Di) is diffusivity, (Ki) is the Henry coefficient, and (pi') and (pi") represent the partial pressures of the species i at the feed and permeant side respectively. The product of DiKi is often expressed as the permeability of the species i,  on the specific membrane being used.
-
-$$ P_{i}=D_{i}K_{i} $$
-
-The flow of a second species, j, can be defined as:
-
-$$ J_{j}={\frac {P_{j}(p_{j}'-p_{j}'')}{l}} $$
-
-With the expression above, a membrane system for a binary mixture can be sufficiently defined. it can be seen that the total flow across the membrane is strongly dependent on the relation between the feed and permeate pressures. The ratio of feed pressure (p') over permeate pressure (p") is defined as the membrane pressure ratio (θ).
-
-$$ \theta ={\frac {P'}{P''}} $$
-
-It is clear from the above, that a flow of species i or j across the membrane can only occur when:
-
-$$ p_{i}'-p_{i}''=p'n_{i}'-p''n_{i}''\neq 0 $$
-
-In other words, the membrane will experience flow across it when there exists a concentration gradient between feed and permeate. If the gradient is positive, the flow will go from the feed to the permeate and species i will be separated from the feed.
-
-$$ p'n_{i}'-p''n_{i}''>0\rightarrow {\frac {n_{i}''}{n_{i}'}}\leq {\frac {p'}{p''}} $$
-
-Therefore, the maximum separation of species i results from:
-
-$$ n_{i}'',max''={\frac {p'}{p''}}n_{i}'=\theta n_{i}' $$
-
-Another important coefficient when choosing the optimum membrane for a separation process is the membrane selectivity αij defined as the ratio of permeability of species i with relation to the species j.
-
-$$ \alpha _{ij}={\frac {P_{i}}{P_{j}}} $$
-
+In a typical membrane system the incoming feed stream is separated into two components: permeant and retentate. Permeant is the gas that travels across the membrane and the retentate is what is left of the feed. On both sides of the membrane, a gradient of chemical potential is maintained by a pressure difference which is the driving force for the gas molecules to pass through. The ease of transport of each species is quantified by the permeability, Pi. With the assumptions of ideal mixing on both sides of the membrane, ideal gas law, constant diffusion coefficient and Henry's law, the flux of a species can be related to the pressure difference by Fick's law: $J_{i}={\frac {D_{i}K_{i}(p_{i}'-p_{i}'')}{l}}={\frac {P_{i}(p_{i}'-p_{i}'')}{l}}$ where, (Ji) is the molar flux of species i across the membrane, (l) is membrane thickness, (Pi) is permeability of species i, (Di) is diffusivity, (Ki) is the Henry coefficient, and (pi') and (pi") represent the partial pressures of the species i at the feed and permeant side respectively. The product of DiKi is often expressed as the permeability of the species i,  on the specific membrane being used. $P_{i}=D_{i}K_{i}$
+The flow of a second species, j, can be defined as: $J_{j}={\frac {P_{j}(p_{j}'-p_{j}'')}{l}}$
+With the expression above, a membrane system for a binary mixture can be sufficiently defined. it can be seen that the total flow across the membrane is strongly dependent on the relation between the feed and permeate pressures. The ratio of feed pressure (p') over permeate pressure (p") is defined as the membrane pressure ratio (θ). $\theta ={\frac {P'}{P''}}$
+It is clear from the above, that a flow of species i or j across the membrane can only occur when: $p_{i}'-p_{i}''=p'n_{i}'-p''n_{i}''\neq 0$
+In other words, the membrane will experience flow across it when there exists a concentration gradient between feed and permeate. If the gradient is positive, the flow will go from the feed to the permeate and species i will be separated from the feed. $p'n_{i}'-p''n_{i}''>0\rightarrow {\frac {n_{i}''}{n_{i}'}}\leq {\frac {p'}{p''}}$
+Therefore, the maximum separation of species i results from: $n_{i}'',max''={\frac {p'}{p''}}n_{i}'=\theta n_{i}'$
+Another important coefficient when choosing the optimum membrane for a separation process is the membrane selectivity αij defined as the ratio of permeability of species i with relation to the species j. $\alpha _{ij}={\frac {P_{i}}{P_{j}}}$
 This coefficient is used to indicate the level to which the membrane is able to separates species i from j. It is obvious from the expression above, that a membrane selectivity of 1 indicates the membrane has no potential to separate the two gases, the reason being, both gases will diffuse equally through the membrane.
 
 In the design of a separation process, normally the pressure ratio and the membrane selectivity are prescribed by the pressures of the system and the permeability of the membrane . The level of separation achieved by the membrane (concentration of the species to be separated) needs to be evaluated based on the aforementioned design parameters in order to evaluate the cost-effectiveness of the system.
 
 ## Membrane performance
 
-The concentration of species i and j across the membrane can be evaluated based on their respective diffusion flows across it.
-
-$$ n_{i}''={\frac {J_{i}}{\sum {J_{k}}}},\quad n_{j}''={\frac {J_{j}}{\sum {J_{k}}}} $$
-
-In the case of a binary mixture, the concentration of species i across the membrane:
-
-$$ n_{i}''={\frac {J_{i}}{J_{i}+J_{j}}} $$
-
-This can be further expanded to obtain an expression of the form:
-
-$$ n_{i}''=n_{i}''(\phi ,\alpha _{ij},n_{i}^{'}) $$
-
-$$ n_{i}''={\frac {J_{i}}{J_{i}+J_{j}}}={\frac {P_{i}(p_{i}'-p_{i}'')}{P_{i}(p_{i}'-p_{i}'')+P_{j}(n_{j}'-{\frac {1}{\phi }}n_{j}'')}} $$
-
-Using the relations:
-
-$$ p_{i}'=p'n_{i}',\quad p_{j}'=p'n_{j}'={\frac {p'}{\phi }}n_{i}' $$
-
-$$ p_{i}''=p''n_{i}',\quad p_{j}''=p''n_{j}''={\frac {p'}{\phi }}n_{i}'' $$
-
-The expression can be rewritten as:
-
-$$ n_{i}''={\frac {P_{i}p'(n_{i}'-{\frac {1}{\phi }}n_{i}'')}{P_{i}p'(n_{i}'-{\frac {1}{\phi }}n_{i}'')+P_{j}p'(n_{j}'-{\frac {1}{\phi }}n_{j}'')}} $$
-
-Then using 
-
-$$ n_{j}'=1-n_{i}'\quad and\quad n_{j}''=1-n_{i}'' $$
-
-$$ n_{i}''={\frac {P_{i}p'(n_{i}'-{\frac {1}{\phi }}n_{i}'')}{P_{i}p'(n_{i}'-{\frac {1}{\phi }}n_{i}'')+P_{j}p'((1-n_{i}')-{\frac {1}{\phi }}(1-n_{i}''))}} $$
-
-$$ (1-\alpha )(n_{i}'')^{2}+(\phi +\phi (\alpha -1)n_{i}'+\alpha -1)n_{i}''-\alpha \phi n_{i}'=0 $$
-
-The solution to the above quadratic expression can be expressed as:
-
-$$ n_{i}={\frac {-(\phi +\phi (\alpha -1)n_{i}'+\alpha -1)\pm {\sqrt {\phi +\phi (\alpha -1)n_{i}'+\alpha -1)^{2}+4(1-\alpha )\alpha \phi n_{i}'}}}{2(1-\alpha )}} $$
-
-Finally, an expression for the permeant concentration is obtained by the following:
-
-$$ n_{i}''(\phi \alpha n_{i}')={\frac {\phi }{2}}\left(n_{i}'+{\frac {1}{\phi }}+{\frac {1}{\alpha -1}}-{\sqrt {\left(n_{i}'+{\frac {1}{\phi }}+{\frac {1}{\alpha -1}}\right)^{2}-{\frac {4\alpha n_{i}'}{(\alpha -1)\phi }}}}\right) $$
-
-Along the separation unit, the feed concentration decays with the diffusion across the membrane causing the concentration at the membrane to drop accordingly. As a result, the total permeant flow (q"out) results from the integration of the diffusion flow across the membrane from the feed inlet (q'in) to feed outlet (q'out). A mass balance across a differential length of the separation unit is therefore:
-
-$$ q'(x)=q'(x+dx)+\int _{x}^{x+dx}q''(x)dx $$
-
-where:
-
-$$ q''(x)=J_{i}(x)+J_{j}(x) $$
-
-Because of the binary nature of the mixture, only one species needs to be evaluated. Prescribing a function n'i=n'i(x), the species balance can be rewritten as:
-
-$$ q'(x)n'_{i}(x)=q'(x+\Delta x)n'_{i}(x+\Delta x)+\int _{x}^{x+dx}q''(x)dx{\bar {n_{i}''}} $$
-
-Where:
-
-$$ \int _{x}^{x+dx}q''(x)dx=\delta q'',\quad {\bar {n_{i}''}}={\frac {n_{i}''(x)+n_{i}''(x+\Delta x)}{2}} $$
-
-$$ \delta q''={\frac {n'_{i}(x)-n'_{i}(x+\Delta x)}{{\bar {n_{i}''}}-n'_{i}(x+\Delta x)}}q'(x) $$
-
-Lastly, the area required per unit membrane length can be obtained by the following expression:
-
-$$ A={\frac {\delta q''}{J_{i}+J_{j}}} $$
-
+The concentration of species i and j across the membrane can be evaluated based on their respective diffusion flows across it. $n_{i}''={\frac {J_{i}}{\sum {J_{k}}}},\quad n_{j}''={\frac {J_{j}}{\sum {J_{k}}}}$
+In the case of a binary mixture, the concentration of species i across the membrane: $n_{i}''={\frac {J_{i}}{J_{i}+J_{j}}}$
+This can be further expanded to obtain an expression of the form: $n_{i}''=n_{i}''(\phi ,\alpha _{ij},n_{i}^{'})$ $n_{i}''={\frac {J_{i}}{J_{i}+J_{j}}}={\frac {P_{i}(p_{i}'-p_{i}'')}{P_{i}(p_{i}'-p_{i}'')+P_{j}(n_{j}'-{\frac {1}{\phi }}n_{j}'')}}$
+Using the relations: $p_{i}'=p'n_{i}',\quad p_{j}'=p'n_{j}'={\frac {p'}{\phi }}n_{i}'$ $p_{i}''=p''n_{i}',\quad p_{j}''=p''n_{j}''={\frac {p'}{\phi }}n_{i}''$
+The expression can be rewritten as: $n_{i}''={\frac {P_{i}p'(n_{i}'-{\frac {1}{\phi }}n_{i}'')}{P_{i}p'(n_{i}'-{\frac {1}{\phi }}n_{i}'')+P_{j}p'(n_{j}'-{\frac {1}{\phi }}n_{j}'')}}$
+Then using $n_{j}'=1-n_{i}'\quad and\quad n_{j}''=1-n_{i}''$ $n_{i}''={\frac {P_{i}p'(n_{i}'-{\frac {1}{\phi }}n_{i}'')}{P_{i}p'(n_{i}'-{\frac {1}{\phi }}n_{i}'')+P_{j}p'((1-n_{i}')-{\frac {1}{\phi }}(1-n_{i}''))}}$ $(1-\alpha )(n_{i}'')^{2}+(\phi +\phi (\alpha -1)n_{i}'+\alpha -1)n_{i}''-\alpha \phi n_{i}'=0$
+The solution to the above quadratic expression can be expressed as: $n_{i}={\frac {-(\phi +\phi (\alpha -1)n_{i}'+\alpha -1)\pm {\sqrt {\phi +\phi (\alpha -1)n_{i}'+\alpha -1)^{2}+4(1-\alpha )\alpha \phi n_{i}'}}}{2(1-\alpha )}}$
+Finally, an expression for the permeant concentration is obtained by the following: $n_{i}''(\phi \alpha n_{i}')={\frac {\phi }{2}}\left(n_{i}'+{\frac {1}{\phi }}+{\frac {1}{\alpha -1}}-{\sqrt {\left(n_{i}'+{\frac {1}{\phi }}+{\frac {1}{\alpha -1}}\right)^{2}-{\frac {4\alpha n_{i}'}{(\alpha -1)\phi }}}}\right)$
+Along the separation unit, the feed concentration decays with the diffusion across the membrane causing the concentration at the membrane to drop accordingly. As a result, the total permeant flow (q"out) results from the integration of the diffusion flow across the membrane from the feed inlet (q'in) to feed outlet (q'out). A mass balance across a differential length of the separation unit is therefore: $q'(x)=q'(x+dx)+\int _{x}^{x+dx}q''(x)dx$ where: $q''(x)=J_{i}(x)+J_{j}(x)$
+Because of the binary nature of the mixture, only one species needs to be evaluated. Prescribing a function n'i=n'i(x), the species balance can be rewritten as: $q'(x)n'_{i}(x)=q'(x+\Delta x)n'_{i}(x+\Delta x)+\int _{x}^{x+dx}q''(x)dx{\bar {n_{i}''}}$
+Where: $\int _{x}^{x+dx}q''(x)dx=\delta q'',\quad {\bar {n_{i}''}}={\frac {n_{i}''(x)+n_{i}''(x+\Delta x)}{2}}$ $\delta q''={\frac {n'_{i}(x)-n'_{i}(x+\Delta x)}{{\bar {n_{i}''}}-n'_{i}(x+\Delta x)}}q'(x)$
+Lastly, the area required per unit membrane length can be obtained by the following expression: $A={\frac {\delta q''}{J_{i}+J_{j}}}$
 ## Membrane materials for carbon capture in flue gas streams
 
 The material of the membrane plays an important role in its ability to provide the desired performance characteristics. It is optimal to have a membrane with a high permeability and sufficient selectivity and it is also important to match the membrane properties to that of the system operating conditions (for example pressures and gas composition).

@@ -12,49 +12,20 @@ In fluid mechanics and transport phenomena, an eddy is not a property of the flu
 
 In 1883, scientist Osborne Reynolds conducted a fluid dynamics experiment involving water and dye, where he adjusted the velocities of the fluids and observed the transition from laminar to turbulent flow, characterized by the formation of eddies and vortices. Turbulent flow is defined as the flow in which the system's inertial forces are dominant over the viscous forces. This phenomenon is described by Reynolds number, a unit-less number used to determine when turbulent flow will occur. Conceptually, the Reynolds number is the ratio between inertial forces and viscous forces.
 
-The general form for the Reynolds number flowing through a tube of radius r (or diameter d):
+The general form for the Reynolds number flowing through a tube of radius r (or diameter d): $\mathrm {Re} ={\frac {2v\rho r}{\mu }}={\frac {\rho vd}{\mu }}$ where v is the velocity of the fluid, ρ is its density, r is the radius of the tube, and μ is the dynamic viscosity of the fluid. A turbulent flow in a fluid is defined by the critical Reynolds number, for a closed pipe this works out to approximately
 
-$$ \mathrm {Re} ={\frac {2v\rho r}{\mu }}={\frac {\rho vd}{\mu }} $$
-
-where v is the velocity of the fluid, ρ is its density, r is the radius of the tube, and μ is the dynamic viscosity of the fluid. A turbulent flow in a fluid is defined by the critical Reynolds number, for a closed pipe this works out to approximately
-
-        2000.
-
-$$ \mathrm {Re} _{\text{c}}\approx 2000. $$
-
-In terms of the critical Reynolds number, the critical velocity is represented as
-
-$$ v_{\text{c}}={\frac {\mathrm {Re} _{\text{c}}\mu }{\rho d}}. $$
-
+        2000. $\mathrm {Re} _{\text{c}}\approx 2000.$
+In terms of the critical Reynolds number, the critical velocity is represented as $v_{\text{c}}={\frac {\mathrm {Re} _{\text{c}}\mu }{\rho d}}.$
 ## Research and development
 
 ### Computational fluid dynamics
 
-These are turbulence models in which the Reynolds stresses, as obtained from a Reynolds averaging of the Navier–Stokes equations, are modelled by a linear constitutive relationship with the mean flow straining field, as:
-
-$$ -\rho \langle u_{i}u_{j}\rangle =2\mu _{t}S_{i,j}-{\tfrac {2}{3}}\rho \kappa \delta _{i,j} $$
-
-where
-
-$$ \mu _{t} $$
-
- is the coefficient termed turbulence "viscosity" (also called the eddy viscosity)
+These are turbulence models in which the Reynolds stresses, as obtained from a Reynolds averaging of the Navier–Stokes equations, are modelled by a linear constitutive relationship with the mean flow straining field, as: $-\rho \langle u_{i}u_{j}\rangle =2\mu _{t}S_{i,j}-{\tfrac {2}{3}}\rho \kappa \delta _{i,j}$ where $\mu _{t}$ is the coefficient termed turbulence "viscosity" (also called the eddy viscosity)
 
 {\textstyle \kappa ={\tfrac {1}{2}}{\bigl (}\langle u_{1}u_{1}\rangle +\langle u_{2}u_{2}\rangle +\langle u_{3}u_{3}\rangle {\bigr )}}
- is the mean turbulent kinetic energy
+is the mean turbulent kinetic energy $S_{i,j}$ is the mean strain rate
 
-$$ S_{i,j} $$
-
- is the mean strain rate
-
-Note that that inclusion of 
-
-$$ {\tfrac {2}{3}}\rho \kappa \delta _{i,j} $$
-
-in the linear constitutive relation is required by tensorial algebra purposes when solving for two-equation turbulence models (or any other turbulence model that solves a transport equation for
-
-$$ \kappa $$
-
+Note that that inclusion of ${\tfrac {2}{3}}\rho \kappa \delta _{i,j}$ in the linear constitutive relation is required by tensorial algebra purposes when solving for two-equation turbulence models (or any other turbulence model that solves a transport equation for $\kappa$
 .
 
 ### Hemodynamics

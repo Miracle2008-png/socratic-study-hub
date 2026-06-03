@@ -4,10 +4,5 @@ In mathematics and statistical physics, the transport integrals (sometimes trans
 
 ## Definition
 
-The transport integrals are defined by the integral representation
-
-$$ J_{n}(x)=\int _{0}^{x}t^{n}{\frac {e^{t}}{(e^{t}-1)^{2}}}\,dt. $$
-
-Note that
-
-$$ {\frac {e^{t}}{(e^{t}-1)^{2}}}=\sum _{k=0}^{\infty }k\,e^{kt}. $$
+The transport integrals are defined by the integral representation $J_{n}(x)=\int _{0}^{x}t^{n}{\frac {e^{t}}{(e^{t}-1)^{2}}}\,dt.$
+Note that ${\frac {e^{t}}{(e^{t}-1)^{2}}}=\sum _{k=0}^{\infty }k\,e^{kt}.$

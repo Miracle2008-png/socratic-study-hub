@@ -56,10 +56,7 @@ Short cycle annealing is used for turning normal ferrite into malleable ferrite.
 
 Resistive heating can be used to efficiently anneal copper wire; the heating system employs a controlled electrical short circuit. It can be advantageous because it does not require a temperature-regulated furnace like other methods of annealing.
 
-The process consists of two conductive pulleys (step pulleys), which the wire passes across after it is drawn. The two pulleys have an electrical potential across them, which causes the wire to form a short circuit. The Joule effect causes the temperature of the wire to rise to approximately 400 °C. This temperature is affected by the rotational speed of the pulleys, the ambient temperature, and the voltage applied. Where t is the temperature of the wire, K is a constant, V is the voltage applied, r is the number of rotations of the pulleys per minute, and ta is the ambient temperature,
-
-$$ t={\frac {1}{r}}KV^{2}+t_{a} $$
-
+The process consists of two conductive pulleys (step pulleys), which the wire passes across after it is drawn. The two pulleys have an electrical potential across them, which causes the wire to form a short circuit. The Joule effect causes the temperature of the wire to rise to approximately 400 °C. This temperature is affected by the rotational speed of the pulleys, the ambient temperature, and the voltage applied. Where t is the temperature of the wire, K is a constant, V is the voltage applied, r is the number of rotations of the pulleys per minute, and ta is the ambient temperature, $t={\frac {1}{r}}KV^{2}+t_{a}$
 The constant K depends on the diameter of the pulleys and the resistivity of the copper.
 
 Purely in terms of the temperature of the copper wire, an increase in the speed of the wire through the pulley system has the same effect as a decrease in resistance.

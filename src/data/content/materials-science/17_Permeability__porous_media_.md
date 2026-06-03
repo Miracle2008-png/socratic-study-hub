@@ -4,109 +4,21 @@ In fluid mechanics, materials science and Earth sciences, the permeability of po
 
 ## Description
 
-Permeability is part of the proportionality constant in Darcy's law which relates discharge (flow rate) and fluid physical properties (e.g. dynamic viscosity), to a pressure gradient applied to the porous media:
+Permeability is part of the proportionality constant in Darcy's law which relates discharge (flow rate) and fluid physical properties (e.g. dynamic viscosity), to a pressure gradient applied to the porous media: $v={\frac {k}{\eta }}{\frac {\Delta P}{\Delta x}}$
+(for linear flow)
 
-$$ v={\frac {k}{\eta }}{\frac {\Delta P}{\Delta x}} $$
-
- (for linear flow)
-
-Therefore:
-
-$$ k=v{\frac {\eta \,\Delta x}{\Delta P}} $$
-
-where:
-
-$$ v $$
-
- is the fluid velocity through the porous medium (i.e., the average flow velocity calculated as if the fluid was the only phase present in the porous medium) (m/s)
-
-$$ k $$
-
- is the permeability of a medium (m2)
-
-$$ \eta $$
-
- is the dynamic viscosity of the fluid (Pa·s)
-
-$$ \Delta P $$
-
- is the applied pressure difference (Pa)
-
-$$ \Delta x $$
-
- is the thickness of the bed of the porous medium (m)
+Therefore: $k=v{\frac {\eta \,\Delta x}{\Delta P}}$ where: $v$ is the fluid velocity through the porous medium (i.e., the average flow velocity calculated as if the fluid was the only phase present in the porous medium) (m/s) $k$ is the permeability of a medium (m2) $\eta$ is the dynamic viscosity of the fluid (Pa·s) $\Delta P$ is the applied pressure difference (Pa) $\Delta x$ is the thickness of the bed of the porous medium (m)
 
 In naturally occurring materials, the permeability values range over many orders of magnitude (see table below for an example of this range).
 
 ### Relation to hydraulic conductivity
 
-The global proportionality constant for the flow of water through a porous medium is called the hydraulic conductivity (K, unit: m/s). Permeability, or intrinsic permeability, (k, unit: m2) is a part of this, and is a specific property characteristic of the solid skeleton and the microstructure of the porous medium itself, independently of the nature and properties of the fluid flowing through the pores of the medium. This allows to take into account the effect of temperature on the viscosity of the fluid flowing though the porous medium and to address other fluids than pure water, e.g., concentrated brines, petroleum, or organic solvents. Given the value of hydraulic conductivity for a studied system, the permeability can be calculated as follows:
-
-$$ k=K{\frac {\eta }{\rho g}} $$
-
-where
-
-$$ k $$
-
- is the permeability, m2
-
-$$ K $$
-
- is the hydraulic conductivity, m/s
-
-$$ \eta $$
-
- is the dynamic viscosity of the fluid, Pa·s
-
-$$ \rho $$
-
- is the density of the fluid, kg/m3
-
-$$ g $$
-
- is the acceleration due to gravity, m/s2.
+The global proportionality constant for the flow of water through a porous medium is called the hydraulic conductivity (K, unit: m/s). Permeability, or intrinsic permeability, (k, unit: m2) is a part of this, and is a specific property characteristic of the solid skeleton and the microstructure of the porous medium itself, independently of the nature and properties of the fluid flowing through the pores of the medium. This allows to take into account the effect of temperature on the viscosity of the fluid flowing though the porous medium and to address other fluids than pure water, e.g., concentrated brines, petroleum, or organic solvents. Given the value of hydraulic conductivity for a studied system, the permeability can be calculated as follows: $k=K{\frac {\eta }{\rho g}}$ where $k$ is the permeability, m2 $K$ is the hydraulic conductivity, m/s $\eta$ is the dynamic viscosity of the fluid, Pa·s $\rho$ is the density of the fluid, kg/m3 $g$ is the acceleration due to gravity, m/s2.
 
 ### Anisotropic permeability
 
-Tissue such as brain, liver, muscle, etc can be treated as a heterogeneous porous medium. Describing the flow of biofluids (blood, cerebrospinal fluid, etc.) within such a medium requires a full 3-dimensional anisotropic treatment of the tissue.  In this case the scalar hydraulic permeability is replaced with the hydraulic permeability tensor so that Darcy's Law reads
-
-$$ {\boldsymbol {q}}=-{\frac {1}{\eta }}{\boldsymbol {\kappa }}\cdot \nabla P $$
-
-$$ {\boldsymbol {q}} $$
-
- is the Darcy flux, or filtration velocity, which describes the bulk (not microscopic) velocity field of the fluid, 
-
-$$ [{\text{Length}}][{\text{Time}}]^{-1} $$
-
-$$ \eta $$
-
- is the dynamic viscosity of the fluid, 
-
-$$ [{\text{Mass}}][{\text{L}}]^{-1}[T]^{-1} $$
-
-$$ {\boldsymbol {\kappa }} $$
-
- is the hydraulic permeability tensor, 
-
-$$ [{\text{L}}]^{2} $$
-
-$$ \nabla $$
-
- is the gradient operator, 
-
-$$ [{\text{L}}]^{-1} $$
-
-$$ P $$
-
- is the pressure field in the fluid, 
-
-$$ [{\text{M}}][{\text{L}}]^{-1}[{\text{T}}]^{-2} $$
-
-Connecting this expression to the isotropic case, 
-
-$$ {\boldsymbol {\kappa }}=k\mathbb {1} $$
-
-, where k is the scalar hydraulic permeability, and 1 is the identity tensor.
+Tissue such as brain, liver, muscle, etc can be treated as a heterogeneous porous medium. Describing the flow of biofluids (blood, cerebrospinal fluid, etc.) within such a medium requires a full 3-dimensional anisotropic treatment of the tissue.  In this case the scalar hydraulic permeability is replaced with the hydraulic permeability tensor so that Darcy's Law reads ${\boldsymbol {q}}=-{\frac {1}{\eta }}{\boldsymbol {\kappa }}\cdot \nabla P$ ${\boldsymbol {q}}$ is the Darcy flux, or filtration velocity, which describes the bulk (not microscopic) velocity field of the fluid, $[{\text{Length}}][{\text{Time}}]^{-1}$ $\eta$ is the dynamic viscosity of the fluid, $[{\text{Mass}}][{\text{L}}]^{-1}[T]^{-1}$ ${\boldsymbol {\kappa }}$ is the hydraulic permeability tensor, $[{\text{L}}]^{2}$ $\nabla$ is the gradient operator, $[{\text{L}}]^{-1}$ $P$ is the pressure field in the fluid, $[{\text{M}}][{\text{L}}]^{-1}[{\text{T}}]^{-2}$
+Connecting this expression to the isotropic case, ${\boldsymbol {\kappa }}=k\mathbb {1}$ , where k is the scalar hydraulic permeability, and 1 is the identity tensor.
 
 ## Determination
 
@@ -116,23 +28,7 @@ Permeability needs to be measured, either directly (using Darcy's law), or throu
 
 ### Permeability model based on conduit flow
 
-Based on the Hagen–Poiseuille equation for viscous flow in a pipe, permeability can be expressed as:
-
-$$ k_{I}=C\cdot d^{2} $$
-
-where:
-
-$$ k_{I} $$
-
- is the intrinsic permeability [length2]
-
-$$ C $$
-
- is a dimensionless constant that is related to the configuration of the flow-paths
-
-$$ d $$
-
- is the average, or effective pore diameter [length].
+Based on the Hagen–Poiseuille equation for viscous flow in a pipe, permeability can be expressed as: $k_{I}=C\cdot d^{2}$ where: $k_{I}$ is the intrinsic permeability [length2] $C$ is a dimensionless constant that is related to the configuration of the flow-paths $d$ is the average, or effective pore diameter [length].
 
 ## Absolute permeability (aka intrinsic or specific permeability)
 

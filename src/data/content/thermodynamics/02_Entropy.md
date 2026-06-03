@@ -18,10 +18,7 @@ The entropy change
 
 {\textstyle \delta Q_{\mathsf {rev}}}
  transferred from the surroundings to the system during a reversible process divided by the temperature 
- of the system during this heat transfer:
-
-$$ \mathrm {d} S={\frac {\delta Q_{\mathsf {rev}}}{T}} $$
-
+ of the system during this heat transfer: $\mathrm {d} S={\frac {\delta Q_{\mathsf {rev}}}{T}}$
 The reversible process is quasistatic (i.e., it occurs without any dissipation, deviating only infinitesimally from the thermodynamic equilibrium), and it may conserve total entropy. For example, in the Carnot cycle, while the heat flow from a hot reservoir to a cold reservoir represents the increase in the entropy in a cold reservoir, the work output, if reversibly and perfectly stored, represents the decrease in the entropy which could be used to operate the heat engine in reverse, returning to the initial state; thus the total entropy change may still be zero at all times if the entire process is reversible.
 
 In contrast, an irreversible process increases the total entropy of the system and surroundings. Any process that happens quickly enough to deviate from the thermal equilibrium cannot be reversible; the total entropy increases, and the potential for maximum work to be done during the process is lost.
@@ -48,10 +45,7 @@ The concept of entropy arose from Rudolf Clausius's study of the Carnot cycle wh
 . Through the efforts of Clausius and Kelvin, the work 
  done by a reversible heat engine was found to be the product of the Carnot efficiency (i.e., the efficiency of all reversible heat engines with the same pair of thermal reservoirs) and the heat 
 {\textstyle Q_{\mathsf {H}}}
- absorbed by a working body of the engine during isothermal expansion:
-
-$$ W={\frac {T_{\mathsf {H}}-T_{\mathsf {C}}}{T_{\mathsf {H}}}}\cdot Q_{\mathsf {H}}=\left(1-{\frac {T_{\mathsf {C}}}{T_{\mathsf {H}}}}\right)Q_{\mathsf {H}} $$
-
+ absorbed by a working body of the engine during isothermal expansion: $W={\frac {T_{\mathsf {H}}-T_{\mathsf {C}}}{T_{\mathsf {H}}}}\cdot Q_{\mathsf {H}}=\left(1-{\frac {T_{\mathsf {C}}}{T_{\mathsf {H}}}}\right)Q_{\mathsf {H}}$
 To derive the Carnot efficiency Kelvin had to evaluate the ratio of the work output to the heat absorbed during the isothermal expansion with the help of the Carnot–Clapeyron equation, which contained an unknown function called the Carnot function. The possibility that the Carnot function could be the temperature as measured from a zero point of temperature was suggested by Joule in a letter to Kelvin. This allowed Kelvin to establish his absolute temperature scale.
 
 It is known that a work 
@@ -59,34 +53,23 @@ It is known that a work
  produced by an engine over a cycle equals to a net heat 
 {\textstyle Q_{\Sigma }=\left\vert Q_{\mathsf {H}}\right\vert -\left\vert Q_{\mathsf {C}}\right\vert }
  absorbed over a cycle. Thus, with the sign convention for a heat 
- transferred in a thermodynamic process (
+transferred in a thermodynamic process ( for an absorption and
 
- for an absorption and 
-
- for a dissipation) we get:
-
-$$ W-Q_{\Sigma }=W-\left\vert Q_{\mathsf {H}}\right\vert +\left\vert Q_{\mathsf {C}}\right\vert =W-Q_{\mathsf {H}}-Q_{\mathsf {C}}=0 $$
-
+ for a dissipation) we get: $W-Q_{\Sigma }=W-\left\vert Q_{\mathsf {H}}\right\vert +\left\vert Q_{\mathsf {C}}\right\vert =W-Q_{\mathsf {H}}-Q_{\mathsf {C}}=0$
 Since this equality holds over an entire Carnot cycle, it gave Clausius the hint that at each stage of the cycle the difference between a work and a net heat would be conserved, rather than a net heat itself. Which means there exists a state function 
  with a change of 
 
 {\textstyle \mathrm {d} U=\delta Q-\mathrm {d} W}
 . It is called an internal energy and forms a central concept for the first law of thermodynamics.
 
-Finally, comparison for both the representations of a work output in a Carnot cycle gives us:
-
-$$ {\frac {\left\vert Q_{\mathsf {H}}\right\vert }{T_{\mathsf {H}}}}-{\frac {\left\vert Q_{\mathsf {C}}\right\vert }{T_{\mathsf {C}}}}={\frac {Q_{\mathsf {H}}}{T_{\mathsf {H}}}}+{\frac {Q_{\mathsf {C}}}{T_{\mathsf {C}}}}=0 $$
-
+Finally, comparison for both the representations of a work output in a Carnot cycle gives us: ${\frac {\left\vert Q_{\mathsf {H}}\right\vert }{T_{\mathsf {H}}}}-{\frac {\left\vert Q_{\mathsf {C}}\right\vert }{T_{\mathsf {C}}}}={\frac {Q_{\mathsf {H}}}{T_{\mathsf {H}}}}+{\frac {Q_{\mathsf {C}}}{T_{\mathsf {C}}}}=0$
 Similarly to the derivation of internal energy, this equality implies existence of a state function 
  with a change of 
 
 {\textstyle \mathrm {d} S=\delta Q/T}
  and which is conserved over an entire cycle. Clausius called this state function entropy.
 
-In addition, the total change of entropy in both thermal reservoirs over Carnot cycle is zero too, since the inversion of a heat transfer direction means a sign inversion for the heat transferred during isothermal stages:
-
-$$ -{\frac {Q_{\mathsf {H}}}{T_{\mathsf {H}}}}-{\frac {Q_{\mathsf {C}}}{T_{\mathsf {C}}}}=\Delta S_{\mathsf {r,H}}+\Delta S_{\mathsf {r,C}}=0 $$
-
+In addition, the total change of entropy in both thermal reservoirs over Carnot cycle is zero too, since the inversion of a heat transfer direction means a sign inversion for the heat transferred during isothermal stages: $-{\frac {Q_{\mathsf {H}}}{T_{\mathsf {H}}}}-{\frac {Q_{\mathsf {C}}}{T_{\mathsf {C}}}}=\Delta S_{\mathsf {r,H}}+\Delta S_{\mathsf {r,C}}=0$
 Here we denote the entropy change for a thermal reservoir by 
 
 {\textstyle \Delta S_{{\mathsf {r}},i}=-Q_{i}/T_{i}}
@@ -98,22 +81,12 @@ Here we denote the entropy change for a thermal reservoir by
  for a cold one.
 
 If we consider a heat engine which is less effective than Carnot cycle (i.e., the work 
- produced by this engine is less than the maximum predicted by Carnot's theorem), its work output is capped by Carnot efficiency as:
-
-$$ W<\left(1-{\frac {T_{\mathsf {C}}}{T_{\mathsf {H}}}}\right)Q_{\mathsf {H}} $$
-
+ produced by this engine is less than the maximum predicted by Carnot's theorem), its work output is capped by Carnot efficiency as: $W<\left(1-{\frac {T_{\mathsf {C}}}{T_{\mathsf {H}}}}\right)Q_{\mathsf {H}}$
 Substitution of the work 
- as the net heat into the inequality above gives us:
-
-$$ {\frac {Q_{\mathsf {H}}}{T_{\mathsf {H}}}}+{\frac {Q_{\mathsf {C}}}{T_{\mathsf {C}}}}<0 $$
-
-or in terms of the entropy change 
+as the net heat into the inequality above gives us: ${\frac {Q_{\mathsf {H}}}{T_{\mathsf {H}}}}+{\frac {Q_{\mathsf {C}}}{T_{\mathsf {C}}}}<0$ or in terms of the entropy change
 
 {\textstyle \Delta S_{{\mathsf {r}},i}}
-:
-
-$$ \Delta S_{\mathsf {r,H}}+\Delta S_{\mathsf {r,C}}>0 $$
-
+: $\Delta S_{\mathsf {r,H}}+\Delta S_{\mathsf {r,C}}>0$
 A Carnot cycle and an entropy as shown above prove to be useful in the study of any classical thermodynamic heat engine: other cycles, such as an Otto, Diesel or Brayton cycle, could be analysed from the same standpoint. Notably, any machine or cyclic process converting heat into work (i.e., heat engine) that is claimed to produce an efficiency greater than the one of Carnot is not viable — due to violation of the second law of thermodynamics.
 
 For further analysis of sufficiently discrete systems, such as an assembly of particles, statistical thermodynamics must be used. Additionally, descriptions of devices operating near the limit of de Broglie waves, e.g. photovoltaic cells, have to be consistent with quantum statistics.
@@ -124,31 +97,16 @@ The thermodynamic definition of entropy was developed in the early 1850s by Rudo
 
 While Clausius based his definition on a reversible process, there are also irreversible processes that change entropy. Following the second law of thermodynamics, entropy of an isolated system always increases for irreversible processes. The difference between an isolated system and closed system is that energy may not flow to and from an isolated system, but energy flow to and from a closed system is possible. Nevertheless, for both closed and isolated systems, and indeed, also in open systems, irreversible thermodynamics processes may occur.
 
-According to the Clausius equality, for a reversible cyclic thermodynamic process: 
-
-$$ \oint {\frac {\delta Q_{\mathsf {rev}}}{T}}=0 $$
-
-which means the line integral 
+According to the Clausius equality, for a reversible cyclic thermodynamic process: $\oint {\frac {\delta Q_{\mathsf {rev}}}{T}}=0$ which means the line integral
 
 {\textstyle \int _{L}{\delta Q_{\mathsf {rev}}/T}}
  is path-independent. Thus we can define a state function 
-, called entropy:
-
-$$ \mathrm {d} S={\frac {\delta Q_{\mathsf {rev}}}{T}} $$
-
+, called entropy: $\mathrm {d} S={\frac {\delta Q_{\mathsf {rev}}}{T}}$
 Therefore, thermodynamic entropy has the dimension of energy divided by temperature, and the unit joule per kelvin (J/K) in the International System of Units (SI).
 
 To find the entropy difference between any two states of the system, the integral must be evaluated for some reversible path between the initial and final states. Since an entropy is a state function, the entropy change of the system for an irreversible path is the same as for a reversible path between the same two states. However, the heat transferred to or from the surroundings is different as well as its entropy change.
 
-We can calculate the change of entropy only by integrating the above formula. To obtain the absolute value of the entropy, we consider the third law of thermodynamics: perfect crystals at the absolute zero have an entropy 
-
-.
-
-From a macroscopic perspective, in classical thermodynamics the entropy is interpreted as a state function of a thermodynamic system: that is, a property depending only on the current state of the system, independent of how that state came to be achieved. In any process, where the system gives up 
-
-$$ \Delta E $$
-
- of energy to the surrounding at the temperature 
+We can calculate the change of entropy only by integrating the above formula. To obtain the absolute value of the entropy, we consider the third law of thermodynamics: perfect crystals at the absolute zero have an entropy . From a macroscopic perspective, in classical thermodynamics the entropy is interpreted as a state function of a thermodynamic system: that is, a property depending only on the current state of the system, independent of how that state came to be achieved. In any process, where the system gives up $\Delta E$ of energy to the surrounding at the temperature
 , its entropy falls by 
 
 {\textstyle \Delta S}
@@ -166,34 +124,15 @@ The interpretation of entropy in statistical mechanics is the measure of uncerta
 The Boltzmann constant, and therefore entropy, have dimensions of energy divided by temperature, which has a unit of joules per kelvin (J⋅K−1) in the International System of Units (or kg⋅m2⋅s−2⋅K−1 in terms of base units). The entropy of a substance is usually given as an intensive property — either entropy per unit mass (SI unit: J⋅K−1⋅kg−1) or entropy per unit amount of substance (SI unit: J⋅K−1⋅mol−1).
 
 Specifically, entropy is a logarithmic measure for the system with a number of states, each with a probability 
- of being occupied (usually given by the Boltzmann distribution):
-
-$$ S=-k_{\mathsf {B}}\sum _{i}{p_{i}\ln {p_{i}}} $$
-
-where 
+of being occupied (usually given by the Boltzmann distribution): $S=-k_{\mathsf {B}}\sum _{i}{p_{i}\ln {p_{i}}}$ where
 {\textstyle k_{\mathsf {B}}}
  is the Boltzmann constant and the summation is performed over all possible microstates of the system.
 
-In case states are defined in a continuous manner, the summation is replaced by an integral over all possible states, or equivalently we can consider the expected value of the logarithm of the probability that a microstate is occupied:
-
-$$ S=-k_{\mathsf {B}}\left\langle \ln {p}\right\rangle $$
-
-This definition assumes the basis states to be picked in a way that there is no information on their relative phases. In a general case the expression is:
-
-$$ S=-k_{\mathsf {B}}\ \mathrm {tr} {\left({\hat {\rho }}\times \ln {\hat {\rho }}\right)} $$
-
-where 
+In case states are defined in a continuous manner, the summation is replaced by an integral over all possible states, or equivalently we can consider the expected value of the logarithm of the probability that a microstate is occupied: $S=-k_{\mathsf {B}}\left\langle \ln {p}\right\rangle$
+This definition assumes the basis states to be picked in a way that there is no information on their relative phases. In a general case the expression is: $S=-k_{\mathsf {B}}\ \mathrm {tr} {\left({\hat {\rho }}\times \ln {\hat {\rho }}\right)}$ where
 
 {\textstyle {\hat {\rho }}}
- is a density matrix, 
-
-$$ \mathrm {tr} $$
-
- is a trace operator and 
-
-$$ \ln $$
-
- is a matrix logarithm. The density matrix formalism is not required if the system is in thermal equilibrium so long as the basis states are chosen to be eigenstates of the Hamiltonian. For most practical purposes it can be taken as the fundamental definition of entropy since all other formulae for 
+is a density matrix, $\mathrm {tr}$ is a trace operator and $\ln$ is a matrix logarithm. The density matrix formalism is not required if the system is in thermal equilibrium so long as the basis states are chosen to be eigenstates of the Hamiltonian. For most practical purposes it can be taken as the fundamental definition of entropy since all other formulae for
  can be derived from it, but not vice versa.
 
 In what has been called the fundamental postulate in statistical mechanics, among system microstates of the same energy (i.e., degenerate microstates) each microstate is assumed to be populated with equal probability 
@@ -201,21 +140,14 @@ In what has been called the fundamental postulate in statistical mechanics, amon
 {\textstyle p_{i}=1/\Omega }
 , where 
 {\textstyle \Omega }
- is the number of microstates whose energy equals that of the system. Usually, this assumption is justified for an isolated system in a thermodynamic equilibrium. Then in case of an isolated system the previous formula reduces to:
-
-$$ S=k_{\mathsf {B}}\ln {\Omega } $$
-
+ is the number of microstates whose energy equals that of the system. Usually, this assumption is justified for an isolated system in a thermodynamic equilibrium. Then in case of an isolated system the previous formula reduces to: $S=k_{\mathsf {B}}\ln {\Omega }$
 In thermodynamics, such a system is one with a fixed volume, number of molecules, and internal energy, called a microcanonical ensemble.
 
 The most general interpretation of entropy is as a measure of the extent of uncertainty about a system. The equilibrium state of a system maximizes the entropy because it does not reflect all information about the initial conditions, except for the conserved variables. This uncertainty is not of the everyday subjective kind, but rather the uncertainty inherent to the experimental method and interpretative model.
 
 The interpretative model has a central role in determining entropy. The qualifier "for a given set of macroscopic variables" above has deep implications when two observers use different sets of macroscopic variables. For example, consider observer A using variables 
-, 
-, 
- and observer B using variables 
-, 
-, 
-, 
+, , and observer B using variables
+, , ,
 . If observer B changes variable 
 , then observer A will see a violation of the second law of thermodynamics, since he does not possess information about variable 
  and its influence on the system. In other words, one must choose a complete set of macroscopic variables to describe the system, i.e. every independent parameter that may change during experiment.
@@ -240,15 +172,7 @@ A special case of entropy increase, the entropy of mixing, occurs when two or mo
 
 ### Equivalence of definitions
 
-Proofs of equivalence between the entropy in statistical mechanics — the Gibbs entropy formula:
-
-$$ S=-k_{\mathsf {B}}\sum _{i}{p_{i}\ln {p_{i}}} $$
-
-and the entropy in classical thermodynamics:
-
-$$ \mathrm {d} S={\frac {\delta Q_{\mathsf {rev}}}{T}} $$
-
-together with the fundamental thermodynamic relation are known for the microcanonical ensemble, the canonical ensemble, the grand canonical ensemble, and the isothermal–isobaric ensemble. These proofs are based on the probability density of microstates of the generalised Boltzmann distribution and the identification of the thermodynamic internal energy as the ensemble average 
+Proofs of equivalence between the entropy in statistical mechanics — the Gibbs entropy formula: $S=-k_{\mathsf {B}}\sum _{i}{p_{i}\ln {p_{i}}}$ and the entropy in classical thermodynamics: $\mathrm {d} S={\frac {\delta Q_{\mathsf {rev}}}{T}}$ together with the fundamental thermodynamic relation are known for the microcanonical ensemble, the canonical ensemble, the grand canonical ensemble, and the isothermal–isobaric ensemble. These proofs are based on the probability density of microstates of the generalised Boltzmann distribution and the identification of the thermodynamic internal energy as the ensemble average
 
 {\textstyle U=\left\langle E_{i}\right\rangle }
 . Thermodynamic relations are then employed to derive the well-known Gibbs entropy formula. However, the equivalence between the Gibbs entropy formula and the thermodynamic definition of entropy is not a fundamental thermodynamic relation but rather a consequence of the form of the generalized Boltzmann distribution.
@@ -286,10 +210,7 @@ For the expansion (or compression) of an ideal gas from an initial volume
  and pressure 
  to a final volume 
  and pressure 
- at any constant temperature, the change in entropy is given by:
-
-$$ \Delta S=nR\ln {\frac {V}{V_{0}}}=-nR\ln {\frac {P}{P_{0}}} $$
-
+ at any constant temperature, the change in entropy is given by: $\Delta S=nR\ln {\frac {V}{V_{0}}}=-nR\ln {\frac {P}{P_{0}}}$
 Here 
  is the amount of gas (in moles) and 
  is the ideal gas constant. These equations also apply for expansion into a finite vacuum or a throttling process, where the temperature, internal energy and enthalpy for an ideal gas remain constant.
@@ -306,40 +227,20 @@ provided that the constant-pressure molar heat capacity (or specific heat)
 {\textstyle C_{\mathrm {P} }}
  is constant and that no phase transition occurs in this temperature interval.
 
-Similarly at constant volume, the entropy change is:
-
-$$ \Delta S=nC_{\mathrm {V} }\ln {\frac {T}{T_{0}}} $$
-
-where the constant-volume molar heat capacity 
+Similarly at constant volume, the entropy change is: $\Delta S=nC_{\mathrm {V} }\ln {\frac {T}{T_{0}}}$ where the constant-volume molar heat capacity
 {\textstyle C_{\mathrm {V} }}
  is constant and there is no phase change.
 
 At low temperatures near absolute zero, heat capacities of solids quickly drop off to near zero, so the assumption of constant heat capacity does not apply.
 
-Since entropy is a state function, the entropy change of any process in which temperature and volume both vary is the same as for a path divided into two steps – heating at constant volume and expansion at constant temperature. For an ideal gas, the total entropy change is:
-
-$$ \Delta S=nC_{\mathrm {V} }\ln {\frac {T}{T_{0}}}+nR\ln {\frac {V}{V_{0}}} $$
-
-Similarly if the temperature and pressure of an ideal gas both vary:
-
-$$ \Delta S=nC_{\mathrm {P} }\ln {\frac {T}{T_{0}}}-nR\ln {\frac {P}{P_{0}}} $$
-
+Since entropy is a state function, the entropy change of any process in which temperature and volume both vary is the same as for a path divided into two steps – heating at constant volume and expansion at constant temperature. For an ideal gas, the total entropy change is: $\Delta S=nC_{\mathrm {V} }\ln {\frac {T}{T_{0}}}+nR\ln {\frac {V}{V_{0}}}$
+Similarly if the temperature and pressure of an ideal gas both vary: $\Delta S=nC_{\mathrm {P} }\ln {\frac {T}{T_{0}}}-nR\ln {\frac {P}{P_{0}}}$
 ### Phase transitions
 
 Reversible phase transitions occur at constant temperature and pressure. The reversible heat is the enthalpy change for the transition, and the entropy change is the enthalpy change divided by the thermodynamic temperature. For fusion (i.e., melting) of a solid to a liquid at the melting point 
 {\textstyle T_{\mathsf {m}}}
-, the entropy of fusion is:
-
-$$ \Delta S_{\mathsf {fus}}={\frac {\Delta H_{\mathsf {fus}}}{T_{\mathsf {m}}}}. $$
-
-Similarly, for vaporisation of a liquid to a gas at the boiling point 
-
-$$ T_{\mathsf {b}} $$
-
-, the entropy of vaporisation is:
-
-$$ \Delta S_{\mathsf {vap}}={\frac {\Delta H_{\mathsf {vap}}}{T_{\mathsf {b}}}} $$
-
+, the entropy of fusion is: $\Delta S_{\mathsf {fus}}={\frac {\Delta H_{\mathsf {fus}}}{T_{\mathsf {m}}}}.$
+Similarly, for vaporisation of a liquid to a gas at the boiling point $T_{\mathsf {b}}$ , the entropy of vaporisation is: $\Delta S_{\mathsf {vap}}={\frac {\Delta H_{\mathsf {vap}}}{T_{\mathsf {b}}}}$
 ## Approaches to understanding entropy
 
 As a fundamental aspect of thermodynamics and physics, several different approaches to entropy beyond that of Clausius and Boltzmann are valid.
@@ -358,12 +259,7 @@ In Boltzmann's analysis in terms of constituent particles, entropy is a measure 
 
 ### Order and disorder
 
-Entropy is often loosely associated with the amount of order or disorder, or of chaos, in a thermodynamic system. The traditional qualitative description of entropy is that it refers to changes in the state of the system and is a measure of "molecular disorder" and the amount of wasted energy in a dynamical energy transformation from one state or form to another. In this direction, several recent authors have derived exact entropy formulas to account for and measure disorder and order in atomic and molecular assemblies. One of the simpler entropy order/disorder formulas is that derived in 1984 by thermodynamic physicist Peter Landsberg, based on a combination of thermodynamics and information theory arguments. He argues that when constraints operate on a system, such that it is prevented from entering one or more of its possible or permitted states, as contrasted with its forbidden states, the measure of the total amount of "disorder" and "order" in the system are each given by:
-
-$$ {\mathsf {Disorder}}={\frac {C_{\mathsf {D}}}{C_{\mathsf {I}}}} $$
-
-$$ {\mathsf {Order}}=1-{\frac {C_{\mathsf {O}}}{C_{\mathsf {I}}}} $$
-
+Entropy is often loosely associated with the amount of order or disorder, or of chaos, in a thermodynamic system. The traditional qualitative description of entropy is that it refers to changes in the state of the system and is a measure of "molecular disorder" and the amount of wasted energy in a dynamical energy transformation from one state or form to another. In this direction, several recent authors have derived exact entropy formulas to account for and measure disorder and order in atomic and molecular assemblies. One of the simpler entropy order/disorder formulas is that derived in 1984 by thermodynamic physicist Peter Landsberg, based on a combination of thermodynamics and information theory arguments. He argues that when constraints operate on a system, such that it is prevented from entering one or more of its possible or permitted states, as contrasted with its forbidden states, the measure of the total amount of "disorder" and "order" in the system are each given by: ${\mathsf {Disorder}}={\frac {C_{\mathsf {D}}}{C_{\mathsf {I}}}}$ ${\mathsf {Order}}=1-{\frac {C_{\mathsf {O}}}{C_{\mathsf {I}}}}$
 Here, 
 {\textstyle C_{\mathsf {D}}}
  is the "disorder" capacity of the system, which is the entropy of the parts contained in the permitted ensemble, 
@@ -403,11 +299,7 @@ A definition of entropy based entirely on the relation of adiabatic accessibilit
 
 ### Entropy in quantum mechanics
 
-In quantum statistical mechanics, the concept of entropy was developed by John von Neumann and is generally referred to as "von Neumann entropy":
-
-$$ S=-k_{\mathsf {B}}\ \mathrm {tr} {\left({\hat {\rho }}\times \ln {\hat {\rho }}\right)} $$
-
-where 
+In quantum statistical mechanics, the concept of entropy was developed by John von Neumann and is generally referred to as "von Neumann entropy": $S=-k_{\mathsf {B}}\ \mathrm {tr} {\left({\hat {\rho }}\times \ln {\hat {\rho }}\right)}$ where
 
 {\textstyle {\hat {\rho }}}
  is the density matrix, 
@@ -418,38 +310,22 @@ where
  is the Boltzmann constant.
 
 This upholds the correspondence principle, because in the classical limit, when the phases between the basis states are purely random, this expression is equivalent to the familiar classical definition of entropy for states with classical probabilities 
-:
-
-$$ S=-k_{\mathsf {B}}\sum _{i}{p_{i}\ln {p_{i}}} $$
-
-i.e. in such a basis the density matrix is diagonal.
+: $S=-k_{\mathsf {B}}\sum _{i}{p_{i}\ln {p_{i}}}$ i.e. in such a basis the density matrix is diagonal.
 
 Von Neumann established a rigorous mathematical framework for quantum mechanics with his work Mathematische Grundlagen der Quantenmechanik. He provided in this work a theory of measurement, where the usual notion of wave function collapse is described as an irreversible process (the so-called von Neumann or projective measurement). Using this concept, in conjunction with the density matrix he extended the classical concept of entropy into the quantum domain.
 
 ### Information theory
 
 When viewed in terms of information theory, the entropy state function is the amount of information in the system that is needed to fully specify the microstate of the system. Entropy is the measure of the amount of missing information before reception. Often called Shannon entropy, it was originally devised by Claude Shannon in 1948 to study the size of information of a transmitted message. The definition of information entropy is expressed in terms of a discrete set of probabilities 
- so that:
-
-$$ H(X)=-\sum _{i=1}^{n}{p(x_{i})\log {p(x_{i})}} $$
-
-where the base of the logarithm determines the units (for example, the binary logarithm corresponds to bits).
+so that: $H(X)=-\sum _{i=1}^{n}{p(x_{i})\log {p(x_{i})}}$ where the base of the logarithm determines the units (for example, the binary logarithm corresponds to bits).
 
 In the case of transmitted messages, these probabilities were the probabilities that a particular message was actually transmitted, and the entropy of the message system was a measure of the average size of information of a message. For the case of equal probabilities (i.e. each message is equally probable), the Shannon entropy (in bits) is just the number of binary questions needed to determine the content of the message.
 
 Most researchers consider information entropy and thermodynamic entropy directly linked to the same concept, while others argue that they are distinct. Both expressions are mathematically similar. If 
  is the number of microstates that can yield a given macrostate, and each microstate has the same a priori probability, then that probability is 
 
-. The Shannon entropy (in nats) is:
-
-$$ H=-\sum _{i=1}^{W}{p_{i}\ln {p_{i}}}=\ln {W} $$
-
-and if entropy is measured in units of 
- per nat, then the entropy is given by:
-
-$$ H=k\ln {W} $$
-
-which is the Boltzmann entropy formula, where 
+. The Shannon entropy (in nats) is: $H=-\sum _{i=1}^{W}{p_{i}\ln {p_{i}}}=\ln {W}$ and if entropy is measured in units of
+per nat, then the entropy is given by: $H=k\ln {W}$ which is the Boltzmann entropy formula, where
  is the Boltzmann constant, which may be interpreted as the thermodynamic entropy per nat. Some authors argue for dropping the word entropy for the 
  function of information theory and using Shannon's other term, "uncertainty", instead.
 
@@ -460,10 +336,7 @@ The entropy of a substance can be measured, although in an indirect way. The mea
 , and it uses the definition of temperature in terms of entropy, while limiting energy exchange to heat 
 
 {\textstyle \mathrm {d} U\rightarrow \mathrm {d} Q}
-:
-
-$$ T:={\left({\frac {\partial U}{\partial S}}\right)}_{V,N}\ \Rightarrow \ \cdots \ \Rightarrow \ \mathrm {d} S={\frac {\mathrm {d} Q}{T}} $$
-
+: $T:={\left({\frac {\partial U}{\partial S}}\right)}_{V,N}\ \Rightarrow \ \cdots \ \Rightarrow \ \mathrm {d} S={\frac {\mathrm {d} Q}{T}}$
 The resulting relation describes how entropy changes 
 {\textstyle \mathrm {d} S}
  when a small amount of energy 

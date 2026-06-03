@@ -50,13 +50,7 @@ In April 2013 the National Council of Examiners for Engineering and Surveying (N
 
 The American National Society of Professional Engineers provides a model law and lobbies legislatures to adopt occupational licensing regulations. The model law requires:
 
-a four-year degree from a university program accredited by the Engineering Accreditation Committee (EAC) of the Accreditation Board for Engineering and Technology (ABET),
-
-an eight-hour examination on the fundamentals of engineering (FE) usually taken in the senior year of college,
-
-four years of acceptable experience,
-
-a second examination on principles and practice, and
+a four-year degree from a university program accredited by the Engineering Accreditation Committee (EAC) of the Accreditation Board for Engineering and Technology (ABET), an eight-hour examination on the fundamentals of engineering (FE) usually taken in the senior year of college, four years of acceptable experience, a second examination on principles and practice, and
 
 written recommendations from other professional engineers.
 

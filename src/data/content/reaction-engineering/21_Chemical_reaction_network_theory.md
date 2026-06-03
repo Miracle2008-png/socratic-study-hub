@@ -4,11 +4,7 @@ Chemical reaction network theory is an area of applied mathematics that attempts
 
 ## Common assumptions
 
-For physical reasons, it is usually assumed that reactant concentrations cannot be negative, and that each reaction only takes place if all its reactants are present, i.e. all have non-zero concentration. For mathematical reasons, it is usually assumed that 
-
-$$ V(x) $$
-
- is continuously differentiable.
+For physical reasons, it is usually assumed that reactant concentrations cannot be negative, and that each reaction only takes place if all its reactants are present, i.e. all have non-zero concentration. For mathematical reasons, it is usually assumed that $V(x)$ is continuously differentiable.
 
 It is also commonly assumed that no reaction features the same chemical as both a reactant and a product (i.e. no catalysis or autocatalysis), and that increasing the concentration of a reactant increases the rate of any reactions that use it up. This second assumption is compatible with all physically reasonable kinetics, including mass action, Michaelis–Menten and Hill kinetics. Sometimes further assumptions are made about reaction rates, e.g. that all reactions obey mass action kinetics.
 
@@ -26,43 +22,7 @@ For example, the catalytic trigger is the simplest catalytic reaction without au
 
 This is the classical adsorption mechanism of catalytic oxidation.
 
-Here, 
-
-$$ {\ce {A2, B}} $$
-
- and 
-
-$$ {\ce {AB}} $$
-
- are gases (for example, 
-
-$$ {\ce {O2}} $$
-
-, 
-
-$$ {\ce {CO}} $$
-
- and 
-
-$$ {\ce {CO2}} $$
-
-), 
-
-$$ {\ce {Z}} $$
-
- is the "adsorption place" on the surface of the solid catalyst (for example, 
-
-$$ {\ce {Pt}} $$
-
-), 
-
-$$ {\ce {AZ}} $$
-
- and 
-
-$$ {\ce {BZ}} $$
-
- are the intermediates on the surface (adatoms, adsorbed molecules or radicals).
+Here, ${\ce {A2, B}}$ and ${\ce {AB}}$ are gases (for example, ${\ce {O2}}$ , ${\ce {CO}}$ and ${\ce {CO2}}$ ), ${\ce {Z}}$ is the "adsorption place" on the surface of the solid catalyst (for example, ${\ce {Pt}}$ ), ${\ce {AZ}}$ and ${\ce {BZ}}$ are the intermediates on the surface (adatoms, adsorbed molecules or radicals).
 
 This system may have two stable steady states of the surface for the same concentrations of the gaseous components.
 
@@ -88,51 +48,9 @@ One of the main problems of chemical reaction network theory is the connection b
 
 For nonlinear systems, many connections between structure and dynamics have been discovered. First of all, these are results about stability. For some classes of networks, explicit construction of Lyapunov functions is possible without apriori assumptions about special relations between rate constants. Two results of this type are well known: the deficiency zero theorem and the theorem about systems without interactions between different components.
 
-The deficiency zero theorem gives sufficient conditions for the existence of the Lyapunov function in the classical free energy form 
-
-$$ G(c)=\sum _{i}c_{i}\left(\ln {\frac {c_{i}}{c_{i}^{*}}}-1\right) $$
-
-, where 
-
-$$ c_{i} $$
-
- is the concentration of the i-th component. The theorem about systems without interactions between different components states that if a network consists of reactions of the form 
-
-$$ n_{k}A_{i}\to \sum _{j}\beta _{kj}A_{j} $$
-
- (for 
-
-$$ k\leq r $$
-
-, where r is the number of reactions, 
-
-$$ A_{i} $$
-
- is the symbol of ith component, 
-
-$$ n_{k}\geq 1 $$
-
-, and 
-
-$$ \beta _{kj} $$
-
- are non-negative integers) and allows the stoichiometric conservation law 
-
-$$ M(c)=\sum _{i}m_{i}c_{i}={\text{const}} $$
-
- (where all 
-
-$$ m_{i}>0 $$
-
-), then the weighted L1 distance 
-
-$$ \sum _{i}m_{i}|c_{i}^{1}(t)-c_{i}^{2}(t)| $$
-
- between two solutions 
-
-$$ c^{1}(t)\;{\mbox{and}}\;c^{2}(t) $$
-
- with the same M(c) monotonically decreases in time.
+The deficiency zero theorem gives sufficient conditions for the existence of the Lyapunov function in the classical free energy form $G(c)=\sum _{i}c_{i}\left(\ln {\frac {c_{i}}{c_{i}^{*}}}-1\right)$ , where $c_{i}$ is the concentration of the i-th component. The theorem about systems without interactions between different components states that if a network consists of reactions of the form $n_{k}A_{i}\to \sum _{j}\beta _{kj}A_{j}$
+(for $k\leq r$ , where r is the number of reactions, $A_{i}$ is the symbol of ith component, $n_{k}\geq 1$ , and $\beta _{kj}$ are non-negative integers) and allows the stoichiometric conservation law $M(c)=\sum _{i}m_{i}c_{i}={\text{const}}$
+(where all $m_{i}>0$ ), then the weighted L1 distance $\sum _{i}m_{i}|c_{i}^{1}(t)-c_{i}^{2}(t)|$ between two solutions $c^{1}(t)\;{\mbox{and}}\;c^{2}(t)$ with the same M(c) monotonically decreases in time.
 
 Importantly, research has emphasized the role of circuit topology—the specific arrangement of activating and repressing interactions within reaction networks—in shaping dynamic behaviors. Circuit motifs such as series, parallel, and feedforward loops decisively influence signal propagation, system robustness, noise filtering, and response delays. For example, in transcriptional cascades regarded as reaction networks, topological differences govern key functional properties, highlighting how network architecture critically determines biochemical regulation and dynamics.
 

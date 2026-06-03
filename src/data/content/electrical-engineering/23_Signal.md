@@ -52,14 +52,8 @@ Digital signals often arise via sampling of analog signals, for example, a conti
 
 According to the strengths of signals, practical signals can be classified into two categories: energy signals and power signals.
 
-Energy signals: Those signals' energy are equal to a finite positive value, but their average powers are 0;
-
-$$ 0<E=\int _{-\infty }^{\infty }s^{2}(t)dt<\infty $$
-
-Power signals: Those signals' average power are equal to a finite positive value, but their energy are infinite.
-
-$$ P=\lim _{T\rightarrow \infty }{\frac {1}{T}}\int _{-T/2}^{T/2}s^{2}(t)dt $$
-
+Energy signals: Those signals' energy are equal to a finite positive value, but their average powers are 0; $0<E=\int _{-\infty }^{\infty }s^{2}(t)dt<\infty$
+Power signals: Those signals' average power are equal to a finite positive value, but their energy are infinite. $P=\lim _{T\rightarrow \infty }{\frac {1}{T}}\int _{-T/2}^{T/2}s^{2}(t)dt$
 ### Deterministic and random
 
 Deterministic signals are those whose values at any time are predictable and can be calculated by a mathematical equation.
@@ -68,74 +62,22 @@ Random signals are signals that take on random values at any given time instant 
 
 ### Even and odd
 
-An even signal satisfies the condition 
-
-$$ x(t)=x(-t) $$
-
-or equivalently if the following equation holds for all 
-
-$$ t $$
-
- and 
-
-$$ -t $$
-
- in the domain of 
-
-$$ x $$
-
+An even signal satisfies the condition $x(t)=x(-t)$ or equivalently if the following equation holds for all $t$ and $-t$ in the domain of $x$
 :
 
-        0.
-
-$$ x(t)-x(-t)=0. $$
-
-An odd signal satisfies the condition 
-
-$$ x(t)=-x(-t) $$
-
-or equivalently if the following equation holds for all 
-
-$$ t $$
-
- and 
-
-$$ -t $$
-
- in the domain of 
-
-$$ x $$
-
+        0. $x(t)-x(-t)=0.$
+An odd signal satisfies the condition $x(t)=-x(-t)$ or equivalently if the following equation holds for all $t$ and $-t$ in the domain of $x$
 :
 
-        0.
-
-$$ x(t)+x(-t)=0. $$
-
+        0. $x(t)+x(-t)=0.$
 ### Periodic
 
-A signal is said to be periodic if it satisfies the condition:
-
-$$ x(t)=x(t+T)\quad \forall t\in [t_{0},t_{max}] $$
-
- or 
-
-$$ x(n)=x(n+N)\quad \forall n\in [n_{0},n_{max}] $$
-
-Where:
-
-$$ T $$
-
- = fundamental time period,
-
-$$ 1/T=f $$
-
+A signal is said to be periodic if it satisfies the condition: $x(t)=x(t+T)\quad \forall t\in [t_{0},t_{max}]$ or $x(n)=x(n+N)\quad \forall n\in [n_{0},n_{max}]$
+Where: $T$
+= fundamental time period, $1/T=f$
 = fundamental frequency.
 
-The same can be applied to 
-
-$$ N $$
-
+The same can be applied to $N$
 . A periodic signal will repeat for every period.
 
 #### Time discretization

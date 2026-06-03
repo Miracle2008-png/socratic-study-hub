@@ -72,9 +72,7 @@ From the previous research of the Technical Alliance's energy survey of North Am
 
 Register on a continuous 24-hour time period basis the total net conversion of energy, which would determine
 
-the availability of energy for continental plant construction and maintenance,
-
-the amount of physical wealth available in the form of consumable goods and services for consumption by the total population during the balanced load period
+the availability of energy for continental plant construction and maintenance, the amount of physical wealth available in the form of consumable goods and services for consumption by the total population during the balanced load period
 
 by means of the registration of energy converted and consumed, make possible a balanced load
 

@@ -60,8 +60,7 @@ Taking
 {\displaystyle s=1/2}
 . For finite 
 {\displaystyle \nu }
-, corresponding to softer repulsion, 
- is greater than 
+, corresponding to softer repulsion, is greater than
 , which results in faster increase of viscosity compared with the hard-sphere model. Fitting to experimental data for hydrogen and helium gives predictions for 
  and 
 {\displaystyle \nu }

@@ -45,9 +45,7 @@ As a simple example, the matrix of a linear operator with respect to a basis is 
 Combinations of covariant and contravariant components with the same index allow us to express geometric invariants. For example, the fact that a vector is the same object in different coordinate systems can be captured by the following equations, using the formulas defined above:
 
 {\displaystyle \mathbf {v} ={\hat {v}}^{i}\,\mathbf {\hat {e}} _{i}=\left(\left(R^{-1}\right)_{j}^{i}{v}^{j}\right)\left(\mathbf {e} _{k}R_{i}^{k}\right)=\left(\left(R^{-1}\right)_{j}^{i}R_{i}^{k}\right){v}^{j}\mathbf {e} _{k}=\delta _{j}^{k}{v}^{j}\mathbf {e} _{k}={v}^{k}\,\mathbf {e} _{k}={v}^{i}\,\mathbf {e} _{i}}
-,
-
-where 
+, where
 {\displaystyle \delta _{j}^{k}}
  is the Kronecker delta, which functions similarly to the identity matrix, and has the effect of renaming indices (j into k in this example). This shows several features of the component notation: the ability to re-arrange terms at will (commutativity), the need to use different indices when working with multiple objects in the same expression, the ability to rename indices, and the manner in which contravariant and covariant tensors combine so that all instances of the transformation matrix and its inverse cancel, so that expressions like 
 {\displaystyle {v}^{i}\,\mathbf {e} _{i}}

@@ -18,14 +18,8 @@ When work, for example pressure–volume work, is done on its surroundings by a 
 
 In the early history of thermodynamics, a positive amount of work done by the system on the surroundings leads to energy being lost from the system. This historical sign convention has been used in many physics textbooks and is used in the present article.
 
-According to the first law of thermodynamics for a closed system, any net change in the internal energy U must be fully accounted for, in terms of heat Q entering the system and work W done by the system:
-
-$$ \Delta U=Q-W.\; $$
-
-An alternate sign convention is to consider the work performed on the system by its surroundings as positive. This leads to a change in sign of the work, so that 
-
-$$ \Delta U=Q+W $$
-
+According to the first law of thermodynamics for a closed system, any net change in the internal energy U must be fully accounted for, in terms of heat Q entering the system and work W done by the system: $\Delta U=Q-W.\;$
+An alternate sign convention is to consider the work performed on the system by its surroundings as positive. This leads to a change in sign of the work, so that $\Delta U=Q+W$
 . This convention has historically been used in chemistry, and has been adopted by most physics textbooks.
 
 This equation reflects the fact that the heat transferred and the work done are not properties of the state of the system.  Given only the initial state and the final state of the system, one can only say what the total change in internal energy was, not how much of the energy went out as heat, and how much as work.  This can be summarized by saying that heat and work are not state functions of the system.  This is in contrast to classical mechanics, where net work exerted by a particle is a state function.
@@ -34,163 +28,58 @@ This equation reflects the fact that the heat transferred and the work done are 
 
 Pressure–volume work (or PV or P-V work) occurs when the volume V of a system changes. PV work is often measured in units of litre-atmospheres where 1L·atm = 101.325J. However, the litre-atmosphere is not a recognized unit in the SI system of units, which measures P in pascals (Pa), V in m3, and PV in joules (J), where 1 J = 1 Pa·m3. PV work is an important topic in chemical thermodynamics.
 
-For a process in a closed system, occurring slowly enough for accurate definition of the pressure on the inside of the system's wall that moves and transmits force to the surroundings, described as quasi-static, work is represented by the following equation between differentials:
+For a process in a closed system, occurring slowly enough for accurate definition of the pressure on the inside of the system's wall that moves and transmits force to the surroundings, described as quasi-static, work is represented by the following equation between differentials: $\delta W=P\,dV$ where $\delta W$
+(inexact differential) denotes an infinitesimal increment of work done by the system, transferring energy to the surroundings; $P$ denotes the pressure inside the system, that it exerts on the moving wall that transmits force to the surroundings. In the alternative sign convention the right hand side has a negative sign. $dV$
+(exact differential) denotes an infinitesimal increment of the volume of the system.
 
-$$ \delta W=P\,dV $$
+Moreover, $W=\int _{V_{i}}^{V_{f}}P\,dV.$ where $W$ denotes the work done by the system during the whole of the reversible process.
 
-where
-
-$$ \delta W $$
-
- (inexact differential) denotes an infinitesimal increment of work done by the system, transferring energy to the surroundings;
-
-$$ P $$
-
- denotes the pressure inside the system, that it exerts on the moving wall that transmits force to the surroundings. In the alternative sign convention the right hand side has a negative sign.
-
-$$ dV $$
-
- (exact differential) denotes an infinitesimal increment of the volume of the system.
-
-Moreover,
-
-$$ W=\int _{V_{i}}^{V_{f}}P\,dV. $$
-
-where 
-
-$$ W $$
-
- denotes the work done by the system during the whole of the reversible process.
-
-The first law of thermodynamics can then be expressed as
-
-$$ dU=\delta Q-PdV\,. $$
-
-(In the alternative sign convention where W = work done on the system, 
-
-$$ \delta W=-P\,dV $$
-
-. However, 
-
-$$ dU=\delta Q-P\,dV $$
-
- is unchanged.)
+The first law of thermodynamics can then be expressed as $dU=\delta Q-PdV\,.$
+(In the alternative sign convention where W = work done on the system, $\delta W=-P\,dV$
+. However, $dU=\delta Q-P\,dV$ is unchanged.)
 
 ### Path dependence
 
-PV work is path-dependent and is, therefore, a thermodynamic process function. In general, the term 
+PV work is path-dependent and is, therefore, a thermodynamic process function. In general, the term $P\,dV$ is not an exact differential. The statement that a process is quasi-static gives important information about the process but does not determine the P–V path uniquely, because the path can include several slow goings backwards and forward in volume, slowly enough to exclude friction within the system occasioned by departure from the quasi-static requirement. An adiabatic wall is one that does not permit passage of energy by conduction or radiation.
 
-$$ P\,dV $$
-
- is not an exact differential. The statement that a process is quasi-static gives important information about the process but does not determine the P–V path uniquely, because the path can include several slow goings backwards and forward in volume, slowly enough to exclude friction within the system occasioned by departure from the quasi-static requirement. An adiabatic wall is one that does not permit passage of energy by conduction or radiation.
-
-The first law of thermodynamics states that 
-
-$$ \Delta U=Q-W $$
-
+The first law of thermodynamics states that $\Delta U=Q-W$
 .
 
-For a quasi-static adiabatic process, 
+For a quasi-static adiabatic process, $\delta Q=0$ so that
 
-$$ \delta Q=0 $$
-
- so that
-
-        0.
-
-$$ Q=\int \delta Q=0. $$
-
-Also 
-
-$$ \delta W=PdV $$
-
- so that
-
-$$ W=\int \delta W=\int P\,dV. $$
-
-It follows that 
-
-$$ dU=-\delta W $$
-
- so that
-
-$$ \Delta U=-\int P\,dV. $$
-
+        0. $Q=\int \delta Q=0.$
+Also $\delta W=PdV$ so that $W=\int \delta W=\int P\,dV.$
+It follows that $dU=-\delta W$ so that $\Delta U=-\int P\,dV.$
 Internal energy is a state function so its change depends only on the initial and final states of a process. For a quasi-static adiabatic process, the change in internal energy is equal to minus the integral amount of work done by the system, so the work also depends only on the initial and final states of the process and is one and the same for every intermediate path. As a result, the work done by the system also depends on the initial and final states.
 
 If the process path is other than quasi-static and adiabatic, there are indefinitely many different paths, with significantly different work amounts, between the initial and final states. (Again the internal energy change depends only on the initial and final states as it is a state function).
 
-In the current mathematical notation, the differential 
-
-$$ \delta W $$
-
- is an inexact differential.
+In the current mathematical notation, the differential $\delta W$ is an inexact differential.
 
 In another notation, δW is written đW (with a horizontal line through the d). This notation indicates that đW is not an exact one-form. The line-through is merely a flag to warn us there is actually no function (0-form) W which is the potential of đW. If there were, indeed, this function W, we should be able to just use Stokes Theorem to evaluate this putative function, the potential of đW, at the boundary of the path, that is, the initial and final points, and therefore the work would be a state function. This impossibility is consistent with the fact that it does not make sense to refer to the work on a point in the PV diagram; work presupposes a path.
 
 ## Other mechanical types of work
 
-There are several ways of doing mechanical work, each in some way related to a force acting through a distance. In basic mechanics, the work done by a constant force F on a body displaced a distance s in the direction of the force is given by 
-
-$$ W=Fs $$
-
-If the force is not constant, the work done is obtained by integrating the differential amount of work,
-
-$$ W=\int _{1}^{2}F\,ds. $$
-
+There are several ways of doing mechanical work, each in some way related to a force acting through a distance. In basic mechanics, the work done by a constant force F on a body displaced a distance s in the direction of the force is given by $W=Fs$
+If the force is not constant, the work done is obtained by integrating the differential amount of work, $W=\int _{1}^{2}F\,ds.$
 ### Rotational work
 
-Energy transmission with a rotating shaft is very common in engineering practice. Often the torque T applied to the shaft is constant which means that the force F applied is constant. For a specified constant torque, the work done during n revolutions is determined as follows: A force F acting through a moment arm r generates a torque T
-
-$$ T=Fr\implies F={\frac {T}{r}} $$
-
-This force acts through a distance s, which is related to the radius r by
-
-$$ s=2r\pi n $$
-
-The shaft work is then determined from:
-
-$$ W_{s}=Fs=2\pi nT $$
-
-The power transmitted through the shaft is the shaft work done per unit time, which is expressed as 
-
-$$ {\dot {W}}_{s}=2\pi T{\dot {n}} $$
-
+Energy transmission with a rotating shaft is very common in engineering practice. Often the torque T applied to the shaft is constant which means that the force F applied is constant. For a specified constant torque, the work done during n revolutions is determined as follows: A force F acting through a moment arm r generates a torque T $T=Fr\implies F={\frac {T}{r}}$
+This force acts through a distance s, which is related to the radius r by $s=2r\pi n$
+The shaft work is then determined from: $W_{s}=Fs=2\pi nT$
+The power transmitted through the shaft is the shaft work done per unit time, which is expressed as ${\dot {W}}_{s}=2\pi T{\dot {n}}$
 ### Spring work
 
-When a force is applied on a spring, and the length of the spring changes by a differential amount dx, the work done is
-
-$$ \partial w_{s}=Fdx $$
-
-For linear elastic springs, the displacement x is proportional to the force applied
-
-$$ F=Kx, $$
-
-where K is the spring constant and has the unit of N/m. The displacement x is measured from the undisturbed position of the spring (that is, X = 0 when F = 0). Substituting the two equations 
-
-$$ W_{s}={\frac {1}{2}}k\left(x_{1}^{2}-x_{2}^{2}\right) $$
-
-,
-
-where x1 and x2 are the initial and the final displacement of the spring respectively, measured from the undisturbed position of the spring.
+When a force is applied on a spring, and the length of the spring changes by a differential amount dx, the work done is $\partial w_{s}=Fdx$
+For linear elastic springs, the displacement x is proportional to the force applied $F=Kx,$ where K is the spring constant and has the unit of N/m. The displacement x is measured from the undisturbed position of the spring (that is, X = 0 when F = 0). Substituting the two equations $W_{s}={\frac {1}{2}}k\left(x_{1}^{2}-x_{2}^{2}\right)$ , where x1 and x2 are the initial and the final displacement of the spring respectively, measured from the undisturbed position of the spring.
 
 ### Work done on elastic solid bars
 
-Solids are often modeled as linear springs because under the action of a force they contract or elongate, and when the force is lifted, they return to their original lengths, like a spring. This is true as long as the force is in the elastic range, that is, not large enough to cause permanent or plastic deformation. Therefore, the equations given for a linear spring can also be used for elastic solid bars. Alternately, we can determine the work associated with the expansion or contraction of an elastic solid bar by replacing the pressure P by its counterpart in solids, normal stress σ = F/A in the work expansion 
-
-$$ W=\int _{1}^{2}F\,dx. $$
-
-$$ W=\int _{1}^{2}A\sigma \,dx. $$
-
-where A is the cross sectional area of the bar.
+Solids are often modeled as linear springs because under the action of a force they contract or elongate, and when the force is lifted, they return to their original lengths, like a spring. This is true as long as the force is in the elastic range, that is, not large enough to cause permanent or plastic deformation. Therefore, the equations given for a linear spring can also be used for elastic solid bars. Alternately, we can determine the work associated with the expansion or contraction of an elastic solid bar by replacing the pressure P by its counterpart in solids, normal stress σ = F/A in the work expansion $W=\int _{1}^{2}F\,dx.$ $W=\int _{1}^{2}A\sigma \,dx.$ where A is the cross sectional area of the bar.
 
 ### Work associated with the stretching of liquid film
 
-Consider a liquid film such as a soap film suspended on a wire frame. Some force is required to stretch this film by the movable portion of the wire frame. This force is used to overcome the microscopic forces between molecules at the liquid-air interface. These microscopic forces are perpendicular to any line in the surface and the force generated by these forces per unit length is called the surface tension σ whose unit is N/m. Therefore, the work associated with the stretching of a film is called surface tension work, and is determined from
-
-$$ W_{s}=\int _{1}^{2}\sigma _{s}\,dA. $$
-
-where dA=2b dx is the change in the surface area of the film. The factor 2 is due to the fact that the film has two surfaces in contact with air. The force acting on the moveable wire as a result of surface tension effects is F = 2b σ, where σ is the surface tension force per unit length.
+Consider a liquid film such as a soap film suspended on a wire frame. Some force is required to stretch this film by the movable portion of the wire frame. This force is used to overcome the microscopic forces between molecules at the liquid-air interface. These microscopic forces are perpendicular to any line in the surface and the force generated by these forces per unit length is called the surface tension σ whose unit is N/m. Therefore, the work associated with the stretching of a film is called surface tension work, and is determined from $W_{s}=\int _{1}^{2}\sigma _{s}\,dA.$ where dA=2b dx is the change in the surface area of the film. The factor 2 is due to the fact that the film has two surfaces in contact with air. The force acting on the moveable wire as a result of surface tension effects is F = 2b σ, where σ is the surface tension force per unit length.
 
 ## Free energy and exergy
 

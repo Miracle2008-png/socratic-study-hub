@@ -22,15 +22,8 @@ Other energy units such as the electronvolt, food calorie, thermodynamic kilocal
 
 In classical mechanics, energy is a conceptually and mathematically useful property, as it is a conserved quantity. Several formulations of mechanics have been developed using energy as a core concept.
 
-Work, a function of energy, is force times distance.
-
-$$ W=\int _{C}\mathbf {F} \cdot \mathrm {d} \mathbf {s} $$
-
-This says that the work (
-
-$$ W $$
-
-) is equal to the line integral of the force F along a path C; for details see the mechanical work article. Work and thus energy is frame dependent. For example, consider a ball being hit by a bat. In the center-of-mass reference frame, the bat does no work on the ball. But, in the reference frame of the person swinging the bat, considerable work is done on the ball.
+Work, a function of energy, is force times distance. $W=\int _{C}\mathbf {F} \cdot \mathrm {d} \mathbf {s}$
+This says that the work ( $W$ ) is equal to the line integral of the force F along a path C; for details see the mechanical work article. Work and thus energy is frame dependent. For example, consider a ball being hit by a bat. In the center-of-mass reference frame, the bat does no work on the ball. But, in the reference frame of the person swinging the bat, considerable work is done on the ball.
 
 The total energy of a system is sometimes called the Hamiltonian, after William Rowan Hamilton. The classical equations of motion can be written in terms of the Hamiltonian, even for highly complex or abstract systems. These classical equations have direct analogs in nonrelativistic quantum mechanics.
 
@@ -72,13 +65,7 @@ In growing organisms the energy that is converted to heat serves a vital purpose
 
 Multicellular organisms such as humans have cell forms that are classified as Eukaryote. These cells include an organelle called the mitochondria that generates chemical energy for the rest of the hosting cell. Ninety percent of the oxygen intake by humans is utilized by the mitochondria, especially for nutrient processing. The molecule adenosine triphosphate (ATP) is the primary energy transporter in living cells, providing an energy source for cellular processes. It is continually being broken down and synthesized as a component of cellular respiration.
 
-Two examples of nutrients consumed by animals are glucose (C6H12O6) and stearin (C57H110O6). These food molecules are oxidized to carbon dioxide and water in the mitochondria:
-
-$$ {\ce {C6H12O6 + 6O2 -> 6CO2 + 6H2O}} $$
-
-$$ {\ce {C57H110O6 + (81 1/2) O2 -> 57CO2 + 55H2O}} $$
-
-and some of the energy is used to convert ADP into ATP:
+Two examples of nutrients consumed by animals are glucose (C6H12O6) and stearin (C57H110O6). These food molecules are oxidized to carbon dioxide and water in the mitochondria: ${\ce {C6H12O6 + 6O2 -> 6CO2 + 6H2O}}$ ${\ce {C57H110O6 + (81 1/2) O2 -> 57CO2 + 55H2O}}$ and some of the energy is used to convert ADP into ATP:
 
 The rest of the chemical energy of the nutrients are converted into heat: the ATP is used as a sort of "energy currency", and some of the chemical energy it contains is used for other metabolism when ATP reacts with OH groups and eventually splits into ADP and phosphate (at each stage of a metabolic pathway, some chemical energy is converted into heat).
 
@@ -106,35 +93,13 @@ In quantum mechanics, energy is defined in terms of the energy operator
 
 (Hamiltonian) as a time derivative of the wave function. The Schrödinger equation equates the energy operator to the full energy of a particle or a system. Its results can be considered as a definition of measurement of energy in quantum mechanics. The Schrödinger equation describes the space- and time-dependence of a slowly changing (non-relativistic) wave function of quantum systems. The solution of this equation for a bound system is discrete (a set of permitted states, each characterized by an energy level) which results in the concept of quanta.
 
-For electromagnetic waves in a vacuum, the energy states are related to the frequency by the Planck relation: 
-
-$$ E=h\nu $$
-
-, where 
-
-$$ h $$
-
- is the Planck constant and 
-
-$$ \nu $$
-
- the frequency. These energy states are called quanta of light or photons.
+For electromagnetic waves in a vacuum, the energy states are related to the frequency by the Planck relation: $E=h\nu$ , where $h$ is the Planck constant and $\nu$ the frequency. These energy states are called quanta of light or photons.
 
 ### Relativity
 
-When calculating kinetic energy (work to accelerate a massive body from zero speed to some finite speed) relativistically – using Lorentz transformations instead of Newtonian mechanics – Einstein discovered an unexpected by-product of these calculations to be an energy term which does not vanish at zero speed. He called it rest energy: energy which every massive body must possess even when being at rest. The amount of energy is directly proportional to the mass of the body:
+When calculating kinetic energy (work to accelerate a massive body from zero speed to some finite speed) relativistically – using Lorentz transformations instead of Newtonian mechanics – Einstein discovered an unexpected by-product of these calculations to be an energy term which does not vanish at zero speed. He called it rest energy: energy which every massive body must possess even when being at rest. The amount of energy is directly proportional to the mass of the body: $E_{0}=m_{0}c^{2},$ where
 
-$$ E_{0}=m_{0}c^{2}, $$
-
-where
-
-m0 is the rest mass of the body,
-
-c is the speed of light in vacuum,
-
-$$ E_{0} $$
-
- is the rest energy.
+m0 is the rest mass of the body, c is the speed of light in vacuum, $E_{0}$ is the rest energy.
 
 For example, consider electron–positron annihilation, in which the rest energy of these two individual particles (equivalent to their rest mass) is converted to the radiant energy of the photons produced in the process. In this system the matter and antimatter (electrons and positrons) are destroyed and changed to non-matter (the photons). However, the total mass and total energy do not change during this interaction. The photons each have no rest mass but nonetheless have radiant energy which exhibits the same inertia as did the two original particles. This is a reversible process – the inverse process is called pair creation – in which the rest mass of the particles is created from a sufficiently energetic photon near a nucleus.
 
@@ -154,40 +119,22 @@ There are strict limits to how efficiently heat can be converted into work in a 
 
 Energy transformations in the universe over time are characterized by various kinds of potential energy, that has been available since the Big Bang, being "released" (transformed to more active types of energy such as kinetic or radiant energy) when a triggering mechanism is available. Familiar examples of such processes include nucleosynthesis, a process ultimately using the gravitational potential energy released from the gravitational collapse of supernovae to "store" energy in the creation of heavy isotopes (such as uranium and thorium), and nuclear decay, a process in which energy is released that was originally stored in these heavy elements, before they were incorporated into the Solar System and the Earth. This energy is triggered and released in nuclear fission bombs or in civil nuclear power generation. Similarly, in the case of a chemical explosion, chemical potential energy is transformed to kinetic and thermal energy in a very short time.
 
-Yet another example of energy transformation is that of a simple gravity pendulum. At its highest points the kinetic energy is zero and the gravitational potential energy is at its maximum. At its lowest point the kinetic energy is at its maximum and is equal to the decrease in potential energy. If one (unrealistically) assumes that there is no friction or other losses, the conversion of energy between these processes would be perfect, and the pendulum would continue swinging forever. Energy is transferred from potential energy (
-
-$$ E_{p} $$
-
-) to kinetic energy (
-
-$$ E_{k} $$
-
-) and then back to potential energy constantly. This is referred to as conservation of energy.
+Yet another example of energy transformation is that of a simple gravity pendulum. At its highest points the kinetic energy is zero and the gravitational potential energy is at its maximum. At its lowest point the kinetic energy is at its maximum and is equal to the decrease in potential energy. If one (unrealistically) assumes that there is no friction or other losses, the conversion of energy between these processes would be perfect, and the pendulum would continue swinging forever. Energy is transferred from potential energy ( $E_{p}$ ) to kinetic energy ( $E_{k}$ ) and then back to potential energy constantly. This is referred to as conservation of energy.
 
 In this isolated system, energy cannot be created or destroyed; therefore, the initial energy and the final energy will be equal to each other. This can be demonstrated by the following:
 
-The equation can then be simplified further since 
-
-$$ E_{p}=mgh $$
-
- (mass times acceleration due to gravity times the height) and 
+The equation can then be simplified further since $E_{p}=mgh$
+(mass times acceleration due to gravity times the height) and 
 
 {\textstyle E_{k}={\frac {1}{2}}mv^{2}}
- (half mass times velocity squared). Then the total amount of energy can be found by adding 
-
-$$ E_{p}+E_{k}=E_{\text{total}} $$
-
+ (half mass times velocity squared). Then the total amount of energy can be found by adding $E_{p}+E_{k}=E_{\text{total}}$
 .
 
 ### Conservation of energy and mass in transformation
 
 Within a gravitational field, both mass and energy give rise to a measureable weight when trapped in a system with zero momentum. The formula E = mc2, derived by Albert Einstein (1905) quantifies this mass–energy equivalence between relativistic mass and energy within the concept of special relativity. In different theoretical frameworks, similar formulas were derived by J. J. Thomson (1881), Henri Poincaré (1900), Friedrich Hasenöhrl (1904), and others (see Mass–energy equivalence#History for further information).
 
-Part of the rest energy (equivalent to rest mass) of matter may be converted to other forms of energy (still exhibiting mass), but neither energy nor mass can be destroyed; rather, both remain constant during any process. However, since 
-
-$$ c^{2} $$
-
- is extremely large relative to ordinary human scales, the conversion of an everyday amount of rest mass from rest energy to other forms of energy (such as kinetic energy, thermal energy, or the radiant energy carried by light and other radiation) can liberate tremendous amounts of energy, as can be seen in nuclear reactors and nuclear weapons. For example, 1 kg of rest mass equals 9×1016 joules, equivalent to 21.5 megatonnes of TNT.
+Part of the rest energy (equivalent to rest mass) of matter may be converted to other forms of energy (still exhibiting mass), but neither energy nor mass can be destroyed; rather, both remain constant during any process. However, since $c^{2}$ is extremely large relative to ordinary human scales, the conversion of an everyday amount of rest mass from rest energy to other forms of energy (such as kinetic energy, thermal energy, or the radiant energy carried by light and other radiation) can liberate tremendous amounts of energy, as can be seen in nuclear reactors and nuclear weapons. For example, 1 kg of rest mass equals 9×1016 joules, equivalent to 21.5 megatonnes of TNT.
 
 Conversely, the mass equivalent of an everyday amount energy is minuscule. Examples of large-scale transformations between the rest energy of matter and other forms of energy are found in nuclear physics and particle physics. The complete conversion of matter, such as atoms, to non-matter, such as photons, occurs during interaction with antimatter.
 
@@ -215,11 +162,7 @@ This law is a fundamental principle of physics. As shown rigorously by Noether's
 
 Each of the basic forces of nature is associated with a different type of potential energy, and all types of potential energy (like all other types of energy) appear as system mass, whenever present. For example, a compressed spring will be slightly more massive than before it was compressed. Likewise, whenever energy is transferred between systems by any mechanism, an associated mass is transferred with it.
 
-In quantum mechanics energy is expressed using the Hamiltonian operator. On any time scale, the uncertainty in the energy is given by:
-
-$$ \Delta E\Delta t\geq {\frac {\hbar }{2}} $$
-
-which is similar in form to the Heisenberg Uncertainty Principle, but not really mathematically equivalent thereto, since E and t are not dynamically conjugate variables, neither in classical nor in quantum mechanics.
+In quantum mechanics energy is expressed using the Hamiltonian operator. On any time scale, the uncertainty in the energy is given by: $\Delta E\Delta t\geq {\frac {\hbar }{2}}$ which is similar in form to the Heisenberg Uncertainty Principle, but not really mathematically equivalent thereto, since E and t are not dynamically conjugate variables, neither in classical nor in quantum mechanics.
 
 In particle physics, this inequality permits a qualitative understanding of virtual particles, which carry momentum. The exchange of virtual particles with real particles is responsible for the creation of all known fundamental forces (more accurately known as fundamental interactions). Virtual photons are also responsible for the electrostatic interaction between electric charges (which results in Coulomb's law), for spontaneous radiative decay of excited atomic and nuclear states, for the Casimir force, for the Van der Waals force, and some other observable phenomena.
 
@@ -231,33 +174,13 @@ Energy transfer can be considered for the special case of systems which are clos
 
 Energy is strictly conserved and is also locally conserved wherever it can be defined. In thermodynamics, for closed systems, the process of energy transfer is described by the first law:
 
-where 
-
-$$ E $$
-
- is the amount of energy transferred, 
-
-$$ W $$
-
-represents the work done on or by the system, and
-
-$$ Q $$
-
- represents the heat flow into or out of the system. As a simplification, the heat term, 
-
-$$ Q $$
-
-, can sometimes be ignored, especially for fast processes involving gases, which are poor conductors of heat, or when the thermal efficiency of the transfer is high. For such adiabatic processes,
+where $E$ is the amount of energy transferred, $W$ represents the work done on or by the system, and $Q$ represents the heat flow into or out of the system. As a simplification, the heat term, $Q$ , can sometimes be ignored, especially for fast processes involving gases, which are poor conductors of heat, or when the thermal efficiency of the transfer is high. For such adiabatic processes,
 
 This simplified equation is the one used to define the joule, for example.
 
 ### Open systems
 
-Beyond the constraints of closed systems, open systems can gain or lose energy in association with matter transfer (this process is illustrated by injection of an air-fuel mixture into a car engine, a system which gains in energy thereby, without addition of either work or heat). Denoting this energy by 
-
-$$ E_{\text{matter}} $$
-
-, one may write:
+Beyond the constraints of closed systems, open systems can gain or lose energy in association with matter transfer (this process is illustrated by injection of an air-fuel mixture into a car engine, a system which gains in energy thereby, without addition of either work or heat). Denoting this energy by $E_{\text{matter}}$ , one may write:
 
 ## Thermodynamics
 
@@ -267,25 +190,9 @@ Internal energy is the sum of all microscopic forms of energy of a system. It is
 
 ### First law of thermodynamics
 
-The first law of thermodynamics asserts that the total energy of a system and its surroundings (but not necessarily thermodynamic free energy) is always conserved and that heat flow is a form of energy transfer. For homogeneous systems, with a well-defined temperature and pressure, a commonly used corollary of the first law is that, for a system subject only to pressure forces and heat transfer (e.g., a cylinder-full of gas) without chemical changes, the differential change in the internal energy of the system (with a gain in energy signified by a positive quantity) is given as:
+The first law of thermodynamics asserts that the total energy of a system and its surroundings (but not necessarily thermodynamic free energy) is always conserved and that heat flow is a form of energy transfer. For homogeneous systems, with a well-defined temperature and pressure, a commonly used corollary of the first law is that, for a system subject only to pressure forces and heat transfer (e.g., a cylinder-full of gas) without chemical changes, the differential change in the internal energy of the system (with a gain in energy signified by a positive quantity) is given as: $\mathrm {d} E=T\mathrm {d} S-P\mathrm {d} V\,,$ where the first term on the right is the heat transferred into the system, expressed in terms of temperature T and entropy S (in which entropy increases and its change dS is positive when heat is added to the system), and the last term on the right hand side is identified as work done on the system, where pressure is P and volume V (the negative sign results since compression of the system requires work to be done on it and so the volume change, dV, is negative when work is done on the system).
 
-$$ \mathrm {d} E=T\mathrm {d} S-P\mathrm {d} V\,, $$
-
-where the first term on the right is the heat transferred into the system, expressed in terms of temperature T and entropy S (in which entropy increases and its change dS is positive when heat is added to the system), and the last term on the right hand side is identified as work done on the system, where pressure is P and volume V (the negative sign results since compression of the system requires work to be done on it and so the volume change, dV, is negative when work is done on the system).
-
-This equation is highly specific, ignoring all chemical, electrical, nuclear, and gravitational forces, effects such as advection of any form of energy other than heat and PV-work. The general formulation of the first law (i.e., conservation of energy) is valid even in situations in which the system is not homogeneous. For these cases the change in internal energy of a closed system is expressed in a general form by:
-
-$$ \mathrm {d} E=\delta Q+\delta W $$
-
-where 
-
-$$ \delta Q $$
-
- is the heat supplied to the system and 
-
-$$ \delta W $$
-
- is the work applied to the system.
+This equation is highly specific, ignoring all chemical, electrical, nuclear, and gravitational forces, effects such as advection of any form of energy other than heat and PV-work. The general formulation of the first law (i.e., conservation of energy) is valid even in situations in which the system is not homogeneous. For these cases the change in internal energy of a closed system is expressed in a general form by: $\mathrm {d} E=\delta Q+\delta W$ where $\delta Q$ is the heat supplied to the system and $\delta W$ is the work applied to the system.
 
 ### Equipartition of energy
 

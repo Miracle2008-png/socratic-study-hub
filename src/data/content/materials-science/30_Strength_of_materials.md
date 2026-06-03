@@ -22,11 +22,7 @@ Torsional loading – Twisting action caused by a pair of externally applied equ
 
 ### Stress terms
 
-Uniaxial stress is expressed by
-
-$$ \sigma ={\frac {F}{A}}, $$
-
-where F is the force acting on an area A. The area can be the undeformed area or the deformed area, depending on whether engineering stress or true stress is of interest.
+Uniaxial stress is expressed by $\sigma ={\frac {F}{A}},$ where F is the force acting on an area A. The area can be the undeformed area or the deformed area, depending on whether engineering stress or true stress is of interest.
 
 Compressive stress (or compression) is the stress state caused by an applied load that acts to reduce the length of the material (compression member) along the axis of the applied load; it is, in other words, a stress state that causes a squeezing of the material. A simple case of compression is the uniaxial compression induced by the action of opposite, pushing forces. Compressive strength for materials is generally higher than their tensile strength. However, structures loaded in compression are subject to additional failure modes, such as buckling, that are dependent on the member's geometry.
 
@@ -44,11 +40,7 @@ Compressive strength is a limit state of compressive stress that leads to failur
 
 Tensile strength or ultimate tensile strength is a limit state of tensile stress that leads to tensile failure in the manner of ductile failure (yield as the first stage of that failure, some hardening in the second stage and breakage after a possible "neck" formation) or brittle failure (sudden breaking in two or more pieces at a low-stress state). The tensile strength can be quoted as either true stress or engineering stress, but engineering stress is the most commonly used.
 
-Fatigue strength is a more complex measure of the strength of a material that considers several loading episodes in the service period of an object, and is usually more difficult to assess than the static strength measures. Fatigue strength is quoted here as a simple range (
-
-$$ \Delta \sigma =\sigma _{\mathrm {max} }-\sigma _{\mathrm {min} } $$
-
-). In the case of cyclic loading it can be appropriately expressed as an amplitude usually at zero mean stress, along with the number of cycles to failure under that condition of stress.
+Fatigue strength is a more complex measure of the strength of a material that considers several loading episodes in the service period of an object, and is usually more difficult to assess than the static strength measures. Fatigue strength is quoted here as a simple range ( $\Delta \sigma =\sigma _{\mathrm {max} }-\sigma _{\mathrm {min} }$ ). In the case of cyclic loading it can be appropriately expressed as an amplitude usually at zero mean stress, along with the number of cycles to failure under that condition of stress.
 
 Impact strength is the capability of the material to withstand a suddenly applied load and is expressed in terms of energy. Often measured with the Izod impact strength test or Charpy impact test, both of which measure the impact energy required to fracture a sample. Volume, modulus of elasticity, distribution of forces, and yield strength affect the impact strength of a material. In order for a material or object to have a high impact strength, the stresses must be distributed evenly throughout the object. It also must have a large volume with a low modulus of elasticity and a high material yield strength.
 
@@ -72,23 +64,13 @@ Consider the difference between a carrot and chewed bubble gum. The carrot will 
 
 Ultimate strength is an attribute related to a material, rather than just a specific specimen made of the material, and as such it is quoted as the force per unit of cross section area (N/m2). The ultimate strength is the maximum stress that a material can withstand before it breaks or weakens. For example, the ultimate tensile strength (UTS) of AISI 1018 Steel is 440 MPa. In Imperial units, the unit of stress is given as lbf/in2 or pounds-force per square inch. This unit is often abbreviated as psi. One thousand psi is abbreviated ksi.
 
-A factor of safety is a design criteria that an engineered component or structure must achieve. 
-
-$$ FS=F/f $$
-
-, where FS: the factor of safety, Rf The applied stress, and F: ultimate allowable stress (psi or MPa)
+A factor of safety is a design criteria that an engineered component or structure must achieve. $FS=F/f$ , where FS: the factor of safety, Rf The applied stress, and F: ultimate allowable stress (psi or MPa)
 
 Margin of Safety is the common method for design criteria. It is defined MS = Pu/P − 1.
 
-For example, to achieve a factor of safety of 4, the allowable stress in an AISI 1018 steel component can be calculated to be 
-
-$$ F=UTS/FS $$
-
- = 440/4 = 110 MPa, or 
-
-$$ F $$
-
- = 110×106 N/m2. Such allowable stresses are also known as "design stresses" or "working stresses".
+For example, to achieve a factor of safety of 4, the allowable stress in an AISI 1018 steel component can be calculated to be $F=UTS/FS$
+= 440/4 = 110 MPa, or $F$
+= 110×106 N/m2. Such allowable stresses are also known as "design stresses" or "working stresses".
 
 Design stresses that have been determined from the ultimate or yield point values of the materials give safe and reliable results only for the case of static loading. Many machine parts fail when subjected to a non-steady and continuously varying loads even though the developed stresses are below the yield point. Such failures are called fatigue failure. The failure is by a fracture that appears to be brittle with little or no visible evidence of yielding. However, when the stress is kept below "fatigue stress" or "endurance limit stress", the part will endure indefinitely. A purely reversing or cyclic stress is one that alternates between equal positive and negative peak stresses during each cycle of operation. In a purely cyclic stress, the average stress is zero. When a part is subjected to a cyclic stress, also known as stress range (Sr), it has been observed that the failure of the part occurs after a number of stress reversals (N) even if the magnitude of the stress range is below the material's yield strength. Generally, higher the range stress, the fewer the number of reversals needed for failure.
 

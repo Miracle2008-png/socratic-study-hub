@@ -24,31 +24,7 @@ The transfer of energy by the emission of electromagnetic radiation.
 
 ### Advection
 
-By transferring matter, energy—including thermal energy—is moved by the physical transfer of a hot or cold object from one place to another. This can be as simple as placing hot water in a bottle and heating a bed, or the movement of an iceberg in changing ocean currents. A practical example is thermal hydraulics. This can be described by the formula:
-
-$$ \phi _{q}=v\rho c_{p}\Delta T $$
-
-where
-
-$$ \phi _{q} $$
-
- is heat flux (W/m2),
-
-$$ \rho $$
-
- is density (kg/m3),
-
-$$ c_{p} $$
-
- is heat capacity at constant pressure (J/kg·K),
-
-$$ \Delta T $$
-
- is the difference in temperature (K),
-
-$$ v $$
-
- is velocity (m/s).
+By transferring matter, energy—including thermal energy—is moved by the physical transfer of a hot or cold object from one place to another. This can be as simple as placing hot water in a bottle and heating a bed, or the movement of an iceberg in changing ocean currents. A practical example is thermal hydraulics. This can be described by the formula: $\phi _{q}=v\rho c_{p}\Delta T$ where $\phi _{q}$ is heat flux (W/m2), $\rho$ is density (kg/m3), $c_{p}$ is heat capacity at constant pressure (J/kg·K), $\Delta T$ is the difference in temperature (K), $v$ is velocity (m/s).
 
 ### Conduction
 
@@ -74,31 +50,11 @@ The rate of heat loss of a body is proportional to the temperature difference be
 
 In a body of fluid that is heated from underneath its container, conduction, and convection can be considered to compete for dominance. If heat conduction is too great, fluid moving down by convection is heated by conduction so fast that its downward movement will be stopped due to its buoyancy, while fluid moving up by convection is cooled by conduction so fast that its driving buoyancy will diminish. On the other hand, if heat conduction is very low, a large temperature gradient may be formed and convection might be very strong.
 
-The Rayleigh number (
-
-$$ \mathrm {Ra} $$
-
-) is the product of the Grashof (
-
-$$ \mathrm {Gr} $$
-
-) and Prandtl (
-
-$$ \mathrm {Pr} $$
-
-) numbers. It is a measure that determines the relative strength of conduction and convection.
-
-$$ \mathrm {Ra} =\mathrm {Gr} \cdot \mathrm {Pr} ={\frac {g\Delta \rho L^{3}}{\mu \alpha }}={\frac {g\beta \Delta TL^{3}}{\nu \alpha }} $$
-
-where
+The Rayleigh number ( $\mathrm {Ra}$ ) is the product of the Grashof ( $\mathrm {Gr}$ ) and Prandtl ( $\mathrm {Pr}$ ) numbers. It is a measure that determines the relative strength of conduction and convection. $\mathrm {Ra} =\mathrm {Gr} \cdot \mathrm {Pr} ={\frac {g\Delta \rho L^{3}}{\mu \alpha }}={\frac {g\beta \Delta TL^{3}}{\nu \alpha }}$ where
 
 g is the acceleration due to gravity,
 
-ρ is the density with 
-
-$$ \Delta \rho $$
-
- being the density difference between the lower and upper ends,
+ρ is the density with $\Delta \rho$ being the density difference between the lower and upper ends,
 
 μ is the dynamic viscosity,
 
@@ -114,26 +70,8 @@ L is characteristic length.
 
 The Rayleigh number can be understood as the ratio between the rate of heat transfer by convection to the rate of heat transfer by conduction; or, equivalently, the ratio between the corresponding timescales (i.e. conduction timescale divided by convection timescale), up to a numerical factor. This can be seen as follows, where all calculations are up to numerical factors depending on the geometry of the system.
 
-The buoyancy force driving the convection is roughly 
-
-$$ g\Delta \rho L^{3} $$
-
-, so the corresponding pressure is roughly 
-
-$$ g\Delta \rho L $$
-
-. In steady state, this is canceled by the shear stress due to viscosity, and therefore roughly equals 
-
-$$ \mu V/L=\mu /T_{\text{conv}} $$
-
-, where V is the typical fluid velocity due to convection and 
-
-$$ T_{\text{conv}} $$
-
- the order of its timescale. The conduction timescale, on the other hand, is of the order of 
-
-$$ T_{\text{cond}}=L^{2}/\alpha $$
-
+The buoyancy force driving the convection is roughly $g\Delta \rho L^{3}$ , so the corresponding pressure is roughly $g\Delta \rho L$
+. In steady state, this is canceled by the shear stress due to viscosity, and therefore roughly equals $\mu V/L=\mu /T_{\text{conv}}$ , where V is the typical fluid velocity due to convection and $T_{\text{conv}}$ the order of its timescale. The conduction timescale, on the other hand, is of the order of $T_{\text{cond}}=L^{2}/\alpha$
 .
 
 Convection occurs when the Rayleigh number is above 1,000–2,000.
@@ -142,39 +80,8 @@ Convection occurs when the Rayleigh number is above 1,000–2,000.
 
 Radiative heat transfer is the transfer of energy via thermal radiation, i.e., electromagnetic waves. It occurs across vacuum or any transparent medium (solid or fluid or gas). Thermal radiation is emitted by all objects at temperatures above absolute zero, due to random movements of atoms and molecules in matter. Since these atoms and molecules are composed of charged particles (protons and electrons), their movement results in the emission of electromagnetic radiation which carries away energy. Radiation is typically only important in engineering applications for very hot objects, or for objects with a large temperature difference.
 
-When the objects and distances separating them are large in size and compared to the wavelength of thermal radiation, the rate of transfer of radiant energy is best described by the Stefan-Boltzmann equation:
-
-$$ \phi _{q}=\epsilon \sigma T^{4}. $$
-
-For radiative transfer between two objects, the equation is as follows:
-
-$$ \phi _{q}=\epsilon \sigma F(T_{a}^{4}-T_{b}^{4}), $$
-
-where
-
-$$ \phi _{q} $$
-
- is the heat flux,
-
-$$ \epsilon $$
-
- is the emissivity (unity for a black body),
-
-$$ \sigma $$
-
- is the Stefan–Boltzmann constant,
-
-$$ F $$
-
- is the view factor between two surfaces a and b, and
-
-$$ T_{a} $$
-
- and 
-
-$$ T_{b} $$
-
- are the absolute temperatures (in kelvins or degrees Rankine) for the two objects.
+When the objects and distances separating them are large in size and compared to the wavelength of thermal radiation, the rate of transfer of radiant energy is best described by the Stefan-Boltzmann equation: $\phi _{q}=\epsilon \sigma T^{4}.$
+For radiative transfer between two objects, the equation is as follows: $\phi _{q}=\epsilon \sigma F(T_{a}^{4}-T_{b}^{4}),$ where $\phi _{q}$ is the heat flux, $\epsilon$ is the emissivity (unity for a black body), $\sigma$ is the Stefan–Boltzmann constant, $F$ is the view factor between two surfaces a and b, and $T_{a}$ and $T_{b}$ are the absolute temperatures (in kelvins or degrees Rankine) for the two objects.
 
 The blackbody limit established by the Stefan-Boltzmann equation can be exceeded when the objects exchanging thermal radiation or the distances separating them are comparable in scale or smaller than the dominant thermal wavelength. The study of these cases is called near-field radiative heat transfer.
 
