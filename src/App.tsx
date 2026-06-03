@@ -438,13 +438,23 @@ const AppContent: React.FC = () => {
         )}
 
         <div className="content-area page-wrapper anim-fade" key={`${activeTab}-${activeTopic || 'none'}`}>
-          {!isFocusMode && activeTopic && (
+          {!isFocusMode && activeTab !== 'dashboard' && (
             <div className="breadcrumbs">
-              <button onClick={() => setActiveTopic(null)} className="breadcrumb-link">
-                {tabLabel(activeTab)}
+              <button onClick={() => { setActiveTopic(null); setActiveTab('dashboard'); }} className="breadcrumb-link">
+                Dashboard
               </button>
               <span className="breadcrumb-separator">›</span>
-              <span className="breadcrumb-current">{activeTopic.replace(/_/g, ' ')}</span>
+              {activeTopic ? (
+                <>
+                  <button onClick={() => setActiveTopic(null)} className="breadcrumb-link">
+                    {tabLabel(activeTab)}
+                  </button>
+                  <span className="breadcrumb-separator">›</span>
+                  <span className="breadcrumb-current">{activeTopic.replace(/_/g, ' ')}</span>
+                </>
+              ) : (
+                <span className="breadcrumb-current">{tabLabel(activeTab)}</span>
+              )}
             </div>
           )}
           <Suspense fallback={<div style={{ display: 'flex', justifyContent: 'center', padding: '100px', color: 'var(--color-text-muted)' }}>Loading...</div>}>
