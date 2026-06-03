@@ -177,11 +177,11 @@ export async function fetchTopicContent(topicId: string): Promise<TopicContent> 
     }
 
     // Trim very long sections so no single article dominates the page
-    const MAX_CHARS = 4000;
+    const MAX_CHARS = 8000;
     if (content.length > MAX_CHARS) {
       // Cut at a paragraph boundary near the limit
       const cutPoint = content.lastIndexOf('\n\n', MAX_CHARS);
-      content = (cutPoint > 2000 ? content.slice(0, cutPoint) : content.slice(0, MAX_CHARS)).trim();
+      content = (cutPoint > 4000 ? content.slice(0, cutPoint) : content.slice(0, MAX_CHARS)).trim();
     }
 
     sections.push({

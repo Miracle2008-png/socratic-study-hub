@@ -75,6 +75,9 @@ const getIconForTopic = (title: string): React.ElementType => {
   if (t.includes('algebra') || t.includes('equation')) return Calculator;
   if (t.includes('quantum') || t.includes('atom')) return Atom;
   if (t.includes('mechanic') || t.includes('motion') || t.includes('force')) return Orbit;
+  if (t.includes('circuit') || t.includes('electric')) return Zap;
+  if (t.includes('digital') || t.includes('boolean') || t.includes('logic')) return Network;
+  if (t.includes('analogue') || t.includes('analog') || t.includes('transistor') || t.includes('diode')) return Zap;
   if (t.includes('electro') || t.includes('magnet')) return Zap;
   if (t.includes('thermo') || t.includes('heat')) return Flame;
   if (t.includes('organic') || t.includes('bond') || t.includes('reaction')) return Beaker;
@@ -82,6 +85,8 @@ const getIconForTopic = (title: string): React.ElementType => {
   if (t.includes('cell') || t.includes('micro')) return Microscope;
   if (t.includes('neuro') || t.includes('brain')) return Brain;
   if (t.includes('data') || t.includes('stat')) return BarChart2;
+  if (t.includes('fluid') || t.includes('transport') || t.includes('separation')) return BookOpen;
+  if (t.includes('software') || t.includes('civil') || t.includes('material')) return BookOpen;
   return BookOpen;
 };
 
