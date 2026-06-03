@@ -78,8 +78,10 @@ const getIconForTopic = (title: string): React.ElementType => {
   if (t.includes('circuit') || t.includes('electric')) return Zap;
   if (t.includes('digital') || t.includes('boolean') || t.includes('logic')) return Network;
   if (t.includes('analogue') || t.includes('analog') || t.includes('transistor') || t.includes('diode')) return Zap;
-  if (t.includes('electro') || t.includes('magnet')) return Zap;
-  if (t.includes('thermo') || t.includes('heat')) return Flame;
+  if (t.includes('signal') || t.includes('system') || t.includes('filter') || t.includes('fourier')) return BarChart2;
+  if (t.includes('control') || t.includes('feedback') || t.includes('pid') || t.includes('locus')) return Network;
+  if (t.includes('electro') || t.includes('magnet') || t.includes('maxwell') || t.includes('wave')) return Zap;
+  if (t.includes('thermo') || t.includes('heat') || t.includes('entropy') || t.includes('cycle')) return Flame;
   if (t.includes('organic') || t.includes('bond') || t.includes('reaction')) return Beaker;
   if (t.includes('genetics') || t.includes('dna')) return Dna;
   if (t.includes('cell') || t.includes('micro')) return Microscope;
