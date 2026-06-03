@@ -1,3 +1,0 @@
-# Journal of Experiments in Fluid Mechanics
-
-The Journal of Experiments in Fluid Mechanics (Chinese: 实验流体力学, romanized: Shiyan Liuti Lixue) is a peer-reviewed scientific journal covering fluid dynamics, published bimonthly by the China Aerodynamics Research Society. The current editor-in-chief is Jialing Le. The journal publishes articles in Chinese and English. It is indexed in CAS and Scopus, ranking 122/153 in the category 'Aerospace Engineering'.

@@ -1,3 +1,0 @@
-# Theoretical plate
-
-A theoretical plate in many separation processes is a hypothetical zone or stage in which two phases, such as the liquid and vapor phases of a substance, establish an equilibrium with each other. Such equilibrium stages may also be referred to as an equilibrium stage, ideal stage, or a theoretical tray. The performance of many separation processes depends on having series of equilibrium stages and is enhanced by providing more such stages. In other words, having more theoretical plates increases the efficiency of the separation process be it either a distillation, absorption, chromatographic, adsorption or similar process.
