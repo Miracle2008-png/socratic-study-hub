@@ -16,164 +16,33 @@ These concepts of temperature and of thermal equilibrium are fundamental to ther
 The first law of thermodynamics is a version of the law of conservation of energy, adapted for thermodynamic processes. In general, the conservation law states that the total energy of an isolated system is constant; energy can be transformed from one form to another, but can be neither created nor destroyed.
 
 In a closed system (i.e. there is no transfer of matter into or out of the system), the first law states that the change in internal energy of the system (ΔUsystem) is equal to the difference between the heat supplied to the system (Q) and the work (W) done by the system on its surroundings. (Note, an alternate sign convention, not used in this article, is to define W as the work done on the system by its surroundings): 
-        Δ
-          U
-              s
 
-              y
-
-              s
-
-              t
-
-              e
-
-              m
-        =
-
-        Q
-
-        −
-
-        W
-
-        .
-    {\displaystyle \Delta U_{\rm {system}}=Q-W.}
+{\displaystyle \Delta U_{\rm {system}}=Q-W.}
 
 For processes that include the transfer of matter, a further statement is needed.
 
 When two initially isolated systems are combined into a new system, then the total internal energy of the new system, Usystem, will be equal to the sum of the internal energies of the two initial systems, U1 and U2: 
-          U
-              s
 
-              y
-
-              s
-
-              t
-
-              e
-
-              m
-        =
-          U
-            1
-        +
-          U
-            2
-        .
-    {\displaystyle U_{\rm {system}}=U_{1}+U_{2}.}
+{\displaystyle U_{\rm {system}}=U_{1}+U_{2}.}
 
 The First Law encompasses several principles:
 
 Conservation of energy, which says that energy can be neither created nor destroyed, but can only change form. A particular consequence of this is that the total energy of an isolated system does not change.
 
 The concept of internal energy and its relationship to temperature. If a system has a definite temperature, then its total energy has three distinguishable components, termed kinetic energy (energy due to the motion of the system as a whole), potential energy (energy resulting from an externally imposed force field), and internal energy. The establishment of the concept of internal energy distinguishes the first law of thermodynamics from the more general law of conservation of energy. 
-          E
-              t
 
-              o
-
-              t
-
-              a
-
-              l
-        =
-
-        K
-          E
-              s
-
-              y
-
-              s
-
-              t
-
-              e
-
-              m
-        +
-
-        P
-          E
-              s
-
-              y
-
-              s
-
-              t
-
-              e
-
-              m
-        +
-          U
-              s
-
-              y
-
-              s
-
-              t
-
-              e
-
-              m
-    {\displaystyle E_{\rm {total}}=KE_{\rm {system}}+PE_{\rm {system}}+U_{\rm {system}}}
+{\displaystyle E_{\rm {total}}=KE_{\rm {system}}+PE_{\rm {system}}+U_{\rm {system}}}
 
 Work is a process of transferring energy to or from a system in ways that can be described by macroscopic mechanical forces acting between the system and its surroundings. The work done by the system can come from its overall kinetic energy, from its overall potential energy, or from its internal energy. For example, when a machine (not a part of the system) lifts a system upwards, some energy is transferred from the machine to the system. The system's energy increases as work is done on the system and in this particular case, the energy increase of the system is manifested as an increase in the system's gravitational potential energy. Work added to the system increases the potential energy of the system.
 
 When matter is transferred into a system, the internal energy and potential energy associated with it are transferred into the new combined system. 
-            (
-              u
-              Δ
 
-              M
-            )
-              i
-
-              n
-        =
-
-        Δ
-          U
-              s
-
-              y
-
-              s
-
-              t
-
-              e
-
-              m
-    {\displaystyle \left(u\,\Delta M\right)_{\rm {in}}=\Delta U_{\rm {system}}}
+{\displaystyle \left(u\,\Delta M\right)_{\rm {in}}=\Delta U_{\rm {system}}}
  where u denotes the internal energy per unit mass of the transferred matter, as measured while in the surroundings; and ΔM denotes the amount of transferred mass.
 
 The flow of heat is a form of energy transfer. Heat transfer is the natural process of moving energy to or from a system, other than by work or the transfer of matter. In a diathermal system, the internal energy can only be changed by the transfer of energy as heat: 
-        Δ
-          U
-              s
 
-              y
-
-              s
-
-              t
-
-              e
-
-              m
-        =
-
-        Q
-
-        .
-    {\displaystyle \Delta U_{\rm {system}}=Q.}
+{\displaystyle \Delta U_{\rm {system}}=Q.}
 
 Combining these principles leads to one traditional statement of the first law of thermodynamics: it is not possible to construct a machine which will perpetually output work without an equal amount of energy input to that machine. Or more briefly, a perpetual motion machine of the first kind is impossible.
 
@@ -185,35 +54,15 @@ It implies the existence of a quantity called the entropy of a thermodynamic sys
 When two initially isolated systems in separate but nearby regions of space, each in thermodynamic equilibrium with itself but not necessarily with each other, are then allowed to interact, they will eventually reach a mutual thermodynamic equilibrium. The sum of the entropies of the initially isolated systems is less than or equal to the total entropy of the final combination. Equality occurs just when the two original systems have all their respective intensive variables (temperature, pressure) equal; then the final system also has the same values.
 
 The second law is applicable to a wide variety of processes, both reversible and irreversible. According to the second law, in a reversible heat transfer, an element of heat transferred, 
-        δ
 
-        Q
-    {\displaystyle \delta Q}
+{\displaystyle \delta Q}
 , is the product of the temperature (
-        T
-    {\displaystyle T}
 ), both of the system and of the sources or destination of the heat, with the increment (
-        d
 
-        S
-    {\displaystyle dS}
 ) of the system's conjugate variable, its entropy (
-        S
-    {\displaystyle S}
 ):
 
-        δ
-
-        Q
-
-        =
-
-        T
-        d
-
-        S
-        .
-    {\displaystyle \delta Q=T\,dS\,.}
+{\displaystyle \delta Q=T\,dS\,.}
 
 While reversible processes are a useful and convenient theoretical limiting case, all natural processes are irreversible. A prime example of this irreversibility is the transfer of heat by conduction or radiation. It was known long before the discovery of the notion of entropy that when two bodies, initially of different temperatures, come into direct thermal connection, then heat immediately and spontaneously flows from the hotter body to the colder one.
 
@@ -226,75 +75,21 @@ A system's entropy approaches a constant value as its temperature approaches abs
 
 At absolute zero temperature, the system is in the state with the minimum thermal energy, the ground state. The constant value (not necessarily zero) of entropy at this point is called the residual entropy of the system. With the exception of non-crystalline solids (e.g. glass) the residual entropy of a system is typically close to zero. However, it reaches zero only when the system has a unique ground state (i.e., the state with the minimum thermal energy has only one configuration, or microstate). Microstates are used here to describe the probability of a system being in a specific state, as each microstate is assumed to have the same probability of occurring, so macroscopic states with fewer microstates are less probable. In general, entropy is related to the number of possible microstates according to the Boltzmann principle
 
-        S
-
-        =
-          k
-              B
-          l
-
-          n
-        Ω
-    {\displaystyle S=k_{\mathrm {B} }\,\mathrm {ln} \,\Omega }
+{\displaystyle S=k_{\mathrm {B} }\,\mathrm {ln} \,\Omega }
 
 where S is the entropy of the system, kB is the Boltzmann constant, and Ω the number of microstates. At absolute zero there is only 1 microstate possible (Ω = 1 as all the atoms are identical for a pure substance, and as a result all orders are identical as there is only one combination) and 
-        ln
 
-        ⁡
-
-        (
-
-        1
-
-        )
-
-        =
-
-        0
-    {\displaystyle \ln(1)=0}
+{\displaystyle \ln(1)=0}
 .
 
 ## Onsager relations
 
 The Onsager reciprocal relations have been considered the fourth law of thermodynamics. They describe the relation between thermodynamic flows and forces in non-equilibrium thermodynamics, under the assumption that thermodynamic variables can be defined locally in a condition of local equilibrium. These relations are derived from statistical mechanics under the principle of microscopic reversibility (in the absence of external magnetic fields). Given a set of extensive parameters  Xi  (energy, mass, entropy, number of particles and so on) and thermodynamic forces  Fi  (related to their related intrinsic parameters, such as temperature and pressure), the Onsager theorem states that
 
-                d
-                J
-                  k
-                d
-                F
-                  i
-              |
-              F
-                i
-            =
-
-            0
-        =
-                d
-                J
-                  i
-                d
-                F
-                  k
-              |
-              F
-                k
-            =
-
-            0
-    {\displaystyle {\frac {\mathrm {d} J_{k}}{\mathrm {d} F_{i}}}{\bigg |}_{F_{i}=0}~=~{\frac {\mathrm {d} J_{i}}{\mathrm {d} F_{k}}}{\bigg |}_{F_{k}=0}}
+{\displaystyle {\frac {\mathrm {d} J_{k}}{\mathrm {d} F_{i}}}{\bigg |}_{F_{i}=0}~=~{\frac {\mathrm {d} J_{i}}{\mathrm {d} F_{k}}}{\bigg |}_{F_{k}=0}}
 
 where i, k = 1,2,3,... index every parameter and its related force, and
 
-          J
-            i
-        =
-                d
-                X
-                  i
-                d
-              t
-    {\displaystyle J_{i}={\frac {\mathrm {d} X_{i}}{\mathrm {d} t}}}
+{\displaystyle J_{i}={\frac {\mathrm {d} X_{i}}{\mathrm {d} t}}}
 
 are called the thermodynamic flows.

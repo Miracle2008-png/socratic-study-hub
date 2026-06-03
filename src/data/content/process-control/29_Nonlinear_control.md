@@ -61,35 +61,6 @@ An early nonlinear feedback system analysis problem was formulated by A. I. Lur'
 Control systems described by the Lur'e problem have a forward path that is linear and time-invariant, and a feedback path that contains a memory-less, possibly time-varying, static nonlinearity.
 
 The linear part can be characterized by four matrices (A,B,C,D), while the nonlinear part is Φ(y) with 
-              Φ
-
-              (
-
-              y
-
-              )
-            y
-        ∈
-
-        [
-
-        a
-
-        ,
-
-        b
-
-        ]
-
-        ,
-        a
-
-        <
-
-        b
-        ∀
-
-        y
 
 $$ {\frac {\Phi (y)}{y}}\in [a,b],\quad a<b\quad \forall y $$
 
@@ -125,101 +96,37 @@ The Popov criterion.
 
 The Frobenius theorem is a deep result in differential geometry. When applied to nonlinear control, it says the following: Given a system of the form
 
-              x
-
-              ˙
-        =
-          ∑
-            i
-
-            =
-
-            1
-            k
-          f
-            i
-        (
-
-        x
-
-        )
-          u
-            i
-        (
-
-        t
-
-        )
-
 $$ {\dot {x}}=\sum _{i=1}^{k}f_{i}(x)u_{i}(t)\, $$
 
 where 
-        x
-
-        ∈
-          R
-            n
 
 $$ x\in R^{n} $$
 
 ,  
-          f
-            1
-        ,
-
-        …
-
-        ,
-          f
-            k
 
 $$ f_{1},\dots ,f_{k} $$
 
  are vector fields belonging to a distribution 
-        Δ
 
 $$ \Delta $$
 
  and 
-          u
-            i
-        (
-
-        t
-
-        )
 
 $$ u_{i}(t) $$
 
  are control functions, the integral curves of 
-        x
 
 $$ x $$
 
  are restricted to a manifold of dimension 
-        m
 
 $$ m $$
 
  if 
-        span
-
-        ⁡
-
-        (
-
-        Δ
-
-        )
-
-        =
-
-        m
 
 $$ \operatorname {span} (\Delta )=m $$
 
  and 
-        Δ
 
 $$ \Delta $$
 

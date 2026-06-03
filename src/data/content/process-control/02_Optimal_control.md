@@ -14,275 +14,57 @@ Another related optimal control problem may be to find the way to drive the car 
 
 A more abstract framework goes as follows.  Minimize the continuous-time cost functional
 
-        J
-
-        [
-            x
-        (
-
-        ⋅
-
-        )
-
-        ,
-            u
-        (
-
-        ⋅
-
-        )
-
-        ,
-          t
-            0
-        ,
-          t
-            f
-        ]
-
-        :=
-
-        E
-        [
-            x
-        (
-          t
-            0
-        )
-
-        ,
-          t
-            0
-        ,
-            x
-        (
-          t
-            f
-        )
-
-        ,
-          t
-            f
-        ]
-
-        +
-          ∫
-              t
-                0
-              t
-                f
-        F
-        [
-            x
-        (
-
-        t
-
-        )
-
-        ,
-            u
-        (
-
-        t
-
-        )
-
-        ,
-
-        t
-
-        ]
-          d
-        t
-
 $$ J[{\textbf {x}}(\cdot ),{\textbf {u}}(\cdot ),t_{0},t_{f}]:=E\,[{\textbf {x}}(t_{0}),t_{0},{\textbf {x}}(t_{f}),t_{f}]+\int _{t_{0}}^{t_{f}}F\,[{\textbf {x}}(t),{\textbf {u}}(t),t]\,\mathrm {d} t $$
 
 subject to the first-order dynamic constraints (the state equation)
-
-                x
-              ˙
-        (
-
-        t
-
-        )
-
-        =
-            f
-        [
-            x
-        (
-
-        t
-
-        )
-
-        ,
-            u
-        (
-
-        t
-
-        )
-
-        ,
-
-        t
-
-        ]
-
-        ,
 
 $$ {\dot {\textbf {x}}}(t)={\textbf {f}}\,[\,{\textbf {x}}(t),{\textbf {u}}(t),t], $$
 
 the algebraic path constraints
 
-            h
-        [
-            x
-        (
-
-        t
-
-        )
-
-        ,
-            u
-        (
-
-        t
-
-        )
-
-        ,
-
-        t
-
-        ]
-
-        ≤
-            0
-        ,
-
 $$ {\textbf {h}}\,[{\textbf {x}}(t),{\textbf {u}}(t),t]\leq {\textbf {0}}, $$
 
 and the endpoint conditions
 
-            e
-        [
-            x
-        (
-          t
-            0
-        )
-
-        ,
-          t
-            0
-        ,
-            x
-        (
-          t
-            f
-        )
-
-        ,
-          t
-            f
-        ]
-
-        =
-
-        0
-
 $$ {\textbf {e}}[{\textbf {x}}(t_{0}),t_{0},{\textbf {x}}(t_{f}),t_{f}]=0 $$
 
 where 
-            x
-        (
-
-        t
-
-        )
 
 $$ {\textbf {x}}(t) $$
 
  is the state, 
-            u
-        (
-
-        t
-
-        )
 
 $$ {\textbf {u}}(t) $$
 
  is the control, 
-        t
 
 $$ t $$
 
  is the independent variable (generally speaking, time), 
-          t
-            0
 
 $$ t_{0} $$
 
  is the initial time, and 
-          t
-            f
 
 $$ t_{f} $$
 
  is the terminal time.  The terms 
-        E
 
 $$ E $$
 
  and 
-        F
 
 $$ F $$
 
  are called the endpoint cost  and the running cost respectively. In the calculus of variations, 
-        E
 
 $$ E $$
 
  and 
-        F
 
 $$ F $$
 
  are referred to as the Mayer term and the Lagrangian, respectively.  Furthermore, it is noted that the path constraints are in general inequality constraints and thus may not be active (i.e., equal to zero) at the optimal solution.  It is also noted that the optimal control problem as stated above may have multiple solutions (i.e., the solution may not be unique).  Thus, it is most often the case that any solution 
-        [
-              x
-            ∗
-        (
-
-        t
-
-        )
-
-        ,
-              u
-            ∗
-        (
-
-        t
-
-        )
-
-        ,
-          t
-            0
-            ∗
-        ,
-          t
-            f
-            ∗
-        ]
 
 $$ [{\textbf {x}}^{*}(t),{\textbf {u}}^{*}(t),t_{0}^{*},t_{f}^{*}] $$
 
@@ -292,300 +74,73 @@ $$ [{\textbf {x}}^{*}(t),{\textbf {u}}^{*}(t),t_{0}^{*},t_{f}^{*}] $$
 
 A special case of the general nonlinear optimal control problem given in the previous section is the linear quadratic (LQ) optimal control problem.  The LQ problem is stated as follows.  Minimize the quadratic continuous-time cost functional
 
-        J
-
-        =
-              1
-
-              2
-            x
-              T
-        (
-          t
-            f
-        )
-            S
-            f
-          x
-        (
-          t
-            f
-        )
-
-        +
-              1
-
-              2
-          ∫
-              t
-                0
-              t
-                f
-        [
-            x
-              T
-        (
-
-        t
-
-        )
-          Q
-        (
-
-        t
-
-        )
-          x
-        (
-
-        t
-
-        )
-
-        +
-            u
-              T
-        (
-
-        t
-
-        )
-          R
-        (
-
-        t
-
-        )
-          u
-        (
-
-        t
-
-        )
-
-        ]
-          d
-        t
-
 $$ J={\tfrac {1}{2}}\mathbf {x} ^{\mathsf {T}}(t_{f})\mathbf {S} _{f}\mathbf {x} (t_{f})+{\tfrac {1}{2}}\int _{t_{0}}^{t_{f}}[\,\mathbf {x} ^{\mathsf {T}}(t)\mathbf {Q} (t)\mathbf {x} (t)+\mathbf {u} ^{\mathsf {T}}(t)\mathbf {R} (t)\mathbf {u} (t)]\,\mathrm {d} t $$
 
 Subject to the linear first-order dynamic constraints
-
-                x
-              ˙
-        (
-
-        t
-
-        )
-
-        =
-          A
-        (
-
-        t
-
-        )
-          x
-        (
-
-        t
-
-        )
-
-        +
-          B
-        (
-
-        t
-
-        )
-          u
-        (
-
-        t
-
-        )
-
-        ,
 
 $$ {\dot {\mathbf {x} }}(t)=\mathbf {A} (t)\mathbf {x} (t)+\mathbf {B} (t)\mathbf {u} (t), $$
 
 and the initial condition
 
-          x
-        (
-          t
-            0
-        )
-
-        =
-            x
-            0
-
 $$ \mathbf {x} (t_{0})=\mathbf {x} _{0} $$
 
 A particular form of the LQ problem that arises in many control system problems is that of the linear quadratic regulator (LQR) where all of the matrices (i.e., 
-          A
 
 $$ \mathbf {A} $$
 
 , 
-          B
 
 $$ \mathbf {B} $$
 
 , 
-          Q
 
 $$ \mathbf {Q} $$
 
 , and 
-          R
 
 $$ \mathbf {R} $$
 
 ) are constant, the initial time is arbitrarily set to zero, and the terminal time is taken in the limit 
-          t
-            f
-        →
-
-        ∞
 
 $$ t_{f}\rightarrow \infty $$
 
  (this last assumption is what is known as infinite horizon).  The LQR problem is stated as follows.  Minimize the infinite horizon quadratic continuous-time cost functional
 
-        J
-
-        =
-              1
-
-              2
-          ∫
-            0
-            ∞
-        [
-            x
-              T
-        (
-
-        t
-
-        )
-          Q
-          x
-        (
-
-        t
-
-        )
-
-        +
-            u
-              T
-        (
-
-        t
-
-        )
-          R
-          u
-        (
-
-        t
-
-        )
-
-        ]
-          d
-        t
-
 $$ J={\tfrac {1}{2}}\int _{0}^{\infty }[\mathbf {x} ^{\mathsf {T}}(t)\mathbf {Q} \mathbf {x} (t)+\mathbf {u} ^{\mathsf {T}}(t)\mathbf {R} \mathbf {u} (t)]\,\mathrm {d} t $$
 
 Subject to the linear time-invariant first-order dynamic constraints
-
-                x
-              ˙
-        (
-
-        t
-
-        )
-
-        =
-          A
-          x
-        (
-
-        t
-
-        )
-
-        +
-          B
-          u
-        (
-
-        t
-
-        )
-
-        ,
 
 $$ {\dot {\mathbf {x} }}(t)=\mathbf {A} \mathbf {x} (t)+\mathbf {B} \mathbf {u} (t), $$
 
 and the initial condition
 
-          x
-        (
-          t
-            0
-        )
-
-        =
-            x
-            0
-
 $$ \mathbf {x} (t_{0})=\mathbf {x} _{0} $$
 
 In the finite-horizon case the matrices are restricted in that 
-          Q
 
 $$ \mathbf {Q} $$
 
  and 
-          R
 
 $$ \mathbf {R} $$
 
  are positive semi-definite and positive definite, respectively.  In the infinite-horizon case, however, the matrices 
-          Q
 
 $$ \mathbf {Q} $$
 
  and 
-          R
 
 $$ \mathbf {R} $$
 
  are not only positive-semidefinite and positive-definite, respectively, but are also constant.  These additional restrictions on
 
-          Q
-
 $$ \mathbf {Q} $$
 
  and 
-          R
 
 $$ \mathbf {R} $$
 
  in the infinite-horizon case are enforced to ensure that the cost functional remains positive.  Furthermore, in order to ensure that the cost function is bounded, the additional restriction is imposed that the pair 
-        (
-          A
-        ,
-          B
-        )
 
 $$ (\mathbf {A} ,\mathbf {B} ) $$
 
@@ -593,192 +148,45 @@ $$ (\mathbf {A} ,\mathbf {B} ) $$
 
 The infinite horizon problem (i.e., LQR) may seem overly restrictive and essentially useless because it assumes that the operator is driving the system to zero-state and hence driving the output of the system to zero. This is indeed correct. However the problem of driving the output to a desired nonzero level can be solved after the zero output one is. In fact, it can be proved that this secondary LQR problem can be solved in a very straightforward manner.  It has been shown in classical optimal control theory that the LQ (or LQR) optimal control has the feedback form
 
-          u
-        (
-
-        t
-
-        )
-
-        =
-
-        −
-          K
-        (
-
-        t
-
-        )
-          x
-        (
-
-        t
-
-        )
-
 $$ \mathbf {u} (t)=-\mathbf {K} (t)\mathbf {x} (t) $$
 
 where 
-          K
-        (
-
-        t
-
-        )
 
 $$ \mathbf {K} (t) $$
 
  is a properly dimensioned matrix, given as
 
-          K
-        (
-
-        t
-
-        )
-
-        =
-            R
-            −
-
-            1
-            B
-              T
-          S
-        (
-
-        t
-
-        )
-
-        ,
-
 $$ \mathbf {K} (t)=\mathbf {R} ^{-1}\mathbf {B} ^{\mathsf {T}}\mathbf {S} (t), $$
 
 and 
-          S
-        (
-
-        t
-
-        )
 
 $$ \mathbf {S} (t) $$
 
  is the solution of the differential Riccati equation.  The differential Riccati equation is given as
 
-                S
-              ˙
-        (
-
-        t
-
-        )
-
-        =
-
-        −
-          S
-        (
-
-        t
-
-        )
-          A
-        −
-            A
-              T
-          S
-        (
-
-        t
-
-        )
-
-        +
-          S
-        (
-
-        t
-
-        )
-          B
-            R
-            −
-
-            1
-            B
-              T
-          S
-        (
-
-        t
-
-        )
-
-        −
-          Q
-
 $$ {\dot {\mathbf {S} }}(t)=-\mathbf {S} (t)\mathbf {A} -\mathbf {A} ^{\mathsf {T}}\mathbf {S} (t)+\mathbf {S} (t)\mathbf {B} \mathbf {R} ^{-1}\mathbf {B} ^{\mathsf {T}}\mathbf {S} (t)-\mathbf {Q} $$
 
 For the finite horizon LQ problem, the Riccati equation is integrated backward in time using the terminal boundary condition
-
-          S
-        (
-          t
-            f
-        )
-
-        =
-            S
-            f
 
 $$ \mathbf {S} (t_{f})=\mathbf {S} _{f} $$
 
 For the infinite horizon LQR problem, the differential Riccati equation is replaced with the algebraic Riccati equation (ARE) given as
 
-          0
-        =
-
-        −
-          S
-          A
-        −
-            A
-              T
-          S
-        +
-          S
-          B
-            R
-            −
-
-            1
-            B
-              T
-          S
-        −
-          Q
-
 $$ \mathbf {0} =-\mathbf {S} \mathbf {A} -\mathbf {A} ^{\mathsf {T}}\mathbf {S} +\mathbf {S} \mathbf {B} \mathbf {R} ^{-1}\mathbf {B} ^{\mathsf {T}}\mathbf {S} -\mathbf {Q} $$
 
 Understanding that the ARE arises from infinite horizon problem, the matrices 
-          A
 
 $$ \mathbf {A} $$
 
 , 
-          B
 
 $$ \mathbf {B} $$
 
 , 
-          Q
 
 $$ \mathbf {Q} $$
 
 , and 
-          R
 
 $$ \mathbf {R} $$
 
@@ -788,49 +196,13 @@ $$ \mathbf {R} $$
 
 Optimal control problems are generally nonlinear and therefore, generally do not have analytic solutions (e.g., like the linear-quadratic optimal control problem).  As a result, it is necessary to employ numerical methods to solve optimal control problems.  In the early years of optimal control (c. 1950s to 1980s) the favored approach for solving optimal control problems was that of indirect methods.  In an indirect method, the calculus of variations is employed to obtain the first-order optimality conditions.  These conditions result in a two-point (or, in the case of a complex problem, a multi-point) boundary-value problem.  This boundary-value problem actually has a special structure because it arises from taking the derivative of a Hamiltonian.  Thus, the resulting dynamical system is a Hamiltonian system of the form
 
-                        x
-                      ˙
-                =
-                      ∂
-
-                      H
-                      ∂
-                        λ
-                      λ
-
-                      ˙
-                =
-
-                −
-                      ∂
-
-                      H
-                      ∂
-                          x
-
 $$ {\begin{aligned}{\dot {\textbf {x}}}&={\frac {\partial H}{\partial {\boldsymbol {\lambda }}}}\\[1.2ex]{\dot {\boldsymbol {\lambda }}}&=-{\frac {\partial H}{\partial {\textbf {x}}}}\end{aligned}} $$
 
 where
 
-        H
-
-        =
-
-        F
-
-        +
-            λ
-              T
-            f
-        −
-            μ
-              T
-            h
-
 $$ H=F+{\boldsymbol {\lambda }}^{\mathsf {T}}{\textbf {f}}-{\boldsymbol {\mu }}^{\mathsf {T}}{\textbf {h}} $$
 
 is the augmented Hamiltonian and in an indirect method, the boundary-value problem is solved (using the appropriate boundary or transversality conditions).  The beauty of using an indirect method is that the state and adjoint (i.e., 
-          λ
 
 $$ {\boldsymbol {\lambda }} $$
 
@@ -840,28 +212,9 @@ The approach that has risen to prominence in numerical optimal control since the
 
 Minimize
 
-        F
-
-        (
-          z
-        )
-
 $$ F(\mathbf {z} ) $$
 
 subject to the algebraic constraints
-
-                  g
-                (
-                  z
-                )
-                =
-                  0
-                  h
-                (
-                  z
-                )
-                ≤
-                  0
 
 $$ {\begin{aligned}\mathbf {g} (\mathbf {z} )&=\mathbf {0} \\\mathbf {h} (\mathbf {z} )&\leq \mathbf {0} \end{aligned}} $$
 
@@ -874,48 +227,20 @@ The examples thus far have shown continuous time systems and control solutions. 
 ## Examples
 
 A common solution strategy in many optimal control problems is to solve for the costate (sometimes called the shadow price) 
-        λ
-
-        (
-
-        t
-
-        )
 
 $$ \lambda (t) $$
 
 . The costate summarizes in one number the marginal value of expanding or contracting the state variable next turn. The marginal value is not only the gains accruing to it next turn but associated with the duration of the program. It is nice when 
-        λ
-
-        (
-
-        t
-
-        )
 
 $$ \lambda (t) $$
 
  can be solved analytically, but usually, the most one can do is describe it sufficiently well that the intuition can grasp the character of the solution and an equation solver can solve numerically for the values.
 
 Having obtained 
-        λ
-
-        (
-
-        t
-
-        )
 
 $$ \lambda (t) $$
 
 , the turn-t optimal value for the control can usually be solved as a differential equation conditional on knowledge of 
-        λ
-
-        (
-
-        t
-
-        )
 
 $$ \lambda (t) $$
 
@@ -924,85 +249,42 @@ $$ \lambda (t) $$
 ### Finite time
 
 Consider the problem of a mine owner who must decide at what rate to extract ore from their mine. They own rights to the ore from date 
-        0
 
 $$ 0 $$
 
  to date 
-        T
 
 $$ T $$
 
 . At date 
-        0
 
 $$ 0 $$
 
  there is 
-          x
-            0
 
 $$ x_{0} $$
 
  ore in the ground, and the time-dependent amount of ore 
-        x
-
-        (
-
-        t
-
-        )
 
 $$ x(t) $$
 
  left in the ground declines at the rate of 
-        u
-
-        (
-
-        t
-
-        )
 
 $$ u(t) $$
 
  that the mine owner extracts it. The mine owner extracts ore at cost 
-        u
-
-        (
-
-        t
-          )
-            2
-          /
-        x
-
-        (
-
-        t
-
-        )
 
 $$ u(t)^{2}/x(t) $$
 
  (the cost of extraction increasing with the square of the extraction speed and the inverse of the amount of ore left) and sells ore at a constant price 
-        p
 
 $$ p $$
 
 . Any ore left in the ground at time 
-        T
 
 $$ T $$
 
  cannot be sold and has no value (there is no "scrap value"). The owner chooses the rate of extraction varying with time 
-        u
-
-        (
-
-        t
-
-        )
 
 $$ u(t) $$
 

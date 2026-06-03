@@ -9,79 +9,50 @@ In Euclidean geometry, straight lines, on the one hand, minimize arc length amon
 In the theory of differentiable manifolds, additional structure is required to make sense of arc length and parallel transport. The former is provided by a Riemannian structure, leading to the notion of a metric geodesic, while the latter is provided by a connection, leading to the notions of parallel transport and affine geodesics.
 
 Let us consider the sphere, 
-          S
-            2
 
 $$ S^{2} $$
 
 , as an example of a smooth manifold. If we regard it as a subset of its ambient 3-dimensional Euclidean space, then it makes sense to speak about vectors tangent to 
-          S
-            2
 
 $$ S^{2} $$
 
  at a point 
-        p
-
-        ∈
-          S
-            2
 
 $$ p\in S^{2} $$
 
 . All tangent vectors at this point form a 2-dimensional subspace of the ambient vector space, and we can call this 2-dimensional vector space the tangent space of 
-          S
-            2
 
 $$ S^{2} $$
 
  at 
-        p
 
 $$ p $$
 
 . In the theory of smooth manifolds, 
-          S
-            2
 
 $$ S^{2} $$
 
  is regarded in its own right, without any ambient space, and a tangent space at 
-        p
 
 $$ p $$
 
  is defined internally, as the vector space of derivations at 
-        p
 
 $$ p $$
 
 . The tangent space at 
-        p
-
-        ∈
-          S
-            2
 
 $$ p\in S^{2} $$
 
  is denoted by 
-          T
-            p
-          S
-            2
 
 $$ T_{p}S^{2} $$
 
 , and for a general differentiable manifold 
-        M
 
 $$ M $$
 
  by 
-          T
-            p
-        M
 
 $$ T_{p}M $$
 
@@ -90,175 +61,74 @@ $$ T_{p}M $$
 In our example, in analogy with straight lines in Euclidean space, we may say that the tangent vector field along a geodesic in a Riemannian manifold (the analogue of a straight line in Euclidean space) “does not change”; that is, the tangent vectors are parallel transports of one another along the geodesic. Likewise, unit vectors orthogonal to the tangent vectors are also parallel transported along the geodesic. By linearity, this determines the parallel transport of any tangent vector along the geodesic.
 
 Generally, the parallel transport of tangent vectors along a curve requires additional structure beyond the smooth structure. In our example above, we supposed the existence of a Riemannian metric on the sphere, which determines the geodesics (the curves with extremal length), and the rule of parallel transport is supposed to be in accordance with this Riemannian structure. But the concept of parallel transport is more general. The rule, how the tangent vectors of the manifold should transport parallelly along a curve, can be itself this "additional structure", since it can be defined even if the manifold doesn't have any additional structure beyond the smooth structure. It can be done as follows. All tangent vectors at every point of a manifold 
-        M
 
 $$ M $$
 
  form the tangent bundle 
-        T
-
-        M
 
 $$ TM $$
 
  of 
-        M
 
 $$ M $$
 
 . Taking a curve 
-        c
-
-        :
-
-        I
-
-        ⊆
-          R
-        →
-
-        M
 
 $$ c:I\subseteq \mathbb {R} \to M $$
 
 , and picking a tangent vector 
-        v
-
-        (
-
-        c
-
-        (
-
-        t
-
-        )
-
-        )
-
-        ∈
-          T
-            p
-        M
 
 $$ v(c(t))\in T_{p}M $$
 
  at each point 
-        c
-
-        (
-
-        t
-
-        )
 
 $$ c(t) $$
 
 , the resulting function 
-        v
-
-        :
-
-        I
-
-        →
-
-        T
-
-        M
-
-        :
-
-        t
-
-        ↦
-
-        v
-
-        (
-
-        c
-
-        (
-
-        t
-
-        )
-
-        )
 
 $$ v:I\to TM:t\mapsto v(c(t)) $$
 
  is a curve in 
-        T
-
-        M
 
 $$ TM $$
 
 . The general rule of parallel transport specifies when the tangent vector of 
-        v
 
 $$ v $$
 
  should be regarded "horizontal". If the tangent vectors of 
-        v
 
 $$ v $$
 
  (which are in 
-        T
-
-        T
-
-        M
 
 $$ TTM $$
 
 ) are horizontal at each point, we say that 
-        v
 
 $$ v $$
 
  is a horizontal curve in 
-        T
-
-        M
 
 $$ TM $$
 
 , or that 
-        v
 
 $$ v $$
 
  is parallelly transported along 
-        c
 
 $$ c $$
 
 . The rule that specifies whether a tangent vector of the curve 
-        v
 
 $$ v $$
 
  is horizontal or not, called a connection. It specifies the horizontal subspaces in 
-          T
-            y
-        T
-
-        M
 
 $$ T_{y}TM $$
 
  for each 
-        y
-
-        ∈
-
-        T
-
-        M
 
 $$ y\in TM $$
 
@@ -267,176 +137,86 @@ $$ y\in TM $$
 ## Parallel transport of tangent vectors
 
 Let 
-        M
 
 $$ M $$
 
  be a smooth manifold. For each point ⁠
-        p
-
-        ∈
-
-        M
 
 $$ p\in M $$
 
 ⁠, there is an associated vector space 
-          T
-            p
-        M
 
 $$ T_{p}M $$
 
  called the tangent space of 
-        M
 
 $$ M $$
 
  at 
-        p
 
 $$ p $$
 
 . Vectors in 
-          T
-            p
-        M
 
 $$ T_{p}M $$
 
  are thought of as the vectors tangent to 
-        M
 
 $$ M $$
 
  at 
-        p
 
 $$ p $$
 
 . A Riemannian metric 
-        g
 
 $$ g $$
 
  on 
-        M
 
 $$ M $$
 
  assigns to each 
-        p
 
 $$ p $$
 
  a positive-definite inner product 
-          g
-            p
-        :
-          T
-            p
-        M
-
-        ×
-          T
-            p
-        M
-
-        →
-          R
 
 $$ g_{p}:T_{p}M\times T_{p}M\to \mathbf {R} $$
 
  in a smooth way. A smooth manifold 
-        M
 
 $$ M $$
 
  endowed with a Riemannian metric 
-        g
 
 $$ g $$
 
  is a Riemannian manifold, denoted ⁠
-        (
-
-        M
-
-        ,
-
-        g
-
-        )
 
 $$ (M,g) $$
 
 ⁠.
 
 Let 
-          x
-            1
-        ,
-
-        …
-
-        ,
-          x
-            n
 
 $$ x^{1},\ldots ,x^{n} $$
 
  denote the standard coordinates on 
-            R
-            n
-        .
 
 $$ \mathbf {R} ^{n}. $$
 
  The Euclidean metric 
-          g
-            euc
 
 $$ g^{\text{euc}} $$
 
  is given by
-
-          g
-            euc
-        =
-
-        (
-
-        d
-          x
-            1
-          )
-            2
-        +
-
-        ⋯
-
-        +
-
-        (
-
-        d
-          x
-            n
-          )
-            2
 
 $$ g^{\text{euc}}=(dx^{1})^{2}+\cdots +(dx^{n})^{2} $$
 
 .
 
 Euclidean space is the Riemannian manifold 
-        (
-            R
-            n
-        ,
-          g
-            euc
-        )
 
 $$ (\mathbf {R} ^{n},g^{\text{euc}}) $$
 
@@ -449,380 +229,128 @@ An affine connection on a Riemannian manifold is a way of differentiating vector
 ### Precise definition
 
 Let 
-        M
 
 $$ M $$
 
  be a manifold with an affine connection ⁠
-        ∇
 
 $$ \nabla $$
 
 ⁠. Then a vector field 
-        X
 
 $$ X $$
 
  is said to be parallel if for any vector field ⁠
-        Y
 
 $$ Y $$
 
 ⁠, ⁠
-          ∇
-            Y
-        X
-
-        =
-
-        0
 
 $$ \nabla _{Y}X=0 $$
 
 ⁠. Intuitively speaking, parallel vector fields have all their derivatives equal to zero and are therefore in some sense constant. By evaluating a parallel vector field at two points 
-        x
 
 $$ x $$
 
  and ⁠
-        y
 
 $$ y $$
 
 ⁠, an identification between a tangent vector at 
-        x
 
 $$ x $$
 
  and one at 
-        y
 
 $$ y $$
 
  is obtained. Such tangent vectors are said to be parallel transports of each other.
 
 More precisely, if 
-        γ
-
-        :
-
-        I
-
-        →
-
-        M
 
 $$ \gamma :I\rightarrow M $$
 
  is a piecewise continuously differentiable curve parametrized by an interval 
-        [
-
-        a
-
-        ,
-
-        b
-
-        ]
 
 $$ [a,b] $$
 
  and ⁠
-        ξ
-
-        ∈
-          T
-            x
-        M
 
 $$ \xi \in T_{x}M $$
 
 ⁠, where ⁠
-        x
-
-        =
-
-        γ
-
-        (
-
-        a
-
-        )
 
 $$ x=\gamma (a) $$
 
 ⁠, then a vector field 
-        X
 
 $$ X $$
 
  along 
-        γ
 
 $$ \gamma $$
 
  (and in particular, the value of this vector field at ⁠
-        y
-
-        =
-
-        γ
-
-        (
-
-        b
-
-        )
 
 $$ y=\gamma (b) $$
 
 ⁠) is called the parallel transport of 
-        ξ
 
 $$ \xi $$
 
  along 
-        γ
 
 $$ \gamma $$
 
  if
 
-          ∇
-              γ
-
-              ′
-            (
-
-            t
-
-            )
-        X
-
-        =
-
-        0
-
-        ,
-           for all 
-        t
-
-        ∈
-
-        [
-
-        a
-
-        ,
-
-        b
-
-        ]
-
 $$ \nabla _{\gamma '(t)}X=0,{\text{ for all }}t\in [a,b] $$
-
-          X
-            γ
-
-            (
-
-            a
-
-            )
-        =
-
-        ξ
-
-        .
 
 $$ X_{\gamma (a)}=\xi . $$
 
 Formally, the first condition means that 
-        X
 
 $$ X $$
 
  is parallel with respect to the pullback connection on the pullback bundle ⁠
-          γ
-            ∗
-        T
-
-        M
 
 $$ \gamma ^{*}TM $$
 
 ⁠. However, in a local trivialization it is a first-order system of linear ordinary differential equations, which has a unique solution for any initial condition given by the second condition (for instance, by the Picard–Lindelöf theorem).
 
 The parallel transport of 
-        X
-
-        ∈
-          T
-            γ
-
-            (
-
-            s
-
-            )
-        M
 
 $$ X\in T_{\gamma (s)}M $$
 
  to the tangent space 
-          T
-            γ
-
-            (
-
-            t
-
-            )
-        M
 
 $$ T_{\gamma (t)}M $$
 
  along the curve 
-        γ
-
-        :
-
-        [
-
-        0
-
-        ,
-
-        1
-
-        ]
-
-        →
-
-        M
 
 $$ \gamma :[0,1]\to M $$
 
  is denoted by ⁠
-        Γ
-
-        (
-
-        γ
-          )
-            s
-            t
-        X
 
 $$ \Gamma (\gamma )_{s}^{t}X $$
 
 ⁠. The map
 
-        Γ
-
-        (
-
-        γ
-          )
-            s
-            t
-        :
-          T
-            γ
-
-            (
-
-            s
-
-            )
-        M
-
-        →
-          T
-            γ
-
-            (
-
-            t
-
-            )
-        M
-
 $$ \Gamma (\gamma )_{s}^{t}:T_{\gamma (s)}M\to T_{\gamma (t)}M $$
 
 is linear. In fact, it is an isomorphism. Let 
-            γ
-
-            ¯
-        :
-
-        [
-
-        0
-
-        ,
-
-        1
-
-        ]
-
-        →
-
-        M
 
 $$ {\overline {\gamma }}:[0,1]\to M $$
 
  be the inverse curve 
-            γ
-
-            ¯
-        (
-
-        t
-
-        )
-
-        =
-
-        γ
-
-        (
-
-        1
-
-        −
-
-        t
-
-        )
-
-        .
 
 $$ {\overline {\gamma }}(t)=\gamma (1-t). $$
 
  Then 
-        Γ
-
-        (
-            γ
-
-            ¯
-          )
-            t
-            s
 
 $$ \Gamma ({\overline {\gamma }})_{t}^{s} $$
 
  is the inverse of ⁠
-        Γ
-
-        (
-
-        γ
-          )
-            s
-            t
 
 $$ \Gamma (\gamma )_{s}^{t} $$
 
@@ -835,54 +363,14 @@ A linear isomorphism is determined by its action on an ordered basis or frame. H
 ### Examples
 
 The images below show parallel transport induced by the Levi-Civita connection associated to two different Riemannian metrics on the punctured plane ⁠
-            R
-            2
-        ∖
-
-        {
-
-        0
-
-        ,
-
-        0
-
-        }
 
 $$ \mathbf {R} ^{2}\smallsetminus \{0,0\} $$
 
 ⁠. The curve the parallel transport is done along is the unit circle. In polar coordinates, the metric on the left is the standard Euclidean metric ⁠
-        d
-          x
-            2
-        +
-
-        d
-          y
-            2
-        =
-
-        d
-          r
-            2
-        +
-          r
-            2
-        d
-          θ
-            2
 
 $$ dx^{2}+dy^{2}=dr^{2}+r^{2}\,d\theta ^{2} $$
 
 ⁠, while the metric on the right is ⁠
-        d
-          r
-            2
-        +
-
-        d
-          θ
-            2
 
 $$ dr^{2}+d\theta ^{2} $$
 
@@ -893,385 +381,92 @@ Warning: This is parallel transport on the punctured plane along the unit circle
 ### Metric connection
 
 A metric connection is any connection whose parallel transport mappings preserve the Riemannian metric, that is, for any curve 
-        γ
 
 $$ \gamma $$
 
  and any two vectors ⁠
-        X
-
-        ,
-
-        Y
-
-        ∈
-          T
-            γ
-
-            (
-
-            s
-
-            )
-        M
 
 $$ X,Y\in T_{\gamma (s)}M $$
 
 ⁠,
 
-        ⟨
-
-        Γ
-
-        (
-
-        γ
-          )
-            s
-            t
-        X
-
-        ,
-
-        Γ
-
-        (
-
-        γ
-          )
-            s
-            t
-        Y
-          ⟩
-            γ
-
-            (
-
-            t
-
-            )
-        =
-
-        ⟨
-
-        X
-
-        ,
-
-        Y
-          ⟩
-            γ
-
-            (
-
-            s
-
-            )
-        .
-
 $$ \langle \Gamma (\gamma )_{s}^{t}X,\Gamma (\gamma )_{s}^{t}Y\rangle _{\gamma (t)}=\langle X,Y\rangle _{\gamma (s)}. $$
 
 Taking the derivative at t = 0, the operator ∇ satisfies a product rule with respect to the metric, namely
-
-        Z
-
-        ⟨
-
-        X
-
-        ,
-
-        Y
-
-        ⟩
-
-        =
-
-        ⟨
-          ∇
-            Z
-        X
-
-        ,
-
-        Y
-
-        ⟩
-
-        +
-
-        ⟨
-
-        X
-
-        ,
-          ∇
-            Z
-        Y
-
-        ⟩
-
-        .
 
 $$ Z\langle X,Y\rangle =\langle \nabla _{Z}X,Y\rangle +\langle X,\nabla _{Z}Y\rangle . $$
 
 #### Relationship to geodesics
 
 An affine connection distinguishes a class of curves called (affine) geodesics. A curve 
-        γ
-
-        :
-
-        I
-
-        →
-
-        M
 
 $$ \gamma :I\rightarrow M $$
 
  is an affine geodesic if 
-              γ
-
-              ˙
 
 $$ {\dot {\gamma }} $$
 
  is parallel transported along ⁠
-        γ
 
 $$ \gamma $$
 
 ⁠, that is
 
-        Γ
-
-        (
-
-        γ
-          )
-            s
-            t
-              γ
-
-              ˙
-        (
-
-        s
-
-        )
-
-        =
-              γ
-
-              ˙
-        (
-
-        t
-
-        )
-
-        .
-
 $$ \Gamma (\gamma )_{s}^{t}{\dot {\gamma }}(s)={\dot {\gamma }}(t). $$
 
 Taking the derivative with respect to time, this takes the more familiar form
-
-          ∇
-                  γ
-
-                  ˙
-            (
-
-            t
-
-            )
-              γ
-
-              ˙
-        =
 
         0.
 
 $$ \nabla _{{\dot {\gamma }}(t)}{\dot {\gamma }}=0. $$
 
 If 
-        ∇
 
 $$ \nabla $$
 
  is a metric connection, then the affine geodesics are the usual geodesics of Riemannian geometry and are the locally distance minimizing curves. More precisely, first note that if 
-        γ
-
-        :
-
-        I
-
-        →
-
-        M
 
 $$ \gamma :I\rightarrow M $$
 
 , where 
-        I
 
 $$ I $$
 
  is an open interval, is a geodesic, then the norm of 
-              γ
-
-              ˙
 
 $$ {\dot {\gamma }} $$
 
  is constant on ⁠
-        I
 
 $$ I $$
 
 ⁠. Indeed,
-
-            d
-              d
-
-              t
-        ⟨
-              γ
-
-              ˙
-        (
-
-        t
-
-        )
-
-        ,
-              γ
-
-              ˙
-        (
-
-        t
-
-        )
-
-        ⟩
-
-        =
-
-        2
-
-        ⟨
-          ∇
-                  γ
-
-                  ˙
-            (
-
-            t
-
-            )
-              γ
-
-              ˙
-        (
-
-        t
-
-        )
-
-        ,
-              γ
-
-              ˙
-        (
-
-        t
-
-        )
-
-        ⟩
-
-        =
 
         0.
 
 $$ {\frac {d}{dt}}\langle {\dot {\gamma }}(t),{\dot {\gamma }}(t)\rangle =2\langle \nabla _{{\dot {\gamma }}(t)}{\dot {\gamma }}(t),{\dot {\gamma }}(t)\rangle =0. $$
 
 It follows from an application of Gauss's lemma that if 
-        A
 
 $$ A $$
 
  is the norm of 
-              γ
-
-              ˙
-        (
-
-        t
-
-        )
 
 $$ {\dot {\gamma }}(t) $$
 
  then the distance, induced by the metric, between two close enough points on the curve ⁠
-        γ
 
 $$ \gamma $$
 
 ⁠, say 
-        γ
-
-        (
-          t
-            1
-        )
 
 $$ \gamma (t_{1}) $$
 
  and ⁠
-        γ
-
-        (
-          t
-            2
-        )
 
 $$ \gamma (t_{2}) $$
 
 ⁠, is given by
-
-            dist
-            (
-        γ
-
-        (
-          t
-            1
-        )
-
-        ,
-
-        γ
-
-        (
-          t
-            2
-        )
-            )
-        =
-
-        A
-          |
-          t
-            1
-        −
-          t
-            2
-          |
-        .
 
 $$ {\mbox{dist}}{\big (}\gamma (t_{1}),\gamma (t_{2}){\big )}=A|t_{1}-t_{2}|. $$
 
@@ -1280,101 +475,52 @@ The formula above might not be true for points which are not close enough since 
 ## Parallel transport on a vector bundle
 
 Parallel transport of tangent vectors is a special case of a more general construction involving an arbitrary vector bundle 
-        E
 
 $$ E $$
 
 . Specifically, parallel transport of tangent vectors is the case where 
-        E
 
 $$ E $$
 
  is the tangent bundle 
-        T
-
-        M
 
 $$ TM $$
 
 .
 
 Let M be a smooth manifold. Let E → M be a vector bundle with connection ∇ and γ: I → M a curve parameterized by an open interval I. A section 
-        X
 
 $$ X $$
 
  of 
-        E
 
 $$ E $$
 
  along γ is called parallel if
 
-          ∇
-                  γ
-
-                  ˙
-            (
-
-            t
-
-            )
-        X
-
-        =
-
-        0
-           for 
-        t
-
-        ∈
-
-        I
-
-        .
-
 $$ \nabla _{{\dot {\gamma }}(t)}X=0{\text{ for }}t\in I. $$
 
 In the case when 
-        E
 
 $$ E $$
 
  is the tangent bundle whereby 
-        X
 
 $$ X $$
 
  is a tangent vector field, this expression means that, for every 
-        t
 
 $$ t $$
 
  in the interval, tangent vectors in 
-        X
 
 $$ X $$
 
  are "constant" (the derivative vanishes) when an infinitesimal displacement from 
-        γ
-
-        (
-
-        t
-
-        )
 
 $$ \gamma (t) $$
 
  in the direction of the tangent vector 
-              γ
-
-              ˙
-        (
-
-        t
-
-        )
 
 $$ {\dot {\gamma }}(t) $$
 
@@ -1384,63 +530,13 @@ Suppose we are given an element e0 ∈ EP at P = γ(0) ∈ M, rather than a sect
 
 More precisely, X is the unique part of E along γ such that 
 
-          ∇
-                γ
-
-                ˙
-        X
-
-        =
-
-        0
-
 $$ \nabla _{\dot {\gamma }}X=0 $$
-
-          X
-            γ
-
-            (
-
-            0
-
-            )
-        =
-          e
-            0
-        .
 
 $$ X_{\gamma (0)}=e_{0}. $$
 
 Note that in any given coordinate patch, (1) defines an ordinary differential equation, with the initial condition given by (2). Thus the Picard–Lindelöf theorem guarantees the existence and uniqueness of the solution.
 
 Thus the connection ∇ defines a way of moving elements of the fibers along a curve, and this provides linear isomorphisms between the fibers at points along the curve:
-
-        Γ
-
-        (
-
-        γ
-          )
-            s
-            t
-        :
-          E
-            γ
-
-            (
-
-            s
-
-            )
-        →
-          E
-            γ
-
-            (
-
-            t
-
-            )
 
 $$ \Gamma (\gamma )_{s}^{t}:E_{\gamma (s)}\rightarrow E_{\gamma (t)} $$
 
@@ -1451,13 +547,6 @@ In particular, parallel transport around a closed curve starting at a point x de
 ### Recovering the connection from the parallel transport
 
 Given a covariant derivative ∇, the parallel transport along a curve γ is obtained by integrating the condition ⁠
-              ∇
-                    γ
-
-                    ˙
-            =
-
-            0
 
 $$ \textstyle {\nabla _{\dot {\gamma }}=0} $$
 
@@ -1465,84 +554,13 @@ $$ \textstyle {\nabla _{\dot {\gamma }}=0} $$
 
 Consider an assignment to each curve γ in the manifold a collection of mappings
 
-        Γ
-
-        (
-
-        γ
-          )
-            s
-            t
-        :
-          E
-            γ
-
-            (
-
-            s
-
-            )
-        →
-          E
-            γ
-
-            (
-
-            t
-
-            )
-
 $$ \Gamma (\gamma )_{s}^{t}:E_{\gamma (s)}\rightarrow E_{\gamma (t)} $$
 
 such that
 
-        Γ
-
-        (
-
-        γ
-          )
-            s
-            s
-        =
-
-        I
-
-        d
-
 $$ \Gamma (\gamma )_{s}^{s}=Id $$
 
 , the identity transformation of Eγ(s).
-
-        Γ
-
-        (
-
-        γ
-          )
-            u
-            t
-        ∘
-
-        Γ
-
-        (
-
-        γ
-          )
-            s
-            u
-        =
-
-        Γ
-
-        (
-
-        γ
-          )
-            s
-            t
-        .
 
 $$ \Gamma (\gamma )_{u}^{t}\circ \Gamma (\gamma )_{s}^{u}=\Gamma (\gamma )_{s}^{t}. $$
 
@@ -1552,72 +570,6 @@ The notion of smoothness in condition 3. is somewhat difficult to pin down (see 
 
 Nevertheless, given such a rule for parallel transport, it is possible to recover the associated infinitesimal connection in E as follows. Let γ be a differentiable curve in M with initial point γ(0) and initial tangent vector X = γ′(0). If V is a section of E over γ, then let
 
-          ∇
-            X
-        V
-
-        =
-          lim
-            h
-
-            →
-
-            0
-              Γ
-
-              (
-
-              γ
-                )
-                  h
-                  0
-                V
-                  γ
-
-                  (
-
-                  h
-
-                  )
-              −
-                V
-                  γ
-
-                  (
-
-                  0
-
-                  )
-            h
-        =
-                  d
-                    d
-
-                    t
-              Γ
-
-              (
-
-              γ
-                )
-                  t
-                  0
-                V
-                  γ
-
-                  (
-
-                  t
-
-                  )
-            |
-            t
-
-            =
-
-            0
-        .
-
 $$ \nabla _{X}V=\lim _{h\to 0}{\frac {\Gamma (\gamma )_{h}^{0}V_{\gamma (h)}-V_{\gamma (0)}}{h}}=\left.{\frac {d}{dt}}\Gamma (\gamma )_{t}^{0}V_{\gamma (t)}\right|_{t=0}. $$
 
 This defines the associated infinitesimal connection ∇ on E. One recovers the same parallel transport Γ from this infinitesimal connection.
@@ -1626,57 +578,9 @@ This defines the associated infinitesimal connection ∇ on E. One recovers the 
 
 The parallel transport can be defined in greater generality for other types of connections, not just those defined in a vector bundle. One generalization is for principal connections (Kobayashi & Nomizu 1996, Volume 1, Chapter II). Let P → M be a principal bundle over a manifold M with structure Lie group G and a principal connection ω. As in the case of vector bundles, a principal connection ω on P defines, for each curve γ in M, a mapping
 
-        Γ
-
-        (
-
-        γ
-          )
-            s
-            t
-        :
-          P
-            γ
-
-            (
-
-            s
-
-            )
-        →
-          P
-            γ
-
-            (
-
-            t
-
-            )
-
 $$ \Gamma (\gamma )_{s}^{t}:P_{\gamma (s)}\rightarrow P_{\gamma (t)} $$
 
 from the fibre over γ(s) to that over γ(t), which is an isomorphism of homogeneous spaces: i.e. 
-          Γ
-            γ
-
-            (
-
-            s
-
-            )
-        g
-
-        =
-
-        g
-          Γ
-            γ
-
-            (
-
-            s
-
-            )
 
 $$ \Gamma _{\gamma (s)}g=g\Gamma _{\gamma (s)} $$
 

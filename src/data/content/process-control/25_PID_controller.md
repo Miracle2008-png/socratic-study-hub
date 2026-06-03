@@ -5,83 +5,22 @@ A proportional–integral–derivative (PID) controller, or three-term controlle
 ## Fundamental operation
 
 The most distinguishing feature of the PID controller is the ability to use the three control terms of proportional, integral and derivative influence on the controller output to apply accurate and optimal control. The block diagram on the right shows the principles of how these terms are generated and applied. It shows a PID controller, which continuously calculates an error value 
-        e
-
-        (
-
-        t
-
-        )
 
 $$ e(t) $$
 
  as the difference between a desired setpoint 
-          SP
-        =
-
-        r
-
-        (
-
-        t
-
-        )
 
 $$ {\text{SP}}=r(t) $$
 
  and a measured process variable 
-          PV
-        =
-
-        y
-
-        (
-
-        t
-
-        )
 
 $$ {\text{PV}}=y(t) $$
 
 : 
-        e
-
-        (
-
-        t
-
-        )
-
-        =
-
-        r
-
-        (
-
-        t
-
-        )
-
-        −
-
-        y
-
-        (
-
-        t
-
-        )
 
 $$ e(t)=r(t)-y(t) $$
 
 , and applies a correction based on proportional, integral, and derivative terms. The controller attempts to minimize the error over time by adjustment of a control variable 
-        u
-
-        (
-
-        t
-
-        )
 
 $$ u(t) $$
 
@@ -92,13 +31,6 @@ The PID controller directly generates a continuous control signal based on error
 In this model:
 
 Term P is proportional to the current value of the SP−PV error 
-        e
-
-        (
-
-        t
-
-        )
 
 $$ e(t) $$
 
@@ -116,73 +48,17 @@ Control action – The mathematical model and practical loop above both use a di
 
 The overall control function is
 
-        u
-
-        (
-
-        t
-
-        )
-
-        =
-          K
-            p
-        e
-
-        (
-
-        t
-
-        )
-
-        +
-          K
-            i
-          ∫
-            0
-            t
-        e
-
-        (
-
-        τ
-
-        )
-          d
-        τ
-
-        +
-          K
-            d
-                d
-              e
-
-              (
-
-              t
-
-              )
-                d
-              t
-        ,
-
 $$ u(t)=K_{\text{p}}e(t)+K_{\text{i}}\int _{0}^{t}e(\tau )\,\mathrm {d} \tau +K_{\text{d}}{\frac {\mathrm {d} e(t)}{\mathrm {d} t}}, $$
 
 where 
-          K
-            p
 
 $$ K_{\text{p}} $$
 
 , 
-          K
-            i
 
 $$ K_{\text{i}} $$
 
 , and 
-          K
-            d
 
 $$ K_{\text{d}} $$
 
@@ -191,140 +67,46 @@ $$ K_{\text{d}} $$
 ### Standard form
 
 In the standard form of the equation (see later in article), 
-          K
-            i
 
 $$ K_{\text{i}} $$
 
  and 
-          K
-            d
 
 $$ K_{\text{d}} $$
 
  are respectively replaced by 
-          K
-            p
-          /
-          T
-            i
 
 $$ K_{\text{p}}/T_{\text{i}} $$
 
  and 
-          K
-            p
-          T
-            d
 
 $$ K_{\text{p}}T_{\text{d}} $$
 
 ; the advantage of this being that 
-          T
-            i
 
 $$ T_{\text{i}} $$
 
  and 
-          T
-            d
 
 $$ T_{\text{d}} $$
 
  have some understandable physical meaning, as they represent an integration time and a derivative time respectively. 
-          K
-            p
-          T
-            d
 
 $$ K_{\text{p}}T_{\text{d}} $$
 
  is the time constant with which the controller will attempt to approach the set point.  
-          K
-            p
-          /
-          T
-            i
 
 $$ K_{\text{p}}/T_{\text{i}} $$
 
  determines how long the controller will tolerate the output being consistently above or below the set point.
 
-        u
-
-        (
-
-        t
-
-        )
-
-        =
-          K
-            p
-          (
-            e
-
-            (
-
-            t
-
-            )
-
-            +
-                1
-                  T
-                    i
-              ∫
-                0
-                t
-            e
-
-            (
-
-            τ
-
-            )
-              d
-            τ
-
-            +
-              T
-                d
-                    d
-                  e
-
-                  (
-
-                  t
-
-                  )
-                    d
-                  t
-          )
-
 $$ u(t)=K_{\text{p}}\left(e(t)+{\frac {1}{T_{\text{i}}}}\int _{0}^{t}e(\tau )\,\mathrm {d} \tau +T_{\text{d}}{\frac {\mathrm {d} e(t)}{\mathrm {d} t}}\right) $$
 
 where
 
-          T
-            i
-        =
-              K
-                p
-              K
-                i
-
 $$ T_{\text{i}}={K_{\text{p}} \over K_{\text{i}}} $$
 
  is the integration time constant, and
-
-          T
-            d
-        =
-              K
-                d
-              K
-                p
 
 $$ T_{\text{d}}={K_{\text{d}} \over K_{\text{p}}} $$
 
@@ -381,144 +163,38 @@ If a controller starts from a stable state with zero error (PV = SP), then furth
 This section describes the parallel or non-interacting form of the PID controller. For other forms please see § Alternative nomenclature and forms.
 
 The PID control scheme is named after its three correcting terms, whose sum constitutes the manipulated variable (MV). The proportional, integral, and derivative terms are summed to calculate the output of the PID controller. Defining 
-        u
-
-        (
-
-        t
-
-        )
 
 $$ u(t) $$
 
  as the controller output, the final form of the PID algorithm is
 
-        u
-
-        (
-
-        t
-
-        )
-
-        =
-          M
-
-          V
-        (
-
-        t
-
-        )
-
-        =
-          K
-            p
-        e
-
-        (
-
-        t
-
-        )
-
-        +
-          K
-            i
-          ∫
-            0
-            t
-        e
-
-        (
-
-        τ
-
-        )
-        d
-
-        τ
-
-        +
-          K
-            d
-              d
-
-              e
-
-              (
-
-              t
-
-              )
-              d
-
-              t
-        ,
-
 $$ u(t)=\mathrm {MV} (t)=K_{\text{p}}e(t)+K_{\text{i}}\int _{0}^{t}e(\tau )\,d\tau +K_{\text{d}}{\frac {de(t)}{dt}}, $$
 
 where
-
-          K
-            p
 
 $$ K_{\text{p}} $$
 
  is the proportional gain, a tuning parameter,
 
-          K
-            i
-
 $$ K_{\text{i}} $$
 
  is the integral gain, a tuning parameter,
-
-          K
-            d
 
 $$ K_{\text{d}} $$
 
  is the derivative gain, a tuning parameter,
 
-        e
-
-        (
-
-        t
-
-        )
-
-        =
-          S
-
-          P
-        −
-          P
-
-          V
-        (
-
-        t
-
-        )
-
 $$ e(t)=\mathrm {SP} -\mathrm {PV} (t) $$
 
  is the error (SP is the setpoint, and PV(t) is the process variable),
-
-        t
 
 $$ t $$
 
  is the time or instantaneous time (the present),
 
-        τ
-
 $$ \tau $$
 
  is the variable of integration (takes on values from time 0 to the present 
-        t
 
 $$ t $$
 
@@ -526,49 +202,11 @@ $$ t $$
 
 Equivalently, the transfer function in the Laplace domain of the PID controller is
 
-        L
-
-        (
-
-        s
-
-        )
-
-        =
-          K
-            p
-        +
-          K
-            i
-          /
-        s
-
-        +
-          K
-            d
-        s
-
 $$ L(s)=K_{\text{p}}+K_{\text{i}}/s+K_{\text{d}}s $$
-
-        =
-                K
-                  d
-                s
-                  2
-              +
-                K
-                  p
-              s
-
-              +
-                K
-                  i
-            s
 
 $$ ={K_{\text{d}}s^{2}+K_{\text{p}}s+K_{\text{i}} \over s} $$
 
 where 
-        s
 
 $$ s $$
 
@@ -579,21 +217,6 @@ $$ s $$
 The proportional term produces an output value that is proportional to the current error value. The proportional response can be adjusted by multiplying the error by a constant Kp, called the proportional gain constant.
 
 The proportional term is given by
-
-          P
-            out
-        =
-          K
-            p
-        e
-
-        (
-
-        t
-
-        )
-
-        .
 
 $$ P_{\text{out}}=K_{\text{p}}e(t). $$
 
@@ -609,27 +232,6 @@ The contribution from the integral term is proportional to both the magnitude of
 
 The integral term is given by
 
-          I
-            out
-        =
-          K
-            i
-          ∫
-            0
-            t
-        e
-
-        (
-
-        τ
-
-        )
-        d
-
-        τ
-
-        .
-
 $$ I_{\text{out}}=K_{\text{i}}\int _{0}^{t}e(\tau )\,d\tau . $$
 
 The integral term accelerates the movement of the process towards setpoint and eliminates the residual steady-state error that occurs with a pure proportional controller. However, since the integral term responds to accumulated errors from the past, it can cause the present value to overshoot the setpoint value (see the section on loop tuning).
@@ -639,25 +241,6 @@ The integral term accelerates the movement of the process towards setpoint and e
 The derivative of the process error is calculated by determining the slope of the error over time and multiplying this rate of change by the derivative gain Kd. The magnitude of the contribution of the derivative term to the overall control action is termed the derivative gain, Kd.
 
 The derivative term is given by
-
-          D
-            out
-        =
-          K
-            d
-              d
-
-              e
-
-              (
-
-              t
-
-              )
-              d
-
-              t
-        .
 
 $$ D_{\text{out}}=K_{\text{d}}{\frac {de(t)}{dt}}. $$
 
@@ -683,149 +266,29 @@ Mathematically, the origins of instability can be seen in the Laplace domain.
 
 The closed-loop transfer function is
 
-        H
-
-        (
-
-        s
-
-        )
-
-        =
-              K
-
-              (
-
-              s
-
-              )
-
-              G
-
-              (
-
-              s
-
-              )
-              1
-
-              +
-
-              K
-
-              (
-
-              s
-
-              )
-
-              G
-
-              (
-
-              s
-
-              )
-        ,
-
 $$ H(s)={\frac {K(s)G(s)}{1+K(s)G(s)}}, $$
 
 where 
-        K
-
-        (
-
-        s
-
-        )
 
 $$ K(s) $$
 
  is the PID transfer function, and 
-        G
-
-        (
-
-        s
-
-        )
 
 $$ G(s) $$
 
  is the plant transfer function. A system is unstable where the closed-loop transfer function diverges for some 
-        s
 
 $$ s $$
 
 . This happens in situations where 
-        K
-
-        (
-
-        s
-
-        )
-
-        G
-
-        (
-
-        s
-
-        )
-
-        =
-
-        −
-
-        1
 
 $$ K(s)G(s)=-1 $$
 
 . In other words, this happens when 
-          |
-        K
-
-        (
-
-        s
-
-        )
-
-        G
-
-        (
-
-        s
-
-        )
-          |
-        =
-
-        1
 
 $$ |K(s)G(s)|=1 $$
 
  with a 180° phase shift. Stability is guaranteed when 
-        K
-
-        (
-
-        s
-
-        )
-
-        G
-
-        (
-
-        s
-
-        )
-
-        <
-
-        1
 
 $$ K(s)G(s)<1 $$
 
@@ -840,56 +303,38 @@ Two basic requirements are regulation (disturbance rejection – staying at a gi
 ### Manual tuning
 
 If the system must remain online, one tuning method is to first set 
-          K
-            i
 
 $$ K_{i} $$
 
  and 
-          K
-            d
 
 $$ K_{d} $$
 
  values to zero. Increase the 
-          K
-            p
 
 $$ K_{p} $$
 
  until the output of the loop oscillates; then set 
-          K
-            p
 
 $$ K_{p} $$
 
  to approximately half that value for a "quarter amplitude decay"-type response. Then increase 
-          K
-            i
 
 $$ K_{i} $$
 
  until any offset is corrected in sufficient time for the process, but not until too great a value causes instability. Finally, increase 
-          K
-            d
 
 $$ K_{d} $$
 
 , if required, until the loop is acceptably quick to reach its reference after a load disturbance. Too much 
-          K
-            p
 
 $$ K_{p} $$
 
  causes excessive response and overshoot. A fast PID loop tuning usually overshoots slightly to reach the setpoint more quickly; however, some systems cannot accept overshoot, in which case an overdamped closed-loop system is required, which in turn requires a 
-          K
-            p
 
 $$ K_{p} $$
 
  setting significantly less than half that of the 
-          K
-            p
 
 $$ K_{p} $$
 
@@ -898,32 +343,22 @@ $$ K_{p} $$
 ### Ziegler–Nichols method
 
 Another heuristic tuning method is known as the Ziegler–Nichols method, introduced by John G. Ziegler and Nathaniel B. Nichols in the 1940s. As in the method above, the 
-          K
-            i
 
 $$ K_{i} $$
 
  and 
-          K
-            d
 
 $$ K_{d} $$
 
  gains are first set to zero. The proportional gain is increased until it reaches the ultimate gain 
-          K
-            u
 
 $$ K_{u} $$
 
  at which the output of the loop starts to oscillate constantly. 
-          K
-            u
 
 $$ K_{u} $$
 
  and the oscillation period 
-          T
-            u
 
 $$ T_{u} $$
 
@@ -932,20 +367,14 @@ $$ T_{u} $$
 The oscillation frequency is often measured instead, and the reciprocals of each multiplication yields the same result.
 
 These gains apply to the ideal, parallel form of the PID controller. When applied to the standard PID form, only the integral and derivative gains 
-          K
-            i
 
 $$ K_{i} $$
 
  and 
-          K
-            d
 
 $$ K_{d} $$
 
  are dependent on the oscillation period 
-          T
-            u
 
 $$ T_{u} $$
 
@@ -954,9 +383,6 @@ $$ T_{u} $$
 ### Cohen–Coon parameters
 
 This method was developed in 1953 and is based on a first-order + time delay model. Similar to the Ziegler–Nichols method, a set of tuning parameters were developed to yield a closed-loop response with a decay ratio of 
-              1
-
-              4
 
 $$ {\tfrac {1}{4}} $$
 
@@ -969,25 +395,10 @@ Published in 1984 by Karl Johan Åström and Tore Hägglund, the relay method te
 As long as the process variable is below the setpoint, the control output is set to the higher value.  As soon as it rises above the setpoint, the control output is set to the lower value.  Ideally, the output waveform is nearly square, spending equal time above and below the setpoint.  The period and amplitude of the resultant oscillations are measured and used to compute the ultimate gain and period, which are then fed into the Ziegler–Nichols method.
 
 Specifically, the ultimate period 
-          T
-            u
 
 $$ T_{u} $$
 
  is assumed to be equal to the observed period, and the ultimate gain is computed as 
-          K
-            u
-        =
-
-        4
-
-        b
-          /
-        π
-
-        a
-
-        ,
 
 $$ K_{u}=4b/\pi a, $$
 
@@ -999,74 +410,9 @@ There are numerous variants on the relay method.
 
 The transfer function for a first-order process with dead time is
 
-        y
-
-        (
-
-        s
-
-        )
-
-        =
-                k
-                  p
-                e
-                  −
-
-                  θ
-
-                  s
-                τ
-                  p
-              s
-
-              +
-
-              1
-        u
-
-        (
-
-        s
-
-        )
-
-        ,
-
 $$ y(s)={\frac {k_{\text{p}}e^{-\theta s}}{\tau _{\text{p}}s+1}}u(s), $$
 
 where kp is the process gain, τp is the time constant, θ is the dead time, and u(s) is a step change input. Converting this transfer function to the time domain results in
-
-        y
-
-        (
-
-        t
-
-        )
-
-        =
-          k
-            p
-        Δ
-
-        u
-          (
-            1
-
-            −
-              e
-                    −
-
-                    t
-
-                    −
-
-                    θ
-                    τ
-                      p
-          )
-        ,
 
 $$ y(t)=k_{\text{p}}\Delta u\left(1-e^{\frac {-t-\theta }{\tau _{\text{p}}}}\right), $$
 
@@ -1132,96 +478,31 @@ A PI controller (proportional–integral controller) is a special case of the PI
 
 The controller output is given by
 
-          K
-            P
-        Δ
-
-        +
-          K
-            I
-        ∫
-
-        Δ
-        d
-
-        t
-
 $$ K_{P}\Delta +K_{I}\int \Delta \,dt $$
 
 where 
-        Δ
 
 $$ \Delta $$
 
  is the error or deviation of actual measured value (PV) from the setpoint (SP).
 
-        Δ
-
-        =
-
-        S
-
-        P
-
-        −
-
-        P
-
-        V
-
-        .
-
 $$ \Delta =SP-PV. $$
 
 A PI controller can be modelled easily in software such as Simulink or Xcos using a "flow chart" box involving Laplace operators:
-
-        C
-
-        =
-              G
-
-              (
-
-              1
-
-              +
-
-              τ
-
-              s
-
-              )
-              τ
-
-              s
 
 $$ C={\frac {G(1+\tau s)}{\tau s}} $$
 
 where
 
-        G
-
-        =
-          K
-            P
-
 $$ G=K_{P} $$
 
  = proportional gain
-
-            G
-
-            τ
-        =
-          K
-            I
 
 $$ {\frac {G}{\tau }}=K_{I} $$
 
  = integral gain
 
 Setting a value for 
-        G
 
 $$ G $$
 
@@ -1291,215 +572,33 @@ integral := 0
 
 loop:
 
-   error := setpoint − measured_value
+error := setpoint − measured_value
 
-   proportional := error;
+proportional := error;
 
-   integral := integral + error × dt
+integral := integral + error × dt
 
-   derivative := (error - previous_error) / dt
+derivative := (error - previous_error) / dt
 
-   output := Kp × proportional + Ki × integral + Kd × derivative
+output := Kp × proportional + Ki × integral + Kd × derivative
 
-   previous_error := error
-
-   wait(dt)
-
-   goto loop
+previous_error := error
 
 Below a pseudocode illustrates how to implement a PID considering the PID as an IIR filter:
 
 The Z-transform of a PID can be written as (
-          Δ
-            t
 
 $$ \Delta _{t} $$
 
  is the sampling time):
 
-        C
-
-        (
-
-        z
-
-        )
-
-        =
-          K
-            p
-        +
-          K
-            i
-          Δ
-            t
-            z
-              z
-
-              −
-
-              1
-        +
-              K
-                d
-              Δ
-                t
-              z
-
-              −
-
-              1
-            z
-
 $$ C(z)=K_{p}+K_{i}\Delta _{t}{\frac {z}{z-1}}+{\frac {K_{d}}{\Delta _{t}}}{\frac {z-1}{z}} $$
 
 and expressed in a IIR form (in agreement with the discrete implementation shown above):
 
-        C
-
-        (
-
-        z
-
-        )
-
-        =
-                (
-                    K
-                      p
-                  +
-                    K
-                      i
-                    Δ
-                      t
-                  +
-                          K
-                            d
-                          Δ
-                            t
-                )
-              +
-                (
-                  −
-                    K
-                      p
-                  −
-                          2
-                            K
-                              d
-                          Δ
-                            t
-                )
-                z
-                  −
-
-                  1
-              +
-                      K
-                        d
-                      Δ
-                        t
-                z
-                  −
-
-                  2
-              1
-
-              −
-                z
-                  −
-
-                  1
-
 $$ C(z)={\frac {\left(K_{p}+K_{i}\Delta _{t}+{\dfrac {K_{d}}{\Delta _{t}}}\right)+\left(-K_{p}-{\dfrac {2K_{d}}{\Delta _{t}}}\right)z^{-1}+{\dfrac {K_{d}}{\Delta _{t}}}z^{-2}}{1-z^{-1}}} $$
 
 We can then deduce the recursive iteration often found in FPGA implementation
-
-        u
-
-        [
-
-        n
-
-        ]
-
-        =
-
-        u
-
-        [
-
-        n
-
-        −
-
-        1
-
-        ]
-
-        +
-          (
-              K
-                p
-            +
-              K
-                i
-              Δ
-                t
-            +
-                    K
-                      d
-                    Δ
-                      t
-          )
-        ϵ
-
-        [
-
-        n
-
-        ]
-
-        +
-          (
-            −
-              K
-                p
-            −
-                    2
-                      K
-                        d
-                    Δ
-                      t
-          )
-        ϵ
-
-        [
-
-        n
-
-        −
-
-        1
-
-        ]
-
-        +
-                K
-                  d
-                Δ
-                  t
-        ϵ
-
-        [
-
-        n
-
-        −
-
-        2
-
-        ]
 
 $$ u[n]=u[n-1]+\left(K_{p}+K_{i}\Delta _{t}+{\dfrac {K_{d}}{\Delta _{t}}}\right)\epsilon [n]+\left(-K_{p}-{\dfrac {2K_{d}}{\Delta _{t}}}\right)\epsilon [n-1]+{\dfrac {K_{d}}{\Delta _{t}}}\epsilon [n-2] $$
 
@@ -1519,33 +618,23 @@ output   := u0 // Usually the current value of the actuator
 
 loop:
 
-    error[2] := error[1]
+error[2] := error[1]
 
-    error[1] := error[0]
+error[1] := error[0]
 
-    error[0] := setpoint − measured_value
+error[0] := setpoint − measured_value
 
-    output   := output + A0 * error[0] + A1 * error[1] + A2 * error[2]
-
-    wait(dt)
-
-    goto loop
+output   := output + A0 * error[0] + A1 * error[1] + A2 * error[2]
 
 Here, Kp is a dimensionless number, Ki is expressed in s−1 and Kd is expressed in s. When doing a regulation where the actuator and the measured value are not in the same unit (e.g., temperature regulation using a motor controlling a valve), 
-          K
-            p
 
 $$ K_{p} $$
 
 , 
-          K
-            i
 
 $$ K_{i} $$
 
  and 
-          K
-            d
 
 $$ K_{d} $$
 
@@ -1556,31 +645,16 @@ In the real world, this is D-to-A converted and passed into the process under co
 Note that for real code, the use of wait(dt) might be inappropriate because it does not account for time taken by the algorithm itself during the loop, or more importantly, any pre-emption delaying the algorithm.
 
 A common issue when using 
-          K
-            d
 
 $$ K_{d} $$
 
  is the response to the derivative of a rising or falling edge of the setpoint, as shown below:
 
 A typical workaround is to filter the derivative action using a low pass filter of time constant 
-          τ
-            d
-          /
-        N
 
 $$ \tau _{d}/N $$
 
  where 
-        3
-
-        <=
-
-        N
-
-        <=
-
-        10
 
 $$ 3<=N<=10 $$
 
@@ -1622,28 +696,16 @@ fd1 := 0
 
 loop:
 
-    error[2] := error[1]
+error[2] := error[1]
 
-    error[1] := error[0]
+error[1] := error[0]
 
-    error[0] := setpoint − measured_value
+error[0] := setpoint − measured_value
 
-    // PI
+output := output + A0 * error[0] + A1 * error[1]
 
-    output := output + A0 * error[0] + A1 * error[1]
+d0 := A0d * error[0] + A1d * error[1] + A2d * error[2]
 
-    // Filtered D
+fd0 := ((alpha) / (alpha + 1)) * (d0 + d1) - ((alpha - 1) / (alpha + 1)) * fd1
 
-    d1 := d0
-
-    d0 := A0d * error[0] + A1d * error[1] + A2d * error[2]
-
-    fd1 := fd0
-
-    fd0 := ((alpha) / (alpha + 1)) * (d0 + d1) - ((alpha - 1) / (alpha + 1)) * fd1
-
-    output := output + fd0      
-
-    wait(dt)
-
-    goto loop
+output := output + fd0

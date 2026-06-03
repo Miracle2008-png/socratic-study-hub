@@ -10,99 +10,47 @@ A + S ⇌ AS → Products
 
 where A is the reactant and S is an adsorption site on the surface and the respective rate constants for the adsorption, desorption and reaction are k1, k−1 and k2, then the global reaction rate is:
 
-        r
-
-        =
-          k
-            2
-          C
-              A
-
-              S
-        =
-          k
-            2
-        θ
-          C
-              S
-
 $$ r=k_{2}C_{\mathrm {AS} }=k_{2}\theta C_{\mathrm {S} } $$
 
 where:
 
 r is the rate, mol·m−2·s−1
 
-          C
-            A
-
 $$ C_{A} $$
 
  is the concentration of adsorbate, mol·m−3
-
-          C
-              A
-
-              S
 
 $$ C_{\mathrm {AS} } $$
 
  is the surface concentration of occupied sites, mol·m−2
 
-          C
-              S
-
 $$ C_{\mathrm {S} } $$
 
  is the concentration of all sites (occupied or not), mol·m−2
 
-        θ
-
 $$ \theta $$
 
  is the surface coverage, (i.e. 
-          C
-            A
-
-            S
-          /
-          C
-            S
 
 $$ C_{AS}/C_{S} $$
 
 ) defined as the fraction of sites which are occupied, which is dimensionless
 
-        t
-
 $$ t $$
 
  is time, s
-
-          k
-            2
 
 $$ k_{2} $$
 
  is the rate constant for the surface reaction, s−1.
 
-          k
-            1
-
 $$ k_{1} $$
 
  is the rate constant for surface adsorption, m3·mol−1·s−1
 
-          k
-            −
-
-            1
-
 $$ k_{-1} $$
 
  is the rate constant for surface desorption, s−1
-
-          C
-              S
 
 $$ C_{\mathrm {S} } $$
 
@@ -110,101 +58,13 @@ $$ C_{\mathrm {S} } $$
 
 If we apply the steady state approximation to AS, then:
 
-              d
-                C
-                    A
-
-                    S
-              d
-
-              t
-        =
-
-        0
-
-        =
-          k
-            1
-          C
-              A
-          C
-              S
-        (
-
-        1
-
-        −
-
-        θ
-
-        )
-
-        −
-          k
-            2
-        θ
-          C
-              S
-        −
-          k
-            −
-
-            1
-        θ
-          C
-              S
-
 $$ {\frac {dC_{\mathrm {AS} }}{dt}}=0=k_{1}C_{\mathrm {A} }C_{\mathrm {S} }(1-\theta )-k_{2}\theta C_{\mathrm {S} }-k_{-1}\theta C_{\mathrm {S} } $$
 
  so 
-        θ
-
-        =
-                k
-                  1
-                C
-                    A
-                k
-                  1
-                C
-                    A
-              +
-                k
-                  −
-
-                  1
-              +
-                k
-                  2
 
 $$ \theta ={\frac {k_{1}C_{\mathrm {A} }}{k_{1}C_{\mathrm {A} }+k_{-1}+k_{2}}} $$
 
 and
-
-        r
-
-        =
-                k
-                  1
-                k
-                  2
-                C
-                    A
-                C
-                    S
-                k
-                  1
-                C
-                    A
-              +
-                k
-                  −
-
-                  1
-              +
-                k
-                  2
-        .
 
 $$ r={\frac {k_{1}k_{2}C_{\mathrm {A} }C_{\mathrm {S} }}{k_{1}C_{\mathrm {A} }+k_{-1}+k_{2}}}. $$
 
@@ -212,121 +72,23 @@ The result is equivalent to the Michaelis–Menten kinetics of reactions catalyz
 
 Limiting step: adsorption/desorption
 
-          k
-            2
-        ≫
-          k
-            1
-          C
-              A
-        ,
-          k
-            −
-
-            1
-        ,
-           so 
-        r
-
-        ≈
-          k
-            1
-          C
-              A
-          C
-              S
-        .
-
 $$ k_{2}\gg \ k_{1}C_{\mathrm {A} },k_{-1},{\text{ so }}r\approx k_{1}C_{\mathrm {A} }C_{\mathrm {S} }. $$
 
 The order respect to A is 1. Examples of this mechanism are N2O on gold and HI on platinum
 
 Limiting step: reaction of adsorbed species
 
-          k
-            2
-        ≪
-          k
-            1
-          C
-              A
-        ,
-          k
-            −
-
-            1
-           so 
-        θ
-
-        =
-                k
-                  1
-                C
-                    A
-                k
-                  1
-                C
-                    A
-              +
-                k
-                  −
-
-                  1
-        =
-                K
-                  1
-                C
-                    A
-                K
-                  1
-                C
-                    A
-              +
-
-              1
-
 $$ k_{2}\ll \ k_{1}C_{\mathrm {A} },k_{-1}{\text{ so }}\theta ={\frac {k_{1}C_{\mathrm {A} }}{k_{1}C_{\mathrm {A} }+k_{-1}}}={\frac {K_{1}C_{\mathrm {A} }}{K_{1}C_{\mathrm {A} }+1}} $$
 
 The last expression is the Langmuir isotherm for the surface coverage. The adsorption equilibrium constant 
-          K
-            1
-        =
-              k
-                1
-              k
-                −
-
-                1
 
 $$ K_{1}={\frac {k_{1}}{k_{-1}}} $$
 
 , and the numerator and denominator have each been divided by 
-          k
-            −
-
-            1
 
 $$ k_{-1} $$
 
 . The overall reaction rate becomes 
-        r
-
-        =
-                K
-                  1
-                k
-                  2
-                C
-                    A
-                C
-                    S
-                K
-                  1
-                C
-                    A
-              +
-
-              1
 
 $$ r={\frac {K_{1}k_{2}C_{\mathrm {A} }C_{\mathrm {S} }}{K_{1}C_{\mathrm {A} }+1}} $$
 
@@ -335,30 +97,12 @@ $$ r={\frac {K_{1}k_{2}C_{\mathrm {A} }C_{\mathrm {S} }}{K_{1}C_{\mathrm {A} }+1
 Depending on the concentration of the reactant the rate changes:
 
 Low concentrations, then 
-        r
-
-        =
-          K
-            1
-          k
-            2
-          C
-              A
-          C
-              S
 
 $$ r=K_{1}k_{2}C_{\mathrm {A} }C_{\mathrm {S} } $$
 
 , that is to say a first order reaction in component A.
 
 High concentration, then 
-        r
-
-        =
-          k
-            2
-          C
-              S
 
 $$ r=k_{2}C_{\mathrm {S} } $$
 
@@ -377,194 +121,74 @@ B + S ⇌ BS
 AS + BS → Products
 
 The rate constants are 
-          k
-            1
 
 $$ k_{1} $$
 
  and 
-          k
-            −
-
-            1
 
 $$ k_{-1} $$
 
  for adsorption and desorption of A respectively, 
-          k
-            2
 
 $$ k_{2} $$
 
  and 
-          k
-            −
-
-            2
 
 $$ k_{-2} $$
 
  for adsorption and desorption of B, and 
-        k
 
 $$ k $$
 
  for the reaction generating the final products. The rate law is: 
-        r
-
-        =
-
-        k
-          θ
-              A
-          θ
-              B
-          C
-              S
-            2
 
 $$ r=k\theta _{\mathrm {A} }\theta _{\mathrm {B} }C_{\mathrm {S} }^{2} $$
 
 Proceeding as before we get 
-          θ
-              A
-        =
-                k
-                  1
-                C
-                    A
-                θ
-                  E
-                k
-                  −
-
-                  1
-              +
-
-              k
-                C
-                    S
-                θ
-                    B
 
 $$ \theta _{\mathrm {A} }={\frac {k_{1}C_{\mathrm {A} }\theta _{E}}{k_{-1}+kC_{\mathrm {S} }\theta _{\mathrm {B} }}} $$
 
 , where 
-          θ
-            E
 
 $$ \theta _{E} $$
 
  is the fraction of empty sites, so 
-          θ
-              A
-        +
-          θ
-              B
-        +
-          θ
-            E
-        =
-
-        1
 
 $$ \theta _{\mathrm {A} }+\theta _{\mathrm {B} }+\theta _{E}=1 $$
 
 . Let us assume now that the rate limiting step is the reaction of the adsorbed molecules, which is easily understood: the probability of two adsorbed molecules colliding is low.
 
 Then 
-          θ
-              A
-        =
-          K
-            1
-          C
-              A
-          θ
-            E
 
 $$ \theta _{\mathrm {A} }=K_{1}C_{\mathrm {A} }\theta _{E} $$
 
 , with 
-          K
-            i
-        =
-          k
-            i
-          /
-          k
-            −
-
-            i
 
 $$ K_{i}=k_{i}/k_{-i} $$
 
 , which is nothing but Langmuir isotherm for two adsorbed gases, with adsorption constants 
-          K
-            1
 
 $$ K_{1} $$
 
  and 
-          K
-            2
 
 $$ K_{2} $$
 
 .
 
 Calculating 
-          θ
-            E
 
 $$ \theta _{E} $$
 
  from 
-          θ
-              A
 
 $$ \theta _{\mathrm {A} } $$
 
  and 
-          θ
-              B
 
 $$ \theta _{\mathrm {B} } $$
 
  we finally get
-
-        r
-
-        =
-
-        k
-          C
-              S
-            2
-                K
-                  1
-                K
-                  2
-                C
-                    A
-                C
-                    B
-              (
-
-              1
-
-              +
-                K
-                  1
-                C
-                    A
-              +
-                K
-                  2
-                C
-                    B
-                )
-                  2
 
 $$ r=kC_{\mathrm {S} }^{2}{\frac {K_{1}K_{2}C_{\mathrm {A} }C_{\mathrm {B} }}{(1+K_{1}C_{\mathrm {A} }+K_{2}C_{\mathrm {B} })^{2}}} $$
 
@@ -575,38 +199,10 @@ The rate law is complex and there is no clear order with respect to either react
 Both molecules have low adsorption
 
 That means that 
-        1
-
-        ≫
-          K
-            1
-          C
-              A
-        ,
-          K
-            2
-          C
-              B
 
 $$ 1\gg K_{1}C_{\mathrm {A} },K_{2}C_{\mathrm {B} } $$
 
 , so 
-        r
-
-        =
-
-        k
-          C
-              S
-            2
-          K
-            1
-          K
-            2
-          C
-              A
-          C
-              B
 
 $$ r=kC_{\mathrm {S} }^{2}K_{1}K_{2}C_{\mathrm {A} }C_{\mathrm {B} } $$
 
@@ -615,94 +211,22 @@ $$ r=kC_{\mathrm {S} }^{2}K_{1}K_{2}C_{\mathrm {A} }C_{\mathrm {B} } $$
 One molecule has very low adsorption
 
 In this case 
-          K
-            1
-          C
-              A
-        ,
-
-        1
-
-        ≫
-          K
-            2
-          C
-              B
 
 $$ K_{1}C_{\mathrm {A} },1\gg K_{2}C_{\mathrm {B} } $$
 
 , so 
-        r
-
-        =
-
-        k
-          C
-              S
-            2
-                K
-                  1
-                K
-                  2
-                C
-                    A
-                C
-                    B
-              (
-
-              1
-
-              +
-                K
-                  1
-                C
-                    A
-                )
-                  2
 
 $$ r=kC_{\mathrm {S} }^{2}{\frac {K_{1}K_{2}C_{\mathrm {A} }C_{\mathrm {B} }}{(1+K_{1}C_{\mathrm {A} })^{2}}} $$
 
 . The reaction order is 1 with respect to B. There are two extreme possibilities for the order with respect to A:
 
 At low concentrations of A, 
-        r
-
-        =
-
-        k
-          C
-              S
-            2
-          K
-            1
-          K
-            2
-          C
-              A
-          C
-              B
 
 $$ r=kC_{\mathrm {S} }^{2}K_{1}K_{2}C_{\mathrm {A} }C_{\mathrm {B} } $$
 
 , and the order is one with respect to A.
 
 At high concentrations, 
-        r
-
-        =
-
-        k
-          C
-              S
-            2
-                K
-                  2
-                C
-                    B
-                K
-                  1
-                C
-                    A
 
 $$ r=kC_{\mathrm {S} }^{2}{\frac {K_{2}C_{\mathrm {B} }}{K_{1}C_{\mathrm {A} }}} $$
 
@@ -712,39 +236,9 @@ One molecule has very high adsorption
 
 One of the reactants has very high adsorption and the other one doesn't adsorb strongly.
 
-          K
-            1
-          C
-              A
-        ≫
-
-        1
-
-        ,
-          K
-            2
-          C
-              B
-
 $$ K_{1}C_{\mathrm {A} }\gg 1,K_{2}C_{\mathrm {B} } $$
 
 , so 
-        r
-
-        =
-
-        k
-          C
-              S
-            2
-                K
-                  2
-                C
-                    B
-                K
-                  1
-                C
-                    A
 
 $$ r=kC_{\mathrm {S} }^{2}{\frac {K_{2}C_{\mathrm {B} }}{K_{1}C_{\mathrm {A} }}} $$
 
@@ -773,91 +267,30 @@ A(g) + S(s) ⇌ AS(s)
 AS(s) + B(g) → Products
 
 Constants are 
-          k
-            1
-        ,
-          k
-            −
-
-            1
 
 $$ k_{1},k_{-1} $$
 
  and 
-        k
 
 $$ k $$
 
  and rate equation is 
-        r
-
-        =
-
-        k
-          C
-              S
-          θ
-              A
-          C
-              B
 
 $$ r=kC_{\mathrm {S} }\theta _{\mathrm {A} }C_{\mathrm {B} } $$
 
 . Applying steady state approximation to AS and proceeding as before (considering the reaction the limiting step once more) we get 
-        r
-
-        =
-
-        k
-          C
-              S
-          C
-              B
-                K
-                  1
-                C
-                    A
-                K
-                  1
-                C
-                    A
-              +
-
-              1
 
 $$ r=kC_{\mathrm {S} }C_{\mathrm {B} }{\frac {K_{1}C_{\mathrm {A} }}{K_{1}C_{\mathrm {A} }+1}} $$
 
 . The order is one with respect to B. There are two possibilities, depending on the concentration of reactant A:
 
 At low concentrations of A, 
-        r
-
-        =
-
-        k
-          C
-              S
-          K
-            1
-          C
-              A
-          C
-              B
 
 $$ r=kC_{\mathrm {S} }K_{1}C_{\mathrm {A} }C_{\mathrm {B} } $$
 
 , and the order is one with respect to A.
 
 At high concentrations of A, 
-        r
-
-        =
-
-        k
-          C
-              S
-          C
-              B
 
 $$ r=kC_{\mathrm {S} }C_{\mathrm {B} } $$
 

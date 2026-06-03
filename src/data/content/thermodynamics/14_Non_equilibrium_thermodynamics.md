@@ -24,74 +24,22 @@ The mechanics of macroscopic systems depends on a number of extensive quantities
 Non-equilibrium systems are much more complex and they may undergo fluctuations of more extensive quantities. The boundary conditions impose on them particular intensive variables, like temperature gradients or distorted collective motions (shear motions, vortices, etc.), often called thermodynamic forces. If free energies are very useful in equilibrium thermodynamics, it must be stressed that there is no general law defining stationary non-equilibrium properties of the energy as is the second law of thermodynamics for the entropy in equilibrium thermodynamics. That is why in such cases a more generalized Legendre transformation should be considered. This is the extended Massieu potential.
 
 By definition, the entropy (S) is a function of the collection of extensive quantities 
-          E
-            i
-    {\displaystyle E_{i}}
+{\displaystyle E_{i}}
 . Each extensive quantity has a conjugate intensive variable 
-          I
-            i
-    {\displaystyle I_{i}}
+{\displaystyle I_{i}}
  (a restricted definition of intensive variable is used here by comparison to the definition given in this link) so that:
 
-          I
-            i
-        =
-              ∂
-                S
-              ∂
-                  E
-                    i
-        .
-    {\displaystyle I_{i}={\frac {\partial {S}}{\partial {E_{i}}}}.}
+{\displaystyle I_{i}={\frac {\partial {S}}{\partial {E_{i}}}}.}
 
 We then define the extended Massieu function as follows:
 
-          k
-              B
-        M
-
-        =
-
-        S
-
-        −
-          ∑
-            i
-        (
-          I
-            i
-          E
-            i
-        )
-
-        ,
-    {\displaystyle \ k_{\rm {B}}M=S-\sum _{i}(I_{i}E_{i}),}
+{\displaystyle \ k_{\rm {B}}M=S-\sum _{i}(I_{i}E_{i}),}
 
 where 
-          k
-              B
-    {\displaystyle \ k_{\rm {B}}}
+{\displaystyle \ k_{\rm {B}}}
  is the Boltzmann constant, whence
 
-          k
-              B
-        d
-
-        M
-
-        =
-          ∑
-            i
-        (
-          E
-            i
-        d
-          I
-            i
-        )
-
-        .
-    {\displaystyle \ k_{\rm {B}}\,dM=\sum _{i}(E_{i}\,dI_{i}).}
+{\displaystyle \ k_{\rm {B}}\,dM=\sum _{i}(E_{i}\,dI_{i}).}
 
 The independent variables are the intensities.
 
@@ -124,211 +72,73 @@ This point of view shares many points in common with the concept and the use of 
 
 ### Entropy in non-equilibrium
 To describe deviation of the thermodynamic system from equilibrium, in addition to constitutive variables 
-          x
-            1
-        ,
-          x
-            2
-        ,
 
-        .
-
-        .
-
-        .
-
-        ,
-          x
-            n
-    {\displaystyle x_{1},x_{2},...,x_{n}}
+{\displaystyle x_{1},x_{2},...,x_{n}}
  that are used to fix the equilibrium state, as was described above, a set of variables 
-          ξ
-            1
-        ,
-          ξ
-            2
-        ,
 
-        …
-    {\displaystyle \xi _{1},\xi _{2},\ldots }
+{\displaystyle \xi _{1},\xi _{2},\ldots }
  that are called internal variables have been introduced. The equilibrium state is considered to be stable and the main property of the internal variables, as measures of non-equilibrium of the system, is their tending to disappear; the local law of disappearing can be written as relaxation equation for each internal variable
 
 where 
-          τ
-            i
-        =
-          τ
-            i
-        (
 
-        T
-
-        ,
-          x
-            1
-        ,
-          x
-            2
-        ,
-
-        …
-
-        ,
-          x
-            n
-        )
-    {\displaystyle \tau _{i}=\tau _{i}(T,x_{1},x_{2},\ldots ,x_{n})}
+{\displaystyle \tau _{i}=\tau _{i}(T,x_{1},x_{2},\ldots ,x_{n})}
  is a relaxation time of a corresponding variables. It is convenient to consider the initial value 
-          ξ
-            i
-            0
-    {\displaystyle \xi _{i}^{0}}
+{\displaystyle \xi _{i}^{0}}
  are equal to zero. The above equation is valid for small deviations from equilibrium; The dynamics of internal variables in general case is considered by Pokrovskii.
 
 Entropy of the system in non-equilibrium is a function of the total set of variables 
 
 The essential contribution to the thermodynamics of the non-equilibrium systems was brought by the Nobel Prize winner Ilya Prigogine, when he and his collaborators investigated the systems of chemically reacting substances. The stationary states of such systems exists due to exchange both particles and energy with the environment. In section 8 of the third chapter of his book, Prigogine has specified three contributions to the variation of entropy of the considered system at the given volume and constant temperature 
-        T
-    {\displaystyle T}
  . The increment of entropy 
-        S
-    {\displaystyle S}
  can be calculated according to the formula 
 
 The first term on the right hand side of the equation presents a stream of thermal energy into the system; the last term—a part of a stream of energy 
-          h
-            α
-    {\displaystyle h_{\alpha }}
+{\displaystyle h_{\alpha }}
  coming into the system with the stream of particles of substances 
-        Δ
-          N
-            α
-    {\displaystyle \Delta N_{\alpha }}
+{\displaystyle \Delta N_{\alpha }}
  that can be positive or negative, 
-          η
-            α
-        =
-          h
-            α
-        −
-          μ
-            α
-    {\displaystyle \eta _{\alpha }=h_{\alpha }-\mu _{\alpha }}
+{\displaystyle \eta _{\alpha }=h_{\alpha }-\mu _{\alpha }}
 , where   
-          μ
-            α
-    {\displaystyle \mu _{\alpha }}
+{\displaystyle \mu _{\alpha }}
  is chemical potential of substance 
-        α
-    {\displaystyle \alpha }
+{\displaystyle \alpha }
 . The middle term in (1) depicts energy dissipation (entropy production) due to the relaxation of internal variables 
-          ξ
-            j
-    {\displaystyle \xi _{j}}
+{\displaystyle \xi _{j}}
 . In the case of chemically reacting substances, which was investigated by Prigogine, the internal variables appear to be measures of incompleteness of chemical reactions, that is measures of how much the considered system with chemical reactions is out of equilibrium. The theory can be generalised, to consider any deviation from the equilibrium state as an internal variable, so that we consider the set of internal variables 
-          ξ
-            j
-    {\displaystyle \xi _{j}}
+{\displaystyle \xi _{j}}
  in equation (1) to consist of the quantities defining not only degrees of completeness of all chemical reactions occurring in the system, but also the structure of the system, gradients of temperature, difference of concentrations of substances and so on.
 
 ## Flows and forces
 The fundamental relation of classical equilibrium thermodynamics 
 
-        d
-
-        S
-
-        =
-            1
-
-            T
-        d
-
-        U
-
-        +
-            p
-
-            T
-        d
-
-        V
-
-        −
-          ∑
-            i
-
-            =
-
-            1
-            s
-              μ
-                i
-            T
-        d
-          N
-            i
-    {\displaystyle dS={\frac {1}{T}}dU+{\frac {p}{T}}dV-\sum _{i=1}^{s}{\frac {\mu _{i}}{T}}dN_{i}}
+{\displaystyle dS={\frac {1}{T}}dU+{\frac {p}{T}}dV-\sum _{i=1}^{s}{\frac {\mu _{i}}{T}}dN_{i}}
 
 expresses the change in entropy 
-        d
 
-        S
-    {\displaystyle dS}
  of a system as a function of the intensive quantities temperature 
-        T
-    {\displaystyle T}
 , pressure 
-        p
-    {\displaystyle p}
  and 
-          i
-            t
 
-            h
-    {\displaystyle i^{th}}
+{\displaystyle i^{th}}
  chemical potential 
-          μ
-            i
-    {\displaystyle \mu _{i}}
+{\displaystyle \mu _{i}}
  and of the differentials of the extensive quantities energy 
-        U
-    {\displaystyle U}
 , volume 
-        V
-    {\displaystyle V}
  and 
-          i
-            t
 
-            h
-    {\displaystyle i^{th}}
+{\displaystyle i^{th}}
  particle number 
-          N
-            i
-    {\displaystyle N_{i}}
+{\displaystyle N_{i}}
 .
 
 Following Onsager (1931,I), let us extend our considerations to thermodynamically non-equilibrium systems. As a basis, we need locally defined versions of the extensive macroscopic quantities 
-        U
-    {\displaystyle U}
 , 
-        V
-    {\displaystyle V}
  and 
-          N
-            i
-    {\displaystyle N_{i}}
+{\displaystyle N_{i}}
  and of the intensive macroscopic quantities 
-        T
-    {\displaystyle T}
 , 
-        p
-    {\displaystyle p}
  and 
-          μ
-            i
-    {\displaystyle \mu _{i}}
+{\displaystyle \mu _{i}}
 .
 
 For classical non-equilibrium studies, we will consider some new locally defined intensive macroscopic variables. We can, under suitable conditions, derive these new variables by locally defining the gradients and flux densities of the basic locally defined macroscopic quantities.
@@ -336,9 +146,7 @@ For classical non-equilibrium studies, we will consider some new locally defined
 Such locally defined gradients of intensive macroscopic variables are called 'thermodynamic forces'. They 'drive' flux densities, perhaps misleadingly often called 'fluxes', which are dual to the forces. These quantities are defined in the article on Onsager reciprocal relations.
 
 Establishing the relation between such forces and flux densities is a problem in statistical mechanics. Flux densities (
-          J
-            i
-    {\displaystyle J_{i}}
+{\displaystyle J_{i}}
 ) may be coupled. The article on Onsager reciprocal relations considers the stable near-steady thermodynamically non-equilibrium regime, which has dynamics linear in the forces and flux densities.
 
 In stationary conditions, such forces and associated flux densities are by definition time invariant, as also are the system's locally defined entropy and rate of entropy production. Notably, according to Ilya Prigogine and others, when an open system is in conditions that allow it to reach a stable stationary thermodynamically non-equilibrium state, it organizes itself so as to minimize total entropy production defined locally. This is considered further below.
@@ -348,94 +156,27 @@ One wants to take the analysis to the further stage of describing the behaviour 
 ### Onsager reciprocal relations
 
 Following Section III of Rayleigh (1873), Onsager (1931, I) showed that in the regime where both the flows (
-          J
-            i
-    {\displaystyle J_{i}}
+{\displaystyle J_{i}}
 ) are small and the thermodynamic forces (
-          F
-            i
-    {\displaystyle F_{i}}
+{\displaystyle F_{i}}
 ) vary slowly, the rate of creation of entropy 
-        (
 
-        σ
-
-        )
-    {\displaystyle (\sigma )}
+{\displaystyle (\sigma )}
  is linearly related to the flows:
 
-        σ
-
-        =
-          ∑
-            i
-          J
-            i
-              ∂
-                F
-                  i
-              ∂
-                x
-                  i
-    {\displaystyle \sigma =\sum _{i}J_{i}{\frac {\partial F_{i}}{\partial x_{i}}}}
+{\displaystyle \sigma =\sum _{i}J_{i}{\frac {\partial F_{i}}{\partial x_{i}}}}
 
 and the flows are related to the gradient of the forces, parametrized by a matrix of coefficients conventionally denoted 
-        L
-    {\displaystyle L}
 :
 
-          J
-            i
-        =
-          ∑
-            j
-          L
-            i
-
-            j
-              ∂
-                F
-                  j
-              ∂
-                x
-                  j
-    {\displaystyle J_{i}=\sum _{j}L_{ij}{\frac {\partial F_{j}}{\partial x_{j}}}}
+{\displaystyle J_{i}=\sum _{j}L_{ij}{\frac {\partial F_{j}}{\partial x_{j}}}}
 
 from which it follows that:
 
-        σ
-
-        =
-          ∑
-            i
-
-            ,
-
-            j
-          L
-            i
-
-            j
-              ∂
-                F
-                  i
-              ∂
-                x
-                  i
-              ∂
-                F
-                  j
-              ∂
-                x
-                  j
-    {\displaystyle \sigma =\sum _{i,j}L_{ij}{\frac {\partial F_{i}}{\partial x_{i}}}{\frac {\partial F_{j}}{\partial x_{j}}}}
+{\displaystyle \sigma =\sum _{i,j}L_{ij}{\frac {\partial F_{i}}{\partial x_{i}}}{\frac {\partial F_{j}}{\partial x_{j}}}}
 
 The second law of thermodynamics requires that the matrix 
-        L
-    {\displaystyle L}
  be positive definite. Statistical mechanics considerations involving microscopic reversibility of dynamics imply that the matrix 
-        L
-    {\displaystyle L}
  is symmetric. This fact is called the Onsager reciprocal relations.
 
 The generalization of the above equations for the rate of creation of entropy was given by Pokrovskii.

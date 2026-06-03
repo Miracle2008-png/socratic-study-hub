@@ -41,66 +41,15 @@ It is impossible for any system to operate in a thermodynamic cycle and deliver 
 ### Equivalence of the Clausius and the Kelvin statements
 
 Suppose there is an engine violating the Kelvin statement: i.e., one that drains heat and converts it completely into work (the drained heat is fully converted to work) in a cyclic fashion without any other result. Now pair it with a reversed Carnot engine as shown by the right figure. The efficiency of a normal heat engine is η and so the efficiency of the reversed heat engine is 1/η. The net and sole effect of the combined pair of engines is to transfer heat 
-        Δ
 
-        Q
-
-        =
-
-        Q
-          (
-                1
-
-                η
-            −
-
-            1
-          )
-    {\textstyle \Delta Q=Q\left({\frac {1}{\eta }}-1\right)}
+{\textstyle \Delta Q=Q\left({\frac {1}{\eta }}-1\right)}
  from the cooler reservoir to the hotter one, which violates the Clausius statement. This is a consequence of the first law of thermodynamics, as for the total system's energy to remain the same; 
-          Input
-        +
-          Output
-        =
 
-        0
-        ⟹
-        (
-
-        Q
-
-        +
-          Q
-            c
-        )
-
-        −
-            Q
-
-            η
-        =
-
-        0
-    {\textstyle {\text{Input}}+{\text{Output}}=0\implies (Q+Q_{c})-{\frac {Q}{\eta }}=0}
+{\textstyle {\text{Input}}+{\text{Output}}=0\implies (Q+Q_{c})-{\frac {Q}{\eta }}=0}
 , so therefore 
-          Q
-            c
-        =
 
-        Q
-          (
-                1
-
-                η
-            −
-
-            1
-          )
-    {\textstyle Q_{c}=Q\left({\frac {1}{\eta }}-1\right)}
+{\textstyle Q_{c}=Q\left({\frac {1}{\eta }}-1\right)}
 , where (1) the sign convention of heat is used in which heat entering into (leaving from) an engine is positive (negative) and (2) 
-            Q
-
-            η
 
 $$ {\frac {Q}{\eta }} $$
 
@@ -135,17 +84,6 @@ Constantin Carathéodory formulated thermodynamics on a purely mathematical axio
 In every neighborhood of any state S of an adiabatically enclosed system there are states inaccessible from S.
 
 With this formulation, he described the concept of adiabatic accessibility for the first time and provided the foundation for a new subfield of classical thermodynamics, often called geometrical thermodynamics. It follows from Carathéodory's principle that quantity of energy quasi-statically transferred as heat is a holonomic process function, in other words, 
-        δ
-
-        Q
-
-        =
-
-        T
-
-        d
-
-        S
 
 $$ \delta Q=TdS $$
 
@@ -183,175 +121,23 @@ The Hatsopoulos–Keenan statement of the second law has been developed into a r
 
 The second law has been shown to be equivalent to the internal energy U defined as a convex function of the other extensive properties of the system. That is, when a system is described by stating its internal energy U, an extensive variable, as a function of its entropy S, volume V, and mol number N, i.e. U = U (S, V, N), then the temperature is equal to the partial derivative of the internal energy with respect to the entropy (essentially equivalent to the first TdS equation for V and N  held constant):
 
-        T
-
-        =
-            (
-                  ∂
-
-                  U
-                  ∂
-
-                  S
-            )
-            V
-
-            ,
-
-            N
-
 $$ T=\left({\frac {\partial U}{\partial S}}\right)_{V,N} $$
 
 ### Second law statements, such as the Clausius inequality, involving radiative fluxes
 
 The Clausius inequality, as well as some other statements of the second law, must be re-stated to have general applicability for all forms of heat transfer, i.e. scenarios involving radiative fluxes. For example, the integrand (đQ/T) of the Clausius expression applies to heat conduction and convection, and the case of ideal infinitesimal blackbody radiation (BR) transfer, but does not apply to most radiative transfer scenarios and in some cases has no physical meaning whatsoever. Consequently, the Clausius inequality was re-stated so that it is applicable to cycles with processes involving any form of heat transfer. The entropy transfer with radiative fluxes (
-      δ
-        S
-          NetRad
-    \delta S_{\text{NetRad}}
+\delta S_{\text{NetRad}}
 ) is taken separately from that due to heat transfer by conduction and convection (
-      δ
-        Q
-          C
 
-          C
-    \delta Q_{CC}
 ), where the temperature is evaluated at the system boundary where the heat transfer occurs. The modified Clausius inequality, for all heat transfer scenarios, can then be expressed as
-
-          ∫
-            cycle
-          (
-                  δ
-                    Q
-                      C
-
-                      C
-                  T
-                    b
-            +
-
-            δ
-              S
-                NetRad
-          )
-        ≤
-
-        0
 
 $$ \int _{\text{cycle}}\left({\frac {\delta Q_{CC}}{T_{b}}}+\delta S_{\text{NetRad}}\right)\leq 0 $$
 
 In a nutshell, the Clausius inequality is saying that when a cycle is completed, the change in the state property S will be zero, so the entropy that was produced during the cycle must have transferred out of the system by heat transfer. The 
-    δ
 
-    \delta
  (or đ) indicates a path dependent integration.
 
 Due to the inherent emission of radiation from all matter, most entropy flux calculations involve incident, reflected and emitted radiative fluxes. The energy and entropy of unpolarized blackbody thermal radiation, is calculated using the spectral energy and entropy radiance expressions derived by Max Planck using equilibrium statistical mechanics:
-
-                  K
-                    ν
-                =
-                      2
-
-                      h
-                      c
-                        2
-                      ν
-                        3
-                      exp
-
-                      ⁡
-                        (
-                              h
-
-                              ν
-                              k
-
-                              T
-                        )
-                      −
-
-                      1
-                ,
-                  L
-                    ν
-                =
-                      2
-
-                      k
-                        ν
-                          2
-                      c
-                        2
-                (
-
-                (
-
-                1
-
-                +
-                        c
-                          2
-                        K
-                          ν
-                      2
-
-                      h
-                        ν
-                          3
-                )
-
-                ln
-
-                ⁡
-
-                (
-
-                1
-
-                +
-                        c
-                          2
-                        K
-                          ν
-                      2
-
-                      h
-                        ν
-                          3
-                )
-
-                −
-
-                (
-                        c
-                          2
-                        K
-                          ν
-                      2
-
-                      h
-                        ν
-                          3
-                )
-
-                ln
-
-                ⁡
-
-                (
-                        c
-                          2
-                        K
-                          ν
-                      2
-
-                      h
-                        ν
-                          3
-                )
-
-                )
 
 $$ {\begin{aligned}K_{\nu }&={\frac {2h}{c^{2}}}{\frac {\nu ^{3}}{\exp \left({\frac {h\nu }{kT}}\right)-1}},\\L_{\nu }&={\frac {2k\nu ^{2}}{c^{2}}}((1+{\frac {c^{2}K_{\nu }}{2h\nu ^{3}}})\ln(1+{\frac {c^{2}K_{\nu }}{2h\nu ^{3}}})-({\frac {c^{2}K_{\nu }}{2h\nu ^{3}}})\ln({\frac {c^{2}K_{\nu }}{2h\nu ^{3}}}))\end{aligned}} $$
 
@@ -393,14 +179,6 @@ Though formulated in terms of caloric (see the obsolete caloric theory), rather 
 
 The Clausius theorem (1854) states that in a cyclic process
 
-        ∮
-              δ
-
-              Q
-              T
-                surr
-        ≤
-
         0.
 
 $$ \oint {\frac {\delta Q}{T_{\text{surr}}}}\leq 0. $$
@@ -417,310 +195,33 @@ Carnot's theorem states that all reversible engines operating between the same h
 
 In addition, a reversible heat engine operating between temperatures T1 and T3 must have the same efficiency as one consisting of two cycles, one between T1 and another (intermediate) temperature T2, and the second between T2 and T3, where T1 > T2 > T3. This is because, if a part of the two cycle engine is hidden such that it is recognized as an engine between the reservoirs at the temperatures T1 and T3, then the efficiency of this engine must be same to the other engine at the same reservoirs. If we choose engines such that work done by the one cycle engine and the two cycle engine are same, then the efficiency of each heat engine is written as below.
 
-                  η
-                    1
-                =
-
-                1
-
-                −
-                        |
-                        q
-                          3
-                        |
-                        |
-                        q
-                          1
-                        |
-                =
-
-                1
-
-                −
-
-                f
-
-                (
-                  T
-                    1
-                ,
-                  T
-                    3
-                )
-
-                ,
-                  η
-                    2
-                =
-
-                1
-
-                −
-                        |
-                        q
-                          2
-                        |
-                        |
-                        q
-                          1
-                        |
-                =
-
-                1
-
-                −
-
-                f
-
-                (
-                  T
-                    1
-                ,
-                  T
-                    2
-                )
-
-                ,
-                  η
-                    3
-                =
-
-                1
-
-                −
-                        |
-                        q
-                          3
-                        |
-                        |
-                        q
-                          2
-                        |
-                =
-
-                1
-
-                −
-
-                f
-
-                (
-                  T
-                    2
-                ,
-                  T
-                    3
-                )
-
-                .
-
 $$ {\begin{aligned}\eta _{1}&=1-{\frac {|q_{3}|}{|q_{1}|}}=1-f(T_{1},T_{3}),\\\eta _{2}&=1-{\frac {|q_{2}|}{|q_{1}|}}=1-f(T_{1},T_{2}),\\\eta _{3}&=1-{\frac {|q_{3}|}{|q_{2}|}}=1-f(T_{2},T_{3}).\end{aligned}} $$
 
 Here, the engine 1 is the one cycle engine, and the engines 2 and 3 make the two cycle engine where there is the intermediate reservoir at T2. We also have used the fact that the heat 
-          q
-            2
 
 $$ q_{2} $$
 
  passes through the intermediate thermal reservoir at 
-          T
-            2
 
 $$ T_{2} $$
 
  without losing its energy. (I.e., 
-          q
-            2
 
 $$ q_{2} $$
 
  is not lost during its passage through the reservoir at 
-          T
-            2
 
 $$ T_{2} $$
 
 .) This fact can be proved by the following.
 
-                      η
-                      2
-                =
-
-                1
-
-                −
-                        |
-                            q
-                            2
-                        |
-                        |
-                            q
-                            1
-                        |
-                →
-                  |
-                      w
-                      2
-                  |
-                =
-                  |
-                      q
-                      1
-                  |
-                −
-                  |
-                      q
-                      2
-                  |
-                ,
-                      η
-                      3
-                =
-
-                1
-
-                −
-                        |
-                            q
-                            3
-                        |
-                        |
-                              q
-                              2
-                          ∗
-                        |
-                →
-                  |
-                      w
-                      3
-                  |
-                =
-                  |
-                        q
-                        2
-                    ∗
-                  |
-                −
-                  |
-                      q
-                      3
-                  |
-                ,
-                  |
-                      w
-                      2
-                  |
-                +
-                  |
-                      w
-                      3
-                  |
-                =
-
-                (
-                  |
-                      q
-                      1
-                  |
-                −
-                  |
-                      q
-                      2
-                  |
-                )
-
-                +
-
-                (
-                  |
-                        q
-                        2
-                    ∗
-                  |
-                −
-                  |
-                      q
-                      3
-                  |
-                )
-
-                ,
-                      η
-                      1
-                =
-
-                1
-
-                −
-                        |
-                            q
-                            3
-                        |
-                        |
-                            q
-                            1
-                        |
-                =
-                      (
-                        |
-                            w
-                            2
-                        |
-                      +
-                        |
-                            w
-                            3
-                        |
-                      )
-                        |
-                            q
-                            1
-                        |
-                =
-                      (
-                        |
-                            q
-                            1
-                        |
-                      −
-                        |
-                            q
-                            2
-                        |
-                      )
-
-                      +
-
-                      (
-                        |
-                              q
-                              2
-                          ∗
-                        |
-                      −
-                        |
-                            q
-                            3
-                        |
-                      )
-                        |
-                            q
-                            1
-                        |
-                .
-
 $$ {\begin{aligned}{{\eta }_{2}}&=1-{\frac {|{{q}_{2}}|}{|{{q}_{1}}|}}\to |{{w}_{2}}|=|{{q}_{1}}|-|{{q}_{2}}|,\\{{\eta }_{3}}&=1-{\frac {|{{q}_{3}}|}{|{{q}_{2}}^{*}|}}\to |{{w}_{3}}|=|{{q}_{2}}^{*}|-|{{q}_{3}}|,\\|{{w}_{2}}|+|{{w}_{3}}|&=(|{{q}_{1}}|-|{{q}_{2}}|)+(|{{q}_{2}}^{*}|-|{{q}_{3}}|),\\{{\eta }_{1}}&=1-{\frac {|{{q}_{3}}|}{|{{q}_{1}}|}}={\frac {(|{{w}_{2}}|+|{{w}_{3}}|)}{|{{q}_{1}}|}}={\frac {(|{{q}_{1}}|-|{{q}_{2}}|)+(|{{q}_{2}}^{*}|-|{{q}_{3}}|)}{|{{q}_{1}}|}}.\end{aligned}} $$
 
 In order to have the consistency in the last equation, the heat 
-          q
-            2
 
 $$ q_{2} $$
 
  flown from the engine 2 to the intermediate reservoir must be equal to the heat 
-          q
-            2
-            ∗
 
 $$ q_{2}^{*} $$
 
@@ -728,202 +229,32 @@ $$ q_{2}^{*} $$
 
 Then
 
-        f
-
-        (
-          T
-            1
-        ,
-          T
-            3
-        )
-
-        =
-                |
-                q
-                  3
-                |
-                |
-                q
-                  1
-                |
-        =
-                |
-                q
-                  2
-                |
-                |
-                q
-                  3
-                |
-                |
-                q
-                  1
-                |
-                |
-                q
-                  2
-                |
-        =
-
-        f
-
-        (
-          T
-            1
-        ,
-          T
-            2
-        )
-
-        f
-
-        (
-          T
-            2
-        ,
-          T
-            3
-        )
-
-        .
-
 $$ f(T_{1},T_{3})={\frac {|q_{3}|}{|q_{1}|}}={\frac {|q_{2}||q_{3}|}{|q_{1}||q_{2}|}}=f(T_{1},T_{2})f(T_{2},T_{3}). $$
 
 Now consider the case where 
-          T
-            1
 
 $$ T_{1} $$
 
  is a fixed reference temperature: the temperature of the triple point of water as 273.16 K; 
-          T
-            1
-        =
           273.16
-          K
 
 $$ T_{1}=\mathrm {273.16~K} $$
 
 . Then for any T2 and T3,
 
-        f
-
-        (
-          T
-            2
-        ,
-          T
-            3
-        )
-
-        =
-              f
-
-              (
-                T
-                  1
-              ,
-                T
-                  3
-              )
-              f
-
-              (
-                T
-                  1
-              ,
-                T
-                  2
-              )
-        =
               273.16
-                 K
-              ⋅
 
-              f
-
-              (
-                T
-                  1
-              ,
-                T
-                  3
-              )
               273.16
-                 K
-              ⋅
-
-              f
-
-              (
-                T
-                  1
-              ,
-                T
-                  2
-              )
-        .
 
 $$ f(T_{2},T_{3})={\frac {f(T_{1},T_{3})}{f(T_{1},T_{2})}}={\frac {273.16{\text{ K}}\cdot f(T_{1},T_{3})}{273.16{\text{ K}}\cdot f(T_{1},T_{2})}}. $$
 
 Therefore, if thermodynamic temperature T* is defined by
 
-          T
-            ∗
-        =
-
         273.16
-           K
-        ⋅
-
-        f
-
-        (
-          T
-            1
-        ,
-
-        T
-
-        )
 
 $$ T^{*}=273.16{\text{ K}}\cdot f(T_{1},T) $$
 
 then the function f, viewed as a function of thermodynamic temperatures, is simply
-
-        f
-
-        (
-          T
-            2
-        ,
-          T
-            3
-        )
-
-        =
-
-        f
-
-        (
-          T
-            2
-            ∗
-        ,
-          T
-            3
-            ∗
-        )
-
-        =
-              T
-                3
-                ∗
-              T
-                2
-                ∗
-        ,
 
 $$ f(T_{2},T_{3})=f(T_{2}^{*},T_{3}^{*})={\frac {T_{3}^{*}}{T_{2}^{*}}}, $$
 
@@ -933,40 +264,15 @@ and the reference temperature T1* = 273.16 K × f(T1,T1) = 273.16 K. (Any refere
 
 According to the Clausius equality, for a reversible process
 
-        ∮
-              δ
-
-              Q
-            T
-        =
-
-        0
-
 $$ \oint {\frac {\delta Q}{T}}=0 $$
 
 That means the line integral 
-          ∫
-            L
-              δ
-
-              Q
-            T
 
 $$ \int _{L}{\frac {\delta Q}{T}} $$
 
  is path independent for reversible processes.
 
 So we can define a state function S called entropy, which for a reversible process or for pure heat transfer satisfies
-
-        d
-
-        S
-
-        =
-              δ
-
-              Q
-            T
 
 $$ dS={\frac {\delta Q}{T}} $$
 
@@ -976,70 +282,17 @@ For any irreversible process, since entropy is a state function, we can always c
 
 Now reverse the reversible process and combine it with the said irreversible process. Applying the Clausius inequality on this loop, with Tsurr as the temperature of the surroundings,
 
-        −
-
-        Δ
-
-        S
-
-        +
-
-        ∫
-              δ
-
-              Q
-              T
-                surr
-        =
-
-        ∮
-              δ
-
-              Q
-              T
-                surr
-        ≤
-
-        0
-
 $$ -\Delta S+\int {\frac {\delta Q}{T_{\text{surr}}}}=\oint {\frac {\delta Q}{T_{\text{surr}}}}\leq 0 $$
 
 Thus,
 
-        Δ
-
-        S
-
-        ≥
-
-        ∫
-              δ
-
-              Q
-              T
-                surr
-
 $$ \Delta S\geq \int {\frac {\delta Q}{T_{\text{surr}}}} $$
 
 where the equality holds if the transformation is reversible. If the process is an adiabatic process, then 
-        δ
-
-        Q
-
-        =
-
-        0
 
 $$ \delta Q=0 $$
 
 , so 
-        Δ
-
-        S
-
-        ≥
-
-        0
 
 $$ \Delta S\geq 0 $$
 
@@ -1051,60 +304,9 @@ An important and revealing idealized special case is to consider applying the se
 
 Whatever changes to dS and dSR occur in the entropies of the sub-system and the surroundings individually, the entropy Stot of the isolated total system must not decrease according to the second law of thermodynamics:
 
-        d
-          S
-              t
-
-              o
-
-              t
-        =
-
-        d
-
-        S
-
-        +
-
-        d
-          S
-            R
-        ≥
-
-        0
-
 $$ dS_{\mathrm {tot} }=dS+dS_{\text{R}}\geq 0 $$
 
 According to the first law of thermodynamics, the change dU in the internal energy of the sub-system is the sum of the heat δq added to the sub-system, minus any work δw done by the sub-system, plus any net chemical energy entering the sub-system d ΣμiRNi, so that:
-
-        d
-
-        U
-
-        =
-
-        δ
-
-        q
-
-        −
-
-        δ
-
-        w
-
-        +
-
-        d
-          (
-            ∑
-              μ
-                i
-
-                R
-              N
-                i
-          )
 
 $$ dU=\delta q-\delta w+d\left(\sum \mu _{iR}N_{i}\right) $$
 
@@ -1112,147 +314,23 @@ where μiR are the chemical potentials of chemical species in the external surro
 
 Now the heat leaving the reservoir and entering the sub-system is
 
-        δ
-
-        q
-
-        =
-          T
-            R
-        (
-
-        −
-
-        d
-          S
-            R
-        )
-
-        ≤
-          T
-            R
-        d
-
-        S
-
 $$ \delta q=T_{\text{R}}(-dS_{\text{R}})\leq T_{\text{R}}dS $$
 
 where we have first used the definition of entropy in classical thermodynamics (alternatively, in statistical thermodynamics, the relation between entropy change, temperature and absorbed heat can be derived); and then the second law inequality from above.
 
 It therefore follows that any net work δw done by the sub-system must obey
 
-        δ
-
-        w
-
-        ≤
-
-        −
-
-        d
-
-        U
-
-        +
-          T
-            R
-        d
-
-        S
-
-        +
-
-        ∑
-          μ
-            i
-
-            R
-        d
-          N
-            i
-
 $$ \delta w\leq -dU+T_{\text{R}}dS+\sum \mu _{iR}dN_{i} $$
 
 It is useful to separate the work δw done by the subsystem into the useful work δwu that can be done by the sub-system, over and beyond the work pR dV done merely by the sub-system expanding against the surrounding external pressure, giving the following relation for the useful work (exergy) that can be done:
-
-        δ
-          w
-            u
-        ≤
-
-        −
-
-        d
-          (
-            U
-
-            −
-              T
-                R
-            S
-
-            +
-              p
-                R
-            V
-
-            −
-
-            ∑
-              μ
-                i
-
-                R
-              N
-                i
-          )
 
 $$ \delta w_{u}\leq -d\left(U-T_{\text{R}}S+p_{\text{R}}V-\sum \mu _{iR}N_{i}\right) $$
 
 It is convenient to define the right-hand-side as the exact derivative of a thermodynamic potential, called the availability or exergy E of the subsystem,
 
-        E
-
-        =
-
-        U
-
-        −
-          T
-            R
-        S
-
-        +
-          p
-            R
-        V
-
-        −
-
-        ∑
-          μ
-            i
-
-            R
-          N
-            i
-
 $$ E=U-T_{\text{R}}S+p_{\text{R}}V-\sum \mu _{iR}N_{i} $$
 
 The second law therefore implies that for any process which can be considered as divided simply into a subsystem, and an unlimited temperature and pressure reservoir with which it is in contact,
-
-        d
-
-        E
-
-        +
-
-        δ
-          w
-            u
-        ≤
-
-        0
 
 $$ dE+\delta w_{u}\leq 0 $$
 
@@ -1260,28 +338,9 @@ i.e. the change in the subsystem's exergy plus the useful work done by the subsy
 
 In sum, if a proper infinite-reservoir-like reference state is chosen as the system surroundings in the real world, then the second law predicts a decrease in E for an irreversible process and no change for a reversible process.
 
-        d
-          S
-            tot
-        ≥
-
-        0
-
 $$ dS_{\text{tot}}\geq 0 $$
 
  is equivalent to 
-        d
-
-        E
-
-        +
-
-        δ
-          w
-            u
-        ≤
-
-        0
 
 $$ dE+\delta w_{u}\leq 0 $$
 
@@ -1311,24 +370,9 @@ A solute can travel from a region of lower concentration to a region of higher c
 
 For a spontaneous chemical process in a closed system at constant temperature and pressure without non-PV work, the Clausius inequality ΔS > Q/Tsurr transforms into a condition for the change in Gibbs free energy
 
-        Δ
-
-        G
-
-        <
-
-        0
-
 $$ \Delta G<0 $$
 
 or dG < 0. For a similar process at constant temperature and volume, the change in Helmholtz free energy must be negative, 
-        Δ
-
-        A
-
-        <
-
-        0
 
 $$ \Delta A<0 $$
 
@@ -1337,14 +381,10 @@ $$ \Delta A<0 $$
 ## Statistical mechanics
 
 Statistical mechanics gives an explanation for the second law by postulating that a material is composed of atoms and molecules which are in constant motion. A particular set of positions and velocities for each particle in the system is called a microstate of the system and because of the constant motion, the system is constantly changing its microstate. Statistical mechanics postulates that, in equilibrium, each microstate that the system might be in is equally likely to occur, and when this assumption is made, it leads directly to the conclusion that the second law must hold in a statistical sense. That is, the second law will hold on average, with a statistical variation on the order of 
-        1
-          /
-            N
 
 $$ 1/{\sqrt {N}} $$
 
  where 
-        N
 
 $$ N $$
 
@@ -1357,108 +397,60 @@ The first mechanical argument of the kinetic theory of gases that molecular coll
 Due to Loschmidt's paradox, derivations of the second law have to make an assumption regarding the past, namely that the system is uncorrelated at some time in the past; this allows for simple probabilistic treatment. This assumption is usually thought as a boundary condition, and thus the second law is ultimately a consequence of the initial conditions somewhere in the past, probably at the beginning of the universe (the Big Bang), though other scenarios have also been suggested.
 
 Given these assumptions, in statistical mechanics, the second law is not a postulate, rather it is a consequence of the fundamental postulate, also known as the equal prior probability postulate, so long as one is clear that simple probability arguments are applied only to the future, while for the past there are auxiliary sources of information which tell us that it was low entropy. The first part of the second law, which states that the entropy of a thermally isolated system can only increase, is a trivial consequence of the equal prior probability postulate, if we restrict the notion of the entropy to systems in thermal equilibrium. The entropy of an isolated system in thermal equilibrium containing an amount of energy of 
-        E
 
 $$ E $$
 
  is:
 
-        S
-
-        =
-          k
-              B
-        ln
-
-        ⁡
-          [
-            Ω
-              (
-
-              E
-
-              )
-          ]
-
 $$ S=k_{\mathrm {B} }\ln \left[\Omega \left(E\right)\right] $$
 
 where 
-        Ω
-          (
-
-          E
-
-          )
 
 $$ \Omega \left(E\right) $$
 
  is the number of quantum states in a small interval between 
-        E
 
 $$ E $$
 
  and 
-        E
-
-        +
-
-        δ
-
-        E
 
 $$ E+\delta E $$
 
 . Here 
-        δ
-
-        E
 
 $$ \delta E $$
 
  is a macroscopically small energy interval that is kept fixed. Strictly speaking this means that the entropy depends on the choice of 
-        δ
-
-        E
 
 $$ \delta E $$
 
 . However, in the thermodynamic limit (i.e. in the limit of infinitely large system size), the specific entropy (entropy per unit volume or per unit mass) does not depend on 
-        δ
-
-        E
 
 $$ \delta E $$
 
 .
 
 Suppose we have an isolated system whose macroscopic state is specified by a number of variables. These macroscopic variables can, e.g., refer to the total volume, the positions of pistons in the system, etc. Then 
-        Ω
 
 $$ \Omega $$
 
  will depend on the values of these variables. If a variable is not fixed, (e.g. we do not clamp a piston in a certain position), then because all the accessible states are equally likely in equilibrium, the free variable in equilibrium will be such that 
-        Ω
 
 $$ \Omega $$
 
  is maximized at the given energy of the isolated system as that is the most probable situation in equilibrium.
 
 If the variable was initially fixed to some value then upon release and when the new equilibrium has been reached, the fact the variable will adjust itself so that 
-        Ω
 
 $$ \Omega $$
 
  is maximized, implies that the entropy will have increased or it will have stayed the same (if the value at which the variable was fixed happened to be the equilibrium value).
 
 Suppose we start from an equilibrium situation and we suddenly remove a constraint on a variable. Then right after we do this, there are a number 
-        Ω
 
 $$ \Omega $$
 
  of accessible microstates, but equilibrium has not yet been reached, so the actual probabilities of the system being in some accessible state are not yet equal to the prior probability of 
-        1
-          /
-        Ω
 
 $$ 1/\Omega $$
 
@@ -1468,422 +460,138 @@ $$ 1/\Omega $$
 
 The second part of the second law states that the entropy change of a system undergoing a reversible process is given by:
 
-        d
-
-        S
-
-        =
-              δ
-
-              Q
-            T
-
 $$ dS={\frac {\delta Q}{T}} $$
 
 where the temperature is defined as:
-
-            1
-                k
-                    B
-              T
-        ≡
-
-        β
-
-        ≡
-              d
-
-              ln
-
-              ⁡
-                [
-                  Ω
-                    (
-
-                    E
-
-                    )
-                ]
-              d
-
-              E
 
 $$ {\frac {1}{k_{\mathrm {B} }T}}\equiv \beta \equiv {\frac {d\ln \left[\Omega \left(E\right)\right]}{dE}} $$
 
 See Microcanonical ensemble for the justification for this definition. Suppose that the system has some external parameter, x, that can be changed. In general, the energy eigenstates of the system will depend on x. According to the adiabatic theorem of quantum mechanics, in the limit of an infinitely slow change of the system's Hamiltonian, the system will stay in the same energy eigenstate and thus change its energy according to the change in energy of the energy eigenstate it is in.
 
 The generalized force, X, corresponding to the external variable x is defined such that 
-        X
-
-        d
-
-        x
 
 $$ Xdx $$
 
  is the work performed by the system if x is increased by an amount dx. For example, if x is the volume, then X is the pressure. The generalized force for a system known to be in energy eigenstate 
-          E
-            r
 
 $$ E_{r} $$
 
  is given by:
 
-        X
-
-        =
-
-        −
-              d
-                E
-                  r
-              d
-
-              x
-
 $$ X=-{\frac {dE_{r}}{dx}} $$
 
 Since the system can be in any energy eigenstate within an interval of 
-        δ
-
-        E
 
 $$ \delta E $$
 
 , we define the generalized force for the system as the expectation value of the above expression:
 
-        X
-
-        =
-
-        −
-          ⟨
-                d
-                  E
-                    r
-                d
-
-                x
-          ⟩
-
 $$ X=-\left\langle {\frac {dE_{r}}{dx}}\right\rangle \, $$
 
 To evaluate the average, we partition the 
-        Ω
-          (
-
-          E
-
-          )
 
 $$ \Omega \left(E\right) $$
 
  energy eigenstates by counting how many of them have a value for 
-              d
-                E
-                  r
-              d
-
-              x
 
 $$ {\frac {dE_{r}}{dx}} $$
 
  within a range between 
-        Y
 
 $$ Y $$
 
  and 
-        Y
-
-        +
-
-        δ
-
-        Y
 
 $$ Y+\delta Y $$
 
 . Calling this number 
-          Ω
-            Y
-          (
-
-          E
-
-          )
 
 $$ \Omega _{Y}\left(E\right) $$
 
 , we have:
 
-        Ω
-          (
-
-          E
-
-          )
-        =
-          ∑
-            Y
-          Ω
-            Y
-          (
-
-          E
-
-          )
-
 $$ \Omega \left(E\right)=\sum _{Y}\Omega _{Y}\left(E\right)\, $$
 
 The average defining the generalized force can now be written:
 
-        X
-
-        =
-
-        −
-            1
-              Ω
-                (
-
-                E
-
-                )
-          ∑
-            Y
-        Y
-          Ω
-            Y
-          (
-
-          E
-
-          )
-
 $$ X=-{\frac {1}{\Omega \left(E\right)}}\sum _{Y}Y\Omega _{Y}\left(E\right)\, $$
 
 We can relate this to the derivative of the entropy with respect to x at constant energy E as follows. Suppose we change x to x + dx. Then 
-        Ω
-          (
-
-          E
-
-          )
 
 $$ \Omega \left(E\right) $$
 
  will change because the energy eigenstates depend on x, causing energy eigenstates to move into or out of the range between 
-        E
 
 $$ E $$
 
  and 
-        E
-
-        +
-
-        δ
-
-        E
 
 $$ E+\delta E $$
 
 . Let's focus again on the energy eigenstates for which 
-              d
-                E
-                  r
-              d
 
-              x
-    {\textstyle {\frac {dE_{r}}{dx}}}
+{\textstyle {\frac {dE_{r}}{dx}}}
  lies within the range between 
-        Y
 
 $$ Y $$
 
  and 
-        Y
-
-        +
-
-        δ
-
-        Y
 
 $$ Y+\delta Y $$
 
 . Since these energy eigenstates increase in energy by Y dx, all such energy eigenstates that are in the interval ranging from E – Y dx to E move from below E to above E. There are
 
-          N
-            Y
-          (
-
-          E
-
-          )
-        =
-                Ω
-                  Y
-                (
-
-                E
-
-                )
-              δ
-
-              E
-        Y
-
-        d
-
-        x
-
 $$ N_{Y}\left(E\right)={\frac {\Omega _{Y}\left(E\right)}{\delta E}}Ydx\, $$
 
 such energy eigenstates. If 
-        Y
-
-        d
-
-        x
-
-        ≤
-
-        δ
-
-        E
 
 $$ Ydx\leq \delta E $$
 
 , all these energy eigenstates will move into the range between 
-        E
 
 $$ E $$
 
  and 
-        E
-
-        +
-
-        δ
-
-        E
 
 $$ E+\delta E $$
 
  and contribute to an increase in 
-        Ω
 
 $$ \Omega $$
 
 . The number of energy eigenstates that move from below 
-        E
-
-        +
-
-        δ
-
-        E
 
 $$ E+\delta E $$
 
  to above 
-        E
-
-        +
-
-        δ
-
-        E
 
 $$ E+\delta E $$
 
  is given by 
-          N
-            Y
-          (
-            E
-
-            +
-
-            δ
-
-            E
-          )
 
 $$ N_{Y}\left(E+\delta E\right) $$
 
 . The difference
 
-          N
-            Y
-          (
-
-          E
-
-          )
-        −
-          N
-            Y
-          (
-            E
-
-            +
-
-            δ
-
-            E
-          )
-
 $$ N_{Y}\left(E\right)-N_{Y}\left(E+\delta E\right)\, $$
 
 is thus the net contribution to the increase in 
-        Ω
 
 $$ \Omega $$
 
 . If Y dx is larger than 
-        δ
-
-        E
 
 $$ \delta E $$
 
  there will be the energy eigenstates that move from below E to above 
-        E
-
-        +
-
-        δ
-
-        E
 
 $$ E+\delta E $$
 
 . They are counted in both 
-          N
-            Y
-          (
-
-          E
-
-          )
 
 $$ N_{Y}\left(E\right) $$
 
  and 
-          N
-            Y
-          (
-            E
-
-            +
-
-            δ
-
-            E
-          )
 
 $$ N_{Y}\left(E+\delta E\right) $$
 
@@ -1891,176 +599,25 @@ $$ N_{Y}\left(E+\delta E\right) $$
 
 Expressing the above expression as a derivative with respect to E and summing over Y yields the expression:
 
-            (
-                  ∂
-
-                  Ω
-                  ∂
-
-                  x
-            )
-            E
-        =
-
-        −
-          ∑
-            Y
-        Y
-            (
-                  ∂
-                    Ω
-                      Y
-                  ∂
-
-                  E
-            )
-            x
-        =
-            (
-                  ∂
-                    (
-                      Ω
-
-                      X
-                    )
-                  ∂
-
-                  E
-            )
-            x
-
 $$ \left({\frac {\partial \Omega }{\partial x}}\right)_{E}=-\sum _{Y}Y\left({\frac {\partial \Omega _{Y}}{\partial E}}\right)_{x}=\left({\frac {\partial \left(\Omega X\right)}{\partial E}}\right)_{x}\, $$
 
 The logarithmic derivative of 
-        Ω
 
 $$ \Omega $$
 
  with respect to x is thus given by:
 
-            (
-                  ∂
-
-                  ln
-
-                  ⁡
-                    (
-
-                    Ω
-
-                    )
-                  ∂
-
-                  x
-            )
-            E
-        =
-
-        β
-
-        X
-
-        +
-            (
-                  ∂
-
-                  X
-                  ∂
-
-                  E
-            )
-            x
-
 $$ \left({\frac {\partial \ln \left(\Omega \right)}{\partial x}}\right)_{E}=\beta X+\left({\frac {\partial X}{\partial E}}\right)_{x}\, $$
 
 The first term is intensive, i.e. it does not scale with system size. In contrast, the last term scales as the inverse system size and will thus vanish in the thermodynamic limit. We have thus found that:
-
-            (
-                  ∂
-
-                  S
-                  ∂
-
-                  x
-            )
-            E
-        =
-            X
-
-            T
 
 $$ \left({\frac {\partial S}{\partial x}}\right)_{E}={\frac {X}{T}}\, $$
 
 Combining this with
 
-            (
-                  ∂
-
-                  S
-                  ∂
-
-                  E
-            )
-            x
-        =
-            1
-
-            T
-
 $$ \left({\frac {\partial S}{\partial E}}\right)_{x}={\frac {1}{T}}\, $$
 
 gives:
-
-        d
-
-        S
-
-        =
-            (
-                  ∂
-
-                  S
-                  ∂
-
-                  E
-            )
-            x
-        d
-
-        E
-
-        +
-            (
-                  ∂
-
-                  S
-                  ∂
-
-                  x
-            )
-            E
-        d
-
-        x
-
-        =
-              d
-
-              E
-            T
-        +
-            X
-
-            T
-        d
-
-        x
-
-        =
-              δ
-
-              Q
-            T
 
 $$ dS=\left({\frac {\partial S}{\partial E}}\right)_{x}dE+\left({\frac {\partial S}{\partial x}}\right)_{E}dx={\frac {dE}{T}}+{\frac {X}{T}}dx={\frac {\delta Q}{T}}\, $$
 
@@ -2068,136 +625,21 @@ $$ dS=\left({\frac {\partial S}{\partial E}}\right)_{x}dE+\left({\frac {\partial
 
 If a system is in thermal contact with a heat bath at some temperature T then, in equilibrium, the probability distribution over the energy eigenvalues are given by the canonical ensemble:
 
-          P
-            j
-        =
-              exp
-
-              ⁡
-                (
-                  −
-                        E
-                          j
-                          k
-                              B
-                        T
-                )
-            Z
-
 $$ P_{j}={\frac {\exp \left(-{\frac {E_{j}}{k_{\mathrm {B} }T}}\right)}{Z}} $$
 
 Here Z is a factor that normalizes the sum of all the probabilities to 1, this function is known as the partition function. We now consider an infinitesimal reversible change in the temperature and in the external parameters on which the energy levels depend. It follows from the general formula for the entropy:
-
-        S
-
-        =
-
-        −
-          k
-              B
-          ∑
-            j
-          P
-            j
-        ln
-
-        ⁡
-          (
-            P
-              j
-          )
 
 $$ S=-k_{\mathrm {B} }\sum _{j}P_{j}\ln \left(P_{j}\right) $$
 
 that
 
-        d
-
-        S
-
-        =
-
-        −
-          k
-              B
-          ∑
-            j
-        ln
-
-        ⁡
-          (
-            P
-              j
-          )
-        d
-          P
-            j
-
 $$ dS=-k_{\mathrm {B} }\sum _{j}\ln \left(P_{j}\right)dP_{j} $$
 
 Inserting the formula for 
-          P
-            j
 
 $$ P_{j} $$
 
  for the canonical ensemble in here gives:
-
-        d
-
-        S
-
-        =
-            1
-
-            T
-          ∑
-            j
-          E
-            j
-        d
-          P
-            j
-        =
-            1
-
-            T
-          ∑
-            j
-        d
-          (
-              E
-                j
-              P
-                j
-          )
-        −
-            1
-
-            T
-          ∑
-            j
-          P
-            j
-        d
-          E
-            j
-        =
-              d
-
-              E
-
-              +
-
-              δ
-
-              W
-            T
-        =
-              δ
-
-              Q
-            T
 
 $$ dS={\frac {1}{T}}\sum _{j}E_{j}dP_{j}={\frac {1}{T}}\sum _{j}d\left(E_{j}P_{j}\right)-{\frac {1}{T}}\sum _{j}P_{j}dE_{j}={\frac {dE+\delta W}{T}}={\frac {\delta Q}{T}} $$
 

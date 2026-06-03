@@ -23,8 +23,7 @@ L is a characteristic length (m)
 
 μ is the dynamic viscosity of the fluid (Pa·s or N·s/m2 or kg/(m·s))
 
-        ν
-    {\displaystyle \nu }
+{\displaystyle \nu }
  is the kinematic viscosity of the fluid (m2/s).
 
 These are generally not independent numbers: liquids generally get less viscous as they become hotter, while gases generally become more viscous.  Both will generally become less dense as they become hotter, although the effect is substantially more pronounced in gases.  For a (solid) object in a fluid, the characteristic length will vary with temperature - solids are typically even less temperature sensitive than liquids when it comes to density, but at sufficient flow speeds, the amount of frictional heat from traversing the fluid can be substantial.
@@ -35,262 +34,56 @@ In practice, matching the Reynolds number is not on its own sufficient to guaran
 
 ## Derivation
 If we know that the relevant physical quantities in a physical system are only 
-        ρ
 
-        ,
-
-        u
-
-        ,
-
-        L
-
-        ,
-
-        μ
-    {\displaystyle \rho ,u,L,\mu }
+{\displaystyle \rho ,u,L,\mu }
 , then the Reynolds number is essentially fixed by the Buckingham π theorem.
 
 In detail, since there are 4 quantities 
-        ρ
 
-        ,
-
-        u
-
-        ,
-
-        L
-
-        ,
-
-        μ
-    {\displaystyle \rho ,u,L,\mu }
+{\displaystyle \rho ,u,L,\mu }
 , but they have only 3 dimensions (length, time, mass), we can consider 
-          ρ
-              x
-                1
-          u
-              x
-                2
-          L
-              x
-                3
-          μ
-              x
-                4
-    {\displaystyle \rho ^{x_{1}}u^{x_{2}}L^{x_{3}}\mu ^{x_{4}}}
+{\displaystyle \rho ^{x_{1}}u^{x_{2}}L^{x_{3}}\mu ^{x_{4}}}
 , where 
-          x
-            1
-        ,
 
-        .
-
-        .
-
-        .
-
-        ,
-          x
-            4
-    {\displaystyle x_{1},...,x_{4}}
+{\displaystyle x_{1},...,x_{4}}
  are real numbers. Setting the three dimensions of 
-          ρ
-              x
-                1
-          u
-              x
-                2
-          L
-              x
-                3
-          μ
-              x
-                4
-    {\displaystyle \rho ^{x_{1}}u^{x_{2}}L^{x_{3}}\mu ^{x_{4}}}
+{\displaystyle \rho ^{x_{1}}u^{x_{2}}L^{x_{3}}\mu ^{x_{4}}}
  to zero, we obtain 3 independent linear constraints, so the solution space has 1 dimension, and it is spanned by the vector 
-        (
 
-        1
-
-        ,
-
-        1
-
-        ,
-
-        1
-
-        ,
-
-        −
-
-        1
-
-        )
-    {\displaystyle (1,1,1,-1)}
+{\displaystyle (1,1,1,-1)}
 .
 
 Thus, any dimensionless quantity constructed out of 
-        ρ
 
-        ,
-
-        u
-
-        ,
-
-        L
-
-        ,
-
-        μ
-    {\displaystyle \rho ,u,L,\mu }
+{\displaystyle \rho ,u,L,\mu }
  is a function of 
-        ρ
 
-        u
-
-        L
-          μ
-            −
-
-            1
-    {\displaystyle \rho uL\mu ^{-1}}
+{\displaystyle \rho uL\mu ^{-1}}
 , the Reynolds number.
 
 Alternatively, we can take the incompressible Navier–Stokes equations (convective form):
-              ∂
-                u
-              ∂
 
-              t
-        +
-
-        (
-          u
-        ⋅
-
-        ∇
-
-        )
-          u
-        −
-
-        ν
-          ∇
-            2
-          u
-        =
-
-        −
-            1
-
-            ρ
-        ∇
-
-        p
-
-        +
-          g
-    {\displaystyle {\frac {\partial \mathbf {u} }{\partial t}}+(\mathbf {u} \cdot \nabla )\mathbf {u} -\nu \,\nabla ^{2}\mathbf {u} =-{\frac {1}{\rho }}\nabla p+\mathbf {g} }
+{\displaystyle {\frac {\partial \mathbf {u} }{\partial t}}+(\mathbf {u} \cdot \nabla )\mathbf {u} -\nu \,\nabla ^{2}\mathbf {u} =-{\frac {1}{\rho }}\nabla p+\mathbf {g} }
 Remove the gravity term 
-            g
-    {\displaystyle {\mathbf {g}}}
+{\displaystyle {\mathbf {g}}}
 , then the left side consists of inertial force 
-              ∂
-                u
-              ∂
 
-              t
-        +
-
-        (
-          u
-        ⋅
-
-        ∇
-
-        )
-          u
-    {\displaystyle {\frac {\partial \mathbf {u} }{\partial t}}+(\mathbf {u} \cdot \nabla )\mathbf {u} }
+{\displaystyle {\frac {\partial \mathbf {u} }{\partial t}}+(\mathbf {u} \cdot \nabla )\mathbf {u} }
 , and viscous force 
-        ν
-          ∇
-            2
-          u
-    {\displaystyle \nu \,\nabla ^{2}\mathbf {u} }
+{\displaystyle \nu \,\nabla ^{2}\mathbf {u} }
 . Their ratio has the order of 
-              (
-                u
-              ⋅
 
-              ∇
-
-              )
-                u
-              ν
-                ∇
-                  2
-                u
-        ∼
-                u
-                  2
-                /
-              L
-              ν
-
-              u
-                /
-                L
-                  2
-        =
-              u
-
-              L
-            ν
-    {\displaystyle {\frac {(\mathbf {u} \cdot \nabla )\mathbf {u} }{\nu \,\nabla ^{2}\mathbf {u} }}\sim {\frac {u^{2}/L}{\nu u/L^{2}}}={\frac {uL}{\nu }}}
+{\displaystyle {\frac {(\mathbf {u} \cdot \nabla )\mathbf {u} }{\nu \,\nabla ^{2}\mathbf {u} }}\sim {\frac {u^{2}/L}{\nu u/L^{2}}}={\frac {uL}{\nu }}}
 , the Reynolds number. This argument is written out in detail on the Scallop theorem page.
 
 ### Alternative derivation
 The Reynolds number can be obtained when one uses the nondimensional form of the incompressible Navier–Stokes equations for a newtonian fluid expressed in terms of the Lagrangian derivative:
 
-        ρ
-              D
-                v
-              D
-
-              t
-        =
-
-        −
-
-        ∇
-
-        p
-
-        +
-
-        μ
-          ∇
-            2
-          v
-        +
-
-        ρ
-          f
-        .
-    {\displaystyle \rho {\frac {D\mathbf {v} }{Dt}}=-\nabla p+\mu \nabla ^{2}\mathbf {v} +\rho \mathbf {f} .}
+{\displaystyle \rho {\frac {D\mathbf {v} }{Dt}}=-\nabla p+\mu \nabla ^{2}\mathbf {v} +\rho \mathbf {f} .}
 
 Each term in the above equation has the units of a "body force" (force per unit volume) with the same dimensions of a density multiplied by an acceleration. Each term is thus dependent on the exact measurements of a flow. When we render the equation nondimensional, that is when we multiply it by a factor with inverse units of the base equation, we obtain a form that does not depend directly on the physical sizes. One possible way to obtain a nondimensional equation is to multiply the whole equation by the factor
 
-            L
-              ρ
-                V
-                  2
-        ,
-    {\displaystyle {\frac {L}{\rho V^{2}}},}
+{\displaystyle {\frac {L}{\rho V^{2}}},}
 
 where
 
@@ -302,161 +95,24 @@ L is the characteristic length (m),
 
 If we now set
 
-                    v
-                  ′
-                =
-                      v
-                    V
-                ,
-                  p
-
-                  ′
-                =
-
-                p
-                    1
-                      ρ
-                        V
-                          2
-                ,
-                    f
-                  ′
-                =
-                  f
-                    L
-                      V
-                        2
-                ,
-                    ∂
-                      ∂
-                        t
-
-                        ′
-                =
-                    L
-
-                    V
-                    ∂
-                      ∂
-
-                      t
-                ,
-                  ∇
-
-                  ′
-                =
-
-                L
-
-                ∇
-
-                ,
-    {\displaystyle {\begin{aligned}\mathbf {v} '&={\frac {\mathbf {v} }{V}},&p'&=p{\frac {1}{\rho V^{2}}},&\mathbf {f} '&=\mathbf {f} {\frac {L}{V^{2}}},&{\frac {\partial }{\partial t'}}&={\frac {L}{V}}{\frac {\partial }{\partial t}},&\nabla '&=L\nabla ,\end{aligned}}}
+{\displaystyle {\begin{aligned}\mathbf {v} '&={\frac {\mathbf {v} }{V}},&p'&=p{\frac {1}{\rho V^{2}}},&\mathbf {f} '&=\mathbf {f} {\frac {L}{V^{2}}},&{\frac {\partial }{\partial t'}}&={\frac {L}{V}}{\frac {\partial }{\partial t}},&\nabla '&=L\nabla ,\end{aligned}}}
 
 we can rewrite the Navier–Stokes equation without dimensions:
 
-              D
-                  v
-                ′
-              D
-                t
-
-                ′
-        =
-
-        −
-          ∇
-
-          ′
-          p
-
-          ′
-        +
-            μ
-              ρ
-
-              L
-
-              V
-          ∇
-            ′
-              2
-            v
-          ′
-        +
-            f
-          ′
-        ,
-    {\displaystyle {\frac {D\mathbf {v} '}{Dt'}}=-\nabla 'p'+{\frac {\mu }{\rho LV}}\nabla '^{2}\mathbf {v} '+\mathbf {f} ',}
+{\displaystyle {\frac {D\mathbf {v} '}{Dt'}}=-\nabla 'p'+{\frac {\mu }{\rho LV}}\nabla '^{2}\mathbf {v} '+\mathbf {f} ',}
 
 where the term ⁠μ/ρLV⁠ = ⁠1/Re⁠.
 
 Finally, dropping the primes for ease of reading:
 
-              D
-                v
-              D
-
-              t
-        =
-
-        −
-
-        ∇
-
-        p
-
-        +
-            1
-              R
-
-              e
-          ∇
-            2
-          v
-        +
-          f
-        .
-    {\displaystyle {\frac {D\mathbf {v} }{Dt}}=-\nabla p+{\frac {1}{\mathrm {Re} }}\nabla ^{2}\mathbf {v} +\mathbf {f} .}
+{\displaystyle {\frac {D\mathbf {v} }{Dt}}=-\nabla p+{\frac {1}{\mathrm {Re} }}\nabla ^{2}\mathbf {v} +\mathbf {f} .}
 
 This is why mathematically all Newtonian, incompressible flows with the same Reynolds number are comparable. Notice also that in the above equation, the viscous terms vanish for Re → ∞. Thus flows with high Reynolds numbers are approximately inviscid in the free stream.
 
 ## Flow in a pipe
 For flow in a pipe or tube, the Reynolds number is generally defined as
 
-          R
-
-          e
-        =
-              u
-                D
-                  H
-            ν
-        =
-              ρ
-
-              u
-                D
-                  H
-            μ
-        =
-              ρ
-
-              Q
-                D
-                  H
-              μ
-
-              A
-        =
-              W
-                D
-                  H
-              μ
-
-              A
-        ,
-    {\displaystyle \mathrm {Re} ={\frac {uD_{\text{H}}}{\nu }}={\frac {\rho uD_{\text{H}}}{\mu }}={\frac {\rho QD_{\text{H}}}{\mu A}}={\frac {WD_{\text{H}}}{\mu A}},}
+{\displaystyle \mathrm {Re} ={\frac {uD_{\text{H}}}{\nu }}={\frac {\rho uD_{\text{H}}}{\mu }}={\frac {\rho QD_{\text{H}}}{\mu A}}={\frac {WD_{\text{H}}}{\mu A}},}
 
 where
 
@@ -478,41 +134,17 @@ W is the mass flowrate of the fluid (kg/s).
 
 For shapes such as squares, rectangular or annular ducts where the height and width are comparable, the characteristic dimension for internal-flow situations is taken to be the hydraulic diameter, DH, defined as
 
-          D
-            H
-        =
-              4
-
-              A
-            P
-        ,
-    {\displaystyle D_{\text{H}}={\frac {4A}{P}},}
+{\displaystyle D_{\text{H}}={\frac {4A}{P}},}
 
 where A is the cross-sectional area, and P is the wetted perimeter. The wetted perimeter for a channel is the total perimeter of all channel walls that are in contact with the flow. This means that the length of the channel exposed to air is not included in the wetted perimeter.
 
 For a circular pipe, the hydraulic diameter is exactly equal to the inside pipe diameter:
 
-          D
-            H
-        =
-
-        D
-
-        .
-    {\displaystyle D_{\text{H}}=D.}
+{\displaystyle D_{\text{H}}=D.}
 
 For an annular duct, such as the outer channel in a tube-in-tube heat exchanger, the hydraulic diameter can be shown algebraically to reduce to
 
-          D
-            H,annulus
-        =
-          D
-            o
-        −
-          D
-            i
-        ,
-    {\displaystyle D_{\text{H,annulus}}=D_{\text{o}}-D_{\text{i}},}
+{\displaystyle D_{\text{H,annulus}}=D_{\text{o}}-D_{\text{i}},}
 
 where
 
@@ -568,57 +200,15 @@ The particle Reynolds number is important in determining the terminal velocity o
 ### Packed bed
 For fluid flow through a bed, of approximately spherical particles of diameter D in contact, if the voidage is ε and the superficial velocity is vs, the Reynolds number can be defined as
 
-          R
-
-          e
-        =
-              ρ
-                v
-                  s
-              D
-            μ
-        ,
-    {\displaystyle \mathrm {Re} ={\frac {\rho v_{\text{s}}D}{\mu }},}
+{\displaystyle \mathrm {Re} ={\frac {\rho v_{\text{s}}D}{\mu }},}
 
 or
 
-          R
-
-          e
-        =
-              ρ
-                v
-                  s
-              D
-              μ
-
-              ε
-        ,
-    {\displaystyle \mathrm {Re} ={\frac {\rho v_{\text{s}}D}{\mu \varepsilon }},}
+{\displaystyle \mathrm {Re} ={\frac {\rho v_{\text{s}}D}{\mu \varepsilon }},}
 
 or
 
-          R
-
-          e
-        =
-              ρ
-                v
-                  s
-              D
-              μ
-
-              (
-
-              1
-
-              −
-
-              ε
-
-              )
-        .
-    {\displaystyle \mathrm {Re} ={\frac {\rho v_{\text{s}}D}{\mu (1-\varepsilon )}}.}
+{\displaystyle \mathrm {Re} ={\frac {\rho v_{\text{s}}D}{\mu (1-\varepsilon )}}.}
 
 The choice of equation depends on the system involved: the first is successful in correlating the data for various types of packed and fluidized beds, the second Reynolds number suits for the liquid-phase data, while the third was found successful in correlating the fluidized bed data, being first introduced for liquid fluidized bed system.
 
@@ -627,25 +217,7 @@ Laminar conditions apply up to Re = 10, fully turbulent from Re = 2000.
 ### Stirred vessel
 In a cylindrical vessel stirred by a central rotating paddle, turbine or propeller, the characteristic dimension is the diameter of the agitator D. The velocity V is ND where N is the rotational speed in rad per second. Then the Reynolds number is:
 
-          R
-
-          e
-        =
-              ρ
-
-              N
-                D
-                  2
-            μ
-        =
-              ρ
-
-              V
-
-              D
-            μ
-        .
-    {\displaystyle \mathrm {Re} ={\frac {\rho ND^{2}}{\mu }}={\frac {\rho VD}{\mu }}.}
+{\displaystyle \mathrm {Re} ={\frac {\rho ND^{2}}{\mu }}={\frac {\rho VD}{\mu }}.}
 
 The system is fully turbulent for values of Re above 10000.
 
@@ -657,55 +229,19 @@ Pressure drops seen for fully developed flow of fluids through pipes can be pred
 
 In order for two flows to be similar, they must have the same geometry and equal Reynolds and Euler numbers. When comparing fluid behavior at corresponding points in a model and a full-scale flow, the following holds:
 
-                    R
-
-                    e
-                    m
-                =
-                  R
-
-                  e
-                ,
-                    E
-
-                    u
-                    m
-                =
-                  E
-
-                  u
-                ,
-    {\displaystyle {\begin{aligned}\mathrm {Re} _{\text{m}}&=\mathrm {Re} ,\\\mathrm {Eu} _{\text{m}}&=\mathrm {Eu} ,\end{aligned}}}
+{\displaystyle {\begin{aligned}\mathrm {Re} _{\text{m}}&=\mathrm {Re} ,\\\mathrm {Eu} _{\text{m}}&=\mathrm {Eu} ,\end{aligned}}}
 
 where 
-            R
 
-            e
-            m
-    {\displaystyle \mathrm {Re} _{\text{m}}}
+{\displaystyle \mathrm {Re} _{\text{m}}}
  is the Reynolds number for the model, and 
-          R
 
-          e
-    {\displaystyle \mathrm {Re} }
+{\displaystyle \mathrm {Re} }
  is full-scale Reynolds number, and similarly for the Euler numbers.
 
 The model numbers and design numbers should be in the same proportion, hence
 
-              p
-                m
-                ρ
-                  m
-                v
-                  m
-                  2
-        =
-            p
-              ρ
-                v
-                  2
-        .
-    {\displaystyle {\frac {p_{\text{m}}}{\rho _{\text{m}}v_{\text{m}}^{2}}}={\frac {p}{\rho v^{2}}}.}
+{\displaystyle {\frac {p_{\text{m}}}{\rho _{\text{m}}v_{\text{m}}^{2}}}={\frac {p}{\rho v^{2}}}.}
 
 This allows engineers to perform experiments with reduced scale models in water channels or wind tunnels and correlate the data to the actual flows, saving on costs during experimentation and on lab time. Note that true dynamic similitude may require matching other dimensionless numbers as well, such as the Mach number used in compressible flows, or the Froude number that governs open-channel flows. Some flows involve more dimensionless parameters than can be practically satisfied with the available apparatus and fluids, so one is forced to decide which parameters are most important. For experimental flow modeling to be useful, it requires a fair amount of experience and judgment of the engineer.
 

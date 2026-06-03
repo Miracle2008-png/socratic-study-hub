@@ -49,79 +49,29 @@ Large masses of material are moved in debris flows, hyperconcentrated mixtures o
 
 ### Stress balance
 For a fluid to begin transporting sediment that is currently at rest on a surface, the boundary (or bed) shear stress 
-          τ
-            b
-    {\displaystyle \tau _{b}}
+{\displaystyle \tau _{b}}
  exerted by the fluid must exceed the critical shear stress 
-          τ
-            c
-    {\displaystyle \tau _{c}}
+{\displaystyle \tau _{c}}
  for the initiation of motion of grains at the bed. This basic criterion for the initiation of motion can be written as:
 
-          τ
-            b
-        =
-          τ
-            c
-    {\displaystyle \tau _{b}=\tau _{c}}
+{\displaystyle \tau _{b}=\tau _{c}}
 .
 
 This is typically represented by a comparison between a dimensionless shear stress 
-          τ
-            b
-        ∗
-    {\displaystyle \tau _{b}*}
+{\displaystyle \tau _{b}*}
  and a dimensionless critical shear stress 
-          τ
-            c
-        ∗
-    {\displaystyle \tau _{c}*}
+{\displaystyle \tau _{c}*}
 . The nondimensionalization is in order to compare the driving forces of particle motion (shear stress) to the resisting forces that would make it stationary (particle density and size). This dimensionless shear stress, 
-        τ
 
-        ∗
-    {\displaystyle \tau *}
+{\displaystyle \tau *}
 , is called the Shields parameter and is defined as:
 
-        τ
-
-        ∗
-
-        =
-            τ
-              (
-                ρ
-                  s
-              −
-                ρ
-                  f
-              )
-
-              (
-
-              g
-
-              )
-
-              (
-
-              D
-
-              )
-    {\displaystyle \tau *={\frac {\tau }{(\rho _{s}-\rho _{f})(g)(D)}}}
+{\displaystyle \tau *={\frac {\tau }{(\rho _{s}-\rho _{f})(g)(D)}}}
 .
 
 And the new equation to solve becomes:
 
-          τ
-            b
-        ∗
-
-        =
-          τ
-            c
-        ∗
-    {\displaystyle \tau _{b}*=\tau _{c}*}
+{\displaystyle \tau _{b}*=\tau _{c}*}
 .
 
 The equations included here describe sediment transport for clastic, or granular sediment. They do not work for clays and muds because these types of floccular sediments do not fit the geometric simplifications in these equations, and also interact thorough electrostatic forces. The equations were also designed for fluvial sediment transport of particles carried along in a liquid flow, such as that in a river, canal, or other open channel.
@@ -131,345 +81,115 @@ Only one size of particle is considered in this equation. However, river beds ar
 ### Critical shear stress
 
 The Shields diagram empirically shows how the dimensionless critical shear stress (i.e. the dimensionless shear stress required for the initiation of motion) is a function of a particular form of the particle Reynolds number, 
-            R
 
-            e
-            p
-    {\displaystyle \mathrm {Re} _{p}}
+{\displaystyle \mathrm {Re} _{p}}
  or Reynolds number related to the particle. This allows the criterion for the initiation of motion to be rewritten in terms of a solution for a specific version of the particle Reynolds number, called 
-            R
 
-            e
-            p
-        ∗
-    {\displaystyle \mathrm {Re} _{p}*}
+{\displaystyle \mathrm {Re} _{p}*}
 .
 
-          τ
-            b
-        ∗
-
-        =
-
-        f
-          (
-                R
-
-                e
-                p
-            ∗
-          )
-    {\displaystyle \tau _{b}*=f\left(\mathrm {Re} _{p}*\right)}
+{\displaystyle \tau _{b}*=f\left(\mathrm {Re} _{p}*\right)}
 
 This can then be solved by using the empirically derived Shields curve to find 
-          τ
-            c
-        ∗
-    {\displaystyle \tau _{c}*}
+{\displaystyle \tau _{c}*}
  as a function of a specific form of the particle Reynolds number called the boundary Reynolds number. The mathematical solution of the equation was given by Dey.
 
 ### Particle Reynolds number
 In general, a particle Reynolds number has the form:
 
-            R
-
-            e
-            p
-        =
-                U
-                  p
-              D
-            ν
-    {\displaystyle \mathrm {Re} _{p}={\frac {U_{p}D}{\nu }}}
+{\displaystyle \mathrm {Re} _{p}={\frac {U_{p}D}{\nu }}}
 
 Where 
-          U
-            p
-    {\displaystyle U_{p}}
+{\displaystyle U_{p}}
  is a characteristic particle velocity, 
-        D
-    {\displaystyle D}
  is the grain diameter (a characteristic particle size), and 
-        ν
-    {\displaystyle \nu }
+{\displaystyle \nu }
  is the kinematic viscosity, which is given by the dynamic viscosity, 
-        μ
-    {\displaystyle \mu }
+{\displaystyle \mu }
 , divided by the fluid density, 
-            ρ
-              f
-    {\displaystyle {\rho _{f}}}
+{\displaystyle {\rho _{f}}}
 .
 
-        ν
-
-        =
-            μ
-              ρ
-                f
-    {\displaystyle \nu ={\frac {\mu }{\rho _{f}}}}
+{\displaystyle \nu ={\frac {\mu }{\rho _{f}}}}
 
 The specific particle Reynolds number of interest is called the boundary Reynolds number, and it is formed by replacing the velocity term in the particle Reynolds number by the shear velocity, 
-          u
-            ∗
-    {\displaystyle u_{*}}
+{\displaystyle u_{*}}
 , which is a way of rewriting shear stress in terms of velocity.
 
-          u
-            ∗
-        =
-                τ
-                  b
-                ρ
-                  f
-        =
-
-        κ
-
-        z
-              ∂
-
-              u
-              ∂
-
-              z
-    {\displaystyle u_{*}={\sqrt {\frac {\tau _{b}}{\rho _{f}}}}=\kappa z{\frac {\partial u}{\partial z}}}
+{\displaystyle u_{*}={\sqrt {\frac {\tau _{b}}{\rho _{f}}}}=\kappa z{\frac {\partial u}{\partial z}}}
 
 where 
-          τ
-            b
-    {\displaystyle \tau _{b}}
+{\displaystyle \tau _{b}}
  is the bed shear stress (described below), and 
-        κ
-    {\displaystyle \kappa }
+{\displaystyle \kappa }
  is the von Kármán constant, where
 
-        κ
-
-        =
           0.407
-    {\displaystyle \kappa ={0.407}}
+{\displaystyle \kappa ={0.407}}
 .
 
 The particle Reynolds number is therefore given by:
 
-            R
-
-            e
-            p
-        ∗
-
-        =
-                u
-                  ∗
-              D
-            ν
-    {\displaystyle \mathrm {Re} _{p}*={\frac {u_{*}D}{\nu }}}
+{\displaystyle \mathrm {Re} _{p}*={\frac {u_{*}D}{\nu }}}
 
 ### Bed shear stress
 The boundary Reynolds number can be used with the Shields diagram to empirically solve the equation
 
-          τ
-            c
-        ∗
-
-        =
-
-        f
-          (
-                R
-
-                e
-                p
-            ∗
-          )
-    {\displaystyle \tau _{c}*=f\left(\mathrm {Re} _{p}*\right)}
+{\displaystyle \tau _{c}*=f\left(\mathrm {Re} _{p}*\right)}
 ,
 
 which solves the right-hand side of the equation
 
-          τ
-            b
-        ∗
-
-        =
-          τ
-            c
-        ∗
-    {\displaystyle \tau _{b}*=\tau _{c}*}
+{\displaystyle \tau _{b}*=\tau _{c}*}
 .
 
 In order to solve the left-hand side, expanded as
 
-          τ
-            b
-        ∗
-
-        =
-              τ
-                b
-              (
-                ρ
-                  s
-              −
-                ρ
-                  f
-              )
-
-              (
-
-              g
-
-              )
-
-              (
-
-              D
-
-              )
-    {\displaystyle \tau _{b}*={\frac {\tau _{b}}{(\rho _{s}-\rho _{f})(g)(D)}}}
+{\displaystyle \tau _{b}*={\frac {\tau _{b}}{(\rho _{s}-\rho _{f})(g)(D)}}}
 ,
 
 the bed shear stress needs to be found, 
-            τ
-              b
-    {\displaystyle {\tau _{b}}}
+{\displaystyle {\tau _{b}}}
 . There are several ways to solve for the bed shear stress. The simplest approach is to assume the flow is steady and uniform, using the reach-averaged depth and slope. because it is difficult to measure shear stress in situ, this method is also one of the most-commonly used. The method is known as the depth-slope product.
 
 #### Depth-slope product
 
 For a river undergoing approximately steady, uniform equilibrium flow, of approximately constant depth h and slope angle θ over the reach of interest, and whose width is much greater than its depth, the bed shear stress is given by some momentum considerations stating that the gravity force component in the flow direction equals exactly the friction force. For a wide channel, it yields:
 
-          τ
-            b
-        =
-
-        ρ
-
-        g
-
-        h
-
-        sin
-
-        ⁡
-
-        (
-
-        θ
-
-        )
-    {\displaystyle \tau _{b}=\rho gh\sin(\theta )}
+{\displaystyle \tau _{b}=\rho gh\sin(\theta )}
 
 For shallow slope angles, which are found in almost all natural lowland streams, the small-angle formula shows that 
-        sin
 
-        ⁡
-
-        (
-
-        θ
-
-        )
-    {\displaystyle \sin(\theta )}
+{\displaystyle \sin(\theta )}
  is approximately equal to 
-        tan
 
-        ⁡
-
-        (
-
-        θ
-
-        )
-    {\displaystyle \tan(\theta )}
+{\displaystyle \tan(\theta )}
 , which is given by 
-        S
-    {\displaystyle S}
 , the slope. Rewritten with this:
 
-          τ
-            b
-        =
-
-        ρ
-
-        g
-
-        h
-
-        S
-    {\displaystyle \tau _{b}=\rho ghS}
+{\displaystyle \tau _{b}=\rho ghS}
 
 #### Shear velocity, velocity, and friction factor
 For the steady case, by extrapolating the depth-slope product and the equation for shear velocity:
 
-          τ
-            b
-        =
+{\displaystyle \tau _{b}=\rho ghS}
 
-        ρ
-
-        g
-
-        h
-
-        S
-    {\displaystyle \tau _{b}=\rho ghS}
-
-          u
-            ∗
-        =
-              (
-                    τ
-                      b
-                  ρ
-              )
-    {\displaystyle u_{*}={\sqrt {\left({\frac {\tau _{b}}{\rho }}\right)}}}
+{\displaystyle u_{*}={\sqrt {\left({\frac {\tau _{b}}{\rho }}\right)}}}
 ,
 
 The depth-slope product can be rewritten as:
 
-          τ
-            b
-        =
-
-        ρ
-          u
-            ∗
-            2
-    {\displaystyle \tau _{b}=\rho u_{*}^{2}}
+{\displaystyle \tau _{b}=\rho u_{*}^{2}}
 .
 
-        u
-
-        ∗
-    {\displaystyle u*}
  is related to the mean flow velocity, 
-              u
 
-              ¯
-    {\displaystyle {\bar {u}}}
+{\displaystyle {\bar {u}}}
 , through the generalized Darcy–Weisbach friction factor, 
-          C
-            f
-    {\displaystyle C_{f}}
+{\displaystyle C_{f}}
 , which is equal to the Darcy-Weisbach friction factor divided by 8 (for mathematical convenience). Inserting this friction factor,
 
-          τ
-            b
-        =
-
-        ρ
-          C
-            f
-            (
-                  u
-
-                  ¯
-            )
-            2
-    {\displaystyle \tau _{b}=\rho C_{f}\left({\bar {u}}\right)^{2}}
+{\displaystyle \tau _{b}=\rho C_{f}\left({\bar {u}}\right)^{2}}
 .
 
 #### Unsteady flow
@@ -480,161 +200,30 @@ For all flows that cannot be simplified as a single-slope infinite channel (as i
 #### Set-up
 The criterion for the initiation of motion, established earlier, states that
 
-          τ
-            b
-        ∗
-
-        =
-          τ
-            c
-        ∗
-    {\displaystyle \tau _{b}*=\tau _{c}*}
+{\displaystyle \tau _{b}*=\tau _{c}*}
 .
 
 In this equation,
 
-        τ
-
-        ∗
-
-        =
-            τ
-              (
-                ρ
-                  s
-              −
-
-              ρ
-
-              )
-
-              (
-
-              g
-
-              )
-
-              (
-
-              D
-
-              )
-    {\displaystyle \tau *={\frac {\tau }{(\rho _{s}-\rho )(g)(D)}}}
+{\displaystyle \tau *={\frac {\tau }{(\rho _{s}-\rho )(g)(D)}}}
 , and therefore
 
-              τ
-                b
-              (
-                ρ
-                  s
-              −
-
-              ρ
-
-              )
-
-              (
-
-              g
-
-              )
-
-              (
-
-              D
-
-              )
-        =
-              τ
-                c
-              (
-                ρ
-                  s
-              −
-
-              ρ
-
-              )
-
-              (
-
-              g
-
-              )
-
-              (
-
-              D
-
-              )
-    {\displaystyle {\frac {\tau _{b}}{(\rho _{s}-\rho )(g)(D)}}={\frac {\tau _{c}}{(\rho _{s}-\rho )(g)(D)}}}
+{\displaystyle {\frac {\tau _{b}}{(\rho _{s}-\rho )(g)(D)}}={\frac {\tau _{c}}{(\rho _{s}-\rho )(g)(D)}}}
 .
 
-          τ
-            c
-        ∗
-    {\displaystyle \tau _{c}*}
+{\displaystyle \tau _{c}*}
  is a function of boundary Reynolds number, a specific type of particle Reynolds number.
 
-          τ
-            c
-        ∗
-
-        =
-
-        f
-          (
-                R
-
-                e
-                p
-            ∗
-          )
-    {\displaystyle \tau _{c}*=f\left(\mathrm {Re} _{p}*\right)}
+{\displaystyle \tau _{c}*=f\left(\mathrm {Re} _{p}*\right)}
 .
 
 For a particular particle Reynolds number, 
-          τ
-            c
-        ∗
-    {\displaystyle \tau _{c}*}
+{\displaystyle \tau _{c}*}
  will be an empirical constant given by the Shields Curve or by another set of empirical data (depending on whether or not the grain size is uniform).
 
 Therefore, the final equation to solve is:
 
-              τ
-                b
-              (
-                ρ
-                  s
-              −
-
-              ρ
-
-              )
-
-              (
-
-              g
-
-              )
-
-              (
-
-              D
-
-              )
-        =
-
-        f
-          (
-                R
-
-                e
-                p
-            ∗
-          )
-    {\displaystyle {\frac {\tau _{b}}{(\rho _{s}-\rho )(g)(D)}}=f\left(\mathrm {Re} _{p}*\right)}
+{\displaystyle {\frac {\tau _{b}}{(\rho _{s}-\rho )(g)(D)}}=f\left(\mathrm {Re} _{p}*\right)}
 .
 
 #### Solution
@@ -642,271 +231,78 @@ Some assumptions allow the solution of the above equation.
 
 The first assumption is that a good approximation of reach-averaged shear stress is given by the depth-slope product. The equation then can be rewritten as:
 
-          ρ
-
-          g
-
-          h
-
-          S
-        =
-
-        f
-          (
-                R
-
-                e
-                p
-            ∗
-          )
-          (
-            ρ
-              s
-          −
-
-          ρ
-
-          )
-
-          (
-
-          g
-
-          )
-
-          (
-
-          D
-
-          )
-    {\displaystyle {\rho ghS}=f\left(\mathrm {Re} _{p}*\right){(\rho _{s}-\rho )(g)(D)}}
+{\displaystyle {\rho ghS}=f\left(\mathrm {Re} _{p}*\right){(\rho _{s}-\rho )(g)(D)}}
 .
 
 Moving and re-combining the terms produces:
 
-          h
-
-          S
-        =
-                (
-                  ρ
-                    s
-                −
-
-                ρ
-
-                )
-              ρ
-          (
-
-          D
-
-          )
-          (
-            f
-              (
-                    R
-
-                    e
-                    p
-                ∗
-              )
-          )
-        =
-
-        R
-
-        D
-          (
-            f
-              (
-                    R
-
-                    e
-                    p
-                ∗
-              )
-          )
-    {\displaystyle {hS}={{\frac {(\rho _{s}-\rho )}{\rho }}(D)}\left(f\left(\mathrm {Re} _{p}*\right)\right)=RD\left(f\left(\mathrm {Re} _{p}*\right)\right)}
+{\displaystyle {hS}={{\frac {(\rho _{s}-\rho )}{\rho }}(D)}\left(f\left(\mathrm {Re} _{p}*\right)\right)=RD\left(f\left(\mathrm {Re} _{p}*\right)\right)}
 
 where R is the submerged specific gravity of the sediment.
 
 The second assumption is that the particle Reynolds number is high. This typically applies to particles of gravel-size or larger in a stream, and means the critical shear stress is constant. The Shields curve shows that for a bed with a uniform grain size,
 
-          τ
-            c
-        ∗
-
-        =
-
         0.06
-    {\displaystyle \tau _{c}*=0.06}
+{\displaystyle \tau _{c}*=0.06}
 .
 
 Later researchers have shown this value is closer to
 
-          τ
-            c
-        ∗
-
-        =
-
         0.03
-    {\displaystyle \tau _{c}*=0.03}
+{\displaystyle \tau _{c}*=0.03}
 
 for more uniformly sorted beds. Therefore the replacement
 
-          τ
-            c
-        ∗
-
-        =
-
-        f
-          (
-                R
-
-                e
-                p
-            ∗
-          )
-    {\displaystyle \tau _{c}*=f\left(\mathrm {Re} _{p}*\right)}
+{\displaystyle \tau _{c}*=f\left(\mathrm {Re} _{p}*\right)}
 
 is used to insert both values at the end.
 
 The equation now reads:
 
-          h
-
-          S
-        =
-
-        R
-
-        D
-          τ
-            c
-        ∗
-    {\displaystyle {hS}=RD\tau _{c}*}
+{\displaystyle {hS}=RD\tau _{c}*}
 
 This final expression shows the product of the channel depth and slope is equal to the Shield's criterion times the submerged specific gravity of the particles times the particle diameter.
 
 For a typical situation, such as quartz-rich sediment 
-          (
-              ρ
-                s
-            =
 
-            2650
-                  k
-
-                  g
-                  m
-                    3
-          )
-    {\displaystyle \left(\rho _{s}=2650{\frac {kg}{m^{3}}}\right)}
+{\displaystyle \left(\rho _{s}=2650{\frac {kg}{m^{3}}}\right)}
  in water 
-          (
-            ρ
 
-            =
-
-            1000
-                  k
-
-                  g
-                  m
-                    3
-          )
-    {\displaystyle \left(\rho =1000{\frac {kg}{m^{3}}}\right)}
+{\displaystyle \left(\rho =1000{\frac {kg}{m^{3}}}\right)}
 , the submerged specific gravity is equal to 1.65.
 
-        R
-
-        =
-              (
-                ρ
-                  s
-              −
-
-              ρ
-
-              )
-            ρ
-        =
-
         1.65
-    {\displaystyle R={\frac {(\rho _{s}-\rho )}{\rho }}=1.65}
+{\displaystyle R={\frac {(\rho _{s}-\rho )}{\rho }}=1.65}
 
 Plugging this into the equation above,
 
-          h
-
-          S
-        =
-
         1.65
 
-        (
-
-        D
-
-        )
-          τ
-            c
-        ∗
-    {\displaystyle {hS}=1.65(D)\tau _{c}*}
+{\displaystyle {hS}=1.65(D)\tau _{c}*}
 .
 
 For the Shield's criterion of 
-          τ
-            c
-        ∗
-
-        =
 
         0.06
-    {\displaystyle \tau _{c}*=0.06}
+{\displaystyle \tau _{c}*=0.06}
 . 0.06 * 1.65 = 0.099, which is well within standard margins of error of 0.1. Therefore, for a uniform bed,
 
-          h
-
-          S
-        =
           0.1
 
-          (
-
-          D
-
-          )
-    {\displaystyle {hS}={0.1(D)}}
+{\displaystyle {hS}={0.1(D)}}
 .
 
 For these situations, the product of the depth and slope of the flow should be 10% of the diameter of the median grain diameter.
 
 The mixed-grain-size bed value is 
-          τ
-            c
-        ∗
-
-        =
 
         0.03
-    {\displaystyle \tau _{c}*=0.03}
+{\displaystyle \tau _{c}*=0.03}
 , which is supported by more recent research as being more broadly applicable because most natural streams have mixed grain sizes. If this value is used, and D is changed to D_50 ("50" for the 50th percentile, or the median grain size, as an appropriate value for a mixed-grain-size bed), the equation becomes:
 
-          h
-
-          S
-        =
           0.05
 
-          (
-            D
-              50
-          )
-    {\displaystyle {hS}={0.05(D_{50})}}
+{\displaystyle {hS}={0.05(D_{50})}}
 
 Which means that the depth times the slope should be about 5% of the median grain diameter in the case of a mixed-grain-size bed.
 
@@ -916,15 +312,7 @@ The sediments entrained in a flow can be transported along the bed as bed load i
 ### Rouse number
 The location in the flow in which a particle is entrained is determined by the Rouse number, which is determined by the density ρs and diameter d of the sediment particle, and the density ρ and kinematic viscosity ν of the fluid, determine in which part of the flow the sediment particle will be carried.
 
-        P
-
-        =
-              w
-                s
-              κ
-                u
-                  ∗
-    {\displaystyle P={\frac {w_{s}}{\kappa u_{\ast }}}}
+{\displaystyle P={\frac {w_{s}}{\kappa u_{\ast }}}}
 
 Here, the Rouse number is given by P. The term in the numerator is the (downwards) sediment the sediment settling velocity ws, which is discussed below. The upwards velocity on the grain is given as a product of the von Kármán constant, κ = 0.4, and the shear velocity, u∗.
 
@@ -934,148 +322,56 @@ The following table gives the approximate required Rouse numbers for transport a
 
 The settling velocity (also called the "fall velocity" or "terminal velocity") is a function of the particle Reynolds number. Generally, for small particles (laminar approximation), it can be calculated with Stokes' Law. For larger particles (turbulent particle Reynolds numbers), fall velocity is calculated with the turbulent drag law. Dietrich (1982) compiled a large amount of published data to which he empirically fit settling velocity curves. Ferguson and Church (2006) analytically combined the expressions for Stokes flow and a turbulent drag law into a single equation that works for all sizes of sediment, and successfully tested it against the data of Dietrich. Their equation is
 
-          w
-            s
-        =
-              R
-
-              g
-                D
-                  2
-                C
-                  1
-              ν
-
-              +
-
-              (
-
               0.75
-                C
-                  2
-              R
-
-              g
-                D
-                  3
-                )
-                  (
 
                   0.5
 
-                  )
-    {\displaystyle w_{s}={\frac {RgD^{2}}{C_{1}\nu +(0.75C_{2}RgD^{3})^{(0.5)}}}}
+{\displaystyle w_{s}={\frac {RgD^{2}}{C_{1}\nu +(0.75C_{2}RgD^{3})^{(0.5)}}}}
 .
 
 In this equation ws is the sediment settling velocity, g is acceleration due to gravity, and D is mean sediment diameter. 
-        ν
-    {\displaystyle \nu }
+{\displaystyle \nu }
  is the kinematic viscosity of water, which is approximately 1.0 × 10−6 m2/s for water at 20 °C.
 
-          C
-            1
-    {\displaystyle C_{1}}
+{\displaystyle C_{1}}
  and 
-          C
-            2
-    {\displaystyle C_{2}}
+{\displaystyle C_{2}}
  are constants related to the shape and smoothness of the grains.
 
 The expression for fall velocity can be simplified so that it can be solved only in terms of D. We use the sieve diameters for natural grains, 
-        g
-
-        =
 
         9.8
-    {\displaystyle g=9.8}
+{\displaystyle g=9.8}
 , and values given above for 
-        ν
-    {\displaystyle \nu }
+{\displaystyle \nu }
  and 
-        R
-    {\displaystyle R}
 . From these parameters, the fall velocity is given by the expression:
 
-          w
-            s
-        =
               16.17
-                D
-                  2
               1.8
 
-              ⋅
-                10
-                  −
-
-                  5
-              +
-
-              (
-
               12.1275
-                D
-                  3
-                )
-                  (
 
                   0.5
 
-                  )
-    {\displaystyle w_{s}={\frac {16.17D^{2}}{1.8\cdot 10^{-5}+(12.1275D^{3})^{(0.5)}}}}
+{\displaystyle w_{s}={\frac {16.17D^{2}}{1.8\cdot 10^{-5}+(12.1275D^{3})^{(0.5)}}}}
 
 Alternatively, settling velocity for a particle of sediment can be derived using Stokes Law assuming quiescent (or still) fluid in steady state. The resulting formulation for settling velocity is,
 
-              w
-                s
-            =
-                  g
-                  (
-                          ρ
-                            s
-                        −
-
-                        ρ
-                      ρ
-                  )
-                    d
-                      s
-
-                      e
-
-                      d
-                      2
-                  18
-
-                  ν
-        ,
-    {\displaystyle {\displaystyle w_{s}={\frac {g~({\frac {\rho _{s}-\rho }{\rho }})~d_{sed}^{2}}{18\nu }}},}
+{\displaystyle {\displaystyle w_{s}={\frac {g~({\frac {\rho _{s}-\rho }{\rho }})~d_{sed}^{2}}{18\nu }}},}
 
 where 
-        g
-    {\displaystyle g}
  is the gravitational constant;  
-          ρ
-            s
-    {\displaystyle \rho _{s}}
+{\displaystyle \rho _{s}}
  is the density of the sediment; 
-        ρ
-    {\displaystyle \rho }
+{\displaystyle \rho }
  is the density of water; 
-          d
-            s
 
-            e
-
-            d
-    {\displaystyle d_{sed}}
+{\displaystyle d_{sed}}
  is the sediment particle diameter (commonly assumed to be the median particle diameter, often referred to as 
-          d
-            50
-    {\displaystyle d_{50}}
+{\displaystyle d_{50}}
  in field studies); and 
-        ν
-    {\displaystyle \nu }
+{\displaystyle \nu }
  is the molecular viscosity of water. The Stokes settling velocity can be thought of as the terminal velocity resulting from balancing a particle's buoyant force (proportional to the cross-sectional area) with the gravitational force (proportional to the mass). Small particles will have a slower settling velocity than heavier particles, as seen in the figure. This has implications for many aspects of sediment transport, for example, how far downstream a particle might be advected in a river.
 
 ## Hjulström–Sundborg diagram
@@ -1095,56 +391,22 @@ Bed load moves by rolling, sliding, and hopping (or saltating) over the bed, and
 
 Bed load transport rates are usually expressed as being related to excess dimensionless shear stress raised to some power. Excess dimensionless shear stress is a nondimensional measure of bed shear stress about the threshold for motion.
 
-        (
-          τ
-            b
-            ∗
-        −
-          τ
-            c
-            ∗
-        )
-    {\displaystyle (\tau _{b}^{*}-\tau _{c}^{*})}
+{\displaystyle (\tau _{b}^{*}-\tau _{c}^{*})}
 ,
 
 Bed load transport rates may also be given by a ratio of bed shear stress to critical shear stress, which is equivalent in both the dimensional and nondimensional cases. This ratio is called the "transport stage" 
-        (
-          T
-            s
-           or 
-        ϕ
 
-        )
-    {\displaystyle (T_{s}{\text{ or }}\phi )}
+{\displaystyle (T_{s}{\text{ or }}\phi )}
  and is an important in that it shows bed shear stress as a multiple of the value of the criterion for the initiation of motion.
 
-          T
-            s
-        =
-
-        ϕ
-
-        =
-              τ
-                b
-              τ
-                c
-    {\displaystyle T_{s}=\phi ={\frac {\tau _{b}}{\tau _{c}}}}
+{\displaystyle T_{s}=\phi ={\frac {\tau _{b}}{\tau _{c}}}}
 
 When used for sediment transport formulae, this ratio is typically raised to a power.
 
 The majority of the published relations for bedload transport are given in dry sediment weight per unit channel width, 
-        b
-    {\displaystyle b}
  ("breadth"):
 
-          q
-            s
-        =
-              Q
-                s
-            b
-    {\displaystyle q_{s}={\frac {Q_{s}}{b}}}
+{\displaystyle q_{s}={\frac {Q_{s}}{b}}}
 .
 
 Due to the difficulty of estimating bed load transport rates, these equations are typically only suitable for the situations for which they were designed.
@@ -1155,208 +417,45 @@ Due to the difficulty of estimating bed load transport rates, these equations ar
 
 The transport formula of Meyer-Peter and Müller, originally developed in 1948, was designed for well-sorted fine gravel at a transport stage of about 8. The formula uses the above nondimensionalization for shear stress,
 
-        τ
-
-        ∗
-
-        =
-            τ
-              (
-                ρ
-                  s
-              −
-
-              ρ
-
-              )
-
-              (
-
-              g
-
-              )
-
-              (
-
-              D
-
-              )
-    {\displaystyle \tau *={\frac {\tau }{(\rho _{s}-\rho )(g)(D)}}}
+{\displaystyle \tau *={\frac {\tau }{(\rho _{s}-\rho )(g)(D)}}}
 ,
 
 and Hans Einstein's nondimensionalization for sediment volumetric discharge per unit width
 
-          q
-            s
-        ∗
-
-        =
-              q
-                s
-              D
-                          ρ
-                            s
-                        −
-
-                        ρ
-                      ρ
-                  g
-
-                  D
-        =
-              q
-                s
-              R
-                e
-                  p
-              ν
-    {\displaystyle q_{s}*={\frac {q_{s}}{D{\sqrt {{\frac {\rho _{s}-\rho }{\rho }}gD}}}}={\frac {q_{s}}{Re_{p}\nu }}}
+{\displaystyle q_{s}*={\frac {q_{s}}{D{\sqrt {{\frac {\rho _{s}-\rho }{\rho }}gD}}}}={\frac {q_{s}}{Re_{p}\nu }}}
 .
 
 Their formula reads:
 
-          q
-            s
-        ∗
-
-        =
-
-        8
-            (
-              τ
-
-              ∗
-
-              −
-
-              τ
-                ∗
-                  c
-            )
-            3
-              /
-            2
-    {\displaystyle q_{s}*=8\left(\tau *-\tau *_{c}\right)^{3/2}}
+{\displaystyle q_{s}*=8\left(\tau *-\tau *_{c}\right)^{3/2}}
 .
 
 Their experimentally determined value for 
-        τ
-          ∗
-            c
-    {\displaystyle \tau *_{c}}
+{\displaystyle \tau *_{c}}
  is 0.047, and is the third commonly used value for this (in addition to Parker's 0.03 and Shields' 0.06).
 
 Because of its broad use, some revisions to the formula have taken place over the years that show that the coefficient on the left ("8" above) is a function of the transport stage:
 
-          T
-            s
-        ≈
-
-        2
-
-        →
-          q
-            s
-        ∗
-
-        =
-
         5.7
-            (
-              τ
-
-              ∗
-
-              −
 
               0.047
-            )
-            3
-              /
-            2
-    {\displaystyle T_{s}\approx 2\rightarrow q_{s}*=5.7\left(\tau *-0.047\right)^{3/2}}
-
-          T
-            s
-        ≈
-
-        100
-
-        →
-          q
-            s
-        ∗
-
-        =
+{\displaystyle T_{s}\approx 2\rightarrow q_{s}*=5.7\left(\tau *-0.047\right)^{3/2}}
 
         12.1
-            (
-              τ
-
-              ∗
-
-              −
 
               0.047
-            )
-            3
-              /
-            2
-    {\displaystyle T_{s}\approx 100\rightarrow q_{s}*=12.1\left(\tau *-0.047\right)^{3/2}}
+{\displaystyle T_{s}\approx 100\rightarrow q_{s}*=12.1\left(\tau *-0.047\right)^{3/2}}
 
 The variations in the coefficient were later generalized as a function of dimensionless shear stress:
 
-            {
-                    q
-                      s
-                  ∗
-
-                  =
-                    α
-                      s
-                      (
-                        τ
-
-                        ∗
-
-                        −
-                          τ
-                            c
-                        ∗
-                      )
-                      n
-                  n
-
-                  =
-                      3
-
-                      2
-                    α
-                      s
-                  =
-
                   1.6
-
-                  ln
-
-                  ⁡
-                    (
-                      τ
-
-                      ∗
-                    )
-                  +
 
                   9.8
 
-                  ≈
-
                   9.64
 
-                  τ
-                    ∗
                       0.166
-    {\displaystyle {\begin{cases}q_{s}*=\alpha _{s}\left(\tau *-\tau _{c}*\right)^{n}\\n={\frac {3}{2}}\\\alpha _{s}=1.6\ln \left(\tau *\right)+9.8\approx 9.64\tau *^{0.166}\end{cases}}}
+{\displaystyle {\begin{cases}q_{s}*=\alpha _{s}\left(\tau *-\tau _{c}*\right)^{n}\\n={\frac {3}{2}}\\\alpha _{s}=1.6\ln \left(\tau *\right)+9.8\approx 9.64\tau *^{0.166}\end{cases}}}
 
 ===== Wilcock and Crowe =====
 
@@ -1367,367 +466,157 @@ Their expression is more complicated than the basic sediment transport rules (su
 The "hiding function" takes into account the fact that, while small grains are inherently more mobile than large grains, on a mixed-grain-size bed, they may be trapped in deep pockets between large grains. Likewise, a large grain on a bed of small particles will be stuck in a much smaller pocket than if it were on a bed of grains of the same size. In gravel-bed rivers, this can cause "equal mobility", in which small grains can move just as easily as large ones. As sand is added to the system, it moves away from the "equal mobility" portion of the hiding function to one in which grain size again matters.
 
 Their model is based on the transport stage, or ratio of bed shear stress to critical shear stress for the initiation of grain motion. Because their formula works with several grain sizes simultaneously, they define the critical shear stress for each grain size class, 
-          τ
-            c
 
-            ,
-              D
-                i
-    {\displaystyle \tau _{c,D_{i}}}
+{\displaystyle \tau _{c,D_{i}}}
 , to be equal to a "reference shear stress", 
-          τ
-            r
 
-            i
-    {\displaystyle \tau _{ri}}
+{\displaystyle \tau _{ri}}
 .
 
 They express their equations in terms of a dimensionless transport parameter, 
-          W
-            i
-            ∗
-    {\displaystyle W_{i}^{*}}
+{\displaystyle W_{i}^{*}}
  (with the "
-        ∗
-    {\displaystyle *}
 " indicating nondimensionality and the "
-            i
-    {\displaystyle _{i}}
+{\displaystyle _{i}}
 " indicating that it is a function of grain size):
 
-          W
-            i
-            ∗
-        =
-              R
+{\displaystyle W_{i}^{*}={\frac {Rgq_{bi}}{F_{i}u*^{3}}}}
 
-              g
-                q
-                  b
-
-                  i
-                F
-                  i
-              u
-                ∗
-                  3
-    {\displaystyle W_{i}^{*}={\frac {Rgq_{bi}}{F_{i}u*^{3}}}}
-
-          q
-            b
-
-            i
-    {\displaystyle q_{bi}}
+{\displaystyle q_{bi}}
  is the volumetric bed load transport rate of size class 
-        i
-    {\displaystyle i}
  per unit channel width 
-        b
-    {\displaystyle b}
 . 
-          F
-            i
-    {\displaystyle F_{i}}
+{\displaystyle F_{i}}
  is the proportion of size class 
-        i
-    {\displaystyle i}
  that is present on the bed.
 
 They came up with two equations, depending on the transport stage, 
-        ϕ
-    {\displaystyle \phi }
+{\displaystyle \phi }
 . For 
-        ϕ
-
-        <
 
         1.35
-    {\displaystyle \phi <1.35}
+{\displaystyle \phi <1.35}
 :
-
-          W
-            i
-            ∗
-        =
 
         0.002
-          ϕ
             7.5
-    {\displaystyle W_{i}^{*}=0.002\phi ^{7.5}}
+{\displaystyle W_{i}^{*}=0.002\phi ^{7.5}}
 
 and for 
-        ϕ
-
-        ≥
 
         1.35
-    {\displaystyle \phi \geq 1.35}
+{\displaystyle \phi \geq 1.35}
 :
 
-          W
-            i
-            ∗
-        =
-
-        14
-            (
-              1
-
-              −
                   0.894
-                    ϕ
                       0.5
-            )
             4.5
-    {\displaystyle W_{i}^{*}=14\left(1-{\frac {0.894}{\phi ^{0.5}}}\right)^{4.5}}
+{\displaystyle W_{i}^{*}=14\left(1-{\frac {0.894}{\phi ^{0.5}}}\right)^{4.5}}
 .
 
 This equation asymptotically reaches a constant value of 
-          W
-            i
-            ∗
-    {\displaystyle W_{i}^{*}}
+{\displaystyle W_{i}^{*}}
  as 
-        ϕ
-    {\displaystyle \phi }
+{\displaystyle \phi }
  becomes large.
 
 ===== Wilcock and Kenworthy =====
 
 In 2002, Peter Wilcock and T. A. Kenworthy, following Peter Wilcock (1998), published a sediment bed-load transport formula that works with only  two sediments fractions, i.e. sand and gravel fractions. A mixed-sized sediment bed-load transport model using only two fractions offers practical advantages in terms of both computational and conceptual modeling by taking into account the nonlinear effects of sand presence in gravel beds on bed-load transport rate of both fractions. In fact, in the two-fraction bed load formula appears a new ingredient with respect to that of Meyer-Peter and Müller that is the proportion 
-          F
-            i
-    {\displaystyle F_{i}}
+{\displaystyle F_{i}}
  of fraction 
-        i
-    {\displaystyle i}
  on the bed surface where the subscript 
-            i
-    {\displaystyle _{i}}
+{\displaystyle _{i}}
  represents either the sand (s) or gravel (g) fraction. The proportion 
-          F
-            i
-    {\displaystyle F_{i}}
+{\displaystyle F_{i}}
 , as a function of sand content 
-          f
-            s
-    {\displaystyle f_{s}}
+{\displaystyle f_{s}}
 , physically represents the relative influence of the mechanisms controlling sand and gravel transport, associated with the change from a clast-supported to matrix-supported gravel bed. Moreover, since 
-          f
-            s
-    {\displaystyle f_{s}}
+{\displaystyle f_{s}}
  spans between 0 and 1, phenomena that vary with 
-          f
-            s
-    {\displaystyle f_{s}}
+{\displaystyle f_{s}}
  include the relative size effects producing "hiding" of fine grains and "exposure" of coarse grains.
 
 The "hiding" effect takes into account the fact that, while small grains are inherently more mobile than large grains, on a mixed-grain-size bed, they may be trapped in deep pockets between large grains. Likewise, a large grain on a bed of small particles will be stuck in a much smaller pocket than if it were on a bed of grains of the same size, which the Meyer-Peter and Müller formula refers to. In gravel-bed rivers, this can cause "equal mobility", in which small grains can move just as easily as large ones. As sand is added to the system, it moves away from the "equal mobility" portion of the hiding function to one in which grain size again matters.
 
 Their model is based on the transport stage, i.e. 
-        ϕ
-    {\displaystyle \phi }
+{\displaystyle \phi }
 , or ratio of bed shear stress to critical shear stress for the initiation of grain motion. Because their formula works with only two fractions simultaneously, they define the critical shear stress for each of the two grain size classes, 
-          τ
-            r
 
-            i
-    {\displaystyle \tau _{ri}}
+{\displaystyle \tau _{ri}}
 , where 
-            i
-    {\displaystyle _{i}}
+{\displaystyle _{i}}
  represents either the sand (s) or gravel (g) fraction. The critical shear stress that represents the incipient motion for each of the two fractions is consistent with established values in the limit of pure sand and gravel beds and shows a sharp change with increasing sand content over the transition from a clast- to matrix-supported bed.
 
 They express their equations in terms of a dimensionless transport parameter, 
-          W
-            i
-            ∗
-    {\displaystyle W_{i}^{*}}
+{\displaystyle W_{i}^{*}}
  (with the "
-        ∗
-    {\displaystyle *}
 " indicating nondimensionality and the "
-            i
-    {\displaystyle _{i}}
+{\displaystyle _{i}}
 " indicating that it is a function of grain size):
 
-          W
-            i
-            ∗
-        =
-              R
+{\displaystyle W_{i}^{*}={\frac {Rgq_{bi}}{F_{i}u*^{3}}}}
 
-              g
-                q
-                  b
-
-                  i
-                F
-                  i
-              u
-                ∗
-                  3
-    {\displaystyle W_{i}^{*}={\frac {Rgq_{bi}}{F_{i}u*^{3}}}}
-
-          q
-            b
-
-            i
-    {\displaystyle q_{bi}}
+{\displaystyle q_{bi}}
  is the volumetric bed load transport rate of size class 
-        i
-    {\displaystyle i}
  per unit channel width 
-        b
-    {\displaystyle b}
 . 
-          F
-            i
-    {\displaystyle F_{i}}
+{\displaystyle F_{i}}
  is the proportion of size class 
-        i
-    {\displaystyle i}
  that is present on the bed.
 
 They came up with two equations, depending on the transport stage, 
-        ϕ
-    {\displaystyle \phi }
+{\displaystyle \phi }
 . For 
-        ϕ
 
-        <
-          ϕ
-              ′
-    {\displaystyle \phi <\phi ^{'}}
+{\displaystyle \phi <\phi ^{'}}
 :
-
-          W
-            i
-            ∗
-        =
 
         0.002
-          ϕ
             7.5
-    {\displaystyle W_{i}^{*}=0.002\phi ^{7.5}}
+{\displaystyle W_{i}^{*}=0.002\phi ^{7.5}}
 
 and for 
-        ϕ
 
-        ≥
-          ϕ
-              ′
-    {\displaystyle \phi \geq \phi ^{'}}
+{\displaystyle \phi \geq \phi ^{'}}
 :
 
-          W
-            i
-            ∗
-        =
-
-        A
-            (
-              1
-
-              −
-                  χ
-                    ϕ
                       0.5
-            )
             4.5
-    {\displaystyle W_{i}^{*}=A\left(1-{\frac {\chi }{\phi ^{0.5}}}\right)^{4.5}}
+{\displaystyle W_{i}^{*}=A\left(1-{\frac {\chi }{\phi ^{0.5}}}\right)^{4.5}}
 .
 
 This equation asymptotically reaches a constant value of 
-          W
-            i
-            ∗
-    {\displaystyle W_{i}^{*}}
+{\displaystyle W_{i}^{*}}
  as 
-        ϕ
-    {\displaystyle \phi }
+{\displaystyle \phi }
  becomes large and the symbols 
-        A
 
-        ,
-          ϕ
-              ′
-        ,
-
-        χ
-    {\displaystyle A,\phi ^{'},\chi }
+{\displaystyle A,\phi ^{'},\chi }
  have the following values:
-
-        A
-
-        =
-
-        70
-
-        ,
-          ϕ
-              ′
-        =
 
         1.19
 
-        ,
-
-        χ
-
-        =
-
         0.908
 
-        ,
-          laboratory
-    {\displaystyle A=70,\phi ^{'}=1.19,\chi =0.908,{\text{laboratory}}}
-
-        A
-
-        =
-
-        115
-
-        ,
-          ϕ
-              ′
-        =
+{\displaystyle A=70,\phi ^{'}=1.19,\chi =0.908,{\text{laboratory}}}
 
         1.27
 
-        ,
-
-        χ
-
-        =
-
         0.923
 
-        ,
-          field
-    {\displaystyle A=115,\phi ^{'}=1.27,\chi =0.923,{\text{field}}}
+{\displaystyle A=115,\phi ^{'}=1.27,\chi =0.923,{\text{field}}}
 
 In order to apply the above formulation, it is necessary to specify the characteristic grain sizes 
-          D
-            s
-    {\displaystyle D_{s}}
+{\displaystyle D_{s}}
  for the sand portion and 
-          D
-            g
-    {\displaystyle D_{g}}
+{\displaystyle D_{g}}
  for the gravel portion of the surface layer, the fractions 
-          F
-            s
-    {\displaystyle F_{s}}
+{\displaystyle F_{s}}
  and 
-          F
-            g
-    {\displaystyle F_{g}}
+{\displaystyle F_{g}}
  of sand and gravel, respectively in the surface layer, the submerged specific gravity of the sediment R and shear velocity associated with skin friction 
-          u
-            ∗
-    {\displaystyle u_{*}}
+{\displaystyle u_{*}}
  .
 
 ===== Kuhnle et al. =====
@@ -1736,105 +625,35 @@ For the case in which sand fraction is transported by the current over and throu
 
 To overcome this mismatch, following Pellachini (2011), they assumed that the variability of the bed shear stress available for the sand to be transported by the current would be some function of the so-called "Roughness Geometry Function" (RGF), which represents the gravel bed elevations distribution. Therefore, the sand bed load formula follows as:
 
-          q
-            s
-            ∗
-        =
-
         2.29
 
-        ∗
-          10
-            −
-
-            5
-        A
-
-        (
-          z
-            s
-          )
             2.14
-            (
-                  τ
-                    b
-                  τ
-                    c
 
-                    s
-            )
             3.49
-    {\displaystyle q_{s}^{*}=2.29*10^{-5}A(z_{s})^{2.14}\left({\frac {\tau _{b}}{\tau _{cs}}}\right)^{3.49}}
+{\displaystyle q_{s}^{*}=2.29*10^{-5}A(z_{s})^{2.14}\left({\frac {\tau _{b}}{\tau _{cs}}}\right)^{3.49}}
 
 where
 
-          q
-            s
-            ∗
-        =
-              q
-                s
-              [
-
-              (
-
-              s
-
-              −
-
-              1
-
-              )
-
-              g
-                D
-                  s
-                ]
                   0.5
-                ρ
-                  s
-                D
-                  s
-    {\displaystyle q_{s}^{*}={\frac {q_{s}}{[(s-1)gD_{s}]^{0.5}\rho _{s}D_{s}}}}
+{\displaystyle q_{s}^{*}={\frac {q_{s}}{[(s-1)gD_{s}]^{0.5}\rho _{s}D_{s}}}}
 
 the subscript 
-            s
-    {\displaystyle _{s}}
+{\displaystyle _{s}}
  refers to the sand fraction, s represents the ratio 
-          ρ
-            s
-          /
-          ρ
-            w
-    {\displaystyle \rho _{s}/\rho _{w}}
+{\displaystyle \rho _{s}/\rho _{w}}
  where 
-          ρ
-            s
-    {\displaystyle \rho _{s}}
+{\displaystyle \rho _{s}}
  is the sand fraction density, 
-        A
 
-        (
-          z
-            s
-        )
-    {\displaystyle A(z_{s})}
+{\displaystyle A(z_{s})}
  is the RGF as a function of the sand level 
-          z
-            s
-    {\displaystyle z_{s}}
+{\displaystyle z_{s}}
  within the gravel bed,  
-          τ
-            b
-    {\displaystyle \tau _{b}}
+{\displaystyle \tau _{b}}
  is the bed shear stress available for sand transport and 
-          τ
-            c
 
-            s
-    {\displaystyle \tau _{cs}}
+{\displaystyle \tau _{cs}}
  is the critical shear stress for incipient motion of the sand fraction, which was calculated graphically using the updated Shields-type relation of Miller et al.(1977)
-    {\displaystyle }
 .
 
 ### Suspended load
@@ -1842,83 +661,28 @@ the subscript
 Suspended load is carried in the lower to middle parts of the flow, and moves at a large fraction of the mean flow velocity in the stream.
 
 A common characterization of suspended sediment concentration in a flow is given by the Rouse Profile. This characterization works for the situation in which sediment concentration 
-          c
-            0
-    {\displaystyle c_{0}}
+{\displaystyle c_{0}}
  at one particular elevation above the bed 
-          z
-            0
-    {\displaystyle z_{0}}
+{\displaystyle z_{0}}
  can be quantified. It is given by the expression:
 
-              c
-                s
-              c
-                0
-        =
-            [
-                  z
-                    (
-                      h
-
-                      −
-                        z
-                          0
-                    )
-                    z
-                      0
-                    (
-                      h
-
-                      −
-
-                      z
-                    )
-            ]
-            −
-
-            P
-              /
-            α
-    {\displaystyle {\frac {c_{s}}{c_{0}}}=\left[{\frac {z\left(h-z_{0}\right)}{z_{0}\left(h-z\right)}}\right]^{-P/\alpha }}
+{\displaystyle {\frac {c_{s}}{c_{0}}}=\left[{\frac {z\left(h-z_{0}\right)}{z_{0}\left(h-z\right)}}\right]^{-P/\alpha }}
 
 Here, 
-        z
-    {\displaystyle z}
  is the elevation above the bed, 
-          c
-            s
-    {\displaystyle c_{s}}
+{\displaystyle c_{s}}
  is the concentration of suspended sediment at that elevation, 
-        h
-    {\displaystyle h}
  is the flow depth, 
-        P
-    {\displaystyle P}
  is the Rouse number, and 
-        α
-    {\displaystyle \alpha }
+{\displaystyle \alpha }
  relates the eddy viscosity for momentum 
-          K
-            m
-    {\displaystyle K_{m}}
+{\displaystyle K_{m}}
  to the eddy diffusivity for sediment, which is approximately equal to one.
 
-        α
-
-        =
-              K
-                s
-              K
-                m
-        ≈
-
-        1
-    {\displaystyle \alpha ={\frac {K_{s}}{K_{m}}}\approx 1}
+{\displaystyle \alpha ={\frac {K_{s}}{K_{m}}}\approx 1}
 
 Experimental work has shown that 
-        α
-    {\displaystyle \alpha }
+{\displaystyle \alpha }
  ranges from 0.93 to 1.10 for sands and silts.
 
 The Rouse profile characterizes sediment concentrations because the Rouse number includes both turbulent mixing and settling under the weight of the particles. Turbulent mixing results in the net motion of particles from regions of high concentrations to low concentrations. Because particles settle downward, for all cases where the particles are not neutrally buoyant or sufficiently light that this settling velocity is negligible, there is a net negative concentration gradient as one goes upward in the flow. The Rouse Profile therefore gives the concentration profile that provides a balance between turbulent mixing (net upwards) of sediment and the downwards settling velocity of each particle.
@@ -1931,33 +695,17 @@ Three common bed material transport relations are the "Ackers-White", "Engelund-
 #### Engelund–Hansen
 The bed material load formula of Engelund and Hansen is the only one to not include some kind of critical value for the initiation of sediment transport. It reads:
 
-          q
-            s
-        ∗
-
-        =
             0.05
-              c
-                f
-        τ
-          ∗
             2.5
-    {\displaystyle q_{s}*={\frac {0.05}{c_{f}}}\tau *^{2.5}}
+{\displaystyle q_{s}*={\frac {0.05}{c_{f}}}\tau *^{2.5}}
 
 where 
-          q
-            s
-        ∗
-    {\displaystyle q_{s}*}
+{\displaystyle q_{s}*}
  is the Einstein nondimensionalization for sediment volumetric discharge per unit width, 
-          c
-            f
-    {\displaystyle c_{f}}
+{\displaystyle c_{f}}
  is a friction factor, and 
-        τ
 
-        ∗
-    {\displaystyle \tau *}
+{\displaystyle \tau *}
  is the Shields stress. The Engelund–Hansen formula is one of the few sediment transport formulae in which a threshold "critical shear stress" is absent.
 
 ### Wash load

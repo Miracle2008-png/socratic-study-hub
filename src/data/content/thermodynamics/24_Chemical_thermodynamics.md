@@ -7,50 +7,10 @@ Chemical thermodynamics is the study of the interrelation of heat and work with 
 Chemical energy is the energy that can be released when chemical substances undergo a transformation through a chemical reaction. Breaking and making chemical bonds involves energy release or uptake, often as heat that may be either absorbed by or evolved from the chemical system.
 
 Energy released (or absorbed) because of a reaction between chemical substances ("reactants") is equal to the difference between the energy content of the products and the reactants. This change in energy is called the change in internal energy of a chemical system. It can be calculated from 
-          Δ
-              f
-          U
-              r
-
-              e
-
-              a
-
-              c
-
-              t
-
-              a
-
-              n
-
-              t
-
-              s
-              o
 
 $$ \Delta _{\rm {f}}U_{\mathrm {reactants} }^{\rm {o}} $$
 
 , the internal energy of formation of the reactant molecules related to the bond energies of the molecules under consideration, and 
-          Δ
-              f
-          U
-              p
-
-              r
-
-              o
-
-              d
-
-              u
-
-              c
-
-              t
-
-              s
-              o
 
 $$ \Delta _{\rm {f}}U_{\mathrm {products} }^{\rm {o}} $$
 
@@ -68,121 +28,17 @@ In most cases of interest in chemical thermodynamics there are internal degrees 
 
 For an unstructured, homogeneous "bulk" system, there are still various extensive compositional variables { Ni } that G depends on, which specify the composition (the amounts of each chemical substance, expressed as the numbers of molecules present or the numbers of moles). Explicitly,
 
-        G
-
-        =
-
-        G
-
-        (
-
-        T
-
-        ,
-
-        P
-
-        ,
-
-        {
-          N
-            i
-        }
-
-        )
-        .
-
 $$ G=G(T,P,\{N_{i}\})\,. $$
 
 For the case where only PV work is possible,
-
-          d
-        G
-
-        =
-
-        −
-
-        S
-          d
-        T
-
-        +
-
-        V
-          d
-        P
-
-        +
-          ∑
-            i
-          μ
-            i
-          d
-          N
-            i
 
 $$ \mathrm {d} G=-S\,\mathrm {d} T+V\,\mathrm {d} P+\sum _{i}\mu _{i}\,\mathrm {d} N_{i}\, $$
 
 a restatement of the fundamental thermodynamic relation, in which μi is the chemical potential for the i-th component in the system
 
-          μ
-            i
-        =
-            (
-                  ∂
-
-                  G
-                  ∂
-                    N
-                      i
-            )
-            T
-
-            ,
-
-            P
-
-            ,
-              N
-                j
-
-                ≠
-
-                i
-            ,
-
-            e
-
-            t
-
-            c
-
-            .
-        .
-
 $$ \mu _{i}=\left({\frac {\partial G}{\partial N_{i}}}\right)_{T,P,N_{j\neq i},etc.}\,. $$
 
 The expression for dG is especially useful at constant T and P, conditions, which are easy to achieve experimentally and which approximate the conditions in living creatures
-
-        (
-          d
-        G
-          )
-            T
-
-            ,
-
-            P
-        =
-          ∑
-            i
-          μ
-            i
-          d
-          N
-            i
-        .
 
 $$ (\mathrm {d} G)_{T,P}=\sum _{i}\mu _{i}\,\mathrm {d} N_{i}\,. $$
 
@@ -192,138 +48,25 @@ While this formulation is mathematically defensible, it is not particularly tran
 
 Consequently, we introduce an explicit variable to represent the degree of advancement of a process, a progress variable ξ for the extent of reaction (Prigogine & Defay, p. 18; Prigogine, pp. 4–7; Guggenheim, p. 37.62), and to the use of the partial derivative ∂G/∂ξ (in place of the widely used "ΔG", since the quantity at issue is not a finite change). The result is an understandable expression for the dependence of dG on chemical reactions (or other processes). If there is just one reaction
 
-        (
-          d
-        G
-          )
-            T
-
-            ,
-
-            P
-        =
-            (
-                  ∂
-
-                  G
-                  ∂
-
-                  ξ
-            )
-            T
-
-            ,
-
-            P
-          d
-        ξ
-
-        .
-
 $$ (\mathrm {d} G)_{T,P}=\left({\frac {\partial G}{\partial \xi }}\right)_{T,P}\,\mathrm {d} \xi .\, $$
 
 If we introduce the stoichiometric coefficient for the i-th component in the reaction
-
-          ν
-            i
-        =
-
-        ∂
-          N
-            i
-          /
-        ∂
-
-        ξ
 
 $$ \nu _{i}=\partial N_{i}/\partial \xi \, $$
 
 (negative for reactants), which tells how many molecules of i are produced or consumed, we obtain an algebraic expression for the partial derivative
 
-            (
-                  ∂
-
-                  G
-                  ∂
-
-                  ξ
-            )
-            T
-
-            ,
-
-            P
-        =
-          ∑
-            i
-          μ
-            i
-          ν
-            i
-        =
-
-        −
-          A
-
 $$ \left({\frac {\partial G}{\partial \xi }}\right)_{T,P}=\sum _{i}\mu _{i}\nu _{i}=-\mathbb {A} \, $$
 
 where we introduce a concise and historical name for this quantity, the "affinity", symbolized by A, as introduced by Théophile de Donder in 1923.(De Donder; Progogine & Defay, p. 69; Guggenheim, pp. 37, 240) The minus sign ensures that in a spontaneous change, when the change in the Gibbs free energy of the process is negative, the chemical species have a positive affinity for each other. The differential of G takes on a simple form that displays its dependence on composition change
-
-        (
-          d
-        G
-          )
-            T
-
-            ,
-
-            P
-        =
-
-        −
-          A
-        d
-
-        ξ
-        .
 
 $$ (\mathrm {d} G)_{T,P}=-\mathbb {A} \,d\xi \,. $$
 
 If there are a number of chemical reactions going on simultaneously, as is usually the case,
 
-        (
-          d
-        G
-          )
-            T
-
-            ,
-
-            P
-        =
-
-        −
-          ∑
-            k
-            A
-            k
-        d
-          ξ
-            k
-        .
-
 $$ (\mathrm {d} G)_{T,P}=-\sum _{k}\mathbb {A} _{k}\,d\xi _{k}\,. $$
 
 with a set of reaction coordinates { ξj }, avoiding the notion that the amounts of the components ( Ni ) can be changed independently. The expressions above are equal to zero at thermodynamic equilibrium, while they are negative when chemical reactions proceed at a finite rate, producing entropy. This can be made even more explicit by introducing the reaction rates dξj/dt. For every physically independent process (Prigogine & Defay, p. 38; Prigogine, p. 24)
-
-          A
-              ξ
-
-              ˙
-        ≤
-
-        0
-        .
 
 $$ \mathbb {A} \ {\dot {\xi }}\leq 0\,. $$
 
@@ -331,64 +74,9 @@ This is a remarkable result since the chemical potentials are intensive system v
 
 We now relax the requirement of a homogeneous "bulk" system by letting the chemical potentials and the affinity apply to any locality in which a chemical reaction (or any other process) is occurring. By accounting for the entropy production due to irreversible processes, the equality for dG is now replaced by
 
-          d
-        G
-
-        =
-
-        −
-
-        S
-          d
-        T
-
-        +
-
-        V
-          d
-        P
-
-        −
-          ∑
-            k
-            A
-            k
-          d
-          ξ
-            k
-        +
-          δ
-          W
-
-          ′
-
 $$ \mathrm {d} G=-S\,\mathrm {d} T+V\,\mathrm {d} P-\sum _{k}\mathbb {A} _{k}\,\mathrm {d} \xi _{k}+\mathrm {\delta } W'\, $$
 
 or
-
-          d
-          G
-            T
-
-            ,
-
-            P
-        =
-
-        −
-          ∑
-            k
-            A
-            k
-          d
-          ξ
-            k
-        +
-          δ
-          W
-
-          ′
-        .
 
 $$ \mathrm {d} G_{T,P}=-\sum _{k}\mathbb {A} _{k}\,\mathrm {d} \xi _{k}+\mathrm {\delta } W'.\, $$
 

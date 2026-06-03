@@ -6,71 +6,31 @@ In fluid mechanics, materials science and Earth sciences, the permeability of po
 
 Permeability is part of the proportionality constant in Darcy's law which relates discharge (flow rate) and fluid physical properties (e.g. dynamic viscosity), to a pressure gradient applied to the porous media:
 
-        v
-
-        =
-            k
-
-            η
-              Δ
-
-              P
-              Δ
-
-              x
-
 $$ v={\frac {k}{\eta }}{\frac {\Delta P}{\Delta x}} $$
 
  (for linear flow)
 
 Therefore:
 
-        k
-
-        =
-
-        v
-              η
-              Δ
-
-              x
-              Δ
-
-              P
-
 $$ k=v{\frac {\eta \,\Delta x}{\Delta P}} $$
 
 where:
-
-        v
 
 $$ v $$
 
  is the fluid velocity through the porous medium (i.e., the average flow velocity calculated as if the fluid was the only phase present in the porous medium) (m/s)
 
-        k
-
 $$ k $$
 
  is the permeability of a medium (m2)
-
-        η
 
 $$ \eta $$
 
  is the dynamic viscosity of the fluid (Pa·s)
 
-        Δ
-
-        P
-
 $$ \Delta P $$
 
  is the applied pressure difference (Pa)
-
-        Δ
-
-        x
 
 $$ \Delta x $$
 
@@ -82,45 +42,25 @@ In naturally occurring materials, the permeability values range over many orders
 
 The global proportionality constant for the flow of water through a porous medium is called the hydraulic conductivity (K, unit: m/s). Permeability, or intrinsic permeability, (k, unit: m2) is a part of this, and is a specific property characteristic of the solid skeleton and the microstructure of the porous medium itself, independently of the nature and properties of the fluid flowing through the pores of the medium. This allows to take into account the effect of temperature on the viscosity of the fluid flowing though the porous medium and to address other fluids than pure water, e.g., concentrated brines, petroleum, or organic solvents. Given the value of hydraulic conductivity for a studied system, the permeability can be calculated as follows:
 
-        k
-
-        =
-
-        K
-            η
-              ρ
-
-              g
-
 $$ k=K{\frac {\eta }{\rho g}} $$
 
 where
-
-        k
 
 $$ k $$
 
  is the permeability, m2
 
-        K
-
 $$ K $$
 
  is the hydraulic conductivity, m/s
-
-        η
 
 $$ \eta $$
 
  is the dynamic viscosity of the fluid, Pa·s
 
-        ρ
-
 $$ \rho $$
 
  is the density of the fluid, kg/m3
-
-        g
 
 $$ g $$
 
@@ -130,121 +70,39 @@ $$ g $$
 
 Tissue such as brain, liver, muscle, etc can be treated as a heterogeneous porous medium. Describing the flow of biofluids (blood, cerebrospinal fluid, etc.) within such a medium requires a full 3-dimensional anisotropic treatment of the tissue.  In this case the scalar hydraulic permeability is replaced with the hydraulic permeability tensor so that Darcy's Law reads
 
-          q
-        =
-
-        −
-            1
-
-            η
-          κ
-        ⋅
-
-        ∇
-
-        P
-
 $$ {\boldsymbol {q}}=-{\frac {1}{\eta }}{\boldsymbol {\kappa }}\cdot \nabla P $$
-
-          q
 
 $$ {\boldsymbol {q}} $$
 
  is the Darcy flux, or filtration velocity, which describes the bulk (not microscopic) velocity field of the fluid, 
-        [
-          Length
-        ]
-
-        [
-          Time
-          ]
-            −
-
-            1
 
 $$ [{\text{Length}}][{\text{Time}}]^{-1} $$
-
-        η
 
 $$ \eta $$
 
  is the dynamic viscosity of the fluid, 
-        [
-          Mass
-        ]
-
-        [
-          L
-          ]
-            −
-
-            1
-        [
-
-        T
-          ]
-            −
-
-            1
 
 $$ [{\text{Mass}}][{\text{L}}]^{-1}[T]^{-1} $$
-
-          κ
 
 $$ {\boldsymbol {\kappa }} $$
 
  is the hydraulic permeability tensor, 
-        [
-          L
-          ]
-            2
 
 $$ [{\text{L}}]^{2} $$
-
-        ∇
 
 $$ \nabla $$
 
  is the gradient operator, 
-        [
-          L
-          ]
-            −
-
-            1
 
 $$ [{\text{L}}]^{-1} $$
-
-        P
 
 $$ P $$
 
  is the pressure field in the fluid, 
-        [
-          M
-        ]
-
-        [
-          L
-          ]
-            −
-
-            1
-        [
-          T
-          ]
-            −
-
-            2
 
 $$ [{\text{M}}][{\text{L}}]^{-1}[{\text{T}}]^{-2} $$
 
 Connecting this expression to the isotropic case, 
-          κ
-        =
-
-        k
-          1
 
 $$ {\boldsymbol {\kappa }}=k\mathbb {1} $$
 
@@ -260,34 +118,17 @@ Permeability needs to be measured, either directly (using Darcy's law), or throu
 
 Based on the Hagen–Poiseuille equation for viscous flow in a pipe, permeability can be expressed as:
 
-          k
-            I
-        =
-
-        C
-
-        ⋅
-          d
-            2
-
 $$ k_{I}=C\cdot d^{2} $$
 
 where:
-
-          k
-            I
 
 $$ k_{I} $$
 
  is the intrinsic permeability [length2]
 
-        C
-
 $$ C $$
 
  is a dimensionless constant that is related to the configuration of the flow-paths
-
-        d
 
 $$ d $$
 

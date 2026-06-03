@@ -12,17 +12,7 @@ Equilibrium may be illustrated with a simple example of a drop of food coloring 
 
 Boltzmann formulated a simple relationship between entropy and the number of possible microstates of a system, which is denoted by the symbol Ω. The entropy S is proportional to the natural logarithm of this number:
 
-        S
-
-        =
-          k
-            B
-        ln
-
-        ⁡
-
-        Ω
-    {\displaystyle S=k_{\text{B}}\ln \Omega }
+{\displaystyle S=k_{\text{B}}\ln \Omega }
 
 The proportionality constant kB is one of the fundamental constants of physics and is named the Boltzmann constant in honor of its discoverer.
 
@@ -35,55 +25,15 @@ Boltzmann's principle is regarded as the foundation of statistical mechanics.
 ## Gibbs entropy formula
 The macroscopic state of a system is characterized by a distribution on the microstates. The entropy of this distribution is given by the Gibbs entropy formula, named after J. Willard Gibbs. For a classical system (i.e., a collection of classical particles) with a discrete set of microstates, if Ei is the energy of microstate i, and pi is the probability that it occurs during the system's fluctuations, then the entropy of the system is
 
-        S
-
-        =
-
-        −
-          k
-            B
-          ∑
-            i
-          p
-            i
-        ln
-
-        ⁡
-
-        (
-          p
-            i
-        )
-    {\displaystyle S=-k_{\text{B}}\,\sum _{i}p_{i}\ln(p_{i})}
+{\displaystyle S=-k_{\text{B}}\,\sum _{i}p_{i}\ln(p_{i})}
 
 The quantity 
-          k
-            B
-    {\displaystyle k_{\text{B}}}
+{\displaystyle k_{\text{B}}}
  is the Boltzmann constant, a multiplier of the summation expression.  The summation is dimensionless, since the value 
-          p
-            i
-    {\displaystyle p_{i}}
+{\displaystyle p_{i}}
  is a probability and therefore dimensionless, and ln is the natural logarithm. Hence the SI unit on both sides of the equation is that of heat capacity:
 
-        [
-
-        S
-
-        ]
-
-        =
-
-        [
-          k
-            B
-        ]
-
-        =
-            J
-
-            K
-    {\displaystyle [S]=[k_{\text{B}}]=\mathrm {\frac {J}{K}} }
+{\displaystyle [S]=[k_{\text{B}}]=\mathrm {\frac {J}{K}} }
 
 This definition remains meaningful even when the system is far away from equilibrium. Other definitions assume that the system is in thermal equilibrium, either as an isolated system, or as a system in exchange with its surroundings. The set of microstates (with probability distribution) over which the sum is found is called a statistical ensemble. Each type of statistical ensemble (micro-canonical, canonical, grand-canonical, etc.) describes a different configuration of the system's exchanges with the outside, varying from a completely isolated system to a system that can exchange one or more quantities with a reservoir, like energy, volume or molecules. In every ensemble, the equilibrium configuration of the system is dictated by the maximization of the entropy of the union of the system and its reservoir, according to the second law of thermodynamics (see the statistical mechanics article).
 
@@ -92,92 +42,22 @@ Neglecting correlations (or, more generally, statistical dependencies) between t
 This S is almost universally called simply the entropy.  It can also be called the statistical entropy or the thermodynamic entropy without changing the meaning.  Note the above expression of the statistical entropy is a discretized version of Shannon entropy.  The von Neumann entropy formula is an extension of the Gibbs entropy formula to the quantum-mechanical case.
 
 It has been shown that the Gibbs entropy is equal to the classical "heat engine" entropy characterized by 
-        d
 
-        S
-
-        =
-          δ
-
-          Q
-          /
-          T
-    {\displaystyle dS={\delta Q}/{T}}
+{\displaystyle dS={\delta Q}/{T}}
 , and the generalized Boltzmann distribution is a sufficient and necessary condition for this equivalence. Furthermore, the Gibbs entropy is the only entropy measure that is equivalent to the classical "heat engine" entropy under the following postulates:
 
 ### Ensembles
 The various ensembles used in statistical thermodynamics are linked to the entropy by the following relations:
 
-        S
+{\displaystyle S=k_{\text{B}}\ln \Omega _{\text{mic}}=k_{\text{B}}(\ln Z_{\text{can}}+\beta {\bar {E}})=k_{\text{B}}(\ln {\mathcal {Z}}_{\text{gr}}+\beta ({\bar {E}}-\mu {\bar {N}}))}
 
-        =
-          k
-            B
-        ln
-
-        ⁡
-          Ω
-            mic
-        =
-          k
-            B
-        (
-
-        ln
-
-        ⁡
-          Z
-            can
-        +
-
-        β
-              E
-
-              ¯
-        )
-
-        =
-          k
-            B
-        (
-
-        ln
-
-        ⁡
-              Z
-            gr
-        +
-
-        β
-
-        (
-              E
-
-              ¯
-        −
-
-        μ
-              N
-
-              ¯
-        )
-
-        )
-    {\displaystyle S=k_{\text{B}}\ln \Omega _{\text{mic}}=k_{\text{B}}(\ln Z_{\text{can}}+\beta {\bar {E}})=k_{\text{B}}(\ln {\mathcal {Z}}_{\text{gr}}+\beta ({\bar {E}}-\mu {\bar {N}}))}
-
-          Ω
-            mic
-    {\displaystyle \Omega _{\text{mic}}}
+{\displaystyle \Omega _{\text{mic}}}
  is the microcanonical partition function
 
-          Z
-            can
-    {\displaystyle Z_{\text{can}}}
+{\displaystyle Z_{\text{can}}}
  is the canonical partition function
 
-              Z
-            gr
-    {\displaystyle {\mathcal {Z}}_{\text{gr}}}
+{\displaystyle {\mathcal {Z}}_{\text{gr}}}
  is the grand canonical partition function
 
 ## Order through chaos and the second law of thermodynamics
@@ -196,59 +76,7 @@ In classical statistical mechanics, the number of microstates is actually uncoun
 
 To avoid coarse graining one can take the entropy as defined by the H-theorem.
 
-        S
-
-        =
-
-        −
-          k
-            B
-          H
-            B
-        :=
-
-        −
-          k
-            B
-        ∫
-
-        f
-
-        (
-          q
-            i
-        ,
-          p
-            i
-        )
-        ln
-
-        ⁡
-
-        f
-
-        (
-          q
-            i
-        ,
-          p
-            i
-        )
-        d
-          q
-            1
-        d
-          p
-            1
-        ⋯
-
-        d
-          q
-            N
-        d
-          p
-            N
-    {\displaystyle S=-k_{\text{B}}H_{\text{B}}:=-k_{\text{B}}\int f(q_{i},p_{i})\,\ln f(q_{i},p_{i})\,dq_{1}\,dp_{1}\cdots dq_{N}\,dp_{N}}
+{\displaystyle S=-k_{\text{B}}H_{\text{B}}:=-k_{\text{B}}\int f(q_{i},p_{i})\,\ln f(q_{i},p_{i})\,dq_{1}\,dp_{1}\cdots dq_{N}\,dp_{N}}
 
 However, this ambiguity can be resolved with quantum mechanics. The quantum state of a system can be expressed as a superposition of "basis" states, which can be chosen to be energy eigenstates (i.e. eigenstates of the quantum Hamiltonian). Usually, the quantum states are discrete, even though there may be an infinite number of them. For a system with some specified energy E, one takes Ω to be the number of energy eigenstates within a macroscopically small energy range between E and E + δE. In the thermodynamical limit, the specific entropy becomes independent on the choice of δE.
 
@@ -256,42 +84,14 @@ An important result, known as Nernst's theorem or the third law of thermodynamic
 
 The third law of thermodynamics states that the entropy of a perfect crystal at absolute zero (0 K) is zero. This means that nearly all molecular motion should cease. The oscillator equation for predicting quantized vibrational levels shows that even when the vibrational quantum number is 0, the molecule still has vibrational energy:
 
-          E
-            ν
-        =
-
-        h
-          ν
-            0
-          (
-            n
-
-            +
-                  1
-
-                  2
-          )
-    {\displaystyle E_{\nu }=h\nu _{0}\left(n+{\tfrac {1}{2}}\right)}
+{\displaystyle E_{\nu }=h\nu _{0}\left(n+{\tfrac {1}{2}}\right)}
 
 where 
-        h
-    {\displaystyle h}
  is the Planck constant, 
-          ν
-            0
-    {\displaystyle \nu _{0}}
+{\displaystyle \nu _{0}}
  is the characteristic frequency of the vibration, and 
-        n
-    {\displaystyle n}
  is the vibrational quantum number. Even when 
-        n
 
-        =
-
-        0
-    {\displaystyle n=0}
  (the zero-point energy), 
-          E
-            n
-    {\displaystyle E_{n}}
+{\displaystyle E_{n}}
  does not equal 0, in adherence to the Heisenberg uncertainty principle.

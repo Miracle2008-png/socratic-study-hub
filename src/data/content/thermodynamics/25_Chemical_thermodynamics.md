@@ -7,49 +7,11 @@ Chemical thermodynamics is the study of the interrelation of heat and work with 
 Chemical energy is the energy that can be released when chemical substances undergo a transformation through a chemical reaction. Breaking and making chemical bonds involves energy release or uptake, often as heat that may be either absorbed by or evolved from the chemical system.
 
 Energy released (or absorbed) because of a reaction between chemical substances ("reactants") is equal to the difference between the energy content of the products and the reactants. This change in energy is called the change in internal energy of a chemical system. It can be calculated from 
-          Δ
-              f
-          U
-              r
 
-              e
-
-              a
-
-              c
-
-              t
-
-              a
-
-              n
-
-              t
-
-              s
-              o
-    {\displaystyle \Delta _{\rm {f}}U_{\mathrm {reactants} }^{\rm {o}}}
+{\displaystyle \Delta _{\rm {f}}U_{\mathrm {reactants} }^{\rm {o}}}
 , the internal energy of formation of the reactant molecules related to the bond energies of the molecules under consideration, and 
-          Δ
-              f
-          U
-              p
 
-              r
-
-              o
-
-              d
-
-              u
-
-              c
-
-              t
-
-              s
-              o
-    {\displaystyle \Delta _{\rm {f}}U_{\mathrm {products} }^{\rm {o}}}
+{\displaystyle \Delta _{\rm {f}}U_{\mathrm {products} }^{\rm {o}}}
 , the internal energy of formation of the product molecules. The change in internal energy is equal to the heat change if it is measured under conditions of constant volume (at STP condition), as in a closed rigid container such as a bomb calorimeter. However, at constant pressure, as in reactions in vessels open to the atmosphere, the measured heat is usually not equal to the internal energy change, because pressure-volume work also releases or absorbs energy. (The heat change at constant pressure is called the enthalpy change; in this case the widely tabulated enthalpies of formation are used.)
 
 A related term is the heat of combustion, which is the chemical energy released due to a combustion reaction and of interest in the study of fuels. Food is similar to hydrocarbon and carbohydrate fuels, and when it is oxidized, its energy release is similar (though assessed differently than for a hydrocarbon fuel — see food energy).
@@ -63,119 +25,19 @@ In most cases of interest in chemical thermodynamics there are internal degrees 
 ### Gibbs function or Gibbs Energy
 For an unstructured, homogeneous "bulk" system, there are still various extensive compositional variables { Ni } that G depends on, which specify the composition (the amounts of each chemical substance, expressed as the numbers of molecules present or the numbers of moles). Explicitly,
 
-        G
-
-        =
-
-        G
-
-        (
-
-        T
-
-        ,
-
-        P
-
-        ,
-
-        {
-          N
-            i
-        }
-
-        )
-        .
-    {\displaystyle G=G(T,P,\{N_{i}\})\,.}
+{\displaystyle G=G(T,P,\{N_{i}\})\,.}
 
 For the case where only PV work is possible,
 
-          d
-        G
-
-        =
-
-        −
-
-        S
-          d
-        T
-
-        +
-
-        V
-          d
-        P
-
-        +
-          ∑
-            i
-          μ
-            i
-          d
-          N
-            i
-    {\displaystyle \mathrm {d} G=-S\,\mathrm {d} T+V\,\mathrm {d} P+\sum _{i}\mu _{i}\,\mathrm {d} N_{i}\,}
+{\displaystyle \mathrm {d} G=-S\,\mathrm {d} T+V\,\mathrm {d} P+\sum _{i}\mu _{i}\,\mathrm {d} N_{i}\,}
 
 a restatement of the fundamental thermodynamic relation, in which μi is the chemical potential for the i-th component in the system
 
-          μ
-            i
-        =
-            (
-                  ∂
-
-                  G
-                  ∂
-                    N
-                      i
-            )
-            T
-
-            ,
-
-            P
-
-            ,
-              N
-                j
-
-                ≠
-
-                i
-            ,
-
-            e
-
-            t
-
-            c
-
-            .
-        .
-    {\displaystyle \mu _{i}=\left({\frac {\partial G}{\partial N_{i}}}\right)_{T,P,N_{j\neq i},etc.}\,.}
+{\displaystyle \mu _{i}=\left({\frac {\partial G}{\partial N_{i}}}\right)_{T,P,N_{j\neq i},etc.}\,.}
 
 The expression for dG is especially useful at constant T and P, conditions, which are easy to achieve experimentally and which approximate the conditions in living creatures
 
-        (
-          d
-        G
-          )
-            T
-
-            ,
-
-            P
-        =
-          ∑
-            i
-          μ
-            i
-          d
-          N
-            i
-        .
-    {\displaystyle (\mathrm {d} G)_{T,P}=\sum _{i}\mu _{i}\,\mathrm {d} N_{i}\,.}
+{\displaystyle (\mathrm {d} G)_{T,P}=\sum _{i}\mu _{i}\,\mathrm {d} N_{i}\,.}
 
 ### Chemical affinity
 
@@ -183,197 +45,37 @@ While this formulation is mathematically defensible, it is not particularly tran
 
 Consequently, we introduce an explicit variable to represent the degree of advancement of a process, a progress variable ξ for the extent of reaction (Prigogine & Defay, p. 18; Prigogine, pp. 4–7; Guggenheim, p. 37.62), and to the use of the partial derivative ∂G/∂ξ (in place of the widely used "ΔG", since the quantity at issue is not a finite change). The result is an understandable expression for the dependence of dG on chemical reactions (or other processes). If there is just one reaction
 
-        (
-          d
-        G
-          )
-            T
-
-            ,
-
-            P
-        =
-            (
-                  ∂
-
-                  G
-                  ∂
-
-                  ξ
-            )
-            T
-
-            ,
-
-            P
-          d
-        ξ
-
-        .
-    {\displaystyle (\mathrm {d} G)_{T,P}=\left({\frac {\partial G}{\partial \xi }}\right)_{T,P}\,\mathrm {d} \xi .\,}
+{\displaystyle (\mathrm {d} G)_{T,P}=\left({\frac {\partial G}{\partial \xi }}\right)_{T,P}\,\mathrm {d} \xi .\,}
 
 If we introduce the stoichiometric coefficient for the i-th component in the reaction
 
-          ν
-            i
-        =
-
-        ∂
-          N
-            i
-          /
-        ∂
-
-        ξ
-    {\displaystyle \nu _{i}=\partial N_{i}/\partial \xi \,}
+{\displaystyle \nu _{i}=\partial N_{i}/\partial \xi \,}
 
 (negative for reactants), which tells how many molecules of i are produced or consumed, we obtain an algebraic expression for the partial derivative
 
-            (
-                  ∂
-
-                  G
-                  ∂
-
-                  ξ
-            )
-            T
-
-            ,
-
-            P
-        =
-          ∑
-            i
-          μ
-            i
-          ν
-            i
-        =
-
-        −
-          A
-    {\displaystyle \left({\frac {\partial G}{\partial \xi }}\right)_{T,P}=\sum _{i}\mu _{i}\nu _{i}=-\mathbb {A} \,}
+{\displaystyle \left({\frac {\partial G}{\partial \xi }}\right)_{T,P}=\sum _{i}\mu _{i}\nu _{i}=-\mathbb {A} \,}
 
 where we introduce a concise and historical name for this quantity, the "affinity", symbolized by A, as introduced by Théophile de Donder in 1923.(De Donder; Progogine & Defay, p. 69; Guggenheim, pp. 37, 240) The minus sign ensures that in a spontaneous change, when the change in the Gibbs free energy of the process is negative, the chemical species have a positive affinity for each other. The differential of G takes on a simple form that displays its dependence on composition change
 
-        (
-          d
-        G
-          )
-            T
-
-            ,
-
-            P
-        =
-
-        −
-          A
-        d
-
-        ξ
-        .
-    {\displaystyle (\mathrm {d} G)_{T,P}=-\mathbb {A} \,d\xi \,.}
+{\displaystyle (\mathrm {d} G)_{T,P}=-\mathbb {A} \,d\xi \,.}
 
 If there are a number of chemical reactions going on simultaneously, as is usually the case,
 
-        (
-          d
-        G
-          )
-            T
-
-            ,
-
-            P
-        =
-
-        −
-          ∑
-            k
-            A
-            k
-        d
-          ξ
-            k
-        .
-    {\displaystyle (\mathrm {d} G)_{T,P}=-\sum _{k}\mathbb {A} _{k}\,d\xi _{k}\,.}
+{\displaystyle (\mathrm {d} G)_{T,P}=-\sum _{k}\mathbb {A} _{k}\,d\xi _{k}\,.}
 
 with a set of reaction coordinates { ξj }, avoiding the notion that the amounts of the components ( Ni ) can be changed independently. The expressions above are equal to zero at thermodynamic equilibrium, while they are negative when chemical reactions proceed at a finite rate, producing entropy. This can be made even more explicit by introducing the reaction rates dξj/dt. For every physically independent process (Prigogine & Defay, p. 38; Prigogine, p. 24)
 
-          A
-              ξ
-
-              ˙
-        ≤
-
-        0
-        .
-    {\displaystyle \mathbb {A} \ {\dot {\xi }}\leq 0\,.}
+{\displaystyle \mathbb {A} \ {\dot {\xi }}\leq 0\,.}
 
 This is a remarkable result since the chemical potentials are intensive system variables, depending only on the local molecular milieu. They cannot "know" whether temperature and pressure (or any other system variables) are going to be held constant over time. It is a purely local criterion and must hold regardless of any such constraints. Of course, it could have been obtained by taking partial derivatives of any of the other fundamental state functions, but nonetheless is a general criterion for (−T times) the entropy production from that spontaneous process; or at least any part of it that is not captured as external work. (See Constraints below.)
 
 We now relax the requirement of a homogeneous "bulk" system by letting the chemical potentials and the affinity apply to any locality in which a chemical reaction (or any other process) is occurring. By accounting for the entropy production due to irreversible processes, the equality for dG is now replaced by
 
-          d
-        G
-
-        =
-
-        −
-
-        S
-          d
-        T
-
-        +
-
-        V
-          d
-        P
-
-        −
-          ∑
-            k
-            A
-            k
-          d
-          ξ
-            k
-        +
-          δ
-          W
-
-          ′
-    {\displaystyle \mathrm {d} G=-S\,\mathrm {d} T+V\,\mathrm {d} P-\sum _{k}\mathbb {A} _{k}\,\mathrm {d} \xi _{k}+\mathrm {\delta } W'\,}
+{\displaystyle \mathrm {d} G=-S\,\mathrm {d} T+V\,\mathrm {d} P-\sum _{k}\mathbb {A} _{k}\,\mathrm {d} \xi _{k}+\mathrm {\delta } W'\,}
 
 or
 
-          d
-          G
-            T
-
-            ,
-
-            P
-        =
-
-        −
-          ∑
-            k
-            A
-            k
-          d
-          ξ
-            k
-        +
-          δ
-          W
-
-          ′
-        .
-    {\displaystyle \mathrm {d} G_{T,P}=-\sum _{k}\mathbb {A} _{k}\,\mathrm {d} \xi _{k}+\mathrm {\delta } W'.\,}
+{\displaystyle \mathrm {d} G_{T,P}=-\sum _{k}\mathbb {A} _{k}\,\mathrm {d} \xi _{k}+\mathrm {\delta } W'.\,}
 
 Any decrease in the Gibbs function of a system is the upper limit for any isothermal, isobaric work that can be captured in the surroundings, or it may simply be dissipated, appearing as T times a corresponding increase in the entropy of the system and its surrounding. Or it may go partly toward doing external work and partly toward creating entropy. The important point is that the extent of reaction for a chemical reaction may be coupled to the displacement of some external mechanical or electrical quantity in such a way that one can advance only if the other also does. The coupling may occasionally be rigid, but it is often flexible and variable.
 

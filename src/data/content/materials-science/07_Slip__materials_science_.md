@@ -10,25 +10,6 @@ Slip in face centered cubic (fcc) crystals occurs along the close packed plane. 
 
 Given the permutations of the slip plane types and direction types, fcc crystals have 12 slip systems. In the fcc lattice, the norm of the Burgers vector, b, can be calculated using the following equation:
 
-          |
-        b
-          |
-        =
-            a
-
-            2
-          |
-        ⟨
-
-        110
-
-        ⟩
-          |
-        =
-              a
-                  2
-            2
-
 $$ |b|={\frac {a}{2}}|\langle 110\rangle |={\frac {a{\sqrt {2}}}{2}} $$
 
 Where a is the lattice constant of the unit cell.
@@ -46,25 +27,6 @@ There are six slip planes of type {110}, each with two <111> directions (12 syst
 While the {123} and {112} planes are not exactly identical in activation energy to {110}, they are so close in energy that for all intents and purposes they can be treated as identical.
 
 In the diagram on the right the specific slip plane and direction are (110) and [111], respectively.
-
-          |
-        b
-          |
-        =
-            a
-
-            2
-          |
-        ⟨
-
-        111
-
-        ⟩
-          |
-        =
-                  3
-              a
-            2
 
 $$ |b|={\frac {a}{2}}|\langle 111\rangle |={\frac {{\sqrt {3}}a}{2}} $$
 

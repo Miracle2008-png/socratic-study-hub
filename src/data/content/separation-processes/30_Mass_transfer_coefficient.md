@@ -6,8 +6,5 @@ In engineering, the mass transfer coefficient is a diffusion rate constant that 
 (mol/s)/(m2·mol/m3) = m/s
 
 Note, the units will vary based upon which units the driving force is expressed in. The driving force shown here  as '
-          Δ
-            c
-              A
-    {\displaystyle {\Delta c_{A}}}
+{\displaystyle {\Delta c_{A}}}
 ' is expressed in units of moles per unit of volume, but in some cases the driving force is represented by other measures of concentration with different units. For example, the driving force may be partial pressures when dealing with mass transfer in a gas phase and thus use units of pressure.

@@ -39,55 +39,20 @@ The continuum assumption is an idealization of continuum mechanics under which f
 ## Navier–Stokes equations
 
 The Navier–Stokes equations (named after Claude-Louis Navier and George Gabriel Stokes) are differential equations that describe the force balance at a given point within a fluid. For an incompressible fluid with vector velocity field 
-          u
 
 $$ \mathbf {u} $$
 
 , the Navier–Stokes equations are 
-
-              ∂
-                u
-              ∂
-
-              t
-        +
-
-        (
-          u
-        ⋅
-
-        ∇
-
-        )
-          u
-        =
-
-        −
-            1
-
-            ρ
-        ∇
-
-        p
-
-        +
-
-        ν
-          ∇
-            2
-          u
 
 $$ {\frac {\partial \mathbf {u} }{\partial t}}+(\mathbf {u} \cdot \nabla )\mathbf {u} =-{\frac {1}{\rho }}\nabla p+\nu \nabla ^{2}\mathbf {u} $$
 
 .
 
 These differential equations are the analogues for deformable materials to Newton's equations of motion for particles – the Navier–Stokes equations describe changes in momentum (force) in response to pressure 
-        p
 
 $$ p $$
 
  and viscosity, parameterized by the kinematic viscosity 
-        ν
 
 $$ \nu $$
 
@@ -98,11 +63,6 @@ Solutions of the Navier–Stokes equations for a given physical problem must be 
 ## Inviscid and viscous fluids
 
 An inviscid fluid has no viscosity, 
-        ν
-
-        =
-
-        0
 
 $$ \nu =0 $$
 
@@ -120,38 +80,17 @@ By contrast, stirring a non-Newtonian fluid can leave a "hole" behind. This will
 
 The constant of proportionality between the viscous stress tensor and the velocity gradient is known as the viscosity. A simple equation to describe incompressible Newtonian fluid behavior is
 
-        τ
-
-        =
-
-        −
-
-        μ
-                d
-              u
-                d
-              n
-
 $$ \tau =-\mu {\frac {\mathrm {d} u}{\mathrm {d} n}} $$
 
 where
-
-        τ
 
 $$ \tau $$
 
  is the shear stress exerted by the fluid ("drag"),
 
-        μ
-
 $$ \mu $$
 
  is the fluid viscosity—a constant of proportionality, and
-
-                d
-              u
-                d
-              n
 
 $$ {\frac {\mathrm {d} u}{\mathrm {d} n}} $$
 
@@ -159,83 +98,33 @@ $$ {\frac {\mathrm {d} u}{\mathrm {d} n}} $$
 
 For a Newtonian fluid, the viscosity, by definition, depends only on temperature, not on the forces acting upon it. If the fluid is incompressible the equation governing the viscous stress (in Cartesian coordinates) is
 
-          τ
-            i
-
-            j
-        =
-
-        μ
-          (
-                  ∂
-                    v
-                      i
-                  ∂
-                    x
-                      j
-            +
-                  ∂
-                    v
-                      j
-                  ∂
-                    x
-                      i
-          )
-
 $$ \tau _{ij}=\mu \left({\frac {\partial v_{i}}{\partial x_{j}}}+{\frac {\partial v_{j}}{\partial x_{i}}}\right) $$
 
 where
 
-          τ
-            i
-
-            j
-
 $$ \tau _{ij} $$
 
  is the shear stress on the 
-          i
-            t
-
-            h
 
 $$ i^{th} $$
 
  face of a fluid element in the 
-          j
-            t
-
-            h
 
 $$ j^{th} $$
 
  direction
 
-          v
-            i
-
 $$ v_{i} $$
 
  is the velocity in the 
-          i
-            t
-
-            h
 
 $$ i^{th} $$
 
  direction
 
-          x
-            j
-
 $$ x_{j} $$
 
  is the 
-          j
-            t
-
-            h
 
 $$ j^{th} $$
 
@@ -243,63 +132,15 @@ $$ j^{th} $$
 
 If the fluid is not incompressible the general form for the viscous stress in a Newtonian fluid is
 
-          τ
-            i
-
-            j
-        =
-
-        μ
-          (
-                  ∂
-                    v
-                      i
-                  ∂
-                    x
-                      j
-            +
-                  ∂
-                    v
-                      j
-                  ∂
-                    x
-                      i
-            −
-                2
-
-                3
-              δ
-                i
-
-                j
-            ∇
-
-            ⋅
-              v
-          )
-        +
-
-        κ
-          δ
-            i
-
-            j
-        ∇
-
-        ⋅
-          v
-
 $$ \tau _{ij}=\mu \left({\frac {\partial v_{i}}{\partial x_{j}}}+{\frac {\partial v_{j}}{\partial x_{i}}}-{\frac {2}{3}}\delta _{ij}\nabla \cdot \mathbf {v} \right)+\kappa \delta _{ij}\nabla \cdot \mathbf {v} $$
 
 where 
-        κ
 
 $$ \kappa $$
 
  is the second viscosity coefficient (or bulk viscosity). If a fluid does not obey this relation, it is termed a non-Newtonian fluid, of which there are several types. Non-Newtonian fluids can be either plastic, Bingham plastic, pseudoplastic, dilatant, thixotropic, rheopectic, viscoelastic.
 
 In some applications, another rough broad division among fluids is made: ideal and non-ideal fluids. An ideal fluid is non-viscous and offers no resistance whatsoever to a shearing force.  An ideal fluid really does not exist, but in some calculations, the assumption is justifiable. One example of this is the flow far from solid surfaces. In many cases, the viscous effects are concentrated near the solid boundaries (such as in boundary layers) while in regions of the flow field far away from the boundaries the viscous effects can be neglected and the fluid there is treated as it were inviscid (ideal flow). When the viscosity is neglected, the term containing the viscous stress tensor 
-          τ
 
 $$ \mathbf {\tau } $$
 

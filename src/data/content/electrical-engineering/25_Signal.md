@@ -51,70 +51,11 @@ According to the strengths of signals, practical signals can be classified into 
 
 Energy signals: Those signals' energy are equal to a finite positive value, but their average powers are 0;
 
-        0
-
-        <
-
-        E
-
-        =
-          ∫
-            −
-
-            ∞
-            ∞
-          s
-            2
-        (
-
-        t
-
-        )
-
-        d
-
-        t
-
-        <
-
-        ∞
-    {\displaystyle 0<E=\int _{-\infty }^{\infty }s^{2}(t)dt<\infty }
+{\displaystyle 0<E=\int _{-\infty }^{\infty }s^{2}(t)dt<\infty }
 
 Power signals: Those signals' average power are equal to a finite positive value, but their energy are infinite.
 
-        P
-
-        =
-          lim
-            T
-
-            →
-
-            ∞
-            1
-
-            T
-          ∫
-            −
-
-            T
-              /
-            2
-            T
-              /
-            2
-          s
-            2
-        (
-
-        t
-
-        )
-
-        d
-
-        t
-    {\displaystyle P=\lim _{T\rightarrow \infty }{\frac {1}{T}}\int _{-T/2}^{T/2}s^{2}(t)dt}
+{\displaystyle P=\lim _{T\rightarrow \infty }{\frac {1}{T}}\int _{-T/2}^{T/2}s^{2}(t)dt}
 
 ### Deterministic and random
 Deterministic signals are those whose values at any time are predictable and can be calculated by a mathematical equation.
@@ -124,229 +65,47 @@ Random signals are signals that take on random values at any given time instant 
 ### Even and odd
 
 An even signal satisfies the condition 
-        x
 
-        (
-
-        t
-
-        )
-
-        =
-
-        x
-
-        (
-
-        −
-
-        t
-
-        )
-    {\displaystyle x(t)=x(-t)}
+{\displaystyle x(t)=x(-t)}
 
 or equivalently if the following equation holds for all 
-        t
-    {\displaystyle t}
  and 
-        −
 
-        t
-    {\displaystyle -t}
  in the domain of 
-        x
-    {\displaystyle x}
 :
 
-        x
-
-        (
-
-        t
-
-        )
-
-        −
-
-        x
-
-        (
-
-        −
-
-        t
-
-        )
-
-        =
-
         0.
-    {\displaystyle x(t)-x(-t)=0.}
+{\displaystyle x(t)-x(-t)=0.}
 
 An odd signal satisfies the condition 
-        x
 
-        (
-
-        t
-
-        )
-
-        =
-
-        −
-
-        x
-
-        (
-
-        −
-
-        t
-
-        )
-    {\displaystyle x(t)=-x(-t)}
+{\displaystyle x(t)=-x(-t)}
 
 or equivalently if the following equation holds for all 
-        t
-    {\displaystyle t}
  and 
-        −
 
-        t
-    {\displaystyle -t}
  in the domain of 
-        x
-    {\displaystyle x}
 :
 
-        x
-
-        (
-
-        t
-
-        )
-
-        +
-
-        x
-
-        (
-
-        −
-
-        t
-
-        )
-
-        =
-
         0.
-    {\displaystyle x(t)+x(-t)=0.}
+{\displaystyle x(t)+x(-t)=0.}
 
 ### Periodic
 A signal is said to be periodic if it satisfies the condition:
 
-        x
-
-        (
-
-        t
-
-        )
-
-        =
-
-        x
-
-        (
-
-        t
-
-        +
-
-        T
-
-        )
-        ∀
-
-        t
-
-        ∈
-
-        [
-          t
-            0
-        ,
-          t
-            m
-
-            a
-
-            x
-        ]
-    {\displaystyle x(t)=x(t+T)\quad \forall t\in [t_{0},t_{max}]}
+{\displaystyle x(t)=x(t+T)\quad \forall t\in [t_{0},t_{max}]}
  or 
-        x
 
-        (
-
-        n
-
-        )
-
-        =
-
-        x
-
-        (
-
-        n
-
-        +
-
-        N
-
-        )
-        ∀
-
-        n
-
-        ∈
-
-        [
-          n
-            0
-        ,
-          n
-            m
-
-            a
-
-            x
-        ]
-    {\displaystyle x(n)=x(n+N)\quad \forall n\in [n_{0},n_{max}]}
+{\displaystyle x(n)=x(n+N)\quad \forall n\in [n_{0},n_{max}]}
 
 Where:
 
-        T
-    {\displaystyle T}
  = fundamental time period,
 
-        1
-          /
-        T
-
-        =
-
-        f
-    {\displaystyle 1/T=f}
+{\displaystyle 1/T=f}
 = fundamental frequency.
 
 The same can be applied to 
-        N
-    {\displaystyle N}
 . A periodic signal will repeat for every period.
 
 #### Time discretization

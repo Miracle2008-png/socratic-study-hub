@@ -7,88 +7,16 @@ In thermodynamics, a critical point (or critical state) is the end point of a ph
 ### Theory
 
 Solving the above condition 
-        (
-
-        ∂
-
-        p
-          /
-        ∂
-
-        V
-          )
-            T
-        =
-
-        0
 
 $$ (\partial p/\partial V)_{T}=0 $$
 
  for the van der Waals equation, one can compute the critical point as 
-
-          T
-            c
-        =
-              8
-
-              a
-              27
-
-              R
-
-              b
-        ,
-          V
-            c
-        =
-
-        3
-
-        n
-
-        b
-
-        ,
-          p
-            c
-        =
-            a
-              27
-                b
-                  2
-        .
 
 $$ T_{\text{c}}={\frac {8a}{27Rb}},\quad V_{\text{c}}=3nb,\quad p_{\text{c}}={\frac {a}{27b^{2}}}. $$
 
 However, the van der Waals equation, based on a mean-field theory, does not hold near the critical point. In particular, it predicts wrong scaling laws.
 
 To analyse properties of fluids near the critical point, reduced state variables are sometimes defined relative to the critical properties
-
-          T
-            r
-        =
-            T
-              T
-                c
-        ,
-          p
-            r
-        =
-            p
-              p
-                c
-        ,
-          V
-            r
-        =
-            V
-              R
-                T
-                  c
-                /
-                p
-                  c
-        .
 
 $$ T_{\text{r}}={\frac {T}{T_{\text{c}}}},\quad p_{\text{r}}={\frac {p}{p_{\text{c}}}},\quad V_{\text{r}}={\frac {V}{RT_{\text{c}}/p_{\text{c}}}}. $$
 

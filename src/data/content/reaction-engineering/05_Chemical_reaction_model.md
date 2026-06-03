@@ -4,48 +4,6 @@ Chemical reaction models transform physical knowledge into a mathematical formul
 
 ## Species transport equation
 
-              ∂
-
-              (
-
-              ρ
-                Y
-                  i
-              )
-              ∂
-
-              t
-        +
-
-        ∇
-
-        ⋅
-
-        (
-
-        ρ
-              v
-
-              →
-          Y
-            i
-        )
-
-        =
-
-        −
-
-        ∇
-
-        ⋅
-                J
-
-                →
-            i
-        +
-          R
-            i
-
 $$ {\frac {\partial (\rho Y_{i})}{\partial t}}+\nabla \cdot (\rho {\vec {v}}Y_{i})=-\nabla \cdot {\vec {J}}_{i}+R_{i} $$
 
 Ri is the net rate of production of species i by chemical reaction and Si is the rate of creation by addition from the dispersed phase and the user defined source. Ji is the diffusion flux of species i, which arises due to concentration gradients and differs in both laminar and turbulent flows. In turbulent flows, computational fluid dynamics also considers the effects of turbulent diffusivity. The net source of chemical species i due to reaction, Ri which appeared as the source term in the species transport equation is computed as the sum of the reaction sources over the NR reactions among the species.

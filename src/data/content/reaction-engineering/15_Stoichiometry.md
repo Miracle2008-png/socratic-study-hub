@@ -27,33 +27,18 @@ A stoichiometric reactant is a reactant that is consumed in a reaction, as oppos
 Stoichiometry is not only used to balance chemical equations but also used in "conversions" between quantities of a substance by dimensional analysis, e.g., converting from grams to moles using molar mass as the "conversion factor", or from grams to milliliters using density. For example, to express 2.00 g of NaCl (sodium chloride) as an amount (in moles), one would do the following:
 
               2.00
-                   g NaCl
               58.44
-                   g/mol
-        =
 
         0.0342
-          mol NaCl
 
 $$ {\frac {2.00{\mbox{ g NaCl}}}{58.44{\mbox{ g/mol}}}}=0.0342\ {\text{mol NaCl}} $$
 
 In the above example, when written out in fraction form, the units of grams form a multiplicative identity, which is equivalent to one (g/g = 1), with the resulting amount in moles (the unit that was needed), as shown in the following equation,
 
-          (
                 2.00
-                     g NaCl
-              1
-          )
-          (
-                1
-                     mol NaCl
                 58.44
-                     g NaCl
-          )
-        =
 
         0.0342
-          mol NaCl
 
 $$ \left({\frac {2.00{\mbox{ g NaCl}}}{1}}\right)\left({\frac {1{\mbox{ mol NaCl}}}{58.44{\mbox{ g NaCl}}}}\right)=0.0342\ {\text{mol NaCl}} $$
 
@@ -71,39 +56,9 @@ The molar ratio allows for conversion between moles of one substance and moles o
 
 the amount of water that will be produced by the combustion of 0.27 moles of CH3OH is obtained using the molar ratio between CH3OH and H2O of 2 to 4.
 
-          (
                 0.27
-                     mol 
-                  C
-                    H
-                      3
-                  O
-
-                  H
-              1
-          )
-          (
-                4
-                     mol 
-                    H
-                      2
-                  O
-                2
-                     mol 
-                  C
-                    H
-                      3
-                  O
-
-                  H
-          )
-        =
 
         0.54
-          mol 
-            H
-              2
-          O
 
 $$ \left({\frac {0.27{\mbox{ mol }}\mathrm {CH_{3}OH} }{1}}\right)\left({\frac {4{\mbox{ mol }}\mathrm {H_{2}O} }{2{\mbox{ mol }}\mathrm {CH_{3}OH} }}\right)=0.54\ {\text{mol }}\mathrm {H_{2}O} $$
 
@@ -129,116 +84,39 @@ Cu + 2 AgNO3  →  Cu(NO3)2 + 2 Ag
 
 For the mass to mole step, the mass of copper (16.00 g) would be converted to moles of copper by dividing the mass of copper by its molar mass: 63.55 g/mol.
 
-          (
                 16.00
-                     g Cu
-              1
-          )
-          (
-                1
-                     mol Cu
                 63.55
-                     g Cu
-          )
-        =
 
         0.2518
-          mol Cu
 
 $$ \left({\frac {16.00{\mbox{ g Cu}}}{1}}\right)\left({\frac {1{\mbox{ mol Cu}}}{63.55{\mbox{ g Cu}}}}\right)=0.2518\ {\text{mol Cu}} $$
 
 Now that the amount of Cu in moles (0.2518) is found, we can set up the mole ratio. This is found by looking at the coefficients in the balanced equation: Cu and Ag are in a 1:2 ratio.
 
-          (
                 0.2518
-                     mol Cu
-              1
-          )
-          (
-                2
-                     mol Ag
-                1
-                     mol Cu
-          )
-        =
 
         0.5036
-          mol Ag
 
 $$ \left({\frac {0.2518{\mbox{ mol Cu}}}{1}}\right)\left({\frac {2{\mbox{ mol Ag}}}{1{\mbox{ mol Cu}}}}\right)=0.5036\ {\text{mol Ag}} $$
 
 Now that the moles of Ag produced is known to be 0.5036 mol, we convert this amount to grams of Ag produced to come to the final answer:
 
-          (
                 0.5036
-                     mol Ag
-              1
-          )
-          (
                 107.87
-                     g Ag
-                1
-                     mol Ag
-          )
-        =
 
         54.32
-          g Ag
 
 $$ \left({\frac {0.5036{\mbox{ mol Ag}}}{1}}\right)\left({\frac {107.87{\mbox{ g Ag}}}{1{\mbox{ mol Ag}}}}\right)=54.32\ {\text{g Ag}} $$
 
 This set of calculations can be further condensed into a single step:
 
-          m
-              A
-
-              g
-        =
-          (
                 16.00
-                     g 
-                  C
 
-                  u
-              1
-          )
-          (
-                1
-                     mol 
-                  C
-
-                  u
                 63.55
-                     g 
-                  C
 
-                  u
-          )
-          (
-                2
-                     mol 
-                  A
-
-                  g
-                1
-                     mol 
-                  C
-
-                  u
-          )
-          (
                 107.87
-                     g 
-                  A
-
-                  g
-                1
-                     mol Ag
-          )
-        =
 
         54.32
-             g
 
 $$ m_{\mathrm {Ag} }=\left({\frac {16.00{\mbox{ g }}\mathrm {Cu} }{1}}\right)\left({\frac {1{\mbox{ mol }}\mathrm {Cu} }{63.55{\mbox{ g }}\mathrm {Cu} }}\right)\left({\frac {2{\mbox{ mol }}\mathrm {Ag} }{1{\mbox{ mol }}\mathrm {Cu} }}\right)\left({\frac {107.87{\mbox{ g }}\mathrm {Ag} }{1{\mbox{ mol Ag}}}}\right)=54.32{\mbox{ g}} $$
 
@@ -250,63 +128,9 @@ C3H8 + 5 O2  →  3 CO2 + 4 H2O
 
 The mass of water formed if 120 g of propane (C3H8) is burned in excess oxygen is then
 
-          m
-                H
-                  2
-              O
-        =
-          (
                 120.
-                     g 
-                    C
-                      3
-                    H
-                      8
-              1
-          )
-          (
-                1
-                     mol 
-                    C
-                      3
-                    H
-                      8
                 44.09
-                     g 
-                    C
-                      3
-                    H
-                      8
-          )
-          (
-                4
-                     mol 
-                    H
-                      2
-                  O
-                1
-                     mol 
-                    C
-                      3
-                    H
-                      8
-          )
-          (
                 18.02
-                     g 
-                    H
-                      2
-                  O
-                1
-                     mol 
-                    H
-                      2
-                  O
-          )
-        =
-
-        196
-             g
 
 $$ m_{\mathrm {H_{2}O} }=\left({\frac {120.{\mbox{ g }}\mathrm {C_{3}H_{8}} }{1}}\right)\left({\frac {1{\mbox{ mol }}\mathrm {C_{3}H_{8}} }{44.09{\mbox{ g }}\mathrm {C_{3}H_{8}} }}\right)\left({\frac {4{\mbox{ mol }}\mathrm {H_{2}O} }{1{\mbox{ mol }}\mathrm {C_{3}H_{8}} }}\right)\left({\frac {18.02{\mbox{ g }}\mathrm {H_{2}O} }{1{\mbox{ mol }}\mathrm {H_{2}O} }}\right)=196{\mbox{ g}} $$
 
@@ -318,58 +142,11 @@ Fe2O3 + 2 Al  →  Al2O3 + 2 Fe
 
 This equation shows that 1 mole of iron(III) oxide and 2 moles of aluminium will produce 1 mole of aluminium oxide and 2 moles of iron.  So, to completely react with 85.0 g of iron(III) oxide (0.532 mol), 28.7 g (1.06 mol) of aluminium are needed.
 
-          m
-              A
-
-              l
-        =
-          (
                 85.0
-                     g 
-                  F
-                    e
-                      2
-                    O
-                      3
-              1
-          )
-          (
-                1
-                     mol 
-                  F
-                    e
-                      2
-                    O
-                      3
                 159.7
-                     g 
-                  F
-                    e
-                      2
-                    O
-                      3
-          )
-          (
-                2
-                     mol Al
-                1
-                     mol 
-                  F
-                    e
-                      2
-                    O
-                      3
-          )
-          (
                 26.98
-                     g Al
-                1
-                     mol Al
-          )
-        =
 
         28.7
-             g
 
 $$ m_{\mathrm {Al} }=\left({\frac {85.0{\mbox{ g }}\mathrm {Fe_{2}O_{3}} }{1}}\right)\left({\frac {1{\mbox{ mol }}\mathrm {Fe_{2}O_{3}} }{159.7{\mbox{ g }}\mathrm {Fe_{2}O_{3}} }}\right)\left({\frac {2{\mbox{ mol Al}}}{1{\mbox{ mol }}\mathrm {Fe_{2}O_{3}} }}\right)\left({\frac {26.98{\mbox{ g Al}}}{1{\mbox{ mol Al}}}}\right)=28.7{\mbox{ g}} $$
 
@@ -383,135 +160,22 @@ Consider the equation of roasting lead(II) sulfide (PbS) in oxygen (O2) to produ
 
 To determine the theoretical yield of lead(II) oxide if 200.0 g of lead(II) sulfide and 200.0 g of oxygen are heated in an open container:
 
-          m
-              P
-
-              b
-
-              O
-        =
-          (
                 200.0
-                     g 
-                  P
 
-                  b
-
-                  S
-              1
-          )
-          (
-                1
-                     mol 
-                  P
-
-                  b
-
-                  S
                 239.27
-                     g 
-                  P
 
-                  b
-
-                  S
-          )
-          (
-                2
-                     mol 
-                  P
-
-                  b
-
-                  O
-                2
-                     mol 
-                  P
-
-                  b
-
-                  S
-          )
-          (
                 223.2
-                     g 
-                  P
-
-                  b
-
-                  O
-                1
-                     mol 
-                  P
-
-                  b
-
-                  O
-          )
-        =
 
         186.6
-             g
 
 $$ m_{\mathrm {PbO} }=\left({\frac {200.0{\mbox{ g }}\mathrm {PbS} }{1}}\right)\left({\frac {1{\mbox{ mol }}\mathrm {PbS} }{239.27{\mbox{ g }}\mathrm {PbS} }}\right)\left({\frac {2{\mbox{ mol }}\mathrm {PbO} }{2{\mbox{ mol }}\mathrm {PbS} }}\right)\left({\frac {223.2{\mbox{ g }}\mathrm {PbO} }{1{\mbox{ mol }}\mathrm {PbO} }}\right)=186.6{\mbox{ g}} $$
 
-          m
-              P
-
-              b
-
-              O
-        =
-          (
                 200.0
-                     g 
-                    O
-                      2
-              1
-          )
-          (
-                1
-                     mol 
-                    O
-                      2
                 32.00
-                     g 
-                    O
-                      2
-          )
-          (
-                2
-                     mol 
-                  P
 
-                  b
-
-                  O
-                3
-                     mol 
-                    O
-                      2
-          )
-          (
                 223.2
-                     g 
-                  P
-
-                  b
-
-                  O
-                1
-                     mol 
-                  P
-
-                  b
-
-                  O
-          )
-        =
 
         930.0
-             g
 
 $$ m_{\mathrm {PbO} }=\left({\frac {200.0{\mbox{ g }}\mathrm {O_{2}} }{1}}\right)\left({\frac {1{\mbox{ mol }}\mathrm {O_{2}} }{32.00{\mbox{ g }}\mathrm {O_{2}} }}\right)\left({\frac {2{\mbox{ mol }}\mathrm {PbO} }{3{\mbox{ mol }}\mathrm {O_{2}} }}\right)\left({\frac {223.2{\mbox{ g }}\mathrm {PbO} }{1{\mbox{ mol }}\mathrm {PbO} }}\right)=930.0{\mbox{ g}} $$
 
@@ -519,24 +183,14 @@ Because a lesser amount of PbO is produced for the 200.0 g of PbS, it is clear t
 
 In reality, the actual yield is not the same as the stoichiometrically-calculated theoretical yield. Percent yield, then, is expressed in the following equation:
 
-            percent yield
-        =
-              actual yield
-              theoretical yield
-
 $$ {\mbox{percent yield}}={\frac {\mbox{actual yield}}{\mbox{theoretical yield}}} $$
 
 If 170.0 g of lead(II) oxide is obtained, then the percent yield would be calculated as follows:
 
-            percent yield
-        =
               170.0 g PbO
               186.6 g PbO
-        =
 
         91.12
-
-        %
 
 $$ {\mbox{percent yield}}={\frac {\mbox{170.0 g PbO}}{\mbox{186.6 g PbO}}}=91.12\% $$
 
@@ -578,48 +232,23 @@ For example, in the reaction CH4 + 2 O2 → CO2 + 2 H2O, the stoichiometric numb
 
 In more technically precise terms, the stoichiometric number in a chemical reaction system of the i-th component is defined as
 
-          ν
-            i
-        =
-              Δ
-                N
-                  i
-              Δ
-
-              ξ
-
 $$ \nu _{i}={\frac {\Delta N_{i}}{\Delta \xi }}\, $$
 
 or
 
-        Δ
-          N
-            i
-        =
-          ν
-            i
-        Δ
-
-        ξ
-
 $$ \Delta N_{i}=\nu _{i}\,\Delta \xi \, $$
 
 where 
-          N
-            i
 
 $$ N_{i} $$
 
  is the number of molecules of i, and 
-        ξ
 
 $$ \xi $$
 
  is the progress variable or extent of reaction.
 
 The stoichiometric number 
-          ν
-            i
 
 $$ \nu _{i} $$
 
@@ -635,36 +264,9 @@ in which νB = 1 since one molecule of B is produced each time the reaction occu
 
 There are usually multiple reactions proceeding simultaneously in any natural reaction system, including those in biology. Since any chemical component can participate in several reactions simultaneously, the stoichiometric number of the i-th component in the k-th reaction is defined as
 
-          ν
-            i
-
-            k
-        =
-              ∂
-                N
-                  i
-              ∂
-                ξ
-                  k
-
 $$ \nu _{ik}={\frac {\partial N_{i}}{\partial \xi _{k}}}\, $$
 
 so that the total (differential) change in the amount of the i-th component is
-
-        d
-          N
-            i
-        =
-          ∑
-            k
-          ν
-            i
-
-            k
-        d
-          ξ
-            k
-        .
 
 $$ dN_{i}=\sum _{k}\nu _{ik}\,d\xi _{k}.\, $$
 
@@ -698,55 +300,11 @@ S4 → S5
 
 This system comprises four reactions and five different molecular species. The stoichiometry matrix for this system can be written as:
 
-          N
-        =
-            [
-                  −
-
-                  1
-                  0
-                  0
-                  0
-                  1
-                  1
-                  0
-                  0
-                  0
-                  −
-
-                  1
-                  −
-
-                  1
-                  0
-                  0
-                  0
-                  1
-                  −
-
-                  1
-                  0
-                  0
-                  0
-                  1
-            ]
-
 $$ \mathbf {N} ={\begin{bmatrix}-1&0&0&0\\1&1&0&0\\0&-1&-1&0\\0&0&1&-1\\0&0&0&1\\\end{bmatrix}} $$
 
 where the rows correspond to S1, S2, S3, S4 and S5, respectively. The process of converting a reaction scheme into a stoichiometry matrix can be a lossy transformation: for example, the stoichiometries in the second reaction simplify when included in the matrix. This means that it is not always possible to recover the original reaction scheme from a stoichiometry matrix.
 
 Often the stoichiometry matrix is combined with the rate vector, v, and the species vector, x to form a compact equation, the biochemical systems equation, describing the rates of change of the molecular species:
-
-              d
-                x
-              d
-
-              t
-        =
-          N
-        ⋅
-          v
-        .
 
 $$ {\frac {d\mathbf {x} }{dt}}=\mathbf {N} \cdot \mathbf {v} . $$
 
@@ -760,131 +318,31 @@ Gas stoichiometry calculations solve for the unknown volume or mass of a gaseous
 
 we would carry out the following calculations:
 
-        100
-          g
-          N
-            H
-              3
-        ⋅
-              1
-                m
-
-                o
-
-                l
-                N
-                  H
-                    3
               17.034
-                g
-                N
-                  H
-                    3
-        =
 
         5.871
-          m
-
-          o
-
-          l
-          N
-            H
-              3
 
 $$ 100\,\mathrm {g\,NH_{3}} \cdot {\frac {1\,\mathrm {mol\,NH_{3}} }{17.034\,\mathrm {g\,NH_{3}} }}=5.871\,\mathrm {mol\,NH_{3}} $$
 
 There is a 1:1 molar ratio of NH3 to NO2 in the above balanced combustion reaction, so 5.871 mol of NO2 will be formed. We will employ the ideal gas law to solve for the volume at 0 °C (273.15 K) and 1 atmosphere using the gas law constant of R = 0.08206 L·atm·K−1·mol−1:
 
-                P
-
-                V
-                =
-
-                n
-
-                R
-
-                T
-                V
-                =
-                      n
-
-                      R
-
-                      T
-                    P
-                =
                       5.871
-                         mol
-                      ⋅
 
                       0.08206
-                            L
-
-                            ⋅
-
-                            a
-
-                            t
-
-                            m
-                            m
-
-                            o
-
-                            l
-
-                            ⋅
-
-                            K
-                      ⋅
 
                       273.15
-                         K
-                      1
-                         atm
-                =
 
                 131.597
-                  L
-                  N
-                    O
-                      2
 
 $$ {\begin{aligned}PV&=nRT\\V&={\frac {nRT}{P}}\\&={\frac {5.871{\text{ mol}}\cdot 0.08206\,{\frac {\mathrm {L\cdot atm} }{\mathrm {mol\cdot K} }}\cdot 273.15{\text{ K}}}{1{\text{ atm}}}}\\&=131.597\,\mathrm {L\,NO_{2}} \end{aligned}} $$
 
 Gas stoichiometry often involves having to know the molar mass of a gas, given the density of that gas. The ideal gas law can be re-arranged to obtain a relation between the density and the molar mass of an ideal gas:
 
-        ρ
-
-        =
-            m
-
-            V
-
 $$ \rho ={\frac {m}{V}} $$
-
-    and    
-        n
-
-        =
-            m
-
-            M
 
 $$ n={\frac {m}{M}} $$
 
 and thus:
-
-        ρ
-
-        =
-              M
-
-              P
-              R
-              T
 
 $$ \rho ={\frac {MP}{R\,T}} $$
 

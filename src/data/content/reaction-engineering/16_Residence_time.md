@@ -5,34 +5,28 @@ The residence time of a fluid parcel is the total time that the parcel has spent
 ## Distributions
 
 The time that a particle of fluid has been in a control volume (e.g. a reservoir) is known as its age. In general, each particle has a different age. The frequency of occurrence of the age 
-        τ
 
 $$ \tau $$
 
  in the set of all the particles that are located inside the control volume at time 
-        t
 
 $$ t $$
 
  is quantified by means of the (internal) age distribution 
-        I
 
 $$ I $$
 
 .
 
 At the moment a particle leaves the control volume, its age is the total time that the particle has spent inside the control volume, which is known as its residence time. The frequency of occurrence of the age 
-        τ
 
 $$ \tau $$
 
  in the set of all the particles that are leaving the control volume at time 
-        t
 
 $$ t $$
 
  is quantified by means of the residence time distribution, also known as exit age distribution 
-        E
 
 $$ E $$
 
@@ -40,65 +34,9 @@ $$ E $$
 
 Both distributions are positive and have by definition unitary integrals along the age:
 
-          ∫
-            0
-            ∞
-        E
-
-        (
-
-        τ
-
-        ,
-
-        t
-
-        )
-        d
-
-        τ
-
-        =
-          ∫
-            0
-            ∞
-        I
-
-        (
-
-        τ
-
-        ,
-
-        t
-
-        )
-        d
-
-        τ
-
-        =
-
-        1
-
 $$ \int _{0}^{\infty }E(\tau ,t)\,d\tau =\int _{0}^{\infty }I(\tau ,t)\,d\tau =1 $$
 
 In the case of steady flow, the distributions are assumed to be independent of time, that is 
-          ∂
-            t
-        E
-
-        =
-          ∂
-            t
-        I
-
-        =
-
-        0
-        ∀
-
-        t
 
 $$ \partial _{t}E=\partial _{t}I=0\;\forall t $$
 
@@ -106,113 +44,31 @@ $$ \partial _{t}E=\partial _{t}I=0\;\forall t $$
 
 If the flow is steady (but a generalization to non-steady flow is possible) and is conservative, then the exit age distribution and the internal age distribution can be related one to the other:
 
-                          ∂
-
-                          I
-                          ∂
-
-                          t
-                    =
-                          d
-
-                          m
-                          d
-
-                          t
-                    =
-
-                    0
-                      f
-                        in
-                    =
-                      f
-                        out
-                    =
-
-                    f
-          }
-        ⟹
-        f
-
-        E
-
-        =
-
-        −
-
-        m
-              ∂
-
-              I
-              ∂
-
-              τ
-
 $$ \left.{\begin{aligned}{\frac {\partial I}{\partial t}}={\frac {dm}{dt}}=0&\\[4pt]f_{\text{in}}=f_{\text{out}}=f&\end{aligned}}\ \right\ $$
 
 \implies fE=-m{\frac {\partial I}{\partial \tau }}}
 
 Distributions other than 
-        E
 
 $$ E $$
 
  and 
-        I
 
 $$ I $$
 
  can be usually traced back to them. For example, the fraction of particles leaving the control volume at time 
-        t
 
 $$ t $$
 
  with an age greater or equal than 
-        τ
 
 $$ \tau $$
 
  is quantified by means of the washout function 
-        W
 
 $$ W $$
 
 , that is the complementary to one of the cumulative exit age distribution:
-
-        W
-
-        (
-
-        τ
-
-        ,
-
-        t
-
-        )
-
-        =
-
-        1
-
-        −
-          ∫
-            0
-            τ
-        E
-
-        (
-
-        s
-
-        ,
-
-        t
-
-        )
-        d
-
-        s
 
 $$ W(\tau ,t)=1-\int _{0}^{\tau }E(s,t)\,ds $$
 
@@ -222,99 +78,21 @@ $$ W(\tau ,t)=1-\int _{0}^{\tau }E(s,t)\,ds $$
 
 The mean age of all the particles inside the control volume at time t is the first moment of the age distribution:
 
-          τ
-            a
-        (
-
-        t
-
-        )
-
-        =
-          ∫
-            0
-            ∞
-        τ
-
-        I
-
-        (
-
-        τ
-
-        ,
-
-        t
-
-        )
-        d
-
-        τ
-
 $$ \tau _{a}(t)=\int _{0}^{\infty }\tau I(\tau ,t)\,d\tau $$
 
 The mean residence time or mean transit time, that is the mean age of all the particles leaving the control volume at time t, is the first moment of the residence time distribution:
-
-          τ
-            t
-        (
-
-        t
-
-        )
-
-        =
-          ∫
-            0
-            ∞
-        τ
-
-        E
-
-        (
-
-        τ
-
-        ,
-
-        t
-
-        )
-        d
-
-        τ
-
-        .
 
 $$ \tau _{t}(t)=\int _{0}^{\infty }\tau E(\tau ,t)\,d\tau . $$
 
 The mean age and the mean transit time generally have different values, even in stationary conditions:
 
-          τ
-            a
-        <
-          τ
-            t
-
 $$ \tau _{a}<\tau _{t} $$
 
 : examples include water in a lake with the inlet and outlet on opposite sides and radioactive material introduced high in the stratosphere by a nuclear bomb test and filtering down to the troposphere.
 
-          τ
-            a
-        =
-          τ
-            t
-
 $$ \tau _{a}=\tau _{t} $$
 
 : E and I are exponential distributions. Examples include radioactive decay and first order chemical reactions (where the reaction rate is proportional to the amount of reactant).
-
-          τ
-            a
-        >
-          τ
-            t
 
 $$ \tau _{a}>\tau _{t} $$
 
@@ -323,39 +101,6 @@ $$ \tau _{a}>\tau _{t} $$
 ### Turnover time
 
 If the flow is steady and conservative, the mean residence time equals the ratio between the amount of fluid contained in the control volume and the flow rate through it:
-
-                          ∂
-
-                          I
-                          ∂
-
-                          t
-                    =
-                          d
-
-                          m
-                          d
-
-                          t
-                    =
-
-                    0
-                      f
-                        in
-                    =
-                      f
-                        out
-                    =
-
-                    f
-          }
-        ⟹
-          τ
-            t
-        =
-            m
-
-            f
 
 $$ \left.{\begin{aligned}{\frac {\partial I}{\partial t}}={\frac {dm}{dt}}=0&\\f_{\text{in}}=f_{\text{out}}=f&\end{aligned}}\ \right\ $$
 
@@ -366,9 +111,6 @@ This ratio is commonly known as the turnover time or flushing time. When applied
 The residence time of a specific compound in a mixture equals the turnover time (that of the compound, as well as that of the mixture) only if the compound does not take part in any chemical reaction (otherwise its flow is not conservative) and its concentration is uniform.
 
 Although the equivalence between the residence time and the ratio 
-        m
-          /
-        f
 
 $$ m/f $$
 
@@ -382,28 +124,6 @@ Design equations are equations relating the space time to the fractional convers
 
 In an ideal plug flow reactor (PFR) the fluid particles leave in the same order they arrived, not mixing with those in front and behind. Therefore, the particles entering at time t will exit at time t + T, all spending a time T inside the reactor. The residence time distribution will be then a Dirac delta function delayed by T:
 
-        E
-
-        (
-
-        τ
-
-        )
-
-        =
-
-        δ
-
-        (
-
-        τ
-
-        −
-
-        T
-
-        )
-
 $$ E(\tau )=\delta (\tau -T)\, $$
 
 The mean is T and the variance is zero.
@@ -412,80 +132,17 @@ The RTD of a real reactor deviates from that of an ideal reactor, depending on t
 
 In PFRs, reactants enter the reactor at one end and react as they move down the reactor. Consequently, the reaction rate is dependent on the concentrations which vary along the reactor requiring the inverse of the reaction rate to be integrated over the fractional conversion.
 
-        τ
-
-        =
-          C
-            A
-
-            O
-        ∫
-            1
-              (
-
-              −
-                r
-                  A
-              )
-        d
-          f
-            A
-
 $$ \tau =C_{AO}\int {\frac {1}{(-r_{A})}}\,df_{A} $$
 
 ### Batch reactor
 
 Batch reactors are reactors in which the reactants are put in the reactor at time 0 and react until the reaction is stopped. Consequently, the space time is the same as the average residence time in a batch reactor.
 
-        τ
-
-        =
-          N
-            A
-
-            O
-        ∫
-            1
-              (
-
-              −
-                r
-                  A
-              )
-                V
-                  R
-        d
-          f
-            A
-
 $$ \tau =N_{AO}\int {\frac {1}{(-r_{A})V_{R}}}\,df_{A} $$
 
 ### Continuous stirred-tank reactor
 
 In an ideal continuous stirred-tank reactor (CSTR), the flow at the inlet is completely and instantly mixed into the bulk of the reactor. The reactor and the outlet fluid have identical, homogeneous compositions at all times. The residence time distribution is exponential:
-
-        E
-
-        (
-
-        τ
-
-        )
-
-        =
-            1
-
-            T
-        exp
-
-        ⁡
-          (
-                −
-
-                τ
-              T
-          )
-        .
 
 $$ E(\tau )={\frac {1}{T}}\exp \left({\frac {-\tau }{T}}\right). $$
 
@@ -495,55 +152,12 @@ In reality, it is impossible to obtain such rapid mixing, as there is necessaril
 
 Reactants continuously enter and leave a tank where they are mixed. Consequently, the reaction proceeds at a rate dependent on the outlet concentration:
 
-        τ
-
-        =
-                C
-                  A
-                     in
-              −
-                C
-                  A
-                     out
-              −
-                r
-                  A
-
 $$ \tau ={\frac {C_{A{\text{ in}}}-C_{A{\text{ out}}}}{-r_{A}}}\ $$
 
 ### Laminar flow reactor
 
 In a laminar flow reactor, the fluid flows through a long tube or parallel plate reactor and the flow is in layers parallel to the walls of the tube. The velocity of the flow is a parabolic function of radius. In the absence of molecular diffusion, the RTD is 
 
-        E
-
-        (
-
-        τ
-
-        )
-
-        =
-            {
-                  0
-                  τ
-
-                  ≤
-
-                  T
-                    /
-                  2
-                          T
-                            2
-                          2
-                            τ
-                              3
-                  τ
-
-                  >
-
-                  T
-                    /
                   2.
 
 $$ E(\tau )={\begin{cases}0&\tau \leq T/2\\[5pt]{\dfrac {T^{2}}{2\tau ^{3}}}&\tau >T/2.\end{cases}} $$
@@ -554,41 +168,9 @@ The variance is infinite. In a real reactor, diffusion will eventually mix the l
 
 Recycle reactors are PFRs with a recycle loop. Consequently, they behave like a hybrid between PFRs and CSTRs.
 
-        τ
-
-        =
-          C
-            A
-
-            O
-        (
-
-        R
-
-        +
-
-        1
-
-        )
-
-        ∫
-            1
-              (
-
-              −
-                r
-                  A
-              )
-        d
-          f
-            A
-
 $$ \tau =C_{AO}(R+1)\int {\frac {1}{(-r_{A})}}\,df_{A} $$
 
 In all of these equations :
-        −
-          r
-            A
 
 $$ -r_{A} $$
 
@@ -598,123 +180,19 @@ $$ -r_{A} $$
 
 In some reactions the reactants and the products have significantly different densities. Consequently, as the reaction proceeds the volume of the reaction changes. This variable volume adds terms to the design equations. Taking this volume change into consideration the volume of the reaction becomes:
 
-          V
-            R
-        =
-          V
-            R
-               initial
-        (
-
-        1
-
-        −
-          δ
-            A
-          f
-            A
-        )
-
 $$ V_{R}=V_{R{\text{ initial}}}(1-\delta _{A}f_{A}) $$
 
 Plugging this into the design equations results in the following equations:
 
 #### Batch
 
-        τ
-
-        =
-          N
-            A
-
-            O
-        ∫
-            1
-              (
-
-              −
-                r
-                  A
-              )
-                V
-                  R
-              (
-
-              1
-
-              −
-                δ
-                  A
-                f
-                  A
-              )
-        d
-          f
-            A
-
 $$ \tau =N_{AO}\int {\frac {1}{(-r_{A})V_{R}(1-\delta _{A}f_{A})}}\,df_{A} $$
 
 #### Plug flow reactors
 
-        τ
-
-        =
-          C
-            A
-
-            O
-        ∫
-            1
-              (
-
-              −
-                r
-                  A
-              )
-
-              (
-
-              1
-
-              −
-                δ
-                  A
-                f
-                  A
-              )
-        d
-          f
-            A
-
 $$ \tau =C_{AO}\int {\frac {1}{(-r_{A})(1-\delta _{A}f_{A})}}\,df_{A} $$
 
 #### Continuous stirred-tank reactors
-
-        τ
-
-        =
-                C
-                  A
-                     in
-              −
-                C
-                  A
-                     out
-              −
-                r
-                  A
-
-                  F
-              (
-
-              1
-
-              −
-                δ
-                  A
-                f
-                  A
-              )
 
 $$ \tau ={\frac {C_{A{\text{ in}}}-C_{A{\text{ out}}}}{-r_{AF}(1-\delta _{A}f_{A})}}\ $$
 
@@ -729,162 +207,46 @@ In general, the change in tracer concentration will either be a pulse or a step.
 ### Pulse experiments
 
 This method required the introduction of a very small volume of concentrated tracer at the inlet of the reactor, such that it approaches the Dirac delta function. Although an infinitely short injection cannot be produced, it can be made much smaller than the mean residence time of the vessel. If a mass of tracer, 
-        M
 
 $$ M $$
 
 , is introduced into a vessel of volume 
-        V
 
 $$ V $$
 
  and an expected residence 
 
 time of 
-        τ
 
 $$ \tau $$
 
 , the resulting curve of 
-        C
-
-        (
-
-        t
-
-        )
 
 $$ C(t) $$
 
  can be transformed into a dimensionless residence time distribution curve by the following relation:
-
-        E
-
-        (
-
-        t
-
-        )
-
-        =
-              C
-
-              (
-
-              t
-
-              )
-                ∫
-                  0
-                  ∞
-              C
-
-              (
-
-              t
-
-              )
-              d
-
-              t
 
 $$ E(t)={\frac {C(t)}{\int _{0}^{\infty }C(t)\,dt}} $$
 
 ### Step experiments
 
 The concentration of tracer in a step experiment at the reactor inlet changes abruptly from 0 to 
-          C
-            0
 
 $$ C_{0} $$
 
 . The concentration of tracer at the outlet is measured and normalized to the concentration 
-          C
-            0
 
 $$ C_{0} $$
 
  to obtain the non-dimensional curve 
-        F
-
-        (
-
-        t
-
-        )
 
 $$ F(t) $$
 
  which goes from 0 to 1:
 
-        F
-
-        (
-
-        t
-
-        )
-
-        =
-              C
-
-              (
-
-              t
-
-              )
-              C
-                0
-        .
-
 $$ F(t)={\frac {C(t)}{C_{0}}}. $$
 
 The step- and pulse-responses of a reactor are related by the following:
-
-        F
-
-        (
-
-        t
-
-        )
-
-        =
-          ∫
-            0
-            t
-        E
-
-        (
-          t
-
-          ′
-        )
-        d
-          t
-
-          ′
-        E
-
-        (
-
-        t
-
-        )
-
-        =
-              d
-
-              F
-
-              (
-
-              t
-
-              )
-              d
-
-              t
 
 $$ F(t)=\int _{0}^{t}E(t')\,dt'\qquad E(t)={\frac {dF(t)}{dt}} $$
 

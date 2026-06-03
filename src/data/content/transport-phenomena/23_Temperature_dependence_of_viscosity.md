@@ -13,7 +13,6 @@ In liquids, viscous forces are caused by molecules exerting attractive forces on
 The kinetic theory of gases allows accurate calculation of the temperature-variation of gaseous viscosity. The theoretical basis of the kinetic theory is given by the Boltzmann equation and Chapman–Enskog theory, which allow accurate statistical modeling of molecular trajectories. In particular, given a model for intermolecular interactions, one can calculate with high precision the viscosity of monatomic and other simple gases (for more complex gases, such as those composed of polar molecules, additional assumptions must be introduced which reduce the accuracy of the theory).
 
 The viscosity predictions for four molecular models are discussed below. The predictions of the first three models (hard-sphere, power-law, and Sutherland) can be simply expressed in terms of elementary functions. The Lennard–Jones model predicts a more complicated 
-        T
 
 $$ T $$
 
@@ -22,63 +21,32 @@ $$ T $$
 ### Hard-sphere kinetic theory
 
 If one models gas molecules as elastic hard spheres (with mass 
-        m
 
 $$ m $$
 
  and diameter 
-        σ
 
 $$ \sigma $$
 
 ), then elementary kinetic theory predicts that viscosity increases with the square root of absolute temperature 
-        T
 
 $$ T $$
 
 :
 
-        μ
-
-        =
-
         1.016
-
-        ⋅
-            5
-              16
-                σ
-                  2
-            (
-                    k
-                        B
-                  m
-
-                  T
-                π
-            )
-            1
-              /
-            2
 
 $$ \mu =1.016\cdot {\frac {5}{16\sigma ^{2}}}\left({\frac {k_{\rm {B}}mT}{\pi }}\right)^{1/2} $$
 
 where 
-          k
-            B
 
 $$ k_{\text{B}} $$
 
  is the Boltzmann constant. While correctly predicting the increase of gaseous viscosity with temperature, the 
-          T
-            1
-              /
-            2
 
 $$ T^{1/2} $$
 
  trend is not accurate; the viscosity of real gases increases more rapidly than this. Capturing the actual 
-        T
 
 $$ T $$
 
@@ -87,136 +55,62 @@ $$ T $$
 ### Power-law force
 
 A modest improvement over the hard-sphere model is a repulsive inverse power-law force, where the force between two molecules separated by distance 
-        r
 
 $$ r $$
 
  is proportional to 
-        1
-          /
-          r
-            ν
 
 $$ 1/r^{\nu } $$
 
 , where 
-        ν
 
 $$ \nu $$
 
  is an empirical parameter. This is not a realistic model for real-world gases (except possibly at high temperature), but provides a simple illustration of how changing intermolecular interactions affects the predicted temperature dependence of viscosity. In this case, kinetic theory predicts an increase in temperature as 
-          T
-            s
 
 $$ T^{s} $$
 
 , where 
-        s
-
-        =
-
-        (
-
-        1
-          /
-        2
-
-        )
-
-        +
-
-        2
-          /
-        (
-
-        ν
-
-        −
-
-        1
-
-        )
 
 $$ s=(1/2)+2/(\nu -1) $$
 
 . More precisely, if 
-          μ
-
-          ′
 
 $$ \mu ' $$
 
  is the known viscosity at temperature 
-          T
-
-          ′
 
 $$ T' $$
 
 , then
 
-        μ
-
-        =
-          μ
-
-          ′
-        (
-
-        T
-          /
-          T
-
-          ′
-          )
-            s
-
 $$ \mu =\mu '(T/T')^{s} $$
 
 Taking 
-        ν
-
-        →
-
-        ∞
 
 $$ \nu \rightarrow \infty $$
 
  recovers the hard-sphere result, 
-        s
-
-        =
-
-        1
-          /
-        2
 
 $$ s=1/2 $$
 
 . For finite 
-        ν
 
 $$ \nu $$
 
 , corresponding to softer repulsion, 
-        s
 
 $$ s $$
 
  is greater than 
-        1
-          /
-        2
 
 $$ 1/2 $$
 
 , which results in faster increase of viscosity compared with the hard-sphere model. Fitting to experimental data for hydrogen and helium gives predictions for 
-        s
 
 $$ s $$
 
  and 
-        ν
 
 $$ \nu $$
 
@@ -226,91 +120,25 @@ $$ \nu $$
 
 Another simple model for gaseous viscosity is the Sutherland model, which adds weak intermolecular attractions to the hard-sphere model. If the attractions are small, they can be treated perturbatively, which leads to
 
-        μ
-
-        =
-            5
-              16
-                σ
-                  2
-            (
-                    k
-                      B
-                  m
-
-                  T
-                π
-            )
-            1
-              /
-            2
-        ⋅
-            (
-              1
-
-              +
-                  S
-
-                  T
-            )
-            −
-
-            1
-
 $$ \mu ={\frac {5}{16\sigma ^{2}}}\left({\frac {k_{\text{B}}mT}{\pi }}\right)^{1/2}\cdot \left(1+{\frac {S}{T}}\right)^{-1} $$
 
 where 
-        S
 
 $$ S $$
 
 , called the Sutherland constant, can be expressed in terms of the parameters of the intermolecular attractive force. Equivalently, if 
-          μ
-
-          ′
 
 $$ \mu ' $$
 
  is a known viscosity at temperature 
-          T
-
-          ′
 
 $$ T' $$
 
 , then
 
-        μ
-
-        =
-          μ
-
-          ′
-            (
-                T
-                  T
-
-                  ′
-            )
-            3
-              /
-            2
-                T
-
-                ′
-              +
-
-              S
-              T
-
-              +
-
-              S
-
 $$ \mu =\mu '\left({\frac {T}{T'}}\right)^{3/2}{\frac {T'+S}{T+S}} $$
 
 Values of 
-        S
 
 $$ S $$
 
@@ -319,46 +147,22 @@ $$ S $$
 ### Lennard-Jones
 
 Under fairly general conditions on the molecular model, the kinetic theory prediction for 
-        μ
 
 $$ \mu $$
 
  can be written in the form
 
-        μ
-
-        =
-            5
-              16
-                  π
-              m
-                k
-                  B
-              T
-                σ
-                  2
-              Ω
-
-              (
-
-              T
-
-              )
-
 $$ \mu ={\frac {5}{16{\sqrt {\pi }}}}{\frac {\sqrt {mk_{\text{B}}T}}{\sigma ^{2}\Omega (T)}} $$
 
 where 
-        Ω
 
 $$ \Omega $$
 
  is called the collision integral and is a function of temperature as well as the parameters of the intermolecular interaction. It is completely determined by the kinetic theory, being expressed in terms of integrals over collisional trajectories of pairs of molecules. In general, 
-        Ω
 
 $$ \Omega $$
 
  is a complicated function of both temperature and the molecular parameters; the power-law and Sutherland models are unusual in that 
-        Ω
 
 $$ \Omega $$
 
@@ -366,138 +170,62 @@ $$ \Omega $$
 
 The Lennard–Jones model assumes an intermolecular pair potential of the form
 
-        V
-
-        (
-
-        r
-
-        )
-
-        =
-
-        4
-
-        ϵ
-          [
-                (
-                    σ
-
-                    r
-                )
-                12
-            −
-                (
-                    σ
-
-                    r
-                )
-                6
-          ]
-
 $$ V(r)=4\epsilon \left[\left({\frac {\sigma }{r}}\right)^{12}-\left({\frac {\sigma }{r}}\right)^{6}\right] $$
 
 where 
-        ϵ
 
 $$ \epsilon $$
 
  and 
-        σ
 
 $$ \sigma $$
 
  are parameters and 
-        r
 
 $$ r $$
 
  is the distance separating the centers of mass of the molecules. As such, the model is designed for spherically symmetric molecules. Nevertheless, it is frequently used for non-spherically-symmetric molecules, provided these do not possess a large dipole moment.
 
 The collisional integral 
-        Ω
 
 $$ \Omega $$
 
  for the Lennard-Jones model cannot be expressed exactly in terms of elementary functions. Nevertheless, it can be calculated numerically, and the agreement with experiment is good – not only for spherically symmetric molecules such as the noble gases, but also for many polyatomic gases as well. An approximate form of 
-        Ω
 
 $$ \Omega $$
 
  has also been suggested:
 
-        Ω
-
-        (
-
-        T
-
-        )
-
-        =
-
         1.16145
-            (
-              T
-                ∗
-            )
-            −
 
             0.14874
-        +
 
         0.52487
-          e
-            −
 
             0.77320
-              T
-                ∗
-        +
 
         2.16178
-          e
-            −
 
             2.43787
-              T
-                ∗
 
 $$ \Omega (T)=1.16145\left(T^{*}\right)^{-0.14874}+0.52487e^{-0.77320T^{*}}+2.16178e^{-2.43787T^{*}} $$
 
 where 
-          T
-            ∗
-        ≡
-          k
-            B
-        T
-          /
-        ϵ
 
 $$ T^{*}\equiv k_{\text{B}}T/\epsilon $$
 
 . This equation has an average deviation of only 0.064 percent in the range 
         0.3
 
-        <
-          T
-            ∗
-        <
-
-        100
-
 $$ 0.3<T^{*}<100 $$
 
 .
 
 Values of 
-        σ
 
 $$ \sigma $$
 
  and 
-        ϵ
 
 $$ \epsilon $$
 
@@ -511,27 +239,15 @@ In contrast with gases, there is no systematic microscopic theory for liquid vis
 
 A simple and widespread empirical correlation for liquid viscosity is a two-parameter exponential:
 
-        μ
-
-        =
-
-        A
-          e
-            B
-              /
-            T
-
 $$ \mu =Ae^{B/T} $$
 
 This equation was first proposed in 1913, and is commonly known as the Andrade equation (named after British physicist Edward Andrade). It accurately describes many liquids over a range of temperatures. Its form can be motivated by modeling momentum transport at the molecular level as an activated rate process, although the physical assumptions underlying such models have been called into question.
 
 The table below gives estimated values of 
-        A
 
 $$ A $$
 
  and 
-        B
 
 $$ B $$
 
@@ -541,53 +257,9 @@ $$ B $$
 
 One can also find tabulated exponentials with additional parameters, for example
 
-        μ
-
-        =
-
-        A
-
-        exp
-
-        ⁡
-            (
-                B
-                  T
-
-                  −
-
-                  C
-            )
-
 $$ \mu =A\exp {\left({\frac {B}{T-C}}\right)} $$
 
 and
-
-        μ
-
-        =
-
-        A
-
-        exp
-
-        ⁡
-            (
-                  B
-
-                  T
-              +
-
-              C
-
-              T
-
-              +
-
-              D
-                T
-                  2
-            )
 
 $$ \mu =A\exp {\left({\frac {B}{T}}+CT+DT^{2}\right)} $$
 
@@ -596,7 +268,6 @@ Representative values are given in the tables below.
 ### Models for kinematic viscosity
 
 The effect of temperature on the kinematic viscosity 
-        ν
 
 $$ \nu $$
 
@@ -604,59 +275,21 @@ $$ \nu $$
 
 The Walther formula is typically written in the form
 
-          log
-            10
-        ⁡
-
-        (
-          log
-            10
-        ⁡
-
-        (
-
-        ν
-
-        +
-
-        λ
-
-        )
-
-        )
-
-        =
-
-        A
-
-        −
-
-        B
-          log
-            10
-        ⁡
-
-        T
-
 $$ \log _{10}(\log _{10}(\nu +\lambda ))=A-B\,\log _{10}T $$
 
 where 
-        λ
 
 $$ \lambda $$
 
  is a shift constant, and 
-        A
 
 $$ A $$
 
  and 
-        B
 
 $$ B $$
 
  are empirical parameters.  In lubricant specifications, normally only two temperatures are specified, in which case a standard value of 
-        λ
 
 $$ \lambda $$
 
@@ -664,60 +297,9 @@ $$ \lambda $$
 
 The Wright model has the form
 
-          log
-            10
-        ⁡
-
-        (
-          log
-            10
-        ⁡
-
-        (
-
-        ν
-
-        +
-
-        λ
-
-        +
-
-        f
-
-        (
-
-        ν
-
-        )
-
-        )
-
-        )
-
-        =
-
-        A
-
-        −
-
-        B
-          log
-            10
-        ⁡
-
-        T
-
 $$ \log _{10}(\log _{10}(\nu +\lambda +f(\nu )))=A-B\,\log _{10}T $$
 
 where an additional function 
-        f
-
-        (
-
-        v
-
-        )
 
 $$ f(v) $$
 
@@ -725,75 +307,29 @@ $$ f(v) $$
 
 The Seeton model is based on curve fitting the viscosity dependence of many liquids (refrigerants, hydrocarbons and lubricants) versus temperature and applies over a large temperature and viscosity range:
 
-        ln
-
-        ⁡
-          (
-            ln
-
-            ⁡
-              (
-                ν
-
-                +
-
                 0.7
 
-                +
-                  e
-                    −
-
-                    ν
-                  K
-                    0
-                  (
-                    ν
-
-                    +
-
                     1.244067
-                  )
-              )
-          )
-        =
-
-        A
-
-        −
-
-        B
-
-        ln
-
-        ⁡
-
-        T
 
 $$ \ln \left({\ln \left({\nu +0.7+e^{-\nu }K_{0}\left({\nu +1.244067}\right)}\right)}\right)=A-B\ln T $$
 
 where 
-        T
 
 $$ T $$
 
  is absolute temperature in kelvins, 
-        ν
 
 $$ \nu $$
 
  is the kinematic viscosity in centistokes, 
-          K
-            0
 
 $$ K_{0} $$
 
  is the zero order modified Bessel function of the second kind, and 
-        A
 
 $$ A $$
 
  and 
-        B
 
 $$ B $$
 
@@ -801,44 +337,9 @@ $$ B $$
 
 For liquid metal viscosity as a function of temperature, Seeton proposed:
 
-        ln
-
-        ⁡
-          (
-            ln
-
-            ⁡
-              (
-                ν
-
-                +
-
                 0.7
 
-                +
-                  e
-                    −
-
-                    ν
-                  K
-                    0
-                  (
-                    ν
-
-                    +
-
                     1.244067
-                  )
-              )
-          )
-        =
-
-        A
-
-        −
-            B
-
-            T
 
 $$ \ln \left({\ln \left({\nu +0.7+e^{-\nu }K_{0}\left({\nu +1.244067}\right)}\right)}\right)=A-{B \over T} $$
 

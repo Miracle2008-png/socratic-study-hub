@@ -50,188 +50,81 @@ One example is fluid being compressed by a piston in a cylinder. Another example
 
 The first law of thermodynamics for energy transfers for closed system may be stated:
 
-        Δ
-
-        U
-
-        =
-
-        Q
-
-        −
-
-        W
-
 $$ \Delta U=Q-W $$
 
 where 
-        U
 
 $$ U $$
 
 denotes the internal energy of the system, 
-        Q
 
 $$ Q $$
 
  heat added to the system, 
-        W
 
 $$ W $$
 
  the work done by the system. For infinitesimal changes the first law for closed systems may stated:
 
-          d
-        U
-
-        =
-
-        δ
-
-        Q
-
-        −
-
-        δ
-
-        W
-
-        .
-
 $$ \mathrm {d} U=\delta Q-\delta W. $$
 
 If the work is due to a volume expansion by 
-          d
-        V
 
 $$ \mathrm {d} V $$
 
  at a pressure 
-        P
 
 $$ P $$
 
  then:
 
-        δ
-
-        W
-
-        =
-
-        P
-          d
-        V
-
-        .
-
 $$ \delta W=P\mathrm {d} V. $$
 
 For a quasi-reversible heat transfer, the second law of thermodynamics reads:
 
-        δ
-
-        Q
-
-        =
-
-        T
-          d
-        S
-
 $$ \delta Q=T\mathrm {d} S $$
 
 where 
-        T
 
 $$ T $$
 
  denotes the thermodynamic temperature and 
-        S
 
 $$ S $$
 
  the entropy of the system. With these relations the fundamental thermodynamic relation, used to compute changes in internal energy, is expressed as:
 
-          d
-        U
-
-        =
-
-        T
-          d
-        S
-
-        −
-
-        P
-          d
-        V
-
-        .
-
 $$ \mathrm {d} U=T\mathrm {d} S-P\mathrm {d} V. $$
 
 For a simple system, with only one type of particle (atom or molecule), a closed system amounts to a constant number of particles. For systems undergoing a chemical reaction, there may be all sorts of molecules being generated and destroyed by the reaction process. In this case, the fact that the system is closed is expressed by stating that the total number of each elemental atom is conserved, no matter what kind of molecule it may be a part of. Mathematically:
 
-          ∑
-            j
-
-            =
-
-            1
-            m
-          a
-            i
-
-            j
-          N
-            j
-        =
-          b
-            i
-            0
-
 $$ \sum _{j=1}^{m}a_{ij}N_{j}=b_{i}^{0} $$
 
 where 
-          N
-            j
 
 $$ N_{j} $$
 
  denotes the number of 
-        j
 
 $$ j $$
 
 -type molecules,  
-          a
-            i
-
-            j
 
 $$ a_{ij} $$
 
  the number of atoms of element 
-        i
 
 $$ i $$
 
  in molecule 
-        j
 
 $$ j $$
 
 , and  
-          b
-            i
-            0
 
 $$ b_{i}^{0} $$
 
  the total number of atoms of element  
-        i
 
 $$ i $$
 
@@ -266,119 +159,56 @@ For a contact equilibrium across a wall permeable to a substance, the chemical p
 ## Open system
 
 In an open system, there is an exchange of energy and matter between the system and the surroundings. The presence of reactants in an open beaker is an example of an open system. Here the boundary is an imaginary surface enclosing the beaker and reactants. It is named closed, if borders are impenetrable for substance, but allow transit of energy in the form of heat, and isolated, if there is no exchange of heat and substances. The open system cannot exist in the equilibrium state. To describe deviation of the thermodynamic system from equilibrium, in addition to constitutive variables that was described above, a set of internal variables 
-          ξ
-            1
-        ,
-          ξ
-            2
-        ,
-
-        …
 
 $$ \xi _{1},\xi _{2},\ldots $$
 
-  have been introduced. The equilibrium state is considered to be stable and the main property of the internal variables, as measures of non-equilibrium of the system, is their trending to disappear; the local law of disappearing can be written as relaxation equation for each internal variable
+have been introduced. The equilibrium state is considered to be stable and the main property of the internal variables, as measures of non-equilibrium of the system, is their trending to disappear; the local law of disappearing can be written as relaxation equation for each internal variable
 
 where 
-          τ
-            i
-        =
-          τ
-            i
-        (
-
-        T
-
-        ,
-          x
-            1
-        ,
-          x
-            2
-        ,
-
-        …
-
-        ,
-          x
-            n
-        )
 
 $$ \tau _{i}=\tau _{i}(T,x_{1},x_{2},\ldots ,x_{n}) $$
 
-  is a relaxation time of a corresponding variable. It is convenient to consider the initial value 
-          ξ
-            i
-            0
+is a relaxation time of a corresponding variable. It is convenient to consider the initial value
 
 $$ \xi _{i}^{0} $$
-
-  equal to zero.
 
 The specific contribution to the thermodynamics of open non-equilibrium systems was made by Ilya Prigogine, who investigated a system of  chemically reacting substances. In this case the internal variables appear to be measures of incompleteness of chemical reactions, that is measures of how much the considered system with chemical reactions is out of equilibrium. The theory can be generalized, to consider any deviations from the equilibrium state, such as structure of the system, gradients of temperature, difference of concentrations of substances and so on, to say nothing of degrees of completeness of all chemical reactions, to be  internal variables.
 
 The increments  of Gibbs free energy  
-        G
 
 $$ G $$
 
-   and entropy 
-        S
-
 $$ S $$
-
-  at 
-        T
-
-        =
-          const
 
 $$ T={\text{const}} $$
 
  and 
-        p
-
-        =
-          const
 
 $$ p={\text{const}} $$
 
  are determined as 
 
 The stationary states of the system exist due to exchange of both thermal energy (
-        Δ
-          Q
-            α
 
 $$ \Delta Q_{\alpha } $$
 
 ) and a stream of particles. The sum of the last terms in the equations presents the total energy coming into the system with the stream of particles of substances  
-        Δ
-          N
-            α
 
 $$ \Delta N_{\alpha } $$
 
-  that can be positive or negative; the quantity 
-          μ
-            α
+that can be positive or negative; the quantity
 
 $$ \mu _{\alpha } $$
 
-  is chemical potential of substance 
-        α
+is chemical potential of substance
 
 $$ \alpha $$
 
 .The middle terms in equations (2) and (3) depict energy dissipation (entropy production) due to the relaxation of internal variables 
-          ξ
-            j
 
 $$ \xi _{j} $$
 
 , while 
-          Ξ
-            j
 
 $$ \Xi _{j} $$
 

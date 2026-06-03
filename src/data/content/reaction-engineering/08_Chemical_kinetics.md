@@ -24,39 +24,17 @@ The reactions are due to collisions of reactant species. The frequency with whic
 
 The rate equation shows the detailed dependence of the reaction rate on the concentrations of reactants and other species present. The mathematical forms depend on the reaction mechanism. The actual rate equation for a given reaction is determined experimentally and provides information about the reaction mechanism. The mathematical expression of the rate equation is often given by 
 
-        v
-
-        =
-                d
-              c
-                d
-              t
-        =
-
-        k
-          ∏
-            i
-          c
-            i
-              m
-                i
-
 $$ v={\frac {\mathrm {d} c}{\mathrm {d} t}}=k\prod _{i}c_{i}^{m_{i}} $$
 
 Here 
-        k
 
 $$ k $$
 
  is the reaction rate constant, 
-          c
-            i
 
 $$ c_{i} $$
 
  is the molar concentration of reactant i and 
-          m
-            i
 
 $$ m_{i} $$
 
@@ -69,23 +47,6 @@ In highly diluted solutions, such as at concentrations below the micromolar leve
 Temperature usually has a major effect on the rate of a chemical reaction. Molecules at a higher temperature have more thermal energy. Although collision frequency is greater at higher temperatures, this alone contributes only a very small proportion to the increase in rate of reaction. Much more important is the fact that the proportion of reactant molecules with sufficient energy to react (energy greater than activation energy: E > Ea) is significantly higher and is explained in detail by the Maxwell–Boltzmann distribution of molecular energies.
 
 The effect of temperature on the reaction rate constant usually obeys the Arrhenius equation 
-        k
-
-        =
-
-        A
-          e
-            −
-              E
-                  a
-              /
-            (
-
-            R
-
-            T
-
-            )
 
 $$ k=Ae^{-E_{\rm {a}}/(RT)} $$
 

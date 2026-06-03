@@ -8,303 +8,51 @@ In mathematics, a manifold is a topological space that locally resembles Euclide
 
 After a line, a circle is the simplest example of a topological manifold. Topology ignores bending, so a small piece of a circle is treated the same as a small piece of a line. Considering, for instance, the top part of the unit circle, x2 + y2 = 1, where the y-coordinate is positive (indicated by the yellow arc in Figure 1). Any point of this arc can be uniquely described by its x-coordinate. So, projection onto the first coordinate is a continuous and invertible mapping from the upper arc to the open interval (−1, 1):
 
-          χ
-              t
-
-              o
-
-              p
-        (
-
-        x
-
-        ,
-
-        y
-
-        )
-
-        =
-
-        x
-
-        .
-
 $$ \chi _{\mathrm {top} }(x,y)=x.\, $$
 
 Such functions along with the open regions they map are called charts. Similarly, there are charts for the bottom (red), left (blue), and right (green) parts of the circle:
-
-                  χ
-                      b
-
-                      o
-
-                      t
-
-                      t
-
-                      o
-
-                      m
-                (
-
-                x
-
-                ,
-
-                y
-
-                )
-                =
-
-                x
-                  χ
-                      l
-
-                      e
-
-                      f
-
-                      t
-                (
-
-                x
-
-                ,
-
-                y
-
-                )
-                =
-
-                y
-                  χ
-                      r
-
-                      i
-
-                      g
-
-                      h
-
-                      t
-                (
-
-                x
-
-                ,
-
-                y
-
-                )
-                =
-
-                y
-
-                .
 
 $$ {\begin{aligned}\chi _{\mathrm {bottom} }(x,y)&=x\\\chi _{\mathrm {left} }(x,y)&=y\\\chi _{\mathrm {right} }(x,y)&=y.\end{aligned}} $$
 
 Together, these parts cover the whole circle, and the four charts form an atlas for the circle.
 
 The top and right charts, 
-          χ
-              t
-
-              o
-
-              p
 
 $$ \chi _{\mathrm {top} } $$
 
  and 
-          χ
-              r
-
-              i
-
-              g
-
-              h
-
-              t
 
 $$ \chi _{\mathrm {right} } $$
 
  respectively, overlap in their domain: their intersection lies in the quarter of the circle where both 
-        x
 
 $$ x $$
 
  and 
-        y
 
 $$ y $$
 
 -coordinates are positive. Both map this part into the interval 
-        (
-
-        0
-
-        ,
-
-        1
-
-        )
 
 $$ (0,1) $$
 
 , though differently. Thus a function 
-        T
-
-        :
-
-        (
-
-        0
-
-        ,
-
-        1
-
-        )
-
-        →
-
-        (
-
-        0
-
-        ,
-
-        1
-
-        )
-
-        =
-          χ
-              r
-
-              i
-
-              g
-
-              h
-
-              t
-        ∘
-          χ
-              t
-
-              o
-
-              p
-            −
-
-            1
 
 $$ T:(0,1)\rightarrow (0,1)=\chi _{\mathrm {right} }\circ \chi _{\mathrm {top} }^{-1} $$
 
  can be constructed, which takes values from the co-domain of 
-          χ
-              t
-
-              o
-
-              p
 
 $$ \chi _{\mathrm {top} } $$
 
  back to the circle using the inverse, followed by 
-          χ
-              r
-
-              i
-
-              g
-
-              h
-
-              t
 
 $$ \chi _{\mathrm {right} } $$
 
  back to the interval. If a is any number in 
-        (
-
-        0
-
-        ,
-
-        1
-
-        )
 
 $$ (0,1) $$
 
 , then:
-
-                T
-
-                (
-
-                a
-
-                )
-                =
-                  χ
-                      r
-
-                      i
-
-                      g
-
-                      h
-
-                      t
-                  (
-                      χ
-                          t
-
-                          o
-
-                          p
-                        −
-
-                        1
-                      [
-
-                      a
-
-                      ]
-                  )
-                =
-                  χ
-                      r
-
-                      i
-
-                      g
-
-                      h
-
-                      t
-                  (
-                    a
-
-                    ,
-                        1
-
-                        −
-                          a
-                            2
-                  )
-                =
-                    1
-
-                    −
-                      a
-                        2
 
 $$ {\begin{aligned}T(a)&=\chi _{\mathrm {right} }\left(\chi _{\mathrm {top} }^{-1}\left[a\right]\right)\\&=\chi _{\mathrm {right} }\left(a,{\sqrt {1-a^{2}}}\right)\\&={\sqrt {1-a^{2}}}\end{aligned}} $$
 
@@ -312,109 +60,17 @@ Such a function is called a transition map.
 
 The top, bottom, left, and right charts do not form the only possible atlas. Charts need not be geometric projections, and the number of charts is a matter of choice. Consider the charts
 
-          χ
-              m
-
-              i
-
-              n
-
-              u
-
-              s
-        (
-
-        x
-
-        ,
-
-        y
-
-        )
-
-        =
-
-        s
-
-        =
-            y
-              1
-
-              +
-
-              x
-
 $$ \chi _{\mathrm {minus} }(x,y)=s={\frac {y}{1+x}} $$
 
 and
-
-          χ
-              p
-
-              l
-
-              u
-
-              s
-        (
-
-        x
-
-        ,
-
-        y
-
-        )
-
-        =
-
-        t
-
-        =
-            y
-              1
-
-              −
-
-              x
 
 $$ \chi _{\mathrm {plus} }(x,y)=t={\frac {y}{1-x}} $$
 
 Here s is the slope of the line through the point at coordinates (x, y) and the fixed pivot point (−1, 0); similarly, t is the opposite of the slope of the line through the points at coordinates (x, y) and (+1, 0). The inverse mapping from s to (x, y) is given by
 
-                x
-                =
-                      1
-
-                      −
-                        s
-                          2
-                      1
-
-                      +
-                        s
-                          2
-                y
-                =
-                      2
-
-                      s
-                      1
-
-                      +
-                        s
-                          2
-
 $$ {\begin{aligned}x&={\frac {1-s^{2}}{1+s^{2}}}\\[5pt]y&={\frac {2s}{1+s^{2}}}\end{aligned}} $$
 
 It can be confirmed that x2 + y2 = 1 for all values of s and t. These two charts provide a second atlas for the circle, with the transition map
-
-        t
-
-        =
-            1
-
-            s
 
 $$ t={\frac {1}{s}} $$
 
@@ -453,89 +109,28 @@ Formally, a (topological) manifold is a second countable Hausdorff space that is
 Second countable and Hausdorff are point-set conditions; second countable excludes spaces which are in some sense 'too large' such as the long line, while Hausdorff excludes spaces such as the line with two origins.
 
 Locally homeomorphic to a Euclidean space means that every point has a neighborhood homeomorphic to an open subset of the Euclidean space 
-            R
-            n
-        ,
 
 $$ \mathbb {R} ^{n}, $$
 
  for some nonnegative integer n.
 
 This implies that either the point is an isolated point (if 
-        n
-
-        =
-
-        0
 
 $$ n=0 $$
 
 ), or it has a neighborhood homeomorphic to the open ball
 
-            B
-            n
-        =
-          {
-            (
-              x
-                1
-            ,
-              x
-                2
-            ,
-
-            …
-
-            ,
-              x
-                n
-            )
-
-            ∈
-                R
-                n
-            :
-              x
-                1
-                2
-            +
-              x
-                2
-                2
-            +
-
-            ⋯
-
-            +
-              x
-                n
-                2
-            <
-
-            1
-          }
-        .
-
 $$ \mathbf {B} ^{n}=\left\{(x_{1},x_{2},\dots ,x_{n})\in \mathbb {R} ^{n}:x_{1}^{2}+x_{2}^{2}+\cdots +x_{n}^{2}<1\right\}. $$
 
  This implies also that every point has a neighborhood homeomorphic to 
-            R
-            n
 
 $$ \mathbb {R} ^{n} $$
 
 since 
-            R
-            n
 
 $$ \mathbb {R} ^{n} $$
 
  is homeomorphic, and even diffeomorphic to any open ball in it (for 
-        n
-
-        >
-
-        0
 
 $$ n>0 $$
 
@@ -552,16 +147,12 @@ The spherical Earth is navigated using flat maps or charts, collected in an atla
 ### Charts
 
 A coordinate map, a coordinate chart, or simply a chart, of a manifold is an invertible map between a subset of the manifold and a simple space such that both the map and its inverse preserve the desired structure. For a topological manifold, the simple space is a subset of some Euclidean space 
-            R
-            n
 
 $$ \mathbb {R} ^{n} $$
 
  and interest focuses on the topological structure. This structure is preserved by homeomorphisms, invertible maps that are continuous in both directions.
 
 In the case of a differentiable manifold, a set of charts called an atlas, whose transition functions (see below) are all differentiable, allows us to do calculus on it. Polar coordinates, for example, form a chart for the plane 
-            R
-            2
 
 $$ \mathbb {R} ^{2} $$
 
@@ -578,14 +169,10 @@ A manifold can be defined as a topological space equipped with an atlas (and in 
 ### Transition maps
 
 Charts in an atlas may overlap and a single point of a manifold may be represented in several charts. If two charts overlap, parts of them represent the same region of the manifold, just as a map of Europe and a map of Russia may both contain Moscow. Given two overlapping charts, a transition function can be defined which goes from an open ball in 
-            R
-            n
 
 $$ \mathbb {R} ^{n} $$
 
  to the manifold and then back to another (or perhaps the same) open ball in 
-            R
-            n
 
 $$ \mathbb {R} ^{n} $$
 
@@ -596,8 +183,6 @@ $$ \mathbb {R} ^{n} $$
 An atlas can also be used to define additional structure on the manifold. The structure is first defined on each chart separately. If all transition maps are compatible with this structure, the structure transfers to the manifold.
 
 This is the standard way differentiable manifolds are defined. If the transition functions of an atlas for a topological manifold preserve the natural differential structure of 
-            R
-            n
 
 $$ \mathbb {R} ^{n} $$
 
@@ -610,119 +195,35 @@ These notions are made precise in general through the use of pseudogroups.
 ## Manifold with boundary
 
 A manifold with boundary is a manifold with an edge. For example, a disk (circle plus interior) is a 2-manifold with as boundary the circle, a 1-manifold. The boundary of an 
-        n
 
 $$ n $$
 
 -manifold with boundary is an 
-        (
-
-        n
-
-        −
-
-        1
-
-        )
 
 $$ (n-1) $$
 
 -manifold. In three dimensions, a ball (sphere plus interior) is a 3-manifold with boundary. Its boundary is a sphere, a 2-manifold.
 In technical language, a manifold with boundary is a space containing both interior points and boundary points. Every interior point has a neighborhood homeomorphic to the open 
-        n
 
 $$ n $$
 
 -ball 
-          {
-
-          (
-            x
-              1
-          ,
-            x
-              2
-          ,
-
-          …
-
-          ,
-            x
-              n
-          )
-
-          ∣
-
-          ∑
-            x
-              i
-              2
-          <
-
-          1
-
-          }
 
 $$ \textstyle \{(x_{1},x_{2},\dots ,x_{n})\mid \sum x_{i}^{2}<1\} $$
 
 . Every boundary point has a neighborhood homeomorphic to the "half" 
-        n
 
 $$ n $$
 
 -ball 
-          {
-
-          (
-            x
-              1
-          ,
-            x
-              2
-          ,
-
-          …
-
-          ,
-            x
-              n
-          )
-
-          ∣
-
-          ∑
-            x
-              i
-              2
-          <
-
-          1
-             and 
-            x
-              1
-          ≥
-
-          0
-
-          }
 
 $$ \textstyle \{(x_{1},x_{2},\dots ,x_{n})\mid \sum x_{i}^{2}<1{\text{ and }}x_{1}\geq 0\} $$
 
 . Any homeomorphism between half-balls must send points with 
-          x
-            1
-        =
-
-        0
 
 $$ x_{1}=0 $$
 
  to points with 
-          x
-            1
-        =
-
-        0
 
 $$ x_{1}=0 $$
 
@@ -733,119 +234,72 @@ If in addition we are considering differentiable manifolds, then a square with i
 ### Boundary and interior
 
 Let 
-        M
 
 $$ M $$
 
  be a manifold with boundary. The interior of 
-        M
 
 $$ M $$
 
 , denoted 
-        Int
-
-        ⁡
-
-        M
 
 $$ \operatorname {Int} M $$
 
 , is the set of points in 
-        M
 
 $$ M $$
 
  which have neighborhoods homeomorphic to an open subset of 
-            R
-            n
 
 $$ \mathbb {R} ^{n} $$
 
 . The boundary of 
-        M
 
 $$ M $$
 
 , denoted 
-        ∂
-
-        M
 
 $$ \partial M $$
 
 , is the complement of 
-        Int
-
-        ⁡
-
-        M
 
 $$ \operatorname {Int} M $$
 
  in 
-        M
 
 $$ M $$
 
 . The boundary points can be characterized as those points which land on the boundary hyperplane 
-        (
-          x
-            n
-        =
-
-        0
-
-        )
 
 $$ (x_{n}=0) $$
 
  of 
-            R
-            +
-            n
 
 $$ \mathbb {R} _{+}^{n} $$
 
  under some coordinate chart.
 
 If 
-        M
 
 $$ M $$
 
  is a manifold with boundary of dimension 
-        n
 
 $$ n $$
 
 , then 
-        Int
-
-        ⁡
-
-        M
 
 $$ \operatorname {Int} M $$
 
  is a manifold (without boundary) of dimension 
-        n
 
 $$ n $$
 
  and 
-        ∂
-
-        M
 
 $$ \partial M $$
 
  is a manifold (without boundary) of dimension 
-        n
-
-        −
-
-        1
 
 $$ n-1 $$
 
@@ -858,8 +312,6 @@ A single manifold can be constructed in different ways, each stressing a differe
 ### Charts
 
 Perhaps the simplest way to construct a manifold is the one used in the example above of the circle. First, a subset of 
-            R
-            2
 
 $$ \mathbb {R} ^{2} $$
 
@@ -868,88 +320,18 @@ $$ \mathbb {R} ^{2} $$
 #### Sphere with charts
 
 A sphere can be treated in almost the same way as the circle. In mathematics a sphere is just the surface (not the solid interior), which can be defined as a subset of 
-            R
-            3
 
 $$ \mathbb {R} ^{3} $$
 
 :
 
-        S
-
-        =
-          {
-            (
-
-            x
-
-            ,
-
-            y
-
-            ,
-
-            z
-
-            )
-
-            ∈
-                R
-                3
-            ∣
-              x
-                2
-            +
-              y
-                2
-            +
-              z
-                2
-            =
-
-            1
-          }
-        .
-
 $$ S=\left\{(x,y,z)\in \mathbb {R} ^{3}\mid x^{2}+y^{2}+z^{2}=1\right\}. $$
 
 The sphere is two-dimensional, so each chart will map part of the sphere to an open subset of 
-            R
-            2
 
 $$ \mathbb {R} ^{2} $$
 
 . Consider the northern hemisphere, which is the part with positive z coordinate (coloured red in the picture on the right). The function χ defined by 
-
-        χ
-
-        (
-
-        x
-
-        ,
-
-        y
-
-        ,
-
-        z
-
-        )
-
-        =
-
-        (
-
-        x
-
-        ,
-
-        y
-
-        )
-
-        ,
 
 $$ \chi (x,y,z)=(x,y),\ $$
 
@@ -974,48 +356,10 @@ The patchwork construction does not use any embedding, but simply views the mani
 #### n-Sphere as a patchwork
 
 The n-sphere Sn is a generalisation of the idea of a circle (1-sphere) and sphere (2-sphere) to higher dimensions. An n-sphere Sn can be constructed by gluing together two copies of 
-            R
-            n
 
 $$ \mathbb {R} ^{n} $$
 
 . The transition map between them is inversion in a sphere, defined as
-
-            R
-            n
-        ∖
-
-        {
-
-        0
-
-        }
-
-        →
-            R
-            n
-        ∖
-
-        {
-
-        0
-
-        }
-
-        :
-
-        x
-
-        ↦
-
-        x
-          /
-        ‖
-
-        x
-          ‖
-            2
-        .
 
 $$ \mathbb {R} ^{n}\setminus \{0\}\to \mathbb {R} ^{n}\setminus \{0\}:x\mapsto x/\|x\|^{2}. $$
 
@@ -1050,14 +394,10 @@ The dimension of the product manifold is the sum of the dimensions of its factor
 ### Topological manifolds
 
 The simplest kind of manifold to define is the topological manifold, which looks locally like some "ordinary" Euclidean space 
-            R
-            n
 
 $$ \mathbb {R} ^{n} $$
 
 . By definition, all manifolds are topological manifolds, so the phrase "topological manifold" is usually used to emphasize that a manifold lacks additional structure, or that only its topological properties are being considered. Formally, a topological manifold is a topological space locally homeomorphic to a Euclidean space. This means that every point has a neighbourhood for which there exists a homeomorphism (a bijective continuous function whose inverse is also continuous) mapping that neighbourhood to 
-            R
-            n
 
 $$ \mathbb {R} ^{n} $$
 
@@ -1080,38 +420,18 @@ A rectifiable set generalizes the idea of a piecewise smooth or rectifiable curv
 ### Riemannian manifolds
 
 To measure distances and angles on manifolds, the manifold must be Riemannian. A Riemannian manifold is a differentiable manifold in which each tangent space is equipped with an inner product 
-        ⟨
-
-        ⋅
-
-        ,
-
-        ⋅
-
-        ⟩
 
 $$ \langle \cdot ,\cdot \rangle $$
 
  in a manner which varies smoothly from point to point. Given two tangent vectors 
-        u
 
 $$ u $$
 
  and 
-        v
 
 $$ v $$
 
 , the inner product 
-        ⟨
-
-        u
-
-        ,
-
-        v
-
-        ⟩
 
 $$ \langle u,v\rangle $$
 
@@ -1122,11 +442,6 @@ All differentiable manifolds (of constant dimension) can be given the structure 
 ### Finsler manifolds
 
 A Finsler manifold allows the definition of distance but does not require the concept of angle; it is an analytic manifold in which each tangent space is equipped with a norm, 
-        ‖
-
-        ⋅
-
-        ‖
 
 $$ \|\cdot \| $$
 
@@ -1139,58 +454,24 @@ Any Riemannian manifold is a Finsler manifold.
 Lie groups, named after Sophus Lie, are differentiable manifolds that carry also the structure of a group which is such that the group operations are defined by smooth maps.
 
 A Euclidean vector space with the group operation of vector addition is an example of a non-compact Lie group. A simple example of a compact Lie group is the circle: the group operation is simply rotation. This group, known as 
-        U
-
-        ⁡
-
-        (
-
-        1
-
-        )
 
 $$ \operatorname {U} (1) $$
 
 , can be also characterised as the group of complex numbers of modulus 1 with multiplication as the group operation.
 
 Other examples of Lie groups include special groups of matrices, which are all subgroups of the general linear group, the group of 
-        n
-
-        ×
-
-        n
 
 $$ n\times n $$
 
  matrices with non-zero determinant. If the matrix entries are real numbers, this will be an 
-          n
-            2
 
 $$ n^{2} $$
 
 -dimensional disconnected manifold. The orthogonal groups, the symmetry groups of the sphere and hyperspheres, are 
-        n
-
-        (
-
-        n
-
-        −
-
-        1
-
-        )
-          /
-        2
 
 $$ n(n-1)/2 $$
 
  dimensional manifolds, where 
-        n
-
-        −
-
-        1
 
 $$ n-1 $$
 
@@ -1199,28 +480,20 @@ $$ n-1 $$
 ### Other types of manifolds
 
 A complex manifold is a manifold whose charts take values in 
-            C
-            n
 
 $$ \mathbb {C} ^{n} $$
 
  and whose transition functions are holomorphic on the overlaps. These manifolds are the basic objects of study in complex geometry. A one-complex-dimensional manifold is called a Riemann surface. An 
-        n
 
 $$ n $$
 
 -dimensional complex manifold has dimension 
-        2
-
-        n
 
 $$ 2n $$
 
  as a real differentiable manifold.
 
 A CR manifold is a manifold modeled on boundaries of domains in 
-            C
-            n
 
 $$ \mathbb {C} ^{n} $$
 
@@ -1259,14 +532,10 @@ Algebraic topology is a source of a number of important global invariant propert
 ### Orientability
 
 In dimensions two and higher, a simple but important invariant criterion is the question of whether a manifold admits a meaningful orientation. Consider a topological manifold with charts mapping to 
-            R
-            n
 
 $$ \mathbb {R} ^{n} $$
 
 . Given an ordered basis for 
-            R
-            n
 
 $$ \mathbb {R} ^{n} $$
 
@@ -1302,28 +571,9 @@ In Riemannian geometry, one may ask for maps to preserve the Riemannian metric, 
 
 A basic example of maps between manifolds are scalar-valued functions on a manifold,
 
-        f
-
-        :
-
-        M
-
-        →
-          R
-
 $$ f\colon M\to \mathbb {R} $$
 
 or
-
-        f
-
-        :
-
-        M
-
-        →
-          C
-        ,
 
 $$ f\colon M\to \mathbb {C} , $$
 
@@ -1362,117 +612,54 @@ A homology manifold is a space that behaves like a manifold from the point of vi
 Differential spaces
 
 Let 
-        M
 
 $$ M $$
 
  be a nonempty set. Suppose that some family of real functions on 
-        M
 
 $$ M $$
 
  was chosen. Denote it by 
-        C
-
-        ⊆
-            R
-            M
 
 $$ C\subseteq \mathbb {R} ^{M} $$
 
 . It is an algebra with respect to the pointwise addition and multiplication. Let 
-        M
 
 $$ M $$
 
  be equipped with the topology induced by 
-        C
 
 $$ C $$
 
 . Suppose also that the following conditions hold. First: for every 
-        H
-
-        ∈
-          C
-            ∞
-          (
-              R
-              n
-          )
 
 $$ H\in C^{\infty }\left(\mathbb {R} ^{n}\right) $$
 
 , where 
-        n
-
-        ∈
-          N
 
 $$ n\in \mathbb {N} $$
 
 , and arbitrary 
-          f
-            1
-        ,
-
-        …
-
-        ,
-          f
-            n
-        ∈
-
-        C
 
 $$ f_{1},\dots ,f_{n}\in C $$
 
 , the composition 
-        H
-
-        ∘
-          (
-              f
-                1
-            ,
-
-            …
-
-            ,
-              f
-                n
-          )
-        ∈
-
-        C
 
 $$ H\circ \left(f_{1},\dots ,f_{n}\right)\in C $$
 
 . Second: every function, which in every point of 
-        M
 
 $$ M $$
 
  locally coincides with some function from 
-        C
 
 $$ C $$
 
 , also belongs to 
-        C
 
 $$ C $$
 
 . A pair 
-        (
-
-        M
-
-        ,
-
-        C
-
-        )
 
 $$ (M,C) $$
 

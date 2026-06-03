@@ -32,66 +32,19 @@ The most important elementary reactions are unimolecular and bimolecular reactio
 
 In a typical dissociation reaction, a bond in a molecule splits (ruptures) resulting in two molecular fragments. The splitting can be homolytic or heterolytic. In the first case, the bond is divided so that each product retains an electron and becomes a neutral radical. In the second case, both electrons of the chemical bond remain with one of the products, resulting in charged ions. Dissociation plays an important role in triggering chain reactions, such as hydrogen–oxygen or polymerization reactions.
 
-          AB
-
-          ⟶
-
-          A
-
-          +
-
-          B
-
 $$ {\ce {AB -> A + B}} $$
 
  Dissociation of a molecule AB into fragments A and B 
 
 For bimolecular reactions, two molecules collide and react with each other. Their merger is called chemical synthesis or an addition reaction.
 
-          A
-
-          +
-
-          B
-
-          ⟶
-
-          AB
-
 $$ {\ce {A + B -> AB}} $$
 
 Another possibility is that only a portion of one molecule is transferred to the other molecule. This type of reaction occurs, for example, in redox and acid-base reactions. In redox reactions, the transferred particle is an electron, whereas in acid-base reactions it is a proton. This type of reaction is also called metathesis.
 
-          HA
-
-          +
-
-          B
-
-          ⟶
-
-          A
-
-          +
-
-          HB
-
 $$ {\ce {HA + B -> A + HB}} $$
 
 for example:
-
-          NaCl
-
-          +
-            AgNO
-              3
-          ⟶
-            NaNO
-              3
-          +
-
-          AgCl
-            ↓
 
 $$ {\ce {NaCl + AgNO3 -> NaNO3 + AgCl(v)}} $$
 
@@ -105,26 +58,6 @@ The reaction yield stabilizes at equilibrium but can be increased by removing th
 
 Chemical reactions are determined by the laws of thermodynamics. Reactions can proceed by themselves if they are exergonic, that is if they release free energy. The associated free energy change of the reaction is composed of the changes of two different thermodynamic quantities, enthalpy and entropy:
 
-        Δ
-
-        G
-
-        =
-
-        Δ
-
-        H
-
-        −
-
-        T
-
-        ⋅
-
-        Δ
-
-        S
-
 $$ \Delta G=\Delta H-T\cdot \Delta S $$
 
 .
@@ -133,52 +66,11 @@ $$ \Delta G=\Delta H-T\cdot \Delta S $$
 
 Reactions can be exothermic, where ΔH is negative and energy is released. Typical examples of exothermic reactions are combustion, precipitation and crystallization, in which ordered solids are formed from disordered gaseous or liquid phases. In contrast, in endothermic reactions, heat is consumed from the environment. This can occur by increasing the entropy of the system, often through the formation of gaseous or dissolved reaction products, which have higher entropy. Since the entropy term in the free-energy change increases with temperature, many endothermic reactions preferably take place at high temperatures. On the contrary, many exothermic reactions such as crystallization occur preferably at lower temperatures. A change in temperature can sometimes reverse the sign of the enthalpy of a reaction, as for the carbon monoxide reduction of molybdenum dioxide:
 
-          2
-          CO
-            (
-
-            g
-
-            )
-          +
-            MoO
-              2
-            (
-
-            s
-
-            )
-          ⟶
-
-          2
-            CO
-              2
-            (
-
-            g
-
-            )
-          +
-
-          Mo
-            (
-
-            s
-
-            )
-
 $$ {\ce {2CO(g) + MoO2(s) -> 2CO2(g) + Mo(s)}} $$
 
 ; 
-        Δ
-          H
-            o
-        =
-
-        +
 
         21.86
-          kJ at 298 K
 
 $$ \Delta H^{o}=+21.86\ {\text{kJ at 298 K}} $$
 
@@ -186,71 +78,11 @@ This reaction to form carbon dioxide and molybdenum is endothermic at low temper
 
 Changes in temperature can also reverse the direction tendency of a reaction. For example, the water gas shift reaction:
 
-          CO
-            (
-
-            g
-
-            )
-          +
-            H
-              2
-          O
-            (
-              v
-            )
-                      ↽
-                      −
-                      −
-                      ⇀
-            CO
-              2
-            (
-
-            g
-
-            )
-          +
-            H
-              2
-            (
-
-            g
-
-            )
-
 $$ {\ce {CO(g) + H2O({v}) <=> CO2(g) + H2(g)}} $$
 
 is favored by low temperatures, but its reverse is favored by high temperatures. The shift in reaction direction tendency occurs at 1100 K.
 
 Reactions can also be characterized by their internal energy change, which takes into account changes in the entropy, volume and chemical potentials. The latter depends, among other things, on the activities of the involved substances.
-
-          d
-        U
-
-        =
-
-        T
-
-        ⋅
-          d
-        S
-
-        −
-
-        p
-
-        ⋅
-          d
-        V
-
-        +
-
-        μ
-
-        ⋅
-          d
-        n
 
 $$ {d}U=T\cdot {d}S-p\cdot {d}V+\mu \cdot {d}n $$
 
@@ -276,81 +108,13 @@ For some reactions, the presence of electromagnetic radiation, most notably ultr
 
 Several theories allow calculating the reaction rates at the molecular level. This field is referred to as reaction dynamics. The rate v of a first-order reaction, which could be the disintegration of a substance A, is given by:
 
-        v
-
-        =
-
-        −
-              d
-
-              [
-                A
-              ]
-              d
-
-              t
-        =
-
-        k
-
-        ⋅
-
-        [
-          A
-        ]
-
-        .
-
 $$ v=-{\frac {d[{\ce {A}}]}{dt}}=k\cdot [{\ce {A}}]. $$
 
 Its integration yields:
 
-            [
-
-            A
-
-            ]
-        (
-
-        t
-
-        )
-
-        =
-              [
-
-              A
-
-              ]
-            0
-        ⋅
-          e
-            −
-
-            k
-
-            ⋅
-
-            t
-        .
-
 $$ {\ce {[A]}}(t)={\ce {[A]}}_{0}\cdot e^{-k\cdot t}. $$
 
 Here k is the first-order rate constant, having dimension 1/time, [A](t) is the concentration at a time t and [A]0 is the initial concentration. The rate of a first-order reaction depends only on the concentration and the properties of the involved substance, and the reaction itself can be described with a characteristic half-life. More than one time constant is needed when describing reactions of higher order. The temperature dependence of the rate constant usually follows the Arrhenius equation:
-
-        k
-
-        =
-          k
-            0
-          e
-              −
-                E
-                  a
-              /
-                k
-                  B
-              T
 
 $$ k=k_{0}e^{{-E_{a}}/{k_{B}T}} $$
 
@@ -364,30 +128,9 @@ where Ea is the activation energy and kB is the Boltzmann constant. One of the s
 
 In a synthesis reaction, two or more simple substances combine to form a more complex substance. These reactions are in the general form:
 
-          A
-
-          +
-
-          B
-
-          ⟶
-
-          AB
-
 $$ {\ce {A + B->AB}} $$
 
 Two or more reactants yielding one product is another way to identify a synthesis reaction. One example of a synthesis reaction is the combination of iron and sulfur to form iron(II) sulfide:
-
-          8
-          Fe
-
-          +
-            S
-              8
-          ⟶
-
-          8
-          FeS
 
 $$ {\ce {8Fe + S8->8FeS}} $$
 
@@ -397,33 +140,9 @@ Another example is simple hydrogen gas combined with simple oxygen gas to produc
 
 A decomposition reaction is when a more complex substance breaks down into its more simple parts. It is thus the opposite of a synthesis reaction and can be written as:
 
-          AB
-
-          ⟶
-
-          A
-
-          +
-
-          B
-
 $$ {\ce {AB->A + B}} $$
 
 One example of a decomposition reaction is the electrolysis of water to make oxygen and hydrogen gas:
-
-          2
-            H
-              2
-          O
-
-          ⟶
-
-          2
-            H
-              2
-          +
-            O
-              2
 
 $$ {\ce {2H2O->2H2 + O2}} $$
 
@@ -431,47 +150,9 @@ $$ {\ce {2H2O->2H2 + O2}} $$
 
 In a single displacement reaction, a single uncombined element replaces another in a compound; in other words, one element trades places with another element in a compound. These reactions come in the general form of:
 
-          A
-
-          +
-
-          BC
-
-          ⟶
-
-          AC
-
-          +
-
-          B
-
 $$ {\ce {A + BC->AC + B}} $$
 
 One example of a single displacement reaction is when magnesium replaces hydrogen in water to make solid magnesium hydroxide and hydrogen gas:
-
-          Mg
-
-          +
-
-          2
-            H
-              2
-          O
-
-          ⟶
-
-          Mg
-              (
-
-              OH
-
-              )
-              2
-            ↓
-          +
-            H
-              2
-            ↑
 
 $$ {\ce {Mg + 2H2O->Mg(OH)2 (v) + H2 (^)}} $$
 
@@ -479,46 +160,11 @@ $$ {\ce {Mg + 2H2O->Mg(OH)2 (v) + H2 (^)}} $$
 
 In a double displacement reaction, the anions and cations of two compounds switch places and form two entirely different compounds. These reactions are in the general form:
 
-          AB
-
-          +
-
-          CD
-
-          ⟶
-
-          AD
-
-          +
-
-          CB
-
 $$ {\ce {AB + CD->AD + CB}} $$
 
 For example, when barium chloride (BaCl2) and magnesium sulfate (MgSO4) react, the SO42− anion switches places with the 2Cl− anion, giving the compounds BaSO4 and MgCl2.
 
 Another example of a double displacement reaction is the reaction of lead(II) nitrate with potassium iodide to form lead(II) iodide and potassium nitrate:
-
-          Pb
-              (
-                NO
-                  3
-              )
-              2
-          +
-
-          2
-          KI
-
-          ⟶
-            PbI
-              2
-            ↓
-          +
-
-          2
-            KNO
-              3
 
 $$ {\ce {Pb(NO3)2 + 2KI->PbI2(v) + 2KNO3}} $$
 
@@ -529,9 +175,6 @@ According to Le Chatelier's Principle, reactions may proceed in the forward or r
 #### Forward reactions
 
 Reactions that proceed in the forward direction (from left to right) to approach equilibrium are often called spontaneous reactions, that is, 
-        Δ
-
-        G
 
 $$ \Delta G $$
 
@@ -548,9 +191,6 @@ CH3COOH + H2O ⇌ CH3COO− + H3O+
 #### Backward reactions
 
 Reactions that proceed in the backward direction to approach equilibrium are often called non-spontaneous reactions, that is, 
-        Δ
-
-        G
 
 $$ \Delta G $$
 
@@ -568,31 +208,6 @@ Redox reactions can be understood in terms of the transfer of electrons from one
 
 In the following redox reaction, hazardous sodium metal reacts with toxic chlorine gas to form the ionic compound sodium chloride, or common table salt:
 
-          2
-          Na
-            (
-
-            s
-
-            )
-          +
-            Cl
-              2
-            (
-
-            g
-
-            )
-          ⟶
-
-          2
-          NaCl
-            (
-
-            s
-
-            )
-
 $$ {\ce {2Na(s) + Cl2(g)->2NaCl(s)}} $$
 
 In the reaction, sodium metal goes from an oxidation state of 0 (a pure element) to +1: in other words, the sodium lost one electron and is said to have been oxidized. On the other hand, the chlorine gas goes from an oxidation of 0 (also a pure element) to −1: the chlorine gains one electron and is said to have been reduced. Because the chlorine is the one reduced, it is considered the electron acceptor, or in other words, induces oxidation in the sodium – thus the chlorine gas is considered the oxidizing agent. Conversely, the sodium is oxidized or is the electron donor, and thus induces a reduction in the other species and is considered the reducing agent.
@@ -609,101 +224,11 @@ An important class of redox reactions are the electrolytic electrochemical react
 
 In a combustion reaction, an element or compound reacts with an oxidant, usually oxygen, often producing energy in the form of heat or light. Combustion reactions frequently involve a hydrocarbon. For instance, the combustion of 1 mole (114 g) of octane in oxygen:
 
-            C
-              8
-            H
-              18
-            (
-
-            l
-
-            )
-          +
-              25
-
-              2
-            O
-              2
-            (
-
-            g
-
-            )
-          ⟶
-
-          8
-            CO
-              2
-            (
-
-            g
-
-            )
-          +
-
-          9
-            H
-              2
-          O
-            (
-
-            g
-
-            )
-
 $$ {\ce {C8H18(l) + 25/2 O2(g)->8CO2(g) + 9H2O(g)}} $$
 
 releases 5500 kJ. A combustion reaction can also result from carbon, magnesium or sulfur reacting with oxygen.
 
-          2
-          Mg
-            (
-
-            s
-
-            )
-          +
-            O
-              2
-            (
-
-            g
-
-            )
-          ⟶
-
-          2
-          MgO
-            (
-
-            s
-
-            )
-
 $$ {\ce {2Mg(s) + O2(g)->2MgO(s)}} $$
-
-          S
-            (
-
-            s
-
-            )
-          +
-            O
-              2
-            (
-
-            g
-
-            )
-          ⟶
-            SO
-              2
-            (
-
-            g
-
-            )
 
 $$ {\ce {S(s) + O2(g)->SO2(g)}} $$
 
@@ -714,27 +239,6 @@ In complexation reactions, several ligands react with a metal atom to form a coo
 ### Acid–base reactions
 
 In the Brønsted–Lowry acid–base theory, an acid–base reaction involves a transfer of protons (H+) from one species (the acid) to another (the base). When a proton is removed from an acid, the resulting species is termed that acid's conjugate base. When the proton is accepted by a base, the resulting species is termed that base's conjugate acid. In other words, acids act as proton donors and bases act as proton acceptors according to the following equation:
-
-              HA
-
-              acid
-          +
-              B
-
-              base
-                      ↽
-                      −
-                      −
-                      ⇀
-                A
-                  −
-                conjugated
-                base
-          +
-                HB
-                  +
-                conjugated
-                acid
 
 $$ {\ce {{\underset {acid}{HA}}+{\underset {base}{B}}<=>{\underset {conjugated\ base}{A^{-}}}+{\underset {conjugated\ acid}{HB+}}}} $$
 
@@ -792,48 +296,7 @@ Electrophilic substitution is the counterpart of the nucleophilic substitution i
 
 In the third type of substitution reaction, radical substitution, the attacking particle is a radical. This process usually takes the form of a chain reaction, for example in the reaction of alkanes with halogens. In the first step, light or heat disintegrates the halogen-containing molecules producing radicals. Then the reaction proceeds as an avalanche until two radicals meet and recombine.
 
-          X
-
-          ⋅
-
-          +
-
-          R
-            −
-          H
-
-          ⟶
-
-          X
-            −
-          H
-
-          +
-
-          R
-
-          ⋅
-
 $$ {\ce {X. + R-H -> X-H + R.}} $$
-
-          R
-
-          ⋅
-
-          +
-            X
-              2
-          ⟶
-
-          R
-            −
-          X
-
-          +
-
-          X
-
-          ⋅
 
 $$ {\ce {R. + X2 -> R-X + X.}} $$
 

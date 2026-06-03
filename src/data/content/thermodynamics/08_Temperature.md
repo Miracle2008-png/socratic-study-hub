@@ -152,17 +152,6 @@ When an energy transfer to or from a body is only as heat, the state of the body
 
 For example, if the change is an increase in temperature at constant volume, with no phase change and no chemical change, then the temperature of the body rises and its pressure increases. The quantity of heat transferred, ΔQ, divided by the observed temperature change, ΔT, is the body's heat capacity at constant volume:
 
-          C
-            V
-        =
-              Δ
-
-              Q
-              Δ
-
-              T
-        .
-
 $$ C_{V}={\frac {\Delta Q}{\Delta T}}. $$
 
 If heat capacity is measured for a well-defined amount of substance, the specific heat is the measure of the heat required to increase the temperature of such a unit quantity by one unit of temperature. For example, raising the temperature of water by one kelvin (equal to one degree Celsius) requires 4186 joules per kilogram (J/kg).
@@ -206,12 +195,6 @@ Rømer scale
 #### Plasma physics
 
 The field of plasma physics deals with phenomena of electromagnetic nature that involve very high temperatures. It is customary to express temperature as energy in a unit related to the electronvolt or kiloelectronvolt (eV/kB or keV/kB). The corresponding energy, which is dimensionally distinct from temperature, is then calculated as the product of the Boltzmann constant and temperature, 
-        E
-
-        =
-          k
-            B
-        T
 
 $$ E=k_{\text{B}}T $$
 
@@ -241,20 +224,6 @@ This theory also explains the ideal gas law and the observed heat capacity of mo
 
 The ideal gas law is based on observed empirical relationships between pressure (p), volume (V), and temperature (T), and was recognized long before the kinetic theory of gases was developed (see Boyle's and Charles's laws). The ideal gas law states:
 
-        p
-
-        V
-
-        =
-
-        n
-
-        R
-
-        T
-
-        ,
-
 $$ pV=nRT, $$
 
 where n is the number of moles of gas and R = 8.31446261815324 J⋅mol−1⋅K−1‍ is the gas constant.
@@ -265,45 +234,11 @@ Although it is not a particularly convenient device, the gas thermometer provide
 
 The kinetic theory assumes that pressure is caused by the force associated with individual atoms striking the walls, and that all energy is translational kinetic energy. Using a sophisticated symmetry argument, Boltzmann deduced what is now called the Maxwell–Boltzmann probability distribution function for the velocity of particles in an ideal gas. From that probability distribution function, the average kinetic energy (per particle) of a monatomic ideal gas is
 
-          E
-            k
-        =
-            1
-
-            2
-        m
-          v
-            rms
-            2
-        =
-            3
-
-            2
-          k
-            B
-        T
-
-        ,
-
 $$ E_{\text{k}}={\frac {1}{2}}mv_{\text{rms}}^{2}={\frac {3}{2}}k_{\text{B}}T, $$
 
 where the Boltzmann constant kB is the ideal gas constant divided by the Avogadro number, and 
-          v
-            rms
-        =
-            ⟨
-              v
-                2
-            ⟩
-        =
-            ⟨
-              v
 
-              ⋅
-
-              v
-            ⟩
-    {\textstyle v_{\text{rms}}={\sqrt {\langle v^{2}\rangle }}={\sqrt {\langle \mathbf {v\cdot v} \rangle }}}
+{\textstyle v_{\text{rms}}={\sqrt {\langle v^{2}\rangle }}={\sqrt {\langle \mathbf {v\cdot v} \rangle }}}
  is the root-mean-square speed. This direct proportionality between temperature and mean molecular kinetic energy is a special case of the equipartition theorem, and holds only in the classical limit of a perfect gas. It does not hold exactly for most substances.
 
 ### Zeroth law of thermodynamics
@@ -328,54 +263,9 @@ where wcy is the work done per cycle. The efficiency depends only on |qC|/qH. Be
 
 Carnot's theorem states that all reversible engines operating between the same heat reservoirs are equally efficient.  Thus, a heat engine operating between T1 and T3 must have the same efficiency as one consisting of two cycles, one between T1 and T2, and the second between T2 and T3. This can only be the case if
 
-          q
-            13
-        =
-                q
-                  1
-                q
-                  2
-                q
-                  2
-                q
-                  3
-        ,
-
 $$ q_{13}={\frac {q_{1}q_{2}}{q_{2}q_{3}}}, $$
 
 which implies
-
-          q
-            13
-        =
-
-        f
-          (
-              T
-                1
-            ,
-              T
-                3
-          )
-        =
-
-        f
-          (
-              T
-                1
-            ,
-              T
-                2
-          )
-        f
-          (
-              T
-                2
-            ,
-              T
-                3
-          )
-        .
 
 $$ q_{13}=f\left(T_{1},T_{3}\right)=f\left(T_{1},T_{2}\right)f\left(T_{2},T_{3}\right). $$
 
@@ -384,21 +274,6 @@ Since the first function is independent of T2, this temperature must cancel on t
 Substituting (6) back into (4) gives a relationship for the efficiency in terms of temperature:
 
 For TC = 0 K the efficiency is 100% and that efficiency becomes greater than 100% below 0 K. Since an efficiency greater than 100% violates the first law of thermodynamics, this implies that 0 K is the minimum possible temperature. In fact, the lowest temperature ever obtained in a macroscopic system was 20 nK, which was achieved in 1995 at NIST. Subtracting the right hand side of (5) from the middle portion and rearranging gives
-
-              q
-                H
-              T
-                H
-        +
-              q
-                C
-              T
-                C
-        =
-
-        0
-
-        ,
 
 $$ {\frac {q_{\text{H}}}{T_{\text{H}}}}+{\frac {q_{\text{C}}}{T_{\text{C}}}}=0, $$
 
@@ -413,121 +288,32 @@ i.e. the reciprocal of the temperature is the rate of increase of entropy with r
 ### Definition from statistical mechanics
 
 Statistical mechanics defines temperature based on a system's fundamental degrees of freedom. Eq.(10) is the defining relation of temperature, where the entropy 
-        S
 
 $$ S $$
 
  is defined (up to a constant) by the logarithm of the number of microstates of the system in the given macrostate (as specified in the microcanonical ensemble): 
 
-        S
-
-        =
-          k
-              B
-        ln
-
-        ⁡
-
-        (
-
-        W
-
-        )
-
 $$ S=k_{\mathrm {B} }\ln(W) $$
 
 where 
-          k
-              B
 
 $$ k_{\mathrm {B} } $$
 
  is the Boltzmann constant and W is the number of microstates with the energy E of the system (degeneracy).
 
 When two systems with different temperatures are put into purely thermal connection, heat will flow from the higher temperature system to the lower temperature one; thermodynamically this is understood by the second law of thermodynamics: The total change in entropy following a transfer of energy 
-        Δ
-
-        E
 
 $$ \Delta E $$
 
  from system 1 to system 2 is:
 
-        Δ
-
-        S
-
-        =
-
-        −
-
-        (
-
-        d
-
-        S
-          /
-        d
-
-        E
-          )
-            1
-        ⋅
-
-        Δ
-
-        E
-
-        +
-
-        (
-
-        d
-
-        S
-          /
-        d
-
-        E
-          )
-            2
-        ⋅
-
-        Δ
-
-        E
-
-        =
-          (
-                1
-                  T
-                    2
-            −
-                1
-                  T
-                    1
-          )
-        Δ
-
-        E
-
 $$ \Delta S=-(dS/dE)_{1}\cdot \Delta E+(dS/dE)_{2}\cdot \Delta E=\left({\frac {1}{T_{2}}}-{\frac {1}{T_{1}}}\right)\Delta E $$
 
 and is thus positive if 
-          T
-            1
-        >
-          T
-            2
 
 $$ T_{1}>T_{2} $$
 
 From the point of view of statistical mechanics, the total number of microstates in the combined system 1 + system 2 is 
-          N
-            1
-        ⋅
-          N
-            2
 
 $$ N_{1}\cdot N_{2} $$
 
@@ -536,49 +322,14 @@ $$ N_{1}\cdot N_{2} $$
 ### Generalized temperature from single-particle statistics
 
 It is possible to extend the definition of temperature even to systems of few particles, like in a quantum dot. The generalized temperature is obtained by considering time ensembles instead of configuration-space ensembles given in statistical mechanics in the case of thermal and particle exchange between a small system of fermions (N even less than 10) with a single/double-occupancy system. The finite quantum grand canonical ensemble, obtained under the hypothesis of ergodicity and orthodicity, allows expressing the generalized temperature from the ratio of the average time of occupation 
-          τ
-            1
 
 $$ \tau _{1} $$
 
  and 
-          τ
-            2
 
 $$ \tau _{2} $$
 
  of the single/double-occupancy system:
-
-        T
-
-        =
-              E
-
-              −
-                E
-                  F
-                (
-                  1
-
-                  +
-                      3
-                        2
-
-                        N
-                )
-                k
-                  B
-              ln
-
-              ⁡
-                (
-                  2
-                        τ
-                          2
-                        τ
-                          1
-                )
-        ,
 
 $$ T={\frac {E-E_{\text{F}}\left(1+{\frac {3}{2N}}\right)}{k_{\text{B}}\ln \left(2{\frac {\tau _{2}}{\tau _{1}}}\right)}}, $$
 

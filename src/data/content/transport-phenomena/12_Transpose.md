@@ -16,22 +16,6 @@ Write the columns of A as the rows of AT
 
 Formally, the ith row, jth column element of AT is the jth row, ith column element of A:
 
-            [
-                A
-                T
-            ]
-            i
-
-            j
-        =
-            [
-              A
-            ]
-            j
-
-            i
-        .
-
 $$ \left[\mathbf {A} ^{\text{T}}\right]_{ij}=\left[\mathbf {A} \right]_{ji}. $$
 
 If A is an m × n matrix, then AT is an n × m matrix. 
@@ -40,127 +24,33 @@ If A is an m × n matrix, then AT is an n × m matrix.
 
 A square matrix whose transpose is equal to itself is called a symmetric matrix; that is, A is symmetric if
 
-            A
-            T
-        =
-          A
-        .
-
 $$ \mathbf {A} ^{\text{T}}=\mathbf {A} . $$
 
 A square matrix whose transpose is equal to its negative is called a skew-symmetric matrix; that is, A is skew-symmetric if
-
-            A
-            T
-        =
-
-        −
-          A
-        .
 
 $$ \mathbf {A} ^{\text{T}}=-\mathbf {A} . $$
 
 A square complex matrix whose transpose is equal to the matrix with every entry replaced by its complex conjugate (denoted here with an overline) is called a Hermitian matrix (equivalent to the matrix being equal to its conjugate transpose); that is, A is Hermitian if
 
-            A
-            T
-        =
-              A
-            ¯
-        .
-
 $$ \mathbf {A} ^{\text{T}}={\overline {\mathbf {A} }}. $$
 
 A square complex matrix whose transpose is equal to the negation of its complex conjugate is called a skew-Hermitian matrix; that is, A is skew-Hermitian if
-
-            A
-            T
-        =
-
-        −
-              A
-            ¯
-        .
 
 $$ \mathbf {A} ^{\text{T}}=-{\overline {\mathbf {A} }}. $$
 
 A square matrix whose transpose is equal to its inverse is called an orthogonal matrix; that is, A is orthogonal if
 
-            A
-            T
-        =
-            A
-            −
-
-            1
-        .
-
 $$ \mathbf {A} ^{\text{T}}=\mathbf {A} ^{-1}. $$
 
 A square complex matrix whose transpose is equal to its conjugate inverse is called a unitary matrix; that is, A is unitary if
-
-            A
-            T
-        =
-                A
-                −
-
-                1
-            ¯
-        .
 
 $$ \mathbf {A} ^{\text{T}}={\overline {\mathbf {A} ^{-1}}}. $$
 
 ### Examples
 
-              [
-                    1
-                    2
-              ]
-            T
-        =
-            [
-                  1
-                  2
-            ]
-
 $$ {\begin{bmatrix}1&2\end{bmatrix}}^{\text{T}}=\,{\begin{bmatrix}1\\2\end{bmatrix}} $$
 
-              [
-                    1
-                    2
-                    3
-                    4
-              ]
-            T
-        =
-            [
-                  1
-                  3
-                  2
-                  4
-            ]
-
 $$ {\begin{bmatrix}1&2\\3&4\end{bmatrix}}^{\text{T}}={\begin{bmatrix}1&3\\2&4\end{bmatrix}} $$
-
-              [
-                    1
-                    2
-                    3
-                    4
-                    5
-                    6
-              ]
-            T
-        =
-            [
-                  1
-                  3
-                  5
-                  2
-                  4
-                  6
-            ]
 
 $$ {\begin{bmatrix}1&2\\3&4\\5&6\end{bmatrix}}^{\text{T}}={\begin{bmatrix}1&3&5\\2&4&6\end{bmatrix}} $$
 
@@ -168,69 +58,17 @@ $$ {\begin{bmatrix}1&2\\3&4\\5&6\end{bmatrix}}^{\text{T}}={\begin{bmatrix}1&3&5\
 
 Let A and B be matrices and c be a scalar. 
 
-            (
-                A
-                T
-            )
-            T
-        =
-          A
-        .
-
 $$ \left(\mathbf {A} ^{\text{T}}\right)^{\text{T}}=\mathbf {A} . $$
 
 The operation of taking the transpose is an involution (self-inverse).
-
-            (
-                A
-              +
-                B
-            )
-            T
-        =
-            A
-            T
-        +
-            B
-            T
-        .
 
 $$ \left(\mathbf {A} +\mathbf {B} \right)^{\text{T}}=\mathbf {A} ^{\text{T}}+\mathbf {B} ^{\text{T}}. $$
 
 The transpose respects addition.
 
-            (
-              c
-                A
-            )
-            T
-        =
-
-        c
-
-        (
-            A
-            T
-        )
-
-        .
-
 $$ \left(c\mathbf {A} \right)^{\text{T}}=c(\mathbf {A} ^{\text{T}}). $$
 
 The transpose of a scalar is the same scalar. Together with the preceding property, this implies that the transpose is a linear map from the space of m × n matrices to the space of the n × m matrices.
-
-            (
-              A
-
-              B
-            )
-            T
-        =
-            B
-            T
-            A
-            T
-        .
 
 $$ \left(\mathbf {AB} \right)^{\text{T}}=\mathbf {B} ^{\text{T}}\mathbf {A} ^{\text{T}}. $$
 
@@ -238,55 +76,15 @@ The order of the factors reverses. By induction, this result extends to the gene
 
 (A1A2...Ak−1Ak)T = AkTAk−1T…A2TA1T.
 
-        det
-          (
-              A
-              T
-          )
-        =
-
-        det
-
-        (
-          A
-        )
-
-        .
-
 $$ \det \left(\mathbf {A} ^{\text{T}}\right)=\det(\mathbf {A} ). $$
 
 The determinant of a square matrix is the same as the determinant of its transpose.
 
 The dot product of two column vectors a and b can be computed as the single entry of the matrix product
-          a
-        ⋅
-          b
-        =
-            a
-            T
-          b
-        .
 
 $$ \mathbf {a} \cdot \mathbf {b} =\mathbf {a} ^{\text{T}}\mathbf {b} . $$
 
 If A has only real entries, then ATA is a positive-semidefinite matrix.
-
-            (
-                A
-                T
-            )
-            −
-
-            1
-        =
-            (
-                A
-                −
-
-                1
-            )
-            T
-        .
 
 $$ \left(\mathbf {A} ^{\text{T}}\right)^{-1}=\left(\mathbf {A} ^{-1}\right)^{\text{T}}. $$
 
@@ -294,58 +92,33 @@ The transpose of an invertible matrix is also invertible, and its inverse is the
 
 If A is a square matrix, then its eigenvalues are equal to the eigenvalues of its transpose, since they share the same characteristic polynomial. This can also be seen directly, see Eigenvalues of Transpose
 
-          (
-              A
-              a
-          )
-        ⋅
-          b
-        =
-          a
-        ⋅
-          (
-                A
-                T
-              b
-          )
-
 $$ \left(\mathbf {A} \mathbf {a} \right)\cdot \mathbf {b} =\mathbf {a} \cdot \left(\mathbf {A} ^{\text{T}}\mathbf {b} \right) $$
 
  for two column vectors 
-          a
-        ,
-          b
 
 $$ \mathbf {a} ,\mathbf {b} $$
 
  and the standard dot product.
 
 Over any field 
-        k
 
 $$ k $$
 
 , a square matrix 
-          A
 
 $$ \mathbf {A} $$
 
  is similar to 
-            A
-            T
 
 $$ \mathbf {A} ^{\text{T}} $$
 
 .
 
 This implies that 
-          A
 
 $$ \mathbf {A} $$
 
  and 
-            A
-            T
 
 $$ \mathbf {A} ^{\text{T}} $$
 
@@ -354,89 +127,68 @@ $$ \mathbf {A} ^{\text{T}} $$
 A proof of this property uses the following two observations.
 
 Let 
-          A
 
 $$ \mathbf {A} $$
 
  and 
-          B
 
 $$ \mathbf {B} $$
 
  be 
-        n
-
-        ×
-
-        n
 
 $$ n\times n $$
 
  matrices over some base field 
-        k
 
 $$ k $$
 
  and let 
-        L
 
 $$ L $$
 
  be a field extension of 
-        k
 
 $$ k $$
 
 . If 
-          A
 
 $$ \mathbf {A} $$
 
  and 
-          B
 
 $$ \mathbf {B} $$
 
  are similar as matrices over 
-        L
 
 $$ L $$
 
 , then they are similar over 
-        k
 
 $$ k $$
 
 . In particular this applies when 
-        L
 
 $$ L $$
 
  is the algebraic closure of 
-        k
 
 $$ k $$
 
 .
 
 If 
-          A
 
 $$ \mathbf {A} $$
 
  is a matrix over an algebraically closed field in Jordan normal form with respect to some basis, then 
-          A
 
 $$ \mathbf {A} $$
 
  is similar to 
-            A
-            T
 
 $$ \mathbf {A} ^{\text{T}} $$
 
 . This further reduces to proving the same fact when 
-          A
 
 $$ \mathbf {A} $$
 
@@ -447,26 +199,6 @@ $$ \mathbf {A} $$
 If A is an m × n matrix and AT is its transpose, then the result of matrix multiplication with these two matrices gives two square matrices: A AT is m × m and AT A is n × n. Furthermore, these products are symmetric matrices. Indeed, the matrix product A AT has entries that are the inner product of a row of A with a column of AT. But the columns of AT are the rows of A, so the entry corresponds to the inner product of two rows of A. If pij is the entry of the product, it is obtained from rows i and j in A. The entry pji is also obtained from these rows, thus pij = pji, and the product matrix (pij) is symmetric. Similarly, the product AT A is a symmetric matrix.
 
 A quick proof of the symmetry of A AT results from the fact that it is its own transpose:
-
-            (
-                A
-                  A
-                  T
-            )
-            T
-        =
-            (
-                A
-                T
-            )
-            T
-            A
-            T
-        =
-          A
-            A
-            T
-        .
 
 $$ \left(\mathbf {A} \mathbf {A} ^{\text{T}}\right)^{\text{T}}=\left(\mathbf {A} ^{\text{T}}\right)^{\text{T}}\mathbf {A} ^{\text{T}}=\mathbf {A} \mathbf {A} ^{\text{T}}. $$
 
@@ -525,38 +257,6 @@ Here, Ψ is the natural homomorphism X → X## into the double dual.
 If the vector spaces X and Y have respectively nondegenerate bilinear forms BX and BY, a concept known as the adjoint, which is closely related to the transpose, may be defined:
 
 If u : X → Y is a linear map between vector spaces X and Y, we define g as the adjoint of u if g : Y → X satisfies
-
-          B
-            X
-            (
-        x
-
-        ,
-
-        g
-
-        (
-
-        y
-
-        )
-            )
-        =
-          B
-            Y
-            (
-        u
-
-        (
-
-        x
-
-        )
-
-        ,
-
-        y
-            )
 
 $$ B_{X}{\big (}x,g(y){\big )}=B_{Y}{\big (}u(x),y{\big )} $$
 

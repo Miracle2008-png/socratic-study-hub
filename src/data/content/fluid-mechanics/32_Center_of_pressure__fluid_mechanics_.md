@@ -5,9 +5,6 @@ In fluid mechanics, the center of pressure  is the point on a body where a singl
 ## Hydrostatic example (dam)
 
 Since the forces of water on a dam are hydrostatic forces, they vary linearly with depth.  The total force on the dam is then the integral of the pressure multiplied by the width of the dam as a function of the depth.  The center of pressure is located at the centroid of the triangular shaped pressure field 
-              2
-
-              3
 
 $$ {\tfrac {2}{3}} $$
 

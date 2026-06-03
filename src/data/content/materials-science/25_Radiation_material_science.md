@@ -31,216 +31,61 @@ The termination of the primary knock-on atom as an interstitial
 The result of a radiation damage event is, if the energy given to a lattice atom is above the threshold displacement energy, the creation of a collection of point defects (vacancies and interstitials) and clusters of these defects in the crystal lattice.
 
 The essence of the quantification of radiation damage in solids is the number of displacements per unit volume per unit time 
-        R
-    {\displaystyle R}
  :
 
-        R
-
-        =
-
-        N
-          ∫
-              E
-                m
-
-                i
-
-                n
-              E
-                m
-
-                a
-
-                x
-          ∫
-              T
-                m
-
-                i
-
-                n
-              T
-                m
-
-                a
-
-                x
-        ϕ
-
-        (
-          E
-            i
-        )
-        σ
-
-        (
-          E
-            i
-        ,
-
-        T
-
-        )
-        υ
-
-        (
-
-        T
-
-        )
-        d
-
-        T
-        d
-          E
-            i
-        .
-    {\displaystyle R=N\int _{E_{min}}^{E_{max}}\int _{T_{min}}^{T_{max}}\phi (E_{i})\,\sigma (E_{i},T)\,\upsilon (T)\,dT\,dE_{i}.}
+{\displaystyle R=N\int _{E_{min}}^{E_{max}}\int _{T_{min}}^{T_{max}}\phi (E_{i})\,\sigma (E_{i},T)\,\upsilon (T)\,dT\,dE_{i}.}
 
 where 
-        N
-    {\displaystyle N}
  is the atom number density, 
-          E
-            m
 
-            a
-
-            x
-    {\displaystyle E_{max}}
+{\displaystyle E_{max}}
  and 
-          E
-            m
 
-            i
-
-            n
-    {\displaystyle E_{min}}
+{\displaystyle E_{min}}
  are the maximum and minimum energies of the incoming particle, 
-        ϕ
 
-        (
-          E
-            i
-        )
-    {\displaystyle \phi (E_{i})}
+{\displaystyle \phi (E_{i})}
  is the energy dependent particle flux, 
-          T
-            m
 
-            a
-
-            x
-    {\displaystyle T_{max}}
+{\displaystyle T_{max}}
  and 
-          T
-            m
 
-            i
-
-            n
-    {\displaystyle T_{min}}
+{\displaystyle T_{min}}
  are the maximum and minimum energies transferred in a collision of a particle of energy 
-          E
-            i
-    {\displaystyle E_{i}}
+{\displaystyle E_{i}}
  and a lattice atom, 
-        σ
 
-        (
-          E
-            i
-        ,
-
-        T
-
-        )
-    {\displaystyle \sigma (E_{i},T)}
+{\displaystyle \sigma (E_{i},T)}
  is the cross section for the collision of a particle of energy 
-          E
-            i
-    {\displaystyle E_{i}}
+{\displaystyle E_{i}}
  that results in a transfer of energy 
-        T
-    {\displaystyle T}
  to the struck atom, 
-        υ
 
-        (
-
-        T
-
-        )
-    {\displaystyle \upsilon (T)}
+{\displaystyle \upsilon (T)}
  is the number of displacements per primary knock-on atom.
 
 The two key variables in this equation are 
-        σ
 
-        (
-          E
-            i
-        ,
-
-        T
-
-        )
-    {\displaystyle \sigma (E_{i},T)}
+{\displaystyle \sigma (E_{i},T)}
  and 
-        υ
 
-        (
-
-        T
-
-        )
-    {\displaystyle \upsilon (T)}
+{\displaystyle \upsilon (T)}
 . The term 
-        σ
 
-        (
-          E
-            i
-        ,
-
-        T
-
-        )
-    {\displaystyle \sigma (E_{i},T)}
+{\displaystyle \sigma (E_{i},T)}
  describes the transfer of energy from the incoming particle to the first atom it encounters in the target, the primary knock-on atom; The second quantity 
-        υ
 
-        (
-
-        T
-
-        )
-    {\displaystyle \upsilon (T)}
+{\displaystyle \upsilon (T)}
  is the total number of displacements that the primary knock-on atom goes on to make in the solid; Taken together, they describe the total number of displacements caused by an incoming particle of energy 
-          E
-            i
-    {\displaystyle E_{i}}
+{\displaystyle E_{i}}
 , and the above equation accounts for the energy distribution of the incoming particles. The result is the total number of displacements in the target from a flux of particles with a known energy distribution.
 
 In radiation material science the displacement damage in the alloy ( 
-          [
-            d
 
-            p
-
-            a
-          ]
-    {\displaystyle \left[dpa\right]}
+{\displaystyle \left[dpa\right]}
  = displacements per atom in the solid ) is a better representation of the effect of irradiation on materials properties than the fluence ( neutron fluence, 
-          [
-            M
 
-            e
-
-            V
-          ]
-    {\displaystyle \left[MeV\right]}
+{\displaystyle \left[MeV\right]}
  ).
 
 See also Wigner effect.

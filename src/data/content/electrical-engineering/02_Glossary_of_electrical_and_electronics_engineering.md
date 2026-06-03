@@ -2023,17 +2023,6 @@ A technique for improving the accuracy of control systems that carry out the sam
 j operator
 
 Electrical engineering uses "j" to represent the imaginary unit "i", to prevent confusion with the symbol for current. 
-        j
-
-        ×
-
-        j
-
-        =
-
-        −
-
-        1
 
 $$ j\times j=-1 $$
 

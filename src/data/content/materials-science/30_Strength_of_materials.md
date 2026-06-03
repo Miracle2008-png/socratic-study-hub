@@ -24,14 +24,6 @@ Torsional loading – Twisting action caused by a pair of externally applied equ
 
 Uniaxial stress is expressed by
 
-        σ
-
-        =
-            F
-
-            A
-        ,
-
 $$ \sigma ={\frac {F}{A}}, $$
 
 where F is the force acting on an area A. The area can be the undeformed area or the deformed area, depending on whether engineering stress or true stress is of interest.
@@ -53,24 +45,6 @@ Compressive strength is a limit state of compressive stress that leads to failur
 Tensile strength or ultimate tensile strength is a limit state of tensile stress that leads to tensile failure in the manner of ductile failure (yield as the first stage of that failure, some hardening in the second stage and breakage after a possible "neck" formation) or brittle failure (sudden breaking in two or more pieces at a low-stress state). The tensile strength can be quoted as either true stress or engineering stress, but engineering stress is the most commonly used.
 
 Fatigue strength is a more complex measure of the strength of a material that considers several loading episodes in the service period of an object, and is usually more difficult to assess than the static strength measures. Fatigue strength is quoted here as a simple range (
-        Δ
-
-        σ
-
-        =
-          σ
-              m
-
-              a
-
-              x
-        −
-          σ
-              m
-
-              i
-
-              n
 
 $$ \Delta \sigma =\sigma _{\mathrm {max} }-\sigma _{\mathrm {min} } $$
 
@@ -99,15 +73,6 @@ Consider the difference between a carrot and chewed bubble gum. The carrot will 
 Ultimate strength is an attribute related to a material, rather than just a specific specimen made of the material, and as such it is quoted as the force per unit of cross section area (N/m2). The ultimate strength is the maximum stress that a material can withstand before it breaks or weakens. For example, the ultimate tensile strength (UTS) of AISI 1018 Steel is 440 MPa. In Imperial units, the unit of stress is given as lbf/in2 or pounds-force per square inch. This unit is often abbreviated as psi. One thousand psi is abbreviated ksi.
 
 A factor of safety is a design criteria that an engineered component or structure must achieve. 
-        F
-
-        S
-
-        =
-
-        F
-          /
-        f
 
 $$ FS=F/f $$
 
@@ -116,24 +81,10 @@ $$ FS=F/f $$
 Margin of Safety is the common method for design criteria. It is defined MS = Pu/P − 1.
 
 For example, to achieve a factor of safety of 4, the allowable stress in an AISI 1018 steel component can be calculated to be 
-        F
-
-        =
-
-        U
-
-        T
-
-        S
-          /
-        F
-
-        S
 
 $$ F=UTS/FS $$
 
  = 440/4 = 110 MPa, or 
-        F
 
 $$ F $$
 

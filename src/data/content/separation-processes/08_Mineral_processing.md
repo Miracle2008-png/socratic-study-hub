@@ -53,126 +53,14 @@ Gravity separation is the separation of two or more minerals of different specif
 Gravity separation is one of the oldest technique in mineral processing but has seen a decline in its use since the introduction of methods like flotation, classification, magnetic separation and leaching. Gravity separation dates back to at least 3000 BC when Egyptians used the technique for separation of gold.
 
 It is necessary to determine the suitability of a gravity concentration process before it is employed for concentration of an ore. The concentration criterion is commonly used for this purpose, designated 
-        C
-
-        C
 
 $$ CC $$
 
  in the following equation (where 
-        S
-
-        G
 
 $$ SG $$
 
  represents specific gravity):
-
-        C
-
-        C
-
-        =
-              S
-
-              G
-
-              (
-
-              h
-
-              e
-
-              a
-
-              v
-
-              y
-              m
-
-              i
-
-              n
-
-              e
-
-              r
-
-              a
-
-              l
-
-              )
-
-              −
-
-              S
-
-              G
-
-              (
-
-              f
-
-              l
-
-              u
-
-              i
-
-              d
-
-              )
-              S
-
-              G
-
-              (
-
-              l
-
-              i
-
-              g
-
-              h
-
-              t
-              m
-
-              i
-
-              n
-
-              e
-
-              r
-
-              a
-
-              l
-
-              )
-
-              −
-
-              S
-
-              G
-
-              (
-
-              f
-
-              l
-
-              u
-
-              i
-
-              d
-
-              )
 
 $$ CC={\frac {SG(heavy\ mineral)-SG(fluid)}{SG(light\ mineral)-SG(fluid)}} $$
 

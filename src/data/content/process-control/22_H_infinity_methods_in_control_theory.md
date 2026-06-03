@@ -10,237 +10,55 @@ The plant P has two inputs, the exogenous input w, that includes reference signa
 
 In formulae, the system is:
 
-            [
-                  z
-                  v
-            ]
-        =
-          P
-        (
-
-        s
-
-        )
-            [
-                  w
-                  u
-            ]
-        =
-            [
-                    P
-                      11
-                  (
-
-                  s
-
-                  )
-                    P
-                      12
-                  (
-
-                  s
-
-                  )
-                    P
-                      21
-                  (
-
-                  s
-
-                  )
-                    P
-                      22
-                  (
-
-                  s
-
-                  )
-            ]
-            [
-                  w
-                  u
-            ]
-
 $$ {\begin{bmatrix}z\\v\end{bmatrix}}=\mathbf {P} (s)\,{\begin{bmatrix}w\\u\end{bmatrix}}={\begin{bmatrix}P_{11}(s)&P_{12}(s)\\P_{21}(s)&P_{22}(s)\end{bmatrix}}\,{\begin{bmatrix}w\\u\end{bmatrix}} $$
-
-        u
-
-        =
-          K
-        (
-
-        s
-
-        )
-        v
 
 $$ u=\mathbf {K} (s)\,v $$
 
 It is therefore possible to express the dependency of z on w as:
 
-        z
-
-        =
-          F
-            ℓ
-        (
-          P
-        ,
-          K
-        )
-        w
-
 $$ z=F_{\ell }(\mathbf {P} ,\mathbf {K} )\,w $$
 
 Called the lower linear fractional transformation,  
-          F
-            ℓ
 
 $$ F_{\ell } $$
 
  is defined (the subscript comes from lower):
 
-          F
-            ℓ
-        (
-          P
-        ,
-          K
-        )
-
-        =
-          P
-            11
-        +
-          P
-            12
-          K
-        (
-
-        I
-
-        −
-          P
-            22
-          K
-          )
-            −
-
-            1
-          P
-            21
-
 $$ F_{\ell }(\mathbf {P} ,\mathbf {K} )=P_{11}+P_{12}\,\mathbf {K} \,(I-P_{22}\,\mathbf {K} )^{-1}\,P_{21} $$
 
 Therefore, the objective of 
-              H
-            ∞
 
 $$ {\mathcal {H}}_{\infty } $$
 
  control design is to find a controller 
-          K
 
 $$ \mathbf {K} $$
 
  such that 
-          F
-            ℓ
-        (
-          P
-        ,
-          K
-        )
 
 $$ F_{\ell }(\mathbf {P} ,\mathbf {K} ) $$
 
  is minimised according to the 
-              H
-            ∞
 
 $$ {\mathcal {H}}_{\infty } $$
 
  norm. The same definition applies to 
-              H
-            2
 
 $$ {\mathcal {H}}_{2} $$
 
  control design. The infinity norm of the transfer function matrix 
-          F
-            ℓ
-        (
-          P
-        ,
-          K
-        )
 
 $$ F_{\ell }(\mathbf {P} ,\mathbf {K} ) $$
 
  is defined as:
 
-          |
-          |
-          F
-            ℓ
-        (
-          P
-        ,
-          K
-        )
-          |
-            |
-            ∞
-        =
-          sup
-            ω
-              σ
-
-              ¯
-        (
-          F
-            ℓ
-        (
-          P
-        ,
-          K
-        )
-
-        (
-
-        j
-
-        ω
-
-        )
-
-        )
-
 $$ ||F_{\ell }(\mathbf {P} ,\mathbf {K} )||_{\infty }=\sup _{\omega }{\bar {\sigma }}(F_{\ell }(\mathbf {P} ,\mathbf {K} )(j\omega )) $$
 
 where 
-              σ
-
-              ¯
 
 $$ {\bar {\sigma }} $$
 
  is the maximum singular value of the matrix 
-          F
-            ℓ
-        (
-          P
-        ,
-          K
-        )
-
-        (
-
-        j
-
-        ω
-
-        )
 
 $$ F_{\ell }(\mathbf {P} ,\mathbf {K} )(j\omega ) $$
 

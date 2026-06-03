@@ -22,221 +22,59 @@ Several theories describe the equilibrium segregation activity in materials. The
 
 This is the earliest theory specifically for grain boundaries, in which McLean uses a model of P solute atoms distributed at random amongst N lattice sites and p solute atoms distributed at random amongst n independent grain boundary sites. The total free energy due to the solute atoms is then:
 
-        G
-
-        =
-
-        p
-
-        e
-
-        +
-
-        P
-
-        E
-
-        −
-
-        k
-
-        T
-
-        [
-
-        ln
-
-        ⁡
-
-        (
-
-        n
-
-        !
-
-        N
-
-        !
-
-        )
-
-        −
-
-        ln
-
-        ⁡
-
-        (
-
-        n
-
-        −
-
-        p
-
-        )
-
-        !
-
-        p
-
-        !
-
-        (
-
-        N
-
-        −
-
-        P
-
-        )
-
-        !
-
-        P
-
-        !
-
-        ]
-
 $$ G=pe+PE-kT[\ln(n!N!)-\ln(n-p)!p!(N-P)!P!] $$
 
 where E and e are energies of the solute atom in the lattice and in the grain boundary, respectively and the kln term represents the configurational entropy of the arrangement of the solute atoms in the bulk and grain boundary. McLean used basic statistical mechanics to find the fractional monolayer of segregant, 
-          X
-            b
 
 $$ X_{b} $$
 
 , at which the system energy was minimized (at the equilibrium state), differentiating G with respect to p, noting that the sum of p and P is constant. Here the grain boundary analogue of Langmuir adsorption at free surfaces becomes:
 
-              X
-                b
-                X
-                  b
-                  0
-              −
-                X
-                  b
-        =
-              X
-                c
-              1
-
-              −
-                X
-                  c
-        exp
-
-        ⁡
-          (
-                −
-
-                Δ
-
-                G
-                R
-
-                T
-          )
-
 $$ {\frac {X_{b}}{X_{b}^{0}-X_{b}}}={\frac {X_{c}}{1-X_{c}}}\exp \left({\frac {-\Delta G}{RT}}\right) $$
 
 Here, 
-          X
-            b
-            0
 
 $$ X_{b}^{0} $$
 
  is the fraction of the grain boundary monolayer available for segregated atoms at saturation, 
-          X
-            b
 
 $$ X_{b} $$
 
  is the actual fraction covered with segregant, 
-          X
-            c
 
 $$ X_{c} $$
 
  is the bulk solute molar fraction, and 
-        Δ
-
-        G
 
 $$ \Delta G $$
 
  is the free energy of segregation per mole of solute.
 
 Values of 
-        Δ
-
-        G
 
 $$ \Delta G $$
 
  were estimated by McLean using the elastic strain energy, 
-          E
-            el
 
 $$ E_{\text{el}} $$
 
 , released by the segregation of solute atoms. The solute atom is represented by an elastic sphere fitted into a spherical hole in an elastic matrix continuum. The elastic energy associated with the solute atom is given by:
 
-          E
-            el
-        =
-              24
-
-              π
-                K
-                μ
-                  0
-                r
-                  0
-              (
-                r
-                  1
-              −
-                r
-                  0
-                )
-                  2
-              3
-                K
-              +
-
-              4
-                μ
-                  0
-
 $$ E_{\text{el}}={\frac {24\pi \mathrm {K} \mu _{0}r_{0}(r_{1}-r_{0})^{2}}{3\mathrm {K} +4\mu _{0}}} $$
 
 where 
-          K
 
 $$ \mathrm {K} $$
 
  is the solute bulk modulus, 
-          μ
-            0
-        ,
 
 $$ \mu _{0}, $$
 
  is the matrix shear modulus, and 
-          r
-            0
-        ,
 
 $$ r_{0}, $$
 
  and 
-          r
-            1
-        ,
 
 $$ r_{1}, $$
 
@@ -246,126 +84,29 @@ $$ r_{1}, $$
 
 Using truncated BET theory (the gas adsorption theory developed by Brunauer, Emmett, and Teller), Seah and Hondros write the solid-state analogue as:
 
-              X
-                b
-                X
-                  b
-                  0
-              −
-                X
-                  b
-        =
-              X
-                c
-              X
-                c
-                0
-        exp
-
 $$ {\frac {X_{b}}{X_{b}^{0}-X_{b}}}={\frac {X_{c}}{X_{c}^{0}}}\exp $$
-
-          (
-                −
-
-                Δ
-                  G
-
-                  ′
-                R
-
-                T
-          )
 
 $$ \left({\frac {-\Delta G'}{RT}}\right) $$
 
 where 
-        Δ
-
-        G
-
-        =
-
-        Δ
-          G
-
-          ′
-        +
-
-        Δ
-          G
-            sol
 
 $$ \Delta G=\Delta G'+\Delta G_{\text{sol}} $$
-
-          X
-            c
-            0
 
 $$ X_{c}^{0} $$
 
  is the solid solubility, which is known for many elements (and can be found in metallurgical handbooks). In the dilute limit, a slightly soluble substance has 
-          X
-            c
-            0
-        =
-
-        exp
-
-        ⁡
-          (
-                Δ
-                  G
-                    sol
-                R
-
-                T
-          )
 
 $$ X_{c}^{0}=\exp \left({\frac {\Delta G_{\text{sol}}}{RT}}\right) $$
 
 , so the above equation reduces to that found with the Langmuir-McLean theory. This equation is only valid for 
-          X
-            c
-        ≤
-          X
-            c
-            0
 
 $$ X_{c}\leq X_{c}^{0} $$
 
 . If there is an excess of solute such that a second phase appears, the solute content is limited to 
-          X
-            c
-            0
 
 $$ X_{c}^{0} $$
 
  and the equation becomes
-
-              X
-                b
-                X
-                  b
-                  0
-              −
-                X
-                  b
-        =
-
-        exp
-
-        ⁡
-          (
-                −
-
-                Δ
-                  G
-
-                  ′
-                R
-
-                T
-          )
 
 $$ {\frac {X_{b}}{X_{b}^{0}-X_{b}}}=\exp \left({\frac {-\Delta G'}{RT}}\right) $$
 
@@ -374,72 +115,26 @@ This theory for grain boundary segregation, derived from truncated BET theory, p
 ### More complex systems
 
 Other models exist to model more complex binary systems. The above theories operate on the assumption that the segregated atoms are non-interacting. If, in a binary system, adjacent adsorbate atoms are allowed an interaction energy 
-        ω
 
 $$ \omega \, $$
 
 , such that they can attract (when 
-        ω
 
 $$ \omega \, $$
 
  is negative) or repel (when 
-        ω
 
 $$ \omega \, $$
 
  is positive) each other, the solid-state analogue of the Fowler adsorption theory is developed as
 
-              X
-                b
-                X
-                  b
-                  0
-              −
-                X
-                  b
-        =
-              X
-                c
-              1
-
-              −
-                X
-                  c
-        exp
-
-        ⁡
-          [
-                −
-
-                Δ
-
-                G
-
-                −
-                  Z
-                    1
-                ω
-                      X
-                        b
-                      X
-                        b
-                        0
-                R
-
-                T
-          ]
-        .
-
 $$ {\frac {X_{b}}{X_{b}^{0}-X_{b}}}={\frac {X_{c}}{1-X_{c}}}\exp \left[{\frac {-\Delta G-Z_{1}\omega \,{\frac {X_{b}}{X_{b}^{0}}}}{RT}}\right]. $$
 
 When 
-        ω
 
 $$ \omega \, $$
 
  is zero, this theory reduces to that of Langmuir and McLean. However, as 
-        ω
 
 $$ \omega \, $$
 
@@ -450,197 +145,62 @@ Guttman, in 1975, extended the Fowler theory to allow for interactions between t
 ### The free energy of surface segregation in binary systems
 
 The Langmuir–McLean equation for segregation, when using the regular solution model for a binary system, is valid for surface segregation (although sometimes the equation will be written replacing 
-          X
-            b
 
 $$ X_{b} $$
 
  with 
-          X
-            s
 
 $$ X_{s} $$
 
 ). The free energy of surface segregation is 
-        Δ
-          G
-            s
-        =
-
-        Δ
-          H
-            s
-        −
-
-        T
-        Δ
-
-        S
 
 $$ \Delta G_{s}=\Delta H_{s}-T\,\Delta S $$
 
 . The enthalpy is given by
 
-        −
-
-        Δ
-          H
-            s
-        =
-          γ
-            0
-            s
-        −
-          γ
-            1
-            s
-        −
-              2
-                H
-                  m
-              Z
-                X
-                  c
-              (
-
-              1
-
-              −
-                X
-                  c
-              )
-          [
-              Z
-                1
-            (
-              X
-                c
-            −
-              X
-                s
-            )
-
-            +
-              Z
-                v
-              (
-                  X
-                    c
-                −
-                    1
-
-                    2
-              )
-          ]
-        +
-              24
-
-              π
-                K
-                μ
-                  0
-                r
-                  0
-              (
-                r
-                  1
-              −
-                r
-                  0
-                )
-                  2
-              3
-                K
-              +
-
-              4
-                μ
-                  0
-
 $$ -\Delta H_{s}=\gamma _{0}^{s}-\gamma _{1}^{s}-{\frac {2H_{m}}{ZX_{c}(1-X_{c})}}\left[Z_{1}(X_{c}-X_{s})+Z_{v}\left(X_{c}-{\frac {1}{2}}\right)\right]+{\frac {24\pi \mathrm {K} \mu _{0}r_{0}(r_{1}-r_{0})^{2}}{3\mathrm {K} +4\mu _{0}}} $$
 
 where 
-          γ
-            0
 
 $$ \gamma _{0} $$
 
  and 
-          γ
-            1
 
 $$ \gamma _{1} $$
 
  are matrix surface energies without and with solute, 
-          H
-            1
 
 $$ H_{1} $$
 
  is their heat of mixing, Z and 
-          Z
-            1
 
 $$ Z_{1} $$
 
  are the coordination numbers in the matrix and at the surface, and 
-          Z
-            v
 
 $$ Z_{v} $$
 
  is the coordination number for surface atoms to the layer below. The last term in this equation is the elastic strain energy 
-          E
-            el
 
 $$ E_{\text{el}} $$
 
 , given above, and is governed by the mismatch between the solute and the matrix atoms. For solid metals, the surface energies scale with the melting points. The surface segregation enrichment ratio increases when the solute atom size is larger than the matrix atom size and when the melting point of the solute is lower than that of the matrix.
 
 A chemisorbed gaseous species on the surface can also have an effect on the surface composition of a binary alloy. In the presence of a coverage of a chemisorbed species theta, it is proposed that the Langmuir-McLean model is valid with the free energy of surface segregation given by 
-        Δ
-          G
-            chem
 
 $$ \Delta G_{\text{chem}} $$
 
 , where
 
-        Δ
-          G
-            chem
-        =
-
-        Δ
-          G
-            s
-        +
-
-        (
-          E
-            B
-        −
-          E
-            A
-        )
-
-        Θ
-
 $$ \Delta G_{\text{chem}}=\Delta G_{s}+(E_{B}-E_{A})\Theta \, $$
-
-          E
-            A
 
 $$ E_{A} $$
 
  and 
-          E
-            B
 
 $$ E_{B} $$
 
  are the chemisorption energies of the gas on solute A and matrix B and 
-        Θ
 
 $$ \Theta $$
 
@@ -649,53 +209,22 @@ $$ \Theta $$
 ## Kinetics of segregation
 
 In some situations where segregation is important, the segregant atoms do not have sufficient time to reach their equilibrium level as defined by the above adsorption theories. The kinetics of segregation become a limiting factor and must be analyzed as well. Most existing models of segregation kinetics follow the McLean approach. In the model for equilibrium monolayer segregation, the solute atoms are assumed to segregate to a grain boundary from two infinite half-crystals or to a surface from one infinite half-crystal. The diffusion in the crystals is described by Fick's laws. The ratio of the solute concentration in the grain boundary to that in the adjacent atomic layer of the bulk is given by an enrichment ratio, 
-        β
 
 $$ \beta $$
 
 . Most models assume 
-        β
 
 $$ \beta $$
 
  to be a constant, but in practice this is only true for dilute systems with low segregation levels. In this dilute limit, if 
-          X
-            b
-            0
 
 $$ X_{b}^{0} $$
 
  is one monolayer, 
-        β
 
 $$ \beta $$
 
  is given as 
-        β
-
-        =
-              X
-                b
-              X
-                c
-        =
-              exp
-
-              ⁡
-                (
-                      −
-
-                      Δ
-                        G
-
-                        ′
-                      R
-
-                      T
-                )
-              X
-                c
-                0
 
 $$ \beta ={\frac {X_{b}}{X_{c}}}={\frac {\exp \left({\frac {-\Delta G'}{RT}}\right)}{X_{c}^{0}}} $$
 
@@ -703,208 +232,51 @@ $$ \beta ={\frac {X_{b}}{X_{c}}}={\frac {\exp \left({\frac {-\Delta G'}{RT}}\rig
 
 The kinetics of segregation can be described by the following equation:
 
-                X
-                  b
-              (
-
-              t
-
-              )
-
-              −
-                X
-                  b
-              (
-
-              0
-
-              )
-                X
-                  b
-              (
-
-              ∞
-
-              )
-
-              −
-                X
-                  b
-              (
-
-              0
-
-              )
-        =
-
-        1
-
-        −
-
-        exp
-
-        ⁡
-          (
-                F
-
-                D
-
-                t
-                  β
-                    2
-                  f
-                    2
-          )
-
 $$ {\frac {X_{b}(t)-X_{b}(0)}{X_{b}(\infty )-X_{b}(0)}}=1-\exp \left({\frac {FDt}{\beta ^{2}f^{2}}}\right) $$
-
-        erfc
-
-        ⁡
-            (
-                  F
-
-                  D
-
-                  t
-                    β
-                      2
-                    f
-                      2
-            )
-            1
-              /
-            2
 
 $$ \operatorname {erfc} \left({\frac {FDt}{\beta ^{2}f^{2}}}\right)^{1/2} $$
 
 where 
-        F
-
-        =
-
-        4
 
 $$ F=4 $$
 
  for grain boundaries and 1 for the free surface, 
-          X
-            b
-        (
-
-        t
-
-        )
 
 $$ X_{b}(t) $$
 
  is the boundary content at time 
-        t
 
 $$ t $$
 
 , 
-        D
 
 $$ D $$
 
  is the solute bulk diffusivity, 
-        f
 
 $$ f $$
 
  is related to the atomic sizes of the solute and the matrix, 
-        b
 
 $$ b $$
 
  and 
-        a
 
 $$ a $$
 
 , respectively, by 
-        f
-
-        =
-          a
-            3
-          b
-            −
-
-            2
 
 $$ f=a^{3}b^{-2} $$
 
 . For short times, this equation is approximated by:
 
-                X
-                  b
-              (
-
-              t
-
-              )
-
-              −
-                X
-                  b
-              (
-
-              0
-
-              )
-                X
-                  b
-              (
-
-              ∞
-
-              )
-
-              −
-                X
-                  b
-              (
-
-              0
-
-              )
-        =
-            2
-              β
-
-              f
-                F
-
-                D
-
-                t
-              π
-        =
-            2
-
-            β
-              b
-                2
-              a
-                3
-                F
-
-                D
-
-                t
-              π
-
 $$ {\frac {X_{b}(t)-X_{b}(0)}{X_{b}(\infty )-X_{b}(0)}}={\frac {2}{\beta f}}{\sqrt {\frac {FDt}{\pi }}}={\frac {2}{\beta }}{\frac {b^{2}}{a^{3}}}{\sqrt {\frac {FDt}{\pi }}} $$
 
 In practice, 
-        β
 
 $$ \beta $$
 
  is not a constant but generally falls as segregation proceeds due to saturation. If 
-        β
 
 $$ \beta $$
 

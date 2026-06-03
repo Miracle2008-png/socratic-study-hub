@@ -3,17 +3,6 @@
 ## Reception
 
 Robert B. Griffiths, a specialist in thermodynamics and statistical mechanics at the Carnegie Mellon University, commented that both editions of this book presents clearly and concisely the core of thermodynamics within the first eight chapters. At the time of writing (1987), Griffiths knew of books that explained the principles of thermodynamics, but Callen's was the best presentation of the material. He believed Callen offered a pedagogical, if abrupt, treatment of the subject. His book begins in an abstract manner, assuming the existence and properties of entropy and derive the consequences for various processes of interest rather than through heat engines and thermodynamic cycles or by statistical mechanics and Boltzmann's entropy formula 
-        S
-
-        =
-
-        k
-
-        ln
-
-        ⁡
-
-        Ω
 
 $$ S=k\ln \Omega $$
 

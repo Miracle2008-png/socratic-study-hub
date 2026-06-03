@@ -13,148 +13,40 @@ A tensor may be represented as a (potentially multidimensional) array. Just as a
 The total number of indices (m) required to identify each component uniquely is equal to the dimension or the number of ways of an array, which is why a tensor is sometimes referred to as an m-dimensional array or an m-way array.  The total number of indices is also called the order, degree or rank of a tensor, although the term "rank" generally has another meaning in the context of matrices and tensors.
 
 Just as the components of a vector change when we change the basis of the vector space, the components of a tensor also change under such a transformation.  Each type of tensor comes equipped with a transformation law that details how the components of the tensor respond to a change of basis.  The components of a vector can respond in two distinct ways to a change of basis (see Covariance and contravariance of vectors), where the new basis vectors 
-                e
-
-                ^
-            i
 
 $$ \mathbf {\hat {e}} _{i} $$
 
  are expressed in terms of the old basis vectors 
-            e
-            j
 
 $$ \mathbf {e} _{j} $$
 
  as,
 
-                e
-
-                ^
-            i
-        =
-          ∑
-            j
-
-            =
-
-            1
-            n
-            e
-            j
-          R
-            i
-            j
-        =
-            e
-            j
-          R
-            i
-            j
-        .
-
 $$ \mathbf {\hat {e}} _{i}=\sum _{j=1}^{n}\mathbf {e} _{j}R_{i}^{j}=\mathbf {e} _{j}R_{i}^{j}. $$
 
 Here R ji are the entries of the change of basis matrix, and in the rightmost expression the summation sign was suppressed: this is the Einstein summation convention, which will be used throughout this article.  The components vi of a column vector v transform with the inverse of the matrix R,
 
-                v
-
-                ^
-            i
-        =
-            (
-              R
-                −
-
-                1
-            )
-            j
-            i
-          v
-            j
-        ,
-
 $$ {\hat {v}}^{i}=\left(R^{-1}\right)_{j}^{i}v^{j}, $$
 
 where the hat denotes the components in the new basis.  This is called a contravariant transformation law, because the vector components transform by the inverse of the change of basis.  In contrast, the components, wi, of a covector (or row vector), w, transform with the matrix R itself,
-
-                w
-
-                ^
-            i
-        =
-          w
-            j
-          R
-            i
-            j
-        .
 
 $$ {\hat {w}}_{i}=w_{j}R_{i}^{j}. $$
 
 This is called a covariant transformation law, because the covector components transform by the same matrix as the change of basis matrix.  The components of a more general tensor are transformed by some combination of covariant and contravariant transformations, with one transformation law for each index.  If the transformation matrix of an index is the inverse matrix of the basis transformation, then the index is called contravariant and is conventionally denoted with an upper index (superscript).  If the transformation matrix of an index is the basis transformation itself, then the index is called covariant and is denoted with a lower index (subscript).
 
 As a simple example, the matrix of a linear operator with respect to a basis is a rectangular array 
-        T
 
 $$ T $$
 
  that transforms under a change of basis matrix  
-        R
-
-        =
-          (
-            R
-              i
-              j
-          )
 
 $$ R=\left(R_{i}^{j}\right) $$
 
  by 
-              T
-
-              ^
-        =
-          R
-            −
-
-            1
-        T
-
-        R
 
 $$ {\hat {T}}=R^{-1}TR $$
 
 .  For the individual matrix entries, this transformation law has the form 
-                T
-
-                ^
-              j
-
-              ′
-              i
-
-              ′
-        =
-            (
-              R
-                −
-
-                1
-            )
-            i
-              i
-
-              ′
-          T
-            j
-            i
-          R
-              j
-
-              ′
-            j
 
 $$ {\hat {T}}_{j'}^{i'}=\left(R^{-1}\right)_{i}^{i'}T_{j}^{i}R_{j'}^{j} $$
 
@@ -162,296 +54,37 @@ $$ {\hat {T}}_{j'}^{i'}=\left(R^{-1}\right)_{i}^{i'}T_{j}^{i}R_{j'}^{j} $$
 
 Combinations of covariant and contravariant components with the same index allow us to express geometric invariants. For example, the fact that a vector is the same object in different coordinate systems can be captured by the following equations, using the formulas defined above:
 
-          v
-        =
-                v
-
-                ^
-            i
-                e
-
-                ^
-            i
-        =
-          (
-                (
-                  R
-                    −
-
-                    1
-                )
-                j
-                i
-                v
-                j
-          )
-          (
-                e
-                k
-              R
-                i
-                k
-          )
-        =
-          (
-                (
-                  R
-                    −
-
-                    1
-                )
-                j
-                i
-              R
-                i
-                k
-          )
-            v
-            j
-            e
-            k
-        =
-          δ
-            j
-            k
-            v
-            j
-            e
-            k
-        =
-            v
-            k
-            e
-            k
-        =
-            v
-            i
-            e
-            i
-
 $$ \mathbf {v} ={\hat {v}}^{i}\,\mathbf {\hat {e}} _{i}=\left(\left(R^{-1}\right)_{j}^{i}{v}^{j}\right)\left(\mathbf {e} _{k}R_{i}^{k}\right)=\left(\left(R^{-1}\right)_{j}^{i}R_{i}^{k}\right){v}^{j}\mathbf {e} _{k}=\delta _{j}^{k}{v}^{j}\mathbf {e} _{k}={v}^{k}\,\mathbf {e} _{k}={v}^{i}\,\mathbf {e} _{i} $$
 
 ,
 
 where 
-          δ
-            j
-            k
 
 $$ \delta _{j}^{k} $$
 
  is the Kronecker delta, which functions similarly to the identity matrix, and has the effect of renaming indices (j into k in this example). This shows several features of the component notation: the ability to re-arrange terms at will (commutativity), the need to use different indices when working with multiple objects in the same expression, the ability to rename indices, and the manner in which contravariant and covariant tensors combine so that all instances of the transformation matrix and its inverse cancel, so that expressions like 
-            v
-            i
-            e
-            i
 
 $$ {v}^{i}\,\mathbf {e} _{i} $$
 
  can immediately be seen to be geometrically identical in all coordinate systems.
 
 Similarly, a linear operator, viewed as a geometric object, does not actually depend on a basis: it is just a linear map that accepts a vector as an argument and produces another vector.  The transformation law for how the matrix of components of a linear operator changes with the basis is consistent with the transformation law for a contravariant vector, so that the action of a linear operator on a contravariant vector is represented in coordinates as the matrix product of their respective coordinate representations.  That is, the components 
-        (
-
-        T
-
-        v
-          )
-            i
 
 $$ (Tv)^{i} $$
 
  are given by  
-        (
-
-        T
-
-        v
-          )
-            i
-        =
-          T
-            j
-            i
-          v
-            j
 
 $$ (Tv)^{i}=T_{j}^{i}v^{j} $$
 
 .  These components transform contravariantly, since
 
-            (
-                    T
-
-                    v
-                  ^
-            )
-              i
-
-              ′
-        =
-                T
-
-                ^
-              j
-
-              ′
-              i
-
-              ′
-                v
-
-                ^
-              j
-
-              ′
-        =
-          [
-                (
-                  R
-                    −
-
-                    1
-                )
-                i
-                  i
-
-                  ′
-              T
-                j
-                i
-              R
-                  j
-
-                  ′
-                j
-          ]
-          [
-                (
-                  R
-                    −
-
-                    1
-                )
-                k
-                  j
-
-                  ′
-              v
-                k
-          ]
-        =
-            (
-              R
-                −
-
-                1
-            )
-            i
-              i
-
-              ′
-        (
-
-        T
-
-        v
-          )
-            i
-        .
-
 $$ \left({\widehat {Tv}}\right)^{i'}={\hat {T}}_{j'}^{i'}{\hat {v}}^{j'}=\left[\left(R^{-1}\right)_{i}^{i'}T_{j}^{i}R_{j'}^{j}\right]\left[\left(R^{-1}\right)_{k}^{j'}v^{k}\right]=\left(R^{-1}\right)_{i}^{i'}(Tv)^{i}. $$
 
 The transformation law for an order p + q tensor with p contravariant indices and q covariant indices is thus given as,
 
-                T
-
-                ^
-              j
-                1
-              ′
-            ,
-
-            …
-
-            ,
-              j
-                q
-              ′
-              i
-                1
-              ′
-            ,
-
-            …
-
-            ,
-              i
-                p
-              ′
-        =
-            (
-              R
-                −
-
-                1
-            )
-              i
-                1
-              i
-                1
-              ′
-        ⋯
-            (
-              R
-                −
-
-                1
-            )
-              i
-                p
-              i
-                p
-              ′
-
 $$ {\hat {T}}_{j'_{1},\ldots ,j'_{q}}^{i'_{1},\ldots ,i'_{p}}=\left(R^{-1}\right)_{i_{1}}^{i'_{1}}\cdots \left(R^{-1}\right)_{i_{p}}^{i'_{p}} $$
 
-          T
-              j
-                1
-            ,
-
-            …
-
-            ,
-              j
-                q
-              i
-                1
-            ,
-
-            …
-
-            ,
-              i
-                p
-
 $$ T_{j_{1},\ldots ,j_{q}}^{i_{1},\ldots ,i_{p}} $$
-
-          R
-              j
-                1
-              ′
-              j
-                1
-        ⋯
-          R
-              j
-                q
-              ′
-              j
-                q
-        .
 
 $$ R_{j'_{1}}^{j_{1}}\cdots R_{j'_{q}}^{j_{q}}. $$
 
@@ -461,294 +94,59 @@ This discussion motivates the following formal definition:
 
 Definition.  A tensor of type (p, q) is an assignment of a multidimensional array
 
-          T
-              j
-                1
-            …
-              j
-                q
-              i
-                1
-            …
-              i
-                p
-        [
-          f
-        ]
-
 $$ T_{j_{1}\dots j_{q}}^{i_{1}\dots i_{p}}[\mathbf {f} ] $$
 
 to each basis f = (e1, ..., en) of an n-dimensional vector space such that, if we apply the change of basis
-
-          f
-        ↦
-          f
-        ⋅
-
-        R
-
-        =
-          (
-                e
-                i
-              R
-                1
-                i
-            ,
-
-            …
-
-            ,
-                e
-                i
-              R
-                n
-                i
-          )
 
 $$ \mathbf {f} \mapsto \mathbf {f} \cdot R=\left(\mathbf {e} _{i}R_{1}^{i},\dots ,\mathbf {e} _{i}R_{n}^{i}\right) $$
 
 then the multidimensional array obeys the transformation law
 
-          T
-              j
-                1
-              ′
-            …
-              j
-                q
-              ′
-              i
-                1
-              ′
-            …
-              i
-                p
-              ′
-        [
-          f
-        ⋅
-
-        R
-
-        ]
-
-        =
-            (
-              R
-                −
-
-                1
-            )
-              i
-                1
-              i
-                1
-              ′
-        ⋯
-            (
-              R
-                −
-
-                1
-            )
-              i
-                p
-              i
-                p
-              ′
-
 $$ T_{j'_{1}\dots j'_{q}}^{i'_{1}\dots i'_{p}}[\mathbf {f} \cdot R]=\left(R^{-1}\right)_{i_{1}}^{i'_{1}}\cdots \left(R^{-1}\right)_{i_{p}}^{i'_{p}} $$
 
-          T
-              j
-                1
-            ,
-
-            …
-
-            ,
-              j
-                q
-              i
-                1
-            ,
-
-            …
-
-            ,
-              i
-                p
-        [
-          f
-        ]
-
 $$ T_{j_{1},\ldots ,j_{q}}^{i_{1},\ldots ,i_{p}}[\mathbf {f} ] $$
-
-          R
-              j
-                1
-              ′
-              j
-                1
-        ⋯
-          R
-              j
-                q
-              ′
-              j
-                q
-        .
 
 $$ R_{j'_{1}}^{j_{1}}\cdots R_{j'_{q}}^{j_{q}}. $$
 
 The definition of a tensor as a multidimensional array satisfying a transformation law traces back to the work of Ricci.
 
 An equivalent definition of a tensor uses the representations of the general linear group.  There is an action of the general linear group on the set of all ordered bases of an n-dimensional vector space.  If 
-          f
-        =
-
-        (
-            f
-            1
-        ,
-
-        …
-
-        ,
-            f
-            n
-        )
 
 $$ \mathbf {f} =(\mathbf {f} _{1},\dots ,\mathbf {f} _{n}) $$
 
  is an ordered basis, and 
-        R
-
-        =
-          (
-            R
-              j
-              i
-          )
 
 $$ R=\left(R_{j}^{i}\right) $$
 
  is an invertible 
-        n
-
-        ×
-
-        n
 
 $$ n\times n $$
 
  matrix, then the action is given by
 
-          f
-        R
-
-        =
-          (
-                f
-                i
-              R
-                1
-                i
-            ,
-
-            …
-
-            ,
-                f
-                i
-              R
-                n
-                i
-          )
-        .
-
 $$ \mathbf {f} R=\left(\mathbf {f} _{i}R_{1}^{i},\dots ,\mathbf {f} _{i}R_{n}^{i}\right). $$
 
 Let F be the set of all ordered bases.  Then F is a principal homogeneous space for GL(n).  Let W be a vector space and let 
-        ρ
 
 $$ \rho $$
 
  be a representation of GL(n) on W (that is, a group homomorphism 
-        ρ
-
-        :
-          GL
-        (
-
-        n
-
-        )
-
-        →
-          GL
-        (
-
-        W
-
-        )
 
 $$ \rho :{\text{GL}}(n)\to {\text{GL}}(W) $$
 
 ).  Then a tensor of type 
-        ρ
 
 $$ \rho $$
 
  is an equivariant map 
-        T
-
-        :
-
-        F
-
-        →
-
-        W
 
 $$ T:F\to W $$
 
 .  Equivariance here means that
 
-        T
-
-        (
-
-        F
-
-        R
-
-        )
-
-        =
-
-        ρ
-          (
-            R
-              −
-
-              1
-          )
-        T
-
-        (
-
-        F
-
-        )
-
-        .
-
 $$ T(FR)=\rho \left(R^{-1}\right)T(F). $$
 
 When 
-        ρ
 
 $$ \rho $$
 
@@ -758,94 +156,19 @@ $$ \rho $$
 
 A downside to the definition of a tensor using the multidimensional array approach is that it is not apparent from the definition that the defined object is indeed basis independent, as is expected from an intrinsically geometric object.  Although it is possible to show that transformation laws indeed ensure independence from the basis, sometimes a more intrinsic definition is preferred.  One approach that is common in differential geometry is to define tensors relative to a fixed (finite-dimensional) vector space V, which is usually taken to be a particular vector space of some geometrical significance like the tangent space to a manifold.  In this approach, a type (p, q) tensor T is defined as a multilinear map,
 
-        T
-
-        :
-                  V
-                    ∗
-                ×
-
-                ⋯
-
-                ×
-                  V
-                    ∗
-              ⏟
-            p
-               copies
-        ×
-                V
-
-                ×
-
-                ⋯
-
-                ×
-
-                V
-              ⏟
-            q
-               copies
-        →
-          R
-        ,
-
 $$ T:\underbrace {V^{*}\times \dots \times V^{*}} _{p{\text{ copies}}}\times \underbrace {V\times \dots \times V} _{q{\text{ copies}}}\rightarrow \mathbb {R} , $$
 
 where V∗ is the corresponding dual space of covectors, which is linear in each of its arguments. The above assumes V is a vector space over the real numbers, ⁠
-          R
 
 $$ \mathbb {R} $$
 
 ⁠. More generally, V can be taken over any field F (e.g. the complex numbers), with F replacing ⁠
-          R
 
 $$ \mathbb {R} $$
 
 ⁠ as the codomain of the multilinear maps.
 
 By applying a multilinear map T of type (p, q) to a basis {ej} for V and a canonical cobasis {εi} for V∗,
-
-          T
-              j
-                1
-            …
-              j
-                q
-              i
-                1
-            …
-              i
-                p
-        ≡
-
-        T
-          (
-                ε
-                  i
-                    1
-            ,
-
-            …
-
-            ,
-                ε
-                  i
-                    p
-            ,
-                e
-                  j
-                    1
-            ,
-
-            …
-
-            ,
-                e
-                  j
-                    q
-          )
-        ,
 
 $$ T_{j_{1}\dots j_{q}}^{i_{1}\dots i_{p}}\equiv T\left({\boldsymbol {\varepsilon }}^{i_{1}},\ldots ,{\boldsymbol {\varepsilon }}^{i_{p}},\mathbf {e} _{j_{1}},\ldots ,\mathbf {e} _{j_{q}}\right), $$
 
@@ -859,78 +182,9 @@ For some mathematical applications, a more abstract approach is sometimes useful
 
 A type (p, q) tensor is defined in this context as an element of the tensor product of vector spaces,
 
-        T
-
-        ∈
-                V
-
-                ⊗
-
-                ⋯
-
-                ⊗
-
-                V
-              ⏟
-            p
-               copies
-        ⊗
-                  V
-                    ∗
-                ⊗
-
-                ⋯
-
-                ⊗
-                  V
-                    ∗
-              ⏟
-            q
-               copies
-        .
-
 $$ T\in \underbrace {V\otimes \dots \otimes V} _{p{\text{ copies}}}\otimes \underbrace {V^{*}\otimes \dots \otimes V^{*}} _{q{\text{ copies}}}. $$
 
 A basis vi of V and basis wj of W naturally induce a basis vi ⊗ wj of the tensor product V ⊗ W.  The components of a tensor T are the coefficients of the tensor with respect to the basis obtained from a basis {ei} for V and its dual basis {εj}, i.e.
-
-        T
-
-        =
-          T
-              j
-                1
-            …
-              j
-                q
-              i
-                1
-            …
-              i
-                p
-            e
-              i
-                1
-        ⊗
-
-        ⋯
-
-        ⊗
-            e
-              i
-                p
-        ⊗
-            ε
-              j
-                1
-        ⊗
-
-        ⋯
-
-        ⊗
-            ε
-              j
-                q
-        .
 
 $$ T=T_{j_{1}\dots j_{q}}^{i_{1}\dots i_{p}}\;\mathbf {e} _{i_{1}}\otimes \cdots \otimes \mathbf {e} _{i_{p}}\otimes {\boldsymbol {\varepsilon }}^{j_{1}}\otimes \cdots \otimes {\boldsymbol {\varepsilon }}^{j_{q}}. $$
 
@@ -938,80 +192,13 @@ Using the properties of the tensor product, it can be shown that these component
 
 This 1 to 1 correspondence can be achieved in the following way, because in the finite-dimensional case there exists a canonical isomorphism between a vector space and its double dual:
 
-        U
-
-        ⊗
-
-        V
-
-        ≅
-          (
-            U
-              ∗
-
-              ∗
-          )
-        ⊗
-          (
-            V
-              ∗
-
-              ∗
-          )
-        ≅
-            (
-                U
-                  ∗
-              ⊗
-                V
-                  ∗
-            )
-            ∗
-        ≅
-          Hom
-            2
-        ⁡
-          (
-              U
-                ∗
-            ×
-              V
-                ∗
-            ;
-              F
-          )
-
 $$ U\otimes V\cong \left(U^{**}\right)\otimes \left(V^{**}\right)\cong \left(U^{*}\otimes V^{*}\right)^{*}\cong \operatorname {Hom} ^{2}\left(U^{*}\times V^{*};\mathbb {F} \right) $$
 
 The last line is using the universal property of the tensor product, that there is a 1 to 1 correspondence between maps from 
-          Hom
-            2
-        ⁡
-          (
-              U
-                ∗
-            ×
-              V
-                ∗
-            ;
-              F
-          )
 
 $$ \operatorname {Hom} ^{2}\left(U^{*}\times V^{*};\mathbb {F} \right) $$
 
  and 
-        Hom
-
-        ⁡
-          (
-              U
-                ∗
-            ⊗
-              V
-                ∗
-            ;
-              F
-          )
 
 $$ \operatorname {Hom} \left(U^{*}\otimes V^{*};\mathbb {F} \right) $$
 
@@ -1029,141 +216,15 @@ In many applications, especially in differential geometry and physics, it is nat
 
 In this context, a coordinate basis is often chosen for the tangent vector space.  The transformation law may then be expressed in terms of partial derivatives of the coordinate functions,
 
-                x
-
-                ¯
-            i
-          (
-              x
-                1
-            ,
-
-            …
-
-            ,
-              x
-                n
-          )
-        ,
-
 $$ {\bar {x}}^{i}\left(x^{1},\ldots ,x^{n}\right), $$
 
 defining a coordinate transformation,
-
-                T
-
-                ^
-              j
-                1
-              ′
-            …
-              j
-                q
-              ′
-              i
-                1
-              ′
-            …
-              i
-                p
-              ′
-          (
-                    x
-
-                    ¯
-                1
-            ,
-
-            …
-
-            ,
-                    x
-
-                    ¯
-                n
-          )
-        =
-              ∂
-                      x
-
-                      ¯
-                    i
-                      1
-                    ′
-              ∂
-                x
-                    i
-                      1
-        ⋯
-              ∂
-                      x
-
-                      ¯
-                    i
-                      p
-                    ′
-              ∂
-                x
-                    i
-                      p
-              ∂
-                x
-                    j
-                      1
-              ∂
-                      x
-
-                      ¯
-                    j
-                      1
-                    ′
-        ⋯
-              ∂
-                x
-                    j
-                      q
-              ∂
-                      x
-
-                      ¯
-                    j
-                      q
-                    ′
-          T
-              j
-                1
-            …
-              j
-                q
-              i
-                1
-            …
-              i
-                p
-          (
-              x
-                1
-            ,
-
-            …
-
-            ,
-              x
-                n
-          )
-        .
 
 $$ {\hat {T}}_{j'_{1}\dots j'_{q}}^{i'_{1}\dots i'_{p}}\left({\bar {x}}^{1},\ldots ,{\bar {x}}^{n}\right)={\frac {\partial {\bar {x}}^{i'_{1}}}{\partial x^{i_{1}}}}\cdots {\frac {\partial {\bar {x}}^{i'_{p}}}{\partial x^{i_{p}}}}{\frac {\partial x^{j_{1}}}{\partial {\bar {x}}^{j'_{1}}}}\cdots {\frac {\partial x^{j_{q}}}{\partial {\bar {x}}^{j'_{q}}}}T_{j_{1}\dots j_{q}}^{i_{1}\dots i_{p}}\left(x^{1},\ldots ,x^{n}\right). $$
 
 ## Examples
 
 An elementary example of a mapping describable as a tensor is the dot product, which maps two vectors to a scalar. A more complex example is the Cauchy stress tensor T, which takes a directional unit vector v as input and maps it to the stress vector T(v), which is the force (per unit area) exerted by material on the negative side of the plane orthogonal to v against the material on the positive side of the plane, thus expressing a relationship between these two vectors, shown in the figure (right). The cross product, where two vectors are mapped to a third one, is strictly speaking not a tensor because it changes its sign under those transformations that change the orientation of the coordinate system. The totally anti-symmetric symbol 
-          ε
-            i
-
-            j
-
-            k
 
 $$ \varepsilon _{ijk} $$
 
@@ -1176,12 +237,6 @@ Raising an index on an (n, m)-tensor produces an (n + 1, m − 1)-tensor; this c
 ## Properties
 
 Assuming a basis of a real vector space, e.g., a coordinate frame in the ambient space, a tensor can be represented as an organized multidimensional array of numerical values with respect to this specific basis. Changing the basis transforms the values in the array in a characteristic way that allows to define tensors as objects adhering to this transformational behavior. For example, there are invariants of tensors that must be preserved under any change of the basis, thereby making only certain multidimensional arrays of numbers a tensor. Compare this to the array representing 
-          ε
-            i
-
-            j
-
-            k
 
 $$ \varepsilon _{ijk} $$
 
@@ -1190,12 +245,6 @@ $$ \varepsilon _{ijk} $$
 Because the components of vectors and their duals transform differently under the change of their dual bases, there is a covariant and/or contravariant transformation law that relates the arrays, which represent the tensor with respect to one basis and that with respect to the other one. The numbers of, respectively, vectors: n (contravariant indices) and dual vectors: m (covariant indices) in the input and output of a tensor determine the type (or valence) of the tensor, a pair of natural numbers (n, m), which determine the precise form of the transformation law. The order of a tensor is the sum of these two numbers.
 
 The order (also degree or rank) of a tensor is thus the sum of the orders of its arguments plus the order of the resulting tensor. This is also the dimensionality of the array of numbers needed to represent the tensor with respect to a specific basis, or equivalently, the number of indices needed to label each component in that array.  For example, in a fixed basis, a standard linear map that maps a vector to a vector, is represented by a matrix (a 2-dimensional array), and therefore is a 2nd-order tensor.  A simple vector can be represented as a 1-dimensional array, and is therefore a 1st-order tensor.  Scalars are simple numbers and are thus 0th-order tensors. This way the tensor representing the scalar product, taking two vectors and resulting in a scalar has order 2 + 0 = 2, the same as the stress tensor, taking one vector and returning another 1 + 1 = 2. The 
-          ε
-            i
-
-            j
-
-            k
 
 $$ \varepsilon _{ijk} $$
 
@@ -1234,174 +283,9 @@ There are several operations on tensors that again produce a tensor.  The linear
 
 The tensor product takes two tensors, S and T, and produces a new tensor, S ⊗ T, whose order is the sum of the orders of the original tensors.  When described as multilinear maps, the tensor product simply multiplies the two tensors, i.e.,
 
-        (
-
-        S
-
-        ⊗
-
-        T
-
-        )
-
-        (
-          v
-            1
-        ,
-
-        …
-
-        ,
-          v
-            n
-        ,
-          v
-            n
-
-            +
-
-            1
-        ,
-
-        …
-
-        ,
-          v
-            n
-
-            +
-
-            m
-        )
-
-        =
-
-        S
-
-        (
-          v
-            1
-        ,
-
-        …
-
-        ,
-          v
-            n
-        )
-
-        T
-
-        (
-          v
-            n
-
-            +
-
-            1
-        ,
-
-        …
-
-        ,
-          v
-            n
-
-            +
-
-            m
-        )
-
-        ,
-
 $$ (S\otimes T)(v_{1},\ldots ,v_{n},v_{n+1},\ldots ,v_{n+m})=S(v_{1},\ldots ,v_{n})T(v_{n+1},\ldots ,v_{n+m}), $$
 
 which again produces a map that is linear in all its arguments.  On components, the effect is to multiply the components of the two input tensors pairwise, i.e.,
-
-        (
-
-        S
-
-        ⊗
-
-        T
-          )
-              j
-                1
-            …
-              j
-                k
-              j
-                k
-
-                +
-
-                1
-            …
-              j
-                k
-
-                +
-
-                m
-              i
-                1
-            …
-              i
-                l
-              i
-                l
-
-                +
-
-                1
-            …
-              i
-                l
-
-                +
-
-                n
-        =
-          S
-              j
-                1
-            …
-              j
-                k
-              i
-                1
-            …
-              i
-                l
-          T
-              j
-                k
-
-                +
-
-                1
-            …
-              j
-                k
-
-                +
-
-                m
-              i
-                l
-
-                +
-
-                1
-            …
-              i
-                l
-
-                +
-
-                n
-        .
 
 $$ (S\otimes T)_{j_{1}\ldots j_{k}j_{k+1}\ldots j_{k+m}}^{i_{1}\ldots i_{l}i_{l+1}\ldots i_{l+n}}=S_{j_{1}\ldots j_{k}}^{i_{1}\ldots i_{l}}T_{j_{k+1}\ldots j_{k+m}}^{i_{l+1}\ldots i_{l+n}}. $$
 
@@ -1410,16 +294,10 @@ If S is of type (l, k) and T is of type (n, m), then the tensor product S ⊗ T 
 ### Contraction
 
 Tensor contraction is an operation that reduces a type (n, m) tensor to a type (n − 1, m − 1) tensor, of which the trace is a special case. It thereby reduces the total order of a tensor by two. The operation is achieved by summing components for which one specified contravariant index is the same as one specified covariant index to produce a new component. Components for which those two indices are different are discarded. For example, a (1, 1)-tensor 
-          T
-            i
-            j
 
 $$ T_{i}^{j} $$
 
  can be contracted to a scalar through 
-          T
-            i
-            i
 
 $$ T_{i}^{i} $$
 
@@ -1428,114 +306,22 @@ $$ T_{i}^{i} $$
 The contraction is often used in conjunction with the tensor product to contract an index from each tensor.
 
 The contraction can also be understood using the definition of a tensor as an element of a tensor product of copies of the space V with the space V∗ by first decomposing the tensor into a linear combination of simple tensors, and then applying a factor from V∗ to a factor from V.  For example, a tensor 
-        T
-
-        ∈
-
-        V
-
-        ⊗
-
-        V
-
-        ⊗
-          V
-            ∗
 
 $$ T\in V\otimes V\otimes V^{*} $$
 
  can be written as a linear combination
 
-        T
-
-        =
-          v
-            1
-        ⊗
-          w
-            1
-        ⊗
-          α
-            1
-        +
-          v
-            2
-        ⊗
-          w
-            2
-        ⊗
-          α
-            2
-        +
-
-        ⋯
-
-        +
-          v
-            N
-        ⊗
-          w
-            N
-        ⊗
-          α
-            N
-        .
-
 $$ T=v_{1}\otimes w_{1}\otimes \alpha _{1}+v_{2}\otimes w_{2}\otimes \alpha _{2}+\cdots +v_{N}\otimes w_{N}\otimes \alpha _{N}. $$
 
 The contraction of T on the first and last slots is then the vector
 
-          α
-            1
-        (
-          v
-            1
-        )
-          w
-            1
-        +
-          α
-            2
-        (
-          v
-            2
-        )
-          w
-            2
-        +
-
-        ⋯
-
-        +
-          α
-            N
-        (
-          v
-            N
-        )
-          w
-            N
-        .
-
 $$ \alpha _{1}(v_{1})w_{1}+\alpha _{2}(v_{2})w_{2}+\cdots +\alpha _{N}(v_{N})w_{N}. $$
 
 In a vector space with an inner product (also known as a metric) g, the term contraction is used for removing two contravariant or two covariant indices by forming a trace with the metric tensor or its inverse.  For example, a (2, 0)-tensor 
-          T
-            i
-
-            j
 
 $$ T^{ij} $$
 
  can be contracted to a scalar through 
-          T
-            i
-
-            j
-          g
-            i
-
-            j
 
 $$ T^{ij}g_{ij} $$
 
@@ -1561,85 +347,17 @@ The notion of a tensor can be generalized in a variety of ways to infinite dimen
 
 Suppose that a homogeneous medium fills R3, so that the density of the medium is described by a single scalar value ρ in kg⋅m−3.  The mass, in kg, of a region Ω is obtained by multiplying ρ by the volume of the region Ω, or equivalently integrating the constant ρ over the region:
 
-        m
-
-        =
-          ∫
-            Ω
-        ρ
-        d
-
-        x
-        d
-
-        y
-        d
-
-        z
-
-        ,
-
 $$ m=\int _{\Omega }\rho \,dx\,dy\,dz, $$
 
 where the Cartesian coordinates x, y, z are measured in m.  If the units of length are changed into cm, then the numerical values of the coordinate functions must be rescaled by a factor of 100:
 
-          x
-
-          ′
-        =
-
-        100
-
-        x
-
-        ,
-          y
-
-          ′
-        =
-
-        100
-
-        y
-
-        ,
-          z
-
-          ′
-        =
-
-        100
-
-        z
-
-        .
-
 $$ x'=100x,\quad y'=100y,\quad z'=100z. $$
 
 The numerical value of the density ρ must then also transform by 100−3 m3/cm3 to compensate, so that the numerical value of the mass in kg is still given by integral of 
-        ρ
-        d
-
-        x
-        d
-
-        y
-        d
-
-        z
 
 $$ \rho \,dx\,dy\,dz $$
 
 .  Thus 
-          ρ
-
-          ′
-        =
-          100
-            −
-
-            3
-        ρ
 
 $$ \rho '=100^{-3}\rho $$
 
@@ -1649,139 +367,11 @@ More generally, if the Cartesian coordinates x, y, z undergo a linear transforma
 
 A tensor density transforms like a tensor under a coordinate change, except that it in addition picks up a factor of the absolute value of the determinant of the coordinate transition:
 
-          T
-              j
-                1
-              ′
-            …
-              j
-                q
-              ′
-              i
-                1
-              ′
-            …
-              i
-                p
-              ′
-        [
-          f
-        ⋅
-
-        R
-
-        ]
-
-        =
-            |
-              det
-
-              R
-            |
-            −
-
-            w
-            (
-              R
-                −
-
-                1
-            )
-              i
-                1
-              i
-                1
-              ′
-        ⋯
-            (
-              R
-                −
-
-                1
-            )
-              i
-                p
-              i
-                p
-              ′
-          T
-              j
-                1
-            ,
-
-            …
-
-            ,
-              j
-                q
-              i
-                1
-            ,
-
-            …
-
-            ,
-              i
-                p
-        [
-          f
-        ]
-          R
-              j
-                1
-              ′
-              j
-                1
-        ⋯
-          R
-              j
-                q
-              ′
-              j
-                q
-        .
-
 $$ T_{j'_{1}\dots j'_{q}}^{i'_{1}\dots i'_{p}}[\mathbf {f} \cdot R]=\left|\det R\right|^{-w}\left(R^{-1}\right)_{i_{1}}^{i'_{1}}\cdots \left(R^{-1}\right)_{i_{p}}^{i'_{p}}T_{j_{1},\ldots ,j_{q}}^{i_{1},\ldots ,i_{p}}[\mathbf {f} ]R_{j'_{1}}^{j_{1}}\cdots R_{j'_{q}}^{j_{q}}. $$
 
 Here w is called the weight.  In general, any tensor multiplied by a power of this function or its absolute value is called a tensor density, or a weighted tensor. An example of a tensor density is the current density of electromagnetism.
 
 Under an affine transformation of the coordinates, a tensor transforms by the linear part of the transformation itself (or its inverse) on each index.  These come from the rational representations of the general linear group.  But this is not quite the most general linear transformation law that such an object may have: tensor densities are non-rational, but are still semisimple representations.  A further class of transformations come from the logarithmic representation of the general linear group, a reducible but not semisimple representation, consisting of an (x, y) ∈ R2 with the transformation law
-
-        (
-
-        x
-
-        ,
-
-        y
-
-        )
-
-        ↦
-
-        (
-
-        x
-
-        +
-
-        y
-
-        log
-
-        ⁡
-          |
-            det
-
-            R
-          |
-        ,
-
-        y
-
-        )
-
-        .
 
 $$ (x,y)\mapsto (x+y\log \left|\det R\right|,y). $$
 

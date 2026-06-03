@@ -5,13 +5,6 @@ Chemical reaction network theory is an area of applied mathematics that attempts
 ## Common assumptions
 
 For physical reasons, it is usually assumed that reactant concentrations cannot be negative, and that each reaction only takes place if all its reactants are present, i.e. all have non-zero concentration. For mathematical reasons, it is usually assumed that 
-        V
-
-        (
-
-        x
-
-        )
 
 $$ V(x) $$
 
@@ -34,53 +27,38 @@ For example, the catalytic trigger is the simplest catalytic reaction without au
 This is the classical adsorption mechanism of catalytic oxidation.
 
 Here, 
-            A
-              2
-          ,
-
-          B
 
 $$ {\ce {A2, B}} $$
 
  and 
-          AB
 
 $$ {\ce {AB}} $$
 
  are gases (for example, 
-            O
-              2
 
 $$ {\ce {O2}} $$
 
 , 
-          CO
 
 $$ {\ce {CO}} $$
 
  and 
-            CO
-              2
 
 $$ {\ce {CO2}} $$
 
 ), 
-          Z
 
 $$ {\ce {Z}} $$
 
  is the "adsorption place" on the surface of the solid catalyst (for example, 
-          Pt
 
 $$ {\ce {Pt}} $$
 
 ), 
-          AZ
 
 $$ {\ce {AZ}} $$
 
  and 
-          BZ
 
 $$ {\ce {BZ}} $$
 
@@ -111,164 +89,46 @@ One of the main problems of chemical reaction network theory is the connection b
 For nonlinear systems, many connections between structure and dynamics have been discovered. First of all, these are results about stability. For some classes of networks, explicit construction of Lyapunov functions is possible without apriori assumptions about special relations between rate constants. Two results of this type are well known: the deficiency zero theorem and the theorem about systems without interactions between different components.
 
 The deficiency zero theorem gives sufficient conditions for the existence of the Lyapunov function in the classical free energy form 
-        G
-
-        (
-
-        c
-
-        )
-
-        =
-          ∑
-            i
-          c
-            i
-          (
-            ln
-
-            ⁡
-                  c
-                    i
-                  c
-                    i
-                    ∗
-            −
-
-            1
-          )
 
 $$ G(c)=\sum _{i}c_{i}\left(\ln {\frac {c_{i}}{c_{i}^{*}}}-1\right) $$
 
 , where 
-          c
-            i
 
 $$ c_{i} $$
 
  is the concentration of the i-th component. The theorem about systems without interactions between different components states that if a network consists of reactions of the form 
-          n
-            k
-          A
-            i
-        →
-          ∑
-            j
-          β
-            k
-
-            j
-          A
-            j
 
 $$ n_{k}A_{i}\to \sum _{j}\beta _{kj}A_{j} $$
 
  (for 
-        k
-
-        ≤
-
-        r
 
 $$ k\leq r $$
 
 , where r is the number of reactions, 
-          A
-            i
 
 $$ A_{i} $$
 
  is the symbol of ith component, 
-          n
-            k
-        ≥
-
-        1
 
 $$ n_{k}\geq 1 $$
 
 , and 
-          β
-            k
-
-            j
 
 $$ \beta _{kj} $$
 
  are non-negative integers) and allows the stoichiometric conservation law 
-        M
-
-        (
-
-        c
-
-        )
-
-        =
-          ∑
-            i
-          m
-            i
-          c
-            i
-        =
-          const
 
 $$ M(c)=\sum _{i}m_{i}c_{i}={\text{const}} $$
 
  (where all 
-          m
-            i
-        >
-
-        0
 
 $$ m_{i}>0 $$
 
 ), then the weighted L1 distance 
-          ∑
-            i
-          m
-            i
-          |
-          c
-            i
-            1
-        (
-
-        t
-
-        )
-
-        −
-          c
-            i
-            2
-        (
-
-        t
-
-        )
-          |
 
 $$ \sum _{i}m_{i}|c_{i}^{1}(t)-c_{i}^{2}(t)| $$
 
  between two solutions 
-          c
-            1
-        (
-
-        t
-
-        )
-            and
-          c
-            2
-        (
-
-        t
-
-        )
 
 $$ c^{1}(t)\;{\mbox{and}}\;c^{2}(t) $$
 

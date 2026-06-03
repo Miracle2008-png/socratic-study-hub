@@ -27,8 +27,6 @@ It is the Euclidean relationships which apply directly to thermometry. An ideal 
 Nowadays, there are two nearly separate concepts of temperature, the thermodynamic concept, and that of the kinetic theory of gases and other materials.
 
 The zeroth law belongs to the thermodynamic concept, but this is no longer the primary international definition of temperature. The current primary international definition of temperature is in terms of the kinetic energy of freely moving microscopic particles such as molecules, related to temperature through the Boltzmann constant 
-          k
-              B
 
 $$ k_{\mathrm {B} } $$
 

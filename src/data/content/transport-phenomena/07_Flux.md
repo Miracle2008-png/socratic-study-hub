@@ -22,267 +22,62 @@ Here are 3 definitions in increasing order of complexity. Each is a special case
 
 First, flux as a (single) scalar:
 
-        j
-
-        =
-            I
-
-            A
-        ,
-    {\displaystyle j={\frac {I}{A}},}
+{\displaystyle j={\frac {I}{A}},}
 
 where
 
-        I
-
-        =
-          lim
-            Δ
-
-            t
-
-            →
-
-            0
-              Δ
-
-              q
-              Δ
-
-              t
-        =
-                d
-              q
-                d
-              t
-        .
-    {\displaystyle I=\lim _{\Delta t\to 0}{\frac {\Delta q}{\Delta t}}={\frac {\mathrm {d} q}{\mathrm {d} t}}.}
+{\displaystyle I=\lim _{\Delta t\to 0}{\frac {\Delta q}{\Delta t}}={\frac {\mathrm {d} q}{\mathrm {d} t}}.}
 
 In this case the surface in which flux is being measured is fixed and has area A. The surface is assumed to be flat, and the flow is assumed to be everywhere constant with respect to position and perpendicular to the surface.
 
 Second, flux as a scalar field defined along a surface, i.e. a function of points on the surface:
 
-        j
+{\displaystyle j(\mathbf {p} )={\frac {\partial I}{\partial A}}(\mathbf {p} ),}
 
-        (
-          p
-        )
-
-        =
-              ∂
-
-              I
-              ∂
-
-              A
-        (
-          p
-        )
-
-        ,
-    {\displaystyle j(\mathbf {p} )={\frac {\partial I}{\partial A}}(\mathbf {p} ),}
-
-        I
-
-        (
-
-        A
-
-        ,
-          p
-        )
-
-        =
-                d
-              q
-                d
-              t
-        (
-
-        A
-
-        ,
-          p
-        )
-
-        .
-    {\displaystyle I(A,\mathbf {p} )={\frac {\mathrm {d} q}{\mathrm {d} t}}(A,\mathbf {p} ).}
+{\displaystyle I(A,\mathbf {p} )={\frac {\mathrm {d} q}{\mathrm {d} t}}(A,\mathbf {p} ).}
 
 As before, the surface is assumed to be flat, and the flow is assumed to be everywhere perpendicular to it. However the flow need not be constant. q is now a function of p, a point on the surface, and A, an area. Rather than measure the total flow through the surface, q measures the flow through the disk with area A centered at p along the surface.
 
 Finally, flux as a vector field:
 
-          j
-        (
-          p
-        )
+{\displaystyle \mathbf {j} (\mathbf {p} )={\frac {\partial \mathbf {I} }{\partial A}}(\mathbf {p} ),}
 
-        =
-              ∂
-                I
-              ∂
-
-              A
-        (
-          p
-        )
-
-        ,
-    {\displaystyle \mathbf {j} (\mathbf {p} )={\frac {\partial \mathbf {I} }{\partial A}}(\mathbf {p} ),}
-
-          I
-        (
-
-        A
-
-        ,
-          p
-        )
-
-        =
-              a
-
-              r
-
-              g
-              m
-
-              a
-
-              x
-                  n
-
-                  ^
-                n
-
-                ^
-              p
-                d
-              q
-                d
-              t
-        (
-
-        A
-
-        ,
-          p
-        ,
-              n
-
-              ^
-        )
-
-        .
-    {\displaystyle \mathbf {I} (A,\mathbf {p} )={\underset {\mathbf {\hat {n}} }{\operatorname {arg\,max} }}\;\mathbf {\hat {n}} _{\mathbf {p} }{\frac {\mathrm {d} q}{\mathrm {d} t}}(A,\mathbf {p} ,\mathbf {\hat {n}} ).}
+{\displaystyle \mathbf {I} (A,\mathbf {p} )={\underset {\mathbf {\hat {n}} }{\operatorname {arg\,max} }}\;\mathbf {\hat {n}} _{\mathbf {p} }{\frac {\mathrm {d} q}{\mathrm {d} t}}(A,\mathbf {p} ,\mathbf {\hat {n}} ).}
 
 In this case, there is no fixed surface we are measuring over. q is a function of a point, an area, and a direction (given by a unit vector 
-              n
 
-              ^
-    {\displaystyle \mathbf {\hat {n}} }
+{\displaystyle \mathbf {\hat {n}} }
 ), and measures the flow through the disk of area A perpendicular to that unit vector. I is defined picking the unit vector that maximizes the flow around the point, because the true flow is maximized across the disk that is perpendicular to it. The unit vector thus uniquely maximizes the function when it points in the "true direction" of the flow. (Strictly speaking, this is an abuse of notation because the "arg max" cannot directly compare vectors; we take the vector with the biggest norm instead.)
 
 #### Properties
 These direct definitions can be difficult to apply directly in practice. For example, the arg max construction does not correspond straightforwardly to empirical measurements, when with a weathervane or similar one can easily deduce the direction of flux at a point. Rather than defining the vector flux directly, it is often more intuitive to state some properties about it. Furthermore, from these properties the flux can uniquely be determined anyway.
 
 If the flux j passes through the area at an angle θ to the area normal 
-              n
 
-              ^
-    {\displaystyle \mathbf {\hat {n}} }
+{\displaystyle \mathbf {\hat {n}} }
 , then the dot product
 
-          j
-        ⋅
-              n
-
-              ^
-        =
-
-        j
-
-        cos
-
-        ⁡
-
-        θ
-
-        .
-    {\displaystyle \mathbf {j} \cdot \mathbf {\hat {n}} =j\cos \theta .}
+{\displaystyle \mathbf {j} \cdot \mathbf {\hat {n}} =j\cos \theta .}
 
 That is, the component of flux passing through the surface (i.e. normal to it) is j cos θ, while the component of flux passing tangential to the area is j sin θ, but there is no flux actually passing through the area in the tangential direction. The only component of flux passing normal to the area is the cosine component.
 
 For vector flux, the surface integral of j over a surface S, gives the proper flowing per unit of time through the surface:
 
-                d
-              q
-                d
-              t
-        =
-          ∬
-            S
-          j
-        ⋅
-              n
-
-              ^
-        d
-
-        A
-
-        =
-          ∬
-            S
-          j
-        ⋅
-
-        d
-          A
-        ,
-    {\displaystyle {\frac {\mathrm {d} q}{\mathrm {d} t}}=\iint _{S}\mathbf {j} \cdot \mathbf {\hat {n}} \,dA=\iint _{S}\mathbf {j} \cdot d\mathbf {A} ,}
+{\displaystyle {\frac {\mathrm {d} q}{\mathrm {d} t}}=\iint _{S}\mathbf {j} \cdot \mathbf {\hat {n}} \,dA=\iint _{S}\mathbf {j} \cdot d\mathbf {A} ,}
 
 where A (and its infinitesimal) is the vector area –  combination 
-          A
-        =
 
-        A
-              n
-
-              ^
-    {\displaystyle \mathbf {A} =A\mathbf {\hat {n}} }
+{\displaystyle \mathbf {A} =A\mathbf {\hat {n}} }
  of the magnitude of the area A through which the property passes and a unit vector 
-              n
 
-              ^
-    {\displaystyle \mathbf {\hat {n}} }
+{\displaystyle \mathbf {\hat {n}} }
  normal to the area.
 
 Unlike in the second set of equations, the surface here need not be flat.
 
 Finally, we can integrate again over the time duration t1 to t2, getting the total amount of the property flowing through the surface in that time (t2 − t1):
 
-        q
-
-        =
-          ∫
-              t
-                1
-              t
-                2
-          ∬
-            S
-          j
-        ⋅
-
-        d
-          A
-        d
-
-        t
-
-        .
-    {\displaystyle q=\int _{t_{1}}^{t_{2}}\iint _{S}\mathbf {j} \cdot d\mathbf {A} \,dt.}
+{\displaystyle q=\int _{t_{1}}^{t_{2}}\iint _{S}\mathbf {j} \cdot d\mathbf {A} \,dt.}
 
 ### Transport fluxes
 Eight of the most common forms of flux from the transport phenomena literature are defined as follows: 
@@ -308,45 +103,17 @@ These fluxes are vectors at each point in space, and have a definite magnitude a
 #### Chemical diffusion
 As mentioned above, chemical molar flux of a component A in an isothermal, isobaric system is defined in Fick's law of diffusion as:
 
-            J
-            A
-        =
-
-        −
-          D
-            A
-
-            B
-        ∇
-          c
-            A
-    {\displaystyle \mathbf {J} _{A}=-D_{AB}\nabla c_{A}}
+{\displaystyle \mathbf {J} _{A}=-D_{AB}\nabla c_{A}}
 
 where the nabla symbol ∇ denotes the gradient operator, DAB is the diffusion coefficient (m2·s−1) of component A diffusing through component B, cA is the concentration (mol/m3) of component A.
 
 This flux has units of mol·m−2·s−1, and fits Maxwell's original definition of flux.
 
 For dilute gases, kinetic molecular theory relates the diffusion coefficient D to the particle density n = N/V, the molecular mass m, the collision cross section 
-        σ
-    {\displaystyle \sigma }
+{\displaystyle \sigma }
 , and the absolute temperature T by
 
-        D
-
-        =
-            2
-              3
-
-              n
-
-              σ
-                k
-
-                T
-                π
-
-                m
-    {\displaystyle D={\frac {2}{3n\sigma }}{\sqrt {\frac {kT}{\pi m}}}}
+{\displaystyle D={\frac {2}{3n\sigma }}{\sqrt {\frac {kT}{\pi m}}}}
 
 where the second factor is the mean free path and the square root (with the Boltzmann constant k) is the mean velocity of the particles.
 
@@ -356,63 +123,15 @@ In turbulent flows, the transport by eddy motion can be expressed as a grossly i
 
 In quantum mechanics, particles of mass m in the quantum state ψ(r, t) have a probability density defined as
 
-        ρ
-
-        =
-          ψ
-            ∗
-        ψ
-
-        =
-          |
-        ψ
-            |
-            2
-        .
-    {\displaystyle \rho =\psi ^{*}\psi =|\psi |^{2}.}
+{\displaystyle \rho =\psi ^{*}\psi =|\psi |^{2}.}
 
 So the probability of finding a particle in a differential volume element d3r is
 
-        d
-
-        P
-
-        =
-          |
-        ψ
-            |
-            2
-          d
-            3
-          r
-        .
-    {\displaystyle dP=|\psi |^{2}\,d^{3}\mathbf {r} .}
+{\displaystyle dP=|\psi |^{2}\,d^{3}\mathbf {r} .}
 
 Then the number of particles passing perpendicularly through unit area of a cross-section per unit time is the probability flux;
 
-          J
-        =
-              i
-
-              ℏ
-              2
-
-              m
-          (
-            ψ
-
-            ∇
-              ψ
-                ∗
-            −
-              ψ
-                ∗
-            ∇
-
-            ψ
-          )
-        .
-    {\displaystyle \mathbf {J} ={\frac {i\hbar }{2m}}\left(\psi \nabla \psi ^{*}-\psi ^{*}\nabla \psi \right).}
+{\displaystyle \mathbf {J} ={\frac {i\hbar }{2m}}\left(\psi \nabla \psi ^{*}-\psi ^{*}\nabla \psi \right).}
 
 This is sometimes referred to as the probability current or current density, or probability flux density.
 
@@ -422,28 +141,9 @@ This is sometimes referred to as the probability current or current density, or 
 
 As a mathematical concept, flux is represented by the surface integral of a vector field,
 
-          Φ
-            F
-        =
-          ∬
-            A
-          F
-        ⋅
-          d
-          A
-    {\displaystyle \Phi _{F}=\iint _{A}\mathbf {F} \cdot \mathrm {d} \mathbf {A} }
+{\displaystyle \Phi _{F}=\iint _{A}\mathbf {F} \cdot \mathrm {d} \mathbf {A} }
 
-          Φ
-            F
-        =
-          ∬
-            A
-          F
-        ⋅
-          n
-          d
-        A
-    {\displaystyle \Phi _{F}=\iint _{A}\mathbf {F} \cdot \mathbf {n} \,\mathrm {d} A}
+{\displaystyle \Phi _{F}=\iint _{A}\mathbf {F} \cdot \mathbf {n} \,\mathrm {d} A}
 
 where F is a vector field, and dA is the vector area of the surface A, directed as the surface normal. For the second, n is the outward pointed unit normal vector to the surface.
 
@@ -472,46 +172,20 @@ An electric "charge", such as a single proton in space, has a magnitude defined 
 
 Two forms of electric flux are used, one for the E-field:
 
-          Φ
-            E
-        =
-    {\displaystyle \Phi _{E}=}
-            A
-    {\displaystyle {\scriptstyle A}}
-          E
-        ⋅
-            d
-          A
-    {\displaystyle \mathbf {E} \cdot {\rm {d}}\mathbf {A} }
+{\displaystyle \Phi _{E}=}
+{\displaystyle {\scriptstyle A}}
+{\displaystyle \mathbf {E} \cdot {\rm {d}}\mathbf {A} }
 
 and one for the D-field (called the electric displacement):
 
-          Φ
-            D
-        =
-    {\displaystyle \Phi _{D}=}
-            A
-    {\displaystyle {\scriptstyle A}}
-          D
-        ⋅
-            d
-          A
-    {\displaystyle \mathbf {D} \cdot {\rm {d}}\mathbf {A} }
+{\displaystyle \Phi _{D}=}
+{\displaystyle {\scriptstyle A}}
+{\displaystyle \mathbf {D} \cdot {\rm {d}}\mathbf {A} }
 
 This quantity arises in Gauss's law – which states that the flux of the electric field E out of a closed surface is proportional to the electric charge QA enclosed in the surface (independent of how that charge is distributed), the integral form is:
 
-            A
-    {\displaystyle {\scriptstyle A}}
-          E
-        ⋅
-            d
-          A
-        =
-              Q
-                A
-              ε
-                0
-    {\displaystyle \mathbf {E} \cdot {\rm {d}}\mathbf {A} ={\frac {Q_{A}}{\varepsilon _{0}}}}
+{\displaystyle {\scriptstyle A}}
+{\displaystyle \mathbf {E} \cdot {\rm {d}}\mathbf {A} ={\frac {Q_{A}}{\varepsilon _{0}}}}
 
 where ε0 is the permittivity of free space.
 
@@ -522,47 +196,18 @@ In free space the electric displacement is given by the constitutive relation D 
 #### Magnetic flux
 The magnetic flux density (magnetic field) having the unit Wb/m2 (tesla) is denoted by B, and magnetic flux is defined analogously:
 
-          Φ
-            B
-        =
-          ∬
-            A
-          B
-        ⋅
-          d
-          A
-    {\displaystyle \Phi _{B}=\iint _{A}\mathbf {B} \cdot \mathrm {d} \mathbf {A} }
+{\displaystyle \Phi _{B}=\iint _{A}\mathbf {B} \cdot \mathrm {d} \mathbf {A} }
 
 with the same notation above.  The quantity arises in Faraday's law of induction, where the magnetic flux is time-dependent either because the boundary is time-dependent or magnetic field is time-dependent. In integral form:
 
-        −
-                  d
-                Φ
-                  B
-                  d
-              t
-        =
-          ∮
-            ∂
-
-            A
-          E
-        ⋅
-
-        d
-          ℓ
-    {\displaystyle -{\frac {{\rm {d}}\Phi _{B}}{{\rm {d}}t}}=\oint _{\partial A}\mathbf {E} \cdot d{\boldsymbol {\ell }}}
+{\displaystyle -{\frac {{\rm {d}}\Phi _{B}}{{\rm {d}}t}}=\oint _{\partial A}\mathbf {E} \cdot d{\boldsymbol {\ell }}}
 
 where dℓ is an infinitesimal vector line element of the closed curve 
-        ∂
 
-        A
-    {\displaystyle \partial A}
+{\displaystyle \partial A}
 , with magnitude equal to the length of the infinitesimal line element, and direction given by the tangent to the curve 
-        ∂
 
-        A
-    {\displaystyle \partial A}
+{\displaystyle \partial A}
 , with the sign determined by the integration direction.
 
 The time-rate of change of the magnetic flux through a loop of wire is minus the electromotive force created in that wire. The direction is such that if current is allowed to pass through the wire, the electromotive force will cause a current which "opposes" the change in magnetic field by itself producing a magnetic field opposite to the change.  This is the basis for inductors and many electric generators.
@@ -570,17 +215,9 @@ The time-rate of change of the magnetic flux through a loop of wire is minus the
 #### Poynting flux
 Using this definition, the flux of the Poynting vector S over a specified surface is the rate at which electromagnetic energy flows through that surface, defined like before:
 
-          Φ
-            S
-        =
-    {\displaystyle \Phi _{S}=}
-            A
-    {\displaystyle {\scriptstyle A}}
-          S
-        ⋅
-            d
-          A
-    {\displaystyle \mathbf {S} \cdot {\rm {d}}\mathbf {A} }
+{\displaystyle \Phi _{S}=}
+{\displaystyle {\scriptstyle A}}
+{\displaystyle \mathbf {S} \cdot {\rm {d}}\mathbf {A} }
 
 The flux of the Poynting vector through a surface is the electromagnetic power, or energy per unit time, passing through that surface. This is commonly used in analysis of electromagnetic radiation, but has application to other electromagnetic systems as well.
 

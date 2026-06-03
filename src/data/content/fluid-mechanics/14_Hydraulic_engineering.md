@@ -10,16 +10,6 @@ A few examples of the fundamental principles of hydraulic engineering include fl
 
 Fundamentals of Hydraulic Engineering defines hydrostatics as the study of fluids at rest. In a fluid at rest, there exists a force, known as pressure, that acts upon the fluid's surroundings. This pressure, measured in N/m2, is not constant throughout the body of fluid. Pressure, p, in a given body of fluid, increases with an increase in depth. Where the upward force on a body acts on the base and can be found by the equation:
 
-        p
-
-        =
-
-        ρ
-
-        g
-
-        y
-
 $$ p=\rho gy $$
 
 where, 
@@ -31,13 +21,6 @@ g = specific gravity
 y = depth of the body of liquid
 
 Rearranging this equation gives you the pressure head 
-            p
-              ρ
-
-              g
-        =
-
-        y
 
 $$ {\frac {p}{\rho g}}=y $$
 
@@ -64,43 +47,6 @@ The various effects of disturbance on a viscous flow are a stable, transition an
 #### Bernoulli's equation
 
 For an ideal fluid, Bernoulli's equation holds along streamlines.
-
-            p
-              ρ
-
-              g
-        +
-              u
-                2
-              2
-
-              g
-        =
-              p
-                1
-              ρ
-
-              g
-        +
-              u
-                1
-                2
-              2
-
-              g
-        =
-              p
-                2
-              ρ
-
-              g
-        +
-              u
-                2
-                2
-              2
-
-              g
 
 $$ {\frac {p}{\rho g}}+{\frac {u^{2}}{2g}}={\frac {p_{1}}{\rho g}}+{\frac {u_{1}^{2}}{2g}}={\frac {p_{2}}{\rho g}}+{\frac {u_{2}^{2}}{2g}} $$
 

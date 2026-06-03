@@ -58,19 +58,6 @@ Resistive heating can be used to efficiently anneal copper wire; the heating sys
 
 The process consists of two conductive pulleys (step pulleys), which the wire passes across after it is drawn. The two pulleys have an electrical potential across them, which causes the wire to form a short circuit. The Joule effect causes the temperature of the wire to rise to approximately 400 °C. This temperature is affected by the rotational speed of the pulleys, the ambient temperature, and the voltage applied. Where t is the temperature of the wire, K is a constant, V is the voltage applied, r is the number of rotations of the pulleys per minute, and ta is the ambient temperature,
 
-        t
-
-        =
-            1
-
-            r
-        K
-          V
-            2
-        +
-          t
-            a
-
 $$ t={\frac {1}{r}}KV^{2}+t_{a} $$
 
 The constant K depends on the diameter of the pulleys and the resistivity of the copper.

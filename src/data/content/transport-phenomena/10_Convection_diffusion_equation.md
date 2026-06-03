@@ -6,32 +6,7 @@ The convection–diffusion equation is a parabolic partial differential equation
 
 The general equation in conservative form is
 
-              ∂
-
-              c
-              ∂
-
-              t
-        =
-
-        ∇
-
-        ⋅
-          (
-            D
-
-            ∇
-
-            c
-
-            −
-              v
-            c
-          )
-        +
-
-        R
-    {\displaystyle {\frac {\partial c}{\partial t}}=\nabla \cdot \left(D\nabla c-\mathbf {v} c\right)+R}
+{\displaystyle {\frac {\partial c}{\partial t}}=\nabla \cdot \left(D\nabla c-\mathbf {v} c\right)+R}
 
 where
 
@@ -52,577 +27,89 @@ Often there are several quantities, each with its own convection–diffusion equ
 ### Derivation
 The convection–diffusion equation can be derived in a straightforward way from the continuity equation, which states that the rate of change for a scalar quantity in a differential control volume is given by flow and diffusion into and out of that part of the system along with any generation or consumption inside the control volume:
 
-              ∂
-
-              c
-              ∂
-
-              t
-        +
-
-        ∇
-
-        ⋅
-          j
-        =
-
-        R
-
-        ,
-    {\displaystyle {\frac {\partial c}{\partial t}}+\nabla \cdot \mathbf {j} =R,}
+{\displaystyle {\frac {\partial c}{\partial t}}+\nabla \cdot \mathbf {j} =R,}
 
 where j is the total flux and R is a net volumetric source for c. There are two sources of flux in this situation. First, diffusive flux arises due to diffusion. This is typically approximated by Fick's first law:
 
-            j
-            diff
-        =
-
-        −
-
-        D
-
-        ∇
-
-        c
-    {\displaystyle \mathbf {j} _{\text{diff}}=-D\nabla c}
+{\displaystyle \mathbf {j} _{\text{diff}}=-D\nabla c}
 
 i.e., the flux of the diffusing material (relative to the bulk motion) in any part of the system is proportional to the local concentration gradient. Second, when there is overall convection or flow, there is an associated flux called advective flux:
 
-            j
-            adv
-        =
-          v
-        c
-    {\displaystyle \mathbf {j} _{\text{adv}}=\mathbf {v} c}
+{\displaystyle \mathbf {j} _{\text{adv}}=\mathbf {v} c}
 
 The total flux (in a stationary coordinate system) is given by the sum of these two:
 
-          j
-        =
-            j
-            diff
-        +
-            j
-            adv
-        =
-
-        −
-
-        D
-
-        ∇
-
-        c
-
-        +
-          v
-        c
-
-        .
-    {\displaystyle \mathbf {j} =\mathbf {j} _{\text{diff}}+\mathbf {j} _{\text{adv}}=-D\nabla c+\mathbf {v} c.}
+{\displaystyle \mathbf {j} =\mathbf {j} _{\text{diff}}+\mathbf {j} _{\text{adv}}=-D\nabla c+\mathbf {v} c.}
 
 Plugging into the continuity equation:
 
-              ∂
-
-              c
-              ∂
-
-              t
-        +
-
-        ∇
-
-        ⋅
-          (
-            −
-
-            D
-
-            ∇
-
-            c
-
-            +
-              v
-            c
-          )
-        =
-
-        R
-
-        .
-    {\displaystyle {\frac {\partial c}{\partial t}}+\nabla \cdot \left(-D\nabla c+\mathbf {v} c\right)=R.}
+{\displaystyle {\frac {\partial c}{\partial t}}+\nabla \cdot \left(-D\nabla c+\mathbf {v} c\right)=R.}
 
 ### Common simplifications
 In a common situation, the diffusion coefficient is constant, there are no sources or sinks, and the velocity field describes an incompressible flow (i.e., it has zero divergence). Then the formula simplifies to:
 
-              ∂
-
-              c
-              ∂
-
-              t
-        =
-
-        D
-          ∇
-            2
-        c
-
-        −
-          v
-        ⋅
-
-        ∇
-
-        c
-
-        .
-    {\displaystyle {\frac {\partial c}{\partial t}}=D\nabla ^{2}c-\mathbf {v} \cdot \nabla c.}
+{\displaystyle {\frac {\partial c}{\partial t}}=D\nabla ^{2}c-\mathbf {v} \cdot \nabla c.}
 
 In this case the equation can be put in the simple diffusion form:
 
-              d
-
-              c
-              d
-
-              t
-        =
-
-        D
-          ∇
-            2
-        c
-
-        ,
-    {\displaystyle {\frac {dc}{dt}}=D\nabla ^{2}c,}
+{\displaystyle {\frac {dc}{dt}}=D\nabla ^{2}c,}
 
 where the derivative of the left hand side is the material derivative of the variable c.
 
 In non-interacting material, D=0 (for example, when temperature is close to absolute zero, dilute gas has almost zero mass diffusivity), hence the transport equation is simply the continuity equation:
 
-              ∂
-
-              c
-              ∂
-
-              t
-        +
-          v
-        ⋅
-
-        ∇
-
-        c
-
-        =
-
         0.
-    {\displaystyle {\frac {\partial c}{\partial t}}+\mathbf {v} \cdot \nabla c=0.}
+{\displaystyle {\frac {\partial c}{\partial t}}+\mathbf {v} \cdot \nabla c=0.}
 
 Using Fourier transform in both temporal and spatial domain (that is, with integral kernel 
-          e
-            i
 
-            ω
-
-            t
-
-            +
-
-            i
-              k
-            ⋅
-              x
-    {\displaystyle e^{i\omega t+i\mathbf {k} \cdot \mathbf {x} }}
+{\displaystyle e^{i\omega t+i\mathbf {k} \cdot \mathbf {x} }}
 ), its characteristic equation can be obtained:
 
-        i
-
-        ω
-              c
-
-              ~
-        +
-          v
-        ⋅
-
-        i
-          k
-              c
-
-              ~
-        =
-
-        0
-
-        →
-
-        ω
-
-        =
-
-        −
-          k
-        ⋅
-          v
-        ,
-    {\displaystyle i\omega {\tilde {c}}+\mathbf {v} \cdot i\mathbf {k} {\tilde {c}}=0\rightarrow \omega =-\mathbf {k} \cdot \mathbf {v} ,}
+{\displaystyle i\omega {\tilde {c}}+\mathbf {v} \cdot i\mathbf {k} {\tilde {c}}=0\rightarrow \omega =-\mathbf {k} \cdot \mathbf {v} ,}
 
 which gives the general solution:
 
-        c
-
-        =
-
-        f
-
-        (
-          x
-        −
-          v
-        t
-
-        )
-
-        ,
-    {\displaystyle c=f(\mathbf {x} -\mathbf {v} t),}
+{\displaystyle c=f(\mathbf {x} -\mathbf {v} t),}
 
 where 
-        f
-    {\displaystyle f}
  is any differentiable scalar function. This is the basis of temperature measurement for near Bose–Einstein condensate via time of flight method.
 
 ### Stationary version
 The stationary convection–diffusion equation describes the steady-state behavior of a convection–diffusion system. In a steady state, ⁠∂c/∂t⁠ = 0, so the equation to solve becomes the second order equation:
 
-        ∇
-
-        ⋅
-
-        (
-
-        −
-
-        D
-
-        ∇
-
-        c
-
-        +
-          v
-        c
-
-        )
-
-        =
-
-        R
-
-        .
-    {\displaystyle \nabla \cdot (-D\nabla c+\mathbf {v} c)=R.}
+{\displaystyle \nabla \cdot (-D\nabla c+\mathbf {v} c)=R.}
 
 In one spatial dimension, the equation can be written as
 
-            d
-              d
-
-              x
-          (
-            −
-
-            D
-
-            (
-
-            x
-
-            )
-                  d
-
-                  c
-
-                  (
-
-                  x
-
-                  )
-                  d
-
-                  x
-            +
-
-            v
-
-            (
-
-            x
-
-            )
-
-            c
-
-            (
-
-            x
-
-            )
-          )
-        =
-
-        R
-
-        (
-
-        x
-
-        )
-    {\displaystyle {\frac {d}{dx}}\left(-D(x){\frac {dc(x)}{dx}}+v(x)c(x)\right)=R(x)}
+{\displaystyle {\frac {d}{dx}}\left(-D(x){\frac {dc(x)}{dx}}+v(x)c(x)\right)=R(x)}
 
 Which can be integrated one time in the space variable x to give:
 
-        D
-
-        (
-
-        x
-
-        )
-              d
-
-              c
-
-              (
-
-              x
-
-              )
-              d
-
-              x
-        −
-
-        v
-
-        (
-
-        x
-
-        )
-
-        c
-
-        (
-
-        x
-
-        )
-
-        =
-
-        −
-          ∫
-            x
-        R
-
-        (
-          x
-
-          ′
-        )
-
-        d
-          x
-
-          ′
-    {\displaystyle D(x){\frac {dc(x)}{dx}}-v(x)c(x)=-\int _{x}R(x')dx'}
+{\displaystyle D(x){\frac {dc(x)}{dx}}-v(x)c(x)=-\int _{x}R(x')dx'}
 
 Where D is not zero, this is an inhomogeneous first-order linear differential equation with variable coefficients in the variable c(x):
 
-          y
-
-          ′
-        (
-
-        x
-
-        )
-
-        =
-
-        f
-
-        (
-
-        x
-
-        )
-
-        y
-
-        (
-
-        x
-
-        )
-
-        +
-
-        g
-
-        (
-
-        x
-
-        )
-
-        .
-    {\displaystyle y'(x)=f(x)y(x)+g(x).}
+{\displaystyle y'(x)=f(x)y(x)+g(x).}
 
 where the coefficients are:
 
-        f
-
-        (
-
-        x
-
-        )
-
-        =
-              v
-
-              (
-
-              x
-
-              )
-              D
-
-              (
-
-              x
-
-              )
-    {\displaystyle f(x)={\frac {v(x)}{D(x)}}}
+{\displaystyle f(x)={\frac {v(x)}{D(x)}}}
 
 and:
 
-        g
-
-        (
-
-        x
-
-        )
-
-        =
-
-        −
-            1
-              D
-
-              (
-
-              x
-
-              )
-          ∫
-            x
-        R
-
-        (
-          x
-
-          ′
-        )
-        d
-          x
-
-          ′
-    {\displaystyle g(x)=-{\frac {1}{D(x)}}\int _{x}R(x')\,dx'}
+{\displaystyle g(x)=-{\frac {1}{D(x)}}\int _{x}R(x')\,dx'}
 
 On the other hand, in the positions x where D=0, the first-order diffusion term disappears and the solution becomes simply the ratio:
 
-        c
-
-        (
-
-        x
-
-        )
-
-        =
-            1
-              v
-
-              (
-
-              x
-
-              )
-          ∫
-            x
-        R
-
-        (
-          x
-
-          ′
-        )
-        d
-          x
-
-          ′
-    {\displaystyle c(x)={\frac {1}{v(x)}}\int _{x}R(x')\,dx'}
+{\displaystyle c(x)={\frac {1}{v(x)}}\int _{x}R(x')\,dx'}
 
 ## Velocity in response to a force
 In some cases, the average velocity field v exists because of a force; for example, the equation might describe the flow of ions dissolved in a liquid, with an electric field pulling the ions in some direction (as in gel electrophoresis). In this situation, it is usually called the drift–diffusion equation or the Smoluchowski equation, after Marian Smoluchowski who described it in 1915 (not to be confused with the Einstein–Smoluchowski relation or Smoluchowski coagulation equation).
 
 Typically, the average velocity is directly proportional to the applied force, giving the equation:
 
-              ∂
-
-              c
-              ∂
-
-              t
-        =
-
-        ∇
-
-        ⋅
-
-        (
-
-        D
-
-        ∇
-
-        c
-
-        )
-
-        −
-
-        ∇
-
-        ⋅
-          (
-              ζ
-                −
-
-                1
-              F
-            c
-          )
-        +
-
-        R
-    {\displaystyle {\frac {\partial c}{\partial t}}=\nabla \cdot (D\nabla c)-\nabla \cdot \left(\zeta ^{-1}\mathbf {F} c\right)+R}
+{\displaystyle {\frac {\partial c}{\partial t}}=\nabla \cdot (D\nabla c)-\nabla \cdot \left(\zeta ^{-1}\mathbf {F} c\right)+R}
 
 where F is the force, and ζ characterizes the friction or viscous drag. (The inverse ζ−1 is called mobility.)
 
@@ -630,40 +117,11 @@ where F is the force, and ζ characterizes the friction or viscous drag. (The in
 
 When the force is associated with a potential energy F = −∇U (see conservative force), a steady-state solution to the above equation (i.e. 0 = R = ⁠∂c/∂t⁠) is:
 
-        c
-
-        ∝
-
-        exp
-
-        ⁡
-          (
-            −
-              D
-                −
-
-                1
-              ζ
-                −
-
-                1
-            U
-          )
-    {\displaystyle c\propto \exp \left(-D^{-1}\zeta ^{-1}U\right)}
+{\displaystyle c\propto \exp \left(-D^{-1}\zeta ^{-1}U\right)}
 
 (assuming D and ζ are constant). In other words, there are more particles where the energy is lower. This concentration profile is expected to agree with the Boltzmann distribution (more precisely, the Gibbs measure). From this assumption, the Einstein relation can be proven:
 
-        D
-
-        ζ
-
-        =
-          k
-              B
-        T
-
-        .
-    {\displaystyle D\zeta =k_{\mathrm {B} }T.}
+{\displaystyle D\zeta =k_{\mathrm {B} }T.}
 
 ## Similar equations in other contexts
 The convection–diffusion equation is a relatively simple equation describing flows, or alternatively, describing a stochastically-changing system. Therefore, the same or similar equation arises in many contexts unrelated to flows through space.
@@ -673,35 +131,8 @@ It is formally identical to the Fokker–Planck equation for the distribution of
 It is closely related to the Black–Scholes equation and other equations in financial mathematics.
 
 It is closely related to the Navier–Stokes equations, because the flow of momentum in a fluid is mathematically similar to the flow of mass or energy. The correspondence is clearest in the case of an incompressible Newtonian fluid, in which case the Navier–Stokes equation is: 
-              ∂
-                j
-              ∂
 
-              t
-        =
-
-        μ
-          ∇
-            2
-          j
-        −
-          u
-        ⋅
-
-        ∇
-          j
-        +
-
-        (
-          f
-        −
-
-        ∇
-
-        P
-
-        )
-    {\displaystyle {\frac {\partial \mathbf {j} }{\partial t}}=\mu \nabla ^{2}\mathbf {j} -\mathbf {u} \cdot \nabla \mathbf {j} +(\mathbf {f} -\nabla P)}
+{\displaystyle {\frac {\partial \mathbf {j} }{\partial t}}=\mu \nabla ^{2}\mathbf {j} -\mathbf {u} \cdot \nabla \mathbf {j} +(\mathbf {f} -\nabla P)}
 
 where j is the momentum of the fluid (per unit volume) at each point (equal to the density ρ multiplied by the flow velocity u), μ is viscosity, P is fluid pressure, and f is any other body force such as gravity. In this equation, the term on the left-hand side describes the change in momentum at a given point; the first term on the right describes the diffusion of momentum by viscosity; the second term on the right describes the advective flow of momentum; and the last two terms on the right describes the external and internal forces which can act as sources or sinks of momentum.
 
@@ -714,85 +145,7 @@ The Langevin equation describes advection, diffusion, and other phenomena in an 
 
 In semiconductor physics, this equation is called the drift–diffusion equation. The word "drift" is related to drift current and drift velocity. The equation is normally written:
 
-                        J
-                        n
-                      −
-
-                      q
-                =
-
-                −
-                  D
-                    n
-                ∇
-
-                n
-
-                −
-
-                n
-                  μ
-                    n
-                  E
-                        J
-                        p
-                    q
-                =
-
-                −
-                  D
-                    p
-                ∇
-
-                p
-
-                +
-
-                p
-                  μ
-                    p
-                  E
-                      ∂
-
-                      n
-                      ∂
-
-                      t
-                =
-
-                −
-
-                ∇
-
-                ⋅
-                        J
-                        n
-                      −
-
-                      q
-                +
-
-                R
-                      ∂
-
-                      p
-                      ∂
-
-                      t
-                =
-
-                −
-
-                ∇
-
-                ⋅
-                        J
-                        p
-                    q
-                +
-
-                R
-    {\displaystyle {\begin{aligned}{\frac {\mathbf {J} _{n}}{-q}}&=-D_{n}\nabla n-n\mu _{n}\mathbf {E} \\{\frac {\mathbf {J} _{p}}{q}}&=-D_{p}\nabla p+p\mu _{p}\mathbf {E} \\{\frac {\partial n}{\partial t}}&=-\nabla \cdot {\frac {\mathbf {J} _{n}}{-q}}+R\\{\frac {\partial p}{\partial t}}&=-\nabla \cdot {\frac {\mathbf {J} _{p}}{q}}+R\end{aligned}}}
+{\displaystyle {\begin{aligned}{\frac {\mathbf {J} _{n}}{-q}}&=-D_{n}\nabla n-n\mu _{n}\mathbf {E} \\{\frac {\mathbf {J} _{p}}{q}}&=-D_{p}\nabla p+p\mu _{p}\mathbf {E} \\{\frac {\partial n}{\partial t}}&=-\nabla \cdot {\frac {\mathbf {J} _{n}}{-q}}+R\\{\frac {\partial p}{\partial t}}&=-\nabla \cdot {\frac {\mathbf {J} _{p}}{q}}+R\end{aligned}}}
 
 where
 
@@ -808,106 +161,18 @@ R represents carrier generation and recombination (R > 0 for generation of elect
 
 E is the electric field vector
 
-          μ
-            n
-    {\displaystyle \mu _{n}}
+{\displaystyle \mu _{n}}
  and 
-          μ
-            p
-    {\displaystyle \mu _{p}}
+{\displaystyle \mu _{p}}
  are electron and hole mobility.
 
 The diffusion coefficient and mobility are related by the Einstein relation as above:
 
-                  D
-                    n
-                =
-                        μ
-                          n
-                        k
-                            B
-                      T
-                    q
-                ,
-                  D
-                    p
-                =
-                        μ
-                          p
-                        k
-                            B
-                      T
-                    q
-                ,
-    {\displaystyle {\begin{aligned}D_{n}&={\frac {\mu _{n}k_{\mathrm {B} }T}{q}},\\D_{p}&={\frac {\mu _{p}k_{\mathrm {B} }T}{q}},\end{aligned}}}
+{\displaystyle {\begin{aligned}D_{n}&={\frac {\mu _{n}k_{\mathrm {B} }T}{q}},\\D_{p}&={\frac {\mu _{p}k_{\mathrm {B} }T}{q}},\end{aligned}}}
 
 where kB is the Boltzmann constant and T is absolute temperature. The drift current and diffusion current refer separately to the two terms in the expressions for J, namely:
 
-                        J
-                        n
-
-                        ,
-                          drift
-                      −
-
-                      q
-                =
-
-                −
-
-                n
-                  μ
-                    n
-                  E
-                ,
-                        J
-                        p
-
-                        ,
-                          drift
-                    q
-                =
-
-                p
-                  μ
-                    p
-                  E
-                ,
-                        J
-                        n
-
-                        ,
-                          diff
-                      −
-
-                      q
-                =
-
-                −
-                  D
-                    n
-                ∇
-
-                n
-
-                ,
-                        J
-                        p
-
-                        ,
-                          diff
-                    q
-                =
-
-                −
-                  D
-                    p
-                ∇
-
-                p
-
-                .
-    {\displaystyle {\begin{aligned}{\frac {\mathbf {J} _{n,{\text{drift}}}}{-q}}&=-n\mu _{n}\mathbf {E} ,\\{\frac {\mathbf {J} _{p,{\text{drift}}}}{q}}&=p\mu _{p}\mathbf {E} ,\\{\frac {\mathbf {J} _{n,{\text{diff}}}}{-q}}&=-D_{n}\nabla n,\\{\frac {\mathbf {J} _{p,{\text{diff}}}}{q}}&=-D_{p}\nabla p.\end{aligned}}}
+{\displaystyle {\begin{aligned}{\frac {\mathbf {J} _{n,{\text{drift}}}}{-q}}&=-n\mu _{n}\mathbf {E} ,\\{\frac {\mathbf {J} _{p,{\text{drift}}}}{q}}&=p\mu _{p}\mathbf {E} ,\\{\frac {\mathbf {J} _{n,{\text{diff}}}}{-q}}&=-D_{n}\nabla n,\\{\frac {\mathbf {J} _{p,{\text{diff}}}}{q}}&=-D_{p}\nabla p.\end{aligned}}}
 
 This equation can be solved together with Poisson's equation numerically.
 

@@ -141,9 +141,7 @@ HILIC can be used for separation of many types of analytes, but is commonly used
 
 ### Hydrodynamic chromatography
 Hydrodynamic chromatography (HDC) is derived from the observed phenomenon that large droplets move faster than small ones. In a column, this happens because the center of mass of larger droplets is prevented from being as close to the sides of the column as smaller droplets because of their larger overall size. Larger droplets will elute first from the middle of the column while smaller droplets stick to the sides of the column and elute last. This form of chromatography is useful for separating analytes by molar mass (or molecular mass), size, shape, and structure when used in conjunction with light scattering detectors, viscometers, and refractometers. The two main types of HDC are open tube and packed column. Open tube offers rapid separation times for small particles, whereas packed column HDC can increase resolution and is better suited for particles with an average molecular mass larger than 
-          10
-            5
-    {\displaystyle 10^{5}}
+{\displaystyle 10^{5}}
  daltons. HDC differs from other types of chromatography because the separation only takes place in the interstitial volume, which is the volume surrounding and in between particles in a packed column.
 
 HDC shares the same order of elution as Size Exclusion Chromatography (SEC) but the two processes still vary in many ways. In a study comparing the two types of separation, Isenberg, Brewer, Côté, and Striegel use both methods for polysaccharide characterization and conclude that HDC coupled with multiangle light scattering (MALS) achieves more accurate molar mass distribution when compared to off-line MALS than SEC in significantly less time. This is largely due to SEC being a more destructive technique because of the pores in the column degrading the analyte during separation, which tends to impact the mass distribution. However, the main disadvantage of HDC is low resolution of analyte peaks, which makes SEC a more viable option when used with chemicals that are not easily degradable and where rapid elution is not important.

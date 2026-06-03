@@ -56,50 +56,25 @@ The equivalent parasite area is the area which a flat plate perpendicular to the
 
 Drag depends on the properties of the fluid and on the size, shape, and speed of the object. One way to express this is by means of the drag equation:
 
-          F
-              D
-        =
-              1
-
-              2
-        ρ
-          v
-            2
-          C
-              D
-        A
-
 $$ F_{\mathrm {D} }\,=\,{\tfrac {1}{2}}\,\rho \,v^{2}\,C_{\mathrm {D} }\,A $$
 
 where
-
-          F
-              D
 
 $$ F_{\rm {D}} $$
 
  is the drag force,
 
-        ρ
-
 $$ \rho $$
 
  is the density of the fluid,
-
-        v
 
 $$ v $$
 
  is the speed of the object relative to the fluid,
 
-          C
-              D
-
 $$ C_{\rm {D}} $$
 
  is the drag coefficient – a dimensionless number,
-
-        A
 
 $$ A $$
 
@@ -107,161 +82,79 @@ $$ A $$
 
 The drag coefficient depends on the shape of the object and on the Reynolds number
 
-          R
-
-          e
-        =
-              v
-
-              D
-            ν
-        =
-              ρ
-
-              v
-
-              D
-            μ
-        ,
-
 $$ \mathrm {Re} ={\frac {vD}{\nu }}={\frac {\rho vD}{\mu }}, $$
 
 where
 
-        D
-
 $$ D $$
 
  is some characteristic diameter or linear dimension. Actually, 
-        D
 
 $$ D $$
 
  is the equivalent diameter 
-          D
-            e
 
 $$ D_{e} $$
 
  of the object. For a sphere, 
-          D
-            e
 
 $$ D_{e} $$
 
  is the D of the sphere itself.
 
 For a rectangular shape cross-section in the motion direction, 
-          D
-            e
-        =
 
         1.30
 
-        ⋅
-              (
-
-              a
-
-              ⋅
-
-              b
-                )
                   0.625
-              (
 
-              a
-
-              +
-
-              b
-                )
                   0.25
 
 $$ D_{e}=1.30\cdot {\frac {(a\cdot b)^{0.625}}{(a+b)^{0.25}}} $$
 
 , where a and b are the rectangle edges.
 
-          ν
-
 $$ {\nu } $$
 
  is the kinematic viscosity of the fluid (equal to the dynamic viscosity 
-          μ
 
 $$ {\mu } $$
 
  divided by the density 
-          ρ
 
 $$ {\rho } $$
 
  ).
 
 At low 
-          R
-
-          e
 
 $$ \mathrm {Re} $$
 
 , 
-          C
-              D
 
 $$ C_{\rm {D}} $$
 
  is asymptotically proportional to 
-            R
-
-            e
-            −
-
-            1
 
 $$ \mathrm {Re} ^{-1} $$
 
 , which means that the drag is linearly proportional to the speed, i.e. the drag force on a small sphere moving through a viscous fluid is given by Stokes’ Law:
 
-          F
-              d
-        =
-
-        3
-
-        π
-
-        μ
-
-        D
-
-        v
-
 $$ F_{\rm {d}}=3\pi \mu Dv $$
 
 At high 
-          R
-
-          e
 
 $$ \mathrm {Re} $$
 
 , 
-          C
-              D
 
 $$ C_{\rm {D}} $$
 
  is more or less constant, but drag will vary as the square of the speed varies. The graph to the right shows how 
-          C
-              D
 
 $$ C_{\rm {D}} $$
 
  varies with 
-          R
-
-          e
 
 $$ \mathrm {Re} $$
 
@@ -269,79 +162,25 @@ $$ \mathrm {Re} $$
 
 It can be demonstrated that drag force can be expressed as a function of a dimensionless number, which is dimensionally identical to the Bejan number. Consequently, drag force and drag coefficient can be a function of Bejan number. In fact, from the expression of drag force it has been obtained:
 
-          F
-              d
-        =
-          Δ
-              p
-          A
-              w
-        =
-            1
-
-            2
-          C
-              D
-          A
-              f
-              ν
-
-              μ
-              l
-                2
-            R
-
-            e
-            L
-            2
-
 $$ F_{\rm {d}}=\Delta _{\rm {p}}A_{\rm {w}}={\frac {1}{2}}C_{\rm {D}}A_{\rm {f}}{\frac {\nu \mu }{l^{2}}}\mathrm {Re} _{L}^{2} $$
 
 and consequently allows expressing the drag  coefficient 
-          C
-              D
 
 $$ C_{\rm {D}} $$
 
  as a function of Bejan number and the ratio between wet area 
-          A
-              w
 
 $$ A_{\rm {w}} $$
 
  and front area 
-          A
-              f
 
 $$ A_{\rm {f}} $$
 
 :
 
-          C
-              D
-        =
-
-        2
-              A
-                  w
-              A
-                  f
-              B
-
-              e
-                R
-
-                e
-                L
-                2
-
 $$ C_{\rm {D}}=2{\frac {A_{\rm {w}}}{A_{\rm {f}}}}{\frac {\mathrm {Be} }{\mathrm {Re} _{L}^{2}}} $$
 
 where 
-            R
-
-            e
-            L
 
 $$ \mathrm {Re} _{L} $$
 
@@ -350,21 +189,6 @@ $$ \mathrm {Re} _{L} $$
 ## At high velocity
 
 As mentioned, the drag equation with a constant drag coefficient gives the force moving through a fluid at a relatively large velocity, i.e. high Reynolds number, Re > ~1000. This is also called quadratic drag. 
-
-          F
-            D
-        =
-              1
-
-              2
-        ρ
-          v
-            2
-          C
-            D
-        A
-
-        ,
 
 $$ F_{D}\,=\,{\tfrac {1}{2}}\,\rho \,v^{2}\,C_{D}\,A, $$
 
@@ -384,70 +208,19 @@ The further the drag coefficient Cd is, in general, a function of the orientatio
 
 Under the assumption that the fluid is not moving relative to the currently used reference system, the power required to overcome the aerodynamic drag is given by:
 
-          P
-            D
-        =
-            F
-            D
-        ⋅
-          v
-        =
-              1
-
-              2
-        ρ
-          v
-            3
-        A
-          C
-            D
-
 $$ P_{D}=\mathbf {F} _{D}\cdot \mathbf {v} ={\tfrac {1}{2}}\rho v^{3}AC_{D} $$
 
 The power needed to push an object through a fluid increases as the cube of the velocity increases. For example, a car cruising on a highway at 50 mph (80 km/h) may require only 10 horsepower (7.5 kW) to overcome aerodynamic drag, but that same car at 100 mph (160 km/h) requires 80 hp (60 kW). With a doubling of speeds, the drag/force quadruples per the formula. Exerting 4 times the force over a fixed distance produces 4 times as much work. At twice the speed, the work (resulting in displacement over a fixed distance) is done twice as fast. Since power is the rate of doing work, 4 times the work done in half the time requires 8 times the power.
 
 When the fluid is moving relative to the reference system, for example, a car driving into headwind, the power required to overcome the aerodynamic drag is given by the following formula:
 
-          P
-            D
-        =
-            F
-            D
-        ⋅
-            v
-              o
-        =
-              1
-
-              2
-          C
-            D
-        A
-
-        ρ
-
-        (
-          v
-            w
-        +
-          v
-            o
-          )
-            2
-          v
-            o
-
 $$ P_{D}=\mathbf {F} _{D}\cdot \mathbf {v_{o}} ={\tfrac {1}{2}}C_{D}A\rho (v_{w}+v_{o})^{2}v_{o} $$
 
 Where 
-          v
-            w
 
 $$ v_{w} $$
 
  is the wind speed and 
-          v
-            o
 
 $$ v_{o} $$
 
@@ -457,135 +230,17 @@ $$ v_{o} $$
 
 Velocity as a function of time for an object falling through a non-dense medium, and released at zero relative-velocity v = 0 at time t = 0, is roughly given by a function involving a hyperbolic tangent (tanh):
 
-        v
-
-        (
-
-        t
-
-        )
-
-        =
-                2
-
-                m
-
-                g
-                ρ
-
-                A
-                  C
-                    D
-        tanh
-
-        ⁡
-          (
-            t
-                    g
-
-                    ρ
-                      C
-                        D
-                    A
-                    2
-
-                    m
-          )
-        .
-
 $$ v(t)={\sqrt {\frac {2mg}{\rho AC_{D}}}}\tanh \left(t{\sqrt {\frac {g\rho C_{D}A}{2m}}}\right).\, $$
 
 The hyperbolic tangent has a limit value of one, for large time t. In other words, velocity asymptotically approaches a maximum value called the terminal velocity vt:
-
-          v
-            t
-        =
-                2
-
-                m
-
-                g
-                ρ
-
-                A
-                  C
-                    D
-        .
 
 $$ v_{t}={\sqrt {\frac {2mg}{\rho AC_{D}}}}.\, $$
 
 For an object falling and released at relative-velocity v = vi at time t = 0, with vi < vt, is also defined in terms of the hyperbolic tangent function:
 
-        v
-
-        (
-
-        t
-
-        )
-
-        =
-          v
-            t
-        tanh
-
-        ⁡
-          (
-            t
-                g
-                  v
-                    t
-            +
-
-            arctanh
-
-            ⁡
-              (
-                    v
-                      i
-                    v
-                      t
-              )
-          )
-        .
-
 $$ v(t)=v_{t}\tanh \left(t{\frac {g}{v_{t}}}+\operatorname {arctanh} \left({\frac {v_{i}}{v_{t}}}\right)\right).\, $$
 
 For vi > vt, the velocity function is defined in terms of the hyperbolic cotangent function:
-
-        v
-
-        (
-
-        t
-
-        )
-
-        =
-          v
-            t
-        coth
-
-        ⁡
-          (
-            t
-                g
-                  v
-                    t
-            +
-              coth
-                −
-
-                1
-            ⁡
-              (
-                    v
-                      i
-                    v
-                      t
-              )
-          )
-        .
 
 $$ v(t)=v_{t}\coth \left(t{\frac {g}{v_{t}}}+\coth ^{-1}\left({\frac {v_{i}}{v_{t}}}\right)\right).\, $$
 
@@ -593,158 +248,55 @@ The hyperbolic cotangent also has a limit value of one, for large time t. Veloci
 
 For vi = vt, the velocity is constant:
 
-        v
-
-        (
-
-        t
-
-        )
-
-        =
-          v
-            t
-        .
-
 $$ v(t)=v_{t}. $$
 
 These functions are defined by the solution of the following differential equation:
-
-        g
-
-        −
-              ρ
-
-              A
-                C
-                  D
-              2
-
-              m
-          v
-            2
-        =
-              d
-
-              v
-              d
-
-              t
-        .
 
 $$ g-{\frac {\rho AC_{D}}{2m}}v^{2}={\frac {dv}{dt}}.\, $$
 
 Or, more generically (where F(v) are the forces acting on the object beyond drag):
 
-            1
-
-            m
-        ∑
-
-        F
-
-        (
-
-        v
-
-        )
-
-        −
-              ρ
-
-              A
-                C
-                  D
-              2
-
-              m
-          v
-            2
-        =
-              d
-
-              v
-              d
-
-              t
-        .
-
 $$ {\frac {1}{m}}\sum F(v)-{\frac {\rho AC_{D}}{2m}}v^{2}={\frac {dv}{dt}}.\, $$
 
 For a potato-shaped object of average diameter d and of density ρobj, terminal velocity is about
 
-          v
-            t
-        =
-            g
-
-            d
-                  ρ
-                    o
-
-                    b
-
-                    j
-                ρ
-        .
-
 $$ v_{t}={\sqrt {gd{\frac {\rho _{obj}}{\rho }}}}.\, $$
 
 For objects of water-like density (raindrops, hail, live objects—mammals, birds, insects, etc.) falling in air near Earth's surface at sea level, the terminal velocity is roughly equal to  
-
-          v
-            t
-        =
-
-        90
-            d
-        ,
 
 $$ v_{t}=90{\sqrt {d}},\, $$
 
  with d in metres and vt in m/s.
 
 For example, for a human body (
-        d
 
 $$ d $$
 
  ≈0.6 m) 
-          v
-            t
 
 $$ v_{t} $$
 
  ≈70 m/s, for a small animal like a cat (
-        d
 
 $$ d $$
 
  ≈0.2 m) 
-          v
-            t
 
 $$ v_{t} $$
 
  ≈40 m/s, for a small bird (
-        d
 
 $$ d $$
 
  ≈0.05 m) 
-          v
-            t
 
 $$ v_{t} $$
 
  ≈20 m/s, for an insect (
-        d
 
 $$ d $$
 
  ≈0.01 m) 
-          v
-            t
 
 $$ v_{t} $$
 
@@ -756,26 +308,13 @@ In short, terminal velocity is higher for larger creatures, and thus potentially
 
 The equation for viscous resistance or linear drag is appropriate for objects or particles moving through a fluid at relatively slow speeds (assuming there is no turbulence). Purely laminar flow only exists up to Re = 0.1 under this definition. In this case, the force of drag is approximately proportional to velocity. The equation for viscous resistance is:
 
-            F
-            D
-        =
-
-        −
-
-        b
-          v
-
 $$ \mathbf {F} _{D}=-b\mathbf {v} \, $$
 
 where:
 
-        b
-
 $$ b $$
 
  is a constant that depends on both the material properties of the object and fluid, as well as the geometry of the object; and
-
-          v
 
 $$ \mathbf {v} $$
 
@@ -783,101 +322,39 @@ $$ \mathbf {v} $$
 
 When an object falls from rest, its velocity will be
 
-        v
-
-        (
-
-        t
-
-        )
-
-        =
-              (
-
-              ρ
-
-              −
-                ρ
-                  0
-              )
-              V
-              g
-            b
-          (
-            1
-
-            −
-              e
-                −
-
-                b
-                t
-                  /
-                m
-          )
-
 $$ v(t)={\frac {(\rho -\rho _{0})\,V\,g}{b}}\left(1-e^{-b\,t/m}\right) $$
 
 where:
-
-        ρ
 
 $$ \rho $$
 
  is the density of the object,
 
-          ρ
-            0
-
 $$ \rho _{0} $$
 
  is density of the fluid,
-
-        V
 
 $$ V $$
 
  is the volume of the object,
 
-        g
-
 $$ g $$
 
  is the acceleration due to gravity (i.e., 9.8 m/s
-            2
 
 $$ ^{2} $$
 
 ), and
-
-        m
 
 $$ m $$
 
  is mass of the object.
 
 The velocity asymptotically approaches the terminal velocity 
-          v
-            t
-        =
-              (
-
-              ρ
-
-              −
-                ρ
-                  0
-              )
-
-              V
-
-              g
-            b
 
 $$ v_{t}={\frac {(\rho -\rho _{0})Vg}{b}} $$
 
 . For a given 
-        b
 
 $$ b $$
 
@@ -885,27 +362,13 @@ $$ b $$
 
 For the special case of small spherical objects moving slowly through a viscous fluid (and thus at small Reynolds number), George Gabriel Stokes derived an expression for the drag constant:
 
-        b
-
-        =
-
-        6
-
-        π
-
-        η
-
-        r
-
 $$ b=6\pi \eta r\, $$
 
 where 
-        r
 
 $$ r $$
 
  is the Stokes radius of the particle, and 
-        η
 
 $$ \eta $$
 
@@ -913,41 +376,13 @@ $$ \eta $$
 
 The resulting expression for the drag is known as Stokes' drag:
 
-                    F
-                    D
-                =
-
-                −
-
-                6
-
-                π
-
-                η
-
-                r
-
-                v
-                =
-                      ρ
-                        v
-                          2
-                        C
-                            D
-                      π
-                        r
-                          2
-                    2
-
 $$ {\begin{aligned}\mathbf {F} _{D}&=-6\pi \eta rv\\&={\frac {\rho v^{2}C_{\mathrm {D} }\pi r^{2}}{2}}\\\end{aligned}} $$
 
 For example, consider a small sphere with radius 
-        r
 
 $$ r $$
 
  = 0.5 micrometre (diameter = 1.0 μm) moving through water at a velocity 
-        v
 
 $$ v $$
 
@@ -957,205 +392,31 @@ we find a drag force of 0.09 pN. This is about the drag force that a bacterium e
 
 The above formula for drag force can be used to calculate the coefficient of drag in terms of the Reynolds number for very small (<1) values for Reynolds, again assuming a smooth sphere:
 
-                  |
-                −
-
-                6
-
-                π
-
-                η
-
-                r
-
-                v
-                  |
-                =
-                  |
-                        ρ
-                          v
-                            2
-                          C
-                              D
-                        π
-                          r
-                            2
-                      2
-                  |
-                  |
-                12
-                  |
-                =
-                  |
-                        ρ
-
-                        v
-                          C
-                              D
-                        r
-                      η
-                  |
-                  R
-
-                  e
-                =
-                      ρ
-
-                      v
-
-                      L
-                    η
-                ,
-                L
-
-                =
-
-                2
-
-                r
-                  |
-                12
-                  |
-                =
-                  |
-                          C
-                              D
-                          R
-
-                          e
-                      2
-                  |
-                  C
-                      D
-                =
-                    24
-                      R
-
-                      e
-
 $$ {\begin{aligned}|-6\pi \eta rv|&=\left|{\frac {\rho v^{2}C_{\mathrm {D} }\pi r^{2}}{2}}\right|\\|12|&=\left|{\frac {\rho vC_{\mathrm {D} }r}{\eta }}\right|\\\mathrm {Re} &={\frac {\rho vL}{\eta }},&&L=2r\\|12|&=\left|{\frac {C_{\mathrm {D} }\mathrm {Re} }{2}}\right|\\C_{\mathrm {D} }&={\frac {24}{\mathrm {Re} }}\end{aligned}} $$
 
 The drag coefficient of a sphere can be determined for the general case of a laminar flow with Reynolds numbers less than 
-        2
-
-        ⋅
-          10
-            5
 
 $$ 2\cdot 10^{5} $$
 
  using the following formula:
 
-          C
-              D
-        =
-            24
-              R
-
-              e
-        +
-            4
-                R
-
-                e
-        +
-
         0.4
-
-        ,
-          R
-
-          e
-        <
-
-        2
-
-        ⋅
-          10
-            5
 
 $$ C_{\mathrm {D} }={\frac {24}{\mathrm {Re} }}+{\frac {4}{\sqrt {\mathrm {Re} }}}+0.4,\mathrm {Re} <2\cdot 10^{5} $$
 
 A more extensible formula is available up to 10:
 
-                  C
-                      D
-                =
-                    24
-                      R
-
-                      e
-                +
-                      13
-                        R
-
-                        e
-                      25
-
-                      +
-                        5
-                          .48
-                          R
-
-                          e
                           1.52
-                +
-                      .411
-
-                      (
 
                       2.63
 
-                      ×
-                        10
-                          5
-                        )
                           7.94
-                          R
 
-                          e
-                          .06
-                          R
-
-                          e
-                          8
-                      +
-                          (
                             2.63
-
-                            ×
-                              10
-                                5
-                          )
-                          8
-                +
-                      R
-
-                      e
-                      4
-                        (
-                            10
-                              6
-                          +
-                            R
-
-                            e
-                        )
-                ,
-                  R
-
-                  e
-                ≤
-                  10
-                    6
 
 $$ {\begin{aligned}C_{\mathrm {D} }&={\frac {24}{\mathrm {Re} }}+{\frac {13\mathrm {Re} }{25+5^{.48}\mathrm {Re} ^{1.52}}}+{\frac {.411(2.63\times 10^{5})^{7.94}\mathrm {Re} ^{.06}}{\mathrm {Re} ^{8}+\left(2.63\times 10^{5}\right)^{8}}}+{\frac {\mathrm {Re} }{4\left(10^{6}+\mathrm {Re} \right)}},\mathrm {Re} \leq 10^{6}\end{aligned}} $$
 
 For Reynolds numbers less than 1, Stokes' law applies and the drag coefficient approaches 
-            24
-              R
-
-              e
 
 $$ {\frac {24}{Re}} $$
 
@@ -1166,18 +427,12 @@ $$ {\frac {24}{Re}} $$
 In aerodynamics, aerodynamic drag, also known as air resistance, is the fluid drag force that acts on any moving solid body in the direction of the air's freestream flow. 
 
 From the body's perspective (near-field approach), the drag results from forces due to pressure distributions over the body surface, symbolized 
-          D
-            p
-
-            r
 
 $$ D_{pr} $$
 
 .
 
 Forces due to skin friction, which is a result of viscosity, denoted 
-          D
-            f
 
 $$ D_{f} $$
 

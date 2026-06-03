@@ -5,10 +5,8 @@ This article summarizes equations in the theory of fluid mechanics.
 ## Definitions
 
 Here 
-              t
 
-              ^
-    {\displaystyle \mathbf {\hat {t}} \,\!}
+{\displaystyle \mathbf {\hat {t}} \,\!}
  is a unit vector in the direction of the flow/current/flux.
 
 ## Equations

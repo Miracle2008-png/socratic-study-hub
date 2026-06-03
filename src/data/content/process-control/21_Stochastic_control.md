@@ -18,52 +18,9 @@ In the discrete-time case with uncertainty about the parameter values in the tra
 
 A typical specification of the discrete-time stochastic linear quadratic control problem is to minimize
 
-            E
-            1
-          ∑
-            t
-
-            =
-
-            1
-            S
-          [
-              y
-                t
-                  T
-            Q
-              y
-                t
-            +
-              u
-                t
-                  T
-            R
-              u
-                t
-          ]
-
 $$ \mathrm {E} _{1}\sum _{t=1}^{S}\left[y_{t}^{\mathsf {T}}Qy_{t}+u_{t}^{\mathsf {T}}Ru_{t}\right] $$
 
 where E1 is the expected value operator conditional on y0, superscript T indicates a matrix transpose, and S is the time horizon, subject to the state equation
-
-          y
-            t
-        =
-          A
-            t
-          y
-            t
-
-            −
-
-            1
-        +
-          B
-            t
-          u
-            t
-        ,
 
 $$ y_{t}=A_{t}y_{t-1}+B_{t}u_{t}, $$
 
@@ -71,113 +28,13 @@ where y is an n × 1 vector of observable state variables, u is a k × 1 vector 
 
 Induction backwards in time can be used to obtain the optimal control solution at each time,
 
-          u
-            t
-            ∗
-        =
-
-        −
-            [
-                E
-                (
-                    B
-                        T
-                    X
-                      t
-                  B
-
-                  +
-
-                  R
-                )
-            ]
-            −
-
-            1
-          E
-          (
-              B
-                  T
-              X
-                t
-            A
-          )
-          y
-            t
-
-            −
-
-            1
-        ,
-
 $$ u_{t}^{*}=-\left[\mathrm {E} \left(B^{\mathsf {T}}X_{t}B+R\right)\right]^{-1}\mathrm {E} \left(B^{\mathsf {T}}X_{t}A\right)y_{t-1}, $$
 
 with the symmetric positive definite cost-to-go matrix X evolving backwards in time from 
-          X
-            S
-        =
-
-        Q
 
 $$ X_{S}=Q $$
 
  according to
-
-          X
-            t
-
-            −
-
-            1
-        =
-
-        Q
-
-        +
-          E
-          [
-              A
-                  T
-              X
-                t
-            A
-          ]
-        −
-          E
-          [
-              A
-                  T
-              X
-                t
-            B
-          ]
-            [
-                E
-              (
-                B
-                    T
-                X
-                  t
-              B
-
-              +
-
-              R
-
-              )
-            ]
-            −
-
-            1
-          E
-          (
-              B
-                  T
-              X
-                t
-            A
-          )
-        ,
 
 $$ X_{t-1}=Q+\mathrm {E} \left[A^{\mathsf {T}}X_{t}A\right]-\mathrm {E} \left[A^{\mathsf {T}}X_{t}B\right]\left[\mathrm {E} (B^{\mathsf {T}}X_{t}B+R)\right]^{-1}\mathrm {E} \left(B^{\mathsf {T}}X_{t}A\right), $$
 

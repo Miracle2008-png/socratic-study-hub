@@ -5,86 +5,42 @@ In materials science, dispersion is the fraction of atoms of a material exposed 
 ## Relationship to particle size
 
 Dispersion is closely related to particle size through geometric relationships. For idealized spherical particles, the number of surface atoms 
-          N
-            S
 
 $$ N_{S} $$
 
  scales with the particle surface area (
-        ∝
-          d
-            2
 
 $$ \propto d^{2} $$
 
 ), while the total number of atoms 
-          N
-            T
 
 $$ N_{T} $$
 
  scales with the particle volume (
-        ∝
-          d
-            3
 
 $$ \propto d^{3} $$
 
 ). As a result, the dispersion 
-        D
-
-        =
-          N
-            S
-          /
-          N
-            T
 
 $$ D=N_{S}/N_{T} $$
 
  is inversely proportional to the particle diameter:
 
-        D
-
-        ∝
-            1
-
-            d
-
 $$ D\propto {\frac {1}{d}} $$
 
 This reflects the general dependence of the surface-to-volume ratio on particle size. A more rigorous expression for spherical particles relates dispersion to the mean particle diameter 
-        d
 
 $$ d $$
 
  as:
 
-        D
-
-        =
-              6
-
-              (
-                v
-                  m
-                /
-                a
-                  m
-              )
-            d
-
 $$ D={\frac {6(v_{m}/a_{m})}{d}} $$
 
 where 
-          v
-            m
 
 $$ v_{m} $$
 
  is the atomic volume and 
-          a
-            m
 
 $$ a_{m} $$
 
@@ -98,49 +54,17 @@ In supported catalysts, catalytic activity may depend not only on the dispersion
 
 For a fixed total mass of metal catalyst, the number of particles scales inversely with particle volume:
 
-          N
-            particles
-        ∝
-            1
-              d
-                3
-
 $$ N_{\text{particles}}\propto {\frac {1}{d^{3}}} $$
 
 If the relevant active sites are associated with the boundary between the metal particle and the support, the characteristic interfacial length per particle scales with particle diameter:
-
-          L
-            boundary
-        ∝
-
-        d
 
 $$ L_{\text{boundary}}\propto d $$
 
 The total density of such interfacial sites therefore scales as:
 
-          L
-            total
-        ∝
-            1
-              d
-                3
-        ⋅
-
-        d
-
-        =
-            1
-              d
-                2
-
 $$ L_{\text{total}}\propto {\frac {1}{d^{3}}}\cdot d={\frac {1}{d^{2}}} $$
 
 This 
-        1
-          /
-          d
-            2
 
 $$ 1/d^{2} $$
 

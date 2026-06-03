@@ -12,15 +12,7 @@ For fluids that are sufficiently dense to be a continuum, do not contain ionized
 
 In addition to the mass, momentum, and energy conservation equations, a thermodynamic equation of state that gives the pressure as a function of other thermodynamic variables is required to completely describe the problem. An example of this would be the perfect gas equation of state:
 
-        p
-
-        =
-              ρ
-                R
-                  u
-              T
-            M
-    {\displaystyle p={\frac {\rho R_{u}T}{M}}}
+{\displaystyle p={\frac {\rho R_{u}T}{M}}}
 
 where p is pressure, ρ is density, and T is the absolute temperature, while Ru is the gas constant and M is molar mass for a particular gas. A constitutive relation may also be useful.
 
@@ -29,134 +21,34 @@ Three conservation laws are used to solve fluid dynamics problems, and may be wr
 
 Mass continuity (conservation of mass) The rate of change of fluid mass inside a control volume must be equal to the net rate of fluid flow into the volume.  Physically, this statement requires that mass is neither created nor destroyed in the control volume, and can be translated into the integral form of the continuity equation:
 
-            ∂
-              ∂
+{\displaystyle {\frac {\partial }{\partial t}}\iiint _{V}\rho \,dV=-\,{}}
+{\displaystyle {\scriptstyle S}}
 
-              t
-          ∭
-            V
-        ρ
-        d
-
-        V
-
-        =
-
-        −
-
-    {\displaystyle {\frac {\partial }{\partial t}}\iiint _{V}\rho \,dV=-\,{}}
-            S
-    {\displaystyle {\scriptstyle S}}
-
-        ρ
-          u
-        ⋅
-
-        d
-          S
-    {\displaystyle {}\,\rho \mathbf {u} \cdot d\mathbf {S} }
+{\displaystyle {}\,\rho \mathbf {u} \cdot d\mathbf {S} }
 
 Above, ρ is the fluid density, u is the flow velocity vector, and t is time.  The left-hand side of the above expression is the rate of increase of mass within the volume and contains a triple integral over the control volume, whereas the right-hand side contains an integration over the surface of the control volume of mass convected into the system.  Mass flow into the system is accounted as positive, and since the normal vector to the surface is opposite to the sense of flow into the system the term is negated. The differential form of the continuity equation is, by the divergence theorem:
 
-              ∂
-
-              ρ
-              ∂
-
-              t
-        +
-
-        ∇
-
-        ⋅
-
-        (
-
-        ρ
-          u
-        )
-
-        =
-
-        0
-    {\displaystyle \ {\frac {\partial \rho }{\partial t}}+\nabla \cdot (\rho \mathbf {u} )=0}
+{\displaystyle \ {\frac {\partial \rho }{\partial t}}+\nabla \cdot (\rho \mathbf {u} )=0}
 
 Conservation of momentum
 
  Newton's second law of motion applied to a control volume, is a statement that any change in momentum of the fluid within that control volume will be due to the net flow of momentum into the volume and the action of external forces acting on the fluid within the volume.
 
-            ∂
-              ∂
+{\displaystyle {\frac {\partial }{\partial t}}\iiint _{\scriptstyle V}\rho \mathbf {u} \,dV=-\,{}}
+{\displaystyle _{\scriptstyle S}}
 
-              t
-          ∭
-              V
-        ρ
-          u
-        d
+{\displaystyle (\rho \mathbf {u} \cdot d\mathbf {S} )\mathbf {u} -{}}
+{\displaystyle {\scriptstyle S}}
 
-        V
+{\displaystyle {}\,p\,d\mathbf {S} }
 
-        =
-
-        −
-
-    {\displaystyle {\frac {\partial }{\partial t}}\iiint _{\scriptstyle V}\rho \mathbf {u} \,dV=-\,{}}
-              S
-    {\displaystyle _{\scriptstyle S}}
-        (
-
-        ρ
-          u
-        ⋅
-
-        d
-          S
-        )
-          u
-        −
-
-    {\displaystyle (\rho \mathbf {u} \cdot d\mathbf {S} )\mathbf {u} -{}}
-            S
-    {\displaystyle {\scriptstyle S}}
-
-        p
-        d
-          S
-    {\displaystyle {}\,p\,d\mathbf {S} }
-
-          +
-            ∭
-                V
-          ρ
-              f
-              body
-          d
-
-          V
-
-          +
-              F
-              surf
-    {\displaystyle \displaystyle {}+\iiint _{\scriptstyle V}\rho \mathbf {f} _{\text{body}}\,dV+\mathbf {F} _{\text{surf}}}
+{\displaystyle \displaystyle {}+\iiint _{\scriptstyle V}\rho \mathbf {f} _{\text{body}}\,dV+\mathbf {F} _{\text{surf}}}
 
 In the above integral formulation of this equation, the term on the left is the net change of momentum within the volume. The first term on the right is the net rate at which momentum is convected into the volume. The second term on the right is the force due to pressure on the volume's surfaces. The first two terms on the right are negated since momentum entering the system is accounted as positive, and the normal is opposite the direction of the velocity u and pressure forces. The third term on the right is the net acceleration of the mass within the volume due to any body forces (here represented by fbody). Surface forces, such as viscous forces, are represented by Fsurf, the net force due to shear forces acting on the volume surface. The momentum balance can also be written for a moving control volume.
 
 The following is the differential form of the momentum conservation equation.  Here, the volume is reduced to an infinitesimally small point, and both surface and body forces are accounted for in one total force, F.  For example, F may be expanded into an expression for the frictional and gravitational forces acting at a point in a flow.
 
-              D
-                u
-              D
-
-              t
-        =
-          F
-        −
-              ∇
-
-              p
-            ρ
-    {\displaystyle {\frac {D\mathbf {u} }{Dt}}=\mathbf {F} -{\frac {\nabla p}{\rho }}}
+{\displaystyle {\frac {D\mathbf {u} }{Dt}}=\mathbf {F} -{\frac {\nabla p}{\rho }}}
 
 In aerodynamics, air is assumed to be a Newtonian fluid, which posits a linear relationship between the shear stress (due to internal friction forces) and the rate of strain of the fluid. The equation above is a vector equation in a three-dimensional flow, but it can be expressed as three scalar equations in three coordinate directions. The conservation of momentum equations for the compressible, viscous flow case is called the Navier–Stokes equations.
 
@@ -164,36 +56,7 @@ Conservation of energy
 
 Although energy can be converted from one form to another, the total energy in a closed system remains constant.
 
-        ρ
-              D
-
-              h
-              D
-
-              t
-        =
-              D
-
-              p
-              D
-
-              t
-        +
-
-        ∇
-
-        ⋅
-          (
-            k
-
-            ∇
-
-            T
-          )
-        +
-
-        Φ
-    {\displaystyle \rho {\frac {Dh}{Dt}}={\frac {Dp}{Dt}}+\nabla \cdot \left(k\nabla T\right)+\Phi }
+{\displaystyle \rho {\frac {Dh}{Dt}}={\frac {Dp}{Dt}}+\nabla \cdot \left(k\nabla T\right)+\Phi }
 
 Above, h is the specific enthalpy, k is the thermal conductivity of the fluid, T is temperature, and Φ is the viscous dissipation function. The viscous dissipation function governs the rate at which the mechanical energy of the flow is converted to heat. The second law of thermodynamics requires that the dissipation term is always positive: viscosity cannot create energy within the control volume. The expression on the left side is a material derivative.
 
@@ -204,15 +67,7 @@ All fluids are compressible to an extent; that is, changes in pressure or temper
 
 Mathematically, incompressibility is expressed by saying that the density ρ of a fluid parcel does not change as it moves in the flow field, that is,
 
-                D
-              ρ
-                D
-              t
-        =
-
-        0
-        ,
-    {\displaystyle {\frac {\mathrm {D} \rho }{\mathrm {D} t}}=0\,,}
+{\displaystyle {\frac {\mathrm {D} \rho }{\mathrm {D} t}}=0\,,}
 
 where ⁠D/Dt⁠ is the material derivative, which is the sum of local and convective derivatives. This additional constraint simplifies the governing equations, especially in the case when the fluid has a uniform density.
 

@@ -9,93 +9,32 @@ In a fluid at rest, all frictional and inertial stresses vanish and the state of
 The Navier-Stokes momentum equations are:
 
 By setting the flow velocity :
-          u
-        =
-          0
 
 $$ \mathbf {u} =\mathbf {0} $$
 
 , they become simply:
 
-          0
-        =
-
-        −
-
-        ∇
-
-        p
-
-        +
-
-        ρ
-          g
-
 $$ \mathbf {0} =-\nabla p+\rho \mathbf {g} $$
 
 or:
-
-        ∇
-
-        p
-
-        =
-
-        ρ
-          g
 
 $$ \nabla p=\rho \mathbf {g} $$
 
 This is the general form of Stevin's law: the pressure gradient equals the body force force density field.
 
 Let us now consider two particular cases of this law. In case of a conservative body force with scalar potential :
-        ϕ
 
 $$ \phi $$
 
 :
 
-        ρ
-          g
-        =
-
-        −
-
-        ∇
-
-        ϕ
-
 $$ \rho \mathbf {g} =-\nabla \phi $$
 
 the Stevin equation becomes:
 
-        ∇
-
-        p
-
-        =
-
-        −
-
-        ∇
-
-        ϕ
-
 $$ \nabla p=-\nabla \phi $$
 
 That can be integrated to give:
-
-        Δ
-
-        p
-
-        =
-
-        −
-
-        Δ
-
-        ϕ
 
 $$ \Delta p=-\Delta \phi $$
 
@@ -103,188 +42,37 @@ So in this case the pressure difference is the opposite of the difference of the
 
 In the other particular case of a body force of constant direction along z:
 
-          g
-        =
-
-        −
-
-        g
-
-        (
-
-        x
-
-        ,
-
-        y
-
-        ,
-
-        z
-
-        )
-              k
-
-              ^
-
 $$ \mathbf {g} =-g(x,y,z){\hat {k}} $$
 
 the generalised Stevin's law above becomes:
-
-              ∂
-
-              p
-              ∂
-
-              z
-        =
-
-        −
-
-        ρ
-
-        (
-
-        x
-
-        ,
-
-        y
-
-        ,
-
-        z
-
-        )
-
-        g
-
-        (
-
-        x
-
-        ,
-
-        y
-
-        ,
-
-        z
-
-        )
 
 $$ {\frac {\partial p}{\partial z}}=-\rho (x,y,z)g(x,y,z) $$
 
 That can be integrated to give another (less-) generalised Stevin's law:
 
-        p
-
-        (
-
-        x
-
-        ,
-
-        y
-
-        ,
-
-        z
-
-        )
-
-        −
-          p
-            0
-        (
-
-        x
-
-        ,
-
-        y
-
-        )
-
-        =
-
-        −
-          ∫
-            0
-            z
-        ρ
-
-        (
-
-        x
-
-        ,
-
-        y
-
-        ,
-          z
-
-          ′
-        )
-
-        g
-
-        (
-
-        x
-
-        ,
-
-        y
-
-        ,
-          z
-
-          ′
-        )
-
-        d
-          z
-
-          ′
-
 $$ p(x,y,z)-p_{0}(x,y)=-\int _{0}^{z}\rho (x,y,z')g(x,y,z')dz' $$
 
 where:
-
-        p
 
 $$ p $$
 
  is the hydrostatic pressure (Pa),
 
-        ρ
-
 $$ \rho $$
 
  is the fluid density (kg/m3),
-
-        g
 
 $$ g $$
 
  is gravitational acceleration (m/s2),
 
-        z
-
 $$ z $$
 
  is the height (parallel to the direction of gravity) of the test area (m),
 
-        0
-
 $$ 0 $$
 
  is the height of the zero reference point of the pressure (m)
-
-          p
-            0
 
 $$ p_{0} $$
 
@@ -293,42 +81,14 @@ $$ p_{0} $$
 ### Simplification for liquids
 
 For water and other liquids, this integral can be simplified significantly for many practical applications, based on the following two assumptions. Since many liquids can be considered incompressible, a reasonable good estimation can be made from assuming a constant density throughout the liquid. The same assumption cannot be made within a gaseous environment. Also, since the height 
-        Δ
-
-        z
 
 $$ \Delta z $$
 
  of the fluid column between z and z0 is often reasonably small compared to the radius of the Earth, one can neglect the variation of g. Under these circumstances, one can transport out of the integral the density and the gravity acceleration and the law is simplified into the formula
 
-        Δ
-
-        p
-
-        (
-
-        z
-
-        )
-
-        =
-
-        ρ
-
-        g
-
-        Δ
-
-        z
-
-        ,
-
 $$ \Delta p(z)=\rho g\Delta z, $$
 
 where 
-        Δ
-
-        z
 
 $$ \Delta z $$
 
@@ -336,130 +96,25 @@ $$ \Delta z $$
 
 One could arrive to the above formula also by considering the first particular case of the equation for a conservative body force field: in fact the body force field of uniform intensity and direction:
 
-        ρ
-          g
-        (
-
-        x
-
-        ,
-
-        y
-
-        ,
-
-        z
-
-        )
-
-        =
-
-        −
-
-        ρ
-
-        g
-              k
-
-              ^
-
 $$ \rho \mathbf {g} (x,y,z)=-\rho g{\hat {k}} $$
 
 is conservative, so one can write the body force density as:
-
-        ρ
-          g
-        =
-
-        ∇
-
-        (
-
-        −
-
-        ρ
-
-        g
-
-        z
-
-        )
 
 $$ \rho \mathbf {g} =\nabla (-\rho gz) $$
 
 Then the body force density has a simple scalar potential:
 
-        ϕ
-
-        (
-
-        z
-
-        )
-
-        =
-
-        −
-
-        ρ
-
-        g
-
-        z
-
 $$ \phi (z)=-\rho gz $$
 
 And the pressure difference follows another time the Stevin's law:
-
-        Δ
-
-        p
-
-        =
-
-        −
-
-        Δ
-
-        ϕ
-
-        =
-
-        ρ
-
-        g
-
-        Δ
-
-        z
 
 $$ \Delta p=-\Delta \phi =\rho g\Delta z $$
 
 The reference point should lie at or below the surface of the liquid. Otherwise, one has to split the integral into two (or more) terms with the constant ρliquid and ρ(z′)above. For example, the absolute pressure compared to vacuum is
 
-        p
-
-        =
-
-        ρ
-
-        g
-
-        Δ
-
-        z
-
-        +
-          p
-              0
-        ,
-
 $$ p=\rho g\Delta z+p_{\mathrm {0} }, $$
 
 where 
-        Δ
-
-        z
 
 $$ \Delta z $$
 
@@ -468,16 +123,6 @@ $$ \Delta z $$
 ## Buoyancy
 
 Any body of arbitrary shape which is immersed, partly or fully, in a fluid will experience the action of a net force in the opposite direction of the local pressure gradient. If this pressure gradient arises from gravity, the net force is in the vertical direction opposite that of the gravitational force.  This vertical force is termed buoyancy or buoyant force and is equal in magnitude, but opposite in direction, to the weight of the displaced fluid.  Mathematically,
-
-        F
-
-        =
-
-        ρ
-
-        g
-
-        V
 
 $$ F=\rho gV $$
 
@@ -488,22 +133,6 @@ Discovery of the principle of buoyancy is attributed to Archimedes.
 ### Hydrostatic force on submerged surfaces
 
 The horizontal and vertical components of the hydrostatic force acting on a submerged surface are given by the following formula:
-
-                  F
-                      h
-                =
-                  p
-                      c
-                A
-                  F
-                      v
-                =
-
-                ρ
-
-                g
-
-                V
 
 $$ {\begin{aligned}F_{\mathrm {h} }&=p_{\mathrm {c} }A\\F_{\mathrm {v} }&=\rho gV\end{aligned}} $$
 

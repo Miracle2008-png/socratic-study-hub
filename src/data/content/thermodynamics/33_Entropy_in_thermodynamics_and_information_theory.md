@@ -6,103 +6,37 @@ Because the mathematical expressions for information theory developed by Claude 
 
 The defining expression for entropy in the theory of statistical mechanics established by Ludwig Boltzmann and J. Willard Gibbs in the 1870s, is of the form:
 
-        S
-
-        =
-
-        −
-          k
-            B
-          ∑
-            i
-          p
-            i
-        ln
-
-        ⁡
-          p
-            i
-        ,
-    {\displaystyle S=-k_{\text{B}}\sum _{i}p_{i}\ln p_{i},}
+{\displaystyle S=-k_{\text{B}}\sum _{i}p_{i}\ln p_{i},}
 
 where 
-          p
-            i
-    {\displaystyle p_{i}}
+{\displaystyle p_{i}}
  is the probability of the microstate i taken from an equilibrium ensemble, and 
-          k
-            B
-    {\displaystyle k_{B}}
+{\displaystyle k_{B}}
  is the Boltzmann constant.
 
 The defining expression for entropy in the theory of information established by Claude E. Shannon in 1948 is of the form:
 
-        H
-
-        =
-
-        −
-          ∑
-            i
-          p
-            i
-          log
-            b
-        ⁡
-          p
-            i
-        ,
-    {\displaystyle H=-\sum _{i}p_{i}\log _{b}p_{i},}
+{\displaystyle H=-\sum _{i}p_{i}\log _{b}p_{i},}
 
 where 
-          p
-            i
-    {\displaystyle p_{i}}
+{\displaystyle p_{i}}
  is the probability of the message 
-          m
-            i
-    {\displaystyle m_{i}}
+{\displaystyle m_{i}}
  taken from the message space M, and b is the base of the logarithm used. Common values of b are 2, Euler's number e, and 10, and the unit of entropy is shannon (or bit) for b = 2, nat for b = e, and hartley for b = 10.
 
 Mathematically H may also be seen as an average information, taken over the message space, because when a certain message occurs with probability pi, the information quantity −log(pi) (called information content or self-information) will be obtained.
 
 If all the microstates are equiprobable (a microcanonical ensemble), the statistical thermodynamic entropy reduces to the form, as given by Boltzmann,
 
-        S
-
-        =
-          k
-            B
-        ln
-
-        ⁡
-
-        W
-
-        ,
-    {\displaystyle S=k_{\text{B}}\ln W,}
+{\displaystyle S=k_{\text{B}}\ln W,}
 
 where W is the number of microstates that corresponds to the macroscopic thermodynamic state. Therefore S depends on temperature.
 
 If all the messages are equiprobable, the information entropy reduces to the Hartley entropy
 
-        H
-
-        =
-          log
-            b
-        ⁡
-          |
-        M
-          |
-        ,
-    {\displaystyle H=\log _{b}|M|\ ,}
+{\displaystyle H=\log _{b}|M|\ ,}
 
 where 
-          |
-        M
-          |
-    {\displaystyle |M|}
  is the cardinality of the message space M.
 
 The logarithm in the thermodynamic definition is the natural logarithm.  It can be shown that the Gibbs entropy formula, with the natural logarithm, reproduces all of the properties of the macroscopic classical thermodynamics of Rudolf Clausius.  (See article: Entropy (statistical views)).
@@ -111,90 +45,20 @@ The logarithm can also be taken to the natural base in the case of information e
 
 For a simple compressible system that can only perform volume work, the first law of thermodynamics becomes
 
-        d
-
-        E
-
-        =
-
-        −
-
-        p
-
-        d
-
-        V
-
-        +
-
-        T
-
-        d
-
-        S
-
-        .
-    {\displaystyle dE=-pdV+TdS.}
+{\displaystyle dE=-pdV+TdS.}
 
 But one can equally well write this equation in terms of what physicists and chemists sometimes call the 'reduced' or dimensionless entropy, σ = S/k, so that
 
-        d
-
-        E
-
-        =
-
-        −
-
-        p
-
-        d
-
-        V
-
-        +
-          k
-            B
-        T
-
-        d
-
-        σ
-
-        .
-    {\displaystyle dE=-pdV+k_{\text{B}}Td\sigma .}
+{\displaystyle dE=-pdV+k_{\text{B}}Td\sigma .}
 
 Just as S is conjugate to T, so σ is conjugate to kBT (the energy that is characteristic of T on a molecular scale).
 
 Thus the definitions of entropy in statistical mechanics (The  Gibbs entropy formula 
-        S
 
-        =
-
-        −
-          k
-              B
-          ∑
-            i
-          p
-            i
-        log
-
-        ⁡
-          p
-            i
-    {\displaystyle S=-k_{\mathrm {B} }\sum _{i}p_{i}\log p_{i}}
+{\displaystyle S=-k_{\mathrm {B} }\sum _{i}p_{i}\log p_{i}}
 ) and in classical thermodynamics (
-        d
 
-        S
-
-        =
-              δ
-                Q
-                  rev
-            T
-    {\displaystyle dS={\frac {\delta Q_{\text{rev}}}{T}}}
+{\displaystyle dS={\frac {\delta Q_{\text{rev}}}{T}}}
 , and the fundamental thermodynamic relation) are equivalent for microcanonical ensemble, and statistical ensembles describing a thermodynamic system in equilibrium with a reservoir, such as the canonical ensemble, grand canonical ensemble, isothermal–isobaric ensemble. This equivalence is commonly shown in textbooks. However, the equivalence between the thermodynamic definition of entropy and the  Gibbs entropy is not general but instead an exclusive property of the generalized Boltzmann distribution.
 
 Furthermore, it has been shown that the definitions of entropy in statistical mechanics is the only entropy that is equivalent to the classical thermodynamics entropy under the following postulates:
@@ -210,55 +74,11 @@ The Shannon entropy in information theory is sometimes expressed in units of bit
 
 A direct and physically real relationship between h and S can be found by assigning a symbol to each microstate that occurs per mole, kilogram, volume, or particle of a homogeneous substance, then calculating the 'h' of these symbols. By theory or by observation, the symbols (microstates) will occur with different probabilities and this will determine h. If there are N moles, kilograms, volumes, or particles of the unit substance, the relationship between h (in bits per unit substance) and physical extensive entropy in nats is:
 
-        S
-
-        =
-          k
-              B
-        ln
-
-        ⁡
-
-        (
-
-        2
-
-        )
-
-        N
-
-        h
-    {\displaystyle S=k_{\mathrm {B} }\ln(2)Nh}
+{\displaystyle S=k_{\mathrm {B} }\ln(2)Nh}
 
 where ln(2) is the conversion factor from base 2 of Shannon entropy to the natural base e of physical entropy.  N h is the amount of information in bits needed to describe the state of a physical system with entropy S.  Landauer's principle demonstrates the reality of this by stating the minimum energy E required (and therefore heat Q generated) by an ideally efficient memory change or logic operation by irreversibly erasing or merging N h bits of information will be S times the temperature which is
 
-        E
-
-        =
-
-        Q
-
-        =
-
-        T
-          k
-              B
-        ln
-
-        ⁡
-
-        (
-
-        2
-
-        )
-
-        N
-
-        h
-
-        ,
-    {\displaystyle E=Q=Tk_{\mathrm {B} }\ln(2)Nh,}
+{\displaystyle E=Q=Tk_{\mathrm {B} }\ln(2)Nh,}
 
 where h is in informational bits and E and Q are in physical Joules. This has been experimentally confirmed.
 
@@ -271,16 +91,8 @@ Temperature is a measure of the average kinetic energy per particle in an ideal 
 A physical thought experiment demonstrating how just the possession of information might in principle have thermodynamic consequences was established in 1929 by Leó Szilárd, in a refinement of the famous Maxwell's demon scenario (and a reversal of the Joule expansion thought experiment).
 
 Consider Maxwell's set-up, but with only a single gas particle in a box.  If the demon knows which half of the box the particle is in (equivalent to a single bit of information), it can close a shutter between the two halves of the box, close a piston unopposed into the empty half of the box, and then extract 
-          k
-            B
-        T
 
-        ln
-
-        ⁡
-
-        2
-    {\displaystyle k_{\text{B}}T\ln 2}
+{\displaystyle k_{\text{B}}T\ln 2}
  joules of useful work if the shutter is opened again. The particle can then be left to isothermally expand back to its original equilibrium occupied volume.  In just the right circumstances therefore, the possession of a single bit of Shannon information (a single bit of negentropy in Brillouin's term) really does correspond to a reduction in the entropy of the physical system.  The global entropy is not decreased, but information to free energy conversion is possible.
 
 This thought experiment has been physically demonstrated, using a phase-contrast microscope equipped with a high speed camera connected to a computer, acting as the demon. In this experiment, information to energy conversion is performed on a Brownian particle by means of feedback control; that is, synchronizing the work given to the particle with the information obtained on its position.  Computing energy balances for different feedback protocols, has confirmed that the Jarzynski equality requires a generalization that accounts for the amount of information involved in the feedback.

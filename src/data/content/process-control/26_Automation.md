@@ -180,14 +180,8 @@ Sequence control, in which a programmed sequence of discrete operations is perfo
 A proportional–integral–derivative controller (PID controller) is a control loop feedback mechanism (controller) widely used in industrial control systems.
 
 In a PID loop, the controller continuously calculates an error value 
-        e
 
-        (
-
-        t
-
-        )
-    {\displaystyle e(t)}
+{\displaystyle e(t)}
  as the difference between a desired setpoint and a measured process variable and applies a correction based on proportional, integral, and derivative terms, respectively (sometimes denoted P, I, and D) which give their name to the controller type.
 
 The theoretical understanding and application date from the 1920s, and they are implemented in nearly all analog control systems; originally in mechanical controllers, and then using discrete electronics and latterly in industrial process computers.

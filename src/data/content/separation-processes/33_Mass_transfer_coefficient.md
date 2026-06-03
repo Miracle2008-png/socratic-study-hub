@@ -7,9 +7,6 @@ In engineering, the mass transfer coefficient is a diffusion rate constant that 
 (mol/s)/(m2·mol/m3) = m/s
 
 Note, the units will vary based upon which units the driving force is expressed in. The driving force shown here  as '
-          Δ
-            c
-              A
 
 $$ {\Delta c_{A}} $$
 

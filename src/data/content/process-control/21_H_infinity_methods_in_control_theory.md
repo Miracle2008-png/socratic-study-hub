@@ -9,217 +9,42 @@ The plant P has two inputs, the exogenous input w, that includes reference signa
 
 In formulae, the system is:
 
-            [
-                  z
-                  v
-            ]
-        =
-          P
-        (
+{\displaystyle {\begin{bmatrix}z\\v\end{bmatrix}}=\mathbf {P} (s)\,{\begin{bmatrix}w\\u\end{bmatrix}}={\begin{bmatrix}P_{11}(s)&P_{12}(s)\\P_{21}(s)&P_{22}(s)\end{bmatrix}}\,{\begin{bmatrix}w\\u\end{bmatrix}}}
 
-        s
-
-        )
-            [
-                  w
-                  u
-            ]
-        =
-            [
-                    P
-                      11
-                  (
-
-                  s
-
-                  )
-                    P
-                      12
-                  (
-
-                  s
-
-                  )
-                    P
-                      21
-                  (
-
-                  s
-
-                  )
-                    P
-                      22
-                  (
-
-                  s
-
-                  )
-            ]
-            [
-                  w
-                  u
-            ]
-    {\displaystyle {\begin{bmatrix}z\\v\end{bmatrix}}=\mathbf {P} (s)\,{\begin{bmatrix}w\\u\end{bmatrix}}={\begin{bmatrix}P_{11}(s)&P_{12}(s)\\P_{21}(s)&P_{22}(s)\end{bmatrix}}\,{\begin{bmatrix}w\\u\end{bmatrix}}}
-
-        u
-
-        =
-          K
-        (
-
-        s
-
-        )
-        v
-    {\displaystyle u=\mathbf {K} (s)\,v}
+{\displaystyle u=\mathbf {K} (s)\,v}
 
 It is therefore possible to express the dependency of z on w as:
 
-        z
-
-        =
-          F
-            ℓ
-        (
-          P
-        ,
-          K
-        )
-        w
-    {\displaystyle z=F_{\ell }(\mathbf {P} ,\mathbf {K} )\,w}
+{\displaystyle z=F_{\ell }(\mathbf {P} ,\mathbf {K} )\,w}
 
 Called the lower linear fractional transformation,  
-          F
-            ℓ
-    {\displaystyle F_{\ell }}
+{\displaystyle F_{\ell }}
  is defined (the subscript comes from lower):
 
-          F
-            ℓ
-        (
-          P
-        ,
-          K
-        )
-
-        =
-          P
-            11
-        +
-          P
-            12
-          K
-        (
-
-        I
-
-        −
-          P
-            22
-          K
-          )
-            −
-
-            1
-          P
-            21
-    {\displaystyle F_{\ell }(\mathbf {P} ,\mathbf {K} )=P_{11}+P_{12}\,\mathbf {K} \,(I-P_{22}\,\mathbf {K} )^{-1}\,P_{21}}
+{\displaystyle F_{\ell }(\mathbf {P} ,\mathbf {K} )=P_{11}+P_{12}\,\mathbf {K} \,(I-P_{22}\,\mathbf {K} )^{-1}\,P_{21}}
 
 Therefore, the objective of 
-              H
-            ∞
-    {\displaystyle {\mathcal {H}}_{\infty }}
+{\displaystyle {\mathcal {H}}_{\infty }}
  control design is to find a controller 
-          K
-    {\displaystyle \mathbf {K} }
+{\displaystyle \mathbf {K} }
  such that 
-          F
-            ℓ
-        (
-          P
-        ,
-          K
-        )
-    {\displaystyle F_{\ell }(\mathbf {P} ,\mathbf {K} )}
+{\displaystyle F_{\ell }(\mathbf {P} ,\mathbf {K} )}
  is minimised according to the 
-              H
-            ∞
-    {\displaystyle {\mathcal {H}}_{\infty }}
+{\displaystyle {\mathcal {H}}_{\infty }}
  norm. The same definition applies to 
-              H
-            2
-    {\displaystyle {\mathcal {H}}_{2}}
+{\displaystyle {\mathcal {H}}_{2}}
  control design. The infinity norm of the transfer function matrix 
-          F
-            ℓ
-        (
-          P
-        ,
-          K
-        )
-    {\displaystyle F_{\ell }(\mathbf {P} ,\mathbf {K} )}
+{\displaystyle F_{\ell }(\mathbf {P} ,\mathbf {K} )}
  is defined as:
 
-          |
-          |
-          F
-            ℓ
-        (
-          P
-        ,
-          K
-        )
-          |
-            |
-            ∞
-        =
-          sup
-            ω
-              σ
-
-              ¯
-        (
-          F
-            ℓ
-        (
-          P
-        ,
-          K
-        )
-
-        (
-
-        j
-
-        ω
-
-        )
-
-        )
-    {\displaystyle ||F_{\ell }(\mathbf {P} ,\mathbf {K} )||_{\infty }=\sup _{\omega }{\bar {\sigma }}(F_{\ell }(\mathbf {P} ,\mathbf {K} )(j\omega ))}
+{\displaystyle ||F_{\ell }(\mathbf {P} ,\mathbf {K} )||_{\infty }=\sup _{\omega }{\bar {\sigma }}(F_{\ell }(\mathbf {P} ,\mathbf {K} )(j\omega ))}
 
 where 
-              σ
 
-              ¯
-    {\displaystyle {\bar {\sigma }}}
+{\displaystyle {\bar {\sigma }}}
  is the maximum singular value of the matrix 
-          F
-            ℓ
-        (
-          P
-        ,
-          K
-        )
 
-        (
-
-        j
-
-        ω
-
-        )
-    {\displaystyle F_{\ell }(\mathbf {P} ,\mathbf {K} )(j\omega )}
+{\displaystyle F_{\ell }(\mathbf {P} ,\mathbf {K} )(j\omega )}
 .
 
 The achievable H∞ norm of the closed loop system is mainly given through the matrix D11 (when the system P is given in the form (A, B1, B2, C1, C2, D11, D12, D22, D21)). There are several ways to come to an H∞ controller:

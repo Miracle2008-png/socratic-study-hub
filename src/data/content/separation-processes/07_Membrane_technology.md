@@ -74,54 +74,13 @@ Flat plates are usually constructed as circular thin flat membrane surfaces to b
 
 The selection of synthetic membranes for a targeted separation process is usually based on few requirements. Membranes have to provide enough mass transfer area to process large amounts of feed stream. The selected membrane has to have high selectivity (rejection) properties for certain particles; it has to resist fouling and to have high mechanical stability. It also needs to be reproducible and to have low manufacturing costs. The main modeling equation for the dead-end filtration at constant pressure drop is represented by Darcy's law:
 
-              d
-                V
-                  p
-              d
-
-              t
-        =
-
-        Q
-
-        =
-              Δ
-
-              p
-            μ
-        A
-          (
-              1
-                  R
-                    m
-                +
-
-                R
-          )
-
 $$ {\frac {dV_{p}}{dt}}=Q={\frac {\Delta p}{\mu }}\ A\left({\frac {1}{R_{m}+R}}\right) $$
 
 where Vp and Q are the volume of the permeate and its volumetric flow rate respectively (proportional to same characteristics of the feed flow), μ is dynamic viscosity of permeating fluid, A is membrane area, Rm and R are the respective resistances of membrane and growing deposit of the foulants.  Rm can be interpreted as a membrane resistance to the solvent (water) permeation. This resistance is a membrane intrinsic property and is expected to be fairly constant and independent of the driving force, Δp. R is related to the type of membrane foulant, its concentration in the filtering solution, and the nature of foulant-membrane interactions. Darcy's law allows for calculation of the membrane area for a targeted separation at given conditions. The solute sieving coefficient is defined by the equation:
 
-        S
-
-        =
-              C
-                p
-              C
-                f
-
 $$ S={\frac {C_{p}}{C_{f}}} $$
 
 where Cf and Cp are the solute concentrations in feed and permeate respectively. Hydraulic permeability is defined as the inverse of resistance and is represented by the equation:
-
-          L
-            p
-        =
-            J
-              Δ
-
-              p
 
 $$ L_{p}={\frac {J}{\Delta p}} $$
 

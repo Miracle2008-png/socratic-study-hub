@@ -8,35 +8,17 @@ There is an intimate connection of quantum thermodynamics with the theory of ope
 
 bath scenario, the global Hamiltonian can be decomposed into:
 
-        H
-
-        =
-          H
-            S
-        +
-          H
-            B
-        +
-          H
-            SB
-
 $$ H=H_{\text{S}}+H_{\text{B}}+H_{\text{SB}} $$
 
 where 
-          H
-            S
 
 $$ H_{\text{S}} $$
 
  is the system Hamiltonian, 
-          H
-            B
 
 $$ H_{\text{B}} $$
 
  is the bath Hamiltonian and 
-          H
-            SB
 
 $$ H_{\text{SB}} $$
 
@@ -44,219 +26,53 @@ $$ H_{\text{SB}} $$
 
 The state of the system is obtained from a partial trace over the combined system and bath:
 
-          ρ
-            S
-        (
-
-        t
-
-        )
-
-        =
-          Tr
-            B
-        ⁡
-
-        (
-          ρ
-            SB
-        (
-
-        t
-
-        )
-
-        )
-
-        .
-
 $$ \rho _{\text{S}}(t)=\operatorname {Tr} _{\text{B}}(\rho _{\text{SB}}(t)). $$
 
 Reduced dynamics is an equivalent description of the system dynamics utilizing only system operators.
 
 Assuming Markov property for the dynamics the basic equation of motion for an open quantum system is the Lindblad equation (GKLS):
 
-                ρ
-
-                ˙
-            S
-        =
-
-        −
-            i
-
-            ℏ
-        [
-          H
-            S
-        ,
-          ρ
-            S
-        ]
-
-        +
-          L
-            D
-        (
-          ρ
-            S
-        )
-
 $$ {\dot {\rho }}_{\text{S}}=-{i \over \hbar }[H_{\text{S}},\rho _{\text{S}}]+L_{\text{D}}(\rho _{\text{S}}) $$
-
-          H
-            S
 
 $$ H_{\text{S}} $$
 
  is a (Hermitian) Hamiltonian part and 
-          L
-            D
 
 $$ L_{\text{D}} $$
 
 :
 
-          L
-            D
-        (
-          ρ
-            S
-        )
-
-        =
-          ∑
-            n
-          [
-              V
-                n
-              ρ
-                S
-              V
-                n
-                †
-            −
-                  1
-
-                  2
-              (
-                  ρ
-                    S
-                  V
-                    n
-                    †
-                  V
-                    n
-                +
-                  V
-                    n
-                    †
-                  V
-                    n
-                  ρ
-                    S
-              )
-          ]
-
 $$ L_{\text{D}}(\rho _{\text{S}})=\sum _{n}\left[V_{n}\rho _{\text{S}}V_{n}^{\dagger }-{\tfrac {1}{2}}\left(\rho _{\text{S}}V_{n}^{\dagger }V_{n}+V_{n}^{\dagger }V_{n}\rho _{\text{S}}\right)\right] $$
 
 is the dissipative part describing implicitly through system operators 
-          V
-            n
 
 $$ V_{n} $$
 
  the influence of the bath on the system.
 
 The Markov property imposes that the system and bath are uncorrelated at all times 
-          ρ
-            SB
-        =
-          ρ
-            s
-        ⊗
-          ρ
-            B
 
 $$ \rho _{\text{SB}}=\rho _{s}\otimes \rho _{\text{B}} $$
 
 . The L-GKS equation is unidirectional and leads any initial state 
-          ρ
-            S
 
 $$ \rho _{\text{S}} $$
 
  to a steady state solution which is an invariant of the equation of motion 
-                ρ
-
-                ˙
-            S
-        (
-
-        t
-
-        →
-
-        ∞
-
-        )
-
-        =
-
-        0
 
 $$ {\dot {\rho }}_{\text{S}}(t\to \infty )=0 $$
 
 .
 
 The Heisenberg picture supplies a direct link to quantum thermodynamic observables. The dynamics of a system observable represented by the operator, 
-        O
 
 $$ O $$
 
 , has the form:
 
-              d
-
-              O
-              d
-
-              t
-        =
-            i
-
-            ℏ
-        [
-          H
-            S
-        ,
-
-        O
-
-        ]
-
-        +
-          L
-            D
-            ∗
-        (
-
-        O
-
-        )
-
-        +
-              ∂
-
-              O
-              ∂
-
-              t
-
 $$ {\frac {dO}{dt}}={\frac {i}{\hbar }}[H_{\text{S}},O]+L_{\text{D}}^{*}(O)+{\frac {\partial O}{\partial t}} $$
 
 where the possibility that the operator, 
-        O
 
 $$ O $$
 
@@ -265,116 +81,42 @@ $$ O $$
 ### Emergence of time derivative of first law of thermodynamics
 
 When 
-        O
-
-        =
-          H
-            S
 
 $$ O=H_{\text{S}} $$
 
  the first law of thermodynamics emerges:
 
-              d
-
-              E
-              d
-
-              t
-        =
-          ⟨
-                ∂
-                  H
-                    S
-                ∂
-
-                t
-          ⟩
-        +
-
-        ⟨
-          L
-            D
-            ∗
-        (
-          H
-            S
-        )
-
-        ⟩
-
 $$ {\frac {dE}{dt}}=\left\langle {\frac {\partial H_{\text{S}}}{\partial t}}\right\rangle +\langle L_{\text{D}}^{*}(H_{\text{S}})\rangle $$
 
 where power is interpreted as
-
-        P
-
-        =
-          ⟨
-                ∂
-                  H
-                    S
-                ∂
-
-                t
-          ⟩
 
 $$ P=\left\langle {\frac {\partial H_{\text{S}}}{\partial t}}\right\rangle $$
 
 and the heat current
 
-        J
-
-        =
-          ⟨
-              L
-                D
-                ∗
-            (
-              H
-                S
-            )
-          ⟩
-        .
-
 $$ J=\left\langle L_{\text{D}}^{*}(H_{\text{S}})\right\rangle . $$
 
 Additional conditions have to be imposed on the dissipator 
-          L
-            D
 
 $$ L_{\text{D}} $$
 
  to be consistent with thermodynamics.
 
 First the invariant 
-          ρ
-            S
-        (
-
-        ∞
-
-        )
 
 $$ \rho _{\text{S}}(\infty ) $$
 
  should become an equilibrium Gibbs state. This implies that the dissipator 
-          L
-            D
 
 $$ L_{\text{D}} $$
 
  should commute with the unitary part generated by 
-          H
-            S
 
 $$ H_{\text{S}} $$
 
 . In addition an equilibrium state is stationary and stable. This assumption is used to derive the Kubo-Martin-Schwinger stability criterion for thermal equilibrium i.e. KMS state.
 
 A unique and consistent approach is obtained by deriving the generator, 
-          L
-            D
 
 $$ L_{\text{D}} $$
 
@@ -387,16 +129,12 @@ between the system and bath, i.e., a quantum version of an isothermal partition.
 Markovian behavior involves a rather complicated cooperation between system and bath dynamics. This means that in
 
 phenomenological treatments, one cannot combine arbitrary system Hamiltonians, 
-          H
-            S
 
 $$ H_{\text{S}} $$
 
 , with a given L-GKS generator. This observation is particularly important in the context of quantum thermodynamics, where it is tempting to study Markovian dynamics with an arbitrary control Hamiltonian. Erroneous derivations of the quantum master equation can easily lead to a violation of the laws of thermodynamics.
 
 An external perturbation modifying the Hamiltonian of the system will also modify the heat flow. As a result, the L-GKS generator has to be renormalized. For a slow change, one can adopt the adiabatic approach and use the instantaneous system's Hamiltonian to derive 
-          L
-            D
 
 $$ L_{\text{D}} $$
 
@@ -419,111 +157,46 @@ From a static viewpoint, for a closed quantum system, the 2nd law of thermodynam
 In thermodynamics, entropy is related to the amount of energy of a system that can be converted into mechanical work in a concrete process. In quantum mechanics, this translates to the ability to measure and manipulate the system based on the information gathered by measurement. An example is the case of Maxwell's demon, which has been resolved by Leó Szilárd.
 
 The entropy of an observable is associated with the complete projective measurement of an observable,
-        ⟨
-
-        A
-
-        ⟩
 
 $$ \langle A\rangle $$
 
 , where the operator 
-        A
 
 $$ A $$
 
  has a spectral decomposition:
 
-        A
-
-        =
-          ∑
-            j
-          α
-            j
-          P
-            j
-        ,
-
 $$ A=\sum _{j}\alpha _{j}P_{j}, $$
 
  where 
-          P
-            j
 
 $$ P_{j} $$
 
  are the projection operators of the eigenvalue 
-          α
-            j
-        .
 
 $$ \alpha _{j}. $$
 
 The probability of outcome 
-        j
 
 $$ j $$
 
  is 
-          p
-            j
-        =
-
-        Tr
-
-        ⁡
-
-        (
-
-        ρ
-          P
-            j
-        )
-
-        .
 
 $$ p_{j}=\operatorname {Tr} (\rho P_{j}). $$
 
  The entropy associated with the observable 
-        ⟨
-
-        A
-
-        ⟩
 
 $$ \langle A\rangle $$
 
  is the Shannon entropy with respect to the possible outcomes:
 
-          S
-            A
-        =
-
-        −
-          ∑
-            j
-          p
-            j
-        ln
-
-        ⁡
-          p
-            j
-
 $$ S_{A}=-\sum _{j}p_{j}\ln p_{j} $$
 
 The most significant observable in thermodynamics is the energy represented by the Hamiltonian operator 
-        H
-
-        ,
 
 $$ H, $$
 
  and its associated energy entropy, 
-          S
-            E
-        .
 
 $$ S_{E}. $$
 
@@ -531,72 +204,23 @@ John von Neumann suggested to single out the most informative observable to char
 
 entropy of this observable is termed the Von Neumann entropy and is equal to
 
-          S
-            vn
-        =
-
-        −
-
-        Tr
-
-        ⁡
-
-        (
-
-        ρ
-
-        ln
-
-        ⁡
-
-        ρ
-
-        )
-
-        .
-
 $$ S_{\text{vn}}=-\operatorname {Tr} (\rho \ln \rho ). $$
 
 As a consequence, 
-          S
-            A
-        ≥
-          S
-            vn
 
 $$ S_{A}\geq S_{\text{vn}} $$
 
  for all observables. At thermal equilibrium the energy entropy is equal to the von Neumann entropy: 
-          S
-            E
-        =
-          S
-            vn
-        .
 
 $$ S_{E}=S_{\text{vn}}. $$
-
-          S
-            vn
 
 $$ S_{\text{vn}} $$
 
  is invariant to a unitary transformation changing the state. The Von Neumann entropy 
-          S
-            vn
 
 $$ S_{\text{vn}} $$
 
  is additive only for a system state that is composed of a tensor product of its subsystems:
-
-        ρ
-
-        =
-          Π
-            j
-        ⊗
-          ρ
-            j
 
 $$ \rho =\Pi _{j}\otimes \rho _{j} $$
 
@@ -606,65 +230,13 @@ No process is possible whose sole result is the transfer of heat from a body of 
 
 This statement for N-coupled heat baths in steady state becomes
 
-          ∑
-            n
-              J
-                n
-              T
-                n
-        ≥
-
-        0
-
 $$ \sum _{n}{\frac {J_{n}}{T_{n}}}\geq 0 $$
 
 A dynamical version of the II-law can be proven, based on Spohn's inequality:
 
-        Tr
-
-        ⁡
-          (
-              L
-                D
-            ρ
-              [
-                ln
-
-                ⁡
-
-                ρ
-
-                (
-
-                ∞
-
-                )
-
-                −
-
-                ln
-
-                ⁡
-
-                ρ
-              ]
-          )
-        ≥
-
-        0
-
-        ,
-
 $$ \operatorname {Tr} \left(L_{\text{D}}\rho \left[\ln \rho (\infty )-\ln \rho \right]\right)\geq 0, $$
 
 which is valid for any L-GKS generator, with a stationary state, 
-        ρ
-
-        (
-
-        ∞
-
-        )
 
 $$ \rho (\infty ) $$
 
@@ -679,54 +251,18 @@ Thermodynamic adiabatic processes have no entropy change. Typically, an external
 the state. A quantum version of an adiabatic process can be modeled by an externally controlled time dependent
 
 Hamiltonian 
-        H
-
-        (
-
-        t
-
-        )
 
 $$ H(t) $$
 
 . If the system is isolated, the dynamics are unitary, and therefore, 
-          S
-            vn
 
 $$ S_{\text{vn}} $$
 
  is a constant. A quantum adiabatic process is defined by the energy entropy 
-          S
-            E
 
 $$ S_{E} $$
 
  being constant. The quantum adiabatic condition is therefore equivalent to no net change in the population of the instantaneous energy levels. This implies that the Hamiltonian should commute with itself at different times: 
-        [
-
-        H
-
-        (
-
-        t
-
-        )
-
-        ,
-
-        H
-
-        (
-          t
-
-          ′
-        )
-
-        ]
-
-        =
-
-        0
 
 $$ [H(t),H(t')]=0 $$
 
@@ -753,87 +289,32 @@ When the cold bath approaches the absolute zero temperature,
 it is necessary to eliminate the entropy production divergence at the cold side
 
 when 
-          T
-            c
-        →
-
-        0
 
 $$ T_{\text{c}}\rightarrow 0 $$
 
 , therefore
 
-                S
-
-                ˙
-            c
-        ∝
-
-        −
-          T
-            c
-            α
-        ,
-        α
-
-        ≥
-
-        0
-        .
-
 $$ {\dot {S}}_{\text{c}}\propto -T_{\text{c}}^{\alpha }~~~,~~~~\alpha \geq 0~~. $$
 
 For 
-        α
-
-        =
-
-        0
 
 $$ \alpha =0 $$
 
  the fulfillment of the second law depends on the entropy production of the other baths, which should compensate for the negative entropy production of the cold bath.
 
 The first formulation of the third law modifies this restriction. Instead of 
-        α
-
-        ≥
-
-        0
 
 $$ \alpha \geq 0 $$
 
  the third law imposes 
-        α
-
-        >
-
-        0
 
 $$ \alpha >0 $$
 
 , guaranteeing that at absolute zero the entropy production at the cold bath is zero: 
-                S
-
-                ˙
-            c
-        =
-
-        0
 
 $$ {\dot {S}}_{\text{c}}=0 $$
 
 . This requirement leads to the scaling condition of the heat current 
-            J
-            c
-        ∝
-          T
-            c
-            α
-
-            +
-
-            1
 
 $$ {J}_{\text{c}}\propto T_{\text{c}}^{\alpha +1} $$
 
@@ -845,155 +326,41 @@ No refrigerator can cool a system to absolute zero temperature at finite time.
 
 The dynamics of the cooling process is governed by the equation:
 
-            J
-            c
-        (
-          T
-            c
-        (
-
-        t
-
-        )
-
-        )
-
-        =
-
-        −
-          c
-            V
-        (
-          T
-            c
-        (
-
-        t
-
-        )
-
-        )
-              d
-                T
-                  c
-              (
-
-              t
-
-              )
-              d
-
-              t
-        .
-
 $$ {J}_{\text{c}}(T_{\text{c}}(t))=-c_{V}(T_{\text{c}}(t)){\frac {dT_{\text{c}}(t)}{dt}}~~. $$
 
 where 
-          c
-            V
-        (
-          T
-            c
-        )
 
 $$ c_{V}(T_{\text{c}}) $$
 
  is the heat capacity of the bath. Taking 
-            J
-            c
-        ∝
-          T
-            c
-            α
-
-            +
-
-            1
 
 $$ {J}_{\text{c}}\propto T_{\text{c}}^{\alpha +1} $$
 
  and 
-          c
-            V
-        ∼
-          T
-            c
-            η
 
 $$ c_{V}\sim T_{\text{c}}^{\eta } $$
 
  with 
-          η
-        ≥
-
-        0
 
 $$ {\eta }\geq 0 $$
 
 , we can quantify this formulation by evaluating the characteristic exponent 
-        ζ
 
 $$ \zeta $$
 
  of the cooling process,
 
-              d
-                T
-                  c
-              (
-
-              t
-
-              )
-              d
-
-              t
-        ∝
-
-        −
-          T
-            c
-            ζ
-        ,
-          T
-            c
-        →
-
-        0
-
-        ,
-          ζ
-
-          =
-
-          α
-
-          −
-
-          η
-
-          +
-
-          1
-
 $$ {\frac {dT_{\text{c}}(t)}{dt}}\propto -T_{\text{c}}^{\zeta },~~~~~T_{\text{c}}\to 0,\;\;\quad {\zeta =\alpha -\eta +1} $$
 
 This equation introduces the relation between the characteristic exponents 
-        ζ
 
 $$ \zeta $$
 
  and 
-        α
 
 $$ \alpha $$
 
 . When 
-        ζ
-
-        <
-
-        0
 
 $$ \zeta <0 $$
 

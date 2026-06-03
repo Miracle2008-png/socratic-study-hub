@@ -12,164 +12,40 @@ In 1883, scientist Osborne Reynolds conducted a fluid dynamics experiment involv
 
 The general form for the Reynolds number flowing through a tube of radius r (or diameter d):
 
-          R
-
-          e
-        =
-              2
-
-              v
-
-              ρ
-
-              r
-            μ
-        =
-              ρ
-
-              v
-
-              d
-            μ
-    {\displaystyle \mathrm {Re} ={\frac {2v\rho r}{\mu }}={\frac {\rho vd}{\mu }}}
+{\displaystyle \mathrm {Re} ={\frac {2v\rho r}{\mu }}={\frac {\rho vd}{\mu }}}
 
 where v is the velocity of the fluid, ρ is its density, r is the radius of the tube, and μ is the dynamic viscosity of the fluid. A turbulent flow in a fluid is defined by the critical Reynolds number, for a closed pipe this works out to approximately
 
-            R
-
-            e
-            c
-        ≈
-
         2000.
-    {\displaystyle \mathrm {Re} _{\text{c}}\approx 2000.}
+{\displaystyle \mathrm {Re} _{\text{c}}\approx 2000.}
 
 In terms of the critical Reynolds number, the critical velocity is represented as
 
-          v
-            c
-        =
-                  R
-
-                  e
-                  c
-              μ
-              ρ
-
-              d
-        .
-    {\displaystyle v_{\text{c}}={\frac {\mathrm {Re} _{\text{c}}\mu }{\rho d}}.}
+{\displaystyle v_{\text{c}}={\frac {\mathrm {Re} _{\text{c}}\mu }{\rho d}}.}
 
 ## Research and development
 
 ### Computational fluid dynamics
 These are turbulence models in which the Reynolds stresses, as obtained from a Reynolds averaging of the Navier–Stokes equations, are modelled by a linear constitutive relationship with the mean flow straining field, as:
 
-        −
-
-        ρ
-
-        ⟨
-          u
-            i
-          u
-            j
-        ⟩
-
-        =
-
-        2
-          μ
-            t
-          S
-            i
-
-            ,
-
-            j
-        −
-              2
-
-              3
-        ρ
-
-        κ
-          δ
-            i
-
-            ,
-
-            j
-    {\displaystyle -\rho \langle u_{i}u_{j}\rangle =2\mu _{t}S_{i,j}-{\tfrac {2}{3}}\rho \kappa \delta _{i,j}}
+{\displaystyle -\rho \langle u_{i}u_{j}\rangle =2\mu _{t}S_{i,j}-{\tfrac {2}{3}}\rho \kappa \delta _{i,j}}
 
 where
 
-          μ
-            t
-    {\displaystyle \mu _{t}}
+{\displaystyle \mu _{t}}
  is the coefficient termed turbulence "viscosity" (also called the eddy viscosity)
 
-        κ
-
-        =
-              1
-
-              2
-            (
-        ⟨
-          u
-            1
-          u
-            1
-        ⟩
-
-        +
-
-        ⟨
-          u
-            2
-          u
-            2
-        ⟩
-
-        +
-
-        ⟨
-          u
-            3
-          u
-            3
-        ⟩
-            )
-    {\textstyle \kappa ={\tfrac {1}{2}}{\bigl (}\langle u_{1}u_{1}\rangle +\langle u_{2}u_{2}\rangle +\langle u_{3}u_{3}\rangle {\bigr )}}
+{\textstyle \kappa ={\tfrac {1}{2}}{\bigl (}\langle u_{1}u_{1}\rangle +\langle u_{2}u_{2}\rangle +\langle u_{3}u_{3}\rangle {\bigr )}}
  is the mean turbulent kinetic energy
 
-          S
-            i
-
-            ,
-
-            j
-    {\displaystyle S_{i,j}}
+{\displaystyle S_{i,j}}
  is the mean strain rate
 
 Note that that inclusion of 
-              2
 
-              3
-        ρ
-
-        κ
-          δ
-            i
-
-            ,
-
-            j
-    {\displaystyle {\tfrac {2}{3}}\rho \kappa \delta _{i,j}}
-  in the linear constitutive relation is required by tensorial algebra purposes when solving for two-equation turbulence models (or any other turbulence model that solves a transport equation for 
-        κ
-    {\displaystyle \kappa }
+{\displaystyle {\tfrac {2}{3}}\rho \kappa \delta _{i,j}}
+in the linear constitutive relation is required by tensorial algebra purposes when solving for two-equation turbulence models (or any other turbulence model that solves a transport equation for
+{\displaystyle \kappa }
 .
 
 ### Hemodynamics

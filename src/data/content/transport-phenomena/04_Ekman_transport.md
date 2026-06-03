@@ -35,8 +35,6 @@ no boundaries;
 infinitely deep water;
 
 eddy viscosity, 
-          A
-            z
 
 $$ A_{z}\,\! $$
 
@@ -47,7 +45,6 @@ the wind forcing is steady and has been blowing for a long time;
 barotropic conditions with no geostrophic flow;
 
 the Coriolis parameter, 
-        f
 
 $$ f\,\! $$
 
@@ -56,64 +53,26 @@ $$ f\,\! $$
 The simplified equations for the Coriolis force in the x and y directions follow from these assumptions:
 
 (1)  
-            1
-
-            ρ
-              ∂
-                τ
-                  x
-              ∂
-
-              z
-        =
-
-        −
-
-        f
-
-        v
-
-        ,
 
 $$ {\frac {1}{\rho }}{\frac {\partial \tau _{x}}{\partial z}}=-fv,\, $$
 
 (2)  
-            1
-
-            ρ
-              ∂
-                τ
-                  y
-              ∂
-
-              z
-        =
-
-        f
-
-        u
-
-        ,
 
 $$ {\frac {1}{\rho }}{\frac {\partial \tau _{y}}{\partial z}}=fu,\, $$
 
 where 
-        τ
 
 $$ \tau \,\! $$
 
  is the wind stress, 
-        ρ
 
 $$ \rho \,\! $$
 
  is the density, 
-        u
 
 $$ u\,\! $$
 
  is the east–west velocity, and 
-        v
 
 $$ v\,\! $$
 
@@ -121,77 +80,21 @@ $$ v\,\! $$
 
 Integrating each equation over the entire Ekman layer:
 
-          τ
-            x
-        =
-
-        −
-          M
-            y
-        f
-
-        ,
-
 $$ \tau _{x}=-M_{y}f,\, $$
-
-          τ
-            y
-        =
-          M
-            x
-        f
-
-        ,
 
 $$ \tau _{y}=M_{x}f,\, $$
 
 where
 
-          M
-            x
-        =
-          ∫
-            0
-            z
-        ρ
-
-        u
-
-        d
-
-        z
-
-        ,
-
 $$ M_{x}=\int _{0}^{z}\rho udz,\, $$
-
-          M
-            y
-        =
-          ∫
-            0
-            z
-        ρ
-
-        v
-
-        d
-
-        z
-
-        .
 
 $$ M_{y}=\int _{0}^{z}\rho vdz.\, $$
 
 Here 
-          M
-            x
 
 $$ M_{x}\,\! $$
 
  and 
-          M
-            y
 
 $$ M_{y}\,\! $$
 
@@ -199,51 +102,11 @@ $$ M_{y}\,\! $$
 
 In order to understand the vertical velocity structure of the water column, equations 1 and 2 can be rewritten in terms of the vertical eddy viscosity term.
 
-              ∂
-                τ
-                  x
-              ∂
-
-              z
-        =
-
-        ρ
-          A
-            z
-                ∂
-                  2
-              u
-              ∂
-                z
-                  2
-        ,
-
 $$ {\frac {\partial \tau _{x}}{\partial z}}=\rho A_{z}{\frac {\partial ^{2}u}{\partial z^{2}}},\,\! $$
-
-              ∂
-                τ
-                  y
-              ∂
-
-              z
-        =
-
-        ρ
-          A
-            z
-                ∂
-                  2
-              v
-              ∂
-                z
-                  2
-        ,
 
 $$ {\frac {\partial \tau _{y}}{\partial z}}=\rho A_{z}{\frac {\partial ^{2}v}{\partial z^{2}}},\,\! $$
 
 where 
-          A
-            z
 
 $$ A_{z}\,\! $$
 
@@ -251,80 +114,19 @@ $$ A_{z}\,\! $$
 
 This gives a set of differential equations of the form
 
-          A
-            z
-                ∂
-                  2
-              u
-              ∂
-                z
-                  2
-        =
-
-        −
-
-        f
-
-        v
-
-        ,
-
 $$ A_{z}{\frac {\partial ^{2}u}{\partial z^{2}}}=-fv,\,\! $$
-
-          A
-            z
-                ∂
-                  2
-              v
-              ∂
-                z
-                  2
-        =
-
-        f
-
-        u
-
-        .
 
 $$ A_{z}{\frac {\partial ^{2}v}{\partial z^{2}}}=fu.\,\! $$
 
 In order to solve this system of two differential equations, two boundary conditions can be applied:
 
-          (
-
-          u
-
-          ,
-
-          v
-
-          )
-
-          →
-
-          0
-
 $$ {(u,v)\to 0} $$
 
  as 
-          z
-
-          →
-
-          −
-
-          ∞
-        ,
 
 $$ {z\to -\infty }, $$
 
 friction is equal to wind stress at the free surface (
-        z
-
-        =
-
-        0
 
 $$ z=0\,\! $$
 
@@ -333,77 +135,14 @@ $$ z=0\,\! $$
 Things can be further simplified by considering wind blowing in the y-direction only. This means is the results will be relative to a north–south wind (although these solutions could be produced relative to wind in any other direction):
 
 (3) 
-                  u
-                    E
-                =
-
-                ±
-                  V
-                    0
-                cos
-
-                ⁡
-                  (
-                        π
-
-                        4
-                    +
-                        π
-                          D
-                            E
-                    z
-                  )
-                exp
-
-                ⁡
-                  (
-                        π
-                          D
-                            E
-                    z
-                  )
-                ,
-                  v
-                    E
-                =
-                  V
-                    0
-                sin
-
-                ⁡
-                  (
-                        π
-
-                        4
-                    +
-                        π
-                          D
-                            E
-                    z
-                  )
-                exp
-
-                ⁡
-                  (
-                        π
-                          D
-                            E
-                    z
-                  )
-                ,
 
 $$ {\begin{aligned}u_{E}&=\pm V_{0}\cos \left({\frac {\pi }{4}}+{\frac {\pi }{D_{E}}}z\right)\exp \left({\frac {\pi }{D_{E}}}z\right),\\v_{E}&=V_{0}\sin \left({\frac {\pi }{4}}+{\frac {\pi }{D_{E}}}z\right)\exp \left({\frac {\pi }{D_{E}}}z\right),\end{aligned}} $$
 
 where
 
-          u
-            E
-
 $$ u_{E}\,\! $$
 
  and 
-          v
-            E
 
 $$ v_{E}\,\! $$
 
@@ -411,50 +150,11 @@ $$ v_{E}\,\! $$
 
 in equation 3 the plus sign applies to the Northern Hemisphere and the minus sign to the southern hemisphere;
 
-          V
-            0
-        =
-                  2
-              π
-                τ
-                  y
-
-                  η
-                D
-                  E
-              ρ
-                |
-              f
-                |
-        ;
-
 $$ V_{0}={\frac {{\sqrt {2}}\pi \tau _{y\eta }}{D_{E}\rho |f|}};\,\! $$
-
-          τ
-            y
-
-            η
 
 $$ \tau _{y\eta }\,\! $$
 
  is the wind stress on the sea surface;
-
-          D
-            E
-        =
-
-        π
-            (
-                  2
-                    A
-                      z
-                    |
-                  f
-                    |
-            )
-            1
-              /
-            2
 
 $$ D_{E}=\pi \left({\frac {2A_{z}}{|f|}}\right)^{1/2}\,\! $$
 
@@ -479,556 +179,146 @@ Surface currents flow at a 45° angle to the wind due to a balance between the C
 #### Bottom Ekman spiral
 
 In order to derive the properties of an Ekman spiral a look is taken at a uniform, horizontal geostrophic interior flow in a homogeneous fluid. This flow will be denoted by 
-              u
-
-              →
-        =
-
-        (
-              u
-
-              ¯
-        ,
-              v
-
-              ¯
-        )
 
 $$ {\vec {u}}=({\bar {u}},{\bar {v}}) $$
 
 , where the two components are constant because of uniformity. Another result of this property is that the horizontal gradients will equal zero. As a result, the continuity equation will yield, 
-              ∂
-
-              w
-              ∂
-
-              z
-        =
-
-        0
 
 $$ {\frac {\partial w}{\partial z}}=0 $$
 
 . Note that the concerning interior flow is horizontal, so 
-        w
-
-        =
-
-        0
 
 $$ w=0 $$
 
  at all depths, even in the boundary layers. In this case, the Navier-Stokes momentum equations, governing geophysical motion can now be reduced to:
 
-                −
-
-                f
-
-                v
-                =
-
-                −
-                    1
-                      ρ
-                        0
-                      ∂
-
-                      p
-                      ∂
-
-                      x
-                +
-                  ν
-                    E
-                        ∂
-                          2
-                      u
-                      ∂
-                        z
-                          2
-                ,
-                f
-
-                u
-                =
-
-                −
-                    1
-                      ρ
-                        0
-                      ∂
-
-                      p
-                      ∂
-
-                      y
-                +
-                  ν
-                    E
-                        ∂
-                          2
-                      v
-                      ∂
-                        z
-                          2
-                ,
-                0
-                =
-
-                −
-                    1
-                      ρ
-                        0
-                      ∂
-
-                      p
-                      ∂
-
-                      z
-                ,
-
 $$ {\begin{aligned}-fv&=-{\frac {1}{\rho _{0}}}{\frac {\partial p}{\partial x}}+\nu _{E}{\frac {\partial ^{2}u}{\partial z^{2}}},\\[5pt]fu&=-{\frac {1}{\rho _{0}}}{\frac {\partial p}{\partial y}}+\nu _{E}{\frac {\partial ^{2}v}{\partial z^{2}}},\\[5pt]0&=-{\frac {1}{\rho _{0}}}{\frac {\partial p}{\partial z}},\end{aligned}} $$
 
 Where 
-        f
 
 $$ f $$
 
  is the Coriolis parameter, 
-          ρ
-            0
 
 $$ \rho _{0} $$
 
  the fluid density and 
-          ν
-            E
 
 $$ \nu _{E} $$
 
  the eddy viscosity, which are all taken as a constant here for simplicity. These parameters have a small variance on the scale of an Ekman spiral, thus this approximation will hold. A uniform flow requires a uniformly varying pressure gradient. When substituting the flow components of the interior flow, 
-        u
-
-        =
-              u
-
-              ¯
 
 $$ u={\bar {u}} $$
 
  and 
-        v
-
-        =
-              v
-
-              ¯
 
 $$ v={\bar {v}} $$
 
 , in the equations above, the following is obtained:
 
-                −
-
-                f
-                      v
-
-                      ¯
-                =
-
-                −
-                    1
-                      ρ
-                        0
-                      ∂
-
-                      p
-                      ∂
-
-                      x
-                =
-                  constant
-                f
-                      u
-
-                      ¯
-                =
-
-                −
-                    1
-                      ρ
-                        0
-                      ∂
-
-                      p
-                      ∂
-
-                      y
-                =
-                  constant
-
 $$ {\begin{aligned}-f{\bar {v}}&=-{\frac {1}{\rho _{0}}}{\frac {\partial p}{\partial x}}={\text{constant}}\\[5pt]f{\bar {u}}&=-{\frac {1}{\rho _{0}}}{\frac {\partial p}{\partial y}}={\text{constant}}\end{aligned}} $$
 
 Using the last of the three equations at the top of this section, yields that the pressure is independent of depth.
 
-                −
-
-                f
-
-                (
-
-                v
-
-                −
-                      v
-
-                      ¯
-                )
-                =
-                  ν
-                    E
-                        ∂
-                          2
-                      u
-                      ∂
-                        z
-                          2
-                f
-
-                (
-
-                u
-
-                −
-                      u
-
-                      ¯
-                )
-                =
-                  ν
-                    E
-                        ∂
-                          2
-                      v
-                      ∂
-                        z
-                          2
-
 $$ {\begin{aligned}-f(v-{\bar {v}})&=\nu _{E}{\frac {\partial ^{2}u}{\partial z^{2}}}\\[5pt]f(u-{\bar {u}})&=\nu _{E}{\frac {\partial ^{2}v}{\partial z^{2}}}\end{aligned}} $$
-
-        u
-
-        =
-              u
-
-              ¯
-        +
-
-        A
-          e
-            λ
-
-            z
 
 $$ u={\bar {u}}+Ae^{\lambda z} $$
 
  and  
-        v
-
-        =
-              v
-
-              ¯
-        +
-
-        B
-          e
-            λ
-
-            z
 
 $$ v={\bar {v}}+Be^{\lambda z} $$
 
  will suffice as a solution to the differential equations above. After substitution of these possible solutions in the same equations,  
-          ν
-            E
-            2
-          λ
-            4
-        +
-          f
-            2
-        =
-
-        0
 
 $$ \nu _{E}^{2}\lambda ^{4}+f^{2}=0 $$
 
  will follow. Now,  
-        λ
 
 $$ \lambda $$
 
  has the following possible outcomes:
 
-        λ
-
-        =
-
-        ±
-
-        (
-
-        1
-
-        ±
-
-        i
-
-        )
-              f
-                2
-                  ν
-                    E
-
 $$ \lambda =\pm (1\pm i){\sqrt {\frac {f}{2\nu _{E}}}} $$
 
 Because of the no-slip condition at the bottom and the constant interior flow for 
-        z
-
-        ≫
-
-        d
 
 $$ z\gg d $$
 
 , coefficients 
-        A
 
 $$ A $$
 
  and 
-        B
 
 $$ B $$
 
  can be determined. In the end, this will lead to the following solution for 
-              u
-
-              →
-        (
-
-        z
-
-        )
 
 $$ {\vec {u}}(z) $$
 
 :
 
-                u
-                =
-                      u
-
-                      ¯
-                  [
-                    1
-
-                    −
-                      e
-                        −
-
-                        z
-                          /
-                        d
-                    cos
-
-                    ⁡
-                      (
-                          z
-
-                          d
-                      )
-                  ]
-                −
-                      v
-
-                      ¯
-                  e
-                    −
-
-                    z
-                      /
-                    d
-                sin
-
-                ⁡
-                  (
-                      z
-
-                      d
-                  )
-                ,
-                v
-                =
-                      u
-
-                      ¯
-                  e
-                    −
-
-                    z
-                      /
-                    d
-                sin
-
-                ⁡
-                  (
-                      z
-
-                      d
-                  )
-                +
-                      v
-
-                      ¯
-                  [
-                    1
-
-                    −
-                      e
-                        −
-
-                        z
-                          /
-                        d
-                    cos
-
-                    ⁡
-                      (
-                          z
-
-                          d
-                      )
-                  ]
-                ,
-
 $$ {\begin{aligned}u&={\bar {u}}\left[1-e^{-z/d}\cos \left({\frac {z}{d}}\right)\right]-{\bar {v}}e^{-z/d}\sin \left({\frac {z}{d}}\right),\\[5pt]v&={\bar {u}}e^{-z/d}\sin \left({\frac {z}{d}}\right)+{\bar {v}}\left[1-e^{-z/d}\cos \left({\frac {z}{d}}\right)\right],\end{aligned}} $$
 
 Here, 
-        d
-
-        =
-                2
-                  ν
-                    E
-              f
 
 $$ d={\sqrt {\frac {2\nu _{E}}{f}}} $$
 
 . Note that the velocity vector will approach the values of the interior flow, when the 
-        z
 
 $$ z $$
 
  takes the order of 
-        d
 
 $$ d $$
 
 . This is the reason why 
-        d
 
 $$ d $$
 
  is defined as the thickness of the Ekman layer. A number of important properties of the Ekman spiral will follow from this solution: 
 
 When 
-        z
-
-        →
-          0
 
 $$ z\rightarrow {0} $$
 
 , it appears that the flow has a transverse component with respect to the interior flow, which differs 45 degrees to the left on the Northern Hemisphere, 
-        f
-
-        >
-
-        0
 
 $$ f>0 $$
 
 , and 45 degrees to the right on the Southern Hemisphere, 
-        f
-
-        <
-
-        0
 
 $$ f<0 $$
 
 . Note that, in this case, the angle between this flow and the interior flow is at its maximum. It will decrease for increasing 
-        z
 
 $$ z $$
 
 .
 
 When 
-            z
-
-            d
 
 $$ {\frac {z}{d}} $$
 
  takes the value of 
-        π
 
 $$ \pi $$
 
 , the resulting flow is in line with the interior flow, but will be increased with 
-          e
-            −
-
-            π
 
 $$ e^{-\pi } $$
 
 , with respect to the interior flow.
 
 For higher values of 
-            z
-
-            d
 
 $$ {\frac {z}{d}} $$
 
 , there will be a minimal transverse component in the other direction as before. The exponential term will go to zero for 
-        z
-
-        ≫
-
-        d
 
 $$ z\gg d $$
 
 , resulting in 
-              u
-
-              →
-        =
-
-        (
-              u
-
-              ¯
-        ,
-              v
-
-              ¯
-        )
 
 $$ {\vec {u}}=({\bar {u}},{\bar {v}}) $$
 
@@ -1037,269 +327,48 @@ $$ {\vec {u}}=({\bar {u}},{\bar {v}}) $$
 #### Surface Ekman spiral
 
 The solution for the flow forming the bottom Ekman spiral was a result of the shear stress exerted on the flow by the bottom. Logically, wherever shear stress can be exerted on a flow, Ekman spirals will form. This is the case at the air–water interface, because of wind. A situation is considered where a wind stress 
-              τ
-
-              →
-        =
-
-        (
-          τ
-            x
-        ,
-          τ
-            y
-        )
 
 $$ {\vec {\tau }}=(\tau _{x},\tau _{y}) $$
 
  is exerted along a water-surface with an interior flow 
-              u
-
-              →
-        =
-
-        (
-
-        u
-
-        ,
-
-        v
-
-        )
 
 $$ {\vec {u}}=(u,v) $$
 
  beneath. Again, the flow is uniform, has a geostrophic interior and is homogeneous fluid. The equations of motion for a geostrophic flow, which are the same as stated in the bottom spiral section, can be reduced to:
-
-                −
-
-                f
-
-                (
-
-                v
-
-                −
-                      v
-
-                      ¯
-                )
-                =
-                  ν
-                    E
-                        ∂
-                          2
-                      u
-                      ∂
-                        z
-                          2
-                f
-
-                (
-
-                u
-
-                −
-                      u
-
-                      ¯
-                )
-                =
-                  ν
-                    E
-                        ∂
-                          2
-                      v
-                      ∂
-                        z
-                          2
 
 $$ {\begin{aligned}-f(v-{\bar {v}})&=\nu _{E}{\frac {\partial ^{2}u}{\partial z^{2}}}\\[5pt]f(u-{\bar {u}})&=\nu _{E}{\frac {\partial ^{2}v}{\partial z^{2}}}\\\end{aligned}} $$
 
 The boundary conditions for this case are as follows:
 
 Surface 
-        (
-
-        z
-
-        =
-
-        0
-
-        )
 
 $$ (z=0) $$
 
 :   
-          ρ
-            0
-          ν
-            E
-              ∂
-
-              u
-              ∂
-
-              z
-        =
-          τ
-            x
 
 $$ \;\;\;\rho _{0}\nu _{E}{\frac {\partial u}{\partial z}}=\tau _{x}\; $$
 
  and 
-          ρ
-            0
-          ν
-            E
-              ∂
-
-              v
-              ∂
-
-              z
-        =
-          τ
-            y
 
 $$ \;\rho _{0}\nu _{E}{\frac {\partial v}{\partial z}}=\tau _{y} $$
 
 Towards interior 
-        (
-
-        z
-
-        →
-          −
-
-          ∞
-        )
 
 $$ (z\rightarrow {-\infty }) $$
 
 : 
-        u
-
-        =
-              u
-
-              ¯
 
 $$ \;\;\;u={\bar {u}}\; $$
 
  and  
-        v
-
-        =
-              v
-
-              ¯
 
 $$ \;v={\bar {v}} $$
 
 With these conditions, the solution can be determined:
 
-                u
-                =
-                      u
-
-                      ¯
-                +
-                      2
-                        ρ
-                          0
-                      f
-
-                      d
-                  e
-                    z
-                      /
-                    d
-                  [
-                      τ
-                        x
-                    cos
-
-                    ⁡
-                      (
-                            z
-
-                            d
-                        −
-                            π
-
-                            4
-                      )
-                    −
-                      τ
-                        y
-                    sin
-
-                    ⁡
-                      (
-                            z
-
-                            d
-                        −
-                            π
-
-                            4
-                      )
-                  ]
-                v
-                =
-                      v
-
-                      ¯
-                +
-                      2
-                        ρ
-                          0
-                      f
-
-                      d
-                  e
-                    z
-                      /
-                    d
-                  [
-                      τ
-                        x
-                    sin
-
-                    ⁡
-                      (
-                            z
-
-                            d
-                        −
-                            π
-
-                            4
-                      )
-                    +
-                      τ
-                        y
-                    cos
-
-                    ⁡
-                      (
-                            z
-
-                            d
-                        −
-                            π
-
-                            4
-                      )
-                  ]
-
 $$ {\begin{aligned}u&={\bar {u}}+{\frac {\sqrt {2}}{\rho _{0}fd}}e^{z/d}\left[\tau _{x}\cos \left({\frac {z}{d}}-{\frac {\pi }{4}}\right)-\tau _{y}\sin \left({\frac {z}{d}}-{\frac {\pi }{4}}\right)\right]\\[5pt]v&={\bar {v}}+{\frac {\sqrt {2}}{\rho _{0}fd}}e^{z/d}\left[\tau _{x}\sin \left({\frac {z}{d}}-{\frac {\pi }{4}}\right)+\tau _{y}\cos \left({\frac {z}{d}}-{\frac {\pi }{4}}\right)\right]\end{aligned}} $$
 
 Some differences with respect to the bottom Ekman spiral emerge. The deviation from the interior flow is exclusively dependent on the wind stress and not on the interior flow. Whereas in the case of the bottom Ekman spiral, the deviation is determined by the interior flow. The wind-driven component of the flow is inversely proportional with respect to the Ekman-layer thickness 
-        d
 
 $$ d $$
 
@@ -1319,108 +388,33 @@ There are two types of Ekman layers. The first type occurs at the surface of the
 
 The mathematical formulation of the Ekman layer begins by assuming a neutrally stratified fluid, a balance between the forces of pressure gradient, Coriolis and turbulent drag.
 
-                −
-
-                f
-
-                v
-                =
-
-                −
-                    1
-                      ρ
-                        o
-                      ∂
-
-                      p
-                      ∂
-
-                      x
-                +
-                  K
-                    m
-                        ∂
-                          2
-                      u
-                      ∂
-                        z
-                          2
-                ,
-                f
-
-                u
-                =
-
-                −
-                    1
-                      ρ
-                        o
-                      ∂
-
-                      p
-                      ∂
-
-                      y
-                +
-                  K
-                    m
-                        ∂
-                          2
-                      v
-                      ∂
-                        z
-                          2
-                ,
-                0
-                =
-
-                −
-                    1
-                      ρ
-                        o
-                      ∂
-
-                      p
-                      ∂
-
-                      z
-                ,
-
 $$ {\begin{aligned}-fv&=-{\frac {1}{\rho _{o}}}{\frac {\partial p}{\partial x}}+K_{m}{\frac {\partial ^{2}u}{\partial z^{2}}},\\[5pt]fu&=-{\frac {1}{\rho _{o}}}{\frac {\partial p}{\partial y}}+K_{m}{\frac {\partial ^{2}v}{\partial z^{2}}},\\[5pt]0&=-{\frac {1}{\rho _{o}}}{\frac {\partial p}{\partial z}},\end{aligned}} $$
 
 where 
-        u
 
 $$ \ u $$
 
  and 
-        v
 
 $$ \ v $$
 
  are the velocities in the 
-        x
 
 $$ \ x $$
 
  and 
-        y
 
 $$ \ y $$
 
  directions, respectively, 
-        f
 
 $$ \ f $$
 
  is the local Coriolis parameter, and 
-          K
-            m
 
 $$ \ K_{m} $$
 
  is the diffusive eddy viscosity, which can be derived using mixing length theory. Note that 
-        p
 
 $$ p $$
 
@@ -1432,114 +426,43 @@ There are many regions where an Ekman layer is theoretically plausible; they inc
 
 We will consider boundary conditions of the Ekman layer in the upper ocean:
 
-          at 
-        z
-
-        =
-
-        0
-
-        :
-        A
-              ∂
-
-              u
-              ∂
-
-              z
-        =
-          τ
-            x
-          and
-        A
-              ∂
-
-              v
-              ∂
-
-              z
-        =
-          τ
-            y
-        ,
-
 $$ {\text{at }}z=0:\quad A{\frac {\partial u}{\partial z}}=\tau ^{x}\quad {\text{and}}\quad A{\frac {\partial v}{\partial z}}=\tau ^{y}, $$
 
 where 
-          τ
-            x
 
 $$ \ \tau ^{x} $$
 
  and 
-          τ
-            y
 
 $$ \ \tau ^{y} $$
 
  are the components of the surface stress, 
-        τ
 
 $$ \ \tau $$
 
 , of the wind field or ice layer at the top of the ocean, and 
-        A
-
-        ≡
-
-        ρ
-          K
-            m
 
 $$ \ A\equiv \rho K_{m} $$
 
  is the dynamic viscosity.
 
 For the boundary condition on the other side, as 
-        z
-
-        →
-
-        −
-
-        ∞
-
-        :
-
-        u
-
-        →
-          u
-            g
-        ,
-
-        v
-
-        →
-          v
-            g
 
 $$ \ z\to -\infty :u\to u_{g},v\to v_{g} $$
 
 , where 
-          u
-            g
 
 $$ \ u_{g} $$
 
  and 
-          v
-            g
 
 $$ \ v_{g} $$
 
  are the geostrophic flows in the 
-        x
 
 $$ \ x $$
 
  and 
-        y
 
 $$ \ y $$
 
@@ -1549,281 +472,51 @@ $$ \ y $$
 
 These differential equations can be solved to find:
 
-                u
-                =
-                  u
-                    g
-                +
-                      2
-                        ρ
-                          o
-                      f
-
-                      d
-                  e
-                    z
-                      /
-                    d
-                  [
-                      τ
-                        x
-                    cos
-
-                    ⁡
-
-                    (
-
-                    z
-                      /
-                    d
-
-                    −
-
-                    π
-                      /
-                    4
-
-                    )
-
-                    −
-                      τ
-                        y
-                    sin
-
-                    ⁡
-
-                    (
-
-                    z
-                      /
-                    d
-
-                    −
-
-                    π
-                      /
-                    4
-
-                    )
-                  ]
-                ,
-                v
-                =
-                  v
-                    g
-                +
-                      2
-                        ρ
-                          o
-                      f
-
-                      d
-                  e
-                    z
-                      /
-                    d
-                  [
-                      τ
-                        x
-                    sin
-
-                    ⁡
-
-                    (
-
-                    z
-                      /
-                    d
-
-                    −
-
-                    π
-                      /
-                    4
-
-                    )
-
-                    +
-                      τ
-                        y
-                    cos
-
-                    ⁡
-
-                    (
-
-                    z
-                      /
-                    d
-
-                    −
-
-                    π
-                      /
-                    4
-
-                    )
-                  ]
-                ,
-                d
-                =
-                    2
-                      K
-                        m
-                      /
-                      |
-                    f
-                      |
-                .
-
 $$ {\begin{aligned}u&=u_{g}+{\frac {\sqrt {2}}{\rho _{o}fd}}e^{z/d}\left[\tau ^{x}\cos(z/d-\pi /4)-\tau ^{y}\sin(z/d-\pi /4)\right],\\[5pt]v&=v_{g}+{\frac {\sqrt {2}}{\rho _{o}fd}}e^{z/d}\left[\tau ^{x}\sin(z/d-\pi /4)+\tau ^{y}\cos(z/d-\pi /4)\right],\\[5pt]d&={\sqrt {2K_{m}/|f|}}.\end{aligned}} $$
 
 The value 
-        d
 
 $$ d $$
 
  is called the Ekman layer depth, and gives an indication of the penetration depth of wind-induced turbulent mixing in the ocean. Note that it varies on two parameters: the turbulent diffusivity 
-          K
-            m
 
 $$ K_{m} $$
 
 , and the latitude, as encapsulated by 
-        f
 
 $$ f $$
 
 . For a typical 
-          K
-            m
-        =
 
         0.1
 
 $$ K_{m}=0.1 $$
 
  m
-            2
 
 $$ ^{2} $$
 
 /s, and at 45° latitude (
-        f
-
-        =
-          10
-            −
-
-            4
 
 $$ f=10^{-4} $$
 
  s
-            −
-
-            1
 
 $$ ^{-1} $$
 
 ), then 
-        d
 
 $$ d $$
 
  is approximately 45 meters. This Ekman depth prediction does not always agree precisely with observations.
 
 This variation of horizontal velocity with depth (
-        −
-
-        z
 
 $$ -z $$
 
 ) is referred to as the Ekman spiral, diagrammed above and at right.
 
 By applying the continuity equation we can have the vertical velocity as following
-
-        w
-
-        =
-            1
-              f
-                ρ
-                  o
-          [
-            −
-              (
-                      ∂
-                        τ
-                          x
-                      ∂
-
-                      x
-                +
-                      ∂
-                        τ
-                          y
-                      ∂
-
-                      y
-              )
-              e
-                z
-                  /
-                d
-            sin
-
-            ⁡
-
-            (
-
-            z
-              /
-            d
-
-            )
-
-            +
-              (
-                      ∂
-                        τ
-                          y
-                      ∂
-
-                      x
-                −
-                      ∂
-                        τ
-                          x
-                      ∂
-
-                      y
-              )
-            (
-
-            1
-
-            −
-              e
-                z
-                  /
-                d
-            cos
-
-            ⁡
-
-            (
-
-            z
-              /
-            d
-
-            )
-
-            )
-          ]
-        .
 
 $$ w={\frac {1}{f\rho _{o}}}\left[-\left({\frac {\partial \tau ^{x}}{\partial x}}+{\frac {\partial \tau ^{y}}{\partial y}}\right)e^{z/d}\sin(z/d)+\left({\frac {\partial \tau ^{y}}{\partial x}}-{\frac {\partial \tau ^{x}}{\partial y}}\right)(1-e^{z/d}\cos(z/d))\right]. $$
 
@@ -1836,7 +529,6 @@ The traditional development of Ekman layers bounded below by a surface utilizes 
 A no-slip condition at the surface;
 
 The Ekman velocities approaching the geostrophic velocities as 
-        z
 
 $$ z $$
 
@@ -1847,11 +539,6 @@ $$ z $$
 There is much difficulty associated with observing the Ekman layer for two main reasons: the theory is too simplistic as it assumes a constant eddy viscosity, which Ekman himself anticipated, saying
 
 It is obvious that 
-          [
-
-          ν
-
-          ]
 
 $$ \ \left[\nu \right] $$
 

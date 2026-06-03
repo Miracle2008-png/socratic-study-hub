@@ -20,34 +20,9 @@ In the early history of thermodynamics, a positive amount of work done by the sy
 
 According to the first law of thermodynamics for a closed system, any net change in the internal energy U must be fully accounted for, in terms of heat Q entering the system and work W done by the system:
 
-        Δ
-
-        U
-
-        =
-
-        Q
-
-        −
-
-        W
-
-        .
-
 $$ \Delta U=Q-W.\; $$
 
 An alternate sign convention is to consider the work performed on the system by its surroundings as positive. This leads to a change in sign of the work, so that 
-        Δ
-
-        U
-
-        =
-
-        Q
-
-        +
-
-        W
 
 $$ \Delta U=Q+W $$
 
@@ -61,38 +36,17 @@ Pressure–volume work (or PV or P-V work) occurs when the volume V of a system 
 
 For a process in a closed system, occurring slowly enough for accurate definition of the pressure on the inside of the system's wall that moves and transmits force to the surroundings, described as quasi-static, work is represented by the following equation between differentials:
 
-        δ
-
-        W
-
-        =
-
-        P
-        d
-
-        V
-
 $$ \delta W=P\,dV $$
 
 where
-
-        δ
-
-        W
 
 $$ \delta W $$
 
  (inexact differential) denotes an infinitesimal increment of work done by the system, transferring energy to the surroundings;
 
-        P
-
 $$ P $$
 
  denotes the pressure inside the system, that it exerts on the moving wall that transmits force to the surroundings. In the alternative sign convention the right hand side has a negative sign.
-
-        d
-
-        V
 
 $$ dV $$
 
@@ -100,25 +54,9 @@ $$ dV $$
 
 Moreover,
 
-        W
-
-        =
-          ∫
-              V
-                i
-              V
-                f
-        P
-        d
-
-        V
-
-        .
-
 $$ W=\int _{V_{i}}^{V_{f}}P\,dV. $$
 
 where 
-        W
 
 $$ W $$
 
@@ -126,60 +64,13 @@ $$ W $$
 
 The first law of thermodynamics can then be expressed as
 
-        d
-
-        U
-
-        =
-
-        δ
-
-        Q
-
-        −
-
-        P
-
-        d
-
-        V
-        .
-
 $$ dU=\delta Q-PdV\,. $$
 
 (In the alternative sign convention where W = work done on the system, 
-        δ
-
-        W
-
-        =
-
-        −
-
-        P
-        d
-
-        V
 
 $$ \delta W=-P\,dV $$
 
 . However, 
-        d
-
-        U
-
-        =
-
-        δ
-
-        Q
-
-        −
-
-        P
-        d
-
-        V
 
 $$ dU=\delta Q-P\,dV $$
 
@@ -188,134 +79,40 @@ $$ dU=\delta Q-P\,dV $$
 ### Path dependence
 
 PV work is path-dependent and is, therefore, a thermodynamic process function. In general, the term 
-        P
-        d
-
-        V
 
 $$ P\,dV $$
 
  is not an exact differential. The statement that a process is quasi-static gives important information about the process but does not determine the P–V path uniquely, because the path can include several slow goings backwards and forward in volume, slowly enough to exclude friction within the system occasioned by departure from the quasi-static requirement. An adiabatic wall is one that does not permit passage of energy by conduction or radiation.
 
 The first law of thermodynamics states that 
-        Δ
-
-        U
-
-        =
-
-        Q
-
-        −
-
-        W
 
 $$ \Delta U=Q-W $$
 
 .
 
 For a quasi-static adiabatic process, 
-        δ
-
-        Q
-
-        =
-
-        0
 
 $$ \delta Q=0 $$
 
  so that
-
-        Q
-
-        =
-
-        ∫
-
-        δ
-
-        Q
-
-        =
 
         0.
 
 $$ Q=\int \delta Q=0. $$
 
 Also 
-        δ
-
-        W
-
-        =
-
-        P
-
-        d
-
-        V
 
 $$ \delta W=PdV $$
 
  so that
 
-        W
-
-        =
-
-        ∫
-
-        δ
-
-        W
-
-        =
-
-        ∫
-
-        P
-        d
-
-        V
-
-        .
-
 $$ W=\int \delta W=\int P\,dV. $$
 
 It follows that 
-        d
-
-        U
-
-        =
-
-        −
-
-        δ
-
-        W
 
 $$ dU=-\delta W $$
 
  so that
-
-        Δ
-
-        U
-
-        =
-
-        −
-
-        ∫
-
-        P
-        d
-
-        V
-
-        .
 
 $$ \Delta U=-\int P\,dV. $$
 
@@ -324,9 +121,6 @@ Internal energy is a state function so its change depends only on the initial an
 If the process path is other than quasi-static and adiabatic, there are indefinitely many different paths, with significantly different work amounts, between the initial and final states. (Again the internal energy change depends only on the initial and final states as it is a state function).
 
 In the current mathematical notation, the differential 
-        δ
-
-        W
 
 $$ \delta W $$
 
@@ -338,30 +132,9 @@ In another notation, δW is written đW (with a horizontal line through the d). 
 
 There are several ways of doing mechanical work, each in some way related to a force acting through a distance. In basic mechanics, the work done by a constant force F on a body displaced a distance s in the direction of the force is given by 
 
-        W
-
-        =
-
-        F
-
-        s
-
 $$ W=Fs $$
 
 If the force is not constant, the work done is obtained by integrating the differential amount of work,
-
-        W
-
-        =
-          ∫
-            1
-            2
-        F
-        d
-
-        s
-
-        .
 
 $$ W=\int _{1}^{2}F\,ds. $$
 
@@ -369,77 +142,17 @@ $$ W=\int _{1}^{2}F\,ds. $$
 
 Energy transmission with a rotating shaft is very common in engineering practice. Often the torque T applied to the shaft is constant which means that the force F applied is constant. For a specified constant torque, the work done during n revolutions is determined as follows: A force F acting through a moment arm r generates a torque T
 
-        T
-
-        =
-
-        F
-
-        r
-        ⟹
-        F
-
-        =
-            T
-
-            r
-
 $$ T=Fr\implies F={\frac {T}{r}} $$
 
 This force acts through a distance s, which is related to the radius r by
-
-        s
-
-        =
-
-        2
-
-        r
-
-        π
-
-        n
 
 $$ s=2r\pi n $$
 
 The shaft work is then determined from:
 
-          W
-            s
-        =
-
-        F
-
-        s
-
-        =
-
-        2
-
-        π
-
-        n
-
-        T
-
 $$ W_{s}=Fs=2\pi nT $$
 
 The power transmitted through the shaft is the shaft work done per unit time, which is expressed as 
-
-                W
-
-                ˙
-            s
-        =
-
-        2
-
-        π
-
-        T
-              n
-
-              ˙
 
 $$ {\dot {W}}_{s}=2\pi T{\dot {n}} $$
 
@@ -447,51 +160,13 @@ $$ {\dot {W}}_{s}=2\pi T{\dot {n}} $$
 
 When a force is applied on a spring, and the length of the spring changes by a differential amount dx, the work done is
 
-        ∂
-          w
-            s
-        =
-
-        F
-
-        d
-
-        x
-
 $$ \partial w_{s}=Fdx $$
 
 For linear elastic springs, the displacement x is proportional to the force applied
 
-        F
-
-        =
-
-        K
-
-        x
-
-        ,
-
 $$ F=Kx, $$
 
 where K is the spring constant and has the unit of N/m. The displacement x is measured from the undisturbed position of the spring (that is, X = 0 when F = 0). Substituting the two equations 
-
-          W
-            s
-        =
-            1
-
-            2
-        k
-          (
-              x
-                1
-                2
-            −
-              x
-                2
-                2
-          )
 
 $$ W_{s}={\frac {1}{2}}k\left(x_{1}^{2}-x_{2}^{2}\right) $$
 
@@ -503,35 +178,7 @@ where x1 and x2 are the initial and the final displacement of the spring respect
 
 Solids are often modeled as linear springs because under the action of a force they contract or elongate, and when the force is lifted, they return to their original lengths, like a spring. This is true as long as the force is in the elastic range, that is, not large enough to cause permanent or plastic deformation. Therefore, the equations given for a linear spring can also be used for elastic solid bars. Alternately, we can determine the work associated with the expansion or contraction of an elastic solid bar by replacing the pressure P by its counterpart in solids, normal stress σ = F/A in the work expansion 
 
-        W
-
-        =
-          ∫
-            1
-            2
-        F
-        d
-
-        x
-
-        .
-
 $$ W=\int _{1}^{2}F\,dx. $$
-
-        W
-
-        =
-          ∫
-            1
-            2
-        A
-
-        σ
-        d
-
-        x
-
-        .
 
 $$ W=\int _{1}^{2}A\sigma \,dx. $$
 
@@ -540,20 +187,6 @@ where A is the cross sectional area of the bar.
 ### Work associated with the stretching of liquid film
 
 Consider a liquid film such as a soap film suspended on a wire frame. Some force is required to stretch this film by the movable portion of the wire frame. This force is used to overcome the microscopic forces between molecules at the liquid-air interface. These microscopic forces are perpendicular to any line in the surface and the force generated by these forces per unit length is called the surface tension σ whose unit is N/m. Therefore, the work associated with the stretching of a film is called surface tension work, and is determined from
-
-          W
-            s
-        =
-          ∫
-            1
-            2
-          σ
-            s
-        d
-
-        A
-
-        .
 
 $$ W_{s}=\int _{1}^{2}\sigma _{s}\,dA. $$
 

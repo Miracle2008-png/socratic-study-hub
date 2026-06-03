@@ -41,16 +41,10 @@ On one end of the spectrum we have an inviscid or a simple Newtonian fluid and o
 ### Reynolds number
 
 In fluid mechanics, the Reynolds number is a measure of the ratio of inertial forces (
-          v
-            s
-        ρ
 
 $$ v_{s}\rho $$
 
 ) to viscous forces (
-            μ
-
-            L
 
 $$ {\frac {\mu }{L}} $$
 
@@ -59,32 +53,6 @@ $$ {\frac {\mu }{L}} $$
 It is one of the most important dimensionless numbers in fluid dynamics and is used, usually along with other dimensionless numbers, to provide a criterion for determining dynamic similitude. When two geometrically similar flow patterns, in perhaps different fluids with possibly different flow rates, have the same values for the relevant dimensionless numbers, they are said to be dynamically similar.
 
 Typically it is given as follows:
-
-          R
-
-          e
-        =
-              ρ
-                    u
-                      s
-                      2
-                  L
-              μ
-                    u
-                      s
-                    L
-                      2
-        =
-              ρ
-                u
-                  s
-              L
-            μ
-        =
-                u
-                  s
-              L
-            ν
 
 $$ \mathrm {Re} ={\frac {\rho {\frac {u_{s}^{2}}{L}}}{\mu {\frac {u_{s}}{L^{2}}}}}={\frac {\rho u_{s}L}{\mu }}={\frac {u_{s}L}{\nu }} $$
 
@@ -97,12 +65,6 @@ L – characteristic length, [m]
 μ – (absolute) dynamic fluid viscosity, [N s m−2] or [Pa s]
 
 ν – kinematic fluid viscosity: 
-        v
-
-        =
-            μ
-
-            ρ
 
 $$ v={\frac {\mu }{\rho }} $$
 

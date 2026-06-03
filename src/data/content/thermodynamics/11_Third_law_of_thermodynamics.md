@@ -10,35 +10,13 @@ The Planck statement applies only to perfect crystalline substances:
 As temperature falls to zero, the entropy of any pure crystalline substance tends to a universal constant.
 
 That is, 
-          lim
-            T
 
-            →
-
-            0
-        S
-
-        =
-          S
-            0
-    {\displaystyle \lim _{T\to 0}S=S_{0}}
+{\displaystyle \lim _{T\to 0}S=S_{0}}
 , where 
-          S
-            0
-    {\displaystyle S_{0}}
+{\displaystyle S_{0}}
  is a universal constant that applies for all possible crystals, of all possible sizes, in all possible external constraints. So it can be taken as zero, giving 
-          lim
-            T
 
-            →
-
-            0
-        S
-
-        =
-
-        0
-    {\displaystyle \lim _{T\to 0}S=0}
+{\displaystyle \lim _{T\to 0}S=0}
 .
 
 The Nernst statement concerns thermodynamic processes at a fixed, low temperature, for condensed systems, which are liquids and solids:
@@ -46,103 +24,20 @@ The Nernst statement concerns thermodynamic processes at a fixed, low temperatur
 The entropy change associated with any condensed system undergoing a reversible isothermal process approaches zero as the temperature at which it is performed approaches 0 K.
 
 That is, 
-          lim
-            T
 
-            →
-
-            0
-        S
-
-        (
-
-        T
-
-        ,
-          X
-            1
-        )
-
-        −
-
-        S
-
-        (
-
-        T
-
-        ,
-          X
-            2
-        )
-
-        =
-
-        0
-    {\displaystyle \lim _{T\to 0}S(T,X_{1})-S(T,X_{2})=0}
+{\displaystyle \lim _{T\to 0}S(T,X_{1})-S(T,X_{2})=0}
 , or equivalently,
 
 At absolute zero, the entropy change becomes independent of the process path.
 
 That is,
 
-        ∀
-
-        x
-
-        ,
-          lim
-            T
-
-            →
-
-            0
-          |
-        S
-
-        (
-
-        T
-
-        ,
-
-        x
-
-        )
-
-        −
-
-        S
-
-        (
-
-        T
-
-        ,
-
-        x
-
-        +
-
-        Δ
-
-        x
-
-        )
-          |
-        →
-
-        0
-    {\displaystyle \forall x,\lim _{T\to 0}|S(T,x)-S(T,x+\Delta x)|\to 0}
+{\displaystyle \forall x,\lim _{T\to 0}|S(T,x)-S(T,x+\Delta x)|\to 0}
 
 where 
-        Δ
 
-        x
-    {\displaystyle \Delta x}
+{\displaystyle \Delta x}
  represents a change in the state variable 
-        x
-    {\displaystyle x}
 .
 
 The unattainability principle of Nernst:
@@ -160,96 +55,22 @@ The Einstein statement:
 The entropy of any substance approaches a finite value as the temperature approaches absolute zero.
 
 That is, 
-        ∀
 
-        x
-
-        ,
-          lim
-            T
-
-            →
-
-            0
-        S
-
-        (
-
-        T
-
-        ,
-
-        x
-
-        )
-
-        →
-          S
-            0
-        (
-
-        x
-
-        )
-    {\textstyle \forall x,\lim _{T\to 0}S(T,x)\rightarrow S_{0}(x)}
+{\textstyle \forall x,\lim _{T\to 0}S(T,x)\rightarrow S_{0}(x)}
  where 
-        S
-    {\displaystyle S}
  is the entropy, the zero-point entropy 
-          S
-            0
-        (
 
-        x
-
-        )
-    {\displaystyle S_{0}(x)}
+{\displaystyle S_{0}(x)}
  is finite-valued, 
-        T
-    {\displaystyle T}
  is the temperature, and 
-        x
-    {\displaystyle x}
  represents other relevant state variables.
 
 This implies that the heat capacity 
-        C
 
-        (
-
-        T
-
-        ,
-
-        x
-
-        )
-    {\displaystyle C(T,x)}
+{\displaystyle C(T,x)}
  of a substance must (uniformly) vanish at absolute zero, as otherwise the entropy 
-        S
 
-        =
-          ∫
-            0
-              T
-                1
-              C
-
-              (
-
-              T
-
-              ,
-
-              x
-
-              )
-
-              d
-
-              T
-            T
-    {\displaystyle S=\int _{0}^{T_{1}}{\frac {C(T,x)dT}{T}}}
+{\displaystyle S=\int _{0}^{T_{1}}{\frac {C(T,x)dT}{T}}}
  would diverge.
 
 ## Explanation
@@ -259,327 +80,56 @@ The third law provides an absolute reference point for the determination of entr
 
 The entropy of a perfect crystal lattice as defined by Nernst's theorem is zero provided that its ground state is unique, because ln(1) = 0. If the system is composed of one-billion atoms that are all alike and lie within the matrix of a perfect crystal, the number of combinations of one billion identical things taken one billion at a time is Ω = 1. Hence:
 
-        S
-
-        −
-          S
-            0
-        =
-          k
-            B
-        ln
-
-        ⁡
-
-        Ω
-
-        =
-          k
-            B
-        ln
-
-        ⁡
-          1
-        =
-
-        0
-    {\displaystyle S-S_{0}=k_{\text{B}}\ln \Omega =k_{\text{B}}\ln {1}=0}
+{\displaystyle S-S_{0}=k_{\text{B}}\ln \Omega =k_{\text{B}}\ln {1}=0}
 
 The difference is zero; hence the initial entropy S0 can be any selected value so long as all other such calculations include that as the initial entropy. As a result, the initial entropy value of zero is selected S0 = 0 is used for convenience.
 
-        S
-
-        −
-          S
-            0
-        =
-
-        S
-
-        −
-
-        0
-
-        =
-
-        0
-    {\displaystyle S-S_{0}=S-0=0}
-
-        S
-
-        =
-
-        0
-    {\displaystyle S=0}
+{\displaystyle S-S_{0}=S-0=0}
 
 ### Example: Entropy change of a crystal lattice heated by an incoming photon
 Suppose a system consisting of a crystal lattice with volume V of N identical atoms at T = 0 K, and an incoming photon of wavelength λ and energy ε.
 
 Initially, there is only one accessible microstate:
 
-          S
-            0
-        =
-          k
-            B
-        ln
-
-        ⁡
-
-        Ω
-
-        =
-          k
-            B
-        ln
-
-        ⁡
-          1
-        =
-
         0.
-    {\displaystyle S_{0}=k_{\text{B}}\ln \Omega =k_{\text{B}}\ln {1}=0.}
+{\displaystyle S_{0}=k_{\text{B}}\ln \Omega =k_{\text{B}}\ln {1}=0.}
 
 Let us assume the crystal lattice absorbs the incoming photon. There is a unique atom in the lattice that interacts and absorbs this photon. So after absorption, there are N possible microstates accessible by the system, each corresponding to one excited atom, while the other atoms remain at ground state.
 
 The entropy, energy, and temperature of the closed system rises and can be calculated. The entropy change is 
-        Δ
 
-        S
-
-        =
-
-        S
-
-        −
-          S
-            0
-        =
-          k
-            B
-        ln
-
-        ⁡
-          Ω
-    {\displaystyle \Delta S=S-S_{0}=k_{\text{B}}\ln {\Omega }}
+{\displaystyle \Delta S=S-S_{0}=k_{\text{B}}\ln {\Omega }}
 
 From the second law of thermodynamics:
 
-        Δ
-
-        S
-
-        =
-
-        S
-
-        −
-          S
-            0
-        =
-              δ
-
-              Q
-            T
-    {\displaystyle \Delta S=S-S_{0}={\frac {\delta Q}{T}}}
+{\displaystyle \Delta S=S-S_{0}={\frac {\delta Q}{T}}}
 
 Hence
 
-        Δ
-
-        S
-
-        =
-
-        S
-
-        −
-          S
-            0
-        =
-          k
-            B
-        ln
-
-        ⁡
-
-        (
-
-        Ω
-
-        )
-
-        =
-              δ
-
-              Q
-            T
-    {\displaystyle \Delta S=S-S_{0}=k_{\text{B}}\ln(\Omega )={\frac {\delta Q}{T}}}
+{\displaystyle \Delta S=S-S_{0}=k_{\text{B}}\ln(\Omega )={\frac {\delta Q}{T}}}
 
 Calculating entropy change:
 
-        S
-
-        −
-
-        0
-
-        =
-          k
-            B
-        ln
-
-        ⁡
-          N
-        =
-
         1.38
 
-        ×
-          10
-            −
-
-            23
-        ×
-
-        ln
-
-        ⁡
-            (
-              3
-
-              ×
-                10
-                  22
-            )
-        =
-
-        70
-
-        ×
-          10
-            −
-
-            23
-          J
-            K
-              −
-
-              1
-    {\displaystyle S-0=k_{\text{B}}\ln {N}=1.38\times 10^{-23}\times \ln {\left(3\times 10^{22}\right)}=70\times 10^{-23}\,\mathrm {J\,K^{-1}} }
+{\displaystyle S-0=k_{\text{B}}\ln {N}=1.38\times 10^{-23}\times \ln {\left(3\times 10^{22}\right)}=70\times 10^{-23}\,\mathrm {J\,K^{-1}} }
 
 We assume N = 3 × 1022 and λ = 1 cm. The energy change of the system as a result of absorbing the single photon whose energy is ε:
 
-        δ
-
-        Q
-
-        =
-
-        ε
-
-        =
-              h
-
-              c
-            λ
-        =
               6.62
 
-              ×
-                10
-                  −
-
-                  34
-                J
-
-                ⋅
-
-                s
-              ×
-
-              3
-
-              ×
-                10
-                  8
-                m
-                  s
-                    −
-
-                    1
               0.01
-                m
-        =
 
-        2
-
-        ×
-          10
-            −
-
-            23
-          J
-    {\displaystyle \delta Q=\varepsilon ={\frac {hc}{\lambda }}={\frac {6.62\times 10^{-34}\,\mathrm {J\cdot s} \times 3\times 10^{8}\,\mathrm {m\,s^{-1}} }{0.01\,\mathrm {m} }}=2\times 10^{-23}\,\mathrm {J} }
+{\displaystyle \delta Q=\varepsilon ={\frac {hc}{\lambda }}={\frac {6.62\times 10^{-34}\,\mathrm {J\cdot s} \times 3\times 10^{8}\,\mathrm {m\,s^{-1}} }{0.01\,\mathrm {m} }}=2\times 10^{-23}\,\mathrm {J} }
 
 The temperature of the closed system rises by
 
-        T
-
-        =
-            ε
-              Δ
-
-              S
-        =
-              2
-
-              ×
-                10
-                  −
-
-                  23
-                J
-              70
-
-              ×
-                10
-                  −
-
-                  23
-                J
-                  K
-                    −
-
-                    1
-        =
-
         0.02857
-          K
-    {\displaystyle T={\frac {\varepsilon }{\Delta S}}={\frac {2\times 10^{-23}\,\mathrm {J} }{70\times 10^{-23}\,\mathrm {J\,K^{-1}} }}=0.02857\,\mathrm {K} }
+{\displaystyle T={\frac {\varepsilon }{\Delta S}}={\frac {2\times 10^{-23}\,\mathrm {J} }{70\times 10^{-23}\,\mathrm {J\,K^{-1}} }}=0.02857\,\mathrm {K} }
 
 This can be interpreted as the average temperature of the system over the range from 
-        0
 
-        <
-
-        S
-
-        <
-
-        70
-
-        ×
-          10
-            −
-
-            23
-          J
-            K
-              −
-
-              1
-    {\displaystyle 0<S<70\times 10^{-23}\,\mathrm {J\,K^{-1}} }
+{\displaystyle 0<S<70\times 10^{-23}\,\mathrm {J\,K^{-1}} }
 . A single atom is assumed to absorb the photon, but the temperature and entropy change characterizes the entire system.
 
 ### Systems with non-zero entropy at absolute zero
@@ -603,59 +153,33 @@ The reason that T = 0 cannot be reached according to the third law is explained 
 To be concrete, we imagine that we are refrigerating magnetic material. Suppose we have a large bulk of paramagnetic salt and an adjustable external magnetic field in the vertical direction.
 
 Let the parameter 
-        X
-    {\displaystyle X}
  represent the external magnetic field. At the same temperature, if the external magnetic field is strong, then the internal atoms in the salt would strongly align with the field, so the disorder (entropy) would decrease. Therefore, in Fig. 1, the curve for 
-          X
-            1
-    {\displaystyle X_{1}}
+{\displaystyle X_{1}}
  is the curve for lower magnetic field, and the curve for 
-          X
-            2
-    {\displaystyle X_{2}}
+{\displaystyle X_{2}}
  is the curve for higher magnetic field.
 
 The refrigeration process repeats the following two steps:
 
 Isothermal process. Here, we have a chunk of salt in magnetic field 
-          X
-            1
-    {\displaystyle X_{1}}
+{\displaystyle X_{1}}
  and temperature 
-        T
-    {\displaystyle T}
 . We divide the chunk into two parts: a large part playing the role of "environment", and a small part playing the role of "system". We slowly increase the magnetic field on the system to 
-          X
-            2
-    {\displaystyle X_{2}}
+{\displaystyle X_{2}}
 , but keep the magnetic field constant on the environment. The atoms in the system would lose directional degrees of freedom (DOF), and the energy in the directional DOF would be squeezed out into the vibrational DOF. This makes it slightly hotter, and then it would lose thermal energy to the environment, to remain in the same temperature 
-        T
-    {\displaystyle T}
 .
 
 (The environment is now discarded.)
 
 Isentropic cooling. Here, the system is wrapped in adiathermal covering, and the external magnetic field is slowly lowered to 
-          X
-            1
-    {\displaystyle X_{1}}
+{\displaystyle X_{1}}
 . This frees up the direction DOF, absorbing some energy from the vibrational DOF. The effect is that the system has the same entropy, but reaches a lower temperature 
-          T
 
-          ′
-        <
-
-        T
-    {\displaystyle T'<T}
+{\displaystyle T'<T}
 .
 
 At every two-step of the process, the mass of the system decreases, as we discard more and more salt as the "environment". However, if the equations of state for this salt is as shown in Fig. 1 (left), then we can start with a large but finite amount of salt, and end up with a small piece of salt that has 
-        T
 
-        =
-
-        0
-    {\displaystyle T=0}
 .
 
 ### Specific heat
@@ -699,38 +223,16 @@ For example, if a solution with 3 3He to 2 4He atoms were cooled, it would start
 
 ### Surface tension
 Let 
-        σ
-    {\displaystyle \sigma }
+{\displaystyle \sigma }
  be the surface tension of liquid, then the entropy per area is 
-        −
 
-        d
-
-        σ
-          /
-        d
-
-        T
-    {\displaystyle -d\sigma /dT}
+{\displaystyle -d\sigma /dT}
 . So if a liquid can exist down to absolute zero, then since its entropy is constant no matter its shape at absolute zero, its entropy per area must converge to zero. That is, its surface tension would become constant at low temperatures. In particular, the surface tension of 3He is well-approximated by 
-        σ
 
-        =
-          σ
-            0
-        −
-
-        b
-          T
-            2
-    {\displaystyle \sigma =\sigma _{0}-bT^{2}}
+{\displaystyle \sigma =\sigma _{0}-bT^{2}}
  for some parameters 
-          σ
-            0
-        ,
 
-        b
-    {\displaystyle \sigma _{0},b}
+{\displaystyle \sigma _{0},b}
 .
 
 ### Latent heat of melting

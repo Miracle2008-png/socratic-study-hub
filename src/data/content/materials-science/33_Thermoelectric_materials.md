@@ -5,122 +5,51 @@ Thermoelectric materials  show the thermoelectric effect in a strong or convenie
 ## Thermoelectric figure of merit
 
 The usefulness of a material in thermoelectric systems is determined by the device efficiency. This is determined by the material's electrical conductivity (σ), thermal conductivity (κ), and Seebeck coefficient (S), which change with temperature (T). The maximum efficiency of the energy conversion process (for both power generation and cooling) at a given temperature point in the material is determined by the thermoelectric materials figure of merit 
-        z
-
-        T
 
 $$ zT $$
 
 , given by
-        z
-
-        T
-
-        =
-              σ
-                S
-                  2
-              T
-            κ
-        .
 
 $$ zT={\sigma S^{2}T \over \kappa }. $$
 
 ### Device efficiency
 
 The efficiency of a thermoelectric device for electricity generation is given by 
-        η
 
 $$ \eta $$
 
 , defined as 
-        η
 
-        =
-              energy provided  to  the  load
-              heat  energy  absorbed  at  hot  junction
-        .
+energy provided  to  the  load
+heat  energy  absorbed  at  hot  junction
 
 $$ \eta ={{\text{energy provided  to  the  load}} \over {\text{heat  energy  absorbed  at  hot  junction}}}. $$
 
 The maximum efficiency of a thermoelectric device is typically described in terms of its device figure of merit 
-        Z
-
-        T
 
 $$ ZT $$
 
  where the maximum device efficiency is approximately given by 
-          η
-              m
-
-              a
-
-              x
-        =
-                T
-                    H
-              −
-                T
-                    C
-              T
-                  H
-                  1
-
-                  +
-
-                  Z
-                        T
-
-                        ¯
-              −
-
-              1
-                  1
-
-                  +
-
-                  Z
-                        T
-
-                        ¯
-              +
-                    T
-                        C
-                    T
-                        H
-        ,
 
 $$ \eta _{\mathrm {max} }={T_{\rm {H}}-T_{\rm {C}} \over T_{\rm {H}}}{{\sqrt {1+Z{\bar {T}}}}-1 \over {\sqrt {1+Z{\bar {T}}}}+{T_{\rm {C}} \over T_{\rm {H}}}}, $$
 
  where 
-          T
-              H
 
 $$ T_{\rm {H}} $$
 
  is the fixed temperature at the hot junction, 
-          T
-              C
 
 $$ T_{\rm {C}} $$
 
  is the fixed temperature at the surface being cooled, and 
-              T
-
-              ¯
 
 $$ {\bar {T}} $$
 
  is the mean of 
-          T
-              H
 
 $$ T_{\rm {H}} $$
 
  and 
-          T
-              C
 
 $$ T_{\rm {C}} $$
 
@@ -129,132 +58,46 @@ $$ T_{\rm {C}} $$
 For a single thermoelectric leg the device efficiency can be calculated from the temperature dependent properties S, κ and σ and the heat and electric current flow through the material.
 
 In an actual thermoelectric device, two materials are used (typically one n-type and one p-type) with metal interconnects. The maximum efficiency 
-          η
-              m
-
-              a
-
-              x
 
 $$ \eta _{\mathrm {max} } $$
 
  is then calculated from the efficiency of both legs and the electrical and thermal losses from the interconnects and surroundings.
 
 Ignoring these losses and temperature dependencies in S, κ and σ, an inexact estimate for 
-        Z
-
-        T
 
 $$ ZT $$
 
  is given by
-        Z
-              T
-
-              ¯
-        =
-              (
-                S
-                  p
-              −
-                S
-                  n
-                )
-                  2
-                    T
-
-                    ¯
-              [
-
-              (
-                ρ
-                  n
-                κ
-                  n
-                )
-                  1
-                    /
-                  2
-              +
-
-              (
-                ρ
-                  p
-                κ
-                  p
-                )
-                  1
-                    /
-                  2
-                ]
-                  2
 
 $$ Z{\bar {T}}={(S_{p}-S_{n})^{2}{\bar {T}} \over [(\rho _{n}\kappa _{n})^{1/2}+(\rho _{p}\kappa _{p})^{1/2}]^{2}} $$
 
  where 
-        ρ
 
 $$ \rho $$
 
  is the electrical resistivity, and the properties are averaged over the temperature range; the subscripts n and p denote properties related to the n- and p-type semiconducting thermoelectric materials, respectively. Only when n and p elements have the same and temperature independent properties (
-          S
-            p
-        =
-
-        −
-          S
-            n
 
 $$ S_{p}=-S_{n} $$
 
 ) does 
-        Z
-              T
-
-              ¯
-        =
-
-        z
-              T
-
-              ¯
 
 $$ Z{\bar {T}}=z{\bar {T}} $$
 
 .
 
 Since thermoelectric devices are heat engines, their efficiency is limited by the Carnot efficiency 
-                T
-                    H
-              −
-                T
-                    C
-              T
-                  H
 
 $$ {\frac {T_{\rm {H}}-T_{\rm {C}}}{T_{\rm {H}}}} $$
 
 , the first factor in 
-          η
-              m
-
-              a
-
-              x
 
 $$ \eta _{\mathrm {max} } $$
 
 , while 
-        Z
-
-        T
 
 $$ ZT $$
 
  and 
-        z
-
-        T
 
 $$ zT $$
 
@@ -263,56 +106,16 @@ $$ zT $$
 ### Power factor
 
 Often the thermoelectric power factor is reported for a thermoelectric material, given by 
-          P
-
-          o
-
-          w
-
-          e
-
-          r
-          f
-
-          a
-
-          c
-
-          t
-
-          o
-
-          r
-        =
-
-        σ
-          S
-            2
-        [
-
-        W
-          /
-        m
-          /
-          K
-            2
-        ]
 
 $$ \mathrm {Power~factor} =\sigma S^{2}[W/m/K^{2}] $$
 
  where S is the Seebeck coefficient, and σ is the electrical conductivity.
 
 Although it is often claimed that TE devices with materials with a higher power factor are able to 'generate' more energy (move more heat or extract more energy from that temperature difference) this is only true for a thermoelectric device with fixed geometry and unlimited heat source and cooling. If the geometry of the device is optimally designed for the specific application, the thermoelectric materials will operate at their peak efficiency which is determined by their 
-        z
-
-        T
 
 $$ zT $$
 
  not 
-        σ
-          S
-            2
 
 $$ \sigma S^{2} $$
 
@@ -347,134 +150,68 @@ G. A. Slack proposed that in order to optimize the figure of merit, phonons, whi
 #### Quality factor
 
 The maximum 
-        Z
-              T
-
-              ¯
 
 $$ Z{\bar {T}} $$
 
  of a material is given by the material's quality factor
 
-        B
-
-        =
-              2
-                k
-                    B
-                  2
-              ℏ
-              3
-
-              π
-                N
-                    v
-                C
-                    l
-                m
-                    l
-                  ∗
-                Ξ
-                  2
-                κ
-                    L
-        T
-
 $$ B={\frac {2k_{\rm {B}}^{2}\hbar }{3\pi }}{\frac {N_{\rm {v}}C_{\rm {l}}}{m_{\rm {l}}^{*}\Xi ^{2}\kappa _{\rm {L}}}}T $$
 
 where 
-          k
-              B
 
 $$ k_{\rm {B}} $$
 
  is the Boltzmann constant, 
-        ℏ
 
 $$ \hbar $$
 
  is the reduced Planck constant, 
-          N
-              v
 
 $$ N_{\rm {v}} $$
 
  is the number of degenerated valleys for the band, 
-          C
-              l
 
 $$ C_{\rm {l}} $$
 
  is the average longitudinal elastic moduli, 
-          m
-              l
-            ∗
 
 $$ m_{\rm {l}}^{*} $$
 
  is the inertial effective mass, 
-        Ξ
 
 $$ \Xi $$
 
  is the deformation potential coefficient, 
-          κ
-              L
 
 $$ \kappa _{\rm {L}} $$
 
  is the lattice thermal conduction, and 
-        T
 
 $$ T $$
 
  is temperature. The figure of merit, 
-        Z
-              T
-
-              ¯
 
 $$ Z{\bar {T}} $$
 
 , depends on doping concentration and temperature of the material of interest.
 
 The material quality factor 
-        B
 
 $$ B $$
 
  is useful because it allows for an intrinsic comparison of possible efficiency between different materials. This relation shows that improving the electronic component 
-              N
-                  v
-                m
-                    l
-                  ∗
-                Ξ
-                  2
 
 $$ {\frac {N_{\rm {v}}}{m_{\rm {l}}^{*}\Xi ^{2}}} $$
 
 , which primarily affects the Seebeck coefficient, will increase the quality factor of a material. A large density of states can be created due to a large number of conducting bands (
-          N
-              v
 
 $$ N_{\rm {v}} $$
 
 ) or by flat bands giving a high band effective mass (
-          m
-              b
-            ∗
 
 $$ m_{\rm {b}}^{*} $$
 
 ). For isotropic materials 
-          m
-              b
-            ∗
-        =
-          m
-              l
-            ∗
 
 $$ m_{\rm {b}}^{*}=m_{\rm {l}}^{*} $$
 
@@ -713,24 +450,6 @@ Source:
 #### Geometrical Effects
 
 In their research, Al-Merbati et al. found that the stress levels around the leg corners of thermoelectric devices were high and generally increased closer to the hot side. However, switching to a trapezoidal leg geometry reduced thermal stresses. Erturun et al.  compared various leg geometries and discovered that rectangular prism and cylindrical legs experienced the highest stresses. Studies have also shown that using thinner and longer legs can significantly relieve stress. Tachibana and Fang  estimated the relationship between thermal stress, temperature difference, coefficient of thermal expansion, and module dimensions. They found that the thermal stress was proportional to
-        $
-
-        (
-
-        L
-
-        ⋅
-
-        α
-
-        ⋅
-              Δ
-
-              T
-            h
-          )
-            2
-        $
 
 $$ \$(L\cdot \alpha \cdot {\frac {\Delta T}{h}})^{2}\$ $$
 
@@ -743,10 +462,6 @@ Clin et al. conducted finite-element analysis to replicate thermal stresses in a
 #### Effect of Thermal Fatigue
 
 Thermoelectric materials commonly contain different types of defects, such as dislocations, vacancies, secondary phases and antisite defects. These defects  can affect thermoelectric performance by evolving under service conditions. In 2019, Yun Zheng et al.  studied thermal fatigue of 
-            Bi
-              2
-            Te
-              3
 
 $$ {\ce {Bi_2Te_3}} $$
 
@@ -761,9 +476,6 @@ Thermoelectric materials can undergo thermal shock loading through service tempe
 Thermal stresses have been quantified and extensively studied in thermoelectric modules throughout the years but von Mises stresses are commonly reported. The von Mises stress defines a constraint on plastic yielding without having any information of the stress nature.
 
 For instance, in a study by Sakamoto et al. the mechanical stability of a 
-            Mg
-              2
-          Si
 
 $$ {\ce {Mg_2Si}} $$
 
@@ -776,9 +488,6 @@ In 2018, Chen et al. investigated the cracking failure of Cu pillar bump that wa
 #### Phase-Transformation Stresses
 
 Phase transformation can occur in thermoelectric materials as well as many other energy materials. As pointed out by Al Malki et al., phase transformation can lead to a total plastic strain when internal mismatch stresses are biased with shear stress. The alpha phase of 
-            Ag
-              2
-          S
 
 $$ {\ce {Ag_2S}} $$
 

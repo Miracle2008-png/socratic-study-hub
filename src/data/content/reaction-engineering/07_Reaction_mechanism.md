@@ -16,20 +16,6 @@ CO + NO2 → CO2 + NO
 
 The rate law for this reaction is:
 
-        r
-
-        =
-
-        k
-
-        [
-
-        N
-          O
-            2
-          ]
-            2
-
 $$ r=k[NO_{2}]^{2} $$
 
 This form shows that the rate-determining step does not involve CO.  Instead, the slow step involves two molecules of NO2. A possible mechanism for the overall reaction that explains the rate law is:
@@ -41,29 +27,10 @@ NO3 + CO → NO2 + CO2 (fast)
 Each step is called an elementary step, and each has its own rate law and molecularity. The sum of the elementary steps gives the net reaction.
 
 When determining the overall rate law for a reaction, the slowest step is the step that determines the reaction rate. Because the first step (in the above reaction) is the slowest step, it is the rate-determining step. Because it involves the collision of two NO2 molecules, it is a bimolecular reaction with a rate 
-        r
 
 $$ r $$
 
  which obeys the rate law 
-        r
-
-        =
-
-        k
-
-        [
-
-        N
-          O
-            2
-        (
-
-        t
-
-        )
-          ]
-            2
 
 $$ r=k[NO_{2}(t)]^{2} $$
 

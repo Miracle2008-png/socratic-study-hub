@@ -12,31 +12,17 @@ Kinks facilitate the movement of dislocations along its glide plane under shear 
 
 As shear force approaches infinity, the velocity at which dislocations migrate is limited by the physical properties of the material, maximizing at the material's sound velocity. At lower shear stresses, the velocity of dislocations end up relating exponentially with the applied shear force:
 
-          v
-            0
-        =
-
-        C
-          τ
-            p
-        ,
-
 $$ v_{0}=C\tau ^{p},\,\! $$
 
 where
-
-        τ
 
 $$ \tau $$
 
  is applied shear force
 
-        C
-
 $$ C $$
 
  and 
-        p
 
 $$ p $$
 
@@ -44,24 +30,9 @@ $$ p $$
 
 The above equation gives the upper limit on dislocation velocity. The interactions of dislocation movement on its environment, particularly other defects such as jogs and precipitates, results in drag and slows down the dislocation:
 
-          v
-            D
-        =
-          v
-            0
-          e
-            −
-
-            D
-              /
-            τ
-        ,
-
 $$ v_{D}=v_{0}e^{-D/\tau },\,\! $$
 
 where
-
-        D
 
 $$ D $$
 

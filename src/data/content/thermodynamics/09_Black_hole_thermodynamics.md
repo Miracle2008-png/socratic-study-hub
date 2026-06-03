@@ -11,7 +11,6 @@ These four laws of black hole mechanics are relationships between physical prope
 For a stationary black hole (one in mechanical equilibrium)
 
 the surface gravity, 
-        κ
 
 $$ \kappa $$
 
@@ -21,78 +20,37 @@ $$ \kappa $$
 
 For perturbations of stationary black holes, the change of energy is related to change of area, angular momentum, and electric charge by
 
-        d
-
-        E
-
-        =
-            κ
-              8
-
-              π
-        d
-
-        A
-
-        +
-
-        Ω
-        d
-
-        J
-
-        +
-
-        Φ
-        d
-
-        Q
-
-        ,
-
 $$ dE={\frac {\kappa }{8\pi }}\,dA+\Omega \,dJ+\Phi \,dQ, $$
 
 where 
-        E
 
 $$ E $$
 
  is the energy, 
-        κ
 
 $$ \kappa $$
 
  is the surface gravity, 
-        A
 
 $$ A $$
 
  is the horizon area, 
-        Ω
 
 $$ \Omega $$
 
  is the angular velocity, 
-        J
 
 $$ J $$
 
  is the angular momentum, 
-        Φ
 
 $$ \Phi $$
 
  is the electrostatic potential and 
-        Q
 
 $$ Q $$
 
  is the electric charge.  Analogously, the first law of thermodynamics is a statement of energy conservation, which contains on its right side a term equal to temperature times change in entropy, 
-        T
-
-        d
-
-        S
 
 $$ TdS $$
 
@@ -101,14 +59,6 @@ $$ TdS $$
 ### Second law
 
 The horizon area is, assuming the weak energy condition, a non-decreasing function of time:
-
-              d
-
-              A
-              d
-
-              t
-        ≥
 
         0.
 
@@ -119,11 +69,6 @@ Here black hole surface area is analogous to thermodynamic entropy and the laws 
 ### Third law
 
 It is not possible to form a black hole with vanishing surface gravity. That is, 
-        κ
-
-        =
-
-        0
 
 $$ \kappa =0 $$
 
@@ -136,31 +81,18 @@ This is analogous to some but not all forms of the third law of thermodynamics.
 The generalized second law of thermodynamics (GSL) is needed to present the second law of thermodynamics as valid. This is because the second law of thermodynamics, as a result of the disappearance of entropy near the exterior of black holes, is not useful. The GSL allows for the application of the law because it allows for the measurement of interior, common entropy. The validity of the GSL can be established by studying an example, such as looking at a system having entropy that falls into a bigger, non-moving black hole, and establishing upper and lower entropy bounds for the increase in the black hole entropy and entropy of the system, respectively. The GSL also holds for theories of gravity such as general relativity, Lovelock gravity, or braneworld gravity, because the conditions to use it for these theories can be met.
 
 However, on the topic of black hole formation, the question becomes whether or not the generalized second law of thermodynamics will be valid, and if it is, it will have been proved valid for all situations. Because black hole formation is not a stationary event, proving that the GSL holds is difficult. Proving it is generally valid would require quantum-statistical mechanics, because the GSL is both a quantum and statistical law. This discipline does not exist so the GSL can be assumed to be useful in general, as well as for prediction. For example, one can use the GSL to predict that, for a cold, non-rotating assembly of 
-        N
 
 $$ N $$
 
  nucleons, 
-          S
-            BH
-        −
-
-        S
-
-        >
-
-        0
 
 $$ S_{\text{BH}}-S>0 $$
 
 , where 
-          S
-            BH
 
 $$ S_{\text{BH}} $$
 
  is the entropy of a black hole and 
-        S
 
 $$ S $$
 
@@ -176,26 +108,9 @@ A weaker form of the classical third law known as the unattainability principle 
 
 The four laws of black hole mechanics suggest that one should identify the surface gravity of a black hole with temperature and the area of the event horizon with entropy, at least up to some multiplicative constants. If black holes are only considered classically, then they have zero temperature, and by the no-hair theorem, zero entropy, and the laws of black hole mechanics remain an analogy. However, when quantum-mechanical effects are taken into account, it is found that black holes emit thermal radiation (Hawking radiation) at the Hawking temperature
 
-          T
-            H
-        =
-            κ
-              2
-
-              π
-        .
-
 $$ T_{\text{H}}={\frac {\kappa }{2\pi }}. $$
 
 From the first law of black hole mechanics, this determines the multiplicative constant of the Bekenstein–Hawking entropy, which is (in geometrized units)
-
-          S
-            BH
-        =
-            A
-
-            4
-        .
 
 $$ S_{\text{BH}}={\frac {A}{4}}. $$
 

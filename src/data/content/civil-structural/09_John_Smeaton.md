@@ -14,47 +14,25 @@ Over the period 1759–1782 he performed a series of further experiments and mea
 
 In his 1759 paper "An Experimental Enquiry Concerning the Natural Powers of Water and Wind to Turn Mills and Other Machines Depending on Circular Motion" Smeaton developed the concepts and data which became the basis for the Smeaton coefficient, the lift equation used by the Wright brothers. It has the form:
 
-        L
-
-        =
-
-        k
-          V
-            2
-        A
-          C
-            l
-
 $$ L=kV^{2}AC_{l}\, $$
 
 where:
-
-        L
 
 $$ L $$
 
  is the lift
 
-        k
-
 $$ k $$
 
  is the Smeaton coefficient (see note below)
-
-        V
 
 $$ V $$
 
  is the velocity
 
-        A
-
 $$ A $$
 
  is the area in square feet
-
-          C
-            l
 
 $$ C_{l} $$
 

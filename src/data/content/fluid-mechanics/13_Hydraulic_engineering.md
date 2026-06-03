@@ -8,16 +8,7 @@ A few examples of the fundamental principles of hydraulic engineering include fl
 ### Fluid mechanics
 Fundamentals of Hydraulic Engineering defines hydrostatics as the study of fluids at rest. In a fluid at rest, there exists a force, known as pressure, that acts upon the fluid's surroundings. This pressure, measured in N/m2, is not constant throughout the body of fluid. Pressure, p, in a given body of fluid, increases with an increase in depth. Where the upward force on a body acts on the base and can be found by the equation:
 
-        p
-
-        =
-
-        ρ
-
-        g
-
-        y
-    {\displaystyle p=\rho gy}
+{\displaystyle p=\rho gy}
 
 where, 
 
@@ -28,14 +19,8 @@ g = specific gravity
 y = depth of the body of liquid
 
 Rearranging this equation gives you the pressure head 
-            p
-              ρ
 
-              g
-        =
-
-        y
-    {\displaystyle {\frac {p}{\rho g}}=y}
+{\displaystyle {\frac {p}{\rho g}}=y}
 . Four basic devices for pressure measurement are a piezometer, manometer, differential manometer, Bourdon gauge, as well as an inclined manometer.
 
 As Prasuhn states:
@@ -56,42 +41,6 @@ The various effects of disturbance on a viscous flow are a stable, transition an
 #### Bernoulli's equation
 For an ideal fluid, Bernoulli's equation holds along streamlines.
 
-            p
-              ρ
-
-              g
-        +
-              u
-                2
-              2
-
-              g
-        =
-              p
-                1
-              ρ
-
-              g
-        +
-              u
-                1
-                2
-              2
-
-              g
-        =
-              p
-                2
-              ρ
-
-              g
-        +
-              u
-                2
-                2
-              2
-
-              g
-    {\displaystyle {\frac {p}{\rho g}}+{\frac {u^{2}}{2g}}={\frac {p_{1}}{\rho g}}+{\frac {u_{1}^{2}}{2g}}={\frac {p_{2}}{\rho g}}+{\frac {u_{2}^{2}}{2g}}}
+{\displaystyle {\frac {p}{\rho g}}+{\frac {u^{2}}{2g}}={\frac {p_{1}}{\rho g}}+{\frac {u_{1}^{2}}{2g}}={\frac {p_{2}}{\rho g}}+{\frac {u_{2}^{2}}{2g}}}
 
 As the flow comes into contact with the plate, the layer of fluid actually "adheres" to a solid surface. There is then a considerable shearing action between the layer of fluid on the plate surface and the second layer of fluid. The second layer is therefore forced to decelerate (though it is not quite brought to rest), creating a shearing action with the third layer of fluid, and so on. As the fluid passes further along with the plate, the zone in which shearing action occurs tends to spread further outwards. This zone is known as the "boundary layer". The flow outside the boundary layer is free of shear and viscous-related forces so it is assumed to act as an ideal fluid. The intermolecular cohesive forces in a fluid are not great enough to hold fluid together.  Hence a fluid will flow under the action of the slightest stress and flow will continue as long as the stress is present. The flow inside the layer can be either vicious or turbulent, depending on Reynolds number.

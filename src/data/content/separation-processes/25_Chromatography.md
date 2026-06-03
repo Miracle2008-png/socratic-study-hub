@@ -147,8 +147,6 @@ HILIC can be used for separation of many types of analytes, but is commonly used
 ### Hydrodynamic chromatography
 
 Hydrodynamic chromatography (HDC) is derived from the observed phenomenon that large droplets move faster than small ones. In a column, this happens because the center of mass of larger droplets is prevented from being as close to the sides of the column as smaller droplets because of their larger overall size. Larger droplets will elute first from the middle of the column while smaller droplets stick to the sides of the column and elute last. This form of chromatography is useful for separating analytes by molar mass (or molecular mass), size, shape, and structure when used in conjunction with light scattering detectors, viscometers, and refractometers. The two main types of HDC are open tube and packed column. Open tube offers rapid separation times for small particles, whereas packed column HDC can increase resolution and is better suited for particles with an average molecular mass larger than 
-          10
-            5
 
 $$ 10^{5} $$
 

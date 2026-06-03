@@ -35,218 +35,76 @@ In machine learning and artificial intelligence, diffusion models, also known as
 ### Definition of diffusion flux
 
 Each model of diffusion expresses the diffusion flux with the use of concentrations, densities and their derivatives. Flux is a vector 
-          J
 
 $$ \mathbf {J} $$
 
  representing the quantity and direction of transfer. Given a small area 
-        Δ
-
-        S
 
 $$ \Delta S $$
 
  with normal 
-          ν
 
 $$ {\boldsymbol {\nu }} $$
 
 , the transfer of a physical quantity 
-        N
 
 $$ N $$
 
  through the area 
-        Δ
-
-        S
 
 $$ \Delta S $$
 
  per time 
-        Δ
-
-        t
 
 $$ \Delta t $$
 
  is
 
-        Δ
-
-        N
-
-        =
-
-        (
-          J
-        ,
-          ν
-        )
-        Δ
-
-        S
-        Δ
-
-        t
-
-        +
-
-        o
-
-        (
-
-        Δ
-
-        S
-        Δ
-
-        t
-
-        )
-        ,
-
 $$ \Delta N=(\mathbf {J} ,{\boldsymbol {\nu }})\,\Delta S\,\Delta t+o(\Delta S\,\Delta t)\,, $$
 
 where 
-        (
-          J
-        ,
-          ν
-        )
 
 $$ (\mathbf {J} ,{\boldsymbol {\nu }}) $$
 
  is the inner product and 
-        o
-
-        (
-
-        ⋯
-
-        )
 
 $$ o(\cdots ) $$
 
  is the little-o notation. If we use the notation of vector area 
-        Δ
-          S
-        =
-          ν
-        Δ
-
-        S
 
 $$ \Delta \mathbf {S} ={\boldsymbol {\nu }}\,\Delta S $$
 
  then
 
-        Δ
-
-        N
-
-        =
-
-        (
-          J
-        ,
-
-        Δ
-          S
-        )
-        Δ
-
-        t
-
-        +
-
-        o
-
-        (
-
-        Δ
-          S
-        Δ
-
-        t
-
-        )
-        .
-
 $$ \Delta N=(\mathbf {J} ,\Delta \mathbf {S} )\,\Delta t+o(\Delta \mathbf {S} \,\Delta t)\,. $$
 
 The dimension of the diffusion flux is [flux] = [quantity]/([time]·[area]). The diffusing physical quantity 
-        N
 
 $$ N $$
 
  may be the number of particles, mass, energy, electric charge, or any other scalar extensive quantity. For its density, 
-        n
 
 $$ n $$
 
 , the diffusion equation has the form
 
-              ∂
-
-              n
-              ∂
-
-              t
-        =
-
-        −
-
-        ∇
-
-        ⋅
-          J
-        +
-
-        W
-        ,
-
 $$ {\frac {\partial n}{\partial t}}=-\nabla \cdot \mathbf {J} +W\,, $$
 
 where 
-        W
 
 $$ W $$
 
  is intensity of any local source of this quantity (for example, the rate of a chemical reaction).
 
 For the diffusion equation, the no-flux boundary conditions can be formulated as 
-        (
-          J
-        (
-
-        x
-
-        )
-
-        ,
-          ν
-        (
-
-        x
-
-        )
-
-        )
-
-        =
-
-        0
 
 $$ (\mathbf {J} (x),{\boldsymbol {\nu }}(x))=0 $$
 
  on the boundary, where 
-          ν
 
 $$ {\boldsymbol {\nu }} $$
 
  is the normal to the boundary at point 
-        x
 
 $$ x $$
 
@@ -255,205 +113,40 @@ $$ x $$
 ### Normal single component concentration gradient
 
 Fick's first law: The diffusion flux, 
-          J
 
 $$ \mathbf {J} $$
 
 , is proportional to the negative gradient of spatial concentration, 
-        n
-
-        (
-
-        x
-
-        ,
-
-        t
-
-        )
 
 $$ n(x,t) $$
 
 :
 
-          J
-        =
-
-        −
-
-        D
-
-        (
-
-        x
-
-        )
-        ∇
-
-        n
-
-        (
-
-        x
-
-        ,
-
-        t
-
-        )
-
-        ,
-
 $$ \mathbf {J} =-D(x)\,\nabla n(x,t), $$
 
 where D is the diffusion coefficient, which can be estimated for a given mixture using, for example, the empirical Vignes correlation model or the physically motivated entropy scaling. The corresponding diffusion equation (Fick's second law) is
 
-              ∂
-
-              n
-
-              (
-
-              x
-
-              ,
-
-              t
-
-              )
-              ∂
-
-              t
-        =
-
-        ∇
-
-        ⋅
-
-        (
-
-        D
-
-        (
-
-        x
-
-        )
-        ∇
-
-        n
-
-        (
-
-        x
-
-        ,
-
-        t
-
-        )
-
-        )
-        .
-
 $$ {\frac {\partial n(x,t)}{\partial t}}=\nabla \cdot (D(x)\,\nabla n(x,t))\,. $$
 
 In case the diffusion coefficient is independent of 
-        x
 
 $$ x $$
 
 , Fick's second law can be simplified to
 
-              ∂
-
-              n
-
-              (
-
-              x
-
-              ,
-
-              t
-
-              )
-              ∂
-
-              t
-        =
-
-        D
-        Δ
-
-        n
-
-        (
-
-        x
-
-        ,
-
-        t
-
-        )
-        ,
-
 $$ {\frac {\partial n(x,t)}{\partial t}}=D\,\Delta n(x,t)\ , $$
 
 where 
-        Δ
 
 $$ \Delta $$
 
  is the Laplace operator,
-
-        Δ
-
-        n
-
-        (
-
-        x
-
-        ,
-
-        t
-
-        )
-
-        =
-          ∑
-            i
-                ∂
-                  2
-              n
-
-              (
-
-              x
-
-              ,
-
-              t
-
-              )
-              ∂
-                x
-                  i
-                  2
-        .
 
 $$ \Delta n(x,t)=\sum _{i}{\frac {\partial ^{2}n(x,t)}{\partial x_{i}^{2}}}\ . $$
 
 ### Multicomponent diffusion and thermodiffusion
 
 Fick's law describes diffusion of an admixture in a medium. The concentration of this admixture should be small and the gradient of this concentration should be also small. The driving force of diffusion in Fick's law is the antigradient of concentration, 
-        −
-
-        ∇
-
-        n
 
 $$ -\nabla n $$
 
@@ -463,179 +156,69 @@ In 1931, Lars Onsager included the multicomponent transport processes in the gen
 
 multi-component transport,
 
-            J
-            i
-        =
-          ∑
-            j
-          L
-            i
-
-            j
-          X
-            j
-        ,
-
 $$ \mathbf {J} _{i}=\sum _{j}L_{ij}X_{j}\,, $$
 
 where 
-            J
-            i
 
 $$ \mathbf {J} _{i} $$
 
  is the flux of the 
-        i
 
 $$ i $$
 
 th physical quantity (component), 
-          X
-            j
 
 $$ X_{j} $$
 
  is the 
-        j
 
 $$ j $$
 
 th thermodynamic force and 
-          L
-            i
-
-            j
 
 $$ L_{ij} $$
 
  is Onsager's matrix of kinetic transport coefficients.
 
 The thermodynamic forces for the transport processes were introduced by Onsager as the space gradients of the derivatives of the entropy density 
-        s
 
 $$ s $$
 
  (he used the term "force" in quotation marks or "driving force"):
 
-          X
-            i
-        =
-
-        ∇
-              ∂
-
-              s
-
-              (
-
-              n
-
-              )
-              ∂
-                n
-                  i
-        ,
-
 $$ X_{i}=\nabla {\frac {\partial s(n)}{\partial n_{i}}}\,, $$
 
 where 
-          n
-            i
 
 $$ n_{i} $$
 
  are the "thermodynamic coordinates".
 
 For the heat and mass transfer one can take 
-          n
-            0
-        =
-
-        u
 
 $$ n_{0}=u $$
 
  (the density of internal energy) and 
-          n
-            i
 
 $$ n_{i} $$
 
  is the concentration of the 
-        i
 
 $$ i $$
 
 th component. The corresponding driving forces are the space vectors
 
-          X
-            0
-        =
-
-        ∇
-            1
-
-            T
-        ,
-          X
-            i
-        =
-
-        −
-
-        ∇
-              μ
-                i
-            T
-        (
-
-        i
-
-        >
-
-        0
-
-        )
-
-        ,
-
 $$ X_{0}=\nabla {\frac {1}{T}}\ ,\;\;\;X_{i}=-\nabla {\frac {\mu _{i}}{T}}\;(i>0), $$
 
  because 
-          d
-        s
-
-        =
-            1
-
-            T
-          d
-        u
-
-        −
-          ∑
-            i
-
-            ≥
-
-            1
-              μ
-                i
-            T
-            d
-          n
-            i
 
 $$ \mathrm {d} s={\frac {1}{T}}\,\mathrm {d} u-\sum _{i\geq 1}{\frac {\mu _{i}}{T}}\,{\rm {d}}n_{i} $$
 
 where T is the absolute temperature and 
-          μ
-            i
 
 $$ \mu _{i} $$
 
  is the chemical potential of the 
-        i
 
 $$ i $$
 
@@ -643,61 +226,19 @@ th component. It should be stressed that the separate diffusion equations descri
 
 For the linear Onsager equations, we must take the thermodynamic forces in the linear approximation near equilibrium:
 
-          X
-            i
-        =
-          ∑
-            k
-
-            ≥
-
-            0
-                    ∂
-                      2
-                  s
-
-                  (
-
-                  n
-
-                  )
-                  ∂
-                    n
-                      i
-                  ∂
-                    n
-                      k
-            |
-            n
-
-            =
-              n
-                ∗
-        ∇
-          n
-            k
-        ,
-
 $$ X_{i}=\sum _{k\geq 0}\left.{\frac {\partial ^{2}s(n)}{\partial n_{i}\,\partial n_{k}}}\right|_{n=n^{*}}\nabla n_{k}\ , $$
 
 where the derivatives of 
-        s
 
 $$ s $$
 
  are calculated at equilibrium 
-          n
-            ∗
 
 $$ n^{*} $$
 
 .
 
 The matrix of the kinetic coefficients 
-          L
-            i
-
-            j
 
 $$ L_{ij} $$
 
@@ -705,264 +246,52 @@ $$ L_{ij} $$
 
 The transport equations are
 
-              ∂
-                n
-                  i
-              ∂
-
-              t
-        =
-
-        −
-
-        div
-
-        ⁡
-            J
-            i
-        =
-
-        −
-          ∑
-            j
-
-            ≥
-
-            0
-          L
-            i
-
-            j
-        div
-
-        ⁡
-          X
-            j
-        =
-          ∑
-            k
-
-            ≥
-
-            0
-          [
-            −
-              ∑
-                j
-
-                ≥
-
-                0
-              L
-                i
-
-                j
-                        ∂
-                          2
-                      s
-
-                      (
-
-                      n
-
-                      )
-                      ∂
-                        n
-                          j
-                      ∂
-                        n
-                          k
-                |
-                n
-
-                =
-                  n
-                    ∗
-          ]
-        Δ
-          n
-            k
-        .
-
 $$ {\frac {\partial n_{i}}{\partial t}}=-\operatorname {div} \mathbf {J} _{i}=-\sum _{j\geq 0}L_{ij}\operatorname {div} X_{j}=\sum _{k\geq 0}\left[-\sum _{j\geq 0}L_{ij}\left.{\frac {\partial ^{2}s(n)}{\partial n_{j}\,\partial n_{k}}}\right|_{n=n^{*}}\right]\,\Delta n_{k}\ . $$
 
 Here, all the indexes i, j, k = 0, 1, 2, ... are related to the internal energy (0) and various components. The expression in the square brackets is the matrix 
-          D
-            i
-
-            k
 
 $$ D_{ik} $$
 
  of the diffusion (i,k > 0), thermodiffusion (i > 0, k = 0 or k > 0, i = 0) and thermal conductivity (i = k = 0) coefficients.
 
 Under isothermal conditions T = constant. The relevant thermodynamic potential is the free energy (or the free entropy). The thermodynamic driving forces for the isothermal diffusion are antigradients of chemical potentials, 
-        −
-
-        (
-
-        1
-          /
-        T
-
-        )
-        ∇
-          μ
-            j
 
 $$ -(1/T)\,\nabla \mu _{j} $$
 
 , and the matrix of diffusion coefficients is
-
-          D
-            i
-
-            k
-        =
-            1
-
-            T
-          ∑
-            j
-
-            ≥
-
-            1
-          L
-            i
-
-            j
-                  ∂
-                    μ
-                      j
-                  (
-
-                  n
-
-                  ,
-
-                  T
-
-                  )
-                  ∂
-                    n
-                      k
-            |
-            n
-
-            =
-              n
-                ∗
 
 $$ D_{ik}={\frac {1}{T}}\sum _{j\geq 1}L_{ij}\left.{\frac {\partial \mu _{j}(n,T)}{\partial n_{k}}}\right|_{n=n^{*}} $$
 
 (i,k > 0).
 
 There is intrinsic arbitrariness in the definition of the thermodynamic forces and kinetic coefficients because they are not measurable separately and only their combinations 
-          ∑
-            j
-          L
-            i
 
-            j
-          X
-            j
-    {\textstyle \sum _{j}L_{ij}X_{j}}
+{\textstyle \sum _{j}L_{ij}X_{j}}
  can be measured. For example, in the original work of Onsager the thermodynamic forces include additional multiplier T, whereas in the Course of Theoretical Physics this multiplier is omitted but the sign of the thermodynamic forces is opposite. All these changes are supplemented by the corresponding changes in the coefficients and do not affect the measurable quantities.
 
 #### Nondiagonal diffusion must be nonlinear
 
 The formalism of linear irreversible thermodynamics (Onsager) generates the systems of linear diffusion equations in the form
 
-              ∂
-                c
-                  i
-              ∂
-
-              t
-        =
-          ∑
-            j
-          D
-            i
-
-            j
-        Δ
-          c
-            j
-        .
-
 $$ {\frac {\partial c_{i}}{\partial t}}=\sum _{j}D_{ij}\,\Delta c_{j}. $$
 
 If the matrix of diffusion coefficients is diagonal, then this system of equations is just a collection of decoupled Fick's equations for various components. Assume that diffusion is non-diagonal, for example, 
-          D
-            12
-        ≠
-
-        0
 
 $$ D_{12}\neq 0 $$
 
 , and consider the state with 
-          c
-            2
-        =
-
-        ⋯
-
-        =
-          c
-            n
-        =
-
-        0
 
 $$ c_{2}=\cdots =c_{n}=0 $$
 
 . At this state, 
-        ∂
-          c
-            2
-          /
-        ∂
-
-        t
-
-        =
-          D
-            12
-        Δ
-          c
-            1
 
 $$ \partial c_{2}/\partial t=D_{12}\,\Delta c_{1} $$
 
 . If 
-          D
-            12
-        Δ
-          c
-            1
-        (
-
-        x
-
-        )
-
-        <
-
-        0
 
 $$ D_{12}\,\Delta c_{1}(x)<0 $$
 
  at some points, then 
-          c
-            2
-        (
-
-        x
-
-        )
 
 $$ c_{2}(x) $$
 
@@ -972,22 +301,11 @@ $$ c_{2}(x) $$
 
 The Einstein relation (kinetic theory) connects the diffusion coefficient and the mobility (the ratio of the particle's terminal drift velocity to an applied force). For charged particles:
 
-        D
-
-        =
-              μ
-                k
-                  B
-              T
-            q
-        ,
-
 $$ D={\frac {\mu \,k_{\text{B}}T}{q}}, $$
 
 where D is the diffusion constant, μ is the "mobility", kB is the Boltzmann constant, T is the absolute temperature, and q is the elementary charge, that is, the charge of one electron.
 
 Below, to combine in the same formula the chemical potential μ and the mobility, we use for mobility the notation 
-            m
 
 $$ {\mathfrak {m}} $$
 
@@ -1004,52 +322,12 @@ This is the so-called Teorell formula. The term "gram-ion" ("gram-particle")  is
 The force under isothermal conditions consists of two parts:
 
 Diffusion force caused by concentration gradient: 
-        −
-
-        R
-
-        T
-            1
-
-            n
-        ∇
-
-        n
-
-        =
-
-        −
-
-        R
-
-        T
-        ∇
-
-        (
-
-        ln
-
-        ⁡
-
-        (
-
-        n
-          /
-          n
-            eq
-        )
-
-        )
 
 $$ -RT{\frac {1}{n}}\,\nabla n=-RT\,\nabla (\ln(n/n^{\text{eq}})) $$
 
 .
 
 Electrostatic force caused by electric potential gradient: 
-        q
-        ∇
-
-        φ
 
 $$ q\,\nabla \varphi $$
 
@@ -1061,170 +339,37 @@ The simple but crucial difference between the Teorell formula and the Onsager la
 
 The general formulation of the Teorell formula for non-perfect systems under isothermal conditions is
 
-          J
-        =
-            m
-        exp
-
-        ⁡
-          (
-                μ
-
-                −
-                  μ
-                    0
-                R
-
-                T
-          )
-        (
-
-        −
-
-        ∇
-
-        μ
-
-        +
-
-        (
-          external force per mole
-        )
-
-        )
-
-        ,
+external force per mole
 
 $$ \mathbf {J} ={\mathfrak {m}}\exp \left({\frac {\mu -\mu _{0}}{RT}}\right)(-\nabla \mu +({\text{external force per mole}})), $$
 
 where μ is the chemical potential, μ0 is the standard value of the chemical potential.
 
 The expression 
-        a
-
-        =
-
-        exp
-
-        ⁡
-          (
-                μ
-
-                −
-                  μ
-                    0
-                R
-
-                T
-          )
 
 $$ a=\exp \left({\frac {\mu -\mu _{0}}{RT}}\right) $$
 
  is the so-called activity. It measures the "effective concentration" of a species in a non-ideal mixture. In this notation, the Teorell formula for the flux has a very simple form
 
-          J
-        =
-            m
-        a
-
-        (
-
-        −
-
-        ∇
-
-        μ
-
-        +
-
-        (
-          external force per mole
-        )
-
-        )
-
-        .
+external force per mole
 
 $$ \mathbf {J} ={\mathfrak {m}}a(-\nabla \mu +({\text{external force per mole}})). $$
 
 The standard derivation of the activity includes a normalization factor and for small concentrations 
-        a
-
-        =
-
-        n
-          /
-          n
-            ⊖
-        +
-
-        o
-
-        (
-
-        n
-          /
-          n
-            ⊖
-        )
 
 $$ a=n/n^{\ominus }+o(n/n^{\ominus }) $$
 
 , where 
-          n
-            ⊖
 
 $$ n^{\ominus } $$
 
  is the standard concentration. Therefore, this formula for the flux describes the flux of the normalized dimensionless quantity 
-        n
-          /
-          n
-            ⊖
 
 $$ n/n^{\ominus } $$
 
 :
 
-              ∂
-
-              (
-
-              n
-                /
-                n
-                  ⊖
-              )
-              ∂
-
-              t
-        =
-
-        ∇
-
-        ⋅
-
-        [
-            m
-        a
-
-        (
-
-        ∇
-
-        μ
-
-        −
-
-        (
-          external force per mole
-        )
-
-        )
-
-        ]
-
-        .
+external force per mole
 
 $$ {\frac {\partial (n/n^{\ominus })}{\partial t}}=\nabla \cdot [{\mathfrak {m}}a(\nabla \mu -({\text{external force per mole}}))]. $$
 
@@ -1233,35 +378,6 @@ $$ {\frac {\partial (n/n^{\ominus })}{\partial t}}=\nabla \cdot [{\mathfrak {m}}
 The Einstein model neglects the inertia of the diffusing partial. The alternative
 
 Langevin equation starts with Newton's second law of motion:
-
-        m
-                d
-                  2
-              x
-              d
-                t
-                  2
-        =
-
-        −
-            1
-
-            μ
-              d
-
-              x
-              d
-
-              t
-        +
-
-        F
-
-        (
-
-        t
-
-        )
 
 $$ m{\frac {d^{2}x}{dt^{2}}}=-{\frac {1}{\mu }}{\frac {dx}{dt}}+F(t) $$
 
@@ -1278,40 +394,6 @@ F is the random force applied to the particle.
 t is time.
 
 Solving this equation, one obtained the time-dependent diffusion constant in the long-time limit and when the particle is significantly denser than the surrounding fluid,
-
-        D
-
-        (
-
-        t
-
-        )
-
-        =
-
-        μ
-          k
-              B
-        T
-
-        (
-
-        1
-
-        −
-          e
-            −
-
-            t
-              /
-            (
-
-            m
-
-            μ
-
-            )
-        )
 
 $$ D(t)=\mu \,k_{\rm {B}}T(1-e^{-t/(m\mu )}) $$
 
@@ -1334,186 +416,44 @@ At long time scales, Einstein's result is recovered, but short time scales, the 
 Diffusion of reagents on the surface of a catalyst may play an important role in heterogeneous catalysis. The model of diffusion in the ideal monolayer is based on the jumps of the reagents on the nearest free places. This model was used for CO on Pt oxidation under low gas pressure.
 
 The system includes several reagents 
-          A
-            1
-        ,
-          A
-            2
-        ,
-
-        …
-
-        ,
-          A
-            m
 
 $$ A_{1},A_{2},\ldots ,A_{m} $$
 
  on the surface. Their surface concentrations are 
-          c
-            1
-        ,
-          c
-            2
-        ,
-
-        …
-
-        ,
-          c
-            m
-        .
 
 $$ c_{1},c_{2},\ldots ,c_{m}. $$
 
  The surface is a lattice of the adsorption places. Each
 
 reagent molecule fills a place on the surface. Some of the places are free. The concentration of the free places is 
-        z
-
-        =
-          c
-            0
 
 $$ z=c_{0} $$
 
 . The sum of all 
-          c
-            i
 
 $$ c_{i} $$
 
  (including free places) is constant, the density of adsorption places b.
 
 The jump model gives for the diffusion flux of 
-          A
-            i
 
 $$ A_{i} $$
 
  (i = 1, ..., n):
 
-            J
-            i
-        =
-
-        −
-          D
-            i
-        [
-
-        z
-        ∇
-          c
-            i
-        −
-          c
-            i
-        ∇
-
-        z
-
-        ]
-        .
-
 $$ \mathbf {J} _{i}=-D_{i}[z\,\nabla c_{i}-c_{i}\nabla z]\,. $$
 
 The corresponding diffusion equation is:
 
-              ∂
-                c
-                  i
-              ∂
-
-              t
-        =
-
-        −
-
-        div
-
-        ⁡
-            J
-            i
-        =
-          D
-            i
-        [
-
-        z
-        Δ
-          c
-            i
-        −
-          c
-            i
-        Δ
-
-        z
-
-        ]
-        .
-
 $$ {\frac {\partial c_{i}}{\partial t}}=-\operatorname {div} \mathbf {J} _{i}=D_{i}[z\,\Delta c_{i}-c_{i}\,\Delta z]\,. $$
 
 Due to the conservation law, 
-        z
-
-        =
-
-        b
-
-        −
-          ∑
-            i
-
-            =
-
-            1
-            n
-          c
-            i
-        ,
 
 $$ z=b-\sum _{i=1}^{n}c_{i}\,, $$
 
  and we
 
 have the system of m diffusion equations. For one component we get Fick's law and linear equations because 
-        (
-
-        b
-
-        −
-
-        c
-
-        )
-        ∇
-
-        c
-
-        −
-
-        c
-        ∇
-
-        (
-
-        b
-
-        −
-
-        c
-
-        )
-
-        =
-
-        b
-        ∇
-
-        c
 
 $$ (b-c)\,\nabla c-c\,\nabla (b-c)=b\,\nabla c $$
 
@@ -1521,81 +461,15 @@ $$ (b-c)\,\nabla c-c\,\nabla (b-c)=b\,\nabla c $$
 
 If all particles can exchange their positions with their closest neighbours then a simple generalization gives
 
-            J
-            i
-        =
-
-        −
-          ∑
-            j
-          D
-            i
-
-            j
-        [
-          c
-            j
-        ∇
-          c
-            i
-        −
-          c
-            i
-        ∇
-          c
-            j
-        ]
-
 $$ \mathbf {J} _{i}=-\sum _{j}D_{ij}[c_{j}\,\nabla c_{i}-c_{i}\,\nabla c_{j}] $$
-
-              ∂
-                c
-                  i
-              ∂
-
-              t
-        =
-          ∑
-            j
-          D
-            i
-
-            j
-        [
-          c
-            j
-        Δ
-          c
-            i
-        −
-          c
-            i
-        Δ
-          c
-            j
-        ]
 
 $$ {\frac {\partial c_{i}}{\partial t}}=\sum _{j}D_{ij}[c_{j}\,\Delta c_{i}-c_{i}\,\Delta c_{j}] $$
 
 where 
-          D
-            i
-
-            j
-        =
-          D
-            j
-
-            i
-        ≥
-
-        0
 
 $$ D_{ij}=D_{ji}\geq 0 $$
 
  is a symmetric matrix of coefficients that characterize the intensities of jumps. The free places (vacancies) should be considered as special "particles" with concentration 
-          c
-            0
 
 $$ c_{0} $$
 
@@ -1607,33 +481,7 @@ Various versions of these jump models are also suitable for simple diffusion mec
 
 For diffusion in porous media the basic equations are (if Φ is constant):
 
-          J
-        =
-
-        −
-
-        ϕ
-
-        D
-        ∇
-          n
-            m
-
 $$ \mathbf {J} =-\phi D\,\nabla n^{m} $$
-
-              ∂
-
-              n
-              ∂
-
-              t
-        =
-
-        D
-        Δ
-          n
-            m
-        ,
 
 $$ {\frac {\partial n}{\partial t}}=D\,\Delta n^{m}\,, $$
 
@@ -1642,18 +490,6 @@ where D is the diffusion coefficient, Φ is porosity, n is the concentration, m 
 Care must be taken to properly account for the porosity (Φ) of the porous medium in both the flux terms and the accumulation terms. For example, as the porosity goes to zero, the molar flux in the porous medium goes to zero for a given concentration gradient. Upon applying the divergence of the flux, the porosity terms cancel out and the second equation above is formed.
 
 For diffusion of gases in porous media this equation is the formalization of Darcy's law: the volumetric flux of a gas in the porous media is
-
-        q
-
-        =
-
-        −
-            k
-
-            μ
-        ∇
-
-        p
 
 $$ q=-{\frac {k}{\mu }}\,\nabla p $$
 
@@ -1664,11 +500,6 @@ The advective molar flux is given as
 J = nq
 
 and for 
-        p
-
-        ∼
-          n
-            γ
 
 $$ p\sim n^{\gamma } $$
 
@@ -1676,40 +507,9 @@ $$ p\sim n^{\gamma } $$
 
 In porous media, the average linear velocity (ν), is related to the volumetric flux as:
 
-        υ
-
-        =
-
-        q
-          /
-        ϕ
-
 $$ \upsilon =q/\phi $$
 
 Combining the advective molar flux with the diffusive flux gives the advection dispersion equation
-
-              ∂
-
-              n
-              ∂
-
-              t
-        =
-
-        D
-        Δ
-          n
-            m
-        −
-
-        ν
-
-        ⋅
-
-        ∇
-          n
-            m
-        ,
 
 $$ {\frac {\partial n}{\partial t}}=D\,\Delta n^{m}\ -\nu \cdot \nabla n^{m}, $$
 
@@ -1722,25 +522,10 @@ For plasma with the high level of radiation, the Zeldovich–Raizer equation giv
 ### Diffusion coefficient in kinetic theory of gases
 
 The diffusion coefficient 
-        D
 
 $$ D $$
 
  is the coefficient in the Fick's first law 
-        J
-
-        =
-
-        −
-
-        D
-        ∂
-
-        n
-          /
-        ∂
-
-        x
 
 $$ J=-D\,\partial n/\partial x $$
 
@@ -1748,66 +533,13 @@ $$ J=-D\,\partial n/\partial x $$
 
 Consider two gases with molecules of the same diameter d and mass m (self-diffusion). In this case, the elementary mean free path theory of diffusion gives for the diffusion coefficient
 
-        D
-
-        =
-            1
-
-            3
-        ℓ
-          v
-            T
-        =
-            2
-
-            3
-                k
-                    B
-                  3
-                  π
-                    3
-                m
-              T
-                3
-                  /
-                2
-              P
-                d
-                  2
-        ,
-
 $$ D={\frac {1}{3}}\ell v_{T}={\frac {2}{3}}{\sqrt {\frac {k_{\rm {B}}^{3}}{\pi ^{3}m}}}{\frac {T^{3/2}}{Pd^{2}}}\,, $$
 
 where kB is the Boltzmann constant, T is the temperature, P is the pressure, 
-        ℓ
 
 $$ \ell $$
 
  is the mean free path, and vT is the mean thermal speed:
-
-        ℓ
-
-        =
-                k
-                    B
-              T
-                  2
-              π
-                d
-                  2
-              P
-        ,
-          v
-            T
-        =
-                8
-                  k
-                      B
-                T
-                π
-
-                m
-        .
 
 $$ \ell ={\frac {k_{\rm {B}}T}{{\sqrt {2}}\pi d^{2}P}}\,,\;\;\;v_{T}={\sqrt {\frac {8k_{\rm {B}}T}{\pi m}}}\,. $$
 
@@ -1815,120 +547,18 @@ We can see that the diffusion coefficient in the mean free path approximation gr
 
 For two different gases, A and B, with molecular masses mA, mB and molecular diameters dA, dB, the mean free path estimate of the diffusion coefficient of A in B and B in A is:
 
-          D
-              A
-
-              B
-        =
-            2
-
-            3
-                k
-                    B
-                  3
-                π
-                  3
-                1
-                  2
-                    m
-                        A
-            +
-                1
-                  2
-                    m
-                        B
-              4
-                T
-                  3
-                    /
-                  2
-              P
-
-              (
-                d
-                    A
-              +
-                d
-                    B
-                )
-                  2
-        ,
-
 $$ D_{\rm {AB}}={\frac {2}{3}}{\sqrt {\frac {k_{\rm {B}}^{3}}{\pi ^{3}}}}{\sqrt {{\frac {1}{2m_{\rm {A}}}}+{\frac {1}{2m_{\rm {B}}}}}}{\frac {4T^{3/2}}{P(d_{\rm {A}}+d_{\rm {B}})^{2}}}\,, $$
 
 ### The theory of diffusion in gases based on Boltzmann's equation
 
 In Boltzmann's kinetics of the mixture of gases, each gas has its own distribution function, 
-          f
-            i
-        (
-
-        x
-
-        ,
-
-        c
-
-        ,
-
-        t
-
-        )
 
 $$ f_{i}(x,c,t) $$
 
 , where t is the time moment, x is position and c is velocity of molecule of the ith component of the mixture. Each component has its mean velocity 
-          C
-            i
-        (
 
-        x
-
-        ,
-
-        t
-
-        )
-
-        =
-            1
-              n
-                i
-          ∫
-            c
-        c
-
-        f
-
-        (
-
-        x
-
-        ,
-
-        c
-
-        ,
-
-        t
-
-        )
-        d
-
-        c
-    {\textstyle C_{i}(x,t)={\frac {1}{n_{i}}}\int _{c}cf(x,c,t)\,dc}
+{\textstyle C_{i}(x,t)={\frac {1}{n_{i}}}\int _{c}cf(x,c,t)\,dc}
 . If the velocities 
-          C
-            i
-        (
-
-        x
-
-        ,
-
-        t
-
-        )
 
 $$ C_{i}(x,t) $$
 
@@ -1937,327 +567,41 @@ $$ C_{i}(x,t) $$
 In the Chapman–Enskog approximation, all the distribution functions are expressed through the densities of the conserved quantities:
 
 individual concentrations of particles, 
-          n
-            i
-        (
 
-        x
-
-        ,
-
-        t
-
-        )
-
-        =
-          ∫
-            c
-          f
-            i
-        (
-
-        x
-
-        ,
-
-        c
-
-        ,
-
-        t
-
-        )
-        d
-
-        c
-    {\textstyle n_{i}(x,t)=\int _{c}f_{i}(x,c,t)\,dc}
+{\textstyle n_{i}(x,t)=\int _{c}f_{i}(x,c,t)\,dc}
  (particles per volume),
 
 density of momentum 
-          ∑
-            i
-          m
-            i
-          n
-            i
-          C
-            i
-        (
 
-        x
-
-        ,
-
-        t
-
-        )
-    {\textstyle \sum _{i}m_{i}n_{i}C_{i}(x,t)}
+{\textstyle \sum _{i}m_{i}n_{i}C_{i}(x,t)}
  (mi is the ith particle mass),
 
 density of kinetic energy 
-          ∑
-            i
-          (
-              n
-                i
-                    m
-                      i
-                    C
-                      i
-                      2
-                  (
-
-                  x
-
-                  ,
-
-                  t
-
-                  )
-                2
-            +
-              ∫
-                c
-                    m
-                      i
-                  (
-                    c
-                      i
-                  −
-                    C
-                      i
-                  (
-
-                  x
-
-                  ,
-
-                  t
-
-                  )
-                    )
-                      2
-                2
-              f
-                i
-            (
-
-            x
-
-            ,
-
-            c
-
-            ,
-
-            t
-
-            )
-            d
-
-            c
-          )
-        .
 
 $$ \sum _{i}\left(n_{i}{\frac {m_{i}C_{i}^{2}(x,t)}{2}}+\int _{c}{\frac {m_{i}(c_{i}-C_{i}(x,t))^{2}}{2}}f_{i}(x,c,t)\,dc\right). $$
 
 The kinetic temperature T and pressure P are defined in 3D space as
 
-            3
-
-            2
-          k
-              B
-        T
-
-        =
-            1
-
-            n
-          ∫
-            c
-                m
-                  i
-              (
-                c
-                  i
-              −
-                C
-                  i
-              (
-
-              x
-
-              ,
-
-              t
-
-              )
-                )
-                  2
-            2
-          f
-            i
-        (
-
-        x
-
-        ,
-
-        c
-
-        ,
-
-        t
-
-        )
-        d
-
-        c
-
-        ;
-        P
-
-        =
-          k
-              B
-        n
-
-        T
-
-        ,
-
 $$ {\frac {3}{2}}k_{\rm {B}}T={\frac {1}{n}}\int _{c}{\frac {m_{i}(c_{i}-C_{i}(x,t))^{2}}{2}}f_{i}(x,c,t)\,dc;\quad P=k_{\rm {B}}nT, $$
 
 where 
-        n
 
-        =
-          ∑
-            i
-          n
-            i
-    {\textstyle n=\sum _{i}n_{i}}
+{\textstyle n=\sum _{i}n_{i}}
  is the total density.
 
 For two gases, the difference between velocities, 
-          C
-            1
-        −
-          C
-            2
 
 $$ C_{1}-C_{2} $$
 
  is given by the expression:
 
-          C
-            1
-        −
-          C
-            2
-        =
-
-        −
-              n
-                2
-                n
-                  1
-                n
-                  2
-          D
-            12
-          {
-            ∇
-              (
-                    n
-                      1
-                  n
-              )
-            +
-                    n
-                      1
-                    n
-                      2
-                  (
-                    m
-                      2
-                  −
-                    m
-                      1
-                  )
-                  P
-
-                  n
-
-                  (
-                    m
-                      1
-                    n
-                      1
-                  +
-                    m
-                      2
-                    n
-                      2
-                  )
-            ∇
-
-            P
-
-            −
-                    m
-                      1
-                    n
-                      1
-                    m
-                      2
-                    n
-                      2
-                  P
-
-                  (
-                    m
-                      1
-                    n
-                      1
-                  +
-                    m
-                      2
-                    n
-                      2
-                  )
-            (
-              F
-                1
-            −
-              F
-                2
-            )
-
-            +
-              k
-                T
-                1
-
-                T
-            ∇
-
-            T
-          }
-        ,
-
 $$ C_{1}-C_{2}=-{\frac {n^{2}}{n_{1}n_{2}}}D_{12}\left\{\nabla \left({\frac {n_{1}}{n}}\right)+{\frac {n_{1}n_{2}(m_{2}-m_{1})}{Pn(m_{1}n_{1}+m_{2}n_{2})}}\nabla P-{\frac {m_{1}n_{1}m_{2}n_{2}}{P(m_{1}n_{1}+m_{2}n_{2})}}(F_{1}-F_{2})+k_{T}{\frac {1}{T}}\nabla T\right\}, $$
 
 where 
-          F
-            i
 
 $$ F_{i} $$
 
  is the force applied to the molecules of the ith component and 
-          k
-            T
 
 $$ k_{T} $$
 
@@ -2265,90 +609,17 @@ $$ k_{T} $$
 
 The coefficient D12 is positive. This is the diffusion coefficient. Four terms in the formula for C1−C2 describe four main effects in the diffusion of gases:
 
-        ∇
-          (
-                n
-                  1
-              n
-          )
-
 $$ \nabla \,\left({\frac {n_{1}}{n}}\right) $$
 
  describes the flux of the first component from the areas with the high ratio n1/n to the areas with lower values of this ratio (and, analogously the flux of the second component from high n2/n to low n2/n because n2/n = 1 – n1/n);
-
-                n
-                  1
-                n
-                  2
-              (
-                m
-                  2
-              −
-                m
-                  1
-              )
-              n
-
-              (
-                m
-                  1
-                n
-                  1
-              +
-                m
-                  2
-                n
-                  2
-              )
-        ∇
-
-        P
 
 $$ {\frac {n_{1}n_{2}(m_{2}-m_{1})}{n(m_{1}n_{1}+m_{2}n_{2})}}\nabla P $$
 
  describes the flux of the heavier molecules to the areas with higher pressure and the lighter molecules to the areas with lower pressure, this is barodiffusion;
 
-                m
-                  1
-                n
-                  1
-                m
-                  2
-                n
-                  2
-              P
-
-              (
-                m
-                  1
-                n
-                  1
-              +
-                m
-                  2
-                n
-                  2
-              )
-        (
-          F
-            1
-        −
-          F
-            2
-        )
-
 $$ {\frac {m_{1}n_{1}m_{2}n_{2}}{P(m_{1}n_{1}+m_{2}n_{2})}}(F_{1}-F_{2}) $$
 
  describes diffusion caused by the difference of the forces applied to molecules of different types. For example, in the Earth's gravitational field, the heavier molecules should go down, or in electric field the charged molecules should move, until this effect is not equilibrated by the sum of other terms. This effect should not be confused with barodiffusion caused by the pressure gradient.
-
-          k
-            T
-            1
-
-            T
-        ∇
-
-        T
 
 $$ k_{T}{\frac {1}{T}}\nabla T $$
 
@@ -2358,135 +629,17 @@ All these effects are called diffusion because they describe the differences bet
 
 In the first approximation,
 
-          D
-            12
-        =
-            3
-              2
-
-              n
-
-              (
-                d
-                  1
-              +
-                d
-                  2
-                )
-                  2
-            [
-                  k
-
-                  T
-
-                  (
-                    m
-                      1
-                  +
-                    m
-                      2
-                  )
-                  2
-
-                  π
-                    m
-                      1
-                    m
-                      2
-            ]
-            1
-              /
-            2
-
 $$ D_{12}={\frac {3}{2n(d_{1}+d_{2})^{2}}}\left[{\frac {kT(m_{1}+m_{2})}{2\pi m_{1}m_{2}}}\right]^{1/2} $$
 
  for rigid spheres;
 
-          D
-            12
-        =
-            3
-              8
-
-              n
-                A
-                  1
-              (
-                ν
-              )
-
-              Γ
-
-              (
-
-              3
-
-              −
-                  2
-                    ν
-
-                    −
-
-                    1
-              )
-            [
-                  k
-
-                  T
-
-                  (
-                    m
-                      1
-                  +
-                    m
-                      2
-                  )
-                  2
-
-                  π
-                    m
-                      1
-                    m
-                      2
-            ]
-            1
-              /
-            2
-            (
-                  2
-
-                  k
-
-                  T
-                  κ
-                    12
-            )
-              2
-                ν
-
-                −
-
-                1
-
 $$ D_{12}={\frac {3}{8nA_{1}({\nu })\Gamma (3-{\frac {2}{\nu -1}})}}\left[{\frac {kT(m_{1}+m_{2})}{2\pi m_{1}m_{2}}}\right]^{1/2}\left({\frac {2kT}{\kappa _{12}}}\right)^{\frac {2}{\nu -1}} $$
 
  for repulsing force 
-          κ
-            12
-          r
-            −
-
-            ν
-        .
 
 $$ \kappa _{12}r^{-\nu }. $$
 
 The number 
-          A
-            1
-        (
-          ν
-        )
 
 $$ A_{1}({\nu }) $$
 
@@ -2496,142 +649,44 @@ We can see that the dependence on T for the rigid spheres is the same as for the
 
 In applications to gas dynamics, the diffusion flux and the bulk flow should be joined in one system of transport equations. The bulk flow describes the mass transfer. Its velocity V is the mass average velocity. It is defined through the momentum density and the mass concentrations:
 
-        V
-
-        =
-                ∑
-                  i
-                ρ
-                  i
-                C
-                  i
-            ρ
-        .
-
 $$ V={\frac {\sum _{i}\rho _{i}C_{i}}{\rho }}\,. $$
 
 where 
-          ρ
-            i
-        =
-          m
-            i
-          n
-            i
 
 $$ \rho _{i}=m_{i}n_{i} $$
 
  is the mass concentration of the ith species, 
-        ρ
 
-        =
-          ∑
-            i
-          ρ
-            i
-    {\textstyle \rho =\sum _{i}\rho _{i}}
+{\textstyle \rho =\sum _{i}\rho _{i}}
  is the mass density.
 
 By definition, the diffusion velocity of the ith component is 
-          v
-            i
-        =
-          C
-            i
-        −
-
-        V
 
 $$ v_{i}=C_{i}-V $$
 
 , 
-          ∑
-            i
-          ρ
-            i
-          v
-            i
-        =
 
-        0
-    {\textstyle \sum _{i}\rho _{i}v_{i}=0}
+{\textstyle \sum _{i}\rho _{i}v_{i}=0}
 .
 
 The mass transfer of the ith component is described by the continuity equation
 
-              ∂
-                ρ
-                  i
-              ∂
-
-              t
-        +
-
-        ∇
-
-        (
-          ρ
-            i
-        V
-
-        )
-
-        +
-
-        ∇
-
-        (
-          ρ
-            i
-          v
-            i
-        )
-
-        =
-          W
-            i
-        ,
-
 $$ {\frac {\partial \rho _{i}}{\partial t}}+\nabla (\rho _{i}V)+\nabla (\rho _{i}v_{i})=W_{i}\,, $$
 
 where 
-          W
-            i
 
 $$ W_{i} $$
 
  is the net mass production rate in chemical reactions, 
-          ∑
-            i
-          W
-            i
-        =
 
-        0
-    {\textstyle \sum _{i}W_{i}=0}
+{\textstyle \sum _{i}W_{i}=0}
 .
 
 In these equations, the term 
-        ∇
-
-        (
-          ρ
-            i
-        V
-
-        )
 
 $$ \nabla (\rho _{i}V) $$
 
  describes advection of the ith component and the term 
-        ∇
-
-        (
-          ρ
-            i
-          v
-            i
-        )
 
 $$ \nabla (\rho _{i}v_{i}) $$
 
@@ -2639,203 +694,46 @@ $$ \nabla (\rho _{i}v_{i}) $$
 
 In 1948, Wendell H. Furry proposed to use the form of the diffusion rates found in kinetic theory as a framework for the new phenomenological approach to diffusion in gases. This approach was developed further by F.A. Williams and S.H. Lam. For the diffusion velocities in multicomponent gases (N components) they used
 
-          v
-            i
-        =
-
-        −
-          (
-              ∑
-                j
-
-                =
-
-                1
-                N
-              D
-                i
-
-                j
-                d
-                j
-            +
-              D
-                i
-                (
-
-                T
-
-                )
-            ∇
-
-            (
-
-            ln
-
-            ⁡
-
-            T
-
-            )
-          )
-        ;
-
 $$ v_{i}=-\left(\sum _{j=1}^{N}D_{ij}\mathbf {d} _{j}+D_{i}^{(T)}\,\nabla (\ln T)\right)\,; $$
 
-            d
-            j
-        =
-
-        ∇
-          X
-            j
-        +
-
-        (
-          X
-            j
-        −
-          Y
-            j
-        )
-        ∇
-
-        (
-
-        ln
-
-        ⁡
-
-        P
-
-        )
-
-        +
-            g
-            j
-        ;
-
 $$ \mathbf {d} _{j}=\nabla X_{j}+(X_{j}-Y_{j})\,\nabla (\ln P)+\mathbf {g} _{j}\,; $$
-
-            g
-            j
-        =
-            ρ
-
-            P
-          (
-              Y
-                j
-              ∑
-                k
-
-                =
-
-                1
-                N
-              Y
-                k
-            (
-              f
-                k
-            −
-              f
-                j
-            )
-          )
-        .
 
 $$ \mathbf {g} _{j}={\frac {\rho }{P}}\left(Y_{j}\sum _{k=1}^{N}Y_{k}(f_{k}-f_{j})\right)\,. $$
 
 Here, 
-          D
-            i
-
-            j
 
 $$ D_{ij} $$
 
  is the diffusion coefficient matrix, 
-          D
-            i
-            (
-
-            T
-
-            )
 
 $$ D_{i}^{(T)} $$
 
  is the thermal diffusion coefficient, 
-          f
-            i
 
 $$ f_{i} $$
 
  is the body force per unit mass acting on the ith species, 
-          X
-            i
-        =
-          P
-            i
-          /
-        P
 
 $$ X_{i}=P_{i}/P $$
 
  is the partial pressure fraction of the ith species (and 
-          P
-            i
 
 $$ P_{i} $$
 
  is the partial pressure), 
-          Y
-            i
-        =
-          ρ
-            i
-          /
-        ρ
 
 $$ Y_{i}=\rho _{i}/\rho $$
 
  is the mass fraction of the ith species, and 
-          ∑
-            i
-          X
-            i
-        =
-          ∑
-            i
-          Y
-            i
-        =
 
         1.
-    {\textstyle \sum _{i}X_{i}=\sum _{i}Y_{i}=1.}
+{\textstyle \sum _{i}X_{i}=\sum _{i}Y_{i}=1.}
 
 ### Diffusion of electrons in solids
 
 When the density of electrons in solids is not in equilibrium, diffusion of electrons occurs. For example, when a bias is applied to two ends of a chunk of semiconductor, or a light shines on one end (see right figure), electrons diffuse from high density regions (center) to low density regions (two ends), forming a gradient of electron density. This process generates current, referred to as diffusion current.
 
 Diffusion current can also be described by Fick's first law
-
-        J
-
-        =
-
-        −
-
-        D
-        ∂
-
-        n
-          /
-        ∂
-
-        x
-        ,
 
 $$ J=-D\,\partial n/\partial x\,, $$
 

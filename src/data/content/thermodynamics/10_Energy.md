@@ -24,20 +24,9 @@ In classical mechanics, energy is a conceptually and mathematically useful prope
 
 Work, a function of energy, is force times distance.
 
-        W
-
-        =
-          ∫
-            C
-          F
-        ⋅
-          d
-          s
-
 $$ W=\int _{C}\mathbf {F} \cdot \mathrm {d} \mathbf {s} $$
 
 This says that the work (
-        W
 
 $$ W $$
 
@@ -85,58 +74,7 @@ Multicellular organisms such as humans have cell forms that are classified as Eu
 
 Two examples of nutrients consumed by animals are glucose (C6H12O6) and stearin (C57H110O6). These food molecules are oxidized to carbon dioxide and water in the mitochondria:
 
-            C
-              6
-            H
-              12
-            O
-              6
-          +
-
-          6
-            O
-              2
-          ⟶
-
-          6
-            CO
-              2
-          +
-
-          6
-            H
-              2
-          O
-
 $$ {\ce {C6H12O6 + 6O2 -> 6CO2 + 6H2O}} $$
-
-            C
-              57
-            H
-              110
-            O
-              6
-          +
-            (
-
-            81
-                1
-
-                2
-            )
-            O
-              2
-          ⟶
-
-          57
-            CO
-              2
-          +
-
-          55
-            H
-              2
-          O
 
 $$ {\ce {C57H110O6 + (81 1/2) O2 -> 57CO2 + 55H2O}} $$
 
@@ -169,23 +107,14 @@ In quantum mechanics, energy is defined in terms of the energy operator
 (Hamiltonian) as a time derivative of the wave function. The Schrödinger equation equates the energy operator to the full energy of a particle or a system. Its results can be considered as a definition of measurement of energy in quantum mechanics. The Schrödinger equation describes the space- and time-dependence of a slowly changing (non-relativistic) wave function of quantum systems. The solution of this equation for a bound system is discrete (a set of permitted states, each characterized by an energy level) which results in the concept of quanta.
 
 For electromagnetic waves in a vacuum, the energy states are related to the frequency by the Planck relation: 
-        E
-
-        =
-
-        h
-
-        ν
 
 $$ E=h\nu $$
 
 , where 
-        h
 
 $$ h $$
 
  is the Planck constant and 
-        ν
 
 $$ \nu $$
 
@@ -194,14 +123,6 @@ $$ \nu $$
 ### Relativity
 
 When calculating kinetic energy (work to accelerate a massive body from zero speed to some finite speed) relativistically – using Lorentz transformations instead of Newtonian mechanics – Einstein discovered an unexpected by-product of these calculations to be an energy term which does not vanish at zero speed. He called it rest energy: energy which every massive body must possess even when being at rest. The amount of energy is directly proportional to the mass of the body:
-          E
-            0
-        =
-          m
-            0
-          c
-            2
-        ,
 
 $$ E_{0}=m_{0}c^{2}, $$
 
@@ -210,9 +131,6 @@ where
 m0 is the rest mass of the body,
 
 c is the speed of light in vacuum,
-
-          E
-            0
 
 $$ E_{0} $$
 
@@ -237,14 +155,10 @@ There are strict limits to how efficiently heat can be converted into work in a 
 Energy transformations in the universe over time are characterized by various kinds of potential energy, that has been available since the Big Bang, being "released" (transformed to more active types of energy such as kinetic or radiant energy) when a triggering mechanism is available. Familiar examples of such processes include nucleosynthesis, a process ultimately using the gravitational potential energy released from the gravitational collapse of supernovae to "store" energy in the creation of heavy isotopes (such as uranium and thorium), and nuclear decay, a process in which energy is released that was originally stored in these heavy elements, before they were incorporated into the Solar System and the Earth. This energy is triggered and released in nuclear fission bombs or in civil nuclear power generation. Similarly, in the case of a chemical explosion, chemical potential energy is transformed to kinetic and thermal energy in a very short time.
 
 Yet another example of energy transformation is that of a simple gravity pendulum. At its highest points the kinetic energy is zero and the gravitational potential energy is at its maximum. At its lowest point the kinetic energy is at its maximum and is equal to the decrease in potential energy. If one (unrealistically) assumes that there is no friction or other losses, the conversion of energy between these processes would be perfect, and the pendulum would continue swinging forever. Energy is transferred from potential energy (
-          E
-            p
 
 $$ E_{p} $$
 
 ) to kinetic energy (
-          E
-            k
 
 $$ E_{k} $$
 
@@ -253,38 +167,13 @@ $$ E_{k} $$
 In this isolated system, energy cannot be created or destroyed; therefore, the initial energy and the final energy will be equal to each other. This can be demonstrated by the following:
 
 The equation can then be simplified further since 
-          E
-            p
-        =
-
-        m
-
-        g
-
-        h
 
 $$ E_{p}=mgh $$
 
  (mass times acceleration due to gravity times the height) and 
-          E
-            k
-        =
-            1
 
-            2
-        m
-          v
-            2
-    {\textstyle E_{k}={\frac {1}{2}}mv^{2}}
+{\textstyle E_{k}={\frac {1}{2}}mv^{2}}
  (half mass times velocity squared). Then the total amount of energy can be found by adding 
-          E
-            p
-        +
-          E
-            k
-        =
-          E
-            total
 
 $$ E_{p}+E_{k}=E_{\text{total}} $$
 
@@ -295,8 +184,6 @@ $$ E_{p}+E_{k}=E_{\text{total}} $$
 Within a gravitational field, both mass and energy give rise to a measureable weight when trapped in a system with zero momentum. The formula E = mc2, derived by Albert Einstein (1905) quantifies this mass–energy equivalence between relativistic mass and energy within the concept of special relativity. In different theoretical frameworks, similar formulas were derived by J. J. Thomson (1881), Henri Poincaré (1900), Friedrich Hasenöhrl (1904), and others (see Mass–energy equivalence#History for further information).
 
 Part of the rest energy (equivalent to rest mass) of matter may be converted to other forms of energy (still exhibiting mass), but neither energy nor mass can be destroyed; rather, both remain constant during any process. However, since 
-          c
-            2
 
 $$ c^{2} $$
 
@@ -330,19 +217,6 @@ Each of the basic forces of nature is associated with a different type of potent
 
 In quantum mechanics energy is expressed using the Hamiltonian operator. On any time scale, the uncertainty in the energy is given by:
 
-        Δ
-
-        E
-
-        Δ
-
-        t
-
-        ≥
-            ℏ
-
-            2
-
 $$ \Delta E\Delta t\geq {\frac {\hbar }{2}} $$
 
 which is similar in form to the Heisenberg Uncertainty Principle, but not really mathematically equivalent thereto, since E and t are not dynamically conjugate variables, neither in classical nor in quantum mechanics.
@@ -358,22 +232,18 @@ Energy transfer can be considered for the special case of systems which are clos
 Energy is strictly conserved and is also locally conserved wherever it can be defined. In thermodynamics, for closed systems, the process of energy transfer is described by the first law:
 
 where 
-        E
 
 $$ E $$
 
  is the amount of energy transferred, 
-        W
 
 $$ W $$
 
-  represents the work done on or by the system, and 
-        Q
+represents the work done on or by the system, and
 
 $$ Q $$
 
  represents the heat flow into or out of the system. As a simplification, the heat term, 
-        Q
 
 $$ Q $$
 
@@ -384,8 +254,6 @@ This simplified equation is the one used to define the joule, for example.
 ### Open systems
 
 Beyond the constraints of closed systems, open systems can gain or lose energy in association with matter transfer (this process is illustrated by injection of an air-fuel mixture into a car engine, a system which gains in energy thereby, without addition of either work or heat). Denoting this energy by 
-          E
-            matter
 
 $$ E_{\text{matter}} $$
 
@@ -401,56 +269,19 @@ Internal energy is the sum of all microscopic forms of energy of a system. It is
 
 The first law of thermodynamics asserts that the total energy of a system and its surroundings (but not necessarily thermodynamic free energy) is always conserved and that heat flow is a form of energy transfer. For homogeneous systems, with a well-defined temperature and pressure, a commonly used corollary of the first law is that, for a system subject only to pressure forces and heat transfer (e.g., a cylinder-full of gas) without chemical changes, the differential change in the internal energy of the system (with a gain in energy signified by a positive quantity) is given as:
 
-          d
-        E
-
-        =
-
-        T
-          d
-        S
-
-        −
-
-        P
-          d
-        V
-        ,
-
 $$ \mathrm {d} E=T\mathrm {d} S-P\mathrm {d} V\,, $$
 
 where the first term on the right is the heat transferred into the system, expressed in terms of temperature T and entropy S (in which entropy increases and its change dS is positive when heat is added to the system), and the last term on the right hand side is identified as work done on the system, where pressure is P and volume V (the negative sign results since compression of the system requires work to be done on it and so the volume change, dV, is negative when work is done on the system).
 
 This equation is highly specific, ignoring all chemical, electrical, nuclear, and gravitational forces, effects such as advection of any form of energy other than heat and PV-work. The general formulation of the first law (i.e., conservation of energy) is valid even in situations in which the system is not homogeneous. For these cases the change in internal energy of a closed system is expressed in a general form by:
 
-          d
-        E
-
-        =
-
-        δ
-
-        Q
-
-        +
-
-        δ
-
-        W
-
 $$ \mathrm {d} E=\delta Q+\delta W $$
 
 where 
-        δ
-
-        Q
 
 $$ \delta Q $$
 
  is the heat supplied to the system and 
-        δ
-
-        W
 
 $$ \delta W $$
 

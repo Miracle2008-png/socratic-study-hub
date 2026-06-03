@@ -36,198 +36,23 @@ Several formulas are used to calculate Tm values. Some formulas are more accurat
 AB ↔ A + B
 
 The equilibrium constant for this reaction is 
-        K
 
-        =
-              [
-
-              A
-
-              ]
-
-              [
-
-              B
-
-              ]
-              [
-
-              A
-
-              B
-
-              ]
-    {\textstyle K={\frac {[A][B]}{[AB]}}}
+{\textstyle K={\frac {[A][B]}{[AB]}}}
 .  According to the Van´t Hoff equation, the relation between free energy, ΔG, and K is ΔG° = -RTln K, where R is the ideal gas law constant, and T is the kelvin temperature of the reaction.  This gives, for the nucleic acid system,
 
-        Δ
-          G
-            ∘
-        =
-
-        −
-
-        R
-
-        T
-
-        ln
-
-        ⁡
-              [
-
-              A
-
-              ]
-
-              [
-
-              B
-
-              ]
-              [
-
-              A
-
-              B
-
-              ]
-        .
-    {\displaystyle \Delta G^{\circ }=-RT\ln {\frac {[A][B]}{[AB]}}.}
+{\displaystyle \Delta G^{\circ }=-RT\ln {\frac {[A][B]}{[AB]}}.}
 
 The melting temperature, Tm, occurs when half of the double-stranded nucleic acid has dissociated.  If no additional nucleic acids are present, then [A], [B], and [AB] will be equal, and equal to half the initial concentration of double-stranded nucleic acid, [AB]initial.  This gives an expression for the melting point of a nucleic acid duplex of
 
-          T
-            m
-        =
-
-        −
-              Δ
-                G
-                  ∘
-              R
-
-              ln
-
-              ⁡
-                    [
-
-                    A
-
-                    B
-                      ]
-                        i
-
-                        n
-
-                        i
-
-                        t
-
-                        i
-
-                        a
-
-                        l
-                  2
-        .
-    {\displaystyle T_{m}=-{\frac {\Delta G^{\circ }}{R\ln {\frac {[AB]_{initial}}{2}}}}.}
+{\displaystyle T_{m}=-{\frac {\Delta G^{\circ }}{R\ln {\frac {[AB]_{initial}}{2}}}}.}
 
 Because ΔG° = ΔH° -TΔS°, Tm is also given by
 
-          T
-            m
-        =
-              Δ
-                H
-                  ∘
-              Δ
-                S
-                  ∘
-              −
-
-              R
-
-              ln
-
-              ⁡
-                    [
-
-                    A
-
-                    B
-                      ]
-                        i
-
-                        n
-
-                        i
-
-                        t
-
-                        i
-
-                        a
-
-                        l
-                  2
-        .
-    {\displaystyle T_{m}={\frac {\Delta H^{\circ }}{\Delta S^{\circ }-R\ln {\frac {[AB]_{initial}}{2}}}}.}
+{\displaystyle T_{m}={\frac {\Delta H^{\circ }}{\Delta S^{\circ }-R\ln {\frac {[AB]_{initial}}{2}}}}.}
 
 The terms ΔH° and ΔS° are usually given for the association and not the dissociation reaction (see the nearest-neighbor method for example). This formula then turns into:
 
-          T
-            m
-        =
-              Δ
-                H
-                  ∘
-              Δ
-                S
-                  ∘
-              +
-
-              R
-
-              ln
-
-              ⁡
-
-              (
-
-              [
-
-              A
-                ]
-                  t
-
-                  o
-
-                  t
-
-                  a
-
-                  l
-              −
-
-              [
-
-              B
-                ]
-                  t
-
-                  o
-
-                  t
-
-                  a
-
-                  l
-                /
-              2
-
-              )
-    {\displaystyle T_{m}={\frac {\Delta H^{\circ }}{\Delta S^{\circ }+R\ln([A]_{total}-[B]_{total}/2)}}}
+{\displaystyle T_{m}={\frac {\Delta H^{\circ }}{\Delta S^{\circ }+R\ln([A]_{total}-[B]_{total}/2)}}}
 , where [B]total ≤ [A]total.
 
 As mentioned, this equation is based on the assumption that only two states are involved in melting:  the double stranded state and the random-coil state.  However, nucleic acids may melt via several intermediate states.  To account for such complicated behavior, the methods of statistical mechanics must be used, which is especially relevant for long sequences.
@@ -237,8 +62,6 @@ The previous paragraph shows how melting temperature and thermodynamic parameter
 
 ### Nearest-neighbor method
 Treating a DNA helix as a string of interactions between base pairs has proven insufficient due to significant contributions from base stacking. Because stacking interactions mostly affect neighboring bases, one can use a "nearest-neighbor" model treating nucleic acid secondary structurec (e.g. helix) as a string of interactions between 'neighboring' base pairs. The two-base nearest-neighbor model works fairly well for DNA helices. So, for example, the DNA shown below has nearest-neighbor interactions indicated by the arrows.
-
-    ↓  ↓  ↓  ↓  ↓
 
 5' C-G-T-T-G-A 3'
 
@@ -250,149 +73,24 @@ The free energy of forming this DNA from the individual strands, ΔG°, is repre
 
 Except for the C/G initiation term, the first term represents the free energy of the first base pair, CG, in the absence of a nearest neighbor.  The second term includes both the free energy of formation of the second base pair, GC, and stacking interaction between this base pair and the previous base pair.  The remaining terms are similarly defined.  In general, the free energy of forming a nucleic acid duplex is
 
-        Δ
-          G
-            37
-            ∘
-        (
-          t
-
-          o
-
-          t
-
-          a
-
-          l
-        )
-
-        =
-
-        Δ
-          G
-            37
-            ∘
-        (
-          i
-
-          n
-
-          i
-
-          t
-
-          i
-
-          a
-
-          t
-
-          i
-
-          o
-
-          n
-
-          s
-        )
-
-        +
-          ∑
-            i
-
-            =
-
-            1
-            10
-          n
-            i
-        Δ
-          G
-            37
-            ∘
-        (
-
-        i
-
-        )
-
-        ,
-    {\displaystyle \Delta G_{37}^{\circ }(\mathrm {total} )=\Delta G_{37}^{\circ }(\mathrm {initiations} )+\sum _{i=1}^{10}n_{i}\Delta G_{37}^{\circ }(i),}
+{\displaystyle \Delta G_{37}^{\circ }(\mathrm {total} )=\Delta G_{37}^{\circ }(\mathrm {initiations} )+\sum _{i=1}^{10}n_{i}\Delta G_{37}^{\circ }(i),}
 
 where 
-        Δ
-          G
-            37
-            ∘
-        (
 
-        i
-
-        )
-    {\displaystyle \Delta G_{37}^{\circ }(i)}
+{\displaystyle \Delta G_{37}^{\circ }(i)}
  represents the free energy associated with one of the ten possible the nearest-neighbor nucleotide pairs, and 
-          n
-            i
-    {\displaystyle n_{i}}
+{\displaystyle n_{i}}
  represents its count in the sequence.
 
 Each ΔG° term has enthalpic, ΔH°, and entropic, ΔS°, parameters, so the change in free energy is also given by
 
-        Δ
-          G
-            ∘
-        (
-          t
-
-          o
-
-          t
-
-          a
-
-          l
-        )
-
-        =
-
-        Δ
-          H
-              t
-
-              o
-
-              t
-
-              a
-
-              l
-            ∘
-        −
-
-        T
-
-        Δ
-          S
-              t
-
-              o
-
-              t
-
-              a
-
-              l
-            ∘
-        .
-    {\displaystyle \Delta G^{\circ }(\mathrm {total} )=\Delta H_{\mathrm {total} }^{\circ }-T\Delta S_{\mathrm {total} }^{\circ }.}
+{\displaystyle \Delta G^{\circ }(\mathrm {total} )=\Delta H_{\mathrm {total} }^{\circ }-T\Delta S_{\mathrm {total} }^{\circ }.}
 
 Values of ΔH° and ΔS° have been determined for the ten possible pairs of interactions.  These are given in Table 1, along with the value of ΔG° calculated at 37 °C.  Using these values, the value of ΔG37° for the DNA duplex shown above is calculated to be −22.4 kJ/mol.  The experimental value is −21.8 kJ/mol.
 
 The parameters associated with the ten groups of neighbors shown in table 1 are determined from melting points of short oligonucleotide duplexes. It works out that only eight of the ten groups are independent.
 
 The nearest-neighbor model can be extended beyond the Watson-Crick pairs to include parameters for interactions between mismatches and neighboring base pairs. This allows the estimation of the thermodynamic parameters of sequences containing isolated mismatches, like e.g. (arrows indicating mismatch)
-
-           ↓↓↓
 
 5' G-G-A-C-T-G-A-C-G 3'
 

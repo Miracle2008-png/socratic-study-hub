@@ -54,70 +54,9 @@ According to the strengths of signals, practical signals can be classified into 
 
 Energy signals: Those signals' energy are equal to a finite positive value, but their average powers are 0;
 
-        0
-
-        <
-
-        E
-
-        =
-          ∫
-            −
-
-            ∞
-            ∞
-          s
-            2
-        (
-
-        t
-
-        )
-
-        d
-
-        t
-
-        <
-
-        ∞
-
 $$ 0<E=\int _{-\infty }^{\infty }s^{2}(t)dt<\infty $$
 
 Power signals: Those signals' average power are equal to a finite positive value, but their energy are infinite.
-
-        P
-
-        =
-          lim
-            T
-
-            →
-
-            ∞
-            1
-
-            T
-          ∫
-            −
-
-            T
-              /
-            2
-            T
-              /
-            2
-          s
-            2
-        (
-
-        t
-
-        )
-
-        d
-
-        t
 
 $$ P=\lim _{T\rightarrow \infty }{\frac {1}{T}}\int _{-T/2}^{T/2}s^{2}(t)dt $$
 
@@ -130,138 +69,44 @@ Random signals are signals that take on random values at any given time instant 
 ### Even and odd
 
 An even signal satisfies the condition 
-        x
-
-        (
-
-        t
-
-        )
-
-        =
-
-        x
-
-        (
-
-        −
-
-        t
-
-        )
 
 $$ x(t)=x(-t) $$
 
 or equivalently if the following equation holds for all 
-        t
 
 $$ t $$
 
  and 
-        −
-
-        t
 
 $$ -t $$
 
  in the domain of 
-        x
 
 $$ x $$
 
 :
-
-        x
-
-        (
-
-        t
-
-        )
-
-        −
-
-        x
-
-        (
-
-        −
-
-        t
-
-        )
-
-        =
 
         0.
 
 $$ x(t)-x(-t)=0. $$
 
 An odd signal satisfies the condition 
-        x
-
-        (
-
-        t
-
-        )
-
-        =
-
-        −
-
-        x
-
-        (
-
-        −
-
-        t
-
-        )
 
 $$ x(t)=-x(-t) $$
 
 or equivalently if the following equation holds for all 
-        t
 
 $$ t $$
 
  and 
-        −
-
-        t
 
 $$ -t $$
 
  in the domain of 
-        x
 
 $$ x $$
 
 :
-
-        x
-
-        (
-
-        t
-
-        )
-
-        +
-
-        x
-
-        (
-
-        −
-
-        t
-
-        )
-
-        =
 
         0.
 
@@ -271,111 +116,23 @@ $$ x(t)+x(-t)=0. $$
 
 A signal is said to be periodic if it satisfies the condition:
 
-        x
-
-        (
-
-        t
-
-        )
-
-        =
-
-        x
-
-        (
-
-        t
-
-        +
-
-        T
-
-        )
-        ∀
-
-        t
-
-        ∈
-
-        [
-          t
-            0
-        ,
-          t
-            m
-
-            a
-
-            x
-        ]
-
 $$ x(t)=x(t+T)\quad \forall t\in [t_{0},t_{max}] $$
 
  or 
-        x
-
-        (
-
-        n
-
-        )
-
-        =
-
-        x
-
-        (
-
-        n
-
-        +
-
-        N
-
-        )
-        ∀
-
-        n
-
-        ∈
-
-        [
-          n
-            0
-        ,
-          n
-            m
-
-            a
-
-            x
-        ]
 
 $$ x(n)=x(n+N)\quad \forall n\in [n_{0},n_{max}] $$
 
 Where:
 
-        T
-
 $$ T $$
 
  = fundamental time period,
-
-        1
-          /
-        T
-
-        =
-
-        f
 
 $$ 1/T=f $$
 
 = fundamental frequency.
 
 The same can be applied to 
-        N
 
 $$ N $$
 

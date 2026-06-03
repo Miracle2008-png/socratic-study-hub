@@ -17,89 +17,54 @@ The zeroth law was not initially recognized as a separate law of thermodynamics,
 ### First law
 
 The first law of thermodynamics states: In a process without transfer of matter, the change in internal energy, 
-        Δ
-
-        U
 
 $$ \Delta U $$
 
 , of a thermodynamic system is equal to the energy gained as heat, 
-        Q
 
 $$ Q $$
 
 , less the thermodynamic work, 
-        W
 
 $$ W $$
 
 , done by the system on its surroundings.
-
-        Δ
-
-        U
-
-        =
-
-        Q
-
-        −
-
-        W
 
 $$ \Delta U=Q-W $$
 
 .
 
 where 
-        Δ
-
-        U
 
 $$ \Delta U $$
 
  denotes the change in the internal energy of a closed system (for which heat or work through the system boundary are possible, but matter transfer is not possible), 
-        Q
 
 $$ Q $$
 
  denotes the quantity of energy supplied to the system as heat, and 
-        W
 
 $$ W $$
 
  denotes the amount of thermodynamic work done by the system on its surroundings. An equivalent statement is that perpetual motion machines of the first kind are impossible; work 
-        W
 
 $$ W $$
 
  done by a system on its surrounding requires that the system's internal energy 
-        U
 
 $$ U $$
 
  decrease or be consumed, so that the amount of internal energy lost by that work must be resupplied as heat 
-        Q
 
 $$ Q $$
 
  by an external energy source or as work by an external machine acting on the system (so that 
-        U
 
 $$ U $$
 
  is recovered) to make the system work continuously.
 
 For processes that include transfer of matter, a further statement is needed: With due account of the respective fiducial reference states of the systems, when two systems, which may be of different chemical compositions, initially separated only by an impermeable wall, and otherwise isolated, are combined into a new system by the thermodynamic operation of removal of the wall, then
-
-          U
-            0
-        =
-          U
-            1
-        +
-          U
-            2
 
 $$ U_{0}=U_{1}+U_{2} $$
 
@@ -188,37 +153,30 @@ Thermodynamic potentials are different quantitative measures of the stored energ
 The five most well known potentials are:
 
 where 
-        T
 
 $$ T $$
 
  is the temperature, 
-        S
 
 $$ S $$
 
  the entropy, 
-        p
 
 $$ p $$
 
  the pressure, 
-        V
 
 $$ V $$
 
  the volume, 
-        μ
 
 $$ \mu $$
 
  the chemical potential, 
-        N
 
 $$ N $$
 
  the number of particles in the system, and 
-        i
 
 $$ i $$
 

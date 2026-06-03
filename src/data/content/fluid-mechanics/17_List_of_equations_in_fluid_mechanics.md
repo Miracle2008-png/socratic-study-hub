@@ -5,9 +5,6 @@ This article summarizes equations in the theory of fluid mechanics.
 ## Definitions
 
 Here 
-              t
-
-              ^
 
 $$ \mathbf {\hat {t}} \,\! $$
 

@@ -53,23 +53,7 @@ Pressure is the normal force per unit area exerted by the air on itself and on s
 
 These pressure differences arise in conjunction with the curved airflow. When a fluid follows a curved path, there is a pressure gradient perpendicular to the flow direction with higher pressure on the outside of the curve and lower pressure on the inside. This direct relationship between curved streamlines and pressure differences, sometimes called the streamline curvature theorem, was derived from Newton's second law by Leonhard Euler in 1754:
 
-              d
-
-              ⁡
-
-              p
-              d
-
-              ⁡
-
-              R
-        =
-
-        ρ
-              v
-                2
-            R
-    {\displaystyle {\frac {\operatorname {d} p}{\operatorname {d} R}}=\rho {\frac {v^{2}}{R}}}
+{\displaystyle {\frac {\operatorname {d} p}{\operatorname {d} R}}=\rho {\frac {v^{2}}{R}}}
 
 The left side of this equation represents the pressure difference perpendicular to the fluid flow. On the right side of the equation, ρ is the density, v is the velocity, and R is the radius of curvature. This formula shows that higher velocities and tighter curvatures create larger pressure differentials and that for straight flow (R → ∞), the pressure difference is zero.
 
@@ -146,21 +130,7 @@ Producing a lift force requires both downward turning of the flow and changes in
 ### Pressure integration
 When the pressure distribution on the airfoil surface is known, determining the total lift requires adding up the contributions to the pressure force from local elements of the surface, each with its own local value of pressure. The total lift is thus the integral of the pressure, in the direction perpendicular to the farfield flow, over the airfoil surface.
 
-        L
-
-        =
-
-        ∮
-
-        p
-          n
-        ⋅
-          k
-          d
-        S
-
-        ,
-    {\displaystyle L=\oint p\mathbf {n} \cdot \mathbf {k} \;\mathrm {d} S,}
+{\displaystyle L=\oint p\mathbf {n} \cdot \mathbf {k} \;\mathrm {d} S,}
 
 where:
 
@@ -174,86 +144,34 @@ The above lift equation neglects the skin friction forces, which are small compa
 
 By using the streamwise vector i parallel to the freestream in place of k in the integral, we obtain an expression for the pressure drag Dp (which includes the pressure portion of the profile drag and, if the wing is three-dimensional, the induced drag). If we use the spanwise vector j, we obtain the side force Y.
 
-                  D
-                    p
-                =
-
-                ∮
-
-                p
-                  n
-                ⋅
-                  i
-                  d
-                S
-
-                ,
-                Y
-                =
-
-                ∮
-
-                p
-                  n
-                ⋅
-                  j
-                  d
-                S
-
-                .
-    {\displaystyle {\begin{aligned}D_{p}&=\oint p\mathbf {n} \cdot \mathbf {i} \;\mathrm {d} S,\\Y&=\oint p\mathbf {n} \cdot \mathbf {j} \;\mathrm {d} S.\end{aligned}}}
+{\displaystyle {\begin{aligned}D_{p}&=\oint p\mathbf {n} \cdot \mathbf {i} \;\mathrm {d} S,\\Y&=\oint p\mathbf {n} \cdot \mathbf {j} \;\mathrm {d} S.\end{aligned}}}
 
 The validity of this integration generally requires the airfoil shape to be a closed curve that is piecewise smooth.
 
 ### Lift coefficient
 
 Lift depends on the size of the wing, being approximately proportional to the wing area. It is often convenient to quantify the lift of a given airfoil by its lift coefficient 
-          C
-            L
-    {\displaystyle C_{L}}
+{\displaystyle C_{L}}
 , which defines its overall lift in terms of a unit area of the wing.
 
 If the value of 
-          C
-            L
-    {\displaystyle C_{L}}
+{\displaystyle C_{L}}
  for a wing at a specified angle of attack is given, then the lift produced for specific flow conditions can be determined:
 
-        L
-
-        =
-              1
-
-              2
-        ρ
-          v
-            2
-        S
-          C
-            L
-    {\displaystyle L={\tfrac {1}{2}}\rho v^{2}SC_{L}}
+{\displaystyle L={\tfrac {1}{2}}\rho v^{2}SC_{L}}
 
 where 
 
-        L
-    {\displaystyle L}
  is the lift force
 
-        ρ
-    {\displaystyle \rho }
+{\displaystyle \rho }
  is the air density
 
-        v
-    {\displaystyle v}
  is the velocity or true airspeed
 
-        S
-    {\displaystyle S}
  is the planform (projected) wing area
 
-          C
-            L
-    {\displaystyle C_{L}}
+{\displaystyle C_{L}}
  is the lift coefficient at the desired angle of attack, Mach number, and Reynolds number
 
 ## Mathematical theories of lift
@@ -339,19 +257,11 @@ Because the velocity is deduced from the vorticity in such theories, some author
 The flow around a lifting airfoil must satisfy Newton's second law regarding conservation of momentum, both locally at every point in the flow field, and in an integrated sense over any extended region of the flow. For an extended region, Newton's second law takes the form of the momentum theorem for a control volume, where a control volume can be any region of the flow chosen for analysis. The momentum theorem states that the integrated force exerted at the boundaries of the control volume (a surface integral), is equal to the integrated time rate of change (material derivative) of the momentum of fluid parcels passing through the interior of the control volume. For a steady flow, this can be expressed in the form of the net surface integral of the flux of momentum through the boundary.
 
 The lifting flow around a 2D airfoil is usually analyzed in a control volume that completely surrounds the airfoil, so that the inner boundary of the control volume is the airfoil surface, where the downward force per unit span 
-        −
-          L
 
-          ′
-    {\displaystyle -L'}
  is exerted on the fluid by the airfoil. The outer boundary is usually either a large circle or a large rectangle. At this outer boundary distant from the airfoil, the velocity and pressure are well represented by the velocity and pressure associated with a uniform flow plus a vortex, and viscous stress is negligible, so that the only force that must be integrated over the outer boundary is the pressure. The free-stream velocity is usually assumed to be horizontal, with lift vertically upward, so that the vertical momentum is the component of interest.
 
 For the free-air case (no ground plane), the force 
-        −
-          L
 
-          ′
-    {\displaystyle -L'}
  exerted by the airfoil on the fluid is manifested partly as momentum fluxes and partly as pressure differences at the outer boundary, in proportions that depend on the shape of the outer boundary, as shown in the diagram at right. For a flat horizontal rectangle that is much longer than it is tall, the fluxes of vertical momentum through the front and back are negligible, and the lift is accounted for entirely by the integrated pressure differences on the top and bottom. For a square or circle, the momentum fluxes and pressure differences account for half the lift each. For a vertical rectangle that is much taller than it is wide, the unbalanced pressure forces on the top and bottom are negligible, and lift is accounted for entirely by momentum fluxes, with a flux of upward momentum that enters the control volume through the front accounting for half the lift, and a flux of downward momentum that exits the control volume through the back accounting for the other half.
 
 The results of all of the control-volume analyses described above are consistent with the Kutta–Joukowski theorem described above. Both the tall rectangle and circle control volumes have been used in derivations of the theorem.

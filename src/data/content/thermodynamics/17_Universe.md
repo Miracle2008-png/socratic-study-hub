@@ -49,32 +49,17 @@ Over time, the universe and its contents have evolved. For example, the relative
 The more matter there is in the universe, the stronger the mutual gravitational pull of the matter. If the universe were too dense then it would re-collapse into a black hole. However, if the universe contained too little matter then it would expand too quickly for astronomical structures, like galaxies or planets, to form. Since the Big Bang, the universe has expanded monotonically. The mass–energy density of the universe, equivalent to about 5 protons per cubic meter, allowed it to expand for the last 13.8 billion years, giving time to form the universe as observed today.
 
 There are dynamical forces acting on the particles in the universe which affect the expansion rate. Before 1998, it was expected that the expansion rate would be decreasing as time went on due to the influence of gravitational interactions in the universe; and thus there is an additional observable quantity in the universe called the deceleration parameter, which most cosmologists expected to be positive and related to the matter density of the universe. In 1998, the deceleration parameter was measured by two different groups to be negative, approximately −0.55, which technically implies that the second derivative of the cosmic scale factor 
-              a
 
-              ¨
-    {\displaystyle {\ddot {a}}}
+{\displaystyle {\ddot {a}}}
  has been positive in the last 5–6 billion years.
 
 ### Spacetime
 
 Modern physics regards events as being organized into spacetime. This idea originated with the special theory of relativity, which predicts that if one observer sees two events happening in different places at the same time, a second observer who is moving relative to the first will see those events happening at different times. The two observers will disagree on the time 
-        T
-    {\displaystyle T}
  between the events, and they will disagree about the distance 
-        D
-    {\displaystyle D}
  separating the events, but they will agree on the speed of light 
-        c
-    {\displaystyle c}
 , and they will measure the same value for the combination 
-          c
-            2
-          T
-            2
-        −
-          D
-            2
-    {\displaystyle c^{2}T^{2}-D^{2}}
+{\displaystyle c^{2}T^{2}-D^{2}}
 . The square root of the absolute value of this quantity is called the interval between the two events. The interval expresses how widely separated events are, not just in space or in time, but in the combined setting of spacetime.
 
 The special theory of relativity describes a flat spacetime. Its successor, the general theory of relativity, explains gravity as curvature of spacetime arising due to its energy content. A curved path like an orbit is not the result of a force deflecting a body from an ideal straight-line path, but rather the body's attempt to fall freely through a background that is itself curved by the presence of other masses. A remark by John Archibald Wheeler that has become proverbial among physicists summarizes the theory: "Spacetime tells matter how to move; matter tells spacetime how to curve", and therefore there is no point in considering one without the other. The Newtonian theory of gravity is a good approximation to the predictions of general relativity when gravitational effects are weak and objects are moving slowly compared to the speed of light.

@@ -87,7 +87,6 @@ Several alternative MLIS schemes have been developed. For example, one uses a fi
 Finally, the 'Separation of isotopes by laser excitation' (SILEX) process, developed by Silex Systems in Australia, has been licensed to General Electric for the development of a pilot enrichment plant. For uranium, it uses a cold molecular beam with UF6 in a carrier gas, in which the 235UF6 is selectively excited by an infrared laser near 16 μm. In contrast to the excited molecules, the nonexcited heavier isotopic molecules tends to form clusters with the carrier gas, and these clusters stay closer to the axis of the molecular beam, so that they can pass a skimmer and are thus separated from the excited lighter isotope.
 
 Starting in 1994, yet another scheme has been proposed for deuterium separation using Trojan wave packets formed in a circularly or linearly polarized electromagnetic field. The process of Trojan wave packet formation by the adiabatic-rapid passage depends in an ultra-sensitive way on the reduced electron and nucleus mass so that the same field frequency leads to excitation of Trojan or anti-Trojan wave packets depending on the isotope. In theory, Trojan wave packets and their giant, rotating electric dipole moments could then be 
-        π
 
 $$ \pi $$
 

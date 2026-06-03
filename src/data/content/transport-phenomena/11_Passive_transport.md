@@ -13,51 +13,18 @@ Simple diffusion and osmosis are in some ways similar. Simple diffusion is the p
 ### Speed of diffusion
 
 For passive diffusion, the law of diffusion states that the mean squared displacement is 
-        ⟨
-          r
-            2
-        ⟩
-
-        =
-
-        2
-
-        d
-
-        D
-
-        t
 
 $$ \langle r^{2}\rangle =2dDt $$
 
  with d being the number of dimensions and D the diffusion coefficient). So to diffuse a distance of about 
-        x
 
 $$ x $$
 
  takes time 
-        ∼
-          x
-            2
-          /
-        2
-
-        d
-
-        D
 
 $$ \sim x^{2}/2dD $$
 
 , and the "average speed" is 
-        ∼
-
-        2
-
-        d
-
-        D
-          /
-        x
 
 $$ \sim 2dD/x $$
 

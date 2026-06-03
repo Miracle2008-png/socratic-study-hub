@@ -16,80 +16,22 @@ In modern condensed matter physics, the constitutive equation plays a major role
 #### Friction
 Friction is a complicated phenomenon. Macroscopically, the friction force F at the interface of two materials can be modelled as proportional to the reaction force R at a point of contact between two interfaces through a dimensionless coefficient of friction μf, which depends on the pair of materials:
 
-        F
-
-        =
-          μ
-            f
-        R
-
-        .
-    {\displaystyle F=\mu _{\text{f}}R.}
+{\displaystyle F=\mu _{\text{f}}R.}
 
 This can be applied to static friction (friction preventing two stationary objects from slipping on their own), kinetic friction (friction between two objects scraping/sliding past each other), or rolling (frictional force which prevents slipping but causes a torque to exert on a round object).
 
 #### Stress and strain
 The stress-strain constitutive relation for linear materials is commonly known as Hooke's law. In its simplest form, the law defines the spring constant (or elasticity constant) k in a scalar equation, stating the tensile/compressive force is proportional to the extended (or contracted) displacement x:
 
-          F
-            i
-        =
-
-        −
-
-        k
-          x
-            i
-    {\displaystyle F_{i}=-kx_{i}}
+{\displaystyle F_{i}=-kx_{i}}
 
 meaning the material responds linearly. Equivalently, in terms of the stress σ, Young's modulus E, and strain ε (dimensionless):
 
-        σ
-
-        =
-
-        E
-        ε
-    {\displaystyle \sigma =E\,\varepsilon }
+{\displaystyle \sigma =E\,\varepsilon }
 
 In general, forces which deform solids can be normal to a surface of the material (normal forces), or tangential (shear forces), this can be described mathematically using the stress tensor:
 
-          σ
-            i
-
-            j
-        =
-          C
-            i
-
-            j
-
-            k
-
-            l
-          ε
-            k
-
-            l
-        ⇌
-          ε
-            i
-
-            j
-        =
-          S
-            i
-
-            j
-
-            k
-
-            l
-          σ
-            k
-
-            l
-    {\displaystyle \sigma _{ij}=C_{ijkl}\,\varepsilon _{kl}\,\rightleftharpoons \,\varepsilon _{ij}=S_{ijkl}\,\sigma _{kl}}
+{\displaystyle \sigma _{ij}=C_{ijkl}\,\varepsilon _{kl}\,\rightleftharpoons \,\varepsilon _{ij}=S_{ijkl}\,\sigma _{kl}}
 
 where C is the elasticity tensor and S is the compliance tensor.
 
@@ -119,141 +61,34 @@ The applied force induces displacements in the material following a strain energ
 #### Collisions
 The relative speed of separation vseparation of an object A after a collision with another object B is related to the relative speed of approach vapproach by the coefficient of restitution, defined by Newton's experimental impact law:
 
-        e
-
-        =
-                |
-                v
-                  |
-                  separation
-                |
-                v
-                  |
-                  approach
-    {\displaystyle e={\frac {|\mathbf {v} |_{\text{separation}}}{|\mathbf {v} |_{\text{approach}}}}}
+{\displaystyle e={\frac {|\mathbf {v} |_{\text{separation}}}{|\mathbf {v} |_{\text{approach}}}}}
 
 which depends on the materials A and B are made from, since the collision involves interactions at the surfaces of A and B. Usually 0 ≤ e ≤ 1, in which e = 1 for completely elastic collisions, and e = 0 for completely inelastic collisions. It is possible for e ≥ 1 to occur – for superelastic (or explosive) collisions.
 
 ### Deformation of fluids
 The drag equation gives the drag force D on an object of cross-section area A moving through a fluid of density ρ at velocity v (relative to the fluid)
 
-        D
-
-        =
-            1
-
-            2
-          c
-            d
-        ρ
-
-        A
-          v
-            2
-    {\displaystyle D={\frac {1}{2}}c_{d}\rho Av^{2}}
+{\displaystyle D={\frac {1}{2}}c_{d}\rho Av^{2}}
 
 where the drag coefficient (dimensionless) cd depends on the geometry of the object and the drag forces at the interface between the fluid and object.
 
 For a Newtonian fluid of viscosity μ, the shear stress τ is linearly related to the strain rate (transverse flow velocity gradient) ∂u/∂y (units s−1). In a uniform shear flow:
 
-        τ
-
-        =
-
-        μ
-              ∂
-
-              u
-              ∂
-
-              y
-        ,
-    {\displaystyle \tau =\mu {\frac {\partial u}{\partial y}},}
+{\displaystyle \tau =\mu {\frac {\partial u}{\partial y}},}
 
 with u(y) the variation of the flow velocity u in the cross-flow (transverse) direction y. In general, for a Newtonian fluid, the relationship between the elements τij of the shear stress tensor and the deformation of the fluid is given by
 
-          τ
-            i
+{\displaystyle \tau _{ij}=2\mu \left(e_{ij}-{\frac {1}{3}}\Delta \delta _{ij}\right)}
 
-            j
-        =
+{\displaystyle e_{ij}={\frac {1}{2}}\left({\frac {\partial v_{i}}{\partial x_{j}}}+{\frac {\partial v_{j}}{\partial x_{i}}}\right)}
 
-        2
-
-        μ
-          (
-              e
-                i
-
-                j
-            −
-                1
-
-                3
-            Δ
-              δ
-                i
-
-                j
-          )
-    {\displaystyle \tau _{ij}=2\mu \left(e_{ij}-{\frac {1}{3}}\Delta \delta _{ij}\right)}
-   with   
-          e
-            i
-
-            j
-        =
-            1
-
-            2
-          (
-                  ∂
-                    v
-                      i
-                  ∂
-                    x
-                      j
-            +
-                  ∂
-                    v
-                      j
-                  ∂
-                    x
-                      i
-          )
-    {\displaystyle e_{ij}={\frac {1}{2}}\left({\frac {\partial v_{i}}{\partial x_{j}}}+{\frac {\partial v_{j}}{\partial x_{i}}}\right)}
-   and   
-        Δ
-
-        =
-          ∑
-            k
-          e
-            k
-
-            k
-        =
-          div
-          v
-        ,
-    {\displaystyle \Delta =\sum _{k}e_{kk}={\text{div}}\;\mathbf {v} ,}
+{\displaystyle \Delta =\sum _{k}e_{kk}={\text{div}}\;\mathbf {v} ,}
 
 where vi are the components of the flow velocity vector in the corresponding xi coordinate directions, eij are the components of the strain rate tensor, Δ is the volumetric strain rate (or dilatation rate) and δij is the Kronecker delta.
 
 The ideal gas law is a constitutive relation in the sense the pressure p and volume V are related to the temperature T, via the number of moles n of gas:
 
-        p
-
-        V
-
-        =
-
-        n
-
-        R
-
-        T
-    {\displaystyle pV=nRT}
+{\displaystyle pV=nRT}
 
 where R is the gas constant (J⋅K−1⋅mol−1).
 
@@ -271,203 +106,42 @@ It is necessary to specify the relations between displacement field D and E, and
 
 Determining the constitutive relationship between the auxiliary fields D and H and the E and B fields starts with the definition of the auxiliary fields themselves:
 
-                  D
-                (
-                  r
-                ,
-
-                t
-
-                )
-                =
-                  ε
-                    0
-                  E
-                (
-                  r
-                ,
-
-                t
-
-                )
-
-                +
-                  P
-                (
-                  r
-                ,
-
-                t
-
-                )
-                  H
-                (
-                  r
-                ,
-
-                t
-
-                )
-                =
-                    1
-                      μ
-                        0
-                  B
-                (
-                  r
-                ,
-
-                t
-
-                )
-
-                −
-                  M
-                (
-                  r
-                ,
-
-                t
-
-                )
-
-                ,
-    {\displaystyle {\begin{aligned}\mathbf {D} (\mathbf {r} ,t)&=\varepsilon _{0}\mathbf {E} (\mathbf {r} ,t)+\mathbf {P} (\mathbf {r} ,t)\\\mathbf {H} (\mathbf {r} ,t)&={\frac {1}{\mu _{0}}}\mathbf {B} (\mathbf {r} ,t)-\mathbf {M} (\mathbf {r} ,t),\end{aligned}}}
+{\displaystyle {\begin{aligned}\mathbf {D} (\mathbf {r} ,t)&=\varepsilon _{0}\mathbf {E} (\mathbf {r} ,t)+\mathbf {P} (\mathbf {r} ,t)\\\mathbf {H} (\mathbf {r} ,t)&={\frac {1}{\mu _{0}}}\mathbf {B} (\mathbf {r} ,t)-\mathbf {M} (\mathbf {r} ,t),\end{aligned}}}
 
 where P is the polarization field and M is the magnetization field which are defined in terms of microscopic bound charges and bound current respectively. Before getting to how to calculate M and P it is useful to examine the following special cases.
 
 #### Without magnetic or dielectric materials
 In the absence of magnetic or dielectric materials, the constitutive relations are simple:
 
-          D
-        =
-          ε
-            0
-          E
-        ,
-          H
-        =
-          B
-          /
-          μ
-            0
-    {\displaystyle \mathbf {D} =\varepsilon _{0}\mathbf {E} ,\quad \mathbf {H} =\mathbf {B} /\mu _{0}}
+{\displaystyle \mathbf {D} =\varepsilon _{0}\mathbf {E} ,\quad \mathbf {H} =\mathbf {B} /\mu _{0}}
 
 where ε0 and μ0 are two universal constants, called the permittivity of free space and permeability of free space, respectively.
 
 #### Isotropic linear materials
 In an (isotropic) linear material, where P is proportional to E, and M is proportional to B, the constitutive relations are also straightforward. In terms of the polarization P and the magnetization M they are:
 
-          P
-        =
-          ε
-            0
-          χ
-            e
-          E
-        ,
-          M
-        =
-          χ
-            m
-          H
-        ,
-    {\displaystyle \mathbf {P} =\varepsilon _{0}\chi _{e}\mathbf {E} ,\quad \mathbf {M} =\chi _{m}\mathbf {H} ,}
+{\displaystyle \mathbf {P} =\varepsilon _{0}\chi _{e}\mathbf {E} ,\quad \mathbf {M} =\chi _{m}\mathbf {H} ,}
 
 where χe and χm are the electric and magnetic susceptibilities of a given material respectively. In terms of D and H the constitutive relations are:
 
-          D
-        =
-
-        ε
-          E
-        ,
-          H
-        =
-          B
-          /
-        μ
-
-        ,
-    {\displaystyle \mathbf {D} =\varepsilon \mathbf {E} ,\quad \mathbf {H} =\mathbf {B} /\mu ,}
+{\displaystyle \mathbf {D} =\varepsilon \mathbf {E} ,\quad \mathbf {H} =\mathbf {B} /\mu ,}
 
 where ε and μ are constants (which depend on the material), called the permittivity and permeability, respectively, of the material. These are related to the susceptibilities by:
 
-        ε
-          /
-          ε
-            0
-        =
-          ε
-            r
-        =
-          χ
-            e
-        +
-
-        1
-
-        ,
-        μ
-          /
-          μ
-            0
-        =
-          μ
-            r
-        =
-          χ
-            m
-        +
-
-        1
-    {\displaystyle \varepsilon /\varepsilon _{0}=\varepsilon _{r}=\chi _{e}+1,\quad \mu /\mu _{0}=\mu _{r}=\chi _{m}+1}
+{\displaystyle \varepsilon /\varepsilon _{0}=\varepsilon _{r}=\chi _{e}+1,\quad \mu /\mu _{0}=\mu _{r}=\chi _{m}+1}
 
 #### General case
 For real-world materials, the constitutive relations are not linear, except approximately. Calculating the constitutive relations from first principles involves determining how P and M are created from a given E and B. These relations may be empirical (based directly upon measurements), or theoretical (based upon statistical mechanics, transport theory or other tools of condensed matter physics). The detail employed may be macroscopic or microscopic, depending upon the level necessary to the problem under scrutiny.
 
 In general, the constitutive relations can usually still be written:
 
-          D
-        =
-
-        ε
-          E
-        ,
-          H
-        =
-          μ
-            −
-
-            1
-          B
-    {\displaystyle \mathbf {D} =\varepsilon \mathbf {E} ,\quad \mathbf {H} =\mu ^{-1}\mathbf {B} }
+{\displaystyle \mathbf {D} =\varepsilon \mathbf {E} ,\quad \mathbf {H} =\mu ^{-1}\mathbf {B} }
 
 but ε and μ are not, in general, simple constants, but rather functions of E, B, position and time, and tensorial in nature. Examples are:
 
 As a variation of these examples, in general materials are bianisotropic where D and B depend on both E and H, through the additional coupling constants ξ and ζ:
 
-          D
-        =
-
-        ε
-          E
-        +
-
-        ξ
-          H
-        ,
-          B
-        =
-
-        μ
-          H
-        +
-
-        ζ
-          E
-        .
-    {\displaystyle \mathbf {D} =\varepsilon \mathbf {E} +\xi \mathbf {H} \,,\quad \mathbf {B} =\mu \mathbf {H} +\zeta \mathbf {E} .}
+{\displaystyle \mathbf {D} =\varepsilon \mathbf {E} +\xi \mathbf {H} \,,\quad \mathbf {B} =\mu \mathbf {H} +\zeta \mathbf {E} .}
 
 In practice, some materials properties have a negligible impact in particular circumstances, permitting neglect of small effects. For example: optical nonlinearities can be neglected for low field strengths; material dispersion is unimportant when frequency is limited to a narrow bandwidth; material absorption can be neglected for wavelengths for which a material is transparent; and metals with finite conductivity often are approximated at microwave or longer wavelengths as perfect metals with infinite conductivity (forming hard barriers with zero skin depth of field penetration).
 
@@ -493,87 +167,27 @@ These constitutive equations are often used in crystallography, a field of solid
 ### Refractive index
 The (absolute) refractive index of a medium n (dimensionless) is an inherently important property of geometric and physical optics defined as the ratio of the luminal speed in vacuum c0 to that in the medium c:
 
-        n
-
-        =
-              c
-                0
-            c
-        =
-                ε
-
-                μ
-                  ε
-                    0
-                  μ
-                    0
-        =
-              ε
-                r
-              μ
-                r
-    {\displaystyle n={\frac {c_{0}}{c}}={\sqrt {\frac {\varepsilon \mu }{\varepsilon _{0}\mu _{0}}}}={\sqrt {\varepsilon _{r}\mu _{r}}}}
+{\displaystyle n={\frac {c_{0}}{c}}={\sqrt {\frac {\varepsilon \mu }{\varepsilon _{0}\mu _{0}}}}={\sqrt {\varepsilon _{r}\mu _{r}}}}
 
 where ε is the permittivity and εr the relative permittivity of the medium, likewise μ is the permeability and μr are the relative permeability of the medium. The vacuum permittivity is ε0 and vacuum permeability is μ0. In general, n (also εr) are complex numbers.
 
 The relative refractive index is defined as the ratio of the two refractive indices. Absolute is for one material, relative applies to every possible pair of interfaces;
 
-          n
-            A
-
-            B
-        =
-              n
-                A
-              n
-                B
-    {\displaystyle n_{AB}={\frac {n_{A}}{n_{B}}}}
+{\displaystyle n_{AB}={\frac {n_{A}}{n_{B}}}}
 
 ### Speed of light in matter
 As a consequence of the definition, the speed of light in matter is
 
-        c
-
-        =
-            1
-              ε
-
-              μ
-    {\displaystyle c={\frac {1}{\sqrt {\varepsilon \mu }}}}
+{\displaystyle c={\frac {1}{\sqrt {\varepsilon \mu }}}}
 
 for special case of vacuum; ε = ε0 and μ = μ0,
 
-          c
-            0
-        =
-            1
-                ε
-                  0
-                μ
-                  0
-    {\displaystyle c_{0}={\frac {1}{\sqrt {\varepsilon _{0}\mu _{0}}}}}
+{\displaystyle c_{0}={\frac {1}{\sqrt {\varepsilon _{0}\mu _{0}}}}}
 
 ### Piezooptic effect
 The piezooptic effect relates the stresses in solids σ to the dielectric impermeability a, which are coupled by a fourth-rank tensor called the piezooptic coefficient Π (units K−1):
 
-          a
-            i
-
-            j
-        =
-          Π
-            i
-
-            j
-
-            p
-
-            q
-          σ
-            p
-
-            q
-    {\displaystyle a_{ij}=\Pi _{ijpq}\sigma _{pq}}
+{\displaystyle a_{ij}=\Pi _{ijpq}\sigma _{pq}}
 
 ## Transport phenomena
 

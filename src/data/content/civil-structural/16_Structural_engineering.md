@@ -110,15 +110,8 @@ Many of these elements can be classified according to form (straight, plane / cu
 Columns are elements that carry only axial force (compression) or both axial force and bending (which is technically called a beam-column but practically, just a column). The design of a column must check the axial capacity of the element and the buckling capacity.
 
 The buckling capacity is the capacity of the element to withstand the propensity to buckle. Its capacity depends upon its geometry, material, and the effective length of the column, which depends upon the restraint conditions at the top and bottom of the column. The effective length is 
-        K
 
-        ∗
-
-        l
-    {\displaystyle K*l}
  where 
-        l
-    {\displaystyle l}
  is the real length of the column and K is the factor dependent on the restraint conditions.
 
 The capacity of a column to carry axial load depends on the degree of bending it is subjected to, and vice versa. This is represented on an interaction chart and is a complex non-linear relationship.

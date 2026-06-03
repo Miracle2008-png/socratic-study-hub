@@ -63,43 +63,10 @@ To sustain turbulent flow, a persistent source of energy supply is required beca
 Integral time scale
 
 The integral time scale for a Lagrangian flow can be defined as: 
-        T
-
-        =
-            1
-              ⟨
-                u
-
-                ′
-                u
-
-                ′
-              ⟩
-          ∫
-            0
-            ∞
-        ⟨
-          u
-
-          ′
-          u
-
-          ′
-        (
-
-        τ
-
-        )
-
-        ⟩
-        d
-
-        τ
 
 $$ T={\frac {1}{\langle u'u'\rangle }}\int _{0}^{\infty }\langle u'u'(\tau )\rangle \,d\tau $$
 
  where u′ is the velocity fluctuation, and 
-        τ
 
 $$ \tau $$
 
@@ -108,38 +75,6 @@ $$ \tau $$
 Integral length scales
 
 Large eddies obtain energy from the mean flow and also from each other. Thus, these are the energy production eddies which contain most of the energy. They have the large flow velocity fluctuation and are low in frequency. Integral scales are highly anisotropic and are defined in terms of the normalized two-point flow velocity correlations. The maximum length of these scales is constrained by the characteristic length of the apparatus. For example, the largest integral length scale of pipe flow is equal to the pipe diameter. In the case of atmospheric turbulence, this length can reach up to the order of several hundreds kilometers.: The integral length scale can be defined as 
-        L
-
-        =
-            1
-              ⟨
-                u
-
-                ′
-                u
-
-                ′
-              ⟩
-          ∫
-            0
-            ∞
-        ⟨
-          u
-
-          ′
-          u
-
-          ′
-        (
-
-        r
-
-        )
-
-        ⟩
-        d
-
-        r
 
 $$ L={\frac {1}{\langle u'u'\rangle }}\int _{0}^{\infty }\langle u'u'(r)\rangle \,dr $$
 
@@ -173,18 +108,6 @@ turbulent flow occurs at high Reynolds numbers and is dominated by inertial forc
 
 The Reynolds number is defined as
 
-          R
-
-          e
-        =
-              ρ
-
-              v
-
-              L
-            μ
-        ,
-
 $$ \mathrm {Re} ={\frac {\rho vL}{\mu }}\,, $$
 
 where:
@@ -207,93 +130,11 @@ When flow is turbulent, particles exhibit additional transverse motion which enh
 
 Assume for a two-dimensional turbulent flow that one was able to locate a specific point in the fluid and measure the actual flow velocity v = (vx,vy) of every particle that passed through that point at any given time. Then one would find the actual flow velocity fluctuating about a mean value:
 
-          v
-            x
-        =
-                    v
-
-                    ¯
-                  x
-              ⏟
-            mean value
-        +
-                v
-                  x
-                ′
-              ⏟
-            fluctuation
-          and
-          v
-            y
-        =
-              v
-
-              ¯
-            y
-        +
-          v
-            y
-          ′
-        ;
-
 $$ v_{x}=\underbrace {{\overline {v}}_{x}} _{\text{mean value}}+\underbrace {v'_{x}} _{\text{fluctuation}}\quad {\text{and}}\quad v_{y}={\overline {v}}_{y}+v'_{y}\,; $$
 
 and similarly for temperature (T = T + T′) and pressure (P = P + P′), where the primed quantities denote fluctuations superposed to the mean. This decomposition of a flow variable into a mean value and a turbulent fluctuation was originally proposed by Osborne Reynolds in 1895, and is considered to be the beginning of the systematic mathematical analysis of turbulent flow, as a sub-field of fluid dynamics. While the mean values are taken as predictable variables determined by dynamics laws, the turbulent fluctuations are regarded as stochastic variables.
 
 The heat flux and momentum transfer (represented by the shear stress τ) in the direction normal to the flow for a given time are
-
-                q
-                =
-                          v
-                            y
-                          ′
-                        ρ
-                          c
-                            P
-                          T
-
-                          ′
-                      ⏟
-                    experimental value
-                =
-
-                −
-                  k
-                    turb
-                      ∂
-                          T
-
-                          ¯
-                      ∂
-
-                      y
-                ;
-                τ
-                =
-                        −
-
-                        ρ
-                                v
-                                  y
-                                ′
-                                v
-                                  x
-                                ′
-                            ¯
-                      ⏟
-                    experimental value
-                =
-                  μ
-                    turb
-                      ∂
-                            v
-
-                            ¯
-                          x
-                      ∂
-
-                      y
-                ;
 
 $$ {\begin{aligned}q&=\underbrace {v'_{y}\rho c_{P}T'} _{\text{experimental value}}=-k_{\text{turb}}{\frac {\partial {\overline {T}}}{\partial y}}\,;\\\tau &=\underbrace {-\rho {\overline {v'_{y}v'_{x}}}} _{\text{experimental value}}=\mu _{\text{turb}}{\frac {\partial {\overline {v}}_{x}}{\partial y}}\,;\end{aligned}} $$
 
@@ -307,19 +148,6 @@ In his original theory of 1941, Kolmogorov postulated that for very high Reynold
 
 Thus, Kolmogorov introduced a second hypothesis: for very high Reynolds numbers the statistics of small scales are universally and uniquely determined by the kinematic viscosity ν and the rate of energy dissipation ε. With only these two parameters, the unique length that can be formed by dimensional analysis is
 
-        η
-
-        =
-            (
-                  ν
-                    3
-                ε
-            )
-            1
-              /
-            4
-        .
-
 $$ \eta =\left({\frac {\nu ^{3}}{\varepsilon }}\right)^{1/4}\,. $$
 
 This is today known as the Kolmogorov length scale (see Kolmogorov microscales).
@@ -330,92 +158,17 @@ Hence, a third hypothesis of Kolmogorov was that at very high Reynolds number th
 
 The way in which the kinetic energy is distributed over the multiplicity of scales is a fundamental characterization of a turbulent flow. For homogeneous turbulence (i.e., statistically invariant under translations of the reference frame) this is usually done by means of the energy spectrum function E(k), where k is the modulus of the wavevector corresponding to some harmonics in a Fourier representation of the flow velocity field u(x):
 
-          u
-        (
-          x
-        )
-
-        =
-          ∭
-                R
-                3
-                u
-              ^
-        (
-          k
-        )
-          e
-            i
-              k
-
-              ⋅
-
-              x
-            d
-            3
-          k
-        ,
-
 $$ \mathbf {u} (\mathbf {x} )=\iiint _{\mathbb {R} ^{3}}{\hat {\mathbf {u} }}(\mathbf {k} )e^{i\mathbf {k\cdot x} }\,\mathrm {d} ^{3}\mathbf {k} \,, $$
 
 where û(k) is the Fourier transform of the flow velocity field. Thus, E(k) dk represents the contribution to the kinetic energy from all the Fourier modes with k < |k| < k + dk, and therefore,
-
-              1
-
-              2
-          ⟨
-              u
-                i
-              u
-                i
-          ⟩
-        =
-          ∫
-            0
-            ∞
-        E
-
-        (
-
-        k
-
-        )
-          d
-        k
-        ,
 
 $$ {\tfrac {1}{2}}\left\langle u_{i}u_{i}\right\rangle =\int _{0}^{\infty }E(k)\,\mathrm {d} k\,, $$
 
 where ⁠1/2⁠⟨uiui⟩ is the mean turbulent kinetic energy of the flow. The wavenumber k corresponding to length scale r is k = ⁠2π/r⁠. Therefore, by dimensional analysis, the only possible form for the energy spectrum function according with the third Kolmogorov's hypothesis is
 
-        E
-
-        (
-
-        k
-
-        )
-
-        =
-          K
-            0
-          ε
-              2
-
-              3
-          k
-            −
-                5
-
-                3
-        ,
-
 $$ E(k)=K_{0}\varepsilon ^{\frac {2}{3}}k^{-{\frac {5}{3}}}\,, $$
 
 where 
-          K
-            0
-        ≈
 
         1.5
 
@@ -425,136 +178,21 @@ $$ K_{0}\approx 1.5 $$
 
 Outside of the inertial area, one can find the formula  below :
 
-        E
-
-        (
-
-        k
-
-        )
-
-        =
-          K
-            0
-          ε
-              2
-
-              3
-          k
-            −
-                5
-
-                3
-        exp
-
-        ⁡
-          [
-            −
-                  3
-                    K
-                      0
-                2
-                (
-                        ν
-                          3
-                        k
-                          4
-                    ε
-                )
-                  1
-
-                  3
-          ]
-        ,
-
 $$ E(k)=K_{0}\varepsilon ^{\frac {2}{3}}k^{-{\frac {5}{3}}}\exp \left[-{\frac {3K_{0}}{2}}\left({\frac {\nu ^{3}k^{4}}{\varepsilon }}\right)^{\frac {1}{3}}\right]\,, $$
 
 In spite of this success, Kolmogorov theory is at present under revision. This theory implicitly assumes that the turbulence is statistically self-similar at different scales. This essentially means that the statistics are scale-invariant and non-intermittent in the inertial range. A usual way of studying turbulent flow velocity fields is by means of flow velocity increments:
-
-        δ
-          u
-        (
-
-        r
-
-        )
-
-        =
-          u
-        (
-          x
-        +
-          r
-        )
-
-        −
-          u
-        (
-          x
-        )
-        ;
 
 $$ \delta \mathbf {u} (r)=\mathbf {u} (\mathbf {x} +\mathbf {r} )-\mathbf {u} (\mathbf {x} )\,; $$
 
 that is, the difference in flow velocity between points separated by a vector r (since the turbulence is assumed isotropic, the flow velocity increment depends only on the modulus of r). Flow velocity increments are useful because they emphasize the effects of scales of the order of the separation r when statistics are computed.  The statistical scale-invariance without intermittency implies that the scaling of flow velocity increments should occur with a unique scaling exponent β, so that when r is scaled by a factor λ,
 
-        δ
-          u
-        (
-
-        λ
-
-        r
-
-        )
-
 $$ \delta \mathbf {u} (\lambda r) $$
 
 should have the same statistical distribution as
 
-          λ
-            β
-        δ
-          u
-        (
-
-        r
-
-        )
-        ,
-
 $$ \lambda ^{\beta }\delta \mathbf {u} (r)\,, $$
 
 with β independent of the scale r. From this fact, and other results of Kolmogorov 1941 theory, it follows that the statistical moments of the flow velocity increments (known as structure functions in turbulence) should scale as
-
-            ⟨
-            (
-        δ
-          u
-        (
-
-        r
-
-        )
-              )
-            n
-            ⟩
-        =
-          C
-            n
-        ⟨
-
-        (
-
-        ε
-
-        r
-          )
-              n
-
-              3
-        ⟩
-        ,
 
 $$ {\Big \langle }{\big (}\delta \mathbf {u} (r){\big )}^{n}{\Big \rangle }=C_{n}\langle (\varepsilon r)^{\frac {n}{3}}\rangle \,, $$
 
@@ -562,45 +200,9 @@ where the brackets denote the statistical average, and the Cn would be universal
 
 There is considerable evidence that turbulent flows deviate from this behavior. The scaling exponents deviate from the ⁠n/3⁠ value predicted by the theory, becoming a non-linear function of the order n of the structure function. The universality of the constants have also been questioned. For low orders the discrepancy with the Kolmogorov ⁠n/3⁠ value is very small, which explain the success of Kolmogorov theory in regards to low order statistical moments. In particular, it can be shown that when the energy spectrum follows a power law
 
-        E
-
-        (
-
-        k
-
-        )
-
-        ∝
-          k
-            −
-
-            p
-        ,
-
 $$ E(k)\propto k^{-p}\,, $$
 
 with 1 < p < 3, the second order structure function has also a power law, with the form
-
-            ⟨
-            (
-        δ
-          u
-        (
-
-        r
-
-        )
-              )
-            2
-            ⟩
-        ∝
-          r
-            p
-
-            −
-
-            1
-        ,
 
 $$ {\Big \langle }{\big (}\delta \mathbf {u} (r){\big )}^{2}{\Big \rangle }\propto r^{p-1}\,, $$
 

@@ -61,36 +61,8 @@ An early nonlinear feedback system analysis problem was formulated by A. I. Lur'
 Control systems described by the Lur'e problem have a forward path that is linear and time-invariant, and a feedback path that contains a memory-less, possibly time-varying, static nonlinearity.
 
 The linear part can be characterized by four matrices (A,B,C,D), while the nonlinear part is Φ(y) with 
-              Φ
 
-              (
-
-              y
-
-              )
-            y
-        ∈
-
-        [
-
-        a
-
-        ,
-
-        b
-
-        ]
-
-        ,
-        a
-
-        <
-
-        b
-        ∀
-
-        y
-    {\displaystyle {\frac {\Phi (y)}{y}}\in [a,b],\quad a<b\quad \forall y}
+{\displaystyle {\frac {\Phi (y)}{y}}\in [a,b],\quad a<b\quad \forall y}
  (a sector nonlinearity).
 
 ### Absolute stability problem
@@ -121,85 +93,24 @@ The Popov criterion.
 ### Frobenius theorem
 The Frobenius theorem is a deep result in differential geometry. When applied to nonlinear control, it says the following: Given a system of the form
 
-              x
-
-              ˙
-        =
-          ∑
-            i
-
-            =
-
-            1
-            k
-          f
-            i
-        (
-
-        x
-
-        )
-          u
-            i
-        (
-
-        t
-
-        )
-    {\displaystyle {\dot {x}}=\sum _{i=1}^{k}f_{i}(x)u_{i}(t)\,}
+{\displaystyle {\dot {x}}=\sum _{i=1}^{k}f_{i}(x)u_{i}(t)\,}
 
 where 
-        x
 
-        ∈
-          R
-            n
-    {\displaystyle x\in R^{n}}
+{\displaystyle x\in R^{n}}
 ,  
-          f
-            1
-        ,
 
-        …
-
-        ,
-          f
-            k
-    {\displaystyle f_{1},\dots ,f_{k}}
+{\displaystyle f_{1},\dots ,f_{k}}
  are vector fields belonging to a distribution 
-        Δ
-    {\displaystyle \Delta }
+{\displaystyle \Delta }
  and 
-          u
-            i
-        (
 
-        t
-
-        )
-    {\displaystyle u_{i}(t)}
+{\displaystyle u_{i}(t)}
  are control functions, the integral curves of 
-        x
-    {\displaystyle x}
  are restricted to a manifold of dimension 
-        m
-    {\displaystyle m}
  if 
-        span
 
-        ⁡
-
-        (
-
-        Δ
-
-        )
-
-        =
-
-        m
-    {\displaystyle \operatorname {span} (\Delta )=m}
+{\displaystyle \operatorname {span} (\Delta )=m}
  and 
-        Δ
-    {\displaystyle \Delta }
+{\displaystyle \Delta }
  is an involutive distribution.

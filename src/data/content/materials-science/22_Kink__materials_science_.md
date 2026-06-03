@@ -10,49 +10,22 @@ Kinks facilitate the movement of dislocations along its glide plane under shear 
 
 As shear force approaches infinity, the velocity at which dislocations migrate is limited by the physical properties of the material, maximizing at the material's sound velocity. At lower shear stresses, the velocity of dislocations end up relating exponentially with the applied shear force:
 
-          v
-            0
-        =
-
-        C
-          τ
-            p
-        ,
-    {\displaystyle v_{0}=C\tau ^{p},\,\!}
+{\displaystyle v_{0}=C\tau ^{p},\,\!}
 
 where
 
-        τ
-    {\displaystyle \tau }
+{\displaystyle \tau }
  is applied shear force
 
-        C
-    {\displaystyle C}
  and 
-        p
-    {\displaystyle p}
  are experimentally found constants
 
 The above equation gives the upper limit on dislocation velocity. The interactions of dislocation movement on its environment, particularly other defects such as jogs and precipitates, results in drag and slows down the dislocation:
 
-          v
-            D
-        =
-          v
-            0
-          e
-            −
-
-            D
-              /
-            τ
-        ,
-    {\displaystyle v_{D}=v_{0}e^{-D/\tau },\,\!}
+{\displaystyle v_{D}=v_{0}e^{-D/\tau },\,\!}
 
 where
 
-        D
-    {\displaystyle D}
  is the drag parameter of the crystal
 
 Kink movement is strongly dependent on temperature as well. Higher thermal energy assists in the generation of kinks, as well as increasing atomic vibrations and promoting dislocation motion.

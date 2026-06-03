@@ -22,11 +22,7 @@ The theory suggests that from the "Big Bang" through the present day, matter and
 It has been hypothesized that, over vast periods of time, a spontaneous entropy decrease could eventually occur via the Poincaré recurrence theorem,
 
  thermal fluctuations, and fluctuation theorem. Through this, another Big Bang could possibly create a new universe similar to the current one by quantum fluctuations and quantum tunnelling in roughly 
-          10
-              10
-                  10
-                    56
-    {\displaystyle 10^{10^{10^{56}}}}
+{\displaystyle 10^{10^{10^{56}}}}
  years.
 
 ## Opposing views

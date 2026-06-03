@@ -26,52 +26,25 @@ The transfer of energy by the emission of electromagnetic radiation.
 
 By transferring matter, energy—including thermal energy—is moved by the physical transfer of a hot or cold object from one place to another. This can be as simple as placing hot water in a bottle and heating a bed, or the movement of an iceberg in changing ocean currents. A practical example is thermal hydraulics. This can be described by the formula:
 
-          ϕ
-            q
-        =
-
-        v
-
-        ρ
-          c
-            p
-        Δ
-
-        T
-
 $$ \phi _{q}=v\rho c_{p}\Delta T $$
 
 where
-
-          ϕ
-            q
 
 $$ \phi _{q} $$
 
  is heat flux (W/m2),
 
-        ρ
-
 $$ \rho $$
 
  is density (kg/m3),
-
-          c
-            p
 
 $$ c_{p} $$
 
  is heat capacity at constant pressure (J/kg·K),
 
-        Δ
-
-        T
-
 $$ \Delta T $$
 
  is the difference in temperature (K),
-
-        v
 
 $$ v $$
 
@@ -102,63 +75,18 @@ The rate of heat loss of a body is proportional to the temperature difference be
 In a body of fluid that is heated from underneath its container, conduction, and convection can be considered to compete for dominance. If heat conduction is too great, fluid moving down by convection is heated by conduction so fast that its downward movement will be stopped due to its buoyancy, while fluid moving up by convection is cooled by conduction so fast that its driving buoyancy will diminish. On the other hand, if heat conduction is very low, a large temperature gradient may be formed and convection might be very strong.
 
 The Rayleigh number (
-          R
-
-          a
 
 $$ \mathrm {Ra} $$
 
 ) is the product of the Grashof (
-          G
-
-          r
 
 $$ \mathrm {Gr} $$
 
 ) and Prandtl (
-          P
-
-          r
 
 $$ \mathrm {Pr} $$
 
 ) numbers. It is a measure that determines the relative strength of conduction and convection.
-
-          R
-
-          a
-        =
-          G
-
-          r
-        ⋅
-          P
-
-          r
-        =
-              g
-
-              Δ
-
-              ρ
-                L
-                  3
-              μ
-
-              α
-        =
-              g
-
-              β
-
-              Δ
-
-              T
-                L
-                  3
-              ν
-
-              α
 
 $$ \mathrm {Ra} =\mathrm {Gr} \cdot \mathrm {Pr} ={\frac {g\Delta \rho L^{3}}{\mu \alpha }}={\frac {g\beta \Delta TL^{3}}{\nu \alpha }} $$
 
@@ -167,9 +95,6 @@ where
 g is the acceleration due to gravity,
 
 ρ is the density with 
-        Δ
-
-        ρ
 
 $$ \Delta \rho $$
 
@@ -190,57 +115,22 @@ L is characteristic length.
 The Rayleigh number can be understood as the ratio between the rate of heat transfer by convection to the rate of heat transfer by conduction; or, equivalently, the ratio between the corresponding timescales (i.e. conduction timescale divided by convection timescale), up to a numerical factor. This can be seen as follows, where all calculations are up to numerical factors depending on the geometry of the system.
 
 The buoyancy force driving the convection is roughly 
-        g
-
-        Δ
-
-        ρ
-          L
-            3
 
 $$ g\Delta \rho L^{3} $$
 
 , so the corresponding pressure is roughly 
-        g
-
-        Δ
-
-        ρ
-
-        L
 
 $$ g\Delta \rho L $$
 
 . In steady state, this is canceled by the shear stress due to viscosity, and therefore roughly equals 
-        μ
-
-        V
-          /
-        L
-
-        =
-
-        μ
-          /
-          T
-            conv
 
 $$ \mu V/L=\mu /T_{\text{conv}} $$
 
 , where V is the typical fluid velocity due to convection and 
-          T
-            conv
 
 $$ T_{\text{conv}} $$
 
  the order of its timescale. The conduction timescale, on the other hand, is of the order of 
-          T
-            cond
-        =
-          L
-            2
-          /
-        α
 
 $$ T_{\text{cond}}=L^{2}/\alpha $$
 
@@ -254,80 +144,33 @@ Radiative heat transfer is the transfer of energy via thermal radiation, i.e., e
 
 When the objects and distances separating them are large in size and compared to the wavelength of thermal radiation, the rate of transfer of radiant energy is best described by the Stefan-Boltzmann equation:
 
-          ϕ
-            q
-        =
-
-        ϵ
-
-        σ
-          T
-            4
-        .
-
 $$ \phi _{q}=\epsilon \sigma T^{4}. $$
 
 For radiative transfer between two objects, the equation is as follows:
-
-          ϕ
-            q
-        =
-
-        ϵ
-
-        σ
-
-        F
-
-        (
-          T
-            a
-            4
-        −
-          T
-            b
-            4
-        )
-
-        ,
 
 $$ \phi _{q}=\epsilon \sigma F(T_{a}^{4}-T_{b}^{4}), $$
 
 where
 
-          ϕ
-            q
-
 $$ \phi _{q} $$
 
  is the heat flux,
-
-        ϵ
 
 $$ \epsilon $$
 
  is the emissivity (unity for a black body),
 
-        σ
-
 $$ \sigma $$
 
  is the Stefan–Boltzmann constant,
-
-        F
 
 $$ F $$
 
  is the view factor between two surfaces a and b, and
 
-          T
-            a
-
 $$ T_{a} $$
 
  and 
-          T
-            b
 
 $$ T_{b} $$
 

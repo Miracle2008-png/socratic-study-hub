@@ -59,12 +59,10 @@ in the open left half of the complex plane for continuous time, when the Laplace
 inside the unit circle for discrete time, when the Z-transform is used.
 
 The difference between the two cases is simply due to the traditional method of plotting continuous time versus discrete time transfer functions. The continuous Laplace transform is in Cartesian coordinates where the 
-        x
 
 $$ x $$
 
  axis is the real axis and the discrete Z-transform is in circular coordinates where the 
-        ρ
 
 $$ \rho $$
 
@@ -74,55 +72,17 @@ When the appropriate conditions above are satisfied a system is said to be asymp
 
 If a system in question has an impulse response of
 
-        x
-
-        [
-
-        n
-
-        ]
-
-        =
           0.5
-            n
-        u
-
-        [
-
-        n
-
-        ]
 
 $$ \ x[n]=0.5^{n}u[n] $$
 
 then the Z-transform (see this example), is given by
 
-        X
-
-        (
-
-        z
-
-        )
-
-        =
-            1
-              1
-
-              −
-
               0.5
-                z
-                  −
-
-                  1
 
 $$ \ X(z)={\frac {1}{1-0.5z^{-1}}} $$
 
 which has a pole in 
-        z
-
-        =
 
         0.5
 
@@ -132,55 +92,17 @@ $$ z=0.5 $$
 
 However, if the impulse response was
 
-        x
-
-        [
-
-        n
-
-        ]
-
-        =
           1.5
-            n
-        u
-
-        [
-
-        n
-
-        ]
 
 $$ \ x[n]=1.5^{n}u[n] $$
 
 then the Z-transform is
 
-        X
-
-        (
-
-        z
-
-        )
-
-        =
-            1
-              1
-
-              −
-
               1.5
-                z
-                  −
-
-                  1
 
 $$ \ X(z)={\frac {1}{1-1.5z^{-1}}} $$
 
 which has a pole at 
-        z
-
-        =
 
         1.5
 
@@ -205,46 +127,14 @@ Solutions to problems of an uncontrollable or unobservable system include adding
 Several different control strategies have been devised in the past years. These vary from extremely general ones (PID controller), to others devoted to very particular classes of systems (especially robotics or aircraft cruise control).
 
 A control problem can have several specifications. Stability, of course, is always present. The controller must ensure that the closed-loop system is stable, regardless of the open-loop stability. A poor choice of controller can even worsen the stability of the open-loop system, which must normally be avoided. Sometimes it would be desired to obtain particular dynamics in the closed loop: i.e. that the poles have 
-        R
-
-        e
-
-        [
-
-        λ
-
-        ]
-
-        <
-
-        −
-            λ
-
-            ¯
 
 $$ Re[\lambda ]<-{\overline {\lambda }} $$
 
 , where 
-            λ
-
-            ¯
 
 $$ {\overline {\lambda }} $$
 
  is a fixed value strictly greater than zero, instead of simply asking that 
-        R
-
-        e
-
-        [
-
-        λ
-
-        ]
-
-        <
-
-        0
 
 $$ Re[\lambda ]<0 $$
 
@@ -263,40 +153,6 @@ A control system must always have some robustness property. A robust controller 
 System identification
 
 The process of determining the equations that govern the model's dynamics is called system identification. This can be done off-line: for example, executing a series of measures from which to calculate an approximated mathematical model, typically its transfer function or matrix. Such identification from the output, however, cannot take account of unobservable dynamics. Sometimes the model is built directly starting from known physical equations, for example, in the case of a mass-spring-damper system we know that 
-        m
-              x
-
-              ¨
-        (
-
-        t
-
-        )
-
-        =
-
-        −
-
-        K
-
-        x
-
-        (
-
-        t
-
-        )
-
-        −
-          B
-              x
-
-              ˙
-        (
-
-        t
-
-        )
 
 $$ m{\ddot {x}}(t)=-Kx(t)-\mathrm {B} {\dot {x}}(t) $$
 

@@ -19,7 +19,7 @@ The weight a foil can lift is proportional to its lift coefficient, the density 
 
 height 11 km:        lift  1.0 (datum for comparison)
 
-       5 m                 3.4
+5 m                 3.4
 
  in ground effect          4.1
 
@@ -29,4 +29,4 @@ just submerged            1,420
 
 depth  5 m                2,840
 
-     10 km                2,860
+10 km                2,860

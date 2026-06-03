@@ -25,9 +25,7 @@ It is the Euclidean relationships which apply directly to thermometry. An ideal 
 Nowadays, there are two nearly separate concepts of temperature, the thermodynamic concept, and that of the kinetic theory of gases and other materials.
 
 The zeroth law belongs to the thermodynamic concept, but this is no longer the primary international definition of temperature. The current primary international definition of temperature is in terms of the kinetic energy of freely moving microscopic particles such as molecules, related to temperature through the Boltzmann constant 
-          k
-              B
-    {\displaystyle k_{\mathrm {B} }}
+{\displaystyle k_{\mathrm {B} }}
 . The present article is about the thermodynamic concept, not about the kinetic theory concept.
 
 The zeroth law establishes thermal equilibrium as an equivalence relationship. An equivalence relationship on a set (such as the set of all systems each in its own state of internal thermodynamic equilibrium) divides that set into a collection of distinct subsets ("disjoint subsets") where any member of the set is a member of one and only one such subset. In the case of the zeroth law, these subsets consist of systems which are in mutual equilibrium. This partitioning allows any member of the subset to be uniquely "tagged" with a label identifying the subset to which it belongs. Although the labeling may be quite arbitrary, temperature is just such a labeling process which uses the real number system for tagging. The zeroth law justifies the use of suitable thermodynamic systems as thermometers to provide such a labeling, which yield any number of possible empirical temperature scales, and justifies the use of the second law of thermodynamics to provide an absolute, or thermodynamic temperature scale. Such temperature scales bring additional continuity and ordering (i.e., "hot" and "cold") properties to the concept of temperature.
