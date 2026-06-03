@@ -14,30 +14,33 @@ function compileMarkdownToTopic(id: string, title: string, subject: string, diff
   
   parts.forEach((part, index) => {
     if (!part.trim()) return;
-    
+
     // Extract heading
     const match = part.match(/^##\s+(.+)$/m);
     let heading = `Section ${index + 1}`;
     let content = part;
-    
+
     if (match) {
       heading = match[1].trim();
-      // content is everything after the heading
       content = part.replace(/^##\s+(.+)$/m, '').trim();
     }
-    
-    // The very first part might be an H1 or intro without H2
+
+    // First part: may only contain H1 title with no body text
     if (index === 0 && !match) {
       const h1Match = part.match(/^#\s+(.+)$/m);
       if (h1Match) {
+        // Strip the H1 line — it's just the topic title, already shown in the hero
+        content = part.replace(/^#\s+.+(\n|$)/m, '').trim();
+        // Skip this section entirely if there's no body text after the title
+        if (!content) return;
         heading = 'Introduction';
       }
     }
-    
+
     sections.push({
       heading,
       level: index === 0 && !match ? 1 : 2,
-      content: content
+      content
     });
   });
 
