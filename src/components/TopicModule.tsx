@@ -19,6 +19,8 @@ import FocusMode from './FocusMode';
 
 interface TopicModuleProps {
   topicId: string;
+  externalFocusMode?: boolean;
+  onExternalFocusExit?: () => void;
 }
 
 const difficultyConfig = {
@@ -30,7 +32,7 @@ const difficultyConfig = {
 
 type TabType = 'read' | 'summary' | 'flashcards' | 'quiz' | 'mindmap' | 'explain' | 'derivations' | 'exam';
 
-const TopicModule: React.FC<TopicModuleProps> = ({ topicId }) => {
+const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = false, onExternalFocusExit }) => {
   const [topic, setTopic] = useState<TopicContent | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -181,12 +183,17 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId }) => {
 
   const topicFullContent = topic.sections.map(s => `${'#'.repeat(s.level)} ${s.heading}\n\n${s.content}`).join('\n\n');
 
-  if (isFocusMode) {
+  const isFocusModeActive = isFocusMode || externalFocusMode;
+
+  if (isFocusModeActive) {
     return (
       <FocusMode 
         title={topic.title}
         content={topicFullContent}
-        onExit={() => setIsFocusMode(false)}
+        onExit={() => {
+          setIsFocusMode(false);
+          if (onExternalFocusExit) onExternalFocusExit();
+        }}
       />
     );
   }

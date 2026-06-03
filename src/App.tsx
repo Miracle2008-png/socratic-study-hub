@@ -45,6 +45,8 @@ const AppContent: React.FC = () => {
   const [activeTopic, setActiveTopic] = useState<string | null>(null);
   const [activeSatModule, setActiveSatModule] = useState<'Reading & Writing' | 'Math' | null>(null);
   const [isFocusMode, setIsFocusMode] = useState(false);
+  // Topic-level focus mode — only activatable when a topic is open
+  const [isTopicFocusMode, setIsTopicFocusMode] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
   const [isAiTutorOpen, setIsAiTutorOpen] = useState(false);
   const [isCalculatorOpen, setIsCalculatorOpen] = useState(false);
@@ -255,23 +257,23 @@ const AppContent: React.FC = () => {
     if (activeTab === 'grapher') return <Grapher2D />;
 
     if (activeTab === 'math') {
-      if (activeTopic) return <TopicModule topicId={activeTopic} />;
+      if (activeTopic) return <TopicModule topicId={activeTopic} externalFocusMode={isTopicFocusMode} onExternalFocusExit={() => setIsTopicFocusMode(false)} />;
       return <SubjectHub subject="mathematics" onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'math'); }} />;
     }
     if (activeTab === 'physics') {
-      if (activeTopic) return <TopicModule topicId={activeTopic} />;
+      if (activeTopic) return <TopicModule topicId={activeTopic} externalFocusMode={isTopicFocusMode} onExternalFocusExit={() => setIsTopicFocusMode(false)} />;
       return <SubjectHub subject="physics" onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'physics'); }} />;
     }
     if (activeTab === 'chemistry') {
-      if (activeTopic) return <TopicModule topicId={activeTopic} />;
+      if (activeTopic) return <TopicModule topicId={activeTopic} externalFocusMode={isTopicFocusMode} onExternalFocusExit={() => setIsTopicFocusMode(false)} />;
       return <SubjectHub subject="chemistry" onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'chemistry'); }} />;
     }
     if (activeTab === 'engineering') {
-      if (activeTopic) return <TopicModule topicId={activeTopic} />;
+      if (activeTopic) return <TopicModule topicId={activeTopic} externalFocusMode={isTopicFocusMode} onExternalFocusExit={() => setIsTopicFocusMode(false)} />;
       return <SubjectHub subject="engineering" onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'engineering'); }} />;
     }
     if (activeTab === 'biology') {
-      if (activeTopic) return <TopicModule topicId={activeTopic} />;
+      if (activeTopic) return <TopicModule topicId={activeTopic} externalFocusMode={isTopicFocusMode} onExternalFocusExit={() => setIsTopicFocusMode(false)} />;
       return <SubjectHub subject="biology" onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'biology'); }} />;
     }
 
@@ -314,7 +316,13 @@ const AppContent: React.FC = () => {
             handleTabChange(tab);
             setActiveSatModule(null);
           }}
-          onFocusModeToggle={() => setIsFocusMode(!isFocusMode)}
+          onFocusModeToggle={() => {
+            if (activeTopic) {
+              // If a topic is open, toggle topic-level focus mode (full reading experience)
+              setIsTopicFocusMode(f => !f);
+            }
+            // If no topic is open, do nothing — focus mode only makes sense inside a topic
+          }}
           isFocusMode={isFocusMode}
           darkMode={darkMode}
           toggleDarkMode={() => setDarkMode(d => !d)}
