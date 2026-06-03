@@ -174,9 +174,19 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
 
   if (!topic) {
     return (
-      <div className="topic-module-placeholder luxury-card">
-        <BookOpen size={48} style={{ color: 'var(--color-accent)', marginBottom: 16 }} />
-        <h2>Topic Not Found</h2>
+      <div className="topic-module-placeholder luxury-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '400px', gap: 16 }}>
+        <BookOpen size={48} style={{ color: 'var(--color-accent)' }} />
+        <h2 style={{ margin: 0 }}>Topic Not Found</h2>
+        <p style={{ color: 'var(--color-text-secondary)', margin: 0, fontSize: 14, textAlign: 'center' }}>
+          This topic couldn't be loaded. It may have moved or the link is outdated.
+        </p>
+        <button
+          className="gold-btn"
+          style={{ marginTop: 8 }}
+          onClick={() => window.history.back()}
+        >
+          ← Go Back
+        </button>
       </div>
     );
   }

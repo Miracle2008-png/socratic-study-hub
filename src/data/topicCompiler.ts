@@ -114,16 +114,25 @@ export const ALL_TOPICS: Record<string, TopicContent> = {
 const markdownModules = import.meta.glob('/src/data/content/**/*.md', { query: '?raw', import: 'default' });
 
 export async function fetchTopicContent(topicId: string): Promise<TopicContent> {
+  // Normalize to lowercase to handle stale localStorage IDs with wrong casing
+  const normalizedId = topicId.toLowerCase().replace(/\s+/g, '-');
+
   // Check if it's a legacy static topic (not engineering)
-  if (ALL_TOPICS[topicId] && ALL_TOPICS[topicId].subject !== 'engineering') {
+  if (ALL_TOPICS[normalizedId] && ALL_TOPICS[normalizedId].subject !== 'engineering') {
+    return ALL_TOPICS[normalizedId];
+  }
+
+  // Also check original topicId as fallback (for math/physics/etc with underscore IDs)
+  if (topicId !== normalizedId && ALL_TOPICS[topicId] && ALL_TOPICS[topicId].subject !== 'engineering') {
     return ALL_TOPICS[topicId];
   }
 
   // Otherwise, it's a massive dynamic topic. Find all related markdown chunks.
-  const matchingPaths = Object.keys(markdownModules).filter(path => path.includes(`/content/${topicId}/`));
+  const matchingPaths = Object.keys(markdownModules).filter(path => path.includes(`/content/${normalizedId}/`));
   
   if (matchingPaths.length === 0) {
     // Fallback just in case
+    if (ALL_TOPICS[normalizedId]) return ALL_TOPICS[normalizedId];
     if (ALL_TOPICS[topicId]) return ALL_TOPICS[topicId];
     throw new Error(`Topic not found: ${topicId}`);
   }
