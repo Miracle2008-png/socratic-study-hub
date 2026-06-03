@@ -1,7 +1,11 @@
 export class GeminiService {
   static getApiKey(): string | null {
-    return localStorage.getItem('lumen_gemini_key');
+    // Prefer user-supplied key, fall back to build-time env var
+    return localStorage.getItem('lumen_gemini_key')
+      || (import.meta.env.VITE_GEMINI_API_KEY as string | undefined)
+      || null;
   }
+
 
   static async generateContent(prompt: string, systemInstruction?: string): Promise<string> {
     const apiKey = this.getApiKey();

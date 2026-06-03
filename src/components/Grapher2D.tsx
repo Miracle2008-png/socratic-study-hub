@@ -230,13 +230,14 @@ const Grapher2D: React.FC = () => {
     const ro = new ResizeObserver(() => {
       canvas.width = canvas.offsetWidth * window.devicePixelRatio;
       canvas.height = canvas.offsetHeight * window.devicePixelRatio;
-      canvas.style.width = canvas.offsetWidth + 'px';
-      canvas.style.height = canvas.offsetHeight + 'px';
       draw();
     });
     ro.observe(canvas);
-    canvas.width = canvas.offsetWidth * window.devicePixelRatio;
-    canvas.height = canvas.offsetHeight * window.devicePixelRatio;
+    // Size immediately so first draw has real dimensions
+    if (canvas.offsetWidth > 0 && canvas.offsetHeight > 0) {
+      canvas.width = canvas.offsetWidth * window.devicePixelRatio;
+      canvas.height = canvas.offsetHeight * window.devicePixelRatio;
+    }
     return () => ro.disconnect();
   }, [draw]);
 
@@ -545,10 +546,13 @@ const Grapher2D: React.FC = () => {
           border: 1px solid var(--color-border);
           box-shadow: var(--shadow-md);
           background: var(--color-surface);
-          min-height: 400px;
+          height: 100%;
+          min-height: 460px;
         }
 
         .grapher-canvas {
+          position: absolute;
+          inset: 0;
           width: 100%;
           height: 100%;
           display: block;

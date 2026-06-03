@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
   BookOpen, Clock, Flame, Target, Award,
-  Calculator, Atom, FlaskConical, Dna,
+  Calculator, Atom, FlaskConical, Dna, Sigma,
   BarChart2, Calendar, ChevronRight, Zap, Brain, ArrowUpRight, Sparkles
 } from 'lucide-react';
 import { useGamification } from '../context/GamificationContext';
@@ -28,13 +28,14 @@ const SUBJECT_TOTAL_TOPICS: Record<string, number> = {
 };
 
 const quickTopics = [
+  { label: 'Single-Variable Calculus', topicId: 'single_variable_calculus', subject: 'math', tabId: 'math', color: '#8b5cf6', icon: Sigma },
+  { label: 'Differential Equations', topicId: 'differential_equations', subject: 'math', tabId: 'math', color: '#8b5cf6', icon: Calculator },
+  { label: 'Linear Algebra', topicId: 'linear_algebra__matrices__vectors_', subject: 'math', tabId: 'math', color: '#8b5cf6', icon: Brain },
   { label: 'Quantum Mechanics', topicId: 'quantum_mechanics', subject: 'physics', tabId: 'physics', color: '#0ea5e9', icon: Atom },
-  { label: 'Differential Calculus', topicId: 'differential_calculus', subject: 'math', tabId: 'math', color: '#8b5cf6', icon: Calculator },
-  { label: 'Linear Algebra', topicId: 'linear_algebra', subject: 'math', tabId: 'math', color: '#8b5cf6', icon: Brain },
-  { label: 'Thermodynamics', topicId: 'advanced_thermodynamics', subject: 'physics', tabId: 'physics', color: '#0ea5e9', icon: Zap },
   { label: 'Organic Chemistry', topicId: 'organic_chemistry', subject: 'chemistry', tabId: 'chemistry', color: '#10b981', icon: FlaskConical },
-  { label: 'Molecular Genetics', topicId: 'molecular_genetics', subject: 'biology', tabId: 'biology', color: '#ec4899', icon: Dna },
+  { label: 'Electric Circuit Theory I', topicId: 'electric-circuit-theory-1', subject: 'engineering', tabId: 'engineering', color: '#f59e0b', icon: Zap },
 ];
+
 
 interface DashboardProps {
   userName: string;
@@ -146,7 +147,7 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, studyGoal, onTopicSelec
             >
               <Zap size={14} /> Start Studying
             </button>
-            <button className="dash-ghost-btn" onClick={() => onTopicSelect?.('differential_calculus', 'math')}>
+            <button className="dash-ghost-btn" onClick={() => onTopicSelect?.('single_variable_calculus', 'math')}>
               <Calculator size={14} /> Try Calculus
             </button>
           </div>
