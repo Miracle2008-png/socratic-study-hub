@@ -26,14 +26,9 @@ export const PredictorHub: React.FC = () => {
       return;
     }
 
-    if (!GeminiService.getApiKey()) {
-      alert("Please add your Gemini API Key in the Settings panel first.");
-      return;
-    }
-
-    // This is a massive feature, it costs 2 insights
+    // Costs 2 insights
     if (!useInsight()) return;
-    if (!useInsight()) return; // Call twice to deduct 2 (in a real app, update context to allow deduct(2))
+    if (!useInsight()) return;
 
     setPredictionState('predicting');
 

@@ -16,12 +16,6 @@ export const EssayGrader: React.FC = () => {
 
   const handleGrade = async () => {
     if (!essayText.trim()) return;
-    
-    // Check for API key first
-    if (!GeminiService.getApiKey()) {
-      alert("Please add your Gemini API Key in the Settings panel first.");
-      return;
-    }
 
     // Deduct insight
     if (!useInsight()) return;

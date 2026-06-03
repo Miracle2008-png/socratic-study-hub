@@ -36,12 +36,6 @@ export const MockExam: React.FC = () => {
 
   const generateExam = async () => {
     if (!examTopic.trim()) return;
-    
-    if (!GeminiService.getApiKey()) {
-      alert("Please add your Gemini API Key in the Settings panel first.");
-      return;
-    }
-
     if (!useInsight()) return;
 
     setExamState('generating');
