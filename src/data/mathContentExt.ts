@@ -958,20 +958,20 @@ Given:
 $$ x' = f(x,y) $$
 $$ y' = g(x,y) $$
 We find the **Equilibrium Points** where $x' = 0$ and $y' = 0$ (the system is perfectly stationary). To determine if these points are stable (attractors) or unstable (repulsors), we calculate the **Jacobian Matrix**:
-$$ J = \begin{bmatrix} \frac{\partial f}{\partial x} & \frac{\partial f}{\partial y} \\ \frac{\partial g}{\partial x} & \frac{\partial g}{\partial y} \end{bmatrix} $$
+$$ J = \begin{bmatrix} \\frac{\partial f}{\partial x} & \\frac{\partial f}{\partial y} \\ \\frac{\partial g}{\partial x} & \\frac{\partial g}{\partial y} \end{bmatrix} $$
 By evaluating the Jacobian at the equilibrium point and finding its Eigenvalues, we can linearly approximate the chaotic non-linear system!
 
 ## 12. Numerical Methods: How Computers Solve DEs
 When an equation is too difficult to solve analytically (like the Navier-Stokes equations governing fluid dynamics), we use computers to simulate it step-by-step.
-* **Euler's Method**: The simplest approach. You calculate the slope at your current point, take a tiny step forward ($\Delta t$) along that slope, and recalculate.
-  $$ y_{n+1} = y_n + f(t_n, y_n) \Delta t $$
+* **Euler's Method**: The simplest approach. You calculate the slope at your current point, take a tiny step forward ($\\Delta t$) along that slope, and recalculate.
+  $$ y_{n+1} = y_n + f(t_n, y_n) \\Delta t $$
   However, Euler's method is incredibly inaccurate because it assumes the slope stays constant for the entire step!
 * **Runge-Kutta 4th Order (RK4)**: The workhorse of modern physics engines and simulations. Instead of just taking the slope at the start of the step, RK4 cleverly calculates the slope at the start, two slopes at the midpoint, and a slope at the end. It takes a weighted average of these four slopes to take an incredibly accurate step forward.
 
 ## 13. Power Series Solutions & The Method of Frobenius
 What if the coefficients in a linear DE are not constants, but polynomials" e.g., $x^2 y'' + x y' + (x^2 - n^2)y = 0$ (Bessel's Equation).
 You cannot guess $e^{rx}$. Instead, you guess that the solution is an **Infinite Power Series**:
-$$ y(x) = \sum_{m=0}^{\infty} c_m x^{m+r} $$
+$$ y(x) = \sum_{m=0}^{\\infty} c_m x^{m+r} $$
 You plug this infinite sum into the DE, shift the summation indices so the powers of $x$ align, and create a **Recurrence Relation** that dictates exactly how to calculate $c_2$ from $c_0$, $c_3$ from $c_1$, etc. 
 This method gives birth to the "Special Functions" of mathematical physics: Bessel Functions (how drums vibrate), Legendre Polynomials (quantum mechanics orbitals), and Hermite Polynomials (quantum harmonic oscillators).
 
@@ -980,7 +980,7 @@ Imagine a differential equation describing a bridge. What happens if you hit the
 This mathematically impossible strike is the **Dirac Delta Function** $\delta(t - t_0)$. It is zero everywhere, except at $t_0$ where it is infinitely tall, yet its total area is exactly 1.
 If you can solve the differential equation for a single Dirac Delta strike, that solution is called the **Green's Function**, $G(t, \tau)$.
 The absolute magic of Green's Functions is that any continuous driving force $F(t)$ can be thought of as an infinite sequence of tiny hammer strikes! By convolving the Green's function with $F(t)$, you can instantly solve the DE for *any* arbitrary force:
-$$ y(t) = \int G(t, \tau) F(\tau) \, d\tau $$
+$$ y(t) = \\int G(t, \tau) F(\tau) \, d\tau $$
 This is how quantum field theory fundamentally calculates particle interactions!
 `,
 
@@ -1390,14 +1390,14 @@ Q.E.D. This proves that for a conservative vector field, the path taken between 
 ## 1. Introduction to the Limit
 Calculus is the mathematics of continuous change, and its foundation is the **Limit**.
 Before calculus, math was static. You could find the average speed of a car over 1 hour, but finding its exact speed at an instantaneous moment ($t = 2.500$ seconds) resulted in dividing by zero: $\\frac{0}{0}$.
-The limit allows us to infinitely approach that moment without ever touching it. We say $\\lim_{x \\to a} f(x) = L$ if $f(x)$ gets arbitrarily close to $L$ as $x$ gets arbitrarily close to $a$.
+The limit allows us to infinitely approach that moment without ever touching it. We say $\lim_{x \\to a} f(x) = L$ if $f(x)$ gets arbitrarily close to $L$ as $x$ gets arbitrarily close to $a$.
 
 ### Example
-Evaluate $\lim_{x \to 2} \frac{x^2 - 4}{x - 2}$.
+Evaluate $\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2}$.
 
 **Solution:**
 Factor the numerator: $x^2 - 4 = (x-2)(x+2)$.
-The expression becomes $\frac{(x-2)(x+2)}{x-2}$.
+The expression becomes $\\frac{(x-2)(x+2)}{x-2}$.
 Cancel the common term to get $x + 2$.
 Now, substitute $x = 2$: $2 + 2 = 4$.
 Thus, the limit is $4$.
@@ -1405,16 +1405,16 @@ Thus, the limit is $4$.
 ## 2. The Derivative (Differential Calculus)
 The derivative $f'(x)$ is the instantaneous rate of change of a function. Geometrically, it is the slope of the tangent line to the curve at a specific point.
 It is defined by the difference quotient:
-$$ f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h} $$
+$$ f'(x) = \lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h} $$
 
 ### Example
 Find the derivative of $f(x) = x^2$ using the limit definition.
 
 **Solution:**
-$$ f'(x) = \lim_{h \to 0} \frac{(x+h)^2 - x^2}{h} $$
-$$ = \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} $$
-$$ = \lim_{h \to 0} \frac{2xh + h^2}{h} $$
-$$ = \lim_{h \to 0} (2x + h) = 2x $$
+$$ f'(x) = \lim_{h \\to 0} \\frac{(x+h)^2 - x^2}{h} $$
+$$ = \lim_{h \\to 0} \\frac{x^2 + 2xh + h^2 - x^2}{h} $$
+$$ = \lim_{h \\to 0} \\frac{2xh + h^2}{h} $$
+$$ = \lim_{h \\to 0} (2x + h) = 2x $$
 
 ## 3. Rules of Differentiation
 Using the limit definition for every problem would take hours. Instead, we use derived rules:
@@ -1428,26 +1428,23 @@ Find the derivative of $f(x) = 3x^4 - 2x^2 + 5x$.
 
 **Solution:**
 Using the Power Rule on each term:
-$\frac{d}{dx}(3x^4) = 12x^3$
-$\frac{d}{dx}(-2x^2) = -4x$
-$\frac{d}{dx}(5x) = 5$
+$\\frac{d}{dx}(3x^4) = 12x^3$
+$\\frac{d}{dx}(-2x^2) = -4x$
+$\\frac{d}{dx}(5x) = 5$
 
 So, $f'(x) = 12x^3 - 4x + 5$.
 
 ## 4. Derivatives of Transcendental Functions
-* **Trigonometry**: $\\frac{d}{dx}\\sin(x) = \\cos(x)$, $\\frac{d}{dx}\\cos(x) = -\\sin(x)$, $\\frac{d}{dx}\\tan(x) = \\sec^2(x)$.
-* **Exponentials**: The magical property of $e^x$ is that it is its own derivative! $\\frac{d}{dx} e^x = e^x$.
-* **Logarithms**: $\\frac{d}{dx} \\ln(x) = \\frac{1}{x}$.
 
 ### Example
-Find the derivative of $y = e^x \sin(x)$.
+Find the derivative of $y = e^x \\sin(x)$.
 
 **Solution:**
 Use the Product Rule: $(uv)' = u'v + uv'$.
-Here, $u = e^x$ and $v = \sin(x)$.
-$u' = e^x$ and $v' = \cos(x)$.
+Here, $u = e^x$ and $v = \\sin(x)$.
+$u' = e^x$ and $v' = \\cos(x)$.
 
-$y' = e^x \sin(x) + e^x \cos(x) = e^x(\sin(x) + \cos(x))$.
+$y' = e^x \\sin(x) + e^x \\cos(x) = e^x(\\sin(x) + \\cos(x))$.
 
 ## 5. The Integral (Integral Calculus)
 While the derivative finds the slope, the **Integral** finds the area under the curve.
@@ -1455,11 +1452,11 @@ The Definite Integral is defined as the limit of a Riemann Sum (adding up an inf
 $$ \\int_a^b f(x)\\,dx = \\lim_{n \\to \\infty} \\sum_{i=1}^n f(x_i^*)\\Delta x $$
 
 ### Example
-Evaluate the indefinite integral $\int 2x \, dx$.
+Evaluate the indefinite integral $\\int 2x \\, dx$.
 
 **Solution:**
 Using the reverse power rule (add 1 to the exponent and divide by the new exponent):
-$\int 2x^1 \, dx = 2 \left( \frac{x^2}{2} \right) + C = x^2 + C$.
+$\\int 2x^1 \\, dx = 2 \\left( \\frac{x^2}{2} \\right) + C = x^2 + C$.
 
 ## 6. The Fundamental Theorem of Calculus (FTC)
 The most brilliant discovery in human history: Finding slopes (derivatives) and finding areas (integrals) are **exact inverse operations**.
@@ -1467,7 +1464,7 @@ If you integrate a rate of change, you get the total accumulated change:
 $$ \\int_a^b f'(x)\\,dx = f(b) - f(a) $$
 
 ### Example
-Evaluate the definite integral $\int_1^3 2x \, dx$.
+Evaluate the definite integral $\\int_1^3 2x \\, dx$.
 
 **Solution:**
 First, find the antiderivative: $x^2$.
