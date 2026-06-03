@@ -140,15 +140,20 @@ export async function fetchTopicContent(topicId: string): Promise<TopicContent> 
   // Sort them alphabetically to maintain section order (00_..., 01_..., etc)
   matchingPaths.sort();
 
+  // Cap at 8 core sections — the first 8 files are the most curated/relevant.
+  // Loading all 30-38 files makes pages overwhelmingly long.
+  const MAX_SECTIONS = 8;
+  const selectedPaths = matchingPaths.slice(0, MAX_SECTIONS);
+
   const sections: Section[] = [];
   
-  // Fetch all massive chunks concurrently instead of sequentially to drastically reduce loading time!
+  // Fetch selected chunks concurrently
   const markdownContents = await Promise.all(
-    matchingPaths.map(path => markdownModules[path]() as Promise<string>)
+    selectedPaths.map(path => markdownModules[path]() as Promise<string>)
   );
 
-  for (let i = 0; i < matchingPaths.length; i++) {
-    const path = matchingPaths[i];
+  for (let i = 0; i < selectedPaths.length; i++) {
+    const path = selectedPaths[i];
     const markdown = markdownContents[i];
     
     // Extract heading from markdown (assuming it starts with # Title)
@@ -163,6 +168,14 @@ export async function fetchTopicContent(topicId: string): Promise<TopicContent> 
       level = i === 0 ? 1 : 2;
     }
 
+    // Trim very long sections so no single article dominates the page
+    const MAX_CHARS = 4000;
+    if (content.length > MAX_CHARS) {
+      // Cut at a paragraph boundary near the limit
+      const cutPoint = content.lastIndexOf('\n\n', MAX_CHARS);
+      content = (cutPoint > 2000 ? content.slice(0, cutPoint) : content.slice(0, MAX_CHARS)).trim();
+    }
+
     sections.push({
       heading,
       level: level as 1 | 2 | 3,
@@ -171,14 +184,14 @@ export async function fetchTopicContent(topicId: string): Promise<TopicContent> 
   }
 
   // Build the topic title from the ID
-  const title = topicId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  const title = normalizedId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 
   return {
-    id: topicId,
+    id: normalizedId,
     title: title,
     subject: 'engineering',
     difficulty: 'University' as any,
-    estimatedReadTime: sections.length * 15, // Approx 15 mins per massive section
+    estimatedReadTime: Math.ceil(sections.reduce((t, s) => t + s.content.split(' ').length, 0) / 200),
     sections
   };
 }
