@@ -1392,10 +1392,29 @@ Calculus is the mathematics of continuous change, and its foundation is the **Li
 Before calculus, math was static. You could find the average speed of a car over 1 hour, but finding its exact speed at an instantaneous moment ($t = 2.500$ seconds) resulted in dividing by zero: $\\frac{0}{0}$.
 The limit allows us to infinitely approach that moment without ever touching it. We say $\\lim_{x \\to a} f(x) = L$ if $f(x)$ gets arbitrarily close to $L$ as $x$ gets arbitrarily close to $a$.
 
+### Example
+Evaluate $\lim_{x \to 2} \frac{x^2 - 4}{x - 2}$.
+
+**Solution:**
+Factor the numerator: $x^2 - 4 = (x-2)(x+2)$.
+The expression becomes $\frac{(x-2)(x+2)}{x-2}$.
+Cancel the common term to get $x + 2$.
+Now, substitute $x = 2$: $2 + 2 = 4$.
+Thus, the limit is $4$.
+
 ## 2. The Derivative (Differential Calculus)
 The derivative $f'(x)$ is the instantaneous rate of change of a function. Geometrically, it is the slope of the tangent line to the curve at a specific point.
 It is defined by the difference quotient:
 $$ f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h} $$
+
+### Example
+Find the derivative of $f(x) = x^2$ using the limit definition.
+
+**Solution:**
+$$ f'(x) = \lim_{h \to 0} \frac{(x+h)^2 - x^2}{h} $$
+$$ = \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} $$
+$$ = \lim_{h \to 0} \frac{2xh + h^2}{h} $$
+$$ = \lim_{h \to 0} (2x + h) = 2x $$
 
 ## 3. Rules of Differentiation
 Using the limit definition for every problem would take hours. Instead, we use derived rules:
@@ -1404,20 +1423,56 @@ Using the limit definition for every problem would take hours. Instead, we use d
 3. **Quotient Rule**: $\\frac{d}{dx} \\left[\\frac{u(x)}{v(x)}\\right] = \\frac{u'v - uv'}{v^2}$
 4. **Chain Rule**: $\\frac{d}{dx} f(g(x)) = f'(g(x))g'(x)$
 
+### Example
+Find the derivative of $f(x) = 3x^4 - 2x^2 + 5x$.
+
+**Solution:**
+Using the Power Rule on each term:
+$\frac{d}{dx}(3x^4) = 12x^3$
+$\frac{d}{dx}(-2x^2) = -4x$
+$\frac{d}{dx}(5x) = 5$
+
+So, $f'(x) = 12x^3 - 4x + 5$.
+
 ## 4. Derivatives of Transcendental Functions
 * **Trigonometry**: $\\frac{d}{dx}\\sin(x) = \\cos(x)$, $\\frac{d}{dx}\\cos(x) = -\\sin(x)$, $\\frac{d}{dx}\\tan(x) = \\sec^2(x)$.
 * **Exponentials**: The magical property of $e^x$ is that it is its own derivative! $\\frac{d}{dx} e^x = e^x$.
 * **Logarithms**: $\\frac{d}{dx} \\ln(x) = \\frac{1}{x}$.
+
+### Example
+Find the derivative of $y = e^x \sin(x)$.
+
+**Solution:**
+Use the Product Rule: $(uv)' = u'v + uv'$.
+Here, $u = e^x$ and $v = \sin(x)$.
+$u' = e^x$ and $v' = \cos(x)$.
+
+$y' = e^x \sin(x) + e^x \cos(x) = e^x(\sin(x) + \cos(x))$.
 
 ## 5. The Integral (Integral Calculus)
 While the derivative finds the slope, the **Integral** finds the area under the curve.
 The Definite Integral is defined as the limit of a Riemann Sum (adding up an infinite number of infinitely thin rectangles):
 $$ \\int_a^b f(x)\\,dx = \\lim_{n \\to \\infty} \\sum_{i=1}^n f(x_i^*)\\Delta x $$
 
+### Example
+Evaluate the indefinite integral $\int 2x \, dx$.
+
+**Solution:**
+Using the reverse power rule (add 1 to the exponent and divide by the new exponent):
+$\int 2x^1 \, dx = 2 \left( \frac{x^2}{2} \right) + C = x^2 + C$.
+
 ## 6. The Fundamental Theorem of Calculus (FTC)
 The most brilliant discovery in human history: Finding slopes (derivatives) and finding areas (integrals) are **exact inverse operations**.
 If you integrate a rate of change, you get the total accumulated change:
 $$ \\int_a^b f'(x)\\,dx = f(b) - f(a) $$
+
+### Example
+Evaluate the definite integral $\int_1^3 2x \, dx$.
+
+**Solution:**
+First, find the antiderivative: $x^2$.
+Then evaluate from 1 to 3:
+$[x^2]_1^3 = (3)^2 - (1)^2 = 9 - 1 = 8$.
 
 ## Derivation of the Power Rule
 Let's prove that $\\frac{d}{dx} x^n = n x^{n-1}$ using the Binomial Theorem.

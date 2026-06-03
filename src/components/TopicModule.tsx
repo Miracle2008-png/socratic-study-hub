@@ -611,18 +611,14 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
               </div>
               <div className="tm-toc-sidebar">
                 {topic.sections.map((s, i) => {
-                  const isLocked = i > unlockedIdx;
+                  const isLocked = false; // Locks removed per user request
                   return (
                     <button
                       key={i}
-                      className={`sidebar-toc-entry level-${s.level} ${currentReadIdx === i ? 'active' : ''} ${isLocked ? 'locked' : ''}`}
-                      onClick={() => {
-                        if (!isLocked) setCurrentReadIdx(i);
-                      }}
-                      disabled={isLocked}
+                      className={`sidebar-toc-entry level-${s.level} ${currentReadIdx === i ? 'active' : ''}`}
+                      onClick={() => setCurrentReadIdx(i)}
                     >
                       {s.heading}
-                      {isLocked && <Lock size={14} className="lock-icon" style={{ color: 'var(--color-text-muted)' }} />}
                     </button>
                   );
                 })}
