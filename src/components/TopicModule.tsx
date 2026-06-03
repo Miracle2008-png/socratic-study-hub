@@ -318,33 +318,45 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
                   },
                 }}
               >
-                {sectionContent}
+                {topic.subject === 'engineering' ? sectionContent : topicFullContent}
               </ReactMarkdown>
 
-              <div className="tm-read-nav">
-                <button 
-                  className="tm-nav-btn secondary"
-                  disabled={currentReadIdx === 0}
-                  onClick={() => {
-                    setCurrentReadIdx(prev => prev - 1);
-                    if (contentRef.current) contentRef.current.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  ← Previous Section
-                </button>
-                <div className="tm-nav-progress">
-                  <div className="progress-track">
-                    <div className="progress-fill" style={{ width: `${((currentReadIdx + 1) / topic.sections.length) * 100}%` }}></div>
+              {topic.subject === 'engineering' ? (
+                <div className="tm-read-nav">
+                  <button 
+                    className="tm-nav-btn secondary"
+                    disabled={currentReadIdx === 0}
+                    onClick={() => {
+                      setCurrentReadIdx(prev => prev - 1);
+                      if (contentRef.current) contentRef.current.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                  >
+                    ← Previous Section
+                  </button>
+                  <div className="tm-nav-progress">
+                    <div className="progress-track">
+                      <div className="progress-fill" style={{ width: `${((currentReadIdx + 1) / topic.sections.length) * 100}%` }}></div>
+                    </div>
+                    <span>{currentReadIdx + 1} / {topic.sections.length}</span>
                   </div>
-                  <span>{currentReadIdx + 1} / {topic.sections.length}</span>
+                  <button 
+                    className="tm-nav-btn primary"
+                    onClick={handleNextSection}
+                  >
+                    {currentReadIdx === topic.sections.length - 1 ? 'Take the Quiz →' : 'Next Section →'}
+                  </button>
                 </div>
-                <button 
-                  className="tm-nav-btn primary"
-                  onClick={handleNextSection}
-                >
-                  {currentReadIdx === topic.sections.length - 1 ? 'Take the Quiz →' : 'Next Section →'}
-                </button>
-              </div>
+              ) : (
+                <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'center' }}>
+                  <button 
+                    className="tm-nav-btn primary"
+                    onClick={() => handleTabSwitch('quiz')}
+                    style={{ width: '200px' }}
+                  >
+                    Take the Quiz →
+                  </button>
+                </div>
+              )}
             </div>
           )}
 

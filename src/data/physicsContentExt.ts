@@ -31,7 +31,7 @@ This implicitly describes antimatter!
   'Force & Newton’s laws': `
 # Force & Newton's Laws: The Engine of Dynamics
 
-## 1. What is a Force?
+## 1. What is a Force"
 A force is a push or a pull resulting from an object's interaction with another object. Forces are vectors (they have magnitude and direction). When multiple forces act on an object, we sum them up using vector addition to find the **Net Force** ($\\Sigma\\vec{F}$).
 
 ## 2. Newton's First Law (Inertia)
@@ -61,7 +61,7 @@ Common forces include:
 * **Friction ($f = \\mu N$)**: Resists sliding motion, pointing exactly opposite to the direction of motion.
 
 ## Derivation of the Conservation of Momentum
-How do we prove that in an isolated collision between two objects, the total momentum before the crash equals the total momentum after? It is a direct mathematical consequence of Newton's 3rd Law!
+How do we prove that in an isolated collision between two objects, the total momentum before the crash equals the total momentum after" It is a direct mathematical consequence of Newton's 3rd Law!
 
 **Step 1:** Imagine two objects, A and B, colliding.
 During the collision, they exert forces on each other. By Newton's Third Law:
@@ -189,7 +189,7 @@ Instead of Newton's $F = ma$ determining exact trajectories, quantum mechanics u
 It calculates the Wavefunction ($\\Psi$). The square of the wavefunction ($|\\Psi|^2$) tells you the exact mathematical probability of finding the electron at any specific location!
 
 ## Derivation of the Bohr Model Radii
-How did Niels Bohr calculate the exact orbital radius of an electron in Hydrogen before modern quantum mechanics was invented? He simply quantized angular momentum!
+How did Niels Bohr calculate the exact orbital radius of an electron in Hydrogen before modern quantum mechanics was invented" He simply quantized angular momentum!
 
 **Step 1:** The Classical Orbit.
 The electron is held in circular orbit by the electrostatic force from the proton.
@@ -409,7 +409,7 @@ When an object is thrown into the air, its motion is separated into two entirely
 The beautiful consequence of this independence is that a bullet dropped from your hand and a bullet fired horizontally from a gun will hit the ground at the *exact same time*.
 
 ## Derivation of the First Kinematic Equation
-How do we rigorously prove $v = u + at$ for constant acceleration?
+How do we rigorously prove $v = u + at$ for constant acceleration"
 
 **Step 1:** Start with the calculus definition of instantaneous acceleration.
 $$ a = \\frac{dv}{dt} $$
@@ -433,7 +433,7 @@ $$ v = u + at $$
 Q.E.D.
 
 ## Derivation of the Second Kinematic Equation
-How do we prove the displacement formula $s = ut + \\frac{1}{2}at^2$?
+How do we prove the displacement formula $s = ut + \\frac{1}{2}at^2$"
 
 **Step 1:** Start with the calculus definition of instantaneous velocity.
 $$ v = \\frac{ds}{dt} $$
@@ -455,7 +455,7 @@ $$ s = ut + \\frac{1}{2}at^2 $$
 Q.E.D.
 
 ## Derivation of the Third Kinematic Equation
-How do we prove the time-independent equation $v^2 = u^2 + 2as$?
+How do we prove the time-independent equation $v^2 = u^2 + 2as$"
 
 **Step 1:** We want an equation without time ($t$). We use the Chain Rule trick to rewrite acceleration.
 $$ a = \\frac{dv}{dt} $$
@@ -708,7 +708,7 @@ Since $W = \\vec{F} \\cdot \\vec{d}$, Power can also be calculated as Force time
 $$ P = \\vec{F} \\cdot \\vec{v} $$
 
 ## Derivation of the Kinetic Energy Formula
-Why is kinetic energy exactly $\\frac{1}{2}mv^2$? Where does this specific formula come from? It is rigorously derived from the Work-Energy Theorem.
+Why is kinetic energy exactly $\\frac{1}{2}mv^2$" Where does this specific formula come from" It is rigorously derived from the Work-Energy Theorem.
 
 **Step 1:** Define Work using calculus.
 The total work done by a net force moving an object from position $x_1$ to $x_2$ is the integral of the force over distance:
@@ -772,7 +772,7 @@ Before Newton, Johannes Kepler used observational data from Tycho Brahe to formu
 3. **The Law of Harmonies**: The square of the orbital period is proportional to the cube of the orbital radius.
 
 ## Derivation of Centripetal Acceleration
-How do we prove $a_c = v^2/r$ for a circle?
+How do we prove $a_c = v^2/r$ for a circle"
 
 **Step 1:** Define the position vector.
 Imagine an object moving in a circle of radius $R$ at a constant angular speed $\\omega$. Its position vector in the $x-y$ plane is:
@@ -798,7 +798,7 @@ $$ a = \\left(\\frac{v}{R}\\right)^2 R = \\frac{v^2}{R} $$
 Q.E.D.
 
 ## Derivation of Kepler's Third Law
-How did Newton rigorously prove Kepler's empirical Third Law using Gravity?
+How did Newton rigorously prove Kepler's empirical Third Law using Gravity"
 
 **Step 1:** Set up the orbit equations.
 Assume a planet of mass $m$ is in a perfectly circular orbit of radius $r$ around a massive star of mass $M$.
@@ -1055,7 +1055,7 @@ Efficiency: $e = \\frac{W}{Q_H} = \\frac{Q_H - Q_C}{Q_H} = 1 - \\frac{Q_C}{Q_H}$
 A refrigerator simply runs this process in reverse!
 
 ## Derivation of the Ideal Gas Law (Kinetic Theory)
-How do we prove $PV = nRT$ (or $PV = NkT$) just by looking at microscopic atoms bouncing in a box?
+How do we prove $PV = nRT$ (or $PV = NkT$) just by looking at microscopic atoms bouncing in a box"
 
 **Step 1:** Consider a single atom of mass $m$ bouncing horizontally in a cubic box of side length $L$.
 Its horizontal velocity is $v_x$. When it hits the right wall and bounces back elastically, its momentum changes from $mv_x$ to $-mv_x$.
@@ -1091,7 +1091,7 @@ $$ PV = NkT $$
 Q.E.D. We derived macroscopic thermodynamics purely from microscopic Newtonian mechanics!
 
 ## Derivation of Carnot Engine Efficiency
-What is the absolute maximum efficiency *any* engine can theoretically achieve in the universe?
+What is the absolute maximum efficiency *any* engine can theoretically achieve in the universe"
 
 **Step 1:** The Carnot Cycle consists of two perfectly reversible isothermal (constant T) and two perfectly reversible adiabatic (no heat transfer) processes.
 For a reversible cycle, the total change in entropy of the universe is exactly zero.
@@ -1226,7 +1226,7 @@ $$ \\mathcal{E} = -\\frac{d\\Phi_B}{dt} $$
 This single equation is the foundation of the modern electrical grid. Every power plant on Earth (except solar) generates electricity by physically spinning giant magnets inside coils of wire!
 
 ## 5. Lenz's Law
-Notice the negative sign in Faraday's Law? That is Lenz's Law. It dictates that nature hates change. The induced current will always flow in a direction that creates its *own* magnetic field to oppose the original change in flux.
+Notice the negative sign in Faraday's Law" That is Lenz's Law. It dictates that nature hates change. The induced current will always flow in a direction that creates its *own* magnetic field to oppose the original change in flux.
 
 ## Derivation of the Magnetic Field of a Solenoid
 Use Ampère's Law to prove that the magnetic field inside an infinitely long, tightly wound solenoid (a coil of wire) is $B = \\mu_0 n I$, where $n$ is the number of turns per unit length.
@@ -1351,7 +1351,7 @@ While Einstein is famous for relativity, he actually won his Nobel Prize for pro
 Photon Energy: $E = hf$ (where $h$ is Planck's constant and $f$ is frequency).
 
 ## Derivation of Time Dilation
-How do we prove that time slows down for moving objects using only middle-school algebra and the speed of light?
+How do we prove that time slows down for moving objects using only middle-school algebra and the speed of light"
 
 **Step 1:** The Light Clock Setup.
 Imagine a "Light Clock" consisting of two mirrors facing each other, separated by a distance $L$. A single photon bounces up and down between them. One "tick" of the clock is the time it takes for the photon to bounce from the bottom, to the top, and back to the bottom.
@@ -1403,13 +1403,13 @@ Q.E.D. Because the denominator is less than 1, $\\Delta t$ is strictly larger th
 The atom is almost entirely empty space. The nucleus at its center is 100,000 times smaller than the atom, yet contains 99.9% of its mass. It consists of positively charged Protons ($Z$) and neutral Neutrons ($N$). Together, they are called Nucleons.
 
 ## 2. The Strong Nuclear Force
-Why doesn't the nucleus explode? You have dozens of positively charged protons packed impossibly close together, which should violently repel each other due to the Electrostatic force.
+Why doesn't the nucleus explode" You have dozens of positively charged protons packed impossibly close together, which should violently repel each other due to the Electrostatic force.
 The nucleus is held together by the **Strong Nuclear Force**. It is 100 times stronger than electromagnetism, but it only operates at incredibly microscopic ranges (around $10^{-15}$ meters, or 1 femtometer). Neutrons act as the "glue" that provides extra strong force without adding any electrostatic repulsion!
 
 ## 3. Mass Defect and Binding Energy
 If you put 2 individual protons and 2 individual neutrons on a scale, and then weigh an assembled Helium nucleus (which is made of the exact same 4 particles), the assembled nucleus actually weighs *less*!
 This missing mass is called the **Mass Defect** ($\\Delta m$).
-Where did the mass go? By $E=mc^2$, it was converted into pure **Binding Energy** to hold the nucleus tightly together. To break the nucleus apart, you must inject that exact amount of energy back in.
+Where did the mass go" By $E=mc^2$, it was converted into pure **Binding Energy** to hold the nucleus tightly together. To break the nucleus apart, you must inject that exact amount of energy back in.
 
 ## 4. Radioactivity and Decay
 If a nucleus is too large or has a poor ratio of neutrons to protons, the short-range Strong Force can no longer overcome the long-range Electrostatic repulsion. The nucleus becomes unstable and decays.
@@ -1422,7 +1422,7 @@ If a nucleus is too large or has a poor ratio of neutrons to protons, the short-
 * **Fusion**: Two incredibly light nuclei (like Hydrogen) are smashed together with such intense heat and pressure that the Strong Force takes over, fusing them into a heavier element and releasing exponentially more energy than fission. This is what powers the Sun and hydrogen bombs!
 
 ## Derivation of the Radioactive Decay Law
-Why does radioactive decay follow a perfectly exponential curve, $N(t) = N_0 e^{-\\lambda t}$? It is a direct result of probability!
+Why does radioactive decay follow a perfectly exponential curve, $N(t) = N_0 e^{-\\lambda t}$" It is a direct result of probability!
 
 **Step 1:** The fundamental premise of probability.
 In a sample of radioactive material, every single unstable nucleus is entirely independent. The probability of any specific nucleus decaying in the next microscopic second is exactly constant.

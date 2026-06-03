@@ -52,7 +52,7 @@ These numbers can be visualized on a basic Number Line, stretching infinitely in
 
 ## 2. Fractions, Decimals, and Rationals
 
-Integers are great for counting discrete objects, but what if we need to split an object? This leads us to the concept of **Rational Numbers ($\\mathbb{Q}$)**.
+Integers are great for counting discrete objects, but what if we need to split an object" This leads us to the concept of **Rational Numbers ($\\mathbb{Q}$)**.
 
 A rational number is any number that can be expressed as a fraction $\\frac{p}{q}$, where $p$ and $q$ are integers and $q \\neq 0$.
 
@@ -82,33 +82,33 @@ There are three fundamental laws of indices that you must master:
 
 ## 4. Advanced Indices: Zero, Negative, and Fractional
 
-What happens if we break the normal rules of counting? 
+What happens if we break the normal rules of counting" 
 
 ### The Zero Index
-Using the Division Law, what is $\\frac{x^3}{x^3}$? 
+Using the Division Law, what is $\\frac{x^3}{x^3}$" 
 Algebraically, anything divided by itself is $1$. But using the law of indices, $\\frac{x^3}{x^3} = x^{3-3} = x^0$. 
 Therefore, **any non-zero number raised to the power of zero is exactly 1**.
 $$ x^0 = 1 $$
 
 ### Negative Indices
-What about $\\frac{x^2}{x^5}$? 
+What about $\\frac{x^2}{x^5}$" 
 Using the rule, it is $x^{2-5} = x^{-3}$.
 But physically, $\\frac{x \\times x}{x \\times x \\times x \\times x \\times x} = \\frac{1}{x^3}$.
 Therefore, a negative index represents a reciprocal (a fraction).
 $$ x^{-n} = \\frac{1}{x^n} $$
 
 ### Fractional Indices (Surds)
-What does $x^{\\frac{1}{2}}$ mean?
+What does $x^{\\frac{1}{2}}$ mean"
 If we square it: $(x^{\\frac{1}{2}})^2 = x^{\\frac{1}{2} \\times 2} = x^1 = x$.
-What number, when squared, gives $x$? The square root of $x$!
+What number, when squared, gives $x$" The square root of $x$!
 Therefore, fractional indices represent roots.
 $$ x^{\\frac{1}{n}} = \\sqrt[n]{x} $$
 $$ x^{\\frac{m}{n}} = \\sqrt[n]{x^m} = (\\sqrt[n]{x})^m $$
 
 ## 5. Complex Numbers
 
-We established earlier that the Real Numbers ($\\mathbb{R}$) fill the entire number line. But there is a glaring problem: what is the square root of a negative number?
-$$ \\sqrt{-1} = ? $$
+We established earlier that the Real Numbers ($\\mathbb{R}$) fill the entire number line. But there is a glaring problem: what is the square root of a negative number"
+$$ \\sqrt{-1} = " $$
 There is no real number that, when squared, equals a negative number (e.g., $3 \\times 3 = 9$, and $-3 \\times -3 = 9$).
 
 To solve this, mathematicians expanded the universe again by defining the **Imaginary Unit ($i$)**, where:
@@ -176,7 +176,7 @@ We can verify the solution by substituting $x=4$ back into the original equation
 
 ## 5. Systems of Two Linear Equations (Substitution & Elimination)
 
-What happens if we have two variables? An equation like $x + y = 10$ has infinitely many solutions (e.g., $5+5, 2+8, -10+20$). 
+What happens if we have two variables" An equation like $x + y = 10$ has infinitely many solutions (e.g., $5+5, 2+8, -10+20$). 
 To nail down a single, unique solution for two variables, we need **two distinct equations**. This is called a **System of Linear Equations**.
 
 Geometrically, finding the solution means finding the exact $(x,y)$ coordinate where two straight lines intersect on a graph!
@@ -223,7 +223,7 @@ If we continue manipulating until we get 0s *above* the diagonal as well, it is 
 
 ## 9. The Rouché-Capelli Theorem (Rank and Consistency)
 
-How can we know *theoretically* if a massive system has zero, one, or infinite solutions without actually doing the tedious Gaussian elimination? 
+How can we know *theoretically* if a massive system has zero, one, or infinite solutions without actually doing the tedious Gaussian elimination" 
 
 We use the **Rouché-Capelli Theorem**, which relies on the concept of **Matrix Rank**. The rank is the number of linearly independent rows (rows that aren't just scaled copies of each other).
 
@@ -335,7 +335,7 @@ This means you can instantly find the sum and product of the roots *without ever
 
 ## 9. Higher Degree Polynomials (Cubics & Quartics)
 
-If quadratics ($x^2$) are solved by the quadratic formula, what about $x^3$ and $x^4$?
+If quadratics ($x^2$) are solved by the quadratic formula, what about $x^3$ and $x^4$"
 * **The Cubic Formula ($x^3$)**: Discovered in the 1500s by Tartaglia and Cardano. It is monstrously complex and relies heavily on complex numbers, even when all three roots are real integers!
 * **The Quartic Formula ($x^4$)**: Discovered by Lodovico Ferrari. It takes up an entire page of paper to write down.
 
@@ -424,7 +424,7 @@ $$ S_n = \\frac{a(1 - r^n)}{1 - r} $$
 
 ## 3. Infinite Series & Convergence
 
-What happens if a sequence goes on forever? Can we add an infinite number of things together and get a finite answer? 
+What happens if a sequence goes on forever" Can we add an infinite number of things together and get a finite answer" 
 
 In calculus, an infinite series $\\sum_{n=1}^{\\infty} a_n$ is defined strictly as the **limit of its partial sums** $S_k = \\sum_{n=1}^k a_n$. 
 If $\\lim_{k \\to \\infty} S_k$ exists and equals a finite real number $S$, the series **converges**. If it blows up to infinity or oscillates forever without settling, it **diverges**.
@@ -435,7 +435,7 @@ For an infinite geometric series, if the common ratio $r$ is strictly between $-
 $$ S_{\\infty} = \\frac{a}{1 - r} $$
 
 **Zeno's Dichotomy Paradox:**
-To walk 1 meter, you must first walk 1/2 meter, then 1/4 meter, then 1/8 meter... infinitely. How can you ever reach the destination if you have to take an infinite number of steps?
+To walk 1 meter, you must first walk 1/2 meter, then 1/4 meter, then 1/8 meter... infinitely. How can you ever reach the destination if you have to take an infinite number of steps"
 Because it is an infinite geometric series with $a=1/2$ and $r=1/2$.
 $S_{\\infty} = \\frac{1/2}{1 - 1/2} = 1$. 
 Calculus proves you do eventually reach exactly 1 meter!
@@ -508,7 +508,7 @@ You can literally rearrange the terms of $\\ln(2)$ to sum to $\\pi$, $-\\sqrt{2}
 
 ## Derivation of the Infinite Geometric Series Sum
 
-How do we prove that an infinite geometric series with $|r| < 1$ converges to $S_\\infty = \\frac{a}{1-r}$?
+How do we prove that an infinite geometric series with $|r| < 1$ converges to $S_\\infty = \\frac{a}{1-r}$"
 
 **Step 1: Write the finite sum $S_n$**
 $$ S_n = a + ar + ar^2 + ar^3 + \\dots + ar^{n-1} $$
@@ -538,7 +538,7 @@ Q.E.D.
   'Linear algebra (matrices, vectors)': `
 # Linear Algebra: Matrices, Vectors & Transformations
 
-## 1. What is a Vector?
+## 1. What is a Vector"
 In physics, a vector is an arrow with a length (magnitude) and a direction. In computer science, a vector is a list of ordered numbers. In linear algebra, both views are unified.
 A vector $\\vec{v} = \\begin{bmatrix} x \\\\ y \\end{bmatrix}$ represents a movement from the origin $(0,0)$ to the coordinate $(x,y)$.
 
@@ -702,7 +702,7 @@ In single-variable calculus, we study $y = f(x)$, representing a 2D curve.
 In multivariable calculus, we study functions like $z = f(x, y)$, which represent a 3D surface (like a mountain terrain), or $w = f(x, y, z)$, which assigns a value to every point in a 3D room (like temperature in a room).
 
 ## 2. Partial Derivatives
-How do we find the slope of a 3D surface? The slope depends on which direction you are walking! We solve this using **Partial Derivatives**.
+How do we find the slope of a 3D surface" The slope depends on which direction you are walking! We solve this using **Partial Derivatives**.
 To find the partial derivative with respect to $x$ (denoted $\\frac{\\partial f}{\\partial x}$ or $f_x$), we treat all other variables (like $y$) as constants and differentiate normally.
 
 **Example Problem:** Find the partial derivatives of $f(x, y) = x^3y^2 + 5y$
@@ -721,7 +721,7 @@ $$ \\nabla f = \\left\\langle \\frac{\\partial f}{\\partial x}, \\frac{\\partial
 3. It is always **orthogonal** (perpendicular) to the level curves/surfaces.
 
 ## 4. Directional Derivatives
-What if you want to find the slope walking in an arbitrary direction $\\vec{u}$?
+What if you want to find the slope walking in an arbitrary direction $\\vec{u}$"
 We use the **Directional Derivative**, $D_{\\vec{u}}f$. It is calculated by taking the dot product of the gradient and a unit vector $\\vec{u}$ pointing in your chosen direction:
 $$ D_{\\vec{u}}f = \\nabla f \\cdot \\vec{u} $$
 
@@ -765,7 +765,7 @@ These theorems are the foundations of Maxwell's Equations, literally dictating h
 
 ## Derivation of the Directional Derivative
 
-We previously stated that the directional derivative $D_{\\vec{u}}f$ is simply the dot product $\\nabla f \\cdot \\vec{u}$. But why is this true? Here is the rigorous derivation.
+We previously stated that the directional derivative $D_{\\vec{u}}f$ is simply the dot product $\\nabla f \\cdot \\vec{u}$. But why is this true" Here is the rigorous derivation.
 
 **Step 1: The Definition of the Directional Derivative**
 Just like a standard 1D derivative, we define it using a limit. We want to find the rate of change of $f(x,y)$ as we move from a point $(x_0, y_0)$ along a straight path defined by a unit vector $\\vec{u} = \\langle u_1, u_2 \\rangle$.
@@ -865,7 +865,7 @@ This reduces calculus to middle-school algebra! We solve for the roots of $r$ us
    $$ y(t) = e^{\\alpha t}(C_1 \\cos(\\beta t) + C_2 \\sin(\\beta t)) $$
 
 ## 6. Non-Homogeneous Equations and Driven Systems
-What if the system is pushed by an external force?
+What if the system is pushed by an external force"
 $$ ay'' + by' + cy = F(t) $$
 By the principle of superposition, the total general solution is the sum of the un-driven (homogeneous) solution $y_h(t)$ and a particular driven solution $y_p(t)$.
 $$ y(t) = y_h(t) + y_p(t) $$
@@ -914,7 +914,7 @@ When a function depends on multiple variables, such as a temperature profile var
 These are solved using **Separation of Variables**, where we assume the solution is the product of two independent 1D functions: $u(x,t) = X(x)T(t)$. This shatters the PDE into two ordinary ODEs, which are then solved and stitched back together using Fourier Series to match the boundary conditions!
 
 ## 10. Insane Level: Chaos Theory & The Lorenz Attractor
-Is the universe predictable? If you have the exact differential equations of the atmosphere and perfect initial conditions, can you predict the weather infinitely far into the future?
+Is the universe predictable" If you have the exact differential equations of the atmosphere and perfect initial conditions, can you predict the weather infinitely far into the future"
 In 1963, meteorologist Edward Lorenz was simulating atmospheric convection using a highly simplified system of three coupled, non-linear ODEs:
 $$ \\frac{dx}{dt} = \\sigma(y - x) $$
 $$ \\frac{dy}{dt} = x(\\rho - z) - y $$
@@ -969,14 +969,14 @@ When an equation is too difficult to solve analytically (like the Navier-Stokes 
 * **Runge-Kutta 4th Order (RK4)**: The workhorse of modern physics engines and simulations. Instead of just taking the slope at the start of the step, RK4 cleverly calculates the slope at the start, two slopes at the midpoint, and a slope at the end. It takes a weighted average of these four slopes to take an incredibly accurate step forward.
 
 ## 13. Power Series Solutions & The Method of Frobenius
-What if the coefficients in a linear DE are not constants, but polynomials? e.g., $x^2 y'' + x y' + (x^2 - n^2)y = 0$ (Bessel's Equation).
+What if the coefficients in a linear DE are not constants, but polynomials" e.g., $x^2 y'' + x y' + (x^2 - n^2)y = 0$ (Bessel's Equation).
 You cannot guess $e^{rx}$. Instead, you guess that the solution is an **Infinite Power Series**:
 $$ y(x) = \sum_{m=0}^{\infty} c_m x^{m+r} $$
 You plug this infinite sum into the DE, shift the summation indices so the powers of $x$ align, and create a **Recurrence Relation** that dictates exactly how to calculate $c_2$ from $c_0$, $c_3$ from $c_1$, etc. 
 This method gives birth to the "Special Functions" of mathematical physics: Bessel Functions (how drums vibrate), Legendre Polynomials (quantum mechanics orbitals), and Hermite Polynomials (quantum harmonic oscillators).
 
 ## 14. Green's Functions & The Dirac Delta
-Imagine a differential equation describing a bridge. What happens if you hit the bridge with an instantaneous, infinitely concentrated sledgehammer blow? 
+Imagine a differential equation describing a bridge. What happens if you hit the bridge with an instantaneous, infinitely concentrated sledgehammer blow" 
 This mathematically impossible strike is the **Dirac Delta Function** $\delta(t - t_0)$. It is zero everywhere, except at $t_0$ where it is infinitely tall, yet its total area is exactly 1.
 If you can solve the differential equation for a single Dirac Delta strike, that solution is called the **Green's Function**, $G(t, \tau)$.
 The absolute magic of Green's Functions is that any continuous driving force $F(t)$ can be thought of as an infinite sequence of tiny hammer strikes! By convolving the Green's function with $F(t)$, you can instantly solve the DE for *any* arbitrary force:
@@ -1052,7 +1052,7 @@ $(x, y, z) \\to (\\rho\\sin\\phi\\cos\\theta, \\rho\\sin\\phi\\sin\\theta, \\rho
 This is the coordinate system used by GPS satellites to pinpoint locations on Earth!
 
 ## 10. Insane Level: N-Dimensional Geometry
-Who says we have to stop at 3 dimensions? Using vectors, we can instantly generalize geometry to 4, 5, or 100 dimensions!
+Who says we have to stop at 3 dimensions" Using vectors, we can instantly generalize geometry to 4, 5, or 100 dimensions!
 A sphere in $n$-dimensions (a hypersphere) is simply the set of all vectors $\\vec{v}$ where $|\\vec{v}| = R$.
 Using the dot product formula, we can calculate the exact angle between two diagonal lines in a 10-dimensional hypercube. Linear algebra allows our math to explore dimensions our physical brains are utterly incapable of visualizing!
 
@@ -1121,14 +1121,14 @@ $$ r = \\frac{ed}{1 \\pm e \\cos\\theta} $$
 This single equation governs the motion of every orbiting body in the universe!
 
 ## 9. Degenerate Conics
-What happens if the slicing plane passes perfectly through the sharp tip (the apex) of the double cone?
+What happens if the slicing plane passes perfectly through the sharp tip (the apex) of the double cone"
 You don't get curves. You get **Degenerate Conics**:
 1. A single point (a collapsed circle/ellipse).
 2. A single straight line (a collapsed parabola).
 3. Two intersecting straight lines (a collapsed hyperbola).
 
 ## 10. Insane Level: Projective Geometry
-Why do a parabola and hyperbola look so different on paper, yet come from the same cone?
+Why do a parabola and hyperbola look so different on paper, yet come from the same cone"
 In the 1600s, Girard Desargues invented **Projective Geometry**. He realized that if you add a "line at infinity" to our flat 2D plane, all conic sections are actually the exact same shape!
 A parabola is just an ellipse that is tangent to the line at infinity. A hyperbola is just an ellipse that intersects the line at infinity twice! To the universe, there is only one shape.
 
@@ -1441,7 +1441,7 @@ $$ f'(x) = nx^{n-1} $$
 Q.E.D.
 
 ## Derivation of the Product Rule
-How do we prove $\\frac{d}{dx} [u(x)v(x)] = u'v + uv'$?
+How do we prove $\\frac{d}{dx} [u(x)v(x)] = u'v + uv'$"
 
 **Step 1:** Use the limit definition.
 $$ \\lim_{h \\to 0} \\frac{u(x+h)v(x+h) - u(x)v(x)}{h} $$
@@ -1491,7 +1491,7 @@ $$ = \\sin(x)(0) + \\cos(x)(1) = \\cos(x) $$
 Q.E.D.
 
 ## Derivation of Integration by Parts
-Where does the formula $\\int u\\,dv = uv - \\int v\\,du$ come from? It is just the Product Rule in reverse!
+Where does the formula $\\int u\\,dv = uv - \\int v\\,du$ come from" It is just the Product Rule in reverse!
 
 **Step 1:** Start with the Product Rule for derivatives.
 $$ \\frac{d}{dx}[u(x)v(x)] = u'(x)v(x) + u(x)v'(x) $$
@@ -1507,7 +1507,7 @@ $$ \\int u \\,dv = uv - \\int v \\,du $$
 Q.E.D.
 
 ## Derivation of U-Substitution
-Where does the formula $\\int f(g(x))g'(x)\\,dx = \\int f(u)\\,du$ come from? It is just the Chain Rule in reverse!
+Where does the formula $\\int f(g(x))g'(x)\\,dx = \\int f(u)\\,du$ come from" It is just the Chain Rule in reverse!
 
 **Step 1:** Start with the Chain Rule for derivatives.
 Let $F(x)$ be the antiderivative of $f(x)$, meaning $F'(x) = f(x)$.
@@ -1523,7 +1523,7 @@ $$ \\int f(u) \\,du = \\int f(g(x))g'(x) \\,dx $$
 Q.E.D.
 
 ## Derivation of the Chain Rule
-How do we rigorously prove the Chain Rule: $\\frac{d}{dx}[f(g(x))] = f'(g(x))g'(x)$?
+How do we rigorously prove the Chain Rule: $\\frac{d}{dx}[f(g(x))] = f'(g(x))g'(x)$"
 
 **Step 1:** Use the limit definition of the derivative for the composite function.
 $$ \\lim_{h \\to 0} \\frac{f(g(x+h)) - f(g(x))}{h} $$
@@ -1551,7 +1551,7 @@ $$ f'(g(x)) \\cdot g'(x) $$
 Q.E.D.
 
 ## Derivation of the Derivative of $e^x$
-Why is the derivative of $e^x$ exactly $e^x$?
+Why is the derivative of $e^x$ exactly $e^x$"
 
 **Step 1:** The limit definition.
 $$ \\frac{d}{dx} e^x = \\lim_{h \\to 0} \\frac{e^{x+h} - e^x}{h} $$
@@ -1639,7 +1639,7 @@ $$ y' = \\frac{1}{\\sqrt{1 - x^2}} $$
 Q.E.D.
 
 ## Derivation of the Arc Length Formula
-Why is the length of a curve given by $L = \\int \\sqrt{1 + (f'(x))^2} \\, dx$?
+Why is the length of a curve given by $L = \\int \\sqrt{1 + (f'(x))^2} \\, dx$"
 
 **Step 1:** Approximate the curve with tiny straight line segments.
 By the Pythagorean theorem, the length of a microscopic straight line segment $dL$ is:
