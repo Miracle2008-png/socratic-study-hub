@@ -28,6 +28,33 @@ interface SubjectData {
   topics: Topic[];
 }
 
+// Extract the first real sentence from markdown content, stripping headers and LaTeX
+const extractDescription = (content: string): string => {
+  const lines = content.split('\n');
+  for (const line of lines) {
+    const trimmed = line.trim();
+    // Skip empty lines, markdown headers, LaTeX blocks, list items, and HTML
+    if (!trimmed) continue;
+    if (trimmed.startsWith('#')) continue;
+    if (trimmed.startsWith('$$') || trimmed.startsWith('$')) continue;
+    if (trimmed.startsWith('-') || trimmed.startsWith('*') || /^\d+\./.test(trimmed)) continue;
+    if (trimmed.startsWith('<') || trimmed.startsWith('|')) continue;
+    if (trimmed.length < 20) continue; // Too short to be a real sentence
+    // Strip inline markdown syntax
+    const clean = trimmed
+      .replace(/\*\*(.+?)\*\*/g, '$1')
+      .replace(/\*(.+?)\*/g, '$1')
+      .replace(/`(.+?)`/g, '$1')
+      .replace(/\[(.+?)\]\(.+?\)/g, '$1')
+      .replace(/\$.*?\$/g, '')
+      .trim();
+    if (clean.length > 20) {
+      return clean.length > 120 ? clean.substring(0, 120) + '…' : clean;
+    }
+  }
+  return 'Explore this topic in depth.';
+};
+
 // Map the ALL_TOPICS to our SubjectHub Topic format
 const generateDynamicTopics = (subjectKey: string): Topic[] => {
   return Object.values(ALL_TOPICS)
@@ -35,7 +62,7 @@ const generateDynamicTopics = (subjectKey: string): Topic[] => {
     .map(t => ({
       id: t.id,
       title: t.title,
-      description: t.sections[0]?.content.substring(0, 100) + '...' || 'Explore this topic.',
+      description: extractDescription(t.sections[0]?.content || ''),
       progress: Math.floor(Math.random() * 20), // Placeholder for actual user progress
       icon: getIconForTopic(t.title),
       difficulty: t.difficulty as any,

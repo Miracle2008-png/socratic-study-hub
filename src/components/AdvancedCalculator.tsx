@@ -210,6 +210,62 @@ export const AdvancedCalculator: React.FC<AdvancedCalculatorProps> = ({ isOpen, 
       .replace(/derivative\(([^,']+)\)/gi, "derivative('$1', 'x')")
       .replace(/diff\(([^,']+)\)/gi, "derivative('$1', 'x')");
 
+    // ── Limit Evaluator ──────────────────────────────────────────────────────
+    // Syntax: limit(expr, x, a)  e.g. limit(sin(x)/x, x, 0)
+    //         lim(expr, x, a)
+    const limitMatch = targetExpr.match(/^(?:limit|lim)\((.+),\s*([a-zA-Z]+)\s*,\s*([^)]+)\)$/i);
+    if (limitMatch) {
+      const [, exprStr, variable, pointStr] = limitMatch;
+      try {
+        const a = math.evaluate(pointStr.trim());
+        const isInfinity = !isFinite(a);
+
+        // Numerical bilateral approach: shrink epsilon towards 0 from both sides
+        const epsilons = [1e-4, 1e-5, 1e-6, 1e-7, 1e-8];
+        const scope: Record<string, number> = {};
+
+        const evalAt = (val: number): number => {
+          scope[variable] = val;
+          return math.evaluate(exprStr.trim(), scope) as number;
+        };
+
+        let leftVal = NaN, rightVal = NaN;
+        for (const eps of epsilons) {
+          const offset = isInfinity ? 1 / eps : eps;
+          try { leftVal  = evalAt(isInfinity ? (a > 0 ? 1/eps : -1/eps) : a - eps); } catch (_) {}
+          try { rightVal = evalAt(isInfinity ? (a > 0 ? 1/eps * 1.001 : -1/eps * 1.001) : a + eps); } catch (_) {}
+          if (isFinite(leftVal) && isFinite(rightVal)) break;
+        }
+
+        const tolerance = 1e-6;
+        let out: string;
+        if (!isFinite(leftVal) && !isFinite(rightVal)) {
+          out = leftVal === rightVal ? (leftVal > 0 ? '+∞' : '-∞') : 'Does Not Exist';
+        } else if (Math.abs(leftVal - rightVal) < tolerance) {
+          const avg = (leftVal + rightVal) / 2;
+          // Round to remove floating point noise
+          const rounded = parseFloat(avg.toPrecision(10));
+          out = math.format(rounded, { precision: 10 });
+        } else {
+          out = `DNE  (left → ${leftVal.toPrecision(6)}, right → ${rightVal.toPrecision(6)})`;
+        }
+
+        setResult(out);
+        setError('');
+        const newItem: HistoryItem = {
+          expression: targetExpr,
+          result: out,
+          timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+        };
+        saveHistory([newItem, ...history].slice(0, 50));
+        return;
+      } catch (e: any) {
+        setError(`Limit error: ${e.message}`);
+        setResult('');
+        return;
+      }
+    }
+
     // Intercept integral calls (mathjs lacks native analytical integration)
     const intMatch = targetExpr.match(/^(?:integral|int|integrate)\(([^,)]+)(?:,\s*([a-z]))?\)$/i);
     if (intMatch) {
@@ -522,6 +578,17 @@ export const AdvancedCalculator: React.FC<AdvancedCalculatorProps> = ({ isOpen, 
                 </div>
 
                 <div className="help-section">
+                  <h4>Limits (Calculus)</h4>
+                  <ul>
+                    <li><code>limit(sin(x)/x, x, 0)</code> → <code>1</code></li>
+                    <li><code>limit((x^2-1)/(x-1), x, 1)</code> → <code>2</code></li>
+                    <li><code>limit(1/x, x, 0)</code> → <code>DNE</code></li>
+                    <li><code>limit(1/x^2, x, 0)</code> → <code>+∞</code></li>
+                    <li><code>limit(atan(x), x, Infinity)</code> → <code>π/2</code></li>
+                  </ul>
+                </div>
+
+                <div className="help-section">
                   <h4>Units & Conversions</h4>
                   <ul>
                     <li><code>5 cm + 2 inch</code> → <code>10.08 cm</code></li>
@@ -646,6 +713,7 @@ export const AdvancedCalculator: React.FC<AdvancedCalculatorProps> = ({ isOpen, 
           {renderBtn('6', '6', 'num-btn', ['6'])}
           {renderBtn('int', 'integral(', 'fn-btn', ['I'])}
           {renderBtn('diff', 'derivative(', 'fn-btn', ['D'])}
+          {renderBtn('lim', 'limit(', 'fn-btn', ['L'])}
           {renderBtn('−', ' - ', 'op-btn', ['-'])}
 
           {/* Row 5 */}
