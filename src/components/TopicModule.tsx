@@ -30,6 +30,27 @@ const difficultyConfig = {
   University:    { color: '#8b5cf6', bg: 'rgba(139,92,246,0.1)',  label: 'University'    },
 };
 
+import { GlobalSearch } from './GlobalSearch';
+
+const MathText: React.FC<{ text: string }> = ({ text }) => {
+  if (!text.includes('$')) return <>{text}</>;
+  const parts = text.split('$');
+  return (
+    <>
+      {parts.map((part, i) => {
+        if (i % 2 === 1) {
+          try {
+            return <span key={i} dangerouslySetInnerHTML={{ __html: katex.renderToString(part, { throwOnError: false }) }} />;
+          } catch {
+            return <span key={i}>${part}$</span>;
+          }
+        }
+        return <React.Fragment key={i}>{part}</React.Fragment>;
+      })}
+    </>
+  );
+};
+
 type TabType = 'read' | 'summary' | 'flashcards' | 'quiz' | 'mindmap' | 'explain' | 'derivations' | 'exam';
 
 const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = false, onExternalFocusExit }) => {
@@ -559,7 +580,7 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
                 <div className="tm-deriv-list" style={{display: 'flex', flexDirection: 'column', gap: '20px'}}>
                   {nlpData.derivations.map((d, i) => (
                     <div key={i} className="tm-deriv-card" style={{padding: '24px', background: 'var(--color-bg-elevated)', borderRadius: '12px', border: '1px solid var(--color-border)'}}>
-                      <h3 className="tm-deriv-title" style={{marginTop: 0, marginBottom: '16px', color: 'var(--color-accent)'}}>{d.title}</h3>
+                      <h3 className="tm-deriv-title" style={{marginTop: 0, marginBottom: '16px', color: 'var(--color-accent)'}}><MathText text={d.title} /></h3>
                       <div className="tm-deriv-content tm-prose">
                         <ReactMarkdown remarkPlugins={[remarkMath, remarkGfm]} rehypePlugins={[rehypeKatex]}>
                           {d.content}
@@ -622,7 +643,7 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
                         if (contentRef.current) contentRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
                       }}
                     >
-                      {s.heading}
+                      <MathText text={s.heading} />
                     </button>
                   );
                 })}
