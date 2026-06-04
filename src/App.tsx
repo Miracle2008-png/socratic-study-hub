@@ -24,6 +24,7 @@ const SatDashboard = lazy(() => import('./components/SatDashboard').then(m => ({
 const SatMockExam = lazy(() => import('./components/SatMockExam').then(m => ({ default: m.SatMockExam })));
 const Grapher2D = lazy(() => import('./components/Grapher2D'));
 const CalculusSolver = lazy(() => import('./components/CalculusSolver').then(m => ({ default: m.CalculusSolver })));
+const EngineeringHub = lazy(() => import('./components/EngineeringHub').then(m => ({ default: m.EngineeringHub })));
 import { GamificationProvider, useGamification } from './context/GamificationContext';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { LoginScreen } from './components/LoginScreen';
@@ -270,7 +271,7 @@ const AppContent: React.FC = () => {
     }
     if (activeTab === 'engineering') {
       if (activeTopic) return <TopicModule topicId={activeTopic} externalFocusMode={isTopicFocusMode} onExternalFocusExit={() => setIsTopicFocusMode(false)} />;
-      return <SubjectHub subject="engineering" onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'engineering'); }} />;
+      return <EngineeringHub onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'engineering'); }} />;
     }
     if (activeTab === 'biology') {
       if (activeTopic) return <TopicModule topicId={activeTopic} externalFocusMode={isTopicFocusMode} onExternalFocusExit={() => setIsTopicFocusMode(false)} />;

@@ -315,8 +315,7 @@ const Grapher2D: React.FC = () => {
 
   const addFunction = (expr?: string) => {
     const e = expr ?? newExpr.trim();
-    if (!e) return;
-    const error = validateExpr(e);
+    const error = e ? validateExpr(e) : null;
     const id = Date.now().toString();
     const color = PALETTE[functions.length % PALETTE.length];
     setFunctions(fs => [...fs, { id, expr: e, color, visible: true, error }]);

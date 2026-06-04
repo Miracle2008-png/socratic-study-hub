@@ -1,3 +1,0 @@
-# Social software engineering
-
-Social software engineering (SSE) is a branch of software engineering that is concerned with the social aspects of software development and the developed software.

@@ -19,11 +19,11 @@ interface SidebarProps {
 }
 
 const subjects = [
-  { id: 'math', label: 'Mathematics', icon: Calculator, color: 'var(--color-math)' },
+  { id: 'math', label: 'Mathematics', icon: FunctionSquare, color: 'var(--color-math)' },
   { id: 'physics', label: 'Physics', icon: Atom, color: 'var(--color-physics)' },
   { id: 'chemistry', label: 'Chemistry', icon: FlaskConical, color: 'var(--color-chemistry)' },
   { id: 'biology', label: 'Biology', icon: Dna, color: '#22c55e' },
-  { id: 'engineering', label: 'Engineering', icon: Box, color: '#f59e0b' },
+  { id: 'engineering', label: 'Engineering Hub', icon: Box, color: '#f59e0b' },
   { id: 'ai_hub', label: 'AI Study Hub', icon: Sparkles, color: 'var(--color-accent)' },
 ];
 

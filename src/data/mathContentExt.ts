@@ -1,43 +1,8 @@
 export const mathContentExt: Record<string, string> = {
 
-  'Taylor Series Derivation': `
-# Taylor Series: Polynomial Approximation
+  // Taylor Series Derivation is available as a standalone topic under content/taylor_series_derivation/
 
-A Taylor series is an infinite sum of terms that are expressed in terms of the function's derivatives at a single point.
-
-## Step 1: The Goal
-We want to approximate a smooth function $f(x)$ near a point $x = a$ using a polynomial:
-$$ P(x) = c_0 + c_1(x-a) + c_2(x-a)^2 + c_3(x-a)^3 + \\dots $$
-
-## Step 2: Matching the Value
-For the polynomial to match the function exactly at $x = a$:
-$$ P(a) = f(a) $$
-$$ c_0 = f(a) $$
-
-## Step 3: Matching the First Derivative
-Take the derivative of $P(x)$:
-$$ P'(x) = c_1 + 2c_2(x-a) + 3c_3(x-a)^2 + \\dots $$
-To match the slope at $x = a$:
-$$ P'(a) = f'(a) \\implies c_1 = f'(a) $$
-
-## Step 4: Matching the Second Derivative
-Take the second derivative:
-$$ P''(x) = 2c_2 + 3 \\cdot 2 c_3(x-a) + \\dots $$
-Evaluate at $x = a$:
-$$ P''(a) = f''(a) \\implies 2c_2 = f''(a) \\implies c_2 = \\frac{f''(a)}{2} $$
-
-## Step 5: The General Term
-Continuing for the $n$-th derivative:
-$$ P^{(n)}(a) = n! c_n \\implies c_n = \\frac{f^{(n)}(a)}{n!} $$
-
-## Step 6: The Infinite Series
-$$ f(x) = \\sum_{n=0}^{\\infty} \\frac{f^{(n)}(a)}{n!} (x-a)^n $$
-Q.E.D.
-`,
-
-  // Foundation (Grade 9-10)
-
-  'Numbers & Indices': `
+    'Numbers & Indices': `
 # Numbers & Indices: From Counting to Transcendental & p-adic Fields
 
 ## 1. Fundamentals of Numbers
@@ -694,114 +659,9 @@ Q.E.D. We have rigorously proven the power rule for $n=2$.
 `,
 
 
-  'Multivariable Calculus & Vector Fields': `
-# Multivariable Calculus & Vector Fields: The 3D World
+  // Multivariable Calculus content is consolidated under Vector Calculus
 
-## 1. Functions of Several Variables
-In single-variable calculus, we study $y = f(x)$, representing a 2D curve. 
-In multivariable calculus, we study functions like $z = f(x, y)$, which represent a 3D surface (like a mountain terrain), or $w = f(x, y, z)$, which assigns a value to every point in a 3D room (like temperature in a room).
-
-## 2. Partial Derivatives
-How do we find the slope of a 3D surface" The slope depends on which direction you are walking! We solve this using **Partial Derivatives**.
-To find the partial derivative with respect to $x$ (denoted $\\frac{\\partial f}{\\partial x}$ or $f_x$), we treat all other variables (like $y$) as constants and differentiate normally.
-
-**Example Problem:** Find the partial derivatives of $f(x, y) = x^3y^2 + 5y$
-* $\\frac{\\partial f}{\\partial x}$: Treat $y^2$ and $5y$ as constants. The derivative of $x^3$ is $3x^2$. Thus, $\\frac{\\partial f}{\\partial x} = 3x^2y^2$.
-* $\\frac{\\partial f}{\\partial y}$: Treat $x^3$ as a constant. The derivative of $y^2$ is $2y$, and $5y$ is $5$. Thus, $\\frac{\\partial f}{\\partial y} = 2x^3y + 5$.
-
-$\\frac{\\partial f}{\\partial x}$ gives the slope if you walk purely East-West. $\\frac{\\partial f}{\\partial y}$ gives the slope if you walk North-South.
-
-## 3. The Gradient Vector
-If we combine all the partial derivatives of a function into a vector, we get the **Gradient**, denoted by $\\nabla f$ (del $f$).
-$$ \\nabla f = \\left\\langle \\frac{\\partial f}{\\partial x}, \\frac{\\partial f}{\\partial y}, \\frac{\\partial f}{\\partial z} \\right\\rangle $$
-
-**Magical Properties of the Gradient:**
-1. It always points in the direction of **steepest ascent** (maximum increase) on the surface.
-2. Its magnitude $|\\nabla f|$ gives the exact rate of that steepest ascent.
-3. It is always **orthogonal** (perpendicular) to the level curves/surfaces.
-
-## 4. Directional Derivatives
-What if you want to find the slope walking in an arbitrary direction $\\vec{u}$"
-We use the **Directional Derivative**, $D_{\\vec{u}}f$. It is calculated by taking the dot product of the gradient and a unit vector $\\vec{u}$ pointing in your chosen direction:
-$$ D_{\\vec{u}}f = \\nabla f \\cdot \\vec{u} $$
-
-**Example Problem:** Find the directional derivative of $f(x,y) = x^2y$ at the point $(1,2)$ in the direction of the vector $\\vec{v} = \\langle 3, 4 \\rangle$.
-1. Find gradient: $\\nabla f = \\langle 2xy, x^2 \\rangle$.
-2. Evaluate gradient at $(1,2)$: $\\nabla f(1,2) = \\langle 4, 1 \\rangle$.
-3. Normalize $\\vec{v}$ to a unit vector: The magnitude is $\\sqrt{3^2 + 4^2} = 5$. So $\\vec{u} = \\langle \\frac{3}{5}, \\frac{4}{5} \\rangle$.
-4. Dot product: $\\langle 4, 1 \\rangle \\cdot \\langle \\frac{3}{5}, \\frac{4}{5} \\rangle = \\frac{12}{5} + \\frac{4}{5} = \\frac{16}{5}$. 
-The slope in that direction is exactly $3.2$.
-
-## 5. Multiple Integrals
-Just as a single integral finds the 2D area under a curve, a **Double Integral** $\\iint f(x,y)\\,dA$ finds the 3D volume under a surface.
-To compute it, we iterate the integrals:
-$$ \\int_{x=a}^{b} \\int_{y=c}^{d} f(x,y) \\,dy \\,dx $$
-Fubini's Theorem states that you can swap the order of integration ($dx\\,dy$ instead of $dy\\,dx$) and you will get the exact same volume!
-
-## 6. Vector Fields
-A vector field assigns a vector to every point in space. Think of it as a map of ocean currents, or the magnetic field around a magnet. We define a vector field as $\\vec{F}(x,y) = \\langle P(x,y), Q(x,y) \\rangle$.
-
-## 7. Line Integrals
-A line integral measures the accumulation of a field along a specific curvy path $C$. 
-$$ \\int_C \\vec{F} \\cdot d\\vec{r} $$
-In physics, if $\\vec{F}$ is a force field (like gravity or a storm), this integral calculates the total **Work** done pushing an object along that path.
-
-## 8. Conservative Fields and Potential Functions
-If a vector field is the gradient of some scalar function ($\\vec{F} = \\nabla f$), it is called **Conservative**. 
-Gravity is a conservative field. The incredible property of conservative fields is the **Fundamental Theorem of Line Integrals**:
-The work done moving from point $A$ to point $B$ depends *only* on the start and end points, NOT the path taken!
-$$ \\int_C \\nabla f \\cdot d\\vec{r} = f(B) - f(A) $$
-
-## 9. Divergence and Curl
-Two operations measure the "flow" of a vector field:
-* **Divergence** ($\\nabla \\cdot \\vec{F}$): A scalar measuring how much the field is expanding or compressing at a point. If divergence is positive, it's a "source". If negative, it's a "sink".
-* **Curl** ($\\nabla \\times \\vec{F}$): A vector measuring how much the field is rotating or swirling around a point. A tornado has massive curl.
-
-## 10. Insane Level: Stokes' Theorem and Divergence Theorem
-The capstones of multivariable calculus link macroscopic areas to microscopic boundary loops:
-1. **Stokes' Theorem**: The macroscopic swirl of a surface equals the circulation around its edge boundary! $\\iint_S (\\nabla \\times \\vec{F}) \\cdot d\\vec{S} = \\oint_C \\vec{F} \\cdot d\\vec{r}$
-2. **Divergence Theorem**: The total flow expanding *out* of a 3D volume is exactly equal to the flux bursting through its 2D surface skin! $\\iiint_V (\\nabla \\cdot \\vec{F}) \\,dV = \\iint_S \\vec{F} \\cdot d\\vec{S}$
-These theorems are the foundations of Maxwell's Equations, literally dictating how electricity, magnetism, and light work in our universe!
-
-## Derivation of the Directional Derivative
-
-We previously stated that the directional derivative $D_{\\vec{u}}f$ is simply the dot product $\\nabla f \\cdot \\vec{u}$. But why is this true" Here is the rigorous derivation.
-
-**Step 1: The Definition of the Directional Derivative**
-Just like a standard 1D derivative, we define it using a limit. We want to find the rate of change of $f(x,y)$ as we move from a point $(x_0, y_0)$ along a straight path defined by a unit vector $\\vec{u} = \\langle u_1, u_2 \\rangle$.
-We parameterize this path using a scalar $h$ (representing the distance walked):
-$x(h) = x_0 + hu_1$
-$y(h) = y_0 + hu_2$
-
-The directional derivative is the limit as our step size $h$ approaches 0:
-$$ D_{\\vec{u}}f(x_0, y_0) = \\lim_{h \\to 0} \\frac{f(x_0 + hu_1, y_0 + hu_2) - f(x_0, y_0)}{h} $$
-
-**Step 2: Apply the Multivariable Chain Rule**
-Let's define a new 1D function $g(h) = f(x(h), y(h))$. 
-The directional derivative is simply the standard derivative of $g$ evaluated at $h=0$:
-$$ D_{\\vec{u}}f = g'(0) $$
-
-By the multivariable chain rule:
-$$ g'(h) = \\frac{\\partial f}{\\partial x}\\frac{dx}{dh} + \\frac{\\partial f}{\\partial y}\\frac{dy}{dh} $$
-
-**Step 3: Evaluate the Derivatives**
-Since $x(h) = x_0 + hu_1$, the derivative $\\frac{dx}{dh}$ is simply the constant $u_1$.
-Since $y(h) = y_0 + hu_2$, the derivative $\\frac{dy}{dh}$ is simply the constant $u_2$.
-
-Substitute these into the chain rule:
-$$ g'(h) = \\frac{\\partial f}{\\partial x}u_1 + \\frac{\\partial f}{\\partial y}u_2 $$
-
-**Step 4: Convert to Dot Product Notation**
-Notice that the expression $\\frac{\\partial f}{\\partial x}u_1 + \\frac{\\partial f}{\\partial y}u_2$ is exactly the algebraic definition of a dot product between two vectors!
-Let Vector 1 be the Gradient: $\\nabla f = \\langle \\frac{\\partial f}{\\partial x}, \\frac{\\partial f}{\\partial y} \\rangle$.
-Let Vector 2 be our direction vector: $\\vec{u} = \\langle u_1, u_2 \\rangle$.
-
-Therefore:
-$$ D_{\\vec{u}}f = \\langle \\frac{\\partial f}{\\partial x}, \\frac{\\partial f}{\\partial y} \\rangle \\cdot \\langle u_1, u_2 \\rangle = \\nabla f \\cdot \\vec{u} $$
-Q.E.D. The directional derivative is perfectly captured by the dot product!
-`,
-
-  'Differential Equations': `
+    'Differential Equations': `
 # Differential Equations: The Language of the Universe
 
 ## 1. The Anatomy of Change
@@ -1332,7 +1192,7 @@ Q.E.D. This is a brilliant, generalized version of the Pythagorean theorem that 
 
 `,
 
-  'Vector Calculus': `
+  'Multivariable & Vector Calculus': `
 # Vector Calculus: Grad, Div, Curl & The Fundamental Theorems
 
 ## 1. Scalar vs. Vector Fields

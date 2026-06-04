@@ -33,7 +33,6 @@ const quickTopics = [
   { label: 'Linear Algebra', topicId: 'linear_algebra__matrices__vectors_', subject: 'math', tabId: 'math', color: '#8b5cf6', icon: Brain },
   { label: 'Quantum Mechanics', topicId: 'quantum_mechanics', subject: 'physics', tabId: 'physics', color: '#0ea5e9', icon: Atom },
   { label: 'Organic Chemistry', topicId: 'organic_chemistry', subject: 'chemistry', tabId: 'chemistry', color: '#10b981', icon: FlaskConical },
-  { label: 'Electric Circuit Theory I', topicId: 'electric-circuit-theory-1', subject: 'engineering', tabId: 'engineering', color: '#f59e0b', icon: Zap },
 ];
 
 

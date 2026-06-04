@@ -305,19 +305,6 @@ const engineeringMetadata: Record<string, TopicContent> = {
       { name: "Hooke's Law", latex: "\\sigma = E \\epsilon", description: 'Linear elastic deformation' }
     ]
   },
-  'electrical-engineering': {
-    id: 'electrical-engineering', title: 'Electrical Engineering', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500,
-    sections: [
-      { heading: 'Introduction', level: 1, content: 'Electrical engineering covers circuit analysis, Ohm\'s law, Kirchhoff\'s laws, AC/DC circuits, semiconductors, transistors, operational amplifiers, digital logic, and electromagnetic field theory.' },
-      { heading: '1. Circuit Fundamentals', level: 2, content: `Ohm's Law states $V = IR$. Kirchhoff's Voltage Law (KVL) and Current Law (KCL) form the basis of all circuit analysis.` },
-      { heading: '2. AC Power', level: 2, content: `In AC circuits, power is complex: $S = P + jQ$. Real power $P = VI \\cos(\\theta)$ does useful work, while reactive power $Q = VI \\sin(\\theta)$ oscillates.` },
-      { heading: 'Worked Example', level: 2, content: `**Problem:** An AC motor draws $10\\text{ kVA}$ at a power factor of $0.8$ lagging. Find the real power $P$ and reactive power $Q$.\n\n**Solution:**\n$$P = S \\cos(\\theta) = 10 \\times 0.8 = 8\\text{ kW}$$\nSince $\\cos(\\theta) = 0.8$, $\\sin(\\theta) = 0.6$.\n$$Q = S \\sin(\\theta) = 10 \\times 0.6 = 6\\text{ kVAR}$$\nThe motor consumes $8\\text{ kW}$ of real power and $6\\text{ kVAR}$ of reactive power.` }
-    ],
-    keyFormulas: [
-      { name: "Ohm's Law", latex: "V = IR", description: 'Voltage, Current, Resistance relationship' },
-      { name: 'Complex Power', latex: "S = V I^* = P + jQ", description: 'Apparent, real, and reactive power' }
-    ]
-  },
   'civil-structural': {
     id: 'civil-structural', title: 'Civil & Structural Engineering', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500,
     sections: [
@@ -386,114 +373,6 @@ const engineeringMetadata: Record<string, TopicContent> = {
     keyFormulas: [
       { name: "De Morgan's Laws", latex: "\\overline{A \\cdot B} = \\overline{A} + \\overline{B}", description: 'Boolean algebra fundamental law' }
     ]
-  },
-  'analogue-electronics': {
-    id: 'analogue-electronics', title: 'Analogue Electronics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 700,
-    sections: [
-      { heading: 'Introduction', level: 1, content: 'Analogue circuit design covering semiconductor physics, diodes, BJT and MOSFET transistors, amplifier configurations, operational amplifiers (ideal and non-ideal), feedback theory, and oscillator circuits.' },
-      { heading: '1. Transistor Amplifiers', level: 2, content: `BJTs and MOSFETs are used to create amplifiers. Common configurations include Common Emitter (high gain), Common Collector (buffer), and Common Base.` },
-      { heading: '2. Operational Amplifiers', level: 2, content: `Ideal op-amps assume infinite input impedance, zero output impedance, and infinite open-loop gain. They are used in feedback circuits to build inverting, non-inverting, integrating, and differentiating amplifiers.` },
-      { heading: 'Worked Example', level: 2, content: `**Problem:** An inverting op-amp has an input resistor $R_{in} = 10\\text{ k}\\Omega$ and a feedback resistor $R_f = 50\\text{ k}\\Omega$. If $V_{in} = 2\\text{ V}$, what is the output voltage $V_{out}$?\n\n**Solution:**\nThe gain of an inverting amplifier is $A_v = -\\frac{R_f}{R_{in}}$.\n$$A_v = -\\frac{50}{10} = -5$$\n$$V_{out} = A_v \\times V_{in} = -5 \\times 2 = -10\\text{ V}$$` }
-    ],
-    keyFormulas: [
-      { name: 'Inverting Op-Amp Gain', latex: "A_v = -\\frac{R_f}{R_{in}}", description: 'Voltage gain for inverting amplifier' }
-    ]
-  },
-  'signals-and-systems': {
-    id: 'signals-and-systems', title: 'Signals & Systems', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 650,
-    sections: [
-      { heading: 'Introduction', level: 1, content: 'Mathematical analysis of signals and LTI systems. Covers convolution, Fourier series, Fourier transform, Laplace transform, Z-transform, sampling theorem, filter design, and state-space representations.' },
-      { heading: '1. Convolution', level: 2, content: `The output $y(t)$ of an LTI system is the convolution of its input $x(t)$ and impulse response $h(t)$:\n\n$$y(t) = \\int_{-\\infty}^{\\infty} x(\\tau)h(t-\\tau)d\\tau$$` },
-      { heading: '2. Sampling Theorem', level: 2, content: `Nyquist-Shannon sampling theorem states that a continuous-time signal must be sampled at greater than twice its highest frequency component to be perfectly reconstructed.` },
-      { heading: 'Worked Example', level: 2, content: `**Problem:** An audio signal contains frequencies up to $20\\text{ kHz}$. What is the minimum sampling rate required to avoid aliasing?\n\n**Solution:**\nAccording to the Nyquist theorem, the sampling frequency $f_s$ must be greater than $2 \\times f_{max}$.\n$$f_s > 2 \\times 20\\text{ kHz} = 40\\text{ kHz}$$\n(This is why standard CDs use $44.1\\text{ kHz}$).` }
-    ],
-    keyFormulas: [
-      { name: 'Convolution Integral', latex: "y(t) = x(t) * h(t)", description: 'Time-domain LTI system output' }
-    ]
-  },
-  'control-systems': {
-    id: 'control-systems', title: 'Control Systems', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 650,
-    sections: [
-      { heading: 'Introduction', level: 1, content: 'Feedback control theory covering block diagram algebra, steady-state error analysis, root locus design, Bode plots, Nyquist stability criterion, PID tuning, and modern state-space control with pole placement and LQR.' },
-      { heading: '1. Root Locus', level: 2, content: `Root locus plots the trajectories of closed-loop poles in the s-plane as a system parameter (usually gain $K$) varies from zero to infinity. It visually determines stability margins.` },
-      { heading: '2. Frequency Response', level: 2, content: `Bode plots show system magnitude and phase response vs frequency. Gain margin and phase margin dictate the robust stability of the feedback loop.` },
-      { heading: 'Worked Example', level: 2, content: `**Problem:** The closed-loop transfer function of a system is $T(s) = \\frac{10}{s^2 + 2s + 10}$. Find the undamped natural frequency $\\omega_n$.\n\n**Solution:**\nThe characteristic equation is in the form $s^2 + 2\\zeta\\omega_n s + \\omega_n^2$.\nMatching terms:\n$$\\omega_n^2 = 10 \\implies \\omega_n = \\sqrt{10} \\approx 3.16\\text{ rad/s}$$` }
-    ]
-  },
-  'electromagnetic-fields': {
-    id: 'electromagnetic-fields', title: 'Electromagnetic Fields', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 650,
-    sections: [
-      { heading: 'Introduction', level: 1, content: 'Classical electromagnetism from Coulomb\'s law through Maxwell\'s equations. Covers electrostatics, magnetostatics, Faraday\'s law, EM wave propagation, boundary conditions, and transmission line theory.' },
-      { heading: '1. Maxwell\'s Equations', level: 2, content: `The four pillars of electromagnetism are:\n1. Gauss's Law for Electricity\n2. Gauss's Law for Magnetism\n3. Faraday's Law of Induction\n4. Ampere's Law (with Maxwell's addition)` },
-      { heading: '2. Transmission Lines', level: 2, content: `High-frequency signals require transmission line theory. Impedance matching prevents signal reflection. The reflection coefficient is:\n\n$$\\Gamma = \\frac{Z_L - Z_0}{Z_L + Z_0}$$` },
-      { heading: 'Worked Example', level: 2, content: `**Problem:** A transmission line with characteristic impedance $Z_0 = 50\\text{ }\\Omega$ is connected to a load $Z_L = 150\\text{ }\\Omega$. What is the reflection coefficient $\\Gamma$?\n\n**Solution:**\n$$\\Gamma = \\frac{Z_L - Z_0}{Z_L + Z_0} = \\frac{150 - 50}{150 + 50} = \\frac{100}{200} = 0.5$$\nHalf of the voltage wave is reflected back to the source.` }
-    ],
-    keyFormulas: [
-      { name: 'Reflection Coefficient', latex: "\\Gamma = \\frac{Z_L - Z_0}{Z_L + Z_0}", description: 'Transmission line mismatch' }
-    ]
-  },
-  'aerodynamics': {
-    id: 'aerodynamics', title: 'Aerodynamics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 700,
-    sections: [
-      { heading: 'Introduction', level: 1, content: 'Aerodynamics studies the motion of air and its interaction with solid objects, primarily applied to aircraft and vehicle design. Core concepts include lift, drag, compressible flow, and boundary layer theory.' },
-      { heading: '1. Lift and Drag', level: 2, content: `The lift $L$ and drag $D$ forces on a body are given by:\n\n$$L = \\frac{1}{2}\\rho v^2 S C_L$$\n$$D = \\frac{1}{2}\\rho v^2 S C_D$$\n\nWhere $\\rho$ is air density, $v$ is velocity, $S$ is wing area, and $C_L, C_D$ are lift and drag coefficients.` },
-      { heading: '2. Compressible Flow', level: 2, content: `At high speeds, air becomes compressible. The Mach number $M$ is the ratio of flow velocity to the speed of sound:\n\n$$M = \\frac{v}{a}$$\n\nShock waves form when $M > 1$.` },
-      { heading: 'Worked Example', level: 2, content: `**Problem:** An aircraft flies at $250\\text{ m/s}$ at an altitude where the speed of sound is $300\\text{ m/s}$. Find the Mach number.\n\n**Solution:**\n$$M = \\frac{v}{a} = \\frac{250}{300} \\approx 0.83$$\nSince $M < 1$, the flow is subsonic and no shock waves will form.` }
-    ],
-    keyFormulas: [
-      { name: 'Lift Equation', latex: "L = \\frac{1}{2}\\rho v^2 S C_L", description: 'Lift force generation' },
-      { name: 'Mach Number', latex: "M = \\frac{v}{a}", description: 'Compressibility indicator' }
-    ]
-  },
-  'statics-and-dynamics': {
-    id: 'statics-and-dynamics', title: 'Engineering Statics & Dynamics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 650,
-    sections: [
-      { heading: 'Introduction', level: 1, content: 'The foundation of mechanical engineering. Statics deals with bodies in equilibrium, while dynamics covers kinematics (motion without considering forces) and kinetics (forces causing motion).' },
-      { heading: '1. Rigid Body Equilibrium', level: 2, content: `For a 3D rigid body to be in static equilibrium, the sum of all forces and moments must be zero:\n\n$$\\sum \\mathbf{F} = 0, \\quad \\sum \\mathbf{M} = 0$$` },
-      { heading: '2. Newton\'s Second Law', level: 2, content: `In dynamics, the equations of motion for a rigid body are:\n\n$$\\sum \\mathbf{F} = m\\mathbf{a}_{cm}$$\n$$\\sum \\mathbf{M}_{cm} = I_{cm}\\boldsymbol{\\alpha}$$\n\nWhere $I_{cm}$ is the mass moment of inertia and $\\boldsymbol{\\alpha}$ is angular acceleration.` },
-      { heading: 'Worked Example', level: 2, content: `**Problem:** A $10\\text{ kg}$ block is pushed with a $50\\text{ N}$ force on a frictionless surface. What is its acceleration?\n\n**Solution:**\nUsing Newton's Second Law in the x-direction:\n$$\\sum F_x = ma_x$$\n$$50 = 10 \\cdot a_x$$\n$$a_x = 5\\text{ m/s}^2$$` }
-    ],
-    keyFormulas: [
-      { name: 'Equilibrium', latex: "\\sum \\mathbf{F} = 0", description: 'Translational equilibrium' },
-      { name: 'Rotational Dynamics', latex: "\\sum \\mathbf{M} = I\\boldsymbol{\\alpha}", description: 'Newton\'s Second Law for rotation' }
-    ]
-  },
-  'data-structures-algorithms': {
-    id: 'data-structures-algorithms', title: 'Data Structures & Algorithms', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 600,
-    sections: [
-      { heading: 'Introduction', level: 1, content: 'The backbone of software engineering and computer science. Focuses on efficiently storing data and optimizing algorithms to process that data using Big-O notation.' },
-      { heading: '1. Time Complexity', level: 2, content: `Big-O notation describes the worst-case time complexity of an algorithm. For example, binary search operates in $O(\\log n)$ time, while simple sorting like bubble sort takes $O(n^2)$.` },
-      { heading: '2. Core Data Structures', level: 2, content: `Key structures include:\n- **Arrays/Lists:** Contiguous memory, $O(1)$ random access.\n- **Hash Tables:** Key-value pairs, $O(1)$ average search/insert.\n- **Trees/Graphs:** Hierarchical or networked nodes.` },
-      { heading: 'Worked Example', level: 2, content: `**Problem:** What is the time complexity of finding an element in a balanced binary search tree (BST) with $n$ nodes?\n\n**Solution:**\nIn a balanced BST, each comparison halves the remaining search space. Therefore, the maximum number of comparisons is proportional to the height of the tree.\n$$h = \\log_2(n)$$\nThus, the worst-case time complexity is $O(\\log n)$.` }
-    ],
-    keyFormulas: [
-      { name: 'Logarithmic Time', latex: "O(\\log n)", description: 'Highly efficient search complexity' }
-    ]
-  },
-  'engineering-economics': {
-    id: 'engineering-economics', title: 'Engineering Economics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 450,
-    sections: [
-      { heading: 'Introduction', level: 1, content: 'Applies economic principles to engineering decisions. Covers time value of money, cost-benefit analysis, depreciation, and project evaluation methods like NPV and ROI.' },
-      { heading: '1. Time Value of Money', level: 2, content: `Money today is worth more than money tomorrow due to interest. The future value $F$ of a present sum $P$ at interest rate $i$ for $n$ periods is:\n\n$$F = P(1+i)^n$$` },
-      { heading: '2. Net Present Value (NPV)', level: 2, content: `NPV evaluates the profitability of a project by discounting all future cash flows back to the present. A positive NPV implies a profitable investment.` },
-      { heading: 'Worked Example', level: 2, content: `**Problem:** You invest $\\$1,000$ today at an annual interest rate of $5\\%$. What is its future value in $3$ years?\n\n**Solution:**\nUse the compound interest formula:\n$$F = P(1+i)^n$$\n$$F = 1000(1 + 0.05)^3$$\n$$F = 1000(1.157625) = \\$1157.63$$` }
-    ],
-    keyFormulas: [
-      { name: 'Compound Interest', latex: "F = P(1+i)^n", description: 'Future value calculation' },
-      { name: 'NPV', latex: "\\text{NPV} = \\sum_{t=0}^N \\frac{C_t}{(1+i)^t}", description: 'Net Present Value' }
-    ]
-  },
-  'biomechanics': {
-    id: 'biomechanics', title: 'Biomechanics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 550,
-    sections: [
-      { heading: 'Introduction', level: 1, content: 'Applies principles of mechanics to biological systems. Covers bone mechanics, joint kinematics, cardiovascular fluid dynamics, and tissue engineering.' },
-      { heading: '1. Solid Biomechanics', level: 2, content: `Bones are anisotropic composite materials. Their stress-strain response is non-linear and viscoelastic. Wolff\'s Law states that bone adapts to the loads under which it is placed.` },
-      { heading: '2. Biofluid Mechanics', level: 2, content: `Blood flow in arteries is pulsatile and non-Newtonian in capillaries. Poiseuille\'s law approximates flow in rigid tubes:\n\n$$Q = \\frac{\\pi r^4 \\Delta P}{8\\mu L}$$` },
-      { heading: 'Worked Example', level: 2, content: `**Problem:** If the radius of an artery decreases by $50\\%$ due to plaque, by what factor does the flow rate $Q$ decrease, assuming constant pressure drop?\n\n**Solution:**\nFrom Poiseuille's law, $Q \\propto r^4$. Let the new radius be $r_{new} = 0.5r$.\n$$Q_{new} \\propto (0.5r)^4 = 0.0625 r^4$$\nThe flow rate decreases to $6.25\\%$ of its original value. This illustrates why minor arterial blockages severely impact blood flow.` }
-    ],
-    keyFormulas: [
-      { name: 'Poiseuille Equation', latex: "Q = \\frac{\\pi r^4 \\Delta P}{8\\mu L}", description: 'Laminar flow in a pipe' }
-    ]
   }
 };
 
@@ -503,7 +382,6 @@ export const ALL_TOPICS: Record<string, TopicContent> = {
   ...compiledPhysics,
   ...compiledChemistry,
   ...compiledBiology,
-  ...engineeringMetadata
 };
 
 // Dynamic module loader for the massive 35-page engineering topics
@@ -568,8 +446,8 @@ export async function fetchTopicContent(topicId: string): Promise<TopicContent> 
   }
 
   const title = baseTopic ? baseTopic.title : normalizedId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-  const subject = baseTopic ? baseTopic.subject : 'engineering';
-  const difficulty = baseTopic ? baseTopic.difficulty : 'University';
+  const subject = baseTopic ? baseTopic.subject : 'math';
+  const difficulty = baseTopic ? baseTopic.difficulty : 'Advanced';
   const keyFormulas = baseTopic ? baseTopic.keyFormulas : undefined;
 
   return {

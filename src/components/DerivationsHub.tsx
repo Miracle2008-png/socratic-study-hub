@@ -144,7 +144,7 @@ export const DerivationsHub: React.FC = () => {
                   {deriv.topicTitle}
                 </span>
               </div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: 12, color: 'var(--color-text)', lineHeight: 1.4 }}>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: 12, color: 'var(--color-text-primary)', lineHeight: 1.4 }}>
                 <MathTitle text={deriv.title} />
               </h3>
             </div>
@@ -155,7 +155,7 @@ export const DerivationsHub: React.FC = () => {
                 display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
                 background: 'var(--color-surface)',
                 border: '1px solid var(--color-border)',
-                color: 'var(--color-text)',
+                color: 'var(--color-text-primary)',
                 padding: '12px',
                 borderRadius: '8px',
                 cursor: 'pointer',
@@ -224,7 +224,7 @@ export const DerivationsHub: React.FC = () => {
                 }}>
                   {selectedDerivation.topicTitle}
                 </span>
-                <h2 style={{ fontSize: '1.8rem', color: 'var(--color-text)', marginTop: 4 }}>
+                <h2 style={{ fontSize: '1.8rem', color: 'var(--color-text-primary)', marginTop: 4 }}>
                   <MathTitle text={selectedDerivation.title} />
                 </h2>
               </div>
