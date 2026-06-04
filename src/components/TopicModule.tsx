@@ -364,17 +364,16 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
             <button className={`tm-tab ${activeTab === 'summary' ? 'active' : ''}`} onClick={() => handleTabSwitch('summary')}>
               <FileText size={16} /> AI Summary
             </button>
-            <button className={`tm-tab ${activeTab === 'flashcards' ? 'active' : ''}`} onClick={() => handleTabSwitch('flashcards')}>
-              <LayoutList size={16} /> Flashcards
-            </button>
+            {topic.subject !== 'engineering' && (
+              <button className={`tm-tab ${activeTab === 'flashcards' ? 'active' : ''}`} onClick={() => handleTabSwitch('flashcards')}>
+                <LayoutList size={16} /> Flashcards
+              </button>
+            )}
             <button className={`tm-tab ${activeTab === 'quiz' ? 'active' : ''}`} onClick={() => handleTabSwitch('quiz')}>
               <CheckCircle size={16} /> Practice Quiz
             </button>
             <button className={`tm-tab ${activeTab === 'exam' ? 'active' : ''}`} onClick={() => handleTabSwitch('exam')}>
               <HelpCircle size={16} /> Exam Questions
-            </button>
-            <button className={`tm-tab ${activeTab === 'explain' ? 'active' : ''}`} onClick={() => handleTabSwitch('explain')}>
-              <Lightbulb size={16} /> Explain like I'm 12
             </button>
             <button className={`tm-tab ${activeTab === 'mindmap' ? 'active' : ''}`} onClick={() => handleTabSwitch('mindmap')}>
               <Network size={16} /> Visual Mind Map
@@ -513,19 +512,7 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
             </div>
           )}
 
-          {activeTab === 'explain' && !isProcessing && nlpData && (
-            <div className="nlp-explain-view">
-              <h2 className="tm-h2"><Lightbulb size={20} style={{display:'inline', marginRight: 8, color: 'var(--color-accent)'}}/> Explain Like I'm 12</h2>
-              <p className="tm-p" style={{color: 'var(--color-text-secondary)', marginBottom: 24}}>
-                Complex textbook language, automatically simplified so a 12-year-old can understand it. No fluff, just the core concept.
-              </p>
-              <div className="explain-content" style={{
-                background: 'rgba(212, 175, 55, 0.05)', border: '1px solid rgba(212, 175, 55, 0.2)', padding: '24px', borderRadius: '8px', fontSize: '18px', lineHeight: '1.6'
-              }}>
-                <ReactMarkdown remarkPlugins={[remarkMath, remarkGfm]} rehypePlugins={[rehypeKatex]}>{nlpData.explanation}</ReactMarkdown>
-              </div>
-            </div>
-          )}
+
 
           {activeTab === 'flashcards' && !isProcessing && nlpData && (
             <div className="nlp-flashcards-view">

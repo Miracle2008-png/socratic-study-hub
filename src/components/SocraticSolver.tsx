@@ -427,7 +427,7 @@ const SocraticSolver: React.FC = () => {
             
             <div className="complexity-slider-container" style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', fontWeight: 600, color: 'var(--color-text-secondary)', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                <span>ELI5</span>
+                <span>Beginner</span>
                 <span>Genius</span>
               </div>
               <input 
@@ -438,7 +438,7 @@ const SocraticSolver: React.FC = () => {
                 className="complexity-slider"
               />
               <div style={{ textAlign: 'center', fontSize: '12px', color: 'var(--color-accent)', fontWeight: 600 }}>
-                {complexity === 1 && "Level: Explain Like I'm 5"}
+                {complexity === 1 && "Level: Beginner"}
                 {complexity === 2 && "Level: High School"}
                 {complexity === 3 && "Level: College (Default)"}
                 {complexity === 4 && "Level: Post-Graduate"}
