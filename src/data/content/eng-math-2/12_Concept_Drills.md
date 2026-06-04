@@ -1,6 +1,6 @@
-# Concept Drills
+# 12. Concept Drills
 
-Test your understanding. Select your answer to immediately reveal the worked correction.
+Test your understanding of Differentiation. Select your answer to immediately reveal the worked mathematical correction.
 
 ```drill
 Question: What is the derivative of $f(x) = x^3 \sin(x)$?
@@ -45,4 +45,25 @@ Solve for $\frac{dy}{dx}$:
 $$ \frac{dy}{dx} = -\frac{3x^2}{3y^2} = -\frac{x^2}{y^2} $$
 Evaluate at $(x, y) = (1, 2)$:
 $$ m = -\frac{(1)^2}{(2)^2} = -\frac{1}{4} $$
+```
+
+```drill
+Question: At what x-coordinate does the function $f(x) = 2x^3 - 3x^2 - 12x + 5$ have a local minimum?
+Options:
+A) $x = -1$
+B) $x = 1$
+C) $x = 2$
+D) $x = 0$
+Answer: C
+Explanation: First, find the critical points by setting the derivative to zero.
+$$ f'(x) = 6x^2 - 6x - 12 = 0 $$
+Divide by 6:
+$$ x^2 - x - 2 = 0 $$
+Factor:
+$$ (x - 2)(x + 1) = 0 $$
+Critical points are at $x = 2$ and $x = -1$.
+To determine which is a minimum, use the Second Derivative Test.
+$$ f''(x) = 12x - 6 $$
+At $x = -1$: $f''(-1) = -18$ (negative, so it's a local maximum).
+At $x = 2$: $f''(2) = 18$ (positive, concave up, so it's a local minimum).
 ```
