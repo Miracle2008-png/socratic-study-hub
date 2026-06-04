@@ -173,6 +173,7 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
   const [isTocOpen, setIsTocOpen] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
   const [isFocusMode, setIsFocusMode] = useState(false);
+  const [isBlurMode, setIsBlurMode] = useState(false);
   
   // NLP State
   const [isProcessing, setIsProcessing] = useState(false);
@@ -338,6 +339,14 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
 
   return (
     <div className={`topic-module anim-fade ${topic.subject === 'engineering' ? 'engineering-topic' : ''}`}>
+      
+      {/* Animated Background Orbs */}
+      <div className={`tm-bg-orbs ${isBlurMode ? 'blurred' : ''}`}>
+        <div className="tm-orb tm-orb-1" />
+        <div className="tm-orb tm-orb-2" />
+        <div className="tm-orb tm-orb-3" />
+      </div>
+
       {/* Hero Header */}
       <div className="tm-hero luxury-card">
         <div className="tm-hero-content">
@@ -386,6 +395,15 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
         
         <div className="tm-hero-actions">
           <button
+            className={`tm-bookmark-btn ${isBlurMode ? 'active' : ''}`}
+            style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}
+            onClick={() => setIsBlurMode(!isBlurMode)}
+            title="Toggle Background Blur"
+          >
+            <Eye size={18} />
+            Blur
+          </button>
+          <button
             className="tm-bookmark-btn"
             style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}
             onClick={() => setIsFocusMode(true)}
@@ -407,7 +425,7 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
       <div className="tm-body">
         
         {/* Main Area */}
-        <div className="tm-main-area luxury-card">
+        <div className={`tm-main-area luxury-card ${isBlurMode ? 'blur-mode-active' : ''}`}>
           {activeTab === 'read' && (
             <div className="tm-prose" ref={contentRef}>
               <ReactMarkdown
@@ -789,6 +807,61 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
         .tm-hero {
           padding: 32px 40px;
           background: linear-gradient(135deg, var(--color-base), var(--color-base-alt));
+          position: relative;
+          z-index: 10;
+        }
+
+        /* ─── Animated Background ────────────────────────────── */
+        .tm-bg-orbs {
+          position: fixed;
+          top: 0; left: 0; right: 0; bottom: 0;
+          z-index: 0;
+          overflow: hidden;
+          pointer-events: none;
+          transition: filter 0.5s ease;
+        }
+        .tm-bg-orbs.blurred {
+          filter: blur(40px);
+          opacity: 0.3;
+        }
+        .tm-orb {
+          position: absolute;
+          border-radius: 50%;
+          filter: blur(80px);
+          animation: orb-drift 20s infinite alternate ease-in-out;
+        }
+        .tm-orb-1 { width: 50vw; height: 50vw; background: rgba(212,175,55,0.06); top: -10%; left: -10%; animation-delay: 0s; }
+        .tm-orb-2 { width: 40vw; height: 40vw; background: rgba(99,102,241,0.05); bottom: -10%; right: -5%; animation-delay: -5s; }
+        .tm-orb-3 { width: 30vw; height: 30vw; background: rgba(16,185,129,0.04); top: 30%; left: 40%; animation-delay: -10s; }
+
+        @keyframes orb-drift {
+          0% { transform: translate(0, 0) scale(1); }
+          100% { transform: translate(10vw, 5vw) scale(1.1); }
+        }
+
+        /* ─── Main Body ──────────────────────────────────────── */
+        .tm-body {
+          display: grid;
+          grid-template-columns: 1fr 300px;
+          gap: 24px;
+          align-items: start;
+          position: relative;
+          z-index: 10;
+        }
+        
+        .tm-main-area {
+          padding: 48px;
+          min-height: 60vh;
+          transition: background 0.4s ease, backdrop-filter 0.4s ease;
+        }
+        .tm-main-area.blur-mode-active {
+          background: rgba(28, 25, 20, 0.75); /* Darker glass effect */
+          backdrop-filter: blur(24px);
+          -webkit-backdrop-filter: blur(24px);
+          border: 1px solid rgba(212,175,55,0.15);
+        }
+        [data-theme="light"] .tm-main-area.blur-mode-active {
+          background: rgba(255, 255, 255, 0.85);
         }
 
         .tm-meta-row {
