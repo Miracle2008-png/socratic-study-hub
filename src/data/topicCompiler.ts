@@ -92,6 +92,128 @@ const compiledBiology = Object.entries(biologyContentExt).reduce((acc, [title, m
 }, {} as Record<string, TopicContent>);
 
 const engineeringMetadata: Record<string, TopicContent> = {
+  'engineering-mathematics-1': {
+    id: 'engineering-mathematics-1',
+    title: 'Engineering Mathematics 1',
+    subject: 'engineering',
+    difficulty: 'University' as any,
+    estimatedReadTime: 60,
+    sections: [
+      {
+        heading: 'Engineering Mathematics 1: Foundations',
+        level: 1,
+        content: `Engineering Mathematics 1 provides the core mathematical toolkit for all engineering disciplines. It bridges pre-university algebra and calculus with the rigorous methods used in engineering analysis.\n\n**Topics covered:** Functions and graphs, limits and continuity, differentiation, integration, and first-order ordinary differential equations.`
+      },
+      {
+        heading: '1. Differentiation',
+        level: 2,
+        content: `The derivative measures the instantaneous rate of change of a function.\n\n$$f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}$$\n\n**Key Rules:**\n- Power Rule: $\\frac{d}{dx}[x^n] = nx^{n-1}$\n- Product Rule: $\\frac{d}{dx}[uv] = u'v + uv'$\n- Chain Rule: $\\frac{d}{dx}[f(g(x))] = f'(g(x)) \\cdot g'(x)$\n- Quotient Rule: $\\frac{d}{dx}\\left[\\frac{u}{v}\\right] = \\frac{u'v - uv'}{v^2}$\n\n**Example:** Find $\\frac{d}{dx}[3x^4 - 2x^2 + 7]$\n\n$$= 12x^3 - 4x$$`
+      },
+      {
+        heading: '2. Integration',
+        level: 2,
+        content: `Integration is the reverse of differentiation and gives the area under a curve.\n\n$$\\int_a^b f(x)\\,dx = F(b) - F(a) \\quad \\text{where } F'(x) = f(x)$$\n\n**Key Antiderivatives:**\n- $\\int x^n\\,dx = \\frac{x^{n+1}}{n+1} + C$\n- $\\int e^x\\,dx = e^x + C$\n- $\\int \\sin x\\,dx = -\\cos x + C$\n- $\\int \\frac{1}{x}\\,dx = \\ln|x| + C$\n\n**Example (by substitution):** Evaluate $\\int 2x e^{x^2}\\,dx$\n\nLet $u = x^2$, $du = 2x\\,dx$:\n$$= \\int e^u\\,du = e^{x^2} + C$$`
+      },
+      {
+        heading: '3. First-Order ODEs',
+        level: 2,
+        content: `A first-order ODE has the form $\\frac{dy}{dx} = f(x, y)$.\n\n**Separable Equations:** If $\\frac{dy}{dx} = g(x)h(y)$, then:\n$$\\int \\frac{dy}{h(y)} = \\int g(x)\\,dx$$\n\n**Example:** Solve $\\frac{dy}{dx} = ky$ (exponential growth)\n\n$$\\frac{dy}{y} = k\\,dx \\implies \\ln|y| = kx + C \\implies y = Ae^{kx}$$\n\n**Integrating Factor Method** for $\\frac{dy}{dx} + P(x)y = Q(x)$:\n\nMultiply through by integrating factor $\\mu = e^{\\int P(x)\\,dx}$:\n$$\\frac{d}{dx}[\\mu y] = \\mu Q(x)$$`
+      },
+      {
+        heading: '4. Worked Examples',
+        level: 2,
+        content: `**Example 1:** A beam deflects such that $\\frac{d^2y}{dx^2} = \\frac{M(x)}{EI}$. For a simply supported beam with central load $W$, find the maximum deflection.\n\nThe bending moment is $M(x) = \\frac{W}{2}x$ for $0 \\leq x \\leq L/2$.\n\nIntegrating twice: $y = \\frac{W}{12EI}x^3 + C_1 x + C_2$. Applying boundary conditions $y(0) = 0$ and $y(L) = 0$ gives:\n$$y_{\\max} = \\frac{WL^3}{48EI}$$\n\n**Example 2:** An RC circuit satisfies $RC\\frac{dV}{dt} + V = V_s$. Solve for $V(t)$ with $V(0) = 0$.\n\n$$V(t) = V_s\\left(1 - e^{-t/RC}\\right)$$`
+      }
+    ],
+    keyFormulas: [
+      { name: 'Power Rule', latex: "\\frac{d}{dx}[x^n] = nx^{n-1}", description: 'Differentiation power rule' },
+      { name: 'Chain Rule', latex: "\\frac{d}{dx}[f(g(x))] = f'(g(x)) \\cdot g'(x)", description: 'Composite function derivative' },
+      { name: 'FTC', latex: "\\int_a^b f(x)\\,dx = F(b) - F(a)", description: 'Fundamental theorem of calculus' },
+      { name: 'Integrating Factor', latex: "\\mu = e^{\\int P(x)\\,dx}", description: 'For linear first-order ODEs' },
+    ]
+  },
+
+  'engineering-mathematics-2': {
+    id: 'engineering-mathematics-2',
+    title: 'Engineering Mathematics 2',
+    subject: 'engineering',
+    difficulty: 'University' as any,
+    estimatedReadTime: 65,
+    sections: [
+      {
+        heading: 'Engineering Mathematics 2: Intermediate Methods',
+        level: 1,
+        content: `Engineering Mathematics 2 builds on the foundations of Eng Math 1, introducing more powerful tools for solving engineering problems: sequences and series, second-order ODEs, Laplace transforms, and partial derivatives.\n\n**Topics:** Taylor/Maclaurin series, 2nd-order ODEs, Laplace transforms, partial differentiation, multiple integrals.`
+      },
+      {
+        heading: '1. Second-Order ODEs',
+        level: 2,
+        content: `The general second-order linear ODE:\n$$a\\frac{d^2y}{dx^2} + b\\frac{dy}{dx} + cy = f(x)$$\n\n**Homogeneous solution** — solve the auxiliary equation $am^2 + bm + c = 0$:\n- Two real roots $m_1 \\neq m_2$: $y_h = Ae^{m_1 x} + Be^{m_2 x}$\n- Repeated root $m_1 = m_2$: $y_h = (A + Bx)e^{m_1 x}$\n- Complex roots $m = \\alpha \\pm j\\beta$: $y_h = e^{\\alpha x}(A\\cos\\beta x + B\\sin\\beta x)$\n\n**Example:** Solve $y'' - 5y' + 6y = 0$\n\nAuxiliary: $m^2 - 5m + 6 = 0 \\implies (m-2)(m-3) = 0$\n\n$$y = Ae^{2x} + Be^{3x}$$`
+      },
+      {
+        heading: '2. Laplace Transforms',
+        level: 2,
+        content: `The Laplace transform converts a time-domain ODE into an algebraic equation in the $s$-domain:\n\n$$\\mathcal{L}\\{f(t)\\} = F(s) = \\int_0^\\infty f(t)e^{-st}\\,dt$$\n\n**Key Transform Pairs:**\n\n| $f(t)$ | $F(s)$ |\n|---|---|\n| $1$ | $\\frac{1}{s}$ |\n| $t^n$ | $\\frac{n!}{s^{n+1}}$ |\n| $e^{at}$ | $\\frac{1}{s-a}$ |\n| $\\sin(\\omega t)$ | $\\frac{\\omega}{s^2+\\omega^2}$ |\n| $\\cos(\\omega t)$ | $\\frac{s}{s^2+\\omega^2}$ |\n\n**Differentiation property:** $\\mathcal{L}\\{y'\\} = sY(s) - y(0)$\n\n**Example:** Solve $y'' + 4y = 0$, $y(0)=1$, $y'(0)=0$\n\nTaking Laplace: $s^2Y - s + 4Y = 0 \\implies Y = \\frac{s}{s^2+4}$\n\n$$y(t) = \\cos(2t)$$`
+      },
+      {
+        heading: '3. Partial Differentiation',
+        level: 2,
+        content: `For a function $f(x, y)$, the partial derivatives are:\n\n$$f_x = \\frac{\\partial f}{\\partial x} \\quad \\text{(treat } y \\text{ as constant)}$$\n\n$$f_y = \\frac{\\partial f}{\\partial y} \\quad \\text{(treat } x \\text{ as constant)}$$\n\n**Total differential:** $df = \\frac{\\partial f}{\\partial x}dx + \\frac{\\partial f}{\\partial y}dy$\n\n**Gradient vector:** $\\nabla f = \\left(\\frac{\\partial f}{\\partial x},\\, \\frac{\\partial f}{\\partial y},\\, \\frac{\\partial f}{\\partial z}\\right)$\n\n**Example:** If $f(x,y) = x^3y^2 - 3xy$, find $\\frac{\\partial f}{\\partial x}$ and $\\frac{\\partial f}{\\partial y}$:\n$$f_x = 3x^2y^2 - 3y \\qquad f_y = 2x^3y - 3x$$`
+      },
+      {
+        heading: '4. Worked Examples',
+        level: 2,
+        content: `**Example 1 (Laplace — Circuit):** In an RLC circuit, $L\\frac{d^2i}{dt^2} + R\\frac{di}{dt} + \\frac{i}{C} = 0$. With $L=1$H, $R=3\\Omega$, $C=0.5$F, $i(0)=0$, $i'(0)=4$A/s:\n\nAuxiliary: $m^2 + 3m + 2 = 0 \\implies m = -1, -2$\n\n$$i(t) = 4(e^{-t} - e^{-2t}) \\text{ A}$$\n\n**Example 2 (Partial Diff):** The ideal gas law $PV = nRT$. At constant $T$, find $\\frac{\\partial P}{\\partial V}$:\n\n$$P = \\frac{nRT}{V} \\implies \\frac{\\partial P}{\\partial V} = -\\frac{nRT}{V^2}$$\n\nThis shows pressure decreases inversely with volume squared.`
+      }
+    ],
+    keyFormulas: [
+      { name: 'Auxiliary Equation', latex: "am^2 + bm + c = 0", description: 'For 2nd-order homogeneous ODEs' },
+      { name: 'Laplace Transform', latex: "\\mathcal{L}\\{f(t)\\} = \\int_0^\\infty f(t)e^{-st}\\,dt", description: 'Definition' },
+      { name: 'Gradient', latex: "\\nabla f = \\left(\\frac{\\partial f}{\\partial x}, \\frac{\\partial f}{\\partial y}, \\frac{\\partial f}{\\partial z}\\right)", description: 'Gradient vector' },
+    ]
+  },
+
+  'engineering-mathematics-3': {
+    id: 'engineering-mathematics-3',
+    title: 'Engineering Mathematics 3',
+    subject: 'engineering',
+    difficulty: 'University' as any,
+    estimatedReadTime: 70,
+    sections: [
+      {
+        heading: 'Engineering Mathematics 3: Advanced Techniques',
+        level: 1,
+        content: `Engineering Mathematics 3 covers the advanced mathematical tools used in upper-year engineering: Fourier series, PDEs, vector calculus (div, grad, curl), and numerical methods.\n\n**Topics:** Fourier series and transforms, heat and wave PDEs, vector calculus theorems, numerical integration and ODE solvers.`
+      },
+      {
+        heading: '1. Fourier Series',
+        level: 2,
+        content: `Any periodic function $f(t)$ with period $T = 2L$ can be expressed as:\n\n$$f(t) = \\frac{a_0}{2} + \\sum_{n=1}^\\infty \\left[a_n\\cos\\frac{n\\pi t}{L} + b_n\\sin\\frac{n\\pi t}{L}\\right]$$\n\nwhere the coefficients are:\n$$a_n = \\frac{1}{L}\\int_{-L}^{L} f(t)\\cos\\frac{n\\pi t}{L}\\,dt$$\n$$b_n = \\frac{1}{L}\\int_{-L}^{L} f(t)\\sin\\frac{n\\pi t}{L}\\,dt$$\n\n**Example:** Square wave $f(t) = 1$ for $0 < t < \\pi$, $f(t) = -1$ for $-\\pi < t < 0$:\n$$f(t) = \\frac{4}{\\pi}\\sum_{n=1,3,5,...}\\frac{\\sin(nt)}{n}$$`
+      },
+      {
+        heading: '2. Partial Differential Equations',
+        level: 2,
+        content: `**Heat Equation** (1D diffusion):\n$$\\frac{\\partial u}{\\partial t} = \\alpha^2 \\frac{\\partial^2 u}{\\partial x^2}$$\n\n**Wave Equation:**\n$$\\frac{\\partial^2 u}{\\partial t^2} = c^2 \\frac{\\partial^2 u}{\\partial x^2}$$\n\n**Laplace Equation** (steady-state):\n$$\\nabla^2 u = \\frac{\\partial^2 u}{\\partial x^2} + \\frac{\\partial^2 u}{\\partial y^2} = 0$$\n\n**Solution by separation of variables:** Assume $u(x,t) = X(x)T(t)$. Substituting into the PDE gives two separate ODEs, each solvable independently.`
+      },
+      {
+        heading: '3. Vector Calculus',
+        level: 2,
+        content: `**Divergence:** $\\nabla \\cdot \\mathbf{F} = \\frac{\\partial F_x}{\\partial x} + \\frac{\\partial F_y}{\\partial y} + \\frac{\\partial F_z}{\\partial z}$\n\n**Curl:** $\\nabla \\times \\mathbf{F} = \\begin{vmatrix}\\mathbf{i} & \\mathbf{j} & \\mathbf{k}\\\\ \\partial_x & \\partial_y & \\partial_z \\\\ F_x & F_y & F_z\\end{vmatrix}$\n\n**Divergence Theorem (Gauss):**\n$$\\oiint_S \\mathbf{F} \\cdot d\\mathbf{S} = \\iiint_V (\\nabla \\cdot \\mathbf{F})\\,dV$$\n\n**Stokes' Theorem:**\n$$\\oint_C \\mathbf{F} \\cdot d\\mathbf{r} = \\iint_S (\\nabla \\times \\mathbf{F}) \\cdot d\\mathbf{S}$$`
+      },
+      {
+        heading: '4. Numerical Methods',
+        level: 2,
+        content: `**Euler's Method** for $\\frac{dy}{dx} = f(x,y)$:\n$$y_{n+1} = y_n + h \\cdot f(x_n, y_n)$$\n\n**Runge-Kutta 4th Order (RK4)** — much more accurate:\n$$k_1 = hf(x_n, y_n)$$\n$$k_2 = hf\\!\\left(x_n+\\tfrac{h}{2}, y_n+\\tfrac{k_1}{2}\\right)$$\n$$k_3 = hf\\!\\left(x_n+\\tfrac{h}{2}, y_n+\\tfrac{k_2}{2}\\right)$$\n$$k_4 = hf(x_n+h, y_n+k_3)$$\n$$y_{n+1} = y_n + \\tfrac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4)$$\n\n**Newton-Raphson** root finding:\n$$x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)}$$`
+      }
+    ],
+    keyFormulas: [
+      { name: 'Fourier Coefficients', latex: "a_n = \\frac{1}{L}\\int_{-L}^{L} f(t)\\cos\\frac{n\\pi t}{L}\\,dt", description: 'Fourier cosine coefficient' },
+      { name: 'Heat Equation', latex: "\\frac{\\partial u}{\\partial t} = \\alpha^2 \\frac{\\partial^2 u}{\\partial x^2}", description: '1D heat/diffusion PDE' },
+      { name: 'Divergence Theorem', latex: "\\oiint_S \\mathbf{F} \\cdot d\\mathbf{S} = \\iiint_V (\\nabla \\cdot \\mathbf{F})\\,dV", description: "Gauss's divergence theorem" },
+      { name: 'RK4', latex: "y_{n+1} = y_n + \\tfrac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4)", description: 'Runge-Kutta 4th order step' },
+    ]
+  },
+
   'fluid-mechanics': { id: 'fluid-mechanics', title: 'Fluid Mechanics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500, sections: [{heading: 'Intro', level: 1, content: 'Fluid mechanics studies the behavior of liquids and gases at rest and in motion. Core topics include viscosity, pressure, the Navier-Stokes equations, Bernoulli\'s principle, laminar vs. turbulent flow, and drag forces.'}] },
   'thermodynamics': { id: 'thermodynamics', title: 'Thermodynamics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500, sections: [{heading: 'Intro', level: 1, content: 'Thermodynamics covers the laws governing energy conversion and transfer: the zeroth, first, second, and third laws. Key concepts include entropy, enthalpy, Gibbs free energy, heat engines, and the Carnot cycle.'}] },
   'process-control': { id: 'process-control', title: 'Process Control', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500, sections: [{heading: 'Intro', level: 1, content: 'Process control deals with maintaining desired operating conditions in industrial systems using feedback and feedforward loops, PID controllers, transfer functions, Laplace transforms, and stability analysis.'}] },
