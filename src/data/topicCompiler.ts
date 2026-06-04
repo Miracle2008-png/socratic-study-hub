@@ -214,24 +214,206 @@ const engineeringMetadata: Record<string, TopicContent> = {
     ]
   },
 
-  'fluid-mechanics': { id: 'fluid-mechanics', title: 'Fluid Mechanics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500, sections: [{heading: 'Intro', level: 1, content: 'Fluid mechanics studies the behavior of liquids and gases at rest and in motion. Core topics include viscosity, pressure, the Navier-Stokes equations, Bernoulli\'s principle, laminar vs. turbulent flow, and drag forces.'}] },
-  'thermodynamics': { id: 'thermodynamics', title: 'Thermodynamics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500, sections: [{heading: 'Intro', level: 1, content: 'Thermodynamics covers the laws governing energy conversion and transfer: the zeroth, first, second, and third laws. Key concepts include entropy, enthalpy, Gibbs free energy, heat engines, and the Carnot cycle.'}] },
-  'process-control': { id: 'process-control', title: 'Process Control', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500, sections: [{heading: 'Intro', level: 1, content: 'Process control deals with maintaining desired operating conditions in industrial systems using feedback and feedforward loops, PID controllers, transfer functions, Laplace transforms, and stability analysis.'}] },
-  'transport-phenomena': { id: 'transport-phenomena', title: 'Transport Phenomena', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500, sections: [{heading: 'Intro', level: 1, content: 'Transport phenomena unifies the study of momentum, heat, and mass transfer using a common mathematical framework. Topics include Fick\'s law, Fourier\'s law, Newton\'s law of viscosity, boundary layers, and diffusion equations.'}] },
-  'separation-processes': { id: 'separation-processes', title: 'Separation Processes', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500, sections: [{heading: 'Intro', level: 1, content: 'Separation processes are industrial methods for isolating components from mixtures. Core techniques include distillation, absorption, liquid-liquid extraction, membrane filtration, chromatography, and crystallization.'}] },
-  'reaction-engineering': { id: 'reaction-engineering', title: 'Chemical Reaction Engineering', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500, sections: [{heading: 'Intro', level: 1, content: 'Chemical reaction engineering covers the design and analysis of chemical reactors. Topics include reaction kinetics, rate laws, batch vs. continuous reactors (CSTR, PFR), residence time distribution, and catalysis.'}] },
-  'materials-science': { id: 'materials-science', title: 'Materials Science', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500, sections: [{heading: 'Intro', level: 1, content: 'Materials science examines the structure, properties, processing, and performance of materials including metals, ceramics, polymers, and composites. Topics include crystal structures, phase diagrams, mechanical testing, and failure analysis.'}] },
-  'electrical-engineering': { id: 'electrical-engineering', title: 'Electrical Engineering', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500, sections: [{heading: 'Intro', level: 1, content: 'Electrical engineering covers circuit analysis, Ohm\'s law, Kirchhoff\'s laws, AC/DC circuits, semiconductors, transistors, operational amplifiers, digital logic, and electromagnetic field theory.'}] },
-  'civil-structural': { id: 'civil-structural', title: 'Civil & Structural Engineering', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500, sections: [{heading: 'Intro', level: 1, content: 'Civil and structural engineering covers statics, dynamics, stress and strain analysis, beam theory, structural design, soil mechanics, fluid systems, and the design of bridges, buildings, and infrastructure.'}] },
-  'software-engineering': { id: 'software-engineering', title: 'Software Engineering Architecture', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500, sections: [{heading: 'Intro', level: 1, content: 'Software engineering architecture covers the principles of designing scalable, maintainable systems. Topics include design patterns, SOLID principles, microservices, APIs, databases, testing methodologies, and DevOps practices.'}] },
-  'electric-circuit-theory-1': { id: 'electric-circuit-theory-1', title: 'Electric Circuit Theory I', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 600, sections: [{heading: 'Intro', level: 1, content: 'DC circuit analysis covering charge, current, voltage, Ohm\'s law, KVL, KCL, nodal and mesh analysis, Thevenin/Norton theorems, capacitors, inductors, and first/second-order transient responses.'}] },
-  'electric-circuit-theory-2': { id: 'electric-circuit-theory-2', title: 'Electric Circuit Theory II', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 600, sections: [{heading: 'Intro', level: 1, content: 'AC circuit analysis using phasors and impedance. Covers sinusoidal steady state, complex power, resonance, frequency response, Bode plots, filter design, and balanced three-phase power systems.'}] },
-  'electric-circuit-theory-3': { id: 'electric-circuit-theory-3', title: 'Electric Circuit Theory III', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 600, sections: [{heading: 'Intro', level: 1, content: 'Advanced circuit analysis using Laplace transforms. Covers s-domain circuit models, transfer functions, stability, two-port network parameters, state-variable analysis, and Fourier analysis of signals.'}] },
-  'digital-electronics': { id: 'digital-electronics', title: 'Digital Electronics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 700, sections: [{heading: 'Intro', level: 1, content: 'Digital systems from first principles. Covers number systems, Boolean algebra, logic gates, Karnaugh map minimisation, combinational circuits (adders, MUX, decoders), sequential logic (flip-flops, counters, shift registers), and ADC/DAC conversion.'}] },
-  'analogue-electronics': { id: 'analogue-electronics', title: 'Analogue Electronics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 700, sections: [{heading: 'Intro', level: 1, content: 'Analogue circuit design covering semiconductor physics, diodes, BJT and MOSFET transistors, amplifier configurations, operational amplifiers (ideal and non-ideal), feedback theory, and oscillator circuits.'}] },
-  'signals-and-systems': { id: 'signals-and-systems', title: 'Signals & Systems', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 650, sections: [{heading: 'Intro', level: 1, content: 'Mathematical analysis of signals and LTI systems. Covers convolution, Fourier series, Fourier transform, Laplace transform, Z-transform, sampling theorem, filter design, and state-space representations.'}] },
-  'control-systems': { id: 'control-systems', title: 'Control Systems', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 650, sections: [{heading: 'Intro', level: 1, content: 'Feedback control theory covering block diagram algebra, steady-state error analysis, root locus design, Bode plots, Nyquist stability criterion, PID tuning, and modern state-space control with pole placement and LQR.'}] },
-  'electromagnetic-fields': { id: 'electromagnetic-fields', title: 'Electromagnetic Fields', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 650, sections: [{heading: 'Intro', level: 1, content: 'Classical electromagnetism from Coulomb\'s law through Maxwell\'s equations. Covers electrostatics, magnetostatics, Faraday\'s law, EM wave propagation, boundary conditions, and transmission line theory.'}] },
+  'fluid-mechanics': {
+    id: 'fluid-mechanics', title: 'Fluid Mechanics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Fluid mechanics studies the behavior of liquids and gases at rest and in motion. Core topics include viscosity, pressure, the Navier-Stokes equations, Bernoulli\'s principle, laminar vs. turbulent flow, and drag forces.' },
+      { heading: '1. Fluid Statics', level: 2, content: `Fluid statics deals with fluids at rest. The fundamental equation of fluid statics is:\n\n$$P = P_0 + \\rho g h$$\n\nWhere $P$ is pressure, $\\rho$ is density, $g$ is gravity, and $h$ is depth.` },
+      { heading: '2. Fluid Dynamics & Bernoulli', level: 2, content: `For steady, incompressible, frictionless flow along a streamline, Bernoulli's equation applies:\n\n$$P + \\frac{1}{2}\\rho v^2 + \\rho g z = \\text{constant}$$\n\nThis principle explains lift in aerodynamics and flow measurement using Venturi meters.` },
+      { heading: '3. Viscous Flow', level: 2, content: `Real fluids have viscosity. The Reynolds number determines if flow is laminar or turbulent:\n\n$$Re = \\frac{\\rho v D}{\\mu}$$\n\nLow $Re$ (< 2000) indicates laminar flow, while high $Re$ (> 4000) indicates turbulent flow.` }
+    ],
+    keyFormulas: [
+      { name: 'Bernoulli Equation', latex: "P + \\frac{1}{2}\\rho v^2 + \\rho g z = C", description: 'Conservation of energy in fluid flow' },
+      { name: 'Reynolds Number', latex: "Re = \\frac{\\rho v D}{\\mu}", description: 'Ratio of inertial to viscous forces' }
+    ]
+  },
+  'thermodynamics': {
+    id: 'thermodynamics', title: 'Thermodynamics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Thermodynamics covers the laws governing energy conversion and transfer: the zeroth, first, second, and third laws. Key concepts include entropy, enthalpy, Gibbs free energy, heat engines, and the Carnot cycle.' },
+      { heading: '1. First Law of Thermodynamics', level: 2, content: `The First Law is the principle of conservation of energy. For a closed system:\n\n$$\\Delta U = Q - W$$\n\nWhere $\\Delta U$ is change in internal energy, $Q$ is heat added, and $W$ is work done by the system.` },
+      { heading: '2. Second Law and Entropy', level: 2, content: `The Second Law states that the total entropy of an isolated system can never decrease over time. The efficiency of a heat engine is bounded by the Carnot efficiency:\n\n$$\\eta_{Carnot} = 1 - \\frac{T_C}{T_H}$$` },
+      { heading: '3. Enthalpy and Phase Changes', level: 2, content: `Enthalpy ($H = U + PV$) is crucial for open systems and phase changes. During boiling or condensation, heat transfer occurs at constant temperature, governed by the latent heat.` }
+    ],
+    keyFormulas: [
+      { name: 'First Law', latex: "\\Delta U = Q - W", description: 'Conservation of energy' },
+      { name: 'Carnot Efficiency', latex: "\\eta = 1 - \\frac{T_C}{T_H}", description: 'Maximum theoretical thermal efficiency' }
+    ]
+  },
+  'process-control': {
+    id: 'process-control', title: 'Process Control', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Process control deals with maintaining desired operating conditions in industrial systems using feedback and feedforward loops, PID controllers, transfer functions, Laplace transforms, and stability analysis.' },
+      { heading: '1. PID Control', level: 2, content: `The Proportional-Integral-Derivative (PID) controller is the industry standard. Its control law is:\n\n$$u(t) = K_p e(t) + K_i \\int_0^t e(\\tau)d\\tau + K_d \\frac{de(t)}{dt}$$\n\nWhere $e(t)$ is the error between the setpoint and process variable.` },
+      { heading: '2. Transfer Functions', level: 2, content: `In the Laplace domain, systems are represented by transfer functions $G(s)$. A first-order plus dead time (FOPDT) model is:\n\n$$G(s) = \\frac{K e^{-\\theta s}}{\\tau s + 1}$$` },
+      { heading: '3. Stability Analysis', level: 2, content: `A closed-loop system is stable if all poles of its transfer function lie in the left half of the s-plane. Techniques like Bode plots and root locus are used to tune controllers for robust stability.` }
+    ],
+    keyFormulas: [
+      { name: 'PID Equation', latex: "u(t) = K_p e(t) + K_i \\int edt + K_d \\frac{de}{dt}", description: 'PID control law' }
+    ]
+  },
+  'transport-phenomena': {
+    id: 'transport-phenomena', title: 'Transport Phenomena', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Transport phenomena unifies the study of momentum, heat, and mass transfer using a common mathematical framework. Topics include Fick\'s law, Fourier\'s law, Newton\'s law of viscosity, boundary layers, and diffusion equations.' },
+      { heading: '1. The Three Phenomenological Laws', level: 2, content: `Transport processes share analogous laws:\n\n- **Momentum (Newton's Law):** $\\tau = -\\mu \\frac{dv}{dy}$\n- **Heat (Fourier's Law):** $q = -k \\frac{dT}{dx}$\n- **Mass (Fick's Law):** $J = -D \\frac{dC}{dx}$` },
+      { heading: '2. Convective Transport', level: 2, content: `In flowing fluids, convective transport dominates. The dimensionless Nusselt ($Nu$) and Sherwood ($Sh$) numbers characterize convective heat and mass transfer, respectively.` }
+    ],
+    keyFormulas: [
+      { name: "Fourier's Law", latex: "q = -k \\nabla T", description: 'Conductive heat flux' },
+      { name: "Fick's First Law", latex: "J_A = -D_{AB} \\nabla C_A", description: 'Diffusive mass flux' }
+    ]
+  },
+  'separation-processes': {
+    id: 'separation-processes', title: 'Separation Processes', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Separation processes are industrial methods for isolating components from mixtures. Core techniques include distillation, absorption, liquid-liquid extraction, membrane filtration, chromatography, and crystallization.' },
+      { heading: '1. Distillation', level: 2, content: `Distillation separates mixtures based on differences in volatility. The McCabe-Thiele method is a graphical technique to determine the number of equilibrium stages required in a distillation column.` },
+      { heading: '2. Liquid-Liquid Extraction', level: 2, content: `Extraction uses a solvent to preferentially dissolve one component of a liquid mixture. The distribution coefficient $K$ dictates the phase equilibrium: $K = y_A / x_A$.` }
+    ],
+    keyFormulas: [
+      { name: 'Relative Volatility', latex: "\\alpha_{ij} = \\frac{y_i / x_i}{y_j / x_j}", description: 'Ease of separation in distillation' }
+    ]
+  },
+  'reaction-engineering': {
+    id: 'reaction-engineering', title: 'Chemical Reaction Engineering', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Chemical reaction engineering covers the design and analysis of chemical reactors. Topics include reaction kinetics, rate laws, batch vs. continuous reactors (CSTR, PFR), residence time distribution, and catalysis.' },
+      { heading: '1. Reaction Kinetics', level: 2, content: `The rate law expresses the speed of reaction. For an elementary reaction $A + B \\to P$:\n\n$$-r_A = k C_A C_B$$\n\nThe rate constant $k$ depends on temperature via the Arrhenius equation: $k = A e^{-E_a/RT}$.` },
+      { heading: '2. Ideal Reactors', level: 2, content: `Key reactor design equations:\n\n- **Batch:** $t = \\int_0^X \\frac{N_{A0}}{-r_A V} dX$\n- **CSTR:** $V = \\frac{F_{A0} X}{-r_A}$\n- **PFR:** $V = \\int_0^X \\frac{F_{A0}}{-r_A} dX$` }
+    ],
+    keyFormulas: [
+      { name: 'Arrhenius Equation', latex: "k = A e^{-E_a/RT}", description: 'Temperature dependence of reaction rate' }
+    ]
+  },
+  'materials-science': {
+    id: 'materials-science', title: 'Materials Science', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Materials science examines the structure, properties, processing, and performance of materials including metals, ceramics, polymers, and composites. Topics include crystal structures, phase diagrams, mechanical testing, and failure analysis.' },
+      { heading: '1. Crystal Structures', level: 2, content: `Metals typically crystallize in FCC, BCC, or HCP structures. Defects like vacancies, dislocations, and grain boundaries strongly influence material properties like yield strength.` },
+      { heading: '2. Phase Diagrams', level: 2, content: `Phase diagrams map the thermodynamically stable phases at given temperatures and compositions. The Iron-Carbon phase diagram is fundamental for steel processing.` },
+      { heading: '3. Mechanical Properties', level: 2, content: `Hooke's Law governs the elastic region:\n\n$$\\sigma = E \\epsilon$$\n\nWhere $\\sigma$ is stress, $E$ is Young's modulus, and $\\epsilon$ is strain.` }
+    ],
+    keyFormulas: [
+      { name: "Hooke's Law", latex: "\\sigma = E \\epsilon", description: 'Linear elastic deformation' }
+    ]
+  },
+  'electrical-engineering': {
+    id: 'electrical-engineering', title: 'Electrical Engineering', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Electrical engineering covers circuit analysis, Ohm\'s law, Kirchhoff\'s laws, AC/DC circuits, semiconductors, transistors, operational amplifiers, digital logic, and electromagnetic field theory.' },
+      { heading: '1. Circuit Fundamentals', level: 2, content: `Ohm's Law states $V = IR$. Kirchhoff's Voltage Law (KVL) and Current Law (KCL) form the basis of all circuit analysis.` },
+      { heading: '2. AC Power', level: 2, content: `In AC circuits, power is complex: $S = P + jQ$. Real power $P = VI \\cos(\\theta)$ does useful work, while reactive power $Q = VI \\sin(\\theta)$ oscillates.` }
+    ],
+    keyFormulas: [
+      { name: "Ohm's Law", latex: "V = IR", description: 'Voltage, Current, Resistance relationship' },
+      { name: 'Complex Power', latex: "S = V I^* = P + jQ", description: 'Apparent, real, and reactive power' }
+    ]
+  },
+  'civil-structural': {
+    id: 'civil-structural', title: 'Civil & Structural Engineering', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Civil and structural engineering covers statics, dynamics, stress and strain analysis, beam theory, structural design, soil mechanics, fluid systems, and the design of bridges, buildings, and infrastructure.' },
+      { heading: '1. Statics and Beam Theory', level: 2, content: `For a structure in equilibrium, $\\sum F = 0$ and $\\sum M = 0$. The bending stress in a beam is given by Euler-Bernoulli theory:\n\n$$\\sigma = \\frac{My}{I}$$` },
+      { heading: '2. Soil Mechanics', level: 2, content: `Terzaghi's principle of effective stress governs soil behavior:\n\n$$\\sigma' = \\sigma - u$$\n\nWhere $\\sigma'$ is effective stress, $\\sigma$ is total stress, and $u$ is pore water pressure.` }
+    ],
+    keyFormulas: [
+      { name: 'Bending Stress', latex: "\\sigma = \\frac{My}{I}", description: 'Stress from bending moment' }
+    ]
+  },
+  'software-engineering': {
+    id: 'software-engineering', title: 'Software Engineering Architecture', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 500,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Software engineering architecture covers the principles of designing scalable, maintainable systems. Topics include design patterns, SOLID principles, microservices, APIs, databases, testing methodologies, and DevOps practices.' },
+      { heading: '1. Design Patterns & SOLID', level: 2, content: `SOLID principles (Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion) are foundational for object-oriented design. Design patterns like Singleton, Factory, and Observer provide reusable solutions.` },
+      { heading: '2. System Architecture', level: 2, content: `Modern architectures often shift from monoliths to microservices, utilizing containerization (Docker, Kubernetes) and message brokers (Kafka, RabbitMQ) to decouple services and scale horizontally.` }
+    ]
+  },
+  'electric-circuit-theory-1': {
+    id: 'electric-circuit-theory-1', title: 'Electric Circuit Theory I', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 600,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'DC circuit analysis covering charge, current, voltage, Ohm\'s law, KVL, KCL, nodal and mesh analysis, Thevenin/Norton theorems, capacitors, inductors, and first/second-order transient responses.' },
+      { heading: '1. Nodal and Mesh Analysis', level: 2, content: `Nodal analysis applies KCL to find node voltages. Mesh analysis applies KVL to find loop currents. These systematic methods map circuits to systems of linear equations.` },
+      { heading: '2. Thevenin and Norton Theorems', level: 2, content: `Any linear circuit can be simplified to a single voltage source in series with a resistor (Thevenin equivalent) or a current source in parallel with a resistor (Norton equivalent).` },
+      { heading: '3. RC and RL Transients', level: 2, content: `The step response of first-order circuits is governed by exponential decay:\n\n$$v(t) = V_{\\infty} + (V_0 - V_{\\infty})e^{-t/\\tau}$$` }
+    ],
+    keyFormulas: [
+      { name: 'KVL', latex: "\\sum_{i=1}^n V_i = 0", description: 'Sum of voltages in a loop is zero' },
+      { name: 'Time Constant', latex: "\\tau = RC \\quad \\text{or} \\quad \\tau = \\frac{L}{R}", description: 'RC and RL time constants' }
+    ]
+  },
+  'electric-circuit-theory-2': {
+    id: 'electric-circuit-theory-2', title: 'Electric Circuit Theory II', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 600,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'AC circuit analysis using phasors and impedance. Covers sinusoidal steady state, complex power, resonance, frequency response, Bode plots, filter design, and balanced three-phase power systems.' },
+      { heading: '1. Phasor Analysis', level: 2, content: `In AC steady-state, sinusoidal voltages and currents are represented as complex numbers called phasors. Ohm's Law becomes $\\mathbf{V} = \\mathbf{I}\\mathbf{Z}$, where $\\mathbf{Z}$ is complex impedance.` },
+      { heading: '2. Resonance and Filters', level: 2, content: `RLC circuits exhibit resonance when inductive and capacitive reactances cancel out. The resonant frequency is:\n\n$$\\omega_0 = \\frac{1}{\\sqrt{LC}}$$` }
+    ],
+    keyFormulas: [
+      { name: 'Impedance', latex: "\\mathbf{Z} = R + jX", description: 'Complex impedance' },
+      { name: 'Resonant Frequency', latex: "\\omega_0 = \\frac{1}{\\sqrt{LC}}", description: 'Undamped natural frequency' }
+    ]
+  },
+  'electric-circuit-theory-3': {
+    id: 'electric-circuit-theory-3', title: 'Electric Circuit Theory III', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 600,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Advanced circuit analysis using Laplace transforms. Covers s-domain circuit models, transfer functions, stability, two-port network parameters, state-variable analysis, and Fourier analysis of signals.' },
+      { heading: '1. s-Domain Circuit Analysis', level: 2, content: `Circuits are transformed into the s-domain using Laplace transforms. Capacitors become $1/sC$ and inductors $sL$. This reduces differential equations to algebraic manipulation.` },
+      { heading: '2. Two-Port Networks', level: 2, content: `Complex networks can be modeled as black boxes with two ports (four terminals), characterized by Z, Y, h, or ABCD parameters.` }
+    ]
+  },
+  'digital-electronics': {
+    id: 'digital-electronics', title: 'Digital Electronics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 700,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Digital systems from first principles. Covers number systems, Boolean algebra, logic gates, Karnaugh map minimisation, combinational circuits (adders, MUX, decoders), sequential logic (flip-flops, counters, shift registers), and ADC/DAC conversion.' },
+      { heading: '1. Combinational Logic', level: 2, content: `Logic gates implement Boolean functions. Output depends only on present inputs. Karnaugh maps are used to minimize logic expressions to Sum of Products (SOP) or Product of Sums (POS).` },
+      { heading: '2. Sequential Logic', level: 2, content: `Sequential circuits use memory elements like flip-flops (D, JK, T). The output depends on present inputs and past states, forming the basis of state machines, counters, and registers.` }
+    ],
+    keyFormulas: [
+      { name: "De Morgan's Laws", latex: "\\overline{A \\cdot B} = \\overline{A} + \\overline{B}", description: 'Boolean algebra fundamental law' }
+    ]
+  },
+  'analogue-electronics': {
+    id: 'analogue-electronics', title: 'Analogue Electronics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 700,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Analogue circuit design covering semiconductor physics, diodes, BJT and MOSFET transistors, amplifier configurations, operational amplifiers (ideal and non-ideal), feedback theory, and oscillator circuits.' },
+      { heading: '1. Transistor Amplifiers', level: 2, content: `BJTs and MOSFETs are used to create amplifiers. Common configurations include Common Emitter (high gain), Common Collector (buffer), and Common Base.` },
+      { heading: '2. Operational Amplifiers', level: 2, content: `Ideal op-amps assume infinite input impedance, zero output impedance, and infinite open-loop gain. They are used in feedback circuits to build inverting, non-inverting, integrating, and differentiating amplifiers.` }
+    ],
+    keyFormulas: [
+      { name: 'Inverting Op-Amp Gain', latex: "A_v = -\\frac{R_f}{R_{in}}", description: 'Voltage gain for inverting amplifier' }
+    ]
+  },
+  'signals-and-systems': {
+    id: 'signals-and-systems', title: 'Signals & Systems', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 650,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Mathematical analysis of signals and LTI systems. Covers convolution, Fourier series, Fourier transform, Laplace transform, Z-transform, sampling theorem, filter design, and state-space representations.' },
+      { heading: '1. Convolution', level: 2, content: `The output $y(t)$ of an LTI system is the convolution of its input $x(t)$ and impulse response $h(t)$:\n\n$$y(t) = \\int_{-\\infty}^{\\infty} x(\\tau)h(t-\\tau)d\\tau$$` },
+      { heading: '2. Sampling Theorem', level: 2, content: `Nyquist-Shannon sampling theorem states that a continuous-time signal must be sampled at greater than twice its highest frequency component to be perfectly reconstructed.` }
+    ],
+    keyFormulas: [
+      { name: 'Convolution Integral', latex: "y(t) = x(t) * h(t)", description: 'Time-domain LTI system output' }
+    ]
+  },
+  'control-systems': {
+    id: 'control-systems', title: 'Control Systems', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 650,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Feedback control theory covering block diagram algebra, steady-state error analysis, root locus design, Bode plots, Nyquist stability criterion, PID tuning, and modern state-space control with pole placement and LQR.' },
+      { heading: '1. Root Locus', level: 2, content: `Root locus plots the trajectories of closed-loop poles in the s-plane as a system parameter (usually gain $K$) varies from zero to infinity. It visually determines stability margins.` },
+      { heading: '2. Frequency Response', level: 2, content: `Bode plots show system magnitude and phase response vs frequency. Gain margin and phase margin dictate the robust stability of the feedback loop.` }
+    ]
+  },
+  'electromagnetic-fields': {
+    id: 'electromagnetic-fields', title: 'Electromagnetic Fields', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 650,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Classical electromagnetism from Coulomb\'s law through Maxwell\'s equations. Covers electrostatics, magnetostatics, Faraday\'s law, EM wave propagation, boundary conditions, and transmission line theory.' },
+      { heading: '1. Maxwell\'s Equations', level: 2, content: `The four pillars of electromagnetism are:\n1. Gauss's Law for Electricity\n2. Gauss's Law for Magnetism\n3. Faraday's Law of Induction\n4. Ampere's Law (with Maxwell's addition)` },
+      { heading: '2. Transmission Lines', level: 2, content: `High-frequency signals require transmission line theory. Impedance matching prevents signal reflection. The reflection coefficient is:\n\n$$\\Gamma = \\frac{Z_L - Z_0}{Z_L + Z_0}$$` }
+    ],
+    keyFormulas: [
+      { name: 'Reflection Coefficient', latex: "\\Gamma = \\frac{Z_L - Z_0}{Z_L + Z_0}", description: 'Transmission line mismatch' }
+    ]
+  }
 };
 
 export const ALL_TOPICS: Record<string, TopicContent> = {
