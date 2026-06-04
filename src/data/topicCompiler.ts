@@ -513,23 +513,12 @@ export async function fetchTopicContent(topicId: string): Promise<TopicContent> 
   // Normalize to lowercase to handle stale localStorage IDs with wrong casing
   const normalizedId = topicId.toLowerCase().replace(/\s+/g, '-');
 
-  // Check if it's a legacy static topic (not engineering)
-  if (ALL_TOPICS[normalizedId] && ALL_TOPICS[normalizedId].subject !== 'engineering') {
-    return ALL_TOPICS[normalizedId];
-  }
-
-  // Also check original topicId as fallback (for math/physics/etc with underscore IDs)
-  if (topicId !== normalizedId && ALL_TOPICS[topicId] && ALL_TOPICS[topicId].subject !== 'engineering') {
-    return ALL_TOPICS[topicId];
-  }
-
-  // Otherwise, it's a massive dynamic topic. Find all related markdown chunks.
+  const baseTopic = ALL_TOPICS[normalizedId] || ALL_TOPICS[topicId];
   const matchingPaths = Object.keys(markdownModules).filter(path => path.includes(`/content/${normalizedId}/`));
-  
+
+  // If no markdown files exist, rely entirely on the hardcoded base topic
   if (matchingPaths.length === 0) {
-    // Fallback just in case
-    if (ALL_TOPICS[normalizedId]) return ALL_TOPICS[normalizedId];
-    if (ALL_TOPICS[topicId]) return ALL_TOPICS[topicId];
+    if (baseTopic) return baseTopic;
     throw new Error(`Topic not found: ${topicId}`);
   }
 
@@ -537,7 +526,6 @@ export async function fetchTopicContent(topicId: string): Promise<TopicContent> 
   matchingPaths.sort();
 
   // Cap at 8 core sections — the first 8 files are the most curated/relevant.
-  // Loading all 30-38 files makes pages overwhelmingly long.
   const MAX_SECTIONS = 8;
   const selectedPaths = matchingPaths.slice(0, MAX_SECTIONS);
 
@@ -553,7 +541,7 @@ export async function fetchTopicContent(topicId: string): Promise<TopicContent> 
     const markdown = markdownContents[i];
     
     // Extract heading from markdown (assuming it starts with # Title)
-    let heading = path.split('/').pop()?.replace('.md', '').replace(/^\d+_/, '').replace(/_/g, ' ') || 'Section';
+    let heading = path.split('/').pop()?.replace('.md', '').replace(/^\\d+_/, '').replace(/_/g, ' ') || 'Section';
     let content = markdown;
     let level = 2;
 
@@ -565,7 +553,7 @@ export async function fetchTopicContent(topicId: string): Promise<TopicContent> 
     }
 
     // Trim very long sections so no single article dominates the page
-    const MAX_CHARS = 8000;
+    const MAX_CHARS = 15000;
     if (content.length > MAX_CHARS) {
       // Cut at a paragraph boundary near the limit
       const cutPoint = content.lastIndexOf('\n\n', MAX_CHARS);
@@ -579,15 +567,18 @@ export async function fetchTopicContent(topicId: string): Promise<TopicContent> 
     });
   }
 
-  // Build the topic title from the ID
-  const title = normalizedId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  const title = baseTopic ? baseTopic.title : normalizedId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  const subject = baseTopic ? baseTopic.subject : 'engineering';
+  const difficulty = baseTopic ? baseTopic.difficulty : 'University';
+  const keyFormulas = baseTopic ? baseTopic.keyFormulas : undefined;
 
   return {
-    id: normalizedId,
-    title: title,
-    subject: 'engineering',
-    difficulty: 'University' as any,
+    id: baseTopic ? baseTopic.id : normalizedId,
+    title,
+    subject,
+    difficulty,
     estimatedReadTime: Math.ceil(sections.reduce((t, s) => t + s.content.split(' ').length, 0) / 200),
-    sections
+    sections,
+    keyFormulas
   };
 }
