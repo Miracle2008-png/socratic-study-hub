@@ -413,6 +413,64 @@ const engineeringMetadata: Record<string, TopicContent> = {
     keyFormulas: [
       { name: 'Reflection Coefficient', latex: "\\Gamma = \\frac{Z_L - Z_0}{Z_L + Z_0}", description: 'Transmission line mismatch' }
     ]
+  },
+  'aerodynamics': {
+    id: 'aerodynamics', title: 'Aerodynamics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 700,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Aerodynamics studies the motion of air and its interaction with solid objects, primarily applied to aircraft and vehicle design. Core concepts include lift, drag, compressible flow, and boundary layer theory.' },
+      { heading: '1. Lift and Drag', level: 2, content: `The lift $L$ and drag $D$ forces on a body are given by:\n\n$$L = \\frac{1}{2}\\rho v^2 S C_L$$\n$$D = \\frac{1}{2}\\rho v^2 S C_D$$\n\nWhere $\\rho$ is air density, $v$ is velocity, $S$ is wing area, and $C_L, C_D$ are lift and drag coefficients.` },
+      { heading: '2. Compressible Flow', level: 2, content: `At high speeds, air becomes compressible. The Mach number $M$ is the ratio of flow velocity to the speed of sound:\n\n$$M = \\frac{v}{a}$$\n\nShock waves form when $M > 1$.` }
+    ],
+    keyFormulas: [
+      { name: 'Lift Equation', latex: "L = \\frac{1}{2}\\rho v^2 S C_L", description: 'Lift force generation' },
+      { name: 'Mach Number', latex: "M = \\frac{v}{a}", description: 'Compressibility indicator' }
+    ]
+  },
+  'statics-and-dynamics': {
+    id: 'statics-and-dynamics', title: 'Engineering Statics & Dynamics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 650,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'The foundation of mechanical engineering. Statics deals with bodies in equilibrium, while dynamics covers kinematics (motion without considering forces) and kinetics (forces causing motion).' },
+      { heading: '1. Rigid Body Equilibrium', level: 2, content: `For a 3D rigid body to be in static equilibrium, the sum of all forces and moments must be zero:\n\n$$\\sum \\mathbf{F} = 0, \\quad \\sum \\mathbf{M} = 0$$` },
+      { heading: '2. Newton\'s Second Law', level: 2, content: `In dynamics, the equations of motion for a rigid body are:\n\n$$\\sum \\mathbf{F} = m\\mathbf{a}_{cm}$$\n$$\\sum \\mathbf{M}_{cm} = I_{cm}\\boldsymbol{\\alpha}$$\n\nWhere $I_{cm}$ is the mass moment of inertia and $\\boldsymbol{\\alpha}$ is angular acceleration.` }
+    ],
+    keyFormulas: [
+      { name: 'Equilibrium', latex: "\\sum \\mathbf{F} = 0", description: 'Translational equilibrium' },
+      { name: 'Rotational Dynamics', latex: "\\sum \\mathbf{M} = I\\boldsymbol{\\alpha}", description: 'Newton\'s Second Law for rotation' }
+    ]
+  },
+  'data-structures-algorithms': {
+    id: 'data-structures-algorithms', title: 'Data Structures & Algorithms', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 600,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'The backbone of software engineering and computer science. Focuses on efficiently storing data and optimizing algorithms to process that data using Big-O notation.' },
+      { heading: '1. Time Complexity', level: 2, content: `Big-O notation describes the worst-case time complexity of an algorithm. For example, binary search operates in $O(\\log n)$ time, while simple sorting like bubble sort takes $O(n^2)$.` },
+      { heading: '2. Core Data Structures', level: 2, content: `Key structures include:\n- **Arrays/Lists:** Contiguous memory, $O(1)$ random access.\n- **Hash Tables:** Key-value pairs, $O(1)$ average search/insert.\n- **Trees/Graphs:** Hierarchical or networked nodes.` }
+    ],
+    keyFormulas: [
+      { name: 'Logarithmic Time', latex: "O(\\log n)", description: 'Highly efficient search complexity' }
+    ]
+  },
+  'engineering-economics': {
+    id: 'engineering-economics', title: 'Engineering Economics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 450,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Applies economic principles to engineering decisions. Covers time value of money, cost-benefit analysis, depreciation, and project evaluation methods like NPV and ROI.' },
+      { heading: '1. Time Value of Money', level: 2, content: `Money today is worth more than money tomorrow due to interest. The future value $F$ of a present sum $P$ at interest rate $i$ for $n$ periods is:\n\n$$F = P(1+i)^n$$` },
+      { heading: '2. Net Present Value (NPV)', level: 2, content: `NPV evaluates the profitability of a project by discounting all future cash flows back to the present. A positive NPV implies a profitable investment.` }
+    ],
+    keyFormulas: [
+      { name: 'Compound Interest', latex: "F = P(1+i)^n", description: 'Future value calculation' },
+      { name: 'NPV', latex: "\\text{NPV} = \\sum_{t=0}^N \\frac{C_t}{(1+i)^t}", description: 'Net Present Value' }
+    ]
+  },
+  'biomechanics': {
+    id: 'biomechanics', title: 'Biomechanics', subject: 'engineering', difficulty: 'University' as any, estimatedReadTime: 550,
+    sections: [
+      { heading: 'Introduction', level: 1, content: 'Applies principles of mechanics to biological systems. Covers bone mechanics, joint kinematics, cardiovascular fluid dynamics, and tissue engineering.' },
+      { heading: '1. Solid Biomechanics', level: 2, content: `Bones are anisotropic composite materials. Their stress-strain response is non-linear and viscoelastic. Wolff\'s Law states that bone adapts to the loads under which it is placed.` },
+      { heading: '2. Biofluid Mechanics', level: 2, content: `Blood flow in arteries is pulsatile and non-Newtonian in capillaries. Poiseuille\'s law approximates flow in rigid tubes:\n\n$$Q = \\frac{\\pi r^4 \\Delta P}{8\\mu L}$$` }
+    ],
+    keyFormulas: [
+      { name: 'Poiseuille Equation', latex: "Q = \\frac{\\pi r^4 \\Delta P}{8\\mu L}", description: 'Laminar flow in a pipe' }
+    ]
   }
 };
 
