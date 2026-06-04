@@ -16,7 +16,7 @@ export const EngineeringHub: React.FC<EngineeringHubProps> = ({ onTopicSelect })
     return (
       <div className="engineering-container anim-fade">
         <button className="back-to-hub-btn" onClick={() => setSelectedBranch(null)}>
-          <ArrowLeft size={16} /> Back to Engineering Hub
+          <ArrowLeft size={16} /> Back to Engineering
         </button>
         <EngineeringBranch branch={branch} onTopicSelect={onTopicSelect} />
       </div>
@@ -26,7 +26,7 @@ export const EngineeringHub: React.FC<EngineeringHubProps> = ({ onTopicSelect })
   return (
     <div className="engineering-hub anim-fade">
       <div className="hub-header">
-        <h1>Engineering Command Center</h1>
+        <h1>Engineering</h1>
         <p>Select your discipline to access the curriculum roadmap.</p>
       </div>
 
