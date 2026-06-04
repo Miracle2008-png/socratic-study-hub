@@ -337,7 +337,7 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
   const diff = difficultyConfig[topic.difficulty as keyof typeof difficultyConfig] || difficultyConfig.Intermediate;
 
   return (
-    <div className="topic-module anim-fade">
+    <div className={`topic-module anim-fade ${topic.subject === 'engineering' ? 'engineering-topic' : ''}`}>
       {/* Hero Header */}
       <div className="tm-hero luxury-card">
         <div className="tm-hero-content">

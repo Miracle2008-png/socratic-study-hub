@@ -486,7 +486,8 @@
 
 /* --- Global Engineering Background Orbs --- */
 .engineering-container::before,
-.engineering-hub::before {
+.engineering-hub::before,
+.engineering-topic::before {
   content: '';
   position: fixed;
   top: 10%;
@@ -501,7 +502,8 @@
 }
 
 .engineering-container::after,
-.engineering-hub::after {
+.engineering-hub::after,
+.engineering-topic::after {
   content: '';
   position: fixed;
   bottom: 10%;
