@@ -3,7 +3,7 @@ import { mathContentExt } from './mathContentExt';
 import { physicsContentExt } from './physicsContentExt';
 import { chemistryContentExt } from './chemistryContentExt';
 import { biologyContentExt } from './biologyContentExt';
-// Removed engineeringContentExt since it's lazy loaded now
+import { ENGINEERING_BRANCHES } from './engineeringData';
 
 // Helper to convert raw markdown from the massive database into the TopicContent schema
 function compileMarkdownToTopic(id: string, title: string, subject: string, difficulty: 'Foundational' | 'Intermediate' | 'Advanced' | 'University', markdown: string): TopicContent {
@@ -376,12 +376,27 @@ const engineeringMetadata: Record<string, TopicContent> = {
   }
 };
 
+const compiledEngineering = Object.values(ENGINEERING_BRANCHES).reduce((acc, branch) => {
+  branch.topics.forEach(topic => {
+    acc[topic.id] = {
+      id: topic.id,
+      title: topic.title,
+      subject: 'engineering',
+      difficulty: 'University' as any,
+      estimatedReadTime: 30, // Default estimate
+      sections: []
+    };
+  });
+  return acc;
+}, {} as Record<string, TopicContent>);
+
 export const ALL_TOPICS: Record<string, TopicContent> = {
   ...TOPICS,
   ...compiledMath,
   ...compiledPhysics,
   ...compiledChemistry,
   ...compiledBiology,
+  ...compiledEngineering,
 };
 
 // Dynamic module loader for the massive 35-page engineering topics

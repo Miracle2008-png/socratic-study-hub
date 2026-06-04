@@ -379,3 +379,143 @@
 .roadmap-node:hover .node-action {
   color: var(--node-color);
 }
+
+/* --- Interactive Drill Component --- */
+.interactive-drill {
+  margin: 32px 0;
+  padding: 24px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+}
+
+.drill-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: var(--color-accent);
+}
+
+.drill-header h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 16px;
+}
+
+.drill-question {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.drill-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.drill-opt-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 16px;
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text-primary);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.drill-opt-btn:hover:not(:disabled) {
+  background: var(--color-base-alt);
+  border-color: var(--color-text-muted);
+}
+
+.drill-opt-btn.selected {
+  border-color: var(--color-accent);
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.drill-opt-btn.correct {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.drill-opt-btn.incorrect {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.opt-id {
+  font-weight: bold;
+  color: var(--color-accent);
+  background: rgba(212, 175, 55, 0.2);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.drill-explanation {
+  margin-top: 24px;
+  padding: 20px;
+  border-radius: 8px;
+  animation: fadeIn 0.4s ease;
+}
+
+.drill-explanation.success {
+  background: rgba(16, 185, 129, 0.05);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.drill-explanation.failure {
+  background: rgba(239, 68, 68, 0.05);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.drill-explanation h5 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.drill-explanation.success h5 { color: #10b981; }
+.drill-explanation.failure h5 { color: #ef4444; }
+
+/* --- Global Engineering Background Orbs --- */
+.engineering-container::before,
+.engineering-hub::before {
+  content: '';
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 40vw;
+  height: 40vw;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  animation: floatOrb 20s infinite alternate ease-in-out;
+}
+
+.engineering-container::after,
+.engineering-hub::after {
+  content: '';
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  width: 35vw;
+  height: 35vw;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  animation: floatOrb 15s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes floatOrb {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(5vw, -5vw) scale(1.1); }
+}

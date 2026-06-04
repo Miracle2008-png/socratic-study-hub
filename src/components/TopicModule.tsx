@@ -51,6 +51,99 @@ const MathText: React.FC<{ text: string }> = ({ text }) => {
   );
 };
 
+// Interactive Drill Component for markdown
+const InteractiveDrill: React.FC<{ content: string }> = ({ content }) => {
+  const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const [showExplanation, setShowExplanation] = useState(false);
+
+  // Parse custom format
+  // Format:
+  // Question: [text]
+  // Options:
+  // A) [text]
+  // B) [text]
+  // Answer: [A/B/C/D]
+  // Explanation: [text]
+  
+  const lines = content.split('\n');
+  let question = '';
+  const options: { id: string, text: string }[] = [];
+  let answer = '';
+  let explanation = '';
+  
+  let currentSection = '';
+  
+  lines.forEach(line => {
+    if (line.startsWith('Question:')) { currentSection = 'q'; question = line.replace('Question:', '').trim(); }
+    else if (line.startsWith('Options:')) { currentSection = 'o'; }
+    else if (line.match(/^[A-Z]\)/)) {
+      const id = line.charAt(0);
+      const text = line.substring(2).trim();
+      options.push({ id, text });
+    }
+    else if (line.startsWith('Answer:')) { currentSection = 'a'; answer = line.replace('Answer:', '').trim(); }
+    else if (line.startsWith('Explanation:')) { currentSection = 'e'; explanation = line.replace('Explanation:', '').trim(); }
+    else {
+      // Continuation
+      if (currentSection === 'q') question += '\n' + line;
+      if (currentSection === 'e') explanation += '\n' + line;
+    }
+  });
+
+  return (
+    <div className="interactive-drill luxury-card">
+      <div className="drill-header">
+        <Zap size={18} />
+        <h4>Interactive Concept Drill</h4>
+      </div>
+      <div className="drill-question">
+        <ReactMarkdown remarkPlugins={[remarkMath, remarkGfm]} rehypePlugins={[rehypeKatex]}>{question}</ReactMarkdown>
+      </div>
+      <div className="drill-options">
+        {options.map(opt => {
+          const isSelected = selectedOption === opt.id;
+          const isCorrect = answer === opt.id;
+          let btnClass = 'drill-opt-btn';
+          
+          if (showExplanation) {
+            if (isCorrect) btnClass += ' correct';
+            else if (isSelected) btnClass += ' incorrect';
+          } else if (isSelected) {
+            btnClass += ' selected';
+          }
+
+          return (
+            <button 
+              key={opt.id} 
+              className={btnClass}
+              onClick={() => {
+                if (!showExplanation) {
+                  setSelectedOption(opt.id);
+                  setShowExplanation(true);
+                }
+              }}
+              disabled={showExplanation}
+            >
+              <span className="opt-id">{opt.id}</span>
+              <span className="opt-text">
+                <ReactMarkdown remarkPlugins={[remarkMath, remarkGfm]} rehypePlugins={[rehypeKatex]}>{opt.text}</ReactMarkdown>
+              </span>
+            </button>
+          );
+        })}
+      </div>
+      {showExplanation && (
+        <div className={`drill-explanation ${selectedOption === answer ? 'success' : 'failure'}`}>
+          <h5>{selectedOption === answer ? 'Correct!' : 'Incorrect.'}</h5>
+          <div className="exp-content">
+            <ReactMarkdown remarkPlugins={[remarkMath, remarkGfm]} rehypePlugins={[rehypeKatex]}>{explanation}</ReactMarkdown>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
 type TabType = 'read' | 'summary' | 'flashcards' | 'quiz' | 'mindmap' | 'explain' | 'derivations' | 'exam';
 
 const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = false, onExternalFocusExit }) => {
@@ -343,6 +436,9 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
                   td: ({ children }) => <td className="tm-td">{children}</td>,
                   code: ({ children, className }) => {
                     const isBlock = className?.includes('language');
+                    if (className === 'language-drill') {
+                      return <InteractiveDrill content={String(children)} />;
+                    }
                     return isBlock
                       ? <code className="tm-code-block">{children}</code>
                       : <code className="tm-code">{children}</code>;
