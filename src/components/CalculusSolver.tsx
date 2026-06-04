@@ -94,15 +94,18 @@ export const CalculusSolver: React.FC = () => {
 
           <div className="result-section">
             <h3 className="text-gold-gradient">Step-by-Step Solution</h3>
-            <ol className="steps-list">
+            <div className="steps-cards">
               {result.steps.map((step, idx) => (
-                <li key={idx} className="step-item">
-                  <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
-                    {step}
-                  </ReactMarkdown>
-                </li>
+                <div key={idx} className="step-card">
+                  <div className="step-badge">Step {idx + 1}</div>
+                  <div className="step-body">
+                    <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
+                      {step}
+                    </ReactMarkdown>
+                  </div>
+                </div>
               ))}
-            </ol>
+            </div>
           </div>
 
           <div className="result-section final-answer-section">
@@ -219,22 +222,40 @@ export const CalculusSolver: React.FC = () => {
           font-size: 16px;
         }
 
-        .steps-list {
+        .steps-cards {
           display: flex;
           flex-direction: column;
-          gap: 16px;
-          padding-left: 20px;
-          color: var(--color-text-primary);
+          gap: 12px;
         }
 
-        .step-item {
-          line-height: 1.6;
+        .step-card {
+          background: rgba(0, 0, 0, 0.2);
+          border: 1px solid var(--color-border);
+          border-left: 3px solid var(--color-accent);
+          border-radius: var(--border-radius-md);
+          overflow: hidden;
+        }
+
+        .step-badge {
+          background: rgba(212, 175, 55, 0.1);
+          border-bottom: 1px solid var(--color-border);
+          color: var(--color-accent);
+          font-size: 11px;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+          padding: 6px 16px;
+        }
+
+        .step-body {
+          padding: 16px;
           font-size: 15px;
+          line-height: 1.7;
+          color: var(--color-text-primary);
+          overflow-x: auto;
         }
 
-        .step-item p {
-          margin: 0;
-        }
+        .step-body p { margin: 0; }
 
         .final-answer-section {
           background: rgba(212, 175, 55, 0.05);

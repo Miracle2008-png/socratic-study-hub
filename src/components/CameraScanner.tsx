@@ -23,28 +23,27 @@ export const CameraScanner: React.FC<CameraScannerProps> = ({ onScanComplete, on
       const outputTex = nerdamer(expression).evaluate().toTeX();
       
       let newSteps = [
-        "\\\\text{Scanned Problem: }",
         inputTex
       ];
 
       if (expression.includes('integrate')) {
-        newSteps.push("\\\\text{Applying analytical integration techniques...}");
-        newSteps.push("\\\\text{Simplifying the anti-derivative...}");
+        newSteps.push("\\int f(x)\\,dx = F(x) + C");
+        newSteps.push("\\text{Applying integration by parts or substitution...}");
       } else if (expression.includes('diff')) {
-        newSteps.push("\\\\text{Applying differentiation rules...}");
-        newSteps.push("\\\\text{Using product rule: } d(uv) = u'v + uv'");
+        newSteps.push("\\frac{d}{dx}[uv] = u'v + uv'");
+        newSteps.push("\\text{Applying product/chain rule...}");
       } else if (expression.includes('solve')) {
-        newSteps.push("\\\\text{Isolating variables...}");
+        newSteps.push("\\text{Isolating the variable...}");
       } else {
-        newSteps.push("\\\\text{Evaluating expression algebraically...}");
+        newSteps.push("\\text{Evaluating the expression...}");
       }
       
-      newSteps.push(`= ${outputTex}`);
+      newSteps.push(`=${outputTex}`);
       return newSteps;
     } catch (err) {
       return [
-        "\\\\text{Error: Could not parse expression.}",
-        "\\\\text{Ensure correct syntax: } integrate(x^2, x)"
+        "\\text{Could not parse expression.}",
+        "\\text{Try: integrate(x^2, x) or diff(sin(x), x)}"
       ];
     }
   };

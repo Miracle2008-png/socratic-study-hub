@@ -119,17 +119,29 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
     // Process asynchronously to avoid blocking UI
     setTimeout(() => {
       try {
-        const textToProcess = topic.sections.map(s => s.content).join(' ');
+        const textToProcess = topic.sections.map(s => s.content).join('\n\n');
         
+        // Extract block LaTeX formulas ($$...$$) from text to include in summary
+        const blockFormulaMatches = textToProcess.match(/\$\$[\s\S]+?\$\$/g) || [];
+        const blockFormulas: string[] = blockFormulaMatches
+          .map(f => f.trim())
+          .filter((f, i, arr) => arr.indexOf(f) === i) // unique
+          .slice(0, 6);
+
         // Generate NLP data
-        const summary = TextRank.summarize(textToProcess, 0.5, 12);
+        const textSummary = TextRank.summarize(textToProcess, 0.5, 12);
+        
+        // Merge: text summary sentences + key formulas (formulas first for visibility)
+        const summary = [
+          ...blockFormulas.map(f => `**Key Formula:** ${f}`),
+          ...textSummary
+        ];
+
         const flashcards = ContentGenerator.generateFlashcards(textToProcess);
         const quiz = ContentGenerator.generateQuiz(textToProcess);
         const exam = ContentGenerator.generateExamQuestions(textToProcess);
         const explanation = ContentGenerator.explainLikeIm12(textToProcess);
-        const derivations = (topic.subject === 'mathematics' || topic.subject === 'physics') 
-          ? ContentGenerator.extractDerivations(textToProcess) 
-          : [];
+        const derivations = ContentGenerator.extractDerivations(textToProcess);
 
         setNlpData({ summary, flashcards, quiz, exam, explanation, derivations });
       } catch (err) {
@@ -318,45 +330,33 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
                   },
                 }}
               >
-                {topic.subject === 'engineering' ? sectionContent : topicFullContent}
+                {sectionContent}
               </ReactMarkdown>
 
-              {topic.subject === 'engineering' ? (
-                <div className="tm-read-nav">
-                  <button 
-                    className="tm-nav-btn secondary"
-                    disabled={currentReadIdx === 0}
-                    onClick={() => {
-                      setCurrentReadIdx(prev => prev - 1);
-                      if (contentRef.current) contentRef.current.scrollIntoView({ behavior: 'smooth' });
-                    }}
-                  >
-                    ← Previous Section
-                  </button>
-                  <div className="tm-nav-progress">
-                    <div className="progress-track">
-                      <div className="progress-fill" style={{ width: `${((currentReadIdx + 1) / topic.sections.length) * 100}%` }}></div>
-                    </div>
-                    <span>{currentReadIdx + 1} / {topic.sections.length}</span>
+              <div className="tm-read-nav">
+                <button 
+                  className="tm-nav-btn secondary"
+                  disabled={currentReadIdx === 0}
+                  onClick={() => {
+                    setCurrentReadIdx(prev => prev - 1);
+                    if (contentRef.current) contentRef.current.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  ← Previous Section
+                </button>
+                <div className="tm-nav-progress">
+                  <div className="progress-track">
+                    <div className="progress-fill" style={{ width: `${((currentReadIdx + 1) / topic.sections.length) * 100}%` }}></div>
                   </div>
-                  <button 
-                    className="tm-nav-btn primary"
-                    onClick={handleNextSection}
-                  >
-                    {currentReadIdx === topic.sections.length - 1 ? 'Take the Quiz →' : 'Next Section →'}
-                  </button>
+                  <span>{currentReadIdx + 1} / {topic.sections.length}</span>
                 </div>
-              ) : (
-                <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'center' }}>
-                  <button 
-                    className="tm-nav-btn primary"
-                    onClick={() => handleTabSwitch('quiz')}
-                    style={{ width: '200px' }}
-                  >
-                    Take the Quiz →
-                  </button>
-                </div>
-              )}
+                <button 
+                  className="tm-nav-btn primary"
+                  onClick={handleNextSection}
+                >
+                  {currentReadIdx === topic.sections.length - 1 ? 'Take the Quiz →' : 'Next Section →'}
+                </button>
+              </div>
             </div>
           )}
 
@@ -373,16 +373,19 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
             <div className="nlp-summary-view">
               <h2 className="tm-h2"><Zap size={20} style={{display:'inline', marginRight: 8, color: 'var(--color-accent)'}}/> AI Summary</h2>
               <p className="tm-p" style={{color: 'var(--color-text-secondary)', marginBottom: 24}}>
-                Key points extracted from this chapter using semantic analysis.
+                Key formulas and points extracted from this chapter using semantic analysis.
               </p>
               <div className="summary-points">
                 {nlpData.summary.map((sent, i) => {
-                  // Strip raw markdown symbols that TextRank may have copied verbatim
-                  const clean = sent.replace(/^#{1,6}\s*/gm, '').replace(/\\n/g, ' ').replace(/---/g, '').trim();
+                  // Only strip heading markers and literal \n — preserve $ for LaTeX
+                  const clean = sent.replace(/^#{1,6}\s*/gm, '').replace(/\\n/g, ' ').replace(/^---+$/gm, '').trim();
                   if (!clean) return null;
+                  const isFormula = clean.startsWith('**Key Formula:**');
                   return (
-                    <div key={i} className="summary-point">
-                      <span className="summary-num">{i + 1}</span>
+                    <div key={i} className={`summary-point ${isFormula ? 'formula-point' : ''}`}>
+                      <span className="summary-num" style={isFormula ? { background: 'rgba(212,175,55,0.2)', color: 'var(--color-accent)' } : {}}>
+                        {isFormula ? '∑' : i + 1}
+                      </span>
                       <div className="summary-text" style={{ fontSize: '15px', lineHeight: '1.6' }}>
                         <ReactMarkdown remarkPlugins={[remarkMath, remarkGfm]} rehypePlugins={[rehypeKatex]}>
                           {clean}
@@ -954,6 +957,11 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
           background: var(--color-base-alt); border-radius: 10px;
           padding: 16px 20px; border: var(--border-soft);
         }
+        .summary-point.formula-point {
+          background: rgba(212,175,55,0.04);
+          border-color: rgba(212,175,55,0.2);
+          border-left: 3px solid var(--color-accent);
+        }
         .summary-num {
           flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%;
           background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.4);
@@ -963,7 +971,7 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
         }
         .summary-text {
           margin: 0; font-size: 15px; line-height: 1.75;
-          color: var(--color-text-primary);
+          color: var(--color-text-primary); flex: 1; overflow-x: auto;
         }
 
         /* ─── Exam Tab ───────────────────────────────────────────── */

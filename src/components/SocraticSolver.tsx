@@ -598,17 +598,30 @@ const SocraticSolver: React.FC = () => {
         .sm-wb-placeholder span { font-size: 13px; font-style: italic; }
 
         .scanned-derivation {
-          width: 100%; height: 100%; overflow-y: auto; padding: 32px;
-          display: flex; flex-direction: column; gap: 24px;
+          width: 100%; height: 100%; overflow-y: auto; padding: 24px;
+          display: flex; flex-direction: column; gap: 12px;
         }
         .derivation-step {
-          background: var(--color-surface); padding: 16px 24px;
-          border-radius: var(--border-radius-md); border: var(--border-soft);
-          box-shadow: var(--shadow-sm); animation: fadeSlideUp 0.5s ease backwards;
+          background: rgba(0,0,0,0.2);
+          border: 1px solid var(--color-border);
+          border-left: 3px solid var(--color-accent);
+          border-radius: var(--border-radius-md);
+          overflow: hidden;
+          animation: fadeSlideUp 0.4s ease backwards;
         }
-        .step-num { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--color-accent); margin-bottom: 8px; font-weight: 600; }
-        .katex-rendered { overflow-x: auto; }
-        .success-badge { display: flex; align-items: center; gap: 8px; justify-content: center; color: var(--color-accent); font-weight: 600; padding: 16px; }
+        .derivation-step:nth-child(1) { animation-delay: 0.05s; }
+        .derivation-step:nth-child(2) { animation-delay: 0.1s; }
+        .derivation-step:nth-child(3) { animation-delay: 0.15s; }
+        .derivation-step:nth-child(4) { animation-delay: 0.2s; }
+        .step-num {
+          font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px;
+          color: var(--color-accent); font-weight: 700;
+          background: rgba(212,175,55,0.08);
+          border-bottom: 1px solid var(--color-border);
+          padding: 6px 16px;
+        }
+        .katex-rendered { overflow-x: auto; padding: 16px; font-size: 16px; }
+        .success-badge { display: flex; align-items: center; gap: 8px; justify-content: center; color: var(--color-accent); font-weight: 600; padding: 16px; background: rgba(212,175,55,0.05); border-radius: var(--border-radius-md); border: 1px solid rgba(212,175,55,0.2); }
 
         /* ─── Chat ─── */
         .sm-chat {
