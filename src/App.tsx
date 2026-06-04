@@ -42,7 +42,27 @@ import './index.css';
 import './gamification.css';
 
 const AppContent: React.FC = () => {
-  const [activeTab, setActiveTab] = useState('dashboard');
+  const [activeTab, setActiveTabInternal] = useState(() => {
+    const path = window.location.pathname;
+    if (path === '/' || path === '') return 'dashboard';
+    return path.substring(1);
+  });
+
+  const setActiveTab = (tab: string) => {
+    setActiveTabInternal(tab);
+    const path = tab === 'dashboard' ? '/' : `/${tab}`;
+    window.history.pushState(null, '', path);
+  };
+
+  useEffect(() => {
+    const handlePopState = () => {
+      const path = window.location.pathname;
+      const tab = (path === '/' || path === '') ? 'dashboard' : path.substring(1);
+      setActiveTabInternal(tab);
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
   const [activeTopic, setActiveTopic] = useState<string | null>(null);
   const [activeSatModule, setActiveSatModule] = useState<'Reading & Writing' | 'Math' | null>(null);
   const [isFocusMode, setIsFocusMode] = useState(false);
