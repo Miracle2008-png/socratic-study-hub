@@ -224,35 +224,73 @@ export class ContentGenerator {
     let currentContent: string[] = [];
     let captureLevel = 0;
 
+    // Expanded keyword set covers math, physics, engineering, chemistry, biology
+    const derivKeywords = /deriv|proof|prove|theorem|law of|equation of|formulat|principle|analysis|method|calculat|determina|solution|worked example|example:/i;
+
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
-      const hMatch = line.match(/^(#{1,6})\s+(.*(deriv|proof|prove).*)/i);
+      const hMatch = line.match(/^(#{1,6})\s+(.+)/);
       const isDivider = line.match(/^---+\s*$/);
-      
+
       if (hMatch) {
+        const headingText = hMatch[2];
+        const isDerivHeading = derivKeywords.test(headingText);
+
         if (capturing) {
-          derivations.push({ title: currentTitle, content: currentContent.join('\n').trim() });
+          // Save previous section if it has actual content
+          const joinedContent = currentContent.join('\n').trim();
+          if (joinedContent.length > 30) {
+            derivations.push({ title: currentTitle, content: joinedContent });
+          }
+          capturing = false;
         }
-        capturing = true;
-        captureLevel = hMatch[1].length;
-        // Keep the colon, only strip markdown bold/italic asterisks from title
-        currentTitle = hMatch[2].replace(/[\*]/g, '').trim();
-        currentContent = [];
+
+        if (isDerivHeading) {
+          capturing = true;
+          captureLevel = hMatch[1].length;
+          currentTitle = headingText.replace(/[*]/g, '').trim();
+          currentContent = [];
+        }
       } else if (capturing) {
         const nextH = line.match(/^(#{1,6})\s+/);
         if (isDivider || (nextH && nextH[1].length <= captureLevel)) {
-          derivations.push({ title: currentTitle, content: currentContent.join('\n').trim() });
+          const joinedContent = currentContent.join('\n').trim();
+          if (joinedContent.length > 30) {
+            derivations.push({ title: currentTitle, content: joinedContent });
+          }
           capturing = false;
+          currentContent = [];
         } else {
           currentContent.push(line);
         }
       }
     }
+
+    // Don't forget the last captured section
     if (capturing && currentContent.length > 0) {
-      derivations.push({ title: currentTitle, content: currentContent.join('\n').trim() });
+      const joinedContent = currentContent.join('\n').trim();
+      if (joinedContent.length > 30) {
+        derivations.push({ title: currentTitle, content: joinedContent });
+      }
     }
 
-    return derivations;
+    // Fallback: if nothing matched by heading, extract any block that has 2+ block formulas
+    if (derivations.length === 0) {
+      const blockFormulaRe = /\$\$[\s\S]+?\$\$/g;
+      const sections = text.split(/\n#{1,3} /);
+      for (const sec of sections) {
+        const formulaMatches = sec.match(blockFormulaRe) || [];
+        if (formulaMatches.length >= 2) {
+          const titleLine = sec.split('\n')[0].replace(/[*#]/g, '').trim();
+          const content = sec.trim();
+          if (titleLine.length > 3 && content.length > 60) {
+            derivations.push({ title: titleLine || 'Key Equations', content });
+          }
+        }
+      }
+    }
+
+    return derivations.slice(0, 10); // Cap at 10 to avoid overload
   }
 
   static generateFlashcards(text: string): Array<{front: string, back: string, type: string}> {

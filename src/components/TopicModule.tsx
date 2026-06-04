@@ -265,11 +265,9 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
             <button className={`tm-tab ${activeTab === 'mindmap' ? 'active' : ''}`} onClick={() => handleTabSwitch('mindmap')}>
               <Network size={16} /> Visual Mind Map
             </button>
-            {(topic.subject === 'mathematics' || topic.subject === 'physics') && (
-              <button className={`tm-tab ${activeTab === 'derivations' ? 'active' : ''}`} onClick={() => handleTabSwitch('derivations')}>
-                <Zap size={16} /> Derivations & Proofs
-              </button>
-            )}
+            <button className={`tm-tab ${activeTab === 'derivations' ? 'active' : ''}`} onClick={() => handleTabSwitch('derivations')}>
+              <Zap size={16} /> Derivations & Proofs
+            </button>
           </div>
         </div>
         
@@ -619,7 +617,10 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
                     <button
                       key={i}
                       className={`sidebar-toc-entry level-${s.level} ${currentReadIdx === i ? 'active' : ''}`}
-                      onClick={() => setCurrentReadIdx(i)}
+                      onClick={() => {
+                        setCurrentReadIdx(i);
+                        if (contentRef.current) contentRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      }}
                     >
                       {s.heading}
                     </button>

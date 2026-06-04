@@ -293,7 +293,8 @@ const AppContent: React.FC = () => {
   const tabLabel = (id: string) => {
     const map: Record<string, string> = {
       math: 'Mathematics', physics: 'Physics', chemistry: 'Chemistry',
-      biology: 'Biology', ai_hub: 'AI Hub', grapher: '2D Grapher',
+      biology: 'Biology', engineering: 'Engineering',
+      ai_hub: 'AI Hub', grapher: '2D Grapher',
       mindmap: 'Knowledge Map', formula_blog: 'Formula Bank',
       calculus_solver: 'Calculus Solver',
       essay_grader: 'Essay Grader', mock_exam: 'Mock Exam', predictor_hub: 'Predictor Hub',
