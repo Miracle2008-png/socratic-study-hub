@@ -1,7 +1,3 @@
----
-title: "The S-N Curve (Stress-Life Method)"
----
-
 # The S-N Curve (Stress-Life Method)
 
 The oldest and most common way to design against fatigue is the Stress-Life approach. It relies on extensive empirical testing to determine how many cycles a part can survive at a specific stress level.

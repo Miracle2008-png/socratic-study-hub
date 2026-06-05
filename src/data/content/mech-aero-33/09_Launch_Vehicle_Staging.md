@@ -1,7 +1,3 @@
----
-title: "Launch Vehicle Staging"
----
-
 # Launch Vehicle Staging
 
 Due to the "Tyranny of the Rocket Equation," no single-stage rocket built with current chemical propulsion technology can reach orbit with a meaningful payload. To overcome the exponential mass penalty of carrying heavy, empty tanks all the way to orbit, rockets use **staging**.

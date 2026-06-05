@@ -1,7 +1,3 @@
----
-title: "Advanced Nozzle Concepts"
----
-
 # Advanced Nozzle Concepts
 
 Standard bell nozzles (Convergent-Divergent) are highly efficient at their specific design altitude but suffer performance losses when operated off-design (under-expanded or over-expanded) during an ascent from sea level to orbit. To overcome this "altitude penalty," engineers have developed altitude-compensating nozzle designs.

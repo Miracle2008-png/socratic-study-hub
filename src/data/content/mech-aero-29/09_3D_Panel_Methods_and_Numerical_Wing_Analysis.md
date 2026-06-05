@@ -1,7 +1,3 @@
----
-title: "3D Panel Methods and Numerical Wing Analysis"
----
-
 # 3D Panel Methods and Numerical Wing Analysis
 
 The 2D panel method (discussed for airfoil analysis) extends naturally to 3D for complete wing and aircraft configurations. Three-dimensional panel methods are the industry standard for rapid aerodynamic analysis of complex geometries where VLM is insufficient (VLM ignores thickness) but full CFD would be prohibitively expensive.

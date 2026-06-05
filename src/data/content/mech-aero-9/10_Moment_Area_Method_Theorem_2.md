@@ -1,7 +1,3 @@
----
-title: "Moment-Area Method: Theorem 2"
----
-
 # Moment-Area Method: Theorem 2
 
 Theorem 1 allows us to find the slope of the beam. However, engineers are primarily concerned with finding the physical vertical sag (deflection). This is accomplished using the second theorem of the Moment-Area method.

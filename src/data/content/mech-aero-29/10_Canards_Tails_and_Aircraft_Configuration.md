@@ -1,7 +1,3 @@
----
-title: "Canards, Tails, and Aircraft Configuration"
----
-
 # Canards, Tails, and Aircraft Configuration
 
 An aircraft is not simply a wing — it is a complete 3D aerodynamic configuration including the main wing, fuselage, empennage (tail group), engine nacelles, and landing gear. The interactions and design choices for the complete configuration profoundly affect performance, stability, and control.

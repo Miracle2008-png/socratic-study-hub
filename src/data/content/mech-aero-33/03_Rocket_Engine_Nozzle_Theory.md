@@ -1,7 +1,3 @@
----
-title: "Rocket Engine Nozzle Theory"
----
-
 # Rocket Engine Nozzle Theory
 
 The heart of a rocket engine's performance lies in its nozzle. The nozzle's job is to convert the thermal energy (high temperature and pressure) generated in the combustion chamber into kinetic energy (high velocity) in the exhaust jet. Almost all rockets use a **Convergent-Divergent (CD) Nozzle**, also known as a de Laval nozzle.

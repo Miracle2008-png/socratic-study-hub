@@ -1,7 +1,3 @@
----
-title: "Surface Emission and Emissivity"
----
-
 # Surface Emission and Emissivity
 
 Real surfaces are not perfect blackbodies. They emit less radiation than a blackbody at the same temperature. To quantify this deviation, we define the property **emissivity**.

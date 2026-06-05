@@ -1,7 +1,3 @@
----
-title: "The General Heat Conduction Equation"
----
-
 # The General Heat Conduction Equation
 
 To determine the temperature distribution $T(x,y,z,t)$ within a solid, we must apply the principle of conservation of energy to a differential control volume and substitute Fourier's Law. This yields the general heat conduction equation.

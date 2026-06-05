@@ -1,7 +1,3 @@
----
-title: "Irreversibility and Lost Work"
----
-
 # Irreversibility and Lost Work
 
 Entropy generation is not merely an abstract thermodynamic bookkeeping concept. Every unit of entropy generated represents **destroyed work potential** — useful work that could have been obtained from the process but was permanently lost to irreversibility.

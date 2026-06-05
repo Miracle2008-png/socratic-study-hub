@@ -1,7 +1,3 @@
----
-title: "Elastic Strain Energy for Axial Loading"
----
-
 # Elastic Strain Energy for Axial Loading
 
 To make energy methods practical, we must evaluate the master volume integral ($U_i = \int \frac{\sigma^2}{2E} dV$) for the specific types of loading we encounter in engineering.

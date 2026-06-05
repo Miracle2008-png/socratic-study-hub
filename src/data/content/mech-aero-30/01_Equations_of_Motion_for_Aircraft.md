@@ -1,7 +1,3 @@
----
-title: "Equations of Motion for Aircraft"
----
-
 # Equations of Motion for Aircraft
 
 Aircraft flight mechanics begins with applying Newton's laws to a rigid aircraft moving through the atmosphere. Unlike a simple particle, the aircraft has six degrees of freedom (6-DOF): three translational (surge, heave, sway) and three rotational (roll, pitch, yaw). Deriving and understanding the full equations of motion is the foundation for all stability, control, and performance analysis.

@@ -1,7 +1,3 @@
----
-title: "Introduction to Turbomachinery"
----
-
 # Introduction to Turbomachinery
 
 **Turbomachines** are devices that transfer energy between a fluid and a rotating shaft using dynamically shaped blades or vanes. They are the workhorses of modern engineering, powering everything from municipal water supplies to jet aircraft and hydroelectric dams.

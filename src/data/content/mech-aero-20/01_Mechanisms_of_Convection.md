@@ -1,7 +1,3 @@
----
-title: "Mechanisms of Convection"
----
-
 # Mechanisms of Convection
 
 Conduction occurs in stagnant fluids, but when fluid is in macroscopic bulk motion, heat transfer is vastly accelerated. This combined effect of conduction and fluid motion is called **convection**.

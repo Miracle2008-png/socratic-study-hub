@@ -1,7 +1,3 @@
----
-title: "Shear Stress in Beams"
----
-
 # Shear Stress in Beams
 
 Applying the Shear Formula ($\tau = VQ/It$) to various cross-sectional shapes reveals distinct and critical patterns of stress distribution that heavily influence structural design.

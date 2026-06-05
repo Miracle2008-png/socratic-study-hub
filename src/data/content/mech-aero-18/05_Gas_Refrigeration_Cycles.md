@@ -1,7 +1,3 @@
----
-title: "Gas Refrigeration Cycles"
----
-
 # Gas Refrigeration Cycles
 
 While vapor-compression cycles rely on the massive heat transfer capabilities of boiling and condensing fluids, a refrigeration cycle can also be executed using a gas that never undergoes a phase change. The thermodynamic model for this is the **reversed Brayton cycle**.

@@ -1,7 +1,3 @@
----
-title: "Introduction to Fracture Mechanics"
----
-
 # Introduction to Fracture Mechanics
 
 Throughout the entire mechanics of materials curriculum, we have calculated stresses ($\sigma, \tau$) based on the assumption that the material is a perfectly continuous, flawless continuum. We applied Failure Theories (von Mises, Modified Mohr) assuming the material would fail globally when the mathematical stress exceeded a handbook property ($\sigma_Y$ or $\sigma_{ut}$).

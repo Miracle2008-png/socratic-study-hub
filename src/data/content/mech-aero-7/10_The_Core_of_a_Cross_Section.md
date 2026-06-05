@@ -1,7 +1,3 @@
----
-title: "The Core of a Cross-Section"
----
-
 # The Core of a Cross-Section
 
 When dealing with eccentrically loaded columns (axial load + bending), a critical civil engineering concept arises, particularly when dealing with brittle materials like concrete, stone, or unreinforced masonry.

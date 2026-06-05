@@ -1,7 +1,3 @@
----
-title: "Nonlinear Vibrations"
----
-
 # Nonlinear Vibrations
 
 All vibration analysis so far has assumed **linearity**: springs obey $F = kx$ exactly, damping is viscous ($F = c\dot{x}$), and all deflections are small. Real physical systems inevitably deviate from linearity, sometimes producing behaviors that linear theory predicts are impossible — yet are routinely observed in practice.

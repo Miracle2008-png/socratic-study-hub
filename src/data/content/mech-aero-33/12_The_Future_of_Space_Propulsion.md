@@ -1,7 +1,3 @@
----
-title: "The Future of Space Propulsion"
----
-
 # The Future of Space Propulsion
 
 While chemical rockets will remain the dominant technology for escaping Earth's gravity well for the foreseeable future, expanding human presence deep into the solar system requires radical leaps in propulsion efficiency.

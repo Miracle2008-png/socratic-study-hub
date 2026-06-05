@@ -1,7 +1,3 @@
----
-title: "The Torsion Formula"
----
-
 # The Torsion Formula
 
 Having established that shear strain $\gamma$ varies linearly from the center to the outer surface of a circular shaft, we can now determine the distribution of shear stress $\tau$ and relate it to the internal torque $T$.

@@ -1,7 +1,3 @@
----
-title: "Introduction to Statics"
----
-
 # Introduction to Statics
 
 **Statics** is the branch of engineering mechanics that is concerned with the analysis of loads (force and torque, or "moment") on physical systems in static equilibrium. That is, in a state where the relative positions of subsystems do not vary over time, or where components and structures are at a constant velocity. 

@@ -1,7 +1,3 @@
----
-title: "Curved Beams"
----
-
 # Curved Beams
 
 The standard flexure formula ($\sigma = -My/I$) was derived explicitly for beams that have a straight longitudinal axis before any load is applied. 

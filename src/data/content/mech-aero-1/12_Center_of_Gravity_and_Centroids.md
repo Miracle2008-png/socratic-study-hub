@@ -1,7 +1,3 @@
----
-title: "Center of Gravity and Centroids"
----
-
 # Center of Gravity and Centroids
 
 In many engineering problems, forces are distributed over a volume, area, or line rather than being concentrated at a single point. Gravity is the most common example of a distributed volume force. To simplify analysis, we locate the single point where the *resultant* of these distributed forces acts.

@@ -1,7 +1,3 @@
----
-title: "Transient Conduction: Spatial Effects (Heisler Charts)"
----
-
 # Transient Conduction: Spatial Effects 
 
 When the Biot number $Bi > 0.1$, the temperature within the solid is no longer uniform. The surface cools (or heats) rapidly, while the core lags behind. Temperature is now a function of both time and position: $T = T(x,t)$ or $T(r,t)$.

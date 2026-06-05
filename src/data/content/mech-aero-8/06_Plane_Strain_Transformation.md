@@ -1,7 +1,3 @@
----
-title: "Plane Strain Transformation"
----
-
 # Plane Strain Transformation
 
 Just as we transformed stress components ($\sigma, \tau$) to different coordinate orientations, we must also transform strain components ($\epsilon, \gamma$). 

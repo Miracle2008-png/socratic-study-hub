@@ -1,7 +1,3 @@
----
-title: "Wankel Rotary Engines"
----
-
 # Wankel Rotary Engines
 
 The Wankel rotary engine is a unique type of internal combustion engine that eliminates reciprocating pistons entirely. Instead of pistons moving up and down, a triangular rotor spins eccentrically within a specially shaped housing. Invented by Felix Wankel in the 1950s, it achieved fame primarily through Mazda's sports cars (RX-7, RX-8).

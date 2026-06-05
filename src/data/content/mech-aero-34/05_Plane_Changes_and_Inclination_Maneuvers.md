@@ -1,7 +1,3 @@
----
-title: "Plane Changes and Inclination Maneuvers"
----
-
 # Plane Changes and Inclination Maneuvers
 
 Hohmann transfers change the *size* of an orbit (altitude). However, if you need to change the *orientation* of the orbit—specifically its inclination or Right Ascension of the Ascending Node (RAAN)—you must perform a plane change maneuver.

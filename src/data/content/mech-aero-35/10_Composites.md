@@ -1,7 +1,3 @@
----
-title: "Composites"
----
-
 # Composites
 
 When monolithic materials (metals, ceramics, polymers) reach their performance limits, engineers turn to composites. A composite material is a macroscopic combination of two or more distinct materials, with a distinct interface between them, designed to achieve a combination of properties that cannot be met by any of the constituents alone.

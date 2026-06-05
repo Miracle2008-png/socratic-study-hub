@@ -1,7 +1,3 @@
----
-title: "Bending Deformation of a Straight Member"
----
-
 # Bending Deformation of a Straight Member
 
 Before we can derive an equation for the stress inside a bending beam, we must understand the kinematics of how the material physically deforms. We restrict our analysis to prismatic beams having a longitudinal plane of symmetry, with the bending moment applied precisely in this plane.

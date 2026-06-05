@@ -1,7 +1,3 @@
----
-title: "Heat Pump Applications and Defrost"
----
-
 # Heat Pump Applications and Defrost
 
 A **heat pump** is simply an air conditioning system that can reverse its cycle. Instead of pumping heat from the inside of a building to the outside, a reversing valve alters the flow of refrigerant, causing the system to extract heat from the cold winter air outside and pump it into the warm building inside. 

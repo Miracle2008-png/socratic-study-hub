@@ -1,7 +1,3 @@
----
-title: "Orbital Rendezvous and Proximity Operations"
----
-
 # Orbital Rendezvous and Proximity Operations
 
 Rendezvous is the process of bringing two spacecraft together in the same orbit so they can dock (e.g., a Dragon capsule docking with the ISS). It is one of the most counter-intuitive processes in physics, famously frustrating early Gemini astronauts until the orbital mechanics were fully understood.

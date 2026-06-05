@@ -1,7 +1,3 @@
----
-title: "Advanced Engine Materials"
----
-
 # Advanced Engine Materials
 
 The history of jet engine development is inextricably linked to the history of materials science. The thermodynamic efficiency of a gas turbine is directly tied to how hot it can run—specifically, the Turbine Inlet Temperature (TIT). Every major leap in engine performance has been enabled by materials that can survive more extreme environments.

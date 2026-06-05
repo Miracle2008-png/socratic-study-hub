@@ -1,7 +1,3 @@
----
-title: "Panel Methods"
----
-
 # Panel Methods
 
 Analytical conformal mapping works beautifully for simple geometric shapes, but designing a modern transonic supercritical wing or a complex multi-element flap system requires a numerical approach. **Panel Methods** (also called boundary element methods) are the classical numerical implementation of inviscid potential flow theory.

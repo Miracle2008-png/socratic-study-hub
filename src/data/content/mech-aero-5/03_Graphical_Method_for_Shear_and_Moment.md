@@ -1,7 +1,3 @@
----
-title: "Graphical Method for Shear and Moment"
----
-
 # Graphical Method for Shear and Moment
 
 By applying equilibrium to a differential element of a beam $dx$, we uncover profound differential relationships between the distributed load $w(x)$, the shear force $V(x)$, and the bending moment $M(x)$. These relationships allow us to construct shear and moment diagrams rapidly without writing piecewise algebraic equations.

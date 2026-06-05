@@ -1,7 +1,3 @@
----
-title: "Lateral-Directional Static Stability"
----
-
 # Lateral-Directional Static Stability
 
 Lateral and directional static stability refer to the aircraft's tendency to return to wings-level, zero-sideslip flight after a disturbance in roll or yaw. These two axes are strongly coupled; a disturbance in one almost always induces a motion in the other.

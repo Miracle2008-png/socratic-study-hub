@@ -1,7 +1,3 @@
----
-title: "Elastic Strain Energy for Torsion and Shear"
----
-
 # Elastic Strain Energy for Torsion and Shear
 
 To complete our energy toolkit, we must account for the strain energy stored when a material is warped by shear stresses ($\tau$), either from twisting (torsion) or from transverse shear forces.

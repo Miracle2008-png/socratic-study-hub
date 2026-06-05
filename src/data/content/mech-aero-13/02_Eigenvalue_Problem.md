@@ -1,7 +1,3 @@
----
-title: "The Eigenvalue Problem in Structural Dynamics"
----
-
 # The Eigenvalue Problem in Structural Dynamics
 
 The equation $\det([K] - \omega^2[M]) = 0$ is precisely the **generalized eigenvalue problem** from linear algebra. The natural frequencies squared ($\omega_i^2$) are the **eigenvalues**, and the mode shape vectors $\{X\}^{(i)}$ are the **eigenvectors**.

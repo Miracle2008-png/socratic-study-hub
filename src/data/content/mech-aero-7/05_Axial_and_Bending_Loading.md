@@ -1,7 +1,3 @@
----
-title: "Axial and Bending Loading"
----
-
 # Axial and Bending Loading
 
 When a member is subjected to both an axial force (tension or compression) and a bending moment, both loads produce the exact same type of stress: **normal stress ($\sigma$)** acting perpendicular to the cross-section. 

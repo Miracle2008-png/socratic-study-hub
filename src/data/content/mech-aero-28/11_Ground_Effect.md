@@ -1,7 +1,3 @@
----
-title: "Ground Effect"
----
-
 # Ground Effect
 
 **Ground effect** is the significant change in aerodynamic characteristics that occurs when a wing or aircraft flies at very low altitude — within approximately one wingspan of the ground. The proximity of a solid boundary fundamentally alters the induced flow field, with both beneficial and potentially dangerous consequences.

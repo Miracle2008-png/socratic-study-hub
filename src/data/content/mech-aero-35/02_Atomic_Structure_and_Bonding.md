@@ -1,7 +1,3 @@
----
-title: "Atomic Structure and Bonding"
----
-
 # Atomic Structure and Bonding
 
 The macroscopic properties of a material (how hard it is, whether it conducts electricity, its melting point) are fundamentally dictated by the types of atoms present and, crucially, how those atoms bond to one another.

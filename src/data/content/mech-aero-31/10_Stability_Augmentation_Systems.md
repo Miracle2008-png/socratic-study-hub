@@ -1,7 +1,3 @@
----
-title: "Stability Augmentation Systems (SAS)"
----
-
 # Stability Augmentation Systems (SAS)
 
 As aircraft designs evolved for higher performance (faster speeds, swept wings, higher altitudes), their inherent aerodynamic stability often degraded. To maintain acceptable handling qualities without compromising performance, engineers introduced active electronic systems known as **Stability Augmentation Systems (SAS)**.

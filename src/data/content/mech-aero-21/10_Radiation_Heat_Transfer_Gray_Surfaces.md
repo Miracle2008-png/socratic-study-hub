@@ -1,7 +1,3 @@
----
-title: "Radiation Heat Transfer: Gray Surfaces"
----
-
 # Radiation Heat Transfer: Gray Surfaces
 
 Real surfaces are not black; they have an emissivity $\varepsilon < 1$ and a reflectivity $\rho = 1 - \varepsilon$. This completely breaks the simple blackbody equations because radiation striking a surface doesn't just get absorbed; it bounces. Radiation between two gray walls bounces back and forth infinitely.

@@ -1,7 +1,3 @@
----
-title: "Handling Qualities and Flying Qualities"
----
-
 # Handling Qualities and Flying Qualities
 
 **Flying qualities** (or handling qualities) describe the subjective "feel" of an aircraft from the pilot's perspective. They are the measure of how easily and precisely a pilot can perform a specific task (like tracking a target, flying an instrument approach, or landing in a crosswind) using the aircraft's stability and control characteristics.

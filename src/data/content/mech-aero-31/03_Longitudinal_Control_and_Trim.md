@@ -1,7 +1,3 @@
----
-title: "Longitudinal Control and Trim"
----
-
 # Longitudinal Control and Trim
 
 While static stability determines the aircraft's tendency to return to equilibrium, **control** determines the pilot's ability to establish that equilibrium (trim) at various speeds and attitudes, and to maneuver the aircraft.

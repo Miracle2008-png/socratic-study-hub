@@ -1,7 +1,3 @@
----
-title: "The P-v Diagram and Quality"
----
-
 # The P-v Diagram and Quality
 
 The **Pressure-specific volume ($P$-$v$)** diagram is the most important thermodynamic diagram for engineers. It maps all possible states of a pure substance and visually reveals the two-phase region where phase change occurs.

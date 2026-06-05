@@ -1,7 +1,3 @@
----
-title: "Lagrange Points"
----
-
 # Lagrange Points
 
 In the standard Two-Body Problem, a spacecraft orbits a single dominant mass. However, if we introduce a third body (e.g., the Earth, the Sun, and a spacecraft), we enter the complex realm of the Three-Body Problem.

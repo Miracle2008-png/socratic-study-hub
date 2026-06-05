@@ -1,7 +1,3 @@
----
-title: "Introduction to Transverse Shear"
----
-
 # Introduction to Transverse Shear
 
 In our previous discussion of bending, we focused exclusively on the normal stresses ($\sigma$) caused by the internal bending moment $M$. However, equilibrium of a beam subjected to transverse loading also requires an internal transverse shear force $V$.

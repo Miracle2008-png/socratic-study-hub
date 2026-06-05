@@ -1,7 +1,3 @@
----
-title: "Introduction to Bending"
----
-
 # Introduction to Bending
 
 In previous topics, we analyzed members subjected to axial forces (causing uniform normal stress) and torques (causing shear stress). We now turn our attention to the most common structural element in all of engineering: the **beam**.

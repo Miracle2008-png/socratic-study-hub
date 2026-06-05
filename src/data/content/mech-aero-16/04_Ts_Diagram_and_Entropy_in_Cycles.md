@@ -1,7 +1,3 @@
----
-title: "The T-s Diagram and Entropy in Cycles"
----
-
 # The T-s Diagram and Entropy in Cycles
 
 The **Temperature-Entropy ($T$-$s$) diagram** is as important to thermodynamics as the $P$-$v$ diagram. It provides an immediate visual interpretation of heat transfer and work in thermodynamic cycles, and reveals the irreversibilities present in real systems.

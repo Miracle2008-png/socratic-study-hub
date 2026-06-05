@@ -1,7 +1,3 @@
----
-title: "Mean Stress Effects (Goodman Diagram)"
----
-
 # Mean Stress Effects (Goodman Diagram)
 
 Standard S-N curves are generated using fully reversed bending—meaning the stress cycles from, for example, +100 MPa (tension) to -100 MPa (compression) and back. The *mean* stress is zero.

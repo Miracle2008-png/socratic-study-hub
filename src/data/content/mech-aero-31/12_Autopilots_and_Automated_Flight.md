@@ -1,7 +1,3 @@
----
-title: "Autopilots and Automated Flight"
----
-
 # Autopilots and Automated Flight
 
 While Stability Augmentation Systems (SAS) improve the aircraft's dynamic response to short-term disturbances, **Autopilots** (Automatic Flight Control Systems - AFCS) handle outer-loop control: guiding the aircraft along a desired trajectory, navigating, and managing long-term flight phases without direct pilot intervention on the flight controls.

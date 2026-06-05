@@ -1,7 +1,3 @@
----
-title: "Solving Indeterminate Beams by Integration"
----
-
 # Solving Indeterminate Beams by Integration
 
 The most rigorous method for solving a statically indeterminate beam is direct integration of the elastic curve ($EI v'' = M$). 

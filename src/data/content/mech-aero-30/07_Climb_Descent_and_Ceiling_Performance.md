@@ -1,7 +1,3 @@
----
-title: "Climb, Descent, and Ceiling Performance"
----
-
 # Climb, Descent, and Ceiling Performance
 
 After establishing steady level flight as the baseline, we extend performance analysis to climbing and descending flight — essential for determining takeoff field length requirements, climb gradients, maximum altitude capability, and fuel burn over a complete mission profile.

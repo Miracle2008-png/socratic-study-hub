@@ -1,7 +1,3 @@
----
-title: "Advanced Applications of Shear Flow"
----
-
 # Advanced Applications of Shear Flow
 
 The concept of shear flow ($q = VQ/I$) extends far beyond simple I-beams and C-channels. It is the fundamental analytical tool used in the design of modern semi-monocoque aerospace structures, such as aircraft fuselages and wing boxes.

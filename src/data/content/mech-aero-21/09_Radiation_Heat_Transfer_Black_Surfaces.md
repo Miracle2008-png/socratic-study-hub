@@ -1,7 +1,3 @@
----
-title: "Radiation Heat Transfer: Black Surfaces"
----
-
 # Radiation Heat Transfer: Black Surfaces
 
 Calculating the net heat transfer rate between surfaces is the ultimate goal of radiation analysis. We begin with the simplest case: an enclosure made entirely of perfect blackbodies ($\varepsilon = 1$, $\alpha = 1$, $\rho = 0$).

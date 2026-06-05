@@ -1,7 +1,3 @@
----
-title: "Solving Indeterminate Beams by Superposition"
----
-
 # Solving Indeterminate Beams by Superposition
 
 Direct integration is tedious. A far more elegant and commonly used engineering approach for solving indeterminate beams is the **Method of Superposition**.

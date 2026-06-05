@@ -1,7 +1,3 @@
----
-title: "Flying Qualities and Handling Qualities Specifications"
----
-
 # Flying Qualities and Handling Qualities Specifications
 
 A structurally sound, aerodynamically efficient aircraft is useless if the pilot cannot control it safely and precisely. **Flying qualities** (or **handling qualities**) is the discipline quantifying how an aircraft feels and responds to pilot inputs, and establishing the criteria that determine whether those qualities are acceptable for the intended mission.

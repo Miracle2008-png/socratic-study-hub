@@ -1,7 +1,3 @@
----
-title: "Absorption, Reflection, and Transmission"
----
-
 # Absorption, Reflection, and Transmission
 
 When thermal radiation (Irradiation, $G$) strikes a surface, the energy must be conserved. It can suffer three fates: it can be absorbed by the material, reflected away from the surface, or transmitted through the material.

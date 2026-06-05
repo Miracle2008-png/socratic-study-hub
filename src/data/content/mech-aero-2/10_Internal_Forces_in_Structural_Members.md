@@ -1,7 +1,3 @@
----
-title: "Internal Forces in Structural Members"
----
-
 # Internal Forces in Structural Members
 
 Until now, we have treated individual members (like beams or multi-force frame members) as rigid black boxes. We found the external forces and pin reactions acting on their surfaces, but we did not look *inside* the material.

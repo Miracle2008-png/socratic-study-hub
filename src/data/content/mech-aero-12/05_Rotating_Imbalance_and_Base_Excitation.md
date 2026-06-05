@@ -1,7 +1,3 @@
----
-title: "Rotating Imbalance and Base Excitation"
----
-
 # Rotating Imbalance and Base Excitation
 
 The harmonic force $F_0\sin(\Omega t)$ rarely appears as a pure external force in reality. The two most common physical sources of forced vibration in mechanical systems are **rotating imbalance** (in machines) and **base excitation** (in vehicles and earthquake engineering).

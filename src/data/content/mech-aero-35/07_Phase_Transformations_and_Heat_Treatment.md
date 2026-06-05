@@ -1,7 +1,3 @@
----
-title: "Phase Transformations and Heat Treatment"
----
-
 # Phase Transformations and Heat Treatment
 
 Phase diagrams map out equilibrium states—what the material *wants* to look like if given infinite time at a specific temperature. However, engineering reality is dictated by kinetics—how fast things happen. By intentionally heating and cooling metals at specific rates, we bypass equilibrium and "freeze in" non-equilibrium microstructures, drastically altering the material's properties. This is the science of **heat treatment**.

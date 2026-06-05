@@ -1,7 +1,3 @@
----
-title: "Electromagnetic Spectrum and Thermal Radiation"
----
-
 # Electromagnetic Spectrum and Thermal Radiation
 
 Unlike conduction and convection, which require a material medium (solid or fluid) to transfer heat, **thermal radiation** can propagate perfectly through a pure vacuum. In fact, it transfers heat *most* efficiently in a vacuum, as there is no matter to absorb or scatter the energy.

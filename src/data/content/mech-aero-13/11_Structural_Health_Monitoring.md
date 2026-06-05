@@ -1,7 +1,3 @@
----
-title: "Structural Health Monitoring"
----
-
 # Structural Health Monitoring
 
 **Structural Health Monitoring (SHM)** is the process of using permanently embedded sensors to continuously monitor the in-service behavior of a structure, detect damage as it occurs, and assess remaining structural life — in real time, without taking the structure out of service.

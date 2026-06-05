@@ -1,7 +1,3 @@
----
-title: "The Second Law of Thermodynamics"
----
-
 # The Second Law of Thermodynamics
 
 The First Law tells us that energy is conserved. The Second Law tells us something deeper: **not all energy is equally useful**, and natural processes have a preferred direction that the First Law alone cannot explain.

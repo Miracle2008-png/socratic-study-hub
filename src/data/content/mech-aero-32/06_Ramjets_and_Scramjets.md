@@ -1,7 +1,3 @@
----
-title: "Ramjets and Scramjets"
----
-
 # Ramjets and Scramjets
 
 Ramjets and Scramjets represent the simplest and most extreme forms of air-breathing jet propulsion. They contain no moving parts—no compressor blades to compress air, and no turbine blades to extract power. They rely entirely on the high forward speed of the vehicle to ram air into the engine and compress it.

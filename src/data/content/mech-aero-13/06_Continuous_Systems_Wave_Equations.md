@@ -1,7 +1,3 @@
----
-title: "Continuous Systems: Wave Equations"
----
-
 # Continuous Systems: Wave Equations
 
 Lumped-parameter multi-DOF models discretize a structure into finite masses connected by springs. But real structures — rods, beams, plates, shells — are **continuous**: they have infinite DOF (mass and stiffness distributed at every point). The exact governing equation for vibration is a **partial differential equation** (PDE).

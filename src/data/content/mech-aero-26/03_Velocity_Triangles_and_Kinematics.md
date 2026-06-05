@@ -1,7 +1,3 @@
----
-title: "Velocity Triangles and Kinematics"
----
-
 # Velocity Triangles and Kinematics
 
 To use the Euler Turbomachine Equation ($w = U_2 V_{\theta 2} - U_1 V_{\theta 1}$), we must know the tangential fluid velocities ($V_{\theta}$). However, fluid does not flow straight through a rotating machine. To figure out the fluid's true trajectory, we use **Velocity Triangles**, which relate the absolute fluid velocity, the relative fluid velocity, and the blade velocity.

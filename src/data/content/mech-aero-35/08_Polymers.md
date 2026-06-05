@@ -1,7 +1,3 @@
----
-title: "Polymers"
----
-
 # Polymers
 
 Polymers (which include plastics and rubbers) are ubiquitous in modern engineering due to their extremely low density, high flexibility, excellent corrosion resistance, and low manufacturing cost. Their mechanical properties are dictated not by a metallic crystal lattice, but by the behavior of incredibly long molecular chains.

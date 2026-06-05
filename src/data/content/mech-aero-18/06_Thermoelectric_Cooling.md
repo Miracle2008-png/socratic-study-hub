@@ -1,7 +1,3 @@
----
-title: "Thermoelectric Cooling"
----
-
 # Thermoelectric Cooling
 
 Unlike vapor-compression or absorption systems, thermoelectric coolers (TECs) are solid-state devices. They have no moving parts, no circulating fluids, and no bulk compressors or expansion valves. They utilize quantum mechanical effects within semiconductor materials to pump heat directly using electricity.

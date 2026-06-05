@@ -1,7 +1,3 @@
----
-title: "Cogeneration and CHP"
----
-
 # Cogeneration and Combined Heat and Power (CHP)
 
 In a conventional power plant, the primary objective is to maximize the generation of work (electricity). However, thermodynamics dictates that a large portion of the input heat must be rejected to a cold reservoir (condenser or atmosphere). This rejected heat is usually at too low a temperature (e.g., 30-40°C) to be practically useful for industrial processes.

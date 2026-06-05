@@ -1,7 +1,3 @@
----
-title: "Vortex Sheet and Bound Circulation"
----
-
 # Vortex Sheet and Bound Circulation
 
 The concept of a vortex sheet is central to both the mathematical theory of lift and the numerical panel methods used in modern aerodynamics. It provides the physical picture for how an airfoil generates circulation.

@@ -1,7 +1,3 @@
----
-title: "Introduction to Column Buckling"
----
-
 # Introduction to Column Buckling
 
 Throughout our study of mechanics of materials, we have analyzed structural failure based entirely on **strength limit states**. We calculated internal stresses and predicted that a part would fail when those stresses exceeded the material's yield strength ($\sigma_Y$) or ultimate strength ($\sigma_{ut}$).

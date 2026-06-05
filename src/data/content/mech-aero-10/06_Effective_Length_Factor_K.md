@@ -1,7 +1,3 @@
----
-title: "Effective Length Factor (K)"
----
-
 # Effective Length Factor (K)
 
 In the previous section, we saw that different end conditions (fixed, pinned, free) result in different formulas for the critical buckling load ($P_{cr}$).

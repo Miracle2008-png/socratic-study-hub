@@ -1,7 +1,3 @@
----
-title: "Deformation of Axially Loaded Members"
----
-
 # Deformation of Axially Loaded Members
 
 Using the definitions of stress, strain, and Hooke's Law, we can formulate a direct mathematical relationship between the external applied load on a member and its resulting physical deformation. This is the cornerstone of structural stiffness analysis.

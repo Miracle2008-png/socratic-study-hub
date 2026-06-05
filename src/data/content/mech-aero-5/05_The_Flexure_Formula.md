@@ -1,7 +1,3 @@
----
-title: "The Flexure Formula"
----
-
 # The Flexure Formula
 
 Having established that the longitudinal strain $\epsilon$ varies linearly from the Neutral Axis ($\epsilon = -(y/c)\epsilon_{max}$), we can now determine the stress distribution and relate it to the internal bending moment $M$.

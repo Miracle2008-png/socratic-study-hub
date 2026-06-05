@@ -1,7 +1,3 @@
----
-title: "Vortex Lattice Method"
----
-
 # Vortex Lattice Method
 
 The **Vortex Lattice Method (VLM)** extends Prandtl's lifting line theory from a single line of vortices into a 2D lattice of horseshoe vortices distributed across the entire planform. It remains one of the most widely used tools in computational aerodynamics for its combination of speed, accuracy, and versatility.

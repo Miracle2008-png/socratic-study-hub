@@ -1,7 +1,3 @@
----
-title: "Thermal Resistance Networks"
----
-
 # Thermal Resistance Networks
 
 A powerful analogy exists between 1D steady-state heat conduction and electrical circuits (Ohm's Law). This analogy simplifies complex heat transfer problems into easily solvable algebra.

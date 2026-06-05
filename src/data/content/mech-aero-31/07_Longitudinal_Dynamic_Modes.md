@@ -1,7 +1,3 @@
----
-title: "Longitudinal Dynamic Modes"
----
-
 # Longitudinal Dynamic Modes
 
 Solving the linearized longitudinal equations of motion reveals that the aircraft's pitch and speed response to a disturbance is characterized by two distinct oscillatory modes: the Phugoid mode and the Short Period mode.

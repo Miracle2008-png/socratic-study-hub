@@ -1,7 +1,3 @@
----
-title: "Aeroelasticity: Flutter and Divergence"
----
-
 # Aeroelasticity: Flutter and Divergence
 
 **Aeroelasticity** is the study of the interaction between aerodynamic forces, elastic deformation of the structure, and inertia. When an aircraft wing flexes under aerodynamic load, the deformation changes the aerodynamic forces, which causes further deformation. This feedback loop can be either stabilizing (and self-limiting) or catastrophically destabilizing.

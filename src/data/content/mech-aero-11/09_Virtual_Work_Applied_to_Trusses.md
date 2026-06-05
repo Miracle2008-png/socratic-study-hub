@@ -1,7 +1,3 @@
----
-title: "Virtual Work Applied to Trusses"
----
-
 # Virtual Work Applied to Trusses
 
 Trusses are the perfect application for the Principle of Virtual Work. Because trusses are composed entirely of two-force members, the internal deformation $dL$ is strictly axial stretching or shrinking.

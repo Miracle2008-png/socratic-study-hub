@@ -1,7 +1,3 @@
----
-title: "Equilibrium of a Particle"
----
-
 # Equilibrium of a Particle
 
 A particle is in a state of equilibrium if it remains at rest if originally at rest, or has a constant velocity if originally in motion. In both cases, the acceleration is zero.

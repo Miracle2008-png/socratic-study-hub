@@ -1,7 +1,3 @@
----
-title: "Boiling Heat Transfer"
----
-
 # Boiling Heat Transfer
 
 When a surface maintained at a temperature $T_s$ is submerged in a liquid at saturation temperature $T_{sat}$, and $T_s > T_{sat}$, boiling occurs. Because phase change involves the absorption of massive amounts of latent heat ($h_{fg}$), boiling provides some of the highest convection heat transfer coefficients in all of engineering ($h \sim 10,000$ to $100,000 \, W/m^2K$).

@@ -1,7 +1,3 @@
----
-title: "Couples and Force-Couple Systems"
----
-
 # Couples and Force-Couple Systems
 
 When resolving complex loading conditions into simpler ones, the concept of a "couple" is indispensable.

@@ -1,7 +1,3 @@
----
-title: "Theories of Failure: Ductile Materials"
----
-
 # Theories of Failure: Ductile Materials
 
 With the Principal Stresses ($\sigma_1, \sigma_2$) calculated, we must predict if a **ductile material** (like steel, aluminum, brass) will fail under this complex multiaxial loading.

@@ -1,7 +1,3 @@
----
-title: "Natural Convection Over Surfaces"
----
-
 # Natural Convection Over Surfaces
 
 The magnitude of natural convection depends heavily on the orientation of the heated/cooled surface relative to the gravity vector. A hot surface facing upward sheds its hot boundary layer easily, while a hot surface facing downward traps it.

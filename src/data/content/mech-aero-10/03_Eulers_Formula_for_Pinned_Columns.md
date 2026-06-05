@@ -1,7 +1,3 @@
----
-title: "Euler's Formula for Pinned Columns"
----
-
 # Euler's Formula for Pinned Columns
 
 In 1757, the brilliant Swiss mathematician Leonhard Euler mathematically solved the buckling problem. He derived the exact equation for the Critical Load ($P_{cr}$) that causes an ideal, perfectly straight column to buckle.

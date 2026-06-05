@@ -1,7 +1,3 @@
----
-title: "Pressure and Fluid Statics"
----
-
 # Pressure and Fluid Statics
 
 Fluid mechanics is the study of fluids (liquids and gases) under the action of applied forces. **Fluid statics** (or hydrostatics) is the sub-discipline dealing with fluids at rest. 

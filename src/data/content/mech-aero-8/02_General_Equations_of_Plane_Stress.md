@@ -1,7 +1,3 @@
----
-title: "General Equations of Plane Stress"
----
-
 # General Equations of Plane Stress
 
 By performing the wedge equilibrium analysis described in the previous section, we derive a set of trigonometric equations that allow us to calculate the stresses on an element rotated by an angle $\theta$.

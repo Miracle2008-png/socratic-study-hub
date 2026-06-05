@@ -1,7 +1,3 @@
----
-title: "Fourier's Law of Heat Conduction"
----
-
 # Fourier's Law of Heat Conduction
 
 Heat transfer is energy in transit due to a temperature difference. The three fundamental modes of heat transfer are conduction, convection, and radiation. **Conduction** is the transfer of energy from more energetic particles to adjacent, less energetic particles as a result of interactions between them (collisions in gases/liquids, lattice vibrations and electron drift in solids).

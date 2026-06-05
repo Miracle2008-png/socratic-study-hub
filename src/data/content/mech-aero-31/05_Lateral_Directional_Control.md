@@ -1,7 +1,3 @@
----
-title: "Lateral-Directional Control"
----
-
 # Lateral-Directional Control
 
 Controlling an aircraft in roll and yaw requires distinct control surfaces—ailerons for roll and the rudder for yaw. Because lateral and directional dynamics are coupled, the use of one control often necessitates the use of the other to maintain coordinated flight.

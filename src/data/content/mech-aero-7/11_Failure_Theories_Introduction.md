@@ -1,7 +1,3 @@
----
-title: "Failure Theories Introduction"
----
-
 # Failure Theories Introduction
 
 Up until now, we have meticulously calculated the state of stress ($\sigma_x, \tau_{xy}$, etc.) acting on a microscopic element of material due to complex combined loadings.

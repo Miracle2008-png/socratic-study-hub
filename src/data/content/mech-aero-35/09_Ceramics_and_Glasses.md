@@ -1,7 +1,3 @@
----
-title: "Ceramics and Glasses"
----
-
 # Ceramics and Glasses
 
 Ceramics are inorganic, non-metallic materials, usually compounds consisting of metallic and non-metallic elements. They represent the oldest engineered materials (pottery, bricks) and some of the most advanced (space shuttle heat tiles, fiber optics, jet engine coatings).

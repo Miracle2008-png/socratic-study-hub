@@ -1,7 +1,3 @@
----
-title: "Fly-by-Wire Flight Control Systems"
----
-
 # Fly-by-Wire Flight Control Systems
 
 **Fly-by-Wire (FBW)** represents the ultimate evolution of stability and control technology. It replaces the heavy, complex mechanical linkages (cables, pushrods, pulleys) between the pilot's controls and the aerodynamic surfaces with electrical wiring and flight control computers.

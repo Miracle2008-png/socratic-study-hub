@@ -1,7 +1,3 @@
----
-title: "The Concept of Stress"
----
-
 # The Concept of Stress
 
 When a structural member is subjected to external loads, internal forces develop throughout the body to maintain equilibrium. **Stress** is the mathematical concept used to describe the *intensity* of these internal forces distributed over a specific area.

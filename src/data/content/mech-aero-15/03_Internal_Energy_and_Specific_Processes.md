@@ -1,7 +1,3 @@
----
-title: "Internal Energy Changes and Specific Processes"
----
-
 # Internal Energy Changes and Specific Processes
 
 Understanding how internal energy changes in specific thermodynamic processes is essential for calculating heat transfer and work in engines, compressors, and other devices. Each named process fixes one thermodynamic variable, simplifying the First Law analysis.

@@ -1,7 +1,3 @@
----
-title: "Slope and Displacement by Integration"
----
-
 # Slope and Displacement by Integration
 
 The most direct and rigorous way to determine the deflection $v(x)$ and the slope $\theta(x)$ of a beam is by integrating the differential equation of the elastic curve.

@@ -1,7 +1,3 @@
----
-title: "Exergy: The Quality of Energy"
----
-
 # Exergy: The Quality of Energy
 
 The First Law treats all energy equally — 1 kJ of heat at 1000 K looks identical to 1 kJ of heat at 30 K. But they are profoundly different in usefulness: the high-temperature heat can run a turbine with high efficiency; the low-temperature heat is barely worth collecting. **Exergy** is the thermodynamic quantity that captures the useful work potential of energy.

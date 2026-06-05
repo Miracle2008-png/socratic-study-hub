@@ -1,7 +1,3 @@
----
-title: "Analysis of Frames"
----
-
 # Analysis of Frames
 
 The systematic analysis of a frame involves applying the equations of rigid-body equilibrium to the entire structure, and then to its individual disconnected members.

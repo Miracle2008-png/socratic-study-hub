@@ -1,7 +1,3 @@
----
-title: "Combined Cycle Power Plants"
----
-
 # Combined Cycle Power Plants (CCGT)
 
 To achieve the highest possible efficiencies in power generation, engineers combine two distinct thermodynamic cycles: a high-temperature "topping" cycle and a lower-temperature "bottoming" cycle. The most spectacularly successful combination is the **Combined Cycle Gas Turbine (CCGT)** plant, which couples a Brayton gas turbine cycle with a Rankine steam cycle.

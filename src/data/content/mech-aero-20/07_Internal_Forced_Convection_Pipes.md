@@ -1,7 +1,3 @@
----
-title: "Internal Forced Convection: Flow in Pipes"
----
-
 # Internal Forced Convection: Flow in Pipes
 
 In external flow, the boundary layer can grow indefinitely. In internal flow (inside a pipe), the boundary layers growing from the walls eventually meet in the center. The flow is confined, leading to distinct entry and fully developed regions.

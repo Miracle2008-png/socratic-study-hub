@@ -1,7 +1,3 @@
----
-title: "Inelastic Buckling and the Tangent Modulus"
----
-
 # Inelastic Buckling and the Tangent Modulus
 
 Euler's buckling formula ($P_{cr} = \pi^2 EI/L^2$) relies heavily on the Modulus of Elasticity ($E$). It mathematically assumes that the material remains perfectly linear-elastic all the way up until the moment it buckles.

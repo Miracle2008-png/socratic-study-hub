@@ -1,7 +1,3 @@
----
-title: "Shaft Design"
----
-
 # Shaft Design
 
 A shaft is a rotating machine element used to transmit power from one place to another. From the tiny axle in a mechanical watch to the massive propeller shaft of an oil tanker, shafts are the fundamental arteries of mechanical power transmission.

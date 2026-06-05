@@ -1,7 +1,3 @@
----
-title: "Solid vs. Tubular Shafts"
----
-
 # Solid vs. Tubular Shafts
 
 When designing a drive shaft for aerospace or automotive applications, weight is a critical factor. Engineers must maximize the torque-carrying capacity while minimizing the mass of the material used.

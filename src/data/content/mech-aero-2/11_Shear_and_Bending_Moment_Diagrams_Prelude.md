@@ -1,7 +1,3 @@
----
-title: "Shear and Bending Moment Diagrams Prelude"
----
-
 # Shear and Bending Moment Diagrams: Prelude
 
 Finding the internal forces ($N, V, M$) at a single specific point using the method of sections is useful, but it does not tell an engineer where the maximum stresses occur along the entire length of the beam. 

@@ -1,7 +1,3 @@
----
-title: "Gas Mixtures and Partial Pressures"
----
-
 # Gas Mixtures and Partial Pressures
 
 Engineering systems rarely involve pure gases. Atmospheric air is a mixture of N₂ (78%), O₂ (21%), and Ar (1%). Combustion products are mixtures of CO₂, H₂O, N₂, and O₂. Refrigerant blends (R-410A = R-32 + R-125) are engineered mixtures. Analyzing these systems requires thermodynamics of mixtures.

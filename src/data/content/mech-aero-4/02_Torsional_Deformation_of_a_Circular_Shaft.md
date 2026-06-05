@@ -1,7 +1,3 @@
----
-title: "Torsional Deformation of a Circular Shaft"
----
-
 # Torsional Deformation of a Circular Shaft
 
 Before we can derive a formula for the stresses inside a twisted shaft, we must understand the geometric kinematics of how the material actually deforms.

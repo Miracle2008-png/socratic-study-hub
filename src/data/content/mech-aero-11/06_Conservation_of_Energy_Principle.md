@@ -1,7 +1,3 @@
----
-title: "Conservation of Energy Principle"
----
-
 # Conservation of Energy Principle
 
 Now that we have derived the mathematical formulas for both external work and internal strain energy, we can formally apply the Conservation of Energy principle to solve for unknown deflections.

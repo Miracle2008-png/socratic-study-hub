@@ -1,7 +1,3 @@
----
-title: "Semi-Infinite Solids and Contact Temperature"
----
-
 # Semi-Infinite Solids and Contact Temperature
 
 The transient solutions for plane walls ($2L$), cylinders, and spheres assume the heat wave penetrates to the center and then influences the entire body. However, for a very thick body (like the Earth's crust, or a thick steel block over a short time), the temperature at the center (or far side) never changes. The body acts as if it extends to infinity in one direction. This is a **semi-infinite solid**.

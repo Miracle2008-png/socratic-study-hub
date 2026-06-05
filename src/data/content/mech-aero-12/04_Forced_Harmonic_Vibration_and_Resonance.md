@@ -1,7 +1,3 @@
----
-title: "Forced Harmonic Vibration and Resonance"
----
-
 # Forced Harmonic Vibration and Resonance
 
 Free vibration tells us what a structure does after being disturbed. **Forced vibration** tells us what happens when a structure is continuously driven by an external time-varying force. This is the critical analysis for rotating machinery, engines, pumps, and any structure subjected to periodic loads.

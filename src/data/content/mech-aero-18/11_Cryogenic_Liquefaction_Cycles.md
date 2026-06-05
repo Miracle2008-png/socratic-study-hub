@@ -1,7 +1,3 @@
----
-title: "Cryogenic Liquefaction Cycles"
----
-
 # Cryogenic Liquefaction Cycles
 
 Standard refrigeration aims to maintain a cold space. **Cryogenic liquefaction** aims to cool a gas so severely that it condenses into a liquid at cryogenic temperatures (below -150°C or 123 K). This is essential for the production of liquid oxygen (LOX) and liquid hydrogen (LH2) for rockets, liquid nitrogen (LN2) for medical and industrial use, and Liquefied Natural Gas (LNG) for global transport.

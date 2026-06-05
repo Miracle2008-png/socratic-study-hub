@@ -1,7 +1,3 @@
----
-title: "First Law for Open Systems (Control Volumes)"
----
-
 # First Law for Open Systems (Control Volumes)
 
 Most engineering devices — turbines, compressors, boilers, nozzles, heat exchangers — operate in **steady flow**: fluid continuously enters and exits. These are analyzed as **open systems (control volumes)** where mass crosses the boundary.

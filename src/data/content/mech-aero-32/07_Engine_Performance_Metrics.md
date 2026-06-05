@@ -1,7 +1,3 @@
----
-title: "Engine Performance Metrics"
----
-
 # Engine Performance Metrics
 
 To evaluate and compare the performance of different jet engines, aerospace engineers use specific metrics that characterize thrust, fuel efficiency, and weight. Understanding these parameters is crucial for matching the right engine to an aircraft's mission.

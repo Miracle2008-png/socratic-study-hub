@@ -1,7 +1,3 @@
----
-title: "Design of Columns for Eccentric Loading"
----
-
 # Design of Columns for Eccentric Loading
 
 Designing a column strictly for concentric (perfectly centered) loading is rare. Most columns in real structures experience some form of bending moment alongside the axial compression.

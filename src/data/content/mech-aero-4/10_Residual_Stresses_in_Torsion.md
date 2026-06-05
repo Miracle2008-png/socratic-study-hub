@@ -1,7 +1,3 @@
----
-title: "Residual Stresses in Torsion"
----
-
 # Residual Stresses in Torsion
 
 When a shaft is twisted into the inelastic (elasto-plastic) region and the applied torque is subsequently removed, the shaft does not return to its original unstressed state. 

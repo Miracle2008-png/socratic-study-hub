@@ -1,7 +1,3 @@
----
-title: "Pressure Variation in the Atmosphere"
----
-
 # Pressure Variation in the Atmosphere
 
 For liquids, density $\rho$ is constant, yielding the simple linear relationship $P = P_{atm} + \rho g h$. 

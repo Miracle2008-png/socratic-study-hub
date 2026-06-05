@@ -1,7 +1,3 @@
----
-title: "Extended Surfaces: The Fin Equation"
----
-
 # Extended Surfaces: The Fin Equation
 
 Newton's Law of Cooling is $\dot{Q} = h A_s (T_s - T_\infty)$. To increase heat transfer from a surface, you can either:

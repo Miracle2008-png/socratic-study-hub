@@ -1,7 +1,3 @@
----
-title: "Introduction to Aircraft Stability and Control"
----
-
 # Introduction to Aircraft Stability and Control
 
 Stability and control form the crucial link between the aerodynamics of an aircraft and its ability to be safely flown by a human pilot or an autopilot. While aerodynamics determines the forces generated, stability and control determine how the aircraft responds to those forces dynamically.

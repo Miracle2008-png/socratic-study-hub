@@ -1,7 +1,3 @@
----
-title: "Fluid Statics in Engineering Design"
----
-
 # Fluid Statics in Engineering Design
 
 The principles of fluid statics—pressure increasing linearly with depth, buoyancy, and hydrostatic forces on complex geometries—dictate the structural and functional design of massive infrastructure, vehicles, and instrumentation.

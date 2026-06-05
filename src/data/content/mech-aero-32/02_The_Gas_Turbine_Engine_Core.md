@@ -1,7 +1,3 @@
----
-title: "The Gas Turbine Engine Core"
----
-
 # The Gas Turbine Engine Core
 
 Every turbojet, turbofan, turboprop, and turboshaft engine relies on a central "gas generator" or **core**. The purpose of the core is to supply high-temperature, high-pressure gas to either a propelling nozzle (for jet thrust) or a power turbine (for shaft power). The core consists of three primary components: the compressor, the combustor, and the turbine.

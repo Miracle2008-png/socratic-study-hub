@@ -1,7 +1,3 @@
----
-title: "Natural Convection in Enclosures"
----
-
 # Natural Convection in Enclosures
 
 When fluid is trapped between two surfaces at different temperatures (like air between double-pane windows, or fluid inside solar collectors), natural convection establishes complex internal circulation cells. The boundary layer cannot escape to infinity; it collides with the opposing wall.

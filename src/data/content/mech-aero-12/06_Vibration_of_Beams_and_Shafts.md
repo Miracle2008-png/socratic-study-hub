@@ -1,7 +1,3 @@
----
-title: "The Vibration of Beams and Shafts"
----
-
 # The Vibration of Beams and Shafts
 
 While the spring-mass model captures the essential physics, real engineering structures are continuous — they have distributed mass and stiffness rather than lumped parameters. This section covers the vibration of the two most important continuous mechanical elements: beams and rotating shafts.

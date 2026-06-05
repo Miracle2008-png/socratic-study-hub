@@ -1,7 +1,3 @@
----
-title: "Critical Stress and the Slenderness Ratio"
----
-
 # Critical Stress and the Slenderness Ratio
 
 Euler's formula ($P_{cr} = \pi^2 EI / L^2$) calculates the total force required to buckle a column. However, to compare the risk of buckling against the risk of the material simply yielding under compression, we must convert this critical force into a **Critical Stress**.

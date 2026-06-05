@@ -1,7 +1,3 @@
----
-title: "Internal Combustion Engine Enhancements"
----
-
 # Internal Combustion Engine Enhancements
 
 While the basic Otto and Diesel cycles define the theoretical limits, modern internal combustion engines employ advanced technologies to improve efficiency, increase specific power, and reduce emissions, pushing actual performance closer to those limits.

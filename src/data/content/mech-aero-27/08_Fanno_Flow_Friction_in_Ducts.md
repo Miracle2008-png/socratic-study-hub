@@ -1,7 +1,3 @@
----
-title: "Fanno Flow: Friction in Ducts"
----
-
 # Fanno Flow: Friction in Ducts
 
 Thus far, we assumed flow in a pipe was isentropic (frictionless). But in a long natural gas pipeline or the interior of a supersonic wind tunnel, wall friction is unavoidable.

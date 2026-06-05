@@ -1,7 +1,3 @@
----
-title: "Linear Elastic Fracture Mechanics (LEFM)"
----
-
 # Linear Elastic Fracture Mechanics (LEFM)
 
 While Griffith's energy approach was theoretically sound, it was difficult for engineers to use in practical design. In the 1950s, George Irwin expanded Griffith's work into a more usable engineering format known as Linear Elastic Fracture Mechanics (LEFM).

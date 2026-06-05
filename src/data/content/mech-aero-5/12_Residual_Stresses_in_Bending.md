@@ -1,7 +1,3 @@
----
-title: "Residual Stresses in Bending"
----
-
 # Residual Stresses in Bending
 
 When a beam is bent heavily into the inelastic (elasto-plastic) region and the applied bending moment is subsequently removed, the beam springs back, but it does not return perfectly to its original straight shape. 

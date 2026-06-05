@@ -1,7 +1,3 @@
----
-title: "Buoyancy and Archimedes' Principle"
----
-
 # Buoyancy and Archimedes' Principle
 
 When you submerge a solid object in a fluid, the object feels lighter. A heavy rock that requires great effort to lift in air can often be easily lifted underwater. This upward force exerted by a fluid on a submerged or floating body is called the **buoyant force**.

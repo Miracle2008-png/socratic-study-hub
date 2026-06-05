@@ -1,7 +1,3 @@
----
-title: "Space Trusses"
----
-
 # Space Trusses
 
 A **space truss** is a three-dimensional framework constructed from members joined at their ends to form a stable spatial structure. 

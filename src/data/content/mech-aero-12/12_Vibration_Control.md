@@ -1,7 +1,3 @@
----
-title: "Vibration Control: Passive, Active, and Semi-Active"
----
-
 # Vibration Control: Passive, Active, and Semi-Active
 
 The ultimate engineering goal is not just to analyze vibration — but to control it. Three fundamentally different philosophies exist for managing structural vibration, each with distinct trade-offs in effectiveness, cost, and complexity.

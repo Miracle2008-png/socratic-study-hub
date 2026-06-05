@@ -1,7 +1,3 @@
----
-title: "Torsional and Bending Loading"
----
-
 # Torsional and Bending Loading
 
 The combination of a twisting torque and a bending moment is one of the most critical combined loading scenarios in mechanical engineering, particularly for the design of rotating power transmission shafts. 

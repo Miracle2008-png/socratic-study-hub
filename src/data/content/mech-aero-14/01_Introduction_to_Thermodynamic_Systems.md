@@ -1,7 +1,3 @@
----
-title: "Introduction to Thermodynamic Systems"
----
-
 # Introduction to Thermodynamic Systems
 
 **Thermodynamics** is the science of energy — its forms, its transformations, and the limits of converting it from one form to another. Where mechanics deals with forces and motion, thermodynamics deals with heat, work, and the state of matter. It underpins every power plant, engine, refrigerator, and jet turbine ever built.

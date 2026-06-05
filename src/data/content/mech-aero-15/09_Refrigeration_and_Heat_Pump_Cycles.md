@@ -1,7 +1,3 @@
----
-title: "Refrigeration and Heat Pump Cycles"
----
-
 # Refrigeration and Heat Pump Cycles
 
 A **refrigeration cycle** is a Rankine power cycle operating in reverse: instead of producing work from heat, it uses work to pump heat from a cold space to a hot space. This is the thermodynamic basis for every household refrigerator, air conditioner, and industrial chiller.

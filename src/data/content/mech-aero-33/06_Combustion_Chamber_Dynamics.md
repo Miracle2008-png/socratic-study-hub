@@ -1,7 +1,3 @@
----
-title: "Combustion Chamber Dynamics"
----
-
 # Combustion Chamber Dynamics
 
 The combustion chamber of a liquid rocket engine is where the chemical energy of the propellants is released. The design of this chamber must balance competing requirements: ensuring complete combustion, managing extreme heat, and avoiding destructive instabilities.

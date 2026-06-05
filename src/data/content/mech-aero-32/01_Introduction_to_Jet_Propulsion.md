@@ -1,7 +1,3 @@
----
-title: "Introduction to Jet Propulsion"
----
-
 # Introduction to Jet Propulsion
 
 Jet propulsion is the primary method of powering high-speed, high-altitude aircraft. It operates on the principle of Newton's Third Law of Motion: for every action, there is an equal and opposite reaction. A jet engine creates a high-velocity jet of exhaust gas backwards; the reaction force pushes the engine (and the aircraft) forward.

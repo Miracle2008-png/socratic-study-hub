@@ -1,7 +1,3 @@
----
-title: "Machines and Mechanisms"
----
-
 # Machines and Mechanisms
 
 While frames are rigidly fixed and designed to bear loads, **machines** are designed to transmit and alter forces, and they contain moving parts. Pliers, bolt cutters, hydraulic excavators, and car jacks are all examples of machines.

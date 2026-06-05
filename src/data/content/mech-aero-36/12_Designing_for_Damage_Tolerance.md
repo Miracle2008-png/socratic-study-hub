@@ -1,7 +1,3 @@
----
-title: "Designing for Damage Tolerance"
----
-
 # Designing for Damage Tolerance
 
 The evolution of structural engineering philosophies—particularly in aerospace—reflects our growing understanding of fatigue and fracture mechanics. We have moved from hoping parts don't break, to accepting that they will crack, and designing systems to survive those cracks.

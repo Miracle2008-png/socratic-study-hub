@@ -1,7 +1,3 @@
----
-title: "Simple Trusses"
----
-
 # Simple Trusses
 
 A **truss** is one of the most common and efficient structural forms used in engineering, prevalent in bridges, roof supports, and cranes. It consists of straight, slender members connected at their extremities.

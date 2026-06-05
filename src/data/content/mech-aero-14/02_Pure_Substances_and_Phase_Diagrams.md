@@ -1,7 +1,3 @@
----
-title: "Pure Substances and Phase Diagrams"
----
-
 # Pure Substances and Phase Diagrams
 
 A **pure substance** is a substance with a fixed chemical composition throughout. Water ($\text{H}_2\text{O}$), nitrogen ($\text{N}_2$), and refrigerant R-134a are pure substances. Air (a mixture of $\text{N}_2$, $\text{O}_2$, Ar) behaves as a pure substance as long as no condensation occurs.

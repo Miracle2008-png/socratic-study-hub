@@ -1,7 +1,3 @@
----
-title: "Property Changes Across Normal Shocks"
----
-
 # Property Changes Across Normal Shocks
 
 To solve engineering problems involving normal shock waves, we rely on the exact algebraic relations derived from the conservation laws. Because these equations are complex, they are universally tabulated in **Normal Shock Tables**, indexed by the incoming upstream Mach number ($M_1$).

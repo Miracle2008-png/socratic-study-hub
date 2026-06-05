@@ -1,7 +1,3 @@
----
-title: "Reinforced Concrete Beams"
----
-
 # Reinforced Concrete Beams
 
 Concrete is an exceptional building material because it is extremely cheap, fire-resistant, and highly resistant to compressive stresses. 

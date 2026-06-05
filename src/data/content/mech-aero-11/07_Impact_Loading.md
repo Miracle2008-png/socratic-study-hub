@@ -1,7 +1,3 @@
----
-title: "Impact Loading"
----
-
 # Impact Loading
 
 Up to this point, we have assumed that loads are applied "statically"—slowly and gradually over time, starting from zero. This is why our external work equation has a $1/2$ multiplier ($U_e = \frac{1}{2} P \Delta$).

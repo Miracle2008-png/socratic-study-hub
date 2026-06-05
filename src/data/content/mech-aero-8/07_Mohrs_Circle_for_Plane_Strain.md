@@ -1,7 +1,3 @@
----
-title: "Mohr's Circle for Plane Strain"
----
-
 # Mohr's Circle for Plane Strain
 
 Because the transformation equations for plane strain are mathematically identical to those for plane stress, we can use the exact same geometric tool—Mohr's Circle—to analyze strain states.

@@ -1,7 +1,3 @@
----
-title: "Elastic-Plastic Fracture Mechanics (EPFM)"
----
-
 # Elastic-Plastic Fracture Mechanics (EPFM)
 
 Linear Elastic Fracture Mechanics (LEFM) works perfectly for materials like glass, high-strength ceramics, and very hard, brittle metals. However, for most structural metals (like low-carbon steel or aluminum), there is significant plastic yielding (permanent deformation) at the tip of the crack before it propagates.

@@ -1,7 +1,3 @@
----
-title: "Mechanical Springs"
----
-
 # Mechanical Springs
 
 Springs are machine elements designed to undergo massive elastic deformation under a load and then recover their original shape when the load is removed. They are used to store energy (clocks), absorb shock (car suspensions), maintain contact forces (engine valves), and measure force (scales).

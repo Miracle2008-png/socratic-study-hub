@@ -1,7 +1,3 @@
----
-title: "The Third Law and Absolute Entropy"
----
-
 # The Third Law and Absolute Entropy
 
 The First and Second Laws define changes in internal energy and entropy. But can absolute values of entropy be assigned? The **Third Law of Thermodynamics** answers this question and provides the foundation for calculating absolute entropies — essential for chemical equilibrium and reaction thermodynamics.

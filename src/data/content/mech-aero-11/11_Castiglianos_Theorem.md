@@ -1,7 +1,3 @@
----
-title: "Castigliano's Theorem"
----
-
 # Castigliano's Theorem
 
 In 1879, Alberto Castigliano published an incredibly elegant mathematical theorem that bypasses the need to draw "virtual" systems entirely. It relies purely on partial derivatives of the total strain energy equation.

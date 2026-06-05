@@ -1,7 +1,3 @@
----
-title: "Aeroelasticity: Flutter, Divergence, and Control Reversal"
----
-
 # Aeroelasticity: Flutter, Divergence, and Control Reversal
 
 **Aeroelasticity** is the study of interactions between aerodynamic forces and the elastic deformation of structures. Because wings must be light to fly efficiently, they are inherently flexible — and this flexibility creates feedback loops between aerodynamic loads and structural shape that can either be benign or catastrophically unstable.

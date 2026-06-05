@@ -1,7 +1,3 @@
----
-title: "Speed of Sound and Mach Number"
----
-
 # Speed of Sound and Mach Number
 
 In traditional fluid mechanics (hydraulics, low-speed aerodynamics), fluids are treated as incompressible—their density $\rho$ remains constant.

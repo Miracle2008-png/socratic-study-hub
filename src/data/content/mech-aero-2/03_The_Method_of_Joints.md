@@ -1,7 +1,3 @@
----
-title: "The Method of Joints"
----
-
 # The Method of Joints
 
 The **Method of Joints** is the fundamental technique for determining the internal force in *every single member* of a truss. 

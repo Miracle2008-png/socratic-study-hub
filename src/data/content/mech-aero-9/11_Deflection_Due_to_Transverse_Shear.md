@@ -1,7 +1,3 @@
----
-title: "Deflection Due to Transverse Shear"
----
-
 # Deflection Due to Transverse Shear
 
 In all our previous deflection calculations, we relied entirely on the equation $EI v'' = M$. This equation assumes that 100% of the beam's sag is caused by the bending moment stretching and compressing the longitudinal fibers.

@@ -1,7 +1,3 @@
----
-title: "State of Stress Caused by Combined Loadings"
----
-
 # State of Stress Caused by Combined Loadings
 
 When multiple types of loads act on a body simultaneously, we use the method of sections to expose the internal resultant forces. 

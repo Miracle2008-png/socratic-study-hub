@@ -1,7 +1,3 @@
----
-title: "Frames and Multi-Part Structures"
----
-
 # Frames and Multi-Part Structures
 
 While trusses are composed entirely of two-force members (carrying only tension and compression), most real-world structures must support loads applied perpendicularly to their members. These are **multi-force members**, and structures containing them are classified as **frames** or **machines**.

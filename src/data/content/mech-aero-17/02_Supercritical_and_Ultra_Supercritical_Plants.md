@@ -1,7 +1,3 @@
----
-title: "Supercritical and Ultra-Supercritical Plants"
----
-
 # Supercritical and Ultra-Supercritical Plants
 
 The most direct way to increase the efficiency of a Rankine cycle (in accordance with Carnot principles) is to increase the temperature and pressure of the steam entering the turbine. This drive for higher thermodynamic performance led to the development of supercritical and ultra-supercritical steam power plants.

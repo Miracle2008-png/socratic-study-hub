@@ -1,7 +1,3 @@
----
-title: "Fundamental Concepts"
----
-
 # Fundamental Concepts
 
 Before formulating the laws of mechanics, several fundamental concepts and principles must be defined. These concepts form the absolute vocabulary of physical modeling.

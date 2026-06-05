@@ -1,7 +1,3 @@
----
-title: "1D Steady Conduction in Plane Walls"
----
-
 # 1D Steady Conduction in Plane Walls
 
 The simplest application of the heat equation is one-dimensional, steady-state conduction through a plane wall with no internal heat generation. 

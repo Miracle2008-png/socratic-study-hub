@@ -1,7 +1,3 @@
----
-title: "Radiation Exchange with Participating Media"
----
-
 # Radiation Exchange with Participating Media
 
 Standard radiation analysis (view factors, network circuits) relies on a fundamental assumption: the gas filling the space between the surfaces is a pure vacuum or a non-participating gas (like $O_2$ or $N_2$), meaning it is completely transparent and does not absorb, emit, or scatter radiation.

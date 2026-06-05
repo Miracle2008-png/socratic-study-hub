@@ -1,7 +1,3 @@
----
-title: "Unsymmetric Loading and the Shear Center"
----
-
 # Unsymmetric Loading and the Shear Center
 
 We have established two critical conditions for bending a beam without causing it to twist or warp:

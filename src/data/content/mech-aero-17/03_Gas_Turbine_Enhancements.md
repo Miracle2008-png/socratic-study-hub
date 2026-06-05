@@ -1,7 +1,3 @@
----
-title: "Gas Turbine Enhancements"
----
-
 # Gas Turbine Enhancements
 
 The simple Brayton cycle (compressor, combustor, turbine) is lightweight and compact, making it ideal for aviation. However, for stationary power generation, efficiency is paramount. Several cycle modifications can significantly improve the performance of industrial gas turbines.

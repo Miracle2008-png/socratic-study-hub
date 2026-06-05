@@ -1,7 +1,3 @@
----
-title: "Centrifugal Pumps and Characteristics"
----
-
 # Centrifugal Pumps and Characteristics
 
 Centrifugal pumps are the most widely used turbomachines in the world. Fluid enters the center (the "eye") of the spinning impeller, is flung outward by centrifugal force, and exits at the outer rim with massive kinetic energy. The stationary casing (volute) acts as a diffuser, slowing the fluid down to convert that kinetic energy into high static pressure.

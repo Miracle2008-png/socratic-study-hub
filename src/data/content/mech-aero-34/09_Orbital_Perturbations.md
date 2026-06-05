@@ -1,7 +1,3 @@
----
-title: "Orbital Perturbations"
----
-
 # Orbital Perturbations
 
 In basic orbital mechanics, we assume the central planet is a perfect point mass and there are no other forces acting on the spacecraft. Under these ideal conditions, an orbit remains fixed in space forever.

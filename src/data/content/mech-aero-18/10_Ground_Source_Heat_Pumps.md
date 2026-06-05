@@ -1,7 +1,3 @@
----
-title: "Ground-Source Heat Pumps (Geothermal)"
----
-
 # Ground-Source Heat Pumps (Geothermal)
 
 Air-Source Heat Pumps (ASHPs) suffer degraded performance and frost issues when the winter air turns freezing cold. The solution to this thermodynamic bottleneck is to abandon the fluctuating outside air as a heat source and look downward.

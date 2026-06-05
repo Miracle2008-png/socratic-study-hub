@@ -1,7 +1,3 @@
----
-title: "Refrigerant Properties and the Refrigerant Tables"
----
-
 # Refrigerant Properties and the Refrigerant Tables
 
 Water/steam is the working fluid of choice for power generation. For **refrigeration and heat pump cycles**, however, water is entirely impractical — it boils at 100°C at atmospheric pressure, far too high for achieving sub-zero cooling.

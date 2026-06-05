@@ -1,7 +1,3 @@
----
-title: "Thermal Stresses"
----
-
 # Thermal Stresses
 
 When a homogeneous material is subjected to a change in temperature, it will naturally expand if heated and contract if cooled. 

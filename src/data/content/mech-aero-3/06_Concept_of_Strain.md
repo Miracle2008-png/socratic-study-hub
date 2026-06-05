@@ -1,7 +1,3 @@
----
-title: "The Concept of Strain"
----
-
 # The Concept of Strain
 
 While stress describes the intensity of internal forces, **strain** is the mathematical measure of the resulting physical deformation. It quantifies how much a body stretches, compresses, or distorts from its original unloaded shape.

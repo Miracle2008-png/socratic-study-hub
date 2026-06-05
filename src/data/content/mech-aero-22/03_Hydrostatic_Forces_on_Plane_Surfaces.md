@@ -1,7 +1,3 @@
----
-title: "Hydrostatic Forces on Plane Surfaces"
----
-
 # Hydrostatic Forces on Plane Surfaces
 
 When a flat surface (like a dam wall, a submarine hatch, or an aquarium glass) is submerged in a static liquid, the fluid exerts a distributed pressure force on it. Because pressure increases with depth ($P = \rho g h$), the pressure distribution is non-uniform (triangular or trapezoidal). 

@@ -1,7 +1,3 @@
----
-title: "Combustion: Stoichiometry and Heating Value"
----
-
 # Combustion: Stoichiometry and Heating Value
 
 Combustion is the rapid chemical oxidation of a fuel, releasing the chemical bond energy as heat. It is the energy source for virtually all transportation (cars, aircraft, ships) and much of the world's electricity generation. Understanding the chemistry and thermochemistry of combustion is essential for engine design, emissions control, and efficiency optimization.

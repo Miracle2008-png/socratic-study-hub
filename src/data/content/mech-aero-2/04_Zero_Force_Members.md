@@ -1,7 +1,3 @@
----
-title: "Zero-Force Members"
----
-
 # Zero-Force Members
 
 Truss analysis using the method of joints can be significantly expedited by rapidly identifying **zero-force members** by simple visual inspection. 

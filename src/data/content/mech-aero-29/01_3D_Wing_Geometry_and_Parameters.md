@@ -1,7 +1,3 @@
----
-title: "3D Wing Geometry and Parameters"
----
-
 # 3D Wing Geometry and Parameters
 
 Moving from a 2D airfoil cross-section to a real 3D wing introduces new geometric parameters that profoundly affect aerodynamic performance. Understanding these parameters is essential before analyzing the aerodynamics of finite wings.

@@ -1,7 +1,3 @@
----
-title: "Blackbody Radiation Laws"
----
-
 # Blackbody Radiation Laws
 
 To understand how real surfaces emit radiation, we first define an idealized standard of perfection: the **blackbody**.

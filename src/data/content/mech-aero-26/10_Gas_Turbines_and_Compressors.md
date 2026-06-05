@@ -1,7 +1,3 @@
----
-title: "Gas Turbines and Compressors"
----
-
 # Gas Turbines and Compressors
 
 Hydraulic machines pump or extract power from incompressible liquids (water). Thermal turbomachines handle compressible gases (air, steam, combustion products). The thermodynamics of compression and expansion must be coupled with the kinematics of velocity triangles.

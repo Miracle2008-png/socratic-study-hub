@@ -1,7 +1,3 @@
----
-title: "Thin-Walled Pressure Vessels"
----
-
 # Thin-Walled Pressure Vessels
 
 Before diving into general 3D combined loadings, we examine a highly specific and extremely common case of combined stress: the **thin-walled pressure vessel**. 

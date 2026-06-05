@@ -1,7 +1,3 @@
----
-title: "Pressure Distribution Over Airfoils"
----
-
 # Pressure Distribution Over Airfoils
 
 The pressure distribution over an airfoil is the fundamental bridge between aerodynamic theory and physical performance. It determines lift, pitching moment, drag, and flow separation characteristics simultaneously.

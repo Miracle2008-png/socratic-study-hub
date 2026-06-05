@@ -1,7 +1,3 @@
----
-title: "Rocket Engine Testing and Diagnostics"
----
-
 # Rocket Engine Testing and Diagnostics
 
 Because rocket engines operate at the absolute edge of materials science and fluid dynamics, theoretical models and computer simulations are never enough. Intensive, destructive physical testing is the cornerstone of rocket engine development.

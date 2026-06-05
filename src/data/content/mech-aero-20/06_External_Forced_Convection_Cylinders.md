@@ -1,7 +1,3 @@
----
-title: "External Forced Convection: Cylinders and Spheres"
----
-
 # External Forced Convection: Cylinders and Spheres
 
 Flow over curved surfaces like cylinders (pipes, tubes in heat exchangers) and spheres (droplets, ball bearings) introduces flow separation and wake formation, making the heat transfer mechanics vastly more complex than a flat plate.

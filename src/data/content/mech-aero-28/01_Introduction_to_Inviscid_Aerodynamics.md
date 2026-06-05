@@ -1,7 +1,3 @@
----
-title: "Introduction to Inviscid Aerodynamics"
----
-
 # Introduction to Inviscid Aerodynamics
 
 **Inviscid Aerodynamics** is the study of airflows where the effects of viscosity are entirely neglected. While all real fluids have viscosity, this simplification is remarkably accurate for modeling the flow far away from a body's surface, where viscous shear stresses are negligibly small compared to pressure forces.

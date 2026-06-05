@@ -1,7 +1,3 @@
----
-title: "Inlets and Nozzles"
----
-
 # Inlets and Nozzles
 
 While the engine core (compressor, combustor, turbine) generates the high-energy gas, the inlet (diffuser) and the nozzle are critical for managing the flow into and out of the engine. They are responsible for converting between kinetic energy (velocity) and static pressure.

@@ -1,7 +1,3 @@
----
-title: "Wing Twist and Washout"
----
-
 # Wing Twist and Washout
 
 A straight untwisted finite wing at uniform angle of attack tends to produce a non-optimal span loading with a tendency toward tip stall — the most dangerous stall pattern. **Wing twist** is the primary geometric tool for tailoring the spanwise lift distribution to achieve both aerodynamic efficiency and acceptable stall behavior.

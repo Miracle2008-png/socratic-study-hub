@@ -1,7 +1,3 @@
----
-title: "Inelastic Torsion"
----
-
 # Inelastic Torsion
 
 The standard torsion formula $\tau = T\rho/J$ is strictly valid only when the material behaves in a linear elastic manner (Hooke's law applies, $\tau = G\gamma$). 

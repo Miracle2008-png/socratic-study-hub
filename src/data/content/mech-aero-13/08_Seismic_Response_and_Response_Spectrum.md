@@ -1,7 +1,3 @@
----
-title: "Seismic Response and Response Spectrum Analysis"
----
-
 # Seismic Response and Response Spectrum Analysis
 
 Earthquakes subject structures to **base acceleration** — the ground beneath the building accelerates chaotically. The resulting structural response depends on both the earthquake's frequency content and the building's dynamic properties. **Response Spectrum Analysis (RSA)** is the industry-standard method for seismic structural design.

@@ -1,7 +1,3 @@
----
-title: "Advanced Buckling: Torsional and LTB"
----
-
 # Advanced Buckling: Torsional and Lateral-Torsional
 
 We have now covered global column buckling (Euler bowing) and microscopic local buckling (plate wrinkling). To conclude our study of instability, we must examine two advanced, highly destructive failure modes that plague modern, lightweight, open-section beams.

@@ -1,7 +1,3 @@
----
-title: "Geothermal and Organic Rankine Cycles (ORC)"
----
-
 # Geothermal and Organic Rankine Cycles (ORC)
 
 While water is an excellent working fluid for high-temperature heat sources (coal, nuclear), it performs poorly when the heat source is at low or moderate temperatures (e.g., 80°C to 150°C). Such sources include geothermal reservoirs, solar ponds, and industrial waste heat.

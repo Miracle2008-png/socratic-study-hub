@@ -1,7 +1,3 @@
----
-title: "1D Steady Conduction in Cylinders and Spheres"
----
-
 # 1D Steady Conduction in Cylinders and Spheres
 
 Heat transfer through pipes, tanks, and insulated wires involves radial geometries. The Cartesian coordinates used for plane walls must be replaced by cylindrical or spherical coordinates.

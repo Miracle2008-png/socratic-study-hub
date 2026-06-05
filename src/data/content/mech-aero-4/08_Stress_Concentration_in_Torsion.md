@@ -1,7 +1,3 @@
----
-title: "Stress Concentration in Torsion"
----
-
 # Stress Concentration in Torsion
 
 The torsion formula $\tau_{max} = Tc/J$ was derived under the strict assumption that the circular shaft is perfectly prismatic (having a constant cross-section throughout its length).

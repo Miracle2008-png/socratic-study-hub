@@ -1,7 +1,3 @@
----
-title: "Equilibrium of Rigid Bodies in 2D"
----
-
 # Equilibrium of Rigid Bodies in 2D
 
 Unlike a particle, a rigid body has size and shape. Consequently, the forces applied to it do not all intersect at a single point, meaning they can cause the body to rotate. 

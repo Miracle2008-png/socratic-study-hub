@@ -1,7 +1,3 @@
----
-title: "Imperfections in Solids (Defects)"
----
-
 # Imperfections in Solids (Defects)
 
 In theoretical chemistry, we often picture a crystal as a perfect, infinite, flawless geometric lattice. In reality, there is no such thing as a perfect crystal. All materials contain millions of structural imperfections.

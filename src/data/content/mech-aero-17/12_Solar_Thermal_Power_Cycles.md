@@ -1,7 +1,3 @@
----
-title: "Solar Thermal Power Cycles"
----
-
 # Solar Thermal Power Cycles
 
 While photovoltaic (PV) panels convert sunlight directly into electricity, **Concentrated Solar Power (CSP)** uses mirrors to concentrate solar radiation to generate high-temperature heat. This heat is then used to drive a conventional thermodynamic power cycle.

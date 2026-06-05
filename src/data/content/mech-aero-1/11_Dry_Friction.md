@@ -1,7 +1,3 @@
----
-title: "Dry Friction"
----
-
 # Dry Friction
 
 Whenever two rough solid surfaces are in contact and a tendency for sliding exists, a tangential force known as **friction** develops that opposes the motion. 

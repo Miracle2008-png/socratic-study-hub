@@ -1,7 +1,3 @@
----
-title: "Rotor Aerodynamics Fundamentals"
----
-
 # Rotor Aerodynamics Fundamentals
 
 Helicopter rotors are rotating wings — each blade section is an airfoil experiencing a local velocity that depends on the blade's rotation speed, span position, and the helicopter's own forward flight speed. The aerodynamic analysis of rotors extends finite wing theory to this uniquely complex rotating environment.

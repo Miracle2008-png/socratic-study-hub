@@ -1,7 +1,3 @@
----
-title: "Lagrangian Mechanics for Vibrating Systems"
----
-
 # Lagrangian Mechanics for Vibrating Systems
 
 Newton's Second Law is powerful but geometrically cumbersome for multi-body systems with constraints (like a double pendulum or a vehicle suspension with linkages). **Lagrangian Mechanics** provides a systematic, coordinate-free approach to deriving equations of motion for any mechanical system, regardless of complexity.

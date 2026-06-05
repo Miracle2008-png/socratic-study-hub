@@ -1,7 +1,3 @@
----
-title: "Converging-Diverging Nozzles"
----
-
 # Converging-Diverging Nozzles
 
 To accelerate a rocket exhaust or a supersonic wind tunnel from zero velocity to Mach 3, you must use a **Converging-Diverging (CD) Nozzle** (a de Laval nozzle). 

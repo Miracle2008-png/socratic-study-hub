@@ -1,7 +1,3 @@
----
-title: "The Turbofan Engine"
----
-
 # The Turbofan Engine
 
 The turbofan is the undisputed workhorse of modern aviation, powering everything from business jets to massive wide-body airliners, and even most modern fighter jets. It was developed to solve the inherent inefficiency and noise problems of the pure turbojet.

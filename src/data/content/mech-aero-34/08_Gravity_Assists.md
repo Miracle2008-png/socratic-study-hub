@@ -1,7 +1,3 @@
----
-title: "Gravity Assists (Slingshot Maneuvers)"
----
-
 # Gravity Assists (Slingshot Maneuvers)
 
 One of the most powerful and elegant techniques in interplanetary navigation is the gravity assist. It allows spacecraft to gain (or lose) immense amounts of velocity and change direction "for free" by stealing orbital momentum from a planet, without firing a rocket engine.

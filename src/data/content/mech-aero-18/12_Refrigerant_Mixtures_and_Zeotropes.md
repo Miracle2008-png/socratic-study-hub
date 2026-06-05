@@ -1,7 +1,3 @@
----
-title: "Refrigerant Mixtures and Zeotropes"
----
-
 # Refrigerant Mixtures and Zeotropes
 
 Historically, refrigeration systems used pure substances (e.g., pure Ammonia, pure R-12, pure R-134a). As environmental regulations phased out ozone-depleting (CFCs, HCFCs) and high-global-warming (HFCs) refrigerants, engineers were forced to find replacements. Often, no single pure molecule had the perfect combination of thermodynamics, low flammability, low toxicity, and zero environmental impact.

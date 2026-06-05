@@ -1,7 +1,3 @@
----
-title: "Takeoff and Landing Performance"
----
-
 # Takeoff and Landing Performance
 
 Takeoff and landing represent the most demanding, most safety-critical phases of any flight. The aircraft operates at maximum weight, near stall speed, close to the ground, with limited margin for error. Performance regulations strictly dictate the required field lengths, decision speeds, and failure capabilities.

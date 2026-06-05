@@ -1,7 +1,3 @@
----
-title: "Rayleigh Flow: Heat Transfer in Ducts"
----
-
 # Rayleigh Flow: Heat Transfer in Ducts
 
 While Fanno flow models friction, **Rayleigh Flow** is the theoretical model of 1D compressible flow in a **constant-area duct with Heat Transfer**, but assuming it is **frictionless**.

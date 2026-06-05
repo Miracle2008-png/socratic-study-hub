@@ -1,7 +1,3 @@
----
-title: "Crystal Structures"
----
-
 # Crystal Structures
 
 When a material transitions from a liquid to a solid (freezes), its atoms can arrange themselves in two fundamental ways:

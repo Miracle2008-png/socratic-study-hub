@@ -1,7 +1,3 @@
----
-title: "Advanced Problems in Equilibrium"
----
-
 # Advanced Problems in Equilibrium
 
 The principles of statics culminate in the ability to analyze complex, real-world structural systems by synthesizing the methods of particles, rigid bodies, trusses, and frames.

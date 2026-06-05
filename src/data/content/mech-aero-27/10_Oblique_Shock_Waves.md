@@ -1,7 +1,3 @@
----
-title: "Oblique Shock Waves"
----
-
 # Oblique Shock Waves
 
 Normal shocks stand perfectly straight across a flow, causing a massive, devastating loss of stagnation pressure. However, if a supersonic flow encounters a physical wedge or turns into a corner, the shock wave forms at an angle. This is an **Oblique Shock Wave**.

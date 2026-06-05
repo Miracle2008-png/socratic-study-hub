@@ -1,7 +1,3 @@
----
-title: "Eccentric Axial Loading"
----
-
 # Eccentric Axial Loading
 
 A special and highly common case of combined axial and bending loading occurs when a straight column or member is loaded with an axial force that does *not* pass perfectly through the geometric centroid of the cross-section.

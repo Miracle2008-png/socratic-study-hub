@@ -1,7 +1,3 @@
----
-title: "Gears and Gear Trains"
----
-
 # Gears and Gear Trains
 
 Gears are toothed wheels used to transmit rotary motion and torque from one shaft to another. They are essential for matching the high speed/low torque output of typical prime movers (like electric motors or internal combustion engines) to the low speed/high torque requirements of most applications (like the wheels of a car).

@@ -1,7 +1,3 @@
----
-title: "The Ideal Gas Law"
----
-
 # The Ideal Gas Law
 
 At low pressures and high temperatures — far from the two-phase dome — the behavior of all gases converges toward a simple, unified mathematical model: the **Ideal Gas Law**.

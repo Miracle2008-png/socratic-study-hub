@@ -1,7 +1,3 @@
----
-title: "The Euler Turbomachine Equation"
----
-
 # The Euler Turbomachine Equation
 
 The underlying physics of *all* turbomachines—whether it is a tiny dental drill turbine or a massive Hoover Dam hydroelectric runner—is governed by a single, remarkably simple principle: the conservation of angular momentum.

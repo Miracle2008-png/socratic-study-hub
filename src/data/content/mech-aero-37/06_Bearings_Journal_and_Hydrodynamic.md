@@ -1,7 +1,3 @@
----
-title: "Bearings: Journal and Hydrodynamic"
----
-
 # Bearings: Journal and Hydrodynamic
 
 While rolling-element bearings are ubiquitous, they have speed limits (centrifugal force tears the cages apart) and absolute life limits due to contact fatigue.

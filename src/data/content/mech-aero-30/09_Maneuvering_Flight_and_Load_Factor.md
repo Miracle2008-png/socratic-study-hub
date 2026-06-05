@@ -1,7 +1,3 @@
----
-title: "Maneuvering Flight and Load Factor"
----
-
 # Maneuvering Flight and Load Factor
 
 Straight, level, unaccelerated flight is the exception rather than the rule. Turns, pull-ups, push-overs, and gusts all produce accelerations that the aircraft structure must withstand without failure. The **load factor** is the universal metric for quantifying these accelerations and their structural implications.

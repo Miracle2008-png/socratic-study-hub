@@ -1,7 +1,3 @@
----
-title: "Radiation Shields and the Reradiating Effect"
----
-
 # Radiation Shields and the Reradiating Effect
 
 Thermal radiation scales with $T^4$, making it the dominant mode of heat transfer in high-temperature applications (furnaces, cryogenic storage, space vacuum). To block this immense heat flux, insulation (conduction resistance) is often useless, bulky, or heavy. Instead, engineers use **radiation shields**.

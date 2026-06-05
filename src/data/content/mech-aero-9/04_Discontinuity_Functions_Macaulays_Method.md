@@ -1,7 +1,3 @@
----
-title: "Discontinuity Functions (Macaulay's Method)"
----
-
 # Discontinuity Functions (Macaulay's Method)
 
 To avoid the algebraic nightmare of generating a dozen different constants of integration for a beam with multiple loads, we use a clever mathematical trick invented by W.H. Macaulay. 

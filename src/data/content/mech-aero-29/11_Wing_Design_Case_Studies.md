@@ -1,7 +1,3 @@
----
-title: "Wing Design Case Studies"
----
-
 # Wing Design Case Studies
 
 Examining how real aircraft wings were designed reveals how the theoretical tools of finite wing theory are applied to practical engineering constraints. Each aircraft generation has pushed the limits of aerodynamic efficiency, enabled by advances in computational methods and materials.

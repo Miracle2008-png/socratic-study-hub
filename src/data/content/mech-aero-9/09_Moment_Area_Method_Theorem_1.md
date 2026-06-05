@@ -1,7 +1,3 @@
----
-title: "Moment-Area Method: Theorem 1"
----
-
 # Moment-Area Method: Theorem 1
 
 Integration is tedious, and superposition requires a handbook of pre-calculated formulas. 

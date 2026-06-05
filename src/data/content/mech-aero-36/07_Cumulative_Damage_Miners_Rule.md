@@ -1,7 +1,3 @@
----
-title: "Cumulative Damage (Miner's Rule)"
----
-
 # Cumulative Damage (Miner's Rule)
 
 The S-N curve and Goodman diagram assume the part experiences the exact same stress amplitude cycle after cycle, forever.

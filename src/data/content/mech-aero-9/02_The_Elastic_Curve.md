@@ -1,7 +1,3 @@
----
-title: "The Elastic Curve"
----
-
 # The Elastic Curve
 
 When a beam bends under a transverse load, its longitudinal centroidal axis deforms from a perfectly straight line into a continuous curve. This deformed axis is called the **Elastic Curve**.

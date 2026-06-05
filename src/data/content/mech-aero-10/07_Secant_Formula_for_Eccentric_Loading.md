@@ -1,7 +1,3 @@
----
-title: "The Secant Formula for Eccentric Loading"
----
-
 # The Secant Formula for Eccentric Loading
 
 Euler's buckling formula assumes a mathematically perfect, straight column loaded exactly through its centroid. In reality, a load is never perfectly centered. There is always some slight eccentricity ($e$), whether from imprecise manufacturing, off-center brackets, or microscopic crookedness.

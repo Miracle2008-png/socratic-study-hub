@@ -1,7 +1,3 @@
----
-title: "Multistage Compression Refrigeration"
----
-
 # Multistage Compression Refrigeration
 
 When a refrigeration system must operate across a very large temperature difference—for example, maintaining a freezer at -40°C while rejecting heat to a 35°C environment—a single-stage vapor-compression cycle becomes highly inefficient and often mechanically impossible.

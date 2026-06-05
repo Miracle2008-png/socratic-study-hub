@@ -1,7 +1,3 @@
----
-title: "The Method of Sections"
----
-
 # The Method of Sections
 
 The Method of Joints is tedious if you only need to find the force in one or two specific members located deep in the middle of a large truss. You would have to calculate every joint from the support inward.

@@ -1,7 +1,3 @@
----
-title: "Equivalent Systems of Forces"
----
-
 # Equivalent Systems of Forces
 
 A rigid body is often subjected to a complex system of multiple forces and couple moments applied at various points. For analysis, it is necessary to reduce this complex system to a simpler, equivalent system.

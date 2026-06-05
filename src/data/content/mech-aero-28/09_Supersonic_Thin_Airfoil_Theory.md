@@ -1,7 +1,3 @@
----
-title: "Supersonic Thin Airfoil Theory"
----
-
 # Supersonic Thin Airfoil Theory
 
 Supersonic aerodynamics is fundamentally different from subsonic aerodynamics. The hyperbolic nature of the governing equations means disturbances propagate only downstream, within specific **Mach cones**. Analytical solutions that are impossible subsonically become tractable supersonically.

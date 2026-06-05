@@ -1,7 +1,3 @@
----
-title: "Interplanetary Trajectories and Patched Conics"
----
-
 # Interplanetary Trajectories and Patched Conics
 
 Traveling to other planets is vastly more complicated than orbiting Earth. The spacecraft is influenced by the gravity of the Earth, the Sun, and the target planet. Solving the full N-Body problem for this trip is impossible analytically. Engineers simplify the problem using a technique called the **Patched Conic Approximation**.

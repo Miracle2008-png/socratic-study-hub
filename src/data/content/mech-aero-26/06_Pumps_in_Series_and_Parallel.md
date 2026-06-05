@@ -1,7 +1,3 @@
----
-title: "Pumps in Series and Parallel"
----
-
 # Pumps in Series and Parallel
 
 A single centrifugal pump may not be sufficient to meet the flow rate ($Q$) or head ($H$) requirements of a particular system. Instead of custom-designing a massive new pump, engineers often combine multiple standard pumps in series or parallel networks to achieve the desired performance.

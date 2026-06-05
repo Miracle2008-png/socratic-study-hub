@@ -1,7 +1,3 @@
----
-title: "Metacentric Height"
----
-
 # Metacentric Height ($GM$)
 
 The vertical distance between the Center of Gravity ($G$) and the Metacenter ($M$) is called the **Metacentric Height ($GM$)**. 

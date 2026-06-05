@@ -1,7 +1,3 @@
----
-title: "External Work and Strain Energy"
----
-
 # External Work and Strain Energy
 
 Before we can use the Conservation of Energy ($U_e = U_i$), we must derive the mathematical formulas for both external work and internal strain energy.

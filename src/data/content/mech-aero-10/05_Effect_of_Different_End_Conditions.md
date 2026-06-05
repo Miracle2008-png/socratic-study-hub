@@ -1,7 +1,3 @@
----
-title: "Effect of Different End Conditions"
----
-
 # Effect of Different End Conditions
 
 Euler's derivation assumed a very specific geometric boundary condition: a column perfectly pinned at both the top and the bottom. 

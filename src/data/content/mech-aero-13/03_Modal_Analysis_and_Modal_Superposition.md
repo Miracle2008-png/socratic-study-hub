@@ -1,7 +1,3 @@
----
-title: "Modal Analysis and Modal Superposition"
----
-
 # Modal Analysis and Modal Superposition
 
 The power of the eigenvalue solution — the natural frequencies and mode shapes — lies in what it enables: the **Modal Superposition Method**, which transforms a complex coupled multi-DOF system into a set of independent SDOF problems that can be solved trivially.

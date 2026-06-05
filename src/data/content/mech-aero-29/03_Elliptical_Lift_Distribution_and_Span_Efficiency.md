@@ -1,7 +1,3 @@
----
-title: "Elliptical Lift Distribution and Span Efficiency"
----
-
 # Elliptical Lift Distribution and Span Efficiency
 
 The **elliptical lift distribution** is the aerodynamic ideal for a finite wing: it minimizes induced drag for any given combination of wing span and total lift. Understanding why this is optimal, how to achieve it, and how much real wings deviate from it is central to wing design.

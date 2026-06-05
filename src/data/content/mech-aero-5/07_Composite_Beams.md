@@ -1,7 +1,3 @@
----
-title: "Composite Beams"
----
-
 # Composite Beams
 
 Beams constructed from two or more distinct materials are known as **composite beams**. A common example is a wooden beam reinforced with a steel plate bolted to its bottom. 

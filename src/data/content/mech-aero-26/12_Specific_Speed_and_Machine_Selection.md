@@ -1,7 +1,3 @@
----
-title: "Specific Speed and Machine Selection"
----
-
 # Specific Speed and Machine Selection
 
 Suppose an engineer needs to design a pump for a new water treatment plant. They know the required flow rate $Q$ and the required head $H$. They know standard motor speeds $N$ (e.g., 1750 rpm). 

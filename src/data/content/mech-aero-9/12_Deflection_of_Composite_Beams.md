@@ -1,7 +1,3 @@
----
-title: "Deflection of Composite Beams"
----
-
 # Deflection of Composite Beams
 
 In Topic 5, we learned how to calculate the internal stresses in a beam made of two different materials (like steel and wood) by using the Transformed-Section Method to convert the beam into a single, fictitious homogeneous material.

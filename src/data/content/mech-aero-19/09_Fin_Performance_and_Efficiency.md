@@ -1,7 +1,3 @@
----
-title: "Fin Performance and Efficiency"
----
-
 # Fin Performance: Effectiveness and Efficiency
 
 Adding a fin to a surface adds material, weight, and cost. It is essential to quantify whether the fin is actually improving heat transfer significantly, and how well it utilizes its own material.

@@ -1,7 +1,3 @@
----
-title: "Orbital Maneuvers (Hohmann Transfers)"
----
-
 # Orbital Maneuvers (Hohmann Transfers)
 
 Spacecraft rarely stay in the exact orbit they were launched into. They need to maneuver to reach higher orbits, rendezvous with a space station, or travel to other planets. Because there is no friction in space, you cannot simply "steer" like an airplane. You must change your velocity (Delta-v, $\Delta v$) by firing engines, which changes the size and shape of your orbit.

@@ -1,7 +1,3 @@
----
-title: "Future of Aviation Propulsion"
----
-
 # Future of Aviation Propulsion
 
 The jet engine has undergone a century of continuous refinement, resulting in incredibly safe, reliable, and efficient machines. However, the aviation industry faces an existential challenge: achieving net-zero carbon emissions by 2050. The gas turbine cannot achieve this alone, prompting the most significant period of propulsion innovation since the dawn of the jet age.

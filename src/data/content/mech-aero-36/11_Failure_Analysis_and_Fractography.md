@@ -1,7 +1,3 @@
----
-title: "Failure Analysis and Fractography"
----
-
 # Failure Analysis and Fractography
 
 When a catastrophic failure occurs—a bridge collapses, an engine explodes, or a crane boom snaps—engineers must determine exactly *why* it happened to prevent a recurrence. This forensic engineering process relies heavily on **Fractography**: the detailed study of the fracture surface.

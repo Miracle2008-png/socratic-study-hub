@@ -1,7 +1,3 @@
----
-title: "Environmental Impact and Emissions"
----
-
 # Environmental Impact and Emissions
 
 As global aviation expands, the environmental impact of jet propulsion has become a critical focus for engineers, regulators, and the public. Jet engines impact the environment primarily through noise and exhaust emissions.

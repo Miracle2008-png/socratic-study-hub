@@ -1,7 +1,3 @@
----
-title: "Stress Concentrations in Bending"
----
-
 # Stress Concentrations in Bending
 
 Just as we saw in torsion, the flexure formula ($\sigma = My/I$) predicts the nominal average stress in a perfectly straight, uniform beam. 

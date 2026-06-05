@@ -1,7 +1,3 @@
----
-title: "Introduction to Machine Element Design"
----
-
 # Introduction to Machine Element Design
 
 Machine element design is the art and science of creating functional, safe, and reliable mechanical components. It takes the abstract theories of statics, dynamics, mechanics of materials, and material science, and applies them to specific, real-world physical objects.

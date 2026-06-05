@@ -1,7 +1,3 @@
----
-title: "Prandtl Lifting Line Theory"
----
-
 # Prandtl Lifting Line Theory
 
 Ludwig Prandtl's **Lifting Line Theory** (1918–1919) is the foundational analytical model for 3D finite wing aerodynamics. It bridges 2D thin airfoil results with 3D wing performance by accounting for the inevitable induced effects of the finite span.

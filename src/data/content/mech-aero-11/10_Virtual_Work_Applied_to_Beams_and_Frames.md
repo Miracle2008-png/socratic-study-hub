@@ -1,7 +1,3 @@
----
-title: "Virtual Work Applied to Beams and Frames"
----
-
 # Virtual Work Applied to Beams and Frames
 
 While trusses deform purely by axial stretching, beams and rigid frames deform primarily by bending. We can adapt the Virtual Work equation to handle continuous bending structures.

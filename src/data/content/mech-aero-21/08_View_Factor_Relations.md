@@ -1,7 +1,3 @@
----
-title: "View Factor Relations"
----
-
 # View Factor Relations
 
 To avoid evaluating complex double integrals, three algebraic relations are used to solve for unknown view factors in an enclosure.

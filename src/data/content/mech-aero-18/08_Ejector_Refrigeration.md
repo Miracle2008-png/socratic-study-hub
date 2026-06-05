@@ -1,7 +1,3 @@
----
-title: "Ejector Refrigeration"
----
-
 # Ejector Refrigeration
 
 **Ejector refrigeration** (also known as steam-jet refrigeration) is another heat-driven cooling cycle. Like absorption refrigeration, it utilizes low-grade thermal energy instead of mechanical work. However, instead of a chemical absorbent and a liquid pump, it uses high-velocity fluid dynamics to compress the refrigerant.

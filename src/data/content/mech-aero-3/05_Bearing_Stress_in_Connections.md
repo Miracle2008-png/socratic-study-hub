@@ -1,7 +1,3 @@
----
-title: "Bearing Stress in Connections"
----
-
 # Bearing Stress in Connections
 
 When analyzing structural connections (like bolted or riveted joints), we must ensure the bolt itself does not shear. However, we must also ensure that the bolt does not crush or tear through the plates it is connecting.

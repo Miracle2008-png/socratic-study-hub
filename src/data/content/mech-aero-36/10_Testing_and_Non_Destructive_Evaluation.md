@@ -1,7 +1,3 @@
----
-title: "Testing and Non-Destructive Evaluation (NDE)"
----
-
 # Testing and Non-Destructive Evaluation (NDE)
 
 Because Fracture Mechanics relies entirely on knowing the exact size and location of existing cracks, finding those cracks before they reach a critical size is paramount.

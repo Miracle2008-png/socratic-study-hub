@@ -1,7 +1,3 @@
----
-title: "Introduction to Beam Deflection"
----
-
 # Introduction to Beam Deflection
 
 Up to this point, our structural analysis has focused entirely on **strength**. We calculated the internal stresses ($\sigma, \tau$) to ensure the material would not fracture or permanently yield under load.

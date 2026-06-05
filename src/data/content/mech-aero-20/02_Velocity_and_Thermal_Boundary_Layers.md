@@ -1,7 +1,3 @@
----
-title: "Velocity and Thermal Boundary Layers"
----
-
 # Velocity and Thermal Boundary Layers
 
 To understand how $h$ (the convection coefficient) behaves, we must understand the thin region of fluid near the surface where velocity and temperature change from the wall conditions to the free-stream conditions.

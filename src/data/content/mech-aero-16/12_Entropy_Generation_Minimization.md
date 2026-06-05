@@ -1,7 +1,3 @@
----
-title: "Entropy Generation Minimization"
----
-
 # Entropy Generation Minimization
 
 **Entropy Generation Minimization (EGM)**, developed primarily by Adrian Bejan, is a design methodology that treats the minimization of entropy production as the primary optimization objective for thermal engineering systems. It provides a systematic, physics-based path to optimal designs.

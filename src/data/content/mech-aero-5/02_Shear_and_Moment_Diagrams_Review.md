@@ -1,7 +1,3 @@
----
-title: "Shear and Moment Diagrams Review"
----
-
 # Shear and Moment Diagrams Review
 
 To ensure a beam is safe, an engineer must locate the exact cross-section where the internal shear force $V$ and bending moment $M$ reach their absolute maximum values. 

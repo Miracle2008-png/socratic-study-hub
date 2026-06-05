@@ -1,7 +1,3 @@
----
-title: "Introduction to Materials Science"
----
-
 # Introduction to Materials Science
 
 Materials Science and Engineering (MSE) is an interdisciplinary field that studies the relationship between the structure of materials at atomic or molecular scales and their macroscopic properties. It combines elements of physics, chemistry, and engineering.

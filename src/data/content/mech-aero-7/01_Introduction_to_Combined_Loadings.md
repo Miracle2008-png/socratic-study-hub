@@ -1,7 +1,3 @@
----
-title: "Introduction to Combined Loadings"
----
-
 # Introduction to Combined Loadings
 
 In the previous chapters, we analyzed structural members subjected to a single, isolated type of load:

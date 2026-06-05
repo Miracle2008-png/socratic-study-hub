@@ -1,7 +1,3 @@
----
-title: "Radiation Intensity and Solid Angles"
----
-
 # Radiation Intensity and Solid Angles
 
 Total emissive power ($E = \sigma T^4$) describes the total heat leaving a surface in *all* directions. But radiation is highly directional. To analyze how much radiation from Surface 1 actually hits a specific Surface 2, we must define radiation on a directional basis using intensity and solid angles.

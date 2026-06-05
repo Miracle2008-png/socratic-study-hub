@@ -1,7 +1,3 @@
----
-title: "Transonic Aerodynamics and Wave Drag"
----
-
 # Transonic Aerodynamics and Wave Drag
 
 The **transonic regime** (roughly Mach 0.7–1.2) is the most aerodynamically complex speed range. Mixed subsonic and supersonic regions coexist on the vehicle, shock waves appear and move dramatically with small changes in flight condition, and both lift and drag behave in highly non-linear ways.

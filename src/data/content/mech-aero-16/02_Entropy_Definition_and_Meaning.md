@@ -1,7 +1,3 @@
----
-title: "Entropy: Definition and Physical Meaning"
----
-
 # Entropy: Definition and Physical Meaning
 
 **Entropy** is the thermodynamic property that quantifies irreversibility and the directionality of processes. It is one of the most profound and often misunderstood concepts in physics.

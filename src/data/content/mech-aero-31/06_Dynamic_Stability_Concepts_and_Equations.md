@@ -1,7 +1,3 @@
----
-title: "Dynamic Stability Concepts and Equations"
----
-
 # Dynamic Stability Concepts and Equations
 
 While static stability examines the initial tendency to return to equilibrium, **dynamic stability** analyzes the time history of the aircraft's motion following a disturbance. It answers the question: *How* does the aircraft return to equilibrium? Does it oscillate? Do the oscillations damp out quickly or slowly?

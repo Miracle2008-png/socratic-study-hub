@@ -1,7 +1,3 @@
----
-title: "Conic Sections and Orbital Trajectories"
----
-
 # Conic Sections and Orbital Trajectories
 
 The solution to the two-body equation of motion proves that any unpowered trajectory governed solely by gravity must trace out a **conic section**—a curve formed by the intersection of a plane and a cone.

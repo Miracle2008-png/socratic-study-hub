@@ -1,7 +1,3 @@
----
-title: "Gear Failure and Analysis"
----
-
 # Gear Failure and Analysis
 
 Because gears transmit immense torque while their teeth are continuously sliding and impacting against each other, they are highly susceptible to failure. Designing a gear isn't just about kinematics; it's a rigorous structural analysis.

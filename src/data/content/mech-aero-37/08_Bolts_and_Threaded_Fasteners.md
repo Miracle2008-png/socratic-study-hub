@@ -1,7 +1,3 @@
----
-title: "Bolts and Threaded Fasteners"
----
-
 # Bolts and Threaded Fasteners
 
 At first glance, a bolt is the simplest machine element. In reality, bolted joints are highly complex, non-linear structural systems. Improperly designed or installed bolted joints are a leading cause of mechanical failure in aerospace and heavy industry.

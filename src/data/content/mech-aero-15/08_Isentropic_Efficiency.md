@@ -1,7 +1,3 @@
----
-title: "Isentropic Efficiency of Turbines and Compressors"
----
-
 # Isentropic Efficiency of Turbines and Compressors
 
 Ideal turbines and compressors operate **isentropically** ($s = $ constant, adiabatic and reversible). Real machines deviate from this ideal due to internal friction, heat leakage, and fluid flow irreversibilities. The **isentropic efficiency** quantifies how closely a real machine approaches its ideal counterpart.

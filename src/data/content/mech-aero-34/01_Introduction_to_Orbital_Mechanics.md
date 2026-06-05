@@ -1,7 +1,3 @@
----
-title: "Introduction to Orbital Mechanics"
----
-
 # Introduction to Orbital Mechanics
 
 Orbital mechanics (or astrodynamics) is the application of celestial mechanics to the practical problems concerning the motion of rockets and spacecraft. It governs everything from keeping a communications satellite over the same spot on Earth to plotting a trajectory to Mars.

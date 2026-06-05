@@ -1,7 +1,3 @@
----
-title: "Introduction to Rocket Propulsion"
----
-
 # Introduction to Rocket Propulsion
 
 Rocket propulsion differs fundamentally from air-breathing jet propulsion. While jet engines take in atmospheric oxygen to burn their fuel, a rocket carries its own oxygen supply (oxidizer) along with its fuel. This key difference allows rockets to operate in the vacuum of space, far beyond the Earth's atmosphere.

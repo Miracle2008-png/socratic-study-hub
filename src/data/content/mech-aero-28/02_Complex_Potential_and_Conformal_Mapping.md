@@ -1,7 +1,3 @@
----
-title: "Complex Potential and Conformal Mapping"
----
-
 # Complex Potential and Conformal Mapping
 
 One of the most powerful mathematical tools in 2D inviscid aerodynamics is **Complex Potential Theory**, which uses complex variable mathematics to solve flow problems analytically.

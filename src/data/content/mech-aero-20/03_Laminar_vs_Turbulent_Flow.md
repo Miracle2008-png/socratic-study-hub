@@ -1,7 +1,3 @@
----
-title: "Laminar vs. Turbulent Flow"
----
-
 # Laminar vs. Turbulent Flow
 
 The flow regime within the boundary layer radically alters both the wall friction (fluid mechanics) and the convection coefficient (heat transfer).

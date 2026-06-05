@@ -1,7 +1,3 @@
----
-title: "Strain Rosettes"
----
-
 # Strain Rosettes
 
 The entire process of finding principal stresses in real-world machinery hinges on physically measuring the strain on the surface of the part while the machine is operating.

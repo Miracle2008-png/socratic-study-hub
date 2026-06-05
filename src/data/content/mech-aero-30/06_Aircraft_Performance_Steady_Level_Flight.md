@@ -1,7 +1,3 @@
----
-title: "Aircraft Performance: Steady Level Flight"
----
-
 # Aircraft Performance: Steady Level Flight
 
 Aircraft performance analysis answers the fundamental engineering questions: How far can this aircraft fly? How fast? How high? How efficiently? The analysis begins with the simplest case — steady, level, unaccelerated flight — and builds toward more complex maneuvers.

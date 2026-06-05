@@ -1,7 +1,3 @@
----
-title: "Shear in Straight Members"
----
-
 # Shear in Straight Members
 
 To derive an equation for shear stress, we cannot rely on simple kinematic geometry as we did for torsion (plane sections rotate) or bending (plane sections remain plane). 

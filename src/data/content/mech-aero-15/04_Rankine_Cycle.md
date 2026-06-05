@@ -1,7 +1,3 @@
----
-title: "The Rankine Cycle: Steam Power Plants"
----
-
 # The Rankine Cycle: Steam Power Plants
 
 The **Rankine cycle** is the standard thermodynamic cycle for steam power plants — the technology that generates most of the world's electricity (coal, nuclear, natural gas combined cycle, concentrated solar). Understanding it is fundamental to power engineering.

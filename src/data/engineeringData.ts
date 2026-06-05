@@ -63,21 +63,40 @@ export const ENGINEERING_BRANCHES: Record<string, EngineeringBranch> = {
   'electrical-computer': {
     id: 'electrical-computer',
     title: 'Electrical & Computer',
-    description: 'Hardware, circuits, electromagnetics, and embedded systems.',
+    description: 'Circuits, electronics, electromagnetics, data structures, algorithms, and control systems.',
     color: '#eab308', // Yellow/Gold
-    topics: []
-  },
-  'software-cs': {
-    id: 'software-cs',
-    title: 'Software & CS',
-    description: 'Algorithms, data structures, operating systems, and AI.',
-    color: '#3b82f6', // Blue
-    topics: []
+    topics: [
+      { id: 'elec-comp-1', title: 'DC Circuit Analysis' },
+      { id: 'elec-comp-2', title: 'AC Circuit Analysis & Phasors' },
+      { id: 'elec-comp-3', title: 'Signals and Systems' },
+      { id: 'elec-comp-4', title: 'Analog Electronics (Diodes, BJTs, FETs)' },
+      { id: 'elec-comp-5', title: 'Operational Amplifiers' },
+      { id: 'elec-comp-6', title: 'Digital Logic Design' },
+      { id: 'elec-comp-7', title: 'Microprocessors & Assembly Language' },
+      { id: 'elec-comp-8', title: 'Electromagnetic Field Theory' },
+      { id: 'elec-comp-9', title: 'Transmission Lines & Antennas' },
+      { id: 'elec-comp-10', title: 'Power Systems & Machinery' },
+      { id: 'elec-comp-11', title: 'Power Electronics' },
+      { id: 'elec-comp-12', title: 'Communication Systems (Analog & Digital)' },
+      { id: 'elec-comp-13', title: 'Digital Signal Processing (DSP)' },
+      { id: 'elec-comp-14', title: 'VLSI Design' },
+      { id: 'elec-comp-15', title: 'Photonics & Optoelectronics' },
+      { id: 'elec-comp-16', title: 'Sensors & Transducers' },
+      { id: 'elec-comp-17', title: 'Actuators (Electrical, Pneumatic, Hydraulic)' },
+      { id: 'elec-comp-18', title: 'Signal Conditioning & Data Acquisition' },
+      { id: 'elec-comp-19', title: 'Classical Control Theory' },
+      { id: 'elec-comp-20', title: 'Robot Kinematics' },
+      { id: 'elec-comp-21', title: 'Object-Oriented Programming' },
+      { id: 'elec-comp-22', title: 'Core Data Structures' },
+      { id: 'elec-comp-23', title: 'Algorithms' },
+      { id: 'elec-comp-24', title: 'Cybersecurity & Cryptography' },
+      { id: 'elec-comp-25', title: 'Compiler Design & Automata Theory' }
+    ]
   },
   'mechanical-aerospace': {
     id: 'mechanical-aerospace',
     title: 'Mechanical & Aerospace',
-    description: 'Statics, dynamics, thermodynamics, fluids, and aerospace mechanics.',
+    description: 'Statics, dynamics, materials, and aerospace mechanics.',
     color: '#ef4444', // Red
     topics: [
       { id: 'mech-aero-1', title: 'Engineering Statics & Equilibrium' },
@@ -93,22 +112,6 @@ export const ENGINEERING_BRANCHES: Record<string, EngineeringBranch> = {
       { id: 'mech-aero-11', title: 'Energy & Momentum Methods' },
       { id: 'mech-aero-12', title: 'Mechanical Vibrations' },
       { id: 'mech-aero-13', title: 'Multi-DOF Vibrations & Modal Analysis' },
-      { id: 'mech-aero-14', title: 'Properties of Pure Substances' },
-      { id: 'mech-aero-15', title: 'First Law of Thermodynamics' },
-      { id: 'mech-aero-16', title: 'Second Law, Entropy, and Exergy' },
-      { id: 'mech-aero-17', title: 'Power Cycles' },
-      { id: 'mech-aero-18', title: 'Refrigeration & Heat Pump Cycles' },
-      { id: 'mech-aero-19', title: 'Steady & Transient Heat Conduction' },
-      { id: 'mech-aero-20', title: 'Convective Heat Transfer' },
-      { id: 'mech-aero-21', title: 'Radiation Heat Transfer' },
-      { id: 'mech-aero-22', title: 'Fluid Statics & Buoyancy' },
-      { id: 'mech-aero-23', title: 'Fluid Kinematics & Navier-Stokes' },
-      { id: 'mech-aero-24', title: 'Internal Incompressible Flow' },
-      { id: 'mech-aero-25', title: 'External Incompressible Flow' },
-      { id: 'mech-aero-26', title: 'Turbomachinery' },
-      { id: 'mech-aero-27', title: 'Compressible Flow & Shock Waves' },
-      { id: 'mech-aero-28', title: 'Inviscid Aerodynamics' },
-      { id: 'mech-aero-29', title: 'Finite Wing Theory' },
       { id: 'mech-aero-30', title: 'Aircraft Flight Mechanics' },
       { id: 'mech-aero-31', title: 'Aircraft Stability & Control' },
       { id: 'mech-aero-32', title: 'Jet Propulsion' },
@@ -120,25 +123,84 @@ export const ENGINEERING_BRANCHES: Record<string, EngineeringBranch> = {
       { id: 'mech-aero-38', title: 'Control Theory for Mechanical Systems' }
     ]
   },
+  'thermodynamics': {
+    id: 'thermodynamics',
+    title: 'Thermodynamics & Heat Transfer',
+    description: 'Energy, entropy, power cycles, and all modes of heat transfer from conduction to radiation.',
+    color: '#f97316', // Deep Orange
+    topics: [
+      { id: 'mech-aero-14', title: 'Properties of Pure Substances' },
+      { id: 'mech-aero-15', title: 'First Law of Thermodynamics' },
+      { id: 'mech-aero-16', title: 'Second Law, Entropy, and Exergy' },
+      { id: 'mech-aero-17', title: 'Power Cycles' },
+      { id: 'mech-aero-18', title: 'Refrigeration & Heat Pump Cycles' },
+      { id: 'mech-aero-19', title: 'Steady & Transient Heat Conduction' },
+      { id: 'mech-aero-20', title: 'Convective Heat Transfer' },
+      { id: 'mech-aero-21', title: 'Radiation Heat Transfer' },
+      { id: 'thermo-1', title: 'Heat Exchangers' },
+      { id: 'thermo-2', title: 'Psychrometrics & HVAC Systems' },
+      { id: 'thermo-3', title: 'Combustion & Reacting Mixtures' },
+      { id: 'thermo-4', title: 'Gas Dynamics & Nozzle Flows' },
+      { id: 'thermo-5', title: 'Statistical Thermodynamics' },
+      { id: 'thermo-6', title: 'Mass Transfer Fundamentals' },
+    ]
+  },
+  'fluid-mechanics': {
+    id: 'fluid-mechanics',
+    title: 'Fluid Mechanics & Aerodynamics',
+    description: 'Fluid statics, viscous and inviscid flows, turbomachinery, compressible flow, and aerodynamics.',
+    color: '#06b6d4', // Cyan
+    topics: [
+      { id: 'mech-aero-22', title: 'Fluid Statics & Buoyancy' },
+      { id: 'mech-aero-23', title: 'Fluid Kinematics & Navier-Stokes' },
+      { id: 'mech-aero-24', title: 'Internal Incompressible Flow' },
+      { id: 'mech-aero-25', title: 'External Incompressible Flow' },
+      { id: 'mech-aero-26', title: 'Turbomachinery' },
+      { id: 'mech-aero-27', title: 'Compressible Flow & Shock Waves' },
+      { id: 'mech-aero-28', title: 'Inviscid Aerodynamics' },
+      { id: 'mech-aero-29', title: 'Finite Wing Theory' },
+      { id: 'fluids-1', title: 'Dimensional Analysis & Similitude' },
+      { id: 'fluids-2', title: 'Boundary Layer Theory' },
+      { id: 'fluids-3', title: 'Turbulence & Turbulence Modeling' },
+      { id: 'fluids-4', title: 'Introduction to CFD' },
+      { id: 'fluids-5', title: 'Two-Phase & Multiphase Flow' },
+      { id: 'fluids-6', title: 'Non-Newtonian Fluid Mechanics' },
+    ]
+  },
   'chemical-process': {
     id: 'chemical-process',
-    title: 'Chemical & Process',
-    description: 'Material balances, separation processes, and reaction engineering.',
+    title: 'Chemical, Process & Petroleum',
+    description: 'Material balances, separation processes, reaction engineering, and reservoir engineering.',
     color: '#10b981', // Green
-    topics: []
+    topics: [
+      { id: 'chem-petro-1', title: 'Material & Energy Balances' },
+      { id: 'chem-petro-2', title: 'Chemical Engineering Thermodynamics' },
+      { id: 'chem-petro-3', title: 'Transport Phenomena' },
+      { id: 'chem-petro-4', title: 'Momentum Transfer & Fluidization' },
+      { id: 'chem-petro-5', title: 'Heat Transfer Equipment Design' },
+      { id: 'chem-petro-6', title: 'Mass Transfer & Diffusion' },
+      { id: 'chem-petro-7', title: 'Separation Processes (Distillation & Absorption)' },
+      { id: 'chem-petro-8', title: 'Advanced Separations (Extraction, Membranes)' },
+      { id: 'chem-petro-9', title: 'Chemical Reaction Kinetics' },
+      { id: 'chem-petro-10', title: 'Reactor Design Engineering' },
+      { id: 'chem-petro-11', title: 'Process Dynamics & Control' },
+      { id: 'chem-petro-12', title: 'Process Plant Design & Economics' },
+      { id: 'chem-petro-13', title: 'Introduction to Petroleum Geology' },
+      { id: 'chem-petro-14', title: 'Reservoir Rock & Fluid Properties' },
+      { id: 'chem-petro-15', title: 'Drilling Engineering & Well Completion' },
+      { id: 'chem-petro-16', title: 'Reservoir Engineering & Simulation' },
+      { id: 'chem-petro-17', title: 'Well Logging & Formation Evaluation' },
+      { id: 'chem-petro-18', title: 'Production Engineering & Artificial Lift' },
+      { id: 'chem-petro-19', title: 'Enhanced Oil Recovery (EOR)' },
+      { id: 'chem-petro-20', title: 'Natural Gas Engineering' },
+      { id: 'chem-petro-21', title: 'Petroleum Refining & Petrochemicals' }
+    ]
   },
   'civil-environmental': {
     id: 'civil-environmental',
     title: 'Civil & Environmental',
     description: 'Structural analysis, geotechnics, and environmental infrastructure.',
     color: '#f97316', // Orange
-    topics: []
-  },
-  'systems-mechatronics': {
-    id: 'systems-mechatronics',
-    title: 'Systems & Mechatronics',
-    description: 'Robotics, control theory, biomechanics, and complex systems.',
-    color: '#06b6d4', // Cyan
     topics: []
   }
 };

@@ -1,7 +1,3 @@
----
-title: "Normal Stress under Axial Loading"
----
-
 # Normal Stress under Axial Loading
 
 The simplest and most fundamental application of stress analysis is the two-force member subjected exclusively to an axial load along its centroidal axis. Examples include truss members, hanger cables, and vertical columns.

@@ -1,7 +1,3 @@
----
-title: "Statically Indeterminate Axially Loaded Members"
----
-
 # Statically Indeterminate Axially Loaded Members
 
 In statics, we encountered problems where the number of unknown support reactions exceeded the number of available equilibrium equations. We called these structures **statically indeterminate**. Statics alone is useless for solving them.

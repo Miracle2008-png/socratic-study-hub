@@ -1,7 +1,3 @@
----
-title: "Stagnation Properties and Isentropic Flow"
----
-
 # Stagnation Properties and Isentropic Flow
 
 In high-speed flow, kinetic energy ($V^2/2$) is so massive that when the fluid slows down, its temperature and pressure rise dramatically. To account for this, we introduce the concept of **stagnation properties**.

@@ -1,7 +1,3 @@
----
-title: "Lubrication and Tribology"
----
-
 # Lubrication and Tribology
 
 You can design the strongest gears, shafts, and bearings in the world, but if they rub against each other dry, they will destroy themselves in minutes.

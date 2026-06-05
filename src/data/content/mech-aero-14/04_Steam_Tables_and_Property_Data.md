@@ -1,7 +1,3 @@
----
-title: "Steam Tables and Thermodynamic Property Data"
----
-
 # Steam Tables and Thermodynamic Property Data
 
 The properties of real substances (water, refrigerants, combustion gases) cannot be computed from a simple equation. They must be determined from extensive experimental measurements. These data are compiled into **thermodynamic property tables** — the fundamental engineering reference for solving thermodynamics problems.

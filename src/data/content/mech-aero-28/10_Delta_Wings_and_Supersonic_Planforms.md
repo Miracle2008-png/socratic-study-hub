@@ -1,7 +1,3 @@
----
-title: "Delta Wings and Supersonic Planforms"
----
-
 # Delta Wings and Supersonic Planforms
 
 Wing planform (the top-view shape) fundamentally affects both subsonic and supersonic aerodynamics. The requirements for efficient supersonic flight drove the development of radically different wing shapes from conventional subsonic designs.

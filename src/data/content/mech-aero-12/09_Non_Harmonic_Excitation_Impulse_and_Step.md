@@ -1,7 +1,3 @@
----
-title: "Non-Harmonic Excitation: Impulse and Step Loads"
----
-
 # Non-Harmonic Excitation: Impulse and Step Loads
 
 Real-world forces are rarely perfectly sinusoidal. A car hits a pothole, a rocket fires suddenly, a door slams. These **transient** or **arbitrary** forcing functions require different analytical tools than the harmonic forcing analysis.

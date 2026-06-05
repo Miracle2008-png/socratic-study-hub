@@ -1,7 +1,3 @@
----
-title: "Induced Drag and Winglets"
----
-
 # Induced Drag and Winglets
 
 **Induced drag** (drag due to lift) is the aerodynamic penalty for generating lift with a finite-span wing. Unlike profile drag (which can theoretically be reduced toward zero in frictionless flow), induced drag is an inherent consequence of the physics of finite-span lift generation — it cannot be eliminated, only reduced.

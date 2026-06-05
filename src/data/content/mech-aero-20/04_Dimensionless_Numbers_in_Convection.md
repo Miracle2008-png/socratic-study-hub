@@ -1,7 +1,3 @@
----
-title: "Dimensionless Numbers in Convection"
----
-
 # Dimensionless Numbers in Convection
 
 Solving the Navier-Stokes and energy equations analytically to find $h$ is impossible for all but the simplest laminar flows. Instead, engineers rely on extensive experimental data. To make this data universally applicable to any fluid and any scale, results are correlated using dimensionless groups.

@@ -1,7 +1,3 @@
----
-title: "Static Longitudinal Stability"
----
-
 # Static Longitudinal Stability
 
 **Static stability** is the tendency of an aircraft to return to its equilibrium state following a small disturbance, when we consider only the initial aerodynamic force response (not the dynamic time history). **Longitudinal static stability** specifically concerns pitching motion — whether the aircraft naturally resists nose-up or nose-down perturbations.

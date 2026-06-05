@@ -1,7 +1,3 @@
----
-title: "Introduction to the Finite Element Method"
----
-
 # Introduction to the Finite Element Method
 
 For structures with complex geometry, variable cross-sections, or multiple materials, exact analytical solutions to the governing PDEs are impossible. The **Finite Element Method (FEM)** is the universal numerical technique for solving these problems. It is the computational backbone of every modern structural, thermal, and fluid analysis tool.

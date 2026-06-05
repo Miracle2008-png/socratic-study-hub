@@ -1,7 +1,3 @@
----
-title: "Power Transmission"
----
-
 # Power Transmission
 
 The most common application of circular shafts in engineering is to transmit mechanical power from one device to another (e.g., from a motor to a pump, or from a car engine to the wheels).

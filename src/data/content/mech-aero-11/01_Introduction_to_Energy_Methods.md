@@ -1,7 +1,3 @@
----
-title: "Introduction to Energy Methods"
----
-
 # Introduction to Energy Methods
 
 Throughout this entire curriculum, we have analyzed structures using Newtonian mechanics: applying the equations of static equilibrium ($\sum F = 0$, $\sum M = 0$) and utilizing geometric compatibility (integration of the elastic curve) to find deflections and solve indeterminate structures.

@@ -1,7 +1,3 @@
----
-title: "The Stress-Strain Diagram"
----
-
 # The Stress-Strain Diagram
 
 To design safe structures, engineers must understand exactly how a specific material behaves under load. The mechanical properties of a material are determined experimentally, most commonly through a **tension test**.

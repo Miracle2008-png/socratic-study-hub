@@ -1,7 +1,3 @@
----
-title: "Inelastic Bending"
----
-
 # Inelastic Bending
 
 The flexure formula ($\sigma = My/I$) assumes the bending stress never exceeds the proportional limit of the material. What happens to a beam if we apply a massive bending moment that pushes the outer fibers past their yield stress?

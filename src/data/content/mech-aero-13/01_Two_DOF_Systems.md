@@ -1,7 +1,3 @@
----
-title: "Two-Degree-of-Freedom Systems"
----
-
 # Two-Degree-of-Freedom Systems
 
 A single-degree-of-freedom (SDOF) system has one mass, one spring, one equation of motion, and one natural frequency. The moment a second mass is added, the system becomes fundamentally richer — and more complex.

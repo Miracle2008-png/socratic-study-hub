@@ -1,7 +1,3 @@
----
-title: "Free Undamped Vibration: The SDOF System"
----
-
 # Free Undamped Vibration: The SDOF System
 
 The single-degree-of-freedom (SDOF) undamped system is the mathematical foundation of all vibrations theory. It is the simplest possible vibrating system: a mass $m$ attached to a spring of stiffness $k$, with no energy dissipation.

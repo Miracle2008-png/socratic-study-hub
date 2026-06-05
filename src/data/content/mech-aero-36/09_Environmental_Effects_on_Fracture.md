@@ -1,7 +1,3 @@
----
-title: "Environmental Effects on Fracture (SCC)"
----
-
 # Environmental Effects on Fracture
 
 A material might have excellent fatigue life in a clean laboratory, but place it in a corrosive environment (like saltwater, high-pressure hydrogen, or industrial chemicals), and it can fail abruptly at stresses far below its design limits.

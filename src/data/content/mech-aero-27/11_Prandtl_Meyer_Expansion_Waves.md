@@ -1,7 +1,3 @@
----
-title: "Prandtl-Meyer Expansion Waves"
----
-
 # Prandtl-Meyer Expansion Waves
 
 Oblique shock waves occur when a supersonic flow is forced to turn *into* itself (a concave corner), compressing the gas. 

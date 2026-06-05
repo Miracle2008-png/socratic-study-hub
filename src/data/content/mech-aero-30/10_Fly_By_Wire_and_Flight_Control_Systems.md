@@ -1,7 +1,3 @@
----
-title: "Fly-By-Wire and Flight Control Systems"
----
-
 # Fly-By-Wire and Flight Control Systems
 
 Modern commercial and military aircraft use **Fly-By-Wire (FBW)** flight control systems — the pilot's control inputs are converted to electrical signals processed by flight computers, which then command hydraulic or electric actuators to move control surfaces. There are no direct mechanical linkages between cockpit and control surfaces.

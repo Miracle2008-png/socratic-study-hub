@@ -1,7 +1,3 @@
----
-title: "Axial Flow Pumps and Fans"
----
-
 # Axial Flow Pumps and Fans
 
 While centrifugal machines use centrifugal force to fling fluid outward, **axial flow machines** push fluid straight through a pipe, parallel to the rotating shaft. They function essentially like boat propellers or airplane propellers confined within a tube.

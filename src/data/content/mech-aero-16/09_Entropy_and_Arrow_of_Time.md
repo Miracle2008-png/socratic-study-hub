@@ -1,7 +1,3 @@
----
-title: "Entropy and the Arrow of Time"
----
-
 # Entropy and the Arrow of Time
 
 The Second Law — and entropy — have profound implications far beyond engineering. They explain why time flows in one direction, why the universe ages, and why life requires a continuous supply of low-entropy energy.

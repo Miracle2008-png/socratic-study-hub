@@ -1,7 +1,3 @@
----
-title: "Shear Flow in Thin-Walled Members"
----
-
 # Shear Flow in Thin-Walled Members
 
 In aerospace and lightweight structural engineering, beams are often constructed from very thin sheets of metal bent into specific shapes (channels, angles, I-sections). These are **thin-walled members**.

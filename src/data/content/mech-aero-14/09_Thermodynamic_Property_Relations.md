@@ -1,7 +1,3 @@
----
-title: "Thermodynamic Property Relations"
----
-
 # Thermodynamic Property Relations
 
 The fundamental thermodynamic properties ($P$, $T$, $v$, $u$, $h$, $s$, $g$, $f$) are not independent. Mathematical relationships linking them — derived from the First and Second Laws — allow any unknown property to be computed from measurable quantities.

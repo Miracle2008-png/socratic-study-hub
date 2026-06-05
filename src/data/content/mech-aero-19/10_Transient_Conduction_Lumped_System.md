@@ -1,7 +1,3 @@
----
-title: "Transient Conduction: Lumped System Analysis"
----
-
 # Transient Conduction: Lumped System Analysis
 
 When a solid body is suddenly exposed to a new fluid environment (e.g., dropping a hot metal ball into a cold water bath), its temperature changes with time. This is **transient heat conduction**.

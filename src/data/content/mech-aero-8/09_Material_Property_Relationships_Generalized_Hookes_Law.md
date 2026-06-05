@@ -1,7 +1,3 @@
----
-title: "Generalized Hooke's Law"
----
-
 # Generalized Hooke's Law
 
 In simple uniaxial tension (pulling a rod), stress and strain are linked by Hooke's Law: $\sigma = E\epsilon$. 

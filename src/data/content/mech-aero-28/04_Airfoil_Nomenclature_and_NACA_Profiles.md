@@ -1,7 +1,3 @@
----
-title: "Airfoil Nomenclature and NACA Profiles"
----
-
 # Airfoil Nomenclature and NACA Profiles
 
 Understanding an airfoil begins with its geometric description. The National Advisory Committee for Aeronautics (NACA, predecessor to NASA) systematically studied hundreds of airfoil shapes in the 1930s and developed a standardized numbering system that is still universally used today.

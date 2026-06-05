@@ -1,7 +1,3 @@
----
-title: "Kirchhoff's Law and Gray Surfaces"
----
-
 # Kirchhoff's Law and Gray Surfaces
 
 We have defined two distinct surface properties: Emissivity $\varepsilon$ (how well a surface *emits* radiation relative to a blackbody) and Absorptivity $\alpha$ (what fraction of incident radiation a surface *absorbs*). 

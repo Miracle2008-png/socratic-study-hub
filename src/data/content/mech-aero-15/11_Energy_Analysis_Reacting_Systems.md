@@ -1,7 +1,3 @@
----
-title: "Energy Analysis of Reacting Systems"
----
-
 # Energy Analysis of Reacting Systems
 
 When a chemical reaction occurs inside a thermodynamic system (as in a combustion chamber, fuel cell, or reactor), the energy balance must account for the chemical energy stored in molecular bonds — not just thermal energy. The key tool is the **enthalpy of combustion** and the **adiabatic flame temperature** calculation.

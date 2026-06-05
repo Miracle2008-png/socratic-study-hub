@@ -1,7 +1,3 @@
----
-title: "Application to Machine Design"
----
-
 # Application to Machine Design
 
 The analysis of combined loadings is the absolute bedrock of Mechanical Engineering and Machine Design. Almost no machine component experiences simple, isolated loading.

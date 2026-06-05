@@ -1,7 +1,3 @@
----
-title: "External Forced Convection: Flat Plates"
----
-
 # External Forced Convection: Flat Plates
 
 The flow over a flat plate is the foundational model for external convection, applicable to aircraft wings, solar panels, and cooling fins.

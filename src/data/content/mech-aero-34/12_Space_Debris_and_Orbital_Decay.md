@@ -1,7 +1,3 @@
----
-title: "Space Debris and Orbital Decay"
----
-
 # Space Debris and Orbital Decay
 
 The environment of Low Earth Orbit (LEO) is becoming increasingly congested. Since the launch of Sputnik in 1957, humanity has placed thousands of objects into orbit. The long-term sustainability of spaceflight is now threatened by the accumulation of "space junk."

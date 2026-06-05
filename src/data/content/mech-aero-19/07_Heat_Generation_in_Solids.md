@@ -1,7 +1,3 @@
----
-title: "Heat Generation in Solids"
----
-
 # Heat Generation in Solids
 
 In many engineering applications, heat is generated internally within a solid medium. Examples include Joule ($I^2R$) heating in electrical conductors, chemical exothermic reactions, and nuclear fission in fuel rods. 

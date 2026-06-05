@@ -1,7 +1,3 @@
----
-title: "Entropy Change Calculations"
----
-
 # Entropy Change Calculations
 
 Computing entropy changes for pure substances, ideal gases, and incompressible solids/liquids is a routine but essential engineering skill. The method depends on the substance model and the process type.

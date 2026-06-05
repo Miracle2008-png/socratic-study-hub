@@ -1,7 +1,3 @@
----
-title: "Exergy of Fuels and Chemical Exergy"
----
-
 # Exergy of Fuels and Chemical Exergy
 
 The exergy of a fuel is not simply its LHV (lower heating value). It is the maximum work extractable as the fuel reacts with oxygen from the environment, with all products returning to the dead state — the **chemical exergy**.

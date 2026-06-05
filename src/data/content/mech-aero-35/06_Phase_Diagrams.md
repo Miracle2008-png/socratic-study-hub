@@ -1,7 +1,3 @@
----
-title: "Phase Diagrams"
----
-
 # Phase Diagrams
 
 Most engineering materials are not pure elements; they are alloys (mixtures of two or more elements). To understand how an alloy will behave, we must know its "phase." A **phase** is a physically distinct, chemically homogeneous, and mechanically separable part of a material. (For example, ice and liquid water are two different phases of H2O).

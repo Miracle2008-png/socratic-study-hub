@@ -1,7 +1,3 @@
----
-title: "Specialized Earth Orbits"
----
-
 # Specialized Earth Orbits
 
 Satellite missions dictate the specific orbit required. Different altitudes and inclinations offer unique advantages for communications, navigation, and observation.

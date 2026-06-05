@@ -1,7 +1,3 @@
----
-title: "Viscous Damping and the Damping Ratio"
----
-
 # Viscous Damping and the Damping Ratio
 
 In a real physical system, energy is always dissipated — through air resistance, internal material hysteresis, joint friction, or fluid dashpots. Without damping, a disturbed structure would oscillate forever. The most mathematically tractable model for energy dissipation is **viscous damping**, where the damping force is directly proportional to velocity.

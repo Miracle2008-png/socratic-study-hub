@@ -1,7 +1,3 @@
----
-title: "Propellant Management and Tankage"
----
-
 # Propellant Management and Tankage
 
 In a launch vehicle, fuel and oxidizer tanks make up the vast majority of the volume and structural mass. Designing these tanks involves much more than simply building a large metal balloon; they must manage slosh, pressurization, extreme temperatures, and minimize dead weight.

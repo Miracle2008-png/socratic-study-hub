@@ -1,7 +1,3 @@
----
-title: "1D Isentropic Flow in Variable Area Ducts"
----
-
 # 1D Isentropic Flow in Variable Area Ducts
 
 How do we accelerate a gas to supersonic speeds? We must pass it through a duct with a changing cross-sectional area (a nozzle).

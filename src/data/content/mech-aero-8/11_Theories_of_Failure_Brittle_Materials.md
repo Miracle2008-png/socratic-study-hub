@@ -1,7 +1,3 @@
----
-title: "Theories of Failure: Brittle Materials"
----
-
 # Theories of Failure: Brittle Materials
 
 Brittle materials (like cast iron, concrete, glass, ceramics) exhibit almost no yielding before catastrophic fracture. 

@@ -1,7 +1,3 @@
----
-title: "Electric and Ion Propulsion"
----
-
 # Electric and Ion Propulsion
 
 Chemical rockets are limited by the chemical bonds of their propellants, restricting their maximum possible Specific Impulse ($I_{sp}$) to around 450-500 seconds. For deep space missions requiring massive velocity changes ($\Delta v$) over long durations, chemical rockets require prohibitively heavy propellant loads. Electric propulsion systems overcome this by separating the energy source (solar panels or a nuclear reactor) from the propellant, allowing for exhaust velocities far beyond chemical limits.

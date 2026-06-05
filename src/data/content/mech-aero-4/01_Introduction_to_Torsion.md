@@ -1,7 +1,3 @@
----
-title: "Introduction to Torsion"
----
-
 # Introduction to Torsion
 
 While axial loading deals with forces pushing or pulling along the longitudinal axis of a member, **torsion** deals with moments (torques) applied about the longitudinal axis.

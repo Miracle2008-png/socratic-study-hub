@@ -1,7 +1,3 @@
----
-title: "Subsonic Compressibility Corrections"
----
-
 # Subsonic Compressibility Corrections
 
 At low Mach numbers ($M < 0.3$), air behaves as essentially incompressible — density variations are less than 5% and can be neglected without significant error. However, as aircraft approach Mach 0.7–0.8, compressibility effects become critical. The air density varies significantly, and the governing equations change fundamentally.

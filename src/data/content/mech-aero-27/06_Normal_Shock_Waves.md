@@ -1,7 +1,3 @@
----
-title: "Normal Shock Waves"
----
-
 # Normal Shock Waves
 
 When a supersonic flow ($M > 1$) is forced to decelerate or turn suddenly, it cannot do so smoothly. Because the flow is moving faster than the speed of sound, upstream fluid cannot be warned to gradually diverge. Instead, the flow slams into the obstacle, creating a discontinuous, violently abrupt change in properties called a **Shock Wave**.

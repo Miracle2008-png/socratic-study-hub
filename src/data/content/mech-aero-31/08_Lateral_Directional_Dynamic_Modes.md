@@ -1,7 +1,3 @@
----
-title: "Lateral-Directional Dynamic Modes"
----
-
 # Lateral-Directional Dynamic Modes
 
 Solving the linearized lateral-directional equations of motion reveals three distinct dynamic modes involving roll, yaw, and sideslip. Because lateral and directional motions are highly coupled, these modes are more complex than the longitudinal modes.

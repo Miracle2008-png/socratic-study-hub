@@ -1,7 +1,3 @@
----
-title: "The Otto Cycle: Petrol Engines"
----
-
 # The Otto Cycle: Petrol Engines
 
 The **Otto cycle** is the ideal thermodynamic model for the **spark-ignition (petrol/gasoline) internal combustion engine** — the engine powering most passenger cars, motorcycles, and small aircraft. Nikolaus Otto built the first practical four-stroke engine in 1876 based on this cycle.

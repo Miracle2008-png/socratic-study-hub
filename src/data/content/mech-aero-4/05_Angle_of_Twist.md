@@ -1,7 +1,3 @@
----
-title: "Angle of Twist"
----
-
 # Angle of Twist
 
 In addition to ensuring a shaft doesn't shear apart under torque ($\tau_{max} \le \tau_{allow}$), an engineer must often guarantee that the shaft is sufficiently stiff so that it does not twist excessively. 

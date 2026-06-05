@@ -1,7 +1,3 @@
----
-title: "Shear Stress in Rectangular Beams"
----
-
 # Shear Stress in Rectangular Beams
 
 The most common cross-section for timber beams is the solid rectangle. Let's apply the Shear Formula specifically to a rectangular cross-section of width $b$ and total height $h$.

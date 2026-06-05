@@ -1,7 +1,3 @@
----
-title: "Thermochemistry and Enthalpy of Formation"
----
-
 # Thermochemistry and Enthalpy of Formation
 
 To compute the heat released (or absorbed) in any chemical reaction — combustion, dissociation, or synthesis — we use **thermochemistry**: the application of the First Law to reacting systems. The key concept is the **enthalpy of formation**.

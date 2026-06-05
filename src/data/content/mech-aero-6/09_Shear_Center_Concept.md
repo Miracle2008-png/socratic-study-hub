@@ -1,7 +1,3 @@
----
-title: "The Shear Center Concept"
----
-
 # The Shear Center Concept
 
 In our previous analysis of an I-beam, we found that the horizontal shear flows in the top flange cancel each other out (left points in, right points in). The net horizontal force is zero. The vertical shear flow in the web exactly equals the applied load $V$. 

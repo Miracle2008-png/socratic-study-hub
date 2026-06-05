@@ -1,7 +1,3 @@
----
-title: "Introduction to Fatigue"
----
-
 # Introduction to Fatigue
 
 If you want to break a paperclip, you don't grab both ends and pull as hard as you can (a tensile test). Instead, you bend it back and forth a dozen times until it snaps.

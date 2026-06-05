@@ -1,7 +1,3 @@
----
-title: "Plane Stress Transformation"
----
-
 # Plane Stress Transformation
 
 In our analysis of combined loadings, we successfully extracted a microscopic block of material and determined the state of stress acting on its faces (e.g., $\sigma_x$, $\sigma_y$, $\tau_{xy}$). 

@@ -1,7 +1,3 @@
----
-title: "Design of Columns for Concentric Loading"
----
-
 # Design of Columns for Concentric Loading
 
 The ultimate goal of studying column buckling is to design safe, reliable structural members. Because ideal mathematical columns do not exist in the real world (there are always residual stresses, slight bows, and accidental eccentricities), we cannot rely purely on Euler's equation.

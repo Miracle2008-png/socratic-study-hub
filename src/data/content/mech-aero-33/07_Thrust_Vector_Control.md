@@ -1,7 +1,3 @@
----
-title: "Thrust Vector Control (TVC)"
----
-
 # Thrust Vector Control (TVC)
 
 To steer a rocket during ascent—especially when it is moving too slowly for aerodynamic fins to be effective, or when it is operating in the vacuum of space—the vehicle must alter the direction of its thrust. This is known as Thrust Vector Control (TVC).

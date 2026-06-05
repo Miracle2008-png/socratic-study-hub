@@ -1,7 +1,3 @@
----
-title: "Engine Starting and Ignition Systems"
----
-
 # Engine Starting and Ignition Systems
 
 Unlike a piston engine that can be started with a small electric motor turning a crankshaft, starting a gas turbine is a complex sequence requiring the precise coordination of airflow, fuel delivery, and ignition. A jet engine is not self-sustaining until the compressor is spinning fast enough to provide sufficient high-pressure air to the combustor.

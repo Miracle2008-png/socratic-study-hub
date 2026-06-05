@@ -1,7 +1,3 @@
----
-title: "Condensation Heat Transfer"
----
-
 # Condensation Heat Transfer
 
 Condensation occurs when a vapor contacts a surface whose temperature $T_s$ is below the saturation temperature $T_{sat}$ of the vapor. As latent heat is released into the solid surface, the vapor undergoes a phase change to liquid. Like boiling, condensation provides exceptionally high heat transfer coefficients.

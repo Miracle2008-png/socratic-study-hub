@@ -1,7 +1,3 @@
----
-title: "Principal Stresses and Maximum In-Plane Shear"
----
-
 # Principal Stresses and Maximum In-Plane Shear
 
 The transformation equations allow us to find the stress at *any* angle $\theta$. But to predict catastrophic failure, we need to find the specific angles that produce the absolute mathematically highest (and lowest) possible stresses.

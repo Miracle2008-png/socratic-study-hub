@@ -1,7 +1,3 @@
----
-title: "Flexible Machine Elements (Belts and Chains)"
----
-
 # Flexible Machine Elements (Belts and Chains)
 
 When power must be transmitted between two shafts that are relatively far apart (e.g., from an engine crankshaft to an alternator, or from bicycle pedals to the rear wheel), using a massive train of dozens of gears is too heavy, expensive, and noisy.

@@ -1,7 +1,3 @@
----
-title: "Axial and Torsional Loading"
----
-
 # Axial and Torsional Loading
 
 The combination of an axial force and a torsional moment is a classic loading scenario, commonly found in drive shafts that are also subjected to thrust (such as a ship's propeller shaft or a drill bit pushing into rock).

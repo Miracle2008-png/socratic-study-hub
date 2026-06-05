@@ -1,7 +1,3 @@
----
-title: "Wing Stall Patterns and High-Lift Devices"
----
-
 # Wing Stall Patterns and High-Lift Devices
 
 The aerodynamic stall is a critical design constraint: not just whether the wing stalls, but **where** along the span it stalls first, and **how** the stall progresses. Equally important are the high-lift devices that allow aircraft to fly at the low speeds required for takeoff and landing without exceeding the stall limit.

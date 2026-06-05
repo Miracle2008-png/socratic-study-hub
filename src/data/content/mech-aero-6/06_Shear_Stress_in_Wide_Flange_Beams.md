@@ -1,7 +1,3 @@
----
-title: "Shear Stress in Wide-Flange Beams"
----
-
 # Shear Stress in Wide-Flange Beams
 
 Wide-flange beams (I-beams and H-beams) are universally used in structural steel construction because their shape is highly optimized to resist bending moments (by concentrating material in the flanges far from the Neutral Axis to maximize $I$). 

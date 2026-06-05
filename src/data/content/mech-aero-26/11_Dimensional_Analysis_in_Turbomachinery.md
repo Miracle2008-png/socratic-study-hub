@@ -1,7 +1,3 @@
----
-title: "Dimensional Analysis in Turbomachinery"
----
-
 # Dimensional Analysis in Turbomachinery
 
 Designing and testing massive turbomachines (like a 10-meter diameter dam turbine) is incredibly expensive. Engineers test small-scale models in the laboratory and scale the results up to the full-size prototype. 

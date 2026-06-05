@@ -1,7 +1,3 @@
----
-title: "Longitudinal Dynamics: Phugoid and Short Period"
----
-
 # Longitudinal Dynamics: Phugoid and Short Period
 
 Static stability tells us whether an aircraft will tend to return to equilibrium. **Dynamic stability** tells us *how* it returns — the time history of the response. For longitudinal motion (pitch and speed), two distinct oscillatory modes are present: the **phugoid** and the **short period**.

@@ -1,7 +1,3 @@
----
-title: "Exergy Analysis of Engineering Systems"
----
-
 # Exergy Analysis of Engineering Systems
 
 **Exergy analysis** (also called **second-law analysis** or **thermodynamic availability analysis**) identifies where, how much, and why exergy is destroyed in a real engineering system. It pinpoints which components contribute most to system inefficiency — information that the First Law energy balance completely obscures.

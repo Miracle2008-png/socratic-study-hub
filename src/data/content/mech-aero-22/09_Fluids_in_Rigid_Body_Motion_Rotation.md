@@ -1,7 +1,3 @@
----
-title: "Fluids in Rigid-Body Motion: Rotation"
----
-
 # Fluids in Rigid-Body Motion: Rotation
 
 Consider a cylindrical tank of liquid spun at a constant angular velocity $\omega$ around its vertical axis. Initially, viscosity drags the fluid along with the walls. Eventually, the entire body of fluid spins together as a single solid unit (a forced vortex). 

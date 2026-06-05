@@ -1,7 +1,3 @@
----
-title: "Two-Stroke Engines"
----
-
 # Two-Stroke Engines
 
 The four-stroke engine requires two full revolutions of the crankshaft (four piston strokes) to complete one power cycle. A **two-stroke engine** completes the entire cycle in just one revolution (two piston strokes). While theoretically capable of producing twice the power of a four-stroke of the same size, their distinct fluid dynamics create unique advantages and severe drawbacks.

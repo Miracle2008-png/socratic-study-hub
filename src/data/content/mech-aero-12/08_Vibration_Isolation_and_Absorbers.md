@@ -1,7 +1,3 @@
----
-title: "Vibration Isolation and Absorbers"
----
-
 # Vibration Isolation and Absorbers
 
 When resonance or excessive vibration cannot be avoided by detuning alone, engineers employ two distinct strategies: **vibration isolation** (preventing transmission of vibration) and **vibration absorbers** (adding a secondary system to cancel the primary resonance).

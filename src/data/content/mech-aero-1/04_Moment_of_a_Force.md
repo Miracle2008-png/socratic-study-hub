@@ -1,7 +1,3 @@
----
-title: "Moment of a Force"
----
-
 # Moment of a Force
 
 When a force is applied to a body, it will produce a tendency for the body to rotate about a point that is not on the line of action of the force. This tendency to rotate is known as the **moment of a force** or torque.

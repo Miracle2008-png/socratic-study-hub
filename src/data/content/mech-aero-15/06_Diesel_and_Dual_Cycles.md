@@ -1,7 +1,3 @@
----
-title: "The Diesel and Dual Cycles"
----
-
 # The Diesel and Dual Cycles
 
 ## 1. The Diesel Cycle

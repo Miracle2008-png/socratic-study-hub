@@ -1,7 +1,3 @@
----
-title: "Elastic Strain Energy for Bending"
----
-
 # Elastic Strain Energy for Bending
 
 Bending stores significantly more energy in a structure than simple axial stretching, because it involves tension on one side of the neutral axis and compression on the other.

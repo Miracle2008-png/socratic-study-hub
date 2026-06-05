@@ -1,7 +1,3 @@
----
-title: "Manometry and Pressure Measurement"
----
-
 # Manometry and Pressure Measurement
 
 The principles of fluid statics—specifically that pressure increases linearly with depth in a liquid and is constant across horizontal planes—are the foundation for measuring pressure using manometers.

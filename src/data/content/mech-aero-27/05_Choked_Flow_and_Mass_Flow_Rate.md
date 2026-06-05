@@ -1,7 +1,3 @@
----
-title: "Choked Flow and Mass Flow Rate"
----
-
 # Choked Flow and Mass Flow Rate
 
 One of the most profound phenomena in compressible fluid dynamics is **choked flow**. It fundamentally limits how much gas you can push through a hole or pipe.

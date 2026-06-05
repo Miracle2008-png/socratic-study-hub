@@ -1,7 +1,3 @@
----
-title: "Mechanical Properties of Materials"
----
-
 # Mechanical Properties of Materials
 
 To design safe and functional structures, engineers must know how a material will respond when subjected to external forces (loads). This is determined through standardized mechanical testing, most commonly the **tensile test**.

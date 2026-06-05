@@ -1,7 +1,3 @@
----
-title: "Vectors and Force Resolution"
----
-
 # Vectors and Force Resolution
 
 Forces are vector quantities. They possess both magnitude and direction, and must be added according to the parallelogram law.

@@ -1,7 +1,3 @@
----
-title: "Fluids in Rigid-Body Motion: Linear Acceleration"
----
-
 # Fluids in Rigid-Body Motion: Linear Acceleration
 
 We defined fluid statics as a situation where there are no shear stresses. Usually, this means the fluid is completely at rest relative to the Earth.

@@ -1,7 +1,3 @@
----
-title: "Statically Indeterminate Beams: Introduction"
----
-
 # Statically Indeterminate Beams: Introduction
 
 Everything we have learned so far—shear and moment diagrams, the flexure formula, and deflection equations—requires us to first solve for the external support reactions using the equations of statics ($\sum F_y = 0$, $\sum M = 0$).

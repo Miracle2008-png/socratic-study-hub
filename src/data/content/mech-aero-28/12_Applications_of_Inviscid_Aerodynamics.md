@@ -1,7 +1,3 @@
----
-title: "Applications of Inviscid Aerodynamics"
----
-
 # Applications of Inviscid Aerodynamics
 
 Inviscid aerodynamic methods — from simple analytical results to panel methods and linearized supersonic theory — remain essential engineering tools, providing fast, accurate predictions where viscous effects are secondary. Here we survey key real-world applications.

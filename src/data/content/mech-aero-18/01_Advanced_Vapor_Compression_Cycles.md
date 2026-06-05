@@ -1,7 +1,3 @@
----
-title: "Advanced Vapor-Compression Cycles"
----
-
 # Advanced Vapor-Compression Cycles
 
 The simple ideal vapor-compression refrigeration cycle (compressor, condenser, expansion valve, evaporator) is the foundation of modern cooling. However, to improve the Coefficient of Performance (COP), accommodate extreme temperature lifts, or manage compressor discharge temperatures, several advanced modifications are employed in industrial and large-scale commercial systems.

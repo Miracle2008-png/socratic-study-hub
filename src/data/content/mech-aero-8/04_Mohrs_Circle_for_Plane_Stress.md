@@ -1,7 +1,3 @@
----
-title: "Mohr's Circle for Plane Stress"
----
-
 # Mohr's Circle for Plane Stress
 
 In 1882, the German engineer Christian Otto Mohr realized that the cumbersome trigonometric equations for stress transformation actually represent the parametric equation of a circle. 

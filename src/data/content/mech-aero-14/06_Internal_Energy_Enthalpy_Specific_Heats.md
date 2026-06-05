@@ -1,7 +1,3 @@
----
-title: "Internal Energy, Enthalpy, and Specific Heats"
----
-
 # Internal Energy, Enthalpy, and Specific Heats
 
 Two of the most important thermodynamic properties in engineering analysis are **internal energy** and **enthalpy**. They appear in virtually every energy balance equation and determine how much heat and work a process exchanges with its surroundings.

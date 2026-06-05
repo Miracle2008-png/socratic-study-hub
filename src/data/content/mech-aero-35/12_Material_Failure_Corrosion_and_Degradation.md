@@ -1,7 +1,3 @@
----
-title: "Material Failure: Corrosion and Degradation"
----
-
 # Material Failure: Corrosion and Degradation
 
 Materials do not just fail mechanically; they also fail chemically. **Corrosion** is the destructive and unintentional degradation of a material caused by its environment. For metals, it is an electrochemical process. For polymers, it is referred to as degradation.

@@ -1,7 +1,3 @@
----
-title: "Hydrostatic Forces on Curved Surfaces"
----
-
 # Hydrostatic Forces on Curved Surfaces
 
 Calculating hydrostatic forces on curved surfaces (like arched dams, spherical tanks, or cylindrical drain pipes) is more complex than for plane surfaces. The pressure force on a differential area $dA$ always acts normal (perpendicular) to the surface. On a curved surface, the surface normal continuously changes direction, meaning the direction of the pressure force continuously changes.

@@ -1,7 +1,3 @@
----
-title: "Introduction to Structural Analysis"
----
-
 # Introduction to Structural Analysis
 
 With the fundamentals of rigid body equilibrium firmly established, we now shift our focus from a single rigid body to structures composed of multiple interconnected parts.

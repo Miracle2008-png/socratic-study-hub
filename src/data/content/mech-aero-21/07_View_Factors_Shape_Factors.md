@@ -1,7 +1,3 @@
----
-title: "View Factors (Shape Factors)"
----
-
 # View Factors (Shape Factors)
 
 When radiation leaves Surface 1, not all of it hits Surface 2. Some might hit Surface 3, some might escape to space, and if Surface 1 is concave, some might even hit Surface 1 itself. 

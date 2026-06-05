@@ -1,7 +1,3 @@
----
-title: "Atkinson and Miller Cycles"
----
-
 # Atkinson and Miller Cycles
 
 The standard Otto cycle (used in most petrol engines) inherently assumes that the compression ratio equals the expansion ratio. However, separating these two ratios allows for significant thermodynamic efficiency gains, which is the defining principle of the Atkinson and Miller cycles.

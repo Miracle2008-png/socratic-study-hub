@@ -1,7 +1,3 @@
----
-title: "The First Law of Thermodynamics"
----
-
 # The First Law of Thermodynamics
 
 The First Law of Thermodynamics is the law of **conservation of energy** expressed for thermodynamic systems. It states that energy can neither be created nor destroyed — it can only change form.

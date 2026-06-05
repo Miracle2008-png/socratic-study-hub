@@ -1,7 +1,3 @@
----
-title: "Local Buckling of Thin Elements"
----
-
 # Local Buckling of Thin Elements
 
 Euler buckling is a **global** failure mode. The entire length of the column bows out in a massive sine wave.

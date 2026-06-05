@@ -1,7 +1,3 @@
----
-title: "Real Gas Equations of State"
----
-
 # Real Gas Equations of State
 
 The ideal gas law $Pv = RT$ is a convenient approximation that fails at high pressures and near the saturation curve. **Real gas equations of state** are empirical or semi-theoretical models that correct for molecular volume and intermolecular attractions.

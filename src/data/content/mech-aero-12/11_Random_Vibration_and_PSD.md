@@ -1,7 +1,3 @@
----
-title: "Random Vibration and Power Spectral Density"
----
-
 # Random Vibration and Power Spectral Density
 
 Harmonic analysis assumes the forcing function is a neat sinusoid — perfectly periodic and predictable. In reality, most engineering environments generate **random vibration**: road surface roughness, jet engine acoustic noise, ocean wave loading, atmospheric turbulence. These forces have no repeating period; they are genuinely stochastic.

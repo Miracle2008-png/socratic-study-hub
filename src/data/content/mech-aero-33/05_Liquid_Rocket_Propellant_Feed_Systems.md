@@ -1,7 +1,3 @@
----
-title: "Liquid Rocket Propellant Feed Systems"
----
-
 # Liquid Rocket Propellant Feed Systems
 
 Getting hundreds or thousands of gallons of liquid fuel and oxidizer into the combustion chamber every second against immense internal pressure (often thousands of PSI) is one of the hardest engineering challenges in rocketry. There are two primary methods for delivering propellants: Pressure-fed and Pump-fed systems.

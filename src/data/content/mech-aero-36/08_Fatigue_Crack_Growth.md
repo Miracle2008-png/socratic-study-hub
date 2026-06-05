@@ -1,7 +1,3 @@
----
-title: "Fatigue Crack Growth (Paris Law)"
----
-
 # Fatigue Crack Growth (Paris Law)
 
 The Stress-Life (S-N) method is based entirely on *crack initiation*. It assumes that once a crack begins, failure is imminent. This is a "Safe-Life" design philosophy: you retire the part before a crack ever forms.

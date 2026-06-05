@@ -1,7 +1,3 @@
----
-title: "Free-Body Diagrams"
----
-
 # Free-Body Diagrams (FBD)
 
 The successful application of the equations of equilibrium is entirely dependent on a complete and accurate identification of all the known and unknown forces acting on the body. 

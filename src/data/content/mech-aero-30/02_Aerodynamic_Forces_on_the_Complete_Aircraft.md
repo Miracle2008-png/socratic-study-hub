@@ -1,7 +1,3 @@
----
-title: "Aerodynamic Forces on the Complete Aircraft"
----
-
 # Aerodynamic Forces on the Complete Aircraft
 
 The aerodynamic forces and moments on a complete aircraft are far more complex than those of an isolated wing. The fuselage, tail surfaces, engine nacelles, and the interactions among all components must all be accounted for. Engineers use dimensionless aerodynamic derivatives to characterize these forces over the entire flight envelope.

@@ -1,7 +1,3 @@
----
-title: "Mission Performance and Aircraft Design Trade-offs"
----
-
 # Mission Performance and Aircraft Design Trade-offs
 
 Every aircraft is designed for a specific **mission profile** — the complete sequence of flight phases from engine start to shutdown. Understanding how the mission profile drives design trade-offs is essential for any aerospace engineer, as virtually every design choice involves competing objectives.

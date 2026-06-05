@@ -1,7 +1,3 @@
----
-title: "General Three-Dimensional Loading"
----
-
 # General Three-Dimensional Loading
 
 The absolute pinnacle of combined loading analysis is the fully general 3D scenario. A structural member (like an L-shaped pipe or a crane boom) is subjected to an arbitrary assortment of forces in X, Y, and Z directions.

@@ -1,7 +1,3 @@
----
-title: "Locating the Shear Center"
----
-
 # Locating the Shear Center
 
 To design safe, non-twisting structures using asymmetric thin-walled shapes (like C-channels or angles), an engineer must mathematically pinpoint the exact location of the Shear Center (often denoted as point $O$ or $S.C.$).

@@ -1,7 +1,3 @@
----
-title: "Statically Indeterminate Torque-Loaded Members"
----
-
 # Statically Indeterminate Torque-Loaded Members
 
 Just as with axially loaded members, a shaft can be constrained in such a way that the equations of static equilibrium alone are insufficient to determine the internal torques.

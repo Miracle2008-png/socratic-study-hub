@@ -1,7 +1,3 @@
----
-title: "Engine Integration and Nacelle Design"
----
-
 # Engine Integration and Nacelle Design
 
 A jet engine does not operate in isolation; it must be physically and aerodynamically integrated into the aircraft. The structure that houses the engine is called the **nacelle** (or pod). Engine integration involves complex trade-offs between aerodynamics, structural weight, maintenance accessibility, and safety.

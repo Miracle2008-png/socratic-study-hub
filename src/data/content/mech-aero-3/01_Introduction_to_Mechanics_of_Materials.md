@@ -1,7 +1,3 @@
----
-title: "Introduction to Mechanics of Materials"
----
-
 # Introduction to Mechanics of Materials
 
 Statics deals primarily with the external forces acting on a rigid body in equilibrium. However, no physical body is truly perfectly rigid. All structures deform under load.

@@ -1,7 +1,3 @@
----
-title: "The Shear Formula"
----
-
 # The Shear Formula
 
 The derivation in the previous section yields the fundamental equation for calculating the average shear stress at any specific point within a beam's cross-section.

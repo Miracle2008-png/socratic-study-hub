@@ -1,7 +1,3 @@
----
-title: "Forced Response of Multi-DOF Systems"
----
-
 # Forced Response of Multi-DOF Systems
 
 Once the modal properties (frequencies $\omega_i$, mode shapes $\{X\}^{(i)}$, damping ratios $\zeta_i$) are established, computing the forced response to any load vector $\{F(t)\}$ is straightforward using modal superposition.

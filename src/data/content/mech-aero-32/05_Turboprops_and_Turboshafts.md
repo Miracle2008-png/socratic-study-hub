@@ -1,7 +1,3 @@
----
-title: "Turboprops and Turboshafts"
----
-
 # Turboprops and Turboshafts
 
 While turbojets and turbofans produce thrust directly via a high-velocity exhaust jet, turboprops and turboshafts use the gas turbine core primarily to generate mechanical shaft power. This shaft power is then used to drive a propeller, a helicopter rotor, or even a tank transmission.

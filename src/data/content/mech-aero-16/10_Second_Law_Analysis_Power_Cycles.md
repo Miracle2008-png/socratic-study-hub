@@ -1,7 +1,3 @@
----
-title: "Second Law Analysis of Power Cycles"
----
-
 # Second Law Analysis of Power Cycles
 
 First-law analysis of power cycles gives thermal efficiency. Second-law (exergy) analysis reveals where efficiency is lost and by how much — enabling engineers to target improvements most effectively.

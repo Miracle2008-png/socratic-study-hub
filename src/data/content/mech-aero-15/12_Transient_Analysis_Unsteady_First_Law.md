@@ -1,7 +1,3 @@
----
-title: "Transient Analysis and the Unsteady First Law"
----
-
 # Transient Analysis and the Unsteady First Law
 
 The steady-state energy equation assumes all properties within the control volume are constant in time. Many practical engineering processes are inherently transient: a pressure vessel being filled, a tank being emptied, an accumulator charging and discharging, or a building's thermal mass responding to daily temperature cycles.

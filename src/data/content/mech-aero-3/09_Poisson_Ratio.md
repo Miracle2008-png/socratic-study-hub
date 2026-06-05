@@ -1,7 +1,3 @@
----
-title: "Poisson's Ratio"
----
-
 # Poisson's Ratio
 
 When a deformable body is subjected to an axial tensile force, it not only elongates in the direction of the force, but it also invariably contracts laterally (it gets thinner). 

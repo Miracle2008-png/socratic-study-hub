@@ -1,7 +1,3 @@
----
-title: "Introduction to Fracture Mechanics"
----
-
 # Introduction to Fracture Mechanics
 
 Traditional strength of materials (like you'd learn in a basic statics course) assumes materials are perfect and continuous. It predicts failure when the applied stress exceeds the material's yield strength or ultimate tensile strength.

@@ -1,7 +1,3 @@
----
-title: "Welded Joints"
----
-
 # Welded Joints
 
 While bolts are excellent for components that must be disassembled for maintenance, welding is the primary method for permanently joining structural steel elements (frames, pressure vessels, ship hulls, and bridges).

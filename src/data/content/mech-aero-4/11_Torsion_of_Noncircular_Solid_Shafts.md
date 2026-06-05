@@ -1,7 +1,3 @@
----
-title: "Torsion of Noncircular Solid Shafts"
----
-
 # Torsion of Noncircular Solid Shafts
 
 The fundamental kinematic assumption that planar cross-sections remain perfectly flat during twisting is only true for circular and tubular shafts (because they are axisymmetric). 

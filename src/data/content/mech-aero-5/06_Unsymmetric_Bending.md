@@ -1,7 +1,3 @@
----
-title: "Unsymmetric Bending"
----
-
 # Unsymmetric Bending
 
 The standard flexure formula ($\sigma = -My/I$) relies on a critical assumption: the applied bending moment $M$ acts precisely around one of the **principal axes of inertia** of the cross-section. 

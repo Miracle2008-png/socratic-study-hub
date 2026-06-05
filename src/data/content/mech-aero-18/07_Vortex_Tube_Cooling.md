@@ -1,7 +1,3 @@
----
-title: "Vortex Tube Cooling"
----
-
 # Vortex Tube Cooling
 
 The **vortex tube** (or Ranque-Hilsch vortex tube) is one of the most mechanically simple yet thermodynamically counterintuitive cooling devices ever invented. It contains absolutely no moving parts and requires only a supply of compressed air to separate the flow into a very hot stream and a very cold stream.

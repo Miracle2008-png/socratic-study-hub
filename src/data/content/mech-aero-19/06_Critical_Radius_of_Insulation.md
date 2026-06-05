@@ -1,7 +1,3 @@
----
-title: "Critical Radius of Insulation"
----
-
 # Critical Radius of Insulation
 
 For a flat wall, adding insulation always increases the total thermal resistance ($R_{total} = R_{wall} + L_{insul}/k + 1/h_{out}$), thereby decreasing heat transfer. 

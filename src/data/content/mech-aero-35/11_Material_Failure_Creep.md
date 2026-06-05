@@ -1,7 +1,3 @@
----
-title: "Material Failure: Creep"
----
-
 # Material Failure: Creep
 
 Materials fail in many ways. While a tensile test shows how a material fails under a rapidly increasing load at room temperature, many engineering disasters occur due to loads that are perfectly safe in a tensile test, but act over a long period of time or at high temperatures. One of these failure modes is **Creep**.

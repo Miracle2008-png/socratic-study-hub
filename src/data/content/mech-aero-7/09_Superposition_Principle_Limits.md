@@ -1,7 +1,3 @@
----
-title: "Superposition Principle Limits"
----
-
 # Superposition Principle Limits
 
 The entire framework of Combined Loadings rests upon the foundation of the Principle of Superposition. We simply calculate individual stresses and add them together algebraically. 

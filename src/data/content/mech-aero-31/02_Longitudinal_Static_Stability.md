@@ -1,7 +1,3 @@
----
-title: "Longitudinal Static Stability"
----
-
 # Longitudinal Static Stability
 
 Longitudinal static stability deals with the aircraft's pitching motion—its tendency to return to a trimmed angle of attack after a pitch disturbance. It is arguably the most critical aspect of aircraft stability for safety and ease of flight.

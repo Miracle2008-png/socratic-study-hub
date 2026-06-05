@@ -1,7 +1,3 @@
----
-title: "Chemical Rocket Types"
----
-
 # Chemical Rocket Types
 
 Chemical rockets are the only propulsion systems currently capable of generating the massive thrust required to overcome Earth's gravity and reach orbit. They rely on the exothermic chemical reaction between a fuel and an oxidizer. They are categorized primarily by the physical state of their propellants.

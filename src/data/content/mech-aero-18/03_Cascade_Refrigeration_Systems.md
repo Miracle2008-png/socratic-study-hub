@@ -1,7 +1,3 @@
----
-title: "Cascade Refrigeration Systems"
----
-
 # Cascade Refrigeration Systems
 
 When cooling requirements drop to ultra-low temperatures (e.g., -50°C to -100°C, required for blood plasma storage, rapid food freezing, or liquefying certain gases), even multistage compression with a single refrigerant fails. 

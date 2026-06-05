@@ -1,7 +1,3 @@
----
-title: "Advanced Rankine Cycle Modifications"
----
-
 # Advanced Rankine Cycle Modifications
 
 The simple ideal Rankine cycle consists of a pump, boiler, turbine, and condenser. To achieve the high efficiencies demanded by modern power generation economics and environmental regulations, real steam power plants employ sophisticated cycle modifications designed to increase the average temperature at which heat is added and decrease the average temperature at which heat is rejected.

@@ -1,7 +1,3 @@
----
-title: "Shear Flow in Built-Up Members"
----
-
 # Shear Flow in Built-Up Members
 
 As introduced earlier, built-up members are constructed by joining multiple separate components using fasteners like nails, bolts, rivets, or welds. A typical example is a wooden box beam or a steel plate girder.

@@ -1,7 +1,3 @@
----
-title: "Stability of Floating Bodies"
----
-
 # Stability of Floating Bodies
 
 A submarine may be neutrally buoyant, and a ship may successfully displace its own weight to float, but will they stay upright? The study of how submerged and floating bodies respond to small rotational disturbances (like a gust of wind or a wave) is the study of stability.

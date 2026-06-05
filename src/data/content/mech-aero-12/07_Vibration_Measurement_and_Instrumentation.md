@@ -1,7 +1,3 @@
----
-title: "Vibration Measurement and Instrumentation"
----
-
 # Vibration Measurement and Instrumentation
 
 Theoretical predictions of natural frequencies are only as good as the model assumptions. Real structures have complex geometry, welded joints, and non-ideal boundary conditions. **Experimental vibration analysis** is how engineers validate models, identify real natural frequencies, and diagnose machinery faults.

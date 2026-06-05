@@ -1,7 +1,3 @@
----
-title: "The Classical Orbital Elements"
----
-
 # The Classical Orbital Elements (Keplerian Elements)
 
 To completely define the size, shape, and orientation of an orbit in 3D space, and the position of a spacecraft within that orbit, we need exactly six parameters. These are known as the Classical Orbital Elements or Keplerian Elements.

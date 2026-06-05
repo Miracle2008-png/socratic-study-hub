@@ -1,7 +1,3 @@
----
-title: "Bearings: Rolling Element"
----
-
 # Bearings: Rolling Element
 
 Whenever a shaft rotates, it must be supported. Bearings provide that support, holding the shaft firmly in place axially and radially while allowing it to spin with minimum friction.

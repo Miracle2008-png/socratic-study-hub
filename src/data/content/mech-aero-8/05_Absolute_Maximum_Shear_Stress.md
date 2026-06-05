@@ -1,7 +1,3 @@
----
-title: "Absolute Maximum Shear Stress"
----
-
 # Absolute Maximum Shear Stress
 
 Up to this point, we have restricted our analysis to "Plane Stress," meaning we only rotated our microscopic element around the z-axis (like spinning a block on a tabletop). We found the maximum shear stress *within* that specific 2D x-y plane.

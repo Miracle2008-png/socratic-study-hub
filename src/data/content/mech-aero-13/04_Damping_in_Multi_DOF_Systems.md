@@ -1,7 +1,3 @@
----
-title: "Damping in Multi-DOF Systems"
----
-
 # Damping in Multi-DOF Systems
 
 Damping is the most physically complex aspect of structural dynamics. In a SDOF system, a single scalar $c$ (or $\zeta$) fully characterizes damping. In a multi-DOF system, damping should theoretically be represented by a full $[C]$ matrix — but the physical identification of $[C]$ is nearly impossible from first principles.

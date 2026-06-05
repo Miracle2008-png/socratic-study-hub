@@ -1,7 +1,3 @@
----
-title: "Equilibrium of Rigid Bodies in 3D"
----
-
 # Equilibrium of Rigid Bodies in 3D
 
 The analysis of three-dimensional structures follows the exact same logical progression as two-dimensional problems, but requires the use of full vector algebra to handle the spatial geometry.

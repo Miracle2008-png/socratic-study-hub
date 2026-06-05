@@ -1,7 +1,3 @@
----
-title: "Method of Superposition for Deflection"
----
-
 # Method of Superposition for Deflection
 
 While Macaulay's Method is mathematically rigorous, integrating equations for every single beam design in the real world is incredibly tedious. 

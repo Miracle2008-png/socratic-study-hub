@@ -1,7 +1,3 @@
----
-title: "Principle of Virtual Work: Introduction"
----
-
 # Principle of Virtual Work: Introduction
 
 As we discovered, the direct Conservation of Energy equation ($U_e = U_i$) is practically useless for complex structures because it can only find the deflection directly under a single applied load.

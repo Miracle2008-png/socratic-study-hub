@@ -1,7 +1,3 @@
----
-title: "Thin-Walled Tubes Having Closed Cross Sections"
----
-
 # Thin-Walled Tubes Having Closed Cross Sections
 
 While solid non-circular shafts are highly inefficient under torsion, **hollow thin-walled tubes** of non-circular cross section (like a hollow rectangular box beam used in an aircraft wing) are incredibly efficient.

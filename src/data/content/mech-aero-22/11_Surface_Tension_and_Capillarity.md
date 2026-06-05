@@ -1,7 +1,3 @@
----
-title: "Surface Tension and Capillarity"
----
-
 # Surface Tension and Capillarity
 
 At the interface between two immiscible fluids (like liquid water and gaseous air), the fluid molecules experience an imbalance of intermolecular cohesive forces, resulting in macroscopic phenomena that defy simple hydrostatics.

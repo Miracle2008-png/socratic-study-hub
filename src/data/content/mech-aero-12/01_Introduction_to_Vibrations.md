@@ -1,7 +1,3 @@
----
-title: "Introduction to Mechanical Vibrations"
----
-
 # Introduction to Mechanical Vibrations
 
 Every structure and machine in existence vibrates to some degree. When a car engine runs, when a bridge is crossed by traffic, when a washing machine spins — every mechanical system oscillates. The study of these oscillations is **Mechanical Vibrations**.

@@ -1,7 +1,3 @@
----
-title: "Lateral-Directional Stability and Dynamics"
----
-
 # Lateral-Directional Stability and Dynamics
 
 Lateral-directional flight mechanics couples rolling motion (lateral) with yawing motion (directional). Unlike longitudinal dynamics, which are essentially decoupled from roll/yaw for symmetric, wings-level flight, the lateral-directional modes are strongly coupled — roll and yaw always occur together through a complex aerodynamic and inertial interaction.

@@ -1,7 +1,3 @@
----
-title: "The Brayton Cycle: Gas Turbines"
----
-
 # The Brayton Cycle: Gas Turbines
 
 The **Brayton cycle** is the thermodynamic model for **gas turbine engines** — the power plants in all commercial jet aircraft, military fighters, helicopters, and many industrial power plants. It operates as an open cycle (continuously drawing in fresh air and exhausting combustion products).

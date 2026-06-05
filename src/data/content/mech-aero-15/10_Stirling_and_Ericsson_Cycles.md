@@ -1,7 +1,3 @@
----
-title: "Gas Power Cycles: Stirling and Ericsson"
----
-
 # Gas Power Cycles: Stirling and Ericsson
 
 Beyond the Otto, Diesel, and Brayton cycles, two other ideal gas cycles achieve **Carnot efficiency** under ideal conditions: the **Stirling** and **Ericsson** cycles. Both use regeneration — internal heat exchange — to reach this theoretical maximum.

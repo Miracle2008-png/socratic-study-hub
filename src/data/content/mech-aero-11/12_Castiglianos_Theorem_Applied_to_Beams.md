@@ -1,7 +1,3 @@
----
-title: "Castigliano's Theorem Applied to Beams"
----
-
 # Castigliano's Theorem Applied to Beams
 
 Just as Castigliano's theorem provides an alternative to Virtual Work for trusses, it does the same for continuous bending beams and rigid frames.

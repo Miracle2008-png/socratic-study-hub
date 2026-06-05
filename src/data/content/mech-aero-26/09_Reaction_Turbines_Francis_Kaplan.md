@@ -1,7 +1,3 @@
----
-title: "Reaction Turbines: Francis and Kaplan"
----
-
 # Reaction Turbines: Francis and Kaplan
 
 While Pelton wheels (impulse turbines) drop all the pressure in a stationary nozzle, **Reaction turbines** are completely submerged and full of water. The pressure drops continuously as the fluid passes *through* both the stationary guide vanes and the rotating runner blades. The runner is driven by both kinetic momentum (impulse) and pressure difference (reaction).

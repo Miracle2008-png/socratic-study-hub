@@ -1,7 +1,3 @@
----
-title: "Applications of Gas Dynamics"
----
-
 # Applications of Gas Dynamics
 
 The principles of 1D isentropic flow, normal shocks, oblique shocks, and expansion fans are combined to design and analyze high-speed aerospace systems.

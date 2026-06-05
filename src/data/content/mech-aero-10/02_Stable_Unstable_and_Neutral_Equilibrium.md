@@ -1,7 +1,3 @@
----
-title: "Stable, Unstable, and Neutral Equilibrium"
----
-
 # Stable, Unstable, and Neutral Equilibrium
 
 To understand the mathematics of buckling, we must first rigorously define the concept of structural equilibrium. 

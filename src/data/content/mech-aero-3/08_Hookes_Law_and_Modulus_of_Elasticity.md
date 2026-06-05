@@ -1,7 +1,3 @@
----
-title: "Hooke's Law and the Modulus of Elasticity"
----
-
 # Hooke's Law and the Modulus of Elasticity
 
 The most important region of the stress-strain diagram for practical engineering design is the initial linear elastic region. Structures are almost always designed such that the internal stresses never exceed the yield point of the material.

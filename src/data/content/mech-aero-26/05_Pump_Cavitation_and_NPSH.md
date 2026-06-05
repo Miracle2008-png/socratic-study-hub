@@ -1,7 +1,3 @@
----
-title: "Pump Cavitation and NPSH"
----
-
 # Pump Cavitation and NPSH
 
 Liquids have a massive vulnerability that gases do not: they can boil. If the local static pressure anywhere in a liquid system drops below the fluid's vapor pressure ($P_v$) at that temperature, the liquid will spontaneously flash into vapor bubbles. This localized boiling is called **cavitation**.

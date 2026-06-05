@@ -1,7 +1,3 @@
----
-title: "Brakes and Clutches"
----
-
 # Brakes and Clutches
 
 Brakes and clutches are essentially the same mechanical device used for opposite purposes. Both rely entirely on the physics of friction to manage kinetic energy and power transmission.

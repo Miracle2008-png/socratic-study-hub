@@ -1,7 +1,3 @@
----
-title: "Absorption Refrigeration"
----
-
 # Absorption Refrigeration
 
 Vapor-compression refrigeration is driven by high-grade energy (mechanical work to run a compressor). **Absorption refrigeration** replaces the mechanical compressor with a "thermal compressor," allowing the system to be driven primarily by low-grade thermal energy (heat). 

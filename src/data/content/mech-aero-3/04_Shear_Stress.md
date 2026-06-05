@@ -1,7 +1,3 @@
----
-title: "Shear Stress"
----
-
 # Shear Stress
 
 While normal stress acts perpendicular to a cut surface, pulling it apart or crushing it together, **shear stress** acts tangentially across the surface, tending to slice or slide one portion of the material past the other.

@@ -1,7 +1,3 @@
----
-title: "Experimental Modal Analysis"
----
-
 # Experimental Modal Analysis
 
 Analytical and FEA modal analysis predict modal properties from mathematical models. **Experimental Modal Analysis (EMA)** measures the actual modal properties of a physical structure directly. EMA is used to validate FEA models, identify unexpected resonances, and characterize structures too complex to model analytically.

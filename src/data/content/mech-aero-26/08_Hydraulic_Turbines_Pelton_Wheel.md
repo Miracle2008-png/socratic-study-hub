@@ -1,7 +1,3 @@
----
-title: "Hydraulic Turbines: The Pelton Wheel"
----
-
 # Hydraulic Turbines: The Pelton Wheel
 
 Hydraulic turbines extract potential energy from water stored in a reservoir (a dam) and convert it into mechanical shaft power. They are broadly divided into two categories: Impulse turbines and Reaction turbines.
