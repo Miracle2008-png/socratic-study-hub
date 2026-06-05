@@ -31,6 +31,13 @@ $$ \dot{H}_{\text{stream}} = \dot{m} \hat{H} $$
 The total change in enthalpy for the process is the sum of the outgoing streams minus the sum of the incoming streams:
 $$ \Delta \dot{H} = \sum_{\text{out}} \dot{m}_i \hat{H}_i - \sum_{\text{in}} \dot{m}_i \hat{H}_i $$
 
+Let's break down exactly what these variables mean:
+- **$\dot{H}$ (Total Enthalpy Rate)**: The total amount of energy flowing per second (measured in Watts or kJ/s). The "dot" on top indicates it is a *rate* over time.
+- **$\dot{m}$ (Mass Flow Rate)**: The amount of mass flowing through the pipe per second (e.g., kg/s).
+- **$\hat{H}$ (Specific Enthalpy)**: The amount of energy contained in exactly one unit of mass (e.g., kJ/kg). The "hat" on top indicates it is "per unit mass".
+- **$\Sigma$ (Sigma)**: The mathematical symbol for "sum".
+- **$i$ (Subscript)**: Represents each individual stream. If there are 3 pipes entering a tank, you calculate $\dot{m} \hat{H}$ for stream 1, stream 2, and stream 3, and add them all together.
+
 ## 3. Sensible Heat and Heat Capacity
 
 **Sensible heat** is the heat transferred to or from a substance that changes its temperature without changing its phase.
