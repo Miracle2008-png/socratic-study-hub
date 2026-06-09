@@ -17,8 +17,20 @@ Humidity is a measure of how much water vapor is in the air.
 - **Absolute Humidity (or Humidity Ratio, $Y$ or $\omega$)**: The actual mass of water vapor per unit mass of *dry* air. (Units: kg water / kg dry air).
   $$ Y = \frac{M_{water}}{M_{air}} \frac{p_{water}}{P_{total} - p_{water}} $$
   
+  Where:
+  - **$Y$**: Absolute Humidity.
+  - **$M_{water}$**: Molecular weight of water (approx 18 g/mol).
+  - **$M_{air}$**: Molecular weight of dry air (approx 29 g/mol).
+  - **$p_{water}$**: Partial pressure of water vapor in the air mixture.
+  - **$P_{total}$**: Total atmospheric pressure of the system.
+
 - **Relative Humidity ($RH$ or $\phi$)**: The ratio of the partial pressure of water vapor in the air ($p_w$) to the equilibrium vapor pressure of pure water ($p^*_w$) at the same temperature. It indicates how "full" the air is.
   $$ RH = \frac{p_{water}}{p^*_w(T_{db})} \times 100\% $$
+  
+  Where:
+  - **$RH$**: Relative Humidity (as a percentage).
+  - **$p_{water}$**: The actual partial pressure of the water vapor in the air.
+  - **$p^*_w(T_{db})$**: The maximum possible vapor pressure of pure water at the current dry-bulb temperature.
 
 ## 3. The Psychrometric Chart
 

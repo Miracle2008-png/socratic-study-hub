@@ -48,6 +48,12 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
       { id: 'visualizer', label: '3D Visualizer', icon: Box },
     ];
 
+  const labs = [
+    { id: 'math_lab', label: 'Math Lab', icon: Calculator, color: '#8b5cf6' },
+    { id: 'physics_lab', label: 'Physics Lab', icon: Atom, color: '#0ea5e9' },
+    { id: 'chemistry_lab', label: 'Chemistry Lab', icon: FlaskConical, color: '#10b981' },
+  ];
+
   // Admin panel removed based on user request
 
   return (
@@ -101,6 +107,26 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onFocusModeT
               <span className="nav-icon"><Icon size={17} strokeWidth={active ? 2 : 1.6} /></span>
               <span>{item.label}</span>
               {active && <span className="nav-active-dot" />}
+            </button>
+          );
+        })}
+
+        {/* Labs section */}
+        <div className="nav-section-label" style={{ marginTop: 4 }}>Interactive Labs</div>
+        {labs.map(item => {
+          const Icon = item.icon;
+          const active = activeTab === item.id;
+          return (
+            <button
+              key={item.id}
+              className={`nav-item ${active ? 'active' : ''}`}
+              onClick={() => setActiveTab(item.id)}
+            >
+              <span className="nav-icon" style={{ color: active ? item.color : undefined }}>
+                <Icon size={17} strokeWidth={active ? 2 : 1.6} />
+              </span>
+              <span>{item.label}</span>
+              {active && <span className="nav-active-bar" style={{ background: item.color }} />}
             </button>
           );
         })}

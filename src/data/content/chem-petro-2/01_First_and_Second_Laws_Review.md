@@ -17,10 +17,23 @@ For open systems (continuous flow processes like turbines, compressors, and heat
 
 $$ \Delta \dot{H} + \Delta \dot{E}_k + \Delta \dot{E}_p = \dot{Q} - \dot{W}_s $$
 
+Where:
+- **$\Delta \dot{H}$**: Change in enthalpy flow rate.
+- **$\Delta \dot{E}_k$**: Change in kinetic energy flow.
+- **$\Delta \dot{E}_p$**: Change in potential energy flow.
+- **$\dot{Q}$**: Rate of heat transferred into the system.
+- **$\dot{W}_s$**: Rate of shaft work done by the system.
+
 ## 2. Enthalpy and Heat Capacities
 
 Enthalpy ($H$) is defined mathematically as:
 $$ H = U + PV $$
+
+Where:
+- **$H$**: Enthalpy.
+- **$U$**: Internal energy.
+- **$P$**: Pressure.
+- **$V$**: Volume.
 
 The specific heat capacities relate temperature changes to energy changes under specific constraints:
 - **Constant Volume Heat Capacity ($C_v$)**: $C_v = \left( \frac{\partial U}{\partial T} \right)_V$
@@ -35,8 +48,18 @@ While the First Law tracks energy quantity, the Second Law governs the *directio
 The Second Law states that for any real, spontaneous process, the total entropy of the universe (system + surroundings) must increase:
 $$ \Delta S_{\text{univ}} = \Delta S_{\text{sys}} + \Delta S_{\text{surr}} \ge 0 $$
 
+Where:
+- **$\Delta S_{\text{univ}}$**: Change in entropy of the universe.
+- **$\Delta S_{\text{sys}}$**: Change in entropy of the system.
+- **$\Delta S_{\text{surr}}$**: Change in entropy of the surroundings.
+
 For a reversible (idealized, infinitely slow) process:
 $$ dS = \frac{dQ_{\text{rev}}}{T} $$
+
+Where:
+- **$dS$**: Differential change in entropy.
+- **$dQ_{\text{rev}}$**: Differential reversible heat transfer.
+- **$T$**: Absolute temperature.
 
 ## 4. Reversibility and Efficiency
 

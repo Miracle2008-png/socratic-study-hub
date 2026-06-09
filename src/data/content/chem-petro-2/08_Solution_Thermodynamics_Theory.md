@@ -12,6 +12,13 @@ The partial molar property $\bar{M}_i$ of species $i$ in a mixture is defined as
 
 $$ \bar{M}_i = \left[ \frac{\partial (nM)}{\partial n_i} \right]_{T, P, n_{j \neq i}} $$
 
+Where:
+- **$\bar{M}_i$**: Partial molar property of species $i$.
+- **$n$**: Total moles of the mixture.
+- **$M$**: Molar property of the mixture.
+- **$n_i$**: Moles of species $i$.
+- **$n_{j \neq i}$**: Moles of all other species held constant.
+
 Where $M$ can be Volume ($V$), Enthalpy ($H$), Entropy ($S$), or Gibbs Energy ($G$).
 
 *Conceptually, $\bar{M}_i$ is the actual contribution of 1 mole of species $i$ to the total property of the mixture.*
@@ -23,6 +30,11 @@ The total molar property of any mixture ($M$) is simply the mole-fraction weight
 For a binary mixture of species 1 and 2:
 $$ M = x_1 \bar{M}_1 + x_2 \bar{M}_2 $$
 
+Where:
+- **$M$**: Total molar property of the mixture.
+- **$x_1, x_2$**: Mole fractions of species 1 and 2.
+- **$\bar{M}_1, \bar{M}_2$**: Partial molar properties of species 1 and 2.
+
 *Note: It is **wrong** to write $M = x_1 M_1 + x_2 M_2$ (where $M_1$ is the pure species property), unless the mixture is perfectly ideal.*
 
 ## 3. The Gibbs-Duhem Equation
@@ -32,6 +44,10 @@ The partial molar properties of the components in a mixture are not independent.
 This physical restriction is mathematically defined by the **Gibbs-Duhem Equation**:
 $$ x_1 d\bar{M}_1 + x_2 d\bar{M}_2 = 0 \quad (\text{at constant } T, P) $$
 
+Where:
+- **$x_1, x_2$**: Mole fractions of species 1 and 2.
+- **$d\bar{M}_1, d\bar{M}_2$**: Differential changes in partial molar properties.
+
 This equation is a powerful consistency check for experimental data. If an experiment claims that both $\bar{M}_1$ and $\bar{M}_2$ are increasing simultaneously in a binary mixture at constant T and P, the data violates the Gibbs-Duhem equation and is mathematically impossible.
 
 ## 4. Property Changes of Mixing ($\Delta M_{mix}$)
@@ -39,6 +55,12 @@ This equation is a powerful consistency check for experimental data. If an exper
 The property change of mixing is the difference between the property of the mixture and the properties of the pure species before they were mixed.
 
 $$ \Delta M_{mix} = M_{\text{mixture}} - \sum x_i M_{i,\text{pure}} $$
+
+Where:
+- **$\Delta M_{mix}$**: Property change of mixing.
+- **$M_{\text{mixture}}$**: Property of the mixture.
+- **$x_i$**: Mole fraction of species $i$.
+- **$M_{i,\text{pure}}$**: Pure species property of species $i$.
 
 - **Volume of Mixing ($\Delta V_{mix}$)**: Can be positive (mixture expands) or negative (mixture shrinks, like water/ethanol).
 - **Heat of Mixing ($\Delta H_{mix}$)**: If $\Delta H_{mix} < 0$, the mixing is exothermic (the beaker gets hot). If $\Delta H_{mix} > 0$, it is endothermic (the beaker gets cold).

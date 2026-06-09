@@ -31,7 +31,19 @@ When a fluid is inside the vapor dome (a liquid-vapor mixture), $P$ and $T$ are 
 Quality is the mass fraction of vapor in the mixture:
 $$ x = \frac{m_{\text{vapor}}}{m_{\text{total}}} = \frac{m_{\text{vapor}}}{m_{\text{liquid}} + m_{\text{vapor}}} $$
 
+Where:
+- **$x$**: Quality (mass fraction of vapor).
+- **$m_{\text{vapor}}$**: Mass of the vapor phase.
+- **$m_{\text{liquid}}$**: Mass of the liquid phase.
+- **$m_{\text{total}}$**: Total mass of the mixture.
+
 The specific volume ($v$) of the mixture is a weighted average of the saturated liquid volume ($v_f$) and saturated vapor volume ($v_g$):
 $$ v = v_f + x(v_g - v_f) $$
+
+Where:
+- **$v$**: Specific volume of the mixture.
+- **$v_f$**: Specific volume of the saturated liquid.
+- **$v_g$**: Specific volume of the saturated vapor.
+- **$x$**: Quality.
 
 This linear weighting principle applies identically to internal energy ($u$), enthalpy ($h$), and entropy ($s$).

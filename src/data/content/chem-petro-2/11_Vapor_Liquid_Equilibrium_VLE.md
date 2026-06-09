@@ -7,12 +7,27 @@ Vapor-Liquid Equilibrium (VLE) is the theoretical foundation for the most import
 In Module 9, we established that at equilibrium, the fugacity of species $i$ in the vapor must equal its fugacity in the liquid:
 $$ \hat{f}_i^V = \hat{f}_i^L $$
 
+Where:
+- **$\hat{f}_i^V$**: Fugacity of species $i$ in the vapor phase.
+- **$\hat{f}_i^L$**: Fugacity of species $i$ in the liquid phase.
+
 We can substitute our vapor phase model (using $\hat{\phi}_i$) and our liquid phase model (using $\gamma_i$) into this equation:
 $$ y_i \hat{\phi}_i P = x_i \gamma_i f_i $$
+
+Where:
+- **$y_i$**: Mole fraction of species $i$ in the vapor phase.
+- **$\hat{\phi}_i$**: Partial fugacity coefficient of species $i$ in the vapor phase.
+- **$P$**: Total pressure.
+- **$x_i$**: Mole fraction of species $i$ in the liquid phase.
+- **$\gamma_i$**: Activity coefficient of species $i$ in the liquid phase.
+- **$f_i$**: Fugacity of pure liquid $i$.
 
 By approximating the pure liquid fugacity $f_i$ as the pure vapor pressure $P_i^{sat}$ (ignoring the small Poynting correction factor at low pressures), we arrive at the **Gamma-Phi Formulation** of VLE:
 
 $$ y_i \hat{\phi}_i P = x_i \gamma_i P_i^{sat} $$
+
+Where:
+- **$P_i^{sat}$**: Saturation (vapor) pressure of pure species $i$.
 
 This is the master equation of phase equilibrium. It applies to almost all typical chemical processes.
 
@@ -23,6 +38,13 @@ If the liquid molecules are very similar (like benzene and toluene), they form a
 
 Under these perfect conditions, the Gamma-Phi equation reduces to **Raoult's Law**:
 $$ y_i P = x_i P_i^{sat} $$
+
+Where:
+- **$y_i$**: Mole fraction of species $i$ in the vapor phase.
+- **$P$**: Total pressure.
+- **$x_i$**: Mole fraction of species $i$ in the liquid phase.
+- **$P_i^{sat}$**: Vapor pressure of pure species $i$.
+
 Because it is so simple, Raoult's Law is often used for quick estimations, but it is rarely accurate enough for final equipment design unless the chemicals belong to the same homologous series (e.g., alkanes).
 
 ## 3. Modified Raoult's Law
@@ -31,6 +53,9 @@ Most chemical mixtures (like ethanol and water) are highly non-ideal in the liqu
 In this case, $\hat{\phi}_i = 1$, but $\gamma_i \neq 1$. The VLE equation becomes **Modified Raoult's Law**:
 
 $$ y_i P = x_i \gamma_i P_i^{sat} $$
+
+Where:
+- **$\gamma_i$**: Activity coefficient of species $i$ in the liquid phase.
 
 To solve a VLE problem using Modified Raoult's Law:
 1. Find $P_i^{sat}$ at the given $T$ using the Antoine Equation.

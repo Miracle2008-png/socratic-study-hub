@@ -7,6 +7,11 @@ While many chemical processes operate at steady-state, all processes must experi
 Recall the general balance equation for mass:
 $$ \frac{dm}{dt} = \dot{m}_{\text{in}} - \dot{m}_{\text{out}} + \dot{m}_{\text{gen}} - \dot{m}_{\text{cons}} $$
 
+Where:
+- **$\frac{dm}{dt}$**: The rate of change of mass inside the system over time (the derivative of mass $m$ with respect to time $t$).
+- **$\dot{m}_{\text{in}}, \dot{m}_{\text{out}}$**: Mass flow rates into and out of the system.
+- **$\dot{m}_{\text{gen}}, \dot{m}_{\text{cons}}$**: Rates of mass generation and consumption (for specific chemical components).
+
 Because the accumulation term is a time derivative, solving transient problems requires setting up and solving Ordinary Differential Equations (ODEs).
 
 ## 2. Solving Total Mass Transient Problems
@@ -24,6 +29,12 @@ To solve this, we separate variables and integrate from time $t=0$ to time $t$:
 $$ \int_{m_0}^{m(t)} \frac{dm}{m} = \int_{0}^{t} -k \, dt $$
 $$ \ln\left(\frac{m(t)}{m_0}\right) = -kt $$
 $$ m(t) = m_0 e^{-kt} $$
+
+Where:
+- **$m(t)$**: The mass in the tank at any future time $t$.
+- **$m_0$**: The initial mass in the tank at time $t=0$.
+- **$e$**: Euler's number (the base of the natural logarithm).
+- **$k$**: A constant related to the valve size.
 
 This result proves that the mass in the tank decays exponentially over time.
 
@@ -48,6 +59,12 @@ $$ \int_{C_0}^{C(t)} \frac{dC}{C} = \int_{0}^{t} -\frac{q}{V} \, dt $$
 $$ \ln\left(\frac{C(t)}{C_0}\right) = -\frac{q}{V} t $$
 $$ C(t) = C_0 e^{-\frac{q}{V}t} $$
 
+Where:
+- **$C(t)$**: Salt concentration at time $t$.
+- **$C_0$**: Initial salt concentration.
+- **$q$**: Volumetric flow rate (e.g., L/min).
+- **$V$**: Total volume of the tank.
+
 The concentration of salt exponentially decays. The term $V/q$ is known as the **residence time** ($\tau$) of the tank, a critical parameter in reactor design representing the average time a fluid particle spends in the vessel.
 
 ## 4. Transient Energy Balances
@@ -58,5 +75,14 @@ If a solid block of mass $m$, specific heat $C_p$, and initial temperature $T_0$
 
 The energy balance is:
 $$ m C_p \frac{dT}{dt} = -hA(T - T_{\infty}) $$
+
+Where:
+- **$m$**: Mass of the block.
+- **$C_p$**: Specific heat capacity.
+- **$\frac{dT}{dt}$**: Rate of temperature change over time.
+- **$h$**: Heat transfer coefficient.
+- **$A$**: Surface area of the block.
+- **$T$**: Temperature of the block at any time $t$.
+- **$T_{\infty}$**: Temperature of the surrounding fluid bath.
 
 This is Newton's Law of Cooling, which again results in an exponential decay equation when integrated.

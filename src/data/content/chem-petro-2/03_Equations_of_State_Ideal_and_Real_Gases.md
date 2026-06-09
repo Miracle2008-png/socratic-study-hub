@@ -7,6 +7,14 @@ An Equation of State (EOS) is a mathematical formula relating the pressure, mola
 The simplest equation of state is the Ideal Gas Law:
 $$ PV = nRT \quad \text{or} \quad P = \rho R T $$
 
+Where:
+- **$P$**: Pressure.
+- **$V$**: Volume.
+- **$n$**: Number of moles.
+- **$R$**: Universal gas constant.
+- **$T$**: Absolute temperature.
+- **$\rho$**: Molar density ($n/V$).
+
 This model makes two major assumptions:
 1. Gas molecules have zero physical volume (point masses).
 2. Gas molecules exert zero intermolecular attractive or repulsive forces on each other.
@@ -18,6 +26,13 @@ The ideal gas law is highly accurate at **low pressures** (where molecules are f
 To account for the non-ideal behavior of real gases, engineers introduce the **Compressibility Factor ($Z$)**:
 
 $$ Z = \frac{PV}{RT} $$
+
+Where:
+- **$Z$**: Compressibility factor.
+- **$P$**: Pressure.
+- **$V$**: Molar volume.
+- **$R$**: Universal gas constant.
+- **$T$**: Absolute temperature.
 
 For an ideal gas, $Z = 1$ under all conditions. For real gases, $Z$ deviates from 1.
 - **$Z < 1$**: Intermolecular *attractive* forces dominate. The gas compresses more easily than an ideal gas.
@@ -40,5 +55,9 @@ While the simple corresponding states theorem works well for spherical molecules
 To correct this, Pitzer introduced the **Acentric Factor ($\omega$)**, a parameter that quantifies the non-sphericity of a molecule's force field. 
 
 $$ \omega = -1.0 - \log_{10}(P_r^{\text{sat}})_{T_r = 0.7} $$
+
+Where:
+- **$\omega$**: Acentric factor.
+- **$P_r^{\text{sat}}$**: Reduced vapor pressure at a reduced temperature of $T_r = 0.7$.
 
 Using $P_r, T_r,$ and $\omega$, engineers can read highly accurate values of $Z$ from generalized compressibility charts, allowing them to solve the real gas law ($PV = ZRT$) for virtually any chemical compound without needing specific experimental data.

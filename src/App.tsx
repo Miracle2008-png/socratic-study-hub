@@ -25,6 +25,9 @@ const SatMockExam = lazy(() => import('./components/SatMockExam').then(m => ({ d
 const Grapher2D = lazy(() => import('./components/Grapher2D'));
 const CalculusSolver = lazy(() => import('./components/CalculusSolver').then(m => ({ default: m.CalculusSolver })));
 const EngineeringHub = lazy(() => import('./components/EngineeringHub').then(m => ({ default: m.EngineeringHub })));
+const MathModule = lazy(() => import('./components/MathModule'));
+const PhysicsModule = lazy(() => import('./components/PhysicsModule'));
+const ChemistryModule = lazy(() => import('./components/ChemistryModule'));
 import { GamificationProvider, useGamification } from './context/GamificationContext';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { LoginScreen } from './components/LoginScreen';
@@ -276,6 +279,9 @@ const AppContent: React.FC = () => {
     if (activeTab === 'mock_exam') return <MockExam />;
     if (activeTab === 'predictor_hub') return <PredictorHub />;
     if (activeTab === 'grapher') return <Grapher2D />;
+    if (activeTab === 'math_lab') return <MathModule />;
+    if (activeTab === 'physics_lab') return <PhysicsModule />;
+    if (activeTab === 'chemistry_lab') return <ChemistryModule />;
 
     if (activeTab === 'math') {
       if (activeTopic) return <TopicModule topicId={activeTopic} externalFocusMode={isTopicFocusMode} onExternalFocusExit={() => setIsTopicFocusMode(false)} />;
@@ -322,7 +328,8 @@ const AppContent: React.FC = () => {
       derivations: 'Derivations', socratic: 'Socratic Solver',
       planner: 'Study Planner', upload: 'AI Upload Hub',
       flashcards: 'Flashcards', visualizer: '3D Visualizer',
-      dashboard: 'Dashboard', admin: 'Admin Panel'
+      dashboard: 'Dashboard', admin: 'Admin Panel',
+      math_lab: 'Math Lab', physics_lab: 'Physics Lab', chemistry_lab: 'Chemistry Lab'
     };
     return map[id] || id;
   };

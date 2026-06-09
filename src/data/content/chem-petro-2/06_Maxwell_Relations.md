@@ -8,10 +8,15 @@ In thermodynamics, properties like $U, H, S, T, P,$ and $V$ are **state function
 
 Mathematically, a state function $z(x, y)$ has an **exact differential**:
 $$ dz = M \, dx + N \, dy $$
-Where $M = \left(\frac{\partial z}{\partial x}\right)_y$ and $N = \left(\frac{\partial z}{\partial y}\right)_x$.
+
+Where:
+- **$M = \left(\frac{\partial z}{\partial x}\right)_y$**: Partial derivative of $z$ with respect to $x$ at constant $y$.
+- **$N = \left(\frac{\partial z}{\partial y}\right)_x$**: Partial derivative of $z$ with respect to $y$ at constant $x$.
 
 A fundamental theorem of calculus states that for any exact differential, the mixed second partial derivatives must be equal:
 $$ \left(\frac{\partial M}{\partial y}\right)_x = \left(\frac{\partial N}{\partial x}\right)_y $$
+
+Where the partial derivatives are evaluated as previously defined.
 
 ## 2. Deriving the Maxwell Relations
 
@@ -21,6 +26,12 @@ We apply this mathematical theorem to the four fundamental property relations de
    Here, $x = S, y = V, M = T, N = -P$.
    Applying the exact differential theorem:
    $$ \left(\frac{\partial T}{\partial V}\right)_S = -\left(\frac{\partial P}{\partial S}\right)_V $$
+
+   Where:
+   - **$T$**: Temperature.
+   - **$V$**: Volume.
+   - **$S$**: Entropy.
+   - **$P$**: Pressure.
 
 2. **From Enthalpy ($dH = T dS + V dP$)**:
    $$ \left(\frac{\partial T}{\partial P}\right)_S = \left(\frac{\partial V}{\partial S}\right)_P $$

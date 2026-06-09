@@ -9,6 +9,11 @@ A residual property ($M^R$) is defined as the difference between the actual valu
 $$ M^R = M - M^{ig} $$
 $$ M = M^{ig} + M^R $$
 
+Where:
+- **$M$**: Extensive thermodynamic property for a real gas.
+- **$M^{ig}$**: Extensive thermodynamic property for an ideal gas.
+- **$M^R$**: Residual property.
+
 Where $M$ can be Molar Volume ($V$), Enthalpy ($H$), Entropy ($S$), or Gibbs Energy ($G$).
 
 ## 2. Why Use Residual Properties?
@@ -27,6 +32,14 @@ $$ \frac{H^R}{RT} = -T \int_0^P \left(\frac{\partial Z}{\partial T}\right)_P \fr
 
 And residual entropy is:
 $$ \frac{S^R}{R} = -T \int_0^P \left(\frac{\partial Z}{\partial T}\right)_P \frac{dP}{P} - \int_0^P (Z - 1) \frac{dP}{P} $$
+
+Where:
+- **$H^R$**: Residual enthalpy.
+- **$S^R$**: Residual entropy.
+- **$Z$**: Compressibility factor.
+- **$P$**: Pressure.
+- **$T$**: Temperature.
+- **$R$**: Universal gas constant.
 
 If you have a reliable Equation of State, you can take its derivative with respect to temperature, plug it into the equations above, and integrate to find $H^R$ and $S^R$.
 

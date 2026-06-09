@@ -12,12 +12,22 @@ Mathematically, for the generic reaction $aA + bB \rightleftharpoons cC + dD$, t
 $$ \sum \nu_i \mu_i = 0 $$
 $$ c\mu_C + d\mu_D - a\mu_A - b\mu_B = 0 $$
 
+Where:
+- **$\nu_i$**: Stoichiometric coefficient of species $i$ (positive for products, negative for reactants).
+- **$\mu_i$**: Chemical potential of species $i$.
+
 ## 2. The Equilibrium Constant ($K$)
 
 By replacing chemical potential ($\mu_i$) with fugacity, we can derive the standard **Equilibrium Constant ($K$)**.
 
 The value of $K$ is related *exclusively* to the Standard Gibbs Free Energy of Reaction ($\Delta G^\circ_r$):
 $$ \Delta G^\circ_r = -RT \ln K $$
+
+Where:
+- **$\Delta G^\circ_r$**: Standard Gibbs free energy of reaction.
+- **$R$**: Universal gas constant.
+- **$T$**: Absolute temperature.
+- **$K$**: Equilibrium constant.
 
 Where $\Delta G^\circ_r = \sum (\nu_i \Delta G^\circ_{f,i})$.
 - If $\Delta G^\circ_r$ is highly negative, $K$ is massive, and the reaction proceeds almost to 100% completion (e.g., combustion).
@@ -33,8 +43,15 @@ For gas-phase reactions, the thermodynamic $K$ is related to the mole fractions 
 
 $$ K = \left( \prod y_i^{\nu_i} \right) \left( \frac{P}{P^\circ} \right)^{\nu} \left( \prod \hat{\phi}_i^{\nu_i} \right) $$
 
+Where:
+- **$y_i$**: Mole fraction of species $i$ in the gas phase.
+- **$P$**: Total system pressure.
+- **$P^\circ$**: Standard state pressure (typically 1 bar or 1 atm).
+- **$\nu$**: Total change in the number of moles ($\sum \nu_i$).
+- **$\hat{\phi}_i$**: Partial fugacity coefficient of species $i$.
+
 Let's break this down for a low-pressure ideal gas system (where $\hat{\phi}_i = 1$):
-$$ K = \left( \frac{y_C^c y_D^d}{y_A^a y_B^b} \right) P^{(c+d-a-b)} $$
+$$ K = \left( \frac{y_C^c y_D^d}{y_A^a y_B^b} \right) \left( \frac{P}{P^\circ} \right)^{(c+d-a-b)} $$
 
 ## 4. Le Chatelier's Principle in Action
 
@@ -46,5 +63,9 @@ The equation above mathematically proves Le Chatelier's Principle:
 
 2. **Effect of Temperature**: Temperature changes the value of $K$ itself. The direction depends on the Heat of Reaction ($\Delta H^\circ_r$), described by the van 't Hoff equation:
    $$ \frac{d \ln K}{dT} = \frac{\Delta H^\circ_r}{RT^2} $$
+
+   Where:
+   - **$\Delta H^\circ_r$**: Standard heat of reaction.
+
    - For an **exothermic reaction** ($\Delta H^\circ_r < 0$), as $T$ increases, $K$ *decreases*. Therefore, high temperatures ruin the conversion of exothermic reactions.
    - For an **endothermic reaction** ($\Delta H^\circ_r > 0$), as $T$ increases, $K$ *increases*. High temperatures drive the reaction forward.

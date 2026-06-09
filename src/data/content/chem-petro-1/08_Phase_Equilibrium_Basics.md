@@ -10,7 +10,11 @@ The vapor pressure of a pure liquid is the pressure exerted by its vapor when th
 
 The **Antoine Equation** is an empirical formula used to calculate the vapor pressure of pure substances at a given temperature $T$:
 $$ \log_{10} P^* = A - \frac{B}{T + C} $$
-Where A, B, and C are substance-specific constants.
+
+Where:
+- **$P^*$**: The pure vapor pressure of the substance.
+- **$T$**: The temperature of the system.
+- **$A, B, C$**: Empirical, substance-specific constants found in thermodynamics tables.
 
 ## 2. Raoult's Law
 
@@ -20,10 +24,10 @@ For any component $i$ in the mixture:
 $$ y_i P_{\text{total}} = x_i P^*_i(T) $$
 
 Where:
-- $y_i$: Mole fraction of component $i$ in the **vapor phase**.
-- $x_i$: Mole fraction of component $i$ in the **liquid phase**.
-- $P_{\text{total}}$: The total system pressure.
-- $P^*_i(T)$: The pure vapor pressure of component $i$ at the system temperature.
+- **$y_i$**: Mole fraction of component $i$ in the **vapor phase**.
+- **$x_i$**: Mole fraction of component $i$ in the **liquid phase**.
+- **$P_{\text{total}}$**: The total system pressure.
+- **$P^*_i(T)$**: The pure vapor pressure of component $i$ at the system temperature.
 
 ### Bubble Point and Dew Point
 - **Bubble Point**: The temperature (at a given pressure) at which the first bubble of vapor forms in a liquid mixture. $\sum y_i = 1$.
@@ -35,7 +39,11 @@ Raoult's law applies primarily to species that are highly concentrated in the li
 
 $$ y_i P_{\text{total}} = x_i H_i(T) $$
 
-Where $H_i(T)$ is the Henry's Law constant for species $i$ in a specific solvent at a given temperature.
+Where:
+- **$y_i$**: Mole fraction of component $i$ in the vapor phase.
+- **$x_i$**: Mole fraction of component $i$ in the liquid phase.
+- **$P_{\text{total}}$**: Total system pressure.
+- **$H_i(T)$**: The Henry's Law constant for species $i$ in a specific solvent at a given temperature.
 
 ## 4. Gas-Liquid Separation (Flash Drums)
 
