@@ -418,8 +418,8 @@ export async function fetchTopicContent(topicId: string): Promise<TopicContent> 
   // Sort them alphabetically to maintain section order (00_..., 01_..., etc)
   matchingPaths.sort();
 
-  // Cap at 8 core sections — the first 8 files are the most curated/relevant.
-  const MAX_SECTIONS = 8;
+  // Cap at 15 core sections — allows our 12-module deep dives to load fully.
+  const MAX_SECTIONS = 15;
   const selectedPaths = matchingPaths.slice(0, MAX_SECTIONS);
 
   const sections: Section[] = [];
