@@ -218,7 +218,7 @@ const FormulaBank: React.FC = () => {
         .fb-formula-name { font-size:16px; font-weight:600; color:var(--color-text-primary); font-family:var(--font-display); }
         .fb-copy-btn { display:flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:8px; border:var(--border-soft); color:var(--color-text-muted); transition:all var(--transition-fast); cursor:pointer; background:var(--color-base-alt); }
         .fb-copy-btn:hover { border-color:var(--color-accent); color:var(--color-accent); }
-        .fb-formula-render { font-size:18px; padding:16px 20px; background:var(--color-base-alt); border-radius:var(--border-radius-sm); border-left:4px solid var(--color-accent); overflow-x:auto; }
+        .fb-formula-render { font-size:18px; padding:16px 20px; background:var(--color-base-alt); border-radius:var(--border-radius-sm); border:var(--border-soft); overflow-x:auto; }
         .fb-formula-desc { font-size:13.5px; color:var(--color-text-secondary); line-height:1.6; margin-top:4px; }
         .fb-formula-tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:4px; }
 

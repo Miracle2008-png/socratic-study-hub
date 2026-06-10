@@ -240,8 +240,7 @@ const TheoryLayout: React.FC<TheoryLayoutProps> = ({ title, theoryContent, child
         .theory-h2 {
           font-family: var(--font-serif); font-size: 20px; font-weight: 500;
           color: var(--color-text-primary); margin: 32px 0 12px;
-          padding-left: 12px;
-          border-left: 3px solid var(--color-accent);
+          border-bottom: var(--border-soft); padding-bottom: 6px;
         }
 
         .theory-h3 {
@@ -256,15 +255,11 @@ const TheoryLayout: React.FC<TheoryLayoutProps> = ({ title, theoryContent, child
         }
 
         .theory-ul {
-          margin: 0 0 16px 0; padding-left: 0; list-style: none;
+          margin: 0 0 16px 0; padding-left: 24px;
         }
         .theory-li {
           font-size: 14px; color: var(--color-text-primary);
-          line-height: 1.7; padding: 4px 0 4px 22px; position: relative;
-        }
-        .theory-li::before {
-          content: '›'; position: absolute; left: 6px;
-          color: var(--color-accent); font-weight: 700;
+          line-height: 1.7; padding: 4px 0;
         }
 
         .theory-strong { font-weight: 700; color: var(--color-text-primary); }
@@ -304,7 +299,7 @@ const TheoryLayout: React.FC<TheoryLayoutProps> = ({ title, theoryContent, child
           margin: 20px 0; padding: 16px 20px;
           background: var(--color-base-alt);
           border-radius: var(--border-radius-sm);
-          border-left: 3px solid var(--color-accent);
+          border: var(--border-soft);
           overflow-x: auto;
         }
 

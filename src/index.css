@@ -948,3 +948,8 @@ input, textarea, select {
     .topbar { padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
   }
 }
+
+/* Fix KaTeX double text copy issue */
+.katex-mathml {
+  display: none !important;
+}
