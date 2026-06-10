@@ -475,5 +475,94 @@ When solving an energy balance for a reactor:
 
 ### Adiabatic Flame Temperature
 If a reactor (like a combustion chamber) is perfectly insulated, $\\dot{Q} = 0$. The **adiabatic flame temperature** is the theoretical maximum temperature the products can reach. All the energy released by the exothermic reaction goes entirely into heating the product gases. You solve for $T_{out}$ iteratively such that $\\Delta \\dot{H} = 0$.
+`,
+
+  'Hybridization & VSEPR Theory': `
+# Hybridization & VSEPR Theory
+
+Understanding the three-dimensional structure of molecules is fundamental to chemistry. The shape of a molecule dictates its physical properties, reactivity, and biological function. Two complementary theories are used to predict and explain molecular geometry: **Valence Shell Electron Pair Repulsion (VSEPR) Theory** and **Orbital Hybridization**.
+
+## 1. VSEPR Theory
+
+VSEPR theory is based on a simple premise: electron pairs (both bonding pairs and lone pairs) around a central atom repel each other. To minimize this repulsion and achieve the lowest energy state, these electron pairs arrange themselves as far apart as possible in three-dimensional space.
+
+### The AXE Method
+To predict geometry, we classify molecules using the $AX_mE_n$ system:
+*   **A** represents the central atom.
+*   **X** represents the number of bonded atoms (ligands).
+*   **E** represents the number of lone electron pairs on the central atom.
+*   The **Steric Number (SN)** is the sum of $m + n$ (total electron domains).
+
+### Base Electron Geometries (Determined by Steric Number)
+*   **SN = 2**: Linear ($180^\\circ$). Example: $CO_2$ ($AX_2$).
+*   **SN = 3**: Trigonal Planar ($120^\\circ$). Example: $BF_3$ ($AX_3$).
+*   **SN = 4**: Tetrahedral ($109.5^\\circ$). Example: $CH_4$ ($AX_4$).
+*   **SN = 5**: Trigonal Bipyramidal (Equatorial $120^\\circ$, Axial $90^\\circ$). Example: $PCl_5$ ($AX_5$).
+*   **SN = 6**: Octahedral ($90^\\circ$). Example: $SF_6$ ($AX_6$).
+
+### Molecular Geometries (The Effect of Lone Pairs)
+While the *electron* geometry includes lone pairs, the *molecular* geometry describes only the positions of the atoms. Lone pairs are physically "wider" and more repulsive than bonding pairs because they are held by only one nucleus. This forces the bonding pairs closer together, compressing the ideal bond angles.
+
+*   **From Tetrahedral (SN=4)**:
+    *   $AX_3E_1$: **Trigonal Pyramidal**. Example: Ammonia ($NH_3$). Bond angle compressed to $\\approx 107^\\circ$.
+    *   $AX_2E_2$: **Bent (V-shaped)**. Example: Water ($H_2O$). Bond angle compressed further to $\\approx 104.5^\\circ$.
+
+*   **From Trigonal Bipyramidal (SN=5)**:
+    *   Lone pairs *always* occupy equatorial positions first to minimize $90^\\circ$ repulsions.
+    *   $AX_4E_1$: **Seesaw**. Example: $SF_4$.
+    *   $AX_3E_2$: **T-shaped**. Example: $ClF_3$.
+    *   $AX_2E_3$: **Linear**. Example: $I_3^-$.
+
+*   **From Octahedral (SN=6)**:
+    *   $AX_5E_1$: **Square Pyramidal**. Example: $BrF_5$.
+    *   $AX_4E_2$: **Square Planar**. Example: $XeF_4$. Lone pairs go trans ($180^\\circ$) to each other.
+
+---
+
+## 2. Orbital Hybridization
+
+While VSEPR predicts *where* the bonds are, Hybridization explains *how* the bonds form.
+A free carbon atom has the valence electron configuration $2s^2 2p^2$. It only has two unpaired electrons in $p$ orbitals. How can it form four identical bonds in methane ($CH_4$)? The answer is hybridization.
+
+Atomic orbitals ($s, p, d$) mathematically mix (linearly combine) to form new, identical, directional **hybrid orbitals**.
+
+### Types of Hybridization
+The type of hybridization depends perfectly on the Steric Number (SN) from VSEPR theory.
+
+#### $sp^3$ Hybridization (SN = 4)
+*   **Mixing**: One $s$ orbital and three $p$ orbitals mix.
+*   **Result**: Four equivalent $sp^3$ orbitals.
+*   **Geometry**: Tetrahedral ($109.5^\\circ$).
+*   **Example**: Ethane ($CH_3-CH_3$). All carbon-carbon and carbon-hydrogen bonds are strong head-on $\\sigma$ (sigma) bonds formed by the overlap of $sp^3$ orbitals.
+
+#### $sp^2$ Hybridization (SN = 3)
+*   **Mixing**: One $s$ orbital and two $p$ orbitals mix. One $p$ orbital remains unhybridized.
+*   **Result**: Three equivalent $sp^2$ orbitals and one pure $p$ orbital.
+*   **Geometry**: Trigonal Planar ($120^\\circ$).
+*   **Example**: Ethene ($CH_2=CH_2$). 
+    *   The carbon skeleton is held together by $\\sigma$ bonds using the $sp^2$ orbitals.
+    *   The unhybridized $p$ orbitals on adjacent carbons overlap side-by-side to form a **$\\pi$ (pi) bond**. A double bond consists of one $\\sigma$ bond and one $\\pi$ bond.
+
+#### $sp$ Hybridization (SN = 2)
+*   **Mixing**: One $s$ orbital and one $p$ orbital mix. Two $p$ orbitals remain unhybridized.
+*   **Result**: Two equivalent $sp$ orbitals and two pure $p$ orbitals.
+*   **Geometry**: Linear ($180^\\circ$).
+*   **Example**: Ethyne / Acetylene ($CH \\equiv CH$). 
+    *   The linear skeleton is formed by $\\sigma$ bonds using $sp$ orbitals.
+    *   The two sets of unhybridized $p$ orbitals overlap to form two mutually perpendicular $\\pi$ bonds. A triple bond consists of one $\\sigma$ bond and two $\\pi$ bonds.
+
+#### $sp^3d$ and $sp^3d^2$ Hybridization
+For elements in Period 3 or below (like P, S, Cl), empty $d$ orbitals can participate in hybridization to expand the octet.
+*   **$sp^3d$ (SN = 5)**: Forms five orbitals. Trigonal Bipyramidal geometry (e.g., $PCl_5$).
+*   **$sp^3d^2$ (SN = 6)**: Forms six orbitals. Octahedral geometry (e.g., $SF_6$).
+
+### Key Differences Between Sigma ($\\sigma$) and Pi ($\\pi$) Bonds
+| Property | $\\sigma$ (Sigma) Bond | $\\pi$ (Pi) Bond |
+| :--- | :--- | :--- |
+| **Overlap** | Head-on (end-to-end) | Side-by-side (lateral) |
+| **Symmetry** | Cylindrically symmetrical around the internuclear axis | Electron density is above and below the internuclear axis |
+| **Strength** | Very strong | Weaker than $\\sigma$ bonds |
+| **Rotation** | Free rotation is allowed | Rotation is highly restricted (breaking the $\\pi$ bond is required) |
+| **Order** | Always the first bond formed | Only exists in double or triple bonds |
 `
 };

@@ -66,14 +66,14 @@ export const ENGINEERING_BRANCHES: Record<string, EngineeringBranch> = {
     description: 'Circuits, electronics, electromagnetics, data structures, algorithms, and control systems.',
     color: '#eab308', // Yellow/Gold
     topics: [
-      { id: 'elec-comp-1', title: 'DC Circuit Analysis' },
-      { id: 'elec-comp-2', title: 'AC Circuit Analysis & Phasors' },
-      { id: 'elec-comp-3', title: 'Signals and Systems' },
-      { id: 'elec-comp-4', title: 'Analog Electronics (Diodes, BJTs, FETs)' },
-      { id: 'elec-comp-5', title: 'Operational Amplifiers' },
-      { id: 'elec-comp-6', title: 'Digital Logic Design' },
-      { id: 'elec-comp-7', title: 'Microprocessors & Assembly Language' },
-      { id: 'elec-comp-8', title: 'Electromagnetic Field Theory' },
+      { id: 'electric-circuit-theory-1', title: 'DC Circuit Analysis' },
+      { id: 'electric-circuit-theory-2', title: 'AC Circuit Analysis & Phasors' },
+      { id: 'electric-circuit-theory-3', title: 'Advanced Circuit Analysis (Laplace)' },
+      { id: 'analogue-electronics', title: 'Analog Electronics (Diodes, BJTs, FETs)' },
+      { id: 'digital-electronics', title: 'Digital Logic Design' },
+      { id: 'electromagnetic-fields', title: 'Electromagnetic Field Theory' },
+      { id: 'control-systems', title: 'Classical Control Theory' },
+      { id: 'elec-comp-8', title: 'Microprocessors & Assembly Language' },
       { id: 'elec-comp-9', title: 'Transmission Lines & Antennas' },
       { id: 'elec-comp-10', title: 'Power Systems & Machinery' },
       { id: 'elec-comp-11', title: 'Power Electronics' },
@@ -84,13 +84,12 @@ export const ENGINEERING_BRANCHES: Record<string, EngineeringBranch> = {
       { id: 'elec-comp-16', title: 'Sensors & Transducers' },
       { id: 'elec-comp-17', title: 'Actuators (Electrical, Pneumatic, Hydraulic)' },
       { id: 'elec-comp-18', title: 'Signal Conditioning & Data Acquisition' },
-      { id: 'elec-comp-19', title: 'Classical Control Theory' },
-      { id: 'elec-comp-20', title: 'Robot Kinematics' },
-      { id: 'elec-comp-21', title: 'Object-Oriented Programming' },
-      { id: 'elec-comp-22', title: 'Core Data Structures' },
-      { id: 'elec-comp-23', title: 'Algorithms' },
-      { id: 'elec-comp-24', title: 'Cybersecurity & Cryptography' },
-      { id: 'elec-comp-25', title: 'Compiler Design & Automata Theory' }
+      { id: 'elec-comp-19', title: 'Robot Kinematics' },
+      { id: 'elec-comp-20', title: 'Object-Oriented Programming' },
+      { id: 'elec-comp-21', title: 'Core Data Structures' },
+      { id: 'elec-comp-22', title: 'Algorithms' },
+      { id: 'elec-comp-23', title: 'Cybersecurity & Cryptography' },
+      { id: 'elec-comp-24', title: 'Compiler Design & Automata Theory' }
     ]
   },
   'mechanical-aerospace': {
@@ -201,6 +200,20 @@ export const ENGINEERING_BRANCHES: Record<string, EngineeringBranch> = {
     title: 'Civil & Environmental',
     description: 'Structural analysis, geotechnics, and environmental infrastructure.',
     color: '#f97316', // Orange
-    topics: []
+    topics: [
+      { id: 'civil-env-1', title: 'Statics & Solid Mechanics' },
+      { id: 'civil-env-2', title: 'Structural Analysis' },
+      { id: 'civil-env-3', title: 'Reinforced Concrete Design' },
+      { id: 'civil-env-4', title: 'Steel Structure Design' },
+      { id: 'civil-env-5', title: 'Soil Mechanics & Geotechnics' },
+      { id: 'civil-env-6', title: 'Foundation Engineering' },
+      { id: 'civil-env-7', title: 'Fluid Mechanics for Civil Engineering' },
+      { id: 'civil-env-8', title: 'Hydrology & Water Resources' },
+      { id: 'civil-env-9', title: 'Environmental Engineering Fundamentals' },
+      { id: 'civil-env-10', title: 'Water & Wastewater Treatment' },
+      { id: 'civil-env-11', title: 'Transportation Engineering' },
+      { id: 'civil-env-12', title: 'Surveying & Geomatics' },
+      { id: 'civil-env-13', title: 'Construction Management' }
+    ]
   }
 };
