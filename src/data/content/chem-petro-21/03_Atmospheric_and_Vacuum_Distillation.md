@@ -55,30 +55,31 @@ Explore the interactive flow diagram of the Atmospheric and Vacuum Distillation 
 
 ```diagram
 {
+  "direction": "TB",
   "nodes": [
-    { "id": "1", "data": { "label": "Raw Crude Oil" }, "position": { "x": 0, "y": 150 }, "style": { "background": "#451a03", "color": "#fef3c7" } },
-    { "id": "2", "data": { "label": "Desalter (Wash)" }, "position": { "x": 200, "y": 150 }, "style": { "background": "#0c4a6e", "color": "#e0f2fe" } },
-    { "id": "3", "data": { "label": "Furnace (700°F)" }, "position": { "x": 400, "y": 150 }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
-    { "id": "4", "data": { "label": "Atmospheric Tower" }, "position": { "x": 600, "y": 150 }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
-    { "id": "5", "data": { "label": "Light Gases" }, "position": { "x": 800, "y": -50 }, "style": { "background": "#334155", "color": "#f8fafc" } },
-    { "id": "6", "data": { "label": "Naphtha / Kerosene" }, "position": { "x": 800, "y": 50 }, "style": { "background": "#1e293b", "color": "#f8fafc" } },
-    { "id": "7", "data": { "label": "Heavy Diesel" }, "position": { "x": 800, "y": 150 }, "style": { "background": "#0f172a", "color": "#f8fafc" } },
-    { "id": "8", "data": { "label": "Atmospheric Residue" }, "position": { "x": 600, "y": 300 }, "style": { "background": "#020617", "color": "#94a3b8" } },
-    { "id": "9", "data": { "label": "Vacuum Tower (0.5 psi)" }, "position": { "x": 800, "y": 300 }, "style": { "background": "#1e1b4b", "color": "#e0e7ff" } },
-    { "id": "10", "data": { "label": "Vacuum Gas Oil (VGO)" }, "position": { "x": 1050, "y": 250 }, "style": { "background": "#312e81", "color": "#e0e7ff" } },
-    { "id": "11", "data": { "label": "Vacuum Residue (Asphalt)" }, "position": { "x": 1050, "y": 350 }, "style": { "background": "#020617", "color": "#64748b" } }
+    { "id": "1", "data": { "label": "Raw Crude Oil", "icon": "Droplet", "description": "Raw crude oil arriving from the oilfield. It is a complex mixture of thousands of different hydrocarbon molecules, along with contaminants like saltwater, sulfur, and heavy metals." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "2", "data": { "label": "Desalter (Wash)", "icon": "Waves", "description": "The Desalter uses a high-voltage electrostatic grid (up to 20,000 volts) to force saltwater droplets to coalesce and separate from the oil. If salt enters the furnace, it forms highly corrosive hydrochloric acid." }, "style": { "background": "#0c4a6e", "color": "#e0f2fe" } },
+    { "id": "3", "data": { "label": "Furnace (700°F)", "icon": "Flame", "description": "A massive natural gas-fired heater that rapidly heats the crude oil to roughly 700°F (370°C). This partially vaporizes the oil before it enters the distillation column." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "4", "data": { "label": "Atmospheric Tower", "icon": "TowerControl", "description": "The Atmospheric Distillation Unit (ADU) separates the crude oil into fractions based on their boiling points using dozens of fractionation trays. The vapor rises and condenses on cooler trays." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "5", "data": { "label": "Light Gases", "icon": "Wind", "description": "The lightest hydrocarbons (C1 to C4) like methane, ethane, propane, and butane. These never condense in the tower and exit the top as gases." }, "style": { "background": "#334155", "color": "#f8fafc" } },
+    { "id": "6", "data": { "label": "Naphtha / Kerosene", "icon": "Plane", "description": "Condensing higher up in the tower, Naphtha is upgraded into gasoline, while Kerosene is purified into Jet Fuel." }, "style": { "background": "#1e293b", "color": "#f8fafc" } },
+    { "id": "7", "data": { "label": "Heavy Diesel", "icon": "Truck", "description": "Condensing lower in the tower, this heavy fraction is used primarily for diesel engines in trucks, trains, and ships." }, "style": { "background": "#0f172a", "color": "#f8fafc" } },
+    { "id": "8", "data": { "label": "Atmospheric Residue", "icon": "ArrowDownToLine", "description": "The 40% of the crude oil that is too heavy to boil at atmospheric pressure. It falls to the bottom of the tower as a thick, black liquid." }, "style": { "background": "#020617", "color": "#94a3b8" } },
+    { "id": "9", "data": { "label": "Vacuum Tower (0.5 psi)", "icon": "Tornado", "description": "The Vacuum Distillation Unit (VDU) lowers the pressure to a near-vacuum. This allows the heavy residue to boil at lower temperatures without cracking (burning into solid carbon)." }, "style": { "background": "#1e1b4b", "color": "#e0e7ff" } },
+    { "id": "10", "data": { "label": "Vacuum Gas Oil (VGO)", "icon": "Activity", "description": "The heavy oils that successfully boil under vacuum. VGO is the primary feedstock sent to the Fluid Catalytic Cracking (FCC) unit to be smashed into gasoline." }, "style": { "background": "#312e81", "color": "#e0e7ff" } },
+    { "id": "11", "data": { "label": "Vacuum Residue", "icon": "GripHorizontal", "description": "The absolute heaviest 10% of the oil (solid asphalt). It refuses to boil even in a hard vacuum and falls to the bottom. Used for road pavement or sent to a Coker." }, "style": { "background": "#020617", "color": "#64748b" } }
   ],
   "edges": [
-    { "id": "e1-2", "source": "1", "target": "2", "animated": true },
-    { "id": "e2-3", "source": "2", "target": "3", "animated": true },
-    { "id": "e3-4", "source": "3", "target": "4", "animated": true },
-    { "id": "e4-5", "source": "4", "target": "5", "animated": true },
-    { "id": "e4-6", "source": "4", "target": "6", "animated": true },
-    { "id": "e4-7", "source": "4", "target": "7", "animated": true },
-    { "id": "e4-8", "source": "4", "target": "8", "animated": true },
-    { "id": "e8-9", "source": "8", "target": "9", "animated": true },
-    { "id": "e9-10", "source": "9", "target": "10", "animated": true },
-    { "id": "e9-11", "source": "9", "target": "11", "animated": true }
+    { "source": "1", "target": "2", "animated": true },
+    { "source": "2", "target": "3", "animated": true },
+    { "source": "3", "target": "4", "animated": true },
+    { "source": "4", "target": "5", "animated": true },
+    { "source": "4", "target": "6", "animated": true },
+    { "source": "4", "target": "7", "animated": true },
+    { "source": "4", "target": "8", "animated": true },
+    { "source": "8", "target": "9", "animated": true },
+    { "source": "9", "target": "10", "animated": true },
+    { "source": "9", "target": "11", "animated": true }
   ]
 }
 ```
