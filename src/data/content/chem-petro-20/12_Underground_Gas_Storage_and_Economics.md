@@ -49,4 +49,27 @@ This is driven by the **Summer-Winter Arbitrage**.
 Because demand is low in the Summer, natural gas is incredibly cheap (e.g., \$2.00 per MMBtu).
 Because demand is astronomical during a Winter freeze, the price violently spikes (e.g., \$10.00 per MMBtu).
 
-A storage company buys massive volumes of gas for \$2.00 in July, pumps it into a salt cavern, waits six months, and sells the exact same gas back into the same pipeline in January for \$10.00, making an instant, guaranteed fortune. This financial incentive is what drives the massive capital investment required to keep the power grid safe and stable.
+A storage company buys massive volumes of gas for $2.00 in July, pumps it into a salt cavern, waits six months, and sells the exact same gas back into the same pipeline in January for $10.00, making an instant, guaranteed fortune. This financial incentive is what drives the massive capital investment required to keep the power grid safe and stable.
+
+## 4. Underground Storage & Arbitrage Cycle
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "summer", "data": { "label": "Summer (Low Demand)", "icon": "Sun", "description": "Gas is cheap ($2/MMBtu). Excess gas is bought from the pipeline." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "inject", "data": { "label": "Compressor Injection", "icon": "ArrowDownCircle", "description": "Massive compressors violently blast the gas deep underground." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "storage", "data": { "label": "Salt Cavern / Depleted Field", "icon": "Database", "description": "Geological battery holding massive volumes of Working Gas on top of permanent Base Gas." }, "style": { "background": "#1e293b", "color": "#cbd5e1" } },
+    { "id": "winter", "data": { "label": "Winter Blizzard (Spike)", "icon": "Snowflake", "description": "City heating demand skyrockets. Gas price spikes to $10/MMBtu." }, "style": { "background": "#0c4a6e", "color": "#e0f2fe" } },
+    { "id": "withdraw", "data": { "label": "High-Volume Withdrawal", "icon": "ArrowUpCircle", "description": "Storage valves opened. Underground pressure blasts gas back into the pipeline." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "city", "data": { "label": "City Heating Saved", "icon": "Flame", "description": "The grid remains stable, people stay warm, and the storage company makes a massive profit." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "summer", "target": "inject", "animated": true },
+    { "source": "inject", "target": "storage", "animated": true, "label": "Filling" },
+    { "source": "winter", "target": "withdraw", "animated": true },
+    { "source": "storage", "target": "withdraw", "animated": true, "style": { "stroke": "#3b82f6" }, "label": "Emptying" },
+    { "source": "withdraw", "target": "city", "animated": true, "style": { "stroke": "#ef4444" } }
+  ]
+}
+```

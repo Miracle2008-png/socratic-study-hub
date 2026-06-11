@@ -55,3 +55,27 @@ To reach the strict 7 lb/MMscf pipeline spec, the TEG entering the top of the to
 However, a standard $400^\circ\text{F}$ reboiler can only physically boil the TEG to about 98.5% purity. A tiny fraction of water stubbornly refuses to boil out. 
 
 To achieve ultra-purity (99.9% TEG), engineers inject a small stream of pure, perfectly dry Methane gas (Stripping Gas) directly into the bottom of the Reboiler kettle. As the dry gas bubbles up through the hot, boiling Glycol, it violently strips the last stubborn, microscopic molecules of water out of the liquid, producing the ultra-pure TEG required to perfectly dehydrate the massive gas stream.
+
+## 5. TEG Dehydration Process Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "wet", "data": { "label": "Wet Gas", "icon": "CloudRain", "description": "Raw gas fully saturated with invisible water vapor." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "contactor", "data": { "label": "Contactor Tower", "icon": "SplitSquareVertical", "description": "Wet gas bubbles up through downward-raining pure liquid TEG. TEG chemically absorbs the water." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "dry", "data": { "label": "Dry Pipeline Gas", "icon": "CloudFog", "description": "Bone-dry Methane exits the top, ready for cross-country transmission." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "reboiler", "data": { "label": "Reboiler (400°F)", "icon": "Flame", "description": "Rich TEG is heated to boil the water out into steam, leaving pure liquid TEG behind." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "steam", "data": { "label": "Water Vapor (Steam)", "icon": "Droplets", "description": "Boiled water is safely vented to atmosphere." }, "style": { "background": "#475569", "color": "#f8fafc" } },
+    { "id": "recycle", "data": { "label": "Lean TEG Recycle", "icon": "RefreshCw", "description": "Hot, pure TEG is cooled and pumped continuously back to the top of the Contactor." }, "style": { "background": "#0c4a6e", "color": "#e0f2fe" } }
+  ],
+  "edges": [
+    { "source": "wet", "target": "contactor", "animated": true },
+    { "source": "contactor", "target": "dry", "animated": true },
+    { "source": "contactor", "target": "reboiler", "animated": true, "style": { "stroke": "#3b82f6" }, "label": "Rich TEG" },
+    { "source": "reboiler", "target": "steam", "animated": true },
+    { "source": "reboiler", "target": "recycle", "animated": true, "style": { "stroke": "#0ea5e9" } },
+    { "source": "recycle", "target": "contactor", "animated": true, "style": { "stroke": "#0ea5e9" }, "label": "Lean TEG" }
+  ]
+}
+```

@@ -51,3 +51,24 @@ In deep, ultra-high-pressure "Gas Condensate" reservoirs, the exact opposite hap
 4.  **The Result:** Dropping the pressure causes massive amounts of liquid oil to instantly condense out of the invisible gas. 
 
 This is called **Retrograde Condensation**. It is a nightmare for engineers. The heavy, valuable liquid oil condenses deep inside the microscopic rock pores. It is permanently trapped by capillary forces, destroying the profitability of the well. Engineers must carefully inject dry gas back into the reservoir to maintain the massive pressure and prevent the oil from ever condensing underground.
+
+## 4. Retrograde Condensation Nightmare
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "initial", "data": { "label": "Virgin Reservoir (6,000 psi)", "icon": "Cloud", "description": "Extreme high pressure. The fluid is 100% invisible, single-phase supercritical gas." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "drop", "data": { "label": "Pressure Drop (Production)", "icon": "ArrowDownCircle", "description": "As the well produces, the reservoir pressure steadily drops toward the Dew Point." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "dew", "data": { "label": "Dew Point Reached (4,000 psi)", "icon": "AlertTriangle", "description": "The thermodynamic boundary is crossed. Physics reverses itself." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "liquid", "data": { "label": "Liquid Oil Condensation", "icon": "Droplet", "description": "Massive amounts of valuable liquid oil instantly rain out of the invisible gas." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "trap", "data": { "label": "Trapped in Rock", "icon": "Lock", "description": "The liquid oil is permanently trapped in the microscopic rock pores by capillary forces. Profit destroyed." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } }
+  ],
+  "edges": [
+    { "source": "initial", "target": "drop", "animated": true },
+    { "source": "drop", "target": "dew", "animated": true },
+    { "source": "dew", "target": "liquid", "animated": true, "style": { "stroke": "#f59e0b" } },
+    { "source": "liquid", "target": "trap", "animated": true, "style": { "stroke": "#ef4444" } }
+  ]
+}
+```

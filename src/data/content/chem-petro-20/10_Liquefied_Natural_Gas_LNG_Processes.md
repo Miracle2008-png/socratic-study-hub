@@ -45,3 +45,24 @@ Because no insulation is perfect, heat from the ocean slowly leaks into the tank
 
 When the ship reaches its destination (e.g., South Korea or Germany), the LNG is pumped into a **Regasification Terminal**.
 The engineers simply pump the freezing liquid through a massive radiator submerged in the warm ocean water. The heat of the sea instantly boils the LNG back into an invisible gas, which violently expands 600 times and is blasted directly into the country's domestic pipeline grid to heat homes and power factories.
+
+## 4. LNG Global Value Chain
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "clean", "data": { "label": "Bone-Dry Gas", "icon": "ShieldCheck", "description": "Gas stripped of all H2S, CO2, and Water to prevent freezing solid." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "cryo", "data": { "label": "Liquefaction Plant", "icon": "Snowflake", "description": "Massive refrigerant cycles drop temperature to -260°F. Gas shrinks 600x." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "ship", "data": { "label": "LNG Carrier Ship", "icon": "Ship", "description": "Liquid LNG transported across the ocean in massive thermos-bottle tanks." }, "style": { "background": "#0c4a6e", "color": "#e0f2fe" } },
+    { "id": "regas", "data": { "label": "Regasification Terminal", "icon": "Waves", "description": "Warm ocean water boils the liquid LNG back into high-pressure invisible gas." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "city", "data": { "label": "Foreign Pipeline Grid", "icon": "Home", "description": "Gas delivered to power plants and homes in destination country." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "clean", "target": "cryo", "animated": true },
+    { "source": "cryo", "target": "ship", "animated": true, "style": { "stroke": "#3b82f6", "strokeWidth": 2 }, "label": "Liquid LNG" },
+    { "source": "ship", "target": "regas", "animated": true, "style": { "stroke": "#3b82f6", "strokeWidth": 2 } },
+    { "source": "regas", "target": "city", "animated": true, "style": { "stroke": "#10b981" }, "label": "Methane Gas" }
+  ]
+}
+```

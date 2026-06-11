@@ -59,6 +59,31 @@ If GTL creates perfect, clean liquid fuel out of cheap natural gas, why aren't t
 **Astronomical Capital Cost.**
 
 A GTL plant is a sprawling, dangerous, complex chemical metropolis. It requires massive oxygen separation plants, $2,000^\circ\text{F}$ furnaces, and highly sensitive, easily poisoned cobalt catalysts. 
-A world-class GTL plant (like the massive Pearl GTL plant in Qatar) can cost **\$20 Billion** to build. 
+A world-class GTL plant (like the massive Pearl GTL plant in Qatar) can cost **$20 Billion** to build. 
 
 GTL is only economically viable when natural gas is virtually free, and the global price of liquid diesel is incredibly high. If the price of crude oil drops, the multi-billion dollar GTL plant instantly becomes a massive financial liability.
+
+## 4. Gas-to-Liquids (GTL) Process Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "methane", "data": { "label": "Methane + Oxygen", "icon": "Cloud", "description": "Raw, cheap natural gas mixed with pure oxygen." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "reformer", "data": { "label": "Reforming Furnace", "icon": "Flame", "description": "2,000°F heat violently shatters the molecules apart." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "syngas", "data": { "label": "Synthesis Gas", "icon": "Wind", "description": "Highly reactive intermediate mixture of Carbon Monoxide and Hydrogen." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "ft", "data": { "label": "Fischer-Tropsch Reactor", "icon": "Factory", "description": "Cobalt catalyst physically stitches the atoms together into long, heavy chains." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } },
+    { "id": "syncrude", "data": { "label": "Synthetic Crude Wax", "icon": "Droplet", "description": "Ultra-pure heavy wax dripping out of the reactor." }, "style": { "background": "#1e293b", "color": "#cbd5e1" } },
+    { "id": "upgrader", "data": { "label": "Upgrading Unit", "icon": "SplitSquareVertical", "description": "Hydrocracking gently snaps the massive wax molecules into precise lengths." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "diesel", "data": { "label": "GTL Diesel & Jet Fuel", "icon": "Fuel", "description": "The purest, zero-sulfur liquid fuels on the planet." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "methane", "target": "reformer", "animated": true },
+    { "source": "reformer", "target": "syngas", "animated": true },
+    { "source": "syngas", "target": "ft", "animated": true },
+    { "source": "ft", "target": "syncrude", "animated": true },
+    { "source": "syncrude", "target": "upgrader", "animated": true },
+    { "source": "upgrader", "target": "diesel", "animated": true }
+  ]
+}
+```

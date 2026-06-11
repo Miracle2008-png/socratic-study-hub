@@ -54,3 +54,31 @@ The Claus process is a complex, multi-stage catalytic reaction that uses intense
 The deadly, invisible $H_2S$ gas is chemically transformed into pure water vapor ($H_2O$) and massive, harmless blocks of solid, bright-yellow elemental **Sulfur**. 
 The gas plant safely stacks these massive blocks of solid Sulfur in a field and sells them to agricultural companies to be ground up and used as crop fertilizer. 
 A deadly poison is transformed into a profitable commodity.
+
+## 5. Gas Sweetening & Sulfur Recovery Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "sour", "data": { "label": "Sour Gas", "icon": "Biohazard", "description": "Highly toxic, lethal raw gas filled with H2S and CO2." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "contactor", "data": { "label": "Amine Contactor", "icon": "SplitSquareVertical", "description": "Acid gas forms a weak chemical bond with the liquid Amine." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "sweet", "data": { "label": "Sweet Gas", "icon": "ShieldCheck", "description": "Clean, safe, pipeline-quality natural gas." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "reboiler", "data": { "label": "Amine Reboiler (250°F)", "icon": "Flame", "description": "Heat violently breaks the chemical bond, boiling the acid gas out of the liquid amine." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "recycle", "data": { "label": "Lean Amine Recycle", "icon": "RefreshCw", "description": "Pure Amine is pumped back to the Contactor to absorb more acid." }, "style": { "background": "#0c4a6e", "color": "#e0f2fe" } },
+    { "id": "toxic", "data": { "label": "Concentrated H2S", "icon": "Skull", "description": "Lethal, highly concentrated toxic gas stream vented from the Reboiler." }, "style": { "background": "#0f172a", "color": "#f8fafc" } },
+    { "id": "claus", "data": { "label": "Claus Unit Reactor", "icon": "Factory", "description": "Intense heat and Titanium catalysts tear the Hydrogen away from the Sulfur." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "sulfur", "data": { "label": "Solid Sulfur", "icon": "Box", "description": "Safe, bright-yellow elemental sulfur blocks, sold as agricultural fertilizer." }, "style": { "background": "#a16207", "color": "#fef08a" } }
+  ],
+  "edges": [
+    { "source": "sour", "target": "contactor", "animated": true },
+    { "source": "contactor", "target": "sweet", "animated": true },
+    { "source": "contactor", "target": "reboiler", "animated": true, "style": { "stroke": "#475569" }, "label": "Rich Amine" },
+    { "source": "reboiler", "target": "recycle", "animated": true, "style": { "stroke": "#3b82f6" } },
+    { "source": "recycle", "target": "contactor", "animated": true, "style": { "stroke": "#3b82f6" }, "label": "Lean Amine" },
+    { "source": "reboiler", "target": "toxic", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "toxic", "target": "claus", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "claus", "target": "sulfur", "animated": true, "style": { "stroke": "#eab308" } }
+  ]
+}
+```

@@ -48,3 +48,28 @@ Instead of one massive machine, the engineer uses two (or three) smaller machine
 3.  **Stage 2:** The cool, 300 psi gas enters the second machine. It is compressed by another ratio of 3.0. It exits at a perfectly safe $300^\circ\text{F}$, but at the required massive pressure of 900 psi.
 
 **The Thermodynamic Bonus:** Intercooling doesn't just save the machine from melting; it saves massive amounts of money. Compressing a hot gas requires astronomically more horsepower (fuel) than compressing a cold gas. By chilling the gas between stages, the engineer drastically reduces the total horsepower required by the massive V12 engine to achieve the 900 psi goal.
+
+## 4. Multi-Stage Compression with Intercooling
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "low", "data": { "label": "Suction Gas (100 psi)", "icon": "ArrowRightCircle", "description": "Low pressure gas from the field enters the station." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "stage1", "data": { "label": "Stage 1 Cylinder", "icon": "Activity", "description": "Violently compresses the gas by a ratio of 3.0." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "hot", "data": { "label": "Hot Gas (300 psi, 300°F)", "icon": "Flame", "description": "Gas is dangerously hot. Cannot be compressed further without melting the machine." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "intercooler", "data": { "label": "Aerial Intercooler", "icon": "Fan", "description": "Massive fans blast ambient air over pipes, dumping the heat into the atmosphere." }, "style": { "background": "#0c4a6e", "color": "#e0f2fe" } },
+    { "id": "cool", "data": { "label": "Cool Gas (300 psi, 100°F)", "icon": "ThermometerSnowflake", "description": "Gas is chilled back to a safe temperature while maintaining the 300 psi pressure." }, "style": { "background": "#1e293b", "color": "#cbd5e1" } },
+    { "id": "stage2", "data": { "label": "Stage 2 Cylinder", "icon": "Activity", "description": "Compresses the gas again by a ratio of 3.0." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } },
+    { "id": "high", "data": { "label": "Discharge Gas (900 psi)", "icon": "Gauge", "description": "Target pipeline pressure achieved safely." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "low", "target": "stage1", "animated": true },
+    { "source": "stage1", "target": "hot", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "hot", "target": "intercooler", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "intercooler", "target": "cool", "animated": true, "style": { "stroke": "#3b82f6" } },
+    { "source": "cool", "target": "stage2", "animated": true },
+    { "source": "stage2", "target": "high", "animated": true }
+  ]
+}
+```

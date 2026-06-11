@@ -52,3 +52,28 @@ Eventually, the pressure of the gas at the wellhead (e.g., 200 psi) is too weak 
 
 To keep the field alive, the company must install massive **Field Compressors**. 
 These massive, natural-gas-powered V12 engines are bolted to the dirt near the manifolds. They suck the low-pressure gas out of the dying wells, violently compress it to 500 psi, and blast it into the trunkline, artificially pulling millions of cubic feet of gas out of the ground that would otherwise be permanently trapped.
+
+## 5. Gas Gathering & Pigging Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "wells", "data": { "label": "Multiple Gas Wells", "icon": "Flame", "description": "Small 2-inch flowlines carry raw, wet gas from individual scattered wells." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "manifold", "data": { "label": "Central Manifold", "icon": "GitMerge", "description": "Multiple flowlines merge together into larger branches." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "compressor", "data": { "label": "Field Compressor", "icon": "Activity", "description": "Sucks low-pressure gas from dying wells and violently blasts it to 500 psi." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "trunkline", "data": { "label": "Trunkline (Two-Phase Flow)", "icon": "Waves", "description": "Massive 24-inch pipe. Gas cools, causing liquid water and NGLs to condense and pool." }, "style": { "background": "#1e293b", "color": "#cbd5e1" } },
+    { "id": "pig", "data": { "label": "Pig Launcher", "icon": "Cylinder", "description": "A massive rubber bullet is launched down the trunkline to squeegee out the liquid pools." }, "style": { "background": "#0c4a6e", "color": "#e0f2fe" } },
+    { "id": "slug", "data": { "label": "Slug Catcher", "icon": "Database", "description": "Massive pipes at the plant entrance safely receive the violent, multi-ton slug of liquid pushed by the pig." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "plant", "data": { "label": "Gas Processing Plant", "icon": "Factory", "description": "The separated, dry gas enters the plant for chemical sweetening." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "wells", "target": "manifold", "animated": true },
+    { "source": "manifold", "target": "compressor", "animated": true },
+    { "source": "compressor", "target": "trunkline", "animated": true },
+    { "source": "trunkline", "target": "pig", "animated": true },
+    { "source": "pig", "target": "slug", "animated": true, "style": { "stroke": "#3b82f6", "strokeWidth": 2 }, "label": "Liquid Slug" },
+    { "source": "slug", "target": "plant", "animated": true }
+  ]
+}
+```

@@ -66,3 +66,24 @@ The AOF is the theoretical maximum flow rate the well could ever possibly achiev
 $$ AOF = C (P_R^2 - 0^2)^n = C (P_R^2)^n $$
 
 The AOF is a legally and financially critical number. Oil companies use the AOF to legally report the size and capability of their gas wells to government regulators and investors.
+
+## 5. Flow-After-Flow Test Workflow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "shutin", "data": { "label": "Shut-In Phase", "icon": "Lock", "description": "Well closed. Pressure builds up to Average Reservoir Pressure (PR)." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "rate1", "data": { "label": "Flow Rate 1", "icon": "Gauge", "description": "Small choke. Record stable flow rate (q1) and flowing pressure (Pwf1)." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "rate2", "data": { "label": "Flow Rates 2, 3, 4", "icon": "Activity", "description": "Increasingly larger choke sizes. Record resulting rates and pressures." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "graph", "data": { "label": "Log-Log Plot", "icon": "LineChart", "description": "Plot data to find straight line. Slope = 1/n. Intercept = C." }, "style": { "background": "#1e293b", "color": "#cbd5e1" } },
+    { "id": "aof", "data": { "label": "Calculate AOF", "icon": "Flame", "description": "Use C and n to mathematically predict maximum flow if Pwf was 0." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } }
+  ],
+  "edges": [
+    { "source": "shutin", "target": "rate1", "animated": true },
+    { "source": "rate1", "target": "rate2", "animated": true },
+    { "source": "rate2", "target": "graph", "animated": true },
+    { "source": "graph", "target": "aof", "animated": true, "style": { "stroke": "#ef4444" } }
+  ]
+}
+```

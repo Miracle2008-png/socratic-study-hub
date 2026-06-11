@@ -40,3 +40,22 @@ The engineering value chain consists of four rigid steps:
 2.  **Processing (The Gas Plant):** The raw gas is routed to a massive chemical plant. The toxic water, $H_2S$, and $CO_2$ are chemically stripped out. The valuable heavy liquid NGLs (Propane/Butane) are frozen out and sold separately.
 3.  **Compression and Transmission:** The pure, dry Methane is routed into massive, 3-foot diameter cross-country pipelines. Because friction slows the gas down, massive 20,000-horsepower compressor stations are built every 100 miles to violently re-pressurize the gas and keep it moving at 20 mph.
 4.  **Distribution:** The gas reaches a city "City Gate." The pressure is drastically dropped from 1,000 psi down to a safe 3 psi, and the gas is distributed through tiny plastic pipes into residential homes and power plants.
+
+## 4. Natural Gas Value Chain
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "well", "data": { "label": "Production Well", "icon": "Flame", "description": "Raw gas expands out of the rock pores and flows to the surface." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "plant", "data": { "label": "Gas Processing Plant", "icon": "Factory", "description": "Strips out toxic H2S, water, and freezes out valuable NGLs (Propane/Butane)." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "compressor", "data": { "label": "Transmission Compressor", "icon": "Activity", "description": "Massive 20,000 HP engines re-pressurize the dry gas to 1,000 psi to push it across the country." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "distribution", "data": { "label": "City Gate Distribution", "icon": "Home", "description": "Pressure dropped to 3 psi. Gas distributed to residential homes and power plants." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "well", "target": "plant", "animated": true },
+    { "source": "plant", "target": "compressor", "animated": true },
+    { "source": "compressor", "target": "distribution", "animated": true }
+  ]
+}
+```

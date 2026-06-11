@@ -40,3 +40,34 @@ Each column in the train relies on precise boiling points to boil off one specif
 4.  **Natural Gasoline:** Whatever heavy liquid remains at the bottom of the Debutanizer (Pentanes, $C_5+$) is called Natural Gasoline or Condensate. It is piped to an oil refinery to be blended into automobile fuel.
 
 By using extreme cold to drop the liquids out, and then extreme heat to boil them apart, the natural gas engineer transforms a chaotic, explosive vapor into five distinct, highly profitable, ultra-pure chemical commodities.
+
+## 3. Cryogenic NGL Fractionation Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "wet", "data": { "label": "Wet Gas", "icon": "Cloud", "description": "High-pressure gas containing Methane, Ethane, Propane, and Butane." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "turbo", "data": { "label": "Turboexpander", "icon": "Wind", "description": "Violently drops pressure, instantly crashing the temperature to -120°F." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "demeth", "data": { "label": "Demethanizer", "icon": "SplitSquareVertical", "description": "Separates the dry Methane gas from the freezing Y-Grade liquid." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "methane", "data": { "label": "Residue Gas (Methane)", "icon": "CloudFog", "description": "Pure C1 gas sent to the city pipeline." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "deeth", "data": { "label": "Deethanizer", "icon": "SplitSquareVertical", "description": "Boils off the pure Ethane (C2)." }, "style": { "background": "#1e293b", "color": "#cbd5e1" } },
+    { "id": "ethane", "data": { "label": "Ethane (C2)", "icon": "Zap", "description": "Sold to petrochemical plants to make plastics." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "deprop", "data": { "label": "Depropanizer", "icon": "SplitSquareVertical", "description": "Boils off the pure Propane (C3)." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "propane", "data": { "label": "Propane (C3)", "icon": "Flame", "description": "Liquid LPG sold for heating and cooking." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "debut", "data": { "label": "Debutanizer", "icon": "SplitSquareVertical", "description": "Separates the Butane (C4) from the Natural Gasoline (C5+)." }, "style": { "background": "#1e293b", "color": "#cbd5e1" } },
+    { "id": "gasoline", "data": { "label": "Natural Gasoline (C5+)", "icon": "Fuel", "description": "Heavy liquid condensate sold to oil refineries." }, "style": { "background": "#1c1917", "color": "#a8a29e" } }
+  ],
+  "edges": [
+    { "source": "wet", "target": "turbo", "animated": true },
+    { "source": "turbo", "target": "demeth", "animated": true },
+    { "source": "demeth", "target": "methane", "animated": true },
+    { "source": "demeth", "target": "deeth", "animated": true, "style": { "stroke": "#3b82f6" }, "label": "Y-Grade Liquid" },
+    { "source": "deeth", "target": "ethane", "animated": true },
+    { "source": "deeth", "target": "deprop", "animated": true, "style": { "stroke": "#3b82f6" } },
+    { "source": "deprop", "target": "propane", "animated": true },
+    { "source": "deprop", "target": "debut", "animated": true, "style": { "stroke": "#3b82f6" } },
+    { "source": "debut", "target": "gasoline", "animated": true }
+  ]
+}
+```

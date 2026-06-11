@@ -40,4 +40,23 @@ Instead of physically crushing the gas, it uses kinetic energy and extreme veloc
 
 The compressor is just the pump. It must be turned by a massive motor (the Driver).
 *   **Reciprocating Compressors** are almost always driven by massive, 5,000-horsepower V16 natural gas engines. They literally steal a tiny fraction of the gas from the pipeline to fuel the engine.
-*   **Centrifugal Compressors** spin too fast for a standard engine. They are driven by massive Electric Motors or incredibly powerful Gas Turbines (jet engines bolted to the ground).
+## 4. Compressor Application Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "well", "data": { "label": "Low Pressure Well", "icon": "Flame", "description": "Dying well producing small, variable amounts of gas." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "recip", "data": { "label": "Reciprocating Compressor", "icon": "Activity", "description": "Brute-force steel pistons handle variable flow and boost pressure to 500 psi." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "plant", "data": { "label": "Gas Processing Plant", "icon": "Factory", "description": "Cleans and dehydrates the massive combined volume of gas." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "centrif", "data": { "label": "Centrifugal Compressor", "icon": "Fan", "description": "Spinning aerodynamic turbine blasts massive, steady volumes of gas to 1000 psi." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "pipeline", "data": { "label": "Transmission Pipeline", "icon": "TrendingUp", "description": "High-velocity, steady flow across the country." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "well", "target": "recip", "animated": true },
+    { "source": "recip", "target": "plant", "animated": true },
+    { "source": "plant", "target": "centrif", "animated": true },
+    { "source": "centrif", "target": "pipeline", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```
