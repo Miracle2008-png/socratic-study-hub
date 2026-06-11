@@ -1,0 +1,50 @@
+# Atmospheric and Vacuum Distillation
+
+The absolute first step in any petroleum refinery is the physical separation of the raw crude oil into its component parts (fractions). No chemical bonds are broken here. This is pure thermodynamics and gravity, executed by the most iconic structures in a refinery: the massive **Distillation Columns**.
+
+## 1. The Desalter (The Pre-Wash)
+
+Before the oil can enter the distillation tower, it must be washed. 
+Crude oil arriving from the oilfield is contaminated with microscopic droplets of highly concentrated saltwater brine. If this salt enters the $700^\circ\text{F}$ furnaces of the refinery, it will violently crystallize, form hydrochloric acid, and completely eat through the massive steel pipes in a matter of weeks.
+
+The raw oil is pumped into a massive vessel called a **Desalter**. Fresh water is mixed into the oil, and a massive 20,000-volt electrostatic grid violently rips the saltwater droplets out of the crude. The clean, salt-free oil proceeds to the furnace.
+
+## 2. The Atmospheric Distillation Unit (ADU)
+
+The clean crude oil is pumped through a roaring, natural-gas-fired furnace and heated to exactly **$700^\circ\text{F}$ ($370^\circ\text{C}$)**. 
+At this extreme temperature, roughly 60% of the crude oil instantly vaporizes into a boiling gas. The remaining 40% (the heavy stuff) remains a thick liquid.
+
+This chaotic, boiling mixture is blasted into the bottom of a massive, 150-foot-tall steel tower: the **Atmospheric Distillation Unit (ADU)**.
+
+### The Physics of the Tower
+The inside of the tower is not empty. It is packed with dozens of horizontal steel plates (Fractionation Trays). 
+The tower operates on a strict temperature gradient:
+*   The bottom of the tower is blazing hot ($700^\circ\text{F}$).
+*   The top of the tower is relatively cool ($100^\circ\text{F}$).
+
+### The Sorting Process
+As the hot vapor blasts into the bottom of the tower, it naturally floats upward toward the cool ceiling. 
+As the vapor rises, it cools down. When a specific hydrocarbon molecule reaches a tray that is colder than its unique boiling point, it instantly condenses back into a liquid and pools on that specific tray.
+
+1.  **Top of the Tower ($100^\circ\text{F}$):** Only the lightest gases (Propane, Butane) survive the journey to the top without condensing. They exit as a gas.
+2.  **Upper Trays ($250^\circ\text{F}$):** The Naphtha (raw gasoline) condenses here. A pipe draws this liquid off the side of the tower.
+3.  **Middle Trays ($400^\circ\text{F}$):** The Kerosene (Jet Fuel) condenses here.
+4.  **Lower Trays ($550^\circ\text{F}$):** The heavy Diesel fuel condenses here.
+5.  **The Bottom ($700^\circ\text{F}$):** The incredibly heavy, complex hydrocarbons that refused to boil in the furnace simply fall to the bottom of the tower as a thick, black liquid. This is the **Atmospheric Residue**.
+
+## 3. The Vacuum Distillation Unit (VDU)
+
+The Atmospheric Residue pooling at the bottom of the ADU is a massive problem. It makes up 40% of the barrel, but it is too thick to use as fuel, and too valuable to throw away. It is packed with heavy Gas Oils that could be cracked into gasoline.
+
+*Why not just turn the furnace up to $1,000^\circ\text{F}$ to boil it?*
+Because of **Thermal Cracking (Coking)**. If you heat crude oil past $750^\circ\text{F}$ at normal atmospheric pressure, the massive heat violently shatters the molecules randomly. The oil literally burns and turns into solid, rock-hard carbon (Coke), instantly plugging the massive steel pipes solid.
+
+**The Solution: A Vacuum.**
+According to the laws of thermodynamics, if you drastically lower the pressure of a system, you drastically lower the boiling point of the liquids inside it. (This is why water boils faster at the top of Mount Everest).
+
+The Atmospheric Residue is pumped into a second, much wider, incredibly reinforced tower: the **Vacuum Distillation Unit (VDU)**.
+Massive steam ejectors on the roof of the tower suck all the air out, creating a massive, deep vacuum (operating at an absolute pressure of only 0.5 psi, near outer-space levels).
+
+Under this extreme vacuum, the heavy residue magically boils at only $700^\circ\text{F}$. 
+*   **Vacuum Gas Oil (VGO):** The valuable heavy oils boil off, float to the top of the vacuum tower, and are saved. This is the primary "food" for the cracking units.
+*   **Vacuum Residue:** The absolute heaviest, nastiest 10% of the oil (solid asphalt) refuses to boil even in a hard vacuum. It falls to the bottom to be sold as road pavement or sent to the Delayed Coker.
