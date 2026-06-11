@@ -47,3 +47,32 @@ The LP supercomputer violently crunches the math and outputs the absolute, mathe
 3.  *Shut down the Benzene extraction unit; the price of plastics just crashed in Asia, so blend all the Aromatics directly into the Premium Gasoline pool instead.*
 
 By constantly adjusting temperatures, pressures, and routing valves to chase the highest global profit margins, a well-run refinery maximizes the value of every single microscopic hydrocarbon molecule, generating massive profits while fueling the modern world.
+
+## 3. The Aromatics Complex Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "reformate", "data": { "label": "Catalytic Reformate", "icon": "Hexagon", "description": "High-octane liquid from the Reformer, packed with Benzene, Toluene, and Xylene (BTX)." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "extraction", "data": { "label": "Solvent Extraction", "icon": "Filter", "description": "Uses Sulfolane solvent to magnetically pull the Aromatics away from the straight-chain paraffins." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "benzene", "data": { "label": "Pure Benzene", "icon": "Diamond", "description": "The simplest aromatic ring. Sold to make Nylon and Polystyrene." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "toluene", "data": { "label": "Toluene", "icon": "Hexagon", "description": "Lower-value aromatic. Can be sold as solvent or routed to the TDP unit." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "tdp", "data": { "label": "TDP Unit", "icon": "RefreshCw", "description": "Toluene Disproportionation. Magically converts two Toluene molecules into Benzene and Xylene." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } },
+    { "id": "xylene", "data": { "label": "Mixed Xylenes", "icon": "Hexagon", "description": "A mix of Ortho, Meta, and Para Xylenes." }, "style": { "background": "#1e293b", "color": "#f8fafc" } },
+    { "id": "crystal", "data": { "label": "Cryo Crystallizer", "icon": "Snowflake", "description": "Freezes the mixed xylenes to isolate the highly valuable Para-Xylene." }, "style": { "background": "#0c4a6e", "color": "#e0f2fe" } },
+    { "id": "pxylene", "data": { "label": "Pure Para-Xylene", "icon": "Diamond", "description": "The ultimate building block for PET plastic water bottles and polyester clothing." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "reformate", "target": "extraction", "animated": true },
+    { "source": "extraction", "target": "benzene", "animated": true },
+    { "source": "extraction", "target": "toluene", "animated": true },
+    { "source": "extraction", "target": "xylene", "animated": true },
+    { "source": "toluene", "target": "tdp", "animated": true },
+    { "source": "tdp", "target": "benzene", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "tdp", "target": "xylene", "animated": true, "style": { "stroke": "#10b981" } },
+    { "source": "xylene", "target": "crystal", "animated": true },
+    { "source": "crystal", "target": "pxylene", "animated": true }
+  ]
+}
+```

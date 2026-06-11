@@ -40,4 +40,32 @@ To separate this gas soup into ultra-pure chemicals, the plant uses a massive "C
 *   **The Deethanizer:** The remaining liquid is warmed slightly. The $C_2$ molecules (Ethane and Ethylene) boil off the top.
 *   **The Splitter:** The $C_2$ stream is incredibly difficult to separate. The Ethane and Ethylene are pumped into a massive, 200-foot-tall "C2 Splitter" tower containing over 100 trays. Using massive amounts of reflux energy, the pure, 99.9% Ethylene finally boils off the top and is piped directly to the plastics plant. The unreacted Ethane falls to the bottom and is routed directly back to the $1,550^\circ\text{F}$ furnace to be shocked again.
 
-A modern world-class Steam Cracker is an engineering titan. It consumes as much electricity as a small city, costs \$5 Billion to build, and violently manufactures millions of tons of pure Ethylene every year, feeding the insatiable global demand for modern plastics.
+A modern world-class Steam Cracker is an engineering titan. It consumes as much electricity as a small city, costs $5 Billion to build, and violently manufactures millions of tons of pure Ethylene every year, feeding the insatiable global demand for modern plastics.
+
+## 4. Steam Cracking Process Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "feed", "data": { "label": "Ethane Feed + Steam", "icon": "Droplet", "description": "Saturated paraffin gas mixed with steam to lower partial pressure." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "furnace", "data": { "label": "Radiant Furnace (1550°F)", "icon": "Flame", "description": "0.1 second residence time. Brute force thermal shock rips hydrogen off, forming double bonds." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "quench", "data": { "label": "Quench Tower", "icon": "Snowflake", "description": "Instantly blasts the gas with cold water/oil to freeze the reaction and prevent total destruction." }, "style": { "background": "#0c4a6e", "color": "#e0f2fe" } },
+    { "id": "compress", "data": { "label": "Cryogenic Chilling", "icon": "ThermometerSnowflake", "description": "Massive compressors and refrigeration systems chill the gas down to -250°F." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "demeth", "data": { "label": "Demethanizer", "icon": "SplitSquareVertical", "description": "First cryogenic tower. Methane and Hydrogen boil off the top to be used as furnace fuel." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "splitter", "data": { "label": "C2 Splitter", "icon": "SplitSquareVertical", "description": "Massive 200-foot tower. Excruciatingly difficult separation of Ethane and Ethylene." }, "style": { "background": "#1e293b", "color": "#f8fafc" } },
+    { "id": "recycle", "data": { "label": "Ethane Recycle", "icon": "RefreshCw", "description": "Unreacted Ethane from the bottom of the splitter is routed back to the furnace." }, "style": { "background": "#164e63", "color": "#cffafe" } },
+    { "id": "ethylene", "data": { "label": "99.9% Pure Ethylene", "icon": "Zap", "description": "The final, ultra-pure primary petrochemical building block. Sent to plastics factories." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "feed", "target": "furnace", "animated": true },
+    { "source": "furnace", "target": "quench", "animated": true },
+    { "source": "quench", "target": "compress", "animated": true },
+    { "source": "compress", "target": "demeth", "animated": true },
+    { "source": "demeth", "target": "splitter", "animated": true },
+    { "source": "splitter", "target": "recycle", "animated": true, "style": { "stroke": "#0ea5e9" } },
+    { "source": "recycle", "target": "furnace", "animated": true, "style": { "stroke": "#0ea5e9" } },
+    { "source": "splitter", "target": "ethylene", "animated": true }
+  ]
+}
+```

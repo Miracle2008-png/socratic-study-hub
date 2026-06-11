@@ -45,3 +45,33 @@ To feed the Hydrocracker, the refinery must build a massive **Steam Methane Refo
 *   The plant vents massive amounts of greenhouse gas ($CO_2$) into the atmosphere just to harvest the pure $H_2$ required by the Hydrocracker.
 
 The capital cost of building a 10-inch-thick 2,500 psi reactor, plus the cost of building a massive SMR Hydrogen plant, makes the Hydrocracker one of the most astronomically expensive investments a company can make. However, the ability to effortlessly convert the world's nastiest, heaviest crude oils into ultra-premium jet fuel makes it an indispensable tool for modern deep-conversion refineries.
+
+## 5. Hydrocracking Process Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "ng", "data": { "label": "Natural Gas (Methane)", "icon": "CloudFog", "description": "Feedstock for hydrogen production." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "smr", "data": { "label": "SMR Hydrogen Plant", "icon": "Zap", "description": "Steam Methane Reformer. Rips methane apart to produce pure, high-pressure Hydrogen gas." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "vgo", "data": { "label": "VGO Feed", "icon": "Droplet", "description": "Heavy Vacuum Gas Oil pumped from the distillation towers." }, "style": { "background": "#020617", "color": "#94a3b8" } },
+    { "id": "reactor", "data": { "label": "High-Pressure Reactor", "icon": "Database", "description": "10-inch thick steel vessel operating at 2,500 psi and 800°F. Dual-function catalyst cracks and hydrogenates." }, "style": { "background": "#1e1b4b", "color": "#e0e7ff" } },
+    { "id": "quench", "data": { "label": "Cold H2 Quench", "icon": "Snowflake", "description": "Massive blasts of cold hydrogen gas injected directly into the reactor to stop temperature runaway." }, "style": { "background": "#0c4a6e", "color": "#e0f2fe" } },
+    { "id": "separator", "data": { "label": "High-Pressure Separator", "icon": "Filter", "description": "Separates the liquid products from the unreacted hydrogen gas so the H2 can be recycled." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "recycle", "data": { "label": "H2 Recycle Compressor", "icon": "RefreshCw", "description": "Pumps the unreacted hydrogen gas back up to 2,500 psi to re-enter the reactor." }, "style": { "background": "#164e63", "color": "#cffafe" } },
+    { "id": "fractionator", "data": { "label": "Product Fractionator", "icon": "SplitSquareVertical", "description": "Distillation tower that separates the saturated liquid into Jet Fuel and Ultra-Clean Diesel." }, "style": { "background": "#0f172a", "color": "#f8fafc" } },
+    { "id": "products", "data": { "label": "Premium Jet & Diesel", "icon": "Plane", "description": "100% saturated, zero-sulfur, high-cetane premium fuels ready for market." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "ng", "target": "smr", "animated": true },
+    { "source": "smr", "target": "reactor", "animated": true },
+    { "source": "vgo", "target": "reactor", "animated": true },
+    { "source": "quench", "target": "reactor", "animated": true, "style": { "stroke": "#38bdf8", "strokeDasharray": "5,5" } },
+    { "source": "reactor", "target": "separator", "animated": true },
+    { "source": "separator", "target": "recycle", "animated": true },
+    { "source": "recycle", "target": "reactor", "animated": true, "style": { "stroke": "#22d3ee" } },
+    { "source": "separator", "target": "fractionator", "animated": true },
+    { "source": "fractionator", "target": "products", "animated": true }
+  ]
+}
+```

@@ -48,3 +48,28 @@ The Petroleum Coke boulders are scooped up by bulldozers, loaded onto trains, an
 
 The Coker itself is incredibly expensive and terrifying to operate, but it is the ultimate economic weapon. 
 A refinery with a Delayed Coker (a "Deep Conversion Refinery") can buy the absolute cheapest, nastiest, heaviest tar in the world for pennies on the dollar, completely destroy the tar in the Coker, and magically extract millions of barrels of high-value gasoline and diesel, maximizing the profit of every single drop of crude oil.
+
+## 5. Delayed Coking Process Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "residue", "data": { "label": "Vacuum Residue", "icon": "Droplet", "description": "Rock-hard, toxic black tar from the very bottom of the Vacuum Tower." }, "style": { "background": "#020617", "color": "#94a3b8" } },
+    { "id": "furnace", "data": { "label": "High-Velocity Furnace", "icon": "Flame", "description": "Heats the tar to 950°F so fast that it doesn't have time to solidify in the pipes (Delayed reaction)." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "drum_a", "data": { "label": "Coke Drum A (Filling)", "icon": "Database", "description": "Massive 100-foot empty silo. The tar violently boils and cracks inside, filling the drum with solid carbon." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "drum_b", "data": { "label": "Coke Drum B (Decoking)", "icon": "Droplets", "description": "The offline drum. A 4,000 psi water drill is slicing the solid rock-hard carbon out of the drum." }, "style": { "background": "#1e293b", "color": "#cbd5e1" } },
+    { "id": "fractionator", "data": { "label": "Coker Fractionator", "icon": "SplitSquareVertical", "description": "The valuable vapors boiling out of Drum A are collected and separated into Naphtha and Gas Oil." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "coke", "data": { "label": "Petroleum Coke", "icon": "Box", "description": "Hundreds of tons of solid black carbon boulders falling out of Drum B, to be sold as cheap coal." }, "style": { "background": "#1c1917", "color": "#a8a29e" } },
+    { "id": "liquids", "data": { "label": "Coker Liquids", "icon": "Fuel", "description": "Highly unsaturated liquids that MUST be sent to the Hydrotreater before they can be sold." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "residue", "target": "furnace", "animated": true },
+    { "source": "furnace", "target": "drum_a", "animated": true },
+    { "source": "furnace", "target": "drum_b", "animated": true, "style": { "stroke": "#475569", "strokeDasharray": "5,5" }, "label": "Offline" },
+    { "source": "drum_a", "target": "fractionator", "animated": true, "label": "Vapors" },
+    { "source": "drum_b", "target": "coke", "animated": true, "label": "Solid Rock" },
+    { "source": "fractionator", "target": "liquids", "animated": true }
+  ]
+}
+```

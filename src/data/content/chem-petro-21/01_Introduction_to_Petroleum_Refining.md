@@ -41,3 +41,24 @@ Refineries are categorized by their **Complexity Index**:
 *   **Coking Refinery (Deep Conversion):** The ultimate, multi-billion dollar super-refinery. It contains massive Delayed Cokers. It can take the absolute heaviest, nastiest, rock-solid tar from Canada or Venezuela and completely destroy it, converting 100% of the barrel into high-value clean gasoline and diesel, leaving behind only solid carbon dust (coke). 
 
 The rest of this curriculum will walk through exactly how each of these massive chemical units operates.
+
+## 5. Refinery Macro-Process Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "crude", "data": { "label": "Raw Crude Oil", "icon": "Droplet", "description": "Unprocessed petroleum containing a mix of all hydrocarbon lengths and toxic impurities." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "sep", "data": { "label": "Separation", "icon": "SplitSquareVertical", "description": "Physical sorting by boiling point (Distillation). No chemical bonds are broken." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "conv", "data": { "label": "Conversion", "icon": "Hammer", "description": "Chemical alteration (Cracking, Reforming). Heavy asphalt is smashed into light gasoline." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "treat", "data": { "label": "Treatment", "icon": "ShieldCheck", "description": "Hydrotreating. High-pressure hydrogen is used to rip sulfur and nitrogen atoms out of the fuel." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "prod", "data": { "label": "Clean Products", "icon": "Fuel", "description": "Final ultra-low sulfur gasoline, diesel, and jet fuel ready for market." }, "style": { "background": "#1e293b", "color": "#f8fafc" } }
+  ],
+  "edges": [
+    { "source": "crude", "target": "sep", "animated": true },
+    { "source": "sep", "target": "conv", "animated": true },
+    { "source": "conv", "target": "treat", "animated": true },
+    { "source": "treat", "target": "prod", "animated": true }
+  ]
+}
+```

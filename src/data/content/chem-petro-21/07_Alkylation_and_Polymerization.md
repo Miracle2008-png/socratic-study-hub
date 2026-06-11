@@ -48,3 +48,26 @@ The acid forces the double bonds to link together, forming a longer chain.
 The resulting liquid is called "Poly-Gasoline."
 *   **The Advantage:** It is a very cheap way to turn waste gas into liquid fuel.
 *   **The Disadvantage:** Because you stitched two Olefins together, the resulting liquid is *still* an Olefin. It contains a double bond. Olefins are chemically unstable. If you put poly-gasoline in a car's gas tank and let it sit for 6 months, the double bonds will react with oxygen and form a thick, sticky, brown plastic gum that will permanently destroy the fuel injectors. To prevent this, refineries must heavily dose the poly-gasoline with expensive chemical antioxidants before selling it.
+
+## 3. Gas Upgrading Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "olefin", "data": { "label": "FCC Waste Olefin Gas", "icon": "CloudFog", "description": "Highly reactive, double-bonded C3 and C4 gas that would otherwise be wasted." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "iso", "data": { "label": "Isobutane Gas", "icon": "Cloud", "description": "A specific isoparaffin gas required for Alkylation." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "alky_rx", "data": { "label": "Alkylation Reactor", "icon": "FlaskConical", "description": "Lethal liquid acid (HF or H2SO4) violently forces the Olefin and Isobutane to fuse." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "poly_rx", "data": { "label": "Polymerization Reactor", "icon": "Layers", "description": "Solid Phosphoric acid forces two Olefin gases to fuse together." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "alkylate", "data": { "label": "Alkylate (Perfect Fuel)", "icon": "ShieldCheck", "description": "Astronomical octane, 100% saturated, zero sulfur, liquid gasoline. The crown jewel." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "poly", "data": { "label": "Poly-Gasoline", "icon": "AlertTriangle", "description": "Cheap liquid gasoline, but highly unstable. Will turn into sticky plastic gum if not treated with antioxidants." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "olefin", "target": "alky_rx", "animated": true },
+    { "source": "iso", "target": "alky_rx", "animated": true },
+    { "source": "olefin", "target": "poly_rx", "animated": true },
+    { "source": "alky_rx", "target": "alkylate", "animated": true },
+    { "source": "poly_rx", "target": "poly", "animated": true, "style": { "stroke": "#f59e0b" } }
+  ]
+}
+```

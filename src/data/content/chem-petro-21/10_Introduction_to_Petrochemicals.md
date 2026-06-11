@@ -44,3 +44,24 @@ The petrochemical industry is a massive, cascading value chain that exponentiall
 5.  **Consumer Product:** A manufacturing plant melts the PVC pellets and molds them into high-strength white PVC plumbing pipes sold at a hardware store. The final value of that original barrel of Ethane is now \$1,000.
 
 The Petrochemical Industry takes cheap, combustible hydrocarbons and uses brilliant, aggressive chemistry to forge the physical architecture of the modern world.
+
+## 4. The Petrochemical Value Chain
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "feed", "data": { "label": "Raw Feedstock", "icon": "Droplet", "description": "Ethane gas or Naphtha extracted from the refinery. Value: $15/barrel." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "primary", "data": { "label": "Primary Petrochemical", "icon": "Zap", "description": "Steam cracking produces pure Ethylene gas. Value jumps to $50." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "inter", "data": { "label": "Intermediate Chemical", "icon": "FlaskConical", "description": "Reacted with Chlorine to form Vinyl Chloride Monomer (VCM). Value jumps to $150." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "polymer", "data": { "label": "Polymer Resin", "icon": "Blocks", "description": "Polymerized into solid white PVC plastic pellets. Value jumps to $300." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "product", "data": { "label": "Consumer Product", "icon": "Wrench", "description": "Molded into high-strength PVC plumbing pipes. Final value: $1,000+." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "feed", "target": "primary", "animated": true },
+    { "source": "primary", "target": "inter", "animated": true },
+    { "source": "inter", "target": "polymer", "animated": true },
+    { "source": "polymer", "target": "product", "animated": true }
+  ]
+}
+```

@@ -49,3 +49,28 @@ The light, straight-chain Pentanes and Hexanes (terrible octane) are pumped over
 *   A terrible straight-chain normal-Pentane (Octane 61) is magically rearranged into a highly branched iso-Pentane (Octane 92).
 
 The liquid exiting the unit is called "Isomerate." It is an incredibly clean, high-octane, zero-sulfur, zero-aromatic blending component crucial for meeting strict modern environmental gasoline regulations.
+
+## 4. Naphtha Upgrading Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "naphtha", "data": { "label": "Raw Straight-Run Naphtha", "icon": "Droplet", "description": "Low octane straight-chain paraffins straight from the distillation tower." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "split", "data": { "label": "Naphtha Splitter", "icon": "SplitSquareVertical", "description": "Separates the naphtha by weight. Heavy goes to reforming, light goes to isomerization." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "reformer", "data": { "label": "Catalytic Reformer", "icon": "Flame", "description": "Platinum catalyst at 950°F bends heavy straight chains into high-octane Aromatic rings." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "isomerizer", "data": { "label": "Isomerization Unit", "icon": "Shuffle", "description": "Chloride/Zeolite catalyst shuffles light straight chains into highly branched isoparaffins." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "reformate", "data": { "label": "Reformate (Aromatics)", "icon": "Hexagon", "description": "100+ Octane blending stock packed with Benzene rings." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } },
+    { "id": "hydrogen", "data": { "label": "Hydrogen Gas (Byproduct)", "icon": "CloudFog", "description": "Massive volumes of H2 stripped off the rings, sent to the Hydrocracker." }, "style": { "background": "#0c4a6e", "color": "#e0f2fe" } },
+    { "id": "isomerate", "data": { "label": "Isomerate (Branches)", "icon": "GitBranch", "description": "92 Octane, zero-sulfur, highly branched blending stock." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "naphtha", "target": "split", "animated": true },
+    { "source": "split", "target": "reformer", "animated": true, "label": "Heavy (C7-C10)" },
+    { "source": "split", "target": "isomerizer", "animated": true, "label": "Light (C5-C6)" },
+    { "source": "reformer", "target": "reformate", "animated": true },
+    { "source": "reformer", "target": "hydrogen", "animated": true, "style": { "stroke": "#38bdf8", "strokeDasharray": "5,5" } },
+    { "source": "isomerizer", "target": "isomerate", "animated": true }
+  ]
+}
+```

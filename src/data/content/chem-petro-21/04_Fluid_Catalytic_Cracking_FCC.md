@@ -51,3 +51,29 @@ If you had to buy new catalyst every 3 seconds, the refinery would go bankrupt i
 5.  **The Loop:** This blazing hot, perfectly clean sand is funneled directly back into the bottom of the Riser reactor to violently smash into the next batch of heavy oil.
 
 Millions of tons of sand continuously flow in a massive, endless loop between the Reactor (cracking oil) and the Regenerator (burning carbon) 24 hours a day for 5 straight years without stopping.
+
+## 5. FCC Process Flow Diagram
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "vgo", "data": { "label": "VGO Feed", "icon": "Droplet", "description": "Heavy Vacuum Gas Oil pumped from the distillation towers." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "riser", "data": { "label": "Riser Reactor", "icon": "ArrowUpCircle", "description": "A vertical pipe where hot catalyst and oil vaporize and crack in exactly 3 seconds at 1000°F." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "cyclones", "data": { "label": "Reactor Cyclones", "icon": "Tornado", "description": "Mechanical cyclones at the top of the tower that use centrifugal force to separate the gasoline vapor from the solid catalyst sand." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "fractionator", "data": { "label": "Main Fractionator", "icon": "SplitSquareVertical", "description": "A distillation tower that separates the cracked vapors into high-octane FCC Gasoline, Light Cycle Oil (diesel), and fuel gas." }, "style": { "background": "#0f172a", "color": "#f8fafc" } },
+    { "id": "spent", "data": { "label": "Spent Catalyst", "icon": "ArrowDownCircle", "description": "Catalyst grains completely coated in solid carbon (coke) falling out of the cyclones, totally deactivated." }, "style": { "background": "#1c1917", "color": "#a8a29e" } },
+    { "id": "regen", "data": { "label": "Regenerator", "icon": "Flame", "description": "A massive 1400°F inferno where blasted air burns the solid carbon off the catalyst, cleaning it and heating it up." }, "style": { "background": "#991b1b", "color": "#fef2f2" } },
+    { "id": "regen_cat", "data": { "label": "Regenerated Catalyst", "icon": "Sparkles", "description": "Blazing hot, perfectly clean catalyst flowing back into the bottom of the Riser to smash into the next batch of oil." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "vgo", "target": "riser", "animated": true },
+    { "source": "regen_cat", "target": "riser", "animated": true },
+    { "source": "riser", "target": "cyclones", "animated": true },
+    { "source": "cyclones", "target": "fractionator", "animated": true },
+    { "source": "cyclones", "target": "spent", "animated": true, "style": { "stroke": "#78716c", "strokeDasharray": "5,5" } },
+    { "source": "spent", "target": "regen", "animated": true },
+    { "source": "regen", "target": "regen_cat", "animated": true, "style": { "stroke": "#ef4444" } }
+  ]
+}
+```

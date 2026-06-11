@@ -46,3 +46,26 @@ A car engine requires High-Octane fuel to prevent catastrophic engine knocking. 
 The laboratory chemists use advanced Gas Chromatography and Mass Spectrometry (GC-MS) to chemically identify every single molecule in the naphtha slice. This is the **PONA Analysis** (Paraffins, Olefins, Naphthenes, Aromatics).
 
 If the Assay reveals that the raw gasoline is 90% straight-chain paraffins, the refinery engineer knows it is garbage. They cannot sell it to a gas station. They must route it into a massive "Catalytic Reforming" unit, which uses Platinum catalysts to physically bend the straight molecules into high-octane rings before it can be legally sold as fuel.
+
+## 4. The Crude Assay Workflow
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "sample", "data": { "label": "Crude Oil Sample", "icon": "Droplet", "description": "A representative 5-gallon physical sample extracted directly from the oil tanker or pipeline." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "bulk", "data": { "label": "Bulk Property Testing", "icon": "Scale", "description": "Rapid physical tests determining the API Gravity (density) and total Sulfur content. Dictates the financial market price." }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "tbp", "data": { "label": "True Boiling Point (TBP) Distillation", "icon": "Thermometer", "description": "A multi-day, highly controlled laboratory boil that maps exactly what percentage of the oil evaporates at specific temperature ranges." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "fractions", "data": { "label": "Fraction Yields", "icon": "SplitSquareVertical", "description": "The TBP curve reveals the exact volume of Naphtha, Kerosene, Diesel, and Residue hidden inside the barrel." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "pona", "data": { "label": "PONA Analysis (GC-MS)", "icon": "Microscope", "description": "Advanced Gas Chromatography. Identifies the microscopic structure (Paraffins, Olefins, Naphthenes, Aromatics) to determine Octane ratings." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "model", "data": { "label": "Refinery LP Model", "icon": "Cpu", "description": "The massive supercomputer simulation. It uses the Assay data to calculate exactly how to configure the refinery valves for maximum billion-dollar profit." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } }
+  ],
+  "edges": [
+    { "source": "sample", "target": "bulk", "animated": true },
+    { "source": "bulk", "target": "tbp", "animated": true },
+    { "source": "tbp", "target": "fractions", "animated": true },
+    { "source": "fractions", "target": "pona", "animated": true },
+    { "source": "pona", "target": "model", "animated": true }
+  ]
+}
+```

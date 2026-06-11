@@ -44,4 +44,29 @@ Hydrotreating is not a one-size-fits-all operation. The "severity" (the pressure
 2.  **Diesel Fuel:** The molecules are long and complex. The sulfur atoms are often hidden deep inside massive, shielded aromatic rings (Sterically Hindered Thiophenes). To blast the Hydrogen deep enough into the molecule to rip the sulfur out, the Hydrotreater must operate at an aggressive 1,000 to 1,500 psi.
 3.  **Heavy Residue:** To hydrotreat the solid black tar from the bottom of the vacuum tower, the engineer must use an astronomical 2,500 psi of Hydrogen pressure.
 
-Because a modern refinery is forced by law to hydrotreat every single drop of fuel, the Hydrogen grid is the most critical utility in the plant. If the Steam Methane Reformer (SMR) breaks and the Hydrogen supply stops, the entire \$5 Billion refinery must instantly shut down.
+Because a modern refinery is forced by law to hydrotreat every single drop of fuel, the Hydrogen grid is the most critical utility in the plant. If the Steam Methane Reformer (SMR) breaks and the Hydrogen supply stops, the entire $5 Billion refinery must instantly shut down.
+
+## 4. Hydrotreating Process Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "sour", "data": { "label": "Sour Feedstock", "icon": "Biohazard", "description": "Raw diesel or naphtha packed with toxic sulfur and nitrogen molecules." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "h2", "data": { "label": "Hydrogen Gas (H2)", "icon": "CloudFog", "description": "High-pressure, pure hydrogen pumped from the SMR plant." }, "style": { "background": "#0c4a6e", "color": "#e0f2fe" } },
+    { "id": "furnace", "data": { "label": "Pre-Heat Furnace", "icon": "Flame", "description": "Heats the oil and gas mixture to exactly 650°F to initiate the reaction." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "reactor", "data": { "label": "HDS / HDN Reactor", "icon": "Database", "description": "Solid CoMo/NiMo catalyst violently rips the Sulfur and Nitrogen atoms out of the oil." }, "style": { "background": "#1e1b4b", "color": "#e0e7ff" } },
+    { "id": "separator", "data": { "label": "Gas/Liquid Separator", "icon": "Filter", "description": "Physically separates the newly formed toxic gases from the clean liquid fuel." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "sweet", "data": { "label": "Sweet Product", "icon": "ShieldCheck", "description": "Ultra-Low Sulfur Diesel (ULSD) or clean Naphtha ready for sale or reforming." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "h2s", "data": { "label": "H2S & NH3 Gas", "icon": "Skull", "description": "Highly toxic Hydrogen Sulfide and Ammonia gases routed to the Claus unit to be destroyed." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "sour", "target": "furnace", "animated": true },
+    { "source": "h2", "target": "furnace", "animated": true },
+    { "source": "furnace", "target": "reactor", "animated": true },
+    { "source": "reactor", "target": "separator", "animated": true },
+    { "source": "separator", "target": "sweet", "animated": true },
+    { "source": "separator", "target": "h2s", "animated": true, "style": { "stroke": "#f59e0b", "strokeDasharray": "5,5" } }
+  ]
+}
+```
