@@ -16,6 +16,7 @@ import { TextRank, ContentGenerator } from '../utils/nlpEngine';
 import { useGamification } from '../context/GamificationContext';
 import MindMap from './MindMap';
 import FocusMode from './FocusMode';
+import InteractiveDiagram from './InteractiveDiagram';
 
 interface TopicModuleProps {
   topicId: string;
@@ -455,6 +456,9 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
                     const isBlock = className?.includes('language');
                     if (className === 'language-drill') {
                       return <InteractiveDrill content={String(children)} />;
+                    }
+                    if (className === 'language-diagram') {
+                      return <InteractiveDiagram content={String(children)} />;
                     }
                     return isBlock
                       ? <code className="tm-code-block">{children}</code>

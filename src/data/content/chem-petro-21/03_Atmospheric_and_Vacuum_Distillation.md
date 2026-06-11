@@ -48,3 +48,37 @@ Massive steam ejectors on the roof of the tower suck all the air out, creating a
 Under this extreme vacuum, the heavy residue magically boils at only $700^\circ\text{F}$. 
 *   **Vacuum Gas Oil (VGO):** The valuable heavy oils boil off, float to the top of the vacuum tower, and are saved. This is the primary "food" for the cracking units.
 *   **Vacuum Residue:** The absolute heaviest, nastiest 10% of the oil (solid asphalt) refuses to boil even in a hard vacuum. It falls to the bottom to be sold as road pavement or sent to the Delayed Coker.
+
+## 4. Distillation Flow Diagram
+
+Explore the interactive flow diagram of the Atmospheric and Vacuum Distillation process below. Drag the nodes to rearrange them!
+
+```diagram
+{
+  "nodes": [
+    { "id": "1", "data": { "label": "Raw Crude Oil" }, "position": { "x": 0, "y": 150 }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "2", "data": { "label": "Desalter (Wash)" }, "position": { "x": 200, "y": 150 }, "style": { "background": "#0c4a6e", "color": "#e0f2fe" } },
+    { "id": "3", "data": { "label": "Furnace (700°F)" }, "position": { "x": 400, "y": 150 }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "4", "data": { "label": "Atmospheric Tower" }, "position": { "x": 600, "y": 150 }, "style": { "background": "#0f172a", "color": "#e2e8f0" } },
+    { "id": "5", "data": { "label": "Light Gases" }, "position": { "x": 800, "y": -50 }, "style": { "background": "#334155", "color": "#f8fafc" } },
+    { "id": "6", "data": { "label": "Naphtha / Kerosene" }, "position": { "x": 800, "y": 50 }, "style": { "background": "#1e293b", "color": "#f8fafc" } },
+    { "id": "7", "data": { "label": "Heavy Diesel" }, "position": { "x": 800, "y": 150 }, "style": { "background": "#0f172a", "color": "#f8fafc" } },
+    { "id": "8", "data": { "label": "Atmospheric Residue" }, "position": { "x": 600, "y": 300 }, "style": { "background": "#020617", "color": "#94a3b8" } },
+    { "id": "9", "data": { "label": "Vacuum Tower (0.5 psi)" }, "position": { "x": 800, "y": 300 }, "style": { "background": "#1e1b4b", "color": "#e0e7ff" } },
+    { "id": "10", "data": { "label": "Vacuum Gas Oil (VGO)" }, "position": { "x": 1050, "y": 250 }, "style": { "background": "#312e81", "color": "#e0e7ff" } },
+    { "id": "11", "data": { "label": "Vacuum Residue (Asphalt)" }, "position": { "x": 1050, "y": 350 }, "style": { "background": "#020617", "color": "#64748b" } }
+  ],
+  "edges": [
+    { "id": "e1-2", "source": "1", "target": "2", "animated": true },
+    { "id": "e2-3", "source": "2", "target": "3", "animated": true },
+    { "id": "e3-4", "source": "3", "target": "4", "animated": true },
+    { "id": "e4-5", "source": "4", "target": "5", "animated": true },
+    { "id": "e4-6", "source": "4", "target": "6", "animated": true },
+    { "id": "e4-7", "source": "4", "target": "7", "animated": true },
+    { "id": "e4-8", "source": "4", "target": "8", "animated": true },
+    { "id": "e8-9", "source": "8", "target": "9", "animated": true },
+    { "id": "e9-10", "source": "9", "target": "10", "animated": true },
+    { "id": "e9-11", "source": "9", "target": "11", "animated": true }
+  ]
+}
+```
