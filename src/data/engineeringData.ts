@@ -78,28 +78,10 @@ export const ENGINEERING_BRANCHES: Record<string, EngineeringBranch> = {
     description: 'Statics, dynamics, materials, and aerospace mechanics.',
     color: '#ef4444', // Red
     topics: [
-      { id: 'mech-aero-1', title: 'Engineering Statics & Equilibrium' },
-      { id: 'mech-aero-2', title: 'Trusses, Frames, and Machines' },
-      { id: 'mech-aero-3', title: 'Stress, Strain, and Axial Loading' },
-      { id: 'mech-aero-4', title: 'Torsion in Circular Shafts' },
-      { id: 'mech-aero-5', title: 'Bending & Shear in Beams' },
-      { id: 'mech-aero-6', title: 'Deflection of Beams' },
-      { id: 'mech-aero-7', title: '3D Stress States & Failure Theories' },
-      { id: 'mech-aero-8', title: 'Particle Kinematics & Kinetics' },
-      { id: 'mech-aero-9', title: 'Rigid Body Kinematics' },
-      { id: 'mech-aero-10', title: 'Rigid Body Kinetics' },
-      { id: 'mech-aero-11', title: 'Energy & Momentum Methods' },
-      { id: 'mech-aero-12', title: 'Mechanical Vibrations' },
-      { id: 'mech-aero-13', title: 'Multi-DOF Vibrations & Modal Analysis' },
-      { id: 'mech-aero-30', title: 'Aircraft Flight Mechanics' },
-      { id: 'mech-aero-31', title: 'Aircraft Stability & Control' },
-      { id: 'mech-aero-32', title: 'Jet Propulsion' },
-      { id: 'mech-aero-33', title: 'Rocket Propulsion & Nozzle Theory' },
-      { id: 'mech-aero-34', title: 'Orbital Mechanics' },
-      { id: 'mech-aero-35', title: 'Material Science' },
-      { id: 'mech-aero-36', title: 'Fatigue & Fracture Mechanics' },
-      { id: 'mech-aero-37', title: 'Machine Element Design' },
-      { id: 'mech-aero-38', title: 'Control Theory for Mechanical Systems' }
+      { id: 'mech-aero-1', title: 'Statics, Equilibrium & Particle Dynamics' },
+      { id: 'mech-aero-2', title: 'Rigid Body Dynamics & Vibrations' },
+      { id: 'mech-aero-3', title: 'Materials Science & Machine Design' },
+      { id: 'mech-aero-4', title: 'Aerospace Flight, Propulsion & Orbital Mechanics' }
     ]
   },
   'thermodynamics': {
