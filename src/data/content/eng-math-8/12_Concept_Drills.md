@@ -3,49 +3,59 @@
 Test your mastery of Vector Calculus. Select your answer to immediately reveal the worked mathematical correction.
 
 ```drill
-Question: For a 2D vector field $\mathbf{F} = P\mathbf{i} + Q\mathbf{j}$, what is the mathematical test to prove that the field is conservative?
+Question: For a 2D vector field $\mathbf{F} = P\mathbf{i} + Q\mathbf{j}$ representing water flow across a plane, what mathematical condition proves that the flow is perfectly "incompressible" (having no sources or sinks)?
 Options:
-A) $\frac{\partial P}{\partial x} = \frac{\partial Q}{\partial y}$
-B) $\frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}$
+A) $\frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}$
+B) $\nabla \times \mathbf{F} = \mathbf{0}$
 C) $\nabla \cdot \mathbf{F} = 0$
-D) $\frac{\partial P}{\partial y} + \frac{\partial Q}{\partial x} = 0$
-Answer: B
-Explanation: Due to Clairaut's Theorem of mixed partial derivatives, a field is the gradient of a potential function (conservative) if and only if $P_y = Q_x$. Option C describes an incompressible field (zero divergence), not necessarily a conservative one.
-```
-
-```drill
-Question: A particle travels in a complete, closed circle through a force field $\mathbf{F}$. If $\mathbf{F}$ is a conservative field, what is the total work done on the particle?
-Options:
-A) Zero
-B) $2\pi$
-C) It depends on the radius of the circle
-D) Equal to the area inside the circle
-Answer: A
-Explanation: The Fundamental Theorem of Line Integrals states that the work done in a conservative field is $f(\text{end}) - f(\text{start})$. If the path is a closed loop, the start and end points are identical, making the total work exactly zero.
-```
-
-```drill
-Question: Which theorem would you use to translate a 1D line integral around a circular loop into a 2D double integral over the flat disk inside the loop?
-Options:
-A) Stokes' Theorem
-B) The Divergence Theorem
-C) Green's Theorem
-D) Fubini's Theorem
+D) $\oint_C \mathbf{F} \cdot d\mathbf{r} = 0$
 Answer: C
-Explanation: Green's Theorem relates a line integral around a simple closed curve in a plane to a double integral over the plane region it encloses. Stokes' Theorem extends this to 3D surfaces, while the Divergence Theorem relates 2D closed surfaces to 3D volumes.
+Explanation: The divergence of a field ($\nabla \cdot \mathbf{F} = P_x + Q_y$) measures the rate at which fluid is generated or destroyed at a point. If the divergence is exactly zero everywhere, the fluid flow is called "incompressible" or solenoidal. This is the bedrock of the continuity equation in fluid mechanics. Options A, B, and D all describe a *conservative* (irrotational) field, not an incompressible one.
 ```
 
 ```drill
-Question: You are asked to find the outward flux of a vector field across the surface of a sealed, closed sphere. Which mathematical operation on the vector field should you perform to use the Divergence Theorem?
+Question: An electrical engineer uses an anemometer to measure wind velocity $\mathbf{v}$ through a circular wind turbine bounded by wire loop $C$. Which theorem translates the line integral of the wind's vorticity ($\nabla \times \mathbf{v}$) around the wire loop into the total wind flux passing through the turbine blades?
 Options:
-A) The Cross Product ($\text{curl} \mathbf{F}$)
-B) The Dot Product ($\text{div} \mathbf{F}$)
-C) The Gradient ($\nabla \mathbf{F}$)
-D) The Partial Derivative with respect to $z$
-Answer: B
-Explanation: The Divergence Theorem dictates that $\iint_S \mathbf{F} \cdot d\mathbf{S} = \iiint_E \text{div} \mathbf{F} \, dV$. The divergence operator is calculated via the dot product $\nabla \cdot \mathbf{F}$.
+A) Green's Theorem
+B) Fubini's Theorem
+C) The Divergence Theorem
+D) Stokes' Theorem
+Answer: D
+Explanation: Stokes' Theorem ($\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S}$) directly connects a 1D line integral around a boundary loop $C$ to the surface integral (flux) of the field's curl over any surface $S$ bounded by that loop. The turbine blades form exactly such a surface bounded by the circular frame.
 ```
 
+```drill
+Question: A mechanical engineer is calculating the total heat transfer rate (flux) escaping out of an entirely closed, sealed spherical pressure vessel. The heat flux vector field is $\mathbf{q}$. Which operation simplifies this difficult surface integral into a trivial volume integral?
+Options:
+A) $\iiint_E (\nabla \cdot \mathbf{q}) \, dV$
+B) $\iiint_E (\nabla \times \mathbf{q}) \, dV$
+C) $\iiint_E \nabla \mathbf{q} \, dV$
+D) $\iint_S (\nabla \cdot \mathbf{q}) \, dS$
+Answer: A
+Explanation: Because the sphere is a completely closed surface, the Divergence Theorem (Gauss's Theorem) applies perfectly. It states that the total outward flux over the closed surface $S$ equals the triple integral of the divergence ($\nabla \cdot \mathbf{q}$) over the solid volume $E$ enclosed by the sphere.
+```
+
+```drill
+Question: You are integrating a scalar function $f(x,y,z)$ over the curved surface of a cone $z = \sqrt{x^2+y^2}$ to find its total mass. Using the explicit shortcut $z = g(x,y)$, what is the correct formula for the differential area element $dS$?
+Options:
+A) $dS = |\mathbf{r}_u \times \mathbf{r}_v| \, du \, dv$
+B) $dS = (1 + g_x + g_y) \, dA$
+C) $dS = \sqrt{1 + (g_x)^2 + (g_y)^2} \, dA$
+D) $dS = (-g_x - g_y + 1) \, dA$
+Answer: C
+Explanation: The correct scalar shortcut is $dS = \sqrt{1 + (g_x)^2 + (g_y)^2} \, dA$. Option A is the general parametric form. Option D is the vector normal $\mathbf{n} \, dA$ used for *flux* integrals, not scalar mass integrals.
+```
+
+```drill
+Question: According to the identities of vector calculus, which of the following statements is unconditionally true for any smooth scalar function $f$ and vector field $\mathbf{F}$?
+Options:
+A) $\nabla \cdot (\nabla f) = 0$
+B) $\nabla \cdot (\nabla \times \mathbf{F}) = 0$
+C) $\nabla \times (\nabla \times \mathbf{F}) = \mathbf{0}$
+D) $\nabla \times \mathbf{F} = \nabla \cdot \mathbf{F}$
+Answer: B
+Explanation: The divergence of any curl is always identically zero ($\text{div}(\text{curl} \mathbf{F}) = 0$). This mathematical truth is why there are no magnetic monopoles in the universe: since $\mathbf{B}$ is generated by rotating currents ($\nabla \times \mathbf{A}$), its divergence $\nabla \cdot \mathbf{B}$ must be zero everywhere! Option A is the Laplacian $\nabla^2 f$, which is not necessarily zero.
+```
 
 ```diagram
 {
@@ -54,102 +64,64 @@ Explanation: The Divergence Theorem dictates that $\iint_S \mathbf{F} \cdot d\ma
     {
       "id": "1",
       "data": {
-        "label": "Concept Drills",
+        "label": "Concept Mastery",
         "icon": "BrainCircuit",
-        "description": "Topic: Concept Drills"
+        "description": "Final check on Vector Calculus."
       },
-      "style": {
-        "background": "#1e3a8a",
-        "color": "#dbeafe"
-      }
+      "style": { "background": "#1e3a8a", "color": "#dbeafe" }
     },
     {
       "id": "2",
       "data": {
-        "label": "Vector Fields (F)",
-        "icon": "FunctionSquare",
-        "description": "Assigning a vector to every point in space."
+        "label": "Divergence (∇·F)",
+        "icon": "Activity",
+        "description": "Measures sources/sinks. ∇·F = 0 means incompressible."
       },
-      "style": {
-        "background": "#4c1d95",
-        "color": "#ede9fe"
-      }
+      "style": { "background": "#4c1d95", "color": "#ede9fe" }
     },
     {
       "id": "3",
       "data": {
-        "label": "Line Integrals",
+        "label": "Curl (∇×F)",
         "icon": "Sigma",
-        "description": "Integrating a function or field along a curve C."
+        "description": "Measures rotation. ∇×F = 0 means conservative (irrotational)."
       },
-      "style": {
-        "background": "#b45309",
-        "color": "#fef3c7"
-      }
+      "style": { "background": "#b45309", "color": "#fef3c7" }
     },
     {
       "id": "4",
       "data": {
-        "label": "Conservative Fields",
-        "icon": "Activity",
-        "description": "Path independence where ∇ × F = 0."
+        "label": "Stokes' Theorem",
+        "icon": "Layers",
+        "description": "Converts 1D line integrals to 2D curl flux over open surfaces."
       },
-      "style": {
-        "background": "#14532d",
-        "color": "#dcfce7"
-      }
+      "style": { "background": "#14532d", "color": "#dcfce7" }
     },
     {
       "id": "5",
       "data": {
-        "label": "Curl (∇ × F)",
-        "icon": "Layers",
-        "description": "Measures the macroscopic rotation of the field."
+        "label": "Divergence Theorem",
+        "icon": "Wrench",
+        "description": "Converts 2D closed surface flux to 3D volume integrals of divergence."
       },
-      "style": {
-        "background": "#7f1d1d",
-        "color": "#fee2e2"
-      }
+      "style": { "background": "#7f1d1d", "color": "#fee2e2" }
     },
     {
       "id": "6",
       "data": {
-        "label": "Divergence (∇ · F)",
+        "label": "Curriculum Complete",
         "icon": "Target",
-        "description": "Measures the magnitude of a source or sink at a given point."
+        "description": "Proceed to validation."
       },
-      "style": {
-        "background": "#0f766e",
-        "color": "#ccfbf1"
-      }
+      "style": { "background": "#0f766e", "color": "#ccfbf1" }
     }
   ],
   "edges": [
-    {
-      "source": "1",
-      "target": "2",
-      "animated": true
-    },
-    {
-      "source": "2",
-      "target": "3",
-      "animated": true
-    },
-    {
-      "source": "3",
-      "target": "4",
-      "animated": true
-    },
-    {
-      "source": "4",
-      "target": "5",
-      "animated": true
-    },
-    {
-      "source": "5",
-      "target": "6",
-      "animated": true
-    }
+    {"source": "1", "target": "2", "animated": true},
+    {"source": "2", "target": "3", "animated": true},
+    {"source": "3", "target": "4", "animated": true},
+    {"source": "4", "target": "5", "animated": true},
+    {"source": "5", "target": "6", "animated": true}
   ]
 }
 ```

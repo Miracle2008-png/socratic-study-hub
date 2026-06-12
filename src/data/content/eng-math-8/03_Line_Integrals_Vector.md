@@ -1,65 +1,129 @@
-# 3. Line Integrals of Vector Fields (Work)
+# 3. Line Integrals of Vector Fields — Work
 
-While scalar line integrals are useful for finding the mass of a wire, integrating a **Vector Field** along a curve $C$ calculates a vital physics concept: **Work**.
+## The Concept of Work in a Force Field
 
-If $\mathbf{F}$ is a force field (like wind or gravity), and a particle moves along a path $C$, the total work done by the force field on the particle is the line integral of the tangential component of the force.
+In elementary physics, work = force × distance, but only when the force and displacement are parallel and constant. In reality, a spacecraft manoeuvring through Earth's non-uniform gravitational field, or an electron moving through a complex electric field, experiences a force that changes direction and magnitude at every point along its curved path.
 
-### Mathematical Definition
-$$ W = \int_C \mathbf{F} \cdot d\mathbf{r} $$
+The **vector line integral** handles this precisely: it integrates the **component of the force along the direction of motion** over every infinitesimal segment of the path. The result is the total work done by the field.
 
-Notice the dot product! We are dotting the force vector $\mathbf{F}$ with the displacement vector $d\mathbf{r}$. 
-*   If the force pushes *with* your motion, work is positive.
-*   If the force pushes *against* your motion, work is negative.
-*   If the force is completely *perpendicular* to your motion, it does zero work.
+**Engineering applications:**
+- **Aerospace:** Work done by aerodynamic lift and drag along a curved flight path
+- **Electromagnetics:** Work done by the electric field on a charge moving between two electrodes (= voltage × charge)
+- **Mechanical engineering:** Work done by a variable clamping force along a curved tool path in CNC machining
+- **Robotics:** Energy consumed by a robot arm as it traces a curved welding trajectory through a magnetic field
 
-### How to Evaluate Vector Line Integrals
-The process is very similar to scalar line integrals.
+---
 
-**Step 1: Parameterize the Curve**
-$$ \mathbf{r}(t) = \langle x(t), y(t) \rangle \quad \text{for} \quad a \le t \le b $$
+## Mathematical Definition
 
-**Step 2: Find the Derivative Vector ($d\mathbf{r}$)**
-Instead of finding the magnitude $ds$, simply take the derivative vector and multiply by $dt$.
-$$ \mathbf{r}'(t) = \langle x'(t), y'(t) \rangle \implies d\mathbf{r} = \mathbf{r}'(t)dt $$
+If $\mathbf{F}$ is a vector field and $C$ is a smooth curve parameterized by $\mathbf{r}(t)$, $a \le t \le b$, the work done by $\mathbf{F}$ along $C$ is:
 
-**Step 3: Set up and Evaluate**
-Substitute the parameterization into $\mathbf{F}$, take the dot product with $\mathbf{r}'(t)$, and integrate from $a$ to $b$.
-$$ \int_C \mathbf{F} \cdot d\mathbf{r} = \int_{a}^{b} \mathbf{F}(\mathbf{r}(t)) \cdot \mathbf{r}'(t) \, dt $$
+$$
+W = \int_C \mathbf{F} \cdot d\mathbf{r}
+$$
 
-### Alternative Notation ($dx$ and $dy$)
-Often, vector line integrals are written in differential form without the dot product:
-If $\mathbf{F} = P\mathbf{i} + Q\mathbf{j}$ and $d\mathbf{r} = dx\mathbf{i} + dy\mathbf{j}$, the dot product expands to:
-$$ \int_C P\,dx + Q\,dy $$
+The dot product $\mathbf{F} \cdot d\mathbf{r}$ extracts only the tangential component of $\mathbf{F}$ — the component that actually contributes to work:
+- Force **parallel** to motion → positive work (energy added)
+- Force **antiparallel** to motion → negative work (energy removed)
+- Force **perpendicular** to motion → zero work (e.g., magnetic force on moving charge)
 
-### Worked Example
-**Problem:** Find the work done by the force field $\mathbf{F}(x,y) = x^2 \mathbf{i} - xy \mathbf{j}$ in moving a particle along the quarter circle $\mathbf{r}(t) = \cos(t)\mathbf{i} + \sin(t)\mathbf{j}$ from $t=0$ to $t=\pi/2$.
+### Alternative Notation
 
-**Step 1: Parameterization** (Given)
-*   $x = \cos(t)$
-*   $y = \sin(t)$
-*   $0 \le t \le \pi/2$
+If $\mathbf{F} = \langle P, Q \rangle$ and $d\mathbf{r} = \langle dx, dy \rangle$:
+$$
+\int_C \mathbf{F} \cdot d\mathbf{r} = \int_C P\,dx + Q\,dy
+$$
 
-**Step 2: Find $\mathbf{r}'(t)$**
-*   $x' = -\sin(t)$
-*   $y' = \cos(t)$
-$$ \mathbf{r}'(t) = \langle -\sin(t), \cos(t) \rangle $$
+In 3D with $\mathbf{F} = \langle P, Q, R \rangle$:
+$$
+\int_C \mathbf{F} \cdot d\mathbf{r} = \int_C P\,dx + Q\,dy + R\,dz
+$$
 
-**Step 3: Plug into $\mathbf{F}$**
-Substitute $x$ and $y$ into $\mathbf{F} = \langle x^2, -xy \rangle$:
-$$ \mathbf{F}(t) = \langle \cos^2(t), -\cos(t)\sin(t) \rangle $$
+---
 
-**Step 4: Take the Dot Product**
-$$ \mathbf{F}(t) \cdot \mathbf{r}'(t) = (\cos^2(t))(-\sin(t)) + (-\cos(t)\sin(t))(\cos(t)) $$
-$$ = -\cos^2(t)\sin(t) - \cos^2(t)\sin(t) = -2\cos^2(t)\sin(t) $$
+## Evaluation Method
 
-**Step 5: Integrate**
-$$ W = \int_{0}^{\pi/2} -2\cos^2(t)\sin(t) \, dt $$
-Use u-substitution: Let $u = \cos(t)$, $du = -\sin(t)dt$.
-Limits: $u(0) = 1$, $u(\pi/2) = 0$.
-$$ \int_{1}^{0} -2u^2 (-du) = \int_{1}^{0} 2u^2 du = \left[ \frac{2}{3}u^3 \right]_{1}^{0} = 0 - \frac{2}{3} = \mathbf{-\frac{2}{3}} $$
+**Step 1:** Parameterize $C$: $\mathbf{r}(t) = \langle x(t), y(t) \rangle$, $a \le t \le b$
 
-The force field does negative work, meaning it generally opposed the particle's motion.
+**Step 2:** Compute $\mathbf{r}'(t) = \langle x'(t), y'(t) \rangle$ (no magnitude needed — just the derivative vector)
 
+**Step 3:** Substitute and integrate:
+$$
+\int_C \mathbf{F}\cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mathbf{r}(t)) \cdot \mathbf{r}'(t)\,dt
+$$
+
+> **Direction matters!** Reversing the orientation of $C$ reverses the sign of the integral: $\int_{-C}\mathbf{F}\cdot d\mathbf{r} = -\int_C \mathbf{F}\cdot d\mathbf{r}$.
+
+---
+
+## Worked Examples
+
+### Example 1 — Easy: Work Against Gravity
+
+**Problem:** A 5 kg object is lifted from $(0,0)$ to $(0,3)$ along a straight vertical path. The gravitational force field is $\mathbf{F} = \langle 0, -mg \rangle = \langle 0, -49 \rangle$ N. Find the work done by gravity.
+
+**Parameterize:** $x = 0$, $y = 3t$, $0 \le t \le 1$. So $\mathbf{r}'(t) = \langle 0, 3 \rangle$.
+
+$$
+W = \int_0^1 \langle 0, -49 \rangle \cdot \langle 0, 3 \rangle\,dt = \int_0^1 (-147)\,dt = -147 \text{ J}
+$$
+
+$$\boxed{W = -147 \text{ J}}$$
+
+Gravity does $-147$ J of work (it opposes the upward lift). The applied lifting force does $+147$ J.
+
+---
+
+### Example 2 — Medium: Work by Electric Field Along a Curved Path
+
+**Problem:** An electron ($q = -1.6\times10^{-19}$ C) moves along the quarter-circle path $\mathbf{r}(t) = \langle \cos t, \sin t \rangle$ from $t=0$ to $t=\pi/2$ (radius = 1 m) in the electric field $\mathbf{E}(x,y) = \langle x, y \rangle$ V/m. Find the work done by the electric force $\mathbf{F} = q\mathbf{E}$.
+
+**Parameterize (given):** $x = \cos t$, $y = \sin t$, $\mathbf{r}'(t) = \langle -\sin t, \cos t \rangle$
+
+**Force field:** $\mathbf{F}(t) = q\langle \cos t, \sin t \rangle$
+
+**Dot product:**
+$$
+\mathbf{F} \cdot \mathbf{r}' = q(\cos t(-\sin t) + \sin t(\cos t)) = q(0) = 0
+$$
+
+$$\boxed{W = 0}$$
+
+**Physical interpretation:** The radial electric field $\langle x,y\rangle$ is always perpendicular to the tangential circular path. No work is done — consistent with the fact that $\mathbf{E} = \nabla\phi$ for $\phi = \frac{x^2+y^2}{2}$ makes this a conservative field, and the start/end points are equidistant from the origin.
+
+---
+
+### Example 3 — Hard: Work by a Non-Conservative Field Along a Parabolic Path
+
+**Problem:** Find the work done by $\mathbf{F}(x,y) = \langle xy, x^2 - y^2 \rangle$ along the parabola $y = x^2$ from $(0,0)$ to $(2,4)$.
+
+**Verify non-conservative:** $P_y = x$, $Q_x = 2x$. Since $x \neq 2x$, the field is **not conservative** — the path matters.
+
+**Parameterize:** Let $t = x$, so $x = t$, $y = t^2$, $0 \le t \le 2$.
+$$
+\mathbf{r}'(t) = \langle 1, 2t \rangle
+$$
+
+**Substitute into F:**
+$$
+\mathbf{F}(t) = \langle t \cdot t^2, t^2 - t^4 \rangle = \langle t^3, t^2 - t^4 \rangle
+$$
+
+**Dot product:**
+$$
+\mathbf{F} \cdot \mathbf{r}' = t^3(1) + (t^2 - t^4)(2t) = t^3 + 2t^3 - 2t^5 = 3t^3 - 2t^5
+$$
+
+**Integrate:**
+$$
+W = \int_0^2 (3t^3 - 2t^5)\,dt = \left[\frac{3t^4}{4} - \frac{t^6}{3}\right]_0^2 = \frac{3(16)}{4} - \frac{64}{3} = 12 - \frac{64}{3} = -\frac{28}{3}
+$$
+
+$$\boxed{W = -\frac{28}{3} \approx -9.33 \text{ J}}$$
+
+The non-conservative field does negative net work along this particular path.
+
+---
 
 ```diagram
 {
@@ -68,102 +132,64 @@ The force field does negative work, meaning it generally opposed the particle's 
     {
       "id": "1",
       "data": {
-        "label": "Line Integrals Vector",
+        "label": "Vector Line Integrals — Work",
         "icon": "BrainCircuit",
-        "description": "Topic: Line Integrals Vector"
+        "description": "W = ∫_C F·dr: integrate the tangential component of force along curved path C."
       },
-      "style": {
-        "background": "#1e3a8a",
-        "color": "#dbeafe"
-      }
+      "style": { "background": "#1e3a8a", "color": "#dbeafe" }
     },
     {
       "id": "2",
       "data": {
-        "label": "Vector Fields (F)",
-        "icon": "FunctionSquare",
-        "description": "Assigning a vector to every point in space."
+        "label": "Parameterize the Path",
+        "icon": "Activity",
+        "description": "r(t) = ⟨x(t), y(t)⟩. Compute r'(t) — the tangent/velocity vector."
       },
-      "style": {
-        "background": "#4c1d95",
-        "color": "#ede9fe"
-      }
+      "style": { "background": "#4c1d95", "color": "#ede9fe" }
     },
     {
       "id": "3",
       "data": {
-        "label": "Line Integrals",
+        "label": "Dot Product F·r'",
         "icon": "Sigma",
-        "description": "Integrating a function or field along a curve C."
+        "description": "Extract tangential force component. Positive = aids motion. Negative = opposes motion. Perpendicular = zero work."
       },
-      "style": {
-        "background": "#b45309",
-        "color": "#fef3c7"
-      }
+      "style": { "background": "#b45309", "color": "#fef3c7" }
     },
     {
       "id": "4",
       "data": {
-        "label": "Conservative Fields",
-        "icon": "Activity",
-        "description": "Path independence where ∇ × F = 0."
+        "label": "Orientation Matters",
+        "icon": "Layers",
+        "description": "Reversing C negates the integral. Unlike scalar integrals, direction of travel matters."
       },
-      "style": {
-        "background": "#14532d",
-        "color": "#dcfce7"
-      }
+      "style": { "background": "#14532d", "color": "#dcfce7" }
     },
     {
       "id": "5",
       "data": {
-        "label": "Curl (∇ × F)",
-        "icon": "Layers",
-        "description": "Measures the macroscopic rotation of the field."
+        "label": "Engineering Applications",
+        "icon": "Wrench",
+        "description": "Aerodynamic drag work, EM field energy, robot arm energy, electron acceleration in E-fields."
       },
-      "style": {
-        "background": "#7f1d1d",
-        "color": "#fee2e2"
-      }
+      "style": { "background": "#7f1d1d", "color": "#fee2e2" }
     },
     {
       "id": "6",
       "data": {
-        "label": "Divergence (∇ · F)",
+        "label": "Conservative Shortcut",
         "icon": "Target",
-        "description": "Measures the magnitude of a source or sink at a given point."
+        "description": "If F = ∇f, use the Fundamental Theorem: W = f(B) - f(A). No parameterization needed."
       },
-      "style": {
-        "background": "#0f766e",
-        "color": "#ccfbf1"
-      }
+      "style": { "background": "#0f766e", "color": "#ccfbf1" }
     }
   ],
   "edges": [
-    {
-      "source": "1",
-      "target": "2",
-      "animated": true
-    },
-    {
-      "source": "2",
-      "target": "3",
-      "animated": true
-    },
-    {
-      "source": "3",
-      "target": "4",
-      "animated": true
-    },
-    {
-      "source": "4",
-      "target": "5",
-      "animated": true
-    },
-    {
-      "source": "5",
-      "target": "6",
-      "animated": true
-    }
+    {"source": "1", "target": "2", "animated": true},
+    {"source": "2", "target": "3", "animated": true},
+    {"source": "3", "target": "4", "animated": true},
+    {"source": "4", "target": "5", "animated": true},
+    {"source": "5", "target": "6", "animated": true}
   ]
 }
 ```

@@ -1,53 +1,123 @@
 # 5. Green's Theorem
 
-If a vector field is conservative, we know that the line integral around a closed loop is zero. But what if the vector field is **not** conservative? 
+## The Bridge Between 1D and 2D
 
-If the loop is closed, parameterizing the entire path (which might be a square, a triangle, or a weird blob) can be extremely tedious. **Green's Theorem** provides a magical shortcut: it translates the difficult 1D line integral along the boundary curve into a much simpler 2D double integral over the area inside.
+Green's Theorem is one of the most useful results in all of engineering mathematics. It establishes a profound connection: **the line integral of a vector field around a closed 2D boundary equals a double integral over the interior of that boundary.**
 
-### The Theorem
-Let $C$ be a positively oriented (counterclockwise), piecewise-smooth, simple closed curve in a plane, and let $D$ be the region bounded by $C$. If $\mathbf{F}(x,y) = P(x,y)\mathbf{i} + Q(x,y)\mathbf{j}$ is a vector field with continuous partial derivatives in an open region containing $D$, then:
+This allows engineers to choose the easier computation — sometimes converting an intractable boundary integral into a simple area calculation, or vice versa.
 
-$$ \oint_C P\,dx + Q\,dy = \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dA $$
+**Engineering applications:**
+- **2D fluid flow:** Calculating circulation (rotational flow tendency) around a closed boundary, e.g., around an airfoil cross-section
+- **Structural mechanics:** Computing work done by a force around a closed loading cycle (hysteresis loops)
+- **Electrical engineering:** Relating circulation of a 2D magnetic field to the current flowing through the enclosed area — a 2D form of Ampère's Law
+- **Area calculation:** Green's Theorem provides an elegant formula for computing irregular areas using boundary traversal (used in GIS, CNC path planning, and surveying)
 
-**Wait, what is that term inside the integral?**
-Notice the term $\left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)$. 
-Recall the test for a conservative vector field: $Q_x = P_y$. If the field is conservative, $Q_x - P_y = 0$, and Green's Theorem immediately proves that the closed loop integral is $\iint 0 \, dA = 0$.
-When the field is *not* conservative, this term represents the "macroscopic spin" (or 2D curl) of the field. Green's Theorem states that summing up all the tiny spins inside the area perfectly equals the macroscopic circulation along the boundary!
+---
 
-### When to use Green's Theorem
-1.  You are asked to evaluate a line integral $\oint_C \mathbf{F} \cdot d\mathbf{r}$.
-2.  The curve $C$ is a completely **closed loop**.
-3.  The curve is oriented **counterclockwise** (if it's clockwise, just multiply your final answer by $-1$).
+## The Theorem
 
-### Worked Example
-**Problem:** Evaluate $\oint_C (3y - e^{\sin x}) dx + (7x + \sqrt{y^4+1}) dy$, where $C$ is the circle $x^2 + y^2 = 9$ oriented counterclockwise.
+> **Green's Theorem:** Let $C$ be a positively oriented (counterclockwise), piecewise-smooth, simple closed curve bounding region $D$. If $P$ and $Q$ have continuous partial derivatives on an open region containing $D$:
+>
+> $$\oint_C P\,dx + Q\,dy = \iint_D \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dA$$
 
-**Step 1: Attempt Parameterization (And give up)**
-Imagine plugging $x = 3\cos(t)$ and $y = 3\sin(t)$ into $e^{\sin x}$ and $\sqrt{y^4+1}$. The integral would be mathematically impossible. We MUST use Green's Theorem.
+**Direction convention:** "Positively oriented" means the interior $D$ is always to your **left** as you walk along $C$ — i.e., counterclockwise for outer boundaries, clockwise for interior holes.
 
-**Step 2: Identify $P$ and $Q$**
-$P(x,y) = 3y - e^{\sin x}$
-$Q(x,y) = 7x + \sqrt{y^4+1}$
+**The integrand $(Q_x - P_y)$** is the **2D curl** (the $\mathbf{k}$-component of $\nabla \times \mathbf{F}$). Green's Theorem states: the total rotational circulation around the boundary equals the total 2D curl summed over the interior.
 
-**Step 3: Calculate the Partial Derivatives**
-Notice how the horrific terms completely vanish during partial differentiation:
-$\frac{\partial Q}{\partial x} = \frac{\partial}{\partial x}(7x + \sqrt{y^4+1}) = 7$
-$\frac{\partial P}{\partial y} = \frac{\partial}{\partial y}(3y - e^{\sin x}) = 3$
+If the field is conservative, $Q_x - P_y = 0$, and the theorem immediately proves $\oint_C \mathbf{F}\cdot d\mathbf{r} = 0$ — confirming what we already know.
 
-The "curl" term is simply: $Q_x - P_y = 7 - 3 = 4$.
+---
 
-**Step 4: Set up the Double Integral**
-By Green's Theorem:
-$$ \oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_D (4) dA = 4 \iint_D 1 \, dA $$
+## Area Formula via Green's Theorem
 
-**Step 5: Evaluate**
-Remember from our Multiple Integrals topic: $\iint_D 1 \, dA$ is just the geometric area of region $D$.
-Region $D$ is a circle of radius $r=3$. Its area is $\pi r^2 = 9\pi$.
-Therefore:
-$$ 4 \cdot \text{Area}(D) = 4(9\pi) = \mathbf{36\pi} $$
+Setting $P = -y/2$ and $Q = x/2$ gives $Q_x - P_y = 1$, so:
+$$
+A = \iint_D dA = \oint_C \frac{1}{2}(-y\,dx + x\,dy)
+$$
 
-An impossible line integral was evaluated in three lines of basic algebra thanks to Green's Theorem.
+This remarkable formula computes the **area of any region from its boundary alone** — used in planimeters (mechanical area integrators) and modern polygon area algorithms in GIS.
 
+---
+
+## Worked Examples
+
+### Example 1 — Easy: Circulation Around a Rectangle
+
+**Problem:** Compute $\oint_C (x^2 - y)\,dx + (y^2 + x)\,dy$ counterclockwise around the rectangle with vertices $(0,0)$, $(3,0)$, $(3,2)$, $(0,2)$.
+
+**Apply Green's Theorem:** $P = x^2-y$, $Q = y^2+x$:
+$$
+Q_x - P_y = 1 - (-1) = 2
+$$
+
+$$
+\oint_C \mathbf{F}\cdot d\mathbf{r} = \iint_D 2\,dA = 2 \times \text{Area}(D) = 2 \times (3 \times 2) = \boxed{12}
+$$
+
+No parameterization of 4 separate line segments needed!
+
+---
+
+### Example 2 — Medium: An Impossible Direct Integral
+
+**Problem:** Evaluate $\oint_C (3y - e^{\sin x})\,dx + (7x + \sqrt{y^4+1})\,dy$, where $C$ is the circle $x^2 + y^2 = 9$ counterclockwise.
+
+**Direct approach:** Substituting $x = 3\cos t$ into $e^{\sin x}$ would create $e^{\sin(3\cos t)}$ — impossible to integrate analytically.
+
+**Green's Theorem:** $P = 3y - e^{\sin x}$, $Q = 7x + \sqrt{y^4+1}$:
+$$
+Q_x = 7, \qquad P_y = 3, \qquad Q_x - P_y = 4
+$$
+
+$$
+\oint_C \mathbf{F}\cdot d\mathbf{r} = \iint_D 4\,dA = 4 \cdot \pi(3)^2 = \boxed{36\pi}
+$$
+
+A completely intractable direct integral solved in three lines of algebra.
+
+---
+
+### Example 3 — Hard: Area of an Ellipse by Boundary Traversal
+
+**Problem:** Use the Green's Theorem area formula to derive the area of the ellipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$.
+
+**Parameterize boundary:** $x = a\cos t$, $y = b\sin t$, $0 \le t \le 2\pi$.
+
+**Apply area formula:**
+$$
+A = \frac{1}{2}\oint_C (-y\,dx + x\,dy)
+$$
+
+Compute $dx = -a\sin t\,dt$, $dy = b\cos t\,dt$:
+$$
+-y\,dx = -b\sin t \cdot (-a\sin t)\,dt = ab\sin^2 t\,dt
+$$
+$$
+x\,dy = a\cos t \cdot b\cos t\,dt = ab\cos^2 t\,dt
+$$
+
+$$
+A = \frac{1}{2}\int_0^{2\pi} ab(\sin^2 t + \cos^2 t)\,dt = \frac{ab}{2}\int_0^{2\pi} dt = \frac{ab}{2}\cdot 2\pi = \boxed{\pi ab}
+$$
+
+**Engineering context:** The cross-sectional area of an elliptical pipe, pressure vessel, or aircraft fuselage is $\pi ab$ — derived elegantly from Green's Theorem.
+
+---
+
+### Example 4 — Hard: Green's Theorem as Ampère's Law
+
+**Problem:** In 2D magnetostatics, the magnetic field $\mathbf{B} = \langle B_x, B_y \rangle$ from a long current-carrying wire satisfies $\frac{\partial B_y}{\partial x} - \frac{\partial B_x}{\partial y} = \mu_0 J_z$, where $J_z$ is the current density. Use Green's Theorem to relate the circulation of $\mathbf{B}$ around a closed loop $C$ to the total current through the enclosed area $D$.
+
+**Apply Green's Theorem:**
+$$
+\oint_C B_x\,dx + B_y\,dy = \iint_D\!\!\left(\frac{\partial B_y}{\partial x} - \frac{\partial B_x}{\partial y}\right)dA = \iint_D \mu_0 J_z\,dA = \mu_0 I_{\text{enc}}
+$$
+
+$$\boxed{\oint_C \mathbf{B}\cdot d\mathbf{r} = \mu_0 I_{\text{enc}}}$$
+
+This is **Ampère's Circuital Law** in 2D — a foundational result in electromagnetism, derived directly from Green's Theorem.
+
+---
 
 ```diagram
 {
@@ -56,102 +126,64 @@ An impossible line integral was evaluated in three lines of basic algebra thanks
     {
       "id": "1",
       "data": {
-        "label": "Greens Theorem",
+        "label": "Green's Theorem",
         "icon": "BrainCircuit",
-        "description": "Topic: Greens Theorem"
+        "description": "∮_C P dx + Q dy = ∬_D (∂Q/∂x - ∂P/∂y) dA. Converts boundary integral to area integral."
       },
-      "style": {
-        "background": "#1e3a8a",
-        "color": "#dbeafe"
-      }
+      "style": { "background": "#1e3a8a", "color": "#dbeafe" }
     },
     {
       "id": "2",
       "data": {
-        "label": "Vector Fields (F)",
-        "icon": "FunctionSquare",
-        "description": "Assigning a vector to every point in space."
+        "label": "Positive Orientation (CCW)",
+        "icon": "Activity",
+        "description": "Walk counterclockwise — interior D always to your left. Clockwise = multiply result by -1."
       },
-      "style": {
-        "background": "#4c1d95",
-        "color": "#ede9fe"
-      }
+      "style": { "background": "#4c1d95", "color": "#ede9fe" }
     },
     {
       "id": "3",
       "data": {
-        "label": "Line Integrals",
+        "label": "Integrand = 2D Curl",
         "icon": "Sigma",
-        "description": "Integrating a function or field along a curve C."
+        "description": "∂Q/∂x - ∂P/∂y is the z-component of ∇×F. Sums local rotation over interior."
       },
-      "style": {
-        "background": "#b45309",
-        "color": "#fef3c7"
-      }
+      "style": { "background": "#b45309", "color": "#fef3c7" }
     },
     {
       "id": "4",
       "data": {
-        "label": "Conservative Fields",
-        "icon": "Activity",
-        "description": "Path independence where ∇ × F = 0."
+        "label": "Area Formula",
+        "icon": "Layers",
+        "description": "A = ½∮(-y dx + x dy). Computes area from boundary alone. Used in GIS and CNC."
       },
-      "style": {
-        "background": "#14532d",
-        "color": "#dcfce7"
-      }
+      "style": { "background": "#14532d", "color": "#dcfce7" }
     },
     {
       "id": "5",
       "data": {
-        "label": "Curl (∇ × F)",
-        "icon": "Layers",
-        "description": "Measures the macroscopic rotation of the field."
+        "label": "Engineering: Ampère's Law",
+        "icon": "Wrench",
+        "description": "∮ B·dr = μ₀I_enc. Circulation of magnetic field = enclosed current × μ₀."
       },
-      "style": {
-        "background": "#7f1d1d",
-        "color": "#fee2e2"
-      }
+      "style": { "background": "#7f1d1d", "color": "#fee2e2" }
     },
     {
       "id": "6",
       "data": {
-        "label": "Divergence (∇ · F)",
+        "label": "Generalises to Stokes' Theorem",
         "icon": "Target",
-        "description": "Measures the magnitude of a source or sink at a given point."
+        "description": "Green's Theorem is Stokes' Theorem restricted to flat 2D surfaces. Stokes works on curved 3D surfaces."
       },
-      "style": {
-        "background": "#0f766e",
-        "color": "#ccfbf1"
-      }
+      "style": { "background": "#0f766e", "color": "#ccfbf1" }
     }
   ],
   "edges": [
-    {
-      "source": "1",
-      "target": "2",
-      "animated": true
-    },
-    {
-      "source": "2",
-      "target": "3",
-      "animated": true
-    },
-    {
-      "source": "3",
-      "target": "4",
-      "animated": true
-    },
-    {
-      "source": "4",
-      "target": "5",
-      "animated": true
-    },
-    {
-      "source": "5",
-      "target": "6",
-      "animated": true
-    }
+    {"source": "1", "target": "2", "animated": true},
+    {"source": "2", "target": "3", "animated": true},
+    {"source": "3", "target": "4", "animated": true},
+    {"source": "4", "target": "5", "animated": true},
+    {"source": "5", "target": "6", "animated": true}
   ]
 }
 ```
