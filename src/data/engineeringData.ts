@@ -66,30 +66,10 @@ export const ENGINEERING_BRANCHES: Record<string, EngineeringBranch> = {
     description: 'Circuits, electronics, electromagnetics, data structures, algorithms, and control systems.',
     color: '#eab308', // Yellow/Gold
     topics: [
-      { id: 'electric-circuit-theory-1', title: 'DC Circuit Analysis' },
-      { id: 'electric-circuit-theory-2', title: 'AC Circuit Analysis & Phasors' },
-      { id: 'electric-circuit-theory-3', title: 'Advanced Circuit Analysis (Laplace)' },
-      { id: 'analogue-electronics', title: 'Analog Electronics (Diodes, BJTs, FETs)' },
-      { id: 'digital-electronics', title: 'Digital Logic Design' },
-      { id: 'electromagnetic-fields', title: 'Electromagnetic Field Theory' },
-      { id: 'control-systems', title: 'Classical Control Theory' },
-      { id: 'elec-comp-8', title: 'Microprocessors & Assembly Language' },
-      { id: 'elec-comp-9', title: 'Transmission Lines & Antennas' },
-      { id: 'elec-comp-10', title: 'Power Systems & Machinery' },
-      { id: 'elec-comp-11', title: 'Power Electronics' },
-      { id: 'elec-comp-12', title: 'Communication Systems (Analog & Digital)' },
-      { id: 'elec-comp-13', title: 'Digital Signal Processing (DSP)' },
-      { id: 'elec-comp-14', title: 'VLSI Design' },
-      { id: 'elec-comp-15', title: 'Photonics & Optoelectronics' },
-      { id: 'elec-comp-16', title: 'Sensors & Transducers' },
-      { id: 'elec-comp-17', title: 'Actuators (Electrical, Pneumatic, Hydraulic)' },
-      { id: 'elec-comp-18', title: 'Signal Conditioning & Data Acquisition' },
-      { id: 'elec-comp-19', title: 'Robot Kinematics' },
-      { id: 'elec-comp-20', title: 'Object-Oriented Programming' },
-      { id: 'elec-comp-21', title: 'Core Data Structures' },
-      { id: 'elec-comp-22', title: 'Algorithms' },
-      { id: 'elec-comp-23', title: 'Cybersecurity & Cryptography' },
-      { id: 'elec-comp-24', title: 'Compiler Design & Automata Theory' }
+      { id: 'ece-1', title: 'DC Circuit Analysis' },
+      { id: 'ece-2', title: 'AC Circuit Analysis' },
+      { id: 'ece-3', title: 'Electronics & Semiconductors' },
+      { id: 'ece-4', title: 'Digital Logic & Microprocessors' }
     ]
   },
   'mechanical-aerospace': {
