@@ -90,20 +90,8 @@ export const ENGINEERING_BRANCHES: Record<string, EngineeringBranch> = {
     description: 'Energy, entropy, power cycles, and all modes of heat transfer from conduction to radiation.',
     color: '#f97316', // Deep Orange
     topics: [
-      { id: 'mech-aero-14', title: 'Properties of Pure Substances' },
-      { id: 'mech-aero-15', title: 'First Law of Thermodynamics' },
-      { id: 'mech-aero-16', title: 'Second Law, Entropy, and Exergy' },
-      { id: 'mech-aero-17', title: 'Power Cycles' },
-      { id: 'mech-aero-18', title: 'Refrigeration & Heat Pump Cycles' },
-      { id: 'mech-aero-19', title: 'Steady & Transient Heat Conduction' },
-      { id: 'mech-aero-20', title: 'Convective Heat Transfer' },
-      { id: 'mech-aero-21', title: 'Radiation Heat Transfer' },
-      { id: 'thermo-1', title: 'Heat Exchangers' },
-      { id: 'thermo-2', title: 'Psychrometrics & HVAC Systems' },
-      { id: 'thermo-3', title: 'Combustion & Reacting Mixtures' },
-      { id: 'thermo-4', title: 'Gas Dynamics & Nozzle Flows' },
-      { id: 'thermo-5', title: 'Statistical Thermodynamics' },
-      { id: 'thermo-6', title: 'Mass Transfer Fundamentals' },
+      { id: 'thermo-1', title: 'Fundamentals & Power Cycles' },
+      { id: 'thermo-2', title: 'Heat & Mass Transfer' }
     ]
   },
   'fluid-mechanics': {
@@ -112,20 +100,8 @@ export const ENGINEERING_BRANCHES: Record<string, EngineeringBranch> = {
     description: 'Fluid statics, viscous and inviscid flows, turbomachinery, compressible flow, and aerodynamics.',
     color: '#06b6d4', // Cyan
     topics: [
-      { id: 'mech-aero-22', title: 'Fluid Statics & Buoyancy' },
-      { id: 'mech-aero-23', title: 'Fluid Kinematics & Navier-Stokes' },
-      { id: 'mech-aero-24', title: 'Internal Incompressible Flow' },
-      { id: 'mech-aero-25', title: 'External Incompressible Flow' },
-      { id: 'mech-aero-26', title: 'Turbomachinery' },
-      { id: 'mech-aero-27', title: 'Compressible Flow & Shock Waves' },
-      { id: 'mech-aero-28', title: 'Inviscid Aerodynamics' },
-      { id: 'mech-aero-29', title: 'Finite Wing Theory' },
-      { id: 'fluids-1', title: 'Dimensional Analysis & Similitude' },
-      { id: 'fluids-2', title: 'Boundary Layer Theory' },
-      { id: 'fluids-3', title: 'Turbulence & Turbulence Modeling' },
-      { id: 'fluids-4', title: 'Introduction to CFD' },
-      { id: 'fluids-5', title: 'Two-Phase & Multiphase Flow' },
-      { id: 'fluids-6', title: 'Non-Newtonian Fluid Mechanics' },
+      { id: 'fluids-1', title: 'Fluid Statics & Kinematics' },
+      { id: 'fluids-2', title: 'Advanced Flow & Turbomachinery' }
     ]
   },
   'chemical-process': {
@@ -134,27 +110,9 @@ export const ENGINEERING_BRANCHES: Record<string, EngineeringBranch> = {
     description: 'Material balances, separation processes, reaction engineering, and reservoir engineering.',
     color: '#10b981', // Green
     topics: [
-      { id: 'chem-petro-1', title: 'Material & Energy Balances' },
-      { id: 'chem-petro-2', title: 'Chemical Engineering Thermodynamics' },
-      { id: 'chem-petro-3', title: 'Transport Phenomena' },
-      { id: 'chem-petro-4', title: 'Momentum Transfer & Fluidization' },
-      { id: 'chem-petro-5', title: 'Heat Transfer Equipment Design' },
-      { id: 'chem-petro-6', title: 'Mass Transfer & Diffusion' },
-      { id: 'chem-petro-7', title: 'Separation Processes (Distillation & Absorption)' },
-      { id: 'chem-petro-8', title: 'Advanced Separations (Extraction, Membranes)' },
-      { id: 'chem-petro-9', title: 'Chemical Reaction Kinetics' },
-      { id: 'chem-petro-10', title: 'Reactor Design Engineering' },
-      { id: 'chem-petro-11', title: 'Process Dynamics & Control' },
-      { id: 'chem-petro-12', title: 'Process Plant Design & Economics' },
-      { id: 'chem-petro-13', title: 'Introduction to Petroleum Geology' },
-      { id: 'chem-petro-14', title: 'Reservoir Rock & Fluid Properties' },
-      { id: 'chem-petro-15', title: 'Drilling Engineering & Well Completion' },
-      { id: 'chem-petro-16', title: 'Reservoir Engineering & Simulation' },
-      { id: 'chem-petro-17', title: 'Well Logging & Formation Evaluation' },
-      { id: 'chem-petro-18', title: 'Production Engineering & Artificial Lift' },
-      { id: 'chem-petro-19', title: 'Enhanced Oil Recovery (EOR)' },
-      { id: 'chem-petro-20', title: 'Natural Gas Engineering' },
-      { id: 'chem-petro-21', title: 'Petroleum Refining & Petrochemicals' }
+      { id: 'chem-1', title: 'Chemical Engineering Fundamentals' },
+      { id: 'chem-2', title: 'Process Design & Reaction Engineering' },
+      { id: 'chem-3', title: 'Petroleum & Reservoir Engineering' }
     ]
   },
   'civil-environmental': {
