@@ -50,3 +50,24 @@ As the steam continuously melts the roof, the steam chamber slowly grows upward 
 *   There is no "pushing." The steam does not have to push the oil 500 feet horizontally to another well. It only has to melt it, and gravity does 100% of the work.
 *   It completely solves the Gravity Override problem.
 *   Recovery factors are astronomical, often exceeding 60% of the OOIP in reservoirs that were historically considered completely un-producible solid rock.
+
+## 4. SAGD Gravity Drainage Cycle
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "inject", "data": { "label": "Top Well: Steam Injection", "icon": "CloudSun", "description": "Continuous high-pressure steam pumped into the upper horizontal wellbore." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "chamber", "data": { "label": "Upward Steam Chamber", "icon": "ThermometerSun", "description": "Because steam is light, the blazing hot chamber grows perfectly upward into the cold rock." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "melt", "data": { "label": "Tar Melting", "icon": "Droplet", "description": "Steam hits cold solid tar on the ceiling, condenses, and melts the heavy oil into liquid." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "gravity", "data": { "label": "Gravity Drainage", "icon": "ArrowDownCircle", "description": "Heavy, hot liquid oil violently rains straight down through the rock via gravity." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "produce", "data": { "label": "Bottom Well: Production", "icon": "ArrowDownToLine", "description": "Hot oil lands directly into the lower horizontal wellbore and is pumped to the surface." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "inject", "target": "chamber", "animated": true },
+    { "source": "chamber", "target": "melt", "animated": true },
+    { "source": "melt", "target": "gravity", "animated": true, "style": { "stroke": "#3b82f6" } },
+    { "source": "gravity", "target": "produce", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

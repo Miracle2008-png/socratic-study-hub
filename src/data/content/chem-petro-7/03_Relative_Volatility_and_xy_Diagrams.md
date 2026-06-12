@@ -52,3 +52,22 @@ At the azeotrope, $y = x$. When you boil the liquid, the vapour produced has the
 
 *   Ethanol and water form a famous positive-deviation azeotrope at 95.6 wt% ethanol. You cannot distil vodka to 100% pure ethanol; it stops permanently at 95.6%.
 *   To break an azeotrope, chemical engineers must use advanced techniques like Pressure-Swing Distillation or Extractive Distillation (adding a third chemical to alter the activity coefficients).
+
+## 5. Relative Volatility Concepts
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "alpha", "data": { "label": "Relative Volatility", "icon": "Hash", "description": "Ratio of vapour pressures." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "curve", "data": { "label": "x-y Diagram", "icon": "TrendingUp", "description": "Equilibrium curve above diagonal." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "diag", "data": { "label": "45-Degree Line", "icon": "Maximize2", "description": "y = x reference." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "azeo", "data": { "label": "Azeotrope", "icon": "StopCircle", "description": "Curve crosses diagonal." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } }
+  ],
+  "edges": [
+    { "source": "alpha", "target": "curve", "animated": true },
+    { "source": "curve", "target": "diag", "animated": true },
+    { "source": "curve", "target": "azeo", "animated": true }
+  ]
+}
+```

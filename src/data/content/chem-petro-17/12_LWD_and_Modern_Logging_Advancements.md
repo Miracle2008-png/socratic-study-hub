@@ -49,3 +49,23 @@ A modern offshore LWD assembly can cost \$5 million. If the tools get stuck in t
 However, the amount of data these modern tools generate is staggering. Modern LWD imaging tools use rotating sensors to take 360-degree, high-resolution photographs of the rock wall using micro-resistivity, allowing engineers to literally "see" microscopic fractures and individual sand grains in real-time.
 
 The future of formation evaluation relies on Artificial Intelligence. Rather than a human petrophysicist spending weeks manually crossplotting curves and calculating Archie's Equation, modern machine-learning algorithms ingest the millions of data points streaming up the mud pulses in real-time. The AI instantly calculates continuous, 3D models of Porosity and Water Saturation, automatically alerting the Geosteerer to steer toward the absolute highest-porosity, most profitable pockets of oil hidden in the dark rock ahead.
+
+## 5. The Real-Time Geosteering Loop
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "lwd", "data": { "label": "LWD Tool", "icon": "Crosshair", "description": "Scans virgin rock directly behind the drill bit." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "tele", "data": { "label": "Mud Pulse Telemetry", "icon": "Radio", "description": "Transmits log data to surface in real-time." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "geo", "data": { "label": "Geosteerer (AI)", "icon": "Monitor", "description": "Analyzes logs to find the exact oil sweet spot." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "steer", "data": { "label": "Rotary Steerable", "icon": "Navigation", "description": "Adjusts drill bit angle to stay perfectly in the oil zone." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "lwd", "target": "tele", "animated": true },
+    { "source": "tele", "target": "geo", "animated": true },
+    { "source": "geo", "target": "steer", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "steer", "target": "lwd", "animated": true, "label": "Closed Loop Correction" }
+  ]
+}
+```

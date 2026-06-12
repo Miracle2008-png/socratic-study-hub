@@ -86,3 +86,22 @@ Where:
 - **$T_{\infty}$**: Temperature of the surrounding fluid bath.
 
 This is Newton's Law of Cooling, which again results in an exponential decay equation when integrated.
+
+## 5. Transient Balances Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "trans", "data": { "label": "Transient Eqn", "icon": "Activity", "description": "dm/dt != 0." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "mass", "data": { "label": "Total Mass", "icon": "Box", "description": "Emptying tank." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "comp", "data": { "label": "Component Balance", "icon": "Droplet", "description": "Dilution." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "energy", "data": { "label": "Energy Balance", "icon": "Thermometer", "description": "Heating/cooling." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "trans", "target": "mass", "animated": true },
+    { "source": "trans", "target": "comp", "animated": true },
+    { "source": "trans", "target": "energy", "animated": true }
+  ]
+}
+```

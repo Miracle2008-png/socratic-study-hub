@@ -66,3 +66,22 @@ Where:
 - **Heat of Mixing ($\Delta H_{mix}$)**: If $\Delta H_{mix} < 0$, the mixing is exothermic (the beaker gets hot). If $\Delta H_{mix} > 0$, it is endothermic (the beaker gets cold).
 
 For an **ideal solution**, $\Delta V_{mix} = 0$ and $\Delta H_{mix} = 0$, meaning the molecules ignore each other completely. However, even for an ideal solution, the Entropy of Mixing ($\Delta S_{mix}$) is always highly positive, because creating a mixture always increases molecular disorder.
+
+## 5. Solution Theory Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "partial", "data": { "label": "Partial Molar", "icon": "PieChart", "description": "Mixture contributions." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "sum", "data": { "label": "Summability", "icon": "Sigma", "description": "Weighted sum." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "gibbs", "data": { "label": "Gibbs-Duhem", "icon": "CheckSquare", "description": "Data consistency." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "mix", "data": { "label": "Mixing Changes", "icon": "Activity", "description": "Volume, Heat, Entropy." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "partial", "target": "sum", "animated": true },
+    { "source": "partial", "target": "gibbs", "animated": true },
+    { "source": "sum", "target": "mix", "animated": true }
+  ]
+}
+```

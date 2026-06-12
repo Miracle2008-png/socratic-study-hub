@@ -53,3 +53,24 @@ Reservoir simulation is one of the most computationally intense disciplines on E
 Because the flow of water affects the flow of oil (Relative Permeability), and the pressure affects the fluid volume (PVT), all the equations are non-linear and completely coupled. You cannot solve for oil without simultaneously solving for water and gas. 
 
 A computer must solve a massive matrix of perhaps 300 million simultaneous equations at every single time-step. Simulating 50 years of production for a giant Middle Eastern oil field can take massive supercomputer clusters weeks to finish a single run.
+
+## 5. The Reservoir Simulation Workflow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "geo", "data": { "label": "3D Geological Model", "icon": "Mountain", "description": "Continuous representation of the physical rock trap." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "grid", "data": { "label": "Grid Discretization", "icon": "Grid", "description": "Slicing the model into 100 million discrete blocks." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "calc", "data": { "label": "Supercomputer Sim", "icon": "Cpu", "description": "Solves Mass, Darcy, and PVT equations for every block." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "forecast", "data": { "label": "Production Forecast", "icon": "TrendingUp", "description": "Predicts exact oil flow rates over 50 years." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "npv", "data": { "label": "Maximize Profit", "icon": "DollarSign", "description": "Test EOR strategies to maximize Net Present Value." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "geo", "target": "grid", "animated": true },
+    { "source": "grid", "target": "calc", "animated": true },
+    { "source": "calc", "target": "forecast", "animated": true },
+    { "source": "forecast", "target": "npv", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

@@ -48,3 +48,24 @@ These are advanced, highly complex tests that can take months to complete.
 *   **Wettability and Capillary Pressure:** They measure exactly how strongly the oil and water cling to the rock surface.
 
 Because Core Analysis provides undeniable, physical truth, petrophysicists use it to calibrate all of their mathematical wireline logs.
+
+## 4. Physical Evaluation Methods
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "drill", "data": { "label": "The Drill Bit", "icon": "ArrowDownCircle", "description": "Tearing into the deep earth." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "mud", "data": { "label": "Mud Logging", "icon": "Eye", "description": "Examine crushed cuttings and sniff gas." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "fast", "data": { "label": "Fast but Destroyed", "icon": "FastForward", "description": "Immediate data, but pore structure is obliterated." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "core", "data": { "label": "Core Barrel", "icon": "Database", "description": "Cuts a solid, intact 90-foot cylinder of rock." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } },
+    { "id": "lab", "data": { "label": "Core Lab (RCA/SCAL)", "icon": "CheckCircle", "description": "Slow & expensive, but provides the Absolute Truth." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "drill", "target": "mud", "animated": true },
+    { "source": "mud", "target": "fast", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "drill", "target": "core", "animated": true },
+    { "source": "core", "target": "lab", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

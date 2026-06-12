@@ -47,3 +47,18 @@ You inject a pulse of dye into an industrial CSTR that has a theoretical Space T
 **Drill 4:**
 1. The fluid is exiting the tank 10 minutes faster than it mathematically should based on the tank's volume. This means the fluid is completely avoiding a large portion of the tank. This is caused by **Stagnant Dead Zones** (areas where the agitator isn't mixing properly).
 2. The active volume is proportional to the mean time. The fluid acts as if the tank is only 20 minutes "big" instead of 30. The effective volume is $20/30 = \mathbf{66.7\%}$ of the actual physical tank volume. The other 33.3% of the tank is useless dead space.
+
+## Reactor Design Fundamentals
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "vol", "data": { "label": "Reactor Volume", "icon": "Box", "description": "PFR usually smaller than CSTR." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "sel", "data": { "label": "Selectivity", "icon": "Target", "description": "Match reactor type to rate orders." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "heat", "data": { "label": "Adiabatic Hot Spot", "icon": "Thermometer", "description": "T rises, destroying equilibrium." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "rtd", "data": { "label": "RTD Flaws", "icon": "Activity", "description": "Mean time reveals dead zones." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": []
+}
+```

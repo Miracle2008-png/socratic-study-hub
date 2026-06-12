@@ -36,3 +36,22 @@ While RO membranes are dense, NF membranes have incredibly tiny pores (around 1 
 **Applications of NF:**
 *   **Water Softening:** Because it perfectly rejects Calcium and Magnesium (the minerals that cause "hard" water) but lets Sodium and Chloride pass, it is the ultimate water softener. It requires far less pumping pressure than full RO (operating at $\sim 100 \text{ psi}$ instead of $800 \text{ psi}$).
 *   **Dye Removal:** In the textile industry, NF is used to recover toxic dyes from wastewater while allowing the harmless salt water to pass through.
+
+## 4. Osmotic Principles
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "osm", "data": { "label": "Osmosis", "icon": "Droplet", "description": "Natural dilution." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "press", "data": { "label": "Osmotic Pressure", "icon": "Activity", "description": "Equilibrium limit." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "ro", "data": { "label": "Reverse Osmosis", "icon": "RotateCcw", "description": "Overcome pi with Pump." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "nf", "data": { "label": "Nanofiltration", "icon": "Filter", "description": "Softening, blocks Ca2+." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "osm", "target": "press", "animated": true },
+    { "source": "press", "target": "ro", "animated": true },
+    { "source": "ro", "target": "nf", "animated": true }
+  ]
+}
+```

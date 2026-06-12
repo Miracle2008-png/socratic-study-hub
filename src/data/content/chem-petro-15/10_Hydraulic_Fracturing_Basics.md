@@ -54,3 +54,24 @@ Fracking is highly controversial. The primary concerns include:
 *   **Water Usage:** A single multi-stage frac job can consume 5 to 10 million gallons of fresh water.
 *   **Induced Seismicity:** The extreme pressures injected underground can sometimes lubricate dormant fault lines, causing minor, man-made earthquakes.
 *   **Groundwater Contamination:** While the actual fractures happen two miles *below* the shallow drinking water aquifers, poor cementing of the steel casing near the surface can allow toxic frac fluids or explosive methane gas to leak into the public water supply.
+
+## 6. The Fracking Workflow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "fleet", "data": { "label": "1. Surface Fleet", "icon": "Truck", "description": "Pumps water at extreme pressures." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "frac", "data": { "label": "2. Rock Failure", "icon": "Activity", "description": "Pressure exceeds tensile strength, tearing rock." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "sand", "data": { "label": "3. Proppant Added", "icon": "Layers", "description": "Millions of lbs of sand injected into the cracks." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "locked", "data": { "label": "4. Locked Open", "icon": "Lock", "description": "Pumps turn off; earth clamps down on the sand." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "flow", "data": { "label": "5. Massive Flow", "icon": "Droplet", "description": "Trapped oil escapes through the artificial highway." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "fleet", "target": "frac", "animated": true },
+    { "source": "frac", "target": "sand", "animated": true },
+    { "source": "sand", "target": "locked", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "locked", "target": "flow", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

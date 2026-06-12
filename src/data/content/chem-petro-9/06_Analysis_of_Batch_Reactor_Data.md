@@ -63,3 +63,22 @@ $$ dC_A = -C_{A0} dX_A $$
 
 This allows us to rewrite our batch reactor rate equation entirely in terms of Conversion ($X_A$), which is often much more intuitive for engineers:
 $$ C_{A0} \frac{dX_A}{dt} = -r_A $$
+
+## 4. Analysis Methods Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "raw", "data": { "label": "Raw Data", "icon": "FileText", "description": "C_A vs time table." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "chal", "data": { "label": "The Derivative Problem", "icon": "AlertTriangle", "description": "Rate requires dCa/dt." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "int", "data": { "label": "Integral Method", "icon": "Layers", "description": "Guess and check integration." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "diff", "data": { "label": "Differential Method", "icon": "Activity", "description": "Direct numerical derivative." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "raw", "target": "chal", "animated": true },
+    { "source": "chal", "target": "int", "animated": true },
+    { "source": "chal", "target": "diff", "animated": true }
+  ]
+}
+```

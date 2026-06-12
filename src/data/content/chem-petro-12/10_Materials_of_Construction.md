@@ -44,3 +44,22 @@ If you are building a pipeline to carry a mildly corrosive fluid, you have two c
 2.  Build it out of expensive 316 Stainless Steel, and it will last for 30 years without needing replacement.
 
 The design engineer must calculate the Net Present Value of both options, factoring in the cost of the replacement pipe, the labor to replace it, and the millions of dollars in lost production during the 5-year shutdown, to decide which material is truly the cheapest over the lifespan of the plant.
+
+## 6. Material Selection Hierarchy
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "carbon", "data": { "label": "Carbon Steel", "icon": "Box", "description": "Default. Cheap and strong, but corrodes easily." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "stain", "data": { "label": "Stainless Steel", "icon": "Shield", "description": "Chromium passivation prevents rusting. Handles salts." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "exot", "data": { "label": "Exotic Alloys", "icon": "Zap", "description": "Inconel/Titanium. Costs a fortune, survives boiling acid." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "poly", "data": { "label": "Polymers/Plastics", "icon": "Droplet", "description": "Teflon. Chemically inert but melts at high temps." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "carbon", "target": "stain", "animated": true },
+    { "source": "stain", "target": "exot", "animated": true },
+    { "source": "stain", "target": "poly", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

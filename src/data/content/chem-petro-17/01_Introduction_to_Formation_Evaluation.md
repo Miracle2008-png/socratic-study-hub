@@ -43,3 +43,26 @@ The specialist who analyzes well logs is called a **Petrophysicist**.
 A modern well log looks like an incredibly complex, chaotic EKG heart monitor read-out, with dozens of squiggly lines stretching over thousands of feet of depth.
 
 The petrophysicist must act as a detective. Because no single logging tool is perfect, they must cross-reference the data from three or four different radioactive and electrical tools simultaneously to decipher the true nature of the rock hidden two miles below their feet.
+
+## 4. The 3 Pillars of Formation Evaluation
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "rock", "data": { "label": "The Unknown Formation", "icon": "Mountain", "description": "10,000 feet underground. Is it a dry hole or a billion-dollar reservoir?" }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "lith", "data": { "label": "Lithology", "icon": "Layers", "description": "What kind of rock is it? (Sandstone, Limestone, Shale)" }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "por", "data": { "label": "Porosity (φ)", "icon": "Circle", "description": "How much empty space is in the rock to hold fluids?" }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "sw", "data": { "label": "Water Saturation (Sw)", "icon": "Droplet", "description": "Of the fluid in the pores, what % is oil vs saltwater?" }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "econ", "data": { "label": "Economic Decision", "icon": "DollarSign", "description": "Calculate Total Barrels. Run steel casing or abandon the well." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "rock", "target": "lith", "animated": true },
+    { "source": "rock", "target": "por", "animated": true },
+    { "source": "rock", "target": "sw", "animated": true },
+    { "source": "lith", "target": "econ", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "por", "target": "econ", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "sw", "target": "econ", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

@@ -48,3 +48,22 @@ In modern offshore completions, standard gravel packing is often not enough beca
 Engineers use a hybrid technique called a **Frac-Pack**.
 They pump the gravel at such violently high pressures that they intentionally hydraulically fracture the soft rock. The massive cracks are instantly filled with the highly permeable artificial gravel. 
 This bypasses all near-wellbore damage, massively increasing the flow area, and creates a perfectly locked-in sand filter that extends dozens of feet outward into the reservoir.
+
+## 5. The Gravel Pack Filtration System
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "res", "data": { "label": "Reservoir Oil + Fine Sand", "icon": "AlertTriangle", "description": "Unconsolidated rock tries to flow into the well." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "gravel", "data": { "label": "Artificial Gravel Pack", "icon": "Filter", "description": "Proppant filter blocks the fine native sand." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "screen", "data": { "label": "Wire-Wrapped Screen", "icon": "Layers", "description": "0.012-inch gaps block the gravel from entering." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "clean", "data": { "label": "Clean Oil Production", "icon": "CheckCircle", "description": "Pure oil flows safely up the tubing." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "res", "target": "gravel", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "gravel", "target": "screen", "animated": true },
+    { "source": "screen", "target": "clean", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

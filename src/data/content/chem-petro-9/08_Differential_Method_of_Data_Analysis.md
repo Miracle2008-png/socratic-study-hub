@@ -57,3 +57,22 @@ Once you have successfully calculated the rate ($-r_A$) for various concentratio
 6.  The y-intercept is $\ln(k)$. Take $e^{\text{y-intercept}}$ to find the rate constant **$k$**.
 
 The Differential Method is universally applicable to any power-law reaction, provided you have clean, high-quality experimental data.
+
+## 5. Differential Workflow
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "raw", "data": { "label": "Raw Data", "icon": "FileText", "description": "C_A vs time table." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "fit", "data": { "label": "Curve Fitting", "icon": "Layers", "description": "Smooth polynomial curve." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "deriv", "data": { "label": "Analytical Derivative", "icon": "Activity", "description": "Calculate smooth dCa/dt." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "log", "data": { "label": "Log-Log Plot", "icon": "BarChart2", "description": "Slope gives exact alpha." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "raw", "target": "fit", "animated": true },
+    { "source": "fit", "target": "deriv", "animated": true },
+    { "source": "deriv", "target": "log", "animated": true }
+  ]
+}
+```

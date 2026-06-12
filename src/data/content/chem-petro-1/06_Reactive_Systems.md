@@ -57,3 +57,22 @@ Where $\nu_{ij}$ is the stoichiometric coefficient of species $i$ in reaction $j
 In multiple reaction networks, you typically have a desired product and an undesired by-product.
 - **Yield**: (Moles of desired product formed) / (Moles that would have formed if there were no side reactions and the limiting reactant converted completely).
 - **Selectivity**: (Moles of desired product formed) / (Moles of undesired product formed). Higher selectivity means a more efficient and cleaner process.
+
+## 6. Reactive Systems Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "stoic", "data": { "label": "Stoichiometry", "icon": "Box", "description": "Mole ratios." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "react", "data": { "label": "Reactants", "icon": "Activity", "description": "Limiting vs Excess." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "xi", "data": { "label": "Extent of Reaction", "icon": "TrendingUp", "description": "Xi." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "yield", "data": { "label": "Yield/Selectivity", "icon": "Target", "description": "Efficiency." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "stoic", "target": "react", "animated": true },
+    { "source": "react", "target": "xi", "animated": true },
+    { "source": "xi", "target": "yield", "animated": true }
+  ]
+}
+```

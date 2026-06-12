@@ -54,3 +54,22 @@ Stripping uses the exact same thermodynamics, just in reverse.
 *   A clean, inert stripping gas (like steam or nitrogen) enters the bottom.
 *   The solute transfers from the liquid into the gas.
 *   For stripping to be effective, we want the solute to be relatively *insoluble* in the liquid at the operating conditions. Therefore, stripping columns are usually operated at **high temperatures** and **low pressures** (the exact opposite of absorption columns, which prefer low temperatures and high pressures).
+
+## 5. Absorption Mechanics
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "gasin", "data": { "label": "Dirty Gas In", "icon": "CloudRain", "description": "Bottom entry." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "liqin", "data": { "label": "Solvent In", "icon": "Droplet", "description": "Top entry." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "pack", "data": { "label": "Packed Bed", "icon": "Grid", "description": "Continuous mass transfer." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "out", "data": { "label": "Products Out", "icon": "Layers", "description": "Clean gas top, Dirty liquid bottom." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "gasin", "target": "pack", "animated": true },
+    { "source": "liqin", "target": "pack", "animated": true },
+    { "source": "pack", "target": "out", "animated": true }
+  ]
+}
+```

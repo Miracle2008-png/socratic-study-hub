@@ -77,3 +77,24 @@ $$\frac{1}{U_o} = 0.00030 + 0.00024 + 0.0000057 + 0.00040 + 0.00125 = 0.002196 \
 $$U_o = \frac{1}{0.002196} = 455 \, \text{W/m}^2\text{K}$$
 
 Notice that the outside convection (the oil) is the largest single resistance, accounting for over half the total resistance to heat transfer.
+
+## 6. Thermal Resistances
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "hc", "data": { "label": "Hot Convection", "icon": "Droplet", "description": "Bulk to wall." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } },
+    { "id": "hf", "data": { "label": "Hot Fouling", "icon": "AlertCircle", "description": "Scale layer." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "wall", "data": { "label": "Tube Wall", "icon": "Minus", "description": "Conduction." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "cf", "data": { "label": "Cold Fouling", "icon": "AlertTriangle", "description": "Scale layer." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "cc", "data": { "label": "Cold Convection", "icon": "Wind", "description": "Wall to bulk." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "hc", "target": "hf", "animated": true },
+    { "source": "hf", "target": "wall", "animated": true },
+    { "source": "wall", "target": "cf", "animated": true },
+    { "source": "cf", "target": "cc", "animated": true }
+  ]
+}
+```

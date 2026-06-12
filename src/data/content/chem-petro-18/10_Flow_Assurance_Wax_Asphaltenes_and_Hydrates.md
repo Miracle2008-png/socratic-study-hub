@@ -50,3 +50,22 @@ However, it is not normal ice. A hydrate forms when microscopic molecules of Nat
 To prevent hydrates, you must completely remove one of the two ingredients: either the Gas or the Water.
 1.  **Dehydration:** Run the gas through a Glycol tower to remove 100% of the water before it enters the cold pipeline. No water = no ice.
 2.  **Thermodynamic Inhibitors:** If you cannot remove the water (e.g., in the raw well stream), you must continuously pump massive amounts of pure Methanol (alcohol) directly into the subsea pipeline. The alcohol acts exactly like antifreeze in a car engine, chemically dropping the freezing point of the water so low that hydrates cannot physically form.
+
+## 4. Flow Assurance Threats
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "flow", "data": { "label": "Pipeline Flow", "icon": "Waves", "description": "Hot, high-pressure fluid leaves the reservoir." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "wax", "data": { "label": "Paraffin Wax", "icon": "Snowflake", "description": "Temperature drop. Long chains crystallize. Solved by Pigging & Insulation." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "asph", "data": { "label": "Asphaltenes", "icon": "Activity", "description": "Pressure drop. Heavy chains precipitate into black glass. Solved by Solvents." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "hyd", "data": { "label": "Gas Hydrates", "icon": "AlertTriangle", "description": "Gas + Water + Cold = High-pressure ice plugs. Solved by Methanol antifreeze." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "flow", "target": "wax", "animated": true },
+    { "source": "flow", "target": "asph", "animated": true },
+    { "source": "flow", "target": "hyd", "animated": true }
+  ]
+}
+```

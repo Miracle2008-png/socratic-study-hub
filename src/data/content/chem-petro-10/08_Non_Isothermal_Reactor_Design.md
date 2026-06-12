@@ -58,3 +58,23 @@ Depending solely on how you start the reactor up, the exact same CSTR with the e
 3.  **An Unstable Middle State:** (Mathematically exists but physically impossible to maintain).
 
 If the reactor is running safely at the lower steady state, and a tiny burp in the feed temporarily increases the temperature, the reactor can "ignite." The kinetics take over, the heat generation outpaces the cooling jacket, and the reactor spontaneously accelerates to the upper steady state. This is known as **Reactor Runaway**, and it is the cause of most major chemical plant explosions.
+
+## 5. Non-Isothermal Feedback Loop
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "energy", "data": { "label": "Energy Balance", "icon": "Thermometer", "description": "Reaction Heat raises T." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "arr", "data": { "label": "Arrhenius", "icon": "Activity", "description": "Higher T = Faster Rate." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "pfr", "data": { "label": "PFR Hot Spot", "icon": "AlertTriangle", "description": "Spike in tube." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "cstr", "data": { "label": "CSTR Multiple States", "icon": "RefreshCw", "description": "Risk of thermal runaway." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } }
+  ],
+  "edges": [
+    { "source": "energy", "target": "arr", "animated": true },
+    { "source": "arr", "target": "energy", "animated": true },
+    { "source": "arr", "target": "pfr", "animated": true },
+    { "source": "arr", "target": "cstr", "animated": true }
+  ]
+}
+```

@@ -51,3 +51,26 @@ Because each chemical fixes a different problem, modern CEOR utilizes all three 
 3.  **Polymer** is added to make the entire chemical slug thick and viscous, ensuring it sweeps evenly through the rock without fingering.
 
 When executed perfectly, an ASP flood can sweep a reservoir so cleanly that the rock is left completely stripped of oil, achieving total recovery factors exceeding 70%.
+
+## 5. The ASP Chemical Arsenal
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "asp", "data": { "label": "ASP Chemical Injection", "icon": "FlaskConical", "description": "Three chemicals, one ultimate slug." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "alk", "data": { "label": "Alkaline (A)", "icon": "Zap", "description": "Creates natural soap and neutralizes rock." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "surf", "data": { "label": "Surfactant (S)", "icon": "Droplet", "description": "Destroys IFT, freeing the trapped oil droplets." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "poly", "data": { "label": "Polymer (P)", "icon": "Layers", "description": "Thickens the water, preventing viscous fingering." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "recovery", "data": { "label": "70%+ Recovery", "icon": "CheckCircle", "description": "Total sweep of both macroscopic and microscopic oil." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "asp", "target": "alk", "animated": true },
+    { "source": "asp", "target": "surf", "animated": true },
+    { "source": "asp", "target": "poly", "animated": true },
+    { "source": "alk", "target": "recovery", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "surf", "target": "recovery", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "poly", "target": "recovery", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

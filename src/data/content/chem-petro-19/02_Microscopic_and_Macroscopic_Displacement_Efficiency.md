@@ -54,3 +54,22 @@ Imagine a highly engineered **Miscible $CO_2$ Flood**:
 
 Overall Recovery = $0.95 \times 0.50 \times 0.40 = 0.19$ (19%).
 Even though the $CO_2$ works perfectly on a microscopic scale, its terrible macroscopic sweep physics result in a complete economic failure of the project unless the engineer intervenes with WAG (Water-Alternating-Gas) to fix the sweep.
+
+## 4. Compounding Efficiencies of EOR
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "micro", "data": { "label": "Microscopic Displacement (Ed)", "icon": "Microscope", "description": "Destroying capillary forces and Interfacial Tension (e.g. Surfactants, CO2)." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "areal", "data": { "label": "Areal Sweep (Ea)", "icon": "Map", "description": "Fixing viscous fingering across the map (e.g. Polymer Flooding)." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "vertical", "data": { "label": "Vertical Sweep (Ev)", "icon": "ArrowDownToLine", "description": "Fighting gravity override and thief zones (e.g. Surfactant Foams, Packers)." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "overall", "data": { "label": "Overall Recovery (Er)", "icon": "BarChart2", "description": "The final compounding product: Ed × Ea × Ev." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "micro", "target": "areal", "animated": true },
+    { "source": "areal", "target": "vertical", "animated": true },
+    { "source": "vertical", "target": "overall", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

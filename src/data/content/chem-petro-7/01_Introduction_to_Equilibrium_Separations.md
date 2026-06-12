@@ -44,3 +44,22 @@ For distillation, this is called the **relative volatility** ($\alpha_{AB}$).
 *   If $\alpha > 2.0$, separation is relatively easy and requires few stages.
 
 The entire goal of separation design is finding operating conditions (pressures, temperatures) or solvents that maximise this separation factor.
+
+## 5. Process Overview
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "feed", "data": { "label": "Complex Mixture", "icon": "Layers", "description": "Raw material feed." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "phase", "data": { "label": "Phase Creation", "icon": "Thermometer", "description": "Add heat or drop pressure." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "eq", "data": { "label": "Equilibrium Stage", "icon": "RefreshCcw", "description": "Rapid mass & heat transfer." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "sep", "data": { "label": "Phase Separation", "icon": "ArrowRightCircle", "description": "Vapour and Liquid exit." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "feed", "target": "phase", "animated": true },
+    { "source": "phase", "target": "eq", "animated": true },
+    { "source": "eq", "target": "sep", "animated": true }
+  ]
+}
+```

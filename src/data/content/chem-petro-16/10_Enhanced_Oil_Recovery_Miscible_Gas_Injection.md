@@ -46,3 +46,23 @@ To prevent this, engineers use the **WAG Process (Water-Alternating-Gas)**.
 2.  Then, they switch the surface valves and inject a massive slug of heavy Water for 3 months.
 3.  The heavy, viscous water slug acts like a physical wall, pushing the highly mobile $CO_2$ gas forward, preventing it from fingering, and forcing it to sweep evenly across the entire reservoir.
 4.  This cycle is repeated continuously for 20 years.
+
+## 5. The WAG Cycle (Water-Alternating-Gas)
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "gas", "data": { "label": "1. Inject CO2 Gas", "icon": "Cloud", "description": "Achieves miscibility, swelling and thinning the oil." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "finger", "data": { "label": "2. Fingering Threat", "icon": "AlertOctagon", "description": "Highly mobile gas threatens to bypass the oil." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "water", "data": { "label": "3. Inject Heavy Water", "icon": "Waves", "description": "Acts as a physical wall to push the gas forward evenly." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "repeat", "data": { "label": "4. Cycle Repeats", "icon": "RefreshCw", "description": "Continuous switching maximizes Sweep Efficiency." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "gas", "target": "finger", "animated": true },
+    { "source": "finger", "target": "water", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "water", "target": "repeat", "animated": true },
+    { "source": "repeat", "target": "gas", "animated": true, "label": "Next Quarter" }
+  ]
+}
+```

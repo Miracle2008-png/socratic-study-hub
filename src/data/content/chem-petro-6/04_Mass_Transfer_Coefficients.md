@@ -63,3 +63,22 @@ A classic empirical correlation for turbulent flow in a pipe is the Dittus-Boelt
 $$ Sh = 0.023 \, Re^{0.8} \, Sc^{0.33} $$
 
 If you know the fluid velocity and properties, you calculate $Re$ and $Sc$, use the correlation to find $Sh$, and then unpack $Sh$ to find the mass transfer coefficient $k_c$ for your specific equipment.
+
+## 4. Coefficient Estimation Workflow
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "re", "data": { "label": "Reynolds (Re)", "icon": "Wind", "description": "Flow turbulence." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "sc", "data": { "label": "Schmidt (Sc)", "icon": "Move", "description": "Boundary layer ratio." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "sh", "data": { "label": "Sherwood (Sh)", "icon": "Hash", "description": "Function of Re and Sc." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "kc", "data": { "label": "Coefficient (kc)", "icon": "Zap", "description": "Extracted from Sh." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "re", "target": "sh", "animated": true },
+    { "source": "sc", "target": "sh", "animated": true },
+    { "source": "sh", "target": "kc", "animated": true }
+  ]
+}
+```

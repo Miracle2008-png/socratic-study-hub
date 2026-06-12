@@ -59,3 +59,22 @@ Instead of controlling a specific variable, the goal is to keep the ratio of two
 
 For example, feeding fuel gas and oxygen into a furnace. If the fuel gas flow randomly surges, the oxygen flow must instantly surge to match it, maintaining a perfect 1:2 stoichiometric ratio to prevent an explosive buildup of unburnt fuel.
 The "Wild" flow is measured, multiplied by the desired ratio, and used as the instantaneous setpoint for the "Controlled" flow loop.
+
+## 5. Control Strategy Hierarchy
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "feedb", "data": { "label": "Simple Feedback", "icon": "Activity", "description": "Reactionary. Fixes error after it happens." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "casc", "data": { "label": "Cascade Control", "icon": "Layers", "description": "Nested loops. Slave loop catches disturbances instantly." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "feedf", "data": { "label": "Feedforward", "icon": "FastForward", "description": "Proactive. Fixes error before it even hits the process." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "ratio", "data": { "label": "Ratio Control", "icon": "Percent", "description": "Keeps two flows perfectly synchronized (Combustion)." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } }
+  ],
+  "edges": [
+    { "source": "feedb", "target": "casc", "animated": true },
+    { "source": "casc", "target": "feedf", "animated": true },
+    { "source": "feedf", "target": "ratio", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

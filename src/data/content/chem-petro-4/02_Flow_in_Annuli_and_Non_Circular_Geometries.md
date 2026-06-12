@@ -82,3 +82,21 @@ $$\langle v_z \rangle \approx \frac{\Delta P}{L} \cdot \frac{B^2}{3\mu} = \frac{
 $$Re = \frac{\rho \langle v \rangle D_h}{\mu} = \frac{1200 \times 0.041 \times 0.089}{0.02} = 219$$
 
 Flow is **laminar** ($Re \ll 2100$). The annular slit flow model is appropriate.
+
+## 7. Non-Circular Flow Analysis
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "annul", "data": { "label": "Annular Flow", "icon": "Circle", "description": "Asymmetric profile." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "dh", "data": { "label": "Hydraulic Diameter", "icon": "Hash", "description": "Dh = 4A / P." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "slit", "data": { "label": "Slit Flow", "icon": "Minus", "description": "Parallel plates." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "narrow", "data": { "label": "Narrow Annulus", "icon": "Maximize", "description": "Approximates slit flow." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "annul", "target": "narrow", "animated": true },
+    { "source": "slit", "target": "narrow", "animated": true }
+  ]
+}
+```

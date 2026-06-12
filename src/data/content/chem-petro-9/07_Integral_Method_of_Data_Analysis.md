@@ -65,3 +65,22 @@ This is a straight line ($y = mx + b$).
 3. Plot the specific $y$-function against time.
 4. If the $R^2$ value of the linear trendline is very close to 1.0 (a straight line), your guess is correct, and the slope gives you $k$.
 5. If the line is curved, your guess is wrong. Try the next order.
+
+## 5. Integral Workflow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "guess", "data": { "label": "Guess Order", "icon": "HelpCircle", "description": "Try alpha = 0, 1, 2." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "int", "data": { "label": "Integrate", "icon": "Activity", "description": "Form y=mx+b." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "plot", "data": { "label": "Plot Data", "icon": "BarChart2", "description": "Transform C_A vs t." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "check", "data": { "label": "Check Linearity", "icon": "CheckCircle", "description": "Straight line confirms order." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "guess", "target": "int", "animated": true },
+    { "source": "int", "target": "plot", "animated": true },
+    { "source": "plot", "target": "check", "animated": true }
+  ]
+}
+```

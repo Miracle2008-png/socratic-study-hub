@@ -59,3 +59,21 @@ Two advanced cubic equations dominate the petroleum and chemical industries toda
    Where parameters are defined similarly to SRK, but optimized for different behavior.
 
    The PR equation improved upon SRK by modifying the denominator of the attractive term. It provides significantly better predictions of liquid densities and phase equilibrium near the critical point. It is the gold standard for refinery and oil & gas simulation.
+
+## 3. EOS Models Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "vir", "data": { "label": "Virial Equation", "icon": "TrendingUp", "description": "Power series." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "vdw", "data": { "label": "van der Waals", "icon": "Box", "description": "First cubic EOS." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "srk", "data": { "label": "SRK", "icon": "Layers", "description": "T-dependent attraction." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "pr", "data": { "label": "Peng-Robinson", "icon": "Target", "description": "Industry standard." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "vdw", "target": "srk", "animated": true },
+    { "source": "vdw", "target": "pr", "animated": true }
+  ]
+}
+```

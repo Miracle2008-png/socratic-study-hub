@@ -39,4 +39,25 @@ If EOR can recover billions of barrels of trapped oil, why isn't every oil well 
 **Cost.** 
 Primary recovery is practically free (the earth does the work). Secondary waterflooding is cheap (saltwater is free).
 EOR requires building massive, multi-million dollar chemical plants, boiling oceans of water into steam, or laying 500-mile pipelines just to deliver liquid $CO_2$. 
-The chemicals and energy required for EOR are so expensive that the projects are only economically viable when the global price of crude oil is consistently high. If oil drops below \$50 a barrel, almost all Chemical and Thermal EOR projects are instantly shut down because the chemical costs more than the oil it recovers.
+The chemicals and energy required for EOR are so expensive that the projects are only economically viable when the global price of crude oil is consistently high. If oil drops below $50 a barrel, almost all Chemical and Thermal EOR projects are instantly shut down because the chemical costs more than the oil it recovers.
+
+## 4. The Three Phases of Oil Recovery
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "primary", "data": { "label": "Primary Recovery (10-20%)", "icon": "Flame", "description": "Natural earth pressure physically blows the oil to the surface." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "secondary", "data": { "label": "Secondary Recovery (10-20%)", "icon": "Waves", "description": "Massive waterfloods push the oil until water breakthrough occurs." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "thermal", "data": { "label": "Thermal EOR (Heavy Oil)", "icon": "ThermometerSun", "description": "Steam destroys viscosity, melting thick tar into liquid." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "chemical", "data": { "label": "Chemical EOR (Capillary)", "icon": "FlaskConical", "description": "Surfactants and Polymers destroy interfacial tension and fix sweep." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "gas", "data": { "label": "Miscible Gas EOR (Deep)", "icon": "Wind", "description": "High-pressure CO2 dissolves into the oil, eliminating capillary trapping." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } }
+  ],
+  "edges": [
+    { "source": "primary", "target": "secondary", "animated": true },
+    { "source": "secondary", "target": "thermal", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "secondary", "target": "chemical", "animated": true, "style": { "stroke": "#10b981" } },
+    { "source": "secondary", "target": "gas", "animated": true, "style": { "stroke": "#a855f7" } }
+  ]
+}
+```

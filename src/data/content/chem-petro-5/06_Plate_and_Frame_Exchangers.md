@@ -52,3 +52,22 @@ Engineers can mix hard and soft plates in the same pack to precisely match the a
 To overcome the temperature and pressure limitations of gaskets, engineers developed variations:
 - **Brazed Plate Exchangers (BHE):** The plates are brazed together in a vacuum furnace using copper or nickel. No gaskets. Used extensively as evaporators and condensers in commercial refrigeration. They cannot be opened for cleaning.
 - **Welded Plate Exchangers:** The plate edges are laser-welded together. Can handle up to 100 bar and 350°C. They combine the robustness of a shell-and-tube with the efficiency of a plate exchanger, though they are very difficult to clean mechanically.
+
+## 6. PHE Features
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "plates", "data": { "label": "Corrugated Plates", "icon": "Layers", "description": "High turbulence." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "u", "data": { "label": "Massive U Value", "icon": "TrendingUp", "description": "Highly efficient." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "cross", "data": { "label": "Temp Cross", "icon": "Repeat", "description": "Close approaches." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "limit", "data": { "label": "Gasket Limits", "icon": "AlertCircle", "description": "Moderate Temp/Press." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } }
+  ],
+  "edges": [
+    { "source": "plates", "target": "u", "animated": true },
+    { "source": "u", "target": "cross", "animated": true },
+    { "source": "cross", "target": "limit", "animated": true }
+  ]
+}
+```

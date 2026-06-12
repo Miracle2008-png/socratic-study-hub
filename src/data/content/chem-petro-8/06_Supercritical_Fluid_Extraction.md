@@ -39,3 +39,22 @@ Historically, toxic chemical solvents like methylene chloride were used, which l
 4.  The caffeine-loaded $CO_2$ leaves the vessel and enters a scrubber, where water absorbs the caffeine.
 5.  The clean $CO_2$ is re-compressed and recycled.
 6.  The result is decaffeinated coffee with exceptional flavor preservation and zero chemical residue.
+
+## 4. SFE Process Workflow
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "crit", "data": { "label": "Exceed Critical Point", "icon": "Thermometer", "description": "31C and 74 atm for CO2." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "sfe", "data": { "label": "Supercritical Fluid", "icon": "Activity", "description": "Liquid density, gas flow." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "ext", "data": { "label": "Extraction", "icon": "Droplet", "description": "High penetration power." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "flash", "data": { "label": "Depressurization", "icon": "Wind", "description": "CO2 vanishes, leaves pure extract." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "crit", "target": "sfe", "animated": true },
+    { "source": "sfe", "target": "ext", "animated": true },
+    { "source": "ext", "target": "flash", "animated": true }
+  ]
+}
+```

@@ -45,3 +45,22 @@ Leaching equipment must be designed to handle heavy, abrasive solids.
 *   **Shanks System:** A series of massive batch tanks. Solvent is pumped from one tank to the next in a counter-current sequence. When a tank's solids are fully leached, it is emptied and refilled with fresh ore.
 *   **Rotocel Extractor:** A continuous carousel. Wedge-shaped baskets filled with solid rotate slowly in a circle. Fresh solvent is sprayed from above, percolates through the solid bed, drains through a false bottom, and is pumped to the preceding basket.
 *   **Kennedy Extractor:** A series of horizontal paddle wheels that physically scoop the heavy solids up and move them against a counter-current flow of solvent.
+
+## 5. Leaching Mass Transfer
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "grind", "data": { "label": "Solid Grinding", "icon": "Scissors", "description": "Reduce diffusion path." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "in", "data": { "label": "Solvent Penetration", "icon": "ArrowDown", "description": "Solvent diffuses in." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "diss", "data": { "label": "Dissolution", "icon": "Droplet", "description": "Solute dissolves." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "out", "data": { "label": "Outward Diffusion", "icon": "ArrowUp", "description": "Solute to bulk liquid." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "grind", "target": "in", "animated": true },
+    { "source": "in", "target": "diss", "animated": true },
+    { "source": "diss", "target": "out", "animated": true }
+  ]
+}
+```

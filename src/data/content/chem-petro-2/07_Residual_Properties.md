@@ -55,3 +55,23 @@ You cannot simply use $\Delta H = C_p \Delta T$, because the gas is not ideal. I
 4. The total real enthalpy change is: $\Delta H = \Delta H^{ig} + H^R_2 - H^R_1$
 
 This is the exact algorithm running under the hood of process simulators like Aspen Plus whenever you place a compressor or heater on a flowsheet.
+
+## 5. Residual Properties Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "split", "data": { "label": "Real vs Ideal", "icon": "Layers", "description": "M = Mig + Mr." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "ideal", "data": { "label": "Ideal Part", "icon": "ArrowDown", "description": "Heat capacities." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "res", "data": { "label": "Residual Part", "icon": "Activity", "description": "EOS integration." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "real", "data": { "label": "Real Process", "icon": "Target", "description": "Total change." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "split", "target": "ideal", "animated": true },
+    { "source": "split", "target": "res", "animated": true },
+    { "source": "ideal", "target": "real", "animated": true },
+    { "source": "res", "target": "real", "animated": true }
+  ]
+}
+```

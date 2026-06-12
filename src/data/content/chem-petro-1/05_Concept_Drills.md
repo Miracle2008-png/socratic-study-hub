@@ -21,3 +21,22 @@ Test your understanding of Material & Energy Balances with these conceptual scen
 **Scenario:** You are pumping heat into a pot of liquid water at exactly $100^\circ\text{C}$ at 1 atm. You calculate $\dot{Q}$, the rate of heat added. 
 **Question:** Does this heat addition increase the temperature of the water? Where does the enthalpy go?
 **Answer:** No, the temperature remains perfectly locked at $100^\circ\text{C}$ until every drop of water has boiled. The heat added is **latent heat**, which goes entirely into breaking the intermolecular hydrogen bonds holding the liquid water together, causing a phase change into vapor rather than an increase in sensible temperature.
+
+## Concept Drills Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "purge", "data": { "label": "Purge Paradox", "icon": "AlertTriangle", "description": "Accumulation." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "split", "data": { "label": "Splitter", "icon": "Shuffle", "description": "Same composition." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "conv", "data": { "label": "Overall Conv", "icon": "Repeat", "description": "100% with recycle." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "phase", "data": { "label": "Phase Change", "icon": "Thermometer", "description": "Constant T." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "purge", "target": "split", "animated": true },
+    { "source": "split", "target": "conv", "animated": true },
+    { "source": "conv", "target": "phase", "animated": true }
+  ]
+}
+```

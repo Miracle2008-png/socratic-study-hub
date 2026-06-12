@@ -38,3 +38,25 @@ To remove these acid gases, engineers use a process called **Amine Sweetening**,
 3.  **The Chemical Reaction:** Amine chemicals are highly alkaline (basic). As the acidic gas bubbles through the basic liquid amine, a weak, reversible chemical reaction occurs. The liquid amine physically bonds with the $H_2S$ and $CO_2$ molecules, trapping them in the liquid.
 4.  **The Exit:** Perfectly "Sweet" natural gas exits the top of the tower.
 5.  **The Stripper (Regeneration):** The "Rich" amine (now full of toxic acid gas) is pumped to a massive boiler. Because the chemical bond is weak, heating the amine causes the bond to break. The $H_2S$ and $CO_2$ are boiled off, captured, and sent to a specialized chemical plant where the deadly $H_2S$ is safely converted into harmless, solid yellow Sulfur blocks. The pure, "Lean" amine is pumped back to the tower.
+
+## 3. Gas Processing Cycle (Absorption & Regeneration)
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "raw", "data": { "label": "Raw Gas", "icon": "CloudRain", "description": "Wet and Sour. Full of water vapor, H2S, and CO2." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "tower", "data": { "label": "Contactor Tower", "icon": "Trello", "description": "Gas flows up, Glycol/Amine rains down. Chemical absorption occurs." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "sales", "data": { "label": "Pipeline Spec Gas", "icon": "Wind", "description": "Perfectly Dry and Sweet gas exits the top to the sales line." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "rich", "data": { "label": "Rich Liquid Drain", "icon": "Droplet", "description": "Liquid saturated with water/acid drains from the bottom." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "boiler", "data": { "label": "The Reboiler", "icon": "Flame", "description": "Massive heat boils off the water/acid, regenerating the pure liquid." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "raw", "target": "tower", "animated": true },
+    { "source": "tower", "target": "sales", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "tower", "target": "rich", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "rich", "target": "boiler", "animated": true },
+    { "source": "boiler", "target": "tower", "animated": true, "label": "Lean Liquid Return" }
+  ]
+}
+```

@@ -48,3 +48,23 @@ This is the classic optimization trade-off.
 *   **Large $\Delta T_{min}$ (e.g., $40^\circ\text{C}$):** The driving force is huge, so the heat exchangers are small and cheap (Low Capital Cost). However, you recover much less heat, so you must burn more fuel to make up the difference (High Operating Cost).
 
 The optimum $\Delta T_{min}$ is found by calculating the Total Annualized Cost (Capital + Operating) for various values of $\Delta T_{min}$ and finding the minimum of the curve.
+
+## 5. Thermodynamics of the Pinch
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "pinch", "data": { "label": "The Pinch Point", "icon": "Activity", "description": "The critical thermodynamic bottleneck of the plant." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "above", "data": { "label": "Above Pinch (Heat Sink)", "icon": "Thermometer", "description": "Requires external utility heat (Steam/Furnace)." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "below", "data": { "label": "Below Pinch (Heat Source)", "icon": "Droplet", "description": "Requires external utility cooling (Water/Refrigeration)." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "rule", "data": { "label": "Golden Rule", "icon": "XCircle", "description": "NEVER transfer heat from above the pinch to below the pinch." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "pinch", "target": "above", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "pinch", "target": "below", "animated": true, "style": { "stroke": "#3b82f6" } },
+    { "source": "above", "target": "rule", "animated": true },
+    { "source": "below", "target": "rule", "animated": true }
+  ]
+}
+```

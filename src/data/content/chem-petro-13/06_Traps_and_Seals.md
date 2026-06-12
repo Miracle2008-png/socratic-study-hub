@@ -63,3 +63,25 @@ Inside the trap, the fluids segregate themselves flawlessly based on density (gr
 *   **Aquifer (Water Zone):** The heaviest fluid (saltwater brine) sits at the very bottom.
 
 The sharp horizontal boundaries between these fluids are critical engineering parameters known as the **Gas-Oil Contact (GOC)** and the **Oil-Water Contact (OWC)**.
+
+## 5. Trap Formation and Accumulation
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "mig", "data": { "label": "Migrating Oil", "icon": "ArrowUpCircle", "description": "Buoyancy forces oil upward." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "seal", "data": { "label": "Seal Rock", "icon": "Lock", "description": "Impermeable shale stops upward movement." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "struc", "data": { "label": "Structural Trap", "icon": "Activity", "description": "Anticlines, faults, and bent crust catch the oil." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "strat", "data": { "label": "Stratigraphic Trap", "icon": "Layers", "description": "Pinch-outs and ancient beach boundaries catch the oil." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "pool", "data": { "label": "Fluid Segregation", "icon": "Droplet", "description": "Gas on top, Oil in middle, Water on bottom." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "mig", "target": "seal", "animated": true },
+    { "source": "seal", "target": "struc", "animated": true },
+    { "source": "seal", "target": "strat", "animated": true },
+    { "source": "struc", "target": "pool", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "strat", "target": "pool", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

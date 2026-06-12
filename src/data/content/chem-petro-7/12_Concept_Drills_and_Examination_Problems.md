@@ -49,3 +49,18 @@ You are designing a separation process for a heat-sensitive pharmaceutical inter
 **Drill 4:**
 1. You must perform **Vacuum Distillation**. By drastically lowering the operating pressure of the column, you lower the boiling points of the components (per the Antoine equation) so that they boil below the $120^\circ\text{C}$ degradation limit.
 2. You must choose a **Packed Column** (specifically with structured packing). Tray columns have a high pressure drop per stage. If you pull a hard vacuum at the top of a tray column, the pressure drop across 30 trays might cause the pressure at the bottom (the reboiler) to rise high enough that the boiling temperature exceeds $120^\circ\text{C}$. Structured packing has an exceptionally low pressure drop, ensuring the entire column remains under deep vacuum and the temperatures stay safe.
+
+## Equilibrium Separations Summary
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "dist", "data": { "label": "Distillation Limits", "icon": "StopCircle", "description": "Azeotropes block purity." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "mt", "data": { "label": "McCabe-Thiele", "icon": "TrendingUp", "description": "Visual stage analysis." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "abs", "data": { "label": "Absorption Limits", "icon": "Minimize2", "description": "L'min dictates height." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "equip", "data": { "label": "Equipment Choice", "icon": "Settings", "description": "Packing for vacuum/heat-sensitive." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": []
+}
+```

@@ -39,3 +39,24 @@ When a well is drilled, the heavy drilling mud violently invades the porous rock
 *   **The Uninvaded Zone ($R_t$):** Several feet deep into the rock. The mud hasn't reached this far. This is the true, virgin rock holding the untouched oil and water.
 
 The logging tools must be meticulously engineered to "see" past the Flushed Zone and accurately measure the deep, virgin Uninvaded Zone. If a tool only measures the first two inches of rock, it will just measure the drilling mud, completely missing a massive oil reservoir sitting three feet away.
+
+## 4. The Borehole Environment
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "truck", "data": { "label": "Logging Truck", "icon": "Truck", "description": "Surface computers processing millions of data points." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "sonde", "data": { "label": "The Sonde", "icon": "Crosshair", "description": "The physical tool dragged upward through the open hole." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "rxo", "data": { "label": "Flushed Zone (Rxo)", "icon": "Droplet", "description": "Closest to hole. Flooded with drilling mud filtrate." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "trans", "data": { "label": "Transition Zone", "icon": "Activity", "description": "Mixture of mud filtrate and native oil." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "rt", "data": { "label": "Uninvaded Zone (Rt)", "icon": "Database", "description": "Deep virgin rock. The true oil and water target." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "truck", "target": "sonde", "animated": true, "label": "Wireline" },
+    { "source": "sonde", "target": "rxo", "animated": true },
+    { "source": "rxo", "target": "trans", "animated": true },
+    { "source": "trans", "target": "rt", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

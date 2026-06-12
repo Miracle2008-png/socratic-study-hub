@@ -56,3 +56,24 @@ For an oil trap, a fault is a double-edged sword.
 *   **A Sealing Fault:** If a normal fault drops a porous sandstone down against a thick wall of impermeable shale, the fault perfectly traps the oil. Furthermore, the physical grinding of the rocks during the earthquake can pulverize the sand grains into an impermeable clay "fault gouge," sealing the fault completely.
 *   **A Leaking Fault:** If the fault plane remains an open, shattered fracture, it acts as a massive geologic highway. Oil from a deep reservoir will hit the fault and shoot straight up the fracture to the surface, destroying the trap. 
 Geologists spend immense effort calculating "Shale Gouge Ratios" to predict if a specific fault deep underground will seal or leak.
+
+## 5. Tectonic Stress and Deformation
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "stress", "data": { "label": "Tectonic Stress", "icon": "Maximize2", "description": "Immense pressure from shifting continental plates." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "comp", "data": { "label": "Compressional Stress", "icon": "ChevronsRight", "description": "Rocks smashed together." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "ten", "data": { "label": "Tensional Stress", "icon": "ChevronsLeft", "description": "Rocks pulled apart." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "fold", "data": { "label": "Folds & Thrusts", "icon": "Activity", "description": "Creates Anticline traps and mountain ranges." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "norm", "data": { "label": "Normal Faults", "icon": "ArrowDownRight", "description": "Creates rift valleys and dropped block traps." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "stress", "target": "comp", "animated": true },
+    { "source": "stress", "target": "ten", "animated": true },
+    { "source": "comp", "target": "fold", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "ten", "target": "norm", "animated": true, "style": { "stroke": "#3b82f6" } }
+  ]
+}
+```

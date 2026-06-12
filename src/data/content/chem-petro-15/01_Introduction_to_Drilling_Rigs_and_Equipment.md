@@ -46,3 +46,24 @@ A rig runs 24 hours a day, 7 days a week, operated by a highly coordinated crew.
 *   **The Derrickman:** Works high up in the derrick (the "Monkey Board"). His job is to physically catch the top of the heavy steel pipes and rack them vertically as they are pulled out of the hole. He also manages the drilling mud chemistry.
 *   **The Roughnecks (Floorhands):** The physical muscle on the rig floor. They use massive hydraulic wrenches (iron roughnecks) to screw and unscrew the heavy 30-foot joints of drill pipe together as they go into the hole.
 *   **The Company Man:** The ultimate boss. An engineer representing the oil company that owns the well. He sleeps in a trailer on-site and dictates the exact engineering plan for the well.
+
+## 4. The 5 Major Rig Systems
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "power", "data": { "label": "Power System", "icon": "Zap", "description": "Diesel generators provide megawatts of electricity." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "hoist", "data": { "label": "Hoisting System", "icon": "ArrowUpCircle", "description": "Derrick and Drawworks lift the 300,000 lb pipe." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "rotate", "data": { "label": "Rotating System", "icon": "RefreshCw", "description": "Top Drive spins the miles-long drill string." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "circ", "data": { "label": "Circulating System", "icon": "Waves", "description": "Mud pumps flush rock cuttings to the surface." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "bop", "data": { "label": "Well Control", "icon": "Shield", "description": "The BOP prevents catastrophic gas blowouts." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "power", "target": "hoist", "animated": true },
+    { "source": "power", "target": "rotate", "animated": true },
+    { "source": "power", "target": "circ", "animated": true },
+    { "source": "circ", "target": "bop", "animated": true, "style": { "stroke": "#ef4444", "strokeWidth": 2 } }
+  ]
+}
+```

@@ -45,3 +45,22 @@ The Ergun equation is an empirical sum of two distinct physical mechanisms:
 Calculating the $\Delta P$ of a catalytic reactor is crucial. 
 1. If the particles are too small, the pressure drop becomes massive. The compressor required to push the gas through the bed will consume so much electricity that the chemical plant will go bankrupt.
 2. In gas-phase reactions, a high pressure drop means the pressure at the end of the reactor is much lower than at the beginning. As we learned in Reaction Equilibrium, dropping the pressure can ruin the chemical conversion.
+
+## 5. Packed Beds Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "metric", "data": { "label": "Packed Bed Metrics", "icon": "Box", "description": "Porosity & Velocity." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "darcy", "data": { "label": "Darcy's Law", "icon": "Activity", "description": "Laminar flow." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "ergun", "data": { "label": "Ergun Equation", "icon": "TrendingUp", "description": "Viscous + Inertial." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "drop", "data": { "label": "Pressure Drop", "icon": "TrendingDown", "description": "Compression cost." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "metric", "target": "darcy", "animated": true },
+    { "source": "metric", "target": "ergun", "animated": true },
+    { "source": "ergun", "target": "drop", "animated": true }
+  ]
+}
+```

@@ -42,3 +42,24 @@ To transform the raw well fluid into a sellable product, the fluid is routed int
 3.  **Gas Dehydration:** The separated natural gas stream is saturated with invisible water vapor. If this gas is pumped into a cold pipeline, the water will freeze into solid blocks of ice, clogging the pipe. The gas must be bubbled through complex liquid desiccant chemicals (Glycol) to strip the moisture out.
 4.  **Water Disposal:** The toxic, hyper-saline saltwater is routed to massive storage tanks, skimmed to remove any residual oil drops, and then pumped to high-pressure injection pumps to be safely injected miles back underground into disposal wells.
 5.  **Storage and Custody Transfer:** The perfectly clean, stabilized crude oil is routed to massive storage tanks. It then passes through the **LACT Unit (Lease Automatic Custody Transfer)**—a highly calibrated, tamper-proof meter that measures exactly how many barrels of oil flow into the sales pipeline. This meter is the cash register of the oil field.
+
+## 4. Surface Processing Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "well", "data": { "label": "Wellhead (5,000 psi)", "icon": "ArrowUpCircle", "description": "Violent, chaotic mixture of oil, water, and gas arrives at the surface." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "choke", "data": { "label": "The Choke", "icon": "Settings", "description": "Massive friction drop. Fluid hits Sonic Velocity (Mach 1) for isolation." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "sep", "data": { "label": "Phase Separation", "icon": "SplitSquareHorizontal", "description": "Gravity splits the bulk gas, liquid oil, and saltwater into three streams." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "treat", "data": { "label": "Treatment & Dehydration", "icon": "FlaskConical", "description": "Heaters break oil emulsions. Glycol strips water vapor from the gas." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "lact", "data": { "label": "LACT Sales Meter", "icon": "DollarSign", "description": "Perfectly clean pipeline-spec oil is metered and sold. The cash register." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "well", "target": "choke", "animated": true },
+    { "source": "choke", "target": "sep", "animated": true, "style": { "stroke": "#ef4444" }, "label": "Drop to 500 psi" },
+    { "source": "sep", "target": "treat", "animated": true },
+    { "source": "treat", "target": "lact", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

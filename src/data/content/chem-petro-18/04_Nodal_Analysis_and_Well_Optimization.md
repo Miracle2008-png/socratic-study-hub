@@ -56,3 +56,22 @@ If the well is dead (no intersection), how do we fix it?
 We add Artificial Lift (like an Electric Submersible Pump). 
 *   The pump adds artificial pressure exactly at the Node. 
 *   This artificial energy physically pulls the VLP curve downward, violently forcing it to intersect with the depleted IPR curve, instantly reviving the well and restoring massive flow rates.
+
+## 4. Nodal Analysis Intersection
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "ipr", "data": { "label": "Inflow (IPR)", "icon": "Database", "description": "The Supply Curve. Downward sloping. What the rock can deliver." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "vlp", "data": { "label": "Outflow (VLP)", "icon": "ArrowUp", "description": "The Demand Curve. J-shaped. The pressure required to lift fluid." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "node", "data": { "label": "The Node", "icon": "Crosshair", "description": "The physical sandface. Pinflow MUST equal Poutflow." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "intersect", "data": { "label": "Operating Point", "icon": "BarChart2", "description": "The exact intersection dictates the daily flow rate and flowing pressure." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "ipr", "target": "node", "animated": true },
+    { "source": "vlp", "target": "node", "animated": true },
+    { "source": "node", "target": "intersect", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

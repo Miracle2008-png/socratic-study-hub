@@ -30,3 +30,22 @@ Chemical engineering problems are highly interconnected. An arithmetic error on 
 
 - **The Redundant Boundary Check**: If you solved a 3-unit process by performing balances on Unit 1, Unit 2, and Unit 3, you have used all your independent equations. However, you have NOT used the overall process boundary equations. Take your final answers and plug them into the overall mass balance. If $\text{Input} \neq \text{Output}$ for the overall process, you have an algebra mistake somewhere inside.
 - **Sanity Checks**: Are mass fractions negative? Are they greater than 1? Are flow rates negative? Did the temperature drop in a heavily exothermic reactor without cooling? If so, something is wrong.
+
+## 4. Problem Solving Strategy Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "flow", "data": { "label": "Flowchart", "icon": "Map", "description": "Map & label." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "dof", "data": { "label": "DOF Analysis", "icon": "Target", "description": "Find NDF=0." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "eq", "data": { "label": "Equations", "icon": "Code", "description": "Solve math." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "verify", "data": { "label": "Verify", "icon": "CheckCircle", "description": "Sanity checks." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "flow", "target": "dof", "animated": true },
+    { "source": "dof", "target": "eq", "animated": true },
+    { "source": "eq", "target": "verify", "animated": true }
+  ]
+}
+```

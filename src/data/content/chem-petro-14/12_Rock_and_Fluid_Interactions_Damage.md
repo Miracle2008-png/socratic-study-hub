@@ -41,3 +41,23 @@ If a well has a massive positive Skin Factor, the reservoir engineer must perfor
     If the damage is severe, the engineer will pump a massive volume of highly corrosive Hydrochloric Acid (HCl) or Hydrofluoric Acid (HF) straight down the wellbore. The acid eats its way into the rock, chemically dissolving the clay plugs, the mud filter cake, and the actual rock grains themselves. This chemically clears the pore throats and restores the permeability ($S$ drops back to 0).
 2.  **Hydraulic Fracturing (Fracking):** 
     If the rock itself is inherently terrible (like a shale with 0.001 mD permeability), acid won't help. The engineer pumps millions of gallons of water and sand down the well at astronomical pressures. The pressure physically rips the rock apart, creating a massive, 500-foot-long crack in the earth extending away from the wellbore. The sand props the crack open when the pressure is released. You have bypassed the damaged zone entirely and created a massive super-highway for the oil to flow into the well ($S$ drops to -5).
+
+## 4. Resolving Formation Damage
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "damage", "data": { "label": "Formation Damage", "icon": "XCircle", "description": "Drilling mud plugs pores. Skin (S) > 0." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "acid", "data": { "label": "Matrix Acidizing", "icon": "Beaker", "description": "Acid dissolves damage. Skin (S) = 0." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "frac", "data": { "label": "Hydraulic Fracturing", "icon": "Zap", "description": "Massive crack bypasses damage. Skin (S) < 0." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "flow", "data": { "label": "Maximized Flow", "icon": "CheckCircle", "description": "Well production fully restored." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "damage", "target": "acid", "animated": true },
+    { "source": "damage", "target": "frac", "animated": true },
+    { "source": "acid", "target": "flow", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "frac", "target": "flow", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

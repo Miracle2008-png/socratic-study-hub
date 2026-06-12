@@ -71,3 +71,22 @@ Where:
 - **$P$**: Total pressure.
 
 The fugacity coefficient is calculated entirely from an Equation of State (like SRK or PR) using calculus, specifically by integrating the compressibility factor $Z$ over pressure. This allows us to calculate the vapor-phase fugacity required for equilibrium calculations.
+
+## 4. Equilibrium Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "chem", "data": { "label": "Chemical Potential", "icon": "Activity", "description": "Driving force." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "eq", "data": { "label": "Phase Equilibrium", "icon": "Shuffle", "description": "Equal potentials." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "fug", "data": { "label": "Fugacity", "icon": "Box", "description": "Effective pressure." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "coef", "data": { "label": "Fugacity Coef", "icon": "Percent", "description": "Non-ideality." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "chem", "target": "eq", "animated": true },
+    { "source": "chem", "target": "fug", "animated": true },
+    { "source": "fug", "target": "coef", "animated": true }
+  ]
+}
+```

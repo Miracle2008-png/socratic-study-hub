@@ -59,3 +59,22 @@ There is a 76% chance the well will be a completely dry hole.
 The executives then calculate the **Expected Monetary Value (EMV)** to decide if they should drill:
 $$ \text{EMV} = (\text{Reward of Success} \times \text{Probability of Success}) - (\text{Cost of Dry Hole} \times \text{Probability of Failure}) $$
 If the EMV is positive, the \$100 million gamble is statistically worth taking.
+
+## 5. From Discovery to Decision
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "ooip", "data": { "label": "OOIP", "icon": "Box", "description": "Total volume of oil physically trapped in the rock." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "rf", "data": { "label": "Recovery Factor", "icon": "ArrowUpCircle", "description": "Percentage we can actually pump out (10-40%)." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "reserves", "data": { "label": "Proved Reserves", "icon": "DollarSign", "description": "The final amount of sellable oil." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "emv", "data": { "label": "EMV Decision", "icon": "Activity", "description": "Expected Monetary Value justifies drilling the well." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "ooip", "target": "rf", "animated": true },
+    { "source": "rf", "target": "reserves", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "reserves", "target": "emv", "animated": true }
+  ]
+}
+```

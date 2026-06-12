@@ -56,3 +56,22 @@ To solve a flash drum material balance, you must simultaneously solve:
 3. The equilibrium relationships for every component ($y_i P = x_i P^*_i$)
 
 This creates a system of non-linear equations that often requires iterative calculation or computer solvers to find the exact amounts of Vapor ($V$) and Liquid ($L$) produced.
+
+## 5. Phase Equilibrium Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "vp", "data": { "label": "Vapor Pressure", "icon": "Activity", "description": "Antoine Eq." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "raoult", "data": { "label": "Raoult's Law", "icon": "Circle", "description": "Ideal mixtures." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "henry", "data": { "label": "Henry's Law", "icon": "Box", "description": "Dilute species." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "flash", "data": { "label": "Flash Drums", "icon": "Layers", "description": "Separation." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "vp", "target": "raoult", "animated": true },
+    { "source": "raoult", "target": "henry", "animated": true },
+    { "source": "vp", "target": "flash", "animated": true }
+  ]
+}
+```

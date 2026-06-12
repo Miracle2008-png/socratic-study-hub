@@ -45,3 +45,21 @@ $$ Z = N_{OG} \times H_{OG} $$
 2.  **$H_{OG}$ (Height of an Overall Gas Transfer Unit):** A physical property of the specific packing material and the fluid velocities (measured in meters). It represents how "efficient" the packing is at mass transfer. It is calculated using complex mass transfer coefficient correlations ($k_y a$).
     $$ H_{OG} = \frac{V}{K_y a \cdot A_{\text{cross-section}}} $$
     (A highly efficient structured packing might have an $H_{OG}$ of 0.3 meters. A cheap, dumped packing might have an $H_{OG}$ of 1.5 meters).
+
+## 4. Column Internals
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "tray", "data": { "label": "Tray Columns", "icon": "Layers", "description": "Discrete stages, handles solids." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "pack", "data": { "label": "Packed Columns", "icon": "Grid", "description": "Continuous, low pressure drop." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "rand", "data": { "label": "Random Packing", "icon": "Box", "description": "Cheap, corrosion resistant." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "struct", "data": { "label": "Structured", "icon": "Maximize2", "description": "Expensive, high efficiency." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "pack", "target": "rand", "animated": true },
+    { "source": "pack", "target": "struct", "animated": true }
+  ]
+}
+```

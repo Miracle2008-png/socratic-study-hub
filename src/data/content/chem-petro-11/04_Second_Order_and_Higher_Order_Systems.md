@@ -59,3 +59,22 @@ It is a well-known mathematical trick that if you put many sluggish, first-order
 Engineers routinely approximate complex 10th-order distillation column dynamics by simply fitting an empirical First-Order Plus Dead Time model to the data:
 $G(s) \approx \frac{K_p e^{-\theta s}}{\tau s + 1}$. 
 The numerous small lags in the higher-order system combine to mimic a pure physical dead time delay $\theta$. This approximation is the cornerstone of industrial controller tuning.
+
+## 5. Second-Order Damping Regimes
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "zeta", "data": { "label": "Damping Factor (Zeta)", "icon": "Sliders", "description": "Determines the shape of the dynamic response." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "over", "data": { "label": "Overdamped (Zeta > 1)", "icon": "TrendingUp", "description": "Sluggish, smooth S-curve. No overshoot." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "crit", "data": { "label": "Critically Damped (Zeta = 1)", "icon": "CheckCircle", "description": "Fastest response without overshooting." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "under", "data": { "label": "Underdamped (Zeta < 1)", "icon": "Activity", "description": "Bouncy, oscillating response with overshoot." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } }
+  ],
+  "edges": [
+    { "source": "zeta", "target": "over", "animated": true },
+    { "source": "zeta", "target": "crit", "animated": true },
+    { "source": "zeta", "target": "under", "animated": true, "style": { "stroke": "#ef4444" } }
+  ]
+}
+```

@@ -39,3 +39,22 @@ It is primarily used to separate azeotropic mixtures (like 95% ethanol and 5% wa
 The separation is not driven by boiling point (volatility). It is driven entirely by the polymer's chemical affinity. A hydrophilic polymer "loves" water and "hates" ethanol, so only the water is allowed to dissolve and pass through.
 
 Pervaporation is incredibly energy-efficient compared to azeotropic distillation (which requires adding a toxic third component like benzene to break the azeotrope and massive amounts of steam). In pervaporation, you only supply the latent heat of vaporization for the 5% water that crosses the membrane, not the 95% ethanol that stays behind.
+
+## 3. Solution-Diffusion Model
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "sorp", "data": { "label": "Sorption (Solubility)", "icon": "Droplet", "description": "Molecule dissolves into polymer." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "diff", "data": { "label": "Diffusion (Mobility)", "icon": "Activity", "description": "Wriggling through chains." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "desorp", "data": { "label": "Desorption", "icon": "Wind", "description": "Molecule leaves membrane." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "perv", "data": { "label": "Pervaporation", "icon": "Filter", "description": "Liquid feed -> Vapor permeate." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "sorp", "target": "diff", "animated": true },
+    { "source": "diff", "target": "desorp", "animated": true },
+    { "source": "desorp", "target": "perv", "animated": true }
+  ]
+}
+```

@@ -55,3 +55,24 @@ It is almost completely unaffected by porosity or the fluids inside the rock. It
 *   **Limestone ($CaCO_3$):** PEF always reads ~5.1
 
 If the petrophysicist is confused about the lithology (maybe the Gamma Ray is broken or confusing), they just look at the PEF curve. If it reads a flat 5.1, the rock is unequivocally, chemically Limestone.
+
+## 5. Density Log Physics & Interpretation
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "source", "data": { "label": "Gamma Ray Source", "icon": "Radio", "description": "Fires high-energy radiation sideways into the rock wall." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "density", "data": { "label": "Bulk Density (Rhob)", "icon": "Layers", "description": "Measures returning gamma rays after electron collisions." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "calc", "data": { "label": "Porosity Equation", "icon": "Calculator", "description": "Combines Matrix Density, Bulk Density, and Fluid Density." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "por", "data": { "label": "Density Porosity", "icon": "Circle", "description": "Accurate calculation of the empty pore space." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "pef", "data": { "label": "PEF Curve", "icon": "Target", "description": "Reads low-energy returns to definitively identify Lithology." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } }
+  ],
+  "edges": [
+    { "source": "source", "target": "density", "animated": true },
+    { "source": "density", "target": "calc", "animated": true },
+    { "source": "calc", "target": "por", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "density", "target": "pef", "animated": true, "style": { "stroke": "#ef4444" } }
+  ]
+}
+```

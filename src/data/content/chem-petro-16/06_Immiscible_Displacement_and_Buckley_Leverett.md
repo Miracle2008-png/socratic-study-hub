@@ -50,3 +50,24 @@ The most terrifying moment in a waterflood project is **Water Breakthrough**.
 *   Because the saturation jumps instantly at the front, the well's production crashes overnight. In a single week, the well goes from 0% water cut to 80% water cut. 
 
 Using Buckley-Leverett theory, the reservoir engineer can calculate the exact velocity of this shock front by drawing a tangent line on the Fractional Flow curve. This allows them to predict the exact month and year that the massive wall of water will hit the producing well, allowing the company to plan their finances accordingly.
+
+## 5. Buckley-Leverett Shock Front
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "inj", "data": { "label": "Injection Well", "icon": "ArrowRightCircle", "description": "Pumping ocean water into the reservoir." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "sweep", "data": { "label": "Swept Zone", "icon": "Waves", "description": "Behind the front. Flowing mostly water, dragging trapped oil." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } },
+    { "id": "shock", "data": { "label": "The Shock Front", "icon": "Zap", "description": "Violent, instantaneous jump in water saturation." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "unswept", "data": { "label": "Unswept Zone", "icon": "Droplet", "description": "Ahead of the front. Flowing 100% pure oil." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "prod", "data": { "label": "Producing Well", "icon": "CheckCircle", "description": "Producing pure oil... until the massive Water Breakthrough." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "inj", "target": "sweep", "animated": true },
+    { "source": "sweep", "target": "shock", "animated": true },
+    { "source": "shock", "target": "unswept", "animated": true, "style": { "stroke": "#ef4444", "strokeWidth": 2 } },
+    { "source": "unswept", "target": "prod", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 }, "label": "Pure Oil" }
+  ]
+}
+```

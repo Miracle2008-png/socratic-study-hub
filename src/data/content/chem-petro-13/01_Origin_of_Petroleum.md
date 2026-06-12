@@ -50,3 +50,22 @@ The cooking process happens in specific stages:
 4.  **Destruction ($>200^\circ\text{C}$):** If it gets hotter than this, the hydrocarbons are completely destroyed, leaving behind nothing but pure, worthless carbon graphite.
 
 This means oil is incredibly rare. It requires a perfect storm: billions of dead algae, buried in an oxygen-free environment, and cooked to the *exact* perfect temperature—not too cold, and not too hot.
+
+## 5. The Geologic Cooking Process
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "plankton", "data": { "label": "Marine Plankton", "icon": "Waves", "description": "Microscopic life dies and settles in anoxic ocean mud." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "kerogen", "data": { "label": "Diagenesis (<50°C)", "icon": "Layers", "description": "Mud compresses into Black Shale. Organics become waxy Kerogen." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "oil", "data": { "label": "Catagenesis (60-150°C)", "icon": "Droplet", "description": "The Oil Window. Heat cracks kerogen into liquid crude oil." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "gas", "data": { "label": "Metagenesis (150-200°C)", "icon": "Cloud", "description": "The Gas Window. Liquid oil cracks into Methane gas." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } }
+  ],
+  "edges": [
+    { "source": "plankton", "target": "kerogen", "animated": true },
+    { "source": "kerogen", "target": "oil", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "oil", "target": "gas", "animated": true, "style": { "stroke": "#ef4444" } }
+  ]
+}
+```

@@ -44,3 +44,26 @@ The NMR tool is considered the "holy grail" of modern wireline logging for sever
 *   **Lithology Independent:** It only manipulates Hydrogen protons. It completely ignores the solid rock matrix (Quartz, Calcite). You do not need to know the matrix density or the lithology. The tool directly measures the absolute volume of the fluid.
 *   **Permeability Estimation:** Because permeability is directly controlled by the size of the pore throats, and the NMR tool directly measures the size of the pores, the NMR tool is the only wireline log in existence that can accurately provide a continuous, mathematical calculation of Absolute Permeability ($k$) without needing a physical rock core. 
 *   **Heavy Oil Viscosity:** By looking at how the complex hydrocarbon molecules relax, advanced NMR techniques can actually estimate the viscosity of the heavy crude oil directly inside the rock, telling the engineer if the oil is thin enough to flow, or if they will need to build massive steam-injection facilities to melt it.
+
+## 5. NMR T2 Relaxation & Fluid Mobility
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "nmr", "data": { "label": "NMR Tool", "icon": "Magnet", "description": "Magnetic field aligns and tips hydrogen protons." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "t2", "data": { "label": "T2 Relaxation Time", "icon": "Activity", "description": "Measures how fast protons snap back into alignment." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "micro", "data": { "label": "Short T2 (Micro Pores)", "icon": "Minimize2", "description": "Protons hit rock walls instantly." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "bvi", "data": { "label": "Bound Fluid (BVI)", "icon": "Lock", "description": "Capillary trapped fluid. Zero Permeability." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "large", "data": { "label": "Long T2 (Large Pores)", "icon": "Maximize2", "description": "Protons relax slowly in open space." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "ffi", "data": { "label": "Free Fluid (FFI)", "icon": "Droplet", "description": "Mobile oil/water. Excellent Permeability." }, "style": { "background": "#064e3b", "color": "#ecfdf5" } }
+  ],
+  "edges": [
+    { "source": "nmr", "target": "t2", "animated": true },
+    { "source": "t2", "target": "micro", "animated": true },
+    { "source": "micro", "target": "bvi", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "t2", "target": "large", "animated": true },
+    { "source": "large", "target": "ffi", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

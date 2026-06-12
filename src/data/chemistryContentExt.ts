@@ -41,6 +41,28 @@ Where:
 1.  Maximize multiplicity (highest $2S+1$).
 2.  Maximize total orbital angular momentum (highest $L$) for a given multiplicity.
 3.  For subshells less than half-full, choose minimum $J$. For subshells more than half-full, choose maximum $J$.
+
+```diagram
+{
+  "nodes": [
+    {"id": "1", "type": "input", "data": {"label": "Atomic Model"}, "position": {"x": 250, "y": 0}},
+    {"id": "2", "data": {"label": "Bohr Model (n, orbits)"}, "position": {"x": 100, "y": 100}},
+    {"id": "3", "data": {"label": "Quantum Model (Orbitals)"}, "position": {"x": 400, "y": 100}},
+    {"id": "4", "data": {"label": "n (Size/Energy)"}, "position": {"x": 250, "y": 200}},
+    {"id": "5", "data": {"label": "l (Shape)"}, "position": {"x": 400, "y": 200}},
+    {"id": "6", "data": {"label": "ml (Orientation)"}, "position": {"x": 550, "y": 200}},
+    {"id": "7", "data": {"label": "Term Symbols"}, "position": {"x": 400, "y": 300}}
+  ],
+  "edges": [
+    {"id": "e1-2", "source": "1", "target": "2"},
+    {"id": "e1-3", "source": "1", "target": "3"},
+    {"id": "e3-4", "source": "3", "target": "4"},
+    {"id": "e3-5", "source": "3", "target": "5"},
+    {"id": "e3-6", "source": "3", "target": "6"},
+    {"id": "e3-7", "source": "3", "target": "7"}
+  ]
+}
+```
 `,
 
   'Organic Chemistry I: Structure, Nomenclature & Stereochemistry': `
@@ -109,6 +131,24 @@ Cyclohexane relieves angle and torsional strain by puckering into a **chair conf
 *   **Equatorial bonds** point outward along the equator.
 *   **Ring Flip**: When cyclohexane undergoes a chair flip, all axial bonds become equatorial, and all equatorial bonds become axial. Up stays up, down stays down.
 *   **1,3-Diaxial Interactions**: Bulky groups strongly prefer the equatorial position. If a bulky group (like *tert*-butyl) is axial, its electron cloud heavily clashes with the axial hydrogens on carbons 3 and 5. The energy difference between the axial and equatorial forms is quantified by the **A-value**. For *tert*-butyl, the A-value is so large ($\\approx 5.0$ kcal/mol) that it effectively "locks" the ring, preventing the ring flip.
+
+```diagram
+{
+  "nodes": [
+    {"id": "1", "type": "input", "data": {"label": "Isomers"}, "position": {"x": 250, "y": 0}},
+    {"id": "2", "data": {"label": "Constitutional Isomers"}, "position": {"x": 100, "y": 100}},
+    {"id": "3", "data": {"label": "Stereoisomers"}, "position": {"x": 400, "y": 100}},
+    {"id": "4", "data": {"label": "Enantiomers (Chiral)"}, "position": {"x": 250, "y": 200}},
+    {"id": "5", "data": {"label": "Diastereomers"}, "position": {"x": 550, "y": 200}}
+  ],
+  "edges": [
+    {"id": "e1-2", "source": "1", "target": "2"},
+    {"id": "e1-3", "source": "1", "target": "3"},
+    {"id": "e3-4", "source": "3", "target": "4"},
+    {"id": "e3-5", "source": "3", "target": "5"}
+  ]
+}
+```
 `,
 
   'Organic Chemistry II: Hydrocarbon Reactions & Mechanisms': `
@@ -188,6 +228,24 @@ Benzene acts as a nucleophile, attacking exceptionally strong electrophiles to t
 ### Directing Effects
 *   **Activating Groups (Ortho/Para Directors)**: Groups with lone pairs ($-OH, -NH_2, -OR$) donate electron density via resonance. They stabilize the ortho/para Sigma complex intermediates because the positive charge can be placed directly adjacent to the heteroatom, allowing the lone pair to form a stabilizing $\\pi$ bond (giving all atoms a full octet).
 *   **Deactivating Groups (Meta Directors)**: Groups with partial positive charges ($-NO_2, -C \\equiv N, -C=O$) withdraw electron density via inductive and resonance effects. They direct meta because ortho/para attacks force the positive charge of the intermediate to sit directly next to the positively charged substituent, causing intense electrostatic repulsion.
+
+```diagram
+{
+  "nodes": [
+    {"id": "1", "type": "input", "data": {"label": "Substitution Reactions"}, "position": {"x": 250, "y": 0}},
+    {"id": "2", "data": {"label": "SN1 Mechanism"}, "position": {"x": 100, "y": 100}},
+    {"id": "3", "data": {"label": "SN2 Mechanism"}, "position": {"x": 400, "y": 100}},
+    {"id": "4", "data": {"label": "Two-step, Carbocation"}, "position": {"x": 100, "y": 200}},
+    {"id": "5", "data": {"label": "Concerted, Inversion"}, "position": {"x": 400, "y": 200}}
+  ],
+  "edges": [
+    {"id": "e1-2", "source": "1", "target": "2"},
+    {"id": "e1-3", "source": "1", "target": "3"},
+    {"id": "e2-4", "source": "2", "target": "4"},
+    {"id": "e3-5", "source": "3", "target": "5"}
+  ]
+}
+```
 `,
 
   'Organic Chemistry III: Carbonyls, Alcohols & Amines': `
@@ -249,6 +307,24 @@ Because these derivatives have leaving groups (unlike ketones), the tetrahedral 
 ### Fischer Esterification
 Carboxylic Acid + Alcohol $\\rightleftharpoons$ Ester + Water.
 *   **Mechanism**: Completely acid-catalyzed and fully reversible. The carbonyl is protonated to make it ultra-electrophilic. The alcohol attacks, forming a tetrahedral intermediate. Proton transfers turn the original $-OH$ group into $-OH_2^+$, an excellent leaving group. The oxygen lone pair pushes down, kicking out water and reforming the carbonyl. To drive the reaction forward, Le Chatelier's principle is used by removing water via a Dean-Stark trap.
+
+```diagram
+{
+  "nodes": [
+    {"id": "1", "type": "input", "data": {"label": "Carbonyl Compounds"}, "position": {"x": 250, "y": 0}},
+    {"id": "2", "data": {"label": "Aldehydes & Ketones"}, "position": {"x": 100, "y": 100}},
+    {"id": "3", "data": {"label": "Carboxylic Acids"}, "position": {"x": 400, "y": 100}},
+    {"id": "4", "data": {"label": "Nucleophilic Addition"}, "position": {"x": 100, "y": 200}},
+    {"id": "5", "data": {"label": "Acyl Substitution"}, "position": {"x": 400, "y": 200}}
+  ],
+  "edges": [
+    {"id": "e1-2", "source": "1", "target": "2"},
+    {"id": "e1-3", "source": "1", "target": "3"},
+    {"id": "e2-4", "source": "2", "target": "4"},
+    {"id": "e3-5", "source": "3", "target": "5"}
+  ]
+}
+```
 `,
 
   'Organic Chemistry IV: Spectroscopy & Structural Determination': `
@@ -306,6 +382,22 @@ Mass spec does not use light. It bombards a molecule with a brutal beam of high-
     *   **Bromine ($Br$)**: Exists naturally as $50.7\\%$ $^{79}Br$ and $49.3\\%$ $^{81}Br$. A molecule containing one Bromine will show an $M$ peak and an $M+2$ peak of **equal height** (1:1 ratio).
     *   **Chlorine ($Cl$)**: Exists naturally as $75\\%$ $^{35}Cl$ and $25\\%$ $^{37}Cl$. A molecule with one Chlorine will show an $M$ and $M+2$ peak in a **3:1 ratio**.
     *   **The Nitrogen Rule**: If a molecule has an *odd* nominal mass, it must contain an *odd* number of nitrogen atoms.
+
+```diagram
+{
+  "nodes": [
+    {"id": "1", "type": "input", "data": {"label": "Spectroscopy"}, "position": {"x": 300, "y": 0}},
+    {"id": "2", "data": {"label": "IR (Functional Groups)"}, "position": {"x": 100, "y": 100}},
+    {"id": "3", "data": {"label": "NMR (Skeleton)"}, "position": {"x": 500, "y": 100}},
+    {"id": "4", "data": {"label": "MS (Molecular Weight)"}, "position": {"x": 300, "y": 200}}
+  ],
+  "edges": [
+    {"id": "e1-2", "source": "1", "target": "2"},
+    {"id": "e1-3", "source": "1", "target": "3"},
+    {"id": "e1-4", "source": "1", "target": "4"}
+  ]
+}
+```
 `,
 
   'Reaction kinetics': `
@@ -353,6 +445,22 @@ Where:
 *   $\\kappa$ is the transmission coefficient.
 *   $\\Delta G^{\\ddagger}$ is the Gibbs free energy of activation.
 *   $k_B$ and $h$ are the Boltzmann and Planck constants.
+
+```diagram
+{
+  "nodes": [
+    {"id": "1", "type": "input", "data": {"label": "Reaction Kinetics"}, "position": {"x": 250, "y": 0}},
+    {"id": "2", "data": {"label": "Rate Laws"}, "position": {"x": 100, "y": 100}},
+    {"id": "3", "data": {"label": "Arrhenius Eq"}, "position": {"x": 400, "y": 100}},
+    {"id": "4", "data": {"label": "Catalysis"}, "position": {"x": 250, "y": 200}}
+  ],
+  "edges": [
+    {"id": "e1-2", "source": "1", "target": "2"},
+    {"id": "e1-3", "source": "1", "target": "3"},
+    {"id": "e1-4", "source": "1", "target": "4"}
+  ]
+}
+```
 `,
 
   'Material & Energy Balances (Chemical Engineering)': `
@@ -475,6 +583,23 @@ When solving an energy balance for a reactor:
 
 ### Adiabatic Flame Temperature
 If a reactor (like a combustion chamber) is perfectly insulated, $\\dot{Q} = 0$. The **adiabatic flame temperature** is the theoretical maximum temperature the products can reach. All the energy released by the exothermic reaction goes entirely into heating the product gases. You solve for $T_{out}$ iteratively such that $\\Delta \\dot{H} = 0$.
+
+```diagram
+{
+  "nodes": [
+    {"id": "1", "type": "input", "data": {"label": "Engineering Balances"}, "position": {"x": 250, "y": 0}},
+    {"id": "2", "data": {"label": "Material Balances"}, "position": {"x": 100, "y": 100}},
+    {"id": "3", "data": {"label": "Energy Balances"}, "position": {"x": 400, "y": 100}},
+    {"id": "4", "data": {"label": "Steady-State vs Dynamic"}, "position": {"x": 250, "y": 200}}
+  ],
+  "edges": [
+    {"id": "e1-2", "source": "1", "target": "2"},
+    {"id": "e1-3", "source": "1", "target": "3"},
+    {"id": "e2-4", "source": "2", "target": "4"},
+    {"id": "e3-4", "source": "3", "target": "4"}
+  ]
+}
+```
 `,
 
   'Hybridization & VSEPR Theory': `
@@ -564,5 +689,24 @@ For elements in Period 3 or below (like P, S, Cl), empty $d$ orbitals can partic
 | **Strength** | Very strong | Weaker than $\\sigma$ bonds |
 | **Rotation** | Free rotation is allowed | Rotation is highly restricted (breaking the $\\pi$ bond is required) |
 | **Order** | Always the first bond formed | Only exists in double or triple bonds |
+
+```diagram
+{
+  "nodes": [
+    {"id": "1", "type": "input", "data": {"label": "Molecular Geometry"}, "position": {"x": 250, "y": 0}},
+    {"id": "2", "data": {"label": "VSEPR Theory"}, "position": {"x": 100, "y": 100}},
+    {"id": "3", "data": {"label": "Orbital Hybridization"}, "position": {"x": 400, "y": 100}},
+    {"id": "4", "data": {"label": "Steric Number"}, "position": {"x": 250, "y": 200}},
+    {"id": "5", "data": {"label": "sp, sp2, sp3, sp3d"}, "position": {"x": 250, "y": 300}}
+  ],
+  "edges": [
+    {"id": "e1-2", "source": "1", "target": "2"},
+    {"id": "e1-3", "source": "1", "target": "3"},
+    {"id": "e2-4", "source": "2", "target": "4"},
+    {"id": "e3-4", "source": "3", "target": "4"},
+    {"id": "e4-5", "source": "4", "target": "5"}
+  ]
+}
+```
 `
 };

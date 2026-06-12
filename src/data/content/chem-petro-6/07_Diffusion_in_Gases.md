@@ -51,3 +51,23 @@ $$ D_{KA} = \frac{d_{\text{pore}}}{3} \sqrt{\frac{8 R T}{\pi M_A}} $$
 
 In real catalyst pores, diffusion is often in the "transition regime" where both bulk diffusion and Knudsen diffusion are significant. The effective diffusivity is found by adding the resistances in series:
 $$ \frac{1}{D_{\text{effective}}} = \frac{1}{D_{AB}} + \frac{1}{D_{KA}} $$
+
+## 4. Gas Diffusion Regimes
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "kin", "data": { "label": "Kinetic Theory", "icon": "Wind", "description": "Basis for gas models." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "bulk", "data": { "label": "Bulk Diffusion", "icon": "Users", "description": "Molecule collisions." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "knud", "data": { "label": "Knudsen Diffusion", "icon": "Maximize2", "description": "Wall collisions." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "eff", "data": { "label": "Effective Diffusivity", "icon": "Layers", "description": "Resistances in series." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "kin", "target": "bulk", "animated": true },
+    { "source": "kin", "target": "knud", "animated": true },
+    { "source": "bulk", "target": "eff", "animated": true },
+    { "source": "knud", "target": "eff", "animated": true }
+  ]
+}
+```

@@ -51,3 +51,23 @@ You are producing gas in a circle. You pull the wet gas out, strip the liquids o
 The injected dry gas physically props the reservoir pressure up above the Dew Point, preventing any liquid from condensing underground. It also acts as a physical sweeper, physically pushing the remaining wet gas toward the producing wells.
 
 Gas cycling is astronomically expensive (requiring massive compressors burning millions of dollars of fuel), but it is the only way to save a condensate reservoir. Only when 100% of the wet gas has been swept out and replaced by dry gas are the compressors turned off, and the dry gas is finally sold to market in a phase called "Blowdown."
+
+## 4. The Gas Cycling Operation
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "produce", "data": { "label": "1. Produce Wet Gas", "icon": "ArrowUpRight", "description": "Extract the rich gas before pressure drops below Dew Point." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "sep", "data": { "label": "2. Surface Extraction", "icon": "Filter", "description": "Drop pressure at surface to harvest valuable liquids." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "comp", "data": { "label": "3. Compression", "icon": "Activity", "description": "Burn fuel to re-pressurize the remaining dry gas to 10,000 psi." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "inject", "data": { "label": "4. Inject Dry Gas", "icon": "ArrowDownLeft", "description": "Blast gas back underground to physically hold the pressure up." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "produce", "target": "sep", "animated": true },
+    { "source": "sep", "target": "comp", "animated": true },
+    { "source": "comp", "target": "inject", "animated": true, "style": { "stroke": "#ef4444", "strokeWidth": 2 } },
+    { "source": "inject", "target": "produce", "animated": true, "style": { "stroke": "#3b82f6", "strokeWidth": 2 } }
+  ]
+}
+```

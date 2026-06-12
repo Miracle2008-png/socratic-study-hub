@@ -56,3 +56,22 @@ Engineers use the **$P/Z$ Plot**.
 3.  The data points form a perfectly straight line trending downward.
 
 By simply drawing a straight line through the data points and extending it until it hits zero pressure on the X-axis, the engineer can instantly predict the **Original Gas In Place (OGIP)**. If the line hits zero at 100 Billion Cubic Feet, then there were exactly 100 BCF in the ground before you started.
+
+## 5. Wet Gas Production Workflow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "res", "data": { "label": "Reservoir", "icon": "Cloud", "description": "10,000 psi, 250°F. Fluid is 100% invisible gas." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "well", "data": { "label": "Wellbore Cooling", "icon": "ArrowUpCircle", "description": "Gas travels to surface, losing massive heat." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "sep", "data": { "label": "Surface Separator", "icon": "ThermometerSnowflake", "description": "Hits Dew Point. Liquids violently condense out." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "sale", "data": { "label": "Sales Lines", "icon": "DollarSign", "description": "Sell both Dry Gas and premium Liquid Condensate." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "res", "target": "well", "animated": true },
+    { "source": "well", "target": "sep", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "sep", "target": "sale", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

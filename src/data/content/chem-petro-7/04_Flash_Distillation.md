@@ -64,3 +64,22 @@ Flash calculations can be solved algebraically using the constant-alpha equation
 5.  **The Solution:** The intersection of the straight Operating Line and the curved Equilibrium Line represents the exact solution. The x-coordinate of the intersection is the liquid product composition ($x$), and the y-coordinate is the vapour product composition ($y$).
 
 Because it is only a single stage, the distance between $x$ and $y$ on the graph is the absolute maximum separation that can be achieved at that specific temperature and pressure.
+
+## 5. Flash Workflow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "feed", "data": { "label": "Hot Feed", "icon": "ArrowRight", "description": "High pressure liquid." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "valve", "data": { "label": "Throttling Valve", "icon": "Minimize2", "description": "Instant pressure drop." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "drum", "data": { "label": "Flash Drum", "icon": "Filter", "description": "One equilibrium stage." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "out", "data": { "label": "Products", "icon": "Layers", "description": "Vapour top, Liquid bottom." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "feed", "target": "valve", "animated": true },
+    { "source": "valve", "target": "drum", "animated": true },
+    { "source": "drum", "target": "out", "animated": true }
+  ]
+}
+```

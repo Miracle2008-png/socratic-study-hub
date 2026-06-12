@@ -69,3 +69,22 @@ The equation above mathematically proves Le Chatelier's Principle:
 
    - For an **exothermic reaction** ($\Delta H^\circ_r < 0$), as $T$ increases, $K$ *decreases*. Therefore, high temperatures ruin the conversion of exothermic reactions.
    - For an **endothermic reaction** ($\Delta H^\circ_r > 0$), as $T$ increases, $K$ *increases*. High temperatures drive the reaction forward.
+
+## 5. Reaction Equilibrium Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "crit", "data": { "label": "Eq Criterion", "icon": "Target", "description": "Min Gibbs Energy." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "k", "data": { "label": "Eq Constant K", "icon": "Activity", "description": "T-dependent only." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "comp", "data": { "label": "Composition", "icon": "PieChart", "description": "y and P relations." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "chat", "data": { "label": "Le Chatelier", "icon": "Move", "description": "Shift equilibrium." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "crit", "target": "k", "animated": true },
+    { "source": "k", "target": "comp", "animated": true },
+    { "source": "k", "target": "chat", "animated": true }
+  ]
+}
+```

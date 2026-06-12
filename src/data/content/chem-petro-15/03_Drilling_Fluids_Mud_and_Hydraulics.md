@@ -54,3 +54,25 @@ The hydrostatic pressure of your heavy mud column will force the liquid mud to s
 This is a terrifying scenario. As the mud drains away into the rock, the fluid level inside the wellbore starts dropping. As the fluid level drops, the Hydrostatic Pressure at the bottom of the well drops. If the hydrostatic pressure drops below the pore pressure of a shallower gas zone, the gas will violently erupt into the wellbore, causing a blowout.
 
 To fix Lost Circulation, the driller will desperately pump "Lost Circulation Materials" (LCM)—which is literally anything chunky, including walnut shells, shredded tires, and cedar fiber—down the well in a desperate attempt to physically plug the massive holes in the rock and stop the mud from draining away.
+
+## 5. The Mud Circulation Loop
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "pump", "data": { "label": "Mud Pumps", "icon": "Zap", "description": "Blasts heavy mud down the hole." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "pipe", "data": { "label": "Inside Drill Pipe", "icon": "ArrowDownCircle", "description": "Clean mud travels miles straight down." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "bit", "data": { "label": "The Drill Bit", "icon": "Crosshair", "description": "Mud shoots out nozzles, cooling the bit and destroying rock." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "annulus", "data": { "label": "The Annulus", "icon": "ArrowUpCircle", "description": "Mud flows UP the outside, carrying cuttings and holding back gas." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "shaker", "data": { "label": "Shale Shakers", "icon": "Filter", "description": "Vibrating screens filter out rock chips at the surface." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "pump", "target": "pipe", "animated": true },
+    { "source": "pipe", "target": "bit", "animated": true },
+    { "source": "bit", "target": "annulus", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "annulus", "target": "shaker", "animated": true },
+    { "source": "shaker", "target": "pump", "animated": true, "label": "Clean mud recycled" }
+  ]
+}
+```

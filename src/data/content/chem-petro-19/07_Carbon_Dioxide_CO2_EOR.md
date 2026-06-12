@@ -33,3 +33,24 @@ The industrial world (power plants, cement factories) emits billions of tons of 
 1.  **Capture:** A massive chemical scrubber is attached to the smokestack of a coal power plant to capture the $CO_2$ gas.
 2.  **Utilization:** The $CO_2$ is compressed and piped to a mature oilfield, where it is injected underground to perform EOR. It sweeps the trapped residual oil, generating massive profits for the oil company.
 3.  **Storage (Sequestration):** As the $CO_2$ sweeps the rock, roughly 40% of the injected volume gets permanently trapped deep inside the microscopic pores of the rock (replacing the oil that was just removed). The toxic greenhouse gas is permanently buried a mile underground, safely removed from the Earth's atmosphere forever.
+
+## 4. CCUS & CO2 EOR Cycle
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "plant", "data": { "label": "Industrial Power Plant", "icon": "Factory", "description": "Burns fossil fuels, emitting massive volumes of toxic CO2." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "capture", "data": { "label": "Carbon Capture", "icon": "Filter", "description": "Chemical scrubbers trap the CO2 gas before it hits the atmosphere." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "inject", "data": { "label": "CO2 Injection Well", "icon": "ArrowDownCircle", "description": "Super-critical CO2 blasted deep underground into the oil reservoir." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "oil", "data": { "label": "Oil Produced (Utilization)", "icon": "Droplet", "description": "Miscible CO2 mobilizes trapped oil, generating massive profits." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "storage", "data": { "label": "Permanent Storage", "icon": "ShieldCheck", "description": "40% of the CO2 is permanently trapped in the rock pores forever." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } }
+  ],
+  "edges": [
+    { "source": "plant", "target": "capture", "animated": true },
+    { "source": "capture", "target": "inject", "animated": true, "style": { "stroke": "#ef4444" }, "label": "Pipeline" },
+    { "source": "inject", "target": "oil", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "inject", "target": "storage", "animated": true, "style": { "stroke": "#a855f7" } }
+  ]
+}
+```

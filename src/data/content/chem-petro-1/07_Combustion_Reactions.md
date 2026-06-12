@@ -39,3 +39,22 @@ The gas leaving a combustion furnace is called the flue gas or stack gas. Its co
 - **Dry Basis** (Orsat Analysis): The water vapor is condensed out before analysis, so the mole fractions only include the dry gases ($CO_2, CO, O_2, N_2, SO_2$).
 
 When given an Orsat (dry) analysis, you must remember that water was produced in the reactor but is not showing up in the analysis percentages. You will need to use a hydrogen atomic balance to find the amount of water generated.
+
+## 5. Combustion Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "type", "data": { "label": "Combustion Type", "icon": "Target", "description": "Complete vs Inc." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "air", "data": { "label": "Air Comp", "icon": "PieChart", "description": "N2 and O2." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "excess", "data": { "label": "Excess Air", "icon": "PlusCircle", "description": "Above theoretical." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "flue", "data": { "label": "Flue Gas", "icon": "CloudDrizzle", "description": "Wet or Dry." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "type", "target": "air", "animated": true },
+    { "source": "air", "target": "excess", "animated": true },
+    { "source": "excess", "target": "flue", "animated": true }
+  ]
+}
+```

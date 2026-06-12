@@ -60,3 +60,18 @@ Using the relative rate equation: $\frac{-r_{CH_4}}{1} = \frac{-r_{O_2}}{2} = \f
 **Drill 5:**
 1. The selectivity is $S_{B/C} = \frac{r_B}{r_C} = \frac{k_1 C_A}{k_2 C_A^2} = \frac{k_1}{k_2} \cdot \frac{1}{C_A}$.
 Because $C_A$ is in the denominator, you must keep the concentration of A **as low as possible** to maximize the selectivity towards B. (You would use a CSTR reactor, which instantly dilutes the incoming feed).
+
+## Kinetics Concepts Summary
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "stoich", "data": { "label": "Stoichiometric Map", "icon": "Activity", "description": "Universal relative rates." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "elem", "data": { "label": "Elementary Logic", "icon": "AlertTriangle", "description": "Global eq hides mechanism." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "int", "data": { "label": "Integral Analysis", "icon": "BarChart2", "description": "Linearity proves order." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "sel", "data": { "label": "Selectivity", "icon": "Target", "description": "Use Conc to control pathways." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": []
+}
+```

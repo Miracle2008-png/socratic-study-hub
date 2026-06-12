@@ -39,3 +39,21 @@ A massive DC voltage is applied across the entire stack.
 *   **Desalination of Brackish Water:** Extremely energy-efficient for moderately salty groundwater, though Reverse Osmosis is better for seawater.
 *   **Food Industry:** De-salting soy sauce or fruit juices without heating them.
 *   **Zero Liquid Discharge (ZLD):** Concentrating industrial wastewater brine to the absolute maximum limit before sending it to an evaporator.
+
+## 3. Gradient Separation Concepts
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "dia", "data": { "label": "Dialysis", "icon": "Activity", "description": "Concentration gradient." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "blood", "data": { "label": "Hemodialysis", "icon": "Heart", "description": "Artificial kidney." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "ed", "data": { "label": "Electrodialysis", "icon": "Zap", "description": "Voltage gradient." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "stack", "data": { "label": "ED Stack", "icon": "Layers", "description": "CEM & AEM trap ions." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "dia", "target": "blood", "animated": true },
+    { "source": "ed", "target": "stack", "animated": true }
+  ]
+}
+```

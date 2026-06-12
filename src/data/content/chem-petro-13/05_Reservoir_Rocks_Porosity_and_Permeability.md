@@ -70,3 +70,22 @@ This is the **Connate Water Saturation ($S_{wi}$)**, which typically ranges from
 Therefore, if a rock has 20% porosity, only 80% of that empty space is actually holding oil. 
 $$ S_w + S_o + S_g = 1.0 \text{ (or 100%)} $$
 *(Water Saturation + Oil Saturation + Gas Saturation = Total Pore Space).*
+
+## 5. Reservoir Physics Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "poro", "data": { "label": "Porosity (Storage)", "icon": "Box", "description": "Percentage of empty void space inside the solid rock." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "perm", "data": { "label": "Permeability (Flow)", "icon": "Activity", "description": "How well the pores connect. Measured in milliDarcys." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "darcy", "data": { "label": "Darcy's Law", "icon": "Zap", "description": "Math governing the physical flow rate to the well." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "prod", "data": { "label": "Production", "icon": "ArrowUpCircle", "description": "Oil flows from the rock pores to the surface." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "poro", "target": "perm", "animated": true },
+    { "source": "perm", "target": "darcy", "animated": true },
+    { "source": "darcy", "target": "prod", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

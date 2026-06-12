@@ -57,3 +57,24 @@ If you lower the bottomhole pressure by 500 psi when the pressure is high, you m
 The IPR represents the "Supply" side of the production system. It is dictated entirely by geology (permeability, thickness) and reservoir engineering (pressure, PVT). The Production Engineer cannot change the IPR (unless they perform a massive hydraulic fracture to artificially change the rock).
 
 The engineer's job is to take this unchangeable supply curve and perfectly match it to the mechanical plumbing of the steel wellbore to maximize the flow.
+
+## 5. The Inflow Performance Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "pr", "data": { "label": "Reservoir Pressure (Pr)", "icon": "Database", "description": "The massive static pressure sitting inside the rock." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "drawdown", "data": { "label": "Create Drawdown (ΔP)", "icon": "ArrowDownRight", "description": "Surface valve opened, bottomhole pressure (Pwf) drops." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "flow", "data": { "label": "Fluid Flows (q)", "icon": "Waves", "description": "Linear flow (J) while pressure remains above the Bubble Point." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "gas", "data": { "label": "Two-Phase Choke", "icon": "Cloud", "description": "Pwf drops below Pb. Gas boils in the rock, killing permeability." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "vogel", "data": { "label": "Vogel's Diminishing Returns", "icon": "TrendingDown", "description": "IPR curve bends inward. Massive pressure drops yield tiny extra flow." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "pr", "target": "drawdown", "animated": true },
+    { "source": "drawdown", "target": "flow", "animated": true },
+    { "source": "flow", "target": "gas", "animated": true, "style": { "stroke": "#ef4444" }, "label": "Below Bubble Point" },
+    { "source": "gas", "target": "vogel", "animated": true, "style": { "stroke": "#f59e0b", "strokeWidth": 2 } }
+  ]
+}
+```

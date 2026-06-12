@@ -54,3 +54,22 @@ For 10 million years before the wells were drilled, the reservoir was in perfect
 When the engineer hits "Initialize," the supercomputer calculates the pressure and fluid forces inside the 1 million blocks at Time = 0.
 *   If the engineer input the geological data correctly, the fluids will sit perfectly still in the computer.
 *   If the data is flawed, the moment the simulator starts, massive "virtual" ocean currents of oil and water will violently slosh back and forth across the 3D model as the computer frantically tries to balance the impossible physics you gave it. This is a failed initialization.
+
+## 5. Grid Building Workflow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "geo", "data": { "label": "Geomodel", "icon": "Mountain", "description": "100 Million high-res geological blocks." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "upscale", "data": { "label": "Upscaling", "icon": "Minimize2", "description": "Mathematical averaging to save computing power." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "grid", "data": { "label": "Simulation Grid", "icon": "Grid", "description": "1 Million blocks ready for equations." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "init", "data": { "label": "Initialization", "icon": "Activity", "description": "Supercomputer establishes fluid equilibrium at Time=0." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "geo", "target": "upscale", "animated": true },
+    { "source": "upscale", "target": "grid", "animated": true },
+    { "source": "grid", "target": "init", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

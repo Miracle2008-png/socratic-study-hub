@@ -91,3 +91,18 @@ $$A = \frac{Q}{h_w \Delta T} = \frac{5 \times 10^6}{320 \times 550} = \frac{5{,}
 For $50 \, \text{mm}$ OD tubes of $4 \, \text{m}$ length: area per tube = $\pi \times 0.05 \times 4 = 0.628 \, \text{m}^2$
 
 Number of tubes required: $28.4 / 0.628 \approx 45 \, \text{tubes}$
+
+## 7. Heat Transfer Mechanisms Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "part", "data": { "label": "Particle Convection", "icon": "Layers", "description": "Packet model." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "gas", "data": { "label": "Gas Convection", "icon": "Wind", "description": "Coarse particles." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "rad", "data": { "label": "Radiation", "icon": "Sun", "description": "High temperature." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } },
+    { "id": "dist", "data": { "label": "Distributor Plate", "icon": "Grid", "description": "Uniform fluidization." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": []
+}
+```

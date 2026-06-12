@@ -51,3 +51,24 @@ $$ V_{sh} = \frac{GR_{log} - GR_{min}}{GR_{max} - GR_{min}} $$
 
 If $V_{sh}$ is $0\%$, the rock is a perfect, clean reservoir.
 If $V_{sh}$ is $> 40\%$, the rock is so clogged with clay dust that the permeability is likely zero, and the engineer can completely ignore it and move on to a better zone.
+
+## 5. Interpreting the Gamma Ray
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "tool", "data": { "label": "Gamma Ray Tool", "icon": "Radio", "description": "Passively listens for natural K, U, Th isotopes." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "shale", "data": { "label": "High API (Shale)", "icon": "TrendingUp", "description": "Clay acts like a sponge for radiation. 100+ API." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "sand", "data": { "label": "Low API (Sand/Lime)", "icon": "TrendingDown", "description": "Pure Quartz/Calcite have zero radiation. ~20 API." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "mid", "data": { "label": "Middle API (Dirty Sand)", "icon": "Menu", "description": "Sand mixed with clay dust. ~60 API." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "vsh", "data": { "label": "Calculate Vsh", "icon": "Calculator", "description": "Mathematically interpolate to find exact clay %. Is permeability destroyed?" }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "tool", "target": "shale", "animated": true },
+    { "source": "tool", "target": "sand", "animated": true },
+    { "source": "tool", "target": "mid", "animated": true },
+    { "source": "mid", "target": "vsh", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

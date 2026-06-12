@@ -61,3 +61,22 @@ $$ \text{Payback Period} = \frac{\text{Fixed Capital Investment}}{\text{Average 
 
 If you spend \$50M, and make \$10M a year, the payback period is 5 years.
 **The Flaw:** It completely ignores the Time Value of Money, and it completely ignores all profits made *after* the payback year. A project with a 3-year payback that dies in year 4 looks better than a project with a 4-year payback that prints billions of dollars for 30 years. It should only be used as a secondary risk-assessment tool.
+
+## 5. Discounted Cash Flow Process
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "cap", "data": { "label": "Year 0: Investment", "icon": "Database", "description": "Massive negative cash flow to build the plant." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "rev", "data": { "label": "Years 1-15: Revenue", "icon": "TrendingUp", "description": "Positive cash flows from selling the product." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "time", "data": { "label": "Discounting", "icon": "Clock", "description": "Adjusting future money for the Time Value of Money." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "npv", "data": { "label": "Net Present Value", "icon": "DollarSign", "description": "If NPV > 0, the project beats the required interest rate. Build it." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } }
+  ],
+  "edges": [
+    { "source": "cap", "target": "time", "animated": true },
+    { "source": "rev", "target": "time", "animated": true },
+    { "source": "time", "target": "npv", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

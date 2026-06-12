@@ -55,3 +55,23 @@ The Achilles' heel of all compact heat exchangers is **fouling and plugging**.
 - If a PCHE or PFHE becomes heavily fouled with insoluble material, it becomes an extremely expensive paperweight.
 
 Therefore, compact heat exchangers must only be used with strictly clean fluids (cryogenic gases, highly filtered refrigerants, or ultra-pure water) or with heavy upstream filtration systems (e.g., duplex strainers).
+
+## 6. Compact Exchanger Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "beta", "data": { "label": "Compactness", "icon": "Maximize2", "description": "High Surface Density." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "pfhe", "data": { "label": "PFHE (Plate-Fin)", "icon": "Layers", "description": "Cryogenics standard." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "pche", "data": { "label": "PCHE (Printed Circuit)", "icon": "Cpu", "description": "High pressure/temp." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "foul", "data": { "label": "Fouling Flaw", "icon": "AlertTriangle", "description": "Plugging risk." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } }
+  ],
+  "edges": [
+    { "source": "beta", "target": "pfhe", "animated": true },
+    { "source": "beta", "target": "pche", "animated": true },
+    { "source": "pfhe", "target": "foul", "animated": true },
+    { "source": "pche", "target": "foul", "animated": true }
+  ]
+}
+```

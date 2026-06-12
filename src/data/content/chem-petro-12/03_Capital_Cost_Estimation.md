@@ -57,3 +57,24 @@ You need cash on hand to buy the first month's batch of raw materials. You need 
 
 This required cash is called **Working Capital**. It is not spent; it is tied up in the business. It is usually estimated at $15\%$ to $20\%$ of the FCI.
 Total Capital Investment = Fixed Capital Investment + Working Capital.
+
+## 6. Capital Cost Estimation Hierarchy
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "bare", "data": { "label": "Bare Equipment", "icon": "Box", "description": "The catalog purchase price of the reactor." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "lang", "data": { "label": "Lang Factor (x 4.7)", "icon": "X", "description": "Multiplier for concrete, piping, electrical, and labor." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "fci", "data": { "label": "Fixed Capital (FCI)", "icon": "Database", "description": "Total installed cost of the physical plant." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "work", "data": { "label": "Working Capital", "icon": "Zap", "description": "Cash needed to buy raw materials and pay salaries on Day 1." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "tci", "data": { "label": "Total Capital (TCI)", "icon": "DollarSign", "description": "The absolute total investment required." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "bare", "target": "lang", "animated": true },
+    { "source": "lang", "target": "fci", "animated": true },
+    { "source": "fci", "target": "tci", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "work", "target": "tci", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

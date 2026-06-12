@@ -55,3 +55,22 @@ For a smooth sphere at low Reynolds numbers, the boundary layer is laminar. Lami
 If you intentionally trip the boundary layer into turbulence (by adding dimples to a golf ball), the turbulent mixing pulls high-energy fluid down to the surface. This high-energy fluid can fight against the adverse pressure gradient much longer before separating. 
 
 Therefore, the turbulent boundary layer stays attached to the back of the sphere longer, resulting in a much smaller wake. The dimpled golf ball has *more* friction drag, but significantly *less* form drag, resulting in a lower total drag coefficient ($C_D$) and allowing it to fly much further.
+
+## 6. External Flow Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "force", "data": { "label": "Forces", "icon": "ArrowUpRight", "description": "Drag & Lift." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "type", "data": { "label": "Drag Types", "icon": "Activity", "description": "Friction & Form." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "bl", "data": { "label": "Boundary Layer", "icon": "Layers", "description": "Separation." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "wake", "data": { "label": "Wake", "icon": "Cloud", "description": "Low pressure." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "force", "target": "type", "animated": true },
+    { "source": "type", "target": "bl", "animated": true },
+    { "source": "bl", "target": "wake", "animated": true }
+  ]
+}
+```

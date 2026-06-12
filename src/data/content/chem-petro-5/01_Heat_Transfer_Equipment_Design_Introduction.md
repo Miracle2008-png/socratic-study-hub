@@ -63,3 +63,18 @@ There are two primary methods for heat exchanger analysis and design:
 2. **The Effectiveness-NTU Method**: Used when only the inlet temperatures and the exchanger area are known, and the outlet temperatures must be determined. This is a **rating** or **performance** problem.
 
 We will explore both methods in detail in the following sections.
+
+## 6. Exchanger Configurations
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "para", "data": { "label": "Parallel Flow", "icon": "ArrowRight", "description": "Least efficient." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "count", "data": { "label": "Counter Flow", "icon": "Repeat", "description": "Most efficient." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "st", "data": { "label": "Shell & Tube", "icon": "Box", "description": "High pressure/duty." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "pf", "data": { "label": "Plate & Frame", "icon": "Layers", "description": "High U, compact." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": []
+}
+```

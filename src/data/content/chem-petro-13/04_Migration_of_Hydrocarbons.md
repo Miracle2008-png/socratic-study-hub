@@ -56,3 +56,22 @@ Sometimes, oil finds a trap, accumulates, and forms a massive oil field.
 Then, a million years later, an earthquake strikes. A massive fault tears perfectly through the middle of the seal rock above the trap.
 
 The seal is broken. The buoyant oil instantly escapes the trap and begins migrating upward again. This is called **Tertiary Migration** or **Dysmigration**. The oil will either find a new, shallower trap, or it will leak all the way to the ocean floor or surface, resulting in a destroyed oil field and a natural surface oil seep.
+
+## 5. The Migration Journey
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "expulsion", "data": { "label": "Primary Migration", "icon": "Maximize2", "description": "Overpressure causes shale micro-fracturing. Oil violently escapes." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "buoyancy", "data": { "label": "Buoyancy Drive", "icon": "ArrowUpCircle", "description": "Oil is lighter than brine. It floats upward through carrier beds." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "capillary", "data": { "label": "Capillary Resistance", "icon": "AlertTriangle", "description": "Tight pore throats fight the buoyant force, smearing residual oil." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "trap", "data": { "label": "Accumulation", "icon": "CheckCircle", "description": "Oil safely reaches the geometric trap and pools." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "expulsion", "target": "buoyancy", "animated": true },
+    { "source": "buoyancy", "target": "capillary", "animated": true },
+    { "source": "capillary", "target": "trap", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

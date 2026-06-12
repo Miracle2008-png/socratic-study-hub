@@ -52,3 +52,24 @@ To replace the bit, the crew must perform a **"Trip"**.
 They must stop drilling, unspool the massive winch, and pull the entire 10,000-foot drill string entirely out of the hole, physically unscrewing and racking every single 90-foot section of pipe (a "stand") in the derrick. 
 Once the dull bit finally reaches the surface, they screw on a shiny new bit, and then lower the entire 10,000 feet of pipe back into the hole to resume drilling. 
 A deep trip can take 24 hours of grueling, continuous physical labor, during which the rig is making zero progress. This is why spending \$100,000 on a high-end PDC bit that lasts twice as long is always a fantastic economic investment.
+
+## 4. The Drill String Hierarchy
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "rig", "data": { "label": "Rig Surface", "icon": "ArrowDown", "description": "Supports and spins the string." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "dp", "data": { "label": "Drill Pipe (DP)", "icon": "MoreVertical", "description": "Flexible steel tubes kept in perfect tension." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "hwdp", "data": { "label": "Heavy Wt. Pipe (HWDP)", "icon": "Menu", "description": "Thick-walled transition zone absorbs bending stress." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "dc", "data": { "label": "Drill Collars (DC)", "icon": "Database", "description": "Massive, rigid steel tubes that provide Weight on Bit." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "bit", "data": { "label": "The Drill Bit", "icon": "Crosshair", "description": "Tricone (Crushing) or PDC (Shearing) destroys the rock." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "rig", "target": "dp", "animated": true },
+    { "source": "dp", "target": "hwdp", "animated": true },
+    { "source": "hwdp", "target": "dc", "animated": true },
+    { "source": "dc", "target": "bit", "animated": true, "label": "Weight on Bit (WOB)", "style": { "stroke": "#ef4444", "strokeWidth": 2 } }
+  ]
+}
+```

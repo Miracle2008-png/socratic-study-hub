@@ -60,3 +60,22 @@ The decision between a shell-and-tube exchanger (using cooling water) and an ACH
 | **Lowest Possible Process Temp** | Ambient Dry-Bulb + ~10°C | Ambient Wet-Bulb + ~5°C (much cooler in summer) |
 
 In modern grassroots refineries and chemical plants, air cooling is used to remove heat down to about 60°C. Water cooling (trim coolers) is only used for the final drop from 60°C down to 40°C, drastically reducing the total cooling water demand of the plant.
+
+## 6. ACHE Logic
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "air", "data": { "label": "Poor Air Properties", "icon": "Wind", "description": "Low h_o." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "fins", "data": { "label": "Extended Fins", "icon": "Maximize", "description": "Massive Area A_o." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "draft", "data": { "label": "Draft Fans", "icon": "ArrowUpCircle", "description": "Forced/Induced." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "temp", "data": { "label": "Ambient Limits", "icon": "Thermometer", "description": "Dry-bulb dependent." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } }
+  ],
+  "edges": [
+    { "source": "air", "target": "fins", "animated": true },
+    { "source": "fins", "target": "draft", "animated": true },
+    { "source": "draft", "target": "temp", "animated": true }
+  ]
+}
+```

@@ -90,3 +90,23 @@ $$\dot{m}_{\text{cat}} = (C/O) \times \dot{m}_{\text{oil}} = 6 \times 78.3 = 470
 $$\dot{m}_{\text{coke}} = 0.055 \times 78.3 = 4.31 \, \text{kg/s} = 15.5 \, \text{t/h}$$
 
 This coke is deposited on the catalyst and burns off in the regenerator — releasing approximately $4.31 \times 32.8 \times 10^3 = 141 \, \text{MW}$ of thermal energy, which heats the catalyst to the desired regenerator temperature.
+
+## 7. CFB Configuration Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "riser", "data": { "label": "Riser", "icon": "ArrowUp", "description": "Fast fluidization." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "cyc", "data": { "label": "Cyclone", "icon": "RefreshCw", "description": "Separation." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "stand", "data": { "label": "Standpipe", "icon": "ArrowDown", "description": "Solids return." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "seal", "data": { "label": "Loop Seal", "icon": "Lock", "description": "Prevents backflow." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "riser", "target": "cyc", "animated": true },
+    { "source": "cyc", "target": "stand", "animated": true },
+    { "source": "stand", "target": "seal", "animated": true },
+    { "source": "seal", "target": "riser", "animated": true }
+  ]
+}
+```

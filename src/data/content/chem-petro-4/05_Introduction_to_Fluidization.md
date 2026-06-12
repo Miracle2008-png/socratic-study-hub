@@ -84,3 +84,24 @@ $$v_{mf} = \frac{d_p^2 (\rho_s - \rho_f) g \varepsilon_{mf}^3}{150 \mu (1 - \var
 $$= \frac{4.9\times10^{-9} \times 1499 \times 9.81 \times 0.0741}{150 \times 1.8\times10^{-5} \times 0.58} = \frac{5.34\times10^{-6}}{1.566\times10^{-3}} \approx 0.0034 \, \text{m/s} = 3.4 \, \text{mm/s}$$
 
 This is a very low velocity — consistent with fine, light FCC catalyst particles that are easily fluidized.
+
+## 6. Fluidization Regimes Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "fix", "data": { "label": "Fixed Bed", "icon": "Layers", "description": "Stationary particles." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "part", "data": { "label": "Particulate", "icon": "Droplet", "description": "Smooth fluidization." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "bubb", "data": { "label": "Bubbling", "icon": "Circle", "description": "Discrete bubbles." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "turb", "data": { "label": "Turbulent", "icon": "Activity", "description": "Chaotic churning." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } },
+    { "id": "pneu", "data": { "label": "Pneumatic Transport", "icon": "Wind", "description": "Continuous carryover." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "fix", "target": "part", "animated": true },
+    { "source": "part", "target": "bubb", "animated": true },
+    { "source": "bubb", "target": "turb", "animated": true },
+    { "source": "turb", "target": "pneu", "animated": true }
+  ]
+}
+```

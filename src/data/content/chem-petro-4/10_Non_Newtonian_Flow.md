@@ -99,3 +99,21 @@ $$\Delta P_{\text{viscous}} \approx \frac{32 \mu_p L \langle v \rangle}{D^2} = \
 $$\Delta P \approx \Delta P_{\text{min}} + \Delta P_{\text{viscous}} \approx 640 + 102 = 742 \, \text{kPa}$$
 
 The yield stress contribution dominates, indicating the mud is highly gel-like — typical of weighted drilling muds designed to carry drill cuttings.
+
+## 7. Non-Newtonian Classes Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "ti", "data": { "label": "Time-Independent", "icon": "Clock", "description": "Power-law, Bingham." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "thin", "data": { "label": "Shear-Thinning", "icon": "Minimize2", "description": "Pseudoplastic." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "thick", "data": { "label": "Shear-Thickening", "icon": "Maximize2", "description": "Dilatant." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "td", "data": { "label": "Time-Dependent", "icon": "Activity", "description": "Thixotropic." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "ti", "target": "thin", "animated": true },
+    { "source": "ti", "target": "thick", "animated": true }
+  ]
+}
+```

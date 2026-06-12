@@ -49,3 +49,22 @@ This tension is what causes the capillary forces that trap oil in microscopic dr
 **Enhanced Oil Recovery (EOR):**
 To force these trapped droplets out of the rock, chemical engineers pump massive amounts of **Surfactants** (industrial soaps) down the well. 
 The soap molecules embed themselves directly into the boundary between the oil and the water, chemically destroying the Interfacial Tension. The rigid oil droplet suddenly becomes floppy and hyper-flexible, easily slithering through the microscopic pore throats and flowing to the producing well.
+
+## 5. Enhanced Oil Recovery (EOR) Mechanism
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "trapped", "data": { "label": "Trapped Oil Droplet", "icon": "Lock", "description": "High IFT makes droplet rigid; stuck in pore throat." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "soap", "data": { "label": "Surfactant Injection", "icon": "Beaker", "description": "Industrial soap molecules attack the oil-water boundary." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "ift", "data": { "label": "IFT Destroyed", "icon": "Zap", "description": "Rigid tension is broken. Droplet becomes hyper-flexible." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "flow", "data": { "label": "Oil Mobilized", "icon": "FastForward", "description": "Flexible oil slithers through microscopic pore throats." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "trapped", "target": "soap", "animated": true },
+    { "source": "soap", "target": "ift", "animated": true },
+    { "source": "ift", "target": "flow", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

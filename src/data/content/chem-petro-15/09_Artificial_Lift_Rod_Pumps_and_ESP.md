@@ -44,3 +44,22 @@ It relies entirely on basic physics: Density.
 2.  Special "Gas Lift Valves" are installed along the tubing deep underground. These valves open and inject the high-pressure gas directly into the heavy column of oil sitting inside the tubing.
 3.  The injected gas bubbles violently mix with the heavy oil, drastically reducing the overall density of the fluid column.
 4.  Because the fluid column is now a light, frothy foam, it weighs significantly less. The weak reservoir pressure at the bottom is now easily strong enough to push this lightweight foam all the way to the surface!
+
+## 4. Artificial Lift Selection
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "dead", "data": { "label": "Depleted Well", "icon": "ArrowDown", "description": "Reservoir pressure can no longer lift fluids to the surface." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "rod", "data": { "label": "Sucker Rod Pump", "icon": "Activity", "description": "Mechanical surface unit heaves a bottom-hole piston." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "esp", "data": { "label": "ESP", "icon": "Zap", "description": "1,000 HP electric motor spins impellers to blast fluid up." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "gas", "data": { "label": "Gas Lift", "icon": "Cloud", "description": "Gas injection lightens the fluid column into a frothy foam." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "dead", "target": "rod", "animated": true },
+    { "source": "dead", "target": "esp", "animated": true },
+    { "source": "dead", "target": "gas", "animated": true }
+  ]
+}
+```

@@ -51,3 +51,22 @@ How do we do this?
 2.  **Increase $a$:** Use a bundle of many narrow tubes instead of one giant pipe (massively increases surface area).
 3.  **Lower $T_a$:** Use a colder refrigerant in the cooling jacket (shifts the $Q_R$ line to the left).
 4.  **Add Diluent:** Pump inert solvent into the reactor. This increases the denominator ($\Sigma F_i C_{pi}$), acting as a massive thermal heat sink to absorb the reaction energy.
+
+## 4. Energy Balance Stability Logic
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "gen", "data": { "label": "Heat Generation (Q_G)", "icon": "Activity", "description": "Exponential with Temperature." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "rem", "data": { "label": "Heat Removal (Q_R)", "icon": "Thermometer", "description": "Linear with cooling jacket." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "ss", "data": { "label": "Steady State", "icon": "Target", "description": "Q_G exactly equals Q_R." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "run", "data": { "label": "Thermal Runaway", "icon": "AlertTriangle", "description": "Explosion if Q_G > Q_R." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "gen", "target": "ss", "animated": true },
+    { "source": "rem", "target": "ss", "animated": true },
+    { "source": "ss", "target": "run", "animated": true, "style": { "stroke": "#ef4444", "strokeWidth": 2 } }
+  ]
+}
+```

@@ -49,3 +49,22 @@ To find the average conversion at the exit ($\bar{X}$), we calculate the batch c
 $$ \bar{X} = \int_{0}^{\infty} X_{batch}(t) \cdot E(t) \, dt $$
 
 This elegant equation allows engineers to accurately predict the performance of incredibly complex, poorly mixed industrial reactors.
+
+## 4. RTD Diagnostics Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "tracer", "data": { "label": "Tracer Injection", "icon": "Activity", "description": "Pulse of dye at entrance." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "rtd", "data": { "label": "RTD Curve E(t)", "icon": "BarChart2", "description": "Exit concentration vs time." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "diag", "data": { "label": "Diagnostics", "icon": "Search", "description": "Find dead zones and short-circuits." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "model", "data": { "label": "Segregation Model", "icon": "CheckCircle", "description": "Calculates true real conversion." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "tracer", "target": "rtd", "animated": true },
+    { "source": "rtd", "target": "diag", "animated": true },
+    { "source": "rtd", "target": "model", "animated": true }
+  ]
+}
+```

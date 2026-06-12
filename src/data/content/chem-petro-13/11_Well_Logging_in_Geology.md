@@ -41,3 +41,22 @@ This requires running two separate nuclear tools simultaneously.
 These two tools are always plotted on top of each other. 
 *   In a zone filled with oil or water, the two curves track together, accurately giving the porosity (e.g., 20%).
 *   **The Gas Effect:** Natural gas ($CH_4$) is incredibly low density (few hydrogen atoms per volume). When the tools hit a gas zone, the Neutron tool panics and reads a falsely low porosity (because there is little hydrogen), while the Density tool reads a falsely high porosity (because the gas is so light). The two curves wildly cross over each other on the paper log, creating a massive visual "balloon" shape. **This Cross-Over is the definitive proof of a massive Natural Gas zone.**
+
+## 4. Well Logging Suite
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "gamma", "data": { "label": "Gamma Ray", "icon": "Activity", "description": "Distinguishes radioactive Shale from clean Sandstone." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "res", "data": { "label": "Resistivity", "icon": "Zap", "description": "Finds insulating Oil/Gas and conductive Saltwater." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "poro", "data": { "label": "Neutron/Density", "icon": "Database", "description": "Calculates empty pore space (Porosity)." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "gas", "data": { "label": "Gas Cross-Over", "icon": "Cloud", "description": "Massive curve separation proves Natural Gas." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "gamma", "target": "res", "animated": true },
+    { "source": "res", "target": "poro", "animated": true },
+    { "source": "poro", "target": "gas", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

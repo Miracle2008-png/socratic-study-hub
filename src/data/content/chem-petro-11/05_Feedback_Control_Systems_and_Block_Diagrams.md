@@ -52,3 +52,27 @@ This is **Negative Feedback**.
 
 If the comparator *added* the signals ($E = SP + Y_m$), we would have **Positive Feedback**.
 *   If the temperature rises slightly, the error becomes larger. The controller sees a larger error and opens the steam valve *more*. The temperature skyrockets. Positive feedback loops accelerate instability and lead to catastrophic runaway reactions. We deliberately avoid them in physical plant control.
+
+## 4. Block Diagram Architecture
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "sp", "data": { "label": "Setpoint", "icon": "Target", "description": "Target Value" }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "sum", "data": { "label": "Comparator", "icon": "PlusCircle", "description": "Calculates Error (SP - Measured)" }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "gc", "data": { "label": "Controller Gc", "icon": "Cpu", "description": "PID Algorithm" }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "gv", "data": { "label": "Valve Gv", "icon": "Wind", "description": "Physical Actuator" }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "gp", "data": { "label": "Process Gp", "icon": "Activity", "description": "The Tank/Reactor" }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "gm", "data": { "label": "Sensor Gm", "icon": "Thermometer", "description": "Feedback Measurement" }, "style": { "background": "#4c1d95", "color": "#ede9fe" } }
+  ],
+  "edges": [
+    { "source": "sp", "target": "sum", "animated": true },
+    { "source": "sum", "target": "gc", "animated": true },
+    { "source": "gc", "target": "gv", "animated": true },
+    { "source": "gv", "target": "gp", "animated": true },
+    { "source": "gp", "target": "gm", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "gm", "target": "sum", "animated": true, "style": { "stroke": "#ef4444" } }
+  ]
+}
+```

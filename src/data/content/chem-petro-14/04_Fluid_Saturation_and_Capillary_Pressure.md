@@ -52,3 +52,20 @@ These two forces fight each other, creating a blurred boundary called the **Tran
 
 If a rock has massive, large pores, capillary pressure is weak, and the Transition Zone is only 2 feet thick. 
 If a rock is incredibly tight (microscopic pores), capillary pressure is immensely strong. It acts like a powerful sponge, sucking water hundreds of feet upward into the oil column. The Transition Zone can be 200 feet thick, completely ruining the economics of the oil field.
+
+## 4. The Reservoir Fluid Column
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "pay", "data": { "label": "3. The Pay Zone", "icon": "DollarSign", "description": "Buoyancy wins. Oil forces water to irreducible minimum (100% Oil production)." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "trans", "data": { "label": "2. Transition Zone", "icon": "Shuffle", "description": "Gravity vs Capillary Pressure. Messy mix of Oil and Water." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "fwl", "data": { "label": "1. Free Water Level", "icon": "Droplet", "description": "Capillary pressure is zero. 100% Water saturation." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } }
+  ],
+  "edges": [
+    { "source": "fwl", "target": "trans", "animated": true, "style": { "stroke": "#3b82f6", "strokeWidth": 2 } },
+    { "source": "trans", "target": "pay", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

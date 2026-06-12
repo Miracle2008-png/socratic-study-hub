@@ -51,3 +51,22 @@ This is the equation of a straight line: $y = mx + b$.
 **The Arrhenius Plot:**
 If you plot $\ln(k)$ on the y-axis against $1/T$ on the x-axis, your experimental data points will form a straight line. 
 You calculate the slope of this line. Since the slope equals $-E_A/R$, you multiply the slope by $-R$ to find the Activation Energy ($E_A$). The y-intercept gives you the Pre-exponential Factor ($A$).
+
+## 4. Activation Energy Workflow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "exp", "data": { "label": "Lab Experiments", "icon": "Thermometer", "description": "Run at various T." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "calc", "data": { "label": "Calculate k", "icon": "Activity", "description": "Find rate const for each." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "lin", "data": { "label": "Linearize", "icon": "FileText", "description": "ln(k) vs 1/T" }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "plot", "data": { "label": "Arrhenius Plot", "icon": "BarChart2", "description": "Slope gives Ea." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "exp", "target": "calc", "animated": true },
+    { "source": "calc", "target": "lin", "animated": true },
+    { "source": "lin", "target": "plot", "animated": true }
+  ]
+}
+```

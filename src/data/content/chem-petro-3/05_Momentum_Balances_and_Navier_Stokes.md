@@ -51,3 +51,22 @@ Integrating this equation twice (applying the no-slip boundary condition $u=0$ a
 $$ u(r) = u_{\text{max}} \left[ 1 - \left(\frac{r}{R}\right)^2 \right] $$
 
 This analytical solution is known as **Hagen-Poiseuille Flow**. It proves that the fluid in the exact center of a pipe moves twice as fast as the average fluid velocity.
+
+## 4. Momentum Balances Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "macro", "data": { "label": "Macroscopic Balance", "icon": "Layers", "description": "Global forces." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "diff", "data": { "label": "Differential Balance", "icon": "Minimize2", "description": "Local control volume." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "ns", "data": { "label": "Navier-Stokes Eq", "icon": "Activity", "description": "F = ma for fluids." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "exact", "data": { "label": "Exact Solutions", "icon": "Target", "description": "Hagen-Poiseuille." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "macro", "target": "diff", "animated": true },
+    { "source": "diff", "target": "ns", "animated": true },
+    { "source": "ns", "target": "exact", "animated": true }
+  ]
+}
+```

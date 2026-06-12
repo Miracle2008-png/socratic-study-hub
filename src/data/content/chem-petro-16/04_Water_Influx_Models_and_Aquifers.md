@@ -50,3 +50,22 @@ It relies heavily on the **Diffusivity Equation**. It recognizes that when press
 *   It is incredibly mathematically complex, utilizing Laplace transforms and Bessel functions.
 *   It models the "lag time." It shows that water influx starts slowly, accelerates as the pressure wave travels outward, and then slowly dies off as the aquifer exhausts its expansion energy.
 *   This model allows supercomputers to perfectly mimic the complex, time-delayed surge of water destroying the oil field from below.
+
+## 4. The Water Drive Mechanism
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "prod", "data": { "label": "Oil Production", "icon": "TrendingDown", "description": "Removing fluid creates a void in the trap." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "drop", "data": { "label": "Pressure Drops", "icon": "ArrowDownCircle", "description": "The pressure signal travels outward into the aquifer." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "expand", "data": { "label": "Massive Expansion", "icon": "Maximize2", "description": "100 cubic miles of saltwater acts like a giant spring." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "drive", "data": { "label": "Natural Water Drive", "icon": "Activity", "description": "Water violently floods the oil zone, maintaining pressure." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "prod", "target": "drop", "animated": true },
+    { "source": "drop", "target": "expand", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "expand", "target": "drive", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

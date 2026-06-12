@@ -53,3 +53,25 @@ A standard feedback loop consists of four physical components:
 *   **Dynamic (Transient) State:** The condition where variables are changing with time ($d/dt \neq 0$). This happens when the setpoint is changed, or when a disturbance hits the system.
 
 Process Control is almost entirely concerned with **Dynamic Behavior**. We need to know *how fast* the temperature rises, whether it will overshoot the target, and how long it takes to settle down. To analyze this, we must use differential equations, which brings us to the mathematical foundation of control theory: Laplace Transforms.
+
+## 5. The Feedback Control Loop
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "sp", "data": { "label": "Setpoint (SP)", "icon": "Target", "description": "The desired target value (e.g., 80 degrees)." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "ctrl", "data": { "label": "Controller", "icon": "Cpu", "description": "Calculates Error (SP - CV). Commands the valve." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "fce", "data": { "label": "Control Valve (FCE)", "icon": "Wind", "description": "Adjusts the Manipulated Variable (e.g., steam flow)." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "proc", "data": { "label": "The Process", "icon": "Activity", "description": "The physical chemical tank." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "sens", "data": { "label": "Sensor (CV)", "icon": "Thermometer", "description": "Measures actual temp. Sends back to Controller." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "sp", "target": "ctrl", "animated": true },
+    { "source": "ctrl", "target": "fce", "animated": true },
+    { "source": "fce", "target": "proc", "animated": true },
+    { "source": "proc", "target": "sens", "animated": true },
+    { "source": "sens", "target": "ctrl", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

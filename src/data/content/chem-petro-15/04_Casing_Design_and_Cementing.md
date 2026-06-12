@@ -50,3 +50,22 @@ You pump it down the *inside*.
 6.  The rubber plug hits the bottom and latches into place, trapping the cement in the annulus. The pumps are turned off, and the rig waits 12 hours for the cement to dry into solid rock.
 
 A flawless cement job is the single most important safety barrier in an oil well. If the cement is cracked or full of gas bubbles, the well will leak, leading to environmental disasters (like the Deepwater Horizon blowout).
+
+## 4. The Telescoping Wellbore
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "cond", "data": { "label": "1. Conductor Casing (30\")", "icon": "Shield", "description": "Secures the soft topsoil against rig weight." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "surf", "data": { "label": "2. Surface Casing (20\")", "icon": "Droplet", "description": "Permanently seals off fresh drinking water aquifers." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "inter", "data": { "label": "3. Intermediate Casing (9\")", "icon": "AlertTriangle", "description": "Isolates dangerous high-pressure zones or swelling salt." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "prod", "data": { "label": "4. Production Casing (5\")", "icon": "CheckCircle", "description": "Final tube piercing the oil reservoir at 15,000 ft." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "cond", "target": "surf", "animated": true },
+    { "source": "surf", "target": "inter", "animated": true },
+    { "source": "inter", "target": "prod", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

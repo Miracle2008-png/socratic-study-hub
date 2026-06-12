@@ -47,3 +47,22 @@ Where:
 Because $N_A$ is constant and the equation is linear with respect to distance $z$, **the partial pressure (and concentration) profile of species A in equimolar counterdiffusion is a perfectly straight line** from $p_{A1}$ to $p_{A2}$. 
 
 Simultaneously, the profile for species B is a perfectly straight line sloping in the opposite direction.
+
+## 4. EMCD Mechanics
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "emcd", "data": { "label": "Equimolar Counter", "icon": "Repeat", "description": "Na = -Nb" }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "nobulk", "data": { "label": "Zero Bulk Flow", "icon": "MinusCircle", "description": "Molecules just swap places." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "flux", "data": { "label": "Constant Flux", "icon": "Minus", "description": "Steady State." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "prof", "data": { "label": "Linear Profile", "icon": "TrendingUp", "description": "Straight line gradient." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "emcd", "target": "nobulk", "animated": true },
+    { "source": "nobulk", "target": "flux", "animated": true },
+    { "source": "flux", "target": "prof", "animated": true }
+  ]
+}
+```

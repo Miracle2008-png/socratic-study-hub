@@ -58,3 +58,24 @@ $$ \frac{-10}{-1} = \frac{r_{H_2}}{-3} \implies r_{H_2} = -30 $$
 $$ \frac{-10}{-1} = \frac{r_{NH_3}}{2} \implies r_{NH_3} = 20 $$
 
 This simple algebraic rule allows you to measure the concentration of just *one* species in the lab, and instantly calculate the reaction rates of every other species in the reactor.
+
+## 4. Stoichiometric Mapping
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "a", "data": { "label": "Reactant A", "icon": "ArrowDown", "description": "-r_A / a" }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "b", "data": { "label": "Reactant B", "icon": "ArrowDown", "description": "-r_B / b" }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "univ", "data": { "label": "Relative Rate", "icon": "Activity", "description": "Universal Equation" }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "c", "data": { "label": "Product C", "icon": "ArrowUp", "description": "r_C / c" }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "d", "data": { "label": "Product D", "icon": "ArrowUp", "description": "r_D / d" }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "a", "target": "univ", "animated": true },
+    { "source": "b", "target": "univ", "animated": true },
+    { "source": "univ", "target": "c", "animated": true },
+    { "source": "univ", "target": "d", "animated": true }
+  ]
+}
+```

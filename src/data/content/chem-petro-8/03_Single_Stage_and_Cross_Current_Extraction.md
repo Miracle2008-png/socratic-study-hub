@@ -36,3 +36,20 @@ Cross-current extraction is simple but highly inefficient regarding solvent use.
 Every stage requires a massive injection of fresh solvent. By the end of the process, you have generated huge volumes of very dilute Extract ($E_1, E_2, E_3...$) that must all be sent to a distillation column to boil off the solvent. The energy cost of boiling all that solvent destroys the economics of the plant.
 
 To solve this, industrial processes use **Counter-Current Extraction**.
+
+## 3. Stages Flow Summary
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "single", "data": { "label": "Single Stage", "icon": "Filter", "description": "One mixer-settler." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "cross", "data": { "label": "Cross-Current", "icon": "Grid", "description": "Fresh solvent per stage." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "warn", "data": { "label": "Inefficiency", "icon": "AlertTriangle", "description": "High solvent cost downstream." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } }
+  ],
+  "edges": [
+    { "source": "single", "target": "cross", "animated": true },
+    { "source": "cross", "target": "warn", "animated": true }
+  ]
+}
+```

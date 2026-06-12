@@ -45,3 +45,23 @@ To move from the gas to the liquid, a molecule must:
 5. Be convected into the bulk liquid.
 
 Because the films are stagnant, molecular diffusion through these ultra-thin films is the ultimate bottleneck (the rate-determining step) of the entire mass transfer process.
+
+## 5. Mass Transfer Mechanisms
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "mt", "data": { "label": "Mass Transfer", "icon": "Activity", "description": "Concentration gradient driving force." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "diff", "data": { "label": "Molecular Diffusion", "icon": "Wind", "description": "Slow Brownian motion." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "conv", "data": { "label": "Convective MT", "icon": "Zap", "description": "Fast bulk fluid transport." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "film", "data": { "label": "Two-Film Theory", "icon": "Layers", "description": "Stagnant films at interface." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "mt", "target": "diff", "animated": true },
+    { "source": "mt", "target": "conv", "animated": true },
+    { "source": "diff", "target": "film", "animated": true },
+    { "source": "conv", "target": "film", "animated": true }
+  ]
+}
+```

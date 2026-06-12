@@ -62,3 +62,22 @@ Because the fluid at the entrance of the PFR has a high concentration, the react
 *   **High-Temperature Reactions:** A PFR can be built as a bundle of hundreds of narrow tubes inside a furnace (like a massive shell-and-tube heat exchanger). This provides massive surface area for heat transfer.
 *   **Heterogeneous Catalysis:** You can pack the pipe full of solid catalyst pellets to create a Packed Bed Reactor (PBR), which mathematically models exactly like a PFR.
 *   **Downside:** Temperature control is extremely difficult. The incredibly fast reaction rate at the entrance can create a dangerous "hot spot" that can melt the pipe or destroy the catalyst.
+
+## 6. PFR Flow Model
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "in", "data": { "label": "FEED IN", "icon": "ArrowRight", "description": "High Concentration." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "plug", "data": { "label": "PLUG FLOW", "icon": "Layers", "description": "No axial mixing." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "react", "data": { "label": "REACTION TUBE", "icon": "Activity", "description": "Rate (-rA) drops along length." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "out", "data": { "label": "PRODUCT OUT", "icon": "ArrowRight", "description": "High Conversion (X)." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "in", "target": "plug", "animated": true },
+    { "source": "plug", "target": "react", "animated": true },
+    { "source": "react", "target": "out", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

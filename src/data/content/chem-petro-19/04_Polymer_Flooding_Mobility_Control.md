@@ -46,3 +46,24 @@ Polymer flooding is chemically simple, but operationally a nightmare. These mass
 3.  **Biological Degradation:** If you use Xanthan Gum (which is organic bacteria food), microscopic bacteria living deep in the reservoir rock will literally eat the polymer chains for energy, destroying the flood. You must inject massive amounts of toxic biocides to kill the bacteria first.
 
 Because of these extreme vulnerabilities, a polymer flood requires incredibly specialized, gentle pumping equipment and obsessive, 24/7 chemical monitoring.
+
+## 5. Polymer Mobility Control Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "water", "data": { "label": "Thin Water", "icon": "Waves", "description": "Water has very low viscosity (1 cP) and moves too fast." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "finger", "data": { "label": "Viscous Fingering", "icon": "Scissors", "description": "Water stabs through thick oil, bypassing massive reserves." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "polymer", "data": { "label": "Add Polymer Powder", "icon": "FlaskConical", "description": "HPAM or Xanthan Gum long-chain molecules injected." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } },
+    { "id": "thick", "data": { "label": "Syrupy Water", "icon": "Layers", "description": "Water viscosity rockets to 50 cP, matching the heavy oil." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "sweep", "data": { "label": "Uniform Areal Sweep", "icon": "Maximize", "description": "Thick water builds a solid wall, sweeping 100% of the area." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "water", "target": "finger", "animated": true },
+    { "source": "finger", "target": "polymer", "animated": true, "style": { "stroke": "#ef4444" }, "label": "Fix Mobility Ratio" },
+    { "source": "polymer", "target": "thick", "animated": true },
+    { "source": "thick", "target": "sweep", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

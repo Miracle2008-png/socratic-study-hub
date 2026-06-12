@@ -39,3 +39,22 @@ Extraction is more complex. It always requires a downstream separation step.
 *   Separating close-boiling or azeotropic mixtures (e.g., acetic acid and water).
 *   Removing temperature-sensitive products (e.g., pharmaceuticals, biologicals).
 *   Removing a high-boiling solute present in very low concentrations in water. It requires massive energy to boil the water; it is much cheaper to extract the solute into a small volume of organic solvent, and then boil the small volume of solvent.
+
+## 4. LLE Process Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "feed", "data": { "label": "Feed & Solvent", "icon": "Droplet", "description": "Solute in Carrier + Pure Solvent" }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "mix", "data": { "label": "Mixing", "icon": "RefreshCcw", "description": "High agitation emulsion" }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "settle", "data": { "label": "Settling", "icon": "Layers", "description": "Gravity separation" }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "out", "data": { "label": "Extract & Raffinate", "icon": "ArrowRightCircle", "description": "Solute recovered in Solvent" }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "feed", "target": "mix", "animated": true },
+    { "source": "mix", "target": "settle", "animated": true },
+    { "source": "settle", "target": "out", "animated": true }
+  ]
+}
+```

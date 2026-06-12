@@ -52,3 +52,22 @@ From this, Bodo Linnhoff established the three golden rules of heat integration:
 3. **Do not use hot utility below the pinch.** (Since the region below the pinch needs to reject heat, adding steam just makes the cooling problem worse.)
 
 If a design violates any of these rules, it is guaranteed to consume more energy than the minimum targets.
+
+## 6. Pinch Analysis Rules
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "pinch", "data": { "label": "Pinch Point", "icon": "Target", "description": "Sets Delta T min." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "r1", "data": { "label": "No Heat Across", "icon": "XCircle", "description": "Wastes energy." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } },
+    { "id": "r2", "data": { "label": "No Cold Above", "icon": "ThermometerSnowflake", "description": "Region needs heat." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "r3", "data": { "label": "No Hot Below", "icon": "ThermometerSun", "description": "Region needs cooling." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } }
+  ],
+  "edges": [
+    { "source": "pinch", "target": "r1", "animated": true },
+    { "source": "pinch", "target": "r2", "animated": true },
+    { "source": "pinch", "target": "r3", "animated": true }
+  ]
+}
+```

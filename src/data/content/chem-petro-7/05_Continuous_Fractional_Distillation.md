@@ -43,3 +43,24 @@ CMO assumes:
 
 **Consequence of CMO:** The total molar flow rate of liquid ($L$) falling down the rectifying section is exactly constant from tray to tray. The total molar flow rate of vapour ($V$) rising up the rectifying section is exactly constant. 
 The same applies to the stripping section (though the flow rates $\bar{L}$ and $\bar{V}$ in the stripping section will be different from $L$ and $V$ in the rectifying section because of the addition of the feed).
+
+## 4. Fractionator Components
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "cond", "data": { "label": "Condenser", "icon": "ThermometerSnowflake", "description": "Produces Distillate & Reflux." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "rect", "data": { "label": "Rectifying Section", "icon": "ArrowUp", "description": "Enriches light key." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "feed", "data": { "label": "Feed Stage", "icon": "ArrowRight", "description": "Mixture enters." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "strip", "data": { "label": "Stripping Section", "icon": "ArrowDown", "description": "Removes light key." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "reb", "data": { "label": "Reboiler", "icon": "ThermometerSun", "description": "Produces Bottoms & Boilup." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } }
+  ],
+  "edges": [
+    { "source": "cond", "target": "rect", "animated": true },
+    { "source": "rect", "target": "feed", "animated": true },
+    { "source": "feed", "target": "strip", "animated": true },
+    { "source": "strip", "target": "reb", "animated": true }
+  ]
+}
+```

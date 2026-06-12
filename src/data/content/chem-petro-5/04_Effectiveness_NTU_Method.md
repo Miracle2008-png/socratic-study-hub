@@ -81,3 +81,22 @@ Cold water outlet (from $Q = C_c \Delta T$):
 $$T_{c,out} = 15 + \frac{50490}{1254} = 15 + 40.3 = 55.3\text{°C}$$
 
 No iterative guessing was required to find these temperatures!
+
+## 5. NTU Rating Process
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "rate", "data": { "label": "Rating Problem", "icon": "Target", "description": "Goal: Find outlet temps." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "cap", "data": { "label": "Capacity Rates", "icon": "Activity", "description": "Determine Cmin." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "ntu", "data": { "label": "Calculate NTU", "icon": "Hash", "description": "NTU = UA/Cmin." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "eff", "data": { "label": "Effectiveness", "icon": "TrendingUp", "description": "Extract Q from Epsilon." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "rate", "target": "cap", "animated": true },
+    { "source": "cap", "target": "ntu", "animated": true },
+    { "source": "ntu", "target": "eff", "animated": true }
+  ]
+}
+```

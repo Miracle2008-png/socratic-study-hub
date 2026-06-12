@@ -61,3 +61,22 @@ $$ \Delta \hat{H}_{\text{total}} = \text{Sensible Heat (Liquid)} + \text{Latent 
 
 In many real-world problems, mass and energy balances are inextricably linked. 
 For example, if you are using steam to heat a chemical stream in a heat exchanger, the amount of steam you need (a mass flow variable) depends entirely on the required enthalpy change of the chemical stream (an energy variable). You must solve the material balances and energy balances simultaneously to find the answer.
+
+## 6. Energy Balances Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "first", "data": { "label": "First Law", "icon": "Activity", "description": "Delta H = Q." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "enth", "data": { "label": "Enthalpy", "icon": "TrendingUp", "description": "Specific H." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "sens", "data": { "label": "Sensible Heat", "icon": "Thermometer", "description": "Temp change." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "lat", "data": { "label": "Latent Heat", "icon": "Cloud", "description": "Phase change." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "first", "target": "enth", "animated": true },
+    { "source": "enth", "target": "sens", "animated": true },
+    { "source": "enth", "target": "lat", "animated": true }
+  ]
+}
+```

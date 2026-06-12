@@ -37,3 +37,22 @@ Fluidized bed reactors (like FCC units in oil refineries) are some of the most s
 
 1. **Unbelievable Heat Transfer**: The violent, chaotic mixing of the solid particles acts like a massive thermal sponge. Fluidized beds have almost zero temperature gradients. This prevents localized "hot spots" that would otherwise melt the catalyst or cause runaway explosions during highly exothermic reactions.
 2. **Continuous Solid Processing**: Unlike a static packed bed, a fluidized bed behaves like a liquid. You can literally drain the deactivated catalyst out of a pipe at the bottom, regenerate it, and pump it back into the top, allowing the chemical plant to run continuously for years without shutting down.
+
+## 4. Fluidization Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "flow", "data": { "label": "Upward Flow", "icon": "ArrowUp", "description": "Ergun drag." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "vmf", "data": { "label": "Minimum Fluidization", "icon": "Target", "description": "Drag = Weight." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "exp", "data": { "label": "Bed Expansion", "icon": "Maximize", "description": "Bubbling bed." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "ben", "data": { "label": "Reactor Benefits", "icon": "Zap", "description": "Heat transfer." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "flow", "target": "vmf", "animated": true },
+    { "source": "vmf", "target": "exp", "animated": true },
+    { "source": "exp", "target": "ben", "animated": true }
+  ]
+}
+```

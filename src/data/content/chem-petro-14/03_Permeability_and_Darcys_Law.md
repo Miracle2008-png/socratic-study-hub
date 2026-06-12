@@ -58,3 +58,22 @@ As the fluid gets closer to the well, the available cross-sectional area ($A$) s
 This requires a massive amount of pressure to push it. 
 
 Therefore, 90% of the pressure drop in an oil reservoir occurs within the last few feet right next to the wellbore. If you damage the permeability of the rock right next to the wellbore (e.g., by clogging the pores with drilling mud), you will completely kill the well's production, even if the rest of the reservoir is pristine.
+
+## 5. The Variables of Darcy's Law
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "dp", "data": { "label": "Pressure Gradient (ΔP)", "icon": "Activity", "description": "The driving force pushing the fluid." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "visc", "data": { "label": "Fluid Viscosity (μ)", "icon": "Droplet", "description": "Resistance to flow (water vs molasses)." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "perm", "data": { "label": "Permeability (k)", "icon": "Filter", "description": "Size and connectivity of the rock's pore throats." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "flow", "data": { "label": "Flow Rate (q)", "icon": "FastForward", "description": "Resulting volume of fluid produced per day." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "dp", "target": "visc", "animated": true },
+    { "source": "visc", "target": "perm", "animated": true },
+    { "source": "perm", "target": "flow", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

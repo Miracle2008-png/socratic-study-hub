@@ -57,3 +57,20 @@ At $S_w = 50\%$, the curves typically show:
 By forcing two fluids to flow simultaneously, you have destroyed 80% of the rock's original flow capacity! 
 
 This is the central tragedy of reservoir engineering. As a well ages and water begins to creep into the oil zone, the well doesn't just produce less oil; the massive interference between the water and the oil actually chokes the total flow rate of the entire well down to a trickle.
+
+## 5. The Stages of Multiphase Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "swirr", "data": { "label": "Irreducible Water", "icon": "Droplet", "description": "Water immobilized on rock. Max Oil flow (kro = 1.0)." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "mix", "data": { "label": "Multiphase Interference", "icon": "Shuffle", "description": "Fluids block each other. Total flow capacity drops 80%." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "sor", "data": { "label": "Residual Oil (Sor)", "icon": "Lock", "description": "Oil breaks into trapped ganglia. Oil flow stops (kro = 0)." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } }
+  ],
+  "edges": [
+    { "source": "swirr", "target": "mix", "animated": true },
+    { "source": "mix", "target": "sor", "animated": true, "style": { "stroke": "#ef4444" } }
+  ]
+}
+```

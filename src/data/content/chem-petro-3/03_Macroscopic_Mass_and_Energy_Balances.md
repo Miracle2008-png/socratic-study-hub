@@ -51,3 +51,21 @@ Where:
 - $h_L$ is Frictional Head Loss.
 
 This is the most practically useful equation in fluid mechanics. It is the basis for sizing all pumps and piping networks.
+
+## 4. Macroscopic Balances Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "mass", "data": { "label": "Mass Balance", "icon": "Droplet", "description": "Continuity Equation." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "energy", "data": { "label": "Energy Balance", "icon": "Zap", "description": "First Law." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "mech", "data": { "label": "Mechanical Energy", "icon": "Settings", "description": "Head form." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "loss", "data": { "label": "Head Loss", "icon": "TrendingDown", "description": "Frictional dissipation." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } }
+  ],
+  "edges": [
+    { "source": "energy", "target": "mech", "animated": true },
+    { "source": "mech", "target": "loss", "animated": true }
+  ]
+}
+```

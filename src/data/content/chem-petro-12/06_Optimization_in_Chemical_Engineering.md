@@ -46,3 +46,24 @@ Imagine trying to find the highest peak in the Rocky Mountains while blindfolded
 
 However, you might just be standing on a small foothill (Local Optimum), while Mount Elbert (the true Global Optimum) is 10 miles away. 
 Gradient-based solvers are incredibly susceptible to getting trapped in local optima. To combat this, engineers use stochastic algorithms (like Genetic Algorithms or Simulated Annealing) that randomly "jump" around the solution space to ensure they haven't missed a massive peak hidden behind a valley.
+
+## 5. The Optimization Engine
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "obj", "data": { "label": "Objective Function", "icon": "Crosshair", "description": "The math equation to Maximize NPV or Minimize Cost." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "vars", "data": { "label": "Decision Variables", "icon": "Sliders", "description": "The knobs we can turn (Temperatures, Pressures)." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "const", "data": { "label": "Constraints", "icon": "ShieldAlert", "description": "Physics and Safety limits we cannot cross." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "solve", "data": { "label": "NLP Solvers", "icon": "Monitor", "description": "Supercomputers searching for the best mathematically possible answer." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "opt", "data": { "label": "Global Optimum", "icon": "Mountain", "description": "The absolute highest peak of profitability." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "obj", "target": "solve", "animated": true },
+    { "source": "vars", "target": "solve", "animated": true },
+    { "source": "const", "target": "solve", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "solve", "target": "opt", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

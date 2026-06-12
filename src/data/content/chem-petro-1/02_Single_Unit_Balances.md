@@ -45,3 +45,22 @@ For single units like mixers, splitters, distillation columns, and filters where
 3. Write the total mass balance.
 4. Write the component mass balances. (Remember, if there are $N$ components, you can only write $N$ independent equations. The total mass balance counts as one of them, leaving $N-1$ component balances).
 5. Use algebra or linear matrices to solve the system of equations.
+
+## 5. Single Unit Balance Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "flow", "data": { "label": "Flowchart", "icon": "Map", "description": "Map process." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "dof", "data": { "label": "Degrees of Freedom", "icon": "Target", "description": "NDF." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "basis", "data": { "label": "Basis of Calculation", "icon": "PieChart", "description": "Assume feed." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "solve", "data": { "label": "Solve", "icon": "Activity", "description": "Mass balances." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "flow", "target": "dof", "animated": true },
+    { "source": "dof", "target": "basis", "animated": true },
+    { "source": "basis", "target": "solve", "animated": true }
+  ]
+}
+```

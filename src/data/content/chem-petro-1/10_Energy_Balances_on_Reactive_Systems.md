@@ -59,3 +59,22 @@ Where:
 If a combustion reaction is heavily exothermic, and the reactor is perfectly insulated ($\dot{Q} = 0$), all the heat released by the reaction goes entirely into raising the temperature of the product gases. The theoretical maximum temperature reached by the gases under these conditions is called the **Adiabatic Flame Temperature**.
 
 It is calculated by setting the total enthalpy of the input streams equal to the total enthalpy of the output streams, and iteratively solving for the unknown $T_{\text{out}}$ inside the specific heat integrals.
+
+## 5. Reactive Energy Balances Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "hr", "data": { "label": "Heat of Reaction", "icon": "Flame", "description": "Delta Hr." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "exo", "data": { "label": "Exo/Endo", "icon": "Activity", "description": "Releases/Requires." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "hf", "data": { "label": "Heat of Formation", "icon": "TrendingUp", "description": "Elements = 0." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "aft", "data": { "label": "Adiabatic Temp", "icon": "Thermometer", "description": "Max temp (Q=0)." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "hr", "target": "exo", "animated": true },
+    { "source": "hr", "target": "hf", "animated": true },
+    { "source": "hf", "target": "aft", "animated": true }
+  ]
+}
+```

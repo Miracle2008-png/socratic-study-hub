@@ -55,3 +55,23 @@ Because $D_{AB}$ is so minuscule in liquids, the concentration boundary layer (t
 To overcome this sluggish diffusion:
 1.  **Agitation:** Liquid reactors must be violently stirred (using Rushton turbines or pitched-blade impellers) to physically tear away the stagnant film and reduce the diffusion distance to the absolute minimum.
 2.  **Increased Temperature:** Operating liquid extraction or absorption columns at elevated temperatures dramatically drops the liquid viscosity, vastly improving $D_{AB}$ and overall column efficiency.
+
+## 4. Liquid Diffusion Models
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "visc", "data": { "label": "Viscosity Barrier", "icon": "Droplet", "description": "Liquids diffuse 10,000x slower." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "se", "data": { "label": "Stokes-Einstein", "icon": "Activity", "description": "Macromolecules." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "wc", "data": { "label": "Wilke-Chang", "icon": "Hash", "description": "Small molecules (empirical)." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "ind", "data": { "label": "Industrial Solutions", "icon": "Zap", "description": "Heat and agitate." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "visc", "target": "se", "animated": true },
+    { "source": "visc", "target": "wc", "animated": true },
+    { "source": "se", "target": "ind", "animated": true },
+    { "source": "wc", "target": "ind", "animated": true }
+  ]
+}
+```

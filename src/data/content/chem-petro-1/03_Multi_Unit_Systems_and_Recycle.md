@@ -44,3 +44,22 @@ At steady state, the rate at which the impurity enters the process in the fresh 
 
 A **bypass stream** takes a portion of an upstream feed and skips it past one or more process units, mixing it directly into the downstream product.
 Bypass is typically used to control the exact composition or temperature of a final product stream by blending treated and untreated fluids.
+
+## 5. Multi-Unit Systems Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "bound", "data": { "label": "System Boundaries", "icon": "Box", "description": "Define volume." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "rec", "data": { "label": "Recycle", "icon": "Repeat", "description": "Recover unreacted." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "purge", "data": { "label": "Purge", "icon": "ArrowDownCircle", "description": "Prevent accumulation." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "bp", "data": { "label": "Bypass", "icon": "Shuffle", "description": "Control composition." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "bound", "target": "rec", "animated": true },
+    { "source": "rec", "target": "purge", "animated": true },
+    { "source": "bound", "target": "bp", "animated": true }
+  ]
+}
+```

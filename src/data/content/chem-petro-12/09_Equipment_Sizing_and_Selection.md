@@ -50,3 +50,22 @@ Selecting the right type is driven by flow rate and required pressure.
 Compressors are massively expensive and consume terrifying amounts of electricity. 
 *   **Centrifugal Compressors:** Used for massive, continuous flow rates of gas (like the air intake for an entire refinery), but they can only achieve moderate pressure boosts per stage.
 *   **Reciprocating Compressors:** Basically a car engine running in reverse. A massive piston physically crushes the gas. Used for extremely high pressures, but they are noisy, require massive concrete foundations, and the gas pulses violently.
+
+## 4. The Sizing Workflow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "pfd", "data": { "label": "PFD Data", "icon": "Activity", "description": "Start with theoretical mass flow and temperatures." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "height", "data": { "label": "Column Height", "icon": "Layers", "description": "Driven by thermodynamics and number of trays." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "diam", "data": { "label": "Column Diameter", "icon": "Maximize", "description": "Driven by fluid velocity to prevent flooding." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "thick", "data": { "label": "Wall Thickness", "icon": "Shield", "description": "Driven by ASME code, pressure, and metal stress limits." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } }
+  ],
+  "edges": [
+    { "source": "pfd", "target": "height", "animated": true },
+    { "source": "pfd", "target": "diam", "animated": true },
+    { "source": "pfd", "target": "thick", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

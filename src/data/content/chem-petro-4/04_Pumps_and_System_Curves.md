@@ -85,3 +85,23 @@ $$H_p = (z_2 - z_1) + h_f = 15 + 3.5 = 18.5 \, \text{m}$$
 $$P = \frac{\rho g Q H_p}{\eta} = \frac{998 \times 9.81 \times 0.01 \times 18.5}{0.72} = \frac{1811}{0.72} \approx 2515 \, \text{W} \approx 2.5 \, \text{kW}$$
 
 Select a pump with at least $H_p = 18.5 \, \text{m}$ at $Q = 10 \, \text{L/s}$ near its BEP, with shaft power $\geq 2.5 \, \text{kW}$.
+
+## 8. Pump Selection Workflow
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "ber", "data": { "label": "Modified Bernoulli", "icon": "Activity", "description": "Energy balance." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "sys", "data": { "label": "System Curve", "icon": "TrendingUp", "description": "Static + Dynamic Head." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "pump", "data": { "label": "Pump Curve", "icon": "TrendingDown", "description": "H vs Q characteristic." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "op", "data": { "label": "Operating Point", "icon": "Target", "description": "Intersection." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "npsh", "data": { "label": "NPSH", "icon": "AlertOctagon", "description": "Prevent cavitation." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } }
+  ],
+  "edges": [
+    { "source": "sys", "target": "op", "animated": true },
+    { "source": "pump", "target": "op", "animated": true },
+    { "source": "op", "target": "npsh", "animated": true }
+  ]
+}
+```

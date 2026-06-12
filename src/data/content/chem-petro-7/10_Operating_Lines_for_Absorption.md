@@ -57,3 +57,22 @@ $$ \frac{L'_{min}}{V'} = \frac{Y_{N+1} - Y_1}{X_N^* - X_0} $$
 
 **Design Rule of Thumb:** Real absorption columns are usually designed to operate at a liquid flow rate of:
 $$ L'_{\text{actual}} = 1.1 \times L'_{min} \quad \text{to} \quad 1.5 \times L'_{min} $$
+
+## 4. Absorption Lines
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "op", "data": { "label": "Operating Line", "icon": "TrendingUp", "description": "Mass balance, above equilibrium." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "eq", "data": { "label": "Equilibrium Line", "icon": "Activity", "description": "Henry's Law (Y=mX)." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "pinch", "data": { "label": "Pinch Point", "icon": "AlertCircle", "description": "Lines intersect." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } },
+    { "id": "minl", "data": { "label": "L'min", "icon": "Minimize2", "description": "Minimum solvent flow." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } }
+  ],
+  "edges": [
+    { "source": "op", "target": "pinch", "animated": true },
+    { "source": "eq", "target": "pinch", "animated": true },
+    { "source": "pinch", "target": "minl", "animated": true }
+  ]
+}
+```

@@ -43,3 +43,22 @@ MPC uses a supercomputer running a massive, dynamic, multi-variable mathematical
 *   Every minute, the MPC solves thousands of differential equations to predict the exact future trajectory of the plant for the next 4 hours.
 *   It simultaneously calculates the absolute optimal moves for 10 different valves at the exact same time, balancing the interacting variables perfectly to push the plant to its absolute maximum profitable limit without violating a single safety constraint.
 *   MPC sits "on top" of the DCS. The MPC supercomputer calculates the optimal setpoints and pushes them down to the basic DCS PID controllers, which do the physical dirty work of moving the valves.
+
+## 5. Industrial Digital Hierarchy
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "field", "data": { "label": "Field Sensors", "icon": "Thermometer", "description": "Raw analog data from the physical plant." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "plc", "data": { "label": "PLC Logic", "icon": "Zap", "description": "Lightning-fast Boolean safety logic (Emergency trips)." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "dcs", "data": { "label": "DCS Network", "icon": "Server", "description": "Redundant computers running continuous PID loops." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "mpc", "data": { "label": "MPC Supercomputer", "icon": "Cpu", "description": "Predicts future trajectory, optimizes 10 valves at once." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "field", "target": "plc", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "field", "target": "dcs", "animated": true },
+    { "source": "dcs", "target": "mpc", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

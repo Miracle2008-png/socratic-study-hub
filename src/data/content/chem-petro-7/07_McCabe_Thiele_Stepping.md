@@ -42,3 +42,23 @@ You stop stepping the moment your horizontal line crosses $x = x_B$.
 The McCabe-Thiele diagram makes the physical limits of distillation instantly visually obvious:
 *   **A "Pinch" Point:** If an operating line touches the equilibrium curve, the steps become infinitely small. It takes an infinite number of stages to pass that point.
 *   **Total Reflux:** If no product is withdrawn ($D=0, B=0$), all liquid is returned ($L=V$). The slope of the ROL is $1.0$, meaning the operating lines perfectly match the $y=x$ diagonal. This yields the largest possible steps and the **Minimum Number of Stages ($N_{min}$)**.
+
+## 6. Stepping Algorithm
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "start", "data": { "label": "Start Top", "icon": "Play", "description": "(xD, xD)." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "horiz", "data": { "label": "Horizontal Step", "icon": "ArrowLeft", "description": "Hit Equilibrium (Thermo)." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "vert", "data": { "label": "Vertical Step", "icon": "ArrowDown", "description": "Hit Op-Line (Mass Bal)." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "switch", "data": { "label": "Switch Lines", "icon": "Repeat", "description": "ROL to SOL at feed." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "start", "target": "horiz", "animated": true },
+    { "source": "horiz", "target": "vert", "animated": true },
+    { "source": "vert", "target": "horiz", "animated": true },
+    { "source": "vert", "target": "switch", "animated": true }
+  ]
+}
+```

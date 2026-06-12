@@ -57,3 +57,22 @@ $$ G_c(s) = K_c \left( 1 + \frac{1}{\tau_I s} + \tau_D s \right) $$
 1.  **Trial and Error:** Slowly increase $K_c$ until it bounces, then back off. Add some Integral, wait, see what happens. This is an art form mastered by veteran operators.
 2.  **Ziegler-Nichols Method:** A classic 1940s empirical method. You turn off I and D, and crank up $K_c$ until the physical plant goes into sustained, permanent sine-wave oscillations. You record the Ultimate Gain ($K_{cu}$) and the Ultimate Period ($P_u$), and plug them into simple geometric formulas to find safe $K_c$, $\tau_I$, and $\tau_D$ values.
 3.  **Internal Model Control (IMC) / Direct Synthesis:** Modern mathematical methods. You specify exactly what kind of first-order trajectory you *want* the closed-loop system to follow, and the math reverse-engineers the exact PID parameters required to force the plant to behave that way.
+
+## 6. PID Term Hierarchy
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "p", "data": { "label": "Proportional (P)", "icon": "Activity", "description": "The Present. Reacts to current error. Leaves steady-state offset." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "i", "data": { "label": "Integral (I)", "icon": "Clock", "description": "The Past. Sums up history. Crushes offset to absolute zero." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "d", "data": { "label": "Derivative (D)", "icon": "FastForward", "description": "The Future. Looks at slope. Slams brakes to prevent overshoot." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "tune", "data": { "label": "Controller Tuning", "icon": "Sliders", "description": "Ziegler-Nichols to find the perfect balance of P, I, and D." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "p", "target": "tune", "animated": true },
+    { "source": "i", "target": "tune", "animated": true },
+    { "source": "d", "target": "tune", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

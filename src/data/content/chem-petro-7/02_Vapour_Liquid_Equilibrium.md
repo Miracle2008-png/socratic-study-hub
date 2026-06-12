@@ -66,3 +66,22 @@ $$ y_A \cdot P = \gamma_A \cdot x_A \cdot P_A^{sat}(T) $$
 The activity coefficient $\gamma_A$ is a complex function of temperature, pressure, and, most importantly, liquid composition $x_A$. It is calculated using advanced thermodynamic models like Margules, Van Laar, Wilson, NRTL, or UNIFAC.
 *   If $\gamma > 1$ (Positive Deviation): The molecules "dislike" each other and try to escape the liquid phase more easily than Raoult's law predicts. This is the most common non-ideality.
 *   If $\gamma < 1$ (Negative Deviation): The molecules "like" each other (e.g., due to hydrogen bonding) and stay in the liquid phase more stubbornly.
+
+## 5. VLE Theory Summary
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "raoult", "data": { "label": "Raoult's Law", "icon": "Activity", "description": "Ideal VLE relationship." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "bubble", "data": { "label": "Bubble Point", "icon": "CloudLightning", "description": "First vapour forms." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "dew", "data": { "label": "Dew Point", "icon": "Droplet", "description": "First liquid condenses." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "nonid", "data": { "label": "Non-Ideality", "icon": "AlertTriangle", "description": "Gamma corrects Raoult's." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } }
+  ],
+  "edges": [
+    { "source": "raoult", "target": "bubble", "animated": true },
+    { "source": "raoult", "target": "dew", "animated": true },
+    { "source": "raoult", "target": "nonid", "animated": true }
+  ]
+}
+```

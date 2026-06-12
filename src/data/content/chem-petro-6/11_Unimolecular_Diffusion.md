@@ -48,3 +48,22 @@ $$ N_A = \frac{D_{AB} P}{R T (z_2 - z_1) p_{B,lm}} (p_{A1} - p_{A2}) $$
 
 ### The Concentration Profile
 Because of the logarithmic term, the partial pressure profile of species A in unimolecular diffusion is **not a straight line**. It forms a concave curve. The gradient $dp_A/dz$ gets steeper as $x_A$ increases, because the required diffusive flux must overcome the lack of "bulk flow assist" at low concentrations.
+
+## 4. Unimolecular Diffusion Features
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "stag", "data": { "label": "Stagnant Species B", "icon": "StopCircle", "description": "Nb = 0" }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "bulk", "data": { "label": "Bulk Flow Assist", "icon": "Wind", "description": "Amplifies flux of A." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "stef", "data": { "label": "Stefan's Law", "icon": "Hash", "description": "Log-mean pressure." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "prof", "data": { "label": "Concave Profile", "icon": "TrendingDown", "description": "Non-linear gradient." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "stag", "target": "bulk", "animated": true },
+    { "source": "bulk", "target": "stef", "animated": true },
+    { "source": "stef", "target": "prof", "animated": true }
+  ]
+}
+```

@@ -45,3 +45,20 @@ For these extremely complex fluids, the apparent viscosity changes based on both
 
 - **Thixotropic Fluids**: Viscosity decreases over time under constant shear. If you stir it at a constant speed, it gets thinner and thinner the longer you stir. When you stop, it slowly rebuilds its structure over hours or days. (e.g., yogurt, some drilling muds).
 - **Rheopectic Fluids**: Viscosity increases over time under constant shear. (Very rare, e.g., certain gypsum pastes).
+
+## 4. Non-Newtonian Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "newt", "data": { "label": "Newtonian", "icon": "Droplet", "description": "Constant viscosity." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "ti", "data": { "label": "Time-Independent", "icon": "Clock", "description": "Shear dependent." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "pow", "data": { "label": "Power-Law", "icon": "Activity", "description": "n-index model." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "td", "data": { "label": "Time-Dependent", "icon": "RotateCcw", "description": "Thixotropic." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "ti", "target": "pow", "animated": true }
+  ]
+}
+```

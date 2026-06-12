@@ -49,3 +49,24 @@ For older, low-volume oil fields where expensive Heater Treaters are not economi
 3.  The emulsion slowly floats upward through the deep pool of hot water.
 4.  As the microscopic water droplets in the emulsion physically rub against the massive pool of hot water, they are literally "washed" out of the oil. 
 5.  Pure, clean oil floats to the very top of the tank and spills over into the sales line.
+
+## 4. Breaking Emulsions: The Heater Treater
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "emulsion", "data": { "label": "Stable Emulsion", "icon": "Lock", "description": "Water droplets permanently trapped in oil by a rigid chemical skin." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "chem", "data": { "label": "Chemical Demulsifier", "icon": "FlaskConical", "description": "Torpedo chemicals violently attack and strip the rigid skin." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "heat", "data": { "label": "Thermal Coalescence", "icon": "ThermometerSun", "description": "160°F heat thins the oil. Droplets violently vibrate and smash together." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "zap", "data": { "label": "Electrostatic Grid", "icon": "Zap", "description": "40,000 Volts violently rip stubborn droplets back and forth until they merge." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } },
+    { "id": "pure", "data": { "label": "Clean Oil & Water", "icon": "CheckCircle", "description": "Massive heavy water drops sink. Pure pipeline-spec oil floats." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "emulsion", "target": "chem", "animated": true },
+    { "source": "chem", "target": "heat", "animated": true },
+    { "source": "heat", "target": "zap", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "zap", "target": "pure", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

@@ -44,3 +44,22 @@ For a gas molecule $A$ to react on a solid catalyst pellet to form gas $B$, seve
 The overall speed of the reactor is dictated by whichever of these seven steps is the slowest (the rate-limiting step). 
 
 If the chemical surface reaction (Step 4) is incredibly fast, but the pores are very narrow and long, the reaction is **Diffusion-Limited**. The reaction is starving because $A$ cannot diffuse down the pores fast enough. In this case, to speed up the reactor, changing the chemical catalyst won't help; you must crush the pellets into smaller pieces to shorten the diffusion path.
+
+## 4. Heterogeneous Reaction Steps
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "bulk", "data": { "label": "Bulk Fluid", "icon": "Layers", "description": "Reactants in flow." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "diff", "data": { "label": "Diffusion", "icon": "ArrowRight", "description": "Pore & Boundary mass transfer." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "rxn", "data": { "label": "Adsorption & Reaction", "icon": "Zap", "description": "Surface transformation." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "desorp", "data": { "label": "Desorption & Exit", "icon": "ArrowUp", "description": "Products return to bulk." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "bulk", "target": "diff", "animated": true },
+    { "source": "diff", "target": "rxn", "animated": true },
+    { "source": "rxn", "target": "desorp", "animated": true }
+  ]
+}
+```

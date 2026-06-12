@@ -50,3 +50,21 @@ You must stop the reaction (or remove the products from the reactor) at the exac
 *   If you let the reaction run too long, all your valuable B has been destroyed into C.
 
 Calculus (setting $\frac{dC_B}{dt} = 0$) allows us to calculate the exact optimum time ($t_{opt}$) to maximize the yield of product B.
+
+## 3. Complex Reaction Strategies
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "par", "data": { "label": "Parallel Reactions", "icon": "Layers", "description": "A->B and A->C simultaneously." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "sel", "data": { "label": "Selectivity Control", "icon": "Target", "description": "Tweak Conc & Temp to favor B." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "ser", "data": { "label": "Series Reactions", "icon": "Activity", "description": "A->B->C sequentially." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "time", "data": { "label": "Residence Time", "icon": "Clock", "description": "Stop reaction exactly at peak B." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "par", "target": "sel", "animated": true },
+    { "source": "ser", "target": "time", "animated": true }
+  ]
+}
+```

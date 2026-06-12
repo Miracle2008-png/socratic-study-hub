@@ -45,3 +45,23 @@ CSS is brilliant because it is cheap. You only need one well. You do not have to
 However, it has massive physical limitations:
 1.  **Limited Radius:** Heat conduction through solid rock is incredibly slow. The heat will never reach the oil sitting 200 feet away from the well. Therefore, CSS leaves massive amounts of oil completely untouched between the wells. The recovery factor is usually only 10% to 20%.
 2.  **Casing Destruction:** The wellbore is a steel pipe cemented into solid rock. When you pump $300^\circ\text{C}$ steam down a 2,000-foot steel pipe, the steel violently thermally expands. The pipe literally stretches by several feet. When the well cools down during the production phase, the steel violently shrinks. This continuous, violent stretching and shrinking will eventually rip the steel casing apart, destroying the well. Engineers must use highly specialized "Thermal Cements" and prestressed steel to survive the cycle.
+
+## 4. Cyclic Steam Stimulation (Huff & Puff)
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "huff", "data": { "label": "The Huff (Injection)", "icon": "Cloud", "description": "High-pressure 300°C steam injected violently into the well for 2-4 weeks." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "soak", "data": { "label": "The Soak (Heating)", "icon": "ThermometerSun", "description": "Well is sealed. Heat conducts outward, baking the rock and melting the heavy tar." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "puff", "data": { "label": "The Puff (Production)", "icon": "Droplet", "description": "Well is opened. Hot, mobile liquid oil is pumped to the surface for 3-6 months." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "freeze", "data": { "label": "Rock Cools & Freezes", "icon": "Snowflake", "description": "The rock eventually cools, and the oil freezes back into solid tar." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } }
+  ],
+  "edges": [
+    { "source": "huff", "target": "soak", "animated": true },
+    { "source": "soak", "target": "puff", "animated": true },
+    { "source": "puff", "target": "freeze", "animated": true },
+    { "source": "freeze", "target": "huff", "animated": true, "style": { "stroke": "#ef4444" }, "label": "Restart Cycle" }
+  ]
+}
+```

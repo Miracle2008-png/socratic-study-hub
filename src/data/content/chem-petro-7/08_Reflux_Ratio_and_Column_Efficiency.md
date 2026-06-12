@@ -56,3 +56,22 @@ For typical hydrocarbon separations, $E_o$ ranges from $60\%$ to $80\%$. For vis
 Sometimes engineers prefer to apply efficiency to the McCabe-Thiele diagram itself, stage-by-stage. The Murphree efficiency defines how close a single tray gets to equilibrium:
 $$ E_{MV} = \frac{y_n - y_{n+1}}{y_n^* - y_{n+1}} $$
 Where $y_n^*$ is the theoretical equilibrium vapour composition. Graphically, this involves drawing a "pseudo-equilibrium curve" that is lower than the true thermodynamic curve, and stepping off between the pseudo-curve and the operating lines.
+
+## 4. Reflux Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "tot", "data": { "label": "Total Reflux", "icon": "Maximize2", "description": "Infinite energy, min stages." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } },
+    { "id": "min", "data": { "label": "Minimum Reflux", "icon": "Minimize2", "description": "Infinite stages, min energy." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "opt", "data": { "label": "Optimum Reflux", "icon": "CheckCircle", "description": "CapEx vs OpEx balance." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "eff", "data": { "label": "Tray Efficiency", "icon": "BarChart2", "description": "Theoretical to Actual." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "tot", "target": "opt", "animated": true },
+    { "source": "min", "target": "opt", "animated": true },
+    { "source": "opt", "target": "eff", "animated": true }
+  ]
+}
+```

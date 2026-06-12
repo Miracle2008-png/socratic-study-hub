@@ -49,3 +49,22 @@ Over millions of years, rivers act like conveyor belts, stripping sand and mud o
 *   The oil generates, migrates up the sloping sides of the basin, and gets trapped in the shallower sandstone layers near the edges. 
 
 Famous basins include the Permian Basin (Texas), the Williston Basin (North Dakota), and the Persian Gulf Basin (Middle East). If you are not drilling in a sedimentary basin, you have a 0% chance of finding oil.
+
+## 5. Stratigraphic Sequence (Transgression)
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "trans", "data": { "label": "Transgression", "icon": "ArrowUpCircle", "description": "Global sea levels rise, flooding continents." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "sand", "data": { "label": "1. Beach Sand", "icon": "Box", "description": "Porous reservoir rock laid down first." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "shale", "data": { "label": "2. Marine Shale", "icon": "Lock", "description": "Deep water drops an impermeable mud layer on top of the sand." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "trap", "data": { "label": "Stratigraphic Trap", "icon": "ShieldAlert", "description": "Perfect trap formed by the sequence of rock layers." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "trans", "target": "sand", "animated": true },
+    { "source": "sand", "target": "shale", "animated": true },
+    { "source": "shale", "target": "trap", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

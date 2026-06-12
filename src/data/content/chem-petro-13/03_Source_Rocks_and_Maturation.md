@@ -50,3 +50,22 @@ The machine measures the hydrocarbons released at different temperatures:
 *   **Tmax:** The specific temperature at which the S2 peak reaches its absolute maximum. A higher Tmax indicates the rock is more thermally mature.
 
 By analyzing the S1, S2, and Tmax data, geologists can definitively say: "This rock was a Type II kerogen, it has already generated half of its oil, and it still has the potential to generate more if buried deeper."
+
+## 5. Stages of Thermal Maturation
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "immature", "data": { "label": "Immature (Ro < 0.6%)", "icon": "Clock", "description": "Too cold. Kerogen is solid and uncracked." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "oil", "data": { "label": "Oil Window (Ro 0.6-1.3%)", "icon": "Droplet", "description": "Peak generation of liquid crude oil." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "gas", "data": { "label": "Gas Window (Ro 1.3-2.0%)", "icon": "Cloud", "description": "Oil is thermally cracked into natural gas." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "dead", "data": { "label": "Overmature (Ro > 2.0%)", "icon": "XCircle", "description": "Hydrocarbons destroyed. Pure graphite remains." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } }
+  ],
+  "edges": [
+    { "source": "immature", "target": "oil", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "oil", "target": "gas", "animated": true, "style": { "stroke": "#3b82f6" } },
+    { "source": "gas", "target": "dead", "animated": true, "style": { "stroke": "#ef4444" } }
+  ]
+}
+```

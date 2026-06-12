@@ -54,3 +54,22 @@ $$ Da = k \cdot \tau $$
 *   **If $Da \gg 1$ (e.g., $Da = 100$):** The reaction is much faster than the flow. The fluid sits in the reactor long after the reaction has finished. Conversion will be nearly 100%.
 
 As a rule of thumb, to achieve 90% conversion in a continuous reactor, you need a Damköhler number around 10.
+
+## 4. Time Metrics Summary
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "v", "data": { "label": "Volume (V)", "icon": "Box", "description": "Physical size." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "flow", "data": { "label": "Flow Rate (v0)", "icon": "FastForward", "description": "Volumetric flow in." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "tau", "data": { "label": "Space Time (Tau)", "icon": "Clock", "description": "Average time spent inside." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "da", "data": { "label": "Damköhler (Da)", "icon": "Activity", "description": "Reaction Time vs Flow Time." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "v", "target": "tau", "animated": true },
+    { "source": "flow", "target": "tau", "animated": true },
+    { "source": "tau", "target": "da", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

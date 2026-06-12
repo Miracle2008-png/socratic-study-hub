@@ -47,3 +47,22 @@ Where:
 - **$x$**: Quality.
 
 This linear weighting principle applies identically to internal energy ($u$), enthalpy ($h$), and entropy ($s$).
+
+## 5. Phase Behavior Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "pvt", "data": { "label": "PVT Surface", "icon": "Box", "description": "3D State Postulate." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "phase", "data": { "label": "Phase Diagrams", "icon": "Map", "description": "P-T projection." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "dome", "data": { "label": "Vapor Dome", "icon": "Layers", "description": "P-V projection." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "qual", "data": { "label": "Quality", "icon": "Percent", "description": "Liquid-Vapor mix." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "pvt", "target": "phase", "animated": true },
+    { "source": "pvt", "target": "dome", "animated": true },
+    { "source": "dome", "target": "qual", "animated": true }
+  ]
+}
+```

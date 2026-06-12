@@ -60,3 +60,22 @@ A First-Order Plus Dead Time (FOPDT) model is the most widely used empirical mod
 $$ G(s) = \frac{K_p e^{-\theta s}}{\tau_p s + 1} $$
 
 Dead time ($\theta$) is the absolute nemesis of a control engineer. If the controller makes an adjustment, it is completely "blind" to the results of that adjustment until the dead time has passed. Severe dead time causes control loops to oscillate violently and become unstable.
+
+## 5. FOPDT Model Components
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "fopdt", "data": { "label": "FOPDT Model", "icon": "Activity", "description": "First-Order Plus Dead Time. The standard industrial model." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "gain", "data": { "label": "Gain (Kp)", "icon": "Maximize", "description": "How MUCH the output will eventually change." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "tau", "data": { "label": "Time Constant (Tau)", "icon": "Clock", "description": "How FAST it reaches 63.2% of the final value." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "dead", "data": { "label": "Dead Time (Theta)", "icon": "SkipForward", "description": "Physical delay before any response occurs. The enemy of control." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } }
+  ],
+  "edges": [
+    { "source": "fopdt", "target": "gain", "animated": true },
+    { "source": "fopdt", "target": "tau", "animated": true },
+    { "source": "fopdt", "target": "dead", "animated": true, "style": { "stroke": "#ef4444" } }
+  ]
+}
+```

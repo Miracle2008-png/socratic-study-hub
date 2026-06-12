@@ -56,3 +56,22 @@ Because fluid contacts are governed by gravity, the OWC is almost always perfect
 Therefore, on the Structural Contour Map, the geologist simply traces the $-4,200 \text{ ft}$ contour line. 
 Everything inside that line (higher elevation) is the oil field. Everything outside that line (lower elevation) is worthless saltwater. 
 The area inside that line is the "Spill Point" — the maximum possible volume of the trap before the oil spills out from under the seal.
+
+## 5. The Mapping Workflow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "data", "data": { "label": "Well Logs", "icon": "Database", "description": "Raw depth data from scattered boreholes." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "contour", "data": { "label": "Structure Contour", "icon": "Map", "description": "Connect the dots to draw the shape of the dome." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "isopach", "data": { "label": "Isopach Map", "icon": "Layers", "description": "Calculate the thickness of the reservoir." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "cross", "data": { "label": "Cross-Section", "icon": "Activity", "description": "Slice the Earth in half to view the trap in profile." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "data", "target": "contour", "animated": true },
+    { "source": "contour", "target": "isopach", "animated": true },
+    { "source": "isopach", "target": "cross", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

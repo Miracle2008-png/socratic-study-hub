@@ -61,3 +61,22 @@ Where:
 - **$P_r^{\text{sat}}$**: Reduced vapor pressure at a reduced temperature of $T_r = 0.7$.
 
 Using $P_r, T_r,$ and $\omega$, engineers can read highly accurate values of $Z$ from generalized compressibility charts, allowing them to solve the real gas law ($PV = ZRT$) for virtually any chemical compound without needing specific experimental data.
+
+## 5. Gas Models Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "ideal", "data": { "label": "Ideal Gas", "icon": "Circle", "description": "No interactions." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "real", "data": { "label": "Real Gases", "icon": "Activity", "description": "Z-factor." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "corr", "data": { "label": "Corresponding States", "icon": "Maximize2", "description": "Reduced vars." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "acentric", "data": { "label": "Acentric Factor", "icon": "Aperture", "description": "Non-sphericity." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "ideal", "target": "real", "animated": true },
+    { "source": "real", "target": "corr", "animated": true },
+    { "source": "corr", "target": "acentric", "animated": true }
+  ]
+}
+```

@@ -39,3 +39,26 @@ Even if a project is technically flawless, it might be an economic disaster. EOR
     *   If the global price of oil drops from \$80 to \$40 a barrel, the primary well still makes a profit. The EOR project instantly loses money on every single barrel and must be immediately shut down.
 
 Because of this extreme economic risk, engineers use advanced Reservoir Simulation supercomputers to run thousands of complex financial "What-If" scenarios to absolutely guarantee profitability before the Board of Directors signs the \$500 million check.
+
+## 3. The EOR Selection Matrix
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "start", "data": { "label": "Reservoir Data", "icon": "FileText", "description": "Core samples, fluid analysis, and pressure logs collected." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "viscosity", "data": { "label": "Viscosity Screen", "icon": "Droplet", "description": "Is it Heavy Tar (> 100 cP) or Light Oil (< 10 cP)?" }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "thermal", "data": { "label": "Thermal EOR (SAGD)", "icon": "Flame", "description": "Selected for heavy, shallow, highly viscous oil." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "conditions", "data": { "label": "Depth & Temp Screen", "icon": "ThermometerSun", "description": "Analyzing rock temperature, salinity, and pressure depth." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "chem", "data": { "label": "Chemical EOR (ASP)", "icon": "FlaskConical", "description": "Selected for shallow, cool, low-salinity reservoirs." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "gas", "data": { "label": "Miscible Gas (CO2)", "icon": "CloudFog", "description": "Selected for deep, hot, high-pressure reservoirs." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } }
+  ],
+  "edges": [
+    { "source": "start", "target": "viscosity", "animated": true },
+    { "source": "viscosity", "target": "thermal", "animated": true, "label": "Heavy Oil", "style": { "stroke": "#ef4444" } },
+    { "source": "viscosity", "target": "conditions", "animated": true, "label": "Light Oil" },
+    { "source": "conditions", "target": "chem", "animated": true, "label": "Cool / Shallow", "style": { "stroke": "#10b981" } },
+    { "source": "conditions", "target": "gas", "animated": true, "label": "Hot / Deep", "style": { "stroke": "#a855f7" } }
+  ]
+}
+```

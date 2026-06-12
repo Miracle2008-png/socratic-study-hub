@@ -50,3 +50,23 @@ They can now run dozens of different "What-If" scenarios to find the ultimate st
 *   **Scenario 4 (CO2 Injection):** Change the PVT fluid model and tell the simulator to inject massive volumes of $CO_2$. The simulator models the complex miscibility physics and predicts an extra 30 million barrels recovered, but at an operating cost of \$500 million.
 
 The output of these simulation runs is handed directly to the petroleum economists and the Board of Directors, who will use the simulator's curves to decide whether to invest a billion dollars or walk away.
+
+## 4. History Matching & Forecasting
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "data", "data": { "label": "Historical Data", "icon": "Database", "description": "Real-world pressure and production rates." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "compare", "data": { "label": "Compare (Sim vs Reality)", "icon": "GitCompare", "description": "Does the computer match the real world?" }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "tweak", "data": { "label": "Tweak Geology", "icon": "Sliders", "description": "Mismatch: Alter aquifers, faults, and permeability." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "forecast", "data": { "label": "Forecasting", "icon": "TrendingUp", "description": "Match: Run What-If scenarios for the next 30 years." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "data", "target": "compare", "animated": true },
+    { "source": "compare", "target": "tweak", "animated": true, "label": "Mismatch", "style": { "stroke": "#ef4444" } },
+    { "source": "tweak", "target": "compare", "animated": true },
+    { "source": "compare", "target": "forecast", "animated": true, "label": "Perfect Match", "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

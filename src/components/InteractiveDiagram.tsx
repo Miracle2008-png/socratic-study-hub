@@ -155,7 +155,7 @@ const InteractiveDiagram: React.FC<InteractiveDiagramProps> = ({ content }) => {
         
         <Controls />
         <MiniMap 
-          nodeColor={(node) => node.style?.background || '#475569'}
+          nodeColor={(node) => String(node.style?.background || '#475569')}
           maskColor="rgba(0,0,0,0.5)"
           style={{ backgroundColor: 'var(--color-base-deep, #0a0908)', border: '1px solid var(--color-border, #2a241c)' }}
         />

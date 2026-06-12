@@ -46,3 +46,22 @@ If the engineer knows the exact salinity of the drilling mud ($R_{mf}$), they ca
 Finding $R_w$ is the holy grail of petrophysics. Without knowing the exact salinity of the formation water, it is mathematically impossible to calculate exactly how much oil is in the rock using Archie's Equation (which we will cover in the next module).
 
 *The Catch:* The SP log requires the drilling mud to be conductive (water-based). If the well is drilled using Oil-Based Mud (OBM), the oil acts as a perfect electrical insulator. The electrical circuit is broken, the battery is dead, and the SP log will read a flat zero from top to bottom.
+
+## 5. SP Log Interpretation
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "tool", "data": { "label": "SP Tool", "icon": "Zap", "description": "Passively measures natural electrochemical voltage in the mud." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "shale", "data": { "label": "Shale (Baseline)", "icon": "AlignJustify", "description": "Impermeable filter. Battery short-circuits. Flat 0 mV reading." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "sand", "data": { "label": "Permeable Sand", "icon": "ArrowLeftCircle", "description": "Fresh mud meets salty water. Massive negative voltage spike." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "rw", "data": { "label": "Calculate Rw", "icon": "Calculator", "description": "Use the magnitude of the spike to mathematically calculate water salinity." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "tool", "target": "shale", "animated": true },
+    { "source": "tool", "target": "sand", "animated": true },
+    { "source": "sand", "target": "rw", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

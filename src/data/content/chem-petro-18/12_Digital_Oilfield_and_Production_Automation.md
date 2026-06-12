@@ -50,3 +50,23 @@ A Digital Twin is a flawless, mathematically perfect, real-time 3D simulation of
 *   The Digital Twin runs 10,000 complex "What-If" scenarios per hour. 
 
 If a massive compressor suddenly goes offline in the real world, the human engineers don't have to guess what to do. The Digital Twin instantly calculates the exact, mathematically perfect sequence of choke adjustments required across 50 different wells to perfectly re-route the flow of gas and prevent the entire facility from shutting down, allowing the oilfield to operate at an efficiency level that human brains simply cannot calculate.
+
+## 5. The SCADA & Automation Loop
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "sensor", "data": { "label": "Wellsite Sensors", "icon": "Activity", "description": "Continuous tracking of real-time pressure, temp, and flow." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "rtu", "data": { "label": "RTU & Telemetry", "icon": "Wifi", "description": "Data is bundled and beamed via satellite to HQ." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "scada", "data": { "label": "Central SCADA / AI", "icon": "Server", "description": "Machine Learning detects imminent failures. Digital Twin runs scenarios." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "auto", "data": { "label": "Automated Control", "icon": "RefreshCw", "description": "Logic signal sent back to wellhead to physically adjust the surface choke." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "sensor", "target": "rtu", "animated": true },
+    { "source": "rtu", "target": "scada", "animated": true, "style": { "stroke": "#ef4444" }, "label": "10TB Data Stream" },
+    { "source": "scada", "target": "auto", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "auto", "target": "sensor", "animated": true, "label": "Closed Loop" }
+  ]
+}
+```

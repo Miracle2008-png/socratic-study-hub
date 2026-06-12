@@ -46,3 +46,24 @@ The fluid is gently stepped down through a series of separators, each operating 
 4.  **Stock Tank:** The liquid finally rests at 0 psi (Atmospheric pressure).
 
 By stepping the pressure down gently over three stages, the complex thermodynamics ensure that more of the intermediate hydrocarbon molecules stay trapped in the liquid phase, resulting in more barrels of highly valuable oil in the final storage tank.
+
+## 5. Separator Internal Anatomy
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "inlet", "data": { "label": "Violent Inlet", "icon": "FastForward", "description": "High-velocity chaotic mixture enters the steel vessel." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "divert", "data": { "label": "Inlet Diverter", "icon": "Shield", "description": "Fluid violently smashes into a steel plate, destroying kinetic momentum." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "settle", "data": { "label": "Gravity Settling", "icon": "Waves", "description": "Velocity slows to a crawl. Heavy water sinks, light oil floats." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "mist", "data": { "label": "Mist Extractor", "icon": "Filter", "description": "Wire mesh traps microscopic oil droplets from the escaping gas." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "clean", "data": { "label": "Pure Flow Streams", "icon": "Droplet", "description": "Gas exits top, oil exits middle, water drains bottom (Vortex Breaker)." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "inlet", "target": "divert", "animated": true },
+    { "source": "divert", "target": "settle", "animated": true, "label": "Bulk Gas Frees" },
+    { "source": "settle", "target": "mist", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "mist", "target": "clean", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

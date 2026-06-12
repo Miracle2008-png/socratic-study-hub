@@ -48,3 +48,25 @@ Look at the denominator: $\phi^m \cdot R_t$.
 If the tool reads an astronomically high resistivity ($R_t = 1000\ \Omega\cdot m$), the denominator becomes massive. The fraction becomes tiny. Therefore, the Water Saturation ($S_w$) drops to 0.10 (10%). 
 
 The engineer can confidently tell the oil company: *"The rock is 90% full of oil. Run the casing. We have a winner."*
+
+## 4. Resistivity & Archie's Equation
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "tool", "data": { "label": "Deep Resistivity", "icon": "Radio", "description": "Shoots current into uninvaded zone to find True Resistivity (Rt)." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "water", "data": { "label": "Saltwater (Low R)", "icon": "Droplet", "description": "Conductive ions allow electricity to flow. Low resistance." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "oil", "data": { "label": "Oil/Gas (High R)", "icon": "Hexagon", "description": "Hydrocarbons act as massive electrical insulators. Huge resistance." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "archie", "data": { "label": "Archie's Equation", "icon": "Calculator", "description": "Combines Rt, Rw, and Porosity to calculate exact fluid volumes." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "sw", "data": { "label": "Water Saturation (Sw)", "icon": "CheckCircle", "description": "Proves exactly how much oil vs water is in the rock." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "tool", "target": "water", "animated": true },
+    { "source": "tool", "target": "oil", "animated": true },
+    { "source": "water", "target": "archie", "animated": true },
+    { "source": "oil", "target": "archie", "animated": true },
+    { "source": "archie", "target": "sw", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

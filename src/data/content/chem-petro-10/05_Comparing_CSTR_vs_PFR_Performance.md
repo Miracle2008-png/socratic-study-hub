@@ -49,3 +49,20 @@ Because mathematics is not engineering.
 **PFRs are terrible at heat transfer.** If a reaction is highly exothermic, a PFR will develop a localized "hot spot" near the entrance that can melt the pipe, explode, or destroy the catalyst. 
 
 **CSTRs are incredible at heat transfer.** The perfect mixing instantly dilutes the hot reacting fluid into a massive pool of cooler liquid. Even though the CSTR has to be 5 times larger physically, it is often the only safe way to run a highly exothermic liquid reaction.
+
+## 5. Performance Comparison Matrix
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "norm", "data": { "label": "Normal Kinetics", "icon": "TrendingDown", "description": "PFR is much smaller." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "auto", "data": { "label": "Autocatalytic", "icon": "TrendingUp", "description": "CSTR is smaller initially." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "heat", "data": { "label": "Exothermic Heat", "icon": "Thermometer", "description": "CSTR wins for safety." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } }
+  ],
+  "edges": [
+    { "source": "norm", "target": "auto", "animated": true },
+    { "source": "auto", "target": "heat", "animated": true }
+  ]
+}
+```

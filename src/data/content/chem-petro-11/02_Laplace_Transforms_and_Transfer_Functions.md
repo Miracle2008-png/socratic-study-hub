@@ -67,3 +67,20 @@ To test how our process $G(s)$ behaves, we hit it with standard, theoretical mat
     *   Laplace domain: $X(s) = \frac{M}{s^2}$
 4.  **Sinusoidal Input:** The input oscillates like a sine wave. (Crucial for frequency response analysis).
     *   Laplace domain: $X(s) = \frac{A\omega}{s^2 + \omega^2}$
+
+## 5. The Transfer Function Architecture
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "input", "data": { "label": "Input X(s)", "icon": "ArrowRightCircle", "description": "The disturbance or valve change in the Laplace domain." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "tf", "data": { "label": "Transfer Function G(s)", "icon": "Box", "description": "The mathematical personality of the tank." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "output", "data": { "label": "Output Y(s)", "icon": "TrendingUp", "description": "The resulting change in liquid level." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "input", "target": "tf", "animated": true },
+    { "source": "tf", "target": "output", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

@@ -47,3 +47,24 @@ A Production Engineer is a problem solver and an optimizer. Their daily tasks in
 *   **Surface Facility Optimization:** Ensuring the massive separators on the surface are operating at the perfect pressure and temperature to maximize the volume of sellable liquid oil and minimize the volume of cheap gas.
 
 Ultimately, the Production Engineer is the guardian of the cash flow. Every decision they make directly impacts how many barrels of oil the company sells today.
+
+## 4. The 5 Domains of the Production System
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "res", "data": { "label": "The Reservoir", "icon": "Mountain", "description": "High-pressure porous rock holding the initial fluid energy." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "comp", "data": { "label": "The Completion", "icon": "Crosshair", "description": "Interface where fluid violently squeezes into the steel casing." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "tubing", "data": { "label": "The Wellbore", "icon": "ArrowUp", "description": "10,000 feet of vertical tubing. Massive gravity & friction losses." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "choke", "data": { "label": "Surface Choke", "icon": "Settings", "description": "High-pressure valve on the surface used to intentionally bottleneck flow." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "facilities", "data": { "label": "Surface Facilities", "icon": "Factory", "description": "Separates oil, gas, and water before sending to sales pipeline." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "res", "target": "comp", "animated": true },
+    { "source": "comp", "target": "tubing", "animated": true },
+    { "source": "tubing", "target": "choke", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "choke", "target": "facilities", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

@@ -41,3 +41,24 @@ Every combination of injected gas and crude oil has a strictly defined **Minimum
 *   If the reservoir pressure drops to $2,000\text{ psi}$ (below the MMP), the gas loses its ability to vaporize the oil components. The boundary remains solid. The $CO_2$ simply acts like a giant, useless gas bubble, fingering through the rock and leaving all the trapped oil behind.
 
 Determining the exact MMP requires incredibly complex laboratory tests. Petrophysicists place a sample of the real crude oil in a titanium "Slim Tube" apparatus, heat it to reservoir temperature, and physically pump $CO_2$ through it at varying pressures for weeks to find the exact pressure at which the oil perfectly dissolves.
+
+## 4. Multiple-Contact Miscibility Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "co2", "data": { "label": "Inject CO2", "icon": "CloudFog", "description": "High-pressure, but initially immiscible with the oil." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "vaporize", "data": { "label": "Mass Transfer", "icon": "RefreshCcw", "description": "CO2 cloud vaporizes and steals light hydrocarbons from the oil." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "enrich", "data": { "label": "Enriched Solvent", "icon": "FlaskConical", "description": "Leading edge of CO2 becomes incredibly rich and chemically transformed." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } },
+    { "id": "miscible", "data": { "label": "Miscibility Achieved", "icon": "CheckCircle", "description": "Boundary disappears. IFT drops to absolutely zero." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "mobilize", "data": { "label": "Trapped Oil Mobilized", "icon": "Droplet", "description": "Single-phase fluid effortlessly flows to the producing well." }, "style": { "background": "#1e293b", "color": "#cbd5e1" } }
+  ],
+  "edges": [
+    { "source": "co2", "target": "vaporize", "animated": true },
+    { "source": "vaporize", "target": "enrich", "animated": true, "label": "Above MMP" },
+    { "source": "enrich", "target": "miscible", "animated": true },
+    { "source": "miscible", "target": "mobilize", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

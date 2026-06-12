@@ -54,3 +54,22 @@ Even in a world-class waterflood:
 $$ E = 0.65 \times 0.70 \times 0.60 = 0.27 \text{ (or 27\%)} $$
 
 Meaning even after decades of pumping oceans of water into the ground, 73% of the oil is left permanently trapped in the earth.
+
+## 4. The Sweep Efficiency Equation
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "overall", "data": { "label": "Overall Recovery (E)", "icon": "PieChart", "description": "The final percentage of oil successfully extracted." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "micro", "data": { "label": "Microscopic (Ed)", "icon": "ZoomIn", "description": "Trapped by capillary forces. Solved by chemicals." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "areal", "data": { "label": "Areal Sweep (Ea)", "icon": "Map", "description": "Bypassed on the map. Ruined by Viscous Fingering." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "vert", "data": { "label": "Vertical Sweep (Ev)", "icon": "Layers", "description": "Bypassed vertically. Ruined by Gravity & Thief Zones." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "overall", "target": "micro", "animated": true },
+    { "source": "overall", "target": "areal", "animated": true },
+    { "source": "overall", "target": "vert", "animated": true }
+  ]
+}
+```

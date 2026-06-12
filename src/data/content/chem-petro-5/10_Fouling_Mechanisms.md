@@ -61,3 +61,18 @@ When an exchanger inevitably fouls, it must be cleaned.
 Designing for fouling requires the engineer to **oversize** the heat exchanger. If a clean process requires $100 \, \text{m}^2$ of area, the specified fouling factors might dictate purchasing an exchanger with $150 \, \text{m}^2$. This adds massive upfront capital cost (CAPEX).
 
 During operation, the fouling layer increases the pressure drop, forcing pumps to work harder and consume more electricity (OPEX). Eventually, the fouling layer restricts heat transfer so much that the unit cannot meet process temperatures, forcing a complete, expensive plant shutdown for cleaning.
+
+## 5. Fouling Mitigation Strategies
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "vel", "data": { "label": "Velocity Control", "icon": "Wind", "description": "Increase shear." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "temp", "data": { "label": "Temp Control", "icon": "Thermometer", "description": "Avoid scaling." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "chem", "data": { "label": "Chemicals", "icon": "Droplet", "description": "Biocides/Inhibitors." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "clean", "data": { "label": "Cleaning", "icon": "Tool", "description": "Online/Offline." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": []
+}
+```

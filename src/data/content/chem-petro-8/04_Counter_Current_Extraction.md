@@ -46,3 +46,22 @@ When an operating line and a tie line are parallel and sit on top of each other,
 
 To find the minimum solvent rate graphically, you extend all the tie lines out to intersect the $R_N-S$ line. The intersection point closest to the triangle represents the limiting Operating Pole $P_{min}$. From $P_{min}$, you can back-calculate $(S/F)_{min}$. 
 Real columns are typically operated at $1.5$ to $2.0$ times the minimum solvent rate.
+
+## 3. Hunter-Nash Method Summary
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "flow", "data": { "label": "Counter-Current Flow", "icon": "Repeat", "description": "Heavy down, light up." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "pole", "data": { "label": "Operating Pole P", "icon": "Crosshair", "description": "Mass balance difference." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "steps", "data": { "label": "Stepping Stages", "icon": "List", "description": "Tie lines & Operating lines." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "pinch", "data": { "label": "Minimum Solvent", "icon": "AlertCircle", "description": "Tie line aligns with operating line." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } }
+  ],
+  "edges": [
+    { "source": "flow", "target": "pole", "animated": true },
+    { "source": "pole", "target": "steps", "animated": true },
+    { "source": "steps", "target": "pinch", "animated": true }
+  ]
+}
+```

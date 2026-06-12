@@ -54,3 +54,23 @@ The moment the drill bit punctures the seal rock, that equilibrium is shattered 
 *   The rock itself, losing its internal fluid pressure, begins to compress and crush under the weight of the Earth.
 
 The reservoir engineer uses complex mathematics and massive supercomputers to predict, model, and control this violent, dynamic chaos to safely and profitably extract the energy.
+
+## 5. The Reservoir Engineering Discipline
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "res", "data": { "label": "The Reservoir", "icon": "Database", "description": "Microscopic rock pores filled with high-pressure fluid." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "petro", "data": { "label": "Petrophysics (The Rock)", "icon": "Box", "description": "Porosity, Permeability, and Compressibility." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "pvt", "data": { "label": "PVT (The Fluid)", "icon": "Droplet", "description": "Pressure, Volume, Temperature phase behavior." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "forecast", "data": { "label": "Production Forecast", "icon": "TrendingUp", "description": "Integrating rock and fluid to predict 30 years of cash flow." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "res", "target": "petro", "animated": true },
+    { "source": "res", "target": "pvt", "animated": true },
+    { "source": "petro", "target": "forecast", "animated": true },
+    { "source": "pvt", "target": "forecast", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

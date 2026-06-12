@@ -44,3 +44,20 @@ Engineers install a **Subsea Christmas Tree**.
 *   It is installed by unmanned, remote-controlled submarines (ROVs).
 *   The massive steel valves are actuated by complex hydraulic umbilical cables running miles along the ocean floor back to a central floating production facility.
 *   **Tie-Backs:** Often, multiple robotic subsea wells are drilled miles apart on the ocean floor. Their individual pipelines are connected into a central hub (a manifold) on the seabed, and a single, massive pipe carries all the commingled oil up to a floating production platform on the surface.
+
+## 5. Offshore Rig Capabilities
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "coast", "data": { "label": "Shallow Water", "icon": "Anchor", "description": "Jack-Up Rigs (< 400 ft). Legs stand on the seafloor." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "deep", "data": { "label": "Deep Water", "icon": "Box", "description": "Semi-Submersibles (< 10k ft). Floating on submerged pontoons." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "ultra", "data": { "label": "Ultra-Deep Water", "icon": "Ship", "description": "Drillships (> 10k ft). Held by GPS Dynamic Positioning." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } }
+  ],
+  "edges": [
+    { "source": "coast", "target": "deep", "animated": true },
+    { "source": "deep", "target": "ultra", "animated": true }
+  ]
+}
+```

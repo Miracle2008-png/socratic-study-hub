@@ -55,3 +55,22 @@ If you let a Black Oil reservoir drop below its Bubble Point Pressure:
 4.  The oil becomes incredibly thick and sluggish ($\mu_o$ skyrockets).
 
 Therefore, engineers will spend billions of dollars to build massive water-injection pumps on the surface. They pump ocean water down injection wells to physically prop up the underground pressure, desperately fighting to keep the reservoir pressure strictly **above the Bubble Point** forever.
+
+## 5. The Bubble Point Disaster
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "above", "data": { "label": "Pressure > Pb", "icon": "CheckCircle", "description": "Gas dissolved. Oil is thin, bloated, and flows easily." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "trigger", "data": { "label": "Pressure = Pb", "icon": "AlertTriangle", "description": "The exact tipping point of the fluid." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "gas", "data": { "label": "Gas Escapes", "icon": "Cloud", "description": "Rs drops violently. Gas chokes the pore throats." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "dead", "data": { "label": "Dead Oil", "icon": "Lock", "description": "Viscosity skyrockets. Oil shrinks. Production halts." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } }
+  ],
+  "edges": [
+    { "source": "above", "target": "trigger", "animated": true },
+    { "source": "trigger", "target": "gas", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "trigger", "target": "dead", "animated": true, "style": { "stroke": "#ef4444" } }
+  ]
+}
+```

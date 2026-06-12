@@ -48,3 +48,22 @@ A brand new well has a 0% Water Cut. A 30-year-old well might have a 98% Water C
 You cannot dump it in a river; the heavy metals and salt will instantly kill the ecosystem.
 1.  **Waterflooding:** The best solution. You run it through a massive filtration plant on the surface and pump it right back down into the edges of the reservoir to maintain the pressure and sweep more oil toward the wells.
 2.  **Disposal Wells:** If you don't need it for pressure maintenance, you must drill a dedicated "Disposal Well" and pump the toxic brine thousands of feet underground into a deep, useless, isolated rock formation where it can never contaminate human drinking water aquifers.
+
+## 5. Brine Management Workflow
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "well", "data": { "label": "Aging Well", "icon": "Droplet", "description": "High Water Cut. 98% Brine, 2% Oil." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "sep", "data": { "label": "Surface Separation", "icon": "Filter", "description": "Oil sent to market. Toxic brine remains." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "flood", "data": { "label": "Waterflood Injection", "icon": "ArrowRightCircle", "description": "Pumped back into reservoir to maintain pressure." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "disp", "data": { "label": "Disposal Well", "icon": "ArrowDownCircle", "description": "Pumped into deep, isolated dead rock." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "well", "target": "sep", "animated": true },
+    { "source": "sep", "target": "flood", "animated": true, "style": { "stroke": "#3b82f6" } },
+    { "source": "sep", "target": "disp", "animated": true, "style": { "stroke": "#ef4444" } }
+  ]
+}
+```

@@ -46,3 +46,21 @@ The golden rules of manometer problems:
 4. If you move **upward**, subtract pressure ($-\rho g h$).
 5. Moving horizontally within the *same continuous fluid* results in no pressure change.
 6. Set the final result equal to the pressure at the other end.
+
+## 4. Statics & Properties Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "prop", "data": { "label": "Fluid Properties", "icon": "Droplet", "description": "Density, Viscosity." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "newt", "data": { "label": "Newton's Law", "icon": "Activity", "description": "Tau = mu du/dy." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "stat", "data": { "label": "Fluid Statics", "icon": "Layers", "description": "Zero shear stress." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "hydro", "data": { "label": "Hydrostatics", "icon": "ArrowDown", "description": "dP/dz = -rho g." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "prop", "target": "newt", "animated": true },
+    { "source": "stat", "target": "hydro", "animated": true }
+  ]
+}
+```

@@ -40,3 +40,22 @@ Industrial membranes are not flat sheets; they must be packaged to maximize surf
 *   **Spiral-Wound:** Flat sheets of membrane are glued into an envelope around a porous spacer, and then rolled up tightly like a Swiss roll around a central permeate tube. (Standard for Reverse Osmosis).
 *   **Hollow-Fiber:** Millions of microscopic polymer tubes (like tiny straws) are bundled together inside a PVC pipe. The feed is pumped either down the inside of the straws or around the outside. This provides the highest surface-area-to-volume ratio of any module.
 *   **Plate-and-Frame:** Similar to a filter press. Flat membrane sheets are clamped between heavy metal plates. Used when the feed is incredibly dirty and would clog a spiral-wound module.
+
+## 5. Membrane Transport
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "feed", "data": { "label": "Feed & Driving Force", "icon": "ArrowRight", "description": "Pressure, Concentration." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "mem", "data": { "label": "Semi-Permeable Barrier", "icon": "Filter", "description": "Robeson's Upper Bound limit." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "ret", "data": { "label": "Retentate", "icon": "Layers", "description": "Rejected molecules." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "perm", "data": { "label": "Permeate", "icon": "Droplet", "description": "Passed molecules." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "feed", "target": "mem", "animated": true },
+    { "source": "mem", "target": "ret", "animated": true },
+    { "source": "mem", "target": "perm", "animated": true }
+  ]
+}
+```

@@ -41,3 +41,24 @@ Deep underground, when the high-pressure gas violently mixes with the soapy wate
 *   The gas bubbles are trapped inside the rigid foam bubbles. 
 *   This artificially increases the "Apparent Viscosity" of the gas by a factor of 1,000. 
 *   The incredibly thick foam acts like a massive, unstoppable wall of shaving cream, perfectly sweeping the entire reservoir from top to bottom, completely eliminating Viscous Fingering and Gravity Override simultaneously.
+
+## 4. Water-Alternating-Gas (WAG) Cycle
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "co2", "data": { "label": "Inject CO2 Slug", "icon": "CloudFog", "description": "6 months of CO2 injection. Perfect microscopic sweep, but severe fingering." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "water", "data": { "label": "Inject Water Slug", "icon": "Waves", "description": "Valves switched. 6 months of heavy saltwater injection." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "barricade", "data": { "label": "Physical Barricade", "icon": "ShieldAlert", "description": "Slow, viscous water smashes into the back of the fast CO2, blocking it." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "sweep", "data": { "label": "Optimized Areal Sweep", "icon": "Maximize", "description": "CO2 is violently pushed outward horizontally, sweeping untouched oil." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } },
+    { "id": "oil", "data": { "label": "High Overall Recovery", "icon": "Droplet", "description": "Combines chemical perfection of CO2 with physical sweep of water." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "co2", "target": "water", "animated": true, "label": "Cycle Switch" },
+    { "source": "water", "target": "barricade", "animated": true },
+    { "source": "barricade", "target": "sweep", "animated": true },
+    { "source": "sweep", "target": "oil", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

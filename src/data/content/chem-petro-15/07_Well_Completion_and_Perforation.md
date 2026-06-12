@@ -43,3 +43,22 @@ Because the well is two miles deep, you cannot simply use a drill. You must use 
 3.  **The Detonation:** When fired, the explosion instantly melts the copper liner, turning it into a hyper-velocity jet of molten plasma moving at 25,000 feet per second.
 4.  **The Perforation Tunnels:** This plasma jet punches a perfectly clean, 1-inch diameter hole straight through the steel casing, blasts through the solid cement, and punches a 2-foot-long tunnel directly into the porous reservoir rock.
 5.  With dozens of these tunnels now open, the high-pressure oil violently surges out of the rock, through the tunnels, into the casing, up the tubing, and to the surface. The well is officially "brought on line."
+
+## 5. The Completion Architecture
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "tree", "data": { "label": "Christmas Tree", "icon": "Anchor", "description": "Surface valves and choke to control 5,000 psi flow." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "tubing", "data": { "label": "Production Tubing", "icon": "ArrowDownCircle", "description": "Inner alloy pipe carrying corrosive oil to the surface." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "packer", "data": { "label": "Production Packer", "icon": "Database", "description": "Rubber element expands to seal the annulus gas-tight." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "perf", "data": { "label": "Perforations", "icon": "Crosshair", "description": "Explosive tunnels connecting the rock to the casing." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "tree", "target": "tubing", "animated": true },
+    { "source": "tubing", "target": "packer", "animated": true },
+    { "source": "packer", "target": "perf", "animated": true, "style": { "stroke": "#ef4444", "strokeWidth": 2 } }
+  ]
+}
+```

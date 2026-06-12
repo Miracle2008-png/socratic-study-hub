@@ -44,3 +44,24 @@ A plant must be designed for the humans who have to fix it.
 *   If a heat exchanger needs to be cleaned, there must be enough physical empty space in front of it for a crane to pull out a 20-foot bundle of steel tubes.
 *   Every control valve and instrument must be accessible via a staircase or ladder so an operator can physically reach it. 
 *   Roads must be wide enough for massive 18-wheeler trucks to drive directly into the center of the plant to deliver fresh catalyst to the reactors.
+
+## 5. Physical Plant Layout
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "site", "data": { "label": "1. Site Selection", "icon": "MapPin", "description": "Find deep water ports, cheap utilities, and skilled labor." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "rack", "data": { "label": "2. The Pipe Rack", "icon": "Activity", "description": "The central elevated highway carrying all chemicals and steam." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "unit", "data": { "label": "3. Process Units", "icon": "Box", "description": "Reactors clustered tightly around the pipe rack." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "grav", "data": { "label": "4. Gravity Feed", "icon": "ArrowDown", "description": "Stack equipment vertically to save on expensive pumping costs." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "store", "data": { "label": "5. Storage Tanks", "icon": "AlertTriangle", "description": "Banished to the edges of the property with concrete blast dikes." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "site", "target": "rack", "animated": true },
+    { "source": "rack", "target": "unit", "animated": true },
+    { "source": "unit", "target": "grav", "animated": true },
+    { "source": "unit", "target": "store", "animated": true, "style": { "stroke": "#ef4444" } }
+  ]
+}
+```

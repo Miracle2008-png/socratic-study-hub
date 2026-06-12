@@ -50,3 +50,22 @@ The Bernoulli equation becomes:
 $$ P_{\text{stagnation}} = P_{\text{static}} + \frac{1}{2}\rho V^2 $$
 
 The term $\frac{1}{2}\rho V^2$ is known as **Dynamic Pressure**. Pitot tubes use this principle to measure airspeed on commercial aircraft.
+
+## 4. Bernoulli Principles Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "meb", "data": { "label": "Mech Energy", "icon": "Activity", "description": "Base equation." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "assum", "data": { "label": "Strict Assumptions", "icon": "Filter", "description": "Inviscid, steady." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "ber", "data": { "label": "Bernoulli Eq", "icon": "Droplet", "description": "Energy conservation." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "app", "data": { "label": "Applications", "icon": "Target", "description": "Venturi, Pitot." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "meb", "target": "assum", "animated": true },
+    { "source": "assum", "target": "ber", "animated": true },
+    { "source": "ber", "target": "app", "animated": true }
+  ]
+}
+```

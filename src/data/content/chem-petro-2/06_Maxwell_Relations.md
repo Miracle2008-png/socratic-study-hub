@@ -50,3 +50,22 @@ Look at the left sides of equations 3 and 4: they contain derivatives involving 
 Look at the right sides: they contain derivatives involving Pressure ($P$), Volume ($V$), and Temperature ($T$), which we can easily measure or calculate using an Equation of State.
 
 **The Maxwell Relations allow engineers to completely eliminate unmeasurable entropy terms from their equations and replace them with computable $P-V-T$ data.** This is exactly how the general equations for $dH$ and $dS$ in the previous module were derived.
+
+## 4. Maxwell Relations Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "diff", "data": { "label": "Exact Differentials", "icon": "Activity", "description": "State functions." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "math", "data": { "label": "Math Theorem", "icon": "Code", "description": "Derivatives equal." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "maxwell", "data": { "label": "Maxwell Equations", "icon": "Shuffle", "description": "Relate S to PVT." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "use", "data": { "label": "Practical Use", "icon": "CheckCircle", "description": "Computable P-V-T." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "diff", "target": "math", "animated": true },
+    { "source": "math", "target": "maxwell", "animated": true },
+    { "source": "maxwell", "target": "use", "animated": true }
+  ]
+}
+```

@@ -55,3 +55,22 @@ $$ Z = P - N \quad \text{(We want } Z=0 \text{)}$$
     If it doesn't encircle it, the controller isn't aggressive enough, and the plant blows up.
 
 The Nyquist plot provides a mathematically flawless visual proof of stability for the most terrifying and complex dynamic systems on Earth.
+
+## 5. Nyquist Evaluation Flow
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "nyq", "data": { "label": "Nyquist Plot", "icon": "Activity", "description": "G(iw) mapped on the Complex Plane." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "crit", "data": { "label": "Critical Point (-1, 0)", "icon": "Target", "description": "The exact threshold of instability." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "enc", "data": { "label": "Encirclements (N)", "icon": "RefreshCw", "description": "How many times it wraps around the point." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "stab", "data": { "label": "Stability Check", "icon": "CheckCircle", "description": "Is Z = P - N equal to 0?" }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "nyq", "target": "crit", "animated": true },
+    { "source": "crit", "target": "enc", "animated": true },
+    { "source": "enc", "target": "stab", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

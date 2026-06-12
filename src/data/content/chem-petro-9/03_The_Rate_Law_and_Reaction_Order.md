@@ -55,3 +55,22 @@ Because the units of reaction rate ($-r_A$) are always fixed as $\text{mol}/(\te
 *   **Second Order:** $-r_A = k C_A^2$ $\implies$ units of $k$ are $\text{L}/(\text{mol}\cdot\text{s})$
 
 If a problem gives you a rate constant as $k = 0.05 \text{ s}^{-1}$, you instantly know it is a first-order reaction without being told.
+
+## 5. Rate Law Components
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "law", "data": { "label": "Rate Law", "icon": "Activity", "description": "-r_A = k * C_A^alpha" }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "k", "data": { "label": "Rate Constant (k)", "icon": "Thermometer", "description": "Temperature dependent." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "c", "data": { "label": "Concentration (C)", "icon": "Layers", "description": "Molecules present." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "alpha", "data": { "label": "Order (alpha)", "icon": "Hash", "description": "Exponential sensitivity." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "law", "target": "k", "animated": false },
+    { "source": "law", "target": "c", "animated": false },
+    { "source": "law", "target": "alpha", "animated": false }
+  ]
+}
+```

@@ -46,3 +46,22 @@ The most challenging (and fun) exam problems involve linking a CSTR and a PFR in
 
 *   **Normal Kinetics (Rate drops over time):** You want to use the highly efficient PFR when the rate is fastest (at the start). If you use a CSTR first, it instantly drops the concentration and kills your fast rate. **Rule:** For normal kinetics, PFR followed by CSTR requires less volume than CSTR followed by PFR.
 *   **Autocatalytic Kinetics (Rate starts slow, then speeds up):** The rate is dead slow at $X=0$. A PFR would waste massive volume waiting for the reaction to speed up. A CSTR acts as a "seed" tank; it operates at the peak fast reaction rate (in the valley of the Levenspiel plot), instantly jumping the fluid to high concentration of product B. You then finish the reaction in a PFR. **Rule:** For autocatalytic, CSTR followed by PFR is optimal.
+
+## 5. Reactor Network Logic
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "cstr", "data": { "label": "CSTRs in Series", "icon": "Layers", "description": "Infinite series = 1 PFR." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "pfr", "data": { "label": "PFRs in Series", "icon": "PlusSquare", "description": "Acts as one long PFR." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "par", "data": { "label": "Parallel", "icon": "GitBranch", "description": "Must split feed by volume." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "mix", "data": { "label": "Mixed Series", "icon": "Shuffle", "description": "Match reactor to rate profile." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } }
+  ],
+  "edges": [
+    { "source": "cstr", "target": "mix", "animated": true },
+    { "source": "pfr", "target": "par", "animated": true },
+    { "source": "par", "target": "mix", "animated": true }
+  ]
+}
+```

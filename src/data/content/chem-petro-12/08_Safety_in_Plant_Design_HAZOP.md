@@ -39,3 +39,24 @@ For every pipe, they ask:
 *   What happens if there is **HIGHER TEMPERATURE**? (Cooling water fails). *Consequence:* Runaway exothermic reaction and explosion. *Safeguard:* Rupture disk to flare.
 
 The team documents hundreds of these scenarios. If the existing safeguards are deemed insufficient for a specific scenario, the engineers must go back to the drawing board and redesign the P&ID to add more protection before construction can begin.
+
+## 4. Layers of Protection (LOPA)
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "l1", "data": { "label": "1. Inherent Safety", "icon": "Shield", "description": "Physically impossible to explode (e.g., lower pressure)." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "l2", "data": { "label": "2. BPCS (Control System)", "icon": "Monitor", "description": "Computers controlling the valves to keep it steady." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "l3", "data": { "label": "3. SIS (Safety Trip)", "icon": "AlertTriangle", "description": "Independent computer that physically cuts power on High-High alarm." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "l4", "data": { "label": "4. Relief Valve", "icon": "Wind", "description": "Purely mechanical valve blows open to vent pressure to the flare." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "l5", "data": { "label": "5. Physical Containment", "icon": "Building", "description": "Concrete blast walls and dikes contain the spill/explosion." }, "style": { "background": "#451a03", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "l1", "target": "l2", "animated": true },
+    { "source": "l2", "target": "l3", "animated": true },
+    { "source": "l3", "target": "l4", "animated": true },
+    { "source": "l4", "target": "l5", "animated": true, "style": { "stroke": "#ef4444", "strokeWidth": 2 } }
+  ]
+}
+```

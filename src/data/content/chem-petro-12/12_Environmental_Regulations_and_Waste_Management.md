@@ -42,3 +42,24 @@ Future process designs are increasingly focused on:
 *   **Electrification:** Replacing natural-gas-fired furnaces with massive electric heaters powered by renewable wind and solar grids.
 *   **Carbon Capture and Sequestration (CCS):** Designing equipment to actively strip CO2 out of the exhaust flues, compress it into a supercritical fluid, and pump it two miles underground into empty oil reservoirs to trap it forever.
 *   **Circular Economy:** Designing plastics and materials not for single-use, but with the chemical depolymerization process inherently built into the design, allowing the plastic to be infinitely broken down into raw molecules and rebuilt.
+
+## 5. Waste Treatment Flow
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "source", "data": { "label": "1. Source Reduction", "icon": "RefreshCw", "description": "Recycle unreacted gas and improve catalyst yield." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "air", "data": { "label": "2. Air Scrubbers", "icon": "Wind", "description": "Wash toxic SO2 out of exhaust gas before the smokestack." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "flare", "data": { "label": "3. Thermal Oxidizers", "icon": "Flame", "description": "Incinerate VOCs into harmless CO2 at 1000 degrees." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "water", "data": { "label": "4. Biological Wastewater", "icon": "Droplet", "description": "Billions of bacteria eat the dissolved organic toxins." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "ccs", "data": { "label": "5. Carbon Capture (CCS)", "icon": "Globe", "description": "Compress CO2 and bury it miles underground." }, "style": { "background": "#451a03", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "source", "target": "air", "animated": true },
+    { "source": "air", "target": "flare", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "flare", "target": "water", "animated": true },
+    { "source": "water", "target": "ccs", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

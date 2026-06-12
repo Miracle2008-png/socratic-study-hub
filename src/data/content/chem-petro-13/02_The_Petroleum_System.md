@@ -53,3 +53,24 @@ You can have all five physical components, but if the **Timing** is wrong, you g
 *   If the trap forms 10 million years *after* the oil migrated through that area, the trap will be perfectly shaped, perfectly sealed, and completely empty. The oil already passed by.
 
 Petroleum geologists spend their entire careers acting as geologic detectives, analyzing seismic waves and rock core samples to prove that all six elements of the petroleum system exist simultaneously miles beneath the surface before a company risks $100 million drilling a well.
+
+## 6. Sequence of the Petroleum System
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "source", "data": { "label": "Source Rock", "icon": "Database", "description": "Organic-rich shale cooked to generate oil." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "migration", "data": { "label": "Migration", "icon": "ArrowUpRight", "description": "Oil floats upwards through faults and porous rock." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "reservoir", "data": { "label": "Reservoir", "icon": "Box", "description": "Porous sponge rock (sandstone) to hold the fluid." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "seal", "data": { "label": "Seal Rock", "icon": "Lock", "description": "Impermeable cap rock blocking upward escape." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "trap", "data": { "label": "The Trap", "icon": "ShieldAlert", "description": "Geometric shape catching the oil (e.g., an upside-down bowl)." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } }
+  ],
+  "edges": [
+    { "source": "source", "target": "migration", "animated": true },
+    { "source": "migration", "target": "reservoir", "animated": true },
+    { "source": "reservoir", "target": "seal", "animated": true },
+    { "source": "seal", "target": "trap", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

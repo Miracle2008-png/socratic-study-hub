@@ -45,3 +45,24 @@ These powerful software packages contain massive databases of thermodynamic prop
 
 However, the golden rule of process design remains: **Garbage In, Garbage Out.** 
 A simulator will happily design a distillation column that violates the laws of physics if you give it the wrong thermodynamic property model (like using Raoult's Law for a highly non-ideal mixture of ethanol and water). The engineer must understand the physical chemistry *behind* the software to know if the computer's answer makes physical sense.
+
+## 5. The Hierarchy of Process Design
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "batch", "data": { "label": "Level 1: Mode", "icon": "Clock", "description": "Decide: Batch (specialty) or Continuous (commodity)." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "io", "data": { "label": "Level 2: Input/Output", "icon": "Box", "description": "Draw the black box. Define raw materials and products." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "rx", "data": { "label": "Level 3: Reactor", "icon": "Zap", "description": "Choose CSTR/PFR, Temperature, and Pressure for reaction." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "sep", "data": { "label": "Level 4: Separation", "icon": "Layers", "description": "Distillation to isolate the pure product from the unreacted soup." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "heat", "data": { "label": "Level 5: Heat Integration", "icon": "Flame", "description": "Match hot streams with cold streams to save utility costs." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "batch", "target": "io", "animated": true },
+    { "source": "io", "target": "rx", "animated": true },
+    { "source": "rx", "target": "sep", "animated": true },
+    { "source": "sep", "target": "heat", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

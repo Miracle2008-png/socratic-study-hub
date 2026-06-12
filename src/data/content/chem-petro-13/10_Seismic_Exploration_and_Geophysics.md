@@ -40,3 +40,22 @@ Because natural gas has a drastically lower density than water, a sandstone full
 
 When the seismic wave hits the Gas-Water Contact (GWC), the sudden jump in impedance causes a massive, blindingly bright, perfectly flat, horizontal echo on the seismic screen. 
 This is called a **"Flat Spot"** or a **"Bright Spot."** If a geologist sees a perfectly flat Bright Spot on a 3D seismic survey cutting across the tilted rock layers, they know with 90% certainty they are looking directly at a massive gas cap.
+
+## 5. The Seismic Process
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "source", "data": { "label": "Energy Source", "icon": "Zap", "description": "Vibroseis trucks send acoustic waves underground." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "bounce", "data": { "label": "Reflection", "icon": "ArrowDownUp", "description": "Waves echo off deep rock boundaries." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "receive", "data": { "label": "Geophones", "icon": "Mic", "description": "Microphones record the echo travel time." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "image", "data": { "label": "3D Seismic Image", "icon": "Monitor", "description": "Computers build a 3D model of the subsurface." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "source", "target": "bounce", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "bounce", "target": "receive", "animated": true, "style": { "stroke": "#3b82f6" } },
+    { "source": "receive", "target": "image", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

@@ -50,3 +50,22 @@ To ensure safety, engineers design control loops with a buffer so they don't acc
 
 *   **Gain Margin (GM):** Look at the graph where the phase hits $-180^\circ$. How far below 1 is the Amplitude Ratio? If $AR = 0.5$, your Gain Margin is 2. (You could double the controller gain before the plant explodes). A safe GM is typically $> 1.7$.
 *   **Phase Margin (PM):** Look at the graph where the Amplitude Ratio crosses 1. How far above $-180^\circ$ is the phase? A safe PM is typically $> 30^\circ$.
+
+## 5. Bode Plot Architecture
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "sine", "data": { "label": "Sine Wave Input", "icon": "Activity", "description": "Sweep frequency from low to high." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "bode", "data": { "label": "Bode Plot", "icon": "BarChart2", "description": "Amplitude Ratio (AR) & Phase Shift vs Frequency." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "cross", "data": { "label": "-180° Crossover", "icon": "AlertTriangle", "description": "Frequency where feedback becomes positive." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "stable", "data": { "label": "Stability Check", "icon": "ShieldCheck", "description": "Is Amplitude Ratio < 1 at Crossover? (Yes = Stable)." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "sine", "target": "bode", "animated": true },
+    { "source": "bode", "target": "cross", "animated": true },
+    { "source": "cross", "target": "stable", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

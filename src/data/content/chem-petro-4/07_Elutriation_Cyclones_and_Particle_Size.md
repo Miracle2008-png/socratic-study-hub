@@ -91,3 +91,22 @@ $$d_{50} = \sqrt{\frac{9 \times 3.5\times10^{-5} \times 0.25}{5 \times \pi \time
 $$\eta = \frac{1}{1 + (12.9/15)^2} = \frac{1}{1 + 0.738} = \frac{1}{1.738} = 0.575 = 57.5\%$$
 
 A single cyclone only captures 57.5% of 15 μm particles — a second-stage cyclone or bag filter is needed for compliance.
+
+## 8. Cyclone Separator Logic
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "in", "data": { "label": "Gas/Solid Inlet", "icon": "ArrowRight", "description": "Tangential entry." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "vor", "data": { "label": "Centrifugal Vortex", "icon": "RefreshCw", "description": "Forces particles to wall." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "solid", "data": { "label": "Solids Exit", "icon": "Download", "description": "To hopper." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "gas", "data": { "label": "Clean Gas Exit", "icon": "ArrowUp", "description": "Via vortex finder." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "in", "target": "vor", "animated": true },
+    { "source": "vor", "target": "solid", "animated": true },
+    { "source": "vor", "target": "gas", "animated": true }
+  ]
+}
+```

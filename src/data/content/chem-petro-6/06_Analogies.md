@@ -58,3 +58,20 @@ When water evaporates from a wet thermometer bulb into a stream of unsaturated a
 At steady state, the rate of convective heat transfer exactly equals the rate of latent heat removal by mass transfer.
 
 Using the Chilton-Colburn analogy, the ratio of the heat transfer coefficient to the mass transfer coefficient ($h/k_y$) can be derived purely from the Lewis number. For the air-water system, the Lewis number happens to be almost exactly $1.0$. This incredible cosmic coincidence means that $h/k_y \approx C_{p,\text{air}}$, allowing meteorologists to calculate absolute humidity simply by reading two thermometers.
+
+## 6. Transport Analogies
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "rey", "data": { "label": "Reynolds Analogy", "icon": "Activity", "description": "Pr=1, Sc=1 only." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "nums", "data": { "label": "Pr & Sc Corrections", "icon": "Hash", "description": "Pr^2/3, Sc^2/3 factors." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "chil", "data": { "label": "Chilton-Colburn", "icon": "CheckCircle", "description": "jH = jM = f/2" }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "rey", "target": "nums", "animated": true },
+    { "source": "nums", "target": "chil", "animated": true }
+  ]
+}
+```

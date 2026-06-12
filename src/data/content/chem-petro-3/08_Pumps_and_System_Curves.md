@@ -47,3 +47,24 @@ This is called **Cavitation**. It sounds like gravel passing through the pump an
 
 To prevent cavitation, the pressure at the pump inlet must always be kept safely above the fluid's vapor pressure. The manufacturer defines the minimum required pressure margin as the **Net Positive Suction Head Required (NPSH_R)**. 
 The engineer must design the piping system so that the actual available pressure, the **NPSH_Available (NPSH_A)**, is strictly greater than the NPSH_R.
+
+## 6. Pumps Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "types", "data": { "label": "Pump Types", "icon": "Settings", "description": "PD & Centrifugal." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "pump", "data": { "label": "Pump Curve", "icon": "Activity", "description": "Supplied Head." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "sys", "data": { "label": "System Curve", "icon": "TrendingUp", "description": "Required Head." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "op", "data": { "label": "Operating Point", "icon": "Target", "description": "Intersection." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "cav", "data": { "label": "Cavitation", "icon": "AlertTriangle", "description": "NPSHA > NPSHR." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } }
+  ],
+  "edges": [
+    { "source": "types", "target": "pump", "animated": true },
+    { "source": "pump", "target": "op", "animated": true },
+    { "source": "sys", "target": "op", "animated": true },
+    { "source": "op", "target": "cav", "animated": true }
+  ]
+}
+```

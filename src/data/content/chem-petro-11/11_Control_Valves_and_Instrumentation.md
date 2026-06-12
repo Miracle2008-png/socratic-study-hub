@@ -46,3 +46,24 @@ The physical shape of the metal plug determines its inherent characteristic:
 1.  **Linear:** Flow is directly proportional to stem position. (Used for liquid level control).
 2.  **Equal Percentage:** A 10% change in stem position produces a 10% change in the *current* flow rate. The curve is exponential. (Used for temperature and pressure control, where the process dynamics are highly non-linear, as the valve's exponential curve perfectly cancels out the process's logarithmic curve, resulting in a stable loop!).
 3.  **Quick-Opening:** 80% of the flow happens in the first 20% of the stroke. (Used for on/off emergency dump valves).
+
+## 5. Instrumentation Signal Path
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "sens", "data": { "label": "Sensor", "icon": "Thermometer", "description": "Reads physical process (mV/Ohms)." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "trans", "data": { "label": "Transmitter", "icon": "Activity", "description": "Sends uncorruptible 4-20 mA signal." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "ip", "data": { "label": "I/P Transducer", "icon": "Wind", "description": "Converts electrical mA to 3-15 psi air pressure." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "act", "data": { "label": "Pneumatic Actuator", "icon": "Zap", "description": "Air fills diaphragm, pushing stem." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "safe", "data": { "label": "Fail-Safe Spring", "icon": "Shield", "description": "Slams valve to safe position if air is lost." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "sens", "target": "trans", "animated": true },
+    { "source": "trans", "target": "ip", "animated": true },
+    { "source": "ip", "target": "act", "animated": true },
+    { "source": "act", "target": "safe", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

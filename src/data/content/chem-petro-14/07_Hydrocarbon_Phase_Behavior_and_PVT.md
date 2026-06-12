@@ -46,3 +46,22 @@ Because every oil field on Earth has a unique chemical composition, you cannot s
 When a new well is drilled, the absolute first priority is to capture a pristine, highly-pressurized sample of the fluid from the bottom of the wellbore *before* the pressure drops.
 This heavy steel cylinder is shipped to a PVT Laboratory. 
 Inside the lab, scientists place the fluid in a massive, titanium syringe (a PVT cell). They heat it to the exact reservoir temperature and slowly pull the plunger back, simulating the pressure drop of production, physically measuring exactly when the first bubble of gas appears.
+
+## 5. The Depletion Path of Black Oil
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "init", "data": { "label": "Initial Reservoir Pressure", "icon": "Database", "description": "100% Liquid Oil. Gas is completely dissolved." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "bubble", "data": { "label": "Bubble Point Pressure", "icon": "AlertTriangle", "description": "Pressure drops enough for the first gas bubble to appear." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "two", "data": { "label": "Two-Phase Region", "icon": "Shuffle", "description": "Massive gas boiling out of oil deep inside the rock." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "tank", "data": { "label": "Surface Storage Tank", "icon": "ArrowDownCircle", "description": "Low pressure. Dead, shrunk oil remains." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "init", "target": "bubble", "animated": true },
+    { "source": "bubble", "target": "two", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "two", "target": "tank", "animated": true, "style": { "stroke": "#3b82f6", "strokeWidth": 2 } }
+  ]
+}
+```

@@ -51,3 +51,22 @@ The VLP curve is entirely dictated by the mechanical diameter of the tubing.
 *   **Too Wide (e.g., 5-inch tubing):** The fluid moves too slowly. The gas escapes, leaving heavy liquid. The well "loads up" and dies under its own weight.
 *   **Too Narrow (e.g., 2-inch tubing):** The fluid moves too fast. The massive friction chokes the flow, severely restricting the total volume of oil you can sell.
 *   The Production Engineer must meticulously select the "Goldilocks" tubing diameter that perfectly balances gravity and friction for that specific well's flow rate.
+
+## 5. Multiphase Flow Regimes
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "annular", "data": { "label": "Annular Flow (Top)", "icon": "Wind", "description": "Low pressure. Gas races up the center like a hurricane, ripping a thin film of oil along the walls." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "churn", "data": { "label": "Churn Flow", "icon": "Waves", "description": "Slugs break down into a violently chaotic, turbulent froth." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "slug", "data": { "label": "Slug Flow", "icon": "Layers", "description": "Bubbles merge into massive 'Taylor Bubbles', violently pushing slugs of liquid." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "bubble", "data": { "label": "Bubble Flow (Bottom)", "icon": "Droplet", "description": "High pressure. Tiny, distinct gas bubbles float up through a continuous column of oil." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "bubble", "target": "slug", "animated": true },
+    { "source": "slug", "target": "churn", "animated": true },
+    { "source": "churn", "target": "annular", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

@@ -50,3 +50,23 @@ A highly advanced electronic package is placed behind the drill bit. It contains
 **Mud Pulse Telemetry:**
 How does the MWD tool transmit this data to the surface computer without a wire?
 It uses the drilling mud itself. A mechanical valve inside the tool rapidly opens and closes, creating a series of high-pressure shockwaves (binary morse code) in the column of mud flowing down the pipe. Pressure sensors on the surface detect these subtle pulses and decode them, providing the driller with real-time updates on exactly where the bit is headed.
+
+## 5. The Geosteering Feedback Loop
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "mwd", "data": { "label": "1. MWD Sensors", "icon": "Compass", "description": "Gyroscopes detect exact 3D bit location." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "pulse", "data": { "label": "2. Mud Pulse", "icon": "Wifi", "description": "Data sent to surface as acoustic mud shockwaves." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "driller", "data": { "label": "3. Driller Decodes", "icon": "User", "description": "Compares location against 3D well plan." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "rss", "data": { "label": "4. RSS Steers", "icon": "Crosshair", "description": "Hydraulic pads pulse to nudge the spinning bit." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "mwd", "target": "pulse", "animated": true },
+    { "source": "pulse", "target": "driller", "animated": true },
+    { "source": "driller", "target": "rss", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "rss", "target": "mwd", "animated": true, "label": "Continuous Loop" }
+  ]
+}
+```

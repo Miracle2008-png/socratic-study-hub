@@ -50,3 +50,20 @@ Values of the error function are universally tabulated in engineering handbooks.
 
 The term $2\sqrt{D_{AB} t}$ acts as a characteristic length scale for diffusion. It provides a quick, back-of-the-envelope way to estimate how deep a diffusing species has penetrated into a medium after a given time $t$. 
 If you want to double the depth of diffusion, you must increase the time by a factor of **four**.
+
+## 4. Transient Diffusion Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "steady", "data": { "label": "Steady State", "icon": "Minus", "description": "dC/dt = 0 (First Law)." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "trans", "data": { "label": "Transient State", "icon": "Activity", "description": "dC/dt = D * d^2C/dz^2." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "pen", "data": { "label": "Penetration Depth", "icon": "ArrowDown", "description": "Scales as sqrt(t)." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "steady", "target": "trans", "animated": true },
+    { "source": "trans", "target": "pen", "animated": true }
+  ]
+}
+```

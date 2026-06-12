@@ -33,3 +33,24 @@ Imagine rolling a boulder over a hill. The boulder is the reactants, and the bot
 This hill is the **Activation Energy ($E_A$)**. It is the minimum amount of energy the reactant molecules must possess when they collide to successfully break their bonds and form the transition state. 
 
 If the Activation Energy is massive, the reaction will be incredibly slow (like diamond turning into graphite), even if the thermodynamics are highly favorable. The entire field of kinetics is devoted to understanding, predicting, and ultimately manipulating this Activation Energy hill.
+
+## 4. Kinetic Drivers
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "conc", "data": { "label": "Concentration", "icon": "Layers", "description": "Frequency." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "temp", "data": { "label": "Temperature", "icon": "Thermometer", "description": "Energy." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "surf", "data": { "label": "Surface Area", "icon": "Box", "description": "Contact." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "cat", "data": { "label": "Catalyst", "icon": "Zap", "description": "Pathway." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "rate", "data": { "label": "Reaction Rate", "icon": "Activity", "description": "Overall speed." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } }
+  ],
+  "edges": [
+    { "source": "conc", "target": "rate", "animated": true },
+    { "source": "temp", "target": "rate", "animated": true },
+    { "source": "surf", "target": "rate", "animated": true },
+    { "source": "cat", "target": "rate", "animated": true }
+  ]
+}
+```

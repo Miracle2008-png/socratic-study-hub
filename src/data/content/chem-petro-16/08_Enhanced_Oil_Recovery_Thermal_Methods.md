@@ -56,3 +56,24 @@ In a Fireflood, engineers inject massive amounts of highly compressed pure oxyge
 *   The intense heat creates a massive wall of boiling water and vaporized light oil that acts as a steam-cleaner, forcefully driving the remaining, upgraded oil toward the producing wells.
 
 While brilliant in theory, Fireflooding is terrifyingly difficult to control in practice. If the fire burns out of control, it can melt the steel casings of the producing wells, causing catastrophic blowouts and the permanent loss of the entire field.
+
+## 6. Steam Assisted Gravity Drainage (SAGD)
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "boiler", "data": { "label": "Surface Boiler", "icon": "Thermometer", "description": "Generates massive volumes of 300°C steam." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "top", "data": { "label": "Top Well (Inject)", "icon": "ArrowRightCircle", "description": "Horizontal well pumps steam into the solid tar." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "chamber", "data": { "label": "Steam Chamber", "icon": "Cloud", "description": "Steam floats up, condenses, and melts the heavy oil." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "grav", "data": { "label": "Gravity Drainage", "icon": "ArrowDown", "description": "Hot, melted oil rains downward through the rock." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "bottom", "data": { "label": "Bottom Well (Produce)", "icon": "CheckCircle", "description": "Collects the hot oil 5 meters below the injection well." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "boiler", "target": "top", "animated": true },
+    { "source": "top", "target": "chamber", "animated": true },
+    { "source": "chamber", "target": "grav", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "grav", "target": "bottom", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

@@ -48,3 +48,22 @@ $$ h_L = \sum h_{L,\text{major}} + \sum h_{L,\text{minor}} $$
 $$ h_L = \left( \sum f \frac{L}{D} + \sum K_L \right) \frac{V^2}{2g} $$
 
 This total $h_L$ is then plugged back into the Mechanical Energy Balance to solve for the required pump head ($h_p$).
+
+## 4. Internal Flow Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "major", "data": { "label": "Major Losses", "icon": "Activity", "description": "Pipe friction." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "fric", "data": { "label": "Friction Factor", "icon": "TrendingDown", "description": "Darcy / Colebrook." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "minor", "data": { "label": "Minor Losses", "icon": "Filter", "description": "Valves & fittings." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "total", "data": { "label": "Total Head Loss", "icon": "Layers", "description": "Sum of losses." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "major", "target": "fric", "animated": true },
+    { "source": "fric", "target": "total", "animated": true },
+    { "source": "minor", "target": "total", "animated": true }
+  ]
+}
+```

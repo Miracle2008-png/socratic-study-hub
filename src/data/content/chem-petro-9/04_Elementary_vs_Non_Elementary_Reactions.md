@@ -52,3 +52,22 @@ Usually, one step in the mechanism is significantly slower than all the others. 
 Think of a toll booth on a highway. Cars can drive 70 mph before the toll booth, and 70 mph after the toll booth. But the overall flow of traffic is completely dictated by the speed at which the single toll collector can process cars. 
 
 In kinetics, the overall global rate of the reaction is entirely controlled by the kinetics of the single slowest elementary step. If you want to speed up the reaction, adding catalysts that speed up the fast steps is useless; you must target the rate-limiting step.
+
+## 4. Reaction Mechanism Flow
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "global", "data": { "label": "Global Equation", "icon": "Globe", "description": "Summary of reaction." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "steps", "data": { "label": "Elementary Steps", "icon": "Search", "description": "Actual physical collisions." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "slow", "data": { "label": "Rate-Limiting Step", "icon": "AlertTriangle", "description": "The single slowest step." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "rate", "data": { "label": "Overall Rate", "icon": "Target", "description": "Controlled entirely by the slow step." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "global", "target": "steps", "animated": true },
+    { "source": "steps", "target": "slow", "animated": true },
+    { "source": "slow", "target": "rate", "animated": true, "style": { "stroke": "#14532d", "strokeWidth": 2 } }
+  ]
+}
+```

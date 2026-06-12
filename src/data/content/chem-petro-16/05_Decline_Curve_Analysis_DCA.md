@@ -59,3 +59,25 @@ DCA is not just used to find out how much oil is left; it is used to find out *w
 A well does not die when it hits zero barrels. A well dies when the cost to operate the electricity and pumps ($Opex$) exceeds the revenue from selling the daily oil. This is the **Economic Limit Rate ($q_{el}$)**.
 
 The engineer extrapolates the decline curve forward until it intersects the horizontal line representing the Economic Limit. That exact date on the X-axis is the day the well must be legally plugged and abandoned.
+
+## 5. Decline Curve Forecasting
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "start", "data": { "label": "Initial Production (qi)", "icon": "TrendingUp", "description": "Maximum pressure, maximum oil rate." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "exp", "data": { "label": "Exponential (b=0)", "icon": "TrendingDown", "description": "Constant % drop. Most conservative." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "hyp", "data": { "label": "Hyperbolic (0<b<1)", "icon": "Activity", "description": "Decline slows down. Most accurate for standard rock." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "econ", "data": { "label": "Economic Limit (qel)", "icon": "AlertOctagon", "description": "Opex exceeds Revenue. The well loses money." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "death", "data": { "label": "Plug & Abandon", "icon": "XCircle", "description": "The predicted death date of the well." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "start", "target": "exp", "animated": true },
+    { "source": "start", "target": "hyp", "animated": true },
+    { "source": "exp", "target": "econ", "animated": true },
+    { "source": "hyp", "target": "econ", "animated": true },
+    { "source": "econ", "target": "death", "animated": true, "style": { "stroke": "#ef4444", "strokeWidth": 2 } }
+  ]
+}
+```

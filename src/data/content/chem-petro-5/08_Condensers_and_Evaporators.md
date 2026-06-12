@@ -39,3 +39,20 @@ When boiling or condensing inside a tube, the two phases arrange themselves in d
 - **Mist flow:** High-velocity vapour carrying entrained liquid droplets. The wall dries out, and heat transfer drops precipitously.
 
 Designing phase-change equipment requires mapping the fluid's trajectory through these flow regimes to ensure stable operation and avoid dry-out or slugging.
+
+## 4. Phase Change Equipment
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "cond", "data": { "label": "Film Condensation", "icon": "Droplet", "description": "Continuous liquid film." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "boil", "data": { "label": "Nucleate Boiling", "icon": "Activity", "description": "High agitation." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "crisis", "data": { "label": "Boiling Crisis", "icon": "AlertOctagon", "description": "Avoid burnout." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } },
+    { "id": "annular", "data": { "label": "Annular Flow", "icon": "Circle", "description": "Ideal tube flow." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "boil", "target": "crisis", "animated": true }
+  ]
+}
+```

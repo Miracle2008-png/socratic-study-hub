@@ -45,3 +45,18 @@ The Chilton-Colburn analogy relies on the symmetry of the dimensionless numbers.
 The Reynolds number ($Re$) represents the bulk fluid hydrodynamics, which is identical for both cases, so it remains unchanged.
 The resulting mass transfer equation is:
 **$Sh = 0.05 Re^{0.7} Sc^{0.4}$**
+
+## Mass Transfer Summary
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "coef", "data": { "label": "MT Coefficients", "icon": "Layers", "description": "Films & Analogies." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "gas", "data": { "label": "Gas Regimes", "icon": "Wind", "description": "Bulk vs Knudsen." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "liq", "data": { "label": "Dense Media", "icon": "Box", "description": "Viscosity & Lattice barriers." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "cases", "data": { "label": "Limiting Cases", "icon": "Activity", "description": "EMCD & Unimolecular." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": []
+}
+```

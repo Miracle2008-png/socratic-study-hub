@@ -58,3 +58,24 @@ Modern design (e.g., HTRI or Aspen EDR software) uses the more rigorous **Bell-D
 ## 5. Vibration Analysis
 
 Tubes in cross-flow experience vortex shedding. If the shedding frequency matches the natural resonant frequency of the tube, catastrophic acoustic vibration or tube flutter occurs. This causes tubes to clash against baffles and sever within days of operation. Design software checks vibration rigorously; if it fails, the engineer must decrease baffle spacing or use a "no-tubes-in-window" baffle design.
+
+## 6. Shell & Tube Design Flow
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "tema", "data": { "label": "TEMA Standards", "icon": "Settings", "description": "Shell/Head types." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "alloc", "data": { "label": "Fluid Allocation", "icon": "Droplet", "description": "Corrosive in tubes." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "baffle", "data": { "label": "Baffles & Pitch", "icon": "Grid", "description": "Induce turbulence." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "kern", "data": { "label": "Kern Method", "icon": "Activity", "description": "Shell-side calculation." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "vib", "data": { "label": "Vibration Analysis", "icon": "AlertTriangle", "description": "Avoid acoustic flutter." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } }
+  ],
+  "edges": [
+    { "source": "tema", "target": "alloc", "animated": true },
+    { "source": "alloc", "target": "baffle", "animated": true },
+    { "source": "baffle", "target": "kern", "animated": true },
+    { "source": "kern", "target": "vib", "animated": true }
+  ]
+}
+```

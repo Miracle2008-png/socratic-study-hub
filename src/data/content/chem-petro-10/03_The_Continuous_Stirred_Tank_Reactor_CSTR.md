@@ -59,3 +59,22 @@ Because $-r_A$ in the denominator is so small, the required Volume ($V$) must be
 *   **Liquid-phase reactions:** Agitators work best in liquids.
 *   **Highly Exothermic Reactions:** Because a CSTR is perfectly mixed, cold feed instantly dilutes into the large thermal mass of the tank. This eliminates dangerous "hot spots" and makes temperature control incredibly easy.
 *   **Continuous processing:** High-volume commodity chemicals.
+
+## 6. CSTR Flow Model
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "in", "data": { "label": "CONTINUOUS IN", "icon": "FastForward", "description": "F_A0 Feed." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "mix", "data": { "label": "PERFECT MIXING", "icon": "RefreshCw", "description": "Instant dilution to exit conditions." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "tank", "data": { "label": "CSTR TANK", "icon": "Box", "description": "Uniform rate everywhere (-rA)." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "out", "data": { "label": "CONTINUOUS OUT", "icon": "FastForward", "description": "F_A Exit." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "in", "target": "mix", "animated": true },
+    { "source": "mix", "target": "tank", "animated": true },
+    { "source": "tank", "target": "out", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

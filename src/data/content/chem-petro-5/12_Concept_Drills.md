@@ -90,3 +90,18 @@ $$\text{NTU} = \frac{U A}{C_{\min}} \implies A = \frac{\text{NTU} \cdot C_{\min}
 $$A = \frac{0.746 \times 1500}{800} = \frac{1119}{800} = 1.40 \, \text{m}^2$$
 
 The required heat transfer area is $1.40 \, \text{m}^2$.
+
+## Equipment Design Summary
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "types", "data": { "label": "Exchanger Types", "icon": "Box", "description": "S&T, Plate, ACHE." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "phase", "data": { "label": "Phase Change", "icon": "Droplet", "description": "Condensers/Evaps." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "methods", "data": { "label": "Design Methods", "icon": "Activity", "description": "LMTD & NTU." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "pinch", "data": { "label": "Network Integration", "icon": "Grid", "description": "Pinch Analysis." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": []
+}
+```

@@ -54,3 +54,24 @@ This flaw is heavily exploited in Limestone and Dolomite reservoirs (which are f
 
 If the Sonic porosity equals the Density porosity, the rock is a simple, uniform sponge. 
 If the Sonic porosity is massively lower than the Density porosity, the rock is fractured, meaning the oil will flow to the wellbore at astronomical, explosive rates.
+
+## 4. Calculating Secondary Porosity
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "dense", "data": { "label": "Density Tool (Radiation)", "icon": "Layers", "description": "Measures EVERY pore, including giant vugs and fractures." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "total", "data": { "label": "Total Porosity", "icon": "Circle", "description": "e.g., 15% Total empty space." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "sonic", "data": { "label": "Sonic Tool (Sound)", "icon": "Volume2", "description": "Sound takes fastest path through solid matrix, ignoring vugs." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "primary", "data": { "label": "Primary Porosity", "icon": "Activity", "description": "e.g., 5% Original intergranular space." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "sec", "data": { "label": "Secondary Porosity", "icon": "Scissors", "description": "Difference (10%). Proves rock is heavily fractured." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } }
+  ],
+  "edges": [
+    { "source": "dense", "target": "total", "animated": true },
+    { "source": "sonic", "target": "primary", "animated": true },
+    { "source": "total", "target": "sec", "animated": true, "style": { "stroke": "#ef4444", "strokeWidth": 2 } },
+    { "source": "primary", "target": "sec", "animated": true, "style": { "stroke": "#ef4444", "strokeWidth": 2 } }
+  ]
+}
+```

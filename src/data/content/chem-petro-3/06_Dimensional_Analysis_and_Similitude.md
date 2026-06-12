@@ -50,3 +50,22 @@ $$ Re_{\text{model}} = Re_{\text{prototype}} $$
 $$ \left( \frac{\rho V D}{\mu} \right)_{\text{model}} = \left( \frac{\rho V D}{\mu} \right)_{\text{prototype}} $$
 
 If the industrial pipe diameter ($D$) is 10 times larger than the lab model, you must compensate by either increasing the velocity in the lab model by a factor of 10, or using a less viscous fluid in the lab, to ensure the Reynolds numbers match. If they match, the flow physics will be identical.
+
+## 5. Similitude Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "pi", "data": { "label": "Buckingham Pi", "icon": "Filter", "description": "Dimensionless groups." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "re", "data": { "label": "Reynolds Number", "icon": "Activity", "description": "Inertial / Viscous." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "other", "data": { "label": "Other Numbers", "icon": "List", "description": "Froude, Mach, Euler." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "sim", "data": { "label": "Similitude", "icon": "Maximize2", "description": "Scale-up criteria." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "pi", "target": "re", "animated": true },
+    { "source": "pi", "target": "other", "animated": true },
+    { "source": "re", "target": "sim", "animated": true }
+  ]
+}
+```

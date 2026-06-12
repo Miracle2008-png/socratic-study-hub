@@ -52,3 +52,24 @@ The entire foundation of Chemical and Miscible EOR is based on dropping the Inte
 
 1.  **Surfactants (Soap):** By injecting specialized industrial soap, the surfactant molecules embed themselves on the boundary of the oil droplet. They chemically dissolve the rigid "skin." The IFT drops from 30 dynes/cm down to 0.001 dynes/cm. The Capillary Number instantly skyrockets to $10^{-3}$, and the floppy oil droplets easily squeeze through the pore throats.
 2.  **Miscibility (Gas):** By injecting $CO_2$ at extreme pressure, the gas completely dissolves into the oil. Because there is now only one single fluid phase, there is no boundary. The IFT drops to exactly zero. The Capillary Number approaches infinity, and 100% of the oil is swept away.
+
+## 5. Overcoming Capillary Trapping
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "water", "data": { "label": "Standard Waterflood", "icon": "Waves", "description": "Water velocity provides weak pushing force." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "trap", "data": { "label": "Capillary Trapping", "icon": "Lock", "description": "High IFT creates a rigid skin. Oil is permanently trapped in rock pores." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "chem", "data": { "label": "Chemical / Gas Injection", "icon": "FlaskConical", "description": "Injecting Surfactant soap or extreme high-pressure CO2." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } },
+    { "id": "destroy", "data": { "label": "IFT Destroyed", "icon": "Unlock", "description": "Rigid skin dissolves. Capillary Number spikes by 1,000x." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "mobilize", "data": { "label": "Oil Mobilized", "icon": "Droplet", "description": "Floppy oil droplets easily squeeze through tight pores to the producing well." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "water", "target": "trap", "animated": true },
+    { "source": "trap", "target": "chem", "animated": true, "style": { "stroke": "#ef4444" }, "label": "Dead End" },
+    { "source": "chem", "target": "destroy", "animated": true },
+    { "source": "destroy", "target": "mobilize", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

@@ -57,3 +57,22 @@ What happens if the rock is filled with high-pressure, invisible Gas (Methane, $
 
 **The Result: Massive Crossover.**
 The Density curve swings left, the Neutron curve swings right, and they cross over each other, creating a massive, shaded "belly" on the log. Whenever a petrophysicist sees this massive crossover, they know instantly, without doing any math, that they have found a massive, high-pressure Gas reservoir.
+
+## 5. Density-Neutron Overlay Analysis
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "overlay", "data": { "label": "Density-Neutron Overlay", "icon": "Layers", "description": "Plotting both porosity curves in the exact same log track." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "clean", "data": { "label": "Curves Match (Oil/Water)", "icon": "CheckCircle", "description": "Both tools agree on porosity. Confirmed liquid reservoir." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "shale", "data": { "label": "Separation (Shale)", "icon": "AlignJustify", "description": "Neutron reads artificially high due to bound OH- in clay." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "gas", "data": { "label": "Massive Crossover (Gas)", "icon": "Flame", "description": "Density reads high, Neutron reads low. The Gas Effect belly." }, "style": { "background": "#b45309", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "overlay", "target": "clean", "animated": true },
+    { "source": "overlay", "target": "shale", "animated": true },
+    { "source": "overlay", "target": "gas", "animated": true, "style": { "stroke": "#f59e0b", "strokeWidth": 2 } }
+  ]
+}
+```

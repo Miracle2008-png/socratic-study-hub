@@ -46,3 +46,21 @@ Where:
 *   $D_{AB}$ is the bulk gas diffusivity (or Knudsen diffusivity if the pores are tiny).
 *   $\varepsilon$ is the **porosity** (fraction of the solid volume that is empty space). Higher porosity means more room to diffuse.
 *   $\tau$ is the **tortuosity** (the ratio of the actual winding path length through the pore to the straight-line distance across the pellet). A highly winding pore network has a high tortuosity, which drastically slows down diffusion. Typical values for $\tau$ range from $2$ to $10$.
+
+## 4. Solid Diffusion Mechanisms
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "vac", "data": { "label": "Vacancy Diffusion", "icon": "Box", "description": "Needs lattice defects." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "inter", "data": { "label": "Interstitial Diffusion", "icon": "Maximize2", "description": "Small atoms, much faster." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "arrh", "data": { "label": "Arrhenius Temperature", "icon": "Thermometer", "description": "Exponential increase with heat." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "porous", "data": { "label": "Porous Diffusion", "icon": "Grid", "description": "Tortuosity slows diffusion." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "vac", "target": "arrh", "animated": true },
+    { "source": "inter", "target": "arrh", "animated": true }
+  ]
+}
+```

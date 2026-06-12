@@ -74,3 +74,22 @@ To evaluate this term, you must use an Equation of State (like the Ideal Gas Law
   This mathematically proves that the enthalpy of an ideal gas depends ONLY on temperature, not on pressure.
 
 - If the fluid is a **real gas**, you must use a cubic EOS to calculate the derivative, which requires complex calculus and integration, a task typically handled by software like Aspen Plus.
+
+## 4. Property Relations Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "fund", "data": { "label": "Fundamental Relations", "icon": "Activity", "description": "dU, dH, dA, dG." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "exact", "data": { "label": "Exact Differentials", "icon": "Code", "description": "Math framework." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "eq", "data": { "label": "Enthalpy & Entropy", "icon": "Sigma", "description": "dH, dS." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "eos", "data": { "label": "Equations of State", "icon": "Box", "description": "Calculate derivatives." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "fund", "target": "exact", "animated": true },
+    { "source": "exact", "target": "eq", "animated": true },
+    { "source": "eq", "target": "eos", "animated": true }
+  ]
+}
+```

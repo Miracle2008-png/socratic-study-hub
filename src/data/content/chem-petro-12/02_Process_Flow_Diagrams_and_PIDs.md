@@ -54,3 +54,22 @@ Sensors and controllers are drawn as circles (bubbles) with letters and numbers 
 *   **Thin solid line:** Minor process pipe (e.g., a drain or sample line).
 *   **Dashed line:** Electrical signal (e.g., 4-20 mA wire going to the computer).
 *   **Line with cross-hashes (//):** Pneumatic signal (instrument air going to a valve actuator).
+
+## 5. Engineering Document Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "bfd", "data": { "label": "1. BFD", "icon": "Box", "description": "Block Flow Diagram. Simple rectangles for executives." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "pfd", "data": { "label": "2. PFD", "icon": "Activity", "description": "Process Flow Diagram. Shows heat/mass balances and major equipment." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "pid", "data": { "label": "3. P&ID", "icon": "Map", "description": "Piping & Instrumentation. The ultimate blueprint for construction." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "build", "data": { "label": "Construction", "icon": "Wrench", "description": "Welders and pipefitters build the physical plant." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "bfd", "target": "pfd", "animated": true },
+    { "source": "pfd", "target": "pid", "animated": true },
+    { "source": "pid", "target": "build", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

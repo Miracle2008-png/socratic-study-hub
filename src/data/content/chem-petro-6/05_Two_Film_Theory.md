@@ -51,3 +51,23 @@ Consider absorbing oxygen ($O_2$) into water (e.g., in a wastewater treatment ae
 *   If $m$ is massive, the term $\frac{m}{k_x}$ dominates the right side of the equation.
 *   The gas-phase resistance ($1/k_y$) becomes negligible by comparison.
 *   **Conclusion:** For insoluble gases, the process is **Liquid-Film Controlled**. To speed up aeration, the engineer must drastically agitate the liquid phase (e.g., using high-speed mechanical surface aerators).
+
+## 4. Two-Film Resistance
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "total", "data": { "label": "Overall Resistance", "icon": "Layers", "description": "1/Ky = 1/ky + m/kx" }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "gas", "data": { "label": "Gas Film", "icon": "Cloud", "description": "1/ky" }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "liq", "data": { "label": "Liquid Film", "icon": "Droplet", "description": "m/kx" }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "ctrl", "data": { "label": "Controlling Film", "icon": "Settings", "description": "Depends on solubility (m)" }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "total", "target": "gas", "animated": true },
+    { "source": "total", "target": "liq", "animated": true },
+    { "source": "gas", "target": "ctrl", "animated": true },
+    { "source": "liq", "target": "ctrl", "animated": true }
+  ]
+}
+```

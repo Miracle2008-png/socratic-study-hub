@@ -51,3 +51,17 @@ Fick's First Law completes the triad of phenomenal transport equations:
 | **Mass Transfer** | Fick's First Law of Diffusion | $J_A = -D_{AB} \frac{dC_A}{dz}$ | Mass Diffusivity ($D_{AB}$) |
 
 Notice how they all take the exact same form: $\text{Flux} = -(\text{Diffusivity Property}) \times \text{Gradient}$.
+
+## 5. Transport Analogies
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "fick", "data": { "label": "Fick's (Mass)", "icon": "Activity", "description": "Diffusivity D_AB." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "four", "data": { "label": "Fourier's (Heat)", "icon": "Thermometer", "description": "Thermal Diffusivity alpha." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "newt", "data": { "label": "Newton's (Momentum)", "icon": "Move", "description": "Kinematic Viscosity nu." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": []
+}
+```

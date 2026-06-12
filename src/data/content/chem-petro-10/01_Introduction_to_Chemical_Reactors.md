@@ -42,3 +42,22 @@ Real-world reactors are incredibly complex fluid dynamics nightmares. To make th
 3.  **The Plug Flow Reactor (PFR):** A long, continuously flowing pipe. We assume the fluid flows like a solid plug, with no mixing backwards or forwards, but perfect mixing radially across the pipe.
 
 In the next few modules, we will derive the specific design equations for each of these three ideal reactors.
+
+## 4. The Universal Mass Balance
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "in", "data": { "label": "IN (Fj0)", "icon": "ArrowRight", "description": "Flow into reactor." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "gen", "data": { "label": "GENERATION (Gj)", "icon": "Activity", "description": "Moles created inside." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "acc", "data": { "label": "ACCUMULATION", "icon": "Database", "description": "Total moles building up." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "out", "data": { "label": "OUT (Fj)", "icon": "ArrowRight", "description": "Flow out of reactor." }, "style": { "background": "#451a03", "color": "#fef3c7" } }
+  ],
+  "edges": [
+    { "source": "in", "target": "acc", "animated": true },
+    { "source": "gen", "target": "acc", "animated": true },
+    { "source": "acc", "target": "out", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

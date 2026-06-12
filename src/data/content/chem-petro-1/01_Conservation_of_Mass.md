@@ -51,3 +51,22 @@ You can write balance equations for the total mass of the system, or for individ
 - **Component Balance**: For a specific chemical $A$, if a reaction occurs, generation or consumption must be included. If no reaction occurs, it simplifies to $\text{In}_A - \text{Out}_A = \text{Acc}_A$.
 
 *Note on Moles: While total mass is always conserved, the total number of MOLES is not necessarily conserved during a chemical reaction (e.g., $N_2 + 3H_2 \rightarrow 2NH_3$ converts 4 moles of reactants into 2 moles of product).*
+
+## 5. Mass Conservation Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "gen", "data": { "label": "General Balance", "icon": "Activity", "description": "Accum = In - Out." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "steady", "data": { "label": "Steady-State", "icon": "TrendingFlat", "description": "In = Out." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "unsteady", "data": { "label": "Unsteady-State", "icon": "TrendingUp", "description": "Accumulation." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "total", "data": { "label": "Mass vs Component", "icon": "Box", "description": "Total vs Species." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "gen", "target": "steady", "animated": true },
+    { "source": "gen", "target": "unsteady", "animated": true },
+    { "source": "gen", "target": "total", "animated": true }
+  ]
+}
+```

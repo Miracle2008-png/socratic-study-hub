@@ -71,3 +71,22 @@ $$Q = U A \Delta T_{lm} \implies A = \frac{Q}{U \Delta T_{lm}}$$
 $$A = \frac{40{,}000}{300 \times 35.9} = \frac{40000}{10770} = 3.71 \, \text{m}^2$$
 
 The required heat transfer area is $3.71 \, \text{m}^2$.
+
+## 5. LMTD Sizing Process
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "size", "data": { "label": "Sizing Problem", "icon": "Search", "description": "Goal: Find Area A." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "temps", "data": { "label": "Known Temps", "icon": "Thermometer", "description": "All 4 temps known." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "lmtd", "data": { "label": "Calculate LMTD", "icon": "Activity", "description": "Log-mean difference." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "corr", "data": { "label": "Correction Factor (F)", "icon": "CheckCircle", "description": "For multi-pass shells." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "size", "target": "temps", "animated": true },
+    { "source": "temps", "target": "lmtd", "animated": true },
+    { "source": "lmtd", "target": "corr", "animated": true }
+  ]
+}
+```

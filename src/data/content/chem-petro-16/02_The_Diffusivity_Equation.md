@@ -54,3 +54,22 @@ The pressure wave has traveled miles outward and finally hits the physical bound
 ### 3. Pseudo-Steady State Flow (Boundary Dominated)
 Eventually, the pressure wave hits all boundaries. The entire reservoir "feels" the effect of the well.
 From this point on, the pressure everywhere in the entire reservoir drops at the exact same, constant rate. The shape of the pressure funnel is permanently established; it just sinks deeper and deeper into the earth as a unified whole. (This is the period used for long-term production forecasting).
+
+## 4. The 3 Flow Regimes
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "start", "data": { "label": "Well Opens", "icon": "PlayCircle", "description": "Pressure drop instantly created at the wellbore face." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "trans", "data": { "label": "Transient Flow", "icon": "Activity", "description": "Wave travels outward. Well acts like ocean is infinite." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "bound", "data": { "label": "Boundary Hit", "icon": "AlertTriangle", "description": "Pressure wave crashes into edge of reservoir." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "pss", "data": { "label": "Pseudo-Steady State", "icon": "TrendingDown", "description": "Entire reservoir pressure drops uniformly together." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "start", "target": "trans", "animated": true },
+    { "source": "trans", "target": "bound", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "bound", "target": "pss", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

@@ -37,3 +37,21 @@ In plain English, RTT states:
 *The rate of change of property $B$ for the fluid system = The rate of accumulation of $B$ inside the Control Volume + The net rate of $B$ flowing out across the Control Surfaces.*
 
 RTT is the mathematical mother of all balance equations in chemical engineering. By setting $B = \text{mass}$ (so $b=1$), RTT yields the Mass Balance equation. By setting $B = \text{momentum}$ (so $b = \mathbf{V}$), it yields the Momentum Balance.
+
+## 4. Kinematics & RTT Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "pers", "data": { "label": "Flow Perspectives", "icon": "Eye", "description": "Lagrangian / Eulerian." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "mat", "data": { "label": "Material Derivative", "icon": "TrendingUp", "description": "Local & Convective." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "rtt", "data": { "label": "RTT", "icon": "Repeat", "description": "System to Control Vol." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "bal", "data": { "label": "Balance Equations", "icon": "Layers", "description": "Mass, Momentum, Energy." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "pers", "target": "mat", "animated": true },
+    { "source": "rtt", "target": "bal", "animated": true }
+  ]
+}
+```

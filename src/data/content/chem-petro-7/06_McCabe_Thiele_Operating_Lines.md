@@ -60,3 +60,22 @@ To draw the complete operating lines:
 1. Plot $(z_F, z_F)$ and draw the $q$-line based on the feed thermal condition.
 2. Plot $(x_D, x_D)$ and draw the ROL with slope $L/V$ until it hits the $q$-line.
 3. Plot $(x_B, x_B)$ and draw the SOL from that point directly to the intersection of the ROL and the $q$-line.
+
+## 4. Operating Lines Map
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "rol", "data": { "label": "ROL", "icon": "TrendingUp", "description": "Top section balance." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "sol", "data": { "label": "SOL", "icon": "TrendingDown", "description": "Bottom section balance." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "qline", "data": { "label": "q-line", "icon": "Activity", "description": "Feed thermal condition." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "meet", "data": { "label": "Intersection", "icon": "Crosshair", "description": "Defines optimum feed stage." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "rol", "target": "meet", "animated": true },
+    { "source": "sol", "target": "meet", "animated": true },
+    { "source": "qline", "target": "meet", "animated": true }
+  ]
+}
+```

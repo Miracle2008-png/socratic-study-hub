@@ -109,3 +109,18 @@ Since $\text{NPSH}_A = 1.86 \, \text{m} < \text{NPSH}_R = 3.5 \, \text{m}$, **ca
 2. Reduce suction line friction (larger diameter, shorter pipe, fewer fittings)
 3. Install a booster pump at the tank outlet
 4. Lower water temperature to reduce vapour pressure
+
+## Core Concepts Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "bal", "data": { "label": "Momentum Balances", "icon": "Layers", "description": "Velocity profiles." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "fric", "data": { "label": "Friction & Pressure", "icon": "Activity", "description": "Moody chart." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "pump", "data": { "label": "Pumping Systems", "icon": "TrendingUp", "description": "NPSH & Curves." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "fluid", "data": { "label": "Fluidization", "icon": "Droplet", "description": "Regimes & Two-Phase." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": []
+}
+```

@@ -73,3 +73,22 @@ At an azeotrope:
 - **Distillation fails completely.** Because $y_i = x_i$, boiling the liquid does not change the concentration. 
 
 Ethanol and water form an azeotrope at 95.6% ethanol. This is why you cannot produce 100% pure ethanol using standard distillation; it gets "stuck" at 95.6%. Special thermodynamic tricks (like adding a third chemical, or changing the pressure to shift the azeotropic point) are required to break it.
+
+## 5. VLE Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "vle", "data": { "label": "General VLE", "icon": "Shuffle", "description": "Equal fugacity." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "gp", "data": { "label": "Gamma-Phi Eq", "icon": "Code", "description": "Master equation." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "raoult", "data": { "label": "Raoult's Law", "icon": "Circle", "description": "Ideal case." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "az", "data": { "label": "Azeotropes", "icon": "AlertTriangle", "description": "y = x." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "vle", "target": "gp", "animated": true },
+    { "source": "gp", "target": "raoult", "animated": true },
+    { "source": "gp", "target": "az", "animated": true }
+  ]
+}
+```

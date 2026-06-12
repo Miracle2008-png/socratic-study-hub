@@ -65,3 +65,22 @@ To calculate $\gamma_i$ for a distillation column, you need a mathematical model
 2. **Wilson Equation (1964)**: Introduced the concept of "local composition" (the idea that the concentration around a molecule is different from the bulk concentration due to attractive forces). Excellent for strongly non-ideal mixtures like alcohols and water.
 3. **NRTL (Non-Random Two-Liquid)**: Applicable to partially miscible systems (where the liquid splits into two distinct layers, like oil and water).
 4. **UNIQUAC / UNIFAC**: Advanced models that calculate interactions based on the specific functional groups of the molecules (e.g., -OH, -CH3) rather than the whole molecule. UNIFAC is predictive—it can estimate activity coefficients for mixtures that have never been experimentally tested!
+
+## 5. Liquid Models Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "ideal", "data": { "label": "Ideal Solution", "icon": "Box", "description": "Baseline." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "gamma", "data": { "label": "Activity Coef", "icon": "Activity", "description": "Liquid non-ideality." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "ex", "data": { "label": "Excess Gibbs", "icon": "TrendingUp", "description": "Calculates gamma." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "mod", "data": { "label": "Activity Models", "icon": "Layers", "description": "Wilson, NRTL." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "ideal", "target": "gamma", "animated": true },
+    { "source": "gamma", "target": "ex", "animated": true },
+    { "source": "ex", "target": "mod", "animated": true }
+  ]
+}
+```

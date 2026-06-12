@@ -46,3 +46,22 @@ The concentration of $D$ will rise, hit a maximum peak, and then fall. Our goal 
 What if the reaction is $A + B \rightarrow D$, and the undesired reaction is $A + A \rightarrow U$?
 You want high B and low A.
 **Solution:** Use a Semi-Batch reactor. Fill the tank with pure B. Slowly drip A into the tank. This keeps $C_B$ high and $C_A$ near zero at all times.
+
+## 4. Reactor Selection Guide
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "goal", "data": { "label": "Maximize Product Yield", "icon": "Target", "description": "Select reactor based on kinetics." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "high", "data": { "label": "High Order Desired", "icon": "ArrowUp", "description": "Keep C_A High -> Use PFR." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "low", "data": { "label": "Low Order Desired", "icon": "ArrowDown", "description": "Keep C_A Low -> Use CSTR." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "series", "data": { "label": "Series (A->D->U)", "icon": "Activity", "description": "Catch exact peak -> Use PFR." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "goal", "target": "high", "animated": true },
+    { "source": "goal", "target": "low", "animated": true },
+    { "source": "goal", "target": "series", "animated": true }
+  ]
+}
+```

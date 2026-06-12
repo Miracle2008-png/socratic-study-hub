@@ -40,3 +40,22 @@ As the membrane filters out proteins or bacteria, this sticky sludge builds up o
 1.  **Cross-Flow Filtration:** Instead of pumping the feed dead-on into the membrane (like a coffee filter), the feed is pumped violently *parallel* to the membrane surface. The shear force of the rushing liquid continuously scours the membrane surface, sweeping the sludge away.
 2.  **Backwashing:** Every 30 minutes, the pumps are reversed. Clean permeate is forced backward through the membrane, physically blowing the clogged dirt out of the pores.
 3.  **Chemical Cleaning:** Once a day, the unit is shut down and washed with hot caustic soda ($NaOH$) and bleach to chemically dissolve organic foulants, followed by an acid wash to dissolve mineral scale.
+
+## 4. Filtration Hierarchy
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "mf", "data": { "label": "Microfiltration", "icon": "Grid", "description": "Blocks suspended particles." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "uf", "data": { "label": "Ultrafiltration", "icon": "Filter", "description": "Blocks macromolecules (MWCO)." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "foul", "data": { "label": "Fouling", "icon": "AlertTriangle", "description": "Flux drops due to sludge." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "clean", "data": { "label": "Mitigation", "icon": "RefreshCcw", "description": "Cross-flow & Backwash." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "mf", "target": "uf", "animated": true },
+    { "source": "uf", "target": "foul", "animated": true },
+    { "source": "foul", "target": "clean", "animated": true }
+  ]
+}
+```

@@ -50,3 +50,22 @@ Material and energy balances on air-water systems can be visualized as lines on 
 2. **Humidification**: Injecting steam or water vapor into the air. Moves vertically upward.
 3. **Dehumidification via Cooling**: Cooling air below its dew point causes water to condense out. The process moves left until it hits the 100% RH saturation curve, then travels down along the curve as water drops out of the air.
 4. **Evaporative Cooling**: Hot, dry air passes over liquid water. The heat from the air evaporates the water, causing the air to cool down while simultaneously becoming more humid. This moves up and to the left along constant Wet-Bulb temperature lines.
+
+## 5. Psychrometrics Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "db", "data": { "label": "Dry-Bulb", "icon": "Thermometer", "description": "Actual temp." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "wb", "data": { "label": "Wet-Bulb", "icon": "Droplet", "description": "Humidity indicator." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "dp", "data": { "label": "Dew Point", "icon": "CloudRain", "description": "Condensation temp." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "proc", "data": { "label": "Processes", "icon": "Activity", "description": "Heating/cooling." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "db", "target": "wb", "animated": true },
+    { "source": "wb", "target": "dp", "animated": true },
+    { "source": "dp", "target": "proc", "animated": true }
+  ]
+}
+```

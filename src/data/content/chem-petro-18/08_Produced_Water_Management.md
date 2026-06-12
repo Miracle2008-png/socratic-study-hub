@@ -42,3 +42,24 @@ If the field does not need waterflooding, the company must drill a dedicated dis
 
 ### 3. Surface Discharge
 In onshore operations, surface discharge is almost universally illegal. However, on deep-water offshore platforms, once the water is polished to below 29 ppm of oil, it is simply dumped directly overboard into the open ocean, where the massive volume of the sea instantly dilutes the brine harmlessly.
+
+## 4. Produced Water Treatment Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "brine", "data": { "label": "Toxic Produced Water", "icon": "Droplet", "description": "Hyper-saline brine with dispersed oil droplets exits the separator." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "skimmer", "data": { "label": "Skimmer Tanks", "icon": "Waves", "description": "Quiet settling. Oil floats to form a sheen and is scraped off." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "cyclone", "data": { "label": "Hydrocyclones", "icon": "RefreshCw", "description": "Violent centrifugal spin violently forces oil to the center." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "igf", "data": { "label": "Gas Flotation (IGF)", "icon": "Cloud", "description": "Microscopic gas bubbles act as life-jackets, floating tiny oil drops." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "disposal", "data": { "label": "Injection / Disposal", "icon": "ArrowDownCircle", "description": "Clean brine (<29 ppm oil) safely injected underground (SWD or EOR)." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "brine", "target": "skimmer", "animated": true },
+    { "source": "skimmer", "target": "cyclone", "animated": true },
+    { "source": "cyclone", "target": "igf", "animated": true },
+    { "source": "igf", "target": "disposal", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

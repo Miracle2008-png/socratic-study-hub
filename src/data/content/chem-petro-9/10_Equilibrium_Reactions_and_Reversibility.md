@@ -53,3 +53,22 @@ This creates the greatest headache in chemical engineering (e.g., the Haber proc
 
 **The Solution:**
 Engineers usually solve this by running the reactor at an intermediate, optimized temperature, or by using a **Temperature Progression**. They start the reactor at a high temperature (for fast initial rates) and actively cool the reactor as the reaction proceeds to lower the temperature and achieve a high final equilibrium conversion.
+
+## 5. Thermodynamics vs Kinetics
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "rates", "data": { "label": "Forward = Reverse Rate", "icon": "Activity", "description": "Dynamic balance." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "eq", "data": { "label": "Thermodynamic Equilibrium", "icon": "CheckCircle", "description": "Net rate is zero." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "dilem", "data": { "label": "Exothermic Dilemma", "icon": "Thermometer", "description": "High T speeds up but ruins Xe." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "prog", "data": { "label": "Temperature Progression", "icon": "ArrowDown", "description": "Start hot, finish cool." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "rates", "target": "eq", "animated": true },
+    { "source": "eq", "target": "dilem", "animated": true },
+    { "source": "dilem", "target": "prog", "animated": true }
+  ]
+}
+```

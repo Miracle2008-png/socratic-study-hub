@@ -60,3 +60,24 @@ To determine the final cash flow of the plant, you calculate the Net Profit afte
 **Cash Flow:** The actual physical cash moving into the company's bank account.
 $$ \text{Cash Flow} = \text{Net Income} + \text{Depreciation} $$
 *(We add depreciation back in because, remember, we never actually wrote a check for it! It was just a paper trick to lower our taxes).*
+
+## 5. The Cash Flow Waterfall
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "rev", "data": { "label": "Gross Revenue", "icon": "DollarSign", "description": "Total money from selling the chemical product." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "opex", "data": { "label": "Operating Costs", "icon": "TrendingDown", "description": "Subtract raw materials, utilities, and labor." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "dep", "data": { "label": "Depreciation", "icon": "Shield", "description": "Subtract paper tax shield to lower reported income." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "tax", "data": { "label": "Taxes Paid", "icon": "Building", "description": "Pay IRS based on the artificially lowered income." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "cash", "data": { "label": "Net Cash Flow", "icon": "CheckCircle", "description": "True cash in the bank. (Net Income + Depreciation added back)." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } }
+  ],
+  "edges": [
+    { "source": "rev", "target": "opex", "animated": true },
+    { "source": "opex", "target": "dep", "animated": true },
+    { "source": "dep", "target": "tax", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "tax", "target": "cash", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

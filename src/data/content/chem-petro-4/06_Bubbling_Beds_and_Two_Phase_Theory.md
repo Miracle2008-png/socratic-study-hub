@@ -94,3 +94,23 @@ $$\delta_b = \frac{v_s - v_{mf}}{v_b} = \frac{0.04}{0.585} = 0.068$$
 $$H = \frac{H_{mf}}{1 - \delta_b} = \frac{1.0}{1 - 0.068} = \frac{1.0}{0.932} = 1.073 \, \text{m}$$
 
 The bed expands only about **7.3%** — modest expansion, consistent with a vigorously bubbling but not slugging bed.
+
+## 8. K-L Two Phase Model Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "gas", "data": { "label": "Total Gas Flow", "icon": "Wind", "description": "Superficial velocity." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "bubble", "data": { "label": "Bubble Phase", "icon": "Circle", "description": "Excess gas, no catalyst." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "cloud", "data": { "label": "Cloud/Wake", "icon": "Cloud", "description": "Thin catalyst shell." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "emul", "data": { "label": "Emulsion Phase", "icon": "Layers", "description": "Dense bed, at v_mf." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "gas", "target": "bubble", "animated": true },
+    { "source": "gas", "target": "emul", "animated": true },
+    { "source": "bubble", "target": "cloud", "label": "Exchange", "animated": true },
+    { "source": "cloud", "target": "emul", "label": "Exchange", "animated": true }
+  ]
+}
+```

@@ -44,3 +44,22 @@ Where:
 *   $x_C$ = Mass fraction of solute in the Raffinate phase (Carrier $A$ rich).
 
 If $K > 1$, the solute prefers the new solvent. This is highly desirable for an extraction process.
+
+## 5. Ternary Diagram Components
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "binodal", "data": { "label": "Binodal Curve", "icon": "Activity", "description": "Solubility boundary." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "two_phase", "data": { "label": "Two-Phase Region", "icon": "Layers", "description": "Mixtures split here." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "tie", "data": { "label": "Tie Lines", "icon": "ArrowLeftRight", "description": "Extract to Raffinate ends." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "plait", "data": { "label": "Plait Point", "icon": "Minimize2", "description": "Phases become identical." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "binodal", "target": "two_phase", "animated": true },
+    { "source": "two_phase", "target": "tie", "animated": true },
+    { "source": "tie", "target": "plait", "animated": true }
+  ]
+}
+```

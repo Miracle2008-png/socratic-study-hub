@@ -50,3 +50,24 @@ Because porosity mathematically cancels out of the equations for $M$ and $N$, th
 *   Wherever the data point lands inside the triangle, simple geometric math tells the engineer the exact percentage of all three minerals present in that specific foot of rock.
 
 By leveraging the combined physics of radiation and sound, the petrophysicist can mathematically dissect the microscopic chemical composition of a rock located three miles underground, without ever physically touching it.
+
+## 4. Neutron-Density Crossplot Analysis
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "tools", "data": { "label": "Log Data", "icon": "Database", "description": "Bulk Density (Y-Axis) vs Neutron Porosity (X-Axis)." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "plot", "data": { "label": "Crossplot Scatter", "icon": "Layout", "description": "Each foot of depth is plotted as a single dot, removing depth." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "pure", "data": { "label": "Pure Lithology", "icon": "Layers", "description": "Dots land perfectly on Sand, Lime, or Dolomite line." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "mix", "data": { "label": "Mixed Lithology", "icon": "Menu", "description": "Dots land between lines. Math reveals exact % blend." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "gas", "data": { "label": "The Gas Effect", "icon": "Flame", "description": "Dots pulled to top-left. Proves gas without knowing lithology." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } }
+  ],
+  "edges": [
+    { "source": "tools", "target": "plot", "animated": true },
+    { "source": "plot", "target": "pure", "animated": true },
+    { "source": "plot", "target": "mix", "animated": true },
+    { "source": "plot", "target": "gas", "animated": true, "style": { "stroke": "#ef4444", "strokeWidth": 2 } }
+  ]
+}
+```

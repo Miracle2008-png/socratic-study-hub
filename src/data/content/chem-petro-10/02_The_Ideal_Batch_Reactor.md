@@ -66,3 +66,22 @@ $$ t = C_{A0} \int_{0}^{X} \frac{dX}{-r_A} $$
 *   **Flexibility:** You can make Chemical X on Monday, wash the tank, and make Chemical Y on Tuesday.
 *   **Slow Reactions:** If a reaction takes 48 hours, a continuous flow reactor would have to be miles long. A batch reactor just sits there patiently.
 *   **Downside:** High labor costs (filling/emptying), and massive "downtime" (cleaning and heating up) where the factory is making zero product.
+
+## 6. Batch Reactor Operation Cycle
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "fill", "data": { "label": "FILL", "icon": "Download", "description": "Add reactants." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "seal", "data": { "label": "SEAL", "icon": "Lock", "description": "IN = 0, OUT = 0." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "react", "data": { "label": "REACT", "icon": "Activity", "description": "Concentration drops over time (t)." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "empty", "data": { "label": "EMPTY", "icon": "Upload", "description": "Discharge products (X conversion)." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "fill", "target": "seal", "animated": true },
+    { "source": "seal", "target": "react", "animated": true },
+    { "source": "react", "target": "empty", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

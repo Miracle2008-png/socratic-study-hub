@@ -55,3 +55,22 @@ Imagine a saturated sponge. If you squeeze it, water shoots out.
 When the reservoir pressure drops, the rock matrix is crushed by the overburden stress. As the pores shrink, they physically squeeze the oil out of the rock and push it toward the wellbore! In highly compressible rocks (like chalk or unconsolidated sands), this "rock compaction drive" can produce millions of barrels of oil entirely on its own.
 
 *Warning:* If the pressure drops too much, the rock will crush so violently that the surface of the Earth actually sinks. (The city of Long Beach, California, sank 29 feet because of oil extraction before engineers started injecting water to prop the pressure back up).
+
+## 5. The Rock Compaction Drive
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "stress", "data": { "label": "Effective Stress", "icon": "ArrowDown", "description": "Overburden weight vs internal fluid pressure." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "deplete", "data": { "label": "Production Begins", "icon": "Activity", "description": "Fluids are pumped out; pore pressure drops." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "crush", "data": { "label": "Rock Crushes", "icon": "Minimize2", "description": "Without fluid support, the rock matrix physically shrinks." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "squeeze", "data": { "label": "Compaction Drive", "icon": "Droplet", "description": "Shrinking pores violently squeeze trapped oil into the well." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "stress", "target": "deplete", "animated": true },
+    { "source": "deplete", "target": "crush", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "crush", "target": "squeeze", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

@@ -47,3 +47,18 @@ Match the following industrial separation problems with the most appropriate mem
 3. Breaking the ethanol/water azeotrope: **Pervaporation**. Uses a hydrophilic membrane to selectively evaporate the water across the barrier while the ethanol remains liquid.
 4. Concentrating whey proteins: **Ultrafiltration (UF)**. Proteins are macromolecules (10k - 100k Daltons) which are perfectly blocked by UF, while small lactose molecules and water pass through.
 5. De-salting soy sauce: **Electrodialysis (ED)**. Applies a voltage to selectively pull only charged ions ($Na^+$, $Cl^-$) through ion-exchange membranes, completely ignoring the uncharged organic flavor compounds.
+
+## Advanced Separations Summary
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "lle", "data": { "label": "LLE Economics", "icon": "AlertCircle", "description": "Balance heat vs solvent." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "tern", "data": { "label": "Phase Eq", "icon": "Triangle", "description": "Dome controls separation." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "press", "data": { "label": "Pressure Filtration", "icon": "Filter", "description": "Size exclusion & solution-diffusion." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "grad", "data": { "label": "Gradient Separation", "icon": "Activity", "description": "Voltage or Concentration." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": []
+}
+```

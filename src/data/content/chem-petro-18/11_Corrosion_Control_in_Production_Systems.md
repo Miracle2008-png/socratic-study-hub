@@ -52,3 +52,24 @@ The only option is to refuse to use standard carbon steel. The engineers must bu
 
 ### 4. Smart Pigging (Inspection)
 To ensure the pipe isn't secretly rotting from the inside, engineers regularly launch an "Intelligent Pig" into the pipeline. This is a massive, computerized robot equipped with hundreds of ultrasonic sonar sensors or magnetic flux tools. As it races through the pipe at 10 mph, it scans every single square inch of the steel wall, digitally mapping the exact depth of every single microscopic corrosion pit, allowing engineers to cut out and replace failing sections of pipe before they explode.
+
+## 4. Corrosion Control Strategies
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "steel", "data": { "label": "Bare Carbon Steel", "icon": "AlertCircle", "description": "Highly vulnerable to liquid water, CO2 (pitting), and H2S (embrittlement)." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "chem", "data": { "label": "Chemical Inhibitors", "icon": "Droplet", "description": "Continuous injection creates a microscopic, waterproof carpet." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "cath", "data": { "label": "Cathodic Protection", "icon": "Zap", "description": "Zinc sacrificial anodes chemically force electrons into the steel." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "cra", "data": { "label": "Exotic CRA Alloys", "icon": "Shield", "description": "Replacing steel with ultra-expensive 13-Chrome or Inconel." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "pig", "data": { "label": "Smart Pigging", "icon": "Camera", "description": "Robotic sonar inspection to map hidden microscopic pits." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } }
+  ],
+  "edges": [
+    { "source": "steel", "target": "chem", "animated": true },
+    { "source": "steel", "target": "cath", "animated": true },
+    { "source": "steel", "target": "cra", "animated": true },
+    { "source": "steel", "target": "pig", "animated": true }
+  ]
+}
+```

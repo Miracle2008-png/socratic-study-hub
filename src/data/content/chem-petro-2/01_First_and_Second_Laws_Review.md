@@ -69,3 +69,22 @@ Real processes always generate entropy ($S_{\text{gen}} > 0$) due to friction, u
 
 - **Isentropic Efficiency of a Turbine**: $\eta = \frac{W_{\text{actual}}}{W_{\text{isentropic}}}$
 - **Isentropic Efficiency of a Compressor**: $\eta = \frac{W_{\text{isentropic}}}{W_{\text{actual}}}$
+
+## 5. Thermodynamics Laws Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "first", "data": { "label": "First Law", "icon": "Activity", "description": "Energy conservation." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "cp", "data": { "label": "Heat Capacities", "icon": "Thermometer", "description": "Cp and Cv." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "second", "data": { "label": "Second Law", "icon": "Shuffle", "description": "Entropy increases." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "rev", "data": { "label": "Reversibility", "icon": "Repeat", "description": "Efficiency limits." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "first", "target": "cp", "animated": true },
+    { "source": "first", "target": "second", "animated": true },
+    { "source": "second", "target": "rev", "animated": true }
+  ]
+}
+```

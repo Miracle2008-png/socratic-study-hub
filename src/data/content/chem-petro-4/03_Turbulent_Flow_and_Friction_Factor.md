@@ -86,3 +86,24 @@ $$f = \frac{0.25}{\left[\log_{10}\!\left(\frac{4.6\times10^{-4}}{3.7} + \frac{5.
 
 **Step 5 — Pressure drop:**
 $$\Delta P = 0.0182 \times \frac{100}{0.1} \times \frac{998 \times 2.55^2}{2} = 18.2 \times 3245 \approx 59{,}000 \, \text{Pa} = 59 \, \text{kPa}$$
+
+## 7. Turbulent Flow & Friction
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "dw", "data": { "label": "Darcy-Weisbach", "icon": "Droplet", "description": "Pressure drop eq." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "lam", "data": { "label": "Laminar f", "icon": "TrendingDown", "description": "f = 64/Re" }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "turb", "data": { "label": "Turbulent f", "icon": "Activity", "description": "Colebrook/Swamee-Jain." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "moody", "data": { "label": "Moody Chart", "icon": "BarChart2", "description": "Visualizes friction factor." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "minor", "data": { "label": "Minor Losses", "icon": "Settings", "description": "Valves & Fittings." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } }
+  ],
+  "edges": [
+    { "source": "dw", "target": "lam", "animated": true },
+    { "source": "dw", "target": "turb", "animated": true },
+    { "source": "turb", "target": "moody", "animated": true },
+    { "source": "moody", "target": "minor", "animated": true }
+  ]
+}
+```

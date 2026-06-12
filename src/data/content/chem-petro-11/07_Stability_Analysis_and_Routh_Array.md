@@ -62,3 +62,22 @@ When you write the characteristic equation with a Proportional Controller ($K_c$
 When you build the Routh Array, the entries in the first column will be algebraic expressions containing $K_c$. 
 By forcing every entry in the first column to be $> 0$, you can solve the inequalities to find the exact maximum stable value for your controller gain! 
 If $K_c$ goes above this limit, your plant will explode. This limit is the **Ultimate Gain ($K_{cu}$)** used in Ziegler-Nichols tuning.
+
+## 4. Stability Evaluation Flow
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "char", "data": { "label": "Characteristic Eq.", "icon": "FunctionSquare", "description": "1 + G_loop = 0" }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "routh", "data": { "label": "Routh Array", "icon": "Grid", "description": "Matrix shortcut to check polynomial roots without solving." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "neg", "data": { "label": "All Positive Col 1", "icon": "CheckCircle", "description": "Stable! Roots are negative, oscillations decay." }, "style": { "background": "#14532d", "color": "#dcfce7" } },
+    { "id": "pos", "data": { "label": "Sign Change in Col 1", "icon": "AlertTriangle", "description": "Unstable! Runaway exponential explosion." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } }
+  ],
+  "edges": [
+    { "source": "char", "target": "routh", "animated": true },
+    { "source": "routh", "target": "neg", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } },
+    { "source": "routh", "target": "pos", "animated": true, "style": { "stroke": "#ef4444", "strokeWidth": 2 } }
+  ]
+}
+```

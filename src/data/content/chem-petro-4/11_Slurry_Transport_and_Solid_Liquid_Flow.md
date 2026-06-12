@@ -89,3 +89,21 @@ $$\dot{W}/L = \Delta P/L \times Q = \frac{\Delta P}{L} \times \frac{\pi D^2}{4} 
 Using Darcy-Weisbach with $f \approx 0.015$ (turbulent, smooth): $\Delta P/L = 0.015 \times \frac{1875 \times 7.3^2}{2 \times 0.3} = 0.015 \times \frac{99{,}913}{0.6} = 2498 \, \text{Pa/m}$
 
 Total pumping power for $L = 100 \, \text{km}$: $P = 2498 \times 10^5 \times \frac{\pi(0.3)^2}{4} \times 7.3 \approx 128 \, \text{MW}$ — typical of a major mineral slurry pipeline.
+
+## 7. Slurry Regimes Overview
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "homo", "data": { "label": "Homogeneous", "icon": "Droplet", "description": "Pseudo-fluid." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "hetero", "data": { "label": "Heterogeneous", "icon": "Layers", "description": "Settling risk." }, "style": { "background": "#4c1d95", "color": "#ede9fe" } },
+    { "id": "vc", "data": { "label": "Critical Velocity", "icon": "Target", "description": "Durand equation." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "wear", "data": { "label": "Wear & Erosion", "icon": "AlertTriangle", "description": "High velocity damage." }, "style": { "background": "#9f1239", "color": "#ffe4e6" } }
+  ],
+  "edges": [
+    { "source": "hetero", "target": "vc", "animated": true },
+    { "source": "vc", "target": "wear", "animated": true }
+  ]
+}
+```

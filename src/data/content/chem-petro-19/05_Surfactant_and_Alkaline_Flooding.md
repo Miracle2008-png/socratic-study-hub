@@ -38,7 +38,7 @@ Instead of buying expensive synthetic soap, you simply pump incredibly cheap, hi
 
 *The Flaw:* Alkaline flooding only works if the crude oil contains a massive amount of natural acids. If it is a light, sweet crude, there are no acids to react with, and the Alkaline water does absolutely nothing.
 
-## 4. ASP Flooding (The Ultimate Synergy)
+4.  **ASP Flooding (The Ultimate Synergy)**
 
 Modern Chemical EOR rarely uses one chemical. It uses all three simultaneously in an **Alkaline-Surfactant-Polymer (ASP) Flood**.
 
@@ -47,3 +47,24 @@ Modern Chemical EOR rarely uses one chemical. It uses all three simultaneously i
 3.  **Polymer:** The entire chemical slug is heavily thickened with Polymer. This ensures the slug moves as a solid wall, preventing it from fingering through the oil and ensuring it contacts every single inch of the reservoir.
 
 ASP is the most complex fluid operation in the world. When engineered perfectly, the rock is left looking like it was scrubbed with bleach, and the recovery factor can exceed 70%.
+
+## 5. The ASP Chemical Synergy Flow
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    { "id": "asp", "data": { "label": "ASP Chemical Slug", "icon": "TestTube", "description": "Highly engineered mixture of 3 distinct chemicals injected into the well." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "alkaline", "data": { "label": "Alkaline Phase", "icon": "ShieldAlert", "description": "Neutralizes rock charge to prevent adsorption and generates in-situ soap." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "surfactant", "data": { "label": "Surfactant Phase", "icon": "Unlock", "description": "Embeds on the oil droplet boundary, completely destroying Interfacial Tension." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "polymer", "data": { "label": "Polymer Phase", "icon": "Maximize", "description": "Thickens the water behind the chemicals to physically push the freed oil as a solid wall." }, "style": { "background": "#3b0764", "color": "#f3e8ff" } },
+    { "id": "swept", "data": { "label": "Rock Bleached Clean", "icon": "CheckCircle", "description": "Up to 70% of the trapped oil is mobilized and recovered." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "asp", "target": "alkaline", "animated": true },
+    { "source": "alkaline", "target": "surfactant", "animated": true },
+    { "source": "surfactant", "target": "polymer", "animated": true },
+    { "source": "polymer", "target": "swept", "animated": true, "style": { "stroke": "#10b981", "strokeWidth": 2 } }
+  ]
+}
+```

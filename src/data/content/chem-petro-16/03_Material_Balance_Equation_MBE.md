@@ -53,3 +53,22 @@ The engineer plots $\frac{F}{E_o}$ on the Y-axis against Time on the X-axis.
 *   The Y-intercept of that perfectly horizontal line is exactly $N$ (the Original Oil In Place). 
 
 If you plot the data and the line is *not* straight (e.g., it curves violently upward), the MBE is screaming at you that your assumptions are wrong. An upward curving line mathematically proves that massive amounts of unknown Water Influx ($W_e$) are secretly flooding into your reservoir from an unknown aquifer, providing extra energy and completely changing your production forecasts.
+
+## 4. The Material Balance Concept
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "prod", "data": { "label": "Surface Production", "icon": "TrendingDown", "description": "Oil, Gas, and Water removed from the ground." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "void", "data": { "label": "Underground Void (F)", "icon": "Box", "description": "The massive empty space created in the rock." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "oil", "data": { "label": "Oil/Gas Expansion", "icon": "Cloud", "description": "Remaining fluids boil and expand as pressure drops." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "water", "data": { "label": "Water Influx (We)", "icon": "Waves", "description": "Aquifer floods in from below to replace the oil." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "prod", "target": "void", "animated": true },
+    { "source": "oil", "target": "void", "animated": true, "label": "Must Equal" },
+    { "source": "water", "target": "void", "animated": true, "label": "Must Equal" }
+  ]
+}
+```

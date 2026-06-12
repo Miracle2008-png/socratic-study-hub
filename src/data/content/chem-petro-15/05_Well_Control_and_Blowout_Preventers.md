@@ -53,3 +53,24 @@ You must "Kill" the well to restore Primary Control.
 2.  They mix a new batch of ultra-heavy mud (the "Kill Mud") in the surface tanks.
 3.  Using a complex system of high-pressure valves (the Choke Manifold) attached to the side of the BOP, they slowly pump the heavy Kill Mud down the inside of the drill pipe while carefully bleeding the explosive gas out through the choke manifold to a flare stack to be safely burned.
 4.  Once the entire wellbore is completely filled with the new, heavy Kill Mud, Primary Control ($P_h > P_p$) is restored. The BOP can be opened, and drilling can safely resume.
+
+## 4. The BOP Stack Hierarchy
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "kick", "data": { "label": "Gas Kick Detected", "icon": "Flame", "description": "Primary Hydrostatic Control has failed." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "annular", "data": { "label": "1. Annular Preventer", "icon": "Target", "description": "Flexible rubber donut squeezes the annulus shut." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "pipe", "data": { "label": "2. Pipe Rams", "icon": "Grid", "description": "Steel blocks clamp directly around the drill pipe." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "blind", "data": { "label": "3. Blind Rams", "icon": "Square", "description": "Seals the well entirely if no pipe is present." }, "style": { "background": "#b45309", "color": "#fef3c7" } },
+    { "id": "shear", "data": { "label": "4. Shear Rams", "icon": "Scissors", "description": "Last resort: physically cuts the pipe and seals the well." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "kick", "target": "annular", "animated": true, "style": { "stroke": "#ef4444" } },
+    { "source": "annular", "target": "pipe" },
+    { "source": "pipe", "target": "blind" },
+    { "source": "blind", "target": "shear", "style": { "stroke": "#ef4444", "strokeWidth": 2 } }
+  ]
+}
+```

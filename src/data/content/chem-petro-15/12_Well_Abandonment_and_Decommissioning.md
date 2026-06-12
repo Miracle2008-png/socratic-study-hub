@@ -43,3 +43,22 @@ Plugging a well on land costs roughly \$50,000. Decommissioning an offshore plat
 *   After the subsea wells are plugged with cement by robotic submarines, the massive steel production platform itself must be removed from the ocean.
 *   Massive, custom-built heavy-lift crane ships (the largest vessels on Earth) are brought in. They physically slice the thousands of tons of steel legs off at the sea floor, lift the entire massive platform out of the water, and carry it to shore to be chopped up and recycled.
 *   *Rigs-to-Reefs:* Sometimes, rather than hauling the steel to shore, governments allow companies to chop the legs off and intentionally topple the massive steel structures onto their sides on the ocean floor. The complex steel beams create world-class artificial reefs, instantly becoming thriving habitats for massive populations of coral, fish, and marine life.
+
+## 5. The Plug & Abandonment (P&A) Sequence
+
+```diagram
+{
+  "direction": "TB",
+  "nodes": [
+    { "id": "pull", "data": { "label": "1. Remove Equipment", "icon": "ArrowUpCircle", "description": "Pull all production tubing and rods out of the well." }, "style": { "background": "#451a03", "color": "#fef3c7" } },
+    { "id": "squeeze", "data": { "label": "2. Squeeze Perforations", "icon": "Target", "description": "Violently inject liquid cement deep into the rock." }, "style": { "background": "#7f1d1d", "color": "#fee2e2" } },
+    { "id": "plugs", "data": { "label": "3. Intermediate Plugs", "icon": "Shield", "description": "Set massive cement blocks to protect freshwater aquifers." }, "style": { "background": "#1e3a8a", "color": "#dbeafe" } },
+    { "id": "cap", "data": { "label": "4. Surface Cap & Cut", "icon": "XCircle", "description": "Cut casing 3 ft below ground and weld a steel plate." }, "style": { "background": "#14532d", "color": "#dcfce7" } }
+  ],
+  "edges": [
+    { "source": "pull", "target": "squeeze", "animated": true },
+    { "source": "squeeze", "target": "plugs", "animated": true },
+    { "source": "plugs", "target": "cap", "animated": true, "style": { "stroke": "#ef4444", "strokeWidth": 2 } }
+  ]
+}
+```
