@@ -1,67 +1,76 @@
 # Partial Derivatives
 
-If $z = f(x, y)$ represents a 3D surface, how do we find its slope? A 3D surface doesn't have a single "slope." It tilts differently depending on which direction you walk.
+When analyzing a 1D curve $y = f(x)$, the derivative $\frac{dy}{dx}$ gives us a single, unambiguous slope at any point. But if $z = f(x, y)$ represents a 3D surface—like the topology of a mountain or the thermal gradient of an aerospace component—how do we find its slope? 
 
-The **partial derivatives** tell you the slope of the surface if you walk purely in the x-direction, or purely in the y-direction.
+A 3D surface doesn't have one single "slope." If you stand on the side of a mountain, the steepness depends entirely on which direction you face. **Partial derivatives** allow us to isolate variables, determining the exact slope of the surface if you walk purely along the x-axis (East-West) or purely along the y-axis (North-South).
 
 ## 1. Definition and Notation
 
-To find the partial derivative with respect to $x$ (denoted $f_x$ or $\frac{\partial f}{\partial x}$), we treat $y$ as a constant and differentiate $f$ using standard rules.
-Geometrically, this is the slope of the tangent line to the surface if we slice the surface with a plane parallel to the xz-plane.
+To calculate the partial derivative with respect to $x$ (denoted $f_x$ or $\frac{\partial f}{\partial x}$), we treat $y$ as a rigid constant and differentiate $f$ using standard derivative rules. Geometrically, you are slicing the 3D surface with a plane parallel to the xz-plane, yielding a 1D curve, and finding the tangent to that curve.
 
-To find the partial derivative with respect to $y$ (denoted $f_y$ or $\frac{\partial f}{\partial y}$), we treat $x$ as a constant and differentiate $f$ with respect to $y$.
+Conversely, to find the partial derivative with respect to $y$ (denoted $f_y$ or $\frac{\partial f}{\partial y}$), we lock $x$ as a constant and differentiate with respect to $y$.
 
-**Notation:**
-*   With respect to x: $f_x(x,y) = \frac{\partial f}{\partial x} = \frac{\partial z}{\partial x}$
-*   With respect to y: $f_y(x,y) = \frac{\partial f}{\partial y} = \frac{\partial z}{\partial y}$
+**Notation Guide:**
+*   Slope in the x-direction: $f_x(x,y) = \frac{\partial f}{\partial x} = \frac{\partial z}{\partial x}$
+*   Slope in the y-direction: $f_y(x,y) = \frac{\partial f}{\partial y} = \frac{\partial z}{\partial y}$
 
-*(Note the use of the curly $\partial$, called "del" or "partial", distinguishing it from the straight $d$ used for ordinary derivatives).*
+*(Note the curly $\partial$ symbol, known as "del" or "partial", which distinguishes it from the straight $d$ used for ordinary, single-variable derivatives).*
 
-## 2. Calculating Partial Derivatives
+In engineering mechanics, partial derivatives are the building blocks of **Stress Tensors** ($\sigma_{ij}$) and **Strain Tensors** ($\varepsilon_{ij}$). For example, normal strain in the x-direction is defined as $\varepsilon_{xx} = \frac{\partial u}{\partial x}$, where $u$ is displacement.
 
-*Example:* Let $f(x, y) = x^3 y^2 + 4x - 5y^3 + \sin(xy)$.
+## 2. Calculating First-Order Partials
 
-**Find $f_x$:** Treat all $y$'s as if they were constants (like 5 or $\pi$).
-*   The derivative of $x^3 y^2$ with respect to $x$ is $3x^2 \cdot y^2$. (The $y^2$ just acts as a constant multiplier).
-*   The derivative of $4x$ is 4.
-*   The derivative of $-5y^3$ with respect to $x$ is 0. (It's a constant).
-*   The derivative of $\sin(xy)$ with respect to $x$ is $\cos(xy) \cdot y$. (Chain rule, $y$ is the constant multiplier inside).
+### Example 1: Basic Thermodynamic Equation (Easy)
+The Van der Waals equation of state for a real gas can be rearranged for pressure: $P(V, T) = \frac{RT}{V - b} - \frac{a}{V^2}$. 
+**Problem:** Find the rate of change of pressure with respect to volume, assuming temperature is held constant ($\frac{\partial P}{\partial V}$).
+**Solution:**
+1. Treat $T$ (and constants $R, a, b$) as fixed constants.
+2. Apply the power rule to the $V$ terms:
+   $$ P = RT(V - b)^{-1} - aV^{-2} $$
+   $$ \frac{\partial P}{\partial V} = -RT(V - b)^{-2} - a(-2)V^{-3} $$
+   $$ \frac{\partial P}{\partial V} = -\frac{RT}{(V - b)^2} + \frac{2a}{V^3} $$
+This partial derivative is critical for determining the isothermal compressibility of the gas.
+
+### Example 2: Multivariable Gradient (Medium)
+**Problem:** Let a magnetic scalar potential be $f(x, y) = x^3 y^2 + 4x - 5y^3 + \sin(xy)$. Find both $f_x$ and $f_y$.
+**Solution:**
+**Find $f_x$:** Treat all $y$'s as constants (like the number 5 or $\pi$).
+*   Derivative of $x^3 y^2 \to 3x^2 \cdot y^2$. ($y^2$ acts as a constant multiplier).
+*   Derivative of $4x \to 4$.
+*   Derivative of $-5y^3 \to 0$. (It is entirely constant with respect to x).
+*   Derivative of $\sin(xy) \to y\cos(xy)$. (Chain rule: derivative of inside is $y$).
 $$ f_x(x,y) = 3x^2y^2 + 4 + y\cos(xy) $$
 
 **Find $f_y$:** Treat all $x$'s as constants.
-*   The derivative of $x^3 y^2$ with respect to $y$ is $x^3 \cdot 2y$.
-*   The derivative of $4x$ is 0.
-*   The derivative of $-5y^3$ is $-15y^2$.
-*   The derivative of $\sin(xy)$ with respect to $y$ is $\cos(xy) \cdot x$.
+*   Derivative of $x^3 y^2 \to x^3 \cdot 2y$.
+*   Derivative of $4x \to 0$.
+*   Derivative of $-5y^3 \to -15y^2$.
+*   Derivative of $\sin(xy) \to x\cos(xy)$.
 $$ f_y(x,y) = 2x^3y - 15y^2 + x\cos(xy) $$
 
-## 3. Higher-Order Partial Derivatives
+## 3. Higher-Order Partial Derivatives and Clairaut's Theorem
 
-Just as you can take the second derivative in 1D, you can take second partial derivatives. Since $f_x$ is itself a function of $x$ and $y$, you can differentiate it again with respect to $x$, or with respect to $y$.
+Since $f_x$ is itself a function of $x$ and $y$, you can differentiate it again. This yields second-order partial derivatives. For a function of two variables, there are four possibilities:
+1.  **$f_{xx}$** ($\frac{\partial^2 f}{\partial x^2}$): Differentiate w.r.t x, then x again. (Concavity in x-direction).
+2.  **$f_{yy}$** ($\frac{\partial^2 f}{\partial y^2}$): Differentiate w.r.t y, then y again. (Concavity in y-direction).
+3.  **$f_{xy}$** ($\frac{\partial^2 f}{\partial x \partial y}$): Differentiate w.r.t x, then y. (Mixed partial).
+4.  **$f_{yx}$** ($\frac{\partial^2 f}{\partial y \partial x}$): Differentiate w.r.t y, then x. (Mixed partial).
 
-There are four second-order partial derivatives for a function of two variables:
-1.  **$f_{xx}$** or $\frac{\partial^2 f}{\partial x^2}$: Differentiate with respect to x, then x again.
-2.  **$f_{yy}$** or $\frac{\partial^2 f}{\partial y^2}$: Differentiate with respect to y, then y again.
-3.  **$f_{xy}$** or $\frac{\partial^2 f}{\partial x \partial y}$: Differentiate with respect to x, then y.
-4.  **$f_{yx}$** or $\frac{\partial^2 f}{\partial y \partial x}$: Differentiate with respect to y, then x.
+**Clairaut's Theorem (Symmetry of Mixed Partials):** If the functions $f_{xy}$ and $f_{yx}$ are continuous on a domain, then $f_{xy} = f_{yx}$. The order of differentiation does not matter! This mathematical elegance is the exact reason why **conservative vector fields** exist in physics, allowing us to define potential energy functions for gravity and electrostatics.
 
-## 4. Clairaut's Theorem (Symmetry of Mixed Partials)
-
-If you calculate $f_{xy}$ and $f_{yx}$ for most well-behaved functions, you will notice something magical: they are identical.
-
-**Clairaut's Theorem:** If the functions $f_{xy}$ and $f_{yx}$ are both continuous on a disk containing $(a,b)$, then:
-$$ f_{xy}(a,b) = f_{yx}(a,b) $$
-
-The order of differentiation does not matter for mixed partials! This saves a tremendous amount of calculation time in engineering problems, and it is the fundamental reason why conservative vector fields exist in physics.
-
-## 5. Partial Differential Equations (PDEs)
-
-Equations that relate the partial derivatives of an unknown function are called PDEs. They govern almost all physical phenomena in multiple dimensions.
-
-*   **Laplace's Equation:** $f_{xx} + f_{yy} = 0$. (Governs steady-state heat flow, electrostatics, irrotational fluid flow). Functions that satisfy this are called *harmonic functions*.
-*   **The Wave Equation:** $u_{tt} = c^2 (u_{xx} + u_{yy})$. (Governs the vibration of a drumhead, electromagnetic waves).
-*   **The Heat Equation:** $u_t = \alpha (u_{xx} + u_{yy})$. (Governs how temperature spreads over time).
-
+### Example 3: Verifying Laplace's Equation (Hard)
+Partial Differential Equations (PDEs) govern almost all multi-dimensional physics. **Laplace's Equation** in 2D is given by $f_{xx} + f_{yy} = 0$. Functions that satisfy this equation are called *harmonic functions* and represent steady-state heat flow or irrotational fluid flow.
+**Problem:** Prove that the steady-state temperature distribution $T(x,y) = e^x \cos(y)$ satisfies Laplace's Equation.
+**Solution:**
+1. Find first partials:
+   $$ T_x = e^x \cos(y) $$
+   $$ T_y = -e^x \sin(y) $$
+2. Find second unmixed partials:
+   $$ T_{xx} = \frac{\partial}{\partial x}(e^x \cos(y)) = e^x \cos(y) $$
+   $$ T_{yy} = \frac{\partial}{\partial y}(-e^x \sin(y)) = -e^x \cos(y) $$
+3. Check Laplace's Equation:
+   $$ T_{xx} + T_{yy} = e^x \cos(y) + (-e^x \cos(y)) = 0 $$
+Since the sum is exactly 0, the distribution $T(x,y)$ is harmonic and represents a physically valid steady-state thermal system.
 
 ```diagram
 {
@@ -72,7 +81,7 @@ Equations that relate the partial derivatives of an unknown function are called 
       "data": {
         "label": "Partial Derivatives",
         "icon": "BrainCircuit",
-        "description": "Topic: Partial Derivatives"
+        "description": "Multi-dimensional rates of change."
       },
       "style": {
         "background": "#1e3a8a",
@@ -82,9 +91,9 @@ Equations that relate the partial derivatives of an unknown function are called 
     {
       "id": "2",
       "data": {
-        "label": "Partial Derivative (∂f/∂x)",
+        "label": "First-Order Partials",
         "icon": "FunctionSquare",
-        "description": "Holding other variables constant while differentiating."
+        "description": "Slopes along specific axes (fx, fy)."
       },
       "style": {
         "background": "#4c1d95",
@@ -94,9 +103,9 @@ Equations that relate the partial derivatives of an unknown function are called 
     {
       "id": "3",
       "data": {
-        "label": "Gradient Vector (∇f)",
-        "icon": "Sigma",
-        "description": "Vector pointing in the direction of steepest ascent."
+        "label": "Higher-Order Partials",
+        "icon": "Layers",
+        "description": "Curvature and mixed derivatives."
       },
       "style": {
         "background": "#b45309",
@@ -106,9 +115,9 @@ Equations that relate the partial derivatives of an unknown function are called 
     {
       "id": "4",
       "data": {
-        "label": "Directional Derivative",
-        "icon": "Activity",
-        "description": "Rate of change in a specific unit vector direction."
+        "label": "Clairaut's Theorem",
+        "icon": "Repeat",
+        "description": "Symmetry: fxy = fyx."
       },
       "style": {
         "background": "#14532d",
@@ -118,25 +127,13 @@ Equations that relate the partial derivatives of an unknown function are called 
     {
       "id": "5",
       "data": {
-        "label": "Tangent Planes",
-        "icon": "Layers",
-        "description": "Linear approximation of a surface at a specific point."
+        "label": "PDEs",
+        "icon": "Activity",
+        "description": "Laplace, Heat, and Wave Equations."
       },
       "style": {
         "background": "#7f1d1d",
         "color": "#fee2e2"
-      }
-    },
-    {
-      "id": "6",
-      "data": {
-        "label": "Optimization (Lagrange)",
-        "icon": "Target",
-        "description": "Finding local maxima/minima using critical points & multipliers."
-      },
-      "style": {
-        "background": "#0f766e",
-        "color": "#ccfbf1"
       }
     }
   ],
@@ -157,13 +154,8 @@ Equations that relate the partial derivatives of an unknown function are called 
       "animated": true
     },
     {
-      "source": "4",
+      "source": "3",
       "target": "5",
-      "animated": true
-    },
-    {
-      "source": "5",
-      "target": "6",
       "animated": true
     }
   ]
