@@ -1,39 +1,167 @@
 # 7. Introduction to Triple Integrals
 
-We are now ready to extend integration into three dimensions. 
+## From Two Dimensions to Three
 
-Just as a double integral computes the 2D sum of $f(x,y)$ over a region $R$, a **triple integral** computes the 3D sum of $f(x,y,z)$ over a solid volume $E$.
+In previous chapters, we mastered the double integral — the tool for summing a function's values over a 2D region $R$. Now we make the natural and necessary jump to **three dimensions**. The triple integral allows engineers to compute cumulative physical quantities distributed throughout a volume, not just across a surface.
+
+Consider a massive steel turbine blade in an aircraft engine. Its density is not uniform — it varies from point to point due to cooling channels and composite reinforcements. To find the total mass, you cannot simply multiply a single density value by the volume. You must integrate the density function $\rho(x,y,z)$ over every infinitesimal cubic element $dV$ within the blade's volume. This is precisely what the triple integral accomplishes.
 
 ### Mathematical Definition
-If $E$ is a closed, bounded solid region in 3D space, we divide it into tiny rectangular boxes of volume $\Delta V = \Delta x \Delta y \Delta z$. The triple integral is defined as the limit of the Riemann sum over these boxes:
 
-$$ \iiint_E f(x,y,z) dV = \lim_{l,m,n \to \infty} \sum_{i=1}^{l} \sum_{j=1}^{m} \sum_{k=1}^{n} f(x_i^*, y_j^*, z_k^*) \Delta V $$
+If $E$ is a closed, bounded solid region in 3D space, we partition it into tiny rectangular boxes of volume $\Delta V = \Delta x \, \Delta y \, \Delta z$. We pick a sample point $(x_i^*, y_j^*, z_k^*)$ in each box, evaluate $f$ there, multiply by the box's volume, and sum over all boxes. The triple integral is the limit of this Riemann sum as the partitions are made arbitrarily fine:
 
-### What does a Triple Integral represent?
-Because the input function $f$ has 3 dimensions, and the integration volume $dV$ has 3 dimensions, the mathematical result is effectively 4-dimensional! 
-Because we cannot visualize 4D space, we rely on physical interpretations:
+$$
+\iiint_E f(x,y,z) \, dV = \lim_{l,m,n \to \infty} \sum_{i=1}^{l} \sum_{j=1}^{m} \sum_{k=1}^{n} f(x_i^*, y_j^*, z_k^*) \, \Delta V
+$$
 
-1.  **Mass of a 3D Object:** If $f(x,y,z)$ is a volume density function $\rho(x,y,z)$ (e.g., density of the Earth varies from crust to core), the triple integral gives the total mass of the object.
-    $$ m = \iiint_E \rho(x,y,z) dV $$
-2.  **Total Charge:** If $f(x,y,z)$ represents the charge density in a cloud of gas, the integral gives the total electrical charge.
-3.  **Volume:** If $f(x,y,z) = 1$ everywhere inside $E$, the "4th dimension" collapses, and the integral simply computes the 3D volume of the solid.
-    $$ V = \iiint_E 1 \, dV $$
+Because the integrand $f$ is a scalar and $dV$ has units of volume, the result is a 4D quantity with units of $[f] \times [\text{volume}]$. We make physical sense of this through interpretation.
 
-### Triple Integrals over Rectangular Boxes
-The simplest 3D region is a rectangular box $B = [a,b] \times [c,d] \times [r,s]$.
-*   $a \le x \le b$
-*   $c \le y \le d$
-*   $r \le z \le s$
+---
 
-Thanks to Fubini's Theorem for Triple Integrals, we can set this up as an iterated integral in any of the $3! = 6$ possible orders ($dx\,dy\,dz$, $dy\,dx\,dz$, $dz\,dy\,dx$, etc.).
+## Physical Interpretations
 
-$$ \iiint_B f(x,y,z) dV = \int_{r}^{s} \int_{c}^{d} \int_{a}^{b} f(x,y,z) dx \, dy \, dz $$
+Since we cannot visualize a 4D result, the triple integral earns its meaning through physics:
 
-To evaluate, simply work from the inside out:
-1.  Integrate the innermost integral with respect to $x$ (treat $y,z$ as constants).
-2.  Integrate the middle integral with respect to $y$ (treat $z$ as constant).
-3.  Integrate the outermost integral with respect to $z$.
+### 1. Mass of a 3D Solid
+If $\rho(x,y,z)$ is the volumetric mass density (kg/m³) at each point of solid $E$:
+$$
+m = \iiint_E \rho(x,y,z) \, dV
+$$
+**Engineering Context:** The density of Earth's crust varies radially. The density of a turbine disc varies radially due to heat treatment. The density of a concrete dam varies due to rebar embedment. The triple integral handles all of these.
 
+### 2. Total Electric Charge
+If $\rho_q(x,y,z)$ is the charge density (C/m³) inside a semiconductor or plasma:
+$$
+Q = \iiint_E \rho_q(x,y,z) \, dV
+$$
+
+### 3. Volume Computation
+The simplest case: if $f(x,y,z) = 1$, the fourth dimension collapses and we recover pure 3D volume:
+$$
+V = \iiint_E 1 \, dV
+$$
+
+### 4. Average Value
+The average value of a function over a solid region $E$:
+$$
+f_{\text{avg}} = \frac{1}{V} \iiint_E f(x,y,z) \, dV
+$$
+**Engineering Context:** The average temperature inside a nuclear reactor core, the average stress inside a loaded beam, or the average chemical concentration inside a reaction vessel.
+
+---
+
+## Triple Integrals over Rectangular Boxes — Fubini's Theorem
+
+The simplest solid region is a rectangular box:
+$$
+B = [a,b] \times [c,d] \times [r,s] \implies a \le x \le b, \quad c \le y \le d, \quad r \le z \le s
+$$
+
+**Fubini's Theorem** (for triple integrals) states that if $f$ is continuous on $B$, the triple integral equals an iterated integral that may be evaluated in any of the $3! = 6$ possible orders:
+
+$$
+\iiint_B f(x,y,z) \, dV = \int_{r}^{s} \int_{c}^{d} \int_{a}^{b} f(x,y,z) \, dx \, dy \, dz
+$$
+
+**Evaluation Strategy (working from inside out):**
+1. **Innermost integral** — Integrate with respect to $x$; treat $y$ and $z$ as constants. Result is a function of $(y,z)$.
+2. **Middle integral** — Integrate with respect to $y$; treat $z$ as a constant. Result is a function of $z$ only.
+3. **Outermost integral** — Integrate with respect to $z$. Result is a scalar.
+
+---
+
+## Worked Examples
+
+### Example 1 — Easy: Basic Rectangular Box
+
+**Problem:** Evaluate $\displaystyle\iiint_B xyz \, dV$, where $B = [0,1] \times [0,2] \times [0,3]$.
+
+**Setup:**
+$$
+I = \int_{0}^{3} \int_{0}^{2} \int_{0}^{1} xyz \, dx \, dy \, dz
+$$
+
+**Inner integral ($dx$):**
+$$
+\int_{0}^{1} xyz \, dx = yz \left[\frac{x^2}{2}\right]_0^1 = \frac{yz}{2}
+$$
+
+**Middle integral ($dy$):**
+$$
+\int_{0}^{2} \frac{yz}{2} \, dy = \frac{z}{2} \left[\frac{y^2}{2}\right]_0^2 = \frac{z}{2} \cdot 2 = z
+$$
+
+**Outer integral ($dz$):**
+$$
+\int_{0}^{3} z \, dz = \left[\frac{z^2}{2}\right]_0^3 = \frac{9}{2}
+$$
+
+$$\boxed{I = \frac{9}{2}}$$
+
+---
+
+### Example 2 — Medium: Average Temperature in a Furnace Chamber
+
+**Problem:** A rectangular furnace chamber occupies the box $B = [0,2] \times [0,1] \times [0,1]$ (units in metres). The temperature distribution (in °C) inside is $T(x,y,z) = 200 + 50xy + 30z$. Find the average temperature in the chamber.
+
+**Total Volume:** $V = 2 \times 1 \times 1 = 2 \text{ m}^3$
+
+**Total "heat content":**
+$$
+\iiint_B T \, dV = \int_0^1 \int_0^1 \int_0^2 (200 + 50xy + 30z) \, dx \, dy \, dz
+$$
+
+**Inner ($dx$):**
+$$
+\int_0^2 (200 + 50xy + 30z) \, dx = \left[200x + 25x^2 y + 30xz\right]_0^2 = 400 + 100y + 60z
+$$
+
+**Middle ($dy$):**
+$$
+\int_0^1 (400 + 100y + 60z) \, dy = \left[400y + 50y^2 + 60yz\right]_0^1 = 400 + 50 + 60z = 450 + 60z
+$$
+
+**Outer ($dz$):**
+$$
+\int_0^1 (450 + 60z) \, dz = \left[450z + 30z^2\right]_0^1 = 480
+$$
+
+**Average temperature:**
+$$
+\boxed{T_{\text{avg}} = \frac{480}{2} = 240 \, ^\circ\text{C}}
+$$
+
+---
+
+### Example 3 — Hard: Mass of a Non-Uniform Rectangular Solid
+
+**Problem:** An alloy block occupies $B = [0,1] \times [0,1] \times [0,1]$ (in cm). Its density varies as $\rho(x,y,z) = 8000(1 + x + y + z)$ kg/m³ (note: 8000 kg/m³ is typical for steel-like alloys). Find the total mass.
+
+$$
+m = \iiint_B \rho(x,y,z) \, dV = 8000 \int_0^1 \int_0^1 \int_0^1 (1 + x + y + z) \, dx \, dy \, dz
+$$
+
+**Inner ($dx$):**
+$$
+\int_0^1 (1 + x + y + z) \, dx = \left[x + \frac{x^2}{2} + xy + xz\right]_0^1 = 1 + \frac{1}{2} + y + z = \frac{3}{2} + y + z
+$$
+
+**Middle ($dy$):**
+$$
+\int_0^1 \left(\frac{3}{2} + y + z\right) dy = \left[\frac{3}{2}y + \frac{y^2}{2} + yz\right]_0^1 = \frac{3}{2} + \frac{1}{2} + z = 2 + z
+$$
+
+**Outer ($dz$):**
+$$
+\int_0^1 (2 + z) \, dz = \left[2z + \frac{z^2}{2}\right]_0^1 = 2 + \frac{1}{2} = \frac{5}{2}
+$$
+
+The block has a volume of $(0.01)^3 = 10^{-6}$ m³. Converting the integral from units of cm³ to m³:
+$$
+\boxed{m = 8000 \times \frac{5}{2} \times 10^{-6} = 0.02 \text{ kg} = 20 \text{ g}}
+$$
+
+---
 
 ```diagram
 {
@@ -42,9 +170,9 @@ To evaluate, simply work from the inside out:
     {
       "id": "1",
       "data": {
-        "label": "Intro Triple Integrals",
+        "label": "Triple Integrals",
         "icon": "BrainCircuit",
-        "description": "Topic: Intro Triple Integrals"
+        "description": "Summing f(x,y,z) over a 3D solid E — the generalization of double integrals to volume."
       },
       "style": {
         "background": "#1e3a8a",
@@ -54,9 +182,9 @@ To evaluate, simply work from the inside out:
     {
       "id": "2",
       "data": {
-        "label": "Double Integrals",
+        "label": "From Double Integrals",
         "icon": "FunctionSquare",
-        "description": "Integrating over 2D regions (Area/Volume)."
+        "description": "Natural extension: 2D region → 3D solid. dA becomes dV = dx dy dz."
       },
       "style": {
         "background": "#4c1d95",
@@ -68,7 +196,7 @@ To evaluate, simply work from the inside out:
       "data": {
         "label": "Fubini's Theorem",
         "icon": "Sigma",
-        "description": "Evaluating via iterated single integrals."
+        "description": "Continuous f on box B: evaluate as 3 nested single integrals in any of 6 orders."
       },
       "style": {
         "background": "#b45309",
@@ -78,9 +206,9 @@ To evaluate, simply work from the inside out:
     {
       "id": "4",
       "data": {
-        "label": "Polar Coordinates (r, θ)",
+        "label": "Physical Interpretations",
         "icon": "Activity",
-        "description": "Jacobian transformation: dx dy = r dr dθ."
+        "description": "Mass (ρ·dV), Total charge, Volume (f=1), Average value of any physical field."
       },
       "style": {
         "background": "#14532d",
@@ -90,9 +218,9 @@ To evaluate, simply work from the inside out:
     {
       "id": "5",
       "data": {
-        "label": "Triple Integrals",
+        "label": "Rectangular Box Setup",
         "icon": "Layers",
-        "description": "Integrating over 3D volumes (Mass/Density)."
+        "description": "Simplest region: constant limits. Evaluate innermost first, work outward step-by-step."
       },
       "style": {
         "background": "#7f1d1d",
@@ -102,9 +230,9 @@ To evaluate, simply work from the inside out:
     {
       "id": "6",
       "data": {
-        "label": "Cylindrical & Spherical",
+        "label": "Advanced: Cylindrical & Spherical",
         "icon": "Target",
-        "description": "Advanced coordinate transformations for symmetric regions."
+        "description": "For symmetric solids, change coordinates for simpler limits and cleaner evaluation."
       },
       "style": {
         "background": "#0f766e",

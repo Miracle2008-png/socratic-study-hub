@@ -1,47 +1,92 @@
 # 2. Double Integrals over Rectangular Regions
 
-To evaluate a double integral, we convert it into an **Iterated Integral**—two standard, single-variable integrals nested inside one another.
+To practically evaluate a double integral $\iint_R f(x,y) \, dA$, we cannot simply rely on the limit of Riemann sums. Instead, we convert it into an **Iterated Integral**—two standard, single-variable integrals nested inside one another.
 
-We begin with the simplest 2D domain: a rectangular region defined by constant boundaries. Let $R = [a, b] \times [c, d]$, which means:
+We begin our computational journey with the simplest 2D domain: a rectangular region defined by constant boundaries along both axes. Let $R = [a, b] \times [c, d]$, which means our 2D region is bounded by:
 *   $a \le x \le b$
 *   $c \le y \le d$
 
 ### Fubini's Theorem
-Fubini's Theorem states that if $f(x, y)$ is continuous on a rectangle $R$, then the double integral can be evaluated as an iterated integral in *either* order:
 
-$$ \iint_R f(x,y) dA = \int_{c}^{d} \left[ \int_{a}^{b} f(x,y) dx \right] dy = \int_{a}^{b} \left[ \int_{c}^{d} f(x,y) dy \right] dx $$
+The cornerstone of multivariable integration is **Fubini's Theorem**. It states that if a function $f(x, y)$ is continuous on a rectangular region $R$, then the double integral can be evaluated exactly as an iterated integral. Furthermore, the order of integration does not matter! You can integrate with respect to $x$ first, or $y$ first, and you will get the identical result:
+
+$$ \iint_R f(x,y) \, dA = \int_{c}^{d} \left[ \int_{a}^{b} f(x,y) \, dx \right] \, dy = \int_{a}^{b} \left[ \int_{c}^{d} f(x,y) \, dy \right] \, dx $$
 
 **Crucial Note on Order of Integration:** 
-*   If $dx$ is on the inside, you must integrate with respect to $x$ first (treating $y$ as a constant), and evaluate using the $x$-limits ($a$ to $b$).
-*   If $dy$ is on the inside, you must integrate with respect to $y$ first (treating $x$ as a constant), and evaluate using the $y$-limits ($c$ to $d$).
+*   **Outside to Outside, Inside to Inside:** The inner differential matches the inner integral limits. The outer differential matches the outer integral limits.
+*   If $dx$ is on the inside ($\int \int f(x,y) \, dx \, dy$), you must integrate with respect to $x$ first, treating $y$ as a constant. You then evaluate using the $x$-limits ($a$ to $b$).
+*   If $dy$ is on the inside ($\int \int f(x,y) \, dy \, dx$), you integrate with respect to $y$ first, treating $x$ as a constant.
 
-### Worked Example: Integrating $dx$ first
-**Problem:** Evaluate $\iint_R (2x^2 y + 3y^2) dA$ where $R$ is the rectangle $1 \le x \le 2$ and $0 \le y \le 3$.
+### Engineering Applications over Rectangular Regions
 
-**Solution:**
-Set up the iterated integral. Let's choose the order $dx\,dy$:
-$$ I = \int_{0}^{3} \int_{1}^{2} (2x^2 y + 3y^2) dx \, dy $$
+Rectangular bounds often occur when modeling flat plates, digital pixel matrices, and uniform electromagnetic fields crossing a rectangular cross-section. 
 
-**Step 1: The Inner Integral (with respect to $x$)**
-Treat $y$ as a constant.
-$$ \int_{1}^{2} (2x^2 y + 3y^2) dx = \left[ \frac{2}{3}x^3 y + 3xy^2 \right]_{x=1}^{x=2} $$
-Plug in the upper limit $x=2$:
-$$ \left( \frac{2}{3}(8)y + 3(2)y^2 \right) = \frac{16}{3}y + 6y^2 $$
-Subtract the lower limit $x=1$:
-$$ \left( \frac{2}{3}(1)y + 3(1)y^2 \right) = \frac{2}{3}y + 3y^2 $$
-Result of the inner integral:
-$$ \left( \frac{16}{3}y + 6y^2 \right) - \left( \frac{2}{3}y + 3y^2 \right) = \frac{14}{3}y + 3y^2 $$
+For example, computing the magnetic flux $\Phi$ passing through a rectangular loop of wire in the xy-plane from a spatially varying magnetic field $\vec{B}(x,y) = B_z(x,y)\hat{k}$ is exactly a double integral:
+$$ \Phi = \iint_{\text{Loop}} B_z(x,y) \, dA $$
+If the loop is aligned with the axes, Fubini's theorem gives us a straight-forward iterated integral.
 
-**Step 2: The Outer Integral (with respect to $y$)**
-Take the result from Step 1 and integrate it with respect to $y$:
-$$ I = \int_{0}^{3} \left( \frac{14}{3}y + 3y^2 \right) dy $$
-$$ I = \left[ \frac{7}{3}y^2 + y^3 \right]_{0}^{3} $$
-Plug in $y=3$:
-$$ I = \frac{7}{3}(9) + (27) = 21 + 27 = 48 $$
-Since the lower limit is $0$, the final answer is **48**.
+---
 
-*(Note: Had we chosen the order $dy\,dx$, we would have performed the $y$ integration first from 0 to 3, then the $x$ integration from 1 to 2, and achieved exactly 48).*
+### Step-by-Step Examples
 
+#### Example 1 (Easy): Separable Functions
+**Problem:** Calculate the integral of a separable function $f(x,y) = e^x \cos(y)$ over the rectangle $R = [0, 1] \times [0, \pi/2]$.
+
+**Step-by-Step Solution:**
+1.  **Set up the integral:**
+    $$ I = \int_{0}^{1} \int_{0}^{\pi/2} e^x \cos(y) \, dy \, dx $$
+2.  **Inner integral (with respect to $y$):** Treat $e^x$ as a constant multiplier.
+    $$ \int_{0}^{\pi/2} e^x \cos(y) \, dy = e^x \left[ \sin(y) \right]_{0}^{\pi/2} $$
+    $$ = e^x (\sin(\pi/2) - \sin(0)) = e^x (1 - 0) = e^x $$
+3.  **Outer integral (with respect to $x$):**
+    $$ I = \int_{0}^{1} e^x \, dx = \left[ e^x \right]_{0}^{1} = e^1 - e^0 = e - 1 $$
+**Conclusion:** The value of the integral is $e - 1$. 
+*(Note: For separable functions $f(x)g(y)$ over rectangular domains, you can multiply the integrals: $\int e^x dx \times \int \cos(y) dy$.)*
+
+#### Example 2 (Medium): Work and Heat Flow
+**Problem:** A rectangular metal sheet occupying $0 \le x \le 2$ and $1 \le y \le 3$ has a heat generation rate given by $q(x,y) = 2x^2 y + 3y^2$ (in Watts per $m^2$). Find the total heat $H$ generated by the sheet.
+
+**Step-by-Step Solution:**
+1.  **Set up the integral:** We choose the order $dx\,dy$:
+    $$ H = \int_{1}^{3} \int_{0}^{2} (2x^2 y + 3y^2) \, dx \, dy $$
+2.  **The Inner Integral (with respect to $x$):** Treat $y$ as a constant.
+    $$ \int_{0}^{2} (2x^2 y + 3y^2) \, dx = \left[ \frac{2}{3}x^3 y + 3xy^2 \right]_{x=0}^{x=2} $$
+    Plug in $x=2$:
+    $$ \left( \frac{2}{3}(8)y + 3(2)y^2 \right) = \frac{16}{3}y + 6y^2 $$
+    The lower limit $x=0$ yields $0$. So the result is $\frac{16}{3}y + 6y^2$.
+3.  **The Outer Integral (with respect to $y$):**
+    $$ H = \int_{1}^{3} \left( \frac{16}{3}y + 6y^2 \right) \, dy $$
+    $$ H = \left[ \frac{16}{6}y^2 + \frac{6}{3}y^3 \right]_{1}^{3} = \left[ \frac{8}{3}y^2 + 2y^3 \right]_{1}^{3} $$
+    Plug in $y=3$:
+    $$ \frac{8}{3}(9) + 2(27) = 24 + 54 = 78 $$
+    Plug in $y=1$:
+    $$ \frac{8}{3}(1) + 2(1) = \frac{8}{3} + 2 = \frac{14}{3} $$
+    Subtract lower from upper:
+    $$ H = 78 - \frac{14}{3} = \frac{234 - 14}{3} = \frac{220}{3} $$
+**Conclusion:** The total heat generated is $\frac{220}{3}$ Watts.
+
+#### Example 3 (Hard): Integration by Parts in 2D
+**Problem:** Evaluate $\iint_R x y e^{xy^2} \, dA$ where $R = [0, 2] \times [0, 1]$. Choose the order of integration wisely!
+
+**Step-by-Step Solution:**
+1.  **Analyze the integrand:** We must choose between integrating $x y e^{xy^2}$ with respect to $x$ first, or $y$ first.
+    *   If we integrate w.r.t $y$ first, we need a $u$-substitution that might get messy because of the extra $y$. Let $u = xy^2$, $du = 2xy \, dy \implies y \, dy = \frac{du}{2x}$.
+    *   If we integrate w.r.t $x$ first, we have $\int y (x e^{xy^2}) dx$, which requires integration by parts.
+    Wait, let's look closer. If we integrate w.r.t $x$ first, $u=xy^2$, $du=y^2 dx \implies dx = \frac{du}{y^2}$. The integral $\int x y e^{xy^2} dx$ requires integration by parts. Let's try the $y$ first approach!
+    
+2.  **Set up the integral with $dy$ first:**
+    $$ I = \int_{0}^{2} \left( \int_{0}^{1} x y e^{xy^2} \, dy \right) \, dx $$
+3.  **Inner integral (w.r.t $y$):**
+    Use u-substitution. Let $u = xy^2$. Then $du = 2xy \, dy$, which means $xy \, dy = \frac{1}{2} du$.
+    The $y$-limits are $y=0 \implies u=0$, and $y=1 \implies u=x(1)^2 = x$.
+    $$ \int_{0}^{x} \frac{1}{2} e^u \, du = \frac{1}{2} [e^u]_{0}^{x} = \frac{1}{2} (e^x - 1) $$
+    *(Notice how choosing the right order made this a simple u-substitution instead of complex integration by parts!)*
+4.  **Outer integral (w.r.t $x$):**
+    $$ I = \int_{0}^{2} \frac{1}{2} (e^x - 1) \, dx = \frac{1}{2} \left[ e^x - x \right]_{0}^{2} $$
+    $$ I = \frac{1}{2} \left( (e^2 - 2) - (e^0 - 0) \right) = \frac{1}{2} (e^2 - 2 - 1) = \frac{1}{2} (e^2 - 3) $$
+**Conclusion:** The exact value is $\frac{e^2 - 3}{2}$. Choosing the order of integration correctly is a powerful tool!
+
+---
 
 ```diagram
 {
@@ -50,9 +95,9 @@ Since the lower limit is $0$, the final answer is **48**.
     {
       "id": "1",
       "data": {
-        "label": "Rectangular Regions",
+        "label": "Rectangular Regions Integration",
         "icon": "BrainCircuit",
-        "description": "Topic: Rectangular Regions"
+        "description": "Topic: Fixed Bounds"
       },
       "style": {
         "background": "#1e3a8a",
@@ -62,21 +107,9 @@ Since the lower limit is $0$, the final answer is **48**.
     {
       "id": "2",
       "data": {
-        "label": "Double Integrals",
-        "icon": "FunctionSquare",
-        "description": "Integrating over 2D regions (Area/Volume)."
-      },
-      "style": {
-        "background": "#4c1d95",
-        "color": "#ede9fe"
-      }
-    },
-    {
-      "id": "3",
-      "data": {
         "label": "Fubini's Theorem",
         "icon": "Sigma",
-        "description": "Evaluating via iterated single integrals."
+        "description": "Convert double integral to iterated integrals."
       },
       "style": {
         "background": "#b45309",
@@ -84,11 +117,11 @@ Since the lower limit is $0$, the final answer is **48**.
       }
     },
     {
-      "id": "4",
+      "id": "3",
       "data": {
-        "label": "Polar Coordinates (r, θ)",
-        "icon": "Activity",
-        "description": "Jacobian transformation: dx dy = r dr dθ."
+        "label": "Order: dx dy",
+        "icon": "ArrowRight",
+        "description": "Integrate x first, then y. Limits are constants."
       },
       "style": {
         "background": "#14532d",
@@ -96,27 +129,27 @@ Since the lower limit is $0$, the final answer is **48**.
       }
     },
     {
+      "id": "4",
+      "data": {
+        "label": "Order: dy dx",
+        "icon": "ArrowDown",
+        "description": "Integrate y first, then x. Equivalency guaranteed."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
       "id": "5",
       "data": {
-        "label": "Triple Integrals",
+        "label": "Non-Rectangular Bounds",
         "icon": "Layers",
-        "description": "Integrating over 3D volumes (Mass/Density)."
+        "description": "Next step: dealing with variable functions as bounds."
       },
       "style": {
         "background": "#7f1d1d",
         "color": "#fee2e2"
-      }
-    },
-    {
-      "id": "6",
-      "data": {
-        "label": "Cylindrical & Spherical",
-        "icon": "Target",
-        "description": "Advanced coordinate transformations for symmetric regions."
-      },
-      "style": {
-        "background": "#0f766e",
-        "color": "#ccfbf1"
       }
     }
   ],
@@ -132,18 +165,18 @@ Since the lower limit is $0$, the final answer is **48**.
       "animated": true
     },
     {
-      "source": "3",
+      "source": "2",
       "target": "4",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "5",
       "animated": true
     },
     {
       "source": "4",
       "target": "5",
-      "animated": true
-    },
-    {
-      "source": "5",
-      "target": "6",
       "animated": true
     }
   ]
