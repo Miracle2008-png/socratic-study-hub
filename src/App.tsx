@@ -669,7 +669,7 @@ const AppContent: React.FC = () => {
         />
       )}
 
-      <AiTutorSidebar isOpen={isAiTutorOpen} onClose={() => setIsAiTutorOpen(false)} />
+      <AiTutorSidebar isOpen={isAiTutorOpen} onClose={() => setIsAiTutorOpen(false)} activeTab={activeTab} activeTopic={activeTopic} />
       <AdvancedCalculator isOpen={isCalculatorOpen} onClose={() => setIsCalculatorOpen(false)} />
 
       {!isAiTutorOpen && !isFocusMode && (

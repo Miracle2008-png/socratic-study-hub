@@ -1,21 +1,41 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Sparkles, X, Send, Bot } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import { ALL_TOPICS } from '../data/topicCompiler';
 
 interface AiTutorSidebarProps {
   isOpen: boolean;
   onClose: () => void;
+  activeTab?: string | null;
+  activeTopic?: string | null;
 }
 
-const AiTutorSidebar: React.FC<AiTutorSidebarProps> = ({ isOpen, onClose }) => {
+const AiTutorSidebar: React.FC<AiTutorSidebarProps> = ({ isOpen, onClose, activeTab, activeTopic }) => {
   const [query, setQuery] = useState('');
+  
+  // Resolve topic title for context
+  const resolvedTopicId = activeTopic?.includes('/') ? activeTopic.split('/').pop()! : activeTopic;
+  const normalizedId = resolvedTopicId?.toLowerCase().replace(/\s+/g, '-');
+  const topicObj = normalizedId ? ALL_TOPICS[normalizedId] || ALL_TOPICS[resolvedTopicId!] : null;
+  const topicTitle = topicObj ? topicObj.title : (activeTopic ? activeTopic.replace(/-/g, ' ') : null);
+
+  const initialMessage = topicTitle 
+    ? `Hi! I'm LUMEN-X, your AI tutor. I see you're currently studying **${topicTitle}**. I can explain this topic, generate practice questions, or clarify concepts. How can I help?`
+    : "Hi! I'm LUMEN-X, your AI tutor. I can explain the content on your screen, generate practice questions, or clarify concepts. How can I help?";
+
   const [chat, setChat] = useState<{role: 'user'|'ai', content: string}[]>([
-    {
-      role: 'ai',
-      content: "Hi! I'm LUMEN-X, your AI tutor. I can explain the content on your screen, generate practice questions, or clarify concepts. How can I help?"
-    }
+    { role: 'ai', content: initialMessage }
   ]);
+  
   const [isTyping, setIsTyping] = useState(false);
   const chatEndRef = useRef<HTMLDivElement>(null);
+
+  // Update greeting if topic changes and user hasn't chatted yet
+  useEffect(() => {
+    if (chat.length === 1 && chat[0].role === 'ai') {
+      setChat([{ role: 'ai', content: initialMessage }]);
+    }
+  }, [topicTitle, initialMessage, chat.length]);
 
   const scrollToBottom = () => {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -39,11 +59,12 @@ const AiTutorSidebar: React.FC<AiTutorSidebarProps> = ({ isOpen, onClose }) => {
 
     setTimeout(() => {
       setIsTyping(false);
-      let response = "That's an excellent question. The underlying theory connects deeply with the fundamental equations we're studying.";
+      let response = `That's an excellent question about ${topicTitle || 'this subject'}. The underlying theory connects deeply with the fundamental principles we're studying.`;
+      
       if (currentQuery.toLowerCase().includes('explain')) {
-        response = "I'll break this down: Think of it like a spring system. Energy is conserved but changes forms between kinetic and potential, dictated by the governing differential equations.";
+        response = `I'll break this down: Think of ${topicTitle || 'this concept'} like a foundational building block. The key is understanding how the governing rules apply dynamically.`;
       } else if (currentQuery.toLowerCase().includes('practice')) {
-        response = "Sure. Try this: A particle is in an infinite square well of width L. If it transitions from n=2 to n=1, what is the energy of the emitted photon?";
+        response = `Sure! Let's do a practice problem for ${topicTitle || 'this topic'}. What happens to the system if we double the primary input variable?`;
       }
       setChat(prev => [...prev, { role: 'ai', content: response }]);
     }, 1500);
@@ -66,7 +87,7 @@ const AiTutorSidebar: React.FC<AiTutorSidebarProps> = ({ isOpen, onClose }) => {
               {msg.role === 'ai' ? <Bot size={14} /> : 'U'}
             </div>
             <div className="tutor-bubble">
-              <p>{msg.content}</p>
+              <ReactMarkdown>{msg.content}</ReactMarkdown>
             </div>
           </div>
         ))}
@@ -84,7 +105,7 @@ const AiTutorSidebar: React.FC<AiTutorSidebarProps> = ({ isOpen, onClose }) => {
       <div className="ai-tutor-input">
         <input 
           type="text" 
-          placeholder="Ask LUMEN-X..." 
+          placeholder={topicTitle ? `Ask about ${topicTitle}...` : "Ask LUMEN-X..."} 
           value={query}
           onChange={e => setQuery(e.target.value)}
           onKeyDown={e => e.key === 'Enter' && handleSend()}
@@ -126,6 +147,8 @@ const AiTutorSidebar: React.FC<AiTutorSidebarProps> = ({ isOpen, onClose }) => {
         .ai .tutor-avatar { background: var(--color-base-deep); color: var(--color-accent); border: var(--border-soft); }
 
         .tutor-bubble { padding: 12px 16px; border-radius: 12px; font-size: 13.5px; line-height: 1.5; }
+        .tutor-bubble p { margin: 0; }
+        .tutor-bubble p:not(:last-child) { margin-bottom: 8px; }
         .user .tutor-bubble { background: var(--color-base-deep); color: var(--color-text-primary); border-top-right-radius: 4px; }
         .ai .tutor-bubble { background: var(--color-surface); color: var(--color-text-primary); border: var(--border-soft); border-top-left-radius: 4px; }
 
@@ -157,3 +180,4 @@ const AiTutorSidebar: React.FC<AiTutorSidebarProps> = ({ isOpen, onClose }) => {
 };
 
 export default AiTutorSidebar;
+

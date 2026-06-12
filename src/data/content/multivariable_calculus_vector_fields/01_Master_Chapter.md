@@ -65,3 +65,12 @@ A **vector field** assigns a vector to every point in space: $\mathbf{F}(x,y,z) 
 5. Integrate with respect to $x$:
    $$ \left[ x - \frac{x^3}{3} \right]_0^1 = 1 - \frac{1}{3} = \frac{2}{3} $$
 6. The value of the line integral is $2/3$.
+
+### Interactive Visualization
+
+See vector fields in action in 3D:
+
+```visualizer
+mode: math
+sub: vector
+```

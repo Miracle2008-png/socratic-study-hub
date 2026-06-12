@@ -421,11 +421,17 @@ const DESCRIPTIONS: Record<string, string> = {
   shm: 'Simple harmonic motion: x(t) = A\u00b7cos(\u03c9t). The spring pulls the blue ball back toward equilibrium with restoring force F = \u2212kx.',
 };
 
-const Visualizer3D: React.FC = () => {
-  const [mode, setMode] = useState<Mode>('math');
-  const [mathSub, setMathSub] = useState('surface');
-  const [chemSub, setChemSub] = useState('benzene');
-  const [physSub, setPhysSub] = useState('magnetic');
+interface VisualizerProps {
+  initialMode?: Mode;
+  initialSub?: string;
+  embedded?: boolean;
+}
+
+export const Visualizer3D: React.FC<VisualizerProps> = ({ initialMode = 'math', initialSub, embedded = false }) => {
+  const [mode, setMode] = useState<Mode>(initialMode);
+  const [mathSub, setMathSub] = useState(initialMode === 'math' && initialSub ? initialSub : 'surface');
+  const [chemSub, setChemSub] = useState(initialMode === 'chemistry' && initialSub ? initialSub : 'benzene');
+  const [physSub, setPhysSub] = useState(initialMode === 'physics' && initialSub ? initialSub : 'magnetic');
   const [conicType, setConicType] = useState('circle');
 
   // Editable params
@@ -475,37 +481,41 @@ const Visualizer3D: React.FC = () => {
   const setActiveSub = mode === 'math' ? setMathSub : mode === 'chemistry' ? setChemSub : setPhysSub;
 
   return (
-    <div className="vis-root anim-fade">
+    <div className={`vis-root anim-fade ${embedded ? 'embedded' : ''}`}>
       {/* Header */}
-      <div className="vis-header">
-        <div>
-          <h1 className="vis-title">3D Interactive Visualizer</h1>
-          <p className="vis-subtitle">Explore maths, chemistry and physics in real time</p>
+      {!embedded && (
+        <div className="vis-header">
+          <div>
+            <h1 className="vis-title">3D Interactive Visualizer</h1>
+            <p className="vis-subtitle">Explore maths, chemistry and physics in real time</p>
+          </div>
+          <div className="vis-tab-bar">
+            {([['math','Calculus & Geometry', FunctionSquare],['chemistry','Chemistry', Atom],['physics','Physics', Zap]] as const).map(([id,label,Icon])=>(
+              <button key={id} className={`vis-tab ${mode===id?'active':''}`} onClick={()=>setMode(id)}>
+                <Icon size={14}/>{label}
+              </button>
+            ))}
+          </div>
         </div>
-        <div className="vis-tab-bar">
-          {([['math','Calculus & Geometry', FunctionSquare],['chemistry','Chemistry', Atom],['physics','Physics', Zap]] as const).map(([id,label,Icon])=>(
-            <button key={id} className={`vis-tab ${mode===id?'active':''}`} onClick={()=>setMode(id)}>
-              <Icon size={14}/>{label}
-            </button>
-          ))}
-        </div>
-      </div>
+      )}
 
       {/* AI Generation Bar */}
-      <div className="vis-ai-bar luxury-card">
-        <Wand2 size={16} className="text-gold-gradient" />
-        <input 
-          type="text" 
-          value={aiPrompt}
-          onChange={e => setAiPrompt(e.target.value)}
-          placeholder="Describe what you want to visualize (e.g. 'show me a methane molecule' or 'graph x*x-z*z')"
-          onKeyDown={e => { if (e.key === 'Enter') handleAiGenerate(); }}
-          disabled={isGenerating}
-        />
-        <button onClick={handleAiGenerate} disabled={!aiPrompt.trim() || isGenerating}>
-          {isGenerating ? <Loader2 size={14} className="spinner" /> : 'Generate'}
-        </button>
-      </div>
+      {!embedded && (
+        <div className="vis-ai-bar luxury-card">
+          <Wand2 size={16} className="text-gold-gradient" />
+          <input 
+            type="text" 
+            value={aiPrompt}
+            onChange={e => setAiPrompt(e.target.value)}
+            placeholder="Describe what you want to visualize (e.g. 'show me a methane molecule' or 'graph x*x-z*z')"
+            onKeyDown={e => { if (e.key === 'Enter') handleAiGenerate(); }}
+            disabled={isGenerating}
+          />
+          <button onClick={handleAiGenerate} disabled={!aiPrompt.trim() || isGenerating}>
+            {isGenerating ? <Loader2 size={14} className="spinner" /> : 'Generate'}
+          </button>
+        </div>
+      )}
 
       {/* Sub-mode chips */}
       <div className="vis-sub-bar">
@@ -528,7 +538,7 @@ const Visualizer3D: React.FC = () => {
       )}
 
       {/* Canvas */}
-      <div className="vis-canvas-wrap">
+      <div className="vis-canvas-wrap" style={embedded ? { height: '350px' } : undefined}>
         <div className="vis-hint"><Layers size={13}/><span>Drag · Scroll · Pinch</span></div>
 
         {/* Editable inputs overlay */}
@@ -608,6 +618,7 @@ const Visualizer3D: React.FC = () => {
 
       <style>{`
         .vis-root{display:flex;flex-direction:column;gap:18px;padding:20px 0;}
+        .vis-root.embedded{padding:0;}
         .vis-header{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:14px;}
         .vis-title{font-family:var(--font-serif);font-size:24px;font-weight:700;color:var(--color-text-primary);margin:0 0 3px;}
         .vis-subtitle{font-size:13px;color:var(--color-text-secondary);margin:0;}

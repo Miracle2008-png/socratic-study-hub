@@ -17,6 +17,7 @@ import { useGamification } from '../context/GamificationContext';
 import MindMap from './MindMap';
 import FocusMode from './FocusMode';
 import InteractiveDiagram from './InteractiveDiagram';
+import Visualizer3D from './Visualizer3D';
 
 interface TopicModuleProps {
   topicId: string;
@@ -461,8 +462,26 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
                     if (className?.includes('language-diagram') || contentStr.includes('"nodes":')) {
                       return <InteractiveDiagram content={contentStr} />;
                     }
+                    if (className?.includes('language-visualizer')) {
+                      let initMode = 'math';
+                      let initSub = '';
+                      const lines = contentStr.split('\n');
+                      lines.forEach(l => {
+                        if (l.toLowerCase().startsWith('mode:')) initMode = l.split(':')[1].trim().toLowerCase();
+                        if (l.toLowerCase().startsWith('sub:')) initSub = l.split(':')[1].trim().toLowerCase();
+                      });
+                      return (
+                        <div className="tm-embedded-visualizer luxury-card" style={{ padding: '8px', margin: '24px 0', border: '1px solid var(--color-border)' }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 12px', color: 'var(--color-accent)' }}>
+                            <Zap size={16} /> <span style={{ fontWeight: 600, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>Interactive 3D Visualizer</span>
+                          </div>
+                          <div style={{ borderRadius: '12px', overflow: 'hidden' }}>
+                            <Visualizer3D embedded={true} initialMode={initMode as any} initialSub={initSub} />
+                          </div>
+                        </div>
+                      );
+                    }
                     return isBlock
-
                       ? <code className="tm-code-block">{children}</code>
                       : <code className="tm-code">{children}</code>;
                   },
