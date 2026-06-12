@@ -46,9 +46,18 @@ import './gamification.css';
 
 const AppContent: React.FC = () => {
   const [activeTab, setActiveTabInternal] = useState(() => {
-    const path = window.location.pathname;
-    if (path === '/' || path === '') return 'dashboard';
-    return path.substring(1);
+    const path = window.location.pathname.replace(/^\/+/, '');
+    if (path === '') return 'dashboard';
+    return path.split('/')[0];
+  });
+
+  const [activeTopic, setActiveTopicInternal] = useState<string | null>(() => {
+    const path = window.location.pathname.replace(/^\/+/, '');
+    const parts = path.split('/');
+    if (parts.length > 1) {
+      return parts.slice(1).join('/');
+    }
+    return null;
   });
 
   const setActiveTab = (tab: string) => {
@@ -57,16 +66,31 @@ const AppContent: React.FC = () => {
     window.history.pushState(null, '', path);
   };
 
+  const setActiveTopic = (topic: string | null) => {
+    setActiveTopicInternal(topic);
+    let path = activeTab === 'dashboard' ? '/' : `/${activeTab}`;
+    if (topic) {
+      path += `/${topic}`;
+    }
+    window.history.pushState(null, '', path);
+  };
+
   useEffect(() => {
     const handlePopState = () => {
-      const path = window.location.pathname;
-      const tab = (path === '/' || path === '') ? 'dashboard' : path.substring(1);
-      setActiveTabInternal(tab);
+      const path = window.location.pathname.replace(/^\/+/, '');
+      if (path === '') {
+        setActiveTabInternal('dashboard');
+        setActiveTopicInternal(null);
+      } else {
+        const parts = path.split('/');
+        setActiveTabInternal(parts[0]);
+        setActiveTopicInternal(parts.length > 1 ? parts.slice(1).join('/') : null);
+      }
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
-  const [activeTopic, setActiveTopic] = useState<string | null>(null);
+
   const [activeSatModule, setActiveSatModule] = useState<'Reading & Writing' | 'Math' | null>(null);
   const [isFocusMode, setIsFocusMode] = useState(false);
   // Topic-level focus mode — only activatable when a topic is open
