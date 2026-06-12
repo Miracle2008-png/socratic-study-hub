@@ -1,79 +1,112 @@
-# Integral and Comparison Tests
+# Integral and Comparison Tests for System Stability
 
-Once we rule out trivial divergence using the Divergence Test ($\lim a_n \neq 0$), we must use more sophisticated tests to determine if a series converges. We start with series containing only **positive terms**.
+When analyzing complex discrete systems—like the spectral harmonics of a vibrating engine or the cumulative error in a finite-element mesh—we often encounter infinite series where the Divergence Test is inconclusive ($\lim a_n = 0$). In these cases, we must deploy more sophisticated convergence tests. 
+
+We restrict our initial focus to series with **strictly positive terms**, representing monotonically accumulating magnitudes like energy, absolute error, or structural fatigue.
 
 ## 1. The Integral Test
 
-There is a profound connection between an infinite sum $\sum_{n=1}^{\infty} a_n$ and an improper integral $\int_{1}^{\infty} f(x) \, dx$.
+There is a profound, intuitive bridge between a discrete summation $\sum_{n=1}^{\infty} a_n$ and continuous calculus via the improper integral $\int_{1}^{\infty} f(x) \, dx$. In engineering, this is akin to comparing the total energy of a continuously sampled signal versus its analog equivalent.
 
-If we have a sequence $a_n$, let $f(x)$ be the continuous function where $f(n) = a_n$.
-If $f(x)$ is **continuous, positive, and decreasing** for $x \ge 1$:
+If we have a sequence $a_n$, let $f(x)$ be the continuous analog function where $f(n) = a_n$.
+If $f(x)$ is **continuous, strictly positive, and decreasing** for $x \ge 1$:
 
 > **The Integral Test:**
-> *   If $\int_{1}^{\infty} f(x) \, dx$ is convergent, then $\sum_{n=1}^{\infty} a_n$ is convergent.
-> *   If $\int_{1}^{\infty} f(x) \, dx$ is divergent, then $\sum_{n=1}^{\infty} a_n$ is divergent.
+> *   If the continuous energy $\int_{1}^{\infty} f(x) \, dx$ converges to a finite value, then the discrete series $\sum_{n=1}^{\infty} a_n$ also **converges**.
+> *   If the integral diverges to infinity, the series also **diverges**.
 
-They share the same fate. Note that if they converge, they do *not* generally converge to the exact same number.
+They share the exact same fate, though they do *not* converge to the exact same numerical value.
 
 ## 2. The $p$-Series
 
-A direct and incredibly useful application of the Integral Test is the $p$-series.
+A direct and incredibly powerful consequence of the Integral Test is the $p$-series standard. It acts as the primary benchmark for engineering comparison tests.
 $$ \sum_{n=1}^{\infty} \frac{1}{n^p} $$
 
-By evaluating the improper integral $\int_{1}^{\infty} x^{-p} \, dx$, we find a strict rule:
-*   The $p$-series **converges if $p > 1$**.
-*   The $p$-series **diverges if $p \le 1$**.
+By evaluating the improper integral $\int_{1}^{\infty} x^{-p} \, dx$, we establish a hard threshold for stability:
+*   The $p$-series **converges if $p > 1$** (the signal decays fast enough to have finite total energy).
+*   The $p$-series **diverges if $p \le 1$** (the signal decays too slowly, resulting in infinite accumulation).
 
-*Example:* The Harmonic Series $\sum \frac{1}{n}$. Here $p=1$. Therefore, it diverges. Even though $1/n$ goes to zero, it doesn't go to zero fast enough.
-*Example:* $\sum \frac{1}{n^2}$. Here $p=2 > 1$. Therefore, it converges (specifically to $\pi^2/6$, a famous result by Euler).
+*   *Example:* The Harmonic Series $\sum \frac{1}{n}$ corresponds to $p=1$. It diverges. A structure absorbing energy at a rate of $1/n$ will eventually fracture, even though the energy per cycle slowly fades to zero.
 
 ## 3. The Direct Comparison Test (DCT)
 
-If you have a complex series, you can often determine its convergence by comparing it term-by-term to a simpler, known series (like a $p$-series or a geometric series).
+Engineers frequently analyze messy, non-ideal systems by bounding them with clean, theoretical models. The Direct Comparison Test formalizes worst-case and best-case scenario bounding.
 
-Suppose we have two series with positive terms, $\sum a_n$ and $\sum b_n$.
+Suppose we have two positive-term series, an unknown series $\sum a_n$ and a known benchmark series $\sum b_n$.
 
-1.  **If the "bigger" series converges, the "smaller" series must converge.**
-    If $a_n \le b_n$ for all $n$, and $\sum b_n$ converges, then $\sum a_n$ converges.
-2.  **If the "smaller" series diverges, the "bigger" series must diverge.**
-    If $a_n \ge b_n$ for all $n$, and $\sum b_n$ diverges, then $\sum a_n$ diverges.
-
-*Example:* Does $\sum \frac{1}{n^3 + 5}$ converge?
-We know that $n^3 + 5 > n^3$, so $\frac{1}{n^3 + 5} < \frac{1}{n^3}$.
-The series $\sum \frac{1}{n^3}$ is a convergent $p$-series ($p=3 > 1$).
-Because our series is smaller than a convergent series, it must also converge.
+1.  **Bounding by a stable ceiling:** If $a_n \le b_n$ for all $n$, and the "bigger" benchmark series $\sum b_n$ converges, then the "smaller" series $\sum a_n$ MUST **converge**.
+2.  **Bounding by an unstable floor:** If $a_n \ge b_n$ for all $n$, and the "smaller" benchmark series $\sum b_n$ diverges, then the "bigger" series $\sum a_n$ MUST **diverge**.
 
 ## 4. The Limit Comparison Test (LCT)
 
-The Direct Comparison Test fails if the inequality goes the wrong way (e.g., your series is *larger* than a convergent series). The Limit Comparison Test is far more robust because it relies on the *ratio* of the terms as they go to infinity.
+The Direct Comparison Test is rigid; it fails completely if the inequality points the wrong direction. The Limit Comparison Test (LCT) is far more robust because it analyzes the asymptotic scaling of the systems. It ignores minor fluctuations and focuses on the dominant polynomial terms as $n \to \infty$.
 
-Suppose $a_n > 0$ and $b_n > 0$.
-Take the limit of their ratio:
+For two positive series $a_n$ and $b_n$, take the limit of their ratio:
 $$ L = \lim_{n \to \infty} \frac{a_n}{b_n} $$
 
-If $L$ is a **finite, positive number** ($0 < L < \infty$), it means both series grow or shrink at the exact same rate. Therefore, they share the same fate:
-*   Both series converge, or both series diverge.
+If $L$ is a **finite, strictly positive number** ($0 < L < \infty$), it means both systems scale at the exact same asymptotic rate. Therefore, they are dynamically linked:
+*   They both converge, or they both diverge.
 
-*Example:* Does $\sum \frac{3n + 5}{\sqrt{n^4 + 1}}$ converge?
-For very large $n$, the $+5$ and $+1$ don't matter. The terms look like $\frac{3n}{\sqrt{n^4}} = \frac{3n}{n^2} = \frac{3}{n}$.
-This looks like it will diverge (similar to the harmonic series). Let's use LCT with $b_n = \frac{1}{n}$.
+---
 
-$\lim_{n \to \infty} \frac{a_n}{b_n} = \lim_{n \to \infty} \left( \frac{3n + 5}{\sqrt{n^4 + 1}} \cdot \frac{n}{1} \right) = \lim_{n \to \infty} \frac{3n^2 + 5n}{\sqrt{n^4 + 1}}$
-Divide top and bottom by $n^2$ (which is $\sqrt{n^4}$ inside the root):
-$= \lim_{n \to \infty} \frac{3 + 5/n}{\sqrt{1 + 1/n^4}} = \frac{3}{1} = 3$.
-Since $L=3$ (a finite positive number), and $\sum \frac{1}{n}$ diverges, our original series also **diverges**.
+## Worked Examples
 
+### Example 1: Easy - Analyzing a Fast-Decaying Signal with the Integral Test
+**Problem:** A thermodynamic process leaks heat at discrete hourly intervals modeled by the series $\sum_{n=1}^{\infty} n e^{-n^2}$. Determine if the total heat loss over infinite time converges.
+
+**Step-by-Step Solution:**
+1. Define the continuous analog function: $f(x) = x e^{-x^2}$. This function is positive, continuous, and for $x \ge 1$, it is decreasing (which could be formally verified via derivative $f'(x) < 0$).
+2. Apply the Integral Test by evaluating the improper integral:
+   $$ \int_{1}^{\infty} x e^{-x^2} \, dx $$
+3. Use $u$-substitution. Let $u = -x^2$, so $du = -2x \, dx$, or $-\frac{1}{2} du = x \, dx$.
+   $$ \lim_{t \to \infty} \int_{1}^{t} x e^{-x^2} \, dx = \lim_{t \to \infty} \left[ -\frac{1}{2} e^{-x^2} \right]_{1}^{t} $$
+   $$ \lim_{t \to \infty} \left( -\frac{1}{2} e^{-t^2} - \left(-\frac{1}{2} e^{-1}\right) \right) $$
+4. As $t \to \infty$, $e^{-t^2} \to 0$.
+   $$ = 0 + \frac{1}{2e} = \frac{1}{2e} $$
+**Conclusion:** The integral evaluates to a finite number ($\frac{1}{2e}$). Because the integral converges, the discrete series $\sum_{n=1}^{\infty} n e^{-n^2}$ also **converges**. Total heat loss is finite.
+
+### Example 2: Medium - Bounding Noise with the Direct Comparison Test
+**Problem:** An electromagnetic antenna array receives a noisy signal where the energy at harmonic $n$ is $E_n = \frac{2 + \sin^2(n)}{n^3}$. Determine if the total infinite harmonic energy converges.
+
+**Step-by-Step Solution:**
+1. The $\sin^2(n)$ term fluctuates chaotically, making the Integral Test impossible. We use the Direct Comparison Test (DCT).
+2. We must bound the chaotic term. We know that for any $n$, the sine squared function is bounded:
+   $$ 0 \le \sin^2(n) \le 1 $$
+3. Construct the inequality for the full term:
+   $$ 2 \le 2 + \sin^2(n) \le 3 $$
+   $$ \frac{2}{n^3} \le \frac{2 + \sin^2(n)}{n^3} \le \frac{3}{n^3} $$
+4. We compare our series to the upper bound series: $\sum \frac{3}{n^3} = 3 \sum \frac{1}{n^3}$.
+5. The series $\sum \frac{1}{n^3}$ is a $p$-series with $p=3$. Since $3 > 1$, this benchmark series converges.
+**Conclusion:** Since our chaotic noise signal is strictly smaller than a convergent $p$-series, the Direct Comparison Test guarantees that our series **converges**. 
+
+### Example 3: Hard - Asymptotic Scaling with the Limit Comparison Test
+**Problem:** In the structural analysis of an infinite truss framework, the deformation stress at the $n$-th joint is formulated as $\sigma_n = \frac{5n^2 - 2n + 1}{n^5 + 4n^3 - 7}$. Determine if the total accumulated stress converges.
+
+**Step-by-Step Solution:**
+1. Direct comparison is difficult because the subtraction in the numerator and denominator flips inequalities unpredictably. We use the Limit Comparison Test (LCT).
+2. Identify the dominant terms to form a benchmark series $b_n$. As $n \to \infty$, the highest powers dictate the behavior:
+   $$ \text{Numerator scales as: } 5n^2 $$
+   $$ \text{Denominator scales as: } n^5 $$
+   So the terms scale as $\frac{5n^2}{n^5} = \frac{5}{n^3}$. We can simplify our benchmark series to just $b_n = \frac{1}{n^3}$.
+3. We know $\sum b_n = \sum \frac{1}{n^3}$ converges ($p$-series, $p=3 > 1$).
+4. Apply the Limit Comparison Test formula: $L = \lim_{n \to \infty} \frac{a_n}{b_n}$
+   $$ L = \lim_{n \to \infty} \left( \frac{5n^2 - 2n + 1}{n^5 + 4n^3 - 7} \div \frac{1}{n^3} \right) = \lim_{n \to \infty} \left( \frac{5n^2 - 2n + 1}{n^5 + 4n^3 - 7} \cdot \frac{n^3}{1} \right) $$
+   $$ L = \lim_{n \to \infty} \frac{5n^5 - 2n^4 + n^3}{n^5 + 4n^3 - 7} $$
+5. Divide every term by $n^5$:
+   $$ L = \lim_{n \to \infty} \frac{5 - \frac{2}{n} + \frac{1}{n^2}}{1 + \frac{4}{n^2} - \frac{7}{n^5}} = \frac{5 - 0 + 0}{1 + 0 - 0} = 5 $$
+6. Because $L=5$ is a finite, positive constant, both series share the same fate.
+**Conclusion:** Since our benchmark $b_n$ converges, the complex stress series $\sum \sigma_n$ also **converges**. The infinite framework will not suffer infinite stress accumulation.
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",
       "data": {
-        "label": "Integral and Comparison Tests",
-        "icon": "BrainCircuit",
-        "description": "Core Concept: Integral and Comparison Tests"
+        "label": "Improper Integrals",
+        "icon": "Spline",
+        "description": "Continuous energy boundaries."
       },
       "style": {
         "background": "#1e3a8a",
@@ -83,9 +116,9 @@ Since $L=3$ (a finite positive number), and $\sum \frac{1}{n}$ diverges, our ori
     {
       "id": "2",
       "data": {
-        "label": "Infinite Series",
-        "icon": "ArrowRightCircle",
-        "description": "Summation of infinite sequences."
+        "label": "Integral Test & P-Series",
+        "icon": "AreaChart",
+        "description": "Linking continuous to discrete."
       },
       "style": {
         "background": "#4c1d95",
@@ -95,9 +128,9 @@ Since $L=3$ (a finite positive number), and $\sum \frac{1}{n}$ diverges, our ori
     {
       "id": "3",
       "data": {
-        "label": "Convergence Tests",
-        "icon": "ArrowRightCircle",
-        "description": "Ratio, root, and integral tests."
+        "label": "Direct Comparison",
+        "icon": "ChevronsRight",
+        "description": "Strict upper and lower bounds."
       },
       "style": {
         "background": "#b45309",
@@ -107,9 +140,9 @@ Since $L=3$ (a finite positive number), and $\sum \frac{1}{n}$ diverges, our ori
     {
       "id": "4",
       "data": {
-        "label": "Power Series",
-        "icon": "CheckCircle",
-        "description": "Taylor and Maclaurin expansions."
+        "label": "Limit Comparison",
+        "icon": "Scale",
+        "description": "Asymptotic scaling behavior."
       },
       "style": {
         "background": "#14532d",
