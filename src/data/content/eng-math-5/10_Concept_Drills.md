@@ -46,3 +46,77 @@ Test your conceptual understanding of infinite sequences and power series.
     Multiply by $x$: $x\cos(x) = x - \frac{x^3}{2} + \frac{x^5}{24} - \dots$
 6.  $e^u = 1 + u + \frac{u^2}{2} + \dots \implies e^{-x^2} \approx 1 - x^2$.
     $\int_{0}^{0.1} (1 - x^2) \, dx = \left[ x - \frac{x^3}{3} \right]_0^{0.1} = 0.1 - \frac{0.001}{3} \approx 0.1 - 0.000333 = 0.099667$.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Concept Drills",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Concept Drills"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Infinite Series",
+        "icon": "ArrowRightCircle",
+        "description": "Summation of infinite sequences."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Convergence Tests",
+        "icon": "ArrowRightCircle",
+        "description": "Ratio, root, and integral tests."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Power Series",
+        "icon": "CheckCircle",
+        "description": "Taylor and Maclaurin expansions."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

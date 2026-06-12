@@ -43,3 +43,77 @@ A car is accelerating at $a(t) = 4t$. You know its velocity at $t = 1$ second is
    $$ 10 = 2 + C \implies C = 8 $$
 3. The exact velocity function is:
    $$ v(t) = 2t^2 + 8 $$
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Antiderivatives",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Antiderivatives"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Fundamental Theorem",
+        "icon": "ArrowRightCircle",
+        "description": "Linking derivatives and integrals."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "U-Substitution",
+        "icon": "ArrowRightCircle",
+        "description": "Reverse chain rule."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Integration by Parts",
+        "icon": "CheckCircle",
+        "description": "Reverse product rule."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

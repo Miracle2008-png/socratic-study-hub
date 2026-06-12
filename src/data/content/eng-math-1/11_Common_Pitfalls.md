@@ -23,3 +23,77 @@ When differentiating the numerator and denominator for L'Hôpital's Rule, you mu
 ### Pitfall 5: Confusing Undefined with Indeterminate
 *   $\frac{5}{0}$ is **Undefined**. It means there is a vertical asymptote. The limit is either $\infty, -\infty$, or DNE.
 *   $\frac{0}{0}$ is **Indeterminate**. It means there is a hole. The limit could be literally anything. You must do more work.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Common Pitfalls",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Common Pitfalls"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Indeterminate Form",
+        "icon": "ArrowRightCircle",
+        "description": "0/0 or inf/inf requires further manipulation."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Algebraic Manipulation",
+        "icon": "ArrowRightCircle",
+        "description": "Factor, conjugate, or simplify."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "L'Hôpital's Rule",
+        "icon": "CheckCircle",
+        "description": "Apply derivatives if applicable."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

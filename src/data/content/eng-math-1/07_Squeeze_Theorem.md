@@ -32,3 +32,77 @@ $$ \lim_{x \to 0} x^2 = 0 $$
 Because the lower bound approaches 0, and the upper bound approaches 0, the function trapped between them must also approach 0.
 By the Squeeze Theorem:
 $$ \lim_{x \to 0} x^2 \sin\left(\frac{1}{x}\right) = 0 $$
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Squeeze Theorem",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Squeeze Theorem"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Indeterminate Form",
+        "icon": "ArrowRightCircle",
+        "description": "0/0 or inf/inf requires further manipulation."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Algebraic Manipulation",
+        "icon": "ArrowRightCircle",
+        "description": "Factor, conjugate, or simplify."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "L'Hôpital's Rule",
+        "icon": "CheckCircle",
+        "description": "Apply derivatives if applicable."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

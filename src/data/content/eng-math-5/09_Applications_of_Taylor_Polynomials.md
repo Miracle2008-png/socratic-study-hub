@@ -56,3 +56,77 @@ When you use $T_k(x)$ to approximate $f(x)$, you are making an error. The remain
 $$ |R_k(x)| \le \frac{M}{(k+1)!} |x-a|^{k+1} $$
 
 Notice this bound looks exactly like the *next* term in the Taylor series, but evaluated at some maximum possible value $M$ of the derivative. This allows engineers to determine exactly how many terms they need to program into a computer's sine/cosine calculator to guarantee 16 digits of precision.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Applications of Taylor Polynomials",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Applications of Taylor Polynomials"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Infinite Series",
+        "icon": "ArrowRightCircle",
+        "description": "Summation of infinite sequences."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Convergence Tests",
+        "icon": "ArrowRightCircle",
+        "description": "Ratio, root, and integral tests."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Power Series",
+        "icon": "CheckCircle",
+        "description": "Taylor and Maclaurin expansions."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

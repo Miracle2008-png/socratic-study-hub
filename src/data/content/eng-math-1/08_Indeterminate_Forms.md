@@ -28,3 +28,77 @@ If $\lim_{x \to c} f(x)^{g(x)}$ yields an exponential indeterminate form:
 3. Evaluate the limit of $\ln(y)$. This usually turns into a $0 \cdot \infty$ form, which can be rearranged into a fraction.
 4. Let the result of that limit be $L$.
 5. The final answer is $e^L$ (since $\lim \ln(y) = L$, then $\lim y = e^L$).
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Indeterminate Forms",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Indeterminate Forms"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Indeterminate Form",
+        "icon": "ArrowRightCircle",
+        "description": "0/0 or inf/inf requires further manipulation."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Algebraic Manipulation",
+        "icon": "ArrowRightCircle",
+        "description": "Factor, conjugate, or simplify."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "L'Hôpital's Rule",
+        "icon": "CheckCircle",
+        "description": "Apply derivatives if applicable."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

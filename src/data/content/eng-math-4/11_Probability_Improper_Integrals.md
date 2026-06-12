@@ -48,3 +48,77 @@ $$ \mu = \int_{-\infty}^{\infty} x \cdot f(x) \, dx $$
 For the exponential distribution $f(t) = c e^{-ct}$, evaluating the expected value requires integration by parts:
 $$ \mu = \int_{0}^{\infty} t (c e^{-ct}) \, dt = \frac{1}{c} $$
 If the rate of failure $c$ is $0.1$ failures per year, the expected lifespan is $1/0.1 = 10$ years.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Probability Improper Integrals",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Probability Improper Integrals"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Volumes of Revolution",
+        "icon": "ArrowRightCircle",
+        "description": "Disk and washer methods."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Arc Length",
+        "icon": "ArrowRightCircle",
+        "description": "Measuring curve distances."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Center of Mass",
+        "icon": "CheckCircle",
+        "description": "Physical applications of integrals."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

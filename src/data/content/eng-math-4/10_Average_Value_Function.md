@@ -35,3 +35,77 @@ To find the effective value of such a function, we use the **Root Mean Square (R
 $$ f_{rms} = \sqrt{ \frac{1}{b-a} \int_{a}^{b} [f(x)]^2 \, dx } $$
 
 When an electrician says the wall outlet provides 120 Volts AC, they are stating the $V_{rms}$. The actual peak voltage is higher ($120 \times \sqrt{2} \approx 170V$), but the RMS value is what dictates the power delivered to a lightbulb.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Average Value Function",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Average Value Function"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Volumes of Revolution",
+        "icon": "ArrowRightCircle",
+        "description": "Disk and washer methods."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Arc Length",
+        "icon": "ArrowRightCircle",
+        "description": "Measuring curve distances."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Center of Mass",
+        "icon": "CheckCircle",
+        "description": "Physical applications of integrals."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

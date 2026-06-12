@@ -63,3 +63,77 @@ A term lower on the list will *always* eventually outpace a term higher on the l
 
 If your series is $\sum \frac{\text{Fast}}{\text{Slow}}$, it diverges (Divergence Test).
 If your series is $\sum \frac{\text{Slow}}{\text{Fast}}$, it strongly tends to converge (use Ratio Test to prove).
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Ratio and Root Tests",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Ratio and Root Tests"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Infinite Series",
+        "icon": "ArrowRightCircle",
+        "description": "Summation of infinite sequences."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Convergence Tests",
+        "icon": "ArrowRightCircle",
+        "description": "Ratio, root, and integral tests."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Power Series",
+        "icon": "CheckCircle",
+        "description": "Taylor and Maclaurin expansions."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

@@ -34,3 +34,77 @@ $f(1) = (1)^3 - (1) - 1 = -1$
 $f(2) = (2)^3 - (2) - 1 = 5$
 
 Since $f(1) < 0$ and $f(2) > 0$, the function goes from negative to positive. Because it is continuous, it must cross $y = 0$ at some point $c$ between 1 and 2. Thus, a root exists.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Continuity IVT",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Continuity IVT"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Indeterminate Form",
+        "icon": "ArrowRightCircle",
+        "description": "0/0 or inf/inf requires further manipulation."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Algebraic Manipulation",
+        "icon": "ArrowRightCircle",
+        "description": "Factor, conjugate, or simplify."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "L'Hôpital's Rule",
+        "icon": "CheckCircle",
+        "description": "Apply derivatives if applicable."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

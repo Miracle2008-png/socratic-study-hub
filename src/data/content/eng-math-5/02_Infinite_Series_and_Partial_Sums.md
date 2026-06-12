@@ -62,3 +62,77 @@ The contrapositive of this theorem is one of the most useful tests in calculus:
 > **The Divergence Test:** If $\lim_{n \to \infty} a_n \neq 0$ (or the limit does not exist), then the series $\sum a_n$ MUST **diverge**.
 
 **WARNING:** The converse is FALSE. Just because the terms go to zero ($\lim a_n = 0$) does *not* mean the series converges. It might still diverge. (The classic example is the Harmonic series, $1 + 1/2 + 1/3 + \dots$, whose terms go to zero, but the sum diverges to infinity). The Divergence Test can *only* prove divergence. It can never prove convergence.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Infinite Series and Partial Sums",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Infinite Series and Partial Sums"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Infinite Series",
+        "icon": "ArrowRightCircle",
+        "description": "Summation of infinite sequences."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Convergence Tests",
+        "icon": "ArrowRightCircle",
+        "description": "Ratio, root, and integral tests."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Power Series",
+        "icon": "CheckCircle",
+        "description": "Taylor and Maclaurin expansions."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

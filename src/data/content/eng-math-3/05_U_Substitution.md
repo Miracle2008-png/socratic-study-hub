@@ -41,3 +41,77 @@ Often, the derivative is off by a constant multiplier. We can fix this using alg
    $$ \frac{1}{3} \int e^u \, du = \frac{1}{3} e^u + C $$
 6. Substitute back:
    $$ \frac{1}{3} e^{x^3} + C $$
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "U Substitution",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: U Substitution"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Fundamental Theorem",
+        "icon": "ArrowRightCircle",
+        "description": "Linking derivatives and integrals."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "U-Substitution",
+        "icon": "ArrowRightCircle",
+        "description": "Reverse chain rule."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Integration by Parts",
+        "icon": "CheckCircle",
+        "description": "Reverse product rule."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

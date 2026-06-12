@@ -51,3 +51,77 @@ If an alternating series converges by the AST, and we use the $k$-th partial sum
 The error is always **less than the magnitude of the very next term**.
 $$ |R_k| = |S - s_k| \le b_{k+1} $$
 Furthermore, the true sum always lies between any two successive partial sums. This makes approximating alternating series incredibly easy to bound.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Alternating Series and Absolute Convergence",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Alternating Series and Absolute Convergence"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Infinite Series",
+        "icon": "ArrowRightCircle",
+        "description": "Summation of infinite sequences."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Convergence Tests",
+        "icon": "ArrowRightCircle",
+        "description": "Ratio, root, and integral tests."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Power Series",
+        "icon": "CheckCircle",
+        "description": "Taylor and Maclaurin expansions."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

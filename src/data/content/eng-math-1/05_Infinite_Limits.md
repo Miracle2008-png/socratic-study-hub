@@ -36,3 +36,77 @@ As $x$ approaches 0 from the left ($x \to 0^-$), we divide 1 by very small *nega
 $$ \lim_{x \to 0^-} \frac{1}{x} = -\infty $$
 
 Because the left and right limits are different (one goes up, one goes down), the overall limit $\lim_{x \to 0} \frac{1}{x}$ Does Not Exist (DNE), though the line $x=0$ is still a vertical asymptote.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Infinite Limits",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Infinite Limits"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Indeterminate Form",
+        "icon": "ArrowRightCircle",
+        "description": "0/0 or inf/inf requires further manipulation."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Algebraic Manipulation",
+        "icon": "ArrowRightCircle",
+        "description": "Factor, conjugate, or simplify."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "L'Hôpital's Rule",
+        "icon": "CheckCircle",
+        "description": "Apply derivatives if applicable."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

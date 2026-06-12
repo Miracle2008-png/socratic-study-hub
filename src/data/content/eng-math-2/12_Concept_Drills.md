@@ -67,3 +67,77 @@ $$ f''(x) = 12x - 6 $$
 At $x = -1$: $f''(-1) = -18$ (negative, so it's a local maximum).
 At $x = 2$: $f''(2) = 18$ (positive, concave up, so it's a local minimum).
 ```
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Concept Drills",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Concept Drills"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Basic Rules",
+        "icon": "ArrowRightCircle",
+        "description": "Power, constant, and sum rules."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Product & Quotient",
+        "icon": "ArrowRightCircle",
+        "description": "Complex combinations of functions."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Chain Rule",
+        "icon": "CheckCircle",
+        "description": "Derivatives of composite functions."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

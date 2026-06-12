@@ -46,3 +46,77 @@ If revolving around the vertical line $x = 2$, and the region lies to the right 
 *   The radius of a shell at position $x$ is the distance from $x$ to the axis: $r = x - 2$.
 *   The height is $f(x)$.
 $$ V = \int_{a}^{b} 2\pi (x - 2) f(x) \, dx $$
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Volumes Cylindrical Shells",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Volumes Cylindrical Shells"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Volumes of Revolution",
+        "icon": "ArrowRightCircle",
+        "description": "Disk and washer methods."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Arc Length",
+        "icon": "ArrowRightCircle",
+        "description": "Measuring curve distances."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Center of Mass",
+        "icon": "CheckCircle",
+        "description": "Physical applications of integrals."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

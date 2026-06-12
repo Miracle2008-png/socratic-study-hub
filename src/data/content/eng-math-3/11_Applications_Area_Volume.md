@@ -33,3 +33,77 @@ Evaluate from 0 to 4:
 $$ V = \pi \left( \frac{(4)^2}{2} - \frac{(0)^2}{2} \right) $$
 $$ V = \pi \left( \frac{16}{2} - 0 \right) = 8\pi $$
 The exact volume is $8\pi$ cubic units.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Applications Area Volume",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Applications Area Volume"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Fundamental Theorem",
+        "icon": "ArrowRightCircle",
+        "description": "Linking derivatives and integrals."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "U-Substitution",
+        "icon": "ArrowRightCircle",
+        "description": "Reverse chain rule."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Integration by Parts",
+        "icon": "CheckCircle",
+        "description": "Reverse product rule."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

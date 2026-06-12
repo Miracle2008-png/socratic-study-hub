@@ -47,3 +47,77 @@ Formula: $uv - \int v \, du$
 $$ = x \ln(x) - \int x \left(\frac{1}{x}\right) dx $$
 $$ = x \ln(x) - \int 1 \, dx $$
 $$ = x \ln(x) - x + C $$
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Integration By Parts",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Integration By Parts"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Fundamental Theorem",
+        "icon": "ArrowRightCircle",
+        "description": "Linking derivatives and integrals."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "U-Substitution",
+        "icon": "ArrowRightCircle",
+        "description": "Reverse chain rule."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Integration by Parts",
+        "icon": "CheckCircle",
+        "description": "Reverse product rule."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

@@ -46,3 +46,77 @@ Test your conceptual understanding of the applications of integration.
     $W = \int_{0}^{0.2} 400x \, dx = [200x^2]_0^{0.2} = 200(0.04) = 8$ Joules.
 5.  $f_{avg} = \frac{1}{3-0} \int_{0}^{3} x^2 \, dx = \frac{1}{3} \left[ \frac{x^3}{3} \right]_0^3 = \frac{1}{3} (9) = 3$.
 6.  $\lim_{t \to \infty} \int_{1}^{t} x^{-2} \, dx = \lim_{t \to \infty} \left[ -\frac{1}{x} \right]_1^t = \lim_{t \to \infty} \left(-\frac{1}{t} - (-1)\right)$. As $t \to \infty$, $-1/t \to 0$. The limit is 1. The integral **converges** to 1.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Concept Drills",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Concept Drills"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Volumes of Revolution",
+        "icon": "ArrowRightCircle",
+        "description": "Disk and washer methods."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Arc Length",
+        "icon": "ArrowRightCircle",
+        "description": "Measuring curve distances."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Center of Mass",
+        "icon": "CheckCircle",
+        "description": "Physical applications of integrals."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

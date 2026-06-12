@@ -54,3 +54,77 @@ The Ratio Test is inconclusive when $L = 1$, which occurs exactly at the boundar
 *   Test $x = 1$: $\sum \frac{(1-3)^n}{n \cdot 2^n} = \sum \frac{(-2)^n}{n \cdot 2^n} = \sum \frac{(-1)^n 2^n}{n \cdot 2^n} = \sum \frac{(-1)^n}{n}$. This is the Alternating Harmonic Series, which **converges**.
 
 Therefore, the full Interval of Convergence is **$[1, 5)$**.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Power Series",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Power Series"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Infinite Series",
+        "icon": "ArrowRightCircle",
+        "description": "Summation of infinite sequences."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Convergence Tests",
+        "icon": "ArrowRightCircle",
+        "description": "Ratio, root, and integral tests."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Power Series",
+        "icon": "CheckCircle",
+        "description": "Taylor and Maclaurin expansions."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

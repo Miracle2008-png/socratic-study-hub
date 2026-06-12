@@ -42,3 +42,77 @@ We see the form $\sqrt{a^2 - x^2}$ where $a = 4$.
 Therefore, $\cot\theta = \frac{\text{Adjacent}}{\text{Opposite}} = \frac{\sqrt{16-x^2}}{x}$.
 8. Final Answer:
    $$ -\frac{\sqrt{16-x^2}}{16x} + C $$
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Trig Substitution",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Trig Substitution"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Fundamental Theorem",
+        "icon": "ArrowRightCircle",
+        "description": "Linking derivatives and integrals."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "U-Substitution",
+        "icon": "ArrowRightCircle",
+        "description": "Reverse chain rule."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Integration by Parts",
+        "icon": "CheckCircle",
+        "description": "Reverse product rule."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

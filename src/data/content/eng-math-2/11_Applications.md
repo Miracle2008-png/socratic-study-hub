@@ -42,3 +42,77 @@ Surface Area $SA = x^2 + 4xy = 1200$.
    $$ y = \frac{300}{20} - \frac{20}{4} = 15 - 5 = 10 $$
 
 The dimensions that maximize volume are $20 \times 20 \times 10$ cm.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Applications",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Applications"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Basic Rules",
+        "icon": "ArrowRightCircle",
+        "description": "Power, constant, and sum rules."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Product & Quotient",
+        "icon": "ArrowRightCircle",
+        "description": "Complex combinations of functions."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Chain Rule",
+        "icon": "CheckCircle",
+        "description": "Derivatives of composite functions."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```

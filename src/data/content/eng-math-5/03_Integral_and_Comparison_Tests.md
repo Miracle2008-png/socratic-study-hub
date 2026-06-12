@@ -62,3 +62,77 @@ $\lim_{n \to \infty} \frac{a_n}{b_n} = \lim_{n \to \infty} \left( \frac{3n + 5}{
 Divide top and bottom by $n^2$ (which is $\sqrt{n^4}$ inside the root):
 $= \lim_{n \to \infty} \frac{3 + 5/n}{\sqrt{1 + 1/n^4}} = \frac{3}{1} = 3$.
 Since $L=3$ (a finite positive number), and $\sum \frac{1}{n}$ diverges, our original series also **diverges**.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Integral and Comparison Tests",
+        "icon": "BrainCircuit",
+        "description": "Core Concept: Integral and Comparison Tests"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Infinite Series",
+        "icon": "ArrowRightCircle",
+        "description": "Summation of infinite sequences."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Convergence Tests",
+        "icon": "ArrowRightCircle",
+        "description": "Ratio, root, and integral tests."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Power Series",
+        "icon": "CheckCircle",
+        "description": "Taylor and Maclaurin expansions."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    }
+  ]
+}
+```
