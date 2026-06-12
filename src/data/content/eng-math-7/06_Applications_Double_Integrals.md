@@ -45,7 +45,7 @@ $$ m = \int_{0}^{1} (-4x^2 + 4) dx = \left[ -\frac{4}{3}x^3 + 4x \right]_{0}^{1}
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

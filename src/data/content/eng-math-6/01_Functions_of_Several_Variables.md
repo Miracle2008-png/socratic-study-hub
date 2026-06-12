@@ -46,7 +46,7 @@ $$ f(x, y, z) = k $$
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

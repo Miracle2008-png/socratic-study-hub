@@ -58,7 +58,7 @@ By changing the order of integration, an impossible problem became completely so
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

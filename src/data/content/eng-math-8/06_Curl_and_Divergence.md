@@ -45,7 +45,7 @@ $$ \text{curl } \mathbf{F} = \mathbf{0} $$
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

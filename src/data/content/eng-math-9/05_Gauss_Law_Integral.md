@@ -29,7 +29,7 @@ It does not matter how complex the electric field lines are, or what shape the c
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

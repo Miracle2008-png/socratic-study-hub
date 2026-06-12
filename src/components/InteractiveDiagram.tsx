@@ -190,7 +190,7 @@ const InteractiveDiagram: React.FC<InteractiveDiagramProps> = ({ content }) => {
           overflow: hidden;
           background: var(--color-base-deep, #0a0908);
           border: 1px solid var(--color-border, #2a241c);
-          height: 400px;
+          height: 600px;
           width: 100%;
           position: relative;
           margin: 24px 0;

@@ -54,7 +54,7 @@ $$ = \int_{0}^{2\pi} \left[ \frac{1}{4}r^4 + 2r^2 \right]_{0}^{2} d\theta = \int
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

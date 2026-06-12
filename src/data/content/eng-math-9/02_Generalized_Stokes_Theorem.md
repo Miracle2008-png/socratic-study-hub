@@ -31,7 +31,7 @@ By abstracting vectors into "differential forms", we compress hundreds of years 
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

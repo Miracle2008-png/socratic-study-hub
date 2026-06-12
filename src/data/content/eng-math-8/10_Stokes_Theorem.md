@@ -53,7 +53,7 @@ $$ \left[ \frac{8}{3}\sin^3(t) \right]_{0}^{2\pi} = \frac{8}{3}(0) - \frac{8}{3}
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

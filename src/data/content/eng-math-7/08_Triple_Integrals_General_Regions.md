@@ -56,7 +56,7 @@ Final Answer: $0 - (-1/24) = \mathbf{\frac{1}{24}}$.
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

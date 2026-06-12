@@ -44,7 +44,7 @@ This leads directly into Potential Flow Theory, a cornerstone of aerodynamics us
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

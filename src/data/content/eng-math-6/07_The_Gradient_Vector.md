@@ -61,7 +61,7 @@ A neural network has a "Loss Function" $L(w_1, w_2, \dots, w_n)$ which represent
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

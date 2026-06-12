@@ -46,7 +46,7 @@ This generates the famous "S-curve" (sigmoid curve) used extensively in machine 
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

@@ -35,7 +35,7 @@ If the domain has a hole (like a magnetic field circulating around a physical wi
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

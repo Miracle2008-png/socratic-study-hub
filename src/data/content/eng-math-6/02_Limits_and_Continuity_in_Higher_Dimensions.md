@@ -46,7 +46,7 @@ This means the limit exists, the function is defined there, and the two values m
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

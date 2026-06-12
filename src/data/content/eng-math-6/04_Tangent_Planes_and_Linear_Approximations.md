@@ -57,7 +57,7 @@ In 2D, the existence of $f_x$ and $f_y$ is **not** enough to guarantee the surfa
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

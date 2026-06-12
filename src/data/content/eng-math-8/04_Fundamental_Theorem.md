@@ -51,7 +51,7 @@ The work done is exactly **-1**, without doing any nasty path parameterization!
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

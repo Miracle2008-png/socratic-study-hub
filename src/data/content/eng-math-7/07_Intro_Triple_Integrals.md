@@ -37,7 +37,7 @@ To evaluate, simply work from the inside out:
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

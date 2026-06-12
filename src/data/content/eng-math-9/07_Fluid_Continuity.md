@@ -46,7 +46,7 @@ $$ \nabla \cdot \mathbf{v} = 0 $$
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

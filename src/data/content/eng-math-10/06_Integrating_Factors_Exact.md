@@ -64,7 +64,7 @@ $$ \frac{1}{2}x^2 y^4 + \frac{1}{2}y^6 - 5y^4 = C $$
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

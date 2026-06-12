@@ -45,7 +45,7 @@ Since the lower limit is $0$, the final answer is **48**.
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

@@ -54,7 +54,7 @@ $$ I = 2 \left( -\frac{3}{5} + \frac{2}{3} + 1 \right) = 2 \left( -\frac{9}{15} 
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

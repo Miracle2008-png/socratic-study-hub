@@ -52,7 +52,7 @@ $$ \int_{0}^{2\pi} \frac{1}{4} R^4 H d\theta = \frac{1}{4} R^4 H (2\pi) = \frac{
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

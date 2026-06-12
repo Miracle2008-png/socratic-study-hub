@@ -54,7 +54,7 @@ This is the exact general solution. Notice how the $+C$ was divided by $x^3$, cr
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

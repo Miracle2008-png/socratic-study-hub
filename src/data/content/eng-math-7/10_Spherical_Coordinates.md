@@ -54,7 +54,7 @@ The proof is complete.
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

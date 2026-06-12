@@ -42,7 +42,7 @@ Is $\mathbf{F}(x,y) = (3x^2 + 2y)\mathbf{i} + (2x + 3y^2)\mathbf{j}$ conservativ
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

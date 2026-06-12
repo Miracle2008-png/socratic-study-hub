@@ -58,7 +58,7 @@ $$ \int_{0}^{2\pi} \frac{1}{12} (37\sqrt{37} - 1) d\theta = \frac{2\pi}{12}(37\s
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

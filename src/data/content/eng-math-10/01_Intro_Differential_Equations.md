@@ -34,7 +34,7 @@ In this unit, we will focus exclusively on solving **First-Order Ordinary Differ
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

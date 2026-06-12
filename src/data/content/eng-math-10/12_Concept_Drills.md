@@ -49,7 +49,7 @@ Explanation: The general Bernoulli substitution is $v = y^{1-n}$. Looking at the
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

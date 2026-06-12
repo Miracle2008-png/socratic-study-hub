@@ -49,7 +49,7 @@ Explanation: The mathematical guarantee that a zero-curl field is strictly conse
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

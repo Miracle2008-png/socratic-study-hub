@@ -52,7 +52,7 @@ This results in a system of 5 equations with 5 variables ($x, y, z, \lambda, \mu
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

@@ -33,7 +33,7 @@ We will perform these conversions on the following pages.
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

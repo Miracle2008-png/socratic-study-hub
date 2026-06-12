@@ -56,7 +56,7 @@ The points $1$ and $3$ divide the y-axis into three regions: $y < 1$, $1 < y < 3
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

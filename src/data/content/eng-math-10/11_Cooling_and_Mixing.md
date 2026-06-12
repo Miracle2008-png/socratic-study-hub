@@ -51,7 +51,7 @@ Since it started as pure water, $A(0) = 0$. So $0 = 200 + C \implies C = -200$.
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

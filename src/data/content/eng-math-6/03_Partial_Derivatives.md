@@ -65,7 +65,7 @@ Equations that relate the partial derivatives of an unknown function are called 
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

@@ -31,7 +31,7 @@ In the next sections, we will learn how to actually compute these integrals usin
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

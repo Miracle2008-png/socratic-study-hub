@@ -39,7 +39,7 @@ When you integrate this proper divergence over the volume, you get exactly $4\pi
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

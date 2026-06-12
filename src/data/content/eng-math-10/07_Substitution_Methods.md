@@ -64,7 +64,7 @@ $$ y = \frac{1}{Cx - x^2} $$
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

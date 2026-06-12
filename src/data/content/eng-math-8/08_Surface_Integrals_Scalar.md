@@ -54,7 +54,7 @@ $$ \int_{0}^{2\pi} \frac{2}{3} d\theta = \frac{2}{3}(2\pi) = \mathbf{\frac{4\pi}
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

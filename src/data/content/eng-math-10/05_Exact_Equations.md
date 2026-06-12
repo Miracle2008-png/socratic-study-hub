@@ -59,7 +59,7 @@ $$ y(x^2 - 1) = C \implies y = \frac{C}{x^2 - 1} $$
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

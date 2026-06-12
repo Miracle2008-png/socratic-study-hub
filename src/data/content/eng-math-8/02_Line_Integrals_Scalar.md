@@ -56,7 +56,7 @@ $$ 2\pi + \frac{2}{3} $$
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

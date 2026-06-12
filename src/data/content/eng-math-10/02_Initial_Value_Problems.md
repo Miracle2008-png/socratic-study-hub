@@ -44,7 +44,7 @@ This is the **Particular Solution**. It is the one unique curve out of the infin
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

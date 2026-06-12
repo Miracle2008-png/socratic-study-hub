@@ -49,7 +49,7 @@ Explanation: The Divergence Theorem dictates that $\iint_S \mathbf{F} \cdot d\ma
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

@@ -49,7 +49,7 @@ Explanation: Moment of inertia is defined as the integral of mass times the squa
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

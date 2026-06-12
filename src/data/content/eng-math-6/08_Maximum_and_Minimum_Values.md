@@ -49,7 +49,7 @@ Just like finding absolute extrema on a closed interval $[a,b]$ in 1D, the absol
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

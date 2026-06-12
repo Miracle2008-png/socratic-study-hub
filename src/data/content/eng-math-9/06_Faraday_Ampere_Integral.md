@@ -38,7 +38,7 @@ The line integral of the magnetic field around a closed loop is exactly proporti
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

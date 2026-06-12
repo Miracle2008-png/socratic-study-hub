@@ -51,7 +51,7 @@ Because $d(d\omega) = 0$ for any form, this proves the famous vector calculus id
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

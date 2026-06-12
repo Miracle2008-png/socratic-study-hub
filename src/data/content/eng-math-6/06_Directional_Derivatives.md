@@ -58,7 +58,7 @@ $$ D_{\vec{u}} f(x,y,z) = f_x u_1 + f_y u_2 + f_z u_3 $$
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

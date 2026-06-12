@@ -51,7 +51,7 @@ An impossible line integral was evaluated in three lines of basic algebra thanks
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

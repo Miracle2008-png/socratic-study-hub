@@ -58,7 +58,7 @@ The volume of this "dome" is exactly $\pi/2$.
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

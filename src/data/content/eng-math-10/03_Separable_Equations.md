@@ -43,7 +43,7 @@ This is the explicit general solution.
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

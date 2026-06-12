@@ -48,7 +48,7 @@ Six terrifying surface integrals collapsed into a single, trivial polynomial eva
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

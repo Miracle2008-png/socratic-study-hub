@@ -57,7 +57,7 @@ Test your conceptual understanding of multivariable functions, gradients, and op
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

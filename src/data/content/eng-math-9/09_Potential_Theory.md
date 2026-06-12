@@ -31,7 +31,7 @@ Because it appears everywhere, mathematicians have spent centuries developing to
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

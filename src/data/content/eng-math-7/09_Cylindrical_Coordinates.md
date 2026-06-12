@@ -58,7 +58,7 @@ The total volume of the solid is $\mathbf{7\pi/2}$.
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

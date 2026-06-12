@@ -33,7 +33,7 @@ In the next section, we will see how modern mathematics unifies these four separ
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

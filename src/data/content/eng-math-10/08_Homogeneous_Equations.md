@@ -58,7 +58,7 @@ $$ y = \pm x \sqrt{2\ln|x| + 2C} $$
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",

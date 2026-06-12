@@ -63,7 +63,7 @@ The force field does negative work, meaning it generally opposed the particle's 
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",
