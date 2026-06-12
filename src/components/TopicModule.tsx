@@ -452,15 +452,16 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
                   ),
                   th: ({ children }) => <th className="tm-th">{children}</th>,
                   td: ({ children }) => <td className="tm-td">{children}</td>,
-                  code: ({ children, className }) => {
+                  code: ({ children, className, ...props }) => {
                     const isBlock = className?.includes('language');
-                    if (className === 'language-drill') {
+                    if (className?.includes('language-drill')) {
                       return <InteractiveDrill content={String(children)} />;
                     }
-                    if (className === 'language-diagram') {
+                    if (className?.includes('language-diagram')) {
                       return <InteractiveDiagram content={String(children)} />;
                     }
                     return isBlock
+
                       ? <code className="tm-code-block">{children}</code>
                       : <code className="tm-code">{children}</code>;
                   },
