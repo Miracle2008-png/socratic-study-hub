@@ -54,3 +54,111 @@ If you walk from the point $(2, -1)$ in the direction $\langle 2, 5 \rangle$, yo
 The concept extends perfectly to 3D. If $w = f(x,y,z)$ represents temperature, and you are flying a drone through space in the direction of a 3D unit vector $\vec{u} = \langle u_1, u_2, u_3 \rangle$, the rate of change of temperature you experience is:
 
 $$ D_{\vec{u}} f(x,y,z) = f_x u_1 + f_y u_2 + f_z u_3 $$
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Directional Derivatives",
+        "icon": "BrainCircuit",
+        "description": "Topic: Directional Derivatives"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Partial Derivative (∂f/∂x)",
+        "icon": "FunctionSquare",
+        "description": "Holding other variables constant while differentiating."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Gradient Vector (∇f)",
+        "icon": "Sigma",
+        "description": "Vector pointing in the direction of steepest ascent."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Directional Derivative",
+        "icon": "Activity",
+        "description": "Rate of change in a specific unit vector direction."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "label": "Tangent Planes",
+        "icon": "Layers",
+        "description": "Linear approximation of a surface at a specific point."
+      },
+      "style": {
+        "background": "#7f1d1d",
+        "color": "#fee2e2"
+      }
+    },
+    {
+      "id": "6",
+      "data": {
+        "label": "Optimization (Lagrange)",
+        "icon": "Target",
+        "description": "Finding local maxima/minima using critical points & multipliers."
+      },
+      "style": {
+        "background": "#0f766e",
+        "color": "#ccfbf1"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    },
+    {
+      "source": "4",
+      "target": "5",
+      "animated": true
+    },
+    {
+      "source": "5",
+      "target": "6",
+      "animated": true
+    }
+  ]
+}
+```

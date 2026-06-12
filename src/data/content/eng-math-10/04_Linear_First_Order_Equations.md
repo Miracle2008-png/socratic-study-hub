@@ -50,3 +50,111 @@ Divide by $x^3$ to isolate $y$:
 $$ y(x) = x^3 + \frac{C}{x^3} $$
 
 This is the exact general solution. Notice how the $+C$ was divided by $x^3$, creating a transient term $C/x^3$. This is why the integrating factor method is so powerful!
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Linear First Order Equations",
+        "icon": "BrainCircuit",
+        "description": "Topic: Linear First Order Equations"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Differential Equation Form",
+        "icon": "FunctionSquare",
+        "description": "Identifying dy/dx = f(x,y)."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Separation of Variables",
+        "icon": "Sigma",
+        "description": "Isolating dy and dx on opposite sides."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Integrating Factor Method",
+        "icon": "Activity",
+        "description": "Solving linear 1st-order ODEs using exp(∫P(x)dx)."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "label": "Exact Equations",
+        "icon": "Layers",
+        "description": "Solving via partial derivatives where M_y = N_x."
+      },
+      "style": {
+        "background": "#7f1d1d",
+        "color": "#fee2e2"
+      }
+    },
+    {
+      "id": "6",
+      "data": {
+        "label": "Initial Value Problems",
+        "icon": "Target",
+        "description": "Applying boundary conditions to find the specific constant C."
+      },
+      "style": {
+        "background": "#0f766e",
+        "color": "#ccfbf1"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    },
+    {
+      "source": "4",
+      "target": "5",
+      "animated": true
+    },
+    {
+      "source": "5",
+      "target": "6",
+      "animated": true
+    }
+  ]
+}
+```

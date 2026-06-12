@@ -25,3 +25,111 @@ $$ \oint_S \mathbf{E} \cdot d\mathbf{S} = \frac{Q_{\text{enc}}}{\varepsilon_0} $
 If you wrap an imaginary closed bubble (a "Gaussian surface") around an object, the total electric flux piercing outward through that bubble is exactly proportional to the total electric charge trapped inside the bubble. 
 
 It does not matter how complex the electric field lines are, or what shape the charged object is. If you know the charge inside, you immediately know the total flux outside, thanks entirely to the Divergence Theorem!
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Gauss Law Integral",
+        "icon": "BrainCircuit",
+        "description": "Topic: Gauss Law Integral"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Fundamental Theorem of Line Integrals",
+        "icon": "FunctionSquare",
+        "description": "Integral of a gradient field equals potential difference."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Green's Theorem",
+        "icon": "Sigma",
+        "description": "Relates a line integral around a closed curve to a double integral."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Stokes' Theorem",
+        "icon": "Activity",
+        "description": "Generalizes Green's Theorem to 3D surfaces and their boundary curves."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "label": "Divergence Theorem (Gauss)",
+        "icon": "Layers",
+        "description": "Relates flux across a closed surface to a triple integral of divergence."
+      },
+      "style": {
+        "background": "#7f1d1d",
+        "color": "#fee2e2"
+      }
+    },
+    {
+      "id": "6",
+      "data": {
+        "label": "Unified Concept",
+        "icon": "Target",
+        "description": "Boundary integrals map directly to interior derivatives."
+      },
+      "style": {
+        "background": "#0f766e",
+        "color": "#ccfbf1"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    },
+    {
+      "source": "4",
+      "target": "5",
+      "animated": true
+    },
+    {
+      "source": "5",
+      "target": "6",
+      "animated": true
+    }
+  ]
+}
+```

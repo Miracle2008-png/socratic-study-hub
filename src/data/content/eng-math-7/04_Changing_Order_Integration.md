@@ -54,3 +54,111 @@ $$ I = \int_{0}^{1} \frac{1}{2}\sin(u) du = \left[ -\frac{1}{2}\cos(u) \right]_{
 $$ I = -\frac{1}{2}(\cos(1) - \cos(0)) = \frac{1}{2}(1 - \cos(1)) $$
 
 By changing the order of integration, an impossible problem became completely solvable.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Changing Order Integration",
+        "icon": "BrainCircuit",
+        "description": "Topic: Changing Order Integration"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Double Integrals",
+        "icon": "FunctionSquare",
+        "description": "Integrating over 2D regions (Area/Volume)."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Fubini's Theorem",
+        "icon": "Sigma",
+        "description": "Evaluating via iterated single integrals."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Polar Coordinates (r, θ)",
+        "icon": "Activity",
+        "description": "Jacobian transformation: dx dy = r dr dθ."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "label": "Triple Integrals",
+        "icon": "Layers",
+        "description": "Integrating over 3D volumes (Mass/Density)."
+      },
+      "style": {
+        "background": "#7f1d1d",
+        "color": "#fee2e2"
+      }
+    },
+    {
+      "id": "6",
+      "data": {
+        "label": "Cylindrical & Spherical",
+        "icon": "Target",
+        "description": "Advanced coordinate transformations for symmetric regions."
+      },
+      "style": {
+        "background": "#0f766e",
+        "color": "#ccfbf1"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    },
+    {
+      "source": "4",
+      "target": "5",
+      "animated": true
+    },
+    {
+      "source": "5",
+      "target": "6",
+      "animated": true
+    }
+  ]
+}
+```

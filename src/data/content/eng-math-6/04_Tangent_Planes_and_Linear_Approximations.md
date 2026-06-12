@@ -53,3 +53,111 @@ In 1D, if $f'(x)$ exists, the function is differentiable (smooth) at that point.
 In 2D, the existence of $f_x$ and $f_y$ is **not** enough to guarantee the surface is smooth! A function can have partial derivatives at the origin but still be discontinuous or jagged there, meaning a true tangent plane doesn't exist.
 
 > **Theorem:** If the partial derivatives $f_x$ and $f_y$ exist near $(a,b)$ and are *continuous* at $(a,b)$, then $f$ is differentiable at $(a,b)$, and the tangent plane exists.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Tangent Planes and Linear Approximations",
+        "icon": "BrainCircuit",
+        "description": "Topic: Tangent Planes and Linear Approximations"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Partial Derivative (∂f/∂x)",
+        "icon": "FunctionSquare",
+        "description": "Holding other variables constant while differentiating."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Gradient Vector (∇f)",
+        "icon": "Sigma",
+        "description": "Vector pointing in the direction of steepest ascent."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Directional Derivative",
+        "icon": "Activity",
+        "description": "Rate of change in a specific unit vector direction."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "label": "Tangent Planes",
+        "icon": "Layers",
+        "description": "Linear approximation of a surface at a specific point."
+      },
+      "style": {
+        "background": "#7f1d1d",
+        "color": "#fee2e2"
+      }
+    },
+    {
+      "id": "6",
+      "data": {
+        "label": "Optimization (Lagrange)",
+        "icon": "Target",
+        "description": "Finding local maxima/minima using critical points & multipliers."
+      },
+      "style": {
+        "background": "#0f766e",
+        "color": "#ccfbf1"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    },
+    {
+      "source": "4",
+      "target": "5",
+      "animated": true
+    },
+    {
+      "source": "5",
+      "target": "6",
+      "animated": true
+    }
+  ]
+}
+```

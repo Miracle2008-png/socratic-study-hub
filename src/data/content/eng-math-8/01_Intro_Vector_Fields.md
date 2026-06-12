@@ -38,3 +38,111 @@ Is $\mathbf{F}(x,y) = (3x^2 + 2y)\mathbf{i} + (2x + 3y^2)\mathbf{j}$ conservativ
 1. Let $P = 3x^2 + 2y$. The derivative with respect to $y$ is: $\frac{\partial P}{\partial y} = 2$.
 2. Let $Q = 2x + 3y^2$. The derivative with respect to $x$ is: $\frac{\partial Q}{\partial x} = 2$.
 3. Since $2 = 2$, yes! This field is conservative.
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Intro Vector Fields",
+        "icon": "BrainCircuit",
+        "description": "Topic: Intro Vector Fields"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Vector Fields (F)",
+        "icon": "FunctionSquare",
+        "description": "Assigning a vector to every point in space."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Line Integrals",
+        "icon": "Sigma",
+        "description": "Integrating a function or field along a curve C."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Conservative Fields",
+        "icon": "Activity",
+        "description": "Path independence where ∇ × F = 0."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "label": "Curl (∇ × F)",
+        "icon": "Layers",
+        "description": "Measures the macroscopic rotation of the field."
+      },
+      "style": {
+        "background": "#7f1d1d",
+        "color": "#fee2e2"
+      }
+    },
+    {
+      "id": "6",
+      "data": {
+        "label": "Divergence (∇ · F)",
+        "icon": "Target",
+        "description": "Measures the magnitude of a source or sink at a given point."
+      },
+      "style": {
+        "background": "#0f766e",
+        "color": "#ccfbf1"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    },
+    {
+      "source": "4",
+      "target": "5",
+      "animated": true
+    },
+    {
+      "source": "5",
+      "target": "6",
+      "animated": true
+    }
+  ]
+}
+```

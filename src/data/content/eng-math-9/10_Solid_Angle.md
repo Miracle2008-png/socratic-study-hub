@@ -35,3 +35,111 @@ The true divergence of the inverse square field is not 0, but rather:
 $$ \nabla \cdot \left( \frac{\mathbf{r}}{|\mathbf{r}|^3} \right) = 4\pi \delta^3(\mathbf{r}) $$
 
 When you integrate this proper divergence over the volume, you get exactly $4\pi$, restoring the validity of the Divergence Theorem!
+
+
+```diagram
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "Solid Angle",
+        "icon": "BrainCircuit",
+        "description": "Topic: Solid Angle"
+      },
+      "style": {
+        "background": "#1e3a8a",
+        "color": "#dbeafe"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "Fundamental Theorem of Line Integrals",
+        "icon": "FunctionSquare",
+        "description": "Integral of a gradient field equals potential difference."
+      },
+      "style": {
+        "background": "#4c1d95",
+        "color": "#ede9fe"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "Green's Theorem",
+        "icon": "Sigma",
+        "description": "Relates a line integral around a closed curve to a double integral."
+      },
+      "style": {
+        "background": "#b45309",
+        "color": "#fef3c7"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "Stokes' Theorem",
+        "icon": "Activity",
+        "description": "Generalizes Green's Theorem to 3D surfaces and their boundary curves."
+      },
+      "style": {
+        "background": "#14532d",
+        "color": "#dcfce7"
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "label": "Divergence Theorem (Gauss)",
+        "icon": "Layers",
+        "description": "Relates flux across a closed surface to a triple integral of divergence."
+      },
+      "style": {
+        "background": "#7f1d1d",
+        "color": "#fee2e2"
+      }
+    },
+    {
+      "id": "6",
+      "data": {
+        "label": "Unified Concept",
+        "icon": "Target",
+        "description": "Boundary integrals map directly to interior derivatives."
+      },
+      "style": {
+        "background": "#0f766e",
+        "color": "#ccfbf1"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2",
+      "animated": true
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "animated": true
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "animated": true
+    },
+    {
+      "source": "4",
+      "target": "5",
+      "animated": true
+    },
+    {
+      "source": "5",
+      "target": "6",
+      "animated": true
+    }
+  ]
+}
+```
