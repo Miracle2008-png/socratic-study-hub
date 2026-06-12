@@ -156,6 +156,11 @@ const AppContent: React.FC = () => {
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
+    if (!currentUser) {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      return;
+    }
+
     const INACTIVITY_LIMIT = 30 * 60 * 1000; // 30 minutes
 
     const resetTimer = () => {
@@ -177,7 +182,7 @@ const AppContent: React.FC = () => {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
       events.forEach(event => window.removeEventListener(event, resetTimer));
     };
-  }, [isSessionExpired, signOut]);
+  }, [isSessionExpired, signOut, currentUser]);
 
   const handleTabChange = (tabId: string) => {
     closeTopic();
