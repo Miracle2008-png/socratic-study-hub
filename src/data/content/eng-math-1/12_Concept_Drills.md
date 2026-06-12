@@ -1,76 +1,100 @@
 # 12. Concept Drills
 
-Test your understanding of Limits & Continuity. Select your answer to immediately reveal the worked mathematical correction.
+Test your engineering intuition and mathematical rigor regarding Limits & Continuity. Select your answer to immediately reveal the step-by-step mathematical correction.
 
 ```drill
-Question: Evaluate the limit: $\lim_{x \to 4} \frac{x^2 - 16}{x - 4}$
+Question: (Easy) Evaluate the limit representing the initial state of a chemical concentration: $\lim_{x \to 5} \frac{x^2 - 25}{x - 5}$
+Options:
+A) $0$
+B) $5$
+C) $10$
+D) Undefined
+Answer: C
+Explanation: Direct substitution yields $\frac{5^2 - 25}{5 - 5} = \frac{0}{0}$, which is an indeterminate form. 
+We must algebraically manipulate the expression. Factor the numerator using the difference of squares:
+$$ \frac{x^2 - 25}{x - 5} = \frac{(x-5)(x+5)}{x-5} $$
+Cancel the common $(x-5)$ term. This geometrically represents "filling the hole" at $x=5$:
+$$ \lim_{x \to 5} (x + 5) $$
+Now, substitute $x=5$:
+$$ 5 + 5 = 10 $$
+The limit is 10.
+```
+
+```drill
+Question: (Medium) Determine the horizontal asymptote of the transfer function for a low-pass filter: $H(s) = \frac{3s^4 - 2s^2 + 7}{8s^4 + 5s^3 - s}$
+Options:
+A) $y = 0$
+B) $y = \frac{3}{8}$
+C) $y = \frac{7}{-1}$
+D) No horizontal asymptote
+Answer: B
+Explanation: To find the horizontal asymptote (steady-state gain as frequency goes to infinity), evaluate the limit as $s \to \infty$: $\lim_{s \to \infty} H(s)$.
+Since we are dealing with a rational function (a polynomial divided by a polynomial), we compare the highest degree terms in the numerator and denominator.
+Highest degree of the numerator: $s^4$ (coefficient is 3).
+Highest degree of the denominator: $s^4$ (coefficient is 8).
+Because the degrees are exactly identical ($4 = 4$), the polynomials grow at the exact same rate as $s \to \infty$. The limit is simply the ratio of their leading coefficients.
+$$ y = \frac{3}{8} $$
+```
+
+```drill
+Question: (Hard) Evaluate the limit using L'Hôpital's Rule for a complex stress gradient: $\lim_{x \to 0} \frac{e^{3x} - 1 - 3x}{x^2}$
+Options:
+A) $0$
+B) $1.5$
+C) $3$
+D) $4.5$
+Answer: D
+Explanation: Step 1: Direct substitution.
+$$ \frac{e^0 - 1 - 0}{0} = \frac{1 - 1}{0} = \frac{0}{0} $$
+This is an indeterminate form, so L'Hôpital's Rule applies. Differentiate numerator and denominator. Remember the chain rule for $e^{3x}$!
+Derivative of numerator: $\frac{d}{dx}(e^{3x} - 1 - 3x) = 3e^{3x} - 3$
+Derivative of denominator: $\frac{d}{dx}(x^2) = 2x$
+New limit: $\lim_{x \to 0} \frac{3e^{3x} - 3}{2x}$
+
+Step 2: Substitute $x=0$ again.
+$$ \frac{3e^0 - 3}{0} = \frac{3 - 3}{0} = \frac{0}{0} $$
+Still indeterminate! We must apply L'Hôpital's Rule a second time.
+
+Step 3: Differentiate again.
+Derivative of numerator: $\frac{d}{dx}(3e^{3x} - 3) = 9e^{3x}$
+Derivative of denominator: $\frac{d}{dx}(2x) = 2$
+New limit: $\lim_{x \to 0} \frac{9e^{3x}}{2}$
+
+Step 4: Substitute $x=0$.
+$$ \frac{9e^0}{2} = \frac{9(1)}{2} = 4.5 $$
+The limit is 4.5.
+```
+
+```drill
+Question: (Challenge) A thermodynamic valve opens at $T=4$. The flow rate is $Q(T) = \frac{T^2 - 16}{T - 4}$. For the process to be continuous at $T=4$, what must the flow rate $Q(4)$ be explicitly defined as?
 Options:
 A) $0$
 B) $4$
 C) $8$
-D) Undefined
+D) It cannot be continuous
 Answer: C
-Explanation: Direct substitution yields $\frac{0}{0}$, an indeterminate form. 
-Factor the numerator (difference of squares):
-$$ \frac{x^2 - 16}{x - 4} = \frac{(x-4)(x+4)}{x-4} $$
-Cancel the $(x-4)$ terms:
-$$ \lim_{x \to 4} (x + 4) = 4 + 4 = 8 $$
-```
-
-```drill
-Question: Evaluate using L'Hôpital's Rule: $\lim_{x \to 0} \frac{e^x - 1 - x}{x^2}$
-Options:
-A) $0$
-B) $0.5$
-C) $1$
-D) $\infty$
-Answer: B
-Explanation: Substitution yields $\frac{1 - 1 - 0}{0} = \frac{0}{0}$. Apply L'Hôpital's Rule:
-$$ \lim_{x \to 0} \frac{e^x - 1}{2x} $$
-Substitution yields $\frac{1 - 1}{0} = \frac{0}{0}$ again. Apply L'Hôpital's Rule a second time:
-$$ \lim_{x \to 0} \frac{e^x}{2} $$
-Evaluate: $\frac{e^0}{2} = \frac{1}{2} = 0.5$.
-```
-
-```drill
-Question: Determine the horizontal asymptote of $f(x) = \frac{5x^3 - 2x + 1}{7x^3 + 4x^2}$.
-Options:
-A) $y = 0$
-B) $y = \frac{5}{7}$
-C) $y = \frac{5}{4}$
-D) No horizontal asymptote
-Answer: B
-Explanation: To find the horizontal asymptote, evaluate $\lim_{x \to \infty} f(x)$. 
-Because the highest degree of the numerator ($x^3$) is identical to the highest degree of the denominator ($x^3$), the limit as $x \to \infty$ is simply the ratio of their leading coefficients.
-Leading coefficient of numerator: 5
-Leading coefficient of denominator: 7
-Therefore, $y = \frac{5}{7}$.
-```
-
-```drill
-Question: Is the function $f(x) = \frac{x^2 - 9}{x - 3}$ continuous at $x = 3$?
-Options:
-A) Yes, because the limit is 6.
-B) Yes, because the function evaluates to 0.
-C) No, because it has a vertical asymptote.
-D) No, because $f(3)$ is undefined.
-Answer: D
-Explanation: For a function to be continuous at $x=c$, three conditions must be met. The very first condition is that $f(c)$ must be defined. 
-If we plug 3 into the function: $f(3) = \frac{3^2 - 9}{3 - 3} = \frac{0}{0}$. 
-Because division by zero is undefined, $f(3)$ does not exist. It fails the first condition of continuity. (It has a removable discontinuity, or "hole", at $x=3$, but it is not continuous).
+Explanation: For a function to be continuous at $T=4$, the explicitly defined value of the function $Q(4)$ must perfectly match the limit of the function as $T$ approaches 4.
+Let's find the limit:
+$$ \lim_{T \to 4} \frac{T^2 - 16}{T - 4} $$
+Direct substitution yields $\frac{0}{0}$ (indeterminate).
+Factor the numerator:
+$$ \lim_{T \to 4} \frac{(T - 4)(T + 4)}{T - 4} $$
+Cancel the $(T - 4)$ terms:
+$$ \lim_{T \to 4} (T + 4) = 4 + 4 = 8 $$
+The limit as $T$ approaches 4 is 8. Therefore, to ensure continuity and prevent a mathematical "hole" (which would represent a physical failure in the valve model), the system must explicitly define $Q(4) = 8$.
 ```
 
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",
       "data": {
-        "label": "Concept Drills",
-        "icon": "BrainCircuit",
-        "description": "Core Concept: Concept Drills"
+        "label": "Read Problem",
+        "icon": "BookOpen",
+        "description": "Identify Engineering Context"
       },
       "style": {
         "background": "#1e3a8a",
@@ -80,9 +104,9 @@ Because division by zero is undefined, $f(3)$ does not exist. It fails the first
     {
       "id": "2",
       "data": {
-        "label": "Indeterminate Form",
-        "icon": "ArrowRightCircle",
-        "description": "0/0 or inf/inf requires further manipulation."
+        "label": "Formulate Method",
+        "icon": "BrainCircuit",
+        "description": "Select math tool (Limit, IVT, L'Hôpital)"
       },
       "style": {
         "background": "#4c1d95",
@@ -92,9 +116,9 @@ Because division by zero is undefined, $f(3)$ does not exist. It fails the first
     {
       "id": "3",
       "data": {
-        "label": "Algebraic Manipulation",
-        "icon": "ArrowRightCircle",
-        "description": "Factor, conjugate, or simplify."
+        "label": "Execute Steps",
+        "icon": "PenTool",
+        "description": "Algebra, Derivatives, Substitution"
       },
       "style": {
         "background": "#b45309",
@@ -104,9 +128,9 @@ Because division by zero is undefined, $f(3)$ does not exist. It fails the first
     {
       "id": "4",
       "data": {
-        "label": "L'Hôpital's Rule",
+        "label": "Verify Solution",
         "icon": "CheckCircle",
-        "description": "Apply derivatives if applicable."
+        "description": "Check physical meaning & units"
       },
       "style": {
         "background": "#14532d",
