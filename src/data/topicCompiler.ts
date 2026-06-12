@@ -4,6 +4,8 @@ import { physicsContentExt } from './physicsContentExt';
 import { chemistryContentExt } from './chemistryContentExt';
 import { biologyContentExt } from './biologyContentExt';
 import { ENGINEERING_BRANCHES } from './engineeringData';
+import { ECONOMICS_BRANCHES } from './economicsData';
+import { IR_BRANCHES } from './internationalRelationsData';
 
 // Helper to convert raw markdown from the massive database into the TopicContent schema
 function compileMarkdownToTopic(id: string, title: string, subject: string, difficulty: 'Foundational' | 'Intermediate' | 'Advanced' | 'University', markdown: string): TopicContent {
@@ -390,6 +392,34 @@ const compiledEngineering = Object.values(ENGINEERING_BRANCHES).reduce((acc, bra
   return acc;
 }, {} as Record<string, TopicContent>);
 
+const compiledEconomics = Object.values(ECONOMICS_BRANCHES).reduce((acc, branch) => {
+  branch.topics.forEach(topic => {
+    acc[topic.id] = {
+      id: topic.id,
+      title: topic.title,
+      subject: 'economics',
+      difficulty: 'University' as any,
+      estimatedReadTime: 30,
+      sections: []
+    };
+  });
+  return acc;
+}, {} as Record<string, TopicContent>);
+
+const compiledIR = Object.values(IR_BRANCHES).reduce((acc, branch) => {
+  branch.topics.forEach(topic => {
+    acc[topic.id] = {
+      id: topic.id,
+      title: topic.title,
+      subject: 'international_relations',
+      difficulty: 'University' as any,
+      estimatedReadTime: 30,
+      sections: []
+    };
+  });
+  return acc;
+}, {} as Record<string, TopicContent>);
+
 export const ALL_TOPICS: Record<string, TopicContent> = {
   ...TOPICS,
   ...compiledMath,
@@ -397,6 +427,8 @@ export const ALL_TOPICS: Record<string, TopicContent> = {
   ...compiledChemistry,
   ...compiledBiology,
   ...compiledEngineering,
+  ...compiledEconomics,
+  ...compiledIR,
 };
 
 // Dynamic module loader for the massive 35-page engineering topics

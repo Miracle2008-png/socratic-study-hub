@@ -6,6 +6,8 @@ import TopicModule from './components/TopicModule';
 import { GlobalSearch } from './components/GlobalSearch';
 import AiTutorSidebar from './components/AiTutorSidebar';
 import { AdvancedCalculator } from './components/AdvancedCalculator';
+import { EconomicsHub } from './components/EconomicsHub';
+import { IRHub } from './components/IRHub';
 
 const FocusMode = lazy(() => import('./components/FocusMode'));
 const StudyPlanner = lazy(() => import('./components/StudyPlanner'));
@@ -331,6 +333,20 @@ const AppContent: React.FC = () => {
       }
       return <EngineeringHub onTopicSelect={(id, branchId) => { setActiveTopic(branchId ? `${branchId}/${id}` : id); openTopic(id, 'engineering'); }} />;
     }
+    if (activeTab === 'economics') {
+      if (activeTopic) {
+        const topicId = activeTopic.includes('/') ? activeTopic.split('/')[1] : activeTopic;
+        return <TopicModule topicId={topicId} externalFocusMode={isTopicFocusMode} onExternalFocusExit={() => setIsTopicFocusMode(false)} />;
+      }
+      return <EconomicsHub onTopicSelect={(id, branchId) => { setActiveTopic(branchId ? `${branchId}/${id}` : id); openTopic(id, 'economics'); }} />;
+    }
+    if (activeTab === 'international_relations') {
+      if (activeTopic) {
+        const topicId = activeTopic.includes('/') ? activeTopic.split('/')[1] : activeTopic;
+        return <TopicModule topicId={topicId} externalFocusMode={isTopicFocusMode} onExternalFocusExit={() => setIsTopicFocusMode(false)} />;
+      }
+      return <IRHub onTopicSelect={(id, branchId) => { setActiveTopic(branchId ? `${branchId}/${id}` : id); openTopic(id, 'international_relations'); }} />;
+    }
     if (activeTab === 'biology') {
       if (activeTopic) return <TopicModule topicId={activeTopic} externalFocusMode={isTopicFocusMode} onExternalFocusExit={() => setIsTopicFocusMode(false)} />;
       return <SubjectHub subject="biology" onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'biology'); }} />;
@@ -353,6 +369,7 @@ const AppContent: React.FC = () => {
     const map: Record<string, string> = {
       math: 'Mathematics', physics: 'Physics', chemistry: 'Chemistry',
       biology: 'Biology', engineering: 'Engineering',
+      economics: 'Economics', international_relations: 'International Relations',
       ai_hub: 'AI Hub', grapher: '2D Grapher',
       mindmap: 'Knowledge Map', formula_blog: 'Formula Bank',
       calculus_solver: 'Calculus Solver',

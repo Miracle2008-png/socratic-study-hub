@@ -24,6 +24,8 @@ const subjects = [
   { id: 'chemistry', label: 'Chemistry', icon: FlaskConical, color: 'var(--color-chemistry)' },
   { id: 'biology', label: 'Biology', icon: Dna, color: '#22c55e' },
   { id: 'engineering', label: 'Engineering', icon: Box, color: '#f59e0b' },
+  { id: 'economics', label: 'Economics', icon: TrendingUp, color: '#10b981' },
+  { id: 'international_relations', label: 'International Relations', icon: Globe, color: '#f43f5e' },
   { id: 'ai_hub', label: 'AI Study Hub', icon: Sparkles, color: 'var(--color-accent)' },
 ];
 
