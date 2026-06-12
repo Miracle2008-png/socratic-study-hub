@@ -308,7 +308,7 @@ const outDir = path.join(process.cwd(), 'src', 'data', 'content');
 topics.forEach((topic) => {
   const topicDir = path.join(outDir, topic.id);
   fs.mkdirSync(topicDir, { recursive: true });
-  const filePath = path.join(topicDir, \`01_intro.md\`);
+  const filePath = path.join(topicDir, `01_intro.md`);
   fs.writeFileSync(filePath, topic.content);
 });
 
