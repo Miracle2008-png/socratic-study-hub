@@ -145,6 +145,60 @@ const StudyPlanner: React.FC = () => {
     return <BookOpen size={12} />;
   };
 
+  const generateRoadmap = async () => {
+    if (!currentUser || events.length === 0) return;
+    setIsGenerating(true);
+    
+    // Simulate AI generation delay
+    setTimeout(async () => {
+      const generatedTasks = [];
+      const subjects = ['Math', 'Physics', 'Chemistry', 'Biology'];
+      
+      for (const ev of events) {
+        const sub = subjects.find(s => ev.title.toLowerCase().includes(s.toLowerCase())) || 'Math';
+        
+        generatedTasks.push({
+          user_id: currentUser.id,
+          title: `Initial Review: ${ev.title}`,
+          subject: sub,
+          priority: '10:00 AM',
+          duration_minutes: 60,
+          is_completed: false
+        });
+        generatedTasks.push({
+          user_id: currentUser.id,
+          title: `Deep Dive & Practice: ${ev.title}`,
+          subject: sub,
+          priority: '2:00 PM',
+          duration_minutes: 90,
+          is_completed: false
+        });
+        generatedTasks.push({
+          user_id: currentUser.id,
+          title: `Final Cheat Sheet Prep: ${ev.title}`,
+          subject: sub,
+          priority: '8:00 PM',
+          duration_minutes: 45,
+          is_completed: false
+        });
+      }
+
+      // Insert all
+      const { data } = await supabase.from('study_tasks').insert(generatedTasks).select();
+      if (data) {
+        setTasks([...tasks, ...data.map((t: any) => ({
+          id: t.id,
+          title: t.title,
+          subject: t.subject,
+          time: t.priority,
+          completed: t.is_completed
+        }))]);
+      }
+      
+      setIsGenerating(false);
+    }, 1500);
+  };
+
   return (
     <div className="study-planner">
       <div className="module-header premium-glass-card">
@@ -163,6 +217,15 @@ const StudyPlanner: React.FC = () => {
           <div className="column-header">
             <h4>Today's Agenda</h4>
             <div style={{ display: 'flex', gap: '12px' }}>
+              <button 
+                className="gold-btn glass-btn" 
+                onClick={generateRoadmap}
+                disabled={isGenerating || events.length === 0}
+                title={events.length === 0 ? "Add upcoming events first to generate a roadmap" : "Auto-Generate Study Plan"}
+              >
+                {isGenerating ? <Loader2 size={16} className="spin" /> : <Wand2 size={16} />}
+                <span className="hide-mobile" style={{ marginLeft: 6 }}>AI Roadmap</span>
+              </button>
               <button className="gold-btn icon-only glass-btn" onClick={() => setShowModal(true)}>
                 <Plus size={18} />
               </button>

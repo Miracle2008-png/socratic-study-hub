@@ -962,3 +962,26 @@ input, textarea, select {
 .katex-mathml {
   display: none !important;
 }
+
+/* ===== PRINT STYLES (Cheat Sheet PDF Export) ===== */
+@media print {
+  body.printing-cheat-sheet * {
+    visibility: hidden;
+  }
+  body.printing-cheat-sheet .printable-cheat-sheet,
+  body.printing-cheat-sheet .printable-cheat-sheet * {
+    visibility: visible;
+  }
+  body.printing-cheat-sheet .printable-cheat-sheet {
+    display: block !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: white !important;
+    color: black !important;
+  }
+}
+.printable-cheat-sheet {
+  display: none;
+}

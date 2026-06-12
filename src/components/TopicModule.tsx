@@ -14,6 +14,8 @@ import { fetchTopicContent } from '../data/topicCompiler';
 import { TopicContent } from '../data/topicContent';
 import { TextRank, ContentGenerator } from '../utils/nlpEngine';
 import { useGamification } from '../context/GamificationContext';
+import { useAuth } from '../context/AuthContext';
+import { SRSEngine } from '../data/srsEngine';
 import MindMap from './MindMap';
 import FocusMode from './FocusMode';
 import InteractiveDiagram from './InteractiveDiagram';
@@ -151,6 +153,7 @@ type TabType = 'read' | 'summary' | 'flashcards' | 'quiz' | 'mindmap' | 'explain
 const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = false, onExternalFocusExit }) => {
   const [topic, setTopic] = useState<TopicContent | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const { currentUser } = useAuth();
 
   useEffect(() => {
     setIsLoading(true);
@@ -414,6 +417,21 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
             Focus
           </button>
           <button
+            className="tm-bookmark-btn"
+            style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}
+            onClick={() => {
+              document.body.classList.add('printing-cheat-sheet');
+              window.print();
+              setTimeout(() => {
+                document.body.classList.remove('printing-cheat-sheet');
+              }, 1000);
+            }}
+            disabled={!nlpData}
+          >
+            <Download size={18} />
+            Cheat Sheet
+          </button>
+          <button
             className={`tm-bookmark-btn ${bookmarked ? 'active' : ''}`}
             onClick={() => setBookmarked(!bookmarked)}
           >
@@ -421,6 +439,40 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
             {bookmarked ? 'Saved' : 'Save'}
           </button>
         </div>
+      </div>
+
+      {/* Printable Cheat Sheet (Hidden unless printing) */}
+      <div className="printable-cheat-sheet">
+        <h1 style={{ fontSize: '32px', borderBottom: '2px solid black', paddingBottom: '10px' }}>{topic.title} - Cheat Sheet</h1>
+        
+        {topic.keyFormulas && topic.keyFormulas.length > 0 && (
+          <>
+            <h2 style={{ fontSize: '24px', marginTop: '30px' }}>Key Formulas</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+              {topic.keyFormulas.map((f, i) => (
+                <div key={i} style={{ padding: '15px', border: '1px solid #ccc', borderRadius: '8px' }}>
+                  <strong>{f.name}</strong>
+                  <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>{`$$${f.latex}$$`}</ReactMarkdown>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+
+        {nlpData && nlpData.summary && (
+          <>
+            <h2 style={{ fontSize: '24px', marginTop: '30px' }}>Key Concepts & AI Summary</h2>
+            <ul style={{ paddingLeft: '20px' }}>
+              {nlpData.summary.map((s, i) => (
+                <li key={i} style={{ marginBottom: '10px', fontSize: '16px', lineHeight: '1.5' }}>
+                  <ReactMarkdown remarkPlugins={[remarkMath, remarkGfm]} rehypePlugins={[rehypeKatex]}>
+                    {s.replace(/^#{1,6}\s*/gm, '').replace(/\\n/g, ' ').replace(/^---+$/gm, '').trim()}
+                  </ReactMarkdown>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
       </div>
 
       {/* Main Content + Sidebar Layout */}
@@ -602,9 +654,25 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
                     </button>
                     <button 
                       className="fc-btn primary" 
-                      onClick={() => {
-                        // Send to SRS engine (mocked for now)
-                        alert("Added to your spaced repetition deck!");
+                      onClick={async () => {
+                        if (!currentUser) {
+                          alert("Please log in to save flashcards to your deck.");
+                          return;
+                        }
+                        const cardData = nlpData.flashcards[flashcardIndex];
+                        const newCard = SRSEngine.createCard(
+                          `gen_${Date.now()}_${flashcardIndex}`, 
+                          topicId, 
+                          cardData.front, 
+                          cardData.back
+                        );
+                        try {
+                          await SRSEngine.saveFlashcardsToDeck(currentUser.id, [newCard]);
+                          alert("Successfully added to your spaced repetition deck!");
+                        } catch (err) {
+                          console.error(err);
+                          alert("Failed to save flashcard.");
+                        }
                       }}
                     >
                       <Plus size={16} /> Send to SRS Deck

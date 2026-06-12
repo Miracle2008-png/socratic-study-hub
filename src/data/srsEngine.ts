@@ -1,3 +1,5 @@
+import { supabase } from '../utils/supabase';
+
 export interface Flashcard {
   id: string;
   topicId: string;
@@ -62,5 +64,27 @@ export class SRSEngine {
       efactor: 2.5,
       nextReviewDate: Date.now(), // Ready to review immediately
     };
+  }
+
+  static async saveFlashcardsToDeck(userId: string, newCards: Flashcard[]) {
+    // Fetch current deck
+    const { data } = await supabase.from('flashcards_decks').select('cards').eq('user_id', userId).single();
+    let currentCards: Flashcard[] = [];
+    
+    if (data && data.cards) {
+      currentCards = data.cards as Flashcard[];
+    }
+    
+    // Append new cards
+    const mergedCards = [...currentCards, ...newCards];
+    
+    // Upsert back
+    await supabase.from('flashcards_decks').upsert({
+      user_id: userId,
+      cards: mergedCards as any,
+      updated_at: new Date().toISOString()
+    }, { onConflict: 'user_id' });
+    
+    return mergedCards;
   }
 }
