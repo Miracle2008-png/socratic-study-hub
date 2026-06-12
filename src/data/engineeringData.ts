@@ -181,19 +181,10 @@ export const ENGINEERING_BRANCHES: Record<string, EngineeringBranch> = {
     description: 'Structural analysis, geotechnics, and environmental infrastructure.',
     color: '#f97316', // Orange
     topics: [
-      { id: 'civil-env-1', title: 'Statics & Solid Mechanics' },
-      { id: 'civil-env-2', title: 'Structural Analysis' },
-      { id: 'civil-env-3', title: 'Reinforced Concrete Design' },
-      { id: 'civil-env-4', title: 'Steel Structure Design' },
-      { id: 'civil-env-5', title: 'Soil Mechanics & Geotechnics' },
-      { id: 'civil-env-6', title: 'Foundation Engineering' },
-      { id: 'civil-env-7', title: 'Fluid Mechanics for Civil Engineering' },
-      { id: 'civil-env-8', title: 'Hydrology & Water Resources' },
-      { id: 'civil-env-9', title: 'Environmental Engineering Fundamentals' },
-      { id: 'civil-env-10', title: 'Water & Wastewater Treatment' },
-      { id: 'civil-env-11', title: 'Transportation Engineering' },
-      { id: 'civil-env-12', title: 'Surveying & Geomatics' },
-      { id: 'civil-env-13', title: 'Construction Management' }
+      { id: 'civ-1', title: 'Statics & Structural Mechanics' },
+      { id: 'civ-2', title: 'Fluid Mechanics & Hydrology' },
+      { id: 'civ-3', title: 'Geotechnical Engineering & Soils' },
+      { id: 'civ-4', title: 'Environmental & Transportation' }
     ]
   }
 };
