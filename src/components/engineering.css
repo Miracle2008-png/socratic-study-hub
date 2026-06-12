@@ -521,3 +521,42 @@
   0% { transform: translate(0, 0) scale(1); }
   100% { transform: translate(5vw, -5vw) scale(1.1); }
 }
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .roadmap-spine {
+    left: 24px;
+    transform: none;
+  }
+  
+  .roadmap-node-wrapper {
+    width: 100%;
+    justify-content: flex-start !important;
+    padding-left: 60px !important;
+    padding-right: 0 !important;
+    align-self: flex-start !important;
+  }
+
+  .roadmap-node-wrapper.left .node-connector,
+  .roadmap-node-wrapper.right .node-connector {
+    left: 0;
+    right: auto;
+    width: 60px;
+  }
+
+  .roadmap-header h1 {
+    font-size: 32px;
+  }
+  
+  .engineering-container {
+    padding: 16px;
+  }
+  
+  .engineering-hub {
+    padding: 24px 16px;
+  }
+
+  .roadmap-node {
+    max-width: 100%;
+  }
+}

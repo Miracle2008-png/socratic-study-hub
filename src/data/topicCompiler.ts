@@ -403,10 +403,12 @@ export const ALL_TOPICS: Record<string, TopicContent> = {
 const markdownModules = import.meta.glob('/src/data/content/**/*.md', { query: '?raw', import: 'default' });
 
 export async function fetchTopicContent(topicId: string): Promise<TopicContent> {
+  // Extract just the topic ID if it contains a branch prefix (e.g., branchId/topicId)
+  const actualTopicId = topicId.includes('/') ? topicId.split('/').pop()! : topicId;
   // Normalize to lowercase to handle stale localStorage IDs with wrong casing
-  const normalizedId = topicId.toLowerCase().replace(/\s+/g, '-');
+  const normalizedId = actualTopicId.toLowerCase().replace(/\s+/g, '-');
 
-  const baseTopic = ALL_TOPICS[normalizedId] || ALL_TOPICS[topicId];
+  const baseTopic = ALL_TOPICS[normalizedId] || ALL_TOPICS[actualTopicId];
   const matchingPaths = Object.keys(markdownModules).filter(path => path.includes(`/content/${normalizedId}/`));
 
   // If no markdown files exist, rely entirely on the hardcoded base topic

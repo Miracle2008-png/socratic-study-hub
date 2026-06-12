@@ -325,8 +325,11 @@ const AppContent: React.FC = () => {
       return <SubjectHub subject="chemistry" onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'chemistry'); }} />;
     }
     if (activeTab === 'engineering') {
-      if (activeTopic) return <TopicModule topicId={activeTopic} externalFocusMode={isTopicFocusMode} onExternalFocusExit={() => setIsTopicFocusMode(false)} />;
-      return <EngineeringHub onTopicSelect={(id) => { setActiveTopic(id); openTopic(id, 'engineering'); }} />;
+      if (activeTopic) {
+        const topicId = activeTopic.includes('/') ? activeTopic.split('/')[1] : activeTopic;
+        return <TopicModule topicId={topicId} externalFocusMode={isTopicFocusMode} onExternalFocusExit={() => setIsTopicFocusMode(false)} />;
+      }
+      return <EngineeringHub onTopicSelect={(id, branchId) => { setActiveTopic(branchId ? `${branchId}/${id}` : id); openTopic(id, 'engineering'); }} />;
     }
     if (activeTab === 'biology') {
       if (activeTopic) return <TopicModule topicId={activeTopic} externalFocusMode={isTopicFocusMode} onExternalFocusExit={() => setIsTopicFocusMode(false)} />;
@@ -389,7 +392,11 @@ const AppContent: React.FC = () => {
         />
       )}
 
-      <main className="main-content" onClick={() => isMobileMenuOpen && setIsMobileMenuOpen(false)}>
+      {isMobileMenuOpen && (
+        <div className="mobile-menu-overlay anim-fade" onClick={() => setIsMobileMenuOpen(false)} />
+      )}
+
+      <main className="main-content">
         {!isFocusMode && (
           <header className="topbar">
             <button className="mobile-menu-btn" onClick={(e) => { e.stopPropagation(); setIsMobileMenuOpen(!isMobileMenuOpen); }}>

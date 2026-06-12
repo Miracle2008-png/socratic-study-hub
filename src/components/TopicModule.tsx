@@ -454,11 +454,12 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
                   td: ({ children }) => <td className="tm-td">{children}</td>,
                   code: ({ children, className, ...props }) => {
                     const isBlock = className?.includes('language');
-                    if (className?.includes('language-drill')) {
-                      return <InteractiveDrill content={String(children)} />;
+                    const contentStr = String(children);
+                    if (className?.includes('language-drill') || contentStr.includes('"options":')) {
+                      return <InteractiveDrill content={contentStr} />;
                     }
-                    if (className?.includes('language-diagram')) {
-                      return <InteractiveDiagram content={String(children)} />;
+                    if (className?.includes('language-diagram') || contentStr.includes('"nodes":')) {
+                      return <InteractiveDiagram content={contentStr} />;
                     }
                     return isBlock
 
@@ -1179,6 +1180,30 @@ const TopicModule: React.FC<TopicModuleProps> = ({ topicId, externalFocusMode = 
         .exam-hint-toggle:hover { color: var(--color-accent); }
         .exam-hint-box { margin-top: 8px; padding: 14px 18px; background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.2); border-radius: 8px; font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; }
         .tm-empty-state { text-align: center; padding: 48px; background: var(--color-base-alt); border-radius: 12px; color: var(--color-text-muted); }
+
+        /* ─── Mobile Responsiveness ──────────────────────────── */
+        @media (max-width: 900px) {
+          .tm-body { grid-template-columns: 1fr; }
+          .tm-sidebar { position: static; order: 2; margin-top: 24px; }
+          .tm-main-area { order: 1; padding: 32px 24px; min-height: auto; }
+          .tm-hero { padding: 24px 20px; display: flex; flex-direction: column; }
+          .tm-hero-actions { position: relative; top: auto; right: auto; margin-top: 16px; justify-content: flex-start; flex-wrap: wrap; }
+          .tm-tabs { overflow-x: auto; white-space: nowrap; padding-bottom: 4px; scrollbar-width: none; }
+          .tm-tabs::-webkit-scrollbar { display: none; }
+          .flashcard-container { height: auto; min-height: 300px; }
+          .flashcard-front, .flashcard-back { position: relative; height: auto; min-height: 300px; backface-visibility: visible; }
+          .flashcard-back { transform: none; display: none; }
+          .flashcard-container.flipped .flashcard-front { display: none; }
+          .flashcard-container.flipped .flashcard-back { display: flex; }
+          .flashcard-inner { transform: none !important; transition: none !important; }
+        }
+
+        @media (max-width: 600px) {
+          .tm-main-area { padding: 24px 16px; }
+          .tm-hero-title { font-size: 28px; }
+          .tm-read-nav { flex-direction: column; gap: 16px; }
+          .tm-nav-btn { width: 100%; }
+        }
 
       `}</style>
     </div>

@@ -523,6 +523,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .app-container.mobile-menu-open .sidebar {
     transform: translateX(0);
   }
+
+  .mobile-menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 999;
+  }
   
   .mobile-menu-btn {
     display: flex;

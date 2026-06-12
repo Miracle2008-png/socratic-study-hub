@@ -5,7 +5,7 @@ import { EngineeringBranch } from './EngineeringBranch';
 import './engineering.css';
 
 interface EngineeringHubProps {
-  onTopicSelect: (topicId: string) => void;
+  onTopicSelect: (topicId: string, branchId?: string) => void;
 }
 
 export const EngineeringHub: React.FC<EngineeringHubProps> = ({ onTopicSelect }) => {
@@ -18,7 +18,7 @@ export const EngineeringHub: React.FC<EngineeringHubProps> = ({ onTopicSelect })
         <button className="back-to-hub-btn" onClick={() => setSelectedBranch(null)}>
           <ArrowLeft size={16} /> Back to Engineering
         </button>
-        <EngineeringBranch branch={branch} onTopicSelect={onTopicSelect} />
+        <EngineeringBranch branch={branch} onTopicSelect={(topicId) => onTopicSelect(topicId, branch.id)} />
       </div>
     );
   }

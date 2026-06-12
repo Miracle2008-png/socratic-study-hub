@@ -42,7 +42,7 @@ Where:
 2.  Maximize total orbital angular momentum (highest $L$) for a given multiplicity.
 3.  For subshells less than half-full, choose minimum $J$. For subshells more than half-full, choose maximum $J$.
 
-```diagram
+\`\`\`diagram
 {
   "nodes": [
     {"id": "1", "type": "input", "data": {"label": "Atomic Model"}, "position": {"x": 250, "y": 0}},
@@ -62,7 +62,7 @@ Where:
     {"id": "e3-7", "source": "3", "target": "7"}
   ]
 }
-```
+\`\`\`
 `,
 
   'Organic Chemistry I: Structure, Nomenclature & Stereochemistry': `
@@ -132,7 +132,7 @@ Cyclohexane relieves angle and torsional strain by puckering into a **chair conf
 *   **Ring Flip**: When cyclohexane undergoes a chair flip, all axial bonds become equatorial, and all equatorial bonds become axial. Up stays up, down stays down.
 *   **1,3-Diaxial Interactions**: Bulky groups strongly prefer the equatorial position. If a bulky group (like *tert*-butyl) is axial, its electron cloud heavily clashes with the axial hydrogens on carbons 3 and 5. The energy difference between the axial and equatorial forms is quantified by the **A-value**. For *tert*-butyl, the A-value is so large ($\\approx 5.0$ kcal/mol) that it effectively "locks" the ring, preventing the ring flip.
 
-```diagram
+\`\`\`diagram
 {
   "nodes": [
     {"id": "1", "type": "input", "data": {"label": "Isomers"}, "position": {"x": 250, "y": 0}},
@@ -148,7 +148,7 @@ Cyclohexane relieves angle and torsional strain by puckering into a **chair conf
     {"id": "e3-5", "source": "3", "target": "5"}
   ]
 }
-```
+\`\`\`
 `,
 
   'Organic Chemistry II: Hydrocarbon Reactions & Mechanisms': `
@@ -229,7 +229,7 @@ Benzene acts as a nucleophile, attacking exceptionally strong electrophiles to t
 *   **Activating Groups (Ortho/Para Directors)**: Groups with lone pairs ($-OH, -NH_2, -OR$) donate electron density via resonance. They stabilize the ortho/para Sigma complex intermediates because the positive charge can be placed directly adjacent to the heteroatom, allowing the lone pair to form a stabilizing $\\pi$ bond (giving all atoms a full octet).
 *   **Deactivating Groups (Meta Directors)**: Groups with partial positive charges ($-NO_2, -C \\equiv N, -C=O$) withdraw electron density via inductive and resonance effects. They direct meta because ortho/para attacks force the positive charge of the intermediate to sit directly next to the positively charged substituent, causing intense electrostatic repulsion.
 
-```diagram
+\`\`\`diagram
 {
   "nodes": [
     {"id": "1", "type": "input", "data": {"label": "Substitution Reactions"}, "position": {"x": 250, "y": 0}},
@@ -245,7 +245,7 @@ Benzene acts as a nucleophile, attacking exceptionally strong electrophiles to t
     {"id": "e3-5", "source": "3", "target": "5"}
   ]
 }
-```
+\`\`\`
 `,
 
   'Organic Chemistry III: Carbonyls, Alcohols & Amines': `
@@ -308,7 +308,7 @@ Because these derivatives have leaving groups (unlike ketones), the tetrahedral 
 Carboxylic Acid + Alcohol $\\rightleftharpoons$ Ester + Water.
 *   **Mechanism**: Completely acid-catalyzed and fully reversible. The carbonyl is protonated to make it ultra-electrophilic. The alcohol attacks, forming a tetrahedral intermediate. Proton transfers turn the original $-OH$ group into $-OH_2^+$, an excellent leaving group. The oxygen lone pair pushes down, kicking out water and reforming the carbonyl. To drive the reaction forward, Le Chatelier's principle is used by removing water via a Dean-Stark trap.
 
-```diagram
+\`\`\`diagram
 {
   "nodes": [
     {"id": "1", "type": "input", "data": {"label": "Carbonyl Compounds"}, "position": {"x": 250, "y": 0}},
@@ -324,7 +324,7 @@ Carboxylic Acid + Alcohol $\\rightleftharpoons$ Ester + Water.
     {"id": "e3-5", "source": "3", "target": "5"}
   ]
 }
-```
+\`\`\`
 `,
 
   'Organic Chemistry IV: Spectroscopy & Structural Determination': `
@@ -383,7 +383,7 @@ Mass spec does not use light. It bombards a molecule with a brutal beam of high-
     *   **Chlorine ($Cl$)**: Exists naturally as $75\\%$ $^{35}Cl$ and $25\\%$ $^{37}Cl$. A molecule with one Chlorine will show an $M$ and $M+2$ peak in a **3:1 ratio**.
     *   **The Nitrogen Rule**: If a molecule has an *odd* nominal mass, it must contain an *odd* number of nitrogen atoms.
 
-```diagram
+\`\`\`diagram
 {
   "nodes": [
     {"id": "1", "type": "input", "data": {"label": "Spectroscopy"}, "position": {"x": 300, "y": 0}},
@@ -397,7 +397,7 @@ Mass spec does not use light. It bombards a molecule with a brutal beam of high-
     {"id": "e1-4", "source": "1", "target": "4"}
   ]
 }
-```
+\`\`\`
 `,
 
   'Reaction kinetics': `
@@ -446,7 +446,7 @@ Where:
 *   $\\Delta G^{\\ddagger}$ is the Gibbs free energy of activation.
 *   $k_B$ and $h$ are the Boltzmann and Planck constants.
 
-```diagram
+\`\`\`diagram
 {
   "nodes": [
     {"id": "1", "type": "input", "data": {"label": "Reaction Kinetics"}, "position": {"x": 250, "y": 0}},
@@ -460,7 +460,7 @@ Where:
     {"id": "e1-4", "source": "1", "target": "4"}
   ]
 }
-```
+\`\`\`
 `,
 
   'Material & Energy Balances (Chemical Engineering)': `
@@ -584,7 +584,7 @@ When solving an energy balance for a reactor:
 ### Adiabatic Flame Temperature
 If a reactor (like a combustion chamber) is perfectly insulated, $\\dot{Q} = 0$. The **adiabatic flame temperature** is the theoretical maximum temperature the products can reach. All the energy released by the exothermic reaction goes entirely into heating the product gases. You solve for $T_{out}$ iteratively such that $\\Delta \\dot{H} = 0$.
 
-```diagram
+\`\`\`diagram
 {
   "nodes": [
     {"id": "1", "type": "input", "data": {"label": "Engineering Balances"}, "position": {"x": 250, "y": 0}},
@@ -599,7 +599,7 @@ If a reactor (like a combustion chamber) is perfectly insulated, $\\dot{Q} = 0$.
     {"id": "e3-4", "source": "3", "target": "4"}
   ]
 }
-```
+\`\`\`
 `,
 
   'Hybridization & VSEPR Theory': `
@@ -690,7 +690,7 @@ For elements in Period 3 or below (like P, S, Cl), empty $d$ orbitals can partic
 | **Rotation** | Free rotation is allowed | Rotation is highly restricted (breaking the $\\pi$ bond is required) |
 | **Order** | Always the first bond formed | Only exists in double or triple bonds |
 
-```diagram
+\`\`\`diagram
 {
   "nodes": [
     {"id": "1", "type": "input", "data": {"label": "Molecular Geometry"}, "position": {"x": 250, "y": 0}},
@@ -707,6 +707,6 @@ For elements in Period 3 or below (like P, S, Cl), empty $d$ orbitals can partic
     {"id": "e4-5", "source": "4", "target": "5"}
   ]
 }
-```
+\`\`\`
 `
 };
