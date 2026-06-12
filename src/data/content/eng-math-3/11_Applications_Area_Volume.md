@@ -1,50 +1,79 @@
-# 11. Applications: Area and Volume
+# 11. Applications: Area, Volume, and Work
 
-In engineering, integration extends far beyond the 2D area under a curve. It allows us to calculate the exact volume of complex 3D shapes, the center of mass of irregular objects, and the work required to empty a fluid tank.
+In engineering and physics, the mathematical operation of integration translates seamlessly into calculating physical realities. Integration extends far beyond calculating the abstract 2D area under a mathematical curve. By conceptualizing integration as an infinite sum of infinitesimally small pieces, we can calculate the exact volume of complex 3D machine parts, pinpoint the center of gravity of irregular structural beams, and compute the total work required to pump fluid out of a massive industrial tank.
 
 ### Area Between Two Curves
-To find the area trapped between an upper curve $y = f(x)$ and a lower curve $y = g(x)$ from $x=a$ to $x=b$, you integrate the difference between them:
+Often, engineers need to find the area trapped between an upper boundary curve $y = f(x)$ and a lower boundary curve $y = g(x)$. For example, if $f(x)$ is the rate of water flowing into a reservoir and $g(x)$ is the rate of water flowing out, the area between them over time $t$ gives the total net accumulation of water.
 $$ \text{Area} = \int_{a}^{b} [f(x) - g(x)] dx $$
 
+#### Example 1: Net Accumulation (Easy)
+**Scenario:** Find the area bounded by the parabola $y = x^2$ and the line $y = x$.
+**Step 1:** Find intersection points to determine bounds. Setting $x^2 = x \implies x(x-1) = 0$, so $x=0$ and $x=1$.
+**Step 2:** Identify the upper and lower curves. On the interval $[0, 1]$, $x \ge x^2$, so $f(x) = x$ and $g(x) = x^2$.
+**Step 3:** Set up and evaluate the integral.
+$$ A = \int_{0}^{1} (x - x^2) dx = \left[ \frac{x^2}{2} - \frac{x^3}{3} \right]_{0}^{1} = \left( \frac{1}{2} - \frac{1}{3} \right) - 0 = \frac{1}{6} $$
+The enclosed area is $\frac{1}{6}$ square units.
+
 ### Volumes of Solids of Revolution
-If you take a 2D curve and spin it rapidly around an axis (like a piece of metal on a lathe), it sweeps out a 3D volume. There are two primary methods for calculating this volume:
+When designing symmetrical parts like drive shafts, pistons, nozzles, or pressure vessels, the object can often be modeled by taking a 2D curve and revolving it around an axis (mimicking the action of a lathe). We can slice these 3D objects into infinitesimally thin 2D pieces and integrate to find the total volume.
 
-#### 1. The Disk / Washer Method
-Used when you slice the solid perpendicular to the axis of rotation. The slices look like flat circular disks (or washers with holes in them).
-*   **Disk (No hole):** $V = \pi \int_{a}^{b} [R(x)]^2 dx$
-*   **Washer (Hole):** $V = \pi \int_{a}^{b} \left( [R_{outer}(x)]^2 - [R_{inner}(x)]^2 \right) dx$
+#### Method 1: The Disk and Washer Methods
+We use this method when we slice the solid **perpendicular** to the axis of revolution. The resulting cross-sections are circles (disks) or rings (washers).
+*   **Disk (Solid piece):** $V = \pi \int_{a}^{b} [R(x)]^2 dx$
+*   **Washer (Hollow piece):** $V = \pi \int_{a}^{b} \left( [R_{outer}(x)]^2 - [R_{inner}(x)]^2 \right) dx$
 
-#### 2. The Cylindrical Shells Method
-Used when you slice the solid parallel to the axis of rotation. The slices look like concentric tin cans.
-$$ V = 2\pi \int_{a}^{b} x \cdot f(x) dx $$
-(Where $x$ is the radius of the shell, and $f(x)$ is the height).
+#### Example 2: Designing a Hollow Nozzle (Medium)
+**Scenario:** A nozzle component is modeled by revolving the region between $y = \sqrt{x}$ and $y = x^2$ around the x-axis. Find its volume.
+**Step 1:** Intersections are at $x=0$ and $x=1$.
+**Step 2:** Determine outer and inner radii. The outer radius is $R_{outer} = \sqrt{x}$ and the inner is $R_{inner} = x^2$.
+**Step 3:** Apply the Washer Method.
+$$ V = \pi \int_{0}^{1} \left( (\sqrt{x})^2 - (x^2)^2 \right) dx $$
+$$ V = \pi \int_{0}^{1} (x - x^4) dx = \pi \left[ \frac{x^2}{2} - \frac{x^5}{5} \right]_{0}^{1} $$
+$$ V = \pi \left( \frac{1}{2} - \frac{1}{5} \right) = \frac{3\pi}{10} $$
+The volume of the material needed is $\frac{3\pi}{10}$ cubic units.
 
-### Worked Example: The Disk Method
-**Problem:** Find the volume of the solid formed by revolving the curve $y = \sqrt{x}$ from $x=0$ to $x=4$ around the x-axis.
+#### Method 2: The Cylindrical Shells Method
+We use this method when we slice the solid **parallel** to the axis of revolution. Imagine peeling an onion; the volume is the sum of the surface areas of thin concentric cylindrical shells.
+$$ V = 2\pi \int_{a}^{b} (\text{radius}) \cdot (\text{height}) dx = 2\pi \int_{a}^{b} x \cdot f(x) dx $$
 
-**Solution:**
-Because we are revolving around the x-axis, slicing perpendicular to it creates solid disks without holes.
-Radius $R(x) = \sqrt{x}$.
-$$ V = \pi \int_{0}^{4} [\sqrt{x}]^2 dx $$
-$$ V = \pi \int_{0}^{4} x \, dx $$
-Integrate using the reverse power rule:
-$$ V = \pi \left[ \frac{x^2}{2} \right]_{0}^{4} $$
-Evaluate from 0 to 4:
-$$ V = \pi \left( \frac{(4)^2}{2} - \frac{(0)^2}{2} \right) $$
-$$ V = \pi \left( \frac{16}{2} - 0 \right) = 8\pi $$
-The exact volume is $8\pi$ cubic units.
+#### Example 3: Spinning a Flywheel (Medium)
+**Scenario:** Find the volume of the solid generated by revolving the region under $y = -x^2 + 2x$ between $x=0$ and $x=2$ around the y-axis. Using washers here would be algebraically difficult because solving for $x$ in terms of $y$ is messy.
+**Step 1:** Apply the Shell Method. The radius of a shell is $x$, and its height is $f(x) = -x^2 + 2x$.
+$$ V = 2\pi \int_{0}^{2} x(-x^2 + 2x) dx $$
+**Step 2:** Distribute and integrate.
+$$ V = 2\pi \int_{0}^{2} (-x^3 + 2x^2) dx = 2\pi \left[ -\frac{x^4}{4} + \frac{2x^3}{3} \right]_{0}^{2} $$
+$$ V = 2\pi \left( \left( -\frac{16}{4} + \frac{16}{3} \right) - 0 \right) = 2\pi \left( -4 + \frac{16}{3} \right) = 2\pi \left( \frac{4}{3} \right) = \frac{8\pi}{3} $$
+The volume of the flywheel is $\frac{8\pi}{3}$ cubic units.
+
+### Fluid Work: Pumping a Tank
+In civil and chemical engineering, integration is used to calculate the work required to empty a tank. The fluid must be lifted in thin horizontal "slices", and each slice must travel a different vertical distance against gravity.
+$\text{Work} = \int_{a}^{b} (\text{Force of a slice}) \times (\text{Distance to lift slice}) dy$
+$\text{Force of a slice} = \rho \cdot g \cdot (\text{Area of slice}) \cdot dy$ (where $\rho$ is density).
+
+#### Example 4: Emptying a Conical Tank (Hard)
+**Scenario:** An inverted conical tank (point down) is full of water (density $\rho = 1000 \text{ kg/m}^3$). It has a total height of $10\text{ m}$ and a top radius of $5\text{ m}$. Find the work done pumping all the water to the top of the tank ($g = 9.8 \text{ m/s}^2$).
+**Step 1:** Set up a coordinate system with $y=0$ at the bottom tip of the tank and $y=10$ at the top brim.
+**Step 2:** Find the radius of a circular water slice at an arbitrary height $y$. By similar triangles, $\frac{r}{y} = \frac{5}{10} \implies r = \frac{1}{2}y$.
+**Step 3:** The area of this slice is $A(y) = \pi r^2 = \pi (\frac{1}{2}y)^2 = \frac{\pi}{4}y^2$.
+**Step 4:** The force (weight) of a infinitesimally thin slice is $\rho g A(y) dy$.
+**Step 5:** The vertical distance this slice must be lifted to reach the top is $(10 - y)$.
+**Step 6:** Integrate from $y=0$ to $y=10$.
+$$ W = \int_{0}^{10} \left(\rho g \frac{\pi}{4}y^2\right) \cdot (10 - y) dy $$
+$$ W = \frac{\rho g \pi}{4} \int_{0}^{10} (10y^2 - y^3) dy $$
+$$ W = \frac{\rho g \pi}{4} \left[ \frac{10y^3}{3} - \frac{y^4}{4} \right]_{0}^{10} = \frac{1000(9.8)\pi}{4} \left( \frac{10000}{3} - 2500 \right) $$
+$$ W = 2450\pi \left( \frac{10000}{3} - \frac{7500}{3} \right) = 2450\pi \left( \frac{2500}{3} \right) \approx 6.41 \times 10^6 \text{ Joules} $$
 
 
 ```diagram
 {
-  "direction": "LR",
+  "direction": "TB",
   "nodes": [
     {
       "id": "1",
       "data": {
-        "label": "Applications Area Volume",
-        "icon": "BrainCircuit",
-        "description": "Core Concept: Applications Area Volume"
+        "label": "Engineering Applications",
+        "icon": "Factory",
+        "description": "Integration applied to physical realities."
       },
       "style": {
         "background": "#1e3a8a",
@@ -54,9 +83,9 @@ The exact volume is $8\pi$ cubic units.
     {
       "id": "2",
       "data": {
-        "label": "Fundamental Theorem",
-        "icon": "ArrowRightCircle",
-        "description": "Linking derivatives and integrals."
+        "label": "Area & Displacement",
+        "icon": "Layers",
+        "description": "Area between curves."
       },
       "style": {
         "background": "#4c1d95",
@@ -66,9 +95,9 @@ The exact volume is $8\pi$ cubic units.
     {
       "id": "3",
       "data": {
-        "label": "U-Substitution",
-        "icon": "ArrowRightCircle",
-        "description": "Reverse chain rule."
+        "label": "Volumes of Revolution",
+        "icon": "Cylinder",
+        "description": "Disk, Washer, and Shell Methods."
       },
       "style": {
         "background": "#b45309",
@@ -78,9 +107,9 @@ The exact volume is $8\pi$ cubic units.
     {
       "id": "4",
       "data": {
-        "label": "Integration by Parts",
-        "icon": "CheckCircle",
-        "description": "Reverse product rule."
+        "label": "Fluid Work & Mass",
+        "icon": "Droplet",
+        "description": "Pumping tanks and balancing loads."
       },
       "style": {
         "background": "#14532d",
@@ -95,12 +124,12 @@ The exact volume is $8\pi$ cubic units.
       "animated": true
     },
     {
-      "source": "2",
+      "source": "1",
       "target": "3",
       "animated": true
     },
     {
-      "source": "3",
+      "source": "1",
       "target": "4",
       "animated": true
     }
