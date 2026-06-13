@@ -607,102 +607,229 @@ Q.E.D. By simply plugging in $n=1$, $n=2$, etc., this formula perfectly predicte
   'Work, Energy & Power': `
 # Work, Energy & Power: The Currency of Physics
 
-## 1. Work: The Transfer of Energy
-In physics, "Work" is not effort; it is a very specific mechanical transfer of energy. Work is done when a force causes an object to displace.
-If the force is constant and perfectly aligns with the displacement: $W = Fd$.
-If the force is applied at an angle $\\theta$:
-$$ W = Fd \\cos\\theta $$
-This is mathematically equivalent to the dot product: $W = \\vec{F} \\cdot \\vec{d}$.
-* If you carry a heavy box and walk horizontally, you do $0$ work on the box because your lifting force (up) is at a $90^\\circ$ angle to the displacement (forward), and $\\cos(90^\\circ) = 0$.
+## 0. Why Energy?
+After kinematics (where) and dynamics (why via forces), energy gives us a third — often simpler — lens on motion. Instead of tracking every force at every instant, we ask: *how much energy entered the system, and where did it go?* Energy is the most unifying concept across all of physics.
 
-## 2. Kinetic Energy
-Kinetic Energy ($K$) is the energy of motion. 
-$$ K = \\frac{1}{2}mv^2 $$
-If you double your driving speed, your kinetic energy quadruples. This is why high-speed car crashes are exponentially more devastating.
+---
 
-## 3. Potential Energy
-Potential Energy ($U$) is stored energy based on an object's position in a conservative force field (like gravity or a spring).
-* **Gravitational Potential Energy (near Earth)**: $U_g = mgh$
-* **Elastic Potential Energy (Spring)**: $U_s = \\frac{1}{2}kx^2$ (where $k$ is the spring constant).
+## 1. Work — The Transfer of Energy
 
-## 4. The Law of Conservation of Energy
-Energy cannot be created or destroyed, only transformed from one form to another. 
-In a closed, frictionless system, the total mechanical energy $E_{total} = K + U$ remains perfectly constant.
-If a roller coaster drops from a high peak, it trades its potential energy for kinetic energy as it accelerates downward, but the total sum remains identical.
+### 1.1 The Definition
+In everyday language "work" means effort. In physics it is precise: **work is the transfer of energy by a force acting through a displacement**. If nothing moves, no work is done — no matter how hard you push.
 
-## 5. Power
-Power is the rate at which work is done (or energy is transferred) over time.
-$$ P = \\frac{W}{t} = \\frac{dE}{dt} $$
-It is measured in Watts (1 Watt = 1 Joule per second).
-Since $W = \\vec{F} \\cdot \\vec{d}$, Power can also be calculated as Force times velocity:
-$$ P = \\vec{F} \\cdot \\vec{v} $$
+For a constant force $\vec{F}$ producing displacement $\vec{d}$:
+$$W = \vec{F}\cdot\vec{d} = Fd\cos\theta$$
 
-## Derivation of the Kinetic Energy Formula
-Why is kinetic energy exactly $\\frac{1}{2}mv^2$" Where does this specific formula come from" It is rigorously derived from the Work-Energy Theorem.
+where $\theta$ is the angle between the force and displacement directions. Work is a **scalar** with unit **Joule (J)**: $1\text{ J} = 1\text{ N}\cdot\text{m}$.
 
-**Step 1:** Define Work using calculus.
-The total work done by a net force moving an object from position $x_1$ to $x_2$ is the integral of the force over distance:
-$$ W = \\int_{x_1}^{x_2} F_{net} \\, dx $$
+### 1.2 The Angle Decides Everything
 
-**Step 2:** Substitute Newton's Second Law.
-We know $F_{net} = ma$. So:
-$$ W = \\int_{x_1}^{x_2} ma \\, dx $$
+| Angle $\theta$ | $\cos\theta$ | Work Done | Meaning |
+|---|---|---|---|
+| $0°$ | $+1$ | $W = Fd$ (maximum) | Force perfectly aligned with motion |
+| $90°$ | $0$ | $W = 0$ | Force perpendicular — zero energy transferred |
+| $180°$ | $-1$ | $W = -Fd$ (minimum) | Force opposes motion — energy removed |
 
-**Step 3:** Use the Chain Rule trick for acceleration.
-We know $a = \\frac{dv}{dt}$. By the chain rule, $a = \\frac{dv}{dx}\\frac{dx}{dt} = v\\frac{dv}{dx}$.
-Substitute this into the integral:
-$$ W = \\int_{x_1}^{x_2} m \\left( v \\frac{dv}{dx} \\right) dx $$
+> **Classic example:** You carry a 20 kg box and walk 10 m horizontally. Your arms push 196 N **upward**; displacement is **horizontal**. Since $\theta = 90°$, $W = Fd\cos90° = 0$. You do **zero** mechanical work on the box — its KE and PE are unchanged. You feel tired (biological energy is burned), but no mechanical energy is transferred.
 
-**Step 4:** Cancel the $dx$ differentials.
-The integral transforms from an integral over distance ($dx$) to an integral over velocity ($dv$)! The limits change from initial velocity $v_i$ to final velocity $v_f$:
-$$ W = \\int_{v_i}^{v_f} mv \\, dv $$
+### 1.3 Work by Variable Forces
+When force changes with position (e.g. a spring), you must integrate:
+$$W = \int_{x_1}^{x_2} F(x)\,dx$$
+This equals the **area under the Force-vs-Position graph**.
 
-**Step 5:** Evaluate the integral.
-Since mass $m$ is constant, we just integrate $v$:
-$$ W = m \\left[ \\frac{1}{2}v^2 \\right]_{v_i}^{v_f} $$
-$$ W = \\frac{1}{2}mv_f^2 - \\frac{1}{2}mv_i^2 $$
+**Spring example:** Compress a spring ($k = 200\text{ N/m}$) by $0.10\text{ m}$. Hooke's Law gives $F(x) = kx$:
+$$W = \int_0^{0.10} 200x\,dx = 200\left[\frac{x^2}{2}\right]_0^{0.10} = 200 \times 0.005 = 1\text{ J}$$
+This is exactly why the elastic PE formula is $U_s = \frac{1}{2}kx^2$.
 
-**Step 6:** Define Kinetic Energy.
-We see that the Work done exactly equals the change in a quantity defined by $\\frac{1}{2}mv^2$. We define this quantity as Kinetic Energy ($K$).
-$$ W = K_f - K_i = \\Delta K $$
-Q.E.D. We have proven both the formula for Kinetic Energy and the Work-Energy Theorem in one stroke!
+---
+
+## 2. Kinetic Energy — Energy of Motion
+
+$$\boxed{K = \frac{1}{2}mv^2}$$
+
+KE depends on mass and the **square** of speed.
+
+> **Speed-squared consequence:** Double your car speed from 30 to 60 mph and KE **quadruples**. At 90 mph it is **nine times** greater. This is the physics behind why high-speed collisions are exponentially more deadly.
+
+### 2.1 The Work-Energy Theorem
+$$W_{net} = \Delta K = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2$$
+
+Net work done on an object equals its change in KE. This is the bridge between forces and energy.
+
+**Example:** A 2 kg ball starts from rest. Net force 10 N over 5 m.
+$$W = Fd = 50\text{ J} \implies 50 = \frac{1}{2}(2)v_f^2 \implies v_f = \sqrt{50} \approx 7.07\text{ m/s}$$
+
+---
+
+## 3. Potential Energy — Stored Energy
+
+### 3.1 Gravitational PE (near Earth's surface)
+$$U_g = mgh$$
+
+Only **changes** in $U_g$ matter physically. The reference ($h=0$) is your choice.
+
+> A 5 kg ball on a 1 m table: $U_g = 5\times9.81\times1 = 49.1\text{ J}$ (floor reference). Move reference to the tabletop: $U_g = 0$. Physics doesn't change — only $\Delta U_g$ when the ball falls is meaningful.
+
+### 3.2 Elastic PE (Springs)
+$$U_s = \frac{1}{2}kx^2$$
+
+$k$ = spring constant (N/m — stiffness); $x$ = compression or extension from natural length.
+
+**Example:** Spring with $k = 500\text{ N/m}$ stretched $x = 0.04\text{ m}$:
+$$U_s = \frac{1}{2}(500)(0.04)^2 = 250 \times 0.0016 = 0.4\text{ J}$$
+
+### 3.3 Conservative vs. Non-Conservative Forces
+
+| Property | Conservative | Non-Conservative |
+|---|---|---|
+| Work depends on? | Start and end points only | Full path taken |
+| Has potential energy? | Yes | No |
+| Examples | Gravity, spring, electric | Friction, air drag |
+
+Friction always converts mechanical energy into **heat** — it can never be recovered as PE.
+
+---
+
+## 4. Conservation of Mechanical Energy
+
+When **only conservative forces** act:
+$$\boxed{K_i + U_i = K_f + U_f}$$
+
+Energy transforms between KE and PE — nothing leaks away.
+
+### 4.1 Roller Coaster Drop (Frictionless)
+**Problem:** An 800 kg coaster starts at rest at the top of a 30 m drop. Find speed at the bottom.
+
+Set reference: bottom = $h=0$:
+$$mgh = \frac{1}{2}mv^2 \implies v = \sqrt{2gh} = \sqrt{2\times9.81\times30} = \sqrt{588.6} \approx 24.3\text{ m/s}$$
+
+Mass cancels — **all coasters reach the same speed regardless of mass!**
+
+### 4.2 Spring Launches a Block
+**Problem:** Spring ($k = 800\text{ N/m}$) compressed $x = 0.15\text{ m}$ releases a 0.5 kg block (frictionless). Find speed.
+
+All spring PE converts to KE:
+$$\frac{1}{2}kx^2 = \frac{1}{2}mv^2 \implies v = x\sqrt{\frac{k}{m}} = 0.15\sqrt{\frac{800}{0.5}} = 0.15\times40 = 6\text{ m/s}$$
+
+### 4.3 With Friction — Modified Energy Equation
+$$K_i + U_i = K_f + U_f + W_{friction}$$
+
+where $W_{friction} = f_k \times d$ (energy dissipated as heat).
+
+**Example:** 2 kg block slides 5 m down a ramp ($\theta=30°$, $\mu_k=0.2$), starting from rest.
+
+- $h = 5\sin30° = 2.5\text{ m}$
+- $N = mg\cos30° = 2\times9.81\times0.866 = 17.0\text{ N}$
+- $f_k = 0.2\times17.0 = 3.4\text{ N}$, so $W_f = 3.4\times5 = 17\text{ J}$
+
+$$2(9.81)(2.5) = \frac{1}{2}(2)v^2 + 17 \implies 49.05 - 17 = v^2 \implies v = \sqrt{32.05} \approx 5.66\text{ m/s}$$
+
+---
+
+## 5. Power — Rate of Energy Transfer
+$$\boxed{P = \frac{W}{t} = \frac{dE}{dt}}$$
+
+Unit: **Watt (W)** where $1\text{ W} = 1\text{ J/s}$.
+
+| Device | Typical Power |
+|---|---|
+| LED light bulb | ~10 W |
+| Human sprinting | ~800 W |
+| Car engine | ~100 kW |
+| Jet engine | ~50 MW |
+
+Since $P = W/t = Fd/t$, we get: $P = Fv$
+
+**Example 1:** Motor lifts 500 kg elevator 20 m in 10 s at constant speed.
+$$P = \frac{mgh}{t} = \frac{500\times9.81\times20}{10} = 9810\text{ W} \approx 9.81\text{ kW}$$
+
+**Example 2:** Car engine applies 2000 N forward force at 30 m/s.
+$$P = Fv = 2000\times30 = 60\,000\text{ W} = 60\text{ kW}$$
+
+---
+
+## 6. Derivation: Proving $K = \frac{1}{2}mv^2$ from Newton's Laws
+
+**Step 1:** Define work as an integral.
+$$W_{net} = \int_{x_i}^{x_f} F_{net}\,dx$$
+
+**Step 2:** Substitute Newton's Second Law ($F_{net} = ma$):
+$$W_{net} = \int_{x_i}^{x_f} ma\,dx$$
+
+**Step 3:** Chain Rule on acceleration. Since $a = \frac{dv}{dt} = \frac{dv}{dx}\cdot\frac{dx}{dt} = v\frac{dv}{dx}$:
+$$W_{net} = \int_{x_i}^{x_f} mv\frac{dv}{dx}\,dx$$
+
+**Step 4:** The $dx$ terms cancel. Change limits to velocities:
+$$W_{net} = \int_{v_i}^{v_f} mv\,dv$$
+
+**Step 5:** Evaluate ($m$ constant):
+$$W_{net} = m\left[\frac{v^2}{2}\right]_{v_i}^{v_f} = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2$$
+
+**Step 6:** Define $K \equiv \frac{1}{2}mv^2$:
+$$W_{net} = \Delta K \quad \textbf{Q.E.D.}$$
+
+Both the formula for KE and the Work-Energy Theorem fall out of the same derivation.
 
 ---flashcards---
 [
   {
-    "front": "What is the formula for calculating Work done by a constant force at an angle $${\\\\theta}$$?",
-    "back": "$$W = Fd \\\\cos\\\\theta$$, or equivalently the dot product $$W = \\\\vec{F} \\\\cdot \\\\vec{d}$$"
+    "front": "What is the physics definition of Work?",
+    "back": "Work is the transfer of energy by a force through a displacement: $$W = Fd\\\\cos\\\\theta$$"
   },
   {
-    "front": "If you carry a heavy box and walk perfectly horizontally, how much work are you doing on the box?",
-    "back": "$$0$$ Joules. Your lifting force is vertical, while the displacement is horizontal ($$\\\\cos(90^\\\\circ) = 0$$)."
+    "front": "A 50 N force is applied at 60° to a 4 m displacement. Calculate the work done.",
+    "back": "$$W = 50\\\\times4\\\\times\\\\cos60° = 200\\\\times0.5 = 100\\\\text{ J}$$"
   },
   {
-    "front": "What is the formula for Kinetic Energy?",
-    "back": "$$K = \\\\frac{1}{2}mv^2$$"
+    "front": "You carry a box horizontally across a room. How much work do you do on it?",
+    "back": "Zero. Your upward lifting force is perpendicular to the horizontal displacement, so $$\\\\cos(90°) = 0$$."
   },
   {
-    "front": "What is the formula for Elastic Potential Energy stored in an ideal spring?",
+    "front": "When must you integrate to find work?",
+    "back": "When the force varies with position (e.g. a spring). Use $$W = \\\\int_{x_1}^{x_2} F(x)\\\\,dx$$."
+  },
+  {
+    "front": "State the Work-Energy Theorem.",
+    "back": "$$W_{net} = \\\\Delta K = \\\\frac{1}{2}mv_f^2 - \\\\frac{1}{2}mv_i^2$$"
+  },
+  {
+    "front": "If a car's speed triples, what happens to its kinetic energy?",
+    "back": "It increases by a factor of 9. KE scales with the square of speed: $$K = \\\\frac{1}{2}mv^2$$."
+  },
+  {
+    "front": "What is elastic potential energy stored in a spring with constant $$k$$ compressed by $$x$$?",
     "back": "$$U_s = \\\\frac{1}{2}kx^2$$"
   },
   {
-    "front": "State the Law of Conservation of Energy for an isolated system.",
-    "back": "Total mechanical energy ($$E = K + U$$) remains constant if only conservative forces act."
+    "front": "What is the difference between a conservative and non-conservative force?",
+    "back": "Conservative forces (gravity, springs) do path-independent work and store PE. Non-conservative forces (friction) convert energy to heat and depend on path length."
   },
   {
-    "front": "What is Power?",
-    "back": "The rate at which work is done or energy is transferred: $$P = \\\\frac{W}{t} = \\\\frac{dE}{dt}$$"
+    "front": "State conservation of mechanical energy for a frictionless system.",
+    "back": "$$K_i + U_i = K_f + U_f$$. Total mechanical energy is constant."
   },
   {
-    "front": "How can Power be expressed in terms of Force and velocity?",
-    "back": "$$P = \\\\vec{F} \\\\cdot \\\\vec{v}$$"
+    "front": "A roller coaster drops frictionlessly from rest at height $$h$$. What is its speed at the bottom?",
+    "back": "$$v = \\\\sqrt{2gh}$$. Mass cancels — speed is independent of the coaster's weight."
   },
   {
-    "front": "The Work-Energy Theorem states that the net work done on an object equals what?",
-    "back": "Its change in Kinetic Energy: $$W_{net} = \\\\Delta K$$"
+    "front": "How do you modify the energy equation when friction acts?",
+    "back": "$$K_i + U_i = K_f + U_f + W_{friction}$$ where $$W_{friction} = f_k \\\\times d$$."
+  },
+  {
+    "front": "What is Power and what are its units?",
+    "back": "Rate of energy transfer: $$P = W/t = dE/dt$$. Units: Watts (W), where $$1\\\\text{ W} = 1\\\\text{ J/s}$$."
+  },
+  {
+    "front": "How do you express Power in terms of Force and velocity?",
+    "back": "$$P = Fv$$. Derived from $$P = W/t = Fd/t = F\\\\cdot v$$."
+  },
+  {
+    "front": "How is $$K = \\\\frac{1}{2}mv^2$$ derived?",
+    "back": "Integrate $$W = \\\\int F\\\\,dx$$, substitute $$F=ma$$, use chain rule $$a = v\\\\frac{dv}{dx}$$, integrate $$\\\\int mv\\\\,dv = \\\\frac{1}{2}mv_f^2 - \\\\frac{1}{2}mv_i^2$$. Define this as $$\\\\Delta K$$."
   }
 ]
-`,
+`
 
   'Circular Motion & Gravitation': `
 # Circular Motion & Gravitation: The Celestial Clockwork
