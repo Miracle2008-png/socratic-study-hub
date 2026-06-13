@@ -210,11 +210,20 @@ const AppContent: React.FC = () => {
     };
   }, [isSessionExpired, signOut, currentUser]);
 
+  const [isGlobalLoading, setIsGlobalLoading] = useState(false);
+
   const handleTabChange = (tabId: string) => {
+    if (activeTab === tabId && !activeTopicInternal) return; // Prevent unnecessary reload
+    
+    setIsGlobalLoading(true);
     closeTopic();
-    setActiveTab(tabId);
-    setActiveTopic(null);
     setIsMobileMenuOpen(false); // Close mobile menu when changing tabs
+
+    setTimeout(() => {
+      setActiveTab(tabId);
+      setActiveTopic(null);
+      setTimeout(() => setIsGlobalLoading(false), 250);
+    }, 150);
   };
 
   const renderContent = () => {
@@ -284,9 +293,13 @@ const AppContent: React.FC = () => {
           userName={currentUser?.user_metadata?.full_name || currentUser?.email?.split('@')[0] || 'Scholar'}
           studyGoal={studyGoal}
           onTopicSelect={(topicId, subject) => {
-            setActiveTab(subject);
-            setActiveTopic(topicId);
-            openTopic(topicId, subject);
+            setIsGlobalLoading(true);
+            setTimeout(() => {
+              setActiveTab(subject);
+              setActiveTopic(topicId);
+              openTopic(topicId, subject);
+              setTimeout(() => setIsGlobalLoading(false), 250);
+            }, 150);
           }}
         />
       );
@@ -386,6 +399,13 @@ const AppContent: React.FC = () => {
 
   return (
     <div className={`app-container ${isFocusMode ? 'focus-mode-active' : ''} ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`} data-layout={fullWidth ? 'full' : 'constrained'}>
+      
+      {isGlobalLoading && (
+        <div className="global-nprogress">
+          <div className="nprogress-bar" />
+        </div>
+      )}
+
       {!isFocusMode && (
 
         <Sidebar
@@ -420,8 +440,12 @@ const AppContent: React.FC = () => {
               <Menu size={20} />
             </button>
             <GlobalSearch onSelect={(subject, topicId) => {
-              setActiveTab(subject);
-              setActiveTopic(topicId);
+              setIsGlobalLoading(true);
+              setTimeout(() => {
+                setActiveTab(subject);
+                setActiveTopic(topicId);
+                setTimeout(() => setIsGlobalLoading(false), 250);
+              }, 150);
             }} />
 
             <div className="gamification-header">
@@ -730,6 +754,24 @@ const AppContent: React.FC = () => {
       )}
 
       <style>{`
+        .global-nprogress {
+          position: fixed;
+          top: 0; left: 0; width: 100%; height: 3px;
+          z-index: 100000;
+          background: transparent;
+        }
+        .nprogress-bar {
+          height: 100%;
+          background: var(--color-accent);
+          box-shadow: 0 0 10px var(--color-accent), 0 0 5px var(--color-accent);
+          animation: nprogress-anim 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        @keyframes nprogress-anim {
+          0% { width: 0%; opacity: 1; }
+          60% { width: 70%; opacity: 1; }
+          100% { width: 100%; opacity: 0; }
+        }
+
         .login-modal-overlay {
           position: fixed;
           top: 0; left: 0; right: 0; bottom: 0;
