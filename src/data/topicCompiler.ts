@@ -451,18 +451,7 @@ export async function fetchTopicContent(topicId: string): Promise<TopicContent> 
 
   // If no markdown files exist, rely entirely on the hardcoded base topic
   if (matchingPaths.length === 0) {
-    if (baseTopic) {
-      return {
-        ...baseTopic,
-        sections: [
-          {
-            heading: 'Module Under Construction',
-            level: 1,
-            content: 'This module is currently being built by the curriculum team. Check back soon for detailed lessons, formulas, and practice problems.'
-          }
-        ]
-      };
-    }
+    if (baseTopic) return baseTopic;
     throw new Error(`Topic not found: ${topicId}`);
   }
 
