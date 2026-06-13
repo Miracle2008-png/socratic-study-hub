@@ -246,6 +246,19 @@ export const CalculusSolver: React.FC = () => {
           className="solver-textarea"
           disabled={loading}
         />
+
+        {/* ── Live Rendered Math Preview ── */}
+        {problem.trim() && (
+          <div className="solver-live-preview" style={{ padding: '16px', background: 'rgba(255,255,255,0.03)', borderRadius: '8px', border: '1px dashed rgba(255, 215, 0, 0.2)', marginBottom: '16px', minHeight: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <ReactMarkdown 
+              remarkPlugins={[remarkMath]} 
+              rehypePlugins={[rehypeKatex]}
+            >
+              {\`$$ \${problem} $$\`}
+            </ReactMarkdown>
+          </div>
+        )}
+
         <div className="solver-actions">
           <button
             className="gold-btn"
