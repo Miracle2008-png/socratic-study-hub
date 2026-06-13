@@ -3,40 +3,151 @@ export const physicsContentExt: Record<string, string> = {
   'Kinematics & Projectile Motion': `
 # Kinematics: The Geometry of Motion
 
-## 1. Position, Velocity, and Acceleration
-Kinematics is the mathematical description of motion without considering the forces that cause it. The fundamental quantities are vectors:
-* **Position ($\\vec{x}$ or $\\vec{r}$)**: Where an object is located relative to an origin.
-* **Velocity ($\\vec{v} = \\frac{d\\vec{x}}{dt}$)**: The rate of change of position. It tells you how fast an object is moving and in what direction.
-* **Acceleration ($\\vec{a} = \\frac{d\\vec{v}}{dt}$)**: The rate of change of velocity. If you step on the gas, or hit the brakes, or turn the steering wheel, you are accelerating!
+## 1. Position, Displacement, and Distance
+Kinematics is the mathematical description of motion without considering the forces that cause it. Everything starts with understanding where an object is located.
 
-## 2. The Big 4 Kinematic Equations
-When acceleration is perfectly constant (like free-fall near Earth's surface where $a = -9.81 \\text{ m/s}^2$), we can integrate the definitions to yield four incredibly powerful equations:
+* **Position ($\\vec{x}$ or $\\vec{r}$)**: A vector pointing from a chosen origin to the location of an object.
+* **Distance ($d$)**: A scalar quantity representing the total path length traveled. If you walk 5 meters east and 5 meters west, your distance is 10 meters.
+* **Displacement ($\\Delta\\vec{x}$)**: A vector representing the *change* in position. $\\Delta\\vec{x} = \\vec{x}_f - \\vec{x}_i$. If you walk 5 meters east and 5 meters west, your displacement is $0$ meters because you ended up exactly where you started!
 
-1. $v_f = v_i + at$
-2. $\\Delta x = v_i t + \\frac{1}{2}at^2$
-3. $v_f^2 = v_i^2 + 2a\\Delta x$
-4. $\\Delta x = \\frac{v_i + v_f}{2} t$
+**Example:** A runner goes once around a standard $400\\text{m}$ circular track.
+* Distance traveled = $400\\text{m}$.
+* Displacement = $0\\text{m}$ (initial and final positions are the same).
+
+## 2. Velocity and Speed
+How fast is position changing? 
+
+* **Average Speed**: Total distance divided by total time ($s = d / \\Delta t$).
+* **Average Velocity**: Total displacement divided by total time ($\\vec{v}_{avg} = \\Delta\\vec{x} / \\Delta t$).
+* **Instantaneous Velocity**: The exact velocity at a specific infinitely small moment in time. This requires calculus! It is the derivative of position with respect to time.
+$$ \\vec{v} = \\lim_{\\Delta t \\to 0} \\frac{\\Delta\\vec{x}}{\\Delta t} = \\frac{d\\vec{x}}{dt} $$
+
+## 3. Acceleration
+Acceleration is the rate of change of velocity. If you step on the gas pedal (speeding up), hit the brakes (slowing down), or turn the steering wheel (changing direction), you are accelerating!
+
+* **Average Acceleration**: $\\vec{a}_{avg} = \\frac{\\Delta\\vec{v}}{\\Delta t} = \\frac{\\vec{v}_f - \\vec{v}_i}{t_f - t_i}$
+* **Instantaneous Acceleration**: The derivative of velocity with respect to time, or the *second derivative* of position with respect to time!
+$$ \\vec{a} = \\frac{d\\vec{v}}{dt} = \\frac{d^2\\vec{x}}{dt^2} $$
+
+## 4. Constant Acceleration (The Big Four Equations)
+When acceleration is perfectly constant (like free-fall near Earth's surface where $a = -9.81 \\text{ m/s}^2$), the complex calculus integrals simplify into four incredibly powerful algebraic equations.
+
+1. **Velocity without position**: $v_f = v_i + at$
+2. **Position without final velocity**: $\\Delta x = v_i t + \\frac{1}{2}at^2$
+3. **Velocity without time**: $v_f^2 = v_i^2 + 2a\\Delta x$
+4. **Position without acceleration**: $\\Delta x = \\frac{v_i + v_f}{2} t$
 
 *Tip: Every equation is missing exactly one variable. Identify which variable you don't know and don't care about, and choose the equation that is missing it!*
 
-## 3. Projectile Motion
-When you throw a ball through the air, it moves in two dimensions ($x$ and $y$). The most profound realization of Galilean physics is that **horizontal and vertical motions are completely independent** and do not affect each other.
+**Example problem:** A car is traveling at $20\\text{ m/s}$. The driver slams on the brakes, causing a constant deceleration of $-5\\text{ m/s}^2$. How far does the car travel before coming to a complete stop?
+* **Knowns:** $v_i = 20\\text{ m/s}$, $a = -5\\text{ m/s}^2$, $v_f = 0\\text{ m/s}$ (since it stops).
+* **Unknown:** $\\Delta x$
+* **Don't care about:** $t$ (time)
+* **Equation to use:** $v_f^2 = v_i^2 + 2a\\Delta x$
+* **Solution:** $0^2 = 20^2 + 2(-5)\\Delta x \\implies 0 = 400 - 10\\Delta x \\implies 10\\Delta x = 400 \\implies \\Delta x = 40\\text{ meters}$.
 
-If we ignore air resistance:
-* **Horizontal ($x$)**: There are no forces pushing it forward or backward, so acceleration is $0$. It moves at a perfect constant velocity.
-* **Vertical ($y$)**: Gravity pulls it down, so it experiences a constant downward acceleration of $-9.81 \\text{ m/s}^2$.
+## 5. Projectile Motion (2D Kinematics)
+When you throw a ball through the air, it moves in two dimensions ($x$ and $y$). The most profound realization of Galilean physics is that **horizontal and vertical motions are completely independent** and do not affect each other.
 
 To solve projectile problems, simply decompose the initial velocity vector:
 * $v_{ix} = v_i \\cos(\\theta)$
 * $v_{iy} = v_i \\sin(\\theta)$
 
-Then, solve the $y$-axis and $x$-axis separately. Time ($t$) is the only variable that crosses over between the two axes!
+If we ignore air resistance:
+* **Horizontal ($x$)**: There are no forces pushing it forward or backward, so acceleration is $0$. It moves at a perfect constant velocity. Equation: $\\Delta x = v_{ix} t$
+* **Vertical ($y$)**: Gravity pulls it down, so it experiences a constant downward acceleration of $-9.81 \\text{ m/s}^2$. Equation: $\\Delta y = v_{iy} t + \\frac{1}{2}at^2$
+
+Time ($t$) is the **only** variable that crosses over between the two axes! Find time using the $y$-axis, then plug it into the $x$-axis (or vice versa).
+
+## Derivation of the First Kinematic Equation
+How do we mathematically prove $v_f = v_i + at$? We start with the fundamental calculus definition of constant acceleration.
+
+**Step 1:** Start with the definition of acceleration.
+$$ a = \\frac{dv}{dt} $$
+
+**Step 2:** Separate the variables. Multiply both sides by $dt$.
+$$ dv = a \\, dt $$
+
+**Step 3:** Integrate both sides. Since acceleration $a$ is constant, we can pull it out of the integral. We integrate from initial velocity $v_i$ to final velocity $v_f$, and from time $0$ to time $t$.
+$$ \\int_{v_i}^{v_f} dv = a \\int_0^t dt $$
+
+**Step 4:** Evaluate the integrals. The integral of $dv$ is just $v$, and the integral of $dt$ is just $t$.
+$$ [v]_{v_i}^{v_f} = a [t]_0^t $$
+$$ v_f - v_i = at $$
+
+**Step 5:** Rearrange for $v_f$.
+$$ v_f = v_i + at $$
+*Q.E.D.*
+
+## Derivation of the Second Kinematic Equation
+How do we prove $\\Delta x = v_i t + \\frac{1}{2}at^2$? We start with our newly derived first equation!
+
+**Step 1:** Start with the definition of velocity.
+$$ v = \\frac{dx}{dt} $$
+
+**Step 2:** Substitute the first kinematic equation for $v$.
+$$ \\frac{dx}{dt} = v_i + at $$
+
+**Step 3:** Separate variables by multiplying by $dt$.
+$$ dx = (v_i + at) \\, dt $$
+
+**Step 4:** Integrate both sides from initial position $x_i$ to final position $x_f$, and time $0$ to $t$.
+$$ \\int_{x_i}^{x_f} dx = \\int_0^t (v_i + at) \\, dt $$
+
+**Step 5:** Evaluate the integrals.
+$$ [x]_{x_i}^{x_f} = \\left[ v_i t + \\frac{1}{2}at^2 \\right]_0^t $$
+$$ x_f - x_i = v_i t + \\frac{1}{2}at^2 - (0 + 0) $$
+
+**Step 6:** Replace $x_f - x_i$ with displacement $\\Delta x$.
+$$ \\Delta x = v_i t + \\frac{1}{2}at^2 $$
+*Q.E.D.*
+
+## Derivation of the Third Kinematic Equation
+How do we prove $v_f^2 = v_i^2 + 2a\\Delta x$ without using time? We use the Chain Rule!
+
+**Step 1:** Start with the definition of acceleration.
+$$ a = \\frac{dv}{dt} $$
+
+**Step 2:** Use the chain rule to rewrite $\\frac{dv}{dt}$ as $\\frac{dv}{dx} \\cdot \\frac{dx}{dt}$.
+$$ a = \\frac{dv}{dx} \\frac{dx}{dt} $$
+
+**Step 3:** Notice that $\\frac{dx}{dt}$ is simply velocity, $v$.
+$$ a = v \\frac{dv}{dx} $$
+
+**Step 4:** Separate variables. Multiply by $dx$.
+$$ a \\, dx = v \\, dv $$
+
+**Step 5:** Integrate both sides. (From $x_i$ to $x_f$ and $v_i$ to $v_f$).
+$$ \\int_{x_i}^{x_f} a \\, dx = \\int_{v_i}^{v_f} v \\, dv $$
+
+**Step 6:** Evaluate integrals. $a$ is constant, so it pulls out. The integral of $v \\, dv$ is $\\frac{1}{2}v^2$.
+$$ a [x]_{x_i}^{x_f} = \\left[ \\frac{1}{2}v^2 \\right]_{v_i}^{v_f} $$
+$$ a (x_f - x_i) = \\frac{1}{2}v_f^2 - \\frac{1}{2}v_i^2 $$
+
+**Step 7:** Replace $(x_f - x_i)$ with $\\Delta x$ and multiply everything by $2$.
+$$ 2a\\Delta x = v_f^2 - v_i^2 $$
+
+**Step 8:** Rearrange for $v_f^2$.
+$$ v_f^2 = v_i^2 + 2a\\Delta x $$
+*Q.E.D.*
 
 ---flashcards---
 [
   {
     "front": "What is the difference between velocity and speed?",
     "back": "Velocity is a vector (requires magnitude and direction), whereas speed is a scalar (magnitude only)."
+  },
+  {
+    "front": "What is the difference between distance and displacement?",
+    "back": "Distance is the total scalar path length traveled. Displacement is the straight-line vector difference between the final and initial positions ($$\\\\Delta\\\\vec{x} = \\\\vec{x}_f - \\\\vec{x}_i$$)."
+  },
+  {
+    "front": "What is the exact calculus definition of instantaneous velocity?",
+    "back": "$$\\\\vec{v} = \\\\frac{d\\\\vec{x}}{dt}$$ (The derivative of position with respect to time)."
+  },
+  {
+    "front": "What is the exact calculus definition of instantaneous acceleration?",
+    "back": "$$\\\\vec{a} = \\\\frac{d\\\\vec{v}}{dt} = \\\\frac{d^2\\\\vec{x}}{dt^2}$$ (The second derivative of position with respect to time)."
   },
   {
     "front": "What is the kinematic equation to use if you do NOT know the final velocity?",
@@ -48,7 +159,7 @@ Then, solve the $y$-axis and $x$-axis separately. Time ($t$) is the only variabl
   },
   {
     "front": "In ideal projectile motion, what is the horizontal acceleration?",
-    "back": "$$0\\\\text{ m/s}^2$$. The horizontal velocity remains perfectly constant."
+    "back": "$$0\\\\text{ m/s}^2$$. The horizontal velocity remains perfectly constant because there are no forces acting horizontally."
   },
   {
     "front": "In ideal projectile motion, what is the vertical acceleration?",
@@ -56,7 +167,11 @@ Then, solve the $y$-axis and $x$-axis separately. Time ($t$) is the only variabl
   },
   {
     "front": "In a 2D projectile motion problem, what is the ONLY variable shared between the horizontal ($$x$$) and vertical ($$y$$) equations?",
-    "back": "Time ($$t$$)"
+    "back": "Time ($$t$$)."
+  },
+  {
+    "front": "How do you mathematically prove $$v_f^2 = v_i^2 + 2a\\\\Delta x$$?",
+    "back": "By using the Chain Rule to rewrite acceleration: $$a = \\\\frac{dv}{dt} = \\\\frac{dv}{dx}\\\\frac{dx}{dt} = v\\\\frac{dv}{dx}$$, and then integrating both sides with respect to position and velocity."
   }
 ]
 `,
