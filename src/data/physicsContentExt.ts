@@ -1469,89 +1469,214 @@ $$\omega_0 = \sqrt{\frac{g}{L}} \implies T = \frac{2\pi}{\omega_0} = 2\pi\sqrt{\
   // Fluid Mechanics & Thermodynamics are in Engineering metadata
 
   'Electrostatics': `
-# Electrostatics: The Invisible Force
+# Electrostatics: The Physics of Static Electric Charges
 
-## 1. Electric Charge ($q$)
-Charge is a fundamental, quantized property of matter. It comes in two flavors: positive (protons) and negative (electrons).
-* Like charges repel.
-* Opposite charges attract.
-Charge is always conserved; it can only be transferred, never created or destroyed.
+## 0. Introduction
+Electrostatics is the study of electric charges at rest. It explains why you get a shock touching a door handle after walking on carpet, how lightning forms, how photocopiers work, and underpins all of electronics and chemistry. It is the first chapter of the vast subject of electromagnetism.
+
+---
+
+## 1. Electric Charge
+
+Electric charge is a fundamental property of matter, like mass. It comes in two types:
+- **Positive charge** (carried by protons)
+- **Negative charge** (carried by electrons)
+
+**The law of charges:**
+- Like charges **repel**
+- Unlike charges **attract**
+
+The SI unit of charge is the **Coulomb (C)**. The elementary charge (charge of one proton or one electron) is:
+$$e = 1.602\times10^{-19}\text{ C}$$
+
+**Conservation of charge:** In any isolated system, the net electric charge is always conserved. Charges can be transferred between objects, but cannot be created or destroyed.
+
+### 1.1 Conductors vs. Insulators
+- **Conductors** (metals): electrons are free to move throughout the material. Charge redistributes itself.
+- **Insulators** (rubber, glass, plastic): electrons are tightly bound. Charge stays where it is placed.
+
+---
 
 ## 2. Coulomb's Law
-The electrostatic force between two point charges ($q_1, q_2$) is directly proportional to their product and inversely proportional to the square of the distance ($r$) between them.
-$$ \\vec{F}_E = k_e \\frac{q_1 q_2}{r^2} \\hat{r} $$
-Where $k_e = \\frac{1}{4\\pi\\varepsilon_0} \\approx 8.99 \\times 10^9 \\text{ N m}^2/\\text{C}^2$.
-Notice how this formula is a mirror image of Newton's Law of Gravity! However, the electric force between two electrons is roughly $10^{42}$ times stronger than their gravitational attraction.
 
-## 3. The Electric Field ($\\vec{E}$)
-A charge doesn't just "reach out" across empty space to push another charge. It creates an invisible "Electric Field" everywhere in space. When a second charge enters this field, the field pushes it.
-$$ \\vec{E} = \\frac{\\vec{F}}{q} = k_e \\frac{Q}{r^2} \\hat{r} $$
-Electric field lines originate on positive charges and terminate on negative charges.
+The electrostatic force between two point charges $q_1$ and $q_2$ separated by distance $r$:
+$$\boxed{F = k_e\frac{|q_1||q_2|}{r^2}}$$
 
-## 4. Gauss's Law (Maxwell's First Equation)
-Gauss's Law is a more profound, topological formulation of Coulomb's Law. It states that the total "Electric Flux" (the number of field lines) piercing outward through any closed imaginary 3D surface is directly proportional to the total charge enclosed *inside* that surface.
-$$ \\oint \\vec{E} \\cdot d\\vec{A} = \\frac{Q_{enc}}{\\varepsilon_0} $$
-This law is incredibly powerful for finding the electric field of highly symmetric objects (like spheres, infinite lines, or flat sheets) without doing horrific calculus.
+where $k_e = 8.99\times10^9\text{ N·m}^2/\text{C}^2$ is Coulomb's constant.
 
-## 5. Electric Potential ($V$) and Voltage
-Just as lifting a rock creates gravitational potential energy, pushing a positive charge toward another positive charge stores **Electric Potential Energy** ($U_E$).
-Electric Potential ($V$), commonly known as Voltage, is simply the potential energy *per unit charge*.
-$$ V = \\frac{U_E}{q} $$
-$$ V = k_e \\frac{Q}{r} $$
-The electric field is exactly the negative spatial gradient (slope) of the voltage: $\\vec{E} = -\\nabla V$.
+Equivalently, $k_e = \frac{1}{4\pi\epsilon_0}$ where $\epsilon_0 = 8.854\times10^{-12}\text{ C}^2/\text{N·m}^2$ is the **permittivity of free space**.
 
-## Derivation of the Electric Field of an Infinite Line Charge
-Use Gauss's Law to derive the electric field at a distance $r$ from an infinitely long straight wire with uniform linear charge density $\\lambda$ (Coulombs/meter).
+**Note the structure:** Coulomb's Law is identical in form to Newton's Law of Gravitation — both are inverse-square laws. The differences:
+- Gravity is always attractive; electrostatic force can be attractive or repulsive.
+- The electrostatic force is enormously stronger (by a factor of ~$10^{36}$ for electron-proton pairs).
 
-**Step 1:** Choose a Gaussian Surface.
-Because the wire has cylindrical symmetry, we choose a closed imaginary cylinder of radius $r$ and length $L$, perfectly centered around the wire.
+**Worked Example:** Two charges $q_1 = +3\text{ μC}$ and $q_2 = -5\text{ μC}$ are separated by $r = 0.2\text{ m}$. Find the force.
 
-**Step 2:** Analyze the Electric Flux ($\\Phi_E$).
-The electric field lines point radially outward from the wire.
-* The flux through the two flat end-caps of the cylinder is $0$, because the field lines run parallel to the caps ($\\vec{E} \\cdot d\\vec{A} = 0$).
-* The flux through the curved barrel is $E \\times Area$, because $\\vec{E}$ is perfectly constant and perpendicular to the surface everywhere.
-$$ \\oint \\vec{E} \\cdot d\\vec{A} = E(2\\pi r L) $$
+$$F = k_e\frac{|q_1||q_2|}{r^2} = (8.99\times10^9)\frac{(3\times10^{-6})(5\times10^{-6})}{(0.2)^2}$$
+$$= (8.99\times10^9)\frac{15\times10^{-12}}{0.04} = (8.99\times10^9)(3.75\times10^{-10}) = 3.37\text{ N}$$
 
-**Step 3:** Calculate the enclosed charge ($Q_{enc}$).
-The amount of wire trapped inside our imaginary cylinder has length $L$.
-$$ Q_{enc} = \\lambda L $$
+The force is attractive (opposite charges).
 
-**Step 4:** Apply Gauss's Law.
-$$ \\oint \\vec{E} \\cdot d\\vec{A} = \\frac{Q_{enc}}{\\varepsilon_0} $$
-$$ E(2\\pi r L) = \\frac{\\lambda L}{\\varepsilon_0} $$
+---
 
-**Step 5:** Solve for $E$.
-The arbitrary length $L$ beautifully cancels out!
-$$ E = \\frac{\\lambda}{2\\pi \\varepsilon_0 r} $$
-Q.E.D. The field drops off as $1/r$, not $1/r^2$!
+## 3. The Electric Field
 
-## Derivation of the Capacitance of a Parallel-Plate Capacitor
-Prove that the capacitance of two parallel metal plates of area $A$ separated by a distance $d$ is $C = \\frac{\\varepsilon_0 A}{d}$.
+Rather than thinking of charges acting directly on each other at a distance ("action at a distance"), physicists use the concept of the **electric field**.
 
-**Step 1:** The Electric Field of one plate.
-Using Gauss's Law on an infinite 2D sheet of charge with surface density $\\sigma = Q/A$, the field is $E = \\frac{\\sigma}{2\\varepsilon_0}$.
+A charge $Q$ creates an electric field $\vec{E}$ throughout the space around it. Any other charge $q$ placed in this field experiences a force:
+$$\vec{F} = q\vec{E}$$
 
-**Step 2:** The total Electric Field between two plates.
-One plate is $+Q$ and the other is $-Q$. Their fields point in the exact same direction between the plates and add together!
-$$ E = \\frac{\\sigma}{2\\varepsilon_0} + \\frac{\\sigma}{2\\varepsilon_0} = \\frac{\\sigma}{\\varepsilon_0} = \\frac{Q}{A\\varepsilon_0} $$
+The electric field of a point charge $Q$ at distance $r$:
+$$\vec{E} = k_e\frac{Q}{r^2}\hat{r}$$
 
-**Step 3:** Find the Voltage (Potential Difference).
-In a uniform electric field, the voltage difference is simply the field times the distance.
-$$ V = E \\cdot d $$
-$$ V = \\left( \\frac{Q}{A\\varepsilon_0} \\right) d $$
+Units: **N/C** or equivalently **V/m**
 
-**Step 4:** Define Capacitance.
-Capacitance is defined as the amount of charge stored per volt of potential difference ($C = Q/V$).
-Substitute our equation for $V$:
-$$ C = \\frac{Q}{\\left( \\frac{Q d}{A\\varepsilon_0} \\right)} $$
+**Sign convention:** By definition, $\vec{E}$ points away from positive charges and toward negative charges (in the direction a positive test charge would feel pushed).
 
-**Step 5:** Simplify.
-The $Q$'s cancel completely!
-$$ C = \\frac{\\varepsilon_0 A}{d} $$
-Q.E.D. This proves that a capacitor's ability to store charge depends *purely on its geometric physical shape*, not on the battery hooked up to it!
+### 3.1 Electric Field Lines
+Field lines are visual tools:
+- They originate on positive charges and terminate on negative charges
+- The **density** of lines shows field strength (more lines = stronger field)
+- Lines never cross each other
+- Lines are always perpendicular to conductor surfaces
 
+### 3.2 Uniform Electric Field
+Between two large parallel plates of opposite charge, the field is uniform (same everywhere):
+$$E = \frac{\sigma}{\epsilon_0} = \frac{V}{d}$$
 
-`,
+where $\sigma$ is surface charge density, $V$ is the voltage across the plates, and $d$ is their separation.
+
+---
+
+## 4. Electric Potential Energy & Potential
+
+### 4.1 Electric Potential Energy
+Just as gravity stores gravitational PE when you lift a mass, the electric force stores electric PE when you move a charge against the field.
+
+Work done moving charge $q$ from A to B:
+$$W_{field} = -\Delta U_E = -(U_B - U_A)$$
+
+For a charge $q$ at distance $r$ from a point charge $Q$:
+$$U_E = k_e\frac{qQ}{r}$$
+
+### 4.2 Electric Potential (Voltage)
+The **electric potential** $V$ at a point is the electric PE per unit charge:
+$$V = \frac{U_E}{q} = k_e\frac{Q}{r}$$
+
+Unit: **Volt (V)** where $1\text{ V} = 1\text{ J/C}$
+
+The **potential difference** (voltage) between two points:
+$$\Delta V = V_B - V_A = -\int_A^B \vec{E}\cdot d\vec{l}$$
+
+For a uniform field: $\Delta V = -Ed$ (where $d$ is displacement along field direction)
+
+> **Key insight:** Voltage is to electric potential energy what height is to gravitational PE. Just as $\Delta U_{grav} = mg\Delta h$, we have $\Delta U_E = q\Delta V$.
+
+### 4.3 The Electron-Volt (eV)
+In atomic and particle physics, it is convenient to measure energy in **electron-volts**:
+$$1\text{ eV} = 1.602\times10^{-19}\text{ J}$$
+
+An electron accelerated through 1 V gains 1 eV of kinetic energy.
+
+---
+
+## 5. Capacitors
+
+A **capacitor** stores electric charge (and thus energy) on two conducting plates separated by an insulator (dielectric).
+
+$$\boxed{Q = CV}$$
+
+where $C$ is the **capacitance** (unit: **Farad, F**), $Q$ is the stored charge, and $V$ is the voltage across the plates.
+
+For a parallel-plate capacitor:
+$$C = \epsilon_0\frac{A}{d}$$
+
+where $A$ is plate area and $d$ is plate separation.
+
+**Energy stored in a capacitor:**
+$$U_C = \frac{1}{2}CV^2 = \frac{Q^2}{2C} = \frac{QV}{2}$$
+
+**Worked Example:** A $10\text{ μF}$ capacitor is charged to $12\text{ V}$. Find the stored charge and energy.
+$$Q = CV = (10\times10^{-6})(12) = 1.2\times10^{-4}\text{ C} = 120\text{ μC}$$
+$$U = \frac{1}{2}CV^2 = \frac{1}{2}(10\times10^{-6})(144) = 7.2\times10^{-4}\text{ J} = 0.72\text{ mJ}$$
+
+---
+
+## 6. Gauss's Law
+
+Gauss's Law is a powerful alternative to Coulomb's Law for finding electric fields of symmetric charge distributions:
+
+$$\boxed{\oint_S \vec{E}\cdot d\vec{A} = \frac{Q_{enc}}{\epsilon_0}}$$
+
+The total electric flux through any closed surface equals the enclosed charge divided by $\epsilon_0$.
+
+**Application — Field outside a uniformly charged sphere:**
+By symmetry, $\vec{E}$ is radial. On a spherical Gaussian surface of radius $r > R$:
+$$E(4\pi r^2) = \frac{Q}{\epsilon_0} \implies E = \frac{Q}{4\pi\epsilon_0 r^2} = k_e\frac{Q}{r^2}$$
+
+Outside a sphere, it behaves exactly as a point charge. ✓
+
+---
+
+## 7. Derivation: Energy Stored in a Capacitor
+
+**Step 1:** Start with an uncharged capacitor. To add an infinitesimal charge $dq$ to a plate already holding charge $q$, work must be done against the existing voltage $V = q/C$:
+$$dW = V\,dq = \frac{q}{C}\,dq$$
+
+**Step 2:** Integrate from $q = 0$ to $q = Q$:
+$$W = \int_0^Q \frac{q}{C}\,dq = \frac{1}{C}\left[\frac{q^2}{2}\right]_0^Q = \frac{Q^2}{2C}$$
+
+**Step 3:** Substitute $Q = CV$:
+$$U_C = \frac{Q^2}{2C} = \frac{(CV)^2}{2C} = \frac{1}{2}CV^2 \quad \textbf{Q.E.D.}$$
+
+---flashcards---
+[
+  {
+    "front": "What are the two types of electric charge and what is the elementary charge?",
+    "back": "Positive and negative. $$e = 1.602\\\\times10^{-19}\\\\text{ C}$$."
+  },
+  {
+    "front": "State Coulomb's Law.",
+    "back": "$$F = k_e\\\\frac{|q_1||q_2|}{r^2}$$ where $$k_e = 8.99\\\\times10^9\\\\text{ N·m}^2/\\\\text{C}^2$$."
+  },
+  {
+    "front": "How does Coulomb's Law compare to Newton's Law of Gravitation?",
+    "back": "Both are inverse-square laws. But electrostatic force can repel, while gravity is always attractive. Electrostatic force is ~$$10^{36}$$ times stronger between an electron and proton."
+  },
+  {
+    "front": "What is the electric field, and what are its units?",
+    "back": "$$\\\\vec{E} = \\\\vec{F}/q$$ — force per unit positive charge. Units: N/C or V/m."
+  },
+  {
+    "front": "What is the electric field of a point charge $$Q$$ at distance $$r$$?",
+    "back": "$$E = k_e\\\\frac{Q}{r^2}$$, directed away from positive and toward negative charges."
+  },
+  {
+    "front": "What is electric potential (voltage)?",
+    "back": "Electric PE per unit charge: $$V = U_E/q = k_e Q/r$$. Unit: Volt (V) = J/C."
+  },
+  {
+    "front": "How is $$\\\\Delta V$$ related to the electric field in a uniform field?",
+    "back": "$$\\\\Delta V = -Ed$$. A stronger field means a steeper potential gradient."
+  },
+  {
+    "front": "What is a capacitor and the formula relating charge, capacitance, and voltage?",
+    "back": "A device that stores charge on two plates. $$Q = CV$$."
+  },
+  {
+    "front": "What is the energy stored in a capacitor?",
+    "back": "$$U_C = \\\\frac{1}{2}CV^2 = \\\\frac{Q^2}{2C}$$"
+  },
+  {
+    "front": "State Gauss's Law.",
+    "back": "$$\\\\oint_S \\\\vec{E}\\\\cdot d\\\\vec{A} = Q_{enc}/\\\\epsilon_0$$. Total electric flux through a closed surface equals the enclosed charge divided by $$\\\\epsilon_0$$."
+  },
+  {
+    "front": "What is 1 electron-volt (eV) in Joules?",
+    "back": "$$1\\\\text{ eV} = 1.602\\\\times10^{-19}\\\\text{ J}$$. The KE gained by one electron accelerated through 1 V."
+  }
+]
+`
 
 
   'Magnetism & Electromagnetism': `
