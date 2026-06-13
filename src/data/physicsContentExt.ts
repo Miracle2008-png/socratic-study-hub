@@ -172,122 +172,311 @@ $$ v_f^2 = v_i^2 + 2a\\Delta x $$
   {
     "front": "How do you mathematically prove $$v_f^2 = v_i^2 + 2a\\\\Delta x$$?",
     "back": "By using the Chain Rule to rewrite acceleration: $$a = \\\\frac{dv}{dt} = \\\\frac{dv}{dx}\\\\frac{dx}{dt} = v\\\\frac{dv}{dx}$$, and then integrating both sides with respect to position and velocity."
+    "front": "How do you mathematically prove $$v_f^2 = v_i^2 + 2a\\Delta x$$?",
+    "back": "By using the Chain Rule to rewrite acceleration: $$a = \\frac{dv}{dt} = \\frac{dv}{dx}\\frac{dx}{dt} = v\\frac{dv}{dx}$$, and then integrating both sides with respect to position and velocity."
   }
 ]
 `,
 
   // Foundation
 
-  'Force & Newton’s laws': `
+  'Force & Newton\'s laws': `
 # Force & Newton's Laws: The Engine of Dynamics
 
-## 1. What is a Force?
-A **force** is fundamentally a push or a pull resulting from an object's interaction with another object. Forces are vector quantities, meaning they possess both a magnitude (how strong the push/pull is, measured in Newtons, $N$) and a direction. 
+## 0. Before We Begin: What Is Dynamics?
+Kinematics described *how* objects move. Dynamics asks *why* they move. The answer is always **forces**. This entire topic flows from three deceptively simple laws published by Isaac Newton in his *Philosophiae Naturalis Principia Mathematica* (1687) — arguably the most important scientific text in history.
 
-When multiple forces act upon a single object simultaneously, we cannot simply add their magnitudes. We must perform **vector addition** to find the **Net Force** ($\\Sigma\\vec{F}$).
+---
 
-## 2. Newton's First Law (The Law of Inertia)
-*“An object at rest stays at rest, and an object in motion stays in motion with the same speed and in the same direction unless acted upon by an unbalanced force.”*
+## 1. What Is a Force?
+A **force** is a push or a pull. Physically, it is a **vector** quantity with both:
+- A **magnitude** — how strong the push/pull is, measured in **Newtons (N)**
+- A **direction** — which way the push/pull acts
 
-Before Galileo and Newton, Aristotelian physics claimed that objects naturally come to rest. Newton's First Law shattered this paradigm. It states that a net force is **NOT** required to keep an object moving. If you throw a baseball in the vacuum of deep space, it will travel in a perfectly straight line at a perfectly constant speed forever. A force is only required to *change* an object's motion (to accelerate it).
+$$1 \text{ N} = 1 \text{ kg} \cdot \text{m/s}^2$$
 
-**Inertia** is the natural tendency of an object to resist changes to its state of motion. **Mass** is simply the quantitative, measurable value of an object's inertia.
+### 1.1 Contact Forces vs. Field Forces
 
-## 3. Newton's Second Law ($\\vec{F} = m\\vec{a}$)
-*“The acceleration of an object is directly proportional to the net force acting upon it, and inversely proportional to its mass.”*
+| Category | Description | Examples |
+|---|---|---|
+| **Contact Forces** | Require physical touching | Normal force, Friction, Tension, Applied force |
+| **Field Forces** | Act at a distance with no touching | Gravity, Electromagnetism, Nuclear |
 
-$$ \\Sigma\\vec{F} = m\\vec{a} $$
+> **Everyday Example:** Sliding a book across a table — your hand applies a *contact* force forward; friction acts *contact* backward; Earth's gravity pulls *down* as a *field* force, no touching needed.
 
-This is perhaps the most famous equation in classical mechanics. However, Newton's original formulation was far more profound. He defined force based on **momentum** ($\\vec{p} = m\\vec{v}$). He stated that force is the true *rate of change of momentum* over time:
+### 1.2 The Net Force
+When multiple forces act simultaneously on one object, we find the **Net Force** ($\Sigma\vec{F}$) by vector addition — we cannot just add magnitudes:
+$$\Sigma\vec{F} = \vec{F}_1 + \vec{F}_2 + \vec{F}_3 + \ldots$$
 
-$$ \\Sigma\\vec{F} = \\frac{d\\vec{p}}{dt} $$
+**Example:** Push a box rightward with 50 N and leftward with 30 N.
+$$\Sigma F = 50 - 30 = 20 \text{ N (rightward)}$$
+The box behaves as if a single 20 N force acts on it to the right.
 
-If the mass of an object is perfectly constant, we can pull $m$ out of the derivative:
-$$ \\frac{d(m\\vec{v})}{dt} = m\\frac{d\\vec{v}}{dt} = m\\vec{a} $$
+---
 
-**Why the momentum formulation is superior:** The equation $\\Sigma\\vec{F} = m\\vec{a}$ completely fails when analyzing a rocket launching into space! Why? Because the rocket is constantly burning fuel and expelling it out the back, meaning its mass $m$ is rapidly decreasing over time. You *must* use $\\Sigma\\vec{F} = \\frac{d\\vec{p}}{dt}$ to correctly calculate rocket mechanics!
+## 2. Newton's First Law — The Law of Inertia
+> *"An object at rest stays at rest, and an object in motion stays in motion at constant velocity, unless acted upon by a net external force."*
 
-## 4. Newton's Third Law (Action & Reaction)
-*“For every action, there is an equal and opposite reaction.”*
+### 2.1 The Revolutionary Idea
+Before Newton, Aristotle taught that objects need continuous force just to keep moving. This seemed intuitive — push a book and it stops when you stop. But Aristotle was ignoring **friction**. Newton realized that in the absence of all friction, an object would keep moving forever.
 
-If object A exerts a force on object B, then object B exerts a force on object A of the exact same magnitude but in the exact opposite direction.
+A space probe (Voyager 1) launched in 1977 is still coasting through interstellar space today with its engine off. Pure First Law behavior.
 
-$$ \\vec{F}_{A \\to B} = -\\vec{F}_{B \\to A} $$
+### 2.2 Inertia and Mass
+**Inertia** is matter's resistance to changes in its motion. **Mass** ($m$, in kg) is its quantitative measure.
 
-**A Common Misconception:** If the forces are equal and opposite, why don't they just cancel out to zero? Why does anything ever move? 
-They don't cancel out because **they act on entirely different objects!** If you push on a wall with 100N, the wall pushes back on *you* with 100N. The force on the wall is 100N. The force on you is 100N. Since there is only one force acting on *you*, you can accelerate backward!
+- A ping-pong ball: low mass, low inertia — easy to deflect.
+- A freight train: enormous mass, enormous inertia — takes kilometers to stop.
+
+**Mass ≠ Weight.** Mass is the same everywhere in the universe. Weight is the gravitational force on that mass, and changes depending on local gravity.
+
+---
+
+## 3. Newton's Second Law — $\Sigma\vec{F} = m\vec{a}$
+> *"The acceleration of an object is directly proportional to the net force acting on it, and inversely proportional to its mass."*
+
+$$\boxed{\Sigma\vec{F} = m\vec{a}}$$
+
+- **Larger net force** → **greater acceleration** (direct proportion)
+- **Larger mass** → **smaller acceleration** (inverse proportion)
+
+### 3.1 The Momentum Form (More Fundamental)
+Newton's original formulation used **momentum** ($\vec{p} = m\vec{v}$):
+$$\Sigma\vec{F} = \frac{d\vec{p}}{dt}$$
+
+When mass is constant, this simplifies to $F = ma$. But when mass changes (like a rocket), you **must** use the momentum form.
+
+> **Rocket example:** As a rocket burns fuel, its mass decreases every second. Using $F = ma$ with a fixed $m$ gives the wrong answer. The momentum form $F = \frac{d\vec{p}}{dt}$ handles this correctly and leads to the Tsiolkovsky Rocket Equation.
+
+### 3.2 Weight vs. Mass (Critical Distinction)
+$$\vec{W} = m\vec{g}$$
+
+| Property | Mass | Weight |
+|---|---|---|
+| What it measures | Inertia | Gravitational force |
+| Unit | kg | N (Newtons) |
+| Changes with location? | **No** — same everywhere | **Yes** — depends on local $g$ |
+
+**Example:** A 70 kg astronaut:
+- On Earth ($g = 9.81\ \text{m/s}^2$): Weight = $70 \times 9.81 = 686.7$ N
+- On the Moon ($g = 1.62\ \text{m/s}^2$): Weight = $70 \times 1.62 = 113.4$ N
+- In deep space (no gravity): Weight = **0 N** (but mass is still 70 kg!)
+
+### 3.3 Worked Examples
+
+**Example 1 — Find acceleration:**
+A 5 kg block is pushed with a net force of 20 N. Find its acceleration.
+$$a = \frac{\Sigma F}{m} = \frac{20}{5} = 4 \text{ m/s}^2$$
+
+**Example 2 — Multiple forces:**
+A 10 kg box on a frictionless table: 40 N rightward, 15 N leftward.
+$$\Sigma F = 40 - 15 = 25 \text{ N} \implies a = \frac{25}{10} = 2.5 \text{ m/s}^2 \text{ (right)}$$
+
+**Example 3 — Find mass:**
+A car accelerates at $3\ \text{m/s}^2$ under a net force of 6000 N.
+$$m = \frac{F}{a} = \frac{6000}{3} = 2000 \text{ kg}$$
+
+---
+
+## 4. Newton's Third Law — Action & Reaction
+> *"For every action force, there is an equal and opposite reaction force."*
+
+$$\vec{F}_{A \to B} = -\vec{F}_{B \to A}$$
+
+### 4.1 Clearing Up the Biggest Misconception
+**Q: If forces are equal and opposite, why does anything accelerate?**
+
+**A:** Because the two forces **never act on the same object**. Action-reaction pairs act on *different* objects and therefore can never cancel.
+
+> Push a wall with 100 N → wall pushes *you* with 100 N backward. The wall has one 100 N force on it (from you). You have one 100 N force on you (from wall). These are separate objects — no cancellation.
+
+### 4.2 Real-World Action-Reaction Pairs
+
+| Situation | Action | Reaction |
+|---|---|---|
+| Walking | Foot pushes ground backward | Ground pushes foot forward (this moves you!) |
+| Firing a gun | Gun pushes bullet forward | Bullet pushes gun backward (recoil) |
+| Rocket in space | Engine pushes gas backward | Gas pushes rocket forward |
+| Gravity on you | Earth pulls you downward | You pull Earth upward with identical force |
+
+> **Mind-bending:** You pull Earth toward you just as hard as Earth pulls you. Earth doesn't visibly move because $a = F/m$ — its mass ($5.97 \times 10^{24}$ kg) makes its acceleration utterly negligible.
+
+---
 
 ## 5. Free Body Diagrams (FBDs)
-To solve any complex mechanics problem, physicists isolate the object of interest and draw all external forces acting *on* it.
+An FBD is the most critical tool in dynamics. To draw one:
+1. Represent the object as a simple dot or box.
+2. Draw every external force acting **on** that object as a labeled arrow.
+3. Choose a coordinate system (+x right, +y up is standard).
 
-* **Gravity ($W = mg$)**: The long-range attractive force exerted by the Earth. It always points perfectly straight down toward the center of the planet.
-* **Normal Force ($N$ or $F_N$)**: The contact force exerted by a surface to prevent solid objects from passing through each other. It is always *perpendicular* (normal) to the surface.
-* **Tension ($T$)**: The pulling force transmitted axially through a string, cable, or rope. Tension only pulls; you cannot push with a rope!
-* **Friction ($f = \\mu N$)**: The contact force that resists sliding motion. It always points perfectly parallel to the surface, directly opposing the direction of attempted motion.
+### 5.1 The Common Forces
 
-## 6. The Mathematical Proof of Conservation of Momentum
-How do physicists know that in an isolated collision between two asteroids, the total momentum before the crash exactly equals the total momentum after? It is not a guess; it is a direct mathematical consequence of Newton's 3rd Law!
+**Weight ($W = mg$):** Always straight downward. Always.
 
-**Step 1:** Imagine two objects, A and B, colliding in space.
-During the collision, they exert violent contact forces on each other. By Newton's Third Law:
-$$ \\vec{F}_{A \\to B} = -\\vec{F}_{B \\to A} $$
+**Normal Force ($N$):** Contact force from a surface. Always **perpendicular** (normal) to the surface.
+- Standing on flat ground → $N$ points straight up.
+- Standing on a ramp → $N$ points diagonally away from the ramp.
+- Resting on a ceiling (imagine) → $N$ points straight down.
 
-**Step 2:** Apply Newton's Second Law in its fundamental momentum form.
-We established earlier that $\\vec{F} = \\frac{d\\vec{p}}{dt}$.
-Therefore, the force A exerts on B dictates how B's momentum changes: $\\vec{F}_{A \\to B} = \\frac{d\\vec{p}_B}{dt}$.
-Likewise, $\\vec{F}_{B \\to A} = \\frac{d\\vec{p}_A}{dt}$.
+**Tension ($T$):** Pulling force through a string/rope/cable. Always **pulls** the object toward the rope — ropes can never push.
 
-**Step 3:** Substitute these derivatives into the Third Law equation.
-$$ \\frac{d\\vec{p}_B}{dt} = -\\frac{d\\vec{p}_A}{dt} $$
+**Friction ($f$):** Always **parallel** to the surface, opposing (attempted) sliding motion.
+- **Static friction** ($f_s \leq \mu_s N$): Prevents stationary object from starting to slide. Adjustable up to a maximum.
+- **Kinetic friction** ($f_k = \mu_k N$): Acts on already-sliding objects. Fixed value. Always $\mu_k < \mu_s$.
 
-**Step 4:** Move all terms to one side of the equation.
-$$ \\frac{d\\vec{p}_A}{dt} + \\frac{d\\vec{p}_B}{dt} = 0 $$
-Using the sum rule of calculus:
-$$ \\frac{d}{dt} (\\vec{p}_A + \\vec{p}_B) = 0 $$
+---
 
-**Step 5:** Interpret the ultimate calculus result.
-If the derivative (the rate of change) of the total momentum $(\\vec{p}_A + \\vec{p}_B)$ is exactly $0$, that means the total momentum is a **perfect constant**! It never increases or decreases over time.
-Therefore, the total momentum before the collision must identically equal the total momentum after.
-$$ \\Sigma\\vec{p}_{initial} = \\Sigma\\vec{p}_{final} $$
-**Q.E.D.** The Law of Conservation of Momentum is perfectly proven from Newton's Laws of Motion.
+## 6. Worked Problems — Step by Step
+
+### 6.1 Horizontal Push with Friction
+**Problem:** A 20 kg crate on a floor ($\mu_k = 0.3$). You push horizontally with 80 N. Find acceleration.
+
+**Step 1 — Vertical ($y$) direction:** No vertical acceleration.
+$$N - mg = 0 \implies N = mg = 20 \times 9.81 = 196.2 \text{ N}$$
+
+**Step 2 — Calculate kinetic friction:**
+$$f_k = \mu_k N = 0.3 \times 196.2 = 58.86 \text{ N}$$
+
+**Step 3 — Horizontal ($x$) direction:**
+$$\Sigma F_x = ma \implies 80 - 58.86 = 20a$$
+$$21.14 = 20a \implies a = 1.06 \text{ m/s}^2$$
+
+---
+
+### 6.2 The Inclined Plane (Ramp)
+**Problem:** A 5 kg block slides **down** a frictionless ramp at $\theta = 30°$. Find its acceleration.
+
+**Key technique:** Tilt your coordinate axes so x runs *along* the slope and y runs *perpendicular* to it. Then only gravity needs decomposing.
+
+**Step 1 — Decompose weight into tilted axes:**
+- Along slope: $W_{\parallel} = mg\sin\theta = 5 \times 9.81 \times \sin 30° = 24.53$ N (down slope)
+- Perpendicular: $W_{\perp} = mg\cos\theta = 5 \times 9.81 \times \cos 30° = 42.48$ N (into slope)
+
+**Step 2 — y-direction (no acceleration into/out of slope):**
+$$N = mg\cos\theta = 42.48 \text{ N}$$
+
+**Step 3 — x-direction (along the slope):**
+$$mg\sin\theta = ma \implies a = g\sin\theta = 9.81 \times 0.5 = 4.91 \text{ m/s}^2$$
+
+The mass cancels! All blocks (heavy or light) accelerate identically on a frictionless ramp of the same angle. This is Galileo's famous result.
+
+**With friction ($\mu_k = 0.2$):**
+$$a = g\sin\theta - \mu_k g\cos\theta = g(\sin\theta - \mu_k\cos\theta)$$
+$$= 9.81(0.5 - 0.2 \times 0.866) = 9.81(0.5 - 0.173) = 9.81 \times 0.327 = 3.21 \text{ m/s}^2$$
+
+---
+
+### 6.3 The Atwood Machine (Two Hanging Masses)
+**Problem:** Two masses connected by a string over a frictionless pulley: $m_1 = 3$ kg, $m_2 = 5$ kg. Released from rest. Find acceleration $a$ and string tension $T$.
+
+Since the string is inextensible, both masses have the same magnitude of acceleration. $m_2$ (heavier) goes down; $m_1$ goes up.
+
+**Step 1 — Write Newton's 2nd Law for each mass separately.**
+Define downward as positive for $m_2$, upward as positive for $m_1$:
+
+For $m_1$ (going up): $\quad T - m_1 g = m_1 a \quad \ldots (i)$
+
+For $m_2$ (going down): $\quad m_2 g - T = m_2 a \quad \ldots (ii)$
+
+**Step 2 — Eliminate $T$ by adding the two equations:**
+$$(T - m_1 g) + (m_2 g - T) = m_1 a + m_2 a$$
+$$m_2 g - m_1 g = (m_1 + m_2)a$$
+$$a = \frac{(m_2 - m_1)g}{m_1 + m_2} = \frac{(5 - 3) \times 9.81}{3 + 5} = \frac{19.62}{8} = 2.45 \text{ m/s}^2$$
+
+**Step 3 — Find tension from equation (i):**
+$$T = m_1(g + a) = 3 \times (9.81 + 2.45) = 3 \times 12.26 = 36.8 \text{ N}$$
+
+**Sanity check:** $T$ must be *less* than $m_2 g = 5 \times 9.81 = 49.05$ N (otherwise $m_2$ wouldn't accelerate down). ✓ $36.8 < 49.05$. And $T$ must be *greater* than $m_1 g = 3 \times 9.81 = 29.43$ N (otherwise $m_1$ wouldn't accelerate up). ✓ $36.8 > 29.43$. 
+
+---
+
+## 7. Derivation: Conservation of Momentum from Newton's Laws
+
+**Setup:** Two objects A and B collide in space (isolated system — no external forces).
+
+**Step 1:** Newton's 3rd Law:
+$$\vec{F}_{A \to B} = -\vec{F}_{B \to A}$$
+
+**Step 2:** Newton's 2nd Law (momentum form) for each object:
+$$\vec{F}_{A \to B} = \frac{d\vec{p}_B}{dt}, \qquad \vec{F}_{B \to A} = \frac{d\vec{p}_A}{dt}$$
+
+**Step 3:** Substitute into 3rd Law:
+$$\frac{d\vec{p}_B}{dt} = -\frac{d\vec{p}_A}{dt}$$
+
+**Step 4:** Rearrange:
+$$\frac{d\vec{p}_A}{dt} + \frac{d\vec{p}_B}{dt} = 0 \implies \frac{d}{dt}(\vec{p}_A + \vec{p}_B) = 0$$
+
+**Step 5:** A quantity whose time-derivative is zero is **constant**:
+$$\vec{p}_{A,i} + \vec{p}_{B,i} = \vec{p}_{A,f} + \vec{p}_{B,f}$$
+
+Total momentum before = Total momentum after. **Q.E.D.**
+
+Conservation of Momentum is not an axiom — it is a proven consequence of Newton's 2nd and 3rd Laws.
 
 ---flashcards---
 [
   {
-    "front": "What does Newton's First Law (Law of Inertia) state?",
-    "back": "An object at rest stays at rest, and an object in motion stays in motion with the same velocity, unless acted upon by a net external force."
+    "front": "What two properties does every force have (as a vector)?",
+    "back": "Magnitude (strength, measured in Newtons) and Direction."
   },
   {
-    "front": "What is the formula for Newton's Second Law in terms of acceleration?",
-    "back": "$$\\\\Sigma\\\\vec{F} = m\\\\vec{a}$$"
+    "front": "What is the difference between a contact force and a field force?",
+    "back": "Contact forces require physical touching (friction, tension, normal force). Field forces act at a distance without touching (gravity, electromagnetism)."
   },
   {
-    "front": "What is the true fundamental formulation of Newton's Second Law in terms of momentum?",
-    "back": "$$\\\\Sigma\\\\vec{F} = \\\\frac{d\\\\vec{p}}{dt}$$"
+    "front": "State Newton's First Law in one sentence.",
+    "back": "An object keeps its current state of motion (rest or constant velocity) unless a net external force acts on it."
   },
   {
-    "front": "Why is the momentum formulation of Newton's Second Law superior to the mass-acceleration formulation?",
-    "back": "Because it remains accurate even when an object's mass is changing over time (e.g., a rocket burning and expelling fuel)."
+    "front": "What is inertia and how is it measured?",
+    "back": "Inertia is matter's resistance to changes in its motion. It is quantified by mass (kg). More mass = more inertia = harder to accelerate."
   },
   {
-    "front": "What does Newton's Third Law state?",
-    "back": "For every action force, there is an equal and opposite reaction force ($$\\\\vec{F}_{A \\\\to B} = -\\\\vec{F}_{B \\\\to A}$$)."
+    "front": "State Newton's Second Law in two forms.",
+    "back": "Acceleration form: $$\\\\Sigma\\\\vec{F} = m\\\\vec{a}$$. Fundamental momentum form: $$\\\\Sigma\\\\vec{F} = \\\\frac{d\\\\vec{p}}{dt}$$"
   },
   {
-    "front": "If action and reaction forces are equal and opposite, why don't they cancel each other out?",
-    "back": "Because they act on entirely different objects."
+    "front": "Why must you use $$F = \\\\frac{d\\\\vec{p}}{dt}$$ for a rocket instead of $$F = ma$$?",
+    "back": "Because the rocket's mass constantly decreases as it burns and expels fuel. The simpler $$F=ma$$ assumes constant mass, which is incorrect for a rocket."
   },
   {
-    "front": "In a Free Body Diagram, what is the Normal Force ($$N$$)?",
-    "back": "The contact force exerted by a surface to prevent objects from passing through it, always pointing perpendicular to the surface."
+    "front": "What is the difference between mass and weight?",
+    "back": "Mass (kg) measures inertia — same everywhere. Weight (N) is the gravitational force on that mass: $$W = mg$$. Weight depends on local $$g$$."
   },
   {
-    "front": "The Law of Conservation of Momentum is directly derived from which of Newton's Laws?",
-    "back": "Newton's Third Law (Action & Reaction) combined with Newton's Second Law (Force as the derivative of momentum)."
+    "front": "What is the weight of a 70 kg person on the Moon where $$g_{moon} = 1.62 \\\\text{ m/s}^2$$?",
+    "back": "$$W = mg = 70 \\\\times 1.62 = 113.4 \\\\text{ N}$$. Their mass is still 70 kg."
+  },
+  {
+    "front": "State Newton's Third Law.",
+    "back": "For every action force, there is an equal and opposite reaction force: $$\\\\vec{F}_{A \\\\to B} = -\\\\vec{F}_{B \\\\to A}$$"
+  },
+  {
+    "front": "Why don't action-reaction force pairs cancel each other out?",
+    "back": "They always act on DIFFERENT objects. Forces can only cancel if they act on the SAME object."
+  },
+  {
+    "front": "What direction does the Normal Force always point?",
+    "back": "Perpendicular (normal) to the surface — never parallel to it."
+  },
+  {
+    "front": "What is the difference between static and kinetic friction?",
+    "back": "Static friction ($$f_s \\\\leq \\\\mu_s N$$) prevents a stationary object from starting to slide. Kinetic friction ($$f_k = \\\\mu_k N$$) acts on already-sliding objects. Always $$\\\\mu_k < \\\\mu_s$$."
+  },
+  {
+    "front": "On a frictionless ramp at angle $$\\\\theta$$, what is the acceleration of a sliding block?",
+    "back": "$$a = g\\\\sin\\\\theta$$. Mass cancels — all blocks accelerate identically."
+  },
+  {
+    "front": "What is the acceleration formula for an Atwood machine with masses $$m_1$$ and $$m_2$$?",
+    "back": "$$a = \\\\frac{(m_2 - m_1)g}{m_1 + m_2}$$ where $$m_2 > m_1$$."
+  },
+  {
+    "front": "Conservation of Momentum is derived from which Newton's Laws?",
+    "back": "Newton's 3rd Law (action-reaction) combined with Newton's 2nd Law (force = rate of change of momentum)."
   }
 ]
 `,
-
 
   'Advanced Thermodynamics': `
 
