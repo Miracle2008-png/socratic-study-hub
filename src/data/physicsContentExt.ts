@@ -1,65 +1,176 @@
 export const physicsContentExt: Record<string, string> = {
 
+  'Kinematics & Projectile Motion': `
+# Kinematics: The Geometry of Motion
+
+## 1. Position, Velocity, and Acceleration
+Kinematics is the mathematical description of motion without considering the forces that cause it. The fundamental quantities are vectors:
+* **Position ($\\vec{x}$ or $\\vec{r}$)**: Where an object is located relative to an origin.
+* **Velocity ($\\vec{v} = \\frac{d\\vec{x}}{dt}$)**: The rate of change of position. It tells you how fast an object is moving and in what direction.
+* **Acceleration ($\\vec{a} = \\frac{d\\vec{v}}{dt}$)**: The rate of change of velocity. If you step on the gas, or hit the brakes, or turn the steering wheel, you are accelerating!
+
+## 2. The Big 4 Kinematic Equations
+When acceleration is perfectly constant (like free-fall near Earth's surface where $a = -9.81 \\text{ m/s}^2$), we can integrate the definitions to yield four incredibly powerful equations:
+
+1. $v_f = v_i + at$
+2. $\\Delta x = v_i t + \\frac{1}{2}at^2$
+3. $v_f^2 = v_i^2 + 2a\\Delta x$
+4. $\\Delta x = \\frac{v_i + v_f}{2} t$
+
+*Tip: Every equation is missing exactly one variable. Identify which variable you don't know and don't care about, and choose the equation that is missing it!*
+
+## 3. Projectile Motion
+When you throw a ball through the air, it moves in two dimensions ($x$ and $y$). The most profound realization of Galilean physics is that **horizontal and vertical motions are completely independent** and do not affect each other.
+
+If we ignore air resistance:
+* **Horizontal ($x$)**: There are no forces pushing it forward or backward, so acceleration is $0$. It moves at a perfect constant velocity.
+* **Vertical ($y$)**: Gravity pulls it down, so it experiences a constant downward acceleration of $-9.81 \\text{ m/s}^2$.
+
+To solve projectile problems, simply decompose the initial velocity vector:
+* $v_{ix} = v_i \\cos(\\theta)$
+* $v_{iy} = v_i \\sin(\\theta)$
+
+Then, solve the $y$-axis and $x$-axis separately. Time ($t$) is the only variable that crosses over between the two axes!
+
+---flashcards---
+[
+  {
+    "front": "What is the difference between velocity and speed?",
+    "back": "Velocity is a vector (requires magnitude and direction), whereas speed is a scalar (magnitude only)."
+  },
+  {
+    "front": "What is the kinematic equation to use if you do NOT know the final velocity?",
+    "back": "$$\\\\Delta x = v_i t + \\\\frac{1}{2}at^2$$"
+  },
+  {
+    "front": "What is the kinematic equation to use if you do NOT know the time ($$t$$)?",
+    "back": "$$v_f^2 = v_i^2 + 2a\\\\Delta x$$"
+  },
+  {
+    "front": "In ideal projectile motion, what is the horizontal acceleration?",
+    "back": "$$0\\\\text{ m/s}^2$$. The horizontal velocity remains perfectly constant."
+  },
+  {
+    "front": "In ideal projectile motion, what is the vertical acceleration?",
+    "back": "$$-9.81\\\\text{ m/s}^2$$ (due to gravity)."
+  },
+  {
+    "front": "In a 2D projectile motion problem, what is the ONLY variable shared between the horizontal ($$x$$) and vertical ($$y$$) equations?",
+    "back": "Time ($$t$$)"
+  }
+]
+`,
+
   // Foundation
 
   'Force & Newton’s laws': `
 # Force & Newton's Laws: The Engine of Dynamics
 
-## 1. What is a Force"
-A force is a push or a pull resulting from an object's interaction with another object. Forces are vectors (they have magnitude and direction). When multiple forces act on an object, we sum them up using vector addition to find the **Net Force** ($\\Sigma\\vec{F}$).
+## 1. What is a Force?
+A **force** is fundamentally a push or a pull resulting from an object's interaction with another object. Forces are vector quantities, meaning they possess both a magnitude (how strong the push/pull is, measured in Newtons, $N$) and a direction. 
 
-## 2. Newton's First Law (Inertia)
+When multiple forces act upon a single object simultaneously, we cannot simply add their magnitudes. We must perform **vector addition** to find the **Net Force** ($\\Sigma\\vec{F}$).
+
+## 2. Newton's First Law (The Law of Inertia)
 *“An object at rest stays at rest, and an object in motion stays in motion with the same speed and in the same direction unless acted upon by an unbalanced force.”*
-This is the Law of Inertia. It implies that a net force is NOT required to keep an object moving in deep space; force is only required to *change* its motion. Mass is simply a quantitative measure of an object's inertia (its resistance to changes in velocity).
+
+Before Galileo and Newton, Aristotelian physics claimed that objects naturally come to rest. Newton's First Law shattered this paradigm. It states that a net force is **NOT** required to keep an object moving. If you throw a baseball in the vacuum of deep space, it will travel in a perfectly straight line at a perfectly constant speed forever. A force is only required to *change* an object's motion (to accelerate it).
+
+**Inertia** is the natural tendency of an object to resist changes to its state of motion. **Mass** is simply the quantitative, measurable value of an object's inertia.
 
 ## 3. Newton's Second Law ($\\vec{F} = m\\vec{a}$)
 *“The acceleration of an object is directly proportional to the net force acting upon it, and inversely proportional to its mass.”*
+
 $$ \\Sigma\\vec{F} = m\\vec{a} $$
-However, Newton's original and more profound formulation was based on **momentum** ($\\vec{p} = m\\vec{v}$). 
-He stated that force is the rate of change of momentum:
+
+This is perhaps the most famous equation in classical mechanics. However, Newton's original formulation was far more profound. He defined force based on **momentum** ($\\vec{p} = m\\vec{v}$). He stated that force is the true *rate of change of momentum* over time:
+
 $$ \\Sigma\\vec{F} = \\frac{d\\vec{p}}{dt} $$
-If mass is constant, $\\frac{d(m\\vec{v})}{dt} = m\\frac{d\\vec{v}}{dt} = m\\vec{a}$. But the momentum formulation is vastly superior because it still works for objects that lose mass (like rockets burning fuel) and in the realm of Einstein's Relativity!
+
+If the mass of an object is perfectly constant, we can pull $m$ out of the derivative:
+$$ \\frac{d(m\\vec{v})}{dt} = m\\frac{d\\vec{v}}{dt} = m\\vec{a} $$
+
+**Why the momentum formulation is superior:** The equation $\\Sigma\\vec{F} = m\\vec{a}$ completely fails when analyzing a rocket launching into space! Why? Because the rocket is constantly burning fuel and expelling it out the back, meaning its mass $m$ is rapidly decreasing over time. You *must* use $\\Sigma\\vec{F} = \\frac{d\\vec{p}}{dt}$ to correctly calculate rocket mechanics!
 
 ## 4. Newton's Third Law (Action & Reaction)
 *“For every action, there is an equal and opposite reaction.”*
+
 If object A exerts a force on object B, then object B exerts a force on object A of the exact same magnitude but in the exact opposite direction.
+
 $$ \\vec{F}_{A \\to B} = -\\vec{F}_{B \\to A} $$
-Crucially, these forces act on *different* objects, which is why they do not simply cancel each other out to zero!
+
+**A Common Misconception:** If the forces are equal and opposite, why don't they just cancel out to zero? Why does anything ever move? 
+They don't cancel out because **they act on entirely different objects!** If you push on a wall with 100N, the wall pushes back on *you* with 100N. The force on the wall is 100N. The force on you is 100N. Since there is only one force acting on *you*, you can accelerate backward!
 
 ## 5. Free Body Diagrams (FBDs)
-To solve any mechanics problem, we isolate the object of interest and draw all forces acting *on* it.
-Common forces include:
-* **Gravity ($W = mg$)**: Always points straight down to the center of the Earth.
-* **Normal Force ($N$)**: The contact force exerted by a surface, always perfectly perpendicular to the surface.
-* **Tension ($T$)**: The pulling force transmitted through a string or rope.
-* **Friction ($f = \\mu N$)**: Resists sliding motion, pointing exactly opposite to the direction of motion.
+To solve any complex mechanics problem, physicists isolate the object of interest and draw all external forces acting *on* it.
 
-## Derivation of the Conservation of Momentum
-How do we prove that in an isolated collision between two objects, the total momentum before the crash equals the total momentum after" It is a direct mathematical consequence of Newton's 3rd Law!
+* **Gravity ($W = mg$)**: The long-range attractive force exerted by the Earth. It always points perfectly straight down toward the center of the planet.
+* **Normal Force ($N$ or $F_N$)**: The contact force exerted by a surface to prevent solid objects from passing through each other. It is always *perpendicular* (normal) to the surface.
+* **Tension ($T$)**: The pulling force transmitted axially through a string, cable, or rope. Tension only pulls; you cannot push with a rope!
+* **Friction ($f = \\mu N$)**: The contact force that resists sliding motion. It always points perfectly parallel to the surface, directly opposing the direction of attempted motion.
 
-**Step 1:** Imagine two objects, A and B, colliding.
-During the collision, they exert forces on each other. By Newton's Third Law:
+## 6. The Mathematical Proof of Conservation of Momentum
+How do physicists know that in an isolated collision between two asteroids, the total momentum before the crash exactly equals the total momentum after? It is not a guess; it is a direct mathematical consequence of Newton's 3rd Law!
+
+**Step 1:** Imagine two objects, A and B, colliding in space.
+During the collision, they exert violent contact forces on each other. By Newton's Third Law:
 $$ \\vec{F}_{A \\to B} = -\\vec{F}_{B \\to A} $$
 
-**Step 2:** Use Newton's Second Law in its true momentum form.
-We know that $\\vec{F} = \\frac{d\\vec{p}}{dt}$.
-Therefore, the force A exerts on B causes B's momentum to change: $\\vec{F}_{A \\to B} = \\frac{d\\vec{p}_B}{dt}$.
+**Step 2:** Apply Newton's Second Law in its fundamental momentum form.
+We established earlier that $\\vec{F} = \\frac{d\\vec{p}}{dt}$.
+Therefore, the force A exerts on B dictates how B's momentum changes: $\\vec{F}_{A \\to B} = \\frac{d\\vec{p}_B}{dt}$.
 Likewise, $\\vec{F}_{B \\to A} = \\frac{d\\vec{p}_A}{dt}$.
 
-**Step 3:** Substitute these into the Third Law equation.
+**Step 3:** Substitute these derivatives into the Third Law equation.
 $$ \\frac{d\\vec{p}_B}{dt} = -\\frac{d\\vec{p}_A}{dt} $$
 
-**Step 4:** Move everything to one side.
+**Step 4:** Move all terms to one side of the equation.
 $$ \\frac{d\\vec{p}_A}{dt} + \\frac{d\\vec{p}_B}{dt} = 0 $$
+Using the sum rule of calculus:
 $$ \\frac{d}{dt} (\\vec{p}_A + \\vec{p}_B) = 0 $$
 
-**Step 5:** Interpret the calculus result.
-If the derivative (rate of change) of the total momentum $(\\vec{p}_A + \\vec{p}_B)$ is exactly exactly $0$, that means the total momentum is a **constant**! It never changes over time.
-Therefore, the total momentum before the collision equals the total momentum after.
-$$ \\vec{p}_{initial} = \\vec{p}_{final} $$
-Q.E.D. The Conservation of Momentum is perfectly proven.
+**Step 5:** Interpret the ultimate calculus result.
+If the derivative (the rate of change) of the total momentum $(\\vec{p}_A + \\vec{p}_B)$ is exactly $0$, that means the total momentum is a **perfect constant**! It never increases or decreases over time.
+Therefore, the total momentum before the collision must identically equal the total momentum after.
+$$ \\Sigma\\vec{p}_{initial} = \\Sigma\\vec{p}_{final} $$
+**Q.E.D.** The Law of Conservation of Momentum is perfectly proven from Newton's Laws of Motion.
 
-
+---flashcards---
+[
+  {
+    "front": "What does Newton's First Law (Law of Inertia) state?",
+    "back": "An object at rest stays at rest, and an object in motion stays in motion with the same velocity, unless acted upon by a net external force."
+  },
+  {
+    "front": "What is the formula for Newton's Second Law in terms of acceleration?",
+    "back": "$$\\\\Sigma\\\\vec{F} = m\\\\vec{a}$$"
+  },
+  {
+    "front": "What is the true fundamental formulation of Newton's Second Law in terms of momentum?",
+    "back": "$$\\\\Sigma\\\\vec{F} = \\\\frac{d\\\\vec{p}}{dt}$$"
+  },
+  {
+    "front": "Why is the momentum formulation of Newton's Second Law superior to the mass-acceleration formulation?",
+    "back": "Because it remains accurate even when an object's mass is changing over time (e.g., a rocket burning and expelling fuel)."
+  },
+  {
+    "front": "What does Newton's Third Law state?",
+    "back": "For every action force, there is an equal and opposite reaction force ($$\\\\vec{F}_{A \\\\to B} = -\\\\vec{F}_{B \\\\to A}$$)."
+  },
+  {
+    "front": "If action and reaction forces are equal and opposite, why don't they cancel each other out?",
+    "back": "Because they act on entirely different objects."
+  },
+  {
+    "front": "In a Free Body Diagram, what is the Normal Force ($$N$$)?",
+    "back": "The contact force exerted by a surface to prevent objects from passing through it, always pointing perpendicular to the surface."
+  },
+  {
+    "front": "The Law of Conservation of Momentum is directly derived from which of Newton's Laws?",
+    "back": "Newton's Third Law (Action & Reaction) combined with Newton's Second Law (Force as the derivative of momentum)."
+  }
+]
 `,
 
 
@@ -711,14 +822,46 @@ We see that the Work done exactly equals the change in a quantity defined by $\\
 $$ W = K_f - K_i = \\Delta K $$
 Q.E.D. We have proven both the formula for Kinetic Energy and the Work-Energy Theorem in one stroke!
 
-
+---flashcards---
+[
+  {
+    "front": "What is the formula for calculating Work done by a constant force at an angle $${\\\\theta}$$?",
+    "back": "$$W = Fd \\\\cos\\\\theta$$, or equivalently the dot product $$W = \\\\vec{F} \\\\cdot \\\\vec{d}$$"
+  },
+  {
+    "front": "If you carry a heavy box and walk perfectly horizontally, how much work are you doing on the box?",
+    "back": "$$0$$ Joules. Your lifting force is vertical, while the displacement is horizontal ($$\\\\cos(90^\\\\circ) = 0$$)."
+  },
+  {
+    "front": "What is the formula for Kinetic Energy?",
+    "back": "$$K = \\\\frac{1}{2}mv^2$$"
+  },
+  {
+    "front": "What is the formula for Elastic Potential Energy stored in an ideal spring?",
+    "back": "$$U_s = \\\\frac{1}{2}kx^2$$"
+  },
+  {
+    "front": "State the Law of Conservation of Energy for an isolated system.",
+    "back": "Total mechanical energy ($$E = K + U$$) remains constant if only conservative forces act."
+  },
+  {
+    "front": "What is Power?",
+    "back": "The rate at which work is done or energy is transferred: $$P = \\\\frac{W}{t} = \\\\frac{dE}{dt}$$"
+  },
+  {
+    "front": "How can Power be expressed in terms of Force and velocity?",
+    "back": "$$P = \\\\vec{F} \\\\cdot \\\\vec{v}$$"
+  },
+  {
+    "front": "The Work-Energy Theorem states that the net work done on an object equals what?",
+    "back": "Its change in Kinetic Energy: $$W_{net} = \\\\Delta K$$"
+  }
+]
 `,
-
 
   'Circular Motion & Gravitation': `
 # Circular Motion & Gravitation: The Celestial Clockwork
 
-## 1. Uniform Circular Motion
 When an object moves in a perfect circle at a constant speed, its velocity vector is constantly changing direction. Because velocity is changing, the object is absolutely accelerating, even though it never speeds up!
 This acceleration always points perfectly inwards toward the center of the circle, and is called **Centripetal Acceleration**:
 $$ a_c = \\frac{v^2}{r} $$

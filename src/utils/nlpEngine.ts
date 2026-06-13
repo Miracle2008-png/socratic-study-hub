@@ -294,6 +294,24 @@ export class ContentGenerator {
   }
 
   static generateFlashcards(text: string): Array<{front: string, back: string, type: string}> {
+    // 1. Check for explicit hardcoded flashcards first
+    const match = text.match(/---flashcards---\s*(\[\s*\{[\s\S]*\}\s*\])/);
+    if (match) {
+      try {
+        const parsed = JSON.parse(match[1]);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          return parsed.map(f => ({
+            front: f.front,
+            back: f.back,
+            type: f.type || 'definition'
+          }));
+        }
+      } catch (e) {
+        console.error("Failed to parse explicit flashcards block:", e);
+      }
+    }
+
+    // 2. Fallback to NLP heuristics
     const sentences = Tokenizer.getSentences(text);
     const flashcards: Array<{front: string, back: string, type: string}> = [];
     const seen = new Set<string>();
