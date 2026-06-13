@@ -1859,222 +1859,517 @@ He recognised this as the speed of light — proving light is an electromagnetic
   'Optics': `
 # Optics: The Physics of Light
 
+## 0. Introduction
+Optics is the study of light and its interactions with matter. It explains rainbows, mirages, eyeglasses, cameras, telescopes, fibre optics, and lasers. There are two main branches: **geometric optics** (light as rays — reflection and refraction) and **wave optics** (light as waves — interference and diffraction).
+
+---
+
 ## 1. The Nature of Light
-For centuries, physicists argued over whether light was a wave or a particle. Thanks to Quantum Mechanics, we now know it exhibits wave-particle duality. In classical optics, however, we treat light strictly as an Electromagnetic Wave—an oscillating electric and magnetic field traveling through a vacuum at exactly $c = 299,792,458$ m/s.
 
-## 2. Reflection and Refraction
-When light strikes a boundary between two different transparent mediums (like air and water), two things happen:
-* **Reflection**: The light bounces off. The angle of incidence exactly equals the angle of reflection ($\\theta_i = \\theta_r$).
-* **Refraction**: The light bends as it enters the new medium because it slows down. The speed of light in a material is defined by its Index of Refraction ($n = c/v$). Water has $n = 1.33$, meaning light travels 33% slower in water than in a vacuum!
+Light is an **electromagnetic wave** with a speed in vacuum:
+$$c = 3\times10^8\text{ m/s}$$
 
-## 3. Snell's Law
-The exact angle of bending during refraction is governed by Snell's Law:
-$$ n_1 \\sin\\theta_1 = n_2 \\sin\\theta_2 $$
+The visible spectrum spans roughly $400\text{ nm}$ (violet) to $700\text{ nm}$ (red). In a medium with refractive index $n$:
+$$v = \frac{c}{n}$$
 
-## 4. Total Internal Reflection
-If light tries to exit a slow medium (like water, $n_1=1.33$) into a fast medium (like air, $n_2=1.0$), it bends *away* from the normal. At a specific "critical angle", it bends so far that it mathematically cannot exit the water at all, and acts as a perfect mirror!
-$$ \\theta_{crit} = \\arcsin\\left(\\frac{n_2}{n_1}\\right) $$
-This phenomenon is how Fiber Optic cables transmit internet data across the ocean without losing any light!
+Water: $n \approx 1.33$; glass: $n \approx 1.5$; diamond: $n \approx 2.42$
 
-## 5. Diffraction and Interference
-Because light is a wave, it bends around sharp corners (Diffraction). When two light waves overlap, their peaks and troughs add together (Interference). If peak meets peak, you get bright Constructive Interference. If peak meets trough, they annihilate each other in dark Destructive Interference. This creates the beautiful rainbow patterns seen on soap bubbles and oil slicks.
+---
 
-## Derivation of Snell's Law (Fermat's Principle)
-Fermat's Principle of Least Time states that light traveling between two points will always take the path that requires the absolute minimum amount of time. Let's use calculus to prove Snell's Law from this profound principle!
+## 2. Reflection
 
-**Step 1:** The Geometric Setup.
-Imagine light traveling from Point A (in medium 1 with speed $v_1$) to Point B (in medium 2 with speed $v_2$). The horizontal boundary between the mediums is the x-axis. 
-Point A is at $(0, y_1)$ and Point B is at $(L, -y_2)$.
-The light hits the boundary at some unknown horizontal position $x$.
+### 2.1 Law of Reflection
+$$\theta_i = \theta_r$$
 
-**Step 2:** Define the total time $T$.
-Time is Distance divided by Speed. By the Pythagorean theorem, the distances traveled in each medium are:
-$D_1 = \\sqrt{x^2 + y_1^2}$
-$D_2 = \\sqrt{(L-x)^2 + y_2^2}$
-Total Time:
-$$ T(x) = \\frac{\\sqrt{x^2 + y_1^2}}{v_1} + \\frac{\\sqrt{(L-x)^2 + y_2^2}}{v_2} $$
+The angle of incidence equals the angle of reflection, both measured from the **normal** to the surface.
 
-**Step 3:** Minimize the time using Calculus.
-To find the exact path $x$ that minimizes time, we take the derivative of $T(x)$ and set it perfectly to $0$.
-$$ \\frac{dT}{dx} = \\frac{1}{v_1} \\cdot \\frac{x}{\\sqrt{x^2 + y_1^2}} + \\frac{1}{v_2} \\cdot \\frac{-(L-x)}{\\sqrt{(L-x)^2 + y_2^2}} = 0 $$
+- **Specular reflection:** Smooth surfaces (mirrors) — parallel rays remain parallel after reflection.
+- **Diffuse reflection:** Rough surfaces — parallel rays scatter in all directions. This is how most objects are visible.
 
-**Step 4:** Relate the geometry back to angles.
-Look at the right triangles formed by the light path!
-The hypotenuse of the first triangle is $D_1$. The opposite side to the angle of incidence $\\theta_1$ is exactly $x$.
-Therefore, $\\sin\\theta_1 = \\frac{x}{D_1} = \\frac{x}{\\sqrt{x^2 + y_1^2}}$.
-Likewise, $\\sin\\theta_2 = \\frac{L-x}{D_2} = \\frac{L-x}{\\sqrt{(L-x)^2 + y_2^2}}$.
+### 2.2 Plane Mirrors
+The image formed by a plane mirror is:
+- **Virtual** (behind the mirror, no actual light converges there)
+- **Upright**
+- The same size as the object
+- As far behind the mirror as the object is in front
 
-**Step 5:** Substitute the angles into the derivative equation.
-$$ \\frac{1}{v_1} \\sin\\theta_1 - \\frac{1}{v_2} \\sin\\theta_2 = 0 $$
-$$ \\frac{\\sin\\theta_1}{v_1} = \\frac{\\sin\\theta_2}{v_2} $$
+---
 
-**Step 6:** Convert to Index of Refraction ($n$).
-We know $n = c/v$, which implies $v = c/n$. Substitute this for both velocities:
-$$ \\frac{\\sin\\theta_1}{(c/n_1)} = \\frac{\\sin\\theta_2}{(c/n_2)} $$
-Multiply both sides by $c$:
-$$ n_1 \\sin\\theta_1 = n_2 \\sin\\theta_2 $$
-Q.E.D. The universe naturally computes the absolute fastest path, which mathematically produces Snell's Law!
+## 3. Refraction — Snell's Law
 
+When light crosses from one medium to another, it changes speed and direction:
+$$\boxed{n_1\sin\theta_1 = n_2\sin\theta_2}$$
 
-`,
+- $n_1, n_2$ = refractive indices of the two media
+- $\theta_1, \theta_2$ = angles from the **normal**
+
+**Key observations:**
+- Light entering a **denser** medium ($n_2 > n_1$): bends **toward** the normal (slows down)
+- Light entering a **less dense** medium ($n_2 < n_1$): bends **away** from normal (speeds up)
+
+**Worked Example:** A ray hits a glass surface ($n_{glass} = 1.5$) from air ($n_{air} = 1.0$) at $30°$. Find the refraction angle.
+$$1.0\times\sin30° = 1.5\times\sin\theta_2$$
+$$\sin\theta_2 = \frac{\sin30°}{1.5} = \frac{0.5}{1.5} = 0.333 \implies \theta_2 = 19.5°$$
+
+Light bends toward the normal as expected (entering denser medium).
+
+### 3.1 Total Internal Reflection
+When light travels from denser to less dense medium, if the angle exceeds the **critical angle** $\theta_c$, no refraction occurs — all light reflects internally:
+$$\sin\theta_c = \frac{n_2}{n_1} \quad (n_2 < n_1)$$
+
+**Applications:** Optical fibres (internet cables), diamond brilliance, endoscopes, periscopes.
+
+**Example:** Critical angle for glass-air:
+$$\sin\theta_c = \frac{1.0}{1.5} = 0.667 \implies \theta_c = 41.8°$$
+
+---
+
+## 4. Lenses
+
+### 4.1 The Thin Lens Equation
+$$\frac{1}{f} = \frac{1}{d_o} + \frac{1}{d_i}$$
+
+where:
+- $f$ = focal length (positive for converging, negative for diverging)
+- $d_o$ = object distance (always positive)
+- $d_i$ = image distance (positive = real image on opposite side; negative = virtual image on same side as object)
+
+### 4.2 Magnification
+$$m = -\frac{d_i}{d_o}$$
+
+- $|m| > 1$: image is magnified
+- $|m| < 1$: image is diminished
+- $m > 0$: upright (virtual) image
+- $m < 0$: inverted (real) image
+
+**Example:** An object 30 cm from a converging lens ($f = 10\text{ cm}$). Find the image distance and magnification.
+$$\frac{1}{d_i} = \frac{1}{f} - \frac{1}{d_o} = \frac{1}{10} - \frac{1}{30} = \frac{3-1}{30} = \frac{2}{30} \implies d_i = 15\text{ cm}$$
+$$m = -\frac{15}{30} = -0.5$$
+
+Image is real (positive $d_i$), inverted ($m < 0$), and half the size ($|m| = 0.5$).
+
+### 4.3 Types of Lenses
+
+| Lens Type | Focal Length | Effect | Example Use |
+|---|---|---|---|
+| Converging (convex) | $f > 0$ | Brings parallel rays to a focus | Magnifying glass, camera, eye |
+| Diverging (concave) | $f < 0$ | Spreads parallel rays apart | Correcting nearsightedness |
+
+---
+
+## 5. Mirrors (Curved)
+
+The mirror equation (same form as thin lens):
+$$\frac{1}{f} = \frac{1}{d_o} + \frac{1}{d_i}$$
+
+For a spherical mirror: $f = R/2$ where $R$ is the radius of curvature.
+- **Concave** (converging) mirror: $f > 0$
+- **Convex** (diverging) mirror: $f < 0$
+
+> **Convex mirrors** (used as car rear-view mirrors and security mirrors) always produce virtual, upright, diminished images — giving a wide field of view.
+
+---
+
+## 6. Wave Optics — Interference and Diffraction
+
+### 6.1 Young's Double-Slit Experiment
+Two slits separated by $d$ produce an interference pattern on a screen at distance $L$. Bright fringes (constructive interference) occur at:
+$$d\sin\theta = m\lambda \quad (m = 0, \pm1, \pm2, \ldots)$$
+
+For small angles: fringe spacing $y = \frac{m\lambda L}{d}$
+
+**Example:** Slits $d = 0.1\text{ mm}$, $\lambda = 600\text{ nm}$, screen $L = 1\text{ m}$. Find fringe spacing.
+$$\Delta y = \frac{\lambda L}{d} = \frac{(600\times10^{-9})(1)}{0.1\times10^{-3}} = \frac{6\times10^{-7}}{10^{-4}} = 6\times10^{-3}\text{ m} = 6\text{ mm}$$
+
+### 6.2 Diffraction Grating
+A grating with $N$ slits per metre produces sharp, bright maxima at:
+$$d\sin\theta = m\lambda$$
+
+where $d = 1/N$ is the slit spacing. Used in spectroscopes to separate wavelengths.
+
+### 6.3 Single-Slit Diffraction
+A single slit of width $a$ produces a diffraction pattern. Dark fringes at:
+$$a\sin\theta = m\lambda \quad (m = \pm1, \pm2, \ldots)$$
+
+---
+
+## 7. Derivation: Snell's Law from Fermat's Principle
+
+**Fermat's Principle:** Light follows the path that takes the **least time** between two points.
+
+**Setup:** Light travels from point A in medium 1 ($n_1$, speed $v_1 = c/n_1$) to point B in medium 2 ($n_2$, speed $v_2 = c/n_2$). The interface is horizontal.
+
+Let $x$ be the horizontal position where light crosses the interface. Total time:
+$$t(x) = \frac{\sqrt{a^2 + x^2}}{v_1} + \frac{\sqrt{b^2 + (d-x)^2}}{v_2}$$
+
+Minimise: $dt/dx = 0$:
+$$\frac{x}{v_1\sqrt{a^2+x^2}} = \frac{d-x}{v_2\sqrt{b^2+(d-x)^2}}$$
+
+Recognise $\sin\theta_1 = x/\sqrt{a^2+x^2}$ and $\sin\theta_2 = (d-x)/\sqrt{b^2+(d-x)^2}$:
+$$\frac{\sin\theta_1}{v_1} = \frac{\sin\theta_2}{v_2} \implies n_1\sin\theta_1 = n_2\sin\theta_2 \quad \textbf{Q.E.D.}$$
+
+Snell's Law is a consequence of light taking the fastest path.
+
+---flashcards---
+[
+  {
+    "front": "State the Law of Reflection.",
+    "back": "The angle of incidence equals the angle of reflection: $$\\\\theta_i = \\\\theta_r$$, both measured from the normal."
+  },
+  {
+    "front": "State Snell's Law of Refraction.",
+    "back": "$$n_1\\\\sin\\\\theta_1 = n_2\\\\sin\\\\theta_2$$"
+  },
+  {
+    "front": "What is the refractive index $$n$$ of a medium?",
+    "back": "$$n = c/v$$ — ratio of the speed of light in vacuum to its speed in the medium."
+  },
+  {
+    "front": "What is Total Internal Reflection and when does it occur?",
+    "back": "When light travels from a denser to less dense medium at an angle exceeding the critical angle: $$\\\\sin\\\\theta_c = n_2/n_1$$. All light is reflected internally."
+  },
+  {
+    "front": "State the thin lens equation.",
+    "back": "$$\\\\frac{1}{f} = \\\\frac{1}{d_o} + \\\\frac{1}{d_i}$$"
+  },
+  {
+    "front": "What does a negative image distance $$d_i$$ mean for a lens?",
+    "back": "The image is virtual (on the same side as the object) and upright."
+  },
+  {
+    "front": "What is the magnification formula for a lens?",
+    "back": "$$m = -d_i/d_o$$. Negative = inverted image; positive = upright. $$|m| > 1$$ = magnified."
+  },
+  {
+    "front": "In Young's double-slit experiment, what is the fringe spacing?",
+    "back": "$$\\\\Delta y = \\\\frac{\\\\lambda L}{d}$$ where $$\\\\lambda$$ = wavelength, $$L$$ = screen distance, $$d$$ = slit separation."
+  },
+  {
+    "front": "What is Fermat's Principle and what does it derive?",
+    "back": "Light takes the path of least time. Minimising travel time mathematically derives Snell's Law of refraction."
+  },
+  {
+    "front": "What type of image does a convex (diverging) mirror always produce?",
+    "back": "Always virtual, upright, and diminished — regardless of object distance."
+  }
+]
+`
 
 
   'Modern Physics & Relativity': `
-# Modern Physics & Relativity: The Fabric of Reality
+# Modern Physics & Relativity: Beyond Classical Mechanics
 
-## 1. The Postulates of Special Relativity
-In 1905, Albert Einstein completely shattered our Newtonian understanding of the universe with two simple postulates:
-1. The laws of physics are identical in all inertial (non-accelerating) reference frames.
-2. The speed of light in a vacuum ($c$) is exactly the same for ALL observers, regardless of how fast the observer or the light source is moving.
+## 0. Introduction
+At the dawn of the 20th century, two revolutionary theories shattered the classical worldview: **Special Relativity** (Einstein, 1905) showed that space and time are not absolute; **Quantum Mechanics** showed that energy is quantised and particles behave as waves. Together they form the foundation of all modern physics.
 
-## 2. Time Dilation
-If you shine a flashlight forward while driving a car at $0.9c$, Newton would say the light travels at $1.9c$. Einstein said the light still travels at exactly $1.0c$.
-To make this mathematically possible, time itself must slow down for the moving car!
-$$ \\Delta t' = \\gamma \\Delta t $$
-Where $\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$ is the Lorentz Factor.
-If you travel close to the speed of light, you will age slower than your twin on Earth. This is not an optical illusion; it is a fundamental property of spacetime.
+---
 
-## 3. Length Contraction
-Not only does time stretch, but physical space compresses. If a spaceship flies past Earth at $0.9c$, observers on Earth will measure the spaceship as physically shorter than its true length!
-$$ L' = \\frac{L}{\\gamma} $$
+## 1. Special Relativity
 
-## 4. Mass-Energy Equivalence
-Einstein's most famous equation proved that mass is not a conserved quantity. Mass is simply a highly concentrated form of energy. They are two sides of the exact same coin.
-$$ E = mc^2 $$
-Because $c^2$ is an astronomically huge number ($9 \\times 10^{16}$), a single paperclip contains enough latent energy to level a city—if you could completely convert its mass into pure energy.
+### 1.1 The Two Postulates
+Einstein built his entire theory from two simple postulates:
+1. **The Principle of Relativity:** The laws of physics are identical in all inertial (non-accelerating) reference frames.
+2. **Constancy of the Speed of Light:** The speed of light in vacuum $c = 3\times10^8\text{ m/s}$ is the same for all observers, regardless of the motion of the source or observer.
 
-## 5. The Photoelectric Effect
-While Einstein is famous for relativity, he actually won his Nobel Prize for proving light is a particle. He showed that shining ultraviolet light on a metal plate ejects electrons, but shining intense red light does nothing. He realized light comes in quantized packets called **Photons**. A red photon simply doesn't have enough energy to knock an electron loose, no matter how many you fire!
-Photon Energy: $E = hf$ (where $h$ is Planck's constant and $f$ is frequency).
+These seemingly simple postulates have profound consequences.
 
-## Derivation of Time Dilation
-How do we prove that time slows down for moving objects using only middle-school algebra and the speed of light"
+### 1.2 Time Dilation
+A clock moving at speed $v$ relative to an observer runs **slower**:
+$$\Delta t = \gamma\,\Delta t_0$$
 
-**Step 1:** The Light Clock Setup.
-Imagine a "Light Clock" consisting of two mirrors facing each other, separated by a distance $L$. A single photon bounces up and down between them. One "tick" of the clock is the time it takes for the photon to bounce from the bottom, to the top, and back to the bottom.
+where:
+- $\Delta t_0$ = **proper time** (time measured in the frame where the clock is at rest)
+- $\Delta t$ = dilated time measured by the moving observer
+- $\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}$ = the **Lorentz factor** ($\gamma \geq 1$ always)
 
-**Step 2:** The clock at rest ($\\Delta t_0$).
-To an observer standing next to the stationary clock, the light travels a distance of $2L$. Since light travels at speed $c$, the time for one tick is:
-$$ \\Delta t_0 = \\frac{2L}{c} $$
+> **Muon example:** Cosmic ray muons created 15 km above Earth should decay in $2.2\text{ μs}$ (their proper lifetime), meaning classically they could only travel $\sim 660\text{ m}$ — far short of reaching the ground. Yet we detect them at sea level. Why? From our frame, their clocks run slow (time dilation). From their frame, the atmosphere is Lorentz-contracted. Both explanations agree: muons survive to reach us.
 
-**Step 3:** The clock in motion ($\\Delta t$).
-Now, imagine the clock is placed on a train moving to the right at velocity $v$. To an observer standing on the ground, the photon doesn't just travel up and down. Because the mirrors are moving to the right, the photon must travel in a diagonal zig-zag path!
+### 1.3 Length Contraction
+An object moving at speed $v$ is **shorter** along its direction of motion:
+$$L = \frac{L_0}{\gamma}$$
 
-**Step 4:** The Pythagorean Geometry.
-Let's analyze half a tick (from bottom to top).
-* The vertical distance is still $L$.
-* The horizontal distance the train moved is velocity times time: $v (\\frac{\\Delta t}{2})$.
-* The diagonal distance the light traveled is $c (\\frac{\\Delta t}{2})$. (Crucially, Einstein's postulate says $c$ is constant!)
-By the Pythagorean theorem:
-$$ L^2 + \\left(v \\frac{\\Delta t}{2}\\right)^2 = \\left(c \\frac{\\Delta t}{2}\\right)^2 $$
+where $L_0$ = **proper length** (length in the object's rest frame). Length contraction only occurs along the direction of motion — perpendicular dimensions are unchanged.
 
-**Step 5:** Solve for $\\Delta t$.
-We want to find $\\Delta t$ in terms of our stationary time $\\Delta t_0$.
-Multiply the entire equation by 4 to remove the fractions:
-$$ 4L^2 + v^2 \\Delta t^2 = c^2 \\Delta t^2 $$
-Group the $\\Delta t$ terms:
-$$ 4L^2 = c^2 \\Delta t^2 - v^2 \\Delta t^2 $$
-$$ 4L^2 = \\Delta t^2 (c^2 - v^2) $$
-Isolate $\\Delta t^2$:
-$$ \\Delta t^2 = \\frac{4L^2}{c^2 - v^2} $$
+### 1.4 Mass-Energy Equivalence
+Einstein's most famous result:
+$$\boxed{E = mc^2}$$
 
-**Step 6:** Factor out $c^2$ in the denominator.
-$$ \\Delta t^2 = \\frac{4L^2}{c^2 (1 - v^2/c^2)} $$
-Take the square root of both sides:
-$$ \\Delta t = \\frac{2L}{c} \\cdot \\frac{1}{\\sqrt{1 - v^2/c^2}} $$
+More completely, for an object moving at speed $v$:
+$$E^2 = (pc)^2 + (mc^2)^2$$
 
-**Step 7:** Substitute the stationary time.
-Notice that the term $\\frac{2L}{c}$ is exactly equal to our stationary time $\\Delta t_0$!
-$$ \\Delta t = \\frac{\\Delta t_0}{\\sqrt{1 - v^2/c^2}} $$
-$$ \\Delta t = \\gamma \\Delta t_0 $$
-Q.E.D. Because the denominator is less than 1, $\\Delta t$ is strictly larger than $\\Delta t_0$. The moving clock takes *longer* to tick. Time has mathematically dilated!
+where $p = \gamma mv$ is relativistic momentum. For a particle at rest ($p=0$): $E = mc^2$ (rest energy).
 
+**Example:** How much energy is stored in 1 gram of matter?
+$$E = mc^2 = (10^{-3})(3\times10^8)^2 = 9\times10^{13}\text{ J}$$
+That is equivalent to ~21 kilotons of TNT — the energy of the Hiroshima atomic bomb.
 
-`,
+### 1.5 Relativistic Momentum
+$$p = \gamma mv = \frac{mv}{\sqrt{1-v^2/c^2}}$$
+
+As $v \to c$, $\gamma \to \infty$, so momentum and energy diverge. It would take infinite energy to accelerate a massive object to exactly $c$. **Nothing with mass can reach the speed of light.**
+
+---
+
+## 2. Quantum Mechanics
+
+### 2.1 Planck's Quantum Hypothesis
+Max Planck (1900) solved the ultraviolet catastrophe by proposing that energy is emitted in discrete packets called **quanta**:
+$$E = hf$$
+
+where $h = 6.626\times10^{-34}\text{ J·s}$ is **Planck's constant** and $f$ is frequency.
+
+### 2.2 The Photoelectric Effect
+Einstein (1905) explained why shining light on a metal ejects electrons — but only above a threshold frequency:
+
+$$K_{max} = hf - \phi$$
+
+where $\phi$ is the **work function** (minimum energy to eject an electron from the metal). This proved light comes in discrete packets — **photons**. Einstein won the Nobel Prize for this, not for relativity.
+
+**Key observations:**
+- Below threshold frequency: no electrons emitted, regardless of intensity
+- Above threshold: electron KE depends on frequency, not intensity
+- Higher intensity = more electrons, not more energetic ones
+
+### 2.3 Wave-Particle Duality
+Light behaves as both a wave (interference, diffraction) and a particle (photoelectric effect, photon). De Broglie proposed that matter also has a wave nature:
+$$\lambda = \frac{h}{p} = \frac{h}{mv}$$
+
+This **de Broglie wavelength** is observable for electrons and other small particles (electron diffraction), but utterly negligible for macroscopic objects.
+
+### 2.4 Heisenberg's Uncertainty Principle
+It is fundamentally impossible to know both the exact position and exact momentum of a particle simultaneously:
+$$\Delta x \cdot \Delta p \geq \frac{\hbar}{2}$$
+
+where $\hbar = h/2\pi$. The more precisely you know position, the less precisely you can know momentum (and vice versa). This is not a limitation of measurement technology — it is a fundamental property of nature.
+
+### 2.5 The Bohr Model of the Hydrogen Atom
+Niels Bohr (1913) proposed that electrons orbit the nucleus only in specific allowed orbits where angular momentum is quantised:
+$$L = mvr = n\hbar, \quad n = 1, 2, 3, \ldots$$
+
+Allowed orbital radii: $r_n = n^2 a_0$ where $a_0 = 0.0529\text{ nm}$ is the **Bohr radius**.
+
+Energy levels: $E_n = -\frac{13.6\text{ eV}}{n^2}$
+
+When an electron jumps from level $n_i$ to $n_f$, it emits or absorbs a photon of frequency:
+$$hf = E_i - E_f = 13.6\text{ eV}\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$$
+
+---flashcards---
+[
+  {
+    "front": "State Einstein's two postulates of Special Relativity.",
+    "back": "1. Laws of physics are the same in all inertial frames. 2. The speed of light $$c$$ is the same for all observers."
+  },
+  {
+    "front": "What is time dilation?",
+    "back": "A moving clock runs slow: $$\\\\Delta t = \\\\gamma\\\\Delta t_0$$ where $$\\\\gamma = 1/\\\\sqrt{1-v^2/c^2} \\\\geq 1$$."
+  },
+  {
+    "front": "What is length contraction?",
+    "back": "A moving object is shorter along its direction of motion: $$L = L_0/\\\\gamma$$."
+  },
+  {
+    "front": "State Einstein's mass-energy equivalence.",
+    "back": "$$E = mc^2$$. A 1 gram mass contains $$9\\\\times10^{13}\\\\text{ J}$$ of rest energy."
+  },
+  {
+    "front": "Why can no massive object reach the speed of light?",
+    "back": "Relativistic momentum $$p = \\\\gamma mv \\\\to \\\\infty$$ as $$v \\\\to c$$, requiring infinite energy."
+  },
+  {
+    "front": "What is a photon's energy in terms of frequency?",
+    "back": "$$E = hf$$ where $$h = 6.626\\\\times10^{-34}\\\\text{ J·s}$$ is Planck's constant."
+  },
+  {
+    "front": "State the photoelectric effect equation.",
+    "back": "$$K_{max} = hf - \\\\phi$$ where $$\\\\phi$$ is the work function. Electrons are only emitted above a threshold frequency."
+  },
+  {
+    "front": "What is the de Broglie wavelength?",
+    "back": "$$\\\\lambda = h/p = h/(mv)$$. All matter has a wave nature; the wavelength is only observable for very small masses."
+  },
+  {
+    "front": "State Heisenberg's Uncertainty Principle.",
+    "back": "$$\\\\Delta x \\\\cdot \\\\Delta p \\\\geq \\\\hbar/2$$. Exact position and momentum cannot both be simultaneously known."
+  },
+  {
+    "front": "What are the energy levels of hydrogen in the Bohr model?",
+    "back": "$$E_n = -13.6\\\\text{ eV}/n^2$$. Ground state: $$-13.6\\\\text{ eV}$$; ionisation energy: $$13.6\\\\text{ eV}$$."
+  }
+]
+`
 
 
   'Nuclear Physics': `
-# Nuclear Physics: The Heart of the Atom
+# Nuclear Physics: The Heart of Matter
 
-## 1. The Nucleus
-The atom is almost entirely empty space. The nucleus at its center is 100,000 times smaller than the atom, yet contains 99.9% of its mass. It consists of positively charged Protons ($Z$) and neutral Neutrons ($N$). Together, they are called Nucleons.
+## 0. Introduction
+The atomic nucleus — a tiny, dense core roughly $10^{-15}$ m across — contains almost all the mass of an atom. Nuclear physics explains radioactive decay, nuclear power, nuclear weapons, carbon dating, and the nuclear fusion reactions that power the Sun.
+
+---
+
+## 1. Nuclear Structure
+
+Every nucleus is built from two types of **nucleons**:
+- **Protons** (charge $+e$): determine the element (atomic number $Z$)
+- **Neutrons** (charge 0): provide extra strong-force binding
+
+Notation: $^A_Z\text{X}$ where $A = Z + N$ is the mass number and $N$ is the neutron number.
+
+**Isotopes:** Same $Z$, different $N$ (and thus different $A$). For example, $^{12}_6\text{C}$, $^{13}_6\text{C}$, $^{14}_6\text{C}$ are all carbon isotopes.
+
+---
 
 ## 2. The Strong Nuclear Force
-Why doesn't the nucleus explode" You have dozens of positively charged protons packed impossibly close together, which should violently repel each other due to the Electrostatic force.
-The nucleus is held together by the **Strong Nuclear Force**. It is 100 times stronger than electromagnetism, but it only operates at incredibly microscopic ranges (around $10^{-15}$ meters, or 1 femtometer). Neutrons act as the "glue" that provides extra strong force without adding any electrostatic repulsion!
 
-## 3. Mass Defect and Binding Energy
-If you put 2 individual protons and 2 individual neutrons on a scale, and then weigh an assembled Helium nucleus (which is made of the exact same 4 particles), the assembled nucleus actually weighs *less*!
-This missing mass is called the **Mass Defect** ($\\Delta m$).
-Where did the mass go" By $E=mc^2$, it was converted into pure **Binding Energy** to hold the nucleus tightly together. To break the nucleus apart, you must inject that exact amount of energy back in.
+**Problem:** Protons repel each other via Coulomb's Law. Why don't nuclei fly apart?
 
-## 4. Radioactivity and Decay
-If a nucleus is too large or has a poor ratio of neutrons to protons, the short-range Strong Force can no longer overcome the long-range Electrostatic repulsion. The nucleus becomes unstable and decays.
-* **Alpha Decay ($\\alpha$)**: The nucleus spits out a helium nucleus (2 protons, 2 neutrons). Heavy, slow, and easily blocked by a sheet of paper.
-* **Beta Decay ($\\beta$)**: A neutron literally transforms into a proton by spitting out a high-speed electron! Moderately penetrating.
-* **Gamma Decay ($\\gamma$)**: The nucleus shifts into a lower energy state and releases a blinding flash of high-energy electromagnetic radiation (a photon). Highly penetrating and dangerous.
+**Answer:** The **strong nuclear force** — one of the four fundamental forces of nature. It:
+- Is attractive between any nucleons (proton-proton, neutron-proton, neutron-neutron)
+- Is much stronger than electromagnetism at short range ($< 3\text{ fm}$)
+- Falls to zero very rapidly beyond $\sim 3\text{ fm}$ — it's extremely short-range
 
-## 5. Fission and Fusion
-* **Fission**: A massive, unstable nucleus (like Uranium-235) is struck by a neutron, causing it to violently split into two smaller nuclei, releasing immense energy and more neutrons (a chain reaction). This powers nuclear reactors and atomic bombs.
-* **Fusion**: Two incredibly light nuclei (like Hydrogen) are smashed together with such intense heat and pressure that the Strong Force takes over, fusing them into a heavier element and releasing exponentially more energy than fission. This is what powers the Sun and hydrogen bombs!
+This is why large nuclei ($Z > 83$) become unstable: electrostatic repulsion (long-range) eventually overcomes the strong force (short-range).
 
-## Derivation of the Radioactive Decay Law
-Why does radioactive decay follow a perfectly exponential curve, $N(t) = N_0 e^{-\\lambda t}$" It is a direct result of probability!
+---
 
-**Step 1:** The fundamental premise of probability.
-In a sample of radioactive material, every single unstable nucleus is entirely independent. The probability of any specific nucleus decaying in the next microscopic second is exactly constant.
-Therefore, the total number of nuclei that decay per second (the rate of change, $dN/dt$) is strictly proportional to the total number of unstable nuclei $N$ currently remaining in the sample.
-$$ \\frac{dN}{dt} = -\\lambda N $$
-Where $\\lambda$ is the decay constant, representing the probability of decay per unit time. The negative sign ensures the population is decreasing.
+## 3. Binding Energy and Mass Defect
 
-**Step 2:** Separate the variables.
-This is a first-order separable differential equation! Move $N$ to the left side and $dt$ to the right side.
-$$ \\frac{1}{N} dN = -\\lambda \\, dt $$
+The mass of a nucleus is always **less** than the sum of its constituent nucleons:
+$$\Delta m = Zm_p + Nm_n - m_{nucleus}$$
 
-**Step 3:** Integrate both sides over time.
-We integrate from $t=0$ (where the initial population is $N_0$) to time $t$ (where the population is $N$).
-$$ \\int_{N_0}^N \\frac{1}{N} \\, dN = \\int_0^t -\\lambda \\, dt $$
+This **mass defect** $\Delta m$ was converted into **binding energy** $E_B$ when the nucleus formed:
+$$E_B = \Delta m \cdot c^2$$
 
-**Step 4:** Evaluate the integrals.
-The integral of $1/N$ is the natural logarithm $\\ln(N)$.
-$$ [\\ln(N)]_{N_0}^N = -\\lambda [t]_0^t $$
-$$ \\ln(N) - \\ln(N_0) = -\\lambda t $$
+**Example:** Helium-4 nucleus ($Z=2$, $N=2$):
+$$\Delta m = 2(1.00728) + 2(1.00866) - 4.00151 = 4.03188 - 4.00151 = 0.03037\text{ u}$$
+$$E_B = 0.03037\times931.5\text{ MeV/u} = 28.3\text{ MeV}$$
 
-**Step 5:** Use logarithm properties.
-$$ \\ln\\left(\\frac{N}{N_0}\\right) = -\\lambda t $$
+The **binding energy per nucleon** $E_B/A$ peaks around iron-56 ($^{56}_{26}\text{Fe}$) at $\sim 8.8\text{ MeV/nucleon}$ — iron is the most stable nucleus. This is why:
+- **Fusion** (combining light nuclei below iron) **releases** energy
+- **Fission** (splitting heavy nuclei above iron) **releases** energy
+- Both reactions move toward the iron peak
 
-**Step 6:** Exponentiate both sides to isolate $N$.
-To cancel the natural log, raise $e$ to the power of both sides.
-$$ \\frac{N}{N_0} = e^{-\\lambda t} $$
-$$ N(t) = N_0 e^{-\\lambda t} $$
-Q.E.D. The exponential decay formula is perfectly derived from the simple probability that rate of decay depends on the amount of material remaining!
+---
 
-## Derivation of Half-Life ($T_{1/2}$)
-Using the decay formula, calculate the exact formula for a substance's Half-Life (the time required for exactly 50% of the material to decay).
+## 4. Radioactive Decay
 
-**Step 1:** Define the Half-Life condition.
-At time $t = T_{1/2}$, the remaining population $N(t)$ is exactly half of the initial population, meaning $N = \\frac{1}{2}N_0$.
+Unstable nuclei spontaneously emit radiation to reach a more stable state.
 
-**Step 2:** Substitute this into the decay equation.
-$$ \\frac{1}{2}N_0 = N_0 e^{-\\lambda T_{1/2}} $$
+### 4.1 Types of Radioactive Decay
 
-**Step 3:** Cancel $N_0$.
-$$ \\frac{1}{2} = e^{-\\lambda T_{1/2}} $$
+| Type | Emitted particle | Change in $Z$, $A$ | Penetration |
+|---|---|---|---|
+| **Alpha** ($\alpha$) | $^4_2\text{He}$ nucleus | $Z-2$, $A-4$ | Stopped by paper |
+| **Beta-minus** ($\beta^-$) | Electron $e^-$ + antineutrino | $Z+1$, $A$ unchanged | Stopped by aluminium |
+| **Beta-plus** ($\beta^+$) | Positron $e^+$ + neutrino | $Z-1$, $A$ unchanged | Stopped by aluminium |
+| **Gamma** ($\gamma$) | High-energy photon | No change | Reduced by lead/concrete |
 
-**Step 4:** Take the natural logarithm of both sides.
-$$ \\ln\\left(\\frac{1}{2}\\right) = -\\lambda T_{1/2} $$
+### 4.2 The Law of Radioactive Decay
+The number of undecayed nuclei decreases exponentially:
+$$\boxed{N(t) = N_0 e^{-\lambda t}}$$
 
-**Step 5:** Simplify the logarithm.
-By log rules, $\\ln(1/2) = \\ln(1) - \\ln(2) = 0 - \\ln(2) = -\\ln(2)$.
-$$ -\\ln(2) = -\\lambda T_{1/2} $$
+where $\lambda$ is the **decay constant** (s$^{-1}$).
 
-**Step 6:** Isolate $T_{1/2}$.
-The negative signs cancel.
-$$ T_{1/2} = \\frac{\\ln(2)}{\\lambda} $$
-Q.E.D. The half-life is a perfect constant depending only on the probability constant $\\lambda$, roughly equal to $0.693 / \\lambda$.
+**Activity** (decays per second, unit: Becquerel Bq):
+$$A = -\frac{dN}{dt} = \lambda N = \lambda N_0 e^{-\lambda t} = A_0 e^{-\lambda t}$$
 
+**Half-life** $t_{1/2}$ — time for half the nuclei to decay:
+$$N(t_{1/2}) = \frac{N_0}{2} \implies e^{-\lambda t_{1/2}} = \frac{1}{2} \implies t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{\lambda}$$
 
-`,
+---
+
+## 5. Carbon Dating
+
+Carbon-14 ($^{14}_6\text{C}$) is continuously produced in the upper atmosphere by cosmic ray neutrons hitting nitrogen-14. Living organisms constantly exchange carbon with the environment, maintaining a fixed $^{14}\text{C}/^{12}\text{C}$ ratio. When an organism dies, exchange stops and $^{14}\text{C}$ decays ($t_{1/2} = 5730\text{ years}$).
+
+Measuring the remaining $^{14}\text{C}$ fraction gives the age:
+$$t = -\frac{1}{\lambda}\ln\left(\frac{N}{N_0}\right) = \frac{t_{1/2}}{\ln2}\ln\left(\frac{N_0}{N}\right)$$
+
+**Example:** A wood sample has 25% of the original $^{14}\text{C}$. Find its age.
+$$N/N_0 = 0.25 = (1/2)^2 \implies \text{2 half-lives} \implies t = 2\times5730 = 11460\text{ years}$$
+
+---
+
+## 6. Nuclear Fission and Fusion
+
+### 6.1 Fission
+A heavy nucleus (e.g. $^{235}\text{U}$) absorbs a neutron and splits into two medium-mass daughter nuclei plus more neutrons:
+$$^{235}_{92}\text{U} + ^1_0\text{n} \to ^{141}_{56}\text{Ba} + ^{92}_{36}\text{Kr} + 3\,^1_0\text{n} + \text{energy}$$
+
+The released neutrons can trigger further fissions — a **chain reaction**. Controlled: nuclear reactor. Uncontrolled: nuclear weapon.
+
+Energy released per fission: ~200 MeV (vs. ~few eV for chemical reactions — nuclear is ~million times more energetic).
+
+### 6.2 Fusion
+Light nuclei (e.g. hydrogen isotopes) combine into heavier nuclei:
+$$^2_1\text{H} + ^3_1\text{H} \to ^4_2\text{He} + ^1_0\text{n} + 17.6\text{ MeV}$$
+
+Fusion powers the Sun. Requires extreme temperature ($\sim 10^7\text{ K}$) to overcome Coulomb repulsion — this is **thermonuclear fusion**. Controlled fusion (ITER, tokamak) is still under development.
+
+---
+
+## 7. Derivation: Radioactive Decay Law
+
+**Step 1:** The rate of decay is proportional to the number of undecayed nuclei:
+$$\frac{dN}{dt} = -\lambda N$$
+
+The negative sign means $N$ decreases over time.
+
+**Step 2:** Separate variables:
+$$\frac{dN}{N} = -\lambda\,dt$$
+
+**Step 3:** Integrate both sides:
+$$\int_{N_0}^{N(t)} \frac{dN'}{N'} = -\lambda\int_0^t dt'$$
+$$\ln N(t) - \ln N_0 = -\lambda t$$
+$$\ln\frac{N(t)}{N_0} = -\lambda t$$
+
+**Step 4:** Exponentiate:
+$$N(t) = N_0 e^{-\lambda t} \quad \textbf{Q.E.D.}$$
+
+---flashcards---
+[
+  {
+    "front": "What are the two types of nucleons and what charge do they carry?",
+    "back": "Protons (charge $$+e$$) and neutrons (charge 0). Together they make up the atomic nucleus."
+  },
+  {
+    "front": "Why doesn't the nucleus fly apart despite proton-proton repulsion?",
+    "back": "The strong nuclear force — much stronger than electromagnetism at short range (< 3 fm) — binds nucleons together."
+  },
+  {
+    "front": "What is the mass defect and how does it relate to binding energy?",
+    "back": "$$\\\\Delta m = Zm_p + Nm_n - m_{nucleus}$$. Binding energy: $$E_B = \\\\Delta m \\\\cdot c^2$$."
+  },
+  {
+    "front": "Which nucleus has the highest binding energy per nucleon?",
+    "back": "Iron-56 ($$^{56}_{26}\\\\text{Fe}$$), at ~8.8 MeV/nucleon. It is the most stable nucleus."
+  },
+  {
+    "front": "What changes in $$Z$$ and $$A$$ does alpha decay cause?",
+    "back": "$$Z$$ decreases by 2, $$A$$ decreases by 4. An alpha particle ($$^4_2\\\\text{He}$$) is emitted."
+  },
+  {
+    "front": "State the radioactive decay law.",
+    "back": "$$N(t) = N_0 e^{-\\\\lambda t}$$. Activity: $$A(t) = \\\\lambda N_0 e^{-\\\\lambda t}$$."
+  },
+  {
+    "front": "What is the half-life in terms of decay constant $$\\\\lambda$$?",
+    "back": "$$t_{1/2} = \\\\ln2/\\\\lambda \\\\approx 0.693/\\\\lambda$$."
+  },
+  {
+    "front": "How does carbon dating work?",
+    "back": "Living organisms maintain a fixed $$^{14}\\\\text{C}/^{12}\\\\text{C}$$ ratio. After death, $$^{14}\\\\text{C}$$ decays ($$t_{1/2} = 5730$$ yr). Measuring remaining $$^{14}\\\\text{C}$$ gives age."
+  },
+  {
+    "front": "What is the difference between fission and fusion?",
+    "back": "**Fission**: heavy nucleus splits into smaller ones (nuclear reactor). **Fusion**: light nuclei combine (Sun, H-bomb). Both release energy by moving nuclei toward the iron-56 binding energy peak."
+  },
+  {
+    "front": "Why does nuclear energy release millions of times more energy than chemical reactions?",
+    "back": "Nuclear reactions involve the strong force and mass-energy conversion ($$E=mc^2$$), releasing MeV per reaction. Chemical reactions involve electron rearrangement, releasing only eV per reaction."
+  }
+]
+`
 
 
 };
