@@ -1002,7 +1002,7 @@ This is the Eckart-Young theorem — a profound result that underlies PCA, image
   classical: {
     id: 'classical',
     title: 'Classical Mechanics',
-    subject: 'physics',
+    subject: 'physics_old',
     difficulty: 'Foundational',
     estimatedReadTime: 55,
     sections: [
@@ -1380,7 +1380,7 @@ The state of the system is a point in **phase space** $(q_i, p_i)$, and evolutio
   quantum: {
     id: 'quantum',
     title: 'Quantum Mechanics',
-    subject: 'physics',
+    subject: 'physics_old',
     difficulty: 'Advanced',
     estimatedReadTime: 65,
     sections: [
@@ -1683,7 +1683,7 @@ This **Bell state** is entangled — measuring particle 1 instantly determines t
   electro: {
     id: 'electro',
     title: 'Electromagnetism',
-    subject: 'physics',
+    subject: 'physics_old',
     difficulty: 'Intermediate',
     estimatedReadTime: 60,
     sections: [
@@ -1956,7 +1956,7 @@ $$\\mathbf{S} = \\frac{1}{\\mu_0}\\mathbf{E}\\times\\mathbf{B}$$
   thermo: {
     id: 'thermo',
     title: 'Thermodynamics',
-    subject: 'physics',
+    subject: 'physics_old',
     difficulty: 'Intermediate',
     estimatedReadTime: 50,
     sections: [
