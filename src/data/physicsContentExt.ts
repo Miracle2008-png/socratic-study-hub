@@ -1041,149 +1041,429 @@ Since $4\pi^2$, $G$, and $M$ are all constants, $T^2 \propto r^3$. **Q.E.D.** Ne
 
 
   'Rotational Mechanics': `
-# Rotational Mechanics: The Physics of Spinning
+# Rotational Mechanics: The Physics of Spinning Objects
 
-## 1. The Rotational Analogy
-Everything you learned in linear kinematics and dynamics has an exact, beautiful mathematical twin in the world of rotation!
-* Position ($x$) $\\to$ Angle ($\\theta$)
-* Velocity ($v$) $\\to$ Angular Velocity ($\\omega$)
-* Acceleration ($a$) $\\to$ Angular Acceleration ($\\alpha$)
-* Mass ($m$) $\\to$ Moment of Inertia ($I$)
-* Force ($F$) $\\to$ Torque ($\\tau$)
-* Momentum ($p$) $\\to$ Angular Momentum ($L$)
+## 0. Introduction
+Everything you learned in linear mechanics has a direct rotational analogue. Force becomes **torque**, mass becomes **moment of inertia**, and $F=ma$ becomes $\tau = I\alpha$. Understanding rotational mechanics lets you analyse everything from spinning tops and flywheels to the rotation of planets and the motion of a gymnast tucking in mid-air.
 
-## 2. Moment of Inertia ($I$)
-Mass measures how hard it is to push an object. **Moment of Inertia** measures how hard it is to *spin* an object.
-Crucially, $I$ depends not just on how much mass an object has, but *where* that mass is located relative to the axis of rotation. 
-Mass further away from the axis is exponentially harder to spin.
-For a discrete point mass: $I = mr^2$.
-For a continuous object, it is the integral: $I = \\int r^2 \\, dm$.
+---
 
-## 3. Torque ($\\tau$)
-Torque is a twisting force that causes angular acceleration.
-$$ \\vec{\\tau} = \\vec{r} \\times \\vec{F} $$
-Magnitude: $\\tau = rF \\sin\\theta$.
-To maximize torque (like using a wrench to untighten a bolt), you want to apply the force as far away from the pivot as possible ($r$), and perfectly perpendicular to the wrench ($\\theta = 90^\\circ$).
+## 1. Angular Quantities
+
+| Linear | Symbol | Rotational | Symbol |
+|---|---|---|---|
+| Position | $x$ | Angle | $\theta$ (rad) |
+| Velocity | $v$ | Angular velocity | $\omega = d\theta/dt$ (rad/s) |
+| Acceleration | $a$ | Angular acceleration | $\alpha = d\omega/dt$ (rad/s²) |
+| Mass | $m$ | Moment of inertia | $I$ (kg·m²) |
+| Force | $F$ | Torque | $\tau$ (N·m) |
+| Momentum | $p = mv$ | Angular momentum | $L = I\omega$ (kg·m²/s) |
+| KE | $\frac{1}{2}mv^2$ | Rotational KE | $\frac{1}{2}I\omega^2$ |
+
+**Relationship between linear and angular quantities** (for a point at radius $r$):
+$$v = \omega r, \qquad a_t = \alpha r, \qquad a_c = \omega^2 r$$
+
+---
+
+## 2. Torque — Rotational Force
+
+Torque is the rotational effect of a force. It depends on the force magnitude, the distance from the pivot, and the angle:
+$$\tau = rF\sin\phi = \vec{r}\times\vec{F}$$
+
+where $\phi$ is the angle between the position vector $\vec{r}$ and force vector $\vec{F}$.
+
+> **Intuition:** A long wrench makes it easier to undo a bolt than a short one — you apply the same force but at a greater radius, producing more torque. Door handles are placed far from the hinge for the same reason.
+
+**Example:** A 30 N force is applied perpendicular ($\phi=90°$) to a 0.4 m wrench.
+$$\tau = rF\sin90° = 0.4\times30\times1 = 12\text{ N·m}$$
+
+---
+
+## 3. Moment of Inertia — Rotational Inertia
+
+The moment of inertia $I$ is the rotational equivalent of mass. It measures resistance to angular acceleration. Crucially, it depends not just on the total mass but on **how that mass is distributed** relative to the rotation axis. Mass farther from the axis contributes much more.
+
+$$I = \sum_i m_i r_i^2 \quad \text{(discrete)} \qquad I = \int r^2\,dm \quad \text{(continuous)}$$
+
+**Common moments of inertia:**
+
+| Object | Axis | $I$ |
+|---|---|---|
+| Point mass | Distance $r$ from axis | $mr^2$ |
+| Solid sphere | Through centre | $\frac{2}{5}mr^2$ |
+| Hollow sphere | Through centre | $\frac{2}{3}mr^2$ |
+| Solid cylinder / disk | Through central axis | $\frac{1}{2}mr^2$ |
+| Thin hollow cylinder / hoop | Through central axis | $mr^2$ |
+| Thin rod | Through centre | $\frac{1}{12}mL^2$ |
+| Thin rod | Through end | $\frac{1}{3}mL^2$ |
+
+> **Why does it matter?** A solid cylinder and a hollow hoop of the same mass and radius will roll down a ramp at different speeds. The hoop (all mass at the rim, $I = mr^2$) has more rotational inertia than the solid cylinder ($I = \frac{1}{2}mr^2$) and rolls slower.
+
+### 3.1 Parallel Axis Theorem
+If you know $I_{cm}$ (moment of inertia about the centre of mass), the moment of inertia about any parallel axis a distance $d$ away is:
+$$I = I_{cm} + md^2$$
+
+**Example:** A thin rod (mass $m$, length $L$) about its end:
+$$I_{end} = I_{cm} + m\left(\frac{L}{2}\right)^2 = \frac{1}{12}mL^2 + \frac{1}{4}mL^2 = \frac{1}{3}mL^2 \checkmark$$
+
+---
 
 ## 4. Newton's Second Law for Rotation
-Just as $F = ma$, the rotational equivalent is:
-$$ \\Sigma\\tau = I\\alpha $$
-If you apply a net torque to a wheel, it will undergo angular acceleration. A heavier wheel (larger $I$) will accelerate slower.
 
-## 5. Angular Momentum ($L$)
-Angular momentum is the quantity of rotation.
-$$ \\vec{L} = I\\vec{\\omega} = \\vec{r} \\times \\vec{p} $$
-**Conservation of Angular Momentum:** If there is zero net external torque on a system, its total angular momentum is perfectly conserved. 
-This is why an ice skater spins blindingly fast when they pull their arms in! By pulling mass closer to the axis, their Moment of Inertia ($I$) drops. To keep $L$ constant, their angular velocity ($\\omega$) must drastically increase!
+$$\boxed{\tau_{net} = I\alpha}$$
 
-## Derivation of the Moment of Inertia for a Uniform Rod
-Prove that the moment of inertia of a uniform rod of mass $M$ and length $L$, spinning exactly around its center, is $I = \\frac{1}{12}ML^2$.
+This is the direct rotational analogue of $F = ma$.
 
-**Step 1:** The Integral Definition.
-$$ I = \\int r^2 \\, dm $$
+**Example:** A solid disk ($m = 2\text{ kg}$, $r = 0.5\text{ m}$) has a net torque of 3 N·m applied. Find angular acceleration.
+$$I = \frac{1}{2}mr^2 = \frac{1}{2}(2)(0.5)^2 = 0.25\text{ kg·m}^2$$
+$$\alpha = \frac{\tau}{I} = \frac{3}{0.25} = 12\text{ rad/s}^2$$
 
-**Step 2:** Relate mass to position.
-Assume the rod is uniform, meaning its linear mass density $\\lambda$ is constant.
-$$ \\lambda = \\frac{M}{L} $$
-Therefore, a microscopic slice of the rod with width $dx$ has mass $dm$:
-$$ dm = \\lambda \\, dx = \\left(\\frac{M}{L}\\right) dx $$
+---
 
-**Step 3:** Set up the integral.
-Let the center of the rod be $x = 0$. The rod spans from $x = -L/2$ to $x = +L/2$.
-Substitute $r = x$ and $dm$.
-$$ I = \\int_{-L/2}^{L/2} x^2 \\left(\\frac{M}{L}\\right) dx $$
+## 5. Rotational Kinetic Energy
 
-**Step 4:** Evaluate the integral.
-Pull the constants out.
-$$ I = \\frac{M}{L} \\left[ \\frac{x^3}{3} \\right]_{-L/2}^{L/2} $$
+A rotating object has kinetic energy due to its rotation:
+$$K_{rot} = \frac{1}{2}I\omega^2$$
 
-**Step 5:** Plug in the limits.
-$$ I = \\frac{M}{3L} \\left( \\left(\\frac{L}{2}\\right)^3 - \\left(-\\frac{L}{2}\\right)^3 \\right) $$
-$$ I = \\frac{M}{3L} \\left( \\frac{L^3}{8} - \\left(-\\frac{L^3}{8}\\right) \\right) $$
-$$ I = \\frac{M}{3L} \\left( \\frac{2L^3}{8} \\right) = \\frac{M}{3L} \\left( \\frac{L^3}{4} \\right) $$
+An object that **rolls without slipping** has both translational and rotational KE:
+$$K_{total} = \frac{1}{2}mv^2 + \frac{1}{2}I\omega^2$$
 
-**Step 6:** Simplify.
-$$ I = \\frac{ML^3}{12L} = \\frac{1}{12}ML^2 $$
-Q.E.D.
+Since $v = \omega r$ for rolling without slipping:
+$$K_{total} = \frac{1}{2}mv^2 + \frac{1}{2}I\frac{v^2}{r^2} = \frac{1}{2}mv^2\left(1 + \frac{I}{mr^2}\right)$$
 
-## Derivation of Rotational Kinetic Energy
-Prove that the kinetic energy of a purely rotating object is $K_{rot} = \\frac{1}{2}I\\omega^2$.
+### 5.1 Rolling Race Down a Ramp
+**Problem:** A solid cylinder and a hollow hoop (both mass $m$, radius $r$) roll from rest down a frictionless ramp of height $h$. Which wins?
 
-**Step 1:** Consider a rigid body as a collection of $N$ tiny point masses $m_i$.
-Each point mass is distance $r_i$ from the axis of rotation, and is moving with a linear speed $v_i$.
+Apply energy conservation for each:
+$$mgh = \frac{1}{2}mv^2\left(1 + \frac{I}{mr^2}\right) \implies v = \sqrt{\frac{2gh}{1 + I/mr^2}}$$
 
-**Step 2:** Sum the standard kinetic energy of all particles.
-$$ K_{total} = \\sum_{i=1}^N \\frac{1}{2} m_i v_i^2 $$
+- **Solid cylinder** ($I = \frac{1}{2}mr^2$): $v = \sqrt{\frac{2gh}{1 + 1/2}} = \sqrt{\frac{4gh}{3}}$
+- **Hollow hoop** ($I = mr^2$): $v = \sqrt{\frac{2gh}{1 + 1}} = \sqrt{gh}$
 
-**Step 3:** Convert linear velocity to angular velocity.
-Because the object is rigid, every single particle has the *exact same* angular velocity $\\omega$. 
-We know $v_i = r_i \\omega$.
-$$ K_{total} = \\sum_{i=1}^N \\frac{1}{2} m_i (r_i \\omega)^2 $$
-$$ K_{total} = \\sum_{i=1}^N \\frac{1}{2} m_i r_i^2 \\omega^2 $$
+Since $\sqrt{4gh/3} > \sqrt{gh}$, the **solid cylinder always wins**, regardless of mass or radius. The object with less rotational inertia relative to its mass rolls faster.
 
-**Step 4:** Factor out the constants.
-Both $\\frac{1}{2}$ and $\\omega^2$ are constant for the entire object.
-$$ K_{total} = \\frac{1}{2} \\left( \\sum_{i=1}^N m_i r_i^2 \\right) \\omega^2 $$
+---
 
-**Step 5:** Identify the Moment of Inertia.
-The term in the parenthesis is the exact definition of the total Moment of Inertia $I$.
-$$ K_{rot} = \\frac{1}{2}I\\omega^2 $$
-Q.E.D.
+## 6. Angular Momentum
 
+$$\boxed{L = I\omega}$$
 
-`,
+### 6.1 Conservation of Angular Momentum
+In an isolated system (no net external torque), angular momentum is conserved:
+$$L_i = L_f \implies I_i\omega_i = I_f\omega_f$$
+
+> **Figure skater:** A spinning skater pulls their arms inward, reducing $I$ (mass moves closer to the axis). Since $L = I\omega$ is conserved, $\omega$ must increase — the skater spins faster. Let out the arms: $I$ increases, $\omega$ decreases.
+
+**Example:** A skater with $I_i = 4\text{ kg·m}^2$ spins at $\omega_i = 2\text{ rad/s}$. She pulls in her arms to $I_f = 1\text{ kg·m}^2$. Find $\omega_f$.
+$$I_i\omega_i = I_f\omega_f \implies 4\times2 = 1\times\omega_f \implies \omega_f = 8\text{ rad/s}$$
+
+---
+
+## 7. Derivation: Rotational KE from First Principles
+
+Consider a rigid body rotating at angular velocity $\omega$. Each tiny piece of mass $m_i$ at radius $r_i$ moves at linear speed $v_i = \omega r_i$.
+
+Total KE:
+$$K = \sum_i \frac{1}{2}m_i v_i^2 = \sum_i \frac{1}{2}m_i(\omega r_i)^2 = \frac{1}{2}\omega^2\sum_i m_i r_i^2$$
+
+Since $I = \sum_i m_i r_i^2$ by definition:
+$$\boxed{K_{rot} = \frac{1}{2}I\omega^2} \quad \textbf{Q.E.D.}$$
+
+The rotational KE formula is not a guess — it follows directly from summing the KE of every infinitesimal particle in the body.
+
+---flashcards---
+[
+  {
+    "front": "What is torque and its formula?",
+    "back": "Torque is the rotational effect of a force: $$\\\\tau = rF\\\\sin\\\\phi$$ where $$\\\\phi$$ is the angle between the force and the lever arm."
+  },
+  {
+    "front": "What is the rotational analogue of Newton's Second Law?",
+    "back": "$$\\\\tau_{net} = I\\\\alpha$$ (Net torque = Moment of inertia × Angular acceleration)"
+  },
+  {
+    "front": "What is the moment of inertia of a solid disk about its central axis?",
+    "back": "$$I = \\\\frac{1}{2}mr^2$$"
+  },
+  {
+    "front": "What is the moment of inertia of a hollow hoop about its central axis?",
+    "back": "$$I = mr^2$$ (all mass at radius $$r$$)"
+  },
+  {
+    "front": "State the Parallel Axis Theorem.",
+    "back": "$$I = I_{cm} + md^2$$ where $$d$$ is the distance between the parallel axis and the centre of mass axis."
+  },
+  {
+    "front": "What is the total KE of an object rolling without slipping?",
+    "back": "$$K = \\\\frac{1}{2}mv^2 + \\\\frac{1}{2}I\\\\omega^2$$ (translational + rotational)"
+  },
+  {
+    "front": "A solid cylinder and a hollow hoop roll down the same ramp from rest. Which reaches the bottom first?",
+    "back": "The solid cylinder, because it has less rotational inertia ($$I = \\\\frac{1}{2}mr^2$$) relative to its mass than the hoop ($$I = mr^2$$), so more PE converts to translational KE."
+  },
+  {
+    "front": "State Conservation of Angular Momentum.",
+    "back": "In an isolated system (no external torque): $$L = I\\\\omega = \\\\text{constant}$$, so $$I_i\\\\omega_i = I_f\\\\omega_f$$."
+  },
+  {
+    "front": "A figure skater pulls in their arms. What happens to their spin rate and why?",
+    "back": "Spin rate increases. Pulling in arms reduces $$I$$. Since $$L = I\\\\omega$$ is conserved, $$\\\\omega$$ must increase."
+  },
+  {
+    "front": "What is the relationship between linear speed and angular velocity for a rolling object?",
+    "back": "$$v = \\\\omega r$$ where $$r$$ is the radius of the rolling object."
+  }
+]
+`
 
 
   'Waves & Oscillations': `
-# Waves & Oscillations: The Rhythm of Nature
+# Waves & Oscillations: The Physics of Periodic Motion
+
+## 0. Introduction
+Waves are one of the most pervasive phenomena in nature. Sound is a wave. Light is a wave. The electrons in your atoms behave as waves. Understanding oscillations and waves unlocks acoustics, optics, seismology, telecommunications, and quantum mechanics.
+
+---
 
 ## 1. Simple Harmonic Motion (SHM)
-Whenever a restoring force is directly proportional to displacement ($F = -kx$), the object will undergo Simple Harmonic Motion. This applies to masses on springs, swinging pendulums, and even atoms vibrating in a crystal lattice.
-The motion follows a sinusoidal wave:
-$$ x(t) = A \\cos(\\omega t + \\phi) $$
-Where $A$ is amplitude, $\\omega$ is angular frequency, and $\\phi$ is the phase shift.
 
-## 2. The Wave Equation
-A wave is a disturbance that transfers energy through space without permanently transferring matter. 
-The 1D Wave Equation is a second-order partial differential equation that perfectly describes any wave (sound, water, or string):
-$$ \\frac{\\partial^2 y}{\\partial t^2} = v^2 \\frac{\\partial^2 y}{\\partial x^2} $$
-The solution is a traveling wave: $y(x,t) = A \\sin(kx - \\omega t)$.
+### 1.1 What Is SHM?
+**Simple Harmonic Motion** is any oscillation where the restoring force is directly proportional to the displacement from equilibrium and directed back toward it:
+$$F_{restore} = -kx$$
 
-## 3. Sound and the Doppler Effect
-Sound is a longitudinal wave (compressions and rarefactions of air molecules).
-When a fire engine speeds towards you, the sound waves bunch up, resulting in a higher pitch (frequency). As it passes and speeds away, the waves stretch out, resulting in a lower pitch.
-$$ f' = f_0 \\left( \\frac{v \\pm v_o}{v \\mp v_s} \\right) $$
+The minus sign is critical — the force always opposes the displacement. This is **Hooke's Law** for springs, and it also governs the small-angle pendulum.
 
-## Derivation of the Pendulum Period
-Prove that the period of a simple pendulum of length $L$ is exactly $T = 2\\pi\\sqrt{L/g}$ for small angles.
+### 1.2 The SHM Equation of Motion
+Applying Newton's Second Law ($F = ma$):
+$$-kx = m\ddot{x} \implies \ddot{x} + \frac{k}{m}x = 0$$
 
-**Step 1:** Identify the restoring force.
-When a pendulum is displaced by an angle $\\theta$, gravity pulls it straight down. The component of gravity pulling it tangentially *back* towards the center is:
-$$ F = -mg \\sin\\theta $$
+Define $\omega_0^2 = k/m$ (natural angular frequency):
+$$\ddot{x} + \omega_0^2 x = 0$$
 
-**Step 2:** Apply Newton's Second Law.
-$$ -mg \\sin\\theta = ma $$
-Since acceleration along the arc $s$ is $a = d^2s/dt^2$ and $s = L\\theta$, we know $a = L \\frac{d^2\\theta}{dt^2}$.
-$$ -mg \\sin\\theta = m L \\frac{d^2\\theta}{dt^2} $$
+This is the **SHM differential equation**. Its general solution is:
+$$x(t) = A\cos(\omega_0 t + \phi)$$
 
-**Step 3:** The Small Angle Approximation.
-For small angles (less than 15 degrees), $\\sin\\theta \\approx \\theta$ (in radians).
-$$ -g \\theta = L \\frac{d^2\\theta}{dt^2} $$
-$$ \\frac{d^2\\theta}{dt^2} = -\\left(\\frac{g}{L}\\right) \\theta $$
+where:
+- $A$ = amplitude (maximum displacement from equilibrium)
+- $\omega_0 = \sqrt{k/m}$ = natural angular frequency (rad/s)
+- $\phi$ = phase constant (determined by initial conditions)
+- $T = \frac{2\pi}{\omega_0}$ = period (seconds)
+- $f = \frac{\omega_0}{2\pi}$ = frequency (Hz)
 
-**Step 4:** Recognize SHM.
-This is the defining differential equation of Simple Harmonic Motion ($a = -\\omega^2 x$).
-Therefore, the angular frequency is:
-$$ \\omega^2 = \\frac{g}{L} \\implies \\omega = \\sqrt{\\frac{g}{L}} $$
+### 1.3 Velocity and Acceleration in SHM
+Differentiating $x(t) = A\cos(\omega_0 t + \phi)$:
+$$v(t) = -A\omega_0\sin(\omega_0 t + \phi)$$
+$$a(t) = -A\omega_0^2\cos(\omega_0 t + \phi) = -\omega_0^2 x(t)$$
 
-**Step 5:** Convert to Period.
-Since $\\omega = 2\\pi/T$:
-$$ \\frac{2\\pi}{T} = \\sqrt{\\frac{g}{L}} $$
-$$ T = 2\\pi \\sqrt{\\frac{L}{g}} $$
-Q.E.D. The mass of the bob completely cancels out! A heavy pendulum and a light pendulum swing at the exact same rate.
+The acceleration is always proportional to — and opposite in direction from — the displacement. This is the hallmark of SHM.
 
+**Maximum values:**
+- Max displacement: $x_{max} = A$
+- Max speed: $v_{max} = A\omega_0$ (at equilibrium, $x = 0$)
+- Max acceleration: $a_{max} = A\omega_0^2$ (at turning points, $x = \pm A$)
 
-`,
+---
+
+## 2. The Spring-Mass System
+
+A mass $m$ on a spring with constant $k$:
+$$\omega_0 = \sqrt{\frac{k}{m}}, \quad T = 2\pi\sqrt{\frac{m}{k}}$$
+
+**Key insight:** Period depends on $m$ and $k$ only — not on amplitude. Swing it gently or hard, the period is the same (for ideal springs).
+
+**Worked Example:** A 0.5 kg mass on a spring ($k = 200\text{ N/m}$) is pulled 0.1 m from rest and released. Find $T$, $f$, $\omega_0$, and $v_{max}$.
+
+$$\omega_0 = \sqrt{\frac{200}{0.5}} = \sqrt{400} = 20\text{ rad/s}$$
+$$T = \frac{2\pi}{\omega_0} = \frac{2\pi}{20} = 0.314\text{ s}$$
+$$f = \frac{1}{T} = 3.18\text{ Hz}$$
+$$v_{max} = A\omega_0 = 0.1\times20 = 2\text{ m/s}$$
+
+---
+
+## 3. The Simple Pendulum
+
+For small angles ($\theta < 15°$), $\sin\theta \approx \theta$ (in radians), and the pendulum obeys SHM:
+$$\ddot{\theta} + \frac{g}{L}\theta = 0 \implies \omega_0 = \sqrt{\frac{g}{L}}, \quad T = 2\pi\sqrt{\frac{L}{g}}$$
+
+**Remarkable result:** Period depends only on length $L$ and $g$ — not on the bob's mass or the amplitude (for small angles). This is why pendulums were used in clocks for centuries.
+
+**Example:** A grandfather clock pendulum has $T = 2\text{ s}$ (one swing per second). Find $L$.
+$$T = 2\pi\sqrt{\frac{L}{g}} \implies L = g\left(\frac{T}{2\pi}\right)^2 = 9.81\times\left(\frac{2}{2\pi}\right)^2 = 9.81\times0.1013 = 0.993\text{ m} \approx 1\text{ m}$$
+
+---
+
+## 4. Energy in SHM
+
+In a frictionless oscillator, energy swaps back and forth between KE and PE:
+$$E_{total} = \frac{1}{2}kA^2 = \text{constant}$$
+
+At any displacement $x$:
+$$U(x) = \frac{1}{2}kx^2, \quad K(x) = \frac{1}{2}k(A^2 - x^2)$$
+
+- At the **turning points** ($x = \pm A$): all energy is PE, KE = 0
+- At **equilibrium** ($x = 0$): all energy is KE, PE = 0
+
+Speed at any position $x$:
+$$v = \omega_0\sqrt{A^2 - x^2}$$
+
+---
+
+## 5. Wave Properties
+
+A **wave** is a disturbance that transfers energy through a medium (or vacuum) without net transfer of matter.
+
+### 5.1 Key Wave Quantities
+
+| Quantity | Symbol | Unit | Meaning |
+|---|---|---|---|
+| Wavelength | $\lambda$ | m | Distance between two consecutive identical points |
+| Frequency | $f$ | Hz | Oscillations per second |
+| Period | $T$ | s | Time for one complete oscillation; $T = 1/f$ |
+| Wave speed | $v$ | m/s | Speed of propagation |
+| Amplitude | $A$ | m | Maximum displacement from equilibrium |
+
+The fundamental wave equation:
+$$\boxed{v = f\lambda}$$
+
+### 5.2 Transverse vs. Longitudinal Waves
+
+| Type | Particle motion | Examples |
+|---|---|---|
+| **Transverse** | Perpendicular to wave travel | Light (EM waves), waves on a string |
+| **Longitudinal** | Parallel to wave travel (compressions & rarefactions) | Sound, seismic P-waves |
+
+---
+
+## 6. The Wave Equation
+
+A sinusoidal wave travelling in the $+x$ direction:
+$$y(x, t) = A\sin(kx - \omega t + \phi)$$
+
+where:
+- $k = \frac{2\pi}{\lambda}$ = wave number (rad/m)
+- $\omega = 2\pi f$ = angular frequency (rad/s)
+- Phase speed: $v = \frac{\omega}{k} = f\lambda$
+
+**Example:** A wave has $A = 0.02\text{ m}$, $f = 50\text{ Hz}$, $v = 340\text{ m/s}$ (sound in air). Find $\lambda$ and $k$.
+$$\lambda = \frac{v}{f} = \frac{340}{50} = 6.8\text{ m}$$
+$$k = \frac{2\pi}{\lambda} = \frac{2\pi}{6.8} = 0.924\text{ rad/m}$$
+
+---
+
+## 7. Superposition and Interference
+
+When two waves overlap, their displacements add algebraically (**principle of superposition**).
+
+- **Constructive interference:** Waves in phase ($\Delta\phi = 0, 2\pi, 4\pi,\ldots$) — amplitudes add, intensity increases.
+- **Destructive interference:** Waves out of phase ($\Delta\phi = \pi, 3\pi,\ldots$) — amplitudes cancel, intensity decreases (or goes to zero).
+
+**Path difference rule:**
+- Constructive: $\Delta d = n\lambda$ ($n = 0, 1, 2, \ldots$)
+- Destructive: $\Delta d = (n + \frac{1}{2})\lambda$
+
+---
+
+## 8. Standing Waves
+
+When two identical waves travel in opposite directions they form a **standing wave** with fixed **nodes** (zero amplitude) and **antinodes** (maximum amplitude).
+
+For a string of length $L$ fixed at both ends, allowed frequencies (**harmonics**):
+$$f_n = \frac{nv}{2L}, \quad n = 1, 2, 3, \ldots$$
+
+- $n = 1$: fundamental (1st harmonic) — one half-wavelength fits: $\lambda_1 = 2L$
+- $n = 2$: 2nd harmonic — one full wavelength: $\lambda_2 = L$
+
+**Example:** A guitar string ($L = 0.65\text{ m}$, $v = 400\text{ m/s}$). Find the fundamental frequency.
+$$f_1 = \frac{v}{2L} = \frac{400}{2\times0.65} = \frac{400}{1.3} \approx 308\text{ Hz}$$
+
+---
+
+## 9. The Doppler Effect
+
+When a source of waves moves relative to an observer, the observed frequency differs from the emitted frequency:
+$$f_{obs} = f_{source}\frac{v \pm v_{obs}}{v \mp v_{source}}$$
+
+Use $+v_{obs}$ when observer moves toward source; $-v_{source}$ when source moves toward observer.
+
+**Example:** An ambulance emitting 700 Hz approaches at 30 m/s. Speed of sound = 340 m/s.
+$$f_{obs} = 700\times\frac{340}{340 - 30} = 700\times\frac{340}{310} = 700\times1.097 = 767.7\text{ Hz}$$
+
+The siren sounds higher-pitched as it approaches.
+
+---
+
+## 10. Derivation: Period of a Simple Pendulum
+
+**Step 1:** Write the tangential restoring force on the bob.
+The bob (mass $m$, string $L$) displaced by angle $\theta$:
+$$F_{tangential} = -mg\sin\theta$$
+
+**Step 2:** Apply Newton's Second Law along the arc (arc length $s = L\theta$):
+$$m\ddot{s} = -mg\sin\theta \implies mL\ddot{\theta} = -mg\sin\theta$$
+
+**Step 3:** Simplify:
+$$\ddot{\theta} = -\frac{g}{L}\sin\theta$$
+
+**Step 4:** Small angle approximation ($\sin\theta \approx \theta$ for $\theta \ll 1$ rad):
+$$\ddot{\theta} = -\frac{g}{L}\theta$$
+
+This is the SHM equation with $\omega_0^2 = g/L$.
+
+**Step 5:** Read off the period:
+$$\omega_0 = \sqrt{\frac{g}{L}} \implies T = \frac{2\pi}{\omega_0} = 2\pi\sqrt{\frac{L}{g}} \quad \textbf{Q.E.D.}$$
+
+---flashcards---
+[
+  {
+    "front": "What condition defines Simple Harmonic Motion?",
+    "back": "The restoring force is proportional to displacement and directed toward equilibrium: $$F = -kx$$."
+  },
+  {
+    "front": "What is the general solution of the SHM equation?",
+    "back": "$$x(t) = A\\\\cos(\\\\omega_0 t + \\\\phi)$$ where $$\\\\omega_0 = \\\\sqrt{k/m}$$."
+  },
+  {
+    "front": "For a spring-mass system, what is the period $$T$$?",
+    "back": "$$T = 2\\\\pi\\\\sqrt{m/k}$$. It depends only on mass and spring constant, NOT on amplitude."
+  },
+  {
+    "front": "Where is speed maximum and zero in SHM?",
+    "back": "Speed is **maximum** at the equilibrium position ($$x=0$$). Speed is **zero** at the turning points ($$x=\\\\pm A$$)."
+  },
+  {
+    "front": "What is the total energy of a SHM oscillator with amplitude $$A$$?",
+    "back": "$$E = \\\\frac{1}{2}kA^2$$. It is constant — energy oscillates between KE and PE."
+  },
+  {
+    "front": "What is the period of a simple pendulum?",
+    "back": "$$T = 2\\\\pi\\\\sqrt{L/g}$$. Depends only on length and $$g$$, NOT on mass or amplitude (for small angles)."
+  },
+  {
+    "front": "State the fundamental wave equation.",
+    "back": "$$v = f\\\\lambda$$ (wave speed = frequency × wavelength)"
+  },
+  {
+    "front": "What is the difference between transverse and longitudinal waves?",
+    "back": "Transverse: particle motion perpendicular to wave travel (light, string waves). Longitudinal: particle motion parallel to wave travel (sound)."
+  },
+  {
+    "front": "What path difference gives constructive interference?",
+    "back": "$$\\\\Delta d = n\\\\lambda$$ (integer multiples of wavelength)"
+  },
+  {
+    "front": "What are nodes and antinodes in a standing wave?",
+    "back": "Nodes: points of zero amplitude (destructive interference). Antinodes: points of maximum amplitude (constructive interference)."
+  },
+  {
+    "front": "What are the allowed frequencies (harmonics) for a string of length $$L$$ fixed at both ends?",
+    "back": "$$f_n = \\\\frac{nv}{2L}$$ for $$n = 1, 2, 3, \\\\ldots$$"
+  },
+  {
+    "front": "State the Doppler effect formula.",
+    "back": "$$f_{obs} = f_{source}\\\\frac{v \\\\pm v_{obs}}{v \\\\mp v_{source}}$$. Use $$+$$ when observer moves toward source."
+  }
+]
+`
 
 
   // Fluid Mechanics & Thermodynamics are in Engineering metadata
