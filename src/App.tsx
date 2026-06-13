@@ -213,7 +213,7 @@ const AppContent: React.FC = () => {
   const [isGlobalLoading, setIsGlobalLoading] = useState(false);
 
   const handleTabChange = (tabId: string) => {
-    if (activeTab === tabId && !activeTopicInternal) return; // Prevent unnecessary reload
+    if (activeTab === tabId && !activeTopic) return; // Prevent unnecessary reload
     
     setIsGlobalLoading(true);
     closeTopic();
@@ -221,7 +221,7 @@ const AppContent: React.FC = () => {
 
     setTimeout(() => {
       setActiveTab(tabId);         // sets correct URL via pushState
-      setActiveTopicInternal(null); // reset topic WITHOUT touching URL (fixes stale-closure URL bug)
+      setActiveTopic(null); // reset topic WITHOUT touching URL (fixes stale-closure URL bug)
       setTimeout(() => setIsGlobalLoading(false), 300);
     }, 150);
   };
@@ -546,7 +546,7 @@ const AppContent: React.FC = () => {
         <div className="content-area page-wrapper page-enter" key={`${activeTab}-${activeTopic || 'none'}`}>
           {!isFocusMode && activeTab !== 'dashboard' && (
             <div className="breadcrumbs">
-              <button onClick={() => { setActiveTopicInternal(null); setActiveTab('dashboard'); }} className="breadcrumb-link">
+              <button onClick={() => { setActiveTopic(null); setActiveTab('dashboard'); }} className="breadcrumb-link">
                 Dashboard
               </button>
               <span className="breadcrumb-separator">›</span>

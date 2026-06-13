@@ -664,7 +664,7 @@ For systems under various constraints, we define Legendre transforms of $U(S, V,
     "back": "There are overwhelmingly more disordered microstates than ordered ones. Systems naturally drift toward the most probable (highest entropy) state."
   }
 ]
-`
+`,
 
 
   'Quantum physics': `
@@ -841,7 +841,7 @@ In the full quantum mechanical treatment, electrons are described by four quantu
     "back": "All quantum objects exhibit both wave behaviour (interference, diffraction) and particle behaviour (localised detection, photoelectric effect). Neither description alone is complete."
   }
 ]
-`
+`,
 
 
   'Work, Energy & Power': `
@@ -1069,7 +1069,7 @@ Both the formula for KE and the Work-Energy Theorem fall out of the same derivat
     "back": "Integrate $$W = \\\\int F\\\\,dx$$, substitute $$F=ma$$, use chain rule $$a = v\\\\frac{dv}{dx}$$, integrate $$\\\\int mv\\\\,dv = \\\\frac{1}{2}mv_f^2 - \\\\frac{1}{2}mv_i^2$$. Define this as $$\\\\Delta K$$."
   }
 ]
-`
+`,
 
   'Circular Motion & Gravitation': `
 # Circular Motion & Gravitation: The Celestial Clockwork
@@ -1277,7 +1277,7 @@ Since $4\pi^2$, $G$, and $M$ are all constants, $T^2 \propto r^3$. **Q.E.D.** Ne
     "back": "$$\\\\mu_s \\\\geq \\\\frac{v^2}{rg}$$"
   }
 ]
-`
+`,
 
 
   'Rotational Mechanics': `
@@ -1454,7 +1454,7 @@ The rotational KE formula is not a guess — it follows directly from summing th
     "back": "$$v = \\\\omega r$$ where $$r$$ is the radius of the rolling object."
   }
 ]
-`
+`,
 
 
   'Waves & Oscillations': `
@@ -1703,7 +1703,7 @@ $$\omega_0 = \sqrt{\frac{g}{L}} \implies T = \frac{2\pi}{\omega_0} = 2\pi\sqrt{\
     "back": "$$f_{obs} = f_{source}\\\\frac{v \\\\pm v_{obs}}{v \\\\mp v_{source}}$$. Use $$+$$ when observer moves toward source."
   }
 ]
-`
+`,
 
 
   // Fluid Mechanics & Thermodynamics are in Engineering metadata
@@ -1916,7 +1916,7 @@ $$U_C = \frac{Q^2}{2C} = \frac{(CV)^2}{2C} = \frac{1}{2}CV^2 \quad \textbf{Q.E.D
     "back": "$$1\\\\text{ eV} = 1.602\\\\times10^{-19}\\\\text{ J}$$. The KE gained by one electron accelerated through 1 V."
   }
 ]
-`
+`,
 
 
   'Magnetism & Electromagnetism': `
@@ -2093,7 +2093,7 @@ He recognised this as the speed of light — proving light is an electromagnetic
     "back": "They attract. Opposite currents repel."
   }
 ]
-`
+`,
 
 
   'Optics': `
@@ -2293,7 +2293,7 @@ Snell's Law is a consequence of light taking the fastest path.
     "back": "Always virtual, upright, and diminished — regardless of object distance."
   }
 ]
-`
+`,
 
 
   'Modern Physics & Relativity': `
@@ -2436,7 +2436,7 @@ $$hf = E_i - E_f = 13.6\text{ eV}\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$
     "back": "$$E_n = -13.6\\\\text{ eV}/n^2$$. Ground state: $$-13.6\\\\text{ eV}$$; ionisation energy: $$13.6\\\\text{ eV}$$."
   }
 ]
-`
+`,
 
 
 
@@ -2599,7 +2599,7 @@ The **time constant** $\tau = RC$ (seconds) determines how quickly the capacitor
     "back": "In parallel, each appliance gets the full mains voltage and operates independently. In series, switching one off breaks the circuit for all."
   }
 ]
-`
+`,
 
   'Nuclear Physics': `
 # Nuclear Physics: The Heart of Matter
