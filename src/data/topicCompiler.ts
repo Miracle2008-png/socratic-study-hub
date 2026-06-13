@@ -443,6 +443,12 @@ export async function fetchTopicContent(topicId: string): Promise<TopicContent> 
   const baseTopic = ALL_TOPICS[normalizedId] || ALL_TOPICS[actualTopicId];
   const matchingPaths = Object.keys(markdownModules).filter(path => path.includes(`/content/${normalizedId}/`));
 
+  // If the baseTopic already has pre-compiled sections (like Math, Physics, Chem, Bio), use it directly.
+  // Engineering, Economics, and IR have empty sections [] and rely on markdown files.
+  if (baseTopic && baseTopic.sections && baseTopic.sections.length > 0) {
+    return baseTopic;
+  }
+
   // If no markdown files exist, rely entirely on the hardcoded base topic
   if (matchingPaths.length === 0) {
     if (baseTopic) return baseTopic;
