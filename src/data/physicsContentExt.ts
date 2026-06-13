@@ -834,87 +834,210 @@ Both the formula for KE and the Work-Energy Theorem fall out of the same derivat
   'Circular Motion & Gravitation': `
 # Circular Motion & Gravitation: The Celestial Clockwork
 
-When an object moves in a perfect circle at a constant speed, its velocity vector is constantly changing direction. Because velocity is changing, the object is absolutely accelerating, even though it never speeds up!
-This acceleration always points perfectly inwards toward the center of the circle, and is called **Centripetal Acceleration**:
-$$ a_c = \\frac{v^2}{r} $$
+## 0. Introduction
+Why does the Moon stay in orbit? Why do you feel pressed outward on a roundabout? Both phenomena come from the same physics: **circular motion** and **gravitation**. Understanding these ideas takes you from a car cornering on a wet road all the way to calculating satellite orbits.
+
+---
+
+## 1. Uniform Circular Motion
+
+An object moving in a circle at **constant speed** is still accelerating — because its velocity direction constantly changes. Velocity is a vector, so any change (even in direction alone) is acceleration.
+
+### 1.1 Centripetal Acceleration
+The acceleration always points **toward the centre** of the circle (centripetal = "centre-seeking"):
+$$a_c = \frac{v^2}{r}$$
+
+where $v$ is the linear speed and $r$ is the radius. The direction is always inward — never tangential.
+
+### 1.2 Period and Frequency
+- **Period** $T$: time for one full revolution (seconds)
+- **Frequency** $f$: revolutions per second (Hz); $f = 1/T$
+- **Angular velocity** $\omega$: radians per second; $\omega = 2\pi f = 2\pi/T$
+
+Linear speed relates to angular velocity: $v = \omega r$
+
+**Example:** A car goes around a roundabout of radius 20 m in 8 seconds. Find $v$, $\omega$, and $a_c$.
+$$v = \frac{2\pi r}{T} = \frac{2\pi\times20}{8} = 15.7\text{ m/s}$$
+$$\omega = \frac{2\pi}{T} = \frac{2\pi}{8} = 0.785\text{ rad/s}$$
+$$a_c = \frac{v^2}{r} = \frac{(15.7)^2}{20} = \frac{246.5}{20} = 12.3\text{ m/s}^2$$
+
+---
 
 ## 2. Centripetal Force
-By Newton's Second Law ($\\Sigma F = ma$), there must be a net force pulling the object inward to cause this acceleration. 
-$$ F_c = m\\frac{v^2}{r} $$
-"Centripetal Force" is not a magical new force; it is simply a label for whichever physical force (like string tension, gravity, or friction) is currently keeping the object locked in its circular path.
+Newton's 2nd Law: a net inward force is required to sustain circular motion:
+$$F_c = m\frac{v^2}{r} = m\omega^2 r$$
+
+**Centripetal force is not a new type of force.** It is simply the label for whichever physical force (gravity, tension, friction, normal force) is currently providing the inward acceleration.
+
+| Situation | Force providing centripetal acceleration |
+|---|---|
+| Ball on a string | String tension $T$ |
+| Car cornering on flat road | Static friction |
+| Satellite orbiting Earth | Gravity |
+| Roller coaster at the top of a loop | Weight minus normal force |
+
+### 2.1 Worked Example — Car on a Flat Bend
+**Problem:** A 1200 kg car goes around a flat bend of radius 50 m at 20 m/s. What is the minimum friction coefficient to prevent skidding?
+
+Friction provides centripetal force:
+$$f_s = m\frac{v^2}{r} = 1200\times\frac{400}{50} = 1200\times8 = 9600\text{ N}$$
+
+Maximum static friction: $f_s = \mu_s mg$, so:
+$$\mu_s = \frac{v^2}{rg} = \frac{400}{50\times9.81} = \frac{400}{490.5} \approx 0.816$$
+
+The road needs $\mu_s \geq 0.816$ or the car skids.
+
+### 2.2 Worked Example — Roller Coaster Loop (Top)
+**Problem:** A 60 kg rider is at the **top** of a vertical loop of radius 8 m. The car moves at 12 m/s. Find the normal force on the rider.
+
+At the top, both weight ($mg$) and normal force ($N$) point **downward** (toward the centre):
+$$mg + N = m\frac{v^2}{r}$$
+$$N = m\frac{v^2}{r} - mg = m\left(\frac{v^2}{r} - g\right) = 60\left(\frac{144}{8} - 9.81\right) = 60(18 - 9.81) = 60\times8.19 = 491\text{ N}$$
+
+The rider still feels pressed into the seat ($N > 0$). If the car slowed below $v_{min} = \sqrt{rg} = \sqrt{8\times9.81} = 8.85\text{ m/s}$, $N$ would go negative — meaning the track would need to pull the rider, which it cannot do (no seatbelt), and the rider would fall.
+
+---
 
 ## 3. Newton's Law of Universal Gravitation
-In 1687, Isaac Newton published the profound realization that the force causing an apple to fall to the earth is the *exact same force* keeping the Moon locked in its orbit. 
-Every mass in the universe attracts every other mass with a force directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers.
-$$ F_g = G \\frac{m_1 m_2}{r^2} $$
-*(Where $G = 6.674 \\times 10^{-11} \\text{ N m}^2/\\text{kg}^2$ is the universal gravitational constant).*
+In 1687, Newton unified terrestrial and celestial mechanics with one equation:
 
-## 4. Gravitational Fields and Orbits
-The gravitational field strength $g$ (which is $9.81$ m/s$^2$ on Earth's surface) is calculated by dividing out the test mass:
-$$ g = \\frac{F_g}{m} = \\frac{GM}{r^2} $$
-For a satellite to orbit a planet, the gravitational pull provides the exact centripetal force required to keep it in a circle. The satellite is technically in a state of endless free-fall, but it is moving sideways so fast that the Earth curves away beneath it just as fast as it falls!
+$$\boxed{F_g = G\frac{m_1 m_2}{r^2}}$$
 
-## 5. Kepler's Laws of Planetary Motion
-Before Newton, Johannes Kepler used observational data from Tycho Brahe to formulate three empirical laws:
-1. **The Law of Ellipses**: Planets orbit the Sun in ellipses, with the Sun at one focus.
-2. **The Law of Equal Areas**: A line drawn from a planet to the Sun sweeps out equal areas in equal time intervals. (Planets whip around faster when they are closer to the Sun).
-3. **The Law of Harmonies**: The square of the orbital period is proportional to the cube of the orbital radius.
+- $G = 6.674\times10^{-11}\text{ N m}^2/\text{kg}^2$ — the universal gravitational constant
+- $r$ = distance between the **centres** of the two masses
+- Force is attractive, along the line joining the two centres
 
-## Derivation of Centripetal Acceleration
-How do we prove $a_c = v^2/r$ for a circle"
+> **Newton's insight:** The same force that pulls an apple to the ground is what keeps the Moon in orbit. Before Newton, these were thought to be completely different phenomena.
 
-**Step 1:** Define the position vector.
-Imagine an object moving in a circle of radius $R$ at a constant angular speed $\\omega$. Its position vector in the $x-y$ plane is:
-$$ \\vec{r}(t) = \\langle R\\cos(\\omega t), R\\sin(\\omega t) \\rangle $$
+### 3.1 Gravitational Field Strength
+The gravitational field $g$ at distance $r$ from a mass $M$:
+$$g = \frac{GM}{r^2}$$
 
-**Step 2:** Find the velocity vector by differentiating.
-Take the derivative with respect to time $t$. By the chain rule, $\\frac{d}{dt} \\cos(\\omega t) = -\\omega \\sin(\\omega t)$.
-$$ \\vec{v}(t) = \\frac{d\\vec{r}}{dt} = \\langle -R\\omega\\sin(\\omega t), R\\omega\\cos(\\omega t) \\rangle $$
-*(Notice that the dot product $\\vec{r} \\cdot \\vec{v} = 0$, proving velocity is always perfectly tangent to the circle!)*
+On Earth's surface ($M_E = 5.97\times10^{24}\text{ kg}$, $R_E = 6.371\times10^6\text{ m}$):
+$$g = \frac{6.674\times10^{-11}\times5.97\times10^{24}}{(6.371\times10^6)^2} = 9.81\text{ m/s}^2 \checkmark$$
 
-**Step 3:** Find the acceleration vector by differentiating again.
-$$ \\vec{a}(t) = \\frac{d\\vec{v}}{dt} = \\langle -R\\omega^2\\cos(\\omega t), -R\\omega^2\\sin(\\omega t) \\rangle $$
+---
 
-**Step 4:** Factor out the $-\\omega^2$.
-$$ \\vec{a}(t) = -\\omega^2 \\langle R\\cos(\\omega t), R\\sin(\\omega t) \\rangle $$
-$$ \\vec{a}(t) = -\\omega^2 \\vec{r}(t) $$
-The negative sign proves that acceleration always points in the exact opposite direction of position (i.e., towards the center!).
+## 4. Orbital Motion
+A satellite orbits because gravity provides exactly the centripetal force needed:
+$$G\frac{Mm}{r^2} = m\frac{v^2}{r}$$
 
-**Step 5:** Find the magnitude of acceleration.
-$|\\vec{a}| = \\omega^2 |\\vec{r}| = \\omega^2 R$.
-Since the linear speed $v = \\omega R$, we can substitute $\\omega = \\frac{v}{R}$:
-$$ a = \\left(\\frac{v}{R}\\right)^2 R = \\frac{v^2}{R} $$
-Q.E.D.
+The satellite mass $m$ cancels:
+$$v_{orbit} = \sqrt{\frac{GM}{r}}$$
 
-## Derivation of Kepler's Third Law
-How did Newton rigorously prove Kepler's empirical Third Law using Gravity"
+The satellite is in a state of **perpetual freefall** — it falls toward Earth, but moves sideways so fast that Earth curves away beneath it at the same rate.
 
-**Step 1:** Set up the orbit equations.
-Assume a planet of mass $m$ is in a perfectly circular orbit of radius $r$ around a massive star of mass $M$.
-The gravitational force $F_g$ provides the centripetal force $F_c$.
-$$ F_g = F_c $$
-$$ G\\frac{Mm}{r^2} = m\\frac{v^2}{r} $$
+### 4.1 Orbital Speed Example
+**Problem:** Calculate the orbital speed of the International Space Station (ISS), which orbits at $r = 6.77\times10^6\text{ m}$ from Earth's centre.
 
-**Step 2:** Simplify the equation.
-The mass of the orbiting planet $m$ cancels out entirely (this is why heavy satellites and light satellites orbit at the exact same speed!). Multiply both sides by $r$:
-$$ \\frac{GM}{r} = v^2 $$
+$$v = \sqrt{\frac{GM_E}{r}} = \sqrt{\frac{6.674\times10^{-11}\times5.97\times10^{24}}{6.77\times10^6}} = \sqrt{\frac{3.984\times10^{14}}{6.77\times10^6}} = \sqrt{5.886\times10^7} \approx 7672\text{ m/s}$$
 
-**Step 3:** Introduce the orbital period $T$.
-The speed $v$ of the planet is the distance of one full orbit (circumference $= 2\\pi r$) divided by the time it takes (Period $= T$).
-$$ v = \\frac{2\\pi r}{T} $$
+That is about $7.67\text{ km/s}$ — the ISS circles Earth every 92 minutes.
 
-**Step 4:** Substitute $v$ into the equation.
-$$ \\frac{GM}{r} = \\left( \\frac{2\\pi r}{T} \\right)^2 $$
-$$ \\frac{GM}{r} = \\frac{4\\pi^2 r^2}{T^2} $$
+---
 
-**Step 5:** Rearrange to isolate $T^2$.
-Cross-multiply to get:
-$$ T^2 = \\left( \\frac{4\\pi^2}{GM} \\right) r^3 $$
-Since $4$, $\\pi^2$, $G$, and $M$ are all constant numbers, this proves that $T^2 \\propto r^3$.
-Q.E.D. Newton proved mathematically what Kepler observed empirically through telescopes!
+## 5. Kepler's Three Laws of Planetary Motion
 
+Kepler discovered these empirically from Tycho Brahe's observations (before Newton's laws were known):
 
-`,
+1. **Law of Ellipses:** Planets orbit the Sun in ellipses, with the Sun at one focus.
+2. **Law of Equal Areas:** A line from the Sun to a planet sweeps equal areas in equal times. (Planets move faster when closer to the Sun.)
+3. **Law of Harmonies:** $T^2 \propto r^3$ — the square of the orbital period is proportional to the cube of the semi-major axis.
+
+---
+
+## 6. Derivation: Centripetal Acceleration $a_c = v^2/r$
+
+**Step 1:** Write position on a circle of radius $R$ at angular speed $\omega$:
+$$\vec{r}(t) = R\cos(\omega t)\,\hat{x} + R\sin(\omega t)\,\hat{y}$$
+
+**Step 2:** Differentiate to get velocity:
+$$\vec{v}(t) = -R\omega\sin(\omega t)\,\hat{x} + R\omega\cos(\omega t)\,\hat{y}$$
+
+Note: $|\vec{v}| = R\omega = v$, and $\vec{r}\cdot\vec{v} = 0$ — velocity is always perpendicular to position (tangent to the circle). ✓
+
+**Step 3:** Differentiate again to get acceleration:
+$$\vec{a}(t) = -R\omega^2\cos(\omega t)\,\hat{x} - R\omega^2\sin(\omega t)\,\hat{y} = -\omega^2\vec{r}(t)$$
+
+The negative sign proves acceleration always points **opposite to position** — i.e., toward the centre.
+
+**Step 4:** Find the magnitude:
+$$|\vec{a}| = \omega^2 R$$
+
+Since $v = \omega R$, substitute $\omega = v/R$:
+$$a_c = \left(\frac{v}{R}\right)^2 R = \frac{v^2}{R} \quad \textbf{Q.E.D.}$$
+
+---
+
+## 7. Derivation: Kepler's Third Law from Newton's Law of Gravitation
+
+**Setup:** Planet mass $m$ in a circular orbit of radius $r$ around a star of mass $M$.
+
+**Step 1:** Gravity provides centripetal force:
+$$G\frac{Mm}{r^2} = m\frac{v^2}{r}$$
+
+**Step 2:** Cancel $m$ and one $r$:
+$$\frac{GM}{r} = v^2$$
+
+**Step 3:** Express $v$ in terms of period $T$ (circumference ÷ time):
+$$v = \frac{2\pi r}{T}$$
+
+**Step 4:** Substitute:
+$$\frac{GM}{r} = \frac{4\pi^2 r^2}{T^2}$$
+
+**Step 5:** Rearrange:
+$$T^2 = \frac{4\pi^2}{GM}\,r^3$$
+
+Since $4\pi^2$, $G$, and $M$ are all constants, $T^2 \propto r^3$. **Q.E.D.** Newton mathematically proved what Kepler observed empirically.
+
+---flashcards---
+[
+  {
+    "front": "What is centripetal acceleration and which direction does it always point?",
+    "back": "$$a_c = v^2/r$$. It always points toward the centre of the circle (inward)."
+  },
+  {
+    "front": "What provides centripetal force for a car cornering on a flat road?",
+    "back": "Static friction between the tyres and the road."
+  },
+  {
+    "front": "What provides centripetal force for a satellite orbiting Earth?",
+    "back": "Gravity."
+  },
+  {
+    "front": "What is the minimum speed at the top of a vertical loop of radius $$r$$?",
+    "back": "$$v_{min} = \\\\sqrt{rg}$$. Below this speed the normal force would go negative (impossible without a restraint)."
+  },
+  {
+    "front": "State Newton's Law of Universal Gravitation.",
+    "back": "$$F_g = G\\\\frac{m_1 m_2}{r^2}$$ where $$G = 6.674\\\\times10^{-11}\\\\text{ N m}^2/\\\\text{kg}^2$$."
+  },
+  {
+    "front": "What is the gravitational field strength $$g$$ at distance $$r$$ from a planet of mass $$M$$?",
+    "back": "$$g = \\\\frac{GM}{r^2}$$"
+  },
+  {
+    "front": "What is the orbital speed of a satellite at radius $$r$$ from a planet of mass $$M$$?",
+    "back": "$$v = \\\\sqrt{\\\\frac{GM}{r}}$$. Note: the satellite's own mass cancels."
+  },
+  {
+    "front": "State Kepler's Third Law.",
+    "back": "$$T^2 \\\\propto r^3$$. The square of the orbital period is proportional to the cube of the orbital radius."
+  },
+  {
+    "front": "Derive Kepler's Third Law in one sentence.",
+    "back": "Set gravity equal to centripetal force, cancel the satellite mass, substitute $$v = 2\\\\pi r/T$$, and rearrange to get $$T^2 = \\\\frac{4\\\\pi^2}{GM}r^3$$."
+  },
+  {
+    "front": "How is $$a_c = v^2/r$$ derived?",
+    "back": "Write position as $$\\\\vec{r}(t) = R\\\\cos(\\\\omega t)\\\\hat{x} + R\\\\sin(\\\\omega t)\\\\hat{y}$$, differentiate twice to get $$\\\\vec{a} = -\\\\omega^2\\\\vec{r}$$, so $$|a| = \\\\omega^2 R = v^2/R$$."
+  },
+  {
+    "front": "A car rounds a flat bend of radius $$r$$ at speed $$v$$. What minimum friction coefficient is needed?",
+    "back": "$$\\\\mu_s \\\\geq \\\\frac{v^2}{rg}$$"
+  }
+]
+`
 
 
   'Rotational Mechanics': `
