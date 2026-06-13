@@ -479,129 +479,369 @@ Conservation of Momentum is not an axiom — it is a proven consequence of Newto
 `,
 
   'Advanced Thermodynamics': `
+# Thermodynamics: Heat, Temperature & Energy
 
-# Statistical Mechanics & Thermodynamics: Potentials, Maxwell Relations & Entropy
-
-
-## 1. Classical Laws of Thermodynamics
-
-1.  **Zeroth Law**: Establishes temperature as a transitive state property.
-
-2.  **First Law**: $\\Delta U = Q - W$. Internal energy is a state function.
-
-3.  **Second Law**: $\\Delta S_{universe} \\ge 0$. Natural processes increase net entropy.
-
-4.  **Third Law**: As $T \\to 0$ Kelvin, $S \\to S_0$ (a constant minimum).
-
+## 0. Introduction
+Thermodynamics is the physics of heat, temperature, and energy transfer. It explains why engines work, why ice melts, why stars shine, and sets the ultimate limits on how efficient any machine can ever be. It is built on four sweeping laws that apply universally to everything in the universe.
 
 ---
 
+## 1. Temperature and Heat
 
-## 2. Statistical Mechanics: Defining Entropy ($S = k_B \\ln \\Omega$)
+### 1.1 Temperature
+Temperature measures the **average kinetic energy** of particles in a substance. The SI unit is **Kelvin (K)**:
+$$T(\text{K}) = T(°C) + 273.15$$
 
-In modern physics, thermodynamics is explained via microstates.
+Absolute zero ($0\text{ K} = -273.15°C$) is the lowest possible temperature — the point where all molecular motion ceases.
 
-Let $\\Omega$ be the multiplicity — the number of microscopic configurations corresponding to a given macroscopic state. Ludwig Boltzmann proved:
+### 1.2 Heat vs. Internal Energy
+- **Internal energy** $U$: total kinetic + potential energy of all molecules in a substance
+- **Heat** $Q$: energy transferred between objects due to a temperature difference
+- Heat flows from **hot → cold** until thermal equilibrium is reached
 
-$$ S = k_B \\ln \\Omega $$
+### 1.3 Specific Heat Capacity
+The energy needed to raise 1 kg of a substance by 1 K:
+$$Q = mc\Delta T$$
 
-Where $k_B$ is the Boltzmann constant.
+where $c$ is the specific heat capacity (J/kg·K). Water: $c = 4186\text{ J/kg·K}$ (unusually high — why oceans moderate climate).
 
+**Example:** How much energy heats 2 kg of water from 20°C to 100°C?
+$$Q = mc\Delta T = 2\times4186\times80 = 669{,}760\text{ J} \approx 670\text{ kJ}$$
+
+### 1.4 Latent Heat
+During a phase change (melting/boiling), temperature stays constant while energy is absorbed:
+$$Q = mL$$
+
+where $L$ is the **latent heat** (J/kg). For water: $L_{fusion} = 334\text{ kJ/kg}$, $L_{vaporisation} = 2260\text{ kJ/kg}$.
 
 ---
 
+## 2. The Ideal Gas Law
 
-## 3. Insane Level: Thermodynamic Potentials & Maxwell Relations
+For an ideal gas (no intermolecular interactions, point-mass molecules):
+$$\boxed{pV = nRT}$$
 
-To describe systems under various physical constraints, we define specific Legendre transformations of the internal energy $U(S, V, N)$:
+where:
+- $p$ = pressure (Pa)
+- $V$ = volume (m³)
+- $n$ = number of moles
+- $R = 8.314\text{ J/(mol·K)}$ = universal gas constant
+- $T$ = temperature in Kelvin
 
-*   **Enthalpy ($H$)**: Constrained pressure. $H = U + PV$.
+Equivalently: $pV = Nk_BT$ where $N$ = number of molecules and $k_B = 1.38\times10^{-23}\text{ J/K}$.
 
-*   **Helmholtz Free Energy ($F$ or $A$)**: Constrained temperature and volume. $F = U - TS$.
+**Example:** 2 moles of gas at $27°C = 300\text{ K}$ in a $10\text{ L} = 0.01\text{ m}^3$ container. Find pressure.
+$$p = \frac{nRT}{V} = \frac{2\times8.314\times300}{0.01} = \frac{4988.4}{0.01} = 498{,}840\text{ Pa} \approx 4.93\text{ atm}$$
 
-*   **Gibbs Free Energy ($G$)**: Constrained temperature and pressure. $G = H - TS$.
+---
 
+## 3. The Four Laws of Thermodynamics
 
-### Derivation: Maxwell Relations from Thermodynamic Potentials
+### Zeroth Law: Thermal Equilibrium
+If A is in thermal equilibrium with B, and B is in thermal equilibrium with C, then A is in thermal equilibrium with C. This defines temperature as a meaningful physical quantity.
 
-We write the differential forms for these potentials:
+### First Law: Conservation of Energy
+$$\boxed{\Delta U = Q - W}$$
 
-$$ dU = TdS - PdV $$
+Change in internal energy = heat added to system − work done **by** the system.
 
-$$ dH = TdS + VdP $$
+- $Q > 0$: heat flows **into** the system
+- $W > 0$: system does work **on** surroundings (expands)
 
-$$ dF = -SdT - PdV $$
+**Example:** A gas absorbs 500 J of heat and does 200 J of work expanding. $\Delta U = 500 - 200 = 300\text{ J}$.
 
-$$ dG = -SdT + VdP $$
+### Second Law: Entropy Always Increases
+Heat never spontaneously flows from cold to hot. In any real (irreversible) process, the total entropy of the universe increases:
+$$\Delta S_{universe} \geq 0$$
 
+This is why you can't build a perpetual motion machine, why ice cubes melt but don't spontaneously form, and why all real engines are inefficient.
 
-Since these potentials are exact differentials, their mixed second partial derivatives must be equal (Clairaut's Theorem).
+**Entropy** $S$ measures **disorder** (number of accessible microstates):
+$$S = k_B\ln\Omega$$
 
-Applying this to $dF = -SdT - PdV$:
+### Third Law: Absolute Zero
+As $T \to 0\text{ K}$, the entropy of a perfect crystal approaches zero. You can approach absolute zero but never reach it exactly.
 
-$$ \\left( \\frac{\\partial F}{\\partial V} \\right)_T = -P \\quad \\text{and} \\quad \\left( \\frac{\\partial F}{\\partial T} \\right)_V = -S $$
+---
 
-Equating the mixed derivatives:
+## 4. Thermodynamic Processes
 
-$$ \\frac{\\partial^2 F}{\\partial T \\partial V} = \\frac{\\partial^2 F}{\\partial V \\partial T} $$
+| Process | Constraint | First Law simplification |
+|---|---|---|
+| **Isothermal** | $T = $ const ($\Delta U = 0$) | $Q = W$ |
+| **Adiabatic** | $Q = 0$ (no heat exchange) | $\Delta U = -W$ |
+| **Isochoric** (isovolumetric) | $V = $ const ($W = 0$) | $\Delta U = Q$ |
+| **Isobaric** | $p = $ const | $\Delta U = Q - p\Delta V$ |
 
-Yields the Maxwell Relation:
+Work done by gas in isobaric expansion:
+$$W = p\Delta V = p(V_f - V_i)$$
 
-$$ \\left( \\frac{\\partial P}{\\partial T} \\right)_V = \\left( \\frac{\\partial S}{\\partial V} \\right)_T $$
+---
 
-Similarly, from $dG = -SdT + VdP$:
+## 5. Heat Engines and the Carnot Limit
 
-$$ \\left( \\frac{\\partial V}{\\partial T} \\right)_P = -\\left( \\frac{\\partial S}{\\partial P} \\right)_T $$
+A **heat engine** absorbs heat $Q_H$ from a hot reservoir, does work $W$, and dumps waste heat $Q_C$ to a cold reservoir:
+$$W = Q_H - Q_C$$
 
-These relations allow scientists to calculate unmeasurable quantities like entropy change ($dS$) using measurable quantities like volume thermal expansion ($dV/dT$). ∎
+**Thermal efficiency:**
+$$\eta = \frac{W}{Q_H} = 1 - \frac{Q_C}{Q_H}$$
 
-`,
+The **Carnot engine** is the most efficient possible heat engine operating between temperatures $T_H$ and $T_C$:
+$$\eta_{Carnot} = 1 - \frac{T_C}{T_H}$$
+
+No real engine can exceed Carnot efficiency. This is a direct consequence of the Second Law.
+
+**Example:** A steam engine operates between $500\text{ K}$ and $300\text{ K}$. Maximum possible efficiency:
+$$\eta_{Carnot} = 1 - \frac{300}{500} = 1 - 0.6 = 0.4 = 40\%$$
+
+Even this theoretical maximum cannot be achieved in practice — real engines are less efficient due to friction, heat losses, etc.
+
+---
+
+## 6. Statistical Mechanics: Entropy and Microstates
+
+Boltzmann connected macroscopic thermodynamics to microscopic physics:
+$$S = k_B\ln\Omega$$
+
+where $\Omega$ is the number of **microstates** (specific arrangements of molecules) corresponding to a given macrostate.
+
+**Why entropy increases:** There are overwhelmingly more disordered arrangements than ordered ones. A gas expands to fill a container not because of any force, but simply because there are vastly more ways to be spread out than to be clumped in one corner. The system randomly explores states — and almost always lands in a disordered one.
+
+---
+
+## 7. Thermodynamic Potentials (Advanced)
+
+For systems under various constraints, we define Legendre transforms of $U(S, V, N)$:
+
+| Potential | Definition | Natural Variables | Use |
+|---|---|---|---|
+| Enthalpy | $H = U + pV$ | $S, p$ | Chemistry at constant pressure |
+| Helmholtz free energy | $F = U - TS$ | $T, V$ | Equilibrium at constant $T, V$ |
+| Gibbs free energy | $G = H - TS$ | $T, p$ | Chemical equilibrium |
+
+**Gibbs free energy** determines spontaneity: reactions proceed spontaneously when $\Delta G < 0$.
+
+---flashcards---
+[
+  {
+    "front": "What is the relationship between Kelvin and Celsius?",
+    "back": "$$T(\\\\text{K}) = T(°C) + 273.15$$. Absolute zero = 0 K = -273.15°C."
+  },
+  {
+    "front": "What is specific heat capacity and its formula?",
+    "back": "Energy to raise 1 kg by 1 K: $$Q = mc\\\\Delta T$$."
+  },
+  {
+    "front": "State the Ideal Gas Law.",
+    "back": "$$pV = nRT$$ where $$R = 8.314\\\\text{ J/(mol·K)}$$. Also $$pV = Nk_BT$$."
+  },
+  {
+    "front": "State the First Law of Thermodynamics.",
+    "back": "$$\\\\Delta U = Q - W$$. Change in internal energy = heat in − work done by system."
+  },
+  {
+    "front": "State the Second Law of Thermodynamics.",
+    "back": "The total entropy of the universe never decreases: $$\\\\Delta S_{universe} \\\\geq 0$$. Heat flows hot → cold spontaneously."
+  },
+  {
+    "front": "What is the Carnot efficiency?",
+    "back": "$$\\\\eta_{Carnot} = 1 - T_C/T_H$$. The maximum possible efficiency for any heat engine."
+  },
+  {
+    "front": "In an adiabatic process, what is true?",
+    "back": "No heat exchange ($$Q = 0$$), so $$\\\\Delta U = -W$$. The system cools when it expands."
+  },
+  {
+    "front": "What is Boltzmann's entropy formula?",
+    "back": "$$S = k_B\\\\ln\\\\Omega$$ where $$\\\\Omega$$ is the number of microstates."
+  },
+  {
+    "front": "What is latent heat?",
+    "back": "Energy absorbed/released during a phase change at constant temperature: $$Q = mL$$."
+  },
+  {
+    "front": "Why does entropy always increase?",
+    "back": "There are overwhelmingly more disordered microstates than ordered ones. Systems naturally drift toward the most probable (highest entropy) state."
+  }
+]
+`
 
 
   'Quantum physics': `
-# Quantum Physics: The Strange Micro-World
+# Quantum Physics: The Strange World of the Very Small
 
-## 1. Wave-Particle Duality
-In the classical world, particles (like baseballs) and waves (like ocean ripples) are totally separate. In the quantum realm, everything is both.
-Light acts like a wave in the double-slit experiment, but acts like a particle (photons) in the photoelectric effect.
-In 1924, Louis de Broglie hypothesized that if light can act like matter, matter can act like light! Every moving electron, proton, and even your own body has an associated wavelength:
-$$ \\lambda = \\frac{h}{p} $$
-(Where $p$ is momentum and $h$ is Planck's constant).
+## 0. Introduction
+At the subatomic scale, the familiar laws of classical physics break down completely. Particles behave like waves. Energy comes in discrete packets. A particle can be in two places at once until you observe it. These bizarre facts are not speculation — they are the most precisely tested predictions in the history of science, and the foundation of modern technology: transistors, lasers, MRI machines, and solar cells all depend on quantum mechanics.
 
-## 2. The Heisenberg Uncertainty Principle
-You cannot precisely know both the exact position ($x$) and the exact momentum ($p$) of a quantum particle at the same time. The act of measuring one inherently blurs the other.
-$$ \\Delta x \\Delta p \\ge \\frac{\\hbar}{2} $$
-This is not a limitation of our measuring tools. It is a fundamental blurring of the universe itself.
+---
 
-## 3. The Schrödinger Equation
-Instead of Newton's $F = ma$ determining exact trajectories, quantum mechanics uses Erwin Schrödinger's wave equation to determine probabilities. 
-It calculates the Wavefunction ($\\Psi$). The square of the wavefunction ($|\\Psi|^2$) tells you the exact mathematical probability of finding the electron at any specific location!
+## 1. The Failure of Classical Physics
 
-## Derivation of the Bohr Model Radii
-How did Niels Bohr calculate the exact orbital radius of an electron in Hydrogen before modern quantum mechanics was invented" He simply quantized angular momentum!
+### 1.1 Blackbody Radiation & the Ultraviolet Catastrophe
+Classical physics predicted that a glowing hot object would emit infinite energy at high frequencies — the "ultraviolet catastrophe." It obviously doesn't. Max Planck (1900) solved this by assuming energy is emitted in discrete packets:
+$$E = hf = \frac{hc}{\lambda}$$
 
-**Step 1:** The Classical Orbit.
-The electron is held in circular orbit by the electrostatic force from the proton.
-$$ \\frac{mv^2}{r} = k_e \\frac{e^2}{r^2} $$
-$$ mv^2 = k_e \\frac{e^2}{r} $$
+where $h = 6.626\times10^{-34}\text{ J·s}$ is Planck's constant.
 
-**Step 2:** Bohr's Quantum Postulate.
-Bohr guessed that the angular momentum ($L = mvr$) of the electron could not be any arbitrary number. It had to be a perfect integer multiple of Planck's constant divided by $2\\pi$ ($\\hbar$).
-$$ mvr = n\\hbar \\implies v = \\frac{n\\hbar}{mr} $$
+### 1.2 The Photoelectric Effect
+When light shines on a metal, electrons are ejected — but only above a **threshold frequency** $f_0$, regardless of intensity. Einstein (1905) explained this: light comes in photons, each carrying energy $E = hf$. Electrons need a minimum energy (the **work function** $\phi$) to escape:
+$$K_{max} = hf - \phi$$
 
-**Step 3:** Substitute the velocity.
-Plug Bohr's velocity into the classical orbit equation:
-$$ m \\left( \\frac{n\\hbar}{mr} \\right)^2 = k_e \\frac{e^2}{r} $$
-$$ m \\left( \\frac{n^2 \\hbar^2}{m^2 r^2} \\right) = k_e \\frac{e^2}{r} $$
+This Nobel Prize-winning discovery proved light has particle-like properties.
 
-**Step 4:** Solve for $r$.
-Cancel one $m$ and one $r$:
-$$ \\frac{n^2 \\hbar^2}{mr} = k_e e^2 $$
-$$ r_n = \\frac{n^2 \\hbar^2}{m k_e e^2} $$
-Q.E.D. By simply plugging in $n=1$, $n=2$, etc., this formula perfectly predicted the exact physical sizes of hydrogen atoms, proving that electrons can only exist in very specific, quantized orbits!
+### 1.3 Atomic Spectra
+Hot gases emit light only at specific, discrete wavelengths — not a continuous spectrum. This was inexplicable classically. Bohr explained it: electrons can only occupy specific energy levels and emit photons when jumping between them.
 
+---
 
-`,
+## 2. Wave-Particle Duality
+
+### 2.1 Light as Both Wave and Particle
+- **Wave evidence:** interference (Young's double-slit), diffraction, polarisation
+- **Particle evidence:** photoelectric effect, Compton scattering
+
+### 2.2 De Broglie Hypothesis (Matter Waves)
+Louis de Broglie (1924) proposed that all matter has a wave nature:
+$$\lambda = \frac{h}{p} = \frac{h}{mv}$$
+
+**Example:** An electron ($m = 9.11\times10^{-31}\text{ kg}$) moving at $v = 2\times10^6\text{ m/s}$:
+$$\lambda = \frac{6.626\times10^{-34}}{9.11\times10^{-31}\times2\times10^6} = \frac{6.626\times10^{-34}}{1.822\times10^{-24}} = 3.64\times10^{-10}\text{ m} = 0.364\text{ nm}$$
+
+This is comparable to atomic spacings in crystals — electron diffraction is real and was experimentally confirmed in 1927.
+
+**A human walking at 1 m/s (mass 70 kg):**
+$$\lambda = \frac{6.626\times10^{-34}}{70\times1} \approx 10^{-35}\text{ m}$$
+
+Utterly negligible — quantum effects are invisible at human scales.
+
+---
+
+## 3. The Heisenberg Uncertainty Principle
+
+$$\boxed{\Delta x \cdot \Delta p \geq \frac{\hbar}{2}}$$
+
+$$\boxed{\Delta E \cdot \Delta t \geq \frac{\hbar}{2}}$$
+
+where $\hbar = h/2\pi = 1.055\times10^{-34}\text{ J·s}$.
+
+This is **not** a limitation of instruments — it is a fundamental property of nature. The act of measuring position disturbs momentum, and vice versa. The universe is intrinsically fuzzy at the quantum scale.
+
+**Consequence:** Electrons cannot simply spiral into the nucleus (which classical physics would predict). The Uncertainty Principle prevents it — confining an electron to nuclear dimensions would give it enormous momentum uncertainty, meaning enormous kinetic energy that blasts it back out.
+
+---
+
+## 4. The Bohr Model of the Atom
+
+Bohr (1913) proposed quantised orbits: electrons can only orbit where angular momentum is an integer multiple of $\hbar$:
+$$L = mvr = n\hbar, \quad n = 1, 2, 3, \ldots$$
+
+### 4.1 Allowed Energy Levels in Hydrogen
+$$E_n = -\frac{13.6\text{ eV}}{n^2}$$
+
+- $n=1$: Ground state, $E_1 = -13.6\text{ eV}$
+- $n=2$: First excited state, $E_2 = -3.4\text{ eV}$
+- $n=\infty$: Ionised (free electron), $E = 0$
+
+**Ionisation energy of hydrogen:** $13.6\text{ eV}$
+
+### 4.2 Photon Emission and Absorption
+When an electron falls from level $n_i$ to $n_f < n_i$:
+$$hf = E_{n_i} - E_{n_f} = 13.6\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)\text{ eV}$$
+
+Named series of spectral lines:
+- **Lyman series** ($n_f = 1$): UV photons
+- **Balmer series** ($n_f = 2$): Visible photons (red, blue-green, violet)
+- **Paschen series** ($n_f = 3$): Infrared
+
+**Example:** Electron falls from $n=3$ to $n=2$ (Balmer series):
+$$\Delta E = 13.6\left(\frac{1}{4} - \frac{1}{9}\right) = 13.6\times\frac{5}{36} = 1.89\text{ eV}$$
+$$\lambda = \frac{hc}{\Delta E} = \frac{(6.626\times10^{-34})(3\times10^8)}{1.89\times1.6\times10^{-19}} = 656\text{ nm} \quad (\text{red light, H}_\alpha\text{ line})$$
+
+---
+
+## 5. The Schrödinger Equation (Overview)
+
+The modern quantum mechanical description replaces Bohr's orbits with a **wave function** $\psi(x, t)$ whose square gives the **probability density** of finding the particle:
+$$P = |\psi|^2$$
+
+The time-independent Schrödinger equation:
+$$-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2} + V(x)\psi = E\psi$$
+
+Key results:
+- Energy is automatically quantised — only certain $E$ values give physically acceptable $\psi$
+- Particles can **tunnel** through barriers they classically couldn't cross (quantum tunnelling)
+- Orbitals are not circular orbits but three-dimensional probability clouds
+
+---
+
+## 6. Quantum Tunnelling
+
+A particle can pass through a potential energy barrier higher than its own energy — something classically impossible. The probability decreases exponentially with barrier thickness, but is non-zero.
+
+**Applications:**
+- **Nuclear fusion in stars:** protons overcome Coulomb repulsion in the Sun via tunnelling
+- **Scanning Tunnelling Microscope (STM):** images individual atoms using tunnelling current
+- **Flash memory:** electrons tunnel through insulating layers to store data
+
+---
+
+## 7. Quantum Numbers and Atomic Orbitals
+
+In the full quantum mechanical treatment, electrons are described by four quantum numbers:
+
+| Quantum Number | Symbol | Values | Meaning |
+|---|---|---|---|
+| Principal | $n$ | $1, 2, 3, \ldots$ | Energy level / shell |
+| Orbital (azimuthal) | $l$ | $0$ to $n-1$ | Shape of orbital (s, p, d, f) |
+| Magnetic | $m_l$ | $-l$ to $+l$ | Orientation of orbital |
+| Spin | $m_s$ | $+\frac{1}{2}$ or $-\frac{1}{2}$ | Intrinsic angular momentum |
+
+**Pauli Exclusion Principle:** No two electrons in an atom can have the same four quantum numbers. This explains the periodic table.
+
+---flashcards---
+[
+  {
+    "front": "What is a photon's energy in terms of frequency and wavelength?",
+    "back": "$$E = hf = hc/\\\\lambda$$ where $$h = 6.626\\\\times10^{-34}\\\\text{ J·s}$$."
+  },
+  {
+    "front": "State the photoelectric effect equation.",
+    "back": "$$K_{max} = hf - \\\\phi$$ where $$\\\\phi$$ is the work function. Only photons above threshold frequency $$f_0 = \\\\phi/h$$ eject electrons."
+  },
+  {
+    "front": "What is the de Broglie wavelength of a particle?",
+    "back": "$$\\\\lambda = h/p = h/(mv)$$. All matter has wave properties; only observable for tiny masses."
+  },
+  {
+    "front": "State the Heisenberg Uncertainty Principle (position-momentum).",
+    "back": "$$\\\\Delta x \\\\cdot \\\\Delta p \\\\geq \\\\hbar/2$$. This is fundamental — not a measurement limitation."
+  },
+  {
+    "front": "What are the energy levels of hydrogen in the Bohr model?",
+    "back": "$$E_n = -13.6\\\\text{ eV}/n^2$$. Ground state: $$-13.6\\\\text{ eV}$$; ionisation energy: $$13.6\\\\text{ eV}$$."
+  },
+  {
+    "front": "What frequency photon is emitted when hydrogen's electron falls from $$n=3$$ to $$n=2$$?",
+    "back": "$$\\\\Delta E = 13.6(1/4 - 1/9) = 1.89\\\\text{ eV}$$, giving $$\\\\lambda = 656\\\\text{ nm}$$ (red light, Balmer series)."
+  },
+  {
+    "front": "What does the wave function $$\\\\psi$$ represent?",
+    "back": "$$|\\\\psi|^2$$ gives the probability density of finding the particle at that location."
+  },
+  {
+    "front": "What is quantum tunnelling?",
+    "back": "A particle passing through an energy barrier higher than its kinetic energy — classically impossible but quantum mechanically allowed. Used in STM, flash memory, and fusion in stars."
+  },
+  {
+    "front": "State the Pauli Exclusion Principle.",
+    "back": "No two electrons in an atom can have the same four quantum numbers $$(n, l, m_l, m_s)$$. Explains the structure of the periodic table."
+  },
+  {
+    "front": "What is wave-particle duality?",
+    "back": "All quantum objects exhibit both wave behaviour (interference, diffraction) and particle behaviour (localised detection, photoelectric effect). Neither description alone is complete."
+  }
+]
+`
 
 
   'Work, Energy & Power': `
@@ -2198,6 +2438,168 @@ $$hf = E_i - E_f = 13.6\text{ eV}\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$
 ]
 `
 
+
+
+  'DC Electric Circuits': `
+# DC Electric Circuits: The Flow of Charge
+
+## 0. Introduction
+Electric circuits are everywhere — from the neurons in your brain to the power grid supplying your home. Understanding DC (Direct Current) circuits is fundamental to all of electronics, engineering, and modern technology.
+
+---
+
+## 1. Electric Current
+
+**Electric current** is the rate of flow of charge:
+$$I = \frac{\Delta Q}{\Delta t} = \frac{dQ}{dt}$$
+
+Unit: **Ampere (A)**, where $1\text{ A} = 1\text{ C/s}$.
+
+In a metal, current is carried by electrons flowing opposite to the conventional current direction (a historical convention — conventional current flows from + to −).
+
+---
+
+## 2. Ohm's Law
+
+For most conductors (at constant temperature), current is proportional to voltage:
+$$\boxed{V = IR}$$
+
+where $R$ is the **resistance** (unit: **Ohm, Ω**).
+
+Ohm's Law can be rearranged: $I = V/R$ and $R = V/I$.
+
+**Resistivity:** Resistance depends on material and geometry:
+$$R = \frac{\rho L}{A}$$
+
+where $\rho$ is the resistivity (Ω·m), $L$ is the wire length, and $A$ is its cross-sectional area.
+
+**Example:** A 240 V lamp has resistance 960 Ω. Find the current.
+$$I = \frac{V}{R} = \frac{240}{960} = 0.25\text{ A}$$
+
+---
+
+## 3. Power in Circuits
+
+Electrical power dissipated in a resistor:
+$$\boxed{P = IV = I^2R = \frac{V^2}{R}}$$
+
+**Example:** The lamp above ($I = 0.25\text{ A}$, $R = 960\text{ Ω}$):
+$$P = I^2R = (0.25)^2\times960 = 0.0625\times960 = 60\text{ W}$$
+
+Energy consumed over time $t$: $E = Pt$ (measured in Joules or kWh: $1\text{ kWh} = 3.6\times10^6\text{ J}$).
+
+---
+
+## 4. Series and Parallel Circuits
+
+### 4.1 Series Circuit
+Components connected end-to-end — same current flows through all:
+$$I_{total} = I_1 = I_2 = I_3$$
+$$V_{total} = V_1 + V_2 + V_3$$
+$$R_{total} = R_1 + R_2 + R_3$$
+
+> **Christmas lights in series:** If one bulb blows (breaks), the circuit opens and all lights go off.
+
+### 4.2 Parallel Circuit
+Components connected between the same two nodes — same voltage across all:
+$$V_{total} = V_1 = V_2 = V_3$$
+$$I_{total} = I_1 + I_2 + I_3$$
+$$\frac{1}{R_{total}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$$
+
+The total resistance is always **less** than the smallest individual resistor.
+
+> **House wiring is parallel:** each appliance gets the full mains voltage; switching one off doesn't affect others.
+
+**Worked Example:** Resistors $R_1 = 6\text{ Ω}$ and $R_2 = 3\text{ Ω}$ in parallel:
+$$\frac{1}{R_{total}} = \frac{1}{6} + \frac{1}{3} = \frac{1}{6} + \frac{2}{6} = \frac{3}{6} = \frac{1}{2} \implies R_{total} = 2\text{ Ω}$$
+
+---
+
+## 5. Kirchhoff's Laws
+
+For more complex circuits, two laws give a complete set of equations:
+
+### 5.1 Kirchhoff's Current Law (KCL)
+At any junction, the sum of currents flowing **in** equals the sum flowing **out**:
+$$\sum I_{in} = \sum I_{out}$$
+
+This is conservation of charge — charge cannot accumulate at a junction.
+
+### 5.2 Kirchhoff's Voltage Law (KVL)
+Around any closed loop, the sum of all voltage rises and drops equals zero:
+$$\sum V = 0$$
+
+This is conservation of energy — energy gained from EMF sources equals energy lost in resistors.
+
+**Example:** A loop with EMF $\mathcal{E} = 12\text{ V}$, internal resistance $r = 1\text{ Ω}$, external resistance $R = 5\text{ Ω}$:
+$$\mathcal{E} - Ir - IR = 0 \implies 12 = I(r + R) = I(6) \implies I = 2\text{ A}$$
+
+Terminal voltage: $V = \mathcal{E} - Ir = 12 - 2\times1 = 10\text{ V}$
+
+---
+
+## 6. EMF and Internal Resistance
+
+A real battery has an **electromotive force (EMF)** $\mathcal{E}$ (the maximum voltage it can supply) and an **internal resistance** $r$ (resistance of the battery itself):
+
+$$V_{terminal} = \mathcal{E} - Ir$$
+
+At higher currents, the terminal voltage drops (battery "sags"). This is why a car battery can start an engine but struggles under heavy load.
+
+---
+
+## 7. Capacitors in Circuits
+
+In DC circuits, a capacitor **charges up** and then blocks further current flow (since the insulating gap stops charge passing through). Charging through resistance $R$:
+
+$$V_C(t) = V_0\left(1 - e^{-t/RC}\right), \quad I(t) = \frac{V_0}{R}e^{-t/RC}$$
+
+The **time constant** $\tau = RC$ (seconds) determines how quickly the capacitor charges. After $5\tau$, the capacitor is ~99% charged.
+
+---flashcards---
+[
+  {
+    "front": "What is electric current and its unit?",
+    "back": "Rate of charge flow: $$I = dQ/dt$$. Unit: Ampere (A) = Coulomb/second."
+  },
+  {
+    "front": "State Ohm's Law.",
+    "back": "$$V = IR$$. Voltage = current × resistance."
+  },
+  {
+    "front": "What are the three formulas for electrical power?",
+    "back": "$$P = IV = I^2R = V^2/R$$"
+  },
+  {
+    "front": "For resistors in series, what is the total resistance?",
+    "back": "$$R_{total} = R_1 + R_2 + R_3 + \\\\ldots$$ (resistances add)."
+  },
+  {
+    "front": "For resistors in parallel, what is the total resistance formula?",
+    "back": "$$1/R_{total} = 1/R_1 + 1/R_2 + \\\\ldots$$ Total resistance is always less than the smallest individual resistor."
+  },
+  {
+    "front": "State Kirchhoff's Current Law (KCL).",
+    "back": "At any junction: sum of currents in = sum of currents out. (Conservation of charge.)"
+  },
+  {
+    "front": "State Kirchhoff's Voltage Law (KVL).",
+    "back": "Around any closed loop, the sum of all voltage rises and drops = 0. (Conservation of energy.)"
+  },
+  {
+    "front": "What is EMF and terminal voltage of a battery?",
+    "back": "EMF $$\\\\mathcal{E}$$ is the open-circuit voltage. Terminal voltage: $$V = \\\\mathcal{E} - Ir$$ where $$r$$ is internal resistance."
+  },
+  {
+    "front": "What is the RC time constant and what does it represent?",
+    "back": "$$\\\\tau = RC$$. Time for a capacitor to charge to 63% of its final voltage (or discharge to 37%)."
+  },
+  {
+    "front": "Why is house wiring in parallel rather than series?",
+    "back": "In parallel, each appliance gets the full mains voltage and operates independently. In series, switching one off breaks the circuit for all."
+  }
+]
+`
 
   'Nuclear Physics': `
 # Nuclear Physics: The Heart of Matter
