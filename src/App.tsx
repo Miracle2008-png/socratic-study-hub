@@ -220,9 +220,9 @@ const AppContent: React.FC = () => {
     setIsMobileMenuOpen(false); // Close mobile menu when changing tabs
 
     setTimeout(() => {
-      setActiveTab(tabId);
-      setActiveTopic(null);
-      setTimeout(() => setIsGlobalLoading(false), 250);
+      setActiveTab(tabId);         // sets correct URL via pushState
+      setActiveTopicInternal(null); // reset topic WITHOUT touching URL (fixes stale-closure URL bug)
+      setTimeout(() => setIsGlobalLoading(false), 300);
     }, 150);
   };
 
@@ -543,10 +543,10 @@ const AppContent: React.FC = () => {
           </header>
         )}
 
-        <div className="content-area page-wrapper anim-fade" key={`${activeTab}-${activeTopic || 'none'}`}>
+        <div className="content-area page-wrapper page-enter" key={`${activeTab}-${activeTopic || 'none'}`}>
           {!isFocusMode && activeTab !== 'dashboard' && (
             <div className="breadcrumbs">
-              <button onClick={() => { setActiveTopic(null); setActiveTab('dashboard'); }} className="breadcrumb-link">
+              <button onClick={() => { setActiveTopicInternal(null); setActiveTab('dashboard'); }} className="breadcrumb-link">
                 Dashboard
               </button>
               <span className="breadcrumb-separator">›</span>
@@ -563,7 +563,12 @@ const AppContent: React.FC = () => {
               )}
             </div>
           )}
-          <Suspense fallback={<div style={{ display: 'flex', justifyContent: 'center', padding: '100px', color: 'var(--color-text-muted)' }}>Loading...</div>}>
+          <Suspense fallback={
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16, padding: '120px 40px', color: 'var(--color-text-muted)' }}>
+              <div style={{ width: 36, height: 36, borderRadius: '50%', border: '3px solid var(--color-border)', borderTopColor: 'var(--color-accent)', animation: 'spin 0.8s linear infinite' }} />
+              <span style={{ fontSize: 13, letterSpacing: '0.05em' }}>Loading...</span>
+            </div>
+          }>
             {renderContent()}
           </Suspense>
         </div>

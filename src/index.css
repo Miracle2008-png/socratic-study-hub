@@ -437,7 +437,18 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
+@keyframes pageEnterAnim {
+  0%   { opacity: 0; transform: translateY(22px); }
+  60%  { opacity: 1; transform: translateY(-3px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
 .anim-fade { animation: fadeSlideIn var(--transition-normal) ease-out; }
+
+/* Page-level enter animation — used on every navigation */
+.page-enter {
+  animation: pageEnterAnim 0.38s cubic-bezier(0.25, 1, 0.5, 1) both;
+}
 
 /* ===== EMPTY STATE ===== */
 .empty-state {

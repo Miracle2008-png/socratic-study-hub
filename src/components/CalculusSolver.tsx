@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import katex from 'katex';
 import 'katex/dist/katex.min.css';
 import { Calculator, Sparkles, Send, Loader2, ChevronDown, ChevronUp } from 'lucide-react';
 import { GeminiService } from '../services/GeminiService';
@@ -184,7 +185,7 @@ export const CalculusSolver: React.FC = () => {
           <Calculator size={24} className="text-gold-gradient" />
           <h2>AI Calculus Solver</h2>
         </div>
-        <p>Enter an integral, limit, or ODE, and our AI will solve it step-by-step with LaTeX formatting.</p>
+        <p>Enter an integral, limit, or ODE — our AI solves it step-by-step with LaTeX formatting.</p>
       </div>
 
       <div className="solver-input-area luxury-card">
@@ -213,51 +214,60 @@ export const CalculusSolver: React.FC = () => {
                 ))}
               </div>
 
-              {/* Symbol grid */}
+              {/* Symbol grid — rendered via KaTeX directly */}
               <div className="sym-grid">
-                {SYMBOL_GROUPS[activeGroup].symbols.map(sym => (
-                  <button
-                    key={sym.tip}
-                    className="sym-btn"
-                    title={sym.tip}
-                    onClick={() => insertSymbol(sym.insert)}
-                  >
-                    <ReactMarkdown 
-                      remarkPlugins={[remarkMath]} 
-                      rehypePlugins={[rehypeKatex]}
-                      components={{ p: 'span' }}
-                    >
-                      {sym.label}
-                    </ReactMarkdown>
-                  </button>
-                ))}
+                {SYMBOL_GROUPS[activeGroup].symbols.map(sym => {
+                  let rendered = sym.label;
+                  try {
+                    // Strip wrapping $ signs and render with KaTeX
+                    const tex = sym.label.replace(/^\$+|\$+$/g, '');
+                    rendered = katex.renderToString(tex, { throwOnError: false, displayMode: false });
+                  } catch (_) {}
+                  return (
+                    <button
+                      key={sym.tip}
+                      className="sym-btn"
+                      title={sym.tip}
+                      onClick={() => insertSymbol(sym.insert)}
+                      dangerouslySetInnerHTML={{ __html: rendered }}
+                    />
+                  );
+                })}
               </div>
             </div>
           )}
         </div>
 
-        {/* ── Input ── */}
-        <textarea
-          ref={textareaRef}
-          value={problem}
-          onChange={(e) => setProblem(e.target.value)}
-          onKeyDown={handleKeyPress}
-          placeholder="e.g., Integrate x^2 * sin(x) dx, or Find the limit as x approaches 0 of sin(x)/x..."
-          className="solver-textarea"
-          disabled={loading}
-        />
-
-        {/* ── Live Rendered Math Preview ── */}
-        {problem.trim() && (
-          <div className="solver-live-preview" style={{ padding: '16px', background: 'rgba(255,255,255,0.03)', borderRadius: '8px', border: '1px dashed rgba(255, 215, 0, 0.2)', marginBottom: '16px', minHeight: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <ReactMarkdown 
-              remarkPlugins={[remarkMath]} 
-              rehypePlugins={[rehypeKatex]}
-            >
-              {\`$$ \${problem} $$\`}
-            </ReactMarkdown>
+        {/* ── Live Rendered Preview (PRIMARY) ── */}
+        <div className="solver-preview-area">
+          <div className="solver-preview-label">Rendered Expression</div>
+          <div className="solver-preview-display">
+            {problem.trim() ? (
+              <ReactMarkdown
+                remarkPlugins={[remarkMath]}
+                rehypePlugins={[rehypeKatex]}
+              >
+                {`$$ ${problem} $$`}
+              </ReactMarkdown>
+            ) : (
+              <span className="solver-preview-placeholder">Your expression will appear here as rendered math…</span>
+            )}
           </div>
-        )}
+        </div>
+
+        {/* ── LaTeX Source Input ── */}
+        <div className="solver-source-wrap">
+          <div className="solver-preview-label">LaTeX Source</div>
+          <textarea
+            ref={textareaRef}
+            value={problem}
+            onChange={(e) => setProblem(e.target.value)}
+            onKeyDown={handleKeyPress}
+            placeholder="e.g. \int x^2 \sin(x)\,dx  or  \lim_{x \to 0} \frac{\sin x}{x}"
+            className="solver-textarea"
+            disabled={loading}
+          />
+        </div>
 
         <div className="solver-actions">
           <button
@@ -450,16 +460,56 @@ export const CalculusSolver: React.FC = () => {
         .sym-btn:active { transform: translateY(0); }
 
         /* ── Textarea ── */
+        .solver-source-wrap {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+
+        .solver-preview-area {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+
+        .solver-preview-label {
+          font-size: 11px;
+          font-weight: 700;
+          letter-spacing: 1.2px;
+          text-transform: uppercase;
+          color: var(--color-accent);
+          opacity: 0.8;
+        }
+
+        .solver-preview-display {
+          min-height: 90px;
+          background: rgba(212,175,55,0.04);
+          border: 1px solid rgba(212,175,55,0.2);
+          border-radius: 10px;
+          padding: 20px 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 20px;
+          overflow-x: auto;
+        }
+
+        .solver-preview-placeholder {
+          color: var(--color-text-muted);
+          font-style: italic;
+          font-size: 14px;
+        }
+
         .solver-textarea {
           width: 100%;
-          min-height: 100px;
+          min-height: 72px;
           background: rgba(0, 0, 0, 0.2);
           border: 1px solid var(--color-border);
           border-radius: var(--border-radius-md);
-          padding: 16px;
+          padding: 12px 16px;
           color: var(--color-text-primary);
-          font-family: var(--font-primary);
-          font-size: 15px;
+          font-family: 'Courier New', monospace;
+          font-size: 14px;
           resize: vertical;
           outline: none;
           transition: border-color var(--transition-fast);
